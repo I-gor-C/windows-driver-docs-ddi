@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportStreamAudioEngineNode.GetStreamAttributeSteppings
+UID: NF:portcls.IMiniportStreamAudioEngineNode.GetStreamAttributeSteppings
 title: IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings method
 author: windows-driver-content
 description: Gets the allowed stepping value for the audio stream attribute.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings method

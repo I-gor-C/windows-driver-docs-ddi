@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
+UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
 title: tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
 author: windows-driver-content
 description: The EV Compensation Control provides for exposure control that is adjusted by increments of EV compensation steps.
@@ -7,8 +7,8 @@ old-location: stream\kscamera_extendedprop_evcompensation.htm
 old-project: stream
 ms.assetid: C9CF39F2-5081-4B99-BFD1-9F7130B27369
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, *PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
+ms.date: 1/9/2018
+ms.keywords: tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, *PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, *PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure
@@ -74,7 +75,7 @@ The maximum EV compensation supported. This is an absolute EV value.
 
 ### -field Value
 
-EV Compensation in units of steps  selected in the <b>Flags</b> member of <a href="stream.kscamera_extendedprop_header">KSCAMERA_EXTENDEDPROP_HEADER</a>.
+EV Compensation in units of steps  selected in the <b>Flags</b> member of <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_header.md">KSCAMERA_EXTENDEDPROP_HEADER</a>.
 
 
 ### -field Reserved
@@ -114,7 +115,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kscamera_extendedprop_header">KSCAMERA_EXTENDEDPROP_HEADER</a>
+<a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_header.md">KSCAMERA_EXTENDEDPROP_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn567572">KSPROPERTY_CAMERACONTROL_EXTENDED_EVCOMPENSATION</a>
@@ -124,5 +125,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

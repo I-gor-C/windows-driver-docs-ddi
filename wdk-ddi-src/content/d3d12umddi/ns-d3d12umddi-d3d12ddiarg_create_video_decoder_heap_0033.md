@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
+UID: NS:d3d12umddi.D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
 title: D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
 author: windows-driver-content
 description: Create a video decoder heap.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg-create-video-decoder-heap-0033.htm
 old-project: display
 ms.assetid: 158411ee-6cc1-466d-b772-fe380b55baef
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033, D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
 ---
 
 # D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033 structure

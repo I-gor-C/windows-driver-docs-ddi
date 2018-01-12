@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_MODEM_CONFIG_STATUS
+UID: NS:wwan._WWAN_MODEM_CONFIG_STATUS
 title: _WWAN_MODEM_CONFIG_STATUS
 author: windows-driver-content
 description: The WWAN_MODEM_CONFIG_STATUS structure represents a modem's configuration (config) status.
 old-location: netvista\wwan_modem_config_status.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3A13CFBC-DBB4-4BB1-ABA4-AB145AED07AA
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_MODEM_CONFIG_STATUS, *PWWAN_MODEM_CONFIG_STATUS, PWWAN_MODEM_CONFIG_STATUS, WWAN_MODEM_CONFIG_STATUS
+ms.date: 1/8/2018
+ms.keywords: _WWAN_MODEM_CONFIG_STATUS, *PWWAN_MODEM_CONFIG_STATUS, WWAN_MODEM_CONFIG_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWWAN_MODEM_CONFIG_STATUS, WWAN_MODEM_CONFIG_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -60,12 +61,12 @@ typedef struct _WWAN_MODEM_CONFIG_STATUS {
 
 ### -field ConfigState
 
-The modem's config state. For a list of defined values, see <a href="netvista.wwan_modem_config_state">WWAN_MODEM_CONFIG_STATE</a>.
+The modem's config state. For a list of defined values, see <a href="..\wwan\ne-wwan-_wwan_modem_config_state.md">WWAN_MODEM_CONFIG_STATE</a>.
 
 
 ### -field ConfigReason
 
-The reason why the modem's config state change was triggered. For a list of defined values, see <a href="netvista.wwan_modem_config_reason">WWAN_MODEM_CONFIG_REASON</a>.
+The reason why the modem's config state change was triggered. For a list of defined values, see <a href="..\wwan\ne-wwan-_wwan_modem_config_reason.md">WWAN_MODEM_CONFIG_REASON</a>.
 
 
 ### -field PreviousConfigID
@@ -125,18 +126,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_modem_config_state">WWAN_MODEM_CONFIG_STATE</a>
+<a href="..\wwan\ne-wwan-_wwan_modem_config_state.md">WWAN_MODEM_CONFIG_STATE</a>
 </dt>
 <dt>
-<a href="netvista.wwan_modem_config_reason">WWAN_MODEM_CONFIG_REASON</a>
+<a href="..\wwan\ne-wwan-_wwan_modem_config_reason.md">WWAN_MODEM_CONFIG_REASON</a>
 </dt>
 <dt>
-<a href="netvista.wwan_modem_config_info">WWAN_MODEM_CONFIG_INFO</a>
+<a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONFIG_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_MODEM_CONFIG_STATUS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_MODEM_CONFIG_STATUS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

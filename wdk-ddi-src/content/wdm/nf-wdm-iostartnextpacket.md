@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoStartNextPacket
+UID: NF:wdm.IoStartNextPacket
 title: IoStartNextPacket function
 author: windows-driver-content
 description: The IoStartNextPacket routine dequeues the next IRP, if any, from the given device object's associated device queue and calls the driver's StartIo routine.
@@ -7,7 +7,7 @@ old-location: kernel\iostartnextpacket.htm
 old-project: kernel
 ms.assetid: f1197dfd-03d7-4ac2-8f11-60da413e32b2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoStartNextPacket
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: DISPATCH_LEVEL (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>IoStartNextPacket</b> routine dequeues the next IRP, if any, from the given device object's associated device queue and calls the driver's <a href="kernel.startio">StartIo</a> routine.
+The <b>IoStartNextPacket</b> routine dequeues the next IRP, if any, from the given device object's associated device queue and calls the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563858">StartIo</a> routine.
 
 
 
@@ -76,9 +77,9 @@ If the driver passed a pointer to a cancel routine when it called <b>IoStartPack
 
 Drivers that do not have a <i>StartIo</i> routine cannot call <b>IoStartNextPacket</b>.
 
-Drivers that call <b>IoStartNextPacket </b>from their <i>StartIo</i> routine should be aware of recursion issues. If a driver can call <b>IoStartNextPacket</b> on a large number of requests in succession from its <i>StartIo</i> routine (for example, when a device error occurs and the driver is clearing out it device queue), you should set the <i>DeferredStartIo</i> attribute for the device by using <a href="kernel.iosetstartioattributes">IoSetStartIoAttributes</a> routine. This attribute ensures that the next packet will not be issued until the previous <i>StartIo</i> call returns.
+Drivers that call <b>IoStartNextPacket </b>from their <i>StartIo</i> routine should be aware of recursion issues. If a driver can call <b>IoStartNextPacket</b> on a large number of requests in succession from its <i>StartIo</i> routine (for example, when a device error occurs and the driver is clearing out it device queue), you should set the <i>DeferredStartIo</i> attribute for the device by using <a href="..\wdm\nf-wdm-iosetstartioattributes.md">IoSetStartIoAttributes</a> routine. This attribute ensures that the next packet will not be issued until the previous <i>StartIo</i> call returns.
 
-Callers of <b>IoStartNextPacket</b> must be running at IRQL = DISPATCH_LEVEL. Usually, this routine is called from a device driver's <a href="kernel.dpcforisr">DpcForIsr</a> or <a href="kernel.customdpc">CustomDpc</a> routine, both of which are run at IRQL = DISPATCH_LEVEL.
+Callers of <b>IoStartNextPacket</b> must be running at IRQL = DISPATCH_LEVEL. Usually, this routine is called from a device driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544079">DpcForIsr</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff542972">CustomDpc</a> routine, both of which are run at IRQL = DISPATCH_LEVEL.
 
 
 ## -requirements
@@ -153,7 +154,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqldispatch">IrqlDispatch</a>, <a href="devtest.wdm_spinlocksafe">SpinLockSafe</a>, <a href="devtest.wdm_startiorecursion">StartIoRecursion</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>, <a href="devtest.storport_irqldispatch">IrqlDispatch(storport)</a>, <a href="devtest.storport_spinlocksafe">SpinLockSafe(storport)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547743">IrqlDispatch</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454252">SpinLockSafe</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff552798">StartIoRecursion</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>, <a href="https://msdn.microsoft.com/93ABD54D-4D63-495A-917B-A387C9353969">IrqlDispatch(storport)</a>, <a href="https://msdn.microsoft.com/12D36178-C00D-44A7-9DA0-E0663DF1FFDC">SpinLockSafe(storport)</a>
 </td>
 </tr>
 </table>
@@ -161,21 +162,21 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="kernel.iosetstartioattributes">IoSetStartIoAttributes</a>
+<a href="..\wdm\nf-wdm-iosetstartioattributes.md">IoSetStartIoAttributes</a>
 </dt>
 <dt>
-<a href="kernel.iostartnextpacketbykey">IoStartNextPacketByKey</a>
+<a href="..\wdm\nf-wdm-iostartnextpacketbykey.md">IoStartNextPacketByKey</a>
 </dt>
 <dt>
-<a href="kernel.iostartpacket">IoStartPacket</a>
+<a href="..\wdm\nf-wdm-iostartpacket.md">IoStartPacket</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoStartNextPacket routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoStartNextPacket routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._DXVAHDDDI_STREAM_STATE_ALPHA_DATA
+UID: NS:d3dumddi._DXVAHDDDI_STREAM_STATE_ALPHA_DATA
 title: _DXVAHDDDI_STREAM_STATE_ALPHA_DATA
 author: windows-driver-content
 description: The DXVAHDDDI_STREAM_STATE_ALPHA_DATA structure describes stream-state data that specifies the alpha blend level per-plane.
@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_stream_state_alpha_data.htm
 old-project: display
 ms.assetid: 0cd14f0c-5b7b-443b-ab37-c455b4accacb
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVAHDDDI_STREAM_STATE_ALPHA_DATA, DXVAHDDDI_STREAM_STATE_ALPHA_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVAHDDDI_STREAM_STATE_ALPHA_DATA
 ---
 
 # _DXVAHDDDI_STREAM_STATE_ALPHA_DATA structure
@@ -75,13 +76,13 @@ As = per-pixel source alpha value [0.0, 1.0]
 
 Ap = per-plane alpha value [0.0, 1.0]
 
-Ae = per-entry palette alpha value [0.0, 1.0] or 1.0 if the driver did not set the DXVAHDDDI_FEATURE_CAPS_ALPHA_PALETTE value in the <b>FeatureCaps</b> member of the <a href="display.dxvahdddi_vpdevcaps">DXVAHDDDI_VPDEVCAPS</a> structure when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPDEVCAPS value set.
+Ae = per-entry palette alpha value [0.0, 1.0] or 1.0 if the driver did not set the DXVAHDDDI_FEATURE_CAPS_ALPHA_PALETTE value in the <b>FeatureCaps</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_vpdevcaps.md">DXVAHDDDI_VPDEVCAPS</a> structure when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPDEVCAPS value set.
 
 Cd = Cs * (As * Ap * Ae) + Cd * (1.0 - As * Ap * Ae)
 
 Ad = per-pixel destination alpha value [0.0, 1.0]
 
-The Ad parameter is set with values from the <a href="display.dxvahdddi_alpha_fill_mode">DXVAHDDDI_ALPHA_FILL_MODE</a> enumeration.
+The Ad parameter is set with values from the <a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_alpha_fill_mode.md">DXVAHDDDI_ALPHA_FILL_MODE</a> enumeration.
 
 
 ## -requirements
@@ -112,12 +113,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxvahdddi_alpha_fill_mode">DXVAHDDDI_ALPHA_FILL_MODE</a>
+<a href="..\d3dumddi\ne-d3dumddi-_dxvahdddi_alpha_fill_mode.md">DXVAHDDDI_ALPHA_FILL_MODE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_STREAM_STATE_ALPHA_DATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_STREAM_STATE_ALPHA_DATA structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

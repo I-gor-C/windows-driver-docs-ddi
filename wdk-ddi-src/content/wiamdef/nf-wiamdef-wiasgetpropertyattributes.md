@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasGetPropertyAttributes
+UID: NF:wiamdef.wiasGetPropertyAttributes
 title: wiasGetPropertyAttributes function
 author: windows-driver-content
 description: The wiasGetPropertyAttributes function retrieves the access flags and valid values for a set of properties.
 old-location: image\wiasgetpropertyattributes.htm
-old-project: Image
+old-project: image
 ms.assetid: b12ff158-73e7-4fdf-b7b1-2969d161ed93
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasGetPropertyAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 

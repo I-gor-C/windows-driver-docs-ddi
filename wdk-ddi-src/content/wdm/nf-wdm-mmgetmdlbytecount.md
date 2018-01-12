@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.MmGetMdlByteCount
+UID: NF:wdm.MmGetMdlByteCount
 title: MmGetMdlByteCount macro
 author: windows-driver-content
 description: The MmGetMdlByteCount macro returns the length, in bytes, of the buffer described by the specified MDL.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ ULONG MmGetMdlByteCount(
 
 ### -param Mdl [in]
 
-A pointer to an <a href="kernel.mdl">MDL</a> structure that describes the layout of a virtual memory buffer in physical memory. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>.
+A pointer to an <a href="..\wdm\ns-wdm-_mdl.md">MDL</a> structure that describes the layout of a virtual memory buffer in physical memory. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>.
 
 
 ## -remarks
@@ -113,7 +114,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_mdlafterreqcompletedintioctla">MdlAfterReqCompletedIntIoctlA</a>, <a href="devtest.kmdf_mdlafterreqcompletedioctla">MdlAfterReqCompletedIoctlA</a>, <a href="devtest.kmdf_mdlafterreqcompletedreada">MdlAfterReqCompletedReadA</a>, <a href="devtest.kmdf_mdlafterreqcompletedwritea">MdlAfterReqCompletedWriteA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549042">MdlAfterReqCompletedIntIoctlA</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549056">MdlAfterReqCompletedIoctlA</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549065">MdlAfterReqCompletedReadA</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549077">MdlAfterReqCompletedWriteA</a>
 </td>
 </tr>
 </table>
@@ -121,7 +122,7 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.mdl">MDL</a>
+<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>

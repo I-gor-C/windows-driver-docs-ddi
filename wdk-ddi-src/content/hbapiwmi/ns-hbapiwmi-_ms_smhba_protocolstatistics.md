@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._MS_SMHBA_PROTOCOLSTATISTICS
+UID: NS:hbapiwmi._MS_SMHBA_PROTOCOLSTATISTICS
 title: _MS_SMHBA_PROTOCOLSTATISTICS
 author: windows-driver-content
 description: The MS_SMHBA_PROTOCOLSTATISTICS structure is used to report protocol traffic statistics on a port.
@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_protocolstatistics.htm
 old-project: storage
 ms.assetid: eb992a5e-41fe-4bb3-9f53-785135af8a32
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MS_SMHBA_PROTOCOLSTATISTICS, MS_SMHBA_PROTOCOLSTATISTICS, *PMS_SMHBA_PROTOCOLSTATISTICS, PMS_SMHBA_PROTOCOLSTATISTICS
+ms.date: 1/10/2018
+ms.keywords: _MS_SMHBA_PROTOCOLSTATISTICS, MS_SMHBA_PROTOCOLSTATISTICS, *PMS_SMHBA_PROTOCOLSTATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MS_SMHBA_PROTOCOLSTATISTICS, *PMS_SMHBA_PROTOCOLSTATISTICS
 ---
 
 # _MS_SMHBA_PROTOCOLSTATISTICS structure

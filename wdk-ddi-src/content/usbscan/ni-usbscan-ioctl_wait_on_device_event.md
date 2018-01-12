@@ -1,13 +1,13 @@
 ---
-UID: NI.usbscan.IOCTL_WAIT_ON_DEVICE_EVENT
+UID: NI:usbscan.IOCTL_WAIT_ON_DEVICE_EVENT
 title: IOCTL_WAIT_ON_DEVICE_EVENT
 author: windows-driver-content
 description: Returns information about an event occurring on a USB interrupt pipe.
 old-location: image\ioctl_wait_on_device_event.htm
-old-project: Image
+old-project: image
 ms.assetid: 0895a19b-bb28-405a-98df-28522a18ec2b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RAW_PIPE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -77,7 +78,7 @@ I/O Status block
 ## -remarks
 
 
-Device handle, obtained by calling <a href="fs.createfile">CreateFile</a>.
+Device handle, obtained by calling <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a>.
 
 IOCTL_WAIT_ON_DEVICE_EVENT
 

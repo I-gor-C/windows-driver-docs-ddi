@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsclassextension.ISensorDriver.OnGetDataFields
+UID: NF:sensorsclassextension.ISensorDriver.OnGetDataFields
 title: ISensorDriver::OnGetDataFields method
 author: windows-driver-content
 description: The ISensorDriver::OnGetDataFields method retrieves current sensor data.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <a href="sensors.isensordriver_ongetdatafields">ISensorDriver::OnGetDataFields</a> method retrieves current sensor data.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545607">ISensorDriver::OnGetDataFields</a> method retrieves current sensor data.
 
 
 

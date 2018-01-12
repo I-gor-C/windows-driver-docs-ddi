@@ -1,14 +1,14 @@
 ---
-UID: NC.dot11wdi.MINIPORT_WDI_ADAPTER_HANG_DIAGNOSE
+UID: NC:dot11wdi.MINIPORT_WDI_ADAPTER_HANG_DIAGNOSE
 title: MINIPORT_WDI_ADAPTER_HANG_DIAGNOSE
 author: windows-driver-content
 description: The MiniportWdiAdapterHangDiagnose handler function is used to collect hardware control register states and optionally full firmware state.
 old-location: netvista\miniportwdiadapterhangdiagnose.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 233CCF43-481E-4759-A2FC-0329103F8208
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS, PSYNTH_STATS
+ms.date: 1/8/2018
+ms.keywords: _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 # MINIPORT_WDI_ADAPTER_HANG_DIAGNOSE callback
@@ -40,7 +41,7 @@ req.irql:
 ## -description
 The MiniportWdiAdapterHangDiagnose handler function is used to collect hardware control register states and optionally full firmware state.
 
-This is a WDI miniport handler inside <a href="netvista.ndis_miniport_driver_wdi_characteristics">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>.
+This is a WDI miniport handler inside <a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>.
 
 
 
@@ -64,7 +65,7 @@ NDIS_STATUS MiniportWdiAdapterHangDiagnose(
 
 ### -param MiniportDriverContext [in]
 
-The handle to a driver-allocated context area where the driver maintains state and configuration information. The miniport driver passed this context area to the <a href="netvista.ndismregisterwdiminiportdriver">NdisMRegisterWdiMiniportDriver</a> function.
+The handle to a driver-allocated context area where the driver maintains state and configuration information. The miniport driver passed this context area to the <a href="..\dot11wdi\nf-dot11wdi-ndismregisterwdiminiportdriver.md">NdisMRegisterWdiMiniportDriver</a> function.
 
 
 ### -param DiagnoseLevel [in]
@@ -146,7 +147,7 @@ Header
 <a href="..\dot11wdi\ne-dot11wdi-ediagnoselevel.md">eDiagnoseLevel</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_driver_wdi_characteristics">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
 </dt>
 <dt>
 <a href="netvista.wdi_hang_detection_and_recovery">WDI hang detection and recovery</a>
@@ -156,5 +157,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_WDI_ADAPTER_HANG_DIAGNOSE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_WDI_ADAPTER_HANG_DIAGNOSE callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

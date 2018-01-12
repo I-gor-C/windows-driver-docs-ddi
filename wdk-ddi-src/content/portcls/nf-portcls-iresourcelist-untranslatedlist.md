@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IResourceList.UntranslatedList
+UID: NF:portcls.IResourceList.UntranslatedList
 title: IResourceList::UntranslatedList method
 author: windows-driver-content
 description: The UntranslatedList method returns the list of untranslated resources.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IResourceList::UntranslatedList method
@@ -57,7 +58,7 @@ PCM_RESOURCE_LIST UntranslatedList(
 
 
 ## -returns
-<code>UntranslatedList</code> returns a pointer to a <a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a> structure that specifies all of the system hardware resources that are assigned to the device. The resources in the list are in untranslated form. This pointer remains valid until the resource list object is deleted.
+<code>UntranslatedList</code> returns a pointer to a <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a> structure that specifies all of the system hardware resources that are assigned to the device. The resources in the list are in untranslated form. This pointer remains valid until the resource list object is deleted.
 
 
 ## -remarks
@@ -105,7 +106,7 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 </dt>
 <dt>
-<a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
 </dt>
 </dl>
  

@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_THREAD_BASIC_INFORMATION
+UID: NS:dbgeng._DEBUG_THREAD_BASIC_INFORMATION
 title: _DEBUG_THREAD_BASIC_INFORMATION
 author: windows-driver-content
 description: The DEBUG_THREAD_BASIC_INFORMATION structure describes an operating system thread.
 old-location: debugger\debug_thread_basic_information.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: e964ed63-6c00-4308-955c-f8a99490a248
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_THREAD_BASIC_INFORMATION, PDEBUG_THREAD_BASIC_INFORMATION, *PDEBUG_THREAD_BASIC_INFORMATION, DEBUG_THREAD_BASIC_INFORMATION
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_THREAD_BASIC_INFORMATION, *PDEBUG_THREAD_BASIC_INFORMATION, DEBUG_THREAD_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDEBUG_THREAD_BASIC_INFORMATION, DEBUG_THREAD_BASIC_INFORMATION
 ---
 
 # _DEBUG_THREAD_BASIC_INFORMATION structure

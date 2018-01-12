@@ -1,5 +1,5 @@
 ---
-UID: NS.VIDEO._VIDEO_PORT_CONFIG_INFO
+UID: NS:video._VIDEO_PORT_CONFIG_INFO
 title: _VIDEO_PORT_CONFIG_INFO
 author: windows-driver-content
 description: The VIDEO_PORT_CONFIG_INFO structure contains bus-specific adapter configuration information.
@@ -7,8 +7,8 @@ old-location: display\video_port_config_info.htm
 old-project: display
 ms.assetid: 5861efcb-1792-406a-820a-38fbfb283c1f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VIDEO_PORT_CONFIG_INFO, VIDEO_PORT_CONFIG_INFO, *PVIDEO_PORT_CONFIG_INFO, PVIDEO_PORT_CONFIG_INFO
+ms.date: 12/29/2017
+ms.keywords: _VIDEO_PORT_CONFIG_INFO, VIDEO_PORT_CONFIG_INFO, *PVIDEO_PORT_CONFIG_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
+req.typenames: VIDEO_PORT_CONFIG_INFO, *PVIDEO_PORT_CONFIG_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -99,7 +100,7 @@ Specifies the type of bus interface. The video port driver always sets this memb
 
 ### -field BusInterruptLevel
 
-This member is irrelevant if the video hardware does not generate interrupts, indicated by setting the <b>HwInterrupt</b> member in the <a href="display.video_hw_initialization_data">VIDEO_HW_INITIALIZATION_DATA</a> structure to <b>NULL</b>. Otherwise, it specifies the bus-relative IRQL that corresponds to the interrupt request on <b>Isa</b> or <b>MicroChannel</b> type buses. The preset default value for this member is zero. A miniport driver must supply the correct value if it handles interrupts for a video adapter on an <b>Isa</b> or <b>MicroChannel</b> type bus, or for a video adapter configured for level-sensitive interrupts on an <b>Eisa</b> type bus.
+This member is irrelevant if the video hardware does not generate interrupts, indicated by setting the <b>HwInterrupt</b> member in the <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a> structure to <b>NULL</b>. Otherwise, it specifies the bus-relative IRQL that corresponds to the interrupt request on <b>Isa</b> or <b>MicroChannel</b> type buses. The preset default value for this member is zero. A miniport driver must supply the correct value if it handles interrupts for a video adapter on an <b>Isa</b> or <b>MicroChannel</b> type bus, or for a video adapter configured for level-sensitive interrupts on an <b>Eisa</b> type bus.
 
 If a miniport driver's <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a> function finds that the video adapter does not generate interrupts or that it cannot determine a valid interrupt vector/level for the adapter, <i>HwVidFindAdapter</i> should set both <b>BusInterruptLevel</b> and <b>BusInterruptVector</b> to zero.
 
@@ -123,7 +124,7 @@ This member and all subsequent members through <b>HardwareStateSize</b> are irre
 
 ### -field EmulatorAccessEntries
 
-Pointer to an array of emulator access ranges set up by the VGA-compatible miniport driver. Each emulator access range must be a proper subset of the miniport driver's <a href="display.video_access_range">VIDEO_ACCESS_RANGE</a>-type array. Each element specifies a range of I/O ports to be hooked out by the V86 emulator and, possibly, monitored by a driver-supplied SvgaHwIoPortXxx function whenever an MS-DOS application, running full screen, attempts to write directly to the video adapter registers. Usually, this array describes all I/O port ranges in the corresponding access ranges array. If the miniport driver defines its array of emulator access entries statically in the driver itself, the port driver initializes this pointer to that array. If <i>NumEmulatorAccessEntries</i> is zero, this member is <b>NULL</b>. 
+Pointer to an array of emulator access ranges set up by the VGA-compatible miniport driver. Each emulator access range must be a proper subset of the miniport driver's <a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a>-type array. Each element specifies a range of I/O ports to be hooked out by the V86 emulator and, possibly, monitored by a driver-supplied SvgaHwIoPortXxx function whenever an MS-DOS application, running full screen, attempts to write directly to the video adapter registers. Usually, this array describes all I/O port ranges in the corresponding access ranges array. If the miniport driver defines its array of emulator access entries statically in the driver itself, the port driver initializes this pointer to that array. If <i>NumEmulatorAccessEntries</i> is zero, this member is <b>NULL</b>. 
 
 
 
@@ -259,30 +260,30 @@ Header
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_save_hardware_state.md">IOCTL_VIDEO_SAVE_HARDWARE_STATE</a>
 </dt>
 <dt>
-<a href="display.video_access_range">VIDEO_ACCESS_RANGE</a>
+<a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a>
 </dt>
 <dt>
-<a href="display.video_hw_initialization_data">VIDEO_HW_INITIALIZATION_DATA</a>
+<a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo_port_get_proc_address.md">VideoPortGetProcAddress</a>
 </dt>
 <dt>
-<a href="display.videoportgetaccessranges">VideoPortGetAccessRanges</a>
+<a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
 </dt>
 <dt>
-<a href="display.videoportgetdevicebase">VideoPortGetDeviceBase</a>
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 </dt>
 <dt>
-<a href="display.videoportgetdevicedata">VideoPortGetDeviceData</a>
+<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
 </dt>
 <dt>
-<a href="display.videoportverifyaccessranges">VideoPortVerifyAccessRanges</a>
+<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_PORT_CONFIG_INFO structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_PORT_CONFIG_INFO structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

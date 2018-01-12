@@ -1,5 +1,5 @@
 ---
-UID: NS.PRINTOEM._PSCRIPT5_PRIVATE_DEVMODE
+UID: NS:printoem._PSCRIPT5_PRIVATE_DEVMODE
 title: _PSCRIPT5_PRIVATE_DEVMODE
 author: windows-driver-content
 description: The PSCRIPT5_PRIVATE_DEVMODE structure enables Pscript5 plug-ins to determine the size of the private portion of Pscript5's DEVMODEW structure.
@@ -7,8 +7,8 @@ old-location: print\pscript5_private_devmode.htm
 old-project: print
 ms.assetid: e2ae002b-2bc9-4e5e-b9b6-bb76849c2cba
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PSCRIPT5_PRIVATE_DEVMODE, PSCRIPT5_PRIVATE_DEVMODE, PPSCRIPT5_PRIVATE_DEVMODE, *PPSCRIPT5_PRIVATE_DEVMODE
+ms.date: 1/8/2018
+ms.keywords: _PSCRIPT5_PRIVATE_DEVMODE, PSCRIPT5_PRIVATE_DEVMODE, *PPSCRIPT5_PRIVATE_DEVMODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PSCRIPT5_PRIVATE_DEVMODE, *PPSCRIPT5_PRIVATE_DEVMODE
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ Reserved for system use.
 
 ### -field wSize
 
-The size, in bytes, of the private portion of Pscript5's <a href="display.devmodew">DEVMODEW</a> structure.
+The size, in bytes, of the private portion of Pscript5's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.
 
 
 ## -remarks
@@ -80,7 +81,7 @@ Verify that (pdm)-&gt;dmDriverExtra is larger than the value returned by the mac
 
 The preceding example starts with the address of the public DEVMODEW structure (<i>pdm</i>), adds the number of bytes of this structure (<i>pdm-</i>&gt;<b>dmSize</b>), and then adds the size in bytes of the Pscript5 private DEVMODEW structure (<b>wSize</b>). A plug-in's private DEVMODEW data begins at this memory address. If there are multiple plug-ins chained together, the address returned by this example is that of the first plug-in's private DEVMODEW data. The second plug-in's private DEVMODEW data follows the first plug-in's private DEVMODEW data, the third plug-in's private DEVMODEW data follows that of the second plug-in's private DEVMODEW data, and so on. A plug-in developer who needs to determine the address of the <i>n</i>-th plug-in's private DEVMODEW data must know the sizes of the private DEVMODEW data for the first <i>n</i> - 1 plug-ins.
 
-Verify that the private portion of your plug-in's DEVMODEW structure begins with a valid <a href="print.oem_dmextraheader">OEM_DMEXTRAHEADER</a> structure.
+Verify that the private portion of your plug-in's DEVMODEW structure begins with a valid <a href="..\printoem\ns-printoem-_oem_dmextraheader.md">OEM_DMEXTRAHEADER</a> structure.
 
 
 ## -requirements
@@ -101,12 +102,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.unidrv_private_devmode">UNIDRV_PRIVATE_DEVMODE</a>
+<a href="..\printoem\ns-printoem-_unidrv_private_devmode.md">UNIDRV_PRIVATE_DEVMODE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20PSCRIPT5_PRIVATE_DEVMODE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20PSCRIPT5_PRIVATE_DEVMODE structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

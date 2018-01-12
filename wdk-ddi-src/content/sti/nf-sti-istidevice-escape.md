@@ -1,13 +1,13 @@
 ---
-UID: NF.sti.IStiDevice.Escape
+UID: NF:sti.IStiDevice.Escape
 title: IStiDevice::Escape method
 author: windows-driver-content
 description: The IStiDevice::Escape method sends a request for a vendor-specific I/O operation to a still image device.
 old-location: image\istidevice_escape.htm
-old-project: Image
+old-project: image
 ms.assetid: ca2aae12-b4b8-4bae-bc3b-812a1ae539c0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IStiDevice, IStiDevice::Escape, Escape
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STI_DEVICE_MJ_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -94,11 +95,11 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 
 
 ## -remarks
-The <b>IStiDevice::Escape</b> method calls <a href="image.istiusd_escape">IStiUSD::Escape</a>, which is exported by vendor-supplied minidrivers. The device's minidriver defines the Method parameter usage.
+The <b>IStiDevice::Escape</b> method calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff543815">IStiUSD::Escape</a>, which is exported by vendor-supplied minidrivers. The device's minidriver defines the Method parameter usage.
 
-Before calling <b>IStiDevice::Escape</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.
+Before calling <b>IStiDevice::Escape</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.
 
-A call to <b>IStiDevice::Escape</b> must be preceded by a call to <a href="image.istidevice_lockdevice">IStiDevice::LockDevice</a> and followed by a call to <a href="image.istidevice_unlockdevice">IStiDevice::UnLockDevice</a>.
+A call to <b>IStiDevice::Escape</b> must be preceded by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543756">IStiDevice::LockDevice</a> and followed by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543770">IStiDevice::UnLockDevice</a>.
 
 
 ## -requirements

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:ifsk
 ---
 
 # Installable file system
@@ -56,7 +56,6 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [CcIsThereDirtyData function](..\ntifs\nf-ntifs-ccistheredirtydata.md) | The CcIsThereDirtyData routine determines whether a mounted volume contains any files that have dirty data in the system cache. |
 | [CcIsThereDirtyDataEx function](..\ntifs\nf-ntifs-ccistheredirtydataex.md) | The CcIsThereDirtyDataEx routine determines whether a volume contains any files that have dirty data in the system cache. |
 | [CcMapData function](..\ntifs\nf-ntifs-ccmapdata.md) | The CcMapData routine maps a specified byte range of a cached file to a buffer in memory. |
-| [CcMapData function](..\ntifs\nf-ntifs-ccmapdata~r1.md) | The CcMapData routine maps a specified byte range of a cached file to a buffer in memory. |
 | [CcMdlReadComplete function](..\ntifs\nf-ntifs-ccmdlreadcomplete.md) | The CcMdlReadComplete routine frees the memory descriptor lists (MDL) created by CcMdlRead for a cached file. |
 | [CcMdlWriteAbort function](..\ntifs\nf-ntifs-ccmdlwriteabort.md) | The CcMdlWriteAbort routine frees memory descriptor lists (MDL) created by an earlier call to CcPrepareMdlWrite. |
 | [CcMdlWriteComplete function](..\ntifs\nf-ntifs-ccmdlwritecomplete.md) | The CcMdlWriteComplete routine frees the memory descriptor lists (MDL) created by CcPrepareMdlWrite for a cached file. |
@@ -65,7 +64,6 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [CcPrepareMdlWrite function](..\ntifs\nf-ntifs-ccpreparemdlwrite.md) | The CcPrepareMdlWrite routine provides direct access to cached file memory so that the caller can write data to the file. |
 | [CcPreparePinWrite function](..\ntifs\nf-ntifs-ccpreparepinwrite.md) | The CcPreparePinWrite routine pins the specified byte range of a cached file for write access. |
 | [CcPurgeCacheSection function](..\ntifs\nf-ntifs-ccpurgecachesection.md) | The CcPurgeCacheSection routine purges all or a portion of a cached file from the system cache. |
-| [CcPurgeCacheSection function](..\ntifs\nf-ntifs-ccpurgecachesection~r1.md) | The CcPurgeCacheSection routine purges all or a portion of a cached file from the system cache. |
 | [CcRemapBcb function](..\ntifs\nf-ntifs-ccremapbcb.md) | The CcRemapBcb routine maps a buffer control block (BCB) an additional time to preserve it through several calls that perform additional maps and unpins. |
 | [CcRepinBcb function](..\ntifs\nf-ntifs-ccrepinbcb.md) | The CcRepinBcb routine pins a buffer control block (BCB) an additional time to prevent it from being freed by a subsequent call to CcUnpinData. |
 | [CcScheduleReadAhead function](..\ntifs\nf-ntifs-ccschedulereadahead.md) | The CcScheduleReadAhead routine performs read-ahead (also called &#0034;lazy read&#0034;) on a cached file. CcScheduleReadAhead should never be called directly. The CcReadAhead macro should be called instead. |
@@ -84,7 +82,10 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [CcUnpinRepinnedBcb function](..\ntifs\nf-ntifs-ccunpinrepinnedbcb.md) | The CcUnpinRepinnedBcb routine unpins a repinned buffer control block (BCB). |
 | [CcWaitForCurrentLazyWriterActivity function](..\ntifs\nf-ntifs-ccwaitforcurrentlazywriteractivity.md) | The CcWaitForCurrentLazyWriterActivity routine puts the caller into a wait state until the current batch of lazy writer activity is completed. |
 | [CcZeroData function](..\ntifs\nf-ntifs-cczerodata.md) | The CcZeroData routine zeros the specified range of bytes in a cached or noncached file. |
+| [ExAdjustLookasideDepth function](..\ntifs\nf-ntifs-exadjustlookasidedepth.md) | Reserved for system use. |
+| [ExDisableResourceBoostLite function](..\ntifs\nf-ntifs-exdisableresourceboostlite.md) | Reserved for system use. |
 | [ExInitializeWorkItem function](..\wdm\nf-wdm-exinitializeworkitem.md) | ExInitializeWorkItem initializes a work-queue item with a caller-supplied context and callback routine to be queued for execution when a system worker thread is given control. |
+| [ExQueryPoolBlockSize function](..\ntifs\nf-ntifs-exquerypoolblocksize.md) | Obsolete. |
 | [ExQueueWorkItem function](..\wdm\nf-wdm-exqueueworkitem.md) | ExQueueWorkItem inserts a given work item into a queue from which a system worker thread removes the item and gives control to the routine that the caller supplied to ExInitializeWorkItem. |
 | [FltAcknowledgeEcp function](..\fltkernel\nf-fltkernel-fltacknowledgeecp.md) | The FltAcknowledgeEcp routine is used to mark an extra create parameter context structure (ECP) as acknowledged. |
 | [FltAddOpenReparseEntry function](..\fltkernel\nf-fltkernel-fltaddopenreparseentry.md) | This routine adds a caller allocated open reparse structure, OPEN_REPARSE_LIST_ENTRY, into a create operation. |
@@ -330,12 +331,15 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [FltWriteFile function](..\fltkernel\nf-fltkernel-fltwritefile.md) | FltWriteFile is used to write data to an open file, stream, or device. |
 | [FltWriteFileEx function](..\fltkernel\nf-fltkernel-fltwritefileex.md) | FltWriteFileEx is used to write data to an open file, stream, or device. This function extends FltWriteFile to allow the optional use of an MDL for write data instead of a mapped buffer address. |
 | [FsRtlAcknowledgeEcp function](..\ntifs\nf-ntifs-fsrtlacknowledgeecp.md) | The FsRtlAcknowledgeEcp routine marks an extra create parameter (ECP) context structure as acknowledged. |
+| [FsRtlAcquireFileExclusive function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlacquirefileexclusive.md) | Reserved for system use. |
 | [FsRtlAddLargeMcbEntry function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtladdlargemcbentry~r3.md) | The FsRtlAddLargeMcbEntry routine adds a new mapping to an existing map control block (MCB). |
+| [FsRtlAddMcbEntry function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtladdmcbentry~r3.md) | Obsolete. |
 | [FsRtlAddToTunnelCache function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtladdtotunnelcache~r6.md) | The FsRtlAddToTunnelCache routine caches a file name that is removed from a directory when a file is renamed or deleted. |
 | [FsRtlAllocateExtraCreateParameter function](..\ntifs\nf-ntifs-fsrtlallocateextracreateparameter.md) | The FsRtlAllocateExtraCreateParameter routine allocates memory for a user-defined extra create parameter (ECP) context structure and generates a pointer to that structure. |
 | [FsRtlAllocateExtraCreateParameterFromLookasideList function](..\ntifs\nf-ntifs-fsrtlallocateextracreateparameterfromlookasidelist.md) | The FsRtlAllocateExtraCreateParameterFromLookasideList routine allocates memory pool from a given lookaside list for an extra create parameter (ECP) context structure, and generates a pointer to that structure. |
 | [FsRtlAllocateExtraCreateParameterList function](..\ntifs\nf-ntifs-fsrtlallocateextracreateparameterlist.md) | The FsRtlAllocateExtraCreateParameterList routine allocates paged pool memory for an ECP_LIST structure and generates a pointer to that structure. |
 | [FsRtlAllocateFileLock function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock~r1.md) | The FsRtlAllocateFileLock routine allocates and initializes a new FILE_LOCK structure. |
+| [FsRtlAllocateResource function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocateresource.md) | Obsolete. |
 | [FsRtlAreNamesEqual function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlarenamesequal~r3.md) | The FsRtlAreNamesEqual routine determines whether two Unicode strings are equal. |
 | [FsRtlAreThereCurrentOrInProgressFileLocks function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlaretherecurrentorinprogressfilelocks.md) | TheFsRtlAreThereCurrentOrInProgressFileLocks routine determines if there are byte range locks assigned to a file or any lock operations in progress for that file. |
 | [FsRtlAreThereWaitingFileLocks function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlaretherewaitingfilelocks.md) | The FsRtlAreThereWaitingFileLocks routine checks a file lock queue for any waiting file locks. |
@@ -379,6 +383,7 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [FsRtlGetNextExtraCreateParameter function](..\ntifs\nf-ntifs-fsrtlgetnextextracreateparameter.md) | The FsRtlGetNextExtraCreateParameter routine returns a pointer to the next (or first) extra create parameter (ECP) context structure in a given ECP list. |
 | [FsRtlGetNextFileLock function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlgetnextfilelock~r1.md) | The FsRtlGetNextFileLock routine is used to enumerate the byte-range locks that currently exist for a specified file. |
 | [FsRtlGetNextLargeMcbEntry function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlgetnextlargemcbentry~r4.md) | The FsRtlGetNextLargeMcbEntry routine retrieves a mapping run from a map control block (MCB). |
+| [FsRtlGetNextMcbEntry function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlgetnextmcbentry~r4.md) | Obsolete. |
 | [FsRtlGetSectorSizeInformation function](..\ntifs\nf-ntifs-fsrtlgetsectorsizeinformation.md) | The FsRtlGetSectorSizeInformation routine retrieves the physical and logical sector size information for a storage volume. |
 | [FsRtlGetSupportedFeatures function](..\ntifs\nf-ntifs-fsrtlgetsupportedfeatures.md) | The FsRtlGetSupportedFeatures routine returns the supported features of a volume attached to the specified device object. |
 | [FsRtlIncrementCcFastMdlReadWait function](..\ntifs\nf-ntifs-fsrtlincrementccfastmdlreadwait.md) | The FsRtlIncrementCcFastMdlReadWait routine increments the cache manager's CcFastMdlReadWait performance counter member in a processor control block (PRCB) object. |
@@ -391,6 +396,7 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [FsRtlInitializeExtraCreateParameterList function](..\ntifs\nf-ntifs-fsrtlinitializeextracreateparameterlist.md) | The FsRtlInitializeExtraCreateParameterList routine initializes an extra create parameter (ECP) context structure list. |
 | [FsRtlInitializeFileLock function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock~r2.md) | The FsRtlInitializeFileLock routine initializes a FILE_LOCK structure. |
 | [FsRtlInitializeLargeMcb function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializelargemcb~r1.md) | The FsRtlInitializeLargeMcb routine initializes a map control block (MCB) structure. |
+| [FsRtlInitializeMcb function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializemcb~r1.md) | Obsolete. |
 | [FsRtlInitializeOplock function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializeoplock.md) | FsRtlInitializeOplock initializes an opportunistic lock (oplock) pointer. |
 | [FsRtlInitializeTunnelCache function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializetunnelcache.md) | The FsRtlInitializeTunnelCache routine initializes a new tunnel cache for a volume. |
 | [FsRtlInsertExtraCreateParameter function](..\ntifs\nf-ntifs-fsrtlinsertextracreateparameter.md) | The FsRtlInsertExtraCreateParameter routine inserts an extra create parameter (ECP) context structure into an ECP list. |
@@ -413,8 +419,11 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [FsRtlLookupLargeMcbEntry function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtllookuplargemcbentry~r6.md) | Given a virtual block number (VBN) and a map control block (MCB), the FsRtlLookupLargeMcbEntry routine searches the MCB for mapping information corresponding to the specified VBN. |
 | [FsRtlLookupLastLargeMcbEntry function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtllookuplastlargemcbentry~r2.md) | The FsRtlLookupLastLargeMcbEntry routine retrieves the last mapping entry stored in the map control block (MCB). |
 | [FsRtlLookupLastLargeMcbEntryAndIndex function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtllookuplastlargemcbentryandindex~r3.md) | The FsRtlLookupLastLargeMcbEntryAndIndex routine retrieves the last mapping entry stored in a given map control block (MCB). |
+| [FsRtlLookupLastMcbEntry function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtllookuplastmcbentry~r2.md) | Obsolete. |
+| [FsRtlLookupMcbEntry function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtllookupmcbentry~r4.md) | Obsolete. |
 | [FsRtlLookupPerFileContext function](..\ntifs\nf-ntifs-fsrtllookupperfilecontext.md) | The FsRtlLookupPerFileContext routine returns a pointer to a FSRTL_PER_FILE_CONTEXT object that is associated with a specified file. |
 | [FsRtlLookupPerFileObjectContext function](..\ntifs\nf-ntifs-fsrtllookupperfileobjectcontext.md) | For a &#0034;legacy&#0034; file system filter driver, the FsRtlLookupPerFileObjectContext function retrieves context information previously associated with a file object. |
+| [FsRtlLookupPerStreamContextInternal function](..\ntifs\nf-ntifs-fsrtllookupperstreamcontextinternal.md) | Reserved for system use. |
 | [FsRtlMdlReadCompleteDev function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlmdlreadcompletedev~r2.md) | The FsRtlMdlReadCompleteDev routine completes the read operation that the FsRtlMdlReadDev routine initiated. |
 | [FsRtlMdlReadDev function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlmdlreaddev~r6.md) | The FsRtlMdlReadDev routine returns a memory descriptor list (MDL) that points directly to the specified byte range in the file cache. |
 | [FsRtlMdlReadEx function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlmdlreadex~r5.md) | The FsRtlMdlReadEx routine performs a fast cached MDL read. If the requested data is not cached, the routine reverts to an IRP based MDL read operation. |
@@ -433,7 +442,9 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [FsRtlNotifyVolumeEvent function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyvolumeevent~r1.md) | The FsRtlNotifyVolumeEvent routine notifies any registered applications that a volume event is occurring. |
 | [FsRtlNotifyVolumeEventEx function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyvolumeeventex~r2.md) | The FsRtlNotifyVolumeEventEx routine notifies any registered applications that a volume event is occurring. Volume events include the volume being locked, unlocked, mounted, or made read-only. |
 | [FsRtlNumberOfRunsInLargeMcb function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnumberofrunsinlargemcb.md) | The FsRtlNumberOfRunsInLargeMcb routine returns the number of runs in a map control block (MCB). |
+| [FsRtlNumberOfRunsInMcb function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnumberofrunsinmcb.md) | Obsolete. |
 | [FsRtlOplockBreakH function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockbreakh~r5.md) | The FsRtlOplockBreakH routine breaks CACHE_HANDLE_LEVEL opportunistic locks (oplocks). |
+| [FsRtlOplockBreakToNone function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockbreaktonone~r5.md) | Obsolete. |
 | [FsRtlOplockBreakToNoneEx function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockbreaktononeex~r5.md) | The FsRtlOplockBreakToNoneEx routine breaks all opportunistic locks (oplocks) immediately without regard for any oplock key. |
 | [FsRtlOplockFsctrl function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl~r2.md) | FsRtlOplockFsctrl performs various opportunistic lock (oplock) operations on behalf of a file system or filter driver. |
 | [FsRtlOplockFsctrlEx function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrlex~r3.md) | The FsRtlOplockFsctrlEx routine performs various opportunistic lock (oplock) operations on behalf of a file system or filter driver. |
@@ -445,15 +456,18 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [FsRtlPrepareMdlWriteDev function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpreparemdlwritedev~r6.md) | The FsRtlPrepareMdlWriteDev routine returns a linked list of memory descriptor lists (MDLs) that point to the specified range of cached file data to write data directly to the cache. |
 | [FsRtlPrepareMdlWriteEx function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpreparemdlwriteex~r5.md) | The FsRtlPrepareMdlWriteEx routine returns a linked list of memory descriptor lists (MDLs) that point to the specified range of cached file data to write data directly to the cache. |
 | [FsRtlPrepareToReuseEcp function](..\ntifs\nf-ntifs-fsrtlpreparetoreuseecp.md) | The FsRtlPrepareToReuseEcp routine resets an extra create parameter (ECP) context structure, which prepares it for reuse. |
+| [FsRtlPrivateLock function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprivatelock~r11.md) | Obsolete. |
 | [FsRtlProcessFileLock function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprocessfilelock~r2.md) | The FsRtlProcessFileLock routine processes and completes an IRP for a file lock operation. |
 | [FsRtlQueryCachedVdl function](..\ntifs\nf-ntifs-fsrtlquerycachedvdl.md) | The current valid data length (VDL) for a cached file is retrieved with the FsRtlQueryCachedVdl routine. |
 | [FsRtlQueryKernelEaFile function](..\ntifs\nf-ntifs-fsrtlquerykerneleafile.md) | The routine FsRtlQueryKernelEaFile is used to build an explicit QueryEA request and synchronously wait for it to complete, returning the result. This allows the caller to do this by FileObject instead of a handle. |
 | [FsRtlRegisterFileSystemFilterCallbacks function](..\ntifs\nf-ntifs-fsrtlregisterfilesystemfiltercallbacks.md) | File system filter drivers and file systems call the FsRtlRegisterFileSystemFilterCallbacks routine to register notification callback routines to be invoked when the underlying file system performs certain operations. |
 | [FsRtlRegisterUncProvider function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md) | The FsRtlRegisterUncProvider routine registers a network redirector as a universal naming convention (UNC) provider with the system multiple UNC provider (MUP). |
 | [FsRtlRegisterUncProviderEx function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex~r3.md) | The FsRtlRegisterUncProviderEx routine registers a network redirector as a universal naming convention (UNC) provider with the system multiple UNC provider (MUP). |
+| [FsRtlReleaseFile function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlreleasefile.md) | Reserved for system use. |
 | [FsRtlRemoveDotsFromPath function](..\ntifs\nf-ntifs-fsrtlremovedotsfrompath.md) | The FsRtlRemoveDotsFromPath routine removes unnecessary occurrences of '.' and '..' from the specified path. |
 | [FsRtlRemoveExtraCreateParameter function](..\ntifs\nf-ntifs-fsrtlremoveextracreateparameter.md) | The FsRtlRemoveExtraCreateParameter routine searches an ECP list for an ECP context structure and, if found, detaches it from the ECP list. |
 | [FsRtlRemoveLargeMcbEntry function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlremovelargemcbentry~r2.md) | The FsRtlRemoveLargeMcbEntry routine removes one or more mappings from a map control block (MCB). |
+| [FsRtlRemoveMcbEntry function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlremovemcbentry~r2.md) | Obsolete. |
 | [FsRtlRemovePerFileContext function](..\ntifs\nf-ntifs-fsrtlremoveperfilecontext.md) | The FsRtlRemovePerFileContext routine returns a pointer to a FSRTL_PER_FILE_CONTEXT object that is associated with a file. |
 | [FsRtlRemovePerFileObjectContext function](..\ntifs\nf-ntifs-fsrtlremoveperfileobjectcontext.md) | For a &#0034;legacy&#0034; file system filter driver, the FsRtlRemovePerFileObjectContext function unlinks a per-file-object context information structure from the list of per-file-object contexts previously associated with a file object. |
 | [FsRtlRemovePerStreamContext function](..\ntifs\nf-ntifs-fsrtlremoveperstreamcontext.md) | FsRtlRemovePerStreamContext removes a per-stream context structure from the list of per-stream contexts associated with a file stream. |
@@ -465,8 +479,10 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [FsRtlTeardownPerFileContexts function](..\ntifs\nf-ntifs-fsrtlteardownperfilecontexts.md) | File systems call theFsRtlTeardownPerFileContexts routine to free FSRTL_PER_FILE_CONTEXT objects that are associated with a file control block (FCB) structure. |
 | [FsRtlTeardownPerStreamContexts function](..\ntifs\nf-ntifs-fsrtlteardownperstreamcontexts.md) | The FsRtlTeardownPerStreamContexts routine frees all per-stream context structures associated with a given FSRTL_ADVANCED_FCB_HEADER structure. |
 | [FsRtlTruncateLargeMcb function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtltruncatelargemcb~r1.md) | The FsRtlTruncateLargeMcb routine truncates a large map control block (MCB). |
+| [FsRtlTruncateMcb function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtltruncatemcb~r1.md) | Obsolete. |
 | [FsRtlUninitializeFileLock function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtluninitializefilelock.md) | The FsRtlUninitializeFileLock routine uninitializes a FILE_LOCK structure. |
 | [FsRtlUninitializeLargeMcb function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtluninitializelargemcb.md) | The FsRtlUninitializeLargeMcb routine uninitializes a large map-control block (MCB). |
+| [FsRtlUninitializeMcb function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtluninitializemcb.md) | Obsolete. |
 | [FsRtlUninitializeOplock function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtluninitializeoplock.md) | FsRtlUninitializeOplock uninitializes an opportunistic lock (oplock) pointer. |
 | [FsRtlUpperOplockFsctrl function](..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlupperoplockfsctrl~r4.md) | The FsRtlUpperOplockFsctrl routine processes opportunistic lock (oplock) requests and acknowledgments for secondary, or layered, file systems. |
 | [FsRtlValidateReparsePointBuffer function](..\ntifs\nf-ntifs-fsrtlvalidatereparsepointbuffer.md) | The FsRtlValidateReparsePointBuffer routine verifies that the specified reparse point buffer is valid. |
@@ -474,7 +490,11 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [IoAcquireVpbSpinLock function](..\ntifs\nf-ntifs-ioacquirevpbspinlock.md) | The IoAcquireVpbSpinLock routine acquires the Volume Parameter Block (VPB) spin lock. |
 | [IoAttachDeviceToDeviceStackSafe function](..\ntddk\nf-ntddk-ioattachdevicetodevicestacksafe.md) | The IoAttachDeviceToDeviceStackSafe routine attaches the caller's device object to the topmost device object in a driver stack. |
 | [IoCancelFileOpen function](..\ntddk\nf-ntddk-iocancelfileopen.md) | The IoCancelFileOpen routine can be used by a file system filter driver to close a file that has been opened by a file system driver in the filter driver's device stack. |
+| [IoCheckDesiredAccess function](..\ntifs\nf-ntifs-iocheckdesiredaccess.md) | Reserved for system use. |
 | [IoCheckEaBufferValidity function](..\ntifs\nf-ntifs-iocheckeabuffervalidity.md) | The IoCheckEaBufferValidity routine checks whether the specified extended attribute (EA) buffer is valid. |
+| [IoCheckFunctionAccess function](..\ntifs\nf-ntifs-iocheckfunctionaccess.md) | Reserved for system use. |
+| [IoCheckQuerySetFileInformation function](..\ntifs\nf-ntifs-iocheckquerysetfileinformation.md) | Reserved for system use. |
+| [IoCheckQuerySetVolumeInformation function](..\ntifs\nf-ntifs-iocheckquerysetvolumeinformation.md) | Reserved for system use. |
 | [IoCheckQuotaBufferValidity function](..\ntifs\nf-ntifs-iocheckquotabuffervalidity.md) | The IoCheckQuotaBufferValidity routine checks whether the specified quota buffer is valid. |
 | [IoCreateFileEx function](..\ntddk\nf-ntddk-iocreatefileex.md) | The IoCreateFileEx routine either causes a new file or directory to be created, or opens an existing file, device, directory, or volume and gives the caller a handle for the file object. |
 | [IoCreateFileSpecifyDeviceObjectHint function](..\ntddk\nf-ntddk-iocreatefilespecifydeviceobjecthint.md) | The IoCreateFileSpecifyDeviceObjectHint routine is used by file system filter drivers to send a create request only to the filters below a specified device object and to the file system. |
@@ -484,7 +504,9 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [IoCreateStreamFileObjectLite function](..\ntifs\nf-ntifs-iocreatestreamfileobjectlite.md) | The IoCreateStreamFileObjectLite routine creates a new stream file object, but does not cause an IRP_MJ_CLEANUP request to be sent to the file system driver stack. |
 | [IoEnumerateDeviceObjectList function](..\ntifs\nf-ntifs-ioenumeratedeviceobjectlist.md) | The IoEnumerateDeviceObjectList routine enumerates a driver's device object list. |
 | [IoEnumerateRegisteredFiltersList function](..\ntifs\nf-ntifs-ioenumerateregisteredfilterslist.md) | The IoEnumerateRegisteredFiltersList routine enumerates the file system filter drivers that have registered with the system. |
+| [IoFastQueryNetworkAttributes function](..\ntifs\nf-ntifs-iofastquerynetworkattributes.md) | Reserved for system use. |
 | [IoGetAttachedDevice function](..\ntifs\nf-ntifs-iogetattacheddevice.md) | The IoGetAttachedDevice routine returns a pointer to the highest-level device object associated with the specified device. |
+| [IoGetBaseFileSystemDeviceObject function](..\ntifs\nf-ntifs-iogetbasefilesystemdeviceobject.md) | Reserved for system use. |
 | [IoGetDeviceAttachmentBaseRef function](..\ntifs\nf-ntifs-iogetdeviceattachmentbaseref.md) | The IoGetDeviceAttachmentBaseRef routine returns a pointer to the lowest-level device object in a file system or device driver stack. |
 | [IoGetDeviceToVerify function](..\ntifs\nf-ntifs-iogetdevicetoverify.md) | The IoGetDeviceToVerify routine returns a pointer to the device object, representing a removable-media device, that is the target of the given thread's I/O request. |
 | [IoGetDiskDeviceObject function](..\ntifs\nf-ntifs-iogetdiskdeviceobject.md) | The IoGetDiskDeviceObject routine retrieves a pointer to the disk device object associated with a given file system volume device object. |
@@ -503,7 +525,12 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [IoIsFileOriginRemote function](..\ntddk\nf-ntddk-ioisfileoriginremote.md) | The IoIsFileOriginRemote routine determines whether a given file object is for a remote create request. |
 | [IoIsOperationSynchronous function](..\ntifs\nf-ntifs-ioisoperationsynchronous.md) | The IoIsOperationSynchronous routine determines whether a given IRP represents a synchronous or asynchronous I/O request. |
 | [IoIsSystemThread function](..\ntifs\nf-ntifs-ioissystemthread.md) | The IoIsSystemThread routine checks whether a given thread is a system thread. |
+| [IoIsValidNameGraftingBuffer function](..\ntifs\nf-ntifs-ioisvalidnamegraftingbuffer.md) | Reserved for system use. |
+| [IoPageRead function](..\ntifs\nf-ntifs-iopageread.md) | Reserved for system use. |
 | [IoQueryFileDosDeviceName function](..\ntifs\nf-ntifs-ioqueryfiledosdevicename.md) | The IoQueryFileDosDeviceName routine retrieves an MS-DOS device name for a file. |
+| [IoQueryFileInformation function](..\ntifs\nf-ntifs-ioqueryfileinformation.md) | Reserved for system use. |
+| [IoQueryVolumeInformation function](..\ntifs\nf-ntifs-ioqueryvolumeinformation.md) | Reserved for system use. |
+| [IoQueueThreadIrp function](..\ntifs\nf-ntifs-ioqueuethreadirp.md) | Reserved for system use. |
 | [IoRegisterFileSystem function](..\ntifs\nf-ntifs-ioregisterfilesystem.md) | The IoRegisterFileSystem routine adds a file system's control device object to the global file system queue. |
 | [IoRegisterFsRegistrationChange function](..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md) | The IoRegisterFsRegistrationChange routine registers a file system filter driver's notification routine to be called whenever a file system registers or unregisters itself as an active file system. |
 | [IoRegisterFsRegistrationChangeEx function](..\ntifs\nf-ntifs-ioregisterfsregistrationchangeex.md) | The IoRegisterFsRegistrationChangeEx routine registers a file system filter driver's notification routine to be called whenever a file system registers or unregisters itself as an active file system. |
@@ -513,17 +540,28 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [IoSetDeviceToVerify function](..\ntifs\nf-ntifs-iosetdevicetoverify.md) | The IoSetDeviceToVerify routine specifies a device object to be verified. The specified device object represents a removable media device. |
 | [IoSetFileObjectIgnoreSharing function](..\ntddk\nf-ntddk-iosetfileobjectignoresharing.md) | The IoSetFileObjectIgnoreSharing routine sets a file object to ignore file sharing access checks. |
 | [IoSetFileOrigin function](..\ntddk\nf-ntddk-iosetfileorigin.md) | The IoSetFileOrigin routine specifies whether a given file object is for a remote create request. |
+| [IoSetInformation function](..\ntifs\nf-ntifs-iosetinformation.md) | Reserved for system use. |
 | [IoSetTopLevelIrp function](..\ntifs\nf-ntifs-iosettoplevelirp.md) | The IoSetTopLevelIrp routine sets the value of the TopLevelIrp field of the current thread. |
+| [IoSynchronousPageWrite function](..\ntifs\nf-ntifs-iosynchronouspagewrite.md) | Reserved for system use. |
 | [IoThreadToProcess function](..\ntifs\nf-ntifs-iothreadtoprocess.md) | The IoThreadToProcess routine returns a pointer to the process for the specified thread. |
 | [IoUnregisterFileSystem function](..\ntifs\nf-ntifs-iounregisterfilesystem.md) | The IoUnregisterFileSystem routine removes a file system's control device object from the global file system queue. |
 | [IoUnregisterFsRegistrationChange function](..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md) | The IoUnregisterFsRegistrationChange routine unregisters file system filter driver's file system registration change notification routine. |
 | [IoVerifyVolume function](..\ntifs\nf-ntifs-ioverifyvolume.md) | The IoVerifyVolume routine sends a volume verify request to the given removable-media device. |
+| [KeAttachProcess function](..\ntifs\nf-ntifs-keattachprocess.md) | Obsolete. |
+| [KeDetachProcess function](..\ntifs\nf-ntifs-kedetachprocess.md) | Obsolete. |
+| [KeInitializeMutant function](..\ntifs\nf-ntifs-keinitializemutant.md) | Reserved for system use. |
 | [KeInitializeQueue function](..\ntifs\nf-ntifs-keinitializequeue.md) | The KeInitializeQueue routine initializes a queue object on which threads can wait for entries. |
 | [KeInsertHeadQueue function](..\ntifs\nf-ntifs-keinsertheadqueue.md) | The KeInsertHeadQueue routine inserts an entry at the head of the given queue if it cannot immediately use the entry to satisfy a thread wait. |
 | [KeInsertQueue function](..\ntifs\nf-ntifs-keinsertqueue.md) | The KeInsertQueue routine inserts an entry at the tail of the given queue if it cannot immediately use the entry to satisfy a thread wait. |
+| [KeReadStateMutant function](..\ntifs\nf-ntifs-kereadstatemutant.md) | Reserved for system use. |
+| [KeReadStateQueue function](..\ntifs\nf-ntifs-kereadstatequeue.md) | Reserved for system use. |
+| [KeReleaseMutant function](..\ntifs\nf-ntifs-kereleasemutant.md) | Reserved for system use. |
+| [KeReleaseQueuedSpinLock function](..\ntifs\nf-ntifs-kereleasequeuedspinlock.md) | Reserved for system use. |
 | [KeRemoveQueue function](..\ntifs\nf-ntifs-keremovequeue.md) | The KeRemoveQueue routine gives the calling thread a pointer to a dequeued entry from the given queue object or allows the caller to wait, up to an optional timeout interval, on the queue object. |
 | [KeRundownQueue function](..\ntifs\nf-ntifs-kerundownqueue.md) | The KeRundownQueue routine cleans up a queue object, flushing any queued entries. |
+| [KeSetIdealProcessorThread function](..\ntifs\nf-ntifs-kesetidealprocessorthread.md) | Reserved for system use. |
 | [KeStackAttachProcess function](..\ntifs\nf-ntifs-kestackattachprocess.md) | The KeStackAttachProcess routine attaches the current thread to the address space of the target process. |
+| [KeTryToAcquireQueuedSpinLock function](..\ntifs\nf-ntifs-ketrytoacquirequeuedspinlock.md) | Reserved for system use. |
 | [KeUnstackDetachProcess function](..\ntifs\nf-ntifs-keunstackdetachprocess.md) | The KeUnstackDetachProcess routine detaches the current thread from the address space of a process and restores the previous attach state. |
 | [MapSecurityError function](..\ntifs\nf-ntifs-mapsecurityerror.md) | The MapSecurityError function maps a security interface SECURITY_STATUS status code to a corresponding NSTATUS status code. |
 | [MmCanFileBeTruncated function](..\ntifs\nf-ntifs-mmcanfilebetruncated.md) | The MmCanFileBeTruncated routine checks whether a file can be truncated. |
@@ -534,9 +572,12 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [MmIsRecursiveIoFault function](..\ntifs\nf-ntifs-mmisrecursiveiofault.md) | The MmIsRecursiveIoFault routine determines whether the current page fault is occurring during an I/O operation. |
 | [MmPrefetchPages function](..\ntifs\nf-ntifs-mmprefetchpages.md) | The MmPrefetchPages routine reads groups of pages from secondary storage in the optimal fashion. |
 | [MmSetAddressRangeModified function](..\ntifs\nf-ntifs-mmsetaddressrangemodified.md) | The MmSetAddressRangeModified routine marks currently valid pages in the specified range of the system cache as modified. |
+| [ObInsertObject function](..\ntifs\nf-ntifs-obinsertobject.md) | Reserved for system use. |
 | [ObIsKernelHandle function](..\ntifs\nf-ntifs-obiskernelhandle.md) | The ObIsKernelHandle routine determines whether the specified handle is a kernel handle. |
+| [ObMakeTemporaryObject function](..\ntifs\nf-ntifs-obmaketemporaryobject.md) | Reserved for system use. |
 | [ObOpenObjectByPointer function](..\ntifs\nf-ntifs-obopenobjectbypointer.md) | The ObOpenObjectByPointer function opens an object referenced by a pointer and returns a handle to the object. |
 | [ObQueryNameString function](..\ntifs\nf-ntifs-obquerynamestring.md) | The ObQueryNameString routine supplies the name, if there is one, of a given object to which the caller has a pointer. |
+| [ObQueryObjectAuditingByHandle function](..\ntifs\nf-ntifs-obqueryobjectauditingbyhandle.md) | Reserved for system use. |
 | [PsChargePoolQuota function](..\ntifs\nf-ntifs-pschargepoolquota.md) | The PsChargePoolQuota routine charges pool quota of the specified pool type to the specified process. |
 | [PsDereferenceImpersonationToken function](..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md) | The PsDereferenceImpersonationToken routine decrements the reference count of an impersonation token. |
 | [PsDereferencePrimaryToken function](..\ntifs\nf-ntifs-psdereferenceprimarytoken.md) | The PsDereferencePrimaryToken routine decrements the reference count of a primary token. |
@@ -555,12 +596,14 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [RtlAddAccessAllowedAce function](..\ntifs\nf-ntifs-rtladdaccessallowedace.md) | The RtlAddAccessAllowedAce routine adds an access-allowed access control entry (ACE) to an access control list (ACL). The access is granted to the specified security identifier (SID). |
 | [RtlAddAccessAllowedAceEx function](..\ntifs\nf-ntifs-rtladdaccessallowedaceex.md) | The RtlAddAccessAllowedAceEx routine adds an access-allowed access control entry (ACE) with inheritance ACE flags to an access control list (ACL). The access is granted to the specified security identifier (SID). |
 | [RtlAddAce function](..\ntifs\nf-ntifs-rtladdace.md) | The RtlAddAce routine adds one or more access control entries (ACEs) to a specified access control list (ACL). |
+| [RtlAllocateAndInitializeSid function](..\ntifs\nf-ntifs-rtlallocateandinitializesid.md) | Reserved for system use. |
 | [RtlAllocateHeap function](..\ntifs\nf-ntifs-rtlallocateheap.md) | The RtlAllocateHeap routine allocates a block of memory from a heap. |
 | [RtlAppendStringToString function](..\ntifs\nf-ntifs-rtlappendstringtostring.md) | The RtlAppendStringToString routine concatenates two counted strings. It copies bytes from the source up to the length of the destination buffer. |
 | [RtlCaptureContext function](..\ntifs\nf-ntifs-rtlcapturecontext.md) | The RtlCaptureContext function retrieves a context record in the context of the caller. |
 | [RtlCaptureStackBackTrace function](..\ntifs\nf-ntifs-rtlcapturestackbacktrace.md) | The RtlCaptureStackBackTrace routine captures a stack back trace by walking up the stack and recording the information for each frame. |
 | [RtlCompareMemoryUlong function](..\ntifs\nf-ntifs-rtlcomparememoryulong.md) | The RtlCompareMemoryUlong routine returns how many bytes in a block of memory match a specified pattern. |
 | [RtlCompressBuffer function](..\ntifs\nf-ntifs-rtlcompressbuffer.md) | The RtlCompressBuffer function compresses a buffer and can be used by a file system driver to facilitate the implementation of file compression. |
+| [RtlCompressChunks function](..\ntifs\nf-ntifs-rtlcompresschunks.md) | Reserved for system use. |
 | [RtlConvertSidToUnicodeString function](..\ntifs\nf-ntifs-rtlconvertsidtounicodestring.md) | The RtlConvertSidToUnicodeString routine generates a printable Unicode string representation of a security identifier (SID). |
 | [RtlCopyLuid function](..\ntifs\nf-ntifs-rtlcopyluid.md) | The RtlCopyLuid routine copies a locally unique identifier (LUID) to a buffer. |
 | [RtlCopySid function](..\ntifs\nf-ntifs-rtlcopysid.md) | The RtlCopySid routine copies the value of a security identifier (SID) to a buffer. |
@@ -569,9 +612,11 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [RtlCreateSecurityDescriptorRelative function](..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md) | The RtlCreateSecurityDescriptorRelative routine initializes a new security descriptor in self-relative format. |
 | [RtlCreateSystemVolumeInformationFolder function](..\ntifs\nf-ntifs-rtlcreatesystemvolumeinformationfolder.md) | The RtlCreateSystemVolumeInformationFolder routine verifies the existence of the &#0034;System Volume Information&#0034; folder on a file system volume. If the folder is not present, then the folder is created. |
 | [RtlCreateUnicodeString function](..\ntifs\nf-ntifs-rtlcreateunicodestring.md) | The RtlCreateUnicodeString routine creates a new counted Unicode string. |
+| [RtlCustomCPToUnicodeN function](..\ntifs\nf-ntifs-rtlcustomcptounicoden.md) | Reserved for system use. |
 | [RtlDecompressBuffer function](..\ntifs\nf-ntifs-rtldecompressbuffer.md) | The RtlDecompressBuffer function decompresses an entire compressed buffer. |
 | [RtlDecompressBufferEx function](..\ntifs\nf-ntifs-rtldecompressbufferex.md) | The RtlDecompressBufferEx function decompresses an entire compressed buffer. |
 | [RtlDecompressBufferEx2 function](..\ntifs\nf-ntifs-rtldecompressbufferex2.md) | The RtlDecompressBufferEx2 function decompresses an entire compressed buffer, using multiple processors where possible. Multiple processor support is only implemented for kernel mode callers. |
+| [RtlDecompressChunks function](..\ntifs\nf-ntifs-rtldecompresschunks.md) | Reserved for system use. |
 | [RtlDecompressFragment function](..\ntifs\nf-ntifs-rtldecompressfragment.md) | The RtlDecompressFragment function is used to decompress part of a compressed buffer (that is, a buffer &#0034;fragment&#0034;). |
 | [RtlDecompressFragmentEx function](..\ntifs\nf-ntifs-rtldecompressfragmentex.md) | The RtlDecompressFragmentEx function is used to decompress part of a compressed buffer (that is, a buffer &#0034;fragment&#0034;), using multiple processors where possible. |
 | [RtlDelete function](..\ntddk\nf-ntddk-rtldelete.md) | The RtlDelete routine deletes the specified node from the splay link tree. |
@@ -579,6 +624,7 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [RtlDeleteElementGenericTable function](..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md) | The RtlDeleteElementGenericTable routine deletes an element from a generic table. |
 | [RtlDeleteElementGenericTableAvl function](..\ntddk\nf-ntddk-rtldeleteelementgenerictableavl.md) | The RtlDeleteElementGenericTableAvl routine deletes an element from a generic table. |
 | [RtlDeleteNoSplay function](..\ntddk\nf-ntddk-rtldeletenosplay.md) | The RtlDeleteNoSplay routine deletes the specified node from the splay link tree. |
+| [RtlDescribeChunk function](..\ntifs\nf-ntifs-rtldescribechunk.md) | Reserved for system use. |
 | [RtlDestroyHeap function](..\ntifs\nf-ntifs-rtldestroyheap.md) | The RtlDestroyHeap routine destroys the specified heap object. RtlDestroyHeap decommits and releases all the pages of a private heap object, and it invalidates the handle to the heap. |
 | [RtlDowncaseUnicodeString function](..\ntifs\nf-ntifs-rtldowncaseunicodestring.md) | The RtlDowncaseUnicodeString routine converts the specified Unicode source string to lowercase. The translation conforms to the current system locale information. |
 | [RtlDrainNonVolatileFlush function](..\ntddk\nf-ntddk-rtldrainnonvolatileflush.md) | The routine RtlDrainNonVolatileFlush waits for the flushes initiated by RtlFlushNonVolatileMemory to finish. |
@@ -590,17 +636,15 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [RtlEqualPrefixSid function](..\ntifs\nf-ntifs-rtlequalprefixsid.md) | The RtlEqualPrefixSid routine determines whether two security-identifier (SID) prefixes are equal. An SID prefix is the entire SID except for the last subauthority value. |
 | [RtlEqualSid function](..\ntifs\nf-ntifs-rtlequalsid.md) | The RtlEqualSid routine determines whether two security identifier (SID) values are equal. Two SIDs must match exactly to be considered equal. |
 | [RtlFillMemoryUlong function](..\ntifs\nf-ntifs-rtlfillmemoryulong.md) | The RtlFillMemoryUlong routine fills the specified range of memory with one or more repetitions of a ULONG value. |
-| [RtlFillMemoryUlong function](..\ntifs\nf-ntifs-rtlfillmemoryulong~r1.md) | The RtlFillMemoryUlong routine fills the specified range of memory with one or more repetitions of a ULONG value. |
 | [RtlFillMemoryUlonglong function](..\ntifs\nf-ntifs-rtlfillmemoryulonglong.md) | The RtlFillMemoryUlonglong routine fills a given range of memory with one or more repetitions of a given ULONGLONG value. |
 | [RtlFindUnicodePrefix function](..\ntifs\nf-ntifs-rtlfindunicodeprefix.md) | The RtlFindUnicodePrefix routine searches for the best match for a given Unicode file name in a prefix table. |
 | [RtlFlushNonVolatileMemory function](..\ntddk\nf-ntddk-rtlflushnonvolatilememory.md) | The routine RtlFlushNonVolatileMemory optimally flushes the given non-volatile memory region. |
 | [RtlFlushNonVolatileMemoryRanges function](..\ntddk\nf-ntddk-rtlflushnonvolatilememoryranges.md) | The routine RtlFlushNonVolatileMemoryRanges optimally flushes the given non-volatile memory regions. |
 | [RtlFreeHeap function](..\ntifs\nf-ntifs-rtlfreeheap.md) | The RtlFreeHeap routine frees a memory block that was allocated from a heap by RtlAllocateHeap. |
-| [RtlFreeHeap function](..\ntifs\nf-ntifs-rtlfreeheap~r1.md) | The RtlFreeHeap routine frees a memory block that was allocated from a heap by RtlAllocateHeap. |
 | [RtlFreeNonVolatileToken function](..\ntddk\nf-ntddk-rtlfreenonvolatiletoken.md) | The routine RtlFreeNonVolatileToken is a cleanup function for the opaque NvToken which is given by a successful call to RtlGetNonVolatileToken. |
 | [RtlFreeOemString function](..\ntifs\nf-ntifs-rtlfreeoemstring.md) | The RtlFreeOemString routine releases storage that was allocated by any of the Rtl..ToOemString routines. |
+| [RtlFreeSid function](..\ntifs\nf-ntifs-rtlfreesid.md) | Reserved for system use. |
 | [RtlGenerate8dot3Name function](..\ntifs\nf-ntifs-rtlgenerate8dot3name.md) | The RtlGenerate8dot3Name routine generates a short (8.3) name for the specified long file name. |
-| [RtlGenerate8dot3Name function](..\ntifs\nf-ntifs-rtlgenerate8dot3name~r1.md) | The RtlGenerate8dot3Name routine generates a short (8.3) name for the specified long file name. |
 | [RtlGetAce function](..\ntifs\nf-ntifs-rtlgetace.md) | The RtlGetAce routine obtains a pointer to an access control entry (ACE) in an access control list (ACL). |
 | [RtlGetCompressionWorkSpaceSize function](..\ntifs\nf-ntifs-rtlgetcompressionworkspacesize.md) | The RtlGetCompressionWorkSpaceSize function is used to determine the correct size of the WorkSpace buffer for the RtlCompressBuffer and RtlDecompressFragment functions. |
 | [RtlGetDaclSecurityDescriptor function](..\ntifs\nf-ntifs-rtlgetdaclsecuritydescriptor.md) | The RtlGetDaclSecurityDescriptor routine returns a pointer to the discretionary ACL (DACL) for a security descriptor. |
@@ -610,6 +654,8 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [RtlGetNonVolatileToken function](..\ntddk\nf-ntddk-rtlgetnonvolatiletoken.md) | The routine, RtlGetNonVolatileToken, gets various properties about a non-volatile memory buffer and stores them in the variable NvToken. |
 | [RtlGetOwnerSecurityDescriptor function](..\ntifs\nf-ntifs-rtlgetownersecuritydescriptor.md) | The RtlGetOwnerSecurityDescriptor routine returns the owner information for a given security descriptor. |
 | [RtlGetSaclSecurityDescriptor function](..\ntifs\nf-ntifs-rtlgetsaclsecuritydescriptor.md) | The RtlGetSaclSecurityDescriptor routine returns a pointer to the system ACL (SACL) for a security descriptor. |
+| [RtlIdentifierAuthoritySid function](..\ntifs\nf-ntifs-rtlidentifierauthoritysid.md) | Reserved for system use. |
+| [RtlInitCodePageTable function](..\ntifs\nf-ntifs-rtlinitcodepagetable.md) | Reserved for system use. |
 | [RtlInitializeGenericTable function](..\ntddk\nf-ntddk-rtlinitializegenerictable.md) | The RtlInitializeGenericTable routine initializes a generic table. |
 | [RtlInitializeGenericTableAvl function](..\ntddk\nf-ntddk-rtlinitializegenerictableavl.md) | The RtlInitializeGenericTableAvl routine initializes a generic table using Adelson-Velsky/Landis (AVL) trees. |
 | [RtlInitializeSid function](..\ntifs\nf-ntifs-rtlinitializesid.md) | The RtlInitializeSid routine initializes a security identifier (SID) structure. |
@@ -652,6 +698,7 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [RtlRealPredecessor function](..\ntddk\nf-ntddk-rtlrealpredecessor.md) | The RtlRealPredecessor routine returns a pointer to the predecessor of the specified node in the splay link tree. |
 | [RtlRealSuccessor function](..\ntddk\nf-ntddk-rtlrealsuccessor.md) | The RtlRealSuccessor routine returns a pointer to the successor of the specified node in the splay link tree. |
 | [RtlRemoveUnicodePrefix function](..\ntifs\nf-ntifs-rtlremoveunicodeprefix.md) | The RtlRemoveUnicodePrefix routine removes an element from a prefix table. |
+| [RtlReserveChunk function](..\ntifs\nf-ntifs-rtlreservechunk.md) | Reserved for system use. |
 | [RtlSecondsSince1970ToTime function](..\ntifs\nf-ntifs-rtlsecondssince1970totime.md) | The RtlSecondsSince1970ToTime routine converts the elapsed time, in seconds, since the beginning of 1970 to an absolute system time value. |
 | [RtlSecondsSince1980ToTime function](..\ntifs\nf-ntifs-rtlsecondssince1980totime.md) | The RtlSecondsSince1980ToTime routine converts the elapsed time, in seconds, since the beginning of 1980 to an absolute system time value. |
 | [RtlSelfRelativeToAbsoluteSD function](..\ntifs\nf-ntifs-rtlselfrelativetoabsolutesd.md) | The RtlSelfRelativeToAbsoluteSD routine creates a new security descriptor in absolute format by using a security descriptor in self-relative format as a template. |
@@ -659,6 +706,7 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [RtlSetOwnerSecurityDescriptor function](..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md) | The RtlSetOwnerSecurityDescriptor routine sets the owner information of an absolute-format security descriptor. It replaces any owner information that is already present in the security descriptor. |
 | [RtlSetThreadPlaceholderCompatibilityMode function](..\ntifs\nf-ntifs-rtlsetthreadplaceholdercompatibilitymode.md) | RtlSetThreadPlaceholderCompatibilityMode is a routine which sets the placeholder compatibility mode for the current thread. |
 | [RtlSplay function](..\ntddk\nf-ntddk-rtlsplay.md) | The RtlSplay routine rebalances, or &#0034;splays,&#0034; a splay link tree around the specified splay link, making that link the new root of the tree. |
+| [RtlSubAuthorityCountSid function](..\ntifs\nf-ntifs-rtlsubauthoritycountsid.md) | Reserved for system use. |
 | [RtlSubAuthoritySid function](..\ntifs\nf-ntifs-rtlsubauthoritysid.md) | The RtlSubAuthoritySid routine returns a pointer to a specified subauthority of a security identifier (SID). |
 | [RtlSubtreePredecessor function](..\ntddk\nf-ntddk-rtlsubtreepredecessor.md) | The RtlSubtreePredecessor routine returns a pointer to the predecessor of the specified node within the subtree that is rooted at that node. |
 | [RtlSubtreeSuccessor function](..\ntddk\nf-ntddk-rtlsubtreesuccessor.md) | The RtlSubtreeSuccessor routine returns a pointer to the successor of the specified node within the subtree that is rooted at that node. |
@@ -666,15 +714,19 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [RtlTimeToSecondsSince1980 function](..\ntifs\nf-ntifs-rtltimetosecondssince1980.md) | The RtlTimeToSecondsSince1980 routine converts a given absolute system time value to the elapsed time, in seconds, since the beginning of 1980. |
 | [RtlUnicodeStringToCountedOemString function](..\ntifs\nf-ntifs-rtlunicodestringtocountedoemstring.md) | The RtlUnicodeStringToCountedOemString routine translates the specified Unicode source string into a counted OEM string using the current system OEM code page. |
 | [RtlUnicodeStringToOemString function](..\ntifs\nf-ntifs-rtlunicodestringtooemstring.md) | The RtlUnicodeStringToOemString routine translates a given Unicode source string into an OEM string using the current system OEM code page. |
+| [RtlUnicodeToCustomCPN function](..\ntifs\nf-ntifs-rtlunicodetocustomcpn.md) | Reserved for system use. |
 | [RtlUnicodeToMultiByteN function](..\ntifs\nf-ntifs-rtlunicodetomultibyten.md) | The RtlUnicodeToMultiByteN routine translates the specified Unicode string into a new character string, using the current system ANSI code page (ACP). The translated string is not necessarily from a multibyte character set. |
 | [RtlUnicodeToMultiByteSize function](..\ntifs\nf-ntifs-rtlunicodetomultibytesize.md) | The RtlUnicodeToMultiByteSize routine determines the number of bytes that are required to store the multibyte translation for the specified Unicode string. The translation is assumed to use the current system ANSI code page (ACP). |
 | [RtlUnicodeToOemN function](..\ntifs\nf-ntifs-rtlunicodetooemn.md) | The RtlUnicodeToOemN routine translates a given Unicode string to an OEM string, using the current system OEM code page. |
 | [RtlUpcaseUnicodeStringToCountedOemString function](..\ntifs\nf-ntifs-rtlupcaseunicodestringtocountedoemstring.md) | The RtlUpcaseUnicodeStringToCountedOemString routine translates a given Unicode source string into an uppercase counted OEM string using the current system OEM code page. |
 | [RtlUpcaseUnicodeStringToOemString function](..\ntifs\nf-ntifs-rtlupcaseunicodestringtooemstring.md) | The RtlUpcaseUnicodeStringToOemString routine translates a given Unicode source string into an uppercase OEM string using the current system OEM code page. |
+| [RtlUpcaseUnicodeToCustomCPN function](..\ntifs\nf-ntifs-rtlupcaseunicodetocustomcpn.md) | Reserved for system use. |
 | [RtlUpcaseUnicodeToMultiByteN function](..\ntifs\nf-ntifs-rtlupcaseunicodetomultibyten.md) | The RtlUpcaseUnicodeToMultiByteN routine translates the specified Unicode string into a new uppercase character string, using the current system ANSI code page (ACP). The translated string is not necessarily from a multibyte character set. |
 | [RtlUpcaseUnicodeToOemN function](..\ntifs\nf-ntifs-rtlupcaseunicodetooemn.md) | The RtlUpcaseUnicodeToOemN routine translates a given Unicode string into an uppercase OEM string, using the current system OEM code page. |
 | [RtlValidSid function](..\ntifs\nf-ntifs-rtlvalidsid.md) | The RtlValidSid routine validates a security identifier (SID) by verifying that the revision number is within a known range and that the number of subauthorities is less than the maximum. |
 | [RtlWriteNonVolatileMemory function](..\ntddk\nf-ntddk-rtlwritenonvolatilememory.md) | The routine RtlWriteNonVolatileMemory copies the contents of a source buffer to a non-volatile destination memory buffer. |
+| [RtlxOemStringToUnicodeSize function](..\ntifs\nf-ntifs-rtlxoemstringtounicodesize.md) | Reserved for system use. |
+| [RtlxUnicodeStringToOemSize function](..\ntifs\nf-ntifs-rtlxunicodestringtooemsize.md) | Reserved for system use. |
 | [RxAcquireExclusiveFcbResourceInMRx function](..\mrxfcb\nf-mrxfcb-rxacquireexclusivefcbresourceinmrx.md) | RxAcquireExclusiveFcbResourceInMRx acquires the FCB resource for a network mini-redirector driver in exclusive mode. |
 | [RxAcquireSharedFcbResourceInMRx function](..\mrxfcb\nf-mrxfcb-rxacquiresharedfcbresourceinmrx.md) | RxAcquireSharedFcbResourceInMRx acquires the FCB resource for a network mini-redirector driver in shared mode. |
 | [RxAcquireSharedFcbResourceInMRxEx function](..\mrxfcb\nf-mrxfcb-rxacquiresharedfcbresourceinmrxex.md) | RxAcquireSharedFcbResourceInMRxEx acquires the FCB resource for a network mini-redirector driver in shared mode. |
@@ -784,13 +836,16 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [RxpTrackReference function](..\fcb\nf-fcb-rxptrackreference.md) | RxpTrackReference tracks requests to reference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures in checked builds. A log of these reference requests can be accessed by the logging system and WMI. |
 | [RxpUnregisterMinirdr function](..\mrx\nf-mrx-rxpunregisterminirdr.md) | RxpUnregisterMinirdr is called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table. |
 | [SeAppendPrivileges function](..\ntifs\nf-ntifs-seappendprivileges.md) | The SeAppendPrivileges routine appends additional privileges to the privilege set in an access state structure. |
+| [SeAuditHardLinkCreation function](..\ntifs\nf-ntifs-seaudithardlinkcreation.md) | Reserved for system use. |
 | [SeAuditingFileEvents function](..\ntifs\nf-ntifs-seauditingfileevents.md) | The SeAuditingFileEvents routine determines whether file open events are currently being audited. |
 | [SeAuditingFileOrGlobalEvents function](..\ntifs\nf-ntifs-seauditingfileorglobalevents.md) | The SeAuditingFileOrGlobalEvents routine determines whether file or global events are currently being audited. |
+| [SeAuditingHardLinkEvents function](..\ntifs\nf-ntifs-seauditinghardlinkevents.md) | Reserved for system use. |
 | [SeCaptureSubjectContext function](..\ntifs\nf-ntifs-secapturesubjectcontext.md) | The SeCaptureSubjectContext routine captures the security context of the calling thread for access validation and auditing. |
 | [SeCreateClientSecurity function](..\ntifs\nf-ntifs-secreateclientsecurity.md) | The SeCreateClientSecurity routine initializes a security client context structure with the information needed to call SeImpersonateClientEx. |
 | [SeCreateClientSecurityFromSubjectContext function](..\ntifs\nf-ntifs-secreateclientsecurityfromsubjectcontext.md) | The SeCreateClientSecurityFromSubjectContext routine retrieves the access token for a security subject context and uses the result to initialize a security client context with the information needed to call SeImpersonateClientEx. |
 | [SeDeleteObjectAuditAlarm function](..\ntifs\nf-ntifs-sedeleteobjectauditalarm.md) | The SeDeleteObjectAuditAlarm routine generates audit and alarm messages for an object that is marked for deletion. |
 | [SeFilterToken function](..\ntifs\nf-ntifs-sefiltertoken.md) | The SeFilterToken routine creates a new access token that is a restricted version of an existing access token. |
+| [SeImpersonateClient function](..\ntifs\nf-ntifs-seimpersonateclient.md) | Obsolete. |
 | [SeImpersonateClientEx function](..\ntifs\nf-ntifs-seimpersonateclientex.md) | The SeImpersonateClientEx routine causes a thread to impersonate a user. |
 | [SeLockSubjectContext function](..\ntifs\nf-ntifs-selocksubjectcontext.md) | The SeLockSubjectContext routine locks the primary and impersonation tokens of a captured subject context. |
 | [SeMarkLogonSessionForTerminationNotification function](..\ntifs\nf-ntifs-semarklogonsessionforterminationnotification.md) | The SeMarkLogonSessionForTerminationNotification routine marks a logon session so that the caller's registered callback routine is called when the logon session terminates. |
@@ -800,16 +855,19 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [SeQueryAuthenticationIdToken function](..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md) | The SeQueryAuthenticationIdToken routine retrieves the authentication ID of an access token. |
 | [SeQueryInformationToken function](..\ntifs\nf-ntifs-sequeryinformationtoken.md) | The SeQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information. |
 | [SeQuerySecurityDescriptorInfo function](..\ntifs\nf-ntifs-sequerysecuritydescriptorinfo.md) | The SeQuerySecurityDescriptorInfo routine retrieves a copy of an object's security descriptor. |
+| [SeQuerySessionIdToken function](..\ntifs\nf-ntifs-sequerysessionidtoken.md) | Reserved for system use. |
 | [SeRegisterLogonSessionTerminatedRoutine function](..\ntifs\nf-ntifs-seregisterlogonsessionterminatedroutine.md) | The SeRegisterLogonSessionTerminatedRoutine routine registers a callback routine to be called when a logon session terminates. A logon session terminates when the last token referencing the logon session is deleted. |
 | [SeReleaseSubjectContext function](..\ntifs\nf-ntifs-sereleasesubjectcontext.md) | The SeReleaseSubjectContext routine releases a subject security context captured by an earlier call to SeCaptureSubjectContext. |
 | [SeSetAccessStateGenericMapping function](..\ntifs\nf-ntifs-sesetaccessstategenericmapping.md) | The SeSetAccessStateGenericMapping routine sets the generic mapping field of an ACCESS_STATE structure. |
 | [SeSetSecurityDescriptorInfo function](..\ntifs\nf-ntifs-sesetsecuritydescriptorinfo.md) | The SeSetSecurityDescriptorInfo routine sets an object's security descriptor. |
 | [SeSetSecurityDescriptorInfoEx function](..\ntifs\nf-ntifs-sesetsecuritydescriptorinfoex.md) | The SeSetSecurityDescriptorInfoEx routine modifies an object's security descriptor and specifies whether the object supports automatic inheritance of access control entries (ACE). |
+| [SeSetSessionIdToken function](..\ntifs\nf-ntifs-sesetsessionidtoken.md) | Reserved for system use. |
 | [SeTokenGetNoChildProcessRestricted function](..\ntifs\nf-ntifs-setokengetnochildprocessrestricted.md) | The SeTokenGetNoChildProcessRestricted routine determines the state of the no child process mitigation. It is not possible to be enforced and audit-only at the same time. |
 | [SeTokenIsAdmin function](..\ntifs\nf-ntifs-setokenisadmin.md) | The SeTokenIsAdmin routine determines whether a token contains the local administrators group. |
 | [SeTokenIsNoChildProcessRestrictionEnforced function](..\ntifs\nf-ntifs-setokenisnochildprocessrestrictionenforced.md) | The SeTokenIsNoChildProcessRestrictionEnforced routine determines if the token carries the no child process restriction. |
 | [SeTokenIsRestricted function](..\ntifs\nf-ntifs-setokenisrestricted.md) | The SeTokenIsRestricted routine determines whether a token contains a list of restricting security identifiers (SID). |
 | [SeTokenSetNoChildProcessRestricted function](..\ntifs\nf-ntifs-setokensetnochildprocessrestricted.md) | The SeTokenSetNoChildProcessRestricted routine sets the TOKEN_AUDIT_NO_CHILD_PROCESS or TOKEN_AUDIT_NO_CHILD_PROCESS flags in the token. |
+| [SeTokenType function](..\ntifs\nf-ntifs-setokentype.md) | Reserved for system use. |
 | [SeUnlockSubjectContext function](..\ntifs\nf-ntifs-seunlocksubjectcontext.md) | The SeUnlockSubjectContext routine unlocks the tokens of a captured subject context that were locked by a call to SeLockSubjectContext. |
 | [SeUnregisterLogonSessionTerminatedRoutine function](..\ntifs\nf-ntifs-seunregisterlogonsessionterminatedroutine.md) | The SeUnregisterLogonSessionTerminatedRoutine routine unregisters a callback routine that was registered by an earlier call to SeRegisterLogonSessionTerminatedRoutine. |
 | [SecLookupAccountName function](..\ntifs\nf-ntifs-seclookupaccountname.md) | SecLookupAccountName accepts an account as input and retrieves a security identifier (SID) for the account and the name of the domain on which the account was found. |
@@ -846,7 +904,7 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK callback](..\fltkernel\nc-fltkernel-pflt_section_conflict_notification_callback.md) | A minifilter driver can optionally register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's SectionNotificationCallback routine. |
 | [PFLT_TRANSACTION_NOTIFICATION_CALLBACK callback](..\fltkernel\nc-fltkernel-pflt_transaction_notification_callback.md) | A minifilter driver can register a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK as its TransactionNotificationCallback routine. |
 | [PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK callback](..\ntifs\nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md) | A file system filter driver (legacy filter) or a minifilter driver can register a PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK-typed routine as the filter driver's CleanupCallback callback routine for an extra create parameter (ECP) context structure. |
-| [PMRX_CALLDOWN callback](..\mrx\nc-mrx-pmrx_calldown.md) | The MRxCleanupFobx routine is called by RDBSS to request the network mini-redirector to close a file system object extension. RDBSS issues this call in response to receiving an IRP_MJ_CLEANUP request on a file object. |
+| [PMRX_CALLDOWN callback](..\mrx\nc-mrx-pmrx_calldown.md) | This callback is called by RDBSS to request that the network mini-redirector perform an action based in the supplied IRP. |
 | [PMRX_CALLDOWN_CTX callback](..\mrx\nc-mrx-pmrx_calldown_ctx.md) | TheMRxStart routine is called by RDBSS to start the network mini-redirector. |
 | [PMRX_CHANGE_BUFFERING_STATE_CALLDOWN callback](..\mrx\nc-mrx-pmrx_change_buffering_state_calldown.md) | TheMRxCompleteBufferingStateChangeRequest routine is called by RDBSS to notify the network mini-redirector that a buffering state change request has been completed. |
 | [PMRX_CHKDIR_CALLDOWN callback](..\mrx\nc-mrx-pmrx_chkdir_calldown.md) | TheMRxIsValidDirectory routine is called by RDBSS to request that a network mini-redirector check for the existence of a remote directory. |
@@ -876,6 +934,7 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [_ACCESS_DENIED_ACE structure](..\ntifs\ns-ntifs-_access_denied_ace.md) | The ACCESS_DENIED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) controlling access to an object. |
 | [_ACCESS_STATE structure](..\wdm\ns-wdm-_access_state.md) | The ACCESS_STATE structure describes the state of an access in progress. |
 | [_ACE_HEADER structure](..\ntifs\ns-ntifs-_ace_header.md) | The ACE_HEADER structure describes the type and size of an access-control entry (ACE). |
+| [_ACL structure](..\wdm\ns-wdm-_acl.md) | The ACL structure is the header of an access-control list (ACL). A complete ACL consists of an ACL structure followed by an ordered list of zero or more access-control entries (ACE). |
 | [_ATOMIC_CREATE_ECP_CONTEXT structure](..\ntifs\ns-ntifs-_atomic_create_ecp_context.md) | This structure allows supplemental operations to be performed on a file atomically during create. |
 | [_BOOT_AREA_INFO structure](..\ntifs\ns-ntifs-_boot_area_info.md) | The BOOT_AREA_INFO structure contains the output for the FSCTL_GET_BOOT_AREA_INFO control code. |
 | [_ECP_OPEN_PARAMETERS structure](..\ntifs\ns-ntifs-_ecp_open_parameters.md) | The ECP_OPEN_PARAMETERS structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file. |
@@ -936,6 +995,7 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [_FILTER_VOLUME_BASIC_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_filter_volume_basic_information.md) | The caller-allocated FILTER_VOLUME_BASIC_INFORMATION structure contains basic information for a volume. |
 | [_FILTER_VOLUME_STANDARD_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_filter_volume_standard_information.md) | The caller-allocated FILTER_VOLUME_STANDARD_INFORMATION structure contains information for a volume. |
 | [_FLT_CALLBACK_DATA structure](..\fltkernel\ns-fltkernel-_flt_callback_data.md) | The FLT_CALLBACK_DATA structure represents an I/O operation. The Filter Manager and minifilters use this structure to initiate and process I/O operations. |
+| [_FLT_CALLBACK_DATA_QUEUE structure](..\fltkernel\ns-fltkernel-_flt_callback_data_queue.md) | FLT_CALLBACK_DATA_QUEUE is an opaque structure that is used to specify the callback routines for a minifilter's callback data queue. Do not set the members of this structure directly. Use FltCbdqInitialize to initialize this structure. |
 | [_FLT_CONTEXT_REGISTRATION structure](..\fltkernel\ns-fltkernel-_flt_context_registration.md) | The FLT_CONTEXT_REGISTRATION structure is used to register context types. |
 | [_FLT_CREATEFILE_TARGET_ECP_CONTEXT structure](..\fltkernel\ns-fltkernel-_flt_createfile_target_ecp_context.md) | The FLT_CREATEFILE_TARGET_ECP_CONTEXT structure is an extra create parameter (ECP) used to return reparse target information back to the caller of FltCreateFileEx2. |
 | [_FLT_FILE_NAME_INFORMATION structure](..\fltkernel\ns-fltkernel-_flt_file_name_information.md) | The FLT_FILE_NAME_INFORMATION structure contains file name information. |
@@ -947,7 +1007,6 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [_FLT_RELATED_CONTEXTS structure](..\fltkernel\ns-fltkernel-_flt_related_contexts.md) | The FLT_RELATED_CONTEXTS structure contains a minifilter driver's contexts for the objects associated with an I/O operation. |
 | [_FLT_RELATED_CONTEXTS_EX structure](..\fltkernel\ns-fltkernel-_flt_related_contexts_ex.md) | The FLT_RELATED_CONTEXTS_EX structure contains a minifilter driver's contexts for the objects associated with an I/O operation. |
 | [_FLT_RELATED_OBJECTS structure](..\fltkernel\ns-fltkernel-_flt_related_objects.md) | The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation. |
-| [_FLT_RELATED_OBJECTS structure](..\fltkernel\ns-fltkernel-_flt_related_objects~r1.md) | The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation. |
 | [_FLT_TAG_DATA_BUFFER structure](..\fltkernel\ns-fltkernel-_flt_tag_data_buffer.md) | The FLT_TAG_DATA_BUFFER structure contains information about a reparse point tag. |
 | [_FLT_VOLUME_PROPERTIES structure](..\fltkernel\ns-fltkernel-_flt_volume_properties.md) | The FLT_VOLUME_PROPERTIES structure is passed as a parameter to FltGetVolumeProperties. |
 | [_FSCTL_OFFLOAD_READ_INPUT structure](..\ntifs\ns-ntifs-_fsctl_offload_read_input.md) | The FSCTL_OFFLOAD_READ_INPUT structure contains the input for the FSCTL_OFFLOAD_READ control code request. |
@@ -971,7 +1030,6 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [_LUID_AND_ATTRIBUTES structure](..\wdm\ns-wdm-_luid_and_attributes.md) | LUID_AND_ATTRIBUTES represents a locally unique identifier (LUID) and its attributes. |
 | [_NETWORK_APP_INSTANCE_ECP_CONTEXT structure](..\ntifs\ns-ntifs-_network_app_instance_ecp_context.md) | The NETWORK_APP_INSTANCE_ECP_CONTEXT structure is an Extra Create Parameter (ECP) and contains an application instance identifier to associate with a file. |
 | [_NETWORK_OPEN_ECP_CONTEXT structure](..\ntifs\ns-ntifs-_network_open_ecp_context.md) | The NETWORK_OPEN_ECP_CONTEXT structure is used to interpret network ECP contexts on files. |
-| [_NETWORK_OPEN_ECP_CONTEXT structure](..\ntifs\ns-ntifs-_network_open_ecp_context~r1.md) | The NETWORK_OPEN_ECP_CONTEXT structure is used to interpret network ECP contexts on files. |
 | [_NETWORK_OPEN_ECP_CONTEXT_V0 structure](..\ntifs\ns-ntifs-_network_open_ecp_context_v0.md) | The NETWORK_OPEN_ECP_CONTEXT_V0 structure is used to interpret network ECP contexts on files. |
 | [_NFS_OPEN_ECP_CONTEXT structure](..\ntifs\ns-ntifs-_nfs_open_ecp_context.md) | The NFS_OPEN_ECP_CONTEXT structure is used by the Network File System (NFS) server to open files in response to client requests. |
 | [_OPEN_REPARSE_LIST structure](..\ntifs\ns-ntifs-_open_reparse_list.md) | Points to a list of OPEN_REPARSE_LIST_ENTRY structures that specify the tag and possibly GUID that should be opened directly without returning STATUS_REPARSE. |
@@ -986,18 +1044,19 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [_REPARSE_DATA_BUFFER structure](..\ntifs\ns-ntifs-_reparse_data_buffer.md) | The REPARSE_DATA_BUFFER structure contains reparse point data for a Microsoft reparse point. |
 | [_REPARSE_GUID_DATA_BUFFER structure](..\ntifs\ns-ntifs-_reparse_guid_data_buffer.md) | The REPARSE_GUID_DATA_BUFFER structure contains reparse point data for a reparse point. |
 | [_RTL_AVL_TABLE structure](..\ntddk\ns-ntddk-_rtl_avl_table.md) | The RTL_AVL_TABLE structure contains file system-specific data for an Adelson-Velsky/Landis (AVL) tree. |
-| [_RTL_AVL_TABLE structure](..\ntddk\ns-ntddk-_rtl_avl_table~r1.md) | The RTL_AVL_TABLE structure contains file system-specific data for an Adelson-Velsky/Landis (AVL) tree. |
 | [_RTL_GENERIC_TABLE structure](..\ntddk\ns-ntddk-_rtl_generic_table.md) | The RTL_GENERIC_TABLE structure contains file system-specific data for a splay tree. |
-| [_RTL_GENERIC_TABLE structure](..\ntddk\ns-ntddk-_rtl_generic_table~r1.md) | The RTL_GENERIC_TABLE structure contains file system-specific data for a splay tree. |
 | [_RTL_SPLAY_LINKS structure](..\ntddk\ns-ntddk-_rtl_splay_links.md) | The RTL_SPLAY_LINKS structure is an opaque structure and is used by the system to represent a splay link tree node. |
 | [_RX_CONTEXT structure](..\rxcontx\ns-rxcontx-_rx_context.md) | The RX_CONTEXT structure encapsulates an IRP for use by RDBSS, network mini-redirectors, and the file system. |
+| [_SECURITY_SUBJECT_CONTEXT structure](..\wdm\ns-wdm-_security_subject_context.md) | The SECURITY_SUBJECT_CONTEXT structure is used to capture subject security context for access validation and auditing. |
 | [_SET_DAX_ALLOC_ALIGNMENT_HINT_INPUT structure](..\ntifs\ns-ntifs-_set_dax_alloc_alignment_hint_input.md) | This structure is for internal use only and should not be called from your code. |
 | [_SE_EXPORTS structure](..\ntifs\ns-ntifs-_se_exports.md) | The SeExports structure is a large external static SE_EXPORTS structure that defines a number of well-known security constants for privilege values and security identifiers. |
 | [_SE_SID structure](..\ntifs\ns-ntifs-_se_sid.md) | The SE_SID union holds the maximum-sized valid Security Identifier (SID). The structure occupies 68-bytes and is suitable for stack allocation. |
 | [_SE_TOKEN_USER structure](..\ntifs\ns-ntifs-_se_token_user.md) | The SE_TOKEN_USER structure holds the maximum-sized valid user SID that can be returned by SeQueryInformationToken, GetTokenInformation, or ZwQueryInformationToken with the TokenUser information class. This structure is suitable for stack allocation. |
+| [_SID structure](..\ntifs\ns-ntifs-_sid.md) | The security identifier (SID) structure is a variable-length structure used to uniquely identify users or groups. |
 | [_SID_AND_ATTRIBUTES structure](..\ntifs\ns-ntifs-_sid_and_attributes.md) | The SID_AND_ATTRIBUTES structure represents a security identifier (SID) and its attributes. SIDs are used to uniquely identify users or groups. |
 | [_SID_IDENTIFIER_AUTHORITY structure](..\ntifs\ns-ntifs-_sid_identifier_authority.md) | The SID_IDENTIFIER_AUTHORITY structure represents the top-level authority of a security identifier (SID). |
 | [_SRV_OPEN_ECP_CONTEXT structure](..\ntifs\ns-ntifs-_srv_open_ecp_context.md) | The SRV_OPEN_ECP_CONTEXT structure is used by a server to conditionally open files in response to client requests. |
+| [_SYSTEM_ALARM_ACE structure](..\ntifs\ns-ntifs-_system_alarm_ace.md) | Reserved for future use. |
 | [_SYSTEM_AUDIT_ACE structure](..\ntifs\ns-ntifs-_system_audit_ace.md) | The SYSTEM_AUDIT_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying what types of access cause system-level notifications. |
 | [_SYSTEM_PROCESS_TRUST_LABEL_ACE structure](..\ntifs\ns-ntifs-_system_process_trust_label_ace.md) | Reserved. |
 | [_SYSTEM_RESOURCE_ATTRIBUTE_ACE structure](..\ntifs\ns-ntifs-_system_resource_attribute_ace.md) | The SYSTEM_RESOURCE_ATTRIBUTE_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying what rights a particular claim has to a resource. |
@@ -1060,7 +1119,6 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 
 | Title   | Description   |
 | ---- |:---- |
-| [CcCopyWriteWontFlush macro](..\ntifs\nf-ntifs-cccopywritewontflush~r1.md) | The CcCopyWriteWontFlush macro determines whether the amount of data to be copied in a call to CcCopyWrite is small enough not to require immediate flushing to disk if CcCopyWrite is called with Wait set to FALSE. |
 | [FltAcquirePushLockExclusive macro](..\fltkernel\nf-fltkernel-fltacquirepushlockexclusive.md) | The FltAcquirePushLockExclusive routine acquires the given push lock for exclusive access by the calling thread. |
 | [FltAcquirePushLockShared macro](..\fltkernel\nf-fltkernel-fltacquirepushlockshared.md) | The FltAcquirePushLockShared routine acquires the given push lock for shared access by the calling thread. |
 | [FltReleasePushLock macro](..\fltkernel\nf-fltkernel-fltreleasepushlock.md) | The FltReleasePushLock routine releases a specified push lock owned by the current thread. |
@@ -1086,9 +1144,10 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [FsRtlSetupAdvancedHeaderEx macro](..\ntifs\nf-ntifs-fsrtlsetupadvancedheaderex.md) | The FsRtlSetupAdvancedHeaderEx macro is used by file systems to initialize an FSRTL_ADVANCED_FCB_HEADER structure for use with both stream and file contexts. |
 | [FsRtlSupportsPerFileContexts macro](..\ntifs\nf-ntifs-fsrtlsupportsperfilecontexts.md) | The FsRtlSupportsPerFileContexts macro checks if per file context information is supported by the file system that is associated with a specified FILE_OBJECT. |
 | [FsRtlTestAnsiCharacter macro](..\ntifs\nf-ntifs-fsrtltestansicharacter.md) | The FsRtlTestAnsiCharacter macro determines whether an ANSI or double-byte character set (DBCS) character meets the specified criteria. |
+| [IoIsFileOpenedExclusively macro](..\ntifs\nf-ntifs-ioisfileopenedexclusively.md) | Reserved for system use. |
 | [IsReparseTagMicrosoft macro](..\ntifs\nf-ntifs-isreparsetagmicrosoft.md) | The IsReparseTagMicrosoft macro determines whether a reparse point tag indicates a Microsoft reparse point. |
 | [IsReparseTagNameSurrogate macro](..\ntifs\nf-ntifs-isreparsetagnamesurrogate.md) | The IsReparseTagNameSurrogate macro determines whether a tag's associated reparse point is a surrogate for another named entity, such as a volume mount point. |
-| [RtlFillMemoryUlonglong macro](..\ntifs\nf-ntifs-rtlfillmemoryulonglong~r1.md) | The RtlFillMemoryUlonglong routine fills a given range of memory with one or more repetitions of a given ULONGLONG value. |
+| [IsReparseTagValid macro](..\ntifs\nf-ntifs-isreparsetagvalid.md) | Reserved for system use. |
 | [RtlIsLeftChild macro](..\ntddk\nf-ntddk-rtlisleftchild.md) | The RtlIsLeftChild routine determines whether a given splay link is the left child of a node in a splay link tree. |
 | [RtlIsRightChild macro](..\ntddk\nf-ntddk-rtlisrightchild.md) | The RtlIsRightChild routine determines whether a given splay link is the right child of a node in a splay link tree. |
 | [RtlIsRoot macro](..\ntddk\nf-ntddk-rtlisroot.md) | The RtlIsRoot routine determines whether the specified node is the root node of a splay link tree. |
@@ -1099,4 +1158,5 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [RtlRightChild macro](..\ntddk\nf-ntddk-rtlrightchild.md) | The RtlRightChild routine returns a pointer to the right child of the specified splay link node. |
 | [RtlUnicodeStringToOemSize macro](..\ntifs\nf-ntifs-rtlunicodestringtooemsize.md) | The RtlUnicodeStringToOemSize routine determines the size, in bytes, that a given Unicode string will be after it is translated into an OEM string. |
 | [SeDeleteClientSecurity macro](..\ntifs\nf-ntifs-sedeleteclientsecurity.md) | The SeDeleteClientSecurity routine deletes a client security context. |
+| [SeLengthSid macro](..\ntifs\nf-ntifs-selengthsid.md) | Obsolete. |
 | [SeQuerySubjectContextToken macro](..\ntifs\nf-ntifs-sequerysubjectcontexttoken.md) | The SeQuerySubjectContextToken macro retrieves the access token for a security subject context. |

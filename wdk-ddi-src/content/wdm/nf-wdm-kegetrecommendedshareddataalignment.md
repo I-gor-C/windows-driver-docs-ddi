@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeGetRecommendedSharedDataAlignment
+UID: NF:wdm.KeGetRecommendedSharedDataAlignment
 title: KeGetRecommendedSharedDataAlignment function
 author: windows-driver-content
 description: The KeGetRecommendedSharedDataAlignment routine returns the preferred alignment for memory structures that can be accessed by more than one processor.
@@ -7,7 +7,7 @@ old-location: kernel\kegetrecommendedshareddataalignment.htm
 old-project: kernel
 ms.assetid: 2faf5e30-bfbb-4b23-9cb9-bf9dd81a56c2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeGetRecommendedSharedDataAlignment
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

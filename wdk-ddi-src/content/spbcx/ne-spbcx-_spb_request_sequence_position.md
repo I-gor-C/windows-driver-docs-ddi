@@ -1,5 +1,5 @@
 ---
-UID: NE.spbcx._SPB_REQUEST_SEQUENCE_POSITION
+UID: NE:spbcx._SPB_REQUEST_SEQUENCE_POSITION
 title: _SPB_REQUEST_SEQUENCE_POSITION
 author: windows-driver-content
 description: The SPB_REQUEST_SEQUENCE_POSITION enumeration indicates the position of an I/O request in the list of transfers for an I/O transfer sequence.
@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: B2D1BC45-E932-4EBC-9B7E-C45E7439E551
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SPB_REQUEST_SEQUENCE_POSITION, SPB_REQUEST_SEQUENCE_POSITION, PSPB_REQUEST_SEQUENCE_POSITION, *PSPB_REQUEST_SEQUENCE_POSITION
+ms.keywords: _SPB_REQUEST_SEQUENCE_POSITION, *PSPB_REQUEST_SEQUENCE_POSITION, SPB_REQUEST_SEQUENCE_POSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Called at PASSIVE_LEVEL.
+req.irql: 
+req.typenames: *PSPB_REQUEST_SEQUENCE_POSITION, SPB_REQUEST_SEQUENCE_POSITION
 req.product: Windows 10 or later.
 ---
 

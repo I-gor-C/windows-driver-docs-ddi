@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMCommand
+UID: NF:printoem.OEMCommand
 title: OEMCommand function
 author: windows-driver-content
 description: OEMCommand function
@@ -7,7 +7,7 @@ old-location: print\oemcommand.htm
 old-project: print
 ms.assetid: 67f75696-dee4-43ec-90fd-96fd1a91ec16
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMCommand
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

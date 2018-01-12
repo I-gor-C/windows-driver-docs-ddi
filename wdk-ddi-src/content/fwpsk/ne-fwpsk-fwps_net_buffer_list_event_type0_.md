@@ -1,13 +1,13 @@
 ---
-UID: NE.fwpsk.FWPS_NET_BUFFER_LIST_EVENT_TYPE0_
+UID: NE:fwpsk.FWPS_NET_BUFFER_LIST_EVENT_TYPE0_
 title: FWPS_NET_BUFFER_LIST_EVENT_TYPE0_
 author: windows-driver-content
 description: The FWPS_NET_BUFFER_LIST_EVENT_TYPE0 enumeration type specifies the possible status events that can cause the callout driver's FWPS_NET_BUFFER_LIST_NOTIFY_FN0 function to be called.Note  FWPS_NET_BUFFER_LIST_EVENT_TYPE0 is a specific version of FWPS_NET_BUFFER_LIST_EVENT_TYPE. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwps_net_buffer_list_event_type0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 14225920-2f51-4fef-9501-812e3aff8905
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FWPS_NET_BUFFER_LIST_EVENT_TYPE0_, FWPS_NET_BUFFER_LIST_EVENT_TYPE0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_NET_BUFFER_LIST_EVENT_TYPE0
 ---
 
 # FWPS_NET_BUFFER_LIST_EVENT_TYPE0_ enumeration
@@ -74,7 +75,7 @@ typedef enum FWPS_NET_BUFFER_LIST_EVENT_TYPE0_ {
 
 ### -field FWPS_NET_BUFFER_LIST_ENTERED_NETIO
 
-The <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure entered the TCP/IP stack. Packets enter the stack either from
+The <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure entered the TCP/IP stack. Packets enter the stack either from
      the NDIS layer or as a result of a call to a WFP packet injection function.
 
 
@@ -86,7 +87,7 @@ The NET_BUFFER_LIST structure was cloned.
 ### -field FWPS_NET_BUFFER_LIST_CLONED_VIA_WFP_API
 
 The NET_BUFFER_LIST structure was cloned by a call to the 
-     <a href="netvista.fwpsallocateclonenetbufferlist0">FwpsAllocateCloneNetBufferList0</a> function.
+     <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">FwpsAllocateCloneNetBufferList0</a> function.
 
 
 ### -field FWPS_NET_BUFFER_LIST_DUPLICATED_BY_NETIO
@@ -127,7 +128,7 @@ Any
 </td>
 <td>
 Upon asynchronous context removal resulting from a call to the 
-        <a href="netvista.fwpsnetbufferlistremovecontext0">
+        <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistremovecontext0.md">
         FwpsNetBufferListRemoveContext0</a> function.
 
 </td>
@@ -230,20 +231,20 @@ Header
   FWPS_NET_BUFFER_LIST_NOTIFY_FN0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsallocateclonenetbufferlist0">
+<a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
      FwpsAllocateCloneNetBufferList0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsnetbufferlistremovecontext0">
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistremovecontext0.md">
         FwpsNetBufferListRemoveContext0</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FWPS_NET_BUFFER_LIST_EVENT_TYPE0 enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_NET_BUFFER_LIST_EVENT_TYPE0 enumeration%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

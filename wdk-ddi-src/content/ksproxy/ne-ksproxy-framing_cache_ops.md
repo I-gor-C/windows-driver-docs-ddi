@@ -1,5 +1,5 @@
 ---
-UID: NE.ksproxy.FRAMING_CACHE_OPS
+UID: NE:ksproxy.FRAMING_CACHE_OPS
 title: FRAMING_CACHE_OPS
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\framing_cache_ops.htm
 old-project: stream
 ms.assetid: EA496897-7D5A-43A8-A61E-34E986288E8B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FRAMING_CACHE_OPS, FRAMING_CACHE_OPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FRAMING_CACHE_OPS
 ---
 
 # FRAMING_CACHE_OPS enumeration

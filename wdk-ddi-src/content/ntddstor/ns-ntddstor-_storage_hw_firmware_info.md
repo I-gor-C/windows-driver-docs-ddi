@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._STORAGE_HW_FIRMWARE_INFO
+UID: NS:ntddstor._STORAGE_HW_FIRMWARE_INFO
 title: _STORAGE_HW_FIRMWARE_INFO
 author: windows-driver-content
 description: This structure contains information about the device firmware.
@@ -7,8 +7,8 @@ old-location: storage\storage_hw_firmware_info.htm
 old-project: storage
 ms.assetid: 5A85A7EC-2333-4161-A1E7-55D3420E730C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_HW_FIRMWARE_INFO, PSTORAGE_HW_FIRMWARE_INFO, STORAGE_HW_FIRMWARE_INFO
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_HW_FIRMWARE_INFO, *PSTORAGE_HW_FIRMWARE_INFO, STORAGE_HW_FIRMWARE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTORAGE_HW_FIRMWARE_INFO, STORAGE_HW_FIRMWARE_INFO
 ---
 
 # _STORAGE_HW_FIRMWARE_INFO structure

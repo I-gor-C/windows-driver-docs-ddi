@@ -1,5 +1,5 @@
 ---
-UID: NC.avc.PFNAVCINTERSECTHANDLER
+UID: NC:avc.PFNAVCINTERSECTHANDLER
 title: PFNAVCINTERSECTHANDLER
 author: windows-driver-content
 description: The AV/C intersect handler determines if the data ranges are compatible.
@@ -7,8 +7,8 @@ old-location: stream\av_c_intersect_handler.htm
 old-project: stream
 ms.assetid: 65ab5b68-9b76-497b-b560-9a4867d4d34e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _KBUGCHECK_DATA, KBUGCHECK_DATA, PKBUGCHECK_DATA, *PKBUGCHECK_DATA
+ms.date: 1/9/2018
+ms.keywords: _KBUGCHECK_DATA, KBUGCHECK_DATA, *PKBUGCHECK_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KBUGCHECK_DATA, *PKBUGCHECK_DATA
 ---
 
 # PFNAVCINTERSECTHANDLER callback
@@ -150,13 +151,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.avc_pin_descriptor">AVC_PIN_DESCRIPTOR</a>
+<a href="..\avc\ns-avc-_avc_pin_descriptor.md">AVC_PIN_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554160">AVC_FUNCTION_GET_PIN_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="stream.avstrminiintersecthandlerex">AVStrMiniIntersectHandlerEx</a>
+<a href="..\ks\nc-ks-pfnksintersecthandlerex.md">AVStrMiniIntersectHandlerEx</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/44281574-8258-47a3-857d-fd44bb949f17">DataRange Intersections in AVStream</a>
@@ -166,5 +167,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20PFNAVCINTERSECTHANDLER function pointer%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20PFNAVCINTERSECTHANDLER function pointer%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

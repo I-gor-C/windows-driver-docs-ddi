@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._SET_LOCAL_HOST_PROPS3
+UID: NS:1394._SET_LOCAL_HOST_PROPS3
 title: _SET_LOCAL_HOST_PROPS3
 author: windows-driver-content
 description: SET_LOCAL_HOST_PROPS3 contains the data necessary for defining or identifying one or more unit directories in the Configuration ROM of a 1394 Host Controller.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: f49a8b86-5611-4737-9b25-e7446e155bbc
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SET_LOCAL_HOST_PROPS3, SET_LOCAL_HOST_PROPS3, PSET_LOCAL_HOST_PROPS3, *PSET_LOCAL_HOST_PROPS3
+ms.keywords: _SET_LOCAL_HOST_PROPS3, SET_LOCAL_HOST_PROPS3, *PSET_LOCAL_HOST_PROPS3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SET_LOCAL_HOST_PROPS3, *PSET_LOCAL_HOST_PROPS3
 ---
 
 # _SET_LOCAL_HOST_PROPS3 structure

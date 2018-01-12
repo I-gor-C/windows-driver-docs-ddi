@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILSETSYSTEMSELECTIONPREFSPARAMS_V1
+UID: NS:rilapitypes.RILSETSYSTEMSELECTIONPREFSPARAMS_V1
 title: RILSETSYSTEMSELECTIONPREFSPARAMS_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetsystemselectionprefsparams_v1_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 84e21a8a-f393-415a-87b6-48700044c9a9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILSETSYSTEMSELECTIONPREFSPARAMS_V1, *LPRILSETSYSTEMSELECTIONPREFSPARAMS_V1, RILSETSYSTEMSELECTIONPREFSPARAMS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSETSYSTEMSELECTIONPREFSPARAMS_V1, RILSETSYSTEMSELECTIONPREFSPARAMS_V1
 req.product: Windows 10 or later.
 ---
 

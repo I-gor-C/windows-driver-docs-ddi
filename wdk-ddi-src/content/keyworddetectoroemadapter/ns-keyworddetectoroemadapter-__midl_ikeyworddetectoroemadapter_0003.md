@@ -1,5 +1,5 @@
 ---
-UID: NS.KEYWORDDETECTOROEMADAPTER.__MIDL_IKEYWORDDETECTOROEMADAPTER_0003
+UID: NS:keyworddetectoroemadapter.__MIDL_IKeywordDetectorOemAdapter_0003
 title: __MIDL_IKeywordDetectorOemAdapter_0003
 author: windows-driver-content
 description: The KEYWORDSELECTOR struct is a triplet of IDs that uniquely select a particular keyword, language, and user combination.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDSELECTOR
 ---
 
 # __MIDL_IKeywordDetectorOemAdapter_0003 structure

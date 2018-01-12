@@ -1,14 +1,14 @@
 ---
-UID: NC.ndkpi.NDK_FN_GET_CQ_RESULTS_EX
+UID: NC:ndkpi.NDK_FN_GET_CQ_RESULTS_EX
 title: NDK_FN_GET_CQ_RESULTS_EX
 author: windows-driver-content
 description: The NdkGetCqResultsEx (NDK_FN_GET_CQ_RESULTS_EX) function removes completions from an NDK completion queue (CQ) object.
 old-location: netvista\ndk_fn_get_cq_results_ex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: DC2782AB-BDFA-45C2-BC2E-ED4B946597D4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS, PNDIS_WWAN_VISIBLE_PROVIDERS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 # NDK_FN_GET_CQ_RESULTS_EX callback
@@ -38,7 +39,7 @@ req.irql: <=DISPATCH_LEVEL
 
 
 ## -description
-The <i>NdkGetCqResultsEx</i> (<i>NDK_FN_GET_CQ_RESULTS_EX</i>) function removes completions from an NDK completion queue (CQ) object. This function is identical to the <i>NdkGetCqResults</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_get_cq_results.md">NDK_FN_GET_CQ_RESULTS</a>) function, except that it retrieves an array of <a href="netvista.ndk_result_ex">NDK_RESULT_EX</a> structures instead of an array of <a href="netvista.ndk_result">NDK_RESULT</a> structures.
+The <i>NdkGetCqResultsEx</i> (<i>NDK_FN_GET_CQ_RESULTS_EX</i>) function removes completions from an NDK completion queue (CQ) object. This function is identical to the <i>NdkGetCqResults</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_get_cq_results.md">NDK_FN_GET_CQ_RESULTS</a>) function, except that it retrieves an array of <a href="..\ndkpi\ns-ndkpi-_ndk_result_ex.md">NDK_RESULT_EX</a> structures instead of an array of <a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a> structures.
 
 
 
@@ -60,12 +61,12 @@ ULONG NDK_FN_GET_CQ_RESULTS_EX(
 
 ### -param pNdkCq [in]
 
-A pointer to an NDK completion queue (CQ) object  (<a href="netvista.ndk_cq">NDK_CQ</a>).
+A pointer to an NDK completion queue (CQ) object  (<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>).
 
 
 ### -param Results 
 
-An array of <a href="netvista.ndk_result_ex">NDK_RESULT_EX</a> structures that will be filled with completion results that were removed from the CQ.
+An array of <a href="..\ndkpi\ns-ndkpi-_ndk_result_ex.md">NDK_RESULT_EX</a> structures that will be filled with completion results that were removed from the CQ.
 
 
 ### -param nResults [in]
@@ -140,24 +141,24 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndk_cq">NDK_CQ</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>
 </dt>
 <dt>
-<a href="netvista.ndk_result">NDK_RESULT</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a>
 </dt>
 <dt>
-<a href="netvista.ndk_result_ex">NDK_RESULT_EX</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_result_ex.md">NDK_RESULT_EX</a>
 </dt>
 <dt>
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_get_cq_results.md">NDK_FN_GET_CQ_RESULTS</a>
 </dt>
 <dt>
-<a href="netvista.ndkpi_completion_handling_requirements">NDKPI Completion Handling Requirements</a>
+<a href="https://msdn.microsoft.com/87150E2F-64F2-4EAB-A8B3-8E77622BE36C">NDKPI Completion Handling Requirements</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDK_FN_GET_CQ_RESULTS_EX callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_GET_CQ_RESULTS_EX callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

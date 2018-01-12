@@ -1,5 +1,5 @@
 ---
-UID: NF.ksproxy.IKsControl.KsProperty
+UID: NF:ksproxy.IKsControl.KsProperty
 title: IKsControl::KsProperty method
 author: windows-driver-content
 description: The KsProperty method sets a property or retrieves property information, along with any other defined support operations available on a property set.
@@ -7,7 +7,7 @@ old-location: stream\ikscontrol_ksproperty.htm
 old-project: stream
 ms.assetid: cc43f704-e1f8-4d62-8cdf-11575ec0b473
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IKsControl, IKsControl::KsProperty, KsProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PIPE_STATE
 ---
 
 # IKsControl::KsProperty method
@@ -59,7 +60,7 @@ HRESULT KsProperty(
 
 ### -param Property [in]
 
-Pointer to a structure that describes a property and the request type of the property request. This structure must be either a <a href="stream.ksproperty">KSPROPERTY</a> or a structure that contains a <b>KSPROPERTY</b> structure as its first member. An example of a structure that can be pointed to by this member is the <a href="..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_s.md">KSPROPERTY_VIDEOPROCAMP_S</a> structure.
+Pointer to a structure that describes a property and the request type of the property request. This structure must be either a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> or a structure that contains a <b>KSPROPERTY</b> structure as its first member. An example of a structure that can be pointed to by this member is the <a href="..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_s.md">KSPROPERTY_VIDEOPROCAMP_S</a> structure.
 
 
 ### -param PropertyLength [in]
@@ -120,7 +121,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksproperty">KSPROPERTY</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 </dt>
 <dt>
 <a href="..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_s.md">KSPROPERTY_VIDEOPROCAMP_S</a>
@@ -130,5 +131,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsControl::KsProperty method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsControl::KsProperty method%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

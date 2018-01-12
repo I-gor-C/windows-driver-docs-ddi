@@ -1,5 +1,5 @@
 ---
-UID: NF.hbaapi.HBA_OpenAdapter
+UID: NF:hbaapi.HBA_OpenAdapter
 title: HBA_OpenAdapter function
 author: windows-driver-content
 description: The HBA_OpenAdapter routine opens an HBA and returns a handle.
@@ -7,7 +7,7 @@ old-location: storage\hba_openadapter.htm
 old-project: storage
 ms.assetid: 78c37e2c-171b-483c-967d-1b80bde24338
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: HBA_OpenAdapter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hbaapi.lib
 req.dll: Hbaapi.dll
 req.irql: 
+req.typenames: HBA_WWNTYPE
 ---
 
 # HBA_OpenAdapter function

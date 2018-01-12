@@ -1,5 +1,5 @@
 ---
-UID: NF.video.VideoPortEnumerateChildren
+UID: NF:video.VideoPortEnumerateChildren
 title: VideoPortEnumerateChildren function
 author: windows-driver-content
 description: The VideoPortEnumerateChildren function allows a video miniport driver to force a reenumeration of its child devices.
@@ -7,7 +7,7 @@ old-location: display\videoportenumeratechildren.htm
 old-project: display
 ms.assetid: 41f081f3-4079-46f8-9d22-76a2d9e992b5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VideoPortEnumerateChildren
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
 req.irql: <= DISPATCH_LEVEL
+req.typenames: VIDEO_PORT_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -74,7 +75,7 @@ Some devices generate an interrupt when new hardware is connected to the system,
 
 New hardware is connected, which generates an interrupt.
 
-The miniport driver's interrupt handler (<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>) queues a DPC routine (<a href="..\video\nc-video-pminiport_dpc_routine.md">HwVidDpcRoutine</a>) by calling <a href="display.videoportqueuedpc">VideoPortQueueDpc</a>.
+The miniport driver's interrupt handler (<a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a>) queues a DPC routine (<a href="..\video\nc-video-pminiport_dpc_routine.md">HwVidDpcRoutine</a>) by calling <a href="..\video\nf-video-videoportqueuedpc.md">VideoPortQueueDpc</a>.
 
 The asynchronously executed DPC contains a call to <b>VideoPortEnumerateChildren</b>.
 
@@ -161,12 +162,12 @@ IRQL
 <a href="..\video\nc-video-pminiport_dpc_routine.md">HwVidDpcRoutine</a>
 </dt>
 <dt>
-<a href="display.videoportqueuedpc">VideoPortQueueDpc</a>
+<a href="..\video\nf-video-videoportqueuedpc.md">VideoPortQueueDpc</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortEnumerateChildren function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortEnumerateChildren function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

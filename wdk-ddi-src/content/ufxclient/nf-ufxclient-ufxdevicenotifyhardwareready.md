@@ -1,13 +1,13 @@
 ---
-UID: NF.ufxclient.UfxDeviceNotifyHardwareReady
+UID: NF:ufxclient.UfxDeviceNotifyHardwareReady
 title: UfxDeviceNotifyHardwareReady function
 author: windows-driver-content
 description: Notifies UFX that the hardware is ready.
 old-location: buses\ufxdevicenotifyhardwareready.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: B4BE0BDC-C1A3-4230-8F4B-78DE34F5554D
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UfxDeviceNotifyHardwareReady
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID UfxDeviceNotifyHardwareReady(
 
 ### -param UfxDevice [in]
 
-A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
+A handle to a UFX device object that the driver created by calling <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.
 
 
 ## -returns

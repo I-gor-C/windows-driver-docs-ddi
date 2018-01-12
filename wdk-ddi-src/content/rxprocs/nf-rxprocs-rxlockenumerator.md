@@ -1,5 +1,5 @@
 ---
-UID: NF.rxprocs.RxLockEnumerator
+UID: NF:rxprocs.RxLockEnumerator
 title: RxLockEnumerator function
 author: windows-driver-content
 description: RxLockEnumerator is called from a network mini-redirector to enumerate the file locks on an FCB.
@@ -7,7 +7,7 @@ old-location: ifsk\rxlockenumerator.htm
 old-project: ifsk
 ms.assetid: 8d14604f-c9e5-4a2d-bb51-ef1925b39118
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RxLockEnumerator
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -132,15 +133,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.the_fcb_structure">The FCB Structure</a>
+<a href="https://msdn.microsoft.com/feb38b24-c028-4c8d-be45-11d9a4659f8d">The FCB Structure</a>
 </dt>
 <dt>
-<a href="ifsk.the_srv_open_structure">The SRV_OPEN Structure</a>
+<a href="https://msdn.microsoft.com/6cf4c6f6-a21f-4919-92b5-2403b650d8d0">The SRV_OPEN Structure</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxLockEnumerator function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxLockEnumerator function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

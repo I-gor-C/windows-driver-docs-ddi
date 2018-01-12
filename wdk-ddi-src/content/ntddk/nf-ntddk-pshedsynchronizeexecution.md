@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PshedSynchronizeExecution
+UID: NF:ntddk.PshedSynchronizeExecution
 title: PshedSynchronizeExecution function
 author: windows-driver-content
 description: The PshedSynchronizeExecution function synchronizes the execution of a given function with the hardware error processing for an error source.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Pshed.lib
 req.dll: Pshed.dll
 req.irql: <= DIRQL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PshedSynchronizeExecution function
@@ -57,7 +58,7 @@ BOOLEAN PshedSynchronizeExecution(
 
 ### -param ErrorSource [in]
 
-A pointer to a <a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure that describes an error source.
+A pointer to a <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure that describes an error source.
 
 
 ### -param SynchronizeRoutine [in]
@@ -182,7 +183,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 </dt>
 </dl>
  

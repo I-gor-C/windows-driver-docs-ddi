@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:scsiwmi
 ---
 
 # Scsiwmi.h header
@@ -23,6 +23,17 @@ Scsiwmi.h contain these programming interfaces:
 | [ScsiPortWmiSetData function](nf-scsiwmi-scsiportwmisetdata.md) | The ScsiPortWmiSetData routine updates the WNODE_ALL_DATA structure within the request context to specify the position and length of the data for an instance. |
 | [ScsiPortWmiSetInstanceCount function](nf-scsiwmi-scsiportwmisetinstancecount.md) | The ScsiPortWmiSetInstanceCount specifies the number of instances for which data buffers must be set aside within the WNODE_ALL_DATA structure in the request context. |
 | [ScsiPortWmiSetInstanceName function](nf-scsiwmi-scsiportwmisetinstancename.md) | The ScsiPortWmiSetInstanceName routine updates the WNODE_ALL_DATA structure within the request context to specify the position and length of an instance name. |
+
+## Callback functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [PSCSIWMI_EXECUTE_METHOD callback](nc-scsiwmi-pscsiwmi_execute_method.md) | A miniport driver's HwScsiWmiExecuteMethod routine is called to execute a method associated with a data block. |
+| [PSCSIWMI_FUNCTION_CONTROL callback](nc-scsiwmi-pscsiwmi_function_control.md) | A miniport driver's HwScsiWmiFunctionControl routine is called to enable or disable notification of events. |
+| [PSCSIWMI_QUERY_DATABLOCK callback](nc-scsiwmi-pscsiwmi_query_datablock.md) | A miniport driver's HwScsiWmiQueryDataBlock routine is called to obtain either a single instance or all instances of a data block. |
+| [PSCSIWMI_QUERY_REGINFO callback](nc-scsiwmi-pscsiwmi_query_reginfo.md) | A miniport driver's HwScsiWmiQueryReginfo routine is called to obtain information about the data and event blocks to be registered on behalf of the miniport driver by the SCSI port driver. |
+| [PSCSIWMI_SET_DATABLOCK callback](nc-scsiwmi-pscsiwmi_set_datablock.md) | A miniport driver's HwScsiWmiSetDataBlock routine is called to change all data items in a single instance of a data block. |
+| [PSCSIWMI_SET_DATAITEM callback](nc-scsiwmi-pscsiwmi_set_dataitem.md) | A miniport driver's HwScsiWmiSetDataItem routine is called to change a single data item in an instance of a data block. |
 
 ## Structures
 

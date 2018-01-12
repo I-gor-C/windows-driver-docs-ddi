@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteTyped.OutTypeDefinition
+UID: NF:engextcpp.ExtRemoteTyped.OutTypeDefinition
 title: ExtRemoteTyped::OutTypeDefinition method
 author: windows-driver-content
 description: The OutTypeDefinition method prints the type of the typed data represented by this object.
 old-location: debugger\extremotetyped_outtypedefinition.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f7d24a3b-b5a8-4924-85d9-8bf7983b95fa
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped::OutTypeDefinition, OutTypeDefinition
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteTyped::OutTypeDefinition method

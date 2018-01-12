@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_XPF_PROCINFO_VALIDBITS
+UID: NS:ntddk._WHEA_XPF_PROCINFO_VALIDBITS
 title: _WHEA_XPF_PROCINFO_VALIDBITS
 author: windows-driver-content
 description: The WHEA_XPF_PROCINFO_VALIDBITS union describes which members of a WHEA_XPF_PROCINFO structure contain valid data.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: ca0eef79-d990-4a82-b2d6-a51e3790cfc2
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_XPF_PROCINFO_VALIDBITS, *PWHEA_XPF_PROCINFO_VALIDBITS, PWHEA_XPF_PROCINFO_VALIDBITS, WHEA_XPF_PROCINFO_VALIDBITS
+ms.keywords: _WHEA_XPF_PROCINFO_VALIDBITS, WHEA_XPF_PROCINFO_VALIDBITS, *PWHEA_XPF_PROCINFO_VALIDBITS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_XPF_PROCINFO_VALIDBITS, *PWHEA_XPF_PROCINFO_VALIDBITS
 ---
 
 # _WHEA_XPF_PROCINFO_VALIDBITS structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The WHEA_XPF_PROCINFO_VALIDBITS union describes which members of a <a href="whea.whea_xpf_procinfo">WHEA_XPF_PROCINFO</a> structure contain valid data.
+The WHEA_XPF_PROCINFO_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure contain valid data.
 
 
 
@@ -97,7 +98,7 @@ A ULONGLONG representation of the contents of the WHEA_XPF_PROCINFO_VALIDBITS un
 
 
 ## -remarks
-A WHEA_XPF_PROCINFO_VALIDBITS union is contained within the <a href="whea.whea_xpf_procinfo">WHEA_XPF_PROCINFO</a> structure.
+A WHEA_XPF_PROCINFO_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure.
 
 
 ## -requirements
@@ -129,7 +130,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_xpf_procinfo">WHEA_XPF_PROCINFO</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a>
 </dt>
 </dl>
  

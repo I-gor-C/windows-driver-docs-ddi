@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltSetSecurityObject
+UID: NF:fltkernel.FltSetSecurityObject
 title: FltSetSecurityObject function
 author: windows-driver-content
 description: FltSetSecurityObject sets an object's security state.
@@ -7,7 +7,7 @@ old-location: ifsk\fltsetsecurityobject.htm
 old-project: ifsk
 ms.assetid: 3276dff3-d12a-4a30-bbdc-a582a2228df3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltSetSecurityObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltSetSecurityObject function
@@ -68,7 +69,7 @@ File object pointer for the object whose security state is to be set. The caller
 
 ### -param SecurityInformation [in]
 
-Pointer to a <a href="ifsk.security_information">SECURITY_INFORMATION</a> value specifying the information to be set as a combination of one or more of the following. This parameter is required and cannot be <b>NULL</b>. 
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a> value specifying the information to be set as a combination of one or more of the following. This parameter is required and cannot be <b>NULL</b>. 
 
 <table>
 <tr>
@@ -223,24 +224,24 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltquerysecurityobject">FltQuerySecurityObject</a>
+<a href="..\fltkernel\nf-fltkernel-fltquerysecurityobject.md">FltQuerySecurityObject</a>
 </dt>
 <dt>
-<a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="ifsk.security_information">SECURITY_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.zwquerysecurityobject">ZwQuerySecurityObject</a>
+<a href="..\ntifs\nf-ntifs-zwquerysecurityobject.md">ZwQuerySecurityObject</a>
 </dt>
 <dt>
-<a href="kernel.zwsetsecurityobject">ZwSetSecurityObject</a>
+<a href="..\ntifs\nf-ntifs-zwsetsecurityobject.md">ZwSetSecurityObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetSecurityObject function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetSecurityObject function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

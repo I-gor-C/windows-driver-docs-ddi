@@ -1,5 +1,5 @@
 ---
-UID: NS.WPPRECORDER._WPP_TRIAGE_INFO
+UID: NS:wpprecorder._WPP_TRIAGE_INFO
 title: _WPP_TRIAGE_INFO
 author: windows-driver-content
 description: Used to locate the WPP log for WER reporting.
@@ -7,8 +7,8 @@ old-location: devtest\wpp_triage_info.htm
 old-project: devtest
 ms.assetid: BC2722A8-C09A-4C46-9EC3-45DCF4A6FD64
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/10/2018
+ms.keywords: _WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 

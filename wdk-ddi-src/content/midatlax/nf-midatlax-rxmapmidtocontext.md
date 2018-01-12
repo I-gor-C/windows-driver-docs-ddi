@@ -1,5 +1,5 @@
 ---
-UID: NF.midatlax.RxMapMidToContext
+UID: NF:midatlax.RxMapMidToContext
 title: RxMapMidToContext function
 author: windows-driver-content
 description: RxMapMidToContext maps a Multiplex ID (MID) to its associated context in a MID_ATLAS structure.
@@ -7,7 +7,7 @@ old-location: ifsk\rxmapmidtocontext.htm
 old-project: ifsk
 ms.assetid: e0625c27-6de9-401f-a6bd-52697c4a57c0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RxMapMidToContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: MF_TRANSFER_VIDEO_FRAME_FLAGS
 ---
 
 # RxMapMidToContext function
@@ -111,24 +112,24 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.rxassociatecontextwithmid">RxAssociateContextWithMid</a>
+<a href="..\midatlax\nf-midatlax-rxassociatecontextwithmid.md">RxAssociateContextWithMid</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreatemidatlas">RxCreateMidAtlas</a>
+<a href="..\midatlax\nf-midatlax-rxcreatemidatlas.md">RxCreateMidAtlas</a>
 </dt>
 <dt>
-<a href="ifsk.rxdestroymidatlas">RxDestroyMidAtlas</a>
+<a href="..\midatlax\nf-midatlax-rxdestroymidatlas.md">RxDestroyMidAtlas</a>
 </dt>
 <dt>
-<a href="ifsk.rxmapanddissociatemidfromcontext">RxMapAndDissociateMidFromContext</a>
+<a href="..\midatlax\nf-midatlax-rxmapanddissociatemidfromcontext.md">RxMapAndDissociateMidFromContext</a>
 </dt>
 <dt>
-<a href="ifsk.rxreassociatemid">RxReassociateMid</a>
+<a href="..\midatlax\nf-midatlax-rxreassociatemid.md">RxReassociateMid</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxMapMidToContext function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxMapMidToContext function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

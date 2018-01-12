@@ -1,5 +1,5 @@
 ---
-UID: NC.storport.HW_INITIALIZE_TRACING
+UID: NC:storport.HW_INITIALIZE_TRACING
 title: HW_INITIALIZE_TRACING
 author: windows-driver-content
 description: The HwStorInitializeTracing callback routine allows the Storport virtual miniport driver to set up tracing and any related resources.
@@ -7,8 +7,8 @@ old-location: storage\hwstorinitializetracing.htm
 old-project: storage
 ms.assetid: e0d4ea58-415b-4ea4-9001-8a23ab44a1bf
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
 req.product: Windows 10 or later.
 ---
 
@@ -60,12 +61,12 @@ VOID HwStorInitializeTracing(
 
 ### -param Arg1 
 
-The first parameter that is passed to <a href="storage.storportinitialize">StorPortInitialize</a>.
+The first parameter that is passed to <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>.
 
 
 ### -param Arg2 
 
-The second parameter that is passed to <a href="storage.storportinitialize">StorPortInitialize</a>.
+The second parameter that is passed to <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>.
 
 
 ## -returns

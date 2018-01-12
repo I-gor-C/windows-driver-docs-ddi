@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2SystemDmaReceiveCleanupTransactionComplete
+UID: NF:sercx.SerCx2SystemDmaReceiveCleanupTransactionComplete
 title: SerCx2SystemDmaReceiveCleanupTransactionComplete function
 author: windows-driver-content
 description: The SerCx2SystemDmaReceiveCleanupTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished cleaning up the serial controller's hardware state after a system-DMA-receive transaction.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID SerCx2SystemDmaReceiveCleanupTransactionComplete(
 
 ### -param SystemDmaReceive [in]
 
-A <a href="serports.sercx2systemdmareceive_object_handle">SERCX2SYSTEMDMARECEIVE</a> handle to a system-DMA-receive object. The serial controller driver previously called the <a href="serports.sercx2systemdmareceivecreate">SerCx2SystemDmaReceiveCreate</a> method to create this object.
+A <a href="serports.sercx2systemdmareceive_object_handle">SERCX2SYSTEMDMARECEIVE</a> handle to a system-DMA-receive object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2systemdmareceivecreate.md">SerCx2SystemDmaReceiveCreate</a> method to create this object.
 
 
 ## -returns
@@ -126,7 +127,7 @@ IRQL
 <a href="serports.sercx2systemdmareceive_object_handle">SERCX2SYSTEMDMARECEIVE</a>
 </dt>
 <dt>
-<a href="serports.sercx2systemdmareceivecreate">SerCx2SystemDmaReceiveCreate</a>
+<a href="..\sercx\nf-sercx-sercx2systemdmareceivecreate.md">SerCx2SystemDmaReceiveCreate</a>
 </dt>
 </dl>
  

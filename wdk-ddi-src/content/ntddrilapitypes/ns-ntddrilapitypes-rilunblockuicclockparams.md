@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILUNBLOCKUICCLOCKPARAMS
+UID: NS:ntddrilapitypes.RILUNBLOCKUICCLOCKPARAMS
 title: RILUNBLOCKUICCLOCKPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilunblockuicclockparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 48d1deeb-8862-4e01-aa22-119a53aa4aba
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS, LPRILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS
 ---
 
 # RILUNBLOCKUICCLOCKPARAMS structure

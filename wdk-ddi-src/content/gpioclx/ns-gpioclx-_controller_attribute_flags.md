@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._CONTROLLER_ATTRIBUTE_FLAGS
+UID: NS:gpioclx._CONTROLLER_ATTRIBUTE_FLAGS
 title: _CONTROLLER_ATTRIBUTE_FLAGS
 author: windows-driver-content
 description: The CONTROLLER_ATTRIBUTE_FLAGS structure describes the hardware attributes of the general-purpose I/O (GPIO) controller device.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 4D3DE8AE-99FB-48C8-A2FC-099CA908EC18
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CONTROLLER_ATTRIBUTE_FLAGS, CONTROLLER_ATTRIBUTE_FLAGS, PCONTROLLER_ATTRIBUTE_FLAGS, *PCONTROLLER_ATTRIBUTE_FLAGS
+ms.keywords: _CONTROLLER_ATTRIBUTE_FLAGS, CONTROLLER_ATTRIBUTE_FLAGS, *PCONTROLLER_ATTRIBUTE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: CONTROLLER_ATTRIBUTE_FLAGS, *PCONTROLLER_ATTRIBUTE_FLAGS
 ---
 
 # _CONTROLLER_ATTRIBUTE_FLAGS structure

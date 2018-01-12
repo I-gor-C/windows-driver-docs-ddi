@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSER._SERIAL_HANDFLOW
+UID: NS:ntddser._SERIAL_HANDFLOW
 title: _SERIAL_HANDFLOW
 author: windows-driver-content
 description: The SERIAL_HANDFLOW structure specifies the handshake and flow control settings for a serial port.
@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: E13148B7-8FCE-4407-80F6-286F0EF65B5C
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SERIAL_HANDFLOW, PSERIAL_HANDFLOW, *PSERIAL_HANDFLOW, SERIAL_HANDFLOW
+ms.keywords: _SERIAL_HANDFLOW, *PSERIAL_HANDFLOW, SERIAL_HANDFLOW
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSERIAL_HANDFLOW, SERIAL_HANDFLOW
 ---
 
 # _SERIAL_HANDFLOW structure
@@ -119,7 +120,7 @@ A bitmask that specifies flow control behavior. This member is set to zero or to
 </tr>
 <tr>
 <td>SERIAL_ERROR_CHAR</td>
-<td>Insert the error character into the received data when an error occurs. For more information, see the description of the <b>ErrorChar</b> member in <a href="serports.serial_chars">SERIAL_CHARS</a>.</td>
+<td>Insert the error character into the received data when an error occurs. For more information, see the description of the <b>ErrorChar</b> member in <a href="..\ntddser\ns-ntddser-_serial_chars.md">SERIAL_CHARS</a>.</td>
 </tr>
 <tr>
 <td>SERIAL_NULL_STRIPPING</td>
@@ -127,7 +128,7 @@ A bitmask that specifies flow control behavior. This member is set to zero or to
 </tr>
 <tr>
 <td>SERIAL_BREAK_CHAR</td>
-<td>Insert the break character into the received data when a break occurs. For more information, see the description of the <b>BreakChar</b> member in <a href="serports.serial_chars">SERIAL_CHARS</a>.</td>
+<td>Insert the break character into the received data when a break occurs. For more information, see the description of the <b>BreakChar</b> member in <a href="..\ntddser\ns-ntddser-_serial_chars.md">SERIAL_CHARS</a>.</td>
 </tr>
 <tr>
 <td>SERIAL_RTS_CONTROL</td>

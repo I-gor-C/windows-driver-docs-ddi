@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_ENCAPSULATION_TYPE
+UID: NE:wditypes._WDI_ENCAPSULATION_TYPE
 title: _WDI_ENCAPSULATION_TYPE
 author: windows-driver-content
 description: The WDI_ENCAPSULATION_TYPE enumeration defines the Wi-Fi encapsulation types.
 old-location: netvista\wdi_encapsulation_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6EDCC69B-F156-416B-9824-5E26F9834D14
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_ENCAPSULATION_TYPE, WDI_ENCAPSULATION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_ENCAPSULATION_TYPE
 req.product: Windows 10 or later.
 ---
 

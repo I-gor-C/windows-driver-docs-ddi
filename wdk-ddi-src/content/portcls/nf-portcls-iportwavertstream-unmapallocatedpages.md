@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWaveRTStream.UnmapAllocatedPages
+UID: NF:portcls.IPortWaveRTStream.UnmapAllocatedPages
 title: IPortWaveRTStream::UnmapAllocatedPages method
 author: windows-driver-content
 description: The UnmapAllocatedPages method releases a mapping.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWaveRTStream::UnmapAllocatedPages method
@@ -61,7 +62,7 @@ Pointer to the base virtual address to which the physical pages were mapped.
 
 ### -param MemoryDescriptorList [in]
 
-Pointer to a memory descriptor list (<a href="kernel.mdl">MDL</a>) that describes the physical pages.
+Pointer to a memory descriptor list (<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>) that describes the physical pages.
 
 
 ## -returns
@@ -69,9 +70,9 @@ None
 
 
 ## -remarks
-The miniport driver must call this method to release a mapping that was set up by a previous call to <a href="audio.iportwavertstream_mapallocatedpages">IPortWaveRTStream::MapAllocatedPages</a>. The driver must release the mapping before calling <a href="audio.iportwavertstream_freepagesfrommdl">IPortWaveRTStream::FreePagesFromMdl </a> to free the MDL.
+The miniport driver must call this method to release a mapping that was set up by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536932">IPortWaveRTStream::MapAllocatedPages</a>. The driver must release the mapping before calling <a href="https://msdn.microsoft.com/8839c0ab-08c5-4cc7-a526-aa1ebe2fde15">IPortWaveRTStream::FreePagesFromMdl </a> to free the MDL.
 
-This method is similar in operation to the <a href="kernel.mmunmaplockedpages">MmUnmapLockedPages</a> function. 
+This method is similar in operation to the <a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a> function. 
 
 
 ## -requirements
@@ -126,13 +127,13 @@ Passive level.
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_mapallocatedpages">IPortWaveRTStream::MapAllocatedPages</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536932">IPortWaveRTStream::MapAllocatedPages</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_freepagesfrommdl">IPortWaveRTStream::FreePagesFromMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536926">IPortWaveRTStream::FreePagesFromMdl</a>
 </dt>
 <dt>
-<a href="kernel.mmunmaplockedpages">MmUnmapLockedPages</a>
+<a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
 </dt>
 </dl>
  

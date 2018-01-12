@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMEnablePDEV
+UID: NF:printoem.OEMEnablePDEV
 title: OEMEnablePDEV function
 author: windows-driver-content
 description: OEMEnablePDEV function
@@ -7,7 +7,7 @@ old-location: print\oemenablepdev.htm
 old-project: print
 ms.assetid: 0088f5f6-eb68-4081-8cca-3d34fd10593a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMEnablePDEV
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

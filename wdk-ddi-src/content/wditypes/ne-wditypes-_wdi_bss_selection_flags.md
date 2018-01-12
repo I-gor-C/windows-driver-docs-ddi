@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_BSS_SELECTION_FLAGS
+UID: NE:wditypes._WDI_BSS_SELECTION_FLAGS
 title: _WDI_BSS_SELECTION_FLAGS
 author: windows-driver-content
 description: The WDI_BSS_SELECTION_FLAGS enumeration defines flags for BSS selection.
 old-location: netvista\wdi_bss_selection_flags.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9C2F862B-8BA8-4947-9C3D-538715C99F26
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_BSS_SELECTION_FLAGS, WDI_BSS_SELECTION_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_BSS_SELECTION_FLAGS
 req.product: Windows 10 or later.
 ---
 

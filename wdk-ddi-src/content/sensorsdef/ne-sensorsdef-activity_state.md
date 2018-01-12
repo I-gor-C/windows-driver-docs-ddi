@@ -1,5 +1,5 @@
 ---
-UID: NE.sensorsdef.ACTIVITY_STATE
+UID: NE:sensorsdef.ACTIVITY_STATE
 title: ACTIVITY_STATE
 author: windows-driver-content
 description: This enumeration represents the activity states reported by the activity detection sensor.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ACTIVITY_STATE
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.WRITE_REGISTER_BUFFER_USHORT
+UID: NF:wdm.WRITE_REGISTER_BUFFER_USHORT
 title: WRITE_REGISTER_BUFFER_USHORT function
 author: windows-driver-content
 description: The WRITE_REGISTER_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified register.
@@ -7,7 +7,7 @@ old-location: kernel\write_register_buffer_ushort.htm
 old-project: kernel
 ms.assetid: 070fc2b0-045e-4778-82d4-0850cd2064a5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: WRITE_REGISTER_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

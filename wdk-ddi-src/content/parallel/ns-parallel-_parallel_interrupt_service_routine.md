@@ -1,5 +1,5 @@
 ---
-UID: NS.PARALLEL._PARALLEL_INTERRUPT_SERVICE_ROUTINE
+UID: NS:parallel._PARALLEL_INTERRUPT_SERVICE_ROUTINE
 title: _PARALLEL_INTERRUPT_SERVICE_ROUTINE
 author: windows-driver-content
 description: The PARALLEL_INTERRUPT_SERVICE_ROUTINE structure specifies interrupt services that a kernel-mode driver can connect to the operation of a parallel port.
@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: dff10a68-f7c4-4f7a-a3f7-3697fc88992a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PARALLEL_INTERRUPT_SERVICE_ROUTINE, *PPARALLEL_INTERRUPT_SERVICE_ROUTINE, PARALLEL_INTERRUPT_SERVICE_ROUTINE, PPARALLEL_INTERRUPT_SERVICE_ROUTINE
+ms.keywords: _PARALLEL_INTERRUPT_SERVICE_ROUTINE, *PPARALLEL_INTERRUPT_SERVICE_ROUTINE, PARALLEL_INTERRUPT_SERVICE_ROUTINE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPARALLEL_INTERRUPT_SERVICE_ROUTINE, PARALLEL_INTERRUPT_SERVICE_ROUTINE
 ---
 
 # _PARALLEL_INTERRUPT_SERVICE_ROUTINE structure
@@ -128,7 +129,7 @@ Header
 <a href="..\parallel\ni-parallel-ioctl_internal_parallel_disconnect_interrupt.md">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
 </dt>
 <dt>
-<a href="parports.parallel_interrupt_information">PARALLEL_INTERRUPT_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_parallel_interrupt_information.md">PARALLEL_INTERRUPT_INFORMATION</a>
 </dt>
 </dl>
  

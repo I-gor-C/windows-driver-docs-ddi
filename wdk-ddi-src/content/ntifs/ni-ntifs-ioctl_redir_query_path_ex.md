@@ -1,5 +1,5 @@
 ---
-UID: NI.ntifs.IOCTL_REDIR_QUERY_PATH_EX
+UID: NI:ntifs.IOCTL_REDIR_QUERY_PATH_EX
 title: IOCTL_REDIR_QUERY_PATH_EX
 author: windows-driver-content
 description: The IOCTL_REDIR_QUERY_PATH_EX control code is sent by the multiple UNC provider (MUP) on Windows Vista or later to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request.
@@ -7,7 +7,7 @@ old-location: ifsk\ioctl_redir_query_path_ex.htm
 old-project: ifsk
 ms.assetid: 290825dd-d5f6-4e9b-b1a3-3e146d3e1856
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlUpperOplockFsctrl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TOKEN_TYPE
 ---
 
 # IOCTL_REDIR_QUERY_PATH_EX IOCTL
@@ -134,11 +135,11 @@ If a network redirector claims a server name (\\server, for example), all reques
 For more information, see the following sections in the Design Guide:
 
 
-<a href="ifsk.support_for_unc_naming_and_mup">Support for UNC Naming and MUP</a>
+<a href="https://msdn.microsoft.com/07c4a498-10c7-41b2-aaeb-73cab946f392">Support for UNC Naming and MUP</a>
 
 
 
-<a href="ifsk.mup_changes_in_microsoft_windows_vista">MUP Changes in Microsoft Windows Vista</a>
+<a href="https://msdn.microsoft.com/8ca2f9bc-14f1-45d3-a397-f3e5459cf8ec">MUP Changes in Microsoft Windows Vista</a>
 
 
 
@@ -170,13 +171,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fsrtlderegisteruncprovider">FsRtlDeregisterUncProvider</a>
+<a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlregisteruncprovider">FsRtlRegisterUncProvider</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncprovider~r2.md">FsRtlRegisterUncProvider</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlregisteruncproviderex">FsRtlRegisterUncProviderEx</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlregisteruncproviderex~r3.md">FsRtlRegisterUncProviderEx</a>
 </dt>
 <dt>
 <a href="..\ntifs\ni-ntifs-ioctl_redir_query_path.md">IOCTL_REDIR_QUERY_PATH</a>
@@ -186,5 +187,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IOCTL_REDIR_QUERY_PATH_EX control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IOCTL_REDIR_QUERY_PATH_EX control code%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

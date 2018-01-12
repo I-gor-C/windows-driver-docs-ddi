@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcRegisterAdapterPowerManagement
+UID: NF:portcls.PcRegisterAdapterPowerManagement
 title: PcRegisterAdapterPowerManagement function
 author: windows-driver-content
 description: The PcRegisterAdapterPowerManagement function registers the adapter's power-management interface with the PortCls system driver.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcRegisterAdapterPowerManagement function
@@ -56,12 +57,12 @@ NTSTATUS PcRegisterAdapterPowerManagement(
 
 ### -param pUnknown [in]
 
-Pointer to an adapter driver object's <a href="com.iunknown">IUnknown</a> interface. The PortCls system driver queries this object for its <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a> interface.
+Pointer to an adapter driver object's <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface. The PortCls system driver queries this object for its <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a> interface.
 
 
 ### -param pvContext1 [in]
 
-Pointer to the adapter's <a href="wdkgloss.f#wdkgloss.functional_device_object__fdo_#wdkgloss.functional_device_object__fdo_"><i>functional device object (FDO)</i></a>. This parameter is a pointer to a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a> but is cast to type PVOID.
+Pointer to the adapter's <a href="wdkgloss.f#wdkgloss.functional_device_object__fdo_#wdkgloss.functional_device_object__fdo_"><i>functional device object (FDO)</i></a>. This parameter is a pointer to a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> but is cast to type PVOID.
 
 
 ## -returns
@@ -131,7 +132,7 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>

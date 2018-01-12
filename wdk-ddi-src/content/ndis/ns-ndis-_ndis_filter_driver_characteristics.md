@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_FILTER_DRIVER_CHARACTERISTICS
+UID: NS:ndis._NDIS_FILTER_DRIVER_CHARACTERISTICS
 title: _NDIS_FILTER_DRIVER_CHARACTERISTICS
 author: windows-driver-content
 description: To specify its driver characteristics, a filter driver initializes an NDIS_FILTER_DRIVER_CHARACTERISTICS structure and passes it to NDIS.
 old-location: netvista\ndis_filter_driver_characteristics.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1eb2bae0-70b9-4bc0-9d93-4fc9467f9532
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_FILTER_DRIVER_CHARACTERISTICS, NDIS_FILTER_DRIVER_CHARACTERISTICS, PNDIS_FILTER_DRIVER_CHARACTERISTICS, *PNDIS_FILTER_DRIVER_CHARACTERISTICS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_FILTER_DRIVER_CHARACTERISTICS, NDIS_FILTER_DRIVER_CHARACTERISTICS, *PNDIS_FILTER_DRIVER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NDIS_FILTER_DRIVER_CHARACTERISTICS, *PNDIS_FILTER_DRIVER_CHARACTERISTICS
 ---
 
 # _NDIS_FILTER_DRIVER_CHARACTERISTICS structure
@@ -91,7 +92,7 @@ typedef struct _NDIS_FILTER_DRIVER_CHARACTERISTICS {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      filter driver characteristics structure (NDIS_FILTER_DRIVER_CHARACTERISTICS). Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_FILTER_DRIVER_CHARACTERISTICS.
@@ -275,13 +276,13 @@ A Unicode string that represents the user-readable description of the filter dri
 
 ### -field UniqueName
 
-A Unicode string that represents the unique name for the filter driver. This string must be a GUID, enclosed in curly braces, for example "{5cbf81bd-5055-47cd-9055-a76b2b4e3697}". This GUID must match the one in the <b>NetCfgInstanceId</b> INF file entry in the filter driver's INF file. For more information, see <a href="netvista.inf_file_settings_for_filter_drivers">INF File Settings for Filter Drivers</a>.
+A Unicode string that represents the unique name for the filter driver. This string must be a GUID, enclosed in curly braces, for example "{5cbf81bd-5055-47cd-9055-a76b2b4e3697}". This GUID must match the one in the <b>NetCfgInstanceId</b> INF file entry in the filter driver's INF file. For more information, see <a href="https://msdn.microsoft.com/e2714e67-62ac-4d9a-bec3-971d1c8b5bd8">INF File Settings for Filter Drivers</a>.
 
 
 ### -field ServiceName
 
 A Unicode string that represents the service name of the filter driver. This string must be the service name
-     from the AddService directive in the filter driver's INF file. For more information, see <a href="netvista.inf_file_settings_for_filter_drivers">INF File Settings for Filter Drivers</a>.
+     from the AddService directive in the filter driver's INF file. For more information, see <a href="https://msdn.microsoft.com/e2714e67-62ac-4d9a-bec3-971d1c8b5bd8">INF File Settings for Filter Drivers</a>.
 
 
 ### -field SetOptionsHandler
@@ -436,7 +437,7 @@ This member is reserved.
 
 ## -remarks
 A filter driver calls the 
-    <a href="netvista.ndisfregisterfilterdriver">
+    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
     NdisFRegisterFilterDriver</a> function to register its characteristics, including the default entry
     points for its filter driver functions (<i>FilterXxx</i>). The filter driver initializes an NDIS_FILTER_DRIVER_CHARACTERISTICS structure and
     passes a pointer to this structure in the 
@@ -536,25 +537,25 @@ Header
 <a href="..\ndis\nc-ndis-filter_status.md">FilterStatus</a>
 </dt>
 <dt>
-<a href="netvista.ndis_filter_partial_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_filter_partial_characteristics.md">
    NDIS_FILTER_PARTIAL_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="netvista.inf_file_settings_for_filter_drivers">INF File Settings for Filter Drivers</a>
+<a href="https://msdn.microsoft.com/e2714e67-62ac-4d9a-bec3-971d1c8b5bd8">INF File Settings for Filter Drivers</a>
 </dt>
 <dt>
-<a href="netvista.initializing_a_filter_driver">Initializing a Filter Driver</a>
+<a href="https://msdn.microsoft.com/e24b18b5-76d3-4d56-bf60-0dea91ba014e">Initializing a Filter Driver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_FILTER_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

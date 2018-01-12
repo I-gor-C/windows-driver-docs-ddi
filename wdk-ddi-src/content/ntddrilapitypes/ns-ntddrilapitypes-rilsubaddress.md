@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSUBADDRESS
+UID: NS:ntddrilapitypes.RILSUBADDRESS
 title: RILSUBADDRESS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsubaddress.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0a1f9e89-df17-4802-9685-06a2eedbc0e5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSUBADDRESS, RILSUBADDRESS, LPRILSUBADDRESS, *LPRILSUBADDRESS
+ms.date: 1/8/2018
+ms.keywords: RILSUBADDRESS, RILSUBADDRESS, *LPRILSUBADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSUBADDRESS, *LPRILSUBADDRESS
 ---
 
 # RILSUBADDRESS structure

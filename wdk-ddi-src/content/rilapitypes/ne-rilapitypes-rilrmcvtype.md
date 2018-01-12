@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILRMCVTYPE
+UID: NE:rilapitypes.RILRMCVTYPE
 title: RILRMCVTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrmcvtype_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7517d3fd-723d-4fd7-b5ce-3d08443b8f59
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILRMCVTYPE, RILRMCVTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRMCVTYPE
 req.product: Windows 10 or later.
 ---
 

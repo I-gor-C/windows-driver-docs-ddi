@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeInitializeSemaphore
+UID: NF:wdm.KeInitializeSemaphore
 title: KeInitializeSemaphore function
 author: windows-driver-content
 description: The KeInitializeSemaphore routine initializes a semaphore object with a specified count and specifies an upper limit that the count can attain.
@@ -7,7 +7,7 @@ old-location: kernel\keinitializesemaphore.htm
 old-project: kernel
 ms.assetid: 447a7ba5-8357-4383-987f-51f5b3c9996c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeInitializeSemaphore
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -155,7 +156,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqlkedispatchlte">IrqlKeDispatchLte</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547812">IrqlKeDispatchLte</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -163,21 +164,21 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.kereadstatesemaphore">KeReadStateSemaphore</a>
+<a href="..\wdm\nf-wdm-kereadstatesemaphore.md">KeReadStateSemaphore</a>
 </dt>
 <dt>
-<a href="kernel.kereleasesemaphore">KeReleaseSemaphore</a>
+<a href="..\wdm\nf-wdm-kereleasesemaphore.md">KeReleaseSemaphore</a>
 </dt>
 <dt>
-<a href="kernel.kewaitformultipleobjects">KeWaitForMultipleObjects</a>
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
 </dt>
 <dt>
-<a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeInitializeSemaphore routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeInitializeSemaphore routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

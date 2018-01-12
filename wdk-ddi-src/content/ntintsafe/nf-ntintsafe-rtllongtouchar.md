@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlLongToUChar
+UID: NF:ntintsafe.RtlLongToUChar
 title: RtlLongToUChar function
 author: windows-driver-content
 description: Converts a value of type LONG to a value of type UCHAR.
@@ -7,7 +7,7 @@ old-location: kernel\rtllongtouchar.htm
 old-project: kernel
 ms.assetid: 22440E1D-8DF5-4391-90F4-6080AAAC65D1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlLongToUChar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlLongToUChar function

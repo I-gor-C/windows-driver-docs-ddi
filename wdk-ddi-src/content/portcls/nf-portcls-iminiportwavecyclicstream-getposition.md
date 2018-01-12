@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveCyclicStream.GetPosition
+UID: NF:portcls.IMiniportWaveCyclicStream.GetPosition
 title: IMiniportWaveCyclicStream::GetPosition method
 author: windows-driver-content
 description: The GetPosition method gets the current position of the stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveCyclicStream::GetPosition method
@@ -65,7 +66,7 @@ Output pointer for the position value. This parameter points to a caller-allocat
 ## -remarks
 <code>GetPosition</code> reports the stream's current play or record position. The position is expressed as a byte offset from the beginning of the DMA buffer and represents the miniport driver's best estimate of the byte position of the data currently in the DAC or ADC.
 
-The position is zero immediately following initialization of the stream. A transition to the KSSTATE_STOP state (see <a href="stream.ksstate">KSSTATE</a>) resets the position to zero. When the stream is halted by a transition from KSSTATE_RUN to KSSTATE_PAUSE or KSSTATE_ACQUIRE, the position freezes. It unfreezes when the stream transitions from KSSTATE_PAUSE or KSSTATE_ACQUIRE back to KSSTATE_RUN.
+The position is zero immediately following initialization of the stream. A transition to the KSSTATE_STOP state (see <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>) resets the position to zero. When the stream is halted by a transition from KSSTATE_RUN to KSSTATE_PAUSE or KSSTATE_ACQUIRE, the position freezes. It unfreezes when the stream transitions from KSSTATE_PAUSE or KSSTATE_ACQUIRE back to KSSTATE_RUN.
 
 <code>GetPosition</code> specifies the position as an offset into the cyclic buffer. When the position reaches the end of the cyclic buffer, it wraps around to the beginning of the buffer. Hence, the position never exceeds the buffer size.
 
@@ -126,7 +127,7 @@ IRQL
 <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
 </dt>
 <dt>
-<a href="stream.ksstate">KSSTATE</a>
+<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWMIRegistration.RegisterWMIProvider
+UID: NF:portcls.IPortWMIRegistration.RegisterWMIProvider
 title: IPortWMIRegistration::RegisterWMIProvider method
 author: windows-driver-content
 description: The RegisterWMIProvider method registers the Event Tracing for Windows (ETW) capability of the miniport driver with PortCls.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWMIRegistration::RegisterWMIProvider method
@@ -56,12 +57,12 @@ NTSTATUS RegisterWMIProvider(
 
 ### -param pDeviceObject [in]
 
-Specifies a pointer to a <a href="kernel.device_object">DEVICE_OBJECT </a> structure that represents the functional device object of the adapter driver.
+Specifies a pointer to a <a href="https://msdn.microsoft.com/f3522315-cf15-41f7-ac87-c625c7dc8040">DEVICE_OBJECT </a> structure that represents the functional device object of the adapter driver.
 
 
 ### -param MiniportWmiContext [in]
 
-Specifies a pointer to a <a href="kernel.wmilib_context">WMILIB_CONTEXT</a> structure that provides registration information for a driver's data blocks and event blocks.
+Specifies a pointer to a <a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a> structure that provides registration information for a driver's data blocks and event blocks.
 
 
 ## -returns
@@ -124,14 +125,14 @@ PASSIVE_LEVEL.
 <a href="..\portcls\nn-portcls-iportwmiregistration.md">IPortWMIRegistration</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=154129">Improve Debugging And Performance Tuning With ETW</a></dt>
 <dt>
-<a href="kernel.wmilib_context">WMILIB_CONTEXT</a>
+<a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a>
 </dt>
 </dl>
  

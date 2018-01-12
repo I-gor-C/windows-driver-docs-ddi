@@ -1,5 +1,5 @@
 ---
-UID: NI.hidclass.IOCTL_HID_SET_S0_IDLE_TIMEOUT
+UID: NI:hidclass.IOCTL_HID_SET_S0_IDLE_TIMEOUT
 title: IOCTL_HID_SET_S0_IDLE_TIMEOUT
 author: windows-driver-content
 description: The IOCTL_HID_SET_S0_IDLE_TIMEOUT request is used by a client to inform the HID class driver about the client's preferred idle timeout value.
@@ -7,8 +7,8 @@ old-location: hid\ioctl_hid_set_s0_idle_timeout.htm
 old-project: hid
 ms.assetid: 9372E6D5-0E0B-4916-929D-73532FB6A5D6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
+ms.date: 12/21/2017
+ms.keywords: _HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_SET_S0_IDLE_TIMEOUT IOCTL

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PsMakeSiloContextPermanent
+UID: NF:ntddk.PsMakeSiloContextPermanent
 title: PsMakeSiloContextPermanent function
 author: windows-driver-content
 description: This routine makes the slot in a silo instance read-only, allowing the object in the slot to be retrieved without affecting the reference count on that object.
@@ -7,7 +7,7 @@ old-location: kernel\psmakesilocontextpermanent.htm
 old-project: kernel
 ms.assetid: 74BE4FF9-0342-4942-A58F-9C6D5F76E5F0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PsMakeSiloContextPermanent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PsMakeSiloContextPermanent function
@@ -61,7 +62,7 @@ The silo in which the slot resides. This parameter is required and it cannot be 
 
 ### -param ContextSlot [in]
 
-The slot to make read-only. The slot must be previously allocated by the <a href="kernel.psallocsilocontextslot">PsAllocSiloContextSlot</a> routine.
+The slot to make read-only. The slot must be previously allocated by the <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine.
 
 
 ## -returns
@@ -80,7 +81,7 @@ The following NT status codes are returned.
 
 
 ## -remarks
-Before calling this routine, the slot must contain a valid object. After it completes, the <a href="kernel.psreplacesilocontext">PsReplaceSiloContext</a> and <a href="kernel.psremovesilocontext">PsRemoveSiloContext</a> routines will fail with <b>STATUS_NOT_SUPPORTED</b>. 
+Before calling this routine, the slot must contain a valid object. After it completes, the <a href="..\ntddk\nf-ntddk-psreplacesilocontext.md">PsReplaceSiloContext</a> and <a href="..\ntddk\nf-ntddk-psremovesilocontext.md">PsRemoveSiloContext</a> routines will fail with <b>STATUS_NOT_SUPPORTED</b>. 
 
 
 ## -requirements

@@ -1,5 +1,5 @@
 ---
-UID: NI.hidport.IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST
+UID: NI:hidport.IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST
 title: IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST
 author: windows-driver-content
 description: The IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST control code is the IOCTL of the idle notification request IRP that HIDClass sends to HID mini drivers, such as HIDUSB, to inform the bus driver that the device is now idle.
@@ -7,7 +7,7 @@ old-location: hid\ioctl_hid_send_idle_notification_request.htm
 old-project: hid
 ms.assetid: AD653C7C-7C43-4258-98F8-3D9EDB51AE44
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidRegisterMinidriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSAGE_AND_PAGE, USAGE_AND_PAGE
 ---
 
 # IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST IOCTL

@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_TDSCDMA_MRL_INFO
+UID: NS:wwan._WWAN_TDSCDMA_MRL_INFO
 title: _WWAN_TDSCDMA_MRL_INFO
 author: windows-driver-content
 description: The WWAN_TDSCDMA_MRL_INFO structure represents information about a neighboring TDSCDMA cell.
 old-location: netvista\wwan_tdscdma_mrl_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4EA0AE24-E4B0-49E0-8C50-44F6890C5C52
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_TDSCDMA_MRL_INFO, WWAN_TDSCDMA_MRL_INFO, PWWAN_TDSCDMA_MRL_INFO, *PWWAN_TDSCDMA_MRL_INFO
+ms.date: 1/8/2018
+ms.keywords: _WWAN_TDSCDMA_MRL_INFO, WWAN_TDSCDMA_MRL_INFO, *PWWAN_TDSCDMA_MRL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WWAN_TDSCDMA_MRL_INFO, *PWWAN_TDSCDMA_MRL_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -144,21 +145,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_base_stations_info">WWAN_BASE_STATIONS_INFO</a>
+<a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
 </dt>
 <dt>
-<a href="netvista.wwan_tdscdma_mrl">WWAN_TDSCDMA_MRL</a>
+<a href="..\wwan\ns-wwan-_wwan_tdscdma_mrl.md">WWAN_TDSCDMA_MRL</a>
 </dt>
 <dt>
-<a href="netvista.wwan_tdscdma_serving_cell_info">WWAN_TDSCDMA_SERVING_CELL_INFO</a>
+<a href="..\wwan\ns-wwan-_wwan_tdscdma_serving_cell_info.md">WWAN_TDSCDMA_SERVING_CELL_INFO</a>
 </dt>
 <dt>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
+<a href="https://msdn.microsoft.com/200954a6-0f6c-4c00-86cb-510399f7b713">MB base stations information query support</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_TDSCDMA_MRL_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_TDSCDMA_MRL_INFO structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

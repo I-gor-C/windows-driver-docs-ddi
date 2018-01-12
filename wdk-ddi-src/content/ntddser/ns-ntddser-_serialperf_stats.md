@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSER._SERIALPERF_STATS
+UID: NS:ntddser._SERIALPERF_STATS
 title: _SERIALPERF_STATS
 author: windows-driver-content
 description: The SERIALPERF_STATS structure contains performance statistics for a serial port.
@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 47CAAF39-40C6-4D7F-B8DA-5A60768E4CB0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SERIALPERF_STATS, *PSERIALPERF_STATS, PSERIALPERF_STATS, SERIALPERF_STATS
+ms.keywords: _SERIALPERF_STATS, *PSERIALPERF_STATS, SERIALPERF_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSERIALPERF_STATS, SERIALPERF_STATS
 ---
 
 # _SERIALPERF_STATS structure

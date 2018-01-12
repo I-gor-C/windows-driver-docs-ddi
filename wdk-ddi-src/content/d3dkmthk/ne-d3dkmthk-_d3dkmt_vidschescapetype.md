@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmthk._D3DKMT_VIDSCHESCAPETYPE
+UID: NE:d3dkmthk._D3DKMT_VIDSCHESCAPETYPE
 title: _D3DKMT_VIDSCHESCAPETYPE
 author: windows-driver-content
 description: The D3DKMT_VIDMMESCAPETYPE enumeration is used with the D3DKMT_VIDSCH_ESCAPE structure.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_vidschescapetype.htm
 old-project: display
 ms.assetid: 8388A03F-995A-4A33-B541-4FF2422DEE83
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_VIDSCHESCAPETYPE, D3DKMT_VIDSCHESCAPETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_VIDSCHESCAPETYPE
 ---
 
 # _D3DKMT_VIDSCHESCAPETYPE enumeration
@@ -40,7 +41,7 @@ req.irql:
 ## -description
 <b>Do not use the D3DKMT_VIDSCHESCAPETYPE enumeration; it is for testing purposes only.</b>
 
-The D3DKMT_VIDMMESCAPETYPE enumeration is used with the <a href="display.d3dkmt_vidsch_escape">D3DKMT_VIDSCH_ESCAPE</a> structure.
+The D3DKMT_VIDMMESCAPETYPE enumeration is used with the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidsch_escape.md">D3DKMT_VIDSCH_ESCAPE</a> structure.
 
 
 

@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILWRITEADDITIONALNUMBERSTRINGPARAMS
+UID: NS:rilapitypes.RILWRITEADDITIONALNUMBERSTRINGPARAMS
 title: RILWRITEADDITIONALNUMBERSTRINGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilwriteadditionalnumberstringparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d68553ef-a343-4297-b3a3-718747da422d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILWRITEADDITIONALNUMBERSTRINGPARAMS, *LPRILWRITEADDITIONALNUMBERSTRINGPARAMS, RILWRITEADDITIONALNUMBERSTRINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILWRITEADDITIONALNUMBERSTRINGPARAMS, RILWRITEADDITIONALNUMBERSTRINGPARAMS
 req.product: Windows 10 or later.
 ---
 

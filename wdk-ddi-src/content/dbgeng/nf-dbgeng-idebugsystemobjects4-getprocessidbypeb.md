@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetProcessIdByPeb
+UID: NF:dbgeng.IDebugSystemObjects4.GetProcessIdByPeb
 title: IDebugSystemObjects4::GetProcessIdByPeb method
 author: windows-driver-content
 description: The GetProcessIdByPeb method returns the engine process ID for the specified process. The process is specified by its process environment block (PEB).
 old-location: debugger\getprocessidbypeb.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 2ee2b610-30c7-4932-b8f6-df5040a5bad8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetProcessIdByPeb, GetProcessIdByPeb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetProcessIdByPeb method

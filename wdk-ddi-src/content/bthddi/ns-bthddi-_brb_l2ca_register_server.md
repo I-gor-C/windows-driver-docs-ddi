@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHDDI._BRB_L2CA_REGISTER_SERVER
+UID: NS:bthddi._BRB_L2CA_REGISTER_SERVER
 title: _BRB_L2CA_REGISTER_SERVER
 author: windows-driver-content
 description: A profile driver uses the _BRB_L2CA_REGISTER_SERVER structure to register itself as a server capable of receiving L2CAP connections from remote Bluetooth devices.
@@ -7,7 +7,7 @@ old-location: bltooth\_brb_l2ca_register_server.htm
 old-project: bltooth
 ms.assetid: b7eca29a-7e3c-4cfc-b285-42faca263c5e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: _BRB_L2CA_REGISTER_SERVER,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: 
 ---
 
 # _BRB_L2CA_REGISTER_SERVER structure
@@ -64,7 +65,7 @@ struct _BRB_L2CA_REGISTER_SERVER {
 ### -field Hdr
 
 A 
-     <a href="bltooth.brb_header">BRB_HEADER</a> structure that contains information
+     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 
@@ -142,8 +143,8 @@ The context to be passed to the callback function that is specified in the
 ### -field ReferenceObject
 
 A pointer to an object to pass to the 
-     <a href="kernel.obreferenceobject">ObReferenceObject</a> and 
-     <a href="kernel.obdereferenceobject">ObDereferenceObject</a> functions to
+     <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a> and 
+     <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> functions to
      maintain a reference count. Profile drivers should provide this object in such a way that the Bluetooth
      driver stack can increase the count of the object for as long as the driver stack can call the callback
      function specified in the 
@@ -242,16 +243,16 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="bltooth.brb_header">BRB_HEADER</a>
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 </dt>
 <dt>
 <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
 </dt>
 <dt>
-<a href="kernel.obreferenceobject">ObReferenceObject</a>
+<a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
 </dt>
 <dt>
-<a href="kernel.obdereferenceobject">ObDereferenceObject</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536619">BRB_L2CA_UNREGISTER_SERVER</a>
@@ -264,5 +265,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_REGISTER_SERVER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20_BRB_L2CA_REGISTER_SERVER structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

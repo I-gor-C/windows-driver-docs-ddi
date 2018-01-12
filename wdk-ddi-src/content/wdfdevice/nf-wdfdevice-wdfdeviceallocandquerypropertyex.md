@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdevice.WdfDeviceAllocAndQueryPropertyEx
+UID: NF:wdfdevice.WdfDeviceAllocAndQueryPropertyEx
 title: WdfDeviceAllocAndQueryPropertyEx function
 author: windows-driver-content
 description: The WdfDeviceAllocAndQueryPropertyEx method allocates a buffer and retrieves a specified device property.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceallocandquerypropertyex.htm
 old-project: wdf
 ms.assetid: 1C1AE0F6-2CAB-4983-B1A7-E6C8BA822754
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDeviceAllocAndQueryPropertyEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: APC_LEVEL
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -68,17 +69,17 @@ A handle to a framework device object.
 
 ### -param DeviceProperty [in]
 
-A pointer to a <a href="wdf.wdf_device_property_data">WDF_DEVICE_PROPERTY_DATA</a> structure that identifies the device property to be retrieved.
+A pointer to a <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_property_data.md">WDF_DEVICE_PROPERTY_DATA</a> structure that identifies the device property to be retrieved.
 
 
 ### -param PoolType [in]
 
-A <a href="kernel.pool_type">POOL_TYPE</a>-typed enumerator that specifies the type of memory to be allocated.
+A <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>-typed enumerator that specifies the type of memory to be allocated.
 
 
 ### -param PropertyMemoryAttributes [in, optional]
 
-A pointer to a caller-allocated <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that describes object attributes for the memory object that the function will allocate. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that describes object attributes for the memory object that the function will allocate. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 
 ### -param PropertyMemory [out]
@@ -108,11 +109,11 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 ## -remarks
-You can use <b>WdfDeviceAllocAndQueryPropertyEx</b> to retrieve any property that is exposed through the unified property model, whereas the <a href="wdf.wdfdeviceallocandqueryproperty">WdfDeviceAllocAndQueryProperty</a> method only allows querying a subset of the unified property model.
+You can use <b>WdfDeviceAllocAndQueryPropertyEx</b> to retrieve any property that is exposed through the unified property model, whereas the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryproperty.md">WdfDeviceAllocAndQueryProperty</a> method only allows querying a subset of the unified property model.
 
-The <b>WdfDeviceAllocAndQueryPropertyEx</b> method determines the amount of memory that is necessary to hold the requested device interface property. It allocates enough memory to hold the data, and returns a handle to a framework memory object that describes the allocated memory. To access the data, your driver can call <a href="wdf.wdfmemorygetbuffer">WdfMemoryGetBuffer</a>.
+The <b>WdfDeviceAllocAndQueryPropertyEx</b> method determines the amount of memory that is necessary to hold the requested device interface property. It allocates enough memory to hold the data, and returns a handle to a framework memory object that describes the allocated memory. To access the data, your driver can call <a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>.
 
-For information about related methods, see <a href="wdf.accessing_the_unified_device_property_model">Accessing the Unified Device Property Model</a>.
+For information about related methods, see <a href="https://msdn.microsoft.com/C81988F9-E0DA-439F-B770-DAD86E33D5F3">Accessing the Unified Device Property Model</a>.
 
 
 ## -requirements
@@ -186,15 +187,15 @@ APC_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfdeviceallocandqueryinterfaceproperty">WdfDeviceAllocAndQueryInterfaceProperty</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryinterfaceproperty.md">WdfDeviceAllocAndQueryInterfaceProperty</a>
 </dt>
 <dt>
-<a href="wdf.wdfdeviceallocandqueryproperty">WdfDeviceAllocAndQueryProperty</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryproperty.md">WdfDeviceAllocAndQueryProperty</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceAllocAndQueryPropertyEx method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceAllocAndQueryPropertyEx method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

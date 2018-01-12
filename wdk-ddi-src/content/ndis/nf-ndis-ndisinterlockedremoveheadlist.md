@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisInterlockedRemoveHeadList
+UID: NF:ndis.NdisInterlockedRemoveHeadList
 title: NdisInterlockedRemoveHeadList macro
 author: windows-driver-content
 description: The NdisInterlockedRemoveHeadList function removes an entry, usually a packet, from the head of a doubly linked list so that access to the list is synchronized in a multiprocessor-safe way.
 old-location: netvista\ndisinterlockedremoveheadlist.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 85cbc158-7132-4666-8161-a78251a62e4d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisInterlockedRemoveHeadList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: Any level
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisInterlockedRemoveHeadList macro
@@ -70,10 +71,10 @@ A pointer to a caller-supplied spin lock, used to synchronize access to the list
 Before calling any 
     <b>NdisInterlocked..List</b> function, a driver must initialize the variable at 
     <i>ListHead</i> with the 
-    <a href="netvista.ndisinitializelisthead">NdisInitializeListHead</a> function and
+    <a href="..\ndis\nf-ndis-ndisinitializelisthead.md">NdisInitializeListHead</a> function and
     the variable at 
     <i>SpinLock</i> with the 
-    <a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a> function. The
+    <a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a> function. The
     driver also must provide resident storage for these variables and for its internal queue.
 
 Before calling 
@@ -165,17 +166,17 @@ Any level
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatespinlock">NdisAllocateSpinLock</a>
+<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
 </dt>
 <dt>
-<a href="netvista.ndisinitializelisthead">NdisInitializeListHead</a>
+<a href="..\ndis\nf-ndis-ndisinitializelisthead.md">NdisInitializeListHead</a>
 </dt>
 <dt>
-<a href="netvista.ndisinterlockedinsertheadlist">
+<a href="..\ndis\nf-ndis-ndisinterlockedinsertheadlist.md">
    NdisInterlockedInsertHeadList</a>
 </dt>
 <dt>
-<a href="netvista.ndisinterlockedinserttaillist">
+<a href="..\ndis\nf-ndis-ndisinterlockedinserttaillist.md">
    NdisInterlockedInsertTailList</a>
 </dt>
 </dl>
@@ -183,5 +184,5 @@ Any level
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisInterlockedRemoveHeadList macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInterlockedRemoveHeadList macro%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

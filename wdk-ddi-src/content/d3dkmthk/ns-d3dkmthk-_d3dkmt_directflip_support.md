@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_DIRECTFLIP_SUPPORT
+UID: NS:d3dkmthk._D3DKMT_DIRECTFLIP_SUPPORT
 title: _D3DKMT_DIRECTFLIP_SUPPORT
 author: windows-driver-content
 description: Indicates whether the user-mode driver supports Direct Flip operations, in which video memory is seamlessly flipped between an application's managed primary allocations and the Desktop Window Manager (DWM) managed primary allocations.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_directflip_support.htm
 old-project: display
 ms.assetid: d579d9a3-7db1-47ed-859d-3fed99a4ee9d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_DIRECTFLIP_SUPPORT, D3DKMT_DIRECTFLIP_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_DIRECTFLIP_SUPPORT
 ---
 
 # _D3DKMT_DIRECTFLIP_SUPPORT structure

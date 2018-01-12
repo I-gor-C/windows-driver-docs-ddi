@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_GET_HANDFLOW
+UID: NI:ntddser.IOCTL_SERIAL_GET_HANDFLOW
 title: IOCTL_SERIAL_GET_HANDFLOW
 author: windows-driver-content
 description: The IOCTL_SERIAL_GET_HANDFLOW request returns information about the configuration of the handshake flow control set for a serial device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_HANDFLOW IOCTL
@@ -42,7 +43,7 @@ The <b>IOCTL_SERIAL_GET_HANDFLOW</b> request returns information about the confi
 
 To set the configuration of the handshake flow control, a client can use an <a href="..\ntddser\ni-ntddser-ioctl_serial_set_handflow.md">IOCTL_SERIAL_SET_HANDFLOW</a> request.
 
-For more information about the settings for handshake flow control, see <a href="serports.serial_handflow">SERIAL_HANDFLOW</a>.
+For more information about the settings for handshake flow control, see <a href="..\ntddser\ns-ntddser-_serial_handflow.md">SERIAL_HANDFLOW</a>.
 
 
 
@@ -103,7 +104,7 @@ Header
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_handflow.md">IOCTL_SERIAL_SET_HANDFLOW</a>
 </dt>
 <dt>
-<a href="serports.serial_handflow">SERIAL_HANDFLOW</a>
+<a href="..\ntddser\ns-ntddser-_serial_handflow.md">SERIAL_HANDFLOW</a>
 </dt>
 </dl>
  

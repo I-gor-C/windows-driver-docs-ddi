@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPrintPipelineManagerControl.RequestShutdown
+UID: NF:filterpipeline.IPrintPipelineManagerControl.RequestShutdown
 title: IPrintPipelineManagerControl::RequestShutdown method
 author: windows-driver-content
 description: The RequestShutdown method requests that a pipeline be shut down.
@@ -7,7 +7,7 @@ old-location: print\iprintpipelinemanagercontrol_requestshutdown.htm
 old-project: print
 ms.assetid: dfb0d7d1-4e82-4471-814b-4b8c4929c709
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintPipelineManagerControl, IPrintPipelineManagerControl::RequestShutdown, RequestShutdown
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintPipelineManagerControl::RequestShutdown method
@@ -69,7 +70,7 @@ Not used. Set to <b>NULL</b>.
 
 
 ## -remarks
-A filter that uses the <a href="print.ixpsdocumentconsumer">IXpsDocumentConsumer</a> interface must call <code>IPrintPipelineManagerControl::RequestShutdown</code> before it calls <a href="print.ixpsdocumentconsumer_closesender">IXpsDocumentConsumer::CloseSender</a> to shut down the pipeline. Calling <b>IXpsDocumentConsumer::CloseSender</b> first can produce an invalid XPS document and cause an error. 
+A filter that uses the <a href="..\filterpipeline\nn-filterpipeline-ixpsdocumentconsumer.md">IXpsDocumentConsumer</a> interface must call <code>IPrintPipelineManagerControl::RequestShutdown</code> before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff556293">IXpsDocumentConsumer::CloseSender</a> to shut down the pipeline. Calling <b>IXpsDocumentConsumer::CloseSender</b> first can produce an invalid XPS document and cause an error. 
 
 
 ## -requirements

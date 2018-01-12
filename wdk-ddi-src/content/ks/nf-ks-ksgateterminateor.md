@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsGateTerminateOr
+UID: NF:ks.KsGateTerminateOr
 title: KsGateTerminateOr function
 author: windows-driver-content
 description: The KsGateTerminateOr function deletes an existing OR gate and removes an input from any attached AND gate.
@@ -7,7 +7,7 @@ old-location: stream\ksgateterminateor.htm
 old-project: stream
 ms.assetid: 6d73ce17-1fbc-4d12-87f0-ac10889b85be
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGateTerminateOr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: 
 ---
 
 # KsGateTerminateOr function
@@ -55,7 +56,7 @@ void __inline KsGateTerminateOr(
 
 ### -param OrGate [in]
 
-A pointer to a <a href="stream.ksgate">KSGATE</a> structure that is the OR gate to delete. This gate must be at the beginning of a gate chain.
+A pointer to a <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure that is the OR gate to delete. This gate must be at the beginning of a gate chain.
 
 
 ## -returns
@@ -115,18 +116,18 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksgateinitializeand">KsGateInitializeAnd</a>
+<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
 </dt>
 <dt>
-<a href="stream.ksgateinitializeor">KsGateInitializeOr</a>
+<a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
 </dt>
 <dt>
-<a href="stream.ksgateterminateand">KsGateTerminateAnd</a>
+<a href="..\ks\nf-ks-ksgateterminateand.md">KsGateTerminateAnd</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGateTerminateOr function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGateTerminateOr function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.WritePhysical
+UID: NF:wdbgexts.WritePhysical
 title: WritePhysical function
 author: windows-driver-content
 description: The WritePhysical function writes to physical memory.
 old-location: debugger\writephysical.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: faafaf0a-29ef-43ef-9f9a-f3b545e83f65
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: WritePhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 

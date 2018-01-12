@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILSYSTEMSELECTIONPREFS_V1
+UID: NS:rilapitypes.RILSYSTEMSELECTIONPREFS_V1
 title: RILSYSTEMSELECTIONPREFS_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsystemselectionprefs_v1_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 19af0039-a2dd-49a4-ad93-1858288d00cd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1, RILSYSTEMSELECTIONPREFS_V1
+ms.date: 1/8/2018
+ms.keywords: RILSYSTEMSELECTIONPREFS_V1, RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1
 req.product: Windows 10 or later.
 ---
 

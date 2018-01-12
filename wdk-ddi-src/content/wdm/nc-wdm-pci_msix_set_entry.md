@@ -1,5 +1,5 @@
 ---
-UID: NC.wdm.PCI_MSIX_SET_ENTRY
+UID: NC:wdm.PCI_MSIX_SET_ENTRY
 title: PCI_MSIX_SET_ENTRY
 author: windows-driver-content
 description: The SetTableEntry routine sets the message ID for a table entry in the MSI-X hardware interrupt table.
@@ -7,8 +7,8 @@ old-location: kernel\settableentry.htm
 old-project: kernel
 ms.assetid: A8F2A43B-CAEF-4EE6-AB3F-1DF5A9D3F7A5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 1/4/2018
+ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DIRQL
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ NTSTATUS SetTableEntry(
 
 ### -param Context [in]
 
-A pointer to interface-specific context information.  The caller passes the value that is passed as the <b>Context</b> member of the <a href="kernel.pci_msix_table_config_interface">PCI_MSIX_TABLE_CONFIG_INTERFACE</a> structure for the interface.
+A pointer to interface-specific context information.  The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm-_pci_msix_table_config_interface.md">PCI_MSIX_TABLE_CONFIG_INTERFACE</a> structure for the interface.
 
 
 ### -param TableEntry [in]
@@ -71,7 +72,7 @@ The index of the table entry in the MSI-X hardware interrupt table.
 
 ### -param MessageNumber [in]
 
-The message ID for the interrupt.  This value is also the index for the interrupt's entry in the <b>MessageInfo</b> member of the <a href="kernel.io_interrupt_message_info">IO_INTERRUPT_MESSAGE_INFO</a> structure that describes the driver's message-signaled interrupts.  The <a href="kernel.ioconnectinterruptex">IoConnectInterruptEx</a> function supplies a pointer to this structure.  
+The message ID for the interrupt.  This value is also the index for the interrupt's entry in the <b>MessageInfo</b> member of the <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a> structure that describes the driver's message-signaled interrupts.  The <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> function supplies a pointer to this structure.  
 
 
 ## -returns
@@ -139,18 +140,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.io_interrupt_message_info">IO_INTERRUPT_MESSAGE_INFO</a>
+<a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a>
 </dt>
 <dt>
-<a href="kernel.ioconnectinterruptex">IoConnectInterruptEx</a>
+<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
 </dt>
 <dt>
-<a href="kernel.pci_msix_table_config_interface">PCI_MSIX_TABLE_CONFIG_INTERFACE</a>
+<a href="..\wdm\ns-wdm-_pci_msix_table_config_interface.md">PCI_MSIX_TABLE_CONFIG_INTERFACE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PCI_MSIX_SET_ENTRY routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PCI_MSIX_SET_ENTRY routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

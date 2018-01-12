@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILSYSTEMSELECTIONPREFSROAMINGMODE
+UID: NE:rilapitypes.RILSYSTEMSELECTIONPREFSROAMINGMODE
 title: RILSYSTEMSELECTIONPREFSROAMINGMODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsystemselectionprefsroamingmode_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7dbb25a5-7bcc-453d-854e-7796acbfd079
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILSYSTEMSELECTIONPREFSROAMINGMODE, RILSYSTEMSELECTIONPREFSROAMINGMODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSYSTEMSELECTIONPREFSROAMINGMODE
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDARG_IN_REPORTFRAMESTATISTICS
+UID: NS:iddcx.IDARG_IN_REPORTFRAMESTATISTICS
 title: IDARG_IN_REPORTFRAMESTATISTICS
 author: windows-driver-content
 description: Gives information about frame statistics.
@@ -7,7 +7,7 @@ old-location: display\idarg_in_reportframestatistics.htm
 old-project: display
 ms.assetid: 3d3e0dca-bb05-4e5c-aa4a-76bb178f60bf
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDARG_IN_REPORTFRAMESTATISTICS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDARG_IN_REPORTFRAMESTATISTICS structure

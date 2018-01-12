@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:hbaapi
 ---
 
 # Hbaapi.h header
@@ -49,6 +49,8 @@ Hbaapi.h contain these programming interfaces:
 | [HBA_RegisterForAdapterPortStatEvents function](nf-hbaapi-hba_registerforadapterportstatevents.md) | The HBA_RegisterForAdapterPortStatEvents routine registers the indicated user callback routine to call when a port statistics event occurs. |
 | [HBA_RegisterForLinkEvents function](nf-hbaapi-hba_registerforlinkevents.md) | The HBA_RegisterForLinkEvents routine registers with a specified adapter for asynchronous fabric link-level events. |
 | [HBA_RegisterForTargetEvents function](nf-hbaapi-hba_registerfortargetevents.md) | The HBA_RegisterForTargetEvents routine registers for target events with a specified target or with all targets associated with an adapter. |
+| [HBA_RegisterLibrary function](nf-hbaapi-hba_registerlibrary.md) | . |
+| [HBA_RegisterLibraryV2 function](nf-hbaapi-hba_registerlibraryv2.md) | . |
 | [HBA_RemoveAllPersistentBindings function](nf-hbaapi-hba_removeallpersistentbindings.md) | The HBA_RemoveAllPersistentBindings routine removes all persistent bindings for a specified HBA port. |
 | [HBA_RemoveCallback function](nf-hbaapi-hba_removecallback.md) | The HBA_RemoveCallback routine de-registers a callback routine. |
 | [HBA_RemovePersistentBinding function](nf-hbaapi-hba_removepersistentbinding.md) | The HBA_RemovePersistentBinding routine retrieves information about the specified target. |

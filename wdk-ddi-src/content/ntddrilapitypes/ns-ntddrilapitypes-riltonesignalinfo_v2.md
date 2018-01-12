@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILTONESIGNALINFO_V2
+UID: NS:ntddrilapitypes.RILTONESIGNALINFO_V2
 title: RILTONESIGNALINFO_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riltonesignalinfo_v2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e0c40d65-d290-4fae-9fa7-57a9bf047f13
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILTONESIGNALINFO_V2, RILTONESIGNALINFO_V2, LPRILTONESIGNALINFO_V2, RILTONESIGNALINFO, *LPRILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO, LPRILTONESIGNALINFO
+ms.date: 1/8/2018
+ms.keywords: RILTONESIGNALINFO_V2, RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO, RILTONESIGNALINFO, *LPRILTONESIGNALINFO_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILTONESIGNALINFO_V2, *LPRILTONESIGNALINFO, RILTONESIGNALINFO, *LPRILTONESIGNALINFO_V2
 ---
 
 # RILTONESIGNALINFO_V2 structure

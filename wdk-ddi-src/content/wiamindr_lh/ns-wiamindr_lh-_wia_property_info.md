@@ -1,14 +1,14 @@
 ---
-UID: NS.WIAMINDR_LH._WIA_PROPERTY_INFO
+UID: NS:wiamindr_lh._WIA_PROPERTY_INFO
 title: _WIA_PROPERTY_INFO
 author: windows-driver-content
 description: The WIA_PROPERTY_INFO structure is used to store default access and valid value information for an item property of arbitrary type.
 old-location: image\wia_property_info.htm
-old-project: Image
+old-project: image
 ms.assetid: 9ab9edb8-aa37-4c28-81c9-3e41751f14ed
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WIA_PROPERTY_INFO, WIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO
+ms.date: 1/10/2018
+ms.keywords: _WIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -244,7 +245,7 @@ For a different property whose valid values are defined by a list of three GUID 
 
 A property whose valid values are defined by a bitset of the values 0x01, 0x02, 0x04, and 0x08 would have the WIA_PROP_FLAG bit set in <b>lAccessFlags</b>, and <b>vt</b> would be set to VT_UI4. For such a property, the value stored in <b>Flag.ValidBits</b> would be 0x0F, the bitwise OR of the four flag values previously mentioned.
 
-The following examples show how to use array data with WIA_PROPERTY_INFO and how to call <a href="image.wiaswritemultiple">wiasWriteMultiple</a> to set your property values.
+The following examples show how to use array data with WIA_PROPERTY_INFO and how to call <a href="..\wiamdef\nf-wiamdef-wiaswritemultiple.md">wiasWriteMultiple</a> to set your property values.
 
 Initialization might look like the following example:
 
@@ -281,12 +282,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.wiassetitempropattribs">wiasSetItemPropAttribs</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20WIA_PROPERTY_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIA_PROPERTY_INFO structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlLongPtrToInt
+UID: NF:ntintsafe.RtlLongPtrToInt
 title: RtlLongPtrToInt function
 author: windows-driver-content
 description: Converts a value of type LONG_PTR to a value of type INT.
@@ -7,7 +7,7 @@ old-location: kernel\rtllongptrtoint.htm
 old-project: kernel
 ms.assetid: 265CABEE-E2FD-4ACA-9C82-54291E63479B
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlLongPtrToInt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlLongPtrToInt function

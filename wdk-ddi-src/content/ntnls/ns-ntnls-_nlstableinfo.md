@@ -1,5 +1,5 @@
 ---
-UID: NS.NTNLS._NLSTABLEINFO
+UID: NS:ntnls._NLSTABLEINFO
 title: _NLSTABLEINFO
 author: windows-driver-content
 description: Stores the NLS file formats .
@@ -7,8 +7,8 @@ old-location: kernel\nlstableinfo.htm
 old-project: kernel
 ms.assetid: B9E64163-B338-49C9-8167-C36B110AB710
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _NLSTABLEINFO, NLSTABLEINFO, PNLSTABLEINFO, *PNLSTABLEINFO
+ms.date: 1/4/2018
+ms.keywords: _NLSTABLEINFO, NLSTABLEINFO, *PNLSTABLEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: NLSTABLEINFO, *PNLSTABLEINFO
 ---
 
 # _NLSTABLEINFO structure

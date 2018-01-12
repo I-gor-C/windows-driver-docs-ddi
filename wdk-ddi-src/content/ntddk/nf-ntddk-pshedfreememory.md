@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PshedFreeMemory
+UID: NF:ntddk.PshedFreeMemory
 title: PshedFreeMemory function
 author: windows-driver-content
 description: The PshedFreeMemory function frees a block of memory that was previously allocated by calling the PshedAllocateMemory function.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Pshed.lib
 req.dll: Pshed.dll
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PshedFreeMemory function
@@ -38,7 +39,7 @@ req.irql: <=DISPATCH_LEVEL
 
 
 ## -description
-The <b>PshedFreeMemory</b> function frees a block of memory that was previously allocated by calling the <a href="whea.pshedallocatememory">PshedAllocateMemory</a> function.
+The <b>PshedFreeMemory</b> function frees a block of memory that was previously allocated by calling the <a href="..\ntddk\nf-ntddk-pshedallocatememory.md">PshedAllocateMemory</a> function.
 
 
 
@@ -63,7 +64,7 @@ None
 
 
 ## -remarks
-A PSHED plug-in calls the <b>PshedFreeMemory</b> function to free a block of memory that it previously allocated by calling the <a href="whea.pshedallocatememory">PshedAllocateMemory</a> function.
+A PSHED plug-in calls the <b>PshedFreeMemory</b> function to free a block of memory that it previously allocated by calling the <a href="..\ntddk\nf-ntddk-pshedallocatememory.md">PshedAllocateMemory</a> function.
 
 
 ## -requirements
@@ -138,7 +139,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="whea.pshedallocatememory">PshedAllocateMemory</a>
+<a href="..\ntddk\nf-ntddk-pshedallocatememory.md">PshedAllocateMemory</a>
 </dt>
 </dl>
  

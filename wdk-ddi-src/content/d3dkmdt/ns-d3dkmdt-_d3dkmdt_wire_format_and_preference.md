@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDT._D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
+UID: NS:d3dkmdt._D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
 title: _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
 author: windows-driver-content
 description: Holds information about the preferred pixel encoding format.
@@ -7,8 +7,8 @@ old-location: display\d3dkmdt_wire_format_and_preference.htm
 old-project: display
 ms.assetid: 24CC6A10-6462-4681-B340-E887B679F456
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE
+ms.date: 12/29/2017
+ms.keywords: _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
 ---
 
 # _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE structure

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioEngineNode.GetGfxState
+UID: NF:portcls.IMiniportAudioEngineNode.GetGfxState
 title: IMiniportAudioEngineNode::GetGfxState method
 author: windows-driver-content
 description: Gets the state of the global effects (GFX) node in the audio engine.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioEngineNode::GetGfxState method

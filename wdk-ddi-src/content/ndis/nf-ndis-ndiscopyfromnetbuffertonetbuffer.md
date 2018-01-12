@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCopyFromNetBufferToNetBuffer
+UID: NF:ndis.NdisCopyFromNetBufferToNetBuffer
 title: NdisCopyFromNetBufferToNetBuffer function
 author: windows-driver-content
 description: Call the NdisCopyFromNetBufferToNetBuffer function to copy data from a source NET_BUFFER structure to a destination NET_BUFFER structure.
 old-location: netvista\ndiscopyfromnetbuffertonetbuffer.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b760e176-3ef7-4495-89c7-ec6b8bb3ed30
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisCopyFromNetBufferToNetBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCopyFromNetBufferToNetBuffer function
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 Call the 
   <b>NdisCopyFromNetBufferToNetBuffer</b> function to copy data from a source 
-  <a href="netvista.net_buffer">NET_BUFFER</a> structure to a destination NET_BUFFER
+  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure to a destination NET_BUFFER
   structure.
 
 
@@ -112,7 +113,7 @@ A pointer to the caller-supplied variable in which this function returns the num
 ## -remarks
 The caller of 
     <b>NdisCopyFromNetBufferToNetBuffer</b> allocates the destination 
-    <a href="netvista.net_buffer">NET_BUFFER</a> structure and possibly the source
+    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure and possibly the source
     NET_BUFFER structure as well. The MDLs of the destination NET_BUFFER structure should have enough space
     to receive the data.
 
@@ -124,7 +125,7 @@ If the source NET_BUFFER structure runs out of data or the destination NET_BUFFE
 The caller must ensure that 
     <b>CurrentMdlOffset</b> and 
     <b>CurrentMdl</b> values are correct in the source and destination 
-    <a href="netvista.net_buffer">NET_BUFFER</a> structures. NDIS does not change the
+    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures. NDIS does not change the
     members in the destination NET_BUFFER. The caller must update the 
     <b>DataLength</b>, 
     <b>DataOffset</b>, and 
@@ -207,7 +208,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -215,12 +216,12 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCopyFromNetBufferToNetBuffer function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCopyFromNetBufferToNetBuffer function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.SMCLIB._PTS_DATA
+UID: NS:smclib._PTS_DATA
 title: _PTS_DATA
 author: windows-driver-content
 description: The PTS_DATA structure is used for protocol type selection (PTS).
@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: aa542c6f-24f9-4ef4-a425-93905cca976a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PTS_DATA, PPTS_DATA, PTS_DATA, *PPTS_DATA
+ms.keywords: _PTS_DATA, PTS_DATA, *PPTS_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PTS_DATA, *PPTS_DATA
 req.product: Windows 10 or later.
 ---
 

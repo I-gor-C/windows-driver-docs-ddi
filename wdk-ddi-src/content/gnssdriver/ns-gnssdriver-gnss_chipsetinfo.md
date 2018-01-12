@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_CHIPSETINFO
+UID: NS:gnssdriver.GNSS_CHIPSETINFO
 title: GNSS_CHIPSETINFO
 author: windows-driver-content
 description: This structure defines the specific data elements associated with the GNSS hardware.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: DE45805C-09E6-44B8-A4DA-BF73EC444AA9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_CHIPSETINFO, PGNSS_CHIPSETINFO, GNSS_CHIPSETINFO, *PGNSS_CHIPSETINFO
+ms.keywords: GNSS_CHIPSETINFO, GNSS_CHIPSETINFO, *PGNSS_CHIPSETINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_CHIPSETINFO, *PGNSS_CHIPSETINFO
 ---
 
 # GNSS_CHIPSETINFO structure

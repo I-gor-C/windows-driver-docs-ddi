@@ -1,5 +1,5 @@
 ---
-UID: NF.ksproxy.IKsControl.KsEvent
+UID: NF:ksproxy.IKsControl.KsEvent
 title: IKsControl::KsEvent method
 author: windows-driver-content
 description: The KsEvent method enables or disables an event, along with any other defined support operations available on an event set.
@@ -7,7 +7,7 @@ old-location: stream\ikscontrol_ksevent.htm
 old-project: stream
 ms.assetid: b1ff6569-9568-40d8-b2a9-e63ce44720a2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IKsControl, IKsControl::KsEvent, KsEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PIPE_STATE
 ---
 
 # IKsControl::KsEvent method
@@ -59,7 +60,7 @@ HRESULT KsEvent(
 
 ### -param Event [in, optional]
 
-Pointer to a <a href="stream.ksevent">KSEVENT</a> structure that describes an event to enable the event and <b>NULL</b> to disable the event.
+Pointer to a <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a> structure that describes an event to enable the event and <b>NULL</b> to disable the event.
 
 
 ### -param EventLength [in]
@@ -89,7 +90,7 @@ Returns NOERROR if successful; otherwise, returns an error code. If the call suc
 ## -remarks
 To disable an event, set <i>Event</i> to <b>NULL</b>, <i>EventLength</i> to zero, and <i>EventData</i> to the pointer to the <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that was previously used to enable the event.
 
-The <i>EventData</i> parameter of <b>IKsControl::KsEvent</b> contains a handle in <b>EventHandle.Event</b>. You can wait for the handle to become available and get notifications when the minidriver calls <b>Ks</b><i>Xxx</i><b>GenerateEvents</b> or <a href="stream.streamclassstreamnotification">StreamClassStreamNotification</a>.
+The <i>EventData</i> parameter of <b>IKsControl::KsEvent</b> contains a handle in <b>EventHandle.Event</b>. You can wait for the handle to become available and get notifications when the minidriver calls <b>Ks</b><i>Xxx</i><b>GenerateEvents</b> or <a href="..\strmini\nf-strmini-streamclassstreamnotification.md">StreamClassStreamNotification</a>.
 
 
 ## -requirements
@@ -122,21 +123,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksevent">KSEVENT</a>
+<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
 </dt>
 <dt>
-<a href="stream.ksfiltergenerateevents">KsFilterGenerateEvents</a>
+<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
 </dt>
 <dt>
-<a href="stream.kspingenerateevents">KsPinGenerateEvents</a>
+<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsControl::KsEvent method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsControl::KsEvent method%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDVDEO._VIDEO_POINTER_CAPABILITIES
+UID: NS:ntddvdeo._VIDEO_POINTER_CAPABILITIES
 title: _VIDEO_POINTER_CAPABILITIES
 author: windows-driver-content
 description: Contains capabilities of the screen pointer.
@@ -7,8 +7,8 @@ old-location: display\video_pointer_capabilities.htm
 old-project: display
 ms.assetid: bc5f98da-1e2e-421b-9c76-97359e51b526
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VIDEO_POINTER_CAPABILITIES, *PVIDEO_POINTER_CAPABILITIES, PVIDEO_POINTER_CAPABILITIES, VIDEO_POINTER_CAPABILITIES
+ms.date: 12/29/2017
+ms.keywords: _VIDEO_POINTER_CAPABILITIES, *PVIDEO_POINTER_CAPABILITIES, VIDEO_POINTER_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_POINTER_CAPABILITIES, VIDEO_POINTER_CAPABILITIES
 ---
 
 # _VIDEO_POINTER_CAPABILITIES structure

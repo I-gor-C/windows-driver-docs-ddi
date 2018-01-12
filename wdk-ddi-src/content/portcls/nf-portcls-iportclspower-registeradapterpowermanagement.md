@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsPower.RegisterAdapterPowerManagement
+UID: NF:portcls.IPortClsPower.RegisterAdapterPowerManagement
 title: IPortClsPower::RegisterAdapterPowerManagement method
 author: windows-driver-content
 description: The RegisterAdapterPowerManagement method registers the power management interface of the adapter with PortCls.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsPower::RegisterAdapterPowerManagement method
@@ -61,7 +62,7 @@ Specifies a pointer to <b>IUnknown</b>. . PortCls queries this <b>IUnknown</b> o
 
 ### -param DeviceObject [in]
 
-Specifies a pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
+Specifies a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 
 ## -returns
@@ -124,7 +125,7 @@ PASSIVE_LEVEL.
 <a href="..\portcls\nn-portcls-iportclspower.md">IPortClsPower</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>

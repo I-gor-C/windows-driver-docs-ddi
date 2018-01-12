@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILMESSAGE
+UID: NS:rilapitypes.RILMESSAGE
 title: RILMESSAGE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessage_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 731ae115-2394-4651-9b79-6d640d07a328
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMESSAGE, *LPRILMESSAGE, RILMESSAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILMESSAGE, RILMESSAGE
 req.product: Windows 10 or later.
 ---
 

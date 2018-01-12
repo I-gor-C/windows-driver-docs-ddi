@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILHIDECONNECTEDIDSETTINGS
+UID: NS:rilapitypes.RILHIDECONNECTEDIDSETTINGS
 title: RILHIDECONNECTEDIDSETTINGS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilhideconnectedidsettings_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ee5111c6-3353-40a9-9b2b-c3d2a595a528
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILHIDECONNECTEDIDSETTINGS, *LPRILHIDECONNECTEDIDSETTINGS, RILHIDECONNECTEDIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILHIDECONNECTEDIDSETTINGS, RILHIDECONNECTEDIDSETTINGS
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.icm.BMFORMAT
+UID: NE:icm.BMFORMAT
 title: BMFORMAT
 author: windows-driver-content
 description: The values of the BMFORMAT enumeration are used by WCS functions to indicate the format that particular bitmaps are in. This data type is extended from BMFORMAT that is available in versions of Windows released before Windows Vista.
@@ -7,8 +7,8 @@ old-location: print\bmformat.htm
 old-project: print
 ms.assetid: 1c29bf1e-e785-48ab-aa2c-3665fd5c0ab0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: BMFORMAT, BMFORMAT
+ms.date: 1/8/2018
+ms.keywords: BMFORMAT, BMFORMAT, *PBMFORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: BMFORMAT
 ---
 
 # BMFORMAT enumeration

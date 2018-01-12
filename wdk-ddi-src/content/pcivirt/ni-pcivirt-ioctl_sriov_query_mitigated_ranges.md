@@ -1,5 +1,5 @@
 ---
-UID: NI.pcivirt.IOCTL_SRIOV_QUERY_MITIGATED_RANGES
+UID: NI:pcivirt.IOCTL_SRIOV_QUERY_MITIGATED_RANGES
 title: IOCTL_SRIOV_QUERY_MITIGATED_RANGES
 author: windows-driver-content
 description: The request determines the specific ranges on which intercepts must be placed.
@@ -7,8 +7,8 @@ old-location: pci\ioctl-sriov-query-mitigated-ranges.htm
 old-project: PCI
 ms.assetid: 58b6e53d-be7a-4563-a27d-db216a12d60d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SRIOV_PF_EVENT, PSRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
+ms.date: 12/29/2017
+ms.keywords: _SRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_QUERY_MITIGATED_RANGES IOCTL
@@ -45,19 +46,19 @@ The request determines the specific ranges on which intercepts must be placed.
 ## -ioctlparameters
 
 ### -input-buffer
-A pointer to a <a href="buses._sriov_mitigated_ranges_input">SRIOV_MITIGATED_RANGES_INPUT</a> structure that specifies the virtual function (VF) whose ranges are to be mitigated.
+A pointer to a <a href="https://msdn.microsoft.com/40b81630-997f-4427-8d02-5004de6fc943">SRIOV_MITIGATED_RANGES_INPUT</a> structure that specifies the virtual function (VF) whose ranges are to be mitigated.
 
 
 ### -input-buffer-length
-The size of the <a href="buses._sriov_mitigated_ranges_input">SRIOV_MITIGATED_RANGES_INPUT</a> structure.
+The size of the <a href="https://msdn.microsoft.com/40b81630-997f-4427-8d02-5004de6fc943">SRIOV_MITIGATED_RANGES_INPUT</a> structure.
 
 
 ### -output-buffer
-A pointer to a <a href="buses._sriov_mitigated_ranges_output">SRIOV_MITIGATED_RANGES_OUTPUT</a> structure that specifies the virtual function (VF) whose ranges were to mitigated.
+A pointer to a <a href="https://msdn.microsoft.com/f33f602e-0bce-4ac2-8bd8-8640b2376278">SRIOV_MITIGATED_RANGES_OUTPUT</a> structure that specifies the virtual function (VF) whose ranges were to mitigated.
 
 
 ### -output-buffer-length
-The size of the <a href="buses._sriov_mitigated_ranges_output">SRIOV_MITIGATED_RANGES_OUTPUT</a> structure.
+The size of the <a href="https://msdn.microsoft.com/f33f602e-0bce-4ac2-8bd8-8640b2376278">SRIOV_MITIGATED_RANGES_OUTPUT</a> structure.
 
 
 ### -in-out-buffer

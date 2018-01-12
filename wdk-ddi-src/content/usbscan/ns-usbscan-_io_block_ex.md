@@ -1,14 +1,14 @@
 ---
-UID: NS.USBSCAN._IO_BLOCK_EX
+UID: NS:usbscan._IO_BLOCK_EX
 title: _IO_BLOCK_EX
 author: windows-driver-content
 description: The IO_BLOCK_EX structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_SEND_USB_REQUEST.
 old-location: image\io_block_ex.htm
-old-project: Image
+old-project: image
 ms.assetid: 2474a49b-e275-4b4d-b762-c296b92bab4c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _IO_BLOCK_EX, IO_BLOCK_EX, PIO_BLOCK_EX, *PIO_BLOCK_EX
+ms.date: 1/10/2018
+ms.keywords: _IO_BLOCK_EX, IO_BLOCK_EX, *PIO_BLOCK_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IO_BLOCK_EX, *PIO_BLOCK_EX
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The IO_BLOCK_EX structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_send_usb_request.md">IOCTL_SEND_USB_REQUEST</a>. Values contained in structure members are used to create a USB Device Request (described in the <i>Universal Serial Bus Specification</i>).
+The IO_BLOCK_EX structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_send_usb_request.md">IOCTL_SEND_USB_REQUEST</a>. Values contained in structure members are used to create a USB Device Request (described in the <i>Universal Serial Bus Specification</i>).
 
 
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.DXVA._DXVA_QMATRIXDATA
+UID: NS:dxva._DXVA_QmatrixData
 title: _DXVA_QmatrixData
 author: windows-driver-content
 description: The DXVA_QmatrixData structure is sent by the host decoder to the accelerator to load inverse-quantization matrix data for off-host bitstream compressed video picture decoding.
@@ -7,8 +7,8 @@ old-location: display\dxva_qmatrixdata.htm
 old-project: display
 ms.assetid: 2cb96d6b-37f1-47dd-8135-66d3ead2dd64
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXVA_QmatrixData, DXVA_QmatrixData, LPDXVA_QmatrixData, *LPDXVA_QmatrixData
+ms.date: 12/29/2017
+ms.keywords: _DXVA_QmatrixData, DXVA_QmatrixData, *LPDXVA_QmatrixData
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVA_QmatrixData, *LPDXVA_QmatrixData
 ---
 
 # _DXVA_QmatrixData structure
@@ -127,7 +128,7 @@ If <b>bNewQmatrix</b>[<i>i </i>- 2] is 1, the inverse-quantization matrix define
 
 ### -field Qmatrix
 
-A two-dimensional array that specifies an inverse-quantization matrix buffer. This array is present only for each element in <b>bNewQmatrix</b> equal to 1. The matrix consists of (<b>bBlockWidthMinus1</b>+1) X (<b>bBlockHeightMinus1</b>+1) unsigned words (in which only the lower 8 bits of each word are used for the dominant video coding standards), where <b>bBlockWidthMinus1</b> and <b>bBlockHeightMinus1</b> are members of the <a href="display.dxva_pictureparameters">DXVA_PictureParameters</a> structure.
+A two-dimensional array that specifies an inverse-quantization matrix buffer. This array is present only for each element in <b>bNewQmatrix</b> equal to 1. The matrix consists of (<b>bBlockWidthMinus1</b>+1) X (<b>bBlockHeightMinus1</b>+1) unsigned words (in which only the lower 8 bits of each word are used for the dominant video coding standards), where <b>bBlockWidthMinus1</b> and <b>bBlockHeightMinus1</b> are members of the <a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a> structure.
 
 <div class="alert"><b>Note</b>  For MPEG-2 bitstreams, the data values within Qmatrix are in zigzag inverse scan order, as specified in subclause 7.3.1 and figure 7-2 of MPEG-2.</div>
 <div> </div>
@@ -137,7 +138,7 @@ If the video coding does not need inverse-quantization matrices (for example, H.
 
 No default values of inverse-quantization matrices may be assumed by the accelerator in the absence of any prior value sent by the host. The quantization matrix values must be sent explicitly, even if they contain values that are available by default in the relevant video coding specification.
 
-Inverse-quantization matrix buffers are sent only when the <b>bConfigBitstreamRaw</b> member of the <a href="display.dxva_configpicturedecode">DXVA_ConfigPictureDecode</a> structure is 1.
+Inverse-quantization matrix buffers are sent only when the <b>bConfigBitstreamRaw</b> member of the <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure is 1.
 
 The order of the data values within the inverse-quantization matrix is as specified in the relevant video coding specification.
 
@@ -160,15 +161,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxva_configpicturedecode">DXVA_ConfigPictureDecode</a>
+<a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a>
 </dt>
 <dt>
-<a href="display.dxva_pictureparameters">DXVA_PictureParameters</a>
+<a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_QmatrixData structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_QmatrixData structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ZwCreateSection
+UID: NF:wdm.ZwCreateSection
 title: ZwCreateSection function
 author: windows-driver-content
 description: The ZwCreateSection routine creates a section object.
@@ -7,7 +7,7 @@ old-location: kernel\zwcreatesection.htm
 old-project: kernel
 ms.assetid: 805d7eff-19be-47a1-acc9-1b97e5493031
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwCreateSection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -140,7 +141,7 @@ All of the previous flags combined with STANDARD_RIGHTS_REQUIRED.
 
 ### -param ObjectAttributes [in, optional]
 
-Pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.
+Pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.
 
 
 ### -param MaximumSize [in, optional]
@@ -150,12 +151,12 @@ Specifies the maximum size, in bytes, of the section. <b>ZwCreateSection</b> rou
 
 ### -param SectionPageProtection [in]
 
-Specifies the protection to place on each page in the section. Use one of the following four values: PAGE_READONLY, PAGE_READWRITE, PAGE_EXECUTE, or PAGE_WRITECOPY. For a description of these values, see <a href="base.createfilemapping">CreateFileMapping</a>.
+Specifies the protection to place on each page in the section. Use one of the following four values: PAGE_READONLY, PAGE_READWRITE, PAGE_EXECUTE, or PAGE_WRITECOPY. For a description of these values, see <a href="https://msdn.microsoft.com/d3302183-76a0-47ec-874f-1173db353dfe">CreateFileMapping</a>.
 
 
 ### -param AllocationAttributes [in]
 
-Specifies a bitmask of SEC_<i>XXX</i> flags that determines the allocation attributes of the section. For a description of these flags, see <a href="base.createfilemapping">CreateFileMapping</a>.
+Specifies a bitmask of SEC_<i>XXX</i> flags that determines the allocation attributes of the section. For a description of these flags, see <a href="https://msdn.microsoft.com/d3302183-76a0-47ec-874f-1173db353dfe">CreateFileMapping</a>.
 
 
 ### -param FileHandle [in, optional]
@@ -185,11 +186,11 @@ Optionally specifies a handle for an open file object. If the value of <i>FileHa
 
 
 ## -remarks
-Once the handle pointed to by <i>SectionHandle</i> is no longer in use, the driver must call <a href="kernel.zwclose">ZwClose</a> to close it.
+Once the handle pointed to by <i>SectionHandle</i> is no longer in use, the driver must call <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> to close it.
 
 If the caller is not running in a system thread context, it must ensure that any handles it creates are private handles. Otherwise, the handle can be accessed by the process in whose context the driver is running. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557758">Object Handles</a>. 
 
-For more information about setting up mapped sections and views of memory, see <a href="kernel.sections_and_views">Sections and Views</a>. 
+For more information about setting up mapped sections and views of memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563682">Sections and Views</a>. 
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
@@ -268,27 +269,27 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="base.createfilemapping">CreateFileMapping</a>
+<a href="https://msdn.microsoft.com/d3302183-76a0-47ec-874f-1173db353dfe">CreateFileMapping</a>
 </dt>
 <dt>
-<a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 </dt>
 <dt>
-<a href="kernel.zwclose">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 </dt>
 <dt>
-<a href="kernel.zwmapviewofsection">ZwMapViewOfSection</a>
+<a href="..\wdm\nf-wdm-zwmapviewofsection.md">ZwMapViewOfSection</a>
 </dt>
 <dt>
-<a href="kernel.zwopensection">ZwOpenSection</a>
+<a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a>
 </dt>
 <dt>
-<a href="kernel.zwunmapviewofsection">ZwUnmapViewOfSection</a>
+<a href="..\wdm\nf-wdm-zwunmapviewofsection.md">ZwUnmapViewOfSection</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateSection routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateSection routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

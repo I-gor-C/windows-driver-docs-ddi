@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsUnregisterWorker
+UID: NF:ks.KsUnregisterWorker
 title: KsUnregisterWorker function
 author: windows-driver-content
 description: The KsUnregisterWorker function allows clients to unregister a worker.
@@ -7,7 +7,7 @@ old-location: stream\ksunregisterworker.htm
 old-project: stream
 ms.assetid: 789b12db-7f51-426f-8f43-d3a3e43d85b3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsUnregisterWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsUnregisterWorker function

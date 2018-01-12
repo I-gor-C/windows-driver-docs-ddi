@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUKMDT.D3DDDI_UPDATEALLOCPROPERTY_FLAGS
+UID: NS:d3dukmdt.D3DDDI_UPDATEALLOCPROPERTY_FLAGS
 title: D3DDDI_UPDATEALLOCPROPERTY_FLAGS
 author: windows-driver-content
 description: The D3DDDI_UPDATEALLOCPROPERTY_FLAGS structure identifies how to update a property in an allocation.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_updateallocproperty_flags.htm
 old-project: display
 ms.assetid: 377EC824-9D43-40CA-B5CA-A04402852EA3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DDDI_UPDATEALLOCPROPERTY_FLAGS, D3DDDI_UPDATEALLOCPROPERTY_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_UPDATEALLOCPROPERTY_FLAGS
 ---
 
 # D3DDDI_UPDATEALLOCPROPERTY_FLAGS structure

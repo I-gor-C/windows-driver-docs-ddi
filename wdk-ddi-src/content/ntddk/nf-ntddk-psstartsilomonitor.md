@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PsStartSiloMonitor
+UID: NF:ntddk.PsStartSiloMonitor
 title: PsStartSiloMonitor function
 author: windows-driver-content
 description: This routine tries to start the server silo monitor.
@@ -7,7 +7,7 @@ old-location: kernel\psstartsilomonitor.htm
 old-project: kernel
 ms.assetid: 65828926-FDA7-4F65-AD55-B7E03639FA27
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PsStartSiloMonitor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PsStartSiloMonitor function

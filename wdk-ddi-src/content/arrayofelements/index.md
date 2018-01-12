@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:arrayofelements
 ---
 
 # Arrayofelements.h header
@@ -7,7 +7,7 @@ UID: NA:
 ## -description
 
 This header is used by Debugger. For more information, see
-- [Debugger](../_Debugger/index.md)
+- [Debugger](../_debugger/index.md)
 
 Arrayofelements.h contain these programming interfaces:
 

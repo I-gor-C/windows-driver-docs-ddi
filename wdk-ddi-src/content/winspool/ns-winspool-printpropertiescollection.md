@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPOOL.PRINTPROPERTIESCOLLECTION
+UID: NS:winspool.PrintPropertiesCollection
 title: PrintPropertiesCollection
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\printpropertiescollection.htm
 old-project: print
 ms.assetid: 824E8A5C-7530-4C7B-B093-386DD3D45A6B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: PrintPropertiesCollection, PrintPropertiesCollection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PrintPropertiesCollection
 req.product: Windows 10 or later.
 ---
 

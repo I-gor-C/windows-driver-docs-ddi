@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_GEOFENCE_CREATE_PARAM
+UID: NS:gnssdriver.GNSS_GEOFENCE_CREATE_PARAM
 title: GNSS_GEOFENCE_CREATE_PARAM
 author: windows-driver-content
 description: This structure defines the parameters for creating a geofence in the GNSS engine.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: CA517EF6-41EE-4DB0-B628-35902BA34FFB
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_GEOFENCE_CREATE_PARAM, GNSS_GEOFENCE_CREATE_PARAM, PGNSS_GEOFENCE_CREATE_PARAM, *PGNSS_GEOFENCE_CREATE_PARAM
+ms.keywords: GNSS_GEOFENCE_CREATE_PARAM, GNSS_GEOFENCE_CREATE_PARAM, *PGNSS_GEOFENCE_CREATE_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_GEOFENCE_CREATE_PARAM, *PGNSS_GEOFENCE_CREATE_PARAM
 ---
 
 # GNSS_GEOFENCE_CREATE_PARAM structure

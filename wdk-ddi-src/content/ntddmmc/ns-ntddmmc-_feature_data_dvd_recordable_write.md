@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDMMC._FEATURE_DATA_DVD_RECORDABLE_WRITE
+UID: NS:ntddmmc._FEATURE_DATA_DVD_RECORDABLE_WRITE
 title: _FEATURE_DATA_DVD_RECORDABLE_WRITE
 author: windows-driver-content
 description: The FEATURE_DATA_DVD_RECORDABLE_WRITE structure holds information for the DVD-R/RW Write feature.
@@ -7,8 +7,8 @@ old-location: storage\feature_data_dvd_recordable_write.htm
 old-project: storage
 ms.assetid: 13a816f9-c41a-49f1-ac79-98106f4630d4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _FEATURE_DATA_DVD_RECORDABLE_WRITE, PFEATURE_DATA_DVD_RECORDABLE_WRITE, *PFEATURE_DATA_DVD_RECORDABLE_WRITE, FEATURE_DATA_DVD_RECORDABLE_WRITE
+ms.date: 1/10/2018
+ms.keywords: _FEATURE_DATA_DVD_RECORDABLE_WRITE, FEATURE_DATA_DVD_RECORDABLE_WRITE, *PFEATURE_DATA_DVD_RECORDABLE_WRITE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FEATURE_DATA_DVD_RECORDABLE_WRITE, *PFEATURE_DATA_DVD_RECORDABLE_WRITE
 ---
 
 # _FEATURE_DATA_DVD_RECORDABLE_WRITE structure
@@ -63,7 +64,7 @@ typedef struct _FEATURE_DATA_DVD_RECORDABLE_WRITE {
 
 ### -field Header
 
-Contains a <a href="storage.feature_header">FEATURE_HEADER</a> structure with header information for this feature descriptor. 
+Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor. 
 
 
 ### -field Reserved1
@@ -124,15 +125,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.feature_header">FEATURE_HEADER</a>
+<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
 </dt>
 <dt>
-<a href="storage.feature_number">FEATURE_NUMBER</a>
+<a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_DATA_DVD_RECORDABLE_WRITE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_DATA_DVD_RECORDABLE_WRITE structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

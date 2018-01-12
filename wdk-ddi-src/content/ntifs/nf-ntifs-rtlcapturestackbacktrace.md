@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlCaptureStackBackTrace
+UID: NF:ntifs.RtlCaptureStackBackTrace
 title: RtlCaptureStackBackTrace function
 author: windows-driver-content
 description: The RtlCaptureStackBackTrace routine captures a stack back trace by walking up the stack and recording the information for each frame.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlcapturestackbacktrace.htm
 old-project: ifsk
 ms.assetid: e4ad1eac-1788-4dfe-9444-f40e0de156c4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlCaptureStackBackTrace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib; OneCoreUAP.lib on Windows 10
 req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql: <= DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlCaptureStackBackTrace function

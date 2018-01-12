@@ -1,5 +1,5 @@
 ---
-UID: NI.pcivirt.IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT
+UID: NI:pcivirt.IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT
 title: IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT
 author: windows-driver-content
 description: The request determines the ranges of memory-mapped I/O space that must mitigated.
@@ -7,8 +7,8 @@ old-location: pci\ioctl-sriov-query-mitigated-range-count.htm
 old-project: PCI
 ms.assetid: 68fd97a5-b7ea-43c0-96ed-b64445fd21dd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SRIOV_PF_EVENT, PSRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
+ms.date: 12/29/2017
+ms.keywords: _SRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT IOCTL
@@ -45,19 +46,19 @@ req.irql: PASSIVE_LEVEL
 ## -ioctlparameters
 
 ### -input-buffer
-A pointer to a <a href="buses._sriov_mitigated_range_count_input">SRIOV_MITIGATED_RANGE_COUNT_INPUT</a> structure. Set the <b>VfIndex</b> member to 0. 
+A pointer to a <a href="https://msdn.microsoft.com/7de35a35-2b90-421d-bbde-4c5cb760070a">SRIOV_MITIGATED_RANGE_COUNT_INPUT</a> structure. Set the <b>VfIndex</b> member to 0. 
 
 
 ### -input-buffer-length
-The size of the <a href="buses._sriov_mitigated_range_count_input">SRIOV_MITIGATED_RANGE_COUNT_INPUT</a> structure.
+The size of the <a href="https://msdn.microsoft.com/7de35a35-2b90-421d-bbde-4c5cb760070a">SRIOV_MITIGATED_RANGE_COUNT_INPUT</a> structure.
 
 
 ### -output-buffer
-A pointer to a <a href="buses._sriov_mitigated_range_count_output">SRIOV_MITIGATED_RANGE_COUNT_OUTPUT</a> structure that is filled by the physical function (PF) driver with  ranges of memory-mapped I/O space. 
+A pointer to a <a href="https://msdn.microsoft.com/b89c0758-beed-4c29-b966-78cb319258b1">SRIOV_MITIGATED_RANGE_COUNT_OUTPUT</a> structure that is filled by the physical function (PF) driver with  ranges of memory-mapped I/O space. 
 
 
 ### -output-buffer-length
-The size of the <a href="buses._sriov_mitigated_range_count_output">SRIOV_MITIGATED_RANGE_COUNT_OUTPUT</a> structure. 
+The size of the <a href="https://msdn.microsoft.com/b89c0758-beed-4c29-b966-78cb319258b1">SRIOV_MITIGATED_RANGE_COUNT_OUTPUT</a> structure. 
 
 
 ### -in-out-buffer

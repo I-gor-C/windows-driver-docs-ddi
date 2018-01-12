@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._FILE_FS_SECTOR_SIZE_INFORMATION
+UID: NS:ntddk._FILE_FS_SECTOR_SIZE_INFORMATION
 title: _FILE_FS_SECTOR_SIZE_INFORMATION
 author: windows-driver-content
 description: The FILE_FS_SECTOR_SIZE_INFORMATION structure is used to query physical and logical sector size information for a file system volume.
@@ -7,8 +7,8 @@ old-location: ifsk\file_fs_sector_size_information.htm
 old-project: ifsk
 ms.assetid: 24DEEDC7-B339-44DD-BF48-3BD59520EB8D
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FILE_FS_SECTOR_SIZE_INFORMATION, PFILE_FS_SECTOR_SIZE_INFORMATION, *PFILE_FS_SECTOR_SIZE_INFORMATION, FILE_FS_SECTOR_SIZE_INFORMATION
+ms.date: 1/9/2018
+ms.keywords: _FILE_FS_SECTOR_SIZE_INFORMATION, FILE_FS_SECTOR_SIZE_INFORMATION, *PFILE_FS_SECTOR_SIZE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FILE_FS_SECTOR_SIZE_INFORMATION, *PFILE_FS_SECTOR_SIZE_INFORMATION
 ---
 
 # _FILE_FS_SECTOR_SIZE_INFORMATION structure
@@ -145,17 +146,17 @@ The offset value, in bytes, used to align the partition to a physical sector bou
 ## -remarks
 This information can be queried in either of the following ways: 
 
-Call <a href="ifsk.fltqueryvolumeinformation">FltQueryVolumeInformation</a> or <a href="kernel.zwqueryvolumeinformationfile">ZwQueryVolumeInformationFile</a>, passing <b>FileFsSectorSizeInformation</b> as the value of <i>FileInformationClass</i> and passing a caller-allocated, <b>FILE_FS_SECTOR_SIZE_INFORMATION</b>-structured buffer as the value of <i>FileInformation</i>. 
+Call <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> or <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>, passing <b>FileFsSectorSizeInformation</b> as the value of <i>FileInformationClass</i> and passing a caller-allocated, <b>FILE_FS_SECTOR_SIZE_INFORMATION</b>-structured buffer as the value of <i>FileInformation</i>. 
 
-Create an IRP with major function code <a href="ifsk.irp_mj_query_volume_information">IRP_MJ_QUERY_VOLUME_INFORMATION</a>. 
+Create an IRP with major function code <a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>. 
 
-Call <a href="ifsk.fsrtlgetsectorsizeinformation">FsRtlGetSectorSizeInformation</a> with a pointer to a <b>FILE_FS_SECTOR_SIZE_INFORMATION</b>-structured buffer. The  <b>FileSystemEffectivePhysicalBytesPerSectorForAtomicity</b> member will not have a value initialized by  the file system when this structure is returned from <b>FsRtlGetSectorSizeInformation</b>. A file system driver will typically call this function and then set its own value for  <b>FileSystemEffectivePhysicalBytesPerSectorForAtomicity</b>.
+Call <a href="..\ntifs\nf-ntifs-fsrtlgetsectorsizeinformation.md">FsRtlGetSectorSizeInformation</a> with a pointer to a <b>FILE_FS_SECTOR_SIZE_INFORMATION</b>-structured buffer. The  <b>FileSystemEffectivePhysicalBytesPerSectorForAtomicity</b> member will not have a value initialized by  the file system when this structure is returned from <b>FsRtlGetSectorSizeInformation</b>. A file system driver will typically call this function and then set its own value for  <b>FileSystemEffectivePhysicalBytesPerSectorForAtomicity</b>.
 
 No specific access rights are required to query this information. Thus this information is available as long as the volume is accessed through an open handle to the volume itself, or to a file or directory on the volume. 
 
-The size of the buffer passed in the <i>FileInformation</i> parameter to <a href="ifsk.fltqueryvolumeinformation">FltQueryVolumeInformation</a> or <a href="kernel.zwqueryvolumeinformationfile">ZwQueryVolumeInformationFile</a> must be at least <b>sizeof</b> (FILE_FS_SECTOR_SIZE_INFORMATION). 
+The size of the buffer passed in the <i>FileInformation</i> parameter to <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> or <a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a> must be at least <b>sizeof</b> (FILE_FS_SECTOR_SIZE_INFORMATION). 
 
-The file system uses the value of <b>LogicalBytesPerSector</b> to determine the size of an allocation unit. The <b>LogicalBytesPerSector</b> member of this structure is equivalent to the <b>BytesPerSector</b> member of the <a href="ifsk.file_fs_size_information">FILE_FS_SIZE_INFORMATION</a>  and <a href="ifsk.file_fs_full_size_information">FILE_FS_FULL_SIZE_INFORMATION</a> structures.
+The file system uses the value of <b>LogicalBytesPerSector</b> to determine the size of an allocation unit. The <b>LogicalBytesPerSector</b> member of this structure is equivalent to the <b>BytesPerSector</b> member of the <a href="..\ntddk\ns-ntddk-_file_fs_size_information.md">FILE_FS_SIZE_INFORMATION</a>  and <a href="..\ntddk\ns-ntddk-_file_fs_full_size_information.md">FILE_FS_FULL_SIZE_INFORMATION</a> structures.
 
 If the system is unable to determine values for <b>PhysicalBytesPerSectorForAtomicity</b> and <b>PhysicalBytesPerSectorForPerformance</b> from the storage device, then they are set to the value of <b>LogicalBytesPerSector.</b>
 
@@ -188,27 +189,27 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltqueryvolumeinformation">FltQueryVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlgetsectorsizeinformation">FsRtlGetSectorSizeInformation</a>
+<a href="..\ntifs\nf-ntifs-fsrtlgetsectorsizeinformation.md">FsRtlGetSectorSizeInformation</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryvolumeinformationfile">ZwQueryVolumeInformationFile</a>
+<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
 </dt>
 <dt>
-<a href="ifsk.file_fs_size_information">FILE_FS_SIZE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_fs_size_information.md">FILE_FS_SIZE_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_fs_full_size_information">FILE_FS_FULL_SIZE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_fs_full_size_information.md">FILE_FS_FULL_SIZE_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_query_volume_information">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_SECTOR_SIZE_INFORMATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_FS_SECTOR_SIZE_INFORMATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

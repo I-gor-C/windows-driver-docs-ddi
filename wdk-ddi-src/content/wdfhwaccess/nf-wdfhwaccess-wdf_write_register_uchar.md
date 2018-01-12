@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfhwaccess.WDF_WRITE_REGISTER_UCHAR
+UID: NF:wdfhwaccess.WDF_WRITE_REGISTER_UCHAR
 title: WDF_WRITE_REGISTER_UCHAR function
 author: windows-driver-content
 description: The WDF_WRITE_REGISTER_UCHAR routine writes a byte to the specified address.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_register_uchar.htm
 old-project: wdf
 ms.assetid: 5738654A-83B1-44B4-BA45-52E2B60C852D
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WDF_WRITE_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 

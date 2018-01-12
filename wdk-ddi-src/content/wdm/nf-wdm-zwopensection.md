@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ZwOpenSection
+UID: NF:wdm.ZwOpenSection
 title: ZwOpenSection function
 author: windows-driver-content
 description: The ZwOpenSection routine opens a handle for an existing section object.
@@ -7,7 +7,7 @@ old-location: kernel\zwopensection.htm
 old-project: kernel
 ms.assetid: c4373f7b-cc88-45da-a140-ead1c6891c11
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwOpenSection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -63,12 +64,12 @@ Pointer to a HANDLE variable that receives a handle to the section object.
 
 ### -param DesiredAccess [in]
 
-Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that determines the requested access to the object. For more information, see the <i>DesiredAccess</i> parameter of <a href="kernel.zwcreatesection">ZwCreateSection</a>. 
+Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that determines the requested access to the object. For more information, see the <i>DesiredAccess</i> parameter of <a href="..\wdm\nf-wdm-zwcreatesection.md">ZwCreateSection</a>. 
 
 
 ### -param ObjectAttributes [in]
 
-Pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. 
+Pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. 
 
 
 ## -returns
@@ -82,7 +83,7 @@ Pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure
 ## -remarks
 If the section does not exist or the system did not grant the requested access, the operation fails.
 
-Once the handle pointed to by <i>SectionHandle</i> is no longer in use, the driver must call <a href="kernel.zwclose">ZwClose</a> to close it.
+Once the handle pointed to by <i>SectionHandle</i> is no longer in use, the driver must call <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> to close it.
 
 If the caller is not running in a system thread context, it must ensure that any handles it creates are private handles. Otherwise, the handle can be accessed by the process in whose context the driver is running. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557758">Object Handles</a>.
 
@@ -161,7 +162,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -172,24 +173,24 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatesection">ZwCreateSection</a>
+<a href="..\wdm\nf-wdm-zwcreatesection.md">ZwCreateSection</a>
 </dt>
 <dt>
-<a href="kernel.zwmapviewofsection">ZwMapViewOfSection</a>
+<a href="..\wdm\nf-wdm-zwmapviewofsection.md">ZwMapViewOfSection</a>
 </dt>
 <dt>
-<a href="kernel.zwunmapviewofsection">ZwUnmapViewOfSection</a>
+<a href="..\wdm\nf-wdm-zwunmapviewofsection.md">ZwUnmapViewOfSection</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwOpenSection routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwOpenSection routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

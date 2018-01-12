@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortGetMSIInfo
+UID: NF:storport.StorPortGetMSIInfo
 title: StorPortGetMSIInfo function
 author: windows-driver-content
 description: The StorPortGetMSIInfo routine retrieves the message signaled interrupt (MSI) information for the specified message.
@@ -7,7 +7,7 @@ old-location: storage\storportgetmsiinfo.htm
 old-project: storage
 ms.assetid: 3c98c04c-246a-42a0-bb40-f7771f7ae968
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortGetMSIInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level.
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ The identifier of the message for which the information is retrieved.
 
 ### -param InterruptInfo [out]
 
-A pointer to a miniport driver-provided <a href="storage.message_interrupt_information">MESSAGE_INTERRUPT_INFORMATION</a> structure that receives the information for the message specified by the <i>MessageId</i> parameter.
+A pointer to a miniport driver-provided <a href="..\storport\ns-storport-_message_interrupt_information.md">MESSAGE_INTERRUPT_INFORMATION</a> structure that receives the information for the message specified by the <i>MessageId</i> parameter.
 
 
 ## -returns
@@ -149,12 +150,12 @@ Any level.
 ## -see-also
 <dl>
 <dt>
-<a href="storage.message_interrupt_information">MESSAGE_INTERRUPT_INFORMATION</a>
+<a href="..\storport\ns-storport-_message_interrupt_information.md">MESSAGE_INTERRUPT_INFORMATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortGetMSIInfo routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortGetMSIInfo routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

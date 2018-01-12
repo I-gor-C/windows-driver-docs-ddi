@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdbgexts
 ---
 
 # Wdbgexts.h header
@@ -7,7 +7,7 @@ UID: NA:
 ## -description
 
 This header is used by Debugger. For more information, see
-- [Debugger](../_Debugger/index.md)
+- [Debugger](../_debugger/index.md)
 
 Wdbgexts.h contain these programming interfaces:
 
@@ -63,6 +63,10 @@ Wdbgexts.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [PSYM_DUMP_FIELD_CALLBACK callback](nc-wdbgexts-psym_dump_field_callback.md) | The PSYM_DUMP_FIELD_CALLBACK callback function is called by the debugger engine during the IG_DUMP_SYMBOL_INFO Ioctl operation with information about a member in the specified symbol. |
+| [PWINDBG_CHECK_VERSION callback](nc-wdbgexts-pwindbg_check_version.md) | The PWINDBG_CHECK_VERSION (CheckVersion) callback function verifies that the extension module version matches the debugger version, and outputs an warning message if there is a mismatch. |
+| [PWINDBG_EXTENSION_API_VERSION callback](nc-wdbgexts-pwindbg_extension_api_version.md) | The PWINDBG_EXTENSION_API_VERSION (ExtensionApiVersion) callback function returns version information about the extension DLL. |
+| [PWINDBG_EXTENSION_DLL_INIT callback](nc-wdbgexts-pwindbg_extension_dll_init.md) | The PWINDBG_EXTENSION_DLL_INIT ( WinDbgExtensionDllInit) callback function is used to load and initialize the extension module. |
+| [PWINDBG_OUTPUT_ROUTINE callback](nc-wdbgexts-pwindbg_output_routine.md) | The callback function implements the functionality to print a formatted string to the Debugger Command window. |
 
 ## Structures
 

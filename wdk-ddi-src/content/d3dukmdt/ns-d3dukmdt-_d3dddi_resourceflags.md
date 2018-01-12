@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUKMDT._D3DDDI_RESOURCEFLAGS
+UID: NS:d3dukmdt._D3DDDI_RESOURCEFLAGS
 title: _D3DDDI_RESOURCEFLAGS
 author: windows-driver-content
 description: The D3DDDI_RESOURCEFLAGS structure identifies the type of resources to create in a call to the driver's CreateResource function.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_resourceflags.htm
 old-project: display
 ms.assetid: a466a158-dacf-42cc-b2ad-8af5b2c6c7d5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDI_RESOURCEFLAGS, D3DDDI_RESOURCEFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_RESOURCEFLAGS
 ---
 
 # _D3DDDI_RESOURCEFLAGS structure
@@ -265,7 +266,7 @@ Setting this member is equivalent to setting the twenty-fourth bit of the 32-bit
 
 A UINT value that specifies whether the CPU frequently accesses the resource.
 
-The driver should place the resource in a memory pool that the CPU can quickly access (for example, AGP memory). The display miniport driver should flag the memory as cacheable by setting the <b>Cached</b> bit-field flag in the <b>Flags</b> member of the <a href="display.dxgk_allocationinfo">DXGK_ALLOCATIONINFO</a> structure when its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> function is called. 
+The driver should place the resource in a memory pool that the CPU can quickly access (for example, AGP memory). The display miniport driver should flag the memory as cacheable by setting the <b>Cached</b> bit-field flag in the <b>Flags</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a> structure when its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> function is called. 
 
 The <b>CpuOptimized</b> flag is typically set for render targets (both stand-alone render targets and textures).
 
@@ -290,7 +291,7 @@ Setting this member is equivalent to setting the twenty-seventh bit of the 32-bi
 
 ### -field MatchGdiPrimary
 
-A UINT value that specifies whether the resource is a primary surface that matches all the properties of the current GDI primary surface that was created by using the <a href="display.d3dkmdt_sharedprimarysurfacedata">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a> structure. For example, flipping from the matching primary surface to the current GDI primary surface and vice versa is possible.
+A UINT value that specifies whether the resource is a primary surface that matches all the properties of the current GDI primary surface that was created by using the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_sharedprimarysurfacedata.md">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a> structure. For example, flipping from the matching primary surface to the current GDI primary surface and vice versa is possible.
 
 Setting this member is equivalent to setting the twenty-eighth bit of the 32-bit <b>Value</b> member (0x08000000).
 
@@ -366,12 +367,12 @@ Header
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
 </dt>
 <dt>
-<a href="display.d3dddiarg_createresource">D3DDDIARG_CREATERESOURCE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_RESOURCEFLAGS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_RESOURCEFLAGS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

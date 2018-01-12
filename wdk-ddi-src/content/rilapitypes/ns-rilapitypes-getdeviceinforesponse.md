@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.GETDEVICEINFORESPONSE
+UID: NS:rilapitypes.GETDEVICEINFORESPONSE
 title: GETDEVICEINFORESPONSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\getdeviceinforesponse_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 318927ab-6134-4a01-bf9c-a85619d2bbdf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: GETDEVICEINFORESPONSE, *LPGETDEVICEINFORESPONSE, GETDEVICEINFORESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPGETDEVICEINFORESPONSE, GETDEVICEINFORESPONSE
 req.product: Windows 10 or later.
 ---
 

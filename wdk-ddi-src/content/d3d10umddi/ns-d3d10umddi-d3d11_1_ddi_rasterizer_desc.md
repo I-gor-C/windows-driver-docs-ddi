@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1_DDI_RASTERIZER_DESC
+UID: NS:d3d10umddi.D3D11_1_DDI_RASTERIZER_DESC
 title: D3D11_1_DDI_RASTERIZER_DESC
 author: windows-driver-content
 description: Describes a rasterizer state. Used by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1_ddi_rasterizer_desc.htm
 old-project: display
 ms.assetid: a78655b3-3ca3-4632-9ac4-3efae6b10a0c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1_DDI_RASTERIZER_DESC, D3D11_1_DDI_RASTERIZER_DESC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1_DDI_RASTERIZER_DESC
 ---
 
 # D3D11_1_DDI_RASTERIZER_DESC structure

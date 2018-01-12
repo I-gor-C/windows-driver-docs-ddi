@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCxGetConnectionParameters
+UID: NF:sercx.SerCxGetConnectionParameters
 title: SerCxGetConnectionParameters function
 author: windows-driver-content
 description: The SerCxGetConnectionParameters method retrieves the connection parameters for the associated peripheral device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 

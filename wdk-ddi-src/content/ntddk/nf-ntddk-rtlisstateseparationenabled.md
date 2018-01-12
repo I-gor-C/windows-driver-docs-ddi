@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlIsStateSeparationEnabled
+UID: NF:ntddk.RtlIsStateSeparationEnabled
 title: RtlIsStateSeparationEnabled function
 author: windows-driver-content
 description: Checks if the SKU for the current context supports multiple sessions.
@@ -7,7 +7,7 @@ old-location: kernel\rtlisstateseparationenabled.htm
 old-project: kernel
 ms.assetid: 7c28a82c-e039-4045-94cd-b47a45d15e28
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlIsStateSeparationEnabled
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe (kernel mode)
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlIsStateSeparationEnabled function

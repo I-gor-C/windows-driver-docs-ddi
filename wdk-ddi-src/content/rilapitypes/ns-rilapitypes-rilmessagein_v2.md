@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILMESSAGEIN_V2
+UID: NS:rilapitypes.RILMESSAGEIN_V2
 title: RILMESSAGEIN_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessagein_v2_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a800eaf5-249e-4f17-9584-55dc6deb7bff
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMESSAGEIN_V2, RILMESSAGEIN, RILMESSAGEIN_V2, *LPRILMESSAGEIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMESSAGEIN, RILMESSAGEIN_V2, *LPRILMESSAGEIN
 req.product: Windows 10 or later.
 ---
 

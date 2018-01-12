@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._UNIT_ISOCH_PARAMS
+UID: NS:61883._UNIT_ISOCH_PARAMS
 title: _UNIT_ISOCH_PARAMS
 author: windows-driver-content
 description: The UNIT_ISOCH_PARAMS structure is used to get or set the parameters that the IEC-61883 protocol driver uses when capturing or transmitting isochronous packets.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 1c661a35-8209-49c5-9987-b4b6e9e710b4
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS, PUNIT_ISOCH_PARAMS
+ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # _UNIT_ISOCH_PARAMS structure

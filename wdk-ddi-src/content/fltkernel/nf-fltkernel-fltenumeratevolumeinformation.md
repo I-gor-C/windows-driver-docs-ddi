@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltEnumerateVolumeInformation
+UID: NF:fltkernel.FltEnumerateVolumeInformation
 title: FltEnumerateVolumeInformation function
 author: windows-driver-content
 description: The FltEnumerateVolumeInformation routine provides information about volumes that are known to the filter manager.
@@ -7,7 +7,7 @@ old-location: ifsk\fltenumeratevolumeinformation.htm
 old-project: ifsk
 ms.assetid: cdec7faa-299c-4a4e-a037-9900bc3cffa1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltEnumerateVolumeInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltEnumerateVolumeInformation function
@@ -83,7 +84,7 @@ Type of information requested. This parameter can have one of the following valu
 
 </td>
 <td>
-The <i>Buffer </i>parameter receives a <a href="ifsk.filter_volume_basic_information">FILTER_VOLUME_BASIC_INFORMATION</a> structure for the volume. 
+The <i>Buffer </i>parameter receives a <a href="..\fltuserstructures\ns-fltuserstructures-_filter_volume_basic_information.md">FILTER_VOLUME_BASIC_INFORMATION</a> structure for the volume. 
 
 </td>
 </tr>
@@ -93,7 +94,7 @@ The <i>Buffer </i>parameter receives a <a href="ifsk.filter_volume_basic_informa
 
 </td>
 <td>
-The <i>Buffer</i> parameter receives a <a href="ifsk.filter_volume_standard_information">FILTER_VOLUME_STANDARD_INFORMATION</a> structure for the volume.  This structure is available starting with Windows Vista.
+The <i>Buffer</i> parameter receives a <a href="..\fltuserstructures\ns-fltuserstructures-_filter_volume_standard_information.md">FILTER_VOLUME_STANDARD_INFORMATION</a> structure for the volume.  This structure is available starting with Windows Vista.
 
 </td>
 </tr>
@@ -137,21 +138,21 @@ Pointer to a caller-allocated variable that receives the number of bytes returne
 ## -remarks
 Using the <i>Index</i> parameter is simply a way for the <b>FltEnumerateVolumeInformation</b> routine to select among volumes in the filter manager's global list of volumes. Two calls to <b>FltEnumerateVolumeInformation</b> with the same value of the <i>Index</i> parameter do not necessarily return the same result because volumes can be mounted or dismounted at any time. 
 
-If <b>FltEnumerateVolumeInformation</b> is used to create a list of volume information structures, it is possible for two or more of these structures to contain identical volume names.  For more information, see <a href="ifsk.understanding_volume_enumerations_with_duplicate_volume_names">Understanding Volume Enumerations with Duplicate Volume Names</a>.
+If <b>FltEnumerateVolumeInformation</b> is used to create a list of volume information structures, it is possible for two or more of these structures to contain identical volume names.  For more information, see <a href="https://msdn.microsoft.com/c05982dc-4124-4f9a-93b8-0e56ac296d1b">Understanding Volume Enumerations with Duplicate Volume Names</a>.
 
-To enumerate all registered minifilter drivers, call <a href="ifsk.fltenumeratefilters">FltEnumerateFilters</a>. 
+To enumerate all registered minifilter drivers, call <a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>. 
 
-To enumerate all volumes that are known to the filter manager, call <a href="ifsk.fltenumeratevolumes">FltEnumerateVolumes</a>. 
+To enumerate all volumes that are known to the filter manager, call <a href="..\fltkernel\nf-fltkernel-fltenumeratevolumes.md">FltEnumerateVolumes</a>. 
 
-To list filter information for all registered minifilter drivers, call <a href="ifsk.fltenumeratefilterinformation">FltEnumerateFilterInformation</a>. 
+To list filter information for all registered minifilter drivers, call <a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>. 
 
-To get filter information for a given minifilter driver, call <a href="ifsk.fltgetfilterinformation">FltGetFilterInformation</a>. 
+To get filter information for a given minifilter driver, call <a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>. 
 
-To enumerate all instances of a given minifilter driver, call <a href="ifsk.fltenumerateinstanceinformationbyfilter">FltEnumerateInstanceInformationByFilter</a>. 
+To enumerate all instances of a given minifilter driver, call <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>. 
 
-To enumerate all minifilter driver instances on a given volume, call <a href="ifsk.fltenumerateinstanceinformationbyvolume">FltEnumerateInstanceInformationByVolume</a>. 
+To enumerate all minifilter driver instances on a given volume, call <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>. 
 
-To enumerate instances of all minifilter drivers on all volumes, call <a href="ifsk.fltenumerateinstances">FltEnumerateInstances</a>. 
+To enumerate instances of all minifilter drivers on all volumes, call <a href="..\fltkernel\nf-fltkernel-fltenumerateinstances.md">FltEnumerateInstances</a>. 
 
 
 ## -requirements
@@ -204,36 +205,36 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.filter_volume_basic_information">FILTER_VOLUME_BASIC_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_volume_basic_information.md">FILTER_VOLUME_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.filter_volume_standard_information">FILTER_VOLUME_STANDARD_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_volume_standard_information.md">FILTER_VOLUME_STANDARD_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumeratefilterinformation">FltEnumerateFilterInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumeratefilters">FltEnumerateFilters</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumerateinstanceinformationbyfilter">FltEnumerateInstanceInformationByFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumerateinstanceinformationbyvolume">FltEnumerateInstanceInformationByVolume</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumerateinstances">FltEnumerateInstances</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstances.md">FltEnumerateInstances</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumeratevolumes">FltEnumerateVolumes</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratevolumes.md">FltEnumerateVolumes</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetfilterinformation">FltGetFilterInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateVolumeInformation routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateVolumeInformation routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

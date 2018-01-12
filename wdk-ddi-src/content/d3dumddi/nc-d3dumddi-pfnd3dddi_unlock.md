@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_UNLOCK
+UID: NC:d3dumddi.PFND3DDDI_UNLOCK
 title: PFND3DDDI_UNLOCK
 author: windows-driver-content
 description: The Unlock function unlocks a resource or a surface within the resource that was previously locked by the Lock function.
@@ -7,7 +7,7 @@ old-location: display\unlock.htm
 old-project: display
 ms.assetid: 23cc9c64-99d4-4602-a1b0-234fe7fcc3da
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_UNLOCK callback
@@ -64,7 +65,7 @@ __checkReturn HRESULT APIENTRY Unlock(
 
 ### -param pData [in]
 
- A pointer to a <a href="display.d3dddiarg_unlock">D3DDDIARG_UNLOCK</a> structure that describes the resource or surface within the resource to unlock.
+ A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlock.md">D3DDDIARG_UNLOCK</a> structure that describes the resource or surface within the resource to unlock.
 
 
 ## -returns
@@ -77,7 +78,7 @@ __checkReturn HRESULT APIENTRY Unlock(
 </dl><i>Unlock</i> could not allocate the required memory for it to complete.
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>The resource that <a href="display.d3dddiarg_unlock">D3DDDIARG_UNLOCK</a> describes was not locked by a previous call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a> function. 
+</dl>The resource that <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlock.md">D3DDDIARG_UNLOCK</a> describes was not locked by a previous call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a> function. 
 
  
 
@@ -87,7 +88,7 @@ These comments are analogous to the description in the Remarks section of the <a
 
 The user-mode display driver must call the Microsoft Direct3D runtime's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a> function after <i>Unlock</i> is called. In this <b>pfnUnlockCb</b> call, the user-mode display driver passes an allocation handle. Before calling <b>pfnUnlockCb</b>, the user-mode display driver must first map the surface to an appropriate allocation. 
 
-The runtime calls the user-mode display driver's <i>Unlock</i> function to unlock preallocated system memory surfaces as well. The runtime sets the <b>NotifyOnly</b> bit-field flag in the <b>Flags</b> member of the <a href="display.d3dddiarg_unlock">D3DDDIARG_UNLOCK</a> structure that is pointed to by <i>pData</i> to differentiate <i>Unlock</i> calls that unlock preallocated system memory from other <i>Unlock</i> calls. If the user-mode display driver's <i>Lock</i> function called <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> to lock the system memory allocation that corresponds to the surface, it must also call <b>pfnUnlockCb</b>. Not calling <b>pfnUnlockCb</b>  stops the coordination between the runtime, the user-mode display driver, and the display miniport driver. 
+The runtime calls the user-mode display driver's <i>Unlock</i> function to unlock preallocated system memory surfaces as well. The runtime sets the <b>NotifyOnly</b> bit-field flag in the <b>Flags</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlock.md">D3DDDIARG_UNLOCK</a> structure that is pointed to by <i>pData</i> to differentiate <i>Unlock</i> calls that unlock preallocated system memory from other <i>Unlock</i> calls. If the user-mode display driver's <i>Lock</i> function called <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> to lock the system memory allocation that corresponds to the surface, it must also call <b>pfnUnlockCb</b>. Not calling <b>pfnUnlockCb</b>  stops the coordination between the runtime, the user-mode display driver, and the display miniport driver. 
 
 
 ## -requirements
@@ -129,10 +130,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiarg_unlock">D3DDDIARG_UNLOCK</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlock.md">D3DDDIARG_UNLOCK</a>
 </dt>
 <dt>
-<a href="display.d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a>
@@ -148,5 +149,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_UNLOCK callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_UNLOCK callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

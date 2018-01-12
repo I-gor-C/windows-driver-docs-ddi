@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMSendPage
+UID: NF:printoem.OEMSendPage
 title: OEMSendPage function
 author: windows-driver-content
 description: The OEMSendPage function is called by GDI when it has finished drawing a physical page, so that the driver can send the page to the printer.
@@ -7,7 +7,7 @@ old-location: print\oemsendpage.htm
 old-project: print
 ms.assetid: 9a3380d0-2d90-49ec-b97d-be55eb6eaaa5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMSendPage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

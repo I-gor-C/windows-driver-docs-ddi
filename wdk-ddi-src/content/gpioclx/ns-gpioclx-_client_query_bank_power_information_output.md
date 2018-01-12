@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT
+UID: NS:gpioclx._CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT
 title: _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT
 author: windows-driver-content
 description: The CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT structure contains information about the power-management capabilities of a bank of general-purpose I/O (GPIO) pins.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 156115CB-FF0C-4E53-BB7E-CF98420DF443
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, *PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT
+ms.keywords: _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, *PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PCLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT, CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT
 ---
 
 # _CLIENT_QUERY_BANK_POWER_INFORMATION_OUTPUT structure
@@ -76,7 +77,7 @@ Not used.
 
 ### -field F1IdleStateParameters
 
-A <b>PO_FX_COMPONENT_IDLE_STATE</b> structure that describes the parameters (transition latency, residency requirement, and so on) for the F1 power state of the GPIO bank. For more information about these parameters, see <a href="kernel.po_fx_component_idle_state">PO_FX_COMPONENT_IDLE_STATE</a>.
+A <b>PO_FX_COMPONENT_IDLE_STATE</b> structure that describes the parameters (transition latency, residency requirement, and so on) for the F1 power state of the GPIO bank. For more information about these parameters, see <a href="..\wdm\ns-wdm-_po_fx_component_idle_state.md">PO_FX_COMPONENT_IDLE_STATE</a>.
 
 
 ## -remarks
@@ -116,7 +117,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a>
 </dt>
 <dt>
-<a href="kernel.po_fx_component_idle_state">PO_FX_COMPONENT_IDLE_STATE</a>
+<a href="..\wdm\ns-wdm-_po_fx_component_idle_state.md">PO_FX_COMPONENT_IDLE_STATE</a>
 </dt>
 </dl>
  

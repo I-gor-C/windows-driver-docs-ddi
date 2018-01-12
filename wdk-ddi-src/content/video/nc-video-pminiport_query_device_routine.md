@@ -1,5 +1,5 @@
 ---
-UID: NC.video.PMINIPORT_QUERY_DEVICE_ROUTINE
+UID: NC:video.PMINIPORT_QUERY_DEVICE_ROUTINE
 title: PMINIPORT_QUERY_DEVICE_ROUTINE
 author: windows-driver-content
 description: HwVidQueryDeviceCallback uses the specified configuration data to configure its adapter, and, possibly, to fill in missing configuration information in the VIDEO_PORT_CONFIG_INFO structure.
@@ -7,8 +7,8 @@ old-location: display\hwvidquerydevicecallback.htm
 old-project: display
 ms.assetid: 81c3f484-427e-43b8-b7dd-12017533560b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VHF_CONFIG, *PVHF_CONFIG, PVHF_CONFIG, VHF_CONFIG
+ms.date: 12/29/2017
+ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<i>HwVidQueryDeviceCallback</i> uses the specified configuration data to configure its adapter, and, possibly, to fill in missing configuration information in the <a href="display.video_port_config_info">VIDEO_PORT_CONFIG_INFO</a> structure.
+<i>HwVidQueryDeviceCallback</i> uses the specified configuration data to configure its adapter, and, possibly, to fill in missing configuration information in the <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a> structure.
 
 
 
@@ -121,7 +122,7 @@ Pointer to hardware configuration data. The format of this data is determined by
 
 ### -param ConfigurationDataLength 
 
-Specifies the size in bytes of the <i>ConfigurationData</i> buffer. In effect, this indicates how much information was collected from the registry and stored in the <i>ConfigurationData</i> buffer allocated by <a href="display.videoportgetdevicebase">VideoPortGetDeviceBase</a>.
+Specifies the size in bytes of the <i>ConfigurationData</i> buffer. In effect, this indicates how much information was collected from the registry and stored in the <i>ConfigurationData</i> buffer allocated by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.
 
 
 ### -param ComponentInformation 
@@ -139,13 +140,13 @@ Reserved for system use.
 
 
 ## -remarks
-<i>HwVidQueryDeviceCallback</i> is passed in a call to <a href="display.videoportgetdevicedata">VideoPortGetDeviceData</a> from the miniport driver's <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a> function. <b>VideoPortGetDeviceData</b> calls <i>HwVidQueryDeviceCallback</i> after collecting available configuration information under the <b>\Registry\Machine\Hardware\Description</b> node of the registry.
+<i>HwVidQueryDeviceCallback</i> is passed in a call to <a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a> from the miniport driver's <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a> function. <b>VideoPortGetDeviceData</b> calls <i>HwVidQueryDeviceCallback</i> after collecting available configuration information under the <b>\Registry\Machine\Hardware\Description</b> node of the registry.
 
-<i>HwVidQueryDeviceCallback</i> examines the <i>ConfigurationData</i>, collected from the registry by <b>VideoPortGetDeviceData</b>. It uses this information to configure its adapter, and, possibly, to fill in missing configuration information in the <a href="display.video_port_config_info">VIDEO_PORT_CONFIG_INFO</a> structure.
+<i>HwVidQueryDeviceCallback</i> examines the <i>ConfigurationData</i>, collected from the registry by <b>VideoPortGetDeviceData</b>. It uses this information to configure its adapter, and, possibly, to fill in missing configuration information in the <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a> structure.
 
-<i>HwVidQueryDeviceCallback</i> cannot pass access range values found in the <i>ConfigurationData</i> to any <b>VideoPortRead</b><i>Xxx</i> or <b>VideoPortWrite</b><i>Xxx</i> directly; such addresses first must be mapped by calling <a href="display.videoportgetdevicebase">VideoPortGetDeviceBase</a>.
+<i>HwVidQueryDeviceCallback</i> cannot pass access range values found in the <i>ConfigurationData</i> to any <b>VideoPortRead</b><i>Xxx</i> or <b>VideoPortWrite</b><i>Xxx</i> directly; such addresses first must be mapped by calling <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.
 
-If the <i>ConfigurationData</i> buffer has no access range information and the miniport driver's <i>HwVidFindAdapter</i> function has not already called <a href="display.videoportgetbusdata">VideoPortGetBusData</a> (or <a href="display.videoportgetaccessranges">VideoPortGetAccessRanges</a>), its <i>HwVidQueryDeviceCallback</i> function can call <b>VideoPortGetBusData</b>. Access range information returned by <b>VideoPortGetBusData</b> also must be passed to <a href="display.videoportverifyaccessranges">VideoPortVerifyAccessRanges</a>.
+If the <i>ConfigurationData</i> buffer has no access range information and the miniport driver's <i>HwVidFindAdapter</i> function has not already called <a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a> (or <a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>), its <i>HwVidQueryDeviceCallback</i> function can call <b>VideoPortGetBusData</b>. Access range information returned by <b>VideoPortGetBusData</b> also must be passed to <a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>.
 
 If <b>VideoPortVerifyAccessRanges</b> returns NO_ERROR, the miniport driver can call <b>VideoPortGetDeviceBase</b> to obtain mapped logical addresses that it can use to communicate with the adapter by calling the <b>VideoPortRead</b><i>Xxx</i> and/or <b>VideoPortWrite</b><i>Xxx</i> functions.
 
@@ -183,24 +184,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.videoportgetaccessranges">VideoPortGetAccessRanges</a>
+<a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
 </dt>
 <dt>
-<a href="display.videoportgetbusdata">VideoPortGetBusData</a>
+<a href="..\video\nf-video-videoportgetbusdata.md">VideoPortGetBusData</a>
 </dt>
 <dt>
-<a href="display.videoportgetdevicebase">VideoPortGetDeviceBase</a>
+<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
 </dt>
 <dt>
-<a href="display.videoportgetdevicedata">VideoPortGetDeviceData</a>
+<a href="..\video\nf-video-videoportgetdevicedata.md">VideoPortGetDeviceData</a>
 </dt>
 <dt>
-<a href="display.videoportverifyaccessranges">VideoPortVerifyAccessRanges</a>
+<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PMINIPORT_QUERY_DEVICE_ROUTINE callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PMINIPORT_QUERY_DEVICE_ROUTINE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCmActivateVc
+UID: NF:ndis.NdisCmActivateVc
 title: NdisCmActivateVc function
 author: windows-driver-content
 description: NdisCmActivateVc passes CM-supplied call parameters, including media parameters, for a particular VC down to the underlying miniport driver.
 old-location: netvista\ndiscmactivatevc.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9091426c-3174-4367-b7c7-5684877efe9c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisCmActivateVc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCmActivateVc function
@@ -59,7 +60,7 @@ NDIS_STATUS NdisCmActivateVc(
 
 Specifies the handle identifying the VC on which to set call parameters. The call manager either
      obtained this handle from 
-     <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a> for an incoming call or as
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> for an incoming call or as
      an input parameter to its 
      <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function for a
      client-initiated outgoing call.
@@ -94,7 +95,7 @@ A stand-alone CM always calls
     that VC. For the duration of the connection, a CM can call 
     <b>NdisCmActivateVc</b> many times with the same 
     <i>NdisVcHandle</i> as conditions on the network change and/or whenever the client calls 
-    <a href="netvista.ndisclmodifycallqos">NdisClModifyCallQoS</a>. At each such
+    <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>. At each such
     call to 
     <b>NdisCmActivateVc</b>, the underlying miniport driver's 
     <i>MiniportCoActivateVc</i> function must do either of the following:
@@ -116,17 +117,17 @@ For a client-initiated outgoing call, a stand-alone CM usually calls
     <b>NdisCmActivateVc</b> immediately following the packet exchange confirming a negotiated agreement with
     the remote target of the call or successful call-setup at the switch, before it notifies NDIS (and the
     client) of outgoing call completion with 
-    <a href="netvista.ndiscmmakecallcomplete">NdisCmMakeCallComplete</a>. For an
+    <a href="..\ndis\nf-ndis-ndiscmmakecallcomplete.md">NdisCmMakeCallComplete</a>. For an
     incoming call, a call manager usually calls 
     <b>NdisCmActivateVc</b> after it has called 
-    <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a> successfully and before it
+    <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> successfully and before it
     calls 
-    <a href="netvista.ndiscmdispatchincomingcall">
+    <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">
     NdisCmDispatchIncomingCall</a>.
 
 In the process of setting up an outgoing call and while any VC remains activated, the client can
     request changes to the call parameters for that VC, for example, by calling 
-    <a href="netvista.ndisclmodifycallqos">NdisClModifyCallQos</a>. After verifying
+    <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQos</a>. After verifying
     the validity of the given call parameters for any such a request, the stand-alone call manager must call 
     <b>NdisCmActivateVc</b> to pass the modified call parameters down to the underlying miniport driver.
 
@@ -201,7 +202,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_callmanager_function">Irql_CallManager_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547917">Irql_CallManager_Function</a>
 </td>
 </tr>
 </table>
@@ -215,22 +216,22 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmodifycallqos">NdisClModifyCallQos</a>
+<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQos</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdeactivatevc">NdisCmDeactivateVc</a>
+<a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdispatchincomingcall">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmactivatevc">NdisMCmActivateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmactivatevc.md">NdisMCmActivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
@@ -244,5 +245,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCmActivateVc function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmActivateVc function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

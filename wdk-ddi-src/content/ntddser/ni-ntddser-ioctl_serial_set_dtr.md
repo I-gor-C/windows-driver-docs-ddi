@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_SET_DTR
+UID: NI:ntddser.IOCTL_SERIAL_SET_DTR
 title: IOCTL_SERIAL_SET_DTR
 author: windows-driver-content
 description: The IOCTL_SERIAL_SET_DTR request sets DTR (data terminal ready).
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_DTR IOCTL

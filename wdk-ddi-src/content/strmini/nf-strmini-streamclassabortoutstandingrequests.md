@@ -1,5 +1,5 @@
 ---
-UID: NF.strmini.StreamClassAbortOutstandingRequests
+UID: NF:strmini.StreamClassAbortOutstandingRequests
 title: StreamClassAbortOutstandingRequests function
 author: windows-driver-content
 description: The StreamClassAbortOutstandingRequests routine aborts all outstanding requests, either to a particular stream, or to the entire driver.
@@ -7,7 +7,7 @@ old-location: stream\streamclassabortoutstandingrequests.htm
 old-project: stream
 ms.assetid: d60ef96b-d145-48e5-be56-7f0bc4d1d0f3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: StreamClassAbortOutstandingRequests
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Stream.lib
 req.dll: 
 req.irql: > DISPATCH_LEVEL
+req.typenames: *PSTREAM_PRIORITY, STREAM_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -58,12 +59,12 @@ VOID StreamClassAbortOutstandingRequests(
 
 ### -param HwDeviceExtension [in]
 
-Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="stream.hw_stream_request_block">HW_STREAM_REQUEST_BLOCK</a>, <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>, <a href="stream.hw_time_context">HW_TIME_CONTEXT</a>, and <a href="stream.port_configuration_information">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
+Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
 
 ### -param HwStreamObject [in, optional]
 
-Pointer to a <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a> that specifies which stream to abort requests on, or <b>NULL</b> to abort all requests to the minidriver. If this parameter is <b>NULL</b>, all device and stream requests are canceled.
+Pointer to a <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a> that specifies which stream to abort requests on, or <b>NULL</b> to abort all requests to the minidriver. If this parameter is <b>NULL</b>, all device and stream requests are canceled.
 
 
 ### -param Status [in]

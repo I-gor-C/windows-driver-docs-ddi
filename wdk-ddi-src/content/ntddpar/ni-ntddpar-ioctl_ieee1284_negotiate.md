@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpar.IOCTL_IEEE1284_NEGOTIATE
+UID: NI:ntddpar.IOCTL_IEEE1284_NEGOTIATE
 title: IOCTL_IEEE1284_NEGOTIATE
 author: windows-driver-content
 description: The IOCTL_IEEE1284_NEGOTIATE request sets the read and write protocols that are used for a parallel device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # IOCTL_IEEE1284_NEGOTIATE IOCTL
@@ -54,7 +55,7 @@ For more information, see <a href="https://msdn.microsoft.com/2ff53ed0-dbb7-4c8f
 ## -ioctlparameters
 
 ### -input-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="parports.parclass_negotiation_mask">PARCLASS_NEGOTIATION_MASK</a> structure that the client allocates for the input and output of mode information. The client sets the <b>usReadMask</b> and <b>usWriteMask</b> members.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\ntddpar\ns-ntddpar-_parclass_negotiation_mask.md">PARCLASS_NEGOTIATION_MASK</a> structure that the client allocates for the input and output of mode information. The client sets the <b>usReadMask</b> and <b>usWriteMask</b> members.
 
 
 ### -input-buffer-length
@@ -66,7 +67,7 @@ The <b>AssociatedIrp.SystemBuffer</b> points to the PARCLASS_NEGOTIATION_MASK st
 
 
 ### -output-buffer-length
-The length of a <a href="parports.parclass_negotiation_mask">PARCLASS_NEGOTIATION_MASK</a> structure.
+The length of a <a href="..\ntddpar\ns-ntddpar-_parclass_negotiation_mask.md">PARCLASS_NEGOTIATION_MASK</a> structure.
 
 
 ### -in-out-buffer
@@ -118,7 +119,7 @@ Header
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_get_device_caps.md">IOCTL_PAR_GET_DEVICE_CAPS</a>
 </dt>
 <dt>
-<a href="parports.parclass_negotiation_mask">PARCLASS_NEGOTIATION_MASK</a>
+<a href="..\ntddpar\ns-ntddpar-_parclass_negotiation_mask.md">PARCLASS_NEGOTIATION_MASK</a>
 </dt>
 </dl>
  

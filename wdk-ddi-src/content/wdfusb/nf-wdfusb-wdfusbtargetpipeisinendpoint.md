@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfusb.WdfUsbTargetPipeIsInEndpoint
+UID: NF:wdfusb.WdfUsbTargetPipeIsInEndpoint
 title: WdfUsbTargetPipeIsInEndpoint function
 author: windows-driver-content
 description: The WdfUsbTargetPipeIsInEndpoint method determines whether a specified USB pipe is connected to an input endpoint.
@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetpipeisinendpoint.htm
 old-project: wdf
 ms.assetid: 431d8f18-18db-460c-9f2f-454a5378825c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfUsbTargetPipeIsInEndpoint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -58,7 +59,7 @@ BOOLEAN WdfUsbTargetPipeIsInEndpoint(
 
 ### -param Pipe [in]
 
-A handle to a framework pipe object that represents a bulk pipe or interrupt pipe and was obtained by calling <a href="wdf.wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>. 
+A handle to a framework pipe object that represents a bulk pipe or interrupt pipe and was obtained by calling <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>. 
 
 
 ## -returns
@@ -70,7 +71,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 ## -remarks
-For more information about the <b>WdfUsbTargetPipeIsInEndpoint</b> method and USB I/O targets, see <a href="wdf.usb_i_o_targets">USB I/O Targets</a>.
+For more information about the <b>WdfUsbTargetPipeIsInEndpoint</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
 The following code example determines whether a specified USB pipe is connected to an input endpoint.
 
@@ -147,7 +148,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_usbkmdfirql">UsbKmdfIrql</a>, <a href="devtest.kmdf_usbkmdfirql2">UsbKmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554042">UsbKmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh995019">UsbKmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -155,18 +156,18 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdf_usb_pipe_direction_in">WDF_USB_PIPE_DIRECTION_IN</a>
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_direction_in.md">WDF_USB_PIPE_DIRECTION_IN</a>
 </dt>
 <dt>
-<a href="wdf.wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
 </dt>
 <dt>
-<a href="wdf.wdfusbtargetpipeisoutendpoint">WdfUsbTargetPipeIsOutEndpoint</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeisoutendpoint.md">WdfUsbTargetPipeIsOutEndpoint</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetPipeIsInEndpoint method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetPipeIsInEndpoint method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

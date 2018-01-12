@@ -1,5 +1,5 @@
 ---
-UID: NS.WDFREQUEST._WDF_REQUEST_COMPLETION_PARAMS
+UID: NS:wdfrequest._WDF_REQUEST_COMPLETION_PARAMS
 title: _WDF_REQUEST_COMPLETION_PARAMS
 author: windows-driver-content
 description: The WDF_REQUEST_COMPLETION_PARAMS structure contains parameters that are associated with the completion of an I/O request.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_request_completion_params.htm
 old-project: wdf
 ms.assetid: e3993202-c49d-4de9-8881-9e3786575e17
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_REQUEST_COMPLETION_PARAMS, *PWDF_REQUEST_COMPLETION_PARAMS, PWDF_REQUEST_COMPLETION_PARAMS, WDF_REQUEST_COMPLETION_PARAMS
+ms.date: 12/29/2017
+ms.keywords: _WDF_REQUEST_COMPLETION_PARAMS, *PWDF_REQUEST_COMPLETION_PARAMS, WDF_REQUEST_COMPLETION_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_REQUEST_COMPLETION_PARAMS, WDF_REQUEST_COMPLETION_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -110,12 +111,12 @@ The size, in bytes, of this structure.
 
 ### -field Type
 
-A <a href="wdf.wdf_request_type">WDF_REQUEST_TYPE</a> value that identifies the request type.
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a> value that identifies the request type.
 
 
 ### -field IoStatus
 
-An <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure for the request.
+An <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure for the request.
 
 
 ### -field Parameters
@@ -230,7 +231,7 @@ Use of this member is defined by the driver stack.
 
 ### -field Usb
 
-For USB devices, this member contains a pointer to a <a href="wdf.wdf_usb_request_completion_params">WDF_USB_REQUEST_COMPLETION_PARAMS</a> structure.
+For USB devices, this member contains a pointer to a <a href="..\wdfusb\ns-wdfusb-_wdf_usb_request_completion_params.md">WDF_USB_REQUEST_COMPLETION_PARAMS</a> structure.
 
 
 
@@ -238,11 +239,11 @@ For USB devices, this member contains a pointer to a <a href="wdf.wdf_usb_reques
 </dl>
 
 ## -remarks
-The <b>WDF_REQUEST_COMPLETION_PARAMS</b> structure is used as input to the <a href="wdf.wdfrequestgetcompletionparams">WdfRequestGetCompletionParams</a> method and a driver's <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function.
+The <b>WDF_REQUEST_COMPLETION_PARAMS</b> structure is used as input to the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetcompletionparams.md">WdfRequestGetCompletionParams</a> method and a driver's <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function.
 
- In both cases, the completion parameters structure contains valid information only if the driver has formatted the request by calling one of the <b>WdfIoTargetFormat</b><i>Xxx</i> methods. For example, see <a href="wdf.wdfiotargetformatrequestforread">WdfIoTargetFormatRequestForRead</a>.
+ In both cases, the completion parameters structure contains valid information only if the driver has formatted the request by calling one of the <b>WdfIoTargetFormat</b><i>Xxx</i> methods. For example, see <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetformatrequestforread.md">WdfIoTargetFormatRequestForRead</a>.
 
-Before calling <a href="wdf.wdfrequestgetcompletionparams">WdfRequestGetCompletionParams</a> to retrieve the I/O completion information for a request, the driver must first call <a href="wdf.wdf_request_completion_params_init">WDF_REQUEST_COMPLETION_PARAMS_INIT</a> to initialize the <b>WDF_REQUEST_COMPLETION_PARAMS</b> structure.
+Before calling <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetcompletionparams.md">WdfRequestGetCompletionParams</a> to retrieve the I/O completion information for a request, the driver must first call <a href="..\wdfrequest\nf-wdfrequest-wdf_request_completion_params_init.md">WDF_REQUEST_COMPLETION_PARAMS_INIT</a> to initialize the <b>WDF_REQUEST_COMPLETION_PARAMS</b> structure.
 
 The <b>Parameters.Others.Argument</b>  members are custom arguments that a driver typically passes down the stack (and can arrive back after the request is completed).  They are used for non-standard, driver stack dependent data. For example, a USB driver specifies a pointer to a URB in  <b>Parameters.Others.Argument1</b> when it sends a <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_submit_urb.md">IOCTL_INTERNAL_USB_SUBMIT_URB</a> request to the USB stack.  Similarly, a Bluetooth driver specifies a pointer to a  BRB (Bluetooth Request Block) in <b>Parameters.Others.Argument1</b> when it receives an <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>.
 
@@ -285,16 +286,16 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfrequestgetcompletionparams">WdfRequestGetCompletionParams</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetcompletionparams.md">WdfRequestGetCompletionParams</a>
 </dt>
 <dt>
-<a href="wdf.wdf_request_completion_params_init">WDF_REQUEST_COMPLETION_PARAMS_INIT</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdf_request_completion_params_init.md">WDF_REQUEST_COMPLETION_PARAMS_INIT</a>
 </dt>
 <dt>
-<a href="kernel.io_status_block">IO_STATUS_BLOCK</a>
+<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 </dt>
 <dt>
-<a href="wdf.wdf_request_type">WDF_REQUEST_TYPE</a>
+<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>
 </dt>
 <dt>
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
@@ -304,5 +305,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_COMPLETION_PARAMS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_COMPLETION_PARAMS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

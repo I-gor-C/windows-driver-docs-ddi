@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_SWITCH_PORT_PROPERTY_ISOLATION
+UID: NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_ISOLATION
 title: _NDIS_SWITCH_PORT_PROPERTY_ISOLATION
 author: windows-driver-content
 description: The NDIS_SWITCH_PORT_PROPERTY_ISOLATION structure is used to specify the isolation properties for a VM network adapter's port.
 old-location: netvista\ndis_switch_port_property_isolation.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 142AF97B-601E-44FB-8548-90CB152B8760
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_SWITCH_PORT_PROPERTY_ISOLATION, *PNDIS_SWITCH_PORT_PROPERTY_ISOLATION, NDIS_SWITCH_PORT_PROPERTY_ISOLATION, PNDIS_SWITCH_PORT_PROPERTY_ISOLATION
+ms.date: 1/8/2018
+ms.keywords: _NDIS_SWITCH_PORT_PROPERTY_ISOLATION, *PNDIS_SWITCH_PORT_PROPERTY_ISOLATION, NDIS_SWITCH_PORT_PROPERTY_ISOLATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_SWITCH_PORT_PROPERTY_ISOLATION, NDIS_SWITCH_PORT_PROPERTY_ISOLATION
 ---
 
 # _NDIS_SWITCH_PORT_PROPERTY_ISOLATION structure
@@ -59,7 +60,7 @@ typedef struct _NDIS_SWITCH_PORT_PROPERTY_ISOLATION {
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_ISOLATION</b>  structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_ISOLATION</b>  structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. To specify the version of the <b>NDIS_SWITCH_PORT_PROPERTY_ISOLATION</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -82,7 +83,7 @@ A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. This member is 
 
 ### -field IsolationMode
 
-An <a href="netvista.ndis_isolation_mode">NDIS_ISOLATION_MODE</a> enumeration value that specifies the isolation mode.
+An <a href="..\ntddndis\ne-ntddndis-_ndis_isolation_mode.md">NDIS_ISOLATION_MODE</a> enumeration value that specifies the isolation mode.
 
 
 ### -field AllowUntaggedTraffic
@@ -126,18 +127,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_isolation_mode">NDIS_ISOLATION_MODE</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_isolation_mode.md">NDIS_ISOLATION_MODE</a>
 </dt>
 <dt>
-<a href="netvista.ndis_isolation_parameters">NDIS_ISOLATION_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_isolation_parameters.md">NDIS_ISOLATION_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_SWITCH_PORT_PROPERTY_ISOLATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_PROPERTY_ISOLATION structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

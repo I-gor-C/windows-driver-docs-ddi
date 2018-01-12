@@ -1,5 +1,5 @@
 ---
-UID: NI.nfcsedev.IOCTL_NFCSE_GET_ROUTING_TABLE
+UID: NI:nfcsedev.IOCTL_NFCSE_GET_ROUTING_TABLE
 title: IOCTL_NFCSE_GET_ROUTING_TABLE
 author: windows-driver-content
 description: Returns information regarding the current configuration of listen mode routing table.
@@ -7,8 +7,8 @@ old-location: nfpdrivers\ioctl_nfcse_get_routing_table.htm
 old-project: nfpdrivers
 ms.assetid: 838D31E8-1835-47C7-8201-93910610F5EC
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, PSECURE_ELEMENT_TYPE
+ms.date: 12/18/2017
+ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # IOCTL_NFCSE_GET_ROUTING_TABLE IOCTL
@@ -56,7 +57,7 @@ None
 
 ### -output-buffer
 
-<a href="nfpdrivers._secure_element_routing_table"> SECURE_ELEMENT_ROUTING_TABLE</a> containing all currently configured routing entries.
+<a href="..\nfcsedev\ns-nfcsedev-_secure_element_routing_table.md"> SECURE_ELEMENT_ROUTING_TABLE</a> containing all currently configured routing entries.
 
 
 

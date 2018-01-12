@@ -1,5 +1,5 @@
 ---
-UID: NS.RESHUB._PNP_SERIAL_BUS_DESCRIPTOR
+UID: NS:reshub._PNP_SERIAL_BUS_DESCRIPTOR
 title: _PNP_SERIAL_BUS_DESCRIPTOR
 author: windows-driver-content
 description: The PNP_SERIAL_BUS_DESCRIPTOR structure describes the physical connection of a target device to a serial bus (I2C, SPI, or UART).
@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 7516B493-F86E-44C5-ABCD-450B6F66AA15
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PNP_SERIAL_BUS_DESCRIPTOR, PPNP_SERIAL_BUS_DESCRIPTOR, *PPNP_SERIAL_BUS_DESCRIPTOR, PNP_SERIAL_BUS_DESCRIPTOR
+ms.keywords: _PNP_SERIAL_BUS_DESCRIPTOR, PNP_SERIAL_BUS_DESCRIPTOR, *PPNP_SERIAL_BUS_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PNP_SERIAL_BUS_DESCRIPTOR, *PPNP_SERIAL_BUS_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 

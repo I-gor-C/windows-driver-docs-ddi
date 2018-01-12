@@ -1,5 +1,5 @@
 ---
-UID: NS.PEPFX._PEP_PPM_FEEDBACK_READ
+UID: NS:pepfx._PEP_PPM_FEEDBACK_READ
 title: _PEP_PPM_FEEDBACK_READ
 author: windows-driver-content
 description: The PEP_PPM_FEEDBACK_READ structure contains the value read from a processor performance feedback counter.
@@ -7,8 +7,8 @@ old-location: kernel\pep_ppm_feedback_read.htm
 old-project: kernel
 ms.assetid: 9D5787B8-CEF4-49AA-B7C6-C200AC95A280
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_PPM_FEEDBACK_READ, PEP_PPM_FEEDBACK_READ, PPEP_PPM_FEEDBACK_READ, *PPEP_PPM_FEEDBACK_READ
+ms.date: 1/4/2018
+ms.keywords: _PEP_PPM_FEEDBACK_READ, PEP_PPM_FEEDBACK_READ, *PPEP_PPM_FEEDBACK_READ
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PEP_PPM_FEEDBACK_READ, *PPEP_PPM_FEEDBACK_READ
 ---
 
 # _PEP_PPM_FEEDBACK_READ structure
@@ -95,7 +96,7 @@ The nominal accumulated count and actual count, if the counter hardware generate
 </dl>
 
 ## -remarks
-This structure is used by the <a href="kernel.pep_notify_ppm_feedback_read">PEP_NOTIFY_PPM_FEEDBACK_READ</a> notification. The <b>CounterIndex</b> member of the structure contains an input value supplied by the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) when this notification is set. The other members contain output values that the PEP writes to the structure in response to the notification. The PEP writes to the <b>InstantaneousValue</b> member if the counter generates an instantaneous value, or to the <b>NominalCount</b> and <b>ActualCount</b> members if the counter generates a relative value.
+This structure is used by the <a href="kernel.pep_notify_ppm_feedback_read">PEP_NOTIFY_PPM_FEEDBACK_READ</a> notification. The <b>CounterIndex</b> member of the structure contains an input value supplied by the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx) when this notification is set. The other members contain output values that the PEP writes to the structure in response to the notification. The PEP writes to the <b>InstantaneousValue</b> member if the counter generates an instantaneous value, or to the <b>NominalCount</b> and <b>ActualCount</b> members if the counter generates a relative value.
 
 Both an instantaneous counter and a relative counter are reset to zero when power is first turned on, but reading a relative counter causes the count to reset to zero, whereas reading an instantaneous counter does not reset the count. The PEP previously indicated whether the counter is instantaneous or relative in response to a <a href="kernel.pep_notify_ppm_query_feedback_counters">PEP_NOTIFY_PPM_QUERY_FEEDBACK_COUNTERS</a> notification.
 
@@ -141,5 +142,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_FEEDBACK_READ structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_FEEDBACK_READ structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

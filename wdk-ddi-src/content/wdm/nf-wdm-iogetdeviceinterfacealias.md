@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoGetDeviceInterfaceAlias
+UID: NF:wdm.IoGetDeviceInterfaceAlias
 title: IoGetDeviceInterfaceAlias function
 author: windows-driver-content
 description: The IoGetDeviceInterfaceAlias routine returns the alias device interface of the specified device interface instance, if the alias exists.
@@ -7,7 +7,7 @@ old-location: kernel\iogetdeviceinterfacealias.htm
 old-project: kernel
 ms.assetid: 667c9524-be12-4f02-b921-6067abfb1dde
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoGetDeviceInterfaceAlias
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -58,7 +59,7 @@ NTSTATUS IoGetDeviceInterfaceAlias(
 
 ### -param SymbolicLinkName [in]
 
-Pointer to the name of the device interface instance for which to retrieve an alias. The caller typically received this string from a call to <a href="kernel.iogetdeviceinterfaces">IoGetDeviceInterfaces</a> or in a PnP notification structure.
+Pointer to the name of the device interface instance for which to retrieve an alias. The caller typically received this string from a call to <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a> or in a PnP notification structure.
 
 
 ### -param AliasInterfaceClassGuid [in]
@@ -68,7 +69,7 @@ Pointer to a GUID specifying the interface class of the alias to retrieve.
 
 ### -param AliasSymbolicLinkName [out]
 
-Specifies a pointer to a <b>NULL</b> Unicode string. On successful return, <i>AliasSymbolicLinkName</i>.<b>Buffer</b> points to a string containing the name of the alias. The caller must free the Unicode string with <a href="kernel.rtlfreeunicodestring">RtlFreeUnicodeString</a> when it is no longer needed.
+Specifies a pointer to a <b>NULL</b> Unicode string. On successful return, <i>AliasSymbolicLinkName</i>.<b>Buffer</b> points to a string containing the name of the alias. The caller must free the Unicode string with <a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a> when it is no longer needed.
 
 
 ## -returns
@@ -170,7 +171,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -178,15 +179,15 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.ioregisterdeviceinterface">IoRegisterDeviceInterface</a>
+<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
 </dt>
 <dt>
-<a href="kernel.rtlfreeunicodestring">RtlFreeUnicodeString</a>
+<a href="..\wdm\nf-wdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetDeviceInterfaceAlias routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetDeviceInterfaceAlias routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWavePciStream.TerminatePacket
+UID: NF:portcls.IPortWavePciStream.TerminatePacket
 title: IPortWavePciStream::TerminatePacket method
 author: windows-driver-content
 description: The TerminatePacket method terminates the packet currently being mapped.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWavePciStream::TerminatePacket method

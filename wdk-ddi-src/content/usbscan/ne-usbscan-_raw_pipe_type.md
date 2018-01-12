@@ -1,13 +1,13 @@
 ---
-UID: NE.usbscan._RAW_PIPE_TYPE
+UID: NE:usbscan._RAW_PIPE_TYPE
 title: _RAW_PIPE_TYPE
 author: windows-driver-content
 description: The RAW_PIPE_TYPE data type is used to specify the type of a USB pipe.
 old-location: image\raw_pipe_type.htm
-old-project: Image
+old-project: image
 ms.assetid: 6af4161c-7caa-4d80-8938-303380ee3058
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: RAW_PIPE_TYPE
 req.product: Windows 10 or later.
 ---
 

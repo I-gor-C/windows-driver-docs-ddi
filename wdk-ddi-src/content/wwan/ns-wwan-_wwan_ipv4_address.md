@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_IPV4_ADDRESS
+UID: NS:wwan._WWAN_IPV4_ADDRESS
 title: _WWAN_IPV4_ADDRESS
 author: windows-driver-content
 description: The WWAN_IPV4_ADDRESS structure represents an IPV4 address of a PDP context.
 old-location: netvista\wwan_ipv4_address.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: D75EAC9E-8E65-437E-83AA-59B422527C6C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_IPV4_ADDRESS, WWAN_IPV4_ADDRESS, PWWAN_IPV4_ADDRESS, *PWWAN_IPV4_ADDRESS
+ms.date: 1/8/2018
+ms.keywords: _WWAN_IPV4_ADDRESS, WWAN_IPV4_ADDRESS, *PWWAN_IPV4_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WWAN_IPV4_ADDRESS, *PWWAN_IPV4_ADDRESS
 req.product: Windows 10 or later.
 ---
 

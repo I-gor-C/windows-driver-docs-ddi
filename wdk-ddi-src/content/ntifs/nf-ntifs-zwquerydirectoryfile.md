@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.ZwQueryDirectoryFile
+UID: NF:ntifs.ZwQueryDirectoryFile
 title: ZwQueryDirectoryFile function
 author: windows-driver-content
 description: The ZwQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file handle.
@@ -7,7 +7,7 @@ old-location: kernel\zwquerydirectoryfile.htm
 old-project: kernel
 ms.assetid: 47e88095-fab3-4fa2-814e-db04ce864e7e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwQueryDirectoryFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: TOKEN_TYPE
 ---
 
 # ZwQueryDirectoryFile function
@@ -65,7 +66,7 @@ NTSTATUS ZwQueryDirectoryFile(
 
 ### -param FileHandle [in]
 
-A handle returned by <a href="kernel.zwcreatefile">ZwCreateFile</a> or <a href="kernel.zwopenfile">ZwOpenFile</a> for the file object that represents the directory for which information is being requested. The file object must have been opened for asynchronous I/O if the caller specifies a non-<b>NULL</b> value for <i>Event</i> or <i>ApcRoutine</i>.
+A handle returned by <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a> for the file object that represents the directory for which information is being requested. The file object must have been opened for asynchronous I/O if the caller specifies a non-<b>NULL</b> value for <i>Event</i> or <i>ApcRoutine</i>.
 
 
 ### -param Event [in, optional]
@@ -87,7 +88,7 @@ This parameter is optional and can be <b>NULL</b>. It must be <b>NULL</b> if <i>
 
 ### -param IoStatusBlock [out]
 
-A pointer to an <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation. For successful calls that return data, the number of bytes written to the <i>FileInformation</i> buffer is returned in the structure's <b>Information</b> member.
+A pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation. For successful calls that return data, the number of bytes written to the <i>FileInformation</i> buffer is returned in the structure's <b>Information</b> member.
 
 
 ### -param FileInformation [out]
@@ -115,7 +116,7 @@ The type of information to be returned about files in the directory. One of the 
 
 </td>
 <td>
-Return a <a href="ifsk.file_both_dir_information">FILE_BOTH_DIR_INFORMATION</a> structure for each file.
+Return a <a href="..\ntifs\ns-ntifs-_file_both_dir_information.md">FILE_BOTH_DIR_INFORMATION</a> structure for each file.
 
 </td>
 </tr>
@@ -125,7 +126,7 @@ Return a <a href="ifsk.file_both_dir_information">FILE_BOTH_DIR_INFORMATION</a> 
 
 </td>
 <td>
-Return a <a href="ifsk.file_directory_information">FILE_DIRECTORY_INFORMATION</a> structure for each file.
+Return a <a href="..\ntifs\ns-ntifs-_file_directory_information.md">FILE_DIRECTORY_INFORMATION</a> structure for each file.
 
 </td>
 </tr>
@@ -135,7 +136,7 @@ Return a <a href="ifsk.file_directory_information">FILE_DIRECTORY_INFORMATION</a
 
 </td>
 <td>
-Return a <a href="ifsk.file_full_dir_information">FILE_FULL_DIR_INFORMATION</a> structure for each file.
+Return a <a href="..\ntifs\ns-ntifs-_file_full_dir_information.md">FILE_FULL_DIR_INFORMATION</a> structure for each file.
 
 </td>
 </tr>
@@ -145,7 +146,7 @@ Return a <a href="ifsk.file_full_dir_information">FILE_FULL_DIR_INFORMATION</a> 
 
 </td>
 <td>
-Return a <a href="ifsk.file_id_both_dir_information">FILE_ID_BOTH_DIR_INFORMATION</a> structure for each file.
+Return a <a href="..\ntifs\ns-ntifs-_file_id_both_dir_information.md">FILE_ID_BOTH_DIR_INFORMATION</a> structure for each file.
 
 </td>
 </tr>
@@ -155,7 +156,7 @@ Return a <a href="ifsk.file_id_both_dir_information">FILE_ID_BOTH_DIR_INFORMATIO
 
 </td>
 <td>
-Return a <a href="ifsk.file_id_full_dir_information">FILE_ID_FULL_DIR_INFORMATION</a> structure for each file.
+Return a <a href="..\ntifs\ns-ntifs-_file_id_full_dir_information.md">FILE_ID_FULL_DIR_INFORMATION</a> structure for each file.
 
 </td>
 </tr>
@@ -165,7 +166,7 @@ Return a <a href="ifsk.file_id_full_dir_information">FILE_ID_FULL_DIR_INFORMATIO
 
 </td>
 <td>
-Return a <a href="ifsk.file_names_information">FILE_NAMES_INFORMATION</a> structure for each file.
+Return a <a href="..\ntifs\ns-ntifs-_file_names_information.md">FILE_NAMES_INFORMATION</a> structure for each file.
 
 </td>
 </tr>
@@ -175,7 +176,7 @@ Return a <a href="ifsk.file_names_information">FILE_NAMES_INFORMATION</a> struct
 
 </td>
 <td>
-Return a <a href="ifsk.file_objectid_information">FILE_OBJECTID_INFORMATION</a> structure for each file. This information class is valid only for NTFS volumes on Windows 2000 and later versions of Windows.
+Return a <a href="..\ntifs\ns-ntifs-_file_objectid_information.md">FILE_OBJECTID_INFORMATION</a> structure for each file. This information class is valid only for NTFS volumes on Windows 2000 and later versions of Windows.
 
 </td>
 </tr>
@@ -185,7 +186,7 @@ Return a <a href="ifsk.file_objectid_information">FILE_OBJECTID_INFORMATION</a> 
 
 </td>
 <td>
-Return a single <a href="ifsk.file_reparse_point_information">FILE_REPARSE_POINT_INFORMATION</a> structure for the directory.
+Return a single <a href="..\ntifs\ns-ntifs-_file_reparse_point_information.md">FILE_REPARSE_POINT_INFORMATION</a> structure for the directory.
 
 </td>
 </tr>
@@ -249,7 +250,7 @@ If <b>ZwQueryDirectoryFile</b> is called multiple times on the same directory an
 
 Callers of <b>ZwQueryDirectoryFile</b> must be running at IRQL = PASSIVE_LEVEL and <a href="https://msdn.microsoft.com/0578df31-1467-4bad-ba62-081d61278deb">with special kernel APCs enabled</a>.
 
-For information about other file information query routines, see <a href="kernel.file_objects">File Objects</a>.
+For information about other file information query routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545843">File Objects</a>.
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
@@ -326,7 +327,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -334,45 +335,45 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_both_dir_information">FILE_BOTH_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_both_dir_information.md">FILE_BOTH_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_directory_information">FILE_DIRECTORY_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_directory_information.md">FILE_DIRECTORY_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_full_dir_information">FILE_FULL_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_full_dir_information.md">FILE_FULL_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_id_both_dir_information">FILE_ID_BOTH_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_id_both_dir_information.md">FILE_ID_BOTH_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_id_full_dir_information">FILE_ID_FULL_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_id_full_dir_information.md">FILE_ID_FULL_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_names_information">FILE_NAMES_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_names_information.md">FILE_NAMES_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_objectid_information">FILE_OBJECTID_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_objectid_information.md">FILE_OBJECTID_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_reparse_point_information">FILE_REPARSE_POINT_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_reparse_point_information.md">FILE_REPARSE_POINT_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatefile">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 <dt>
-<a href="kernel.zwopenfile">ZwOpenFile</a>
+<a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryDirectoryFile routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryDirectoryFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.MEDIUM_INFO
+UID: NS:ksmedia.MEDIUM_INFO
 title: MEDIUM_INFO
 author: windows-driver-content
 description: The MEDIUM_INFO structure describes the media loaded into an external device.
@@ -7,8 +7,8 @@ old-location: stream\medium_info.htm
 old-project: stream
 ms.assetid: 1dd7415d-bfbc-4dea-bac9-bc5b8531a47f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: MEDIUM_INFO, *PMEDIUM_INFO, PMEDIUM_INFO, MEDIUM_INFO
+ms.date: 1/9/2018
+ms.keywords: MEDIUM_INFO, *PMEDIUM_INFO, MEDIUM_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMEDIUM_INFO, MEDIUM_INFO
 ---
 
 # MEDIUM_INFO structure

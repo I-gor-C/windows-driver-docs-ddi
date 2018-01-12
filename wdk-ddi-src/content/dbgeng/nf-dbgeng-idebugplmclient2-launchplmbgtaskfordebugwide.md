@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugPlmClient2.LaunchPlmBgTaskForDebugWide
+UID: NF:dbgeng.IDebugPlmClient2.LaunchPlmBgTaskForDebugWide
 title: IDebugPlmClient2::LaunchPlmBgTaskForDebugWide method
 author: windows-driver-content
 description: Launches a suspended Process Lifecycle Management (PLM) background task.
 old-location: debugger\idebugplmclient2_launchplmbgtaskfordebugwide.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 47793815-F7AC-4E0D-809C-DBB7497BDA30
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugPlmClient2, IDebugPlmClient2::LaunchPlmBgTaskForDebugWide, LaunchPlmBgTaskForDebugWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugPlmClient2::LaunchPlmBgTaskForDebugWide method
@@ -120,5 +121,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugPlmClient2::LaunchPlmBgTaskForDebugWide method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugPlmClient2::LaunchPlmBgTaskForDebugWide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

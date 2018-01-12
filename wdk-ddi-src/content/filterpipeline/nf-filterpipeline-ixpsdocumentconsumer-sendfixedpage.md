@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IXpsDocumentConsumer.SendFixedPage
+UID: NF:filterpipeline.IXpsDocumentConsumer.SendFixedPage
 title: IXpsDocumentConsumer::SendFixedPage method
 author: windows-driver-content
 description: The SendFixedPage method sends a fixed page of an XPS document to the pipeline.
@@ -7,7 +7,7 @@ old-location: print\ixpsdocumentconsumer_sendfixedpage.htm
 old-project: print
 ms.assetid: ef11161d-5e73-44a8-b802-e3706b78950e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IXpsDocumentConsumer, IXpsDocumentConsumer::SendFixedPage, SendFixedPage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IXpsDocumentConsumer::SendFixedPage method

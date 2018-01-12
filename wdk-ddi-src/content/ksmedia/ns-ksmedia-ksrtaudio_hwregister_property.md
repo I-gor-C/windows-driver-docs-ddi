@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSRTAUDIO_HWREGISTER_PROPERTY
+UID: NS:ksmedia.KSRTAUDIO_HWREGISTER_PROPERTY
 title: KSRTAUDIO_HWREGISTER_PROPERTY
 author: windows-driver-content
 description: The KSRTAUDIO_HWREGISTRY_PROPERTY structure appends a register base address to a KSPROPERTY structure.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 200577b9-44de-45ca-8b4f-904eabb1a4ce
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSRTAUDIO_HWREGISTER_PROPERTY, PKSRTAUDIO_HWREGISTER_PROPERTY, *PKSRTAUDIO_HWREGISTER_PROPERTY, KSRTAUDIO_HWREGISTER_PROPERTY
+ms.keywords: KSRTAUDIO_HWREGISTER_PROPERTY, *PKSRTAUDIO_HWREGISTER_PROPERTY, KSRTAUDIO_HWREGISTER_PROPERTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSRTAUDIO_HWREGISTER_PROPERTY, KSRTAUDIO_HWREGISTER_PROPERTY
 ---
 
 # KSRTAUDIO_HWREGISTER_PROPERTY structure
@@ -56,7 +57,7 @@ typedef struct {
 
 ### -field Property
 
-A <a href="stream.ksproperty">KSPROPERTY</a> structure that the client initializes appropriately prior to calling KSPROPERTY_RTAUDIO_POSITIONREGISTER or KSPROPERTY_RTAUDIO_CLOCKREGISTER.
+A <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that the client initializes appropriately prior to calling KSPROPERTY_RTAUDIO_POSITIONREGISTER or KSPROPERTY_RTAUDIO_CLOCKREGISTER.
 
 
 ### -field BaseAddress
@@ -96,7 +97,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksproperty">KSPROPERTY</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537381">KSPROPERTY_RTAUDIO_POSITIONREGISTER</a>

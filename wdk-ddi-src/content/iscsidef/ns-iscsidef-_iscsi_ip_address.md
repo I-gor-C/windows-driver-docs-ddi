@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIDEF._ISCSI_IP_ADDRESS
+UID: NS:iscsidef._ISCSI_IP_Address
 title: _ISCSI_IP_Address
 author: windows-driver-content
 description: The ISCSI_IP_Address structure defines an IP address.
@@ -7,8 +7,8 @@ old-location: storage\iscsi_ip_address.htm
 old-project: storage
 ms.assetid: ec4c2add-33e0-4e3d-8f19-892cca4720a7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ISCSI_IP_Address, PISCSI_IP_Address, *PISCSI_IP_Address, ISCSI_IP_Address
+ms.date: 1/10/2018
+ms.keywords: _ISCSI_IP_Address, *PISCSI_IP_Address, ISCSI_IP_Address
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PISCSI_IP_Address, ISCSI_IP_Address
 ---
 
 # _ISCSI_IP_Address structure
@@ -60,7 +61,7 @@ typedef struct _ISCSI_IP_Address {
 
 ### -field Type
 
-A <a href="storage.iscsiipaddresstype">ISCSIIPADDRESSTYPE</a> value that indicates the type of IP address. 
+A <a href="..\iscsidef\ne-iscsidef-piscsiipaddresstype.md">ISCSIIPADDRESSTYPE</a> value that indicates the type of IP address. 
 
 
 ### -field IpV4Address
@@ -109,15 +110,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.iscsi_ip_address">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
 </dt>
 <dt>
-<a href="storage.iscsiipaddresstype">ISCSIIPADDRESSTYPE</a>
+<a href="..\iscsidef\ne-iscsidef-piscsiipaddresstype.md">ISCSIIPADDRESSTYPE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_IP_Address structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_IP_Address structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

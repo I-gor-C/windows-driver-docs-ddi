@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.EndEnumTagged
+UID: NF:dbgeng.IDebugDataSpaces4.EndEnumTagged
 title: IDebugDataSpaces4::EndEnumTagged method
 author: windows-driver-content
 description: The EndEnumTagged method releases the resources used by the specified enumeration.
 old-location: debugger\endenumtagged.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 6a456b8c-aec6-443d-8db4-21e7715ab818
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::EndEnumTagged, EndEnumTagged
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::EndEnumTagged method
@@ -55,7 +56,7 @@ HRESULT EndEnumTagged(
 
 ### -param Handle [in]
 
-Specifies the handle identifying the enumeration.  This is the handle returned by <a href="debugger.startenumtagged">StartEnumTagged</a>.
+Specifies the handle identifying the enumeration.  This is the handle returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff558801">StartEnumTagged</a>.
 
 
 ## -returns

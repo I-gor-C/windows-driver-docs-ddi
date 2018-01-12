@@ -1,13 +1,13 @@
 ---
-UID: NF.rilapi.RIL_EmergencyModeControl
+UID: NF:rilapi.RIL_EmergencyModeControl
 title: RIL_EmergencyModeControl function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_emergencymodecontrol.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 011b8b11-5e75-4db9-ba3d-6483a90788ac
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RIL_EmergencyModeControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product: Windows 10 or later.
 ---
 

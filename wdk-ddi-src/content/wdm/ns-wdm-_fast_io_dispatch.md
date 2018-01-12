@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._FAST_IO_DISPATCH
+UID: NS:wdm._FAST_IO_DISPATCH
 title: _FAST_IO_DISPATCH
 author: windows-driver-content
 description: Contains a set of callback routines that a file system driver or file system filter driver (legacy) provides for fast I/O processing.
@@ -7,8 +7,8 @@ old-location: ifsk\fast_io_dispatch.htm
 old-project: ifsk
 ms.assetid: 9F422CE9-8ADC-4709-8FE5-5A3501B47AC2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FAST_IO_DISPATCH, *PFAST_IO_DISPATCH, PFAST_IO_DISPATCH, FAST_IO_DISPATCH
+ms.date: 1/9/2018
+ms.keywords: _FAST_IO_DISPATCH, *PFAST_IO_DISPATCH, FAST_IO_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PFAST_IO_DISPATCH, FAST_IO_DISPATCH
 req.product: Windows 10 or later.
 ---
 

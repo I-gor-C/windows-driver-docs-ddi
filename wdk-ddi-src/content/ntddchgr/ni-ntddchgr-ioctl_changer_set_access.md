@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddchgr.IOCTL_CHANGER_SET_ACCESS
+UID: NI:ntddchgr.IOCTL_CHANGER_SET_ACCESS
 title: IOCTL_CHANGER_SET_ACCESS
 author: windows-driver-content
 description: Sets the state of the device's import/export port (IEport), door, or keypad.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_changer_set_access.htm
 old-project: storage
 ms.assetid: 8927e862-94e4-45ce-9245-5c6f5629fc01
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ELEMENT_TYPE, PELEMENT_TYPE, ELEMENT_TYPE, *PELEMENT_TYPE
+ms.date: 1/10/2018
+ms.keywords: _ELEMENT_TYPE, ELEMENT_TYPE, *PELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ELEMENT_TYPE, *PELEMENT_TYPE
 ---
 
 # IOCTL_CHANGER_SET_ACCESS IOCTL
@@ -51,7 +52,7 @@ Sets the state of the device's import/export port (IEport), door, or keypad.
 
 ### -input-buffer
 
-       The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="storage.changer_set_access">CHANGER_SET_ACCESS</a> structure indicating the element and the operation to perform.
+       The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\ntddchgr\ns-ntddchgr-_changer_set_access.md">CHANGER_SET_ACCESS</a> structure indicating the element and the operation to perform.
 
 
 ### -input-buffer-length
@@ -100,15 +101,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.changer_set_access">CHANGER_SET_ACCESS</a>
+<a href="..\ntddchgr\ns-ntddchgr-_changer_set_access.md">CHANGER_SET_ACCESS</a>
 </dt>
 <dt>
-<a href="storage.changersetaccess">ChangerSetAccess</a>
+<a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_CHANGER_SET_ACCESS control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_CHANGER_SET_ACCESS control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

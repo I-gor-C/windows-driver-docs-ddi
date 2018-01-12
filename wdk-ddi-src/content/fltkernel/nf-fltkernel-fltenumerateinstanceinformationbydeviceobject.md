@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltEnumerateInstanceInformationByDeviceObject
+UID: NF:fltkernel.FltEnumerateInstanceInformationByDeviceObject
 title: FltEnumerateInstanceInformationByDeviceObject function
 author: windows-driver-content
 description: The FltEnumerateInstanceInformationByDeviceObject routine provides information about minifilter driver instances and legacy filter drivers that are attached to the volume related to a specified device object.
@@ -7,7 +7,7 @@ old-location: ifsk\fltenumerateinstanceinformationbydeviceobject.htm
 old-project: ifsk
 ms.assetid: 3E7754A3-3A7A-4036-B524-CBA40EF22048
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltEnumerateInstanceInformationByDeviceObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltEnumerateInstanceInformationByDeviceObject function
@@ -83,7 +84,7 @@ Type of information to be returned for the minifilter driver instance or legacy 
 
 </td>
 <td>
-The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_basic_information">INSTANCE_BASIC_INFORMATION</a> structure for a minifilter instance.  Legacy filter drivers are ignored.
+The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="..\fltuserstructures\ns-fltuserstructures-_instance_basic_information.md">INSTANCE_BASIC_INFORMATION</a> structure for a minifilter instance.  Legacy filter drivers are ignored.
 
 </td>
 </tr>
@@ -93,7 +94,7 @@ The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.i
 
 </td>
 <td>
-The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_full_information">INSTANCE_FULL_INFORMATION</a> structure for a minifilter instance.  Legacy filter drivers are ignored.
+The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="..\fltuserstructures\ns-fltuserstructures-_instance_full_information.md">INSTANCE_FULL_INFORMATION</a> structure for a minifilter instance.  Legacy filter drivers are ignored.
 
 </td>
 </tr>
@@ -103,7 +104,7 @@ The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.i
 
 </td>
 <td>
-The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_partial_information">INSTANCE_PARTIAL_INFORMATION</a> structure for a minifilter instance.  Legacy filter drivers are ignored.
+The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="..\fltuserstructures\ns-fltuserstructures-_instance_partial_information.md">INSTANCE_PARTIAL_INFORMATION</a> structure for a minifilter instance.  Legacy filter drivers are ignored.
 
 </td>
 </tr>
@@ -113,7 +114,7 @@ The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.i
 
 </td>
 <td>
-The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_aggregate_standard_information">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a> structure for a minifilter driver instance or legacy filter driver.
+The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="..\fltuserstructures\ns-fltuserstructures-_instance_aggregate_standard_information.md">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a> structure for a minifilter driver instance or legacy filter driver.
 
 </td>
 </tr>
@@ -230,18 +231,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltenumerateinstanceinformationbyfilter">FltEnumerateInstanceInformationByFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumerateinstanceinformationbyvolume">FltEnumerateInstanceInformationByVolume</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumerateinstanceinformationbyvolumename">FltEnumerateInstanceInformationByVolumeName</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolumename.md">FltEnumerateInstanceInformationByVolumeName</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateInstanceInformationByDeviceObject routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateInstanceInformationByDeviceObject routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

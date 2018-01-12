@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSINTERFACE_STANDARD
+UID: NE:ks.KSINTERFACE_STANDARD
 title: KSINTERFACE_STANDARD
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksinterface_standard.htm
 old-project: stream
 ms.assetid: B000E3BD-28FA-454E-A598-3670B5FCD3DD
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSINTERFACE_STANDARD, KSINTERFACE_STANDARD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSINTERFACE_STANDARD
 ---
 
 # KSINTERFACE_STANDARD enumeration

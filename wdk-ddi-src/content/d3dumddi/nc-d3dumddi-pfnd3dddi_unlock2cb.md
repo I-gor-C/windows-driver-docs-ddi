@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_UNLOCK2CB
+UID: NC:d3dumddi.PFND3DDDI_UNLOCK2CB
 title: PFND3DDDI_UNLOCK2CB
 author: windows-driver-content
 description: The pfnUnlock2Cb function unlocks an allocation that was locked by a call to the pfnLock2Cb function.
@@ -7,7 +7,7 @@ old-location: display\pfnunlock2cb.htm
 old-project: display
 ms.assetid: 642C6A05-DA8C-453A-B1AA-030C59F32DA5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_UNLOCK2CB callback
@@ -64,7 +65,7 @@ A handle to the display device (graphics context).
 
 ### -param pData [in]
 
-A pointer to a <a href="display.d3dddicb_unlock2">D3DDDICB_UNLOCK2</a> structure that describes the allocation to unlock.
+A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_unlock2.md">D3DDDICB_UNLOCK2</a> structure that describes the allocation to unlock.
 
 
 ## -returns

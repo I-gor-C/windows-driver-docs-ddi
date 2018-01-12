@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfio._WDF_IO_QUEUE_STATE
+UID: NE:wdfio._WDF_IO_QUEUE_STATE
 title: _WDF_IO_QUEUE_STATE
 author: windows-driver-content
 description: The WDF_IO_QUEUE_STATE enumeration type identifies the status of a framework queue object. The enumerators are used as bit masks.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_queue_state.htm
 old-project: wdf
 ms.assetid: d89c4d4c-d3c2-47fc-9eb8-e2eb8424d5cc
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _WDF_IO_QUEUE_STATE, WDF_IO_QUEUE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <= DISPATCH_LEVEL (see Remarks section)
+req.irql: PASSIVE_LEVEL
+req.typenames: WDF_IO_QUEUE_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -62,9 +63,9 @@ typedef enum _WDF_IO_QUEUE_STATE {
 
 ### -field WdfIoQueueAcceptRequests
 
-If set, the I/O queue can accept new I/O requests from the I/O manager and requests that are forwarded by the <a href="wdf.wdfdeviceconfigurerequestdispatching">WdfDeviceConfigureRequestDispatching</a> and <a href="wdf.wdfrequestforwardtoioqueue">WdfRequestForwardToIoQueue</a> (or <a href="wdf.wdfrequestforwardtoparentdeviceioqueue">WdfRequestForwardToParentDeviceIoQueue</a>) methods. 
+If set, the I/O queue can accept new I/O requests from the I/O manager and requests that are forwarded by the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceconfigurerequestdispatching.md">WdfDeviceConfigureRequestDispatching</a> and <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoioqueue.md">WdfRequestForwardToIoQueue</a> (or <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>) methods. 
 
-If not set, the framework cancels requests from the I/O manager and <a href="wdf.wdfdeviceconfigurerequestdispatching">WdfDeviceConfigureRequestDispatching</a> and fails requests from <a href="wdf.wdfrequestforwardtoioqueue">WdfRequestForwardToIoQueue</a> (or <a href="wdf.wdfrequestforwardtoparentdeviceioqueue">WdfRequestForwardToParentDeviceIoQueue</a>) with STATUS_WDF_BUSY.
+If not set, the framework cancels requests from the I/O manager and <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceconfigurerequestdispatching.md">WdfDeviceConfigureRequestDispatching</a> and fails requests from <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoioqueue.md">WdfRequestForwardToIoQueue</a> (or <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>) with STATUS_WDF_BUSY.
 
 
 ### -field WdfIoQueueDispatchRequests
@@ -88,7 +89,7 @@ If set, the framework has stopped delivering requests to the driver because the 
 
 
 ## -remarks
-The WDF_IO_QUEUE_STATE enumeration type is used as the return value for the <a href="wdf.wdfioqueuegetstate">WdfIoQueueGetState</a> method.
+The WDF_IO_QUEUE_STATE enumeration type is used as the return value for the <a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a> method.
 
 The following functions are defined in <i>wdfio.h</i>:
 
@@ -143,12 +144,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfioqueuegetstate">WdfIoQueueGetState</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueuegetstate.md">WdfIoQueueGetState</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_STATE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_STATE enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

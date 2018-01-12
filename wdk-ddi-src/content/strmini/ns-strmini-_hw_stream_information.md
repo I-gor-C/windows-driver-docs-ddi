@@ -1,5 +1,5 @@
 ---
-UID: NS.STRMINI._HW_STREAM_INFORMATION
+UID: NS:strmini._HW_STREAM_INFORMATION
 title: _HW_STREAM_INFORMATION
 author: windows-driver-content
 description: The HW_STREAM_INFORMATION structure describes the kernel streaming semantics supported by individual streams, as part of an HW_STREAM_DESCRIPTOR structure.
@@ -7,8 +7,8 @@ old-location: stream\hw_stream_information.htm
 old-project: stream
 ms.assetid: d1163185-4cae-4f14-ae99-78795da89fb8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HW_STREAM_INFORMATION, *PHW_STREAM_INFORMATION, PHW_STREAM_INFORMATION, HW_STREAM_INFORMATION
+ms.date: 1/9/2018
+ms.keywords: _HW_STREAM_INFORMATION, *PHW_STREAM_INFORMATION, HW_STREAM_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PHW_STREAM_INFORMATION, HW_STREAM_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The HW_STREAM_INFORMATION structure describes the kernel streaming semantics supported by individual streams, as part of an <a href="stream.hw_stream_descriptor">HW_STREAM_DESCRIPTOR</a> structure.
+The HW_STREAM_INFORMATION structure describes the kernel streaming semantics supported by individual streams, as part of an <a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.
 
 
 
@@ -91,7 +92,7 @@ The number of entries in the array that begins at the address in the <b>StreamFo
 
 ### -field StreamFormatsArray
 
-Pointer to the beginning of the array of data ranges that this stream supports. (The name of this member is deceptive. This member points to an array of <a href="stream.ksdatarange">KSDATARANGE</a> structures, not KSDATAFORMAT structures.)
+Pointer to the beginning of the array of data ranges that this stream supports. (The name of this member is deceptive. This member points to an array of <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a> structures, not KSDATAFORMAT structures.)
 
 
 ### -field ClassReserved
@@ -136,7 +137,7 @@ The number of entries in the array that begins at the address in the <b>Mediums<
 
 ### -field Mediums
 
-Pointer to the beginning of the array of <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structures supported by this stream. If the minidriver does not specify a medium, the class driver uses the KSMEDIUMSETID_STANDARD, KSMEDIUM_TYPE_ANYINSTANCE medium as the default.
+Pointer to the beginning of the array of <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a> structures supported by this stream. If the minidriver does not specify a medium, the class driver uses the KSMEDIUMSETID_STANDARD, KSMEDIUM_TYPE_ANYINSTANCE medium as the default.
 
 
 ### -field BridgeStream
@@ -152,9 +153,9 @@ Reserved for use by the class driver. Do not use.
 
 
 ## -remarks
-The class driver uses the elements of HW_STREAM_INFORMATION to handle the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566584">KSPROPSETID_Pin</a> property requests. The index within the <a href="stream.hw_stream_descriptor">HW_STREAM_DESCRIPTOR</a> structure serves as the pin type ID number.
+The class driver uses the elements of HW_STREAM_INFORMATION to handle the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566584">KSPROPSETID_Pin</a> property requests. The index within the <a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a> structure serves as the pin type ID number.
 
-Note that the class driver does not use this data to handle the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565198">KSPROPERTY_PIN_DATAINTERSECTION</a> property. See <a href="stream.stream_data_intersect_info">STREAM_DATA_INTERSECT_INFO</a> for a description of how the class driver handles this property.
+Note that the class driver does not use this data to handle the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565198">KSPROPERTY_PIN_DATAINTERSECTION</a> property. See <a href="..\strmini\ns-strmini-_stream_data_intersect_info.md">STREAM_DATA_INTERSECT_INFO</a> for a description of how the class driver handles this property.
 
 
 ## -requirements
@@ -175,15 +176,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.hw_stream_descriptor">HW_STREAM_DESCRIPTOR</a>
+<a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="stream.hw_stream_header">HW_STREAM_HEADER</a>
+<a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20HW_STREAM_INFORMATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20HW_STREAM_INFORMATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

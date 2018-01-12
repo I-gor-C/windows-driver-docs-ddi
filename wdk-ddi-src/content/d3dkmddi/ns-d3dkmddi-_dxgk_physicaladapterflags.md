@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_PHYSICALADAPTERFLAGS
+UID: NS:d3dkmddi._DXGK_PHYSICALADAPTERFLAGS
 title: _DXGK_PHYSICALADAPTERFLAGS
 author: windows-driver-content
 description: DXGK_PHYSICALADAPTERFLAGS defines a set of flags that used to indicate the type of memory management model that is supported by a device.
@@ -7,7 +7,7 @@ old-location: display\dxgk_physicaladapterflags.htm
 old-project: display
 ms.assetid: AACF0C99-D6E2-4C7C-BAE6-BF558FDAFDE0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PHYSICALADAPTERFLAGS, DXGK_PHYSICALADAPTERFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_PHYSICALADAPTERFLAGS
 ---
 
 # _DXGK_PHYSICALADAPTERFLAGS structure

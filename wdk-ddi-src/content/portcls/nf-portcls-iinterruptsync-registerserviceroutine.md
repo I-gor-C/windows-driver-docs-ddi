@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IInterruptSync.RegisterServiceRoutine
+UID: NF:portcls.IInterruptSync.RegisterServiceRoutine
 title: IInterruptSync::RegisterServiceRoutine method
 author: windows-driver-content
 description: The RegisterServiceRoutine method registers an interrupt service routine (ISR) that is to be called when an interrupt occurs.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IInterruptSync::RegisterServiceRoutine method

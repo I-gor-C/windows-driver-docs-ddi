@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemDriverUni.DrvGetGPDData
+UID: NF:prcomoem.IPrintOemDriverUni.DrvGetGPDData
 title: IPrintOemDriverUni::DrvGetGPDData method
 author: windows-driver-content
 description: The IPrintOemDriverUni::DrvGetGPDData method is provided by the Unidrv driver so that rendering plug-ins can obtain data defined in a printer's GPD file.
@@ -7,7 +7,7 @@ old-location: print\iprintoemdriveruni_drvgetgpddata.htm
 old-project: print
 ms.assetid: cebe8972-4e5a-4382-ac1b-4c326dea46b1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemDriverUni, IPrintOemDriverUni::DrvGetGPDData, DrvGetGPDData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ HRESULT DrvGetGPDData(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param dwType 

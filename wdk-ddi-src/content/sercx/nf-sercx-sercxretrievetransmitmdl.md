@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCxRetrieveTransmitMdl
+UID: NF:sercx.SerCxRetrieveTransmitMdl
 title: SerCxRetrieveTransmitMdl function
 author: windows-driver-content
 description: The SerCxRetrieveTransmitMdl method retrieves the MDL that describes the buffer that contains the next block of output data to be transmitted.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -75,7 +76,7 @@ A pointer to a location into which the method writes a pointer to the MDL.
 
 
 ## -remarks
-The serial controller driver calls this function to obtain an MDL to use for the current transmit (write) operation. The MDL describes the buffer memory from which the driver is to obtain the data to be transmitted. The driver is the exclusive owner of this MDL until it calls the <a href="serports.sercxprogresstransmit">SerCxProgressTransmit</a> method, after which the MDL pointer is invalid and the driver must no longer try to access either the MDL or the buffer memory that the MDL describes.
+The serial controller driver calls this function to obtain an MDL to use for the current transmit (write) operation. The MDL describes the buffer memory from which the driver is to obtain the data to be transmitted. The driver is the exclusive owner of this MDL until it calls the <a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a> method, after which the MDL pointer is invalid and the driver must no longer try to access either the MDL or the buffer memory that the MDL describes.
 
 For more information about MDLs, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>.
 
@@ -129,7 +130,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercxprogresstransmit">SerCxProgressTransmit</a>
+<a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
 </dt>
 </dl>
  

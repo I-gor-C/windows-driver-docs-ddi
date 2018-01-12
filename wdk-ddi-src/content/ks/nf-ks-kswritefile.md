@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsWriteFile
+UID: NF:ks.KsWriteFile
 title: KsWriteFile function
 author: windows-driver-content
 description: The KsWriteFile function performs a write against the specified file object.
@@ -7,7 +7,7 @@ old-location: stream\kswritefile.htm
 old-project: stream
 ms.assetid: ed66db40-d159-4660-96c0-da52f752a409
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsWriteFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsWriteFile function

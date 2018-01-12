@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILCALLMEDIAVIDEOFLAGPARAMMASK
+UID: NE:ntddrilapitypes.RILCALLMEDIAVIDEOFLAGPARAMMASK
 title: RILCALLMEDIAVIDEOFLAGPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmediavideoflagparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: cff507e4-d673-4608-9fd9-530ff7e26ffb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILCALLMEDIAVIDEOFLAGPARAMMASK, RILCALLMEDIAVIDEOFLAGPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLMEDIAVIDEOFLAGPARAMMASK
 ---
 
 # RILCALLMEDIAVIDEOFLAGPARAMMASK enumeration

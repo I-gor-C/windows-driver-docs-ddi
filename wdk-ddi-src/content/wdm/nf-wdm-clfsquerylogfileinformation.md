@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ClfsQueryLogFileInformation
+UID: NF:wdm.ClfsQueryLogFileInformation
 title: ClfsQueryLogFileInformation function
 author: windows-driver-content
 description: The ClfsQueryLogFileInformation routine returns metadata and state information for a specified CLFS stream or its underlying physical log or both.
@@ -7,7 +7,7 @@ old-location: kernel\clfsquerylogfileinformation.htm
 old-project: kernel
 ms.assetid: a907f219-9e4a-415f-821c-d419b7fde729
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ClfsQueryLogFileInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Clfs.lib
 req.dll: Clfs.sys
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -59,12 +60,12 @@ NTSTATUS  ClfsQueryLogFileInformation(
 
 ### -param plfoLog [in]
 
-A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The caller previously obtained this pointer by calling <a href="kernel.clfscreatelogfile">ClfsCreateLogFile</a>.
+A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.
 
 
 ### -param eInformationClass [in]
 
-A value from the <a href="kernel.clfs_log_information_class">CLFS_LOG_INFORMATION_CLASS</a> enumeration that specifies the type of information being requested.
+A value from the <a href="..\wdm\ne-wdm-_cls_log_information_class.md">CLFS_LOG_INFORMATION_CLASS</a> enumeration that specifies the type of information being requested.
 
 
 ### -param pinfoBuffer [out]
@@ -83,7 +84,7 @@ A pointer to a buffer that receives the log information. The structure of this b
 </td>
 <td>
 
-<a href="kernel.clfs_information">CLFS_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_cls_information.md">CLFS_INFORMATION</a>
 
 
 </td>
@@ -95,7 +96,7 @@ A pointer to a buffer that receives the log information. The structure of this b
 </td>
 <td>
 
-<a href="kernel.clfs_information">CLFS_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_cls_information.md">CLFS_INFORMATION</a>
 
 
 </td>
@@ -107,7 +108,7 @@ A pointer to a buffer that receives the log information. The structure of this b
 </td>
 <td>
 
-<a href="kernel.clfs_log_name_information">CLFS_LOG_NAME_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_clfs_log_name_information.md">CLFS_LOG_NAME_INFORMATION</a>
 
 
 </td>
@@ -119,7 +120,7 @@ A pointer to a buffer that receives the log information. The structure of this b
 </td>
 <td>
 
-<a href="kernel.clfs_log_name_information">CLFS_LOG_NAME_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_clfs_log_name_information.md">CLFS_LOG_NAME_INFORMATION</a>
 
 
 </td>
@@ -131,7 +132,7 @@ A pointer to a buffer that receives the log information. The structure of this b
 </td>
 <td>
 
-<a href="kernel.clfs_stream_id_information">CLFS_STREAM_ID_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_clfs_stream_id_information.md">CLFS_STREAM_ID_INFORMATION</a>
 
 
 </td>
@@ -224,12 +225,12 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfssetlogfileinformation">ClfsSetLogFileInformation</a>
+<a href="..\wdm\nf-wdm-clfssetlogfileinformation.md">ClfsSetLogFileInformation</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsQueryLogFileInformation routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsQueryLogFileInformation routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

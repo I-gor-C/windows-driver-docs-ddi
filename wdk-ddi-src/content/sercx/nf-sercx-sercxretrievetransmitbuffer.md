@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCxRetrieveTransmitBuffer
+UID: NF:sercx.SerCxRetrieveTransmitBuffer
 title: SerCxRetrieveTransmitBuffer function
 author: windows-driver-content
 description: The SerCxRetrieveTransmitBuffer method obtains an output buffer that contains data that is ready to be transmitted to the serial port.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ The requested buffer length, in bytes. If the <b>SerCxRetrieveTransmitBuffer</b>
 
 ### -param BufferDescriptor [in, out]
 
-A pointer to a caller-allocated <a href="..\sercx\ns-sercx-sercx_buffer_descriptor.md">SERCX_BUFFER_DESCRIPTOR</a> structure. This structure describes the data buffer to use for the transmit operation. The caller previously called the <a href="serports.sercx_buffer_descriptor_init">SERCX_BUFFER_DESCRIPTOR_INIT</a> function to initialize this structure. <b>SerCxRetrieveTransmitBuffer</b> writes to the <b>Buffer</b> and <b>Length</b> members of this structure.
+A pointer to a caller-allocated <a href="..\sercx\ns-sercx-sercx_buffer_descriptor.md">SERCX_BUFFER_DESCRIPTOR</a> structure. This structure describes the data buffer to use for the transmit operation. The caller previously called the <a href="..\sercx\nf-sercx-sercx_buffer_descriptor_init.md">SERCX_BUFFER_DESCRIPTOR_INIT</a> function to initialize this structure. <b>SerCxRetrieveTransmitBuffer</b> writes to the <b>Buffer</b> and <b>Length</b> members of this structure.
 
 
 ## -returns
@@ -142,7 +143,7 @@ IRQL
 <a href="..\sercx\ns-sercx-sercx_buffer_descriptor.md">SERCX_BUFFER_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="serports.sercx_buffer_descriptor_init">SERCX_BUFFER_DESCRIPTOR_INIT</a>
+<a href="..\sercx\nf-sercx-sercx_buffer_descriptor_init.md">SERCX_BUFFER_DESCRIPTOR_INIT</a>
 </dt>
 </dl>
  

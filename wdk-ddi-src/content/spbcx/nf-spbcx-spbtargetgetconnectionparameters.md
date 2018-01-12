@@ -1,5 +1,5 @@
 ---
-UID: NF.spbcx.SpbTargetGetConnectionParameters
+UID: NF:spbcx.SpbTargetGetConnectionParameters
 title: SpbTargetGetConnectionParameters function
 author: windows-driver-content
 description: The SpbTargetGetConnectionParameters method retrieves the connection parameters for a target device on the bus.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Spbcxstubs.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 

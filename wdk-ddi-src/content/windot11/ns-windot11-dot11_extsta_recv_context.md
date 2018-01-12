@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11.DOT11_EXTSTA_RECV_CONTEXT
+UID: NS:windot11.DOT11_EXTSTA_RECV_CONTEXT
 title: DOT11_EXTSTA_RECV_CONTEXT
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_extsta_recv_context.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 517be11b-a15d-43ac-aefd-f425fa6f63e7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: DOT11_EXTSTA_RECV_CONTEXT, PDOT11_EXTSTA_RECV_CONTEXT, *PDOT11_EXTSTA_RECV_CONTEXT, *PDOT11_EXTAP_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT
+ms.date: 1/8/2018
+ms.keywords: DOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT, *PDOT11_EXTAP_RECV_CONTEXT, *PDOT11_EXTSTA_RECV_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_EXTAP_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT, *PDOT11_EXTAP_RECV_CONTEXT, *PDOT11_EXTSTA_RECV_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ typedef struct DOT11_EXTSTA_RECV_CONTEXT {
 
 The type, revision, and size of the DOT11_EXTSTA_RECV_CONTEXT structure. This member is formatted
      as an 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
      
 
 The miniport driver must set the members of 
@@ -91,7 +92,7 @@ This member must be set to
 </dd>
 </dl>
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field uReceiveFlags
@@ -187,7 +188,7 @@ A pointer to a buffer that contains media-specific infomration. The mininiport d
 The native 802.11 framework copies this pointer to the 
      <b>MediaSpecificInformation</b> entry at the 
      <b>NetBufferListInfo</b> member of the 802.3 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures in NDIS receive
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures in NDIS receive
      indications.
 
 <div class="alert"><b>Note</b>  IHV extensions are currently unable to receive the 
@@ -198,7 +199,7 @@ The native 802.11 framework copies this pointer to the
 
 An 802.11 timing synchronization function (TSF) timer value, in microseconds, that specifies the
      time when the packet was received. This member is provided to support 
-     <a href="netvista.indicating_raw_802_11_packets">indicating raw 802.11 packets</a>.
+     <a href="https://msdn.microsoft.com/df2295f3-13d6-41d7-9959-c34f19af33ea">indicating raw 802.11 packets</a>.
      
 
 If a NIC does not support 
@@ -209,9 +210,9 @@ If a NIC does not support
 ## -remarks
 When performing a Native 802.11 receive operation, the miniport driver must format each received
     802.11 packet as a 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure, with the packet
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure, with the packet
     data formatted as a 
-    <a href="netvista.net_buffer">NET_BUFFER</a> structure and linked to the
+    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure and linked to the
     NET_BUFFER_LIST structure. Each NET_BUFFER_LIST structure must include out-of-band (OOB) data. The OOB
     data specifies the attributes of the received packet that are specific to the wireless LAN (WLAN)
     media.
@@ -222,7 +223,7 @@ The miniport driver accesses the Native 802.11 OOB data through the
 
 The 
       <i>_NBL</i> parameter, which is passed the pointer to the 
-      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure used for the
+      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure used for the
       received 802.11 packet.
 
 The _
@@ -284,17 +285,17 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndismindicatereceivenetbufferlists">
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
    NdisMIndicateReceiveNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
@@ -308,5 +309,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_EXTSTA_RECV_CONTEXT structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_RECV_CONTEXT structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

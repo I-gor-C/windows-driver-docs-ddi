@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlGetSaclSecurityDescriptor
+UID: NF:ntifs.RtlGetSaclSecurityDescriptor
 title: RtlGetSaclSecurityDescriptor function
 author: windows-driver-content
 description: The RtlGetSaclSecurityDescriptor routine returns a pointer to the system ACL (SACL) for a security descriptor.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlgetsaclsecuritydescriptor.htm
 old-project: ifsk
 ms.assetid: 5dd4b15a-63e1-4b80-a156-bc44aeeafb0e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlGetSaclSecurityDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlGetSaclSecurityDescriptor function
@@ -58,7 +59,7 @@ NTSTATUS RtlGetSaclSecurityDescriptor(
 
 ### -param SecurityDescriptor [in]
 
-Pointer to the <a href="kernel.security_descriptor">SECURITY_DESCRIPTOR</a> whose SACL is to be returned.
+Pointer to the <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> whose SACL is to be returned.
 
 
 ### -param SaclPresent [out]
@@ -160,30 +161,30 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.acl">ACL</a>
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 </dt>
 <dt>
-<a href="kernel.rtlcreatesecuritydescriptor">RtlCreateSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="ifsk.rtlgetdaclsecuritydescriptor">RtlGetDaclSecurityDescriptor</a>
+<a href="..\ntifs\nf-ntifs-rtlgetdaclsecuritydescriptor.md">RtlGetDaclSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.rtllengthsecuritydescriptor">RtlLengthSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.rtlsetdaclsecuritydescriptor">RtlSetDaclSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.rtlvalidsecuritydescriptor">RtlValidSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetSaclSecurityDescriptor routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlGetSaclSecurityDescriptor routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

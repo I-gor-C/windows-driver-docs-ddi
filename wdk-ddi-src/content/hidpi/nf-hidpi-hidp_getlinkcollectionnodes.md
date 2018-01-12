@@ -1,5 +1,5 @@
 ---
-UID: NF.hidpi.HidP_GetLinkCollectionNodes
+UID: NF:hidpi.HidP_GetLinkCollectionNodes
 title: HidP_GetLinkCollectionNodes function
 author: windows-driver-content
 description: The HidP_GetLinkCollectionNodes routine returns a top-level collection's link collection array.
@@ -7,7 +7,7 @@ old-location: hid\hidp_getlinkcollectionnodes.htm
 old-project: hid
 ms.assetid: d829b203-8b7f-4504-a9ac-da1f91b3bbd6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidP_GetLinkCollectionNodes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hidparse.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 # HidP_GetLinkCollectionNodes function
@@ -83,7 +84,7 @@ Pointer to the preparsed data of the top-level collection for which this routine
 
 
 ## -remarks
-The required length of the <i>LinkCollectionNodes</i> buffer is specified by the <b>NumberLinkCollectionNodes</b> member of a collection's <a href="hid.hidp_caps">HIDP_CAPS</a> structure.
+The required length of the <i>LinkCollectionNodes</i> buffer is specified by the <b>NumberLinkCollectionNodes</b> member of a collection's <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure.
 
 If <b>HidP_GetLinkCollectionNodes</b> returns the status value HIDP_STATUS_BUFFER_TOO_SMALL, it also sets <i>LinkCollectionNodesLength</i> to the length, in array elements, required to hold the link collection nodes information.
 
@@ -153,18 +154,18 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="hid.hidp_getcaps">HidP_GetCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
 </dt>
 <dt>
-<a href="hid.hidp_caps">HIDP_CAPS</a>
+<a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a>
 </dt>
 <dt>
-<a href="hid.hidp_link_collection_node">HIDP_LINK_COLLECTION_NODE</a>
+<a href="..\hidpi\ns-hidpi-_hidp_link_collection_node.md">HIDP_LINK_COLLECTION_NODE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_GetLinkCollectionNodes routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_GetLinkCollectionNodes routine%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

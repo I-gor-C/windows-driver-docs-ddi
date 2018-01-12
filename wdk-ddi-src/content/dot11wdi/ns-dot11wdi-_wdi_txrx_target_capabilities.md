@@ -1,14 +1,14 @@
 ---
-UID: NS.DOT11WDI._WDI_TXRX_TARGET_CAPABILITIES
+UID: NS:dot11wdi._WDI_TXRX_TARGET_CAPABILITIES
 title: _WDI_TXRX_TARGET_CAPABILITIES
 author: windows-driver-content
 description: The WDI_TXRX_CAPABILITIES structure defines the target capabilities.
 old-location: netvista\wdi_txrx_capabilities.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7a1d3ffd-6f5e-429d-8c2f-a141f98ccad8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WDI_TXRX_TARGET_CAPABILITIES, *PWDI_TXRX_CAPABILITIES, WDI_TXRX_CAPABILITIES, PWDI_TXRX_CAPABILITIES
+ms.date: 1/8/2018
+ms.keywords: _WDI_TXRX_TARGET_CAPABILITIES, WDI_TXRX_CAPABILITIES, *PWDI_TXRX_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDI_TXRX_CAPABILITIES, *PWDI_TXRX_CAPABILITIES
 ---
 
 # _WDI_TXRX_TARGET_CAPABILITIES structure

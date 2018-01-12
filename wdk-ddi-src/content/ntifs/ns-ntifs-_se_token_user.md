@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._SE_TOKEN_USER
+UID: NS:ntifs._SE_TOKEN_USER
 title: _SE_TOKEN_USER
 author: windows-driver-content
 description: The SE_TOKEN_USER structure holds the maximum-sized valid user SID that can be returned by SeQueryInformationToken, GetTokenInformation, or ZwQueryInformationToken with the TokenUser information class. This structure is suitable for stack allocation.
@@ -7,8 +7,8 @@ old-location: ifsk\se_token_user.htm
 old-project: ifsk
 ms.assetid: 3B870461-0C5D-46DF-A850-EB796AE5A4CB
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SE_TOKEN_USER, SE_TOKEN_USER, PSE_TOKEN_USER
+ms.date: 1/9/2018
+ms.keywords: _SE_TOKEN_USER, PSE_TOKEN_USER, SE_TOKEN_USER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PSE_TOKEN_USER, SE_TOKEN_USER
 ---
 
 # _SE_TOKEN_USER structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>SE_TOKEN_USER</b> structure holds the maximum-sized valid user SID that can be returned by <a href="ifsk.sequeryinformationtoken">SeQueryInformationToken</a>, <a href="security.gettokeninformation">GetTokenInformation</a>, or <a href="kernel.zwqueryinformationtoken">ZwQueryInformationToken</a> with the TokenUser information class. This structure is suitable for stack allocation.
+The <b>SE_TOKEN_USER</b> structure holds the maximum-sized valid user SID that can be returned by <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>, <a href="https://msdn.microsoft.com/e94de19c-de12-40fb-a72c-060f7ad12f75">GetTokenInformation</a>, or <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a> with the TokenUser information class. This structure is suitable for stack allocation.
 
 
 
@@ -101,18 +102,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.sid">SID</a>
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556742">SID_AND_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="ifsk.token_user">TOKEN_USER</a>
+<a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SE_TOKEN_USER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SE_TOKEN_USER structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

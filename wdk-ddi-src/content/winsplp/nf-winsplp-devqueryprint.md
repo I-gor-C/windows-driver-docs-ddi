@@ -1,5 +1,5 @@
 ---
-UID: NF.winsplp.DevQueryPrint
+UID: NF:winsplp.DevQueryPrint
 title: DevQueryPrint function
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\devqueryprint.htm
 old-project: print
 ms.assetid: B3135A43-A328-4103-AB75-A37F02322F70
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: DevQueryPrint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: NOTIFICATION_CONFIG_FLAGS
 req.product: Windows 10 or later.
 ---
 

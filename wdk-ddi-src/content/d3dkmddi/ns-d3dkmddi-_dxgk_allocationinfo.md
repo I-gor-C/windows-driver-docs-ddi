@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_ALLOCATIONINFO
+UID: NS:d3dkmddi._DXGK_ALLOCATIONINFO
 title: _DXGK_ALLOCATIONINFO
 author: windows-driver-content
 description: The DXGK_ALLOCATIONINFO structure describes parameters for creating an allocation.
@@ -7,7 +7,7 @@ old-location: display\dxgk_allocationinfo.htm
 old-project: display
 ms.assetid: d5767bd3-11f8-45a7-b760-3ed51c54c044
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_ALLOCATIONINFO, DXGK_ALLOCATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_ALLOCATIONINFO
 ---
 
 # _DXGK_ALLOCATIONINFO structure
@@ -75,7 +76,7 @@ typedef struct _DXGK_ALLOCATIONINFO {
 
 ### -field pPrivateDriverData
 
-[in] A pointer to a block of private data. This data is for each allocation and is distinct from the <b>pPrivateDriverData</b> member in the <a href="display.dxgkarg_createallocation">DXGKARG_CREATEALLOCATION</a> structure. The user-mode display driver might pass this data to the display miniport driver. However, if  the Microsoft DirectX graphics kernel subsystem passes this data to describe the shared primary or other lockable surface, the data is passed as the first element of the array in the <b>pAllocationInfo</b> member of DXGKARG_CREATEALLOCATION.
+[in] A pointer to a block of private data. This data is for each allocation and is distinct from the <b>pPrivateDriverData</b> member in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a> structure. The user-mode display driver might pass this data to the display miniport driver. However, if  the Microsoft DirectX graphics kernel subsystem passes this data to describe the shared primary or other lockable surface, the data is passed as the first element of the array in the <b>pAllocationInfo</b> member of DXGKARG_CREATEALLOCATION.
 
 
 ### -field PrivateDriverDataSize
@@ -95,17 +96,17 @@ typedef struct _DXGK_ALLOCATIONINFO {
 
 ### -field PitchAlignedSize
 
-[out] The size, in bytes, of the allocation when it is located in a pitch-aligned segment, which is specified by the <b>PitchAlignment</b> bit-field flag in the <b>Flags</b> member of the <a href="display.dxgk_segmentdescriptor">DXGK_SEGMENTDESCRIPTOR</a> structure for the segment. If the allocation is not supported in a pitch-aligned segment (graphics processing units [GPUs] commonly do not support this type of segment), the driver should set the value in <b>PitchAlignedSize</b> to zero. If the driver specifies a nonzero value in <b>PitchAlignedSize</b>, the value must be greater than or equal to the value in the <b>Size</b> member.
+[out] The size, in bytes, of the allocation when it is located in a pitch-aligned segment, which is specified by the <b>PitchAlignment</b> bit-field flag in the <b>Flags</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentdescriptor.md">DXGK_SEGMENTDESCRIPTOR</a> structure for the segment. If the allocation is not supported in a pitch-aligned segment (graphics processing units [GPUs] commonly do not support this type of segment), the driver should set the value in <b>PitchAlignedSize</b> to zero. If the driver specifies a nonzero value in <b>PitchAlignedSize</b>, the value must be greater than or equal to the value in the <b>Size</b> member.
 
 
 ### -field HintedBank
 
-[out] A <a href="display.dxgk_segmentbankpreference">DXGK_SEGMENTBANKPREFERENCE</a> structure that indicates the bank ordering preferences that the display miniport driver requests that the video memory manager use to page-in the allocation. If this member is specified, the video memory manager uses banking information about the most preferred segment, which is specified by the <b>SegmentId0</b> member of the <a href="display.dxgk_segmentpreference">DXGK_SEGMENTPREFERENCE</a> structure that the <b>PreferredSegment</b> member specifies.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentbankpreference.md">DXGK_SEGMENTBANKPREFERENCE</a> structure that indicates the bank ordering preferences that the display miniport driver requests that the video memory manager use to page-in the allocation. If this member is specified, the video memory manager uses banking information about the most preferred segment, which is specified by the <b>SegmentId0</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562047">DXGK_SEGMENTPREFERENCE</a> structure that the <b>PreferredSegment</b> member specifies.
 
 
 ### -field PreferredSegment
 
-[out] A <a href="display.dxgk_segmentpreference">DXGK_SEGMENTPREFERENCE</a> structure that indicates preferred segments identifiers that the display miniport driver requests that the video memory manager use to page-in the allocation.
+[out] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562047">DXGK_SEGMENTPREFERENCE</a> structure that indicates preferred segments identifiers that the display miniport driver requests that the video memory manager use to page-in the allocation.
 
 
 ### -field SupportedReadSegmentSet
@@ -150,7 +151,7 @@ Support for this member started with Windows 10 and the WDDM v2.
 
 ### -field Flags
 
-[out] A <a href="display.dxgk_allocationinfoflags">DXGK_ALLOCATIONINFOFLAGS</a> structure that identifies properties for an allocation in bit-field flags. These properties indicate the type of allocation to create. The display miniport driver specifies these flags for the video memory manager.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a> structure that identifies properties for an allocation in bit-field flags. These properties indicate the type of allocation to create. The display miniport driver specifies these flags for the video memory manager.
 
 
 ### -field FlagsWddm2
@@ -162,7 +163,7 @@ Support for this member started with Windows 10 and WDDM 2.0.
 
 ### -field pAllocationUsageHint
 
-[out] A pointer to a <a href="display.dxgk_allocationusagehint">DXGK_ALLOCATIONUSAGEHINT</a> structure that the memory manager uses to determine how to use the allocation.
+[out] A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationusagehint.md">DXGK_ALLOCATIONUSAGEHINT</a> structure that the memory manager uses to determine how to use the allocation.
 
 
 ### -field AllocationPriority
@@ -208,28 +209,28 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmdt_sharedprimarysurfacedata">D3DKMDDI_SHAREDPRIMARYSURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_sharedprimarysurfacedata.md">D3DKMDDI_SHAREDPRIMARYSURFACEDATA</a>
 </dt>
 <dt>
-<a href="display.dxgk_allocationinfoflags">DXGK_ALLOCATIONINFOFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>
 </dt>
 <dt>
-<a href="display.dxgk_allocationlist">DXGK_ALLOCATIONLIST</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationlist.md">DXGK_ALLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="display.dxgk_allocationusagehint">DXGK_ALLOCATIONUSAGEHINT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationusagehint.md">DXGK_ALLOCATIONUSAGEHINT</a>
 </dt>
 <dt>
-<a href="display.dxgk_segmentbankpreference">DXGK_SEGMENTBANKPREFERENCE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentbankpreference.md">DXGK_SEGMENTBANKPREFERENCE</a>
 </dt>
 <dt>
-<a href="display.dxgk_segmentdescriptor">DXGK_SEGMENTDESCRIPTOR</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentdescriptor.md">DXGK_SEGMENTDESCRIPTOR</a>
 </dt>
 <dt>
-<a href="display.dxgk_segmentpreference">DXGK_SEGMENTPREFERENCE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562047">DXGK_SEGMENTPREFERENCE</a>
 </dt>
 <dt>
-<a href="display.dxgkarg_createallocation">DXGKARG_CREATEALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
@@ -245,5 +246,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_ALLOCATIONINFO structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_ALLOCATIONINFO structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

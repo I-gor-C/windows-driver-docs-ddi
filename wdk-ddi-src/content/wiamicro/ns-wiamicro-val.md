@@ -1,14 +1,14 @@
 ---
-UID: NS.WIAMICRO.VAL
+UID: NS:wiamicro.VAL
 title: VAL
 author: windows-driver-content
 description: The VAL structure is used by the microdriver and WIA Flatbed driver to pass information between each other.
 old-location: image\val.htm
-old-project: Image
+old-project: image
 ms.assetid: 9c9cf520-3249-4c1e-9d0d-e07f7127117e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: VAL, VAL, *PVAL, PVAL
+ms.date: 1/10/2018
+ms.keywords: VAL, *PVAL, VAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PVAL, VAL
 req.product: Windows 10 or later.
 ---
 
@@ -79,7 +80,7 @@ Points to the GUID of the pressed button. If no button was pressed, this member 
 
 ### -field pScanInfo
 
-Points to a <a href="image.scaninfo">SCANINFO</a> structure.
+Points to a <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure.
 
 
 ### -field handle
@@ -104,7 +105,7 @@ Reserved. Do not use.
 
 ### -field szVal
 
-Specifies the device name in ASCII form. If needed for interrupt checking, the microdriver can use this name to pass to <a href="fs.createfile">CreateFile</a> (described in the Microsoft Windows SDK documentation) in order to obtain a file handle to the device.
+Specifies the device name in ASCII form. If needed for interrupt checking, the microdriver can use this name to pass to <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> (described in the Microsoft Windows SDK documentation) in order to obtain a file handle to the device.
 
 
 ## -remarks

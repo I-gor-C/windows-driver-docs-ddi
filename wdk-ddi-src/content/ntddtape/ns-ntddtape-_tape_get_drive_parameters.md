@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDTAPE._TAPE_GET_DRIVE_PARAMETERS
+UID: NS:ntddtape._TAPE_GET_DRIVE_PARAMETERS
 title: _TAPE_GET_DRIVE_PARAMETERS
 author: windows-driver-content
 description: The TAPE_GET_DRIVE_PARAMETERS structure is used in conjunction with the IOCTL_TAPE_GET_DRIVE_PARAMS request to retrieve information about capabilities of the tape drive.
@@ -7,8 +7,8 @@ old-location: storage\tape_get_drive_parameters.htm
 old-project: storage
 ms.assetid: 2b1b196f-f012-4136-983e-8c8192bdbd2f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _TAPE_GET_DRIVE_PARAMETERS, TAPE_GET_DRIVE_PARAMETERS, *PTAPE_GET_DRIVE_PARAMETERS, PTAPE_GET_DRIVE_PARAMETERS
+ms.date: 1/10/2018
+ms.keywords: _TAPE_GET_DRIVE_PARAMETERS, TAPE_GET_DRIVE_PARAMETERS, *PTAPE_GET_DRIVE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TAPE_GET_DRIVE_PARAMETERS, *PTAPE_GET_DRIVE_PARAMETERS
 ---
 
 # _TAPE_GET_DRIVE_PARAMETERS structure
@@ -718,12 +719,12 @@ Header
 <a href="..\ntddtape\ni-ntddtape-ioctl_tape_get_drive_params.md">IOCTL_TAPE_GET_DRIVE_PARAMS</a>
 </dt>
 <dt>
-<a href="storage.tapeminigetdriveparameters">TapeMiniGetDriveParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567936">TapeMiniGetDriveParameters</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TAPE_GET_DRIVE_PARAMETERS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TAPE_GET_DRIVE_PARAMETERS structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

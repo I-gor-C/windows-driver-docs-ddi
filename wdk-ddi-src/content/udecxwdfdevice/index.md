@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:udecxwdfdevice
 ---
 
 # Udecxwdfdevice.h header
 
 ## -description
 
-This header is used by UsbRef. For more information, see
-- [UsbRef](../_UsbRef/index.md)
+This header is used by Universal Serial Bus(USB). For more information, see
+- [Universal Serial Bus(USB)](../_usbref/index.md)
 
 Udecxwdfdevice.h contain these programming interfaces:
 
@@ -21,13 +21,6 @@ Udecxwdfdevice.h contain these programming interfaces:
 | [UdecxWdfDeviceAddUsbDeviceEmulation function](nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md) | Initializes a framework device object to support operations related to a host controller and a virtual USB device attached to the controller. |
 | [UdecxWdfDeviceResetComplete function](nf-udecxwdfdevice-udecxwdfdeviceresetcomplete.md) | Informs the USB device emulation class extension (UdeCx) that the reset operation on the specified controller has competed. |
 | [UdecxWdfDeviceTryHandleUserIoctl function](nf-udecxwdfdevice-udecxwdfdevicetryhandleuserioctl.md) | Attempts to handle an IOCTL request sent by a user-mode software. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY callback](nc-udecxwdfdevice-evt_udecx_wdf_device_query_usb_capability.md) | The UDE client driver's implementation to determine the capabilities that are supported by the emulated USB host controller. |
-| [EVT_UDECX_WDF_DEVICE_RESET callback](nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md) | The UDE client driver's implementation to reset the emulated host controller or the devices attached to it. |
 
 ## Structures
 

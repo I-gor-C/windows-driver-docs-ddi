@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_ADAPTERTYPE
+UID: NS:d3dkmthk._D3DKMT_ADAPTERTYPE
 title: _D3DKMT_ADAPTERTYPE
 author: windows-driver-content
 description: Specifies the type of display device that the graphics adapter supports.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_adaptertype.htm
 old-project: display
 ms.assetid: a92865bc-620f-434d-a185-b837924599fc
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_ADAPTERTYPE, D3DKMT_ADAPTERTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_ADAPTERTYPE
 ---
 
 # _D3DKMT_ADAPTERTYPE structure

@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsCopyObjectBagItems
+UID: NF:ks.KsCopyObjectBagItems
 title: KsCopyObjectBagItems function
 author: windows-driver-content
 description: The KsCopyObjectBagItems function copies all items from one object bag into another.
@@ -7,7 +7,7 @@ old-location: stream\kscopyobjectbagitems.htm
 old-project: stream
 ms.assetid: 5b3ee4f1-5c5a-413f-b927-96293cc87e98
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsCopyObjectBagItems
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsCopyObjectBagItems function
@@ -132,39 +133,39 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksallocateobjectbag">KsAllocateObjectBag</a>
+<a href="..\ks\nf-ks-ksallocateobjectbag.md">KsAllocateObjectBag</a>
 </dt>
 <dt>
-<a href="stream.ksfreeobjectbag">KsFreeObjectBag</a>
+<a href="..\ks\nf-ks-ksfreeobjectbag.md">KsFreeObjectBag</a>
 </dt>
 <dt>
-<a href="stream.ksadditemtoobjectbag">KsAddItemToObjectBag</a>
+<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
 </dt>
 <dt>
-<a href="stream.ksremoveitemfromobjectbag">KsRemoveItemFromObjectBag</a>
+<a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
 </dt>
 <dt>
-<a href="stream.ksdiscard">KsDiscard</a>
+<a href="..\ks\nf-ks-ksdiscard.md">KsDiscard</a>
 </dt>
 <dt>
-<a href="stream._ksedit">_KsEdit</a>
+<a href="..\ks\nf-ks-_ksedit.md">_KsEdit</a>
 </dt>
 <dt>
-<a href="stream.kspingetconnectedpininterface">KsPinGetConnectedPinInterface</a>
+<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
 </dt>
 <dt>
-<a href="stream.kspingetconnectedfilterinterface">KsPinGetConnectedFilterInterface</a>
+<a href="..\ks\nf-ks-kspingetconnectedfilterinterface.md">KsPinGetConnectedFilterInterface</a>
 </dt>
 <dt>
-<a href="stream.kspingetreferenceclockinterface">KsPinGetReferenceClockInterface</a>
+<a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
 </dt>
 <dt>
-<a href="stream.kspinsetpinclocktime">KsPinSetPinClockTime</a>
+<a href="..\ks\nf-ks-kspinsetpinclocktime.md">KsPinSetPinClockTime</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsCopyObjectBagItems function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsCopyObjectBagItems function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

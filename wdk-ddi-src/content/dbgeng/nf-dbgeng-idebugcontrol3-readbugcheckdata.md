@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.ReadBugCheckData
+UID: NF:dbgeng.IDebugControl3.ReadBugCheckData
 title: IDebugControl3::ReadBugCheckData method
 author: windows-driver-content
 description: The ReadBugCheckData method reads the kernel bug check code and related parameters.
 old-location: debugger\readbugcheckdata.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 3ede32f5-9671-4f38-a33f-96536300267b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::ReadBugCheckData, ReadBugCheckData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl3::ReadBugCheckData method

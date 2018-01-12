@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.GetCurrentProcessHandle
+UID: NF:wdbgexts.GetCurrentProcessHandle
 title: GetCurrentProcessHandle function
 author: windows-driver-content
 description: The GetCurrentProcessHandle function returns the system handle for the current process.
 old-location: debugger\getcurrentprocesshandle.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: b6780f1c-e093-4d91-8909-dabb1ecaefaa
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: GetCurrentProcessHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 

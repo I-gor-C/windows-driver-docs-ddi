@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_GDIARG_CLEARTYPEBLEND
+UID: NS:d3dkmddi._DXGK_GDIARG_CLEARTYPEBLEND
 title: _DXGK_GDIARG_CLEARTYPEBLEND
 author: windows-driver-content
 description: The DXGK_GDIARG_CLEARTYPEBLEND structure describes the characteristics of a GDI hardware-accelerated ClearType and antialiased text pixel blending operation.
@@ -7,7 +7,7 @@ old-location: display\dxgk_gdiarg_cleartypeblend.htm
 old-project: display
 ms.assetid: 1e67bb33-c2e5-4f3c-9ea6-feeb4a1fe645
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_GDIARG_CLEARTYPEBLEND, DXGK_GDIARG_CLEARTYPEBLEND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_GDIARG_CLEARTYPEBLEND
 ---
 
 # _DXGK_GDIARG_CLEARTYPEBLEND structure
@@ -67,7 +68,7 @@ typedef struct _DXGK_GDIARG_CLEARTYPEBLEND {
 
 ### -field DstRect
 
-[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. 
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. 
 
 The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the destination surface, but sub-rectangles cannot. Additionally, all sub-rectangles are guaranteed to fit inside the destination surface. Sub-rectangles can be constrained further by a bounding rectangle that is smaller than the destination rectangle.
 
@@ -82,7 +83,7 @@ The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the
 ### -field GammaSurfAllocationIndex
 
 
-      [in] An index of the element in the allocation list that specifies a gamma table of type <a href="display.d3dkmdt_gdisurfacetype">D3DKMDT_GDISURFACETYPE</a>. The format of the gamma lookup allocation is 8 bits per pixel, and the resolution is 512 x 16 pixels. Each row of the allocation contains two tables: gamma and inverse gamma. Each table has 256 entries.
+      [in] An index of the element in the allocation list that specifies a gamma table of type <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>. The format of the gamma lookup allocation is 8 bits per pixel, and the resolution is 512 x 16 pixels. Each row of the allocation contains two tables: gamma and inverse gamma. Each table has 256 entries.
      
 
 
@@ -117,7 +118,7 @@ The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the
 ### -field Color
 
 
-      [in] The foreground color, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="display.d3dddiformat">D3DDDIFORMAT</a> enumeration), corrected for gamma.
+      [in] The foreground color, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration), corrected for gamma.
      
 
 
@@ -152,7 +153,7 @@ The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the
 ### -field Color2
 
 
-      [in] The foreground color, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="display.d3dddiformat">D3DDDIFORMAT</a> enumeration), not corrected for gamma.
+      [in] The foreground color, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration), not corrected for gamma.
      
 
 
@@ -163,7 +164,7 @@ When gamma is in the range of [0, 15], the following per-pixel blending is perfo
 
 When gamma is equal to 0xFFFFFFFF (the value of D3DKM_INVALID_GAMMA_INDEX), the following per-pixel blending is performed.
 
-Where the following parameters are in the D3DDDIFMT_A8R8G8B8 format defined in the <a href="display.d3dddiformat">D3DDDIFORMAT</a> enumeration:
+Where the following parameters are in the D3DDDIFMT_A8R8G8B8 format defined in the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration:
 
 <b>Color</b> = gamma-corrected foreground color, as defined by the <b>Color</b> member
 
@@ -208,18 +209,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiformat">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="display.d3dkmdt_gdisurfacetype">D3DKMDT_GDISURFACETYPE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>
 </dt>
 <dt>
-<a href="display.rect">RECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_GDIARG_CLEARTYPEBLEND structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_GDIARG_CLEARTYPEBLEND structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

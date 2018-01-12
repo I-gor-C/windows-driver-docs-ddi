@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._OSVERSIONINFOW
+UID: NS:wdm._OSVERSIONINFOW
 title: _OSVERSIONINFOW
 author: windows-driver-content
 description: The RTL_OSVERSIONINFOW structure contains operating system version information.
@@ -7,8 +7,8 @@ old-location: kernel\rtl_osversioninfow.htm
 old-project: kernel
 ms.assetid: 04e50a2c-eb85-4fc8-9751-798397eddf95
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _OSVERSIONINFOW, LPOSVERSIONINFOW, PRTL_OSVERSIONINFOW, OSVERSIONINFOW, RTL_OSVERSIONINFOW, POSVERSIONINFOW, *PRTL_OSVERSIONINFOW, *POSVERSIONINFOW, *LPOSVERSIONINFOW
+ms.date: 1/4/2018
+ms.keywords: _OSVERSIONINFOW, *PRTL_OSVERSIONINFOW, *POSVERSIONINFOW, *LPOSVERSIONINFOW, RTL_OSVERSIONINFOW, OSVERSIONINFOW, OSVERSIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PRTL_OSVERSIONINFOW, *POSVERSIONINFOW, *LPOSVERSIONINFOW, RTL_OSVERSIONINFOW, OSVERSIONINFOW
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>RTL_OSVERSIONINFOW</b> structure contains operating system version information. The information includes major and minor version numbers, a build number, a platform identifier, and descriptive text about the operating system. The <b>RTL_OSVERSIONINFOW</b> structure is used with <a href="kernel.rtlgetversion">RtlGetVersion</a>. 
+The <b>RTL_OSVERSIONINFOW</b> structure contains operating system version information. The information includes major and minor version numbers, a build number, a platform identifier, and descriptive text about the operating system. The <b>RTL_OSVERSIONINFOW</b> structure is used with <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>. 
 
 
 
@@ -61,17 +62,17 @@ typedef struct _OSVERSIONINFOW {
 
 ### -field dwOSVersionInfoSize
 
-The size in bytes of an <b>RTL_OSVERSIONINFOW</b> structure. This member must be set before the structure is used with <a href="kernel.rtlgetversion">RtlGetVersion</a>.
+The size in bytes of an <b>RTL_OSVERSIONINFOW</b> structure. This member must be set before the structure is used with <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>.
 
 
 ### -field dwMajorVersion
 
-The major version number of the operating system. For example, for Windows 2000, the major version number is five. For more information, see <a href="kernel.rtl_osversioninfoexw">RTL_OSVERSIONINFOEXW</a>.
+The major version number of the operating system. For example, for Windows 2000, the major version number is five. For more information, see <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>.
 
 
 ### -field dwMinorVersion
 
-The minor version number of the operating system. For example, for Windows 2000 the minor version number is zero. For more information, see <a href="kernel.rtl_osversioninfoexw">RTL_OSVERSIONINFOEXW</a>. 
+The minor version number of the operating system. For example, for Windows 2000 the minor version number is zero. For more information, see <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>. 
 
 
 ### -field dwBuildNumber
@@ -90,7 +91,7 @@ The service-pack version string. This member contains a null-terminated string, 
 
 
 ## -remarks
-For a list of the major and minor version numbers for the various versions of Windows, see <a href="kernel.rtl_osversioninfoexw">RTL_OSVERSIONINFOEXW</a>.
+For a list of the major and minor version numbers for the various versions of Windows, see <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>.
 
 
 ## -requirements
@@ -111,18 +112,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtl_osversioninfoexw">RTL_OSVERSIONINFOEXW</a>
+<a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>
 </dt>
 <dt>
-<a href="kernel.rtlgetversion">RtlGetVersion</a>
+<a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>
 </dt>
 <dt>
-<a href="kernel.rtlverifyversioninfo">RtlVerifyVersionInfo</a>
+<a href="..\wdm\nf-wdm-rtlverifyversioninfo.md">RtlVerifyVersionInfo</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RTL_OSVERSIONINFOW structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RTL_OSVERSIONINFOW structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

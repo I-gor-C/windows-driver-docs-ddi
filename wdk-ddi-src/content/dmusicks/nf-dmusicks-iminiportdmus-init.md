@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.IMiniportDMus.Init
+UID: NF:dmusicks.IMiniportDMus.Init
 title: IMiniportDMus::Init method
 author: windows-driver-content
 description: The Init method initializes the DMus miniport object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # IMiniportDMus::Init method
@@ -73,7 +74,7 @@ Pointer to an <a href="..\dmusicks\nn-dmusicks-iportdmus.md">IPortDMus</a> objec
 
 ### -param ppServiceGroup [out]
 
-Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> interface of the miniport driver's service group object. This is the service group that this miniport driver wants to have used for calls to <a href="audio.iportdmus_notify">IPortDMus::Notify</a>.
+Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> interface of the miniport driver's service group object. This is the service group that this miniport driver wants to have used for calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536880">IPortDMus::Notify</a>.
 
 
 ## -returns
@@ -85,11 +86,11 @@ The <i>pUnknownAdapter</i> parameter is optional:
 
 If <i>pUnknownAdapter</i> is non-<b>NULL</b>, the <code>Init</code> method queries the <i>pUnknownAdapter</i> object for its <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a> interface.
 
-If <i>pUnknownAdapter</i> is <b>NULL</b>, the <code>Init</code> method calls <a href="audio.pcnewinterruptsync">PcNewInterruptSync</a> to create a new <b>IInterruptSync</b> object. In this case, the resource list that <i>pResourceList</i> points to supplies the interrupt resource that the new <b>IInterruptSync</b> object uses.
+If <i>pUnknownAdapter</i> is <b>NULL</b>, the <code>Init</code> method calls <a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a> to create a new <b>IInterruptSync</b> object. In this case, the resource list that <i>pResourceList</i> points to supplies the interrupt resource that the new <b>IInterruptSync</b> object uses.
 
 In either case, the <code>Init</code> method and calls the <b>RegisterServiceRoutine</b> method on the <b>IInterruptSync</b> object in order to add the miniport driver's interrupt service routine (ISR) to the list of ISRs. When the adapter driver later frees the port object, the port driver releases its reference to the <b>IInterruptSync</b> object.
 
-The <i>pUnknownAdapter</i> and <i>pResourceList</i> parameters are the same pointer values that the adapter driver earlier passed as parameters to the <b>IPortDMus</b> object's <code>Init</code> method (see <a href="audio.iport_init">IPort::Init</a>).
+The <i>pUnknownAdapter</i> and <i>pResourceList</i> parameters are the same pointer values that the adapter driver earlier passed as parameters to the <b>IPortDMus</b> object's <code>Init</code> method (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>).
 
 The <i>pUnknownAdapter</i>, <i>pResourceList</i>, <i>pPort</i>, and <i>ppServiceGroup</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.
 
@@ -145,16 +146,16 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 </dt>
 <dt>
-<a href="audio.iportdmus_notify">IPortDMus::Notify</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536880">IPortDMus::Notify</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
 </dt>
 <dt>
-<a href="audio.pcnewinterruptsync">PcNewInterruptSync</a>
+<a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a>
 </dt>
 <dt>
-<a href="audio.iport_init">IPort::Init</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>
 </dt>
 </dl>
  

@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteTyped.OutTypeName
+UID: NF:engextcpp.ExtRemoteTyped.OutTypeName
 title: ExtRemoteTyped::OutTypeName method
 author: windows-driver-content
 description: The OutTypeName method prints the type name of the typed data represented by this object.
 old-location: debugger\extremotetyped_outtypename.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: fda88a3d-4cdf-4be1-87a7-29e312453686
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped::OutTypeName, OutTypeName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteTyped::OutTypeName method

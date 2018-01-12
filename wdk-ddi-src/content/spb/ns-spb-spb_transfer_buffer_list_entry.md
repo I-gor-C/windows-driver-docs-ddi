@@ -1,5 +1,5 @@
 ---
-UID: NS.SPB.SPB_TRANSFER_BUFFER_LIST_ENTRY
+UID: NS:spb.SPB_TRANSFER_BUFFER_LIST_ENTRY
 title: SPB_TRANSFER_BUFFER_LIST_ENTRY
 author: windows-driver-content
 description: The SPB_TRANSFER_BUFFER_LIST_ENTRY structure describes either a simple transfer buffer, or an element in an array of one or more transfer buffers.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SPB_TRANSFER_BUFFER_LIST_ENTRY, *PSPB_TRANSFER_BUFFER_LIST_ENTRY
 req.product: Windows 10 or later.
 ---
 

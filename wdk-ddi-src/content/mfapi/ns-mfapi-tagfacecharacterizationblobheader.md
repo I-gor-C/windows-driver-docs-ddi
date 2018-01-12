@@ -1,5 +1,5 @@
 ---
-UID: NS.MFAPI.TAGFACECHARACTERIZATIONBLOBHEADER
+UID: NS:mfapi.tagFaceCharacterizationBlobHeader
 title: tagFaceCharacterizationBlobHeader
 author: windows-driver-content
 description: The FaceCharacterizationBlobHeader structure describes the size and count information of the blob format for the MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS attribute.
@@ -7,7 +7,7 @@ old-location: stream\facecharacterizationblobheader.htm
 old-project: stream
 ms.assetid: F3BDB935-A8CB-41BA-B912-0B9264FE0B09
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: tagFaceCharacterizationBlobHeader, FaceCharacterizationBlobHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FaceCharacterizationBlobHeader
 ---
 
 # tagFaceCharacterizationBlobHeader structure
@@ -56,12 +57,12 @@ typedef struct tagFaceCharacterizationBlobHeader {
 
 ### -field Size
 
-Size of this header + all following <a href="stream.facecharacterization">FaceCharacterization</a> structures.
+Size of this header + all following <a href="..\mfapi\ns-mfapi-tagfacecharacterization.md">FaceCharacterization</a> structures.
 
 
 ### -field Count
 
-Number of <b>FaceCharacterization</b> structures in the blob. Must match the number of <a href="stream.facerectinfo">FaceRectInfo</a> structures in <a href="stream.facerectinfoblobheader">FaceRectInfoBlobHeader</a>.
+Number of <b>FaceCharacterization</b> structures in the blob. Must match the number of <a href="..\mfapi\ns-mfapi-tagfacerectinfo.md">FaceRectInfo</a> structures in <a href="..\mfapi\ns-mfapi-tagfacerectinfoblobheader.md">FaceRectInfoBlobHeader</a>.
 
 
 ## -remarks

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.ExUuidCreate
+UID: NF:ntddk.ExUuidCreate
 title: ExUuidCreate function
 author: windows-driver-content
 description: The ExUuidCreate routine initializes a UUID (GUID) structure to a newly generated value.
@@ -7,7 +7,7 @@ old-location: kernel\exuuidcreate.htm
 old-project: kernel
 ms.assetid: e85fe5fa-b11e-41ff-a355-4da0394377d1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ExUuidCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # ExUuidCreate function
@@ -152,7 +153,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqlexpassive">IrqlExPassive</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547756">IrqlExPassive</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>

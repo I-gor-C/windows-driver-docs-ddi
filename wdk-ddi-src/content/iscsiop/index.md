@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:iscsiop
 ---
 
 # Iscsiop.h header
@@ -72,5 +72,5 @@ Iscsiop.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PISCSI_ADAPTER_EVENT_CODE enumeration](ne-iscsiop-piscsi_adapter_event_code.md) | The ISCSI_ADAPTER_EVENT_CODE enumeration indicates the type of adapter event. |
-| [PLOGINSESSIONTYPE enumeration](ne-iscsiop-ploginsessiontype.md) | The LOGINSESSIONTYPE enumeration indicates the type of logon session. |
+| [*PISCSI_ADAPTER_EVENT_CODE enumeration](ne-iscsiop-piscsi_adapter_event_code.md) | The ISCSI_ADAPTER_EVENT_CODE enumeration indicates the type of adapter event. |
+| [*PLOGINSESSIONTYPE enumeration](ne-iscsiop-ploginsessiontype.md) | The LOGINSESSIONTYPE enumeration indicates the type of logon session. |

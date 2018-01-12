@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IXpsDocument.SetThumbnail
+UID: NF:filterpipeline.IXpsDocument.SetThumbnail
 title: IXpsDocument::SetThumbnail method
 author: windows-driver-content
 description: The SetThumbnail method removes the current thumbnail object from the document and inserts a new one.
@@ -7,7 +7,7 @@ old-location: print\ixpsdocument_setthumbnail.htm
 old-project: print
 ms.assetid: 47211c8f-e112-47fd-bd9e-57ff7ec586a5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IXpsDocument, IXpsDocument::SetThumbnail, SetThumbnail
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IXpsDocument::SetThumbnail method

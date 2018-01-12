@@ -1,5 +1,5 @@
 ---
-UID: NC.gpioclx.GPIO_CLIENT_WRITE_PINS_MASK
+UID: NC:gpioclx.GPIO_CLIENT_WRITE_PINS_MASK
 title: GPIO_CLIENT_WRITE_PINS_MASK
 author: windows-driver-content
 description: The CLIENT_WriteGpioPinsUsingMask event callback function writes to a set of general-purpose I/O (GPIO) pins that are configured as data outputs.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 6B3667AA-4658-4EDE-A8E1-925064BCD249
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks.
+req.typenames: *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ---
 
 # GPIO_CLIENT_WRITE_PINS_MASK callback

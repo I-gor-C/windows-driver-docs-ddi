@@ -1,5 +1,5 @@
 ---
-UID: NF.ntstrsafe.RtlStringCbCatExA
+UID: NF:ntstrsafe.RtlStringCbCatExA
 title: RtlStringCbCatExA function
 author: windows-driver-content
 description: The RtlStringCbCatExW and RtlStringCbCatExA functions concatenate two byte-counted strings.
@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcbcatex.htm
 old-project: kernel
 ms.assetid: 9105d6b5-bee3-4fcd-b548-4d403731654d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlStringCbCatExA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntstrsafe.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE
 ---
 
 # RtlStringCbCatExA function
@@ -176,7 +177,7 @@ The function returns the STATUS_INVALID_PARAMETER when:
 
 Because <b>RtlStringCbCatExW</b> and <b>RtlStringCbCatExA </b>receive the size of the destination buffer as input, they will not write past the end of the buffer. 
 
-<b>RtlStringCbCatEx</b> adds to the functionality of <a href="kernel.rtlstringcbcat">RtlStringCbCat</a> by returning a pointer to the end of the destination string, as well as the number of bytes left unused in that string. Flags can also be passed to the function for additional control.
+<b>RtlStringCbCatEx</b> adds to the functionality of <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatw.md">RtlStringCbCat</a> by returning a pointer to the end of the destination string, as well as the number of bytes left unused in that string. Flags can also be passed to the function for additional control.
 
 Use <b>RtlStringCbCatExW</b> to handle Unicode strings and <b>RtlStringCbCatExA</b> to handle ANSI strings. The form to use is determined by your data, as shown in the following table.
 
@@ -269,18 +270,18 @@ Unicode and ANSI names
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlstringcbcat">RtlStringCbCat</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatw.md">RtlStringCbCat</a>
 </dt>
 <dt>
-<a href="kernel.rtlstringcchcatex">RtlStringCchCatEx</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatexw.md">RtlStringCchCatEx</a>
 </dt>
 <dt>
-<a href="kernel.rtlstringcbcatnex">RtlStringCbCatNEx</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnexw.md">RtlStringCbCatNEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCbCatExW function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCbCatExW function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

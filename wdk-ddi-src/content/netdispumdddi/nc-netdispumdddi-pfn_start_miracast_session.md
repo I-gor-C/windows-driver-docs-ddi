@@ -1,5 +1,5 @@
 ---
-UID: NC.netdispumdddi.PFN_START_MIRACAST_SESSION
+UID: NC:netdispumdddi.PFN_START_MIRACAST_SESSION
 title: PFN_START_MIRACAST_SESSION
 author: windows-driver-content
 description: Called by the operating system to start a Miracast connected session.
@@ -7,8 +7,8 @@ old-location: display\startmiracastsession.htm
 old-project: display
 ms.assetid: 2778d9d0-7f97-416f-a5ae-3754b17e8a29
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _NDK_SRQ, NDK_SRQ
+ms.date: 12/29/2017
+ms.keywords: _NDK_SRQ_DISPATCH, NDK_SRQ_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 # PFN_START_MIRACAST_SESSION callback
@@ -175,5 +176,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFN_START_MIRACAST_SESSION callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFN_START_MIRACAST_SESSION callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcGetPhysicalDeviceObject
+UID: NF:portcls.PcGetPhysicalDeviceObject
 title: PcGetPhysicalDeviceObject function
 author: windows-driver-content
 description: The PcGetPhysicalDeviceObject function enables audio miniport drivers to retrieve the underlying physical device object of the audio device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: Any level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcGetPhysicalDeviceObject function
@@ -131,7 +132,7 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="audio.audio_port_class_functions">Audio Port Class Functions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536208">Audio Port Class Functions</a>
 </dt>
 </dl>
  

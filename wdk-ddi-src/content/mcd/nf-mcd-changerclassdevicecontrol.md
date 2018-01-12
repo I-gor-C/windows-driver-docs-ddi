@@ -1,5 +1,5 @@
 ---
-UID: NF.mcd.ChangerClassDeviceControl
+UID: NF:mcd.ChangerClassDeviceControl
 title: ChangerClassDeviceControl function
 author: windows-driver-content
 description: The ChangerClassDeviceControl routine is called by a changer minidriver to allow the class driver perform device-independent aspects of a device control operation.
@@ -7,7 +7,7 @@ old-location: storage\changerclassdevicecontrol.htm
 old-project: storage
 ms.assetid: 9107fa7b-b061-4505-aef7-be04587a4199
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: ChangerClassDeviceControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 # ChangerClassDeviceControl function

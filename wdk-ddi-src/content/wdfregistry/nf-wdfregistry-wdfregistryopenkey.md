@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfregistry.WdfRegistryOpenKey
+UID: NF:wdfregistry.WdfRegistryOpenKey
 title: WdfRegistryOpenKey function
 author: windows-driver-content
 description: The WdfRegistryOpenKey method opens a specified registry key and creates a framework registry-key object that represents the registry key.
@@ -7,7 +7,7 @@ old-location: wdf\wdfregistryopenkey.htm
 old-project: wdf
 ms.assetid: a79f6f98-1ebb-498e-9e20-cfdd22a0da7a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfRegistryOpenKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -67,7 +68,7 @@ A handle to a framework registry-key object. This object represents a parent reg
 
 ### -param KeyName [in]
 
-A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the name of the key to be opened. The key name can include path information. If <i>ParentKey</i> is <b>NULL</b>, <i>KeyName</i> must specify a complete path to a registry key. For examples, see the Remarks section.
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the name of the key to be opened. The key name can include path information. If <i>ParentKey</i> is <b>NULL</b>, <i>KeyName</i> must specify a complete path to a registry key. For examples, see the Remarks section.
 
 
 ### -param DesiredAccess [in]
@@ -77,7 +78,7 @@ An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS
 
 ### -param KeyAttributes [in, optional]
 
-A pointer to a <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied attributes for the new registry-key object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied attributes for the new registry-key object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 
 ### -param Key [out]
@@ -90,7 +91,7 @@ A pointer to a location that receives a handle to the new registry-key object.
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl>
-<a href="wdf.wdfregistryopenkey">WdfRegistryOpenKey</a> was not called at IRQL = PASSIVE_LEVEL. 
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryopenkey.md">WdfRegistryOpenKey</a> was not called at IRQL = PASSIVE_LEVEL. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl>An invalid parameter was specified.
@@ -106,7 +107,7 @@ A pointer to a location that receives a handle to the new registry-key object.
 
  
 
-For a list of other return values that the <b>WdfRegistryOpenKey</b> method might return, see <a href="wdf.framework_object_creation_errors">Framework Object Creation Errors</a>.
+For a list of other return values that the <b>WdfRegistryOpenKey</b> method might return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
 
 
@@ -114,7 +115,7 @@ This method also might return other <a href="https://msdn.microsoft.com/library/
 
 
 ## -remarks
-To obtain a handle to a registry-key object that represents a parent key, your driver can call <a href="wdf.wdfdriveropenparametersregistrykey">WdfDriverOpenParametersRegistryKey</a>, <a href="wdf.wdfdeviceopenregistrykey">WdfDeviceOpenRegistryKey</a>, or <a href="wdf.wdffdoinitopenregistrykey">WdfFdoInitOpenRegistryKey</a>.
+To obtain a handle to a registry-key object that represents a parent key, your driver can call <a href="..\wdfdriver\nf-wdfdriver-wdfdriveropenparametersregistrykey.md">WdfDriverOpenParametersRegistryKey</a>, <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceopenregistrykey.md">WdfDeviceOpenRegistryKey</a>, or <a href="..\wdffdo\nf-wdffdo-wdffdoinitopenregistrykey.md">WdfFdoInitOpenRegistryKey</a>.
 
 The string format specified in the <i>KeyName</i> parameter  depends on whether the caller is a KMDF driver or a UMDF driver. For example, to open the following path:
 
@@ -127,7 +128,7 @@ The string format specified in the <i>KeyName</i> parameter  depends on whether 
 
 Your driver might use this conditional logic:
 
-When the driver has finished using a registry key that it opens with <b>WdfRegistryOpenKey</b>, the driver must call <a href="wdf.wdfregistryclose">WdfRegistryClose</a>.
+When the driver has finished using a registry key that it opens with <b>WdfRegistryOpenKey</b>, the driver must call <a href="..\wdfregistry\nf-wdfregistry-wdfregistryclose.md">WdfRegistryClose</a>.
 
 For more information about registry-key objects, see <a href="wdf.using_the_registry_in_kmdf_drivers">Using the Registry in Framework-Based Drivers</a>.
 
@@ -206,7 +207,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -217,33 +218,33 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="kernel.rtlinitunicodestring">RtlInitUnicodeString</a>
+<a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 <dt>
-<a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="wdf.wdfdeviceopenregistrykey">WdfDeviceOpenRegistryKey</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceopenregistrykey.md">WdfDeviceOpenRegistryKey</a>
 </dt>
 <dt>
-<a href="wdf.wdfdriveropenparametersregistrykey">WdfDriverOpenParametersRegistryKey</a>
+<a href="..\wdfdriver\nf-wdfdriver-wdfdriveropenparametersregistrykey.md">WdfDriverOpenParametersRegistryKey</a>
 </dt>
 <dt>
-<a href="wdf.wdffdoinitopenregistrykey">WdfFdoInitOpenRegistryKey</a>
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitopenregistrykey.md">WdfFdoInitOpenRegistryKey</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryclose">WdfRegistryClose</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryclose.md">WdfRegistryClose</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistrycreatekey">WdfRegistryCreateKey</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistrycreatekey.md">WdfRegistryCreateKey</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryOpenKey method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryOpenKey method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

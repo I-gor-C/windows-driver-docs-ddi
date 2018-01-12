@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPOOL.PRINTPROPERTYVALUE
+UID: NS:winspool.PrintPropertyValue
 title: PrintPropertyValue
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\printpropertyvalue.htm
 old-project: print
 ms.assetid: B442AE8E-A4CE-481A-A69C-496CBF3E4722
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: PrintPropertyValue, PrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PrintPropertyValue
 req.product: Windows 10 or later.
 ---
 

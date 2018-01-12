@@ -1,5 +1,5 @@
 ---
-UID: NF.upssvc.UPSInit
+UID: NF:upssvc.UPSInit
 title: UPSInit function
 author: windows-driver-content
 description: The UPSInit function initializes a UPS minidriver, opens communication to the UPS unit, updates the registry, and causes the minidriver to start monitoring the UPS unit.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UMDETW_ALLOCATION_USAGE
 req.product: Windows 10 or later.
 ---
 
@@ -92,7 +93,7 @@ Updating <a href="https://msdn.microsoft.com/d0d4ef8f-9df1-48a3-b0fc-cea4eb3cdf4
 
 Beginning the monitoring of the UPS unit
 
-If the <b>UPSInit</b> function returns a value other than UPS_INITOK, the UPS service immediately calls the <a href="battery.upsstop">UPSStop</a> function.
+If the <b>UPSInit</b> function returns a value other than UPS_INITOK, the UPS service immediately calls the <a href="..\upssvc\nf-upssvc-upsstop.md">UPSStop</a> function.
 
 
 ## -requirements
@@ -124,7 +125,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="battery.upsstop">UPSStop</a>
+<a href="..\upssvc\nf-upssvc-upsstop.md">UPSStop</a>
 </dt>
 </dl>
  

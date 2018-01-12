@@ -1,5 +1,5 @@
 ---
-UID: NS.PMI._PMI_MEASUREMENT_DATA
+UID: NS:pmi._PMI_MEASUREMENT_DATA
 title: _PMI_MEASUREMENT_DATA
 author: windows-driver-content
 description: The PMI_MEASUREMENT_DATA structure contains the current power measurement that is collected by a power meter.
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: d96e587e-36e2-475a-a139-040034f8e60b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PMI_MEASUREMENT_DATA, PMI_MEASUREMENT_DATA, PPMI_MEASUREMENT_DATA, *PPMI_MEASUREMENT_DATA
+ms.keywords: _PMI_MEASUREMENT_DATA, *PPMI_MEASUREMENT_DATA, PMI_MEASUREMENT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPMI_MEASUREMENT_DATA, PMI_MEASUREMENT_DATA
 ---
 
 # _PMI_MEASUREMENT_DATA structure

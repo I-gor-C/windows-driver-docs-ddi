@@ -1,13 +1,13 @@
 ---
-UID: NS.WINDOT11._DOT11_WFD_INVITATION_FLAGS
+UID: NS:windot11._DOT11_WFD_INVITATION_FLAGS
 title: _DOT11_WFD_INVITATION_FLAGS
 author: windows-driver-content
 description: The DOT11_WFD_INVITATION_FLAGS structure represents the Invitation Attributes used during the Invitation procedure.
 old-location: netvista\dot11_wfd_invitation_flags.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9743FF37-0E8A-499F-AADB-9CD7BDC381E0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _DOT11_WFD_INVITATION_FLAGS, DOT11_WFD_INVITATION_FLAGS, *PDOT11_WFD_INVITATION_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_WFD_INVITATION_FLAGS, *PDOT11_WFD_INVITATION_FLAGS
 req.product: Windows 10 or later.
 ---
 

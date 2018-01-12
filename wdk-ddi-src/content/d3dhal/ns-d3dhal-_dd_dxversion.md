@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DHAL._DD_DXVERSION
+UID: NS:d3dhal._DD_DXVERSION
 title: _DD_DXVERSION
 author: windows-driver-content
 description: DirectX 8.0 and later versions only. DD_DXVERSION describes the current DirectX runtime version.
@@ -7,7 +7,7 @@ old-location: display\dd_dxversion.htm
 old-project: display
 ms.assetid: 72c22f76-c867-4924-b066-2ae4b25bfc43
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DD_DXVERSION, DD_DXVERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DD_DXVERSION
 ---
 
 # _DD_DXVERSION structure
@@ -61,7 +62,7 @@ typedef struct _DD_DXVERSION {
 
 ### -field gdi2
 
-Specifies a <a href="display.dd_getdriverinfo2data">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.
+Specifies a <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data.
 
 
 ### -field dwDXVersion
@@ -77,7 +78,7 @@ Reserved. Driver should not read or write.
 ## -remarks
 This information is provided to a new driver (one that exposes <b>GetDriverInfo2</b>) for DX7 and DX8 applications.
 
-The runtime provides a pointer to a DD_DXVERSION structure in the <b>lpvData</b> field of the <a href="display.dd_getdriverinfodata">DD_GETDRIVERINFODATA</a> data structure.
+The runtime provides a pointer to a DD_DXVERSION structure in the <b>lpvData</b> field of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a> data structure.
 
 The <b>gdi2</b> member of DD_DXVERSION is used by the runtime with type D3DGDI2_TYPE_DXVERSION specified to notify the driver of the current DirectX runtime version being used by the application.
 
@@ -100,15 +101,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dd_getdriverinfodata">DD_GETDRIVERINFODATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a>
 </dt>
 <dt>
-<a href="display.dd_getdriverinfo2data">DD_GETDRIVERINFO2DATA</a>
+<a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DD_DXVERSION structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DD_DXVERSION structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

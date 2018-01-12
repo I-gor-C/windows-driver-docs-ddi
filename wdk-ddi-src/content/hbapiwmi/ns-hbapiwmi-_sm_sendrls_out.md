@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_SENDRLS_OUT
+UID: NS:hbapiwmi._SM_SendRLS_OUT
 title: _SM_SendRLS_OUT
 author: windows-driver-content
 description: The SM_SendRLS_OUT structure is used to receive output parameters from the SM_SendRLS method.
@@ -7,8 +7,8 @@ old-location: storage\sm_sendrls_out.htm
 old-project: storage
 ms.assetid: 28c08a30-b6c6-4f1b-a3a9-0581da0159b9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_SendRLS_OUT, *PSM_SendRLS_OUT, SM_SendRLS_OUT, PSM_SendRLS_OUT
+ms.date: 1/10/2018
+ms.keywords: _SM_SendRLS_OUT, SM_SendRLS_OUT, *PSM_SendRLS_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SM_SendRLS_OUT, *PSM_SendRLS_OUT
 ---
 
 # _SM_SendRLS_OUT structure
@@ -58,7 +59,7 @@ typedef struct _SM_SendRLS_OUT {
 
 ### -field HBAStatus
 
-The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.
+The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
 
 ### -field TotalRespBufferSize

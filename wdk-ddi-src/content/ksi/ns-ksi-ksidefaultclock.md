@@ -1,5 +1,5 @@
 ---
-UID: NS.KSI.KSIDEFAULTCLOCK
+UID: NS:ksi.KSIDEFAULTCLOCK
 title: KSIDEFAULTCLOCK
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\ksidefaultclock.htm
 old-project: stream
 ms.assetid: 08509C28-DDD4-4060-A16A-857A6BF6F6E1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK, PKSIDEFAULTCLOCK
+ms.date: 1/9/2018
+ms.keywords: KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK
 ---
 
 # KSIDEFAULTCLOCK structure

@@ -1,13 +1,13 @@
 ---
-UID: NS.WINDOT11._DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS
+UID: NS:windot11._DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS
 title: _DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS
 author: windows-driver-content
 description: The request parameters for a provision discovery request are specified in a DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS structure. This structure is sent with an OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_REQUEST request to the miniport.
 old-location: netvista\dot11_send_provision_discovery_request_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1F764A80-71FC-445A-AADE-09660D1C250B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS, DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS, *PDOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS, *PDOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS
 req.product: Windows 10 or later.
 ---
 
@@ -155,18 +156,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_send_provision_discovery_request_parameters">DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS</a>
+<a href="..\windot11\ns-windot11-_dot11_send_provision_discovery_request_parameters.md">DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439783">NDIS_STATUS_DOT11_WFD_PROVISION_DISCOVERY_REQUEST_SEND_COMPLETE</a>
 </dt>
 <dt>
-<a href="netvista._oid_dot11_wfd_send_provision_discovery_request">OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_REQUEST</a>
+<a href="https://msdn.microsoft.com/69490609-60CB-426F-8ED7-F8B35CDFCE2A">OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_REQUEST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SEND_PROVISION_DISCOVERY_REQUEST_PARAMETERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

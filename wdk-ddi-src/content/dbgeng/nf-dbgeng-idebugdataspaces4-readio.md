@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.ReadIo
+UID: NF:dbgeng.IDebugDataSpaces4.ReadIo
 title: IDebugDataSpaces4::ReadIo method
 author: windows-driver-content
 description: The ReadIo method reads from the system and bus I/O memory.
 old-location: debugger\readio.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: d690cf53-63a6-487c-a952-07035786d19c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::ReadIo, ReadIo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::ReadIo method

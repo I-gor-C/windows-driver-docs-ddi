@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdfcompanion
 ---
 
 # Wdfcompanion.h header
@@ -22,16 +22,6 @@ Wdfcompanion.h contain these programming interfaces:
 | [WdfCompanionCreateTaskQueue function](nf-wdfcompanion-wdfcompanioncreatetaskqueue.md) | For internal use only. |
 | [WdfCompanionWdmGetSecureDeviceHandle function](nf-wdfcompanion-wdfcompanionwdmgetsecuredevicehandle.md) | For internal use only. |
 | [WdfDeviceInitSetCompanionEventCallbacks function](nf-wdfcompanion-wdfdeviceinitsetcompanioneventcallbacks.md) | For internal use only. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_WDF_COMPANION_POST_D0_EXIT callback](nc-wdfcompanion-evt_wdf_companion_post_d0_exit.md) | For internal use only. |
-| [EVT_WDF_COMPANION_POST_RELEASE_HARDWARE callback](nc-wdfcompanion-evt_wdf_companion_post_release_hardware.md) | For internal use only. |
-| [EVT_WDF_COMPANION_PRE_D0_ENTRY callback](nc-wdfcompanion-evt_wdf_companion_pre_d0_entry.md) | For internal use only. |
-| [EVT_WDF_COMPANION_PRE_PREPARE_HARDWARE callback](nc-wdfcompanion-evt_wdf_companion_pre_prepare_hardware.md) | For internal use only. |
-| [EVT_WDF_TASK_QUEUE_TASK_EXECUTE_SYNC callback](nc-wdfcompanion-evt_wdf_task_queue_task_execute_sync.md) | For internal use only. |
 
 ## Structures
 

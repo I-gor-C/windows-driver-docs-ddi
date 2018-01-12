@@ -1,13 +1,13 @@
 ---
-UID: NI.usbscan.IOCTL_CANCEL_IO
+UID: NI:usbscan.IOCTL_CANCEL_IO
 title: IOCTL_CANCEL_IO
 author: windows-driver-content
 description: Cancels activity on the specified USB transfer pipe that is associated with the specified device handle.
 old-location: image\ioctl_cancel_io.htm
-old-project: Image
+old-project: image
 ms.assetid: 5748e949-3edb-405a-ab2f-05c929cf5aa6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RAW_PIPE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -83,7 +84,7 @@ I/O Status block
 <dl>
 <dt><a id="hDevice"></a><a id="hdevice"></a><a id="HDEVICE"></a><i>hDevice</i></dt>
 <dd>
-Device handle, obtained by calling <a href="fs.createfile">CreateFile</a>.
+Device handle, obtained by calling <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a>.
 
 </dd>
 <dt><a id="dwIoControlCode"></a><a id="dwiocontrolcode"></a><a id="DWIOCONTROLCODE"></a><i>dwIoControlCode</i></dt>
@@ -126,7 +127,7 @@ Optional pointer to an OVERLAPPED structure (described in the Microsoft Windows 
 
 
 
-Device handle, obtained by calling <a href="fs.createfile">CreateFile</a>.
+Device handle, obtained by calling <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a>.
 
 IOCTL_CANCEL_IO
 

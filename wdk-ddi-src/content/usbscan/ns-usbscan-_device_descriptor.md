@@ -1,14 +1,14 @@
 ---
-UID: NS.USBSCAN._DEVICE_DESCRIPTOR
+UID: NS:usbscan._DEVICE_DESCRIPTOR
 title: _DEVICE_DESCRIPTOR
 author: windows-driver-content
 description: The DEVICE_DESCRIPTOR structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_DEVICE_DESCRIPTOR.
 old-location: image\device_descriptor.htm
-old-project: Image
+old-project: image
 ms.assetid: 15ad337a-0b33-48ba-98cf-6aff2698e2ba
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEVICE_DESCRIPTOR, *PDEVICE_DESCRIPTOR, PDEVICE_DESCRIPTOR, DEVICE_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: _DEVICE_DESCRIPTOR, DEVICE_DESCRIPTOR, *PDEVICE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DEVICE_DESCRIPTOR, *PDEVICE_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The DEVICE_DESCRIPTOR structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_get_device_descriptor.md">IOCTL_GET_DEVICE_DESCRIPTOR</a>.
+The DEVICE_DESCRIPTOR structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_get_device_descriptor.md">IOCTL_GET_DEVICE_DESCRIPTOR</a>.
 
 
 

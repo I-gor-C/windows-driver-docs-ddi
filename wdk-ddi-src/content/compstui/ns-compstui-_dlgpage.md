@@ -1,5 +1,5 @@
 ---
-UID: NS.COMPSTUI._DLGPAGE
+UID: NS:compstui._DLGPAGE
 title: _DLGPAGE
 author: windows-driver-content
 description: The DLGPAGE structure is used for specifying a property sheet page to CPSUI's ComPropSheet function. The structure's address is included in a COMPROPSHEETUI structure, and all member values are supplied by the ComPropSheet caller.
@@ -7,8 +7,8 @@ old-location: print\dlgpage.htm
 old-project: print
 ms.assetid: 61fb66b9-afd7-4ec4-bbbb-66a287398484
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DLGPAGE, DLGPAGE, *PDLGPAGE, PDLGPAGE
+ms.date: 1/8/2018
+ms.keywords: _DLGPAGE, *PDLGPAGE, DLGPAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDLGPAGE, DLGPAGE
 ---
 
 # _DLGPAGE structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The DLGPAGE structure is used for specifying a property sheet page to CPSUI's <a href="print.compropsheet">ComPropSheet</a> function. The structure's address is included in a <a href="print.compropsheetui">COMPROPSHEETUI</a> structure, and all member values are supplied by the <b>ComPropSheet</b> caller.
+The DLGPAGE structure is used for specifying a property sheet page to CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function. The structure's address is included in a <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> structure, and all member values are supplied by the <b>ComPropSheet</b> caller.
 
 
 
@@ -187,7 +188,7 @@ Used only if DPF_USE_HDLGTEMPLATE is set in <b>Flags</b>.
 ## -remarks
 CPSUI creates a property sheet page by allocating a PROPSHEETPAGE structure and passing it to CreatePropertySheetPage (described in the Windows SDK documentation). If the caller has specified a DLGPROC-typed pointer to a dialog box procedure in <b>DlgProc</b>, that procedure is used for handling the page's window messages. If <b>DlgProc</b> is <b>NULL</b>, CPSUI's own dialog box procedures are used.
 
-When the dialog box procedure pointed to by <b>DlgProc</b> is called with a message value of WM_INITDIALOG, it receives the PROPSHEETPAGE structure as input, and it also receives a <a href="print.pspinfo">PSPINFO</a> structure.
+When the dialog box procedure pointed to by <b>DlgProc</b> is called with a message value of WM_INITDIALOG, it receives the PROPSHEETPAGE structure as input, and it also receives a <a href="..\compstui\ns-compstui-_pspinfo.md">PSPINFO</a> structure.
 
 If a caller-supplied dialog box procedure handles a message, it should return a nonzero value. If the function does not handle the message it should return zero, which causes CPSUI to handle the message.
 

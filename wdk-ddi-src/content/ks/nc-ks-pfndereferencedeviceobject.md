@@ -1,5 +1,5 @@
 ---
-UID: NC.ks.PFNDEREFERENCEDEVICEOBJECT
+UID: NC:ks.PFNDEREFERENCEDEVICEOBJECT
 title: PFNDEREFERENCEDEVICEOBJECT
 author: windows-driver-content
 description: The driver can use this routine to decrement the reference count of the PDO.
@@ -7,7 +7,7 @@ old-location: stream\kstrdereferencedeviceobject.htm
 old-project: stream
 ms.assetid: 8d220b69-122c-4019-9c70-4c744503481d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDSELECTOR
 ---
 
 # PFNDEREFERENCEDEVICEOBJECT callback

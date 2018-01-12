@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_SUPL_CERT_CONFIG
+UID: NS:gnssdriver.GNSS_SUPL_CERT_CONFIG
 title: GNSS_SUPL_CERT_CONFIG
 author: windows-driver-content
 description: This structure contains SUPL certificate information.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: F974D5E2-7230-4F85-9C1A-7CE7E240DBE1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG, PGNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG
+ms.keywords: GNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG
 ---
 
 # GNSS_SUPL_CERT_CONFIG structure

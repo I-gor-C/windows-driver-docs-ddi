@@ -1,5 +1,5 @@
 ---
-UID: NS.SMCLIB._SMARTCARD_EXTENSION
+UID: NS:smclib._SMARTCARD_EXTENSION
 title: _SMARTCARD_EXTENSION
 author: windows-driver-content
 description: The SMARTCARD_EXTENSION structure is used by both the smart card reader driver and the smart card driver library to access all other smart card data structures.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSMARTCARD_EXTENSION, SMARTCARD_EXTENSION
 req.product: Windows 10 or later.
 ---
 

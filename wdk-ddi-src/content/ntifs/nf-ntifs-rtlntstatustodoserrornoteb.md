@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlNtStatusToDosErrorNoTeb
+UID: NF:ntifs.RtlNtStatusToDosErrorNoTeb
 title: RtlNtStatusToDosErrorNoTeb function
 author: windows-driver-content
 description: Reserved for system use.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlntstatustodoserrornoteb.htm
 old-project: ifsk
 ms.assetid: be22fb7f-408a-44ee-ae83-0f1dadcec87f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlNtStatusToDosErrorNoTeb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: < DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlNtStatusToDosErrorNoTeb function

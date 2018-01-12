@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSDATARANGE_AUDIO
+UID: NS:ksmedia.KSDATARANGE_AUDIO
 title: KSDATARANGE_AUDIO
 author: windows-driver-content
 description: The KSDATARANGE_AUDIO structure specifies a range of audio formats.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 53631f26-8377-4ab5-83db-ed241c11643a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSDATARANGE_AUDIO, KSDATARANGE_AUDIO, *PKSDATARANGE_AUDIO, PKSDATARANGE_AUDIO
+ms.keywords: KSDATARANGE_AUDIO, *PKSDATARANGE_AUDIO, KSDATARANGE_AUDIO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSDATARANGE_AUDIO, KSDATARANGE_AUDIO
 ---
 
 # KSDATARANGE_AUDIO structure
@@ -60,7 +61,7 @@ typedef struct {
 
 ### -field DataRange
 
-Specifies the MajorFormat and SubFormat GUIDs as well as the Specifier GUID for the audio data. This member is an initialized <a href="stream.ksdatarange">KSDATARANGE</a> structure.
+Specifies the MajorFormat and SubFormat GUIDs as well as the Specifier GUID for the audio data. This member is an initialized <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a> structure.
 
 
 ### -field MaximumChannels
@@ -112,7 +113,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksdatarange">KSDATARANGE</a>
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
 </dt>
 </dl>
  

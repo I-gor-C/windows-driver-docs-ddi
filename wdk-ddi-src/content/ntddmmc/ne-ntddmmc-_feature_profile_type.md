@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddmmc._FEATURE_PROFILE_TYPE
+UID: NE:ntddmmc._FEATURE_PROFILE_TYPE
 title: _FEATURE_PROFILE_TYPE
 author: windows-driver-content
 description: The FEATURE_PROFILE_TYPE enumeration provides a list of the profile names that are defined by the SCSI Multimedia - 4 (MMC-4) specification.
@@ -7,8 +7,8 @@ old-location: storage\feature_profile_type.htm
 old-project: storage
 ms.assetid: 60cce78f-1025-41a7-861d-150ef28376cb
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _FEATURE_PROFILE_TYPE, FEATURE_PROFILE_TYPE, *PFEATURE_PROFILE_TYPE, PFEATURE_PROFILE_TYPE
+ms.date: 1/10/2018
+ms.keywords: _FEATURE_PROFILE_TYPE, FEATURE_PROFILE_TYPE, *PFEATURE_PROFILE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FEATURE_PROFILE_TYPE, *PFEATURE_PROFILE_TYPE
 ---
 
 # _FEATURE_PROFILE_TYPE enumeration
@@ -265,12 +266,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.feature_data_profile_list">FEATURE_DATA_PROFILE_LIST</a>
+<a href="..\ntddmmc\ns-ntddmmc-_feature_data_profile_list.md">FEATURE_DATA_PROFILE_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_PROFILE_TYPE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_PROFILE_TYPE enumeration%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

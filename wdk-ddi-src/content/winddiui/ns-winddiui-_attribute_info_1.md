@@ -1,5 +1,5 @@
 ---
-UID: NS.WINDDIUI._ATTRIBUTE_INFO_1
+UID: NS:winddiui._ATTRIBUTE_INFO_1
 title: _ATTRIBUTE_INFO_1
 author: windows-driver-content
 description: The ATTRIBUTE_INFO_1 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied.
@@ -7,8 +7,8 @@ old-location: print\attribute_info_1.htm
 old-project: print
 ms.assetid: 7902877c-4991-48ae-9285-82949f898af2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _ATTRIBUTE_INFO_1, ATTRIBUTE_INFO_1, *PATTRIBUTE_INFO_1, PATTRIBUTE_INFO_1
+ms.date: 1/8/2018
+ms.keywords: _ATTRIBUTE_INFO_1, ATTRIBUTE_INFO_1, *PATTRIBUTE_INFO_1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ATTRIBUTE_INFO_1, *PATTRIBUTE_INFO_1
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The ATTRIBUTE_INFO_1 structure is used as a parameter for a printer interface DLL's <a href="print.drvqueryjobattributes">DrvQueryJobAttributes</a> function. All member values are function-supplied.
+The ATTRIBUTE_INFO_1 structure is used as a parameter for a printer interface DLL's <a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a> function. All member values are function-supplied.
 
 
 
@@ -189,12 +190,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.drvqueryjobattributes">DrvQueryJobAttributes</a>
+<a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20ATTRIBUTE_INFO_1 structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20ATTRIBUTE_INFO_1 structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

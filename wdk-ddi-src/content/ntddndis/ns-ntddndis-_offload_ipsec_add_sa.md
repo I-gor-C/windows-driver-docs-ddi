@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._OFFLOAD_IPSEC_ADD_SA
+UID: NS:ntddndis._OFFLOAD_IPSEC_ADD_SA
 title: _OFFLOAD_IPSEC_ADD_SA
 author: windows-driver-content
 description: The OFFLOAD_IPSEC_ADD_SA structure contains information for each security association (SA) that a miniport driver adds to a NIC.
 old-location: netvista\offload_ipsec_add_sa.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 592d338c-8ab0-4163-bcfa-75c941b83c3d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _OFFLOAD_IPSEC_ADD_SA, POFFLOAD_IPSEC_ADD_SA, *POFFLOAD_IPSEC_ADD_SA, OFFLOAD_IPSEC_ADD_SA
+ms.date: 1/8/2018
+ms.keywords: _OFFLOAD_IPSEC_ADD_SA, *POFFLOAD_IPSEC_ADD_SA, OFFLOAD_IPSEC_ADD_SA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *POFFLOAD_IPSEC_ADD_SA, OFFLOAD_IPSEC_ADD_SA
 ---
 
 # _OFFLOAD_IPSEC_ADD_SA structure
@@ -151,7 +152,7 @@ Specifies an outbound SA.
 
 The number of elements in the 
      <b>SecAssoc</b> array. Each element in the array is an 
-     <a href="netvista.offload_security_association">
+     <a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">
      OFFLOAD_SECURITY_ASSOCIATION</a> structure.
 
 
@@ -196,7 +197,7 @@ A variable-length array that contains keys for the SAs specified at
      (authentication) algorithm are specified by the 
      <b>ConfAlgo</b> and 
      <b>IntegrityAlgo</b> members of an 
-     <a href="netvista.offload_security_association">
+     <a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">
      OFFLOAD_SECURITY_ASSOCIATION</a> structure, the buffer at 
      <b>KeyMat</b> contains key information for the confirmation algorithm first, followed immediately by key
      information for the integrity algorithm.
@@ -205,7 +206,7 @@ A variable-length array that contains keys for the SAs specified at
 The length of each key in the buffer at 
      <b>KeyMat</b> is specified by 
      <b>algoKeylen</b> in the 
-     <a href="netvista.offload_algo_info">OFFLOAD_ALGO_INFO</a> structure that
+     <a href="..\ntddndis\ns-ntddndis-_offload_algo_info.md">OFFLOAD_ALGO_INFO</a> structure that
      specifies the confidentiality or integrity algorithm. (An OFFLOAD_ALGO_INFO structure is a member of an
      OFFLOAD_SECURITY_ASSOCIATION structure.)
 
@@ -236,10 +237,10 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557028">NDIS_IPSEC_PACKET_INFO</a>
 </dt>
 <dt>
-<a href="netvista.offload_algo_info">OFFLOAD_ALGO_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_offload_algo_info.md">OFFLOAD_ALGO_INFO</a>
 </dt>
 <dt>
-<a href="netvista.offload_security_association">OFFLOAD_SECURITY_ASSOCIATION</a>
+<a href="..\ntddndis\ns-ntddndis-_offload_security_association.md">OFFLOAD_SECURITY_ASSOCIATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569808">OID_TCP_TASK_IPSEC_ADD_SA</a>
@@ -252,5 +253,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20OFFLOAD_IPSEC_ADD_SA structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20OFFLOAD_IPSEC_ADD_SA structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

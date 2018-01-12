@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPrintWriteStream.WriteBytes
+UID: NF:filterpipeline.IPrintWriteStream.WriteBytes
 title: IPrintWriteStream::WriteBytes method
 author: windows-driver-content
 description: The WriteBytes method writes a specified number of bytes to a stream.
@@ -7,7 +7,7 @@ old-location: print\iprintwritestream_writebytes.htm
 old-project: print
 ms.assetid: d47c836e-a291-4cc2-9688-82526f8bfb8b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintWriteStream, IPrintWriteStream::WriteBytes, WriteBytes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintWriteStream::WriteBytes method

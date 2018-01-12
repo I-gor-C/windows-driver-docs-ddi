@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugClient5.GetExitCode
+UID: NF:dbgeng.IDebugClient5.GetExitCode
 title: IDebugClient5::GetExitCode method
 author: windows-driver-content
 description: The GetExitCode method returns the exit code of the current process if that process has already run through to completion.
 old-location: debugger\getexitcode.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: faa5cc0f-a99c-42fb-ab8f-a37c31bc4dde
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugClient5, IDebugClient5::GetExitCode, GetExitCode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugClient5::GetExitCode method

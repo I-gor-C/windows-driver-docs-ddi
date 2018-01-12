@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPrintReadStreamFactory.GetStream
+UID: NF:filterpipeline.IPrintReadStreamFactory.GetStream
 title: IPrintReadStreamFactory::GetStream method
 author: windows-driver-content
 description: The GetStream method gets the stream interface.
@@ -7,7 +7,7 @@ old-location: print\iprintreadstreamfactory_getstream.htm
 old-project: print
 ms.assetid: 47447f00-a57d-4821-b10e-1b2cf7eaad94
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintReadStreamFactory, IPrintReadStreamFactory::GetStream, GetStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintReadStreamFactory::GetStream method
@@ -55,7 +56,7 @@ HRESULT GetStream(
 
 ### -param ppStream [out]
 
-A pointer to an <a href="print.iprintreadstream">IPrintReadStream</a> interface. The filter can use this interface to read the contents of the print ticket.
+A pointer to an <a href="..\filterpipeline\nn-filterpipeline-iprintreadstream.md">IPrintReadStream</a> interface. The filter can use this interface to read the contents of the print ticket.
 
 
 ## -returns

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlDecompressFragmentEx
+UID: NF:ntifs.RtlDecompressFragmentEx
 title: RtlDecompressFragmentEx function
 author: windows-driver-content
 description: The RtlDecompressFragmentEx function is used to decompress part of a compressed buffer (that is, a buffer &#0034;fragment&#0034;), using multiple processors where possible.
@@ -7,7 +7,7 @@ old-location: ifsk\rtldecompressfragmentex.htm
 old-project: ifsk
 ms.assetid: A4FE108D-85CE-4F6A-A17A-E81684764FD3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlDecompressFragmentEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlDecompressFragmentEx function
@@ -141,12 +142,12 @@ A pointer to a caller-allocated variable which receives the size, in bytes, of t
 
 ### -param WorkSpace [in]
 
-A pointer to a caller-allocated work space buffer used by the <b>RtlDecompressFragmentEx</b> function during decompression. Use the <a href="ifsk.rtlgetcompressionworkspacesize">RtlGetCompressionWorkSpaceSize</a> function to determine the correct work space buffer size.
+A pointer to a caller-allocated work space buffer used by the <b>RtlDecompressFragmentEx</b> function during decompression. Use the <a href="..\ntifs\nf-ntifs-rtlgetcompressionworkspacesize.md">RtlGetCompressionWorkSpaceSize</a> function to determine the correct work space buffer size.
 
 
 ## -returns
 
-<a href="ifsk.rtldecompressfragment">RtlDecompressFragment</a>returns an appropriate error status, such as one of the following:
+<a href="..\ntifs\nf-ntifs-rtldecompressfragment.md">RtlDecompressFragment</a>returns an appropriate error status, such as one of the following:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>The <i>CompressedBuffer</i> buffer was successfully decompressed into <i>UncompressedFragment</i>.
@@ -237,27 +238,27 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_compression_information">FILE_COMPRESSION_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_compression_information.md">FILE_COMPRESSION_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.rtlcompressbuffer">RtlCompressBuffer</a>
+<a href="..\ntifs\nf-ntifs-rtlcompressbuffer.md">RtlCompressBuffer</a>
 </dt>
 <dt>
-<a href="ifsk.rtldecompressbuffer">RtlDecompressBuffer</a>
+<a href="..\ntifs\nf-ntifs-rtldecompressbuffer.md">RtlDecompressBuffer</a>
 </dt>
 <dt>
-<a href="ifsk.rtldecompressbufferex">RtlDecompressBufferEx</a>
+<a href="..\ntifs\nf-ntifs-rtldecompressbufferex.md">RtlDecompressBufferEx</a>
 </dt>
 <dt>
-<a href="ifsk.rtldecompressbufferex2">RtlDecompressBufferEx2</a>
+<a href="..\ntifs\nf-ntifs-rtldecompressbufferex2.md">RtlDecompressBufferEx2</a>
 </dt>
 <dt>
-<a href="ifsk.rtldecompressfragment">RtlDecompressFragment</a>
+<a href="..\ntifs\nf-ntifs-rtldecompressfragment.md">RtlDecompressFragment</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlDecompressFragmentEx routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlDecompressFragmentEx routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntdddisk.IOCTL_DISK_RESET_SNAPSHOT_INFO
+UID: NI:ntdddisk.IOCTL_DISK_RESET_SNAPSHOT_INFO
 title: IOCTL_DISK_RESET_SNAPSHOT_INFO
 author: windows-driver-content
 description: Clears all volume shadow copy service (VSS) hardware-based snapshot information from the disk.
@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_reset_snapshot_info.htm
 old-project: storage
 ms.assetid: b22b00de-4711-4896-a21c-33fbc7b1d64e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_RESET_SNAPSHOT_INFO IOCTL

@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMCompression
+UID: NF:printoem.OEMCompression
 title: OEMCompression function
 author: windows-driver-content
 description: OEMCompression function
@@ -7,7 +7,7 @@ old-location: print\oemcompression.htm
 old-project: print
 ms.assetid: e5246411-aa43-436f-b5e7-d7305ce659c9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMCompression
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

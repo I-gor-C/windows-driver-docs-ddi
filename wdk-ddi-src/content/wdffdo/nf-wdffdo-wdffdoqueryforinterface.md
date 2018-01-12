@@ -1,5 +1,5 @@
 ---
-UID: NF.wdffdo.WdfFdoQueryForInterface
+UID: NF:wdffdo.WdfFdoQueryForInterface
 title: WdfFdoQueryForInterface function
 author: windows-driver-content
 description: The WdfFdoQueryForInterface method obtains access to another driver's GUID-identified interface.
@@ -7,7 +7,7 @@ old-location: wdf\wdffdoqueryforinterface.htm
 old-project: wdf
 ms.assetid: 12bbc77b-c1cd-4899-aff2-e18e0d58b6b9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfFdoQueryForInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -73,7 +74,7 @@ A pointer to a GUID that identifies the interface.
 
 ### -param Interface [out]
 
-A pointer to a driver-allocated structure that receives the requested interface. This structure is defined by the driver that exports the requested interface and must begin with an <a href="kernel.interface">INTERFACE</a> structure.
+A pointer to a driver-allocated structure that receives the requested interface. This structure is defined by the driver that exports the requested interface and must begin with an <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure.
 
 
 ### -param Size [in]
@@ -109,11 +110,11 @@ A system bug check occurs if the driver supplies an invalid object handle.
 
 
 ## -remarks
-Your driver can call <b>WdfFdoQueryForInterface</b> to obtain access to a driver-defined interface that was created by a driver that is in the same driver stack that your driver is in. To access a driver-defined interface that was created by a driver that is in a different driver stack, your driver must call <a href="wdf.wdfiotargetqueryforinterface">WdfIoTargetQueryForInterface</a>.
+Your driver can call <b>WdfFdoQueryForInterface</b> to obtain access to a driver-defined interface that was created by a driver that is in the same driver stack that your driver is in. To access a driver-defined interface that was created by a driver that is in a different driver stack, your driver must call <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetqueryforinterface.md">WdfIoTargetQueryForInterface</a>.
 
-Framework-based drivers define interfaces by calling <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a>. 
+Framework-based drivers define interfaces by calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>. 
 
-For more information about <b>WdfFdoQueryForInterface</b>, see <a href="wdf.using_driver_defined_interfaces">Using Driver-Defined Interfaces</a>.
+For more information about <b>WdfFdoQueryForInterface</b>, see <a href="https://msdn.microsoft.com/ad96add6-c982-429b-b815-d7adf6fed8cc">Using Driver-Defined Interfaces</a>.
 
 The following code example is from the <a href="wdf.sample_kmdf_drivers">Toaster</a> sample function driver. This example obtains access to an interface that the toaster sample bus driver defines.
 
@@ -159,7 +160,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -179,7 +180,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -187,12 +188,12 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfiotargetqueryforinterface">WdfIoTargetQueryForInterface</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetqueryforinterface.md">WdfIoTargetQueryForInterface</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfFdoQueryForInterface method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfFdoQueryForInterface method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

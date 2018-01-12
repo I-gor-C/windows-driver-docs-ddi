@@ -1,5 +1,5 @@
 ---
-UID: NE.gnssdriver.GNSS_EVENT_TYPE
+UID: NE:gnssdriver.GNSS_EVENT_TYPE
 title: GNSS_EVENT_TYPE
 author: windows-driver-content
 description: This enumeration indicates the type of an event and is used by the GNSS_EVENT structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: GNSS_EVENT_TYPE
 ---
 
 # GNSS_EVENT_TYPE enumeration

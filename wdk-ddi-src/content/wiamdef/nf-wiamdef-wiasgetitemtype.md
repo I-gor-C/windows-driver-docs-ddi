@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasGetItemType
+UID: NF:wiamdef.wiasGetItemType
 title: wiasGetItemType function
 author: windows-driver-content
 description: The wiasGetItemType function indicates the item type.
 old-location: image\wiasgetitemtype.htm
-old-project: Image
+old-project: image
 ms.assetid: 9659d669-ccf3-423a-9c81-12232a978d07
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasGetItemType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 

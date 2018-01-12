@@ -1,5 +1,5 @@
 ---
-UID: NS.ACPIIOCT._ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX
+UID: NS:acpiioct._ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX
 title: _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX
 author: windows-driver-content
 description: This topic describes the ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX structure.
@@ -7,8 +7,8 @@ old-location: acpi\acpi_eval_input_buffer_complex_v2_ex.htm
 old-project: acpi
 ms.assetid: 50AEF454-8E36-4348-9340-330094D2FDF8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX
+ms.date: 12/31/2017
+ms.keywords: _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V2_EX structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA._TAGKSAUDIOENGINE_BUFFER_SIZE_RANGE
+UID: NS:ksmedia._tagKSAUDIOENGINE_BUFFER_SIZE_RANGE
 title: _tagKSAUDIOENGINE_BUFFER_SIZE_RANGE
 author: windows-driver-content
 description: The KSAUDIOENGINE_BUFFER_SIZE_RANGE structure specifies the minimum and maximum buffer size that the hardware audio engine can support at the instance when it is called.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 7BFF1B51-9559-471C-868C-F3E861CB4914
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _tagKSAUDIOENGINE_BUFFER_SIZE_RANGE, KSAUDIOENGINE_BUFFER_SIZE_RANGE, *PKSAUDIOENGINE_BUFFER_SIZE_RANGE, PKSAUDIOENGINE_BUFFER_SIZE_RANGE
+ms.keywords: _tagKSAUDIOENGINE_BUFFER_SIZE_RANGE, KSAUDIOENGINE_BUFFER_SIZE_RANGE, *PKSAUDIOENGINE_BUFFER_SIZE_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSAUDIOENGINE_BUFFER_SIZE_RANGE, *PKSAUDIOENGINE_BUFFER_SIZE_RANGE
 ---
 
 # _tagKSAUDIOENGINE_BUFFER_SIZE_RANGE structure

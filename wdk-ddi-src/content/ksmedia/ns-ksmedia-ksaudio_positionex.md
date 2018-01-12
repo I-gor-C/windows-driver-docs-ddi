@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSAUDIO_POSITIONEX
+UID: NS:ksmedia.KSAUDIO_POSITIONEX
 title: KSAUDIO_POSITIONEX
 author: windows-driver-content
 description: The KSAUDIO_POSITIONEX structure specifies the stream position and the associated timestamp information for a kernel streaming (KS)-based audio driver.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 63cd938c-1ccd-4f67-a4eb-2898002ae762
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSAUDIO_POSITIONEX, KSAUDIO_POSITIONEX, PKSAUDIO_POSITIONEX, *PKSAUDIO_POSITIONEX
+ms.keywords: KSAUDIO_POSITIONEX, KSAUDIO_POSITIONEX, *PKSAUDIO_POSITIONEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSAUDIO_POSITIONEX, *PKSAUDIO_POSITIONEX
 ---
 
 # KSAUDIO_POSITIONEX structure

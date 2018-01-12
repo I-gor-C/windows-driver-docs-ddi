@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveCyclic.Init
+UID: NF:portcls.IMiniportWaveCyclic.Init
 title: IMiniportWaveCyclic::Init method
 author: windows-driver-content
 description: The Init method initializes the WaveCyclic miniport object. Initialization includes verification of the hardware using the resources specified in the resource list.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveCyclic::Init method
@@ -75,7 +76,7 @@ Pointer to the <a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCycli
 
 
 ## -remarks
-The <i>UnknownAdapter</i> and <i>ResourceList</i> parameters are the same pointer values that the adapter driver earlier passed as parameters to the <b>IPortWaveCyclic</b> object's <code>Init</code> method (see <a href="audio.iport_init">IPort::Init</a>).
+The <i>UnknownAdapter</i> and <i>ResourceList</i> parameters are the same pointer values that the adapter driver earlier passed as parameters to the <b>IPortWaveCyclic</b> object's <code>Init</code> method (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>).
 
 The <i>UnknownAdapter</i>, <i>ResourceList</i>, and <i>Port</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.
 
@@ -128,7 +129,7 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
 </dt>
 <dt>
-<a href="audio.iport_init">IPort::Init</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_ALLOCATE_CHANNEL
+UID: NS:1394._IRB_REQ_ISOCH_ALLOCATE_CHANNEL
 title: _IRB_REQ_ISOCH_ALLOCATE_CHANNEL
 author: windows-driver-content
 description: This structure contains the fields necessary in order for the 1394 bus driver to carry out an IsochAllocateChannel request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_ALLOCATE_CHANNEL
 ---
 
 # _IRB_REQ_ISOCH_ALLOCATE_CHANNEL structure

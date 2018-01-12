@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.GetBreakpointParameters
+UID: NF:dbgeng.IDebugControl3.GetBreakpointParameters
 title: IDebugControl3::GetBreakpointParameters method
 author: windows-driver-content
 description: The GetBreakpointParameters method returns the parameters of one or more breakpoints.
 old-location: debugger\getbreakpointparameters.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: c4426dfa-7c14-4ef0-8660-855ee24ed7fe
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::GetBreakpointParameters, GetBreakpointParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl3::GetBreakpointParameters method
@@ -73,7 +74,7 @@ Specifies the beginning index of the breakpoints whose parameters are being requ
 
 ### -param Params [out]
 
-Receives the parameters for the specified breakpoints. The size of this array is equal to the value of <i>Count</i>.  For details on the structure returned, see <a href="debugger.debug_breakpoint_parameters">DEBUG_BREAKPOINT_PARAMETERS</a>.
+Receives the parameters for the specified breakpoints. The size of this array is equal to the value of <i>Count</i>.  For details on the structure returned, see <a href="..\dbgeng\ns-dbgeng-_debug_breakpoint_parameters.md">DEBUG_BREAKPOINT_PARAMETERS</a>.
 
 
 ## -returns
@@ -89,7 +90,7 @@ This method can also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-Some of the parameters might not be returned.  This happens if either a breakpoint could not be found or a breakpoint is private (see <a href="debugger.getflags">GetFlags</a>).
+Some of the parameters might not be returned.  This happens if either a breakpoint could not be found or a breakpoint is private (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546791">GetFlags</a>).
 
 
 ## -requirements
@@ -130,18 +131,18 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 </dt>
 <dt>
-<a href="debugger.getparameters">GetParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a>
 </dt>
 <dt>
-<a href="debugger.getbreakpointbyid">GetBreakpointById</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545617">GetBreakpointById</a>
 </dt>
 <dt>
-<a href="debugger.getbreakpointbyindex">GetBreakpointByIndex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545639">GetBreakpointByIndex</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugControl::GetBreakpointParameters method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::GetBreakpointParameters method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.mountmgr.IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS
+UID: NI:mountmgr.IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS
 title: IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS
 author: windows-driver-content
 description: This IOCTL informs the mount manager that it should assign drive letters to volumes automatically as they are introduced in the system.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_mountmgr_auto_dl_assignments.htm
 old-project: storage
 ms.assetid: 59ceeaaf-0916-4f0a-a636-624f2f70a64c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID
+ms.date: 1/10/2018
+ms.keywords: _MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID
 ---
 
 # IOCTL_MOUNTMGR_AUTO_DL_ASSIGNMENTS IOCTL

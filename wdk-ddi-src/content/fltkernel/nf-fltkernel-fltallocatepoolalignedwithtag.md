@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltAllocatePoolAlignedWithTag
+UID: NF:fltkernel.FltAllocatePoolAlignedWithTag
 title: FltAllocatePoolAlignedWithTag function
 author: windows-driver-content
 description: FltAllocatePoolAlignedWithTag allocates a device-aligned buffer for use in a noncached I/O operation.
@@ -7,7 +7,7 @@ old-location: ifsk\fltallocatepoolalignedwithtag.htm
 old-project: ifsk
 ms.assetid: ffb1493f-6076-4b93-8431-b3ffd4679f96
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltAllocatePoolAlignedWithTag
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= APC_LEVEL (see Remarks section)
+req.typenames: EXpsFontRestriction
 ---
 
 # FltAllocatePoolAlignedWithTag function
@@ -73,7 +74,7 @@ Type of pool to allocate. One of the following:
 
 <b>PagedPoolCacheAligned</b>
 
-See <a href="kernel.pool_type">POOL_TYPE</a> for a description of the available pool memory types. 
+See <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a> for a description of the available pool memory types. 
 
 
 ### -param NumberOfBytes [in]
@@ -91,7 +92,7 @@ If not enough free pool is available to satisfy the request, <b>FltAllocatePoolA
 
 
 ## -remarks
-<b>FltAllocatePoolAlignedWithTag</b> allocates a buffer that is aligned in accordance with the underlying device for the given volume. Such device-aligned buffers are required for noncached I/O. (They can also be used for cached I/O.) Thus when calling routines that perform noncached I/O, such as <a href="ifsk.fltreadfile">FltReadFile</a> and <a href="ifsk.fltwritefile">FltWriteFile</a>, minifilter drivers should call <b>FltAllocatePoolAlignedWithTag</b> instead of <a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>. 
+<b>FltAllocatePoolAlignedWithTag</b> allocates a buffer that is aligned in accordance with the underlying device for the given volume. Such device-aligned buffers are required for noncached I/O. (They can also be used for cached I/O.) Thus when calling routines that perform noncached I/O, such as <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a> and <a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>, minifilter drivers should call <b>FltAllocatePoolAlignedWithTag</b> instead of <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>. 
 
 If the caller specifies a value of zero for the <i>NumberOfBytes</i> parameter, <b>FltAllocatePoolAlignedWithTag</b> allocates the smallest amount of memory that meets the alignment requirement. 
 
@@ -99,7 +100,7 @@ The system associates the pool tag specified by the <i>Tag</i> parameter with th
 
 For more information about memory management, see <a href="https://msdn.microsoft.com/e030a37c-26ab-4177-9980-4336928975e1">Memory Management</a>. 
 
-When the buffer that <b>FltAllocatePoolAlignedWithTag</b> allocates is no longer needed, the caller is responsible for freeing it by calling <a href="ifsk.fltfreepoolalignedwithtag">FltFreePoolAlignedWithTag</a>. 
+When the buffer that <b>FltAllocatePoolAlignedWithTag</b> allocates is no longer needed, the caller is responsible for freeing it by calling <a href="..\fltkernel\nf-fltkernel-fltfreepoolalignedwithtag.md">FltFreePoolAlignedWithTag</a>. 
 
 Callers of <b>FltAllocatePoolAlignedWithTag</b> can be running at IRQL DISPATCH_LEVEL only if a NonPaged<i>XxxPoolType</i> is specified. Otherwise, callers must be running at IRQL &lt;= APC_LEVEL. 
 
@@ -154,21 +155,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 <dt>
-<a href="ifsk.fltfreepoolalignedwithtag">FltFreePoolAlignedWithTag</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreepoolalignedwithtag.md">FltFreePoolAlignedWithTag</a>
 </dt>
 <dt>
-<a href="ifsk.fltreadfile">FltReadFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
 </dt>
 <dt>
-<a href="ifsk.fltwritefile">FltWriteFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocatePoolAlignedWithTag function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocatePoolAlignedWithTag function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

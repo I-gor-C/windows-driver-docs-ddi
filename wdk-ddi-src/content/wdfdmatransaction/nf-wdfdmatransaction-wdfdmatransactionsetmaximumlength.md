@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdmatransaction.WdfDmaTransactionSetMaximumLength
+UID: NF:wdfdmatransaction.WdfDmaTransactionSetMaximumLength
 title: WdfDmaTransactionSetMaximumLength function
 author: windows-driver-content
 description: The WdfDmaTransactionSetMaximumLength method sets the maximum length for the DMA transfers that are associated with a specified DMA transaction.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdmatransactionsetmaximumlength.htm
 old-project: wdf
 ms.assetid: b195c6df-79c4-427d-b722-309f43a4e150
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDmaTransactionSetMaximumLength
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ VOID WdfDmaTransactionSetMaximumLength(
 
 ### -param DmaTransaction [in]
 
-A handle to a DMA transaction object that the driver obtained from a previous call to <a href="wdf.wdfdmatransactioncreate">WdfDmaTransactionCreate</a>.
+A handle to a DMA transaction object that the driver obtained from a previous call to <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>.
 
 
 ### -param MaximumLength [in]
@@ -70,7 +71,7 @@ The <i>MaximumLength</i> value applies only to the specified DMA transaction, as
 
 <ul>
 <li>
-If the specified value is less than the default value that the driver specified in its <a href="wdf.wdf_dma_enabler_config">WDF_DMA_ENABLER_CONFIG</a> structure, the specified value overrides the default value. 
+If the specified value is less than the default value that the driver specified in its <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a> structure, the specified value overrides the default value. 
 
 </li>
 <li>
@@ -90,7 +91,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## -remarks
 Your driver  must initialize the DMA transaction before calling <b>WdfDmaTransactionSetMaximumLength</b>.
 
-For information about initializing a DMA transaction, see <a href="wdf.creating_and_initializing_a_dma_transaction">Creating and Initializing a DMA Transaction</a>.
+For information about initializing a DMA transaction, see <a href="https://msdn.microsoft.com/1982c3fa-9e4a-4b26-8902-321223d9159f">Creating and Initializing a DMA Transaction</a>.
 
 The following code example sets the maximum transfer length to a driver-defined value, for a specified DMA transaction.
 
@@ -136,7 +137,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -156,7 +157,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
 </td>
 </tr>
 </table>
@@ -164,15 +165,15 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfdmatransactioncreate">WdfDmaTransactionCreate</a>
+<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
 </dt>
 <dt>
-<a href="wdf.wdf_dma_enabler_config">WDF_DMA_ENABLER_CONFIG</a>
+<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionSetMaximumLength method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaTransactionSetMaximumLength method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

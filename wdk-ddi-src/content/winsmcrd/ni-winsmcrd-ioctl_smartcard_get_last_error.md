@@ -1,5 +1,5 @@
 ---
-UID: NI.winsmcrd.IOCTL_SMARTCARD_GET_LAST_ERROR
+UID: NI:winsmcrd.IOCTL_SMARTCARD_GET_LAST_ERROR
 title: IOCTL_SMARTCARD_GET_LAST_ERROR
 author: windows-driver-content
 description: The IOCTL_SMARTCARD_GET_LAST_ERROR request retrieves the error code of the most previous operation because there is no option to return an error code immediately after an overlapped operation is complete.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntstrsafe.RtlStringCchCopyW
+UID: NF:ntstrsafe.RtlStringCchCopyW
 title: RtlStringCchCopyW function
 author: windows-driver-content
 description: The RtlStringCchCopyW and RtlStringCchCopyA functions copy a null-terminated source string into a destination buffer of specified length.
@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcchcopy.htm
 old-project: kernel
 ms.assetid: d5c6d7d2-fe14-49d5-9e81-3a425a4cf1b3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlStringCchCopyW
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntstrsafe.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE
 ---
 
 # RtlStringCchCopyW function
@@ -94,7 +95,7 @@ The function returns the STATUS_INVALID_PARAMETER value when:
 
 <b>wcscpy</b>
 
-These functions are not replacements for <b>strncpy</b>. Use <a href="kernel.rtlstringcchcopyn">RtlStringCchCopyN</a> or <a href="kernel.rtlstringcchcopynex">RtlStringCchCopyNEx</a> to replace <b>strncpy</b>.
+These functions are not replacements for <b>strncpy</b>. Use <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynw.md">RtlStringCchCopyN</a> or <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynexw.md">RtlStringCchCopyNEx</a> to replace <b>strncpy</b>.
 
 The size, in characters, of the destination buffer is provided to <b>RtlStringCchCopyW</b> and <b>RtlStringCchCopyA</b> to ensure that they do not write past the end of the buffer.
 
@@ -114,7 +115,7 @@ L"string"
 
 If <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.
 
-Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="kernel.rtlstringcchcopyex">RtlStringCchCopyEx</a>.
+Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyexw.md">RtlStringCchCopyEx</a>.
 
 For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.
 
@@ -189,15 +190,15 @@ Unicode and ANSI names
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlstringcbcopy">RtlStringCbCopy</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopyw.md">RtlStringCbCopy</a>
 </dt>
 <dt>
-<a href="kernel.rtlstringcchcopyex">RtlStringCchCopyEx</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopyexw.md">RtlStringCchCopyEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCchCopyW function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCchCopyW function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_MODULE_PARAMETERS
+UID: NS:dbgeng._DEBUG_MODULE_PARAMETERS
 title: _DEBUG_MODULE_PARAMETERS
 author: windows-driver-content
 description: The DEBUG_MODULE_PARAMETERS structure contains most of the parameters for describing a module.
 old-location: debugger\debug_module_parameters.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 3f10997f-263f-4d1b-ab0a-d44201aaaf37
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_MODULE_PARAMETERS, *PDEBUG_MODULE_PARAMETERS, DEBUG_MODULE_PARAMETERS, PDEBUG_MODULE_PARAMETERS
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_MODULE_PARAMETERS, *PDEBUG_MODULE_PARAMETERS, DEBUG_MODULE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDEBUG_MODULE_PARAMETERS, DEBUG_MODULE_PARAMETERS
 ---
 
 # _DEBUG_MODULE_PARAMETERS structure
@@ -251,11 +252,11 @@ Reserved for system use.
 
 
 ## -remarks
-This structure is returned by <a href="debugger.getmoduleparameters">GetModuleParameters</a>.
+This structure is returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547161">GetModuleParameters</a>.
 
-To locate the different names for the module, use <a href="debugger.getmodulenamestring">GetModuleNameString</a>.
+To locate the different names for the module, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff547149">GetModuleNameString</a>.
 
-For more information about modules, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552231">Modules</a>.  For details about the different names for the module, see <a href="debugger.getmodulenamestring">GetModuleNameString</a>.
+For more information about modules, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552231">Modules</a>.  For details about the different names for the module, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547149">GetModuleNameString</a>.
 
 
 ## -requirements

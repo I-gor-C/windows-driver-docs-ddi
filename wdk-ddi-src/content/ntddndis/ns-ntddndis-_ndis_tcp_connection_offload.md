@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_TCP_CONNECTION_OFFLOAD
+UID: NS:ntddndis._NDIS_TCP_CONNECTION_OFFLOAD
 title: _NDIS_TCP_CONNECTION_OFFLOAD
 author: windows-driver-content
 description: The NDIS_TCP_CONNECTION_OFFLOAD structure provides connection offload information for current settings and for supported capabilities.
 old-location: netvista\ndis_tcp_connection_offload.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d37a773d-0a83-4592-9c21-3ceaa6454549
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_TCP_CONNECTION_OFFLOAD, NDIS_TCP_CONNECTION_OFFLOAD, *PNDIS_TCP_CONNECTION_OFFLOAD, PNDIS_TCP_CONNECTION_OFFLOAD
+ms.date: 1/8/2018
+ms.keywords: _NDIS_TCP_CONNECTION_OFFLOAD, *PNDIS_TCP_CONNECTION_OFFLOAD, NDIS_TCP_CONNECTION_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_TCP_CONNECTION_OFFLOAD, NDIS_TCP_CONNECTION_OFFLOAD
 ---
 
 # _NDIS_TCP_CONNECTION_OFFLOAD structure
@@ -67,7 +68,7 @@ typedef struct _NDIS_TCP_CONNECTION_OFFLOAD {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_TCP_CONNECTION_OFFLOAD structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to 
@@ -142,9 +143,9 @@ The NDIS_TCP_CONNECTION_OFFLOAD structure specifies the current or supported ser
     adapter provides for TCP chimney offload.
 
 The NDIS_TCP_CONNECTION_OFFLOAD structure is used in the 
-    <a href="netvista.ndis_miniport_adapter_offload_attributes">
+    <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_offload_attributes.md">
     NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a> structure, 
-    <a href="netvista.ndis_bind_parameters">NDIS_BIND_PARAMETERS</a> structure, 
+    <a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a> structure, 
     <a href="netvista.oid_tcp_connection_offload_current_config">
     OID_TCP_CONNECTION_OFFLOAD_CURRENT_CONFIG</a> OID, 
     <a href="netvista.oid_tcp_connection_offload_hardware_capabilities">
@@ -234,7 +235,7 @@ An offload target must support either IPv4 or IPv6 (or both). Offload targets ca
 An offload target should not support any IPv4 options. The offload target must forward any received
        IP datagrams that contain IPv4 options to the TCP/IP driver stack. The offload target indicates such
        IP datagrams to the TCP/IP driver stack by calling 
-       <a href="netvista.ndismindicatereceivenetbufferlists">
+       <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
        NdisMIndicateReceiveNetBufferLists</a>. The TCP/IP driver stack processes the IPv4 options and
        returns the datagrams to the offload target's 
        <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_forward_handler.md">
@@ -286,24 +287,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_bind_parameters">NDIS_BIND_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_adapter_offload_attributes">
+<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_offload_attributes.md">
    NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_offload">NDIS_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_tcp_connection_offload_hardware_capabilities">
    NDIS_STATUS_TCP_CONNECTION_OFFLOAD_HARDWARE_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="netvista.ndismindicatereceivenetbufferlists">
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
    NdisMIndicateReceiveNetBufferLists</a>
 </dt>
 <dt>
@@ -319,5 +320,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_CONNECTION_OFFLOAD structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._CM_PARTIAL_RESOURCE_DESCRIPTOR
+UID: NS:wdm._CM_PARTIAL_RESOURCE_DESCRIPTOR
 title: _CM_PARTIAL_RESOURCE_DESCRIPTOR
 author: windows-driver-content
 description: The CM_PARTIAL_RESOURCE_DESCRIPTOR structure specifies one or more system hardware resources, of a single type, assigned to a device.
@@ -7,8 +7,8 @@ old-location: kernel\cm_partial_resource_descriptor.htm
 old-project: kernel
 ms.assetid: 96bf7bab-b8f5-439c-8717-ea6956ed0213
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CM_PARTIAL_RESOURCE_DESCRIPTOR, CM_PARTIAL_RESOURCE_DESCRIPTOR, PCM_PARTIAL_RESOURCE_DESCRIPTOR, *PCM_PARTIAL_RESOURCE_DESCRIPTOR
+ms.date: 1/4/2018
+ms.keywords: _CM_PARTIAL_RESOURCE_DESCRIPTOR, *PCM_PARTIAL_RESOURCE_DESCRIPTOR, CM_PARTIAL_RESOURCE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PCM_PARTIAL_RESOURCE_DESCRIPTOR, CM_PARTIAL_RESOURCE_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure specifies one or more system hardware resources, of a single type, assigned to a device. This structure is used to create an array within a <a href="kernel.cm_partial_resource_list">CM_PARTIAL_RESOURCE_LIST</a> structure.
+The <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure specifies one or more system hardware resources, of a single type, assigned to a device. This structure is used to create an array within a <a href="..\wdm\ns-wdm-_cm_partial_resource_list.md">CM_PARTIAL_RESOURCE_LIST</a> structure.
    
   
 
@@ -154,7 +155,7 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
 
 ### -field Type
 
-Identifies the resource type. The constant value specified for <b>Type</b> indicates which structure within the <b>u</b> union is valid, as indicated in the following table. (These flags are used within both <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> and <a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structures, except where noted.)
+Identifies the resource type. The constant value specified for <b>Type</b> indicates which structure within the <b>u</b> union is valid, as indicated in the following table. (These flags are used within both <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> and <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structures, except where noted.)
 
 <table>
 <tr>
@@ -488,7 +489,7 @@ CM_RESOURCE_INTERRUPT_POLICY_INCLUDED
 
 </td>
 <td>
-Not used with the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure. For more information about this flag, see <a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a>.
+Not used with the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure. For more information about this flag, see <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>.
 
 </td>
 </tr>
@@ -757,7 +758,7 @@ Not used.
 
 Specifies a range of I/O port addresses, using the following members.
 
-Drivers for Windows Vista and later versions of the Windows operating system can use <a href="kernel.rtlcmdecodememioresource">RtlCmDecodeMemIoResource</a> and <a href="kernel.rtlcmencodememioresource">RtlCmEncodeMemIoResource</a> to read and update the <b>u.Port</b> member, rather than updating it directly.
+Drivers for Windows Vista and later versions of the Windows operating system can use <a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a> to read and update the <b>u.Port</b> member, rather than updating it directly.
 
 
 ### -field Start
@@ -888,7 +889,7 @@ Specifies a KAFFINITY value that identifies the processors that receive the devi
 
 Specifies a range of memory addresses, using the following members.
 
-Drivers for Windows Vista and later versions of the Windows operating system can use <a href="kernel.rtlcmdecodememioresource">RtlCmDecodeMemIoResource</a> and <a href="kernel.rtlcmencodememioresource">RtlCmEncodeMemIoResource</a> to read and update the <b>u.Memory</b> member, rather than updating it directly.
+Drivers for Windows Vista and later versions of the Windows operating system can use <a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a> to read and update the <b>u.Memory</b> member, rather than updating it directly.
 
 
 ### -field Start
@@ -931,7 +932,7 @@ Not used.
 
 ### -field DmaV3
 
-Specifies the DMA settings for a driver that uses version 3 of the <a href="kernel.dma_operations">DMA_OPERATIONS</a> structure.
+Specifies the DMA settings for a driver that uses version 3 of the <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a> structure.
 
 The <b>u.DmaV3</b> member is available starting with Windows 8.
 
@@ -997,9 +998,9 @@ Not used.
 
 ### -field DeviceSpecificData
 
-Specifies the size of a device-specific, private structure that is appended to the end of the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure. If <b>u.DeviceSpecificData</b> is used, the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure must be the last one in the <a href="kernel.cm_partial_resource_list">CM_PARTIAL_RESOURCE_LIST</a> array.
+Specifies the size of a device-specific, private structure that is appended to the end of the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure. If <b>u.DeviceSpecificData</b> is used, the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure must be the last one in the <a href="..\wdm\ns-wdm-_cm_partial_resource_list.md">CM_PARTIAL_RESOURCE_LIST</a> array.
 
-Examples of device-specific structures include <a href="kernel.cm_floppy_device_data">CM_FLOPPY_DEVICE_DATA</a>, <a href="kernel.cm_keyboard_device_data">CM_KEYBOARD_DEVICE_DATA</a>, <a href="kernel.cm_scsi_device_data">CM_SCSI_DEVICE_DATA</a>, and <a href="kernel.cm_serial_device_data">CM_SERIAL_DEVICE_DATA</a>.
+Examples of device-specific structures include <a href="..\wdm\ns-wdm-_cm_floppy_device_data.md">CM_FLOPPY_DEVICE_DATA</a>, <a href="..\wdm\ns-wdm-_cm_keyboard_device_data.md">CM_KEYBOARD_DEVICE_DATA</a>, <a href="..\wdm\ns-wdm-_cm_scsi_device_data.md">CM_SCSI_DEVICE_DATA</a>, and <a href="..\wdm\ns-wdm-_cm_serial_device_data.md">CM_SERIAL_DEVICE_DATA</a>.
 
 
 ### -field DataSize
@@ -1023,7 +1024,7 @@ Not used.
 
 Specifies a range of memory addresses, using the following members.
 
-The <b>u.Memory40</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers must use <a href="kernel.rtlcmdecodememioresource">RtlCmDecodeMemIoResource</a> and <a href="kernel.rtlcmencodememioresource">RtlCmEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
+The <b>u.Memory40</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers must use <a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
 
 
 ### -field Start
@@ -1046,7 +1047,7 @@ Contains the high 32 bits of the 40-bit length, in bytes, of the range of alloca
 
 Specifies a range of memory addresses, using the following members.
 
-The <b>u.Memory48</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers must use <a href="kernel.rtlcmdecodememioresource">RtlCmDecodeMemIoResource</a> and <a href="kernel.rtlcmencodememioresource">RtlCmEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
+The <b>u.Memory48</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers must use <a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
 
 
 ### -field Start
@@ -1069,7 +1070,7 @@ Contains the high 32 bits of the 48-bit length, in bytes, of the range of alloca
 
 Specifies a range of memory addresses, using the following members.
 
-The <b>u.Memory64</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers must use <a href="kernel.rtlcmdecodememioresource">RtlCmDecodeMemIoResource</a> and <a href="kernel.rtlcmencodememioresource">RtlCmEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
+The <b>u.Memory64</b> member is available only on Windows Vista and later versions of the Windows operating system. Drivers must use <a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
 
 
 ### -field Start
@@ -1220,7 +1221,7 @@ Contains the upper 32 bits of the 64-bit connection ID.
 </dl>
 
 ## -remarks
-A <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure can describe either a raw (bus-relative) resource or a translated (system physical) resource, depending on the routine or IRP with which it is being used. For more information, see <a href="kmdf.raw_and_translated_resources">Raw and Translated Resources</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>.
+A <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure can describe either a raw (bus-relative) resource or a translated (system physical) resource, depending on the routine or IRP with which it is being used. For more information, see <a href="https://msdn.microsoft.com/dfc1376d-7a1a-421c-82ae-e183cac77ec8">Raw and Translated Resources</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>.
 
 
 ## -requirements
@@ -1241,40 +1242,40 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
 </dt>
 <dt>
-<a href="kernel.cm_full_resource_descriptor">CM_FULL_RESOURCE_DESCRIPTOR</a>
+<a href="..\wdm\ns-wdm-_cm_full_resource_descriptor.md">CM_FULL_RESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="kernel.cm_partial_resource_list">CM_PARTIAL_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm-_cm_partial_resource_list.md">CM_PARTIAL_RESOURCE_LIST</a>
 </dt>
 <dt>
-<a href="kernel.cm_floppy_device_data">CM_FLOPPY_DEVICE_DATA</a>
+<a href="..\wdm\ns-wdm-_cm_floppy_device_data.md">CM_FLOPPY_DEVICE_DATA</a>
 </dt>
 <dt>
-<a href="kernel.cm_keyboard_device_data">CM_KEYBOARD_DEVICE_DATA</a>
+<a href="..\wdm\ns-wdm-_cm_keyboard_device_data.md">CM_KEYBOARD_DEVICE_DATA</a>
 </dt>
 <dt>
-<a href="kernel.cm_scsi_device_data">CM_SCSI_DEVICE_DATA</a>
+<a href="..\wdm\ns-wdm-_cm_scsi_device_data.md">CM_SCSI_DEVICE_DATA</a>
 </dt>
 <dt>
-<a href="kernel.cm_serial_device_data">CM_SERIAL_DEVICE_DATA</a>
+<a href="..\wdm\ns-wdm-_cm_serial_device_data.md">CM_SERIAL_DEVICE_DATA</a>
 </dt>
 <dt>
-<a href="kernel.dma_operations">DMA_OPERATIONS</a>
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 </dt>
 <dt>
-<a href="kernel.ioconnectinterrupt">IoConnectInterrupt</a>
+<a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
 </dt>
 <dt>
-<a href="kernel.iogetdeviceproperty">IoGetDeviceProperty</a>
+<a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
 </dt>
 <dt>
-<a href="kernel.ioreportresourcefordetection">IoReportResourceForDetection</a>
+<a href="..\ntddk\nf-ntddk-ioreportresourcefordetection.md">IoReportResourceForDetection</a>
 </dt>
 <dt>
-<a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a>
+<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
@@ -1283,15 +1284,15 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
 </dt>
 <dt>
-<a href="kernel.rtlcmdecodememioresource">RtlCmDecodeMemIoResource</a>
+<a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a>
 </dt>
 <dt>
-<a href="kernel.rtlcmencodememioresource">RtlCmEncodeMemIoResource</a>
+<a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_PARTIAL_RESOURCE_DESCRIPTOR structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_PARTIAL_RESOURCE_DESCRIPTOR structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMQueryAdvanceWidths
+UID: NF:printoem.OEMQueryAdvanceWidths
 title: OEMQueryAdvanceWidths function
 author: windows-driver-content
 description: The OEMQueryAdvanceWidths function returns character advance widths for a specified set of glyphs.
@@ -7,7 +7,7 @@ old-location: print\oemqueryadvancewidths.htm
 old-project: print
 ms.assetid: 058ced7e-50bc-4847-b082-57608ac5ddd2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMQueryAdvanceWidths
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

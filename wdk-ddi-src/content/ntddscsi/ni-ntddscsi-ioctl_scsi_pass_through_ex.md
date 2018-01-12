@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddscsi.IOCTL_SCSI_PASS_THROUGH_EX
+UID: NI:ntddscsi.IOCTL_SCSI_PASS_THROUGH_EX
 title: IOCTL_SCSI_PASS_THROUGH_EX
 author: windows-driver-content
 description: The IOCTL_SCSI_PASS_THROUGH_EX control code request is the extended version of the IOCTL_SCSI_PASS_THROUGH request. This request provides support for bidirectional data transfers and allows a command data block (CDB) &gt; 16 bytes.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_scsi_pass_through_ex.htm
 old-project: storage
 ms.assetid: BDF4375D-660D-4AF0-A692-16EEA59954B3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+ms.date: 1/10/2018
+ms.keywords: _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_PASS_THROUGH_EX IOCTL
@@ -68,20 +69,20 @@ Storage class drivers set the minor IRP number to IRP_MN_SCSI_CLASS to indicate 
 ## -ioctlparameters
 
 ### -input-buffer
-This structure includes a SCSI CDB, which must be initialized by the caller except for the path, target ID, and logical unit number (LUN), which are filled in by the port driver. For a data-out command, the data to be transferred is included in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> at <b>DataInBufferOffset</b> in the <a href="storage.scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a> structure. However, the caller must allocate additional storage, immediately following <b>SCSI_PASS_THROUGH_EX</b>, if the caller asks for request-sense data.
+This structure includes a SCSI CDB, which must be initialized by the caller except for the path, target ID, and logical unit number (LUN), which are filled in by the port driver. For a data-out command, the data to be transferred is included in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> at <b>DataInBufferOffset</b> in the <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a> structure. However, the caller must allocate additional storage, immediately following <b>SCSI_PASS_THROUGH_EX</b>, if the caller asks for request-sense data.
 
 
 ### -input-buffer-length
 <i>
-       Parameters.DeviceIoControl.InputBufferLength</i> indicates the size, in bytes, of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be at least (<i>sense data size</i> + <b>sizeof</b>(SCSI_PASS_THROUGH_EX)). The size of the <a href="storage.scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a> structure varies, depending on the value specified in <b>DataInTransferLength</b> .
+       Parameters.DeviceIoControl.InputBufferLength</i> indicates the size, in bytes, of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be at least (<i>sense data size</i> + <b>sizeof</b>(SCSI_PASS_THROUGH_EX)). The size of the <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a> structure varies, depending on the value specified in <b>DataInTransferLength</b> .
 
 
 ### -output-buffer
-The port driver returns any request-sense data and any data transferred from the device to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The <b>SenseInfoLength</b> and <b>DataOutTransferLength</b> in the <a href="storage.scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a> structure are updated to indicate the amount of data transferred.
+The port driver returns any request-sense data and any data transferred from the device to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The <b>SenseInfoLength</b> and <b>DataOutTransferLength</b> in the <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a> structure are updated to indicate the amount of data transferred.
 
 
 ### -output-buffer-length
-The <b>SenseInfoLength</b> and <b>DataOutTransferLength</b> in the <a href="storage.scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a> structure are updated to indicate the amount of data transferred.
+The <b>SenseInfoLength</b> and <b>DataOutTransferLength</b> in the <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a> structure are updated to indicate the amount of data transferred.
 
 
 ### -in-out-buffer
@@ -94,11 +95,11 @@ The <b>SenseInfoLength</b> and <b>DataOutTransferLength</b> in the <a href="stor
 
 ### -status-block
 I/O Status block
-The <b>Information</b> field is set to the number of bytes returned in the output buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_BUFFER_TOO_SMALL or STATUS_INVALID_PARAMETER if the input <b>Length</b> value in <a href="storage.scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a> is improperly set. 
+The <b>Information</b> field is set to the number of bytes returned in the output buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The <b>Status</b> field is set to STATUS_SUCCESS, or possibly to STATUS_BUFFER_TOO_SMALL or STATUS_INVALID_PARAMETER if the input <b>Length</b> value in <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a> is improperly set. 
 
 
 ## -remarks
-In order to issue an <b>IOCTL_SCSI_PASS_THROUGH_EX</b> request, the underlying storage device must support extended SRBs. This means that the supported SRB type is <b>SRB_TYPE_STORAGE_REQUEST_BLOCK</b>. An application can query for SRB support with the <b>IOCTL_STORAGE_QUERY_PROPERTY</b> request with a query type of <b>PropertyStandardQuery</b> and a property type of <b>StorageDeviceProperty</b>. The <b>SrbType</b> member returned in the <a href="storage.storage_adapter_descriptor">STORAGE_ADAPTER_DESCRIPTIOR</a> structure will indicate either <b>SRB_TYPE_SCSI_REQUEST_BLOCK</b> or <b>SRB_TYPE_STORAGE_REQUEST_BLOCK</b>.
+In order to issue an <b>IOCTL_SCSI_PASS_THROUGH_EX</b> request, the underlying storage device must support extended SRBs. This means that the supported SRB type is <b>SRB_TYPE_STORAGE_REQUEST_BLOCK</b>. An application can query for SRB support with the <b>IOCTL_STORAGE_QUERY_PROPERTY</b> request with a query type of <b>PropertyStandardQuery</b> and a property type of <b>StorageDeviceProperty</b>. The <b>SrbType</b> member returned in the <a href="..\ntddstor\ns-ntddstor-_storage_adapter_descriptor.md">STORAGE_ADAPTER_DESCRIPTIOR</a> structure will indicate either <b>SRB_TYPE_SCSI_REQUEST_BLOCK</b> or <b>SRB_TYPE_STORAGE_REQUEST_BLOCK</b>.
 
 
 ## -requirements
@@ -119,12 +120,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a>
+<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_SCSI_PASS_THROUGH_EX control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_SCSI_PASS_THROUGH_EX control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

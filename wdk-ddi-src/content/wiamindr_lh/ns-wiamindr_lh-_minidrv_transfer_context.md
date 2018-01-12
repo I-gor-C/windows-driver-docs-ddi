@@ -1,13 +1,13 @@
 ---
-UID: NS.WIAMINDR_LH._MINIDRV_TRANSFER_CONTEXT
+UID: NS:wiamindr_lh._MINIDRV_TRANSFER_CONTEXT
 title: _MINIDRV_TRANSFER_CONTEXT
 author: windows-driver-content
 description: The MINIDRV_TRANSFER_CONTEXT structure is used to store image and other information needed for a memory-callback data transfer or a file data transfer.
 old-location: image\minidrv_transfer_context.htm
-old-project: Image
+old-project: image
 ms.assetid: 26583873-4f84-4254-86c1-2063df85000c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _MINIDRV_TRANSFER_CONTEXT, *PMINIDRV_TRANSFER_CONTEXT, MINIDRV_TRANSFER_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMINIDRV_TRANSFER_CONTEXT, MINIDRV_TRANSFER_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -181,7 +182,7 @@ Specifies the address, in the client's address space, of the transfer. The minid
 
 ### -field pIWiaMiniDrvCallBack
 
-Points to an <a href="image.iwiaminidrvcallback_interface">IWiaMiniDrvCallBack Interface</a> used for data or status callback transfer.
+Points to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543943">IWiaMiniDrvCallBack Interface</a> used for data or status callback transfer.
 
 
 ### -field lImageSize
@@ -220,11 +221,11 @@ Specifies the image file directory (IFD) offset in the previous page of a multip
 
 
 ## -remarks
-The WIA service sets most of the members of this structure before it calls the minidriver's <a href="image.iwiaminidrv_drvacquireitemdata">IWiaMiniDrv::drvAcquireItemData</a> method. If the minidriver calls <a href="image.wiasgetimageinformation">wiasGetImageInformation</a>, then that function fills in the remaining members of the MINIDRV_TRANSFER_CONTEXT passed to it.
+The WIA service sets most of the members of this structure before it calls the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff543956">IWiaMiniDrv::drvAcquireItemData</a> method. If the minidriver calls <a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a>, then that function fills in the remaining members of the MINIDRV_TRANSFER_CONTEXT passed to it.
 
 Because the WIA service currently uses only the TYMED_FILE and TYMED_CALLBACK constants, the <b>tymed</b> and <b>bTransferDataCB</b> members store essentially the same information. For file transfers, when <b>bTransferDataCB</b> is set to <b>FALSE</b>, <b>tymed</b> is set to either TYMED_FILE or TYMED_MULTIPAGE_FILE. For memory-callback transfers, when <b>bTransferDataCB</b> is set to <b>TRUE</b>, <b>tymed</b> is set to either TYMED_CALLBACK or TYMED_MULTIPAGE_CALLBACK.
 
-The <b>hFile</b> member is reserved for use solely by the WIA service. Rather than using this member for file transfers, the minidriver should instead write the data to a buffer, and then call <a href="image.wiaswritepagebuftofile">wiasWritePageBufToFile</a> to complete the file transfer.
+The <b>hFile</b> member is reserved for use solely by the WIA service. Rather than using this member for file transfers, the minidriver should instead write the data to a buffer, and then call <a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftofile.md">wiasWritePageBufToFile</a> to complete the file transfer.
 
 The minidriver obtains values from specific common or scanner item properties to set the members shown in the following table:
 
@@ -286,7 +287,7 @@ The WIA service sets the following structure members:
 
 <b>bClassDrvAllocBuf</b>
 
-Either the minidriver or the <a href="image.wiasgetimageinformation">wiasGetImageInformation</a> service library function sets the following structure members:
+Either the minidriver or the <a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a> service library function sets the following structure members:
 
 <b>lImageSize</b>
 
@@ -353,21 +354,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.iwiaminidrvcallback_minidrvcallback">IWiaMiniDrvCallBack::MiniDrvCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543946">IWiaMiniDrvCallBack::MiniDrvCallback</a>
 </dt>
 <dt>
-<a href="image.iwiaminidrv_drvacquireitemdata">IWiaMiniDrv::drvAcquireItemData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543956">IWiaMiniDrv::drvAcquireItemData</a>
 </dt>
 <dt>
-<a href="image.wiasgetimageinformation">wiasGetImageInformation</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a>
 </dt>
 <dt>
-<a href="image.wiaswritepagebuftofile">wiasWritePageBufToFile</a>
+<a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftofile.md">wiasWritePageBufToFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20MINIDRV_TRANSFER_CONTEXT structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20MINIDRV_TRANSFER_CONTEXT structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

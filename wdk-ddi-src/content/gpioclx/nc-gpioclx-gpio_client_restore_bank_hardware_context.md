@@ -1,5 +1,5 @@
 ---
-UID: NC.gpioclx.GPIO_CLIENT_RESTORE_BANK_HARDWARE_CONTEXT
+UID: NC:gpioclx.GPIO_CLIENT_RESTORE_BANK_HARDWARE_CONTEXT
 title: GPIO_CLIENT_RESTORE_BANK_HARDWARE_CONTEXT
 author: windows-driver-content
 description: The CLIENT_RestoreBankHardwareContext event callback function restores the hardware context of a bank of general-purpose I/O (GPIO) pins.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 7F73BC89-1BAF-413D-A901-56B4A0F3235A
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks.
+req.typenames: *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ---
 
 # GPIO_CLIENT_RESTORE_BANK_HARDWARE_CONTEXT callback

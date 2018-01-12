@@ -1,5 +1,5 @@
 ---
-UID: NE.wdm._IO_ACCESS_MODE
+UID: NE:wdm._IO_ACCESS_MODE
 title: _IO_ACCESS_MODE
 author: windows-driver-content
 description: Defines the types of access mode for Scheduled File I/O (SFIO).
@@ -7,7 +7,7 @@ old-location: kernel\io_access_mode.htm
 old-project: kernel
 ms.assetid: E48BDF14-5B56-45AF-9DD2-F019C8B7D7E5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: _IO_ACCESS_MODE, IO_ACCESS_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: PASSIVE_LEVEL (See Remarks section)
+req.typenames: IO_ACCESS_MODE
 req.product: Windows 10 or later.
 ---
 

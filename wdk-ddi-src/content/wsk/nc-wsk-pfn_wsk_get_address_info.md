@@ -1,14 +1,14 @@
 ---
-UID: NC.wsk.PFN_WSK_GET_ADDRESS_INFO
+UID: NC:wsk.PFN_WSK_GET_ADDRESS_INFO
 title: PFN_WSK_GET_ADDRESS_INFO
 author: windows-driver-content
 description: The WskGetAddressInfo function performs protocol-independent translation from a host name to a transport address.
 old-location: netvista\wskgetaddressinfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 688619b9-ab0b-4459-8f1b-74815043a190
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/8/2018
+ms.keywords: _WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -74,14 +75,14 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a> structure that was returned through
      the 
      <i>WskProviderNpi</i> parameter of the 
-     <a href="netvista.wskcaptureprovidernpi">
+     <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">
      WskCaptureProviderNPI</a> function.
 
 
 ### -param NodeName [in, optional]
 
 [in] An optional pointer to a 
-     <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains a
+     <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a
      Unicode string that represents a host (node) name or a numeric host address string. For the Internet
      protocol, the numeric host address string is a dotted-decimal IPv4 address or an IPv6 hexadecimal
      address.
@@ -90,7 +91,7 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
 ### -param ServiceName [in, optional]
 
 [in] An optional pointer to a 
-     <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains a
+     <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a
      Unicode string that represents a service name or a port number.
 
 
@@ -107,13 +108,13 @@ NTSTATUS WSKAPI * WskGetAddressInfo(
 
 ### -param Hints [in, optional]
 
-[in] An optional pointer to an <a href="winsock.addrinfoex">ADDRINFOEXW</a> structure that provides hints about the type of socket
+[in] An optional pointer to an <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structure that provides hints about the type of socket
      that the caller supports.
      
 
-The <a href="winsock.addrinfoex">ADDRINFOEXW</a> structure is defined in the 
+The <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structure is defined in the 
      Ws2def.h header. It is identical to the  
-     <a href="winsock.addrinfoex">addrinfoex</a> structure.
+     <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">addrinfoex</a> structure.
 
 <div class="alert"><b>Important</b>  The 
      Ws2def.h header file is automatically included in 
@@ -124,16 +125,16 @@ The <a href="winsock.addrinfoex">ADDRINFOEXW</a> structure is defined in the
 ### -param Result [out]
 
 [out] A pointer to a caller-allocated buffer that receives a linked list of one or more
-     <a href="winsock.addrinfoex">ADDRINFOEXW</a> structures that represent response information about the host.
+     <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structures that represent response information about the host.
      
 
 <div class="alert"><b>Note</b>  The caller must call the 
      <a href="..\wsk\nc-wsk-pfn_wsk_free_address_info.md">WskFreeAddressInfo</a> function to free
      this pointer.</div>
 <div> </div>
-The <a href="winsock.addrinfoex">ADDRINFOEXW</a> structure is defined in the 
+The <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">ADDRINFOEXW</a> structure is defined in the 
      Ws2def.h header. It is identical to the 
-     <a href="winsock.addrinfoex">addrinfoex</a> structure.
+     <a href="https://msdn.microsoft.com/1077e03d-a1a4-45ab-a5d2-29a67e03f5df">addrinfoex</a> structure.
 
 <div class="alert"><b>Important</b>  The 
      Ws2def.h header file is automatically included in 
@@ -261,18 +262,18 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 </dt>
 <dt>
-<a href="netvista.wskcaptureprovidernpi">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
 <dt>
 <a href="..\wsk\nc-wsk-pfn_wsk_free_address_info.md">WskFreeAddressInfo</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PFN_WSK_GET_ADDRESS_INFO callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_ADDRESS_INFO callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

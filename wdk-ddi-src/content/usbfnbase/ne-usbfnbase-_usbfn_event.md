@@ -1,14 +1,14 @@
 ---
-UID: NE.usbfnbase._USBFN_EVENT
+UID: NE:usbfnbase._USBFN_EVENT
 title: _USBFN_EVENT
 author: windows-driver-content
 description: Defines notifications sent to class drivers.
 old-location: buses\usbfn_event.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 4A1A4E49-6452-4291-8CD4-FA390C1F167E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBFN_EVENT, PUSBFN_EVENT, USBFN_EVENT, *PUSBFN_EVENT
+ms.date: 1/4/2018
+ms.keywords: _USBFN_EVENT, USBFN_EVENT, *PUSBFN_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: USBFN_EVENT, *PUSBFN_EVENT
 req.product: Windows 10 or later.
 ---
 

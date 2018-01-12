@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortLogSystemEvent
+UID: NF:storport.StorPortLogSystemEvent
 title: StorPortLogSystemEvent function
 author: windows-driver-content
 description: The StorPortLogSystemEvent routine gives miniport drivers full access to the capabilities of the Windows kernel event facility, enabling miniport drivers to create event log entries that are truly useful in troubleshooting storage issues.
@@ -7,7 +7,7 @@ old-location: storage\storportlogsystemevent.htm
 old-project: storage
 ms.assetid: 720245ff-8c97-4b8d-8406-f6b712fa74c9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortLogSystemEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The StorPortLogSystemEvent routine gives miniport drivers full access to the capabilities of the Windows kernel event facility, enabling miniport drivers to create event log entries that are truly useful in troubleshooting storage issues. It provides a better alternative to the existing miniport driver event logging function, <a href="storage.storportlogerror">StorPortLogError</a>.
+The StorPortLogSystemEvent routine gives miniport drivers full access to the capabilities of the Windows kernel event facility, enabling miniport drivers to create event log entries that are truly useful in troubleshooting storage issues. It provides a better alternative to the existing miniport driver event logging function, <a href="..\storport\nf-storport-storportlogerror.md">StorPortLogError</a>.
 
 
 
@@ -58,7 +59,7 @@ ULONG StorPortLogSystemEvent(
 
 ### -param HwDeviceExtension [in]
 
-A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport immediately after the miniport driver calls <a href="storage.storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
+A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 
 ### -param LogDetails [in, out]
@@ -131,7 +132,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.storport_storportirql">StorPortIrql</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
 </td>
 </tr>
 </table>
@@ -139,12 +140,12 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storportlogerror">StorPortLogError</a>
+<a href="..\storport\nf-storport-storportlogerror.md">StorPortLogError</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortLogSystemEvent routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortLogSystemEvent routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

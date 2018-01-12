@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugRegisters2.GetNumberPseudoRegisters
+UID: NF:dbgeng.IDebugRegisters2.GetNumberPseudoRegisters
 title: IDebugRegisters2::GetNumberPseudoRegisters method
 author: windows-driver-content
 description: The GetNumberPseudoRegisters method returns the number of pseudo-registers that are maintained by the debugger engine.
 old-location: debugger\getnumberpseudoregisters.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5a71a8e9-323e-4f14-8c97-d6ce4e9bfe65
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugRegisters2, IDebugRegisters2::GetNumberPseudoRegisters, GetNumberPseudoRegisters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugRegisters2::GetNumberPseudoRegisters method

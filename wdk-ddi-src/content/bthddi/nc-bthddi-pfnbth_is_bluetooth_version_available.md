@@ -1,5 +1,5 @@
 ---
-UID: NC.bthddi.PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE
+UID: NC:bthddi.PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE
 title: PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE
 author: windows-driver-content
 description: The IsBluetoothVersionAvailable function checks whether a given Bluetooth version is supported by the operating system.
@@ -7,7 +7,7 @@ old-location: bltooth\isbluetoothversionavailable.htm
 old-project: bltooth
 ms.assetid: 10662237-18b4-4f37-a704-985b2db0d689
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ---
 
 # PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE callback

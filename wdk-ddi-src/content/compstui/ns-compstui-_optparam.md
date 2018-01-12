@@ -1,5 +1,5 @@
 ---
-UID: NS.COMPSTUI._OPTPARAM
+UID: NS:compstui._OPTPARAM
 title: _OPTPARAM
 author: windows-driver-content
 description: An array of OPTPARAM structures is used by CPSUI applications (including printer interface DLLs) for describing all the parameter values associated with a property sheet option. The array's address is included in an OPTTYPE structure.
@@ -7,8 +7,8 @@ old-location: print\optparam.htm
 old-project: print
 ms.assetid: d0cd2867-783c-4a41-a819-e919d4ffc1e3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _OPTPARAM, *POPTPARAM, POPTPARAM, OPTPARAM
+ms.date: 1/8/2018
+ms.keywords: _OPTPARAM, OPTPARAM, *POPTPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OPTPARAM, *POPTPARAM
 ---
 
 # _OPTPARAM structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-An array of OPTPARAM structures is used by CPSUI applications (including printer interface DLLs) for describing all the parameter values associated with a <a href="https://msdn.microsoft.com/572330d6-1a1b-46fd-bfb4-be2b0990bca4">property sheet option</a>. The array's address is included in an <a href="print.opttype">OPTTYPE</a> structure.
+An array of OPTPARAM structures is used by CPSUI applications (including printer interface DLLs) for describing all the parameter values associated with a <a href="https://msdn.microsoft.com/572330d6-1a1b-46fd-bfb4-be2b0990bca4">property sheet option</a>. The array's address is included in an <a href="..\compstui\ns-compstui-_opttype.md">OPTTYPE</a> structure.
 
 
 

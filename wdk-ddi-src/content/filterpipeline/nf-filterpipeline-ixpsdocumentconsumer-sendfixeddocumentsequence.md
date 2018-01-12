@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IXpsDocumentConsumer.SendFixedDocumentSequence
+UID: NF:filterpipeline.IXpsDocumentConsumer.SendFixedDocumentSequence
 title: IXpsDocumentConsumer::SendFixedDocumentSequence method
 author: windows-driver-content
 description: The SendFixedDocumentSequence method sends a fixed document sequence to the pipeline.
@@ -7,7 +7,7 @@ old-location: print\ixpsdocumentconsumer_sendfixeddocumentsequence.htm
 old-project: print
 ms.assetid: e2541943-7e0c-45ca-bdfe-2d48581f62a4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IXpsDocumentConsumer, IXpsDocumentConsumer::SendFixedDocumentSequence, SendFixedDocumentSequence
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IXpsDocumentConsumer::SendFixedDocumentSequence method
@@ -63,7 +64,7 @@ A pointer to an XPS fixed document sequence object.
 
 
 ## -remarks
-Only one <a href="print.ifixeddocumentsequence">IFixedDocumentSequence</a> interface can be sent. The <code>SendFixedDocumentSequence</code> method will fail if a filter submits more than one such interface for the same print job.
+Only one <a href="..\filterpipeline\nn-filterpipeline-ifixeddocumentsequence.md">IFixedDocumentSequence</a> interface can be sent. The <code>SendFixedDocumentSequence</code> method will fail if a filter submits more than one such interface for the same print job.
 
 
 ## -requirements

@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortPoFxSetComponentLatency
+UID: NF:storport.StorPortPoFxSetComponentLatency
 title: StorPortPoFxSetComponentLatency function
 author: windows-driver-content
 description: The StorPortPoFxSetComponentLatency routine specifies the maximum latency that can be tolerated in the transition from the idle condition to the active condition in the specified storage device component.
@@ -7,7 +7,7 @@ old-location: storage\storportpofxsetcomponentlatency.htm
 old-project: storage
 ms.assetid: F175ED42-3DB6-4568-96CA-EFC283B14887
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortPoFxSetComponentLatency
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ ULONG StorPortPoFxSetComponentLatency(
 
 ### -param HwDeviceExtension [in]
 
-A pointer to the hardware device extension for the host bus adapter (HBA). This is the device extension used to register the device in a prior call to <a href="storage.storportinitializepofxpower">StorPortInitializePoFxPower</a>.
+A pointer to the hardware device extension for the host bus adapter (HBA). This is the device extension used to register the device in a prior call to <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>.
 
 
 ### -param Address [in, optional]
@@ -69,7 +70,7 @@ The address of a storage device unit. This parameter is <b>NULL</b> when setting
 
 ### -param Component [in]
 
-The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="storage.stor_pofx_device">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="storage.storportinitializepofxpower">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
+The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
 
 ### -param Latency [in]
@@ -159,12 +160,12 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.pofxsetcomponentlatency">PoFxSetComponentLatency</a>
+<a href="..\wdm\nf-wdm-pofxsetcomponentlatency.md">PoFxSetComponentLatency</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortPoFxSetComponentLatency routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortPoFxSetComponentLatency routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

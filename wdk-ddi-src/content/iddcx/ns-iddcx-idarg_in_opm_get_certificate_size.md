@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDARG_IN_OPM_GET_CERTIFICATE_SIZE
+UID: NS:iddcx.IDARG_IN_OPM_GET_CERTIFICATE_SIZE
 title: IDARG_IN_OPM_GET_CERTIFICATE_SIZE
 author: windows-driver-content
 description: Gives information about the OPM certificate size.
@@ -7,7 +7,7 @@ old-location: display\idarg_in_opm_get_certificate_size.htm
 old-project: display
 ms.assetid: 42b8bd6c-c5be-45d0-9537-13d687ca5a48
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDARG_IN_OPM_GET_CERTIFICATE_SIZE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDARG_IN_OPM_GET_CERTIFICATE_SIZE structure

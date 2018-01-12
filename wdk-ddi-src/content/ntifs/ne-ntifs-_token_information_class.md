@@ -1,5 +1,5 @@
 ---
-UID: NE.ntifs._TOKEN_INFORMATION_CLASS
+UID: NE:ntifs._TOKEN_INFORMATION_CLASS
 title: _TOKEN_INFORMATION_CLASS
 author: windows-driver-content
 description: The TOKEN_INFORMATION_CLASS enumeration type contains values that specify the type of information being assigned to or retrieved from an access token.
@@ -7,8 +7,8 @@ old-location: ifsk\token_information_class.htm
 old-project: ifsk
 ms.assetid: dd2323fa-2c58-462e-905f-3b201ef0c343
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _TOKEN_INFORMATION_CLASS, *PTOKEN_INFORMATION_CLASS, TOKEN_INFORMATION_CLASS, PTOKEN_INFORMATION_CLASS
+ms.date: 1/9/2018
+ms.keywords: _TOKEN_INFORMATION_CLASS, TOKEN_INFORMATION_CLASS, *PTOKEN_INFORMATION_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_INFORMATION_CLASS, *PTOKEN_INFORMATION_CLASS
 ---
 
 # _TOKEN_INFORMATION_CLASS enumeration
@@ -41,7 +42,7 @@ req.irql: PASSIVE_LEVEL
 The <b>TOKEN_INFORMATION_CLASS</b> enumeration type contains values that specify the type of information being assigned to or retrieved from an access token. 
 
 
-<a href="ifsk.sequeryinformationtoken">SeQueryInformationToken</a> and <a href="kernel.zwqueryinformationtoken">ZwQueryInformationToken</a> use <b>TOKEN_INFORMATION_CLASS</b> values to indicate the type of token information to retrieve. 
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> and <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a> use <b>TOKEN_INFORMATION_CLASS</b> values to indicate the type of token information to retrieve. 
 
 
 
@@ -98,57 +99,57 @@ typedef enum _TOKEN_INFORMATION_CLASS {
 
 ### -field TokenUser
 
-The buffer receives a <a href="ifsk.token_user">TOKEN_USER</a> structure containing the token's user account. 
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a> structure containing the token's user account. 
 
 
 ### -field TokenGroups
 
-The buffer receives a <a href="ifsk.token_groups">TOKEN_GROUPS</a> structure containing the group accounts associated with the token. 
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a> structure containing the group accounts associated with the token. 
 
 
 ### -field TokenPrivileges
 
-The buffer receives a <a href="ifsk.token_privileges">TOKEN_PRIVILEGES</a> structure containing the token's privileges. 
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_privileges.md">TOKEN_PRIVILEGES</a> structure containing the token's privileges. 
 
 
 ### -field TokenOwner
 
-The buffer receives a <a href="ifsk.token_owner">TOKEN_OWNER</a> structure containing the default owner SID for newly created objects. 
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_owner.md">TOKEN_OWNER</a> structure containing the default owner SID for newly created objects. 
 
 
 ### -field TokenPrimaryGroup
 
-The buffer receives a <a href="ifsk.token_primary_group">TOKEN_PRIMARY_GROUP</a> structure containing the default primary group SID for newly created objects. 
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_primary_group.md">TOKEN_PRIMARY_GROUP</a> structure containing the default primary group SID for newly created objects. 
 
 
 ### -field TokenDefaultDacl
 
-The buffer receives a <a href="ifsk.token_default_dacl">TOKEN_DEFAULT_DACL</a> structure containing the default discretionary ACL (DACL)) for newly created objects. 
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_default_dacl.md">TOKEN_DEFAULT_DACL</a> structure containing the default discretionary ACL (DACL)) for newly created objects. 
 
 
 ### -field TokenSource
 
-The buffer receives a <a href="ifsk.token_source">TOKEN_SOURCE</a> structure containing the source of the token. TOKEN_QUERY_SOURCE access is needed to retrieve this information. 
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_source.md">TOKEN_SOURCE</a> structure containing the source of the token. TOKEN_QUERY_SOURCE access is needed to retrieve this information. 
 
 
 ### -field TokenType
 
-The buffer receives a <a href="ifsk.token_type">TOKEN_TYPE</a> value indicating whether the token is a primary or impersonation token. 
+The buffer receives a <a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a> value indicating whether the token is a primary or impersonation token. 
 
 
 ### -field TokenImpersonationLevel
 
-The buffer receives a <a href="ifsk.security_impersonation_level">SECURITY_IMPERSONATION_LEVEL</a> value indicating the impersonation level of the token. If the access token is not an impersonation token, the call to <a href="ifsk.sequeryinformationtoken">SeQueryInformationToken</a> or <a href="kernel.zwqueryinformationtoken">ZwQueryInformationToken</a> fails. 
+The buffer receives a <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a> value indicating the impersonation level of the token. If the access token is not an impersonation token, the call to <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> or <a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a> fails. 
 
 
 ### -field TokenStatistics
 
-The buffer receives a <a href="ifsk.token_statistics">TOKEN_STATISTICS</a> structure containing various token statistics. 
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a> structure containing various token statistics. 
 
 
 ### -field TokenRestrictedSids
 
-The buffer receives a <a href="ifsk.token_groups">TOKEN_GROUPS</a> structure containing the list of restricting SIDs in a restricted token. This value is valid starting with Windows Vista.
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a> structure containing the list of restricting SIDs in a restricted token. This value is valid starting with Windows Vista.
 
 
 ### -field TokenSessionId
@@ -158,7 +159,7 @@ The buffer receives a DWORD value that indicates the Terminal Services session i
 
 ### -field TokenGroupsAndPrivileges
 
-The buffer receives a <a href="ifsk.token_groups_and_privileges">TOKEN_GROUPS_AND_PRIVILEGES</a> structure that contains the user SID, the group accounts, the restricted SIDs, and the authentication ID associated with the token. This value is valid starting with Windows Vista.
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_groups_and_privileges.md">TOKEN_GROUPS_AND_PRIVILEGES</a> structure that contains the user SID, the group accounts, the restricted SIDs, and the authentication ID associated with the token. This value is valid starting with Windows Vista.
 
 
 ### -field TokenSessionReference
@@ -178,9 +179,9 @@ Reserved for system use.
 
 ### -field TokenOrigin
 
-The buffer receives a <a href="ifsk.token_origin">TOKEN_ORIGIN</a> value. 
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_origin.md">TOKEN_ORIGIN</a> value. 
 
-If the token resulted from a logon that used explicit credentials, such as passing a name, domain, and password to the user-mode <a href="security.logonuser">LogonUser</a> function, then the <b>TOKEN_ORIGIN</b> structure will contain the ID of the logon session that created it.
+If the token resulted from a logon that used explicit credentials, such as passing a name, domain, and password to the user-mode <a href="https://msdn.microsoft.com/a6d880a0-0aed-4bdb-89c9-4f667ecb510e">LogonUser</a> function, then the <b>TOKEN_ORIGIN</b> structure will contain the ID of the logon session that created it.
 
 If the token resulted from network authentication, such as a call to user-mode <b>AcceptSecurityContext</b> function or a call to user-mode <b>LogonUser</b> function with dwLogonType set to LOGON32_LOGON_NETWORK or LOGON32_LOGON_NETWORK_CLEARTEXT, then this value will be zero.
 
@@ -189,12 +190,12 @@ If the token resulted from network authentication, such as a call to user-mode <
 
 ### -field TokenLinkedToken
 
-The buffer receives a <a href="security.token_linked_token">TOKEN_LINKED_TOKEN</a> structure that contains a handle to another token that is linked to this token. This value is valid starting with Windows Vista.
+The buffer receives a <a href="https://msdn.microsoft.com/a77dd410-1074-4196-8323-ccf52ed0375a">TOKEN_LINKED_TOKEN</a> structure that contains a handle to another token that is linked to this token. This value is valid starting with Windows Vista.
 
 
 ### -field TokenElevation
 
-The buffer receives a <a href="security.token_elevation">TOKEN_ELEVATION</a> structure that specifies whether the token is elevated. This value is valid starting with Windows Vista.
+The buffer receives a <a href="https://msdn.microsoft.com/a1c87818-f092-43cf-872d-4bb2590a944b">TOKEN_ELEVATION</a> structure that specifies whether the token is elevated. This value is valid starting with Windows Vista.
 
 
 ### -field TokenHasRestrictions
@@ -204,7 +205,7 @@ The buffer receives a <b>DWORD</b> value that is nonzero if the token has ever b
 
 ### -field TokenAccessInformation
 
-The buffer receives a <a href="security.token_access_information">TOKEN_ACCESS_INFORMATION</a> structure that specifies  security information contained in the token. This value is valid starting with Windows Vista.
+The buffer receives a <a href="https://msdn.microsoft.com/cb727b91-c88f-48f3-8329-020d3f727dc7">TOKEN_ACCESS_INFORMATION</a> structure that specifies  security information contained in the token. This value is valid starting with Windows Vista.
 
 
 ### -field TokenVirtualizationAllowed
@@ -219,7 +220,7 @@ The buffer receives a <b>DWORD</b> value that is nonzero if  <a href="security.v
 
 ### -field TokenIntegrityLevel
 
-The buffer receives a <a href="security.token_mandatory_label">TOKEN_MANDATORY_LABEL</a> structure that specifies the token's integrity level. This value is valid starting with Windows Vista. For <a href="ifsk.sequeryinformationtoken">SeQueryInformationToken</a> the output is the actual integrity level  (<b>DWORD</b>).
+The buffer receives a <a href="https://msdn.microsoft.com/cf37eb34-ee90-43c6-97a9-c5edfcba2bc5">TOKEN_MANDATORY_LABEL</a> structure that specifies the token's integrity level. This value is valid starting with Windows Vista. For <a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a> the output is the actual integrity level  (<b>DWORD</b>).
 
 
 ### -field TokenUIAccess
@@ -229,12 +230,12 @@ The buffer receives a <b>DWORD</b> value that is nonzero if  the token has the U
 
 ### -field TokenMandatoryPolicy
 
-The buffer receives a <a href="security.token_mandatory_policy">TOKEN_MANDATORY_POLICY</a> structure that specifies the token's mandatory integrity policy. This value is valid starting with Windows Vista.
+The buffer receives a <a href="https://msdn.microsoft.com/f5fc438b-c4f0-46f6-a188-52ce660d13da">TOKEN_MANDATORY_POLICY</a> structure that specifies the token's mandatory integrity policy. This value is valid starting with Windows Vista.
 
 
 ### -field TokenLogonSid
 
-The buffer receives a <a href="ifsk.token_groups">TOKEN_GROUPS</a> structure that specifies the token's logon SID. This value is valid starting with Windows Vista.
+The buffer receives a <a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a> structure that specifies the token's logon SID. This value is valid starting with Windows Vista.
 
 
 ### -field TokenIsAppContainer
@@ -259,12 +260,12 @@ The buffer receives a <b>DWORD</b> value that is the application container numbe
 
 ### -field TokenUserClaimAttributes
 
-The buffer receives a <a href="security.token_mandatory_policy">CLAIM_SECURITY_ATTRIBUTES_INFORMATION</a> structure that specifies the user's claim attributes. This value is valid starting with Windows 8.
+The buffer receives a <a href="https://msdn.microsoft.com/f5fc438b-c4f0-46f6-a188-52ce660d13da">CLAIM_SECURITY_ATTRIBUTES_INFORMATION</a> structure that specifies the user's claim attributes. This value is valid starting with Windows 8.
 
 
 ### -field TokenDeviceClaimAttributes
 
-The buffer receives a <a href="security.token_mandatory_policy">CLAIM_SECURITY_ATTRIBUTES_INFORMATION</a> structure that specifies the device's claim attributes. This value is valid starting with Windows 8.
+The buffer receives a <a href="https://msdn.microsoft.com/f5fc438b-c4f0-46f6-a188-52ce660d13da">CLAIM_SECURITY_ATTRIBUTES_INFORMATION</a> structure that specifies the device's claim attributes. This value is valid starting with Windows 8.
 
 
 ### -field TokenRestrictedUserClaimAttributes
@@ -328,63 +329,63 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.acl">ACL</a>
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 </dt>
 <dt>
-<a href="ifsk.security_impersonation_level">SECURITY_IMPERSONATION_LEVEL</a>
+<a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
 </dt>
 <dt>
-<a href="ifsk.sefiltertoken">SeFilterToken</a>
+<a href="..\ntifs\nf-ntifs-sefiltertoken.md">SeFilterToken</a>
 </dt>
 <dt>
-<a href="ifsk.sequeryinformationtoken">SeQueryInformationToken</a>
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
 </dt>
 <dt>
-<a href="ifsk.setokenisrestricted">SeTokenIsRestricted</a>
+<a href="..\ntifs\nf-ntifs-setokenisrestricted.md">SeTokenIsRestricted</a>
 </dt>
 <dt>
-<a href="ifsk.sid">SID</a>
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 </dt>
 <dt>
-<a href="ifsk.token_default_dacl">TOKEN_DEFAULT_DACL</a>
+<a href="..\ntifs\ns-ntifs-_token_default_dacl.md">TOKEN_DEFAULT_DACL</a>
 </dt>
 <dt>
-<a href="ifsk.token_groups">TOKEN_GROUPS</a>
+<a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a>
 </dt>
 <dt>
-<a href="ifsk.token_owner">TOKEN_OWNER</a>
+<a href="..\ntifs\ns-ntifs-_token_owner.md">TOKEN_OWNER</a>
 </dt>
 <dt>
-<a href="ifsk.token_origin">TOKEN_ORIGIN</a>
+<a href="..\ntifs\ns-ntifs-_token_origin.md">TOKEN_ORIGIN</a>
 </dt>
 <dt>
-<a href="ifsk.token_primary_group">TOKEN_PRIMARY_GROUP</a>
+<a href="..\ntifs\ns-ntifs-_token_primary_group.md">TOKEN_PRIMARY_GROUP</a>
 </dt>
 <dt>
-<a href="ifsk.token_privileges">TOKEN_PRIVILEGES</a>
+<a href="..\ntifs\ns-ntifs-_token_privileges.md">TOKEN_PRIVILEGES</a>
 </dt>
 <dt>
-<a href="ifsk.token_source">TOKEN_SOURCE</a>
+<a href="..\ntifs\ns-ntifs-_token_source.md">TOKEN_SOURCE</a>
 </dt>
 <dt>
-<a href="ifsk.token_statistics">TOKEN_STATISTICS</a>
+<a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a>
 </dt>
 <dt>
-<a href="ifsk.token_type">TOKEN_TYPE</a>
+<a href="..\ntifs\ne-ntifs-_token_type.md">TOKEN_TYPE</a>
 </dt>
 <dt>
-<a href="ifsk.token_user">TOKEN_USER</a>
+<a href="..\ntifs\ns-ntifs-_token_user.md">TOKEN_USER</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryinformationtoken">ZwQueryInformationToken</a>
+<a href="..\ntifs\nf-ntifs-zwqueryinformationtoken.md">ZwQueryInformationToken</a>
 </dt>
 <dt>
-<a href="kernel.zwsetinformationtoken">ZwSetInformationToken</a>
+<a href="..\ntifs\nf-ntifs-zwsetinformationtoken.md">ZwSetInformationToken</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_INFORMATION_CLASS enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20TOKEN_INFORMATION_CLASS enumeration%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

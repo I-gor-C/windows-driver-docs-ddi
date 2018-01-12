@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1DDI_VIDEO_COLOR_RGBA
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_COLOR_RGBA
 title: D3D11_1DDI_VIDEO_COLOR_RGBA
 author: windows-driver-content
 description: Specifies an RGB color value.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_color_rgba.htm
 old-project: display
 ms.assetid: 0d97d6ef-87e6-4ba3-ab4b-aa5b22cb126b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_VIDEO_COLOR_RGBA, D3D11_1DDI_VIDEO_COLOR_RGBA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_VIDEO_COLOR_RGBA
 ---
 
 # D3D11_1DDI_VIDEO_COLOR_RGBA structure

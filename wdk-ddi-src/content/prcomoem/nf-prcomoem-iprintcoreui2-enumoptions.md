@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintCoreUI2.EnumOptions
+UID: NF:prcomoem.IPrintCoreUI2.EnumOptions
 title: IPrintCoreUI2::EnumOptions method
 author: windows-driver-content
 description: The IPrintCoreUI2::EnumOptions method enumerates the available options of a specific feature.
@@ -7,7 +7,7 @@ old-location: print\iprintcoreui2_enumoptions.htm
 old-project: print
 ms.assetid: 9ae20927-6ef4-4566-939c-967ce1d99874
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintCoreUI2, IPrintCoreUI2::EnumOptions, EnumOptions
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ HRESULT EnumOptions(
 
 ### -param poemuiobj [in]
 
-Pointer to the current context, an <a href="print.oemuiobj">OEMUIOBJ</a> structure.
+Pointer to the current context, an <a href="..\printoem\ns-printoem-_oemuiobj.md">OEMUIOBJ</a> structure.
 
 
 ### -param dwFlags [in]
@@ -157,15 +158,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.oemuiobj">OEMUIOBJ</a>
+<a href="..\printoem\ns-printoem-_oemuiobj.md">OEMUIOBJ</a>
 </dt>
 <dt>
-<a href="print.iprintcoreui2_enumfeatures">IPrintCoreUI2::EnumFeatures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553050">IPrintCoreUI2::EnumFeatures</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintCoreUI2::EnumOptions method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintCoreUI2::EnumOptions method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

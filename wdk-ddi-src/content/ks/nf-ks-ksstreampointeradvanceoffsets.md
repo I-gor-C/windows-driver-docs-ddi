@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsStreamPointerAdvanceOffsets
+UID: NF:ks.KsStreamPointerAdvanceOffsets
 title: KsStreamPointerAdvanceOffsets function
 author: windows-driver-content
 description: The KsStreamPointerAdvanceOffsets function advances the offsets of StreamPointer.
@@ -7,7 +7,7 @@ old-location: stream\ksstreampointeradvanceoffsets.htm
 old-project: stream
 ms.assetid: 0377371b-b755-4473-a449-9a85e1ca456c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsStreamPointerAdvanceOffsets
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: 
 ---
 
 # KsStreamPointerAdvanceOffsets function
@@ -58,7 +59,7 @@ NTSTATUS KsStreamPointerAdvanceOffsets(
 
 ### -param StreamPointer [in]
 
-A pointer to a <a href="stream.ksstream_pointer">KSSTREAM_POINTER</a> structure representing the stream pointer for which to advance the offsets. <i>StreamPointer</i> should be in the locked state when this function is called.
+A pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer for which to advance the offsets. <i>StreamPointer</i> should be in the locked state when this function is called.
 
 
 ### -param InUsed [in]
@@ -152,21 +153,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksstreampointerlock">KsStreamPointerLock</a>
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerunlock">KsStreamPointerUnlock</a>
+<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointeradvance">KsStreamPointerAdvance</a>
+<a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointeradvanceoffsetsandunlock">KsStreamPointerAdvanceOffsetsAndUnlock</a>
+<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerAdvanceOffsets function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerAdvanceOffsets function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

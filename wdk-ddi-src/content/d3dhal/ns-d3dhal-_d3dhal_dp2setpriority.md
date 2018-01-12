@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DHAL._D3DHAL_DP2SETPRIORITY
+UID: NS:d3dhal._D3DHAL_DP2SETPRIORITY
 title: _D3DHAL_DP2SETPRIORITY
 author: windows-driver-content
 description: The D3DHAL_DP2SETPRIORITY structure is used to inform the driver of the priority of the texture specified by the handle dwDDDestSurface.
@@ -7,8 +7,8 @@ old-location: display\d3dhal_dp2setpriority.htm
 old-project: display
 ms.assetid: 5101c150-b294-4bf4-b33c-f0fe0f54d727
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DHAL_DP2SETPRIORITY, D3DHAL_DP2SETPRIORITY
+ms.date: 12/29/2017
+ms.keywords: _D3DHAL_DP2SETPRIORITY, D3DHAL_DP2SETPRIORITY, *LPD3DHAL_DP2SETPRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DHAL_DP2SETPRIORITY
 ---
 
 # _D3DHAL_DP2SETPRIORITY structure

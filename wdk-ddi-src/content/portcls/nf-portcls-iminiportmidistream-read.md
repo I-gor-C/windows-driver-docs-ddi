@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportMidiStream.Read
+UID: NF:portcls.IMiniportMidiStream.Read
 title: IMiniportMidiStream::Read method
 author: windows-driver-content
 description: The Read method reads data from an incoming MIDI stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportMidiStream::Read method
@@ -80,7 +81,7 @@ Output pointer to a caller-allocated variable into which the method writes a cou
 
 
 ## -remarks
-The miniport driver calls <a href="audio.iportmidi_notify">IPortMidi::Notify</a> to notify the port driver when incoming MIDI data becomes available from the capture device. The port driver calls <b>IMiniportMidi::Read</b> to retrieve the data. The port driver continues to call <code>Read</code> as long as more data is available.
+The miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a> to notify the port driver when incoming MIDI data becomes available from the capture device. The port driver calls <b>IMiniportMidi::Read</b> to retrieve the data. The port driver continues to call <code>Read</code> as long as more data is available.
 
 The <code>Read</code> method returns STATUS_SUCCESS and a <i>BytesRead</i> count of zero to indicate that no more MIDI input data is currently available from the device. 
 
@@ -127,10 +128,10 @@ DISPATCH_LEVEL
 <a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>
 </dt>
 <dt>
-<a href="audio.iportmidi_notify">IPortMidi::Notify</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a>
 </dt>
 <dt>
-<a href="audio.iminiportmidistream_write">IMiniportMidiStream::Write</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536708">IMiniportMidiStream::Write</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWavePciStream.GetMapping
+UID: NF:portcls.IPortWavePciStream.GetMapping
 title: IPortWavePciStream::GetMapping method
 author: windows-driver-content
 description: The GetMapping method obtains a mapping from the port driver and associates a tag with the mapping.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWavePciStream::GetMapping method
@@ -59,7 +60,7 @@ NTSTATUS GetMapping(
 
 ### -param Tag [in]
 
-Specifies a tag value to associate with the mapping. The port driver can use this tag in a subsequent <a href="audio.iminiportwavepcistream_revokemappings">IMiniportWavePciStream::RevokeMappings</a> call to identify the mapping in the list of mappings to be revoked. The miniport driver uses the tag to identify the mapping in the <a href="audio.iportwavepcistream_releasemapping">IPortWavePciStream::ReleaseMapping</a> call that releases the mapping.
+Specifies a tag value to associate with the mapping. The port driver can use this tag in a subsequent <a href="https://msdn.microsoft.com/library/windows/hardware/ff536730">IMiniportWavePciStream::RevokeMappings</a> call to identify the mapping in the list of mappings to be revoked. The miniport driver uses the tag to identify the mapping in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536911">IPortWavePciStream::ReleaseMapping</a> call that releases the mapping.
 
 
 ### -param PhysicalAddress [out]
@@ -86,13 +87,13 @@ Output pointer for the status flag. This parameter points to a caller-allocated 
 <code>GetMapping</code> returns STATUS_SUCCESS if the call was successful. Otherwise, the method returns an appropriate error code. The following table shows some of the possible return status codes.
 <dl>
 <dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>A mapping is not immediately available, but the port driver will call <a href="audio.iminiportwavepcistream_mappingavailable">IMiniportWavePciStream::MappingAvailable</a> when a mapping does become available.
+</dl>A mapping is not immediately available, but the port driver will call <a href="https://msdn.microsoft.com/library/windows/hardware/ff536728">IMiniportWavePciStream::MappingAvailable</a> when a mapping does become available.
 
  
 
 
 ## -remarks
-Mappings obtained through the <code>GetMapping</code> method should be released by calling <a href="audio.iportwavepcistream_releasemapping">IPortWavePciStream::ReleaseMapping</a> unless they are revoked by the port driver. The port driver can revoke mappings by calling the stream's <a href="audio.iminiportwavepcistream_revokemappings">IMiniportWavePciStream::RevokeMappings</a> method.
+Mappings obtained through the <code>GetMapping</code> method should be released by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff536911">IPortWavePciStream::ReleaseMapping</a> unless they are revoked by the port driver. The port driver can revoke mappings by calling the stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536730">IMiniportWavePciStream::RevokeMappings</a> method.
 
 The buffer storage for a stream that is played back through a miniport driver's rendering pin is attached to one or more IRPs. Each IRP contains a portion of the buffer storage for the stream. Each IRP's buffer storage is contiguous in virtual memory, but the memory pages that comprise the buffer do not in general map to contiguous locations in physical memory. Although a driver can use programmed I/O to access the buffer through its mapping into virtual memory, a DMA controller requires physical mappings instead.
 
@@ -118,7 +119,7 @@ The <i>Flags</i> parameter is typically ignored by miniport drivers that manage 
 
 A miniport driver is most likely to call <code>GetMapping</code> during a call to the miniport stream object's <b>SetState</b>, <b>Service</b>, or <b>MappingAvailable</b> method (see <a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>).
 
-To avoid potential deadlocks, the adapter driver must avoid holding a spin lock during its call to <code>GetMapping</code>. See the ac97 sample audio driver in the Microsoft Windows Driver Kit (WDK) for a code example that uses a spin lock to serialize accesses to shared data structures and peripherals in a multiprocessor system. The sample code calls <a href="kernel.kereleasespinlock">KeReleaseSpinLock</a> before calling <code>GetMapping</code> and calls <a href="kernel.keacquirespinlock">KeAcquireSpinLock</a> after calling <code>GetMapping</code>. Between the calls to release and acquire the spin lock, the driver thread must not assume that it has exclusive access to the data or peripherals that are guarded by the spin lock. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> tool checks for active spin locks during calls to <code>GetMapping</code>; if it detects one, it generates a 0xC4 (deadlock detection) bug check.
+To avoid potential deadlocks, the adapter driver must avoid holding a spin lock during its call to <code>GetMapping</code>. See the ac97 sample audio driver in the Microsoft Windows Driver Kit (WDK) for a code example that uses a spin lock to serialize accesses to shared data structures and peripherals in a multiprocessor system. The sample code calls <a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a> before calling <code>GetMapping</code> and calls <a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a> after calling <code>GetMapping</code>. Between the calls to release and acquire the spin lock, the driver thread must not assume that it has exclusive access to the data or peripherals that are guarded by the spin lock. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> tool checks for active spin locks during calls to <code>GetMapping</code>; if it detects one, it generates a 0xC4 (deadlock detection) bug check.
 
 Although the size of a typical mapping is one memory page or less, a single mapping can exceed the page size if a portion of an audio buffer happens to occupy two or more contiguous pages in physical memory. Larger mappings can create problems for DMA hardware with design flaws that limit the block size. For example, if a DMA controller can handle a maximum block size of a single page, and <code>GetMapping</code> outputs a mapping that is larger than a page, the miniport driver must split the mapping into smaller blocks that the DMA hardware can handle. If the resulting number of blocks exceeds the number of available map registers in the DMA hardware, the driver cannot queue all of the blocks in a single scatter/gather DMA operation. When this occurs, the driver must keep track of the unqueued portion of the mapping and initiate DMA transfers of the remaining blocks at a later time when additional map registers become available.
 
@@ -169,22 +170,22 @@ IRQL
 <a href="..\portcls\nn-portcls-iportwavepcistream.md">IPortWavePciStream</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavepcistream_mappingavailable">IMiniportWavePciStream::MappingAvailable</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536728">IMiniportWavePciStream::MappingAvailable</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavepcistream_revokemappings">IMiniportWavePciStream::RevokeMappings</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536730">IMiniportWavePciStream::RevokeMappings</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavepcistream_getallocatorframing">IMiniportWavePciStream::GetAllocatorFraming</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536726">IMiniportWavePciStream::GetAllocatorFraming</a>
 </dt>
 <dt>
-<a href="audio.iportwavepcistream_releasemapping">IPortWavePciStream::ReleaseMapping</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536911">IPortWavePciStream::ReleaseMapping</a>
 </dt>
 <dt>
-<a href="kernel.kereleasespinlock">KeReleaseSpinLock</a>
+<a href="..\wdm\nf-wdm-kereleasespinlock.md">KeReleaseSpinLock</a>
 </dt>
 <dt>
-<a href="kernel.keacquirespinlock">KeAcquireSpinLock</a>
+<a href="..\wdm\nf-wdm-keacquirespinlock.md">KeAcquireSpinLock</a>
 </dt>
 </dl>
  

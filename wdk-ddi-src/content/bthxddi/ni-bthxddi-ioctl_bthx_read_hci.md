@@ -1,5 +1,5 @@
 ---
-UID: NI.bthxddi.IOCTL_BTHX_READ_HCI
+UID: NI:bthxddi.IOCTL_BTHX_READ_HCI
 title: IOCTL_BTHX_READ_HCI
 author: windows-driver-content
 description: IOCTL_BTHX_READ_HCI is used to read Bluetooth ACL Data and Events from the transport layer.
@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bthx_hci_read.htm
 old-project: bltooth
 ms.assetid: 02CC3534-D319-40C1-A73C-DEFC1F5709F7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BTHX_SCO_SUPPORT, PBTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.date: 12/21/2017
+ms.keywords: _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
 ---
 
 # IOCTL_BTHX_READ_HCI IOCTL
@@ -45,7 +46,7 @@ IOCTL_BTHX_READ_HCI is used to read Bluetooth ACL Data and Events from the trans
 ## -ioctlparameters
 
 ### -input-buffer
-Profile drivers should use KMDF and its <a href="kmdf.wdfrequestretrieveinputmemory">WdfRequestRetrieveInputMemory</a> method to retrieve input parameters.  For example, to get the output buffer:
+Profile drivers should use KMDF and its <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveinputmemory.md">WdfRequestRetrieveInputMemory</a> method to retrieve input parameters.  For example, to get the output buffer:
 
 <code>Status = WdfRequestRetrieveInputMemory(_Request, &amp;ReqInMemory);</code>
 
@@ -57,7 +58,7 @@ The buffer describes a UCHAR that represents the type of read. The length of the
 
 
 ### -output-buffer
-Profile drivers should use KMDF and its <a href="kmdf.wdfrequestretrieveoutputmemory">WdfRequestRetrieveOutputMemory</a> method to retrieve input parameters.  For example, to get the output buffer:
+Profile drivers should use KMDF and its <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputmemory.md">WdfRequestRetrieveOutputMemory</a> method to retrieve input parameters.  For example, to get the output buffer:
 
 <code>Status = WdfRequestRetrieveOutputMemory(_Request, &amp;ReqOutMemory);</code>
 
@@ -66,7 +67,7 @@ For more information, see the WDK Bluetooth samples.
 
 ### -output-buffer-length
 The 
-       <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="bltooth.bthx_hci_read_write_context">BTHX_HCI_READ_WRITE_CONTEXT</a> structure and additional data associated with the read. The  buffer must be large enough to hold the largest event or ACL Data packet, depending on its packet type.
+       <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="..\bthxddi\ns-bthxddi-_bthx_hci_read_write_context.md">BTHX_HCI_READ_WRITE_CONTEXT</a> structure and additional data associated with the read. The  buffer must be large enough to hold the largest event or ACL Data packet, depending on its packet type.
 
 For an event packet, it is FIELD_OFFSET(BTHX_HCI_READ_WRITE_CONTEXT, Data) +257 where 257 is the sum of a 2-byte event header and 255-byte event data.
 

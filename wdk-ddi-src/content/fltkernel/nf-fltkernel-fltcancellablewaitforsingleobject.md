@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltCancellableWaitForSingleObject
+UID: NF:fltkernel.FltCancellableWaitForSingleObject
 title: FltCancellableWaitForSingleObject function
 author: windows-driver-content
 description: The FltCancellableWaitForSingleObject routine executes a cancelable wait operation (a wait that can be terminated) on a dispatcher object.
@@ -7,7 +7,7 @@ old-location: ifsk\fltcancellablewaitforsingleobject.htm
 old-project: ifsk
 ms.assetid: bf872769-c084-44c9-97e8-58eb54f943b2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltCancellableWaitForSingleObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fltmgr.lib
 req.dll: Fltmgr.sys
 req.irql: See Remarks section.
+req.typenames: EXpsFontRestriction
 ---
 
 # FltCancellableWaitForSingleObject function
@@ -75,7 +76,7 @@ A time-out value of zero (that is, *<i>Timeout</i> == 0) allows you to test a se
 
 ### -param CallbackData [in, optional]
 
-A pointer to the <a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a> structure that represents the I/O operation that was issued by the user and that can be canceled by the user. The caller must ensure that the I/O operation will remain valid for the duration of this routine and that the I/O must not have a cancel routine set (for example, a <a href="ifsk.fltsetcancelcompletion">FltSetCancelCompletion</a> function must not have been called on the I/O operation). Note that the caller must hold the<i>CallbackData</i>; it cannot be passed to a lower-level driver. 
+A pointer to the <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a> structure that represents the I/O operation that was issued by the user and that can be canceled by the user. The caller must ensure that the I/O operation will remain valid for the duration of this routine and that the I/O must not have a cancel routine set (for example, a <a href="..\fltkernel\nf-fltkernel-fltsetcancelcompletion.md">FltSetCancelCompletion</a> function must not have been called on the I/O operation). Note that the caller must hold the<i>CallbackData</i>; it cannot be passed to a lower-level driver. 
 
 
 ## -returns
@@ -91,7 +92,7 @@ A pointer to the <a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a> structur
 </dl>The caller attempted to wait for a mutex that has been abandoned. 
 <dl>
 <dt><b>STATUS_CANCELLED </b></dt>
-</dl>The wait was interrupted by a pending cancel request on the I/O operation. Note that this value is returned only if <i>CallbackData</i> corresponds to an IRP based operation is passed to <b>FltCancellableWaitForSingleObject</b> and the I/O was canceled by a routine such as <a href="ifsk.fltcancelio">FltCancelIo</a>. 
+</dl>The wait was interrupted by a pending cancel request on the I/O operation. Note that this value is returned only if <i>CallbackData</i> corresponds to an IRP based operation is passed to <b>FltCancellableWaitForSingleObject</b> and the I/O was canceled by a routine such as <a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a>. 
 <dl>
 <dt><b>STATUS_THREAD_IS_TERMINATING </b></dt>
 </dl>The wait was interrupted because the application or user has terminated the thread. 
@@ -106,7 +107,7 @@ Note that the NT_SUCCESS macro returns <b>FALSE</b> ("failure") for the STATUS_C
 
 
 ## -remarks
-The <b>FltCancellableWaitForSingleObject</b> routine executes a cancelable wait operation on a dispatcher object. If the user or application terminates the thread, or if an I/O associated with the thread was canceled by a routine such as <a href="ifsk.fltcancelio">FltCancelIo</a>, the wait is canceled.
+The <b>FltCancellableWaitForSingleObject</b> routine executes a cancelable wait operation on a dispatcher object. If the user or application terminates the thread, or if an I/O associated with the thread was canceled by a routine such as <a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a>, the wait is canceled.
 
 The routine is designed to support the <a href="http://go.microsoft.com/fwlink/p/?linkid=51436">I/O Completion/Cancellation Guidelines</a>. The goal of these guidelines is to allow users to quickly terminate applications. This, in turn, requires that applications have the ability to quickly terminate threads that are executing I/O and any current I/O operations. This routine provides a way for user threads to block (that is, wait) in the kernel for I/O completion, dispatcher objects, or synchronization variables in a way that allows the wait to be readily canceled. This routine also permits the thread's wait to be terminated if the thread is terminated by a user or an application.
 
@@ -118,7 +119,7 @@ A special consideration applies when the <i>Object</i> parameter passed to <b>Fl
 
 A mutex can be recursively acquired only MINLONG times. If this limit is exceeded, the routine raises a STATUS_MUTANT_LIMIT_EXCEEDED exception.
 
-<b>FltCancellableWaitForSingleObject</b> must be called at IRQL PASSIVE_LEVEL if the <i>CallbackData</i> parameter represents a valid filter manager IRP. Otherwise, the routine can be called at IRQL less or equal to APC_LEVEL. Normal kernel APCs can be disabled by the caller, if needed, by calling the <a href="kernel.keentercriticalregion">KeEnterCriticalRegion</a> or <a href="ifsk.fsrtlenterfilesystem">FsRtlEnterFileSystem</a> routines. However, special kernel APCs must not be disabled. 
+<b>FltCancellableWaitForSingleObject</b> must be called at IRQL PASSIVE_LEVEL if the <i>CallbackData</i> parameter represents a valid filter manager IRP. Otherwise, the routine can be called at IRQL less or equal to APC_LEVEL. Normal kernel APCs can be disabled by the caller, if needed, by calling the <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545900">FsRtlEnterFileSystem</a> routines. However, special kernel APCs must not be disabled. 
 
 The <b>FltCancellableWaitForSingleObject</b> routine will assert on debug builds if the <i>CallbackData</i> represents a Filter Manager IRP operation, but the IRP in the <i>CallbackData</i> structure is <b>NULL</b>.
 
@@ -194,43 +195,43 @@ See Remarks section.
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltcancellablewaitformultipleobjects">FltCancellableWaitForMultipleObjects</a>
+<a href="..\fltkernel\nf-fltkernel-fltcancellablewaitformultipleobjects.md">FltCancellableWaitForMultipleObjects</a>
 </dt>
 <dt>
-<a href="ifsk.fltcancelio">FltCancelIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltcancelio.md">FltCancelIo</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetcancelcompletion">FltSetCancelCompletion</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetcancelcompletion.md">FltSetCancelCompletion</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlcancellablewaitforsingleobject">FsRtlCancellableWaitForSingleObject</a>
+<a href="..\ntifs\nf-ntifs-fsrtlcancellablewaitforsingleobject.md">FsRtlCancellableWaitForSingleObject</a>
 </dt>
 <dt>
-<a href="kernel.exinitializefastmutex">ExInitializeFastMutex</a>
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
 </dt>
 <dt>
-<a href="kernel.keinitializeevent">KeInitializeEvent</a>
+<a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
 </dt>
 <dt>
-<a href="kernel.keinitializemutex">KeInitializeMutex</a>
+<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
 </dt>
 <dt>
-<a href="kernel.keinitializesemaphore">KeInitializeSemaphore</a>
+<a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
 </dt>
 <dt>
-<a href="kernel.keinitializetimer">KeInitializeTimer</a>
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
 </dt>
 <dt><b>KeWaitForMultipleObjects</b></dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
 </dt>
 <dt>
-<a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCancellableWaitForSingleObject routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCancellableWaitForSingleObject routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

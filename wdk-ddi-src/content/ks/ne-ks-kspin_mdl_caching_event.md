@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSPIN_MDL_CACHING_EVENT
+UID: NE:ks.KSPIN_MDL_CACHING_EVENT
 title: KSPIN_MDL_CACHING_EVENT
 author: windows-driver-content
 description: This enumeration is used internally by the operating system.
@@ -7,7 +7,7 @@ old-location: stream\kspin_mdl_caching_event.htm
 old-project: stream
 ms.assetid: 74A7C2C8-F12B-4753-8E1F-C425B0B56788
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPIN_MDL_CACHING_EVENT, KSPIN_MDL_CACHING_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPIN_MDL_CACHING_EVENT
 ---
 
 # KSPIN_MDL_CACHING_EVENT enumeration

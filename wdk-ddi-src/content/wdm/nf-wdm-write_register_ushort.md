@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.WRITE_REGISTER_USHORT
+UID: NF:wdm.WRITE_REGISTER_USHORT
 title: WRITE_REGISTER_USHORT function
 author: windows-driver-content
 description: The WRITE_REGISTER_USHORT routine writes a USHORT value to the specified address.
@@ -7,7 +7,7 @@ old-location: kernel\write_register_ushort.htm
 old-project: kernel
 ms.assetid: ebcbec0c-c5ee-4af1-be3c-36c730f82f4e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: WRITE_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

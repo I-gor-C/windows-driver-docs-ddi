@@ -1,5 +1,5 @@
 ---
-UID: NE.dxva._DXVA_VideoProcessCaps
+UID: NE:dxva._DXVA_VideoProcessCaps
 title: _DXVA_VideoProcessCaps
 author: windows-driver-content
 description: The DXVA_VideoProcessCaps enumeration identifies operations that can be performed concurrently with the requested deinterlace.
@@ -7,7 +7,7 @@ old-location: display\dxva_videoprocesscaps.htm
 old-project: display
 ms.assetid: 225da110-cd59-4803-bde8-26e275b3ddbd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVA_VideoProcessCaps, DXVA_VideoProcessCaps
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVA_VideoProcessCaps
 ---
 
 # _DXVA_VideoProcessCaps enumeration
@@ -72,14 +73,14 @@ Indicates that the deinterlace hardware can only perform basic deinterlace opera
 Indicates that the deinterlace hardware can convert video from the YUV color space to the RGB color space. The RGB format will have at least 8 bits of precision for each color component. If possible, a buffer copy within the VMR can be avoided. All drivers should be able to support this operation for the bob deinterlace mode. 
 
 
-Not used with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.
+Not used with the <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a> function.
 
 
 ### -field DXVA_VideoProcess_StretchX
 
 Indicates that aspect ratio correction can be performed simultaneously as the video is being deinterlaced if the deinterlacer is able to stretch or shrink horizontally. The enumerator should be supported for the bob deinterlace mode.
 
-Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.
+Must use with the <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a> function.
 
 
 
@@ -87,7 +88,7 @@ Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlaceblt
 
 Indicates that aspect ratio adjustment is combined with a general picture resizing operation to scale the video image.
 
-Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.
+Must use with the <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a> function.
 
 
 
@@ -96,7 +97,7 @@ Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlaceblt
 Indicates that the VMR will not perform a buffer copy when an alpha value is changed. It is rare that applications alter the constant alpha value associated with the video stream, so this is a low priority feature. The enumerator should be supported for the bob deinterlace mode.
 
 
-Not used with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.
+Not used with the <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a> function.
 
 
 
@@ -113,7 +114,7 @@ Windows Server 2003 SP1 and later and Windows XP SP2 and later versions only.
 Indicates that the deinterlace hardware can combine video substreams with the video stream.
 
 
-Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.
+Must use with the <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a> function.
 
 
 ### -field DXVA_VideoProcess_SubStreamsExtended
@@ -123,7 +124,7 @@ Windows Server 2003 SP1 and later and Windows XP SP2 and later versions only.
 
 Indicates that necessary color adjustments can be made to the source video streams and substreams. These adjustments are indicated in the extended color data, as the video is deinterlaced, composited with the substreams, and written to the destination surface.
 
-Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.
+Must use with the <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a> function.
 
 
 ### -field DXVA_VideoProcess_YUV2RGBExtended
@@ -134,7 +135,7 @@ Windows Server 2003 SP1 and later and Windows XP SP2 and later versions only.
 Indicates a color-space-conversion operation can be performed as the deinterlaced and composited pixels are written to the destination surface using the extended color information that is specified for the source and destination surfaces.
 
 
-Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.
+Must use with the <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a> function.
 
 
 ### -field DXVA_VideoProcess_AlphaBlendExtended
@@ -142,9 +143,9 @@ Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlaceblt
 Windows Server 2003 SP1 and later and Windows XP SP2 and later versions only.
 
 
-Indicates that an alpha-blend operation can be performed with the destination surface when the deinterlaced and composited pixels are written to the destination surface. The driver must handle background color based on the alpha value of the <b>Alpha</b> member of the <a href="display.dxva_deinterlacebltex">DXVA_DeinterlaceBltEx</a> structure. When the alpha value is 1.0f, the background color is drawn opaque (without transparency). When the alpha value is 0.0f, the background should not be drawn (transparent).
+Indicates that an alpha-blend operation can be performed with the destination surface when the deinterlaced and composited pixels are written to the destination surface. The driver must handle background color based on the alpha value of the <b>Alpha</b> member of the <a href="..\dxva\ns-dxva-_dxva_deinterlacebltex.md">DXVA_DeinterlaceBltEx</a> structure. When the alpha value is 1.0f, the background color is drawn opaque (without transparency). When the alpha value is 0.0f, the background should not be drawn (transparent).
 
-Must use with the <a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a> function.
+Must use with the <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a> function.
 
 
 
@@ -172,15 +173,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a>
+<a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
 </dt>
 <dt>
-<a href="display.dxva_deinterlacecaps">DXVA_DeinterlaceCaps</a>
+<a href="..\dxva\ns-dxva-_dxva_deinterlacecaps.md">DXVA_DeinterlaceCaps</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_VideoProcessCaps enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_VideoProcessCaps enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

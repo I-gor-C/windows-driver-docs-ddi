@@ -1,5 +1,5 @@
 ---
-UID: NS.PEPFX._PEP_ACPI_RESOURCE_FLAGS
+UID: NS:pepfx._PEP_ACPI_RESOURCE_FLAGS
 title: _PEP_ACPI_RESOURCE_FLAGS
 author: windows-driver-content
 description: The PEP_ACPI_RESOURCE_FLAGS structure contains flags describing an ACPI resource.
@@ -7,8 +7,8 @@ old-location: kernel\pep_acpi_resource_flags.htm
 old-project: kernel
 ms.assetid: 1BB4933B-2707-4350-8D9C-E0E25A85F5CB
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS, PPEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS
+ms.date: 1/4/2018
+ms.keywords: _PEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PEP_ACPI_RESOURCE_FLAGS, *PPEP_ACPI_RESOURCE_FLAGS
 ---
 
 # _PEP_ACPI_RESOURCE_FLAGS structure

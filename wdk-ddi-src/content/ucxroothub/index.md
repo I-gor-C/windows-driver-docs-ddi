@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:ucxroothub
 ---
 
 # Ucxroothub.h header
 
 ## -description
 
-This header is used by UsbRef. For more information, see
-- [UsbRef](../_UsbRef/index.md)
+This header is used by Universal Serial Bus(USB). For more information, see
+- [Universal Serial Bus(USB)](../_usbref/index.md)
 
 Ucxroothub.h contain these programming interfaces:
 
@@ -17,16 +17,6 @@ Ucxroothub.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [UcxRootHubPortChanged function](nf-ucxroothub-ucxroothubportchanged.md) | Notifies UCX about a new port change event on the host controller. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_UCX_ROOTHUB_CONTROL_URB callback](nc-ucxroothub-evt_ucx_roothub_control_urb.md) | The client driver uses this callback type to implement handlers that UCX calls when it receives feature control requests on the USB hub. |
-| [EVT_UCX_ROOTHUB_GET_20PORT_INFO callback](nc-ucxroothub-evt_ucx_roothub_get_20port_info.md) | The client driver's implementation that UCX calls when it receives a request for information about USB 2.0 ports on the root hub. |
-| [EVT_UCX_ROOTHUB_GET_30PORT_INFO callback](nc-ucxroothub-evt_ucx_roothub_get_30port_info.md) | The client driver's implementation that UCX calls when it receives a request for information about USB 3.0 ports on the root hub. |
-| [EVT_UCX_ROOTHUB_GET_INFO callback](nc-ucxroothub-evt_ucx_roothub_get_info.md) | The client driver's implementation that UCX calls when it receives a request for information about the root hub. |
-| [EVT_UCX_ROOTHUB_INTERRUPT_TX callback](nc-ucxroothub-evt_ucx_roothub_interrupt_tx.md) | The client driver's implementation that UCX calls when it receives a request for information about changed ports. |
 
 ## Structures
 

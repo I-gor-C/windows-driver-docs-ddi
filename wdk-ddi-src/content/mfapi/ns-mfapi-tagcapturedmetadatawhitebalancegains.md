@@ -1,5 +1,5 @@
 ---
-UID: NS.MFAPI.TAGCAPTUREDMETADATAWHITEBALANCEGAINS
+UID: NS:mfapi.tagCapturedMetadataWhiteBalanceGains
 title: tagCapturedMetadataWhiteBalanceGains
 author: windows-driver-content
 description: This structure describes the blob format for the MF_CAPTURE_METADATA_WHITEBALANCE_GAINS attribute.
@@ -7,7 +7,7 @@ old-location: stream\capturedmetadatawhitebalancegains.htm
 old-project: stream
 ms.assetid: 1F844204-0709-4203-80C5-C90949F96159
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: tagCapturedMetadataWhiteBalanceGains, CapturedMetadataWhiteBalanceGains
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: CapturedMetadataWhiteBalanceGains
 ---
 
 # tagCapturedMetadataWhiteBalanceGains structure
@@ -73,7 +74,7 @@ The  <b>B</b> value of the blob.
 ## -remarks
 The <b>MF_CAPTURE_METADATA_WHITEBALANCE_GAINS</b> attribute contains the white balance gains applied to R, G, B by the sensor or ISP when the preview frame was captured. This is a unitless.
 
-The <b>CapturedMetadataWhiteBalanceGains</b> structure only describes the blob format for the <b>MF_CAPTURE_METADATA_WHITEBALANCE_GAINS</b> attribute.  The metadata item structure for white balance gains (<a href="stream.kscamera_metadata_itemheader">KSCAMERA_METADATA_ITEMHEADER</a> + white balance gains metadata payload) is up to driver and must be 8-byte aligned.
+The <b>CapturedMetadataWhiteBalanceGains</b> structure only describes the blob format for the <b>MF_CAPTURE_METADATA_WHITEBALANCE_GAINS</b> attribute.  The metadata item structure for white balance gains (<a href="..\ksmedia\ns-ksmedia-tagkscamera_metadata_itemheader.md">KSCAMERA_METADATA_ITEMHEADER</a> + white balance gains metadata payload) is up to driver and must be 8-byte aligned.
 
 
 ## -requirements

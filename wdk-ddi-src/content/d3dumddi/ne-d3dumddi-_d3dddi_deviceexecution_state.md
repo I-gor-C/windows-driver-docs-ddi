@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dumddi._D3DDDI_DEVICEEXECUTION_STATE
+UID: NE:d3dumddi._D3DDDI_DEVICEEXECUTION_STATE
 title: _D3DDDI_DEVICEEXECUTION_STATE
 author: windows-driver-content
 description: Indicates the state of the device.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_deviceexecution_state.htm
 old-project: display
 ms.assetid: E81A31B5-E06F-4848-9AC6-8A18E8E97E15
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDI_DEVICEEXECUTION_STATE, D3DDDI_DEVICEEXECUTION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_DEVICEEXECUTION_STATE
 ---
 
 # _D3DDDI_DEVICEEXECUTION_STATE enumeration

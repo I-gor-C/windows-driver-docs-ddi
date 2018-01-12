@@ -1,14 +1,14 @@
 ---
-UID: NC.netioddk.NPI_PROVIDER_ATTACH_CLIENT_FN
+UID: NC:netioddk.NPI_PROVIDER_ATTACH_CLIENT_FN
 title: NPI_PROVIDER_ATTACH_CLIENT_FN
 author: windows-driver-content
 description: A provider module's ProviderAttachClient callback function attaches the provider module to a client module.
 old-location: netvista\providerattachclient.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6c8e6cf1-0528-4da2-acc1-81ec9dbc23c3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS, PNET_DMA_PROVIDER_CHARACTERISTICS
+ms.date: 1/8/2018
+ms.keywords: _NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 # NPI_PROVIDER_ATTACH_CLIENT_FN callback
@@ -75,14 +76,14 @@ A handle used by the NMR to represent the binding between the client module and 
 
 A pointer to the provider module's registration context. The provider module passes this pointer
      to the NMR when it calls the 
-     <a href="netvista.nmrregisterprovider">NmrRegisterProvider</a> function to
+     <a href="..\netioddk\nf-netioddk-nmrregisterprovider.md">NmrRegisterProvider</a> function to
      register itself with the NMR.
 
 
 ### -param ClientRegistrationInstance [in]
 
 A pointer to an 
-     <a href="netvista.npi_registration_instance">
+     <a href="..\netioddk\ns-netioddk-_npi_registration_instance.md">
      NPI_REGISTRATION_INSTANCE</a> structure. This structure contains the client module's registration
      data.
 
@@ -148,7 +149,7 @@ A provider module's
 ## -remarks
 The NMR calls a provider module's 
     <i>ProviderAttachClient</i> callback function whenever a client module calls the 
-    <a href="netvista.nmrclientattachprovider">NmrClientAttachProvider</a> function
+    <a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a> function
     with a handle that represents a binding between the client module and the provider module.
 
 A provider module can examine the client module's registration data. This data is in the structure
@@ -208,13 +209,13 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.nmrregisterprovider">NmrRegisterProvider</a>
+<a href="..\netioddk\nf-netioddk-nmrregisterprovider.md">NmrRegisterProvider</a>
 </dt>
 <dt>
-<a href="netvista.nmrclientattachprovider">NmrClientAttachProvider</a>
+<a href="..\netioddk\nf-netioddk-nmrclientattachprovider.md">NmrClientAttachProvider</a>
 </dt>
 <dt>
-<a href="netvista.nmrproviderdetachclientcomplete">
+<a href="..\netioddk\nf-netioddk-nmrproviderdetachclientcomplete.md">
    NmrProviderDetachClientComplete</a>
 </dt>
 <dt>
@@ -225,15 +226,15 @@ PASSIVE_LEVEL
    ProviderCleanupBindingContext</a>
 </dt>
 <dt>
-<a href="netvista.npi_registration_instance">NPI_REGISTRATION_INSTANCE</a>
+<a href="..\netioddk\ns-netioddk-_npi_registration_instance.md">NPI_REGISTRATION_INSTANCE</a>
 </dt>
 <dt>
-<a href="netvista.npi_provider_characteristics">NPI_PROVIDER_CHARACTERISTICS</a>
+<a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">NPI_PROVIDER_CHARACTERISTICS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NPI_PROVIDER_ATTACH_CLIENT_FN callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_PROVIDER_ATTACH_CLIENT_FN callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

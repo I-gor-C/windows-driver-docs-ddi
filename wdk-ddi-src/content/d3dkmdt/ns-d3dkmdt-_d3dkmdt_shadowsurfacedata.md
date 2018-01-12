@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDT._D3DKMDT_SHADOWSURFACEDATA
+UID: NS:d3dkmdt._D3DKMDT_SHADOWSURFACEDATA
 title: _D3DKMDT_SHADOWSURFACEDATA
 author: windows-driver-content
 description: The D3DKMDT_SHADOWSURFACEDATA structure describes a lockable shadow surface, which matches the primary surface in format and resolution for a given display mode.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_shadowsurfacedata.htm
 old-project: display
 ms.assetid: 1b7f6a39-b0d3-4a0b-b030-b7fef3ab58d6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_SHADOWSURFACEDATA, D3DKMDT_SHADOWSURFACEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMDT_SHADOWSURFACEDATA
 ---
 
 # _D3DKMDT_SHADOWSURFACEDATA structure
@@ -68,7 +69,7 @@ typedef struct _D3DKMDT_SHADOWSURFACEDATA {
 
 ### -field Format
 
-[in] A <a href="display.d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface. The driver returns the format value.
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the surface. The driver returns the format value.
 
 
 ### -field Pitch
@@ -112,13 +113,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiformat">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="display.d3dkmdt_standardallocation_type">D3DKMDT_STANDARDALLOCATION_TYPE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_standardallocation_type.md">D3DKMDT_STANDARDALLOCATION_TYPE</a>
 </dt>
 <dt>
-<a href="display.dxgkarg_getstandardallocationdriverdata">DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_getstandardallocationdriverdata.md">DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata.md">DxgkDdiGetStandardAllocationDriverData</a>
@@ -134,5 +135,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_SHADOWSURFACEDATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_SHADOWSURFACEDATA structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

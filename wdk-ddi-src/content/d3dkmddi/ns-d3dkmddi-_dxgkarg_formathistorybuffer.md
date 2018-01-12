@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_FORMATHISTORYBUFFER
+UID: NS:d3dkmddi._DXGKARG_FORMATHISTORYBUFFER
 title: _DXGKARG_FORMATHISTORYBUFFER
 author: windows-driver-content
 description: Contains info for the display miniport driver to format a history buffer.
@@ -7,7 +7,7 @@ old-location: display\dxgkarg_formathistorybuffer.htm
 old-project: display
 ms.assetid: 40E00234-C22B-4F86-AC5D-197223298FD7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGKARG_FORMATHISTORYBUFFER, DXGKARG_FORMATHISTORYBUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_FORMATHISTORYBUFFER
 ---
 
 # _DXGKARG_FORMATHISTORYBUFFER structure
@@ -61,7 +62,7 @@ typedef struct _DXGKARG_FORMATHISTORYBUFFER {
 
 ### -field pHistoryBuffer
 
-A pointer to the unformatted <a href="display.dxgk_history_buffer">DXGK_HISTORY_BUFFER</a> history buffer that was populated by the GPU.
+A pointer to the unformatted <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_history_buffer.md">DXGK_HISTORY_BUFFER</a> history buffer that was populated by the GPU.
 
 
 ### -field HistoryBufferSize
@@ -90,9 +91,9 @@ Note that the number of time stamps that will be in the formatted output buffer 
 
 ### -field Precision
 
-A <a href="display.dxgkarg_historybufferprecision">DXGKARG_HISTORYBUFFERPRECISION</a> structure that the driver fills with info on the precision of the time stamps that will be logged to the Event Tracing for Windows (ETW) facility.
+A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a> structure that the driver fills with info on the precision of the time stamps that will be logged to the Event Tracing for Windows (ETW) facility.
 
-The value of the <a href="display.dxgkarg_historybufferprecision">DXGKARG_HISTORYBUFFERPRECISION</a>.<b>PrecisionBits</b> member cannot be zero.
+The value of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a>.<b>PrecisionBits</b> member cannot be zero.
 
 
 ### -field Offset
@@ -154,10 +155,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgk_history_buffer">DXGK_HISTORY_BUFFER</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_history_buffer.md">DXGK_HISTORY_BUFFER</a>
 </dt>
 <dt>
-<a href="display.dxgkarg_historybufferprecision">DXGKARG_HISTORYBUFFERPRECISION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_historybufferprecision.md">DXGKARG_HISTORYBUFFERPRECISION</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_formathistorybuffer.md">DxgkDdiFormatHistoryBuffer</a>
@@ -167,5 +168,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_FORMATHISTORYBUFFER structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_FORMATHISTORYBUFFER structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

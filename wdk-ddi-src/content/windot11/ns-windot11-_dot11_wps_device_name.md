@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11._DOT11_WPS_DEVICE_NAME
+UID: NS:windot11._DOT11_WPS_DEVICE_NAME
 title: _DOT11_WPS_DEVICE_NAME
 author: windows-driver-content
 description: The DOT11_WPS_DEVICE_NAME structure contains a friendly name of the P2P device.
 old-location: netvista\dot11_wps_device_name.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6C2B8E87-A88F-4244-81B2-0241E2DAE756
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11_WPS_DEVICE_NAME, PDOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME
+ms.date: 1/8/2018
+ms.keywords: _DOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 req.product: Windows 10 or later.
 ---
 

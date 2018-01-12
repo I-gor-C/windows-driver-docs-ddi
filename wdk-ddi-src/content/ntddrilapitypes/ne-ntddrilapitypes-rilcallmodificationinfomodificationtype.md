@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILCALLMODIFICATIONINFOMODIFICATIONTYPE
+UID: NE:ntddrilapitypes.RILCALLMODIFICATIONINFOMODIFICATIONTYPE
 title: RILCALLMODIFICATIONINFOMODIFICATIONTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmodificationinfomodificationtype.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 37b18047-7818-4e57-b25a-3c958106e215
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILCALLMODIFICATIONINFOMODIFICATIONTYPE, RILCALLMODIFICATIONINFOMODIFICATIONTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLMODIFICATIONINFOMODIFICATIONTYPE
 ---
 
 # RILCALLMODIFICATIONINFOMODIFICATIONTYPE enumeration

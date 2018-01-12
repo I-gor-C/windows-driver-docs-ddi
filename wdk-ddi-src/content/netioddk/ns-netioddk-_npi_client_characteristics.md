@@ -1,13 +1,13 @@
 ---
-UID: NS.NETIODDK._NPI_CLIENT_CHARACTERISTICS
+UID: NS:netioddk._NPI_CLIENT_CHARACTERISTICS
 title: _NPI_CLIENT_CHARACTERISTICS
 author: windows-driver-content
 description: The NPI_CLIENT_CHARACTERISTICS structure defines the characteristics of a client module.
 old-location: netvista\npi_client_characteristics.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 03d73a80-0860-4ec7-8eb1-5954f64b6026
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _NPI_CLIENT_CHARACTERISTICS, NPI_CLIENT_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: < DISPATCH_LEVEL
+req.typenames: NPI_CLIENT_CHARACTERISTICS
 ---
 
 # _NPI_CLIENT_CHARACTERISTICS structure
@@ -99,7 +100,7 @@ A pointer to the client module's
 ### -field ClientRegistrationInstance
 
 An 
-     <a href="netvista.npi_registration_instance">
+     <a href="..\netioddk\ns-netioddk-_npi_registration_instance.md">
      NPI_REGISTRATION_INSTANCE</a> structure that specifies the identity of the client module and the 
      <a href="netvista.network_programming_interface">NPI</a> for which it is
      registering.
@@ -107,7 +108,7 @@ An
 
 ## -remarks
 A client module passes a pointer to an NPI_CLIENT_CHARACTERISTICS structure to the 
-    <a href="netvista.nmrregisterclient">NmrRegisterClient</a> function when it
+    <a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a> function when it
     registers itself with the NMR.
 
 A client module must make sure that this structure remains valid and resident in memory as long as the
@@ -143,7 +144,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.nmrregisterclient">NmrRegisterClient</a>
+<a href="..\netioddk\nf-netioddk-nmrregisterclient.md">NmrRegisterClient</a>
 </dt>
 <dt>
 <a href="..\netioddk\nc-netioddk-npi_client_attach_provider_fn.md">ClientAttachProvider</a>
@@ -155,12 +156,12 @@ Header
 <a href="..\netioddk\nc-netioddk-npi_client_detach_provider_fn.md">ClientDetachProvider</a>
 </dt>
 <dt>
-<a href="netvista.npi_registration_instance">NPI_REGISTRATION_INSTANCE</a>
+<a href="..\netioddk\ns-netioddk-_npi_registration_instance.md">NPI_REGISTRATION_INSTANCE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NPI_CLIENT_CHARACTERISTICS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_CLIENT_CHARACTERISTICS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

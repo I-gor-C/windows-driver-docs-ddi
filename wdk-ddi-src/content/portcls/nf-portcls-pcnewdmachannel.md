@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcNewDmaChannel
+UID: NF:portcls.PcNewDmaChannel
 title: PcNewDmaChannel function
 author: windows-driver-content
 description: The PcNewDmaChannel function creates a new DMA-channel object. This function is obsolete; for more information, see the following comments.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcNewDmaChannel function
@@ -64,22 +65,22 @@ Output pointer for the DMA-channel object created by this function. This paramet
 
 ### -param OuterUnknown [in, optional]
 
-Pointer to the <a href="com.iunknown">IUnknown</a> interface of an object that needs to aggregate the object. Unless aggregation is required, set this parameter to <b>NULL</b>.
+Pointer to the <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface of an object that needs to aggregate the object. Unless aggregation is required, set this parameter to <b>NULL</b>.
 
 
 ### -param PoolType [in]
 
-Specifies the type of storage pool from which the object is to be allocated. This is a <a href="kernel.pool_type">POOL_TYPE</a> enumeration value. Specify a nonpaged pool type for this parameter.
+Specifies the type of storage pool from which the object is to be allocated. This is a <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a> enumeration value. Specify a nonpaged pool type for this parameter.
 
 
 ### -param DeviceDescription [in]
 
-Pointer to a description of the physical device for which the caller is requesting a DMA object. This parameter points to a structure of type <a href="kernel.device_description">DEVICE_DESCRIPTION</a>.
+Pointer to a description of the physical device for which the caller is requesting a DMA object. This parameter points to a structure of type <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>.
 
 
 ### -param DeviceObject [in]
 
-Pointer to the device object for the physical adapter device. This parameter points to a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Pointer to the device object for the physical adapter device. This parameter points to a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 
 ## -returns
@@ -90,15 +91,15 @@ Pointer to the device object for the physical adapter device. This parameter poi
 <b>PcNewDmaChannel</b> is obsolete. For all new audio drivers, use one of the following IPortWave <i>Xxx</i>::New<i>Xxx</i>DmaChannel methods in place of <b>PcNewDmaChannel</b>:
 
 
-<a href="audio.iportwavepci_newmasterdmachannel">IPortWavePci::NewMasterDmaChannel</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536916">IPortWavePci::NewMasterDmaChannel</a>
 
 
 
-<a href="audio.iportwavecyclic_newmasterdmachannel">IPortWaveCyclic::NewMasterDmaChannel</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536900">IPortWaveCyclic::NewMasterDmaChannel</a>
 
 
 
-<a href="audio.iportwavecyclic_newslavedmachannel">IPortWaveCyclic::NewSlaveDmaChannel</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536902">IPortWaveCyclic::NewSlaveDmaChannel</a>
 
 
 For the sake of backward compatibility, the PortCls system driver will continue to support <b>PcNewDmaChannel</b>, and existing drivers can continue to use this function. For more information, see <a href="https://msdn.microsoft.com/0497acff-1e7f-45b9-b5ec-f1783ea7e900">DirectSound Hardware Acceleration in 64-Bit Versions of Windows XP</a>.
@@ -171,13 +172,13 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
 </dt>
 <dt>
-<a href="kernel.pool_type">POOL_TYPE</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 </dt>
 <dt>
-<a href="kernel.device_description">DEVICE_DESCRIPTION</a>
+<a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 </dl>
  

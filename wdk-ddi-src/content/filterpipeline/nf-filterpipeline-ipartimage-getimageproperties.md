@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPartImage.GetImageProperties
+UID: NF:filterpipeline.IPartImage.GetImageProperties
 title: IPartImage::GetImageProperties method
 author: windows-driver-content
 description: The GetImageProperties method gets an image property that is based on the content type.
@@ -7,7 +7,7 @@ old-location: print\ipartimage_getimageproperties.htm
 old-project: print
 ms.assetid: 7ce333a3-86a2-47e5-b755-fd84469c8785
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPartImage, IPartImage::GetImageProperties, GetImageProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPartImage::GetImageProperties method

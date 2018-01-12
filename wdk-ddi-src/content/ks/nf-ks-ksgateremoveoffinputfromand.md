@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsGateRemoveOffInputFromAnd
+UID: NF:ks.KsGateRemoveOffInputFromAnd
 title: KsGateRemoveOffInputFromAnd function
 author: windows-driver-content
 description: The KsGateRemoveOffInputFromAnd function removes an existing input that is in the OFF state from an AND gate.
@@ -7,7 +7,7 @@ old-location: stream\ksgateremoveoffinputfromand.htm
 old-project: stream
 ms.assetid: 37f463bb-6b7a-4262-9e4b-3650025acb7c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGateRemoveOffInputFromAnd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: 
 ---
 
 # KsGateRemoveOffInputFromAnd function
@@ -55,7 +56,7 @@ void __inline KsGateRemoveOffInputFromAnd(
 
 ### -param AndGate [in]
 
-A pointer to a <a href="stream.ksgate">KSGATE</a> structure representing the AND gate from which to remove an OFF input.
+A pointer to a <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure representing the AND gate from which to remove an OFF input.
 
 
 ## -returns
@@ -67,7 +68,7 @@ Removing the last OFF input from the gate results in the gate opening and the tr
 
 <b>KsGateRemoveOffInputFromAnd</b> should only be used on gates that were specifically created as AND gates; AVStream does not verify that the given gate is an AND gate.
 
-<b>KsGateRemoveOffInputFromAnd</b> is an inline function call to <a href="stream.ksgateturninputon">KsGateTurnInputOn</a>. If conceptually removing an existing input to the gate rather than turning it off, a minidriver should call <b>KsGateRemoveOffInputFromAnd</b> instead of <b>KsGateTurnInputOn</b>.
+<b>KsGateRemoveOffInputFromAnd</b> is an inline function call to <a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>. If conceptually removing an existing input to the gate rather than turning it off, a minidriver should call <b>KsGateRemoveOffInputFromAnd</b> instead of <b>KsGateTurnInputOn</b>.
 
 
 ## -requirements
@@ -119,27 +120,27 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksgateaddoffinputtoand">KsGateAddOffInputToAnd</a>
+<a href="..\ks\nf-ks-ksgateaddoffinputtoand.md">KsGateAddOffInputToAnd</a>
 </dt>
 <dt>
-<a href="stream.ksgateaddoninputtoand">KsGateAddOnInputToAnd</a>
+<a href="..\ks\nf-ks-ksgateaddoninputtoand.md">KsGateAddOnInputToAnd</a>
 </dt>
 <dt>
-<a href="stream.ksgateremoveoninputfromand">KsGateRemoveOnInputFromAnd</a>
+<a href="..\ks\nf-ks-ksgateremoveoninputfromand.md">KsGateRemoveOnInputFromAnd</a>
 </dt>
 <dt>
-<a href="stream.ksgateturninputon">KsGateTurnInputOn</a>
+<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
 </dt>
 <dt>
-<a href="stream.ksgateturninputoff">KsGateTurnInputOff</a>
+<a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
 </dt>
 <dt>
-<a href="stream.ksgate">KSGATE</a>
+<a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGateRemoveOffInputFromAnd function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGateRemoveOffInputFromAnd function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

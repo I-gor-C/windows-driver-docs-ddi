@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:d3dukmdt
 ---
 
 # D3Dukmdt.h header
@@ -59,7 +59,6 @@ D3Dukmdt.h contain these programming interfaces:
 | [_D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS structure](ns-d3dukmdt-_d3dddi_synchronizationobject_flags.md) | Identifies attributes of a synchronization object. |
 | [_D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION structure](ns-d3dukmdt-_d3dddi_updategpuvirtualaddress_operation.md) | D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION describes a virtual address update operation. |
 | [_D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS structure](ns-d3dukmdt-_d3dddi_waitforsynchronizationobjectfromcpu_flags.md) | D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS describes the type of input synchronization objects to wait for. |
-| [_D3DKMDT_3X4_COLORSPACE_TRANSFORM structure](ns-d3dukmdt-_d3dkmdt_3x4_colorspace_transform.md) | Structure to describe the three programmable sub-stages of the 3 by 4 matrix colorspace transform. |
 | [_DXGKVGPU_ESCAPE_HEAD structure](ns-d3dukmdt-_dxgkvgpu_escape_head.md) | A structure describing the escape head. |
 | [_DXGKVGPU_ESCAPE_INITIALIZE structure](ns-d3dukmdt-_dxgkvgpu_escape_initialize.md) | Used to initialize an escape. |
 | [_DXGKVGPU_ESCAPE_POWERTRANSITIONCOMPLETE structure](ns-d3dukmdt-_dxgkvgpu_escape_powertransitioncomplete.md) | Indicates that a power transition has completed. |

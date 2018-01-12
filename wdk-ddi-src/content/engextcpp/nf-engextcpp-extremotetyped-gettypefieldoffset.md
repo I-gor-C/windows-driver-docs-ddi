@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteTyped.GetTypeFieldOffset
+UID: NF:engextcpp.ExtRemoteTyped.GetTypeFieldOffset
 title: ExtRemoteTyped::GetTypeFieldOffset method
 author: windows-driver-content
 description: The GetTypeFieldOffset static method returns the offset of a member within a structure.
 old-location: debugger\extremotetyped_gettypefieldoffset.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5f966bf0-2dc3-4422-bfec-09d1b136f9f0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped::GetTypeFieldOffset, GetTypeFieldOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteTyped::GetTypeFieldOffset method

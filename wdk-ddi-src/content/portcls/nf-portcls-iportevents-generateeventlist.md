@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortEvents.GenerateEventList
+UID: NF:portcls.IPortEvents.GenerateEventList
 title: IPortEvents::GenerateEventList method
 author: windows-driver-content
 description: The GenerateEventList method notifies clients through the port driver's list of event entries that a particular event has occurred.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level. (See Remarks section.)
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortEvents::GenerateEventList method
@@ -140,7 +141,7 @@ Any level. (See Remarks section.)
 <a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
 </dt>
 <dt>
-<a href="audio.iportevents_addeventtoeventlist">IPortEvents::AddEventToEventList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536886">IPortEvents::AddEventToEventList</a>
 </dt>
 <dt>
 <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>

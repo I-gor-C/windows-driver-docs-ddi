@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA._TAGKSTOPOLOGY_ENDPOINTID
+UID: NS:ksmedia._tagKSTOPOLOGY_ENDPOINTID
 title: _tagKSTOPOLOGY_ENDPOINTID
 author: windows-driver-content
 description: The KSTOPOLOGY_ENDPOINTID structure specifies the name and the pin ID of a topology endpoint.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: A84BE3D6-7D2A-4123-979B-F6E1CA8C8B23
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _tagKSTOPOLOGY_ENDPOINTID, KSTOPOLOGY_ENDPOINTID, *PKSTOPOLOGY_ENDPOINTID, PKSTOPOLOGY_ENDPOINTID
+ms.keywords: _tagKSTOPOLOGY_ENDPOINTID, KSTOPOLOGY_ENDPOINTID, *PKSTOPOLOGY_ENDPOINTID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSTOPOLOGY_ENDPOINTID, *PKSTOPOLOGY_ENDPOINTID
 ---
 
 # _tagKSTOPOLOGY_ENDPOINTID structure
@@ -115,7 +116,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.kstopology_endpointidpair">KSTOPOLOGY_ENDPOINTIDPAIR</a>
+<a href="..\ksmedia\ns-ksmedia-_tagkstopology_endpointidpair.md">KSTOPOLOGY_ENDPOINTIDPAIR</a>
 </dt>
 </dl>
  

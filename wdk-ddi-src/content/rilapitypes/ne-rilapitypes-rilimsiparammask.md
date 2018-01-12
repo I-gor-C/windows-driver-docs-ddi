@@ -1,19 +1,19 @@
 ---
-UID: NE.rilapitypes.RILIMSIPARAMMASK
+UID: NE:rilapitypes.RILIMSIPARAMMASK
 title: RILIMSIPARAMMASK
 author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilimsiparammask_2.htm
-old-project: NetVista
-ms.assetid: 69516b0b-d563-4a88-b083-a1a5a4e0ef16
+description: This enumeration describes the RILIMSIPARAMMASK.
+old-location: netvista\rilimsiparammask.htm
+old-project: netvista
+ms.assetid: 8fe1ecda-4b2f-4a6f-b02c-7e50630614eb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILIMSIPARAMMASK, RILIMSIPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
 req.header: rilapitypes.h
-req.include-header: 
+req.include-header: Rilapitypes.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILIMSIPARAMMASK
 req.product: Windows 10 or later.
 ---
 
@@ -39,22 +40,24 @@ req.product: Windows 10 or later.
 
 
 ## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
 
 ## -syntax
 
 ````
-typedef enum _RILIMSIPARAMMASK { 
-  RIL_PARAM_IMSI_MCC,
-  RIL_PARAM_IMSI_MNC,
-  RIL_PARAM_IMSI_ALL
-} RILIMSIPARAMMASK;
+enum RILIMSIPARAMMASK {
+  RIL_PARAM_IMSI_IMSI  = 0x00000001, 
+  RIL_PARAM_IMSI_MCC   = 0x00000002, 
+  RIL_PARAM_IMSI_MNC   = 0x00000004, 
+  RIL_PARAM_IMSI_ALL   = 0x00000007 
+
+};
 ````
 
 
 ## -enum-fields
+
+### -field RIL_PARAM_IMSI_IMSI
+
 
 ### -field RIL_PARAM_IMSI_MCC
 
@@ -77,8 +80,21 @@ Header
 </th>
 <td width="70%">
 <dl>
-<dt>Rilapitypes.h</dt>
+<dt>Rilapitypes.h (include Rilapitypes.h)</dt>
 </dl>
 </td>
 </tr>
 </table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+</dt>
+</dl>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILIMSIPARAMMASK enumeration%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

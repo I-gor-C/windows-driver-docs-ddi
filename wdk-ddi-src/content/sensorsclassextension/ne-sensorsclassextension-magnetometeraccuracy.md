@@ -1,5 +1,5 @@
 ---
-UID: NE.sensorsclassextension.MagnetometerAccuracy
+UID: NE:sensorsclassextension.MagnetometerAccuracy
 title: MagnetometerAccuracy
 author: windows-driver-content
 description: Specifies the accuracy of the magnetometer.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: MagnetometerAccuracy
 req.product: Windows 10 or later.
 ---
 

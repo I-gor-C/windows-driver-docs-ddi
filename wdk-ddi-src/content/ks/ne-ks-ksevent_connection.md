@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSEVENT_CONNECTION
+UID: NE:ks.KSEVENT_CONNECTION
 title: KSEVENT_CONNECTION
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksevent_connection.htm
 old-project: stream
 ms.assetid: E85946B3-90B6-41CA-9F69-47B33AE8D851
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSEVENT_CONNECTION, KSEVENT_CONNECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSEVENT_CONNECTION
 ---
 
 # KSEVENT_CONNECTION enumeration

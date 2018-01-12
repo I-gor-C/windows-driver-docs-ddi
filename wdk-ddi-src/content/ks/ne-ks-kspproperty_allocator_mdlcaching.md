@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSPPROPERTY_ALLOCATOR_MDLCACHING
+UID: NE:ks.KSPPROPERTY_ALLOCATOR_MDLCACHING
 title: KSPPROPERTY_ALLOCATOR_MDLCACHING
 author: windows-driver-content
 description: This enumeration is used internally by the operating system.
@@ -7,7 +7,7 @@ old-location: stream\kspproperty_allocator_mdlcaching.htm
 old-project: stream
 ms.assetid: 91BB915F-E964-41D9-8D2A-3D5EF6F5B398
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPPROPERTY_ALLOCATOR_MDLCACHING, KSPPROPERTY_ALLOCATOR_MDLCACHING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPPROPERTY_ALLOCATOR_MDLCACHING
 ---
 
 # KSPPROPERTY_ALLOCATOR_MDLCACHING enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NF.upssvc.UPSStop
+UID: NF:upssvc.UPSStop
 title: UPSStop function
 author: windows-driver-content
 description: The UPSStop function causes a UPS minidriver to stop monitoring its UPS unit.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UMDETW_ALLOCATION_USAGE
 req.product: Windows 10 or later.
 ---
 
@@ -66,13 +67,13 @@ None
 ## -remarks
 The <b>UPSStop</b> function must:
 
-Cancel all waiting calls to <a href="battery.upswaitforstatechange">UPSWaitForStateChange</a>.
+Cancel all waiting calls to <a href="..\upssvc\nf-upssvc-upswaitforstatechange.md">UPSWaitForStateChange</a>.
 
 Stop monitoring the UPS unit.
 
 Close and release the UPS unit's COM port.
 
-After <b>UPSStop</b> returns, the only function the UPS service can call is <a href="battery.upsinit">UPSInit</a>. 
+After <b>UPSStop</b> returns, the only function the UPS service can call is <a href="..\upssvc\nf-upssvc-upsinit.md">UPSInit</a>. 
 
 
 ## -requirements
@@ -104,7 +105,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="battery.upsinit">UPSInit</a>
+<a href="..\upssvc\nf-upssvc-upsinit.md">UPSInit</a>
 </dt>
 </dl>
  

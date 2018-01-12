@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_UPDATEALLOCATIONPROPERTYCB
+UID: NC:d3dumddi.PFND3DDDI_UPDATEALLOCATIONPROPERTYCB
 title: PFND3DDDI_UPDATEALLOCATIONPROPERTYCB
 author: windows-driver-content
 description: The pfnUpdateAllocationPropertyCb functions updates the property of an allocation without creating a new allocation.
@@ -7,7 +7,7 @@ old-location: display\pfnupdateallocationpropertycb.htm
 old-project: display
 ms.assetid: 49E4189A-2183-4033-BF17-ADFAC1CF1EF2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_UPDATEALLOCATIONPROPERTYCB callback

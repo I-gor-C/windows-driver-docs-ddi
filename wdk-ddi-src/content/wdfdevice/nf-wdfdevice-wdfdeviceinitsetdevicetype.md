@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdevice.WdfDeviceInitSetDeviceType
+UID: NF:wdfdevice.WdfDeviceInitSetDeviceType
 title: WdfDeviceInitSetDeviceType function
 author: windows-driver-content
 description: The WdfDeviceInitSetDeviceType method sets the device type for a specified device.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetdevicetype.htm
 old-project: wdf
 ms.assetid: 26c5c998-fb10-45c3-b28c-91a759fa941e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDeviceInitSetDeviceType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ VOID WdfDeviceInitSetDeviceType(
 
 ### -param DeviceInit [in]
 
-A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure.
 
 
 ### -param DeviceType [in]
@@ -72,11 +73,11 @@ None
 
 
 ## -remarks
-If a driver calls <b>WdfDeviceInitSetDeviceType</b>, it must do so before it calls <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>.
+If a driver calls <b>WdfDeviceInitSetDeviceType</b>, it must do so before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.
 
-For more information about calling <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>, see <a href="wdf.creating_a_framework_device_object">Creating a Framework Device Object</a>.
+For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>, see <a href="https://msdn.microsoft.com/25023c19-a153-4bd4-9fb6-3a1bf85860aa">Creating a Framework Device Object</a>.
 
-The device type that a driver specifies determines the default priority boost value that the framework uses when the driver completes an I/O request. For more information about priority boost values, see <a href="wdf.specifying_priority_boosts_when_completing_i_o_requests">Specifying Priority Boosts When Completing I/O Requests</a>.
+The device type that a driver specifies determines the default priority boost value that the framework uses when the driver completes an I/O request. For more information about priority boost values, see <a href="https://msdn.microsoft.com/9a501ca1-58c9-4458-b202-9581f8ce5e5f">Specifying Priority Boosts When Completing I/O Requests</a>.
 
 
       If you are writing a UMDF driver, you  must modify your driver's INF file or make registry changes to specify a device type. For more information about using the registry, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563759">Setting Device Object Registry Properties During Installation</a>.
@@ -125,7 +126,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -145,7 +146,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_childdeviceinitapi">ChildDeviceInitAPI</a>, <a href="devtest.kmdf_deviceinitapi">DeviceInitAPI</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_pdodeviceinitapi">PdoDeviceInitAPI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975068">ChildDeviceInitAPI</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544843">DeviceInitAPI</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550354">PdoDeviceInitAPI</a>
 </td>
 </tr>
 </table>

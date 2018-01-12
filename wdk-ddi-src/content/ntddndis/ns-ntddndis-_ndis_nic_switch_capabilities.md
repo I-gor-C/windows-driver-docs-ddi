@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_NIC_SWITCH_CAPABILITIES
+UID: NS:ntddndis._NDIS_NIC_SWITCH_CAPABILITIES
 title: _NDIS_NIC_SWITCH_CAPABILITIES
 author: windows-driver-content
 description: The NDIS_NIC_SWITCH_CAPABILITIES structure specifies the capabilities of a NIC switch on the network adapter.
 old-location: netvista\ndis_nic_switch_capabilities.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bc4b56bd-583f-4b41-b5a7-90958ce65f42
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_NIC_SWITCH_CAPABILITIES, *PNDIS_NIC_SWITCH_CAPABILITIES, NDIS_NIC_SWITCH_CAPABILITIES, PNDIS_NIC_SWITCH_CAPABILITIES
+ms.date: 1/8/2018
+ms.keywords: _NDIS_NIC_SWITCH_CAPABILITIES, NDIS_NIC_SWITCH_CAPABILITIES, *PNDIS_NIC_SWITCH_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_NIC_SWITCH_CAPABILITIES, *PNDIS_NIC_SWITCH_CAPABILITIES
 ---
 
 # _NDIS_NIC_SWITCH_CAPABILITIES structure
@@ -91,7 +92,7 @@ typedef struct _NDIS_NIC_SWITCH_CAPABILITIES {
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
 
@@ -197,7 +198,7 @@ Regardless of whether this flag is set, the NIC switch must support the ability 
 One or more queue pairs are configured on a nondefault VPort through an OID method request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>.
 </div>
 <div> </div>
-For more information, see <a href="netvista.symmetric_and_asymmetric_assignment_of_queue_pairs">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
+For more information, see <a href="https://msdn.microsoft.com/B4BA1567-D536-4E7D-924C-7476FB82DAEB">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
 
 
 
@@ -219,13 +220,13 @@ This flag specifies that the nondefault VPorts can be created in a non-reserved 
 <div> </div>
 If this flag is set, available nondefault VPorts are created and assigned to the PF and allocated VFs. However, this mechanism does not reserve nondefault VPorts for VF creation and assignment. As a result, situations may occur where a VF may not be assigned a VPort if the pool has been exhausted of available VPorts.
 
-<div class="alert"><b>Note</b>  If a VF cannot be assigned a VPort, packet traffic over the VF occurs over the SR-IOV synthetic data path. For more information about this data path, see <a href="netvista.sr-iov_data_paths">SR-IOV Data Paths</a>.</div>
+<div class="alert"><b>Note</b>  If a VF cannot be assigned a VPort, packet traffic over the VF occurs over the SR-IOV synthetic data path. For more information about this data path, see <a href="https://msdn.microsoft.com/04D85D46-DF0B-416F-95E8-F6E8B32E44A6">SR-IOV Data Paths</a>.</div>
 <div> </div>
 If this flag is not set, the creation and assignment of nondefault VPorts is reserved for VF assignment.  Additional nondefault VPorts  can be created and assigned to the PF. 
 
-For more information about VMQ, see <a href="netvista.virtual_machine_queue__vmq_">Virtual Machine Queue (VMQ)</a>.
+For more information about VMQ, see <a href="https://msdn.microsoft.com/c502c7d6-bdf1-4656-b5a5-339250910f08">Virtual Machine Queue (VMQ)</a>.
 
-For more information about VPorts, see <a href="netvista.managing_virtual_ports">Managing Virtual Ports</a>.
+For more information about VPorts, see <a href="https://msdn.microsoft.com/BF3DFE01-6583-4FBB-AFFA-2C017A3D9A05">Managing Virtual Ports</a>.
 
 
 </dd>
@@ -256,7 +257,7 @@ Reserved for NDIS.
 A ULONG value that specifies the maximum number of VFs that can be created on the NIC switch. 
 
 <div class="alert"><b>Note</b>  Depending on the available hardware resources on the network adapter, the miniport driver can set the <b>MaxNumVFs</b> member to a value that is less than its <b>*NumVFs</b>
-keyword. For more information about this keyword, see <a href="netvista.standardized_inf_keywords_for_sr-iov">Standardized INF Keywords for SR-IOV</a>.</div>
+keyword. For more information about this keyword, see <a href="https://msdn.microsoft.com/5CA33B4F-E43A-4EB6-BCAB-365CA1FD3EF2">Standardized INF Keywords for SR-IOV</a>.</div>
 <div> </div>
 
 ### -field MaxNumQueuePairs
@@ -285,7 +286,7 @@ Reserved for NDIS.
 
 A ULONG value that specifies the maximum number of queue pairs that can be assigned to a nondefault VPort. 
 
-This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="netvista.symmetric_and_asymmetric_assignment_of_queue_pairs">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
+This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="https://msdn.microsoft.com/B4BA1567-D536-4E7D-924C-7476FB82DAEB">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
 
 
 ### -field NdisReserved8
@@ -364,7 +365,7 @@ A ULONG value that specifies the number of indirection table entries for each no
 
 A ULONG value that specifies the maximum number of queue pairs that can be assigned to the default VPort. 
 
-This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="netvista.symmetric_and_asymmetric_assignment_of_queue_pairs">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
+This value is specified in powers of 2, and provides for asymmetric configuration and assignment of queue pairs to VPorts. For more information, see <a href="https://msdn.microsoft.com/B4BA1567-D536-4E7D-924C-7476FB82DAEB">Symmetric and Asymmetric Assignment of Queue Pairs</a>.
 
 
 ## -remarks
@@ -374,14 +375,14 @@ This value is specified in powers of 2, and provides for asymmetric configuratio
 
 The <b>HardwareNicSwitchCapabilities</b> and 
     <b>CurrentNicSwitchCapabilities</b> members of the 
-    <a href="netvista.ndis_miniport_adapter_hardware_assist_attributes">
+    <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes.md">
     NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a> structure.
 
 The 
     <b>NicSwitchCapabilities</b> member of the 
-    <a href="netvista.ndis_filter_attach_parameters">
+    <a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">
     NDIS_FILTER_ATTACH_PARAMETERS</a> and 
-    <a href="netvista.ndis_bind_parameters">NDIS_BIND_PARAMETERS</a> structures. 
+    <a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a> structures. 
 
 OID query requests of <a href="netvista.oid_nic_switch_current_capabilities">
     OID_NIC_SWITCH_CURRENT_CAPABILITIES</a> and 
@@ -418,16 +419,16 @@ Header
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="netvista.ndis_bind_parameters">NDIS_BIND_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_filter_attach_parameters">NDIS_FILTER_ATTACH_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_adapter_hardware_assist_attributes">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
+<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_hardware_assist_attributes.md">NDIS_MINIPORT_ADAPTER_HARDWARE_ASSIST_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>
@@ -443,5 +444,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_NIC_SWITCH_CAPABILITIES structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_CAPABILITIES structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

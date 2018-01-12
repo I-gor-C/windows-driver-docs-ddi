@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdrm.IOCTL_CDROM_SET_SPEED
+UID: NI:ntddcdrm.IOCTL_CDROM_SET_SPEED
 title: IOCTL_CDROM_SET_SPEED
 author: windows-driver-content
 description: Sets the spindle speed of the CD-ROM drive.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_cdrom_set_speed.htm
 old-project: storage
 ms.assetid: 14acc5f4-1346-4da4-b692-01396cff776e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, PWRITE_ROTATION, WRITE_ROTATION
+ms.date: 1/10/2018
+ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, WRITE_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWRITE_ROTATION, WRITE_ROTATION
 ---
 
 # IOCTL_CDROM_SET_SPEED IOCTL
@@ -45,7 +46,7 @@ Sets the spindle speed of the CD-ROM drive.
 ## -ioctlparameters
 
 ### -input-buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains either a <a href="storage.cdrom_set_speed">CDROM_SET_SPEED</a> structure or a <a href="storage.cdrom_set_streaming">CDROM_SET_STREAMING</a> structure. These two structures have the same first member: an <a href="storage.cdrom_speed_request">CDROM_SPEED_REQUEST</a> enumeration value. Caller uses this enumeration value to specify which of these two structures is in the input buffer.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains either a <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_set_speed.md">CDROM_SET_SPEED</a> structure or a <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_set_streaming.md">CDROM_SET_STREAMING</a> structure. These two structures have the same first member: an <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_speed_request.md">CDROM_SPEED_REQUEST</a> enumeration value. Caller uses this enumeration value to specify which of these two structures is in the input buffer.
 
 
 ### -input-buffer-length
@@ -74,7 +75,7 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 
 
 ## -remarks
-For an explanation of function and purpose of this request, see <a href="storage.cd_rom_set_speed">CD-ROM Set Speed</a>.
+For an explanation of function and purpose of this request, see <a href="https://msdn.microsoft.com/25a46b23-f823-4fc7-a370-cab1c9418a94">CD-ROM Set Speed</a>.
 
 
 ## -requirements

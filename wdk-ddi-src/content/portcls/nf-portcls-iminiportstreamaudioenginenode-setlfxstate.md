@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportStreamAudioEngineNode.SetLfxState
+UID: NF:portcls.IMiniportStreamAudioEngineNode.SetLfxState
 title: IMiniportStreamAudioEngineNode::SetLfxState method
 author: windows-driver-content
 description: Sets the state of the local effects (LFX) node that is in the path of the audio stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportStreamAudioEngineNode::SetLfxState method

@@ -1,5 +1,5 @@
 ---
-UID: NF.winddiui.DrvQueryColorProfile
+UID: NF:winddiui.DrvQueryColorProfile
 title: DrvQueryColorProfile function
 author: windows-driver-content
 description: The DrvQueryColorProfile function allows a printer interface DLL to specify an ICC profile to use for color management.
@@ -7,7 +7,7 @@ old-location: print\drvquerycolorprofile.htm
 old-project: print
 ms.assetid: f6eec5a1-7d73-415f-84d9-1ec3f512abaf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: DrvQueryColorProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
 req.product: Windows 10 or later.
 ---
 
@@ -66,7 +67,7 @@ Caller-supplied printer handle.
 
 ### -param pdevmode [in]
 
-Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.
 
 
 ### -param ulQueryMode 

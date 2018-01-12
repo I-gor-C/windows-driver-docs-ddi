@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DCAPS._D3DPRIMCAPS
+UID: NS:d3dcaps._D3DPrimCaps
 title: _D3DPrimCaps
 author: windows-driver-content
 description: Obsolete in DirectX 8.0 and later versions; see Remarks. The D3DPRIMCAPS structure defines the capabilities for each primitive type.
@@ -7,8 +7,8 @@ old-location: display\d3dprimcaps.htm
 old-project: display
 ms.assetid: fa725534-ccc3-4e71-a83f-b25fd4c72c14
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DPrimCaps, LPD3DPRIMCAPS, *LPD3DPRIMCAPS, D3DPRIMCAPS
+ms.date: 12/29/2017
+ms.keywords: _D3DPrimCaps, D3DPRIMCAPS, *LPD3DPRIMCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DPRIMCAPS, *LPD3DPRIMCAPS
 ---
 
 # _D3DPrimCaps structure
@@ -499,7 +500,7 @@ Conditionally supports the use of two-dimensional (2D) textures (that is, not vo
 <li>Mipmapping is not in use (use magnification filter only). </li>
 <li>Texture was not stored in DXT1-5 (compressed texture formats). </li>
 </ul>
-A driver for a device that exposes this capability cannot perform dependent texture reads using such a texture. That is, such a texture cannot be addressed or sampled using texture coordinates that are computed with <a href="display.direct3d_driver_shader_codes">shader code</a>. In other words, such a texture cannot be set at a stage that will be read based on a shader computation such as the bem, beml, or texm3x3 instructions in versions 1.0-1.3 of pixel shaders. For example, these textures can be used to store bump-map data that the driver supplies to texture reads, but not the environment maps that are used in texbem, texbeml, or texm3x3spec.
+A driver for a device that exposes this capability cannot perform dependent texture reads using such a texture. That is, such a texture cannot be addressed or sampled using texture coordinates that are computed with <a href="https://msdn.microsoft.com/ddf3c7b2-93fe-412e-b52b-632402327cb8">shader code</a>. In other words, such a texture cannot be set at a stage that will be read based on a shader computation such as the bem, beml, or texm3x3 instructions in versions 1.0-1.3 of pixel shaders. For example, these textures can be used to store bump-map data that the driver supplies to texture reads, but not the environment maps that are used in texbem, texbeml, or texm3x3spec.
 
 If this flag is set, the D3DPTEXTURECAPS_POW2 flag must also be set.
 
@@ -705,7 +706,7 @@ Specify the maximum width and height of the supported stipple (up to 32-by-32).
 ## -remarks
 This structure has been replaced by D3DCAPS8 (see the DirectX 8.0 SDK documentation) for DirectX 8.0 and later runtimes, but is required for DirectX 7.0 and earlier runtime compatibility. See <a href="https://msdn.microsoft.com/a03a7cbc-95be-4251-8e3a-bef4a093f03d">Reporting DirectX 8.0 Style Direct3D Capabilities</a> for details.
 
-This structure is used when a device is created and when the capabilities of a device are queried. It defines several members in the <a href="display.d3ddevicedesc_v1">D3DDEVICEDESC_V1</a> structure.
+This structure is used when a device is created and when the capabilities of a device are queried. It defines several members in the <a href="..\d3dhal\ns-d3dhal-_d3ddevicedesc_v1.md">D3DDEVICEDESC_V1</a> structure.
 
 
 ## -requirements
@@ -726,12 +727,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3ddevicedesc_v1">D3DDEVICEDESC_V1</a>
+<a href="..\d3dhal\ns-d3dhal-_d3ddevicedesc_v1.md">D3DDEVICEDESC_V1</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DPRIMCAPS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DPRIMCAPS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.iddcx.IDDCX_GAMMARAMP_TYPE
+UID: NE:iddcx.IDDCX_GAMMARAMP_TYPE
 title: IDDCX_GAMMARAMP_TYPE
 author: windows-driver-content
 description: An enumeration indicating the type of gamma ramp being set.
@@ -7,7 +7,7 @@ old-location: display\iddcx_gammaramp_type.htm
 old-project: display
 ms.assetid: 40fa5169-e295-429c-a63d-3e4ab9c14672
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_GAMMARAMP_TYPE,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: _requires_same_
+req.lib: Mscms.lib
+req.dll: Mscms.dll
+req.irql: 
+req.typenames: 
 ---
 
 # IDDCX_GAMMARAMP_TYPE enumeration

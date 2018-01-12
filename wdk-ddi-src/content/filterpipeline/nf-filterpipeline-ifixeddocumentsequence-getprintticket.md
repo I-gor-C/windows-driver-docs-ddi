@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IFixedDocumentSequence.GetPrintTicket
+UID: NF:filterpipeline.IFixedDocumentSequence.GetPrintTicket
 title: IFixedDocumentSequence::GetPrintTicket method
 author: windows-driver-content
 description: The GetPrintTicket method gets the print ticket object for the fixed document sequence.
@@ -7,7 +7,7 @@ old-location: print\ifixeddocumentsequence_getprintticket.htm
 old-project: print
 ms.assetid: dba0ac90-a895-4daf-ba7c-b7a8a32fed19
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IFixedDocumentSequence, IFixedDocumentSequence::GetPrintTicket, GetPrintTicket
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IFixedDocumentSequence::GetPrintTicket method

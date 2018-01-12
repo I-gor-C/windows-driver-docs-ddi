@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.SeAssignSecurityEx
+UID: NF:wdm.SeAssignSecurityEx
 title: SeAssignSecurityEx function
 author: windows-driver-content
 description: The SeAssignSecurityEx routine builds a self-relative security descriptor for a new object given the following optional parameters: a security descriptor of the object's parent directory, an explicit security descriptor for the object, and the object type.
@@ -7,7 +7,7 @@ old-location: kernel\seassignsecurityex.htm
 old-project: kernel
 ms.assetid: 94f6d3a3-7f0d-4f57-8240-3c4a10cf4488
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: SeAssignSecurityEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -65,17 +66,17 @@ NTSTATUS SeAssignSecurityEx(
 
 ### -param ParentDescriptor [in, optional]
 
-Pointer to the <a href="kernel.security_descriptor">SECURITY_DESCRIPTOR</a> of the parent object that contains the new object being created. <i>ParentDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> system access control list (<a href="wdkgloss.s#wdkgloss.sacl#wdkgloss.sacl">SACL</a>) or a <b>NULL</b> discretionary access control list (<a href="wdkgloss.d#wdkgloss.dacl#wdkgloss.dacl">DACL</a>).
+Pointer to the <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> of the parent object that contains the new object being created. <i>ParentDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> system access control list (<a href="wdkgloss.s#wdkgloss.sacl#wdkgloss.sacl">SACL</a>) or a <b>NULL</b> discretionary access control list (<a href="wdkgloss.d#wdkgloss.dacl#wdkgloss.dacl">DACL</a>).
 
 
 ### -param ExplicitDescriptor [in, optional]
 
-Pointer to an explicit <a href="kernel.security_descriptor">SECURITY_DESCRIPTOR</a> that is applied to the new object. <i>ExplicitDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> SACL or a <b>NULL</b> DACL.
+Pointer to an explicit <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> that is applied to the new object. <i>ExplicitDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> SACL or a <b>NULL</b> DACL.
 
 
 ### -param NewDescriptor [out]
 
-Receives a pointer to the returned <a href="kernel.security_descriptor">SECURITY_DESCRIPTOR</a>.  <b>SeAssignSecurityEx</b> allocates the buffer from the paged memory pool.
+Receives a pointer to the returned <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>.  <b>SeAssignSecurityEx</b> allocates the buffer from the paged memory pool.
 
 
 ### -param ObjectType [in, optional]
@@ -363,7 +364,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -371,21 +372,21 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.seassignsecurity">SeAssignSecurity</a>
+<a href="..\wdm\nf-wdm-seassignsecurity.md">SeAssignSecurity</a>
 </dt>
 <dt>
-<a href="kernel.sedeassignsecurity">SeDeassignSecurity</a>
+<a href="..\wdm\nf-wdm-sedeassignsecurity.md">SeDeassignSecurity</a>
 </dt>
 <dt>
-<a href="kernel.generic_mapping">GENERIC_MAPPING</a>
+<a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
 </dt>
 <dt>
-<a href="kernel.security_descriptor">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SeAssignSecurityEx routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SeAssignSecurityEx routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

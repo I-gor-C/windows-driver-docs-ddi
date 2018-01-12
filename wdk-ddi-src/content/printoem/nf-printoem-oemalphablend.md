@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMAlphaBlend
+UID: NF:printoem.OEMAlphaBlend
 title: OEMAlphaBlend function
 author: windows-driver-content
 description: OEMAlphaBlend function
@@ -7,7 +7,7 @@ old-location: print\oemalphablend.htm
 old-project: print
 ms.assetid: c5c7cabe-7ac9-42f7-92e3-2c1c319ce80e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMAlphaBlend
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

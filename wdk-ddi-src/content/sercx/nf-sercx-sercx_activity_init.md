@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SERCX_ACTIVITY_INIT
+UID: NF:sercx.SERCX_ACTIVITY_INIT
 title: SERCX_ACTIVITY_INIT function
 author: windows-driver-content
 description: The SERCX_ACTIVITY_INIT function initializes a SERCX_ACTIVITY structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>SERCX_ACTIVITY_INIT</b> function initializes a <a href="serports.sercx_activity">SERCX_ACTIVITY</a> structure.
+The <b>SERCX_ACTIVITY_INIT</b> function initializes a <a href="..\sercx\ns-sercx-_sercx_activity.md">SERCX_ACTIVITY</a> structure.
 
 
 
@@ -115,7 +116,7 @@ Any IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercx_activity">SERCX_ACTIVITY</a>
+<a href="..\sercx\ns-sercx-_sercx_activity.md">SERCX_ACTIVITY</a>
 </dt>
 </dl>
  

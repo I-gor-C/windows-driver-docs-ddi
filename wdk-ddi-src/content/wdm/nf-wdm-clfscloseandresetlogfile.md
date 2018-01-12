@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ClfsCloseAndResetLogFile
+UID: NF:wdm.ClfsCloseAndResetLogFile
 title: ClfsCloseAndResetLogFile function
 author: windows-driver-content
 description: The ClfsCloseAndResetLogFile routine releases all references to a specified log file object and marks its associated stream for reset.
@@ -7,7 +7,7 @@ old-location: kernel\clfscloseandresetlogfile.htm
 old-project: kernel
 ms.assetid: 5b52a012-1e3e-4d1f-8780-a7015b2f3c5f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ClfsCloseAndResetLogFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Clfs.lib
 req.dll: Clfs.sys
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ NTSTATUS ClfsCloseAndResetLogFile(
 
 ### -param plfoLog [in]
 
-A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure for which references will be released. The caller previously obtained this pointer by calling <a href="kernel.clfscreatelogfile">ClfsCreateLogFile</a>.
+A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a> structure for which references will be released. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.
 
 
 ## -returns
@@ -66,7 +67,7 @@ A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure fo
 ## -remarks
 <b>ClfsCloseAndResetLogFile</b> releases all references, acquired by CLFS, to the specified log file object. Typically, the client will not have acquired any additional references to the log file object. However, if the client has obtained additional refereces, it is the client's responsibility to release them.
 
-<b>ClfsCloseAndResetLogFile</b> causes the specified log file object's reference count to drop to zero, at which time the log file object is closed (that is, its memory is deallocated). The stream represented by the log file object might not be reset, however, because there could be other log file objects that represent the same stream. The stream is reset after all log file objects that represent the stream are closed (for example by calls to <a href="kernel.clfscloselogfileobject">ClfsCloseLogFileObject</a>).
+<b>ClfsCloseAndResetLogFile</b> causes the specified log file object's reference count to drop to zero, at which time the log file object is closed (that is, its memory is deallocated). The stream represented by the log file object might not be reset, however, because there could be other log file objects that represent the same stream. The stream is reset after all log file objects that represent the stream are closed (for example by calls to <a href="..\wdm\nf-wdm-clfscloselogfileobject.md">ClfsCloseLogFileObject</a>).
 
 A reset stream is like a newly created stream that has never had any records written to it.
 
@@ -148,18 +149,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfscloselogfileobject">ClfsCloseLogFileObject</a>
+<a href="..\wdm\nf-wdm-clfscloselogfileobject.md">ClfsCloseLogFileObject</a>
 </dt>
 <dt>
-<a href="kernel.clfsdeletelogbypointer">ClfsDeleteLogByPointer</a>
+<a href="..\wdm\nf-wdm-clfsdeletelogbypointer.md">ClfsDeleteLogByPointer</a>
 </dt>
 <dt>
-<a href="kernel.clfsdeletelogfile">ClfsDeleteLogFile</a>
+<a href="..\wdm\nf-wdm-clfsdeletelogfile.md">ClfsDeleteLogFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsCloseAndResetLogFile routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsCloseAndResetLogFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

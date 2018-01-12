@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:smcnt
 ---
 
 # Smcnt.h header

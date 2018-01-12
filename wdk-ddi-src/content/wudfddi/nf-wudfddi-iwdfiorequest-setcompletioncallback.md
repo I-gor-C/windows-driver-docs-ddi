@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFIoRequest.SetCompletionCallback
+UID: NF:wudfddi.IWDFIoRequest.SetCompletionCallback
 title: IWDFIoRequest::SetCompletionCallback method
 author: windows-driver-content
 description: The SetCompletionCallback method registers the interface for the OnCompletion method that the framework should call when an I/O request completes.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest_setcompletioncallback.htm
 old-project: wdf
 ms.assetid: 316b8b75-91ca-4866-b66d-3f66f20126df
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFIoRequest, IWDFIoRequest::SetCompletionCallback, SetCompletionCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
-The <b>SetCompletionCallback</b> method registers the interface for the <a href="wdf.irequestcallbackrequestcompletion_oncompletion">OnCompletion</a> method that the framework should call when an I/O request completes.
+The <b>SetCompletionCallback</b> method registers the interface for the <a href="https://msdn.microsoft.com/1a4787da-2813-4a7a-820a-5c078175aba5">OnCompletion</a> method that the framework should call when an I/O request completes.
 
 
 
@@ -59,12 +60,12 @@ void SetCompletionCallback(
 
 ### -param pCompletionCallback [in]
 
-A pointer to the <a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcompletion.md">IRequestCallbackRequestCompletion</a> interface whose <a href="wdf.irequestcallbackrequestcompletion_oncompletion">OnCompletion</a> method the framework calls after the I/O request completes. Beginning with version 1.9 of UMDF, the driver can specify <b>NULL</b> to deregister a previously registered <b>OnCompletion</b> method.
+A pointer to the <a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcompletion.md">IRequestCallbackRequestCompletion</a> interface whose <a href="https://msdn.microsoft.com/1a4787da-2813-4a7a-820a-5c078175aba5">OnCompletion</a> method the framework calls after the I/O request completes. Beginning with version 1.9 of UMDF, the driver can specify <b>NULL</b> to deregister a previously registered <b>OnCompletion</b> method.
 
 
 ### -param pContext [in, optional]
 
-A pointer to a buffer that contains context information that is related to the request completion. The framework passes this context information in a call to the <a href="wdf.irequestcallbackrequestcompletion_oncompletion">IRequestCallbackRequestCompletion::OnCompletion</a> method. This parameter is optional and can be <b>NULL</b>.
+A pointer to a buffer that contains context information that is related to the request completion. The framework passes this context information in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a> method. This parameter is optional and can be <b>NULL</b>.
 
 
 ## -returns
@@ -74,7 +75,7 @@ None
 ## -remarks
 If a driver that forwards an I/O request requires notification when the lower-level driver completes the request, the driver can provide a completion routine and call <b>SetCompletionCallback</b> to register the <a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcompletion.md">IRequestCallbackRequestCompletion</a> interface for the completion routine. The framework calls the completion routine after the lower-level driver completes the I/O request.
 
-For a code example of how to use the <b>SetCompletionCallback</b> method, see <a href="wdf.iwdfiorequest_send">IWDFIoRequest::Send</a>.
+For a code example of how to use the <b>SetCompletionCallback</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>.
 
 
 ## -requirements
@@ -143,15 +144,15 @@ DLL
 <a href="..\wudfddi\nn-wudfddi-irequestcallbackrequestcompletion.md">IRequestCallbackRequestCompletion</a>
 </dt>
 <dt>
-<a href="wdf.irequestcallbackrequestcompletion_oncompletion">IRequestCallbackRequestCompletion::OnCompletion</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556905">IRequestCallbackRequestCompletion::OnCompletion</a>
 </dt>
 <dt>
-<a href="wdf.iwdfiorequest_send">IWDFIoRequest::Send</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::SetCompletionCallback method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::SetCompletionCallback method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

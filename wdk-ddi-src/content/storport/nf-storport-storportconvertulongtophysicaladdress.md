@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortConvertUlongToPhysicalAddress
+UID: NF:storport.StorPortConvertUlongToPhysicalAddress
 title: StorPortConvertUlongToPhysicalAddress function
 author: windows-driver-content
 description: The StorPortConvertUlongToPhysicalAddress routine converts an unsigned long address into a physical address.
@@ -7,7 +7,7 @@ old-location: storage\storportconvertulongtophysicaladdress.htm
 old-project: storage
 ms.assetid: 772ca60b-a957-47de-b95d-486497b295ce
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortConvertUlongToPhysicalAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Storport.lib
 req.dll: 
 req.irql: 
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 

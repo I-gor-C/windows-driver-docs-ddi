@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdfcore
 ---
 
 # Wdfcore.h header

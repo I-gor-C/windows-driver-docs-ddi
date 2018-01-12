@@ -1,14 +1,14 @@
 ---
-UID: NC.wlanihv.DOT11EXTIHV_PERFORM_POST_ASSOCIATE
+UID: NC:wlanihv.DOT11EXTIHV_PERFORM_POST_ASSOCIATE
 title: DOT11EXTIHV_PERFORM_POST_ASSOCIATE
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11extihvperformpostassociate.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a6e9af7d-4c33-4dea-92fe-e2cd8eed6697
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BINARY_CONTAINER, *PBINARY_CONTAINER, PBINARY_CONTAINER, BINARY_CONTAINER
+ms.date: 1/8/2018
+ms.keywords: _DRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W, DRIVER_INFO_8
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -77,7 +78,7 @@ The handle of the security session. The IHV Extensions DLL must use this handle 
 ### -param pPortState [in]
 
 A pointer to a 
-     <a href="netvista.dot11_port_state">DOT11_PORT_STATE</a> structure, which
+     <a href="..\wlclient\ns-wlclient-_dot11_port_state.md">DOT11_PORT_STATE</a> structure, which
      specifies the current port state of the security session.
 
 
@@ -99,7 +100,7 @@ A pointer to a
      
 
 For more information about the association operation, see 
-     <a href="netvista.association_operations">Association Operations</a>.
+     <a href="https://msdn.microsoft.com/04e97ea1-fe4b-471e-a7be-b5aa3ee88edc">Association Operations</a>.
 
 
 ## -returns
@@ -118,7 +119,7 @@ The operating system calls the
     association operation with an access point (AP) in an infrastructure basic service set (BSS) network.
 
 For more information about the association operation, see 
-    <a href="netvista.association_operations">Association Operations</a>.
+    <a href="https://msdn.microsoft.com/04e97ea1-fe4b-471e-a7be-b5aa3ee88edc">Association Operations</a>.
 
 The post-association operation must be completed asynchronously from the call to 
     <i>Dot11ExtIhvPerformPostAssociate</i>. After the post-association operation completes, the DLL must call
@@ -131,7 +132,7 @@ If the IHV Extensions DLL can initiate the post-association operation, the
     asynchronously.
 
 For more information about the post-association operation, see 
-    <a href="netvista.post_association_operations">Post-Association Operations</a>.
+    <a href="https://msdn.microsoft.com/e4c7ea7a-53ad-41b2-bf3f-03c770e58043">Post-Association Operations</a>.
 
 
 ## -requirements
@@ -174,7 +175,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_port_state">DOT11_PORT_STATE</a>
+<a href="..\wlclient\ns-wlclient-_dot11_port_state.md">DOT11_PORT_STATE</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_dot11_association_completion">
@@ -195,5 +196,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11EXTIHV_PERFORM_POST_ASSOCIATE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_PERFORM_POST_ASSOCIATE callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

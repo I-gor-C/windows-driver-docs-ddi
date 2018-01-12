@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILOPERATORINFOPARAMMASK
+UID: NE:rilapitypes.RILOPERATORINFOPARAMMASK
 title: RILOPERATORINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riloperatorinfoparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1366f37b-4785-4e36-9fc8-bfaef6f9e227
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILOPERATORINFOPARAMMASK, RILOPERATORINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILOPERATORINFOPARAMMASK
 req.product: Windows 10 or later.
 ---
 

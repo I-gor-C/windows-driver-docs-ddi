@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsReleaseControl
+UID: NF:ks.KsReleaseControl
 title: KsReleaseControl function
 author: windows-driver-content
 description: The KsReleaseControl function releases the control mutex for Object.
@@ -7,7 +7,7 @@ old-location: stream\ksreleasecontrol.htm
 old-project: stream
 ms.assetid: f585f1ad-7ed0-49b1-ab35-a6b879118b38
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsReleaseControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsReleaseControl function
@@ -65,7 +66,7 @@ None
 ## -remarks
 <i>Object</i> should be either a filter or a pin cast to PVOID.
 
-Minidrivers typically do not call <b>KsReleaseControl</b> directly, but instead call <a href="stream.ksfilterreleasecontrol">KsFilterReleaseControl</a> or <a href="stream.kspinreleasecontrol">KsPinReleaseControl</a>. These versions automatically provide the necessary typecasting to PVOID.
+Minidrivers typically do not call <b>KsReleaseControl</b> directly, but instead call <a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a> or <a href="..\ks\nf-ks-kspinreleasecontrol.md">KsPinReleaseControl</a>. These versions automatically provide the necessary typecasting to PVOID.
 
 For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>. 
 
@@ -130,24 +131,24 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksacquirecontrol">KsAcquireControl</a>
+<a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
 </dt>
 <dt>
-<a href="stream.ksfilteracquirecontrol">KsFilterAcquireControl</a>
+<a href="..\ks\nf-ks-ksfilteracquirecontrol.md">KsFilterAcquireControl</a>
 </dt>
 <dt>
-<a href="stream.kspinacquirecontrol">KsPinAcquireControl</a>
+<a href="..\ks\nf-ks-kspinacquirecontrol.md">KsPinAcquireControl</a>
 </dt>
 <dt>
-<a href="stream.ksfilterreleasecontrol">KsFilterReleaseControl</a>
+<a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a>
 </dt>
 <dt>
-<a href="stream.kspinreleasecontrol">KsPinReleaseControl</a>
+<a href="..\ks\nf-ks-kspinreleasecontrol.md">KsPinReleaseControl</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsReleaseControl function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsReleaseControl function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

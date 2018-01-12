@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAAPI.HBA_FCPBINDINGENTRY
+UID: NS:hbaapi.HBA_FCPBindingEntry
 title: HBA_FCPBindingEntry
 author: windows-driver-content
 description: The HBA_FCPBindingEntry structure is equivalent to HBAFCPBindingEntry.
@@ -7,8 +7,8 @@ old-location: storage\hba_fcpbindingentry.htm
 old-project: storage
 ms.assetid: c9c46133-a660-46c6-911b-77c2dd2ed2e0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: HBA_FCPBindingEntry, PHBA_FCPBINDINGENTRY, *PHBA_FCPBINDINGENTRY, HBA_FCPBINDINGENTRY
+ms.date: 1/10/2018
+ms.keywords: HBA_FCPBindingEntry, HBA_FCPBINDINGENTRY, *PHBA_FCPBINDINGENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HBA_FCPBINDINGENTRY, *PHBA_FCPBINDINGENTRY
 ---
 
 # HBA_FCPBindingEntry structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The HBA_FCPBindingEntry structure is equivalent to <a href="storage.hbafcpbindingentry">HBAFCPBindingEntry</a>. The WMI tool suite generates the HBAFCPBindingEntry when it compiles the <a href="storage.hbafcpbindingentry_wmi_class">HBAFCPBindingEntry WMI Class</a>.  HBA_FCPBindingEntry is used with the fibre channel HBA API library and is declared in <i>hbaapi.h</i>.
+The HBA_FCPBindingEntry structure is equivalent to <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry.md">HBAFCPBindingEntry</a>. The WMI tool suite generates the HBAFCPBindingEntry when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556037">HBAFCPBindingEntry WMI Class</a>.  HBA_FCPBindingEntry is used with the fibre channel HBA API library and is declared in <i>hbaapi.h</i>.
 
 
 

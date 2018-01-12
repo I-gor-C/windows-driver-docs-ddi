@@ -1,5 +1,5 @@
 ---
-UID: NE.gnssdriver.GNSS_NI_PLANE_TYPE
+UID: NE:gnssdriver.GNSS_NI_PLANE_TYPE
 title: GNSS_NI_PLANE_TYPE
 author: windows-driver-content
 description: This enumeration indicates the plane type of a network initiated (NI) request represented by the GNSS_NI_REQUEST_PARAM structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: GNSS_NI_PLANE_TYPE
 ---
 
 # GNSS_NI_PLANE_TYPE enumeration

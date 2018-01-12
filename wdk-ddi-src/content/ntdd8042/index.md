@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ntdd8042
 ---
 
 # Ntdd8042.h header

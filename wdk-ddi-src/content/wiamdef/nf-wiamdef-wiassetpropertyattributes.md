@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasSetPropertyAttributes
+UID: NF:wiamdef.wiasSetPropertyAttributes
 title: wiasSetPropertyAttributes function
 author: windows-driver-content
 description: The wiasSetPropertyAttributes function sets the access flags and valid values for a set of properties.
 old-location: image\wiassetpropertyattributes.htm
-old-project: Image
+old-project: image
 ms.assetid: 210e69e7-b3b8-43b5-a0d3-f023c7256438
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasSetPropertyAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -88,7 +89,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 
 ## -remarks
-Minidrivers should use the function <a href="image.wiassetitempropattribs">wiasSetItemPropAttribs</a> to initialize groups of simple properties.
+Minidrivers should use the function <a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a> to initialize groups of simple properties.
 
 The minidriver can set the WIA_PROP_CACHEABLE flag on a property that does not change over time. By setting this flag on a property, the minidriver indicates that the WIA service can cache the property value. See the Windows SDK documentation for a list of all property attributes.
 
@@ -156,12 +157,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="image.wiassetitempropattribs">wiasSetItemPropAttribs</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20wiasSetPropertyAttributes function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasSetPropertyAttributes function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.wia_lh.IWiaErrorHandler.GetStatusDescription
+UID: NF:wia_lh.IWiaErrorHandler.GetStatusDescription
 title: IWiaErrorHandler::GetStatusDescription method
 author: windows-driver-content
-description: The system UI calls the WiaErrorHandler::GetStatusDescription method to provide the user with extra information about an error, if the user requests this information. This method is implemented by a driver's UI extension.
+description: The system UI calls the GetStatusDescription method to provide the user with extra information about an error, if the user requests this information. This method is implemented by a driver's UI extension.
 old-location: image\iwiaerrorhandler_getstatusdescription.htm
-old-project: Image
+old-project: image
 ms.assetid: c3b5622d-9d51-4008-abb0-c8a60c4a6b16
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaErrorHandler, IWiaErrorHandler::GetStatusDescription, GetStatusDescription
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBMP_IMAGE_INFO, BMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
- The system UI calls the <b>WiaErrorHandler::GetStatusDescription</b> method to provide the user with extra information about an error, if the user requests this information. This method is implemented by a driver's UI extension.
+ The system UI calls the <b>GetStatusDescription</b> method to provide the user with extra information about an error, if the user requests this information. This method is implemented by a driver's UI extension.
 
 
 
@@ -134,12 +135,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.iwiaerrorhandler_reportstatus">IWiaErrorHandler::ReportStatus</a>
+<a href="https://msdn.microsoft.com/b441fbca-75fe-4b9d-a9d5-2ad5a4a55801">IWiaErrorHandler</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543909">IWiaErrorHandler::ReportStatus</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20IWiaErrorHandler::GetStatusDescription method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaErrorHandler::GetStatusDescription method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

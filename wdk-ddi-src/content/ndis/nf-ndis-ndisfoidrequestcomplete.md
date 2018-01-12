@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisFOidRequestComplete
+UID: NF:ndis.NdisFOidRequestComplete
 title: NdisFOidRequestComplete function
 author: windows-driver-content
 description: Filter drivers call the NdisFOidRequestComplete function to return the final status of an OID request for which the driver's FilterOidRequest function returned NDIS_STATUS_PENDING.
 old-location: netvista\ndisfoidrequestcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1d72e8e3-1053-4731-a16c-fc3e4f7460e9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisFOidRequestComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisFOidRequestComplete function
@@ -68,7 +69,7 @@ The NDIS handle that identifies this filter module. NDIS passed the handle to th
 ### -param OidRequest [in]
 
 A pointer to a buffer formatted as an 
-     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure. The filter
+     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure. The filter
      driver obtained this pointer as an input parameter to its 
      <a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a> function.
 
@@ -155,7 +156,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_oid_function">Irql_OID_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547990">Irql_OID_Function</a>
 </td>
 </tr>
 </table>
@@ -169,12 +170,12 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisFOidRequestComplete function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFOidRequestComplete function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

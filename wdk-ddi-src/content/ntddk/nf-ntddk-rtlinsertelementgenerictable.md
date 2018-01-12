@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlInsertElementGenericTable
+UID: NF:ntddk.RtlInsertElementGenericTable
 title: RtlInsertElementGenericTable function
 author: windows-driver-content
 description: The RtlInsertElementGenericTable routine adds a new element to a generic table.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlinsertelementgenerictable.htm
 old-project: ifsk
 ms.assetid: 2554a212-edc0-4641-98bb-2db36ff0266f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlInsertElementGenericTable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: < DISPATCH_LEVEL (see Remarks section)
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlInsertElementGenericTable function
@@ -58,12 +59,12 @@ PVOID RtlInsertElementGenericTable(
 
 ### -param Table [in]
 
-Pointer to the generic table (<a href="ifsk.rtl_generic_table">RTL_GENERIC_TABLE</a>). The table must have been initialized by calling <a href="ifsk.rtlinitializegenerictable">RtlInitializeGenericTable</a>.
+Pointer to the generic table (<a href="..\ntddk\ns-ntddk-_rtl_generic_table.md">RTL_GENERIC_TABLE</a>). The table must have been initialized by calling <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>.
 
 
 ### -param Buffer [in]
 
-Pointer to a caller-allocated buffer containing data to be copied into the new element. For more information, see the description of <a href="ifsk.rtlinitializegenerictable">RtlInitializeGenericTable</a>. 
+Pointer to a caller-allocated buffer containing data to be copied into the new element. For more information, see the description of <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>. 
 
 
 ### -param BufferSize [in]
@@ -81,7 +82,7 @@ Pointer to a variable that receives <b>TRUE</b> if a new element with the data a
 
 
 ## -remarks
-To insert an element, <b>RtlInsertElementGenericTable</b> calls the <i>CompareRoutine</i> and <i>AllocateRoutine</i> that were registered when the generic table was initialized by <a href="ifsk.rtlinitializegenerictable">RtlInitializeGenericTable</a>. After inserting the new element, <b>RtlInsertElementGenericTable</b> rebalances the splay link tree.
+To insert an element, <b>RtlInsertElementGenericTable</b> calls the <i>CompareRoutine</i> and <i>AllocateRoutine</i> that were registered when the generic table was initialized by <a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>. After inserting the new element, <b>RtlInsertElementGenericTable</b> rebalances the splay link tree.
 
 When a new element is inserted into the table, its data is copied from <i>Buffer</i> into the new element. Thus the pointer returned by <b>RtlInsertElementGenericTable</b> is never equal to <i>Buffer</i>. 
 
@@ -95,7 +96,7 @@ By default, the operating system uses splay trees to implement generic tables. U
 
 #define RTL_USE_AVL_TABLES 0
 
-If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic table routines. For example, use the <a href="ifsk.rtlinsertelementgenerictableavl">RtlInsertElementGenericTableAvl</a> routine instead of <b>RtlInsertElementGenericTable</b>. In the call to <b>RtlInsertElementGenericTableAvl</b>, the caller must pass a <a href="ifsk.rtl_avl_table">RTL_AVL_TABLE</a> table structure rather than <a href="ifsk.rtl_generic_table">RTL_GENERIC_TABLE</a>.
+If RTL_USE_AVL_TABLES is not defined, you must use the AVL form of the generic table routines. For example, use the <a href="..\ntddk\nf-ntddk-rtlinsertelementgenerictableavl.md">RtlInsertElementGenericTableAvl</a> routine instead of <b>RtlInsertElementGenericTable</b>. In the call to <b>RtlInsertElementGenericTableAvl</b>, the caller must pass a <a href="..\ntddk\ns-ntddk-_rtl_avl_table.md">RTL_AVL_TABLE</a> table structure rather than <a href="..\ntddk\ns-ntddk-_rtl_generic_table.md">RTL_GENERIC_TABLE</a>.
 
 Callers of <b>RtlInsertElementGenericTable</b> must be running at IRQL &lt; DISPATCH_LEVEL if either of the following conditions holds:
 
@@ -165,15 +166,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.rtldeleteelementgenerictable">RtlDeleteElementGenericTable</a>
+<a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictable.md">RtlDeleteElementGenericTable</a>
 </dt>
 <dt>
-<a href="ifsk.rtlinitializegenerictable">RtlInitializeGenericTable</a>
+<a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInsertElementGenericTable routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInsertElementGenericTable routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

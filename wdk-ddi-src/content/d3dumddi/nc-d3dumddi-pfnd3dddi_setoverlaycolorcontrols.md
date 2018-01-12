@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_SETOVERLAYCOLORCONTROLS
+UID: NC:d3dumddi.PFND3DDDI_SETOVERLAYCOLORCONTROLS
 title: PFND3DDDI_SETOVERLAYCOLORCONTROLS
 author: windows-driver-content
 description: The SetOverlayColorControls function changes color-control settings for the given overlay.
@@ -7,7 +7,7 @@ old-location: display\setoverlaycolorcontrols.htm
 old-project: display
 ms.assetid: c2723c57-44eb-4866-9381-a3a341996989
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_SETOVERLAYCOLORCONTROLS callback
@@ -64,7 +65,7 @@ __checkReturn HRESULT APIENTRY SetOverlayColorControls(
 
 ### -param pData [in]
 
- A pointer to a <a href="display.d3dddiarg_setoverlaycolorcontrols">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a> structure that describes parameters for changing an overlay's color-control settings.
+ A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a> structure that describes parameters for changing an overlay's color-control settings.
 
 
 ## -returns
@@ -85,7 +86,7 @@ __checkReturn HRESULT APIENTRY SetOverlayColorControls(
 ## -remarks
 The Microsoft Direct3D runtime calls the <i>SetOverlayColorControls</i> function to change the brightness, contrast, hue, saturation, sharpness, gamma, and color-enable settings that are associated with a specific overlay. 
 
-The runtime can also call <i>SetOverlayColorControls</i> for an overlay that is not yet visible. In this situation, when the <b>hOverlay</b> member of the <a href="display.d3dddiarg_setoverlaycolorcontrols">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a> structure pointed to by <i>pData</i> is set to <b>NULL</b>, the driver should store the supplied color-control settings and use them when an overlay that references the specified resource is created.
+The runtime can also call <i>SetOverlayColorControls</i> for an overlay that is not yet visible. In this situation, when the <b>hOverlay</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a> structure pointed to by <i>pData</i> is set to <b>NULL</b>, the driver should store the supplied color-control settings and use them when an overlay that references the specified resource is created.
 
 
 ## -requirements
@@ -127,15 +128,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiarg_setoverlaycolorcontrols">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_setoverlaycolorcontrols.md">D3DDDIARG_SETOVERLAYCOLORCONTROLS</a>
 </dt>
 <dt>
-<a href="display.d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_SETOVERLAYCOLORCONTROLS callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_SETOVERLAYCOLORCONTROLS callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILPHONEBOOKLOCATIONCAPS
+UID: NE:ntddrilapitypes.RILPHONEBOOKLOCATIONCAPS
 title: RILPHONEBOOKLOCATIONCAPS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebooklocationcaps.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: df2f059c-d1c3-4716-8254-47c71f0b4a7c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILPHONEBOOKLOCATIONCAPS, RILPHONEBOOKLOCATIONCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPHONEBOOKLOCATIONCAPS
 ---
 
 # RILPHONEBOOKLOCATIONCAPS enumeration

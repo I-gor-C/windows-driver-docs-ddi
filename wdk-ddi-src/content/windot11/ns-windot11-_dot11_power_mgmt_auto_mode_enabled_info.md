@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11._DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
+UID: NS:windot11._DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
 title: _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
 author: windows-driver-content
 description: The DOT11_POWER_MGMT_AUTO_MODE_ENABLED structure describes to a device whether to automatically manage its power saving mode.
 old-location: netvista\dot11_power_mgmt_auto_mode_enabled_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9C75544F-A14C-4741-91FC-434AE1872A6E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, *PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
+ms.date: 1/8/2018
+ms.keywords: _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, *PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
 req.product: Windows 10 or later.
 ---
 

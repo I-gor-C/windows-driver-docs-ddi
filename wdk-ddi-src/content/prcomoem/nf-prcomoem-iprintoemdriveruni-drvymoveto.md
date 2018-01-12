@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemDriverUni.DrvYMoveTo
+UID: NF:prcomoem.IPrintOemDriverUni.DrvYMoveTo
 title: IPrintOemDriverUni::DrvYMoveTo method
 author: windows-driver-content
 description: The IPrintOemDriverUni::DrvYMoveTo method is provided by the Unidrv driver so that a rendering plug-in can notify the driver of cursor y-position changes.
@@ -7,7 +7,7 @@ old-location: print\iprintoemdriveruni_drvymoveto.htm
 old-project: print
 ms.assetid: ce9b1622-4c02-4496-82ca-cefa49d531da
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemDriverUni, IPrintOemDriverUni::DrvYMoveTo, DrvYMoveTo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ HRESULT DrvYMoveTo(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param y 
@@ -120,7 +121,7 @@ MV_UPDATE
 
 </td>
 <td>
-If set, specifies that Unidrv should update its current calculation of the cursor position without actually moving the cursor. (Should be set if <a href="print.iprintoemuni_imageprocessing">IPrintOemUni::ImageProcessing</a> has moved the cursor.)
+If set, specifies that Unidrv should update its current calculation of the cursor position without actually moving the cursor. (Should be set if <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a> has moved the cursor.)
 
 If not set, specifies that Unidrv should update its current calculation of the cursor position and also move the cursor.
 
@@ -151,7 +152,7 @@ The method must return one of the following values.
 
 
 ## -remarks
-The <a href="print.iprintoemdriveruni_drvxmoveto">IPrintOemDriverUni::DrvXMoveTo</a> and <code>IPrintOemDriverUni::DrvYMoveTo</code> methods allow a rendering plug-in to send image data to the printer spooler without causing the printer driver to lose track of the printer's cursor position. If you provide an <a href="print.iprintoemuni_imageprocessing">IPrintOemUni::ImageProcessing</a> method that sends image data directly to the print spooler instead of returning it to the printer driver, the method should call <code>IPrintOemDriverUni::DrvXMoveTo</code> and <code>IPrintOemDriverUni::DrvYMoveTo</code>.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553141">IPrintOemDriverUni::DrvXMoveTo</a> and <code>IPrintOemDriverUni::DrvYMoveTo</code> methods allow a rendering plug-in to send image data to the printer spooler without causing the printer driver to lose track of the printer's cursor position. If you provide an <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a> method that sends image data directly to the print spooler instead of returning it to the printer driver, the method should call <code>IPrintOemDriverUni::DrvXMoveTo</code> and <code>IPrintOemDriverUni::DrvYMoveTo</code>.
 
 Either of two techniques can be used for updating the cursor position:
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILLOCATIONINFOPARAMMASK
+UID: NE:ntddrilapitypes.RILLOCATIONINFOPARAMMASK
 title: RILLOCATIONINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rillocationinfoparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3d681026-7ccb-4dcb-bed1-505c13089177
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILLOCATIONINFOPARAMMASK, RILLOCATIONINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILLOCATIONINFOPARAMMASK
 ---
 
 # RILLOCATIONINFOPARAMMASK enumeration

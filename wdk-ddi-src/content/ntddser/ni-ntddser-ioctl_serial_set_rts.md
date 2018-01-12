@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_SET_RTS
+UID: NI:ntddser.IOCTL_SERIAL_SET_RTS
 title: IOCTL_SERIAL_SET_RTS
 author: windows-driver-content
 description: The IOCTL_SERIAL_SET_RTS request sets RTS (request to send).
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_RTS IOCTL

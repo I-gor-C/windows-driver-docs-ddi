@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfrequest.WdfRequestImpersonate
+UID: NF:wdfrequest.WdfRequestImpersonate
 title: WdfRequestImpersonate function
 author: windows-driver-content
 description: The WdfRequestImpersonate method registers a driver-supplied event callback function that the framework should call for impersonation.
@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestimpersonate.htm
 old-project: wdf
 ms.assetid: E5267F04-D693-453B-BAD2-C61F89B07F6E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfRequestImpersonate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: WUDFx02000.lib
 req.dll: WUDFx02000.dll; TBD
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -66,7 +67,7 @@ A handle to the framework request object that represents the I/O request that is
 
 ### -param ImpersonationLevel [in]
 
-A <a href="wdf.security_impersonation_level">SECURITY_IMPERSONATION_LEVEL</a>-typed value that identifies the level of impersonation.
+A <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>-typed value that identifies the level of impersonation.
 
 
 ### -param EvtRequestImpersonate [in]
@@ -88,7 +89,7 @@ The method might return other <a href="https://msdn.microsoft.com/library/window
 ## -remarks
 The <b>WdfRequestImpersonate</b> method does not return until the <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_impersonate.md">EvtRequestImpersonate</a> event callback function completes.
 
-For more information, see <a href="wdf.handling_client_impersonation_in_umdf_drivers">Handling Client Impersonation in UMDF Drivers</a>.
+For more information, see <a href="https://msdn.microsoft.com/02EA93CE-3C4D-4F6F-8E58-DD78EBDB19DE">Handling Client Impersonation in UMDF Drivers</a>.
 
 
 ## -requirements
@@ -176,12 +177,12 @@ PASSIVE_LEVEL
 <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_impersonate.md">EvtRequestImpersonate</a>
 </dt>
 <dt>
-<a href="wdf.iwdfiorequest_impersonate">IWDFIoRequest::Impersonate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestImpersonate method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestImpersonate method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

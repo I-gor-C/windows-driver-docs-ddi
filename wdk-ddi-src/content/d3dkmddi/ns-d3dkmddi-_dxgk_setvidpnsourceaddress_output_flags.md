@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS
+UID: NS:d3dkmddi._DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS
 title: _DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS
 author: windows-driver-content
 description: A structure containing the flags used to set the VidPN source address.
@@ -7,7 +7,7 @@ old-location: display\dxgk_setvidpnsourceaddress_output_flags.htm
 old-project: display
 ms.assetid: CFEEB41D-050F-4372-AB54-39ABC696C89D
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS, DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS
 ---
 
 # _DXGK_SETVIDPNSOURCEADDRESS_OUTPUT_FLAGS structure

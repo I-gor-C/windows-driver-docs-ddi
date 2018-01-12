@@ -1,5 +1,5 @@
 ---
-UID: NF.hidport.HidRegisterMinidriver
+UID: NF:hidport.HidRegisterMinidriver
 title: HidRegisterMinidriver function
 author: windows-driver-content
 description: The HidRegisterMinidriver routine is called by HID minidrivers, during their initialization, to register with the HID class driver.
@@ -7,7 +7,7 @@ old-location: hid\hidregisterminidriver.htm
 old-project: hid
 ms.assetid: 521928f8-6434-443a-83f0-7e8e00c756b5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidRegisterMinidriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hid.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PUSAGE_AND_PAGE, USAGE_AND_PAGE
 ---
 
 # HidRegisterMinidriver function
@@ -55,7 +56,7 @@ NTSTATUS HidRegisterMinidriver(
 
 ### -param MinidriverRegistration [in]
 
-Pointer to a caller-allocated buffer that contains an initialized <a href="hid.hid_minidriver_registration">HID_MINIDRIVER_REGISTRATION</a> structure for the minidriver.
+Pointer to a caller-allocated buffer that contains an initialized <a href="..\hidport\ns-hidport-_hid_minidriver_registration.md">HID_MINIDRIVER_REGISTRATION</a> structure for the minidriver.
 
 
 ## -returns
@@ -74,7 +75,7 @@ Pointer to a caller-allocated buffer that contains an initialized <a href="hid.h
 
 
 ## -remarks
-Before calling this routine, HID minidrivers must initialize all members of the HID_MINIDRIVER_REGISTRATION structure that is provided at <i>MinidriverRegistration</i>. For information about these members, see <a href="hid.hid_minidriver_registration">HID_MINIDRIVER_REGISTRATION</a>.
+Before calling this routine, HID minidrivers must initialize all members of the HID_MINIDRIVER_REGISTRATION structure that is provided at <i>MinidriverRegistration</i>. For information about these members, see <a href="..\hidport\ns-hidport-_hid_minidriver_registration.md">HID_MINIDRIVER_REGISTRATION</a>.
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
 
@@ -139,12 +140,12 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="hid.hid_minidriver_registration">HID_MINIDRIVER_REGISTRATION</a>
+<a href="..\hidport\ns-hidport-_hid_minidriver_registration.md">HID_MINIDRIVER_REGISTRATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidRegisterMinidriver routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidRegisterMinidriver routine%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

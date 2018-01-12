@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportStreamAudioEngineNode.GetLfxState
+UID: NF:portcls.IMiniportStreamAudioEngineNode.GetLfxState
 title: IMiniportStreamAudioEngineNode::GetLfxState method
 author: windows-driver-content
 description: Gets the state of the local effects (LFX) node that is in the path of the audio stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportStreamAudioEngineNode::GetLfxState method

@@ -1,5 +1,5 @@
 ---
-UID: NF.minitape.TapeClassAllocateSrbBuffer
+UID: NF:minitape.TapeClassAllocateSrbBuffer
 title: TapeClassAllocateSrbBuffer function
 author: windows-driver-content
 description: The TapeClassAllocateSrbBuffer routine allocates an Srb-&gt;DataBuffer.
@@ -7,7 +7,7 @@ old-location: storage\tapeclassallocatesrbbuffer.htm
 old-project: storage
 ms.assetid: f6762d9b-5a3d-49a3-b954-48e4e4a9eacb
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: TapeClassAllocateSrbBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Tape.lib
 req.dll: 
 req.irql: 
+req.typenames: *PTAPE_STATUS, TAPE_STATUS
 ---
 
 # TapeClassAllocateSrbBuffer function

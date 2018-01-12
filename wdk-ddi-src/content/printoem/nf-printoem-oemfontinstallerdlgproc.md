@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMFontInstallerDlgProc
+UID: NF:printoem.OEMFontInstallerDlgProc
 title: OEMFontInstallerDlgProc function
 author: windows-driver-content
 description: OEMFontInstallerDlgProc function
@@ -7,7 +7,7 @@ old-location: print\oemfontinstallerdlgproc.htm
 old-project: print
 ms.assetid: 6007723b-c7db-42da-bc50-328e19f80448
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMFontInstallerDlgProc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_ESCAPE
+UID: NS:d3dkmthk._D3DKMT_ESCAPE
 title: _D3DKMT_ESCAPE
 author: windows-driver-content
 description: The D3DKMT_ESCAPE structure describes information that is exchanged with the display miniport driver.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_escape.htm
 old-project: display
 ms.assetid: db57ae5e-7060-4d45-99a5-e54c82b0aa05
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_ESCAPE, D3DKMT_ESCAPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_ESCAPE
 ---
 
 # _D3DKMT_ESCAPE structure
@@ -96,7 +97,7 @@ D3DKMT_ESCAPE_VIDMM (1)
 <td>
 <b>Do not use. For testing purposes only.</b>
 
-The OpenGL ICD controls the video memory manager (which is part of <i>Dxgkrnl.sys</i>). The buffer that <b>pPrivateDriverData</b> points to contains a <a href="display.d3dkmt_vidmm_escape">D3DKMT_VIDMM_ESCAPE</a> structure that supports various types of control of the video memory manager.
+The OpenGL ICD controls the video memory manager (which is part of <i>Dxgkrnl.sys</i>). The buffer that <b>pPrivateDriverData</b> points to contains a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidmm_escape.md">D3DKMT_VIDMM_ESCAPE</a> structure that supports various types of control of the video memory manager.
 
 </td>
 </tr>
@@ -112,7 +113,7 @@ The escape operation lets the user control the behavior of the operating system'
 
 This functionality is disabled by default. To enable this functionality, the TdrTestMode<b></b> = TdrTestMode DWORD registry value, which is stored in the HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers key, must be set to 1.
 
-The <b>PrivateDriverDataSize</b> member is set to <b>sizeof</b>(int). The <b>pPrivateDriverData</b> member is set to an integer with a value from the <a href="display.d3dkmt_tdrdbgctrltype">D3DKMT_TDRDBGCTRLTYPE</a> enumeration type.
+The <b>PrivateDriverDataSize</b> member is set to <b>sizeof</b>(int). The <b>pPrivateDriverData</b> member is set to an integer with a value from the <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_tdrdbgctrltype.md">D3DKMT_TDRDBGCTRLTYPE</a> enumeration type.
 
 </td>
 </tr>
@@ -124,7 +125,7 @@ D3DKMT_ESCAPE_VIDSCH (3)
 <td>
 <b>Do not use. For testing purposes only.</b>
 
-The OpenGL ICD controls the graphics processing unit (GPU) scheduler (which is part of <i>Dxgkrnl.sys</i>). The buffer that <b>pPrivateDriverData</b> points to contains a <a href="display.d3dkmt_vidsch_escape">D3DKMT_VIDSCH_ESCAPE</a> structure that supports preemption control and suspending or resuming the scheduler.
+The OpenGL ICD controls the graphics processing unit (GPU) scheduler (which is part of <i>Dxgkrnl.sys</i>). The buffer that <b>pPrivateDriverData</b> points to contains a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidsch_escape.md">D3DKMT_VIDSCH_ESCAPE</a> structure that supports preemption control and suspending or resuming the scheduler.
 
 </td>
 </tr>
@@ -136,7 +137,7 @@ D3DKMT_ESCAPE_DEVICE (4)
 <td>
 <b>Do not use. For testing purposes only.</b>
 
-The OpenGL ICD controls the display device. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="display.d3dkmt_device_escape">D3DKMT_DEVICE_ESCAPE</a> structure that supports obtaining the video present source from the primary allocation.
+The OpenGL ICD controls the display device. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_device_escape.md">D3DKMT_DEVICE_ESCAPE</a> structure that supports obtaining the video present source from the primary allocation.
 
 </td>
 </tr>
@@ -148,7 +149,7 @@ D3DKMT_ESCAPE_DMM (5)
 <td>
 <b>Do not use. For testing purposes only.</b>
 
-The OpenGL ICD controls the display mode manager. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="display.d3dkmt_dmm_escape">D3DKMT_DMM_ESCAPE</a> structure.
+The OpenGL ICD controls the display mode manager. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dmm_escape.md">D3DKMT_DMM_ESCAPE</a> structure.
 
 </td>
 </tr>
@@ -160,7 +161,7 @@ D3DKMT_ESCAPE_DEBUG_SNAPSHOT (6)
 <td>
 <b>Do not use. For testing purposes only.</b>
 
-The OpenGL ICD retrieves a debug snapshot buffer. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="display.d3dkmt_debug_snapshot_escape">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a> structure.
+The OpenGL ICD retrieves a debug snapshot buffer. The buffer that <b>pPrivateDriverData</b> points to contains a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_debug_snapshot_escape.md">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a> structure.
 
 </td>
 </tr>
@@ -432,7 +433,7 @@ Supported starting with Windows 8.1.
 
 ### -field Flags
 
-[in] A <a href="display.d3dddi_escapeflags">D3DDDI_ESCAPEFLAGS</a> structure that indicates, in bit-field flags, how to share information. The OpenGL ICD should specify the <b>HardwareAccess</b> bit-field flag to indicate that the display miniport driver must access graphics hardware in such a way that the operating system must perform the <a href="https://msdn.microsoft.com/2b7c1eae-6527-469e-a2fa-74d2a1246bd3">second level of synchronization</a> into the display miniport driver for the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a> call. 
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_escapeflags.md">D3DDDI_ESCAPEFLAGS</a> structure that indicates, in bit-field flags, how to share information. The OpenGL ICD should specify the <b>HardwareAccess</b> bit-field flag to indicate that the display miniport driver must access graphics hardware in such a way that the operating system must perform the <a href="https://msdn.microsoft.com/2b7c1eae-6527-469e-a2fa-74d2a1246bd3">second level of synchronization</a> into the display miniport driver for the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a> call. 
 
 
 ### -field pPrivateDriverData
@@ -462,7 +463,7 @@ D3DKMT_ESCAPE_VIDMM
 <td>
 <b>Do not use. For testing purposes only.</b>
 
-A <a href="display.d3dkmt_vidmm_escape">D3DKMT_VIDMM_ESCAPE</a> structure.
+A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidmm_escape.md">D3DKMT_VIDMM_ESCAPE</a> structure.
 
 </td>
 </tr>
@@ -474,7 +475,7 @@ D3DKMT_ESCAPE_TDRDBGCTRL
 <td>
 <b>Do not use. For testing purposes only.</b>
 
-A <a href="display.d3dkmt_tdrdbgctrltype">D3DKMT_TDRDBGCTRLTYPE</a> enumeration type.
+A <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_tdrdbgctrltype.md">D3DKMT_TDRDBGCTRLTYPE</a> enumeration type.
 
 </td>
 </tr>
@@ -486,7 +487,7 @@ D3DKMT_ESCAPE_VIDSCH
 <td>
 <b>Do not use. For testing purposes only.</b>
 
-A <a href="display.d3dkmt_vidsch_escape">D3DKMT_VIDSCH_ESCAPE</a> structure.
+A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidsch_escape.md">D3DKMT_VIDSCH_ESCAPE</a> structure.
 
 </td>
 </tr>
@@ -498,7 +499,7 @@ D3DKMT_ESCAPE_DEVICE
 <td>
 <b>Do not use. For testing purposes only.</b>
 
-A <a href="display.d3dkmt_device_escape">D3DKMT_DEVICE_ESCAPE</a> structure.
+A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_device_escape.md">D3DKMT_DEVICE_ESCAPE</a> structure.
 
 </td>
 </tr>
@@ -510,7 +511,7 @@ D3DKMT_ESCAPE_DMM
 <td>
 <b>Do not use. For testing purposes only.</b>
 
-A <a href="display.d3dkmt_dmm_escape">D3DKMT_DMM_ESCAPE</a> structure.
+A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dmm_escape.md">D3DKMT_DMM_ESCAPE</a> structure.
 
 </td>
 </tr>
@@ -522,7 +523,7 @@ D3DKMT_ESCAPE_DEBUG_SNAPSHOT
 <td>
 <b>Do not use. For testing purposes only.</b>
 
-A <a href="display.d3dkmt_debug_snapshot_escape">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a> structure.
+A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_debug_snapshot_escape.md">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a> structure.
 
 </td>
 </tr>
@@ -532,7 +533,7 @@ A <a href="display.d3dkmt_debug_snapshot_escape">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a
 
 ### -field PrivateDriverDataSize
 
-[in] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to. The OpenGL ICD must specify the size of the buffer when it calls the <a href="display.d3dkmtescape">D3DKMTEscape</a> function.
+[in] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to. The OpenGL ICD must specify the size of the buffer when it calls the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function.
 
 
 ### -field hContext
@@ -541,7 +542,7 @@ A <a href="display.d3dkmt_debug_snapshot_escape">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a
 
 
 ## -remarks
-For testing purposes, the OpenGL ICD can pass a pointer to a D3DKMT_ESCAPE structure in a call to the <a href="display.d3dkmtescape">D3DKMTEscape</a> function to control the video memory manager and GPU scheduler (which are part of <i>Dxgkrnl.sys</i>) and the behavior of the operating system's TDR process. 
+For testing purposes, the OpenGL ICD can pass a pointer to a D3DKMT_ESCAPE structure in a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function to control the video memory manager and GPU scheduler (which are part of <i>Dxgkrnl.sys</i>) and the behavior of the operating system's TDR process. 
 
 
 ## -requirements
@@ -572,30 +573,30 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_debug_snapshot_escape">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_debug_snapshot_escape.md">D3DKMT_DEBUG_SNAPSHOT_ESCAPE</a>
 </dt>
 <dt>
-<a href="display.d3dkmt_device_escape">D3DKMT_DEVICE_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_device_escape.md">D3DKMT_DEVICE_ESCAPE</a>
 </dt>
 <dt>
-<a href="display.d3dkmt_dmm_escape">D3DKMT_DMM_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dmm_escape.md">D3DKMT_DMM_ESCAPE</a>
 </dt>
 <dt>
-<a href="display.d3dkmt_tdrdbgctrltype">D3DKMT_TDRDBGCTRLTYPE</a>
+<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_tdrdbgctrltype.md">D3DKMT_TDRDBGCTRLTYPE</a>
 </dt>
 <dt>
-<a href="display.d3dkmt_vidmm_escape">D3DKMT_VIDMM_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidmm_escape.md">D3DKMT_VIDMM_ESCAPE</a>
 </dt>
 <dt>
-<a href="display.d3dkmt_vidsch_escape">D3DKMT_VIDSCH_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_vidsch_escape.md">D3DKMT_VIDSCH_ESCAPE</a>
 </dt>
 <dt>
-<a href="display.d3dkmtescape">D3DKMTEscape</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_ESCAPE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_ESCAPE structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

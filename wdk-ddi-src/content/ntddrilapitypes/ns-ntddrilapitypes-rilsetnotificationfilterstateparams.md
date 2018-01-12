@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSETNOTIFICATIONFILTERSTATEPARAMS
+UID: NS:ntddrilapitypes.RILSETNOTIFICATIONFILTERSTATEPARAMS
 title: RILSETNOTIFICATIONFILTERSTATEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetnotificationfilterstateparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bd30a156-0414-486c-92c4-21c33d32f9b8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSETNOTIFICATIONFILTERSTATEPARAMS, *LPRILSETNOTIFICATIONFILTERSTATEPARAMS, LPRILSETNOTIFICATIONFILTERSTATEPARAMS, RILSETNOTIFICATIONFILTERSTATEPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILSETNOTIFICATIONFILTERSTATEPARAMS, *LPRILSETNOTIFICATIONFILTERSTATEPARAMS, RILSETNOTIFICATIONFILTERSTATEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSETNOTIFICATIONFILTERSTATEPARAMS, RILSETNOTIFICATIONFILTERSTATEPARAMS
 ---
 
 # RILSETNOTIFICATIONFILTERSTATEPARAMS structure

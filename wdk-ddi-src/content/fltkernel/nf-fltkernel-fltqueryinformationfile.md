@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltQueryInformationFile
+UID: NF:fltkernel.FltQueryInformationFile
 title: FltQueryInformationFile function
 author: windows-driver-content
 description: FltQueryInformationFile retrieves information for a given file.
@@ -7,7 +7,7 @@ old-location: ifsk\fltqueryinformationfile.htm
 old-project: ifsk
 ms.assetid: f80750fb-4561-4617-bc54-1360b2e93a68
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltQueryInformationFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: EXpsFontRestriction
 ---
 
 # FltQueryInformationFile function
@@ -103,7 +104,7 @@ Return a FILE_ALL_INFORMATION structure for the file.
 
 </td>
 <td>
-Return a <a href="kernel.file_attribute_tag_information">FILE_ATTRIBUTE_TAG_INFORMATION</a> structure for the file. 
+Return a <a href="..\ntddk\ns-ntddk-_file_attribute_tag_information.md">FILE_ATTRIBUTE_TAG_INFORMATION</a> structure for the file. 
 
 </td>
 </tr>
@@ -113,7 +114,7 @@ Return a <a href="kernel.file_attribute_tag_information">FILE_ATTRIBUTE_TAG_INFO
 
 </td>
 <td>
-Return a <a href="kernel.file_basic_information">FILE_BASIC_INFORMATION</a> structure for the file. 
+Return a <a href="..\wdm\ns-wdm-_file_basic_information.md">FILE_BASIC_INFORMATION</a> structure for the file. 
 
 </td>
 </tr>
@@ -143,7 +144,7 @@ Return a FILE_EA_INFORMATION structure for the file.
 
 </td>
 <td>
-Return a <a href="ifsk.file_internal_information">FILE_INTERNAL_INFORMATION</a> structure for the file. 
+Return a <a href="..\ntifs\ns-ntifs-_file_internal_information.md">FILE_INTERNAL_INFORMATION</a> structure for the file. 
 
 </td>
 </tr>
@@ -163,7 +164,7 @@ Return a FILE_MOVE_CLUSTER_INFORMATION structure for the file.
 
 </td>
 <td>
-Return a <a href="kernel.file_name_information">FILE_NAME_INFORMATION</a> structure for the file. 
+Return a <a href="..\ntddk\ns-ntddk-_file_name_information.md">FILE_NAME_INFORMATION</a> structure for the file. 
 
 </td>
 </tr>
@@ -173,7 +174,7 @@ Return a <a href="kernel.file_name_information">FILE_NAME_INFORMATION</a> struct
 
 </td>
 <td>
-Return a single <a href="kernel.file_network_open_information">FILE_NETWORK_OPEN_INFORMATION</a> structure for the file. 
+Return a single <a href="..\wdm\ns-wdm-_file_network_open_information.md">FILE_NETWORK_OPEN_INFORMATION</a> structure for the file. 
 
 </td>
 </tr>
@@ -183,7 +184,7 @@ Return a single <a href="kernel.file_network_open_information">FILE_NETWORK_OPEN
 
 </td>
 <td>
-Return a single <a href="kernel.file_position_information">FILE_POSITION_INFORMATION</a> structure for the file. 
+Return a single <a href="..\wdm\ns-wdm-_file_position_information.md">FILE_POSITION_INFORMATION</a> structure for the file. 
 
 </td>
 </tr>
@@ -193,7 +194,7 @@ Return a single <a href="kernel.file_position_information">FILE_POSITION_INFORMA
 
 </td>
 <td>
-Return a single <a href="kernel.file_standard_information">FILE_STANDARD_INFORMATION</a> structure for the file. 
+Return a single <a href="..\wdm\ns-wdm-_file_standard_information.md">FILE_STANDARD_INFORMATION</a> structure for the file. 
 
 </td>
 </tr>
@@ -203,7 +204,7 @@ Return a single <a href="kernel.file_standard_information">FILE_STANDARD_INFORMA
 
 </td>
 <td>
-Return a single <a href="ifsk.file_stream_information">FILE_STREAM_INFORMATION</a> structure for the file. 
+Return a single <a href="..\ntifs\ns-ntifs-_file_stream_information.md">FILE_STREAM_INFORMATION</a> structure for the file. 
 
 </td>
 </tr>
@@ -213,7 +214,7 @@ Return a single <a href="ifsk.file_stream_information">FILE_STREAM_INFORMATION</
 
 </td>
 <td>
-Return a <a href="ifsk.file_links_information">FILE_LINKS_INFORMATION</a> structure for the file. 
+Return a <a href="..\ntifs\ns-ntifs-_file_links_information.md">FILE_LINKS_INFORMATION</a> structure for the file. 
 
 </td>
 </tr>
@@ -304,48 +305,48 @@ PASSIVE_LEVEL (see Remarks section)
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.file_alignment_information">FILE_ALIGNMENT_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_alignment_information.md">FILE_ALIGNMENT_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_attribute_tag_information">FILE_ATTRIBUTE_TAG_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_attribute_tag_information.md">FILE_ATTRIBUTE_TAG_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_basic_information">FILE_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_file_basic_information.md">FILE_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_internal_information">FILE_INTERNAL_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_internal_information.md">FILE_INTERNAL_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_name_information">FILE_NAME_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_name_information.md">FILE_NAME_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_network_open_information">FILE_NETWORK_OPEN_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_file_network_open_information.md">FILE_NETWORK_OPEN_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_position_information">FILE_POSITION_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_file_position_information.md">FILE_POSITION_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_standard_information">FILE_STANDARD_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_file_standard_information.md">FILE_STANDARD_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_stream_information">FILE_STREAM_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_stream_information.md">FILE_STREAM_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_links_information">FILE_LINKS_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_links_information.md">FILE_LINKS_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltqueryvolumeinformationfile">FltQueryVolumeInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformationfile.md">FltQueryVolumeInformationFile</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetinformationfile">FltSetInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryinformationfile">ZwQueryInformationFile</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryInformationFile function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryInformationFile function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

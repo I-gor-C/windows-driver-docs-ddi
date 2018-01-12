@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d12umddi.PFND3D12DDI_VIDEO_GETCAPS
+UID: NC:d3d12umddi.PFND3D12DDI_VIDEO_GETCAPS
 title: PFND3D12DDI_VIDEO_GETCAPS
 author: windows-driver-content
 description: The pfnGetCaps callback function defines an entry point for video specific caps.
@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_video_getcaps.htm
 old-project: display
 ms.assetid: 6875B754-115F-481D-8D46-2A383BA6B5E7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 # PFND3D12DDI_VIDEO_GETCAPS callback
@@ -72,7 +73,7 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 
 ## -remarks
-Access this function though the <a href="display.d3d12ddi_video_decode_support_data">D3D12DDI_VIDEO_DECODE_SUPPORT_DATA</a> structure.
+Access this function though the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_decode_support_data_0020.md">D3D12DDI_VIDEO_DECODE_SUPPORT_DATA</a> structure.
 
 The following list describes the mapping of D3D12DDICAPS_TYPE_VIDEO_0010 type to the meaning of the pInfo, pData, and DataSize parameters.
 
@@ -119,12 +120,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3d12ddi_video_decode_support_data">D3D12DDI_VIDEO_DECODE_SUPPORT_DATA</a>
+<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_decode_support_data_0020.md">D3D12DDI_VIDEO_DECODE_SUPPORT_DATA</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D12DDI_VIDEO_GETCAPS callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D12DDI_VIDEO_GETCAPS callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

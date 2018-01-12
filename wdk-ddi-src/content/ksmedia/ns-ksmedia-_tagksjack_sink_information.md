@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA._TAGKSJACK_SINK_INFORMATION
+UID: NS:ksmedia._tagKSJACK_SINK_INFORMATION
 title: _tagKSJACK_SINK_INFORMATION
 author: windows-driver-content
 description: The KSJACK_SINK_INFORMATION structure specifies information about a display-related digital audio device, such as an HDMI device or a display port.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: ec832068-9b5d-40ce-bafc-31642539e2d9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _tagKSJACK_SINK_INFORMATION, KSJACK_SINK_INFORMATION, PKSJACK_SINK_INFORMATION, *PKSJACK_SINK_INFORMATION
+ms.keywords: _tagKSJACK_SINK_INFORMATION, KSJACK_SINK_INFORMATION, *PKSJACK_SINK_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSJACK_SINK_INFORMATION, *PKSJACK_SINK_INFORMATION
 ---
 
 # _tagKSJACK_SINK_INFORMATION structure
@@ -137,7 +138,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.luid">LUID</a>
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NS.MSVIDDRV.TAG_VIDEO_GETERRORTEXT_PARMS
+UID: NS:msviddrv.tag_video_geterrortext_parms
 title: tag_video_geterrortext_parms
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\video_geterrortext_parms.htm
 old-project: stream
 ms.assetid: 6CF06E9A-D6A1-42A7-9C34-44BC52713621
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tag_video_geterrortext_parms, VIDEO_GETERRORTEXT_PARMS, *LPVIDEO_GETERRORTEXT_PARMS, LPVIDEO_GETERRORTEXT_PARMS
+ms.date: 1/9/2018
+ms.keywords: tag_video_geterrortext_parms, VIDEO_GETERRORTEXT_PARMS, *LPVIDEO_GETERRORTEXT_PARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: VIDEO_GETERRORTEXT_PARMS, *LPVIDEO_GETERRORTEXT_PARMS
 ---
 
 # tag_video_geterrortext_parms structure

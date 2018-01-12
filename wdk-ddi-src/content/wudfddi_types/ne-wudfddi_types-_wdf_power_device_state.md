@@ -1,5 +1,5 @@
 ---
-UID: NE.wudfddi_types._WDF_POWER_DEVICE_STATE
+UID: NE:wudfddi_types._WDF_POWER_DEVICE_STATE
 title: _WDF_POWER_DEVICE_STATE
 author: windows-driver-content
 description: The WDF_POWER_DEVICE_STATE enumeration contains values that identify the power state that a device might support.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_power_device_state_umdf.htm
 old-project: wdf
 ms.assetid: de92bf06-b8fa-4c16-9216-95d68ca75111
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_POWER_DEVICE_STATE, *PWDF_POWER_DEVICE_STATE, PWDF_POWER_DEVICE_STATE, WDF_POWER_DEVICE_STATE
+ms.date: 12/29/2017
+ms.keywords: _WDF_POWER_DEVICE_STATE, WDF_POWER_DEVICE_STATE, *PWDF_POWER_DEVICE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_POWER_DEVICE_STATE, *PWDF_POWER_DEVICE_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -42,7 +43,7 @@ req.product: Windows 10 or later.
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 
-      The <a href="wdf.wdf_power_device_state">WDF_POWER_DEVICE_STATE</a> enumeration contains values that identify the power state that a device might support.
+      The <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_power_device_state.md">WDF_POWER_DEVICE_STATE</a> enumeration contains values that identify the power state that a device might support.
 
 
 
@@ -105,7 +106,7 @@ Valid enumeration values were exceeded.
 
 
 ## -remarks
-The framework supplies one of the values of <a href="wdf.wdf_power_device_state">WDF_POWER_DEVICE_STATE</a> to the <a href="wdf.ipnpcallback_ond0entry">IPnpCallback::OnD0Entry</a> or <a href="wdf.ipnpcallback_ond0exit">IPnpCallback::OnD0Exit</a> method to notify the UMDF driver about the power state of the device.
+The framework supplies one of the values of <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_power_device_state.md">WDF_POWER_DEVICE_STATE</a> to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556799">IPnpCallback::OnD0Entry</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff556803">IPnpCallback::OnD0Exit</a> method to notify the UMDF driver about the power state of the device.
 
 
 ## -requirements
@@ -126,15 +127,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.ipnpcallback_ond0entry">IPnpCallback::OnD0Entry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556799">IPnpCallback::OnD0Entry</a>
 </dt>
 <dt>
-<a href="wdf.ipnpcallback_ond0exit">IPnpCallback::OnD0Exit</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556803">IPnpCallback::OnD0Exit</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_DEVICE_STATE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_DEVICE_STATE enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

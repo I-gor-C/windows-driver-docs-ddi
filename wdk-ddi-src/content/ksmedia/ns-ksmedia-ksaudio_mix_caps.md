@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSAUDIO_MIX_CAPS
+UID: NS:ksmedia.KSAUDIO_MIX_CAPS
 title: KSAUDIO_MIX_CAPS
 author: windows-driver-content
 description: The KSAUDIO_MIX_CAPS structure specifies the mixing capabilities of a particular data path from one input channel of a supermixer node (KSNODETYPE_SUPERMIX) to an output channel of the same node.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: d201fdce-ae56-4ba5-a947-e3e0cecc6e17
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS, *PKSAUDIO_MIX_CAPS, PKSAUDIO_MIX_CAPS
+ms.keywords: KSAUDIO_MIX_CAPS, *PKSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS
 ---
 
 # KSAUDIO_MIX_CAPS structure

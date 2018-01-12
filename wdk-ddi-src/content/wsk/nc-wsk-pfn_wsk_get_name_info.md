@@ -1,14 +1,14 @@
 ---
-UID: NC.wsk.PFN_WSK_GET_NAME_INFO
+UID: NC:wsk.PFN_WSK_GET_NAME_INFO
 title: PFN_WSK_GET_NAME_INFO
 author: windows-driver-content
 description: The WskGetNameInfo function provides protocol-independent translation from a transport address to a host name.
 old-location: netvista\wskgetnameinfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 99e10a70-90a7-4d96-ae5f-ba82d8c4c1a8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/8/2018
+ms.keywords: _WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -73,14 +74,14 @@ NTSTATUS WSKAPI * WskGetNameInfo(
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a> structure that was returned through
      the 
      <i>WskProviderNpi</i> parameter of the 
-     <a href="netvista.wskcaptureprovidernpi">
+     <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">
      WskCaptureProviderNPI</a> function.
 
 
 ### -param SockAddr [in]
 
 [in] A pointer to a 
-     <a href="netvista.sockaddr">SOCKADDR</a> structure that contains the IP address
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a> structure that contains the IP address
      and port number of the socket.
 
 
@@ -89,13 +90,13 @@ NTSTATUS WSKAPI * WskGetNameInfo(
 [in] Specifies the length, in bytes, of the buffer pointed to by the 
      <i>SockAddr</i> parameter. The value of 
      <i>SockAddrLength</i> should not exceed the size of the 
-     <a href="..\ntifs\ns-ntifs-sockaddr_storage.md">SOCKADDR_STORAGE</a> structure.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a> structure.
 
 
 ### -param NodeName [out, optional]
 
 [out] An optional pointer to a 
-     <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains a
+     <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a
      Unicode string that represents a host (node) name. On success, the Unicode host name is written as a
      Fully Qualified Domain Name (FQDN) by default. The caller must provide a UNICODE_STRING buffer large
      enough to hold the Unicode host name, which includes the terminating NULL character. If the 
@@ -107,7 +108,7 @@ NTSTATUS WSKAPI * WskGetNameInfo(
 ### -param ServiceName [out, optional]
 
 [out] An optional pointer to a 
-     <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains a
+     <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a
      Unicode string that represents a service name associated with the port number. The caller must provide a
      UNICODE_STRING buffer large enough to hold the Unicode service name, which includes the terminating NULL
      character. If the 
@@ -276,19 +277,19 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.sockaddr">SOCKADDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs-sockaddr_storage.md">SOCKADDR_STORAGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 </dt>
 <dt>
-<a href="netvista.wskcaptureprovidernpi">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
 <dt>
 <a href="..\wsk\nc-wsk-pfn_wsk_get_address_info.md">WskGetAddressInfo</a>
@@ -298,5 +299,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PFN_WSK_GET_NAME_INFO callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_GET_NAME_INFO callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

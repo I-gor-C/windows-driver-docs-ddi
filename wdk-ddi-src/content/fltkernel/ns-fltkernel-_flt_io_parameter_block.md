@@ -1,5 +1,5 @@
 ---
-UID: NS.FLTKERNEL._FLT_IO_PARAMETER_BLOCK
+UID: NS:fltkernel._FLT_IO_PARAMETER_BLOCK
 title: _FLT_IO_PARAMETER_BLOCK
 author: windows-driver-content
 description: The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (FLT_CALLBACK_DATA) structure.
@@ -7,8 +7,8 @@ old-location: ifsk\flt_io_parameter_block.htm
 old-project: ifsk
 ms.assetid: a62f6db3-baca-492a-b485-062fcc69f563
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK, PFLT_IO_PARAMETER_BLOCK
+ms.date: 1/9/2018
+ms.keywords: _FLT_IO_PARAMETER_BLOCK, FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FLT_IO_PARAMETER_BLOCK, *PFLT_IO_PARAMETER_BLOCK
 ---
 
 # _FLT_IO_PARAMETER_BLOCK structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure. 
+The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure. 
 
 
 
@@ -245,17 +246,17 @@ The operation originated from a user mode driver.
 
 ### -field MajorFunction
 
-The major function code for the I/O operation. Major function codes are used for IRP-based operations, fast I/O operations, and file system (FSFilter) callback operations. For more information about additional operations, see <a href="ifsk.flt_parameters">FLT_PARAMETERS</a>.
+The major function code for the I/O operation. Major function codes are used for IRP-based operations, fast I/O operations, and file system (FSFilter) callback operations. For more information about additional operations, see <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>.
 
 
 ### -field MinorFunction
 
-The minor function code for the I/O operation. This member is optional and can be <b>NULL</b>. The value of the <b>MajorFunction</b> member determines the possible values. For more information about minor function codes, see <a href="ifsk.flt_parameters">FLT_PARAMETERS</a>. 
+The minor function code for the I/O operation. This member is optional and can be <b>NULL</b>. The value of the <b>MajorFunction</b> member determines the possible values. For more information about minor function codes, see <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>. 
 
 
 ### -field OperationFlags
 
-A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The Filter Manager copies these flags from the  <b>Flags</b> member of the <a href="kernel.io_stack_location">IO_STACK_LOCATION</a> structure that is associated with the <a href="kernel.irp">IRP</a>. The following table shows the most commonly used flag values.
+A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The Filter Manager copies these flags from the  <b>Flags</b> member of the <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure that is associated with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>. The following table shows the most commonly used flag values.
 
 <table>
 <tr>
@@ -268,7 +269,7 @@ SL_CASE_SENSITIVE
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>. If this flag is set, file name comparisons should be case-sensitive. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>. If this flag is set, file name comparisons should be case-sensitive. 
 
 </td>
 </tr>
@@ -278,7 +279,7 @@ SL_EXCLUSIVE_LOCK
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a>. If this flag is set, an exclusive byte-range lock is requested. Otherwise, a shared lock is requested. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a>. If this flag is set, an exclusive byte-range lock is requested. Otherwise, a shared lock is requested. 
 
 </td>
 </tr>
@@ -288,7 +289,7 @@ SL_FAIL_IMMEDIATELY
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a>. If this flag is set, the lock request should fail if it cannot be granted immediately. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a>. If this flag is set, the lock request should fail if it cannot be granted immediately. 
 
 </td>
 </tr>
@@ -298,7 +299,7 @@ SL_FORCE_ACCESS_CHECK
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>. If this flag is set, access checks must be performed even if the value of the IRP's <b>RequestorMode</b> member is <b>KernelMode</b>. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>. If this flag is set, access checks must be performed even if the value of the IRP's <b>RequestorMode</b> member is <b>KernelMode</b>. 
 
 </td>
 </tr>
@@ -308,7 +309,7 @@ SL_FORCE_DIRECT_WRITE
 
 </td>
 <td>
-Used for IRP_MJ_WRITE and IOCTL_DISK_COPY_DATA.  If this flag is set, kernel-mode drivers can write to volume areas that they normally cannot write to because of direct write blocking. Direct write blocking was implemented for security reasons in Windows Vista and later operating systems.  This flag is checked both at the file system layer and storage stack layer.  For more information about this flag, see <a href="storage.blocking_direct_write_operations_to_volumes_and_disks">Blocking Direct Write Operations to Volumes and Disks</a>. The SL_FORCE_DIRECT_WRITE flag is available in Windows Vista and later versions of Windows.
+Used for IRP_MJ_WRITE and IOCTL_DISK_COPY_DATA.  If this flag is set, kernel-mode drivers can write to volume areas that they normally cannot write to because of direct write blocking. Direct write blocking was implemented for security reasons in Windows Vista and later operating systems.  This flag is checked both at the file system layer and storage stack layer.  For more information about this flag, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff551353">Blocking Direct Write Operations to Volumes and Disks</a>. The SL_FORCE_DIRECT_WRITE flag is available in Windows Vista and later versions of Windows.
 
 </td>
 </tr>
@@ -318,7 +319,7 @@ SL_INDEX_SPECIFIED
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a>, and <a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a>. If this flag is set, the scan for directory, quota, or extended-attribute information should begin at the entry in the list whose index is specified. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>. If this flag is set, the scan for directory, quota, or extended-attribute information should begin at the entry in the list whose index is specified. 
 
 </td>
 </tr>
@@ -328,7 +329,7 @@ SL_OPEN_PAGING_FILE
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>. If this flag is set, the file is a paging file. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>. If this flag is set, the file is a paging file. 
 
 </td>
 </tr>
@@ -338,7 +339,7 @@ SL_OPEN_TARGET_DIRECTORY
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>. If this flag is set, the file's parent directory should be opened. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>. If this flag is set, the file's parent directory should be opened. 
 
 </td>
 </tr>
@@ -348,7 +349,7 @@ SL_OVERRIDE_VERIFY_VOLUME
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="ifsk.irp_mj_read">IRP_MJ_READ</a>, and <a href="ifsk.irp_mj_write">IRP_MJ_WRITE</a>. If this flag is set, the I/O operation should be performed even if the DO_VERIFY_VOLUME flag is set on the volume's device object. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>. If this flag is set, the I/O operation should be performed even if the DO_VERIFY_VOLUME flag is set on the volume's device object. 
 
 </td>
 </tr>
@@ -358,7 +359,7 @@ SL_RESTART_SCAN
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a>, and <a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a>. If this flag is set, the scan for directory, quota, or extended-attribute information should begin at the first entry in the directory or list. Otherwise, the scan should be resumed from the previous scan. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>. If this flag is set, the scan for directory, quota, or extended-attribute information should begin at the first entry in the directory or list. Otherwise, the scan should be resumed from the previous scan. 
 
 </td>
 </tr>
@@ -368,7 +369,7 @@ SL_RETURN_SINGLE_ENTRY
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a>, and <a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a>. If this flag is set, the scan for directory, quota, or extended-attribute information should return only the first entry that is found. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>. If this flag is set, the scan for directory, quota, or extended-attribute information should return only the first entry that is found. 
 
 </td>
 </tr>
@@ -378,7 +379,7 @@ SL_WATCH_TREE
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>. If this flag is set, all subdirectories of this directory should also be watched. Otherwise, only the directory itself is to be watched. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>. If this flag is set, all subdirectories of this directory should also be watched. Otherwise, only the directory itself is to be watched. 
 
 </td>
 </tr>
@@ -388,7 +389,7 @@ SL_WRITE_THROUGH
 
 </td>
 <td>
-Used for <a href="ifsk.irp_mj_write">IRP_MJ_WRITE</a>. If this flag is set, the file data must be written through to persistent storage, not just written to the cache. 
+Used for <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>. If this flag is set, the file data must be written through to persistent storage, not just written to the cache. 
 
 </td>
 </tr>
@@ -413,11 +414,11 @@ An opaque instance pointer for the minifilter that is the target for this I/O op
 
 ### -field Parameters
 
-An <a href="ifsk.flt_parameters">FLT_PARAMETERS</a> structure that contains the parameters for the I/O operation that are specified by the <b>MajorFunction</b> and <b>MinorFunction</b> members. 
+An <a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a> structure that contains the parameters for the I/O operation that are specified by the <b>MajorFunction</b> and <b>MinorFunction</b> members. 
 
 
 ## -remarks
-The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure. The callback data structure contains a pointer to the FLT_IO_PARAMETER_BLOCK structure in its  <b>Iopb</b> member. 
+The FLT_IO_PARAMETER_BLOCK structure contains the parameters for the I/O operation that is represented by a callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure. The callback data structure contains a pointer to the FLT_IO_PARAMETER_BLOCK structure in its  <b>Iopb</b> member. 
 
 A minifilter receives a pointer to the callback data structure as the <i>Data</i> or <i>CallbackData</i> input parameter to the following callback routine types: 
 
@@ -437,7 +438,7 @@ A minifilter receives a pointer to the callback data structure as the <i>Data</i
 <a href="..\fltkernel\nc-fltkernel-pflt_generate_file_name.md">PFLT_GENERATE_FILE_NAME</a>
 
 
-A minifilter's preoperation and postoperation callback routines can modify the contents of the FLT_IO_PARAMETER_BLOCK structure for the I/O operation, except for the <b>MajorFunction</b> and <b>Reserved</b> members. If it does, it must call <a href="ifsk.fltsetcallbackdatadirty">FltSetCallbackDataDirty</a>, unless it has also modified the <b>IoStatus</b> member of the callback data structure for the operation. Otherwise, the modified values are ignored. 
+A minifilter's preoperation and postoperation callback routines can modify the contents of the FLT_IO_PARAMETER_BLOCK structure for the I/O operation, except for the <b>MajorFunction</b> and <b>Reserved</b> members. If it does, it must call <a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>, unless it has also modified the <b>IoStatus</b> member of the callback data structure for the operation. Otherwise, the modified values are ignored. 
 
 If a minifilter's preoperation callback routine modifies the parameters for an I/O operation, all minifilters below it in the minifilter instance stack will receive the modified parameters in their preoperation and postoperation callback routines. 
 
@@ -459,7 +460,7 @@ A minifilter can change the value of the <b>TargetFileObject</b> member. However
 
 A minifilter cannot safely change the value of the <b>MajorFunction</b> member. Instead, it must initiate a new I/O operation. 
 
-A minifilter can initiate an I/O operation by calling a support routine such as <a href="ifsk.fltreadfile">FltReadFile</a> or by calling <a href="ifsk.fltallocatecallbackdata">FltAllocateCallbackData</a> to allocate a callback data structure; initializing the I/O parameters in the <b>FLT_IO_PARAMETER_BLOCK</b> structure, and passing the callback data structure to <a href="ifsk.fltperformsynchronousio">FltPerformSynchronousIo</a> or <a href="ifsk.fltperformasynchronousio">FltPerformAsynchronousIo</a>. <div class="alert"><b>Note</b>  Use support routines wherever possible when initiating I/O operations.  A minifilter should allocate its own callback data only if there is no support function for a particular I/O operation.</div>
+A minifilter can initiate an I/O operation by calling a support routine such as <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a> or by calling <a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a> to allocate a callback data structure; initializing the I/O parameters in the <b>FLT_IO_PARAMETER_BLOCK</b> structure, and passing the callback data structure to <a href="..\fltkernel\nf-fltkernel-fltperformsynchronousio.md">FltPerformSynchronousIo</a> or <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>. <div class="alert"><b>Note</b>  Use support routines wherever possible when initiating I/O operations.  A minifilter should allocate its own callback data only if there is no support function for a particular I/O operation.</div>
 <div> </div>
 
 
@@ -482,106 +483,106 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 </dt>
 <dt>
-<a href="ifsk.flt_parameters">FLT_PARAMETERS</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocatecallbackdata">FltAllocateCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecallbackdata.md">FltAllocateCallbackData</a>
 </dt>
 <dt>
-<a href="ifsk.fltclearcallbackdatadirty">FltClearCallbackDataDirty</a>
+<a href="..\fltkernel\nf-fltkernel-fltclearcallbackdatadirty.md">FltClearCallbackDataDirty</a>
 </dt>
 <dt>
-<a href="ifsk.fltdecodeparameters">FltDecodeParameters</a>
+<a href="..\fltkernel\nf-fltkernel-fltdecodeparameters.md">FltDecodeParameters</a>
 </dt>
 <dt>
-<a href="ifsk.fltiscallbackdatadirty">FltIsCallbackDataDirty</a>
+<a href="..\fltkernel\nf-fltkernel-fltiscallbackdatadirty.md">FltIsCallbackDataDirty</a>
 </dt>
 <dt>
-<a href="ifsk.fltreadfile">FltReadFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetcallbackdatadirty">FltSetCallbackDataDirty</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>
 </dt>
 <dt>
-<a href="kernel.io_stack_location">IO_STACK_LOCATION</a>
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="kernel.irp">IRP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_cleanup">IRP_MJ_CLEANUP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_close">IRP_MJ_CLOSE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_device_control">IRP_MJ_DEVICE_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_file_system_control">IRP_MJ_FILE_SYSTEM_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550751">IRP_MJ_FILE_SYSTEM_CONTROL</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_flush_buffers">IRP_MJ_FLUSH_BUFFERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549235">IRP_MJ_FLUSH_BUFFERS</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_internal_device_control">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_pnp">IRP_MJ_PNP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549268">IRP_MJ_PNP</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_query_information">IRP_MJ_QUERY_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549283">IRP_MJ_QUERY_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_query_quota">IRP_MJ_QUERY_QUOTA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_query_security">IRP_MJ_QUERY_SECURITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549298">IRP_MJ_QUERY_SECURITY</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_query_volume_information">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_read">IRP_MJ_READ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_set_ea">IRP_MJ_SET_EA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549346">IRP_MJ_SET_EA</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_set_information">IRP_MJ_SET_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549366">IRP_MJ_SET_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_set_security">IRP_MJ_SET_SECURITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549407">IRP_MJ_SET_SECURITY</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_set_volume_information">IRP_MJ_SET_VOLUME_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549415">IRP_MJ_SET_VOLUME_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_shutdown">IRP_MJ_SHUTDOWN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549423">IRP_MJ_SHUTDOWN</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_write">IRP_MJ_WRITE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
@@ -600,5 +601,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_IO_PARAMETER_BLOCK structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_IO_PARAMETER_BLOCK structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

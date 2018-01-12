@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfinstaller.WdfPreDeviceRemove
+UID: NF:wdfinstaller.WdfPreDeviceRemove
 title: WdfPreDeviceRemove function
 author: windows-driver-content
 description: The co-installer's WdfPreDeviceRemove function performs any operations that the co-installer might require before a non-Plug and Play (PnP) driver's installer deletes the driver's kernel-mode service.
@@ -7,7 +7,7 @@ old-location: wdf\wdfpredeviceremove.htm
 old-project: wdf
 ms.assetid: 8cde623d-a255-45ff-ab1e-bdd0c14a02a0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfPreDeviceRemove
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.)
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ ULONG WdfPreDeviceRemove(
 
 ### -param InfPath [in]
 
-A pointer to a null-terminated wide-character string that contains the directory path to the driver's INF file. The driver's installer can obtain this string by calling <a href="fs.getcurrentdirectory">GetCurrentDirectory</a>, which is described in the Microsoft Windows SDK.
+A pointer to a null-terminated wide-character string that contains the directory path to the driver's INF file. The driver's installer can obtain this string by calling <a href="https://msdn.microsoft.com/1fbe6289-2ca8-4ca8-b004-ecf513f9b0bd">GetCurrentDirectory</a>, which is described in the Microsoft Windows SDK.
 
 
 ### -param InfSectionName [in, optional]
@@ -72,11 +73,11 @@ A pointer to a null-terminated wide-character string that contains the <i>Wdf-in
 
 
 ## -remarks
-The installer for the framework-based drivers of a non-PnP device must call <b>WdfPreDeviceRemove</b> before the installer calls <a href="base.deleteservice">DeleteService</a>.
+The installer for the framework-based drivers of a non-PnP device must call <b>WdfPreDeviceRemove</b> before the installer calls <a href="https://msdn.microsoft.com/5b0fc714-60e0-4ae3-8fa8-ace36dab2fb0">DeleteService</a>.
 
-To obtain the address of the co-installer's <b>WdfPreDeviceRemove</b> function, the installer must call <a href="base.getprocaddress">GetProcAddress</a> after the installer has called <a href="base.loadlibrary">LoadLibrary</a> to load the co-installer.
+To obtain the address of the co-installer's <b>WdfPreDeviceRemove</b> function, the installer must call <a href="https://msdn.microsoft.com/a0d7fc09-f888-4f46-a571-d3719a627597">GetProcAddress</a> after the installer has called <a href="https://msdn.microsoft.com/d936b4dd-058c-48e1-834b-b47ef6d8ef65">LoadLibrary</a> to load the co-installer.
 
-For more information about the <b>WdfPreDeviceRemove</b> function and installers for framework-based drivers of non-PnP devices, see <a href="wdf.installing_a_non_pnp_driver">Installing a Non-PnP Driver</a>. For more information about <a href="base.deleteservice">DeleteService</a>, <a href="base.getprocaddress">GetProcAddress</a>, and <a href="base.loadlibrary">LoadLibrary</a>, see the Microsoft Windows SDK documentation.
+For more information about the <b>WdfPreDeviceRemove</b> function and installers for framework-based drivers of non-PnP devices, see <a href="https://msdn.microsoft.com/99676d85-feb2-482c-a91b-cfc48be5904c">Installing a Non-PnP Driver</a>. For more information about <a href="https://msdn.microsoft.com/5b0fc714-60e0-4ae3-8fa8-ace36dab2fb0">DeleteService</a>, <a href="https://msdn.microsoft.com/a0d7fc09-f888-4f46-a571-d3719a627597">GetProcAddress</a>, and <a href="https://msdn.microsoft.com/d936b4dd-058c-48e1-834b-b47ef6d8ef65">LoadLibrary</a>, see the Microsoft Windows SDK documentation.
 
 For a code example that uses the <b>WdfPreDeviceRemove</b> function, see the installer for the <a href="wdf.sample_kmdf_drivers">NONPNP</a> sample.
 
@@ -131,12 +132,12 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfpostdeviceremove">WdfPostDeviceRemove</a>
+<a href="..\wdfinstaller\nf-wdfinstaller-wdfpostdeviceremove.md">WdfPostDeviceRemove</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPreDeviceRemove function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPreDeviceRemove function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

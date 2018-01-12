@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGKSCAMERA_METADATA_PHOTOCONFIRMATION
+UID: NS:ksmedia.tagKSCAMERA_METADATA_PHOTOCONFIRMATION
 title: tagKSCAMERA_METADATA_PHOTOCONFIRMATION
 author: windows-driver-content
 description: This structure contains the photo confirmation metadata information that is filled by the camera driver.
@@ -7,8 +7,8 @@ old-location: stream\kscamera_metadata_photoconfirmation.htm
 old-project: stream
 ms.assetid: FA3365DC-B604-468E-AACD-AC006D2B4EAF
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION, PKSCAMERA_METADATA_PHOTOCONFIRMATION
+ms.date: 1/9/2018
+ms.keywords: tagKSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION
 ---
 
 # tagKSCAMERA_METADATA_PHOTOCONFIRMATION structure

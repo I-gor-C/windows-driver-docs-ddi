@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._TRANSACTION_ENLISTMENTS_INFORMATION
+UID: NS:wdm._TRANSACTION_ENLISTMENTS_INFORMATION
 title: _TRANSACTION_ENLISTMENTS_INFORMATION
 author: windows-driver-content
 description: The TRANSACTION_ENLISTMENTS_INFORMATION structure contains information about the enlistments that are associated with a transaction object.
@@ -7,8 +7,8 @@ old-location: kernel\transaction_enlistments_information.htm
 old-project: kernel
 ms.assetid: 8b33a7ed-6892-4b2d-9d7a-cfc43c9fbf68
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _TRANSACTION_ENLISTMENTS_INFORMATION, TRANSACTION_ENLISTMENTS_INFORMATION, *PTRANSACTION_ENLISTMENTS_INFORMATION, PTRANSACTION_ENLISTMENTS_INFORMATION
+ms.date: 1/4/2018
+ms.keywords: _TRANSACTION_ENLISTMENTS_INFORMATION, *PTRANSACTION_ENLISTMENTS_INFORMATION, TRANSACTION_ENLISTMENTS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PTRANSACTION_ENLISTMENTS_INFORMATION, TRANSACTION_ENLISTMENTS_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -62,11 +63,11 @@ The number of enlistments that are associated with a transaction object. This is
 
 ### -field EnlistmentPair
 
-A caller-allocated array of <a href="kernel.transaction_enlistment_pair">TRANSACTION_ENLISTMENT_PAIR</a> structures. 
+A caller-allocated array of <a href="..\wdm\ns-wdm-_transaction_enlistment_pair.md">TRANSACTION_ENLISTMENT_PAIR</a> structures. 
 
 
 ## -remarks
-The <b>TRANSACTION_ENLISTMENTS_INFORMATION</b> structure is used with the <a href="kernel.zwqueryinformationtransaction">ZwQueryInformationTransaction</a> routine. This routine fills in the structure's members.
+The <b>TRANSACTION_ENLISTMENTS_INFORMATION</b> structure is used with the <a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a> routine. This routine fills in the structure's members.
 
 
 ## -requirements
@@ -97,18 +98,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.transaction_enlistment_pair">TRANSACTION_ENLISTMENT_PAIR</a>
+<a href="..\wdm\ns-wdm-_transaction_enlistment_pair.md">TRANSACTION_ENLISTMENT_PAIR</a>
 </dt>
 <dt>
-<a href="kernel.transaction_information_class">TRANSACTION_INFORMATION_CLASS</a>
+<a href="..\wdm\ne-wdm-_transaction_information_class.md">TRANSACTION_INFORMATION_CLASS</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryinformationtransaction">ZwQueryInformationTransaction</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TRANSACTION_ENLISTMENTS_INFORMATION structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20TRANSACTION_ENLISTMENTS_INFORMATION structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

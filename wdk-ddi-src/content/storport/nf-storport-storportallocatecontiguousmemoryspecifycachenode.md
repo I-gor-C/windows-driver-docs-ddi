@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortAllocateContiguousMemorySpecifyCacheNode
+UID: NF:storport.StorPortAllocateContiguousMemorySpecifyCacheNode
 title: StorPortAllocateContiguousMemorySpecifyCacheNode function
 author: windows-driver-content
 description: The StorPortAllocateContiguousMemorySpecifyCacheNode routine allocates a range of physically contiguous noncached, nonpaged memory.
@@ -7,7 +7,7 @@ old-location: storage\storportallocatecontiguousmemoryspecifycachenode.htm
 old-project: storage
 ms.assetid: b2ed8c88-9ffd-4601-8fd0-c9390e9ba84d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortAllocateContiguousMemorySpecifyCacheNode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -170,7 +171,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.storport_storportirql">StorPortIrql</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
 </td>
 </tr>
 </table>

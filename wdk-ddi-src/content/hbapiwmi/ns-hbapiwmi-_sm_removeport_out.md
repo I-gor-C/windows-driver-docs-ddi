@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_REMOVEPORT_OUT
+UID: NS:hbapiwmi._SM_RemovePort_OUT
 title: _SM_RemovePort_OUT
 author: windows-driver-content
 description: The SM_RemovePort_OUT structure is used to receive output parameters from the SM_RemovePort WMI method.
@@ -7,8 +7,8 @@ old-location: storage\sm_removeport_out.htm
 old-project: storage
 ms.assetid: 7ca1bd9f-8fd4-4d9d-8571-4d6e4b721f3b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_RemovePort_OUT, *PSM_RemovePort_OUT, PSM_RemovePort_OUT, SM_RemovePort_OUT
+ms.date: 1/10/2018
+ms.keywords: _SM_RemovePort_OUT, *PSM_RemovePort_OUT, SM_RemovePort_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSM_RemovePort_OUT, SM_RemovePort_OUT
 ---
 
 # _SM_RemovePort_OUT structure
@@ -55,7 +56,7 @@ typedef struct _SM_RemovePort_OUT {
 
 ### -field HBAStatus
 
-The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.
+The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
 
 ## -remarks

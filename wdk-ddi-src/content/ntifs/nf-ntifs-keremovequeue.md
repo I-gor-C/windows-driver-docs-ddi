@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.KeRemoveQueue
+UID: NF:ntifs.KeRemoveQueue
 title: KeRemoveQueue function
 author: windows-driver-content
 description: The KeRemoveQueue routine gives the calling thread a pointer to a dequeued entry from the given queue object or allows the caller to wait, up to an optional timeout interval, on the queue object.
@@ -7,7 +7,7 @@ old-location: ifsk\keremovequeue.htm
 old-project: ifsk
 ms.assetid: 475e352a-b6ea-4e37-ad46-e94284caa105
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KeRemoveQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # KeRemoveQueue function
@@ -83,7 +84,7 @@ If the <i>WaitMode</i> parameter is <b>UserMode</b>, the kernel stack can be swa
 
 Specifying <i>WaitMode</i> as <b>KernelMode</b> in a call to <b>KeRemoveQueue</b> prevents the calling thread's kernel stack from being swapped out, as well as preventing the delivery of user-mode asynchronous procedure calls (APC). It does not prevent the delivery of kernel-mode APCs, such as those used by the I/O Manager to complete IRPs, when a thread calls <b>KeRemoveQueue</b> from IRQL PASSIVE_LEVEL. Delivery of such a kernel-mode APC does not prevent the calling thread from waiting on the queue object nor from being dispatched for execution with an entry after the kernel APC has run. 
 
-For more information about using driver-managed internal queues, see <a href="kernel.driver_managed_queues">Driver-Managed Queues</a>. 
+For more information about using driver-managed internal queues, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544165">Driver-Managed Queues</a>. 
 
 
 ## -requirements
@@ -147,15 +148,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.keinsertheadqueue">KeInsertHeadQueue</a>
+<a href="..\ntifs\nf-ntifs-keinsertheadqueue.md">KeInsertHeadQueue</a>
 </dt>
 <dt>
-<a href="ifsk.keinsertqueue">KeInsertQueue</a>
+<a href="..\ntifs\nf-ntifs-keinsertqueue.md">KeInsertQueue</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20KeRemoveQueue routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20KeRemoveQueue routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

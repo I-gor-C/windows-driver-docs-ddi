@@ -1,5 +1,5 @@
 ---
-UID: NF.strmini.StreamClassReadWriteConfig
+UID: NF:strmini.StreamClassReadWriteConfig
 title: StreamClassReadWriteConfig function
 author: windows-driver-content
 description: The StreamClassReadWriteConfig routine reads or writes configuration data for the minidriver's parent bus driver.
@@ -7,7 +7,7 @@ old-location: stream\streamclassreadwriteconfig.htm
 old-project: stream
 ms.assetid: ae8c1478-b429-4af1-a36d-96145696a990
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: StreamClassReadWriteConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Stream.lib
 req.dll: 
 req.irql: 
+req.typenames: *PSTREAM_PRIORITY, STREAM_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ BOOLEAN StreamClassReadWriteConfig(
 
 ### -param HwDeviceExtension [in]
 
-Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="stream.hw_stream_request_block">HW_STREAM_REQUEST_BLOCK</a>, <a href="stream.hw_stream_object">HW_STREAM_OBJECT</a>, <a href="stream.hw_time_context">HW_TIME_CONTEXT</a>, and <a href="stream.port_configuration_information">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
+Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
 
 ### -param Read [in]

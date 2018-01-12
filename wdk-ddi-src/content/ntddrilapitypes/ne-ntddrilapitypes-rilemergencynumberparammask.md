@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILEMERGENCYNUMBERPARAMMASK
+UID: NE:ntddrilapitypes.RILEMERGENCYNUMBERPARAMMASK
 title: RILEMERGENCYNUMBERPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilemergencynumberparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e8365373-130b-485c-9117-89be6153be52
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILEMERGENCYNUMBERPARAMMASK, RILEMERGENCYNUMBERPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILEMERGENCYNUMBERPARAMMASK
 ---
 
 # RILEMERGENCYNUMBERPARAMMASK enumeration

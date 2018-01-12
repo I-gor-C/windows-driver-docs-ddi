@@ -1,5 +1,5 @@
 ---
-UID: NF.hbaapi.HBA_GetVendorLibraryAttributes
+UID: NF:hbaapi.HBA_GetVendorLibraryAttributes
 title: HBA_GetVendorLibraryAttributes function
 author: windows-driver-content
 description: The HBA_GetVendorLibraryAttributes routine retrieves the vendor-specific attributes of the fibre channel HBA API library.
@@ -7,7 +7,7 @@ old-location: storage\hba_getvendorlibraryattributes.htm
 old-project: storage
 ms.assetid: 43c55364-1f73-4413-99fb-27c85600d7a6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: HBA_GetVendorLibraryAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hbaapi.lib
 req.dll: Hbaapi.dll
 req.irql: 
+req.typenames: HBA_WWNTYPE
 ---
 
 # HBA_GetVendorLibraryAttributes function
@@ -56,7 +57,7 @@ HBA_UINT32 HBA_API HBA_GetVendorLibraryAttributes(
 
 ### -param AdapterIndex [in]
 
-Contains an adapter index that identifies which library to query. Each library is associated with one or more HBAs. This routine uses an index to identify the HBA so that the caller does not have to open the adapter to obtain a name or handle. The HBA API library can be associated with more than one HBA, so the same library attributes might be retrieved for different HBAs. The adapter index must be within the range of values returned by <a href="storage.hba_getnumberofadapters">HBA_GetNumberOfAdapters</a>. 
+Contains an adapter index that identifies which library to query. Each library is associated with one or more HBAs. This routine uses an index to identify the HBA so that the caller does not have to open the adapter to obtain a name or handle. The HBA API library can be associated with more than one HBA, so the same library attributes might be retrieved for different HBAs. The adapter index must be within the range of values returned by <a href="..\hbaapi\nf-hbaapi-hba_getnumberofadapters.md">HBA_GetNumberOfAdapters</a>. 
 
 
 ### -param Attributes [out]
@@ -69,7 +70,7 @@ The <b>HBA_GetVendorLibraryAttributes</b> routine returns a value that indicates
 
 
 ## -remarks
-The <b>HBA_GetVendorLibraryAttributes</b> routine, as defined by the T11 committee's <i>Fibre Channel HBA API</i> specification, retrieves information about a vendor-supplied HBA API library, and the related routine <a href="storage.hba_getwrapperlibraryattributes">HBA_GetWrapperLibraryAttributes</a> reports the characteristics of a system-supplied wrapper library that works with the vendor library to provide the fibre channel HBA API. 
+The <b>HBA_GetVendorLibraryAttributes</b> routine, as defined by the T11 committee's <i>Fibre Channel HBA API</i> specification, retrieves information about a vendor-supplied HBA API library, and the related routine <a href="..\hbaapi\nf-hbaapi-hba_getwrapperlibraryattributes.md">HBA_GetWrapperLibraryAttributes</a> reports the characteristics of a system-supplied wrapper library that works with the vendor library to provide the fibre channel HBA API. 
 
 In particular, the <b>HBA_GetVendorLibraryAttributes</b> routine allows the caller to determine whether a compatible library is installed.
 
@@ -127,10 +128,10 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hba_getnumberofadapters">HBA_GetNumberOfAdapters</a>
+<a href="..\hbaapi\nf-hbaapi-hba_getnumberofadapters.md">HBA_GetNumberOfAdapters</a>
 </dt>
 <dt>
-<a href="storage.hba_getwrapperlibraryattributes">HBA_GetWrapperLibraryAttributes</a>
+<a href="..\hbaapi\nf-hbaapi-hba_getwrapperlibraryattributes.md">HBA_GetWrapperLibraryAttributes</a>
 </dt>
 <dt>
 <a href="..\hbaapi\ns-hbaapi-hba_libraryattributes.md">HBA_LibraryAttributes</a>
@@ -140,5 +141,5 @@ DLL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_GetVendorLibraryAttributes routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_GetVendorLibraryAttributes routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

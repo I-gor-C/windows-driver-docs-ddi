@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsNotifications.AllocNotificationBuffer
+UID: NF:portcls.IPortClsNotifications.AllocNotificationBuffer
 title: IPortClsNotifications::AllocNotificationBuffer method
 author: windows-driver-content
 description: Allocates a buffer of the specified size, in the specified memory pool, for use in sending notifications, to allow for communications between audio modules and UWP apps.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL (see Remarks section)
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsNotifications::AllocNotificationBuffer method
@@ -69,7 +70,7 @@ Number of bytes to allocate.
 
 ### -param PPCNOTIFICATION*  [out]
 
-Pointer to a <a href="audio.pcnotification_buffer">PCNOTIFICATION_BUFFER</a> which the method writes the address of the allocated notification.
+Pointer to a <a href="..\portcls\ns-portcls-_pcnotification_buffer.md">PCNOTIFICATION_BUFFER</a> which the method writes the address of the allocated notification.
 
 
 ## -returns

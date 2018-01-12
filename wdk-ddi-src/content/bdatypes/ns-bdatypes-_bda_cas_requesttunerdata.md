@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_CAS_REQUESTTUNERDATA
+UID: NS:bdatypes._BDA_CAS_REQUESTTUNERDATA
 title: _BDA_CAS_REQUESTTUNERDATA
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bda_cas_requesttunerdata.htm
 old-project: stream
 ms.assetid: 09347A56-C3F8-4E0D-A557-CECB7BBC7DB8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_CAS_REQUESTTUNERDATA, BDA_CAS_REQUESTTUNERDATA, PBDA_CAS_REQUESTTUNERDATA, *PBDA_CAS_REQUESTTUNERDATA
+ms.date: 1/9/2018
+ms.keywords: _BDA_CAS_REQUESTTUNERDATA, BDA_CAS_REQUESTTUNERDATA, *PBDA_CAS_REQUESTTUNERDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: BDA_CAS_REQUESTTUNERDATA, *PBDA_CAS_REQUESTTUNERDATA
 ---
 
 # _BDA_CAS_REQUESTTUNERDATA structure

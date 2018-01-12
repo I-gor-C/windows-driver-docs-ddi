@@ -1,5 +1,5 @@
 ---
-UID: NE.ksmedia.TELEPHONY_CALLSTATE
+UID: NE:ksmedia.TELEPHONY_CALLSTATE
 title: TELEPHONY_CALLSTATE
 author: windows-driver-content
 description: The TELEPHONY_CALLSTATE enumeration defines constants that specify the state of a phone call.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TELEPHONY_CALLSTATE
 ---
 
 # TELEPHONY_CALLSTATE enumeration
@@ -127,7 +128,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.kstelephony_callinfo">KSTELEPHONY_CALLINFO</a>
+<a href="..\ksmedia\ns-ksmedia-_tagkstelephony_callinfo.md">KSTELEPHONY_CALLINFO</a>
 </dt>
 <dt>
 <a href="..\ksmedia\ne-ksmedia-telephony_providerchangeop.md">TELEPHONY_PROVIDERCHANGEOP</a>

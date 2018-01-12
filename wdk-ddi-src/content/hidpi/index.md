@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:hidpi
 ---
 
 # Hidpi.h header

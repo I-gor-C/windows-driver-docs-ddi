@@ -1,5 +1,5 @@
 ---
-UID: NS.VHF._VHF_CONFIG
+UID: NS:vhf._VHF_CONFIG
 title: _VHF_CONFIG
 author: windows-driver-content
 description: Contains initial configuration information that is provided by the HID source driver when it calls VhfCreate to create a virtual HID device.
@@ -7,8 +7,8 @@ old-location: hid\vhf_config.htm
 old-project: hid
 ms.assetid: 384BE20B-0F40-418D-B24E-9711BF7CE53A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _VHF_CONFIG, *PVHF_CONFIG, PVHF_CONFIG, VHF_CONFIG
+ms.date: 12/21/2017
+ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Contains initial configuration information that is provided by the HID source driver when it calls <a href="hid.vhfcreate">VhfCreate</a> to create a virtual HID device.
+Contains initial configuration information that is provided by the HID source driver when it calls <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a> to create a virtual HID device.
 
 
 
@@ -71,7 +72,7 @@ typedef struct _VHF_CONFIG {
 
 ### -field Size
 
-Required. Size of this structure initialized by <a href="hid.vhf_config_init">VHF_CONFIG_INIT</a>.
+Required. Size of this structure initialized by <a href="..\vhf\nf-vhf-vhf_config_init.md">VHF_CONFIG_INIT</a>.
 
 
 ### -field VhfClientContext
@@ -86,7 +87,7 @@ Optional. Size of the buffer that VHF must allocate for an asynchronous operatio
 
 ### -field DeviceObject
 
-Required. A pointer to the <a href="kernel.device_object">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="wdf.wdfdevicewdmgetdeviceobject">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a> call. 
+Required. A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetdeviceobject.md">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. 
 
 
 ### -field VendorID
@@ -121,7 +122,7 @@ Required. A pointer to a HID source driver-allocated buffer that contains the  H
 
 ### -field EvtVhfReadyForNextReadReport
 
-Optional. A pointer to an <a href="..\vhf\nc-vhf-evt_vhf_ready_for_next_read_report.md">EvtVhfReadyForNextReadReport</a> callback. The HID source driver must implement and register this callback function if it wants to handle the buffering policy for submitting HID Input Reports. If this callback is specified, VHF does not buffer those reports. The HID source driver should submit one report by calling <a href="hid.vhfreadreportsubmit">VhfReadReportSubmit</a>, each time VHF invokes   <i>EvtVhfReadyForNextReadReport</i>.
+Optional. A pointer to an <a href="..\vhf\nc-vhf-evt_vhf_ready_for_next_read_report.md">EvtVhfReadyForNextReadReport</a> callback. The HID source driver must implement and register this callback function if it wants to handle the buffering policy for submitting HID Input Reports. If this callback is specified, VHF does not buffer those reports. The HID source driver should submit one report by calling <a href="..\vhf\nf-vhf-vhfreadreportsubmit.md">VhfReadReportSubmit</a>, each time VHF invokes   <i>EvtVhfReadyForNextReadReport</i>.
 
 
 ### -field EvtVhfAsyncOperationGetFeature
@@ -198,5 +199,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20VHF_CONFIG structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20VHF_CONFIG structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

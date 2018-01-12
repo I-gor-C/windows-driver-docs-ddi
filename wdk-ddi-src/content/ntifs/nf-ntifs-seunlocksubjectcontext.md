@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.SeUnlockSubjectContext
+UID: NF:ntifs.SeUnlockSubjectContext
 title: SeUnlockSubjectContext function
 author: windows-driver-content
 description: The SeUnlockSubjectContext routine unlocks the tokens of a captured subject context that were locked by a call to SeLockSubjectContext.
@@ -7,7 +7,7 @@ old-location: ifsk\seunlocksubjectcontext.htm
 old-project: ifsk
 ms.assetid: 5b0dda8f-52de-462b-8dab-8aed86e5dc0e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: SeUnlockSubjectContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # SeUnlockSubjectContext function
@@ -131,30 +132,30 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.secapturesubjectcontext">SeCaptureSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-secapturesubjectcontext.md">SeCaptureSubjectContext</a>
 </dt>
 <dt>
-<a href="ifsk.security_subject_context">SECURITY_SUBJECT_CONTEXT</a>
+<a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
 </dt>
 <dt>
-<a href="ifsk.selocksubjectcontext">SeLockSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-selocksubjectcontext.md">SeLockSubjectContext</a>
 </dt>
 <dt>
-<a href="ifsk.seprivilegecheck">SePrivilegeCheck</a>
+<a href="..\ntifs\nf-ntifs-seprivilegecheck.md">SePrivilegeCheck</a>
 </dt>
 <dt>
-<a href="ifsk.sequeryauthenticationidtoken">SeQueryAuthenticationIdToken</a>
+<a href="..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md">SeQueryAuthenticationIdToken</a>
 </dt>
 <dt>
-<a href="ifsk.sequerysubjectcontexttoken">SeQuerySubjectContextToken</a>
+<a href="..\ntifs\nf-ntifs-sequerysubjectcontexttoken.md">SeQuerySubjectContextToken</a>
 </dt>
 <dt>
-<a href="ifsk.sereleasesubjectcontext">SeReleaseSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-sereleasesubjectcontext.md">SeReleaseSubjectContext</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeUnlockSubjectContext routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeUnlockSubjectContext routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

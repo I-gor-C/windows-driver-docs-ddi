@@ -1,5 +1,5 @@
 ---
-UID: NF.ksproxy.IKsTopology.CreateNodeInstance
+UID: NF:ksproxy.IKsTopology.CreateNodeInstance
 title: IKsTopology::CreateNodeInstance method
 author: windows-driver-content
 description: The CreateNodeInstance method requests a KS filter object to open a topology node object.
@@ -7,7 +7,7 @@ old-location: stream\ikstopology_createnodeinstance.htm
 old-project: stream
 ms.assetid: 882b47c2-8fbe-4de0-8ef3-206faaf1e990
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IKsTopology, IKsTopology::CreateNodeInstance, CreateNodeInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PIPE_STATE
 ---
 
 # IKsTopology::CreateNodeInstance method
@@ -70,7 +71,7 @@ A bitmask enumerating the type of topology node object. No flags are currently d
 
 ### -param DesiredAccess [in]
 
-An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> bitmask specifying the type of access that the caller requires to the topology node object. See <a href="kernel.zwcreatefile">ZwCreateFile</a> for a description of each access-right value.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> bitmask specifying the type of access that the caller requires to the topology node object. See <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> for a description of each access-right value.
 
 
 ### -param UnkOuter [in, optional]
@@ -131,12 +132,12 @@ Header
 <a href="..\ksproxy\nn-ksproxy-ikstopology.md">IKsTopology</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatefile">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsTopology::CreateNodeInstance method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsTopology::CreateNodeInstance method%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IRegistryKey.EnumerateKey
+UID: NF:portcls.IRegistryKey.EnumerateKey
 title: IRegistryKey::EnumerateKey method
 author: windows-driver-content
 description: The EnumerateKey method returns information about the subkeys of the open key.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IRegistryKey::EnumerateKey method
@@ -83,7 +84,7 @@ Specifies the type of information to be returned in the buffer. Set this paramet
 
 ### -param KeyInformation [out]
 
-Pointer to the key information buffer. This parameter points to a caller-allocated buffer into which the method writes the requested data. The buffer contains a structure of type <a href="kernel.key_basic_information">KEY_BASIC_INFORMATION</a>, <a href="kernel.key_full_information">KEY_FULL_INFORMATION</a>, or <a href="kernel.key_node_information">KEY_NODE_INFORMATION</a>, depending on the value of <i>KeyInformationClass</i>. The structure is followed by a string of Unicode characters whose size depends on the type of information being requested about the key.
+Pointer to the key information buffer. This parameter points to a caller-allocated buffer into which the method writes the requested data. The buffer contains a structure of type <a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>, <a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>, or <a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>, depending on the value of <i>KeyInformationClass</i>. The structure is followed by a string of Unicode characters whose size depends on the type of information being requested about the key.
 
 
 ### -param Length [in]
@@ -153,16 +154,16 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
 </dt>
 <dt>
-<a href="kernel.key_basic_information">KEY_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.key_full_information">KEY_FULL_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.key_node_information">KEY_NODE_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.zwenumeratekey">ZwEnumerateKey</a>
+<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
 </dt>
 </dl>
  

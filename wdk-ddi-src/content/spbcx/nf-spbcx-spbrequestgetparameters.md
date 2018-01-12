@@ -1,5 +1,5 @@
 ---
-UID: NF.spbcx.SpbRequestGetParameters
+UID: NF:spbcx.SpbRequestGetParameters
 title: SpbRequestGetParameters function
 author: windows-driver-content
 description: The SpbRequestGetParameters method retrieves a set of SPB-specific parameter values from an I/O request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Spbcxstubs.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -70,7 +71,7 @@ None.
 
 
 ## -remarks
-<b>SpbRequestGetParameters</b> is similar to the <a href="kmdf.wdfrequestgetparameters">WdfRequestGetParameters</a> method, but retrieves only SPB-specific information. Your SPB controller driver can call  <b>SpbRequestGetParameters</b> to retrieve SPB-specific information from I/O requests that it receives from the SPB framework extension (SpbCx). The SPB controller driver can call <b>WdfRequestGetParameters</b> to retrieve the generic request parameters from I/O requests that it receives.
+<b>SpbRequestGetParameters</b> is similar to the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a> method, but retrieves only SPB-specific information. Your SPB controller driver can call  <b>SpbRequestGetParameters</b> to retrieve SPB-specific information from I/O requests that it receives from the SPB framework extension (SpbCx). The SPB controller driver can call <b>WdfRequestGetParameters</b> to retrieve the generic request parameters from I/O requests that it receives.
 
 The following code example shows how to use <b>SpbRequestGetParameters</b> to retrieve the SPB-specific parameters from an I/O request. The  <i>spbRequest</i> variable contains an SPBREQUEST handle to the I/O request.
 
@@ -144,7 +145,7 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406210">SPB_REQUEST_PARAMETERS_INIT</a>
 </dt>
 <dt>
-<a href="kmdf.wdfrequestgetparameters">WdfRequestGetParameters</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
 </dt>
 </dl>
  

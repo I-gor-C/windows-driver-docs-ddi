@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCxProgressTransmit
+UID: NF:sercx.SerCxProgressTransmit
 title: SerCxProgressTransmit function
 author: windows-driver-content
 description: The SerCxProgressTransmit method reports the progress of the current write (transmit) operation.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ A WDFDEVICE handle to the framework device object that represents the serial con
 
 ### -param BytesTransmitted [in]
 
-The number of bytes of data that the caller copied from the transmit buffer that was obtained by the latest call to the <a href="serports.sercxretrievetransmitbuffer">SerCxRetrieveTransmitBuffer</a> method.
+The number of bytes of data that the caller copied from the transmit buffer that was obtained by the latest call to the <a href="..\sercx\nf-sercx-sercxretrievetransmitbuffer.md">SerCxRetrieveTransmitBuffer</a> method.
 
 
 ### -param TransmitStatus [in]
@@ -74,9 +75,9 @@ The current status of the transmit operation. Set this parameter to one of the f
 <li><b>SerCxStatusSuccess</b></li>
 <li><b>SerCxStatusCancelled</b></li>
 </ul>
-For more information about these values, see <a href="serports.sercx_status">SERCX_STATUS</a>.
+For more information about these values, see <a href="..\sercx\ne-sercx-_sercx_status.md">SERCX_STATUS</a>.
 
-<div class="alert"><b>Note</b>  The <b>SerCxStatusTimeout</b> value is valid only for receive operations. No interval time-out can be specified for a transmit operation. For more information, see <a href="serports.serial_timeouts">SERIAL_TIMEOUTS</a>.</div>
+<div class="alert"><b>Note</b>  The <b>SerCxStatusTimeout</b> value is valid only for receive operations. No interval time-out can be specified for a transmit operation. For more information, see <a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>.</div>
 <div> </div>
 
 ## -returns
@@ -97,7 +98,7 @@ For more information about these values, see <a href="serports.sercx_status">SER
 ## -remarks
 The serial controller driver calls this method to report progress on an outstanding write operation. Typically, the serial controller driver calls this method from its DMA completion callback (if the driver uses DMA to read the data) or from its transmit/receive DPC function (if PIO is used).
 
-If the <b>SerCxProgressTransmit</b> call does not complete all outstanding work for the write operation, the caller must call <a href="serports.sercxretrievetransmitbuffer">SerCxRetrieveTransmitBuffer</a> again to get a new buffer descriptor and continue to transmit data.
+If the <b>SerCxProgressTransmit</b> call does not complete all outstanding work for the write operation, the caller must call <a href="..\sercx\nf-sercx-sercxretrievetransmitbuffer.md">SerCxRetrieveTransmitBuffer</a> again to get a new buffer descriptor and continue to transmit data.
 
 
 ## -requirements
@@ -149,13 +150,13 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercx_status">SERCX_STATUS</a>
+<a href="..\sercx\ne-sercx-_sercx_status.md">SERCX_STATUS</a>
 </dt>
 <dt>
-<a href="serports.serial_timeouts">SERIAL_TIMEOUTS</a>
+<a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>
 </dt>
 <dt>
-<a href="serports.sercxretrievetransmitbuffer">SerCxRetrieveTransmitBuffer</a>
+<a href="..\sercx\nf-sercx-sercxretrievetransmitbuffer.md">SerCxRetrieveTransmitBuffer</a>
 </dt>
 </dl>
  

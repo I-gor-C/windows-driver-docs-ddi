@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfcompanion.WdfCompanionCreateTaskQueue
+UID: NF:wdfcompanion.WdfCompanionCreateTaskQueue
 title: WdfCompanionCreateTaskQueue function
 author: windows-driver-content
 description: For internal use only.
@@ -7,7 +7,7 @@ old-location: wdf\wdfcompanioncreatetaskqueue.htm
 old-project: wdf
 ms.assetid: 05298ffe-75e5-444e-9843-54dd063f59f5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfCompanionCreateTaskQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_TASK_QUEUE_DISPATCH_TYPE
 req.product: Windows 10 or later.
 ---
 

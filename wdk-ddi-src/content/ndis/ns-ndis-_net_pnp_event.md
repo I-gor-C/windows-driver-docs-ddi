@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NET_PNP_EVENT
+UID: NS:ndis._NET_PNP_EVENT
 title: _NET_PNP_EVENT
 author: windows-driver-content
 description: The NET_PNP_EVENT structure describes a network Plug and Play (PnP) event, an NDIS PnP event, or a power management event.
 old-location: netvista\net_pnp_event.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b68fb279-c1d4-4f0b-8b04-b17a01a65560
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NET_PNP_EVENT, *PNET_PNP_EVENT, NET_PNP_EVENT, PNET_PNP_EVENT
+ms.date: 1/8/2018
+ms.keywords: _NET_PNP_EVENT, *PNET_PNP_EVENT, NET_PNP_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNET_PNP_EVENT, NET_PNP_EVENT
 ---
 
 # _NET_PNP_EVENT structure
@@ -105,7 +106,7 @@ Indicates that the configuration has changed for a network component. For exampl
        the 
        <b>NetEventReconfigure</b> event to the TCP/IP protocol. Also, an intermediate driver typically uses
        this event as a trigger to call the 
-       <a href="netvista.ndisiminitializedeviceinstanceex">
+       <a href="..\ndis\nf-ndis-ndisiminitializedeviceinstanceex.md">
        NdisIMInitializeDeviceInstanceEx</a> function and start its virtual miniports. For more information
        about 
        <b>NetEventReconfigure</b>, see 
@@ -202,7 +203,7 @@ Indicates that a binding event failure has occurred.
 
 ### -field NetEventSwitchActivate
 
-Indicates that the Hyper-V Extensible Switch has completed activation, and switch extensions can now safely query for further switch configuration. The indication is only used in the Hyper-V Extensible Switch stack, issued by the extension miniport. See <a href="netvista.querying_the_hyper_v_extensible_switch_configuration">Querying the Hyper-V Extensible Switch Configuration</a> and <a href="netvista.ndis_switch_parameters">NDIS_SWITCH_PARAMETERS</a> for more details. 
+Indicates that the Hyper-V Extensible Switch has completed activation, and switch extensions can now safely query for further switch configuration. The indication is only used in the Hyper-V Extensible Switch stack, issued by the extension miniport. See <a href="https://msdn.microsoft.com/AF646860-01AB-4F4B-84F8-B570054B10FC">Querying the Hyper-V Extensible Switch Configuration</a> and <a href="..\ntddndis\ns-ntddndis-_ndis_switch_parameters.md">NDIS_SWITCH_PARAMETERS</a> for more details. 
 
 
 ### -field NetEventInhibitBindsAbove
@@ -236,7 +237,7 @@ This event is available starting with NDIS version 6.50 and must be used with V2
 
 ### -field NetEventRequirePause
 
-A synchronous event that indicates the protocols and filters including the miniport adapter must be paused. The protocols and filters and the miniport adapter are guaranteed to be paused when the <a href="netvista.ndismnetpnpevent">NdisMNetPnPEvent</a> routine returns. The usage rules are below.
+A synchronous event that indicates the protocols and filters including the miniport adapter must be paused. The protocols and filters and the miniport adapter are guaranteed to be paused when the <a href="..\ndis\nf-ndis-ndismnetpnpevent.md">NdisMNetPnPEvent</a> routine returns. The usage rules are below.
 
 <ul>
 <li>Avoid delaying between NetEventAllowStart and NetEventRequirePause events for longer than 1000 milliseconds to prevent delay in user applications.</li>
@@ -250,7 +251,7 @@ This event is available starting with NDIS version 6.50 and must be used with V2
 
 ### -field NetEventAllowStart
 
-An asynchronous event that indicates the protocols and filters including the miniport adapter does not need to be paused. The usage rules are below. There is no guaranteed pause state for any driver in the protocols and filters after the <a href="netvista.ndismnetpnpevent">NdisMNetPnPEvent</a> routine returns. 
+An asynchronous event that indicates the protocols and filters including the miniport adapter does not need to be paused. The usage rules are below. There is no guaranteed pause state for any driver in the protocols and filters after the <a href="..\ndis\nf-ndis-ndismnetpnpevent.md">NdisMNetPnPEvent</a> routine returns. 
 
 <ul>
 <li>This event can only be issued after <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> begins and must not be issued after <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> returns.</li>
@@ -347,7 +348,7 @@ The buffer can contain protocol-specific data. The protocol driver is responsibl
 ### -field NetEventBindList
 
 The buffer contains a revised binding list for the network component that the 
-       <a href="netvista.net_pnp_event_notification">
+       <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">
        NET_PNP_EVENT_NOTIFICATION</a> structure is being passed to. The bind list, which is a series of
        null-terminated Unicode strings, has a REG_MULTI_SZ format. Each of the strings is an adapter name.
        TDI clients that are bound to a protocol use this bind list to reorder their bindings. The protocol
@@ -372,16 +373,16 @@ The buffer is a ULONG that contains a bitmask. When the NDIS_DEVICE_WAKE_UP_ENAB
 ### -field NetEventPause
 
 The buffer contains an 
-       <a href="netvista.ndis_protocol_pause_parameters">
+       <a href="..\ndis\ns-ndis-_ndis_protocol_pause_parameters.md">
        NDIS_PROTOCOL_PAUSE_PARAMETERS</a> structure.
 
 
 ### -field NetEventRestart
 
 The buffer might contain NULL or an 
-       <a href="netvista.ndis_protocol_restart_parameters">
+       <a href="..\ndis\ns-ndis-_ndis_protocol_restart_parameters.md">
        NDIS_PROTOCOL_RESTART_PARAMETERS</a> structure. NDIS provides a pointer to an 
-       <a href="netvista.ndis_restart_attributes">NDIS_RESTART_ATTRIBUTES</a> structure
+       <a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">NDIS_RESTART_ATTRIBUTES</a> structure
        in the 
        <b>RestartAttributes</b> member of the NDIS_PROTOCOL_RESTART_PARAMETERS structure. 
 
@@ -391,7 +392,7 @@ The buffer might contain NULL or an
 ### -field NetEventPortActivation
 
 The buffer contains the first entry in a list of 
-       <a href="netvista.ndis_port">NDIS_PORT</a> structures that identify the ports
+       <a href="..\ntddndis\ns-ntddndis-_ndis_port.md">NDIS_PORT</a> structures that identify the ports
        that NDIS will activate. You can use the 
        <b>Next</b> member of the NDIS_PORT structure to get the next structure in the list.
 
@@ -403,7 +404,7 @@ The buffer contains an array of port numbers, of type NDIS_PORT_NUMBER (defined 
        divide the value of the 
        <b>BufferLength</b> member, which is in the <b>NET_PNP_EVENT</b> structure that is specified in the 
        <b>NetPnPEvent</b> member of 
-       <a href="netvista.net_pnp_event_notification">NET_PNP_EVENT_NOTIFICATION</a>,
+       <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">NET_PNP_EVENT_NOTIFICATION</a>,
        by 
        sizeof(NDIS_PORT_NUMBER).
 
@@ -433,7 +434,7 @@ The <b>Buffer</b> member is <b>NULL</b>.
 
 ### -field NetEventBindFailed
 
-The buffer contains an <a href="netvista.ndis_bind_failed_notification">NDIS_BIND_FAILED_NOTIFICATION</a> structure.
+The buffer contains an <a href="..\ndis\ns-ndis-_ndis_bind_failed_notification.md">NDIS_BIND_FAILED_NOTIFICATION</a> structure.
 
 
 ### -field NetEventSwitchActivate
@@ -493,7 +494,7 @@ An area reserved for used by a TDI client.
 In NDIS 6.0 and later versions, when the operating system issues a system PnP event or a power
     management event to a target device object that represents a miniport adapter, NDIS translates the event
     into a 
-    <a href="netvista.net_pnp_event_notification">
+    <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">
     NET_PNP_EVENT_NOTIFICATION</a> structure. The 
     <b>NetPnPEvent</b> member of the <b>NET_PNP_EVENT_NOTIFICATION</b> structure is a <b>NET_PNP_EVENT</b> structure.
 
@@ -501,7 +502,7 @@ NDIS passes a pointer to the <b>NET_PNP_EVENT</b> structure to each protocol dri
     miniport adapter by calling the protocol driver's 
     <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a> function. The
     protocol driver should save this pointer, because the pointer is an input parameter to the 
-    <a href="netvista.ndiscompletenetpnpevent">NdisCompleteNetPnPEvent</a> function,
+    <a href="..\ndis\nf-ndis-ndiscompletenetpnpevent.md">NdisCompleteNetPnPEvent</a> function,
     which the driver calls to complete the call to 
     <i>ProtocolNetPnPEvent</i> asynchronously.
 
@@ -517,7 +518,7 @@ If the <b>NetEvent</b> member of the <b>NET_PNP_EVENT</b> structure is set to <b
 
 After the protocol or filter driver  returns from <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a> or <a href="..\ndis\nc-ndis-filter_net_pnp_event.md">FilterNetPnPEvent</a>, NDIS will not pause and restart these drivers during power-state transitions if the following conditions are true:
 
-The underlying miniport driver sets the <b>NDIS_MINIPORT_ATTRIBUTES_NO_PAUSE_ON_SUSPEND</b> flag in the <a href="netvista.ndis_miniport_adapter_registration_attributes">NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure. The driver passes a pointer to this structure in its call to the <a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a> function.
+The underlying miniport driver sets the <b>NDIS_MINIPORT_ATTRIBUTES_NO_PAUSE_ON_SUSPEND</b> flag in the <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_registration_attributes.md">NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure. The driver passes a pointer to this structure in its call to the <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a> function.
 
 
 All filter drivers that are attached to the miniport driver support NDIS 6.30 or later versions of NDIS.
@@ -564,34 +565,34 @@ Header
 <a href="..\ndis\nc-ndis-filter_net_pnp_event.md">FilterNetPnPEvent</a>
 </dt>
 <dt>
-<a href="netvista.ndis_bind_failed_notification">NDIS_BIND_FAILED_NOTIFICATION</a>
+<a href="..\ndis\ns-ndis-_ndis_bind_failed_notification.md">NDIS_BIND_FAILED_NOTIFICATION</a>
 </dt>
 <dt>
-<a href="netvista.ndis_port">NDIS_PORT</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_port.md">NDIS_PORT</a>
 </dt>
 <dt>
-<a href="netvista.ndis_protocol_pause_parameters">
+<a href="..\ndis\ns-ndis-_ndis_protocol_pause_parameters.md">
    NDIS_PROTOCOL_PAUSE_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_protocol_restart_parameters">
+<a href="..\ndis\ns-ndis-_ndis_protocol_restart_parameters.md">
    NDIS_PROTOCOL_RESTART_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_restart_attributes">NDIS_RESTART_ATTRIBUTES</a>
+<a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">NDIS_RESTART_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="netvista.ndis_switch_parameters">NDIS_SWITCH_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_parameters.md">NDIS_SWITCH_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndiscompletenetpnpevent">NdisCompleteNetPnPEvent</a>
+<a href="..\ndis\nf-ndis-ndiscompletenetpnpevent.md">NdisCompleteNetPnPEvent</a>
 </dt>
 <dt>
-<a href="netvista.ndisiminitializedeviceinstanceex">
+<a href="..\ndis\nf-ndis-ndisiminitializedeviceinstanceex.md">
    NdisIMInitializeDeviceInstanceEx</a>
 </dt>
 <dt>
-<a href="netvista.net_pnp_event_notification">NET_PNP_EVENT_NOTIFICATION</a>
+<a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">NET_PNP_EVENT_NOTIFICATION</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
@@ -600,12 +601,12 @@ Header
 <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
 </dt>
 <dt>
-<a href="netvista.querying_the_hyper_v_extensible_switch_configuration">Querying the Hyper-V Extensible Switch Configuration</a>
+<a href="https://msdn.microsoft.com/AF646860-01AB-4F4B-84F8-B570054B10FC">Querying the Hyper-V Extensible Switch Configuration</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NET_PNP_EVENT structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_PNP_EVENT structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

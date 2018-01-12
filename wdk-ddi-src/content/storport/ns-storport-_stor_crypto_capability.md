@@ -1,5 +1,5 @@
 ---
-UID: NS.STORPORT._STOR_CRYPTO_CAPABILITY
+UID: NS:storport._STOR_CRYPTO_CAPABILITY
 title: _STOR_CRYPTO_CAPABILITY
 author: windows-driver-content
 description: Reserved for system use.
@@ -7,8 +7,8 @@ old-location: storage\stor_crypto_capability.htm
 old-project: storage
 ms.assetid: AC8EBE07-92D6-4985-A575-8AD3321D29FB
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STOR_CRYPTO_CAPABILITY, *PSTOR_CRYPTO_CAPABILITY, PSTOR_CRYPTO_CAPABILITY, STOR_CRYPTO_CAPABILITY
+ms.date: 1/10/2018
+ms.keywords: _STOR_CRYPTO_CAPABILITY, STOR_CRYPTO_CAPABILITY, *PSTOR_CRYPTO_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STOR_CRYPTO_CAPABILITY, *PSTOR_CRYPTO_CAPABILITY
 req.product: Windows 10 or later.
 ---
 

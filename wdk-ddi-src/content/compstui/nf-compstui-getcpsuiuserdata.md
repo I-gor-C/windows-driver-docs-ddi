@@ -1,5 +1,5 @@
 ---
-UID: NF.compstui.GetCPSUIUserData
+UID: NF:compstui.GetCPSUIUserData
 title: GetCPSUIUserData function
 author: windows-driver-content
 description: CPSUI's GetCPSUIUserData function retrieves data that was previously stored using the SetCPSUIUserData function.
@@ -7,7 +7,7 @@ old-location: print\getcpsuiuserdata.htm
 old-project: print
 ms.assetid: 2a0a74cd-2dcf-4485-8941-7f205dcecede
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: GetCPSUIUserData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Compstui.lib
 req.dll: Compstui.dll
 req.irql: 
+req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ---
 
 # GetCPSUIUserData function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-CPSUI's <b>GetCPSUIUserData</b> function retrieves data that was previously stored using the <a href="print.setcpsuiuserdata">SetCPSUIUserData</a> function.
+CPSUI's <b>GetCPSUIUserData</b> function retrieves data that was previously stored using the <a href="..\compstui\nf-compstui-setcpsuiuserdata.md">SetCPSUIUserData</a> function.
 
 
 
@@ -59,11 +60,11 @@ Caller-supplied handle to a property sheet dialog box. For more information, see
 
 
 ## -returns
-If the operation succeeds, the function returns the value that was previously supplied to <a href="print.setcpsuiuserdata">SetCPSUIUserData</a>; otherwise the function returns zero.
+If the operation succeeds, the function returns the value that was previously supplied to <a href="..\compstui\nf-compstui-setcpsuiuserdata.md">SetCPSUIUserData</a>; otherwise the function returns zero.
 
 
 ## -remarks
-The <b>GetCPSUIUserData</b> function should only be called from within a dialog box procedure that has been associated with a dialog box by using a <a href="print.dlgpage">DLGPAGE</a> or an <a href="print.extpush">EXTPUSH</a> structure.
+The <b>GetCPSUIUserData</b> function should only be called from within a dialog box procedure that has been associated with a dialog box by using a <a href="..\compstui\ns-compstui-_dlgpage.md">DLGPAGE</a> or an <a href="..\compstui\ns-compstui-_extpush.md">EXTPUSH</a> structure.
 
 The handle specified for <i>hDlg</i> must be the handle received as input to the dialog box procedure. (Dialog box procedures are described in the Microsoft Windows SDK documentation.)
 

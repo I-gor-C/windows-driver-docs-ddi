@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_HANDLE_DATA_BASIC
+UID: NS:dbgeng._DEBUG_HANDLE_DATA_BASIC
 title: _DEBUG_HANDLE_DATA_BASIC
 author: windows-driver-content
 description: The DEBUG_HANDLE_DATA_BASIC structure contains handle-related information about a system object.
 old-location: debugger\debug_handle_data_basic.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: c1ad22b9-9733-417a-96ae-bc5920462f4f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_HANDLE_DATA_BASIC, *PDEBUG_HANDLE_DATA_BASIC, PDEBUG_HANDLE_DATA_BASIC, DEBUG_HANDLE_DATA_BASIC
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_HANDLE_DATA_BASIC, DEBUG_HANDLE_DATA_BASIC, *PDEBUG_HANDLE_DATA_BASIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DEBUG_HANDLE_DATA_BASIC, *PDEBUG_HANDLE_DATA_BASIC
 ---
 
 # _DEBUG_HANDLE_DATA_BASIC structure

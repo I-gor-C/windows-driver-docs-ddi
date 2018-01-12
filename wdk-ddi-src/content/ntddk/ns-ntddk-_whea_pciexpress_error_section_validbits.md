@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS
+UID: NS:ntddk._WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS
 title: _WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS
 author: windows-driver-content
 description: The WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PCIEXPRESS_ERROR_SECTION structure contain valid data.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 1c4c3e9c-32a2-405a-b27d-98f8da715626
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS
+ms.keywords: _WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIEXPRESS_ERROR_VALIDBITS, WHEA_PCIEXPRESS_ERROR_VALIDBITS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS
 ---
 
 # _WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union describes which members of a <a href="whea.whea_pciexpress_error_section">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure contain valid data.
+The WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure contain valid data.
 
 
 
@@ -115,7 +116,7 @@ A ULONGLONG representation of the contents of the WHEA_PCIEXPRESS_ERROR_SECTION_
 
 
 ## -remarks
-A WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union is contained within the <a href="whea.whea_pciexpress_error_section">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure.
+A WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure.
 
 
 ## -requirements
@@ -147,7 +148,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_pciexpress_error_section">WHEA_PCIEXPRESS_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a>
 </dt>
 </dl>
  

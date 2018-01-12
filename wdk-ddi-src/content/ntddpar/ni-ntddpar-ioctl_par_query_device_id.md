@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpar.IOCTL_PAR_QUERY_DEVICE_ID
+UID: NI:ntddpar.IOCTL_PAR_QUERY_DEVICE_ID
 title: IOCTL_PAR_QUERY_DEVICE_ID
 author: windows-driver-content
 description: The IOCTL_PAR_QUERY_DEVICE_ID request returns the IEEE 1284 device ID of a parallel device assigned by the system-supplied function driver for parallel ports.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # IOCTL_PAR_QUERY_DEVICE_ID IOCTL

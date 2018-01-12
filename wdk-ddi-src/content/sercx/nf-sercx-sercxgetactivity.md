@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCxGetActivity
+UID: NF:sercx.SerCxGetActivity
 title: SerCxGetActivity function
 author: windows-driver-content
 description: The SerCxGetActivity method retrieves the status of pending work for the serial controller driver.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ A WDFDEVICE handle to the framework device object that represents the serial con
 
 ### -param Activity [in, out]
 
-A pointer to a caller-allocated <a href="serports.sercx_activity">SERCX_ACTIVITY</a> structure. The caller must have previously called the <a href="serports.sercx_activity_init">SERCX_ACTIVITY_INIT</a> function to initialize this structure before its initial use. Thereafter, each <b>SerCxGetActivity</b> call updates the contents of this structure to track the work items that are ready to be processed by the controller driver.
+A pointer to a caller-allocated <a href="..\sercx\ns-sercx-_sercx_activity.md">SERCX_ACTIVITY</a> structure. The caller must have previously called the <a href="..\sercx\nf-sercx-sercx_activity_init.md">SERCX_ACTIVITY_INIT</a> function to initialize this structure before its initial use. Thereafter, each <b>SerCxGetActivity</b> call updates the contents of this structure to track the work items that are ready to be processed by the controller driver.
 
 
 ## -returns
@@ -128,19 +129,19 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercx_activity">SERCX_ACTIVITY</a>
+<a href="..\sercx\ns-sercx-_sercx_activity.md">SERCX_ACTIVITY</a>
 </dt>
 <dt>
-<a href="serports.sercx_activity_init">SERCX_ACTIVITY_INIT</a>
+<a href="..\sercx\nf-sercx-sercx_activity_init.md">SERCX_ACTIVITY_INIT</a>
 </dt>
 <dt>
-<a href="serports.sercxcompletewait">SerCxCompleteWait</a>
+<a href="..\sercx\nf-sercx-sercxcompletewait.md">SerCxCompleteWait</a>
 </dt>
 <dt>
-<a href="serports.sercxprogressreceive">SerCxProgressReceive</a>
+<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 </dt>
 <dt>
-<a href="serports.sercxprogresstransmit">SerCxProgressTransmit</a>
+<a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
 </dt>
 </dl>
  

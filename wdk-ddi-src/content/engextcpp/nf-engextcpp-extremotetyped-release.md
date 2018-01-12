@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteTyped.Release
+UID: NF:engextcpp.ExtRemoteTyped.Release
 title: ExtRemoteTyped::Release method
 author: windows-driver-content
 description: The Release method releases any resources held by this object.
 old-location: debugger\extremotetyped_release.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 041f585a-bc1f-4413-9d68-ae18969e4d75
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped::Release, Release
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteTyped::Release method

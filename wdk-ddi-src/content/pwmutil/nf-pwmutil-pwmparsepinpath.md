@@ -1,5 +1,5 @@
 ---
-UID: NF.pwmutil.PwmParsePinPath
+UID: NF:pwmutil.PwmParsePinPath
 title: PwmParsePinPath function
 author: windows-driver-content
 description: Parses a pin path under the Pulse Width Modulation (PWM) controller namespace to validate its format and extract the pin number.
@@ -7,7 +7,7 @@ old-location: kernel\pwmparsepinpath.htm
 old-project: kernel
 ms.assetid: 854A2B6F-A841-4AE4-9E54-68EF048C9504
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PwmParsePinPath
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe (kernel mode)
 req.irql: 
+req.typenames: *PPTP_VENDOR_DATA_OUT, PTP_VENDOR_DATA_OUT
 req.product: Windows 10 or later.
 ---
 

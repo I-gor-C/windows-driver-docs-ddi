@@ -1,5 +1,5 @@
 ---
-UID: NF.strmini.StreamClassCompleteRequestAndMarkQueueReady
+UID: NF:strmini.StreamClassCompleteRequestAndMarkQueueReady
 title: StreamClassCompleteRequestAndMarkQueueReady function
 author: windows-driver-content
 description: The StreamClassCompleteRequestAndMarkQueueReady routine completes a request, and signals the class driver that the minidriver is ready to receive a new request of the same type.
@@ -7,7 +7,7 @@ old-location: stream\streamclasscompleterequestandmarkqueueready.htm
 old-project: stream
 ms.assetid: 10d08fe7-13ab-4bdb-ab91-bac3822de8ee
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: StreamClassCompleteRequestAndMarkQueueReady
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Stream.lib
 req.dll: 
 req.irql: 
+req.typenames: *PSTREAM_PRIORITY, STREAM_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID StreamClassCompleteRequestAndMarkQueueReady(
 
 ### -param Srb [in]
 
-Pointer to the <a href="stream.hw_stream_request_block">HW_STREAM_REQUEST_BLOCK</a> that the minidriver has completed processing.
+Pointer to the <a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a> that the minidriver has completed processing.
 
 
 ## -returns
@@ -107,18 +108,18 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="stream.hw_stream_request_block">HW_STREAM_REQUEST_BLOCK</a>
+<a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="stream.streamclassdevicenotification">StreamClassDeviceNotification</a>
+<a href="..\strmini\nf-strmini-streamclassdevicenotification.md">StreamClassDeviceNotification</a>
 </dt>
 <dt>
-<a href="stream.streamclassstreamnotification">StreamClassStreamNotification</a>
+<a href="..\strmini\nf-strmini-streamclassstreamnotification.md">StreamClassStreamNotification</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20StreamClassCompleteRequestAndMarkQueueReady routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20StreamClassCompleteRequestAndMarkQueueReady routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

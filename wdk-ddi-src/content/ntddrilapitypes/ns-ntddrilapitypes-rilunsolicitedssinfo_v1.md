@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILUNSOLICITEDSSINFO_V1
+UID: NS:ntddrilapitypes.RILUNSOLICITEDSSINFO_V1
 title: RILUNSOLICITEDSSINFO_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilunsolicitedssinfo_v1.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c9681207-6cdd-40b6-8878-7ea37f383e4f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1, LPRILUNSOLICITEDSSINFO_V1, *LPRILUNSOLICITEDSSINFO_V1
+ms.date: 1/8/2018
+ms.keywords: RILUNSOLICITEDSSINFO_V1, *LPRILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1
 ---
 
 # RILUNSOLICITEDSSINFO_V1 structure

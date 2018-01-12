@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_CLEAR_STATS
+UID: NI:ntddser.IOCTL_SERIAL_CLEAR_STATS
 title: IOCTL_SERIAL_CLEAR_STATS
 author: windows-driver-content
 description: The IOCTL_SERIAL_CLEAR_STATS request clears the performance statistics for a serial device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_CLEAR_STATS IOCTL

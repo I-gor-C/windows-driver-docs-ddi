@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltFastIoMdlWriteComplete
+UID: NF:fltkernel.FltFastIoMdlWriteComplete
 title: FltFastIoMdlWriteComplete function
 author: windows-driver-content
 description: The FltFastIoMdlWriteComplete routine frees the resources that FltFastIoPrepareMdlWrite allocated.
@@ -7,7 +7,7 @@ old-location: ifsk\fltfastiomdlwritecomplete.htm
 old-project: ifsk
 ms.assetid: 7B67BB47-6F95-4B1A-A823-F796529D5C48
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltFastIoMdlWriteComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltFastIoMdlWriteComplete function
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The <b>FltFastIoMdlWriteComplete</b> routine frees the resources that <a href="ifsk.fltfastiopreparemdlwrite">FltFastIoPrepareMdlWrite</a> allocated.
+The <b>FltFastIoMdlWriteComplete</b> routine frees the resources that <a href="..\fltkernel\nf-fltkernel-fltfastiopreparemdlwrite.md">FltFastIoPrepareMdlWrite</a> allocated.
 
 
 
@@ -73,7 +74,7 @@ A pointer to a value that specifies the starting byte offset within the cache th
 
 ### -param MdlChain [in]
 
-A pointer to a linked list of memory descriptor lists (MDLs) that <a href="ifsk.fltfastiopreparemdlwrite">FltFastIoPrepareMdlWrite</a> allocated.
+A pointer to a linked list of memory descriptor lists (MDLs) that <a href="..\fltkernel\nf-fltkernel-fltfastiopreparemdlwrite.md">FltFastIoPrepareMdlWrite</a> allocated.
 
 
 ## -returns
@@ -81,11 +82,11 @@ The <b>FltFastIoMdlWriteComplete</b> routine returns <b>TRUE</b> if the operatio
 
 
 ## -remarks
-The <b>FltFastIoMdlWriteComplete</b> routine frees the memory descriptor lists (MDLs) that <a href="ifsk.fltfastiopreparemdlwrite">FltFastIoPrepareMdlWrite</a> allocated and unlocks the cache memory that <b>FltFastIoPrepareMdlWrite</b> locked.
+The <b>FltFastIoMdlWriteComplete</b> routine frees the memory descriptor lists (MDLs) that <a href="..\fltkernel\nf-fltkernel-fltfastiopreparemdlwrite.md">FltFastIoPrepareMdlWrite</a> allocated and unlocks the cache memory that <b>FltFastIoPrepareMdlWrite</b> locked.
 
 If the FO_WRITE_THROUGH flag is set on the file object pointed to by the <i>FileObject</i> parameter, <b>FltFastIoMdlWriteComplete</b> immediately flushes the cached memory to disk. This flush operation re-enters the file system and can cause <b>FltFastIoMdlWriteComplete</b> to raise an exception if the flush operation fails. 
 
-Each call to <a href="ifsk.fltfastiopreparemdlwrite">FltFastIoPrepareMdlWrite</a> must be followed by a call to <b>FltFastIoMdlWriteComplete</b>.
+Each call to <a href="..\fltkernel\nf-fltkernel-fltfastiopreparemdlwrite.md">FltFastIoPrepareMdlWrite</a> must be followed by a call to <b>FltFastIoMdlWriteComplete</b>.
 
 
 ## -requirements
@@ -159,12 +160,12 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltfastiopreparemdlwrite">FltFastIoPrepareMdlWrite</a>
+<a href="..\fltkernel\nf-fltkernel-fltfastiopreparemdlwrite.md">FltFastIoPrepareMdlWrite</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltFastIoMdlWriteComplete routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltFastIoMdlWriteComplete routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

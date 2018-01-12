@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ObReferenceObjectByHandle
+UID: NF:wdm.ObReferenceObjectByHandle
 title: ObReferenceObjectByHandle function
 author: windows-driver-content
 description: The ObReferenceObjectByHandle routine provides access validation on the object handle, and, if access can be granted, returns the corresponding pointer to the object's body.
@@ -7,7 +7,7 @@ old-location: kernel\obreferenceobjectbyhandle.htm
 old-project: kernel
 ms.assetid: 6397d96e-f3b1-4e2f-91ce-b123c9e8de81
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ObReferenceObjectByHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -227,7 +228,7 @@ If <i>AccessMode</i> is <b>UserMode</b>, the requested access is compared to the
 
 Starting with Windows 7, if <i>AccessMode</i> is <b>KernelMode</b> and handle is received from user address space, <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> issues bugcheck C4, subcode F6.
 
-If the call succeeds, a pointer to the object body is returned to the caller and the pointer reference count is incremented. Incrementing this count prevents the object from being deleted while the pointer is being referenced. The caller must decrement the reference count with <a href="kernel.obdereferenceobject">ObDereferenceObject</a> as soon as it is done with the object.
+If the call succeeds, a pointer to the object body is returned to the caller and the pointer reference count is incremented. Incrementing this count prevents the object from being deleted while the pointer is being referenced. The caller must decrement the reference count with <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> as soon as it is done with the object.
 
 
 ## -requirements
@@ -302,7 +303,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqlobpassive">IrqlObPassive</a>, <a href="devtest.wdm_targetrelationneedsref">TargetRelationNeedsRef</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547873">IrqlObPassive</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff552918">TargetRelationNeedsRef</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -313,18 +314,18 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="kernel.obdereferenceobject">ObDereferenceObject</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 </dt>
 <dt>
-<a href="kernel.obreferenceobject">ObReferenceObject</a>
+<a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
 </dt>
 <dt>
-<a href="kernel.obreferenceobjectbypointer">ObReferenceObjectByPointer</a>
+<a href="..\wdm\nf-wdm-obreferenceobjectbypointer.md">ObReferenceObjectByPointer</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ObReferenceObjectByHandle routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ObReferenceObjectByHandle routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

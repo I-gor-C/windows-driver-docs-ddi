@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CMP_GET_PLUG_HANDLE
+UID: NS:61883._CMP_GET_PLUG_HANDLE
 title: _CMP_GET_PLUG_HANDLE
 author: windows-driver-content
 description: This structure is used in getting the handle of a plug.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 4EDEE2EE-7B42-4CC9-8CFC-4690193C5D4D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CMP_GET_PLUG_HANDLE, CMP_GET_PLUG_HANDLE, *PCMP_GET_PLUG_HANDLE, PCMP_GET_PLUG_HANDLE
+ms.keywords: _CMP_GET_PLUG_HANDLE, *PCMP_GET_PLUG_HANDLE, CMP_GET_PLUG_HANDLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCMP_GET_PLUG_HANDLE, CMP_GET_PLUG_HANDLE
 ---
 
 # _CMP_GET_PLUG_HANDLE structure

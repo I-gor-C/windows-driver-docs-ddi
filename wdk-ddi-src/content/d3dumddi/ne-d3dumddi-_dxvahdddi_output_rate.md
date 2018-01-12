@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dumddi._DXVAHDDDI_OUTPUT_RATE
+UID: NE:d3dumddi._DXVAHDDDI_OUTPUT_RATE
 title: _DXVAHDDDI_OUTPUT_RATE
 author: windows-driver-content
 description: The DXVAHDDDI_OUTPUT_RATE enumeration contains values that identify the output rate that the driver should use.
@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_output_rate.htm
 old-project: display
 ms.assetid: 61418263-3159-413d-844f-83556ce6baf0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVAHDDDI_OUTPUT_RATE, DXVAHDDDI_OUTPUT_RATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVAHDDDI_OUTPUT_RATE
 ---
 
 # _DXVAHDDDI_OUTPUT_RATE enumeration
@@ -67,11 +68,11 @@ A value that specifies that the driver should use half output rate, which is whe
 
 ### -field DXVAHDDDI_OUTPUT_RATE_CUSTOM
 
-A value that specifies that the driver should use a custom output rate for the frame rate conversion or the inverse telecine. For more information about custom output rate, see <a href="display.dxvahdddi_custom_rate_data">DXVAHDDDI_CUSTOM_RATE_DATA</a>. 
+A value that specifies that the driver should use a custom output rate for the frame rate conversion or the inverse telecine. For more information about custom output rate, see <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a>. 
 
 
 ## -remarks
-For more information about output rate, see <a href="display.dxvahdddi_stream_state_output_rate_data">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a> and <a href="display.dxvahdddi_stream_data">DXVAHDDDI_STREAM_DATA</a>.
+For more information about output rate, see <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a> and <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_data.md">DXVAHDDDI_STREAM_DATA</a>.
 
 
 ## -requirements
@@ -102,18 +103,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxvahdddi_custom_rate_data">DXVAHDDDI_CUSTOM_RATE_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a>
 </dt>
 <dt>
-<a href="display.dxvahdddi_stream_data">DXVAHDDDI_STREAM_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_data.md">DXVAHDDDI_STREAM_DATA</a>
 </dt>
 <dt>
-<a href="display.dxvahdddi_stream_state_output_rate_data">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_OUTPUT_RATE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_OUTPUT_RATE enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

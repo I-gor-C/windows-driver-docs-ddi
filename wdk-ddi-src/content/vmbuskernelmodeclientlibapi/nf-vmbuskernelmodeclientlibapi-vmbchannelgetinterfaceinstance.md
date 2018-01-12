@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbChannelGetInterfaceInstance
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelGetInterfaceInstance
 title: VmbChannelGetInterfaceInstance function
 author: windows-driver-content
 description: The VmbChannelGetInterfaceInstance function gets the active interface instance, which is a GUID that uniquely identifies a channel.
 old-location: netvista\vmbchannelgetinterfaceinstance.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: BEE9581A-5FC4-4C5B-B428-B782E59720C3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbChannelGetInterfaceInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Vmbkmcl.lib
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

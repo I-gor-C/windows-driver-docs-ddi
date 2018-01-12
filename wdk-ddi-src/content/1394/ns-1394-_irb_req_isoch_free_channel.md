@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_FREE_CHANNEL
+UID: NS:1394._IRB_REQ_ISOCH_FREE_CHANNEL
 title: _IRB_REQ_ISOCH_FREE_CHANNEL
 author: windows-driver-content
 description: This structure contains the fields required to carry out a IsochFreeChannel request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_FREE_CHANNEL
 ---
 
 # _IRB_REQ_ISOCH_FREE_CHANNEL structure

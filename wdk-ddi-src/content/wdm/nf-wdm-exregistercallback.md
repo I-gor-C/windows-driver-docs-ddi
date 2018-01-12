@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ExRegisterCallback
+UID: NF:wdm.ExRegisterCallback
 title: ExRegisterCallback function
 author: windows-driver-content
 description: The ExRegisterCallback routine registers a given callback routine with a given callback object.
@@ -7,7 +7,7 @@ old-location: kernel\exregistercallback.htm
 old-project: kernel
 ms.assetid: 4537447a-17d5-4431-929c-7a8fda0f2986
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ExRegisterCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -58,7 +59,7 @@ PVOID ExRegisterCallback(
 
 ### -param CallbackObject [in, out]
 
-A pointer to a callback object obtained from the <a href="kernel.excreatecallback">ExCreateCallback</a> routine.
+A pointer to a callback object obtained from the <a href="..\wdm\nf-wdm-excreatecallback.md">ExCreateCallback</a> routine.
 
 
 ### -param CallbackFunction [in]
@@ -116,7 +117,7 @@ A driver calls <b>ExRegisterCallback</b> to register a callback routine with a s
 
 If the object allows only one registered callback routine, and such a routine is already registered, <b>ExRegisterCallback</b> returns <b>NULL</b>.
 
-Callers of <b>ExRegisterCallback</b> must save the returned pointer for use later in a call to <a href="kernel.exunregistercallback">ExUnregisterCallback</a>. The pointer is required when removing the callback routine from the list of registered callback routines for the callback object.
+Callers of <b>ExRegisterCallback</b> must save the returned pointer for use later in a call to <a href="..\wdm\nf-wdm-exunregistercallback.md">ExUnregisterCallback</a>. The pointer is required when removing the callback routine from the list of registered callback routines for the callback object.
 
 The meanings of <i>Argument1</i> and <i>Argument2</i> of the registered callback routine depend on the callback object and are defined by the component that created it. The following are the parameters for the <a href="https://msdn.microsoft.com/1f1a2fc1-e698-41f7-84e4-9db091def690">system-defined callback objects</a>:
 
@@ -148,21 +149,21 @@ If <i>Argument1</i> is PO_CB_SYSTEM_POWER_POLICY, <i>Argument2</i> is not used.
 
 If <i>Argument1</i> is PO_CB_SYSTEM_STATE_LOCK, <i>Argument2</i> is <b>FALSE</b> if the computer is about to exit system power state S0, and is <b>TRUE</b> if the computer has just reentered S0.
 
-A pointer to a <a href="kernel.ke_processor_change_notify_context">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a> structure that describes the processor change notification event. This pointer is cast to type PVOID. The callback routine must not modify the contents of this structure.
+A pointer to a <a href="..\wdm\ns-wdm-_ke_processor_change_notify_context.md">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a> structure that describes the processor change notification event. This pointer is cast to type PVOID. The callback routine must not modify the contents of this structure.
 
 A pointer to a variable that contains an NTSTATUS value. This pointer is cast to type PVOID. Under certain conditions, a callback routine can write an error status value to this variable to indicate why the new processor should not be added. A device driver must not change the value of this variable unless all three of the following conditions are true:
 
 An error occurs during the processing of the callback routine that should prevent the new processor from being added.
 
-The value of the <b>State</b> member of the <a href="kernel.ke_processor_change_notify_context">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a> structure that <i>Argument1</i> points to is <b>KeProcessorAddStartNotify</b>.
+The value of the <b>State</b> member of the <a href="..\wdm\ns-wdm-_ke_processor_change_notify_context.md">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a> structure that <i>Argument1</i> points to is <b>KeProcessorAddStartNotify</b>.
 
 The NSTATUS variable that <i>Argument2</i> points to contains the value STATUS_SUCCESS. That is, the callback routine must not overwrite an error status value that was previously written by another callback notification client.
 
-Starting with Windows Vista, the <b>\Callback\ProcessorAdd</b> callback object is available to dynamically track changes in the processor population. The <a href="kernel.keregisterprocessorchangecallback">KeRegisterProcessorChangeCallback</a> routine provides similar information, but additionally supports a KE_PROCESSOR_CHANGE_ADD_EXISTING flag that a driver can use to enumerate the processors in the initial multiprocessor system configuration. For drivers that run in Windows Server 2008 and later versions of Windows, use <b>KeRegisterProcessorChangeCallback</b> instead of the <b>\Callback\ProcessorAdd</b> callback object, if possible.
+Starting with Windows Vista, the <b>\Callback\ProcessorAdd</b> callback object is available to dynamically track changes in the processor population. The <a href="..\wdm\nf-wdm-keregisterprocessorchangecallback.md">KeRegisterProcessorChangeCallback</a> routine provides similar information, but additionally supports a KE_PROCESSOR_CHANGE_ADD_EXISTING flag that a driver can use to enumerate the processors in the initial multiprocessor system configuration. For drivers that run in Windows Server 2008 and later versions of Windows, use <b>KeRegisterProcessorChangeCallback</b> instead of the <b>\Callback\ProcessorAdd</b> callback object, if possible.
 
 For more information about callback objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540718">Callback Objects</a>.
 
-The operating system calls registered callback routines at the same IRQL at which the driver that created the callback called the <a href="kernel.exnotifycallback">ExNotifyCallback</a> routine.
+The operating system calls registered callback routines at the same IRQL at which the driver that created the callback called the <a href="..\wdm\nf-wdm-exnotifycallback.md">ExNotifyCallback</a> routine.
 
 
 ## -requirements
@@ -237,7 +238,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqlexapclte2">IrqlExApcLte2</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547751">IrqlExApcLte2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -245,24 +246,24 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.excreatecallback">ExCreateCallback</a>
+<a href="..\wdm\nf-wdm-excreatecallback.md">ExCreateCallback</a>
 </dt>
 <dt>
-<a href="kernel.exnotifycallback">ExNotifyCallback</a>
+<a href="..\wdm\nf-wdm-exnotifycallback.md">ExNotifyCallback</a>
 </dt>
 <dt>
-<a href="kernel.exunregistercallback">ExUnregisterCallback</a>
+<a href="..\wdm\nf-wdm-exunregistercallback.md">ExUnregisterCallback</a>
 </dt>
 <dt>
-<a href="kernel.ke_processor_change_notify_context">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a>
+<a href="..\wdm\ns-wdm-_ke_processor_change_notify_context.md">KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</a>
 </dt>
 <dt>
-<a href="kernel.keregisterprocessorchangecallback">KeRegisterProcessorChangeCallback</a>
+<a href="..\wdm\nf-wdm-keregisterprocessorchangecallback.md">KeRegisterProcessorChangeCallback</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExRegisterCallback routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExRegisterCallback routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

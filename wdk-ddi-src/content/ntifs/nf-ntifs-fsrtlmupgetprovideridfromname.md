@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlMupGetProviderIdFromName
+UID: NF:ntifs.FsRtlMupGetProviderIdFromName
 title: FsRtlMupGetProviderIdFromName function
 author: windows-driver-content
 description: The FsRtlMupGetProviderIdFromName routine gets the provider identifier of a network redirector that is registered with the multiple UNC provider (MUP) from the device name of the network redirector.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlmupgetprovideridfromname.htm
 old-project: ifsk
 ms.assetid: a572398c-1755-4fc6-844b-85059d4d02cb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlMupGetProviderIdFromName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlMupGetProviderIdFromName function
@@ -84,7 +85,7 @@ A file system filter driver can call the <b>FsRtlMupGetProviderIdFromName</b> ro
 
 The value of the provider identifier for a particular network redirector remains the same if the network redirector is unloaded from the system and then reloaded back into the system.
 
-To get the provider identifier of a network redirector from a file object, a file system filter driver can call the <a href="ifsk.fsrtlmupgetproviderinfofromfileobject">FsRtlMupGetProviderInfoFromFileObject</a> routine.
+To get the provider identifier of a network redirector from a file object, a file system filter driver can call the <a href="..\ntifs\nf-ntifs-fsrtlmupgetproviderinfofromfileobject.md">FsRtlMupGetProviderInfoFromFileObject</a> routine.
 
 
 ## -requirements
@@ -158,12 +159,12 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fsrtlmupgetproviderinfofromfileobject">FsRtlMupGetProviderInfoFromFileObject</a>
+<a href="..\ntifs\nf-ntifs-fsrtlmupgetproviderinfofromfileobject.md">FsRtlMupGetProviderInfoFromFileObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlMupGetProviderIdFromName routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlMupGetProviderIdFromName routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

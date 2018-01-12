@@ -1,5 +1,5 @@
 ---
-UID: NC.ks.PFNKSSETTIMER
+UID: NC:ks.PFNKSSETTIMER
 title: PFNKSSETTIMER
 author: windows-driver-content
 description: A streaming minidriver's KStrSetTimer routine is called to generate DPC timer callbacks based on presentation time.
@@ -7,7 +7,7 @@ old-location: stream\kstrsettimer.htm
 old-project: stream
 ms.assetid: c9150c02-a53e-4ffc-8cf1-ca668680cdd9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDSELECTOR
 ---
 
 # PFNKSSETTIMER callback
@@ -61,7 +62,7 @@ BOOLEAN KStrSetTimer(
 
 ### -param Context [in]
 
-Pointer to the minidriver-supplied information context. The minidriver passes the information context to <a href="stream.ksallocatedefaultclockex">KsAllocateDefaultClockEx</a> in the function's <i>DeferredContext</i> parameter when the minidriver allocates a custom DPC timer object.
+Pointer to the minidriver-supplied information context. The minidriver passes the information context to <a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a> in the function's <i>DeferredContext</i> parameter when the minidriver allocates a custom DPC timer object.
 
 
 ### -param Timer [in]
@@ -76,7 +77,7 @@ Specifies the absolute or relative time at which the timer is to expire. If the 
 
 ### -param Dpc [in]
 
-Pointer to a DPC object that the minidriver initialized using <a href="kernel.keinitializedpc">KeInitializeDpc</a>. This parameter is optional.
+Pointer to a DPC object that the minidriver initialized using <a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>. This parameter is optional.
 
 
 ## -returns
@@ -84,15 +85,15 @@ Returns <b>TRUE</b> if the timer object was already in the system timer queue. O
 
 
 ## -remarks
-Minidrivers can optionally supply a <i>KStrSetTimer</i> callback function as an argument to <a href="stream.ksallocatedefaultclockex">KsAllocateDefaultClockEx</a>.
+Minidrivers can optionally supply a <i>KStrSetTimer</i> callback function as an argument to <a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>.
 
 Typically, if a minidriver supplies a <i>KStrCorrelatedTime</i> callback function, then the minidriver also supplies a <i>KStrSetTimer</i> callback function.
 
 If minidrivers supply a <i>KStrSetTimer</i> callback function, the function must set timers, based on deltas, to the current presentation time in order to generate event notifications.
 
-If a minidriver supplies a <i>KStrSetTimer</i> callback function, the minidriver must also supply a <a href="stream.kstrcanceltimer">KStrCancelTimer</a> callback function to cancel the timer.
+If a minidriver supplies a <i>KStrSetTimer</i> callback function, the minidriver must also supply a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a> callback function to cancel the timer.
 
-The minidriver supplied <i>KStrSetTimer</i> must have the same characteristics as <a href="kernel.kesettimerex">KeSetTimerEx</a>.
+The minidriver supplied <i>KStrSetTimer</i> must have the same characteristics as <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>.
 
 
 ## -requirements
@@ -124,21 +125,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksallocatedefaultclockex">KsAllocateDefaultClockEx</a>
+<a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
 </dt>
 <dt>
-<a href="kernel.keinitializedpc">KeInitializeDpc</a>
+<a href="..\wdm\nf-wdm-keinitializedpc.md">KeInitializeDpc</a>
 </dt>
 <dt>
-<a href="kernel.kesettimerex">KeSetTimerEx</a>
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
 </dt>
 <dt>
-<a href="stream.kstrcanceltimer">KStrCancelTimer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrSetTimer routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrSetTimer routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

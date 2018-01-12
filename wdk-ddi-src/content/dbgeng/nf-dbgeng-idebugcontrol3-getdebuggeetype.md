@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.GetDebuggeeType
+UID: NF:dbgeng.IDebugControl3.GetDebuggeeType
 title: IDebugControl3::GetDebuggeeType method
 author: windows-driver-content
 description: The GetDebuggeeType method describes the nature of the current target.
 old-location: debugger\getdebuggeetype.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 86f236fa-73f8-4071-b6da-6de2d276cbff
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::GetDebuggeeType, GetDebuggeeType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl3::GetDebuggeeType method

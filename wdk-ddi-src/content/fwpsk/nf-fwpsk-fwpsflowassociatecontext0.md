@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsFlowAssociateContext0
+UID: NF:fwpsk.FwpsFlowAssociateContext0
 title: FwpsFlowAssociateContext0 function
 author: windows-driver-content
 description: The FwpsFlowAssociateContext0 function associates a callout driver-defined context with a data flow.Note  FwpsFlowAssociateContext0 is a specific version of FwpsFlowAssociateContext.
 old-location: netvista\fwpsflowassociatecontext0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0a339457-77df-480b-adb8-9406507ec8d8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpsFlowAssociateContext0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsFlowAssociateContext0 function
@@ -78,8 +79,8 @@ The run-time identifier for the filtering layer with which the context is being 
 
 The run-time identifier for the callout in the filter engine. This identifier was returned when
      the callout driver called the 
-     <a href="netvista.fwpscalloutregister0">FwpsCalloutRegister0</a>, 
-     <a href="netvista.fwpscalloutregister1">FwpsCalloutRegister1</a>, or  <a href="netvista.fwpscalloutregister2">FwpsCalloutRegister2</a> function to
+     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>, 
+     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>, or  <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister2.md">FwpsCalloutRegister2</a> function to
      register the callout with the filter engine.
 
 
@@ -102,9 +103,9 @@ The
 <dt><b>STATUS_OBJECT_NAME_EXISTS</b></dt>
 </dl>A context is already associated with the data flow. In this case, a callout driver should first
        call the 
-       <a href="netvista.fwpsflowremovecontext0">FwpsFlowRemoveContext0</a> function
+       <a href="..\fwpsk\nf-fwpsk-fwpsflowremovecontext0.md">FwpsFlowRemoveContext0</a> function
        to remove the existing context and then call the 
-       <a href="netvista.fwpsflowassociatecontext0">FwpsFlowAssociateContext0</a> function again to associate the new context with the data flow.
+       <a href="..\fwpsk\nf-fwpsk-fwpsflowassociatecontext0.md">FwpsFlowAssociateContext0</a> function again to associate the new context with the data flow.
 <dl>
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
@@ -134,7 +135,7 @@ The <b>FwpsFlowAssociateContext0</b> function associates a single context with a
 
 You can associate multiple contexts with a flow. However, each context must be associated with a different callout. The new callout can be at the same layer as the previous one or at a different layer.
 
-For more information and sample code, see <a href="netvista.associating_context_with_a_data_flow">Associating Context with a Data Flow</a>
+For more information and sample code, see <a href="https://msdn.microsoft.com/75f5838e-626d-4a59-810e-fec9a40640ed">Associating Context with a Data Flow</a>
 and the <a href="http://go.microsoft.com/fwlink/p/?LinkId=618934">Windows Filtering Platform Sample</a>.
 
 
@@ -204,19 +205,19 @@ IRQL
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_flow_delete_notify_fn0.md">flowDeleteFn</a>
 </dt>
 <dt>
-<a href="netvista.fwpscalloutregister0">FwpsCalloutRegister0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
 </dt>
 <dt>
-<a href="netvista.fwpscalloutregister1">FwpsCalloutRegister1</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
 </dt>
 <dt>
-<a href="netvista.fwpscalloutregister2">FwpsCalloutRegister2</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister2.md">FwpsCalloutRegister2</a>
 </dt>
 <dt>
-<a href="netvista.fwpsflowremovecontext0">FwpsFlowRemoveContext0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsflowremovecontext0.md">FwpsFlowRemoveContext0</a>
 </dt>
 <dt>
-<a href="netvista.associating_context_with_a_data_flow">Associating Context with a Data Flow</a>
+<a href="https://msdn.microsoft.com/75f5838e-626d-4a59-810e-fec9a40640ed">Associating Context with a Data Flow</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?LinkId=618934">Windows Filtering Platform Sample</a></dt>
 </dl>
@@ -224,5 +225,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsFlowAssociateContext0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsFlowAssociateContext0 function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NS.USB._URB_SELECT_CONFIGURATION
+UID: NS:usb._URB_SELECT_CONFIGURATION
 title: _URB_SELECT_CONFIGURATION
 author: windows-driver-content
 description: The _URB_SELECT_CONFIGURATION structure is used by client drivers to select a configuration for a USB device.
 old-location: buses\_urb_select_configuration.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: a6a4963b-64d7-4f46-bc19-16925929e7c7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: _URB_SELECT_CONFIGURATION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 req.product: Windows 10 or later.
 ---
 
@@ -74,18 +75,18 @@ Contains a handle that is used to access this configuration on return from the h
 
 ### -field Interface
 
-Specifies a variable length array of <a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATION</a> structures, each describing an interface supported by the configuration being selected.
+Specifies a variable length array of <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structures, each describing an interface supported by the configuration being selected.
 
-Before the request is sent to the host controller driver, the driver may select an alternate setting for one or more of the interfaces contained in this array by setting members of the <a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATION</a> structure for that interface. 
+Before the request is sent to the host controller driver, the driver may select an alternate setting for one or more of the interfaces contained in this array by setting members of the <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structure for that interface. 
 
-On return from the host controller driver, this member contains a <a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATION</a> structure with data describing the capabilities and format of the endpoints within that interface.
+On return from the host controller driver, this member contains a <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structure with data describing the capabilities and format of the endpoints within that interface.
 
 
 ## -remarks
-An URB_FUNCTION_SELECT_CONFIGURATION URB consists of a <b>_URB_SELECT_CONFIGURATION</b> structure followed by a sequence of variable-length array of <a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATION</a> structures, each element in the array for each unique interface number in the configuration. Client drivers must allocate enough memory to contain one <a href="buses.usbd_pipe_information">USBD_PIPE_INFORMATION</a> structure for each endpoint in the selected interfaces. 
+An URB_FUNCTION_SELECT_CONFIGURATION URB consists of a <b>_URB_SELECT_CONFIGURATION</b> structure followed by a sequence of variable-length array of <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structures, each element in the array for each unique interface number in the configuration. Client drivers must allocate enough memory to contain one <a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a> structure for each endpoint in the selected interfaces. 
     
 
-Drivers can use the <a href="buses.usbd_createconfigurationrequestex">USBD_CreateConfigurationRequestEx</a> service routine to allocate the URB.
+Drivers can use the <a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a> service routine to allocate the URB.
     
 
 Other members that are part of this structure but not described here should be treated as opaque and considered to be reserved for system use.
@@ -110,27 +111,27 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="buses.urb">URB</a>
+<a href="..\usb\ns-usb-_urb.md">URB</a>
 </dt>
 <dt>
 <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
 </dt>
 <dt>
-<a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATION</a>
+<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
 </dt>
 <dt>
-<a href="buses.usbd_pipe_information">USBD_PIPE_INFORMATION</a>
+<a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a>
 </dt>
 <dt>
-<a href="buses.usbd_createconfigurationrequestex">USBD_CreateConfigurationRequestEx</a>
+<a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a>
 </dt>
 <dt>
-<a href="buses.usb_structures_and_enumerations">USB Structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20_URB_SELECT_CONFIGURATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_SELECT_CONFIGURATION structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

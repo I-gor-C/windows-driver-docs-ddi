@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_RESET_DEVICE
+UID: NI:ntddser.IOCTL_SERIAL_RESET_DEVICE
 title: IOCTL_SERIAL_RESET_DEVICE
 author: windows-driver-content
 description: The IOCTL_SERIAL_RESET_DEVICE request resets a serial device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_RESET_DEVICE IOCTL

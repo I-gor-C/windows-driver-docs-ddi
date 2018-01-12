@@ -1,5 +1,5 @@
 ---
-UID: NE.mfidl.MF_MEDIASOURCE_STATUS_INFO
+UID: NE:mfidl.MF_MEDIASOURCE_STATUS_INFO
 title: MF_MEDIASOURCE_STATUS_INFO
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\mf_mediasource_status_info.htm
 old-project: stream
 ms.assetid: 44A1911A-0C36-4A35-84D3-FE4934EF9CBD
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: MF_MEDIASOURCE_STATUS_INFO, MF_MEDIASOURCE_STATUS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: MF_MEDIASOURCE_STATUS_INFO
 ---
 
 # MF_MEDIASOURCE_STATUS_INFO enumeration

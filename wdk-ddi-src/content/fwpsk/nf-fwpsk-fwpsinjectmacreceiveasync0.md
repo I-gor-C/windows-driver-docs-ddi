@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsInjectMacReceiveAsync0
+UID: NF:fwpsk.FwpsInjectMacReceiveAsync0
 title: FwpsInjectMacReceiveAsync0 function
 author: windows-driver-content
 description: The FwpsInjectMacReceiveAsync0 function can reinject a previously absorbed media access control (MAC) frame (or a clone of the frame) back to the layer 2 inbound data path it was intercepted from, or inject an invented MAC frame.
 old-location: netvista\fwpsinjectmacreceiveasync0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8B03835A-98EE-4157-BD05-C52D01EE5F5E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpsInjectMacReceiveAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsInjectMacReceiveAsync0 function
@@ -38,7 +39,7 @@ req.irql: <= DISPATCH_LEVEL
 
 
 ## -description
-The <b>FwpsInjectMacReceiveAsync0</b> function can  reinject a previously absorbed media access control (MAC) frame (or a clone of the frame) back to the layer 2 inbound data path it was intercepted from, or inject an invented MAC frame.<div class="alert"><b>Note</b>  <b>FwpsInjectMacReceiveAsync0</b> is a specific version of <b>FwpsInjectMacReceiveAsync</b>. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information.</div>
+The <b>FwpsInjectMacReceiveAsync0</b> function can  reinject a previously absorbed media access control (MAC) frame (or a clone of the frame) back to the layer 2 inbound data path it was intercepted from, or inject an invented MAC frame.<div class="alert"><b>Note</b>  <b>FwpsInjectMacReceiveAsync0</b> is a specific version of <b>FwpsInjectMacReceiveAsync</b>. See <a href="https://msdn.microsoft.com/FBDF53E5-F7DE-4DEB-AC18-6D2BB59FE670">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information.</div>
 <div> </div>
 
 
@@ -65,17 +66,17 @@ NTSTATUS NTAPI FwpsInjectMacSendAsync0(
 
 ### -param injectionHandle [in]
 
-An injection handle that was previously obtained by a call to  the <a href="netvista.fwpsinjectionhandlecreate0">FwpsInjectionHandleCreate0</a> function with the <i>flags</i> parameter set to FWPS_INJECTION_TYPE_L2. 
+An injection handle that was previously obtained by a call to  the <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function with the <i>flags</i> parameter set to FWPS_INJECTION_TYPE_L2. 
 
-<div class="alert"><b>Note</b>  Set the <i>addressFamily</i> parameter of the <a href="netvista.fwpsinjectionhandlecreate0">FwpsInjectionHandleCreate0</a> function to AF_UNSPEC.</div>
+<div class="alert"><b>Note</b>  Set the <i>addressFamily</i> parameter of the <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function to AF_UNSPEC.</div>
 <div> </div>
 
 ### -param injectionContext [in, optional]
 
 An optional handle to the injection context. If specified, it can be obtained by calling the 
-     <a href="netvista.fwpsquerypacketinjectionstate0">
+     <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
      FwpsQueryPacketInjectionState0</a> function when the packet injection state 
-     <a href="netvista.fwps_packet_injection_state">FWPS_PACKET_INJECTION_STATE</a> is
+     <a href="..\fwpsk\ne-fwpsk-fwps_packet_injection_state_.md">FWPS_PACKET_INJECTION_STATE</a> is
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.
 
 
@@ -102,11 +103,11 @@ The NDIS port number  that is passed to the callout driver's <a href="..\fwpsk\n
 ### -param netBufferLists [in, out]
 
 A pointer to a 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure that describes
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that describes
      the packet data that is being injected. A callout driver allocates a NET_BUFFER_LIST structure to use to
      inject packet data by calling either the 
-     <a href="netvista.fwpsallocateclonenetbufferlist0">FwpsAllocateCloneNetBufferList0</a> function or the 
-     <a href="netvista.fwpsallocatenetbufferandnetbufferlist0">FwpsAllocateNetBufferAndNetBufferList0</a> function. The NET_BUFFER_LIST structure must begin with an
+     <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">FwpsAllocateCloneNetBufferList0</a> function or the 
+     <a href="..\fwpsk\nf-fwpsk-fwpsallocatenetbufferandnetbufferlist0.md">FwpsAllocateNetBufferAndNetBufferList0</a> function. The NET_BUFFER_LIST structure must begin with an
      IP header.
 
 
@@ -134,7 +135,7 @@ The
        function after the filter engine has completed injecting the MAC frame data, or
        when an error occurred subsequently. In case of an error, the 
        <b>Status</b> member of the completed 
-       <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure will indicate
+       <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure will indicate
        the reason for failure.
 <dl>
 <dt><b>STATUS_FWP_TCPIP_NOT_READY</b></dt>
@@ -146,7 +147,7 @@ The
 <dt><b>STATUS_FWP_INJECT_HANDLE_STALE</b></dt>
 </dl>The injection handle was not created with the 
        <i>flags</i> parameter of the 
-       <a href="netvista.fwpsinjectionhandlecreate0">
+       <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">
        FwpsInjectionHandleCreate0</a> function set to FWPS_INJECTION_TYPE_L2.
 <dl>
 <dt><b>Other status codes</b></dt>
@@ -162,7 +163,7 @@ The <i>netBufferLists</i> parameter can be a <a href="https://msdn.microsoft.com
 
 
 
-Injected frames could get classified again if the packets match the same filter as originally classified. Therefore, as with callouts at IP layers, layer 2 callouts must also protect against infinite packet inspection by calling <a href="netvista.fwpsquerypacketinjectionstate0">FwpsQueryPacketInjectionState0</a>.
+Injected frames could get classified again if the packets match the same filter as originally classified. Therefore, as with callouts at IP layers, layer 2 callouts must also protect against infinite packet inspection by calling <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a>.
 
 
 
@@ -232,27 +233,27 @@ IRQL
 <a href="..\fwpsk\nc-fwpsk-fwps_inject_complete0.md">completionFn</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.fwpsallocateclonenetbufferlist0">
+<a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
      FwpsAllocateCloneNetBufferList0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsallocatenetbufferandnetbufferlist0">
+<a href="..\fwpsk\nf-fwpsk-fwpsallocatenetbufferandnetbufferlist0.md">
      FwpsAllocateNetBufferAndNetBufferList0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsinjectionhandlecreate0">
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">
        FwpsInjectionHandleCreate0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsquerypacketinjectionstate0">FwpsQueryPacketInjectionState0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsInjectMacReceiveAsync0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectMacReceiveAsync0 function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLERIDSETTINGS
+UID: NS:ntddrilapitypes.RILCALLERIDSETTINGS
 title: RILCALLERIDSETTINGS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcalleridsettings.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3ba2cd72-4678-4ada-9777-12cbb6032628
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLERIDSETTINGS, RILCALLERIDSETTINGS, *LPRILCALLERIDSETTINGS, LPRILCALLERIDSETTINGS
+ms.date: 1/8/2018
+ms.keywords: RILCALLERIDSETTINGS, *LPRILCALLERIDSETTINGS, RILCALLERIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILCALLERIDSETTINGS, RILCALLERIDSETTINGS
 ---
 
 # RILCALLERIDSETTINGS structure

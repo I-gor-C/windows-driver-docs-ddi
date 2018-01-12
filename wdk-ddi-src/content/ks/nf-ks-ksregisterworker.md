@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsRegisterWorker
+UID: NF:ks.KsRegisterWorker
 title: KsRegisterWorker function
 author: windows-driver-content
 description: The KsRegisterWorker function handles clients registering for use of a thread.
@@ -7,7 +7,7 @@ old-location: stream\ksregisterworker.htm
 old-project: stream
 ms.assetid: b9c74a56-3f2c-4b94-8fb2-6b44075ec34b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsRegisterWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsRegisterWorker function

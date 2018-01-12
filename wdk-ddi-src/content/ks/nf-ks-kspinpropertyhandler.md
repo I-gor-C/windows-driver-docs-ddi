@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinPropertyHandler
+UID: NF:ks.KsPinPropertyHandler
 title: KsPinPropertyHandler function
 author: windows-driver-content
 description: The KsPinPropertyHandler function performs standard handling of the static members of the KSPROPSETID_Pin property set. This handling does not include KSPROPERTY_PIN_CINSTANCES or KSPROPERTY_PIN_DATAINTERSECTION.
@@ -7,7 +7,7 @@ old-location: stream\kspinpropertyhandler.htm
 old-project: stream
 ms.assetid: b721b79b-93f3-4dc8-853d-543222464341
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinPropertyHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsPinPropertyHandler function
@@ -69,7 +70,7 @@ Specifies the specific property information.
 
 ### -param Data [in, out]
 
-Specifies the data parameter mapped to a system address. This is the same parameter passed to a property handler through a <a href="stream.kspropertyhandler">KsPropertyHandler</a> callback.
+Specifies the data parameter mapped to a system address. This is the same parameter passed to a property handler through a <a href="..\ks\nf-ks-kspropertyhandler.md">KsPropertyHandler</a> callback.
 
 
 ### -param DescriptorsCount [in]

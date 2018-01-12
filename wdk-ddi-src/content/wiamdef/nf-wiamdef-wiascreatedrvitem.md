@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasCreateDrvItem
+UID: NF:wiamdef.wiasCreateDrvItem
 title: wiasCreateDrvItem function
 author: windows-driver-content
 description: The wiasCreateDrvItem function creates an IWiaDrvItem Interface object.
 old-location: image\wiascreatedrvitem.htm
-old-project: Image
+old-project: image
 ms.assetid: bc91133a-ae6a-447a-8519-65fbe2929521
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasCreateDrvItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>wiasCreateDrvItem </b>function creates an <a href="image.iwiadrvitem_interface">IWiaDrvItem Interface</a> object.
+The <b>wiasCreateDrvItem </b>function creates an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543896">IWiaDrvItem Interface</a> object.
 
 
 
@@ -77,7 +78,7 @@ Specifies a string that contains the item name with path information.
 
 ### -param pIMiniDrv [in, out]
 
-Pointer to the <a href="image.iwiaminidrv_interface">IWiaMiniDrv Interface</a> of the current minidriver.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545027">IWiaMiniDrv Interface</a> of the current minidriver.
 
 
 ### -param cbDevSpecContext 
@@ -92,7 +93,7 @@ Pointer to a memory location that receives the address of the device specific co
 
 ### -param ppIWiaDrvItem [out]
 
-Pointer to a memory location that receives the address of an <a href="image.iwiadrvitem_interface">IWiaDrvItem Interface</a> for the newly created <b>IWiaDrvItem</b> object.
+Pointer to a memory location that receives the address of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543896">IWiaDrvItem Interface</a> for the newly created <b>IWiaDrvItem</b> object.
 
 
 ## -returns
@@ -164,12 +165,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="image.wiascreatechildappitem">wiasCreateChildAppItem</a>
+<a href="..\wiamdef\nf-wiamdef-wiascreatechildappitem.md">wiasCreateChildAppItem</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20wiasCreateDrvItem function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasCreateDrvItem function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

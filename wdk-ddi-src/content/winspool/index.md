@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:winspool
 ---
 
 # Winspool.h header
@@ -42,6 +42,8 @@ Winspool.h contain these programming interfaces:
 | [_BIDI_RESPONSE_CONTAINER structure](ns-winspool-_bidi_response_container.md) | The BIDI_RESPONSE_CONTAINER structure is a container for a list of bidi responses. |
 | [_BIDI_RESPONSE_DATA structure](ns-winspool-_bidi_response_data.md) | The BIDI_RESPONSE_DATA structure holds a single bidi response. |
 | [_BINARY_CONTAINER structure](ns-winspool-_binary_container.md) | The BINARY_CONTAINER structure is a container for binary data. |
+| [_DRIVER_INFO_8A structure](ns-winspool-_driver_info_8a.md) | The DRIVER_INFO_8 structure contains printer driver information. |
+| [_DRIVER_INFO_8W structure](ns-winspool-_driver_info_8w.md) | The DRIVER_INFO_8 structure contains printer driver information. |
 
 ## Enumerations
 

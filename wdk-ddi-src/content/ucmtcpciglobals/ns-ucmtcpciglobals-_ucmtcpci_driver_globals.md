@@ -1,14 +1,14 @@
 ---
-UID: NS.UCMTCPCIGLOBALS._UCMTCPCI_DRIVER_GLOBALS
+UID: NS:ucmtcpciglobals._UCMTCPCI_DRIVER_GLOBALS
 title: _UCMTCPCI_DRIVER_GLOBALS
 author: windows-driver-content
 description: The global structure for the USB Type-C Port Controller Interface framework extension (UcmTcpciCx).
 old-location: buses\ucmtcpci_driver_globals.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 75a0e9ef-0791-4465-b671-36c86dc9116a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS, PUCMTCPCI_DRIVER_GLOBALS
+ms.date: 1/4/2018
+ms.keywords: _UCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS
 req.product: Windows 10 or later.
 ---
 

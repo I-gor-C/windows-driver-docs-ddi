@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddstor._STORAGE_DEVICE_POWER_CAP_UNITS
+UID: NE:ntddstor._STORAGE_DEVICE_POWER_CAP_UNITS
 title: _STORAGE_DEVICE_POWER_CAP_UNITS
 author: windows-driver-content
 description: The units of the maximum power threshold.
@@ -7,8 +7,8 @@ old-location: storage\storage_device_power_cap_units.htm
 old-project: storage
 ms.assetid: 199900F4-90A7-4F2E-B85E-25BF3593D50B
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_DEVICE_POWER_CAP_UNITS, PSTORAGE_DEVICE_POWER_CAP_UNITS, STORAGE_DEVICE_POWER_CAP_UNITS, *PSTORAGE_DEVICE_POWER_CAP_UNITS
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_DEVICE_POWER_CAP_UNITS, STORAGE_DEVICE_POWER_CAP_UNITS, *PSTORAGE_DEVICE_POWER_CAP_UNITS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_DEVICE_POWER_CAP_UNITS, *PSTORAGE_DEVICE_POWER_CAP_UNITS
 ---
 
 # _STORAGE_DEVICE_POWER_CAP_UNITS enumeration

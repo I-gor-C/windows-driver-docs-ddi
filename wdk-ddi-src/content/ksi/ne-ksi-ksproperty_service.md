@@ -1,5 +1,5 @@
 ---
-UID: NE.ksi.KSPROPERTY_SERVICE
+UID: NE:ksi.KSPROPERTY_SERVICE
 title: KSPROPERTY_SERVICE
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksproperty_service.htm
 old-project: stream
 ms.assetid: 771027AA-E64D-4AC8-9C52-D1F96A761FAD
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPROPERTY_SERVICE, KSPROPERTY_SERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_SERVICE
 ---
 
 # KSPROPERTY_SERVICE enumeration

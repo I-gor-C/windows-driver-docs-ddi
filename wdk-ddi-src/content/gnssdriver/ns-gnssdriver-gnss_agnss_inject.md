@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_AGNSS_INJECT
+UID: NS:gnssdriver.GNSS_AGNSS_INJECT
 title: GNSS_AGNSS_INJECT
 author: windows-driver-content
 description: This structure defines the parameters for AGNSS injection.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: B81F5D71-9928-412C-8199-787E71CE2638
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_AGNSS_INJECT, PGNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT, *PGNSS_AGNSS_INJECT
+ms.keywords: GNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT, *PGNSS_AGNSS_INJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_AGNSS_INJECT, *PGNSS_AGNSS_INJECT
 ---
 
 # GNSS_AGNSS_INJECT structure

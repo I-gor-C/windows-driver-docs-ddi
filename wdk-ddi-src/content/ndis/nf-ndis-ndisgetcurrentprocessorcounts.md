@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisGetCurrentProcessorCounts
+UID: NF:ndis.NdisGetCurrentProcessorCounts
 title: NdisGetCurrentProcessorCounts function
 author: windows-driver-content
 description: The NdisGetCurrentProcessorCounts function returns counts for the current processor that a driver can use to determine CPU usage for a particular time interval.
 old-location: netvista\ndisgetcurrentprocessorcounts.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 43a75def-0288-4615-ac85-b5e340aa11e6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisGetCurrentProcessorCounts
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisGetCurrentProcessorCounts function
@@ -171,7 +172,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>

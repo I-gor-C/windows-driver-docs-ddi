@@ -1,13 +1,13 @@
 ---
-UID: NF.rilapi.RIL_SetCallForwardingStatus
+UID: NF:rilapi.RIL_SetCallForwardingStatus
 title: RIL_SetCallForwardingStatus function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_setcallforwardingstatus.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c73e3b75-e11d-44b8-9a4a-c98ccfe1c820
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RIL_SetCallForwardingStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product: Windows 10 or later.
 ---
 

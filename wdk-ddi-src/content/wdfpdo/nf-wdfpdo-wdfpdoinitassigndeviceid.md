@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfpdo.WdfPdoInitAssignDeviceID
+UID: NF:wdfpdo.WdfPdoInitAssignDeviceID
 title: WdfPdoInitAssignDeviceID function
 author: windows-driver-content
 description: The WdfPdoInitAssignDeviceID method updates the device ID for a child device.
@@ -7,7 +7,7 @@ old-location: wdf\wdfpdoinitassigndeviceid.htm
 old-project: wdf
 ms.assetid: f8992245-42db-4ca8-afdc-e123adc0a40d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfPdoInitAssignDeviceID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WdfPdoInitAssignDeviceID</b> method updates the <a href="devinst.device_ids">device ID</a> for a child device.
+The <b>WdfPdoInitAssignDeviceID</b> method updates the <a href="https://msdn.microsoft.com/a71b64bc-319e-4133-810b-7fd417cf0af8">device ID</a> for a child device.
 
 
 
@@ -59,12 +60,12 @@ NTSTATUS WdfPdoInitAssignDeviceID(
 
 ### -param DeviceInit [in]
 
-A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure.
 
 
 ### -param DeviceID [in]
 
-A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains a device ID string. The driver can allocate the string's buffer from paged pool.
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a device ID string. The driver can allocate the string's buffer from paged pool.
 
 
 ## -returns
@@ -82,9 +83,9 @@ The method might also return other <a href="https://msdn.microsoft.com/library/w
 
 
 ## -remarks
-A device ID is typically the first item in the list of hardware IDs that a device reports. For more information about device IDs and hardware IDs, see <a href="devinst.device_identification_strings">Device Identification Strings</a> and <a href="devinst.how_setup_selects_drivers">How Setup Selects Drivers</a>.
+A device ID is typically the first item in the list of hardware IDs that a device reports. For more information about device IDs and hardware IDs, see <a href="https://msdn.microsoft.com/dae23185-63d9-4a0f-9786-c7fa66368826">Device Identification Strings</a> and <a href="devinst.how_setup_selects_drivers">How Setup Selects Drivers</a>.
 
-The driver must call <b>WdfPdoInitAssignDeviceID</b> before calling <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>. For more information about calling <b>WdfDeviceCreate</b>, see <a href="wdf.creating_a_framework_device_object">Creating a Framework Device Object</a>.
+The driver must call <b>WdfPdoInitAssignDeviceID</b> before calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information about calling <b>WdfDeviceCreate</b>, see <a href="https://msdn.microsoft.com/25023c19-a153-4bd4-9fb6-3a1bf85860aa">Creating a Framework Device Object</a>.
 
 The following code example reports a device ID that the <a href="wdf.sample_kmdf_drivers">KbFiltr</a> sample driver uses.
 
@@ -130,7 +131,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -150,7 +151,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_childdeviceinitapi">ChildDeviceInitAPI</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_initfreedevicecallback">InitFreeDeviceCallback</a>, <a href="devtest.kmdf_initfreedevicecreate">InitFreeDeviceCreate</a>, <a href="devtest.kmdf_initfreenull">InitFreeNull</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_pdodeviceinitapi">PdoDeviceInitAPI</a>, <a href="devtest.kmdf_pdoinitfreedevicecallback">PdoInitFreeDeviceCallback</a>, <a href="devtest.kmdf_pdoinitfreedevicecreate">PdoInitFreeDeviceCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975068">ChildDeviceInitAPI</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547101">InitFreeDeviceCallback</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547104">InitFreeDeviceCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547122">InitFreeNull</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550354">PdoDeviceInitAPI</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550359">PdoInitFreeDeviceCallback</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550362">PdoInitFreeDeviceCreate</a>
 </td>
 </tr>
 </table>
@@ -158,18 +159,18 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfpdoinitassigninstanceid">WdfPdoInitAssignInstanceID</a>
+<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitassigninstanceid.md">WdfPdoInitAssignInstanceID</a>
 </dt>
 <dt>
-<a href="wdf.wdfpdoinitaddhardwareid">WdfPdoInitAddHardwareID</a>
+<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitaddhardwareid.md">WdfPdoInitAddHardwareID</a>
 </dt>
 <dt>
-<a href="wdf.wdfpdoinitaddcompatibleid">WdfPdoInitAddCompatibleID</a>
+<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitaddcompatibleid.md">WdfPdoInitAddCompatibleID</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPdoInitAssignDeviceID method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPdoInitAssignDeviceID method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

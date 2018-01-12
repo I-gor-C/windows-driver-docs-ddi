@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIOWMI._MPIO_PATH_HEALTH_CLASS
+UID: NS:mpiowmi._MPIO_PATH_HEALTH_CLASS
 title: _MPIO_PATH_HEALTH_CLASS
 author: windows-driver-content
 description: The MPIO_PATH_HEALTH_CLASS structure represents the health information for a path.
@@ -7,8 +7,8 @@ old-location: storage\mpio_path_health_class.htm
 old-project: storage
 ms.assetid: 13be9014-e1ce-4b08-a264-c2828e8632ae
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MPIO_PATH_HEALTH_CLASS, *PMPIO_PATH_HEALTH_CLASS, MPIO_PATH_HEALTH_CLASS, PMPIO_PATH_HEALTH_CLASS
+ms.date: 1/10/2018
+ms.keywords: _MPIO_PATH_HEALTH_CLASS, MPIO_PATH_HEALTH_CLASS, *PMPIO_PATH_HEALTH_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MPIO_PATH_HEALTH_CLASS, *PMPIO_PATH_HEALTH_CLASS
 ---
 
 # _MPIO_PATH_HEALTH_CLASS structure

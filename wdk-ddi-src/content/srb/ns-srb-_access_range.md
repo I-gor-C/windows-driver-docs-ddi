@@ -1,5 +1,5 @@
 ---
-UID: NS.SRB._ACCESS_RANGE
+UID: NS:srb._ACCESS_RANGE
 title: _ACCESS_RANGE
 author: windows-driver-content
 description: An ACCESS_RANGE describes a memory or I/O port range used by an HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
@@ -7,8 +7,8 @@ old-location: storage\access_range.htm
 old-project: storage
 ms.assetid: 6009d11b-4f44-4591-bcb8-66e0c42d5689
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ACCESS_RANGE, ACCESS_RANGE, *PACCESS_RANGE, PACCESS_RANGE
+ms.date: 1/10/2018
+ms.keywords: _ACCESS_RANGE, ACCESS_RANGE, *PACCESS_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ACCESS_RANGE, *PACCESS_RANGE
 req.product: Windows 10 or later.
 ---
 
@@ -58,7 +59,7 @@ typedef struct _ACCESS_RANGE {
 
 ### -field RangeStart
 
-Contains an address of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff565350">SCSI_PHYSICAL_ADDRESS</a> that specifies the bus-relative base address of the range. This is an address that can be passed into <a href="storage.scsiportgetdevicebase">ScsiPortGetDeviceBase</a>.
+Contains an address of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff565350">SCSI_PHYSICAL_ADDRESS</a> that specifies the bus-relative base address of the range. This is an address that can be passed into <a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>.
 
 
 ### -field RangeLength
@@ -103,27 +104,27 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hwscsifindadapter">HwScsiFindAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
 </dt>
 <dt>
-<a href="storage.port_configuration_information__scsi_">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 </dt>
 <dt>
-<a href="storage.scsiportconvertulongtophysicaladdress">ScsiPortConvertUlongToPhysicalAddress</a>
+<a href="..\srb\nf-srb-scsiportconvertulongtophysicaladdress.md">ScsiPortConvertUlongToPhysicalAddress</a>
 </dt>
 <dt>
-<a href="storage.scsiportgetbusdata">ScsiPortGetBusData</a>
+<a href="..\srb\nf-srb-scsiportgetbusdata.md">ScsiPortGetBusData</a>
 </dt>
 <dt>
-<a href="storage.scsiportgetdevicebase">ScsiPortGetDeviceBase</a>
+<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
 </dt>
 <dt>
-<a href="storage.scsiportvalidaterange">ScsiPortValidateRange</a>
+<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ACCESS_RANGE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ACCESS_RANGE structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILSYSTEMSELECTIONPREFSPARAMMASK
+UID: NE:ntddrilapitypes.RILSYSTEMSELECTIONPREFSPARAMMASK
 title: RILSYSTEMSELECTIONPREFSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsystemselectionprefsparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 69560c05-8a54-4a67-a441-2b3c2ec4c332
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILSYSTEMSELECTIONPREFSPARAMMASK, RILSYSTEMSELECTIONPREFSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSYSTEMSELECTIONPREFSPARAMMASK
 ---
 
 # RILSYSTEMSELECTIONPREFSPARAMMASK enumeration

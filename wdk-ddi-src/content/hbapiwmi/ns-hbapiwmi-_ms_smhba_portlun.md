@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._MS_SMHBA_PORTLUN
+UID: NS:hbapiwmi._MS_SMHBA_PORTLUN
 title: _MS_SMHBA_PORTLUN
 author: windows-driver-content
 description: The MS_SMHBA_PORTLUN structure reports target LUN information that is associated with a port.
@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_portlun.htm
 old-project: storage
 ms.assetid: cf62685f-7b4d-4671-a755-d59a593bf5d6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MS_SMHBA_PORTLUN, *PMS_SMHBA_PORTLUN, MS_SMHBA_PORTLUN, PMS_SMHBA_PORTLUN
+ms.date: 1/10/2018
+ms.keywords: _MS_SMHBA_PORTLUN, MS_SMHBA_PORTLUN, *PMS_SMHBA_PORTLUN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MS_SMHBA_PORTLUN, *PMS_SMHBA_PORTLUN
 ---
 
 # _MS_SMHBA_PORTLUN structure

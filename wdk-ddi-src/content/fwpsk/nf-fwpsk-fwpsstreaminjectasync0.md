@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsStreamInjectAsync0
+UID: NF:fwpsk.FwpsStreamInjectAsync0
 title: FwpsStreamInjectAsync0 function
 author: windows-driver-content
 description: The FwpsStreamInjectAsync0 function injects TCP data segments into a TCP data stream.Note  FwpsStreamInjectAsync0 is a specific version of FwpsStreamInjectAsync.
 old-location: netvista\fwpsstreaminjectasync0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d72c3067-21df-40ee-a898-100fcdc5eaca
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpsStreamInjectAsync0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsStreamInjectAsync0 function
@@ -67,7 +68,7 @@ NTSTATUS NTAPI FwpsStreamInjectAsync0(
 ### -param injectionHandle [in]
 
 An injection handle that was previously created by a call to the 
-     <a href="netvista.fwpsinjectionhandlecreate0">
+     <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">
      FwpsInjectionHandleCreate0</a> function.
 
 
@@ -93,8 +94,8 @@ A run-time identifier that specifies the data flow into which to inject the data
 
 The run-time identifier for the callout in the filter engine. This identifier was returned when
      the callout driver called either the 
-     <a href="netvista.fwpscalloutregister0">FwpsCalloutRegister0</a> or 
-     <a href="netvista.fwpscalloutregister1">FwpsCalloutRegister1</a> functions to
+     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a> or 
+     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a> functions to
      register the callout with the filter engine.
 
 
@@ -104,7 +105,7 @@ The run-time identifier for the filtering layer at which the data stream is bein
      value must be either FWPS_LAYER_STREAM_V4 or FWPS_LAYER_STREAM_V6. The run-time identifier for the layer
      at which the data stream is being processed is provided to a callout in the 
      <b>layerId</b> member of the 
-     <a href="netvista.fwps_incoming_values0">FWPS_INCOMING_VALUES0</a> structure that
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552401">FWPS_INCOMING_VALUES0</a> structure that
      the filter engine passed to the callout driver's 
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
 
@@ -186,13 +187,13 @@ Specifies that the stream is to be disconnected after the data being injected in
 ### -param netBufferList [in, out]
 
 A pointer to a 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure that describes
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that describes
      the data that is being injected into the data stream. A callout driver allocates a <b>NET_BUFFER_LIST</b>
      structure to use for injecting data into a data stream by calling the 
-     <a href="netvista.fwpsallocateclonenetbufferlist0">
+     <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
      FwpsAllocateCloneNetBufferList0</a>, 
-     <a href="netvista.fwpsallocatenetbufferandnetbufferlist0">FwpsAllocateNetBufferAndNetBufferList0</a>, or 
-     <a href="netvista.fwpsclonestreamdata0">FwpsCloneStreamData0</a> functions. The
+     <a href="..\fwpsk\nf-fwpsk-fwpsallocatenetbufferandnetbufferlist0.md">FwpsAllocateNetBufferAndNetBufferList0</a>, or 
+     <a href="..\fwpsk\nf-fwpsk-fwpsclonestreamdata0.md">FwpsCloneStreamData0</a> functions. The
      <b>NET_BUFFER_LIST</b> structure can describe a chain of network buffer lists. If the 
      <i>streamFlags</i> parameter is <b>FWPS_STREAM_FLAG_RECEIVE_DISCONNECT</b> or <b>FWPS_STREAM_FLAG_SEND_DISCONNECT</b>, 
      <i>netBufferList</i> can be <b>NULL</b>.
@@ -211,7 +212,7 @@ A pointer to a
      <i>netBufferList</i> parameter, has been injected into the network stack. 
 
 If the 
-     <i>netBufferList</i> parameter describes a <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> chain, 
+     <i>netBufferList</i> parameter describes a <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> chain, 
      <i>completionFn</i> will be called once for each <b>NET_BUFFER_LIST</b> in the chain.
 
 If the 
@@ -235,7 +236,7 @@ The
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>The injection into the data stream was initiated successfully. The filter engine will call the
        completion function that was specified when the 
-       <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure was allocated
+       <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure was allocated
        after the filter engine has completed injecting the data into the data stream.
 <dl>
 <dt><b>STATUS_FWP_TCPIP_NOT_READY</b></dt>
@@ -263,7 +264,7 @@ A callout driver can also call the
     stream is deferred when a callout's 
     <i>classifyFn</i> callout function sets the 
     <b>streamAction</b> member of the 
-    <a href="netvista.fwps_stream_callout_io_packet0">
+    <a href="..\fwpsk\ns-fwpsk-fwps_stream_callout_io_packet0_.md">
     FWPS_STREAM_CALLOUT_IO_PACKET0</a> structure to FWPS_STREAM_ACTION_DEFER.
 
 In addition, a callout driver can call the 
@@ -279,10 +280,10 @@ Alternately, a callout driver can call the
     <b>FwpsStreamInjectAsync0</b> function in this way.
 
 A callout can pend a data segment by first cloning it with a call to the 
-    <a href="netvista.fwpsclonestreamdata0">FwpsCloneStreamData0</a> function,
+    <a href="..\fwpsk\nf-fwpsk-fwpsclonestreamdata0.md">FwpsCloneStreamData0</a> function,
     followed by blocking the data segment by setting FWP_ACTION_BLOCK in the 
     <b>actionType</b> member of the 
-    <a href="netvista.fwps_classify_out0">FWPS_CLASSIFY_OUT0</a> structure.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a> structure.
 
 Injected stream data will not be reindicated to the callout, but it will be made available to stream
     callouts from lower-weight sublayers.
@@ -290,8 +291,8 @@ Injected stream data will not be reindicated to the callout, but it will be made
 If the return value is not STATUS_SUCCESS, the completion function will not be called. In this case,
     the network buffer list pointed to by 
     <i>metBufferList</i> must be freed by a call to 
-    <a href="netvista.fwpsfreenetbufferlist0">FwpsFreeNetBufferList0</a> or 
-    <a href="netvista.fwpsfreeclonenetbufferlist0">FwpsFreeCloneNetBufferList0</a>.
+    <a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a> or 
+    <a href="..\fwpsk\nf-fwpsk-fwpsfreeclonenetbufferlist0.md">FwpsFreeCloneNetBufferList0</a>.
 
 
 ## -requirements
@@ -360,42 +361,42 @@ IRQL
 <a href="..\fwpsk\nc-fwpsk-fwps_inject_complete0.md">completionFn</a>
 </dt>
 <dt>
-<a href="netvista.fwpsallocateclonenetbufferlist0">
+<a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
    FwpsAllocateCloneNetBufferList0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsallocatenetbufferandnetbufferlist0">
+<a href="..\fwpsk\nf-fwpsk-fwpsallocatenetbufferandnetbufferlist0.md">
    FwpsAllocateNetBufferAndNetBufferList0</a>
 </dt>
 <dt>
-<a href="netvista.fwpscalloutregister0">FwpsCalloutRegister0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>
 </dt>
 <dt>
-<a href="netvista.fwpscalloutregister1">FwpsCalloutRegister1</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
 </dt>
 <dt>
-<a href="netvista.fwpsclonestreamdata0">FwpsCloneStreamData0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsclonestreamdata0.md">FwpsCloneStreamData0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsinjectionhandlecreate0">FwpsInjectionHandleCreate0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsinjectionhandledestroy0">FwpsInjectionHandleDestroy0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandledestroy0.md">FwpsInjectionHandleDestroy0</a>
 </dt>
 <dt>
-<a href="netvista.fwps_incoming_values0">FWPS_INCOMING_VALUES0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552401">FWPS_INCOMING_VALUES0</a>
 </dt>
 <dt>
-<a href="netvista.fwps_stream_callout_io_packet0">
+<a href="..\fwpsk\ns-fwpsk-fwps_stream_callout_io_packet0_.md">
    FWPS_STREAM_CALLOUT_IO_PACKET0</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsStreamInjectAsync0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsStreamInjectAsync0 function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

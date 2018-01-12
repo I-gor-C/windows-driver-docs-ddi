@@ -1,5 +1,5 @@
 ---
-UID: NI.nfcsedev.IOCTL_NFCSE_ENUM_ENDPOINTS
+UID: NI:nfcsedev.IOCTL_NFCSE_ENUM_ENDPOINTS
 title: IOCTL_NFCSE_ENUM_ENDPOINTS
 author: windows-driver-content
 description: Returns information regarding the list of all the secure elements attached to the NFC controller.
@@ -7,8 +7,8 @@ old-location: nfpdrivers\ioctl_nfcse_enum_endpoints.htm
 old-project: nfpdrivers
 ms.assetid: BDE62A2B-423E-4656-91CC-5EBDE50C6BB0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, PSECURE_ELEMENT_TYPE
+ms.date: 12/18/2017
+ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # IOCTL_NFCSE_ENUM_ENDPOINTS IOCTL
@@ -58,7 +59,7 @@ None
 
 
 ### -output-buffer
-An <a href="nfpdrivers._secure_element_endpoint_list"> SECURE_ELEMENT_ENDPOINT_LIST</a> for each device enumerated.
+An <a href="..\nfcsedev\ns-nfcsedev-_secure_element_endpoint_list.md"> SECURE_ELEMENT_ENDPOINT_LIST</a> for each device enumerated.
 
 
 ### -output-buffer-length

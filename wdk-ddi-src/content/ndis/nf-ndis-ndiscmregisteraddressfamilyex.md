@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCmRegisterAddressFamilyEx
+UID: NF:ndis.NdisCmRegisterAddressFamilyEx
 title: NdisCmRegisterAddressFamilyEx function
 author: windows-driver-content
 description: The NdisCmRegisterAddressFamilyEx function registers an address family (AF) for communication between CoNDIS drivers.
 old-location: netvista\ndiscmregisteraddressfamilyex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8890bf31-f2c7-48b0-926d-8931893ede86
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisCmRegisterAddressFamilyEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCmRegisterAddressFamilyEx function
@@ -60,7 +61,7 @@ NDIS_STATUS NdisCmRegisterAddressFamilyEx(
 
 A handle that NDIS provided at the 
      <i>NdisBindingHandle</i> parameter of the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function. This handle
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function. This handle
      identifies the binding to associate with the AF.
 
 
@@ -112,11 +113,11 @@ The caller's binding is being closed.
 
 ## -remarks
 NDIS stand-alone call managers, which register as NDIS protocol drivers by calling the 
-    <a href="netvista.ndisregisterprotocoldriver">
+    <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
     NdisRegisterProtocolDriver</a> function, should call the 
     <b>NdisCmRegisterAddressFamilyEx</b> function to register an AF. Miniport call managers (MCMs) must
     instead call the 
-    <a href="netvista.ndismcmregisteraddressfamilyex">
+    <a href="..\ndis\nf-ndis-ndismcmregisteraddressfamilyex.md">
     NdisMCmRegisterAddressFamilyEx</a> function.
 
 To register an AF for a binding, the stand-alone call manager should call 
@@ -127,7 +128,7 @@ To register an AF for a binding, the stand-alone call manager should call
 A stand-alone call manager's 
     <i>ProtocolBindAdapterEx</i> function first establishes the binding to the underlying miniport driver by
     calling the 
-    <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function. Each time
+    <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function. Each time
     NDIS calls 
     <i>ProtocolBindAdapterEx</i> with another handle at the 
     <i>BindContext</i> parameter, 
@@ -208,7 +209,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_callmanager_function">Irql_CallManager_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547917">Irql_CallManager_Function</a>
 </td>
 </tr>
 </table>
@@ -219,14 +220,14 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545368">CO_ADDRESS_FAMILY</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmregisteraddressfamilyex">
+<a href="..\ndis\nf-ndis-ndismcmregisteraddressfamilyex.md">
    NdisMCmRegisterAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisregisterprotocoldriver">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
@@ -239,5 +240,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCmRegisterAddressFamilyEx function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmRegisterAddressFamilyEx function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

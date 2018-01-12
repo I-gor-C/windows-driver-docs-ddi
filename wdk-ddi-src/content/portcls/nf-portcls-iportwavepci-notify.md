@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWavePci.Notify
+UID: NF:portcls.IPortWavePci.Notify
 title: IPortWavePci::Notify method
 author: windows-driver-content
 description: The Notify method notifies the port driver that an interrupt indicating the progress of the DMA pointer has occurred.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWavePci::Notify method
@@ -63,9 +64,9 @@ None
 
 
 ## -remarks
-Some miniport drivers call this method from an ISR in response to a hardware interrupt after having cleared the interrupt source. Other drivers call this method from a timer DPC that is scheduled to run at regular intervals. As a general rule, only drivers that manage a single render stream from KMixer should rely on hardware interrupts. Drivers that support DirectSound hardware acceleration should turn off hardware interrupts and use timer DPCs instead. For more information, see <a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a>.
+Some miniport drivers call this method from an ISR in response to a hardware interrupt after having cleared the interrupt source. Other drivers call this method from a timer DPC that is scheduled to run at regular intervals. As a general rule, only drivers that manage a single render stream from KMixer should rely on hardware interrupts. Drivers that support DirectSound hardware acceleration should turn off hardware interrupts and use timer DPCs instead. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>.
 
-Although the miniport driver is free to choose its own technique for determining when to call this method, this method should be called frequently enough to allow the port driver to fire pending position and clock events at regular intervals. Timing for this method is not as critical as it is for the <a href="audio.iportwavecyclic_notify">IPortWaveCyclic::Notify</a> method, however.
+Although the miniport driver is free to choose its own technique for determining when to call this method, this method should be called frequently enough to allow the port driver to fire pending position and clock events at regular intervals. Timing for this method is not as critical as it is for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536903">IPortWaveCyclic::Notify</a> method, however.
 
 When an adapter driver installs an ISR, it submits a <i>ServiceContext</i> parameter along with the ISR's entry point (for details, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559930">Providing ISR Context Information</a>). When the interrupt occurs, the operating system calls the ISR and passes <i>ServiceContext</i> as a call parameter to the ISR. Although the meaning of the <i>ServiceContext</i> parameter is known only to the driver developer, it is typically a pointer to the miniport object. The ISR uses this pointer to access information about the miniport object.
 
@@ -111,16 +112,16 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="audio.iportwavepci">IPortWavePci</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536905">IPortWavePci</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 </dt>
 <dt>
-<a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
 </dt>
 <dt>
-<a href="audio.iportwavecyclic_notify">IPortWaveCyclic::Notify</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536903">IPortWaveCyclic::Notify</a>
 </dt>
 </dl>
  

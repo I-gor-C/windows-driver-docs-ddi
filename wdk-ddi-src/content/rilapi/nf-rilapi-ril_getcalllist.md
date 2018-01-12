@@ -1,13 +1,13 @@
 ---
-UID: NF.rilapi.RIL_GetCallList
+UID: NF:rilapi.RIL_GetCallList
 title: RIL_GetCallList function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getcalllist.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7b2e0c82-c204-4d57-a2d2-066b8772ce13
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RIL_GetCallList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product: Windows 10 or later.
 ---
 

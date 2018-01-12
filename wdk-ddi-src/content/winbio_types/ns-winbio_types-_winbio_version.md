@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_TYPES._WINBIO_VERSION
+UID: NS:winbio_types._WINBIO_VERSION
 title: _WINBIO_VERSION
 author: windows-driver-content
 description: The WINBIO_VERSION structure describes major and minor version information for a WBDI driver.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: 6a89a581-0af4-4a42-be81-fb7cb1f33bdd
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_VERSION, WINBIO_VERSION, *PWINBIO_VERSION, PWINBIO_VERSION
+ms.keywords: _WINBIO_VERSION, WINBIO_VERSION, *PWINBIO_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
 req.product: Windows 10 or later.
 ---
 

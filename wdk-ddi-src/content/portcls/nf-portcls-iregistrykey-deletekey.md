@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IRegistryKey.DeleteKey
+UID: NF:portcls.IRegistryKey.DeleteKey
 title: IRegistryKey::DeleteKey method
 author: windows-driver-content
 description: The DeleteKey method deletes the registry key.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IRegistryKey::DeleteKey method
@@ -61,7 +62,7 @@ NTSTATUS DeleteKey(
 
 
 ## -remarks
-A caller deletes an <b>IRegistryKey</b> object's registry key by calling the <code>DeleteKey</code> method on that object. The key can be deleted only if the caller created the key with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> that permits deletion. The caller enables deletion by specifying a <i>DesiredAccess</i> parameter value of KEY_ALL_ACCESS (described in <a href="kernel.zwcreatekey">ZwCreateKey</a>) to the <a href="audio.pcnewregistrykey">PcNewRegistryKey</a>, <a href="audio.iport_newregistrykey">IPort::NewRegistryKey</a>, or <a href="audio.iregistrykey_newsubkey">IRegistryKey::NewSubKey</a> call that creates the key. When deleting a key, the <b>IRegistryKey</b> object discards its registry-key handle, and all other handles to the deleted key become invalid.
+A caller deletes an <b>IRegistryKey</b> object's registry key by calling the <code>DeleteKey</code> method on that object. The key can be deleted only if the caller created the key with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> that permits deletion. The caller enables deletion by specifying a <i>DesiredAccess</i> parameter value of KEY_ALL_ACCESS (described in <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>) to the <a href="..\portcls\nf-portcls-pcnewregistrykey.md">PcNewRegistryKey</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff536945">IPort::NewRegistryKey</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff536970">IRegistryKey::NewSubKey</a> call that creates the key. When deleting a key, the <b>IRegistryKey</b> object discards its registry-key handle, and all other handles to the deleted key become invalid.
 
 
 ## -requirements
@@ -109,19 +110,19 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatekey">ZwCreateKey</a>
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
 </dt>
 <dt>
-<a href="kernel.zwdeletekey">ZwDeleteKey</a>
+<a href="..\wdm\nf-wdm-zwdeletekey.md">ZwDeleteKey</a>
 </dt>
 <dt>
-<a href="audio.pcnewregistrykey">PcNewRegistryKey</a>
+<a href="..\portcls\nf-portcls-pcnewregistrykey.md">PcNewRegistryKey</a>
 </dt>
 <dt>
-<a href="audio.iport_newregistrykey">IPort::NewRegistryKey</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536945">IPort::NewRegistryKey</a>
 </dt>
 <dt>
-<a href="audio.iregistrykey_newsubkey">IRegistryKey::NewSubKey</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536970">IRegistryKey::NewSubKey</a>
 </dt>
 </dl>
  

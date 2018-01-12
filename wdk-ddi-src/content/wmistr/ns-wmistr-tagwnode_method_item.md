@@ -1,5 +1,5 @@
 ---
-UID: NS.WMISTR.TAGWNODE_METHOD_ITEM
+UID: NS:wmistr.tagWNODE_METHOD_ITEM
 title: tagWNODE_METHOD_ITEM
 author: windows-driver-content
 description: The WNODE_METHOD_ITEM structure indicates a method associated with an instance of a data block and contains any input data for the method.
@@ -7,8 +7,8 @@ old-location: kernel\wnode_method_item.htm
 old-project: kernel
 ms.assetid: c5e1af58-a00d-4801-b591-fc9ec9b50502
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: tagWNODE_METHOD_ITEM, PWNODE_METHOD_ITEM, WNODE_METHOD_ITEM, *PWNODE_METHOD_ITEM
+ms.date: 1/4/2018
+ms.keywords: tagWNODE_METHOD_ITEM, WNODE_METHOD_ITEM, *PWNODE_METHOD_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: WNODE_METHOD_ITEM, *PWNODE_METHOD_ITEM
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ typedef struct tagWNODE_METHOD_ITEM {
 
 ### -field WnodeHeader
 
-Is a <a href="kernel.wnode_header">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.
+Is a <a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.
 
 
 ### -field OffsetInstanceName
@@ -119,12 +120,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.wnode_header">WNODE_HEADER</a>
+<a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_METHOD_ITEM structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_METHOD_ITEM structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

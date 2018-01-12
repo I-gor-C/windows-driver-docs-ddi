@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsGetOuterUnknown
+UID: NF:ks.KsGetOuterUnknown
 title: KsGetOuterUnknown function
 author: windows-driver-content
 description: The KsGetOuterUnknown function returns the outer IUnknown of a given AVStream object.
@@ -7,7 +7,7 @@ old-location: stream\ksgetouterunknown.htm
 old-project: stream
 ms.assetid: e86e2c96-9ae5-4f6d-9c76-1c2816f318e7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGetOuterUnknown
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsGetOuterUnknown function
@@ -63,7 +64,7 @@ A pointer to an AVStream object for which to return the outer <b>IUnknown</b> in
 
 
 ## -remarks
-Minidrivers should not call this function directly. Instead, use one of the inline versions that perform automatic typecasting: <a href="stream.ksdevicegetouterunknown">KsDeviceGetOuterUnknown</a>, <a href="stream.ksfilterfactorygetouterunknown">KsFilterFactoryGetOuterUnknown</a>, <a href="stream.ksfiltergetouterunknown">KsFilterGetOuterUnknown</a>, <a href="stream.kspingetouterunknown">KsPinGetOuterUnknown</a>.
+Minidrivers should not call this function directly. Instead, use one of the inline versions that perform automatic typecasting: <a href="..\ks\nf-ks-ksdevicegetouterunknown.md">KsDeviceGetOuterUnknown</a>, <a href="..\ks\nf-ks-ksfilterfactorygetouterunknown.md">KsFilterFactoryGetOuterUnknown</a>, <a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>, <a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>.
 
 Minidrivers using this function must include <i>kcom.h</i> and use a C++ compiler.
 
@@ -128,27 +129,27 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksdevicegetouterunknown">KsDeviceGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksdevicegetouterunknown.md">KsDeviceGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="stream.ksfilterfactorygetouterunknown">KsFilterFactoryGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksfilterfactorygetouterunknown.md">KsFilterFactoryGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="stream.ksfiltergetouterunknown">KsFilterGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="stream.kspingetouterunknown">KsPinGetOuterUnknown</a>
+<a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="stream.ksregisteraggregatedclientunknown">KsRegisterAggregatedClientUnknown</a>
+<a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
 </dt>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGetOuterUnknown function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGetOuterUnknown function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWaveCyclic.NewMasterDmaChannel
+UID: NF:portcls.IPortWaveCyclic.NewMasterDmaChannel
 title: IPortWaveCyclic::NewMasterDmaChannel method
 author: windows-driver-content
 description: The NewMasterDmaChannel method creates a new instance of a bus-master DMA channel.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWaveCyclic::NewMasterDmaChannel method
@@ -105,9 +106,9 @@ Not used. Set to (DMA_SPEED)(-1).
 
 
 ## -remarks
-Parameters <i>MaximumLength</i>, <i>Dma32BitAddresses</i>, <i>Dma64BitAddresses</i>, <i>DmaWidth</i>, and <i>DmaSpeed</i> are similar in meaning to the members of the <a href="kernel.device_description">DEVICE_DESCRIPTION</a> structure with the same names.
+Parameters <i>MaximumLength</i>, <i>Dma32BitAddresses</i>, <i>Dma64BitAddresses</i>, <i>DmaWidth</i>, and <i>DmaSpeed</i> are similar in meaning to the members of the <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a> structure with the same names.
 
-A WaveCyclic device with built-in bus-mastering DMA hardware is referred to as a <i>master device</i>. In contrast, a <i>subordinate device</i> lacks DMA hardware and has to rely on the system DMA controller to perform any data transfers that it requires. The <code>NewMasterDmaChannel</code> method creates a DMA-channel object for a master device. To create a DMA-channel object for a subordinate device, call the <a href="audio.iportwavecyclic_newslavedmachannel">IPortWaveCyclic::NewSlaveDmaChannel</a> method instead. For more information about master and subordinate devices, see <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a> and <a href="..\portcls\nn-portcls-idmachannelslave.md">IDmaChannelSlave</a>.
+A WaveCyclic device with built-in bus-mastering DMA hardware is referred to as a <i>master device</i>. In contrast, a <i>subordinate device</i> lacks DMA hardware and has to rely on the system DMA controller to perform any data transfers that it requires. The <code>NewMasterDmaChannel</code> method creates a DMA-channel object for a master device. To create a DMA-channel object for a subordinate device, call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536902">IPortWaveCyclic::NewSlaveDmaChannel</a> method instead. For more information about master and subordinate devices, see <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a> and <a href="..\portcls\nn-portcls-idmachannelslave.md">IDmaChannelSlave</a>.
 
 The <i>DmaChannel</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.
 
@@ -154,7 +155,7 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iportwavecyclic.md">IPortWaveCyclic</a>
 </dt>
 <dt>
-<a href="audio.iportwavecyclic_newslavedmachannel">IPortWaveCyclic::NewSlaveDmaChannel</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536902">IPortWaveCyclic::NewSlaveDmaChannel</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
@@ -166,7 +167,7 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 </dt>
 <dt>
-<a href="kernel.device_description">DEVICE_DESCRIPTION</a>
+<a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
 </dt>
 </dl>
  

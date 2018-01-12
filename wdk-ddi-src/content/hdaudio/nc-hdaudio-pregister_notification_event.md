@@ -1,5 +1,5 @@
 ---
-UID: NC.hdaudio.PREGISTER_NOTIFICATION_EVENT
+UID: NC:hdaudio.PREGISTER_NOTIFICATION_EVENT
 title: PREGISTER_NOTIFICATION_EVENT
 author: windows-driver-content
 description: The RegisterNotificationEvent routine registers a kernel event so that it can receive DMA progress notifications.The function pointer type for a RegisterNotificationEvent routine is defined as follows.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 44702d79-80ac-411f-ae47-bf60b9cb541d
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 # PREGISTER_NOTIFICATION_EVENT callback
@@ -62,7 +63,7 @@ typedef NTSTATUS RegisterNotificationEvent(
 
 ### -param context [in]
 
-Specifies the context value from the Context member of the <a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a> structure.
+Specifies the context value from the Context member of the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a> structure.
 
 
 ### -param handle [in]
@@ -141,7 +142,7 @@ PASSIVE_LEVEL
 <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
 </dt>
 <dt>
-<a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
 </dt>
 <dt>
 <a href="..\hdaudio\nc-hdaudio-punregister_notification_event.md">UnregisterNotificationEvent</a>

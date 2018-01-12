@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.ReturnInput
+UID: NF:dbgeng.IDebugControl3.ReturnInput
 title: IDebugControl3::ReturnInput method
 author: windows-driver-content
 description: The ReturnInput method is used by IDebugInputCallbacks objects to send an input string to the engine following a request for input.
 old-location: debugger\returninput.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 1f4c63da-8583-4382-a208-8279b4fe0906
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::ReturnInput, ReturnInput
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl3::ReturnInput method

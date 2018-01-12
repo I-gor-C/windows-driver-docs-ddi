@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP.BRANCHOFFICEJOBDATACONTAINER
+UID: NS:winsplp.BranchOfficeJobDataContainer
 title: BranchOfficeJobDataContainer
 author: windows-driver-content
 description: This structure defines a container for one or more BranchOfficeJobData structures to sent to a server.
@@ -7,8 +7,8 @@ old-location: print\branchofficejobdatacontainer.htm
 old-project: print
 ms.assetid: 5C6D2FFC-DBFF-4C44-8757-ED87593A584F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: BranchOfficeJobDataContainer, LPBranchOfficeJobDataContainer, *LPBranchOfficeJobDataContainer, PBranchOfficeJobDataContainer, BranchOfficeJobDataContainer, *PBranchOfficeJobDataContainer
+ms.date: 1/8/2018
+ms.keywords: BranchOfficeJobDataContainer, BranchOfficeJobDataContainer, *LPBranchOfficeJobDataContainer, *PBranchOfficeJobDataContainer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BranchOfficeJobDataContainer, *LPBranchOfficeJobDataContainer, *PBranchOfficeJobDataContainer
 req.product: Windows 10 or later.
 ---
 

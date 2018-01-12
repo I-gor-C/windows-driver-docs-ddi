@@ -1,5 +1,5 @@
 ---
-UID: NS.COMPSTUI._OPTTYPE
+UID: NS:compstui._OPTTYPE
 title: _OPTTYPE
 author: windows-driver-content
 description: The OPTTYPE structure is used by CPSUI applications (including printer interface DLLs) for describing the type and other characteristics of a property sheet option, if the option is specified by an OPTITEM structure.
@@ -7,8 +7,8 @@ old-location: print\opttype.htm
 old-project: print
 ms.assetid: 041dd438-e837-4912-bda7-de654204198b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _OPTTYPE, OPTTYPE, POPTTYPE, *POPTTYPE
+ms.date: 1/8/2018
+ms.keywords: _OPTTYPE, OPTTYPE, *POPTTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OPTTYPE, *POPTTYPE
 ---
 
 # _OPTTYPE structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The OPTTYPE structure is used by CPSUI applications (including printer interface DLLs) for describing the type and other characteristics of a <a href="https://msdn.microsoft.com/572330d6-1a1b-46fd-bfb4-be2b0990bca4">property sheet option</a>, if the option is specified by an <a href="print.optitem">OPTITEM</a> structure.
+The OPTTYPE structure is used by CPSUI applications (including printer interface DLLs) for describing the type and other characteristics of a <a href="https://msdn.microsoft.com/572330d6-1a1b-46fd-bfb4-be2b0990bca4">property sheet option</a>, if the option is specified by an <a href="..\compstui\ns-compstui-_optitem.md">OPTITEM</a> structure.
 
 
 
@@ -80,7 +81,7 @@ Optional bit flags that modify the option's characteristics. The following flags
 
 ### -field OPTTF_NOSPACE_BEFORE_POSTFIX
 
-CPSUI should not add a space character between the string specified by the <a href="print.optitem">OPTITEM</a> structure's <b>pName</b> string and the <a href="print.optparam">OPTPARAM</a> structure's <b>pData</b> string, when displaying the option.
+CPSUI should not add a space character between the string specified by the <a href="..\compstui\ns-compstui-_optitem.md">OPTITEM</a> structure's <b>pName</b> string and the <a href="..\compstui\ns-compstui-_optparam.md">OPTPARAM</a> structure's <b>pData</b> string, when displaying the option.
 
 Valid only if the option type is or <a href="https://msdn.microsoft.com/library/windows/hardware/ff562847">TVOT_SCROLLBAR</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff562848">TVOT_TRACKBAR</a>.
 
@@ -98,19 +99,19 @@ All the OPTPARAM structures to which <b>pOptParam</b> points are disabled, so th
 
 ### -field Count
 
-Specifies the number of <a href="print.optparam">OPTPARAM</a> structures to which <b>pOptParam</b> points. This member's value is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
+Specifies the number of <a href="..\compstui\ns-compstui-_optparam.md">OPTPARAM</a> structures to which <b>pOptParam</b> points. This member's value is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
 
 
 ### -field BegCtrlID
 
-If <b>pDlgPage</b> in <a href="print.compropsheetui">COMPROPSHEETUI</a> identifies a CPSUI-supplied page, or if <b>DlgTemplateID</b> in <a href="print.dlgpage">DLGPAGE</a> identifies a CPSUI-supplied template, <b>BegCtrlID</b> is not used.
+If <b>pDlgPage</b> in <a href="..\compstui\ns-compstui-_compropsheetui.md">COMPROPSHEETUI</a> identifies a CPSUI-supplied page, or if <b>DlgTemplateID</b> in <a href="..\compstui\ns-compstui-_dlgpage.md">DLGPAGE</a> identifies a CPSUI-supplied template, <b>BegCtrlID</b> is not used.
 
 Otherwise, <b>BegCtrlID</b> must contain the first of a sequentially numbered set of Windows control identifiers. Control identifier usage is dependent on the <a href="https://msdn.microsoft.com/3b3c002c-a201-4f81-b208-30864343409b">CPSUI option type</a>.
 
 
 ### -field pOptParam
 
-Pointer to an array of <a href="print.optparam">OPTPARAM</a> structures describing the parameter values that a user can select for the option.
+Pointer to an array of <a href="..\compstui\ns-compstui-_optparam.md">OPTPARAM</a> structures describing the parameter values that a user can select for the option.
 
 
 ### -field Style

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDI_LOCKASYNCFLAGS
+UID: NS:d3dumddi._D3DDDI_LOCKASYNCFLAGS
 title: _D3DDDI_LOCKASYNCFLAGS
 author: windows-driver-content
 description: The D3DDDI_LOCKASYNCFLAGS structure identifies how to lock a resource.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_lockasyncflags.htm
 old-project: display
 ms.assetid: 0e6dd14c-5192-4c4b-9dcb-716989d24588
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDI_LOCKASYNCFLAGS, D3DDDI_LOCKASYNCFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_LOCKASYNCFLAGS
 ---
 
 # _D3DDDI_LOCKASYNCFLAGS structure
@@ -102,14 +103,14 @@ Setting this member is equivalent to setting the fifth bit of the 32-bit <b>Valu
 
 ### -field NoExistingReferences
 
-A UINT value that specifies whether the Microsoft Direct3D runtime has any queued references to the resource to be locked. If <b>NoExistingReferences</b> is set, the driver determines that no internally queued references to the resource are available. The driver can then set the <b>NoExistingReferences</b> bit-field flag of the <a href="display.d3dddicb_lock">D3DDDICB_LOCK</a> structure when the driver calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> function to perform a lock-discard operation. 
+A UINT value that specifies whether the Microsoft Direct3D runtime has any queued references to the resource to be locked. If <b>NoExistingReferences</b> is set, the driver determines that no internally queued references to the resource are available. The driver can then set the <b>NoExistingReferences</b> bit-field flag of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock.md">D3DDDICB_LOCK</a> structure when the driver calls the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> function to perform a lock-discard operation. 
 
 Setting this member is equivalent to setting the sixth bit of the 32-bit <b>Value</b> member (0x00000020).
 
 
 ### -field NotifyOnly
 
-A UINT value that specifies whether the lock call is for notification only. The Direct3D runtime sets <b>NotifyOnly</b> to <b>TRUE</b> when it locks runtime-allocated system memory surfaces. In this situation, the runtime ignores the pointer that the driver returns in the <b>pSurfData</b> member of the <a href="display.d3dddiarg_lockasync">D3DDDIARG_LOCKASYNC</a> structure.
+A UINT value that specifies whether the lock call is for notification only. The Direct3D runtime sets <b>NotifyOnly</b> to <b>TRUE</b> when it locks runtime-allocated system memory surfaces. In this situation, the runtime ignores the pointer that the driver returns in the <b>pSurfData</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_lockasync.md">D3DDDIARG_LOCKASYNC</a> structure.
 
 Setting this member is equivalent to setting the seventh bit of the 32-bit <b>Value</b> member (0x00000040).
 
@@ -155,12 +156,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiarg_lockasync">D3DDDIARG_LOCKASYNC</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_lockasync.md">D3DDDIARG_LOCKASYNC</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_LOCKASYNCFLAGS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_LOCKASYNCFLAGS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

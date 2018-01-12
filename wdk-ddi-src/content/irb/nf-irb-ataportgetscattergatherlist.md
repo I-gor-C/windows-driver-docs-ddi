@@ -1,5 +1,5 @@
 ---
-UID: NF.irb.AtaPortGetScatterGatherList
+UID: NF:irb.AtaPortGetScatterGatherList
 title: AtaPortGetScatterGatherList function
 author: windows-driver-content
 description: The AtaPortGetScatterGatherList routine retrieves the scatter/gather list that is associated with this request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
@@ -7,7 +7,7 @@ old-location: storage\ataportgetscattergatherlist.htm
 old-project: storage
 ms.assetid: 11181574-b329-4182-8d17-93d44cb3b839
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: AtaPortGetScatterGatherList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
+req.typenames: IDE_POWER_STATE
 ---
 
 # AtaPortGetScatterGatherList function
@@ -61,7 +62,7 @@ A pointer to the channel extension.
 
 ### -param Irb [in]
 
-A pointer to a structure of type <a href="storage.ide_request_block">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which a scatter/gather list is constructed.
+A pointer to a structure of type <a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which a scatter/gather list is constructed.
 
 
 ## -returns
@@ -115,12 +116,12 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="storage.ide_request_block">IDE_REQUEST_BLOCK</a>
+<a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaPortGetScatterGatherList routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20AtaPortGetScatterGatherList routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

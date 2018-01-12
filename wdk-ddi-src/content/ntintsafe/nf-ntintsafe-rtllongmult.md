@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlLongMult
+UID: NF:ntintsafe.RtlLongMult
 title: RtlLongMult function
 author: windows-driver-content
 description: Multiplies one value of type LONG by another.
@@ -7,7 +7,7 @@ old-location: kernel\rtllongmult.htm
 old-project: kernel
 ms.assetid: A95A88B6-066F-4489-B5C0-B012E831D7AD
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlLongMult
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlLongMult function

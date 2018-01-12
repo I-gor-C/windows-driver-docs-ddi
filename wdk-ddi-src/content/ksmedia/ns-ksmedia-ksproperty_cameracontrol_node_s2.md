@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSPROPERTY_CAMERACONTROL_NODE_S2
+UID: NS:ksmedia.KSPROPERTY_CAMERACONTROL_NODE_S2
 title: KSPROPERTY_CAMERACONTROL_NODE_S2
 author: windows-driver-content
 description: The KSPROPERTY_CAMERACONTROL_NODE_S2 structure describes node-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time. This structure specifies property values in requests to the USB video class driver.
@@ -7,8 +7,8 @@ old-location: stream\ksproperty_cameracontrol_node_s2.htm
 old-project: stream
 ms.assetid: 0d3ed82e-3565-4b0b-bca9-1d0b91732d18
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSPROPERTY_CAMERACONTROL_NODE_S2, PKSPROPERTY_CAMERACONTROL_NODE_S2, *PKSPROPERTY_CAMERACONTROL_NODE_S2, KSPROPERTY_CAMERACONTROL_NODE_S2
+ms.date: 1/9/2018
+ms.keywords: KSPROPERTY_CAMERACONTROL_NODE_S2, KSPROPERTY_CAMERACONTROL_NODE_S2, *PKSPROPERTY_CAMERACONTROL_NODE_S2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_CAMERACONTROL_NODE_S2, *PKSPROPERTY_CAMERACONTROL_NODE_S2
 ---
 
 # KSPROPERTY_CAMERACONTROL_NODE_S2 structure

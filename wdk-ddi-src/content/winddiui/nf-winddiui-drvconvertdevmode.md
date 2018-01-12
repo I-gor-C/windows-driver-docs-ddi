@@ -1,5 +1,5 @@
 ---
-UID: NF.winddiui.DrvConvertDevMode
+UID: NF:winddiui.DrvConvertDevMode
 title: DrvConvertDevMode function
 author: windows-driver-content
 description: A printer interface DLL's DrvConvertDevMode function converts a printer's DEVMODEW structure from one version to another.
@@ -7,7 +7,7 @@ old-location: print\drvconvertdevmode.htm
 old-project: print
 ms.assetid: eb0402a8-22ce-417f-9b19-25b357451307
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: DrvConvertDevMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-A printer interface DLL's <b>DrvConvertDevMode</b> function converts a printer's <a href="display.devmodew">DEVMODEW</a> structure from one version to another.
+A printer interface DLL's <b>DrvConvertDevMode</b> function converts a printer's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure from one version to another.
 
 
 

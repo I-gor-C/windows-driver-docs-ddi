@@ -1,5 +1,5 @@
 ---
-UID: NF.hidpi.HidP_GetSpecificButtonCaps
+UID: NF:hidpi.HidP_GetSpecificButtonCaps
 title: HidP_GetSpecificButtonCaps function
 author: windows-driver-content
 description: The HidP_GetSpecificButtonCaps routine returns a button capability array that describes all HID control buttons in a top-level collection that meet a specified selection criteria.
@@ -7,7 +7,7 @@ old-location: hid\hidp_getspecificbuttoncaps.htm
 old-project: hid
 ms.assetid: 923693a2-cb46-4f74-bb1b-cd7bb07014e8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidP_GetSpecificButtonCaps
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hidparse.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 # HidP_GetSpecificButtonCaps function
@@ -61,7 +62,7 @@ NTSTATUS __stdcall HidP_GetSpecificButtonCaps(
 
 ### -param ReportType [in]
 
-Specifies a <a href="hid.hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
+Specifies a <a href="..\hidpi\ne-hidpi-_hidp_report_type.md">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
 
 
 ### -param UsagePage [in]
@@ -107,7 +108,7 @@ Pointer to a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f
 
 
 ## -remarks
-The required size of the <i>ButtonCaps</i> array is specified by the <b>Number</b><i>Xxx</i><b>ButtonCaps </b>members of a top-level collection's <a href="hid.hidp_caps">HIDP_CAPS</a> structure.
+The required size of the <i>ButtonCaps</i> array is specified by the <b>Number</b><i>Xxx</i><b>ButtonCaps </b>members of a top-level collection's <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure.
 
 When calling <b>HidP_GetSpecificButtonCaps</b>, specifying zero for <i>UsagePage</i>, <i>Usage</i>, and <i>LinkCollection</i> is equivalent to calling <b>HidP_GetButtonCaps</b>.
 
@@ -179,18 +180,18 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="hid.hidp_getbuttoncaps">HidP_GetButtonCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp_getbuttoncaps.md">HidP_GetButtonCaps</a>
 </dt>
 <dt>
-<a href="hid.hidp_getcaps">HidP_GetCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
 </dt>
 <dt>
-<a href="hid.hidp_button_caps">HIDP_BUTTON_CAPS</a>
+<a href="..\hidpi\ns-hidpi-_hidp_button_caps.md">HIDP_BUTTON_CAPS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_GetSpecificButtonCaps routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_GetSpecificButtonCaps routine%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

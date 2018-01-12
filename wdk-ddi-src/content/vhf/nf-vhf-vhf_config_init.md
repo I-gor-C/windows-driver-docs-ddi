@@ -1,5 +1,5 @@
 ---
-UID: NF.vhf.VHF_CONFIG_INIT
+UID: NF:vhf.VHF_CONFIG_INIT
 title: VHF_CONFIG_INIT function
 author: windows-driver-content
 description: Use the VHF_CONFIG_INIT function to initialize the required members of the VHF_CONFIG structure allocated by the HID source driver.
@@ -7,7 +7,7 @@ old-location: hid\vhf_config_init.htm
 old-project: hid
 ms.assetid: 4A87D9E2-F1FC-4CA8-834C-E545D8F0277B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: VHF_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: VhfKm.lib
 req.dll: 
 req.irql: 
+req.typenames: *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Use the <b>VHF_CONFIG_INIT</b> function to initialize the required members of the <a href="hid.vhf_config">VHF_CONFIG</a> structure allocated by the HID source driver.
+Use the <b>VHF_CONFIG_INIT</b> function to initialize the required members of the <a href="..\vhf\ns-vhf-_vhf_config.md">VHF_CONFIG</a> structure allocated by the HID source driver.
 
 
 
@@ -59,12 +60,12 @@ FORCEINLINE void VHF_CONFIG_INIT(
 
 ### -param Config [out]
 
-A pointer to the <a href="hid.vhf_config">VHF_CONFIG</a> structure to initialize.
+A pointer to the <a href="..\vhf\ns-vhf-_vhf_config.md">VHF_CONFIG</a> structure to initialize.
 
 
 ### -param DeviceObject [in]
 
-A pointer to the <a href="kernel.device_object">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="wdf.wdfdevicewdmgetdeviceobject">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a> call. 
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetdeviceobject.md">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. 
 
 
 ### -param ReportDescriptorLength [in]
@@ -151,5 +152,5 @@ Library
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20VHF_CONFIG_INIT function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20VHF_CONFIG_INIT function%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

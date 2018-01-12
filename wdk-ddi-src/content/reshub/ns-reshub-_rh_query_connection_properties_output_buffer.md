@@ -1,5 +1,5 @@
 ---
-UID: NS.RESHUB._RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+UID: NS:reshub._RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 title: _RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 author: windows-driver-content
 description: The RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER structure contains the connection properties for a target device that is connected to a serial bus (I2C, SPI, or UART).
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product: Windows 10 or later.
 ---
 

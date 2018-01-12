@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlRunOnceComplete
+UID: NF:ntddk.RtlRunOnceComplete
 title: RtlRunOnceComplete function
 author: windows-driver-content
 description: The RtlRunOnceComplete routine completes the one-time initialization began by RtlRunOnceBeginInitialize.
@@ -7,7 +7,7 @@ old-location: kernel\rtlrunoncecomplete.htm
 old-project: kernel
 ms.assetid: 1cdc4fde-2370-4e58-9e67-dec731cdb935
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlRunOnceComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlRunOnceComplete function
@@ -38,7 +39,7 @@ req.irql: <= APC_LEVEL
 
 
 ## -description
-The <b>RtlRunOnceComplete</b> routine completes the one-time initialization began by <a href="kernel.rtlrunoncebegininitialize">RtlRunOnceBeginInitialize</a>.
+The <b>RtlRunOnceComplete</b> routine completes the one-time initialization began by <a href="..\ntddk\nf-ntddk-rtlrunoncebegininitialize.md">RtlRunOnceBeginInitialize</a>.
 
 
 
@@ -97,7 +98,7 @@ Specifies the initialized data.
 
 
 ## -remarks
-If <b>RtlRunOnceComplete</b> returns STATUS_SUCCESS, any subsequent call to <a href="kernel.rtlrunoncebegininitialize">RtlRunOnceBeginInitialize</a> for the same <a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a> structure supplies <i>Context</i> as the initialized data.
+If <b>RtlRunOnceComplete</b> returns STATUS_SUCCESS, any subsequent call to <a href="..\ntddk\nf-ntddk-rtlrunoncebegininitialize.md">RtlRunOnceBeginInitialize</a> for the same <a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a> structure supplies <i>Context</i> as the initialized data.
 
 If the caller specified RTL_RUN_ONCE_ASYNC in the <i>Flags</i> parameter and <b>RtlRunOnceComplete</b> returns any value other than STATUS_SUCCESS, the caller must clean up any initialization that it attempted. 
 
@@ -176,21 +177,21 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563626">RTL_RUN_ONCE</a>
 </dt>
 <dt>
-<a href="kernel.rtlrunoncebegininitialize">RtlRunOnceBeginInitialize</a>
+<a href="..\ntddk\nf-ntddk-rtlrunoncebegininitialize.md">RtlRunOnceBeginInitialize</a>
 </dt>
 <dt>
-<a href="kernel.rtlrunonceexecuteonce">RtlRunOnceExecuteOnce</a>
+<a href="..\ntddk\nf-ntddk-rtlrunonceexecuteonce.md">RtlRunOnceExecuteOnce</a>
 </dt>
 <dt>
-<a href="kernel.rtlrunonceinitialize">RtlRunOnceInitialize</a>
+<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>
 </dt>
 <dt>
-<a href="kernel.runonceinitialization">RunOnceInitialization</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563635">RunOnceInitialization</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlRunOnceComplete routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlRunOnceComplete routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

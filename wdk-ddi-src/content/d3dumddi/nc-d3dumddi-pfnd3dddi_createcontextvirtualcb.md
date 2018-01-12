@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_CREATECONTEXTVIRTUALCB
+UID: NC:d3dumddi.PFND3DDDI_CREATECONTEXTVIRTUALCB
 title: PFND3DDDI_CREATECONTEXTVIRTUALCB
 author: windows-driver-content
 description: pfnCreateContextVirtualCb should be used with contexts that support virtual addressing.
@@ -7,7 +7,7 @@ old-location: display\pfncreatecontextvirtualcb.htm
 old-project: display
 ms.assetid: 7787FEDF-E18C-4120-A073-A13933856F57
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_CREATECONTEXTVIRTUALCB callback
@@ -64,7 +65,7 @@ A handle to the display device.
 
 ### -param pData [in, out]
 
-A pointer to a <a href="display.d3dddicb_createcontextvirtual">D3DDDICB_CREATECONTEXTVIRTUAL</a> structure that describes the context to create.
+A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_createcontextvirtual.md">D3DDDICB_CREATECONTEXTVIRTUAL</a> structure that describes the context to create.
 
 
 ## -returns

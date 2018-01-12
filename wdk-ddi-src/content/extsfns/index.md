@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:extsfns
 ---
 
 # Extsfns.h header
@@ -7,7 +7,7 @@ UID: NA:
 ## -description
 
 This header is used by Debugger. For more information, see
-- [Debugger](../_Debugger/index.md)
+- [Debugger](../_debugger/index.md)
 
 Extsfns.h contain these programming interfaces:
 
@@ -26,6 +26,13 @@ Extsfns.h contain these programming interfaces:
 | [_DEBUG_FLR_PARAM_TYPE enumeration](ne-extsfns-_debug_flr_param_type.md) | The values of DEBUG_FLR_PARAM_TYPE enumeration are tags that indicate the kind of information that is stored in failure analysis entry. |
 | [_FA_ENTRY_TYPE enumeration](ne-extsfns-_fa_entry_type.md) | A DebugFailureAnalysis object has a collection of failure analysis entries (FA entries). |
 | [_FA_EXTENSION_PLUGIN_PHASE enumeration](ne-extsfns-_fa_extension_plugin_phase.md) | A value in the FA_EXTENSION_PLUGIN_PHASE enumeration is passed to the _EFN_Analyze function to specify which phase of the analysis is currently in progress. |
+
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [IDebugFAEntryTags interface](nn-extsfns-idebugfaentrytags.md) | When the !analyze debugger command runs, the analysis engine can load and run extension analysis plug-ins. |
+| [IDebugFailureAnalysis2 interface](nn-extsfns-idebugfailureanalysis2.md) | When the !analyze debugger command runs, the analysis engine can load and run extension analysis plug-ins. |
 
 ## Methods
 

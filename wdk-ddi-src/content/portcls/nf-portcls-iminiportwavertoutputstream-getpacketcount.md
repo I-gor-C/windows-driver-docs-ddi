@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveRTOutputStream.GetPacketCount
+UID: NF:portcls.IMiniportWaveRTOutputStream.GetPacketCount
 title: IMiniportWaveRTOutputStream::GetPacketCount method
 author: windows-driver-content
 description: GetPacketCount returns the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveRTOutputStream::GetPacketCount method

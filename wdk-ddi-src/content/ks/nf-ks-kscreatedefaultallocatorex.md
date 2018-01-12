@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsCreateDefaultAllocatorEx
+UID: NF:ks.KsCreateDefaultAllocatorEx
 title: KsCreateDefaultAllocatorEx function
 author: windows-driver-content
 description: Creates a default allocator that uses the specified memory pool and associates the IoGetCurrentIrpStackLocation(pIrp)-&gt;FileObject with this allocator using an internal dispatch table (KSDISPATCH_TABLE).
@@ -7,7 +7,7 @@ old-location: stream\kscreatedefaultallocatorex.htm
 old-project: stream
 ms.assetid: 63b2d9a3-7f8e-4c03-8c0c-a4555c27e39c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsCreateDefaultAllocatorEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsCreateDefaultAllocatorEx function

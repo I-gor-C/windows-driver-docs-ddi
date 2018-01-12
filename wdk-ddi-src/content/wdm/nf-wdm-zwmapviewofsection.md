@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ZwMapViewOfSection
+UID: NF:wdm.ZwMapViewOfSection
 title: ZwMapViewOfSection function
 author: windows-driver-content
 description: The ZwMapViewOfSection routine maps a view of a section into the virtual address space of a subject process.
@@ -7,7 +7,7 @@ old-location: kernel\zwmapviewofsection.htm
 old-project: kernel
 ms.assetid: 2abe7751-ef8c-4511-aaf6-755428c451fe
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwMapViewOfSection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -65,7 +66,7 @@ NTSTATUS ZwMapViewOfSection(
 
 ### -param SectionHandle [in]
 
-Handle to a section object. This handle is created by a successful call to <a href="kernel.zwcreatesection">ZwCreateSection</a> or <a href="kernel.zwopensection">ZwOpenSection</a>.
+Handle to a section object. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatesection.md">ZwCreateSection</a> or <a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a>.
 
 
 ### -param ProcessHandle [in]
@@ -123,7 +124,7 @@ Drivers should typically specify <b>ViewUnmap</b> for this parameter.
 
 ### -param AllocationType [in]
 
-Specifies a set of flags that describes the type of allocation to be performed for the specified region of pages. The valid flags are MEM_LARGE_PAGES, MEM_RESERVE, and MEM_TOP_DOWN. Although MEM_COMMIT is not allowed, it is implied unless MEM_RESERVE is specified. For more information about the MEM_<i>XXX</i> flags, see the description of the <a href="base.virtualalloc">VirtualAlloc</a> routine.
+Specifies a set of flags that describes the type of allocation to be performed for the specified region of pages. The valid flags are MEM_LARGE_PAGES, MEM_RESERVE, and MEM_TOP_DOWN. Although MEM_COMMIT is not allowed, it is implied unless MEM_RESERVE is specified. For more information about the MEM_<i>XXX</i> flags, see the description of the <a href="https://msdn.microsoft.com/a720dd89-c47c-4e48-bbc6-f2e02dfc4ed2">VirtualAlloc</a> routine.
 
 
 ### -param Win32Protect [in]
@@ -154,7 +155,7 @@ Several different views of a section can be concurrently mapped into the virtual
 
 If the specified section does not exist or the access requested is not allowed, <b>ZwMapViewOfSection</b> returns an error.
 
-Do not use <b>ZwMapViewOfSection</b> to map a memory range from <b>\Device\PhysicalMemory</b> into user mode—unless your driver has directly allocated the memory range through <a href="kernel.mmallocatepagesformdl">MmAllocatePagesForMdl</a> or another method guaranteeing that no other system component has mapped the same memory range with a different <a href="kernel.memory_caching_type">MEMORY_CACHING_TYPE</a> value.
+Do not use <b>ZwMapViewOfSection</b> to map a memory range from <b>\Device\PhysicalMemory</b> into user mode—unless your driver has directly allocated the memory range through <a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a> or another method guaranteeing that no other system component has mapped the same memory range with a different <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a> value.
 
 User applications cannot access <b>\Device\PhysicalMemory</b> directly starting with Windows Server 2003 with Service Pack 1 (SP1) and can access it only if the driver passes a handle to the application.
 
@@ -235,7 +236,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -243,30 +244,30 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.memory_caching_type">MEMORY_CACHING_TYPE</a>
+<a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
 </dt>
 <dt>
-<a href="kernel.mmallocatepagesformdl">MmAllocatePagesForMdl</a>
+<a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="base.virtualalloc">VirtualAlloc</a>
+<a href="https://msdn.microsoft.com/a720dd89-c47c-4e48-bbc6-f2e02dfc4ed2">VirtualAlloc</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566431">ZwCurrentProcess</a>
 </dt>
 <dt>
-<a href="kernel.zwopensection">ZwOpenSection</a>
+<a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a>
 </dt>
 <dt>
-<a href="kernel.zwunmapviewofsection">ZwUnmapViewOfSection</a>
+<a href="..\wdm\nf-wdm-zwunmapviewofsection.md">ZwUnmapViewOfSection</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwMapViewOfSection routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwMapViewOfSection routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

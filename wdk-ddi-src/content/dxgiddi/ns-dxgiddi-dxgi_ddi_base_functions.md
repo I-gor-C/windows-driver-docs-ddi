@@ -1,5 +1,5 @@
 ---
-UID: NS.DXGIDDI.DXGI_DDI_BASE_FUNCTIONS
+UID: NS:dxgiddi.DXGI_DDI_BASE_FUNCTIONS
 title: DXGI_DDI_BASE_FUNCTIONS
 author: windows-driver-content
 description: The DXGI_DDI_BASE_FUNCTIONS structure contains functions that the user-mode display driver can implement to perform low-level tasks like presenting rendered frames to an output, controlling gamma, and managing a full-screen transition.
@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_base_functions.htm
 old-project: display
 ms.assetid: c9fd9b21-4338-4633-903f-308763cbc301
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: DXGI_DDI_BASE_FUNCTIONS, DXGI_DDI_BASE_FUNCTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGI_DDI_BASE_FUNCTIONS
 ---
 
 # DXGI_DDI_BASE_FUNCTIONS structure
@@ -61,37 +62,37 @@ typedef struct DXGI_DDI_BASE_FUNCTIONS {
 
 ### -field pfnPresent
 
-A pointer to the driver's  <a href="display.presentdxgi">PresentDXGI</a> function.
+A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function.
 
 
 ### -field pfnGetGammaCaps
 
-A pointer to the driver's  <a href="display.getgammacapsdxgi">GetGammaCapsDXGI</a> function.
+A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/ff566790">GetGammaCapsDXGI</a> function.
 
 
 ### -field pfnSetDisplayMode
 
-A pointer to the driver's  <a href="display.setdisplaymodedxgi">SetDisplayModeDXGI</a> function.
+A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a> function.
 
 
 ### -field pfnSetResourcePriority
 
-A pointer to the driver's  <a href="display.setresourceprioritydxgi">SetResourcePriorityDXGI</a> function.
+A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/ff569657">SetResourcePriorityDXGI</a> function.
 
 
 ### -field pfnQueryResourceResidency
 
-A pointer to the driver's  <a href="display.queryresourceresidencydxgi">QueryResourceResidencyDXGI</a> function.
+A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/ff569224">QueryResourceResidencyDXGI</a> function.
 
 
 ### -field pfnRotateResourceIdentities
 
-A pointer to the driver's  <a href="display.rotateresourceidentitiesdxgi">RotateResourceIdentitiesDXGI</a> function.
+A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/ff569514">RotateResourceIdentitiesDXGI</a> function.
 
 
 ### -field pfnBlt
 
-A pointer to the driver's  <a href="display.bltdxgi">BltDXGI</a> function.
+A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a> function.
 
 
 ## -remarks
@@ -125,7 +126,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.bltdxgi">BltDXGI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createdevice.md">CreateDevice(D3D10)</a>
@@ -137,27 +138,27 @@ Header
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_base_args.md">DXGI_DDI_BASE_ARGS</a>
 </dt>
 <dt>
-<a href="display.getgammacapsdxgi">GetGammaCapsDXGI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566790">GetGammaCapsDXGI</a>
 </dt>
 <dt>
-<a href="display.presentdxgi">PresentDXGI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a>
 </dt>
 <dt>
-<a href="display.queryresourceresidencydxgi">QueryResourceResidencyDXGI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569224">QueryResourceResidencyDXGI</a>
 </dt>
 <dt>
-<a href="display.rotateresourceidentitiesdxgi">RotateResourceIdentitiesDXGI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569514">RotateResourceIdentitiesDXGI</a>
 </dt>
 <dt>
-<a href="display.setdisplaymodedxgi">SetDisplayModeDXGI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a>
 </dt>
 <dt>
-<a href="display.setresourceprioritydxgi">SetResourcePriorityDXGI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569657">SetResourcePriorityDXGI</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI_DDI_BASE_FUNCTIONS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI_DDI_BASE_FUNCTIONS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILMSGCDMAMSGSTATUSTYPE
+UID: NE:ntddrilapitypes.RILMSGCDMAMSGSTATUSTYPE
 title: RILMSGCDMAMSGSTATUSTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgcdmamsgstatustype.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 60365fd7-3897-4948-a251-098e5a91c959
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMSGCDMAMSGSTATUSTYPE, RILMSGCDMAMSGSTATUSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGCDMAMSGSTATUSTYPE
 ---
 
 # RILMSGCDMAMSGSTATUSTYPE enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_SET_XOFF
+UID: NI:ntddser.IOCTL_SERIAL_SET_XOFF
 title: IOCTL_SERIAL_SET_XOFF
 author: windows-driver-content
 description: The IOCTL_SERIAL_SET_XOFF request emulates the reception of an XOFF (transmit off) character.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_XOFF IOCTL

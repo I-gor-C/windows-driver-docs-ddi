@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlULongPtrToChar
+UID: NF:ntintsafe.RtlULongPtrToChar
 title: RtlULongPtrToChar function
 author: windows-driver-content
 description: Converts a value of type ULONG_PTR to a value of type CHAR.
@@ -7,7 +7,7 @@ old-location: kernel\rtlulongptrtochar.htm
 old-project: kernel
 ms.assetid: DB015FC3-D263-4EA6-AAE1-E4ECA3ECF4F9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlULongPtrToChar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlULongPtrToChar function

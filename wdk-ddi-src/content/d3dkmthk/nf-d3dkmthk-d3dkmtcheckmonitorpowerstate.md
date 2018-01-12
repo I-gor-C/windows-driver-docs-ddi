@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTCheckMonitorPowerState
+UID: NF:d3dkmthk.D3DKMTCheckMonitorPowerState
 title: D3DKMTCheckMonitorPowerState function
 author: windows-driver-content
 description: The D3DKMTCheckMonitorPowerState function verifies the power state of a monitor.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtcheckmonitorpowerstate.htm
 old-project: display
 ms.assetid: 8f218b63-304e-4f25-88d8-ea1326c613ee
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTCheckMonitorPowerState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Gdi32.lib
 req.dll: Gdi32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTCheckMonitorPowerState function
@@ -55,7 +56,7 @@ NTSTATUS APIENTRY D3DKMTCheckMonitorPowerState(
 
 ### -param pData [in]
 
-A pointer to a <a href="display.d3dkmt_checkmonitorpowerstate">D3DKMT_CHECKMONITORPOWERSTATE</a> structure that describes the connection to the monitor for which to check the power state. 
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkmonitorpowerstate.md">D3DKMT_CHECKMONITORPOWERSTATE</a> structure that describes the connection to the monitor for which to check the power state. 
 
 
 ## -returns
@@ -136,12 +137,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_checkmonitorpowerstate">D3DKMT_CHECKMONITORPOWERSTATE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkmonitorpowerstate.md">D3DKMT_CHECKMONITORPOWERSTATE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTCheckMonitorPowerState function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTCheckMonitorPowerState function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

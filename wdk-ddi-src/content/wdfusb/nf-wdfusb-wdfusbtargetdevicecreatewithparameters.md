@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfusb.WdfUsbTargetDeviceCreateWithParameters
+UID: NF:wdfusb.WdfUsbTargetDeviceCreateWithParameters
 title: WdfUsbTargetDeviceCreateWithParameters function
 author: windows-driver-content
 description: The WdfUsbTargetDeviceCreateWithParameters method creates a framework USB device object for a specified framework device object and opens the USB device for I/O operations.
@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetdevicecreatewithparameters.htm
 old-project: wdf
 ms.assetid: E93A944E-81D5-4059-ADA6-2760A091C30B
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfUsbTargetDeviceCreateWithParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -69,12 +70,12 @@ A handle to a framework device object.
 
 ### -param Config [in]
 
-A pointer to a <a href="wdf.wdf_usb_device_create_config">WDF_USB_DEVICE_CREATE_CONFIG</a> structure that contains configuration information for the framework USB device object.
+A pointer to a <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_create_config.md">WDF_USB_DEVICE_CREATE_CONFIG</a> structure that contains configuration information for the framework USB device object.
 
 
 ### -param Attributes [in, optional]
 
-A pointer to a caller-supplied <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new framework USB device object. (The structure's <b>ParentObject</b> member must be NULL.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a caller-supplied <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new framework USB device object. (The structure's <b>ParentObject</b> member must be NULL.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 
 ### -param UsbDevice [out]
@@ -99,7 +100,7 @@ A pointer to a location that receives a handle to the new framework USB device o
 
  
 
-For a list of other return values that the <b>WdfUsbTargetDeviceCreateWithParameters</b> method might return, see <a href="wdf.framework_object_creation_errors">Framework Object Creation Errors</a>.
+For a list of other return values that the <b>WdfUsbTargetDeviceCreateWithParameters</b> method might return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
 This method also might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -111,15 +112,15 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## -remarks
 Windows 8 includes a new USB driver stack to support USB 3.0 devices.
 
-Before a framework-based client driver can use the new capabilities of the USB driver stack for Windows 8, the driver must register itself with the underlying USB driver stack that is loaded by Windows for the device. To register the client driver, call <b>WdfUsbTargetDeviceCreateWithParameters</b> and specify a contract version in the <a href="wdf.wdf_usb_device_create_config">WDF_USB_DEVICE_CREATE_CONFIG</a> structure.
+Before a framework-based client driver can use the new capabilities of the USB driver stack for Windows 8, the driver must register itself with the underlying USB driver stack that is loaded by Windows for the device. To register the client driver, call <b>WdfUsbTargetDeviceCreateWithParameters</b> and specify a contract version in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_create_config.md">WDF_USB_DEVICE_CREATE_CONFIG</a> structure.
 
  If the client driver is intended to build, run, and use the improvements and the new capabilities on Windows 8, the client contract version is USBD_CLIENT_CONTRACT_VERSION_602.
 
 Typically, drivers call <b>WdfUsbTargetDeviceCreateWithParameters</b> from within an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a> callback function. Drivers can also call <b>WdfUsbTargetDeviceCreateWithParameters</b> from within an <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function.
 
-For information about how WDM USB client drivers interact with the USB 3.0 driver stack, see  <a href="buses.usb_client_driver_contract_in_windows_8">Best Practices: Using URBs</a>.
+For information about how WDM USB client drivers interact with the USB 3.0 driver stack, see  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406258">Best Practices: Using URBs</a>.
 
-If the driver calls <b>WdfUsbTargetDeviceCreateWithParameters</b> to create a framework USB device object, the driver must create URBs only by calling <a href="wdf.wdfusbtargetdevicecreateurb">WdfUsbTargetDeviceCreateUrb</a> or <a href="wdf.wdfusbtargetdevicecreateisochurb">WdfUsbTargetDeviceCreateIsochUrb</a>.
+If the driver calls <b>WdfUsbTargetDeviceCreateWithParameters</b> to create a framework USB device object, the driver must create URBs only by calling <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateurb.md">WdfUsbTargetDeviceCreateUrb</a> or <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreateisochurb.md">WdfUsbTargetDeviceCreateIsochUrb</a>.
 
 If you call this method from a UMDF driver, you must specify the <b>UmdfDispatcher</b> directive in the driver's INF file.  Otherwise, this method may return <b>STATUS_INVALID_PARAMETER</b>.   For more information about this directive, see <a href="https://docs.microsoft.com/windows-hardware/drivers/wdf/specifying-wdf-directives-in-inf-files">Specifying WDF Directives in INF Files</a>.
 
@@ -198,7 +199,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_requestforurbxrb">RequestForUrbXrb</a>, <a href="devtest.kmdf_usbdevicecreate">UsbDeviceCreate</a>, <a href="devtest.kmdf_usbdevicecreatefail">UsbDeviceCreateFail</a>, <a href="devtest.kmdf_usbdevicecreatetarget">UsbDeviceCreateTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/jj126208">RequestForUrbXrb</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554036">UsbDeviceCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554038">UsbDeviceCreateFail</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554040">UsbDeviceCreateTarget</a>
 </td>
 </tr>
 </table>
@@ -206,21 +207,21 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbd_register">USBD_CreateHandle</a>
+<a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
 </dt>
 <dt>
-<a href="wdf.wdfusbtargetdevicecreate">WdfUsbTargetDeviceCreate</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreate.md">WdfUsbTargetDeviceCreate</a>
 </dt>
 <dt>
-<a href="wdf.wdf_usb_device_create_config">WDF_USB_DEVICE_CREATE_CONFIG</a>
+<a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_create_config.md">WDF_USB_DEVICE_CREATE_CONFIG</a>
 </dt>
 <dt>
-<a href="wdf.wdf_usb_device_create_config_init">WDF_USB_DEVICE_CREATE_CONFIG_INIT</a>
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_device_create_config_init.md">WDF_USB_DEVICE_CREATE_CONFIG_INIT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceCreateWithParameters method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceCreateWithParameters method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

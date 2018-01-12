@@ -1,5 +1,5 @@
 ---
-UID: NS.STRMINI._HW_STREAM_HEADER
+UID: NS:strmini._HW_STREAM_HEADER
 title: _HW_STREAM_HEADER
 author: windows-driver-content
 description: The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a HW_STREAM_DESCRIPTOR structure.
@@ -7,8 +7,8 @@ old-location: stream\hw_stream_header.htm
 old-project: stream
 ms.assetid: 1931c640-666b-4db5-8d05-eab43ae96665
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HW_STREAM_HEADER, PHW_STREAM_HEADER, *PHW_STREAM_HEADER, HW_STREAM_HEADER
+ms.date: 1/9/2018
+ms.keywords: _HW_STREAM_HEADER, HW_STREAM_HEADER, *PHW_STREAM_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HW_STREAM_HEADER, *PHW_STREAM_HEADER
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a <a href="stream.hw_stream_descriptor">HW_STREAM_DESCRIPTOR</a> structure.
+The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a <a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.
 
 
 
@@ -64,7 +65,7 @@ typedef struct _HW_STREAM_HEADER {
 
 ### -field NumberOfStreams
 
-The number of <a href="stream.hw_stream_information">HW_STREAM_INFORMATION</a> structures that follow this header.
+The number of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures that follow this header.
 
 
 ### -field SizeOfHwStreamInformation
@@ -79,7 +80,7 @@ The number of entries in the array pointed to by <b>DevicePropertiesArray</b>.
 
 ### -field DevicePropertiesArray
 
-Pointer to the beginning of the array of property sets that the minidriver as a whole supports. (Property sets supported by individual streams can be found in the <b>StreamPropertiesArray</b> member of the stream's <a href="stream.hw_stream_information">HW_STREAM_INFORMATION</a> structure.)
+Pointer to the beginning of the array of property sets that the minidriver as a whole supports. (Property sets supported by individual streams can be found in the <b>StreamPropertiesArray</b> member of the stream's <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structure.)
 
 
 ### -field NumDevEventArrayEntries
@@ -99,7 +100,7 @@ Pointer to the <a href="..\ks\ns-ks-kstopology.md">KSTOPOLOGY</a> structure that
 
 ### -field DeviceEventRoutine
 
-Points to the minidriver's <a href="stream.strminievent">StrMiniEvent</a> routine.
+Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568457">StrMiniEvent</a> routine.
 
 
 ### -field Reserved
@@ -128,15 +129,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.hw_stream_information">HW_STREAM_INFORMATION</a>
+<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
 </dt>
 <dt>
-<a href="stream.hw_stream_descriptor">HW_STREAM_DESCRIPTOR</a>
+<a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20HW_STREAM_HEADER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20HW_STREAM_HEADER structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

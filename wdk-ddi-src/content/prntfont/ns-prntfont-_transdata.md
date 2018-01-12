@@ -1,5 +1,5 @@
 ---
-UID: NS.PRNTFONT._TRANSDATA
+UID: NS:prntfont._TRANSDATA
 title: _TRANSDATA
 author: windows-driver-content
 description: The TRANSDATA structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
@@ -7,8 +7,8 @@ old-location: print\transdata.htm
 old-project: print
 ms.assetid: 75ddf007-0113-4967-a8d4-02fcc3cc2857
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _TRANSDATA, PTRANSDATA, TRANSDATA, *PTRANSDATA
+ms.date: 1/8/2018
+ms.keywords: _TRANSDATA, TRANSDATA, *PTRANSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TRANSDATA, *PTRANSDATA
 req.product: Windows 10 or later.
 ---
 
@@ -62,9 +63,9 @@ typedef struct _TRANSDATA {
 
 ### -field ubCodePageID
 
-Specifies the zero-based index of a particular structure in the array of <a href="print.uni_codepageinfo">UNI_CODEPAGEINFO</a> structures. The first structure in this array has an index of 0, the second structure has an index of 1, and so on.
+Specifies the zero-based index of a particular structure in the array of <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a> structures. The first structure in this array has an index of 0, the second structure has an index of 1, and so on.
 
-The <b>loCodePageOffset</b> member of the <a href="print.uni_glyphsetdata">UNI_GLYPHSETDATA</a> structure contains the offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of the array of UNI_CODEPAGEINFO structures.
+The <b>loCodePageOffset</b> member of the <a href="..\prntfont\ns-prntfont-_uni_glyphsetdata.md">UNI_GLYPHSETDATA</a> structure contains the offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of the array of UNI_CODEPAGEINFO structures.
 
 
 ### -field ubType
@@ -125,7 +126,7 @@ The <b>ubPairs</b> member of the <b>uCode</b> union contains a two-byte characte
 
 </td>
 <td>
-One of the following flags can be set. All are optional. Not valid if the <b>lPredefinedID</b> member of the <a href="print.uni_glyphsetdata">UNI_GLYPHSETDATA</a> structure is set to CC_NOPRECNV.
+One of the following flags can be set. All are optional. Not valid if the <b>lPredefinedID</b> member of the <a href="..\prntfont\ns-prntfont-_uni_glyphsetdata.md">UNI_GLYPHSETDATA</a> structure is set to CC_NOPRECNV.
 
 </td>
 </tr>
@@ -147,7 +148,7 @@ MTYPE_DISABLE
 
 </td>
 <td>
-The specified mapping, contained in the .gtt file specified by the <b>lPredefinedID</b> member of the <a href="print.uni_glyphsetdata">UNI_GLYPHSETDATA</a> structure, is disabled.
+The specified mapping, contained in the .gtt file specified by the <b>lPredefinedID</b> member of the <a href="..\prntfont\ns-prntfont-_uni_glyphsetdata.md">UNI_GLYPHSETDATA</a> structure, is disabled.
 
 </td>
 </tr>
@@ -203,7 +204,7 @@ Character data is double-byte.
 
 ### -field sCode
 
-Specifies the offset to a command string. The offset is relative to the beginning of the <a href="print.maptable">MAPTABLE</a> structure containing the TRANSDATA array. The first word of the command string must be the command size. Valid if the MTYPE_COMPOSE flag is set in <b>uType</b>.
+Specifies the offset to a command string. The offset is relative to the beginning of the <a href="..\prntfont\ns-prntfont-_maptable.md">MAPTABLE</a> structure containing the TRANSDATA array. The first word of the command string must be the command size. Valid if the MTYPE_COMPOSE flag is set in <b>uType</b>.
 
 
 ### -field ubCode
@@ -219,7 +220,7 @@ Specifies a two-byte character code. Valid if the MTYPE_PAIRED flag is set in <b
 </dl>
 
 ## -remarks
-A .gtt file's TRANSDATA structure array, which contains glyph mapping information, is contained in the file's <a href="print.maptable">MAPTABLE</a> structure.
+A .gtt file's TRANSDATA structure array, which contains glyph mapping information, is contained in the file's <a href="..\prntfont\ns-prntfont-_maptable.md">MAPTABLE</a> structure.
 
 
 ## -requirements
@@ -240,18 +241,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.uni_codepageinfo">UNI_CODEPAGEINFO</a>
+<a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a>
 </dt>
 <dt>
-<a href="print.uni_glyphsetdata">UNI_GLYPHSETDATA</a>
+<a href="..\prntfont\ns-prntfont-_uni_glyphsetdata.md">UNI_GLYPHSETDATA</a>
 </dt>
 <dt>
-<a href="print.maptable">MAPTABLE</a>
+<a href="..\prntfont\ns-prntfont-_maptable.md">MAPTABLE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20TRANSDATA structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20TRANSDATA structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

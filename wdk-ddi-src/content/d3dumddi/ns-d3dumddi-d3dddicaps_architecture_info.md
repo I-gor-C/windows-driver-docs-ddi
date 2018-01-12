@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI.D3DDDICAPS_ARCHITECTURE_INFO
+UID: NS:d3dumddi.D3DDDICAPS_ARCHITECTURE_INFO
 title: D3DDDICAPS_ARCHITECTURE_INFO
 author: windows-driver-content
 description: Describes information about display adapter architecture.
@@ -7,7 +7,7 @@ old-location: display\d3dddicaps_architecture_info.htm
 old-project: display
 ms.assetid: ad35cd3f-87bd-4d57-ab13-4cb2b268ad35
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DDDICAPS_ARCHITECTURE_INFO, D3DDDICAPS_ARCHITECTURE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDICAPS_ARCHITECTURE_INFO
 ---
 
 # D3DDDICAPS_ARCHITECTURE_INFO structure

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_GET_PROPERTIES
+UID: NI:ntddser.IOCTL_SERIAL_GET_PROPERTIES
 title: IOCTL_SERIAL_GET_PROPERTIES
 author: windows-driver-content
 description: The IOCTL_SERIAL_GET_PROPERTIES request returns information about the capabilities of a serial controller. The capabilities information is returned in a SERIAL_COMMPROP structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_PROPERTIES IOCTL
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>IOCTL_SERIAL_GET_PROPERTIES</b> request returns information about the capabilities of a serial controller. The capabilities information is returned in a <a href="serports.serial_commprop">SERIAL_COMMPROP</a> structure.
+The <b>IOCTL_SERIAL_GET_PROPERTIES</b> request returns information about the capabilities of a serial controller. The capabilities information is returned in a <a href="..\ntddser\ns-ntddser-_serial_commprop.md">SERIAL_COMMPROP</a> structure.
 
 
 
@@ -96,7 +97,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="serports.serial_commprop">SERIAL_COMMPROP</a>
+<a href="..\ntddser\ns-ntddser-_serial_commprop.md">SERIAL_COMMPROP</a>
 </dt>
 </dl>
  

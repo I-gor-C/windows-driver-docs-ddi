@@ -1,19 +1,19 @@
 ---
-UID: NE.rilapitypes.RILEUTRAMRLPARAMMASK
+UID: NE:rilapitypes.RILEUTRAMRLPARAMMASK
 title: RILEUTRAMRLPARAMMASK
 author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rileutramrlparammask_2.htm
-old-project: NetVista
-ms.assetid: 68f194f5-137e-45a3-94b1-71cd20a27ea3
+description: This enumeration describes the RILEUTRAMRLPARAMMASK.
+old-location: netvista\rileutramrlparammask.htm
+old-project: netvista
+ms.assetid: 555dd967-ea38-45fa-8e7f-5318ca5c6dd2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILEUTRAMRLPARAMMASK, RILEUTRAMRLPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
 req.header: rilapitypes.h
-req.include-header: 
+req.include-header: Rilapitypes.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILEUTRAMRLPARAMMASK
 req.product: Windows 10 or later.
 ---
 
@@ -39,27 +40,29 @@ req.product: Windows 10 or later.
 
 
 ## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
 
 ## -syntax
 
 ````
-typedef enum _RILEUTRAMRLPARAMMASK { 
-  RIL_PARAM_EUTRAMRL_MNC,
-  RIL_PARAM_EUTRAMRL_CELLID,
-  RIL_PARAM_EUTRAMRL_EARFCN,
-  RIL_PARAM_EUTRAMRL_PHYSCELLID,
-  RIL_PARAM_EUTRAMRL_TAC,
-  RIL_PARAM_EUTRAMRL_RSRP,
-  RIL_PARAM_EUTRAMRL_RSRQ,
-  RIL_PARAM_EUTRAMRL_ALL
-} RILEUTRAMRLPARAMMASK;
+enum RILEUTRAMRLPARAMMASK {
+  RIL_PARAM_EUTRAMRL_MCC         = 0x00000001, 
+  RIL_PARAM_EUTRAMRL_MNC         = 0x00000002, 
+  RIL_PARAM_EUTRAMRL_CELLID      = 0x00000004, 
+  RIL_PARAM_EUTRAMRL_EARFCN      = 0x00000008, 
+  RIL_PARAM_EUTRAMRL_PHYSCELLID  = 0x00000010, 
+  RIL_PARAM_EUTRAMRL_TAC         = 0x00000020, 
+  RIL_PARAM_EUTRAMRL_RSRP        = 0x00000040, 
+  RIL_PARAM_EUTRAMRL_RSRQ        = 0x00000080, 
+  RIL_PARAM_EUTRAMRL_ALL         = 0x000000ff 
+
+};
 ````
 
 
 ## -enum-fields
+
+### -field RIL_PARAM_EUTRAMRL_MCC
+
 
 ### -field RIL_PARAM_EUTRAMRL_MNC
 
@@ -86,6 +89,61 @@ typedef enum _RILEUTRAMRLPARAMMASK {
 
 
 ## -remarks
+Networks will vary, but the following table summarizes which items are returned for typical LTE networks. 
+
+<b>Serving network</b>
+
+MobileCountryCode
+
+Yes
+
+0 through 999
+
+
+
+MobileNetworkCode
+
+CellID
+
+0 through 268,435,455
+
+Global cell ID in the system information block; 28 bits
+
+EARFCN
+
+0 through 65,535
+
+E-UTRA absolute radio frequency channel number of the serving cell 
+
+PhysCellID
+
+0 through 503
+
+LTE serving cell ID 
+
+TAC
+
+RSRP
+
+−44 through −140
+
+The current reference signal receive power in dBm  
+
+RSRQ
+
+−3 through −20
+
+Measured in dB  
+
+<b>LTE neighbors</b> (subject to availability from network)
+
+No
+
+E-UTRA absolute radio frequency channel number of the serving cell
+
+The current reference signal receive power in dBm
+
+Measured in dB
 
 
 ## -requirements
@@ -97,8 +155,21 @@ Header
 </th>
 <td width="70%">
 <dl>
-<dt>Rilapitypes.h</dt>
+<dt>Rilapitypes.h (include Rilapitypes.h)</dt>
 </dl>
 </td>
 </tr>
 </table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+</dt>
+</dl>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILEUTRAMRLPARAMMASK enumeration%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

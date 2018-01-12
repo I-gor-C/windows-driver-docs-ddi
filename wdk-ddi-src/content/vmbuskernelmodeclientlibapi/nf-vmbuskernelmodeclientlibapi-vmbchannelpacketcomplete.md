@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbChannelPacketComplete
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelPacketComplete
 title: VmbChannelPacketComplete function
 author: windows-driver-content
 description: The VmbChannelPacketComplete function cleans up any outstanding memory mappings, releases any buffers in use, and, if the opposite endpoint requested a completion packet, sends a completion packet.
 old-location: netvista\vmbchannelpacketcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1DC215DF-1F53-4910-84D5-17E13BE6202A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbChannelPacketComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Vmbkmcl.lib
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

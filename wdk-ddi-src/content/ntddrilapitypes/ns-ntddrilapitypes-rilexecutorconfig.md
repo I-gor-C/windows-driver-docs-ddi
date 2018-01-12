@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILEXECUTORCONFIG
+UID: NS:ntddrilapitypes.RILEXECUTORCONFIG
 title: RILEXECUTORCONFIG
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilexecutorconfig.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d53c3df2-fd75-4008-a740-0afa293e36eb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG, RILEXECUTORCONFIG, LPRILEXECUTORCONFIG
+ms.date: 1/8/2018
+ms.keywords: RILEXECUTORCONFIG, RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG
 ---
 
 # RILEXECUTORCONFIG structure

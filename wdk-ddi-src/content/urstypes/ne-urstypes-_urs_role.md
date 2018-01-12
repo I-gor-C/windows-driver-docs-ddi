@@ -1,14 +1,14 @@
 ---
-UID: NE.urstypes._URS_ROLE
+UID: NE:urstypes._URS_ROLE
 title: _URS_ROLE
 author: windows-driver-content
 description: Defines values for roles supported by a USB dual-role controller.
 old-location: buses\urs_role.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: A1ED9DBD-67FF-4AE7-8E5E-016C2C89A79E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _URS_ROLE, PURS_ROLE, URS_ROLE, *PURS_ROLE
+ms.date: 1/4/2018
+ms.keywords: _URS_ROLE, *PURS_ROLE, URS_ROLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PURS_ROLE, URS_ROLE
 req.product: Windows 10 or later.
 ---
 

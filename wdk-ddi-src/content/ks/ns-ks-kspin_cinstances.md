@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSPIN_CINSTANCES
+UID: NS:ks.KSPIN_CINSTANCES
 title: KSPIN_CINSTANCES
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\kspin_cinstances.htm
 old-project: stream
 ms.assetid: 90C861C3-26E0-43C0-A4CA-FD5491995DAB
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSPIN_CINSTANCES, KSPIN_CINSTANCES, *PKSPIN_CINSTANCES, PKSPIN_CINSTANCES
+ms.date: 1/9/2018
+ms.keywords: KSPIN_CINSTANCES, *PKSPIN_CINSTANCES, KSPIN_CINSTANCES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSPIN_CINSTANCES, KSPIN_CINSTANCES
 ---
 
 # KSPIN_CINSTANCES structure

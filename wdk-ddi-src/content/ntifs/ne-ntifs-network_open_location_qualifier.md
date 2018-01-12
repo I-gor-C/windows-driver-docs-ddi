@@ -1,5 +1,5 @@
 ---
-UID: NE.ntifs.NETWORK_OPEN_LOCATION_QUALIFIER
+UID: NE:ntifs.NETWORK_OPEN_LOCATION_QUALIFIER
 title: NETWORK_OPEN_LOCATION_QUALIFIER
 author: windows-driver-content
 description: The NETWORK_OPEN_LOCATION_QUALIFIER enumeration type contains values that identify the kind of location restriction to attach to a file.
@@ -7,7 +7,7 @@ old-location: ifsk\network_open_location_qualifier.htm
 old-project: ifsk
 ms.assetid: 7762bf83-82cc-4eef-9699-d093a8c2b986
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: NETWORK_OPEN_LOCATION_QUALIFIER, NETWORK_OPEN_LOCATION_QUALIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NETWORK_OPEN_LOCATION_QUALIFIER
 ---
 
 # NETWORK_OPEN_LOCATION_QUALIFIER enumeration

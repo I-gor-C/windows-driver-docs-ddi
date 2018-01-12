@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisIfFreeNetLuidIndex
+UID: NF:ndis.NdisIfFreeNetLuidIndex
 title: NdisIfFreeNetLuidIndex function
 author: windows-driver-content
 description: The NdisIfFreeNetLuidIndex function frees a network interface NET_LUID index that was previously allocated by a call to the NdisIfAllocateNetLuidIndex function.
 old-location: netvista\ndisiffreenetluidindex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: eba881f8-e946-44a8-9624-37f63471fb65
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisIfFreeNetLuidIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisIfFreeNetLuidIndex function
@@ -40,9 +41,9 @@ req.irql: PASSIVE_LEVEL
 ## -description
 The 
   <b>NdisIfFreeNetLuidIndex</b> function frees a network interface 
-  <a href="netvista.net_luid">NET_LUID</a> index that was previously allocated by a
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> index that was previously allocated by a
   call to the 
-  <a href="netvista.ndisifallocatenetluidindex">
+  <a href="..\ndis\nf-ndis-ndisifallocatenetluidindex.md">
   NdisIfAllocateNetLuidIndex</a> function.
 
 
@@ -63,7 +64,7 @@ NDIS_STATUS NdisIfFreeNetLuidIndex(
 
 The interface type that the index was allocated for. The caller must provide the same value that
      it used when it allocated the NET_LUID index with 
-     <a href="netvista.ndisifallocatenetluidindex">NdisIfAllocateNetLuidIndex</a>.
+     <a href="..\ndis\nf-ndis-ndisifallocatenetluidindex.md">NdisIfAllocateNetLuidIndex</a>.
      For a list of interface types, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff565767">NDIS Interface Types</a>.
 
@@ -97,13 +98,13 @@ If the call to
 ## -remarks
 NDIS interface providers call the 
     <b>NdisIfFreeNetLuidIndex</b> function to free a 
-    <a href="netvista.net_luid">NET_LUID</a> index. The interface provider should free
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> index. The interface provider should free
     the NET_LUID index only if the interface will not be used anymore on the local computer.
 
 <b>NdisIfFreeNetLuidIndex</b> returns a previously allocated NET_LUID index to NDIS for possible
     reallocation to another interface. The caller must pass in the same interface type at 
     <i>IfType</i> that it used when it called the 
-    <a href="netvista.ndisifallocatenetluidindex">
+    <a href="..\ndis\nf-ndis-ndisifallocatenetluidindex.md">
     NdisIfAllocateNetLuidIndex</a> function to allocate the NET_LUID index.
 
 The provider should not use the freed NET_LUID index or the associated NET_LUID value in any other
@@ -172,7 +173,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_interfaces_function">Irql_Interfaces_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547949">Irql_Interfaces_Function</a>
 </td>
 </tr>
 </table>
@@ -180,15 +181,15 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisifallocatenetluidindex">NdisIfAllocateNetLuidIndex</a>
+<a href="..\ndis\nf-ndis-ndisifallocatenetluidindex.md">NdisIfAllocateNetLuidIndex</a>
 </dt>
 <dt>
-<a href="netvista.net_luid">NET_LUID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisIfFreeNetLuidIndex function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfFreeNetLuidIndex function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

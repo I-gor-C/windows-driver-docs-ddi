@@ -1,5 +1,5 @@
 ---
-UID: NF.umdprovider.UMDEtwLogUnmapAllocation
+UID: NF:umdprovider.UMDEtwLogUnmapAllocation
 title: UMDEtwLogUnmapAllocation function
 author: windows-driver-content
 description: Indicates that a Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) memory allocation, or a portion of the allocation, is no longer being used. Call this function whether or not the allocation is being destroyed.
@@ -7,7 +7,7 @@ old-location: display\umdetwlogunmapallocation.htm
 old-project: display
 ms.assetid: 36c204fb-638d-44d2-8379-a5bd79e4167a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: UMDEtwLogUnmapAllocation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UMDETW_ALLOCATION_SEMANTIC
 req.product: Windows 10 or later.
 ---
 
@@ -85,12 +86,12 @@ The size, in bytes, of the Direct3D allocation within the Dxgkrnl allocation.
 
 ### -param Usage 
 
-A <a href="display.umdetw_allocation_usage">UMDETW_ALLOCATION_USAGE</a> structure that indicates the reason for this mapping.
+A <a href="..\umdprovider\ns-umdprovider-_umdetw_allocation_usage.md">UMDETW_ALLOCATION_USAGE</a> structure that indicates the reason for this mapping.
 
 
 ### -param Semantic 
 
-If the allocation is used internally by the user-mode driver, this is a <a href="display.umdetw_allocation_semantic">UMDETW_ALLOCATION_SEMANTIC</a> structure that indicates what the allocation is used for.
+If the allocation is used internally by the user-mode driver, this is a <a href="..\umdprovider\ne-umdprovider-_umdetw_allocation_semantic.md">UMDETW_ALLOCATION_SEMANTIC</a> structure that indicates what the allocation is used for.
 
 
 ## -returns
@@ -102,7 +103,7 @@ When called, this function logs an event that describes which API resource the a
 
 The user-mode display driver must completely account for the video memory it allocates, so it must call this function to log an event every time the allocation changes.
 
-The driver should pass the same parameters values to <b>UMDEtwLogUnmapAllocation</b> as it did to <a href="display.umdetwlogmapallocation">UMDEtwLogMapAllocation</a>.
+The driver should pass the same parameters values to <b>UMDEtwLogUnmapAllocation</b> as it did to <a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>.
 
 <b>UMDEtwLogUnmapAllocation</b> is defined inline in Umdprovider.h as:
 
@@ -162,18 +163,18 @@ Header
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a>
 </dt>
 <dt>
-<a href="display.umdetw_allocation_semantic">UMDETW_ALLOCATION_SEMANTIC</a>
+<a href="..\umdprovider\ne-umdprovider-_umdetw_allocation_semantic.md">UMDETW_ALLOCATION_SEMANTIC</a>
 </dt>
 <dt>
-<a href="display.umdetw_allocation_usage">UMDETW_ALLOCATION_USAGE</a>
+<a href="..\umdprovider\ns-umdprovider-_umdetw_allocation_usage.md">UMDETW_ALLOCATION_USAGE</a>
 </dt>
 <dt>
-<a href="display.umdetwlogmapallocation">UMDEtwLogMapAllocation</a>
+<a href="..\umdprovider\nf-umdprovider-umdetwlogmapallocation.md">UMDEtwLogMapAllocation</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20UMDEtwLogUnmapAllocation function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20UMDEtwLogUnmapAllocation function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

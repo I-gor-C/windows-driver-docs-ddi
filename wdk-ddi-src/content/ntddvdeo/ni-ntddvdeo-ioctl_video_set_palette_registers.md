@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddvdeo.IOCTL_VIDEO_SET_PALETTE_REGISTERS
+UID: NI:ntddvdeo.IOCTL_VIDEO_SET_PALETTE_REGISTERS
 title: IOCTL_VIDEO_SET_PALETTE_REGISTERS
 author: windows-driver-content
 description: Loads a specified portion of the adapter palette registers with an array of colors. Miniport drivers for VGA-compatible adapters are required to support this request, which is modal. Support is optional for other miniport drivers.
@@ -7,8 +7,8 @@ old-location: display\ioctl_video_set_palette_registers.htm
 old-project: display
 ms.assetid: f36dc8cf-2141-4ee2-9f23-ae996a0f0d97
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS, PTAPE_WRITE_MARKS
+ms.date: 12/29/2017
+ms.keywords: _TAPE_WRITE_MARKS, TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_SET_PALETTE_REGISTERS IOCTL
@@ -75,7 +76,7 @@ None
 
 ### -status-block
 I/O Status block
-The miniport driver does not set the <b>Information</b> member of the <a href="display.status_block">STATUS_BLOCK</a> structure.
+The miniport driver does not set the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure.
 
 
 ## -remarks

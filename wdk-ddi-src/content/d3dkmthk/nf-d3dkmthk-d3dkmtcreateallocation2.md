@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTCreateAllocation2
+UID: NF:d3dkmthk.D3DKMTCreateAllocation2
 title: D3DKMTCreateAllocation2 function
 author: windows-driver-content
 description: Reserved for system use. Do not use in your driver.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtcreateallocation2.htm
 old-project: display
 ms.assetid: 416DE730-44A6-4BA3-BFC2-C11A179AD422
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTCreateAllocation2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Gdi32.lib
 req.dll: Gdi32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTCreateAllocation2 function

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcNewMiniport
+UID: NF:portcls.PcNewMiniport
 title: PcNewMiniport function
 author: windows-driver-content
 description: The PcNewMiniport function creates an instance of one of the system-supplied miniport drivers that are built into the PortCls system driver, portcls.sys.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcNewMiniport function

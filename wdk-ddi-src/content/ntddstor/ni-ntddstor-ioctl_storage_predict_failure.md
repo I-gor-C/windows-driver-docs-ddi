@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddstor.IOCTL_STORAGE_PREDICT_FAILURE
+UID: NI:ntddstor.IOCTL_STORAGE_PREDICT_FAILURE
 title: IOCTL_STORAGE_PREDICT_FAILURE
 author: windows-driver-content
 description: Polls for a prediction of device failure.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_storage_predict_failure.htm
 old-project: storage
 ms.assetid: 56e178d9-e6bb-43d4-b062-da4e699c4efc
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_ZONE_CONDITION, PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_PREDICT_FAILURE IOCTL
@@ -41,7 +42,7 @@ req.irql:
 
 Polls for a prediction of device failure. This request works with the IDE disk drives that support self-monitoring analysis and reporting technology (SMART). If the drive is a SCSI drive, the class driver attempts to verify if the SCSI disk supports the equivalent IDE SMART technology by check the inquiry information on the Information Exception Control Page, X3T10/94-190 Rev 4. 
 
-If the device supports prediction failure, the disk class driver queries the device for failure prediction status and reports the results. If the disk class driver assigns a nonzero value to the <b>PredictFailure</b> member of <a href="storage.storage_predict_failure">STORAGE_PREDICT_FAILURE</a> in the output buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, the disk has bad sectors and is predicting a failure. The storage stack returns 512 bytes of vendor-specific information about the failure prediction in the <b>VendorSpecific</b> member of STORAGE_PREDICT_FAILURE. 
+If the device supports prediction failure, the disk class driver queries the device for failure prediction status and reports the results. If the disk class driver assigns a nonzero value to the <b>PredictFailure</b> member of <a href="..\ntddstor\ns-ntddstor-_storage_predict_failure.md">STORAGE_PREDICT_FAILURE</a> in the output buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, the disk has bad sectors and is predicting a failure. The storage stack returns 512 bytes of vendor-specific information about the failure prediction in the <b>VendorSpecific</b> member of STORAGE_PREDICT_FAILURE. 
 
 If the <b>PredictFailure</b> member contains a value of zero, the disk is not predicting a failure.
 
@@ -53,7 +54,7 @@ Other means of checking for disk failure include monitoring the event log and re
 
 Polls for a prediction of device failure. This request works with the IDE disk drives that support self-monitoring analysis and reporting technology (SMART). If the drive is a SCSI drive, the class driver attempts to verify if the SCSI disk supports the equivalent IDE SMART technology by check the inquiry information on the Information Exception Control Page, X3T10/94-190 Rev 4. 
 
-If the device supports prediction failure, the disk class driver queries the device for failure prediction status and reports the results. If the disk class driver assigns a nonzero value to the <b>PredictFailure</b> member of <a href="storage.storage_predict_failure">STORAGE_PREDICT_FAILURE</a> in the output buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, the disk has bad sectors and is predicting a failure. The storage stack returns 512 bytes of vendor-specific information about the failure prediction in the <b>VendorSpecific</b> member of STORAGE_PREDICT_FAILURE. 
+If the device supports prediction failure, the disk class driver queries the device for failure prediction status and reports the results. If the disk class driver assigns a nonzero value to the <b>PredictFailure</b> member of <a href="..\ntddstor\ns-ntddstor-_storage_predict_failure.md">STORAGE_PREDICT_FAILURE</a> in the output buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, the disk has bad sectors and is predicting a failure. The storage stack returns 512 bytes of vendor-specific information about the failure prediction in the <b>VendorSpecific</b> member of STORAGE_PREDICT_FAILURE. 
 
 If the <b>PredictFailure</b> member contains a value of zero, the disk is not predicting a failure.
 
@@ -74,7 +75,7 @@ None.
 
 
 ### -output-buffer
-The driver returns a <a href="storage.storage_predict_failure">STORAGE_PREDICT_FAILURE</a> structure containing failure prediction data in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. 
+The driver returns a <a href="..\ntddstor\ns-ntddstor-_storage_predict_failure.md">STORAGE_PREDICT_FAILURE</a> structure containing failure prediction data in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. 
 
 
 ### -output-buffer-length
@@ -115,12 +116,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storage_predict_failure">STORAGE_PREDICT_FAILURE</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_predict_failure.md">STORAGE_PREDICT_FAILURE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_STORAGE_PREDICT_FAILURE control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_STORAGE_PREDICT_FAILURE control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

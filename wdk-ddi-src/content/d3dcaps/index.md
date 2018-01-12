@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:d3dcaps
 ---
 
 # D3Dcaps.h header

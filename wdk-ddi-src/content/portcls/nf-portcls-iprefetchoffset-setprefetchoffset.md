@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPreFetchOffset.SetPreFetchOffset
+UID: NF:portcls.IPreFetchOffset.SetPreFetchOffset
 title: IPreFetchOffset::SetPreFetchOffset method
 author: windows-driver-content
 description: The SetPreFetchOffset method sets the prefetch offset, which is the number of bytes of data separating the write cursor from the play cursor in a DirectSound output stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPreFetchOffset::SetPreFetchOffset method
@@ -124,10 +125,10 @@ Any level
 <a href="..\ksmedia\ns-ksmedia-ksaudio_position.md">KSAUDIO_POSITION</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavepcistream_getposition">IMiniportWavePciStream::GetPosition</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536727">IMiniportWavePciStream::GetPosition</a>
 </dt>
 <dt>
-<a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
 </dt>
 </dl>
  

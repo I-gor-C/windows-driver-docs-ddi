@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSRATE_CAPABILITY
+UID: NS:ks.KSRATE_CAPABILITY
 title: KSRATE_CAPABILITY
 author: windows-driver-content
 description: The client uses the KSRATE_CAPABILITY structure in a KSPROPERTY_STREAM_RATECAPABILITY property request.
@@ -7,8 +7,8 @@ old-location: stream\ksrate_capability.htm
 old-project: stream
 ms.assetid: 70866a87-0ebd-4230-9958-ace18116fa23
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSRATE_CAPABILITY, KSRATE_CAPABILITY, PKSRATE_CAPABILITY, *PKSRATE_CAPABILITY
+ms.date: 1/9/2018
+ms.keywords: KSRATE_CAPABILITY, KSRATE_CAPABILITY, *PKSRATE_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSRATE_CAPABILITY, *PKSRATE_CAPABILITY
 ---
 
 # KSRATE_CAPABILITY structure
@@ -56,7 +57,7 @@ typedef struct {
 
 ### -field Property
 
-A structure of type <a href="stream.ksproperty">KSPROPERTY</a> that specifies the property identifier.
+A structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> that specifies the property identifier.
 
 
 ### -field Rate

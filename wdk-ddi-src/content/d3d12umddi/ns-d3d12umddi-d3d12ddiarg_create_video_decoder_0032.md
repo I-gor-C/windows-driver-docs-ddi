@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDIARG_CREATE_VIDEO_DECODER_0032
+UID: NS:d3d12umddi.D3D12DDIARG_CREATE_VIDEO_DECODER_0032
 title: D3D12DDIARG_CREATE_VIDEO_DECODER_0032
 author: windows-driver-content
 description: Creates a video decoder.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg-create-video-decoder-0032.htm
 old-project: display
 ms.assetid: d4d42334-ae09-4900-828b-86da81b446c1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDIARG_CREATE_VIDEO_DECODER_0032, D3D12DDIARG_CREATE_VIDEO_DECODER_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDIARG_CREATE_VIDEO_DECODER_0032
 ---
 
 # D3D12DDIARG_CREATE_VIDEO_DECODER_0032 structure

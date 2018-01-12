@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILREMOTEPARTYINFOVALUEPARAM
+UID: NE:ntddrilapitypes.RILREMOTEPARTYINFOVALUEPARAM
 title: RILREMOTEPARTYINFOVALUEPARAM
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilremotepartyinfovalueparam.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2e0d5214-d2ec-4cb4-8437-a9f5605ea85a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILREMOTEPARTYINFOVALUEPARAM, RILREMOTEPARTYINFOVALUEPARAM, RILREMOTEPARTYINFOPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILREMOTEPARTYINFOVALUEPARAM, RILREMOTEPARTYINFOPARAM
 ---
 
 # RILREMOTEPARTYINFOVALUEPARAM enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NF.srb.ScsiPortGetDeviceBase
+UID: NF:srb.ScsiPortGetDeviceBase
 title: ScsiPortGetDeviceBase function
 author: windows-driver-content
 description: The ScsiPortGetDeviceBase routine returns a mapped, logical base address that can be used to communicate with an HBA.
@@ -7,7 +7,7 @@ old-location: storage\scsiportgetdevicebase.htm
 old-project: storage
 ms.assetid: d8d14818-4b84-4c65-a29e-2cd97e8bfbe9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: ScsiPortGetDeviceBase
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Scsiport.lib
 req.dll: 
 req.irql: 
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -61,12 +62,12 @@ PVOID ScsiPortGetDeviceBase(
 
 ### -param HwDeviceExtension [in]
 
-Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="storage.scsiportinitialize">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. 
+Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. 
 
 
 ### -param BusType [in]
 
-Specifies the interface type of the I/O bus on which the HBA is connected. The miniport driver's <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> routine obtains the value for this parameter from the <b>AdapterInterfaceType</b> member of the input PORT_CONFIGURATION_INFORMATION.
+Specifies the interface type of the I/O bus on which the HBA is connected. The miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a> routine obtains the value for this parameter from the <b>AdapterInterfaceType</b> member of the input PORT_CONFIGURATION_INFORMATION.
 
 
 ### -param SystemIoBusNumber [in]
@@ -102,11 +103,11 @@ Every miniport driver must use system-space logical range addresses, mapped by <
 
 <b>ScsiPortGetDeviceBase</b> can be called several times, depending on how many HBAs the miniport driver supports and how many access ranges each HBA requires. Each mapped range corresponds to a range of bus-relative device addresses specified in an ACCESS_RANGE-type element of the <b>AccessRanges</b> array.
 
-<b>ScsiPortGetDeviceBase</b> can be called only from a miniport driver's <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> routine or from HwScsiAdapterControl when the control type is <b>ScsiSetRunningConfig</b>. Calls from other miniport driver  routines will result in system failure or in incorrect operation for the caller.
+<b>ScsiPortGetDeviceBase</b> can be called only from a miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a> routine or from HwScsiAdapterControl when the control type is <b>ScsiSetRunningConfig</b>. Calls from other miniport driver  routines will result in system failure or in incorrect operation for the caller.
 
 Follow these guidelines for calling <b>ScsiPortGetDeviceBase</b>:
 
-If <i>HwScsiFindAdapter</i> is using a miniport driver-supplied set of default bus-relative access ranges or values returned by <b>ScsiPortGetBusData</b>, it should call <a href="storage.scsiportvalidaterange">ScsiPortValidateRange</a> before attempting to call <b>ScsiPortGetDeviceBase</b>.
+If <i>HwScsiFindAdapter</i> is using a miniport driver-supplied set of default bus-relative access ranges or values returned by <b>ScsiPortGetBusData</b>, it should call <a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a> before attempting to call <b>ScsiPortGetDeviceBase</b>.
 
 If <i>HwScsiFindAdapter</i> determines that a particular HBA is not one that the miniport driver supports, it must call <b>ScsiPortFreeDeviceBase</b> to release the mapping(s) it set up to communicate with that HBA.
 
@@ -157,27 +158,27 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="storage.access_range">ACCESS_RANGE</a>
+<a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
 </dt>
 <dt>
-<a href="storage.hwscsifindadapter">HwScsiFindAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
 </dt>
 <dt>
-<a href="storage.scsiportfreedevicebase">ScsiPortFreeDeviceBase</a>
+<a href="..\srb\nf-srb-scsiportfreedevicebase.md">ScsiPortFreeDeviceBase</a>
 </dt>
 <dt>
-<a href="storage.scsiportgetbusdata">ScsiPortGetBusData</a>
+<a href="..\srb\nf-srb-scsiportgetbusdata.md">ScsiPortGetBusData</a>
 </dt>
 <dt>
-<a href="storage.scsiportvalidaterange">ScsiPortValidateRange</a>
+<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
 </dt>
 <dt>
-<a href="storage.port_configuration_information__scsi_">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortGetDeviceBase routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortGetDeviceBase routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

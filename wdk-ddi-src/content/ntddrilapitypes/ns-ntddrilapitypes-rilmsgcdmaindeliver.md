@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILMSGCDMAINDELIVER
+UID: NS:ntddrilapitypes.RILMSGCDMAINDELIVER
 title: RILMSGCDMAINDELIVER
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgcdmaindeliver.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: fdff17ac-2ffd-45b0-8f01-a21af1ffa9d0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER, LPRILMSGCDMAINDELIVER, *LPRILMSGCDMAINDELIVER
+ms.date: 1/8/2018
+ms.keywords: RILMSGCDMAINDELIVER, *LPRILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER
 ---
 
 # RILMSGCDMAINDELIVER structure

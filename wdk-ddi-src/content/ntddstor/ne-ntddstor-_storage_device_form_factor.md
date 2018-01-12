@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddstor._STORAGE_DEVICE_FORM_FACTOR
+UID: NE:ntddstor._STORAGE_DEVICE_FORM_FACTOR
 title: _STORAGE_DEVICE_FORM_FACTOR
 author: windows-driver-content
 description: Indicates the form factor of a storage device.
@@ -7,8 +7,8 @@ old-location: storage\storage_device_form_factor.htm
 old-project: storage
 ms.assetid: EE59767B-2504-4E5F-A442-60EEBEE70B59
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_DEVICE_FORM_FACTOR, PSTORAGE_DEVICE_FORM_FACTOR, *PSTORAGE_DEVICE_FORM_FACTOR, STORAGE_DEVICE_FORM_FACTOR
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_DEVICE_FORM_FACTOR, *PSTORAGE_DEVICE_FORM_FACTOR, STORAGE_DEVICE_FORM_FACTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTORAGE_DEVICE_FORM_FACTOR, STORAGE_DEVICE_FORM_FACTOR
 ---
 
 # _STORAGE_DEVICE_FORM_FACTOR enumeration

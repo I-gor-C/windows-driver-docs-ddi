@@ -1,5 +1,5 @@
 ---
-UID: NE.gnssdriver.GNSS_NI_USER_RESPONSE
+UID: NE:gnssdriver.GNSS_NI_USER_RESPONSE
 title: GNSS_NI_USER_RESPONSE
 author: windows-driver-content
 description: This enumeration indicates the user’s response to a network initiated (NI) request, which is represented by the GNSS_NI_RESPONSE structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: GNSS_NI_USER_RESPONSE
 ---
 
 # GNSS_NI_USER_RESPONSE enumeration

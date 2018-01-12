@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._GET_MEDIA_TYPES
+UID: NS:ntddstor._GET_MEDIA_TYPES
 title: _GET_MEDIA_TYPES
 author: windows-driver-content
 description: The GET_MEDIA_TYPES structure is used in conjunction with the IOCTL_STORAGE_GET_MEDIA_TYPES_EX request to retrieve information about the types of media supported by a device.
@@ -7,8 +7,8 @@ old-location: storage\get_media_types.htm
 old-project: storage
 ms.assetid: e803505f-37a0-4b20-bd6f-ce0f79eead03
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _GET_MEDIA_TYPES, *PGET_MEDIA_TYPES, GET_MEDIA_TYPES, PGET_MEDIA_TYPES
+ms.date: 1/10/2018
+ms.keywords: _GET_MEDIA_TYPES, GET_MEDIA_TYPES, *PGET_MEDIA_TYPES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GET_MEDIA_TYPES, *PGET_MEDIA_TYPES
 ---
 
 # _GET_MEDIA_TYPES structure
@@ -62,7 +63,7 @@ Specifies one of the system-defined FILE_DEVICE_<i>XXX</i> constants indicating 
 
 ### -field MediaInfoCount
 
-Contains the number of <a href="storage.device_media_info">DEVICE_MEDIA_INFO</a> structures in the array starting at <b>MediaInfo</b>.
+Contains the number of <a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a> structures in the array starting at <b>MediaInfo</b>.
 
 
 ### -field MediaInfo
@@ -95,12 +96,12 @@ Header
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a>
 </dt>
 <dt>
-<a href="storage.device_media_info">DEVICE_MEDIA_INFO</a>
+<a href="..\ntddstor\ns-ntddstor-_device_media_info.md">DEVICE_MEDIA_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20GET_MEDIA_TYPES structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20GET_MEDIA_TYPES structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

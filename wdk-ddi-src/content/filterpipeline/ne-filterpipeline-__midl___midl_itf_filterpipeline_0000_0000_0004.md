@@ -1,5 +1,5 @@
 ---
-UID: NE.filterpipeline.__MIDL___MIDL_itf_filterpipeline_0000_0000_0004
+UID: NE:filterpipeline.__MIDL___MIDL_itf_filterpipeline_0000_0000_0004
 title: __MIDL___MIDL_itf_filterpipeline_0000_0000_0004
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\expsfontrestriction.htm
 old-project: print
 ms.assetid: 079BEF8A-514E-42C3-8916-95655C605098
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: __MIDL___MIDL_itf_filterpipeline_0000_0000_0004, EXpsFontRestriction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -23,7 +23,7 @@ req.alt-api: EXpsFontRestriction
 req.alt-loc: Filterpipeline.h
 req.ddi-compliance: 
 req.unicode-ansi: 
-req.idl: 
+req.idl: Filterpipeline.idl
 req.max-support: 
 req.namespace: 
 req.assembly: 
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # __MIDL___MIDL_itf_filterpipeline_0000_0000_0004 enumeration

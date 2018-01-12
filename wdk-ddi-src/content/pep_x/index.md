@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:pep_x
 ---
 
 # Pep_X.h header
@@ -17,6 +17,8 @@ Pep_X.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [_PEP_COMPONENT_ACTIVE structure](ns-pep_x-_pep_component_active.md) | The PEP_COMPONENT_ACTIVE structure identifies a component that is making a transition between the idle condition and the active condition. |
+| [_PEP_KERNEL_INFORMATION_STRUCT_V1 structure](ns-pep_x-_pep_kernel_information_struct_v1.md) | The PEP_KERNEL_INFORMATION structure specifies the interface that the power extension plug-in (PEP) uses to request services from the Windows power management framework (PoFx). |
+| [_PEP_KERNEL_INFORMATION_STRUCT_V2 structure](ns-pep_x-_pep_kernel_information_struct_v2.md) | The PEP_KERNEL_INFORMATION structure specifies the interface that the power extension plug-in (PEP) uses to request services from the Windows power management framework (PoFx). |
 | [_PEP_PPM_IDLE_CANCEL structure](ns-pep_x-_pep_ppm_idle_cancel.md) | The PEP_PPM_IDLE_CANCEL structure indicates why the processor could not enter the previously selected idle state. |
 | [_PEP_PPM_IDLE_SELECT structure](ns-pep_x-_pep_ppm_idle_select.md) | The PEP_PPM_IDLE_SELECT structure describes the most energy-efficient idle state that the processor can enter and still satisfy the constraints specified by the operating system. |
 | [_PEP_PPM_QUERY_IDLE_STATES structure](ns-pep_x-_pep_ppm_query_idle_states.md) | The PEP_PPM_QUERY_IDLE_STATES structure describes the idle states of a particular processor. |
@@ -32,5 +34,5 @@ Pep_X.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PPEP_PROCESSOR_IDLE_CANCEL_CODE enumeration](ne-pep_x-ppep_processor_idle_cancel_code.md) | The PEP_PROCESSOR_IDLE_CANCEL_CODE enumeration values indicate reasons why a processor cannot enter an idle state that was previously selected by the platform extension plug-in (PEP). |
-| [PPEP_PROCESSOR_IDLE_TYPE enumeration](ne-pep_x-ppep_processor_idle_type.md) | The PEP_PROCESSOR_IDLE_TYPE enumeration indicates whether idle constraints apply to just the current processor or to all processors in the hardware platform. |
+| [*PPEP_PROCESSOR_IDLE_CANCEL_CODE enumeration](ne-pep_x-ppep_processor_idle_cancel_code.md) | The PEP_PROCESSOR_IDLE_CANCEL_CODE enumeration values indicate reasons why a processor cannot enter an idle state that was previously selected by the platform extension plug-in (PEP). |
+| [*PPEP_PROCESSOR_IDLE_TYPE enumeration](ne-pep_x-ppep_processor_idle_type.md) | The PEP_PROCESSOR_IDLE_TYPE enumeration indicates whether idle constraints apply to just the current processor or to all processors in the hardware platform. |

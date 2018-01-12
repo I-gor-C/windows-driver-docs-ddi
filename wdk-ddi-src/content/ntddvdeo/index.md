@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ntddvdeo
 ---
 
 # Ntddvdeo.h header
@@ -19,7 +19,6 @@ Ntddvdeo.h contain these programming interfaces:
 | [_DISPLAY_BRIGHTNESS structure](ns-ntddvdeo-_display_brightness.md) | The DISPLAY_BRIGHTNESS structure is reserved for system use. |
 | [_DXGK_WIN32K_PARAM_DATA structure](ns-ntddvdeo-_dxgk_win32k_param_data.md) | The DXGK_WIN32K_PARAM_DATA structure is reserved for system use. |
 | [_ENG_EVENT structure](ns-ntddvdeo-_eng_event.md) | The ENG_EVENT structure is reserved for system use. |
-| [_ENG_EVENT structure](ns-ntddvdeo-_eng_event~r1.md) | The ENG_EVENT structure is reserved for system use. |
 | [_VIDEO_MEMORY structure](ns-ntddvdeo-_video_memory.md) | The VIDEO_MEMORY structure holds the address of a requested block of kernel-mode video memory. |
 | [_VIDEO_MEMORY_INFORMATION structure](ns-ntddvdeo-_video_memory_information.md) | The VIDEO_MEMORY_INFORMATION structure contains information about a mapping of video memory into system space or the private virtual address space of a user-mode process. |
 | [_VIDEO_MODE structure](ns-ntddvdeo-_video_mode.md) | The VIDEO_MODE structure contains the requested VGA mode that an adapter should set. This structure is used in conjunction with IOCTL_VIDEO_SET_CURRENT_MODE. |

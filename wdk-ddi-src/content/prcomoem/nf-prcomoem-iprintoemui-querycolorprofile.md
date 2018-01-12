@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUI.QueryColorProfile
+UID: NF:prcomoem.IPrintOemUI.QueryColorProfile
 title: IPrintOemUI::QueryColorProfile method
 author: windows-driver-content
 description: The IPrintOemUI::QueryColorProfile method allows a user interface plug-in to specify an ICC profile to use for color management.
@@ -7,7 +7,7 @@ old-location: print\iprintoemui_querycolorprofile.htm
 old-project: print
 ms.assetid: ce1131f9-4b9c-4f20-afc9-514ccbc7ecf7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUI, IPrintOemUI::QueryColorProfile, QueryColorProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -68,12 +69,12 @@ Caller-supplied printer handle.
 
 ### -param poemuiobj 
 
-Caller-supplied pointer to an <a href="print.oemuiobj">OEMUIOBJ</a> structure.
+Caller-supplied pointer to an <a href="..\printoem\ns-printoem-_oemuiobj.md">OEMUIOBJ</a> structure.
 
 
 ### -param pPublicDM 
 
-Caller-supplied pointer to a validated <a href="display.devmodew">DEVMODEW</a> structure.
+Caller-supplied pointer to a validated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.
 
 
 ### -param pOEMDM 
@@ -173,7 +174,7 @@ The method must return one of the following values.
 
 
 ## -remarks
-A user interface plug-in's <code>IPrintOemUI::QueryColorProfile</code> method performs the same types of operations as the <b>DrvQueryColorProfile</b> function that is exported by user-mode printer interface DLLs. For information about printer events and how they should be processed, see the description of the <a href="print.drvquerycolorprofile">DrvQueryColorProfile</a> function.
+A user interface plug-in's <code>IPrintOemUI::QueryColorProfile</code> method performs the same types of operations as the <b>DrvQueryColorProfile</b> function that is exported by user-mode printer interface DLLs. For information about printer events and how they should be processed, see the description of the <a href="..\winddiui\nf-winddiui-drvquerycolorprofile.md">DrvQueryColorProfile</a> function.
 
 If you provide a user interface plug-in, the printer driver's <b>DrvQueryColorProfile</b> function calls the <code>IPrintOemUI::QueryColorProfile</code> method. The <b>DrvQueryColorProfile</b> function performs its own processing for the specified event, and then calls the <code>IPrintOemUI::QueryColorProfile</code> method to handle additional processing of the event.
 

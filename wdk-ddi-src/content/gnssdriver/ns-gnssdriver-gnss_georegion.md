@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_GEOREGION
+UID: NS:gnssdriver.GNSS_GEOREGION
 title: GNSS_GEOREGION
 author: windows-driver-content
 description: This structure defines the geographical shape of a geofence.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 70FC3BCE-3869-4263-8870-BB97438CB5F1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_GEOREGION, *PGNSS_GEOREGION, GNSS_GEOREGION, PGNSS_GEOREGION
+ms.keywords: GNSS_GEOREGION, GNSS_GEOREGION, *PGNSS_GEOREGION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_GEOREGION, *PGNSS_GEOREGION
 ---
 
 # GNSS_GEOREGION structure

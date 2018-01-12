@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdfdriver
 ---
 
 # Wdfdriver.h header
@@ -16,6 +16,13 @@ Wdfdriver.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [PFN_WDFDRIVERCREATE function](nc-wdfdriver-pfn_wdfdrivercreate.md) | The WdfDriverCreate method creates a framework driver object for the calling driver. |
+| [PFN_WDFDRIVERGETREGISTRYPATH function](nc-wdfdriver-pfn_wdfdrivergetregistrypath.md) | The WdfDriverGetRegistryPath method retrieves the path to the driver's registry key in the registry's Services tree. |
+| [PFN_WDFDRIVERISVERSIONAVAILABLE function](nc-wdfdriver-pfn_wdfdriverisversionavailable.md) | The WdfDriverIsVersionAvailable method returns a Boolean value that indicates whether the driver is running with a specified version of the Kernel-Mode Driver Framework library. |
+| [PFN_WDFDRIVERREGISTERTRACEINFO function](nc-wdfdriver-pfn_wdfdriverregistertraceinfo.md) | The WdfDriverRegisterTraceInfo method is reserved for internal use only. |
+| [PFN_WDFDRIVERRETRIEVEVERSIONSTRING function](nc-wdfdriver-pfn_wdfdriverretrieveversionstring.md) | The WdfDriverRetrieveVersionString method retrieves a Unicode string that identifies the version of the Kernel-Mode Driver Framework that the driver is running with. |
+| [PFN_WDFDRIVERWDMGETDRIVEROBJECT function](nc-wdfdriver-pfn_wdfdriverwdmgetdriverobject.md) | The WdfDriverWdmGetDriverObject method retrieves a pointer to the Windows Driver Model (WDM) driver object that is associated with a specified framework driver object. |
+| [PFN_WDFWDMDRIVERGETWDFDRIVERHANDLE function](nc-wdfdriver-pfn_wdfwdmdrivergetwdfdriverhandle.md) | The WdfWdmDriverGetWdfDriverHandle method returns a handle to the framework driver object that is associated with a specified Windows Driver Model (WDM) driver object. |
 | [WDF_DRIVER_CONFIG_INIT function](nf-wdfdriver-wdf_driver_config_init.md) | The WDF_DRIVER_CONFIG_INIT function initializes a driver's WDF_DRIVER_CONFIG structure. |
 | [WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function](nf-wdfdriver-wdf_driver_version_available_params_init.md) | The WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function initializes a WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure. |
 | [WdfDriverCreate function](nf-wdfdriver-wdfdrivercreate.md) | The WdfDriverCreate method creates a framework driver object for the calling driver. |
@@ -27,13 +34,6 @@ Wdfdriver.h contain these programming interfaces:
 | [WdfDriverWdmGetDriverObject function](nf-wdfdriver-wdfdriverwdmgetdriverobject.md) | The WdfDriverWdmGetDriverObject method retrieves a pointer to the Windows Driver Model (WDM) driver object that is associated with a specified framework driver object. |
 | [WdfGetDriver function](nf-wdfdriver-wdfgetdriver.md) | The WdfGetDriver method returns a handle to the framework driver object that represents the calling driver. |
 | [WdfWdmDriverGetWdfDriverHandle function](nf-wdfdriver-wdfwdmdrivergetwdfdriverhandle.md) | The WdfWdmDriverGetWdfDriverHandle method returns a handle to the framework driver object that is associated with a specified Windows Driver Model (WDM) driver object. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_WDF_DRIVER_DEVICE_ADD callback](nc-wdfdriver-evt_wdf_driver_device_add.md) | A driver's EvtDriverDeviceAdd event callback function performs device initialization operations when the Plug and Play (PnP) manager reports the existence of a device. |
-| [EVT_WDF_DRIVER_UNLOAD callback](nc-wdfdriver-evt_wdf_driver_unload.md) | A driver's EvtDriverUnload event callback function performs operations that must take place before the driver is unloaded. |
 
 ## Structures
 

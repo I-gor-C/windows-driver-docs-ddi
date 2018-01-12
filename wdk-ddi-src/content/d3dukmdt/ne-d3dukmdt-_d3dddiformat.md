@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dukmdt._D3DDDIFORMAT
+UID: NE:d3dukmdt._D3DDDIFORMAT
 title: _D3DDDIFORMAT
 author: windows-driver-content
 description: The D3DDDIFORMAT enumeration type contains values that identify surface formats.
@@ -7,7 +7,7 @@ old-location: display\d3dddiformat.htm
 old-project: display
 ms.assetid: 1ab8f431-867a-4ae2-a1d1-2eeceb6a6966
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDIFORMAT, D3DDDIFORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDIFORMAT
 ---
 
 # _D3DDDIFORMAT enumeration
@@ -446,12 +447,12 @@ A lockable buffer format that uses 8 bits for the stencil channel.
 
 ### -field D3DDDIFMT_G8R8
 
-A two-component, 16-bit unsigned-normalized-integer format that supports 8 bits for the red channel and 8 bits for the green channel. Equivalent to <b>DXGI_FORMAT_R8G8_UNORM</b> from the <a href="direct3ddxgi.dxgi_format">DXGI_FORMAT</a> enumeration.
+A two-component, 16-bit unsigned-normalized-integer format that supports 8 bits for the red channel and 8 bits for the green channel. Equivalent to <b>DXGI_FORMAT_R8G8_UNORM</b> from the <a href="https://msdn.microsoft.com/dce61bc4-4ed5-4e64-84e8-6db88025e5c2">DXGI_FORMAT</a> enumeration.
 
 
 ### -field D3DDDIFMT_R8
 
-A single-component, 8-bit unsigned-normalized-integer format that supports 8 bits for the red channel. Equivalent to <b>DXGI_FORMAT_R8_UNORM</b> from the <a href="direct3ddxgi.dxgi_format">DXGI_FORMAT</a> enumeration.
+A single-component, 8-bit unsigned-normalized-integer format that supports 8 bits for the red channel. Equivalent to <b>DXGI_FORMAT_R8_UNORM</b> from the <a href="https://msdn.microsoft.com/dce61bc4-4ed5-4e64-84e8-6db88025e5c2">DXGI_FORMAT</a> enumeration.
 
 
 ### -field D3DDDIFMT_VERTEXDATA
@@ -738,15 +739,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiarg_createresource">D3DDDIARG_CREATERESOURCE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a>
 </dt>
 <dt>
-<a href="direct3ddxgi.dxgi_format">DXGI_FORMAT</a>
+<a href="https://msdn.microsoft.com/dce61bc4-4ed5-4e64-84e8-6db88025e5c2">DXGI_FORMAT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIFORMAT enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIFORMAT enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

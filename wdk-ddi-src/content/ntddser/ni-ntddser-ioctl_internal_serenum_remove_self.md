@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_INTERNAL_SERENUM_REMOVE_SELF
+UID: NI:ntddser.IOCTL_INTERNAL_SERENUM_REMOVE_SELF
 title: IOCTL_INTERNAL_SERENUM_REMOVE_SELF
 author: windows-driver-content
 description: The IOCTL_INTERNAL_SERENUM_REMOVE_SELF request invalidates the bus relations of the filter DO that are associated with a target PDO. (Physically, this request invalidates the bus relations of the RS-232 port to which the target device is attached.).
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_INTERNAL_SERENUM_REMOVE_SELF IOCTL

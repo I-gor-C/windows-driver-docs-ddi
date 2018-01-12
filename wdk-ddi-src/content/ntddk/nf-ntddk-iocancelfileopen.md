@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.IoCancelFileOpen
+UID: NF:ntddk.IoCancelFileOpen
 title: IoCancelFileOpen function
 author: windows-driver-content
 description: The IoCancelFileOpen routine can be used by a file system filter driver to close a file that has been opened by a file system driver in the filter driver's device stack.
@@ -7,7 +7,7 @@ old-location: ifsk\iocancelfileopen.htm
 old-project: ifsk
 ms.assetid: 249a77b4-c0da-4445-a669-1c4e2ced5b57
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IoCancelFileOpen
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # IoCancelFileOpen function
@@ -87,11 +88,11 @@ The filter driver uses <b>IoCancelFileOpen</b> to close the file that was opened
 
 After calling <b>IoCancelFileOpen</b>, the filter driver should complete the create request with an appropriate error code such as STATUS_UNSUCCESSFUL or STATUS_ACCESS_DENIED. In addition, it should set the <b>Irp-&gt;IoStatus.Information</b> field to zero. 
 
-<b>IoCancelFileOpen</b> must be called before any handles are created for the file. Callers can check the <b>Flags</b> member of the <a href="kernel.file_object">FILE_OBJECT</a> structure that the <i>FileObject</i> parameter points to. If the FO_HANDLE_CREATED flag is set, this means that one or more handles have been created for the file, so it is not safe to call <b>IoCancelFileOpen</b>. 
+<b>IoCancelFileOpen</b> must be called before any handles are created for the file. Callers can check the <b>Flags</b> member of the <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure that the <i>FileObject</i> parameter points to. If the FO_HANDLE_CREATED flag is set, this means that one or more handles have been created for the file, so it is not safe to call <b>IoCancelFileOpen</b>. 
 
 <b>IoCancelFileOpen</b> sets the FO_FILE_OPEN_CANCELLED flag in the <b>Flags</b> member of the file object that <i>FileObject</i> points to. This flag indicates that the IRP_MJ_CREATE request has been canceled, and an IRP_MJ_CLOSE request will be issued for this file object. Once the create operation has been canceled, it cannot be reissued - that is, STATUS_REPARSE cannot be returned by the legacy filter driver if it has called the <b>IoCreateFileOpen</b> routine.
 
-Minifilters should use <a href="ifsk.fltcancelfileopen">FltCancelFileOpen</a> instead of <b>IoCancelFileOpen</b>. 
+Minifilters should use <a href="..\fltkernel\nf-fltkernel-fltcancelfileopen.md">FltCancelFileOpen</a> instead of <b>IoCancelFileOpen</b>. 
 
 
 ## -requirements
@@ -165,36 +166,36 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltcancelfileopen">FltCancelFileOpen</a>
+<a href="..\fltkernel\nf-fltkernel-fltcancelfileopen.md">FltCancelFileOpen</a>
 </dt>
 <dt>
-<a href="ifsk.fltreissuesynchronousio">FltReissueSynchronousIo</a>
+<a href="..\fltkernel\nf-fltkernel-fltreissuesynchronousio.md">FltReissueSynchronousIo</a>
 </dt>
 <dt>
-<a href="kernel.iocreatefile">IoCreateFile</a>
+<a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
 </dt>
 <dt>
-<a href="ifsk.iocreatefileex">IoCreateFileEx</a>
+<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
 </dt>
 <dt>
-<a href="ifsk.iocreatefilespecifydeviceobjecthint">IoCreateFileSpecifyDeviceObjectHint</a>
+<a href="..\ntddk\nf-ntddk-iocreatefilespecifydeviceobjecthint.md">IoCreateFileSpecifyDeviceObjectHint</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_close">IRP_MJ_CLOSE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550720">IRP_MJ_CLOSE</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatefile">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 <dt>
-<a href="kernel.zwopenfile">ZwOpenFile</a>
+<a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCancelFileOpen routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoCancelFileOpen routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

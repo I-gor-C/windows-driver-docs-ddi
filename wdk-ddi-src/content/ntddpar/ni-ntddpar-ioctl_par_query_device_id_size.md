@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpar.IOCTL_PAR_QUERY_DEVICE_ID_SIZE
+UID: NI:ntddpar.IOCTL_PAR_QUERY_DEVICE_ID_SIZE
 title: IOCTL_PAR_QUERY_DEVICE_ID_SIZE
 author: windows-driver-content
 description: The IOCTL_PAR_QUERY_DEVICE_ID_SIZE request returns the size, in bytes, of a buffer that can hold a device's IEEE 1284 device ID and a NULL terminator.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # IOCTL_PAR_QUERY_DEVICE_ID_SIZE IOCTL
@@ -58,11 +59,11 @@ None.
 
 
 ### -output-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="parports.par_device_id_size_information">PAR_DEVICE_ID_SIZE_INFORMATION</a> structure that the client allocates to output the device ID size information. The system-supplied bus driver for parallel ports sets the <b>DeviceIdSize</b> member of the output structure to the size, in bytes, of a buffer that can hold the device ID and a <b>NULL</b> terminator.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\ntddpar\ns-ntddpar-_par_device_id_size_information.md">PAR_DEVICE_ID_SIZE_INFORMATION</a> structure that the client allocates to output the device ID size information. The system-supplied bus driver for parallel ports sets the <b>DeviceIdSize</b> member of the output structure to the size, in bytes, of a buffer that can hold the device ID and a <b>NULL</b> terminator.
 
 
 ### -output-buffer-length
-The length of a <a href="parports.par_device_id_size_information">PAR_DEVICE_ID_SIZE_INFORMATION</a> structure.
+The length of a <a href="..\ntddpar\ns-ntddpar-_par_device_id_size_information.md">PAR_DEVICE_ID_SIZE_INFORMATION</a> structure.
 
 
 ### -in-out-buffer
@@ -104,7 +105,7 @@ Header
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_query_device_id.md">IOCTL_PAR_QUERY_DEVICE_ID</a>
 </dt>
 <dt>
-<a href="parports.par_device_id_size_information">PAR_DEVICE_ID_SIZE_INFORMATION</a>
+<a href="..\ntddpar\ns-ntddpar-_par_device_id_size_information.md">PAR_DEVICE_ID_SIZE_INFORMATION</a>
 </dt>
 </dl>
  

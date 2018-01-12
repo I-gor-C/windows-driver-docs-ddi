@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_XPF_PROCESSOR_ERROR_SECTION
+UID: NS:ntddk._WHEA_XPF_PROCESSOR_ERROR_SECTION
 title: _WHEA_XPF_PROCESSOR_ERROR_SECTION
 author: windows-driver-content
 description: The WHEA_XPF_PROCESSOR_ERROR_SECTION structure describes processor error data that is specific to the x86/x64 processor architecture.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: e994c778-4a1b-4c7d-a9fb-4481d9edda0d
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_XPF_PROCESSOR_ERROR_SECTION, PWHEA_XPF_PROCESSOR_ERROR_SECTION, WHEA_XPF_PROCESSOR_ERROR_SECTION, *PWHEA_XPF_PROCESSOR_ERROR_SECTION
+ms.keywords: _WHEA_XPF_PROCESSOR_ERROR_SECTION, WHEA_XPF_PROCESSOR_ERROR_SECTION, *PWHEA_XPF_PROCESSOR_ERROR_SECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_XPF_PROCESSOR_ERROR_SECTION, *PWHEA_XPF_PROCESSOR_ERROR_SECTION
 ---
 
 # _WHEA_XPF_PROCESSOR_ERROR_SECTION structure
@@ -77,11 +78,11 @@ This member contains valid data only if the <b>ValidBits.CpuId </b>bit is set.
 
 ### -field VariableInfo
 
-A variable length buffer that contains zero or more <a href="whea.whea_xpf_procinfo">WHEA_XPF_PROCINFO</a> structures followed by zero or more <a href="whea.whea_xpf_context_info">WHEA_XPF_CONTEXT_INFO</a> structures. The number of WHEA_XPF_PROCINFO structures is specified in <b>ValidBits.ProcInfoCount</b>. The number of WHEA_XPF_CONTEXT_INFO structures is specified in <b>ValidBits.ContextInfoCount</b>. For a diagram that shows how these data structures are stored in the buffer, see the Remarks section.
+A variable length buffer that contains zero or more <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structures followed by zero or more <a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a> structures. The number of WHEA_XPF_PROCINFO structures is specified in <b>ValidBits.ProcInfoCount</b>. The number of WHEA_XPF_CONTEXT_INFO structures is specified in <b>ValidBits.ContextInfoCount</b>. For a diagram that shows how these data structures are stored in the buffer, see the Remarks section.
 
 
 ## -remarks
-The WHEA_XPF_PROCESSOR_ERROR_SECTION structure describes the error data that is contained in an x86/x64 processor error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains an x86/x64 processor error section only if the <b>SectionType </b>member of one of the <a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describes the error record sections for that error record contains XPF_PROCESSOR_ERROR_SECTION_GUID.
+The WHEA_XPF_PROCESSOR_ERROR_SECTION structure describes the error data that is contained in an x86/x64 processor error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains an x86/x64 processor error section only if the <b>SectionType </b>member of one of the <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describes the error record sections for that error record contains XPF_PROCESSOR_ERROR_SECTION_GUID.
 
 The following diagram shows how the data structures that contain the processor error data are stored in the <b>VariableInfo</b> member.
 
@@ -115,16 +116,16 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="whea.whea_xpf_context_info">WHEA_XPF_CONTEXT_INFO</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a>
 </dt>
 <dt>
 <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section_validbits.md">WHEA_XPF_PROCESSOR_ERROR_SECTION_VALIDBITS</a>
 </dt>
 <dt>
-<a href="whea.whea_xpf_procinfo">WHEA_XPF_PROCINFO</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_WMDRMTUNER_PURCHASEENTITLEMENT
+UID: NS:bdatypes._BDA_WMDRMTUNER_PURCHASEENTITLEMENT
 title: _BDA_WMDRMTUNER_PURCHASEENTITLEMENT
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bda_wmdrmtuner_purchaseentitlement.htm
 old-project: stream
 ms.assetid: 348E7C25-4998-490E-A732-5780B0A21DE0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_WMDRMTUNER_PURCHASEENTITLEMENT, *PBDA_WMDRMTUNER_PURCHASEENTITLEMENT, PBDA_WMDRMTUNER_PURCHASEENTITLEMENT, BDA_WMDRMTUNER_PURCHASEENTITLEMENT
+ms.date: 1/9/2018
+ms.keywords: _BDA_WMDRMTUNER_PURCHASEENTITLEMENT, *PBDA_WMDRMTUNER_PURCHASEENTITLEMENT, BDA_WMDRMTUNER_PURCHASEENTITLEMENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PBDA_WMDRMTUNER_PURCHASEENTITLEMENT, BDA_WMDRMTUNER_PURCHASEENTITLEMENT
 ---
 
 # _BDA_WMDRMTUNER_PURCHASEENTITLEMENT structure

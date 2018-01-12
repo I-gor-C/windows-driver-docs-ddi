@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KS_COMPRESSION
+UID: NS:ks.KS_COMPRESSION
 title: KS_COMPRESSION
 author: windows-driver-content
 description: The KS_COMPRESSION structure defines the compression of frames on an output pin.
@@ -7,8 +7,8 @@ old-location: stream\ks_compression.htm
 old-project: stream
 ms.assetid: 065f51c3-f476-4f04-880a-5c42e493d458
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KS_COMPRESSION, PKS_COMPRESSION, *PKS_COMPRESSION, KS_COMPRESSION
+ms.date: 1/9/2018
+ms.keywords: KS_COMPRESSION, *PKS_COMPRESSION, KS_COMPRESSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKS_COMPRESSION, KS_COMPRESSION
 ---
 
 # KS_COMPRESSION structure

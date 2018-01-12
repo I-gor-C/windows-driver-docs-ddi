@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfhwaccess.WDF_READ_REGISTER_UCHAR
+UID: NF:wdfhwaccess.WDF_READ_REGISTER_UCHAR
 title: WDF_READ_REGISTER_UCHAR function
 author: windows-driver-content
 description: The WDF_READ_REGISTER_UCHAR function reads a byte from the specified register address.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_register_uchar.htm
 old-project: wdf
 ms.assetid: C8633689-0900-42BB-9D0D-6F95CBA13A37
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WDF_READ_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 

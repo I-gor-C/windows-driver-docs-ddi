@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveRTOutputStream.SetWritePacket
+UID: NF:portcls.IMiniportWaveRTOutputStream.SetWritePacket
 title: IMiniportWaveRTOutputStream::SetWritePacket method
 author: windows-driver-content
 description: SetWritePacket informs the driver that the OS has written valid data to the WaveRT buffer.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveRTOutputStream::SetWritePacket method
@@ -96,7 +97,7 @@ After the OS calls this routine, the driver may optionally use the provided info
 
 
 
-Except when the OS specifies the KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM flag, the packet size is the WaveRT buffer size divided by the NotificationCount passed to <a href="audio.iminiportwavertstreamnotification_allocatebufferwithnotification">IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</a>.  
+Except when the OS specifies the KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM flag, the packet size is the WaveRT buffer size divided by the NotificationCount passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536740">IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</a>.  
 
 
 

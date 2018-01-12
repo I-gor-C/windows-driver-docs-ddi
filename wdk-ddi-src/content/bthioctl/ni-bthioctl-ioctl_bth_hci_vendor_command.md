@@ -1,5 +1,5 @@
 ---
-UID: NI.bthioctl.IOCTL_BTH_HCI_VENDOR_COMMAND
+UID: NI:bthioctl.IOCTL_BTH_HCI_VENDOR_COMMAND
 title: IOCTL_BTH_HCI_VENDOR_COMMAND
 author: windows-driver-content
 description: The IOCTL_BTH_HCI_VENDOR_COMMAND request allows Bluetooth applications to send vendor-specific commands to radios.
@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bth_hci_vendor_command.htm
 old-project: bltooth
 ms.assetid: 3b182835-ca62-482c-b82a-28c59f23fb55
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, PHFP_BYPASS_CODEC_ID_V1
+ms.date: 12/21/2017
+ms.keywords: _HFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_BTH_HCI_VENDOR_COMMAND IOCTL
@@ -60,24 +61,24 @@ typedef struct _BTH_VENDOR_EVENT_INFO {
 ### -input-buffer
 The 
       <b>AssociatedIrp.SystemBuffer</b> member points to a 
-      <a href="bltooth.bth_vendor_specific_command">BTH_VENDOR_SPECIFIC_COMMAND</a> structure. The structure contains a manufacturer identifier, a link
+      <a href="..\bthioctl\ns-bthioctl-_bth_vendor_specific_command.md">BTH_VENDOR_SPECIFIC_COMMAND</a> structure. The structure contains a manufacturer identifier, a link
       management protocol (LMP) version, an HCI command header, and the associated vendor command data that
       includes optional pattern data to match an event to the command.
 
 
 ### -input-buffer-length
 The length of a 
-      <a href="bltooth.bth_vendor_specific_command">BTH_VENDOR_SPECIFIC_COMMAND</a> structure. 
+      <a href="..\bthioctl\ns-bthioctl-_bth_vendor_specific_command.md">BTH_VENDOR_SPECIFIC_COMMAND</a> structure. 
 
 
 ### -output-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that contains the event data returned from the radio. The data is available in the <b>EventInfo</b> member of the <a href="bltooth.bth_vendor_event_info">BTH_VENDOR_EVENT_INFO</a> structure.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that contains the event data returned from the radio. The data is available in the <b>EventInfo</b> member of the <a href="..\bthioctl\ns-bthioctl-_bth_vendor_event_info.md">BTH_VENDOR_EVENT_INFO</a> structure.
 
 The <b>EventSize</b> member provides the size of the vendor-specific event data returned from the radio.
 
 
 ### -output-buffer-length
-The length of a <a href="bltooth.bth_vendor_event_info">BTH_VENDOR_EVENT_INFO</a> structure.
+The length of a <a href="..\bthioctl\ns-bthioctl-_bth_vendor_event_info.md">BTH_VENDOR_EVENT_INFO</a> structure.
 
 
 ### -in-out-buffer
@@ -125,7 +126,7 @@ The IOCTL_BTH_HCI_VENDOR_COMMAND request provides a mechanism that allows vendor
     that are specific to their Bluetooth radios.
 
 The manufacturer ID and link management protocol (LMP) version values that are in the 
-    <a href="bltooth.bth_vendor_specific_command">
+    <a href="..\bthioctl\ns-bthioctl-_bth_vendor_specific_command.md">
     BTH_VENDOR_SPECIFIC_COMMAND</a> structure help to prevent the sending of vendor-specific commands to
     the wrong radio. The LMP version enables the vendors to send vendor-specific commands to radios that have
     a matching LMP version. If the LMP version is zero, all radios from that vendor will receive the
@@ -135,7 +136,7 @@ Patterns are required if a vendor-specific command does not follow the standard 
     vendor-specific event is generated in response to the vendor-specific command.
 
 If patterns are required, the command should be followed by 
-    <a href="bltooth.bth_vendor_pattern">BTH_VENDOR_PATTERN</a> structures for patterns
+    <a href="..\bthioctl\ns-bthioctl-_bth_vendor_pattern.md">BTH_VENDOR_PATTERN</a> structures for patterns
     that are present in the event. These patterns allow the Bluetooth driver stack to match vendor-specific
     events with the corresponding vendor-specific commands.
 
@@ -187,18 +188,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="bltooth.bth_command_header">BTH_COMMAND_HEADER</a>
+<a href="..\bthioctl\ns-bthioctl-_bth_command_header.md">BTH_COMMAND_HEADER</a>
 </dt>
 <dt>
-<a href="bltooth.bth_vendor_pattern">BTH_VENDOR_PATTERN</a>
+<a href="..\bthioctl\ns-bthioctl-_bth_vendor_pattern.md">BTH_VENDOR_PATTERN</a>
 </dt>
 <dt>
-<a href="bltooth.bth_vendor_specific_command">BTH_VENDOR_SPECIFIC_COMMAND</a>
+<a href="..\bthioctl\ns-bthioctl-_bth_vendor_specific_command.md">BTH_VENDOR_SPECIFIC_COMMAND</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20IOCTL_BTH_HCI_VENDOR_COMMAND control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20IOCTL_BTH_HCI_VENDOR_COMMAND control code%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

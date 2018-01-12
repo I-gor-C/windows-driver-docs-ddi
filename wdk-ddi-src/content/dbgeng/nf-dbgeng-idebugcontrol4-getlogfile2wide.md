@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl4.GetLogFile2Wide
+UID: NF:dbgeng.IDebugControl4.GetLogFile2Wide
 title: IDebugControl4::GetLogFile2Wide method
 author: windows-driver-content
 description: The GetLogFile2Wide method returns the name of the currently open log file.
 old-location: debugger\getlogfile2wide.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 8c11811f-c3d3-494b-98d7-15540d5afb24
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl4, IDebugControl4::GetLogFile2Wide, GetLogFile2Wide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl4::GetLogFile2Wide method
@@ -73,7 +74,7 @@ Receives the size, in characters, of the name of the log file.  If <i>FileSize</
 
 ### -param Flags [out]
 
-Receives the bit-flags that were used when opening the log file.  See the <i>Flags</i> parameter of <a href="debugger.openlogfile2">OpenLogFile2</a> for a description of these flags.
+Receives the bit-flags that were used when opening the log file.  See the <i>Flags</i> parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a> for a description of these flags.
 
 
 ## -returns
@@ -127,21 +128,21 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 </dt>
 <dt>
-<a href="debugger.openlogfile2">OpenLogFile2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a>
 </dt>
 <dt>
-<a href="debugger.getlogfile">GetLogFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547016">GetLogFile</a>
 </dt>
 <dt>
-<a href="debugger.closelogfile">CloseLogFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539148">CloseLogFile</a>
 </dt>
 <dt>
-<a href="debugger.getlogmask">GetLogMask</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547066">GetLogMask</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugControl4::GetLogFile2Wide method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::GetLogFile2Wide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

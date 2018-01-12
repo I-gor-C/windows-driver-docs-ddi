@@ -1,5 +1,5 @@
 ---
-UID: NF.winsplp.SpoolerCopyFileEvent
+UID: NF:winsplp.SpoolerCopyFileEvent
 title: SpoolerCopyFileEvent function
 author: windows-driver-content
 description: A Point and Print DLL's SpoolerCopyFileEvent function receives notifications of events associated with copying print queue-associated files to a print client, when the client connects to a print server.
@@ -7,7 +7,7 @@ old-location: print\spoolercopyfileevent.htm
 old-project: print
 ms.assetid: 39e9b596-7726-439c-8ad9-a987fdfd3860
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: SpoolerCopyFileEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Mscms.lib
 req.dll: Mscms.dll
 req.irql: 
+req.typenames: NOTIFICATION_CONFIG_FLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -213,12 +214,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="print.generatecopyfilepaths">GenerateCopyFilePaths</a>
+<a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20SpoolerCopyFileEvent function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20SpoolerCopyFileEvent function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILDIALPARAMS_V2
+UID: NS:ntddrilapitypes.RILDIALPARAMS_V2
 title: RILDIALPARAMS_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildialparams_v2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0a60001b-5fa9-4f25-a92f-3634e2a50e36
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILDIALPARAMS_V2, *LPRILDIALPARAMS_V2, LPRILDIALPARAMS, *LPRILDIALPARAMS, LPRILDIALPARAMS_V2, RILDIALPARAMS, RILDIALPARAMS_V2
+ms.date: 1/8/2018
+ms.keywords: RILDIALPARAMS_V2, RILDIALPARAMS, *LPRILDIALPARAMS_V2, *LPRILDIALPARAMS, RILDIALPARAMS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILDIALPARAMS, *LPRILDIALPARAMS_V2, *LPRILDIALPARAMS, RILDIALPARAMS_V2
 ---
 
 # RILDIALPARAMS_V2 structure

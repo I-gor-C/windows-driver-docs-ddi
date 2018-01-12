@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbChannelSetTransactionQuota
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelSetTransactionQuota
 title: VmbChannelSetTransactionQuota function
 author: windows-driver-content
 description: The VmbChannelSetTransactionQuota function sets the incoming packet quota.
 old-location: netvista\vmbchannelsettransactionquota.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: C88F03BE-96D3-46A7-8269-1ECBFA539111
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbChannelSetTransactionQuota
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Vmbkmcl.lib
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

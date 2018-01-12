@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:ucxendpoint
 ---
 
 # Ucxendpoint.h header
 
 ## -description
 
-This header is used by UsbRef. For more information, see
-- [UsbRef](../_UsbRef/index.md)
+This header is used by Universal Serial Bus(USB). For more information, see
+- [Universal Serial Bus(USB)](../_usbref/index.md)
 
 Ucxendpoint.h contain these programming interfaces:
 
@@ -27,22 +27,6 @@ Ucxendpoint.h contain these programming interfaces:
 | [UcxEndpointNoPingResponseError function](nf-ucxendpoint-ucxendpointnopingresponseerror.md) | Notifies UCX about a &#0034;No Ping Response&#0034; error for a transfer on the specified endpoint object. |
 | [UcxEndpointPurgeComplete function](nf-ucxendpoint-ucxendpointpurgecomplete.md) | Notifies UCX that a purge operation has been completed on the specified endpoint object. |
 | [UcxEndpointSetWdfIoQueue function](nf-ucxendpoint-ucxendpointsetwdfioqueue.md) | Sets a framework queue on the specified endpoint object. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_UCX_DEFAULT_ENDPOINT_UPDATE callback](nc-ucxendpoint-evt_ucx_default_endpoint_update.md) | The client driver's implementation that UCX calls with information about the default endpoint. |
-| [EVT_UCX_ENDPOINT_ABORT callback](nc-ucxendpoint-evt_ucx_endpoint_abort.md) | The client driver's implementation that UCX calls to abort the queue associated with the endpoint. |
-| [EVT_UCX_ENDPOINT_GET_ISOCH_TRANSFER_PATH_DELAYS callback](nc-ucxendpoint-evt_ucx_endpoint_get_isoch_transfer_path_delays.md) | UCX invokes this callback function to get information about transfer path delays for an isochronous endpoint. |
-| [EVT_UCX_ENDPOINT_OK_TO_CANCEL_TRANSFERS callback](nc-ucxendpoint-evt_ucx_endpoint_ok_to_cancel_transfers.md) | The client driver's implementation that UCX calls to notify the controller driver that it can complete cancelled transfers on the endpoint. |
-| [EVT_UCX_ENDPOINT_PURGE callback](nc-ucxendpoint-evt_ucx_endpoint_purge.md) | The client driver's implementation that completes all outstanding I/O requests on the endpoint. |
-| [EVT_UCX_ENDPOINT_RESET callback](nc-ucxendpoint-evt_ucx_endpoint_reset.md) | The client driver's implementation that UCX calls to reset the controller’s programming for an endpoint. |
-| [EVT_UCX_ENDPOINT_SET_CHARACTERISTIC callback](nc-ucxendpoint-evt_ucx_endpoint_set_characteristic.md) | UCX invokes this callback function to set the priority on an endpoint. |
-| [EVT_UCX_ENDPOINT_START callback](nc-ucxendpoint-evt_ucx_endpoint_start.md) | The client driver's implementation that UCX calls to start the queue associated with the endpoint. |
-| [EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD callback](nc-ucxendpoint-evt_ucx_endpoint_static_streams_add.md) | The client driver's implementation that UCX calls to create static streams. |
-| [EVT_UCX_ENDPOINT_STATIC_STREAMS_DISABLE callback](nc-ucxendpoint-evt_ucx_endpoint_static_streams_disable.md) | The client driver's implementation that UCX calls to release controller resources for all streams for an endpoint. |
-| [EVT_UCX_ENDPOINT_STATIC_STREAMS_ENABLE callback](nc-ucxendpoint-evt_ucx_endpoint_static_streams_enable.md) | The client driver's implementation that UCX calls to enable the static streams. |
 
 ## Structures
 

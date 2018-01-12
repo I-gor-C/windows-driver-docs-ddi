@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES
+UID: NS:1394._IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES
 title: _IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES
 author: windows-driver-content
 description: This structure contains the fields necessary in order for the Bus driver to carry out a GetMaxSpeedBetweenDevices request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES
 ---
 
 # _IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES structure

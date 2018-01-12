@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dkmddi.DXGKCB_POWERRUNTIMECONTROLREQUEST
+UID: NC:d3dkmddi.DXGKCB_POWERRUNTIMECONTROLREQUEST
 title: DXGKCB_POWERRUNTIMECONTROLREQUEST
 author: windows-driver-content
 description: Called by the display miniport driver to exchange information with the Power Engine Plug-in (PEP).
@@ -7,7 +7,7 @@ old-location: display\dxgkcbpowerruntimecontrolrequest.htm
 old-project: display
 ms.assetid: 28984c89-a1d9-4720-8c4c-2b2ce34e0899
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 # DXGKCB_POWERRUNTIMECONTROLREQUEST callback
@@ -64,7 +65,7 @@ NTSTATUS APIENTRY CALLBACK* DxgkCbPowerRuntimeControlRequest(
 
 ### -param hAdapter [in]
 
-A handle to the display adapter. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface2">DXGKRNL_INTERFACE</a> structure in a call to its <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a> function.
+A handle to the display adapter. The display miniport driver receives the handle from the <b>DeviceHandle</b> member of the <a href="..\dispmprt\ns-dispmprt-_dxgkrnl_interface.md">DXGKRNL_INTERFACE</a> structure in a call to its <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a> function.
 
 
 ### -param PowerControlCode [in]
@@ -241,12 +242,12 @@ IRQL
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>
 </dt>
 <dt>
-<a href="display.dxgkrnl_interface2">DXGKRNL_INTERFACE</a>
+<a href="..\dispmprt\ns-dispmprt-_dxgkrnl_interface.md">DXGKRNL_INTERFACE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKCB_POWERRUNTIMECONTROLREQUEST callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKCB_POWERRUNTIMECONTROLREQUEST callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

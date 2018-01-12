@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2PioReceiveCreate
+UID: NF:sercx.SerCx2PioReceiveCreate
 title: SerCx2PioReceiveCreate function
 author: windows-driver-content
 description: The SerCx2PioReceiveCreate method creates a PIO-receive object, which version 2 of the serial framework extension (SerCx2) uses to perform PIO-receive transactions.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -59,17 +60,17 @@ NTSTATUS SerCx2PioReceiveCreate(
 
 ### -param Device [in]
 
-A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="serports.sercx2initializedevice">SerCx2InitializeDevice</a>.
+A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>.
 
 
 ### -param PioReceiveConfig [in]
 
-A pointer to a <a href="serports.sercx2_pio_receive_config">SERCX2_PIO_RECEIVE_CONFIG</a> structure. Before calling this method, the caller must call the <a href="serports.sercx2_pio_receive_config_init">SERCX2_PIO_RECEIVE_CONFIG_INIT</a> function to initialize the structure. This structure contains pointers to a set of event callback routines that are implemented by the serial controller driver. SerCx2 calls these functions to perform PIO-receive transactions.
+A pointer to a <a href="..\sercx\ns-sercx-_sercx2_pio_receive_config.md">SERCX2_PIO_RECEIVE_CONFIG</a> structure. Before calling this method, the caller must call the <a href="..\sercx\nf-sercx-sercx2_pio_receive_config_init.md">SERCX2_PIO_RECEIVE_CONFIG_INIT</a> function to initialize the structure. This structure contains pointers to a set of event callback routines that are implemented by the serial controller driver. SerCx2 calls these functions to perform PIO-receive transactions.
 
 
 ### -param Attributes [in, optional]
 
-A pointer to a <a href="kmdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that describes the attributes to assign to the new PIO-receive object. Before calling this method, the caller must call the <a href="kmdf.wdf_object_attributes_init">WDF_OBJECT_ATTRIBUTES_INIT</a> function to initialize the structure. This parameter is optional and can be specified as WDF_NO_OBJECT_ATTRIBUTES if the serial controller driver does not need to assign attributes to the object. For more information, see Remarks.
+A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that describes the attributes to assign to the new PIO-receive object. Before calling this method, the caller must call the <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a> function to initialize the structure. This parameter is optional and can be specified as WDF_NO_OBJECT_ATTRIBUTES if the serial controller driver does not need to assign attributes to the object. For more information, see Remarks.
 
 
 ### -param PioReceive [out]
@@ -98,11 +99,11 @@ This method returns STATUS_SUCCESS if the call is successful. Possible error ret
 ## -remarks
 Your serial controller driver calls this method to create a PIO-receive object. SerCx2 uses this object to perform PIO-receive transactions, which use programmed I/O (PIO) to read data received by the serial controller.
 
-Typically, a serial controller driver calls <b>SerCx2PioReceiveCreate</b> from its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> function. The driver must call this method only after it successfully calls the <a href="serports.sercx2initializedevice">SerCx2InitializeDevice</a> method.
+Typically, a serial controller driver calls <b>SerCx2PioReceiveCreate</b> from its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> function. The driver must call this method only after it successfully calls the <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method.
 
-As an option, a serial controller driver can use the <i>Attributes</i> parameter to create a context for the PIO-receive object, and to supply pointers to <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_cleanup.md">EvtCleanupCallback</a> and <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a> functions that are called to prepare the object for deletion. For more information, see <a href="kmdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a>.
+As an option, a serial controller driver can use the <i>Attributes</i> parameter to create a context for the PIO-receive object, and to supply pointers to <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_cleanup.md">EvtCleanupCallback</a> and <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a> functions that are called to prepare the object for deletion. For more information, see <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>.
 
-If the <i>Attributes</i> parameter points to a <a href="kmdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure, the caller must not overwrite the values that the <a href="kmdf.wdf_object_attributes_init">WDF_OBJECT_ATTRIBUTES_INIT</a> initialization function writes to the <b>ParentObject</b>, <b>ExecutionLevel</b>, and <b>SynchronizationScope</b> members of this structure.
+If the <i>Attributes</i> parameter points to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure, the caller must not overwrite the values that the <a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a> initialization function writes to the <b>ParentObject</b>, <b>ExecutionLevel</b>, and <b>SynchronizationScope</b> members of this structure.
 
 For more information about creating PIO-receive objects, see <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a>. For more information about PIO-receive transactions, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265332">SerCx2 PIO-Receive Transactions</a>.
 
@@ -165,22 +166,22 @@ IRQL
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 </dt>
 <dt>
-<a href="serports.sercx2initializedevice">SerCx2InitializeDevice</a>
+<a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
 </dt>
 <dt>
 <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a>
 </dt>
 <dt>
-<a href="serports.sercx2_pio_receive_config">SERCX2_PIO_RECEIVE_CONFIG</a>
+<a href="..\sercx\ns-sercx-_sercx2_pio_receive_config.md">SERCX2_PIO_RECEIVE_CONFIG</a>
 </dt>
 <dt>
-<a href="serports.sercx2_pio_receive_config_init">SERCX2_PIO_RECEIVE_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx2_pio_receive_config_init.md">SERCX2_PIO_RECEIVE_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="kmdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="kmdf.wdf_object_attributes_init">WDF_OBJECT_ATTRIBUTES_INIT</a>
+<a href="..\wdfobject\nf-wdfobject-wdf_object_attributes_init.md">WDF_OBJECT_ATTRIBUTES_INIT</a>
 </dt>
 </dl>
  

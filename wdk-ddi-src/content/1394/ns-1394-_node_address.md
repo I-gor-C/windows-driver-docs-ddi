@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._NODE_ADDRESS
+UID: NS:1394._NODE_ADDRESS
 title: _NODE_ADDRESS
 author: windows-driver-content
 description: The NODE_ADDRESS structure specifies the 10-bit bus number and 6-bit node number that serve as the node address for a 1394 node.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: ecafa166-356e-48d6-84c4-0f0c339289ac
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _NODE_ADDRESS, NODE_ADDRESS, PNODE_ADDRESS, *PNODE_ADDRESS
+ms.keywords: _NODE_ADDRESS, *PNODE_ADDRESS, NODE_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PNODE_ADDRESS, NODE_ADDRESS
 ---
 
 # _NODE_ADDRESS structure

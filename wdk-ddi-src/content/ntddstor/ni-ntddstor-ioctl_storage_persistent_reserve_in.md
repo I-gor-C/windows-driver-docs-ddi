@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddstor.IOCTL_STORAGE_PERSISTENT_RESERVE_IN
+UID: NI:ntddstor.IOCTL_STORAGE_PERSISTENT_RESERVE_IN
 title: IOCTL_STORAGE_PERSISTENT_RESERVE_IN
 author: windows-driver-content
 description: The generic storage class driver (classpnp.sys) exposes an I/O control (IOCTL) interface for issuing Persistent Reserve In commands.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_storage_persistent_reserve_in.htm
 old-project: storage
 ms.assetid: a5a3e98b-8f6b-412d-a2eb-a28b5664340d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_ZONE_CONDITION, PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_PERSISTENT_RESERVE_IN IOCTL
@@ -45,7 +46,7 @@ The generic storage class driver (<i>classpnp.sys</i>) exposes an I/O control (I
 ## -ioctlparameters
 
 ### -input-buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="storage.persistent_reserve_command">PERSISTENT_RESERVE_COMMAND</a> structure. You must allocate the buffer from nonpaged pool and must align it correctly for the  target device and adapter.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure. You must allocate the buffer from nonpaged pool and must align it correctly for the  target device and adapter.
 
 PR_IN.ServiceAction can be one of the following:
 
@@ -102,7 +103,7 @@ The device does not support the Persistent Reserve In command.
 
 The input or output buffer is not aligned correctly for the device or adapter.  This status could only be returned when a driver sends an IOCTL to the storage stack.  This status will not be returned when a user-mode application sends the IOCTL through the DeviceIoControl API as the I/O Manager automatically aligns the buffers.
 
-The input buffer length for the IOCTL is less than sizeof(PERSISTENT_RESERVE_COMMAND) or the size that is specified in the <a href="storage.persistent_reserve_command">PERSISTENT_RESERVE_COMMAND</a> data structure is less than sizeof(PERSISTENT_RESERVE_COMMAND).
+The input buffer length for the IOCTL is less than sizeof(PERSISTENT_RESERVE_COMMAND) or the size that is specified in the <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> data structure is less than sizeof(PERSISTENT_RESERVE_COMMAND).
 
 
 ## -remarks

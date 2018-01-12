@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDARG_IN_I2C_TRANSMIT
+UID: NS:iddcx.IDARG_IN_I2C_TRANSMIT
 title: IDARG_IN_I2C_TRANSMIT
 author: windows-driver-content
 description: Gives information about the I2C data being transmitted by the OS.
@@ -7,7 +7,7 @@ old-location: display\idarg_in_i2c_transmit.htm
 old-project: display
 ms.assetid: 1422f1fc-9653-4e6b-a7dd-c224ce7b9ca0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDARG_IN_I2C_TRANSMIT,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDARG_IN_I2C_TRANSMIT structure

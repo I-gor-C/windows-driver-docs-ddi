@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSER._SERIAL_STATUS
+UID: NS:ntddser._SERIAL_STATUS
 title: _SERIAL_STATUS
 author: windows-driver-content
 description: The SERIAL_STATUS structure contains status information about the serial port.
@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: F77EF32F-FAB6-4800-9241-5AAA9885DEF5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SERIAL_STATUS, *PSERIAL_STATUS, PSERIAL_STATUS, SERIAL_STATUS
+ms.keywords: _SERIAL_STATUS, SERIAL_STATUS, *PSERIAL_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SERIAL_STATUS, *PSERIAL_STATUS
 ---
 
 # _SERIAL_STATUS structure

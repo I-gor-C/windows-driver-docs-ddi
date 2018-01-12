@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_CACHED_SYMBOL_INFO
+UID: NS:dbgeng._DEBUG_CACHED_SYMBOL_INFO
 title: _DEBUG_CACHED_SYMBOL_INFO
 author: windows-driver-content
 description: Defines information about cached symbols.
 old-location: debugger\debug_cached_symbol_info.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: CC7914B6-DCE1-45D1-84D3-5FF1449AD565
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO, PDEBUG_CACHED_SYMBOL_INFO
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO
 ---
 
 # _DEBUG_CACHED_SYMBOL_INFO structure

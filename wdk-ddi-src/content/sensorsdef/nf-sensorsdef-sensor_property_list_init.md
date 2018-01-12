@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsdef.SENSOR_PROPERTY_LIST_INIT
+UID: NF:sensorsdef.SENSOR_PROPERTY_LIST_INIT
 title: SENSOR_PROPERTY_LIST_INIT function
 author: windows-driver-content
 description: This function initializes a SENSOR_PROPERTY_LIST structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SENSOR_STATE
 req.product: Windows 10 or later.
 ---
 

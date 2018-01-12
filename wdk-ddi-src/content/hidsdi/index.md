@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:hidsdi
 ---
 
 # Hidsdi.h header

@@ -1,5 +1,5 @@
 ---
-UID: NC.ntddk.DRIVER_REINITIALIZE
+UID: NC:ntddk.DRIVER_REINITIALIZE
 title: DRIVER_REINITIALIZE
 author: windows-driver-content
 description: The Reinitialize routine continues driver and device initialization after the driver's DriverEntry routine returns.
@@ -7,8 +7,8 @@ old-location: kernel\reinitialize.htm
 old-project: kernel
 ms.assetid: 5e883b80-a6e6-44b4-9e1c-78402b91edb9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.date: 1/4/2018
+ms.keywords: _FILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at PASSIVE_LEVEL.
+req.typenames: FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ---
 
 # DRIVER_REINITIALIZE callback
@@ -60,12 +61,12 @@ VOID Reinitialize(
 
 ### -param DriverObject [in]
 
-Caller-supplied pointer to a <a href="kernel.driver_object">DRIVER_OBJECT</a> structure. This is the driver's driver object.
+Caller-supplied pointer to a <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a> structure. This is the driver's driver object.
 
 
 ### -param Context [in, optional]
 
-Caller-supplied pointer to context information, specified in a previous call to <a href="kernel.ioregisterdriverreinitialization">IoRegisterDriverReinitialization</a> or <a href="kernel.ioregisterbootdriverreinitialization">IoRegisterBootDriverReinitialization</a>.
+Caller-supplied pointer to context information, specified in a previous call to <a href="..\ntddk\nf-ntddk-ioregisterdriverreinitialization.md">IoRegisterDriverReinitialization</a> or <a href="..\ntddk\nf-ntddk-ioregisterbootdriverreinitialization.md">IoRegisterBootDriverReinitialization</a>.
 
 
 ### -param Count [in]
@@ -78,7 +79,7 @@ None
 
 
 ## -remarks
-To queue a <i>Reinitialize</i> routine for execution, a driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine must call either <a href="kernel.ioregisterdriverreinitialization">IoRegisterDriverReinitialization</a> or <a href="kernel.ioregisterbootdriverreinitialization">IoRegisterBootDriverReinitialization</a>. The <i>Reinitialize</i> routine can also call <b>IoRegisterDriverReinitialization</b> itself, which causes the routine to be requeued. This requeuing can occur multiple times, and the routine's <i>Count</i> parameter indicates the number of times it has been called. The first call to <b>IoRegisterDriverReinitialization</b> must be made from <b>DriverEntry</b>, and <b>DriverEntry</b> must return STATUS_SUCCESS.
+To queue a <i>Reinitialize</i> routine for execution, a driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine must call either <a href="..\ntddk\nf-ntddk-ioregisterdriverreinitialization.md">IoRegisterDriverReinitialization</a> or <a href="..\ntddk\nf-ntddk-ioregisterbootdriverreinitialization.md">IoRegisterBootDriverReinitialization</a>. The <i>Reinitialize</i> routine can also call <b>IoRegisterDriverReinitialization</b> itself, which causes the routine to be requeued. This requeuing can occur multiple times, and the routine's <i>Count</i> parameter indicates the number of times it has been called. The first call to <b>IoRegisterDriverReinitialization</b> must be made from <b>DriverEntry</b>, and <b>DriverEntry</b> must return STATUS_SUCCESS.
 
 For more information about implementing a <i>Reinitialize</i> routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566403">Writing a Reinitialize Routine</a>.
 

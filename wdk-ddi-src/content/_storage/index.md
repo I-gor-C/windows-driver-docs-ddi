@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:storage
 ---
 
 # Storage
@@ -135,7 +135,6 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 | [ChangerSetAccess function](..\mcd\nf-mcd-changersetaccess.md) | ChangerSetAccess handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_SET_ACCESS. |
 | [ChangerSetPosition function](..\mcd\nf-mcd-changersetposition.md) | ChangerSetPosition handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_SET_POSITION. |
 | [CompareStorageDuids function](..\storduid\nf-storduid-comparestorageduids.md) | The CompareStorageDuids routine compares two device unique identifiers (DUIDs) and reports whether they match or not. |
-| [CompareStorageDuids function](..\storduid\nf-storduid-comparestorageduids~r1.md) | The CompareStorageDuids routine compares two device unique identifiers (DUIDs) and reports whether they match or not. |
 | [HBA_CloseAdapter function](..\hbaapi\nf-hbaapi-hba_closeadapter.md) | The HBA_CloseAdapter routine releases system resources associated with the indicated open HBA handle. |
 | [HBA_FreeLibrary function](..\hbaapi\nf-hbaapi-hba_freelibrary.md) | The HBA_FreeLibrary routine releases system resources associated with fibre channel HBA library. |
 | [HBA_GetAdapterAttributes function](..\hbaapi\nf-hbaapi-hba_getadapterattributes.md) | The HBA_GetAdapterAttributes routine retrieves the attributes for an HBA. |
@@ -169,6 +168,8 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 | [HBA_RegisterForAdapterPortStatEvents function](..\hbaapi\nf-hbaapi-hba_registerforadapterportstatevents.md) | The HBA_RegisterForAdapterPortStatEvents routine registers the indicated user callback routine to call when a port statistics event occurs. |
 | [HBA_RegisterForLinkEvents function](..\hbaapi\nf-hbaapi-hba_registerforlinkevents.md) | The HBA_RegisterForLinkEvents routine registers with a specified adapter for asynchronous fabric link-level events. |
 | [HBA_RegisterForTargetEvents function](..\hbaapi\nf-hbaapi-hba_registerfortargetevents.md) | The HBA_RegisterForTargetEvents routine registers for target events with a specified target or with all targets associated with an adapter. |
+| [HBA_RegisterLibrary function](..\hbaapi\nf-hbaapi-hba_registerlibrary.md) | . |
+| [HBA_RegisterLibraryV2 function](..\hbaapi\nf-hbaapi-hba_registerlibraryv2.md) | . |
 | [HBA_RemoveAllPersistentBindings function](..\hbaapi\nf-hbaapi-hba_removeallpersistentbindings.md) | The HBA_RemoveAllPersistentBindings routine removes all persistent bindings for a specified HBA port. |
 | [HBA_RemoveCallback function](..\hbaapi\nf-hbaapi-hba_removecallback.md) | The HBA_RemoveCallback routine de-registers a callback routine. |
 | [HBA_RemovePersistentBinding function](..\hbaapi\nf-hbaapi-hba_removepersistentbinding.md) | The HBA_RemovePersistentBinding routine retrieves information about the specified target. |
@@ -423,7 +424,11 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 | [HW_PROCESS_SERVICE_REQUEST callback](..\storport\nc-storport-hw_process_service_request.md) | The HwStorProcessServiceRequest callback routine receives the device control IRP that contains the IOCTL_MINIPORT_PROCESS_SERVICE_IRP request when a caller, such as a user-mode application or kernel-mode driver, requires a &#0034;reverse callback&#0034; operation. |
 | [HW_RESET_BUS callback](..\storport\nc-storport-hw_reset_bus.md) | The HwStorResetBus routine is called by the port driver to clear error conditions. |
 | [HW_STARTIO callback](..\storport\nc-storport-hw_startio.md) | The Storport driver calls the HwStorStartIo routine one time for each incoming I/O request. |
+| [HW_STATE_CHANGE callback](..\storport\nc-storport-hw_state_change.md) | A miniport-provided callback that is called after a notification from StorPortStateChangeDetected is processed. |
 | [HW_TIMER callback](..\storport\nc-storport-hw_timer.md) | The HwStorTimer routine is called after the interval that is specified when the miniport driver called StorPortNotification with the RequestTimerCall NotificationType value. |
+| [HW_TRACING_ENABLED callback](..\storport\nc-storport-hw_tracing_enabled.md) | The HwStorTracingEnabled callback routine enables the Storport to notify a miniport that event tracing is enabled. |
+| [HW_UNIT_CONTROL callback](..\storport\nc-storport-hw_unit_control.md) | A miniport driver's HwStorUnitControl routine is called to perform synchronous operations to control the state of storage unit device. The miniport driver is notified to start a unit or handle a power state transition for a unit device. |
+| [HW_WORKITEM callback](..\storport\nc-storport-hw_workitem.md) | A miniport-provided callback function for processing a Storport work item request. |
 | [IDE_ADAPTER_CONTROL callback](..\irb\nc-irb-ide_adapter_control.md) | The AtaAdapterControl miniport driver routine is called to perform Plug and Play (PnP) and Power Management operations on the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
 | [IDE_CHANNEL_ENABLED callback](..\irb\nc-irb-ide_channel_enabled.md) | The AtaControllerChannelEnabled miniport driver routine indicates whether the specified channel is enabled.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
 | [IDE_CHANNEL_INIT callback](..\irb\nc-irb-ide_channel_init.md) | The AtaChannelInitRoutine miniport driver routine initializes the miniport driver's channel interface.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
@@ -434,10 +439,25 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 | [IDE_HW_RESET callback](..\irb\nc-irb-ide_hw_reset.md) | The IdeHwReset miniport driver routine resets the channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
 | [IDE_HW_STARTIO callback](..\irb\nc-irb-ide_hw_startio.md) | The IdeHwStartIo miniport driver routine processes the synchronized aspects of an I/O request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
 | [IDE_TRANSFER_MODE_SELECT callback](..\irb\nc-irb-ide_transfer_mode_select.md) | The AtaControllerTransferModeSelect miniport driver routine selects the transfer mode for all devices on the indicated ATA channel and programs the controller for the selected transfer mode.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
-| [TAPE_ERROR_ROUTINE callback](..\minitape\nc-minitape-tape_error_routine.md) | TapeMiniTapeError provides device-specific error handling when an SRB is completed with an error status. This routine is optional. |
-| [TAPE_EXTENSION_INIT_ROUTINE callback](..\minitape\nc-minitape-tape_extension_init_routine.md) | TapeMiniExtensionInit initializes an optional, driver-specific context area. This routine is called by TapeClassInitialize when the tape miniclass driver is loaded. This routine is optional. |
-| [TAPE_PROCESS_COMMAND_ROUTINE callback](..\minitape\nc-minitape-tape_process_command_routine.md) | TapeMiniCreatePartition handles the device-specific aspects of an IOCTL_TAPE_CREATE_PARTITION request. This routine is required. |
-| [TAPE_VERIFY_INQUIRY_ROUTINE callback](..\minitape\nc-minitape-tape_verify_inquiry_routine.md) | TapeMiniVerifyInquiry determines whether the tape miniclass driver recognizes and supports a given device. This routine is required. |
+| [PHW_ADAPTER_CONTROL callback](..\srb\nc-srb-phw_adapter_control.md) | The PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs. |
+| [PHW_ADAPTER_STATE callback](..\srb\nc-srb-phw_adapter_state.md) | The PHW_INITIALIZE routine prototype declares a routine that saves or restores the state of the miniport driver's HBA. |
+| [PHW_DMA_STARTED callback](..\srb\nc-srb-phw_dma_started.md) | The PHW_DMA_STARTED routine prototype declares a SCSI miniport driver routine that starts DMA for subordinate DMA device. |
+| [PHW_FIND_ADAPTER callback](..\srb\nc-srb-phw_find_adapter.md) | The PHW_FIND_ADAPTER prototype declares a routine that uses supplied configuration to determine whether a specific HBA is supported and, if it is, to return configuration information about that adapter. |
+| [PHW_INITIALIZE callback](..\srb\nc-srb-phw_initialize.md) | The PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs. |
+| [PHW_INTERRUPT callback](..\srb\nc-srb-phw_interrupt.md) | The PHW_INTERRUPT routine prototype declares the miniport driver's interrupt handler routine. |
+| [PHW_RESET_BUS callback](..\srb\nc-srb-phw_reset_bus.md) | The PHW_RESET_BUS prototype declares a routine that resets the indicated SCSI bus. |
+| [PHW_STARTIO callback](..\srb\nc-srb-phw_startio.md) | The PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs. |
+| [PHW_TIMER callback](..\srb\nc-srb-phw_timer.md) | The PHW_TIMER routine prototype declares a SCSI miniport driver's timer routine. |
+| [PSCSIWMI_EXECUTE_METHOD callback](..\scsiwmi\nc-scsiwmi-pscsiwmi_execute_method.md) | A miniport driver's HwScsiWmiExecuteMethod routine is called to execute a method associated with a data block. |
+| [PSCSIWMI_FUNCTION_CONTROL callback](..\scsiwmi\nc-scsiwmi-pscsiwmi_function_control.md) | A miniport driver's HwScsiWmiFunctionControl routine is called to enable or disable notification of events. |
+| [PSCSIWMI_QUERY_DATABLOCK callback](..\scsiwmi\nc-scsiwmi-pscsiwmi_query_datablock.md) | A miniport driver's HwScsiWmiQueryDataBlock routine is called to obtain either a single instance or all instances of a data block. |
+| [PSCSIWMI_QUERY_REGINFO callback](..\scsiwmi\nc-scsiwmi-pscsiwmi_query_reginfo.md) | A miniport driver's HwScsiWmiQueryReginfo routine is called to obtain information about the data and event blocks to be registered on behalf of the miniport driver by the SCSI port driver. |
+| [PSCSIWMI_SET_DATABLOCK callback](..\scsiwmi\nc-scsiwmi-pscsiwmi_set_datablock.md) | A miniport driver's HwScsiWmiSetDataBlock routine is called to change all data items in a single instance of a data block. |
+| [PSCSIWMI_SET_DATAITEM callback](..\scsiwmi\nc-scsiwmi-pscsiwmi_set_dataitem.md) | A miniport driver's HwScsiWmiSetDataItem routine is called to change a single data item in an instance of a data block. |
+| [TAPE_ERROR_ROUTINE callback](..\minitape\nc-minitape-tape_error_routine.md) | TAPE_ERROR_ROUTINE provides device-specific error handling when an SRB is completed with an error status. This routine is optional. |
+| [TAPE_EXTENSION_INIT_ROUTINE callback](..\minitape\nc-minitape-tape_extension_init_routine.md) | ExtensionInit initializes an optional, driver-specific context area. This routine is called by TapeClassInitialize when the tape miniclass driver is loaded. This routine is optional. |
+| [TAPE_PROCESS_COMMAND_ROUTINE callback](..\minitape\nc-minitape-tape_process_command_routine.md) | TAPE_PROCESS_COMMAND_ROUTINE handles the device-specific aspects of an IOCTL request. |
+| [TAPE_VERIFY_INQUIRY_ROUTINE callback](..\minitape\nc-minitape-tape_verify_inquiry_routine.md) | TAPE_VERIFY_INQUIRY_ROUTINE determines whether the tape miniclass driver recognizes and supports a given device. This routine is required. |
 | [VIRTUAL_HW_FIND_ADAPTER callback](..\storport\nc-storport-virtual_hw_find_adapter.md) | The Storport virtual miniport uses configuration information supplied to the VirtualHwStorFindAdapter routine to further initialize itself. |
 
 ## Structures
@@ -715,6 +735,8 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 | [_HBAFCPID structure](..\hbapiwmi\ns-hbapiwmi-_hbafcpid.md) | The HBAFCPID structure contains information that uniquely identifies a logical unit on a fibre channel network. |
 | [_HBAFCPScsiEntry structure](..\hbapiwmi\ns-hbapiwmi-_hbafcpscsientry.md) | The HBAFCPScsiEntry structure is used with GetFcpTargetMapping method of the MSFC_HBAFCPInfo WMI Class to define a binding between the operating system information that uniquely identifies a logical unit and the fibre channel protocol (FCP) identifier that identifies the logical unit. |
 | [_HBAScsiID structure](..\hbapiwmi\ns-hbapiwmi-_hbascsiid.md) | The HBAScsiID structure contains information generated by the operating system that uniquely identifies a logical unit. |
+| [_HW_INITIALIZATION_DATA structure](..\srb\ns-srb-_hw_initialization_data.md) | Each SCSI miniport driver's DriverEntry routine must initialize with zeros and, then, fill in the relevant HW_INITIALIZATION_DATA (SCSI) information for the OS-specific port driver.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
+| [_HW_INITIALIZATION_DATA structure](..\storport\ns-storport-_hw_initialization_data.md) | The HW_INITIALIZATION_DATA (Storport) structure contains information particular to each miniport driver and the hardware that the miniport driver manages. |
 | [_HYBRID_INFORMATION structure](..\ntddscsi\ns-ntddscsi-_hybrid_information.md) | The HYBRID_INFORMATION structure contains hybrid disk capability information. |
 | [_IDENTIFY_DEVICE_DATA structure](..\ata\ns-ata-_identify_device_data.md) | The IDENTIFY_DEVICE_DATA structure contains the data retrieved by an ATA identify device data command (0xEC).Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
 | [_IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO structure](..\ata\ns-ata-_identify_device_data_log_page_zoned_device_info.md) | Note  This structure is for internal use only and should not be called from your code. . |
@@ -733,7 +755,6 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 | [_IDE_TASK_FILE structure](..\irb\ns-irb-_ide_task_file.md) | The IDE_TASK_FILE structure contains the current and previous IDE task file.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
 | [_IDE_TRANSFER_MODE_PARAMETERS structure](..\irb\ns-irb-_ide_transfer_mode_parameters.md) | The IDE_TRANSFER_MODE_PARAMETERS structure is used in conjunction with the miniport driver's AtaControllerTransferModeSelect routine to set the transfer mode parameters on a channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
 | [_INQUIRYDATA structure](..\scsi\ns-scsi-_inquirydata.md) | The INQUIRYDATA structure is used in conjunction with the TapeMiniExtensionInit and TapeMiniVerifyInquiry routines to report SCSI inquiry data associated with a tape device. |
-| [_INQUIRYDATA structure](..\scsi\ns-scsi-_inquirydata~r1.md) | The INQUIRYDATA structure is used in conjunction with the TapeMiniExtensionInit and TapeMiniVerifyInquiry routines to report SCSI inquiry data associated with a tape device. |
 | [_IO_SCSI_CAPABILITIES structure](..\ntddscsi\ns-ntddscsi-_io_scsi_capabilities.md) | The IO_SCSI_CAPABILITIES structure is used in conjunction with the IOCTL_SCSI_GET_CAPABILITIES request to retrieve the capabilities and limitations of the underlying SCSI host adapter.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
 | [_ISCSI_ConnectionStaticInfo structure](..\iscsimgt\ns-iscsimgt-_iscsi_connectionstaticinfo.md) | The ISCSI_ConnectionStaticInfo structure contains information about the characteristics of an established connection. |
 | [_ISCSI_DiscoveredTarget structure](..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget.md) | The ISCSI_DiscoveredTarget structure contains information that is related to a discovered target device. |
@@ -856,13 +877,12 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 | [_NV_FEATURE_PARAMETER structure](..\ntddscsi\ns-ntddscsi-_nv_feature_parameter.md) | The NV_FEATURE_PARAMETER structure is used in conjunction with the IOCTL_SCSI_MINIPORT_NVCACHE request to get NV Cache Manager feature support information from the device. |
 | [_PARTITION_INFORMATION structure](..\ntdddisk\ns-ntdddisk-_partition_information.md) | The PARTITION_INFORMATION structure contains partition information for a partition with a traditional AT-style Master Boot Record (MBR). |
 | [_PARTITION_INFORMATION_EX structure](..\ntdddisk\ns-ntdddisk-_partition_information_ex.md) | PARTITION_INFORMATION_EX is the extended version of the PARTITION_INFORMATION structure. It holds information both for partitions with a Master Boot Record and for partitions with a GUID Partition Table. |
-| [_PARTITION_INFORMATION_GPT structure](..\ntdddisk\ns-ntdddisk-_partition_information_gpt.md) | PARTITION_INFORMATION_GPT contains information for a GUID Partition Table partition that is not held in common with a Master Boot Record partition. |
 | [_PARTITION_INFORMATION_MBR structure](..\ntdddisk\ns-ntdddisk-_partition_information_mbr.md) | PARTITION_INFORMATION_MBR contains information for a Master Boot Record partition that is not held in common with a GUID Partition Table partition. |
 | [_PDOSCSI_ADDR structure](..\mpiodisk\ns-mpiodisk-_pdoscsi_addr.md) | The PDOSCSI_ADDR structure is used to represent a SCSI address. |
 | [_PDO_INFORMATION structure](..\mpiodisk\ns-mpiodisk-_pdo_information.md) | The PDO_INFORMATION structure represents a device-path pairing, which is an instance of a LUN through a particular path. |
 | [_PERF_CONFIGURATION_DATA structure](..\storport\ns-storport-_perf_configuration_data.md) | The PERF_CONFIGURATION_DATA structure describes the performance optimizations that are supported by the StorPortInitializePerfOpts routine. |
 | [_PERSISTENT_RESERVE_COMMAND structure](..\ntddstor\ns-ntddstor-_persistent_reserve_command.md) | The PERSISTENT_RESERVE_COMMAND structure is used together with the IOCTL_STORAGE_PERSISTENT_RESERVE_IN and IOCTL_STORAGE_PERSISTENT_RESERVE_OUT requests to obtain and control information about persistent reservations and reservation keys that are active within a device server. |
-| [_PORT_CONFIGURATION_INFORMATION structure](..\storport\ns-storport-_port_configuration_information.md) | The PORT_CONFIGURATION_INFORMATION contains configuration information for a host bus adapter (HBA). |
+| [_PORT_CONFIGURATION_INFORMATION structure](..\srb\ns-srb-_port_configuration_information.md) | PORT_CONFIGURATION_INFORMATION (SCSI) contains configuration information for an HBA. |
 | [_PingIPAddress_IN structure](..\iscsimgt\ns-iscsimgt-_pingipaddress_in.md) | The PingIPAddress_IN structure holds the input data for the PingIPAddress method. |
 | [_PingIPAddress_OUT structure](..\iscsimgt\ns-iscsimgt-_pingipaddress_out.md) | The PingIPAddress_OUT structure holds the output data for the PingIPAddress method. |
 | [_READ_ELEMENT_ADDRESS_INFO structure](..\ntddchgr\ns-ntddchgr-_read_element_address_info.md) | This structure is to retrieve changer elements based on a search criterion specified in a call to the ChangerQueryVolumeTags routine. |
@@ -921,7 +941,6 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 | [_SET_BAND_LOCATION_PARAMETERS structure](..\ehstorbandmgmt\ns-ehstorbandmgmt-_set_band_location_parameters.md) | The SET_BAND_LOCATION_PARAMETERS structure specifies the parameters to set location properties for a band on a storage device for a IOCTL_EHSTOR_BANDMGMT_SET_BAND_LOCATION request. |
 | [_SET_BAND_METADATA_PARAMETERS structure](..\ehstorbandmgmt\ns-ehstorbandmgmt-_set_band_metadata_parameters.md) | The metadata for a configured band is set to the parameters in a SET_BAND_METADATA_PARAMETERS structure. This structure is input for a IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA request. |
 | [_SET_BAND_SECURITY_PARAMETERS structure](..\ehstorbandmgmt\ns-ehstorbandmgmt-_set_band_security_parameters.md) | The parameters to set security properties for a band on a storage device for a IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY request are specified in a SET_BAND_SECURITY_PARAMETERS structure. |
-| [_SET_PARTITION_INFORMATION structure](..\ntdddisk\ns-ntdddisk-_set_partition_information.md) | SET_PARTITION_INFORMATION is used with IOCTL_DISK_SET_PARTITION_INFO to change the partition type of a specified Master Boot Record (MBR) disk partition. |
 | [_SET_PARTITION_INFORMATION_EX structure](..\ntdddisk\ns-ntdddisk-_set_partition_information_ex.md) | SET_PARTITION_INFORMATION_EX is used with the IOCTL IOCTL_DISK_SET_PARTITION_INFO_EX to set information for a specific partition. |
 | [_SILO_DRIVER_CAPABILITIES structure](..\ehstorioctl\ns-ehstorioctl-_silo_driver_capabilities.md) | This structure is used to specify the capabilities and support for IOCTL redirection of a storage silo driver. SILO_DRIVER_CAPABILITIES is included in the system buffer of an IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES request. |
 | [_SM_AddLink_OUT structure](..\hbapiwmi\ns-hbapiwmi-_sm_addlink_out.md) | The SM_AddLink_OUT structure is used to receive output parameters from the SM_AddLink WMI method. |
@@ -1059,6 +1078,7 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 | [_STOR_POFX_DEVICE structure](..\storport\ns-storport-_stor_pofx_device.md) | The STOR_POFX_DEVICE structure describes the power attributes of a storage device to the power management framework (PoFx). |
 | [_STOR_POFX_DEVICE_V2 structure](..\storport\ns-storport-_stor_pofx_device_v2.md) | The STOR_POFX_DEVICE_V2 structure describes the power attributes of a storage device to the power management framework (PoFx). |
 | [_STOR_POFX_DEVICE_V3 structure](..\storport\ns-storport-_stor_pofx_device_v3.md) | The STOR_POFX_DEVICE_V3 structure describes the power attributes of a storage device to the power management framework (PoFx). |
+| [_STOR_REQUEST_INFO_V1 structure](..\storport\ns-storport-_stor_request_info_v1.md) | The _STOR_REQUEST_INFO_V1 structure contains details about the storage driver IO request associated with a SCSI request block (SRB). _STOR_REQUEST_INFO_V1 is returned by the StorPortGetRequestInfo routine. |
 | [_STOR_RICH_DEVICE_DESCRIPTION structure](..\storport\ns-storport-_stor_rich_device_description.md) | The STOR_RICH_DEVICE_DESCRIPTION structure describes the attributes of the physical device for which a driver is requesting a DMA (direct memory access) adapter. |
 | [_STOR_SCATTER_GATHER_ELEMENT structure](..\storport\ns-storport-_stor_scatter_gather_element.md) | The STOR_SCATTER_GATHER_ELEMENT structure is used with STOR_SCATTER_GATHER_LIST to build a list of scatter/gather elements. |
 | [_STOR_SCATTER_GATHER_LIST structure](..\storport\ns-storport-_stor_scatter_gather_list.md) | The STOR_SCATTER_GATHER_LIST structure is used in conjunction with the StorPortGetScatterGatherList routine to retrieve the scatter/gather list for a SCSI request block (SRB). |
@@ -1161,6 +1181,14 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 
 | Title   | Description   |
 | ---- |:---- |
+| [*PISCSIIPADDRESSTYPE enumeration](..\iscsidef\ne-iscsidef-piscsiipaddresstype.md) | The ISCSIIPADDRESSTYPE enumeration indicates formats for an IP address. |
+| [*PISCSI_ADAPTER_EVENT_CODE enumeration](..\iscsiop\ne-iscsiop-piscsi_adapter_event_code.md) | The ISCSI_ADAPTER_EVENT_CODE enumeration indicates the type of adapter event. |
+| [*PISCSI_AUTH_TYPES enumeration](..\iscsidef\ne-iscsidef-piscsi_auth_types.md) | The ISCSI_AUTH_TYPES enumeration indicates the type of authentication method that is used to establish a logon connection. |
+| [*PISCSI_DIGEST_TYPES enumeration](..\iscsidef\ne-iscsidef-piscsi_digest_types.md) | The ISCSI_DIGEST_TYPES enumeration indicates the digest type. |
+| [*PISCSI_ENCRYPTION_TYPES enumeration](..\iscsicfg\ne-iscsicfg-piscsi_encryption_types.md) | The ISCSI_ENCRYPTION_TYPES enumeration indicates the type of encryption that is supported. |
+| [*PISCSI_NIC_LINKSTATE enumeration](..\iscsicfg\ne-iscsicfg-piscsi_nic_linkstate.md) | The ISCSI_NIC_LINKSTATE enumeration indicates whether a port is connected to the network or not. |
+| [*PLOGINSESSIONTYPE enumeration](..\iscsiop\ne-iscsiop-ploginsessiontype.md) | The LOGINSESSIONTYPE enumeration indicates the type of logon session. |
+| [*PSTOR_POWER_ACTION enumeration](..\storport\ne-storport-pstor_power_action.md) | The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition. |
 | [ATA_ADDRESS_TRANSLATION enumeration](..\irb\ne-irb-ata_address_translation.md) | The ATA_ADDRESS_TRANSLATION enumeration type indicates the type of address translation used during data transfers.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
 | [ATA_CHANNEL_STATE enumeration](..\irb\ne-irb-ata_channel_state.md) | The ATA_CHANNEL_STATE enumeration type indicates the state of the channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
 | [DISK_CACHE_RETENTION_PRIORITY enumeration](..\ntdddisk\ne-ntdddisk-disk_cache_retention_priority.md) | The DISK_CACHE_RETENTION_PRIORITY enumeration is used in conjunction with the IOCTL_DISK_GET_CACHE_INFORMATION request and the structure DISK_CACHE_INFORMATION to indicate which kinds data are to be held in the cache on a preferential basis. |
@@ -1170,14 +1198,6 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 | [IDE_CONTROL_ACTION enumeration](..\irb\ne-irb-ide_control_action.md) | The IDE_CONTROL_ACTION enumeration type indicates the control action to be performed by a IdeHwControl routine.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
 | [IDE_DEVICE_TYPE enumeration](..\irb\ne-irb-ide_device_type.md) | The IDE_DEVICE_TYPE enumeration type indicates the device type.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. |
 | [IDE_POWER_STATE enumeration](..\irb\ne-irb-ide_power_state.md) | The IDE_POWER_STATE enumeration type indicates that power state of the device. |
-| [PISCSIIPADDRESSTYPE enumeration](..\iscsidef\ne-iscsidef-piscsiipaddresstype.md) | The ISCSIIPADDRESSTYPE enumeration indicates formats for an IP address. |
-| [PISCSI_ADAPTER_EVENT_CODE enumeration](..\iscsiop\ne-iscsiop-piscsi_adapter_event_code.md) | The ISCSI_ADAPTER_EVENT_CODE enumeration indicates the type of adapter event. |
-| [PISCSI_AUTH_TYPES enumeration](..\iscsidef\ne-iscsidef-piscsi_auth_types.md) | The ISCSI_AUTH_TYPES enumeration indicates the type of authentication method that is used to establish a logon connection. |
-| [PISCSI_DIGEST_TYPES enumeration](..\iscsidef\ne-iscsidef-piscsi_digest_types.md) | The ISCSI_DIGEST_TYPES enumeration indicates the digest type. |
-| [PISCSI_ENCRYPTION_TYPES enumeration](..\iscsicfg\ne-iscsicfg-piscsi_encryption_types.md) | The ISCSI_ENCRYPTION_TYPES enumeration indicates the type of encryption that is supported. |
-| [PISCSI_NIC_LINKSTATE enumeration](..\iscsicfg\ne-iscsicfg-piscsi_nic_linkstate.md) | The ISCSI_NIC_LINKSTATE enumeration indicates whether a port is connected to the network or not. |
-| [PLOGINSESSIONTYPE enumeration](..\iscsiop\ne-iscsiop-ploginsessiontype.md) | The LOGINSESSIONTYPE enumeration indicates the type of logon session. |
-| [PSTOR_POWER_ACTION enumeration](..\storport\ne-storport-pstor_power_action.md) | The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition. |
 | [SCSIWMI_ENABLE_DISABLE_CONTROL enumeration](..\scsiwmi\ne-scsiwmi-scsiwmi_enable_disable_control.md) | The SCSIWMI_ENABLE_DISABLE_CONTROL enumerator is used to specify what to enable or disable. |
 | [UFS_ATTRIBUTES_DESCRIPTOR enumeration](..\ufs\ne-ufs-ufs_attributes_descriptor.md) | UFS_ATTRIBUTES_DESCRIPTOR describes the different types of attributes used by Universal Flash Storage (UFS) descriptors. |
 | [UFS_FLAGS_DESCRIPTOR enumeration](..\ufs\ne-ufs-ufs_flags_descriptor.md) | UFS_FLAGS_DESCRIPTOR describes the different types of flags used by Universal Flash Storage (UFS) descriptors. |
@@ -1444,35 +1464,10 @@ For the programming guide, see [Storage](https://docs.microsoft.com/en-us/window
 
 | Title   | Description   |
 | ---- |:---- |
-| [ScsiPortConvertPhysicalAddressToUlong macro](..\srb\nf-srb-scsiportconvertphysicaladdresstoulong~r1.md) | The ScsiPortConvertPhysicalAddressToUlong routine truncates a SCSI_PHYSICAL_ADDRESS to a ULONG.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
 | [ScsiPortWmiFireAdapterEvent macro](..\scsiwmi\nf-scsiwmi-scsiportwmifireadapterevent.md) | The ScsiPortWmiFireAdapterEvent routine sends an event associated with an adapter unit to the port driver for delivery to WMI data consumers that have requested notification of the event.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
 | [ScsiPortWmiGetReturnSize macro](..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnsize.md) | The ScsiPortWmiGetReturnSize routine indicates the number of bytes of data to be returned by a miniport driver for a WMI SRB.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
 | [ScsiPortWmiGetReturnStatus macro](..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnstatus.md) | The ScsiPortWmiGetReturnStatus routine returns the status of a WMI SRB. |
-| [StorPortReadPortBufferUchar macro](..\storport\nf-storport-storportreadportbufferuchar~r1.md) | The StorPortReadPortBufferUchar routine reads a value from a specified port address |
-| [StorPortReadPortBufferUlong macro](..\storport\nf-storport-storportreadportbufferulong~r1.md) | The StorPortReadPortBufferUlong routine reads a value from a specified port address. |
-| [StorPortReadPortBufferUshort macro](..\storport\nf-storport-storportreadportbufferushort~r1.md) | The StorPortReadPortBufferUshort routine reads a value from a specified port address. |
-| [StorPortReadPortUchar macro](..\storport\nf-storport-storportreadportuchar~r1.md) | The StorPortReadPortUchar routine reads a value from a specified port address |
-| [StorPortReadPortUlong macro](..\storport\nf-storport-storportreadportulong~r1.md) | The StorPortReadPortUlong routine reads a value from a specified port address. |
-| [StorPortReadPortUshort macro](..\storport\nf-storport-storportreadportushort~r1.md) | The StorPortReadPortUshort routine reads a value from a specified port address. |
-| [StorPortReadRegisterBufferUchar macro](..\storport\nf-storport-storportreadregisterbufferuchar~r1.md) | The StorPortReadRegisterBufferUchar routine reads a value from a specified register address. |
-| [StorPortReadRegisterBufferUlong macro](..\storport\nf-storport-storportreadregisterbufferulong~r1.md) | The StorPortReadRegisterBufferUlong routine reads a value from a specified register address. |
 | [StorPortReadRegisterBufferUlong64 macro](..\storport\nf-storport-storportreadregisterbufferulong64.md) | This StorPortReadRegisterBufferUlong64 routine reads a number of ULONG64 values from the specified 64-bit register address into a buffer. |
-| [StorPortReadRegisterBufferUshort macro](..\storport\nf-storport-storportreadregisterbufferushort~r1.md) | The StorPortReadRegisterBufferUshort routine reads a value from a specified register address. |
-| [StorPortReadRegisterUchar macro](..\storport\nf-storport-storportreadregisteruchar~r1.md) | The StorPortReadRegisterUchar routine reads a value from a specified register address. |
-| [StorPortReadRegisterUlong macro](..\storport\nf-storport-storportreadregisterulong~r1.md) | The StorPortReadRegisterUlong routine reads a value from a specified register address. |
 | [StorPortReadRegisterUlong64 macro](..\storport\nf-storport-storportreadregisterulong64.md) | The StorPortReadRegisterUlong64 routine reads a 64-bit value from a specified 64-bit register address. |
-| [StorPortReadRegisterUshort macro](..\storport\nf-storport-storportreadregisterushort~r1.md) | The StorPortReadRegisterUshort routine reads a value from a specified register address. |
-| [StorPortWritePortBufferUchar macro](..\storport\nf-storport-storportwriteportbufferuchar~r1.md) | The StorPortWritePortBufferUchar routine writes a value to a specified register address. |
-| [StorPortWritePortBufferUlong macro](..\storport\nf-storport-storportwriteportbufferulong~r1.md) | The StorPortWritePortBufferUlong routine writes a value to a specified register address. |
-| [StorPortWritePortBufferUshort macro](..\storport\nf-storport-storportwriteportbufferushort~r1.md) | The StorPortWritePortBufferUshort routine writes a value to a specified register address. |
-| [StorPortWritePortUchar macro](..\storport\nf-storport-storportwriteportuchar~r1.md) | The StorPortWritePortUchar routine writes a value to a specified register address. |
-| [StorPortWritePortUlong macro](..\storport\nf-storport-storportwriteportulong~r1.md) | The StorPortWritePortUlong routine writes a value to a specified register address. |
-| [StorPortWritePortUshort macro](..\storport\nf-storport-storportwriteportushort~r1.md) | The StorPortWritePortUshort routine writes a value to a specified register address. |
-| [StorPortWriteRegisterBufferUchar macro](..\storport\nf-storport-storportwriteregisterbufferuchar~r1.md) | The StorPortWriteRegisterBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA. |
-| [StorPortWriteRegisterBufferUlong macro](..\storport\nf-storport-storportwriteregisterbufferulong~r1.md) | The StorPortWriteRegisterBufferUlong routine transfers a given number of ULONG values from a buffer to the HBA. |
 | [StorPortWriteRegisterBufferUlong64 macro](..\storport\nf-storport-storportwriteregisterbufferulong64.md) | This StorPortWriteRegisterBufferUlong64 routine writes a number of ULONG64 values from a the specified 64-bit register address. |
-| [StorPortWriteRegisterBufferUshort macro](..\storport\nf-storport-storportwriteregisterbufferushort~r1.md) | The StorPortWriteRegisterBufferUshort routine transfers a given number of USHORT values from a buffer to the HBA. |
-| [StorPortWriteRegisterUchar macro](..\storport\nf-storport-storportwriteregisteruchar~r1.md) | The StorPortWriteRegisterBufferUshort routine transfers a given number of character values from a buffer to the indicated HBA register address. |
-| [StorPortWriteRegisterUlong macro](..\storport\nf-storport-storportwriteregisterulong~r1.md) | The StorPortWriteRegisterUlong routine transfers a ULONG value to the indicated HBA register address. |
 | [StorPortWriteRegisterUlong64 macro](..\storport\nf-storport-storportwriteregisterulong64.md) | This StorPortWriteRegisterUlong64 routine writes a ULONG64 value to the specified register address. |
-| [StorPortWriteRegisterUshort macro](..\storport\nf-storport-storportwriteregisterushort~r1.md) | The StorPortWriteRegisterUshort routine transfers a ULONG value to the indicated HBA register address. |

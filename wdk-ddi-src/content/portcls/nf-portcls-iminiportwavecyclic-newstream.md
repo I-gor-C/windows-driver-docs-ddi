@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveCyclic.NewStream
+UID: NF:portcls.IMiniportWaveCyclic.NewStream
 title: IMiniportWaveCyclic::NewStream method
 author: windows-driver-content
 description: The NewStream method creates a new instance of a logical stream that is associated with a specified physical channel.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveCyclic::NewStream method
@@ -72,12 +73,12 @@ Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate th
 
 ### -param PoolType [in]
 
-Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter will be one of the nonpaged pool types defined in the <a href="kernel.pool_type">POOL_TYPE</a> enumeration.
+Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter will be one of the nonpaged pool types defined in the <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a> enumeration.
 
 
 ### -param Pin [in]
 
-Number of the pin that is to be opened. If the WaveCyclic miniport driver's <a href="audio.iminiport_getdescription">IMiniport::GetDescription</a> method outputs a filter descriptor that specifies a total of <i>n</i> pin factories on the filter, then valid values for parameter <i>Pin</i> are in the range 0 to <i>n</i>-1.
+Number of the pin that is to be opened. If the WaveCyclic miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a> method outputs a filter descriptor that specifies a total of <i>n</i> pin factories on the filter, then valid values for parameter <i>Pin</i> are in the range 0 to <i>n</i>-1.
 
 
 ### -param Capture [in]
@@ -105,32 +106,32 @@ Output pointer for the service group. This parameter points to a caller-allocate
 
 
 ## -remarks
-The <code>NewStream</code> method sets the initial state of the stream to KSSTATE_STOP and its initial position to zero. (See <a href="audio.iminiportwavecyclicstream_setstate">IMiniportWaveCyclicStream::SetState</a> and <a href="audio.iminiportwavecyclicstream_getposition">IMiniportWaveCyclicStream::GetPosition</a>.)
+The <code>NewStream</code> method sets the initial state of the stream to KSSTATE_STOP and its initial position to zero. (See <a href="https://msdn.microsoft.com/library/windows/hardware/ff536720">IMiniportWaveCyclicStream::SetState</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff536716">IMiniportWaveCyclicStream::GetPosition</a>.)
 
 The port driver calls only the following methods on the <i>DmaChannel</i> object:
 
 
-<a href="audio.idmachannel_allocatedbuffersize">IDmaChannel::AllocatedBufferSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536554">IDmaChannel::AllocatedBufferSize</a>
 
 
 
-<a href="audio.idmachannel_buffersize">IDmaChannel::BufferSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536556">IDmaChannel::BufferSize</a>
 
 
 
-<a href="audio.idmachannel_copyfrom">IDmaChannel::CopyFrom</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536557">IDmaChannel::CopyFrom</a>
 
 
 
-<a href="audio.idmachannel_copyto">IDmaChannel::CopyTo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536558">IDmaChannel::CopyTo</a>
 
 
 
-<a href="audio.idmachannel_setbuffersize">IDmaChannel::SetBufferSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536563">IDmaChannel::SetBufferSize</a>
 
 
 
-<a href="audio.idmachannel_systemaddress">IDmaChannel::SystemAddress</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536564">IDmaChannel::SystemAddress</a>
 
 
 The <i>Stream</i>, <i>OuterUnknown</i>, <i>DmaChannel</i>, and <i>ServiceGroup</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.
@@ -181,10 +182,10 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
 </dt>
 <dt>
-<a href="kernel.pool_type">POOL_TYPE</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 </dt>
 <dt>
-<a href="audio.iminiport_getdescription">IMiniport::GetDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>

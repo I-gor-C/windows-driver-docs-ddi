@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlInitializeUnicodePrefix
+UID: NF:ntifs.RtlInitializeUnicodePrefix
 title: RtlInitializeUnicodePrefix function
 author: windows-driver-content
 description: The RtlInitializeUnicodePrefix routine initializes a prefix table.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlinitializeunicodeprefix.htm
 old-project: ifsk
 ms.assetid: 8891641a-392c-4c2b-aa5a-9464774d8610
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlInitializeUnicodePrefix
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: < DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlInitializeUnicodePrefix function
@@ -67,7 +68,7 @@ File systems must call <b>RtlInitializeUnicodePrefix</b> to initialize the prefi
 
 Callers of the <b>Rtl..UnicodePrefix</b> routines are responsible for synchronizing access to the prefix table. A fast mutex is the most efficient synchronization mechanism to use for this purpose. 
 
-For information about other string-handling routines, see <a href="kernel.strings">Strings</a>. 
+For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. 
 
 
 ## -requirements
@@ -151,24 +152,24 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exinitializefastmutex">ExInitializeFastMutex</a>
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
 </dt>
 <dt>
-<a href="ifsk.rtlfindunicodeprefix">RtlFindUnicodePrefix</a>
+<a href="..\ntifs\nf-ntifs-rtlfindunicodeprefix.md">RtlFindUnicodePrefix</a>
 </dt>
 <dt>
-<a href="ifsk.rtlinsertunicodeprefix">RtlInsertUnicodePrefix</a>
+<a href="..\ntifs\nf-ntifs-rtlinsertunicodeprefix.md">RtlInsertUnicodePrefix</a>
 </dt>
 <dt>
-<a href="ifsk.rtlnextunicodeprefix">RtlNextUnicodePrefix</a>
+<a href="..\ntifs\nf-ntifs-rtlnextunicodeprefix.md">RtlNextUnicodePrefix</a>
 </dt>
 <dt>
-<a href="ifsk.rtlremoveunicodeprefix">RtlRemoveUnicodePrefix</a>
+<a href="..\ntifs\nf-ntifs-rtlremoveunicodeprefix.md">RtlRemoveUnicodePrefix</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInitializeUnicodePrefix routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInitializeUnicodePrefix routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

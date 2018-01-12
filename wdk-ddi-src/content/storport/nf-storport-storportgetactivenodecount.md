@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortGetActiveNodeCount
+UID: NF:storport.StorPortGetActiveNodeCount
 title: StorPortGetActiveNodeCount function
 author: windows-driver-content
 description: The StorPortGetActiveNodeCount routine returns the number of nodes that are present in the system.
@@ -7,7 +7,7 @@ old-location: storage\storportgetactivenodecount.htm
 old-project: storage
 ms.assetid: b981bfe7-832b-47ae-a742-c4829a6ad06b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortGetActiveNodeCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -133,7 +134,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.storport_storportirql">StorPortIrql</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
 </td>
 </tr>
 </table>

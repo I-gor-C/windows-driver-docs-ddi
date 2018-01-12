@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_XPF_NMI_DESCRIPTOR
+UID: NS:ntddk._WHEA_XPF_NMI_DESCRIPTOR
 title: _WHEA_XPF_NMI_DESCRIPTOR
 author: windows-driver-content
 description: The WHEA_XPF_NMI_DESCRIPTOR structure describes a nonmaskable interrupt (NMI) error source for an x86 or x64 processor.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 4ffacbd6-dcdf-48a2-bf1e-6923d825bb09
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_XPF_NMI_DESCRIPTOR, *PWHEA_XPF_NMI_DESCRIPTOR, WHEA_XPF_NMI_DESCRIPTOR, PWHEA_XPF_NMI_DESCRIPTOR
+ms.keywords: _WHEA_XPF_NMI_DESCRIPTOR, WHEA_XPF_NMI_DESCRIPTOR, *PWHEA_XPF_NMI_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_XPF_NMI_DESCRIPTOR, *PWHEA_XPF_NMI_DESCRIPTOR
 ---
 
 # _WHEA_XPF_NMI_DESCRIPTOR structure
@@ -65,7 +66,7 @@ A Boolean value that indicates if the error source is enabled.
 
 
 ## -remarks
-A WHEA_XPF_NMI_DESCRIPTOR structure is contained within the <a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
+A WHEA_XPF_NMI_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
 
 
 ## -requirements
@@ -97,7 +98,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 </dt>
 </dl>
  

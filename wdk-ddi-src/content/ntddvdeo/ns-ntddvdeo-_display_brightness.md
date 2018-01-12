@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDVDEO._DISPLAY_BRIGHTNESS
+UID: NS:ntddvdeo._DISPLAY_BRIGHTNESS
 title: _DISPLAY_BRIGHTNESS
 author: windows-driver-content
 description: The DISPLAY_BRIGHTNESS structure is reserved for system use.
@@ -7,8 +7,8 @@ old-location: display\display_brightness.htm
 old-project: display
 ms.assetid: 0e72c1a7-5712-46fc-a65f-20183830cb72
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DISPLAY_BRIGHTNESS, DISPLAY_BRIGHTNESS, *PDISPLAY_BRIGHTNESS, PDISPLAY_BRIGHTNESS
+ms.date: 12/29/2017
+ms.keywords: _DISPLAY_BRIGHTNESS, *PDISPLAY_BRIGHTNESS, DISPLAY_BRIGHTNESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDISPLAY_BRIGHTNESS, DISPLAY_BRIGHTNESS
 ---
 
 # _DISPLAY_BRIGHTNESS structure

@@ -1,13 +1,13 @@
 ---
-UID: NS.USB._URB_HEADER
+UID: NS:usb._URB_HEADER
 title: _URB_HEADER
 author: windows-driver-content
 description: The _URB_HEADER structure is used by USB client drivers to provide basic information about the request being sent to the host controller driver.
 old-location: buses\_urb_header.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: d23b9332-1e9d-4592-9674-3e5d8fc1d11e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: _URB_HEADER,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 req.product: Windows 10 or later.
 ---
 
@@ -143,9 +144,9 @@ Transfers data from a bulk pipe or interrupt pipe or to an bulk pipe. If set, th
 ### -field URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER_USING_CHAINED_MDL
 
 <dd>
-Transfers data to and from a bulk pipe or interrupt pipe, by using chained MDLs. If set, the URB is used with <a href="..\usb\ns-usb-_urb_bulk_or_interrupt_transfer.md">_URB_BULK_OR_INTERRUPT_TRANSFER</a> as the data structure. The client driver must set the <b>TransferBufferMDL</b>  member to the first <a href="kernel.mdl">MDL</a> structure in the chain that contains the transfer buffer. The USB driver stack ignores the <b>TransferBuffer</b> member when processing this URB.
+Transfers data to and from a bulk pipe or interrupt pipe, by using chained MDLs. If set, the URB is used with <a href="..\usb\ns-usb-_urb_bulk_or_interrupt_transfer.md">_URB_BULK_OR_INTERRUPT_TRANSFER</a> as the data structure. The client driver must set the <b>TransferBufferMDL</b>  member to the first <a href="..\wdm\ns-wdm-_mdl.md">MDL</a> structure in the chain that contains the transfer buffer. The USB driver stack ignores the <b>TransferBuffer</b> member when processing this URB.
 
-Available in Windows 8.  For information about using chained MDLs, see <a href="buses.how_to_send_chained_mdls">How to Send Chained MDLs</a>.
+Available in Windows 8.  For information about using chained MDLs, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450848">How to Send Chained MDLs</a>.
 
 
 ### -field URB_FUNCTION_ISOCH_TRANSFER
@@ -157,9 +158,9 @@ Transfers data to or from an isochronous pipe. If set, the URB is used with <a h
 ### -field URB_FUNCTION_ISOCH_TRANSFER_USING_CHAINED_MDL
 
 <dd>
-Transfers data to or from an isochronous pipe by using chained MDLs. If set, the URB is used with <a href="..\usb\ns-usb-_urb_isoch_transfer.md">_URB_ISOCH_TRANSFER</a> as the data structure. The client driver must set the <b>TransferBufferMDL</b>  member to the first <a href="kernel.mdl">MDL</a> in the chain that contains the transfer buffer. The USB driver stack ignores the <b>TransferBuffer</b> member when processing this URB.
+Transfers data to or from an isochronous pipe by using chained MDLs. If set, the URB is used with <a href="..\usb\ns-usb-_urb_isoch_transfer.md">_URB_ISOCH_TRANSFER</a> as the data structure. The client driver must set the <b>TransferBufferMDL</b>  member to the first <a href="..\wdm\ns-wdm-_mdl.md">MDL</a> in the chain that contains the transfer buffer. The USB driver stack ignores the <b>TransferBuffer</b> member when processing this URB.
 
-Available in Windows 8.  For information about using chained MDLs, see <a href="buses.how_to_send_chained_mdls">How to Send Chained MDLs</a>.
+Available in Windows 8.  For information about using chained MDLs, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450848">How to Send Chained MDLs</a>.
 
 
 ### -field URB_FUNCTION_RESET_PIPE
@@ -415,7 +416,7 @@ Available in Windows XP and later operation systems.
 <dd>
 Opens streams in the specified bulk endpoint. If set, the URB is used with  <a href="..\usb\ns-usb-_urb_open_static_streams.md">_URB_OPEN_STATIC_STREAMS</a> as the data structure.
 
-Available in Windows 8.  For information about formatting an URB for an open-stream request, see <a href="buses.how_to_open_streams_in_a_usb_endpoint">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
+Available in Windows 8.  For information about formatting an URB for an open-stream request, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
 
 
 ### -field URB_FUNCTION_CLOSE_STATIC_STREAMS  
@@ -423,7 +424,7 @@ Available in Windows 8.  For information about formatting an URB for an open-st
 <dd>
 Closes all opened streams in the specified bulk endpoint. If set, the URB is used with  <a href="..\usb\ns-usb-_urb_pipe_request.md">_URB_PIPE_REQUEST</a>  as the data structure.
 
-Available in Windows 8. For information about formatting an URB for a close-stream request, see <a href="buses.how_to_open_streams_in_a_usb_endpoint">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
+Available in Windows 8. For information about formatting an URB for a close-stream request, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
 
 </dd>
 </dl>
@@ -467,7 +468,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="buses.urb">URB</a>
+<a href="..\usb\ns-usb-_urb.md">URB</a>
 </dt>
 <dt>
 <a href="..\usb\ns-usb-_urb_select_interface.md">_URB_SELECT_INTERFACE</a>
@@ -512,12 +513,12 @@ Header
 <a href="..\usb\ns-usb-_urb_os_feature_descriptor_request.md">_URB_OS_FEATURE_DESCRIPTOR_REQUEST</a>
 </dt>
 <dt>
-<a href="buses.usb_structures_and_enumerations">USB Structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20_URB_HEADER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_HEADER structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

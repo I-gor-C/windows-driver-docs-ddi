@@ -1,14 +1,14 @@
 ---
-UID: NS.DOT11WDI._NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
+UID: NS:dot11wdi._NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 title: _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 author: windows-driver-content
 description: The NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure defines the set of handlers that a WDI miniport driver must implement.
 old-location: netvista\ndis_miniport_driver_wdi_characteristics.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2F69C228-FF2D-4277-A4C9-14FBADA1CD31
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 ---
 
 # _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure
@@ -70,7 +71,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_MINIPORT_WDI_CHARACTERISTICS.

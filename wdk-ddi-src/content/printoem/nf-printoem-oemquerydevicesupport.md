@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMQueryDeviceSupport
+UID: NF:printoem.OEMQueryDeviceSupport
 title: OEMQueryDeviceSupport function
 author: windows-driver-content
 description: The OEMQueryDeviceSupport function returns requested device-specific information.
@@ -7,7 +7,7 @@ old-location: print\oemquerydevicesupport.htm
 old-project: print
 ms.assetid: 38e1bb07-be98-494b-a9c9-a83edef367e0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMQueryDeviceSupport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

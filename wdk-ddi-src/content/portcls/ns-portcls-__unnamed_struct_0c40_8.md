@@ -1,6 +1,6 @@
 ---
-UID: NS.PORTCLS.__UNNAMED_STRUCT_0C40_8
-title: *PPCNODE_DESCRIPTOR
+UID: NS:portcls.__unnamed_struct_0c40_8
+title: PCNODE_DESCRIPTOR
 author: windows-driver-content
 description: The PCNODE_DESCRIPTOR structure describes a node in the filter that a topology miniport driver implements.
 old-location: audio\pcnode_descriptor.htm
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: e83051ca-07fa-439d-8b0f-cbe6d84679a7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: *PPCNODE_DESCRIPTOR, *PPCNODE_DESCRIPTOR, PCNODE_DESCRIPTOR
+ms.keywords: PCNODE_DESCRIPTOR, PCNODE_DESCRIPTOR, *PPCNODE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PCNODE_DESCRIPTOR, *PPCNODE_DESCRIPTOR
 ---
 
-# *PPCNODE_DESCRIPTOR structure
+# PCNODE_DESCRIPTOR structure
 
 
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbPacketRestore
+UID: NF:vmbuskernelmodeclientlibapi.VmbPacketRestore
 title: VmbPacketRestore function
 author: windows-driver-content
 description: The VmbPacketRestore function restores packet from a buffer that contains saved packet context.
 old-location: netvista\vmbpacketrestore.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: CE8BBFB7-FC6C-458B-89EC-355A6DD18399
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbPacketRestore
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

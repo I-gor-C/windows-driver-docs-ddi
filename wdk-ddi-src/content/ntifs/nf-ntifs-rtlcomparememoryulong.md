@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlCompareMemoryUlong
+UID: NF:ntifs.RtlCompareMemoryUlong
 title: RtlCompareMemoryUlong function
 author: windows-driver-content
 description: The RtlCompareMemoryUlong routine returns how many bytes in a block of memory match a specified pattern.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlcomparememoryulong.htm
 old-project: ifsk
 ms.assetid: 78ff21da-be0f-4b57-9162-1052a6c12b5c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlCompareMemoryUlong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql: Any level (see Remarks section)
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlCompareMemoryUlong function
@@ -77,7 +78,7 @@ Pattern to be compared byte by byte, repeatedly, through the specified memory ra
 ## -remarks
 If the block of memory at <i>Source</i> is nonpaged, the caller can be running at any IRQL. Otherwise, callers of <b>RtlCompareMemoryUlong</b> must be running at IRQL &lt; DISPATCH_LEVEL. 
 
-For more information about managing buffered data and initializing driver-allocated buffers, see <a href="kernel.buffered_data_and_buffer_initialization">Buffered Data and Buffer Initialization</a>. 
+For more information about managing buffered data and initializing driver-allocated buffers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540656">Buffered Data and Buffer Initialization</a>. 
 
 
 ## -requirements
@@ -142,12 +143,12 @@ Any level (see Remarks section)
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlcomparememory">RtlCompareMemory</a>
+<a href="..\wdm\nf-wdm-rtlcomparememory.md">RtlCompareMemory</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlCompareMemoryUlong routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlCompareMemoryUlong routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

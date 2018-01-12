@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_QUERYSEGMENTOUT
+UID: NS:d3dkmddi._DXGK_QUERYSEGMENTOUT
 title: _DXGK_QUERYSEGMENTOUT
 author: windows-driver-content
 description: The DXGK_QUERYSEGMENTOUT structure describes memory-segment information that the display miniport driver should return from a call to its DxgkDdiQueryAdapterInfo function.
@@ -7,7 +7,7 @@ old-location: display\dxgk_querysegmentout.htm
 old-project: display
 ms.assetid: df640b7a-865a-4a8b-94be-ebc60e44cf72
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_QUERYSEGMENTOUT, DXGK_QUERYSEGMENTOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_QUERYSEGMENTOUT
 ---
 
 # _DXGK_QUERYSEGMENTOUT structure
@@ -64,7 +65,7 @@ typedef struct _DXGK_QUERYSEGMENTOUT {
 
 ### -field pSegmentDescriptor
 
-[out] An array of <a href="display.dxgk_segmentdescriptor">DXGK_SEGMENTDESCRIPTOR</a> structures that the driver populates with information about the segments it supports. The size of the array is the value that <b>NbSegment</b> specifies.
+[out] An array of <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentdescriptor.md">DXGK_SEGMENTDESCRIPTOR</a> structures that the driver populates with information about the segments it supports. The size of the array is the value that <b>NbSegment</b> specifies.
 
 
 ### -field PagingBufferSegmentId
@@ -116,13 +117,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgk_querysegmentin">DXGK_QUERYSEGMENTIN</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentin.md">DXGK_QUERYSEGMENTIN</a>
 </dt>
 <dt>
-<a href="display.dxgk_segmentdescriptor">DXGK_SEGMENTDESCRIPTOR</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentdescriptor.md">DXGK_SEGMENTDESCRIPTOR</a>
 </dt>
 <dt>
-<a href="display.dxgkarg_queryadapterinfo">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
@@ -132,5 +133,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_QUERYSEGMENTOUT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_QUERYSEGMENTOUT structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

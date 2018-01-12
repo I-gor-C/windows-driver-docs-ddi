@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsAddIrpToCancelableQueue
+UID: NF:ks.KsAddIrpToCancelableQueue
 title: KsAddIrpToCancelableQueue function
 author: windows-driver-content
 description: The KsAddIrpToCancelableQueue function adds an IRP to a queue of cancelable IRPs, thus allowing the IRP to be canceled. If the IRP had been previously set to a canceled state, the KsAddIrpToCancelableQueue function completes the canceling of that IRP.
@@ -7,7 +7,7 @@ old-location: stream\ksaddirptocancelablequeue.htm
 old-project: stream
 ms.assetid: 399ca0d6-6355-40f8-ac2c-c69d7ae699e1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsAddIrpToCancelableQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsAddIrpToCancelableQueue function
@@ -79,7 +80,7 @@ Indicates whether this IRP should be placed at the beginning or end of the queue
 
 ### -param DriverCancel [in, optional]
 
-Optional parameter that specifies a driver-supplied cancel routine to use. If this is <b>NULL</b>, the standard <a href="stream.kscancelroutine">KsCancelRoutine</a> is used.
+Optional parameter that specifies a driver-supplied cancel routine to use. If this is <b>NULL</b>, the standard <a href="https://msdn.microsoft.com/library/windows/hardware/ff561011">KsCancelRoutine</a> is used.
 
 
 ## -returns

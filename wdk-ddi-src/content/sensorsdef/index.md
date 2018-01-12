@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:sensorsdef
 ---
 
 # Sensorsdef.h header

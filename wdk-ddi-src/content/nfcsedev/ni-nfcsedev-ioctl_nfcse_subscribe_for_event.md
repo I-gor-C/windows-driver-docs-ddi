@@ -1,5 +1,5 @@
 ---
-UID: NI.nfcsedev.IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT
+UID: NI:nfcsedev.IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT
 title: IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT
 author: windows-driver-content
 description: The IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT control code is issued by a client to subscribe to a specific event.
@@ -7,8 +7,8 @@ old-location: nfpdrivers\ioctl_nfcse_subscribe_for_event.htm
 old-project: nfpdrivers
 ms.assetid: 3A184392-A68C-4AFC-AE9F-36247153ADD2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, PSECURE_ELEMENT_TYPE
+ms.date: 12/18/2017
+ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT IOCTL
@@ -47,7 +48,7 @@ The <b>IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT</b>
 
 ### -input-buffer
 
-<a href="nfpdrivers.secure_element_event_subscription_info"> SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO</a> structure.
+<a href="..\nfcsedev\ns-nfcsedev-_secure_element_event_subscription_info.md"> SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO</a> structure.
 
 
 

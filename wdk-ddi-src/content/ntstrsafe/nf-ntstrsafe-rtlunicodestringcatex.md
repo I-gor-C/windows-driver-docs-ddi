@@ -1,5 +1,5 @@
 ---
-UID: NF.ntstrsafe.RtlUnicodeStringCatEx
+UID: NF:ntstrsafe.RtlUnicodeStringCatEx
 title: RtlUnicodeStringCatEx function
 author: windows-driver-content
 description: The RtlUnicodeStringCatEx function concatenates two strings that are contained in UNICODE_STRING structures.
@@ -7,7 +7,7 @@ old-location: kernel\rtlunicodestringcatex.htm
 old-project: kernel
 ms.assetid: 9894863c-89e9-491e-b958-874ac8ee8c30
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlUnicodeStringCatEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntstrsafe.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE
 ---
 
 # RtlUnicodeStringCatEx function
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The <b>RtlUnicodeStringCatEx</b> function concatenates two strings that are contained in <a href="kernel.unicode_string">UNICODE_STRING</a> structures. 
+The <b>RtlUnicodeStringCatEx</b> function concatenates two strings that are contained in <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structures. 
 
 
 
@@ -132,7 +133,7 @@ For information about how to test NTSTATUS values, see <a href="https://msdn.mic
 ## -remarks
 The <b>RtlUnicodeStringCatEx</b> function uses the destination buffer's size to ensure that the concatenation operation does not write past the end of the buffer. By default, the function does <u>not</u> terminate the resultant string with a null character value (that is, with zero). As an option, the caller can use the STRSAFE_FILL_BEHIND flag and a fill byte value of zero to null-terminate a resultant string that does not occupy the entire destination buffer.
 
-<b>RtlUnicodeStringCatEx</b> adds to the functionality of the <a href="kernel.rtlunicodestringcat">RtlUnicodeStringCat</a> function by returning a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that identifies the end of the destination string and the number of bytes that are left unused in that string. You can pass flags to <b>RtlUnicodeStringCatEx</b> for additional control.
+<b>RtlUnicodeStringCatEx</b> adds to the functionality of the <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcat.md">RtlUnicodeStringCat</a> function by returning a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that identifies the end of the destination string and the number of bytes that are left unused in that string. You can pass flags to <b>RtlUnicodeStringCatEx</b> for additional control.
 
 If the source and destination strings overlap, the behavior of the function is undefined.
 
@@ -201,15 +202,15 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlunicodestringcat">RtlUnicodeStringCat</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcat.md">RtlUnicodeStringCat</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlUnicodeStringCatEx function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlUnicodeStringCatEx function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

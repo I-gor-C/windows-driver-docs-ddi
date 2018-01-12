@@ -1,5 +1,5 @@
 ---
-UID: NF.spbcx.SpbDeviceInitialize
+UID: NF:spbcx.SpbDeviceInitialize
 title: SpbDeviceInitialize function
 author: windows-driver-content
 description: The SpbDeviceInitialize method completes the initialization of the SPB controller driver after this driver creates the associated device object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Spbcxstubs.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -72,7 +73,7 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh40
 ## -remarks
 Your SPB controller driver calls this method to register its event callback functions with the SPB framework extension (SpbCx) and to specify the transfer mode to use for the controller's I/O queue. <b>SpbDeviceInitialize</b> creates all of the controller's internal data structures, including the I/O queue.
 
-The SPB controller driver must call this method before it <i>commits</i> the device object—that is, before it returns from the <i>EvtDriverDeviceAdd</i> callback or adds the PDO to the controller's child list. The child list represents the devices that are attached to the bus. For more information, see <a href="kmdf.enumerating_the_devices_on_a_bus">Enumerating the Devices on a Bus</a>.
+The SPB controller driver must call this method before it <i>commits</i> the device object—that is, before it returns from the <i>EvtDriverDeviceAdd</i> callback or adds the PDO to the controller's child list. The child list represents the devices that are attached to the bus. For more information, see <a href="https://msdn.microsoft.com/5731db82-2bc8-4a8d-98f1-3977845f572c">Enumerating the Devices on a Bus</a>.
 
 After <b>SpbDeviceInitialize</b> returns, the controller is ready to process I/O requests, but the SPB controller driver can, as needed, continue to configure the controller settings before it commits the device object.
 

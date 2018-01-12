@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteTyped.Dereference
+UID: NF:engextcpp.ExtRemoteTyped.Dereference
 title: ExtRemoteTyped::Dereference method
 author: windows-driver-content
 description: The Dereference method returns the typed data that is pointed to by the typed data represented by this object.
 old-location: debugger\extremotetyped_dereference.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 27a90926-95f4-43cd-b8d1-1b60ad23d737
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped::Dereference, Dereference
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteTyped::Dereference method

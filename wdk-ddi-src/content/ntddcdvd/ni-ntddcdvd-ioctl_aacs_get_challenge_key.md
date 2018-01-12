@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdvd.IOCTL_AACS_GET_CHALLENGE_KEY
+UID: NI:ntddcdvd.IOCTL_AACS_GET_CHALLENGE_KEY
 title: IOCTL_AACS_GET_CHALLENGE_KEY
 author: windows-driver-content
 description: Queries the logical unit for the device's challenge key. The challenge key consists of a point on an elliptic curve and its associated signature.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_aacs_get_challenge_key.htm
 old-project: storage
 ms.assetid: 97c43a15-e120-44bd-8a5e-40b80aba646d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, PDVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.date: 1/10/2018
+ms.keywords: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_GET_CHALLENGE_KEY IOCTL
@@ -45,19 +46,19 @@ Queries the logical unit for the device's challenge key. The challenge key consi
 ## -ioctlparameters
 
 ### -input-buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a value of type <a href="storage.dvd_session_id">DVD_SESSION_ID</a> that specifies an Authentication Grant Identifier (AGID). The AGID identifies the secure session.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff553743">DVD_SESSION_ID</a> that specifies an Authentication Grant Identifier (AGID). The AGID identifies the secure session.
 
 
 ### -input-buffer-length
-Length of a <a href="storage.dvd_session_id">DVD_SESSION_ID</a>.
+Length of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553743">DVD_SESSION_ID</a>.
 
 
 ### -output-buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the drive challenge key with a format of <a href="storage.aacs_challenge_key">AACS_CHALLENGE_KEY</a>. 
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the drive challenge key with a format of <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_challenge_key.md">AACS_CHALLENGE_KEY</a>. 
 
 
 ### -output-buffer-length
-Length of an <a href="storage.aacs_challenge_key">AACS_CHALLENGE_KEY</a>.
+Length of an <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_challenge_key.md">AACS_CHALLENGE_KEY</a>.
 
 
 ### -in-out-buffer

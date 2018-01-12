@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_EXEMPTION_PACKET_TYPE
+UID: NE:wditypes._WDI_EXEMPTION_PACKET_TYPE
 title: _WDI_EXEMPTION_PACKET_TYPE
 author: windows-driver-content
 description: The WDI_EXEMPTION_PACKET_TYPE enumeration defines the types of packet exemptions.
 old-location: netvista\wdi_exemption_packet_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7F584EBE-9ACB-4AC7-9472-34322F24EF74
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_EXEMPTION_PACKET_TYPE, WDI_EXEMPTION_PACKET_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_EXEMPTION_PACKET_TYPE
 req.product: Windows 10 or later.
 ---
 

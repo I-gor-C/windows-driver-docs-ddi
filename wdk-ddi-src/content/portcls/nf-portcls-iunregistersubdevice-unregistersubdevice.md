@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IUnregisterSubdevice.UnregisterSubdevice
+UID: NF:portcls.IUnregisterSubdevice.UnregisterSubdevice
 title: IUnregisterSubdevice::UnregisterSubdevice method
 author: windows-driver-content
 description: The UnregisterSubdevice method deletes the registration of a subdevice that was previously registered by a call to PcRegisterSubdevice.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IUnregisterSubdevice::UnregisterSubdevice method
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The <b>UnregisterSubdevice</b> method deletes the registration of a subdevice that was previously registered by a call to <a href="audio.pcregistersubdevice">PcRegisterSubdevice</a>.
+The <b>UnregisterSubdevice</b> method deletes the registration of a subdevice that was previously registered by a call to <a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a>.
 
 
 
@@ -56,7 +57,7 @@ NTSTATUS UnregisterSubdevice(
 
 ### -param DeviceObject [in]
 
-Pointer to the device object for the adapter device. This parameter must point to a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Pointer to the device object for the adapter device. This parameter must point to a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 
 ### -param Unknown [in]
@@ -114,10 +115,10 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iunregistersubdevice.md">IUnregisterSubdevice</a>
 </dt>
 <dt>
-<a href="audio.pcregistersubdevice">PcRegisterSubdevice</a>
+<a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iport.md">IPort</a>

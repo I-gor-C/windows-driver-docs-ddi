@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILGPPREJECTCAUSE
+UID: NS:rilapitypes.RILGPPREJECTCAUSE
 title: RILGPPREJECTCAUSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgpprejectcause_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b182f937-3d0d-4558-967a-da2be3c73843
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILGPPREJECTCAUSE, *LPRILGPPREJECTCAUSE, RILGPPREJECTCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGPPREJECTCAUSE, RILGPPREJECTCAUSE
 req.product: Windows 10 or later.
 ---
 

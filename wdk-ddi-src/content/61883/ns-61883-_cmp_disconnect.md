@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CMP_DISCONNECT
+UID: NS:61883._CMP_DISCONNECT
 title: _CMP_DISCONNECT
 author: windows-driver-content
 description: This structure is used to break a connection.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 7EAE617D-EFF9-4F77-9B9C-5985B864B310
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CMP_DISCONNECT, *PCMP_DISCONNECT, PCMP_DISCONNECT, CMP_DISCONNECT
+ms.keywords: _CMP_DISCONNECT, *PCMP_DISCONNECT, CMP_DISCONNECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCMP_DISCONNECT, CMP_DISCONNECT
 ---
 
 # _CMP_DISCONNECT structure

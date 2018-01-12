@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUIMXDC.AdjustDPI
+UID: NF:prcomoem.IPrintOemUIMXDC.AdjustDPI
 title: IPrintOemUIMXDC::AdjustDPI method
 author: windows-driver-content
 description: The IPrintOemUIMXDC::AdjustDPI method enables an XPS filter pipeline driver to use UnidrvUI.dll or PS5UI.dll to support configuration of image resolution.
@@ -7,7 +7,7 @@ old-location: print\iprintoemuimxdc_adjustdpi.htm
 old-project: print
 ms.assetid: d725d917-08fb-4e11-824c-795e35782a06
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUIMXDC, IPrintOemUIMXDC::AdjustDPI, AdjustDPI
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -66,7 +67,7 @@ A handle to the printer that is currently being queried.
 
 ### -param cbDevMode 
 
-The size of the <a href="display.devmodew">DEVMODE</a> structure, including appended data.
+The size of the <a href="https://msdn.microsoft.com/b2369876-9a79-40c8-8d27-c8b9d8e68e6b">DEVMODE</a> structure, including appended data.
 
 
 ### -param pDevMode 

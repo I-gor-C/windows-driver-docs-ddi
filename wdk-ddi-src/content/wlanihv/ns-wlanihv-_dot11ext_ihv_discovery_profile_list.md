@@ -1,13 +1,13 @@
 ---
-UID: NS.WLANIHV._DOT11EXT_IHV_DISCOVERY_PROFILE_LIST
+UID: NS:wlanihv._DOT11EXT_IHV_DISCOVERY_PROFILE_LIST
 title: _DOT11EXT_IHV_DISCOVERY_PROFILE_LIST
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11ext_ihv_discovery_profile_list.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8fa104bd-b594-4909-bb49-0c9d013b1696
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _DOT11EXT_IHV_DISCOVERY_PROFILE_LIST, *PDOT11EXT_IHV_DISCOVERY_PROFILE_LIST, DOT11EXT_IHV_DISCOVERY_PROFILE_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT11EXT_IHV_DISCOVERY_PROFILE_LIST, DOT11EXT_IHV_DISCOVERY_PROFILE_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -55,14 +56,14 @@ typedef struct _DOT11EXT_IHV_DISCOVERY_PROFILE_LIST {
 ### -field dwCount
 
 The number of 
-     <a href="netvista.dot11ext_ihv_discovery_profile">
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_discovery_profile.md">
      DOT11EXT_IHV_DISCOVERY_PROFILE</a> IHV discovery profiles.
 
 
 ### -field pIhvDiscoveryProfiles
 
 A pointer to an array of 
-     <a href="netvista.dot11ext_ihv_discovery_profile">
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_discovery_profile.md">
      DOT11EXT_IHV_DISCOVERY_PROFILE</a> IHV discovery profiles.
 
 
@@ -98,7 +99,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11ext_ihv_discovery_profile">
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_discovery_profile.md">
    DOT11EXT_IHV_DISCOVERY_PROFILE</a>
 </dt>
 </dl>
@@ -106,5 +107,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11EXT_IHV_DISCOVERY_PROFILE_LIST structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_IHV_DISCOVERY_PROFILE_LIST structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

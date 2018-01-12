@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSPROPERTY_ITEM
+UID: NS:ks.KSPROPERTY_ITEM
 title: KSPROPERTY_ITEM
 author: windows-driver-content
 description: Drivers use the KSPROPERTY_ITEM structure to describe how they support a property in a property set.
@@ -7,8 +7,8 @@ old-location: stream\ksproperty_item.htm
 old-project: stream
 ms.assetid: 58530a72-6e07-44f5-9d7d-04bc37ff1ec9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSPROPERTY_ITEM, *PKSPROPERTY_ITEM, PKSPROPERTY_ITEM, KSPROPERTY_ITEM
+ms.date: 1/9/2018
+ms.keywords: KSPROPERTY_ITEM, *PKSPROPERTY_ITEM, KSPROPERTY_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSPROPERTY_ITEM, KSPROPERTY_ITEM
 ---
 
 # KSPROPERTY_ITEM structure
@@ -75,7 +76,7 @@ Specifies the ID of the property being described.
 
 ### -field GetPropertyHandler
 
-Pointer to a minidriver-supplied <a href="stream.kstrgetpropertyhandler">KStrGetPropertyHandler</a>. If <b>NULL</b>, the property cannot be read. This member is used only by drivers that use the AVStream or Stream class interfaces.
+Pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567177">KStrGetPropertyHandler</a>. If <b>NULL</b>, the property cannot be read. This member is used only by drivers that use the AVStream or Stream class interfaces.
 
 
 ### -field GetSupported
@@ -85,7 +86,7 @@ Set to <b>TRUE</b> if this property supports get requests, <b>FALSE</b> if it do
 
 ### -field MinProperty
 
-Specifies the minimum buffer length to hold the property identifier. This must be at least <b>sizeof</b>(<a href="stream.ksproperty">KSPROPERTY</a>).
+Specifies the minimum buffer length to hold the property identifier. This must be at least <b>sizeof</b>(<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>).
 
 
 ### -field MinData
@@ -95,7 +96,7 @@ Specifies the minimum buffer length to hold the data read from or written to thi
 
 ### -field SetPropertyHandler
 
-Pointer to a minidriver-supplied <a href="stream.kstrsetpropertyhandler">KStrSetPropertyHandler</a>. If <b>NULL</b>, the property cannot be set. This member is used only by drivers that use the AVStream or Stream class interfaces.
+Pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnkshandler.md">KStrSetPropertyHandler</a>. If <b>NULL</b>, the property cannot be set. This member is used only by drivers that use the AVStream or Stream class interfaces.
 
 
 ### -field SetSupported
@@ -115,7 +116,7 @@ Specifies the number of entries in the array pointed to by the <b>Relations</b> 
 
 ### -field Relations
 
-Points to an array of <a href="stream.ksproperty">KSPROPERTY</a> structures representing properties related to this one. Two properties are considered related if changing one property may affect the value of the other property. The <b>Flags</b> member of each entry is unused.
+Points to an array of <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structures representing properties related to this one. Two properties are considered related if changing one property may affect the value of the other property. The <b>Flags</b> member of each entry is unused.
 
 
 ### -field SupportHandler
@@ -125,7 +126,7 @@ Provide this member only if implementing your own format for raw serialization o
 
 ### -field SerializedSize
 
-Specifies the size of the property when serialized in a KSPROPERTY_TYPE_SERIALIZESET request. This should be zero if the property cannot be serialized. See <a href="stream.ksproperty">KSPROPERTY</a> for more information.
+Specifies the size of the property when serialized in a KSPROPERTY_TYPE_SERIALIZESET request. This should be zero if the property cannot be serialized. See <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> for more information.
 
 
 ## -remarks
@@ -180,7 +181,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksproperty">KSPROPERTY</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a>
@@ -205,5 +206,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_ITEM structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_ITEM structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

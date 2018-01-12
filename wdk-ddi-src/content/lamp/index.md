@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:lamp
 ---
 
 # Lamp.h header
@@ -29,6 +29,7 @@ Lamp.h contain these programming interfaces:
 | [IOCTL_LAMP_GET_CAPABILITIES_WHITE IOCTL](ni-lamp-ioctl_lamp_get_capabilities_white.md) | The IOCTL_LAMP_GET_CAPABILITIES_WHITE control code queries the capabilities of the lamp when the device is configured to emit white light. |
 | [IOCTL_LAMP_GET_EMITTING_LIGHT IOCTL](ni-lamp-ioctl_lamp_get_emitting_light.md) | The IOCTL_LAMP_GET_EMITTING_LIGHT control code queries if the lamp is turned on. |
 | [IOCTL_LAMP_GET_INTENSITY_COLOR IOCTL](ni-lamp-ioctl_lamp_get_intensity_color.md) | The IOCTL_LAMP_GET_INTENSITY_COLOR control code queries the light intensity when the lamp is configured to emit color light. |
+| [IOCTL_LAMP_GET_INTENSITY_WHITE IOCTL](ni-lamp-ioctl_lamp_get_intensity_white.md) | The IOCTL_LAMP_GET_INTENSITY_WHITE control code queries the light intensity when the lamp is configured to emit white light. |
 | [IOCTL_LAMP_GET_MODE IOCTL](ni-lamp-ioctl_lamp_get_mode.md) | The IOCTL_LAMP_GET_MODE control code queries the mode with which the lamp is currently configured. |
 | [IOCTL_LAMP_SET_EMITTING_LIGHT IOCTL](ni-lamp-ioctl_lamp_set_emitting_light.md) | The IOCTL_LAMP_SET_EMITTING_LIGHT control code turns the lamp on or off. |
 | [IOCTL_LAMP_SET_INTENSITY_COLOR IOCTL](ni-lamp-ioctl_lamp_set_intensity_color.md) | The IOCTL_LAMP_SET_INTENSITY_COLOR control code sets the lamp to the specified light intensity. |

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_MULTIPLANEOVERLAYCAPS
+UID: NS:d3dkmddi._DXGK_MULTIPLANEOVERLAYCAPS
 title: _DXGK_MULTIPLANEOVERLAYCAPS
 author: windows-driver-content
 description: Multiplane overlay capabilities returned by the DxgkDdiGetMultiPlaneOverlayCaps function.
@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplaneoverlaycaps.htm
 old-project: display
 ms.assetid: E3F590EA-2B3B-464B-9D72-708B24CA3052
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_MULTIPLANEOVERLAYCAPS, DXGK_MULTIPLANEOVERLAYCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_MULTIPLANEOVERLAYCAPS
 ---
 
 # _DXGK_MULTIPLANEOVERLAYCAPS structure

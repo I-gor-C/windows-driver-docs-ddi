@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWaveRTStream.GetPhysicalPagesCount
+UID: NF:portcls.IPortWaveRTStream.GetPhysicalPagesCount
 title: IPortWaveRTStream::GetPhysicalPagesCount method
 author: windows-driver-content
 description: The GetPhysicalPagesCount method returns the count of the physical pages in a memory descriptor list (MDL).
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWaveRTStream::GetPhysicalPagesCount method
@@ -38,7 +39,7 @@ req.irql: Passive level.
 
 
 ## -description
-The <code>GetPhysicalPagesCount</code> method returns the count of the physical pages in a memory descriptor list (<a href="kernel.mdl">MDL</a>).
+The <code>GetPhysicalPagesCount</code> method returns the count of the physical pages in a memory descriptor list (<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>).
 
 
 
@@ -118,13 +119,13 @@ Passive level.
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_allocatepagesformdl">IPortWaveRTStream::AllocatePagesForMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_allocatecontiguouspagesformdl">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536924">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_getphysicalpageaddress">IPortWaveRTStream::GetPhysicalPageAddress</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536928">IPortWaveRTStream::GetPhysicalPageAddress</a>
 </dt>
 </dl>
  

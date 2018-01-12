@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDDISK._DRIVE_LAYOUT_INFORMATION_MBR
+UID: NS:ntdddisk._DRIVE_LAYOUT_INFORMATION_MBR
 title: _DRIVE_LAYOUT_INFORMATION_MBR
 author: windows-driver-content
 description: The DRIVE_LAYOUT_INFORMATION_MBR structure reports the drive signature for a Master Boot Record partition.
@@ -7,8 +7,8 @@ old-location: storage\drive_layout_information_mbr.htm
 old-project: storage
 ms.assetid: 41df2847-7cfa-4746-82bd-d0b8b482a0d4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DRIVE_LAYOUT_INFORMATION_MBR, DRIVE_LAYOUT_INFORMATION_MBR, PDRIVE_LAYOUT_INFORMATION_MBR
+ms.date: 1/10/2018
+ms.keywords: _DRIVE_LAYOUT_INFORMATION_MBR, DRIVE_LAYOUT_INFORMATION_MBR, *PDRIVE_LAYOUT_INFORMATION_MBR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DRIVE_LAYOUT_INFORMATION_MBR, *PDRIVE_LAYOUT_INFORMATION_MBR
 ---
 
 # _DRIVE_LAYOUT_INFORMATION_MBR structure
@@ -59,7 +60,7 @@ Specifies the disk signature value, which uniquely identifies the disk.
 
 
 ## -remarks
-This structure contains the drive layout information that is specific to a drive with a Master Boot Record partition. It is contained within the <a href="storage.drive_layout_information_ex">DRIVE_LAYOUT_INFORMATION_EX</a> structure.
+This structure contains the drive layout information that is specific to a drive with a Master Boot Record partition. It is contained within the <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DRIVE_LAYOUT_INFORMATION_EX</a> structure.
 
 
 ## -requirements
@@ -80,18 +81,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.drive_layout_information_ex">DRIVE_LAYOUT_INFORMATION_EX</a>
+<a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DRIVE_LAYOUT_INFORMATION_EX</a>
 </dt>
 <dt>
-<a href="storage.ioreadpartitiontable">IoReadPartitionTable</a>
+<a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>
 </dt>
 <dt>
-<a href="storage.iowritepartitiontable">IoWritePartitionTable</a>
+<a href="..\ntddk\nf-ntddk-iowritepartitiontable.md">IoWritePartitionTable</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DRIVE_LAYOUT_INFORMATION_MBR structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DRIVE_LAYOUT_INFORMATION_MBR structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

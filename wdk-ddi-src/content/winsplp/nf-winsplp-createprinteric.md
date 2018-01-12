@@ -1,5 +1,5 @@
 ---
-UID: NF.winsplp.CreatePrinterIC
+UID: NF:winsplp.CreatePrinterIC
 title: CreatePrinterIC function
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\createprinteric.htm
 old-project: print
 ms.assetid: 87C99B3A-EF77-4D87-9953-BBE9628D2A3D
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: CreatePrinterIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: NOTIFICATION_CONFIG_FLAGS
 req.product: Windows 10 or later.
 ---
 

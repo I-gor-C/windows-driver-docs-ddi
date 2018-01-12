@@ -1,5 +1,5 @@
 ---
-UID: NS.NFCRADIODEV._NFCRM_RADIO_STATE
+UID: NS:nfcradiodev._NFCRM_RADIO_STATE
 title: _NFCRM_RADIO_STATE
 author: windows-driver-content
 description: This structure is used to indicate the radio state.
@@ -7,8 +7,8 @@ old-location: nfpdrivers\_nfcrm_radio_state_.htm
 old-project: nfpdrivers
 ms.assetid: 414486ED-464D-4CAF-95C2-9AC59D608816
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NFCRM_RADIO_STATE, *PNFCRM_RADIO_STATE, PNFCRM_RADIO_STATE, NFCRM_RADIO_STATE
+ms.date: 12/18/2017
+ms.keywords: _NFCRM_RADIO_STATE, *PNFCRM_RADIO_STATE, NFCRM_RADIO_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PNFCRM_RADIO_STATE, NFCRM_RADIO_STATE
 ---
 
 # _NFCRM_RADIO_STATE structure

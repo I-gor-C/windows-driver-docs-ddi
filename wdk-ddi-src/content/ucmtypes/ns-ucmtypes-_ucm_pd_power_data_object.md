@@ -1,14 +1,14 @@
 ---
-UID: NS.UCMTYPES._UCM_PD_POWER_DATA_OBJECT
+UID: NS:ucmtypes._UCM_PD_POWER_DATA_OBJECT
 title: _UCM_PD_POWER_DATA_OBJECT
 author: windows-driver-content
 description: Describes a Power Data Object. For information about these members, see the Power Delivery specification.
 old-location: buses\ucm_pd_power_data_object.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: C54750A9-EE64-4FE7-9ED6-EC9709A82C43
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT
+ms.date: 1/4/2018
+ms.keywords: _UCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT
 req.product: Windows 10 or later.
 ---
 

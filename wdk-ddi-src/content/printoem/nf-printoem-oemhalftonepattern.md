@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMHalftonePattern
+UID: NF:printoem.OEMHalftonePattern
 title: OEMHalftonePattern function
 author: windows-driver-content
 description: OEMHalftonePattern function
@@ -7,7 +7,7 @@ old-location: print\oemhalftonepattern.htm
 old-project: print
 ms.assetid: c574d997-736e-4883-a2c3-447985fcee55
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMHalftonePattern
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

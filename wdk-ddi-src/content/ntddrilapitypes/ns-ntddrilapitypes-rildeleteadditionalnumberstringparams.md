@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILDELETEADDITIONALNUMBERSTRINGPARAMS
+UID: NS:ntddrilapitypes.RILDELETEADDITIONALNUMBERSTRINGPARAMS
 title: RILDELETEADDITIONALNUMBERSTRINGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildeleteadditionalnumberstringparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 89ae70b9-56d9-4169-8bbd-0eb2d916a928
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILDELETEADDITIONALNUMBERSTRINGPARAMS, LPRILDELETEADDITIONALNUMBERSTRINGPARAMS, *LPRILDELETEADDITIONALNUMBERSTRINGPARAMS, RILDELETEADDITIONALNUMBERSTRINGPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILDELETEADDITIONALNUMBERSTRINGPARAMS, RILDELETEADDITIONALNUMBERSTRINGPARAMS, *LPRILDELETEADDITIONALNUMBERSTRINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILDELETEADDITIONALNUMBERSTRINGPARAMS, *LPRILDELETEADDITIONALNUMBERSTRINGPARAMS
 ---
 
 # RILDELETEADDITIONALNUMBERSTRINGPARAMS structure

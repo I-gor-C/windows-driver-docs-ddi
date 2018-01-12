@@ -1,13 +1,13 @@
 ---
-UID: NE.fwpsk.FWPS_FIELDS_IKEEXT_V6_
+UID: NE:fwpsk.FWPS_FIELDS_IKEEXT_V6_
 title: FWPS_FIELDS_IKEEXT_V6_
 author: windows-driver-content
 description: The FWPS_FIELDS_IKEEXT_V6 enumeration type specifies the data field identifiers for the FWPS_LAYER_IKEEXT_V6 run-time filtering layer.
 old-location: netvista\fwps_fields_ikeext_v6.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1e355322-23ae-4cc6-af2f-5852515c8056
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FWPS_FIELDS_IKEEXT_V6_, FWPS_FIELDS_IKEEXT_V6
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_FIELDS_IKEEXT_V6
 ---
 
 # FWPS_FIELDS_IKEEXT_V6_ enumeration
@@ -73,7 +74,7 @@ The remote IP address.
 
 ### -field FWPS_FIELD_IKEEXT_V6_IP_LOCAL_INTERFACE
 
-The locally unique identifier (<a href="netvista.luid">LUID</a>) for the network interface associated with the
+The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
      local IP address.
 
 

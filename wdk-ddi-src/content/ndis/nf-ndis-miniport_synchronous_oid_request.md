@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.MINIPORT_SYNCHRONOUS_OID_REQUEST
+UID: NF:ndis.MINIPORT_SYNCHRONOUS_OID_REQUEST
 title: MINIPORT_SYNCHRONOUS_OID_REQUEST function
 author: windows-driver-content
 description: NDIS calls a miniport driver's MiniportSynchronousOidRequest callback function to issue a Synchronous OID request.
 old-location: netvista\miniport_synchronous_oid_request.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0DDF9CF8-91F6-4D7C-A8E8-FC425BF155CB
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: MINIPORT_SYNCHRONOUS_OID_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # MINIPORT_SYNCHRONOUS_OID_REQUEST function
@@ -64,7 +65,7 @@ A handle to a context area that the miniport driver allocated in its
 ### -param OidRequest [in]
 
 A pointer to an 
-     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure that contains
+     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure that contains
      both the buffer and the request packet for the miniport driver to handle. Depending on the request, the
      driver returns requested information in the structure that is provided.
 
@@ -101,8 +102,8 @@ A pointer to an
        miniport driver cannot return NDIS_STATUS_INDICATION_REQUIRED unless the particular OID allows it. To
        determine if this status is allowed, see the OID reference page. For more information about
        NDIS_STATUS_INDICATION_REQUIRED, see 
-       <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> and 
-       <a href="netvista.ndis_status_indication">NDIS_STATUS_INDICATION</a>.
+       <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> and 
+       <a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>.
 <dl>
 <dt><b>NDIS_STATUS_NOT_ACCEPTED</b></dt>
 </dl>After calling the 
@@ -119,7 +120,7 @@ Miniport drivers are not always required to return NDIS_STATUS_NOT_ACCEPTED for 
 
 
 ## -remarks
-<i>MiniportSynchronousOidRequest</i> is an optional function. A miniport driver registers this function if it handles Synchronous OID requests. The driver specifies the <i>MiniportSynchronousOidRequest</i> entry point when it calls the <a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a> function, using the <b>SynchronousOidRequestHandler</b> member of the <a href="netvista.ndis_miniport_driver_characteristics">NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a> structure.
+<i>MiniportSynchronousOidRequest</i> is an optional function. A miniport driver registers this function if it handles Synchronous OID requests. The driver specifies the <i>MiniportSynchronousOidRequest</i> entry point when it calls the <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a> function, using the <b>SynchronousOidRequestHandler</b> member of the <a href="..\ndis\ns-ndis-_ndis_miniport_driver_characteristics.md">NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a> structure.
 
 
 Miniport drivers must not return NDIS_STATUS_PENDING or NDIS_STATUS_REQUEST_ABORTED from MiniportSynchronousOidRequest. Synchronous OID requests cannot be pended or cancelled.
@@ -176,7 +177,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
@@ -198,21 +199,21 @@ IRQL
        MiniportDevicePnPEventNotify</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_driver_characteristics">NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a>
+<a href="..\ndis\ns-ndis-_ndis_miniport_driver_characteristics.md">NDIS_MINIPORT_DRIVER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="netvista.ndis_status_indication">NDIS_STATUS_INDICATION</a>
+<a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
 </dt>
 <dt>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID Request Interface in NDIS 6.80</a>
+<a href="https://msdn.microsoft.com/6BF2E800-90A0-48FC-B702-5AD4EC318A35">Synchronous OID Request Interface in NDIS 6.80</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_SYNCHRONOUS_OID_REQUEST function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_SYNCHRONOUS_OID_REQUEST function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.bthhfpddi.IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR
+UID: NI:bthhfpddi.IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR
 title: IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR
 author: windows-driver-content
 description: The audio driver issues the IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR control code to get information about an enabled GUID_DEVINTERFACE_BLUETOOTH_HFP_SCO_HCIBYPASS device interface.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION
 ---
 
 # IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR IOCTL
@@ -54,7 +55,7 @@ None.
 
 
 ### -output-buffer
-A buffer containing a <a href="audio.bthhfp_descriptor">BTHHFP_DESCRIPTOR</a> structure followed by any other data referenced by the structure. This is true, if the output buffer size is sufficient and the request succeeds. In particular, the buffer includes storage for the string referenced by the <i>FriendlyName</i> field of the <b>BTHHFP_DESCRIPTOR</b> structure.
+A buffer containing a <a href="..\bthhfpddi\ns-bthhfpddi-_bthhfp_descriptor.md">BTHHFP_DESCRIPTOR</a> structure followed by any other data referenced by the structure. This is true, if the output buffer size is sufficient and the request succeeds. In particular, the buffer includes storage for the string referenced by the <i>FriendlyName</i> field of the <b>BTHHFP_DESCRIPTOR</b> structure.
 
 
 ### -output-buffer-length
@@ -120,7 +121,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.bluetooth_hfp_ddi_ioctls">Bluetooth HFP DDI IOCTLs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
 </dt>
 <dt>
 <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_containerid.md">IOCTL_BTHHFP_DEVICE_GET_CONTAINERID</a>

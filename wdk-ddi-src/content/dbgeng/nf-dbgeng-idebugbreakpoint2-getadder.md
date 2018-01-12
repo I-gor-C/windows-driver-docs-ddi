@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.GetAdder
+UID: NF:dbgeng.IDebugBreakpoint2.GetAdder
 title: IDebugBreakpoint2::GetAdder method
 author: windows-driver-content
 description: The GetAdder method returns the client that owns the breakpoint.
 old-location: debugger\getadder.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f57abfc5-d6ae-474b-bea9-bfc53dff7f57
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::GetAdder, GetAdder
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::GetAdder method
@@ -69,7 +70,7 @@ This method can also return error values.  For more information, see <a href="ht
 
 
 ## -remarks
-The client that owns the breakpoint is the client that created the breakpoint by using the <a href="debugger.addbreakpoint">AddBreakpoint</a> method.  A breakpoint might not have an owner. If a breakpoint does not have an owner, <i>Adder</i> is set to <b>NULL</b>.
+The client that owns the breakpoint is the client that created the breakpoint by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537856">AddBreakpoint</a> method.  A breakpoint might not have an owner. If a breakpoint does not have an owner, <i>Adder</i> is set to <b>NULL</b>.
 
 For more information about how to use breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.
 

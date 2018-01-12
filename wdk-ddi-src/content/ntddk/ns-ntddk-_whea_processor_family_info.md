@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_PROCESSOR_FAMILY_INFO
+UID: NS:ntddk._WHEA_PROCESSOR_FAMILY_INFO
 title: _WHEA_PROCESSOR_FAMILY_INFO
 author: windows-driver-content
 description: The WHEA_PROCESSOR_FAMILY_INFO union describes the processor family information for an x86 or x64 processor.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: cc20c2d6-c76b-4f72-9762-23b9aa5fe946
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_PROCESSOR_FAMILY_INFO, WHEA_PROCESSOR_FAMILY_INFO, PWHEA_PROCESSOR_FAMILY_INFO, *PWHEA_PROCESSOR_FAMILY_INFO
+ms.keywords: _WHEA_PROCESSOR_FAMILY_INFO, WHEA_PROCESSOR_FAMILY_INFO, *PWHEA_PROCESSOR_FAMILY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_PROCESSOR_FAMILY_INFO, *PWHEA_PROCESSOR_FAMILY_INFO
 ---
 
 # _WHEA_PROCESSOR_FAMILY_INFO structure
@@ -115,7 +116,7 @@ A ULONGLONG representation of the contents of the WHEA_PROCESSOR_FAMILY_INFO uni
 
 
 ## -remarks
-For x86 and x64 processors, the <b>CPUVersion</b> member of the <a href="whea.whea_processor_generic_error_section">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure contains a WHEA_PROCESSOR_FAMILY_INFO union.
+For x86 and x64 processors, the <b>CPUVersion</b> member of the <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure contains a WHEA_PROCESSOR_FAMILY_INFO union.
 
 The contents of this union are obtained by executing the CPUID instruction with the EAX register set to 1 on input. For more information about the CPUID instruction, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=78804">Intel 64 and IA-32 Architectures Software Developer's Manual</a>. For additional information about the data that is contained in the members of this union, see <a href="http://go.microsoft.com/fwlink/p/?linkid=80097">AP-485 Intel Processor Identification and the CPUID Instruction</a>.
 
@@ -149,7 +150,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_processor_generic_error_section">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>
 </dt>
 </dl>
  

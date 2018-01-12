@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportMidiStream.Write
+UID: NF:portcls.IMiniportMidiStream.Write
 title: IMiniportMidiStream::Write method
 author: windows-driver-content
 description: The Write method writes data to an outgoing MIDI stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportMidiStream::Write method
@@ -134,7 +135,7 @@ DISPATCH_LEVEL
 <a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>
 </dt>
 <dt>
-<a href="audio.iminiportmidistream_read">IMiniportMidiStream::Read</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536705">IMiniportMidiStream::Read</a>
 </dt>
 </dl>
  

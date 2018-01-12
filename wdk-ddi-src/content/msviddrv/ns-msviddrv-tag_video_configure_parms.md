@@ -1,5 +1,5 @@
 ---
-UID: NS.MSVIDDRV.TAG_VIDEO_CONFIGURE_PARMS
+UID: NS:msviddrv.tag_video_configure_parms
 title: tag_video_configure_parms
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\videoconfigparms.htm
 old-project: stream
 ms.assetid: 58FE3B56-AFC6-46DE-BBE1-CCFA8FF1390A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tag_video_configure_parms, *LPVIDEOCONFIGPARMS, VIDEOCONFIGPARMS, LPVIDEOCONFIGPARMS
+ms.date: 1/9/2018
+ms.keywords: tag_video_configure_parms, *LPVIDEOCONFIGPARMS, VIDEOCONFIGPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: *LPVIDEOCONFIGPARMS, VIDEOCONFIGPARMS
 ---
 
 # tag_video_configure_parms structure

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlExtendCorrelationVector
+UID: NF:ntddk.RtlExtendCorrelationVector
 title: RtlExtendCorrelationVector function
 author: windows-driver-content
 description: This routine extends the supplied correlation vector. For a correlation vector of the form X.i, the extended value is X.i.0.
@@ -7,7 +7,7 @@ old-location: kernel\rtlextendcorrelationvector.htm
 old-project: kernel
 ms.assetid: 26de5890-edef-4e38-834a-9823327a74c2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlExtendCorrelationVector
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe (kernel mode)
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlExtendCorrelationVector function

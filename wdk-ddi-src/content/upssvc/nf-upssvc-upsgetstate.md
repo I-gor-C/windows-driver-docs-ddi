@@ -1,5 +1,5 @@
 ---
-UID: NF.upssvc.UPSGetState
+UID: NF:upssvc.UPSGetState
 title: UPSGetState function
 author: windows-driver-content
 description: The UPSGetState function returns the operational state of the UPS.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UMDETW_ALLOCATION_USAGE
 req.product: Windows 10 or later.
 ---
 

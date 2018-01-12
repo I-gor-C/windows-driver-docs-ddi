@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlUInt8Add
+UID: NF:ntintsafe.RtlUInt8Add
 title: RtlUInt8Add function
 author: windows-driver-content
 description: Adds two values of type UINT8.
@@ -7,7 +7,7 @@ old-location: kernel\rtluint8add.htm
 old-project: kernel
 ms.assetid: E93C8C7A-13E5-4089-931C-C56055FA3C90
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlUInt8Add
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlUInt8Add function

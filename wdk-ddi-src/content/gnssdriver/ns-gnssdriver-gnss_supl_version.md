@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_SUPL_VERSION
+UID: NS:gnssdriver.GNSS_SUPL_VERSION
 title: GNSS_SUPL_VERSION
 author: windows-driver-content
 description: This structure contains SUPL version information.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: D004DAEF-F25F-442D-9A6D-91FB8A18E0DB
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_SUPL_VERSION, GNSS_SUPL_VERSION, *PGNSS_SUPL_VERSION, PGNSS_SUPL_VERSION
+ms.keywords: GNSS_SUPL_VERSION, *PGNSS_SUPL_VERSION, GNSS_SUPL_VERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_SUPL_VERSION, GNSS_SUPL_VERSION
 ---
 
 # GNSS_SUPL_VERSION structure

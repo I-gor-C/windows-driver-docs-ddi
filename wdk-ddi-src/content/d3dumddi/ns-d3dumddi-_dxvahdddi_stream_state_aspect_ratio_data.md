@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
+UID: NS:d3dumddi._DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
 title: _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
 author: windows-driver-content
 description: The DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure describes stream-state data that specifies the pixel aspect ratio.
@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_stream_state_aspect_ratio_data.htm
 old-project: display
 ms.assetid: 12d33e2d-63d3-4cc8-9b50-5156132b2e72
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
 ---
 
 # _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure
@@ -62,12 +63,12 @@ typedef struct _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA {
 
 ### -field SourceAspectRatio
 
-[in] A <a href="display.dxvahdddi_rational">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the source. The default is (1, 1). 
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the source. The default is (1, 1). 
 
 
 ### -field DestinationAspectRatio
 
-[in] A <a href="display.dxvahdddi_rational">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the destination. The default is (1, 1). 
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the destination. The default is (1, 1). 
 
 
 ## -remarks
@@ -106,12 +107,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxvahdddi_rational">DXVAHDDDI_RATIONAL</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_rational.md">DXVAHDDDI_RATIONAL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

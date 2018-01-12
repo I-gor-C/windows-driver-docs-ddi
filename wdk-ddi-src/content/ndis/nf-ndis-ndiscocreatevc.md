@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCoCreateVc
+UID: NF:ndis.NdisCoCreateVc
 title: NdisCoCreateVc function
 author: windows-driver-content
 description: NdisCoCreateVc sets up a connection endpoint from which a client can make outgoing calls or on which a stand-alone call manager can dispatch incoming calls.
 old-location: netvista\ndiscocreatevc.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ae9175e5-c1fc-44ae-a7c9-921ac8483e33
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisCoCreateVc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCoCreateVc function
@@ -60,14 +61,14 @@ NDIS_STATUS NdisCoCreateVc(
 ### -param NdisBindingHandle [in]
 
 Specifies the handle returned by 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> that identifies the
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> that identifies the
      target NIC or virtual adapter of the next-lower driver to which the caller is bound.
 
 
 ### -param NdisAfHandle [in, optional]
 
 Specifies the handle returned by 
-     <a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a> if
+     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a> if
      the caller is a client. A call manager sets this parameter to <b>NULL</b> if it is creating a VC for itself,
      such as a VC to a network switch. When it creates a VC for incoming call notifications, a call manager
      passes the AF handle that it saved in its per-AF state designated by the 
@@ -141,7 +142,7 @@ To make an outgoing call, a client must call
     <b>NdisCoCreateVc</b> returns control. If its call to 
     <b>NdisCoCreateVc</b> succeeds, the client can proceed in making an outgoing call, passing the returned 
     <i>NdisVcHandle</i> to 
-    <a href="netvista.ndisclmakecall">NdisClMakeCall</a>.
+    <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>.
 
 When its 
     <a href="..\ndis\nc-ndis-protocol_co_receive_net_buffer_lists.md">
@@ -154,13 +155,13 @@ When its
     <b>NdisCoCreateVc</b> succeeds, the call manager can proceed in notifying the appropriate client, passing
     the returned value at 
     <i>NdisVcHandle</i> to 
-    <a href="netvista.ndiscmdispatchincomingcall">
+    <a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">
     NdisCmDispatchIncomingCall</a>.
 
 Stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
     <b>NdisCoCreateVc</b>. Connection-oriented miniport drivers that provide integrated call-management
     support call 
-    <a href="netvista.ndismcmcreatevc">NdisMCmCreateVc</a>, instead.
+    <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>, instead.
 
 
 ## -requirements
@@ -228,7 +229,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_connection_function">Irql_Connection_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547924">Irql_Connection_Function</a>
 </td>
 </tr>
 </table>
@@ -239,20 +240,20 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatefromnpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
    NdisAllocateFromNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdispatchincomingcall">NdisCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcall.md">NdisCmDispatchIncomingCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscodeletevc">NdisCoDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmcreatevc">NdisMCmCreateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a>
@@ -269,5 +270,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCoCreateVc function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoCreateVc function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinGenerateEvents
+UID: NF:ks.KsPinGenerateEvents
 title: KsPinGenerateEvents function
 author: windows-driver-content
 description: The KsPinGenerateEvents function generates events of an indicated type that are present in Pin's event list.
@@ -7,7 +7,7 @@ old-location: stream\kspingenerateevents.htm
 old-project: stream
 ms.assetid: c2137849-aff0-4bf7-abab-b92e17aaef70
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinGenerateEvents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL (See Remarks)
+req.typenames: 
 ---
 
 # KsPinGenerateEvents function
@@ -61,7 +62,7 @@ void _inline KsPinGenerateEvents(
 
 ### -param Pin [in]
 
-A pointer to the <a href="stream.kspin">KSPIN</a> structure on which to generate events. 
+A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure on which to generate events. 
 
 
 ### -param EventSet [in, optional]
@@ -115,7 +116,7 @@ None
 ## -remarks
 When calling this function, a minidriver must place <i>Data</i> and <i>CallBackContext</i> in a locked, nonpageable data segment. The <i>CallBack</i> is made at DISPATCH_LEVEL. The callback function must be in a locked segment and must be prepared to run at IRQL = DISPATCH_LEVEL. Note that there is an additional issue in DX8 <i>only</i>: <i>EventSet</i> must be in a locked data segment.
 
-This is an inline function call to <a href="stream.ksgenerateevents">KsGenerateEvents</a>, which performs the necessary typecasting. Minidrivers should usually call this version instead of directly calling <b>KsGenerateEvents</b>.
+This is an inline function call to <a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>, which performs the necessary typecasting. Minidrivers should usually call this version instead of directly calling <b>KsGenerateEvents</b>.
 
 An event is generated if the following three conditions hold:
 
@@ -188,21 +189,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksaddevent">KsAddEvent</a>
+<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
 </dt>
 <dt>
-<a href="stream.ksgenerateevents">KsGenerateEvents</a>
+<a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
 </dt>
 <dt>
-<a href="stream.ksfiltergenerateevents">KsFilterGenerateEvents</a>
+<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
 </dt>
 <dt>
-<a href="stream.ksevent_entry">KSEVENT_ENTRY</a>
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGenerateEvents function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGenerateEvents function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

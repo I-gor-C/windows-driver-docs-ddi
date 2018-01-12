@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_SET_QUEUE_SIZE
+UID: NI:ntddser.IOCTL_SERIAL_SET_QUEUE_SIZE
 title: IOCTL_SERIAL_SET_QUEUE_SIZE
 author: windows-driver-content
 description: The IOCTL_SERIAL_SET_QUEUE_SIZE request sets the size of the internal receive buffer. If the requested size is greater than the current receive buffer size, a new receive buffer is created. Otherwise, the receive buffer is not changed.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_QUEUE_SIZE IOCTL
@@ -45,7 +46,7 @@ The <b>IOCTL_SERIAL_SET_QUEUE_SIZE</b> request sets the size of the internal rec
 ## -ioctlparameters
 
 ### -input-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a client-allocated <a href="serports.serial_queue_size">SERIAL_QUEUE_SIZE</a> structure that is used to input a receive buffer size.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a client-allocated <a href="..\ntddser\ns-ntddser-_serial_queue_size.md">SERIAL_QUEUE_SIZE</a> structure that is used to input a receive buffer size.
 
 
 ### -input-buffer-length
@@ -96,7 +97,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="serports.serial_queue_size">SERIAL_QUEUE_SIZE</a>
+<a href="..\ntddser\ns-ntddser-_serial_queue_size.md">SERIAL_QUEUE_SIZE</a>
 </dt>
 </dl>
  

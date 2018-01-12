@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetImplicitProcessDataOffset
+UID: NF:dbgeng.IDebugSystemObjects4.GetImplicitProcessDataOffset
 title: IDebugSystemObjects4::GetImplicitProcessDataOffset method
 author: windows-driver-content
 description: The GetImplicitProcessDataOffset method returns the implicit process for the current target.
 old-location: debugger\getimplicitprocessdataoffset.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 20a11f3b-cc49-4080-ac4c-b8e18d4b2f73
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetImplicitProcessDataOffset, GetImplicitProcessDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetImplicitProcessDataOffset method

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetNumberProcesses
+UID: NF:dbgeng.IDebugSystemObjects4.GetNumberProcesses
 title: IDebugSystemObjects4::GetNumberProcesses method
 author: windows-driver-content
 description: The GetNumberProcesses method returns the number of processes for the current target.
 old-location: debugger\getnumberprocesses.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: bf0c750f-0e29-42d9-a127-953e3d49b969
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetNumberProcesses, GetNumberProcesses
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetNumberProcesses method

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILMSGOUTSUBMIT
+UID: NS:ntddrilapitypes.RILMSGOUTSUBMIT
 title: RILMSGOUTSUBMIT
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgoutsubmit.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 83d15e40-b93f-4c7a-bfe4-db939c24b94f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILMSGOUTSUBMIT, LPRILMSGOUTSUBMIT, *LPRILMSGOUTSUBMIT, RILMSGOUTSUBMIT
+ms.date: 1/8/2018
+ms.keywords: RILMSGOUTSUBMIT, RILMSGOUTSUBMIT, *LPRILMSGOUTSUBMIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGOUTSUBMIT, *LPRILMSGOUTSUBMIT
 ---
 
 # RILMSGOUTSUBMIT structure

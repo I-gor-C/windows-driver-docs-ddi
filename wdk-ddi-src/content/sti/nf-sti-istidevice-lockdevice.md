@@ -1,13 +1,13 @@
 ---
-UID: NF.sti.IStiDevice.LockDevice
+UID: NF:sti.IStiDevice.LockDevice
 title: IStiDevice::LockDevice method
 author: windows-driver-content
 description: The IStiDevice::LockDevice method locks a device for exclusive use by the caller.
 old-location: image\istidevice_lockdevice.htm
-old-project: Image
+old-project: image
 ms.assetid: 208d9dc3-736b-4684-b8d3-802f6df78142
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IStiDevice, IStiDevice::LockDevice, LockDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STI_DEVICE_MJ_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -67,42 +68,42 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 Clients of the <b>IStiDevice</b> COM interface must call <b>IStiDevice::LockDevice</b> before calling the following methods:
 
 
-<a href="image.istidevice_devicereset">IStiDevice::DeviceReset</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543733">IStiDevice::DeviceReset</a>
 
 
 
-<a href="image.istidevice_diagnostic">IStiDevice::Diagnostic</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543736">IStiDevice::Diagnostic</a>
 
 
 
-<a href="image.istidevice_escape">IStiDevice::Escape</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543740">IStiDevice::Escape</a>
 
 
 
-<a href="image.istidevice_getstatus">IStiDevice::GetStatus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543752">IStiDevice::GetStatus</a>
 
 
 
-<a href="image.istidevice_rawreadcommand">IStiDevice::RawReadCommand</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543758">IStiDevice::RawReadCommand</a>
 
 
 
-<a href="image.istidevice_rawreaddata">IStiDevice::RawReadData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543760">IStiDevice::RawReadData</a>
 
 
 
-<a href="image.istidevice_rawwritecommand">IStiDevice::RawWriteCommand</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543762">IStiDevice::RawWriteCommand</a>
 
 
 
-<a href="image.istidevice_rawwritedata">IStiDevice::RawWriteData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543764">IStiDevice::RawWriteData</a>
 
 
-If the <b>IStiDevice::LockDevice</b> method is able to obtain an <b>IStiDevice</b>-level lock on the device within the specified time-out period, it then calls <a href="image.istiusd_lockdevice">IStiUSD::LockDevice</a> in the appropriate vendor-supplied minidriver.
+If the <b>IStiDevice::LockDevice</b> method is able to obtain an <b>IStiDevice</b>-level lock on the device within the specified time-out period, it then calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff543829">IStiUSD::LockDevice</a> in the appropriate vendor-supplied minidriver.
 
-Each call to <b>IStiDevice::LockDevice</b> must be paired with a call to <a href="image.istidevice_unlockdevice">IStiDevice::UnLockDevice</a>.
+Each call to <b>IStiDevice::LockDevice</b> must be paired with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543770">IStiDevice::UnLockDevice</a>.
 
-Before calling <b>IStiDevice::LockDevice</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.
+Before calling <b>IStiDevice::LockDevice</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.
 
 
 ## -requirements

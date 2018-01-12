@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMTTYGetInfo
+UID: NF:printoem.OEMTTYGetInfo
 title: OEMTTYGetInfo function
 author: windows-driver-content
 description: OEMTTYGetInfo function
@@ -7,7 +7,7 @@ old-location: print\oemttygetinfo.htm
 old-project: print
 ms.assetid: 9b6fcd4e-6472-4e46-b0b7-dd1279e534d0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMTTYGetInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

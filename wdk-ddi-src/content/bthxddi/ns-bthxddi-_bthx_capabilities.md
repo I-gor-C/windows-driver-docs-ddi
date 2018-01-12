@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHXDDI._BTHX_CAPABILITIES
+UID: NS:bthxddi._BTHX_CAPABILITIES
 title: _BTHX_CAPABILITIES
 author: windows-driver-content
 description: The BTHX_CAPABILITIES structure describes the capabilities of the Bluetooth Extensible Transport Driver.
@@ -7,8 +7,8 @@ old-location: bltooth\bthx_capabilities.htm
 old-project: bltooth
 ms.assetid: BEC06C82-E103-4255-ACDD-9FB28E8E2DE5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BTHX_CAPABILITIES, PBTHX_CAPABILITIES, BTHX_CAPABILITIES, *PBTHX_CAPABILITIES
+ms.date: 12/21/2017
+ms.keywords: _BTHX_CAPABILITIES, *PBTHX_CAPABILITIES, BTHX_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PBTHX_CAPABILITIES, BTHX_CAPABILITIES
 ---
 
 # _BTHX_CAPABILITIES structure

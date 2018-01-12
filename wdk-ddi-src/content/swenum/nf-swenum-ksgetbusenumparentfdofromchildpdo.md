@@ -1,5 +1,5 @@
 ---
-UID: NF.swenum.KsGetBusEnumParentFDOFromChildPDO
+UID: NF:swenum.KsGetBusEnumParentFDOFromChildPDO
 title: KsGetBusEnumParentFDOFromChildPDO function
 author: windows-driver-content
 description: The KsGetBusEnumParentFDOFromChildPDO function retrieves the FDO of the parent of the given child PDO.
@@ -7,7 +7,7 @@ old-location: stream\ksgetbusenumparentfdofromchildpdo.htm
 old-project: stream
 ms.assetid: 5d860c5c-e29e-4ea2-b6f7-bcaab0d4584d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGetBusEnumParentFDOFromChildPDO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
 req.product: Windows 10 or later.
 ---
 

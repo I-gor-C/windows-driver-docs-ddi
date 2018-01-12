@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_SCALING
+UID: NE:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_SCALING
 title: _D3DKMDT_VIDPN_PRESENT_PATH_SCALING
 author: windows-driver-content
 description: The D3DKMDT_VIDPN_PRESENT_PATH_SCALING enumeration is used to indicate the scaling transformation applied to content displayed on a VidPN present path.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_present_path_scaling.htm
 old-project: display
 ms.assetid: 4453534e-ce2b-4b0d-a93d-3d17185083fd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_VIDPN_PRESENT_PATH_SCALING, D3DKMDT_VIDPN_PRESENT_PATH_SCALING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3DKMDT_VIDPN_PRESENT_PATH_SCALING
 ---
 
 # _D3DKMDT_VIDPN_PRESENT_PATH_SCALING enumeration
@@ -113,7 +114,7 @@ Indicates that no transformation has been specified. See further information in 
 
 
 ## -remarks
-The <b>Scaling</b> member of the <a href="display.d3dkmdt_vidpn_present_path_transformation">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_SCALING enumeration.
+The <b>Scaling</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_SCALING enumeration.
 
 If D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX or D3DKMDT_VPPS_CUSTOM values are specified but the path is on a display miniport driver that does not support these values (which are available beginning with Windows 7), the driver's calls to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a> should return STATUS_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED, and the operating system will apply the system default scaling. If a driver cannot support the requested scaling value on the specified path, its calls to <b>DxgkDdiCommitVidPn</b> should return STATUS_GRAPHICS_VIDPN_MODALITY_NOT_SUPPORTED.
 
@@ -149,12 +150,12 @@ Header
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a>
 </dt>
 <dt>
-<a href="display.d3dkmdt_vidpn_present_path_scaling_support">D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_scaling_support.md">D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDPN_PRESENT_PATH_SCALING enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_VIDPN_PRESENT_PATH_SCALING enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

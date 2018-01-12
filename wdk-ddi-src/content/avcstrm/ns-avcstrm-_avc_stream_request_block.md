@@ -1,5 +1,5 @@
 ---
-UID: NS.AVCSTRM._AVC_STREAM_REQUEST_BLOCK
+UID: NS:avcstrm._AVC_STREAM_REQUEST_BLOCK
 title: _AVC_STREAM_REQUEST_BLOCK
 author: windows-driver-content
 description: The AVC_STREAM_REQUEST_BLOCK structure describes an AV/C streaming request to be processed by avcstrm.sys.
@@ -7,8 +7,8 @@ old-location: stream\avc_stream_request_block.htm
 old-project: stream
 ms.assetid: 077fc4ab-94a0-42eb-a0c5-684e447cb038
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _AVC_STREAM_REQUEST_BLOCK, *PAVC_STREAM_REQUEST_BLOCK, PAVC_STREAM_REQUEST_BLOCK, AVC_STREAM_REQUEST_BLOCK
+ms.date: 1/9/2018
+ms.keywords: _AVC_STREAM_REQUEST_BLOCK, *PAVC_STREAM_REQUEST_BLOCK, AVC_STREAM_REQUEST_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PAVC_STREAM_REQUEST_BLOCK, AVC_STREAM_REQUEST_BLOCK
 ---
 
 # _AVC_STREAM_REQUEST_BLOCK structure
@@ -66,17 +67,17 @@ typedef struct _AVC_STREAM_REQUEST_BLOCK {
 
 ### -field SizeOfThisBlock
 
-Specifies the size of the request block in bytes. Do not set this value directly. Instead, use the <a href="stream.init_avcstrm_header">INIT_AVCSTRM_HEADER</a> macro.
+Specifies the size of the request block in bytes. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
 
 
 ### -field Version
 
-Specifies the version of <i>avcstrm.sys</i> device driver interface (DDI) to service a request. Do not set this value directly. Instead, use the <a href="stream.init_avcstrm_header">INIT_AVCSTRM_HEADER</a> macro.
+Specifies the version of <i>avcstrm.sys</i> device driver interface (DDI) to service a request. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
 
 
 ### -field Function
 
-Indicates the request (function code) <i>avcstrm.sys</i> services. This must be a value from the <a href="stream.avcstrm_function">AVCSTRM_FUNCTION</a> enumeration. Do not set this value directly. Instead, use the <a href="stream.init_avcstrm_header">INIT_AVCSTRM_HEADER</a> macro.
+Indicates the request (function code) <i>avcstrm.sys</i> services. This must be a value from the <a href="..\avcstrm\ne-avcstrm-_avcstrm_function.md">AVCSTRM_FUNCTION</a> enumeration. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
 
 
 ### -field Flags
@@ -188,16 +189,16 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.avcstrm_function">AVCSTRM_FUNCTION</a>
+<a href="..\avcstrm\ne-avcstrm-_avcstrm_function.md">AVCSTRM_FUNCTION</a>
 </dt>
 <dt>
-<a href="stream.ksstate">KSSTATE</a>
+<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
 </dt>
 <dt>
-<a href="stream.avcstrm_open_struct">AVCSTRM_OPEN_STRUCT</a>
+<a href="..\avcstrm\ns-avcstrm-_avcstrm_open_struct.md">AVCSTRM_OPEN_STRUCT</a>
 </dt>
 <dt>
-<a href="stream.avcstrm_buffer_struct">AVCSTRM_BUFFER_STRUCT</a>
+<a href="..\avcstrm\ns-avcstrm-_avcstrm_buffer_struct.md">AVCSTRM_BUFFER_STRUCT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554130">AVCSTRM_READ</a>
@@ -231,5 +232,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_STREAM_REQUEST_BLOCK structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_STREAM_REQUEST_BLOCK structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.UCMMANAGER._UCM_CONNECTOR_CONFIG
+UID: NS:ucmmanager._UCM_CONNECTOR_CONFIG
 title: _UCM_CONNECTOR_CONFIG
 author: windows-driver-content
 description: Describes the configuration options for a Type-C connector object. An initialized UCM_MANAGER_CONFIG structure is an input parameter value to UcmInitializeDevice.
 old-location: buses\ucm_connector_config.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 8FE8B7E2-1CC0-4540-86D5-A09BA249D62A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UCM_CONNECTOR_CONFIG, UCM_CONNECTOR_CONFIG, *PUCM_CONNECTOR_CONFIG, PUCM_CONNECTOR_CONFIG
+ms.date: 1/4/2018
+ms.keywords: _UCM_CONNECTOR_CONFIG, UCM_CONNECTOR_CONFIG, *PUCM_CONNECTOR_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UCM_CONNECTOR_CONFIG, *PUCM_CONNECTOR_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Describes the configuration options for a Type-C connector object. An initialized <a href="buses.ucm_manager_config">UCM_MANAGER_CONFIG</a> structure is an input parameter value to   <a href="buses.ucminitializedevice">UcmInitializeDevice</a>.
+Describes the configuration options for a Type-C connector object. An initialized <a href="..\ucmmanager\ns-ucmmanager-_ucm_manager_config.md">UCM_MANAGER_CONFIG</a> structure is an input parameter value to   <a href="..\ucmmanager\nf-ucmmanager-ucminitializedevice.md">UcmInitializeDevice</a>.
 
 
 
@@ -69,16 +70,16 @@ Connector identifier.
 
 ### -field TypeCConfig
 
-A pointer to an initialized <a href="buses.ucm_connector_type_c_config">UCM_CONNECTOR_TYPEC_CONFIG</a> structure that contains the configuration options for the connector. 
+A pointer to an initialized <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_config.md">UCM_CONNECTOR_TYPEC_CONFIG</a> structure that contains the configuration options for the connector. 
 
 
 ### -field PDConfig
 
-A pointer to an initialized <a href="buses.ucm_connector_pd_config">UCM_CONNECTOR_PD_CONFIG</a> structure that contains the power roles supported by the connector. 
+A pointer to an initialized <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_pd_config.md">UCM_CONNECTOR_PD_CONFIG</a> structure that contains the power roles supported by the connector. 
 
 
 ## -remarks
-Initialize this structure by calling <a href="buses.ucm_connector_config_init">UCM_CONNECTOR_CONFIG_INIT</a>. An initialized <b>UCM_CONNECTOR_CONFIG</b> structure is an input parameter value to <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a> that is used by the client driver to create a connector object.
+Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_config_init.md">UCM_CONNECTOR_CONFIG_INIT</a>. An initialized <b>UCM_CONNECTOR_CONFIG</b> structure is an input parameter value to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a> that is used by the client driver to create a connector object.
 
 
 ## -requirements
@@ -139,12 +140,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20UCM_CONNECTOR_CONFIG structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UCM_CONNECTOR_CONFIG structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

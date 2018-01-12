@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemDriverUni.DrvWriteAbortBuf
+UID: NF:prcomoem.IPrintOemDriverUni.DrvWriteAbortBuf
 title: IPrintOemDriverUni::DrvWriteAbortBuf method
 author: windows-driver-content
 description: The IPrintOemDriverUni::DrvWriteAbortBuf method is provided by the Unidrv driver to allow an OEM rendering plug-in to send printer clean-up code after a user terminates a print job.
@@ -7,7 +7,7 @@ old-location: print\iprintoemdriveruni_drvwriteabortbuf.htm
 old-project: print
 ms.assetid: 4f7aff9b-32cf-42a0-ba3b-ddc87ecdb8c3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemDriverUni, IPrintOemDriverUni::DrvWriteAbortBuf, DrvWriteAbortBuf
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ HRESULT DrvWriteAbortBuf(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param pBuffer 
@@ -93,7 +94,7 @@ The method must return one of the following values.
 
 
 ## -remarks
-OEMs use <a href="print.iprintoemdriveruni_drvwritespoolbuf">IPrintOemDriverUni::DrvWriteSpoolBuf</a> to send output to the printer. If a print job is terminated by the user, <code>IPrintOemDriverUni::DrvWriteSpoolBuf</code> returns E_FAIL and can no longer be used to send any data to the printer. When this occurs, certain printers must have a clean-up code fragment sent to them, resetting their states before they can start new print jobs. For these printers, <code>IPrintOemDriverUni::DrvWritetAbortBuf</code> is used to send this code fragment to the printer.
+OEMs use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553138">IPrintOemDriverUni::DrvWriteSpoolBuf</a> to send output to the printer. If a print job is terminated by the user, <code>IPrintOemDriverUni::DrvWriteSpoolBuf</code> returns E_FAIL and can no longer be used to send any data to the printer. When this occurs, certain printers must have a clean-up code fragment sent to them, resetting their states before they can start new print jobs. For these printers, <code>IPrintOemDriverUni::DrvWritetAbortBuf</code> is used to send this code fragment to the printer.
 
 <code>IPrintOemDriverUni::DrvWriteAbortBuf</code> can only be called after <code>IPrintOemDriverUni::DrvWriteSpoolBuf</code> has returned E_FAIL. <code>IPrintOemDriverUni::DrvWriteAbortBuf</code> should not be called more than once per job. 
 

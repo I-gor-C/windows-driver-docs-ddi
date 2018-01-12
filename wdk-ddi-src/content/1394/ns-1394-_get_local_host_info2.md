@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._GET_LOCAL_HOST_INFO2
+UID: NS:1394._GET_LOCAL_HOST_INFO2
 title: _GET_LOCAL_HOST_INFO2
 author: windows-driver-content
 description: The GET_LOCAL_HOST_INFO2 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel GET_HOST_CAPABILITIES.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 39cb4015-7745-4d13-bb31-76378b217cfd
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GET_LOCAL_HOST_INFO2, *PGET_LOCAL_HOST_INFO2, GET_LOCAL_HOST_INFO2, PGET_LOCAL_HOST_INFO2
+ms.keywords: _GET_LOCAL_HOST_INFO2, *PGET_LOCAL_HOST_INFO2, GET_LOCAL_HOST_INFO2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGET_LOCAL_HOST_INFO2, GET_LOCAL_HOST_INFO2
 ---
 
 # _GET_LOCAL_HOST_INFO2 structure

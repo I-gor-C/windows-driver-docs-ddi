@@ -1,5 +1,5 @@
 ---
-UID: NS.DXGIDDI.DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
+UID: NS:dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
 title: DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
 author: windows-driver-content
 description: Used by the user-mode display driver to specify overlay plane attributes.
@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_multiplane_overlay_attributes.htm
 old-project: display
 ms.assetid: 0bd7f866-d103-449a-b614-d123c040b2da
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES, DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
 ---
 
 # DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure
@@ -83,17 +84,17 @@ Specifies a flip operation as one of the applicable values in the <a href="..\dx
 
 ### -field SrcRect
 
-Specifies the source rectangle, of type <a href="display.rect">RECT</a>, relative to the source resource.
+Specifies the source rectangle, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the source resource.
 
 
 ### -field DstRect
 
-Specifies the destination rectangle, of type <a href="display.rect">RECT</a>, relative to the monitor resolution.
+Specifies the destination rectangle, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the monitor resolution.
 
 
 ### -field ClipRect
 
-Specifies any additional clipping, of type <a href="display.rect">RECT</a>, relative to the <b>DstRect</b> rectangle, after the data has been stretched according to the values of <b>SrcRect</b> and <b>DstRect</b>.
+Specifies any additional clipping, of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>, relative to the <b>DstRect</b> rectangle, after the data has been stretched according to the values of <b>SrcRect</b> and <b>DstRect</b>.
 
 The driver and hardware can use the <b>ClipRect</b> member to apply a common stretch factor as the clipping changes when an app occludes part of the <b>DstRect</b> destination rectangle.
 
@@ -115,7 +116,7 @@ The number of dirty rectangles specified for the overlay plane. If zero, the ent
 
 ### -field pDirtyRects
 
-A pointer to an array of dirty rectangles (<a href="display.rect">RECT</a>s), relative to the source rectangle <b>SrcRect</b>, that indicate the portion of the overlay plane that has changed.
+A pointer to an array of dirty rectangles (<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>s), relative to the source rectangle <b>SrcRect</b>, that indicate the portion of the overlay plane that has changed.
 
 The driver can use this member to perform optimizations, though it's not required to use the dirty rectangle info. However, the driver should never fail a function call based on the provided dirty rectangles.
 
@@ -236,12 +237,12 @@ Header
 <a href="..\dxgiddi\ne-dxgiddi-dxgi_ddi_multiplane_overlay_ycbcr_flags.md">DXGI_DDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
 </dt>
 <dt>
-<a href="display.rect">RECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

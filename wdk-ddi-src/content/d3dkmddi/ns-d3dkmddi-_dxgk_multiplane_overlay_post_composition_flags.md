@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS
+UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS
 title: _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS
 author: windows-driver-content
 description: A structure containing the flags describing the transformations applied to an image.
@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_post_composition_flags.htm
 old-project: display
 ms.assetid: F7791AB9-6D20-4560-A478-E30F08C6AC3A
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS, DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS
 ---
 
 # _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS structure

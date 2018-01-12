@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2PioTransmitInitializeTransactionComplete
+UID: NF:sercx.SerCx2PioTransmitInitializeTransactionComplete
 title: SerCx2PioTransmitInitializeTransactionComplete function
 author: windows-driver-content
 description: The SerCx2PioTransmitInitializeTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished initializing the serial controller hardware in preparation for a new PIO-transmit transaction.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -57,7 +58,7 @@ VOID SerCx2PioTransmitInitializeTransactionComplete(
 
 ### -param PioTransmit [in]
 
-A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
+A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method to create this object.
 
 
 ### -param InitSuccess [in]
@@ -132,7 +133,7 @@ IRQL
 <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a>
 </dt>
 <dt>
-<a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
 </dt>
 </dl>
  

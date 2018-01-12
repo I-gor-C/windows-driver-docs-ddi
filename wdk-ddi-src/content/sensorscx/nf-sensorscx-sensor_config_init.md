@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorscx.SENSOR_CONFIG_INIT
+UID: NF:sensorscx.SENSOR_CONFIG_INIT
 title: SENSOR_CONFIG_INIT function
 author: windows-driver-content
 description: This function initializes a SENSOR_CONFIG structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-This function initializes a <a href="sensors.sensor_config">SENSOR_CONFIG</a> structure.
+This function initializes a <a href="..\sensorscx\ns-sensorscx-_sensor_config.md">SENSOR_CONFIG</a> structure.
 
 
 
@@ -56,7 +57,7 @@ FORCEINLINE VOID SENSOR_CONFIG_INIT(
 
 ### -param pConfig [out]
 
-A pointer to a new <a href="sensors.sensor_config">SENSOR_CONFIG</a> structure.
+A pointer to a new <a href="..\sensorscx\ns-sensorscx-_sensor_config.md">SENSOR_CONFIG</a> structure.
 
 
 ## -returns
@@ -95,7 +96,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="sensors.sensor_config">SENSOR_CONFIG</a>
+<a href="..\sensorscx\ns-sensorscx-_sensor_config.md">SENSOR_CONFIG</a>
 </dt>
 </dl>
  

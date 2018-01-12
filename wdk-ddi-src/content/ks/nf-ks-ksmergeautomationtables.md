@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsMergeAutomationTables
+UID: NF:ks.KsMergeAutomationTables
 title: KsMergeAutomationTables function
 author: windows-driver-content
 description: The KsMergeAutomationTables function merges two automation tables.
@@ -7,7 +7,7 @@ old-location: stream\ksmergeautomationtables.htm
 old-project: stream
 ms.assetid: ef90f9da-3169-4b49-9ba2-2cab058e5d00
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsMergeAutomationTables
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsMergeAutomationTables function
@@ -58,17 +59,17 @@ NTSTATUS KsMergeAutomationTables(
 
 ### -param AutomationTableAB [out]
 
-A pointer to the location at which a pointer to a <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> is deposited. This structure is the resulting merged automation table.
+A pointer to the location at which a pointer to a <a href="..\ks\ns-ks-ksautomation_table_.md">KSAUTOMATION_TABLE</a> is deposited. This structure is the resulting merged automation table.
 
 
 ### -param AutomationTableA [in, optional]
 
-A pointer to a <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> structure representing the first of the two automation tables to merge. This table is the dominant table with respect to duplicate entries. If <b>NULL</b>, <i>AutomationTableB</i> is copied into <i>AutomationTableAB</i> and optionally placed in <i>Bag</i>.
+A pointer to a <a href="..\ks\ns-ks-ksautomation_table_.md">KSAUTOMATION_TABLE</a> structure representing the first of the two automation tables to merge. This table is the dominant table with respect to duplicate entries. If <b>NULL</b>, <i>AutomationTableB</i> is copied into <i>AutomationTableAB</i> and optionally placed in <i>Bag</i>.
 
 
 ### -param AutomationTableB [in, optional]
 
-A pointer to a <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> structure representing the second of the two automation tables to merge. If <b>NULL</b>, <i>AutomationTableA</i> is copied into <i>AutomationTableAB</i> and optionally placed in <i>Bag</i>.
+A pointer to a <a href="..\ks\ns-ks-ksautomation_table_.md">KSAUTOMATION_TABLE</a> structure representing the second of the two automation tables to merge. If <b>NULL</b>, <i>AutomationTableA</i> is copied into <i>AutomationTableAB</i> and optionally placed in <i>Bag</i>.
 
 
 ### -param Bag [in, optional]
@@ -152,18 +153,18 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksremoveitemfromobjectbag">KsRemoveItemFromObjectBag</a>
+<a href="..\ks\nf-ks-ksremoveitemfromobjectbag.md">KsRemoveItemFromObjectBag</a>
 </dt>
 <dt>
-<a href="stream.ksadditemtoobjectbag">KsAddItemToObjectBag</a>
+<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
 </dt>
 <dt>
-<a href="stream.kscopyobjectbagitems">KsCopyObjectBagItems</a>
+<a href="..\ks\nf-ks-kscopyobjectbagitems.md">KsCopyObjectBagItems</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsMergeAutomationTables function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsMergeAutomationTables function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION
+UID: NI:ntddser.IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION
 title: IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION
 author: windows-driver-content
 description: The IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION control code configures the serial port to use the default hardware settings for the serial controller device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_APPLY_DEFAULT_CONFIGURATION IOCTL

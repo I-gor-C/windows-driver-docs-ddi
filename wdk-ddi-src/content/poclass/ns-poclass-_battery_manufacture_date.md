@@ -1,5 +1,5 @@
 ---
-UID: NS.POCLASS._BATTERY_MANUFACTURE_DATE
+UID: NS:poclass._BATTERY_MANUFACTURE_DATE
 title: _BATTERY_MANUFACTURE_DATE
 author: windows-driver-content
 description: Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: 1ab9caa3-344a-49c8-8f40-75d9c251be04
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _BATTERY_MANUFACTURE_DATE, *PBATTERY_MANUFACTURE_DATE, BATTERY_MANUFACTURE_DATE, PBATTERY_MANUFACTURE_DATE
+ms.keywords: _BATTERY_MANUFACTURE_DATE, BATTERY_MANUFACTURE_DATE, *PBATTERY_MANUFACTURE_DATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Called at PASSIVE_LEVEL.
+req.irql: 
+req.typenames: BATTERY_MANUFACTURE_DATE, *PBATTERY_MANUFACTURE_DATE
 ---
 
 # _BATTERY_MANUFACTURE_DATE structure
@@ -38,7 +39,7 @@ req.irql: Called at PASSIVE_LEVEL.
 
 
 ## -description
-Battery miniclass drivers fill in this structure in response to certain <a href="battery.batteryminiqueryinformation">BatteryMiniQueryInformation</a> requests. 
+Battery miniclass drivers fill in this structure in response to certain <a href="https://msdn.microsoft.com/bd96b79a-5670-4aaf-b72c-619818c2a2e7">BatteryMiniQueryInformation</a> requests. 
 
 
 
@@ -91,7 +92,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="battery.batteryminiqueryinformation">BatteryMiniQueryInformation</a>
+<a href="https://msdn.microsoft.com/bd96b79a-5670-4aaf-b72c-619818c2a2e7">BatteryMiniQueryInformation</a>
 </dt>
 </dl>
  

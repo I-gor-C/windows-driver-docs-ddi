@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortQueueWorkItem
+UID: NF:storport.StorPortQueueWorkItem
 title: StorPortQueueWorkItem function
 author: windows-driver-content
 description: Schedules a Storport work item to execute within the context of a system worker thread.
@@ -7,7 +7,7 @@ old-location: storage\storportqueueworkitem.htm
 old-project: storage
 ms.assetid: 7B5DD97C-2E3D-4FF7-BF04-36F016B0C6B3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortQueueWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -69,7 +70,7 @@ A pointer to a work item callback routine supplied by the miniport. This routine
 
 ### -param Worker [in]
 
-A pointer to an opaque buffer for the worker returned by <a href="storage.storportinitializeworker">StorPortInitializeWorker</a>.
+A pointer to an opaque buffer for the worker returned by <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>.
 
 
 ### -param Context [in, optional]
@@ -147,18 +148,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hwstorworkitem">HwStorWorkItem</a>
+<a href="..\storport\nc-storport-hw_workitem.md">HwStorWorkItem</a>
 </dt>
 <dt>
-<a href="storage.storportfreeworker">StorPortFreeWorker</a>
+<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
 </dt>
 <dt>
-<a href="storage.storportinitializeworker">StorPortInitializeWorker</a>
+<a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortQueueWorkItem routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortQueueWorkItem routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

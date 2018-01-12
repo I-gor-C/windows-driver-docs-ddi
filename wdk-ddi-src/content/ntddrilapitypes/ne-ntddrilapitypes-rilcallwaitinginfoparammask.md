@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILCALLWAITINGINFOPARAMMASK
+UID: NE:ntddrilapitypes.RILCALLWAITINGINFOPARAMMASK
 title: RILCALLWAITINGINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallwaitinginfoparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 18fa3b00-8da7-4c83-a340-1515caffda01
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILCALLWAITINGINFOPARAMMASK, RILCALLWAITINGINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLWAITINGINFOPARAMMASK
 ---
 
 # RILCALLWAITINGINFOPARAMMASK enumeration

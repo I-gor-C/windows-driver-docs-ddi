@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wudfinterrupt
 ---
 
 # Wudfinterrupt.h header
@@ -19,15 +19,6 @@ Wudfinterrupt.h contain these programming interfaces:
 | [WDF_INTERRUPT_EXTENDED_POLICY_INIT function](nf-wudfinterrupt-wdf_interrupt_extended_policy_init.md) | The WDF_INTERRUPT_EXTENDED_POLICY_INIT function initializes a WDF_INTERRUPT_EXTENDED_POLICY structure. |
 | [WDF_INTERRUPT_INFO_INIT function](nf-wudfinterrupt-wdf_interrupt_info_init.md) | The WDF_INTERRUPT_INFO_INIT function initializes a WDF_INTERRUPT_INFO structure. |
 | [WUDF_INTERRUPT_CONFIG_INIT function](nf-wudfinterrupt-wudf_interrupt_config_init.md) | The WUDF_INTERRUPT_CONFIG_INIT function initializes a WUDF_INTERRUPT_CONFIG structure. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [WUDF_INTERRUPT_DISABLE callback](nc-wudfinterrupt-wudf_interrupt_disable.md) | A driver's OnInterruptDisable event callback function disables a specified hardware interrupt. |
-| [WUDF_INTERRUPT_ENABLE callback](nc-wudfinterrupt-wudf_interrupt_enable.md) | A driver's OnInterruptEnable event callback function enables a specified hardware interrupt. |
-| [WUDF_INTERRUPT_ISR callback](nc-wudfinterrupt-wudf_interrupt_isr.md) | A driver's OnInterruptIsr event callback function services a hardware interrupt. |
-| [WUDF_INTERRUPT_WORKITEM callback](nc-wudfinterrupt-wudf_interrupt_workitem.md) | A driver's OnInterruptWorkItem event callback function processes interrupt information that the driver's OnInterruptIsr callback function has stored. |
 
 ## Structures
 

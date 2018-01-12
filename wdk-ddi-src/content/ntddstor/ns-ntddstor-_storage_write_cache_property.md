@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._STORAGE_WRITE_CACHE_PROPERTY
+UID: NS:ntddstor._STORAGE_WRITE_CACHE_PROPERTY
 title: _STORAGE_WRITE_CACHE_PROPERTY
 author: windows-driver-content
 description: The STORAGE_WRITE_CACHE_PROPERTY structure is used with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve information about a device's write cache property.
@@ -7,7 +7,7 @@ old-location: storage\storage_write_cache_property.htm
 old-project: storage
 ms.assetid: 4abc44ab-1729-46c3-befd-5f917e10953c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: _STORAGE_WRITE_CACHE_PROPERTY, STORAGE_WRITE_CACHE_PROPERTY, PSTORAGE_WRITE_CACHE_PROPERTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_WRITE_CACHE_PROPERTY, PSTORAGE_WRITE_CACHE_PROPERTY
 ---
 
 # _STORAGE_WRITE_CACHE_PROPERTY structure
@@ -73,22 +74,22 @@ The size, in bytes, of the STORAGE_WRITE_CACHE_PROPERTY structure.
 
 ### -field WriteCacheType
 
-A <a href="storage.write_cache_type">WRITE_CACHE_TYPE</a>-typed value that indicates the current write cache type
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff568044">WRITE_CACHE_TYPE</a>-typed value that indicates the current write cache type
 
 
 ### -field WriteCacheEnabled
 
-A <a href="storage.write_cache_enable">WRITE_CACHE_ENABLE</a>-typed value that indicates whether the write cache is enabled.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff568042">WRITE_CACHE_ENABLE</a>-typed value that indicates whether the write cache is enabled.
 
 
 ### -field WriteCacheChangeable
 
-A <a href="storage.write_cache_change">WRITE_CACHE_CHANGE</a>-typed value that indicates whether if the host can change the write cache characteristics.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff568039">WRITE_CACHE_CHANGE</a>-typed value that indicates whether if the host can change the write cache characteristics.
 
 
 ### -field WriteThroughSupported
 
-A <a href="storage.write_through">WRITE_THROUGH</a>-typed value that indicates whether the device supports write-through caching.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff568047">WRITE_THROUGH</a>-typed value that indicates whether the device supports write-through caching.
 
 
 ### -field FlushCacheSupported
@@ -135,5 +136,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_WRITE_CACHE_PROPERTY structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_WRITE_CACHE_PROPERTY structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

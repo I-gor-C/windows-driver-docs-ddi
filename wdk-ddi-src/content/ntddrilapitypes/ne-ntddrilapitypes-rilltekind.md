@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILLTEKIND
+UID: NE:ntddrilapitypes.RILLTEKIND
 title: RILLTEKIND
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilltekind.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e7457252-0ca9-4cea-bc06-283573e49331
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILLTEKIND, RILLTEKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILLTEKIND
 ---
 
 # RILLTEKIND enumeration

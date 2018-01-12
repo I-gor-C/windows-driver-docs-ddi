@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._SE_EXPORTS
+UID: NS:ntifs._SE_EXPORTS
 title: _SE_EXPORTS
 author: windows-driver-content
 description: The SeExports structure is a large external static SE_EXPORTS structure that defines a number of well-known security constants for privilege values and security identifiers.
@@ -7,8 +7,8 @@ old-location: ifsk\seexports.htm
 old-project: ifsk
 ms.assetid: e6c398b4-f38f-4819-96f9-cefc3a728dbc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SE_EXPORTS, *PSE_EXPORTS, SE_EXPORTS, PSE_EXPORTS
+ms.date: 1/9/2018
+ms.keywords: _SE_EXPORTS, SE_EXPORTS, *PSE_EXPORTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SE_EXPORTS, *PSE_EXPORTS
 ---
 
 # _SE_EXPORTS structure
@@ -223,7 +224,7 @@ User-mode applications represent this privilege as the following user-right stri
 
 ### -field SeBackupPrivilege
 
-The privilege that is required to perform backup operations. This privilege allows the user to circumvent file and directory permissions to back up the system. This privilege causes the system to grant all read access control to any file, regardless of the access control list (ACL) specified for the file. Any access request other than read is still evaluated with the ACL. This privilege is required by the user-mode <a href="base.regsavekey">RegSaveKey</a> and <a href="base.regsavekeyex">RegSaveKeyEx</a> routines. The following access rights are granted if this privilege is held:
+The privilege that is required to perform backup operations. This privilege allows the user to circumvent file and directory permissions to back up the system. This privilege causes the system to grant all read access control to any file, regardless of the access control list (ACL) specified for the file. Any access request other than read is still evaluated with the ACL. This privilege is required by the user-mode <a href="https://msdn.microsoft.com/da80f40d-0099-4748-94ca-5d3b001e633e">RegSaveKey</a> and <a href="https://msdn.microsoft.com/f93b4162-cac4-42f7-bfd4-9e23fff80a03">RegSaveKeyEx</a> routines. The following access rights are granted if this privilege is held:
 
 <ul>
 <li>
@@ -248,7 +249,7 @@ User-mode applications represent this privilege as the following user-right stri
 
 ### -field SeRestorePrivilege
 
-The privilege that is required to perform restore operations. This privilege allows a user to circumvent file and directory permissions when restoring backed-up files and directories and to set any valid security principal as the owner of an object. This privilege causes the system to grant all write access control to any file, regardless of the ACL specified for the file. Any access request other than write is still evaluated with the ACL. Additionally, this privilege enables you to set any valid user or group SID as the owner of a file. This privilege is required by the user-mode <a href="base.regloadkey">RegLoadKey</a> and <a href="base.regunloadkey">RegUnLoadKey</a> routines that add or remove a hive from the registry. The following access rights are granted if this privilege is held:
+The privilege that is required to perform restore operations. This privilege allows a user to circumvent file and directory permissions when restoring backed-up files and directories and to set any valid security principal as the owner of an object. This privilege causes the system to grant all write access control to any file, regardless of the ACL specified for the file. Any access request other than write is still evaluated with the ACL. Additionally, this privilege enables you to set any valid user or group SID as the owner of a file. This privilege is required by the user-mode <a href="https://msdn.microsoft.com/536395aa-03ba-430d-a66d-fcabdc9dfe22">RegLoadKey</a> and <a href="https://msdn.microsoft.com/73b4b6a9-4acb-4247-bd7f-82024ba3e14a">RegUnLoadKey</a> routines that add or remove a hive from the registry. The following access rights are granted if this privilege is held:
 
 <ul>
 <li>
@@ -602,7 +603,7 @@ The NetworkService account is available on Windows XP and later.
 
 ### -field SeManageVolumePrivilege
 
-The privilege that is required to allow a non-administrative or remote user to manage volumes or disks. The operating system checks for this privilege in a user's access token when a process running in the user's security context calls the user mode <a href="fs.setfilevaliddata">SetFileValidData</a> routine.
+The privilege that is required to allow a non-administrative or remote user to manage volumes or disks. The operating system checks for this privilege in a user's access token when a process running in the user's security context calls the user mode <a href="https://msdn.microsoft.com/c6ded2d7-270a-4b75-b2d4-1007a92fe831">SetFileValidData</a> routine.
 
 
 ### -field SeImpersonatePrivilege
@@ -748,15 +749,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.luid">LUID</a>
+<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 </dt>
 <dt>
-<a href="ifsk.sid">SID</a>
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeExports structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeExports structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

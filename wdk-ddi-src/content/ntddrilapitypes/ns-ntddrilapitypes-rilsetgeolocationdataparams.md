@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSETGEOLOCATIONDATAPARAMS
+UID: NS:ntddrilapitypes.RILSETGEOLOCATIONDATAPARAMS
 title: RILSETGEOLOCATIONDATAPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetgeolocationdataparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7736c8d6-731e-4322-aade-ecd23a4fedde
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSETGEOLOCATIONDATAPARAMS, LPRILSETGEOLOCATIONDATAPARAMS, *LPRILSETGEOLOCATIONDATAPARAMS, RILSETGEOLOCATIONDATAPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILSETGEOLOCATIONDATAPARAMS, *LPRILSETGEOLOCATIONDATAPARAMS, RILSETGEOLOCATIONDATAPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSETGEOLOCATIONDATAPARAMS, RILSETGEOLOCATIONDATAPARAMS
 ---
 
 # RILSETGEOLOCATIONDATAPARAMS structure

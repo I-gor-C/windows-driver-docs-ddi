@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_ERROR_PACKET_FLAGS
+UID: NS:ntddk._WHEA_ERROR_PACKET_FLAGS
 title: _WHEA_ERROR_PACKET_FLAGS
 author: windows-driver-content
 description: The WHEA_ERROR_PACKET_FLAGS union defines the error condition reported through a WHEA_ERROR_PACKET structure.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: e1dae7df-7d81-42cc-9a01-44345f53ba4e
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS, PWHEA_ERROR_PACKET_FLAGS
+ms.keywords: _WHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS
 ---
 
 # _WHEA_ERROR_PACKET_FLAGS structure

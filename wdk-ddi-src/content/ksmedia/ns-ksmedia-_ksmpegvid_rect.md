@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA._KSMPEGVID_RECT
+UID: NS:ksmedia._KSMPEGVID_RECT
 title: _KSMPEGVID_RECT
 author: windows-driver-content
 description: KSMPEGVID_RECT structure
@@ -7,8 +7,8 @@ old-location: stream\ksmpegvid_rect.htm
 old-project: stream
 ms.assetid: 3fde33d4-a9c8-4647-bd2d-3da66f13ef8a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _KSMPEGVID_RECT, PKSMPEGVID_RECT, KSMPEGVID_RECT, *PKSMPEGVID_RECT
+ms.date: 1/9/2018
+ms.keywords: _KSMPEGVID_RECT, *PKSMPEGVID_RECT, KSMPEGVID_RECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSMPEGVID_RECT, KSMPEGVID_RECT
 ---
 
 # _KSMPEGVID_RECT structure

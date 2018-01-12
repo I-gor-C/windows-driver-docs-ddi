@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_SATELLITEINFO
+UID: NS:gnssdriver.GNSS_SATELLITEINFO
 title: GNSS_SATELLITEINFO
 author: windows-driver-content
 description: This structure defines satellite-related information of a fix.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 27F537D8-45B2-43D9-A614-3558534C9DBA
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_SATELLITEINFO, *PGNSS_SATELLITEINFO, GNSS_SATELLITEINFO, PGNSS_SATELLITEINFO
+ms.keywords: GNSS_SATELLITEINFO, *PGNSS_SATELLITEINFO, GNSS_SATELLITEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_SATELLITEINFO, GNSS_SATELLITEINFO
 ---
 
 # GNSS_SATELLITEINFO structure

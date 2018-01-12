@@ -1,14 +1,14 @@
 ---
-UID: NC.wsk.PFN_WSK_SOCKET
+UID: NC:wsk.PFN_WSK_SOCKET
 title: PFN_WSK_SOCKET
 author: windows-driver-content
 description: The WskSocket function creates a new socket and returns a pointer to the associated socket object.
 old-location: netvista\wsksocket.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: fddfd724-c3ba-4908-a60f-70c4934efb49
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/8/2018
+ms.keywords: _WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -74,7 +75,7 @@ A pointer to a
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a> structure that was returned through
      the 
      <i>WskProviderNpi</i> parameter of the 
-     <a href="netvista.wskcaptureprovidernpi">
+     <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">
      WskCaptureProviderNPI</a> function.
 
 
@@ -194,7 +195,7 @@ WSK_FLAG_LISTEN_SOCKET
 </td>
 <td>
 
-<a href="netvista.wsk_client_listen_dispatch">WSK_CLIENT_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_client_listen_dispatch.md">WSK_CLIENT_LISTEN_DISPATCH</a>
 
 
 </td>
@@ -206,7 +207,7 @@ WSK_FLAG_DATAGRAM_SOCKET
 </td>
 <td>
 
-<a href="netvista.wsk_client_datagram_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_client_datagram_dispatch.md">
          WSK_CLIENT_DATAGRAM_DISPATCH</a>
 
 
@@ -219,7 +220,7 @@ WSK_FLAG_CONNECTION_SOCKET
 </td>
 <td>
 
-<a href="netvista.wsk_client_connection_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
          WSK_CLIENT_CONNECTION_DISPATCH</a>
 
 
@@ -232,7 +233,7 @@ WSK_FLAG_STREAM_SOCKET
 </td>
 <td>
 
-<a href="netvista.wsk_client_stream_dispatch">WSK_CLIENT_STREAM_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_client_stream_dispatch.md">WSK_CLIENT_STREAM_DISPATCH</a>
 
 
 </td>
@@ -308,14 +309,14 @@ A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the 
 ## -remarks
 If the IRP is completed with success status, the 
     <b>IoStatus.Information</b> field of the IRP contains a pointer to a socket object structure (
-    <a href="netvista.wsk_socket">WSK_SOCKET</a>) for the new socket.
+    <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>) for the new socket.
 
 A WSK application can obtain a list of available transport protocols by calling the 
     <a href="..\wsk\nc-wsk-pfn_wsk_control_client.md">WskControlClient</a> function with the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571195">WSK_TRANSPORT_LIST_QUERY</a> control
     code. 
     <b>WskControlClient</b> returns a list of 
-    <a href="netvista.wsk_transport">WSK_TRANSPORT</a> structures that contains all of
+    <a href="..\wsk\ns-wsk-_wsk_transport.md">WSK_TRANSPORT</a> structures that contains all of
     the valid combinations of the 
     <i>AddressFamily</i>, 
     <i>SocketType</i>, and 
@@ -386,7 +387,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wskcaptureprovidernpi">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
 <dt>
 <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
@@ -401,31 +402,31 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_connection_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
    WSK_CLIENT_CONNECTION_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_datagram_dispatch">WSK_CLIENT_DATAGRAM_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_client_datagram_dispatch.md">WSK_CLIENT_DATAGRAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_listen_dispatch">WSK_CLIENT_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_client_listen_dispatch.md">WSK_CLIENT_LISTEN_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_stream_dispatch">WSK_CLIENT_STREAM_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_client_stream_dispatch.md">WSK_CLIENT_STREAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_dispatch">WSK_PROVIDER_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_dispatch.md">WSK_PROVIDER_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_npi">WSK_PROVIDER_NPI</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_npi.md">WSK_PROVIDER_NPI</a>
 </dt>
 <dt>
-<a href="netvista.wsk_socket">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PFN_WSK_SOCKET callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_SOCKET callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

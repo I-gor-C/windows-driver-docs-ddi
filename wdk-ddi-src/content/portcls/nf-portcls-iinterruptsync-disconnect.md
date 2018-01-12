@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IInterruptSync.Disconnect
+UID: NF:portcls.IInterruptSync.Disconnect
 title: IInterruptSync::Disconnect method
 author: windows-driver-content
 description: The Disconnect method disconnects the synchronization object from the interrupt.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IInterruptSync::Disconnect method
@@ -105,7 +106,7 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
 </dt>
 <dt>
-<a href="kernel.iodisconnectinterrupt">IoDisconnectInterrupt</a>
+<a href="..\wdm\nf-wdm-iodisconnectinterrupt.md">IoDisconnectInterrupt</a>
 </dt>
 </dl>
  

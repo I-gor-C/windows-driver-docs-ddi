@@ -1,5 +1,5 @@
 ---
-UID: NF.hidpi.HidP_TranslateUsagesToI8042ScanCodes
+UID: NF:hidpi.HidP_TranslateUsagesToI8042ScanCodes
 title: HidP_TranslateUsagesToI8042ScanCodes function
 author: windows-driver-content
 description: The HidP_TranslateUsagesToI8042ScanCodes routine maps a list of HID usages on the HID_USAGE_PAGE_KEYBOARD usage page to their respective PS/2 scan codes (Scan Code Set 1).
@@ -7,7 +7,7 @@ old-location: hid\hidp_translateusagestoi8042scancodes.htm
 old-project: hid
 ms.assetid: d3ad851d-ba09-4052-a2d0-d6cb8315e04f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidP_TranslateUsagesToI8042ScanCodes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hidparse.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 # HidP_TranslateUsagesToI8042ScanCodes function
@@ -200,7 +201,7 @@ Prior to beginning a processing loop, the processing code typically allocates an
 
 A previous usage list, current usage list, break usage list, and a make usage list.
 
-Each list is a zero-initialized array of usages. To ensure that the processing code maps all the usages that can change between consecutive HID input reports, the processing code must set the number of elements in each list to the maximum number of usages that <a href="hid.hidp_getusages">HidP_GetUsages</a> can return for the HID_USAGE_PAGE_KEYBOARD usage page. This number is obtained using <a href="hid.hidp_maxusagelistlength">HidP_MaxUsageListLength</a>.
+Each list is a zero-initialized array of usages. To ensure that the processing code maps all the usages that can change between consecutive HID input reports, the processing code must set the number of elements in each list to the maximum number of usages that <a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a> can return for the HID_USAGE_PAGE_KEYBOARD usage page. This number is obtained using <a href="..\hidpi\nf-hidpi-hidp_maxusagelistlength.md">HidP_MaxUsageListLength</a>.
 
 A zero-initialized _HIDP_KEYBOARD_MODIFIER_STATE structure for use by the translate usages routine.
 
@@ -281,18 +282,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="hid.hidp_getusages">HidP_GetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a>
 </dt>
 <dt>
-<a href="hid.hidp_maxusagelistlength">HidP_MaxUsageListLength</a>
+<a href="..\hidpi\nf-hidpi-hidp_maxusagelistlength.md">HidP_MaxUsageListLength</a>
 </dt>
 <dt>
-<a href="hid.hidp_usagelistdifference">HidP_UsageListDifference</a>
+<a href="..\hidpi\nf-hidpi-hidp_usagelistdifference.md">HidP_UsageListDifference</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_TranslateUsagesToI8042ScanCodes routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_TranslateUsagesToI8042ScanCodes routine%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

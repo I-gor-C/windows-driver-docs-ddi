@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbChannelSetIncomingProcessingAtPassive
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelSetIncomingProcessingAtPassive
 title: VmbChannelSetIncomingProcessingAtPassive function
 author: windows-driver-content
 description: The VmbChannelSetIncomingProcessingAtPassive function sets the required IRQL for incoming parsing routines for a channel to PASSIVE_LEVEL.
 old-location: netvista\vmbchannelsetincomingprocessingatpassive.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: D8677CD9-46CB-41AB-8F05-418A31468C07
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbChannelSetIncomingProcessingAtPassive
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Vmbkmcl.lib
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSRTAUDIO_HWREGISTER
+UID: NS:ksmedia.KSRTAUDIO_HWREGISTER
 title: KSRTAUDIO_HWREGISTER
 author: windows-driver-content
 description: The KSRTAUDIO_HWREGISTER structure specifies the address and additional information about a hardware register requested by the client.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 3d1dc600-f7cb-488e-9f92-678e0a6a58f8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSRTAUDIO_HWREGISTER, PKSRTAUDIO_HWREGISTER, KSRTAUDIO_HWREGISTER, *PKSRTAUDIO_HWREGISTER
+ms.keywords: KSRTAUDIO_HWREGISTER, KSRTAUDIO_HWREGISTER, *PKSRTAUDIO_HWREGISTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSRTAUDIO_HWREGISTER, *PKSRTAUDIO_HWREGISTER
 ---
 
 # KSRTAUDIO_HWREGISTER structure

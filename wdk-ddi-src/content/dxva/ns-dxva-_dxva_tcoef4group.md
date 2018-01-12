@@ -1,5 +1,5 @@
 ---
-UID: NS.DXVA._DXVA_TCOEF4GROUP
+UID: NS:dxva._DXVA_TCoef4Group
 title: _DXVA_TCoef4Group
 author: windows-driver-content
 description: The DXVA_TCoef4Group structure is sent by the host decoder to the accelerator to specify the IDCT coefficient values.
@@ -7,8 +7,8 @@ old-location: display\dxva_tcoef4group.htm
 old-project: display
 ms.assetid: f7ffe847-58ae-42a9-86fd-50a757134b45
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXVA_TCoef4Group, DXVA_TCoef4Group, *LPDXVA_TCoef4Group, LPDXVA_TCoef4Group
+ms.date: 12/29/2017
+ms.keywords: _DXVA_TCoef4Group, DXVA_TCoef4Group, *LPDXVA_TCoef4Group
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVA_TCoef4Group, *LPDXVA_TCoef4Group
 ---
 
 # _DXVA_TCoef4Group structure
@@ -56,7 +57,7 @@ typedef struct _DXVA_TCoef4Group {
 
 ### -field TCoefIDX
 
-Specifies the scan index of the coefficient in the block. Expressed as the number of zero-valued coefficients that precede the current coefficient in the scan order specified by the <i>MBscanMethod</i> variable (bits 6 and 7 of the <b>wMBtype</b> member of the macroblock control command). These commands are defined in the following structures: <a href="display.dxva_mbctrl_i_offhostidct_1">DXVA_MBctrl_I_OffHostIDCT_1</a> or <a href="display.dxva_mbctrl_p_offhostidct_1">DXVA_MBctrl_P_OffHostIDCT_1</a>. <b>TCoefIDX</b> contains the number of zero-valued coefficients that precede the current coefficient in the specified scan order, subsequent to the last transmitted coefficient for the block (or relative to the start of the block if none precede it). Any remaining coefficients after the last sent coefficient in the inverse-scan order are implied to have the value 0.
+Specifies the scan index of the coefficient in the block. Expressed as the number of zero-valued coefficients that precede the current coefficient in the scan order specified by the <i>MBscanMethod</i> variable (bits 6 and 7 of the <b>wMBtype</b> member of the macroblock control command). These commands are defined in the following structures: <a href="..\dxva\ns-dxva-_dxva_mbctrl_i_offhostidct_1.md">DXVA_MBctrl_I_OffHostIDCT_1</a> or <a href="..\dxva\ns-dxva-_dxva_mbctrl_p_offhostidct_1.md">DXVA_MBctrl_P_OffHostIDCT_1</a>. <b>TCoefIDX</b> contains the number of zero-valued coefficients that precede the current coefficient in the specified scan order, subsequent to the last transmitted coefficient for the block (or relative to the start of the block if none precede it). Any remaining coefficients after the last sent coefficient in the inverse-scan order are implied to have the value 0.
 
 <b>TCoefIDX</b> must always be less than 64.
 
@@ -67,7 +68,7 @@ Specifies the value of the coefficient in the block. <b>TCoefValue</b> must be c
 
 
 ## -remarks
-The DXVA_TCoef4Group structure is used only when these two members of <a href="display.dxva_configpicturedecode">DXVA_ConfigPictureDecode</a> structure are set to the following values: <b>bConfig4GroupedCoefs</b> is 1 and <b>bConfigHostInverseScan</b> is zero.
+The DXVA_TCoef4Group structure is used only when these two members of <a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a> structure are set to the following values: <b>bConfig4GroupedCoefs</b> is 1 and <b>bConfigHostInverseScan</b> is zero.
 
 In the DXVA_TCoef4Group structure, groups of four transform coefficients are sent together with associated run-length values. The <i>i</i>th element of each array in DXVA_TCoef4Group contains element 3-<i>i</i> of the actual coefficient or run-length list (so the first coefficient or index goes into element 3, the next in element 2, and so forth). If only N<sub>C</sub> &lt; 4 nonzero coefficients remain that need to be sent for a block, then <b>TCoefIDX</b>[<i>i</i>] must be 63 (hexadecimal 0x3F), and <b>TCoefValue</b>[<i>i</i>] must be equal to <b>TCoefValue</b>[4-N<sub>C</sub>] for <i>i </i>= 0 to 3-N<sub>C</sub>.
 
@@ -90,12 +91,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxva_configpicturedecode">DXVA_ConfigPictureDecode</a>
+<a href="..\dxva\ns-dxva-_dxva_configpicturedecode.md">DXVA_ConfigPictureDecode</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_TCoef4Group structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_TCoef4Group structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

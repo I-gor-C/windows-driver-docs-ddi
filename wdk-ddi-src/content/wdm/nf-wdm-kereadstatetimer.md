@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeReadStateTimer
+UID: NF:wdm.KeReadStateTimer
 title: KeReadStateTimer function
 author: windows-driver-content
 description: The KeReadStateTimer routine reads the current state of a timer object.
@@ -7,7 +7,7 @@ old-location: kernel\kereadstatetimer.htm
 old-project: kernel
 ms.assetid: 0f7fc534-4a81-42e0-a3e6-8b91baa28b55
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeReadStateTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ A pointer to an initialized timer object, for which the caller provides the stor
 
 
 ## -remarks
-This routine provides an efficient way to poll the signal state of a timer. <b>KeReadStateTimer</b> reads the state of the timer without synchronizing its access to the timer. Do not assume that accesses of a timer state by <b>KeReadStateTimer</b> are mutually exclusive of accesses by routines, such as <a href="kernel.kesettimer">KeSetTimer</a> and <a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>, that do synchronize their access to the timer state.
+This routine provides an efficient way to poll the signal state of a timer. <b>KeReadStateTimer</b> reads the state of the timer without synchronizing its access to the timer. Do not assume that accesses of a timer state by <b>KeReadStateTimer</b> are mutually exclusive of accesses by routines, such as <a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a> and <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>, that do synchronize their access to the timer state.
 
 For more information about timer objects, see <a href="https://msdn.microsoft.com/b58487de-6e9e-45f4-acb8-9233c8718ee2">Timer Objects and DPCs</a>.
 
@@ -141,7 +142,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqlkedispatchlte">IrqlKeDispatchLte</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547812">IrqlKeDispatchLte</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -149,16 +150,16 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.kecanceltimer">KeCancelTimer</a>
+<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
 </dt>
 <dt>
-<a href="kernel.keinitializetimer">KeInitializeTimer</a>
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
 </dt>
 <dt>
-<a href="kernel.kesettimer">KeSetTimer</a>
+<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
 </dt>
 <dt>
-<a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554250">KTIMER</a>
@@ -168,5 +169,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeReadStateTimer routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeReadStateTimer routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdvd.IOCTL_AACS_SEND_CHALLENGE_KEY
+UID: NI:ntddcdvd.IOCTL_AACS_SEND_CHALLENGE_KEY
 title: IOCTL_AACS_SEND_CHALLENGE_KEY
 author: windows-driver-content
 description: Sends the host's challenge key to the logical unit. The host's challenge key consists of a point on an elliptic curve and its associated signature.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_aacs_send_challenge_key.htm
 old-project: storage
 ms.assetid: 762776f1-5423-4d02-8b59-de1e9ada8044
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, PDVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.date: 1/10/2018
+ms.keywords: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_SEND_CHALLENGE_KEY IOCTL
@@ -45,11 +46,11 @@ Sends the host's challenge key to the logical unit. The host's challenge key con
 ## -ioctlparameters
 
 ### -input-buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="storage.aacs_send_challenge_key">AACS_SEND_CHALLENGE_KEY</a> structure.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_send_challenge_key.md">AACS_SEND_CHALLENGE_KEY</a> structure.
 
 
 ### -input-buffer-length
-Length of an <a href="storage.aacs_send_challenge_key">AACS_SEND_CHALLENGE_KEY</a> structure.
+Length of an <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_send_challenge_key.md">AACS_SEND_CHALLENGE_KEY</a> structure.
 
 
 ### -output-buffer

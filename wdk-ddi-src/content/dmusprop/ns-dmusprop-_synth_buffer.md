@@ -1,5 +1,5 @@
 ---
-UID: NS.DMUSPROP._SYNTH_BUFFER
+UID: NS:dmusprop._SYNTH_BUFFER
 title: _SYNTH_BUFFER
 author: windows-driver-content
 description: The SYNTH_BUFFER structure specifies DLS data that is being downloaded to a synthesizer.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 51b16308-47a8-42e0-9393-fd93045e4e47
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SYNTH_BUFFER, *PSYNTH_BUFFER, PSYNTH_BUFFER, SYNTH_BUFFER
+ms.keywords: _SYNTH_BUFFER, *PSYNTH_BUFFER, SYNTH_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSYNTH_BUFFER, SYNTH_BUFFER
 ---
 
 # _SYNTH_BUFFER structure

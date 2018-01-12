@@ -1,5 +1,5 @@
 ---
-UID: NS.STORPORT._STOR_UNIT_ATTRIBUTES
+UID: NS:storport._STOR_UNIT_ATTRIBUTES
 title: _STOR_UNIT_ATTRIBUTES
 author: windows-driver-content
 description: The STOR_UNIT_ATTRIBUTES structure contains bitfields indicating attribute support for a storage device unit.
@@ -7,8 +7,8 @@ old-location: storage\stor_unit_attributes.htm
 old-project: storage
 ms.assetid: 9677C044-354B-4575-B2EC-187D1B4E8C61
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES, PSTOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES
+ms.date: 1/10/2018
+ms.keywords: _STOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES
 req.product: Windows 10 or later.
 ---
 
@@ -78,9 +79,9 @@ Reserved bits. Must be set to 0.
 
 
 ## -remarks
-The unit attributes are registered with Storport  using this structure as a parameter to the <a href="storage.storportsetunitattributes">StorPortSetUnitAttributes</a> routine.
+The unit attributes are registered with Storport  using this structure as a parameter to the <a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a> routine.
 
-If the miniport driver supports asynchronous notifications, the <b>AsyncNotificationSupported</b> field set to 1, it will send notifications to the Storport driver using the <a href="storage.storportasyncnotificationdetected">StorPortAsyncNotificationDetected</a> routine.
+If the miniport driver supports asynchronous notifications, the <b>AsyncNotificationSupported</b> field set to 1, it will send notifications to the Storport driver using the <a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a> routine.
 
 
 ## -requirements
@@ -111,15 +112,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storportasyncnotificationdetected">StorPortAsyncNotificationDetected</a>
+<a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a>
 </dt>
 <dt>
-<a href="storage.storportsetunitattributes">StorPortSetUnitAttributes</a>
+<a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_UNIT_ATTRIBUTES structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_UNIT_ATTRIBUTES structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

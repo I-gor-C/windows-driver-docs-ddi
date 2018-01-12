@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_CONFIG_SIZE
+UID: NI:ntddser.IOCTL_SERIAL_CONFIG_SIZE
 title: IOCTL_SERIAL_CONFIG_SIZE
 author: windows-driver-content
 description: The IOCTL_SERIAL_CONFIG_SIZE request returns information about configuration size.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_CONFIG_SIZE IOCTL

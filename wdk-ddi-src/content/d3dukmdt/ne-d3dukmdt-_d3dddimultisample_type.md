@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dukmdt._D3DDDIMULTISAMPLE_TYPE
+UID: NE:d3dukmdt._D3DDDIMULTISAMPLE_TYPE
 title: _D3DDDIMULTISAMPLE_TYPE
 author: windows-driver-content
 description: The D3DDDIMULTISAMPLE_TYPE enumeration defines the levels of full-scene multisampling that the device can apply.
@@ -7,7 +7,7 @@ old-location: display\d3dddimultisample_type.htm
 old-project: display
 ms.assetid: aba3b4fd-92e4-4551-9396-ee34e38ecfd6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDIMULTISAMPLE_TYPE, D3DDDIMULTISAMPLE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDIMULTISAMPLE_TYPE
 ---
 
 # _D3DDDIMULTISAMPLE_TYPE enumeration

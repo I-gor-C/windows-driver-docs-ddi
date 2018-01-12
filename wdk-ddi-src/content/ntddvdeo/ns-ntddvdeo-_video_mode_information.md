@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDVDEO._VIDEO_MODE_INFORMATION
+UID: NS:ntddvdeo._VIDEO_MODE_INFORMATION
 title: _VIDEO_MODE_INFORMATION
 author: windows-driver-content
 description: The VIDEO_MODE_INFORMATION structure contains all of the information about one mode of a video adapter.
@@ -7,8 +7,8 @@ old-location: display\video_mode_information.htm
 old-project: display
 ms.assetid: aac658d9-b90a-4724-9dc4-af3a561f64bd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VIDEO_MODE_INFORMATION, *PVIDEO_MODE_INFORMATION, PVIDEO_MODE_INFORMATION, VIDEO_MODE_INFORMATION
+ms.date: 12/29/2017
+ms.keywords: _VIDEO_MODE_INFORMATION, VIDEO_MODE_INFORMATION, *PVIDEO_MODE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VIDEO_MODE_INFORMATION, *PVIDEO_MODE_INFORMATION
 ---
 
 # _VIDEO_MODE_INFORMATION structure
@@ -379,7 +380,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.video_memory_information">VIDEO_MEMORY_INFORMATION</a>
+<a href="..\ntddvdeo\ns-ntddvdeo-_video_memory_information.md">VIDEO_MEMORY_INFORMATION</a>
 </dt>
 <dt>
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_query_avail_modes.md">IOCTL_VIDEO_QUERY_AVAIL_MODES</a>
@@ -392,5 +393,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_MODE_INFORMATION structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_MODE_INFORMATION structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

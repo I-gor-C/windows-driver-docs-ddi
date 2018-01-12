@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d12umddi.PFND3D12DDI_CREATEVIDEODECODERHEAP_0033
+UID: NC:d3d12umddi.PFND3D12DDI_CREATEVIDEODECODERHEAP_0033
 title: PFND3D12DDI_CREATEVIDEODECODERHEAP_0033
 author: windows-driver-content
 description: Used to create a video decoder heap.
@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_createvideodecoderheap_0033_.htm
 old-project: display
 ms.assetid: BCCDBC42-FE6B-49C6-9E95-F0CF7F5CCB2E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 # PFND3D12DDI_CREATEVIDEODECODERHEAP_0033 callback

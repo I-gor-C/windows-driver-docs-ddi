@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILMSGMWIPRIORITY
+UID: NE:rilapitypes.RILMSGMWIPRIORITY
 title: RILMSGMWIPRIORITY
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgmwipriority_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a9efeb68-8838-476f-8ffb-11c8c71163fc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMSGMWIPRIORITY, RILMSGMWIPRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGMWIPRIORITY
 req.product: Windows 10 or later.
 ---
 

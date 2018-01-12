@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dumddi.D3DDDICAPS_SHADER_MIN_PRECISION
+UID: NE:d3dumddi.D3DDDICAPS_SHADER_MIN_PRECISION
 title: D3DDDICAPS_SHADER_MIN_PRECISION
 author: windows-driver-content
 description: Specifies minimum precision levels that the user-mode driver supports in shaders.
@@ -7,7 +7,7 @@ old-location: display\d3dddicaps_shader_min_precision.htm
 old-project: display
 ms.assetid: 98856726-b426-42e4-9560-f6b56164824a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DDDICAPS_SHADER_MIN_PRECISION, D3DDDICAPS_SHADER_MIN_PRECISION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDICAPS_SHADER_MIN_PRECISION
 ---
 
 # D3DDDICAPS_SHADER_MIN_PRECISION enumeration

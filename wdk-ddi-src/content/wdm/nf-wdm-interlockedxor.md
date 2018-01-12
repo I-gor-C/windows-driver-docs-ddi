@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.InterlockedXor
+UID: NF:wdm.InterlockedXor
 title: InterlockedXor function
 author: windows-driver-content
 description: The InterlockedOr routine atomically computes a bitwise exclusive OR operation.
@@ -7,7 +7,7 @@ old-location: kernel\interlockedxor.htm
 old-project: kernel
 ms.assetid: 3ddf62f1-ce5d-4d55-9964-8d1786ac2997
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: InterlockedXor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -114,15 +115,15 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.interlockedand">InterlockedAnd</a>
+<a href="..\wdm\nf-wdm-interlockedand.md">InterlockedAnd</a>
 </dt>
 <dt>
-<a href="kernel.interlockedor">InterlockedOr</a>
+<a href="..\wdm\nf-wdm-interlockedor.md">InterlockedOr</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20InterlockedXor routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20InterlockedXor routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

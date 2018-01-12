@@ -1,5 +1,5 @@
 ---
-UID: NS.HDAUDIO._HDAUDIO_DEVICE_INFORMATION
+UID: NS:hdaudio._HDAUDIO_DEVICE_INFORMATION
 title: _HDAUDIO_DEVICE_INFORMATION
 author: windows-driver-content
 description: The HDAUDIO_DEVICE_INFORMATION structure specifies the hardware capabilities of the HD Audio bus controller.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 091aee9d-5ecd-481a-b5e2-28b4828b2c2e
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_DEVICE_INFORMATION, *PHDAUDIO_DEVICE_INFORMATION, HDAUDIO_DEVICE_INFORMATION, PHDAUDIO_DEVICE_INFORMATION
+ms.keywords: _HDAUDIO_DEVICE_INFORMATION, *PHDAUDIO_DEVICE_INFORMATION, HDAUDIO_DEVICE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: *PHDAUDIO_DEVICE_INFORMATION, HDAUDIO_DEVICE_INFORMATION
 ---
 
 # _HDAUDIO_DEVICE_INFORMATION structure

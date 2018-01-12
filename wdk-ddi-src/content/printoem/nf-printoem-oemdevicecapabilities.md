@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMDeviceCapabilities
+UID: NF:printoem.OEMDeviceCapabilities
 title: OEMDeviceCapabilities function
 author: windows-driver-content
 description: OEMDeviceCapabilities function
@@ -7,7 +7,7 @@ old-location: print\oemdevicecapabilities.htm
 old-project: print
 ms.assetid: fb15fd82-6214-40c0-9982-faee6c6b35b3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMDeviceCapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

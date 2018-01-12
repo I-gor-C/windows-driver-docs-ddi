@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSSTREAM_POINTER_STATE
+UID: NE:ks.KSSTREAM_POINTER_STATE
 title: KSSTREAM_POINTER_STATE
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksstream_pointer_state.htm
 old-project: stream
 ms.assetid: E3DF002D-825C-4DF6-935F-53D73F12FE2E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSSTREAM_POINTER_STATE, KSSTREAM_POINTER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSSTREAM_POINTER_STATE
 ---
 
 # KSSTREAM_POINTER_STATE enumeration

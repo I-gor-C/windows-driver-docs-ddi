@@ -1,13 +1,13 @@
 ---
-UID: NF.ucxcontroller.UcxControllerSetIdStrings
+UID: NF:ucxcontroller.UcxControllerSetIdStrings
 title: UcxControllerSetIdStrings function
 author: windows-driver-content
 description: Updates the identifier strings of a controller after the controller has been initialized.
 old-location: buses\ucxcontrollersetidstrings.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: FC0F6C02-C53A-4F7E-B718-70788FA807F3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UcxControllerSetIdStrings
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ucxstubs.lib
 req.dll: 
 req.irql: 
+req.typenames: UCX_CONTROLLER_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ NTSTATUS UcxControllerSetIdStrings(
 
 ### -param UcxController [in]
 
- A handle to the UCX controller that the client driver received in a previous call to  the <a href="buses._ucxcontrollercreate">UcxControllerCreate</a> method.
+ A handle to the UCX controller that the client driver received in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a> method.
 
 
 ### -param ManufacturerNameString [in]

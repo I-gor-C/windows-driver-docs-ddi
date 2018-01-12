@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILSENDUICCTOOLKITCMDRESPONSEPARAMS
+UID: NS:rilapitypes.RILSENDUICCTOOLKITCMDRESPONSEPARAMS
 title: RILSENDUICCTOOLKITCMDRESPONSEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsenduicctoolkitcmdresponseparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ae203f95-3568-4c78-b799-e1eef6218c7f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS, RILSENDUICCTOOLKITCMDRESPONSEPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILSENDUICCTOOLKITCMDRESPONSEPARAMS, RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUni3.DownloadPattern
+UID: NF:prcomoem.IPrintOemUni3.DownloadPattern
 title: IPrintOemUni3::DownloadPattern method
 author: windows-driver-content
 description: The IPrintOemUni3::DownloadPattern method downloads a pattern to a printer.
@@ -7,7 +7,7 @@ old-location: print\iprintoemuni3_downloadpattern.htm
 old-project: print
 ms.assetid: 7604a6df-c73a-4114-916f-1e777a323731
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUni3, IPrintOemUni3::DownloadPattern, DownloadPattern
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -58,12 +59,12 @@ HRESULT DownloadPattern(
 
 ### -param pdevobj 
 
-A pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+A pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param psoPattern 
 
-A pointer to the <a href="display.surfobj">SURFOBJ</a> structure that contains the pattern to download.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569901">SURFOBJ</a> structure that contains the pattern to download.
 
 
 ### -param lPatternID 
@@ -110,12 +111,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.drvrealizebrush">DrvRealizeBrush</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556273">DrvRealizeBrush</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemUni3::DownloadPattern method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemUni3::DownloadPattern method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

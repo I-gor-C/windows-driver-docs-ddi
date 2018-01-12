@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlCreateSystemVolumeInformationFolder
+UID: NF:ntifs.RtlCreateSystemVolumeInformationFolder
 title: RtlCreateSystemVolumeInformationFolder function
 author: windows-driver-content
 description: The RtlCreateSystemVolumeInformationFolder routine verifies the existence of the &#0034;System Volume Information&#0034; folder on a file system volume. If the folder is not present, then the folder is created.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlcreatesystemvolumeinformationfolder.htm
 old-project: ifsk
 ms.assetid: bcbbddc7-6675-4555-bd05-588762148554
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlCreateSystemVolumeInformationFolder
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlCreateSystemVolumeInformationFolder function
@@ -70,7 +71,7 @@ The <b>RtlCreateSystemVolumeInformationFolder</b> routine returns STATUS_SUCCESS
 ## -remarks
 The <b>RtlCreateSystemVolumeInformationFolder</b> routine verifies the existence of the "System Volume Information" folder on the given volume. 
 
-If the folder is not present, then the folder is created. If the volume is an NTFS volume, the folder is created with an access control list (<a href="ifsk.acl">ACL</a>) containing one access control entry (<a href="ifsk.ace">ACE</a>) indicating full access for the local SYSTEM account, and the ACE will have the inheritance bits set. The folder will be created with the FILE_ATTRIBUTE_HIDDEN and FILE_ATTRIBUTE_SYSTEM attributes set.
+If the folder is not present, then the folder is created. If the volume is an NTFS volume, the folder is created with an access control list (<a href="..\wdm\ns-wdm-_acl.md">ACL</a>) containing one access control entry (<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>) indicating full access for the local SYSTEM account, and the ACE will have the inheritance bits set. The folder will be created with the FILE_ATTRIBUTE_HIDDEN and FILE_ATTRIBUTE_SYSTEM attributes set.
 
 If the folder is already present and the volume is an NTFS volume, the ACE that indicates full control for SYSTEM will be checked and if necessary modified to have the inheritance bits set.
 
@@ -148,15 +149,15 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ace">ACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
 </dt>
 <dt>
-<a href="ifsk.acl">ACL</a>
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlCreateSystemVolumeInformationFolder routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlCreateSystemVolumeInformationFolder routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

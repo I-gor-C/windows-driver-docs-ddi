@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILMSGACKSTATUS
+UID: NE:ntddrilapitypes.RILMSGACKSTATUS
 title: RILMSGACKSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgackstatus.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 551193d0-596c-40bf-9a31-f8b6eb330e25
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMSGACKSTATUS, RILMSGACKSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGACKSTATUS
 ---
 
 # RILMSGACKSTATUS enumeration

@@ -1,14 +1,14 @@
 ---
-UID: NI.ufxbase.IOCTL_INTERNAL_USBFN_DESCRIPTOR_UPDATE
+UID: NI:ufxbase.IOCTL_INTERNAL_USBFN_DESCRIPTOR_UPDATE
 title: IOCTL_INTERNAL_USBFN_DESCRIPTOR_UPDATE
 author: windows-driver-content
 description: The USB function class extension sends this request to the client driver to update to the endpoint descriptor for the specified endpoint.
 old-location: buses\ioctl_internal_usbfn_descriptor_update.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 9BA9BC9E-C04C-48F8-B76A-2D6F779BBE05
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBFN_ACTION, PUSBFN_ACTION, *PUSBFN_ACTION, USBFN_ACTION
+ms.date: 1/4/2018
+ms.keywords: _USBFN_ACTION, USBFN_ACTION, *PUSBFN_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: USBFN_ACTION, *PUSBFN_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -54,11 +55,11 @@ The size of a <b>USBFNPIPEID</b> value.
 
 
 ### -output-buffer
-The output buffer points to a <a href="buses.usb_endpoint_descriptor">USB_ENDPOINT_DESCRIPTOR</a> structure that describes the endpoint descriptor. To retrieve the structure, the client driver must call <a href="wdf.wdfrequestretrieveoutputbuffer">WdfRequestRetrieveOutputBuffer</a>.
+The output buffer points to a <a href="..\usbspec\ns-usbspec-_usb_endpoint_descriptor.md">USB_ENDPOINT_DESCRIPTOR</a> structure that describes the endpoint descriptor. To retrieve the structure, the client driver must call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputbuffer.md">WdfRequestRetrieveOutputBuffer</a>.
 
 
 ### -output-buffer-length
-The size of a <a href="buses.usb_endpoint_descriptor">USB_ENDPOINT_DESCRIPTOR</a> structure.
+The size of a <a href="..\usbspec\ns-usbspec-_usb_endpoint_descriptor.md">USB_ENDPOINT_DESCRIPTOR</a> structure.
 
 
 ### -in-out-buffer
@@ -78,7 +79,7 @@ I/O Status block
 
 
 ## -remarks
-UFX sends this IOCTL to the command queue created for the endpoint by <a href="buses.ufxendpointcreate">UfxEndpointCreate</a>.  The client driver is expected to update the configuration of the endpoint on the controller with the parameters contained in the endpoint descriptor.
+UFX sends this IOCTL to the command queue created for the endpoint by <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.  The client driver is expected to update the configuration of the endpoint on the controller with the parameters contained in the endpoint descriptor.
 
 
 ## -requirements

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_SET_LINE_CONTROL
+UID: NI:ntddser.IOCTL_SERIAL_SET_LINE_CONTROL
 title: IOCTL_SERIAL_SET_LINE_CONTROL
 author: windows-driver-content
 description: The IOCTL_SERIAL_SET_LINE_CONTROL request sets the line control register (LCR). The line control register controls the data size, the number of stop bits, and the parity.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_LINE_CONTROL IOCTL
@@ -47,7 +48,7 @@ To obtain the value of the line control register, a client can use an <a href=".
 ## -ioctlparameters
 
 ### -input-buffer
-The <b>AssociatedIrp.SystemBuffer</b> points to a client-allocated <a href="serports.serial_line_control">SERIAL_LINE_CONTROL</a> structure that is used to input line control information.
+The <b>AssociatedIrp.SystemBuffer</b> points to a client-allocated <a href="..\ntddser\ns-ntddser-_serial_line_control.md">SERIAL_LINE_CONTROL</a> structure that is used to input line control information.
 
 
 ### -input-buffer-length
@@ -101,7 +102,7 @@ Header
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_line_control.md">IOCTL_SERIAL_GET_LINE_CONTROL</a>
 </dt>
 <dt>
-<a href="serports.serial_line_control">SERIAL_LINE_CONTROL</a>
+<a href="..\ntddser\ns-ntddser-_serial_line_control.md">SERIAL_LINE_CONTROL</a>
 </dt>
 </dl>
  

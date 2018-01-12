@@ -1,5 +1,5 @@
 ---
-UID: NC.storport.VIRTUAL_HW_FIND_ADAPTER
+UID: NC:storport.VIRTUAL_HW_FIND_ADAPTER
 title: VIRTUAL_HW_FIND_ADAPTER
 author: windows-driver-content
 description: The Storport virtual miniport uses configuration information supplied to the VirtualHwStorFindAdapter routine to further initialize itself.
@@ -7,8 +7,8 @@ old-location: storage\virtualhwstorfindadapter.htm
 old-project: storage
 ms.assetid: 55c16545-194e-4d23-b2e6-26821180eafa
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER
 req.product: Windows 10 or later.
 ---
 
@@ -90,7 +91,7 @@ A pointer to a null-terminated ASCII string. This string, if supplied, contains 
 
 ### -param ConfigInfo 
 
-A pointer to a <a href="storage.port_configuration_information__storport_">PORT_CONFIGURATION_INFORMATION</a> structure. The port driver initializes this structure with any known configuration information, such as values that the miniport driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> set in the <a href="storage.virtual_hw_initialization_data">VIRTUAL_HW_INITIALIZATION_DATA</a>. <b>VirtualHwStorFindAdapter</b>  must use any supplied information to determine if the virtual HBA it describes is one that the miniport driver supports. If so, <b>VirtualHwStorFindAdapter</b> initializes and configures that HBA and fills in any missing configuration information. If possible, a miniport driver should have default configuration values for each type of HBA that it supports, in the event that the operating system-dependent port driver cannot supply additional configuration information that was not provided by the miniport driver's <b>DriverEntry</b> routine.
+A pointer to a <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structure. The port driver initializes this structure with any known configuration information, such as values that the miniport driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> set in the <a href="..\storport\ns-storport-_virtual_hw_initialization_data.md">VIRTUAL_HW_INITIALIZATION_DATA</a>. <b>VirtualHwStorFindAdapter</b>  must use any supplied information to determine if the virtual HBA it describes is one that the miniport driver supports. If so, <b>VirtualHwStorFindAdapter</b> initializes and configures that HBA and fills in any missing configuration information. If possible, a miniport driver should have default configuration values for each type of HBA that it supports, in the event that the operating system-dependent port driver cannot supply additional configuration information that was not provided by the miniport driver's <b>DriverEntry</b> routine.
 
 
 ### -param Again 
@@ -102,10 +103,10 @@ Not used.
 <b>VirtualHwStorFindAdapter</b> must return one of the following status values:
 <dl>
 <dt><b>SP_RETURN_FOUND</b></dt>
-</dl>Indicates that a supported HBA was found and that the HBA-relevant configuration information was determined successfully and set in the <a href="storage.port_configuration_information__storport_">PORT_CONFIGURATION_INFORMATION</a> structure.
+</dl>Indicates that a supported HBA was found and that the HBA-relevant configuration information was determined successfully and set in the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structure.
 <dl>
 <dt><b>SP_RETURN_ERROR</b></dt>
-</dl>Indicates that an HBA was found, but an error occurred when it obtained the configuration information. If possible, such an error should be logged with <a href="storage.scsiportlogerror">ScsiPortLogError</a>.
+</dl>Indicates that an HBA was found, but an error occurred when it obtained the configuration information. If possible, such an error should be logged with <a href="..\srb\nf-srb-scsiportlogerror.md">ScsiPortLogError</a>.
 <dl>
 <dt><b>SP_RETURN_BAD_CONFIG</b></dt>
 </dl>Indicates that the supplied configuration information was invalid for the adapter.
@@ -161,21 +162,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hwstorfindadapter">HwStorFindAdapter</a>
+<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 </dt>
 <dt>
-<a href="storage.port_configuration_information__storport_">PORT_CONFIGURATION_INFORMATION</a>
+<a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
 </dt>
 <dt>
-<a href="storage.scsiportlogerror">ScsiPortLogError</a>
+<a href="..\srb\nf-srb-scsiportlogerror.md">ScsiPortLogError</a>
 </dt>
 <dt>
-<a href="storage.virtual_hw_initialization_data">VIRTUAL_HW_INITIALIZATION_DATA</a>
+<a href="..\storport\ns-storport-_virtual_hw_initialization_data.md">VIRTUAL_HW_INITIALIZATION_DATA</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20VirtualHwStorFindAdapter routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20VirtualHwStorFindAdapter routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

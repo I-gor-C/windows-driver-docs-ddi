@@ -1,5 +1,5 @@
 ---
-UID: NS.AVCSTRM.TAGKS_DATAFORMAT_DV_AVC
+UID: NS:avcstrm.tagKS_DATAFORMAT_DV_AVC
 title: tagKS_DATAFORMAT_DV_AVC
 author: windows-driver-content
 description: The KS_DATAFORMAT_DV_AVC structure stores the data format for an AV/C digital video connection.
@@ -7,8 +7,8 @@ old-location: stream\ks_dataformat_dv_avc.htm
 old-project: stream
 ms.assetid: fe545ee3-8004-46fc-a49a-4274f8d1a6a7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagKS_DATAFORMAT_DV_AVC, PKS_DATAFORMAT_DV_AVC, *PKS_DATAFORMAT_DV_AVC, KS_DATAFORMAT_DV_AVC
+ms.date: 1/9/2018
+ms.keywords: tagKS_DATAFORMAT_DV_AVC, KS_DATAFORMAT_DV_AVC, *PKS_DATAFORMAT_DV_AVC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KS_DATAFORMAT_DV_AVC, *PKS_DATAFORMAT_DV_AVC
 ---
 
 # tagKS_DATAFORMAT_DV_AVC structure
@@ -94,15 +95,15 @@ Header
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
 </dt>
 <dt>
-<a href="stream.dvinfo">DVINFO</a>
+<a href="..\avcstrm\ns-avcstrm-_dvinfo.md">DVINFO</a>
 </dt>
 <dt>
-<a href="stream.avcconnectinfo">AVCCONNECTINFO</a>
+<a href="..\avc\ns-avc-_avcconnectinfo.md">AVCCONNECTINFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_DATAFORMAT_DV_AVC structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_DATAFORMAT_DV_AVC structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

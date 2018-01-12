@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisGetProcessorInformation
+UID: NF:ndis.NdisGetProcessorInformation
 title: NdisGetProcessorInformation function
 author: windows-driver-content
 description: The NdisGetProcessorInformation function retrieves information about the CPU topology of the local computer and the set of processors that a miniport driver must use for receive side scaling (RSS).
 old-location: netvista\ndisgetprocessorinformation.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2cee5cf4-7dee-49d2-905c-2b9634137ce4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisGetProcessorInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisGetProcessorInformation function
@@ -58,7 +59,7 @@ NDIS_STATUS NdisGetProcessorInformation(
 ### -param SystemProcessorInfo [in, out]
 
 A pointer to an 
-     <a href="netvista.ndis_system_processor_info">
+     <a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">
      NDIS_SYSTEM_PROCESSOR_INFO</a> structure that NDIS fills with the information about the CPU topology
      of the system and the RSS processor set.
 
@@ -111,9 +112,9 @@ Version
 </th>
 <td width="70%">
 Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, ise 
-   <a href="netvista.ndisgetprocessorinformationex">
+   <a href="..\ndis\nf-ndis-ndisgetprocessorinformationex.md">
    NdisGetProcessorInformationEx</a> or 
-   <a href="netvista.ndisgetrssprocessorinformation">
+   <a href="..\ndis\nf-ndis-ndisgetrssprocessorinformation.md">
    NdisGetRssProcessorInformation</a> instead. 
 
 </td>
@@ -159,14 +160,14 @@ PASSIVE_LEVEL
    MiniportFilterResourceRequirements</a>
 </dt>
 <dt>
-<a href="netvista.ndis_system_processor_info">NDIS_SYSTEM_PROCESSOR_INFO</a>
+<a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">NDIS_SYSTEM_PROCESSOR_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndisgetprocessorinformationex">
+<a href="..\ndis\nf-ndis-ndisgetprocessorinformationex.md">
    NdisGetProcessorInformationEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisgetrssprocessorinformation">
+<a href="..\ndis\nf-ndis-ndisgetrssprocessorinformation.md">
    NdisGetRssProcessorInformation</a>
 </dt>
 </dl>
@@ -174,5 +175,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisGetProcessorInformation function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetProcessorInformation function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

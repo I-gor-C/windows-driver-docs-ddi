@@ -1,5 +1,5 @@
 ---
-UID: NS.SMCLIB._SCARD_READER_CAPABILITIES
+UID: NS:smclib._SCARD_READER_CAPABILITIES
 title: _SCARD_READER_CAPABILITIES
 author: windows-driver-content
 description: The SCARD_READER_CAPABILITIES structure holds state information about the smart card reader.
@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: f55b74d0-d545-419a-87fb-c320f789aaf4
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SCARD_READER_CAPABILITIES, PSCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES
+ms.keywords: _SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES
 req.product: Windows 10 or later.
 ---
 
@@ -317,7 +318,7 @@ A smart card is inserted and a protocol has been selected.
 </table>
  
 
-Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="smartcrd.smartcard_extension">SMARTCARD_EXTENSION</a>. 
+Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="..\smclib\ns-smclib-_smartcard_extension.md">SMARTCARD_EXTENSION</a>. 
 
 
 ### -field Channel

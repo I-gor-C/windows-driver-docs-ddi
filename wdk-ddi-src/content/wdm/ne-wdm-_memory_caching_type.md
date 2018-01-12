@@ -1,5 +1,5 @@
 ---
-UID: NE.wdm._MEMORY_CACHING_TYPE
+UID: NE:wdm._MEMORY_CACHING_TYPE
 title: _MEMORY_CACHING_TYPE
 author: windows-driver-content
 description: The MEMORY_CACHING_TYPE enumeration type specifies the permitted caching behavior when allocating or mapping memory.
@@ -7,7 +7,7 @@ old-location: kernel\memory_caching_type.htm
 old-project: kernel
 ms.assetid: 14cde545-e9bb-4b96-ba10-a63595e8a107
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: _MEMORY_CACHING_TYPE, MEMORY_CACHING_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: PASSIVE_LEVEL (See Remarks section)
+req.typenames: MEMORY_CACHING_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -127,24 +128,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.mmallocatecontiguousmemoryspecifycache">MmAllocateContiguousMemorySpecifyCache</a>
+<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
 </dt>
 <dt>
-<a href="kernel.mmfreecontiguousmemoryspecifycache">MmFreeContiguousMemorySpecifyCache</a>
+<a href="..\wdm\nf-wdm-mmfreecontiguousmemoryspecifycache.md">MmFreeContiguousMemorySpecifyCache</a>
 </dt>
 <dt>
-<a href="kernel.mmmapiospace">MmMapIoSpace</a>
+<a href="..\wdm\nf-wdm-mmmapiospace.md">MmMapIoSpace</a>
 </dt>
 <dt>
-<a href="kernel.mmmaplockedpagesspecifycache">MmMapLockedPagesSpecifyCache</a>
+<a href="..\wdm\nf-wdm-mmmaplockedpagesspecifycache.md">MmMapLockedPagesSpecifyCache</a>
 </dt>
 <dt>
-<a href="kernel.mmmaplockedpageswithreservedmapping">MmMapLockedPagesWithReservedMapping</a>
+<a href="..\wdm\nf-wdm-mmmaplockedpageswithreservedmapping.md">MmMapLockedPagesWithReservedMapping</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MEMORY_CACHING_TYPE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MEMORY_CACHING_TYPE enumeration%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

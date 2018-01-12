@@ -1,5 +1,5 @@
 ---
-UID: NF.spb.SPB_TRANSFER_LIST_ENTRY_INIT_BUFFER_LIST
+UID: NF:spb.SPB_TRANSFER_LIST_ENTRY_INIT_BUFFER_LIST
 title: SPB_TRANSFER_LIST_ENTRY_INIT_BUFFER_LIST function
 author: windows-driver-content
 description: The SPB_TRANSFER_LIST_ENTRY_INIT_BUFFER_LIST function returns an SPB_TRANSFER_LIST_ENTRY structure that is initialized to describe a scatter-gather list.SPB_TRANSFER_LIST_ENTRY_INIT_BUFFER_LIST function returns an SPB_TRANSFER_LIST_ENTRY structure that is initialized to describe a scatter-gather list.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: SPB_TRANSFER_DIRECTION, *PSPB_TRANSFER_DIRECTION
 req.product: Windows 10 or later.
 ---
 

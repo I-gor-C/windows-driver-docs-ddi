@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._STORAGE_MINIPORT_DESCRIPTOR
+UID: NS:ntddstor._STORAGE_MINIPORT_DESCRIPTOR
 title: _STORAGE_MINIPORT_DESCRIPTOR
 author: windows-driver-content
 description: Reserved for system use.
@@ -7,8 +7,8 @@ old-location: storage\storage_miniport_descriptor.htm
 old-project: storage
 ms.assetid: 30497CA8-70B6-48F9-B5D5-45E606A3226E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR, PSTORAGE_MINIPORT_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_MINIPORT_DESCRIPTOR, *PSTORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR
 ---
 
 # _STORAGE_MINIPORT_DESCRIPTOR structure
@@ -76,7 +77,7 @@ Specifies the total size of the data returned, in bytes. This may include data t
 ### -field Portdriver
 
 Type of port driver as enumerated by the 
-     <a href="storage.storage_port_code_set">STORAGE_PORT_CODE_SET</a> enumeration.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/mt668773">STORAGE_PORT_CODE_SET</a> enumeration.
 
 
 ### -field LUNResetSupported

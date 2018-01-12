@@ -1,5 +1,5 @@
 ---
-UID: NF.bdasup.BdaCreateTopology
+UID: NF:bdasup.BdaCreateTopology
 title: BdaCreateTopology function
 author: windows-driver-content
 description: The BdaCreateTopology function creates the topology between two pins.
@@ -7,7 +7,7 @@ old-location: stream\bdacreatetopology.htm
 old-project: stream
 ms.assetid: 855ef77c-2a85-4c8c-b8e3-c4aaa0d2a089
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: BdaCreateTopology
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Bdasup.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PKSP_BDA_NODE_PIN, KSP_BDA_NODE_PIN
 ---
 
 # BdaCreateTopology function
@@ -77,7 +78,7 @@ Returns STATUS_SUCCESS or an appropriate error code. Returns <b>NULL</b> if no v
 
 
 ## -remarks
-A BDA minidriver calls the <a href="stream.bdamethodcreatetopology">BdaMethodCreateTopology</a> function when the network provider dynamically creates a topology between filter pins using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563413">KSMETHOD_BDA_CREATE_TOPOLOGY</a> request of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a> method set. If a BDA minidriver must create a topology between filter pins without relying on the network provider, the BDA minidriver should call the <b>BdaCreateTopology</b> function directly.
+A BDA minidriver calls the <a href="..\bdasup\nf-bdasup-bdamethodcreatetopology.md">BdaMethodCreateTopology</a> function when the network provider dynamically creates a topology between filter pins using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563413">KSMETHOD_BDA_CREATE_TOPOLOGY</a> request of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563404">KSMETHODSETID_BdaDeviceConfiguration</a> method set. If a BDA minidriver must create a topology between filter pins without relying on the network provider, the BDA minidriver should call the <b>BdaCreateTopology</b> function directly.
 
 
 ## -requirements
@@ -140,10 +141,10 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.bdamethodcreatetopology">BdaMethodCreateTopology</a>
+<a href="..\bdasup\nf-bdasup-bdamethodcreatetopology.md">BdaMethodCreateTopology</a>
 </dt>
 <dt>
-<a href="stream.ksfilter">KSFILTER</a>
+<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563413">KSMETHOD_BDA_CREATE_TOPOLOGY</a>
@@ -156,5 +157,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BdaCreateTopology function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BdaCreateTopology function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

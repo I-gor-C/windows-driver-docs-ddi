@@ -1,5 +1,5 @@
 ---
-UID: NF.iddcx.IDD_CX_CLIENT_CONFIG_INIT
+UID: NF:iddcx.IDD_CX_CLIENT_CONFIG_INIT
 title: IDD_CX_CLIENT_CONFIG_INIT function
 author: windows-driver-content
 description: Initializes the IDD_CX_CLIENT_CONFIG structure.
@@ -7,7 +7,7 @@ old-location: display\idd_cx_client_config_init.htm
 old-project: display
 ms.assetid: 0b2cf0d6-1d69-4917-9e97-f8f2563e6d3c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDD_CX_CLIENT_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDD_CX_CLIENT_CONFIG_INIT function

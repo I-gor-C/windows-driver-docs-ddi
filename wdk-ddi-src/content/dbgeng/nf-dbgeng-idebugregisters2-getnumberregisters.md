@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugRegisters2.GetNumberRegisters
+UID: NF:dbgeng.IDebugRegisters2.GetNumberRegisters
 title: IDebugRegisters2::GetNumberRegisters method
 author: windows-driver-content
 description: The GetNumberRegisters method returns the number of registers on the target computer.
 old-location: debugger\getnumberregisters.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 51c521fc-e89c-49c9-8110-de31af3bed83
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugRegisters2, IDebugRegisters2::GetNumberRegisters, GetNumberRegisters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugRegisters2::GetNumberRegisters method

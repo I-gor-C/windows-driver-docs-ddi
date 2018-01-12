@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSDS3D_HRTF_INIT_MSG
+UID: NS:ksmedia.KSDS3D_HRTF_INIT_MSG
 title: KSDS3D_HRTF_INIT_MSG
 author: windows-driver-content
 description: The KSDS3D_HRTF_INIT_MSG structure specifies the parameter settings to use to initialize the head-relative transfer function (HRTF).
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 8e25a1e2-24b1-418c-b1eb-884bdbad63b3
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSDS3D_HRTF_INIT_MSG, PKSDS3D_HRTF_INIT_MSG, *PKSDS3D_HRTF_INIT_MSG, KSDS3D_HRTF_INIT_MSG
+ms.keywords: KSDS3D_HRTF_INIT_MSG, *PKSDS3D_HRTF_INIT_MSG, KSDS3D_HRTF_INIT_MSG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSDS3D_HRTF_INIT_MSG, KSDS3D_HRTF_INIT_MSG
 ---
 
 # KSDS3D_HRTF_INIT_MSG structure

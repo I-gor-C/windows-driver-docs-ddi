@@ -1,5 +1,5 @@
 ---
-UID: NI.acpiioct.IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK
+UID: NI:acpiioct.IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK
 title: IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK
 author: windows-driver-content
 description: The IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK device control request is reserved for internal use only.
@@ -7,8 +7,8 @@ old-location: acpi\ioctl_acpi_acquire_global_lock.htm
 old-project: acpi
 ms.assetid: 359bd4d4-2557-4755-8904-32162645cdc0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS, PUNIT_ISOCH_PARAMS
+ms.date: 12/31/2017
+ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_ACQUIRE_GLOBAL_LOCK IOCTL

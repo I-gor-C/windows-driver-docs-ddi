@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlCheckLockForWriteAccess~r1
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlCheckLockForWriteAccess~r1
 title: FsRtlCheckLockForWriteAccess function
 author: windows-driver-content
 description: The FsRtlCheckLockForWriteAccess routine determines whether the process associated with a given IRP has write access to a locked region of a file.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlchecklockforwriteaccess.htm
 old-project: ifsk
 ms.assetid: 549da751-6a28-4d54-995f-dabb9e29ab09
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlCheckLockForWriteAccess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlCheckLockForWriteAccess function
@@ -56,7 +57,7 @@ BOOLEAN FsRtlCheckLockForWriteAccess(
 
 ### -param FileLock [in]
 
-Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="ifsk.fsrtlallocatefilelock">FsRtlAllocateFileLock</a> or <a href="ifsk.fsrtlinitializefilelock">FsRtlInitializeFileLock</a>.
+Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock~r1.md">FsRtlAllocateFileLock</a> or <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock~r2.md">FsRtlInitializeFileLock</a>.
 
 
 ### -param Irp [in]
@@ -77,7 +78,7 @@ On Microsoft Windows 2000 and earlier, <b>FsRtlCheckLockForWriteAccess</b> check
 
 <b>FsRtlCheckLockForWriteAccess</b> does not complete the IRP specified by <i>Irp</i>. 
 
-Minifilters must call <a href="ifsk.fltchecklockforwriteaccess">FltCheckLockForWriteAccess</a> instead of <b>FsRtlCheckLockForWriteAccess</b>. 
+Minifilters must call <a href="..\fltkernel\nf-fltkernel-fltchecklockforwriteaccess.md">FltCheckLockForWriteAccess</a> instead of <b>FsRtlCheckLockForWriteAccess</b>. 
 
 
 ## -requirements
@@ -141,27 +142,27 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltchecklockforwriteaccess">FltCheckLockForWriteAccess</a>
+<a href="..\fltkernel\nf-fltkernel-fltchecklockforwriteaccess.md">FltCheckLockForWriteAccess</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlallocatefilelock">FsRtlAllocateFileLock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock~r1.md">FsRtlAllocateFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlchecklockforreadaccess">FsRtlCheckLockForReadAccess</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlchecklockforreadaccess~r1.md">FsRtlCheckLockForReadAccess</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlfastchecklockforwrite">FsRtlFastCheckLockForWrite</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastchecklockforwrite~r5.md">FsRtlFastCheckLockForWrite</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlinitializefilelock">FsRtlInitializeFileLock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock~r2.md">FsRtlInitializeFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlprocessfilelock">FsRtlProcessFileLock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprocessfilelock~r2.md">FsRtlProcessFileLock</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCheckLockForWriteAccess routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCheckLockForWriteAccess routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

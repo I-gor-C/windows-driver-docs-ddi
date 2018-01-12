@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_GET_BAUD_RATE
+UID: NI:ntddser.IOCTL_SERIAL_GET_BAUD_RATE
 title: IOCTL_SERIAL_GET_BAUD_RATE
 author: windows-driver-content
 description: The IOCTL_SERIAL_GET_BAUD_RATE request returns the baud rate at which the serial port is currently configured to transmit and receive data.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_BAUD_RATE IOCTL
@@ -59,7 +60,7 @@ The <b>AssociatedIrp.SystemBuffer</b> member points to a client-allocated <b>SER
 
 
 ### -output-buffer-length
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size in bytes of a <a href="serports.serial_baud_rate">SERIAL_BAUD_RATE</a> structure.
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size in bytes of a <a href="..\ntddser\ns-ntddser-_serial_baud_rate.md">SERIAL_BAUD_RATE</a> structure.
 
 
 ### -in-out-buffer
@@ -72,7 +73,7 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the si
 
 ### -status-block
 I/O Status block
-If the request is successful, the <b>Information</b> member is set to the size in bytes of a <a href="serports.serial_baud_rate">SERIAL_BAUD_RATE</a> structure. Otherwise, the <b>Information</b> member is set to zero.
+If the request is successful, the <b>Information</b> member is set to the size in bytes of a <a href="..\ntddser\ns-ntddser-_serial_baud_rate.md">SERIAL_BAUD_RATE</a> structure. Otherwise, the <b>Information</b> member is set to zero.
 
 The <b>Status</b> member is set to one of the <a href="serial_device_control_requests.htm#generic_status_values_for_serial_device_control_requests">Generic Status Values for Serial Device Control Requests</a>.
 
@@ -101,7 +102,7 @@ Header
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_baud_rate.md">IOCTL_SERIAL_SET_BAUD_RATE</a>
 </dt>
 <dt>
-<a href="serports.serial_baud_rate">SERIAL_BAUD_RATE</a>
+<a href="..\ntddser\ns-ntddser-_serial_baud_rate.md">SERIAL_BAUD_RATE</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPublishDeviceProfile
+UID: NF:ks.KsPublishDeviceProfile
 title: KsPublishDeviceProfile function
 author: windows-driver-content
 description: The KsPublishDeviceProfile API is called to publish device profile information.
@@ -7,7 +7,7 @@ old-location: stream\kspublishdeviceprofile.htm
 old-project: stream
 ms.assetid: 944A593D-D623-400C-80F9-6DCD973681C9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPublishDeviceProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsPublishDeviceProfile function
@@ -56,12 +57,12 @@ The <b>KsPublishDeviceProfile</b> API is called to publish device profile inform
 
 ### -param FilterFactory [in]
 
-This is the same <a href="stream.ksfilterfactory">KSFILTERFACTORY</a> used in the <a href="stream.ksinitializedeviceprofile">KsInitializeDeviceProfile</a> API.
+This is the same <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> used in the <a href="..\ks\nf-ks-ksinitializedeviceprofile.md">KsInitializeDeviceProfile</a> API.
 
 
 ### -param Profile [in]
 
-This is a camera profile of type <a href="stream.ksdevice_profile_info">KSDEVICE_PROFILE_INFO</a>.
+This is a camera profile of type <a href="..\ksmedia\ns-ksmedia-_ksdevice_profile_info.md">KSDEVICE_PROFILE_INFO</a>.
 
 
 ## -returns

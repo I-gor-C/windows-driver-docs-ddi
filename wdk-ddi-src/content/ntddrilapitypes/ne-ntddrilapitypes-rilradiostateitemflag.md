@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILRADIOSTATEITEMFLAG
+UID: NE:ntddrilapitypes.RILRADIOSTATEITEMFLAG
 title: RILRADIOSTATEITEMFLAG
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilradiostateitemflag.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: dcbd0b16-4960-4cc1-b76b-6d971ba6a192
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILRADIOSTATEITEMFLAG, RILRADIOSTATEITEMFLAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRADIOSTATEITEMFLAG
 ---
 
 # RILRADIOSTATEITEMFLAG enumeration

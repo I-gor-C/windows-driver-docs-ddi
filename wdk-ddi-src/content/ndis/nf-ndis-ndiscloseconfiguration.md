@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCloseConfiguration
+UID: NF:ndis.NdisCloseConfiguration
 title: NdisCloseConfiguration function
 author: windows-driver-content
 description: The NdisCloseConfiguration function releases the handle to the registry key that was returned by the NdisOpenConfigurationEx, NdisOpenConfigurationKeyByIndex, or NdisOpenConfigurationKeyByName function.
 old-location: netvista\ndiscloseconfiguration.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2d68f7dd-3954-4b3b-8673-1da63e1a1edc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisCloseConfiguration
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCloseConfiguration function
@@ -40,10 +41,10 @@ req.irql: PASSIVE_LEVEL
 ## -description
 The 
   <b>NdisCloseConfiguration</b> function releases the handle to the registry key that was returned by the 
-  <a href="netvista.ndisopenconfigurationex">NdisOpenConfigurationEx</a>, 
-  <a href="netvista.ndisopenconfigurationkeybyindex">
+  <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>, 
+  <a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyindex.md">
   NdisOpenConfigurationKeyByIndex</a>, or 
-  <a href="netvista.ndisopenconfigurationkeybyname">
+  <a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
   NdisOpenConfigurationKeyByName</a> function.
 
 
@@ -62,7 +63,7 @@ VOID NdisCloseConfiguration(
 ### -param ConfigurationHandle [in]
 
 The handle that the 
-     <a href="netvista.ndisopenconfigurationex">NdisOpenConfigurationEx</a> function
+     <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a> function
      returns.
 
 
@@ -141,7 +142,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>, <a href="devtest.ndis_ndisopenconfigurationex">NdisOpenConfigurationEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>, <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 </td>
 </tr>
 </table>
@@ -156,24 +157,24 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenconfigurationex">NdisOpenConfigurationEx</a>
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenconfigurationkeybyindex">
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyindex.md">
    NdisOpenConfigurationKeyByIndex</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenconfigurationkeybyname">
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
    NdisOpenConfigurationKeyByName</a>
 </dt>
 <dt>
-<a href="netvista.ndisreadconfiguration">NdisReadConfiguration</a>
+<a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
 </dt>
 <dt>
-<a href="netvista.ndisreadnetworkaddress">NdisReadNetworkAddress</a>
+<a href="..\ndis\nf-ndis-ndisreadnetworkaddress.md">NdisReadNetworkAddress</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteconfiguration">NdisWriteConfiguration</a>
+<a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
@@ -183,5 +184,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCloseConfiguration function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCloseConfiguration function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

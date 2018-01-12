@@ -1,5 +1,5 @@
 ---
-UID: NS.DXVA._DXVA_BUFFERDESCRIPTION
+UID: NS:dxva._DXVA_BufferDescription
 title: _DXVA_BufferDescription
 author: windows-driver-content
 description: The DXVA_BufferDescription structure is sent by the host decoder to the accelerator to provide information to the accelerator about the buffer that is currently being passed from the host to the accelerator.
@@ -7,8 +7,8 @@ old-location: display\dxva_bufferdescription.htm
 old-project: display
 ms.assetid: 34b1585d-ceba-4e13-b5c1-70ce29a940c5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXVA_BufferDescription, *LPDXVA_BufferDescription, DXVA_BufferDescription, LPDXVA_BufferDescription
+ms.date: 12/29/2017
+ms.keywords: _DXVA_BufferDescription, DXVA_BufferDescription, *LPDXVA_BufferDescription
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVA_BufferDescription, *LPDXVA_BufferDescription
 ---
 
 # _DXVA_BufferDescription structure
@@ -243,7 +244,7 @@ Specifies the amount of relevant data in the buffer in bytes. The location of th
 
 ### -field dwFirstMBaddress
 
-Specifies the macroblock address of the first macroblock in the buffer passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of <a href="display.dxva_pictureparameters">DXVA_PictureParameters</a>. Examples of macroblock addresses are as follows.
+Specifies the macroblock address of the first macroblock in the buffer passed to the accelerator. The macroblock address is given in raster scan order. The address is determined by the members of <a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>. Examples of macroblock addresses are as follows.
 
 <table>
 <tr>
@@ -335,7 +336,7 @@ Slice-control command
 
 </td>
 <td>
-Must be equal to the value of the <b>wNumberMBsInSlice</b> member of the <a href="display.dxva_sliceinfo">DXVA_SliceInfo</a> structure in the slice-control buffer.
+Must be equal to the value of the <b>wNumberMBsInSlice</b> member of the <a href="..\dxva\ns-dxva-_dxva_sliceinfo.md">DXVA_SliceInfo</a> structure in the slice-control buffer.
 
 </td>
 </tr>
@@ -395,15 +396,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxva_sliceinfo">DXVA_SliceInfo</a>
+<a href="..\dxva\ns-dxva-_dxva_sliceinfo.md">DXVA_SliceInfo</a>
 </dt>
 <dt>
-<a href="display.dxva_pictureparameters">DXVA_PictureParameters</a>
+<a href="..\dxva\ns-dxva-_dxva_pictureparameters.md">DXVA_PictureParameters</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_BufferDescription structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_BufferDescription structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

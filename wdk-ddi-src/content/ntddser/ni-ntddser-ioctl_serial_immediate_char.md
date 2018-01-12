@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_IMMEDIATE_CHAR
+UID: NI:ntddser.IOCTL_SERIAL_IMMEDIATE_CHAR
 title: IOCTL_SERIAL_IMMEDIATE_CHAR
 author: windows-driver-content
 description: The IOCTL_SERIAL_IMMEDIATE_CHAR request causes a specified character to be transmitted as soon as possible.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_IMMEDIATE_CHAR IOCTL

@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.SOUNDDETECTOR_PATTERNHEADER
+UID: NS:ksmedia.SOUNDDETECTOR_PATTERNHEADER
 title: SOUNDDETECTOR_PATTERNHEADER
 author: windows-driver-content
 description: The SOUNDDETECTOR_PATTERNHEADER structure specifies the pattern header for the sound detector in the KSPROPERTY_SOUNDDETECTOR_PATTERNS property.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SOUNDDETECTOR_PATTERNHEADER
 ---
 
 # SOUNDDETECTOR_PATTERNHEADER structure

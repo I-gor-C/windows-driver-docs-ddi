@@ -1,14 +1,13 @@
 ---
-UID: NA:
+UID: NA:d3dkmthk
 ---
 
 # D3Dkmthk.h header
 
 ## -description
 
-This header is used by Display, Windows kernel. For more information, see
+This header is used by Display. For more information, see
 - [Display](../_display/index.md)
-- [Windows kernel](../_kernel/index.md)
 
 D3Dkmthk.h contain these programming interfaces:
 
@@ -350,7 +349,6 @@ D3Dkmthk.h contain these programming interfaces:
 | [_D3DKMT_WORKINGSETINFO structure](ns-d3dkmthk-_d3dkmt_workingsetinfo.md) | The D3DKMT_WORKINGSETINFO structure describes information about the graphics adapter's working set that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function. |
 | [_DXGK_GRAPHICSPOWER_REGISTER_INPUT_V_1_1 structure](ns-d3dkmthk-_dxgk_graphicspower_register_input_v_1_1.md) | Used to register the power state of a new input. |
 | [_DXGK_GRAPHICSPOWER_REGISTER_OUTPUT structure](ns-d3dkmthk-_dxgk_graphicspower_register_output.md) | A structure containing output data used to manage shared power components. |
-| [_OBJECT_ATTRIBUTES structure](ns-d3dkmthk-_object_attributes.md) | The OBJECT_ATTRIBUTES structure specifies attributes that can be applied to objects or object handles by routines that create objects and/or return handles to objects. |
 
 ## Enumerations
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.winsplp.SpoolerFindClosePrinterChangeNotification
+UID: NF:winsplp.SpoolerFindClosePrinterChangeNotification
 title: SpoolerFindClosePrinterChangeNotification function
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\spoolerfindcloseprinterchangenotification.htm
 old-project: print
 ms.assetid: 13C65DAB-04BA-4B19-B810-B484F7C1C4DA
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: SpoolerFindClosePrinterChangeNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: NOTIFICATION_CONFIG_FLAGS
 req.product: Windows 10 or later.
 ---
 

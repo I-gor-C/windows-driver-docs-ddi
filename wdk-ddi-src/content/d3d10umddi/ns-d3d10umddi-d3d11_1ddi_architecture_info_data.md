@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1DDI_ARCHITECTURE_INFO_DATA
+UID: NS:d3d10umddi.D3D11_1DDI_ARCHITECTURE_INFO_DATA
 title: D3D11_1DDI_ARCHITECTURE_INFO_DATA
 author: windows-driver-content
 description: Describes information about display adapter architecture.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_architecture_info_data.htm
 old-project: display
 ms.assetid: 262d511d-2846-415d-b1b8-2687f12f9f78
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_ARCHITECTURE_INFO_DATA, D3D11_1DDI_ARCHITECTURE_INFO_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_ARCHITECTURE_INFO_DATA
 ---
 
 # D3D11_1DDI_ARCHITECTURE_INFO_DATA structure

@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILEXECUTORFOCUSSTATEPARAMMASK
+UID: NE:rilapitypes.RILEXECUTORFOCUSSTATEPARAMMASK
 title: RILEXECUTORFOCUSSTATEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilexecutorfocusstateparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3c5d14cf-bfbc-439c-9ade-1a672f0b3fca
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILEXECUTORFOCUSSTATEPARAMMASK, RILEXECUTORFOCUSSTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILEXECUTORFOCUSSTATEPARAMMASK
 req.product: Windows 10 or later.
 ---
 

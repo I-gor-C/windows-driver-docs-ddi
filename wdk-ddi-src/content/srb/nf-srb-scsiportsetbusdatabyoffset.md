@@ -1,5 +1,5 @@
 ---
-UID: NF.srb.ScsiPortSetBusDataByOffset
+UID: NF:srb.ScsiPortSetBusDataByOffset
 title: ScsiPortSetBusDataByOffset function
 author: windows-driver-content
 description: The ScsiPortSetBusDataByOffset routine sets bus-configuration data for an adapter on a dynamically configurable I/O bus with a published, standard interface.
@@ -7,7 +7,7 @@ old-location: storage\scsiportsetbusdatabyoffset.htm
 old-project: storage
 ms.assetid: 64f46049-fbf0-4d9b-b5fe-9877a964755f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: ScsiPortSetBusDataByOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Scsiport.lib
 req.dll: 
 req.irql: 
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -67,12 +68,12 @@ Pointer to the miniport driver's device extension.
 
 ### -param BusDataType [in]
 
-Contains a value of type <a href="kernel.bus_data_type">BUS_DATA_TYPE</a> that specifies the type of bus data to be set. Currently, its value can be <b>PCIConfiguration</b>. However, additional types of standardized, dynamically configurable buses will be supported in future. The upper bound on the bus types supported is always <b>MaximumBusDataType</b>. 
+Contains a value of type <a href="..\ntddk\ne-ntddk-_bus_data_type.md">BUS_DATA_TYPE</a> that specifies the type of bus data to be set. Currently, its value can be <b>PCIConfiguration</b>. However, additional types of standardized, dynamically configurable buses will be supported in future. The upper bound on the bus types supported is always <b>MaximumBusDataType</b>. 
 
 
 ### -param SystemIoBusNumber [in]
 
-Specifies the system-assigned number of the I/O bus on which the HBA is connected. The miniport driver's <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> routine obtains this value from the input PORT_CONFIGURATION_INFORMATION <b>SystemIoBusNumber</b> member. 
+Specifies the system-assigned number of the I/O bus on which the HBA is connected. The miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a> routine obtains this value from the input PORT_CONFIGURATION_INFORMATION <b>SystemIoBusNumber</b> member. 
 
 
 ### -param SlotNumber [in]
@@ -152,24 +153,24 @@ Library
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546633">HalSetBusDataByOffset</a>
 </dt>
 <dt>
-<a href="storage.hwscsifindadapter">HwScsiFindAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
 </dt>
 <dt>
-<a href="kernel.pci_common_config">PCI_COMMON_CONFIG</a>
+<a href="..\wdm\ns-wdm-_pci_common_config.md">PCI_COMMON_CONFIG</a>
 </dt>
 <dt>
-<a href="kernel.pci_slot_number">PCI_SLOT_NUMBER</a>
+<a href="..\wdm\ns-wdm-_pci_slot_number.md">PCI_SLOT_NUMBER</a>
 </dt>
 <dt>
-<a href="storage.port_configuration_information__scsi_">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 </dt>
 <dt>
-<a href="storage.scsiportgetbusdata">ScsiPortGetBusData</a>
+<a href="..\srb\nf-srb-scsiportgetbusdata.md">ScsiPortGetBusData</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortSetBusDataByOffset routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortSetBusDataByOffset routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

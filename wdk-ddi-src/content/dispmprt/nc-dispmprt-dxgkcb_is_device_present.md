@@ -1,5 +1,5 @@
 ---
-UID: NC.dispmprt.DXGKCB_IS_DEVICE_PRESENT
+UID: NC:dispmprt.DXGKCB_IS_DEVICE_PRESENT
 title: DXGKCB_IS_DEVICE_PRESENT
 author: windows-driver-content
 description: The DxgkCbIsDevicePresent function determines whether a specified PCI device is present.
@@ -7,8 +7,8 @@ old-location: display\dxgkcbisdevicepresent.htm
 old-project: display
 ms.assetid: 82716a1a-e361-40ad-b3cd-bdcd3abc75f8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ---
 
 # DXGKCB_IS_DEVICE_PRESENT callback
@@ -60,7 +61,7 @@ NTSTATUS DxgkCbIsDevicePresent(
 
 ### -param DeviceHandle [in]
 
-A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="display.dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>.
+A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560942">DXGKRNL_INTERFACE</a> structure that was passed to <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>.
 
 
 ### -param DevicePresenceParameters [in]

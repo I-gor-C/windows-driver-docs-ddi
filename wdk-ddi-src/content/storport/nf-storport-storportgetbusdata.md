@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortGetBusData
+UID: NF:storport.StorPortGetBusData
 title: StorPortGetBusData function
 author: windows-driver-content
 description: The StorPortGetBusData routine retrieves the bus-specific configuration information necessary to initialize the HBA.
@@ -7,7 +7,7 @@ old-location: storage\storportgetbusdata.htm
 old-project: storage
 ms.assetid: 19999e21-1afd-42ac-9809-b8ed4b6ac7e3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortGetBusData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Storport.lib
 req.dll: 
 req.irql: 
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -66,12 +67,12 @@ Pointer to the miniport driver's per-HBA storage area.
 
 ### -param BusDataType [in]
 
-Contains a value of type <a href="kernel.bus_data_type">BUS_DATA_TYPE</a> that specifies the type of bus-specific configuration data to be returned. Currently, this value can be one of the following: <b>Cmos</b>, <b>EisaConfiguration</b>, <b>Pos</b>, or <b>PCIConfiguration</b>. However, additional types of bus configuration will be supported in the future. The upper bound on the types supported is always <b>MaximumBusDataType</b>.
+Contains a value of type <a href="..\ntddk\ne-ntddk-_bus_data_type.md">BUS_DATA_TYPE</a> that specifies the type of bus-specific configuration data to be returned. Currently, this value can be one of the following: <b>Cmos</b>, <b>EisaConfiguration</b>, <b>Pos</b>, or <b>PCIConfiguration</b>. However, additional types of bus configuration will be supported in the future. The upper bound on the types supported is always <b>MaximumBusDataType</b>.
 
 
 ### -param SystemIoBusNumber [in]
 
-Specifies the system-assigned number of the I/O bus. The miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine obtains this value from the <b>SystemIoBusNumber</b> member initially set in <a href="storage.port_configuration_information__storport_">PORT_CONFIGURATION_INFORMATION</a>.
+Specifies the system-assigned number of the I/O bus. The miniport driver's <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a> routine obtains this value from the <b>SystemIoBusNumber</b> member initially set in <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>.
 
 
 ### -param SlotNumber [in]
@@ -104,9 +105,9 @@ Specifies the maximum number of bytes to return at <i>Buffer</i>, or zero if the
 
 
 ## -remarks
-<b>StorPortGetBusData</b> can be called only from a miniport driver's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine or from <a href="storage.hwstoradaptercontrol">HwStorAdapterControl</a> when the control type is <b>ScsiSetRunningConfig</b>. Calls from other miniport driver routines will result in system failure or incorrect operation for the caller.
+<b>StorPortGetBusData</b> can be called only from a miniport driver's <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a> routine or from <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a> when the control type is <b>ScsiSetRunningConfig</b>. Calls from other miniport driver routines will result in system failure or incorrect operation for the caller.
 
-Configuration data returned by <b>StorPortGetBusData</b> is valid only until the miniport driver calls <b>StorPortGetBusData</b> again. As soon as the caller's <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> routine returns control, any returned configuration data becomes invalid.
+Configuration data returned by <b>StorPortGetBusData</b> is valid only until the miniport driver calls <b>StorPortGetBusData</b> again. As soon as the caller's <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a> routine returns control, any returned configuration data becomes invalid.
 
 
 ## -requirements
@@ -149,15 +150,15 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hwstorfindadapter">HwStorFindAdapter</a>
+<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
 </dt>
 <dt>
-<a href="storage.port_configuration_information__storport_">PORT_CONFIGURATION_INFORMATION</a>
+<a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortGetBusData routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortGetBusData routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

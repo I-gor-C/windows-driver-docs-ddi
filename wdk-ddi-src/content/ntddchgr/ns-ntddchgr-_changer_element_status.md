@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDCHGR._CHANGER_ELEMENT_STATUS
+UID: NS:ntddchgr._CHANGER_ELEMENT_STATUS
 title: _CHANGER_ELEMENT_STATUS
 author: windows-driver-content
 description: The ChangerGetElementStatus routine returns status information in this structure.
@@ -7,8 +7,8 @@ old-location: storage\changer_element_status.htm
 old-project: storage
 ms.assetid: 3debcf76-bb84-48ec-933e-03e099ad764f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CHANGER_ELEMENT_STATUS, CHANGER_ELEMENT_STATUS, PCHANGER_ELEMENT_STATUS, *PCHANGER_ELEMENT_STATUS
+ms.date: 1/10/2018
+ms.keywords: _CHANGER_ELEMENT_STATUS, *PCHANGER_ELEMENT_STATUS, CHANGER_ELEMENT_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCHANGER_ELEMENT_STATUS, CHANGER_ELEMENT_STATUS
 ---
 
 # _CHANGER_ELEMENT_STATUS structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <a href="storage.changergetelementstatus">ChangerGetElementStatus</a> routine returns status information in this structure. 
+The <a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a> routine returns status information in this structure. 
 
 
 
@@ -63,12 +64,12 @@ typedef struct _CHANGER_ELEMENT_STATUS {
 
 ### -field Element
 
-Specifies the element of type <a href="storage.changer_element">CHANGER_ELEMENT</a>  to which this structure refers.
+Specifies the element of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>  to which this structure refers.
 
 
 ### -field SrcElementAddress
 
-Specifies the element of type <a href="storage.changer_element">CHANGER_ELEMENT</a> from which the media currently in this element was most recently moved. This member is valid only if ELEMENT_STATUS_SVALID is also set in <b>Flags</b>. This value must be a zero-based offset from the device-unique value.
+Specifies the element of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a> from which the media currently in this element was most recently moved. This member is valid only if ELEMENT_STATUS_SVALID is also set in <b>Flags</b>. This value must be a zero-based offset from the device-unique value.
 
 
 ### -field Flags
@@ -278,7 +279,7 @@ Specifies alternate volume identification for the media. This member is valid fo
 
 
 ## -remarks
-For most element types, changer miniclass drivers use CHANGER_ELEMENT_STATUS to report the status of specified elements to the changer class driver. Some elements of type <b>ChangerDrive</b>, however, return product information data. If the device provides product information, the miniclass driver will report the element status data in a structure of type <a href="storage.changer_element_status_ex">CHANGER_ELEMENT_STATUS_EX</a> instead of using CHANGER_ELEMENT_STATUS. The miniclass driver indicates that product information is present by setting ELEMENT_STATUS_PRODUCT_DATA in the <b>Flags</b> member of the structure.
+For most element types, changer miniclass drivers use CHANGER_ELEMENT_STATUS to report the status of specified elements to the changer class driver. Some elements of type <b>ChangerDrive</b>, however, return product information data. If the device provides product information, the miniclass driver will report the element status data in a structure of type <a href="..\ntddchgr\ns-ntddchgr-_changer_element_status_ex.md">CHANGER_ELEMENT_STATUS_EX</a> instead of using CHANGER_ELEMENT_STATUS. The miniclass driver indicates that product information is present by setting ELEMENT_STATUS_PRODUCT_DATA in the <b>Flags</b> member of the structure.
 
 
 ## -requirements
@@ -299,16 +300,16 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.changer_element">CHANGER_ELEMENT</a>
+<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
 </dt>
 <dt>
-<a href="storage.changergetelementstatus">ChangerGetElementStatus</a>
+<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
 </dt>
 <dt>
-<a href="storage.changerqueryvolumetags">ChangerQueryVolumeTags</a>
+<a href="..\mcd\nf-mcd-changerqueryvolumetags.md">ChangerQueryVolumeTags</a>
 </dt>
 <dt>
-<a href="storage.changer_element_status_ex">CHANGER_ELEMENT_STATUS_EX</a>
+<a href="..\ntddchgr\ns-ntddchgr-_changer_element_status_ex.md">CHANGER_ELEMENT_STATUS_EX</a>
 </dt>
 <dt>
 <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_element_status.md">IOCTL_CHANGER_GET_ELEMENT_STATUS</a>
@@ -318,5 +319,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CHANGER_ELEMENT_STATUS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CHANGER_ELEMENT_STATUS structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

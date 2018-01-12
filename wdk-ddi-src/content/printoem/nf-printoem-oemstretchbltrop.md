@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMStretchBltROP
+UID: NF:printoem.OEMStretchBltROP
 title: OEMStretchBltROP function
 author: windows-driver-content
 description: The OEMStretchBltROP function performs a stretching bit-block transfer using a raster operation (ROP).
@@ -7,7 +7,7 @@ old-location: print\oemstretchbltrop.htm
 old-project: print
 ms.assetid: 2e265dc6-3e04-4f25-ae3b-6cb7ce5ce9ae
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMStretchBltROP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

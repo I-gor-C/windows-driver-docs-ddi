@@ -1,5 +1,5 @@
 ---
-UID: NS.KS._KSFILTER_DESCRIPTOR
+UID: NS:ks._KSFILTER_DESCRIPTOR
 title: _KSFILTER_DESCRIPTOR
 author: windows-driver-content
 description: The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory.
@@ -7,7 +7,7 @@ old-location: stream\ksfilter_descriptor.htm
 old-project: stream
 ms.assetid: c9e3c1ea-a8c9-45db-a31c-7f8e95cf6b2b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: _KSFILTER_DESCRIPTOR, KSFILTER_DESCRIPTOR, *PKSFILTER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSFILTER_DESCRIPTOR, *PKSFILTER_DESCRIPTOR
 ---
 
 # _KSFILTER_DESCRIPTOR structure
@@ -70,12 +71,12 @@ typedef struct _KSFILTER_DESCRIPTOR {
 
 ### -field Dispatch
 
-A pointer to a <a href="stream.ksfilter_dispatch">KSFILTER_DISPATCH</a> structure for this type of filter. This member is optional and need only be provided by clients that wish to receive notifications about filter creations, deletions, and so on. Drivers that are interested in the processing of data (transforms) typically provide this dispatch table and a processing function. Providing a filter-processing function instead of individual pin-processing functions is what makes a driver filter-centric instead of pin-centric.
+A pointer to a <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a> structure for this type of filter. This member is optional and need only be provided by clients that wish to receive notifications about filter creations, deletions, and so on. Drivers that are interested in the processing of data (transforms) typically provide this dispatch table and a processing function. Providing a filter-processing function instead of individual pin-processing functions is what makes a driver filter-centric instead of pin-centric.
 
 
 ### -field AutomationTable
 
-A pointer to a <a href="stream.ksautomation_table">KSAUTOMATION_TABLE</a> structure for this type of filter. The automation table is what describes the properties, methods, and events supported by this filter. This automation table is merged with the automation table supplied by AVStream for all filters. Should the client supply a property, method, or event handler already implemented by AVStream, the client's implementation supersedes AVStream's.
+A pointer to a <a href="..\ks\ns-ks-ksautomation_table_.md">KSAUTOMATION_TABLE</a> structure for this type of filter. The automation table is what describes the properties, methods, and events supported by this filter. This automation table is merged with the automation table supplied by AVStream for all filters. Should the client supply a property, method, or event handler already implemented by AVStream, the client's implementation supersedes AVStream's.
 
 
 ### -field Version
@@ -98,7 +99,7 @@ KSFILTER_FLAG_DISPATCH_LEVEL_PROCESSING
 
 </td>
 <td>
-Indicates that the filter processes at IRQL DISPATCH_LEVEL as opposed to PASSIVE_LEVEL. This applies to the filter process callback as described in <a href="stream.ksfilter_dispatch">KSFILTER_DISPATCH</a>.
+Indicates that the filter processes at IRQL DISPATCH_LEVEL as opposed to PASSIVE_LEVEL. This applies to the filter process callback as described in <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>.
 
 </td>
 </tr>
@@ -118,7 +119,7 @@ KSFILTER_FLAG_RECEIVE_ZERO_LENGTH_SAMPLES
 
 </td>
 <td>
-Set this flag if a filter-centric filter needs to receive zero-length samples (stream headers with flags but no data). If this flag is not set, zero length samples are passed on to downstream pins, with automatic propagation of necessary flags. Note that this is identical to default behavior in DX8 and prior. If this happens, <i>these samples bypass the minidriver</i>. Set the <b>Terminate</b> flag in <a href="stream.ksprocesspin">KSPROCESSPIN</a> to "turn off" this flag. Also see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.
+Set this flag if a filter-centric filter needs to receive zero-length samples (stream headers with flags but no data). If this flag is not set, zero length samples are passed on to downstream pins, with automatic propagation of necessary flags. Note that this is identical to default behavior in DX8 and prior. If this happens, <i>these samples bypass the minidriver</i>. Set the <b>Terminate</b> flag in <a href="..\ks\ns-ks-_ksprocesspin.md">KSPROCESSPIN</a> to "turn off" this flag. Also see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.
 
 </td>
 </tr>
@@ -163,7 +164,7 @@ This member specifies the size of each individual descriptor in the descriptor t
 
 ### -field PinDescriptors
 
-A pointer to an array of <a href="stream.kspin_descriptor_ex">KSPIN_DESCRIPTOR_EX</a> structures that describe the pins supported by this filter type. If <b>PinDescriptorsCount</b> is zero, set this member to <b>NULL</b>..
+A pointer to an array of <a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a> structures that describe the pins supported by this filter type. If <b>PinDescriptorsCount</b> is zero, set this member to <b>NULL</b>..
 
 
 ### -field CategoriesCount
@@ -188,7 +189,7 @@ This member specifies the size in bytes of each individual descriptor in the des
 
 ### -field NodeDescriptors
 
-A pointer to an array of <a href="stream.ksnode_descriptor">KSNODE_DESCRIPTOR</a> structures describing the topology nodes for this filter type. This member may be <b>null</b> if and only if <b>NodeDescriptorsCount</b> is zero.
+A pointer to an array of <a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a> structures describing the topology nodes for this filter type. This member may be <b>null</b> if and only if <b>NodeDescriptorsCount</b> is zero.
 
 
 ### -field ConnectionsCount
@@ -270,13 +271,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksfilter_dispatch">KSFILTER_DISPATCH</a>
+<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
 </dt>
 <dt>
-<a href="stream.kspin_descriptor_ex">KSPIN_DESCRIPTOR_EX</a>
+<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
 </dt>
 <dt>
-<a href="stream.ksnode_descriptor">KSNODE_DESCRIPTOR</a>
+<a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
@@ -285,12 +286,12 @@ Header
 <a href="..\ks\ns-ks-kscomponentid.md">KSCOMPONENTID</a>
 </dt>
 <dt>
-<a href="stream.kscreatefilterfactory">KsCreateFilterFactory</a>
+<a href="..\ks\nf-ks-kscreatefilterfactory.md">KsCreateFilterFactory</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSFILTER_DESCRIPTOR structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSFILTER_DESCRIPTOR structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamindr_lh.IWiaDrvItem.AddItemToFolder
+UID: NF:wiamindr_lh.IWiaDrvItem.AddItemToFolder
 title: IWiaDrvItem::AddItemToFolder method
 author: windows-driver-content
-description: The IWiaDrvItem::AddItemToFolder method adds an IWiaDrvItem item to a folder in a driver item tree.
+description: The AddItemToFolder method adds an IWiaDrvItem item to a folder in a driver item tree.
 old-location: image\iwiadrvitem_additemtofolder.htm
-old-project: Image
+old-project: image
 ms.assetid: 3f1cd0bf-13ce-49bc-a48e-dc3d89f3c7d7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaDrvItem, IWiaDrvItem::AddItemToFolder, AddItemToFolder
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSCANWINDOW, SCANWINDOW
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>IWiaDrvItem::AddItemToFolder</b> method adds an <b>IWiaDrvItem</b> item to a folder in a driver item tree.
+The AddItemToFolder method adds an IWiaDrvItem item to a folder in a driver item tree.
 
 
 
@@ -56,7 +57,7 @@ HRESULT AddItemToFolder(
 
 ### -param pIParent [in, optional]
 
-Points to the <b>IWiaDrvItem</b> parent folder item.
+Points to the IWiaDrvItem parent folder item.
 
 
 ## -returns
@@ -64,7 +65,7 @@ If the method succeeds, it returns S_OK. If the method fails because an invalid 
 
 
 ## -remarks
-Minidrivers typically use the <b>IWiaDrvItem::AddItemToFolder</b> method to add an item to a parent folder item in a driver item tree. The parent folder item is pointed to by the parameter <i>pIParent</i>. The item pointed to by <i>pIParent</i> must be a folder.
+Minidrivers typically use the AddItemToFolder method to add an item to a parent folder item in a driver item tree. The parent folder item is pointed to by the parameter <i>pIParent</i>. The item pointed to by <i>pIParent</i> must be a folder.
 
 
 ## -requirements
@@ -106,12 +107,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.iwiadrvitem_removeitemfromfolder">IWiaDrvItem::RemoveItemFromFolder</a>
+<a href="https://msdn.microsoft.com/0609e1b2-48df-413c-90bd-d7ddea26510a">IWiaDrvItem</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/f800427e-d6b6-4f4c-aee7-4b2b0d0aa0c4">RemoveItemFromFolder</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20IWiaDrvItem::AddItemToFolder method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaDrvItem::AddItemToFolder method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

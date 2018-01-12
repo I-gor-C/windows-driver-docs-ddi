@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoWMIOpenBlock
+UID: NF:wdm.IoWMIOpenBlock
 title: IoWMIOpenBlock function
 author: windows-driver-content
 description: The IoWMIOpenBlock routine opens the WMI data block object for the specified WMI class.
@@ -7,7 +7,7 @@ old-location: kernel\iowmiopenblock.htm
 old-project: kernel
 ms.assetid: c23d1861-59df-4bd4-a005-173ccac53049
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoWMIOpenBlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -72,12 +73,12 @@ The following is a description of each access right bit and the operations it al
 
 ### -param WMIGUID_EXECUTE
 
-The data block object can be used to run WMI class methods. This flag must be set to use <a href="kernel.iowmiexecutemethod">IoWMIExecuteMethod</a> on the data block object. 
+The data block object can be used to run WMI class methods. This flag must be set to use <a href="..\wdm\nf-wdm-iowmiexecutemethod.md">IoWMIExecuteMethod</a> on the data block object. 
 
 
 ### -param WMIGUID_NOTIFICATION
 
-The data block object can be used to register event notification callbacks. This flag must be set to use <a href="kernel.iowmisetnotificationcallback">IoWMISetNotificationCallback</a>, and can only be used for WMI event blocks. Callers that specify this flag must also specify the SYNCHRONIZE flag.
+The data block object can be used to register event notification callbacks. This flag must be set to use <a href="..\wdm\nf-wdm-iowmisetnotificationcallback.md">IoWMISetNotificationCallback</a>, and can only be used for WMI event blocks. Callers that specify this flag must also specify the SYNCHRONIZE flag.
 
 
 ### -param WMIGUID_QUERY
@@ -104,9 +105,9 @@ Returns STATUS_SUCCESS on success, or the appropriate NTSTATUS error code on fai
 ## -remarks
 The caller uses <b>IoWMIOpenBlock</b> to create a data block object for the specified WMI class GUID. Subsequently, the caller can use the data block object to read or write WMI class properties, run WMI class methods, and register callbacks for WMI events.
 
-Use the <b>IoWMIQuery<i>Xxx</i></b> and <b>IoWMISet<i>Xxx</i></b> routines to read and write WMI class properties. Use <a href="kernel.iowmiexecutemethod">IoWMIExecuteMethod</a> to run WMI class methods, and use <a href="kernel.iowmisetnotificationcallback">IoWMISetNotificationCallback</a> to register a WMI event notification callback.
+Use the <b>IoWMIQuery<i>Xxx</i></b> and <b>IoWMISet<i>Xxx</i></b> routines to read and write WMI class properties. Use <a href="..\wdm\nf-wdm-iowmiexecutemethod.md">IoWMIExecuteMethod</a> to run WMI class methods, and use <a href="..\wdm\nf-wdm-iowmisetnotificationcallback.md">IoWMISetNotificationCallback</a> to register a WMI event notification callback.
 
-Use <a href="kernel.obdereferenceobject">ObDereferenceObject</a> to close the data block object once it is no longer needed.
+Use <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> to close the data block object once it is no longer needed.
 
 
 ## -requirements
@@ -180,36 +181,36 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iowmiexecutemethod">IoWMIExecuteMethod</a>
+<a href="..\wdm\nf-wdm-iowmiexecutemethod.md">IoWMIExecuteMethod</a>
 </dt>
 <dt>
-<a href="kernel.iowmiqueryalldata">IoWMIQueryAllData</a>
+<a href="..\wdm\nf-wdm-iowmiqueryalldata.md">IoWMIQueryAllData</a>
 </dt>
 <dt>
-<a href="kernel.iowmiqueryalldatamultiple">IoWMIQueryAllDataMultiple</a>
+<a href="..\wdm\nf-wdm-iowmiqueryalldatamultiple.md">IoWMIQueryAllDataMultiple</a>
 </dt>
 <dt>
-<a href="kernel.iowmiquerysingleinstance">IoWMIQuerySingleInstance</a>
+<a href="..\wdm\nf-wdm-iowmiquerysingleinstance.md">IoWMIQuerySingleInstance</a>
 </dt>
 <dt>
-<a href="kernel.iowmiquerysingleinstancemultiple">IoWMIQuerySingleInstanceMultiple</a>
+<a href="..\wdm\nf-wdm-iowmiquerysingleinstancemultiple.md">IoWMIQuerySingleInstanceMultiple</a>
 </dt>
 <dt>
-<a href="kernel.iowmisetnotificationcallback">IoWMISetNotificationCallback</a>
+<a href="..\wdm\nf-wdm-iowmisetnotificationcallback.md">IoWMISetNotificationCallback</a>
 </dt>
 <dt>
-<a href="kernel.iowmisetsingleinstance">IoWMISetSingleInstance</a>
+<a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetSingleInstance</a>
 </dt>
 <dt>
-<a href="kernel.iowmisetsingleitem">IoWMISetSingleItem</a>
+<a href="..\wdm\nf-wdm-iowmisetsingleitem.md">IoWMISetSingleItem</a>
 </dt>
 <dt>
-<a href="kernel.zwclose">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIOpenBlock routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIOpenBlock routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

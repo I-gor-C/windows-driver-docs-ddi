@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWMIRegistration.UnregisterWMIProvider
+UID: NF:portcls.IPortWMIRegistration.UnregisterWMIProvider
 title: IPortWMIRegistration::UnregisterWMIProvider method
 author: windows-driver-content
 description: The UnregisterWMIProvider method unregisters the Event Tracing for Windows (ETW) interface that was previously registered with a call to the RegisterWMIProvider method. The unregistration disables the ETW registration with PortCls.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWMIRegistration::UnregisterWMIProvider method
@@ -55,7 +56,7 @@ NTSTATUS UnregisterWMIProvider(
 
 ### -param pDeviceObject 
 
-Specifies a pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter driver.
+Specifies a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter driver.
 
 
 ## -returns
@@ -117,7 +118,7 @@ PASSIVE_LEVEL.
 <a href="..\portcls\nn-portcls-iportwmiregistration.md">IPortWMIRegistration</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a>

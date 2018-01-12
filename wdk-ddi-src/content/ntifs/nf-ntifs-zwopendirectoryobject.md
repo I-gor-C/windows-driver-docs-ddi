@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.ZwOpenDirectoryObject
+UID: NF:ntifs.ZwOpenDirectoryObject
 title: ZwOpenDirectoryObject function
 author: windows-driver-content
 description: The ZwOpenDirectoryObject routine opens an existing directory object.
@@ -7,7 +7,7 @@ old-location: kernel\zwopendirectoryobject.htm
 old-project: kernel
 ms.assetid: ddff6e6e-d22f-4e22-af13-aca889eee0d4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwOpenDirectoryObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # ZwOpenDirectoryObject function
@@ -122,7 +123,7 @@ All of the preceding rights plus STANDARD_RIGHTS_REQUIRED.
 </table>
  
 
-These requested access types are compared with the object's discretionary access-control list (<a href="ifsk.acl">DACL</a>) to determine which accesses are granted or denied.
+These requested access types are compared with the object's discretionary access-control list (<a href="..\wdm\ns-wdm-_acl.md">DACL</a>) to determine which accesses are granted or denied.
 
 
 ### -param ObjectAttributes [in]
@@ -137,7 +138,7 @@ Specified attributes for the directory object supplied by the caller. This param
 </dl>A temporary buffer required by this routine could not be allocated. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The specified <i>ObjectAttributes</i> parameter was a <b>NULL</b> pointer, not a valid pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure, or some of the fields specified in the OBJECT_ATTRIBUTES structure were invalid. 
+</dl>The specified <i>ObjectAttributes</i> parameter was a <b>NULL</b> pointer, not a valid pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure, or some of the fields specified in the OBJECT_ATTRIBUTES structure were invalid. 
 <dl>
 <dt><b>STATUS_OBJECT_NAME_INVALID</b></dt>
 </dl>The <i>ObjectAttributes</i> parameter contained an <b>ObjectName</b> field in the <b>OBJECT_ATTRIBUTES</b> structure that was invalid because an empty string was found after the OBJECT_NAME_PATH_SEPARATOR character. 
@@ -240,7 +241,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -251,24 +252,24 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="ifsk.acl">ACL</a>
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 </dt>
 <dt>
-<a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="kernel.zwclose">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatedirectoryobject">ZwCreateDirectoryObject</a>
+<a href="..\wdm\nf-wdm-zwcreatedirectoryobject.md">ZwCreateDirectoryObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwOpenDirectoryObject routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwOpenDirectoryObject routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

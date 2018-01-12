@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11.DOT11_CIPHER_DEFAULT_KEY_VALUE
+UID: NS:windot11.DOT11_CIPHER_DEFAULT_KEY_VALUE
 title: DOT11_CIPHER_DEFAULT_KEY_VALUE
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_cipher_default_key_value.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7362b20a-6ec4-4b22-8981-3a4b647a3cfa
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: DOT11_CIPHER_DEFAULT_KEY_VALUE, PDOT11_CIPHER_DEFAULT_KEY_VALUE, DOT11_CIPHER_DEFAULT_KEY_VALUE, *PDOT11_CIPHER_DEFAULT_KEY_VALUE
+ms.date: 1/8/2018
+ms.keywords: DOT11_CIPHER_DEFAULT_KEY_VALUE, DOT11_CIPHER_DEFAULT_KEY_VALUE, *PDOT11_CIPHER_DEFAULT_KEY_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_CIPHER_DEFAULT_KEY_VALUE, *PDOT11_CIPHER_DEFAULT_KEY_VALUE
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ typedef struct DOT11_CIPHER_DEFAULT_KEY_VALUE {
 
 The type, revision, and size of the DOT11_CIPHER_DEFAULT_KEY_VALUE structure. This member is
      formatted as an 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
      
 
 The miniport driver must set the members of 
@@ -89,7 +90,7 @@ This member must be set to
 </dd>
 </dl>
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field uKeyIndex
@@ -112,7 +113,7 @@ The IEEE 802.11-2012 standard defines default key index values from 1 through 4.
 
 The value of the cipher algorithm that uses this key. For more information about values for cipher
      algorithms, see 
-     <a href="netvista.dot11_cipher_algorithm">DOT11_CIPHER_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
      
 
 For BIP, this should be set to DOT11_CIPHER_ALGO_BIP to pre-set the initial IGTK packet number.
@@ -288,7 +289,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_cipher_algorithm">DOT11_CIPHER_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 </dt>
 <dt>
 <a href="..\windot11\ns-windot11-dot11_key_algo_ccmp.md">DOT11_KEY_ALGO_CCMP</a>
@@ -297,7 +298,7 @@ Header
 <a href="..\windot11\ns-windot11-dot11_key_algo_tkip_mic.md">DOT11_KEY_ALGO_TKIP_MIC</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569119">OID_DOT11_CIPHER_DEFAULT_KEY</a>
@@ -313,5 +314,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_CIPHER_DEFAULT_KEY_VALUE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CIPHER_DEFAULT_KEY_VALUE structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

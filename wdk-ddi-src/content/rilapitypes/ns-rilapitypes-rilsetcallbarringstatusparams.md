@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILSETCALLBARRINGSTATUSPARAMS
+UID: NS:rilapitypes.RILSETCALLBARRINGSTATUSPARAMS
 title: RILSETCALLBARRINGSTATUSPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetcallbarringstatusparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6116e564-93e6-45ba-8759-aab7d82783b2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSETCALLBARRINGSTATUSPARAMS, RILSETCALLBARRINGSTATUSPARAMS, *LPRILSETCALLBARRINGSTATUSPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILSETCALLBARRINGSTATUSPARAMS, *LPRILSETCALLBARRINGSTATUSPARAMS, RILSETCALLBARRINGSTATUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSETCALLBARRINGSTATUSPARAMS, RILSETCALLBARRINGSTATUSPARAMS
 req.product: Windows 10 or later.
 ---
 

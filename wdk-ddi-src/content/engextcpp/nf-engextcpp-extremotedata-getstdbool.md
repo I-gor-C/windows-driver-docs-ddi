@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteData.GetStdBool
+UID: NF:engextcpp.ExtRemoteData.GetStdBool
 title: ExtRemoteData::GetStdBool method
 author: windows-driver-content
 description: The GetStdBool method returns a bool version of the ExtRemoteData object, which represents the contents of the target's memory.
 old-location: debugger\extremotedata_getstdbool.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f6a55181-7e1a-4af0-ac45-1991c42cdc87
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteData, ExtRemoteData::GetStdBool, GetStdBool
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteData::GetStdBool method
@@ -96,18 +97,18 @@ Header
 <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
 </dt>
 <dt>
-<a href="debugger.extremotedata_getboolean">ExtRemoteData::GetBoolean</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544013">ExtRemoteData::GetBoolean</a>
 </dt>
 <dt>
-<a href="debugger.extremotedata_getdata">ExtRemoteData::GetData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
 </dt>
 <dt>
-<a href="debugger.extremotedata_getw32bool">ExtRemoteData::GetW32Bool</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544081">ExtRemoteData::GetW32Bool</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20ExtRemoteData.GetStdBool method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20ExtRemoteData.GetStdBool method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

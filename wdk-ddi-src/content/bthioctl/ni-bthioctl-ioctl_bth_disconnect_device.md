@@ -1,5 +1,5 @@
 ---
-UID: NI.bthioctl.IOCTL_BTH_DISCONNECT_DEVICE
+UID: NI:bthioctl.IOCTL_BTH_DISCONNECT_DEVICE
 title: IOCTL_BTH_DISCONNECT_DEVICE
 author: windows-driver-content
 description: Profile drivers use IOCTL_BTH_DISCONNECT_DEVICE to request the operating system to disconnect the specified remote device.
@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bth_disconnect_device.htm
 old-project: bltooth
 ms.assetid: 03c7f389-60a4-4c98-881d-a58926644275
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, PHFP_BYPASS_CODEC_ID_V1
+ms.date: 12/21/2017
+ms.keywords: _HFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_BTH_DISCONNECT_DEVICE IOCTL

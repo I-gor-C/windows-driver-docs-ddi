@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSPIN_DESCRIPTOR
+UID: NS:ks.KSPIN_DESCRIPTOR
 title: KSPIN_DESCRIPTOR
 author: windows-driver-content
 description: The KSPIN_DESCRIPTOR structure describes the basic KSPROPSETID_Pin properties of a pin type.
@@ -7,8 +7,8 @@ old-location: stream\kspin_descriptor.htm
 old-project: stream
 ms.assetid: 0e7fccd1-1ced-41e7-8e75-8f4fa496ea06
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSPIN_DESCRIPTOR, *PKSPIN_DESCRIPTOR, PKSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR
+ms.date: 1/9/2018
+ms.keywords: KSPIN_DESCRIPTOR, *PKSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR
 ---
 
 # KSPIN_DESCRIPTOR structure
@@ -76,7 +77,7 @@ Specifies the size of the array pointed to by <b>Interfaces</b>.
 
 ### -field Interfaces
 
-An array of <a href="stream.kspin_interface">KSPIN_INTERFACE</a> structures specifying the interfaces supported by this pin type.
+An array of <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a> structures specifying the interfaces supported by this pin type.
 
 
 ### -field MediumsCount
@@ -86,7 +87,7 @@ Specifies the number of elements in the array pointed to by <b>Mediums</b>.
 
 ### -field Mediums
 
-An array of <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structures specifying the mediums supported by this pin type.
+An array of <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a> structures specifying the mediums supported by this pin type.
 
 
 ### -field DataRangesCount
@@ -96,7 +97,7 @@ Specifies the size of the array pointed to by <b>DataRanges</b>.
 
 ### -field DataRanges
 
-An array of <a href="stream.ksdatarange">KSDATARANGE</a> structures specifying the data ranges supported by this pin type.
+An array of <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a> structures specifying the data ranges supported by this pin type.
 
 
 ### -field DataFlow
@@ -131,7 +132,7 @@ Specifies the number of entries in the array pointed to by <b>ConstrainedDataRan
 
 ### -field ConstrainedDataRanges
 
-Points to an array of <a href="stream.ksdatarange">KSDATARANGE</a> structures. Indicates the set of data ranges the pin type currently supports, based on the driver's internal state.
+Points to an array of <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a> structures. Indicates the set of data ranges the pin type currently supports, based on the driver's internal state.
 
 
 ## -remarks
@@ -159,7 +160,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566584">KSPROPSETID_Pin</a>
 </dt>
 <dt>
-<a href="stream.kspin_medium">KSPIN_MEDIUM</a>
+<a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>
@@ -168,12 +169,12 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565194">KSPROPERTY_PIN_COMMUNICATION</a>
 </dt>
 <dt>
-<a href="stream.ksdatarange">KSDATARANGE</a>
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_DESCRIPTOR structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN_DESCRIPTOR structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

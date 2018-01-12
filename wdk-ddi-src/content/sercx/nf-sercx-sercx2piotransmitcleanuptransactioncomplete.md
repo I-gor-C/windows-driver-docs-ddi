@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2PioTransmitCleanupTransactionComplete
+UID: NF:sercx.SerCx2PioTransmitCleanupTransactionComplete
 title: SerCx2PioTransmitCleanupTransactionComplete function
 author: windows-driver-content
 description: The SerCx2PioTransmitCleanupTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that serial controller driver has finished cleaning up the serial controller's hardware state after a PIO-transmit transaction.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID SerCx2PioTransmitCleanupTransactionComplete(
 
 ### -param PioTransmit [in]
 
-A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
+A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method to create this object.
 
 
 ## -returns
@@ -126,7 +127,7 @@ IRQL
 <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a>
 </dt>
 <dt>
-<a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
 </dt>
 </dl>
  

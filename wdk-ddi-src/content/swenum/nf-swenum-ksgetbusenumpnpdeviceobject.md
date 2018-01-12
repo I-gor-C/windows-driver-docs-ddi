@@ -1,5 +1,5 @@
 ---
-UID: NF.swenum.KsGetBusEnumPnpDeviceObject
+UID: NF:swenum.KsGetBusEnumPnpDeviceObject
 title: KsGetBusEnumPnpDeviceObject function
 author: windows-driver-content
 description: The KsGetBusEnumPnpDeviceObject function retrieves the Plug and Play device object attached to the given device object.
@@ -7,7 +7,7 @@ old-location: stream\ksgetbusenumpnpdeviceobject.htm
 old-project: stream
 ms.assetid: 8e81a294-9388-467d-8405-472fbe9fe827
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGetBusEnumPnpDeviceObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
 req.product: Windows 10 or later.
 ---
 

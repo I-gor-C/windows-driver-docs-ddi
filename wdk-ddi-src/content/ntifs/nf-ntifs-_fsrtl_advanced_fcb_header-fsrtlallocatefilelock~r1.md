@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlAllocateFileLock~r1
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlAllocateFileLock~r1
 title: FsRtlAllocateFileLock function
 author: windows-driver-content
 description: The FsRtlAllocateFileLock routine allocates and initializes a new FILE_LOCK structure.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlallocatefilelock.htm
 old-project: ifsk
 ms.assetid: 148c177d-162a-4578-a40c-2e5fe6176d51
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlAllocateFileLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlAllocateFileLock function
@@ -56,12 +57,12 @@ PFILE_LOCK FsRtlAllocateFileLock(
 
 ### -param CompleteLockIrpRoutine [in, optional]
 
-A pointer to a <a href="ifsk.pcomplete_lock_irp_routine">PCOMPLETE_LOCK_IRP_ROUTINE</a>-typed callback routine to be called when an <a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a> request is completed. This parameter is optional and can be <b>NULL</b>. 
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551032">PCOMPLETE_LOCK_IRP_ROUTINE</a>-typed callback routine to be called when an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a> request is completed. This parameter is optional and can be <b>NULL</b>. 
 
 
 ### -param UnlockRoutine [in, optional]
 
-A pointer to a <a href="ifsk.punlock_routine">PUNLOCK_ROUTINE</a>-typed callback routine to be called when the byte range is unlocked. This parameter is optional and can be <b>NULL</b>. 
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551951">PUNLOCK_ROUTINE</a>-typed callback routine to be called when the byte range is unlocked. This parameter is optional and can be <b>NULL</b>. 
 
 
 ## -returns
@@ -71,7 +72,7 @@ A pointer to a <a href="ifsk.punlock_routine">PUNLOCK_ROUTINE</a>-typed callback
 ## -remarks
 <b>FsRtlAllocateFileLock</b> allocates a new FILE_LOCK structure from paged pool and initializes it.
 
-Minifilters should call <a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a> instead of <b>FsRtlAllocateFileLock</b>. 
+Minifilters should call <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a> instead of <b>FsRtlAllocateFileLock</b>. 
 
 
 ## -requirements
@@ -145,60 +146,60 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlaretherecurrentfilelocks">FsRtlAreThereCurrentFileLocks</a>
+<a href="..\ntifs\nf-ntifs-fsrtlaretherecurrentfilelocks.md">FsRtlAreThereCurrentFileLocks</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlchecklockforreadaccess">FsRtlCheckLockForReadAccess</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlchecklockforreadaccess~r1.md">FsRtlCheckLockForReadAccess</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlchecklockforwriteaccess">FsRtlCheckLockForWriteAccess</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlchecklockforwriteaccess~r1.md">FsRtlCheckLockForWriteAccess</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlfastchecklockforread">FsRtlFastCheckLockForRead</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastchecklockforread~r5.md">FsRtlFastCheckLockForRead</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlfastchecklockforwrite">FsRtlFastCheckLockForWrite</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastchecklockforwrite~r5.md">FsRtlFastCheckLockForWrite</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlfastlock">FsRtlFastLock</a>
+<a href="..\ntifs\nf-ntifs-fsrtlfastlock.md">FsRtlFastLock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlfastunlockall">FsRtlFastUnlockAll</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastunlockall~r3.md">FsRtlFastUnlockAll</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlfastunlockallbykey">FsRtlFastUnlockAllByKey</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastunlockallbykey~r4.md">FsRtlFastUnlockAllByKey</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlfastunlocksingle">FsRtlFastUnlockSingle</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlfastunlocksingle~r7.md">FsRtlFastUnlockSingle</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlgetnextfilelock">FsRtlGetNextFileLock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlgetnextfilelock~r1.md">FsRtlGetNextFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlinitializefilelock">FsRtlInitializeFileLock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock~r2.md">FsRtlInitializeFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlprocessfilelock">FsRtlProcessFileLock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprocessfilelock~r2.md">FsRtlProcessFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtluninitializefilelock">FsRtlUninitializeFileLock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtluninitializefilelock.md">FsRtlUninitializeFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a>
 </dt>
 <dt>
-<a href="ifsk.pcomplete_lock_irp_routine">PCOMPLETE_LOCK_IRP_ROUTINE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551032">PCOMPLETE_LOCK_IRP_ROUTINE</a>
 </dt>
 <dt>
-<a href="ifsk.punlock_routine">PUNLOCK_ROUTINE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551951">PUNLOCK_ROUTINE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocateFileLock routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocateFileLock routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

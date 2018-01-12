@@ -1,5 +1,5 @@
 ---
-UID: NF.gpioclx.GPIO_CLX_RegisterClient
+UID: NF:gpioclx.GPIO_CLX_RegisterClient
 title: GPIO_CLX_RegisterClient function
 author: windows-driver-content
 description: The GPIO_CLX_RegisterClient method registers a general-purpose I/O (GPIO) controller driver as a client of the GPIO framework extension (GpioClx).
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Msgpioclxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE
 ---
 
 # GPIO_CLX_RegisterClient function
@@ -67,7 +68,7 @@ A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/wind
 
 ### -param RegistryPath [in]
 
-A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the path name of the registry key for the  GPIO controller driver. This parameter should be the registry path name that was passed to the driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. For more information about driver registry keys, see <a href="devinst.overview_of_registry_trees_and_keys">Registry Trees for Devices and Drivers</a>.
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the path name of the registry key for the  GPIO controller driver. This parameter should be the registry path name that was passed to the driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. For more information about driver registry keys, see <a href="https://msdn.microsoft.com/74dc1889-26a9-47ba-8c8d-3cd6ed95cb68">Registry Trees for Devices and Drivers</a>.
 
 
 ## -returns
@@ -160,7 +161,7 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439498">GPIO_CLX_UnregisterClient</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  

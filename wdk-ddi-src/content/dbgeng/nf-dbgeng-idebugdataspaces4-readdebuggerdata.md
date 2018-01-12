@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.ReadDebuggerData
+UID: NF:dbgeng.IDebugDataSpaces4.ReadDebuggerData
 title: IDebugDataSpaces4::ReadDebuggerData method
 author: windows-driver-content
 description: The ReadDebuggerData method returns information about the target that the debugger engine has queried or determined during the current session.
 old-location: debugger\readdebuggerdata.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 54e4d3b9-db9d-4844-938f-c8ca8819d182
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::ReadDebuggerData, ReadDebuggerData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::ReadDebuggerData method

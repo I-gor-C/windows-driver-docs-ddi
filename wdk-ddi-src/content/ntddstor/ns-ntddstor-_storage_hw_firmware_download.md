@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._STORAGE_HW_FIRMWARE_DOWNLOAD
+UID: NS:ntddstor._STORAGE_HW_FIRMWARE_DOWNLOAD
 title: _STORAGE_HW_FIRMWARE_DOWNLOAD
 author: windows-driver-content
 description: This structure contains a firmware image payload to be downloaded to the target.
@@ -7,8 +7,8 @@ old-location: storage\storage_hw_firmware_download.htm
 old-project: storage
 ms.assetid: EFF4688D-E5B2-4F4C-837D-D536F9244AB6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_HW_FIRMWARE_DOWNLOAD, STORAGE_HW_FIRMWARE_DOWNLOAD, *PSTORAGE_HW_FIRMWARE_DOWNLOAD, PSTORAGE_HW_FIRMWARE_DOWNLOAD
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_HW_FIRMWARE_DOWNLOAD, *PSTORAGE_HW_FIRMWARE_DOWNLOAD, STORAGE_HW_FIRMWARE_DOWNLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTORAGE_HW_FIRMWARE_DOWNLOAD, STORAGE_HW_FIRMWARE_DOWNLOAD
 ---
 
 # _STORAGE_HW_FIRMWARE_DOWNLOAD structure
@@ -103,12 +104,12 @@ Reserved for future use.
 
 ### -field Offset
 
-The offset in this buffer of where the Image file begins. This should be aligned to ImagePayloadAlignment from <a href="storage.storage_hw_firmware_info">STORAGE_HW_FIRMWARE_INFO</a>.
+The offset in this buffer of where the Image file begins. This should be aligned to ImagePayloadAlignment from <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info.md">STORAGE_HW_FIRMWARE_INFO</a>.
 
 
 ### -field BufferSize
 
-The buffer size of the ImageBuffer. This should be a multiple of ImagePayloadAlignment from <a href="storage.storage_hw_firmware_info">STORAGE_HW_FIRMWARE_INFO</a>.
+The buffer size of the ImageBuffer. This should be a multiple of ImagePayloadAlignment from <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info.md">STORAGE_HW_FIRMWARE_INFO</a>.
 
 
 ### -field ImageBuffer

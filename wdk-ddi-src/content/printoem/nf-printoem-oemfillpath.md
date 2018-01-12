@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMFillPath
+UID: NF:printoem.OEMFillPath
 title: OEMFillPath function
 author: windows-driver-content
 description: The OEMFillPath function handles the filling of closed paths.
@@ -7,7 +7,7 @@ old-location: print\oemfillpath.htm
 old-project: print
 ms.assetid: a61081ad-308e-49c5-a428-1142520d38e4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMFillPath
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

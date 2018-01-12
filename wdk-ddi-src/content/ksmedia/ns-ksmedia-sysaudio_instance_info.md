@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.SYSAUDIO_INSTANCE_INFO
+UID: NS:ksmedia.SYSAUDIO_INSTANCE_INFO
 title: SYSAUDIO_INSTANCE_INFO
 author: windows-driver-content
 description: The SYSAUDIO_INSTANCE_INFO structure specifies which virtual audio device to open and includes flags for configuring that device.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 3468b29d-e62c-46b4-b95e-06df846ebd81
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SYSAUDIO_INSTANCE_INFO, *PSYSAUDIO_INSTANCE_INFO, PSYSAUDIO_INSTANCE_INFO, SYSAUDIO_INSTANCE_INFO
+ms.keywords: SYSAUDIO_INSTANCE_INFO, *PSYSAUDIO_INSTANCE_INFO, SYSAUDIO_INSTANCE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSYSAUDIO_INSTANCE_INFO, SYSAUDIO_INSTANCE_INFO
 ---
 
 # SYSAUDIO_INSTANCE_INFO structure
@@ -57,7 +58,7 @@ typedef struct {
 
 ### -field Property
 
-Specifies the property. This parameter is a structure of type <a href="stream.ksproperty">KSPROPERTY</a>.
+Specifies the property. This parameter is a structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.
 
 
 ### -field Flags
@@ -98,7 +99,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksproperty">KSPROPERTY</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537419">KSPROPERTY_SYSAUDIO_DEVICE_COUNT</a>

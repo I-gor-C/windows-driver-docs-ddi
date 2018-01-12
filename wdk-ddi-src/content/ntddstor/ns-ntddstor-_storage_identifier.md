@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._STORAGE_IDENTIFIER
+UID: NS:ntddstor._STORAGE_IDENTIFIER
 title: _STORAGE_IDENTIFIER
 author: windows-driver-content
 description: The STORAGE_IDENTIFIER structure represents a SCSI identification descriptor.
@@ -7,8 +7,8 @@ old-location: storage\storage_identifier.htm
 old-project: storage
 ms.assetid: f2b0610a-dffa-48fb-bc5a-355fa9f05770
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_IDENTIFIER, PSTORAGE_IDENTIFIER, STORAGE_IDENTIFIER
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_IDENTIFIER, *PSTORAGE_IDENTIFIER, STORAGE_IDENTIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTORAGE_IDENTIFIER, STORAGE_IDENTIFIER
 ---
 
 # _STORAGE_IDENTIFIER structure
@@ -65,7 +66,7 @@ Specifies the code set used by a SCSI identification descriptor to identify a lo
 
 ### -field Type
 
-Contains an enumerator value of type <a href="storage.storage_identifier_type">STORAGE_IDENTIFIER_TYPE</a> that indicates the identifier type.
+Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566990">STORAGE_IDENTIFIER_TYPE</a> that indicates the identifier type.
 
 
 ### -field IdentifierSize
@@ -80,7 +81,7 @@ Specifies the offset in bytes from the current descriptor to the next descriptor
 
 ### -field Association
 
-Contains an enumerator value of type <a href="storage.storage_association_type">STORAGE_ASSOCIATION_TYPE</a> that indicates whether the descriptor identifies a device or a port.
+Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a> that indicates whether the descriptor identifies a device or a port.
 
 
 ### -field Identifier
@@ -110,15 +111,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storage_association_type">STORAGE_ASSOCIATION_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566349">STORAGE_ASSOCIATION_TYPE</a>
 </dt>
 <dt>
-<a href="storage.storage_identifier_type">STORAGE_IDENTIFIER_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566990">STORAGE_IDENTIFIER_TYPE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_IDENTIFIER structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORAGE_IDENTIFIER structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

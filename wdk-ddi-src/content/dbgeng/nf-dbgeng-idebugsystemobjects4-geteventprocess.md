@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetEventProcess
+UID: NF:dbgeng.IDebugSystemObjects4.GetEventProcess
 title: IDebugSystemObjects4::GetEventProcess method
 author: windows-driver-content
 description: The GetEventProcess method returns the engine process ID for the process on which the last event occurred.
 old-location: debugger\geteventprocess.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 77cf1995-f3f3-4a03-bba7-9df230a10da0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetEventProcess, GetEventProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetEventProcess method

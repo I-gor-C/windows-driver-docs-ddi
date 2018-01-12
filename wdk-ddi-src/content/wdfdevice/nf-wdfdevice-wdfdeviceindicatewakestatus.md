@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdevice.WdfDeviceIndicateWakeStatus
+UID: NF:wdfdevice.WdfDeviceIndicateWakeStatus
 title: WdfDeviceIndicateWakeStatus function
 author: windows-driver-content
 description: The WdfDeviceIndicateWakeStatus method informs the framework that the calling bus driver has stopped waiting for a specified device to trigger a wake signal on the bus.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceindicatewakestatus.htm
 old-project: wdf
 ms.assetid: 6581a309-1a6d-4795-a55c-327215ea18ee
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDeviceIndicateWakeStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -91,7 +92,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## -remarks
 If <a href="https://msdn.microsoft.com/fe823930-e3ff-4c95-a640-bb6470c95d1d">NT_SUCCESS</a>(<i>WaitWakeStatus</i>) equals <b>TRUE</b>, the framework will restore the device and system to their working states. If NT_SUCCESS(<i>WaitWakeStatus</i>) equals <b>FALSE</b>, the device and system will remain in their current states.
 
-For more information about calling the <b>WdfDeviceIndicateWakeStatus</b> method, see <a href="wdf.supporting_system_wake_up">Supporting System Wake-Up</a>.
+For more information about calling the <b>WdfDeviceIndicateWakeStatus</b> method, see <a href="https://msdn.microsoft.com/519dcd1a-9975-48b1-a032-04348b903ac5">Supporting System Wake-Up</a>.
 
 The following code example informs the framework that the specified device has triggered a wake signal.
 
@@ -137,7 +138,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -157,7 +158,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>

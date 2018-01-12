@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.WriteVirtualUncached
+UID: NF:dbgeng.IDebugDataSpaces4.WriteVirtualUncached
 title: IDebugDataSpaces4::WriteVirtualUncached method
 author: windows-driver-content
 description: The WriteVirtualUncached method writes data to the target's virtual address space.
 old-location: debugger\writevirtualuncached.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 01b729cb-d7d0-4c8d-a438-51319ef8e1c8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::WriteVirtualUncached, WriteVirtualUncached
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::WriteVirtualUncached method
@@ -88,7 +89,7 @@ This method can also return error values.  See <a href="https://msdn.microsoft.c
 ## -remarks
 This method writes the buffer to the memory in the target's virtual address space.
 
-This method behaves identically to <a href="debugger.writevirtual">WriteVirtual</a>, except that it avoids using the virtual memory cache.  It is therefore useful for reading inherently volatile virtual memory, such as memory-mapped device areas, without contaminating or invalidating the cache.
+This method behaves identically to <a href="https://msdn.microsoft.com/library/windows/hardware/ff561468">WriteVirtual</a>, except that it avoids using the virtual memory cache.  It is therefore useful for reading inherently volatile virtual memory, such as memory-mapped device areas, without contaminating or invalidating the cache.
 
 
 ## -requirements
@@ -132,15 +133,15 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
 </dt>
 <dt>
-<a href="debugger.writevirtual">WriteVirtual</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561468">WriteVirtual</a>
 </dt>
 <dt>
-<a href="debugger.readvirtualuncached">ReadVirtualUncached</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554361">ReadVirtualUncached</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugDataSpaces::WriteVirtualUncached method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugDataSpaces::WriteVirtualUncached method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

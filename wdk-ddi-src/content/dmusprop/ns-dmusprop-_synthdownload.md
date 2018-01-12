@@ -1,5 +1,5 @@
 ---
-UID: NS.DMUSPROP._SYNTHDOWNLOAD
+UID: NS:dmusprop._SYNTHDOWNLOAD
 title: _SYNTHDOWNLOAD
 author: windows-driver-content
 description: The SYNTHDOWNLOAD structure specifies a handle for downloaded DLS data. It also specifies whether the buffer containing the DLS data can be freed.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: b6fd9c92-ac36-46ac-b996-d76afaf6b906
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SYNTHDOWNLOAD, *PSYNTHDOWNLOAD, PSYNTHDOWNLOAD, SYNTHDOWNLOAD
+ms.keywords: _SYNTHDOWNLOAD, *PSYNTHDOWNLOAD, SYNTHDOWNLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSYNTHDOWNLOAD, SYNTHDOWNLOAD
 ---
 
 # _SYNTHDOWNLOAD structure

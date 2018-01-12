@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_MINIPORT_DRIVER_CHARACTERISTICS
+UID: NS:ndis._NDIS_MINIPORT_DRIVER_CHARACTERISTICS
 title: _NDIS_MINIPORT_DRIVER_CHARACTERISTICS
 author: windows-driver-content
 description: An NDIS driver initializes an NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure to define its miniport driver characteristics, including the entry points for its MiniportXxx functions.
 old-location: netvista\ndis_miniport_driver_characteristics.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2e2c8522-127d-49d5-a5d6-97f9403bec89
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_MINIPORT_DRIVER_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, PNDIS_MINIPORT_DRIVER_CHARACTERISTICS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_MINIPORT_DRIVER_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_CHARACTERISTICS
 ---
 
 # _NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure
@@ -85,7 +86,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_CHARACTERISTICS {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_MINIPORT_DRIVER_CHARACTERISTICS</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_MINIPORT_DRIVER_CHARACTERISTICS.
@@ -352,7 +353,7 @@ Optional. The entry point for the
 
 <i>MiniportCheckForHangEx</i> is discouraged for miniport drivers intended to be installed on non-AOAC, battery-powered devices due to the impact on battery life, so they should set this entry point to <b>NULL</b>.
 
-<i>MiniportCheckForHangEx</i> is permitted but not required for miniport drivers that are intended to be installed in line-powered (mains-powered) devices. For drivers targeting NDIS 6.30 and later, consider using <a href="netvista.ndismresetminiport">NdisMResetMiniport</a> instead.
+<i>MiniportCheckForHangEx</i> is permitted but not required for miniport drivers that are intended to be installed in line-powered (mains-powered) devices. For drivers targeting NDIS 6.30 and later, consider using <a href="..\ndis\nf-ndis-ndismresetminiport.md">NdisMResetMiniport</a> instead.
 
 
 ### -field ResetHandlerEx
@@ -410,7 +411,7 @@ Required for WLAN and Ethernet miniports that implement RDMA or IPSec offload.
 ### -field SynchronousOidRequestHandler
 
 The entry point for the 
-      <a href="netvista.miniport_synchronous_oid_request">
+      <a href="..\ndis\nf-ndis-miniport_synchronous_oid_request.md">
       MiniportSynchronousOidRequest</a> function. This is an optional entry point. Set this member to <b>NULL</b> if
       the miniport driver does not handle Synchronous OID requests. 
 
@@ -420,7 +421,7 @@ Required for WLAN and Ethernet miniports that implement RSSv2.
 ## -remarks
 An NDIS driver passes a pointer to its <b>NDIS_MINIPORT_DRIVER_CHARACTERISTICS</b> structure in the 
     <i>MiniportDriverCharacteristics</i> parameter of the 
-    <a href="netvista.ndismregisterminiportdriver">
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
     NdisMRegisterMiniportDriver</a> function. A miniport driver calls 
     <b>NdisMRegisterMiniportDriver</b> from its 
     <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine (see also 
@@ -513,12 +514,12 @@ Header
 <a href="..\ndis\nc-ndis-miniport_shutdown.md">MiniportShutdownEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

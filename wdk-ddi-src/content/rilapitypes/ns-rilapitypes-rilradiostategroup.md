@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILRADIOSTATEGROUP
+UID: NS:rilapitypes.RILRADIOSTATEGROUP
 title: RILRADIOSTATEGROUP
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilradiostategroup_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ce8cf743-4386-4afb-87d3-93f9a83bd632
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILRADIOSTATEGROUP, RILRADIOSTATEGROUP, *LPRILRADIOSTATEGROUP
+ms.date: 1/8/2018
+ms.keywords: RILRADIOSTATEGROUP, *LPRILRADIOSTATEGROUP, RILRADIOSTATEGROUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILRADIOSTATEGROUP, RILRADIOSTATEGROUP
 req.product: Windows 10 or later.
 ---
 

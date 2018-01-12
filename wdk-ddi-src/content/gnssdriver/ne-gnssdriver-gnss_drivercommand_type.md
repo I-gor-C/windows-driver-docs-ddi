@@ -1,5 +1,5 @@
 ---
-UID: NE.gnssdriver.GNSS_DRIVERCOMMAND_TYPE
+UID: NE:gnssdriver.GNSS_DRIVERCOMMAND_TYPE
 title: GNSS_DRIVERCOMMAND_TYPE
 author: windows-driver-content
 description: This enumeration indicates the type of driver command or configuration for the GNSS driver provided in the GNSS_DRIVERCOMMAND_PARAM structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: GNSS_DRIVERCOMMAND_TYPE
 ---
 
 # GNSS_DRIVERCOMMAND_TYPE enumeration

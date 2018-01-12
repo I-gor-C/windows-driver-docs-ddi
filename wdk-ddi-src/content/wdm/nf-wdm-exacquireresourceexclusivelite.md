@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ExAcquireResourceExclusiveLite
+UID: NF:wdm.ExAcquireResourceExclusiveLite
 title: ExAcquireResourceExclusiveLite function
 author: windows-driver-content
 description: The ExAcquireResourceExclusiveLite routine acquires the given resource for exclusive access by the calling thread.
@@ -7,7 +7,7 @@ old-location: kernel\exacquireresourceexclusivelite.htm
 old-project: kernel
 ms.assetid: c7f8a6c5-15d5-4a24-a351-4fa5d6c72fbd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ExAcquireResourceExclusiveLite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -80,9 +81,9 @@ If the caller has shared access to the resource, the caller must release the loc
 
 If the resource is currently owned as exclusive by another thread, or if the caller only has shared access to the resource, the current thread is put into a wait state until the resource can be acquired.
 
-The caller can release the resource by calling either <a href="kernel.exreleaseresourcelite">ExReleaseResourceLite</a> or <a href="kernel.exreleaseresourceforthreadlite">ExReleaseResourceForThreadLite</a>.
+The caller can release the resource by calling either <a href="https://msdn.microsoft.com/library/windows/hardware/ff545597">ExReleaseResourceLite</a> or <a href="..\wdm\nf-wdm-exreleaseresourceforthreadlite.md">ExReleaseResourceForThreadLite</a>.
 
-Normal kernel APC delivery must be disabled before calling this routine. Disable normal kernel APC delivery by calling <a href="kernel.keentercriticalregion">KeEnterCriticalRegion</a>. Delivery must remain disabled until the resource is released, at which point it can be reenabled by calling <a href="kernel.keleavecriticalregion">KeLeaveCriticalRegion</a>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.
+Normal kernel APC delivery must be disabled before calling this routine. Disable normal kernel APC delivery by calling <a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>. Delivery must remain disabled until the resource is released, at which point it can be reenabled by calling <a href="..\wdm\nf-wdm-keleavecriticalregion.md">KeLeaveCriticalRegion</a>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.
 
 
 ## -requirements
@@ -157,7 +158,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_exclusiveresourceaccess">ExclusiveResourceAccess</a>, <a href="devtest.wdm_irqlexapclte3">IrqlExApcLte3</a>, <a href="devtest.wdm_withincriticalregion">WithinCriticalRegion</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>, <a href="devtest.storport_withincriticalregion">WithinCriticalRegion(storport)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546004">ExclusiveResourceAccess</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547753">IrqlExApcLte3</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh466453">WithinCriticalRegion</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>, <a href="https://msdn.microsoft.com/338E6995-0EB2-476D-B5F5-504DC8FF8609">WithinCriticalRegion(storport)</a>
 </td>
 </tr>
 </table>
@@ -165,33 +166,33 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exacquireresourcesharedlite">ExAcquireResourceSharedLite</a>
+<a href="..\wdm\nf-wdm-exacquireresourcesharedlite.md">ExAcquireResourceSharedLite</a>
 </dt>
 <dt>
-<a href="kernel.exgetexclusivewaitercount">ExGetExclusiveWaiterCount</a>
+<a href="..\wdm\nf-wdm-exgetexclusivewaitercount.md">ExGetExclusiveWaiterCount</a>
 </dt>
 <dt>
-<a href="kernel.exgetsharedwaitercount">ExGetSharedWaiterCount</a>
+<a href="..\wdm\nf-wdm-exgetsharedwaitercount.md">ExGetSharedWaiterCount</a>
 </dt>
 <dt>
-<a href="kernel.exinitializeresourcelite">ExInitializeResourceLite</a>
+<a href="..\wdm\nf-wdm-exinitializeresourcelite.md">ExInitializeResourceLite</a>
 </dt>
 <dt>
-<a href="kernel.exreinitializeresourcelite">ExReinitializeResourceLite</a>
+<a href="..\wdm\nf-wdm-exreinitializeresourcelite.md">ExReinitializeResourceLite</a>
 </dt>
 <dt>
-<a href="kernel.exisresourceacquiredexclusivelite">ExIsResourceAcquiredExclusiveLite</a>
+<a href="..\wdm\nf-wdm-exisresourceacquiredexclusivelite.md">ExIsResourceAcquiredExclusiveLite</a>
 </dt>
 <dt>
-<a href="kernel.exreleaseresourceforthreadlite">ExReleaseResourceForThreadLite</a>
+<a href="..\wdm\nf-wdm-exreleaseresourceforthreadlite.md">ExReleaseResourceForThreadLite</a>
 </dt>
 <dt>
-<a href="kernel.keentercriticalregion">KeEnterCriticalRegion</a>
+<a href="..\wdm\nf-wdm-keentercriticalregion.md">KeEnterCriticalRegion</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExAcquireResourceExclusiveLite routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExAcquireResourceExclusiveLite routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

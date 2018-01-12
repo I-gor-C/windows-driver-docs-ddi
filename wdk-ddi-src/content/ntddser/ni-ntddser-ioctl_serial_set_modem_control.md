@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_SET_MODEM_CONTROL
+UID: NI:ntddser.IOCTL_SERIAL_SET_MODEM_CONTROL
 title: IOCTL_SERIAL_SET_MODEM_CONTROL
 author: windows-driver-content
 description: The IOCTL_SERIAL_SET_MODEM_CONTROL request sets the modem control register (MCR) in the UART. No parameter checking is done on the client-supplied register settings.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_MODEM_CONTROL IOCTL

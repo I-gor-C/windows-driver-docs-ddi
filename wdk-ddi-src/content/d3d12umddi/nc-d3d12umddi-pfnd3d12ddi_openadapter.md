@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d12umddi.PFND3D12DDI_OPENADAPTER
+UID: NC:d3d12umddi.PFND3D12DDI_OPENADAPTER
 title: PFND3D12DDI_OPENADAPTER
 author: windows-driver-content
 description: The PFND3D12DDI_OPENADAPTER function creates a graphics adapter object that is referenced in subsequent calls.
@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_openadapter.htm
 old-project: display
 ms.assetid: FEDC2FB5-9F1A-4829-A98D-3BEA4218AE3D
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 # PFND3D12DDI_OPENADAPTER callback

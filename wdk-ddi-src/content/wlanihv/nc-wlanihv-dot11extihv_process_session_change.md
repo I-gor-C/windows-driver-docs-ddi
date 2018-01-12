@@ -1,14 +1,14 @@
 ---
-UID: NC.wlanihv.DOT11EXTIHV_PROCESS_SESSION_CHANGE
+UID: NC:wlanihv.DOT11EXTIHV_PROCESS_SESSION_CHANGE
 title: DOT11EXTIHV_PROCESS_SESSION_CHANGE
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11extihvprocesssessionchange.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 17d5ab30-141a-4b7b-93f1-113fb1a39ba6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BINARY_CONTAINER, *PBINARY_CONTAINER, PBINARY_CONTAINER, BINARY_CONTAINER
+ms.date: 1/8/2018
+ms.keywords: _DRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W, DRIVER_INFO_8
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.SCSI._ZONE_DESCRIPTIOR
+UID: NS:scsi._ZONE_DESCRIPTIOR
 title: _ZONE_DESCRIPTIOR
 author: windows-driver-content
 description: Note  This structure is for internal use only and should not be called from your code. .
@@ -7,8 +7,8 @@ old-location: storage\zone_descriptior.htm
 old-project: storage
 ms.assetid: 8326f683-3952-486e-b322-80ce96759366
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR
+ms.date: 1/10/2018
+ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 req.product: Windows 10 or later.
 ---
 

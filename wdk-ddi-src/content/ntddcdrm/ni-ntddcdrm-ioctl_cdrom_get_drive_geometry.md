@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdrm.IOCTL_CDROM_GET_DRIVE_GEOMETRY
+UID: NI:ntddcdrm.IOCTL_CDROM_GET_DRIVE_GEOMETRY
 title: IOCTL_CDROM_GET_DRIVE_GEOMETRY
 author: windows-driver-content
 description: Returns information about the CD-ROM's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).
@@ -7,8 +7,8 @@ old-location: storage\ioctl_cdrom_get_drive_geometry.htm
 old-project: storage
 ms.assetid: ed9738cb-7016-417b-baae-b8d4242a384e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, PWRITE_ROTATION, WRITE_ROTATION
+ms.date: 1/10/2018
+ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, WRITE_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWRITE_ROTATION, WRITE_ROTATION
 ---
 
 # IOCTL_CDROM_GET_DRIVE_GEOMETRY IOCTL
@@ -58,7 +59,7 @@ None.
 
 
 ### -output-buffer
-The driver returns the <a href="storage.disk_geometry">DISK_GEOMETRY</a>-type information in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
+The driver returns the <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>-type information in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
 
 
 ### -output-buffer-length
@@ -99,7 +100,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.disk_geometry">DISK_GEOMETRY</a>
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
 </dt>
 <dt>
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_drive_geometry_ex.md">IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX</a>
@@ -109,5 +110,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_CDROM_GET_DRIVE_GEOMETRY control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_CDROM_GET_DRIVE_GEOMETRY control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

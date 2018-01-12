@@ -1,5 +1,5 @@
 ---
-UID: NE.wdm._SYSTEM_POWER_STATE
+UID: NE:wdm._SYSTEM_POWER_STATE
 title: _SYSTEM_POWER_STATE
 author: windows-driver-content
 description: The SYSTEM_POWER_STATE enumeration type is used to indicate a system power state.
@@ -7,8 +7,8 @@ old-location: kernel\system_power_state.htm
 old-project: kernel
 ms.assetid: aa027f03-7d74-4c0e-8f62-d53f41ae86ae
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYSTEM_POWER_STATE, *PSYSTEM_POWER_STATE, SYSTEM_POWER_STATE, PSYSTEM_POWER_STATE
+ms.date: 1/4/2018
+ms.keywords: _SYSTEM_POWER_STATE, SYSTEM_POWER_STATE, *PSYSTEM_POWER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: PASSIVE_LEVEL (See Remarks section)
+req.typenames: SYSTEM_POWER_STATE, *PSYSTEM_POWER_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -98,11 +99,11 @@ Indicates the system is turned off, which corresponds to <a href="https://msdn.m
 
 ### -field PowerSystemMaximum
 
-The number of system power state values for this enumeration type that represents actual power states. This value is the number of elements in the <b>DeviceState</b> member of the <a href="kernel.device_capabilities">DEVICE_CAPABILITIES</a> structure for a device. The other system power state values are less than this value.
+The number of system power state values for this enumeration type that represents actual power states. This value is the number of elements in the <b>DeviceState</b> member of the <a href="..\wdm\ns-wdm-_device_capabilities.md">DEVICE_CAPABILITIES</a> structure for a device. The other system power state values are less than this value.
 
 
 ## -remarks
-A power state indicates the level of power consumption—and thus the extent of computing activity—by the system or by a single device. The power manager sets the power state of the system as a whole, where the system power state is indicated by one of the values of the <b>SYSTEM_POWER_STATE</b> enumeration type. Device drivers set the power state of their individual devices, where the device power state is indicated by one of the values of the <a href="kernel.device_power_state">DEVICE_POWER_STATE</a> enumeration type.
+A power state indicates the level of power consumption—and thus the extent of computing activity—by the system or by a single device. The power manager sets the power state of the system as a whole, where the system power state is indicated by one of the values of the <b>SYSTEM_POWER_STATE</b> enumeration type. Device drivers set the power state of their individual devices, where the device power state is indicated by one of the values of the <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a> enumeration type.
 
 For more information about system power states, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546941">Handling System Power State Requests</a> and for more information about device power states, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554397">Managing Power for Individual Devices</a>.
 
@@ -127,12 +128,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_power_state">DEVICE_POWER_STATE</a>
+<a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SYSTEM_POWER_STATE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20SYSTEM_POWER_STATE enumeration%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

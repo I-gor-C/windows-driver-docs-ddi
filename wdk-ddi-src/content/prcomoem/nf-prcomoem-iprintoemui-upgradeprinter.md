@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUI.UpgradePrinter
+UID: NF:prcomoem.IPrintOemUI.UpgradePrinter
 title: IPrintOemUI::UpgradePrinter method
 author: windows-driver-content
 description: The IPrintOemUI::UpgradePrinter method allows a user interface plug-in to upgrade device option values that are stored in the registry.
@@ -7,7 +7,7 @@ old-location: print\iprintoemui_upgradeprinter.htm
 old-project: print
 ms.assetid: 405f0000-c239-4f2c-83ad-5d35441a5df2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUI, IPrintOemUI::UpgradePrinter, UpgradePrinter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ Caller-supplied version number of the structure pointed to by <i>pDriverUpgradeI
 
 ### -param pDriverUpgradeInfo 
 
-Caller-supplied pointer to a <a href="print.driver_upgrade_info_1">DRIVER_UPGRADE_INFO_1</a> structure.
+Caller-supplied pointer to a <a href="..\winddiui\ns-winddiui-_driver_upgrade_info_1.md">DRIVER_UPGRADE_INFO_1</a> structure.
 
 
 ## -returns
@@ -83,7 +84,7 @@ The method must return one of the following values.
 ## -remarks
 If you provide a user interface plug-in for one of Microsoft's printer drivers, and if the user interface plug-in stores device option values in the registry, it should implement the <code>IPrintOemUI::UpgradePrinter</code> method to update those values.
 
-A user interface plug-in's <code>IPrintOemUI::UpgradePrinter</code> method performs the same types of operations as the <b>DrvUpgradePrinter</b> function that is exported by user-mode printer interface DLLs. When the driver's <a href="print.drvupgradeprinter">DrvUpgradePrinter</a> function is called, it updates its own registry values and then calls the <code>IPrintOemUI::UpgradePrinter</code> method.
+A user interface plug-in's <code>IPrintOemUI::UpgradePrinter</code> method performs the same types of operations as the <b>DrvUpgradePrinter</b> function that is exported by user-mode printer interface DLLs. When the driver's <a href="..\winddiui\nf-winddiui-drvupgradeprinter.md">DrvUpgradePrinter</a> function is called, it updates its own registry values and then calls the <code>IPrintOemUI::UpgradePrinter</code> method.
 
 If <code>IPrintOemUI::UpgradePrinter</code> methods are exported by multiple user interface plug-ins, the methods are called in the order that the plug-ins are specified for installation.
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfdevice._WDF_POWER_DEVICE_STATE
+UID: NE:wdfdevice._WDF_POWER_DEVICE_STATE
 title: _WDF_POWER_DEVICE_STATE
 author: windows-driver-content
 description: The WDF_POWER_DEVICE_STATE enumeration identifies the device power states that a device might support.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_power_device_state.htm
 old-project: wdf
 ms.assetid: 66ff00fd-43b0-4fe1-a010-4b5ef65fa811
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_POWER_DEVICE_STATE, *PWDF_POWER_DEVICE_STATE, PWDF_POWER_DEVICE_STATE, WDF_POWER_DEVICE_STATE
+ms.date: 12/29/2017
+ms.keywords: _WDF_POWER_DEVICE_STATE, WDF_POWER_DEVICE_STATE, *PWDF_POWER_DEVICE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: See Remarks section.
+req.irql: <=DISPATCH_LEVEL
+req.typenames: WDF_POWER_DEVICE_STATE, *PWDF_POWER_DEVICE_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -95,7 +96,7 @@ Represents the final time that the device enters the D3 device power state. Typi
 
 ### -field WdfPowerDevicePrepareForHibernation
 
-The device supports hibernation files, and the system is ready to hibernate by entering <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">system state S4</a>. The driver must not turn off the device. For more information, see <a href="wdf.supporting_special_files">Supporting Special Files</a>.
+The device supports hibernation files, and the system is ready to hibernate by entering <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">system state S4</a>. The driver must not turn off the device. For more information, see <a href="https://msdn.microsoft.com/350e715f-be36-4999-99a2-6175d9763b3f">Supporting Special Files</a>.
 
 
 ### -field WdfPowerDeviceMaximum
@@ -154,5 +155,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_DEVICE_STATE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_DEVICE_STATE enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

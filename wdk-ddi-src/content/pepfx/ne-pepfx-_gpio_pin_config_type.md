@@ -1,5 +1,5 @@
 ---
-UID: NE.pepfx._GPIO_PIN_CONFIG_TYPE
+UID: NE:pepfx._GPIO_PIN_CONFIG_TYPE
 title: _GPIO_PIN_CONFIG_TYPE
 author: windows-driver-content
 description: The GPIO_PIN_CONFIG_TYPE enumeration describes a connection IO resource.
@@ -7,7 +7,7 @@ old-location: kernel\gpio_pin_config_type.htm
 old-project: kernel
 ms.assetid: 76509992-E5A7-4C2F-84D3-B3FD06ACEFE1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: _GPIO_PIN_CONFIG_TYPE, GPIO_PIN_CONFIG_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks.
+req.typenames: GPIO_PIN_CONFIG_TYPE
 ---
 
 # _GPIO_PIN_CONFIG_TYPE enumeration

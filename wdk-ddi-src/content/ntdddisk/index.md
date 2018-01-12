@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ntdddisk
 ---
 
 # Ntdddisk.h header
@@ -42,13 +42,11 @@ Ntdddisk.h contain these programming interfaces:
 | [_IDEREGS structure](ns-ntdddisk-_ideregs.md) | The IDEREGS structure is used to report the contents of the IDE controller registers. |
 | [_PARTITION_INFORMATION structure](ns-ntdddisk-_partition_information.md) | The PARTITION_INFORMATION structure contains partition information for a partition with a traditional AT-style Master Boot Record (MBR). |
 | [_PARTITION_INFORMATION_EX structure](ns-ntdddisk-_partition_information_ex.md) | PARTITION_INFORMATION_EX is the extended version of the PARTITION_INFORMATION structure. It holds information both for partitions with a Master Boot Record and for partitions with a GUID Partition Table. |
-| [_PARTITION_INFORMATION_GPT structure](ns-ntdddisk-_partition_information_gpt.md) | PARTITION_INFORMATION_GPT contains information for a GUID Partition Table partition that is not held in common with a Master Boot Record partition. |
 | [_PARTITION_INFORMATION_MBR structure](ns-ntdddisk-_partition_information_mbr.md) | PARTITION_INFORMATION_MBR contains information for a Master Boot Record partition that is not held in common with a GUID Partition Table partition. |
 | [_REASSIGN_BLOCKS structure](ns-ntdddisk-_reassign_blocks.md) | The REASSIGN_BLOCKS structure is used in conjunction with the IOCTL_DISK_REASSIGN_BLOCKS request to instruct a disk device to reassign the block numbers of the indicated bad blocks to good blocks. |
 | [_REASSIGN_BLOCKS_EX structure](ns-ntdddisk-_reassign_blocks_ex.md) | The REASSIGN_BLOCKS_EX structure is used in conjunction with the IOCTL_DISK_REASSIGN_BLOCKS_EX request to instruct a disk device to reassign the block numbers of the indicated bad blocks to good blocks. |
 | [_SENDCMDINPARAMS structure](ns-ntdddisk-_sendcmdinparams.md) | The SENDCMDINPARAMS structure contains the input parameters for the SMART_SEND_DRIVE_COMMAND request. |
 | [_SENDCMDOUTPARAMS structure](ns-ntdddisk-_sendcmdoutparams.md) | The SENDCMDOUTPARAMS structure is used in conjunction with the SMART_SEND_DRIVE_COMMAND request to retrieve data returned by a Self-Monitoring Analysis and Reporting Technology (SMART) command. |
-| [_SET_PARTITION_INFORMATION structure](ns-ntdddisk-_set_partition_information.md) | SET_PARTITION_INFORMATION is used with IOCTL_DISK_SET_PARTITION_INFO to change the partition type of a specified Master Boot Record (MBR) disk partition. |
 | [_SET_PARTITION_INFORMATION_EX structure](ns-ntdddisk-_set_partition_information_ex.md) | SET_PARTITION_INFORMATION_EX is used with the IOCTL IOCTL_DISK_SET_PARTITION_INFO_EX to set information for a specific partition. |
 | [_VERIFY_INFORMATION structure](ns-ntdddisk-_verify_information.md) | The VERIFY_INFORMATION structure provides information used to verify the existence of a disk extent. |
 

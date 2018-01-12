@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDARG_OUT_OPM_GET_INFOMATION
+UID: NS:iddcx.IDARG_OUT_OPM_GET_INFOMATION
 title: IDARG_OUT_OPM_GET_INFOMATION
 author: windows-driver-content
 description: Gives the OPM information that was requested.
@@ -7,7 +7,7 @@ old-location: display\idarg_out_opm_get_infomation.htm
 old-project: display
 ms.assetid: 7c51b228-480d-4e19-aa70-4fcc44ffae16
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDARG_OUT_OPM_GET_INFOMATION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDARG_OUT_OPM_GET_INFOMATION structure

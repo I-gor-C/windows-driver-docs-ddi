@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisFreeNetBufferListPool
+UID: NF:ndis.NdisFreeNetBufferListPool
 title: NdisFreeNetBufferListPool function
 author: windows-driver-content
 description: Call the NdisFreeNetBufferListPool function to free a NET_BUFFER_LIST structure pool.
 old-location: netvista\ndisfreenetbufferlistpool.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 811df5ea-f5e6-4986-adc0-c5fa95e5f072
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisFreeNetBufferListPool
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: Ndis.sys
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisFreeNetBufferListPool function
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 Call the 
   <b>NdisFreeNetBufferListPool</b> function to free a 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure pool.
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure pool.
 
 
 
@@ -58,7 +59,7 @@ VOID NdisFreeNetBufferListPool(
 ### -param PoolHandle [in]
 
 A handle that was obtained from a call to the 
-     <a href="netvista.ndisallocatenetbufferlistpool">
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
      NdisAllocateNetBufferListPool</a> function.
 
 
@@ -68,9 +69,9 @@ None
 
 ## -remarks
 Before freeing a 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure pool, you must
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure pool, you must
     free all the NET_BUFFER_LIST structures in the pool. To free a NET_BUFFER_LIST structure, call the 
-    <a href="netvista.ndisfreenetbufferlist">NdisFreeNetBufferList</a> function.
+    <a href="..\ndis\nf-ndis-ndisfreenetbufferlist.md">NdisFreeNetBufferList</a> function.
 
 
 ## -requirements
@@ -145,7 +146,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -153,19 +154,19 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatenetbufferlistpool">
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
    NdisAllocateNetBufferListPool</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreenetbufferlist">NdisFreeNetBufferList</a>
+<a href="..\ndis\nf-ndis-ndisfreenetbufferlist.md">NdisFreeNetBufferList</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisFreeNetBufferListPool function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeNetBufferListPool function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

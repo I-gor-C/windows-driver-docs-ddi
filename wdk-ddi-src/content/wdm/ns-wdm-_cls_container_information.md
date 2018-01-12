@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._CLS_CONTAINER_INFORMATION
+UID: NS:wdm._CLS_CONTAINER_INFORMATION
 title: _CLS_CONTAINER_INFORMATION
 author: windows-driver-content
 description: The CLFS_CONTAINER_INFORMATION structure holds descriptive information for an individual container in a Common Log File System (CLFS) log.
@@ -7,8 +7,8 @@ old-location: kernel\clfs_container_information.htm
 old-project: kernel
 ms.assetid: 9e083aba-1039-4ad3-9650-0e6e38ceb0c0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CLS_CONTAINER_INFORMATION, PPCLS_CONTAINER_INFORMATION, CLS_CONTAINER_INFORMATION, PCLS_CONTAINER_INFORMATION, *PCLS_CONTAINER_INFORMATION
+ms.date: 1/4/2018
+ms.keywords: _CLS_CONTAINER_INFORMATION, *PCLS_CONTAINER_INFORMATION, PPCLS_CONTAINER_INFORMATION, CLS_CONTAINER_INFORMATION, CLFS_CONTAINER_INFORMATION, *PCLFS_CONTAINER_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PCLS_CONTAINER_INFORMATION, PPCLS_CONTAINER_INFORMATION, CLS_CONTAINER_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -66,7 +67,7 @@ typedef struct _CLS_CONTAINER_INFORMATION {
 
 ### -field FileAttributes
 
-A set of flags that specifies attributes of the container. See the <i>fFlagsAndAttributes</i> parameter of the <a href="kernel.clfscreatelogfile">ClfsCreateLogFile</a> function.
+A set of flags that specifies attributes of the container. See the <i>fFlagsAndAttributes</i> parameter of the <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a> function.
 
 
 ### -field CreationTime
@@ -188,7 +189,7 @@ A 32-bit identifier that changes every time the container is recycled.
 
 
 ## -remarks
-The <a href="kernel.clfsscanlogcontainers">ClfsScanLogContainers</a> function writes descriptive information into an array of <b>CLFS_CONTAINER_INFORMATION</b> structures.
+The <a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a> function writes descriptive information into an array of <b>CLFS_CONTAINER_INFORMATION</b> structures.
 
 Time values <b>CreationTime</b>, <b>LastAccessTime</b>, and <b>LastWriteTime</b> are expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar.
 
@@ -211,21 +212,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfscreatelogfile">ClfsCreateLogFile</a>
+<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
 </dt>
 <dt>
-<a href="kernel.clfsscanlogcontainers">ClfsScanLogContainers</a>
+<a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a>
 </dt>
 <dt>
-<a href="kernel.clfscreatescancontext">ClfsCreateScanContext</a>
+<a href="..\wdm\nf-wdm-clfscreatescancontext.md">ClfsCreateScanContext</a>
 </dt>
 <dt>
-<a href="kernel.clfs_scan_context">CLFS_SCAN_CONTEXT</a>
+<a href="..\wdm\ns-wdm-_cls_scan_context.md">CLFS_SCAN_CONTEXT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLS_CONTAINER_INFORMATION structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CLS_CONTAINER_INFORMATION structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

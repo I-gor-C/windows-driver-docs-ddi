@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlValidateReparsePointBuffer
+UID: NF:ntifs.FsRtlValidateReparsePointBuffer
 title: FsRtlValidateReparsePointBuffer function
 author: windows-driver-content
 description: The FsRtlValidateReparsePointBuffer routine verifies that the specified reparse point buffer is valid.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlvalidatereparsepointbuffer.htm
 old-project: ifsk
 ms.assetid: fb67b116-12f5-4eef-ab05-f2056ccec4e3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlValidateReparsePointBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlValidateReparsePointBuffer function
@@ -80,7 +81,7 @@ The<b> FsRtlValidateReparsePointBuffer</b> returns one of the following NTSTATUS
 
 
 ## -remarks
-For more information about reparse points, see <a href="ifsk.reparse_points_in_a_file_system_filter_driver">Reparse Points in a File System Filter Driver</a>.
+For more information about reparse points, see <a href="https://msdn.microsoft.com/6aae70d9-c934-4759-bb26-728b0ac025d1">Reparse Points in a File System Filter Driver</a>.
 
 Reparse tags contain several bits that cannot be set except by system components. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=179582">Reparse Point Tags</a>.
 
@@ -156,15 +157,15 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.reparse_data_buffer">REPARSE_DATA_BUFFER</a>
+<a href="..\ntifs\ns-ntifs-_reparse_data_buffer.md">REPARSE_DATA_BUFFER</a>
 </dt>
 <dt>
-<a href="ifsk.reparse_guid_data_buffer">REPARSE_GUID_DATA_BUFFER</a>
+<a href="..\ntifs\ns-ntifs-_reparse_guid_data_buffer.md">REPARSE_GUID_DATA_BUFFER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlValidateReparsePointBuffer routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlValidateReparsePointBuffer routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

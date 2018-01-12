@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_VIDPNTOPOLOGY_INTERFACE
+UID: NS:d3dkmddi._DXGK_VIDPNTOPOLOGY_INTERFACE
 title: _DXGK_VIDPNTOPOLOGY_INTERFACE
 author: windows-driver-content
 description: The DXGK_VIDPNTOPOLOGY_INTERFACE structure contains pointers to functions that belong to the VidPn Topology interface, which is implemented by the video present network (VidPN) manager.
@@ -7,7 +7,7 @@ old-location: display\dxgk_vidpntopology_interface.htm
 old-project: display
 ms.assetid: 293103cc-217c-4dcb-82c1-971adba564a0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_VIDPNTOPOLOGY_INTERFACE, DXGK_VIDPNTOPOLOGY_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_VIDPNTOPOLOGY_INTERFACE
 ---
 
 # _DXGK_VIDPNTOPOLOGY_INTERFACE structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The DXGK_VIDPNTOPOLOGY_INTERFACE structure contains pointers to functions that belong to the <a href="display.vidpn_topology_interface">VidPn Topology interface</a>, which is implemented by the video present network (VidPN) manager.
+The DXGK_VIDPNTOPOLOGY_INTERFACE structure contains pointers to functions that belong to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570560">VidPn Topology interface</a>, which is implemented by the video present network (VidPN) manager.
 
 
 
@@ -127,7 +128,7 @@ A pointer to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntopology_removepa
 
 
 ## -remarks
-The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_gettopology.md">pfnGetTopology</a> function of the <a href="display.vidpn_interface">VidPn interface</a> to obtain a handle to a VidPN topology object and a pointer to a DXGK_VIDPNTOPOLOGY_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the VidPN topology object.
+The display miniport driver calls the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_gettopology.md">pfnGetTopology</a> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn interface</a> to obtain a handle to a VidPN topology object and a pointer to a DXGK_VIDPNTOPOLOGY_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the VidPN topology object.
 
 
 ## -requirements

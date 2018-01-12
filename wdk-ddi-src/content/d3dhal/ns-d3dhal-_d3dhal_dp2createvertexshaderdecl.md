@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DHAL._D3DHAL_DP2CREATEVERTEXSHADERDECL
+UID: NS:d3dhal._D3DHAL_DP2CREATEVERTEXSHADERDECL
 title: _D3DHAL_DP2CREATEVERTEXSHADERDECL
 author: windows-driver-content
 description: DirectX 9.0 and later versions only. The D3DHAL_DP2CREATEVERTEXSHADERDECL structure is used to create a vertex shader declaration when a D3DDP2OP_CREATEVERTEXSHADERDECL opcode is received by D3dDrawPrimitives2.
@@ -7,8 +7,8 @@ old-location: display\d3dhal_dp2createvertexshaderdecl.htm
 old-project: display
 ms.assetid: 063e72ef-7d57-484a-98f8-b6166a238096
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DHAL_DP2CREATEVERTEXSHADERDECL, D3DHAL_DP2CREATEVERTEXSHADERDECL
+ms.date: 12/29/2017
+ms.keywords: _D3DHAL_DP2CREATEVERTEXSHADERDECL, D3DHAL_DP2CREATEVERTEXSHADERDECL, *LPD3DHAL_DP2CREATEVERTEXSHADERDECL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DHAL_DP2CREATEVERTEXSHADERDECL
 ---
 
 # _D3DHAL_DP2CREATEVERTEXSHADERDECL structure
@@ -98,12 +99,12 @@ Header
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="display.d3dhal_dp2vertexshader">D3DHAL_DP2VERTEXSHADER</a>
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2vertexshader.md">D3DHAL_DP2VERTEXSHADER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2CREATEVERTEXSHADERDECL structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2CREATEVERTEXSHADERDECL structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

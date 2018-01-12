@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLDISCONNECTDETAILS
+UID: NS:ntddrilapitypes.RILCALLDISCONNECTDETAILS
 title: RILCALLDISCONNECTDETAILS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcalldisconnectdetails.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c933e219-47bb-4896-b5ee-bd2fd59f4e8c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLDISCONNECTDETAILS, LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS
+ms.date: 1/8/2018
+ms.keywords: RILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS
 ---
 
 # RILCALLDISCONNECTDETAILS structure

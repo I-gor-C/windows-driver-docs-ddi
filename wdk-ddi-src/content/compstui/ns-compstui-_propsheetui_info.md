@@ -1,5 +1,5 @@
 ---
-UID: NS.COMPSTUI._PROPSHEETUI_INFO
+UID: NS:compstui._PROPSHEETUI_INFO
 title: _PROPSHEETUI_INFO
 author: windows-driver-content
 description: The PROPSHEETUI_INFO structure is used as an input parameter to PFNPROPSHEETUI-typed functions.
@@ -7,8 +7,8 @@ old-location: print\propsheetui_info.htm
 old-project: print
 ms.assetid: b21c3ee1-13e8-4796-af45-6ba60e84df4e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PROPSHEETUI_INFO, PPROPSHEETUI_INFO, PROPSHEETUI_INFO, *PPROPSHEETUI_INFO
+ms.date: 1/8/2018
+ms.keywords: _PROPSHEETUI_INFO, PROPSHEETUI_INFO, *PPROPSHEETUI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PROPSHEETUI_INFO, *PPROPSHEETUI_INFO
 ---
 
 # _PROPSHEETUI_INFO structure
@@ -129,12 +130,12 @@ For information about the meaning of each constant, see the Remarks section of t
 
 ### -field hComPropSheet
 
-CPSUI-supplied handle to a property sheet <a href="https://msdn.microsoft.com/b4c40c15-df16-4af0-81c8-9e70d26ba598">group parent</a>. This handle can be passed to CPSUI's <a href="print.compropsheet">ComPropSheet</a> function.
+CPSUI-supplied handle to a property sheet <a href="https://msdn.microsoft.com/b4c40c15-df16-4af0-81c8-9e70d26ba598">group parent</a>. This handle can be passed to CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function.
 
 
 ### -field pfnComPropSheet
 
-Address of CPSUI's <a href="print.compropsheet">ComPropSheet</a> function.
+Address of CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/ff546207">ComPropSheet</a> function.
 
 
 ### -field lParamInit
@@ -153,7 +154,7 @@ Optional, private value or pointer supplied by the associated <a href="..\compst
 
 Result value supplied by the associated <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed function, initially set to zero by CPSUI. If the function stores a result value in <b>Result</b>, then for subsequent calls to the function, the stored value is unchanged unless changed by the function.
 
-If the PFNPROPSHEETUI-typed function's address was specified as an argument to <a href="print.commonpropertysheetui">CommonPropertySheetUI</a>, the last value stored in <b>Result</b> is returned to <b>CommonPropertySheetUI</b> in the location pointed to by its <i>pResult</i> argument.
+If the PFNPROPSHEETUI-typed function's address was specified as an argument to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546148">CommonPropertySheetUI</a>, the last value stored in <b>Result</b> is returned to <b>CommonPropertySheetUI</b> in the location pointed to by its <i>pResult</i> argument.
 
 
 ## -remarks

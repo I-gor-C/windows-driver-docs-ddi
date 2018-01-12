@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinSubmitFrameMdl
+UID: NF:ks.KsPinSubmitFrameMdl
 title: KsPinSubmitFrameMdl function
 author: windows-driver-content
 description: If a pin has been placed into injection mode by a call to KsPinRegisterFrameReturnCallback, the KsPinSubmitFrameMdl function submits a frame directly into the transport circuit.
@@ -7,7 +7,7 @@ old-location: stream\kspinsubmitframemdl.htm
 old-project: stream
 ms.assetid: 8033c0a9-86dd-4d54-b93e-66c926cae952
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinSubmitFrameMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: 
 ---
 
 # KsPinSubmitFrameMdl function
@@ -38,7 +39,7 @@ req.irql: <=DISPATCH_LEVEL
 
 
 ## -description
-If a pin has been placed into injection mode by a call to <a href="stream.kspinregisterframereturncallback">KsPinRegisterFrameReturnCallback</a>, the <b>KsPinSubmitFrameMdl</b> function submits a frame directly into the transport circuit.
+If a pin has been placed into injection mode by a call to <a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>, the <b>KsPinSubmitFrameMdl</b> function submits a frame directly into the transport circuit.
 
 
 
@@ -58,7 +59,7 @@ NTSTATUS KsPinSubmitFrameMdl(
 
 ### -param Pin [in]
 
-A pointer to a <a href="stream.kspin">KSPIN</a> structure representing the pin on which to submit a frame.
+A pointer to a <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure representing the pin on which to submit a frame.
 
 
 ### -param Mdl [in, optional]
@@ -73,7 +74,7 @@ A pointer to a <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> stru
 
 ### -param Context [in, optional]
 
-A pointer to a caller-allocated buffer that is passed to the frame return callback registered through <a href="stream.kspinregisterframereturncallback">KsPinRegisterFrameReturnCallback</a>. This parameter is optional and is solely for the caller's use.
+A pointer to a caller-allocated buffer that is passed to the frame return callback registered through <a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>. This parameter is optional and is solely for the caller's use.
 
 
 ## -returns
@@ -81,7 +82,7 @@ Returns STATUS_SUCCESS if frame submission is successful. Otherwise returns an a
 
 
 ## -remarks
-The difference between this function and <a href="stream.kspinsubmitframe">KsPinSubmitFrame</a> is that this function will submit a frame using an <a href="wdkgloss.m#wdkgloss.mdl#wdkgloss.mdl"><i>MDL</i></a> structure rather than a data and size argument.
+The difference between this function and <a href="..\ks\nf-ks-kspinsubmitframe.md">KsPinSubmitFrame</a> is that this function will submit a frame using an <a href="wdkgloss.m#wdkgloss.mdl#wdkgloss.mdl"><i>MDL</i></a> structure rather than a data and size argument.
 
 
 ## -requirements
@@ -144,15 +145,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kspinsubmitframe">KsPinSubmitFrame</a>
+<a href="..\ks\nf-ks-kspinsubmitframe.md">KsPinSubmitFrame</a>
 </dt>
 <dt>
-<a href="stream.kspinregisterframereturncallback">KsPinRegisterFrameReturnCallback</a>
+<a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinSubmitFrameMdl function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinSubmitFrameMdl function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

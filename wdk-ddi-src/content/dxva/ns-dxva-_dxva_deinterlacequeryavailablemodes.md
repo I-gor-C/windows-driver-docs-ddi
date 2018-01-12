@@ -1,5 +1,5 @@
 ---
-UID: NS.DXVA._DXVA_DEINTERLACEQUERYAVAILABLEMODES
+UID: NS:dxva._DXVA_DeinterlaceQueryAvailableModes
 title: _DXVA_DeinterlaceQueryAvailableModes
 author: windows-driver-content
 description: The DXVA_DeinterlaceQueryAvailableModes structure describes the available deinterlacing or frame-rate conversion modes for a particular input video format.
@@ -7,7 +7,7 @@ old-location: display\dxva_deinterlacequeryavailablemodes.htm
 old-project: display
 ms.assetid: c754f540-19ff-491f-89ec-63d3306c4068
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVA_DeinterlaceQueryAvailableModes, DXVA_DeinterlaceQueryAvailableModes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVA_DeinterlaceQueryAvailableModes
 ---
 
 # _DXVA_DeinterlaceQueryAvailableModes structure

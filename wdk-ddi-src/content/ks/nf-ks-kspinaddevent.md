@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinAddEvent
+UID: NF:ks.KsPinAddEvent
 title: KsPinAddEvent function
 author: windows-driver-content
 description: The KsPinAddEvent function adds a specified event to Pin's event list.
@@ -7,7 +7,7 @@ old-location: stream\kspinaddevent.htm
 old-project: stream
 ms.assetid: 1bb34062-f092-41a4-8d59-6937be7b5639
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinAddEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsPinAddEvent function
@@ -56,12 +57,12 @@ void _inline KsPinAddEvent(
 
 ### -param Pin [in]
 
-A pointer to the <a href="stream.kspin">KSPIN</a> structure to which to add a specified event.
+A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure to which to add a specified event.
 
 
 ### -param EventEntry [in]
 
-A pointer to a <a href="stream.ksevent_entry">KSEVENT_ENTRY</a> structure describing the event to add to <i>Pin</i>.
+A pointer to a <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure describing the event to add to <i>Pin</i>.
 
 
 ## -returns
@@ -69,7 +70,7 @@ None
 
 
 ## -remarks
-This function is an inline function call to <a href="stream.ksaddevent">KsAddEvent</a>.
+This function is an inline function call to <a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>.
 
 
 ## -requirements
@@ -121,28 +122,28 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksaddevent">KsAddEvent</a>
+<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
 </dt>
 <dt>
-<a href="stream.ksgenerateevents">KsGenerateEvents</a>
+<a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
 </dt>
 <dt>
-<a href="stream.ksevent_entry">KSEVENT_ENTRY</a>
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 </dt>
 <dt>
-<a href="stream.ksdefaultaddeventhandler">KsDefaultAddEventHandler</a>
+<a href="..\ks\nf-ks-ksdefaultaddeventhandler.md">KsDefaultAddEventHandler</a>
 </dt>
 <dt><b>KsGenerateEvents</b></dt>
 <dt>
-<a href="stream.ksfiltergenerateevents">KsFilterGenerateEvents</a>
+<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
 </dt>
 <dt>
-<a href="stream.kspingenerateevents">KsPinGenerateEvents</a>
+<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinAddEvent function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinAddEvent function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

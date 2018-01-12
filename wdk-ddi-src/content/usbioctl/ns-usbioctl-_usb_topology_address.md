@@ -1,14 +1,14 @@
 ---
-UID: NS.USBIOCTL._USB_TOPOLOGY_ADDRESS
+UID: NS:usbioctl._USB_TOPOLOGY_ADDRESS
 title: _USB_TOPOLOGY_ADDRESS
 author: windows-driver-content
 description: The USB_TOPOLOGY_ADDRESS structure is used with the IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS I/O request to retrieve information about a USB device?s location in the USB device tree.
 old-location: buses\usb_topology_address.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 5d8d6665-bfa1-4bc5-8168-7508624845e1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USB_TOPOLOGY_ADDRESS, *PUSB_TOPOLOGY_ADDRESS, PUSB_TOPOLOGY_ADDRESS, USB_TOPOLOGY_ADDRESS
+ms.date: 1/4/2018
+ms.keywords: _USB_TOPOLOGY_ADDRESS, USB_TOPOLOGY_ADDRESS, *PUSB_TOPOLOGY_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: USB_TOPOLOGY_ADDRESS, *PUSB_TOPOLOGY_ADDRESS
 req.product: Windows 10 or later.
 ---
 
@@ -118,12 +119,12 @@ Header
 <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_get_topology_address.md">IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS</a>
 </dt>
 <dt>
-<a href="buses.usb_structures_and_enumerations">USB Structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20USB_TOPOLOGY_ADDRESS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_TOPOLOGY_ADDRESS structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

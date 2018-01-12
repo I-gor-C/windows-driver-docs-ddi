@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfdevice._WDF_POWER_POLICY_SX_WAKE_USER_CONTROL
+UID: NE:wdfdevice._WDF_POWER_POLICY_SX_WAKE_USER_CONTROL
 title: _WDF_POWER_POLICY_SX_WAKE_USER_CONTROL
 author: windows-driver-content
 description: The WDF_POWER_POLICY_SX_WAKE_USER_CONTROL enumeration identifies whether a user can control a device's ability to wake the system from a low system power state.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_power_policy_sx_wake_user_control.htm
 old-project: wdf
 ms.assetid: d5f4eb5f-28bb-4906-b9f5-3adae31cac80
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _WDF_POWER_POLICY_SX_WAKE_USER_CONTROL, WDF_POWER_POLICY_SX_WAKE_USER_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: See Remarks section.
+req.irql: <=DISPATCH_LEVEL
+req.typenames: WDF_POWER_POLICY_SX_WAKE_USER_CONTROL
 req.product: Windows 10 or later.
 ---
 
@@ -74,7 +75,7 @@ Users can control the device's ability to wake the system from a low system powe
 
 
 ## -remarks
-The <b>WDF_POWER_POLICY_SX_WAKE_USER_CONTROL</b> enumeration is used as a member type in the <a href="wdf.wdf_device_power_policy_wake_settings">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a> structure.
+The <b>WDF_POWER_POLICY_SX_WAKE_USER_CONTROL</b> enumeration is used as a member type in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_wake_settings.md">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a> structure.
 
 To control a device's ability to wake the system from a low system power state, users modify information on a <a href="wdf.user_control_of_device_idle_and_wake_behavior">property sheet</a>. The framework creates the property sheet and Device Manager displays it.
 
@@ -118,12 +119,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdf_device_power_policy_wake_settings">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a>
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_wake_settings.md">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_POLICY_SX_WAKE_USER_CONTROL enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_POWER_POLICY_SX_WAKE_USER_CONTROL enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

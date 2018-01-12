@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSPROPERTY_CONNECTION
+UID: NE:ks.KSPROPERTY_CONNECTION
 title: KSPROPERTY_CONNECTION
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksproperty_connection.htm
 old-project: stream
 ms.assetid: 5129FB6F-528B-4795-9798-9707DCD57A7D
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPROPERTY_CONNECTION, KSPROPERTY_CONNECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_CONNECTION
 ---
 
 # KSPROPERTY_CONNECTION enumeration

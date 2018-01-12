@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUKMDT._D3DDDI_CREATEHWCONTEXTFLAGS
+UID: NS:d3dukmdt._D3DDDI_CREATEHWCONTEXTFLAGS
 title: _D3DDDI_CREATEHWCONTEXTFLAGS
 author: windows-driver-content
 description: A structure used to create hardware context flags.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_createhwcontextflags.htm
 old-project: display
 ms.assetid: 429A1C54-14F0-4E50-B0D6-BB73FCFD1904
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDI_CREATEHWCONTEXTFLAGS, D3DDDI_CREATEHWCONTEXTFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_CREATEHWCONTEXTFLAGS
 ---
 
 # _D3DDDI_CREATEHWCONTEXTFLAGS structure

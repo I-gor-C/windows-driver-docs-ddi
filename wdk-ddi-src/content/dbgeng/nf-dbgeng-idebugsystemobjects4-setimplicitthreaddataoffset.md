@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.SetImplicitThreadDataOffset
+UID: NF:dbgeng.IDebugSystemObjects4.SetImplicitThreadDataOffset
 title: IDebugSystemObjects4::SetImplicitThreadDataOffset method
 author: windows-driver-content
 description: The SetImplicitThreadDataOffset method sets the implicit thread for the current process.
 old-location: debugger\setimplicitthreaddataoffset.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 1562a2f4-0eea-44fd-b350-ccc17d8cd65e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::SetImplicitThreadDataOffset, SetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::SetImplicitThreadDataOffset method

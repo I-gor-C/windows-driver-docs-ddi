@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.OutputCurrentState
+UID: NF:dbgeng.IDebugControl3.OutputCurrentState
 title: IDebugControl3::OutputCurrentState method
 author: windows-driver-content
 description: The OutputCurrentState method prints the current state of the current target to the debugger console.
 old-location: debugger\outputcurrentstate.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 3d176438-5551-48a4-b757-81c14d84c075
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::OutputCurrentState, OutputCurrentState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl3::OutputCurrentState method

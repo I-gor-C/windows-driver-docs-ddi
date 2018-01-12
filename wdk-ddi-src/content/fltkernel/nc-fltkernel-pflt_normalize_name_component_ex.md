@@ -1,5 +1,5 @@
 ---
-UID: NC.fltkernel.PFLT_NORMALIZE_NAME_COMPONENT_EX
+UID: NC:fltkernel.PFLT_NORMALIZE_NAME_COMPONENT_EX
 title: PFLT_NORMALIZE_NAME_COMPONENT_EX
 author: windows-driver-content
 description: A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT_EX as the minifilter driver's NormalizeNameComponentExCallback callback routine.
@@ -7,7 +7,7 @@ old-location: ifsk\pflt_normalize_name_component_ex.htm
 old-project: ifsk
 ms.assetid: 7c2bc90a-c724-4787-b604-f7257a83aae7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IXpsPartIterator, IXpsPartIterator::Reset, Reset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # PFLT_NORMALIZE_NAME_COMPONENT_EX callback
@@ -76,7 +77,7 @@ Pointer to the file object for the file whose name is being requested or the fil
 
 ### -param ParentDirectory [in]
 
-Pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the name of the parent directory for this name component. 
+Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the name of the parent directory for this name component. 
 
 
 ### -param VolumeNameLength [in]
@@ -91,7 +92,7 @@ Pointer to a UNICODE_STRING structure that contains the name component to be exp
 
 ### -param ExpandComponentName [out]
 
-Pointer to a <a href="ifsk.file_names_information">FILE_NAMES_INFORMATION</a> structure that receives the expanded (normalized) file name information for the name component. 
+Pointer to a <a href="..\ntifs\ns-ntifs-_file_names_information.md">FILE_NAMES_INFORMATION</a> structure that receives the expanded (normalized) file name information for the name component. 
 
 
 ### -param ExpandComponentNameLength [in]
@@ -101,7 +102,7 @@ Length, in bytes, of the buffer that the <i>ExpandComponentName</i> parameter po
 
 ### -param Flags [in]
 
-Name normalization flags.  FLTFL_NORMALIZE_NAME_CASE_SENSITIVE specifies that the name to be normalized is case-sensitive.  FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME specifies that the callback routine has been called to service an <a href="ifsk.fltgetdestinationfilenameinformation">FltGetDestinationFileNameInformation</a> routine call.  If the FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME flag is set, <i>FileObject</i> represents the file/directory that is the target of the IRP_MJ_SET_INFORMATION operation. If the FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME flag is not set, <i>FileObject</i> represents the file/directory whose name is being requested.
+Name normalization flags.  FLTFL_NORMALIZE_NAME_CASE_SENSITIVE specifies that the name to be normalized is case-sensitive.  FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME specifies that the callback routine has been called to service an <a href="..\fltkernel\nf-fltkernel-fltgetdestinationfilenameinformation.md">FltGetDestinationFileNameInformation</a> routine call.  If the FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME flag is set, <i>FileObject</i> represents the file/directory that is the target of the IRP_MJ_SET_INFORMATION operation. If the FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME flag is not set, <i>FileObject</i> represents the file/directory whose name is being requested.
 
 
 ### -param NormalizationContext [in, out]
@@ -116,9 +117,9 @@ This callback routine returns STATUS_SUCCESS or an appropriate NTSTATUS value. I
 ## -remarks
 A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT_EX as the minifilter driver's <i>NormalizeNameComponentExCallback</i> callback routine.  
 
-The principal difference between the <i>NormalizeNameComponentExCallback</i> callback routine and the <i>NormalizeNameComponentCallback </i>callback routine (of type <a href="..\fltkernel\nc-fltkernel-pflt_normalize_name_component.md">PFLT_NORMALIZE_NAME_COMPONENT</a>) is that the <i>NormalizeNameComponentExCallback</i> callback routine supports the additional <i>FileObject</i> parameter.  The file object (<i>FileObject</i>) can be used by the minifilter driver to retrieve the <a href="ifsk.txn_parameter_block">TXN_PARAMETER_BLOCK</a> structure for the operation that the file/directory is participating in by calling the <a href="ifsk.iogettransactionparameterblock">IoGetTransactionParameterBlock</a> routine. The TXN_PARAMETER_BLOCK structure can be used by the minifilter driver to issue its own create requests in the context of the transaction that this file object is participating in. 
+The principal difference between the <i>NormalizeNameComponentExCallback</i> callback routine and the <i>NormalizeNameComponentCallback </i>callback routine (of type <a href="..\fltkernel\nc-fltkernel-pflt_normalize_name_component.md">PFLT_NORMALIZE_NAME_COMPONENT</a>) is that the <i>NormalizeNameComponentExCallback</i> callback routine supports the additional <i>FileObject</i> parameter.  The file object (<i>FileObject</i>) can be used by the minifilter driver to retrieve the <a href="..\ntddk\ns-ntddk-_txn_parameter_block.md">TXN_PARAMETER_BLOCK</a> structure for the operation that the file/directory is participating in by calling the <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a> routine. The TXN_PARAMETER_BLOCK structure can be used by the minifilter driver to issue its own create requests in the context of the transaction that this file object is participating in. 
 
-To register this callback routine, the minifilter driver stores the address of a routine of type PFLT_NORMALIZE_NAME_COMPONENT_EX in the <b>NormalizeNameComponentExCallback</b> member of the <a href="ifsk.flt_registration">FLT_REGISTRATION</a> structure that the minifilter driver passes as a parameter to <a href="ifsk.fltregisterfilter">FltRegisterFilter</a>. 
+To register this callback routine, the minifilter driver stores the address of a routine of type PFLT_NORMALIZE_NAME_COMPONENT_EX in the <b>NormalizeNameComponentExCallback</b> member of the <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a> structure that the minifilter driver passes as a parameter to <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>. 
 
 The filter manager calls this callback routine to query the minifilter driver for the normalized names for components in the file name path whose names the minifilter driver has modified. If the file name path contains more than one such component, the filter manager can call this callback routine multiple times in the process of normalizing all the components in the path. The minifilter driver can use the <i>NormalizationContext</i> parameter to pass context information to subsequent calls to this callback routine. 
 
@@ -164,22 +165,22 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_names_information">FILE_NAMES_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_names_information.md">FILE_NAMES_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.flt_registration">FLT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetdestinationfilenameinformation">FltGetDestinationFileNameInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetdestinationfilenameinformation.md">FltGetDestinationFileNameInformation</a>
 </dt>
 <dt>
-<a href="ifsk.fltregisterfilter">FltRegisterFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
 </dt>
 <dt>
-<a href="ifsk.iogettransactionparameterblock">IoGetTransactionParameterBlock</a>
+<a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_set_information">IRP_MJ_SET_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549366">IRP_MJ_SET_INFORMATION</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_generate_file_name.md">PFLT_GENERATE_FILE_NAME</a>
@@ -191,15 +192,15 @@ PASSIVE_LEVEL
 <a href="..\fltkernel\nc-fltkernel-pflt_normalize_name_component.md">PFLT_NORMALIZE_NAME_COMPONENT</a>
 </dt>
 <dt>
-<a href="ifsk.txn_parameter_block">TXN_PARAMETER_BLOCK</a>
+<a href="..\ntddk\ns-ntddk-_txn_parameter_block.md">TXN_PARAMETER_BLOCK</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_NORMALIZE_NAME_COMPONENT_EX routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_NORMALIZE_NAME_COMPONENT_EX routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

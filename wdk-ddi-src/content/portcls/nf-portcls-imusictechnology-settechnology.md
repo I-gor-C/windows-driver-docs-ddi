@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMusicTechnology.SetTechnology
+UID: NF:portcls.IMusicTechnology.SetTechnology
 title: IMusicTechnology::SetTechnology method
 author: windows-driver-content
 description: The SetTechnology method changes the Technology member of each KSDATARANGE_MUSIC structure in the data ranges for the miniport driver's pins.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMusicTechnology::SetTechnology method

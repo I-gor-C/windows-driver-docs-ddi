@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._KEY_VALUE_BASIC_INFORMATION
+UID: NS:wdm._KEY_VALUE_BASIC_INFORMATION
 title: _KEY_VALUE_BASIC_INFORMATION
 author: windows-driver-content
 description: The KEY_VALUE_BASIC_INFORMATION structure defines a subset of the full information available for a value entry of a registry key.
@@ -7,8 +7,8 @@ old-location: kernel\key_value_basic_information.htm
 old-project: kernel
 ms.assetid: b3b14c21-3613-4f84-9e7d-368c4cc3fa9d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _KEY_VALUE_BASIC_INFORMATION, KEY_VALUE_BASIC_INFORMATION, PKEY_VALUE_BASIC_INFORMATION, *PKEY_VALUE_BASIC_INFORMATION
+ms.date: 1/4/2018
+ms.keywords: _KEY_VALUE_BASIC_INFORMATION, *PKEY_VALUE_BASIC_INFORMATION, KEY_VALUE_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PKEY_VALUE_BASIC_INFORMATION, KEY_VALUE_BASIC_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -206,7 +207,7 @@ A string of Unicode characters naming a value entry of the key.
 
 
 ## -remarks
-A kernel-mode driver can obtain a <b>KEY_VALUE_BASIC_INFORMATION</b> that describes a registry key by calling the <a href="kernel.zwqueryvaluekey">ZwQueryValueKey</a> or <a href="kernel.zwenumeratevaluekey">ZwEnumerateValueKey</a> routine.
+A kernel-mode driver can obtain a <b>KEY_VALUE_BASIC_INFORMATION</b> that describes a registry key by calling the <a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a> or <a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a> routine.
 
 
 ## -requirements
@@ -227,24 +228,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.key_value_full_information">KEY_VALUE_FULL_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.key_value_information_class">KEY_VALUE_INFORMATION_CLASS</a>
+<a href="..\wdm\ne-wdm-_key_value_information_class.md">KEY_VALUE_INFORMATION_CLASS</a>
 </dt>
 <dt>
-<a href="kernel.key_value_partial_information">KEY_VALUE_PARTIAL_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.zwenumeratevaluekey">ZwEnumerateValueKey</a>
+<a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryvaluekey">ZwQueryValueKey</a>
+<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_VALUE_BASIC_INFORMATION structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KEY_VALUE_BASIC_INFORMATION structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

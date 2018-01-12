@@ -1,5 +1,5 @@
 ---
-UID: NI.bthxddi.IOCTL_BTHX_WRITE_HCI
+UID: NI:bthxddi.IOCTL_BTHX_WRITE_HCI
 title: IOCTL_BTHX_WRITE_HCI
 author: windows-driver-content
 description: IOCTL_BTHX_WRITE_HCI is used to write Bluetooth ACL Data and Commands to the transport layer.
@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bthx_hci_write.htm
 old-project: bltooth
 ms.assetid: 77BBF6AC-F5FA-4795-8898-6DC02983F573
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BTHX_SCO_SUPPORT, PBTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.date: 12/21/2017
+ms.keywords: _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
 ---
 
 # IOCTL_BTHX_WRITE_HCI IOCTL
@@ -50,11 +51,11 @@ IOCTL_BTHX_WRITE_HCI is used to write Bluetooth ACL Data and Commands to the tra
 ## -ioctlparameters
 
 ### -input-buffer
-Profile drivers should use KMDF and its <a href="kmdf.wdfrequestretrieveinputmemory">WdfRequestRetrieveInputMemory</a> method to retrieve input parameters.  For example, to get the input buffer:
+Profile drivers should use KMDF and its <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveinputmemory.md">WdfRequestRetrieveInputMemory</a> method to retrieve input parameters.  For example, to get the input buffer:
 
 <code>Status = WdfRequestRetrieveInputMemory(_Request, &amp;ReqInMemory);</code>
 
-The buffer describes a <a href="bltooth.bthx_hci_read_write_context">BTHX_HCI_READ_WRITE_CONTEXT</a> structure that specifies the type of write and the data associated with the write. 
+The buffer describes a <a href="..\bthxddi\ns-bthxddi-_bthx_hci_read_write_context.md">BTHX_HCI_READ_WRITE_CONTEXT</a> structure that specifies the type of write and the data associated with the write. 
 
 Refer to the WDK Bluetooth samples for more information.
 
@@ -64,7 +65,7 @@ The length of the buffer is the size of the <b>BTHX_HCI_READ_WRITE_CONTEXT</b> s
 
 
 ### -output-buffer
-Profile drivers should use KMDF and its <a href="kmdf.wdfrequestretrieveoutputmemory">WdfRequestRetrieveOutputMemory</a> method to retrieve input parameters.  For example, to get the output buffer:
+Profile drivers should use KMDF and its <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputmemory.md">WdfRequestRetrieveOutputMemory</a> method to retrieve input parameters.  For example, to get the output buffer:
 
 <code>Status = WdfRequestRetrieveOutputMemory(_Request, &amp;ReqOutMemory);</code>
 

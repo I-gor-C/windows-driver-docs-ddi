@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.ISynthSinkDMus.Render
+UID: NF:dmusicks.ISynthSinkDMus.Render
 title: ISynthSinkDMus::Render method
 author: windows-driver-content
 description: The Render method renders wave data into a destination sink.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # ISynthSinkDMus::Render method

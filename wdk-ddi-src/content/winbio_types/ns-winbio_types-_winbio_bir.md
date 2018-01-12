@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_TYPES._WINBIO_BIR
+UID: NS:winbio_types._WINBIO_BIR
 title: _WINBIO_BIR
 author: windows-driver-content
 description: The WINBIO_BIR structure is the root of the BIR (Biometric Information Record). It contains the size and offset of any other data elements in the BIR.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: 159d4767-b0e2-4d76-b23c-e078e13827dd
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_BIR, WINBIO_BIR
+ms.keywords: _WINBIO_BIR, WINBIO_BIR, *PWINBIO_BIR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_BIR
 req.product: Windows 10 or later.
 ---
 
@@ -59,26 +60,26 @@ typedef struct _WINBIO_BIR {
 
 ### -field HeaderBlock
 
-A structure of type <a href="biometric.winbio_bir_data">WINBIO_BIR_DATA</a> that contains size and offset information for a standard biometric header. This member is required.
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_bir_data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a standard biometric header. This member is required.
 
 
 ### -field StandardDataBlock
 
-A structure of type <a href="biometric.winbio_bir_data">WINBIO_BIR_DATA</a> that contains size and offset information for a standard data block based on the ANSI 381 format. This member is optional. Set this member to 0,0 if you do not use it.
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_bir_data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a standard data block based on the ANSI 381 format. This member is optional. Set this member to 0,0 if you do not use it.
 
 
 ### -field VendorDataBlock
 
-A structure of type <a href="biometric.winbio_bir_data">WINBIO_BIR_DATA</a> that contains size and offset information for a vendor-specific data block.  This member is optional. Set this member to 0,0 if you do not use it.
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_bir_data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a vendor-specific data block.  This member is optional. Set this member to 0,0 if you do not use it.
 
 
 ### -field SignatureBlock
 
-A structure of type <a href="biometric.winbio_bir_data">WINBIO_BIR_DATA</a> that contains size and offset information for a signature block. This member is optional. Set this member to 0,0 if you do not use it.
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_bir_data.md">WINBIO_BIR_DATA</a> that contains size and offset information for a signature block. This member is optional. Set this member to 0,0 if you do not use it.
 
 
 ## -remarks
-The four WINBIO_BIR_DATA structures are contiguous and should be immediately followed by the actual data for each block.  Thus, the offset for the <i>HeaderBlock</i> will always be 4*(sizeof (WINBIO_BIR_DATA).  You can use the <a href="biometric.winbio_bir_header">WINBIO_BIR_HEADER</a> structure to provide the actual data of the header block.  
+The four WINBIO_BIR_DATA structures are contiguous and should be immediately followed by the actual data for each block.  Thus, the offset for the <i>HeaderBlock</i> will always be 4*(sizeof (WINBIO_BIR_DATA).  You can use the <a href="..\winbio_types\ns-winbio_types-_winbio_bir_header.md">WINBIO_BIR_HEADER</a> structure to provide the actual data of the header block.  
 
 The offset of where the <i>StandardDataBlock</i> starts should be the offset of the HeaderBlock plus the size of the HeaderBlock.
 
@@ -111,16 +112,16 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="biometric.winbio_capture_data">WINBIO_CAPTURE_DATA</a>
+<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_capture_data.md">WINBIO_CAPTURE_DATA</a>
 </dt>
 <dt>
-<a href="biometric.winbio_data">WINBIO_DATA</a>
+<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a>
 </dt>
 <dt>
-<a href="biometric.winbio_bir_data">WINBIO_BIR_DATA</a>
+<a href="..\winbio_types\ns-winbio_types-_winbio_bir_data.md">WINBIO_BIR_DATA</a>
 </dt>
 <dt>
-<a href="biometric.winbio_bir_header">WINBIO_BIR_HEADER</a>
+<a href="..\winbio_types\ns-winbio_types-_winbio_bir_header.md">WINBIO_BIR_HEADER</a>
 </dt>
 </dl>
  

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.SetEngineOptions
+UID: NF:dbgeng.IDebugControl3.SetEngineOptions
 title: IDebugControl3::SetEngineOptions method
 author: windows-driver-content
 description: The SetEngineOptions method changes the engine's options.
 old-location: debugger\setengineoptions.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: ff9008d7-1de9-4414-8197-2710fd11747e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::SetEngineOptions, SetEngineOptions
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl3::SetEngineOptions method
@@ -68,9 +69,9 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-This method will set the engine's options to those specified in <i>Options</i>.  Unlike <a href="debugger.addengineoptions">AddEngineOptions</a>, any symbol options that are not listed in the <i>Options</i> bit-set  will be removed.
+This method will set the engine's options to those specified in <i>Options</i>.  Unlike <a href="https://msdn.microsoft.com/library/windows/hardware/ff537884">AddEngineOptions</a>, any symbol options that are not listed in the <i>Options</i> bit-set  will be removed.
 
-After the engine options have been changed, the engine sends out notification to each client's event callback object by passing the DEBUG_CES_ENGINE_OPTIONS flag to the <a href="debugger.idebugeventcallbacks_changeenginestate">IDebugEventCallbacks::ChangeEngineState</a> method.
+After the engine options have been changed, the engine sends out notification to each client's event callback object by passing the DEBUG_CES_ENGINE_OPTIONS flag to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550683">IDebugEventCallbacks::ChangeEngineState</a> method.
 
 The following global options affect the behavior of the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a>:
 
@@ -80,7 +81,7 @@ The debugger engine generates a warning instead of an error if the version of th
 
 <b>DEBUG_ENGOPT_IGNORE_EXTENSION_VERSIONS</b>
 
-Disable version checking for extensions.  This suppresses the debugger engine's call to <a href="debugger.checkversion">CheckVersion</a>.
+Disable version checking for extensions.  This suppresses the debugger engine's call to <a href="..\wdbgexts\nc-wdbgexts-pwindbg_check_version.md">CheckVersion</a>.
 
 <b>DEBUG_ENGOPT_ALLOW_NETWORK_PATHS</b>
 
@@ -214,18 +215,18 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 </dt>
 <dt>
-<a href="debugger.addengineoptions">AddEngineOptions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537884">AddEngineOptions</a>
 </dt>
 <dt>
-<a href="debugger.getengineoptions">GetEngineOptions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546598">GetEngineOptions</a>
 </dt>
 <dt>
-<a href="debugger.removeengineoptions">RemoveEngineOptions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554491">RemoveEngineOptions</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugControl::SetEngineOptions method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::SetEngineOptions method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

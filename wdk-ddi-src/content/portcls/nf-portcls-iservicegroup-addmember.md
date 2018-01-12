@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IServiceGroup.AddMember
+UID: NF:portcls.IServiceGroup.AddMember
 title: IServiceGroup::AddMember method
 author: windows-driver-content
 description: The AddMember method adds a member to the service group.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IServiceGroup::AddMember method

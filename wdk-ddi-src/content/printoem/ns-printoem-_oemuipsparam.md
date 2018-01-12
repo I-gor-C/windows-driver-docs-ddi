@@ -1,5 +1,5 @@
 ---
-UID: NS.PRINTOEM._OEMUIPSPARAM
+UID: NS:printoem._OEMUIPSPARAM
 title: _OEMUIPSPARAM
 author: windows-driver-content
 description: The OEMUIPSPARAM structure is passed to a user interface plug-in's IPrintOemUI::DevicePropertySheets and IPrintOemUI::DocumentPropertySheets methods.
@@ -7,8 +7,8 @@ old-location: print\oemuipsparam.htm
 old-project: print
 ms.assetid: e7708b33-b032-41b9-84f9-6c5b38044f9c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _OEMUIPSPARAM, *POEMUIPSPARAM, POEMUIPSPARAM, OEMUIPSPARAM
+ms.date: 1/8/2018
+ms.keywords: _OEMUIPSPARAM, *POEMUIPSPARAM, OEMUIPSPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POEMUIPSPARAM, OEMUIPSPARAM
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The OEMUIPSPARAM structure is passed to a user interface plug-in's <a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> and <a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> methods.
+The OEMUIPSPARAM structure is passed to a user interface plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554165">IPrintOemUI::DevicePropertySheets</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554173">IPrintOemUI::DocumentPropertySheets</a> methods.
 
 
 
@@ -140,12 +141,12 @@ Pointer, supplied by user interface plug-in, to a location containing private in
 
 ### -field For calls to IPrintOemUI::DocumentPropertySheets:
 
-Contains the contents of the <b>fMode</b> member of the DOCUMENTPROPERTYHEADER structure received by the printer driver's <a href="print.drvdocumentpropertysheets">DrvDocumentPropertySheets</a> function.
+Contains the contents of the <b>fMode</b> member of the DOCUMENTPROPERTYHEADER structure received by the printer driver's <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a> function.
 
 
 ### -field For calls to IPrintOemUI::DevicePropertySheets:
 
-Contains the contents of the <b>Flags</b> member of the DEVICEPROPERTYHEADER structure received by the printer driver's <a href="print.drvdevicepropertysheets">DrvDevicePropertySheets</a> function.
+Contains the contents of the <b>Flags</b> member of the DEVICEPROPERTYHEADER structure received by the printer driver's <a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a> function.
 
 </dd>
 </dl>
@@ -176,24 +177,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.iprintoemui_devicepropertysheets">IPrintOemUI::DevicePropertySheets</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554165">IPrintOemUI::DevicePropertySheets</a>
 </dt>
 <dt>
-<a href="print.iprintoemui_documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554173">IPrintOemUI::DocumentPropertySheets</a>
 </dt>
 <dt>
 <a href="..\compstui\nc-compstui-_cpsuicallback.md">_CPSUICALLBACK</a>
 </dt>
 <dt>
-<a href="print.drvdocumentpropertysheets">DrvDocumentPropertySheets</a>
+<a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>
 </dt>
 <dt>
-<a href="print.drvdevicepropertysheets">DrvDevicePropertySheets</a>
+<a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20OEMUIPSPARAM structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20OEMUIPSPARAM structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

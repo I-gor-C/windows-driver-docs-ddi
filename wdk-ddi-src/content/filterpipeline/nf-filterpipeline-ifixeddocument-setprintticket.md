@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IFixedDocument.SetPrintTicket
+UID: NF:filterpipeline.IFixedDocument.SetPrintTicket
 title: IFixedDocument::SetPrintTicket method
 author: windows-driver-content
 description: The SetPrintTicket method inserts a print ticket into the fixed document.
@@ -7,7 +7,7 @@ old-location: print\ifixeddocument_setprintticket.htm
 old-project: print
 ms.assetid: 701c53d5-bb1e-4003-9505-19b9c46689c6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IFixedDocument, IFixedDocument::SetPrintTicket, SetPrintTicket
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IFixedDocument::SetPrintTicket method

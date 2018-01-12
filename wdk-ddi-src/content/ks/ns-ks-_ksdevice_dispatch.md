@@ -1,5 +1,5 @@
 ---
-UID: NS.KS._KSDEVICE_DISPATCH
+UID: NS:ks._KSDEVICE_DISPATCH
 title: _KSDEVICE_DISPATCH
 author: windows-driver-content
 description: The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events.
@@ -7,8 +7,8 @@ old-location: stream\ksdevice_dispatch.htm
 old-project: stream
 ms.assetid: 1ae7af1d-5e1c-4728-82c5-efc8d60b5df6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _KSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH, KSDEVICE_DISPATCH
+ms.date: 1/9/2018
+ms.keywords: _KSDEVICE_DISPATCH, KSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH
 ---
 
 # _KSDEVICE_DISPATCH structure
@@ -68,76 +69,76 @@ typedef struct _KSDEVICE_DISPATCH {
 
 ### -field Add
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminideviceadd">AVStrMiniDeviceAdd</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksdevicecreate.md">AVStrMiniDeviceAdd</a> callback routine.
 
 
 ### -field Start
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicestart">AVStrMiniDeviceStart</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksdevicepnpstart.md">AVStrMiniDeviceStart</a> callback routine.
 
 
 ### -field PostStart
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicepoststart">AVStrMiniDevicePostStart</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksdevice.md">AVStrMiniDevicePostStart</a> callback routine.
 
 
 ### -field QueryStop
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicequerystop">AVStrMiniDeviceQueryStop</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff554299">AVStrMiniDeviceQueryStop</a> callback routine.
 
 
 ### -field CancelStop
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicecancelstop">AVStrMiniDeviceCancelStop</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksdeviceirpvoid.md">AVStrMiniDeviceCancelStop</a> callback routine.
 
 
 ### -field Stop
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicestop">AVStrMiniDeviceStop</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556301">AVStrMiniDeviceStop</a> callback routine.
 
 
 ### -field QueryRemove
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicequeryremove">AVStrMiniDeviceQueryRemove</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksdeviceirp.md">AVStrMiniDeviceQueryRemove</a> callback routine.
 
 
 ### -field CancelRemove
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicecancelremove">AVStrMiniDeviceCancelRemove</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff554278">AVStrMiniDeviceCancelRemove</a> callback routine.
 
 
 ### -field Remove
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminideviceremove">AVStrMiniDeviceRemove</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff554305">AVStrMiniDeviceRemove</a> callback routine.
 
 
 ### -field QueryCapabilities
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicequerycapabilities">AVStrMiniDeviceQueryCapabilities</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksdevicequerycapabilities.md">AVStrMiniDeviceQueryCapabilities</a> callback routine.
 
 
 ### -field SurpriseRemoval
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicesurpriseremoval">AVStrMiniDeviceSurpriseRemoval</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556304">AVStrMiniDeviceSurpriseRemoval</a> callback routine.
 
 
 ### -field QueryPower
 
-Optional. can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicequerypower">AVStrMiniDeviceQueryPower</a> callback routine.
+Optional. can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksdevicequerypower.md">AVStrMiniDeviceQueryPower</a> callback routine.
 
 
 ### -field SetPower
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicesetpower">AVStrMiniDeviceSetPower</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksdevicesetpower.md">AVStrMiniDeviceSetPower</a> callback routine.
 
 
 ### -field QueryInterface
 
-Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="stream.avstrminidevicequeryinterface">AVStrMiniDeviceQueryInterface</a> callback routine.
+Optional. Can be <b>NULL</b>. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff554290">AVStrMiniDeviceQueryInterface</a> callback routine.
 
 
 ## -remarks
-In describing a device with the <a href="stream.ksdevice_descriptor">KSDEVICE_DESCRIPTOR</a> structure, clients include a pointer to a dispatch table defined by this structure. Any member of this structure may be <b>NULL</b> indicating that the minidriver receives no notification for that particular message.
+In describing a device with the <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a> structure, clients include a pointer to a dispatch table defined by this structure. Any member of this structure may be <b>NULL</b> indicating that the minidriver receives no notification for that particular message.
 
 
 ## -requirements
@@ -168,12 +169,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksdevice_descriptor">KSDEVICE_DESCRIPTOR</a>
+<a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSDEVICE_DISPATCH structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSDEVICE_DISPATCH structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

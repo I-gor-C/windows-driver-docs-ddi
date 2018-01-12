@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortSetAdapterBusType
+UID: NF:storport.StorPortSetAdapterBusType
 title: StorPortSetAdapterBusType function
 author: windows-driver-content
 description: Used to adjust the BusType of the adapter depending on its current configuration.
@@ -7,7 +7,7 @@ old-location: storage\storportsetadapterbustype.htm
 old-project: storage
 ms.assetid: 818A9F03-F56E-47D6-A9D1-DD0F63B05054
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortSetAdapterBusType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Storport.lib
 req.dll: 
 req.irql: 
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -57,19 +58,19 @@ ULONG StorPortSetAdapterBusType(
 
 ### -param HwDeviceExtension [in]
 
-A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport immediately after the miniport driver calls <a href="storage.storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
+A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 
 ### -param BusType [in]
 
-Contains a value of type <a href="storage.storage_bus_type">STORAGE_BUS_TYPE</a> that specifies the type of bus-specific configuration data to be set.
+Contains a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566356">STORAGE_BUS_TYPE</a> that specifies the type of bus-specific configuration data to be set.
 
 
 ## -returns
 The <b>StorPortSetAdapterBusType</b> routine returns one of the following status codes:
 <dl>
 <dt><b>STOR_STATUS_UNSUCCESSFUL</b></dt>
-</dl>This routine will return this value if it was called outside the <a href="storage.hwstorfindadapter">HwStorFindAdapter</a> function.
+</dl>This routine will return this value if it was called outside the <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a> function.
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
 </dl>This routine will return this value if it was successful.

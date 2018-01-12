@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeCancelTimer
+UID: NF:wdm.KeCancelTimer
 title: KeCancelTimer function
 author: windows-driver-content
 description: The KeCancelTimer routine dequeues a timer object before the timer interval, if any was set, expires.
@@ -7,7 +7,7 @@ old-location: kernel\kecanceltimer.htm
 old-project: kernel
 ms.assetid: aefbf6d6-c107-4bf2-993d-d7ba8ea7ffcd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeCancelTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -70,7 +71,7 @@ The routine returns <b>TRUE</b> if the timer is still in the timer queue. A nonp
 
 Note that a DPC that is already running runs to completion. The driver must ensure that the DPC has completed before freeing any resources used by the DPC. For a nonperiodic timer, you can use synchronization primitives, such as event objects, to synchronize between the driver and the DPC. The driver can check the return code of <b>KeCancelTimer</b> to determine if the DPC is running. If so, the DPC can signal the event before exiting, and the driver can wait for that event to be reset to the not-signaled state.
 
-Since for periodic timers <b>KeCancelTimer</b> always returns <b>TRUE</b>, drivers must use a different technique to wait until the DPC has completed. Use the <a href="kernel.keflushqueueddpcs">KeFlushQueuedDpcs</a> routine to block until the DPC executes.
+Since for periodic timers <b>KeCancelTimer</b> always returns <b>TRUE</b>, drivers must use a different technique to wait until the DPC has completed. Use the <a href="..\wdm\nf-wdm-keflushqueueddpcs.md">KeFlushQueuedDpcs</a> routine to block until the DPC executes.
 
 Drivers do not need to synchronize for data stored in global variables or driver object extensions. The system automatically calls <b>KeFlushQueuedDpcs</b> before deallocating either of these regions.
 
@@ -149,7 +150,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqlkedispatchlte">IrqlKeDispatchLte</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547812">IrqlKeDispatchLte</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -157,18 +158,18 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.keinitializetimer">KeInitializeTimer</a>
+<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
 </dt>
 <dt>
-<a href="kernel.kereadstatetimer">KeReadStateTimer</a>
+<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
 </dt>
 <dt>
-<a href="kernel.kesettimer">KeSetTimer</a>
+<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeCancelTimer routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeCancelTimer routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

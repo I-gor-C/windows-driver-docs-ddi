@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ExDeleteTimer
+UID: NF:wdm.ExDeleteTimer
 title: ExDeleteTimer function
 author: windows-driver-content
 description: The ExDeleteTimer routine deletes a timer object that was previously allocated by the ExAllocateTimer routine.
@@ -7,7 +7,7 @@ old-location: kernel\exdeletetimer.htm
 old-project: kernel
 ms.assetid: CE0C1D49-1505-464E-90DB-2C6D30C04EC1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ExDeleteTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: 
 req.irql: See Remarks.
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>ExDeleteTimer</b> routine deletes a timer object that was previously allocated by the <a href="kernel.exallocatetimer">ExAllocateTimer</a> routine.
+The <b>ExDeleteTimer</b> routine deletes a timer object that was previously allocated by the <a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a> routine.
 
 
 
@@ -59,7 +60,7 @@ BOOLEAN ExDeleteTimer(
 
 ### -param Timer [in]
 
-A pointer to an <a href="kernel.ex_timer">EX_TIMER</a> structure. This structure is a timer object that was previously allocated by the <a href="kernel.exallocatetimer">ExAllocateTimer</a> routine.
+A pointer to an <a href="kernel.ex_timer">EX_TIMER</a> structure. This structure is a timer object that was previously allocated by the <a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a> routine.
 
 
 ### -param Cancel [in]
@@ -74,7 +75,7 @@ Whether to wait for the timer to finish expiring if the timer has already starte
 
 ### -param Parameters [in]
 
-A pointer to an <a href="kernel.ext_delete_parameters">EXT_DELETE_PARAMETERS</a> structure. The calling driver previously called the <a href="kernel.exinitializedeletetimerparameters">ExInitializeDeleteTimerParameters</a> routine to initialize this structure.
+A pointer to an <a href="..\wdm\ns-wdm-_ext_delete_parameters.md">EXT_DELETE_PARAMETERS</a> structure. The calling driver previously called the <a href="..\wdm\nf-wdm-exinitializedeletetimerparameters.md">ExInitializeDeleteTimerParameters</a> routine to initialize this structure.
 
 
 ## -returns
@@ -82,7 +83,7 @@ This routine returns <b>TRUE</b> if <i>Cancel</i> is <b>TRUE</b> and the timer w
 
 
 ## -remarks
-After your driver calls this routine, the timer object pointed to by <i>Timer</i> might no longer be valid. However, the <i>Timer</i> parameter value passed to an <a href="kernel.extimercallback">ExTimerCallback</a> callback routine, if the driver implements this routine, is always a valid pointer to a timer object.
+After your driver calls this routine, the timer object pointed to by <i>Timer</i> might no longer be valid. However, the <i>Timer</i> parameter value passed to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265190">ExTimerCallback</a> callback routine, if the driver implements this routine, is always a valid pointer to a timer object.
 
 If <i>Cancel</i> is <b>TRUE</b>, a return value of <b>FALSE</b> indicates that the timer was never set, or that the timer was set but expired before it could be canceled.  If <i>Cancel</i> is <b>FALSE</b>, the routine always returns <b>FALSE</b>.
 
@@ -153,19 +154,19 @@ See Remarks.
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.extimercallback">ExTimerCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265190">ExTimerCallback</a>
 </dt>
 <dt>
-<a href="kernel.extimerdeletecallback">ExTimerDeleteCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265192">ExTimerDeleteCallback</a>
 </dt>
 <dt>
-<a href="kernel.exallocatetimer">ExAllocateTimer</a>
+<a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a>
 </dt>
 <dt>
-<a href="kernel.exinitializedeletetimerparameters">ExInitializeDeleteTimerParameters</a>
+<a href="..\wdm\nf-wdm-exinitializedeletetimerparameters.md">ExInitializeDeleteTimerParameters</a>
 </dt>
 <dt>
-<a href="kernel.ext_delete_parameters">EXT_DELETE_PARAMETERS</a>
+<a href="..\wdm\ns-wdm-_ext_delete_parameters.md">EXT_DELETE_PARAMETERS</a>
 </dt>
 <dt>
 <a href="kernel.ex_timer">EX_TIMER</a>
@@ -175,5 +176,5 @@ See Remarks.
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExDeleteTimer routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExDeleteTimer routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

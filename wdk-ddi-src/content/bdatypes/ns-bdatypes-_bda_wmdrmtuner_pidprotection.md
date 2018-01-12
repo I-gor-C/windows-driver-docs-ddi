@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_WMDRMTUNER_PIDPROTECTION
+UID: NS:bdatypes._BDA_WMDRMTUNER_PIDPROTECTION
 title: _BDA_WMDRMTUNER_PIDPROTECTION
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bda_wmdrmtuner_pidprotection.htm
 old-project: stream
 ms.assetid: EA2590B0-7EF0-4E5E-A270-A13047BE0F2C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_WMDRMTUNER_PIDPROTECTION, PBDA_WMDRMTUNER_PIDPROTECTION, *PBDA_WMDRMTUNER_PIDPROTECTION, BDA_WMDRMTUNER_PIDPROTECTION
+ms.date: 1/9/2018
+ms.keywords: _BDA_WMDRMTUNER_PIDPROTECTION, BDA_WMDRMTUNER_PIDPROTECTION, *PBDA_WMDRMTUNER_PIDPROTECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: BDA_WMDRMTUNER_PIDPROTECTION, *PBDA_WMDRMTUNER_PIDPROTECTION
 ---
 
 # _BDA_WMDRMTUNER_PIDPROTECTION structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.CHARGING._POWERSOURCEUPDATEEX
+UID: NS:charging._POWERSOURCEUPDATEEX
 title: _POWERSOURCEUPDATEEX
 author: windows-driver-content
 description: This structure is for internal use only.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: FAA39A82-E27E-41BD-9830-03EAE7CFF64F
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _POWERSOURCEUPDATEEX, PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
+ms.keywords: _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ---
 
 # _POWERSOURCEUPDATEEX structure

@@ -1,14 +1,14 @@
 ---
-UID: NC.wlanihv.DOT11EXTIHV_INIT_SERVICE
+UID: NC:wlanihv.DOT11EXTIHV_INIT_SERVICE
 title: DOT11EXTIHV_INIT_SERVICE
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11extihvinitservice.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ba803eab-74ae-4998-b013-9f4470da8382
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BINARY_CONTAINER, *PBINARY_CONTAINER, PBINARY_CONTAINER, BINARY_CONTAINER
+ms.date: 1/8/2018
+ms.keywords: _DRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W, DRIVER_INFO_8
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -69,7 +70,7 @@ The interface version used by the operating system. The value of this parameter 
 ### -param pDot11ExtAPI [in]
 
 A pointer to a 
-     <a href="netvista.dot11ext_apis">DOT11EXT_APIS</a> structure, which contains the
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_apis.md">DOT11EXT_APIS</a> structure, which contains the
      addresses of the IHV Extensibility functions that are supported by the operating system. The operating
      system formats this parameter with the function addresses before making the call to the 
      <i>Dot11ExtIhvInitService</i> function.
@@ -83,7 +84,7 @@ This parameter is reserved for use by the operating system.
 ### -param pDot11IHVHandlers [out]
 
 A pointer to a 
-     <a href="netvista.dot11ext_ihv_handlers">DOT11EXT_IHV_HANDLERS</a> structure,
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_handlers.md">DOT11EXT_IHV_HANDLERS</a> structure,
      which contains the addresses of the IHV Handler functions supported by the IHV Extensions DLL. The DLL
      formats this parameter with the function addresses before returning from the call to the 
      <i>Dot11ExtIhvInitService</i> function.
@@ -162,10 +163,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11ext_apis">DOT11EXT_APIS</a>
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_apis.md">DOT11EXT_APIS</a>
 </dt>
 <dt>
-<a href="netvista.dot11ext_ihv_handlers">DOT11EXT_IHV_HANDLERS</a>
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_handlers.md">DOT11EXT_IHV_HANDLERS</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">Dot11ExtIhvGetVersionInfo</a>
@@ -175,5 +176,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11EXTIHV_INIT_SERVICE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_INIT_SERVICE callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

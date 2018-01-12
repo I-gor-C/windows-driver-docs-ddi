@@ -1,5 +1,5 @@
 ---
-UID: NC.irb.IDE_HW_INTERRUPT
+UID: NC:irb.IDE_HW_INTERRUPT
 title: IDE_HW_INTERRUPT
 author: windows-driver-content
 description: The IdeHwInterrupt miniport driver routine handles interrupts from the host bus adapter (HBA) to which the controller for the miniport driver is connected.
@@ -7,7 +7,7 @@ old-location: storage\idehwinterrupt.htm
 old-project: storage
 ms.assetid: a061d993-78fc-45d8-857b-7269c3593847
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: WdmlibIoGetAffinityInterrupt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: LUID
 ---
 
 # IDE_HW_INTERRUPT callback
@@ -76,7 +77,7 @@ Dismiss the interrupt on the HBA.
 
 Disable interrupts on the channel that is indicated by the <i>ChannelExtension</i> parameter. 
 
-Request a worker routine by using <a href="storage.ataportrequestworkerroutine">AtaPortRequestWorkerRoutine</a>. 
+Request a worker routine by using <a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>. 
 
 Complete additional processing in the worker routine.
 
@@ -85,11 +86,11 @@ Enable interrupts on the channel.
 The following ATA port routines must not be called from the <b><i>IdeHwInterrupt</i></b> routine:
 
 
-<a href="storage.ataportcompleteallactiverequests">AtaPortCompleteAllActiveRequests</a>
+<a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
 
 
 
-<a href="storage.ataportdevicebusy">AtaPortDeviceBusy</a>
+<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
 
 
 However, the miniport driver can request a worker routine and make calls in the worker routine.
@@ -126,18 +127,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.ataportcompleteallactiverequests">AtaPortCompleteAllActiveRequests</a>
+<a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
 </dt>
 <dt>
-<a href="storage.ataportdevicebusy">AtaPortDeviceBusy</a>
+<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
 </dt>
 <dt>
-<a href="storage.ataportrequestworkerroutine">AtaPortRequestWorkerRoutine</a>
+<a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IdeHwInterrupt routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IdeHwInterrupt routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

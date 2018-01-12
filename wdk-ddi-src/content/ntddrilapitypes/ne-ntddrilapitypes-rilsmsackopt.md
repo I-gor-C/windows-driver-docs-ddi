@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILSMSACKOPT
+UID: NE:ntddrilapitypes.RILSMSACKOPT
 title: RILSMSACKOPT
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsmsackopt.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 652315db-0cdc-4c32-8fa0-3a538c917497
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILSMSACKOPT, RILSMSACKOPT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSMSACKOPT
 ---
 
 # RILSMSACKOPT enumeration

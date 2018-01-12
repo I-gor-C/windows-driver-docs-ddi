@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_HEAP_FLAGS
+UID: NE:d3d12umddi.D3D12DDI_HEAP_FLAGS
 title: D3D12DDI_HEAP_FLAGS
 author: windows-driver-content
 description: Contains Direct3D 12 heap flags.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_heap_flags.htm
 old-project: display
 ms.assetid: 8224E497-7F52-469B-98C9-ECC5F1970894
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_HEAP_FLAGS, D3D12DDI_HEAP_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_HEAP_FLAGS
 ---
 
 # D3D12DDI_HEAP_FLAGS enumeration

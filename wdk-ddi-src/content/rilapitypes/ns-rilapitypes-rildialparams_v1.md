@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILDIALPARAMS_V1
+UID: NS:rilapitypes.RILDIALPARAMS_V1
 title: RILDIALPARAMS_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildialparams_v1_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9df42e37-b04a-4159-a952-45754277f1b4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILDIALPARAMS_V1, *LPRILDIALPARAMS_V1, RILDIALPARAMS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILDIALPARAMS_V1, RILDIALPARAMS_V1
 req.product: Windows 10 or later.
 ---
 

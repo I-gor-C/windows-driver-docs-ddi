@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:usbcamdi
 ---
 
 # Usbcamdi.h header
@@ -28,14 +28,24 @@ Usbcamdi.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [PADAPTER_RECEIVE_PACKET_ROUTINE callback](nc-usbcamdi-padapter_receive_packet_routine.md) | A camera minidriver's AdapterReceivePacket callback function processes adapter-based stream request blocks (SRBs) passed to it by the stream class driver. |
+| [PCAM_ALLOCATE_BW_ROUTINE callback](nc-usbcamdi-pcam_allocate_bw_routine.md) | A camera minidriver's CamAllocateBandwidth callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
 | [PCAM_ALLOCATE_BW_ROUTINE_EX callback](nc-usbcamdi-pcam_allocate_bw_routine_ex.md) | A camera minidriver's CamAllocateBandwidthEx callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
+| [PCAM_CONFIGURE_ROUTINE callback](nc-usbcamdi-pcam_configure_routine.md) | A camera minidriver's CamConfigure callback function configures the isochronous streaming interface. |
 | [PCAM_CONFIGURE_ROUTINE_EX callback](nc-usbcamdi-pcam_configure_routine_ex.md) | A camera minidriver's CamConfigureEx callback function configures the isochronous streaming interface. |
+| [PCAM_FREE_BW_ROUTINE callback](nc-usbcamdi-pcam_free_bw_routine.md) | A camera minidriver's CamFreeBandwidth callback function selects an alternate setting within the USB video streaming interface that uses no bandwidth. |
 | [PCAM_FREE_BW_ROUTINE_EX callback](nc-usbcamdi-pcam_free_bw_routine_ex.md) | A camera minidriver's CamFreeBandwidthEx callback function selects an alternate setting within the USB video streaming interface that uses no bandwidth. |
-| [PCAM_INITIALIZE_ROUTINE callback](nc-usbcamdi-pcam_initialize_routine.md) | A camera minidriver's CamInitialize callback function initializes the device. |
+| [PCAM_INITIALIZE_ROUTINE callback](nc-usbcamdi-pcam_initialize_routine.md) | A camera minidriver's callback function initializes the device or performs any minidriver-specific clean-up that is required. |
+| [PCAM_NEW_FRAME_ROUTINE callback](nc-usbcamdi-pcam_new_frame_routine.md) | A camera minidriver's CamNewVideoFrame callback function initializes a new video frame context structure. |
 | [PCAM_NEW_FRAME_ROUTINE_EX callback](nc-usbcamdi-pcam_new_frame_routine_ex.md) | A camera minidriver's CamNewVideoFrameEx callback function initializes a new video frame context structure. |
+| [PCAM_PROCESS_PACKET_ROUTINE callback](nc-usbcamdi-pcam_process_packet_routine.md) | A camera minidriver's CamProcessUSBPacket callback function processes a USB packet. |
 | [PCAM_PROCESS_PACKET_ROUTINE_EX callback](nc-usbcamdi-pcam_process_packet_routine_ex.md) | A camera minidriver's CamProcessUSBPacketEx callback function processes a USB packet. |
+| [PCAM_PROCESS_RAW_FRAME_ROUTINE callback](nc-usbcamdi-pcam_process_raw_frame_routine.md) | A camera minidriver's CamProcessRawVideoFrame callback function decodes a raw video frame. |
 | [PCAM_PROCESS_RAW_FRAME_ROUTINE_EX callback](nc-usbcamdi-pcam_process_raw_frame_routine_ex.md) | A camera minidriver's CamProcessRawVideoFrameEx callback function decodes a raw video frame. |
+| [PCAM_START_CAPTURE_ROUTINE callback](nc-usbcamdi-pcam_start_capture_routine.md) | A camera minidriver's CamStartCapture callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
 | [PCAM_START_CAPTURE_ROUTINE_EX callback](nc-usbcamdi-pcam_start_capture_routine_ex.md) | A camera minidriver's CamStartCaptureEx callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
+| [PCAM_STATE_ROUTINE callback](nc-usbcamdi-pcam_state_routine.md) | A camera minidriver's state callback function restores a previously saved device context state or saves the current device context state. |
+| [PCAM_STOP_CAPTURE_ROUTINE callback](nc-usbcamdi-pcam_stop_capture_routine.md) | A camera minidriver's CamStopCapture callback function performs any processing after the stream is stopped. |
 | [PCAM_STOP_CAPTURE_ROUTINE_EX callback](nc-usbcamdi-pcam_stop_capture_routine_ex.md) | A camera minidriver's CamStopCaptureEx callback function performs any processing after the stream is stopped. |
 | [PCOMMAND_COMPLETE_FUNCTION callback](nc-usbcamdi-pcommand_complete_function.md) | A camera minidriver's CommandCompleteFunction callback function allows the camera minidriver to perform any additional tasks necessary to complete certain USBCAMD services |
 | [PFNUSBCAMD_BulkReadWrite callback](nc-usbcamdi-pfnusbcamd_bulkreadwrite.md) | The USBCAMD_BulkReadWrite service performs a read or write operation on the specified bulk pipe. |

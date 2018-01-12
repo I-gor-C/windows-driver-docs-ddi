@@ -1,14 +1,14 @@
 ---
-UID: NS.PTPUSD._PTP_VENDOR_DATA_IN
+UID: NS:ptpusd._PTP_VENDOR_DATA_IN
 title: _PTP_VENDOR_DATA_IN
 author: windows-driver-content
 description: The PTP_VENDOR_DATA_IN structure contains information about an arbitrary command that an application issues to the device.
 old-location: image\ptp_vendor_data_in.htm
-old-project: Image
+old-project: image
 ms.assetid: 896209d0-d545-495b-b743-98c0b9d976ff
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PTP_VENDOR_DATA_IN, PPTP_VENDOR_DATA_IN, PTP_VENDOR_DATA_IN, *PPTP_VENDOR_DATA_IN
+ms.date: 1/10/2018
+ms.keywords: _PTP_VENDOR_DATA_IN, PTP_VENDOR_DATA_IN, *PPTP_VENDOR_DATA_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PTP_VENDOR_DATA_IN, *PPTP_VENDOR_DATA_IN
 req.product: Windows 10 or later.
 ---
 
@@ -167,12 +168,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.ptp_vendor_data_out">PTP_VENDOR_DATA_OUT</a>
+<a href="..\ptpusd\ns-ptpusd-_ptp_vendor_data_out.md">PTP_VENDOR_DATA_OUT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20PTP_VENDOR_DATA_IN structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20PTP_VENDOR_DATA_IN structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

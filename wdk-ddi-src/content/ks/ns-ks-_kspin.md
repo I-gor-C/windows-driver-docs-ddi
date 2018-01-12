@@ -1,5 +1,5 @@
 ---
-UID: NS.KS._KSPIN
+UID: NS:ks._KSPIN
 title: _KSPIN
 author: windows-driver-content
 description: The KSPIN structure describes an instantiated pin.
@@ -7,7 +7,7 @@ old-location: stream\kspin.htm
 old-project: stream
 ms.assetid: 0d290872-0944-4599-9deb-9a4f7b2df0e5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: _KSPIN, *PKSPIN, KSPIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSPIN, KSPIN
 ---
 
 # _KSPIN structure
@@ -70,7 +71,7 @@ typedef struct _KSPIN {
 
 ### -field Descriptor
 
-A pointer to the pin descriptor for this particular pin. See <a href="stream.kspin_descriptor_ex">KSPIN_DESCRIPTOR_EX</a> for more information.
+A pointer to the pin descriptor for this particular pin. See <a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a> for more information.
 
 
 ### -field Bag
@@ -80,7 +81,7 @@ This member specifies the KSOBJECT_BAG (the KSOBJECT_BAG structure is equivalent
 
 ### -field Context
 
-A pointer to a buffer. Clients can use <b>Context</b> to associate context information with a specific pin instance. Typically, this is used for pin/stream extensions and is allocated in the create dispatch provided in the pin dispatch table. Note that any dynamic memory allocated for context information should be placed in the pin instance's object bag using <a href="stream.ksadditemtoobjectbag">KsAddItemToObjectBag</a>. <b>Context</b> is initialized to the value of the <b>Context</b> member of the parent <a href="stream.ksfilter">KSFILTER</a> at the time the pin is created. See <a href="https://msdn.microsoft.com/b7d6f06d-6c97-414e-a453-d375e2d7ccf5">AVStream Object Hierarchy</a>.
+A pointer to a buffer. Clients can use <b>Context</b> to associate context information with a specific pin instance. Typically, this is used for pin/stream extensions and is allocated in the create dispatch provided in the pin dispatch table. Note that any dynamic memory allocated for context information should be placed in the pin instance's object bag using <a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>. <b>Context</b> is initialized to the value of the <b>Context</b> member of the parent <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> at the time the pin is created. See <a href="https://msdn.microsoft.com/b7d6f06d-6c97-414e-a453-d375e2d7ccf5">AVStream Object Hierarchy</a>.
 
 
 ### -field Id
@@ -100,12 +101,12 @@ This member specifies a Boolean value that, if <b>TRUE</b>, indicates that the c
 
 ### -field ConnectionInterface
 
-This member contains a <a href="stream.kspin_interface">KSPIN_INTERFACE</a> structure that identifies the interface being used for the connection. This information is supplied by the graph builder when the pin is created.
+This member contains a <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a> structure that identifies the interface being used for the connection. This information is supplied by the graph builder when the pin is created.
 
 
 ### -field ConnectionMedium
 
-This member contains a <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structure that identifies the connection medium this pin should use. This information is supplied by the graph builder when the pin is created.
+This member contains a <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a> structure that identifies the connection medium this pin should use. This information is supplied by the graph builder when the pin is created.
 
 
 ### -field ConnectionPriority
@@ -135,7 +136,7 @@ This member specifies the direction of data flow for the pin.  Possible settings
 
 ### -field DeviceState
 
-This member contains an enumeration of type <a href="stream.ksstate">KSSTATE</a> that identifies the state to which the pin has been told to transition. Not necessarily the same as the state of the pipe, which is reported through <a href="stream.avstrminipinsetdevicestate">AVStrMiniPinSetDeviceState</a>. Initially KSSTATE_STOP, this member is changed when AVStream receives a connection state property set IOCTL. Access is synchronized using the <a href="https://msdn.microsoft.com/402795a0-e567-4e7e-a7d8-b2ce29ffb8fd">filter control mutex</a>. Minidrivers should not change this member. See note in Remarks section below. Also see the <i>ClientState</i> member.
+This member contains an enumeration of type <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a> that identifies the state to which the pin has been told to transition. Not necessarily the same as the state of the pipe, which is reported through <a href="..\ks\nc-ks-pfnkspinsetdevicestate.md">AVStrMiniPinSetDeviceState</a>. Initially KSSTATE_STOP, this member is changed when AVStream receives a connection state property set IOCTL. Access is synchronized using the <a href="https://msdn.microsoft.com/402795a0-e567-4e7e-a7d8-b2ce29ffb8fd">filter control mutex</a>. Minidrivers should not change this member. See note in Remarks section below. Also see the <i>ClientState</i> member.
 
 
 ### -field ResetState
@@ -145,15 +146,15 @@ This member contains an enumeration of type KSRESET that identifies the current 
 
 ### -field ClientState
 
-This member specifies the <a href="stream.ksstate">KSSTATE</a> at which the pin is currently set. Updated immediately before <a href="stream.avstrminipinsetdevicestate">AVStrMiniPinSetDeviceState</a> is called. If this callback routine fails, AVStream rolls back <i>ClientState</i> to its previous value. Minidrivers that fail state transitions and that check this member during processing should be aware of this sequence of events.
+This member specifies the <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a> at which the pin is currently set. Updated immediately before <a href="..\ks\nc-ks-pfnkspinsetdevicestate.md">AVStrMiniPinSetDeviceState</a> is called. If this callback routine fails, AVStream rolls back <i>ClientState</i> to its previous value. Minidrivers that fail state transitions and that check this member during processing should be aware of this sequence of events.
 
 
 ## -remarks
 In many ways, pins are the focus of filter behavior. This is reflected in the fact that the pin structure has a large number of members. Many minidrivers need to refine pin behavior and maintain additional pin-associated context. For filters with fairly conventional pin behavior, no additional refinement or context is required. In many cases, default pin behavior is sufficient; the pins are accessed using <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687-ae5e-1550db9500f0">Filter-Centric Processing</a>.
 
-For synchronization purposes, the lifetime of this object is the interval starting when the minidriver's PreCreate dispatch function is called and ending when the minidriver's Close dispatch function returns, assuming the function does not return STATUS_PENDING. If it does return STATUS_PENDING, the object's lifetime ends when the client indicates completion of the close request by calling <a href="stream.kscompletependingrequest">KsCompletePendingRequest</a>.
+For synchronization purposes, the lifetime of this object is the interval starting when the minidriver's PreCreate dispatch function is called and ending when the minidriver's Close dispatch function returns, assuming the function does not return STATUS_PENDING. If it does return STATUS_PENDING, the object's lifetime ends when the client indicates completion of the close request by calling <a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>.
 
-If the minidriver needs to determine whether it has been told to go to a specific <a href="stream.ksstate">KSSTATE</a>, comparing the value of the <b>DeviceState</b> member of KSPIN to that state is not a reliable method. Instead, either look at the <i>ClientState</i> member, or create a variable in the <b>SetDeviceState</b> callback and then check this variable. <b>SetDeviceState</b> is a member of <a href="stream.kspin_dispatch">KSPIN_DISPATCH</a>.
+If the minidriver needs to determine whether it has been told to go to a specific <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>, comparing the value of the <b>DeviceState</b> member of KSPIN to that state is not a reliable method. Instead, either look at the <i>ClientState</i> member, or create a variable in the <b>SetDeviceState</b> callback and then check this variable. <b>SetDeviceState</b> is a member of <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>.
 
 Also see <a href="https://msdn.microsoft.com/b7ee5756-1c79-4ead-9999-d13be9a0d3d9">Object Bags</a>.
 
@@ -186,16 +187,16 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kspin_descriptor_ex">KSPIN_DESCRIPTOR_EX</a>
+<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
 </dt>
 <dt>
-<a href="stream.ksadditemtoobjectbag">KsAddItemToObjectBag</a>
+<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
 </dt>
 <dt>
-<a href="stream.kscompletependingrequest">KsCompletePendingRequest</a>
+<a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
 </dt>
 <dt>
-<a href="stream.kspin_dispatch">KSPIN_DISPATCH</a>
+<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
@@ -205,5 +206,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPIN structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUni.CommandCallback
+UID: NF:prcomoem.IPrintOemUni.CommandCallback
 title: IPrintOemUni::CommandCallback method
 author: windows-driver-content
 description: The IPrintOemUni::CommandCallback method is used to provide dynamically generated printer commands for Unidrv-supported printers.
@@ -7,7 +7,7 @@ old-location: print\iprintoemuni_commandcallback.htm
 old-project: print
 ms.assetid: e1708017-a546-4770-8ad1-7052b3d4e264
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUni, IPrintOemUni::CommandCallback, CommandCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ HRESULT CommandCallback(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param dwCallbackID 
@@ -107,11 +108,11 @@ When Unidrv calls the <code>IPrintOemUni::CommandCallback</code> method, it supp
 
 The method should use the <i>dwCallbackID</i> parameter value to determine which command to process. For each supported command, the method must be aware of which, if any, standard variables have been specified by the *Command entry's *<b>Params</b> attribute, and in which order.
 
-The method is responsible for constructing a printer command, and then sending the command to the print spooler by calling the <a href="print.iprintoemdriveruni_drvwritespoolbuf">IPrintOemDriverUni::DrvWriteSpoolBuf</a> method.
+The method is responsible for constructing a printer command, and then sending the command to the print spooler by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553138">IPrintOemDriverUni::DrvWriteSpoolBuf</a> method.
 
 The value supplied for <i>piResult</i> should always return zero unless the method is processing a cursor command. For <a href="https://msdn.microsoft.com/3ef09c7e-0e88-4236-a4c9-d89eb7ec61cb">cursor commands</a> that move the cursor in either the <i>x</i> or <i></i> direction, the method should return the new cursor position.
 
-The <code>IPrintOemUni::CommandCallback</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "CommandCallback" as input.
+The <code>IPrintOemUni::CommandCallback</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "CommandCallback" as input.
 
 
 ## -requirements

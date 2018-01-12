@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_OFFERALLOCATIONSCB
+UID: NC:d3dumddi.PFND3DDDI_OFFERALLOCATIONSCB
 title: PFND3DDDI_OFFERALLOCATIONSCB
 author: windows-driver-content
 description: Called by the user-mode display driver to offer video memory allocations for reuse.
@@ -7,7 +7,7 @@ old-location: display\pfnofferallocationscb.htm
 old-project: display
 ms.assetid: D711C545-BDEE-4EE5-B80A-75F01FAA0C33
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_OFFERALLOCATIONSCB callback
@@ -59,12 +60,12 @@ __checkReturn HRESULT APIENTRY pfnOfferAllocationsCb(
 
 ### -param hDevice [in]
 
- A handle to the display device (graphics context). The Direct3D runtime passed the user-mode driver this handle as the <b>hDevice</b> member of the <a href="display.d3dddiarg_createdevice">D3DDDIARG_CREATEDEVICE</a> structure at device creation.
+ A handle to the display device (graphics context). The Direct3D runtime passed the user-mode driver this handle as the <b>hDevice</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a> structure at device creation.
 
 
 ### -param pData [in]
 
- A pointer to a <a href="display.d3dddicb_offerallocations">D3DDDICB_OFFERALLOCATIONS</a> structure  that defines the video memory allocations that the driver offers.
+ A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a> structure  that defines the video memory allocations that the driver offers.
 
 
 ## -returns
@@ -87,7 +88,7 @@ __checkReturn HRESULT APIENTRY pfnOfferAllocationsCb(
 ## -remarks
 The user-mode display driver calls <b>pfnOfferAllocationsCb</b> to notify the Microsoft DirectX graphics kernel subsystem that, after it completes any previously submitted render operations,  it can offer the allocations' memory for other processes to use.
 
-After the driver calls <b>pfnOfferAllocationsCb</b> to offer an allocation to reuse, it must call <a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a>  before it locks the allocation or submits it for rendering operations.
+After the driver calls <b>pfnOfferAllocationsCb</b> to offer an allocation to reuse, it must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a>  before it locks the allocation or submits it for rendering operations.
 
 
 ## -requirements
@@ -139,24 +140,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiarg_createdevice">D3DDDIARG_CREATEDEVICE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
 </dt>
 <dt>
-<a href="display.d3dddicb_offerallocations">D3DDDICB_OFFERALLOCATIONS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>
 </dt>
 <dt>
-<a href="display.d3dddi_devicecallbacks">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
-<a href="display.pfnofferresources">pfnOfferResources</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_offerresources.md">pfnOfferResources</a>
 </dt>
 <dt>
-<a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20pfnOfferAllocationsCb callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20pfnOfferAllocationsCb callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

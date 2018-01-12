@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsStreamResourceManager2.AddStreamResource2
+UID: NF:portcls.IPortClsStreamResourceManager2.AddStreamResource2
 title: IPortClsStreamResourceManager2::AddStreamResource2 method
 author: windows-driver-content
 description: AddStreamResource2 adds a stream resource. Two type of stream resources are supported: interrupts and driver-owned threads. The AddStreamResource2 method can only be used by audio waveRT miniport drivers.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsStreamResourceManager2::AddStreamResource2 method
@@ -59,7 +60,7 @@ NTSTATUS  AddStreamResource2(
 
 ### -param PhysicalDeviceObject [in]
 
-Pointer to the device object. The device object is a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Pointer to the device object. The device object is a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 
 ### -param ResourceSet [in]
@@ -69,13 +70,13 @@ PVOID - Reserved for future use, set to NULL. Only device-scoped resources are s
 
 ### -param ResourceDescriptor [in]
 
-PPCSTREAMRESOURCE_DESCRIPTOR - The resource to add. For more information see, <a href="audio.pcstreamresource_descriptor">PCSTREAMRESOURCE_DESCRIPTOR</a>. 
+PPCSTREAMRESOURCE_DESCRIPTOR - The resource to add. For more information see, <a href="..\portcls\ns-portcls-_pcstreamresource_descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>. 
 
 
 
 ### -param ResourceHandle [out]
 
-PCSTREAMRESOURCE* - The location that will hold the resource handle. For more information, see <a href="audio.iportclsstreamresourcemanager_removestreamresource">RemoveStreamResource</a>.  
+PCSTREAMRESOURCE* - The location that will hold the resource handle. For more information, see <a href="https://msdn.microsoft.com/35A90B3C-27D7-4BBA-A754-098D191A3201">RemoveStreamResource</a>.  
 
 
 ## -returns
@@ -153,10 +154,10 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="audio.iportclsstreamresourcemanager_removestreamresource">RemoveStreamResource</a>
+<a href="https://msdn.microsoft.com/35A90B3C-27D7-4BBA-A754-098D191A3201">RemoveStreamResource</a>
 </dt>
 <dt>
-<a href="audio.pcstreamresource_descriptor">PCSTREAMRESOURCE_DESCRIPTOR</a>
+<a href="..\portcls\ns-portcls-_pcstreamresource_descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iportclsstreamresourcemanager.md">IPortClsStreamResourceManager</a>

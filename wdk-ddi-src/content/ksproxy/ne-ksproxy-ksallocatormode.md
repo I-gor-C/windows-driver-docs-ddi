@@ -1,5 +1,5 @@
 ---
-UID: NE.ksproxy.KSALLOCATORMODE
+UID: NE:ksproxy.KSALLOCATORMODE
 title: KSALLOCATORMODE
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksallocatormode.htm
 old-project: stream
 ms.assetid: 2D02D43F-495E-45EE-B932-C8924ADF05DC
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSALLOCATORMODE, KSALLOCATORMODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSALLOCATORMODE
 ---
 
 # KSALLOCATORMODE enumeration

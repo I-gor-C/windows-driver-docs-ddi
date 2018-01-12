@@ -1,5 +1,5 @@
 ---
-UID: NS.KS._KSDEVICE_THERMAL_DISPATCH
+UID: NS:ks._KSDEVICE_THERMAL_DISPATCH
 title: _KSDEVICE_THERMAL_DISPATCH
 author: windows-driver-content
 description: The KSDEVICE_THERMAL_DISPATCH structure is used by the miniport driver in the API call to register thermal notification callbacks. This structure contains the callback function pointers for active and passive cooling interfaces.
@@ -7,8 +7,8 @@ old-location: stream\ksdevice_thermal_dispatch.htm
 old-project: stream
 ms.assetid: 6E4ADD86-EFC4-4369-83A1-1D2824235310
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _KSDEVICE_THERMAL_DISPATCH, *PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH, PKSDEVICE_THERMAL_DISPATCH
+ms.date: 1/9/2018
+ms.keywords: _KSDEVICE_THERMAL_DISPATCH, *PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH
 ---
 
 # _KSDEVICE_THERMAL_DISPATCH structure
@@ -79,7 +80,7 @@ void
 ### -field KsDevice
 
 <dd>
-[in] A <a href="stream.ksdevice">KSDEVICE</a> object representing the device managed by KS.
+[in] A <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> object representing the device managed by KS.
 
 
 ### -field Engaged
@@ -121,7 +122,7 @@ void
 ### -field KsDevice
 
 <dd>
-[in] A <a href="stream.ksdevice">KSDEVICE</a> object representing the device managed by KS.
+[in] A <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> object representing the device managed by KS.
 
 
 ### -field Percentage

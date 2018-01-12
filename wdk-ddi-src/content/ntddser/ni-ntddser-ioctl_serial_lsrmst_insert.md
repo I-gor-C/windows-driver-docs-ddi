@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_LSRMST_INSERT
+UID: NI:ntddser.IOCTL_SERIAL_LSRMST_INSERT
 title: IOCTL_SERIAL_LSRMST_INSERT
 author: windows-driver-content
 description: The IOCTL_SERIAL_LSRMST_INSERT request enables or disables the insertion of information about line status and modem status in the receive data stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_LSRMST_INSERT IOCTL

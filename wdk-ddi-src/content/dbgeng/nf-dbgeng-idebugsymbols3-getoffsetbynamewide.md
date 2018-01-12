@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.GetOffsetByNameWide
+UID: NF:dbgeng.IDebugSymbols3.GetOffsetByNameWide
 title: IDebugSymbols3::GetOffsetByNameWide method
 author: windows-driver-content
 description: The GetOffsetByNameWide method returns the location of a symbol identified by name.
 old-location: debugger\getoffsetbynamewide.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 576193fc-756f-40fb-abdd-65c088687cb5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::GetOffsetByNameWide, GetOffsetByNameWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::GetOffsetByNameWide method
@@ -80,7 +81,7 @@ This method may also return other error values.  See <a href="https://msdn.micro
 
 
 ## -remarks
-If the name <i>Symbol</i> is not unique and <b>GetOffsetByName</b> finds multiple symbols with that name, then the ambiguity will be resolved arbitrarily.  In this case the value S_FALSE will be returned.  <a href="debugger.startsymbolmatch">StartSymbolMatch</a> can be used to initiate a search to determine which is the desired result.
+If the name <i>Symbol</i> is not unique and <b>GetOffsetByName</b> finds multiple symbols with that name, then the ambiguity will be resolved arbitrarily.  In this case the value S_FALSE will be returned.  <a href="https://msdn.microsoft.com/library/windows/hardware/ff558815">StartSymbolMatch</a> can be used to initiate a search to determine which is the desired result.
 
 <b>GetNameByOffset</b> does not support pattern matching (e.g. wildcards).  To find a symbol using pattern matching use <b>StartSymbolMatch</b>.
 
@@ -121,12 +122,12 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 </dt>
 <dt>
-<a href="debugger.getnamebyoffset">GetNameByOffset</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugSymbols3::GetOffsetByNameWide method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetOffsetByNameWide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

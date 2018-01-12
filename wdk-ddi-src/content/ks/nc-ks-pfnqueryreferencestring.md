@@ -1,5 +1,5 @@
 ---
-UID: NC.ks.PFNQUERYREFERENCESTRING
+UID: NC:ks.PFNQUERYREFERENCESTRING
 title: PFNQUERYREFERENCESTRING
 author: windows-driver-content
 description: This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using ExFreePool.
@@ -7,7 +7,7 @@ old-location: stream\kstrqueryreferencestring.htm
 old-project: stream
 ms.assetid: 08fd750f-19cc-4d78-a26b-9f790c5c3acf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDSELECTOR
 ---
 
 # PFNQUERYREFERENCESTRING callback
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using <a href="kernel.exfreepool">ExFreePool</a>.
+This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>.
 
 
 

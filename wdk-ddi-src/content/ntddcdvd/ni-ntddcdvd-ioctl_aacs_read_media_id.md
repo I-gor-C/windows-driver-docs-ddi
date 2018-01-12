@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdvd.IOCTL_AACS_READ_MEDIA_ID
+UID: NI:ntddcdvd.IOCTL_AACS_READ_MEDIA_ID
 title: IOCTL_AACS_READ_MEDIA_ID
 author: windows-driver-content
 description: Reads the Advanced Access Content System (AACS)-specific media identifier data.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_aacs_read_media_id.htm
 old-project: storage
 ms.assetid: e56f6af5-0391-4044-b6b3-efb27b511db6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, PDVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.date: 1/10/2018
+ms.keywords: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_READ_MEDIA_ID IOCTL
@@ -45,19 +46,19 @@ Reads the Advanced Access Content System (AACS)-specific media identifier data.
 ## -ioctlparameters
 
 ### -input-buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a value of type <a href="storage.dvd_session_id">DVD_SESSION_ID</a> that specifies an Authentication Grant Identifier (AGID).  
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff553743">DVD_SESSION_ID</a> that specifies an Authentication Grant Identifier (AGID).  
 
 
 ### -input-buffer-length
-Length of a <a href="storage.dvd_session_id">DVD_SESSION_ID</a>.
+Length of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553743">DVD_SESSION_ID</a>.
 
 
 ### -output-buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the value of type <a href="storage.aacs_media_id">AACS_MEDIA_ID</a> that specifies the media ID.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the value of type <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_media_id.md">AACS_MEDIA_ID</a> that specifies the media ID.
 
 
 ### -output-buffer-length
-Length of a <a href="storage.aacs_media_id">AACS_MEDIA_ID</a>.
+Length of a <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_media_id.md">AACS_MEDIA_ID</a>.
 
 
 ### -in-out-buffer

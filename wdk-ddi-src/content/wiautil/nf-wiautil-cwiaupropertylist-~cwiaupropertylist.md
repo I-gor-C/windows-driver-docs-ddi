@@ -1,13 +1,13 @@
 ---
-UID: NF.wiautil.CWiauPropertyList.~CWiauPropertyList
+UID: NF:wiautil.CWiauPropertyList.~CWiauPropertyList
 title: CWiauPropertyList::~CWiauPropertyList method
 author: windows-driver-content
 description: The CWiauPropertyList::~CWiauPropertyList method is the destructor for the CWiauPropertyList class.
 old-location: image\cwiaupropertylist__cwiaupropertylist.htm
-old-project: Image
+old-project: image
 ms.assetid: 8b847c3e-f773-44d0-a033-3e40bc2e01fc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: CWiauPropertyList, CWiauPropertyList::~CWiauPropertyList, ~CWiauPropertyList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SKIP_AMOUNT
 req.product: Windows 10 or later.
 ---
 
@@ -103,12 +104,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.cwiaupropertylist_cwiaupropertylist">CWiauPropertyList::CWiauPropertyList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540389">CWiauPropertyList::CWiauPropertyList</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20CWiauPropertyList::~CWiauPropertyList method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20CWiauPropertyList::~CWiauPropertyList method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

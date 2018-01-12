@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_SET_FIFO_CONTROL
+UID: NI:ntddser.IOCTL_SERIAL_SET_FIFO_CONTROL
 title: IOCTL_SERIAL_SET_FIFO_CONTROL
 author: windows-driver-content
 description: The IOCTL_SERIAL_SET_FIFO_CONTROL request sets the FIFO control register (FCR). Serial does not verify the specified FIFO control information.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_FIFO_CONTROL IOCTL

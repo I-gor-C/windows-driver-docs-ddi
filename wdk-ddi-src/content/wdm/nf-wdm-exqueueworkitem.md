@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ExQueueWorkItem
+UID: NF:wdm.ExQueueWorkItem
 title: ExQueueWorkItem function
 author: windows-driver-content
 description: ExQueueWorkItem inserts a given work item into a queue from which a system worker thread removes the item and gives control to the routine that the caller supplied to ExInitializeWorkItem.
@@ -7,7 +7,7 @@ old-location: ifsk\exqueueworkitem.htm
 old-project: ifsk
 ms.assetid: 287affe1-c5d4-4b36-8017-d1fef6088cf8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: ExQueueWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<b>ExQueueWorkItem</b> inserts a given work item into a queue from which a system worker thread removes the item and gives control to the routine that the caller supplied to <a href="ifsk.exinitializeworkitem">ExInitializeWorkItem</a>. 
+<b>ExQueueWorkItem</b> inserts a given work item into a queue from which a system worker thread removes the item and gives control to the routine that the caller supplied to <a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>. 
 
 
 
@@ -57,7 +58,7 @@ VOID ExQueueWorkItem(
 
 ### -param WorkItem [in, out]
 
-Pointer to the work item. This work item must have been initialized by a preceding call to <a href="ifsk.exinitializeworkitem">ExInitializeWorkItem</a>. 
+Pointer to the work item. This work item must have been initialized by a preceding call to <a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>. 
 
 
 ### -param QueueType [in]
@@ -100,7 +101,7 @@ None
 
 
 ## -remarks
-The callback routine that was specified in the <i>Routine</i> parameter to <a href="ifsk.exinitializeworkitem">ExInitializeWorkItem</a> is called in a system context at IRQL PASSIVE_LEVEL. This caller-supplied routine is responsible for freeing the work item when it is no longer needed by calling <a href="kernel.exfreepool">ExFreePool</a> or <a href="kernel.exfreepoolwithtag">ExFreePoolWithTag</a>.
+The callback routine that was specified in the <i>Routine</i> parameter to <a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a> is called in a system context at IRQL PASSIVE_LEVEL. This caller-supplied routine is responsible for freeing the work item when it is no longer needed by calling <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> or <a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>.
 
 System worker threads are a limited resource. Drivers must not permanently reserve a work item for the driver's use. Work items are designed for operations that complete quickly. Drivers should free any work items that they allocate as soon as possible.
 
@@ -176,30 +177,30 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exfreepool">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
-<a href="kernel.exfreepoolwithtag">ExFreePoolWithTag</a>
+<a href="..\wdm\nf-wdm-exfreepoolwithtag.md">ExFreePoolWithTag</a>
 </dt>
 <dt>
-<a href="ifsk.exinitializeworkitem">ExInitializeWorkItem</a>
+<a href="..\wdm\nf-wdm-exinitializeworkitem.md">ExInitializeWorkItem</a>
 </dt>
 <dt>
-<a href="kernel.ioallocateworkitem">IoAllocateWorkItem</a>
+<a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>
 </dt>
 <dt>
-<a href="kernel.iofreeworkitem">IoFreeWorkItem</a>
+<a href="..\wdm\nf-wdm-iofreeworkitem.md">IoFreeWorkItem</a>
 </dt>
 <dt>
-<a href="kernel.ioqueueworkitem">IoQueueWorkItem</a>
+<a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a>
 </dt>
 <dt>
-<a href="ifsk.work_queue_item">WORK_QUEUE_ITEM</a>
+<a href="..\wdm\ns-wdm-_work_queue_item.md">WORK_QUEUE_ITEM</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ExQueueWorkItem routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20ExQueueWorkItem routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

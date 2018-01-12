@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdrm.IOCTL_CDROM_LOAD_MEDIA
+UID: NI:ntddcdrm.IOCTL_CDROM_LOAD_MEDIA
 title: IOCTL_CDROM_LOAD_MEDIA
 author: windows-driver-content
 description: Draws a protruding CDROM tray back into the drive.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_cdrom_load_media.htm
 old-project: storage
 ms.assetid: 2add532c-fd98-41f9-93a4-d7d238bc88d0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, PWRITE_ROTATION, WRITE_ROTATION
+ms.date: 1/10/2018
+ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, WRITE_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWRITE_ROTATION, WRITE_ROTATION
 ---
 
 # IOCTL_CDROM_LOAD_MEDIA IOCTL

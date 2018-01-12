@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFIoRequest.GetWriteParameters
+UID: NF:wudfddi.IWDFIoRequest.GetWriteParameters
 title: IWDFIoRequest::GetWriteParameters method
 author: windows-driver-content
 description: The GetWriteParameters method retrieves the request parameters for a write-type request.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest_getwriteparameters.htm
 old-project: wdf
 ms.assetid: 0627b278-2fd5-4185-8ec9-8b306c6d85a8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFIoRequest, IWDFIoRequest::GetWriteParameters, GetWriteParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ void  GetWriteParameters(
 
 ### -param pSizeInBytes [out]
 
-A pointer to a variable that receives the size, in bytes, to write. To retrieve the data for writing, the driver calls the <a href="wdf.iwdfiorequest_getinputmemory">IWDFIoRequest::GetInputMemory</a> method.
+A pointer to a variable that receives the size, in bytes, to write. To retrieve the data for writing, the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559100">IWDFIoRequest::GetInputMemory</a> method.
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information. 
 
@@ -154,12 +155,12 @@ DLL
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
 </dt>
 <dt>
-<a href="wdf.iwdfiorequest_getinputmemory">IWDFIoRequest::GetInputMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559100">IWDFIoRequest::GetInputMemory</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::GetWriteParameters method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest::GetWriteParameters method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

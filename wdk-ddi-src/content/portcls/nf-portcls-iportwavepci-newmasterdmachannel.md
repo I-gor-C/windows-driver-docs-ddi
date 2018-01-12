@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWavePci.NewMasterDmaChannel
+UID: NF:portcls.IPortWavePci.NewMasterDmaChannel
 title: IPortWavePci::NewMasterDmaChannel method
 author: windows-driver-content
 description: The NewMasterDmaChannel method creates a new instance of a bus-master DMA channel.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWavePci::NewMasterDmaChannel method
@@ -76,7 +77,7 @@ Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate th
 
 ### -param PoolType [in]
 
-Specifies the type of storage pool from which the object is to be allocated. This is a <a href="kernel.pool_type">POOL_TYPE</a> enumeration value. Specify a nonpaged pool type for this parameter.
+Specifies the type of storage pool from which the object is to be allocated. This is a <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a> enumeration value. Specify a nonpaged pool type for this parameter.
 
 
 ### -param ResourceList [in, optional]
@@ -129,7 +130,7 @@ Not used. Set to 0.
 
 
 ## -remarks
-The definitions of the call parameters for the <code>NewMasterDmaChannel</code> method are similar to those for the members of the <a href="kernel.device_description">DEVICE_DESCRIPTION</a> structure with the same names.
+The definitions of the call parameters for the <code>NewMasterDmaChannel</code> method are similar to those for the members of the <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a> structure with the same names.
 
 Specify the <i>PoolType</i> parameter to be one of the nonpaged pool types defined in the POOL_TYPE enumeration. The DMA-channel object must not reside in paged memory because several of the methods in the <b>IDmaChannel</b> interface can be called from IRQL DISPATCH_LEVEL.
 
@@ -175,7 +176,7 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="audio.iportwavepci">IPortWavePci</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536905">IPortWavePci</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
@@ -184,10 +185,10 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 </dt>
 <dt>
-<a href="kernel.device_description">DEVICE_DESCRIPTION</a>
+<a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
 </dt>
 <dt>
-<a href="kernel.pool_type">POOL_TYPE</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 </dt>
 </dl>
  

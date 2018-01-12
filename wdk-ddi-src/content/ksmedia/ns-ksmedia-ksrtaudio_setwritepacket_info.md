@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSRTAUDIO_SETWRITEPACKET_INFO
+UID: NS:ksmedia.KSRTAUDIO_SETWRITEPACKET_INFO
 title: KSRTAUDIO_SETWRITEPACKET_INFO
 author: windows-driver-content
 description: The KSRTAUDIO_SETWRITEPACKET_INFO structure describes information associated with an audio packet.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 641DE2B5-7903-4D25-A280-F2BCCE8B1500
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO, PKSRTAUDIO_SETWRITEPACKET_INFO, *PKSRTAUDIO_SETWRITEPACKET_INFO
+ms.keywords: KSRTAUDIO_SETWRITEPACKET_INFO, *PKSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO
 ---
 
 # KSRTAUDIO_SETWRITEPACKET_INFO structure

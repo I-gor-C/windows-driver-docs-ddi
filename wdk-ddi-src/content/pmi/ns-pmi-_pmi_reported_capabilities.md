@@ -1,5 +1,5 @@
 ---
-UID: NS.PMI._PMI_REPORTED_CAPABILITIES
+UID: NS:pmi._PMI_REPORTED_CAPABILITIES
 title: _PMI_REPORTED_CAPABILITIES
 author: windows-driver-content
 description: The PMI_REPORTED_CAPABILITIES structure contains information about the type of power metering and budgeting capabilities a power meter supports. Additionally, this structure contains asset information about the power meter itself.
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: bcb0eb53-e3b3-4cec-9912-6306e8faef21
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PMI_REPORTED_CAPABILITIES, PPMI_REPORTED_CAPABILITIES, PMI_REPORTED_CAPABILITIES, *PPMI_REPORTED_CAPABILITIES
+ms.keywords: _PMI_REPORTED_CAPABILITIES, *PPMI_REPORTED_CAPABILITIES, PMI_REPORTED_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPMI_REPORTED_CAPABILITIES, PMI_REPORTED_CAPABILITIES
 ---
 
 # _PMI_REPORTED_CAPABILITIES structure
@@ -173,7 +174,7 @@ The power meter's asset information. This information is defined by the OEM for 
 
 The PMI_REPORTED_CAPABILITIES structure is returned through an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> I/O control (IOCTL) query request. The input data for this query request is set to the <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a> enumerator value of <b>PmiReportedCapabilities</b>..
 
-If the query request completes successfully, the request returns a <a href="powermeter.pmi_capabilities">PMI_CAPABILITIES</a> structure. The <b>Capabilities</b> member of this structure is formatted as a PMI_REPORTED_CAPABILITIES structure.
+If the query request completes successfully, the request returns a <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> structure. The <b>Capabilities</b> member of this structure is formatted as a PMI_REPORTED_CAPABILITIES structure.
 
 
 ## -requirements
@@ -207,7 +208,7 @@ Header
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_capabilities">PMI_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a>
 </dt>
 <dt>
 <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a>

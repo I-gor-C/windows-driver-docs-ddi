@@ -1,5 +1,5 @@
 ---
-UID: NS.PRINTOEM._DRVPROCS
+UID: NS:printoem._DRVPROCS
 title: _DRVPROCS
 author: windows-driver-content
 description: The DRVPROCS structure is obsolete and is not used with the COM interfaces for Microsoft printer drivers.
@@ -7,8 +7,8 @@ old-location: print\drvprocs.htm
 old-project: print
 ms.assetid: fcdfb7ba-cbb4-454b-b366-82d0c95b4afd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DRVPROCS, DRVPROCS, PDRVPROCS, *PDRVPROCS
+ms.date: 1/8/2018
+ms.keywords: _DRVPROCS, DRVPROCS, *PDRVPROCS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DRVPROCS, *PDRVPROCS
 req.product: Windows 10 or later.
 ---
 
@@ -46,30 +47,30 @@ The structure contains the addresses of helper functions that are provided to re
 All of the functions pointed to by members of this structure are obsolete. For information about each see:
 
 
-<a href="print.drvwritespoolbuf">DrvWriteSpoolBuf</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548662">DrvWriteSpoolBuf</a>
 
 
 
-<a href="print.drvxmoveto">DrvXMoveTo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548665">DrvXMoveTo</a>
 
 
 
-<a href="print.drvymoveto">DrvYMoveTo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548673">DrvYMoveTo</a>
 
 
 
-<a href="print.drvgetdriversetting">DrvGetDriverSetting</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548556">DrvGetDriverSetting</a>
 
 
 
-<a href="print.drvgetstandardvariable">DrvGetStandardVariable</a> (for information about BGetStandardVariable)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548562">DrvGetStandardVariable</a> (for information about BGetStandardVariable)
 
 
-<a href="print.drvunidrivertextout">DrvUnidriverTextOut</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548638">DrvUnidriverTextOut</a>
 
 
 
-<a href="print.drvwriteabortbuf">DrvWriteAbortBuf</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548657">DrvWriteAbortBuf</a>
 
 
 
@@ -93,42 +94,42 @@ typedef struct _DRVPROCS {
 <dl>
 <dd>
 
-<a href="print.drvwritespoolbuf">DrvWriteSpoolBuf</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548662">DrvWriteSpoolBuf</a>
 
 
 </dd>
 <dd>
 
-<a href="print.drvxmoveto">DrvXMoveTo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548665">DrvXMoveTo</a>
 
 
 </dd>
 <dd>
 
-<a href="print.drvymoveto">DrvYMoveTo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548673">DrvYMoveTo</a>
 
 
 </dd>
 <dd>
 
-<a href="print.drvgetdriversetting">DrvGetDriverSetting</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548556">DrvGetDriverSetting</a>
 
 
 </dd>
 <dd>
 
-<a href="print.drvgetstandardvariable">DrvGetStandardVariable</a> (for information about BGetStandardVariable)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548562">DrvGetStandardVariable</a> (for information about BGetStandardVariable)
 
 </dd>
 <dd>
 
-<a href="print.drvunidrivertextout">DrvUnidriverTextOut</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548638">DrvUnidriverTextOut</a>
 
 
 </dd>
 <dd>
 
-<a href="print.drvwriteabortbuf">DrvWriteAbortBuf</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548657">DrvWriteAbortBuf</a>
 
 
 </dd>

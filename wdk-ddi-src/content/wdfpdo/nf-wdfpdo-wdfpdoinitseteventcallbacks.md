@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfpdo.WdfPdoInitSetEventCallbacks
+UID: NF:wdfpdo.WdfPdoInitSetEventCallbacks
 title: WdfPdoInitSetEventCallbacks function
 author: windows-driver-content
 description: The WdfPdoInitSetEventCallbacks method registers a bus driver's event callback functions.
@@ -7,7 +7,7 @@ old-location: wdf\wdfpdoinitseteventcallbacks.htm
 old-project: wdf
 ms.assetid: 7ce47eab-c1d7-4a0d-accb-c8a925aa3d1d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfPdoInitSetEventCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -59,12 +60,12 @@ VOID WdfPdoInitSetEventCallbacks(
 
 ### -param DeviceInit [in]
 
-A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure.
 
 
 ### -param DispatchTable [in]
 
-A pointer to a caller-allocated <a href="wdf.wdf_pdo_event_callbacks">WDF_PDO_EVENT_CALLBACKS</a> structure.
+A pointer to a caller-allocated <a href="..\wdfpdo\ns-wdfpdo-_wdf_pdo_event_callbacks.md">WDF_PDO_EVENT_CALLBACKS</a> structure.
 
 
 ## -returns
@@ -72,11 +73,11 @@ None
 
 
 ## -remarks
-The bus driver must allocate a <a href="wdf.wdf_pdo_event_callbacks">WDF_PDO_EVENT_CALLBACKS</a> structure and fill in the structure with pointers to the driver's event callback functions.
+The bus driver must allocate a <a href="..\wdfpdo\ns-wdfpdo-_wdf_pdo_event_callbacks.md">WDF_PDO_EVENT_CALLBACKS</a> structure and fill in the structure with pointers to the driver's event callback functions.
 
-The driver must call <b>WdfPdoInitSetEventCallbacks</b> before calling <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>. For more information about calling <b>WdfPdoInitSetEventCallbacks</b> and <b>WdfDeviceCreate</b>, see <a href="wdf.creating_device_objects_in_a_bus_driver">Creating Device Objects in a Bus Driver</a>.
+The driver must call <b>WdfPdoInitSetEventCallbacks</b> before calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information about calling <b>WdfPdoInitSetEventCallbacks</b> and <b>WdfDeviceCreate</b>, see <a href="https://msdn.microsoft.com/36b4d24c-9f5e-4853-bf70-c94613e01f2b">Creating Device Objects in a Bus Driver</a>.
 
-The following code example initializes a <a href="wdf.wdf_pdo_event_callbacks">WDF_PDO_EVENT_CALLBACKS</a> structure and then calls <b>WdfPdoInitSetEventCallbacks</b>.
+The following code example initializes a <a href="..\wdfpdo\ns-wdfpdo-_wdf_pdo_event_callbacks.md">WDF_PDO_EVENT_CALLBACKS</a> structure and then calls <b>WdfPdoInitSetEventCallbacks</b>.
 
 
 ## -requirements
@@ -120,7 +121,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -140,7 +141,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_childdeviceinitapi">ChildDeviceInitAPI</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_pdodeviceinitapi">PdoDeviceInitAPI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975068">ChildDeviceInitAPI</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550354">PdoDeviceInitAPI</a>
 </td>
 </tr>
 </table>
@@ -148,15 +149,15 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdf_pdo_event_callbacks_init">WDF_PDO_EVENT_CALLBACKS_INIT</a>
+<a href="..\wdfpdo\nf-wdfpdo-wdf_pdo_event_callbacks_init.md">WDF_PDO_EVENT_CALLBACKS_INIT</a>
 </dt>
 <dt>
-<a href="wdf.wdfpdoinitallocate">WdfPdoInitAllocate</a>
+<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitallocate.md">WdfPdoInitAllocate</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPdoInitSetEventCallbacks method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfPdoInitSetEventCallbacks method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

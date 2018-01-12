@@ -1,5 +1,5 @@
 ---
-UID: NF.vhf.VhfDelete
+UID: NF:vhf.VhfDelete
 title: VhfDelete function
 author: windows-driver-content
 description: The HID Source device driver calls this method to delete a VHF device.
@@ -7,7 +7,7 @@ old-location: hid\vhfdelete.htm
 old-project: hid
 ms.assetid: 85252A53-E653-4D14-B1FE-72CA9AFA1F10
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: VhfDelete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: VhfKm.lib
 req.dll: 
 req.irql: If Wait is TRUE, PASSIVE_LEVEL; if Wait is FALSE <= DISPATCH_LEVEL
+req.typenames: *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -57,7 +58,7 @@ void VhfDelete(
 
 ### -param VhfHandle [in]
 
-A handle to a virtual HID device that your HID source driver received in the previous call to <a href="hid.vhfcreate">VhfCreate</a>.
+A handle to a virtual HID device that your HID source driver received in the previous call to <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a>.
 
 
 ### -param Wait [in]
@@ -78,7 +79,7 @@ To call <b>VhfDelete</b> synchronously,  call it at PASSIVE_LEVEL with the <i>Wa
 
 To call <b>VhfDelete</b> asynchronously, call it at maximum DISPATCH_LEVEL. If you call it at DISPATCH_LEVEL, then <i>Wait</i> parameter must be set to FALSE, the function returns immediately. VHF invokes the <a href="..\vhf\nc-vhf-evt_vhf_cleanup.md">EvtVhfCleanup</a> callback at a later time after the deletion has completed. 
 
-There are no restrictions on when a KMDF driver should call this function. It is recommended to call it from a function matching the <a href="hid.vhfcreate">VhfCreate</a> call. For example, if <b>VhfCreate</b> is called from <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>, then call <b>VhfDelete</b> synchronously from <i>EvtDeviceCleanupCallback</i>.
+There are no restrictions on when a KMDF driver should call this function. It is recommended to call it from a function matching the <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a> call. For example, if <b>VhfCreate</b> is called from <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>, then call <b>VhfDelete</b> synchronously from <i>EvtDeviceCleanupCallback</i>.
 
 
 ## -requirements
@@ -127,5 +128,5 @@ If Wait is TRUE, PASSIVE_LEVEL; if Wait is FALSE &lt;= DISPATCH_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20VhfDelete method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20VhfDelete method%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

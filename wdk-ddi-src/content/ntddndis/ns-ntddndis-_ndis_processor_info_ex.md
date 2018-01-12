@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_PROCESSOR_INFO_EX
+UID: NS:ntddndis._NDIS_PROCESSOR_INFO_EX
 title: _NDIS_PROCESSOR_INFO_EX
 author: windows-driver-content
 description: The NDIS_PROCESSOR_INFO_EX structure specifies information about a processor in the local computer.
 old-location: netvista\ndis_processor_info_ex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e4f28f30-32bc-4bbc-8e95-f87dfe80229d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_PROCESSOR_INFO_EX, *PNDIS_PROCESSOR_INFO_EX, PNDIS_PROCESSOR_INFO_EX, NDIS_PROCESSOR_INFO_EX
+ms.date: 1/8/2018
+ms.keywords: _NDIS_PROCESSOR_INFO_EX, NDIS_PROCESSOR_INFO_EX, *PNDIS_PROCESSOR_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_PROCESSOR_INFO_EX, *PNDIS_PROCESSOR_INFO_EX
 ---
 
 # _NDIS_PROCESSOR_INFO_EX structure
@@ -96,7 +97,7 @@ The node identifier of the processor. This is the number of the NUMA node to whi
 
 The node distance of the processor. If the handle at the 
      <i>NdisHandle</i> parameter that the caller passed to the 
-     <a href="netvista.ndisgetprocessorinformationex">
+     <a href="..\ndis\nf-ndis-ndisgetprocessorinformationex.md">
      NdisGetProcessorInformationEx</a> function is not <b>NULL</b> and is a miniport adapter handle, this member
      contains the distance of the corresponding NIC from this processor's NUMA node. Otherwise, this member
      is zero for miniport drivers or USHORT_MAX (0xffff) for other drivers.
@@ -104,7 +105,7 @@ The node distance of the processor. If the handle at the
 
 ## -remarks
 The NDIS_PROCESSOR_INFO_EX structure is used in the 
-    <a href="netvista.ndis_system_processor_info_ex">
+    <a href="..\ntddndis\ns-ntddndis-_ndis_system_processor_info_ex.md">
     NDIS_SYSTEM_PROCESSOR_INFO_EX</a> structure.
 
 
@@ -136,13 +137,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_processor_info">NDIS_PROCESSOR_INFO</a>
+<a href="..\ndis\ns-ndis-_ndis_processor_info.md">NDIS_PROCESSOR_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndis_system_processor_info_ex">NDIS_SYSTEM_PROCESSOR_INFO_EX</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_system_processor_info_ex.md">NDIS_SYSTEM_PROCESSOR_INFO_EX</a>
 </dt>
 <dt>
-<a href="netvista.ndisgetprocessorinformationex">
+<a href="..\ndis\nf-ndis-ndisgetprocessorinformationex.md">
    NdisGetProcessorInformationEx</a>
 </dt>
 </dl>
@@ -150,5 +151,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_PROCESSOR_INFO_EX structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROCESSOR_INFO_EX structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUKMDT._D3DDDI_MULTISAMPLINGMETHOD
+UID: NS:d3dukmdt._D3DDDI_MULTISAMPLINGMETHOD
 title: _D3DDDI_MULTISAMPLINGMETHOD
 author: windows-driver-content
 description: The D3DDDI_MULTISAMPLINGMETHOD structure describes a multiple-sampling method.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_multisamplingmethod.htm
 old-project: display
 ms.assetid: 2838cb87-0cd5-4351-a477-00f75eca0896
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDI_MULTISAMPLINGMETHOD, D3DDDI_MULTISAMPLINGMETHOD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_MULTISAMPLINGMETHOD
 ---
 
 # _D3DDDI_MULTISAMPLINGMETHOD structure
@@ -96,10 +97,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiformat">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="display.dxgkarg_describeallocation">DXGKARG_DESCRIBEALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_describeallocation.md">DXGKARG_DESCRIBEALLOCATION</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_describeallocation.md">DxgkDdiDescribeAllocation</a>
@@ -109,5 +110,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_MULTISAMPLINGMETHOD structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_MULTISAMPLINGMETHOD structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

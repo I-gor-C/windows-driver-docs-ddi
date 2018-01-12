@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDTAPE._TAPE_SET_POSITION
+UID: NS:ntddtape._TAPE_SET_POSITION
 title: _TAPE_SET_POSITION
 author: windows-driver-content
 description: The TAPE_SET_POSITION structure is used in conjunction with the IOCTL_TAPE_SET_POSITION request to move the current position on the tape to the specified partition and offset.
@@ -7,8 +7,8 @@ old-location: storage\tape_set_position.htm
 old-project: storage
 ms.assetid: c9f462b2-4b56-4138-a374-9e9d3e1ae295
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _TAPE_SET_POSITION, TAPE_SET_POSITION, *PTAPE_SET_POSITION, PTAPE_SET_POSITION
+ms.date: 1/10/2018
+ms.keywords: _TAPE_SET_POSITION, TAPE_SET_POSITION, *PTAPE_SET_POSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TAPE_SET_POSITION, *PTAPE_SET_POSITION
 ---
 
 # _TAPE_SET_POSITION structure
@@ -169,12 +170,12 @@ Header
 <a href="..\ntddtape\ni-ntddtape-ioctl_tape_set_position.md">IOCTL_TAPE_SET_POSITION</a>
 </dt>
 <dt>
-<a href="storage.tapeminisetposition">TapeMiniSetPosition</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567954">TapeMiniSetPosition</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TAPE_SET_POSITION structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20TAPE_SET_POSITION structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.ksproxy.KS_LogicalMemoryType
+UID: NE:ksproxy.KS_LogicalMemoryType
 title: KS_LogicalMemoryType
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\ks_logicalmemorytype.htm
 old-project: stream
 ms.assetid: B02E5131-6407-4481-BABD-9F5BDA979D85
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KS_LogicalMemoryType, KS_LogicalMemoryType
+ms.date: 1/9/2018
+ms.keywords: KS_LogicalMemoryType, KS_LogicalMemoryType, *PKS_LogicalMemoryType
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KS_LogicalMemoryType
 ---
 
 # KS_LogicalMemoryType enumeration

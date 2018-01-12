@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2PioReceiveCleanupTransactionComplete
+UID: NF:sercx.SerCx2PioReceiveCleanupTransactionComplete
 title: SerCx2PioReceiveCleanupTransactionComplete function
 author: windows-driver-content
 description: The SerCx2PioReceiveCleanupTransactionComplete method informs version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished cleaning up the serial controller's hardware state after a PIO-receive transaction.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID SerCx2PioReceiveCleanupTransactionComplete(
 
 ### -param PioReceive [in]
 
-A <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> method to create this object.
+A <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method to create this object.
 
 
 ## -returns
@@ -126,7 +127,7 @@ IRQL
 <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a>
 </dt>
 <dt>
-<a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a>
+<a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a>
 </dt>
 </dl>
  

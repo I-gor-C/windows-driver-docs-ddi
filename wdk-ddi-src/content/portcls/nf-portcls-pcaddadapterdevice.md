@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcAddAdapterDevice
+UID: NF:portcls.PcAddAdapterDevice
 title: PcAddAdapterDevice function
 author: windows-driver-content
 description: The PcAddAdapterDevice function adds an adapter device to the WDM device stack.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcAddAdapterDevice function
@@ -59,12 +60,12 @@ NTSTATUS PcAddAdapterDevice(
 
 ### -param DriverObject [in]
 
-Pointer to the driver object. This pointer is passed as a parameter to the adapter's <a href="kernel.adddevice">AddDevice</a> handler. The driver object is a system structure of type <a href="kernel.driver_object">DRIVER_OBJECT</a>.
+Pointer to the driver object. This pointer is passed as a parameter to the adapter's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> handler. The driver object is a system structure of type <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>.
 
 
 ### -param PhysicalDeviceObject [in]
 
-Pointer to the device's <a href="wdkgloss.p#wdkgloss.physical_device_object__pdo_#wdkgloss.physical_device_object__pdo_"><i>physical device object (PDO)</i></a>. PortCls passes this pointer as a call parameter to the adapter's <i>AddDevice</i> handler. The PDO is a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Pointer to the device's <a href="wdkgloss.p#wdkgloss.physical_device_object__pdo_#wdkgloss.physical_device_object__pdo_"><i>physical device object (PDO)</i></a>. PortCls passes this pointer as a call parameter to the adapter's <i>AddDevice</i> handler. The PDO is a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 
 ### -param StartDevice [in]
@@ -74,7 +75,7 @@ Pointer to the function that the operating system calls in order to start the de
 
 ### -param MaxObjects [in]
 
-Specifies the maximum number of subdevices to be registered by calls to <a href="audio.pcregistersubdevice">PcRegisterSubdevice</a>. This count sets the upper limit to the total number of miniport objects that the adapter driver can instantiate.
+Specifies the maximum number of subdevices to be registered by calls to <a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a>. This count sets the upper limit to the total number of miniport objects that the adapter driver can instantiate.
 
 
 ### -param DeviceExtensionSize [in]
@@ -87,9 +88,9 @@ Specifies the device extension size. Use zero for default size. See the followin
 
 
 ## -remarks
-This function does most of the work that the audio adapter driver's <a href="kernel.adddevice">AddDevice</a> handler needs to perform. <b>PcAddAdapterDevice</b> creates the device object, initializes the device context, and attaches the device object to the device stack.
+This function does most of the work that the audio adapter driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> handler needs to perform. <b>PcAddAdapterDevice</b> creates the device object, initializes the device context, and attaches the device object to the device stack.
 
-An adapter driver calls <b>PcAddAdapterDevice</b> when it receives a call to its <i>AddDevice </i>handler. The adapter driver typically installs the <i>AddDevice </i>handler by calling <a href="audio.pcinitializeadapterdriver">PcInitializeAdapterDriver</a>, although the driver can also install the handler by other means. <b>PcAddAdapterDevice</b> creates the <a href="wdkgloss.f#wdkgloss.functional_device_object__fdo_#wdkgloss.functional_device_object__fdo_"><i>functional device object (FDO)</i></a> for the PDO that was passed to the <i>AddDevice</i> handler.
+An adapter driver calls <b>PcAddAdapterDevice</b> when it receives a call to its <i>AddDevice </i>handler. The adapter driver typically installs the <i>AddDevice </i>handler by calling <a href="..\portcls\nf-portcls-pcinitializeadapterdriver.md">PcInitializeAdapterDriver</a>, although the driver can also install the handler by other means. <b>PcAddAdapterDevice</b> creates the <a href="wdkgloss.f#wdkgloss.functional_device_object__fdo_#wdkgloss.functional_device_object__fdo_"><i>functional device object (FDO)</i></a> for the PDO that was passed to the <i>AddDevice</i> handler.
 
 <i>DeviceExtensionSize</i> is typically zero. Some adapter drivers might need to reserve additional space in the device extension, in which case they should specify a <i>DeviceExtensionSize</i> greater than PORT_CLASS_DEVICE_EXTENSION_SIZE, which is the default size. Any value greater than zero and less than PORT_CLASS_DEVICE_EXTENSION_SIZE is illegal. Adapter drivers are free to use any part of the device extension after offset PORT_CLASS_DEVICE_EXTENSION_SIZE. They are also free to use bytes in the offset range of 16 to 31 inclusive in a system with 32-bit addressing and bytes in the offset range 32 to 63 in a system with 64-bit addressing. If the extension is regarded as an array of ULONG_PTR, array elements four through seven are available for use by the adapter driver.
 
@@ -166,16 +167,16 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.adddevice">AddDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
 </dt>
 <dt>
-<a href="kernel.driver_object">DRIVER_OBJECT</a>
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="audio.pcregistersubdevice">PcRegisterSubdevice</a>
+<a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a>
 </dt>
 </dl>
  

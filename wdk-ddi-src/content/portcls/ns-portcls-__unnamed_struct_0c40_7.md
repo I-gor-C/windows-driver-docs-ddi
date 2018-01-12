@@ -1,6 +1,6 @@
 ---
-UID: NS.PORTCLS.__UNNAMED_STRUCT_0C40_7
-title: *PPCPIN_DESCRIPTOR
+UID: NS:portcls.__unnamed_struct_0c40_7
+title: PCPIN_DESCRIPTOR
 author: windows-driver-content
 description: The PCPIN_DESCRIPTOR structure describes a pin factory.
 old-location: audio\pcpin_descriptor.htm
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 1eeee706-b7f4-4b4d-93c8-969eac7c56d9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: *PPCPIN_DESCRIPTOR, *PPCPIN_DESCRIPTOR, PCPIN_DESCRIPTOR
+ms.keywords: PCPIN_DESCRIPTOR, PCPIN_DESCRIPTOR, *PPCPIN_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PCPIN_DESCRIPTOR, *PPCPIN_DESCRIPTOR
 ---
 
-# *PPCPIN_DESCRIPTOR structure
+# PCPIN_DESCRIPTOR structure
 
 
 
@@ -85,23 +86,23 @@ Describes the pin factory. This member is a structure of type <a href="..\ks\ns-
 ## -remarks
 This structure is used to describe each of the pin factories that a miniport driver implements. The driver's <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_9.md">PCFILTER_DESCRIPTOR</a> structure contains a pointer to an array of <b>PCPIN_DESCRIPTOR</b> structures. The number of elements in the array is equal to the number of pin factories in the filter.
 
-The <b>MaxGlobalInstanceCount</b>, <b>MaxFilterInstanceCount</b>, and <b>MinFilterInstanceCount</b> members are maximum and minimum counts that describe the pin's resource restrictions and functional requirements. An autoinitialized <b>PCPIN_DESCRIPTOR</b> array can present only a static estimate of the available pin resources. The <a href="audio.ipincount_pincount">IPinCount::PinCount</a> method provides a means for the driver to revise its list of available pin resources dynamically as pins are allocated and freed.
+The <b>MaxGlobalInstanceCount</b>, <b>MaxFilterInstanceCount</b>, and <b>MinFilterInstanceCount</b> members are maximum and minimum counts that describe the pin's resource restrictions and functional requirements. An autoinitialized <b>PCPIN_DESCRIPTOR</b> array can present only a static estimate of the available pin resources. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff536834">IPinCount::PinCount</a> method provides a means for the driver to revise its list of available pin resources dynamically as pins are allocated and freed.
 
 The <b>MaxGlobalInstanceCount</b> value is similar in meaning to:
 
-The <a href="audio.ipincount_pincount">PinCount</a> method's <i>GlobalPossible</i> call parameter.
+The <a href="https://msdn.microsoft.com/8b7a49cc-5061-475b-ac03-cbf43954c413">PinCount</a> method's <i>GlobalPossible</i> call parameter.
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff565200">KSPROPERTY_PIN_GLOBALCINSTANCES</a> property value (the KSPIN_CINSTANCES structure's <b>PossibleCount</b> member).
 
 The <b>MaxFilterInstanceCount</b> value is similar in meaning to:
 
-The <a href="audio.ipincount_pincount">PinCount</a> method's <i>FilterPossible</i> call parameter.
+The <a href="https://msdn.microsoft.com/8b7a49cc-5061-475b-ac03-cbf43954c413">PinCount</a> method's <i>FilterPossible</i> call parameter.
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff565193">KSPROPERTY_PIN_CINSTANCES</a> property value (the KSPIN_CINSTANCES structure's <b>PossibleCount</b> member).
 
 The <b>MinFilterInstanceCount</b> value is similar in meaning to:
 
-The <a href="audio.ipincount_pincount">PinCount</a> method's <i>FilterNecessary</i> call parameter.
+The <a href="https://msdn.microsoft.com/8b7a49cc-5061-475b-ac03-cbf43954c413">PinCount</a> method's <i>FilterNecessary</i> call parameter.
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff565204">KSPROPERTY_PIN_NECESSARYINSTANCES</a> property value.
 
@@ -136,7 +137,7 @@ Header
 <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="audio.ipincount_pincount">IPinCount::PinCount</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536834">IPinCount::PinCount</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565200">KSPROPERTY_PIN_GLOBALCINSTANCES</a>

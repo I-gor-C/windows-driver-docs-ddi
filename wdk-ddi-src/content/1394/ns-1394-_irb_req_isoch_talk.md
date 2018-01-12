@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_TALK
+UID: NS:1394._IRB_REQ_ISOCH_TALK
 title: _IRB_REQ_ISOCH_TALK
 author: windows-driver-content
 description: This structure contains the field necessary to carry out a IsochTalk request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_TALK
 ---
 
 # _IRB_REQ_ISOCH_TALK structure

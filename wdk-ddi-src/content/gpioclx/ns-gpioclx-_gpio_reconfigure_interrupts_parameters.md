@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
+UID: NS:gpioclx._GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
 title: _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
 author: windows-driver-content
 description: The GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure describes the general-purpose I/O (GPIO) interrupt pin to reconfigure.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 98C9CFA6-76B3-4AF7-8280-BF84CC31CF70
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, *PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
+ms.keywords: _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, *PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, *PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
 ---
 
 # _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure
@@ -75,7 +76,7 @@ Indicates whether to configure the GPIO interrupt pin to be level-sensitive or e
 <li><b>LevelSensitive</b></li>
 <li><b>Latched</b></li>
 </ul>
-For more information, see <a href="kernel.kinterrupt_mode">KINTERRUPT_MODE</a>.
+For more information, see <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>.
 
 
 ### -field Polarity
@@ -89,7 +90,7 @@ Indicates the polarity of the reconfigured GPIO interrupt pin. For a level-sensi
 <li><b>InterruptFallingEdge</b></li>
 <li><b>InterruptActiveBoth</b></li>
 </ul>
-For more information, see <a href="kernel.kinterrupt_polarity">KINTERRUPT_POLARITY</a>.
+For more information, see <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>.
 
 
 ### -field Flags
@@ -138,10 +139,10 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698243">CLIENT_ReconfigureInterrupt</a>
 </dt>
 <dt>
-<a href="kernel.kinterrupt_mode">KINTERRUPT_MODE</a>
+<a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
 </dt>
 <dt>
-<a href="kernel.kinterrupt_polarity">KINTERRUPT_POLARITY</a>
+<a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
 </dt>
 </dl>
  

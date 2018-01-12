@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasUpdateValidFormat
+UID: NF:wiamdef.wiasUpdateValidFormat
 title: wiasUpdateValidFormat function
 author: windows-driver-content
 description: The wiasUpdateValidFormat function updates the valid format of the property context for the current minidriver.
 old-location: image\wiasupdatevalidformat.htm
-old-project: Image
+old-project: image
 ms.assetid: 04e66f34-3771-4b09-b546-f814e4b41906
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasUpdateValidFormat
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -63,12 +64,12 @@ Pointer to a WIA item context.
 
 ### -param pContext [in]
 
-Pointer to a <a href="image.wia_property_context">WIA_PROPERTY_CONTEXT</a> structure containing a property context.
+Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a> structure containing a property context.
 
 
 ### -param pIMiniDrv [in]
 
-Pointer to the <a href="image.iwiaminidrv_interface">IWiaMiniDrv Interface</a> of the current minidriver.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545027">IWiaMiniDrv Interface</a> of the current minidriver.
 
 
 ## -returns
@@ -139,12 +140,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="image.wia_property_context">WIA_PROPERTY_CONTEXT</a>
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20wiasUpdateValidFormat function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasUpdateValidFormat function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl4.OpenLogFile2Wide
+UID: NF:dbgeng.IDebugControl4.OpenLogFile2Wide
 title: IDebugControl4::OpenLogFile2Wide method
 author: windows-driver-content
 description: The OpenLogFile2Wide method opens a log file that will receive output from the client objects.
 old-location: debugger\openlogfile2wide.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 28d23e5e-4daf-4176-8d7b-af92eee8ccef
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl4, IDebugControl4::OpenLogFile2Wide, OpenLogFile2Wide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl4::OpenLogFile2Wide method
@@ -141,19 +142,19 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 </dt>
 <dt>
-<a href="debugger.openlogfile">OpenLogFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553154">OpenLogFile</a>
 </dt>
 <dt>
-<a href="debugger.getlogfile2">GetLogFile2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547025">GetLogFile2</a>
 </dt>
 <dt>
-<a href="debugger.closelogfile">CloseLogFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539148">CloseLogFile</a>
 </dt>
 <dt>
-<a href="debugger.getlogmask">GetLogMask</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547066">GetLogMask</a>
 </dt>
 <dt>
-<a href="debugger.setlogmask">SetLogMask</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556734">SetLogMask</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564018">.logopen (Open Log File)</a>
@@ -166,5 +167,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugControl4::OpenLogFile2Wide method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::OpenLogFile2Wide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

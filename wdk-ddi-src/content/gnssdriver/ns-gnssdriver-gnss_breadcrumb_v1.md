@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_BREADCRUMB_V1
+UID: NS:gnssdriver.GNSS_BREADCRUMB_V1
 title: GNSS_BREADCRUMB_V1
 author: windows-driver-content
 description: This structure contains an individual breadcrumb. The order and types of the fields are designed to pack densely.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: BE1D09C4-8EC0-4BF3-A943-20EDD44F9CF1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_BREADCRUMB_V1, *PGNSS_BREADCRUMB_V1, GNSS_BREADCRUMB_V1, PGNSS_BREADCRUMB_V1
+ms.keywords: GNSS_BREADCRUMB_V1, GNSS_BREADCRUMB_V1, *PGNSS_BREADCRUMB_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_BREADCRUMB_V1, *PGNSS_BREADCRUMB_V1
 ---
 
 # GNSS_BREADCRUMB_V1 structure

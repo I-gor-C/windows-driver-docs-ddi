@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILSERVICEPROVISIONINGSTATUS
+UID: NE:rilapitypes.RILSERVICEPROVISIONINGSTATUS
 title: RILSERVICEPROVISIONINGSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilserviceprovisioningstatus_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 044d89f7-6167-4e85-b4b4-d706a1499480
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILSERVICEPROVISIONINGSTATUS, RILSERVICEPROVISIONINGSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSERVICEPROVISIONINGSTATUS
 req.product: Windows 10 or later.
 ---
 

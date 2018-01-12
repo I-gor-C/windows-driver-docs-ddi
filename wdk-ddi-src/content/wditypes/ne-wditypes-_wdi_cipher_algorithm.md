@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_CIPHER_ALGORITHM
+UID: NE:wditypes._WDI_CIPHER_ALGORITHM
 title: _WDI_CIPHER_ALGORITHM
 author: windows-driver-content
 description: The WDI_CIPHER_ALGORITHM enumeration defines the cipher algorithm values.
 old-location: netvista\wdi_cipher_algorithm.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 08413358-DFBC-4AC3-97B3-380D98EFFBF3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_CIPHER_ALGORITHM, WDI_CIPHER_ALGORITHM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_CIPHER_ALGORITHM
 req.product: Windows 10 or later.
 ---
 

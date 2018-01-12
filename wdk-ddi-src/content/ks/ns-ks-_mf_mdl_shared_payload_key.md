@@ -1,5 +1,5 @@
 ---
-UID: NS.KS._MF_MDL_SHARED_PAYLOAD_KEY
+UID: NS:ks._MF_MDL_SHARED_PAYLOAD_KEY
 title: _MF_MDL_SHARED_PAYLOAD_KEY
 author: windows-driver-content
 description: This union is used internally by the operating system.
@@ -7,8 +7,8 @@ old-location: stream\mf_mdl_shared_payload_key.htm
 old-project: stream
 ms.assetid: 3EA093AB-1D23-4744-997E-8C7072934628
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _MF_MDL_SHARED_PAYLOAD_KEY, *PMF_MDL_SHARED_PAYLOAD_KEY, MF_MDL_SHARED_PAYLOAD_KEY, PMF_MDL_SHARED_PAYLOAD_KEY
+ms.date: 1/9/2018
+ms.keywords: _MF_MDL_SHARED_PAYLOAD_KEY, *PMF_MDL_SHARED_PAYLOAD_KEY, MF_MDL_SHARED_PAYLOAD_KEY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMF_MDL_SHARED_PAYLOAD_KEY, MF_MDL_SHARED_PAYLOAD_KEY
 ---
 
 # _MF_MDL_SHARED_PAYLOAD_KEY structure

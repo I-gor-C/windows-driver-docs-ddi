@@ -1,5 +1,5 @@
 ---
-UID: NF.winspool.FreePrintNamedPropertyArray
+UID: NF:winspool.FreePrintNamedPropertyArray
 title: FreePrintNamedPropertyArray function
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\freeprintnamedpropertyarray.htm
 old-project: print
 ms.assetid: 18E24562-F57A-492F-9254-722ABA0B2BC4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FreePrintNamedPropertyArray
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BIDI_TYPE
 req.product: Windows 10 or later.
 ---
 

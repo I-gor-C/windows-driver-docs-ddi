@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsFilterAddEvent
+UID: NF:ks.KsFilterAddEvent
 title: KsFilterAddEvent function
 author: windows-driver-content
 description: The KsFilterAddEvent function adds an event to Filter's event list.
@@ -7,7 +7,7 @@ old-location: stream\ksfilteraddevent.htm
 old-project: stream
 ms.assetid: e93491c1-bd6d-4d89-b55f-10439b0f5eec
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsFilterAddEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsFilterAddEvent function
@@ -56,12 +57,12 @@ void _inline KsFilterAddEvent(
 
 ### -param Filter [in]
 
-<i>A pointer</i> to a <a href="stream.ksfilter">KSFILTER</a> structure representing the filter to which to add a specified event.
+<i>A pointer</i> to a <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure representing the filter to which to add a specified event.
 
 
 ### -param EventEntry [in]
 
-<i>A pointer</i> to an <a href="stream.ksevent_entry">KSEVENT_ENTRY</a> structure describing the event to add to <i>Filter</i>.
+<i>A pointer</i> to an <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure describing the event to add to <i>Filter</i>.
 
 
 ## -returns
@@ -69,7 +70,7 @@ None
 
 
 ## -remarks
-This function is an inline function call to <a href="stream.ksaddevent">KsAddEvent</a>.
+This function is an inline function call to <a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>.
 
 
 ## -requirements
@@ -121,18 +122,18 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksaddevent">KsAddEvent</a>
+<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
 </dt>
 <dt>
-<a href="stream.ksgenerateevents">KsGenerateEvents</a>
+<a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
 </dt>
 <dt>
-<a href="stream.ksevent_entry">KSEVENT_ENTRY</a>
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterAddEvent function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterAddEvent function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.iddcx.IDDCX_PATH_FLAGS
+UID: NE:iddcx.IDDCX_PATH_FLAGS
 title: IDDCX_PATH_FLAGS
 author: windows-driver-content
 description: Indicates the state of the path.
@@ -7,7 +7,7 @@ old-location: display\iddcx_path_flags.htm
 old-project: display
 ms.assetid: f7a9b20a-753c-487d-a2d5-3e1c08317519
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_PATH_FLAGS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: _requires_same_
+req.lib: Mscms.lib
+req.dll: Mscms.dll
+req.irql: 
+req.typenames: 
 ---
 
 # IDDCX_PATH_FLAGS enumeration

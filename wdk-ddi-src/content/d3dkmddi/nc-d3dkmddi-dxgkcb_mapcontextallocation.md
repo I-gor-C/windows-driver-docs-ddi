@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dkmddi.DXGKCB_MAPCONTEXTALLOCATION
+UID: NC:d3dkmddi.DXGKCB_MAPCONTEXTALLOCATION
 title: DXGKCB_MAPCONTEXTALLOCATION
 author: windows-driver-content
 description: Maps a graphics processing unit (GPU) virtual address to the specified context allocation.
@@ -7,7 +7,7 @@ old-location: display\dxgkcbmapcontextallocation.htm
 old-project: display
 ms.assetid: 8EAC322D-B666-428A-99A3-96E489611832
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 # DXGKCB_MAPCONTEXTALLOCATION callback
@@ -64,7 +65,7 @@ A handle to the display adapter.
 
 ### -param pArgs [in]
 
-The <a href="display.dxgkargcb_mapcontextallocation">DXGKARGCB_MAPCONTEXTALLOCATION</a> structure that describes the operation.
+The <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_mapcontextallocation.md">DXGKARGCB_MAPCONTEXTALLOCATION</a> structure that describes the operation.
 
 
 ## -returns
@@ -127,12 +128,12 @@ Header
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a>
 </dt>
 <dt>
-<a href="display.dxgkargcb_mapcontextallocation">DXGKARGCB_MAPCONTEXTALLOCATION</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_mapcontextallocation.md">DXGKARGCB_MAPCONTEXTALLOCATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKCB_MAPCONTEXTALLOCATION callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKCB_MAPCONTEXTALLOCATION callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

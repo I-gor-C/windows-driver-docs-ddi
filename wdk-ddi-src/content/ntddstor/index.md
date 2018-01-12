@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ntddstor
 ---
 
 # Ntddstor.h header

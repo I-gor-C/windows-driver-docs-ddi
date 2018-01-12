@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILPHONEBOOKANSOPERATION
+UID: NE:ntddrilapitypes.RILPHONEBOOKANSOPERATION
 title: RILPHONEBOOKANSOPERATION
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebookansoperation.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 29dcc5c0-0b07-49d7-b2ab-bdac7333baf7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILPHONEBOOKANSOPERATION, RILPHONEBOOKANSOPERATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPHONEBOOKANSOPERATION
 ---
 
 # RILPHONEBOOKANSOPERATION enumeration

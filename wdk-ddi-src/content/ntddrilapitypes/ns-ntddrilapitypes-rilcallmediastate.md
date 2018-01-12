@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLMEDIASTATE
+UID: NS:ntddrilapitypes.RILCALLMEDIASTATE
 title: RILCALLMEDIASTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmediastate.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1fe4b90e-f89a-4ccc-bc92-b6f2edfb0b98
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLMEDIASTATE, RILCALLMEDIASTATE, *LPRILCALLMEDIASTATE, LPRILCALLMEDIASTATE
+ms.date: 1/8/2018
+ms.keywords: RILCALLMEDIASTATE, RILCALLMEDIASTATE, *LPRILCALLMEDIASTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLMEDIASTATE, *LPRILCALLMEDIASTATE
 ---
 
 # RILCALLMEDIASTATE structure

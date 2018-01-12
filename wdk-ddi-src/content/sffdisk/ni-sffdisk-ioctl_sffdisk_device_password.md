@@ -1,5 +1,5 @@
 ---
-UID: NI.sffdisk.IOCTL_SFFDISK_DEVICE_PASSWORD
+UID: NI:sffdisk.IOCTL_SFFDISK_DEVICE_PASSWORD
 title: IOCTL_SFFDISK_DEVICE_PASSWORD
 author: windows-driver-content
 description: User-mode applications use this IOCTL to perform basic operations on a Secure Digital (SD) card, such as setting the password on the card, resetting the card, or locking and unlocking the card.
@@ -7,7 +7,7 @@ old-location: sd\ioctl_sffdisk_device_password.htm
 old-project: SD
 ms.assetid: 76b65ada-06b8-411e-83e9-62088f697f02
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/18/2017
 ms.keywords: SFFDISK_DPCMD, SFFDISK_DPCMD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SFFDISK_DPCMD
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 User-mode applications use this IOCTL to perform basic operations on a Secure Digital (SD) card, such as setting the password on the card, resetting the card, or locking and unlocking the card. For a description of this command, see the <i>Secure Digital I/O (SDIO)</i> specification.
 
-To perform this operation, call the <a href="base.deviceiocontrol">DeviceIoControl</a> function (described in the Microsoft Windows SDK documentation) using the following parameters.
+To perform this operation, call the <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> function (described in the Microsoft Windows SDK documentation) using the following parameters.
 
 
 
@@ -89,9 +90,9 @@ bRet = DeviceIoControl (
 
 ### -status-block
 I/O Status block
-If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> returns a nonzero value.
+If the operation succeeds, <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> returns a nonzero value.
 
-If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.
+If the operation fails, <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.
 
 
 ## -remarks

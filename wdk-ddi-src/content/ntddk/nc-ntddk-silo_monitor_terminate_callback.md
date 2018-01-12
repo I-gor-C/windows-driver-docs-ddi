@@ -1,5 +1,5 @@
 ---
-UID: NC.ntddk.SILO_MONITOR_TERMINATE_CALLBACK
+UID: NC:ntddk.SILO_MONITOR_TERMINATE_CALLBACK
 title: SILO_MONITOR_TERMINATE_CALLBACK
 author: windows-driver-content
 description: This callback is invoked when a silo is terminated.
@@ -7,8 +7,8 @@ old-location: kernel\silo_monitor_terminate_callback.htm
 old-project: kernel
 ms.assetid: 1F87D6AC-3603-4A34-BAAB-8B43ADF9E595
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.date: 1/4/2018
+ms.keywords: _FILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ---
 
 # SILO_MONITOR_TERMINATE_CALLBACK callback
@@ -66,7 +67,7 @@ This callback function does not return a value.
 
 
 ## -remarks
-The expected behavior is that the component will drop any outstanding silo references.  A driver may no longer operate within the namespace of a silo (via <a href="kernel.psattachsilotocurrentthread">PsAttachSiloToCurrentThread</a>) once it has returned from this function. 
+The expected behavior is that the component will drop any outstanding silo references.  A driver may no longer operate within the namespace of a silo (via <a href="..\ntddk\nf-ntddk-psattachsilotocurrentthread.md">PsAttachSiloToCurrentThread</a>) once it has returned from this function. 
 
 
 ## -requirements

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetImplicitThreadDataOffset
+UID: NF:dbgeng.IDebugSystemObjects4.GetImplicitThreadDataOffset
 title: IDebugSystemObjects4::GetImplicitThreadDataOffset method
 author: windows-driver-content
 description: The GetImplicitThreadDataOffset method returns the implicit thread for the current process.
 old-location: debugger\getimplicitthreaddataoffset.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: fe7a1afe-dc87-412c-9e35-4a1af05f9474
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetImplicitThreadDataOffset, GetImplicitThreadDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetImplicitThreadDataOffset method

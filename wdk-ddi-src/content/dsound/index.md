@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:dsound
 ---
 
 # Dsound.h header
@@ -11,6 +11,12 @@ This header is used by Streaming media devices. For more information, see
 
 Dsound.h contain these programming interfaces:
 
+
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [IKsPropertySet interface](nn-dsound-ikspropertyset.md) | The IKsPropertySet interface provides methods that access properties of KS objects that are implemented in a KS minidriver. |
 
 ## Methods
 

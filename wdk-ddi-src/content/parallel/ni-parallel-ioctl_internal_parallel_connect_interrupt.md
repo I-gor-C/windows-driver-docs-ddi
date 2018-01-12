@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT
+UID: NI:parallel.IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT
 title: IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT
 author: windows-driver-content
 description: The IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT request connects an optional interrupt service routine and an optional deferred port check routine to a parallel port.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGBATOKEN, RILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT IOCTL
@@ -47,7 +48,7 @@ The connect interrupt request returns information that the driver can use in the
 ## -ioctlparameters
 
 ### -input-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="parports.parallel_interrupt_service_routine">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a> structure that the client allocates to input interrupt service information. The system-supplied function driver for parallel ports uses the same memory buffer, but casts it to a different data type to output information.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\parallel\ns-parallel-_parallel_interrupt_service_routine.md">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a> structure that the client allocates to input interrupt service information. The system-supplied function driver for parallel ports uses the same memory buffer, but casts it to a different data type to output information.
 
 
 ### -input-buffer-length
@@ -59,7 +60,7 @@ The <b>AssociatedIrp.SystemBuffer</b> member points to a PARALLEL_INTERRUPT_INFO
 
 
 ### -output-buffer-length
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="parports.parallel_interrupt_information">PARALLEL_INTERRUPT_INFORMATION</a> structure.
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel-_parallel_interrupt_information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure.
 
 
 ### -in-out-buffer
@@ -72,7 +73,7 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the si
 
 ### -status-block
 I/O Status block
-If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="parports.parallel_interrupt_information">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. 
+If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel-_parallel_interrupt_information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports or to one of the following values:
 
@@ -109,10 +110,10 @@ Header
 <a href="..\parallel\ni-parallel-ioctl_internal_parallel_disconnect_interrupt.md">IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT</a>
 </dt>
 <dt>
-<a href="parports.parallel_interrupt_information">PARALLEL_INTERRUPT_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_parallel_interrupt_information.md">PARALLEL_INTERRUPT_INFORMATION</a>
 </dt>
 <dt>
-<a href="parports.parallel_interrupt_service_routine">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a>
+<a href="..\parallel\ns-parallel-_parallel_interrupt_service_routine.md">PARALLEL_INTERRUPT_SERVICE_ROUTINE</a>
 </dt>
 </dl>
  

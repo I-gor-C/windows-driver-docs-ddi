@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDDCX_METADATA
+UID: NS:iddcx.IDDCX_METADATA
 title: IDDCX_METADATA
 author: windows-driver-content
 description: Gives information about the current provided surface and what is displayed on it.
@@ -7,7 +7,7 @@ old-location: display\iddcx_metadata.htm
 old-project: display
 ms.assetid: 7128e49d-71e9-4014-9f08-591cfaeba363
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_METADATA,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDDCX_METADATA structure
@@ -77,7 +78,7 @@ typedef struct IDDCX_METADATA {
 ### -field DirtyRectCount
 
 
-                      Number of dirty rects for this frame. Call <a href="display.iddcxswapchaingetdirtyrects">IddCxSwapChainGetDirtyRects</a> to get the dirty rects
+                      Number of dirty rects for this frame. Call <a href="..\iddcx\nf-iddcx-iddcxswapchaingetdirtyrects.md">IddCxSwapChainGetDirtyRects</a> to get the dirty rects
                  
 
 <div class="alert"><b>Note</b>   A zero <b>DirtyRectCount</b> and <b>MoveRegionCount</b> value indicates there were no desktop updates and the
@@ -87,7 +88,7 @@ typedef struct IDDCX_METADATA {
 ### -field MoveRegionCount
 
 
-                     Number of move regions in this frame, call <a href="display.iddcxswapchaingetmoveregions">IddCxSwapChainGetMoveRegions</a> to get the move regions
+                     Number of move regions in this frame, call <a href="..\iddcx\nf-iddcx-iddcxswapchaingetmoveregions.md">IddCxSwapChainGetMoveRegions</a> to get the move regions
                  
 
 <div class="alert"><b>Note</b>   A zero <b>DirtyRectCount</b> and <b>MoveRegionCount</b> value indicates there were no desktop updates and the
@@ -111,7 +112,7 @@ typedef struct IDDCX_METADATA {
 ### -field pSurface
 
 
-                     DX surface that contains the image to encode and transmit. The driver can use this DX surface anytime until <a href="display.iddcxswapchainreleaseandacquirebuffer">IddCxSwapChainReleaseAndAcquire</a> is called again
+                     DX surface that contains the image to encode and transmit. The driver can use this DX surface anytime until <a href="..\iddcx\nf-iddcx-iddcxswapchainreleaseandacquirebuffer.md">IddCxSwapChainReleaseAndAcquire</a> is called again
 
 <div class="alert"><b>Note</b>  This surface is always a A8R8G8B8 formated surface</div>
 <div> </div>

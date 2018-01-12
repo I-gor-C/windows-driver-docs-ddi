@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
+UID: NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
 title: D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
 author: windows-driver-content
 description: Specifies the inverse telecine (IVTC) capabilities of a video processor.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_itelecine_caps.htm
 old-project: display
 ms.assetid: 866203d9-9621-4458-b146-be90e67c1c7c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS
 ---
 
 # D3D11_1DDI_VIDEO_PROCESSOR_ITELECINE_CAPS enumeration

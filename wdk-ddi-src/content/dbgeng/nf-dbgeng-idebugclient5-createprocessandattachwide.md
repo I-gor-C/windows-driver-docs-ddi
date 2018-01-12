@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugClient5.CreateProcessAndAttachWide
+UID: NF:dbgeng.IDebugClient5.CreateProcessAndAttachWide
 title: IDebugClient5::CreateProcessAndAttachWide method
 author: windows-driver-content
 description: The CreateProcessAndAttachWide method creates a process from a specified command line, then attach to another user-mode process.
 old-location: debugger\createprocessandattachwide.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: ceaadcca-e206-402b-8aff-62aca483fb64
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugClient5, IDebugClient5::CreateProcessAndAttachWide, CreateProcessAndAttachWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugClient5::CreateProcessAndAttachWide method
@@ -64,12 +65,12 @@ Specifies the process server to use to attach to the process.  If <i>Server</i> 
 
 ### -param CommandLine [in, optional]
 
-Specifies the command line to execute to create the new process.  If <i>CommandLine</i> is <b>NULL</b>, then no process is created and these methods attach to an existing process, as <a href="debugger.attachprocess">AttachProcess</a> does.
+Specifies the command line to execute to create the new process.  If <i>CommandLine</i> is <b>NULL</b>, then no process is created and these methods attach to an existing process, as <a href="https://msdn.microsoft.com/library/windows/hardware/ff538150">AttachProcess</a> does.
 
 
 ### -param CreateFlags [in]
 
-Specifies the flags to use when creating the process.  For details on these flags, see <a href="debugger.debug_create_process_options">DEBUG_CREATE_PROCESS_OPTIONS</a>.<b>CreateFlags</b>.
+Specifies the flags to use when creating the process.  For details on these flags, see <a href="..\dbgeng\ns-dbgeng-_debug_create_process_options.md">DEBUG_CREATE_PROCESS_OPTIONS</a>.<b>CreateFlags</b>.
 
 
 ### -param ProcessId [in]
@@ -96,7 +97,7 @@ This method is available only for live user-mode debugging.
 
 If <i>CommandLine</i> is not <b>NULL</b> and <i>ProcessId</i> is not zero, then the engine will create the process in a suspended state.  The engine will resume this newly created process after it successfully connects to the process specified in <i>ProcessId</i>.
 
-The engine does not completely attach to the process until the <a href="debugger.waitforevent">WaitForEvent</a> method has been called.  Only after the process has generated an event -- for example, the create-process event -- does it become available in the debugger session.
+The engine does not completely attach to the process until the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561229">WaitForEvent</a> method has been called.  Only after the process has generated an event -- for example, the create-process event -- does it become available in the debugger session.
 
 For more information about creating and attaching to live user-mode targets, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552020">Live User-Mode Targets</a>.
 
@@ -139,10 +140,10 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
 </dt>
 <dt>
-<a href="debugger.createprocessandattach2">CreateProcessAndAttach2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540055">CreateProcessAndAttach2</a>
 </dt>
 <dt>
-<a href="debugger.attachprocess">AttachProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538150">AttachProcess</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562135">.attach (Attach to Process)</a>
@@ -151,30 +152,30 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562280">.create (Create Process)</a>
 </dt>
 <dt>
-<a href="debugger.connectprocessserver">ConnectProcessServer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539237">ConnectProcessServer</a>
 </dt>
 <dt>
-<a href="debugger.createprocess2">CreateProcess2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539323">CreateProcess2</a>
 </dt>
 <dt>
-<a href="debugger.getrunningprocesssystemids">GetRunningProcessSystemIds</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548265">GetRunningProcessSystemIds</a>
 </dt>
 <dt>
-<a href="debugger.getrunningprocessdescription">GetRunningProcessDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548243">GetRunningProcessDescription</a>
 </dt>
 <dt>
-<a href="debugger.detachcurrentprocess">DetachCurrentProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541846">DetachCurrentProcess</a>
 </dt>
 <dt>
-<a href="debugger.terminatecurrentprocess">TerminateCurrentProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558866">TerminateCurrentProcess</a>
 </dt>
 <dt>
-<a href="debugger.abandoncurrentprocess">AbandonCurrentProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537786">AbandonCurrentProcess</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugClient3::CreateProcessAndAttachWide method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient3::CreateProcessAndAttachWide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

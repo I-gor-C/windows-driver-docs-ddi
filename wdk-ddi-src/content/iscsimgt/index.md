@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:iscsimgt
 ---
 
 # Iscsimgt.h header

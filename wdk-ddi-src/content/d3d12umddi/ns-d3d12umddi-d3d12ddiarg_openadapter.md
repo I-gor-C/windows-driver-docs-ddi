@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDIARG_OPENADAPTER
+UID: NS:d3d12umddi.D3D12DDIARG_OPENADAPTER
 title: D3D12DDIARG_OPENADAPTER
 author: windows-driver-content
 description: The D3D12DDIARG_OPENADAPTER structure describes the graphics adapter object.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddiarg_openadapter.htm
 old-project: display
 ms.assetid: 1FABEEBC-358C-40EB-8F5C-F834EE57A1A8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDIARG_OPENADAPTER, D3D12DDIARG_OPENADAPTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDIARG_OPENADAPTER
 ---
 
 # D3D12DDIARG_OPENADAPTER structure
@@ -68,7 +69,7 @@ typedef struct _D3D12DDIARG_OPENADAPTER {
 
 ### -field pAdapterCallbacks
 
-[in] A pointer to a <a href="display.d3dddi_adaptercallbacks">D3DDDI_ADAPTERCALLBACKS</a> structure that contains the Direct3D runtime-supplied <b>pfnQueryAdapterInfoCb</b> callback function that the driver can use.
+[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_adaptercallbacks.md">D3DDDI_ADAPTERCALLBACKS</a> structure that contains the Direct3D runtime-supplied <b>pfnQueryAdapterInfoCb</b> callback function that the driver can use.
 
 
 ### -field pAdapterFuncs

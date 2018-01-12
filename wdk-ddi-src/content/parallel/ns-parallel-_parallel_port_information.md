@@ -1,5 +1,5 @@
 ---
-UID: NS.PARALLEL._PARALLEL_PORT_INFORMATION
+UID: NS:parallel._PARALLEL_PORT_INFORMATION
 title: _PARALLEL_PORT_INFORMATION
 author: windows-driver-content
 description: The PARALLEL_PORT_INFORMATION structure specifies information about the resources assigned to a parallel port, the capabilities of the parallel port, and pointers to callback routines that a kernel-mode driver can use to operate the parallel port.
@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: 9f170425-2c65-469e-adae-e845b11b9c8e
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PARALLEL_PORT_INFORMATION, PPARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION
+ms.keywords: _PARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION
 ---
 
 # _PARALLEL_PORT_INFORMATION structure
@@ -130,10 +131,10 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
 </dt>
 <dt>
-<a href="parports.more_parallel_port_information">MORE_PARALLEL_PORT_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_more_parallel_port_information.md">MORE_PARALLEL_PORT_INFORMATION</a>
 </dt>
 <dt>
-<a href="parports.parallel_pnp_information">PARALLEL_PNP_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a>
 </dt>
 <dt>
 <a href="..\parallel\nc-parallel-pparallel_free_routine.md">PPARALLEL_FREE_ROUTINE</a>

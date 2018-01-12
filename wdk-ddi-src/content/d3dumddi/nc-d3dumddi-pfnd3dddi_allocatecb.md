@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_ALLOCATECB
+UID: NC:d3dumddi.PFND3DDDI_ALLOCATECB
 title: PFND3DDDI_ALLOCATECB
 author: windows-driver-content
 description: The pfnAllocateCb function allocates system or video memory.
@@ -7,7 +7,7 @@ old-location: display\pfnallocatecb.htm
 old-project: display
 ms.assetid: a61e6c6a-3992-429c-ad8c-5f1a61dc7b8b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_ALLOCATECB callback
@@ -64,7 +65,7 @@ A handle to the display device (graphics context).
 
 ### -param pData [in, out]
 
-A pointer to a <a href="display.d3dddicb_allocate">D3DDDICB_ALLOCATE</a> structure that describes the allocation.
+A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_allocate.md">D3DDDICB_ALLOCATE</a> structure that describes the allocation.
 
 
 ## -returns
@@ -101,11 +102,11 @@ The user-mode display driver typically creates an allocation in response to a ca
 
 The user-mode display driver can create the following types of allocations: 
 
-System memory allocations in which the Microsoft Direct3D runtime preallocates the system memory. In this situation, the user-mode display driver cannot set alignment or any other parameter. If the user-mode display driver requires preallocated system memory that is accessible by the hardware, it calls <b>pfnAllocateCb</b>. The Direct3D runtime returns the system memory pointer in the <b>pSystemMem</b> member of the <a href="display.d3dddi_allocationinfo">D3DDDI_ALLOCATIONINFO</a> structure for elements in the <b>pAllocationInfo</b> member of the <a href="display.d3dddicb_allocate">D3DDDICB_ALLOCATE</a> structure that is pointed to by <i>pData</i>. If the user-mode display driver does not require preallocated system memory that is accessible by the hardware, it should not call <b>pfnAllocateCb</b> for this type of memory. 
+System memory allocations in which the Microsoft Direct3D runtime preallocates the system memory. In this situation, the user-mode display driver cannot set alignment or any other parameter. If the user-mode display driver requires preallocated system memory that is accessible by the hardware, it calls <b>pfnAllocateCb</b>. The Direct3D runtime returns the system memory pointer in the <b>pSystemMem</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationinfo.md">D3DDDI_ALLOCATIONINFO</a> structure for elements in the <b>pAllocationInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_allocate.md">D3DDDICB_ALLOCATE</a> structure that is pointed to by <i>pData</i>. If the user-mode display driver does not require preallocated system memory that is accessible by the hardware, it should not call <b>pfnAllocateCb</b> for this type of memory. 
 
 System and video memory allocations in which the user-mode display driver can participate in the creation. 
 
-When the driver attempts to create multiple allocations, the driver can associate all of the allocations with a parent resource (for example, when creating a flipping chain in which each backbuffer is an individual allocation). The driver can perform such an association by setting the <b>hResource</b> member of the <a href="display.d3dddicb_allocate">D3DDDICB_ALLOCATE</a> structure that is pointed to by <i>pData</i> to the value that was passed to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>, <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a>, or <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a> function. In response, the Direct3D runtime returns a kernel-mode resource handle (which is of the D3DKMT_HANDLE data type) in the <b>hKMResource</b> member of D3DDDICB_ALLOCATE. The user-mode display driver can subsequently insert this kernel-mode resource handle in the command stream for use by the display miniport driver. 
+When the driver attempts to create multiple allocations, the driver can associate all of the allocations with a parent resource (for example, when creating a flipping chain in which each backbuffer is an individual allocation). The driver can perform such an association by setting the <b>hResource</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_allocate.md">D3DDDICB_ALLOCATE</a> structure that is pointed to by <i>pData</i> to the value that was passed to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>, <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a>, or <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a> function. In response, the Direct3D runtime returns a kernel-mode resource handle (which is of the D3DKMT_HANDLE data type) in the <b>hKMResource</b> member of D3DDDICB_ALLOCATE. The user-mode display driver can subsequently insert this kernel-mode resource handle in the command stream for use by the display miniport driver. 
 
 The display miniport driver can call the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_gethandledata.md">DxgkCbGetHandleData</a> function on this kernel-mode resource handle (typically within its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a> function) to obtain private data that is associated with the resource, or the display miniport driver can call the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_enumhandlechildren.md">DxgkCbEnumHandleChildren</a> function to obtain all of the allocations that are associated with the resource. The display miniport driver can also call the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_gethandleparent.md">DxgkCbGetHandleParent</a> function to obtain the parent kernel-mode resource handle from a child allocation handle. 
 
@@ -175,13 +176,13 @@ Header
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createresource.md">CreateResource(D3D11)</a>
 </dt>
 <dt>
-<a href="display.d3dddicb_allocate">D3DDDICB_ALLOCATE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_allocate.md">D3DDDICB_ALLOCATE</a>
 </dt>
 <dt>
-<a href="display.d3dddi_allocationinfo">D3DDDI_ALLOCATIONINFO</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationinfo.md">D3DDDI_ALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="display.d3dddi_devicecallbacks">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_enumhandlechildren.md">DxgkCbEnumHandleChildren</a>
@@ -197,5 +198,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_ALLOCATECB callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_ALLOCATECB callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHXDDI._BTHX_HCI_READ_WRITE_CONTEXT
+UID: NS:bthxddi._BTHX_HCI_READ_WRITE_CONTEXT
 title: _BTHX_HCI_READ_WRITE_CONTEXT
 author: windows-driver-content
 description: The BTHX_HCI_READ_WRITE_CONTEXT structure is used as an input/output structure for the IOCTL_BTHX_READ_HCI and IOCTL_BTHX_WRITE_HCI IOCTLs.
@@ -7,8 +7,8 @@ old-location: bltooth\bthx_hci_read_write_context.htm
 old-project: bltooth
 ms.assetid: EC31A704-A264-4A77-B979-BFA59B42BA94
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT, PBTHX_HCI_READ_WRITE_CONTEXT
+ms.date: 12/21/2017
+ms.keywords: _BTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: BTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT
 ---
 
 # _BTHX_HCI_READ_WRITE_CONTEXT structure

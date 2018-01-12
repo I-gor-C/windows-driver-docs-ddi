@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDPAR._PAR_DEVICE_ID_SIZE_INFORMATION
+UID: NS:ntddpar._PAR_DEVICE_ID_SIZE_INFORMATION
 title: _PAR_DEVICE_ID_SIZE_INFORMATION
 author: windows-driver-content
 description: The PAR_DEVICE_ID_SIZE_INFORMATION structure specifies the size, in bytes, of a buffer that can hold the IEEE 1284 device ID of a parallel device and a NULL terminator.
@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: b48624cd-e8fb-4152-8e34-9cb1e542f62b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PAR_DEVICE_ID_SIZE_INFORMATION, PAR_DEVICE_ID_SIZE_INFORMATION, *PPAR_DEVICE_ID_SIZE_INFORMATION, PPAR_DEVICE_ID_SIZE_INFORMATION
+ms.keywords: _PAR_DEVICE_ID_SIZE_INFORMATION, *PPAR_DEVICE_ID_SIZE_INFORMATION, PAR_DEVICE_ID_SIZE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPAR_DEVICE_ID_SIZE_INFORMATION, PAR_DEVICE_ID_SIZE_INFORMATION
 ---
 
 # _PAR_DEVICE_ID_SIZE_INFORMATION structure

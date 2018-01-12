@@ -1,14 +1,14 @@
 ---
-UID: NC.wsk.PFN_WSK_CONNECT_EX
+UID: NC:wsk.PFN_WSK_CONNECT_EX
 title: PFN_WSK_CONNECT_EX
 author: windows-driver-content
 description: The WskConnectEx function connects a connection-oriented or stream socket to a remote transport address.WskConnectEx is similar to WskConnect except that it can also optionally send a buffer of data during or after connection synchronization.
 old-location: netvista\wskconnectex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1BC518E9-747C-4406-8A2A-40A3BCB0A3AA
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/8/2018
+ms.keywords: _WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -68,20 +69,20 @@ NTSTATUS WINAPI WskConnectEx(
 ### -param Socket [in]
 
 A pointer to a 
-     <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
+     <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being connected to a remote transport address.
 
 
 ### -param RemoteAddress [in]
 
 A pointer to a structure that specifies the remote transport address to which to connect the
-     socket. This pointer must be a pointer to the specific <a href="netvista.sockaddr">SOCKADDR</a> structure type that corresponds to the
+     socket. This pointer must be a pointer to the specific <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a> structure type that corresponds to the
      address family that the WSK application specified when it created the socket.
 
 
 ### -param Buffer [in, optional]
 
-A pointer to a <a href="netvista.wsk_buf">WSK_BUF</a> structure, which contains the data to send during or after connection synchronization. The maximum allowed size in bytes is 65,535.
+A pointer to a <a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a> structure, which contains the data to send during or after connection synchronization. The maximum allowed size in bytes is 65,535.
 
 
 ### -param Flags 
@@ -147,9 +148,9 @@ A WSK application can call the
 
 For stream sockets, once <b>WskConnectEx</b> is successfully called on a stream socket, the socket is committed to a connection-oriented flow and may no longer call listening socket functions.
 
-If the <i>Buffer</i> parameter is used, the caller can free the MDL in its <a href="netvista.wsk_buf">WSK_BUF</a> structure as soon as the connect request is complete.
+If the <i>Buffer</i> parameter is used, the caller can free the MDL in its <a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a> structure as soon as the connect request is complete.
 
-Before calling <b>WskConnectEx</b> with a provided send buffer, if the WSK application sets the <b>TCP_FASTOPEN</b> option on a WSK socket via the <a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a> function the system will optionally send some or all of the data in a SYN packet. For more information, see the <b>TCP Fastopen</b> option in <a href="winsock.ipproto_tcp_socket_options">IPPROTO_TCP Socket Options</a>.
+Before calling <b>WskConnectEx</b> with a provided send buffer, if the WSK application sets the <b>TCP_FASTOPEN</b> option on a WSK socket via the <a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a> function the system will optionally send some or all of the data in a SYN packet. For more information, see the <b>TCP Fastopen</b> option in <a href="https://msdn.microsoft.com/2a10498d-0a0b-4a2d-941e-9aa45a1a4428">IPPROTO_TCP Socket Options</a>.
 
 
 ## -requirements
@@ -222,23 +223,23 @@ IRQL
 <a href="..\wsk\nc-wsk-pfn_wsk_disconnect_event.md">WskDisconnectEvent</a>
 </dt>
 <dt>
-<a href="netvista.sockaddr">SOCKADDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_connection_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_connection_dispatch.md">
    WSK_PROVIDER_CONNECTION_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_stream_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">
    WSK_PROVIDER_STREAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_socket">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PFN_WSK_CONNECT_EX callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CONNECT_EX callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

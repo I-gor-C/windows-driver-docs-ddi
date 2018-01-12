@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsAllocateNetBufferAndNetBufferList0
+UID: NF:fwpsk.FwpsAllocateNetBufferAndNetBufferList0
 title: FwpsAllocateNetBufferAndNetBufferList0 function
 author: windows-driver-content
 description: The FwpsAllocateNetBufferAndNetBufferList0 function allocates a new NET_BUFFER_LIST structure.Note  FwpsAllocateNetBufferAndNetBufferList0 is a specific version of FwpsAllocateNetBufferAndNetBufferList.
 old-location: netvista\fwpsallocatenetbufferandnetbufferlist0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d7f2d3c0-f2c9-4624-b3e1-9fbbf64c7186
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpsAllocateNetBufferAndNetBufferList0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsAllocateNetBufferAndNetBufferList0 function
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 The 
   <b>FwpsAllocateNetBufferAndNetBufferList0</b> function allocates a new 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 
 
@@ -64,15 +65,15 @@ NTSTATUS NTAPI FwpsAllocateNetBufferAndNetBufferList0(
 ### -param poolHandle [in]
 
 A 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> pool handle that was
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> pool handle that was
      obtained from a previous call to the 
-     <a href="netvista.ndisallocatenetbufferlistpool">NdisAllocateNetBufferListPool</a> function.
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">NdisAllocateNetBufferListPool</a> function.
 
 
 ### -param contextSize [in]
 
 The size, in bytes, of used data space in the 
-     <a href="netvista.net_buffer_list_context">NET_BUFFER_LIST_CONTEXT</a> structure
+     <a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a> structure
      to reserve for the callout driver. The value of this parameter must be a multiple of the value defined
      by <b>MEMORY_ALLOCATION_ALIGNMENT</b>.
 
@@ -109,7 +110,7 @@ The length, in bytes, of the
 ### -param netBufferList [out]
 
 A pointer to a variable that receives a pointer to the new 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 
 ## -returns
@@ -119,7 +120,7 @@ The
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
 </dl>The new 
-       <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure was
+       <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure was
        successfully allocated.
 <dl>
 <dt><b>Other status codes</b></dt>
@@ -131,16 +132,16 @@ The
 ## -remarks
 A callout driver calls the 
     <b>FwpsAllocateNetBufferAndNetBufferList0</b> function to allocate a new 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 This function is a wrapper around the 
-    <a href="netvista.ndisallocatenetbufferandnetbufferlist">
+    <a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
     NdisAllocateNetBufferAndNetBufferList</a> function, but it is specialized for use by WFP 
-    <a href="netvista.packet_injection_functions">packet injection functions</a>.
+    <a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">packet injection functions</a>.
 
-After the data described by the new <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure has been successfully injected into the
+After the data described by the new <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure has been successfully injected into the
     network stack, the callout driver frees the new <b>NET_BUFFER_LIST</b> structure by calling the 
-    <a href="netvista.fwpsfreenetbufferlist0">
+    <a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">
     FwpsFreeNetBufferList0</a> function.
 
 
@@ -204,29 +205,29 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwpsfreenetbufferlist0">FwpsFreeNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsfreenetbufferlist0.md">FwpsFreeNetBufferList0</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatenetbufferandnetbufferlist">
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
    NdisAllocateNetBufferAndNetBufferList</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatenetbufferlistpool">
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
    NdisAllocateNetBufferListPool</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list_context">NET_BUFFER_LIST_CONTEXT</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 <dt>
-<a href="netvista.packet_injection_functions">Packet Injection Functions</a>
+<a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">Packet Injection Functions</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsAllocateNetBufferAndNetBufferList0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAllocateNetBufferAndNetBufferList0 function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

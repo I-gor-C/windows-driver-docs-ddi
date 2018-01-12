@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfchildlist.WdfChildListUpdateAllChildDescriptionsAsPresent
+UID: NF:wdfchildlist.WdfChildListUpdateAllChildDescriptionsAsPresent
 title: WdfChildListUpdateAllChildDescriptionsAsPresent function
 author: windows-driver-content
 description: The WdfChildListUpdateAllChildDescriptionsAsPresent method informs the framework that all of the child devices in a specified child list are plugged in and available.
@@ -7,7 +7,7 @@ old-location: wdf\wdfchildlistupdateallchilddescriptionsaspresent.htm
 old-project: wdf
 ms.assetid: 598d2b4f-9b49-480a-9cf8-25661c24483f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfChildListUpdateAllChildDescriptionsAsPresent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WDF_RETRIEVE_CHILD_FLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -71,7 +72,7 @@ A system bug check occurs if the driver supplies an invalid object handle.
 ## -remarks
 The <b>WdfChildListUpdateAllChildDescriptionsAsPresent</b> method is available in version 1.0 and later versions of KMDF.
 
-For more information about child lists, see <a href="wdf.dynamic_enumeration">Dynamic Enumeration</a>.
+For more information about child lists, see <a href="https://msdn.microsoft.com/6e46b456-7d2d-4c6e-8692-7f310366387d">Dynamic Enumeration</a>.
 
 The following code example informs the framework that all of the devices that a device list represents are plugged in and available.
 
@@ -117,7 +118,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -137,7 +138,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>

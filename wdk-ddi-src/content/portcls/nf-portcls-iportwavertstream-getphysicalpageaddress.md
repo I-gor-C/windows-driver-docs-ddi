@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWaveRTStream.GetPhysicalPageAddress
+UID: NF:portcls.IPortWaveRTStream.GetPhysicalPageAddress
 title: IPortWaveRTStream::GetPhysicalPageAddress method
 author: windows-driver-content
 description: The GetPhysicalPageAddress method returns the physical address for a page within a memory descriptor list (MDL).
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWaveRTStream::GetPhysicalPageAddress method
@@ -38,7 +39,7 @@ req.irql: Passive level
 
 
 ## -description
-The <code>GetPhysicalPageAddress</code> method returns the physical address for a page within a memory descriptor list (<a href="kernel.mdl">MDL</a>).
+The <code>GetPhysicalPageAddress</code> method returns the physical address for a page within a memory descriptor list (<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>).
 
 
 
@@ -69,9 +70,9 @@ The <code>GetPhysicalPageAddress</code> method returns the physical address for 
 
 
 ## -remarks
-The miniport driver calls this method to determine the physical memory address for pages within an MDL that was previously allocated by calling either <a href="audio.iportwavertstream_allocatepagesformdl">IPortWaveRTStream::AllocatePagesForMdl</a> or <b>IPortWaveRTStream::AllocateContiguousPagesForMdl</b>.
+The miniport driver calls this method to determine the physical memory address for pages within an MDL that was previously allocated by calling either <a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a> or <b>IPortWaveRTStream::AllocateContiguousPagesForMdl</b>.
 
-The miniport typically calls this for each page in the MDL in order to program the physical address into the DMA.  The <i>Index</i> parameter is used to select the desired page, and can range from zero to the count returned by <a href="audio.iportwavertstream_getphysicalpagescount">GetPhysicalPagesCount</a>.
+The miniport typically calls this for each page in the MDL in order to program the physical address into the DMA.  The <i>Index</i> parameter is used to select the desired page, and can range from zero to the count returned by <a href="https://msdn.microsoft.com/8126af29-a7ee-4ab7-8902-45b4baf33b9e">GetPhysicalPagesCount</a>.
 
 
 ## -requirements
@@ -126,13 +127,13 @@ Passive level
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_allocatepagesformdl">IPortWaveRTStream::AllocatePagesForMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_allocatecontiguouspagesformdl">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536924">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_getphysicalpagescount">IPortWaveRTStream::GetPhysicalPagesCount </a>
+<a href="https://msdn.microsoft.com/8126af29-a7ee-4ab7-8902-45b4baf33b9e">IPortWaveRTStream::GetPhysicalPagesCount </a>
 </dt>
 </dl>
  

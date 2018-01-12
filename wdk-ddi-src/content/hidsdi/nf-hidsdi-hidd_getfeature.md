@@ -1,5 +1,5 @@
 ---
-UID: NF.hidsdi.HidD_GetFeature
+UID: NF:hidsdi.HidD_GetFeature
 title: HidD_GetFeature function
 author: windows-driver-content
 description: The HidD_GetFeature routine returns a feature report from a specified top-level collection.
@@ -7,7 +7,7 @@ old-location: hid\hidd_getfeature.htm
 old-project: hid
 ms.assetid: e6a01367-981a-4b44-97a8-4cb37f9753fc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidD_GetFeature
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hid.lib
 req.dll: Hid.dll
 req.irql: 
+req.typenames: *PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION
 ---
 
 # HidD_GetFeature function
@@ -163,13 +164,13 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="hid.hidd_setfeature">HidD_SetFeature</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_setfeature.md">HidD_SetFeature</a>
 </dt>
 <dt>
-<a href="hid.hidd_getinputreport">HidD_GetInputReport</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_getinputreport.md">HidD_GetInputReport</a>
 </dt>
 <dt>
-<a href="hid.hidd_setoutputreport">HidD_SetOutputReport</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_setoutputreport.md">HidD_SetOutputReport</a>
 </dt>
 <dt>
 <a href="..\hidclass\ni-hidclass-ioctl_hid_get_feature.md">IOCTL_HID_GET_FEATURE</a>
@@ -188,5 +189,5 @@ DLL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidD_GetFeature routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidD_GetFeature routine%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

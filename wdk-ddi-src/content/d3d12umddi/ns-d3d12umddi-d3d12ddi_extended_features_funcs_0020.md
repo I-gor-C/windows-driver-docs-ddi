@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_EXTENDED_FEATURES_FUNCS_0020
+UID: NS:d3d12umddi.D3D12DDI_EXTENDED_FEATURES_FUNCS_0020
 title: D3D12DDI_EXTENDED_FEATURES_FUNCS_0020
 author: windows-driver-content
 description: This structure contains device functions for extended features in video.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_extended_features_funcs_0020.htm
 old-project: display
 ms.assetid: 36AAD6F2-3220-4F9A-AA10-BA8D87948D09
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_EXTENDED_FEATURES_FUNCS_0020, D3D12DDI_EXTENDED_FEATURES_FUNCS_0020
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_EXTENDED_FEATURES_FUNCS_0020
 ---
 
 # D3D12DDI_EXTENDED_FEATURES_FUNCS_0020 structure

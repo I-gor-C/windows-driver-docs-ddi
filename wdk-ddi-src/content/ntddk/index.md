@@ -1,14 +1,14 @@
 ---
-UID: NA:
+UID: NA:ntddk
 ---
 
 # Ntddk.h header
 
 ## -description
 
-This header is used by Installable file system, Windows kernel, Windows Hardware Error Architecture (WHEA), PCI, Storage, Driver test tools. For more information, see
-- [Installable file system](../_ifsk/index.md)
+This header is used by Windows kernel, Installable file system, Windows Hardware Error Architecture (WHEA), PCI, Storage, Driver test tools. For more information, see
 - [Windows kernel](../_kernel/index.md)
+- [Installable file system](../_ifsk/index.md)
 - [Windows Hardware Error Architecture (WHEA)](../_whea/index.md)
 - [PCI](../_PCI/index.md)
 - [Storage](../_storage/index.md)
@@ -92,9 +92,6 @@ Ntddk.h contain these programming interfaces:
 | [KeExpandKernelStackAndCallout function](nf-ntddk-keexpandkernelstackandcallout.md) | The KeExpandKernelStackAndCallout routine calls a routine with a guaranteed amount of stack space. |
 | [KeGetCurrentNodeNumber function](nf-ntddk-kegetcurrentnodenumber.md) | The KeGetCurrentNodeNumber routine gets the NUMA node number for the logical processor that the caller is running on. |
 | [KeGetCurrentProcessorNumber function](nf-ntddk-kegetcurrentprocessornumber.md) | The KeGetCurrentProcessorNumber routine returns the system-assigned number of the current processor on which the caller is running. |
-| [KeGetCurrentProcessorNumber function](nf-ntddk-kegetcurrentprocessornumber~r1.md) | The KeGetCurrentProcessorNumber routine returns the system-assigned number of the current processor on which the caller is running. |
-| [KeGetCurrentProcessorNumber function](nf-ntddk-kegetcurrentprocessornumber~r2.md) | The KeGetCurrentProcessorNumber routine returns the system-assigned number of the current processor on which the caller is running. |
-| [KeGetCurrentProcessorNumber function](nf-ntddk-kegetcurrentprocessornumber~r3.md) | The KeGetCurrentProcessorNumber routine returns the system-assigned number of the current processor on which the caller is running. |
 | [KeGetCurrentProcessorNumberEx function](nf-ntddk-kegetcurrentprocessornumberex.md) | The KeGetCurrentProcessorNumberEx routine gets the processor number of the logical processor that the caller is running on. |
 | [KeInvalidateAllCaches function](nf-ntddk-keinvalidateallcaches.md) | The KeInvalidateAllCaches routine flushes all processor caches. |
 | [KeLeaveCriticalRegion function](nf-ntddk-keleavecriticalregion.md) | The KeLeaveCriticalRegion routine reenables the delivery of normal kernel-mode APCs that were disabled by a preceding call to KeEnterCriticalRegion. |
@@ -111,7 +108,6 @@ Ntddk.h contain these programming interfaces:
 | [KeQueryNodeActiveAffinity function](nf-ntddk-kequerynodeactiveaffinity.md) | The KeQueryNodeActiveAffinity routine gets the current processor affinity of a specified node in a multiprocessor system that has a non-uniform memory access (NUMA) architecture. |
 | [KeQueryNodeMaximumProcessorCount function](nf-ntddk-kequerynodemaximumprocessorcount.md) | The KeQueryNodeMaximumProcessorCount routine returns the maximum number of logical processors that a specified node in a non-uniform memory access (NUMA) multiprocessor system can contain. |
 | [KeQueryTickCount function](nf-ntddk-kequerytickcount.md) | The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted. |
-| [KeQueryTickCount function](nf-ntddk-kequerytickcount~r1.md) | The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted. |
 | [KeSetBasePriorityThread function](nf-ntddk-kesetbaseprioritythread.md) | The KeSetBasePriorityThread routine sets the run-time priority, relative to the current process, for a given thread. |
 | [KeSetHardwareCounterConfiguration function](nf-ntddk-kesethardwarecounterconfiguration.md) | The KeSetHardwareCounterConfiguration routine specifies a list of hardware counters to use for thread profiling. |
 | [KeSetImportanceDpc function](nf-ntddk-kesetimportancedpc.md) | The KeSetImportanceDpc routine specifies how soon the DPC routine is run. |
@@ -249,7 +245,6 @@ Ntddk.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [DRIVER_REINITIALIZE callback](nc-ntddk-driver_reinitialize.md) | The Reinitialize routine continues driver and device initialization after the driver's DriverEntry routine returns. |
-| [EXPAND_STACK_CALLOUT callback](nc-ntddk-expand_stack_callout.md) | The ExpandedStackCall routine executes with a guaranteed stack size. |
 | [PCREATE_PROCESS_NOTIFY_ROUTINE callback](nc-ntddk-pcreate_process_notify_routine.md) | Process-creation callback implemented by a driver to track the system-wide creation and deletion of processes against the driver's internal state. |
 | [PCREATE_PROCESS_NOTIFY_ROUTINE_EX callback](nc-ntddk-pcreate_process_notify_routine_ex.md) | A callback routine implemented by a driver to notify the caller when a process is created or exits. |
 | [PCREATE_THREAD_NOTIFY_ROUTINE callback](nc-ntddk-pcreate_thread_notify_routine.md) | A callback routine implemented by a driver to notify the caller when a thread is created or deleted. |
@@ -269,7 +264,6 @@ Ntddk.h contain these programming interfaces:
 | [PSHED_PI_RETRIEVE_ERROR_INFO callback](nc-ntddk-pshed_pi_retrieve_error_info.md) | A PSHED plug-in's RetrieveErrorInfo callback function retrieves platform-specific error information about a hardware error that has occurred. |
 | [PSHED_PI_SET_ERROR_SOURCE_INFO callback](nc-ntddk-pshed_pi_set_error_source_info.md) | A PSHED plug-in's SetErrorSourceInfo callback function configures an error source. |
 | [PSHED_PI_WRITE_ERROR_RECORD callback](nc-ntddk-pshed_pi_write_error_record.md) | A PSHED plug-in's WriteErrorRecord callback function writes an error record to the system's persistent data storage. |
-| [RTL_RUN_ONCE_INIT_FN callback](nc-ntddk-rtl_run_once_init_fn.md) | The RunOnceInitialization routine performs a one-time initialization operation. |
 | [SILO_CONTEXT_CLEANUP_CALLBACK callback](nc-ntddk-silo_context_cleanup_callback.md) | This callback is invoked when the context object reaches a reference count of zero. |
 | [SILO_MONITOR_CREATE_CALLBACK callback](nc-ntddk-silo_monitor_create_callback.md) | This is callback is invoked when a new silo is created. |
 | [SILO_MONITOR_TERMINATE_CALLBACK callback](nc-ntddk-silo_monitor_terminate_callback.md) | This callback is invoked when a silo is terminated. |
@@ -333,9 +327,7 @@ Ntddk.h contain these programming interfaces:
 | [_PROCESS_READWRITEVM_LOGGING_INFORMATION structure](ns-ntddk-_process_readwritevm_logging_information.md) | Stores options for read/write access for telemetry per process. |
 | [_PS_CREATE_NOTIFY_INFO structure](ns-ntddk-_ps_create_notify_info.md) | The PS_CREATE_NOTIFY_INFO structure provides information about a newly created process. |
 | [_RTL_AVL_TABLE structure](ns-ntddk-_rtl_avl_table.md) | The RTL_AVL_TABLE structure contains file system-specific data for an Adelson-Velsky/Landis (AVL) tree. |
-| [_RTL_AVL_TABLE structure](ns-ntddk-_rtl_avl_table~r1.md) | The RTL_AVL_TABLE structure contains file system-specific data for an Adelson-Velsky/Landis (AVL) tree. |
 | [_RTL_GENERIC_TABLE structure](ns-ntddk-_rtl_generic_table.md) | The RTL_GENERIC_TABLE structure contains file system-specific data for a splay tree. |
-| [_RTL_GENERIC_TABLE structure](ns-ntddk-_rtl_generic_table~r1.md) | The RTL_GENERIC_TABLE structure contains file system-specific data for a splay tree. |
 | [_RTL_SPLAY_LINKS structure](ns-ntddk-_rtl_splay_links.md) | The RTL_SPLAY_LINKS structure is an opaque structure and is used by the system to represent a splay link tree node. |
 | [_SILO_MONITOR_REGISTRATION structure](ns-ntddk-_silo_monitor_registration.md) | This structure specifies a server silo monitor that can receive notifications about server silo events. |
 | [_SOC_SUBSYSTEM_FAILURE_DETAILS structure](ns-ntddk-_soc_subsystem_failure_details.md) | The SOC_SUBSYSTEM_FAILURE_DETAILS structure holds information related to a System on a Chip (SoC) bug code. |
@@ -346,22 +338,18 @@ Ntddk.h contain these programming interfaces:
 | [_WHEA_ERROR_INJECTION_CAPABILITIES structure](ns-ntddk-_whea_error_injection_capabilities.md) | The WHEA_ERROR_INJECTION_CAPABILITIES union describes the types of hardware errors that can be injected into a hardware platform. |
 | [_WHEA_ERROR_PACKET_FLAGS structure](ns-ntddk-_whea_error_packet_flags.md) | The WHEA_ERROR_PACKET_FLAGS union defines the error condition reported through a WHEA_ERROR_PACKET structure. |
 | [_WHEA_ERROR_PACKET_V1 structure](ns-ntddk-_whea_error_packet_v1.md) | The WHEA_ERROR_PACKET_V1 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V1 structure is supported in Windows Server 2008 and Windows Vista SP1. |
-| [_WHEA_ERROR_PACKET_V1 structure](ns-ntddk-_whea_error_packet_v1~r1.md) | The WHEA_ERROR_PACKET_V1 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V1 structure is supported in Windows Server 2008 and Windows Vista SP1. |
 | [_WHEA_ERROR_PACKET_V2 structure](ns-ntddk-_whea_error_packet_v2.md) | The WHEA_ERROR_PACKET_V2 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V2 structure is supported in Windows 7 and later versions of Windows. |
-| [_WHEA_ERROR_PACKET_V2 structure](ns-ntddk-_whea_error_packet_v2~r1.md) | The WHEA_ERROR_PACKET_V2 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V2 structure is supported in Windows 7 and later versions of Windows. |
-| [_WHEA_ERROR_RECORD structure](ns-ntddk-_whea_error_record~r2.md) | The WHEA_ERROR_RECORD structure describes an error record that contains error information about a hardware error condition that occurred. |
+| [_WHEA_ERROR_RECORD structure](ns-ntddk-_whea_error_record.md) | The WHEA_ERROR_RECORD structure describes an error record that contains error information about a hardware error condition that occurred. |
 | [_WHEA_ERROR_RECORD_HEADER structure](ns-ntddk-_whea_error_record_header.md) | The WHEA_ERROR_RECORD_HEADER structure describes general information about a hardware error condition. |
 | [_WHEA_ERROR_RECORD_HEADER_VALIDBITS structure](ns-ntddk-_whea_error_record_header_validbits.md) | The WHEA_ERROR_RECORD_HEADER_VALIDBITS union describes which members of a WHEA_ERROR_RECORD_HEADER structure contain valid data. |
 | [_WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure](ns-ntddk-_whea_error_record_section_descriptor.md) | The WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure describes a section of error information that is part of an error record. |
 | [_WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS structure](ns-ntddk-_whea_error_record_section_descriptor_validbits.md) | The WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS union describes which members of a WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure contain valid data. |
 | [_WHEA_ERROR_SOURCE_DESCRIPTOR structure](ns-ntddk-_whea_error_source_descriptor.md) | The WHEA_ERROR_SOURCE_DESCRIPTOR structure describes an error source. |
-| [_WHEA_ERROR_SOURCE_DESCRIPTOR structure](ns-ntddk-_whea_error_source_descriptor~r1.md) | The WHEA_ERROR_SOURCE_DESCRIPTOR structure describes an error source. |
 | [_WHEA_ERROR_STATUS structure](ns-ntddk-_whea_error_status.md) | The WHEA_ERROR_STATUS union describes generic error codes that are abstracted from the data contained in implementation-specific error registers. |
 | [_WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure](ns-ntddk-_whea_firmware_error_record_reference.md) | The WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure describes a reference to a firmware error record that is specific to the Itanium processor architecture. |
 | [_WHEA_GENERIC_ERROR structure](ns-ntddk-_whea_generic_error.md) | The WHEA_GENERIC_ERROR structure describes error status data for a generic error source. |
 | [_WHEA_GENERIC_ERROR_BLOCKSTATUS structure](ns-ntddk-_whea_generic_error_blockstatus.md) | The WHEA_GENERIC_ERROR_BLOCKSTATUS union indicates what kind of error data is reported in a generic error status block. |
 | [_WHEA_GENERIC_ERROR_DATA_ENTRY_V2 structure](ns-ntddk-_whea_generic_error_data_entry_v2.md) | The WHEA_GENERIC_ERROR_DATA_ENTRY structure describes an error data section in a generic error status block. |
-| [_WHEA_GENERIC_ERROR_DATA_ENTRY_V2 structure](ns-ntddk-_whea_generic_error_data_entry_v2~r1.md) | The WHEA_GENERIC_ERROR_DATA_ENTRY structure describes an error data section in a generic error status block. |
 | [_WHEA_GENERIC_ERROR_DESCRIPTOR structure](ns-ntddk-_whea_generic_error_descriptor.md) | The WHEA_GENERIC_ERROR_DESCRIPTOR structure describes a generic error source. |
 | [_WHEA_IPF_CMC_DESCRIPTOR structure](ns-ntddk-_whea_ipf_cmc_descriptor.md) | The WHEA_IPF_CMC_DESCRIPTOR structure describes a corrected machine check (CMC) error source for an Itanium processor. |
 | [_WHEA_IPF_CPE_DESCRIPTOR structure](ns-ntddk-_whea_ipf_cpe_descriptor.md) | The WHEA_IPF_CPE_DESCRIPTOR structure describes a corrected platform error (CPE) error source for an Itanium processor. |
@@ -429,7 +417,6 @@ Ntddk.h contain these programming interfaces:
 | [ExFreePool macro](nf-ntddk-exfreepool.md) | The ExFreePool routine deallocates a block of pool memory. |
 | [IoAssignArcName macro](nf-ntddk-ioassignarcname.md) | The IoAssignArcName routine creates a symbolic link between the ARC name of a physical device and the name of the corresponding device object when it has been created. |
 | [IoDeassignArcName macro](nf-ntddk-iodeassignarcname.md) | The IoDeassignArcName routine removes a symbolic link between the ARC name for a device and the named device object. |
-| [KeQueryTickCount macro](nf-ntddk-kequerytickcount~r2.md) | The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted. |
 | [RtlIsLeftChild macro](nf-ntddk-rtlisleftchild.md) | The RtlIsLeftChild routine determines whether a given splay link is the left child of a node in a splay link tree. |
 | [RtlIsRightChild macro](nf-ntddk-rtlisrightchild.md) | The RtlIsRightChild routine determines whether a given splay link is the right child of a node in a splay link tree. |
 | [RtlIsRoot macro](nf-ntddk-rtlisroot.md) | The RtlIsRoot routine determines whether the specified node is the root node of a splay link tree. |

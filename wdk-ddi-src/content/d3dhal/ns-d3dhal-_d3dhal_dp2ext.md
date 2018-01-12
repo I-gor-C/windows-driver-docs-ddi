@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DHAL._D3DHAL_DP2EXT
+UID: NS:d3dhal._D3DHAL_DP2EXT
 title: _D3DHAL_DP2EXT
 author: windows-driver-content
 description: The D3DHAL_DP2EXT structure's use has yet to be defined.
@@ -7,8 +7,8 @@ old-location: display\d3dhal_dp2ext.htm
 old-project: display
 ms.assetid: d7cec277-d1d3-4c0f-91ec-fd5e962b6e1c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DHAL_DP2EXT, D3DHAL_DP2EXT
+ms.date: 12/29/2017
+ms.keywords: _D3DHAL_DP2EXT, D3DHAL_DP2EXT, *LPD3DHAL_DP2EXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DHAL_DP2EXT
 ---
 
 # _D3DHAL_DP2EXT structure

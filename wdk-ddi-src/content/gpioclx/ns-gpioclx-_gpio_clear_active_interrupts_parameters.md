@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS
+UID: NS:gpioclx._GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS
 title: _GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS
 author: windows-driver-content
 description: The GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS structure describes a set of general-purpose I/O (GPIO) interrupt pins to clear.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PGPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS, GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS
 ---
 
 # _GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS structure

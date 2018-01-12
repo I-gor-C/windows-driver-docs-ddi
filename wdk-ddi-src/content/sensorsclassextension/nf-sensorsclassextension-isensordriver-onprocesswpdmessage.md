@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsclassextension.ISensorDriver.OnProcessWpdMessage
+UID: NF:sensorsclassextension.ISensorDriver.OnProcessWpdMessage
 title: ISensorDriver::OnProcessWpdMessage method
 author: windows-driver-content
 description: The ISensorDriver::OnProcessWpdMessage method handles Windows Portable Device (WPD) commands that the ISensorClassExtension::ProcessIoControl method does not handle internally.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <a href="sensors.isensordriver_onprocesswpdmessage">ISensorDriver::OnProcessWpdMessage</a> method handles Windows Portable Device (WPD) commands that the <a href="sensors.isensorclassextension_processiocontrol">ISensorClassExtension::ProcessIoControl</a> method does not handle internally. 
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545644">ISensorDriver::OnProcessWpdMessage</a> method handles Windows Portable Device (WPD) commands that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545536">ISensorClassExtension::ProcessIoControl</a> method does not handle internally. 
 
 
 

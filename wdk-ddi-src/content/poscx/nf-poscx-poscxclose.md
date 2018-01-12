@@ -1,5 +1,5 @@
 ---
-UID: NF.poscx.PosCxClose
+UID: NF:poscx.PosCxClose
 title: PosCxClose function
 author: windows-driver-content
 description: PosCxClose is called to delete an opened PosCx library instance. This function releases the device if the caller is the owner, and cancels pending requests. It should be called from the driver's EVT_WDF_FILE_CLOSE callback.
@@ -7,7 +7,7 @@ old-location: pos\poscxclose.htm
 old-project: pos
 ms.assetid: 90D097B9-EE7B-49FA-B0F7-6A255D140C06
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: PosCxClose
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POS_CX_EVENT_PRIORITY
 req.product: Windows 10 or later.
 ---
 

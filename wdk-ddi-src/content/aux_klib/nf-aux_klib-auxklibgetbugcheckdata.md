@@ -1,5 +1,5 @@
 ---
-UID: NF.aux_klib.AuxKlibGetBugCheckData
+UID: NF:aux_klib.AuxKlibGetBugCheckData
 title: AuxKlibGetBugCheckData function
 author: windows-driver-content
 description: The AuxKlibGetBugCheckData routine retrieves information about a bug check that has just occurred.
@@ -7,7 +7,7 @@ old-location: kernel\auxklibgetbugcheckdata.htm
 old-project: kernel
 ms.assetid: d41d0eba-14e3-48ff-874d-e52589cf716c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: AuxKlibGetBugCheckData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Aux_Klib.lib
 req.dll: 
 req.irql: 
+req.typenames: REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
 ---
 
 # AuxKlibGetBugCheckData function
@@ -55,7 +56,7 @@ NTSTATUS AuxKlibGetBugCheckData(
 
 ### -param BugCheckData [out]
 
-A pointer to a <a href="kernel.kbugcheck_data">KBUGCHECK_DATA</a> structure that contains information about the bug check. The <i>BugCheckData</i> size of this structure should be set equal to the size, in bytes, of the <b>KBUGCHECK_DATA</b> structure.
+A pointer to a <a href="..\aux_klib\ns-aux_klib-_kbugcheck_data.md">KBUGCHECK_DATA</a> structure that contains information about the bug check. The <i>BugCheckData</i> size of this structure should be set equal to the size, in bytes, of the <b>KBUGCHECK_DATA</b> structure.
 
 
 ## -returns
@@ -65,7 +66,7 @@ A pointer to a <a href="kernel.kbugcheck_data">KBUGCHECK_DATA</a> structure that
 ## -remarks
 The <b>AuxKlibGetBugCheckData</b> routine can be called only from a <a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a> routine.
 
-Drivers must call <a href="kernel.auxklibinitialize">AuxKlibInitialize</a> before calling <b>AuxKlibGetBugCheckData</b>.
+Drivers must call <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlibInitialize</a> before calling <b>AuxKlibGetBugCheckData</b>.
 
 
 ## -requirements
@@ -118,18 +119,18 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.auxklibinitialize">AuxKlibInitialize</a>
+<a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlibInitialize</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a>
 </dt>
 <dt>
-<a href="kernel.kbugcheck_data">KBUGCHECK_DATA</a>
+<a href="..\aux_klib\ns-aux_klib-_kbugcheck_data.md">KBUGCHECK_DATA</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20AuxKlibGetBugCheckData routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20AuxKlibGetBugCheckData routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

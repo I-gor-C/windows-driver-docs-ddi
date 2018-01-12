@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinGetAndGate
+UID: NF:ks.KsPinGetAndGate
 title: KsPinGetAndGate function
 author: windows-driver-content
 description: The KsPinGetAndGate function returns the processing control gate for Pin.
@@ -7,7 +7,7 @@ old-location: stream\kspingetandgate.htm
 old-project: stream
 ms.assetid: abd4da69-c0c3-442f-af58-e77362c637da
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinGetAndGate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: Any level
+req.typenames: 
 ---
 
 # KsPinGetAndGate function
@@ -55,11 +56,11 @@ PKSGATE KsPinGetAndGate(
 
 ### -param Pin [in]
 
-A pointer to the <a href="stream.kspin">KSPIN</a> for which to return the processing control gate.
+A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> for which to return the processing control gate.
 
 
 ## -returns
-Returns a pointer to the <a href="stream.ksgate">KSGATE</a> representing the processing control gate for <i>Pin</i>.
+Returns a pointer to the <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> representing the processing control gate for <i>Pin</i>.
 
 
 ## -remarks
@@ -126,15 +127,15 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksfiltergetandgate">KsFilterGetAndGate</a>
+<a href="..\ks\nf-ks-ksfiltergetandgate.md">KsFilterGetAndGate</a>
 </dt>
 <dt>
-<a href="stream.ksgate">KSGATE</a>
+<a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetAndGate function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetAndGate function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

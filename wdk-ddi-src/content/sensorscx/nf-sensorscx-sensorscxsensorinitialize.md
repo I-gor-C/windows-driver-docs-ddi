@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorscx.SensorsCxSensorInitialize
+UID: NF:sensorscx.SensorsCxSensorInitialize
 title: SensorsCxSensorInitialize function
 author: windows-driver-content
 description: This function sets the enumeration properties of a sensor.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ A reference to a sensor object.
 
 ### -param pSensorConfig [in]
 
-A list of enumeration properties. For more information, see <a href="sensors.sensor_config">SENSOR_CONFIG</a>.
+A list of enumeration properties. For more information, see <a href="..\sensorscx\ns-sensorscx-_sensor_config.md">SENSOR_CONFIG</a>.
 
 
 ## -returns
@@ -74,7 +75,7 @@ STATUS_SUCCESS is returned when the function completes successfully.
 
 STATUS_INVALID_PARAMETER is returned if any of the _In_ parameters are NULL or the <b>pSensorConfig-&gt;pEnumerationList-&gt;Count</b> variable is 0 or too big.
 
-STATUS_BUFFER_TOO_SMALL is returned if the <b>pSensorConfig</b> buffer is smaller than the size of the <a href="sensors.sensor_config">SENSOR_CONFIG</a> structure.
+STATUS_BUFFER_TOO_SMALL is returned if the <b>pSensorConfig</b> buffer is smaller than the size of the <a href="..\sensorscx\ns-sensorscx-_sensor_config.md">SENSOR_CONFIG</a> structure.
 
 STATUS_NOT_FOUND is returned if there was an error constructing the controller object context from the <b>Sensor</b> object.
 

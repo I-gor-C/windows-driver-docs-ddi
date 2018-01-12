@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
+UID: NC:d3dumddi.PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
 title: PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
 author: windows-driver-content
 description: The QueryAuthenticatedChannel function queries an authenticated channel for capability and state information.
@@ -7,7 +7,7 @@ old-location: display\queryauthenticatedchannel.htm
 old-project: display
 ms.assetid: 13b65b5a-9512-4d67-b629-479bdd74674e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_QUERYAUTHENTICATEDCHANNEL callback
@@ -64,7 +65,7 @@ __checkReturn HRESULT APIENTRY QueryAuthenticatedChannel(
 
 ### -param pData [in, out]
 
- A pointer to a <a href="display.d3dddiarg_queryauthenticatedchannel">D3DDDIARG_QUERYAUTHENTICATEDCHANNEL</a> structure that describes authenticated-channel information to query. This structure contains an input buffer that describes the query and an output buffer to return the queried information. 
+ A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_queryauthenicatedchannel.md">D3DDDIARG_QUERYAUTHENTICATEDCHANNEL</a> structure that describes authenticated-channel information to query. This structure contains an input buffer that describes the query and an output buffer to return the queried information. 
 
 
 ## -returns
@@ -106,7 +107,7 @@ The driver returns a device identifier that the calling application can use to v
 
 The output buffer points to a D3DAUTHENTICATEDCHANNEL_QUERYDEVICEHANDLE_OUTPUT structure. 
 
-The driver returns the crypto session handle (the same handle that the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a> function returned in the <b>hCryptoSession</b> member of the <a href="display.d3dddiarg_createcryptosession">D3DDDIARG_CREATECRYPTOSESSION</a> structure) and the display device handle (the same handle that the driver's <i>QueryAuthenticatedChannel</i> function returned with the D3DAUTHENTICATEDQUERY_DEVICEHANDLE query) that are currently associated with the DirectX Video Acceleration (DirectX VA) decode device. The handle to the DirectX VA decode device is the same handle that the driver returned in response to the new DXVA2_DECODE_GET_DRIVER_HANDLE decode extension. For more information about DXVA2_DECODE_GET_DRIVER_HANDLE, see <a href="https://msdn.microsoft.com/2a3577f5-bc44-4e0d-a5fa-217dc6c6f5f3">Using Crypto Session with DirectX Video Accelerator 2.0 Decoder</a>.
+The driver returns the crypto session handle (the same handle that the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a> function returned in the <b>hCryptoSession</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createcryptosession.md">D3DDDIARG_CREATECRYPTOSESSION</a> structure) and the display device handle (the same handle that the driver's <i>QueryAuthenticatedChannel</i> function returned with the D3DAUTHENTICATEDQUERY_DEVICEHANDLE query) that are currently associated with the DirectX Video Acceleration (DirectX VA) decode device. The handle to the DirectX VA decode device is the same handle that the driver returned in response to the new DXVA2_DECODE_GET_DRIVER_HANDLE decode extension. For more information about DXVA2_DECODE_GET_DRIVER_HANDLE, see <a href="https://msdn.microsoft.com/2a3577f5-bc44-4e0d-a5fa-217dc6c6f5f3">Using Crypto Session with DirectX Video Accelerator 2.0 Decoder</a>.
 
 This query can be made for all channel types.
 
@@ -140,7 +141,7 @@ The driver uses the OPM interface to enable protections on an individual output.
 
 This query requests that the driver indicate the number of outputs on which the device presents its content. 
 
-The driver should fail if the crypto session handle that is specified (the same handle that the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a> function returned in the <b>hCryptoSession</b> member of the <a href="display.d3dddiarg_createcryptosession">D3DDDIARG_CREATECRYPTOSESSION</a> structure) is associated with a different display device than the one that is specified. 
+The driver should fail if the crypto session handle that is specified (the same handle that the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a> function returned in the <b>hCryptoSession</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createcryptosession.md">D3DDDIARG_CREATECRYPTOSESSION</a> structure) is associated with a different display device than the one that is specified. 
 
 The driver returns the number of output identifiers that is associated with the device and the crypto session. 
 
@@ -201,12 +202,12 @@ Header
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_configureauthenicatedchannel.md">ConfigureAuthenticatedChannel</a>
 </dt>
 <dt>
-<a href="display.d3dddiarg_queryauthenticatedchannel">D3DDDIARG_QUERYAUTHENTICATEDCHANNEL</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_queryauthenicatedchannel.md">D3DDDIARG_QUERYAUTHENTICATEDCHANNEL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_QUERYAUTHENTICATEDCHANNEL callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_QUERYAUTHENTICATEDCHANNEL callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

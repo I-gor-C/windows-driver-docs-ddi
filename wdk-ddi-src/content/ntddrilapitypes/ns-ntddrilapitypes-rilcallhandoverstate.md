@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLHANDOVERSTATE
+UID: NS:ntddrilapitypes.RILCALLHANDOVERSTATE
 title: RILCALLHANDOVERSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallhandoverstate.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1c9fb343-32f1-444e-9328-097da72cd006
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLHANDOVERSTATE, RILCALLHANDOVERSTATE, LPRILCALLHANDOVERSTATE, *LPRILCALLHANDOVERSTATE
+ms.date: 1/8/2018
+ms.keywords: RILCALLHANDOVERSTATE, *LPRILCALLHANDOVERSTATE, RILCALLHANDOVERSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILCALLHANDOVERSTATE, RILCALLHANDOVERSTATE
 ---
 
 # RILCALLHANDOVERSTATE structure

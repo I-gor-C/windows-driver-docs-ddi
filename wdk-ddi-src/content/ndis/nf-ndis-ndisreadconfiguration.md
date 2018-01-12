@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisReadConfiguration
+UID: NF:ndis.NdisReadConfiguration
 title: NdisReadConfiguration function
 author: windows-driver-content
 description: The NdisReadConfiguration function returns the value of a named entry of the specified type from the registry, given the handle to an open registry key.
 old-location: netvista\ndisreadconfiguration.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 74560229-9e97-40b9-961c-6bf726586e27
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisReadConfiguration
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisReadConfiguration function
@@ -41,7 +42,7 @@ req.irql: PASSIVE_LEVEL
 The 
   <b>NdisReadConfiguration</b> function returns
   the value of a named entry of the specified type from the registry, given the handle to an open registry
-  key. This function must be invoked serially with respect to itself and the <a href="netvista.ndiswriteconfiguration">NdisWriteConfiguration</a> function.
+  key. This function must be invoked serially with respect to itself and the <a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a> function.
 
 
 
@@ -110,7 +111,7 @@ The requested information could not be found under the opened registry key desig
 ### -param ParameterValue [out]
 
 A pointer to a memory location where NDIS supplies a pointer to an 
-     <a href="netvista.ndis_configuration_parameter">
+     <a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">
      NDIS_CONFIGURATION_PARAMETER</a> structure if the call to 
      <b>NdisReadConfiguration</b> is
      successful. NDIS allocates memory for the 
@@ -121,10 +122,10 @@ A pointer to a memory location where NDIS supplies a pointer to an
 ### -param ConfigurationHandle [in]
 
 The handle to a registry key that was returned by the 
-     <a href="netvista.ndisopenconfigurationex">NdisOpenConfigurationEx</a>, 
-     <a href="netvista.ndisopenconfigurationkeybyindex">
+     <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>, 
+     <a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyindex.md">
      NdisOpenConfigurationKeyByIndex</a>, or 
-     <a href="netvista.ndisopenconfigurationkeybyname">
+     <a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
      NdisOpenConfigurationKeyByName</a> function.
 
 
@@ -184,7 +185,7 @@ NdisVersion
 ### -param ParameterType [in]
 
 The type of the value entry that is specified as one of the 
-     <a href="netvista.ndis_parameter_type">NDIS_PARAMETER_TYPE</a> enumeration values.
+     <a href="..\ndis\ne-ndis-_ndis_parameter_type.md">NDIS_PARAMETER_TYPE</a> enumeration values.
      This parameter is ignored in Windows NT and later versions.
 
 
@@ -201,7 +202,7 @@ In the configuration registry of Windows 2000 and later versions, an NDIS
 Every NDIS driver can set up configuration information in the registry for itself using the 
     <b>AddReg</b> directive in its INF file. For example, a protocol driver might store its
     own name as an entry with a preformatted string value that can be passed in calls to the 
-    <a href="netvista.ndisregisterprotocoldriver">
+    <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
     NdisRegisterProtocolDriver</a> function. For more information, see 
     <a href="netvista.add_registry_sections_in_a_network_inf_file">Add-registry-sections in
     a Network INF File</a>.
@@ -216,10 +217,10 @@ Each miniport driver also has associated value entries in the registry. The valu
 NdisReadConfiguration buffers and copies the caller-supplied string at 
     <i>Keyword</i> and releases the storage it allocates for this copy before it returns control to the
     caller. The memory it allocates for the 
-    <a href="netvista.ndis_configuration_parameter">
+    <a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">
     NDIS_CONFIGURATION_PARAMETER</a> structure is freed when the driver releases the ConfigurationHandle
     with the 
-    <a href="netvista.ndiscloseconfiguration">NdisCloseConfiguration</a> function.
+    <a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a> function.
     The caller of 
     <b>NdisReadConfiguration</b> is responsible
     for releasing the buffered string at 
@@ -300,7 +301,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -308,61 +309,61 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.ansi_string">ANSI_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
 </dt>
 <dt>
-<a href="netvista.ndis_configuration_parameter">NDIS_CONFIGURATION_PARAMETER</a>
+<a href="..\ndis\ns-ndis-_ndis_configuration_parameter.md">NDIS_CONFIGURATION_PARAMETER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_parameter_type">NDIS_PARAMETER_TYPE</a>
+<a href="..\ndis\ne-ndis-_ndis_parameter_type.md">NDIS_PARAMETER_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.ndisansistringtounicodestring">
+<a href="..\ndis\nf-ndis-ndisansistringtounicodestring.md">
    NdisAnsiStringToUnicodeString</a>
 </dt>
 <dt>
-<a href="netvista.ndiscloseconfiguration">NdisCloseConfiguration</a>
+<a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreestring">NdisFreeString</a>
+<a href="..\ndis\nf-ndis-ndisfreestring.md">NdisFreeString</a>
 </dt>
 <dt>
-<a href="netvista.ndisinitansistring">NdisInitAnsiString</a>
+<a href="..\ndis\nf-ndis-ndisinitansistring.md">NdisInitAnsiString</a>
 </dt>
 <dt>
-<a href="netvista.ndisinitializestring">NdisInitializeString</a>
+<a href="..\ndis\nf-ndis-ndisinitializestring.md">NdisInitializeString</a>
 </dt>
 <dt>
-<a href="netvista.ndisinitunicodestring">NdisInitUnicodeString</a>
+<a href="..\ndis\nf-ndis-ndisinitunicodestring.md">NdisInitUnicodeString</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenconfigurationex">NdisOpenConfigurationEx</a>
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenconfigurationkeybyindex">
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyindex.md">
    NdisOpenConfigurationKeyByIndex</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenconfigurationkeybyname">
+<a href="..\ndis\nf-ndis-ndisopenconfigurationkeybyname.md">
    NdisOpenConfigurationKeyByName</a>
 </dt>
 <dt>
-<a href="netvista.ndisreadnetworkaddress">NdisReadNetworkAddress</a>
+<a href="..\ndis\nf-ndis-ndisreadnetworkaddress.md">NdisReadNetworkAddress</a>
 </dt>
 <dt>
-<a href="netvista.ndisunicodestringtoansistring">
+<a href="..\ndis\nf-ndis-ndisunicodestringtoansistring.md">
    NdisUnicodeStringToAnsiString</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteconfiguration">NdisWriteConfiguration</a>
+<a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisReadConfiguration function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReadConfiguration function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

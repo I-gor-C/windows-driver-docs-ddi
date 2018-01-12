@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_DESTROYHWCONTEXTCB
+UID: NC:d3dumddi.PFND3DDDI_DESTROYHWCONTEXTCB
 title: PFND3DDDI_DESTROYHWCONTEXTCB
 author: windows-driver-content
 description: A callback to destroy a hardware context.
@@ -7,7 +7,7 @@ old-location: display\pfnd3dddi_destroyhwcontextcb.htm
 old-project: display
 ms.assetid: CD3B8EE1-8B54-4F0A-B3C7-3B6F7D968497
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_DESTROYHWCONTEXTCB callback

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMCmCloseCallComplete
+UID: NF:ndis.NdisMCmCloseCallComplete
 title: NdisMCmCloseCallComplete macro
 author: windows-driver-content
 description: NdisMCmCloseCallComplete returns the final status of a client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to tear down a call.
 old-location: netvista\ndismcmclosecallcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 24477865-fb89-4078-99cb-1bf24249c7e2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMCmCloseCallComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMCmCloseCallComplete macro
@@ -66,7 +67,7 @@ Specifies the final status of the client's request that the MCM driver close the
 
 Specifies the handle to the VC for the call. This handle was supplied by NDIS when the VC was
      originally created, whether by the MCM driver with 
-     <a href="netvista.ndismcmcreatevc">NdisMCmCreateVc</a> or as an input parameter
+     <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a> or as an input parameter
      to its 
      <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
 
@@ -94,7 +95,7 @@ If it passes NDIS_STATUS_SUCCESS as the
     <i>NdisVcHandle</i> (and 
     <i>NdisPartyHandle</i>, if any) unusable for transfers over the network as soon as it calls 
     <b>NdisMCmCloseCallComplete</b>. If the MCM driver originally created the VC, it should call 
-    <a href="netvista.ndismcmdeletevc">NdisMCmDeleteVc</a> with the same 
+    <a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a> with the same 
     <i>NdisVcHandle</i> that it just passed to 
     <b>NdisMCmCloseCallComplete</b>. If the client created this VC, the MCM driver can expect a call to its 
     <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a> function with the
@@ -162,7 +163,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -170,19 +171,19 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmclosecallcomplete">NdisCmCloseCallComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmclosecallcomplete.md">NdisCmCloseCallComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmcreatevc">NdisMCmCreateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdeactivatevc">NdisMCmDeactivateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdeletevc">NdisMCmDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">ProtocolClCloseCallComplete</a>
@@ -195,5 +196,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMCmCloseCallComplete macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmCloseCallComplete macro%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

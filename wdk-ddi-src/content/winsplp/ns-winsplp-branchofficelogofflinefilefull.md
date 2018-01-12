@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP.BRANCHOFFICELOGOFFLINEFILEFULL
+UID: NS:winsplp.BranchOfficeLogOfflineFileFull
 title: BranchOfficeLogOfflineFileFull
 author: windows-driver-content
 description: Contains the necessary data for logging that the offline log archive on the current client overflowed at some point.
@@ -7,8 +7,8 @@ old-location: print\branchofficelogofflinefilefull.htm
 old-project: print
 ms.assetid: 41190CE8-8779-477C-BFB0-6410DF096EFD
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: BranchOfficeLogOfflineFileFull, *PBranchOfficeLogOfflineFileFull, PBranchOfficeLogOfflineFileFull, BranchOfficeLogOfflineFileFull
+ms.date: 1/8/2018
+ms.keywords: BranchOfficeLogOfflineFileFull, *PBranchOfficeLogOfflineFileFull, BranchOfficeLogOfflineFileFull
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBranchOfficeLogOfflineFileFull, BranchOfficeLogOfflineFileFull
 req.product: Windows 10 or later.
 ---
 

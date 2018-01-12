@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA._TAGKSTELEPHONY_CALLCONTROL
+UID: NS:ksmedia._tagKSTELEPHONY_CALLCONTROL
 title: _tagKSTELEPHONY_CALLCONTROL
 author: windows-driver-content
 description: The KSTELEPHONY_CALLCONTROL structure specifies the phone call type and control operation to use for the KSPROPERTY_TELEPHONY_CALLCONTROL property.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 44CA5D9D-EF6E-4681-93EB-B803638896F9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _tagKSTELEPHONY_CALLCONTROL, *PKSTELEPHONY_CALLCONTROL, KSTELEPHONY_CALLCONTROL, PKSTELEPHONY_CALLCONTROL
+ms.keywords: _tagKSTELEPHONY_CALLCONTROL, KSTELEPHONY_CALLCONTROL, *PKSTELEPHONY_CALLCONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSTELEPHONY_CALLCONTROL, *PKSTELEPHONY_CALLCONTROL
 ---
 
 # _tagKSTELEPHONY_CALLCONTROL structure

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PsGetCurrentServerSilo
+UID: NF:ntddk.PsGetCurrentServerSilo
 title: PsGetCurrentServerSilo function
 author: windows-driver-content
 description: This routine returns the effective server silo for the thread.
@@ -7,7 +7,7 @@ old-location: kernel\psgetcurrentserversilo.htm
 old-project: kernel
 ms.assetid: 4E30CD53-C078-40D7-BEF8-A39F57D71D42
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PsGetCurrentServerSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _IRQL_requires_max_(DISPATCH_LEVEL)
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PsGetCurrentServerSilo function

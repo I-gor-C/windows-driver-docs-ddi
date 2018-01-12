@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintCorePS2.GetOptions
+UID: NF:prcomoem.IPrintCorePS2.GetOptions
 title: IPrintCorePS2::GetOptions method
 author: windows-driver-content
 description: The IPrintCorePS2::GetOptions method retrieves the driver's current feature settings in the format of a list of feature/option keyword pairs.
@@ -7,7 +7,7 @@ old-location: print\iprintcoreps2_getoptions.htm
 old-project: print
 ms.assetid: 8f5df76b-57c9-4c5a-9ca2-f02c8d903a8b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintCorePS2, IPrintCorePS2::GetOptions, GetOptions
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ HRESULT GetOptions(
 
 ### -param pdevobj [in]
 
-Pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param dwFlags [in]
@@ -121,7 +122,7 @@ The <i>pdevobj</i> parameter pointed to an invalid driver context object.
 
 
 ## -remarks
-This method supports both <a href="wdkgloss.d#wdkgloss.document-sticky#wdkgloss.document-sticky"><i>document-sticky</i></a> and <a href="wdkgloss.p#wdkgloss.printer-sticky#wdkgloss.printer-sticky"><i>printer-sticky</i></a> features. It is supported only after the core driver finishes its <a href="display.drvenablepdev">DrvEnablePDEV</a> processing, which sets up all option settings. A call to <code>IPrintCorePS2::GetOptions</code> when it is not supported should cause it to return E_NOTIMPL. For example, when the core driver calls a render plug-in's <a href="print.iprintoemps_enablepdev">IPrintOemPS::EnablePDEV</a> method, the driver is still occupied with its <b>DrvEnablePDEV</b> processing, so if the plug-in calls <code>IPrintCorePS2::GetOptions</code> within the plug-in's <b>IPrintOemPS::DevMode</b> method, the plug-in receives the E_NOTIMPL return value. However, because the plug-in's <b>IPrintOemPS::EnablePDEV</b> method is called after the core driver finishes its <b>DrvEnablePDEV</b> processing, the plug-in is able to call <code>IPrintCorePS2::GetOptions</code> successfully within its <b>IPrintOemPS::EnablePDEV</b> method.
+This method supports both <a href="wdkgloss.d#wdkgloss.document-sticky#wdkgloss.document-sticky"><i>document-sticky</i></a> and <a href="wdkgloss.p#wdkgloss.printer-sticky#wdkgloss.printer-sticky"><i>printer-sticky</i></a> features. It is supported only after the core driver finishes its <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a> processing, which sets up all option settings. A call to <code>IPrintCorePS2::GetOptions</code> when it is not supported should cause it to return E_NOTIMPL. For example, when the core driver calls a render plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff553215">IPrintOemPS::EnablePDEV</a> method, the driver is still occupied with its <b>DrvEnablePDEV</b> processing, so if the plug-in calls <code>IPrintCorePS2::GetOptions</code> within the plug-in's <b>IPrintOemPS::DevMode</b> method, the plug-in receives the E_NOTIMPL return value. However, because the plug-in's <b>IPrintOemPS::EnablePDEV</b> method is called after the core driver finishes its <b>DrvEnablePDEV</b> processing, the plug-in is able to call <code>IPrintCorePS2::GetOptions</code> successfully within its <b>IPrintOemPS::EnablePDEV</b> method.
 
 If a requested feature keyword is not recognized, or the feature is recognized but there is currently no option selection for it, the feature is ignored and the feature/option keyword pair is not placed in the output buffer.
 
@@ -161,21 +162,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.devobj">DEVOBJ</a>
+<a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a>
 </dt>
 <dt>
-<a href="display.drvenablepdev">DrvEnablePDEV</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a>
 </dt>
 <dt>
-<a href="print.iprintoemps_devmode">IPrintOemPS::DevMode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553205">IPrintOemPS::DevMode</a>
 </dt>
 <dt>
-<a href="print.iprintoemps_enablepdev">IPrintOemPS::EnablePDEV</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553215">IPrintOemPS::EnablePDEV</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintCorePS2::GetOptions method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintCorePS2::GetOptions method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

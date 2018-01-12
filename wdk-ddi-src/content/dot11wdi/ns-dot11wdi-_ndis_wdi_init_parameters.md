@@ -1,14 +1,14 @@
 ---
-UID: NS.DOT11WDI._NDIS_WDI_INIT_PARAMETERS
+UID: NS:dot11wdi._NDIS_WDI_INIT_PARAMETERS
 title: _NDIS_WDI_INIT_PARAMETERS
 author: windows-driver-content
 description: The NDIS_WDI_INIT_PARAMETERS structure specifies the WDI functions provided by the operating system and called by the IHV WDI driver.
 old-location: netvista\ndis_wdi_init_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 871D266C-55DF-4113-9714-92AB129303E5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS, *PNDIS_WDI_INIT_PARAMETERS, PNDIS_WDI_INIT_PARAMETERS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_WDI_INIT_PARAMETERS, *PNDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS
 ---
 
 # _NDIS_WDI_INIT_PARAMETERS structure
@@ -61,7 +62,7 @@ typedef struct _NDIS_WDI_INIT_PARAMETERS {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_WDI_INIT_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_WDI_INIT_PARAMETERS.

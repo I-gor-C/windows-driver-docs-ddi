@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IRegistryKey.QueryValueKey
+UID: NF:portcls.IRegistryKey.QueryValueKey
 title: IRegistryKey::QueryValueKey method
 author: windows-driver-content
 description: The QueryValueKey method retrieves information about a registry key's value entries, including their names, types, data sizes, and values.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IRegistryKey::QueryValueKey method
@@ -59,7 +60,7 @@ NTSTATUS QueryValueKey(
 
 ### -param ValueName [in]
 
-Pointer to the manufacturer-supplied name of the value entry. The name string is specified by a structure of type <a href="kernel.unicode_string">UNICODE_STRING</a>.
+Pointer to the manufacturer-supplied name of the value entry. The name string is specified by a structure of type <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>.
 
 
 ### -param KeyValueInformationClass [in]
@@ -83,7 +84,7 @@ Specifies the type of information to be returned in the buffer. Set this paramet
 
 ### -param KeyValueInformation [out]
 
-Pointer to a caller-allocated buffer into which the method writes the requested data. The buffer contains a structure of type <a href="kernel.key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>, <a href="kernel.key_value_full_information">KEY_VALUE_FULL_INFORMATION</a>, or <a href="kernel.key_value_partial_information">KEY_VALUE_PARTIAL_INFORMATION</a>, depending on the value of <i>KeyValueInformationClass</i>. The structure is followed by additional data whose size depends on the data type of the key value.
+Pointer to a caller-allocated buffer into which the method writes the requested data. The buffer contains a structure of type <a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>, <a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>, or <a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>, depending on the value of <i>KeyValueInformationClass</i>. The structure is followed by additional data whose size depends on the data type of the key value.
 
 
 ### -param Length [in]
@@ -154,19 +155,19 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
 </dt>
 <dt>
-<a href="kernel.key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.key_value_full_information">KEY_VALUE_FULL_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_value_full_information.md">KEY_VALUE_FULL_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.key_value_partial_information">KEY_VALUE_PARTIAL_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_value_partial_information.md">KEY_VALUE_PARTIAL_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryvaluekey">ZwQueryValueKey</a>
+<a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  

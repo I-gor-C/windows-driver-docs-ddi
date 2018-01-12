@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_FIXDATA_BASIC
+UID: NS:gnssdriver.GNSS_FIXDATA_BASIC
 title: GNSS_FIXDATA_BASIC
 author: windows-driver-content
 description: This structure defines basic position information.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: D293366B-13FA-438E-BEBD-1F0EAA693400
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_FIXDATA_BASIC, *PGNSS_FIXDATA_BASIC, GNSS_FIXDATA_BASIC, PGNSS_FIXDATA_BASIC
+ms.keywords: GNSS_FIXDATA_BASIC, GNSS_FIXDATA_BASIC, *PGNSS_FIXDATA_BASIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_FIXDATA_BASIC, *PGNSS_FIXDATA_BASIC
 ---
 
 # GNSS_FIXDATA_BASIC structure

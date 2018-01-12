@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DHAL._D3DHAL_DP2DRAWINDEXEDPRIMITIVE
+UID: NS:d3dhal._D3DHAL_DP2DRAWINDEXEDPRIMITIVE
 title: _D3DHAL_DP2DRAWINDEXEDPRIMITIVE
 author: windows-driver-content
 description: DirectX 8.0 and later versions only.
@@ -7,8 +7,8 @@ old-location: display\d3dhal_dp2drawindexedprimitive.htm
 old-project: display
 ms.assetid: b28290c7-2c02-4422-af7b-4188d6f54b54
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE
+ms.date: 12/29/2017
+ms.keywords: _D3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE, *LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DHAL_DP2DRAWINDEXEDPRIMITIVE
 ---
 
 # _D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure
@@ -42,7 +43,7 @@ req.irql:
    DirectX 8.0 and later versions only.
    
 
-D3DHAL_DRAWINDEXEDPRIMITIVE is parsed from the command buffer by the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> callback when the <a href="display.d3dhal_dp2command">D3DHAL_DP2COMMAND</a> structure's <b>bCommand</b> member is set to D3DDP2OP_DRAWINDEXEDPRIMITIVE, and is used to render a primitive using vertex indices.
+D3DHAL_DRAWINDEXEDPRIMITIVE is parsed from the command buffer by the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> callback when the <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a> structure's <b>bCommand</b> member is set to D3DDP2OP_DRAWINDEXEDPRIMITIVE, and is used to render a primitive using vertex indices.
 
 
 
@@ -125,19 +126,19 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dhal_dp2drawindexedprimitive2">D3DHAL_DP2DRAWINDEXEDPRIMITIVE2</a>
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2drawindexedprimitive2.md">D3DHAL_DP2DRAWINDEXEDPRIMITIVE2</a>
 </dt>
 <dt>D3DDP2OP_DRAWINDEXEDPRIMITIVE</dt>
 <dt>
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="display.d3dhal_dp2command">D3DHAL_DP2COMMAND</a>
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

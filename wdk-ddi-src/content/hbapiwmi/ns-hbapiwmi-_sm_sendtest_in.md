@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_SENDTEST_IN
+UID: NS:hbapiwmi._SM_SendTEST_IN
 title: _SM_SendTEST_IN
 author: windows-driver-content
 description: The SM_SendTEST_IN structure is used to provide input parameters to the SM_SendTEST method.
@@ -7,8 +7,8 @@ old-location: storage\sm_sendtest_in.htm
 old-project: storage
 ms.assetid: 5bb0620e-b271-4af6-b528-b904910b8a6c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_SendTEST_IN, *PSM_SendTEST_IN, PSM_SendTEST_IN, SM_SendTEST_IN
+ms.date: 1/10/2018
+ms.keywords: _SM_SendTEST_IN, *PSM_SendTEST_IN, SM_SendTEST_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSM_SendTEST_IN, SM_SendTEST_IN
 ---
 
 # _SM_SendTEST_IN structure

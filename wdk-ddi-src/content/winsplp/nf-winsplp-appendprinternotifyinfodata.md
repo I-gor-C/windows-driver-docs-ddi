@@ -1,5 +1,5 @@
 ---
-UID: NF.winsplp.AppendPrinterNotifyInfoData
+UID: NF:winsplp.AppendPrinterNotifyInfoData
 title: AppendPrinterNotifyInfoData function
 author: windows-driver-content
 description: The print spooler's AppendPrinterNotifyInfoData function adds the contents of a specified PRINTER_NOTIFY_INFO_DATA structure to a specified PRINTER_NOTIFY_INFO structure.
@@ -7,7 +7,7 @@ old-location: print\appendprinternotifyinfodata.htm
 old-project: print
 ms.assetid: 558b81c5-5f6b-41a5-8d89-6ee39b9c1cd1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: AppendPrinterNotifyInfoData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Spoolss.lib
 req.dll: Spoolss.dll
 req.irql: 
+req.typenames: NOTIFICATION_CONFIG_FLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -85,7 +86,7 @@ If the operation succeeds, the function returns <b>TRUE</b>. Otherwise, the func
 
 
 ## -remarks
-A print provider's <a href="print.refreshprinterchangenotification">RefreshPrinterChangeNotification</a> function should call <b>AppendPrinterNotifyInfoData</b> as often as necessary to populate a PRINTER_NOTIFY_INFO_DATA structure array, after first calling <a href="print.routerallocprinternotifyinfo">RouterAllocPrinterNotifyInfo</a> to allocate storage for the array and its associated PRINTER_NOTIFY_INFO structure.
+A print provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a> function should call <b>AppendPrinterNotifyInfoData</b> as often as necessary to populate a PRINTER_NOTIFY_INFO_DATA structure array, after first calling <a href="..\winsplp\nf-winsplp-routerallocprinternotifyinfo.md">RouterAllocPrinterNotifyInfo</a> to allocate storage for the array and its associated PRINTER_NOTIFY_INFO structure.
 
 Based on whether the PRINTER_NOTIFY_INFO_DATA_COMPACT flag is set, the function either appends the specified PRINTER_NOTIFY_INFO_DATA structure to the end of the structure array or overwrites an existing array element. If the structure is appended, the function increments the PRINTER_NOTIFY_INFO structure's <b>Count</b> member.
 
@@ -149,15 +150,15 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="print.refreshprinterchangenotification">RefreshPrinterChangeNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
 </dt>
 <dt>
-<a href="print.routerallocprinternotifyinfo">RouterAllocPrinterNotifyInfo</a>
+<a href="..\winsplp\nf-winsplp-routerallocprinternotifyinfo.md">RouterAllocPrinterNotifyInfo</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20AppendPrinterNotifyInfoData function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20AppendPrinterNotifyInfoData function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

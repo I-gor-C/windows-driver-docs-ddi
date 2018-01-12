@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIOWMI._MPIO_CONTROLLER_CONFIGURATION
+UID: NS:mpiowmi._MPIO_CONTROLLER_CONFIGURATION
 title: _MPIO_CONTROLLER_CONFIGURATION
 author: windows-driver-content
 description: The MPIO_CONTROLLER_CONFIGURATION structure provides a top-level view of the storage controllers and the targets that are connected to them in the system.
@@ -7,8 +7,8 @@ old-location: storage\mpio_controller_configuration.htm
 old-project: storage
 ms.assetid: af608197-fa2b-474f-aa87-eb933a57b8cc
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MPIO_CONTROLLER_CONFIGURATION, *PMPIO_CONTROLLER_CONFIGURATION, MPIO_CONTROLLER_CONFIGURATION, PMPIO_CONTROLLER_CONFIGURATION
+ms.date: 1/10/2018
+ms.keywords: _MPIO_CONTROLLER_CONFIGURATION, MPIO_CONTROLLER_CONFIGURATION, *PMPIO_CONTROLLER_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MPIO_CONTROLLER_CONFIGURATION, *PMPIO_CONTROLLER_CONFIGURATION
 ---
 
 # _MPIO_CONTROLLER_CONFIGURATION structure

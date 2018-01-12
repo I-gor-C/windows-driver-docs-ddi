@@ -1,5 +1,5 @@
 ---
-UID: NC.wdm.PALLOCATE_COMMON_BUFFER_EX
+UID: NC:wdm.PALLOCATE_COMMON_BUFFER_EX
 title: PALLOCATE_COMMON_BUFFER_EX
 author: windows-driver-content
 description: The AllocateCommonBufferEx routine allocates memory for a common buffer and maps this memory so that it can be accessed both by the processor and by a device that performs DMA operations.
@@ -7,8 +7,8 @@ old-location: kernel\allocatecommonbufferex.htm
 old-project: kernel
 ms.assetid: F7456BD7-689C-4534-B6F0-028A5359A2E9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 1/4/2018
+ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ PVOID AllocateCommonBufferEx(
 
 ### -param DmaAdapter [in]
 
-A pointer to a <a href="kernel.dma_adapter">DMA_ADAPTER</a> structure. This structure is the adapter object that represents the driver's bus-master DMA device or system DMA channel. The caller obtained this pointer from a previous call to the <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> routine.
+A pointer to a <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structure. This structure is the adapter object that represents the driver's bus-master DMA device or system DMA channel. The caller obtained this pointer from a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> routine.
 
 
 ### -param MaximumAddress [in, optional]
@@ -76,7 +77,7 @@ The size, in bytes, of the common buffer that is to be allocated for the DMA ope
 
 ### -param LogicalAddress [out]
 
-A pointer to a variable into which this routine writes the logical address that the device can use to access the common buffer. The DMA device should use this logical address instead of the physical address that is returned by a routine such as <a href="kernel.mmgetphysicaladdress">MmGetPhysicalAddress</a>.
+A pointer to a variable into which this routine writes the logical address that the device can use to access the common buffer. The DMA device should use this logical address instead of the physical address that is returned by a routine such as <a href="..\ntddk\nf-ntddk-mmgetphysicaladdress.md">MmGetPhysicalAddress</a>.
 
 
 ### -param CacheEnabled [in]
@@ -96,8 +97,8 @@ The preferred NUMA node from which the memory is to be allocated. If N is the nu
 ## -remarks
 <b>AllocateCommonBufferEx</b>
            is not a system routine that can be called directly by name. This routine can be called only by pointer from the address returned in a 
-          <a href="kernel.dma_operations">DMA_OPERATIONS</a>
-           structure. Drivers obtain the address of this routine by calling <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> with the Version member of the <i>DeviceDescription</i> parameter set to DEVICE_DESCRIPTION_VERSION3. If <b>IoGetDmaAdapter</b> returns <b>NULL</b>, the routine is not available on your platform.
+          <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+           structure. Drivers obtain the address of this routine by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> with the Version member of the <i>DeviceDescription</i> parameter set to DEVICE_DESCRIPTION_VERSION3. If <b>IoGetDmaAdapter</b> returns <b>NULL</b>, the routine is not available on your platform.
 
 <b>AllocateCommonBufferEx</b> is an extended version of the <a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a> routine. The following list summarizes the features that are available only in the extended version:
 
@@ -105,7 +106,7 @@ On computers with ARM or ARM 64-based processors, cache settings in the system A
 
 On computers with ARM or ARM 64-based processors, the operating system allocates an uncached common buffer as Device Memory. For more information about the buffer, see sections A3.5.1, and A3.5.6 from the <a href="https://go.microsoft.com/fwlink/p/?linkid=853904">ARMv7 Architecture Reference Manual</a>.  
 
-The processor does not permit misaligned access to Device Memory. Your driver must always access data from the common buffer by using naturally-aligned operations. Most kernel routines do not accept Device Memory as input parameters. For example, a network driver cannot pass Device Memory into <a href="netvista.ndismindicatereceivenetbufferlists">NdisMIndicateReceiveNetBufferLists</a>. If your driver needs to pass data from a DMA common buffer to a kernel routine, either allocate the buffer with <i>CacheEnabled</i> set to TRUE or copy the data from the uncached common buffer into a temporary pool allocation.
+The processor does not permit misaligned access to Device Memory. Your driver must always access data from the common buffer by using naturally-aligned operations. Most kernel routines do not accept Device Memory as input parameters. For example, a network driver cannot pass Device Memory into <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">NdisMIndicateReceiveNetBufferLists</a>. If your driver needs to pass data from a DMA common buffer to a kernel routine, either allocate the buffer with <i>CacheEnabled</i> set to TRUE or copy the data from the uncached common buffer into a temporary pool allocation.
 
 For more information about DMA operations that use a common buffer, see the following topics:
 
@@ -162,21 +163,21 @@ PASSIVE_LEVEL
 <a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
 </dt>
 <dt>
-<a href="kernel.dma_adapter_info">DMA_ADAPTER</a>
+<a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADAPTER</a>
 </dt>
 <dt>
-<a href="kernel.dma_operations">DMA_OPERATIONS</a>
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 </dt>
 <dt>
-<a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
 </dt>
 <dt>
-<a href="kernel.mmgetphysicaladdress">MmGetPhysicalAddress</a>
+<a href="..\ntddk\nf-ntddk-mmgetphysicaladdress.md">MmGetPhysicalAddress</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PALLOCATE_COMMON_BUFFER_EX callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PALLOCATE_COMMON_BUFFER_EX callback function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

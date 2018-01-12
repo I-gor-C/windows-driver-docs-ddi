@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDT._DXGKMDT_OPM_OMAC
+UID: NS:d3dkmdt._DXGKMDT_OPM_OMAC
 title: _DXGKMDT_OPM_OMAC
 author: windows-driver-content
 description: The DXGKMDT_OPM_OMAC structure contains a One-key Cipher Block Chaining (CBC)-mode message authentication code (OMAC) for message authenticity.
@@ -7,8 +7,8 @@ old-location: display\dxgkmdt_opm_omac.htm
 old-project: display
 ms.assetid: caa64a32-3772-45b5-898a-78dc51b7f24b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKMDT_OPM_OMAC, *PDXGKMDT_OPM_OMAC, DXGKMDT_OPM_OMAC, PDXGKMDT_OPM_OMAC
+ms.date: 12/29/2017
+ms.keywords: _DXGKMDT_OPM_OMAC, DXGKMDT_OPM_OMAC, *PDXGKMDT_OPM_OMAC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGKMDT_OPM_OMAC, *PDXGKMDT_OPM_OMAC
 ---
 
 # _DXGKMDT_OPM_OMAC structure
@@ -102,18 +103,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgkmdt_opm_configure_parameters">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_configure_parameters.md">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a>
 </dt>
 <dt>
-<a href="display.dxgkmdt_opm_get_info_parameters">DXGKMDT_OPM_GET_INFO_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_get_info_parameters.md">DXGKMDT_OPM_GET_INFO_PARAMETERS</a>
 </dt>
 <dt>
-<a href="display.dxgkmdt_opm_requested_information">DXGKMDT_OPM_REQUESTED_INFORMATION</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_requested_information.md">DXGKMDT_OPM_REQUESTED_INFORMATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_OMAC structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_OMAC structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

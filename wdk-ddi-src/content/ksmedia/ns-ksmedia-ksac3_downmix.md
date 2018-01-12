@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSAC3_DOWNMIX
+UID: NS:ksmedia.KSAC3_DOWNMIX
 title: KSAC3_DOWNMIX
 author: windows-driver-content
 description: The KSAC3_DOWNMIX structure specifies whether the program channels in an AC-3-encoded stream need to be downmixed to accommodate the speaker configuration.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: d35450ec-5ddc-4312-bd77-ab7e89690f82
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSAC3_DOWNMIX, PKSAC3_DOWNMIX, *PKSAC3_DOWNMIX, KSAC3_DOWNMIX
+ms.keywords: KSAC3_DOWNMIX, KSAC3_DOWNMIX, *PKSAC3_DOWNMIX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSAC3_DOWNMIX, *PKSAC3_DOWNMIX
 ---
 
 # KSAC3_DOWNMIX structure

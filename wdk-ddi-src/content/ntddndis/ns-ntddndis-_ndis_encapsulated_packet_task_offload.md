@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD
+UID: NS:ntddndis._NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD
 title: _NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD
 author: windows-driver-content
 description: The NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD structure contains the offload support state for Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload (NVGRE-TO).
 old-location: netvista\ndis_encapsulated_packet_task_offload.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: EA13DADC-ED00-435D-BEA7-B6E52A86031A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, *PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD
+ms.date: 1/8/2018
+ms.keywords: _NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, *PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD, *PNDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD
 ---
 
 # _NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The <b>NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD</b> structure contains the offload support state for <a href="netvista.network_virtualization_using_generic_routing_encapsulation__nvgre__task_offload">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a> (NVGRE-TO). This structure is used in the <b>EncapsulatedPacketTaskOffloadGre</b> member of the <a href="netvista.ndis_offload">NDIS_OFFLOAD</a> structure.
+The <b>NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD</b> structure contains the offload support state for <a href="netvista.network_virtualization_using_generic_routing_encapsulation__nvgre__task_offload">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a> (NVGRE-TO). This structure is used in the <b>EncapsulatedPacketTaskOffloadGre</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a> structure.
 
 
 
@@ -236,7 +237,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_offload">NDIS_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
 <a href="netvista.network_virtualization_using_generic_routing_encapsulation__nvgre__task_offload">Network Virtualization using Generic Routing Encapsulation (NVGRE) Task Offload</a>
@@ -246,5 +247,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_ENCAPSULATED_PACKET_TASK_OFFLOAD structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

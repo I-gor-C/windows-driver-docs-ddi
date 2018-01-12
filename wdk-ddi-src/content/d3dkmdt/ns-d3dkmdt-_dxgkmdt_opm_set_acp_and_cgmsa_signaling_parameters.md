@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDT._DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
+UID: NS:d3dkmdt._DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
 title: _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
 author: windows-driver-content
 description: The DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure contains parameters to set Analog Content Protection (ACP) and Content Generation Management System Analog (CGMS-A) signaling for a protected output.
@@ -7,7 +7,7 @@ old-location: display\dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters.htm
 old-project: display
 ms.assetid: e4151e72-e0a6-4873-a2e8-c3321941cfd4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
 ---
 
 # _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure
@@ -64,7 +65,7 @@ typedef struct _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
 
 ### -field ulNewTVProtectionStandard
 
-A <a href="display.dxgkmdt_opm_protection_standard">DXGKMDT_OPM_PROTECTION_STANDARD</a>-typed value that indicates the type of television signal to set ACP and CGMS-A signaling for on the protected output. 
+A <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>-typed value that indicates the type of television signal to set ACP and CGMS-A signaling for on the protected output. 
 
 
 ### -field ulAspectRatioChangeMask1
@@ -143,12 +144,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgkmdt_opm_protection_standard">DXGKMDT_OPM_PROTECTION_STANDARD</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

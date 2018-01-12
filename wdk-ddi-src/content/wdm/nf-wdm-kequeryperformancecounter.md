@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeQueryPerformanceCounter
+UID: NF:wdm.KeQueryPerformanceCounter
 title: KeQueryPerformanceCounter function
 author: windows-driver-content
 description: The KeQueryPerformanceCounter routine retrieves the current value and frequency of the performance counter.Use KeQueryPerformanceCounter to acquire high resolution (&lt;1us) time stamps for time interval measurements.
@@ -7,7 +7,7 @@ old-location: kernel\kequeryperformancecounter.htm
 old-project: kernel
 ms.assetid: ee1dbd20-5502-4448-b39a-4629ddc73d01
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeQueryPerformanceCounter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hal.lib
 req.dll: Hal.dll
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -70,7 +71,7 @@ A pointer to a variable to which <b>KeQueryPerformanceCounter</b> writes the per
 
 To obtain the frequency of the performance counter, specify a non-<b>NULL</b> pointer value for the <i>PerformanceFrequency</i> parameter. The frequency of the performance counter is fixed at system boot and is consistent across all processors. Therefore, a driver can cache the frequency of the performance counter during initialization.  
 
-For more info about this function and its usage, see <a href="base.acquiring_high-resolution_time_stamps">Acquiring high-resolution time stamps</a>. 
+For more info about this function and its usage, see <a href="https://msdn.microsoft.com/D66E0FC2-3AF2-489B-B4B5-78648905B77B">Acquiring high-resolution time stamps</a>. 
 
 
 ## -requirements
@@ -144,27 +145,27 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.kequeryinterrupttime">KeQueryInterruptTime</a>
+<a href="..\wdm\nf-wdm-kequeryinterrupttime.md">KeQueryInterruptTime</a>
 </dt>
 <dt>
-<a href="kernel.kequerysystemtime">KeQuerySystemTime</a>
+<a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
 </dt>
 <dt>
-<a href="kernel.kequerytickcount">KeQueryTickCount</a>
+<a href="..\wdm\nf-wdm-kequerytickcount.md">KeQueryTickCount</a>
 </dt>
 <dt>
-<a href="kernel.kequerytimeincrement">KeQueryTimeIncrement</a>
+<a href="..\wdm\nf-wdm-kequerytimeincrement.md">KeQueryTimeIncrement</a>
 </dt>
 <dt>
-<a href="base.queryperformancecounter">QueryPerformanceCounter</a>
+<a href="https://msdn.microsoft.com/08169390-940b-4110-813a-249d107cc953">QueryPerformanceCounter</a>
 </dt>
 <dt>
-<a href="base.queryperformancefrequency">QueryPerformanceFrequency</a>
+<a href="https://msdn.microsoft.com/f69367a4-0516-4033-81e3-90d4c5270a1e">QueryPerformanceFrequency</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeQueryPerformanceCounter routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeQueryPerformanceCounter routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

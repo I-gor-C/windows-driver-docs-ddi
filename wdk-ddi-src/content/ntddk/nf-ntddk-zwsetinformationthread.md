@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.ZwSetInformationThread
+UID: NF:ntddk.ZwSetInformationThread
 title: ZwSetInformationThread function
 author: windows-driver-content
 description: The ZwSetInformationThread routine sets the priority of a thread.
@@ -7,7 +7,7 @@ old-location: kernel\zwsetinformationthread.htm
 old-project: kernel
 ms.assetid: ec67c643-bc91-4784-b5f4-09a20e8406c3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwSetInformationThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # ZwSetInformationThread function
@@ -58,7 +59,7 @@ NTSTATUS ZwSetInformationThread(
 
 ### -param ThreadHandle [in]
 
-Handle to the thread object. To create a new thread and get a handle to it, call <a href="kernel.pscreatesystemthread">PsCreateSystemThread</a>. To specify the current thread, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566434">ZwCurrentThread</a> macro.
+Handle to the thread object. To create a new thread and get a handle to it, call <a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a>. To specify the current thread, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566434">ZwCurrentThread</a> macro.
 
 
 ### -param ThreadInformationClass [in]
@@ -76,7 +77,7 @@ If <b>ThreadInformationClass</b> is <b>ThreadBasePriority</b>, this value must f
 
 If <b>ThreadInformationClass</b> is <b>ThreadPagePriority</b>, this value is a pointer to a <b>PAGE_PRIORITY_INFORMATION</b> structure, see ntddk.h. The <b>PagePriority</b> member value must be one of these values. 
 
-If <b>ThreadInformationClass</b> is <b>ThreadPowerThrottlingState</b>, this value is a pointer to a <a href="kernel._power_throttling_thread_state">POWER_THROTTLING_THREAD_STATE</a> structure, see ntddk.h. The <b>PagePriority</b> member value must be one of these values. 
+If <b>ThreadInformationClass</b> is <b>ThreadPowerThrottlingState</b>, this value is a pointer to a <a href="https://msdn.microsoft.com/85659694-f93a-42dc-9fa4-f6fea6ad71d0">POWER_THROTTLING_THREAD_STATE</a> structure, see ntddk.h. The <b>PagePriority</b> member value must be one of these values. 
 
 <table>
 <tr>
@@ -156,13 +157,13 @@ The size, in bytes, of <b>ThreadInformation</b>.
 
 The caller must have THREAD_SET_INFORMATION access rights for the given thread in order to call this routine.
 
-Usually, device and intermediate drivers that set up driver-created threads call <a href="kernel.kesetbaseprioritythread">KeSetBasePriorityThread</a> or <a href="kernel.kesetprioritythread">KeSetPriorityThread</a> from their driver-created threads, rather than calling <b>ZwSetInformationThread</b>. However, a driver can call <b>ZwSetInformationThread</b> to raise the priority of a driver-created thread before that thread runs.
+Usually, device and intermediate drivers that set up driver-created threads call <a href="..\ntddk\nf-ntddk-kesetbaseprioritythread.md">KeSetBasePriorityThread</a> or <a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a> from their driver-created threads, rather than calling <b>ZwSetInformationThread</b>. However, a driver can call <b>ZwSetInformationThread</b> to raise the priority of a driver-created thread before that thread runs.
 
 Kernel mode drivers can call the <b>ZwSetInformationThread</b> function with <b>ThreadPagePriority</b> to specify a thread's page priority.
 
 To help improve system performance, drivers should use the  function with <b>ThreadPagePriority</b> to lower the page priority of threads that perform background operations or access files and data that are not expected to be accessed again soon. For example, an anti-malware application might lower the priority of threads involved in scanning files.
 
-To determine the page priority for a thread, call <a href="kernel.zwqueryinformationthread_">ZwQueryInformationThread</a>.
+To determine the page priority for a thread, call <a href="https://msdn.microsoft.com/0B3F4CCF-D727-46AD-B3E0-3217DA1F3486">ZwQueryInformationThread</a>.
 
 For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>.
 
@@ -239,7 +240,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -247,13 +248,13 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.kesetbaseprioritythread">KeSetBasePriorityThread</a>
+<a href="..\ntddk\nf-ntddk-kesetbaseprioritythread.md">KeSetBasePriorityThread</a>
 </dt>
 <dt>
-<a href="kernel.kesetprioritythread">KeSetPriorityThread</a>
+<a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a>
 </dt>
 <dt>
-<a href="kernel.pscreatesystemthread">PsCreateSystemThread</a>
+<a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
@@ -263,5 +264,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetInformationThread routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetInformationThread routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

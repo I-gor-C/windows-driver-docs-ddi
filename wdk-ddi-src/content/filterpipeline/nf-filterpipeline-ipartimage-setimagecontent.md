@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPartImage.SetImageContent
+UID: NF:filterpipeline.IPartImage.SetImageContent
 title: IPartImage::SetImageContent method
 author: windows-driver-content
 description: The SetImageContent method sets an image property that is based on the content type.
@@ -7,7 +7,7 @@ old-location: print\ipartimage_setimagecontent.htm
 old-project: print
 ms.assetid: 5d7a59ac-93de-4a41-9313-df189e1f6e36
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPartImage, IPartImage::SetImageContent, SetImageContent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPartImage::SetImageContent method

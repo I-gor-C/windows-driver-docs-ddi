@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.ReadTypedDataPhysical
+UID: NF:dbgeng.IDebugSymbols3.ReadTypedDataPhysical
 title: IDebugSymbols3::ReadTypedDataPhysical method
 author: windows-driver-content
 description: The ReadTypedDataPhysical method reads the value of a variable from the target computer's physical memory.
 old-location: debugger\readtypeddataphysical.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 72562325-27f9-4e80-b03f-8926adad99c1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::ReadTypedDataPhysical, ReadTypedDataPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::ReadTypedDataPhysical method
@@ -106,7 +107,7 @@ This method is only available in kernel mode debugging.
 
 The number of bytes this method attempts to read is the smaller of the size of the buffer and the size of the variable.
 
-This is a convenience method.  The same result can be obtained by calling <a href="debugger.gettypesize2">GetTypeSize</a> and <a href="debugger.readphysical">ReadPhysical</a>.
+This is a convenience method.  The same result can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549457">GetTypeSize</a> and <a href="..\wdbgexts\nf-wdbgexts-readphysical.md">ReadPhysical</a>.
 
 For more information about types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558931">Types</a>.
 

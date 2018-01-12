@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeQueryHighestNodeNumber
+UID: NF:wdm.KeQueryHighestNodeNumber
 title: KeQueryHighestNodeNumber function
 author: windows-driver-content
 description: The KeQueryHighestNodeNumber routine returns the highest node number in a multiprocessor system that has a non-uniform memory access (NUMA) architecture.
@@ -7,7 +7,7 @@ old-location: kernel\kequeryhighestnodenumber.htm
 old-project: kernel
 ms.assetid: e92387db-0c35-40c8-8342-4b1bf498aa1a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeQueryHighestNodeNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

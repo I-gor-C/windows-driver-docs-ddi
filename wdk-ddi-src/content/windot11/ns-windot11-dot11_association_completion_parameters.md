@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11.DOT11_ASSOCIATION_COMPLETION_PARAMETERS
+UID: NS:windot11.DOT11_ASSOCIATION_COMPLETION_PARAMETERS
 title: DOT11_ASSOCIATION_COMPLETION_PARAMETERS
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_association_completion_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 770962e3-0339-46f8-a789-7c9bbf9e058f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: DOT11_ASSOCIATION_COMPLETION_PARAMETERS, PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS
+ms.date: 1/8/2018
+ms.keywords: DOT11_ASSOCIATION_COMPLETION_PARAMETERS, *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT11_ASSOCIATION_COMPLETION_PARAMETERS, DOT11_ASSOCIATION_COMPLETION_PARAMETERS
 req.product: Windows 10 or later.
 ---
 
@@ -80,7 +81,7 @@ typedef struct DOT11_ASSOCIATION_COMPLETION_PARAMETERS {
 
 The type, revision, and size of the DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure. This member
      is formatted as an 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
      
 
 The miniport driver must set the members of 
@@ -107,7 +108,7 @@ This member must be set to
 </dd>
 </dl>
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field MacAddr
@@ -303,7 +304,7 @@ The length of the block of data that is used by the IHV for the
 The authentication algorithm that the 802.11 station resolved with the AP or peer station during
      the association operation. For more information about the data type for the 
      <b>AuthAlgo</b> member, see 
-     <a href="netvista.dot11_auth_algorithm">DOT11_AUTH_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a>.
      
 
 The miniport driver must set this member to zero if 
@@ -315,7 +316,7 @@ The miniport driver must set this member to zero if
 The unicast cipher algorithm that the 802.11 station resolved with the AP or peer station during
      the association operation. For more information about the data type for the 
      <b>UnicastCipher</b> member, see 
-     <a href="netvista.dot11_cipher_algorithm">DOT11_CIPHER_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
      
 
 The miniport driver must set this member to zero if 
@@ -327,7 +328,7 @@ The miniport driver must set this member to zero if
 The multicast cipher algorithm that the 802.11 station resolved with the AP or peer station during
      the association operation. For more information about the data type for the 
      <b>MulticastCipher</b> member, see 
-     <a href="netvista.dot11_cipher_algorithm">DOT11_CIPHER_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
      
 
 The miniport driver must set this member to zero if 
@@ -546,7 +547,7 @@ For more information about the IEEE 802.11
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569142">OID_DOT11_DESIRED_BSS_TYPE</a>.
 
 For more information about the association operation, see 
-    <a href="netvista.association_operations">Association Operations</a>.
+    <a href="https://msdn.microsoft.com/04e97ea1-fe4b-471e-a7be-b5aa3ee88edc">Association Operations</a>.
 
 Management Frame Protection is negotiated when an access point (AP) and STA set the Management Frame Protection Capable (MFPC) field to 1 in their respective RSN IEs during the (re)association procedure (i.e. Beacon or Probe Response for AP and (re)association request for STA), and both parties confirm the Management Frame Protection Capable bit set to 1 in the 4-Way Handshake (Messages M2 and M3 of the 802.11i 4-way handshake).
 
@@ -583,22 +584,22 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547652">DOT11_ASSOC_STATUS</a>
 </dt>
 <dt>
-<a href="netvista.dot11_auth_algorithm">DOT11_AUTH_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a>
 </dt>
 <dt>
-<a href="netvista.dot11_cipher_algorithm">DOT11_CIPHER_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 </dt>
 <dt>
 <a href="..\windot11\ns-windot11-dot11_encap_entry.md">DOT11_ENCAP_ENTRY</a>
 </dt>
 <dt>
-<a href="netvista.dot11_mac_address">DOT11_MAC_ADDRESS</a>
+<a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndismindicatestatusex">NdisMIndicateStatusEx</a>
+<a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_dot11_association_completion">
@@ -619,5 +620,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_ASSOCIATION_COMPLETION_PARAMETERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

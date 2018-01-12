@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_PACKET_SERVICE
+UID: NS:wwan._WWAN_PACKET_SERVICE
 title: _WWAN_PACKET_SERVICE
 author: windows-driver-content
 description: The WWAN_PACKET_SERVICE structure represents the packet service attachment state of the MB device.
 old-location: netvista\wwan_packet_service.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5d444e1c-cbcf-47ab-9c5a-10af1f1915cf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_PACKET_SERVICE, PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE
+ms.date: 1/8/2018
+ms.keywords: _WWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE
 req.product: Windows 10 or later.
 ---
 
@@ -75,7 +76,7 @@ The packet service state of the device.
 A bitmap that represents which data-classes are available to the device in the current network.
      For a detailed list of values, see the 
      <b>WwanDataClass</b> member of 
-     <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>.
+     <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>.
      
 
 Miniport drivers must set this member to WWAN_DATA_CLASS_NONE when the device is not registered to a
@@ -87,7 +88,7 @@ Miniport drivers must set this member to WWAN_DATA_CLASS_NONE when the device is
 
 A single value from the 
      <b>WwanDataClass</b> member in 
-     <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a> that represents which
+     <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a> that represents which
      data-class is currently being used by the device.
      
 
@@ -101,7 +102,7 @@ Miniport drivers must set this member with a valid value and send the appropriat
 Miniport drivers should set this member to WWAN_DATA_CLASS_CUSTOM if the data-class is not one of the
      predefined values in the 
      <b>WwanDataClass</b> member of 
-     <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>.
+     <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>.
 
 
 ## -remarks
@@ -113,7 +114,7 @@ The MB Service combines the data-classes that are represented in
 
 If a device also supports a data-class that is anything other than the predefined values in the 
     <b>WwanDataClass</b> member of 
-    <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>, the miniport driver
+    <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>, the miniport driver
     should set the WWAN_DATA_CLASS_CUSTOM flag along with the appropriate bitmask defined for the data-class
     in this member.
 
@@ -122,7 +123,7 @@ If a device also supports a data-class that is anything other than the predefine
     <b>uNwError</b> member. If there is no network specific error or the network specific error is not known,
     miniport drivers should set this member to zero. The 
     "Status Indication Structure" section in 
-    <a href="netvista.mb_operational_semantics">MB Operational Semantics</a> shows the
+    <a href="https://msdn.microsoft.com/5f04b7fd-3df3-4efa-bb26-c7f4cd3c9ebd">MB Operational Semantics</a> shows the
     packet-attach or packet-detach cause code failure values that are defined in the 
     <i>3GPP TS 24.008 Specification</i>.
 
@@ -189,10 +190,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_packet_service_state">WWAN_PACKET_SERVICE_STATE</a>
+<a href="..\wwan\ne-wwan-_wwan_packet_service_state.md">WWAN_PACKET_SERVICE_STATE</a>
 </dt>
 <dt>
-<a href="netvista.ndis_wwan_packet_service_state">
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_packet_service_state.md">
    NDIS_WWAN_PACKET_SERVICE_STATE</a>
 </dt>
 </dl>
@@ -200,5 +201,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_PACKET_SERVICE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PACKET_SERVICE structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

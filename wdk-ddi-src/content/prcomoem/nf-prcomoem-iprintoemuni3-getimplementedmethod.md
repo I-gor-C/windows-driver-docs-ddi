@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUni3.GetImplementedMethod
+UID: NF:prcomoem.IPrintOemUni3.GetImplementedMethod
 title: IPrintOemUni3::GetImplementedMethod method
 author: windows-driver-content
 description: The IPrintOemUni3::GetImplementedMethod method is used by Unidrv to determine which IPrintOemUni interface methods a rendering plug-in has implemented.
@@ -7,7 +7,7 @@ old-location: print\iprintoemuni3_getimplementedmethod.htm
 old-project: print
 ms.assetid: a1de8e8f-eca1-4630-b689-585027184a08
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUni3, IPrintOemUni3::GetImplementedMethod, GetImplementedMethod
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 

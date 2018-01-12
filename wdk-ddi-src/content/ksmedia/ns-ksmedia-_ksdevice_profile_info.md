@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA._KSDEVICE_PROFILE_INFO
+UID: NS:ksmedia._KSDEVICE_PROFILE_INFO
 title: _KSDEVICE_PROFILE_INFO
 author: windows-driver-content
 description: The KSDEVICE_PROFILE_INFO is a generic structure designed to handle profile information for various device types.
@@ -7,8 +7,8 @@ old-location: stream\ksdevice_profile_info.htm
 old-project: stream
 ms.assetid: 32C894CA-B644-4221-97B6-A21F2A459DE6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _KSDEVICE_PROFILE_INFO, *PKSDEVICE_PROFILE_INFO, KSDEVICE_PROFILE_INFO, PKSDEVICE_PROFILE_INFO
+ms.date: 1/9/2018
+ms.keywords: _KSDEVICE_PROFILE_INFO, KSDEVICE_PROFILE_INFO, *PKSDEVICE_PROFILE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSDEVICE_PROFILE_INFO, *PKSDEVICE_PROFILE_INFO
 ---
 
 # _KSDEVICE_PROFILE_INFO structure
@@ -90,7 +91,7 @@ This must be set to sizeof(KSDEVICE_PROFILE_INFO) structure.
 
 <dl>
 <dd>
-Structure of <a href="stream.kscamera_profile_info">KSCAMERA_PROFILE_INFO</a> defining the profile information of a camera.
+Structure of <a href="..\ksmedia\ns-ksmedia-_kscamera_profile_info.md">KSCAMERA_PROFILE_INFO</a> defining the profile information of a camera.
 
 </dd>
 </dl>
@@ -110,7 +111,7 @@ Unused.  Must be set to 0.
 
 <dl>
 <dd>
-Number of <a href="stream.kscamera_profile_concurrencyinfo">KSCAMERA_PROFILE_CONCURRENCYINFO</a> structures in the <b>Concurrency</b> array.
+Number of <a href="..\ksmedia\ns-ksmedia-_kscamera_profile_concurrencyinfo.md">KSCAMERA_PROFILE_CONCURRENCYINFO</a> structures in the <b>Concurrency</b> array.
 
 For Windows 10 this must be less than or equal 1.
 

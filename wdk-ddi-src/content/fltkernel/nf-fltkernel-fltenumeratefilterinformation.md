@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltEnumerateFilterInformation
+UID: NF:fltkernel.FltEnumerateFilterInformation
 title: FltEnumerateFilterInformation function
 author: windows-driver-content
 description: The FltEnumerateFilterInformation routine provides information about all the registered filter drivers (including minifilter and legacy filter drivers) in the system.
@@ -7,7 +7,7 @@ old-location: ifsk\fltenumeratefilterinformation.htm
 old-project: ifsk
 ms.assetid: c8bfa809-3f32-487c-991e-2ec040e3bc98
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltEnumerateFilterInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltEnumerateFilterInformation function
@@ -77,7 +78,7 @@ Type of information requested. This parameter can have one of the following valu
 
 </td>
 <td>
-The buffer pointed to by the <i>Buffer</i> parameter receives a <a href="ifsk.filter_full_information">FILTER_FULL_INFORMATION</a> structure for the minifilter driver (legacy filter drivers are ignored).
+The buffer pointed to by the <i>Buffer</i> parameter receives a <a href="..\fltuserstructures\ns-fltuserstructures-_filter_full_information.md">FILTER_FULL_INFORMATION</a> structure for the minifilter driver (legacy filter drivers are ignored).
 
 </td>
 </tr>
@@ -87,7 +88,7 @@ The buffer pointed to by the <i>Buffer</i> parameter receives a <a href="ifsk.fi
 
 </td>
 <td>
-The buffer pointed to by the <i>Buffer</i> parameter receives a <a href="ifsk.filter_aggregate_basic_information">FILTER_AGGREGATE_BASIC_INFORMATION</a> structure for the minifilter or legacy filter driver. This <i>InformationClass</i> value is available starting with Microsoft Windows Server 2003 SP1 and Windows XP SP2 with filter manager rollup.  For more about the filter manager rollup package for Windows XP SP2, see article 914882, "<a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;amp;ID=914882">The filter manager rollup package for Windows XP SP2</a>," in the Microsoft Knowledge Base.
+The buffer pointed to by the <i>Buffer</i> parameter receives a <a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_basic_information.md">FILTER_AGGREGATE_BASIC_INFORMATION</a> structure for the minifilter or legacy filter driver. This <i>InformationClass</i> value is available starting with Microsoft Windows Server 2003 SP1 and Windows XP SP2 with filter manager rollup.  For more about the filter manager rollup package for Windows XP SP2, see article 914882, "<a href="http://go.microsoft.com/fwlink/p/?linkid=3100&amp;amp;ID=914882">The filter manager rollup package for Windows XP SP2</a>," in the Microsoft Knowledge Base.
 
 </td>
 </tr>
@@ -97,7 +98,7 @@ The buffer pointed to by the <i>Buffer</i> parameter receives a <a href="ifsk.fi
 
 </td>
 <td>
-The buffer pointed to by the <i>Buffer</i> parameter receives a <a href="ifsk.filter_aggregate_standard_information">FILTER_AGGREGATE_STANDARD_INFORMATION</a> structure for the minifilter or legacy filter driver. This <i>InformationClass</i> value is available starting with Windows Vista.
+The buffer pointed to by the <i>Buffer</i> parameter receives a <a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_standard_information.md">FILTER_AGGREGATE_STANDARD_INFORMATION</a> structure for the minifilter or legacy filter driver. This <i>InformationClass</i> value is available starting with Windows Vista.
 
 </td>
 </tr>
@@ -145,15 +146,15 @@ The following pseudocode enumerates filter information for all registered filter
 
 <b>FltEnumerateFilterInformation</b> returns information about registered filter drivers, through the <i>Buffer</i> parameter, in order of decreasing distance from the underlying file system.  For example, assume that there are <i>n</i> filter drivers attached above an underlying file system.  Information about the filter driver attached farthest from the file system is returned first (with an <i>Index</i> parameter value of 0).  Information about the next-farthest attached filter driver is returned second (with an <i>Index</i> parameter value of 1), and so on.  Finally, information about the filter driver closest to the file system is returned last (with an <i>Index</i> parameter value of <i>n</i>-1).
 
-To enumerate all registered minifilter drivers, call <a href="ifsk.fltenumeratefilters">FltEnumerateFilters</a>. 
+To enumerate all registered minifilter drivers, call <a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>. 
 
-To enumerate all registered legacy filter drivers, call <a href="ifsk.ioenumerateregisteredfilterslist">IoEnumerateRegisteredFiltersList</a>. 
+To enumerate all registered legacy filter drivers, call <a href="..\ntifs\nf-ntifs-ioenumerateregisteredfilterslist.md">IoEnumerateRegisteredFiltersList</a>. 
 
-To enumerate all instances of a given minifilter driver, call <a href="ifsk.fltenumerateinstanceinformationbyfilter">FltEnumerateInstanceInformationByFilter</a>. 
+To enumerate all instances of a given minifilter driver, call <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>. 
 
-To enumerate all minifilter driver instances on a given volume, call <a href="ifsk.fltenumerateinstanceinformationbyvolume">FltEnumerateInstanceInformationByVolume</a>. 
+To enumerate all minifilter driver instances on a given volume, call <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>. 
 
-To list volume information for all volumes that are known to the Filter Manager, call <a href="ifsk.fltenumeratevolumeinformation">FltEnumerateVolumeInformation</a>. 
+To list volume information for all volumes that are known to the Filter Manager, call <a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>. 
 
 
 ## -requirements
@@ -206,36 +207,36 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.filter_aggregate_basic_information">FILTER_AGGREGATE_BASIC_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_basic_information.md">FILTER_AGGREGATE_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.filter_aggregate_standard_information">FILTER_AGGREGATE_STANDARD_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_standard_information.md">FILTER_AGGREGATE_STANDARD_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.filter_full_information">FILTER_FULL_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_full_information.md">FILTER_FULL_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumeratefilters">FltEnumerateFilters</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumerateinstanceinformationbyfilter">FltEnumerateInstanceInformationByFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyfilter.md">FltEnumerateInstanceInformationByFilter</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumerateinstanceinformationbyvolume">FltEnumerateInstanceInformationByVolume</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumeratevolumeinformation">FltEnumerateVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratevolumeinformation.md">FltEnumerateVolumeInformation</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetfilterinformation">FltGetFilterInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>
 </dt>
 <dt>
-<a href="ifsk.ioenumerateregisteredfilterslist">IoEnumerateRegisteredFiltersList</a>
+<a href="..\ntifs\nf-ntifs-ioenumerateregisteredfilterslist.md">IoEnumerateRegisteredFiltersList</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateFilterInformation routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateFilterInformation routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILMSGDCSMSGCLASS
+UID: NE:rilapitypes.RILMSGDCSMSGCLASS
 title: RILMSGDCSMSGCLASS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgdcsmsgclass_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 67064f7c-4d2a-4d2f-8393-fb85d5139bca
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMSGDCSMSGCLASS, RILMSGDCSMSGCLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGDCSMSGCLASS
 req.product: Windows 10 or later.
 ---
 

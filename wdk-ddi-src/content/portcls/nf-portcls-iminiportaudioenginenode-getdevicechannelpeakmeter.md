@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioEngineNode.GetDeviceChannelPeakMeter
+UID: NF:portcls.IMiniportAudioEngineNode.GetDeviceChannelPeakMeter
 title: IMiniportAudioEngineNode::GetDeviceChannelPeakMeter method
 author: windows-driver-content
 description: Gets the PeakMeter value for the audio device channel.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioEngineNode::GetDeviceChannelPeakMeter method

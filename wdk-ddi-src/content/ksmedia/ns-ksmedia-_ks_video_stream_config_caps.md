@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA._KS_VIDEO_STREAM_CONFIG_CAPS
+UID: NS:ksmedia._KS_VIDEO_STREAM_CONFIG_CAPS
 title: _KS_VIDEO_STREAM_CONFIG_CAPS
 author: windows-driver-content
 description: The KS_VIDEO_STREAM_CONFIG_CAPS structure describes the configuration and capabilities of a video stream, including analog video standard (for example, NTSC, PAL or SECAM), scaling, and cropping capabilities; minimum and maximum frame rates; and minimum and maximum data rates.
@@ -7,8 +7,8 @@ old-location: stream\ks_video_stream_config_caps.htm
 old-project: stream
 ms.assetid: a8089653-a14b-4542-bf20-b1b596b1b4ea
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _KS_VIDEO_STREAM_CONFIG_CAPS, PKS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS, *PKS_VIDEO_STREAM_CONFIG_CAPS
+ms.date: 1/9/2018
+ms.keywords: _KS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS, *PKS_VIDEO_STREAM_CONFIG_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KS_VIDEO_STREAM_CONFIG_CAPS, *PKS_VIDEO_STREAM_CONFIG_CAPS
 ---
 
 # _KS_VIDEO_STREAM_CONFIG_CAPS structure
@@ -104,7 +105,7 @@ Specifies the size of the incoming signal. <b>InputSize</b> indicates the image 
 
 ### -field MinCroppingSize
 
-Specifies the smallest cropping rectangle allowed, as specified in the <b>rcSource</b> member of the <a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a> structure, which is associated with the <b>DataRange</b> member. 
+Specifies the smallest cropping rectangle allowed, as specified in the <b>rcSource</b> member of the <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure, which is associated with the <b>DataRange</b> member. 
 
 
 ### -field MaxCroppingSize
@@ -409,7 +410,7 @@ In the example scenario, a few of the valid sizes are:
 
 <b>CropAlignX</b> and <b>CropAlignY</b> indicate where the cropping rectangle can be located inside the input size rectangle. Given a 160 × 120 cropping rectangle and a value of 2 for <b>CropAlignX</b> and a value of 4 for <b>CropAlignY</b>, 
 
-some of the valid values for the <b>rcSource</b> member of the <a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a> structure would be: 
+some of the valid values for the <b>rcSource</b> member of the <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure would be: 
 
 (0, 0, 160, 120) 
 
@@ -421,7 +422,7 @@ some of the valid values for the <b>rcSource</b> member of the <a href="stream.k
 
 For a 320 × 240 cropping rectangle and the same cropping alignment values, (2, 4, 322, 244) is one example of the many valid rectangles. 
 
-The <b>MinCroppingSize</b>, <b>MaxCroppingSize</b>, <b>CropGranularityX</b>, <b>CropGranularityY</b>, <b>CropAlignX</b>, and <b>CropAlignY</b> members discussed above work together to specify which values of <b>rcSource</b> are valid for the KS_VIDEOINFOHEADER structure that describes the output pin's media type. The remaining structure members (<b>MinOutputSize</b>, <b>MaxOutputSize</b>, <b>OutputGranularityX</b>, and <b>OutputGranularityY</b>) describe the <b>biWidth</b> and <b>biHeight</b> members of the <a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a> structure, which is contained in the pin's media type KS_VIDEOINFOHEADER structure. 
+The <b>MinCroppingSize</b>, <b>MaxCroppingSize</b>, <b>CropGranularityX</b>, <b>CropGranularityY</b>, <b>CropAlignX</b>, and <b>CropAlignY</b> members discussed above work together to specify which values of <b>rcSource</b> are valid for the KS_VIDEOINFOHEADER structure that describes the output pin's media type. The remaining structure members (<b>MinOutputSize</b>, <b>MaxOutputSize</b>, <b>OutputGranularityX</b>, and <b>OutputGranularityY</b>) describe the <b>biWidth</b> and <b>biHeight</b> members of the <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure, which is contained in the pin's media type KS_VIDEOINFOHEADER structure. 
 
 
 ## -requirements
@@ -445,15 +446,15 @@ Header
 <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a>
 </dt>
 <dt>
-<a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a>
+<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
 </dt>
 <dt>
-<a href="stream.ks_videoinfoheader">KS_VIDEOINFOHEADER</a>
+<a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEO_STREAM_CONFIG_CAPS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEO_STREAM_CONFIG_CAPS structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

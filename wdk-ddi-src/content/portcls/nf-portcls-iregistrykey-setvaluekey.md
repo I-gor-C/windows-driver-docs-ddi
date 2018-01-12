@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IRegistryKey.SetValueKey
+UID: NF:portcls.IRegistryKey.SetValueKey
 title: IRegistryKey::SetValueKey method
 author: windows-driver-content
 description: The SetValueKey method replaces or creates a value entry under the open key.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IRegistryKey::SetValueKey method
@@ -58,7 +59,7 @@ NTSTATUS SetValueKey(
 
 ### -param ValueName [in, optional]
 
-Pointer to a string containing the name of the value entry to set. The name string is specified by a structure of type <a href="kernel.unicode_string">UNICODE_STRING</a>. If the value entry has no name, set this parameter to <b>NULL</b>. If the caller specifies a name string but the given name is not unique relative to its containing key, the method replaces the data for an existing value entry.
+Pointer to a string containing the name of the value entry to set. The name string is specified by a structure of type <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>. If the value entry has no name, set this parameter to <b>NULL</b>. If the caller specifies a name string but the given name is not unique relative to its containing key, the method replaces the data for an existing value entry.
 
 
 ### -param Type [in]
@@ -115,7 +116,7 @@ REG_FULL_RESOURCE_DESCRIPTOR
 
 </dd>
 </dl>
-These parameter types are explained in <a href="kernel.zwsetvaluekey">ZwSetValueKey</a>.
+These parameter types are explained in <a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>.
 
 
 ### -param Data [in]
@@ -186,10 +187,10 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iregistrykey.md">IRegistryKey</a>
 </dt>
 <dt>
-<a href="kernel.zwsetvaluekey">ZwSetValueKey</a>
+<a href="..\wdm\nf-wdm-zwsetvaluekey.md">ZwSetValueKey</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  

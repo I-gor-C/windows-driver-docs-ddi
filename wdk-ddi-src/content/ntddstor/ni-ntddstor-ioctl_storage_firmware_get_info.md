@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddstor.IOCTL_STORAGE_FIRMWARE_GET_INFO
+UID: NI:ntddstor.IOCTL_STORAGE_FIRMWARE_GET_INFO
 title: IOCTL_STORAGE_FIRMWARE_GET_INFO
 author: windows-driver-content
 description: A driver can use IOCTL_STORAGE_FIRMWARE_GET_INFO to query a storage device for detailed firmware information.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_storage_firmware_get_info.htm
 old-project: storage
 ms.assetid: AB5FA3A5-1187-4925-9EC0-62870851AED1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_ZONE_CONDITION, PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_FIRMWARE_GET_INFO IOCTL
@@ -46,13 +47,13 @@ A driver can use <b>IOCTL_STORAGE_FIRMWARE_GET_INFO</b> to query a storage devic
 
 ### -input-buffer
 <b>
-       Parameters.DeviceIoControl.InputBufferLength</b> indicates the size, in bytes, of the parameter buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be &gt;= <b>sizeof</b>(<a href="storage.storage_hw_firmware_info_query">STORAGE_HW_FIRMWARE_INFO_QUERY</a>).
+       Parameters.DeviceIoControl.InputBufferLength</b> indicates the size, in bytes, of the parameter buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be &gt;= <b>sizeof</b>(<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info_query.md">STORAGE_HW_FIRMWARE_INFO_QUERY</a>).
 
 <b>
-       Irp-&gt;AssociatedIrp.SystemBuffer</b> contains <a href="storage.storage_hw_firmware_info_query">STORAGE_HW_FIRMWARE_INFO_QUERY</a> data that specifies the target of the request. 
+       Irp-&gt;AssociatedIrp.SystemBuffer</b> contains <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info_query.md">STORAGE_HW_FIRMWARE_INFO_QUERY</a> data that specifies the target of the request. 
 
 <b>
-       Parameters.DeviceIoControl.OutputBufferLength</b> indicates the number of bytes that can be written to <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. <b>OutputBufferLength</b> must be <b>sizeof</b>(<a href="storage.storage_hw_firmware_info">STORAGE_HW_FIRMWARE_INFO</a>) + <b>sizeof</b>(<a href="storage.storage_hw_firmware_slot_info">STORAGE_HW_FIRMWARE_SLOT_INFO</a>) * (<b>STORAGE_HW_FIRMWARE_INFO.SlotCount</b> -1).
+       Parameters.DeviceIoControl.OutputBufferLength</b> indicates the number of bytes that can be written to <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. <b>OutputBufferLength</b> must be <b>sizeof</b>(<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info.md">STORAGE_HW_FIRMWARE_INFO</a>) + <b>sizeof</b>(<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_slot_info.md">STORAGE_HW_FIRMWARE_SLOT_INFO</a>) * (<b>STORAGE_HW_FIRMWARE_INFO.SlotCount</b> -1).
 
 
 ### -input-buffer-length
@@ -60,7 +61,7 @@ The length of .
 
 
 ### -output-buffer
-The driver returns query data to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The output buffer should contain a <a href="storage.storage_hw_firmware_info">STORAGE_HW_FIRMWARE_INFO</a> and <a href="storage.storage_hw_firmware_slot_info">STORAGE_HW_FIRMWARE_SLOT_INFO</a> structure for each slot on the device.  
+The driver returns query data to the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The output buffer should contain a <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info.md">STORAGE_HW_FIRMWARE_INFO</a> and <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_slot_info.md">STORAGE_HW_FIRMWARE_SLOT_INFO</a> structure for each slot on the device.  
 
 
 ### -output-buffer-length
@@ -121,30 +122,30 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storage_hw_firmware_info">STORAGE_HW_FIRMWARE_INFO</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info.md">STORAGE_HW_FIRMWARE_INFO</a>
 </dt>
 <dt>
-<a href="storage.storage_hw_firmware_info_query">STORAGE_HW_FIRMWARE_INFO_QUERY</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info_query.md">STORAGE_HW_FIRMWARE_INFO_QUERY</a>
 </dt>
 <dt>
-<a href="storage.storage_hw_firmware_slot_info">STORAGE_HW_FIRMWARE_SLOT_INFO</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_slot_info.md">STORAGE_HW_FIRMWARE_SLOT_INFO</a>
 </dt>
 <dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_firmware_activate.md">IOCTL_STORAGE_FIRMWARE_ACTIVATE</a>
 </dt>
 <dt>
-<a href="storage.storage_hw_firmware_activate">STORAGE_HW_FIRMWARE_ACTIVATE</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_activate.md">STORAGE_HW_FIRMWARE_ACTIVATE</a>
 </dt>
 <dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_firmware_download.md">IOCTL_STORAGE_FIRMWARE_DOWNLOAD</a>
 </dt>
 <dt>
-<a href="storage.storage_hw_firmware_download">STORAGE_HW_FIRMWARE_DOWNLOAD</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_download.md">STORAGE_HW_FIRMWARE_DOWNLOAD</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_STORAGE_FIRMWARE_GET_INFO control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_STORAGE_FIRMWARE_GET_INFO control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

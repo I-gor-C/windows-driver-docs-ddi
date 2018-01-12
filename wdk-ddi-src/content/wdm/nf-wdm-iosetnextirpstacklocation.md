@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoSetNextIrpStackLocation
+UID: NF:wdm.IoSetNextIrpStackLocation
 title: IoSetNextIrpStackLocation function
 author: windows-driver-content
 description: The IoSetNextIrpStackLocation routine sets the IRP stack location in a driver-allocated IRP to that of the caller.
@@ -7,7 +7,7 @@ old-location: kernel\iosetnextirpstacklocation.htm
 old-project: kernel
 ms.assetid: 39a0b4d3-691f-45ca-a616-f3e123026776
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoSetNextIrpStackLocation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -126,30 +127,30 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.io_stack_location">IO_STACK_LOCATION</a>
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="kernel.ioallocateirp">IoAllocateIrp</a>
+<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
 </dt>
 <dt>
-<a href="kernel.iobuildasynchronousfsdrequest">IoBuildAsynchronousFsdRequest</a>
+<a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
 </dt>
 <dt>
-<a href="kernel.iobuilddeviceiocontrolrequest">IoBuildDeviceIoControlRequest</a>
+<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
 </dt>
 <dt>
-<a href="kernel.iobuildsynchronousfsdrequest">IoBuildSynchronousFsdRequest</a>
+<a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>
 </dt>
 <dt>
-<a href="kernel.iocalldriver">IoCallDriver</a>
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 </dt>
 <dt>
-<a href="kernel.iosetcompletionroutine">IoSetCompletionRoutine</a>
+<a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoSetNextIrpStackLocation routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoSetNextIrpStackLocation routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.PRNTFONT._PRINTIFI32
+UID: NS:prntfont._PRINTIFI32
 title: _PRINTIFI32
 author: windows-driver-content
 description: The PRINTIFI32 structure is a fixed-size version of the IFIMETRICS structure, and defines information for a given typeface that GDI can use.
@@ -7,8 +7,8 @@ old-location: display\printifi32.htm
 old-project: display
 ms.assetid: f8e77eb1-3964-4ca0-8ae7-2e9617671990
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PRINTIFI32, PRINTIFI32, PPRINTIFI32, *PPRINTIFI32
+ms.date: 12/29/2017
+ms.keywords: _PRINTIFI32, *PPRINTIFI32, PRINTIFI32
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPRINTIFI32, PRINTIFI32
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The PRINTIFI32 structure is a fixed-size version of the <a href="display.ifimetrics">IFIMETRICS</a> structure, and defines information for a given typeface that GDI can use. 
+The PRINTIFI32 structure is a fixed-size version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a> structure, and defines information for a given typeface that GDI can use. 
 
 
 
@@ -114,7 +115,7 @@ typedef struct _PRINTIFI32 {
 
 ### -field cjThis
 
-Specifies the size in bytes of this structure. The specified size includes any Unicode strings appended to the end of this structure, plus the size in bytes of the optional <a href="display.ifiextra">IFIEXTRA</a> structure.
+Specifies the size in bytes of this structure. The specified size includes any Unicode strings appended to the end of this structure, plus the size in bytes of the optional <a href="https://msdn.microsoft.com/library/windows/hardware/ff567416">IFIEXTRA</a> structure.
 
 
 ### -field cjIfiExtra
@@ -144,11 +145,11 @@ Specifies the offset in bytes to a null-terminated Unicode string representing t
 
 ### -field dpFontSim
 
-Specifies the offset in bytes from the beginning of this structure to a <a href="display.fontsim">FONTSIM</a> structure that describes the simulations that the font supports. The driver should set this member to a nonzero value only if the font supports bold, italic, or bold italic simulations; otherwise, the driver should set this to zero.
+Specifies the offset in bytes from the beginning of this structure to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566017">FONTSIM</a> structure that describes the simulations that the font supports. The driver should set this member to a nonzero value only if the font supports bold, italic, or bold italic simulations; otherwise, the driver should set this to zero.
 
 Note that if a font is italic by design, the driver should not indicate font support for italic simulation although it can indicate font support for bold italic simulation. Similarly, the driver should not indicate font support for bold simulation if the font is bold by design, but can indicate font support for bold italic simulation. If the font is both bold and italic by design, it should not support any simulations.
 
-The offsets in the <a href="display.fontsim">FONTSIM</a> structure are relative to the base of the FONTSIM structure.
+The offsets in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566017">FONTSIM</a> structure are relative to the base of the FONTSIM structure.
 
 
 ### -field lEmbedId
@@ -684,7 +685,7 @@ Indicates that the font contains a valid digital signature.
 
 ### -field FM_INFO_RETURNS_OUTLINES
 
-Indicates that for any glyph supported by the driver, GDI can request a <a href="display.pathobj">PATHOBJ</a> structure that describes the outline of that glyph. If possible, when the outline is filled using GDI's path filling conventions, the resulting bitmap should be identical to the bitmap returned by the driver. The FM_INFO_RETURNS_OUTLINES and FM_INFO_RETURNS_STOKES flags cannot be set concurrently.
+Indicates that for any glyph supported by the driver, GDI can request a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568849">PATHOBJ</a> structure that describes the outline of that glyph. If possible, when the outline is filled using GDI's path filling conventions, the resulting bitmap should be identical to the bitmap returned by the driver. The FM_INFO_RETURNS_OUTLINES and FM_INFO_RETURNS_STOKES flags cannot be set concurrently.
 
 </dd>
 </dl>
@@ -1083,7 +1084,7 @@ Specifies the code point of the space character or its equivalent.
 
 ### -field ptlBaseline
 
-Specifies a <a href="display.pointl">POINTL</a> structure that contains the intended writing direction of this font. For example, a typical Latin font specifies a value of (1,0).
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569166">POINTL</a> structure that contains the intended writing direction of this font. For example, a typical Latin font specifies a value of (1,0).
 
 
 ### -field ptlAspect
@@ -1098,7 +1099,7 @@ Specifies a POINTL structure that contains the direction of the ascender directi
 
 ### -field rclFontBox
 
-Specifies a <a href="display.rectl">RECTL</a> structure that describes the bounding box of all glyphs in the font in design space.
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure that describes the bounding box of all glyphs in the font in design space.
 
 
 ### -field achVendId
@@ -1124,9 +1125,9 @@ Is an array of 10 bytes used to describe the visual characteristics of a given t
 ## -remarks
 The PRINTIFI32 structure is available in Windows Server 2003 SP1 and later. Because this structure is of fixed size, and it is guaranteed not to change across architectures or operating system versions, it can be used for binary file layouts. Unidrv UFM files are laid out in the format described in this structure, for all platforms. Pscript5 NTF files use the platform-specific version of this structure.
 
-Additional information for a typeface can optionally be specified in the <a href="display.ifiextra">IFIEXTRA</a> structure.
+Additional information for a typeface can optionally be specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567416">IFIEXTRA</a> structure.
 
-A driver's <a href="display.drvqueryfont">DrvQueryFont</a> routine fills out and returns an IFIMETRICS structure to GDI.
+A driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556262">DrvQueryFont</a> routine fills out and returns an IFIMETRICS structure to GDI.
 
 The PRINTIFI32 structure defines all the information for a typeface that GDI understands. Most of the members are FWORD values, which are signed 16-bit quantities in design space. If the font is a raster font, design space and device space are the same and a font unit is equivalent to the distance between pixels.
 
@@ -1151,12 +1152,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.ifimetrics">IFIMETRICS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PRINTIFI32 structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PRINTIFI32 structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

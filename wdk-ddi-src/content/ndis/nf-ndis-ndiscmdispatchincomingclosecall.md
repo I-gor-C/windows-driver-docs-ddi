@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCmDispatchIncomingCloseCall
+UID: NF:ndis.NdisCmDispatchIncomingCloseCall
 title: NdisCmDispatchIncomingCloseCall function
 author: windows-driver-content
 description: NdisCmDispatchIncomingCloseCall tells a client to tear down an active or offered call, usually because the call manager has received a request from the network to close the connection.
 old-location: netvista\ndiscmdispatchincomingclosecall.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f0f1221d-3d95-4d4c-acd0-6bcd653241c4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisCmDispatchIncomingCloseCall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCmDispatchIncomingCloseCall function
@@ -68,7 +69,7 @@ Specifies a CM-determined NDIS_STATUS_<i>XXX</i>, indicating the reason for the 
 
 Specifies the handle to the VC of the call being disconnected. This handle was supplied by NDIS
      when the VC was originally created, whether by the call manager or client, with 
-     <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>.
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>.
 
 
 ### -param Buffer [in, optional]
@@ -92,7 +93,7 @@ In the course of normal network operations, a stand-alone CM calls
     <b>NdisCmDispatchIncomingCloseCall</b> with the 
     <i>CloseStatus</i> set to NDIS_STATUS_SUCCESS because the corresponding client on the remote node has
     called 
-    <a href="netvista.ndisclclosecall">NdisClCloseCall</a>.
+    <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>.
 
 However, a call manager also can call 
     <b>NdisCmDispatchIncomingCloseCall</b> if either of the following occurs:
@@ -112,7 +113,7 @@ Abormal network conditions force the call manager to tear down active calls. For
       transfers on such a broken connection.
 
 After tearing down any call, the original creator of the VC is responsible for calling 
-    <a href="netvista.ndiscodeletevc">NdisCoDeleteVc</a> after releasing any
+    <a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a> after releasing any
     additional resources it had associated with the VC.
 
 A call to 
@@ -123,7 +124,7 @@ A call to
 Only stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
     <b>NdisCmDispatchIncomingCloseCall</b>. Connection-oriented miniport drivers that provide call-management
     support call 
-    <a href="netvista.ndismcmdispatchincomingcall">
+    <a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">
     NdisMCmDispatchIncomingCall</a> instead.
 
 
@@ -192,7 +193,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_callmanager_function">Irql_CallManager_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547917">Irql_CallManager_Function</a>
 </td>
 </tr>
 </table>
@@ -200,17 +201,17 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdispatchincomingdropparty">
+<a href="..\ndis\nf-ndis-ndiscmdispatchincomingdropparty.md">
    NdisCmDispatchIncomingDropParty</a>
 </dt>
 <dt>
-<a href="netvista.ndiscodeletevc">NdisCoDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdispatchincomingclosecall">
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingclosecall.md">
    NdisMCmDispatchIncomingCloseCall</a>
 </dt>
 <dt>
@@ -228,5 +229,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCmDispatchIncomingCloseCall function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCmDispatchIncomingCloseCall function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

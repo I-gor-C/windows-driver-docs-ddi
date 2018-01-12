@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.ReadControlSpace64
+UID: NF:wdbgexts.ReadControlSpace64
 title: ReadControlSpace64 function
 author: windows-driver-content
 description: The ReadControlSpace64 function reads the processor-specific control space into the array pointed to by buf.
 old-location: debugger\readcontrolspace64.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 4fa3d51a-d2f5-4b5f-abc0-515bf7211b87
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ReadControlSpace64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -190,7 +191,7 @@ The parameters provided to this macro are the same as those provided to the <b>R
 
 
 ## -remarks
-If you are writing 32-bit code, you should use <a href="debugger.readcontrolspace">ReadControlSpace</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.
+If you are writing 32-bit code, you should use <a href="..\wdbgexts\ns-wdbgexts-_readcontrolspace.md">ReadControlSpace</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.
 
 If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.wpprecorder.WppRecorderLogSetIdentifier
+UID: NF:wpprecorder.WppRecorderLogSetIdentifier
 title: WppRecorderLogSetIdentifier macro
 author: windows-driver-content
 description: The WppRecorderLogSetIdentifier method sets a string identifier for the recorder log.
@@ -7,7 +7,7 @@ old-location: devtest\wpprecorderlogsetidentifier.htm
 old-project: devtest
 ms.assetid: E2687B3C-2BCF-4764-99E0-4495296F14C4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: WppRecorderLogSetIdentifier
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <a href="devtest.wpprecorderlogsetidentifier">WppRecorderLogSetIdentifier</a> method sets a string identifier for the recorder log.
+The <a href="..\wpprecorder\nf-wpprecorder-wpprecorderlogsetidentifier.md">WppRecorderLogSetIdentifier</a> method sets a string identifier for the recorder log.
 
 
 
@@ -66,7 +67,7 @@ A string identifier to set.
 
 
 ## -remarks
-Do not call <a href="devtest.wpprecorderlogsetidentifier">WppRecorderLogSetIdentifier</a> on the default log handle returned by <a href="devtest.wpprecorderloggetdefault">WppRecorderLogGetDefault</a>.
+Do not call <a href="..\wpprecorder\nf-wpprecorder-wpprecorderlogsetidentifier.md">WppRecorderLogSetIdentifier</a> on the default log handle returned by <a href="https://msdn.microsoft.com/library/windows/hardware/dn895240">WppRecorderLogGetDefault</a>.
 
 
 ## -requirements

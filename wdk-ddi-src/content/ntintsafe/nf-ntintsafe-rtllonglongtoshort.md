@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlLongLongToShort
+UID: NF:ntintsafe.RtlLongLongToShort
 title: RtlLongLongToShort function
 author: windows-driver-content
 description: Converts a value of type LONGLONG to a value of type SHORT.
@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongtoshort.htm
 old-project: kernel
 ms.assetid: F9FCB214-D56A-4BCC-BB7A-40833836D333
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlLongLongToShort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlLongLongToShort function

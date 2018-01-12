@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._CM_INT13_DRIVE_PARAMETER
+UID: NS:wdm._CM_INT13_DRIVE_PARAMETER
 title: _CM_INT13_DRIVE_PARAMETER
 author: windows-driver-content
 description: The CM_INT13_DRIVE_PARAMETER structure defines a device-type-specific data record that is stored in the \\Registry\Machine\Hardware\Description tree for a disk controller if the system can collect this information during the boot process.
@@ -7,8 +7,8 @@ old-location: kernel\cm_int13_drive_parameter.htm
 old-project: kernel
 ms.assetid: eee1070f-c821-42bd-a0c9-d429fac6305b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER, PCM_INT13_DRIVE_PARAMETER, CM_INT13_DRIVE_PARAMETER
+ms.date: 1/4/2018
+ms.keywords: _CM_INT13_DRIVE_PARAMETER, CM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: CM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER
 req.product: Windows 10 or later.
 ---
 
@@ -114,5 +115,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_INT13_DRIVE_PARAMETER structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CM_INT13_DRIVE_PARAMETER structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

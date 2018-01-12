@@ -1,13 +1,13 @@
 ---
-UID: NF.ufxclient.UfxEndpointGetTransferQueue
+UID: NF:ufxclient.UfxEndpointGetTransferQueue
 title: UfxEndpointGetTransferQueue function
 author: windows-driver-content
 description: Returns the transfer queue previously created by UfxEndpointCreate.
 old-location: buses\ufxendpointgettransferqueue.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 74E78EC9-4D2B-4CA4-AC00-03EB7433617C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UfxEndpointGetTransferQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Returns the transfer queue previously created by <a href="buses.ufxendpointcreate">UfxEndpointCreate</a>.
+Returns the transfer queue previously created by <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.
 
 
 
@@ -56,7 +57,7 @@ WDFQUEUE UfxEndpointGetTransferQueue(
 
 ### -param UfxEndpoint [in]
 
-A handle to an endpoint object returned from a previous call to <a href="buses.ufxendpointcreate">UfxEndpointCreate</a>.
+A handle to an endpoint object returned from a previous call to <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.
 
 
 ## -returns
@@ -64,7 +65,7 @@ A handle to a framework queue object.
 
 
 ## -remarks
-For an code example that shows how to create an endpoint object and initialize its context, see the Remarks section of <a href="buses.ufxendpointcreate">UfxEndpointCreate</a>.
+For an code example that shows how to create an endpoint object and initialize its context, see the Remarks section of <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.
 
 
 ## -requirements
@@ -105,12 +106,12 @@ DISPATCH_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ufxendpointcreate">UfxEndpointCreate</a>
+<a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20UfxEndpointGetTransferQueue method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UfxEndpointGetTransferQueue method%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

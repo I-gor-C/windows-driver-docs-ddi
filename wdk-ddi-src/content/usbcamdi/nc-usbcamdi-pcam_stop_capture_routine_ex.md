@@ -1,5 +1,5 @@
 ---
-UID: NC.usbcamdi.PCAM_STOP_CAPTURE_ROUTINE_EX
+UID: NC:usbcamdi.PCAM_STOP_CAPTURE_ROUTINE_EX
 title: PCAM_STOP_CAPTURE_ROUTINE_EX
 author: windows-driver-content
 description: A camera minidriver's CamStopCaptureEx callback function performs any processing after the stream is stopped.
@@ -7,8 +7,8 @@ old-location: stream\camstopcaptureex.htm
 old-project: stream
 ms.assetid: b8b6e3f0-f5c8-449f-9001-3182b3547d8d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3, PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3
+ms.date: 1/9/2018
+ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product: Windows 10 or later.
 ---
 

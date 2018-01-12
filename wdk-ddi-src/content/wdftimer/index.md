@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdftimer
 ---
 
 # Wdftimer.h header
@@ -16,6 +16,8 @@ Wdftimer.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [PFN_WDFTIMERCREATE function](nc-wdftimer-pfn_wdftimercreate.md) | The WdfTimerCreate method creates a framework timer object. |
+| [PFN_WDFTIMERGETPARENTOBJECT function](nc-wdftimer-pfn_wdftimergetparentobject.md) | The WdfTimerGetParentObject method returns a handle to the parent object of a specified framework timer object. |
 | [WDF_TIMER_CONFIG_INIT function](nf-wdftimer-wdf_timer_config_init.md) | The WDF_TIMER_CONFIG_INIT function initializes a WDF_TIMER_CONFIG structure for a timer that will use a single due time. |
 | [WDF_TIMER_CONFIG_INIT_PERIODIC function](nf-wdftimer-wdf_timer_config_init_periodic.md) | The WDF_TIMER_CONFIG_INIT_PERIODIC function initializes a WDF_TIMER_CONFIG structure for a periodic timer. |
 | [WdfTimerCreate function](nf-wdftimer-wdftimercreate.md) | The WdfTimerCreate method creates a framework timer object. |

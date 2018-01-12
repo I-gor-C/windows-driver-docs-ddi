@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_GEOFENCE_DELETE_PARAM
+UID: NS:gnssdriver.GNSS_GEOFENCE_DELETE_PARAM
 title: GNSS_GEOFENCE_DELETE_PARAM
 author: windows-driver-content
 description: This structure is used for deleting a geofence.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 5F22EC0A-C4C6-43BB-B005-654E47EFACF7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_GEOFENCE_DELETE_PARAM, GNSS_GEOFENCE_DELETE_PARAM, *PGNSS_GEOFENCE_DELETE_PARAM, PGNSS_GEOFENCE_DELETE_PARAM
+ms.keywords: GNSS_GEOFENCE_DELETE_PARAM, *PGNSS_GEOFENCE_DELETE_PARAM, GNSS_GEOFENCE_DELETE_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_GEOFENCE_DELETE_PARAM, GNSS_GEOFENCE_DELETE_PARAM
 ---
 
 # GNSS_GEOFENCE_DELETE_PARAM structure

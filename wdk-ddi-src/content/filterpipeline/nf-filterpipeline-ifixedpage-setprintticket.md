@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IFixedPage.SetPrintTicket
+UID: NF:filterpipeline.IFixedPage.SetPrintTicket
 title: IFixedPage::SetPrintTicket method
 author: windows-driver-content
 description: The SetPrintTicket method associates a print ticket with the page.
@@ -7,7 +7,7 @@ old-location: print\ifixedpage_setprintticket.htm
 old-project: print
 ms.assetid: d899211a-e98d-45f6-9574-8b5f51658edf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IFixedPage, IFixedPage::SetPrintTicket, SetPrintTicket
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IFixedPage::SetPrintTicket method

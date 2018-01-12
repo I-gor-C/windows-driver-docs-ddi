@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoGetDeviceProperty
+UID: NF:wdm.IoGetDeviceProperty
 title: IoGetDeviceProperty function
 author: windows-driver-content
 description: The IoGetDeviceProperty routine retrieves information about a device such as configuration information and the name of its PDO.
@@ -7,7 +7,7 @@ old-location: kernel\iogetdeviceproperty.htm
 old-project: kernel
 ms.assetid: 8c3b7f81-ea6e-47ae-a396-58826d097f1f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoGetDeviceProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -65,7 +66,7 @@ Pointer to the physical device object (PDO) for the device being queried.
 
 ### -param DeviceProperty [in]
 
-Specifies the device property being requested. Must be one of the following <a href="kernel.device_registry_property">DEVICE_REGISTRY_PROPERTY</a> enumeration values:
+Specifies the device property being requested. Must be one of the following <a href="https://msdn.microsoft.com/a17b4a88-45e8-45e7-b879-2f41b97be368">DEVICE_REGISTRY_PROPERTY</a> enumeration values:
 
 
 
@@ -79,7 +80,7 @@ The interpretation of this address is bus-specific. The caller of this routine s
 
 ### -param DevicePropertyBootConfiguration
 
-Requests the hardware resources assigned to the device by the firmware, in raw form. <i>PropertyBuffer</i> points to a <a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a> structure.
+Requests the hardware resources assigned to the device by the firmware, in raw form. <i>PropertyBuffer</i> points to a <a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a> structure.
 
 
 ### -param DevicePropertyBootConfigurationTranslated
@@ -139,12 +140,12 @@ Requests the <a href="wdkgloss.h#wdkgloss.hardware_id#wdkgloss.hardware_id"><i>h
 
 ### -param DevicePropertyInstallState
 
-(Windows XP and later versions of Windows.) Requests the device's installation state. The installation state is returned as a <a href="kernel.device_install_state">DEVICE_INSTALL_STATE</a> enumeration value (see the Ntddk.h header file). 
+(Windows XP and later versions of Windows.) Requests the device's installation state. The installation state is returned as a <a href="..\wdm\ne-wdm-_device_install_state.md">DEVICE_INSTALL_STATE</a> enumeration value (see the Ntddk.h header file). 
 
 
 ### -param DevicePropertyLegacyBusType
 
-Requests the bus type, such as PCIBus or PCMCIABus. <i>PropertyBuffer</i> points to an <a href="kernel.interface_type">INTERFACE_TYPE</a> enumeration value.
+Requests the bus type, such as PCIBus or PCMCIABus. <i>PropertyBuffer</i> points to an <a href="..\wdm\ne-wdm-_interface_type.md">INTERFACE_TYPE</a> enumeration value.
 
 
 ### -param DevicePropertyLocationInformation
@@ -164,7 +165,7 @@ Requests the name of the PDO for this device. <i>PropertyBuffer</i> points to a 
 
 ### -param DevicePropertyRemovalPolicy
 
-(Windows XP and later versions of Windows.) Requests the device's current removal policy. The operating system uses this value as a hint to determine how the device is normally removed. The <i>PropertyBuffer</i> parameter points to a <a href="kernel.device_removal_policy">DEVICE_REMOVAL_POLICY</a> enumeration value.
+(Windows XP and later versions of Windows.) Requests the device's current removal policy. The operating system uses this value as a hint to determine how the device is normally removed. The <i>PropertyBuffer</i> parameter points to a <a href="..\wdm\ne-wdm-_device_removal_policy.md">DEVICE_REMOVAL_POLICY</a> enumeration value.
 
 
 ### -param DevicePropertyUINumber
@@ -286,7 +287,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -294,25 +295,25 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 <dt>
-<a href="kernel.cm_resource_list">CM_RESOURCE_LIST</a>
+<a href="..\wdm\ns-wdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
 </dt>
 <dt>
-<a href="kernel.device_removal_policy">DEVICE_REMOVAL_POLICY</a>
+<a href="..\wdm\ne-wdm-_device_removal_policy.md">DEVICE_REMOVAL_POLICY</a>
 </dt>
 <dt><a href="wdkgloss.g#wdkgloss.guid#wdkgloss.guid"><b>GUID</b></a></dt>
 <dt>
-<a href="kernel.io_resource_requirements_list">IO_RESOURCE_REQUIREMENTS_LIST</a>
+<a href="..\wdm\ns-wdm-_io_resource_requirements_list.md">IO_RESOURCE_REQUIREMENTS_LIST</a>
 </dt>
 <dt>
-<a href="kernel.interface_type">INTERFACE_TYPE</a>
+<a href="..\wdm\ne-wdm-_interface_type.md">INTERFACE_TYPE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetDeviceProperty routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoGetDeviceProperty routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

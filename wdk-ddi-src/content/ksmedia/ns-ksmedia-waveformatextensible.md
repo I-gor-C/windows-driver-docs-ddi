@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.WAVEFORMATEXTENSIBLE
+UID: NS:ksmedia.WAVEFORMATEXTENSIBLE
 title: WAVEFORMATEXTENSIBLE
 author: windows-driver-content
 description: The WAVEFORMATEXTENSIBLE structure specifies the format of an audio wave stream.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 54bcb18e-df4b-471c-b121-4db75ce5c49b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: WAVEFORMATEXTENSIBLE, *PWAVEFORMATEXTENSIBLE, WAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE
+ms.keywords: WAVEFORMATEXTENSIBLE, *PWAVEFORMATEXTENSIBLE, WAVEFORMATEXTENSIBLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWAVEFORMATEXTENSIBLE, WAVEFORMATEXTENSIBLE
 ---
 
 # WAVEFORMATEXTENSIBLE structure
@@ -62,7 +63,7 @@ typedef struct {
 
 ### -field Format
 
-Specifies the stream's wave-data format. This member is a structure of type <a href="audio.waveformatex">WAVEFORMATEX</a>. The <b>wFormat</b> member of WAVEFORMATEX should be set to WAVE_FORMAT_EXTENSIBLE. The <b>wBitsPerSample</b> member of WAVEFORMATEX is defined unambiguously as the size of the container for each sample. Sample containers are always byte-aligned, and <b>wBitsPerSample</b> must be a multiple of eight.
+Specifies the stream's wave-data format. This member is a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a>. The <b>wFormat</b> member of WAVEFORMATEX should be set to WAVE_FORMAT_EXTENSIBLE. The <b>wBitsPerSample</b> member of WAVEFORMATEX is defined unambiguously as the size of the container for each sample. Sample containers are always byte-aligned, and <b>wBitsPerSample</b> must be a multiple of eight.
 
 
 ### -field Samples
@@ -96,7 +97,7 @@ Specifies the subformat. For more information, see the following Remarks section
 
 
 ## -remarks
-WAVEFORMATEXTENSIBLE is an extended form of the <a href="audio.waveformatex">WAVEFORMATEX</a> structure. WAVEFORMATEX can unambiguously describe only a subset of the formats that can be described by WAVEFORMATEXTENSIBLE. WAVEFORMATEXTENSIBLE is not subject to the limitations of WAVEFORMATEX, which is unable to unambiguously specify formats with more than two channels or for which the number of valid bits per sample does not equal the sample container size. For more information, see <a href="https://msdn.microsoft.com/85aa74b4-8e33-49f4-82e7-561baa55c265">Audio Data Formats and Data Ranges</a>.
+WAVEFORMATEXTENSIBLE is an extended form of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a> structure. WAVEFORMATEX can unambiguously describe only a subset of the formats that can be described by WAVEFORMATEXTENSIBLE. WAVEFORMATEXTENSIBLE is not subject to the limitations of WAVEFORMATEX, which is unable to unambiguously specify formats with more than two channels or for which the number of valid bits per sample does not equal the sample container size. For more information, see <a href="https://msdn.microsoft.com/85aa74b4-8e33-49f4-82e7-561baa55c265">Audio Data Formats and Data Ranges</a>.
 
 Frequently, the <b>wValidBitsPerSample</b> member, which specifies the sample precision, contains the same value as the <b>Format</b>.<b>wBitsPerSample</b> member, which specifies the sample container size. However, these values can be different. For example, if the wave data originated from a 20-bit A/D converter, then <b>wValidBitsPerSample</b> should be 20 but <b>Format</b>.<b>wBitsPerSample</b> might be 24 or 32. If <b>wValidBitsPerSample</b> is less than <b>Format</b>.<b>wBitsPerSample</b>, the valid bits (the actual PCM data) are left-aligned within the container. The unused bits in the least-significant portion of the container should be set to zero.
 
@@ -180,7 +181,7 @@ The channels that are specified in <b>dwChannelMask</b> should be present in the
 
 For example, if only front-left and front-center are specified, then front-left and front-center should be in channels 0 and 1, respectively, of the interleaved stream.
 
-As a second example, if <b>nChannels</b> (in the <b>Format</b> member; see <a href="audio.waveformatex">WAVEFORMATEX</a>) is set to 4 and <b>dwChannelMask</b> is set to 0x00000033, the audio channels are intended for playback to the front-left, front-right, back-left, and back-right speakers. The channel data should be interleaved in that order within each block.
+As a second example, if <b>nChannels</b> (in the <b>Format</b> member; see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a>) is set to 4 and <b>dwChannelMask</b> is set to 0x00000033, the audio channels are intended for playback to the front-left, front-right, back-left, and back-right speakers. The channel data should be interleaved in that order within each block.
 
 Channel locations beyond the predefined ones are considered reserved.
 
@@ -208,7 +209,7 @@ KSAUDIO_SPEAKER_DIRECTOUT represents a configuration with no speakers and is def
 
 For more information about multichannel configurations, see the white paper titled <i>Multiple Channel Audio Data and WAVE Files</i> at the <a href="http://go.microsoft.com/fwlink/p/?linkid=8751">audio technology</a> website.
 
-The <b>SubFormat</b> member contains a GUID that specifies the general data format for a wave stream. For example, this GUID might specify that the stream contains integer PCM data. The other members provide additional information such as the sample size and the number of channels. The meaning of the <b>SubFormat</b> GUID is similar to that of the 16-bit format tag in the <a href="audio.waveformatex">WAVEFORMATEX</a> structure's <b>wFormatTag</b> member.
+The <b>SubFormat</b> member contains a GUID that specifies the general data format for a wave stream. For example, this GUID might specify that the stream contains integer PCM data. The other members provide additional information such as the sample size and the number of channels. The meaning of the <b>SubFormat</b> GUID is similar to that of the 16-bit format tag in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a> structure's <b>wFormatTag</b> member.
 
 Before WAVEFORMATEXTENSIBLE was introduced in Windows 98 Second Edition, WAVEFORMATEX was the preferred structure for specifying wave formats. At that time, vendors needed to register each new wave format with Microsoft so that an official format tag could be assigned to the format. A list of registered format tags appears in public header file Mmreg.h.
 
@@ -263,7 +264,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.waveformatex">WAVEFORMATEX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a>
 </dt>
 <dt>
 <a href="..\ksmedia\ns-ksmedia-ksaudio_channel_config.md">KSAUDIO_CHANNEL_CONFIG</a>

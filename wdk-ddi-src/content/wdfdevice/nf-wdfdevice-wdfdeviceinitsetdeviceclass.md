@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdevice.WdfDeviceInitSetDeviceClass
+UID: NF:wdfdevice.WdfDeviceInitSetDeviceClass
 title: WdfDeviceInitSetDeviceClass function
 author: windows-driver-content
 description: The WdfDeviceInitSetDeviceClass method specifies a GUID that identifies the device's device setup class.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetdeviceclass.htm
 old-project: wdf
 ms.assetid: c87a8368-3804-4a07-92c8-65a453d0808f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDeviceInitSetDeviceClass
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ VOID WdfDeviceInitSetDeviceClass(
 
 ### -param DeviceInit [in]
 
-A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure.
 
 
 ### -param DeviceClassGuid [in]
@@ -74,15 +75,15 @@ None
 
 
 ## -remarks
-The registry can contain values that override the values that a driver specifies when it calls <a href="wdf.wdfdeviceinitassignsddlstring">WdfDeviceInitAssignSDDLString</a>, <a href="wdf.wdfdeviceinitsetdevicetype">WdfDeviceInitSetDeviceType</a>, <a href="wdf.wdfdeviceinitsetcharacteristics">WdfDeviceInitSetCharacteristics</a>, and <a href="wdf.wdfdeviceinitsetexclusive">WdfDeviceInitSetExclusive</a>. The driver can call <b>WdfDeviceInitSetDeviceClass</b> to specify a GUID that identifies the section of the registry that contains the override values.
+The registry can contain values that override the values that a driver specifies when it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignsddlstring.md">WdfDeviceInitAssignSDDLString</a>, <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetdevicetype.md">WdfDeviceInitSetDeviceType</a>, <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetcharacteristics.md">WdfDeviceInitSetCharacteristics</a>, and <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetexclusive.md">WdfDeviceInitSetExclusive</a>. The driver can call <b>WdfDeviceInitSetDeviceClass</b> to specify a GUID that identifies the section of the registry that contains the override values.
 
 Typically, a driver calls <b>WdfDeviceInitSetDeviceClass</b> only if it is creating a <a href="wdf.using_control_device_objects">control device</a>. 
 
 For more information about using the registry, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563755">Setting Device Object Registry Properties After Installation</a>.
 
-If a driver calls <b>WdfDeviceInitSetDeviceClass</b>, it must do so before it calls <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>.
+If a driver calls <b>WdfDeviceInitSetDeviceClass</b>, it must do so before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.
 
-For more information about calling <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>, see <a href="wdf.creating_a_framework_device_object">Creating a Framework Device Object</a>.
+For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>, see <a href="https://msdn.microsoft.com/25023c19-a153-4bd4-9fb6-3a1bf85860aa">Creating a Framework Device Object</a>.
 
 The following code example sets a device's setup class to the system device class.
 
@@ -128,7 +129,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -148,7 +149,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_childdeviceinitapi">ChildDeviceInitAPI</a>, <a href="devtest.kmdf_controldeviceinitapi">ControlDeviceInitAPI</a>, <a href="devtest.kmdf_deviceinitapi">DeviceInitAPI</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_pdodeviceinitapi">PdoDeviceInitAPI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975068">ChildDeviceInitAPI</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff543531">ControlDeviceInitAPI</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544843">DeviceInitAPI</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550354">PdoDeviceInitAPI</a>
 </td>
 </tr>
 </table>

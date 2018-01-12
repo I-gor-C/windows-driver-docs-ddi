@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdvd.IOCTL_DVD_GET_REGION
+UID: NI:ntddcdvd.IOCTL_DVD_GET_REGION
 title: IOCTL_DVD_GET_REGION
 author: windows-driver-content
 description: Returns Region Playback Control (RPC) information for a DVD device, such as whether the player supports the RPC2 standard, the current region code of the player, and the remaining number of times the player's region code can be changed by the user.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_dvd_get_region.htm
 old-project: storage
 ms.assetid: 2c3d6962-1d72-47e7-aa7c-226e5a3aa3d4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, PDVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.date: 1/10/2018
+ms.keywords: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_DVD_GET_REGION IOCTL
@@ -58,7 +59,7 @@ None.
 
 
 ### -output-buffer
-The driver returns the <a href="storage.dvd_region">DVD_REGION</a> data in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
+The driver returns the <a href="..\ntddcdvd\ns-ntddcdvd-_dvd_region.md">DVD_REGION</a> data in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
 
 
 ### -output-buffer-length
@@ -99,12 +100,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.dvd_region">DVD_REGION</a>
+<a href="..\ntddcdvd\ns-ntddcdvd-_dvd_region.md">DVD_REGION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_DVD_GET_REGION control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_DVD_GET_REGION control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

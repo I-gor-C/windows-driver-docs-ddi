@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlMdlWriteCompleteDev~r3
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlMdlWriteCompleteDev~r3
 title: FsRtlMdlWriteCompleteDev function
 author: windows-driver-content
 description: The FsRtlMdlWriteCompleteDev routine frees the resources that FsRtlPrepareMdlWriteDev allocated.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlmdlwritecompletedev.htm
 old-project: ifsk
 ms.assetid: 7d0525f1-8422-47a4-a64e-11e35496a849
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlMdlWriteCompleteDev
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlMdlWriteCompleteDev function
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The <b>FsRtlMdlWriteCompleteDev</b> routine frees the resources that <a href="ifsk.fsrtlpreparemdlwritedev">FsRtlPrepareMdlWriteDev</a> allocated.
+The <b>FsRtlMdlWriteCompleteDev</b> routine frees the resources that <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpreparemdlwritedev~r6.md">FsRtlPrepareMdlWriteDev</a> allocated.
 
 
 
@@ -81,7 +82,7 @@ The <b>FsRtlMdlWriteCompleteDev</b> routine returns <b>TRUE</b> if the operation
 
 
 ## -remarks
-The <b>FsRtlMdlWriteCompleteDev</b> routine frees the memory descriptor lists (MDLs) that <a href="ifsk.fsrtlpreparemdlwritedev">FsRtlPrepareMdlWriteDev</a> allocated and unlocks the cache memory that <b>FsRtlPrepareMdlWriteDev</b> locked.
+The <b>FsRtlMdlWriteCompleteDev</b> routine frees the memory descriptor lists (MDLs) that <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpreparemdlwritedev~r6.md">FsRtlPrepareMdlWriteDev</a> allocated and unlocks the cache memory that <b>FsRtlPrepareMdlWriteDev</b> locked.
 
 If the FO_WRITE_THROUGH flag is set on the file object pointed to by the <i>FileObject</i> parameter, <b>FsRtlMdlWriteCompleteDev</b> immediately flushes the cached memory to disk. This flush operation re-enters the file system and can cause <b>FsRtlMdlWriteCompleteDev</b> to raise an exception if the flush operation fails. 
 
@@ -149,12 +150,12 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fsrtlpreparemdlwritedev">FsRtlPrepareMdlWriteDev</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpreparemdlwritedev~r6.md">FsRtlPrepareMdlWriteDev</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlMdlWriteCompleteDev routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlMdlWriteCompleteDev routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

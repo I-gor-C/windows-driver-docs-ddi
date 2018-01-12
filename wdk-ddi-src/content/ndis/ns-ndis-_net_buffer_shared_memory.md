@@ -1,13 +1,13 @@
 ---
-UID: NS.NDIS._NET_BUFFER_SHARED_MEMORY
+UID: NS:ndis._NET_BUFFER_SHARED_MEMORY
 title: _NET_BUFFER_SHARED_MEMORY
 author: windows-driver-content
 description: The NET_BUFFER_SHARED_MEMORY structure specifies a shared memory buffer that is associated with a NET_BUFFER structure.
 old-location: netvista\net_buffer_shared_memory.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 492bb1cd-fc3e-4e85-9074-32ebbf1fb837
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _NET_BUFFER_SHARED_MEMORY, *PNET_BUFFER_SHARED_MEMORY, NET_BUFFER_SHARED_MEMORY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNET_BUFFER_SHARED_MEMORY, NET_BUFFER_SHARED_MEMORY
 ---
 
 # _NET_BUFFER_SHARED_MEMORY structure
@@ -39,7 +40,7 @@ req.irql: See Remarks section
 
 ## -description
 The NET_BUFFER_SHARED_MEMORY structure specifies a shared memory buffer that is associated with a 
-  <a href="netvista.net_buffer">NET_BUFFER</a> structure.
+  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure.
 
 
 
@@ -87,7 +88,7 @@ A ULONG value for the length, in bytes, of the shared memory segment.
 ## -remarks
 An NDIS 6.20 or later driver uses the NET_BUFFER_SHARED_MEMORY structure to describe a shared memory
     buffer. There can be a linked list of such shared memory buffers that are associated with a 
-    <a href="netvista.net_buffer">NET_BUFFER</a> structure. Virtual machine queue (VMQ)
+    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure. Virtual machine queue (VMQ)
     capable NICs use these shared memory buffers in the virtualization environment.
 
 Use the 
@@ -132,7 +133,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568420">NET_BUFFER_SHARED_MEM_FLAGS</a>
@@ -155,5 +156,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NET_BUFFER_SHARED_MEMORY structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_SHARED_MEMORY structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

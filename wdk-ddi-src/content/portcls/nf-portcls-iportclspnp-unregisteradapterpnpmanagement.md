@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsPnp.UnregisterAdapterPnpManagement
+UID: NF:portcls.IPortClsPnp.UnregisterAdapterPnpManagement
 title: IPortClsPnp::UnregisterAdapterPnpManagement method
 author: windows-driver-content
 description: The UnRegisterAdapterPowerManagement method unregisters the PnP management interface of the adapter from PortCls.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsPnp::UnregisterAdapterPnpManagement method
@@ -55,7 +56,7 @@ NTSTATUS UnregisterAdapterPnpManagement(
 
 ### -param DeviceObject [in]
 
-Specifies a pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter that the PnP management was registered with earlier using <a href="audio.iportclspnp_registeradapterpnpmanagement">IPortClsPnp::RegisterAdapterPnpManagement</a>.
+Specifies a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter that the PnP management was registered with earlier using <a href="https://msdn.microsoft.com/library/windows/hardware/mt604860">IPortClsPnp::RegisterAdapterPnpManagement</a>.
 
 
 ## -returns
@@ -118,7 +119,7 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iportclspnp.md">IPortClsPnp</a>
 </dt>
 <dt>
-<a href="audio.iportclspnp_registeradapterpnpmanagement">IPortClsPnp::RegisterAdapterPnpManagement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt604860">IPortClsPnp::RegisterAdapterPnpManagement</a>
 </dt>
 </dl>
  

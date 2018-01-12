@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:iscsicfg
 ---
 
 # Iscsicfg.h header
@@ -27,5 +27,5 @@ Iscsicfg.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PISCSI_ENCRYPTION_TYPES enumeration](ne-iscsicfg-piscsi_encryption_types.md) | The ISCSI_ENCRYPTION_TYPES enumeration indicates the type of encryption that is supported. |
-| [PISCSI_NIC_LINKSTATE enumeration](ne-iscsicfg-piscsi_nic_linkstate.md) | The ISCSI_NIC_LINKSTATE enumeration indicates whether a port is connected to the network or not. |
+| [*PISCSI_ENCRYPTION_TYPES enumeration](ne-iscsicfg-piscsi_encryption_types.md) | The ISCSI_ENCRYPTION_TYPES enumeration indicates the type of encryption that is supported. |
+| [*PISCSI_NIC_LINKSTATE enumeration](ne-iscsicfg-piscsi_nic_linkstate.md) | The ISCSI_NIC_LINKSTATE enumeration indicates whether a port is connected to the network or not. |

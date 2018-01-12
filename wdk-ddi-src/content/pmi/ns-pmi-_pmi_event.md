@@ -1,5 +1,5 @@
 ---
-UID: NS.PMI._PMI_EVENT
+UID: NS:pmi._PMI_EVENT
 title: _PMI_EVENT
 author: windows-driver-content
 description: The PMI_EVENT structure contains information about a power metering and budgeting event that is signaled through the Power Meter Interface (PMI).
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: 51ae6247-c482-4f13-8699-df871ae346c0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PMI_EVENT, PPMI_EVENT, *PPMI_EVENT, PMI_EVENT
+ms.keywords: _PMI_EVENT, *PPMI_EVENT, PMI_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPMI_EVENT, PMI_EVENT
 ---
 
 # _PMI_EVENT structure
@@ -145,7 +146,7 @@ Header
 <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a>
 </dt>
 <dt>
-<a href="kernel.irp">IRP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
 </dt>
 <dt>
 <a href="..\pmi\ne-pmi-pmi_event_type.md">PMI_EVENT_TYPE</a>

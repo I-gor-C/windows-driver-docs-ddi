@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsInitializeDevice
+UID: NF:ks.KsInitializeDevice
 title: KsInitializeDevice function
 author: windows-driver-content
 description: The KsInitializeDevice function is called by AVStream to initialize the AVStream device class from within KsCreateDevice.
@@ -7,7 +7,7 @@ old-location: stream\ksinitializedevice.htm
 old-project: stream
 ms.assetid: f33122d0-7661-454a-87f7-7b5795793376
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsInitializeDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsInitializeDevice function
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The<b> KsInitializeDevice </b>function is called by AVStream to initialize the AVStream device class from within <a href="stream.kscreatedevice">KsCreateDevice</a>.
+The<b> KsInitializeDevice </b>function is called by AVStream to initialize the AVStream device class from within <a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>.
 
 
 
@@ -58,24 +59,24 @@ NTSTATUS KsInitializeDevice(
 
 ### -param FunctionalDeviceObject [in]
 
-A pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure representing the WDM functional device object for the device being initialized. 
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure representing the WDM functional device object for the device being initialized. 
 
-Normally, this is returned from an <a href="kernel.iocreatedevice">IoCreateDevice</a> call. Minidrivers calling this function directly are responsible for calling <b>IoCreateDevice</b> and attaching themselves to the device stack.
+Normally, this is returned from an <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> call. Minidrivers calling this function directly are responsible for calling <b>IoCreateDevice</b> and attaching themselves to the device stack.
 
 
 ### -param PhysicalDeviceObject [in]
 
-A pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure representing the WDM physical device object for the device being initialized.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure representing the WDM physical device object for the device being initialized.
 
 
 ### -param NextDeviceObject [in]
 
-A pointer to the next <a href="kernel.device_object">DEVICE_OBJECT</a> structure in the device stack as determined by a call to <a href="kernel.ioattachdevicetodevicestack">IoAttachDeviceToDeviceStack</a>.
+A pointer to the next <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure in the device stack as determined by a call to <a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>.
 
 
 ### -param Descriptor [in, optional]
 
-A pointer to a <a href="stream.ksdevice_descriptor">KSDEVICE_DESCRIPTOR</a> structure that describes the characteristics of the device being initialized. If this parameter is <b>NULL</b>, the device is initialized with the default characteristics and has no associated filter factories.
+A pointer to a <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a> structure that describes the characteristics of the device being initialized. If this parameter is <b>NULL</b>, the device is initialized with the default characteristics and has no associated filter factories.
 
 
 ## -returns
@@ -83,7 +84,7 @@ A pointer to a <a href="stream.ksdevice_descriptor">KSDEVICE_DESCRIPTOR</a> stru
 
 
 ## -remarks
-Most minidrivers do not call this function directly. Only call <b>KsInitializeDevice</b> if your minidriver does not use <a href="stream.ksinitializedriver">KsInitializeDriver</a> for initialization, handles <b>AddDevice</b> independently, and does not use <a href="stream.ksadddevice">KsAddDevice</a> or <a href="stream.kscreatedevice">KsCreateDevice</a> in its <b>AddDevice</b> handler. 
+Most minidrivers do not call this function directly. Only call <b>KsInitializeDevice</b> if your minidriver does not use <a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a> for initialization, handles <b>AddDevice</b> independently, and does not use <a href="..\ks\nf-ks-ksadddevice.md">KsAddDevice</a> or <a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a> in its <b>AddDevice</b> handler. 
 
 
 ## -requirements
@@ -146,36 +147,36 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksinitializedriver">KsInitializeDriver</a>
+<a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
 </dt>
 <dt>
-<a href="stream.ksadddevice">KsAddDevice</a>
+<a href="..\ks\nf-ks-ksadddevice.md">KsAddDevice</a>
 </dt>
 <dt>
-<a href="stream.kscreatedevice">KsCreateDevice</a>
+<a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
 </dt>
 <dt>
-<a href="stream.ksterminatedevice">KsTerminateDevice</a>
+<a href="..\ks\nf-ks-ksterminatedevice.md">KsTerminateDevice</a>
 </dt>
 <dt>
-<a href="stream.ksdevice">KSDEVICE</a>
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 </dt>
 <dt>
-<a href="kernel.iocreatedevice">IoCreateDevice</a>
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 </dt>
 <dt>
-<a href="kernel.ioattachdevicetodevicestack">IoAttachDeviceToDeviceStack</a>
+<a href="..\wdm\nf-wdm-ioattachdevicetodevicestack.md">IoAttachDeviceToDeviceStack</a>
 </dt>
 <dt>
-<a href="kernel.driver_object">DRIVER_OBJECT</a>
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsInitializeDevice function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsInitializeDevice function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

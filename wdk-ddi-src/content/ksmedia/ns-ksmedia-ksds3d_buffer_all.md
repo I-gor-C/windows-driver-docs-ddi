@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSDS3D_BUFFER_ALL
+UID: NS:ksmedia.KSDS3D_BUFFER_ALL
 title: KSDS3D_BUFFER_ALL
 author: windows-driver-content
 description: The KSDS3D_BUFFER_ALL structure specifies all the 3D characteristics of a DirectSound 3D buffer.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: c94e2189-62a6-44d6-9a29-4fd32c72437a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSDS3D_BUFFER_ALL, PKSDS3D_BUFFER_ALL, KSDS3D_BUFFER_ALL, *PKSDS3D_BUFFER_ALL
+ms.keywords: KSDS3D_BUFFER_ALL, *PKSDS3D_BUFFER_ALL, KSDS3D_BUFFER_ALL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSDS3D_BUFFER_ALL, KSDS3D_BUFFER_ALL
 ---
 
 # KSDS3D_BUFFER_ALL structure
@@ -63,7 +64,7 @@ typedef struct {
 
 ### -field Position
 
-Specifies the x, y, and z position coordinates of the 3D sound buffer. This member is a structure of type <a href="audio.ds3dvector">DS3DVECTOR</a>.
+Specifies the x, y, and z position coordinates of the 3D sound buffer. This member is a structure of type <a href="..\ksmedia\ns-ksmedia-_ds3dvector.md">DS3DVECTOR</a>.
 
 
 ### -field Velocity
@@ -146,7 +147,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.ds3dvector">DS3DVECTOR</a>
+<a href="..\ksmedia\ns-ksmedia-_ds3dvector.md">DS3DVECTOR</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537315">KSPROPERTY_DIRECTSOUND3DBUFFER_ALL</a>

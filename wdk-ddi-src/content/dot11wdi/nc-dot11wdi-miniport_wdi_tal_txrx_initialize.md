@@ -1,14 +1,14 @@
 ---
-UID: NC.dot11wdi.MINIPORT_WDI_TAL_TXRX_INITIALIZE
+UID: NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_INITIALIZE
 title: MINIPORT_WDI_TAL_TXRX_INITIALIZE
 author: windows-driver-content
 description: The MiniportWdiTalTxRxInitialize handler function initializes data structures in the TAL and exchanges datapath component handles between the UE and TAL.
 old-location: netvista\miniportwditaltxrxinitialize.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: C297D681-D43F-4105-9E08-7FF42807E9A0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS, PSYNTH_STATS
+ms.date: 1/8/2018
+ms.keywords: _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 # MINIPORT_WDI_TAL_TXRX_INITIALIZE callback
@@ -41,7 +42,7 @@ req.irql:
 The 
   MiniportWdiTalTxRxInitialize handler function initializes data structures in the TAL and exchanges datapath component handles between the UE and TAL. This is issued in the context of the driver initialization, and is issued prior to querying the firmware for the device capabilities.
 
-This is a WDI miniport handler inside <a href="netvista.ndis_miniport_driver_wdi_characteristics">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>.
+This is a WDI miniport handler inside <a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>.
 
 
 
@@ -91,7 +92,7 @@ The UE initializes the NDIS Header field so the LE can determine the revision an
 
 ### -param pMiniportWdiFrameMetadataExtraSpace [out]
 
-The LE sets the value pointed to by this parameter to the amount of space that WDI should reserve after the <a href="netvista.wdi_frame_metadata">WDI_FRAME_METADATA</a> for the LE to use.
+The LE sets the value pointed to by this parameter to the amount of space that WDI should reserve after the <a href="..\dot11wdi\ns-dot11wdi-_wdi_frame_metadata.md">WDI_FRAME_METADATA</a> for the LE to use.
 
 
 ## -returns
@@ -153,21 +154,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_miniport_driver_wdi_characteristics">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt297625">TAL_TXRX_HANDLE</a>
 </dt>
 <dt>
-<a href="netvista.wdi_frame_metadata">WDI_FRAME_METADATA</a>
+<a href="..\dot11wdi\ns-dot11wdi-_wdi_frame_metadata.md">WDI_FRAME_METADATA</a>
 </dt>
 <dt>
-<a href="netvista.wdi_general_datapath_interfaces">WDI general datapath interfaces</a>
+<a href="https://msdn.microsoft.com/5B40171C-4E5F-4C35-A6E7-1EA5181C02E8">WDI general datapath interfaces</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_WDI_TAL_TXRX_INITIALIZE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_WDI_TAL_TXRX_INITIALIZE callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

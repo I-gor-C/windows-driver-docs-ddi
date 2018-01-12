@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ClfsReadPreviousRestartArea
+UID: NF:wdm.ClfsReadPreviousRestartArea
 title: ClfsReadPreviousRestartArea function
 author: windows-driver-content
 description: The ClfsReadPreviousRestartArea routine reads the previous restart record relative to the current record in a read context.
@@ -7,7 +7,7 @@ old-location: kernel\clfsreadpreviousrestartarea.htm
 old-project: kernel
 ms.assetid: 832da270-e1e1-41bf-a9cf-0b363c0d2d74
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ClfsReadPreviousRestartArea
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Clfs.lib
 req.dll: Clfs.sys
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ NTSTATUS ClfsReadPreviousRestartArea(
 
 ### -param pvReadContext [in]
 
-A pointer to a read context obtained by a previous call to <a href="kernel.clfsreadrestartarea">ClfsReadRestartArea</a>.
+A pointer to a read context obtained by a previous call to <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>.
 
 
 ### -param ppvRestartBuffer [out]
@@ -74,7 +75,7 @@ A pointer to a ULONG-typed variable that receives the size, in bytes, of the buf
 
 ### -param plsnRestart [out]
 
-A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that receives the previous LSN of the restart record that was read.
+A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that receives the previous LSN of the restart record that was read.
 
 
 ## -returns
@@ -88,7 +89,7 @@ For information about reading records from CLFS streams, see <a href="https://ms
 
 Read contexts are not thread-safe. Clients are responsible for serializing access to read contexts.
 
-Clients append restart records to a CLFS log by calling <a href="kernel.clfswriterestartarea">ClfsWriteRestartArea</a>.       
+Clients append restart records to a CLFS log by calling <a href="..\wdm\nf-wdm-clfswriterestartarea.md">ClfsWriteRestartArea</a>.       
 
 With the <b>ReadPreviousLogRestartArea</b> routine, clients can implement a form of fuzzy checkpointing. For example, the checkpoint state could consist of the log records delimited by two or more restart records. 
 
@@ -164,18 +165,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfs_lsn">CLFS_LSN</a>
+<a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a>
 </dt>
 <dt>
-<a href="kernel.clfsreadrestartarea">ClfsReadRestartArea</a>
+<a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
 </dt>
 <dt>
-<a href="kernel.clfswriterestartarea">ClfsWriteRestartArea</a>
+<a href="..\wdm\nf-wdm-clfswriterestartarea.md">ClfsWriteRestartArea</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReadPreviousRestartArea routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReadPreviousRestartArea routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.rxworkq.RxPostToWorkerThread
+UID: NF:rxworkq.RxPostToWorkerThread
 title: RxPostToWorkerThread function
 author: windows-driver-content
 description: RxPostToWorkerThread invokes a routine passed as a parameter in the context of a worker thread. Memory for the WORK_QUEUE_ITEM must be allocated by the caller.
@@ -7,7 +7,7 @@ old-location: ifsk\rxposttoworkerthread.htm
 old-project: ifsk
 ms.assetid: 0fc9fb57-219e-4a3d-bc82-904ab8657d66
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RxPostToWorkerThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -116,13 +117,13 @@ There are two common cases of dispatching operations to worker threads. The trad
 
 When an operation is going to be repeatedly dispatched, time is conserved by allocating in advance the WORK_QUEUE_ITEM structure as part of the data structure to be dispatched. In this case, use the <b>RxPostToWorkerThread</b> routine. 
 
-For an infrequent operation, you can conserve space by dynamically allocating and freeing memory for the work queue item when it is needed. In this case, use the <a href="ifsk.rxdispatchtoworkerthread">RxDispatchToWorkerThread</a> routine. 
+For an infrequent operation, you can conserve space by dynamically allocating and freeing memory for the work queue item when it is needed. In this case, use the <a href="..\rxworkq\nf-rxworkq-rxdispatchtoworkerthread.md">RxDispatchToWorkerThread</a> routine. 
 
 The <b>RxPostToWorkerThread</b> routine invokes a routine in the context of a worker thread. The memory for the WORK_QUEUE_ITEM structure must be allocated from non-paged pool memory by the calling routine. 
 
 The current implementation of the <b>RxPostToWorkerThread </b>routine queues work onto the same processor from which the call originated. 
 
-If the <b>RxPostToWorkerThread </b>routine fails on a debug build, the <a href="ifsk._rxlog">_RxLog</a> routine is called with details of the error. If the <b>RxPostToWorkerThread </b>routine fails and WMI is enabled in the kernel, details of the error will be logged with WMI.
+If the <b>RxPostToWorkerThread </b>routine fails on a debug build, the <a href="..\rxlog\nf-rxlog-_rxlog.md">_RxLog</a> routine is called with details of the error. If the <b>RxPostToWorkerThread </b>routine fails and WMI is enabled in the kernel, details of the error will be logged with WMI.
 
 
 ## -requirements
@@ -164,18 +165,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk._rxlog">_RxLog</a>
+<a href="..\rxlog\nf-rxlog-_rxlog.md">_RxLog</a>
 </dt>
 <dt>
-<a href="ifsk.rxdispatchtoworkerthread">RxDispatchToWorkerThread</a>
+<a href="..\rxworkq\nf-rxworkq-rxdispatchtoworkerthread.md">RxDispatchToWorkerThread</a>
 </dt>
 <dt>
-<a href="ifsk.rxspindownmrxdispatcher">RxSpinDownMRxDispatcher</a>
+<a href="..\rxworkq\nf-rxworkq-rxspindownmrxdispatcher.md">RxSpinDownMRxDispatcher</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxPostToWorkerThread routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxPostToWorkerThread routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

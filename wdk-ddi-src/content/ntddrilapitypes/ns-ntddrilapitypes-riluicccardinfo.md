@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILUICCCARDINFO
+UID: NS:ntddrilapitypes.RILUICCCARDINFO
 title: RILUICCCARDINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluicccardinfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 761f1ab6-75e6-4c40-b79c-01f2e92df495
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUICCCARDINFO, *LPRILUICCCARDINFO, LPRILUICCCARDINFO, RILUICCCARDINFO
+ms.date: 1/8/2018
+ms.keywords: RILUICCCARDINFO, *LPRILUICCCARDINFO, RILUICCCARDINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILUICCCARDINFO, RILUICCCARDINFO
 ---
 
 # RILUICCCARDINFO structure

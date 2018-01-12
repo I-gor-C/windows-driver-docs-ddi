@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILVERSIONPARAMS
+UID: NS:rilapitypes.RILVERSIONPARAMS
 title: RILVERSIONPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilversionparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 365230b4-fd09-413f-9174-a5c5576a9160
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILVERSIONPARAMS, RILVERSIONPARAMS, *LPRILVERSIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILVERSIONPARAMS, *LPRILVERSIONPARAMS
 req.product: Windows 10 or later.
 ---
 

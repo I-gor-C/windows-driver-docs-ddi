@@ -1,5 +1,5 @@
 ---
-UID: NF.hidpi.HidP_GetUsages
+UID: NF:hidpi.HidP_GetUsages
 title: HidP_GetUsages function
 author: windows-driver-content
 description: The HidP_GetUsages routine returns a list of all the HID control button usages that are on a specified usage page and are set to ON in a HID report.
@@ -7,7 +7,7 @@ old-location: hid\hidp_getusages.htm
 old-project: hid
 ms.assetid: e35ae7c6-2cf4-4f20-bb00-7f33ae133118
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidP_GetUsages
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hidparse.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 # HidP_GetUsages function
@@ -62,7 +63,7 @@ NTSTATUS __stdcall HidP_GetUsages(
 
 ### -param ReportType [in]
 
-Specifies a <a href="hid.hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
+Specifies a <a href="..\hidpi\ne-hidpi-_hidp_report_type.md">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
 
 
 ### -param UsagePage [in]
@@ -128,9 +129,9 @@ Specifies the length, in bytes, of the report located at <i>Report</i>.
 
 
 ## -remarks
-User-mode applications and kernel-mode drivers call <a href="hid.hidp_maxusagelistlength">HidP_MaxUsageListLength</a> to determine the maximum number of buttons that can be returned for specified report type. Alternatively, applications or drivers can call <b>HidP_GetUsages</b> and set <i>UsageList </i>to zero to return the required length in <i>UsageLength</i>.
+User-mode applications and kernel-mode drivers call <a href="..\hidpi\nf-hidpi-hidp_maxusagelistlength.md">HidP_MaxUsageListLength</a> to determine the maximum number of buttons that can be returned for specified report type. Alternatively, applications or drivers can call <b>HidP_GetUsages</b> and set <i>UsageList </i>to zero to return the required length in <i>UsageLength</i>.
 
-Applications or drivers determine the required report length from the <i>Xxx</i><b>ReportByteLength</b> members in a top-level collection's <a href="hid.hidp_caps">HIDP_CAPS</a> structure.
+Applications or drivers determine the required report length from the <i>Xxx</i><b>ReportByteLength</b> members in a top-level collection's <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure.
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>. 
 
@@ -204,27 +205,27 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539712">HidP_GetButtonsEx</a>
 </dt>
 <dt>
-<a href="hid.hidp_getcaps">HidP_GetCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
 </dt>
 <dt>
-<a href="hid.hidp_getscaledusagevalue">HidP_GetScaledUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp_getscaledusagevalue.md">HidP_GetScaledUsageValue</a>
 </dt>
 <dt>
-<a href="hid.hidp_getusagesex">HidP_GetUsagesEx</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusagesex.md">HidP_GetUsagesEx</a>
 </dt>
 <dt>
-<a href="hid.hidp_getusagevalue">HidP_GetUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusagevalue.md">HidP_GetUsageValue</a>
 </dt>
 <dt>
-<a href="hid.hidp_getusagevaluearray">HidP_GetUsageValueArray</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusagevaluearray.md">HidP_GetUsageValueArray</a>
 </dt>
 <dt>
-<a href="hid.hidp_maxusagelistlength">HidP_MaxUsageListLength</a>
+<a href="..\hidpi\nf-hidpi-hidp_maxusagelistlength.md">HidP_MaxUsageListLength</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_GetUsages routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_GetUsages routine%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

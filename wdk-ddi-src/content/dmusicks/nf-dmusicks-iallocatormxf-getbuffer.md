@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.IAllocatorMXF.GetBuffer
+UID: NF:dmusicks.IAllocatorMXF.GetBuffer
 title: IAllocatorMXF::GetBuffer method
 author: windows-driver-content
 description: The GetBuffer method allocates a buffer for long MIDI events.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # IAllocatorMXF::GetBuffer method
@@ -63,9 +64,9 @@ Output pointer for the buffer. This parameter points to a caller-allocated point
 
 
 ## -remarks
-The miniport driver calls this method only when it needs to send large chunks of data to the capture sink. Specifically, the miniport driver uses this method whenever a component needs to package more data than can be stored in the <b>uData</b> member of <a href="audio.dmus_kernel_event">DMUS_KERNEL_EVENT</a>.
+The miniport driver calls this method only when it needs to send large chunks of data to the capture sink. Specifically, the miniport driver uses this method whenever a component needs to package more data than can be stored in the <b>uData</b> member of <a href="..\dmusicks\ns-dmusicks-_dmus_kernel_event.md">DMUS_KERNEL_EVENT</a>.
 
-The size of the buffer can determined by calling <a href="audio.iallocatormxf_getbuffersize">IAllocatorMXF::GetBufferSize</a>. <code>GetBufferSize</code> needs to be called only once because the buffer size is constant for any allocator implementation.
+The size of the buffer can determined by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff536493">IAllocatorMXF::GetBufferSize</a>. <code>GetBufferSize</code> needs to be called only once because the buffer size is constant for any allocator implementation.
 
 
 ## -requirements
@@ -107,13 +108,13 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="..\dmusicks\nn-dmusicks-iallocatormxf~r1.md">IAllocatorMXF</a>
+<a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
 </dt>
 <dt>
-<a href="audio.dmus_kernel_event">DMUS_KERNEL_EVENT</a>
+<a href="..\dmusicks\ns-dmusicks-_dmus_kernel_event.md">DMUS_KERNEL_EVENT</a>
 </dt>
 <dt>
-<a href="audio.iallocatormxf_getbuffersize">IAllocatorMXF::GetBufferSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536493">IAllocatorMXF::GetBufferSize</a>
 </dt>
 </dl>
  

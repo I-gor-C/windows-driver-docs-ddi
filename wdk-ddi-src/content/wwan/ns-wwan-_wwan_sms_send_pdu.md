@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_SMS_SEND_PDU
+UID: NS:wwan._WWAN_SMS_SEND_PDU
 title: _WWAN_SMS_SEND_PDU
 author: windows-driver-content
 description: The WWAN_SMS_SEND_PDU structure represents a PDU-style SMS message.
 old-location: netvista\wwan_sms_send_pdu.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 94d19d5b-8fa5-437d-9359-e35ef103f380
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_SMS_SEND_PDU, PWWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU, *PWWAN_SMS_SEND_PDU
+ms.date: 1/8/2018
+ms.keywords: _WWAN_SMS_SEND_PDU, *PWWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU
 req.product: Windows 10 or later.
 ---
 
@@ -67,7 +68,7 @@ For CDMA-based devices that support sending SMS messages in binary format, the s
 
 The following table lists the different values for the 
      <b>SmsFormat</b> member of the 
-     <a href="netvista.wwan_sms_send">WWAN_SMS_SEND</a> structure and their
+     <a href="..\wwan\ns-wwan-_wwan_sms_send.md">WWAN_SMS_SEND</a> structure and their
      corresponding range that is allowed in this member.
 
 <table>
@@ -132,7 +133,7 @@ For GSM-based devices, the contents are coded in a hexadecimal string format (ac
 For CDMA-based devices that support sending SMS messages in binary format (that is, miniport drivers
      that return WWAN_SMS_CAPS_PDU_SEND in the 
      <b>WwanSmsCaps</b> member of 
-     <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>), 
+     <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>), 
      <b>PduData</b> contains the SMS message as a byte array, as defined in section 3.4.2.1 SMS Point-to-Point
      Message in the 3GPP2 specification C.S0015-A "Short Message Service (SMS) for Wideband Spread Spectrum
      Systems". SMS will only support Wireless Messaging Teleservice (WMT) format. Miniport drivers should
@@ -171,12 +172,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_sms_send">WWAN_SMS_SEND</a>
+<a href="..\wwan\ns-wwan-_wwan_sms_send.md">WWAN_SMS_SEND</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_SMS_SEND_PDU structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_SMS_SEND_PDU structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

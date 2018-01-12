@@ -1,5 +1,5 @@
 ---
-UID: NF.rxcontx.RxInitializeContext
+UID: NF:rxcontx.RxInitializeContext
 title: RxInitializeContext function
 author: windows-driver-content
 description: RxInitializeContext initializes an existing RX_CONTEXT data structure.
@@ -7,7 +7,7 @@ old-location: ifsk\rxinitializecontext.htm
 old-project: ifsk
 ms.assetid: 71b595be-61ac-4a8f-af5e-d504e5091e0c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RxInitializeContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: *LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -181,39 +182,39 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.rxcompleterequest">RxCompleteRequest</a>
+<a href="..\rxprocs\nf-rxprocs-rxcompleterequest.md">RxCompleteRequest</a>
 </dt>
 <dt>
-<a href="ifsk.rxcompleterequest_real">RxCompleteRequest_Real</a>
+<a href="..\rxprocs\nf-rxprocs-rxcompleterequest_real.md">RxCompleteRequest_Real</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreaterxcontext">RxCreateRxContext</a>
+<a href="..\rxcontx\nf-rxcontx-rxcreaterxcontext.md">RxCreateRxContext</a>
 </dt>
 <dt>
-<a href="ifsk.rxdereference">RxDereference</a>
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
 </dt>
 <dt>
-<a href="ifsk.rxdereferenceanddeleterxcontext_real">RxDereferenceAndDeleteRxContext_Real</a>
+<a href="..\rxcontx\nf-rxcontx-rxdereferenceanddeleterxcontext_real.md">RxDereferenceAndDeleteRxContext_Real</a>
 </dt>
 <dt>
-<a href="ifsk.rxpreparecontextforreuse">RxPrepareContextForReuse</a>
+<a href="..\rxcontx\nf-rxcontx-rxpreparecontextforreuse.md">RxPrepareContextForReuse</a>
 </dt>
 <dt>
-<a href="ifsk.rxresumeblockedoperations_serially">RxResumeBlockedOperations_Serially</a>
+<a href="..\rxcontx\nf-rxcontx-rxresumeblockedoperations_serially.md">RxResumeBlockedOperations_Serially</a>
 </dt>
 <dt>
-<a href="ifsk.__rxsynchronizeblockingoperations">__RxSynchronizeBlockingOperations</a>
+<a href="..\rxcontx\nf-rxcontx-__rxsynchronizeblockingoperations.md">__RxSynchronizeBlockingOperations</a>
 </dt>
 <dt>
-<a href="ifsk.__rxsynchronizeblockingoperationsmaybedroppingfcblock">__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557382">__RxSynchronizeBlockingOperationsMaybeDroppingFcbLock</a>
 </dt>
 <dt>
-<a href="ifsk.rx_context">RX_CONTEXT</a>
+<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxInitializeContext function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxInitializeContext function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NI.usbscan.IOCTL_RESET_PIPE
+UID: NI:usbscan.IOCTL_RESET_PIPE
 title: IOCTL_RESET_PIPE
 author: windows-driver-content
 description: Resets the specified USB transfer pipe that is associated with the specified device handle.
 old-location: image\ioctl_reset_pipe.htm
-old-project: Image
+old-project: image
 ms.assetid: aeca126a-449a-4a10-a4ce-1cd3939ac076
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RAW_PIPE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -82,7 +83,7 @@ I/O Status block
 ## -remarks
 
 
-Device handle, obtained by calling <a href="fs.createfile">CreateFile</a>.
+Device handle, obtained by calling <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a>.
 
 IOCTL_RESET_PIPE
 

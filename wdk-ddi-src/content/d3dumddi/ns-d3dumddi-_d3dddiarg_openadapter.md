@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDIARG_OPENADAPTER
+UID: NS:d3dumddi._D3DDDIARG_OPENADAPTER
 title: _D3DDDIARG_OPENADAPTER
 author: windows-driver-content
 description: The D3DDDIARG_OPENADAPTER structure contains information that describes the graphics adapter object.
@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_openadapter.htm
 old-project: display
 ms.assetid: bfdea6dd-1f94-45ea-906c-9d17fc784a53
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDIARG_OPENADAPTER, D3DDDIARG_OPENADAPTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDIARG_OPENADAPTER
 ---
 
 # _D3DDDIARG_OPENADAPTER structure
@@ -77,12 +78,12 @@ The driver generates a unique handle and passes it back to the Direct3D runtime.
 
 ### -field pAdapterCallbacks
 
-[in] A pointer to a <a href="display.d3dddi_adaptercallbacks">D3DDDI_ADAPTERCALLBACKS</a> structure that contains the Direct3D runtime-supplied <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryadapterinfocb.md">pfnQueryAdapterInfoCb</a> callback function that the driver can use.
+[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_adaptercallbacks.md">D3DDDI_ADAPTERCALLBACKS</a> structure that contains the Direct3D runtime-supplied <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_queryadapterinfocb.md">pfnQueryAdapterInfoCb</a> callback function that the driver can use.
 
 
 ### -field pAdapterFuncs
 
-[out] A pointer to a <a href="display.d3dddi_adapterfuncs">D3DDDI_ADAPTERFUNCS</a> structure that contains a table of user-mode display driver adapter-specific functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver about operations that are specific to the graphics adapter.
+[out] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_adapterfuncs.md">D3DDDI_ADAPTERFUNCS</a> structure that contains a table of user-mode display driver adapter-specific functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver about operations that are specific to the graphics adapter.
 
 
 ### -field DriverVersion
@@ -124,10 +125,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddi_adaptercallbacks">D3DDDI_ADAPTERCALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_adaptercallbacks.md">D3DDDI_ADAPTERCALLBACKS</a>
 </dt>
 <dt>
-<a href="display.d3dddi_adapterfuncs">D3DDDI_ADAPTERFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_adapterfuncs.md">D3DDDI_ADAPTERFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_openadapter.md">OpenAdapter</a>
@@ -140,5 +141,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_OPENADAPTER structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_OPENADAPTER structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

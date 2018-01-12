@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2CompleteWait
+UID: NF:sercx.SerCx2CompleteWait
 title: SerCx2CompleteWait function
 author: windows-driver-content
 description: The SerCx2CompleteWait method notifies version 2 of the serial framework extension (SerCx2) that an event in the current wait mask has occurred.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -57,7 +58,7 @@ VOID SerCx2CompleteWait(
 
 ### -param Device [in]
 
-A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="serports.sercx2initializedevice">SerCx2InitializeDevice</a>.
+A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>.
 
 
 ### -param Event [in]

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:hidclass
 ---
 
 # Hidclass.h header

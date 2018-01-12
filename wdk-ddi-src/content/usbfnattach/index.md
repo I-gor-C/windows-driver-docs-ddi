@@ -1,24 +1,16 @@
 ---
-UID: NA:
+UID: NA:usbfnattach
 ---
 
 # Usbfnattach.h header
 
 ## -description
 
-This header is used by UsbRef. For more information, see
-- [UsbRef](../_UsbRef/index.md)
+This header is used by Universal Serial Bus(USB). For more information, see
+- [Universal Serial Bus(USB)](../_usbref/index.md)
 
 Usbfnattach.h contain these programming interfaces:
 
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [USBFN_GET_ATTACH_ACTION callback](nc-usbfnattach-usbfn_get_attach_action.md) | The filter driver's implementation that gets invoked when charger is attached to the port. |
-| [USBFN_GET_ATTACH_ACTION_ABORT callback](nc-usbfnattach-usbfn_get_attach_action_abort.md) | The filter driver's implementation to abort an attach-detect operation. |
-| [USBFN_SET_DEVICE_STATE callback](nc-usbfnattach-usbfn_set_device_state.md) | The filter driver's implementation to set the device state and operating bus speed. |
 
 ## Structures
 

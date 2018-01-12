@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCoGetTapiCallId
+UID: NF:ndis.NdisCoGetTapiCallId
 title: NdisCoGetTapiCallId function
 author: windows-driver-content
 description: NdisCoGetTapiCallId retrieves a string that TAPI applications can use to identify a particular NDIS virtual connection (VC).
 old-location: netvista\ndiscogettapicallid.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3cb47545-177f-46ef-aff6-33ad8c9a6974
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisCoGetTapiCallId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCoGetTapiCallId function
@@ -59,7 +60,7 @@ NDIS_STATUS NdisCoGetTapiCallId(
 
 Specifies the NDIS handle to the VC. This handle was supplied by NDIS when the VC was originally
      created with the 
-     <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a> function.
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> function.
 
 
 ### -param TapiCallId [in, out]
@@ -91,7 +92,7 @@ Returns one of the following status values:
 
 ## -remarks
 Suppose a call manager calls 
-    <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a> to create a VC for a TAPI
+    <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> to create a VC for a TAPI
     call. NDIS in turn supplies the handle to the VC to a client. The client passes this VC handle in a call
     to the 
     <b>NdisCoGetTapiCallId</b> function to retrieve a string that identifies the VC. The client can pass this
@@ -102,7 +103,7 @@ The client creates a context for each VC that it manages. The client uses
     identifier to a TAPI application to identify each VC. Later, if a TAPI application passes one of these
     string identifiers down to the client in a VC-related operation, the client must pass this string
     identifier as a Unicode string in a call to 
-    <a href="netvista.ndisclgetprotocolvccontextfromtapicallid">
+    <a href="..\ndis\nf-ndis-ndisclgetprotocolvccontextfromtapicallid.md">
     NdisClGetProtocolVcContextFromTapiCallId</a> to get back the correct context for the VC.
 
 For more information about the VAR_STRING structure, see 
@@ -174,7 +175,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_connection_function">Irql_Connection_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547924">Irql_Connection_Function</a>
 </td>
 </tr>
 </table>
@@ -182,16 +183,16 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclgetprotocolvccontextfromtapicallid">
+<a href="..\ndis\nf-ndis-ndisclgetprotocolvccontextfromtapicallid.md">
    NdisClGetProtocolVcContextFromTapiCallId</a>
 </dt>
 <dt>
-<a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCoGetTapiCallId function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoGetTapiCallId function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

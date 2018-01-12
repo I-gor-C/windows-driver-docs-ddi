@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:udecxurb
 ---
 
 # Udecxurb.h header
 
 ## -description
 
-This header is used by UsbRef. For more information, see
-- [UsbRef](../_UsbRef/index.md)
+This header is used by Universal Serial Bus(USB). For more information, see
+- [Universal Serial Bus(USB)](../_usbref/index.md)
 
 Udecxurb.h contain these programming interfaces:
 

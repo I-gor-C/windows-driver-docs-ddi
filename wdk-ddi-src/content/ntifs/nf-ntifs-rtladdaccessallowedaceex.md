@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlAddAccessAllowedAceEx
+UID: NF:ntifs.RtlAddAccessAllowedAceEx
 title: RtlAddAccessAllowedAceEx function
 author: windows-driver-content
 description: The RtlAddAccessAllowedAceEx routine adds an access-allowed access control entry (ACE) with inheritance ACE flags to an access control list (ACL). The access is granted to the specified security identifier (SID).
@@ -7,7 +7,7 @@ old-location: ifsk\rtladdaccessallowedaceex.htm
 old-project: ifsk
 ms.assetid: aeef74d8-d4a5-4ce4-b7f8-e2a2d263a678
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlAddAccessAllowedAceEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlAddAccessAllowedAceEx function
@@ -38,7 +39,7 @@ req.irql: <= APC_LEVEL
 
 
 ## -description
-The <b>RtlAddAccessAllowedAceEx</b> routine adds an access-allowed access control entry (<a href="ifsk.ace">ACE</a>) with inheritance ACE flags to an access control list (<a href="ifsk.acl">ACL</a>). The access is granted to the specified security identifier (<a href="ifsk.sid">SID</a>). 
+The <b>RtlAddAccessAllowedAceEx</b> routine adds an access-allowed access control entry (<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>) with inheritance ACE flags to an access control list (<a href="..\wdm\ns-wdm-_acl.md">ACL</a>). The access is granted to the specified security identifier (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>). 
 
 
 
@@ -59,7 +60,7 @@ NTSTATUS RtlAddAccessAllowedAceEx(
 
 ### -param Acl [in, out]
 
-A pointer to a caller-allocated buffer that contains the ACL to be modified. <b>RtlAddAccessAllowedAceEx</b> adds an access-allowed ACE to the end of this ACL. The ACE is in the form of an <a href="ifsk.access_allowed_ace">ACCESS_ALLOWED_ACE</a> structure.
+A pointer to a caller-allocated buffer that contains the ACL to be modified. <b>RtlAddAccessAllowedAceEx</b> adds an access-allowed ACE to the end of this ACL. The ACE is in the form of an <a href="..\ntifs\ns-ntifs-_access_allowed_ace.md">ACCESS_ALLOWED_ACE</a> structure.
 
 
 ### -param AceRevision [in]
@@ -74,7 +75,7 @@ Bitmask specifying the inherit flags of the ACE to be added.
 
 ### -param AccessMask [in]
 
-A bitmask of one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags that specify the access rights to be granted to the specified SID. For more information, see the description of the <i>DesiredAccess</i> parameter of <a href="kernel.zwcreatefile">ZwCreateFile</a>. 
+A bitmask of one or more <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> flags that specify the access rights to be granted to the specified SID. For more information, see the description of the <i>DesiredAccess</i> parameter of <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>. 
 
 
 ### -param Sid [in]
@@ -89,7 +90,7 @@ A pointer to the SID structure that represents a user, group, or logon account t
 </dl>The ACE was successfully added.
 <dl>
 <dt><b>STATUS_ALLOTTED_SPACE_EXCEEDED</b></dt>
-</dl>A new ACE does not fit into the ACL. A larger ACL buffer is required. For more information about how to calculate the size of an ACL, see <a href="ifsk.rtlcreateacl">RtlCreateAcl</a>. 
+</dl>A new ACE does not fit into the ACL. A larger ACL buffer is required. For more information about how to calculate the size of an ACL, see <a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>. 
 <dl>
 <dt><b>STATUS_INVALID_ACL</b></dt>
 </dl>The specified ACL is not correctly formed.
@@ -107,7 +108,7 @@ A pointer to the SID structure that represents a user, group, or logon account t
 
 
 ## -remarks
-Unlike <a href="ifsk.rtladdaccessallowedace">RtlAddAccessAllowedAce</a>, this routine sets the inheritance ACE flags.  
+Unlike <a href="..\ntifs\nf-ntifs-rtladdaccessallowedace.md">RtlAddAccessAllowedAce</a>, this routine sets the inheritance ACE flags.  
 
 For more information about security and access control, see the documentation about these topics in the Microsoft Windows SDK, such as:
 
@@ -189,51 +190,51 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.access_allowed_ace">ACCESS_ALLOWED_ACE</a>
+<a href="..\ntifs\ns-ntifs-_access_allowed_ace.md">ACCESS_ALLOWED_ACE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="ifsk.ace">ACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538844">ACE</a>
 </dt>
 <dt>
-<a href="ifsk.acl">ACL</a>
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 </dt>
 <dt>
-<a href="ifsk.rtlcreateacl">RtlCreateAcl</a>
+<a href="..\ntifs\nf-ntifs-rtlcreateacl.md">RtlCreateAcl</a>
 </dt>
 <dt>
-<a href="kernel.rtlcreatesecuritydescriptor">RtlCreateSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="ifsk.rtlcreatesecuritydescriptorrelative">RtlCreateSecurityDescriptorRelative</a>
+<a href="..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md">RtlCreateSecurityDescriptorRelative</a>
 </dt>
 <dt>
-<a href="kernel.rtllengthsecuritydescriptor">RtlLengthSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.rtlsetdaclsecuritydescriptor">RtlSetDaclSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="ifsk.rtlsetownersecuritydescriptor">RtlSetOwnerSecurityDescriptor</a>
+<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.rtlvalidsecuritydescriptor">RtlValidSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.seassignsecurity">SeAssignSecurity</a>
+<a href="..\wdm\nf-wdm-seassignsecurity.md">SeAssignSecurity</a>
 </dt>
 <dt>
-<a href="ifsk.sid">SID</a>
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatefile">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAddAccessAllowedAceEx routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlAddAccessAllowedAceEx routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

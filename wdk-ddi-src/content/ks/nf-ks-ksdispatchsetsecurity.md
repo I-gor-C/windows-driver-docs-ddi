@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsDispatchSetSecurity
+UID: NF:ks.KsDispatchSetSecurity
 title: KsDispatchSetSecurity function
 author: windows-driver-content
 description: The KsDispatchSetSecurity function is used in the KSDISPATCH_TABLE.SetSecurity entry to handle setting the current security descriptor.
@@ -7,7 +7,7 @@ old-location: stream\ksdispatchsetsecurity.htm
 old-project: stream
 ms.assetid: c1af342a-438d-4c83-be2d-a4c4c9f204b5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsDispatchSetSecurity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsDispatchSetSecurity function

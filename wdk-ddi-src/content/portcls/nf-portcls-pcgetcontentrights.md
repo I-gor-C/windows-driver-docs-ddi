@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcGetContentRights
+UID: NF:portcls.PcGetContentRights
 title: PcGetContentRights function
 author: windows-driver-content
 description: The PcGetContentRights function retrieves the DRM content rights assigned to a DRM content ID. Note that this function call is identical in operation to the DrmGetContentRights function, and its parameter definitions and return value are also identical.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcGetContentRights function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>PcGetContentRights</b> function retrieves the DRM content rights assigned to a DRM content ID. Note that this function call is identical in operation to the <a href="audio.drmgetcontentrights">DrmGetContentRights</a> function, and its parameter definitions and return value are also identical.
+The <b>PcGetContentRights</b> function retrieves the DRM content rights assigned to a DRM content ID. Note that this function call is identical in operation to the <a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a> function, and its parameter definitions and return value are also identical.
 
 
 
@@ -53,15 +54,15 @@ PORTCLASSAPI NTSTATUS NTAPI  PcGetContentRights(void);
 
 
 ## -returns
-See return value definition in <a href="audio.drmgetcontentrights">DrmGetContentRights</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>.
 
-See return value definition in <a href="audio.drmgetcontentrights">DrmGetContentRights</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>.
 
-See return value definition in <a href="audio.drmgetcontentrights">DrmGetContentRights</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>.
 
 
 ## -remarks
-For more information, see the comments in <a href="audio.drmgetcontentrights">DrmGetContentRights</a>.
+For more information, see the comments in <a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>.
 
 
 ## -requirements
@@ -114,7 +115,7 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="audio.drmgetcontentrights">DrmGetContentRights</a>
+<a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>
 </dt>
 </dl>
  

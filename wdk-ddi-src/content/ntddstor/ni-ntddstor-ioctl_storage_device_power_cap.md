@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddstor.IOCTL_STORAGE_DEVICE_POWER_CAP
+UID: NI:ntddstor.IOCTL_STORAGE_DEVICE_POWER_CAP
 title: IOCTL_STORAGE_DEVICE_POWER_CAP
 author: windows-driver-content
 description: A driver can use IOCTL_STORAGE_DEVICE_POWER_CAP to specify a maximum operational power consumption level for a storage device.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_storage_device_power_cap.htm
 old-project: storage
 ms.assetid: 88DEC1F2-F0E7-4E95-9A46-D9E8EF72B1BB
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_ZONE_CONDITION, PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_DEVICE_POWER_CAP IOCTL
@@ -46,13 +47,13 @@ A driver can use <b>IOCTL_STORAGE_DEVICE_POWER_CAP</b> to specify a maximum oper
 
 ### -input-buffer
 <b>
-       Parameters.DeviceIoControl.InputBufferLength</b> indicates the size, in bytes, of the parameter buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be &gt;= <b>sizeof</b>(<a href="storage.storage_device_power_cap">STORAGE_DEVICE_POWER_CAP</a>).
+       Parameters.DeviceIoControl.InputBufferLength</b> indicates the size, in bytes, of the parameter buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be &gt;= <b>sizeof</b>(<a href="..\ntddstor\ns-ntddstor-_storage_device_power_cap.md">STORAGE_DEVICE_POWER_CAP</a>).
 
 <b>
-       Irp-&gt;AssociatedIrp.SystemBuffer</b> contains <a href="storage.storage_device_power_cap">STORAGE_DEVICE_POWER_CAP</a> data that specifies the maximum power. 
+       Irp-&gt;AssociatedIrp.SystemBuffer</b> contains <a href="..\ntddstor\ns-ntddstor-_storage_device_power_cap.md">STORAGE_DEVICE_POWER_CAP</a> data that specifies the maximum power. 
 
 <b>
-       Parameters.DeviceIoControl.OutputBufferLength</b> indicates the number of bytes that can be written to <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. <b>OutputBufferLength</b> must be <b>sizeof</b>(<a href="storage.storage_device_power_cap">STORAGE_DEVICE_POWER_CAP</a>).
+       Parameters.DeviceIoControl.OutputBufferLength</b> indicates the number of bytes that can be written to <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. <b>OutputBufferLength</b> must be <b>sizeof</b>(<a href="..\ntddstor\ns-ntddstor-_storage_device_power_cap.md">STORAGE_DEVICE_POWER_CAP</a>).
 
 
 ### -input-buffer-length
@@ -60,12 +61,12 @@ The length of .
 
 
 ### -output-buffer
-If the operation is successful, the output buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> will contain a <a href="storage.storage_device_power_cap">STORAGE_DEVICE_POWER_CAP</a> structure.   
+If the operation is successful, the output buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> will contain a <a href="..\ntddstor\ns-ntddstor-_storage_device_power_cap.md">STORAGE_DEVICE_POWER_CAP</a> structure.   
 
 
 ### -output-buffer-length
 <b>
-       Parameters.DeviceIoControl.InputBufferLength</b> indicates the size, in bytes, of the parameter buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be &gt;= <b>sizeof</b>(<a href="storage.storage_device_power_cap">STORAGE_DEVICE_POWER_CAP</a>).
+       Parameters.DeviceIoControl.InputBufferLength</b> indicates the size, in bytes, of the parameter buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be &gt;= <b>sizeof</b>(<a href="..\ntddstor\ns-ntddstor-_storage_device_power_cap.md">STORAGE_DEVICE_POWER_CAP</a>).
 
 
 ### -in-out-buffer
@@ -122,15 +123,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storage_device_power_cap">STORAGE_DEVICE_POWER_CAP</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_device_power_cap.md">STORAGE_DEVICE_POWER_CAP</a>
 </dt>
 <dt>
-<a href="storage.storage_device_power_cap_units">STORAGE_DEVICE_POWER_CAP_UNITS</a>
+<a href="..\ntddstor\ne-ntddstor-_storage_device_power_cap_units.md">STORAGE_DEVICE_POWER_CAP_UNITS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_STORAGE_DEVICE_POWER_CAP control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_STORAGE_DEVICE_POWER_CAP control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

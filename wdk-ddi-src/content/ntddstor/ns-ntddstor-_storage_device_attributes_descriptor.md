@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
+UID: NS:ntddstor._STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
 title: _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
 author: windows-driver-content
 description: The STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR structure is used to retrieve the attributes information for a device.
@@ -7,7 +7,7 @@ old-location: storage\storage_device_attributes_descriptor.htm
 old-project: storage
 ms.assetid: DA8434EF-6163-4D07-A81D-D1AC2D55BFB4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
 ---
 
 # _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR structure

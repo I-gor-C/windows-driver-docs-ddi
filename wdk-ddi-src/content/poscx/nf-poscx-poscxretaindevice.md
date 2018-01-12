@@ -1,5 +1,5 @@
 ---
-UID: NF.poscx.PosCxRetainDevice
+UID: NF:poscx.PosCxRetainDevice
 title: PosCxRetainDevice function
 author: windows-driver-content
 description: PosCxRetainDevice is called to extend the ownership of the device.
@@ -7,7 +7,7 @@ old-location: pos\poscxretaindevice.htm
 old-project: pos
 ms.assetid: 0DF5E1DA-35BA-406A-A708-461534373F12
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: PosCxRetainDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POS_CX_EVENT_PRIORITY
 req.product: Windows 10 or later.
 ---
 

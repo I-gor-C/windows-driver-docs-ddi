@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDIARG_CREATEDEVICE
+UID: NS:d3dumddi._D3DDDIARG_CREATEDEVICE
 title: _D3DDDIARG_CREATEDEVICE
 author: windows-driver-content
 description: The D3DDDIARG_CREATEDEVICE structure contains information that describes the display device to create.
@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_createdevice.htm
 old-project: display
 ms.assetid: 18be278c-2d69-472b-9baf-7c35f8abe879
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDIARG_CREATEDEVICE, D3DDDIARG_CREATEDEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDIARG_CREATEDEVICE
 ---
 
 # _D3DDDIARG_CREATEDEVICE structure
@@ -86,7 +87,7 @@ The driver generates a unique handle and passes it back to the Direct3D runtime.
 
 ### -field pCallbacks
 
-[in] A pointer to a <a href="display.d3dddi_devicecallbacks">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use.
+[in] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a> structure that contains a table of Direct3D runtime callback functions that the driver can use.
 
 
 ### -field pCommandBuffer
@@ -101,7 +102,7 @@ The driver generates a unique handle and passes it back to the Direct3D runtime.
 
 ### -field pAllocationList
 
-[in] Obsolete. To receive an array of <a href="display.d3dddi_allocationlist">D3DDDI_ALLOCATIONLIST</a> structures for the starting allocation list, the driver must first call the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function to create a context for the newly created device.
+[in] Obsolete. To receive an array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures for the starting allocation list, the driver must first call the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function to create a context for the newly created device.
 
 
 ### -field AllocationListSize
@@ -111,7 +112,7 @@ The driver generates a unique handle and passes it back to the Direct3D runtime.
 
 ### -field pPatchLocationList
 
-[in] Obsolete. To receive an array of <a href="display.d3dddi_patchlocationlist">D3DDDI_PATCHLOCATIONLIST</a> structures for the starting patch-location list, the driver must first call the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function to create a context for the newly created device.
+[in] Obsolete. To receive an array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures for the starting patch-location list, the driver must first call the <a href="https://msdn.microsoft.com/f3f5d6bc-3bc6-4214-830a-cffff01069cc">pfnCreateContextCb</a> function to create a context for the newly created device.
 
 
 ### -field PatchLocationListSize
@@ -122,13 +123,13 @@ The driver generates a unique handle and passes it back to the Direct3D runtime.
 ### -field pDeviceFuncs
 
 
-      [out] A pointer to a <a href="display.d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.
+      [out] A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a> structure that the user-mode display driver fills with a table of its functions. The Direct3D runtime uses these functions to communicate with the user-mode display driver.
      
 
 
 ### -field Flags
 
-[in] A <a href="display.d3dddi_createdeviceflags">D3DDDI_CREATEDEVICEFLAGS</a> structure that identifies how to create the device. 
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_createdeviceflags.md">D3DDDI_CREATEDEVICEFLAGS</a> structure that identifies how to create the device. 
 
 
 ### -field CommandBuffer
@@ -172,13 +173,13 @@ Header
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
 </dt>
 <dt>
-<a href="display.d3dddi_createdeviceflags">D3DDDI_CREATEDEVICEFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_createdeviceflags.md">D3DDDI_CREATEDEVICEFLAGS</a>
 </dt>
 <dt>
-<a href="display.d3dddi_devicecallbacks">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
-<a href="display.d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
@@ -188,5 +189,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATEDEVICE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATEDEVICE structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

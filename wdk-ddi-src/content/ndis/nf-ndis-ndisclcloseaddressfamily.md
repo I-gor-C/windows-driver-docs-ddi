@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisClCloseAddressFamily
+UID: NF:ndis.NdisClCloseAddressFamily
 title: NdisClCloseAddressFamily function
 author: windows-driver-content
 description: NdisClCloseAddressFamily releases the association between a client protocol and a call manager's or MCM driver's registered AF for a particular NIC to which the client is bound.
 old-location: netvista\ndisclcloseaddressfamily.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ae6b9133-bb98-4858-bef5-1cbe0ae0dd4f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisClCloseAddressFamily
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisClCloseAddressFamily function
@@ -58,7 +59,7 @@ NDIS_STATUS NdisClCloseAddressFamily(
 ### -param NdisAfHandle [in]
 
 Specifies the NDIS-supplied handle returned by 
-     <a href="netvista.ndisclopenaddressfamilyex">
+     <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">
      NdisClOpenAddressFamilyEx</a>.
 
 
@@ -80,7 +81,7 @@ If
       could cause a deadlock. This is particularly important when a client calls 
       <b>NdisClCloseAddressFamily</b> in the
       context of handling an 
-      <a href="netvista.ndiscmnotifycloseaddressfamily">
+      <a href="..\ndis\nf-ndis-ndiscmnotifycloseaddressfamily.md">
       NdisCmNotifyCloseAddressFamily</a> request. In this case, the call manager may not close the address
       family until after the client has returned from handling the 
       <b>NdisCmNotifyCloseAddressFamily</b> request. If the client blocks the
@@ -95,12 +96,12 @@ A client commonly calls
     <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">
     ProtocolUnbindAdapterEx</a> function, after it closes all the client's open VCs on the binding with
     calls to 
-    <a href="netvista.ndisclclosecall">NdisClCloseCall</a> and/or 
-    <a href="netvista.ndisclderegistersap">NdisClDeregisterSap</a>. A client can
+    <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a> and/or 
+    <a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>. A client can
     also call 
     <b>NdisClCloseAddressFamily</b> in the
     context of processing an 
-    <a href="netvista.ndiscmnotifycloseaddressfamily">
+    <a href="..\ndis\nf-ndis-ndiscmnotifycloseaddressfamily.md">
     NdisCmNotifyCloseAddressFamily</a> request.
 
 NDIS calls a client's 
@@ -122,7 +123,7 @@ As a general guideline, a client should release all the resources it allocated f
     communications through the miniport driver before its 
     <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">
     ProtocolUnbindAdapterEx</a> function calls 
-    <a href="netvista.ndiscloseadapterex">NdisCloseAdapterEx</a>.
+    <a href="..\ndis\nf-ndis-ndiscloseadapterex.md">NdisCloseAdapterEx</a>.
 
 The 
     <i>NdisAfHandle</i> passed to 
@@ -137,7 +138,7 @@ Before a call to
     ProtocolClNotifyCloseAf</a> operation is pending. If the 
     <i>
     ProtocolClNotifyCloseAf</i> function returns NDIS_STATUS_PENDING, use the handle in the 
-    <a href="netvista.ndisclnotifycloseaddressfamilycomplete">
+    <a href="..\ndis\nf-ndis-ndisclnotifycloseaddressfamilycomplete.md">
     NdisClNotifyCloseAddressFamilyComplete</a> call after the close operation completes.
 
 
@@ -206,7 +207,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_protocol_driver_function">Irql_Protocol_Driver_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547996">Irql_Protocol_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -214,13 +215,13 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndisclderegistersap">NdisClDeregisterSap</a>
+<a href="..\ndis\nf-ndis-ndisclderegistersap.md">NdisClDeregisterSap</a>
 </dt>
 <dt>
-<a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a>
+<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_close_af_complete.md">ProtocolClCloseAfComplete</a>
@@ -239,5 +240,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisClCloseAddressFamily function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisClCloseAddressFamily function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

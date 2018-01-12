@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:sd
 ---
 
 # Secure Digital (SD) card

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugOutputCallbacks.Output
+UID: NF:dbgeng.IDebugOutputCallbacks.Output
 title: IDebugOutputCallbacks::Output method
 author: windows-driver-content
 description: The Output callback method is called by the engine to send output from the client to the IDebugOutputCallbacks object that is registered with the client.
 old-location: debugger\idebugoutputcallbacks_output.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 6d0352ae-0376-4992-89ef-90702591042e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugOutputCallbacks, IDebugOutputCallbacks::Output, Output
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugOutputCallbacks::Output method

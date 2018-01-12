@@ -1,5 +1,5 @@
 ---
-UID: NE.ksmedia.KS_AnalogVideoStandard
+UID: NE:ksmedia.KS_AnalogVideoStandard
 title: KS_AnalogVideoStandard
 author: windows-driver-content
 description: The KS_AnalogVideoStandard enumeration defines various analog video standards that are used worldwide.
@@ -7,7 +7,7 @@ old-location: stream\ks_analogvideostandard.htm
 old-project: stream
 ms.assetid: 33efef2f-0734-416e-9f89-394a3dd344b8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KS_AnalogVideoStandard, KS_AnalogVideoStandard
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KS_AnalogVideoStandard
 ---
 
 # KS_AnalogVideoStandard enumeration
@@ -200,13 +201,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ks_tvtuner_change_info">KS_TVTUNER_CHANGE_INFO</a>
+<a href="..\ksmedia\ns-ksmedia-tagks_tvtuner_change_info.md">KS_TVTUNER_CHANGE_INFO</a>
 </dt>
 <dt>
-<a href="stream.ks_vbiinfoheader">KS_VBIINFOHEADER</a>
+<a href="..\ksmedia\ns-ksmedia-tagks_vbiinfoheader.md">KS_VBIINFOHEADER</a>
 </dt>
 <dt>
-<a href="stream.ks_video_stream_config_caps">KS_VIDEO_STREAM_CONFIG_CAPS</a>
+<a href="..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md">KS_VIDEO_STREAM_CONFIG_CAPS</a>
 </dt>
 <dt>
 <a href="..\ksmedia\ns-ksmedia-ksproperty_tuner_mode_caps_s.md">KSPROPERTY_TUNER_MODE_CAPS_S</a>
@@ -222,5 +223,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_AnalogVideoStandard enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_AnalogVideoStandard enumeration%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

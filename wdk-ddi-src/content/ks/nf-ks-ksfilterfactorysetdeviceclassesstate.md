@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsFilterFactorySetDeviceClassesState
+UID: NF:ks.KsFilterFactorySetDeviceClassesState
 title: KsFilterFactorySetDeviceClassesState function
 author: windows-driver-content
 description: The KsFilterFactorySetDeviceClassesState function enables or disables the device classes that have been registered by a given filter factory.
@@ -7,7 +7,7 @@ old-location: stream\ksfilterfactorysetdeviceclassesstate.htm
 old-project: stream
 ms.assetid: 66515f08-b652-4aa0-8f22-b5ff0a407d6a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsFilterFactorySetDeviceClassesState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsFilterFactorySetDeviceClassesState function
@@ -56,7 +57,7 @@ NTSTATUS KsFilterFactorySetDeviceClassesState(
 
 ### -param FilterFactory [in]
 
-A pointer to the <a href="stream.ksfilterfactory">KSFILTERFACTORY</a> for which to change device class status.
+A pointer to the <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> for which to change device class status.
 
 
 ### -param NewState [in]

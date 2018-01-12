@@ -1,5 +1,5 @@
 ---
-UID: NS.HIDPI._HIDP_EXTENDED_ATTRIBUTES
+UID: NS:hidpi._HIDP_EXTENDED_ATTRIBUTES
 title: _HIDP_EXTENDED_ATTRIBUTES
 author: windows-driver-content
 description: The HIDP_EXTENDED_ATTRIBUTES structure contains information about the global items specified for a HID control that the HID parser did not recognize.
@@ -7,8 +7,8 @@ old-location: hid\hidp_extended_attributes.htm
 old-project: hid
 ms.assetid: 03be8b22-2108-4a13-be1e-642373095ab5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HIDP_EXTENDED_ATTRIBUTES, *PHIDP_EXTENDED_ATTRIBUTES, PHIDP_EXTENDED_ATTRIBUTES, HIDP_EXTENDED_ATTRIBUTES
+ms.date: 12/21/2017
+ms.keywords: _HIDP_EXTENDED_ATTRIBUTES, *PHIDP_EXTENDED_ATTRIBUTES, HIDP_EXTENDED_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PHIDP_EXTENDED_ATTRIBUTES, HIDP_EXTENDED_ATTRIBUTES
 ---
 
 # _HIDP_EXTENDED_ATTRIBUTES structure
@@ -58,7 +59,7 @@ typedef struct _HIDP_EXTENDED_ATTRIBUTES {
 
 ### -field NumGlobalUnknowns
 
-Specifies the number of <a href="hid.hidp_unknown_token">HIDP_UNKNOWN_TOKEN</a> structures in the list specified by <b>Data</b>.
+Specifies the number of <a href="..\hidpi\ns-hidpi-_hidp_unknown_token.md">HIDP_UNKNOWN_TOKEN</a> structures in the list specified by <b>Data</b>.
 
 
 ### -field Reserved
@@ -73,7 +74,7 @@ Reserved for internal system use only.
 
 ### -field Data
 
-Specifies the memory location where <a href="hid.hidp_getextendedattributes">HidP_GetExtendedAttributes</a> returns a variable length array of <a href="hid.hidp_unknown_token">HIDP_UNKNOWN_TOKEN</a> structures.
+Specifies the memory location where <a href="..\hidpi\nf-hidpi-hidp_getextendedattributes.md">HidP_GetExtendedAttributes</a> returns a variable length array of <a href="..\hidpi\ns-hidpi-_hidp_unknown_token.md">HIDP_UNKNOWN_TOKEN</a> structures.
 
 
 ## -remarks
@@ -98,15 +99,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="hid.hidp_getextendedattributes">HidP_GetExtendedAttributes</a>
+<a href="..\hidpi\nf-hidpi-hidp_getextendedattributes.md">HidP_GetExtendedAttributes</a>
 </dt>
 <dt>
-<a href="hid.hidp_unknown_token">HIDP_UNKNOWN_TOKEN</a>
+<a href="..\hidpi\ns-hidpi-_hidp_unknown_token.md">HIDP_UNKNOWN_TOKEN</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_EXTENDED_ATTRIBUTES structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_EXTENDED_ATTRIBUTES structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

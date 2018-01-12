@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILGETDEVICEINFOPARAMS
+UID: NS:rilapitypes.RILGETDEVICEINFOPARAMS
 title: RILGETDEVICEINFOPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetdeviceinfoparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f5cbf775-4d6e-462a-9707-11a311a729ef
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS, *LPRILGETDEVICEINFOPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILGETDEVICEINFOPARAMS, *LPRILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS
 req.product: Windows 10 or later.
 ---
 

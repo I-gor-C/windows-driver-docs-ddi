@@ -1,5 +1,5 @@
 ---
-UID: NF.srb.ScsiPortQuerySystemTime
+UID: NF:srb.ScsiPortQuerySystemTime
 title: ScsiPortQuerySystemTime function
 author: windows-driver-content
 description: The ScsiPortQuerySystemTime routine obtains the current system time.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
@@ -7,7 +7,7 @@ old-location: storage\scsiportquerysystemtime.htm
 old-project: storage
 ms.assetid: 6f6afe6d-8f57-4c08-97ea-b327622a4e39
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: ScsiPortQuerySystemTime
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Scsiport.lib
 req.dll: 
 req.irql: Any level
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 

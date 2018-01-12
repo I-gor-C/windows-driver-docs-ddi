@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi_hwaccess.WRITE_REGISTER_BUFFER_ULONG64
+UID: NF:wudfddi_hwaccess.WRITE_REGISTER_BUFFER_ULONG64
 title: WRITE_REGISTER_BUFFER_ULONG64 function
 author: windows-driver-content
 description: The WRITE_REGISTER_BUFFER_ULONG64 function writes a number of ULONG64 values from a buffer to the specified register.
@@ -7,7 +7,7 @@ old-location: wdf\write_register_buffer_ulong64.htm
 old-project: wdf
 ms.assetid: 18858A87-D7D8-4387-AD84-6717EC3DAC25
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WRITE_REGISTER_BUFFER_ULONG64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUMDF_IO_TARGET_OPEN_PARAMS, UMDF_IO_TARGET_OPEN_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -86,7 +87,7 @@ This function does not return a value.
 ## -remarks
 The size of the buffer must be large enough to contain at least the specified number of bytes.
 
-For more information, see <a href="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.
+For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD-B292-CC1875EF7F7D">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.
 
 
 ## -requirements

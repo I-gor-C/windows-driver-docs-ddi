@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamicro.SetPixelWindow
+UID: NF:wiamicro.SetPixelWindow
 title: SetPixelWindow function
 author: windows-driver-content
 description: The SetPixelWindow function sets the image area to be scanned.
 old-location: image\setpixelwindow.htm
-old-project: Image
+old-project: image
 ms.assetid: e1b5af5d-9bb8-4bf0-898a-5972f1f09a35
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: SetPixelWindow
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ WIAMICRO_API HRESULT SetPixelWindow(
 
 ### -param pScanInfo [in, out]
 
-Points to a <a href="image.scaninfo">SCANINFO</a> structure that represents the current state of the device. This is stored by the WIA Flatbed driver to guarantee synchronized settings between the microdriver and the WIA Flatbed driver.
+Points to a <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure that represents the current state of the device. This is stored by the WIA Flatbed driver to guarantee synchronized settings between the microdriver and the WIA Flatbed driver.
 
 
 ### -param x 
@@ -88,7 +89,7 @@ If the function succeeds, it returns S_OK. If the function fails, it returns a s
 
 
 ## -remarks
-In this function, the microdriver should set up the <b>Window</b> member of the <a href="image.scaninfo">SCANINFO</a> structure, making any device-specific adjustments that are necessary. 
+In this function, the microdriver should set up the <b>Window</b> member of the <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure, making any device-specific adjustments that are necessary. 
 
 
 ## -requirements
@@ -130,15 +131,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.scaninfo">SCANINFO</a>
+<a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a>
 </dt>
 <dt>
-<a href="image.wia_microdriver_structures">WIA Microdriver Structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552722">WIA Microdriver Structures</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20SetPixelWindow function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20SetPixelWindow function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

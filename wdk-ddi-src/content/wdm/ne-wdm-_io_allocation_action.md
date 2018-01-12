@@ -1,5 +1,5 @@
 ---
-UID: NE.wdm._IO_ALLOCATION_ACTION
+UID: NE:wdm._IO_ALLOCATION_ACTION
 title: _IO_ALLOCATION_ACTION
 author: windows-driver-content
 description: The IO_ALLOCATION_ACTION enumerated type is used to specify return values for AdapterControl and ControllerControl routines.
@@ -7,8 +7,8 @@ old-location: kernel\io_allocation_action.htm
 old-project: kernel
 ms.assetid: 245d35a1-e877-4446-a0da-e50ece3656b1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION, PIO_ALLOCATION_ACTION
+ms.date: 1/4/2018
+ms.keywords: _IO_ALLOCATION_ACTION, *PIO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: PASSIVE_LEVEL (See Remarks section)
+req.typenames: *PIO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION
 req.product: Windows 10 or later.
 ---
 

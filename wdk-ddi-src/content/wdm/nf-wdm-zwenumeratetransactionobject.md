@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ZwEnumerateTransactionObject
+UID: NF:wdm.ZwEnumerateTransactionObject
 title: ZwEnumerateTransactionObject function
 author: windows-driver-content
 description: The ZwEnumerateTransactionObject routine enumerates the KTM objects on a computer.
@@ -7,7 +7,7 @@ old-location: kernel\zwenumeratetransactionobject.htm
 old-project: kernel
 ms.assetid: 49560022-a690-4259-b725-f8927af31804
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwEnumerateTransactionObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -65,12 +66,12 @@ A handle to a KTM object. The routine enumerates the child objects of the specif
 
 ### -param QueryType [in]
 
-A <a href="kernel.ktmobject_type">KTMOBJECT_TYPE</a>-typed value that identifies the object type to enumerate. For more information about valid values for this parameter, see the table in the following Remarks section.
+A <a href="..\wdm\ne-wdm-_ktmobject_type.md">KTMOBJECT_TYPE</a>-typed value that identifies the object type to enumerate. For more information about valid values for this parameter, see the table in the following Remarks section.
 
 
 ### -param ObjectCursor [in, out]
 
-A pointer to a caller-allocated buffer that begins with a <a href="kernel.ktmobject_cursor">KTMOBJECT_CURSOR</a> structure. <b>ZwEnumerateTransactionObject</b> uses the buffer to store the GUIDs of objects that it finds.
+A pointer to a caller-allocated buffer that begins with a <a href="..\wdm\ns-wdm-_ktmobject_cursor.md">KTMOBJECT_CURSOR</a> structure. <b>ZwEnumerateTransactionObject</b> uses the buffer to store the GUIDs of objects that it finds.
 
 
 ### -param ObjectCursorLength [in]
@@ -140,7 +141,7 @@ Before your component calls <b>ZwEnumerateTransactionObject</b>, it must allocat
 
 To enumerate all of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554272">KTM objects</a> of the specified type, your component must call <b>ZwEnumerateTransactionObject</b> repeatedly until it returns STATUS_NO_MORE_ENTRIES. 
 
-Every time that the routine is called, it fills the buffer's GUID array with as many object GUIDs that will fit. After each call, your component can use the <a href="kernel.ktmobject_cursor">KTMOBJECT_CURSOR</a> structure's <b>ObjectIdCount</b> member to determine the number of object GUIDs that the routine stored in the array.
+Every time that the routine is called, it fills the buffer's GUID array with as many object GUIDs that will fit. After each call, your component can use the <a href="..\wdm\ns-wdm-_ktmobject_cursor.md">KTMOBJECT_CURSOR</a> structure's <b>ObjectIdCount</b> member to determine the number of object GUIDs that the routine stored in the array.
 
 <b>NtEnumerateTransactionObject</b> and <b>ZwEnumerateTransactionObject</b> are two versions of the same Windows Native System Services routine.
 
@@ -221,7 +222,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -229,10 +230,10 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.ktmobject_cursor">KTMOBJECT_CURSOR</a>
+<a href="..\wdm\ns-wdm-_ktmobject_cursor.md">KTMOBJECT_CURSOR</a>
 </dt>
 <dt>
-<a href="kernel.ktmobject_type">KTMOBJECT_TYPE</a>
+<a href="..\wdm\ne-wdm-_ktmobject_type.md">KTMOBJECT_TYPE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
@@ -242,5 +243,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwEnumerateTransactionObject routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwEnumerateTransactionObject routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

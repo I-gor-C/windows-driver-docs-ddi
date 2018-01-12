@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFIoQueue.RetrieveNextRequestByFileObject
+UID: NF:wudfddi.IWDFIoQueue.RetrieveNextRequestByFileObject
 title: IWDFIoQueue::RetrieveNextRequestByFileObject method
 author: windows-driver-content
 description: The RetrieveNextRequestByFileObject method retrieves from an I/O queue the next I/O request whose file object matches the specified file object.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfioqueue_retrievenextrequestbyfileobject.htm
 old-project: wdf
 ms.assetid: 136b7582-b974-44fb-8026-e9678ae6623c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFIoQueue, IWDFIoQueue::RetrieveNextRequestByFileObject, RetrieveNextRequestByFileObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -74,7 +75,7 @@ A pointer to a buffer that receives a pointer to the <a href="..\wudfddi\nn-wudf
 </dl>The next I/O request was successfully retrieved from the I/O queue.
 <dl>
 <dt><b>HRESULT_FROM_NT(STATUS_WDF_PAUSED)</b></dt>
-</dl>The queue is not dispatching requests. This situation occurs if the device undergoes a power state transition and all of the queues are stopped from dispatching requests or if the driver explicitly called <a href="wdf.iwdfioqueue_stop">IWDFIoQueue::Stop</a> to stop dispatching requests. This situation can also occur if the driver attempts to remove a request from a manual queue that is power managed and that is powered down or if the queue is paused.
+</dl>The queue is not dispatching requests. This situation occurs if the device undergoes a power state transition and all of the queues are stopped from dispatching requests or if the driver explicitly called <a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a> to stop dispatching requests. This situation can also occur if the driver attempts to remove a request from a manual queue that is power managed and that is powered down or if the queue is paused.
 <dl>
 <dt><b>HRESULT_FROM_WIN32(ERROR_NO_MORE_ITEMS)</b></dt>
 </dl>No requests were in the queue.
@@ -88,11 +89,11 @@ A pointer to a buffer that receives a pointer to the <a href="..\wudfddi\nn-wudf
 
 
 ## -remarks
-If a driver configures an I/O queue for manual dispatching of I/O requests, the driver can call the <b>RetrieveNextRequestByFileObject</b> method to obtain the next request whose file object matches the supplied file object from the queue. For more information about manually dispatching I/O requests, see <a href="wdf.configuring_dispatch_mode_for_an_i_o_queue">Configuring Dispatch Mode for an I/O Queue</a>. 
+If a driver configures an I/O queue for manual dispatching of I/O requests, the driver can call the <b>RetrieveNextRequestByFileObject</b> method to obtain the next request whose file object matches the supplied file object from the queue. For more information about manually dispatching I/O requests, see <a href="https://msdn.microsoft.com/7603c3fd-a4cb-4174-ad14-f57efedfe9de">Configuring Dispatch Mode for an I/O Queue</a>. 
 
 If multiple I/O requests whose file objects match the file object that the <i>pFileObject</i> parameter points to exist in the I/O queue, the first I/O request is returned.
 
-For a code example of how to use the <b>RetrieveNextRequestByFileObject</b> method, see <a href="wdf.iwdfioqueue_retrievenextrequest">IWDFIoQueue::RetrieveNextRequest</a>.
+For a code example of how to use the <b>RetrieveNextRequestByFileObject</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>.
 
 
 ## -requirements
@@ -161,10 +162,10 @@ DLL
 <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
 </dt>
 <dt>
-<a href="wdf.iwdfioqueue_retrievenextrequest">IWDFIoQueue::RetrieveNextRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
 </dt>
 <dt>
-<a href="wdf.iwdfioqueue_stop">IWDFIoQueue::Stop</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558980">IWDFIoQueue::Stop</a>
 </dt>
 <dt>
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
@@ -174,5 +175,5 @@ DLL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoQueue::RetrieveNextRequestByFileObject method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoQueue::RetrieveNextRequestByFileObject method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntdd8042.IOCTL_INTERNAL_I8042_HOOK_MOUSE
+UID: NI:ntdd8042.IOCTL_INTERNAL_I8042_HOOK_MOUSE
 title: IOCTL_INTERNAL_I8042_HOOK_MOUSE
 author: windows-driver-content
 description: The IOCTL_INTERNAL_I8042_HOOK_MOUSE request adds an ISR callback routine to the I8042prt mouse ISR.
@@ -7,8 +7,8 @@ old-location: hid\ioctl_internal_i8042_hook_mouse.htm
 old-project: hid
 ms.assetid: 606b9ae4-186c-47b1-84aa-3d380eaad672
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _MOUSE_STATE, MOUSE_STATE, PMOUSE_STATE, *PMOUSE_STATE
+ms.date: 12/21/2017
+ms.keywords: _MOUSE_STATE, *PMOUSE_STATE, MOUSE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMOUSE_STATE, MOUSE_STATE
 ---
 
 # IOCTL_INTERNAL_I8042_HOOK_MOUSE IOCTL
@@ -64,7 +65,7 @@ For more information about this request and the callbacks, see the following top
 <dl>
 <dd>
 
-<a href="hid.i8042prt_callback_routines">I8042prt Callback Routines</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539965">I8042prt Callback Routines</a>
 
 
 </dd>
@@ -92,7 +93,7 @@ Saves the context of I8042prt and pointers to callbacks that the Moufiltr ISR ca
 For more information about this request and the callbacks, see the following topics:
 
 
-<a href="hid.i8042prt_callback_routines">I8042prt Callback Routines</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539965">I8042prt Callback Routines</a>
 
 
 
@@ -104,7 +105,7 @@ For more information about this request and the callbacks, see the following top
 ## -ioctlparameters
 
 ### -input-buffer
-The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to a value greater than or equal to the size, in bytes, of an <a href="hid.internal_i8042_hook_mouse">INTERNAL_I8042_HOOK_MOUSE</a> structure.
+The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to a value greater than or equal to the size, in bytes, of an <a href="..\ntdd8042\ns-ntdd8042-_internal_i8042_hook_mouse.md">INTERNAL_I8042_HOOK_MOUSE</a> structure.
 
 The <b>Parameters.DeviceIoControl.Type3InputBuffer</b> points to an INTERNAL_I8042_HOOK_MOUSE structure that is allocated and set initially by I8042prt.
 
@@ -161,7 +162,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="hid.internal_i8042_hook_mouse">INTERNAL_I8042_HOOK_MOUSE</a>
+<a href="..\ntdd8042\ns-ntdd8042-_internal_i8042_hook_mouse.md">INTERNAL_I8042_HOOK_MOUSE</a>
 </dt>
 <dt>
 <a href="..\kbdmou\ni-kbdmou-ioctl_internal_mouse_connect.md">IOCTL_INTERNAL_MOUSE_CONNECT</a>
@@ -171,5 +172,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20IOCTL_INTERNAL_I8042_HOOK_MOUSE control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20IOCTL_INTERNAL_I8042_HOOK_MOUSE control code%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

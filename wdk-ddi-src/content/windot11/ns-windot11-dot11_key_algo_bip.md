@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11.DOT11_KEY_ALGO_BIP
+UID: NS:windot11.DOT11_KEY_ALGO_BIP
 title: DOT11_KEY_ALGO_BIP
 author: windows-driver-content
 description: The DOT11_KEY_ALGO_BIP structure defines a cipher key that is used by the Broadcast Integrity Protocol (BIP) algorithm for management frame integrity protection.
 old-location: netvista\dot11_key_algo_bip.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 608AD247-19C8-40E8-B2FF-D49818AE4AD7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: DOT11_KEY_ALGO_BIP, PDOT11_KEY_ALGO_BIP, DOT11_KEY_ALGO_BIP, *PDOT11_KEY_ALGO_BIP
+ms.date: 1/8/2018
+ms.keywords: DOT11_KEY_ALGO_BIP, DOT11_KEY_ALGO_BIP, *PDOT11_KEY_ALGO_BIP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_KEY_ALGO_BIP, *PDOT11_KEY_ALGO_BIP
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ksproxy
 ---
 
 # Ksproxy.h header
@@ -28,8 +28,10 @@ Ksproxy.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [OPTIMAL_WEIGHT_TOTALS structure](ns-ksproxy-optimal_weight_totals.md) | . |
+| [_ALLOCATOR_PROPERTIES_EX structure](ns-ksproxy-_allocator_properties_ex.md) | The ALLOCATOR_PROPERTIES_EX structure is for proxy use and not recommended for application use. ALLOCATOR_PROPERTIES_EX contains information that describes properties of an allocator. |
 | [_KSSTREAM_SEGMENT structure](ns-ksproxy-_ksstream_segment.md) | The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream. |
-| [_KSSTREAM_SEGMENT structure](ns-ksproxy-_ksstream_segment~r1.md) | The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream. |
+| [_PIPE_DIMENSIONS structure](ns-ksproxy-_pipe_dimensions.md) | The PIPE_DIMENSIONS structure is for proxy use and not recommended for application use. PIPE_DIMENSIONS contains information that describes the compression/expansion ratio of frames on various pins related to a pipe. |
+| [_PIPE_TERMINATION structure](ns-ksproxy-_pipe_termination.md) | The PIPE_TERMINATION structure is for proxy use and not recommended for application use. PIPE_TERMINATION contains information that describes the pin terminator of a pipe. |
 
 ## Enumerations
 
@@ -44,12 +46,40 @@ Ksproxy.h contain these programming interfaces:
 | [PIPE_ALLOCATOR_PLACE enumeration](ne-ksproxy-pipe_allocator_place.md) | . |
 | [PIPE_STATE enumeration](ne-ksproxy-pipe_state.md) | . |
 
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [IKsAggregateControl interface](nn-ksproxy-iksaggregatecontrol.md) | The IKsAggregateControl interface provides methods that add and remove COM servers as aggregate providers on KS objects that support the interface. |
+| [IKsAllocator interface](nn-ksproxy-iksallocator.md) | TheIKsAllocator interface provides methods that control and query an allocator. IKsAllocator is for proxy use and not recommended for application use. |
+| [IKsAllocatorEx interface](nn-ksproxy-iksallocatorex.md) | The IKsAllocatorEx interface is for proxy use and not recommended for application use. IKsAllocatorEx inherits all the methods of the IKsAllocator interface and extends IKsAllocator to provide methods that further control and query an allocator. |
+| [IKsClockPropertySet interface](nn-ksproxy-iksclockpropertyset.md) | The IKsClockPropertySet interface provides methods that let the proxy accurately reflect time. |
+| [IKsControl interface](nn-ksproxy-ikscontrol.md) | The IKsControl interface provides user-mode methods that control a KS filter or KS pin. See the IKsControl AVStream COM interface for information about the user-mode equivalent of this interface. |
+| [IKsDataTypeCompletion interface](nn-ksproxy-iksdatatypecompletion.md) | The IKsDataTypeCompletion interface provides a method to complete partially specified media types that are passed to the IAMStreamConfig |
+| [IKsDataTypeHandler interface](nn-ksproxy-iksdatatypehandler.md) | The IKsDataTypeHandler interface provides methods that perform optional preprocessing and postprocessing of media samples. |
+| [IKsInterfaceHandler interface](nn-ksproxy-iksinterfacehandler.md) | The IKsInterfaceHandler interface provides methods that marshal samples into the kernel based on the KSPIN_INTERFACE structure specified for the established connection. The IID for this interface is IID_IKsInterfaceHandler. |
+| [IKsNotifyEvent interface](nn-ksproxy-iksnotifyevent.md) | The IKsNotifyEvent interface provides a method to cause the KS object that owns a DirectShow event to issue the event with the given parameters. |
+| [IKsObject interface](nn-ksproxy-iksobject.md) | The IKsObject interface provides a method to retrieve the file handle of a KS object. |
+| [IKsPin interface](nn-ksproxy-ikspin.md) | The IKsPin interface provides methods that control and retrieve information about a pin. |
+| [IKsPinEx interface](nn-ksproxy-ikspinex.md) | The IKsPinEx interface inherits all the methods of the IKsPin interface and extends IKsPin to provide a method that notifies the filter graph of an error to give the filter graph an opportunity to halt. |
+| [IKsPinFactory interface](nn-ksproxy-ikspinfactory.md) | The IKsPinFactory interface provides a method that retrieves the identifier of a pin factory. |
+| [IKsPinPipe interface](nn-ksproxy-ikspinpipe.md) | The IKsPinPipe interface is for proxy use and not recommended for application use. IKsPinPipe provides methods that control a pin pipe. |
+| [IKsQualityForwarder interface](nn-ksproxy-iksqualityforwarder.md) | The IKsQualityForwarder interface inherits the method of the IKsObject interface and extends IKsObject to provide a method that flushes information from a pin. |
+| [IKsTopology interface](nn-ksproxy-ikstopology.md) | The IKsTopology interface provides a method that opens topology node objects contained within a filter. |
+
 ## Methods
 
 | Title   | Description   |
 | ---- |:---- |
 | [IKsAggregateControl::KsAddAggregate method](nf-ksproxy-iksaggregatecontrol-ksaddaggregate.md) | The KsAddAggregate method adds a COM server as an aggregate provider to the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
 | [IKsAggregateControl::KsRemoveAggregate method](nf-ksproxy-iksaggregatecontrol-ksremoveaggregate.md) | The KsRemoveAggregate method removes a previously added COM server aggregate provider from the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
+| [IKsAllocator::KsGetAllocatorHandle method](nf-ksproxy-iksallocator-ksgetallocatorhandle.md) | Retrieves a file handle to an allocator. |
+| [IKsAllocator::KsGetAllocatorMode method](nf-ksproxy-iksallocator-ksgetallocatormode.md) | Returns the mode in which an allocator allocates memory. |
+| [IKsAllocator::KsGetAllocatorStatus method](nf-ksproxy-iksallocator-ksgetallocatorstatus.md) | Retrieves the status of an allocator. |
+| [IKsAllocator::KsSetAllocatorMode method](nf-ksproxy-iksallocator-kssetallocatormode.md) | Sets the mode in which an allocator allocates memory. |
+| [IKsAllocatorEx::KsGetProperties method](nf-ksproxy-iksallocatorex-ksgetproperties.md) | Returns the properties for an allocator. |
+| [IKsAllocatorEx::KsSetAllocatorHandle method](nf-ksproxy-iksallocatorex-kssetallocatorhandle.md) | Sets the handle for an allocator. |
+| [IKsAllocatorEx::KsSetProperties method](nf-ksproxy-iksallocatorex-kssetproperties.md) | Sets the properties for an allocator. |
 | [IKsClockPropertySet::KsGetCorrelatedPhysicalTime method](nf-ksproxy-iksclockpropertyset-ksgetcorrelatedphysicaltime.md) | The KsGetCorrelatedPhysicalTime method retrieves the physical time and the correlated system time from the underlying clock. |
 | [IKsClockPropertySet::KsGetCorrelatedTime method](nf-ksproxy-iksclockpropertyset-ksgetcorrelatedtime.md) | The KsGetCorrelatedTime method retrieves the current time and the correlated system time from the underlying clock. |
 | [IKsClockPropertySet::KsGetPhysicalTime method](nf-ksproxy-iksclockpropertyset-ksgetphysicaltime.md) | The KsGetPhysicalTime method retrieves the physical time from the underlying clock. |
@@ -86,6 +116,17 @@ Ksproxy.h contain these programming interfaces:
 | [IKsPin::KsQueryMediums method](nf-ksproxy-ikspin-ksquerymediums.md) | The KsQueryMediums method retrieves mediums that a pin supports. |
 | [IKsPinEx::KsNotifyError method](nf-ksproxy-ikspinex-ksnotifyerror.md) | The KsNotifyError method notifies the filter graph of an error to give the filter graph an opportunity to halt. |
 | [IKsPinFactory::KsPinFactory method](nf-ksproxy-ikspinfactory-kspinfactory.md) | The KsPinFactory method retrieves the identifier of a pin factory. |
+| [IKsPinPipe::KsGetConnectedPin method](nf-ksproxy-ikspinpipe-ksgetconnectedpin.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetFilterName method](nf-ksproxy-ikspinpipe-ksgetfiltername.md) | Returns the name of a filter. |
+| [IKsPinPipe::KsGetPinBusCache method](nf-ksproxy-ikspinpipe-ksgetpinbuscache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetPinFramingCache method](nf-ksproxy-ikspinpipe-ksgetpinframingcache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetPinName method](nf-ksproxy-ikspinpipe-ksgetpinname.md) | Returns the name of a pin. |
+| [IKsPinPipe::KsGetPipe method](nf-ksproxy-ikspinpipe-ksgetpipe.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetPipeAllocatorFlag method](nf-ksproxy-ikspinpipe-ksgetpipeallocatorflag.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPinBusCache method](nf-ksproxy-ikspinpipe-kssetpinbuscache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPinFramingCache method](nf-ksproxy-ikspinpipe-kssetpinframingcache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPipe method](nf-ksproxy-ikspinpipe-kssetpipe.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPipeAllocatorFlag method](nf-ksproxy-ikspinpipe-kssetpipeallocatorflag.md) | Not recommended for application use. |
 | [IKsPropertySet::Get method](nf-ksproxy-ikspropertyset-get.md) | The Get method retrieves a property identified by a property-set GUID and a property identifier. |
 | [IKsPropertySet::QuerySupported method](nf-ksproxy-ikspropertyset-querysupported.md) | The QuerySupported method determines whether a KS object supports a property set and the type of that support. |
 | [IKsPropertySet::Set method](nf-ksproxy-ikspropertyset-set.md) | The Set method sets a property identified by a property-set GUID and a property identifier. |

@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILSUPSVCINFOPARAMMASK
+UID: NE:ntddrilapitypes.RILSUPSVCINFOPARAMMASK
 title: RILSUPSVCINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsupsvcinfoparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d3a4780f-6fd4-40d3-a629-5dad31720506
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILSUPSVCINFOPARAMMASK, RILSUPSVCINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSUPSVCINFOPARAMMASK
 ---
 
 # RILSUPSVCINFOPARAMMASK enumeration

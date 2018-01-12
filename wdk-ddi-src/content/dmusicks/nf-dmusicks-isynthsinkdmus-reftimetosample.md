@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.ISynthSinkDMus.RefTimeToSample
+UID: NF:dmusicks.ISynthSinkDMus.RefTimeToSample
 title: ISynthSinkDMus::RefTimeToSample method
 author: windows-driver-content
 description: The RefTimeToSample method converts a reference time into a sample time.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # ISynthSinkDMus::RefTimeToSample method
@@ -106,7 +107,7 @@ Header
 <a href="..\dmusicks\nn-dmusicks-isynthsinkdmus.md">ISynthSinkDMus</a>
 </dt>
 <dt>
-<a href="audio.idirectmusicsynthsink_reftimetosample">IDirectMusicSynthSink::RefTimeToSample</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536525">IDirectMusicSynthSink::RefTimeToSample</a>
 </dt>
 </dl>
  

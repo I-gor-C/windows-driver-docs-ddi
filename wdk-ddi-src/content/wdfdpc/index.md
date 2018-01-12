@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdfdpc
 ---
 
 # Wdfdpc.h header
@@ -16,6 +16,10 @@ Wdfdpc.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [PFN_WDFDPCCREATE function](nc-wdfdpc-pfn_wdfdpccreate.md) | The WdfDpcCreate method creates a framework DPC object and registers an EvtDpcFunc callback function. |
+| [PFN_WDFDPCENQUEUE function](nc-wdfdpc-pfn_wdfdpcenqueue.md) | The WdfDpcEnqueue method schedules the execution of a DPC object's EvtDpcFunc callback function. |
+| [PFN_WDFDPCGETPARENTOBJECT function](nc-wdfdpc-pfn_wdfdpcgetparentobject.md) | The WdfDpcGetParentObject method returns the parent object of a specified DPC object. |
+| [PFN_WDFDPCWDMGETDPC function](nc-wdfdpc-pfn_wdfdpcwdmgetdpc.md) | The WdfDpcWdmGetDpc method returns a pointer to the KDPC structure that is associated with a specified framework DPC object. |
 | [WDF_DPC_CONFIG_INIT function](nf-wdfdpc-wdf_dpc_config_init.md) | The WDF_DPC_CONFIG_INIT function initializes a driver's WDF_DPC_CONFIG structure. |
 | [WdfDpcCancel function](nf-wdfdpc-wdfdpccancel.md) | The WdfDpcCancel method attempts to cancel the execution of a DPC object's scheduled EvtDpcFunc callback function. |
 | [WdfDpcCreate function](nf-wdfdpc-wdfdpccreate.md) | The WdfDpcCreate method creates a framework DPC object and registers an EvtDpcFunc callback function. |

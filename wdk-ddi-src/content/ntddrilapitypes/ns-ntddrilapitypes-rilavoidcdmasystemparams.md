@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILAVOIDCDMASYSTEMPARAMS
+UID: NS:ntddrilapitypes.RILAVOIDCDMASYSTEMPARAMS
 title: RILAVOIDCDMASYSTEMPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilavoidcdmasystemparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: cf160fb9-8230-4b75-8a4f-d19ef001f54a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILAVOIDCDMASYSTEMPARAMS, LPRILAVOIDCDMASYSTEMPARAMS, *LPRILAVOIDCDMASYSTEMPARAMS, RILAVOIDCDMASYSTEMPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILAVOIDCDMASYSTEMPARAMS, *LPRILAVOIDCDMASYSTEMPARAMS, RILAVOIDCDMASYSTEMPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILAVOIDCDMASYSTEMPARAMS, RILAVOIDCDMASYSTEMPARAMS
 ---
 
 # RILAVOIDCDMASYSTEMPARAMS structure

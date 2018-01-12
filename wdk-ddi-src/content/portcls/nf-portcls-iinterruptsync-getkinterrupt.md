@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IInterruptSync.GetKInterrupt
+UID: NF:portcls.IInterruptSync.GetKInterrupt
 title: IInterruptSync::GetKInterrupt method
 author: windows-driver-content
 description: The GetKInterrupt method gets a WDM interrupt object from a port-class synchronization object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IInterruptSync::GetKInterrupt method
@@ -61,9 +62,9 @@ PKINTERRUPT GetKInterrupt(
 
 
 ## -remarks
-The PKINTERRUPT pointer is one of the two parameters that are passed to every interrupt service routine (see <a href="kernel.interruptservice">InterruptService</a>). Every <b>IInterruptSync</b> object has an associated PKINTERRUPT pointer. It points to the associated kernel interrupt object, which is opaque.
+The PKINTERRUPT pointer is one of the two parameters that are passed to every interrupt service routine (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547958">InterruptService</a>). Every <b>IInterruptSync</b> object has an associated PKINTERRUPT pointer. It points to the associated kernel interrupt object, which is opaque.
 
-A driver typically calls <code>GetKInterrupt</code> only if it needs to obtain this pointer so that it can call <a href="kernel.kesynchronizeexecution">KeSynchronizeExecution</a> directly.
+A driver typically calls <code>GetKInterrupt</code> only if it needs to obtain this pointer so that it can call <a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a> directly.
 
 
 ## -requirements
@@ -108,10 +109,10 @@ Any level
 <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
 </dt>
 <dt>
-<a href="kernel.interruptservice">InterruptService</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547958">InterruptService</a>
 </dt>
 <dt>
-<a href="kernel.kesynchronizeexecution">KeSynchronizeExecution</a>
+<a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>
 </dt>
 </dl>
  

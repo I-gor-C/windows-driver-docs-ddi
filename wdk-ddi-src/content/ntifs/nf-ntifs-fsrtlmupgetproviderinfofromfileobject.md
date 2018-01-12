@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlMupGetProviderInfoFromFileObject
+UID: NF:ntifs.FsRtlMupGetProviderInfoFromFileObject
 title: FsRtlMupGetProviderInfoFromFileObject function
 author: windows-driver-content
 description: The FsRtlMupGetProviderInfoFromFileObject routine gets information about a network redirector that is registered with the multiple UNC provider (MUP) from a file object for a file that is located on a remote file system.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlmupgetproviderinfofromfileobject.htm
 old-project: ifsk
 ms.assetid: 3f4d8c5c-3a83-4027-8d9e-5ff7db4a6853
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlMupGetProviderInfoFromFileObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlMupGetProviderInfoFromFileObject function
@@ -112,7 +113,7 @@ A file system filter driver can quickly compare the value of the provider identi
 
 The value of the UNC provider identifier for a particular network redirector remains the same if the network redirector is unloaded from the system and then reloaded back into the system.
 
-To get the UNC provider identifier of a network redirector from the device name of the network redirector, a file system filter driver can call the <a href="ifsk.fsrtlmupgetprovideridfromname">FsRtlMupGetProviderIdFromName</a> routine.
+To get the UNC provider identifier of a network redirector from the device name of the network redirector, a file system filter driver can call the <a href="..\ntifs\nf-ntifs-fsrtlmupgetprovideridfromname.md">FsRtlMupGetProviderIdFromName</a> routine.
 
 
 ## -requirements
@@ -186,12 +187,12 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fsrtlmupgetprovideridfromname">FsRtlMupGetProviderIdFromName</a>
+<a href="..\ntifs\nf-ntifs-fsrtlmupgetprovideridfromname.md">FsRtlMupGetProviderIdFromName</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlMupGetProviderInfoFromFileObject routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlMupGetProviderInfoFromFileObject routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMUpdateExternalFonts
+UID: NF:printoem.OEMUpdateExternalFonts
 title: OEMUpdateExternalFonts function
 author: windows-driver-content
 description: OEMUpdateExternalFonts function
@@ -7,7 +7,7 @@ old-location: print\oemupdateexternalfonts.htm
 old-project: print
 ms.assetid: 04b0a34f-0aec-4f42-8a2e-a29168a699e3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMUpdateExternalFonts
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

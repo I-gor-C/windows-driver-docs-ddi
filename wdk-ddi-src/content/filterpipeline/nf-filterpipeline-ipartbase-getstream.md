@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPartBase.GetStream
+UID: NF:filterpipeline.IPartBase.GetStream
 title: IPartBase::GetStream method
 author: windows-driver-content
 description: The GetStream method gets the stream object that contains the part data. Each part has part-specific data that is associated with it (for example, a font, image, and page markup).
@@ -7,7 +7,7 @@ old-location: print\ipartbase_getstream.htm
 old-project: print
 ms.assetid: 83840bca-2e6e-4982-9ec1-e1e278908993
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPartBase, IPartBase::GetStream, GetStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPartBase::GetStream method

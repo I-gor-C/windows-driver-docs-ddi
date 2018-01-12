@@ -1,14 +1,14 @@
 ---
-UID: NS.WSK._WSK_SOCKET
+UID: NS:wsk._WSK_SOCKET
 title: _WSK_SOCKET
 author: windows-driver-content
 description: The WSK_SOCKET structure defines a socket object for a socket.
 old-location: netvista\wsk_socket.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: dce4a087-a14b-400b-bdc1-944c1d4d492a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WSK_SOCKET, PWSK_SOCKET, *PWSK_SOCKET, WSK_SOCKET
+ms.date: 1/8/2018
+ms.keywords: _WSK_SOCKET, *PWSK_SOCKET, WSK_SOCKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PWSK_SOCKET, WSK_SOCKET
 req.product: Windows 10 or later.
 ---
 
@@ -74,7 +75,7 @@ Basic socket
 </td>
 <td>
 
-<a href="netvista.wsk_provider_basic_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_basic_dispatch.md">
          WSK_PROVIDER_BASIC_DISPATCH</a>
 
 
@@ -87,7 +88,7 @@ Listening socket
 </td>
 <td>
 
-<a href="netvista.wsk_provider_listen_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_listen_dispatch.md">
          WSK_PROVIDER_LISTEN_DISPATCH</a>
 
 
@@ -100,7 +101,7 @@ Datagram socket
 </td>
 <td>
 
-<a href="netvista.wsk_provider_datagram_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_datagram_dispatch.md">
          WSK_PROVIDER_DATAGRAM_DISPATCH</a>
 
 
@@ -113,7 +114,7 @@ Connection-oriented socket
 </td>
 <td>
 
-<a href="netvista.wsk_provider_connection_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_connection_dispatch.md">
          WSK_PROVIDER_CONNECTION_DISPATCH</a>
 
 
@@ -126,7 +127,7 @@ Stream socket
 </td>
 <td>
 
-<a href="netvista.wsk_provider_stream_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">
          WSK_PROVIDER_STREAM_DISPATCH</a>
 
 
@@ -209,26 +210,26 @@ Header
 <a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_basic_dispatch">WSK_PROVIDER_BASIC_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_basic_dispatch.md">WSK_PROVIDER_BASIC_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_connection_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_connection_dispatch.md">
    WSK_PROVIDER_CONNECTION_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_datagram_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_datagram_dispatch.md">
    WSK_PROVIDER_DATAGRAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_listen_dispatch">WSK_PROVIDER_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_listen_dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_stream_dispatch">WSK_PROVIDER_STREAM_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WSK_SOCKET structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_SOCKET structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

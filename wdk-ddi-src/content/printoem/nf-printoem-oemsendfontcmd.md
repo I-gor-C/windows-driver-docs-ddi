@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMSendFontCmd
+UID: NF:printoem.OEMSendFontCmd
 title: OEMSendFontCmd function
 author: windows-driver-content
 description: OEMSendFontCmd function
@@ -7,7 +7,7 @@ old-location: print\oemsendfontcmd.htm
 old-project: print
 ms.assetid: 4dcc2ec0-6a75-4fc0-800c-c1ce12e3fd6a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMSendFontCmd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 
@@ -65,7 +66,7 @@ VOID APIENTRY OEMSendFontCmd(
 ## -returns
 This function does not return a value.
 
-This function is obsolete for Windows XP and later. It is supported only for earlier Unidrv plug-ins. Use <a href="print.iprintoemuni_sendfontcmd">IPrintOemUni::SendFontCmd</a>.
+This function is obsolete for Windows XP and later. It is supported only for earlier Unidrv plug-ins. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff554274">IPrintOemUni::SendFontCmd</a>.
 
 
 ## -remarks

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.IoGetDeviceAttachmentBaseRef
+UID: NF:ntifs.IoGetDeviceAttachmentBaseRef
 title: IoGetDeviceAttachmentBaseRef function
 author: windows-driver-content
 description: The IoGetDeviceAttachmentBaseRef routine returns a pointer to the lowest-level device object in a file system or device driver stack.
@@ -7,7 +7,7 @@ old-location: ifsk\iogetdeviceattachmentbaseref.htm
 old-project: ifsk
 ms.assetid: e1d31fdd-de4f-4e57-a8e8-0468ab4242f8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IoGetDeviceAttachmentBaseRef
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # IoGetDeviceAttachmentBaseRef function
@@ -63,9 +64,9 @@ A pointer to a device object in the stack.
 
 
 ## -remarks
-A file system filter driver typically calls <b>IoGetDeviceAttachmentBaseRef</b> to get the lowest-level device object in a file system driver stack. Often this is done when the filter driver receives notification that a file system has registered or unregistered itself as an active file system. The filter driver's notification callback routine calls <b>IoGetDeviceAttachmentBaseRef</b> to get a pointer to the file system's control device object, and then calls <a href="ifsk.obquerynamestring">ObQueryNameString</a> to retrieve this object's name for debugging purposes. 
+A file system filter driver typically calls <b>IoGetDeviceAttachmentBaseRef</b> to get the lowest-level device object in a file system driver stack. Often this is done when the filter driver receives notification that a file system has registered or unregistered itself as an active file system. The filter driver's notification callback routine calls <b>IoGetDeviceAttachmentBaseRef</b> to get a pointer to the file system's control device object, and then calls <a href="..\ntifs\nf-ntifs-obquerynamestring.md">ObQueryNameString</a> to retrieve this object's name for debugging purposes. 
 
-<b>IoGetDeviceAttachmentBaseRef</b> increments the reference count on the device object at the bottom of the stack. Thus every successful call to <b>IoGetDeviceAttachmentBaseRef</b> must be matched by a subsequent call to <a href="kernel.obdereferenceobject">ObDereferenceObject</a>. 
+<b>IoGetDeviceAttachmentBaseRef</b> increments the reference count on the device object at the bottom of the stack. Thus every successful call to <b>IoGetDeviceAttachmentBaseRef</b> must be matched by a subsequent call to <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>. 
 
 
 ## -requirements
@@ -139,27 +140,27 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ioenumeratedeviceobjectlist">IoEnumerateDeviceObjectList</a>
+<a href="..\ntifs\nf-ntifs-ioenumeratedeviceobjectlist.md">IoEnumerateDeviceObjectList</a>
 </dt>
 <dt>
-<a href="ifsk.iogetlowerdeviceobject">IoGetLowerDeviceObject</a>
+<a href="..\ntifs\nf-ntifs-iogetlowerdeviceobject.md">IoGetLowerDeviceObject</a>
 </dt>
 <dt>
-<a href="ifsk.ioregisterfsregistrationchange">IoRegisterFsRegistrationChange</a>
+<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
 </dt>
 <dt>
-<a href="ifsk.iounregisterfsregistrationchange">IoUnregisterFsRegistrationChange</a>
+<a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>
 </dt>
 <dt>
-<a href="kernel.obdereferenceobject">ObDereferenceObject</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 </dt>
 <dt>
-<a href="ifsk.obquerynamestring">ObQueryNameString</a>
+<a href="..\ntifs\nf-ntifs-obquerynamestring.md">ObQueryNameString</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoGetDeviceAttachmentBaseRef routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoGetDeviceAttachmentBaseRef routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

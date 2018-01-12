@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dumddi._DXVADDI_VIDEOTRANSFERFUNCTION
+UID: NE:d3dumddi._DXVADDI_VIDEOTRANSFERFUNCTION
 title: _DXVADDI_VIDEOTRANSFERFUNCTION
 author: windows-driver-content
 description: The DXVADDI_VIDEOTRANSFERFUNCTION enumeration type contains values that identify the conversion function from R'G'B' to RGB.
@@ -7,7 +7,7 @@ old-location: display\dxvaddi_videotransferfunction.htm
 old-project: display
 ms.assetid: 8d798afe-dc75-4cd0-aad7-1f9824bdcf00
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVADDI_VIDEOTRANSFERFUNCTION, DXVADDI_VIDEOTRANSFERFUNCTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVADDI_VIDEOTRANSFERFUNCTION
 ---
 
 # _DXVADDI_VIDEOTRANSFERFUNCTION enumeration
@@ -91,7 +92,7 @@ Specifies true 2.0 gamma--that is, L' = pow(L, 1/gamma) for L=0..1.
 
 Specifies true 2.2 gamma--that is, L' = pow(L, 1/gamma) for L=0..1. 
 
-The BT470-2 SysM primaries (that is, the <a href="display.dxvaddi_videoprimaries">DXVADDI_VIDEOPRIMARIES</a> enumeration type) use gamma 2.2.
+The BT470-2 SysM primaries (that is, the <a href="..\d3dumddi\ne-d3dumddi-_dxvaddi_videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a> enumeration type) use gamma 2.2.
 
 
 ### -field DXVADDI_VideoTransFunc_709
@@ -119,7 +120,7 @@ Specifies true 2.8 gamma--that is, L' = pow(L, 1/gamma) for L=0..1.
 
 
 ## -remarks
-One of the values of DXVADDI_VIDEOTRANSFERFUNCTION can be specified in the <b>VideoTransferFunction</b> member of the <a href="display.dxvaddi_extendedformat">DXVADDI_EXTENDEDFORMAT</a> structure.
+One of the values of DXVADDI_VIDEOTRANSFERFUNCTION can be specified in the <b>VideoTransferFunction</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure.
 
 DXVADDI_VIDEOTRANSFERFUNCTION corresponds to the gamma function of the data. Some transfer functions have corrections to account for 8-bit integer quantization effects.
 
@@ -154,15 +155,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxvaddi_extendedformat">DXVADDI_EXTENDEDFORMAT</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
 </dt>
 <dt>
-<a href="display.dxvaddi_videoprimaries">DXVADDI_VIDEOPRIMARIES</a>
+<a href="..\d3dumddi\ne-d3dumddi-_dxvaddi_videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_VIDEOTRANSFERFUNCTION enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_VIDEOTRANSFERFUNCTION enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

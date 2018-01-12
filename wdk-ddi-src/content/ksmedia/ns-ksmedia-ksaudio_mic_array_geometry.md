@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSAUDIO_MIC_ARRAY_GEOMETRY
+UID: NS:ksmedia.KSAUDIO_MIC_ARRAY_GEOMETRY
 title: KSAUDIO_MIC_ARRAY_GEOMETRY
 author: windows-driver-content
 description: The KSAUDIO_MIC_ARRAY_GEOMETRY structure specifies the type and the geometry of the microphone array.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 49b8f602-8f82-4445-98f2-a63563689561
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSAUDIO_MIC_ARRAY_GEOMETRY, KSAUDIO_MIC_ARRAY_GEOMETRY, *PKSAUDIO_MIC_ARRAY_GEOMETRY, PKSAUDIO_MIC_ARRAY_GEOMETRY
+ms.keywords: KSAUDIO_MIC_ARRAY_GEOMETRY, KSAUDIO_MIC_ARRAY_GEOMETRY, *PKSAUDIO_MIC_ARRAY_GEOMETRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSAUDIO_MIC_ARRAY_GEOMETRY, *PKSAUDIO_MIC_ARRAY_GEOMETRY
 ---
 
 # KSAUDIO_MIC_ARRAY_GEOMETRY structure

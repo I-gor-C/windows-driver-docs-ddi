@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGKS_VIDEOINFO
+UID: NS:ksmedia.tagKS_VIDEOINFO
 title: tagKS_VIDEOINFO
 author: windows-driver-content
 description: The KS_VIDEOINFO structure describes the bitmap and color information for a video stream.
@@ -7,8 +7,8 @@ old-location: stream\ks_videoinfo.htm
 old-project: stream
 ms.assetid: e588a844-0b20-418c-9c65-e85f3a992d5c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagKS_VIDEOINFO, KS_VIDEOINFO, *PKS_VIDEOINFO, PKS_VIDEOINFO
+ms.date: 1/9/2018
+ms.keywords: tagKS_VIDEOINFO, *PKS_VIDEOINFO, KS_VIDEOINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKS_VIDEOINFO, KS_VIDEOINFO
 ---
 
 # tagKS_VIDEOINFO structure
@@ -90,7 +91,7 @@ Specifies the average time per frame in 100-nanosecond units.
 
 ### -field bmiHeader
 
-Describes a <a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
+Describes a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
 
 
 ### -field bmiColors
@@ -106,7 +107,7 @@ Array of DWORD values that specify true-color bitmasks.
 ### -field TrueColorInfo
 
 
-<a href="stream.ks_truecolorinfo">KS_TRUECOLORINFO</a> structure that contains both a color palette and an array of color bitmasks.
+<a href="..\ksmedia\ns-ksmedia-tag_ks_truecolorinfo.md">KS_TRUECOLORINFO</a> structure that contains both a color palette and an array of color bitmasks.
 
 
 ## -remarks
@@ -137,18 +138,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a>
+<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
 </dt>
 <dt>
-<a href="stream.ks_rgbquad">KS_RGBQUAD</a>
+<a href="..\ksmedia\ns-ksmedia-tagks_rgbquad.md">KS_RGBQUAD</a>
 </dt>
 <dt>
-<a href="stream.ks_truecolorinfo">KS_TRUECOLORINFO</a>
+<a href="..\ksmedia\ns-ksmedia-tag_ks_truecolorinfo.md">KS_TRUECOLORINFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEOINFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_VIDEOINFO structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

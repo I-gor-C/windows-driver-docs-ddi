@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpar.IOCTL_PAR_GET_DEFAULT_MODES
+UID: NI:ntddpar.IOCTL_PAR_GET_DEFAULT_MODES
 title: IOCTL_PAR_GET_DEFAULT_MODES
 author: windows-driver-content
 description: The IOCTL_PAR_GET_DEFAULT_MODES request returns the default write (forward) and read (reverse) IEEE 1284 protocols that the system-supplied bus driver for parallel ports uses.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # IOCTL_PAR_GET_DEFAULT_MODES IOCTL
@@ -66,7 +67,7 @@ The <b>AssociatedIrp.SystemBuffer</b> member points to a PARCLASS_NEGOTIATION_MA
 
 
 ### -output-buffer-length
-The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="parports.parclass_negotiation_mask">PARCLASS_NEGOTIATION_MASK</a> structure. 
+The value of the <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\ntddpar\ns-ntddpar-_parclass_negotiation_mask.md">PARCLASS_NEGOTIATION_MASK</a> structure. 
 
 
 ### -in-out-buffer
@@ -118,7 +119,7 @@ Header
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_get_device_caps.md">IOCTL_PAR_GET_DEVICE_CAPS</a>
 </dt>
 <dt>
-<a href="parports.parclass_negotiation_mask">PARCLASS_NEGOTIATION_MASK</a>
+<a href="..\ntddpar\ns-ntddpar-_parclass_negotiation_mask.md">PARCLASS_NEGOTIATION_MASK</a>
 </dt>
 </dl>
  

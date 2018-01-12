@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.CcPrepareMdlWrite
+UID: NF:ntifs.CcPrepareMdlWrite
 title: CcPrepareMdlWrite function
 author: windows-driver-content
 description: The CcPrepareMdlWrite routine provides direct access to cached file memory so that the caller can write data to the file.
@@ -7,7 +7,7 @@ old-location: ifsk\ccpreparemdlwrite.htm
 old-project: ifsk
 ms.assetid: 84e231ad-50a1-471e-b514-6b769f2a7e1e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: CcPrepareMdlWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: < DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # CcPrepareMdlWrite function
@@ -87,15 +88,15 @@ None
 
 
 ## -remarks
-<b>CcPrepareMdlWrite</b> is similar to <a href="ifsk.cccopywrite">CcCopyWrite</a>, except that the data is not copied to the cached file. Instead, the physical pages to be overwritten in the system cache are locked in memory, and <b>CcPrepareMdlWrite</b> returns one or more memory descriptor lists (MDL) describing the specified byte range. These pages remain locked in memory until <a href="ifsk.ccmdlwritecomplete">CcMdlWriteComplete</a> or <a href="ifsk.ccmdlwriteabort">CcMdlWriteAbort</a> is called. Thus each call to <b>CcPrepareMdlWrite</b> must be followed by a call to <b>CcMdlWriteComplete</b> or <b>CcMdlWriteAbort</b>.
+<b>CcPrepareMdlWrite</b> is similar to <a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>, except that the data is not copied to the cached file. Instead, the physical pages to be overwritten in the system cache are locked in memory, and <b>CcPrepareMdlWrite</b> returns one or more memory descriptor lists (MDL) describing the specified byte range. These pages remain locked in memory until <a href="..\ntifs\nf-ntifs-ccmdlwritecomplete.md">CcMdlWriteComplete</a> or <a href="..\ntifs\nf-ntifs-ccmdlwriteabort.md">CcMdlWriteAbort</a> is called. Thus each call to <b>CcPrepareMdlWrite</b> must be followed by a call to <b>CcMdlWriteComplete</b> or <b>CcMdlWriteAbort</b>.
 
 Note that the pages described by the MDL are locked in memory, but not mapped in system space. The caller can perform this mapping by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>.
 
-Note that even if the call to <b>CcPrepareMdlWrite</b> fails, one or more MDLs may have been allocated. The caller can examine the value of <i>IoStatus.Information</i> to determine whether this has occurred. If it has, the caller must call <a href="ifsk.ccmdlwritecomplete">CcMdlWriteComplete</a> to free the allocated MDLs.
+Note that even if the call to <b>CcPrepareMdlWrite</b> fails, one or more MDLs may have been allocated. The caller can examine the value of <i>IoStatus.Information</i> to determine whether this has occurred. If it has, the caller must call <a href="..\ntifs\nf-ntifs-ccmdlwritecomplete.md">CcMdlWriteComplete</a> to free the allocated MDLs.
 
 If any failure occurs, <b>CcPrepareMdlWrite</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcPrepareMdlWrite</b> raises a STATUS_INSUFFICIENT_RESOURCES exception; if an I/O error occurs, <b>CcPrepareMdlWrite</b> raises the status exception of the I/O error. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcPrepareMdlWrite</b> in a <b>try-except</b> or <b>try-finally</b> statement.
 
-To cache a file, use <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>.
+To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
 
 
 ## -requirements
@@ -159,25 +160,25 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.cccopywrite">CcCopyWrite</a>
+<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
 </dt>
 <dt>
-<a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
-<a href="ifsk.ccmdlwriteabort">CcMdlWriteAbort</a>
+<a href="..\ntifs\nf-ntifs-ccmdlwriteabort.md">CcMdlWriteAbort</a>
 </dt>
 <dt>
-<a href="ifsk.ccmdlwritecomplete">CcMdlWriteComplete</a>
+<a href="..\ntifs\nf-ntifs-ccmdlwritecomplete.md">CcMdlWriteComplete</a>
 </dt>
 <dt>
-<a href="kernel.ioallocatemdl">IoAllocateMdl</a>
+<a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
 </dt>
 <dt>
-<a href="kernel.iobuildpartialmdl">IoBuildPartialMdl</a>
+<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
 </dt>
 <dt>
-<a href="kernel.mmgetmdlbytecount">MmGetMdlByteCount</a>
+<a href="..\wdm\nf-wdm-mmgetmdlbytecount.md">MmGetMdlByteCount</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>
@@ -189,7 +190,7 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554539">MmGetMdlVirtualAddress</a>
 </dt>
 <dt>
-<a href="kernel.mmgetsystemaddressformdl">MmGetSystemAddressForMdl</a>
+<a href="..\wdm\nf-wdm-mmgetsystemaddressformdl.md">MmGetSystemAddressForMdl</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>
@@ -198,24 +199,24 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554568">MmInitializeMdl</a>
 </dt>
 <dt>
-<a href="kernel.mmmaplockedpages">MmMapLockedPages</a>
+<a href="..\wdm\nf-wdm-mmmaplockedpages.md">MmMapLockedPages</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554660">MmPrepareMdlForReuse</a>
 </dt>
 <dt>
-<a href="kernel.mmprobeandlockpages">MmProbeAndLockPages</a>
+<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
 </dt>
 <dt>
-<a href="kernel.mmunlockpages">MmUnlockPages</a>
+<a href="..\wdm\nf-wdm-mmunlockpages.md">MmUnlockPages</a>
 </dt>
 <dt>
-<a href="kernel.mmunmaplockedpages">MmUnmapLockedPages</a>
+<a href="..\wdm\nf-wdm-mmunmaplockedpages.md">MmUnmapLockedPages</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcPrepareMdlWrite routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcPrepareMdlWrite routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

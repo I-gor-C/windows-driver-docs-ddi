@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILMSGBCGENERAL
+UID: NS:ntddrilapitypes.RILMSGBCGENERAL
 title: RILMSGBCGENERAL
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgbcgeneral.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d1570dc0-1587-4d02-a655-724c999d10a2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILMSGBCGENERAL, LPRILMSGBCGENERAL, RILMSGBCGENERAL, *LPRILMSGBCGENERAL
+ms.date: 1/8/2018
+ms.keywords: RILMSGBCGENERAL, RILMSGBCGENERAL, *LPRILMSGBCGENERAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGBCGENERAL, *LPRILMSGBCGENERAL
 ---
 
 # RILMSGBCGENERAL structure

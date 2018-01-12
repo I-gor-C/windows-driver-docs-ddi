@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortGetNodeAffinity
+UID: NF:storport.StorPortGetNodeAffinity
 title: StorPortGetNodeAffinity function
 author: windows-driver-content
 description: The StorPortGetNodeAffinity routine constructs a mask of the active processors in a requested non-uniform memory access (NUMA) node.
@@ -7,7 +7,7 @@ old-location: storage\storportgetnodeaffinity.htm
 old-project: storage
 ms.assetid: 183940c9-f8d9-411f-a593-e283f72e05f8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortGetNodeAffinity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -139,7 +140,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.storport_storportirql">StorPortIrql</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
 </td>
 </tr>
 </table>

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._FILE_REPARSE_POINT_INFORMATION
+UID: NS:ntifs._FILE_REPARSE_POINT_INFORMATION
 title: _FILE_REPARSE_POINT_INFORMATION
 author: windows-driver-content
 description: The FILE_REPARSE_POINT_INFORMATION structure is used to query for information about a reparse point.
@@ -7,8 +7,8 @@ old-location: ifsk\file_reparse_point_information.htm
 old-project: ifsk
 ms.assetid: de6e8b39-9e0c-4817-82b4-d64e81a95e79
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FILE_REPARSE_POINT_INFORMATION, *PFILE_REPARSE_POINT_INFORMATION, FILE_REPARSE_POINT_INFORMATION, PFILE_REPARSE_POINT_INFORMATION
+ms.date: 1/9/2018
+ms.keywords: _FILE_REPARSE_POINT_INFORMATION, *PFILE_REPARSE_POINT_INFORMATION, FILE_REPARSE_POINT_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PFILE_REPARSE_POINT_INFORMATION, FILE_REPARSE_POINT_INFORMATION
 ---
 
 # _FILE_REPARSE_POINT_INFORMATION structure
@@ -67,9 +68,9 @@ Reparse point tag. The <b>ReparseTag</b> member indicates the structure of the u
 ## -remarks
 This information can be queried in either of the following ways: 
 
-Call <a href="kernel.zwquerydirectoryfile">ZwQueryDirectoryFile</a>, passing FileReparsePointInformation as the value of <i>FileInformationClass</i> and passing a caller-allocated, FILE_REPARSE_POINT_INFORMATION-structured buffer as the value of <i>FileInformation</i>. 
+Call <a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>, passing FileReparsePointInformation as the value of <i>FileInformationClass</i> and passing a caller-allocated, FILE_REPARSE_POINT_INFORMATION-structured buffer as the value of <i>FileInformation</i>. 
 
-Create an IRP with major function code <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a> and minor function code IRP_MN_QUERY_DIRECTORY. 
+Create an IRP with major function code <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a> and minor function code IRP_MN_QUERY_DIRECTORY. 
 
 For more information about reparse points, see the Windows SDK documentation. 
 
@@ -96,15 +97,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
 </dt>
 <dt>
-<a href="kernel.zwquerydirectoryfile">ZwQueryDirectoryFile</a>
+<a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_REPARSE_POINT_INFORMATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_REPARSE_POINT_INFORMATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

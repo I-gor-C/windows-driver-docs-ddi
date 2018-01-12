@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_VIDPN_INTERFACE
+UID: NS:d3dkmddi._DXGK_VIDPN_INTERFACE
 title: _DXGK_VIDPN_INTERFACE
 author: windows-driver-content
 description: The DXGK_VIDPN_INTERFACE structure contains pointers to functions that belong to the VidPn interface, which is implemented by the video present network (VidPN) manager.
@@ -7,7 +7,7 @@ old-location: display\dxgk_vidpn_interface.htm
 old-project: display
 ms.assetid: 7ddd110c-2521-4df6-a936-e702a0f15312
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_VIDPN_INTERFACE, DXGK_VIDPN_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_VIDPN_INTERFACE
 ---
 
 # _DXGK_VIDPN_INTERFACE structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The DXGK_VIDPN_INTERFACE structure contains pointers to functions that belong to the <a href="display.vidpn_interface">VidPn interface</a>, which is implemented by the video present network (VidPN) manager.
+The DXGK_VIDPN_INTERFACE structure contains pointers to functions that belong to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn interface</a>, which is implemented by the video present network (VidPN) manager.
 
 
 
@@ -65,7 +66,7 @@ typedef struct _DXGK_VIDPN_INTERFACE {
 
 ### -field Version
 
-A <a href="display.dxgk_vidpn_interface_version">DXGK_VIDPN_INTERFACE_VERSION</a> enumerator that specifies the version of the interface.
+A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_vidpn_interface_version.md">DXGK_VIDPN_INTERFACE_VERSION</a> enumerator that specifies the version of the interface.
 
 
 ### -field pfnGetTopology

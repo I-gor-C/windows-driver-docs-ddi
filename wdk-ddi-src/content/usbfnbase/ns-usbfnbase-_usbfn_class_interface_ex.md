@@ -1,14 +1,14 @@
 ---
-UID: NS.USBFNBASE._USBFN_CLASS_INTERFACE_EX
+UID: NS:usbfnbase._USBFN_CLASS_INTERFACE_EX
 title: _USBFN_CLASS_INTERFACE_EX
 author: windows-driver-content
 description: Describes an interface and its endpoints.
 old-location: buses\usbfn_class_interface_ex.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: DEA417E7-FA4B-4F72-A03A-ECE921FC725C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBFN_CLASS_INTERFACE_EX, USBFN_CLASS_INTERFACE_EX, PUSBFN_CLASS_INTERFACE_EX, *PUSBFN_CLASS_INTERFACE_EX
+ms.date: 1/4/2018
+ms.keywords: _USBFN_CLASS_INTERFACE_EX, *PUSBFN_CLASS_INTERFACE_EX, USBFN_CLASS_INTERFACE_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PUSBFN_CLASS_INTERFACE_EX, USBFN_CLASS_INTERFACE_EX
 req.product: Windows 10 or later.
 ---
 
@@ -74,7 +75,7 @@ The number of endpoints contained in  the interface.
 
 ### -field PipeArr
 
-An array of <a href="buses.usbfn_pipe_information">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.
+An array of <a href="..\usbfnbase\ns-usbfnbase-_usbfn_pipe_information.md">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.
 
 
 ## -remarks

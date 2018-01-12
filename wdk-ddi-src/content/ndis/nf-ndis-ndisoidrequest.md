@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisOidRequest
+UID: NF:ndis.NdisOidRequest
 title: NdisOidRequest function
 author: windows-driver-content
 description: The NdisOidRequest function forwards a request to the underlying drivers to query the capabilities or status of an adapter or set the state of an adapter.
 old-location: netvista\ndisoidrequest.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a3ddeec4-0414-48ed-ab3b-5df252682655
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisOidRequest function
@@ -59,14 +60,14 @@ NDIS_STATUS NdisOidRequest(
 ### -param NdisBindingHandle [in]
 
 The handle returned by the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function that
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function that
      identifies the target adapter on the binding.
 
 
 ### -param OidRequest [in]
 
 A pointer to an 
-     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure that specifies
      the operation requested with a given OID_<i>XXX</i> code to either query the status of an adapter or to set the state of an adapter.
 
 
@@ -85,7 +86,7 @@ The underlying driver determines which NDIS_STATUS_<i>XXX</i> code
 <dt><b>NDIS_STATUS_INVALID_OID</b></dt>
 </dl>The OID_<i>XXX</i> code specified in the 
        <b>Oid</b> member of the 
-       <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>-structured buffer at 
+       <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>-structured buffer at 
        <i>OidRequest</i> is invalid or unsupported by the underlying driver.
 <dl>
 <dt><b>NDIS_STATUS_INVALID_LENGTH or NDIS_STATUS_BUFFER_TOO_SHORT</b></dt>
@@ -159,7 +160,7 @@ The NDIS library maintains bindings for underlying miniport drivers. NDIS can re
 
 For more information about the general and media-specific OIDs and their respective associated
     information buffers, see 
-    <a href="netvista.ndis_oids">NDIS OIDs</a>.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566707">NDIS OIDs</a>.
 
 
 ## -requirements
@@ -223,7 +224,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_oid_function">Irql_OID_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547990">Irql_OID_Function</a>
 </td>
 </tr>
 </table>
@@ -231,10 +232,10 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_oid_request_complete.md">ProtocolOidRequestComplete</a>
@@ -247,5 +248,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisOidRequest function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisOidRequest function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

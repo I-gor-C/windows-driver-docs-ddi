@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:vmbuskernelmodeclientlibapi
 ---
 
 # Vmbuskernelmodeclientlibapi.h header
 
 ## -description
 
-This header is used by NetVista. For more information, see
-- [NetVista](../_NetVista/index.md)
+This header is used by Networking drivers for Windows Vista and later. For more information, see
+- [Networking drivers for Windows Vista and later](../_netvista/index.md)
 
 Vmbuskernelmodeclientlibapi.h contain these programming interfaces:
 
@@ -69,22 +69,6 @@ Vmbuskernelmodeclientlibapi.h contain these programming interfaces:
 | [VmbServerChannelInitSetSaveRestorePacketCallbacks function](nf-vmbuskernelmodeclientlibapi-vmbserverchannelinitsetsaverestorepacketcallbacks.md) | The VmbServerChannelInitSetSaveRestorePacketCallbacks function sets the save and restore callback functions that are called for each packet when the driver calls a save function, such as VmbChannelSaveBegin, VmbChannelSaveContinue, and VmbChannelSaveEnd, or the VmbChannelRestoreFromBuffer function. |
 | [VmbServerChannelInitSetTargetInterfaceId function](nf-vmbuskernelmodeclientlibapi-vmbserverchannelinitsettargetinterfaceid.md) | The VmbServerChannelInitSetTargetInterfaceId function sets the target interface type GUID and instance GUID of the channel offer. |
 | [VmbServerChannelInitSetVmbusHandle function](nf-vmbuskernelmodeclientlibapi-vmbserverchannelinitsetvmbushandle.md) | The VmbServerChannelInitSetVmbusHandle function associates an instance of VMBus with this channel. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_VMB_CHANNEL_CLOSED callback](nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_closed.md) | The EvtVmbChannelClosed callback function is invoked when the client endpoint in the guest virtual machine closes a channel by using the VmbChannelDisable function, or the opposite endpoint rescinds or closes the channel. |
-| [EVT_VMB_CHANNEL_OPENED callback](nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_opened.md) | The EvtVmbChannelOpened callback function is invoked when the client endpoint in the guest virtual machine opens a channel which has been offered to it. |
-| [EVT_VMB_CHANNEL_PNP_FAILURE callback](nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_pnp_failure.md) | The EvtChannelPnpFailure callback function is invoked if the client endpoint in the guest virtual machine asynchronously fails to connect even though a PnP device was located. |
-| [EVT_VMB_CHANNEL_POST_STARTED callback](nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_post_started.md) | The EvtVmbChannelPostStarted callback function is invoked at either endpoint after packets can be received from the opposite endpoint. |
-| [EVT_VMB_CHANNEL_PROCESSING_COMPLETE callback](nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_processing_complete.md) | The EvtVmbChannelProcessingComplete callback function is invoked when a group of packets has been delivered by the EvtVmbChannelProcessPacket function, if there is a pause before delivering subsequent packets. |
-| [EVT_VMB_CHANNEL_PROCESS_PACKET callback](nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_process_packet.md) | The EvtVmbChannelProcessPacket callback function is invoked when a packet arrives in the incoming ring buffer. |
-| [EVT_VMB_CHANNEL_RESTORE_PACKET callback](nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_restore_packet.md) | The EvtVmbChannelRestorePacket callback function is invoked when the virtualization service provider (VSP) server endpoint must restore the state associated with a packet object. |
-| [EVT_VMB_CHANNEL_SAVE_PACKET callback](nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_save_packet.md) | The EvtVmbChannelSavePacket callback function is invoked when the virtualization service provider (VSP) endpoint must save the state associated with a packet. |
-| [EVT_VMB_CHANNEL_STARTED callback](nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_started.md) | The EvtVmbChannelStarted callback function is invoked at either endpoint when a channel is fully configured but before any packets have been delivered. This occurs when the opposite endpoint opened the channel or reopened it after closing it. |
-| [EVT_VMB_CHANNEL_SUSPEND callback](nc-vmbuskernelmodeclientlibapi-evt_vmb_channel_suspend.md) | The EvtVmbChannelSuspend callback function is invoked at the server endpoint when the channel is being closed or deleted by the client endpoint, which moves the server into the Stopped state. |
-| [EVT_VMB_PACKET_COMPLETION_ROUTINE callback](nc-vmbuskernelmodeclientlibapi-evt_vmb_packet_completion_routine.md) | The EvtVmbPacketCompletionRoutine callback function is invoked when the transaction associated with a sent packet is complete. |
 
 ## Structures
 

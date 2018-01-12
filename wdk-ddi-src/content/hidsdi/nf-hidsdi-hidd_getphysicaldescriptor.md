@@ -1,5 +1,5 @@
 ---
-UID: NF.hidsdi.HidD_GetPhysicalDescriptor
+UID: NF:hidsdi.HidD_GetPhysicalDescriptor
 title: HidD_GetPhysicalDescriptor function
 author: windows-driver-content
 description: The HidD_GetPhysicalDescriptor routine returns the embedded string of a top-level collection that identifies the collection's physical device.
@@ -7,7 +7,7 @@ old-location: hid\hidd_getphysicaldescriptor.htm
 old-project: hid
 ms.assetid: 05f853a9-395a-4b2b-b681-0010dd019bbc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidD_GetPhysicalDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hid.lib
 req.dll: Hid.dll
 req.irql: 
+req.typenames: *PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION
 ---
 
 # HidD_GetPhysicalDescriptor function
@@ -141,16 +142,16 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="hid.hidd_getindexedstring">HidD_GetIndexedString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_getindexedstring.md">HidD_GetIndexedString</a>
 </dt>
 <dt>
-<a href="hid.hidd_getmanufacturerstring">HidD_GetManufacturerString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_getmanufacturerstring.md">HidD_GetManufacturerString</a>
 </dt>
 <dt>
-<a href="hid.hidd_getproductstring">HidD_GetProductString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_getproductstring.md">HidD_GetProductString</a>
 </dt>
 <dt>
-<a href="hid.hidd_getserialnumberstring">HidD_GetSerialNumberString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_getserialnumberstring.md">HidD_GetSerialNumberString</a>
 </dt>
 <dt>
 <a href="..\hidclass\ni-hidclass-ioctl_get_physical_descriptor.md">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
@@ -160,5 +161,5 @@ DLL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidD_GetPhysicalDescriptor routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidD_GetPhysicalDescriptor routine%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

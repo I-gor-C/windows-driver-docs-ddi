@@ -1,5 +1,5 @@
 ---
-UID: NE.bthddi._L2CAP_DISCONNECT_REASON
+UID: NE:bthddi._L2CAP_DISCONNECT_REASON
 title: _L2CAP_DISCONNECT_REASON
 author: windows-driver-content
 description: The L2CAP_DISCONNECT_REASON enumeration type gives the reason an L2CAP channel has been disconnected.
@@ -7,7 +7,7 @@ old-location: bltooth\l2cap_disconnect_reason.htm
 old-project: bltooth
 ms.assetid: 34a37d29-c517-45dc-b94d-abffaa91cb31
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: _L2CAP_DISCONNECT_REASON, L2CAP_DISCONNECT_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: L2CAP_DISCONNECT_REASON
 ---
 
 # _L2CAP_DISCONNECT_REASON enumeration
@@ -83,7 +84,7 @@ This value specifies for the profile driver that the local radio has been physic
 ## -remarks
 A value from this enumeration is used as the 
     <b>Reason</b> member of the 
-    <a href="bltooth.indication_parameters">INDICATION_PARAMETERS</a> structure.
+    <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a> structure.
 
 Hardware limitations may prevent the Bluetooth driver stack from distinguishing between 
     <b>RadioPoweredDown</b> and 
@@ -123,12 +124,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="bltooth.indication_parameters">INDICATION_PARAMETERS</a>
+<a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20L2CAP_DISCONNECT_REASON enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20L2CAP_DISCONNECT_REASON enumeration%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

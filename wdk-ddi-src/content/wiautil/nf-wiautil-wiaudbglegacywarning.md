@@ -1,13 +1,13 @@
 ---
-UID: NF.wiautil.wiauDbgLegacyWarning
+UID: NF:wiautil.wiauDbgLegacyWarning
 title: wiauDbgLegacyWarning function
 author: windows-driver-content
 description: The wiauDbgLegacyWarning function logs a warning message.
 old-location: image\wiaudbglegacywarning.htm
-old-project: Image
+old-project: image
 ms.assetid: 5da7c762-ad5c-45bd-aebe-dc3526005569
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiauDbgLegacyWarning
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SKIP_AMOUNT
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ None
 
 
 ## -remarks
-The <b>wiauDbgLegacyWarning</b> function is identical to the <a href="image.wiaudbgwarning">wiauDbgWarning</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.
+The <b>wiauDbgLegacyWarning</b> function is identical to the <a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.
 
 
 ## -requirements
@@ -106,12 +107,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.wiaudbgwarning">wiauDbgWarning</a>
+<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20wiauDbgLegacyWarning function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiauDbgLegacyWarning function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

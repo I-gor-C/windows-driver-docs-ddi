@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_REVISION
+UID: NS:ntddk._WHEA_REVISION
 title: _WHEA_REVISION
 author: windows-driver-content
 description: The WHEA_REVISION union describes the revision of the error record data structures.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 4258f223-353a-4b6e-a93c-5742e5c1668b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_REVISION, WHEA_REVISION, *PWHEA_REVISION, PWHEA_REVISION
+ms.keywords: _WHEA_REVISION, *PWHEA_REVISION, WHEA_REVISION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_REVISION, WHEA_REVISION
 ---
 
 # _WHEA_REVISION structure
@@ -73,7 +74,7 @@ A USHORT representation of the contents of the WHEA_REVISION union.
 
 
 ## -remarks
-A WHEA_REVISION union is contained within the <a href="whea.whea_error_record_header">WHEA_ERROR_RECORD_HEADER</a> and the <a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures.
+A WHEA_REVISION union is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> and the <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures.
 
 
 ## -requirements
@@ -105,10 +106,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_error_record_header">WHEA_ERROR_RECORD_HEADER</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
 </dt>
 <dt>
-<a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:devtest
 ---
 
 # Driver test tools
@@ -53,7 +53,6 @@ For the programming guide, see [Driver test tools](https://docs.microsoft.com/en
 
 | Title   | Description   |
 | ---- |:---- |
-| [ETWENABLECALLBACK callback](..\wdm\nc-wdm-etwenablecallback.md) | The EtwEnableCallback function is an optional driver-supplied callback function that is used to receive enable or disable notifications. |
 | [PCW_CALLBACK callback](..\wdm\nc-wdm-pcw_callback.md) | Providers can implement a PCW_CALLBACK function to receive notification when consumers perform certain actions, such as adding or removing counters from a query. |
 
 ## Structures

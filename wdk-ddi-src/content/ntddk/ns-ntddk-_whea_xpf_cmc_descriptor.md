@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_XPF_CMC_DESCRIPTOR
+UID: NS:ntddk._WHEA_XPF_CMC_DESCRIPTOR
 title: _WHEA_XPF_CMC_DESCRIPTOR
 author: windows-driver-content
 description: The WHEA_XPF_CMC_DESCRIPTOR structure describes a corrected machine check (CMC) error source for an x86 or x64 processor.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: d5eb2e20-9a11-4dae-9aa7-6e3799f0027f
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_XPF_CMC_DESCRIPTOR, WHEA_XPF_CMC_DESCRIPTOR, PWHEA_XPF_CMC_DESCRIPTOR, *PWHEA_XPF_CMC_DESCRIPTOR
+ms.keywords: _WHEA_XPF_CMC_DESCRIPTOR, WHEA_XPF_CMC_DESCRIPTOR, *PWHEA_XPF_CMC_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_XPF_CMC_DESCRIPTOR, *PWHEA_XPF_CMC_DESCRIPTOR
 ---
 
 # _WHEA_XPF_CMC_DESCRIPTOR structure
@@ -70,7 +71,7 @@ A Boolean value that indicates if the error source is enabled.
 
 ### -field NumberOfBanks
 
-The number of <a href="whea.whea_xpf_mc_bank_descriptor">WHEA_XPF_MC_BANK_DESCRIPTOR</a> structures contained in the <b>Banks</b> member.
+The number of <a href="..\ntddk\ns-ntddk-_whea_xpf_mc_bank_descriptor.md">WHEA_XPF_MC_BANK_DESCRIPTOR</a> structures contained in the <b>Banks</b> member.
 
 
 ### -field Reserved
@@ -80,16 +81,16 @@ Reserved for system use.
 
 ### -field Notify
 
-A <a href="whea.whea_notification_descriptor">WHEA_NOTIFICATION_DESCRIPTOR</a> structure that describes the notification mechanism that is used by the error source.
+A <a href="..\ntddk\ns-ntddk-_whea_notification_descriptor.md">WHEA_NOTIFICATION_DESCRIPTOR</a> structure that describes the notification mechanism that is used by the error source.
 
 
 ### -field Banks
 
-An array of <a href="whea.whea_xpf_mc_bank_descriptor">WHEA_XPF_MC_BANK_DESCRIPTOR</a> structures that describe the banks of machine check registers.
+An array of <a href="..\ntddk\ns-ntddk-_whea_xpf_mc_bank_descriptor.md">WHEA_XPF_MC_BANK_DESCRIPTOR</a> structures that describe the banks of machine check registers.
 
 
 ## -remarks
-A WHEA_XPF_CMC_DESCRIPTOR structure is contained within the <a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
+A WHEA_XPF_CMC_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
 
 
 ## -requirements
@@ -121,13 +122,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="whea.whea_notification_descriptor">WHEA_NOTIFICATION_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_notification_descriptor.md">WHEA_NOTIFICATION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="whea.whea_xpf_mc_bank_descriptor">WHEA_XPF_MC_BANK_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_mc_bank_descriptor.md">WHEA_XPF_MC_BANK_DESCRIPTOR</a>
 </dt>
 </dl>
  

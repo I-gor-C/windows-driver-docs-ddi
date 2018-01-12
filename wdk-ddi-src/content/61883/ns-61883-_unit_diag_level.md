@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._UNIT_DIAG_LEVEL
+UID: NS:61883._UNIT_DIAG_LEVEL
 title: _UNIT_DIAG_LEVEL
 author: windows-driver-content
 description: The UNIT_DDI_VERSION structure is used in conjunction with the Av61883_GetUnitInfo request to retrieve the current diag level
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 2759486f-7eaa-4af4-b9a9-2e44354f411b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _UNIT_DIAG_LEVEL, *PUNIT_DIAG_LEVEL, PUNIT_DIAG_LEVEL, UNIT_DIAG_LEVEL
+ms.keywords: _UNIT_DIAG_LEVEL, *PUNIT_DIAG_LEVEL, UNIT_DIAG_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUNIT_DIAG_LEVEL, UNIT_DIAG_LEVEL
 ---
 
 # _UNIT_DIAG_LEVEL structure

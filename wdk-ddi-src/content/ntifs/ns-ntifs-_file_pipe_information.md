@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._FILE_PIPE_INFORMATION
+UID: NS:ntifs._FILE_PIPE_INFORMATION
 title: _FILE_PIPE_INFORMATION
 author: windows-driver-content
 description: The FILE_PIPE_INFORMATION structure contains information about a named pipe that is not specific to the local or the remote end of the pipe.
@@ -7,8 +7,8 @@ old-location: ifsk\file_pipe_information.htm
 old-project: ifsk
 ms.assetid: d38b9f36-27f1-47f1-a469-18ddb6f5b2c1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FILE_PIPE_INFORMATION, *PFILE_PIPE_INFORMATION, PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION
+ms.date: 1/9/2018
+ms.keywords: _FILE_PIPE_INFORMATION, *PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION
 ---
 
 # _FILE_PIPE_INFORMATION structure
@@ -107,7 +108,7 @@ When <b>CompletionMode</b> is set to FILE_PIPE_QUEUE_OPERATION, if the pipe is c
 
 When <b>CompletionMode</b> is set to FILE_PIPE_COMPLETE_OPERATION, if the pipe is being connected to, read to, or written from, the operation is completed immediately. 
 
-For information about pipes, see <a href="base.pipes">Pipes</a>.
+For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-eec8-4dda-9cb7-8d37abcee6f4">Pipes</a>.
 
 
 ## -requirements

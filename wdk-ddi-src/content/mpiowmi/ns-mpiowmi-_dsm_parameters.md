@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIOWMI._DSM_PARAMETERS
+UID: NS:mpiowmi._DSM_PARAMETERS
 title: _DSM_PARAMETERS
 author: windows-driver-content
 description: The DSM_PARAMETERS structure holds the DSM version and timer counters information.
@@ -7,8 +7,8 @@ old-location: storage\dsm_parameters.htm
 old-project: storage
 ms.assetid: 948331f1-1398-4e6e-85cb-27bbbd79630e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DSM_PARAMETERS, DSM_PARAMETERS, *PDSM_PARAMETERS, PDSM_PARAMETERS
+ms.date: 1/10/2018
+ms.keywords: _DSM_PARAMETERS, DSM_PARAMETERS, *PDSM_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DSM_PARAMETERS, *PDSM_PARAMETERS
 ---
 
 # _DSM_PARAMETERS structure

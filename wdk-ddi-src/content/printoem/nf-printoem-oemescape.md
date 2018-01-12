@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMEscape
+UID: NF:printoem.OEMEscape
 title: OEMEscape function
 author: windows-driver-content
 description: The OEMEscape function retrieves information from a device that is not available in a device-independent device driver interface; the particular query depends on the value of the iEsc parameter.
@@ -7,7 +7,7 @@ old-location: print\oemescape.htm
 old-project: print
 ms.assetid: 3acc1c1f-5696-4297-a34e-047e402dbdcb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMEscape
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

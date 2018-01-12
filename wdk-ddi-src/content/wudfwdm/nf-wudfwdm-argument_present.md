@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfwdm.ARGUMENT_PRESENT
+UID: NF:wudfwdm.ARGUMENT_PRESENT
 title: ARGUMENT_PRESENT macro
 author: windows-driver-content
 description: The ARGUMENT_PRESENT macro takes an argument pointer and returns FALSE if the pointer is NULL. Otherwise, it returns TRUE.
@@ -7,7 +7,7 @@ old-location: kernel\argument_present.htm
 old-project: kernel
 ms.assetid: 00b9c218-8ae7-4624-be6b-6b6b2f83764a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ARGUMENT_PRESENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 

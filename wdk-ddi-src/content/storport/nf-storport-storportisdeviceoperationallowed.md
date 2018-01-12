@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortIsDeviceOperationAllowed
+UID: NF:storport.StorPortIsDeviceOperationAllowed
 title: StorPortIsDeviceOperationAllowed function
 author: windows-driver-content
 description: A miniport driver can call the StorPortIsDeviceOperationAllowedminiport routine to determine if operations for a certain device management class are allowed.
@@ -7,7 +7,7 @@ old-location: storage\storportisdeviceoperationallowed.htm
 old-project: storage
 ms.assetid: 2FA71DC1-8068-42E3-A5C0-903858E496FA
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortIsDeviceOperationAllowed
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: IRQL == PASSIVE_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 

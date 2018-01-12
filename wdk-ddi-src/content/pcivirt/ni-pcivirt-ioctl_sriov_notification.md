@@ -1,5 +1,5 @@
 ---
-UID: NI.pcivirt.IOCTL_SRIOV_NOTIFICATION
+UID: NI:pcivirt.IOCTL_SRIOV_NOTIFICATION
 title: IOCTL_SRIOV_NOTIFICATION
 author: windows-driver-content
 description: The request indicates that the virtualization stack wants to be notified when one of the events listed in SRIOV_PF_EVENT occurs.
@@ -7,8 +7,8 @@ old-location: pci\ioctl-sriov-notification.htm
 old-project: PCI
 ms.assetid: 3f2d67e0-abab-40a1-b4a9-cb65e81884e9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SRIOV_PF_EVENT, PSRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
+ms.date: 12/29/2017
+ms.keywords: _SRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_NOTIFICATION IOCTL
@@ -39,7 +40,7 @@ req.irql: PASSIVE_LEVEL
 
 ## -description
 The  request indicates that the virtualization stack wants to be notified when one of the events listed in
-<a href="buses._sriov_pf_event">SRIOV_PF_EVENT</a> occurs.  
+<a href="https://msdn.microsoft.com/e2b40a9d-57e6-49b1-839a-d34acb108807">SRIOV_PF_EVENT</a> occurs.  
 
 
 
@@ -86,7 +87,7 @@ The  request indicates that the virtualization stack wants to be notified when o
 <text></text>
 
 ### -output-buffer
-A buffer that contains an <a href="buses._sriov_pf_event">SRIOV_PF_EVENT</a>-type value that is filled by the  physical function (PF) driver when it completes the request.
+A buffer that contains an <a href="https://msdn.microsoft.com/e2b40a9d-57e6-49b1-839a-d34acb108807">SRIOV_PF_EVENT</a>-type value that is filled by the  physical function (PF) driver when it completes the request.
 
 
 ### -output-buffer-length
@@ -111,7 +112,7 @@ I/O Status block
 This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IOV Physical Function (PF) driver that exposes GUID_DEVINTERFACE_VIRTUALIZABLE_DEVICE.
 
 The <b>IOCTL_SRIOV_NOTIFICATION</b> request is held in a queue by the PF driver until the request is either cancelled by sender or the device experiences one of the events listed in
-<a href="buses._sriov_pf_event">SRIOV_PF_EVENT</a>. The driver then completes the pending request.
+<a href="https://msdn.microsoft.com/e2b40a9d-57e6-49b1-839a-d34acb108807">SRIOV_PF_EVENT</a>. The driver then completes the pending request.
 
 
 If the PF driver receives this IOCTL request while processing a Plug and Play event  for which the driver has not 

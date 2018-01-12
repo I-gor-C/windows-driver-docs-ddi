@@ -1,13 +1,13 @@
 ---
-UID: NS.WINDOT11._DOT11_WFD_DISCOVER_DEVICE_FILTER
+UID: NS:windot11._DOT11_WFD_DISCOVER_DEVICE_FILTER
 title: _DOT11_WFD_DISCOVER_DEVICE_FILTER
 author: windows-driver-content
 description: The DOT11_WFD_DISCOVER _DEVICE_FILTER structure describes a P2P device and Group Owner filter when responding to OID_DOT11_WFD_DISCOVERY_REQUEST requests.
 old-location: netvista\dot11_wfd_discover_device_filter.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: B8AA23C6-EFFC-47C3-9AD2-72421463CDBA
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _DOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER, *PDOT11_WFD_DISCOVER_DEVICE_FILTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_WFD_DISCOVER_DEVICE_FILTER, *PDOT11_WFD_DISCOVER_DEVICE_FILTER
 req.product: Windows 10 or later.
 ---
 

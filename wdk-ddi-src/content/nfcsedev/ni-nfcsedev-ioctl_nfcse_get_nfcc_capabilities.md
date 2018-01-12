@@ -1,5 +1,5 @@
 ---
-UID: NI.nfcsedev.IOCTL_NFCSE_GET_NFCC_CAPABILITIES
+UID: NI:nfcsedev.IOCTL_NFCSE_GET_NFCC_CAPABILITIES
 title: IOCTL_NFCSE_GET_NFCC_CAPABILITIES
 author: windows-driver-content
 description: The IOCTL_NFCSE_GET_NFCC_CAPABILITIES control code returns information about the current NFC controller capabilities, including the maximum Listen Mode Routing table size (defined in section 4.2 of the NFC Controller Interface (NCI) Technical Specification Version 1.1) and supported routing modes.
@@ -7,8 +7,8 @@ old-location: nfpdrivers\ioctl_nfcse_get_nfcc_capabilities.htm
 old-project: nfpdrivers
 ms.assetid: 4323FEDF-A7D0-4B67-BC3D-ECAA7AD1CC08
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, PSECURE_ELEMENT_TYPE
+ms.date: 12/18/2017
+ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # IOCTL_NFCSE_GET_NFCC_CAPABILITIES IOCTL
@@ -55,7 +56,7 @@ None
 
 ### -output-buffer
 
-<a href="nfpdrivers._secure_element_nfcc_capabilities"> SECURE_ELEMENT_NFCC_CAPABILITIES</a> containing NFC controller capabilities.
+<a href="..\nfcsedev\ns-nfcsedev-_secure_element_nfcc_capabilities.md"> SECURE_ELEMENT_NFCC_CAPABILITIES</a> containing NFC controller capabilities.
 
 
 ### -output-buffer-length

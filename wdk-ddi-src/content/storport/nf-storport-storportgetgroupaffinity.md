@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortGetGroupAffinity
+UID: NF:storport.StorPortGetGroupAffinity
 title: StorPortGetGroupAffinity function
 author: windows-driver-content
 description: The StorPortGetGroupAffinity routine constructs a mask of the active processors in a requested group.
@@ -7,7 +7,7 @@ old-location: storage\storportgetgroupaffinity.htm
 old-project: storage
 ms.assetid: eec0c985-fb59-4190-afb8-5eb62ac1edea
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortGetGroupAffinity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -142,7 +143,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.storport_storportirql">StorPortIrql</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
 </td>
 </tr>
 </table>

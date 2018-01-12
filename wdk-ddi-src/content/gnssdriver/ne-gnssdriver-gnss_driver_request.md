@@ -1,5 +1,5 @@
 ---
-UID: NE.gnssdriver.GNSS_DRIVER_REQUEST
+UID: NE:gnssdriver.GNSS_DRIVER_REQUEST
 title: GNSS_DRIVER_REQUEST
 author: windows-driver-content
 description: GNSS_DRIVER_REQUEST enumerates the GNSS driver data request types.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: GNSS_DRIVER_REQUEST
 ---
 
 # GNSS_DRIVER_REQUEST enumeration

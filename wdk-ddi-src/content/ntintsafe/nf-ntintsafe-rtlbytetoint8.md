@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlByteToInt8
+UID: NF:ntintsafe.RtlByteToInt8
 title: RtlByteToInt8 function
 author: windows-driver-content
 description: Converts a value of type BYTE to a value of type INT8.
@@ -7,7 +7,7 @@ old-location: kernel\rtlbytetoint8.htm
 old-project: kernel
 ms.assetid: 865E62CA-0D73-4957-88AA-EEF5910AD916
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlByteToInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlByteToInt8 function

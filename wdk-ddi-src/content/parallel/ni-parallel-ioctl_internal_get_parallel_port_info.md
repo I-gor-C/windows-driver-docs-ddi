@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO
+UID: NI:parallel.IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO
 title: IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO
 author: windows-driver-content
 description: The IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO request returns information about a parallel port.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGBATOKEN, RILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO IOCTL
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</b> request returns information about a parallel port. The information specifies the resources assigned to the parallel port, the capabilities of the port, and pointers to <a href="parports.parallel_port_callback_routines">parallel port callback routines</a>.
+The <b>IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO</b> request returns information about a parallel port. The information specifies the resources assigned to the parallel port, the capabilities of the port, and pointers to <a href="https://msdn.microsoft.com/library/windows/hardware/ff544307">parallel port callback routines</a>.
 
 For more information, see <a href="https://msdn.microsoft.com/d8ae2296-05b6-419a-93cc-00fcb12d41fe">Obtaining Information About a ParallelPort</a>.
 
@@ -47,19 +48,19 @@ For more information, see <a href="https://msdn.microsoft.com/d8ae2296-05b6-419a
 ## -ioctlparameters
 
 ### -input-buffer
-A <a href="parports.parallel_pnp_information">PARALLEL_PNP_INFORMATION</a> structure. 
+A <a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a> structure. 
 
 
 ### -input-buffer-length
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="parports.parallel_port_information">PARALLEL_PORT_INFORMATION</a> structure. 
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel-_parallel_port_information.md">PARALLEL_PORT_INFORMATION</a> structure. 
 
 
 ### -output-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="parports.parallel_pnp_information">PARALLEL_PNP_INFORMATION</a> structure that the client allocates to output the parallel port information.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a> structure that the client allocates to output the parallel port information.
 
 
 ### -output-buffer-length
-The size of a <a href="parports.parallel_pnp_information">PARALLEL_PNP_INFORMATION</a> structure.
+The size of a <a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a> structure.
 
 
 ### -in-out-buffer
@@ -72,7 +73,7 @@ The size of a <a href="parports.parallel_pnp_information">PARALLEL_PNP_INFORMATI
 
 ### -status-block
 I/O Status block
-If this request succeeds, the <b>Information</b> member is set to the size, in bytes, of a <a href="parports.parallel_pnp_information">PARALLEL_PNP_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. 
+If this request succeeds, the <b>Information</b> member is set to the size, in bytes, of a <a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a> structure. Otherwise, the <b>Information</b> member is set to zero. 
 
 The <b>Status</b> member is set to one of the generic status values returned by internal device control requests for parallel ports or to the following value:
 
@@ -108,7 +109,7 @@ Header
 <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
 </dt>
 <dt>
-<a href="parports.parallel_port_information">PARALLEL_PORT_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_parallel_port_information.md">PARALLEL_PORT_INFORMATION</a>
 </dt>
 </dl>
  

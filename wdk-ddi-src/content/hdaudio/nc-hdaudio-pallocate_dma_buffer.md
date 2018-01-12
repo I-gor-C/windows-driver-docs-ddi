@@ -1,5 +1,5 @@
 ---
-UID: NC.hdaudio.PALLOCATE_DMA_BUFFER
+UID: NC:hdaudio.PALLOCATE_DMA_BUFFER
 title: PALLOCATE_DMA_BUFFER
 author: windows-driver-content
 description: The AllocateDmaBuffer routine allocates a data buffer in system memory for a DMA engine.The function pointer type for an AllocateDmaBuffer routine is defined as:
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 44fd988a-24b3-4587-88d9-30585800ffbf
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 # PALLOCATE_DMA_BUFFER callback
@@ -66,7 +67,7 @@ NTSTATUS AllocateDmaBuffer(
 
 ### -param context [in]
 
-Specifies the context value from the <b>Context</b> members of the <a href="audio.hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a> and <a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a> structures.
+Specifies the context value from the <b>Context</b> members of the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a> and <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a> structures.
 
 
 ### -param handle [in]
@@ -144,7 +145,7 @@ Any previously allocated DMA buffer has not been freed (by calling <b>FreeDmaBuf
 
 The stream is in a state other than reset.
 
-In Windows Server 2003, Windows XP, Windows 2000, and Windows Me/98, a WDM audio driver calls this routine during execution of its <b>NewStream</b> method (at pin-creation time) or <b>SetFormat</b> method (after calling one of the Allocate<i>Xxx</i>DmaEngine routines in the HD Audio DDI). For more information, see <a href="audio.iminiportwavepci_newstream">IMiniportWavePci::NewStream</a> and <a href="audio.iminiportwavepcistream_setformat">IMiniportWavePciStream::SetFormat</a>.
+In Windows Server 2003, Windows XP, Windows 2000, and Windows Me/98, a WDM audio driver calls this routine during execution of its <b>NewStream</b> method (at pin-creation time) or <b>SetFormat</b> method (after calling one of the Allocate<i>Xxx</i>DmaEngine routines in the HD Audio DDI). For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536735">IMiniportWavePci::NewStream</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff536732">IMiniportWavePciStream::SetFormat</a>.
 
 
 ## -requirements
@@ -186,10 +187,10 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="audio.hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a>
 </dt>
 <dt>
-<a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
 </dt>
 <dt>
 <a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">SetupDmaEngineWithBdl</a>
@@ -210,10 +211,10 @@ PASSIVE_LEVEL
 <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">SetDmaEngineState</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavepci_newstream">IMiniportWavePci::NewStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536735">IMiniportWavePci::NewStream</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavepcistream_setformat">IMiniportWavePciStream::SetFormat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536732">IMiniportWavePciStream::SetFormat</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:audio
 ---
 
 # Audio
@@ -112,11 +112,6 @@ For the programming guide, see [Audio](https://docs.microsoft.com/en-us/windows-
 
 | Title   | Description   |
 | ---- |:---- |
-| [*PPCEVENT_ITEM structure](..\portcls\ns-portcls-__unnamed_struct_0c40_5.md) | The PCEVENT_ITEM structure is used to describe an event that is supported by a particular filter, pin, or node. |
-| [*PPCMETHOD_ITEM structure](..\portcls\ns-portcls-__unnamed_struct_0c40_4.md) | The PCMETHOD_ITEM structure describes a method supported by a filter, pin, or node. |
-| [*PPCNODE_DESCRIPTOR structure](..\portcls\ns-portcls-__unnamed_struct_0c40_8.md) | The PCNODE_DESCRIPTOR structure describes a node in the filter that a topology miniport driver implements. |
-| [*PPCPIN_DESCRIPTOR structure](..\portcls\ns-portcls-__unnamed_struct_0c40_7.md) | The PCPIN_DESCRIPTOR structure describes a pin factory. |
-| [*PPCPROPERTY_ITEM structure](..\portcls\ns-portcls-__unnamed_struct_0c40_3.md) | The PCPROPERTY_ITEM structure describes a property that is supported by a particular filter, pin, or node. |
 | [KSAC3_ALTERNATE_AUDIO structure](..\ksmedia\ns-ksmedia-ksac3_alternate_audio.md) | The KSAC3_ALTERNATE_AUDIO structure specifies whether the two mono channels in an AC-3-encoded stream should be interpreted as a stereo pair or as two independent program channels. |
 | [KSAC3_BIT_STREAM_MODE structure](..\ksmedia\ns-ksmedia-ksac3_bit_stream_mode.md) | The KSAC3_BIT_STREAM_MODE structure specifies the bit-stream mode, which is the type of audio service that is encoded into an AC-3 stream. |
 | [KSAC3_DIALOGUE_LEVEL structure](..\ksmedia\ns-ksmedia-ksac3_dialogue_level.md) | The KSAC3_DIALOGUE_LEVEL structure specifies the average volume level of spoken dialog within the audio program encoded in an AC-3 stream. |
@@ -164,7 +159,12 @@ For the programming guide, see [Audio](https://docs.microsoft.com/en-us/windows-
 | [KSRTAUDIO_SETWRITEPACKET_INFO structure](..\ksmedia\ns-ksmedia-ksrtaudio_setwritepacket_info.md) | The KSRTAUDIO_SETWRITEPACKET_INFO structure describes information associated with an audio packet. |
 | [LOOPEDSTREAMING_POSITION_EVENT_DATA structure](..\ksmedia\ns-ksmedia-loopedstreaming_position_event_data.md) | The LOOPEDSTREAMING_POSITION_EVENT_DATA structure describes a position event in a looped buffer. |
 | [PCAUTOMATION_TABLE structure](..\portcls\ns-portcls-__unnamed_struct_0c40_6.md) | The PCAUTOMATION_TABLE structure contains a miniport driver's master table of properties, methods, and events. |
+| [PCEVENT_ITEM structure](..\portcls\ns-portcls-__unnamed_struct_0c40_5.md) | The PCEVENT_ITEM structure is used to describe an event that is supported by a particular filter, pin, or node. |
 | [PCFILTER_DESCRIPTOR structure](..\portcls\ns-portcls-__unnamed_struct_0c40_9.md) | The PCFILTER_DESCRIPTOR structure describes a miniport driver's implementation of a filter. The structure specifies the filter's pins, nodes, connections, and properties. |
+| [PCMETHOD_ITEM structure](..\portcls\ns-portcls-__unnamed_struct_0c40_4.md) | The PCMETHOD_ITEM structure describes a method supported by a filter, pin, or node. |
+| [PCNODE_DESCRIPTOR structure](..\portcls\ns-portcls-__unnamed_struct_0c40_8.md) | The PCNODE_DESCRIPTOR structure describes a node in the filter that a topology miniport driver implements. |
+| [PCPIN_DESCRIPTOR structure](..\portcls\ns-portcls-__unnamed_struct_0c40_7.md) | The PCPIN_DESCRIPTOR structure describes a pin factory. |
+| [PCPROPERTY_ITEM structure](..\portcls\ns-portcls-__unnamed_struct_0c40_3.md) | The PCPROPERTY_ITEM structure describes a property that is supported by a particular filter, pin, or node. |
 | [SOUNDDETECTOR_PATTERNHEADER structure](..\ksmedia\ns-ksmedia-sounddetector_patternheader.md) | The SOUNDDETECTOR_PATTERNHEADER structure specifies the pattern header for the sound detector in the KSPROPERTY_SOUNDDETECTOR_PATTERNS property. |
 | [SYSAUDIO_ATTACH_VIRTUAL_SOURCE structure](..\ksmedia\ns-ksmedia-sysaudio_attach_virtual_source.md) | The SYSAUDIO_ATTACH_VIRTUAL_SOURCE structure is used to attach a mixer-line virtual source (for example, a volume or mute control) to a mixer pin on the virtual audio device. |
 | [SYSAUDIO_CREATE_VIRTUAL_SOURCE structure](..\ksmedia\ns-ksmedia-sysaudio_create_virtual_source.md) | The SYSAUDIO_CREATE_VIRTUAL_SOURCE structure is used to create a mixer-line virtual source such as a volume control or mute. |
@@ -194,12 +194,9 @@ For the programming guide, see [Audio](https://docs.microsoft.com/en-us/windows-
 | [_KSAUDIO_PACKETSIZE_CONSTRAINTS2 structure](..\ksmedia\ns-ksmedia-_ksaudio_packetsize_constraints2.md) | The KSAUDIO_PACKETSIZE_CONSTRAINTS2 structure describes the physical hardware constraints. |
 | [_KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT structure](..\ksmedia\ns-ksmedia-_ksaudio_packetsize_signalprocessingmode_constraint.md) | The KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT structure describes the constraints specific to any signal processing mode. |
 | [_PCEVENT_REQUEST structure](..\portcls\ns-portcls-_pcevent_request.md) | The PCEVENT_REQUEST structure specifies an event request. |
-| [_PCEVENT_REQUEST structure](..\portcls\ns-portcls-_pcevent_request~r1.md) | The PCEVENT_REQUEST structure specifies an event request. |
 | [_PCMETHOD_REQUEST structure](..\portcls\ns-portcls-_pcmethod_request.md) | The PCMETHOD_REQUEST structure specifies a method request. |
-| [_PCMETHOD_REQUEST structure](..\portcls\ns-portcls-_pcmethod_request~r1.md) | The PCMETHOD_REQUEST structure specifies a method request. |
 | [_PCNOTIFICATION_BUFFER structure](..\portcls\ns-portcls-_pcnotification_buffer.md) | The notification buffer used by IPortClsNotifications. |
 | [_PCPROPERTY_REQUEST structure](..\portcls\ns-portcls-_pcproperty_request.md) | The PCPROPERTY_REQUEST structure specifies a property request. |
-| [_PCPROPERTY_REQUEST structure](..\portcls\ns-portcls-_pcproperty_request~r1.md) | The PCPROPERTY_REQUEST structure specifies a property request. |
 | [_PCSTREAMRESOURCE_DESCRIPTOR structure](..\portcls\ns-portcls-_pcstreamresource_descriptor.md) | PCSTREAMRESOURCE_DESCRIPTOR defines the stream resource. Use PCSTREAMRESOURCE_DESCRIPTOR_INIT to correctly initialize this structure. |
 | [_SYNTHCAPS structure](..\dmusprop\ns-dmusprop-_synthcaps.md) | The SYNTHCAPS structure specifies the capabilities of a synthesizer. |
 | [_SYNTHDOWNLOAD structure](..\dmusprop\ns-dmusprop-_synthdownload.md) | The SYNTHDOWNLOAD structure specifies a handle for downloaded DLS data. It also specifies whether the buffer containing the DLS data can be freed. |
@@ -292,6 +289,75 @@ For the programming guide, see [Audio](https://docs.microsoft.com/en-us/windows-
 | [IOCTL_USBSBAUD_SET_STREAM_CLOSE IOCTL](..\usbsidebandaudio\ni-usbsidebandaudio-ioctl_usbsbaud_set_stream_close.md) | TBD |
 | [IOCTL_USBSBAUD_SET_STREAM_OPEN IOCTL](..\usbsidebandaudio\ni-usbsidebandaudio-ioctl_usbsbaud_set_stream_open.md) | TBD |
 | [IOCTL_USBSBAUD_SET_VOLUME IOCTL](..\usbsidebandaudio\ni-usbsidebandaudio-ioctl_usbsbaud_set_volume.md) | TBD |
+
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [IAdapterPnpManagement interface](..\portcls\nn-portcls-iadapterpnpmanagement.md) | IAdapterPnpManagement is an interface that adapters should implement and register if they want to receive PnP management messages. |
+| [IAdapterPowerManagement interface](..\portcls\nn-portcls-iadapterpowermanagement.md) | The IAdapterPowerManagement interface is used to manage the power state of an audio adapter. |
+| [IAdapterPowerManagement2 interface](..\portcls\nn-portcls-iadapterpowermanagement2.md) | The IAdapterPowerManagement2 interface inherits from IUnknown and it is used to manage the power state of an audio adapter. |
+| [IAdapterPowerManagement3 interface](..\portcls\nn-portcls-iadapterpowermanagement3.md) | The IAdapterPowerManagement3 interface inherits from IUnknown, and it is used for receiving power management messages. |
+| [IAllocatorMXF interface](..\dmusicks\nn-dmusicks-iallocatormxf.md) | The IAllocatorMXF interface manages buffer storage for DirectMusic streams. |
+| [IDmaChannel interface](..\portcls\nn-portcls-idmachannel.md) | The IDmaChannel interface provides an abstraction of a DMA channel and its associated DMA buffer and usage parameters. |
+| [IDmaChannelSlave interface](..\portcls\nn-portcls-idmachannelslave.md) | The IDmaChannelSlave interface provides methods for monitoring and controlling a DMA channel for a subordinate device (as described in Introduction to Adapter Objects). |
+| [IDrmAudioStream interface](..\drmk\nn-drmk-idrmaudiostream.md) | The IDrmAudioStream interface assigns DRM protection to the digital content in an audio stream. |
+| [IDrmPort interface](..\portcls\nn-portcls-idrmport.md) | The IDrmPort interface is used by a WaveCyclic or WavePci miniport driver to manage DRM-protected content (see Digital Rights Management). |
+| [IDrmPort2 interface](..\portcls\nn-portcls-idrmport2.md) | The IDrmPort2 interface is used by a WaveCyclic or WavePci miniport driver to manage DRM-protected content (see Digital Rights Management). |
+| [IInterruptSync interface](..\portcls\nn-portcls-iinterruptsync.md) | The IInterruptSync interface represents an interrupt sync object that synchronizes the execution of a list of interrupt service routines (ISRs) with non-ISR routines. |
+| [IKeywordDetectorOemAdapter interface](..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md) | IKeywordDetectorOemAdapter is a Component Object Model (COM) interface for interacting with the Voice Activation Driver Interface. The IKeywordDetectorOemAdapter interface is supported in Windows 10 and later versions of Windows. |
+| [IMXF interface](..\dmusicks\nn-dmusicks-imxf.md) | The IMXF interface represents the DirectMusic stream on a MIDI transport filter (MXF). |
+| [IMasterClock interface](..\dmusicks\nn-dmusicks-imasterclock.md) | The IMasterClock interface provides Microsoft DirectMusic streams with access to the current reference time from the master clock. |
+| [IMiniport interface](..\portcls\nn-portcls-iminiport.md) | The IMiniport interface is the generic miniport interface that all miniport objects support. IMiniport inherits from the IUnknown interface. |
+| [IMiniportAudioEngineNode interface](..\portcls\nn-portcls-iminiportaudioenginenode.md) | This interface allows a miniport driver to use KS properties that access the audio engine via a KS filter handle. |
+| [IMiniportAudioSignalProcessing interface](..\portcls\nn-portcls-iminiportaudiosignalprocessing.md) | The IMiniportAudioSignalProcessing interface is implemented by the WaveRT miniport component of any audio driver, if any of its pins support audio signal processing modes. |
+| [IMiniportDMus interface](..\dmusicks\nn-dmusicks-iminiportdmus.md) | The IMiniportDMus interface is the primary interface for a DMus miniport driver for a DirectMusic synthesizer device. |
+| [IMiniportMidi interface](..\portcls\nn-portcls-iminiportmidi.md) | The IMiniportMidi interface is the primary interface for a MIDI miniport driver for a MIDI synthesizer device. |
+| [IMiniportMidiStream interface](..\portcls\nn-portcls-iminiportmidistream.md) | The IMiniportMidiStream interface represents the MIDI stream that flows through a pin on a MIDI filter. |
+| [IMiniportPnpNotify interface](..\portcls\nn-portcls-iminiportpnpnotify.md) | IMiniportPnpNotify is an optional interface to allow miniport objects (audio subdevices) to receive PnP state change notifications. |
+| [IMiniportStreamAudioEngineNode interface](..\portcls\nn-portcls-iminiportstreamaudioenginenode.md) | This interface allows a miniport driver to use KS properties that access the audio engine via a pin instance handle. |
+| [IMiniportStreamAudioEngineNode2 interface](..\portcls\nn-portcls-iminiportstreamaudioenginenode2.md) | The IMiniportStreamAudioEngineNode2 interface allows an audio miniport driver to extend the capabilities of the IMiniportStreamAudioEngineNode interface. |
+| [IMiniportTopology interface](..\portcls\nn-portcls-iminiporttopology.md) | The IMiniportTopology interface is the primary interface of a Topology miniport driver. |
+| [IMiniportWaveCyclic interface](..\portcls\nn-portcls-iminiportwavecyclic.md) | The IMiniportWaveCyclic interface is the primary interface that is exposed by the miniport driver for a WaveCyclic audio device. |
+| [IMiniportWaveCyclicStream interface](..\portcls\nn-portcls-iminiportwavecyclicstream.md) | The IMiniportWaveCyclicStream interface represents the wave stream that flows through a pin on a WaveCyclic filter. |
+| [IMiniportWavePci interface](..\portcls\nn-portcls-iminiportwavepci.md) | The IMiniportWavePci interface is the primary interface that is exposed by the miniport driver for a WavePci audio device. |
+| [IMiniportWavePciStream interface](..\portcls\nn-portcls-iminiportwavepcistream.md) | The IMiniportWavePciStream interface represents the wave stream that flows through a pin on a WavePci filter. |
+| [IMiniportWaveRT interface](..\portcls\nn-portcls-iminiportwavert.md) | The IMiniportWaveRT interface is the primary interface that is exposed by the miniport driver for a WaveRT audio device. |
+| [IMiniportWaveRTInputStream interface](..\portcls\nn-portcls-iminiportwavertinputstream.md) | The IMiniportWaveRTInputStream interface represents the input wave stream that flows through a pin on the KS filter that wraps a WaveRT rendering or capture device. IMiniportWaveRTInputStream inherits from the IUnknown interface. |
+| [IMiniportWaveRTOutputStream interface](..\portcls\nn-portcls-iminiportwavertoutputstream.md) | The IMiniportWaveRTOutputStream interface represents the output wave stream. IMiniportWaveRTOutputStream inherits from the IUnknown interface. |
+| [IMiniportWaveRTStream interface](..\portcls\nn-portcls-iminiportwavertstream.md) | The IMiniportWaveRTStream interface represents the wave stream that flows through a pin on the KS filter that wraps a WaveRT rendering or capture device. |
+| [IMiniportWaveRTStreamNotification interface](..\portcls\nn-portcls-iminiportwavertstreamnotification.md) | The IMiniportWaveRTStreamNotification interface is supported in Windows Vista and later Windows operating systems, and it augments the IMiniportWaveRTStream interface, providing additional methods to facilitate DMA driver event notifications. |
+| [IMusicTechnology interface](..\portcls\nn-portcls-imusictechnology.md) | The IMusicTechnology interface is used to change the music technology GUIDs that are specified in the data range descriptors for the pins belonging to a MIDI or DMus miniport driver. |
+| [IPinCount interface](..\portcls\nn-portcls-ipincount.md) | The IPinCount interface provides a means for the miniport driver to monitor and manipulate its pin counts dynamically as pins are instantiated and closed. |
+| [IPinName interface](..\portcls\nn-portcls-ipinname.md) | In Windows 7 and later operating systems, the IPinName interface is used by miniport drivers to report and update the names of audio endpoints. |
+| [IPort interface](..\portcls\nn-portcls-iport.md) | The IPort interface is the generic interface for audio port drivers. All audio port drivers expose IPort as part of their lower edge. The adapter driver calls the initialization method on this interface. IPort inherits from the IUnknown interface. |
+| [IPortClsEtwHelper interface](..\portcls\nn-portcls-iportclsetwhelper.md) | The IPortClsEtwHelper interface allows an audio miniport driver to access the Event Tracing for Windows (ETW) helper functions. |
+| [IPortClsNotifications interface](..\portcls\nn-portcls-iportclsnotifications.md) | An interface implemented by ports to provide notification helpers to miniports to support audio module communication. |
+| [IPortClsPnp interface](..\portcls\nn-portcls-iportclspnp.md) | IPortClsPnp is the PnP management interface that the port class driver (PortCls) exposes to the adapter. |
+| [IPortClsPower interface](..\portcls\nn-portcls-iportclspower.md) | The IPortClsPower interface is supported in Windows Vista and later versions of Windows. IPortClsPower is the power management interface that the port class driver (PortCls) exposes to the adapter. |
+| [IPortClsRuntimePower interface](..\portcls\nn-portcls-iportclsruntimepower.md) | IPortClsRuntimePower is the interface that the port class driver (PortCls) uses for accessing the runtime power management capabilities of the audio adapter. |
+| [IPortClsStreamResourceManager interface](..\portcls\nn-portcls-iportclsstreamresourcemanager.md) | IPortClsStreamResourceManager is used to manage the registration of audio stream resources. |
+| [IPortClsStreamResourceManager2 interface](..\portcls\nn-portcls-iportclsstreamresourcemanager2.md) | IPortClsStreamResourceManager2 is used to manage the registration of audio stream resources. |
+| [IPortClsVersion interface](..\portcls\nn-portcls-iportclsversion.md) | The IPortClsVersion interface is used by a miniport driver to identify the version of the Windows operating system that the driver is running on. The port driver implements this interface and exposes it to the miniport driver. |
+| [IPortDMus interface](..\dmusicks\nn-dmusicks-iportdmus.md) | The IPortDMus interface is the DMus port driver's primary interface. |
+| [IPortEvents interface](..\portcls\nn-portcls-iportevents.md) | The IPortEvents interface is used by miniport drivers to notify clients of hardware events. |
+| [IPortMidi interface](..\portcls\nn-portcls-iportmidi.md) | The IPortMidi interface is the MIDI port driver's primary interface. |
+| [IPortTopology interface](..\portcls\nn-portcls-iporttopology.md) | The IPortTopology interface provides generic port driver support to a topology miniport driver. |
+| [IPortWMIRegistration interface](..\portcls\nn-portcls-iportwmiregistration.md) | The IPortWMIRegistration interface is provided in Windows 7 and later versions of Windows. This interface allows the miniport driver to coordinate Event Tracing for Windows (ETW) registration between PortCls and the miniport driver. |
+| [IPortWaveCyclic interface](..\portcls\nn-portcls-iportwavecyclic.md) | The IPortWaveCyclic interface is the WaveCyclic port driver's primary interface. |
+| [IPortWavePciStream interface](..\portcls\nn-portcls-iportwavepcistream.md) | The IPortWavePciStream interface is the stream-associated callback interface that provides mapping services to WavePci miniport stream objects. |
+| [IPortWaveRT interface](..\portcls\nn-portcls-iportwavert.md) | The IPortWaveRT interface is supported in Windows Vista and later operating systems and it is the main interface that the WaveRT port driver exposes to the adapter driver that implements the WaveRT miniport driver object. |
+| [IPortWaveRTStream interface](..\portcls\nn-portcls-iportwavertstream.md) | The IPortWaveRTStream interface is supported in Windows Vista and later operating systems, and it is a stream-specific interface that provides helper methods for use by the WaveRT miniport driver. |
+| [IPositionNotify interface](..\dmusicks\nn-dmusicks-ipositionnotify.md) | PositionNotify |
+| [IPowerNotify interface](..\portcls\nn-portcls-ipowernotify.md) | The IPowerNotify interface is an optional interface that miniport drivers can expose if they require advance notification of impending power-state changes. |
+| [IPreFetchOffset interface](..\portcls\nn-portcls-iprefetchoffset.md) | The IPreFetchOffset interface controls the prefetch offset, which is the number of bytes separating the play and write cursors in a DirectSound output stream. |
+| [IRegistryKey interface](..\portcls\nn-portcls-iregistrykey.md) | The IRegistryKey interface provides an abstraction of a registry key that a miniport driver can use to access the key and its subkeys. |
+| [IResourceList interface](..\portcls\nn-portcls-iresourcelist.md) | The IResourceList interface provides an abstraction of a configuration resource list, which is a list of the system hardware resources that the Plug and Play manager assigns to a device at startup time. |
+| [IServiceGroup interface](..\portcls\nn-portcls-iservicegroup.md) | The IServiceGroup interface encapsulates a group of objects that all require notification of the same service request. |
+| [IServiceSink interface](..\portcls\nn-portcls-iservicesink.md) | The IServiceSink interface encapsulates handling of a service request. |
+| [ISynthSinkDMus interface](..\dmusicks\nn-dmusicks-isynthsinkdmus.md) | The ISynthSinkDMus interface handles wave output for a DirectMusic synthesizer device. |
+| [IUnregisterPhysicalConnection interface](..\portcls\nn-portcls-iunregisterphysicalconnection.md) | The IUnregisterPhysicalConnection interface implements three methods to remove a registered physical connection. |
+| [IUnregisterSubdevice interface](..\portcls\nn-portcls-iunregistersubdevice.md) | The IUnregisterSubdevice interface implements a method to remove a registered subdevice. |
 
 ## Methods
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdevice.WdfDeviceOpenRegistryKey
+UID: NF:wdfdevice.WdfDeviceOpenRegistryKey
 title: WdfDeviceOpenRegistryKey function
 author: windows-driver-content
 description: The WdfDeviceOpenRegistryKey method opens a device's hardware key or a driver's software key in the registry and creates a framework registry-key object that represents the registry key.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceopenregistrykey.htm
 old-project: wdf
 ms.assetid: 0ccae1e9-23d4-44cd-ae5a-985490db1d86
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDeviceOpenRegistryKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -195,7 +196,7 @@ As a best practice, ask for only the types of access that your driver needs.
 
 ### -param KeyAttributes [in, optional]
 
-A pointer to a <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied attributes for the new registry-key object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied attributes for the new registry-key object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 
 ### -param Key [out]
@@ -208,7 +209,7 @@ A pointer to a location that receives a handle to the new registry-key object.
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl>
-<a href="wdf.wdfdeviceopenregistrykey">WdfDeviceOpenRegistryKey</a> was not called at IRQL = PASSIVE_LEVEL. 
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceopenregistrykey.md">WdfDeviceOpenRegistryKey</a> was not called at IRQL = PASSIVE_LEVEL. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl>An invalid parameter was specified. For UMDF, this return value can indicate insufficient access rights.
@@ -221,7 +222,7 @@ A pointer to a location that receives a handle to the new registry-key object.
 
  
 
-For a list of other return values that the <b>WdfDeviceOpenRegistryKey</b> method might return, see <a href="wdf.framework_object_creation_errors">Framework Object Creation Errors</a>.
+For a list of other return values that the <b>WdfDeviceOpenRegistryKey</b> method might return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
 The method might return other <a href="https://msdn.microsoft.com/library/windows/hardware/ff557697">NTSTATUS values</a>.
 
@@ -229,13 +230,13 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 ## -remarks
-If your driver must open a hardware or software key before it has called <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>, it must call <a href="wdf.wdffdoinitopenregistrykey">WdfFdoInitOpenRegistryKey</a> instead of <b>WdfDeviceOpenRegistryKey</b>.
+If your driver must open a hardware or software key before it has called <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>, it must call <a href="..\wdffdo\nf-wdffdo-wdffdoinitopenregistrykey.md">WdfFdoInitOpenRegistryKey</a> instead of <b>WdfDeviceOpenRegistryKey</b>.
 
-When the driver has finished using the registry key that it opened with <b>WdfDeviceOpenRegistryKey</b>, the driver must call <a href="wdf.wdfregistryclose">WdfRegistryClose</a>.
+When the driver has finished using the registry key that it opened with <b>WdfDeviceOpenRegistryKey</b>, the driver must call <a href="..\wdfregistry\nf-wdfregistry-wdfregistryclose.md">WdfRegistryClose</a>.
 
 For more information about the registry, hardware and software keys, and registry objects, see <a href="wdf.using_the_registry_in_kmdf_drivers">Using the Registry in Framework-Based Drivers</a>.
 
-For code examples that use <b>WdfDeviceOpenRegistryKey</b>, see <a href="wdf.wdfregistrycreatekey">WdfRegistryCreateKey</a>, <a href="wdf.wdfregistryopenkey">WdfRegistryOpenKey</a>, and <a href="wdf.wdfregistryqueryvalue">WdfRegistryQueryValue</a>.
+For code examples that use <b>WdfDeviceOpenRegistryKey</b>, see <a href="..\wdfregistry\nf-wdfregistry-wdfregistrycreatekey.md">WdfRegistryCreateKey</a>, <a href="..\wdfregistry\nf-wdfregistry-wdfregistryopenkey.md">WdfRegistryOpenKey</a>, and <a href="..\wdfregistry\nf-wdfregistry-wdfregistryqueryvalue.md">WdfRegistryQueryValue</a>.
 
 
 ## -requirements
@@ -310,7 +311,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_accesshardwarekey">AccessHardwareKey</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975063">AccessHardwareKey</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -318,12 +319,12 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdffdoinitopenregistrykey">WdfFdoInitOpenRegistryKey</a>
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitopenregistrykey.md">WdfFdoInitOpenRegistryKey</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceOpenRegistryKey method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceOpenRegistryKey method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

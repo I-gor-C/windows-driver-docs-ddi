@@ -1,5 +1,5 @@
 ---
-UID: NS.PRNTFONT._EXTTEXTMETRIC
+UID: NS:prntfont._EXTTEXTMETRIC
 title: _EXTTEXTMETRIC
 author: windows-driver-content
 description: The EXTTEXTMETRIC structure is used to specify font-specific information within Unidrv font metrics files (.ufm files).
@@ -7,8 +7,8 @@ old-location: print\exttextmetric.htm
 old-project: print
 ms.assetid: d3d2397c-71c3-4904-a1ad-96a94698e50c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _EXTTEXTMETRIC, PEXTTEXTMETRIC, EXTTEXTMETRIC, *PEXTTEXTMETRIC
+ms.date: 1/8/2018
+ms.keywords: _EXTTEXTMETRIC, EXTTEXTMETRIC, *PEXTTEXTMETRIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXTTEXTMETRIC, *PEXTTEXTMETRIC
 req.product: Windows 10 or later.
 ---
 

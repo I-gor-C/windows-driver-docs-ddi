@@ -1,5 +1,5 @@
 ---
-UID: NF.hidpi.HidP_GetUsageValueArray
+UID: NF:hidpi.HidP_GetUsageValueArray
 title: HidP_GetUsageValueArray function
 author: windows-driver-content
 description: The HidP_GetUsageValueArray routine extracts the data associated with a HID control usage value array from a HID report.
@@ -7,7 +7,7 @@ old-location: hid\hidp_getusagevaluearray.htm
 old-project: hid
 ms.assetid: afc92692-c665-44a7-b268-d29adc42f5bd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidP_GetUsageValueArray
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hidparse.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 # HidP_GetUsageValueArray function
@@ -63,7 +64,7 @@ NTSTATUS __stdcall HidP_GetUsageValueArray(
 
 ### -param ReportType [in]
 
-Specifies a <a href="hid.hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
+Specifies a <a href="..\hidpi\ne-hidpi-_hidp_report_type.md">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
 
 
 ### -param UsagePage [in]
@@ -137,7 +138,7 @@ Specifies the length, in bytes, of the report located at <i>Report</i>.
 
 
 ## -remarks
-The required size, in bytes, of <i>UsageValueByteLength</i> is determined by multiplying together the <b>BitSize</b> and <b>ReportCount</b> members of the usage value array's <a href="hid.hidp_value_caps">HIDP_VALUE_CAPS</a> structure, and rounding the result up to the nearest byte.
+The required size, in bytes, of <i>UsageValueByteLength</i> is determined by multiplying together the <b>BitSize</b> and <b>ReportCount</b> members of the usage value array's <a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a> structure, and rounding the result up to the nearest byte.
 
 <b>HidP_GetUsageValueArray</b> sets the <i>UsageValue</i> buffer in little-endian order, beginning with the least significant bit of the usage's data. The data is not byte-aligned, and is shifted such that the least significant bit of the data is located at the first bit of the <i>UsageValue</i> buffer.
 
@@ -215,27 +216,27 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539712">HidP_GetButtonsEx</a>
 </dt>
 <dt>
-<a href="hid.hidp_getcaps">HidP_GetCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
 </dt>
 <dt>
-<a href="hid.hidp_getscaledusagevalue">HidP_GetScaledUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp_getscaledusagevalue.md">HidP_GetScaledUsageValue</a>
 </dt>
 <dt>
-<a href="hid.hidp_getusages">HidP_GetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusages.md">HidP_GetUsages</a>
 </dt>
 <dt>
-<a href="hid.hidp_getusagesex">HidP_GetUsagesEx</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusagesex.md">HidP_GetUsagesEx</a>
 </dt>
 <dt>
-<a href="hid.hidp_getusagevalue">HidP_GetUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusagevalue.md">HidP_GetUsageValue</a>
 </dt>
 <dt>
-<a href="hid.hidp_value_caps">HIDP_VALUE_CAPS</a>
+<a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_GetUsageValueArray routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_GetUsageValueArray routine%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

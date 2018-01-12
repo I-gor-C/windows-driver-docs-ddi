@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbChannelCreateGpadlFromBuffer
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelCreateGpadlFromBuffer
 title: VmbChannelCreateGpadlFromBuffer function
 author: windows-driver-content
 description: The VmbChannelCreateGpadlFromBuffer function creates a Guest Physical Address Descriptor List (GPADL) that describes a client-side buffer. The GPADL can be used in the server to access the buffer.
 old-location: netvista\vmbchannelcreategpadlfrombuffer.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: B45E2463-1EBC-4F32-B3AD-8331E664BB24
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbChannelCreateGpadlFromBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Vmbkmcl.lib
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -106,16 +107,16 @@ The length of the buffer, in bytes.
 
 ### -param GpadlHandle [out]
 
-A GPADL handle of the created Memory Descriptor List (MDL). Send this to the server to use with the <a href="netvista.vmbchannelmapgpadl">VmbChannelMapGpadl</a> function.
+A GPADL handle of the created Memory Descriptor List (MDL). Send this to the server to use with the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelmapgpadl.md">VmbChannelMapGpadl</a> function.
 
 
 ## -remarks
 When this function returns, the server
-endpoint can call <a href="netvista.vmbchannelmapgpadl">VmbChannelMapGpadl</a>, because VMBus will already have sent
+endpoint can call <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelmapgpadl.md">VmbChannelMapGpadl</a>, because VMBus will already have sent
 the GPADL description to the opposite endpoint and received confirmation.
 
 
-The GPADL must be deleted by using the <a href="netvista.vmbchanneldeletegpadl">VmbChannelDeleteGpadl</a> function.
+The GPADL must be deleted by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchanneldeletegpadl.md">VmbChannelDeleteGpadl</a> function.
 
 
 ## -requirements
@@ -187,15 +188,15 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.vmbchanneldeletegpadl">VmbChannelDeleteGpadl</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchanneldeletegpadl.md">VmbChannelDeleteGpadl</a>
 </dt>
 <dt>
-<a href="netvista.vmbchannelmapgpadl">VmbChannelMapGpadl</a>
+<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelmapgpadl.md">VmbChannelMapGpadl</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20VmbChannelCreateGpadlFromBuffer function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20VmbChannelCreateGpadlFromBuffer function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

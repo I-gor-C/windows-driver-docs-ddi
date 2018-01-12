@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.IAllocatorMXF.GetBufferSize
+UID: NF:dmusicks.IAllocatorMXF.GetBufferSize
 title: IAllocatorMXF::GetBufferSize method
 author: windows-driver-content
 description: The GetBufferSize method gets the buffer size from the allocator.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # IAllocatorMXF::GetBufferSize method
@@ -61,7 +62,7 @@ USHORT GetBufferSize(
 
 
 ## -remarks
-<code>GetBufferSize</code> simply returns the size of the buffer that the allocator provides through the <a href="audio.iallocatormxf_getbuffer">IAllocatorMXF::GetBuffer</a> call. (For more information, see <a href="..\dmusicks\nn-dmusicks-iallocatormxf~r1.md">IAllocatorMXF</a> introduction.) Because this is constant for any version of the port driver, <code>GetBufferSize</code> typically needs to be called only once, at the time that the stream is created.
+<code>GetBufferSize</code> simply returns the size of the buffer that the allocator provides through the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536492">IAllocatorMXF::GetBuffer</a> call. (For more information, see <a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a> introduction.) Because this is constant for any version of the port driver, <code>GetBufferSize</code> typically needs to be called only once, at the time that the stream is created.
 
 
 ## -requirements
@@ -103,10 +104,10 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="..\dmusicks\nn-dmusicks-iallocatormxf~r1.md">IAllocatorMXF</a>
+<a href="..\dmusicks\nn-dmusicks-iallocatormxf.md">IAllocatorMXF</a>
 </dt>
 <dt>
-<a href="audio.iallocatormxf_getbuffer">IAllocatorMXF::GetBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536492">IAllocatorMXF::GetBuffer</a>
 </dt>
 </dl>
  

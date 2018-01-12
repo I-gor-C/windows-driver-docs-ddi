@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP._SPLCLIENT_INFO_2_V2
+UID: NS:winsplp._SPLCLIENT_INFO_2_V2
 title: _SPLCLIENT_INFO_2_V2
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: print\splclient_info_2_winxp.htm
 old-project: print
 ms.assetid: 48BD760E-6017-49B2-854F-7F48671974F3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SPLCLIENT_INFO_2_V2, SPLCLIENT_INFO_2_WINXP
+ms.date: 1/8/2018
+ms.keywords: _SPLCLIENT_INFO_2_V2, SPLCLIENT_INFO_2_WINXP, *PSPLCLIENT_INFO_2, *LPSPLCLIENT_INFO_2, SPLCLIENT_INFO_2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SPLCLIENT_INFO_2_WINXP
 req.product: Windows 10 or later.
 ---
 

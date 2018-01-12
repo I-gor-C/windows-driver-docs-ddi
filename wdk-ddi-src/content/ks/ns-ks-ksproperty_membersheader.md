@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSPROPERTY_MEMBERSHEADER
+UID: NS:ks.KSPROPERTY_MEMBERSHEADER
 title: KSPROPERTY_MEMBERSHEADER
 author: windows-driver-content
 description: A driver provides a structure of type KSPROPERTY_MEMBERSHEADER to describe the size and type of each element in an array containing property values or ranges.
@@ -7,8 +7,8 @@ old-location: stream\ksproperty_membersheader.htm
 old-project: stream
 ms.assetid: 8a5d8f8c-4924-4ae0-a7b2-8d2b04a49a9e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSPROPERTY_MEMBERSHEADER, PKSPROPERTY_MEMBERSHEADER, *PKSPROPERTY_MEMBERSHEADER, KSPROPERTY_MEMBERSHEADER
+ms.date: 1/9/2018
+ms.keywords: KSPROPERTY_MEMBERSHEADER, *PKSPROPERTY_MEMBERSHEADER, KSPROPERTY_MEMBERSHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSPROPERTY_MEMBERSHEADER, KSPROPERTY_MEMBERSHEADER
 ---
 
 # KSPROPERTY_MEMBERSHEADER structure
@@ -211,5 +212,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_MEMBERSHEADER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_MEMBERSHEADER structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

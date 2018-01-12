@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsCreateAllocator2
+UID: NF:ks.KsCreateAllocator2
 title: KsCreateAllocator2 function
 author: windows-driver-content
 description: Creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP.
@@ -7,7 +7,7 @@ old-location: stream\kscreateallocator2.htm
 old-project: stream
 ms.assetid: f0efa17c-9318-46a4-bc08-d4d372cc07ba
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsCreateAllocator2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsCreateAllocator2 function
@@ -77,7 +78,7 @@ Returns <b>NOERROR</b> if successful; otherwise, returns an error code.
 
 
 ## -remarks
-This is a new version of the <a href="stream.kscreateallocator">KsCreateAllocator</a> function and uses the device broker to create the handle to the kernel streaming object. In addition, the Component Object Model (COM) <a href="com.coinitialize">CoInitialize</a> function must be called before this function is called.
+This is a new version of the <a href="..\ks\nf-ks-kscreateallocator.md">KsCreateAllocator</a> function and uses the device broker to create the handle to the kernel streaming object. In addition, the Component Object Model (COM) <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a> function must be called before this function is called.
 
 
 ## -requirements
@@ -139,18 +140,18 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="com.coinitialize">CoInitialize</a>
+<a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
 </dt>
 <dt>
-<a href="stream.kscreateallocator">KsCreateAllocator</a>
+<a href="..\ks\nf-ks-kscreateallocator.md">KsCreateAllocator</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsCreateAllocator2 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsCreateAllocator2 function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

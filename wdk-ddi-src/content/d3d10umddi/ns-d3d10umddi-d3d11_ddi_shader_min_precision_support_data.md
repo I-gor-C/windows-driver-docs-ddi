@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA
+UID: NS:d3d10umddi.D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA
 title: D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA
 author: windows-driver-content
 description: Describes precision support options for shaders in the user-mode display driver.
@@ -7,7 +7,7 @@ old-location: display\d3d11_ddi_shader_min_precision_support_data.htm
 old-project: display
 ms.assetid: e93649d1-4ad0-4873-99c7-b2f3ed48aac6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA, D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA
 ---
 
 # D3D11_DDI_SHADER_MIN_PRECISION_SUPPORT_DATA structure

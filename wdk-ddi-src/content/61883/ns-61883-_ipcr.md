@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._IPCR
+UID: NS:61883._IPCR
 title: _IPCR
 author: windows-driver-content
 description: The IPCR structure contains initialization values for an input plug.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 81c89fbc-5d58-4983-b591-765a7818b932
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _IPCR, PIPCR, IPCR, *PIPCR
+ms.keywords: _IPCR, *PIPCR, IPCR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PIPCR, IPCR
 ---
 
 # _IPCR structure

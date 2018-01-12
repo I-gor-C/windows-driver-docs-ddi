@@ -1,5 +1,5 @@
 ---
-UID: NE.61883.CMP_PLUG_LOCATION
+UID: NE:61883.CMP_PLUG_LOCATION
 title: CMP_PLUG_LOCATION
 author: windows-driver-content
 description: This enumeration specifies the location of a plug.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: CMP_PLUG_LOCATION
 ---
 
 # CMP_PLUG_LOCATION enumeration

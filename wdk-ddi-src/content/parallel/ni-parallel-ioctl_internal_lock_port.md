@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_LOCK_PORT
+UID: NI:parallel.IOCTL_INTERNAL_LOCK_PORT
 title: IOCTL_INTERNAL_LOCK_PORT
 author: windows-driver-content
 description: The IOCTL_INTERNAL_LOCK_PORT request allocates the parallel device's parent parallel port and selects the parallel device on the port.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGBATOKEN, RILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_LOCK_PORT IOCTL

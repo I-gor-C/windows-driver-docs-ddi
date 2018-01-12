@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_GEOREGION_CIRCLE
+UID: NS:gnssdriver.GNSS_GEOREGION_CIRCLE
 title: GNSS_GEOREGION_CIRCLE
 author: windows-driver-content
 description: This structure is used for defining a circular geofence.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 498F8325-C887-4FDE-8BCF-A713639E3B35
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_GEOREGION_CIRCLE, GNSS_GEOREGION_CIRCLE, *PGNSS_GEOREGION_CIRCLE, PGNSS_GEOREGION_CIRCLE
+ms.keywords: GNSS_GEOREGION_CIRCLE, *PGNSS_GEOREGION_CIRCLE, GNSS_GEOREGION_CIRCLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_GEOREGION_CIRCLE, GNSS_GEOREGION_CIRCLE
 ---
 
 # GNSS_GEOREGION_CIRCLE structure

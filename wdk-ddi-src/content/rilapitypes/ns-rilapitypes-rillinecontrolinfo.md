@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILLINECONTROLINFO
+UID: NS:rilapitypes.RILLINECONTROLINFO
 title: RILLINECONTROLINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rillinecontrolinfo_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 490ef6ed-c5df-450f-acd1-36091ac8999e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILLINECONTROLINFO, *LPRILLINECONTROLINFO, RILLINECONTROLINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILLINECONTROLINFO, RILLINECONTROLINFO
 req.product: Windows 10 or later.
 ---
 

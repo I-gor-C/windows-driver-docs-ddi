@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_FILTER_INTERFACE
+UID: NS:ndis._NDIS_FILTER_INTERFACE
 title: _NDIS_FILTER_INTERFACE
 author: windows-driver-content
 description: The NDIS_FILTER_INTERFACE structure defines the attributes for an NDIS filter.
 old-location: netvista\ndis_filter_interface.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0a765829-3558-48ea-b788-7cce6c4b64c6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_FILTER_INTERFACE, PNDIS_FILTER_INTERFACE, *PNDIS_FILTER_INTERFACE, NDIS_FILTER_INTERFACE
+ms.date: 1/8/2018
+ms.keywords: _NDIS_FILTER_INTERFACE, NDIS_FILTER_INTERFACE, *PNDIS_FILTER_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NDIS_FILTER_INTERFACE, *PNDIS_FILTER_INTERFACE
 ---
 
 # _NDIS_FILTER_INTERFACE structure
@@ -63,16 +64,16 @@ typedef struct _NDIS_FILTER_INTERFACE {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      filter interface structure. 
 
 NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
 
-If the handle passed to <a href="netvista.ndisenumeratefiltermodules">NdisEnumerateFilterModules</a> belongs to an NDIS 6.30 or later object, then NDIS sets <b>Revision</b> to NDIS_FILTER_INTERFACE_REVISION_2 and <b>Size</b> to NDIS_SIZEOF_FILTER_INTERFACE_REVISION_2.
+If the handle passed to <a href="..\ndis\nf-ndis-ndisenumeratefiltermodules.md">NdisEnumerateFilterModules</a> belongs to an NDIS 6.30 or later object, then NDIS sets <b>Revision</b> to NDIS_FILTER_INTERFACE_REVISION_2 and <b>Size</b> to NDIS_SIZEOF_FILTER_INTERFACE_REVISION_2.
 
-If the handle passed to <a href="netvista.ndisenumeratefiltermodules">NdisEnumerateFilterModules</a> belongs to an NDIS 6.20 or earlier object, then NDIS sets <b>Revision</b> to NDIS_FILTER_INTERFACE_REVISION_1 and <b>Size</b> to NDIS_SIZEOF_FILTER_INTERFACE_REVISION_1.
+If the handle passed to <a href="..\ndis\nf-ndis-ndisenumeratefiltermodules.md">NdisEnumerateFilterModules</a> belongs to an NDIS 6.20 or earlier object, then NDIS sets <b>Revision</b> to NDIS_FILTER_INTERFACE_REVISION_1 and <b>Size</b> to NDIS_SIZEOF_FILTER_INTERFACE_REVISION_1.
 
 
 ### -field Flags
@@ -158,7 +159,7 @@ The NDIS interface index of the filter module.
 ### -field NetLuid
 
 The 
-     <a href="netvista.net_luid">NET_LUID</a> value that is assigned to the filter
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value that is assigned to the filter
      module. The NET_LUID is equivalent to the interface name (ifName in 
      RFC 2863).
 
@@ -176,13 +177,13 @@ The filter instance name.
 
 ## -remarks
 The 
-    <a href="netvista.ndisenumeratefiltermodules">
+    <a href="..\ndis\nf-ndis-ndisenumeratefiltermodules.md">
     NdisEnumerateFilterModules</a> function returns one NDIS_FILTER_INTERFACE structure for each filter in
     the driver stack. The 
     <b>Flags</b> member identifies the filter as an NDIS 5.1 or earlier filter intermediate driver or an NDIS
     6.0 or later NDIS filter module.
 
-A light-weight filter may dynamically insert or remove itself from the send or receive path by calling <a href="netvista.ndisfrestartfilter">NdisFRestartFilter</a> and providing a <a href="netvista.ndis_filter_partial_characteristics">NDIS_FILTER_PARTIAL_CHARACTERISTICS</a> structure to <a href="netvista.ndissetoptionalhandlers">NdisSetOptionalHandlers</a>.
+A light-weight filter may dynamically insert or remove itself from the send or receive path by calling <a href="..\ndis\nf-ndis-ndisfrestartfilter.md">NdisFRestartFilter</a> and providing a <a href="..\ndis\ns-ndis-_ndis_filter_partial_characteristics.md">NDIS_FILTER_PARTIAL_CHARACTERISTICS</a> structure to <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>.
 
 
 ## -requirements
@@ -213,18 +214,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndisenumeratefiltermodules">NdisEnumerateFilterModules</a>
+<a href="..\ndis\nf-ndis-ndisenumeratefiltermodules.md">NdisEnumerateFilterModules</a>
 </dt>
 <dt>
-<a href="netvista.net_luid">NET_LUID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_FILTER_INTERFACE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_INTERFACE structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

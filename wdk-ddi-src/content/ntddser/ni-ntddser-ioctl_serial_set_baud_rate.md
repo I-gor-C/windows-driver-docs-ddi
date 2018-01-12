@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_SET_BAUD_RATE
+UID: NI:ntddser.IOCTL_SERIAL_SET_BAUD_RATE
 title: IOCTL_SERIAL_SET_BAUD_RATE
 author: windows-driver-content
 description: The IOCTL_SERIAL_SET_BAUD_RATE request sets the baud rate on a serial controller device. The serial controller driver verifies the specified baud rate.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_BAUD_RATE IOCTL
@@ -47,11 +48,11 @@ To obtain the baud rate, a client can use an <a href="..\ntddser\ni-ntddser-ioct
 ## -ioctlparameters
 
 ### -input-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="serports.serial_baud_rate">SERIAL_BAUD_RATE</a> structure that a client allocates and sets to input the baud rate.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\ntddser\ns-ntddser-_serial_baud_rate.md">SERIAL_BAUD_RATE</a> structure that a client allocates and sets to input the baud rate.
 
 
 ### -input-buffer-length
-The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to the size, in bytes, of a <a href="serports.serial_baud_rate">SERIAL_BAUD_RATE</a> structure.
+The <b>Parameters.DeviceIoControl.InputBufferLength</b> member is set to the size, in bytes, of a <a href="..\ntddser\ns-ntddser-_serial_baud_rate.md">SERIAL_BAUD_RATE</a> structure.
 
 
 ### -output-buffer
@@ -101,7 +102,7 @@ Header
 <a href="..\ntddser\ni-ntddser-ioctl_serial_get_baud_rate.md">IOCTL_SERIAL_GET_BAUD_RATE</a>
 </dt>
 <dt>
-<a href="serports.serial_baud_rate">SERIAL_BAUD_RATE</a>
+<a href="..\ntddser\ns-ntddser-_serial_baud_rate.md">SERIAL_BAUD_RATE</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NI.winbio_ioctl.IOCTL_BIOMETRIC_GET_SENSOR_STATUS
+UID: NI:winbio_ioctl.IOCTL_BIOMETRIC_GET_SENSOR_STATUS
 title: IOCTL_BIOMETRIC_GET_SENSOR_STATUS
 author: windows-driver-content
 description: The IOCTL_BIOMETRIC_GET_SENSOR_STATUS IOCTL tells the driver to perform any necessary steps to collect the current operating status of the device. Vendor-supplied WBDI drivers must support this IOCTL.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBMP_IMAGE_INFO, BMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -54,11 +55,11 @@ None.
 
 
 ### -output-buffer
-The <b>AssociatedIrp</b>.<b>SystemBuffer</b> member points to a buffer that contains a <a href="biometric.winbio_diagnostics">WINBIO_DIAGNOSTICS</a> structure.
+The <b>AssociatedIrp</b>.<b>SystemBuffer</b> member points to a buffer that contains a <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_diagnostics.md">WINBIO_DIAGNOSTICS</a> structure.
 
 
 ### -output-buffer-length
-The length of a <a href="biometric.winbio_diagnostics">WINBIO_DIAGNOSTICS</a> structure.
+The length of a <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_diagnostics.md">WINBIO_DIAGNOSTICS</a> structure.
 
 The vendor-supplied driver can optionally return a DWORD-sized buffer that specifies the buffer size necessary for the requested operation.
 

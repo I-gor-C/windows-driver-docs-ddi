@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteTyped.operator
+UID: NF:engextcpp.ExtRemoteTyped.operator
 title: ExtRemoteTyped::operator* method
 author: windows-driver-content
 description: The operator* overloaded operator returns the typed data that is pointed to by the typed data represented by this object.
 old-location: debugger\extremotetyped_operator_.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f7a63a6a-24fa-4c93-ac2e-c44f7984a2c8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped::operator*, operator*
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteTyped::operator* method
@@ -63,7 +64,7 @@ The <b>operator*</b> operator returns a new <b>ExtRemoteData</b> object that rep
 ## -remarks
 If the typed data represented by this object is an array, the first element in the array is returned.
 
-The <a href="debugger.extremotetyped_dereference">ExtRemoteTyped::Dereference</a> method performs the same function.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff544233">ExtRemoteTyped::Dereference</a> method performs the same function.
 
 
 ## -requirements
@@ -98,12 +99,12 @@ Header
 <a href="..\engextcpp\nl-engextcpp-extremotetyped.md">ExtRemoteTyped</a>
 </dt>
 <dt>
-<a href="debugger.extremotetyped_dereference">ExtRemoteTyped::Dereference</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544233">ExtRemoteTyped::Dereference</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20ExtRemoteTyped.operator* method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20ExtRemoteTyped.operator* method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

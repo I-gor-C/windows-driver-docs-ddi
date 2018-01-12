@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDICB_RECLAIMALLOCATIONS2
+UID: NS:d3dumddi._D3DDDICB_RECLAIMALLOCATIONS2
 title: _D3DDDICB_RECLAIMALLOCATIONS2
 author: windows-driver-content
 description: D3DDDICB_RECLAIMALLOCATIONS2 is used with pfnReclaimAllocations2Cb to describe video memory resources, previously offered for reuse by the driver, that are to be reclaimed.
@@ -7,7 +7,7 @@ old-location: display\d3dddicb_reclaimallocations2.htm
 old-project: display
 ms.assetid: 952935E2-3216-40E5-8A4E-AA5D5E584F12
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDICB_RECLAIMALLOCATIONS2, D3DDDICB_RECLAIMALLOCATIONS2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDICB_RECLAIMALLOCATIONS2
 ---
 
 # _D3DDDICB_RECLAIMALLOCATIONS2 structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-<b>D3DDDICB_RECLAIMALLOCATIONS2</b> is used with <a href="display.pfnreclaimallocations2cb">pfnReclaimAllocations2Cb</a> to describe video memory resources, previously offered for reuse by the driver,  that are to be reclaimed.
+<b>D3DDDICB_RECLAIMALLOCATIONS2</b> is used with <a href="https://msdn.microsoft.com/library/windows/hardware/dn903528">pfnReclaimAllocations2Cb</a> to describe video memory resources, previously offered for reuse by the driver,  that are to be reclaimed.
 
 
 

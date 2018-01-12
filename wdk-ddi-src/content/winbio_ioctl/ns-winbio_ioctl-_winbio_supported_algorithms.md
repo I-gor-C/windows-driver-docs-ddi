@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_IOCTL._WINBIO_SUPPORTED_ALGORITHMS
+UID: NS:winbio_ioctl._WINBIO_SUPPORTED_ALGORITHMS
 title: _WINBIO_SUPPORTED_ALGORITHMS
 author: windows-driver-content
 description: The WINBIO_SUPPORTED_ALGORITHMS structure is the OUT payload for IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: cb2236f6-409a-4352-a02b-f7763e986d1f
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_SUPPORTED_ALGORITHMS, *PWINBIO_SUPPORTED_ALGORITHMS, PWINBIO_SUPPORTED_ALGORITHMS, WINBIO_SUPPORTED_ALGORITHMS
+ms.keywords: _WINBIO_SUPPORTED_ALGORITHMS, *PWINBIO_SUPPORTED_ALGORITHMS, WINBIO_SUPPORTED_ALGORITHMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWINBIO_SUPPORTED_ALGORITHMS, WINBIO_SUPPORTED_ALGORITHMS
 req.product: Windows 10 or later.
 ---
 
@@ -74,7 +75,7 @@ Specifies the number of algorithms in the data block.
 
 ### -field AlgorithmData
 
-Specifies a structure of type <a href="biometric.winbio_data">WINBIO_DATA</a> that contains NULL-terminated UTF-8 OID strings that represent the algorithms supported by the device.
+Specifies a structure of type <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a> that contains NULL-terminated UTF-8 OID strings that represent the algorithms supported by the device.
 
 
 ## -remarks

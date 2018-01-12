@@ -1,5 +1,5 @@
 ---
-UID: NC.hdaudio.PHDAUDIO_TRANSFER_COMPLETE_CALLBACK
+UID: NC:hdaudio.PHDAUDIO_TRANSFER_COMPLETE_CALLBACK
 title: PHDAUDIO_TRANSFER_COMPLETE_CALLBACK
 author: windows-driver-content
 description: HDAudio codec transfer complete callback function. PHDAUDIO_TRANSFER_COMPLETE_CALLBACK is used by the PTRANSFER_CODEC_VERBS callback function.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 6B3DA3B1-33E9-4BE4-A3EE-146080C483A6
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 # PHDAUDIO_TRANSFER_COMPLETE_CALLBACK callback

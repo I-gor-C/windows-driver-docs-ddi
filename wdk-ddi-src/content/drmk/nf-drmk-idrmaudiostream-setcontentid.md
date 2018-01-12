@@ -1,5 +1,5 @@
 ---
-UID: NF.drmk.IDrmAudioStream.SetContentId
+UID: NF:drmk.IDrmAudioStream.SetContentId
 title: IDrmAudioStream::SetContentId method
 author: windows-driver-content
 description: The SetContentId method sets the DRM content ID and its assigned DRM content rights on a KS audio stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDI_TX_METADATA, WDI_TX_METADATA
 ---
 
 # IDrmAudioStream::SetContentId method
@@ -61,7 +62,7 @@ Specifies the DRM content ID. This parameter is an identifier that the DRM syste
 
 ### -param DrmRights [in]
 
-Pointer to a <a href="audio.drmrights">DRMRIGHTS</a> structure specifying the rights granted by the content provider to the user for playing and copying DRM-protected content in this stream.
+Pointer to a <a href="..\drmk\ns-drmk-tagdrmrights.md">DRMRIGHTS</a> structure specifying the rights granted by the content provider to the user for playing and copying DRM-protected content in this stream.
 
 
 ## -returns
@@ -120,22 +121,22 @@ PASSIVE_LEVEL
 <a href="..\drmk\nn-drmk-idrmaudiostream.md">IDrmAudioStream</a>
 </dt>
 <dt>
-<a href="audio.drmrights">DRMRIGHTS</a>
+<a href="..\drmk\ns-drmk-tagdrmrights.md">DRMRIGHTS</a>
 </dt>
 <dt>
-<a href="audio.drmcreatecontentmixed">DrmCreateContentMixed</a>
+<a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>
 </dt>
 <dt>
-<a href="audio.drmdestroycontent">DrmDestroyContent</a>
+<a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
 </dt>
 <dt>
-<a href="audio.drmforwardcontenttofileobject">DrmForwardContentToFileObject</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttofileobject.md">DrmForwardContentToFileObject</a>
 </dt>
 <dt>
-<a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
 </dt>
 <dt>
-<a href="audio.drmgetcontentrights">DrmGetContentRights</a>
+<a href="..\drmk\nf-drmk-drmgetcontentrights.md">DrmGetContentRights</a>
 </dt>
 </dl>
  

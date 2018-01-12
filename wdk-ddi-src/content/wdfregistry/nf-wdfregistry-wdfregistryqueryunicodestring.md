@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfregistry.WdfRegistryQueryUnicodeString
+UID: NF:wdfregistry.WdfRegistryQueryUnicodeString
 title: WdfRegistryQueryUnicodeString function
 author: windows-driver-content
 description: The WdfRegistryQueryUnicodeString method retrieves the string data that is currently assigned to a specified registry string value and copies the string to a specified UNICODE_STRING structure.
@@ -7,7 +7,7 @@ old-location: wdf\wdfregistryqueryunicodestring.htm
 old-project: wdf
 ms.assetid: efbe5526-274b-416b-8e5c-8b18fe754b43
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfRegistryQueryUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
-The <b>WdfRegistryQueryUnicodeString</b> method retrieves the string data that is currently assigned to a specified registry string value and copies the string to a specified <a href="kernel.unicode_string">UNICODE_STRING</a> structure.
+The <b>WdfRegistryQueryUnicodeString</b> method retrieves the string data that is currently assigned to a specified registry string value and copies the string to a specified <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure.
 
 
 
@@ -66,7 +67,7 @@ A handle to a registry-key object that represents an opened registry key.
 
 ### -param ValueName [in]
 
-A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains a name for the registry value. 
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a name for the registry value. 
 
 
 ### -param ValueByteLength [out, optional]
@@ -84,7 +85,7 @@ A pointer to a UNICODE_STRING structure that receives the data string for the ke
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl>
-<a href="wdf.wdfregistryqueryunicodestring">WdfRegistryQueryUnicodeString</a> was not called at IRQL = PASSIVE_LEVEL. 
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryqueryunicodestring.md">WdfRegistryQueryUnicodeString</a> was not called at IRQL = PASSIVE_LEVEL. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl>An invalid parameter was specified.
@@ -194,7 +195,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -202,33 +203,33 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlinitunicodestring">RtlInitUnicodeString</a>
+<a href="..\wdm\nf-wdm-rtlinitunicodestring.md">RtlInitUnicodeString</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryclose">WdfRegistryClose</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryclose.md">WdfRegistryClose</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryquerymemory">WdfRegistryQueryMemory</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryquerymemory.md">WdfRegistryQueryMemory</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryquerymultistring">WdfRegistryQueryMultiString</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryquerymultistring.md">WdfRegistryQueryMultiString</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryquerystring">WdfRegistryQueryString</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryquerystring.md">WdfRegistryQueryString</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryqueryulong">WdfRegistryQueryULong</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryqueryulong.md">WdfRegistryQueryULong</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryqueryvalue">WdfRegistryQueryValue</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryqueryvalue.md">WdfRegistryQueryValue</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryQueryUnicodeString method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryQueryUnicodeString method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

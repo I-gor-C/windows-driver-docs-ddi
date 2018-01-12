@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D10_2DDICAPS_TYPE
+UID: NE:d3d10umddi.D3D10_2DDICAPS_TYPE
 title: D3D10_2DDICAPS_TYPE
 author: windows-driver-content
 description: The D3D10_2DDICAPS_TYPE enumeration type contains values that identify the type of capability information that is retrieved from a call to the driver's GetCaps(D3D10_2) function.
@@ -7,7 +7,7 @@ old-location: display\d3d10_2ddicaps_type.htm
 old-project: display
 ms.assetid: 2ca906d4-6d09-4624-a985-a47794acc959
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D10_2DDICAPS_TYPE, D3D10_2DDICAPS_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D10_2DDICAPS_TYPE
 ---
 
 # D3D10_2DDICAPS_TYPE enumeration
@@ -114,7 +115,7 @@ Supported starting with Windows 8. Used by WDDM 1.3 and later drivers.
 
 
 ## -remarks
-To allow a driver to unify capability concepts, the values in the D3D10_2DDICAPS_TYPE enumeration are set up so they do not overlap with the values in the <a href="display.d3dddicaps_type">D3DDDICAPS_TYPE</a> enumeration. 
+To allow a driver to unify capability concepts, the values in the D3D10_2DDICAPS_TYPE enumeration are set up so they do not overlap with the values in the <a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a> enumeration. 
 
 
 ## -requirements
@@ -160,7 +161,7 @@ Header
 <a href="..\d3dumddi\ns-d3dumddi-d3dddicaps_shader_min_precision_support.md">D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT</a>
 </dt>
 <dt>
-<a href="display.d3dddicaps_type">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm1_3ddi_d3d11_options_data1.md">D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1</a>
@@ -170,5 +171,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_2DDICAPS_TYPE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_2DDICAPS_TYPE enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

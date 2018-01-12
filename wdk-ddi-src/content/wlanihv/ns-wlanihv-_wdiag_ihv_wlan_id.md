@@ -1,14 +1,14 @@
 ---
-UID: NS.WLANIHV._WDIAG_IHV_WLAN_ID
+UID: NS:wlanihv._WDIAG_IHV_WLAN_ID
 title: _WDIAG_IHV_WLAN_ID
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\wdiag_ihv_wlan_id.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 72dc7128-fcbc-4ad8-ac81-e2767ac6ffa2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WDIAG_IHV_WLAN_ID, *PWDIAG_IHV_WLAN_ID, WDIAG_IHV_WLAN_ID
+ms.date: 1/8/2018
+ms.keywords: _WDIAG_IHV_WLAN_ID, WDIAG_IHV_WLAN_ID, *PWDIAG_IHV_WLAN_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDIAG_IHV_WLAN_ID, *PWDIAG_IHV_WLAN_ID
 req.product: Windows 10 or later.
 ---
 
@@ -64,14 +65,14 @@ A string that defines the IHV profile name.
 
 The service set identifier (SSID) of the basic service set (BSS) network. The 
      <b>Ssid</b> member is of the 
-     <a href="netvista.dot11_ssid">DOT11_SSID</a> type.
+     <a href="..\wlantypes\ns-wlantypes-_dot11_ssid.md">DOT11_SSID</a> type.
 
 
 ### -field BssType
 
 The type of the BSS network. The 
      <b>BssType</b> member contains a value defined for the 
-     <a href="netvista.dot11_bss_type">DOT11_BSS_TYPE</a> enumeration.
+     <a href="..\wlantypes\ne-wlantypes-_dot11_bss_type.md">DOT11_BSS_TYPE</a> enumeration.
 
 
 ### -field dwFlags
@@ -117,15 +118,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_bss_type">DOT11_BSS_TYPE</a>
+<a href="..\wlantypes\ne-wlantypes-_dot11_bss_type.md">DOT11_BSS_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.dot11_ssid">DOT11_SSID</a>
+<a href="..\wlantypes\ns-wlantypes-_dot11_ssid.md">DOT11_SSID</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WDIAG_IHV_WLAN_ID structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WDIAG_IHV_WLAN_ID structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILUMTSKIND
+UID: NE:ntddrilapitypes.RILUMTSKIND
 title: RILUMTSKIND
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilumtskind.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: aedabb82-73d5-4953-bb7a-4ed526bff5a1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILUMTSKIND, RILUMTSKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUMTSKIND
 ---
 
 # RILUMTSKIND enumeration

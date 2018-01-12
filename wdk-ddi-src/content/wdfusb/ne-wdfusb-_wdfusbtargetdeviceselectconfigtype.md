@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfusb._WdfUsbTargetDeviceSelectConfigType
+UID: NE:wdfusb._WdfUsbTargetDeviceSelectConfigType
 title: _WdfUsbTargetDeviceSelectConfigType
 author: windows-driver-content
 description: The WdfUsbTargetDeviceSelectConfigType enumeration defines types of configuration operations for USB devices.
@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetdeviceselectconfigtype.htm
 old-project: wdf
 ms.assetid: d3637f5e-d4c1-430c-8511-8aac18fceee2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _WdfUsbTargetDeviceSelectConfigType, WdfUsbTargetDeviceSelectConfigType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL  (See Remarks section.)
+req.irql: PASSIVE_LEVEL
+req.typenames: WdfUsbTargetDeviceSelectConfigType
 req.product: Windows 10 or later.
 ---
 
@@ -98,7 +99,7 @@ Configure the device by using configuration parameters that are contained in a d
 
 
 ## -remarks
-The <b>WdfUsbTargetDeviceSelectConfigType</b> enumeration is used to specify the <b>Type</b> member of the <a href="wdf.wdf_usb_device_select_config_params">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a> structure. That structure is used as input to the <a href="wdf.wdfusbtargetdeviceselectconfig">WdfUsbTargetDeviceSelectConfig</a> method.
+The <b>WdfUsbTargetDeviceSelectConfigType</b> enumeration is used to specify the <b>Type</b> member of the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a> structure. That structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a> method.
 
 
 ## -requirements
@@ -139,18 +140,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="buses.urb">URB</a>
+<a href="..\usb\ns-usb-_urb.md">URB</a>
 </dt>
 <dt>
-<a href="wdf.wdf_usb_device_select_config_params">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a>
+<a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a>
 </dt>
 <dt>
-<a href="wdf.wdfusbtargetdeviceselectconfig">WdfUsbTargetDeviceSelectConfig</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceSelectConfigType enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceSelectConfigType enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

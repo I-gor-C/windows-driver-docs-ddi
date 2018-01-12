@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.GetModuleParameters
+UID: NF:dbgeng.IDebugSymbols3.GetModuleParameters
 title: IDebugSymbols3::GetModuleParameters method
 author: windows-driver-content
 description: The GetModuleParameters method returns parameters for modules in the target.
 old-location: debugger\getmoduleparameters.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f744cd2e-a4ec-43be-a5cc-9135a73bce80
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::GetModuleParameters, GetModuleParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::GetModuleParameters method
@@ -73,7 +74,7 @@ Specifies the index of the first module whose parameters are desired.  If <i>Bas
 
 ### -param Params [out]
 
-Receives the parameters.  The size of this array is the value of <i>Count</i>.  See <a href="debugger.debug_module_parameters">DEBUG_MODULE_PARAMETERS</a>.
+Receives the parameters.  The size of this array is the value of <i>Count</i>.  See <a href="..\dbgeng\ns-dbgeng-_debug_module_parameters.md">DEBUG_MODULE_PARAMETERS</a>.
 
 
 ## -returns
@@ -89,7 +90,7 @@ This method may also return other error values.  See <a href="https://msdn.micro
 
 
 ## -remarks
-In the cases when partial results are returned, the entries in the array <i>Params</i> corresponding to modules that could not be found have their <b>Base</b> field set to DEBUG_INVALID_OFFSET.  See <a href="debugger.debug_module_parameters">DEBUG_MODULE_PARAMETERS</a>.
+In the cases when partial results are returned, the entries in the array <i>Params</i> corresponding to modules that could not be found have their <b>Base</b> field set to DEBUG_INVALID_OFFSET.  See <a href="..\dbgeng\ns-dbgeng-_debug_module_parameters.md">DEBUG_MODULE_PARAMETERS</a>.
 
 For more information about modules, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552231">Modules</a>.
 
@@ -132,12 +133,12 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 </dt>
 <dt>
-<a href="debugger.debug_module_parameters">DEBUG_MODULE_PARAMETERS</a>
+<a href="..\dbgeng\ns-dbgeng-_debug_module_parameters.md">DEBUG_MODULE_PARAMETERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugSymbols::GetModuleParameters method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::GetModuleParameters method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

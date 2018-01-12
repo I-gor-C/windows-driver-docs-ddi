@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdvd.IOCTL_AACS_START_SESSION
+UID: NI:ntddcdvd.IOCTL_AACS_START_SESSION
 title: IOCTL_AACS_START_SESSION
 author: windows-driver-content
 description: Retrieves an Authentication Grant Identifier (AGID) that identifies a secure session.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_aacs_start_session.htm
 old-project: storage
 ms.assetid: b5fb5dac-7f63-4457-bb25-61315395429b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, PDVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.date: 1/10/2018
+ms.keywords: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_START_SESSION IOCTL
@@ -53,11 +54,11 @@ None.
 
 
 ### -output-buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a value of type <a href="storage.dvd_session_id">DVD_SESSION_ID</a> that specifies an Authentication Grant Identifier (AGID). The AGID identifies the secure session.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff553743">DVD_SESSION_ID</a> that specifies an Authentication Grant Identifier (AGID). The AGID identifies the secure session.
 
 
 ### -output-buffer-length
-Length of a <a href="storage.dvd_session_id">DVD_SESSION_ID</a>.
+Length of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553743">DVD_SESSION_ID</a>.
 
 
 ### -in-out-buffer

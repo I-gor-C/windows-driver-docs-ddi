@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:poscx
 ---
 
 # Poscx.h header
@@ -33,15 +33,6 @@ Poscx.h contain these programming interfaces:
 | [PosCxReleaseDevice function](nf-poscx-poscxreleasedevice.md) | PosCxReleaseDevice is called to release a device that was previously claimed with PosCxClaimDevice. Once the device is released, the next pending claim requester is promoted. |
 | [PosCxRemoteRequestRelease function](nf-poscx-poscxremoterequestrelease.md) | PosCxRemoteRequestRelease is called whenever a remote device asks for the device to release. This initiates claim negotiation. |
 | [PosCxRetainDevice function](nf-poscx-poscxretaindevice.md) | PosCxRetainDevice is called to extend the ownership of the device. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback](nc-poscx-evt_pos_cx_device_ownership_change.md) | The EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine. |
-| [EVT_POS_CX_DEVICE_REMOTE_CLAIM callback](nc-poscx-evt_pos_cx_device_remote_claim.md) | The EVT_POS_CX_DEVICE_REMOTE_CLAIM callback is called when the device is transitioning from unclaimed to claimed and allows the driver to do additional work. |
-| [EVT_POS_CX_DEVICE_REMOTE_RELEASE callback](nc-poscx-evt_pos_cx_device_remote_release.md) | The EVT_POS_CX_DEVICE_REMOTE_RELEASE callback is called whenever the device is released and left with no owner and allows the driver to do additional work. |
-| [EVT_POS_CX_DEVICE_REMOTE_RETAIN callback](nc-poscx-evt_pos_cx_device_remote_retain.md) | The EVT_POS_CX_DEVICE_REMOTE_RETAIN callback is called whenever PosCx attempts to hold onto a claim on a network device and allows the driver to do additional work. |
 
 ## Structures
 

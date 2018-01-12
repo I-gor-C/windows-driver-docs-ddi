@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.WriteIoSpaceEx
+UID: NF:wdbgexts.WriteIoSpaceEx
 title: WriteIoSpaceEx function
 author: windows-driver-content
 description: The WriteIoSpaceEx function is an extended version of WriteIoSpace.
 old-location: debugger\writeiospaceex.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: fb0ae4bb-6d6b-4772-9dbd-ae43f7728313
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: WriteIoSpaceEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>WriteIoSpaceEx</b> function is an extended version of <a href="debugger.writeiospace">WriteIoSpace</a>. It can write to either a system I/O location or an I/O location on a bus. <b>WriteIoSpace</b> works like <b>WriteIoSpaceEx</b>, except that it defaults <i>interfacetype</i> to ISA, <i>busnumber</i> to zero, and <i>addressspace</i> to 1.
+The <b>WriteIoSpaceEx</b> function is an extended version of <a href="..\wdbgexts\nf-wdbgexts-writeiospace.md">WriteIoSpace</a>. It can write to either a system I/O location or an I/O location on a bus. <b>WriteIoSpace</b> works like <b>WriteIoSpaceEx</b>, except that it defaults <i>interfacetype</i> to ISA, <i>busnumber</i> to zero, and <i>addressspace</i> to 1.
 
 
 
@@ -94,7 +95,7 @@ None
 
 
 ## -remarks
-If you are writing 64-bit code, you should use <a href="debugger.writeiospaceex64">WriteIoSpaceEx64</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.
+If you are writing 64-bit code, you should use <a href="..\wdbgexts\nf-wdbgexts-writeiospaceex64.md">WriteIoSpaceEx64</a> instead. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff537780">32-Bit Pointers and 64-Bit Pointers</a> for details.
 
 For a WdbgExts extension, include wdbgexts.h. For a DbgEng extension, include wdbgexts.h before dbgeng.h. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details.
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPartBase.GetPartCompression
+UID: NF:filterpipeline.IPartBase.GetPartCompression
 title: IPartBase::GetPartCompression method
 author: windows-driver-content
 description: The GetPartCompression method gets the compression of the part.
@@ -7,7 +7,7 @@ old-location: print\ipartbase_getpartcompression.htm
 old-project: print
 ms.assetid: 18b2a3c2-26da-434e-bcea-89bd6ef22077
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPartBase, IPartBase::GetPartCompression, GetPartCompression
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPartBase::GetPartCompression method

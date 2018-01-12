@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugRegisters2.GetIndexByName
+UID: NF:dbgeng.IDebugRegisters2.GetIndexByName
 title: IDebugRegisters2::GetIndexByName method
 author: windows-driver-content
 description: The GetIndexByName method returns the index of the named register.
 old-location: debugger\getindexbyname.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: a012b235-ed50-4009-a7ee-01783f9e3597
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugRegisters2, IDebugRegisters2::GetIndexByName, GetIndexByName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugRegisters2::GetIndexByName method

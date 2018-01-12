@@ -1,5 +1,5 @@
 ---
-UID: NS.SPB.SPB_TRANSFER_LIST_ENTRY
+UID: NS:spb.SPB_TRANSFER_LIST_ENTRY
 title: SPB_TRANSFER_LIST_ENTRY
 author: windows-driver-content
 description: The SPB_TRANSFER_LIST_ENTRY structure describes a single transfer in an I/O transfer sequence.
@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: e13b7a7e-4acb-4a77-ac46-94af2ebccc20
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY
+ms.keywords: SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSPB_TRANSFER_LIST_ENTRY, SPB_TRANSFER_LIST_ENTRY
 req.product: Windows 10 or later.
 ---
 

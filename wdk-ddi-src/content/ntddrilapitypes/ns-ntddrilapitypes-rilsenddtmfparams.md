@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSENDDTMFPARAMS
+UID: NS:ntddrilapitypes.RILSENDDTMFPARAMS
 title: RILSENDDTMFPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsenddtmfparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b08767f9-6b2d-4930-bd02-ebc89f2bdb7d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSENDDTMFPARAMS, LPRILSENDDTMFPARAMS, *LPRILSENDDTMFPARAMS, RILSENDDTMFPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILSENDDTMFPARAMS, *LPRILSENDDTMFPARAMS, RILSENDDTMFPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSENDDTMFPARAMS, RILSENDDTMFPARAMS
 ---
 
 # RILSENDDTMFPARAMS structure

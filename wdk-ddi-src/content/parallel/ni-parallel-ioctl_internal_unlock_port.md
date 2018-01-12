@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_UNLOCK_PORT
+UID: NI:parallel.IOCTL_INTERNAL_UNLOCK_PORT
 title: IOCTL_INTERNAL_UNLOCK_PORT
 author: windows-driver-content
 description: The IOCTL_INTERNAL_UNLOCK_PORT request deselects a parallel device and frees the parallel device's parent parallel port.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGBATOKEN, RILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_UNLOCK_PORT IOCTL

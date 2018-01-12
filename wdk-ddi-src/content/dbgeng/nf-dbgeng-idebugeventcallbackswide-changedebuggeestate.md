@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugEventCallbacksWide.ChangeDebuggeeState
+UID: NF:dbgeng.IDebugEventCallbacksWide.ChangeDebuggeeState
 title: IDebugEventCallbacksWide::ChangeDebuggeeState method
 author: windows-driver-content
 description: The ChangeDebuggeeState callback method is called by the engine when it makes or detects changes to the target.
 old-location: debugger\idebugeventcallbackswide_changedebuggeestate.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: ffb5925a-6bbd-41f5-b8b8-e8c7189d57ac
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugEventCallbacksWide, IDebugEventCallbacksWide::ChangeDebuggeeState, ChangeDebuggeeState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugEventCallbacksWide::ChangeDebuggeeState method
@@ -194,7 +195,7 @@ The return value is ignored by the engine unless it indicates a remote procedure
 
 
 ## -remarks
-The engine calls <b>ChangeDebuggeeState</b> only if the DEBUG_EVENT_CHANGE_DEBUGGEE_STATE flag is set in the mask returned by <a href="debugger.idebugeventcallbackswide_getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.
+The engine calls <b>ChangeDebuggeeState</b> only if the DEBUG_EVENT_CHANGE_DEBUGGEE_STATE flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550625">IDebugEventCallbacksWide::GetInterestMask</a>.
 
 For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.  For information about managing the target's memory, including registers and data spaces, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552179">Memory Access</a>.  For information about the target's virtual and physical memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561217">Virtual and Physical Memory</a>.  For information about the target's control memory, I/O ports, MSR, and bus memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff553172">Other Data Spaces</a>.
 

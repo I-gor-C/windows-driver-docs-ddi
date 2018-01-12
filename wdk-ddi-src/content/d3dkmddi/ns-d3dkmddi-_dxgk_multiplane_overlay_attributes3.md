@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
+UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
 title: _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
 author: windows-driver-content
 description: A structure containing the attributes used for the image in a multiplane overlay.
@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_attributes3.htm
 old-project: display
 ms.assetid: 0491AF42-53DF-4538-BE8A-AA5AA7B2C65E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
 ---
 
 # _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 structure

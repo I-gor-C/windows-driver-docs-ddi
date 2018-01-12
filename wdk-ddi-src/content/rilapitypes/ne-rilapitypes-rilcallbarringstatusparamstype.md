@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILCALLBARRINGSTATUSPARAMSTYPE
+UID: NE:rilapitypes.RILCALLBARRINGSTATUSPARAMSTYPE
 title: RILCALLBARRINGSTATUSPARAMSTYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallbarringstatusparamstype_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ed54bc8d-0cf2-4d6a-935c-b5b2a539eea0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILCALLBARRINGSTATUSPARAMSTYPE, RILCALLBARRINGSTATUSPARAMSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLBARRINGSTATUSPARAMSTYPE
 req.product: Windows 10 or later.
 ---
 

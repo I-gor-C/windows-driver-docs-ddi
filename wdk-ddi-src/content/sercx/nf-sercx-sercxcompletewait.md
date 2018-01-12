@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCxCompleteWait
+UID: NF:sercx.SerCxCompleteWait
 title: SerCxCompleteWait function
 author: windows-driver-content
 description: The SerCxCompleteWait method notifies the serial framework extension (SerCx) that an event in the current wait mask has occurred.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -138,7 +139,7 @@ IRQL
 <a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
 </dt>
 <dt>
-<a href="serports.sercxgetwaitmask">SerCxGetWaitMask</a>
+<a href="..\sercx\nf-sercx-sercxgetwaitmask.md">SerCxGetWaitMask</a>
 </dt>
 <dt>
 <a href="serports.serial_ev_xxx">SERIAL_EV_XXX</a>

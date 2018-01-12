@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_RESOURCE_BARRIER_TYPE
+UID: NE:d3d12umddi.D3D12DDI_RESOURCE_BARRIER_TYPE
 title: D3D12DDI_RESOURCE_BARRIER_TYPE
 author: windows-driver-content
 description: Specifies the type of resource barrier.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_resource_barrier_type.htm
 old-project: display
 ms.assetid: 3865DB8A-A920-42AC-B802-E5A3FB02014C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_RESOURCE_BARRIER_TYPE, D3D12DDI_RESOURCE_BARRIER_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_RESOURCE_BARRIER_TYPE
 ---
 
 # D3D12DDI_RESOURCE_BARRIER_TYPE enumeration

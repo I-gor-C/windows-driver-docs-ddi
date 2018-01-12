@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.NtSetInformationFile
+UID: NF:ntifs.NtSetInformationFile
 title: NtSetInformationFile function
 author: windows-driver-content
 description: The ZwSetInformationFile routine changes various kinds of information about a file object.
@@ -7,7 +7,7 @@ old-location: kernel\zwsetinformationfile.htm
 old-project: kernel
 ms.assetid: a6f92495-89f0-4728-b6d8-083c55bc3206
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: NtSetInformationFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: TOKEN_TYPE
 ---
 
 # NtSetInformationFile function
@@ -59,12 +60,12 @@ NTSTATUS ZwSetInformationFile(
 
 ### -param FileHandle [in]
 
-Handle to the file object. This handle is created by a successful call to <a href="kernel.zwcreatefile">ZwCreateFile</a> or <a href="kernel.zwopenfile">ZwOpenFile</a>.
+Handle to the file object. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> or <a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>.
 
 
 ### -param IoStatusBlock [out]
 
-Pointer to an <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. The <b>Information</b> member receives the number of bytes set on the file.
+Pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. The <b>Information</b> member receives the number of bytes set on the file.
 
 
 ### -param FileInformation [in]
@@ -79,7 +80,7 @@ The size, in bytes, of the <i>FileInformation</i> buffer.
 
 ### -param FileInformationClass [in]
 
-The type of information, supplied in the buffer pointed to by <i>FileInformation</i>, to set for the file. Device and intermediate drivers can specify any of the following <a href="ifsk.file_information_class">FILE_INFORMATION_CLASS</a> values.
+The type of information, supplied in the buffer pointed to by <i>FileInformation</i>, to set for the file. Device and intermediate drivers can specify any of the following <a href="..\wdm\ne-wdm-_file_information_class.md">FILE_INFORMATION_CLASS</a> values.
 
 <table>
 <tr>
@@ -92,7 +93,7 @@ The type of information, supplied in the buffer pointed to by <i>FileInformation
 
 </td>
 <td>
-Change the information that is supplied in a <a href="kernel.file_basic_information">FILE_BASIC_INFORMATION</a> structure. The caller must have opened the file with the FILE_WRITE_ATTRIBUTES flag set in the <i>DesiredAccess</i> parameter.
+Change the information that is supplied in a <a href="..\wdm\ns-wdm-_file_basic_information.md">FILE_BASIC_INFORMATION</a> structure. The caller must have opened the file with the FILE_WRITE_ATTRIBUTES flag set in the <i>DesiredAccess</i> parameter.
 
 </td>
 </tr>
@@ -102,7 +103,7 @@ Change the information that is supplied in a <a href="kernel.file_basic_informat
 
 </td>
 <td>
-Usually, sets the <b>DeleteFile</b> member of a <a href="kernel.file_disposition_information">FILE_DISPOSITION_INFORMATION</a> to <b>TRUE</b>, so the file can be deleted when <a href="kernel.zwclose">ZwClose</a> is called to release the last open handle to the file object. The caller must have opened the file with the DELETE flag set in the <i>DesiredAccess</i> parameter.
+Usually, sets the <b>DeleteFile</b> member of a <a href="..\ntddk\ns-ntddk-_file_disposition_information.md">FILE_DISPOSITION_INFORMATION</a> to <b>TRUE</b>, so the file can be deleted when <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> is called to release the last open handle to the file object. The caller must have opened the file with the DELETE flag set in the <i>DesiredAccess</i> parameter.
 
 </td>
 </tr>
@@ -112,7 +113,7 @@ Usually, sets the <b>DeleteFile</b> member of a <a href="kernel.file_disposition
 
 </td>
 <td>
-Change the current end-of-file information, supplied in a <a href="kernel.file_end_of_file_information">FILE_END_OF_FILE_INFORMATION</a> structure. The operation can either truncate or extend the file. The caller must have opened the file with the FILE_WRITE_DATA flag set in the <i>DesiredAccess</i> parameter.
+Change the current end-of-file information, supplied in a <a href="..\ntddk\ns-ntddk-_file_end_of_file_information.md">FILE_END_OF_FILE_INFORMATION</a> structure. The operation can either truncate or extend the file. The caller must have opened the file with the FILE_WRITE_DATA flag set in the <i>DesiredAccess</i> parameter.
 
 </td>
 </tr>
@@ -122,7 +123,7 @@ Change the current end-of-file information, supplied in a <a href="kernel.file_e
 
 </td>
 <td>
-Change the current default IRP priority hint for the file handle. The new value is supplied in a <a href="kernel.file_io_priority_hint_information">FILE_IO_PRIORITY_HINT_INFORMATION</a> structure.
+Change the current default IRP priority hint for the file handle. The new value is supplied in a <a href="..\wdm\ns-wdm-_file_io_priority_hint_information.md">FILE_IO_PRIORITY_HINT_INFORMATION</a> structure.
 
 <div class="alert"><b>Note</b>    This structure must be 8-byte aligned.</div>
 <div> </div>
@@ -134,7 +135,7 @@ Change the current default IRP priority hint for the file handle. The new value 
 
 </td>
 <td>
-Create a hard link to an existing file, which is specified in a <a href="ifsk.file_link_information">FILE_LINK_INFORMATION</a> structure. Not all file systems support hard links; for example NTFS does while FAT does not.
+Create a hard link to an existing file, which is specified in a <a href="..\ntifs\ns-ntifs-_file_link_information.md">FILE_LINK_INFORMATION</a> structure. Not all file systems support hard links; for example NTFS does while FAT does not.
 
 </td>
 </tr>
@@ -144,7 +145,7 @@ Create a hard link to an existing file, which is specified in a <a href="ifsk.fi
 
 </td>
 <td>
-Change the current file information, which is stored in a <a href="kernel.file_position_information">FILE_POSITION_INFORMATION</a> structure.
+Change the current file information, which is stored in a <a href="..\wdm\ns-wdm-_file_position_information.md">FILE_POSITION_INFORMATION</a> structure.
 
 </td>
 </tr>
@@ -154,7 +155,7 @@ Change the current file information, which is stored in a <a href="kernel.file_p
 
 </td>
 <td>
-Change the current file name, which is supplied in a <a href="ifsk.file_rename_information">FILE_RENAME_INFORMATION</a> structure. The caller must have DELETE access to the file.
+Change the current file name, which is supplied in a <a href="..\ntifs\ns-ntifs-_file_rename_information.md">FILE_RENAME_INFORMATION</a> structure. The caller must have DELETE access to the file.
 
 </td>
 </tr>
@@ -164,7 +165,7 @@ Change the current file name, which is supplied in a <a href="ifsk.file_rename_i
 
 </td>
 <td>
-Change the current short file name, which is supplied in a <a href="kernel.file_name_information">FILE_NAME_INFORMATION</a> structure. The file must be on an NTFS volume, and the caller must have opened the file with the <i>DesiredAccess</i> DELETE flag set in the <i>DesiredAccess</i> parameter.
+Change the current short file name, which is supplied in a <a href="..\ntddk\ns-ntddk-_file_name_information.md">FILE_NAME_INFORMATION</a> structure. The file must be on an NTFS volume, and the caller must have opened the file with the <i>DesiredAccess</i> DELETE flag set in the <i>DesiredAccess</i> parameter.
 
 </td>
 </tr>
@@ -174,7 +175,7 @@ Change the current short file name, which is supplied in a <a href="kernel.file_
 
 </td>
 <td>
-Change the current valid data length for the file, which is supplied in a <a href="kernel.file_valid_data_length_information">FILE_VALID_DATA_LENGTH_INFORMATION</a> structure. The file must be on an NTFS volume, and the caller must have opened the file with the FILE_WRITE_DATA flag set in the <i>DesiredAccess</i> parameter. Non-administrators and remote users must have the <b>SeManageVolumePrivilege</b> privilege.
+Change the current valid data length for the file, which is supplied in a <a href="..\ntddk\ns-ntddk-_file_valid_data_length_information.md">FILE_VALID_DATA_LENGTH_INFORMATION</a> structure. The file must be on an NTFS volume, and the caller must have opened the file with the FILE_WRITE_DATA flag set in the <i>DesiredAccess</i> parameter. Non-administrators and remote users must have the <b>SeManageVolumePrivilege</b> privilege.
 
 </td>
 </tr>
@@ -184,7 +185,7 @@ Change the current valid data length for the file, which is supplied in a <a hre
 
 </td>
 <td>
-Change or remove the I/O completion port for the specified file handle. The caller supplies a pointer to a <a href="ifsk.file_completion_information">FILE_COMPLETION_INFORMATION</a> structure that specifies a port handle and a completion key. If the port handle is non-NULL, this handle specifies a new I/O completion port to associate with the file handle. To remove the I/O completion port associated with the file handle, set the port handle in the structure to NULL. To get a port handle, a user-mode caller can call the <a href="fs.createiocompletionport">CreateIoCompletionPort</a> function.
+Change or remove the I/O completion port for the specified file handle. The caller supplies a pointer to a <a href="..\ntifs\ns-ntifs-_file_completion_information.md">FILE_COMPLETION_INFORMATION</a> structure that specifies a port handle and a completion key. If the port handle is non-NULL, this handle specifies a new I/O completion port to associate with the file handle. To remove the I/O completion port associated with the file handle, set the port handle in the structure to NULL. To get a port handle, a user-mode caller can call the <a href="https://msdn.microsoft.com/40cb47fc-7b15-47f6-bee2-2611d4686053">CreateIoCompletionPort</a> function.
 
 </td>
 </tr>
@@ -199,11 +200,11 @@ Change or remove the I/O completion port for the specified file handle. The call
 ## -remarks
 <b>ZwSetInformationFile</b> changes information about a file. It ignores any member of a <b>FILE_<i>XXX</i>_INFORMATION</b> structure that is not supported by a particular device or file system.
 
-If you set <i>FileInformationClass</i> to <b>FileDispositionInformation</b>, you can subsequently pass <i>FileHandle</i> to <a href="kernel.zwclose">ZwClose</a> but not to any other <b>Zw<i>Xxx</i>File</b> routine. Because <b>FileDispositionInformation</b> causes the file to be marked for deletion, it is a programming error to attempt any subsequent operation on the handle other than closing it.
+If you set <i>FileInformationClass</i> to <b>FileDispositionInformation</b>, you can subsequently pass <i>FileHandle</i> to <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> but not to any other <b>Zw<i>Xxx</i>File</b> routine. Because <b>FileDispositionInformation</b> causes the file to be marked for deletion, it is a programming error to attempt any subsequent operation on the handle other than closing it.
 
-If you set <i>FileInformationClass</i> to <b>FilePositionInformation</b>, and the preceding call to <b>ZwCreateFile</b> included the FILE_NO_INTERMEDIATE_BUFFERING flag in the <i>CreateOptions</i> parameter, certain restrictions on the <b>CurrentByteOffset</b> member of the <a href="kernel.file_position_information">FILE_POSITION_INFORMATION</a> structure are enforced. For more information, see <a href="kernel.zwcreatefile">ZwCreateFile</a>.
+If you set <i>FileInformationClass</i> to <b>FilePositionInformation</b>, and the preceding call to <b>ZwCreateFile</b> included the FILE_NO_INTERMEDIATE_BUFFERING flag in the <i>CreateOptions</i> parameter, certain restrictions on the <b>CurrentByteOffset</b> member of the <a href="..\wdm\ns-wdm-_file_position_information.md">FILE_POSITION_INFORMATION</a> structure are enforced. For more information, see <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>.
 
-If you set <i>FileInformationClass</i> to <b>FileEndOfFileInformation</b>, and the <b>EndOfFile</b> member of <a href="kernel.file_end_of_file_information">FILE_END_OF_FILE_INFORMATION</a> specifies an offset beyond the current end-of-file mark, <b>ZwSetInformationFile</b> extends the file and pads the extension with zeros.
+If you set <i>FileInformationClass</i> to <b>FileEndOfFileInformation</b>, and the <b>EndOfFile</b> member of <a href="..\ntddk\ns-ntddk-_file_end_of_file_information.md">FILE_END_OF_FILE_INFORMATION</a> specifies an offset beyond the current end-of-file mark, <b>ZwSetInformationFile</b> extends the file and pads the extension with zeros.
 
 For more information about working with files, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565384">Using Files in a Driver</a>.
 
@@ -284,7 +285,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -292,57 +293,57 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="fs.createiocompletionport">CreateIoCompletionPort</a>
+<a href="https://msdn.microsoft.com/40cb47fc-7b15-47f6-bee2-2611d4686053">CreateIoCompletionPort</a>
 </dt>
 <dt>
-<a href="kernel.file_basic_information">FILE_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_file_basic_information.md">FILE_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_completion_information">FILE_COMPLETION_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_completion_information.md">FILE_COMPLETION_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_disposition_information">FILE_DISPOSITION_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_disposition_information.md">FILE_DISPOSITION_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_end_of_file_information">FILE_END_OF_FILE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_end_of_file_information.md">FILE_END_OF_FILE_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_io_priority_hint_information">FILE_IO_PRIORITY_HINT_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_file_io_priority_hint_information.md">FILE_IO_PRIORITY_HINT_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_link_information">FILE_LINK_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_link_information.md">FILE_LINK_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_name_information">FILE_NAME_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_name_information.md">FILE_NAME_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_position_information">FILE_POSITION_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_file_position_information.md">FILE_POSITION_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_rename_information">FILE_RENAME_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_rename_information.md">FILE_RENAME_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_valid_data_length_information">FILE_VALID_DATA_LENGTH_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_valid_data_length_information.md">FILE_VALID_DATA_LENGTH_INFORMATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="kernel.zwclose">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatefile">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 <dt>
-<a href="kernel.zwopenfile">ZwOpenFile</a>
+<a href="..\wdm\nf-wdm-zwopenfile.md">ZwOpenFile</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryinformationfile">ZwQueryInformationFile</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetInformationFile routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwSetInformationFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

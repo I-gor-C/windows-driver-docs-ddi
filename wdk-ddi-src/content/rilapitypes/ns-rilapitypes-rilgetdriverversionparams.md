@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILGETDRIVERVERSIONPARAMS
+UID: NS:rilapitypes.RILGETDRIVERVERSIONPARAMS
 title: RILGETDRIVERVERSIONPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetdriverversionparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b396b12e-f8c4-4e5e-b3c4-9822bcd996a4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILGETDRIVERVERSIONPARAMS, *LPRILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS
 req.product: Windows 10 or later.
 ---
 

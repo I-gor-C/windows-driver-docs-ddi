@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWaveRTStream.AllocatePagesForMdl
+UID: NF:portcls.IPortWaveRTStream.AllocatePagesForMdl
 title: IPortWaveRTStream::AllocatePagesForMdl method
 author: windows-driver-content
 description: The AllocatePagesForMdl method allocates a list of nonpaged physical memory pages and returns a pointer to a memory descriptor list (MDL) that describes them.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWaveRTStream::AllocatePagesForMdl method
@@ -38,7 +39,7 @@ req.irql: Passive level
 
 
 ## -description
-The <code>AllocatePagesForMdl</code> method allocates a list of nonpaged physical memory pages and returns a pointer to a memory descriptor list (<a href="kernel.mdl">MDL</a>) that describes them.
+The <code>AllocatePagesForMdl</code> method allocates a list of nonpaged physical memory pages and returns a pointer to a memory descriptor list (<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>) that describes them.
 
 
 
@@ -75,9 +76,9 @@ The driver calls this method to allocate memory that can be mapped to user or ke
 
 The method always allocates an integral number of pages. If sufficient memory is available, the memory allocation is the requested size rounded up to the next page. Otherwise, the memory allocation can be less than the requested size. The caller must verify how many bytes are actually allocated.
 
-If the DMA controller of the audio device requires the physical memory pages in the buffer to be contiguous, the driver must call <a href="audio.iportwavertstream_allocatecontiguouspagesformdl">IPortWaveRTStream::AllocateContiguousPagesForMdl </a> instead.
+If the DMA controller of the audio device requires the physical memory pages in the buffer to be contiguous, the driver must call <a href="https://msdn.microsoft.com/976f7e83-9b2a-4e1b-ab76-76d8e9711bff">IPortWaveRTStream::AllocateContiguousPagesForMdl </a> instead.
 
-Like the <a href="kernel.mmallocatepagesformdl">MmAllocatePagesForMdl </a> function, the <code>AllocatePagesforMdl</code> method allocates memory pages that are locked (nonpaged) but unmapped. If the miniport driver wants to set up software access to this memory, the miniport driver must make a subsequent call to <a href="audio.iportwavertstream_mapallocatedpages">IPortWaveRTStream::MapAllocatedPages </a> to map the pages into kernel-mode address space. 
+Like the <a href="..\wdm\nf-wdm-mmallocatepagesformdl.md">MmAllocatePagesForMdl </a> function, the <code>AllocatePagesforMdl</code> method allocates memory pages that are locked (nonpaged) but unmapped. If the miniport driver wants to set up software access to this memory, the miniport driver must make a subsequent call to <a href="https://msdn.microsoft.com/90f412de-073f-4889-adf3-898cde0206b7">IPortWaveRTStream::MapAllocatedPages </a> to map the pages into kernel-mode address space. 
 
 
 ## -requirements
@@ -132,10 +133,10 @@ Passive level
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_allocatecontiguouspagesformdl">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536924">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_mapallocatedpages">IPortWaveRTStream::MapAllocatedPages</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536932">IPortWaveRTStream::MapAllocatedPages</a>
 </dt>
 </dl>
  

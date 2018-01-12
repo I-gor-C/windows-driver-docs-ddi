@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUni.HalftonePattern
+UID: NF:prcomoem.IPrintOemUni.HalftonePattern
 title: IPrintOemUni::HalftonePattern method
 author: windows-driver-content
 description: The IPrintOemUni::HalftonePattern method can be used with Unidrv-supported printers to create or modify a halftone pattern before it is used in a halftoning operation.
@@ -7,7 +7,7 @@ old-location: print\iprintoemuni_halftonepattern.htm
 old-project: print
 ms.assetid: 1b899492-f4a7-4c13-9e19-0f086b2b6b47
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUni, IPrintOemUni::HalftonePattern, HalftonePattern
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ HRESULT HalftonePattern(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param pHTPattern 
@@ -175,7 +176,7 @@ An implementation of a <code>HalftonePattern</code> method in the rendering plug
 
 }
 
-The <code>IPrintOemUni::HalftonePattern</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "HalftonePattern" as input.
+The <code>IPrintOemUni::HalftonePattern</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "HalftonePattern" as input.
 
 For more information about halftoning, see <a href="https://msdn.microsoft.com/cc14ff92-743b-42ca-b70f-0df768762f01">Customized Halftoning</a> and <a href="https://msdn.microsoft.com/a188908a-ddf7-4b4d-a46d-e3550ffb0418">Option Attributes for the Halftone Feature</a>.
 
@@ -209,12 +210,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.iprintoemuni_imageprocessing">IPrintOemUni::ImageProcessing</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemUni::HalftonePattern method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemUni::HalftonePattern method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

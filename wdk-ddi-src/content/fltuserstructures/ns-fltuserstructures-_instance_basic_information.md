@@ -1,5 +1,5 @@
 ---
-UID: NS.FLTUSERSTRUCTURES._INSTANCE_BASIC_INFORMATION
+UID: NS:fltuserstructures._INSTANCE_BASIC_INFORMATION
 title: _INSTANCE_BASIC_INFORMATION
 author: windows-driver-content
 description: The INSTANCE_BASIC_INFORMATION structure contains basic information for a minifilter instance.
@@ -7,7 +7,7 @@ old-location: ifsk\instance_basic_information.htm
 old-project: ifsk
 ms.assetid: 35e2b098-1bc2-4ffc-86c8-b60b651df027
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: _INSTANCE_BASIC_INFORMATION, INSTANCE_BASIC_INFORMATION, PINSTANCE_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: INSTANCE_BASIC_INFORMATION, PINSTANCE_BASIC_INFORMATION
 ---
 
 # _INSTANCE_BASIC_INFORMATION structure
@@ -92,39 +93,39 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.filterinstancefindclose">FilterInstanceFindClose</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540538">FilterInstanceFindClose</a>
 </dt>
 <dt>
-<a href="ifsk.filterinstancefindfirst">FilterInstanceFindFirst</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540541">FilterInstanceFindFirst</a>
 </dt>
 <dt>
-<a href="ifsk.filterinstancefindnext">FilterInstanceFindNext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541493">FilterInstanceFindNext</a>
 </dt>
 <dt>
-<a href="ifsk.filterinstancegetinformation">FilterInstanceGetInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541499">FilterInstanceGetInformation</a>
 </dt>
 <dt>
-<a href="ifsk.filtervolumeinstancefindclose">FilterVolumeInstanceFindClose</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541535">FilterVolumeInstanceFindClose</a>
 </dt>
 <dt>
-<a href="ifsk.filtervolumeinstancefindfirst">FilterVolumeInstanceFindFirst</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541541">FilterVolumeInstanceFindFirst</a>
 </dt>
 <dt>
-<a href="ifsk.filtervolumeinstancefindnext">FilterVolumeInstanceFindNext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541551">FilterVolumeInstanceFindNext</a>
 </dt>
 <dt>
-<a href="ifsk.instance_aggregate_standard_information">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_instance_aggregate_standard_information.md">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.instance_full_information">INSTANCE_FULL_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_instance_full_information.md">INSTANCE_FULL_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.instance_partial_information">INSTANCE_PARTIAL_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_instance_partial_information.md">INSTANCE_PARTIAL_INFORMATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20INSTANCE_BASIC_INFORMATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20INSTANCE_BASIC_INFORMATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

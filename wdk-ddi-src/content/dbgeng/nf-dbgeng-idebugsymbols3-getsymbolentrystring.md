@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.GetSymbolEntryString
+UID: NF:dbgeng.IDebugSymbols3.GetSymbolEntryString
 title: IDebugSymbols3::GetSymbolEntryString method
 author: windows-driver-content
 description: The GetSymbolEntryString method returns string information for the specified symbol.
 old-location: debugger\getsymbolentrystring.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 3ec46b53-f3a8-4fd6-bf94-261ff8accad7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::GetSymbolEntryString, GetSymbolEntryString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::GetSymbolEntryString method
@@ -59,7 +60,7 @@ HRESULT GetSymbolEntryString(
 
 ### -param Id [in]
 
-Specifies the symbols whose memory regions are being requested.  The <a href="debugger.debug_module_and_id">DEBUG_MODULE_AND_ID</a> structure contains the module containing the symbol and the symbol ID of the symbol within the module.
+Specifies the symbols whose memory regions are being requested.  The <a href="..\dbgeng\ns-dbgeng-_debug_module_and_id.md">DEBUG_MODULE_AND_ID</a> structure contains the module containing the symbol and the symbol ID of the symbol within the module.
 
 
 ### -param Which [in]
@@ -127,15 +128,15 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 </dt>
 <dt>
-<a href="debugger.getsymbolentriesbyname">GetSymbolEntriesByName</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548458">GetSymbolEntriesByName</a>
 </dt>
 <dt>
-<a href="debugger.getsymbolentriesbyoffset">GetSymbolEntriesByOffset</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548476">GetSymbolEntriesByOffset</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugSymbols3::GetSymbolEntryString method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSymbolEntryString method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

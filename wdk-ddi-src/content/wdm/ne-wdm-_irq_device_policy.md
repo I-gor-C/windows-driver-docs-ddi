@@ -1,5 +1,5 @@
 ---
-UID: NE.wdm._IRQ_DEVICE_POLICY
+UID: NE:wdm._IRQ_DEVICE_POLICY
 title: _IRQ_DEVICE_POLICY
 author: windows-driver-content
 description: The IRQ_DEVICE_POLICY enumeration type indicates the policy the operating system can use to assign the interrupts from a device to different processors.
@@ -7,8 +7,8 @@ old-location: kernel\irq_device_policy.htm
 old-project: kernel
 ms.assetid: 1a605eed-d9a1-4a2f-a095-3e790061527b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IRQ_DEVICE_POLICY, *PIRQ_DEVICE_POLICY, PIRQ_DEVICE_POLICY, IRQ_DEVICE_POLICY
+ms.date: 1/4/2018
+ms.keywords: _IRQ_DEVICE_POLICY, *PIRQ_DEVICE_POLICY, IRQ_DEVICE_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: PASSIVE_LEVEL (See Remarks section)
+req.typenames: *PIRQ_DEVICE_POLICY, IRQ_DEVICE_POLICY
 req.product: Windows 10 or later.
 ---
 
@@ -90,7 +91,7 @@ The operating system should assign different message-signaled interrupts to diff
 
 
 ## -remarks
-The <b>Interrupt.AffinityPolicy</b> member of the <a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structure is an <b>IRQ_DEVICE_POLICY</b> enumeration value.
+The <b>Interrupt.AffinityPolicy</b> member of the <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure is an <b>IRQ_DEVICE_POLICY</b> enumeration value.
 
 
 ## -requirements
@@ -111,12 +112,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a>
+<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IRQ_DEVICE_POLICY enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IRQ_DEVICE_POLICY enumeration%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

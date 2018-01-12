@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_POWER_MODE_REASON_CODE
+UID: NE:wditypes._WDI_POWER_MODE_REASON_CODE
 title: _WDI_POWER_MODE_REASON_CODE
 author: windows-driver-content
 description: The WDI_POWER_MODE_REASON_CODE enumeration defines the reasons for entering the Power Save state.
 old-location: netvista\wdi_power_mode_reason_code.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: F9FAA622-A844-4D9F-A0E6-D919C1FAD3AB
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_POWER_MODE_REASON_CODE, WDI_POWER_MODE_REASON_CODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_POWER_MODE_REASON_CODE
 req.product: Windows 10 or later.
 ---
 

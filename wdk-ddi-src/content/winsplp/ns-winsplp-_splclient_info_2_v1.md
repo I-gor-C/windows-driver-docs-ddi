@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP._SPLCLIENT_INFO_2_V1
+UID: NS:winsplp._SPLCLIENT_INFO_2_V1
 title: _SPLCLIENT_INFO_2_V1
 author: windows-driver-content
 description: Contains the handle for the server-side printer that is used to make direct API calls from the client to the server without the overhead of the RPC.
@@ -7,8 +7,8 @@ old-location: print\splclient_info_2_w2k.htm
 old-project: print
 ms.assetid: 713246FE-355B-4C01-A8DF-535BDBA0FCB8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SPLCLIENT_INFO_2_V1, SPLCLIENT_INFO_2_W2K
+ms.date: 1/8/2018
+ms.keywords: _SPLCLIENT_INFO_2_V1, SPLCLIENT_INFO_2_W2K, *PSPLCLIENT_INFO_2, *LPSPLCLIENT_INFO_2, SPLCLIENT_INFO_2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SPLCLIENT_INFO_2_W2K
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NC.gpioclx.GPIO_CLIENT_RECONFIGURE_INTERRUPT
+UID: NC:gpioclx.GPIO_CLIENT_RECONFIGURE_INTERRUPT
 title: GPIO_CLIENT_RECONFIGURE_INTERRUPT
 author: windows-driver-content
 description: The CLIENT_ReconfigureInterrupt event callback function reconfigures a general-purpose I/O (GPIO) pin that is used as an interrupt input.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 2F654D79-7DB6-45C4-8E6D-2EBAEF2DA7F5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks.
+req.typenames: *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ---
 
 # GPIO_CLIENT_RECONFIGURE_INTERRUPT callback

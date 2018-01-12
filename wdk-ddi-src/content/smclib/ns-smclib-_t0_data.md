@@ -1,5 +1,5 @@
 ---
-UID: NS.SMCLIB._T0_DATA
+UID: NS:smclib._T0_DATA
 title: _T0_DATA
 author: windows-driver-content
 description: The T0_DATA structure is used by the smart card driver library to process T0 I/O.
@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: CC827018-F6B2-48DF-BF0A-36654F866BD9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _T0_DATA, T0_DATA, PT0_DATA, *PT0_DATA
+ms.keywords: _T0_DATA, *PT0_DATA, T0_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PT0_DATA, T0_DATA
 req.product: Windows 10 or later.
 ---
 

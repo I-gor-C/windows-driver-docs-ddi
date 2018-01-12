@@ -1,5 +1,5 @@
 ---
-UID: NS.DXVA._DXVA_CONNECTMODE
+UID: NS:dxva._DXVA_ConnectMode
 title: _DXVA_ConnectMode
 author: windows-driver-content
 description: The DXVA_ConnectMode structure is sent by the host decoder to the accelerator to define the restricted profile used within a DirectX VA connection.
@@ -7,8 +7,8 @@ old-location: display\dxva_connectmode.htm
 old-project: display
 ms.assetid: 84520745-c99d-4495-a7c4-514d5e6cd27e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXVA_ConnectMode, *LPDXVA_ConnectMode, DXVA_ConnectMode, LPDXVA_ConnectMode
+ms.date: 12/29/2017
+ms.keywords: _DXVA_ConnectMode, *LPDXVA_ConnectMode, DXVA_ConnectMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPDXVA_ConnectMode, DXVA_ConnectMode
 ---
 
 # _DXVA_ConnectMode structure

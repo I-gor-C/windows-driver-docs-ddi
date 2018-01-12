@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTWaitForSynchronizationObjectFromGpu
+UID: NF:d3dkmthk.D3DKMTWaitForSynchronizationObjectFromGpu
 title: D3DKMTWaitForSynchronizationObjectFromGpu function
 author: windows-driver-content
 description: D3DKMTWaitForSynchronizationObjectFromGpu waits for a monitored fence to reach a certain value before processing subsequent context commands.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtwaitforsynchronizationobjectfromgpu.htm
 old-project: display
 ms.assetid: 93705446-8B87-46DD-9CFE-DD0473DEE6B6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTWaitForSynchronizationObjectFromGpu
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: GDI32.lib
 req.dll: GDI32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTWaitForSynchronizationObjectFromGpu function
@@ -55,7 +56,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTWaitForSynchronizationObjectFrom
 
 ### -param pData [in]
 
-A pointer to a <a href="display.d3dkmt_waitforsynchronizationobjectfromgpu">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a> structure that describes the operation.
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_waitforsynchronizationobjectfromgpu.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a> structure that describes the operation.
 
 
 ## -returns
@@ -74,7 +75,7 @@ This function might also return other <b>NTSTATUS</b> values.
 
 
 ## -remarks
-This function semantics are similar to existing <a href="display.d3dkmtwaitforsynchronizationobject2">D3DKMTWaitForSynchronizationObject2</a> call, except that this function also supports monitored fence objects and an array of monitored fence values to wait for.
+This function semantics are similar to existing <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforsynchronizationobject2.md">D3DKMTWaitForSynchronizationObject2</a> call, except that this function also supports monitored fence objects and an array of monitored fence values to wait for.
 
 
 ## -requirements
@@ -148,18 +149,18 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_waitforsynchronizationobjectfromgpu">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_waitforsynchronizationobjectfromgpu.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMGPU</a>
 </dt>
 <dt>
-<a href="display.d3dkmtwaitforsynchronizationobject">D3DKMTWaitForSynchronizationObject</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforsynchronizationobject.md">D3DKMTWaitForSynchronizationObject</a>
 </dt>
 <dt>
-<a href="display.d3dkmtwaitforsynchronizationobject2">D3DKMTWaitForSynchronizationObject2</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforsynchronizationobject2.md">D3DKMTWaitForSynchronizationObject2</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTWaitForSynchronizationObjectFromGpu function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTWaitForSynchronizationObjectFromGpu function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

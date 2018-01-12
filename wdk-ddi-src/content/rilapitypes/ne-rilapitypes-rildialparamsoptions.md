@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILDIALPARAMSOPTIONS
+UID: NE:rilapitypes.RILDIALPARAMSOPTIONS
 title: RILDIALPARAMSOPTIONS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildialparamsoptions_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c2635f91-005f-45e7-9d6c-92caca7f4452
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILDIALPARAMSOPTIONS, RILDIALPARAMSOPTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILDIALPARAMSOPTIONS
 req.product: Windows 10 or later.
 ---
 

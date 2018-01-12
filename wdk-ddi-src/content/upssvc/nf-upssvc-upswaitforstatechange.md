@@ -1,5 +1,5 @@
 ---
-UID: NF.upssvc.UPSWaitForStateChange
+UID: NF:upssvc.UPSWaitForStateChange
 title: UPSWaitForStateChange function
 author: windows-driver-content
 description: The UPSWaitForStateChange function waits until a specified UPS state changes, or until a time-out interval elapses.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UMDETW_ALLOCATION_USAGE
 req.product: Windows 10 or later.
 ---
 
@@ -96,7 +97,7 @@ None
 ## -remarks
 The <b>UPSWaitForStateChange</b> function must wait until either the state of the UPS changes from the value specified by <i>aCurrentState</i>, or until the time specified by <i>anInterval</i> has elapsed, whichever occurs first. 
 
-A call to <a href="battery.upscancelwait">UPSCancelWait</a> interrupts <b>UPSWaitForStateChange</b> and causes it to return. 
+A call to <a href="..\upssvc\nf-upssvc-upscancelwait.md">UPSCancelWait</a> interrupts <b>UPSWaitForStateChange</b> and causes it to return. 
 
 
 ## -requirements
@@ -128,7 +129,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="battery.upscancelwait">UPSCancelWait</a>
+<a href="..\upssvc\nf-upssvc-upscancelwait.md">UPSCancelWait</a>
 </dt>
 </dl>
  

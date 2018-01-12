@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_GDDS_DATATYPE
+UID: NS:bdatypes._BDA_GDDS_DATATYPE
 title: _BDA_GDDS_DATATYPE
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bda_gdds_datatype.htm
 old-project: stream
 ms.assetid: D2E6A110-EC0F-4753-BAF1-7A9F84ECDD35
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_GDDS_DATATYPE, P_BDA_GDDS_DATATYPE, *P_BDA_GDDS_DATATYPE, BDA_GDDS_DATATYPE
+ms.date: 1/9/2018
+ms.keywords: _BDA_GDDS_DATATYPE, *P_BDA_GDDS_DATATYPE, BDA_GDDS_DATATYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *P_BDA_GDDS_DATATYPE, BDA_GDDS_DATATYPE
 ---
 
 # _BDA_GDDS_DATATYPE structure

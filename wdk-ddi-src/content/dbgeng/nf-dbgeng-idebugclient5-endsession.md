@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugClient5.EndSession
+UID: NF:dbgeng.IDebugClient5.EndSession
 title: IDebugClient5::EndSession method
 author: windows-driver-content
 description: The EndSession method ends the current debugger session.
 old-location: debugger\endsession.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 521a0e4a-99c6-4ad4-886d-3fff9855e1fd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugClient5, IDebugClient5::EndSession, EndSession
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugClient5::EndSession method

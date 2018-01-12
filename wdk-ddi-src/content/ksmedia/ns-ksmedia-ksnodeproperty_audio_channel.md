@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSNODEPROPERTY_AUDIO_CHANNEL
+UID: NS:ksmedia.KSNODEPROPERTY_AUDIO_CHANNEL
 title: KSNODEPROPERTY_AUDIO_CHANNEL
 author: windows-driver-content
 description: The KSNODEPROPERTY_AUDIO_CHANNEL structure specifies a property of a channel in a node.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: f76f5552-725b-4d8c-ab29-1f2de7bdc81f
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSNODEPROPERTY_AUDIO_CHANNEL, PKSNODEPROPERTY_AUDIO_CHANNEL, KSNODEPROPERTY_AUDIO_CHANNEL, *PKSNODEPROPERTY_AUDIO_CHANNEL
+ms.keywords: KSNODEPROPERTY_AUDIO_CHANNEL, KSNODEPROPERTY_AUDIO_CHANNEL, *PKSNODEPROPERTY_AUDIO_CHANNEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSNODEPROPERTY_AUDIO_CHANNEL, *PKSNODEPROPERTY_AUDIO_CHANNEL
 ---
 
 # KSNODEPROPERTY_AUDIO_CHANNEL structure

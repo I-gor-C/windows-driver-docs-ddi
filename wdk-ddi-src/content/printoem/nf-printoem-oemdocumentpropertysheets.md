@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMDocumentPropertySheets
+UID: NF:printoem.OEMDocumentPropertySheets
 title: OEMDocumentPropertySheets function
 author: windows-driver-content
 description: OEMDocumentPropertySheets function
@@ -7,7 +7,7 @@ old-location: print\oemdocumentpropertysheets.htm
 old-project: print
 ms.assetid: 81c5eced-3d68-4202-83b9-57d661fe4952
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMDocumentPropertySheets
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

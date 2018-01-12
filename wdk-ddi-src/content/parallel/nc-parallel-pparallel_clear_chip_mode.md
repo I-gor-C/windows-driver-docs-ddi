@@ -1,5 +1,5 @@
 ---
-UID: NC.parallel.PPARALLEL_CLEAR_CHIP_MODE
+UID: NC:parallel.PPARALLEL_CLEAR_CHIP_MODE
 title: PPARALLEL_CLEAR_CHIP_MODE
 author: windows-driver-content
 description: The PPARALLEL_CLEAR_CHIP_MODE-typed callback routine clears the operating mode of a parallel port by resetting the communication mode of the host chipset to IEEE 1284-compatibility mode.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *LPRILGBATOKEN, RILGBATOKEN
 ---
 
 # PPARALLEL_CLEAR_CHIP_MODE callback
@@ -78,7 +79,7 @@ For more information about operating modes, see the modes that are defined for t
 
 
 ## -remarks
-To obtain a pointer to the system-supplied <i>PPARALLEL_CLEAR_CHIP_MODE</i> callback, a kernel-mode driver uses an <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a> request, which returns a <a href="parports.parallel_pnp_information">PARALLEL_PNP_INFORMATION</a> structure. The <b>ClearChipMode</b> member of the PARALLEL_PNP_INFORMATION structure is a pointer to this callback.
+To obtain a pointer to the system-supplied <i>PPARALLEL_CLEAR_CHIP_MODE</i> callback, a kernel-mode driver uses an <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a> request, which returns a <a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a> structure. The <b>ClearChipMode</b> member of the PARALLEL_PNP_INFORMATION structure is a pointer to this callback.
 
 A caller uses the <i>PPARALLEL_CLEAR_CHIP_MODE</i> callback in conjunction with the <a href="..\parallel\nc-parallel-pparallel_set_chip_mode.md">PPARALLEL_SET_CHIP_MODE</a> callback.
 
@@ -135,7 +136,7 @@ IRQL
 <a href="..\parallel\ni-parallel-ioctl_internal_parallel_set_chip_mode.md">IOCTL_INTERNAL_PARALLEL_SET_CHIP_MODE</a>
 </dt>
 <dt>
-<a href="parports.parallel_pnp_information">PARALLEL_PNP_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a>
 </dt>
 <dt>
 <a href="..\parallel\nc-parallel-pparallel_set_chip_mode.md">PPARALLEL_SET_CHIP_MODE</a>

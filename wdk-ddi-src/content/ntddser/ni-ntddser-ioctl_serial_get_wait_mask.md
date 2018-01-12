@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_GET_WAIT_MASK
+UID: NI:ntddser.IOCTL_SERIAL_GET_WAIT_MASK
 title: IOCTL_SERIAL_GET_WAIT_MASK
 author: windows-driver-content
 description: The IOCTL_SERIAL_GET_WAIT_MASK request returns the event wait mask that is currently set for the serial controller.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_WAIT_MASK IOCTL
@@ -116,7 +117,7 @@ The RLSD (receive line signal detect) signal changed state.
 
 A break was detected in the input stream.
 
-A line status error occurred. Possible line status errors are SERIAL_ERROR_FRAMING, SERIAL_ERROR_OVERRUN, and SERIAL_ERROR_PARITY. For more information about these errors, see the description of the <b>Errors</b> member in <a href="serports.serial_status">SERIAL_STATUS</a>.
+A line status error occurred. Possible line status errors are SERIAL_ERROR_FRAMING, SERIAL_ERROR_OVERRUN, and SERIAL_ERROR_PARITY. For more information about these errors, see the description of the <b>Errors</b> member in <a href="..\ntddser\ns-ntddser-_serial_status.md">SERIAL_STATUS</a>.
 
 A ring signal was detected.
 
@@ -169,10 +170,10 @@ Header
 <a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
 </dt>
 <dt>
-<a href="serports.serial_chars">SERIAL_CHARS</a>
+<a href="..\ntddser\ns-ntddser-_serial_chars.md">SERIAL_CHARS</a>
 </dt>
 <dt>
-<a href="serports.serial_status">SERIAL_STATUS</a>
+<a href="..\ntddser\ns-ntddser-_serial_status.md">SERIAL_STATUS</a>
 </dt>
 </dl>
  

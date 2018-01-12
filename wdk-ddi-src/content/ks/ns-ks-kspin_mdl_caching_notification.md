@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSPIN_MDL_CACHING_NOTIFICATION
+UID: NS:ks.KSPIN_MDL_CACHING_NOTIFICATION
 title: KSPIN_MDL_CACHING_NOTIFICATION
 author: windows-driver-content
 description: This structure is used internally by the operating system.
@@ -7,8 +7,8 @@ old-location: stream\kspin_mdl_caching_notification.htm
 old-project: stream
 ms.assetid: 93BAAF88-3F82-4E32-B403-4028ECF21F9A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSPIN_MDL_CACHING_NOTIFICATION, KSPIN_MDL_CACHING_NOTIFICATION, PKSPIN_MDL_CACHING_NOTIFICATION, *PKSPIN_MDL_CACHING_NOTIFICATION
+ms.date: 1/9/2018
+ms.keywords: KSPIN_MDL_CACHING_NOTIFICATION, KSPIN_MDL_CACHING_NOTIFICATION, *PKSPIN_MDL_CACHING_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPIN_MDL_CACHING_NOTIFICATION, *PKSPIN_MDL_CACHING_NOTIFICATION
 ---
 
 # KSPIN_MDL_CACHING_NOTIFICATION structure

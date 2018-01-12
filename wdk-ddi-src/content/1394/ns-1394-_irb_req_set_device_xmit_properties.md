@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
+UID: NS:1394._IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
 title: _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
 author: windows-driver-content
 description: This structure contains the fields necessary to carry out a SetDeviceXmitProperties request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
 ---
 
 # _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_IOCTL._WINBIO_SET_INDICATOR
+UID: NS:winbio_ioctl._WINBIO_SET_INDICATOR
 title: _WINBIO_SET_INDICATOR
 author: windows-driver-content
 description: The WINBIO_SET_INDICATOR structure is the IN payload for IOCTL_BIOMETRIC_SET_INDICATOR.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: c4410845-3c7b-445e-80ec-25694b122a0e
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_SET_INDICATOR, *PWINBIO_SET_INDICATOR, PWINBIO_SET_INDICATOR, WINBIO_SET_INDICATOR
+ms.keywords: _WINBIO_SET_INDICATOR, WINBIO_SET_INDICATOR, *PWINBIO_SET_INDICATOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_SET_INDICATOR, *PWINBIO_SET_INDICATOR
 req.product: Windows 10 or later.
 ---
 
@@ -132,7 +133,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="biometric.winbio_get_indicator">WINBIO_GET_INDICATOR</a>
+<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_get_indicator.md">WINBIO_GET_INDICATOR</a>
 </dt>
 <dt>
 <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_set_indicator.md">IOCTL_BIOMETRIC_SET_INDICATOR</a>

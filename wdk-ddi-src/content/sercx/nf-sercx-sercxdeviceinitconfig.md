@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCxDeviceInitConfig
+UID: NF:sercx.SerCxDeviceInitConfig
 title: SerCxDeviceInitConfig function
 author: windows-driver-content
 description: The SerCxDeviceInitConfig method is called by the serial controller driver to attach the serial framework extension (SerCx) to the I/O pipeline for a framework device object (FDO or PDO) that it is creating.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ NTSTATUS SerCxDeviceInitConfig(
 
 ### -param DeviceInit [in, out]
 
-A pointer to the <a href="kmdf.wdfdevice_init">WDFDEVICE_INIT</a> structure that is to be configured.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure that is to be configured.
 
 
 ## -returns
@@ -69,11 +70,11 @@ A pointer to the <a href="kmdf.wdfdevice_init">WDFDEVICE_INIT</a> structure that
 
 
 ## -remarks
-This method associates SerCx's configuration information with the <b>WDFDEVICE_INIT</b> structure for the framework device object (PDO or FDO) that is to be created. Call <b>SerCxDeviceInitConfig</b> before you call the <a href="kmdf.wdfdevicecreate">WdfDeviceCreate</a> method to create the device object.
+This method associates SerCx's configuration information with the <b>WDFDEVICE_INIT</b> structure for the framework device object (PDO or FDO) that is to be created. Call <b>SerCxDeviceInitConfig</b> before you call the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> method to create the device object.
 
 The controller driver's <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function receives a pointer to an initialized <b>WDFDEVICE_INIT</b> structure as an input parameter.
 
-SerCx sets a default security descriptor that the serial controller driver can, if necessary, override. For example, this default security descriptor enables a user-mode driver to send an I/O request to a peripheral device that is connected to a port on the serial controller. To change this setting in the security descriptor, the serial controller driver can call the <a href="kmdf.wdfdeviceinitassignsddlstring">WdfDeviceInitAssignSDDLString</a> method. This call must occur after the <b>SerCxDeviceInitConfig</b> call, but before the call to the <b>WdfDeviceCreate</b> method.
+SerCx sets a default security descriptor that the serial controller driver can, if necessary, override. For example, this default security descriptor enables a user-mode driver to send an I/O request to a peripheral device that is connected to a port on the serial controller. To change this setting in the security descriptor, the serial controller driver can call the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignsddlstring.md">WdfDeviceInitAssignSDDLString</a> method. This call must occur after the <b>SerCxDeviceInitConfig</b> call, but before the call to the <b>WdfDeviceCreate</b> method.
 
 In the following code example, a controller driver's <i>EvtDriverDeviceAdd</i> callback function passes an initialized <b>WDFDEVICE_INIT</b> structure to the <b>SerCxDeviceInitConfig</b> method. The call to <b>SerCxDeviceInitConfig</b> must occur before the <b>WdfDeviceCreate</b> call that creates the FDO for the serial controller device (UART).
 
@@ -130,13 +131,13 @@ PASSIVE_LEVEL
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 </dt>
 <dt>
-<a href="kmdf.wdfdevicecreate">WdfDeviceCreate</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 </dt>
 <dt>
-<a href="kmdf.wdfdevice_init">WDFDEVICE_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a>
 </dt>
 <dt>
-<a href="kmdf.wdfdeviceinitassignsddlstring">WdfDeviceInitAssignSDDLString</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitassignsddlstring.md">WdfDeviceInitAssignSDDLString</a>
 </dt>
 </dl>
  

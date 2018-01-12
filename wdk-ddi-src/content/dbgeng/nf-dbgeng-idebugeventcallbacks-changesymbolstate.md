@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugEventCallbacks.ChangeSymbolState
+UID: NF:dbgeng.IDebugEventCallbacks.ChangeSymbolState
 title: IDebugEventCallbacks::ChangeSymbolState method
 author: windows-driver-content
 description: The ChangeSymbolState callback method is called by the engine when the symbol state changes.
 old-location: debugger\idebugeventcallbacks_changesymbolstate.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5383bd49-df44-48dd-8385-c782a1b1f80a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugEventCallbacks, IDebugEventCallbacks::ChangeSymbolState, ChangeSymbolState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugEventCallbacks::ChangeSymbolState method
@@ -171,7 +172,7 @@ The return value is ignored by the engine unless it indicates a remote procedure
 
 
 ## -remarks
-This method is only called by the engine if the DEBUG_EVENT_CHANGE_SYMBOL_STATE flag is set in the mask returned by <a href="debugger.idebugeventcallbacks_getinterestmask">IDebugEventCallbacks::GetInterestMask</a>.
+This method is only called by the engine if the DEBUG_EVENT_CHANGE_SYMBOL_STATE flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550737">IDebugEventCallbacks::GetInterestMask</a>.
 
 For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>. 
 

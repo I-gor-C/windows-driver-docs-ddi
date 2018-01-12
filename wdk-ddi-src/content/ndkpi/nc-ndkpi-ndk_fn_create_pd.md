@@ -1,14 +1,14 @@
 ---
-UID: NC.ndkpi.NDK_FN_CREATE_PD
+UID: NC:ndkpi.NDK_FN_CREATE_PD
 title: NDK_FN_CREATE_PD
 author: windows-driver-content
 description: The NdkCreatePd (NDK_FN_CREATE_PD) function creates an NDK protection domain (PD) object.
 old-location: netvista\ndk_fn_create_pd.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 18698FAC-1BE6-45E4-911E-661D63607B3F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS, PNDIS_WWAN_VISIBLE_PROVIDERS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 # NDK_FN_CREATE_PD callback
@@ -61,7 +62,7 @@ NTSTATUS NdkCreatePd(
 
 ### -param pNdkAdapter [in]
 
-A pointer to an NDK adapter object (<a href="netvista.ndk_adapter">NDK_ADAPTER</a>).
+A pointer to an NDK adapter object (<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>).
 
 
 ### -param CreateCompletion [in]
@@ -76,7 +77,7 @@ A context value that the NDK provider passes back to the <i>NdkCreateCompletion<
 
 ### -param ppNdkPd 
 
-A pointer to a created PD object (<a href="netvista.ndk_pd">NDK_PD</a>) is returned in this location if the request succeeds without returning STATUS_PENDING. If  the request returns STATUS_PENDING then this parameter is ignored and the created object is returned  with the callback that is specified in the  <i>CreateCompletion</i> parameter.
+A pointer to a created PD object (<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>) is returned in this location if the request succeeds without returning STATUS_PENDING. If  the request returns STATUS_PENDING then this parameter is ignored and the created object is returned  with the callback that is specified in the  <i>CreateCompletion</i> parameter.
 
 
 ## -returns
@@ -161,24 +162,24 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndk_adapter">NDK_ADAPTER</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>
 </dt>
 <dt>
-<a href="netvista.ndk_adapter_dispatch">NDK_ADAPTER_DISPATCH</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_adapter_dispatch.md">NDK_ADAPTER_DISPATCH</a>
 </dt>
 <dt>
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_create_completion.md">NDK_FN_CREATE_COMPLETION</a>
 </dt>
 <dt>
-<a href="netvista.ndk_pd">NDK_PD</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>
 </dt>
 <dt>
-<a href="netvista.ndkpi_object_lifetime_requirements">NDKPI Object Lifetime Requirements</a>
+<a href="https://msdn.microsoft.com/94993523-D0D7-441E-B95C-417800840BAC">NDKPI Object Lifetime Requirements</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDK_FN_CREATE_PD callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CREATE_PD callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

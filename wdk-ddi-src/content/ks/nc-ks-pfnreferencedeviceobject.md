@@ -1,5 +1,5 @@
 ---
-UID: NC.ks.PFNREFERENCEDEVICEOBJECT
+UID: NC:ks.PFNREFERENCEDEVICEOBJECT
 title: PFNREFERENCEDEVICEOBJECT
 author: windows-driver-content
 description: The driver can use this routine to increment the reference count of the PDO.
@@ -7,7 +7,7 @@ old-location: stream\kstrreferencedeviceobject.htm
 old-project: stream
 ms.assetid: f4bf38eb-5028-4fcb-9752-8dab88db5904
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDSELECTOR
 ---
 
 # PFNREFERENCEDEVICEOBJECT callback

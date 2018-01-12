@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisAllocateTimerObject
+UID: NF:ndis.NdisAllocateTimerObject
 title: NdisAllocateTimerObject function
 author: windows-driver-content
 description: The NdisAllocateTimerObject function allocates and initializes a timer object for use with subsequent NdisXxx timer functions.
 old-location: netvista\ndisallocatetimerobject.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: feb5e4cf-7e23-434e-9dc5-bb445a6f5606
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisAllocateTimerObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisAllocateTimerObject function
@@ -61,13 +62,13 @@ NDIS_STATUS NdisAllocateTimerObject(
 
 An NDIS handle that was obtained during caller initialization. For more information about
      obtaining NDIS handles, see 
-     <a href="netvista.obtaining_pool_handles">Obtaining Pool Handles</a>.
+     <a href="https://msdn.microsoft.com/752b0d64-2ca3-4dc0-a6cd-642e96af1f8f">Obtaining Pool Handles</a>.
 
 
 ### -param TimerCharacteristics [in]
 
 A pointer to a caller-supplied 
-     <a href="netvista.ndis_timer_characteristics">
+     <a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">
      NDIS_TIMER_CHARACTERISTICS</a> structure that specifies the characteristics of the allocated timer
      object.
 
@@ -104,16 +105,16 @@ To use timer services, an NDIS driver first calls the
     <b>NdisAllocateTimerObject</b> is called during driver initialization.
 
 To start a timer, call the 
-    <a href="netvista.ndissettimerobject">NdisSetTimerObject</a> function. Calls to 
+    <a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a> function. Calls to 
     <b>NdisSetTimerObject</b> insert the timer object in the system timer queue. Only one instance of a
     particular timer object can be queued at any given moment.
 
 To cancel a timer, call the 
-    <a href="netvista.ndiscanceltimerobject">NdisCancelTimerObject</a> function. 
+    <a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a> function. 
     <b>NdisCancelTimerObject</b> dequeues the timer object if it is currently queued.
 
 To free a timer object, you must call the 
-    <a href="netvista.ndisfreetimerobject">NdisFreeTimerObject</a> function.
+    <a href="..\ndis\nf-ndis-ndisfreetimerobject.md">NdisFreeTimerObject</a> function.
 
 
 ## -requirements
@@ -177,7 +178,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_timer_function">Irql_Timer_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548019">Irql_Timer_Function</a>
 </td>
 </tr>
 </table>
@@ -185,21 +186,21 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_timer_characteristics">NDIS_TIMER_CHARACTERISTICS</a>
+<a href="..\ndis\ns-ndis-_ndis_timer_characteristics.md">NDIS_TIMER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndiscanceltimerobject">NdisCancelTimerObject</a>
+<a href="..\ndis\nf-ndis-ndiscanceltimerobject.md">NdisCancelTimerObject</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreetimerobject">NdisFreeTimerObject</a>
+<a href="..\ndis\nf-ndis-ndisfreetimerobject.md">NdisFreeTimerObject</a>
 </dt>
 <dt>
-<a href="netvista.ndissettimerobject">NdisSetTimerObject</a>
+<a href="..\ndis\nf-ndis-ndissettimerobject.md">NdisSetTimerObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisAllocateTimerObject function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateTimerObject function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

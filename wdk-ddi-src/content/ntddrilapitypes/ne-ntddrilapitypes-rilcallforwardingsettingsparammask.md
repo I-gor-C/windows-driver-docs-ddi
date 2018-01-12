@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILCALLFORWARDINGSETTINGSPARAMMASK
+UID: NE:ntddrilapitypes.RILCALLFORWARDINGSETTINGSPARAMMASK
 title: RILCALLFORWARDINGSETTINGSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallforwardingsettingsparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0da4e19f-9e7b-4986-bdb1-fc59e177f3fa
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILCALLFORWARDINGSETTINGSPARAMMASK, RILCALLFORWARDINGSETTINGSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLFORWARDINGSETTINGSPARAMMASK
 ---
 
 # RILCALLFORWARDINGSETTINGSPARAMMASK enumeration

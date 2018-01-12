@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_RECLAIMALLOCATIONS2
+UID: NS:d3dkmthk._D3DKMT_RECLAIMALLOCATIONS2
 title: _D3DKMT_RECLAIMALLOCATIONS2
 author: windows-driver-content
 description: D3DKMT_RECLAIMALLOCATIONS2 describes video memory resources that are to be reclaimed and that the driver previously offered for reuse. Used with the D3DKMTReclaimAllocations2 function.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_reclaimallocations2.htm
 old-project: display
 ms.assetid: 7980F1FD-D7C2-4C74-8652-89FD38BE4D1F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_RECLAIMALLOCATIONS2, D3DKMT_RECLAIMALLOCATIONS2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_RECLAIMALLOCATIONS2
 ---
 
 # _D3DKMT_RECLAIMALLOCATIONS2 structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-<b>D3DKMT_RECLAIMALLOCATIONS2</b> describes video memory resources that are to be reclaimed and that the driver  previously offered  for reuse. Used with the  <a href="display.d3dkmtreclaimallocations2">D3DKMTReclaimAllocations2</a> function.
+<b>D3DKMT_RECLAIMALLOCATIONS2</b> describes video memory resources that are to be reclaimed and that the driver  previously offered  for reuse. Used with the  <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreclaimallocations2.md">D3DKMTReclaimAllocations2</a> function.
 
 
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.PEP_X._PEP_PPM_QUERY_IDLE_STATES
+UID: NS:pep_x._PEP_PPM_QUERY_IDLE_STATES
 title: _PEP_PPM_QUERY_IDLE_STATES
 author: windows-driver-content
 description: The PEP_PPM_QUERY_IDLE_STATES structure describes the idle states of a particular processor.
@@ -7,8 +7,8 @@ old-location: kernel\pep_ppm_query_idle_states.htm
 old-project: kernel
 ms.assetid: 27B43684-6564-41A0-9F0D-D49F88D1F14D
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_PPM_QUERY_IDLE_STATES, PPEP_PPM_QUERY_IDLE_STATES, PEP_PPM_QUERY_IDLE_STATES, *PPEP_PPM_QUERY_IDLE_STATES
+ms.date: 1/4/2018
+ms.keywords: _PEP_PPM_QUERY_IDLE_STATES, PEP_PPM_QUERY_IDLE_STATES, *PPEP_PPM_QUERY_IDLE_STATES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PEP_PPM_QUERY_IDLE_STATES, *PPEP_PPM_QUERY_IDLE_STATES
 ---
 
 # _PEP_PPM_QUERY_IDLE_STATES structure
@@ -67,7 +68,7 @@ typedef struct _PEP_PPM_QUERY_IDLE_STATES {
 
 ### -field IdleStates
 
-[in] The first element in an array of <a href="kernel.pep_processor_idle_state">PEP_PROCESSOR_IDLE_STATE</a> structures. Each array element describes one of the idle states of this processor. If the array contains more than one element, the additional elements immediately follow the end of the <b>PEP_PPM_QUERY_IDLE_STATES</b> structure. The number of array elements is specified by the <b>Count</b> member. The buffer that PoFx allocates to hold this structure is guaranteed to be large enough to contain the <b>PEP_PPM_QUERY_IDLE_STATES</b> structure plus any array elements that follow this structure. Each idle state is identified by its array index. If the array contains N elements, idle state indexes range from 0 to N–1.
+[in] The first element in an array of <a href="..\pep_x\ns-pep_x-_pep_processor_idle_state.md">PEP_PROCESSOR_IDLE_STATE</a> structures. Each array element describes one of the idle states of this processor. If the array contains more than one element, the additional elements immediately follow the end of the <b>PEP_PPM_QUERY_IDLE_STATES</b> structure. The number of array elements is specified by the <b>Count</b> member. The buffer that PoFx allocates to hold this structure is guaranteed to be large enough to contain the <b>PEP_PPM_QUERY_IDLE_STATES</b> structure plus any array elements that follow this structure. Each idle state is identified by its array index. If the array contains N elements, idle state indexes range from 0 to N–1.
 
 
 ## -remarks
@@ -108,12 +109,12 @@ Header
 <a href="kernel.pep_notify_ppm_query_idle_states">PEP_NOTIFY_PPM_QUERY_IDLE_STATES</a>
 </dt>
 <dt>
-<a href="kernel.pep_processor_idle_state">PEP_PROCESSOR_IDLE_STATE</a>
+<a href="..\pep_x\ns-pep_x-_pep_processor_idle_state.md">PEP_PROCESSOR_IDLE_STATE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_QUERY_IDLE_STATES structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PPM_QUERY_IDLE_STATES structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

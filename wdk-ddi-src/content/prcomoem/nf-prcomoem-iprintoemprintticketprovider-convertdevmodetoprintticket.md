@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemPrintTicketProvider.ConvertDevModeToPrintTicket
+UID: NF:prcomoem.IPrintOemPrintTicketProvider.ConvertDevModeToPrintTicket
 title: IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket method
 author: windows-driver-content
 description: The IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket method converts a DEVMODEW structure into a print ticket.
@@ -7,7 +7,7 @@ old-location: print\iprintoemprintticketprovider_convertdevmodetoprintticket.htm
 old-project: print
 ms.assetid: b2e029b7-32c0-4cef-8388-9d30aa5610d3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemPrintTicketProvider, IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket, ConvertDevModeToPrintTicket
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <code>IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket</code> method converts a <a href="display.devmodew">DEVMODEW</a> structure into a print ticket. 
+The <code>IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket</code> method converts a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure into a print ticket. 
 
 
 
@@ -60,7 +61,7 @@ HRESULT ConvertDevModeToPrintTicket(
 
 ### -param cbDevmode [in]
 
-The size, in bytes, of the input <a href="display.devmodew">DEVMODEW</a> structure. The size includes both the public and private portions of this structure.
+The size, in bytes, of the input <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure. The size includes both the public and private portions of this structure.
 
 
 ### -param pDevmode [in]
@@ -75,7 +76,7 @@ The size, in bytes, of the plug-in's private DEVMODEW structure.
 
 ### -param pPrivateDevmode [in]
 
-A pointer to the plug-in's private <a href="display.devmodew">DEVMODEW</a> structure.
+A pointer to the plug-in's private <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.
 
 
 ### -param pPrintTicket [in, out]
@@ -88,7 +89,7 @@ A pointer to the partially-completed print ticket. When <code>IPrintOemPrintTick
 
 
 ## -remarks
-The core driver calls the <code>IPrintTicketProvider::ConvertDevModeToPrintTicket</code> method with an input print ticket that is populated with public and Unidrv-private or Pscript5-private features. The plug-in is free to set <a href="display.devmodew">DEVMODEW</a> settings in the public part or in the plug-in's private part, based on settings in the input print ticket. In addition to setting new DEVMODEW items, the plug-in can modify existing settings in the public portion of the DEVMODEW structure.
+The core driver calls the <code>IPrintTicketProvider::ConvertDevModeToPrintTicket</code> method with an input print ticket that is populated with public and Unidrv-private or Pscript5-private features. The plug-in is free to set <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> settings in the public part or in the plug-in's private part, based on settings in the input print ticket. In addition to setting new DEVMODEW items, the plug-in can modify existing settings in the public portion of the DEVMODEW structure.
 
 The DEVMODEW structure fields that correlate with the part of the DEVMODEW structure of interest to the client will already have been populated before <code>IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket</code> is called, including the public portion of the DEVMODEW structure and excluding the privately-defined values in the public portion of the DEVMODEW structure.
 
@@ -122,12 +123,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.iprintoemprintticketprovider_convertprinttickettodevmode">IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553167">IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddk._BDCB_CLASSIFICATION
+UID: NE:ntddk._BDCB_CLASSIFICATION
 title: _BDCB_CLASSIFICATION
 author: windows-driver-content
 description: The BDCB_CLASSIFICATION enumeration lists different classifications of boot start images.
@@ -7,8 +7,8 @@ old-location: kernel\bdcb_classification.htm
 old-project: kernel
 ms.assetid: 01627E7A-460F-4E49-B98C-0FCCFAB2F8BB
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _BDCB_CLASSIFICATION, *PBDCB_CLASSIFICATION, PBDCB_CLASSIFICATION, BDCB_CLASSIFICATION
+ms.date: 1/4/2018
+ms.keywords: _BDCB_CLASSIFICATION, *PBDCB_CLASSIFICATION, BDCB_CLASSIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBDCB_CLASSIFICATION, BDCB_CLASSIFICATION
 ---
 
 # _BDCB_CLASSIFICATION enumeration
@@ -113,15 +114,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.bdcb_image_information">BDCB_IMAGE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_bdcb_image_information.md">BDCB_IMAGE_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.ioregisterbootdrivercallback">BOOT_DRIVER_CALLBACK_FUNCTION</a>
+<a href="..\ntddk\nf-ntddk-ioregisterbootdrivercallback.md">BOOT_DRIVER_CALLBACK_FUNCTION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BDCB_CLASSIFICATION enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20BDCB_CLASSIFICATION enumeration%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.hidpi.HidP_SetData
+UID: NF:hidpi.HidP_SetData
 title: HidP_SetData function
 author: windows-driver-content
 description: The HidP_SetData routine sets a specified set of HID control button and value usages in a HID report.
@@ -7,7 +7,7 @@ old-location: hid\hidp_setdata.htm
 old-project: hid
 ms.assetid: 41f7c240-4e50-4d6c-82aa-902ab05bf715
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidP_SetData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hidparse.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 # HidP_SetData function
@@ -60,12 +61,12 @@ NTSTATUS __stdcall HidP_SetData(
 
 ### -param ReportType [in]
 
-Specifies a <a href="hid.hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.
+Specifies a <a href="..\hidpi\ne-hidpi-_hidp_report_type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.
 
 
 ### -param DataList [in, out]
 
-Pointer to a caller-allocated array of <a href="hid.hidp_data">HIDP_DATA</a> structures that specify which buttons and usage values to set.
+Pointer to a caller-allocated array of <a href="..\hidpi\ns-hidpi-_hidp_data.md">HIDP_DATA</a> structures that specify which buttons and usage values to set.
 
 
 ### -param DataLength [in, out]
@@ -85,7 +86,7 @@ Pointer to a HID report.
 
 ### -param ReportLength [in]
 
-Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="hid.hidp_getcaps">HidP_GetCaps</a> returns in a collection's <a href="hid.hidp_caps">HIDP_CAPS</a> structure.
+Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a> returns in a collection's <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure.
 
 
 ## -returns
@@ -97,7 +98,7 @@ Specifies the size, in bytes, of the HID report located at <i>Report</i>, which 
 </dl>The preparsed data specified by <i>PreparsedData</i> is not valid.
 <dl>
 <dt><b>HIDP_STATUS_INVALID_REPORT_LENGTH</b></dt>
-</dl>The size, in bytes, of the HID report is not equal to the length specified in the collection's <a href="hid.hidp_caps">HIDP_CAPS</a> structure for the specified report type.
+</dl>The size, in bytes, of the HID report is not equal to the length specified in the collection's <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure for the specified report type.
 <dl>
 <dt><b>HIDP_STATUS_INVALID_REPORT_TYPE</b></dt>
 </dl><i>ReportType</i> is not valid.
@@ -131,7 +132,7 @@ HidP_SetData returns one of the following error values if one of the specified b
 
 
 ## -remarks
-Except for usage value arrays, a user-mode application or kernel-mode driver can use <b>HidP_SetData</b> to set buttons and usage values in a report. To set a usage value array, an application or driver must use <a href="hid.hidp_setusagevaluearray">HidP_SetUsageValueArray</a>.
+Except for usage value arrays, a user-mode application or kernel-mode driver can use <b>HidP_SetData</b> to set buttons and usage values in a report. To set a usage value array, an application or driver must use <a href="..\hidpi\nf-hidpi-hidp_setusagevaluearray.md">HidP_SetUsageValueArray</a>.
 
 <b>HidP_SetData</b> sets the output value of <i>DataLength</i> as follows:
 
@@ -207,30 +208,30 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543586">_HIDP_PREPARSED_DATA</a>
 </dt>
 <dt>
-<a href="hid.hidp_data">HIDP_DATA</a>
+<a href="..\hidpi\ns-hidpi-_hidp_data.md">HIDP_DATA</a>
 </dt>
 <dt>
-<a href="hid.hidp_getdata">HidP_GetData</a>
+<a href="..\hidpi\nf-hidpi-hidp_getdata.md">HidP_GetData</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
 </dt>
 <dt>
-<a href="hid.hidp_setusages">HidP_SetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp_setusages.md">HidP_SetUsages</a>
 </dt>
 <dt>
-<a href="hid.hidp_setusagevaluearray">HidP_SetUsageValueArray</a>
+<a href="..\hidpi\nf-hidpi-hidp_setusagevaluearray.md">HidP_SetUsageValueArray</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>
 </dt>
 <dt>
-<a href="hid.hidp_unsetusages">HidP_UnsetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp_unsetusages.md">HidP_UnsetUsages</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_SetData routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_SetData routine%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.HWNCLX._HWN_CLIENT_REGISTRATION_PACKET
+UID: NS:hwnclx._HWN_CLIENT_REGISTRATION_PACKET
 title: _HWN_CLIENT_REGISTRATION_PACKET
 author: windows-driver-content
 description: Hardware Notification client driver registration packet that is passed to the class extension when a client driver is registered. Contains version information and client driver callback functions.
@@ -8,7 +8,7 @@ old-project: gpiobtn
 ms.assetid: bf8ac72b-c3d6-4965-a1e9-2408d2fa2196
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET, PHWN_CLIENT_REGISTRATION_PACKET, *PHWN_CLIENT_REGISTRATION_PACKET
+ms.keywords: _HWN_CLIENT_REGISTRATION_PACKET, *PHWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PHWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET
 ---
 
 # _HWN_CLIENT_REGISTRATION_PACKET structure
@@ -162,7 +163,7 @@ Header
 <dl>
 <dt><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a></dt>
 <dt>
-<a href="gpiobtn.hardware_notifications_reference">Hardware notifications reference</a>
+<a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
 </dt>
 </dl>
  

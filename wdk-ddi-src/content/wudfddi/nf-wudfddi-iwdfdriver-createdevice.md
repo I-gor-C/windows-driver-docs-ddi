@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFDriver.CreateDevice
+UID: NF:wudfddi.IWDFDriver.CreateDevice
 title: IWDFDriver::CreateDevice method
 author: windows-driver-content
 description: The CreateDevice method configures and creates a new framework device object.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfdriver_createdevice.htm
 old-project: wdf
 ms.assetid: df921271-b708-43bf-a250-048b7f638cac
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFDriver, IWDFDriver::CreateDevice, CreateDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -120,13 +121,13 @@ The <b>IUnknown</b> interface that the driver supplies for the <i>pCallbackInter
 <a href="..\wudfddi\nn-wudfddi-ipowerpolicycallbackwakefromsx.md">IPowerPolicyCallbackWakeFromSx</a>
 
 
-When the device changes state, the framework calls the method that is related to the change (such as the <a href="wdf.ipnpcallback_ond0entry">IPnpCallback::OnD0Entry</a> method) to notify the driver. 
+When the device changes state, the framework calls the method that is related to the change (such as the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556799">IPnpCallback::OnD0Entry</a> method) to notify the driver. 
 
 If the call to <b>CreateDevice</b> is successful, the driver must eventually call the <b>IWDFDevice::Release</b> method. Note that the framework has its own reference count on the object.
 
-For more information, see <a href="wdf.adding_a_device">Adding a Device</a>.
+For more information, see <a href="https://msdn.microsoft.com/233e3315-3044-42d7-867c-0a9e153eb53b">Adding a Device</a>.
 
-The following code example shows an implementation of the <a href="wdf.idriverentry_ondeviceadd">OnDeviceAdd</a> method of the <a href="..\wudfddi\nn-wudfddi-idriverentry.md">IDriverEntry</a> interface. The framework calls <b>OnDeviceAdd</b> when a device is added to a computer.
+The following code example shows an implementation of the <a href="https://msdn.microsoft.com/f2953b0d-6745-4804-bcda-47c7ddfb901f">OnDeviceAdd</a> method of the <a href="..\wudfddi\nn-wudfddi-idriverentry.md">IDriverEntry</a> interface. The framework calls <b>OnDeviceAdd</b> when a device is added to a computer.
 
 
 ## -requirements
@@ -192,7 +193,7 @@ DLL
 <a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
 </dt>
 <dt>
-<a href="wdf.idriverentry_ondeviceadd">IDriverEntry::OnDeviceAdd</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554896">IDriverEntry::OnDeviceAdd</a>
 </dt>
 <dt>
 <a href="..\wudfddi\nn-wudfddi-ifilecallbackcleanup.md">IFileCallbackCleanup</a>
@@ -207,7 +208,7 @@ DLL
 <a href="..\wudfddi\nn-wudfddi-ipnpcallback.md">IPnpCallback</a>
 </dt>
 <dt>
-<a href="wdf.ipnpcallback_ond0entry">IPnpCallback::OnD0Entry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556799">IPnpCallback::OnD0Entry</a>
 </dt>
 <dt>
 <a href="..\wudfddi\nn-wudfddi-ipnpcallbackhardware.md">IPnpCallbackHardware</a>
@@ -226,5 +227,5 @@ DLL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDriver::CreateDevice method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDriver::CreateDevice method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

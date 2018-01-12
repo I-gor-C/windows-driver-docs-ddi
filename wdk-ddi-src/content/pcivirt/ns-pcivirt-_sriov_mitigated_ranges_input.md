@@ -1,5 +1,5 @@
 ---
-UID: NS.PCIVIRT._SRIOV_MITIGATED_RANGES_INPUT
+UID: NS:pcivirt._SRIOV_MITIGATED_RANGES_INPUT
 title: _SRIOV_MITIGATED_RANGES_INPUT
 author: windows-driver-content
 description: This structure is the input buffer in the IOCTL_SRIOV_QUERY_MITIGATED_RANGES request to get the specific ranges on which intercepts must be placed.
@@ -7,8 +7,8 @@ old-location: pci\sriov_mitigated_ranges_input.htm
 old-project: PCI
 ms.assetid: 40b81630-997f-4427-8d02-5004de6fc943
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SRIOV_MITIGATED_RANGES_INPUT, *PSRIOV_MITIGATED_RANGES_INPUT, SRIOV_MITIGATED_RANGES_INPUT, PSRIOV_MITIGATED_RANGES_INPUT
+ms.date: 12/29/2017
+ms.keywords: _SRIOV_MITIGATED_RANGES_INPUT, *PSRIOV_MITIGATED_RANGES_INPUT, SRIOV_MITIGATED_RANGES_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PSRIOV_MITIGATED_RANGES_INPUT, SRIOV_MITIGATED_RANGES_INPUT
 ---
 
 # _SRIOV_MITIGATED_RANGES_INPUT structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-This structure is the input buffer in the <a href="buses.ioctl_sriov_query_mitigated_ranges">IOCTL_SRIOV_QUERY_MITIGATED_RANGES</a> request to get the specific ranges on which intercepts must be placed.
+This structure is the input buffer in the <a href="https://msdn.microsoft.com/58b6e53d-be7a-4563-a27d-db216a12d60d">IOCTL_SRIOV_QUERY_MITIGATED_RANGES</a> request to get the specific ranges on which intercepts must be placed.
 
 
 

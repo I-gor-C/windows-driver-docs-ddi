@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11.DOT11_EXTSTA_SEND_CONTEXT
+UID: NS:windot11.DOT11_EXTSTA_SEND_CONTEXT
 title: DOT11_EXTSTA_SEND_CONTEXT
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_extsta_send_context.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0a4af7dc-0210-42b6-b15b-a0f885664da9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: DOT11_EXTSTA_SEND_CONTEXT, *PDOT11_EXTAP_SEND_CONTEXT, DOT11_EXTSTA_SEND_CONTEXT, *PDOT11_EXTSTA_SEND_CONTEXT, PDOT11_EXTSTA_SEND_CONTEXT, DOT11_EXTAP_SEND_CONTEXT
+ms.date: 1/8/2018
+ms.keywords: DOT11_EXTSTA_SEND_CONTEXT, DOT11_EXTSTA_SEND_CONTEXT, *PDOT11_EXTAP_SEND_CONTEXT, DOT11_EXTAP_SEND_CONTEXT, *PDOT11_EXTSTA_SEND_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_EXTSTA_SEND_CONTEXT, *PDOT11_EXTAP_SEND_CONTEXT, DOT11_EXTAP_SEND_CONTEXT, *PDOT11_EXTSTA_SEND_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ typedef struct DOT11_EXTSTA_SEND_CONTEXT {
 
 The type, revision, and size of the DOT11_EXTSTA_SEND_CONTEXT structure. This member is formatted
      as an 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
      
 
 The miniport driver must set the members of 
@@ -87,7 +88,7 @@ This member must be set to
 </dd>
 </dl>
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field usExemptionActionType
@@ -114,7 +115,7 @@ The packet is exempt from any cipher operations performed by the 802.11 station.
 The packet is exempt from any cipher operations performed by the 802.11 station only if the
        station does not have a key-mapping key for the packet's destination media access control (MAC)
        address. For more information about key-mapping keys, see 
-       <a href="netvista.802_11_cipher_key_types">802.11 Cipher Key Types</a>.
+       <a href="https://msdn.microsoft.com/1de1a420-e2ec-4716-8a03-73c9278eb33b">802.11 Cipher Key Types</a>.
 
 </dd>
 </dl>
@@ -149,9 +150,9 @@ The miniport driver must fail the send request if the PHY specified by
      <b>uPhyId</b> is either not supported or has been disabled through a proprietary mechanism implemented by
      the independent hardware vendor (IHV). In this situation, the miniport driver sets the 
      <b>Status</b> member of the 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure to
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure to
      NDIS_STATUS_UNSUPPORTED_MEDIA and calls 
-     <a href="netvista.ndismsendnetbufferlistscomplete">
+     <a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
      NdisMSendNetBufferListsComplete</a> to complete the send request.
 
 
@@ -189,7 +190,7 @@ The 802.11 station uses the value of
 
 A pointer to a buffer that contains media-specific information. This member should be <b>NULL</b> when
      the 802.11 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure that this
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that this
      structure is associated with comes from the native 802.11 framework itself (including any
      NET_BUFFER_LIST structures that come from an IHV extension).
      
@@ -213,7 +214,7 @@ The miniport driver performs a send operation when its
     <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">
     MiniportSendNetBufferLists</a> is called. Each packet passed to the driver through this function is
     defined by a 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure, which contains
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure, which contains
     Native 802.11 out-of-band (OOB) data. The OOB data contains media-specific parameters that the 802.11
     station uses when transmitting the packet.
 
@@ -223,7 +224,7 @@ The miniport driver accesses the Native 802.11 OOB data through the
 
 The 
       <i>_NBL</i> parameter, which is passed the pointer to the 
-      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure used for the
+      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure used for the
       received 802.11 packet.
 
 The _
@@ -267,17 +268,17 @@ Header
 <a href="..\ndis\nc-ndis-miniport_send_net_buffer_lists.md">MiniportSendNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndismsendnetbufferlistscomplete">
+<a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
    NdisMSendNetBufferListsComplete</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
@@ -293,5 +294,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_EXTSTA_SEND_CONTEXT structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_SEND_CONTEXT structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

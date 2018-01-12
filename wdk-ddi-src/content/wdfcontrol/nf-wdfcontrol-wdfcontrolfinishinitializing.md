@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfcontrol.WdfControlFinishInitializing
+UID: NF:wdfcontrol.WdfControlFinishInitializing
 title: WdfControlFinishInitializing function
 author: windows-driver-content
 description: The WdfControlFinishInitializing method informs the framework that a driver has finished initializing a specified control device object.
@@ -7,7 +7,7 @@ old-location: wdf\wdfcontrolfinishinitializing.htm
 old-project: wdf
 ms.assetid: 13375ae1-6908-44d8-b775-4375f4fdde4d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfControlFinishInitializing
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -70,9 +71,9 @@ A system bug check occurs if the driver supplies an invalid object handle.
 ## -remarks
 The system will not send I/O requests or Windows Management Instrumentation (WMI) requests to a control device object unless the driver has called <b>WdfControlFinishInitializing</b>.
 
-For more information about control device objects and calling <b>WdfControlFinishInitializing</b>, see <a href="wdf.using_control_device_objects">Using Control Device Objects</a>.
+For more information about control device objects and calling <b>WdfControlFinishInitializing</b>, see <a href="https://msdn.microsoft.com/6367954f-6916-46df-a5a0-e80f045b69e5">Using Control Device Objects</a>.
 
-For a code example that uses <b>WdfControlFinishInitializing</b>, see <a href="wdf.wdfcontroldeviceinitallocate">WdfControlDeviceInitAllocate</a>.
+For a code example that uses <b>WdfControlFinishInitializing</b>, see <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitallocate.md">WdfControlDeviceInitAllocate</a>.
 
 
 ## -requirements
@@ -116,7 +117,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -136,7 +137,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_ctldevicefinishinitdeviceadd">CtlDeviceFinishInitDeviceAdd</a>, <a href="devtest.kmdf_ctldevicefinishinitdrentry">CtlDeviceFinishInitDrEntry</a>, <a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543607">CtlDeviceFinishInitDeviceAdd</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff543610">CtlDeviceFinishInitDrEntry</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>

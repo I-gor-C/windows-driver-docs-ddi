@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_STACK_FRAME_EX
+UID: NS:dbgeng._DEBUG_STACK_FRAME_EX
 title: _DEBUG_STACK_FRAME_EX
 author: windows-driver-content
 description: The DEBUG_STACK_FRAME_EX structure describes a stack frame and the address of the current instruction for the stack frame.
 old-location: debugger\debug_stack_frame_ex.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: EC0AF311-7BFC-4E2E-A1B1-FE38872B7FA2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_STACK_FRAME_EX, *PDEBUG_STACK_FRAME_EX, PDEBUG_STACK_FRAME_EX, DEBUG_STACK_FRAME_EX
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_STACK_FRAME_EX, *PDEBUG_STACK_FRAME_EX, DEBUG_STACK_FRAME_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDEBUG_STACK_FRAME_EX, DEBUG_STACK_FRAME_EX
 ---
 
 # _DEBUG_STACK_FRAME_EX structure
@@ -85,12 +86,12 @@ The location in the process's virtual address space of the processor stack.
 
 ### -field FuncTableEntry
 
-The location in the target's virtual address space of the function entry for this frame, if available. When set, this pointer is not guaranteed to remain valid indefinitely and should not be held for future use.  Instead, save the value of <b>InstructionOffset</b> and use it with <a href="debugger.getfunctionentrybyoffset">IDebugSymbols3::GetFunctionEntryByOffset</a> to retrieve function entry information later. 
+The location in the target's virtual address space of the function entry for this frame, if available. When set, this pointer is not guaranteed to remain valid indefinitely and should not be held for future use.  Instead, save the value of <b>InstructionOffset</b> and use it with <a href="https://msdn.microsoft.com/6b1fa9fc-f033-4d93-a2ec-f31159d6a69d">IDebugSymbols3::GetFunctionEntryByOffset</a> to retrieve function entry information later. 
 
 
 ### -field Params
 
-The values of the first four stack slots that are passed to the function, if available.  If there are less than four arguments, the remaining entries are set to zero.  These stack slots are not guaranteed to contain parameter values.  Some calling conventions and compiler optimizations might interfere with identification of parameter information.  For more detailed argument information and proper location handling, use <a href="debugger.getscopesymbolgroup">IDebugSymbols::GetScopeSymbolGroup</a> to retrieve the actual parameter symbols.
+The values of the first four stack slots that are passed to the function, if available.  If there are less than four arguments, the remaining entries are set to zero.  These stack slots are not guaranteed to contain parameter values.  Some calling conventions and compiler optimizations might interfere with identification of parameter information.  For more detailed argument information and proper location handling, use <a href="https://msdn.microsoft.com/002af3f1-4879-40e9-a5c6-bf62a3b26e02">IDebugSymbols::GetScopeSymbolGroup</a> to retrieve the actual parameter symbols.
 
 
 ### -field Reserved

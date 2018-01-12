@@ -1,5 +1,5 @@
 ---
-UID: NC.ks.PFNKSPINSETDATAFORMAT
+UID: NC:ks.PFNKSPINSETDATAFORMAT
 title: PFNKSPINSETDATAFORMAT
 author: windows-driver-content
 description: An AVStream minidriver's AVStrMiniPinSetDataFormat routine is called at pin creation time to verify that the previously agreed upon data format is acceptable for this KSPIN structure and a match for this KSDATARANGE structure.
@@ -7,7 +7,7 @@ old-location: stream\avstrminipinsetdataformat.htm
 old-project: stream
 ms.assetid: f38222e8-f432-4a28-ba2f-2e4f60edd762
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: KEYWORDSELECTOR
 ---
 
 # PFNKSPINSETDATAFORMAT callback
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-An AVStream minidriver's <i>AVStrMiniPinSetDataFormat</i> routine is called at pin creation time to verify that the previously agreed upon data format is acceptable for this <a href="stream.kspin">KSPIN</a> structure and a match for this <a href="stream.ksdatarange">KSDATARANGE</a> structure. This routine is also called due to certain types of dynamic format changes, for example the acceptance of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565107">KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT</a> property request.
+An AVStream minidriver's <i>AVStrMiniPinSetDataFormat</i> routine is called at pin creation time to verify that the previously agreed upon data format is acceptable for this <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure and a match for this <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a> structure. This routine is also called due to certain types of dynamic format changes, for example the acceptance of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565107">KSPROPERTY_CONNECTION_PROPOSEDATAFORMAT</a> property request.
 
 
 
@@ -62,7 +63,7 @@ NTSTATUS AVStrMiniPinSetDataFormat(
 
 ### -param Pin [in]
 
-Pointer to the <a href="stream.kspin">KSPIN</a> structure for which the data format is changing.
+Pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which the data format is changing.
 
 
 ### -param OldFormat [in, optional]
@@ -77,7 +78,7 @@ Optional. Pointer to a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM<
 
 ### -param DataRange [in]
 
-Pointer to a <a href="stream.ksdatarange">KSDATARANGE</a> structure. The data range for the new format.
+Pointer to a <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a> structure. The data range for the new format.
 
 
 ### -param AttributeRange [in, optional]
@@ -90,9 +91,9 @@ Return STATUS_SUCCESS if <i>Pin</i>'s <b>ConnectionFormat</b> member matches the
 
 
 ## -remarks
-In a ring 3 graph, the Kernel Streaming Proxy module (KsProxy) sets the data format based on the agreed upon connection format or a dynamic format change. KsProxy issues a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565103">KSPROPERTY_CONNECTION_DATAFORMAT</a> request which, after some initial validation, is translated into this dispatch call to the minidriver. See <a href="stream.kernel_streaming_proxy_reference">Kernel Streaming Proxy</a>. For more information, see <a href="https://msdn.microsoft.com/44b55a5a-ec58-4c1e-b780-e20829fe3edf">KS Data Formats and Data Ranges</a> and <a href="https://msdn.microsoft.com/44281574-8258-47a3-857d-fd44bb949f17">DataRange Intersections in AVStream</a>.
+In a ring 3 graph, the Kernel Streaming Proxy module (KsProxy) sets the data format based on the agreed upon connection format or a dynamic format change. KsProxy issues a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565103">KSPROPERTY_CONNECTION_DATAFORMAT</a> request which, after some initial validation, is translated into this dispatch call to the minidriver. See <a href="https://msdn.microsoft.com/94ca96ae-d6de-4764-b95f-d3784af40e4d">Kernel Streaming Proxy</a>. For more information, see <a href="https://msdn.microsoft.com/44b55a5a-ec58-4c1e-b780-e20829fe3edf">KS Data Formats and Data Ranges</a> and <a href="https://msdn.microsoft.com/44281574-8258-47a3-857d-fd44bb949f17">DataRange Intersections in AVStream</a>.
 
-The minidriver specifies the address for <i>AVStrMiniPinSetDataFormat</i> in the <b>SetDataFormat</b> member of its <a href="stream.kspin_dispatch">KSPIN_DISPATCH</a> structure.
+The minidriver specifies the address for <i>AVStrMiniPinSetDataFormat</i> in the <b>SetDataFormat</b> member of its <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a> structure.
 
 This routine can be called before the pin receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>, and minidrivers should be prepared to deal with this situation.
 
@@ -150,13 +151,13 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kspin_dispatch">KSPIN_DISPATCH</a>
+<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 </dt>
 <dt>
-<a href="stream.ksdatarange">KSDATARANGE</a>
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
@@ -165,12 +166,12 @@ PASSIVE_LEVEL
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
 </dt>
 <dt>
-<a href="stream.kspin">KSPIN</a>
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniPinSetDataFormat routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20PFNKSPINSETDATAFORMAT routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NC.printoem.PFNGETINFO
+UID: NC:printoem.PFNGETINFO
 title: PFNGETINFO
 author: windows-driver-content
 description: The UNIFONTOBJ_GetInfo callback function is provided by the Unidrv driver so that rendering plug-ins can obtain font or glyph information.
@@ -7,7 +7,7 @@ old-location: print\unifontobj_getinfo.htm
 old-project: print
 ms.assetid: 2c0d350d-dcdf-4da7-8cca-7f36d4ca622e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintSchemaTicket2, IPrintSchemaTicket2::GetParameterInitializer, GetParameterInitializer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PrintSchemaSelectionType
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ BOOL APIENTRY UNIFONTOBJ_GetInfo(
 
 ### -param pUFObj 
 
-Pointer to the <a href="print.unifontobj">UNIFONTOBJ</a> structure received by the function that is making the callback to <b>UNIFONTOBJ_GetInfo</b>. Supplied by the caller.
+Pointer to the <a href="..\printoem\ns-printoem-_unifontobj.md">UNIFONTOBJ</a> structure received by the function that is making the callback to <b>UNIFONTOBJ_GetInfo</b>. Supplied by the caller.
 
 
 ### -param dwInfoID 
@@ -87,7 +88,7 @@ UFO_GETINFO_FONTOBJ
 </td>
 <td>
 
-<a href="print.getinfo_fontobj">GETINFO_FONTOBJ</a>
+<a href="..\printoem\ns-printoem-_getinfo_fontobj.md">GETINFO_FONTOBJ</a>
 
 
 </td>
@@ -99,7 +100,7 @@ UFO_GETINFO_GLYPHBITMAP
 </td>
 <td>
 
-<a href="print.getinfo_glyphbitmap">GETINFO_GLYPHBITMAP</a>
+<a href="..\printoem\ns-printoem-_getinfo_glyphbitmap.md">GETINFO_GLYPHBITMAP</a>
 
 
 </td>
@@ -111,7 +112,7 @@ UFO_GETINFO_GLYPHSTRING
 </td>
 <td>
 
-<a href="print.getinfo_glyphstring">GETINFO_GLYPHSTRING</a>
+<a href="..\printoem\ns-printoem-_getinfo_glyphstring.md">GETINFO_GLYPHSTRING</a>
 
 
 </td>
@@ -123,7 +124,7 @@ UFO_GETINFO_GLYPHWIDTH
 </td>
 <td>
 
-<a href="print.getinfo_glyphwidth">GETINFO_GLYPHWIDTH</a>
+<a href="..\printoem\ns-printoem-_getinfo_glyphwidth.md">GETINFO_GLYPHWIDTH</a>
 
 
 </td>
@@ -135,7 +136,7 @@ UFO_GETINFO_MEMORY
 </td>
 <td>
 
-<a href="print.getinfo_memory">GETINFO_MEMORY</a>
+<a href="..\printoem\ns-printoem-_getinfo_memory.md">GETINFO_MEMORY</a>
 
 
 </td>
@@ -147,7 +148,7 @@ UFO_GETINFO_STDVARIABLE
 </td>
 <td>
 
-<a href="print.getinfo_stdvar">GETINFO_STDVAR</a>
+<a href="..\printoem\ns-printoem-_getinfo_stdvar.md">GETINFO_STDVAR</a>
 
 
 </td>
@@ -179,42 +180,42 @@ If the operation succeeds, the function returns <b>TRUE</b>. Otherwise it return
 ## -remarks
 The <b>UNIFONTOBJ_GetInfo</b> callback function allows a <a href="https://msdn.microsoft.com/e55ca083-2790-4929-9e5b-6fce49eb0404">rendering plug-in</a> to call back into Unidrv to obtain font or glyph information from GDI, needed for handling <a href="https://msdn.microsoft.com/6e643703-ace1-4660-990c-3a9ca735829d">customized font management</a> operations.
 
-A rendering plug-in receives the <b>UNIFONTOBJ_GetInfo</b> function's address in the <a href="print.unifontobj">UNIFONTOBJ</a> structure that is passed to the font customization methods.
+A rendering plug-in receives the <b>UNIFONTOBJ_GetInfo</b> function's address in the <a href="..\printoem\ns-printoem-_unifontobj.md">UNIFONTOBJ</a> structure that is passed to the font customization methods.
 
 The type of information returned by the function is dependent on the input arguments. The caller supplies values for <i>dwInfoID</i>, <i>pData</i>, and <i>dwDataSize</i> to indicate the type of information wanted. The following table summarizes the types of information returned. For more information, see the structure descriptions.
 
 
-<a href="print.getinfo_fontobj">GETINFO_FONTOBJ</a>
+<a href="..\printoem\ns-printoem-_getinfo_fontobj.md">GETINFO_FONTOBJ</a>
 
 
 A FONTOBJ structure describing the current font.
 
 
-<a href="print.getinfo_glyphbitmap">GETINFO_GLYPHBITMAP</a>
+<a href="..\printoem\ns-printoem-_getinfo_glyphbitmap.md">GETINFO_GLYPHBITMAP</a>
 
 
 A single glyph bitmap.
 
 
-<a href="print.getinfo_glyphstring">GETINFO_GLYPHSTRING</a>
+<a href="..\printoem\ns-printoem-_getinfo_glyphstring.md">GETINFO_GLYPHSTRING</a>
 
 
 An array of glyph specifiers in a specified format.
 
 
-<a href="print.getinfo_glyphwidth">GETINFO_GLYPHWIDTH</a>
+<a href="..\printoem\ns-printoem-_getinfo_glyphwidth.md">GETINFO_GLYPHWIDTH</a>
 
 
 Total width of a set of glyphs.
 
 
-<a href="print.getinfo_memory">GETINFO_MEMORY</a>
+<a href="..\printoem\ns-printoem-_getinfo_memory.md">GETINFO_MEMORY</a>
 
 
 Amount of available printer memory remaining.
 
 
-<a href="print.getinfo_stdvar">GETINFO_STDVAR</a>
+<a href="..\printoem\ns-printoem-_getinfo_stdvar.md">GETINFO_STDVAR</a>
 
 
 The current value for one or more of Unidrv's <a href="https://msdn.microsoft.com/d3f85c0f-7387-4301-8b1e-904471aed4b0">standard variables</a>.

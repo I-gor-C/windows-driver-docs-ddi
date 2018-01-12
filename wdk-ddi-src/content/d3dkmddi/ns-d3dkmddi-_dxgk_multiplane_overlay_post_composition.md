@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION
+UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION
 title: _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION
 author: windows-driver-content
 description: Specifies information about any additional transforms that should occur after the planes are composed.
@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_post_composition.htm
 old-project: display
 ms.assetid: 71D57E42-C1E7-4A0E-80B3-DD39388552C5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION, DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION
 ---
 
 # _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION structure

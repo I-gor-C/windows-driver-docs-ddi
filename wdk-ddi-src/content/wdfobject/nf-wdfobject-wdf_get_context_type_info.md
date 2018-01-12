@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfobject.WDF_GET_CONTEXT_TYPE_INFO
+UID: NF:wdfobject.WDF_GET_CONTEXT_TYPE_INFO
 title: WDF_GET_CONTEXT_TYPE_INFO macro
 author: windows-driver-content
 description: This macro is reserved for internal use only.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_get_context_type_info.htm
 old-project: wdf
 ms.assetid: 3273a4b6-9c5e-4671-be9e-45cdd010558a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WDF_GET_CONTEXT_TYPE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: 
+req.typenames: WDF_SYNCHRONIZATION_SCOPE
 req.product: Windows 10 or later.
 ---
 

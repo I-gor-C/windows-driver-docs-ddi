@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltAddOpenReparseEntry
+UID: NF:fltkernel.FltAddOpenReparseEntry
 title: FltAddOpenReparseEntry function
 author: windows-driver-content
 description: This routine adds a caller allocated open reparse structure, OPEN_REPARSE_LIST_ENTRY, into a create operation.
@@ -7,7 +7,7 @@ old-location: ifsk\fltaddopenreparseentry.htm
 old-project: ifsk
 ms.assetid: D58AB46A-0D87-45B5-8C58-E99ED0F906D2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltAddOpenReparseEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _IRQL_requires_max_(APC_LEVEL)
+req.typenames: EXpsFontRestriction
 ---
 
 # FltAddOpenReparseEntry function
@@ -38,7 +39,7 @@ req.irql: _IRQL_requires_max_(APC_LEVEL)
 
 
 ## -description
-This routine adds a caller allocated open reparse structure, <a href="ifsk.open_reparse_list_entry_">OPEN_REPARSE_LIST_ENTRY</a>,  into a create operation.
+This routine adds a caller allocated open reparse structure, <a href="..\ntifs\ns-ntifs-_open_reparse_list_entry.md">OPEN_REPARSE_LIST_ENTRY</a>,  into a create operation.
 
 
 
@@ -67,7 +68,7 @@ The create operation to attach open reparse information to.
 
 ### -param OpenReparseEntry [in]
 
-The open reparse information to add, of type <a href="ifsk.open_reparse_list_entry_">OPEN_REPARSE_LIST_ENTRY</a>.
+The open reparse information to add, of type <a href="..\ntifs\ns-ntifs-_open_reparse_list_entry.md">OPEN_REPARSE_LIST_ENTRY</a>.
 
 
 ## -returns
@@ -87,7 +88,7 @@ This routine adds an ECP list and/or ECP as needed.  <i>Filter</i> is referenced
     for the lifetime of the open reparse entry structure, not the ECP itself,
     which is conceptually independent of any specific filter.
 
-Use <a href="ifsk.fltremoveopenreparseentry">FltRemoveOpenReparseEntry</a> to remove the open reparse structure from the create operation.
+Use <a href="..\fltkernel\nf-fltkernel-fltremoveopenreparseentry.md">FltRemoveOpenReparseEntry</a> to remove the open reparse structure from the create operation.
 
 
 ## -requirements
@@ -138,12 +139,12 @@ _IRQL_requires_max_(APC_LEVEL)
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltremoveopenreparseentry">FltRemoveOpenReparseEntry</a>
+<a href="..\fltkernel\nf-fltkernel-fltremoveopenreparseentry.md">FltRemoveOpenReparseEntry</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAddOpenReparseEntry routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAddOpenReparseEntry routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

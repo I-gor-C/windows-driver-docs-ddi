@@ -1,13 +1,13 @@
 ---
-UID: NE.windot11._DOT11_POWER_MODE_REASON
+UID: NE:windot11._DOT11_POWER_MODE_REASON
 title: _DOT11_POWER_MODE_REASON
 author: windows-driver-content
 description: The DOT11_POWER_MODE_REASON lists the different reasons for changes to auto power save mode state.
 old-location: netvista\dot11_power_mode_reason.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0B8402B5-CFDA-402F-BA7A-A44478333C04
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _DOT11_POWER_MODE_REASON, DOT11_POWER_MODE_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_POWER_MODE_REASON
 req.product: Windows 10 or later.
 ---
 

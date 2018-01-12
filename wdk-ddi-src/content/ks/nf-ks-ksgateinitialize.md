@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsGateInitialize
+UID: NF:ks.KsGateInitialize
 title: KsGateInitialize function
 author: windows-driver-content
 description: The KsGateInitialize function initializes a gate for use.
@@ -7,7 +7,7 @@ old-location: stream\ksgateinitialize.htm
 old-project: stream
 ms.assetid: e64715d2-a8f1-47c3-9422-b565800ff79e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGateInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: 
 ---
 
 # KsGateInitialize function
@@ -58,7 +59,7 @@ void __inline KsGateInitialize(
 
 ### -param Gate [in]
 
-A pointer to the <a href="stream.ksgate">KSGATE</a> structure to initialize.
+A pointer to the <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure to initialize.
 
 
 ### -param InitialCount [in]
@@ -68,7 +69,7 @@ This parameter specifies the initial count to place on the gate. Fills in <i>Gat
 
 ### -param NextGate [in, optional]
 
-A pointer to a <a href="stream.ksgate">KSGATE</a> structure to which <i>Gate</i> should attach its output for state transitions. If this optional parameter is unspecified, <i>Gate</i> is not be attached to a subsequent gate.
+A pointer to a <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure to which <i>Gate</i> should attach its output for state transitions. If this optional parameter is unspecified, <i>Gate</i> is not be attached to a subsequent gate.
 
 
 ### -param StateToPropagate [in]
@@ -81,11 +82,11 @@ None
 
 
 ## -remarks
-Minidrivers should not call <b>KsGateInitialize</b> directly, but should instead use <a href="stream.ksgateinitializeand">KsGateInitializeAnd</a> or <a href="stream.ksgateinitializeor">KsGateInitializeOr</a>.
+Minidrivers should not call <b>KsGateInitialize</b> directly, but should instead use <a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a> or <a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>.
 
 AND and OR gates are conceptualizations of the gating mechanism. AVStream does not distinguish between them in the implementation of the common gate functions. The gate functions specific to AND and OR gates are inline calls to the common gate functions.
 
-To learn more about the gate construct in AVStream, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>, <a href="stream.ksgate">KSGATE</a>.
+To learn more about the gate construct in AVStream, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>, <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>.
 
 
 ## -requirements
@@ -137,21 +138,21 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksgateinitializeand">KsGateInitializeAnd</a>
+<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
 </dt>
 <dt>
-<a href="stream.ksgateinitializeor">KsGateInitializeOr</a>
+<a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
 </dt>
 <dt>
-<a href="stream.ksgateterminateand">KsGateTerminateAnd</a>
+<a href="..\ks\nf-ks-ksgateterminateand.md">KsGateTerminateAnd</a>
 </dt>
 <dt>
-<a href="stream.ksgateterminateor">KsGateTerminateOr</a>
+<a href="..\ks\nf-ks-ksgateterminateor.md">KsGateTerminateOr</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGateInitialize function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGateInitialize function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

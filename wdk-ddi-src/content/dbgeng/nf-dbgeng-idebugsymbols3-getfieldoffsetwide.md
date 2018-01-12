@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.GetFieldOffsetWide
+UID: NF:dbgeng.IDebugSymbols3.GetFieldOffsetWide
 title: IDebugSymbols3::GetFieldOffsetWide method
 author: windows-driver-content
 description: The GetFieldOffsetWide method returns the offset of a field from the base address of an instance of a type.
 old-location: debugger\getfieldoffsetwide.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 4a9b90dd-72b2-4625-8b73-bc0dca6ba905
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::GetFieldOffsetWide, GetFieldOffsetWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::GetFieldOffsetWide method

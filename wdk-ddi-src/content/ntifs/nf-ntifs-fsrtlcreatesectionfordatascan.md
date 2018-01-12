@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlCreateSectionForDataScan
+UID: NF:ntifs.FsRtlCreateSectionForDataScan
 title: FsRtlCreateSectionForDataScan function
 author: windows-driver-content
 description: The FsRtlCreateSectionForDataScan routine creates a section object.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlcreatesectionfordatascan.htm
 old-project: ifsk
 ms.assetid: 2bf6fb1b-e2d6-496d-808e-e739951cc7c5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlCreateSectionForDataScan
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlCreateSectionForDataScan function
@@ -137,7 +138,7 @@ All actions defined by the previous flags as well as that defined by STANDARD_RI
 
 ### -param ObjectAttributes [in, optional]
 
-Pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> macro to initialize this structure. Because <b>FsRtlCreateSectionForDataScan</b> inserts this object into the process handle table, the caller must specify the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.
+Pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro to initialize this structure. Because <b>FsRtlCreateSectionForDataScan</b> inserts this object into the process handle table, the caller must specify the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.
 
 
 ### -param MaximumSize [in, optional]
@@ -253,7 +254,7 @@ The caller did not have the required privilege to create a section object with t
 
 
 ## -remarks
-Once the section object created by this routine is no longer necessary, be sure to close the section object's handle (<i>SectionHandle</i>) by calling the <a href="kernel.zwclose">ZwClose</a> routine and dereference the section object itself (<i>SectionObject</i>) by calling the <a href="kernel.obdereferenceobject">ObDereferenceObject</a> routine.
+Once the section object created by this routine is no longer necessary, be sure to close the section object's handle (<i>SectionHandle</i>) by calling the <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> routine and dereference the section object itself (<i>SectionObject</i>) by calling the <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> routine.
 
 For more information on creating mapped sections and views of memory, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563684">Section Objects and Views</a>. Also see the documentation for the <b>CreateFileMapping</b> routine in the Microsoft Windows SDK. 
 
@@ -332,21 +333,21 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="ifsk.ccpurgecachesection">CcPurgeCacheSection</a>
+<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
 </dt>
 <dt>
-<a href="ifsk.mmflushimagesection">MmFlushImageSection</a>
+<a href="..\ntifs\nf-ntifs-mmflushimagesection.md">MmFlushImageSection</a>
 </dt>
 <dt>
-<a href="ifsk.mmforcesectionclosed">MmForceSectionClosed</a>
+<a href="..\ntifs\nf-ntifs-mmforcesectionclosed.md">MmForceSectionClosed</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatesection">ZwCreateSection</a>
+<a href="..\wdm\nf-wdm-zwcreatesection.md">ZwCreateSection</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCreateSectionForDataScan routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCreateSectionForDataScan routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

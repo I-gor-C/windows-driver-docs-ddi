@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdfmemory
 ---
 
 # Wdfmemory.h header
@@ -16,6 +16,12 @@ Wdfmemory.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [PFN_WDFMEMORYASSIGNBUFFER function](nc-wdfmemory-pfn_wdfmemoryassignbuffer.md) | The WdfMemoryAssignBuffer method assigns a specified buffer to a memory object that a driver created by calling WdfMemoryCreatePreallocated. |
+| [PFN_WDFMEMORYCOPYFROMBUFFER function](nc-wdfmemory-pfn_wdfmemorycopyfrombuffer.md) | The WdfMemoryCopyFromBuffer method copies the contents of a specified source buffer into a specified memory object's buffer. |
+| [PFN_WDFMEMORYCOPYTOBUFFER function](nc-wdfmemory-pfn_wdfmemorycopytobuffer.md) | The WdfMemoryCopyToBuffer method copies the contents of a specified memory object's buffer into a specified destination buffer. |
+| [PFN_WDFMEMORYCREATEFROMLOOKASIDE function](nc-wdfmemory-pfn_wdfmemorycreatefromlookaside.md) | The WdfMemoryCreateFromLookaside method creates a framework memory object and obtains a memory buffer from a specified lookaside list. |
+| [PFN_WDFMEMORYCREATEPREALLOCATED function](nc-wdfmemory-pfn_wdfmemorycreatepreallocated.md) | The WdfMemoryCreatePreallocated method creates a framework memory object for a driver-supplied memory buffer. |
+| [PFN_WDFMEMORYGETBUFFER function](nc-wdfmemory-pfn_wdfmemorygetbuffer.md) | The WdfMemoryGetBuffer method returns a pointer to the buffer that is associated with a specified memory object. |
 | [WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function](nf-wdfmemory-wdf_memory_descriptor_init_buffer.md) | The WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified buffer. |
 | [WDF_MEMORY_DESCRIPTOR_INIT_HANDLE function](nf-wdfmemory-wdf_memory_descriptor_init_handle.md) | The WDF_MEMORY_DESCRIPTOR_INIT_HANDLE function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified framework memory object. |
 | [WDF_MEMORY_DESCRIPTOR_INIT_MDL function](nf-wdfmemory-wdf_memory_descriptor_init_mdl.md) | The WDF_MEMORY_DESCRIPTOR_INIT_MDL function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified memory descriptor list (MDL). |

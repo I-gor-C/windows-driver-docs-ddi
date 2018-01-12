@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.RtlConvertLongToLargeInteger
+UID: NF:wdm.RtlConvertLongToLargeInteger
 title: RtlConvertLongToLargeInteger function
 author: windows-driver-content
 description: The RtlConvertLongToLargeInteger routine converts the input signed integer to a signed large integer.
@@ -7,7 +7,7 @@ old-location: kernel\rtlconvertlongtolargeinteger.htm
 old-project: kernel
 ms.assetid: 8c1f6cd3-f54b-4104-bd14-63d2c284946c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlConvertLongToLargeInteger
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

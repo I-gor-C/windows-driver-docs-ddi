@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_SET_TIMING_RESULTS
+UID: NS:d3dkmddi._DXGK_SET_TIMING_RESULTS
 title: _DXGK_SET_TIMING_RESULTS
 author: windows-driver-content
 description: Structure to report result flags from the SetTiming call which apply to the complete call rather than individual paths.
@@ -7,8 +7,8 @@ old-location: display\dxgk_set_timing_results.htm
 old-project: display
 ms.assetid: EA5C845B-76FD-40AD-B4E8-78601CA847CE
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_SET_TIMING_RESULTS, PDXGK_SET_TIMING_RESULTS, *PDXGK_SET_TIMING_RESULTS, DXGK_SET_TIMING_RESULTS
+ms.date: 12/29/2017
+ms.keywords: _DXGK_SET_TIMING_RESULTS, *PDXGK_SET_TIMING_RESULTS, DXGK_SET_TIMING_RESULTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PDXGK_SET_TIMING_RESULTS, DXGK_SET_TIMING_RESULTS
 ---
 
 # _DXGK_SET_TIMING_RESULTS structure

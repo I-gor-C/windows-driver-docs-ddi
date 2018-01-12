@@ -1,5 +1,5 @@
 ---
-UID: NS.SCSI._SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
+UID: NS:scsi._SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
 title: _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
 author: windows-driver-content
 description: The SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure contains a vendor specific microcode (i.e., firmware) image for use by the enclosure services process.
@@ -7,8 +7,8 @@ old-location: storage\ses_download_microcode_control_diagnostic_page.htm
 old-project: storage
 ms.assetid: 09c2746f-cfe4-41dc-82ce-0b7e0c348897
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, *PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
+ms.date: 1/10/2018
+ms.keywords: _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, *PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, *PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
 req.product: Windows 10 or later.
 ---
 
@@ -73,7 +74,7 @@ Specifies the diagnostic page being sent or requested based on the value. For a 
 ### -field SubEnclosureId
 
 Specifies the sub enclosure to which the application client is
-sending the microcode image. If the value does not match a valid SUBENCLOSURE_IDENTIFIER field value found in the <a href="storage.ses_configuration_diagnostic_page">SES_CONFIGURATION_DIAGNOSTIC_PAGE</a>, then the enclosure services
+sending the microcode image. If the value does not match a valid SUBENCLOSURE_IDENTIFIER field value found in the <a href="..\storport\ns-storport-_ses_configuration_diagnostic_page.md">SES_CONFIGURATION_DIAGNOSTIC_PAGE</a>, then the enclosure services
 process shall abort the download microcode operation with a status of 0x80.
 
 
@@ -116,12 +117,12 @@ specific checksum) and save the new microcode image into nonvolatile storage.
 
  If there are no errors in the microcode image or in the save operation, then the
 enclosure services process shall perform one of the following actions:<ul>
-<li>Set the <i>Status</i> field in <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x10, if
+<li>Set the <i>Status</i> field in <a href="https://msdn.microsoft.com/af686e7a-9426-4151-8ac4-d95ae1689b4c">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x10, if
 requested, and activate the new microcode image after either returning the Download Microcode Status diagnostic page, power on, or for standalone enclosure services processes, a hard reset.</li>
-<li>Set the <i>Status</i> field in <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x11, if
+<li>Set the <i>Status</i> field in <a href="https://msdn.microsoft.com/af686e7a-9426-4151-8ac4-d95ae1689b4c">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x11, if
 requested,  and for standalone enclosure services processes only,
 activate the new microcode image after either power on or hard reset.</li>
-<li>Set the <i>Status</i> field in <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x12, if
+<li>Set the <i>Status</i> field in <a href="https://msdn.microsoft.com/af686e7a-9426-4151-8ac4-d95ae1689b4c">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x12, if
 requested,  and activate the new microcode image after power on.</li>
 </ul>
 
@@ -148,7 +149,7 @@ specific checksum), save the new microcode image into nonvolatile storage
 
 
 If there are no errors in the microcode image or in the save operation, then the
-enclosure services process shall set the <i>Status</i> field in <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x13 in the <a href="storage._ses_download_microcode_status_diagnostic_page">SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE</a>, if
+enclosure services process shall set the <i>Status</i> field in <a href="https://msdn.microsoft.com/af686e7a-9426-4151-8ac4-d95ae1689b4c">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x13 in the <a href="https://msdn.microsoft.com/4572040b-c234-4281-b9d7-14d7f2bb7506">SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE</a>, if
 requested, and activate the new microcode after either:
 
 <ul>
@@ -203,7 +204,7 @@ firmware image may be stored in buffer 00h and a backup firmware image may be st
 enclosure services process shall support a buffer ID value of 00h. If more than one buffer is supported, then
 the enclosure services process shall assign additional buffer ID codes contiguously, beginning with 01h. If the
 enclosure services process receives an unsupported buffer ID code, then it shall abort the download
-microcode operation and set the <i>Status</i> field in <a href="storage._ses_download_microcode_status_descriptor">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x80 in the <a href="storage._ses_download_microcode_status_diagnostic_page">SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE</a> structure.
+microcode operation and set the <i>Status</i> field in <a href="https://msdn.microsoft.com/af686e7a-9426-4151-8ac4-d95ae1689b4c">SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR</a>  to 0x80 in the <a href="https://msdn.microsoft.com/4572040b-c234-4281-b9d7-14d7f2bb7506">SES_DOWNLOAD_MICROCODE_STATUS_DIAGNOSTIC_PAGE</a> structure.
 
 
 ### -field BufferOffset

@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11._DOT11_SCAN_REQUEST_V2
+UID: NS:windot11._DOT11_SCAN_REQUEST_V2
 title: _DOT11_SCAN_REQUEST_V2
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_scan_request_v2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: fd6dd2f4-ee58-46da-ba87-5aecaff35dd0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11_SCAN_REQUEST_V2, DOT11_SCAN_REQUEST_V2, *PDOT11_SCAN_REQUEST_V2, PDOT11_SCAN_REQUEST_V2
+ms.date: 1/8/2018
+ms.keywords: _DOT11_SCAN_REQUEST_V2, DOT11_SCAN_REQUEST_V2, *PDOT11_SCAN_REQUEST_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_SCAN_REQUEST_V2, *PDOT11_SCAN_REQUEST_V2
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ typedef struct _DOT11_SCAN_REQUEST_V2 {
 
 The type of basic service set (BSS) networks for which the 802.11 station scans. The data type for
      this member is the 
-     <a href="netvista.dot11_bss_type">DOT11_BSS_TYPE</a> enumeration.
+     <a href="..\wlantypes\ne-wlantypes-_dot11_bss_type.md">DOT11_BSS_TYPE</a> enumeration.
 
 
 ### -field dot11BSSID
@@ -156,7 +157,7 @@ The 802.11 station is not connected to a BSS network.
 The offset in the 
      <b>ucBuffer</b> array where the service set identifier (SSID) list begins. Each entry in the SSID list is
      formatted as a 
-     <a href="netvista.dot11_ssid">DOT11_SSID</a> structure.
+     <a href="..\wlantypes\ns-wlantypes-_dot11_ssid.md">DOT11_SSID</a> structure.
      
 
 The 802.11 station scans for each SSID in the list. For example, if 
@@ -227,7 +228,7 @@ The number of entries in the request IDs list.
 The offset in the 
      <b>ucBuffer</b> array where the list of PHY types begins. Each entry in the list of PHY types is
      formatted as a 
-     <a href="netvista.dot11_phy_type_info">DOT11_PHY_TYPE_INFO</a> structure.
+     <a href="..\windot11\ns-windot11-_dot11_phy_type_info.md">DOT11_PHY_TYPE_INFO</a> structure.
      
 
 The 802.11 station must perform the BSS scan by using each of the specified PHY types from this
@@ -316,7 +317,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_phy_type_info">DOT11_PHY_TYPE_INFO</a>
+<a href="..\windot11\ns-windot11-_dot11_phy_type_info.md">DOT11_PHY_TYPE_INFO</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
@@ -326,5 +327,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_SCAN_REQUEST_V2 structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_SCAN_REQUEST_V2 structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

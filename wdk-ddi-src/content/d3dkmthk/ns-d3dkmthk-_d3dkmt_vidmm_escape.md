@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_VIDMM_ESCAPE
+UID: NS:d3dkmthk._D3DKMT_VIDMM_ESCAPE
 title: _D3DKMT_VIDMM_ESCAPE
 author: windows-driver-content
 description: The D3DKMT_VIDMM_ESCAPE structure describes how to control the video memory manager (which is part of Dxgkrnl.sys) in a call to the D3DKMTEscape function.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_vidmm_escape.htm
 old-project: display
 ms.assetid: b9fb9960-9e6a-4c41-9c40-8ad307f83f0e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_VIDMM_ESCAPE, D3DKMT_VIDMM_ESCAPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_VIDMM_ESCAPE
 ---
 
 # _D3DKMT_VIDMM_ESCAPE structure
@@ -40,7 +41,7 @@ req.irql:
 ## -description
 <b>Do not use the D3DKMT_VIDMM_ESCAPE structure; it is for testing purposes only.</b>
 
-The D3DKMT_VIDMM_ESCAPE structure describes how to control the video memory manager (which is part of Dxgkrnl.sys) in a call to the <a href="display.d3dkmtescape">D3DKMTEscape</a> function.
+The D3DKMT_VIDMM_ESCAPE structure describes how to control the video memory manager (which is part of Dxgkrnl.sys) in a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function.
 
 
 
@@ -189,15 +190,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_escape">D3DKMT_ESCAPE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_escape.md">D3DKMT_ESCAPE</a>
 </dt>
 <dt>
-<a href="display.d3dkmtescape">D3DKMTEscape</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_VIDMM_ESCAPE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_VIDMM_ESCAPE structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILPERSODEACTIVATIONSTATEDEPERSOSTATE
+UID: NE:rilapitypes.RILPERSODEACTIVATIONSTATEDEPERSOSTATE
 title: RILPERSODEACTIVATIONSTATEDEPERSOSTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilpersodeactivationstatedepersostate_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e01aa9fb-a35e-41d4-994b-8a166372caaf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILPERSODEACTIVATIONSTATEDEPERSOSTATE, RILPERSODEACTIVATIONSTATEDEPERSOSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPERSODEACTIVATIONSTATEDEPERSOSTATE
 req.product: Windows 10 or later.
 ---
 

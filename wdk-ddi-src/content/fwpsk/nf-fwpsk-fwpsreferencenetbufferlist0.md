@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsReferenceNetBufferList0
+UID: NF:fwpsk.FwpsReferenceNetBufferList0
 title: FwpsReferenceNetBufferList0 function
 author: windows-driver-content
 description: The FwpsReferenceNetBufferList0 function increments the reference count for a NET_BUFFER_LIST structure.Note  FwpsReferenceNetBufferList0 is a specific version of FwpsReferenceNetBufferList.
 old-location: netvista\fwpsreferencenetbufferlist0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ff387b49-fecb-41d0-aac5-0a83eb8835d6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpsReferenceNetBufferList0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsReferenceNetBufferList0 function
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 The 
   <b>FwpsReferenceNetBufferList0</b> function increments the reference count for a 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 
 
@@ -59,7 +60,7 @@ void NTAPI FwpsReferenceNetBufferList0(
 ### -param netBufferList [in, out]
 
 A pointer to the 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure for which the
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure for which the
      reference count is being incremented.
 
 
@@ -80,7 +81,7 @@ None.
 ## -remarks
 A callout driver calls the 
     <b>FwpsReferenceNetBufferList0</b> function to increment the reference count for a 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure such that the network
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure such that the network
     buffer list remains valid outside of the 
     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function.
 
@@ -93,7 +94,7 @@ For example, when a callout driver performs packet reassembly, it increments the
     packet fragments from its packet injection completion routine.
 
 A callout driver must call the 
-    <a href="netvista.fwpsdereferencenetbufferlist0">FwpsDereferenceNetBufferList0</a> function for the NET_BUFFER_LIST structure after the callout driver
+    <a href="..\fwpsk\nf-fwpsk-fwpsdereferencenetbufferlist0.md">FwpsDereferenceNetBufferList0</a> function for the NET_BUFFER_LIST structure after the callout driver
     has finished referencing the structure.
 
 A callout driver must not hold referenced packets indefinitely. A referenced packet can interfere
@@ -106,7 +107,7 @@ The intended use for referenced packets in WFP is to get clarification from a us
 
 If the callout driver must wait for a potentially lengthy operation, it should make a deep copy of
      the packet using 
-     <a href="netvista.fwpsallocatenetbufferandnetbufferlist0">FwpsAllocateNetBufferAndNetBufferList0</a> and block and absorb the original packet.
+     <a href="..\fwpsk\nf-fwpsk-fwpsallocatenetbufferandnetbufferlist0.md">FwpsAllocateNetBufferAndNetBufferList0</a> and block and absorb the original packet.
 
 Callout drivers should always return held packets as quickly as possible.
 
@@ -174,16 +175,16 @@ IRQL
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 </dt>
 <dt>
-<a href="netvista.fwpsdereferencenetbufferlist0">
+<a href="..\fwpsk\nf-fwpsk-fwpsdereferencenetbufferlist0.md">
    FwpsDereferenceNetBufferList0</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsReferenceNetBufferList0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsReferenceNetBufferList0 function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

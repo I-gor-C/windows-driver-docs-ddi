@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d10umddi.PFND3DWDDM2_0DDI_CHECKCRYPTOSESSIONSTATUS
+UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_CHECKCRYPTOSESSIONSTATUS
 title: PFND3DWDDM2_0DDI_CHECKCRYPTOSESSIONSTATUS
 author: windows-driver-content
 description: CheckCryptoSessionStatus returns the status of a CryptoSession object.
@@ -7,8 +7,8 @@ old-location: display\checkcryptosessionstatus.htm
 old-project: display
 ms.assetid: C7BA5CE0-F89E-4C4B-9976-B9CB6BF8DA81
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, PSETRESULT_INFO, SETRESULT_INFO
+ms.date: 12/29/2017
+ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSETRESULT_INFO, SETRESULT_INFO
 ---
 
 # PFND3DWDDM2_0DDI_CHECKCRYPTOSESSIONSTATUS callback
@@ -57,7 +58,7 @@ req.irql:
 
 ### -param hDevice [in]
 
- A handle to the display device (graphics context). The Direct3D runtime passed the user-mode driver this handle as the <b>hDevice</b> member of the <a href="display.d3dddiarg_createdevice">D3DDDIARG_CREATEDEVICE</a> structure at device creation.
+ A handle to the display device (graphics context). The Direct3D runtime passed the user-mode driver this handle as the <b>hDevice</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a> structure at device creation.
 
 
 ### -param  hCryptoSession [in]
@@ -127,7 +128,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiarg_createdevice">D3DDDIARG_CREATEDEVICE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession.md">CreateCryptoSession</a>
@@ -140,5 +141,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DWDDM2_0DDI_CHECKCRYPTOSESSIONSTATUS callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DWDDM2_0DDI_CHECKCRYPTOSESSIONSTATUS callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

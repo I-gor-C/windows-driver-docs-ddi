@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_UNORDEREDPRESENTSWAPCHAIN
+UID: NS:d3dkmthk._D3DKMT_UNORDEREDPRESENTSWAPCHAIN
 title: _D3DKMT_UNORDEREDPRESENTSWAPCHAIN
 author: windows-driver-content
 description: Used to store information about the swapchain being presented.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt-unorderedpresentswapchain.htm
 old-project: display
 ms.assetid: c8b13348-71a6-4981-8c99-6368fa0f01ff
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_UNORDEREDPRESENTSWAPCHAIN, D3DKMT_UNORDEREDPRESENTSWAPCHAIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_UNORDEREDPRESENTSWAPCHAIN
 ---
 
 # _D3DKMT_UNORDEREDPRESENTSWAPCHAIN structure

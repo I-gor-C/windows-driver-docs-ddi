@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortWaveRTStream.FreePagesFromMdl
+UID: NF:portcls.IPortWaveRTStream.FreePagesFromMdl
 title: IPortWaveRTStream::FreePagesFromMdl method
 author: windows-driver-content
 description: The FreePagesFromMdl method frees a memory descriptor list (MDL).
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortWaveRTStream::FreePagesFromMdl method
@@ -38,7 +39,7 @@ req.irql: Passive level.
 
 
 ## -description
-The <code>FreePagesFromMdl</code> method frees a memory descriptor list (<a href="kernel.mdl">MDL</a>).
+The <code>FreePagesFromMdl</code> method frees a memory descriptor list (<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>).
 
 
 
@@ -63,7 +64,7 @@ None
 
 
 ## -remarks
-The miniport driver must call this method to free an MDL that was previously allocated by calling either <a href="audio.iportwavertstream_allocatepagesformdl">IPortWaveRTStream::AllocatePagesForMdl</a> or <a href="audio.iportwavertstream_allocatecontiguouspagesformdl">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>.
+The miniport driver must call this method to free an MDL that was previously allocated by calling either <a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff536924">IPortWaveRTStream::AllocateContiguousPagesForMdl</a>.
 
 <code>FreePagesFromMdl</code> frees both the physical memory pages described in the MDL and the MDL itself. On return, the MDL pointer value in the <i>MemoryDescriptorList</i> parameter is no longer valid.
 
@@ -120,10 +121,10 @@ Passive level.
 <a href="..\portcls\nn-portcls-iportwavertstream.md">IPortWaveRTStream</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_allocatepagesformdl">IPortWaveRTStream::AllocatePagesForMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536925">IPortWaveRTStream::AllocatePagesForMdl</a>
 </dt>
 <dt>
-<a href="audio.iportwavertstream_allocatecontiguouspagesformdl">IPortWaveRTStream::AllocateContiguousPagesForMdl </a>
+<a href="https://msdn.microsoft.com/976f7e83-9b2a-4e1b-ab76-76d8e9711bff">IPortWaveRTStream::AllocateContiguousPagesForMdl </a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NC.ks.PFNKSALLOCATOR
+UID: NC:ks.PFNKSALLOCATOR
 title: PFNKSALLOCATOR
 author: windows-driver-content
 description: Minidrivers can optionally supply a callback function of type PFNKSALLOCATOR as a parameter in calls to KsEnableEventWithAllocator, KsPropertyHandlerWithAllocator, and KsMethodHandlerWithAllocator.
@@ -7,7 +7,7 @@ old-location: stream\kstrallocator.htm
 old-project: stream
 ms.assetid: 4af5ac92-824c-42bf-8fb7-5418ae5d793c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDSELECTOR
 ---
 
 # PFNKSALLOCATOR callback
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-Minidrivers can optionally supply a callback function of type <b>PFNKSALLOCATOR</b> as a parameter in calls to <a href="stream.ksenableeventwithallocator">KsEnableEventWithAllocator</a>, <a href="stream.kspropertyhandlerwithallocator">KsPropertyHandlerWithAllocator</a>, and <a href="stream.ksmethodhandlerwithallocator">KsMethodHandlerWithAllocator</a>.
+Minidrivers can optionally supply a callback function of type <b>PFNKSALLOCATOR</b> as a parameter in calls to <a href="..\ks\nf-ks-ksenableeventwithallocator.md">KsEnableEventWithAllocator</a>, <a href="..\ks\nf-ks-kspropertyhandlerwithallocator.md">KsPropertyHandlerWithAllocator</a>, and <a href="..\ks\nf-ks-ksmethodhandlerwithallocator.md">KsMethodHandlerWithAllocator</a>.
 
 
 

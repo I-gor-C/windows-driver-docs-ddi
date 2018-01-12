@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.GetOffsetExpression
+UID: NF:dbgeng.IDebugBreakpoint2.GetOffsetExpression
 title: IDebugBreakpoint2::GetOffsetExpression method
 author: windows-driver-content
 description: The GetOffsetExpression methods return the expression string that evaluates to the location that triggers a breakpoint.
 old-location: debugger\getoffsetexpression.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 9fbdfa42-7231-4281-ba19-a33e854cd801
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::GetOffsetExpression, GetOffsetExpression
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::GetOffsetExpression method
@@ -86,7 +87,7 @@ This method can also return error values.  For more information, see <a href="ht
 ## -remarks
 The expression is evaluated every time that a module is loaded or unloaded.  If the debugger cannot evaluate the expression (for example, if the expression contains a symbol that cannot be interpreted), the breakpoint is flagged as deferred. (For more information about deferred breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.)
 
-The <a href="debugger.getparameters">GetParameters</a> method also returns the size of the expression string that specifies the location that triggers the breakpoint, <i>ExpressionSize</i>.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the size of the expression string that specifies the location that triggers the breakpoint, <i>ExpressionSize</i>.
 
 For more information about how to use breakpoints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.
 

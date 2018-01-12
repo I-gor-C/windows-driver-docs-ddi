@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcAddStreamResource
+UID: NF:portcls.PcAddStreamResource
 title: PcAddStreamResource function
 author: windows-driver-content
 description: PcAddStreamResource adds a stream resource.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: NA
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcAddStreamResource function
@@ -69,12 +70,12 @@ PVOID - Reserved for future use, set to NULL. Only device-scoped resources are s
 
 ### -param     ResourceDescriptor [in]
 
-PPCSTREAMRESOURCE_DESCRIPTOR - The resource to add. For more information, see <a href="audio.pcstreamresource_descriptor">PCSTREAMRESOURCE_DESCRIPTOR</a>. 
+PPCSTREAMRESOURCE_DESCRIPTOR - The resource to add. For more information, see <a href="..\portcls\ns-portcls-_pcstreamresource_descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>. 
 
 
 ### -param ResourceHandle [out]
 
-PCSTREAMRESOURCE* - The location that will hold the resource handle. For more information, see <a href="audio.pcremovestreamresource">PcRemoveStreamResource</a>.  
+PCSTREAMRESOURCE* - The location that will hold the resource handle. For more information, see <a href="..\portcls\nf-portcls-pcremovestreamresource.md">PcRemoveStreamResource</a>.  
 
 
 ## -returns
@@ -94,11 +95,11 @@ To help ensure glitch-free operation, audio drivers must register their streamin
 
 Stream resources are any resources used by the audio driver to process audio streams or ensure audio data flow. 
 
-All audio drivers must register their stream resources with the audio class driver. Driver registers the following resource types: interrupts, driver-owned threads and dependencies on other audio stack’s resources (example: parallel audio driver stacks). See the definition of <a href="audio.pcstreamresource_descriptor">PCSTREAMRESOURCE_DESCRIPTOR</a> for more information.  
+All audio drivers must register their stream resources with the audio class driver. Driver registers the following resource types: interrupts, driver-owned threads and dependencies on other audio stack’s resources (example: parallel audio driver stacks). See the definition of <a href="..\portcls\ns-portcls-_pcstreamresource_descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a> for more information.  
 
 Audio driver must make sure the resource is valid when making this call.
 
-Audio drivers that only run in Windows 10 can use  <b>PcAddStreamResource</b> and <a href="audio.pcremovestreamresource">PcRemoveStreamResource</a>. For Audio waveRT miniport drivers that need to also run under previous versions of Windows, use <a href="audio.iportclsstreamresourcemanager_addstreamresource">AddStreamResource</a> and <a href="audio.iportclsstreamresourcemanager_removestreamresource">RemoveStreamResource</a>. 
+Audio drivers that only run in Windows 10 can use  <b>PcAddStreamResource</b> and <a href="..\portcls\nf-portcls-pcremovestreamresource.md">PcRemoveStreamResource</a>. For Audio waveRT miniport drivers that need to also run under previous versions of Windows, use <a href="https://msdn.microsoft.com/F9F7E13B-E8D1-4B02-9CC5-737145DEFEB9">AddStreamResource</a> and <a href="https://msdn.microsoft.com/35A90B3C-27D7-4BBA-A754-098D191A3201">RemoveStreamResource</a>. 
 
 
 ## -requirements
@@ -171,10 +172,10 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcstreamresource_descriptor">PCSTREAMRESOURCE_DESCRIPTOR</a>
+<a href="..\portcls\ns-portcls-_pcstreamresource_descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="audio.pcremovestreamresource">PcRemoveStreamResource</a>
+<a href="..\portcls\nf-portcls-pcremovestreamresource.md">PcRemoveStreamResource</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpar.IOCTL_PAR_SET_INFORMATION
+UID: NI:ntddpar.IOCTL_PAR_SET_INFORMATION
 title: IOCTL_PAR_SET_INFORMATION
 author: windows-driver-content
 description: The IOCTL_PAR_SET_INFORMATION request resets and initializes a parallel device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # IOCTL_PAR_SET_INFORMATION IOCTL
@@ -50,7 +51,7 @@ The IOCTL_PAR_SET_INFORMATION request resets and initializes a parallel device.
 ## -ioctlparameters
 
 ### -input-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="parports.par_set_information">PAR_SET_INFORMATION</a> structure that the client allocates to input set information. The client sets the <b>Init</b> member to PARALLEL_INIT.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\ntddpar\ns-ntddpar-_par_set_information.md">PAR_SET_INFORMATION</a> structure that the client allocates to input set information. The client sets the <b>Init</b> member to PARALLEL_INIT.
 
 
 ### -input-buffer-length
@@ -116,7 +117,7 @@ Header
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_query_information.md">IOCTL_PAR_QUERY_INFORMATION</a>
 </dt>
 <dt>
-<a href="parports.par_set_information">PAR_SET_INFORMATION</a>
+<a href="..\ntddpar\ns-ntddpar-_par_set_information.md">PAR_SET_INFORMATION</a>
 </dt>
 </dl>
  

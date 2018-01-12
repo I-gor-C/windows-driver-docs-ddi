@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlSSIZETMult
+UID: NF:ntintsafe.RtlSSIZETMult
 title: RtlSSIZETMult function
 author: windows-driver-content
 description: Multiplies one value of type SSIZE_T by another.
@@ -7,7 +7,7 @@ old-location: kernel\rtlssizetmult.htm
 old-project: kernel
 ms.assetid: 43FFE47F-C8A3-49B4-B61A-3EAF3841037D
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlSSIZETMult
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlSSIZETMult function

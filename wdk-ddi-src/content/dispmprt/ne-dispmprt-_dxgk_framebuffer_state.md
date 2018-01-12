@@ -1,5 +1,5 @@
 ---
-UID: NE.dispmprt._DXGK_FRAMEBUFFER_STATE
+UID: NE:dispmprt._DXGK_FRAMEBUFFER_STATE
 title: _DXGK_FRAMEBUFFER_STATE
 author: windows-driver-content
 description: The frame buffer state is provided to the driver in order that the driver can infer details of the display configuration based on knowledge of how firmware and the driver will set a particular resolution even though only basic information is made directly available by the OS to the driver.
@@ -7,7 +7,7 @@ old-location: display\dxgk_framebuffer_state.htm
 old-project: display
 ms.assetid: 911E04E4-A9B9-4354-8EAB-CEEF87D56852
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_FRAMEBUFFER_STATE, DXGK_FRAMEBUFFER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_FRAMEBUFFER_STATE
 ---
 
 # _DXGK_FRAMEBUFFER_STATE enumeration

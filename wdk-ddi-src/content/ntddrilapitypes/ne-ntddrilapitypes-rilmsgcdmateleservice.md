@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILMSGCDMATELESERVICE
+UID: NE:ntddrilapitypes.RILMSGCDMATELESERVICE
 title: RILMSGCDMATELESERVICE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgcdmateleservice.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 01c45c31-2cae-4f9f-a3dc-4a164a3df670
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMSGCDMATELESERVICE, RILMSGCDMATELESERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGCDMATELESERVICE
 ---
 
 # RILMSGCDMATELESERVICE enumeration

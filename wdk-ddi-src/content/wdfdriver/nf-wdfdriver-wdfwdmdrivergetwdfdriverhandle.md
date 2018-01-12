@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdriver.WdfWdmDriverGetWdfDriverHandle
+UID: NF:wdfdriver.WdfWdmDriverGetWdfDriverHandle
 title: WdfWdmDriverGetWdfDriverHandle function
 author: windows-driver-content
 description: The WdfWdmDriverGetWdfDriverHandle method returns a handle to the framework driver object that is associated with a specified Windows Driver Model (WDM) driver object.
@@ -7,7 +7,7 @@ old-location: wdf\wdfwdmdrivergetwdfdriverhandle.htm
 old-project: wdf
 ms.assetid: 2126d36c-42c1-4e29-bf82-9f5682482557
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfWdmDriverGetWdfDriverHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: Any level
+req.typenames: WDF_DRIVER_INIT_FLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -111,7 +112,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -131,7 +132,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
 </td>
 </tr>
 </table>

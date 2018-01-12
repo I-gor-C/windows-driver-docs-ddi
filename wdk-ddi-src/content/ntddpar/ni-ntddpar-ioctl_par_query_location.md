@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpar.IOCTL_PAR_QUERY_LOCATION
+UID: NI:ntddpar.IOCTL_PAR_QUERY_LOCATION
 title: IOCTL_PAR_QUERY_LOCATION
 author: windows-driver-content
 description: The IOCTL_PAR_QUERY_LOCATION request returns the &#0034;LPTn&#0034; or &#0034;LPTn.m&#0034; symbolic link name associated with a parallel device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # IOCTL_PAR_QUERY_LOCATION IOCTL

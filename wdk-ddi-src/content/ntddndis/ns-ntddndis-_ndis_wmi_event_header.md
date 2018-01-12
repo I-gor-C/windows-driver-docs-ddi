@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_WMI_EVENT_HEADER
+UID: NS:ntddndis._NDIS_WMI_EVENT_HEADER
 title: _NDIS_WMI_EVENT_HEADER
 author: windows-driver-content
 description: The NDIS_WMI_EVENT_HEADER structure provides information about a GUID event for WMI clients.
 old-location: netvista\ndis_wmi_event_header.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b9e2c393-cf77-4193-ba59-b8eb914ef1e6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WMI_EVENT_HEADER, *PNDIS_WMI_EVENT_HEADER, NDIS_WMI_EVENT_HEADER, PNDIS_WMI_EVENT_HEADER
+ms.date: 1/8/2018
+ms.keywords: _NDIS_WMI_EVENT_HEADER, *PNDIS_WMI_EVENT_HEADER, NDIS_WMI_EVENT_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_WMI_EVENT_HEADER, NDIS_WMI_EVENT_HEADER
 ---
 
 # _NDIS_WMI_EVENT_HEADER structure
@@ -63,7 +64,7 @@ typedef struct _NDIS_WMI_EVENT_HEADER {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for this
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for this
      NDIS_WMI_EVENT_HEADER structure. Set the 
      <b>Type</b> member of NDIS_OBJECT_HEADER to NDIS_WMI_OBJECT_TYPE_EVENT, the 
      <b>Revision</b> member to NDIS_WMI_EVENT_HEADER_REVISION_1, and the 
@@ -88,7 +89,7 @@ An identifier for the request. If a miniport driver must complete a request imme
      completes the request with a status of NDIS_STATUS_INDICATION_REQUIRED, the miniport driver uses this 
      <b>RequestId</b> value to set the 
      <b>RequestId</b> member of the associated 
-     <a href="netvista.ndis_status_indication">NDIS_STATUS_INDICATION</a> structure. 
+     <a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a> structure. 
      
 
 NDIS or overlying drivers can also use the 
@@ -98,7 +99,7 @@ NDIS or overlying drivers can also use the
      <b>RequestId</b> is zero, the miniport driver can ignore this member.
 
 For more information about this member, see 
-     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>.
+     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>.
 
 
 ### -field PortNumber
@@ -158,12 +159,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_WMI_EVENT_HEADER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WMI_EVENT_HEADER structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

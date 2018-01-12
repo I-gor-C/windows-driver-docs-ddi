@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddvol.IOCTL_VOLUME_IS_CLUSTERED
+UID: NI:ntddvol.IOCTL_VOLUME_IS_CLUSTERED
 title: IOCTL_VOLUME_IS_CLUSTERED
 author: windows-driver-content
 description: Allows a driver or application to determine if a volume is clustered.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_volume_is_clustered.htm
 old-project: storage
 ms.assetid: aa8accf8-79c9-4868-b621-d468a121cb60
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VIDEO_WIN32K_CALLBACKS_PARAMS, PVIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
+ms.date: 1/10/2018
+ms.keywords: _VIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
 # IOCTL_VOLUME_IS_CLUSTERED IOCTL

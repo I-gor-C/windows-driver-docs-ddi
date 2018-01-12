@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.SYSAUDIO_CREATE_VIRTUAL_SOURCE
+UID: NS:ksmedia.SYSAUDIO_CREATE_VIRTUAL_SOURCE
 title: SYSAUDIO_CREATE_VIRTUAL_SOURCE
 author: windows-driver-content
 description: The SYSAUDIO_CREATE_VIRTUAL_SOURCE structure is used to create a mixer-line virtual source such as a volume control or mute.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: c9024cf0-aa0c-4652-89c1-3f2e6f622b3d
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SYSAUDIO_CREATE_VIRTUAL_SOURCE, *PSYSAUDIO_CREATE_VIRTUAL_SOURCE, PSYSAUDIO_CREATE_VIRTUAL_SOURCE, SYSAUDIO_CREATE_VIRTUAL_SOURCE
+ms.keywords: SYSAUDIO_CREATE_VIRTUAL_SOURCE, SYSAUDIO_CREATE_VIRTUAL_SOURCE, *PSYSAUDIO_CREATE_VIRTUAL_SOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SYSAUDIO_CREATE_VIRTUAL_SOURCE, *PSYSAUDIO_CREATE_VIRTUAL_SOURCE
 ---
 
 # SYSAUDIO_CREATE_VIRTUAL_SOURCE structure
@@ -57,7 +58,7 @@ typedef struct {
 
 ### -field Property
 
-Specifies the property. This parameter is a structure of type <a href="stream.ksproperty">KSPROPERTY</a>.
+Specifies the property. This parameter is a structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.
 
 
 ### -field PinCategory
@@ -92,7 +93,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksproperty">KSPROPERTY</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537417">KSPROPERTY_SYSAUDIO_CREATE_VIRTUAL_SOURCE</a>

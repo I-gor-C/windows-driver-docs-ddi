@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt.DXGK_ENGINE_TYPE
+UID: NE:d3dkmdt.DXGK_ENGINE_TYPE
 title: DXGK_ENGINE_TYPE
 author: windows-driver-content
 description: Indicates the type of engine on a GPU node. Note the selection rules discussed in Remarks.
@@ -7,7 +7,7 @@ old-location: display\dxgk_engine_type.htm
 old-project: display
 ms.assetid: D94EF91A-784D-4AA2-A43D-6A4AE88CF0A3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: DXGK_ENGINE_TYPE, DXGK_ENGINE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_ENGINE_TYPE
 ---
 
 # DXGK_ENGINE_TYPE enumeration
@@ -67,7 +68,7 @@ The engine does not match any of the other <a href="..\d3dkmdt\ne-d3dkmdt-dxgk_e
 
 ### -field DXGK_ENGINE_TYPE_3D
 
-The adapter's 3-D processing engine. All adapters that are not a <a href="display.kernel_mode_display-only_driver__kmdod__interface">display-only device</a> have one 3-D engine.
+The adapter's 3-D processing engine. All adapters that are not a <a href="https://msdn.microsoft.com/584E78DD-5D08-4A20-B59B-F35178F6595C">display-only device</a> have one 3-D engine.
 
 
 ### -field DXGK_ENGINE_TYPE_VIDEO_DECODE

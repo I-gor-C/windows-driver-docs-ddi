@@ -1,13 +1,13 @@
 ---
-UID: NF.wsk.WskQueryProviderCharacteristics
+UID: NF:wsk.WskQueryProviderCharacteristics
 title: WskQueryProviderCharacteristics function
 author: windows-driver-content
 description: The WskQueryProviderCharacteristics function queries the range of WSK NPI versions supported by the WSK subsystem.
 old-location: netvista\wskqueryprovidercharacteristics.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b8a81d7e-abab-4343-a044-ac9dd913c7f2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: WskQueryProviderCharacteristics
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Netio.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ NTSTATUS WskQueryProviderCharacteristics(
 ### -param WskRegistration [in]
 
 A pointer to the memory location initialized by 
-     <a href="netvista.wskregister">WskRegister</a> that identifies a WSK
+     <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> that identifies a WSK
      application's registration instance.
 
 
@@ -150,15 +151,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wsk_provider_characteristics">WSK_PROVIDER_CHARACTERISTICS</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_characteristics.md">WSK_PROVIDER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.wsk_registration">WSK_REGISTRATION</a>
+<a href="..\wsk\ns-wsk-_wsk_registration.md">WSK_REGISTRATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WskQueryProviderCharacteristics function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WskQueryProviderCharacteristics function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsFilterFactoryGetSymbolicLink
+UID: NF:ks.KsFilterFactoryGetSymbolicLink
 title: KsFilterFactoryGetSymbolicLink function
 author: windows-driver-content
 description: The KsFilterFactoryGetSymbolicLink function returns the symbolic link associated with a given filter factory.
@@ -7,7 +7,7 @@ old-location: stream\ksfilterfactorygetsymboliclink.htm
 old-project: stream
 ms.assetid: db657820-75b7-49fe-904d-05f8bc45b8c5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsFilterFactoryGetSymbolicLink
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsFilterFactoryGetSymbolicLink function
@@ -55,7 +56,7 @@ PUNICODE_STRING KsFilterFactoryGetSymbolicLink(
 
 ### -param FilterFactory [in]
 
-A pointer to a <a href="stream.ksfilterfactory">KSFILTERFACTORY</a> structure for which to acquire the symbolic link.
+A pointer to a <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> structure for which to acquire the symbolic link.
 
 
 ## -returns

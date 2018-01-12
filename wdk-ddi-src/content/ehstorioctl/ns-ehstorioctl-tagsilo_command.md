@@ -1,5 +1,5 @@
 ---
-UID: NS.EHSTORIOCTL.TAGSILO_COMMAND
+UID: NS:ehstorioctl.tagSILO_COMMAND
 title: tagSILO_COMMAND
 author: windows-driver-content
 description: This structure describes a storage silo driver command.
@@ -7,8 +7,8 @@ old-location: storage\silo_command.htm
 old-project: storage
 ms.assetid: 4d40ac4b-9aca-4be6-8d4f-db94c3daf4e8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: tagSILO_COMMAND, PSILO_COMMAND, SILO_COMMAND, *PSILO_COMMAND
+ms.date: 1/10/2018
+ms.keywords: tagSILO_COMMAND, SILO_COMMAND, *PSILO_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_COMMAND, *PSILO_COMMAND
 ---
 
 # tagSILO_COMMAND structure

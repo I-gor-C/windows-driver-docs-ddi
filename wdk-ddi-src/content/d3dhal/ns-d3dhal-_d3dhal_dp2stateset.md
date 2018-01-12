@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DHAL._D3DHAL_DP2STATESET
+UID: NS:d3dhal._D3DHAL_DP2STATESET
 title: _D3DHAL_DP2STATESET
 author: windows-driver-content
 description: The D3DHAL_DP2STATESET structure is used to inform the driver about stateset operations to perform.
@@ -7,8 +7,8 @@ old-location: display\d3dhal_dp2stateset.htm
 old-project: display
 ms.assetid: 3405cca6-8d65-4879-98e8-3cd8f66003a5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DHAL_DP2STATESET, D3DHAL_DP2STATESET
+ms.date: 12/29/2017
+ms.keywords: _D3DHAL_DP2STATESET, D3DHAL_DP2STATESET, *LPD3DHAL_DP2STATESET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DHAL_DP2STATESET
 ---
 
 # _D3DHAL_DP2STATESET structure

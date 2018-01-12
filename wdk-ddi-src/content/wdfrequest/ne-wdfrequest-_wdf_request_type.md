@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfrequest._WDF_REQUEST_TYPE
+UID: NE:wdfrequest._WDF_REQUEST_TYPE
 title: _WDF_REQUEST_TYPE
 author: windows-driver-content
 description: The WDF_REQUEST_TYPE enumeration type identifies types of requests that a framework request object might contain.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_request_type.htm
 old-project: wdf
 ms.assetid: 91c036a0-7fce-4c7d-a217-eb1c487a15d0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _WDF_REQUEST_TYPE, WDF_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: 
+req.irql: <=DISPATCH_LEVEL
+req.typenames: WDF_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -124,12 +125,12 @@ The request object represents an <a href="https://msdn.microsoft.com/library/win
 
 ### -field WdfRequestTypeQueryEA
 
-The request object represents an <a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a> request. The framework does not handle this type of request.
+The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a> request. The framework does not handle this type of request.
 
 
 ### -field WdfRequestTypeSetEA
 
-The request object represents an <a href="ifsk.irp_mj_set_ea">IRP_MJ_SET_EA</a> request. The framework does not handle this type of request.
+The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549346">IRP_MJ_SET_EA</a> request. The framework does not handle this type of request.
 
 
 ### -field WdfRequestTypeFlushBuffers
@@ -139,17 +140,17 @@ The request object represents an <a href="https://msdn.microsoft.com/library/win
 
 ### -field WdfRequestTypeQueryVolumeInformation
 
-The request object represents an <a href="ifsk.irp_mj_query_volume_information">IRP_MJ_QUERY_VOLUME_INFORMATION</a> request. The framework does not handle this type of request.
+The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549318">IRP_MJ_QUERY_VOLUME_INFORMATION</a> request. The framework does not handle this type of request.
 
 
 ### -field WdfRequestTypeSetVolumeInformation
 
-The request object represents an <a href="ifsk.irp_mj_set_volume_information">IRP_MJ_SET_VOLUME_INFORMATION</a> request. The framework does not handle this type of request.
+The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549415">IRP_MJ_SET_VOLUME_INFORMATION</a> request. The framework does not handle this type of request.
 
 
 ### -field WdfRequestTypeDirectoryControl
 
-The request object represents an <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a> request. The framework does not handle this type of request.
+The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a> request. The framework does not handle this type of request.
 
 
 ### -field WdfRequestTypeFileSystemControl
@@ -169,12 +170,12 @@ The request object represents an  <a href="https://msdn.microsoft.com/library/wi
 
 ### -field WdfRequestTypeShutdown
 
-The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549423">IRP_MJ_SHUTDOWN</a> request. The framework handles this type of request for the driver, but the framework also calls the driver's <a href="wdf.evtdeviceshutdownnotification">EvtDeviceShutdownNotification</a> callback function, if it exists.
+The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549423">IRP_MJ_SHUTDOWN</a> request. The framework handles this type of request for the driver, but the framework also calls the driver's <a href="https://msdn.microsoft.com/365e669b-b4a1-432a-ab0c-9292a910256e">EvtDeviceShutdownNotification</a> callback function, if it exists.
 
 
 ### -field WdfRequestTypeLockControl
 
-The request object represents an <a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a> request. The framework does not handle this type of request.
+The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a> request. The framework does not handle this type of request.
 
 
 ### -field WdfRequestTypeCleanup
@@ -189,12 +190,12 @@ The request object represents an <b>IRP_MJ_CREATE_MAILSLOT</b> request. The fram
 
 ### -field WdfRequestTypeQuerySecurity
 
-The request object represents an <a href="ifsk.irp_mj_query_security">IRP_MJ_QUERY_SECURITY</a> request. The framework does not handle this type of request.
+The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549298">IRP_MJ_QUERY_SECURITY</a> request. The framework does not handle this type of request.
 
 
 ### -field WdfRequestTypeSetSecurity
 
-The request object represents an <a href="ifsk.irp_mj_set_security">IRP_MJ_SET_SECURITY</a> request. The framework does not handle this type of request.
+The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549407">IRP_MJ_SET_SECURITY</a> request. The framework does not handle this type of request.
 
 
 ### -field WdfRequestTypePower
@@ -214,12 +215,12 @@ The request object represents an <b>IRP_MJ_DEVICE_CHANGE</b> request. The framew
 
 ### -field WdfRequestTypeQueryQuota
 
-The request object represents an <a href="ifsk.irp_mj_query_quota">IRP_MJ_QUERY_QUOTA</a> request. The framework does not handle this type of request.
+The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a> request. The framework does not handle this type of request.
 
 
 ### -field WdfRequestTypeSetQuota
 
-The request object represents an <a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a> request. The framework does not handle this type of request.
+The request object represents an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a> request. The framework does not handle this type of request.
 
 
 ### -field WdfRequestTypePnp
@@ -229,12 +230,12 @@ The request object represents an <a href="https://msdn.microsoft.com/library/win
 
 ### -field WdfRequestTypeOther
 
-A driver receives this request type in its <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> event callback function when requests formatted with <a href="wdf.wdfiotargetformatrequestforinternalioctlothers">WdfIoTargetFormatRequestForInternalIoctlOthers</a> are completed.
+A driver receives this request type in its <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> event callback function when requests formatted with <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetformatrequestforinternalioctlothers.md">WdfIoTargetFormatRequestForInternalIoctlOthers</a> are completed.
 
 
 ### -field WdfRequestTypeUsb
 
-The target device is a USB device. (This value is used only in <a href="wdf.wdf_request_completion_params">WDF_REQUEST_COMPLETION_PARAMS</a> structures.)
+The target device is a USB device. (This value is used only in <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a> structures.)
 
 
 ### -field WdfRequestTypeNoFormat
@@ -248,11 +249,11 @@ The maximum value that has been assigned to a valid IRP major function code.
 
 
 ## -remarks
-The <b>WDF_REQUEST_TYPE</b> enumeration type is used in the <a href="wdf.wdf_request_parameters">WDF_REQUEST_PARAMETERS</a> and <a href="wdf.wdf_request_completion_params">WDF_REQUEST_COMPLETION_PARAMS</a> structures.
+The <b>WDF_REQUEST_TYPE</b> enumeration type is used in the <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_parameters.md">WDF_REQUEST_PARAMETERS</a> and <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a> structures.
 
-For information about how a framework-based driver can handle request types that the framework does not support, see <a href="wdf.handling_an_irp_that_the_framework_does_not_support">Handling an IRP that the Framework Does Not Support</a>.
+For information about how a framework-based driver can handle request types that the framework does not support, see <a href="https://msdn.microsoft.com/0481f335-f63b-4f93-8eb4-523a70082302">Handling an IRP that the Framework Does Not Support</a>.
 
-For the UMDF version of this enumeration, see <a href="wdf.wdf_request_type__umdf_">WDF_REQUEST_TYPE (UMDF)</a>.
+For the UMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE (UMDF)</a>.
 
 
 ## -requirements
@@ -296,7 +297,7 @@ Header
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_file_create.md">EvtDeviceFileCreate</a>
 </dt>
 <dt>
-<a href="wdf.evtdeviceshutdownnotification">EvtDeviceShutdownNotification</a>
+<a href="https://msdn.microsoft.com/365e669b-b4a1-432a-ab0c-9292a910256e">EvtDeviceShutdownNotification</a>
 </dt>
 <dt>
 <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_cleanup.md">EvtFileCleanup</a>
@@ -309,5 +310,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_TYPE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_TYPE enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

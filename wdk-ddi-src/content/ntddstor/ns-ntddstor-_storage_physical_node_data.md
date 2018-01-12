@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._STORAGE_PHYSICAL_NODE_DATA
+UID: NS:ntddstor._STORAGE_PHYSICAL_NODE_DATA
 title: _STORAGE_PHYSICAL_NODE_DATA
 author: windows-driver-content
 description: Specifies the physical device data of a storage node.
@@ -7,8 +7,8 @@ old-location: storage\storage_physical_node_data.htm
 old-project: storage
 ms.assetid: F6C1EE86-FB1C-467D-9E03-B238CB132D1A
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_PHYSICAL_NODE_DATA, *PSTORAGE_PHYSICAL_NODE_DATA, PSTORAGE_PHYSICAL_NODE_DATA, STORAGE_PHYSICAL_NODE_DATA
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_PHYSICAL_NODE_DATA, *PSTORAGE_PHYSICAL_NODE_DATA, STORAGE_PHYSICAL_NODE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTORAGE_PHYSICAL_NODE_DATA, STORAGE_PHYSICAL_NODE_DATA
 ---
 
 # _STORAGE_PHYSICAL_NODE_DATA structure
@@ -77,7 +78,7 @@ The data length of the storage adapter in the storage node,  in units of kilobyt
 
 ### -field AdapterDataOffset
 
-The data offset from the beginning of the data structure. The buffer contains an array of <a href="storage.storage_physical_adapter_data">STORAGE_PHYSICAL_ADAPTER_DATA</a>.
+The data offset from the beginning of the data structure. The buffer contains an array of <a href="..\ntddstor\ns-ntddstor-_storage_physical_adapter_data.md">STORAGE_PHYSICAL_ADAPTER_DATA</a>.
 
 
 ### -field DeviceCount
@@ -92,7 +93,7 @@ The data length of the storage device in the storage node,  in units of kilobyte
 
 ### -field DeviceDataOffset
 
-The data offset from the beginning of the data structure. The buffer contains an array of <a href="storage.storage_physical_device_data">STORAGE_PHYSICAL_DEVICE_DATA</a>.
+The data offset from the beginning of the data structure. The buffer contains an array of <a href="..\ntddstor\ns-ntddstor-_storage_physical_device_data.md">STORAGE_PHYSICAL_DEVICE_DATA</a>.
 
 
 ### -field Reserved[3]

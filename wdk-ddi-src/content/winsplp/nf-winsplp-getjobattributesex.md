@@ -1,5 +1,5 @@
 ---
-UID: NF.winsplp.GetJobAttributesEx
+UID: NF:winsplp.GetJobAttributesEx
 title: GetJobAttributesEx function
 author: windows-driver-content
 description: Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated.
@@ -7,7 +7,7 @@ old-location: print\getjobattributesex.htm
 old-project: print
 ms.assetid: 0715e4d4-665c-42cb-9c74-48c2c558c277
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: GetJobAttributesEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Spoolss.lib
 req.dll: Spoolss.dll
 req.irql: 
+req.typenames: NOTIFICATION_CONFIG_FLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ Caller-supplied pointer to a NULL-terminated Unicode string that contains the pr
 
 ### -param pDevmode [in]
 
-Caller-supplied pointer to a <a href="display.devmodew">DEVMODEW</a> structure that is passed to the print processor or printer driver.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure that is passed to the print processor or printer driver.
 
 
 ### -param dwLevel [in]
@@ -82,7 +83,7 @@ Caller-supplied value that indicates the type of structure pointed to by <i>pAtt
 </td>
 <td>
 
-<a href="print.attribute_info_1">ATTRIBUTE_INFO_1</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_1.md">ATTRIBUTE_INFO_1</a>
 
 
 </td>
@@ -94,7 +95,7 @@ Caller-supplied value that indicates the type of structure pointed to by <i>pAtt
 </td>
 <td>
 
-<a href="print.attribute_info_2">ATTRIBUTE_INFO_2</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>
 
 
 </td>
@@ -106,7 +107,7 @@ Caller-supplied value that indicates the type of structure pointed to by <i>pAtt
 </td>
 <td>
 
-<a href="print.attribute_info_3">ATTRIBUTE_INFO_3</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>
 
 
 </td>
@@ -118,7 +119,7 @@ Caller-supplied value that indicates the type of structure pointed to by <i>pAtt
 </td>
 <td>
 
-<a href="print.attribute_info_4">ATTRIBUTE_INFO_4</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
 
 
 </td>
@@ -129,7 +130,7 @@ Caller-supplied value that indicates the type of structure pointed to by <i>pAtt
 
 ### -param pAttributeInfo [out]
 
-Caller-supplied pointer to an attribute information structure (<a href="print.attribute_info_1">ATTRIBUTE_INFO_1</a>, <a href="print.attribute_info_2">ATTRIBUTE_INFO_2</a>, <a href="print.attribute_info_3">ATTRIBUTE_INFO_3</a>, or <a href="print.attribute_info_4">ATTRIBUTE_INFO_4</a>) that receives information about the print job.
+Caller-supplied pointer to an attribute information structure (<a href="..\winddiui\ns-winddiui-_attribute_info_1.md">ATTRIBUTE_INFO_1</a>, <a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>, <a href="..\winddiui\ns-winddiui-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>, or <a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>) that receives information about the print job.
 
 
 ### -param nSize [in]
@@ -141,7 +142,7 @@ Size of the buffer, in bytes, pointed to by <i>pAttributeInfo</i>.
 
 If set by the caller to FILL_WITH_DEFAULTS, then the spooler will fill <i>pAttributeInfo</i> with default values from level 1 up to the level specified by <i>dwLevel</i>.
 
-For example, if <i>dwLevel</i> is 4 and FILL_WITH_DEFAULTS is specified, <i>pAttributeInfo</i> will be filled with the following default member values of <a href="print.attribute_info_4">ATTRIBUTE_INFO_4</a>:
+For example, if <i>dwLevel</i> is 4 and FILL_WITH_DEFAULTS is specified, <i>pAttributeInfo</i> will be filled with the following default member values of <a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>:
 
 <b>dwJobNumberOfPagesPerSide</b> = 1
 
@@ -153,7 +154,7 @@ For example, if <i>dwLevel</i> is 4 and FILL_WITH_DEFAULTS is specified, <i>pAtt
 
 <b>dwDrvPageOrderFlags</b> = 0
 
-<b>dwJobNumberOfCopies</b> = <b>dmCopies</b> member of <a href="display.devmodew">DEVMODEW</a>
+<b>dwJobNumberOfCopies</b> = <b>dmCopies</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a>
 
 
 <b>dwDrvNumberOfCopies</b>  = <b>dmCopies</b> member of DEVMODEW
@@ -248,21 +249,21 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="print.attribute_info_3">ATTRIBUTE_INFO_3</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>
 </dt>
 <dt>
-<a href="print.attribute_info_4">ATTRIBUTE_INFO_4</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
 </dt>
 <dt>
-<a href="display.devmodew">DEVMODEW</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a>
 </dt>
 <dt>
-<a href="print.getjobattributes">GetJobAttributes</a>
+<a href="..\winsplp\nf-winsplp-getjobattributes.md">GetJobAttributes</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GetJobAttributesEx function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GetJobAttributesEx function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

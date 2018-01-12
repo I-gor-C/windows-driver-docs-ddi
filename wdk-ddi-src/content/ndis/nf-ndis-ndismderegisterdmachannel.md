@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMDeregisterDmaChannel
+UID: NF:ndis.NdisMDeregisterDmaChannel
 title: NdisMDeregisterDmaChannel function
 author: windows-driver-content
 description: The NdisMDeregisterDmaChannel function releases a miniport driver's claim on a DMA channel for a NIC.
 old-location: netvista\ndismderegisterdmachannel.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1581cbfd-bdab-40ed-9978-f60ec220c17a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMDeregisterDmaChannel
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMDeregisterDmaChannel function
@@ -58,7 +59,7 @@ VOID NdisMDeregisterDmaChannel(
 ### -param MiniportDmaHandle [in]
 
 The DMA handle returned by the 
-     <a href="netvista.ndismregisterdmachannel">
+     <a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">
      NdisMRegisterDmaChannel</a> function.
 
 
@@ -142,7 +143,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -156,12 +157,12 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterdmachannel">NdisMRegisterDmaChannel</a>
+<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMDeregisterDmaChannel function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMDeregisterDmaChannel function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

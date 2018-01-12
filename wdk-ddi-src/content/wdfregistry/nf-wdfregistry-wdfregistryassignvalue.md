@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfregistry.WdfRegistryAssignValue
+UID: NF:wdfregistry.WdfRegistryAssignValue
 title: WdfRegistryAssignValue function
 author: windows-driver-content
 description: The WdfRegistryAssignValue method assigns specified data to a specified value name in the registry.
@@ -7,7 +7,7 @@ old-location: wdf\wdfregistryassignvalue.htm
 old-project: wdf
 ms.assetid: 3c7592ad-f4ed-496f-90bb-638f68efe4f7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfRegistryAssignValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -67,12 +68,12 @@ A handle to a registry-key object that represents an opened registry key.
 
 ### -param ValueName [in]
 
-A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains a value name. 
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a value name. 
 
 
 ### -param ValueType [in]
 
-A value that identifies the data type. For a list of data type values, see the <b>Type</b> member of <a href="kernel.key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>.
+A value that identifies the data type. For a list of data type values, see the <b>Type</b> member of <a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>.
 
 
 ### -param ValueLength [in]
@@ -90,7 +91,7 @@ A pointer to a buffer that contains driver-supplied data.
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl>
-<a href="wdf.wdfregistryassignvalue">WdfRegistryAssignValue</a> was not called at IRQL = PASSIVE_LEVEL. 
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignvalue.md">WdfRegistryAssignValue</a> was not called at IRQL = PASSIVE_LEVEL. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl>An invalid parameter was specified.
@@ -187,7 +188,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -195,30 +196,30 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_key_value_basic_information.md">KEY_VALUE_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryassignmemory">WdfRegistryAssignMemory</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignmemory.md">WdfRegistryAssignMemory</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryassignmultistring">WdfRegistryAssignMultiString</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignmultistring.md">WdfRegistryAssignMultiString</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryassignstring">WdfRegistryAssignString</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignstring.md">WdfRegistryAssignString</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryassignunicodestring">WdfRegistryAssignUnicodeString</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignunicodestring.md">WdfRegistryAssignUnicodeString</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryassignulong">WdfRegistryAssignULong</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryassignulong.md">WdfRegistryAssignULong</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryAssignValue method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryAssignValue method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

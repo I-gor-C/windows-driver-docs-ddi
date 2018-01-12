@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.CcCopyReadEx
+UID: NF:ntifs.CcCopyReadEx
 title: CcCopyReadEx function
 author: windows-driver-content
 description: The CcCopyReadEx routine copies data from a cached file to a user buffer. The I/O byte count for the operation is charged to the issuing thread.
@@ -7,7 +7,7 @@ old-location: ifsk\cccopyreadex.htm
 old-project: ifsk
 ms.assetid: 4108EB7A-F8FB-4FA5-8426-BB434E89AF06
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: CcCopyReadEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # CcCopyReadEx function
@@ -107,7 +108,7 @@ If <i>Wait</i> is <b>FALSE</b>, <b>CcCopyReadEx</b> will refuse to block, and wi
 
 If any failure occurs, <b>CcCopyReadEx</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcCopyReadEx</b> raises an exception with the <b>STATUS_INSUFFICIENT_RESOURCES</b> status; if an I/O error occurs, <b>CcCopyReadEx</b> raises the status exception of the I/O error. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcCopyReadEx</b> in a <b>try-except</b> or <b>try-finally</b> statement.
 
-To cache a file, use <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>.
+To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
 
 
 ## -requirements
@@ -181,27 +182,27 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ccfastcopyread">CcFastCopyRead</a>
+<a href="..\ntifs\nf-ntifs-ccfastcopyread.md">CcFastCopyRead</a>
 </dt>
 <dt>
-<a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
 </dt>
 <dt>
-<a href="ifsk.ccschedulereadahead">CcScheduleReadAhead</a>
+<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
 </dt>
 <dt>
-<a href="ifsk.ccsetadditionalcacheattributes">CcSetAdditionalCacheAttributes</a>
+<a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
 </dt>
 <dt>
-<a href="ifsk.ccsetreadaheadgranularity">CcSetReadAheadGranularity</a>
+<a href="..\ntifs\nf-ntifs-ccsetreadaheadgranularity.md">CcSetReadAheadGranularity</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcCopyReadEx routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcCopyReadEx routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

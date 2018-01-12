@@ -1,13 +1,13 @@
 ---
-UID: NE.fwpsk.FWPS_PACKET_INJECTION_STATE_
+UID: NE:fwpsk.FWPS_PACKET_INJECTION_STATE_
 title: FWPS_PACKET_INJECTION_STATE_
 author: windows-driver-content
 description: The FWPS_PACKET_INJECTION_STATE enumeration type specifies the injection state of a network buffer list.
 old-location: netvista\fwps_packet_injection_state.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0fc60bae-2191-4e19-85c5-ed06f09225f0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FWPS_PACKET_INJECTION_STATE_, FWPS_PACKET_INJECTION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_PACKET_INJECTION_STATE
 ---
 
 # FWPS_PACKET_INJECTION_STATE_ enumeration
@@ -61,28 +62,28 @@ typedef enum FWPS_PACKET_INJECTION_STATE_ {
 ### -field FWPS_PACKET_NOT_INJECTED
 
 The packet was not injected by any of the 
-     <a href="netvista.packet_injection_functions">packet injection functions</a>. A
+     <a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">packet injection functions</a>. A
      packet that originated from the TCP/IP stack will be at this state.
 
 
 ### -field FWPS_PACKET_INJECTED_BY_SELF
 
 The packet was injected using an injection handle passed by a call to one of the 
-     <a href="netvista.packet_injection_functions">packet injection functions</a>.
+     <a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">packet injection functions</a>.
 
 
 ### -field FWPS_PACKET_INJECTED_BY_OTHER
 
 The packet was injected using an injection handle other than one passed by a call
      to one of the 
-     <a href="netvista.packet_injection_functions">packet injection functions</a>.
+     <a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">packet injection functions</a>.
 
 
 ### -field FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF
 
 The packet was injected by using an injection handle passed by a call to one of the
      
-     <a href="netvista.packet_injection_functions">packet injection functions</a>, but
+     <a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">packet injection functions</a>, but
      the packet was later cloned and reinjected by an additional call to a packet injection function,
      possibly using a different injection handle.
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.PRNTFONT._INVOC
+UID: NS:prntfont._INVOC
 title: _INVOC
 author: windows-driver-content
 description: The INVOC structure is used for describing printer command strings in Unidrv font metrics files (.ufm files) and glyph translation table files (.gtt files).
@@ -7,8 +7,8 @@ old-location: print\invoc.htm
 old-project: print
 ms.assetid: 5eeaa7f7-dc99-4cf7-846c-801954cc9040
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _INVOC, PINVOC, *PINVOC, INVOC
+ms.date: 1/8/2018
+ms.keywords: _INVOC, INVOC, *PINVOC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: INVOC, *PINVOC
 req.product: Windows 10 or later.
 ---
 
@@ -69,18 +70,18 @@ Indicates one of the following:
 
 ### -field For .ufm files:
 
-Specifies the byte offset from the beginning of the .ufm file's <a href="print.unidrvinfo">UNIDRVINFO</a> structure to beginning of the command string.
+Specifies the byte offset from the beginning of the .ufm file's <a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a> structure to beginning of the command string.
 
 
 ### -field For .gtt files:
 
-Specifies the byte offset from the beginning of the .gtt file's <a href="print.uni_codepageinfo">UNI_CODEPAGEINFO</a> structure to beginning of the command string.
+Specifies the byte offset from the beginning of the .gtt file's <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a> structure to beginning of the command string.
 
 </dd>
 </dl>
 
 ## -remarks
-INVOC structures are used within <a href="print.unidrvinfo">UNIDRVINFO</a> structures.
+INVOC structures are used within <a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a> structures.
 
 
 ## -requirements
@@ -101,12 +102,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.unidrvinfo">UNIDRVINFO</a>
+<a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20INVOC structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20INVOC structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

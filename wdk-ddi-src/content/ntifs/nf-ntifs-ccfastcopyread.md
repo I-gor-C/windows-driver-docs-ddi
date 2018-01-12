@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.CcFastCopyRead
+UID: NF:ntifs.CcFastCopyRead
 title: CcFastCopyRead function
 author: windows-driver-content
 description: The CcFastCopyRead routine performs a fast copy read from a cached file to a buffer in memory.
@@ -7,7 +7,7 @@ old-location: ifsk\ccfastcopyread.htm
 old-project: ifsk
 ms.assetid: 725ede16-5fc6-4465-bcdc-da7702779d68
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: CcFastCopyRead
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: < DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # CcFastCopyRead function
@@ -93,7 +94,7 @@ None
 
 
 ## -remarks
-<b>CcFastCopyRead</b> is a faster version of <a href="ifsk.cccopyread">CcCopyRead</a>. It differs from <b>CcCopyRead</b> in the following respects:
+<b>CcFastCopyRead</b> is a faster version of <a href="..\ntifs\nf-ntifs-cccopyread.md">CcCopyRead</a>. It differs from <b>CcCopyRead</b> in the following respects:
 
 <i>FileOffset</i> is a ULONG, not a PLARGE_INTEGER.
 
@@ -105,7 +106,7 @@ There is no <i>Wait</i> parameter. The caller must be able to enter a wait state
 
 If any failure occurs, <b>CcFastCopyRead</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcFastCopyRead</b> raises a STATUS_INSUFFICIENT_RESOURCES exception; if an I/O error occurs, <b>CcFastCopyRead</b> raises the status exception of the I/O error. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcFastCopyRead</b> in a <b>try-except</b> or <b>try-finally</b> statement.
 
-To cache a file, use <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>.
+To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
 
 
 ## -requirements
@@ -169,27 +170,27 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.cccopyread">CcCopyRead</a>
+<a href="..\ntifs\nf-ntifs-cccopyread.md">CcCopyRead</a>
 </dt>
 <dt>
-<a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
 </dt>
 <dt>
-<a href="ifsk.ccschedulereadahead">CcScheduleReadAhead</a>
+<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
 </dt>
 <dt>
-<a href="ifsk.ccsetadditionalcacheattributes">CcSetAdditionalCacheAttributes</a>
+<a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
 </dt>
 <dt>
-<a href="ifsk.ccsetreadaheadgranularity">CcSetReadAheadGranularity</a>
+<a href="..\ntifs\nf-ntifs-ccsetreadaheadgranularity.md">CcSetReadAheadGranularity</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcFastCopyRead routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcFastCopyRead routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

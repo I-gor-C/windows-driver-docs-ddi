@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RIL3GPP2TONE
+UID: NE:ntddrilapitypes.RIL3GPP2TONE
 title: RIL3GPP2TONE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril3gpp2tone.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bf19de84-1c2d-4e9b-8061-888634dc2147
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RIL3GPP2TONE, RIL3GPP2TONE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RIL3GPP2TONE
 ---
 
 # RIL3GPP2TONE enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NS.WINDDIUI._DOCEVENT_FILTER
+UID: NS:winddiui._DOCEVENT_FILTER
 title: _DOCEVENT_FILTER
 author: windows-driver-content
 description: The DOCEVENT_FILTER structure contains a list of document events to which the printer driver will respond. See DrvDocumentEvent for a complete list of the document events.
@@ -7,8 +7,8 @@ old-location: print\docevent_filter.htm
 old-project: print
 ms.assetid: f486efdb-79fd-4c57-bff6-75a0dbd68cc0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOCEVENT_FILTER, DOCEVENT_FILTER, *PDOCEVENT_FILTER, PDOCEVENT_FILTER
+ms.date: 1/8/2018
+ms.keywords: _DOCEVENT_FILTER, DOCEVENT_FILTER, *PDOCEVENT_FILTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOCEVENT_FILTER, *PDOCEVENT_FILTER
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The DOCEVENT_FILTER structure contains a list of document events to which the printer driver will respond. See <a href="print.drvdocumentevent">DrvDocumentEvent</a> for a complete list of the document events.
+The DOCEVENT_FILTER structure contains a list of document events to which the printer driver will respond. See <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a> for a complete list of the document events.
 
 
 
@@ -86,7 +87,7 @@ Driver-filled array of DWORDs listing all of the DOCUMENTEVENT_<i>XXX</i> events
 ## -remarks
 The DOCEVENT_FILTER structure is defined for Windows XP and later.
 
-The printer driver lists the events to which it will respond in the DOCEVENT_FILTER structure. Because this limits the number of calls to the driver the spooler needs to make, printer performance is enhanced. When the spooler makes a call to the <a href="print.drvdocumentevent">DrvDocumentEvent</a> DDI with its <i>iEsc</i> parameter set to DOCUMENTEVENT_QUERYFILTER, the spooler allocates a buffer that contains a DOCEVENT_FILTER structure, including its <b>aDocEventCall</b> array. The amount of memory allocated for the buffer is: 
+The printer driver lists the events to which it will respond in the DOCEVENT_FILTER structure. Because this limits the number of calls to the driver the spooler needs to make, printer performance is enhanced. When the spooler makes a call to the <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a> DDI with its <i>iEsc</i> parameter set to DOCUMENTEVENT_QUERYFILTER, the spooler allocates a buffer that contains a DOCEVENT_FILTER structure, including its <b>aDocEventCall</b> array. The amount of memory allocated for the buffer is: 
 
 After allocating a buffer that contains a DOCEVENT_FILTER structure, the spooler initializes the structure members to the following values: 
 
@@ -108,7 +109,7 @@ The DOCUMENTEVENT_LAST constant is defined in winddiui.h.
 
 <b>aDocEventCall</b>
 
-After the spooler has initialized the structure members to the values shown in the preceding table, it then calls <a href="print.drvdocumentevent">DrvDocumentEvent</a>. When this function returns, the spooler inspects the <b>cElementsNeeded</b> and <b>cElementsReturned</b> members to see if either has been changed. If the driver has written to one of these members, but not the other, the spooler interprets the unwritten-to member as having the value 0.
+After the spooler has initialized the structure members to the values shown in the preceding table, it then calls <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a>. When this function returns, the spooler inspects the <b>cElementsNeeded</b> and <b>cElementsReturned</b> members to see if either has been changed. If the driver has written to one of these members, but not the other, the spooler interprets the unwritten-to member as having the value 0.
 
 If the driver supports DOCUMENTEVENT_QUERYFILTER:
 
@@ -121,9 +122,9 @@ If the <b>aDocEventCall</b> array is not large enough to contain all of the DOCU
 </ul>
 
 
-In this case, the spooler then allocates a new buffer that is sufficiently large, and then makes another call to <a href="print.drvdocumentevent">DrvDocumentEvent</a> with DOCUMENTEVENT_QUERYFILTER.
+In this case, the spooler then allocates a new buffer that is sufficiently large, and then makes another call to <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a> with DOCUMENTEVENT_QUERYFILTER.
 
-If the driver does not support the DOCUMENTEVENT_QUERYFILTER event, it should return DOCUMENTEVENT_UNSUPPORTED. If the driver does support DOCUMENTEVENT_QUERYFILTER, but encounters internal errors when it handles this event, it should return DOCUMENTEVENT_FAILURE. In either case, the spooler is not able to retrieve the event filter from the driver, so it continues in its behavior of calling <a href="print.drvdocumentevent">DrvDocumentEvent</a> for all events.
+If the driver does not support the DOCUMENTEVENT_QUERYFILTER event, it should return DOCUMENTEVENT_UNSUPPORTED. If the driver does support DOCUMENTEVENT_QUERYFILTER, but encounters internal errors when it handles this event, it should return DOCUMENTEVENT_FAILURE. In either case, the spooler is not able to retrieve the event filter from the driver, so it continues in its behavior of calling <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a> for all events.
 
 
 ## -requirements
@@ -144,12 +145,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.drvdocumentevent">DrvDocumentEvent</a>
+<a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DOCEVENT_FILTER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DOCEVENT_FILTER structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NC.dot11wdi.MINIPORT_WDI_START_ADAPTER_OPERATION
+UID: NC:dot11wdi.MINIPORT_WDI_START_ADAPTER_OPERATION
 title: MINIPORT_WDI_START_ADAPTER_OPERATION
 author: windows-driver-content
 description: The MiniportWdiStartAdapterOperation handler function can be used by the IHV driver to perform any additional MiniportInitializeEx tasks.
 old-location: netvista\miniportwdistartoperation.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: B74F44E4-AD7A-46EE-81B0-E2BD2FB79A5B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS, PSYNTH_STATS
+ms.date: 1/8/2018
+ms.keywords: _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 # MINIPORT_WDI_START_ADAPTER_OPERATION callback
@@ -40,7 +41,7 @@ req.irql:
 ## -description
 The MiniportWdiStartAdapterOperation handler function can be used by the IHV driver to perform any additional <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> tasks. The IHV miniport can also use it as a hint that the Microsoft component has finished initializing the miniport and the miniport can start any needed background activities.
 
-This is an optional WDI miniport handler inside <a href="netvista.ndis_miniport_driver_wdi_characteristics">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>.
+This is an optional WDI miniport handler inside <a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>.
 
 
 
@@ -131,12 +132,12 @@ Header
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_driver_wdi_characteristics">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics.md">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_WDI_START_ADAPTER_OPERATION callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_WDI_START_ADAPTER_OPERATION callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

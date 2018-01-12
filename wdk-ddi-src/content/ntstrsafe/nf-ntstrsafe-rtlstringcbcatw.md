@@ -1,5 +1,5 @@
 ---
-UID: NF.ntstrsafe.RtlStringCbCatW
+UID: NF:ntstrsafe.RtlStringCbCatW
 title: RtlStringCbCatW function
 author: windows-driver-content
 description: The RtlStringCbCatW and RtlStringCbCatA functions concatenate two byte-counted strings.
@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcbcat.htm
 old-project: kernel
 ms.assetid: 1034384f-6295-42ca-bf78-47c383417500
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlStringCbCatW
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntstrsafe.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE
 ---
 
 # RtlStringCbCatW function
@@ -116,7 +117,7 @@ L"string"
 
 If <i>pszSrc</i> and <i>pszDest</i> point to strings that overlap, the behavior of the functions is undefined.
 
-Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="kernel.rtlstringcbcatnex">RtlStringCbCatNEx</a>.
+Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnexw.md">RtlStringCbCatNEx</a>.
 
 For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.
 
@@ -191,18 +192,18 @@ Unicode and ANSI names
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlstringcbcatex">RtlStringCbCatEx</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatexw.md">RtlStringCbCatEx</a>
 </dt>
 <dt>
-<a href="kernel.rtlstringcchcatex">RtlStringCchCatEx</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatexw.md">RtlStringCchCatEx</a>
 </dt>
 <dt>
-<a href="kernel.rtlstringcbcatnex">RtlStringCbCatNEx</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnexw.md">RtlStringCbCatNEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCbCatW function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCbCatW function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

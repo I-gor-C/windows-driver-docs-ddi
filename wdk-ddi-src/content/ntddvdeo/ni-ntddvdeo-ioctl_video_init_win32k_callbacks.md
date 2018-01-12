@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddvdeo.IOCTL_VIDEO_INIT_WIN32K_CALLBACKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_INIT_WIN32K_CALLBACKS
 title: IOCTL_VIDEO_INIT_WIN32K_CALLBACKS
 author: windows-driver-content
 description: This IOCTL is for internal use only.
@@ -7,8 +7,8 @@ old-location: display\ioctl_video_init_win32k_callbacks.htm
 old-project: display
 ms.assetid: 1b003614-e80c-459d-a315-0dfdabcec5cc
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS, PTAPE_WRITE_MARKS
+ms.date: 12/29/2017
+ms.keywords: _TAPE_WRITE_MARKS, TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_INIT_WIN32K_CALLBACKS IOCTL

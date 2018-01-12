@@ -1,5 +1,5 @@
 ---
-UID: NC.dispmprt.DXGKDDI_OPM_GET_CERTIFICATE
+UID: NC:dispmprt.DXGKDDI_OPM_GET_CERTIFICATE
 title: DXGKDDI_OPM_GET_CERTIFICATE
 author: windows-driver-content
 description: The DxgkDdiOPMGetCertificate function retrieves a certificate of the given type and size.
@@ -7,8 +7,8 @@ old-location: display\dxgkddiopmgetcertificate.htm
 old-project: display
 ms.assetid: 3c055598-5f07-46e1-830d-1df9a459f742
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ---
 
 # DXGKDDI_OPM_GET_CERTIFICATE callback
@@ -66,7 +67,7 @@ A handle to a context block associated with a display adapter. Previously, the d
 
 ### -param CertificateType [in]
 
-A <a href="display.dxgkmdt_certificate_type">DXGKMDT_CERTIFICATE_TYPE</a>-typed value that identifies the type of certificate to retrieve.
+A <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_certificate_type.md">DXGKMDT_CERTIFICATE_TYPE</a>-typed value that identifies the type of certificate to retrieve.
 
 
 ### -param CertificateSize [in]
@@ -153,12 +154,12 @@ PASSIVE_LEVEL (see Remarks section)
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_certificate_size.md">DxgkDdiOPMGetCertificateSize</a>
 </dt>
 <dt>
-<a href="display.dxgkmdt_certificate_type">DXGKMDT_CERTIFICATE_TYPE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_certificate_type.md">DXGKMDT_CERTIFICATE_TYPE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_OPM_GET_CERTIFICATE callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_OPM_GET_CERTIFICATE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

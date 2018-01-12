@@ -1,13 +1,13 @@
 ---
-UID: NF.usbdlib.USBD_CalculateUsbBandwidth
+UID: NF:usbdlib.USBD_CalculateUsbBandwidth
 title: USBD_CalculateUsbBandwidth function
 author: windows-driver-content
 description: The USBD_CalculateUsbBandwidth routine has been deprecated in Windows XP and later operating systems. Do not use.
 old-location: buses\usbd_calculateusbbandwidth.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: a54f3fb4-032a-4538-8b6d-20d6834d08c4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: USBD_CalculateUsbBandwidth
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Usbd.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ Specifies the maximum packet size.
 
 ### -param EndpointType [in]
 
-Contains a value of type <a href="buses.usbd_pipe_type">USBD_PIPE_TYPE</a> that specifies the pipe type.
+Contains a value of type <a href="..\usb\ne-usb-_usbd_pipe_type.md">USBD_PIPE_TYPE</a> that specifies the pipe type.
 
 
 ### -param LowSpeed [in]
@@ -139,7 +140,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbd_pipe_type">USBD_PIPE_TYPE</a>
+<a href="..\usb\ne-usb-_usbd_pipe_type.md">USBD_PIPE_TYPE</a>
 </dt>
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 </dl>
@@ -147,5 +148,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20USBD_CalculateUsbBandwidth routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_CalculateUsbBandwidth routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

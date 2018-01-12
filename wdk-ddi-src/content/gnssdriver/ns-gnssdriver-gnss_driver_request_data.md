@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_DRIVER_REQUEST_DATA
+UID: NS:gnssdriver.GNSS_DRIVER_REQUEST_DATA
 title: GNSS_DRIVER_REQUEST_DATA
 author: windows-driver-content
 description: This structure contains driver data request information.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_DRIVER_REQUEST_DATA
 ---
 
 # GNSS_DRIVER_REQUEST_DATA structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.STORPORT._STOR_CRYPTO_OPERATION_INSERT_KEY
+UID: NS:storport._STOR_CRYPTO_OPERATION_INSERT_KEY
 title: _STOR_CRYPTO_OPERATION_INSERT_KEY
 author: windows-driver-content
 description: Reserved for system use.
@@ -7,8 +7,8 @@ old-location: storage\stor_crypto_operation_insert_key.htm
 old-project: storage
 ms.assetid: C2E466F6-71E6-4A17-B625-291D9B91F4FF
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STOR_CRYPTO_OPERATION_INSERT_KEY, PSTOR_CRYPTO_OPERATION_INSERT_KEY, *PSTOR_CRYPTO_OPERATION_INSERT_KEY, STOR_CRYPTO_OPERATION_INSERT_KEY
+ms.date: 1/10/2018
+ms.keywords: _STOR_CRYPTO_OPERATION_INSERT_KEY, *PSTOR_CRYPTO_OPERATION_INSERT_KEY, STOR_CRYPTO_OPERATION_INSERT_KEY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTOR_CRYPTO_OPERATION_INSERT_KEY, STOR_CRYPTO_OPERATION_INSERT_KEY
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.DMUSPROP._SYNTH_PORTPARAMS
+UID: NS:dmusprop._SYNTH_PORTPARAMS
 title: _SYNTH_PORTPARAMS
 author: windows-driver-content
 description: The SYNTH_PORTPARAMS structure contains the configuration parameters for a DirectMusic port, which is a DirectMusic term for a device that sends or receives music data.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 94c953ae-519b-4659-a4c9-a97db7dc31e9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SYNTH_PORTPARAMS, PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS
+ms.keywords: _SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS
 ---
 
 # _SYNTH_PORTPARAMS structure

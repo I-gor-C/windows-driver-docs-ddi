@@ -1,5 +1,5 @@
 ---
-UID: NI.winbio_ioctl.IOCTL_BIOMETRIC_GET_ATTRIBUTES
+UID: NI:winbio_ioctl.IOCTL_BIOMETRIC_GET_ATTRIBUTES
 title: IOCTL_BIOMETRIC_GET_ATTRIBUTES
 author: windows-driver-content
 description: The IOCTL_BIOMETRIC_GET_ATTRIBUTES IOCTL returns a structure that contains a set of attributes for the sensor. Vendor-supplied WBDI drivers must support this IOCTL.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBMP_IMAGE_INFO, BMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -54,7 +55,7 @@ None.
 
 
 ### -output-buffer
-The <b>AssociatedIrp</b>.<b>SystemBuffer</b> member points to a buffer that contains a <a href="biometric.winbio_sensor_attributes">WINBIO_SENSOR_ATTRIBUTES</a> structure.
+The <b>AssociatedIrp</b>.<b>SystemBuffer</b> member points to a buffer that contains a <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_sensor_attributes.md">WINBIO_SENSOR_ATTRIBUTES</a> structure.
 
 
 ### -output-buffer-length
@@ -99,7 +100,7 @@ Any other failure that prevents the payload from being filled in.
 
 
 ## -remarks
-If the vendor-supplied driver passes back the entire payload, it should fill in the <b>WinBioHresult</b> member of <a href="biometric.winbio_sensor_attributes">WINBIO_SENSOR_ATTRIBUTES</a> with an HRESULT value indicating the status of the biometric operation.
+If the vendor-supplied driver passes back the entire payload, it should fill in the <b>WinBioHresult</b> member of <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_sensor_attributes.md">WINBIO_SENSOR_ATTRIBUTES</a> with an HRESULT value indicating the status of the biometric operation.
 
 
 ## -requirements

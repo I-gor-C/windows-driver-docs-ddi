@@ -1,5 +1,5 @@
 ---
-UID: NF.hbaapi.HBA_ScsiReportLUNsV2
+UID: NF:hbaapi.HBA_ScsiReportLUNsV2
 title: HBA_ScsiReportLUNsV2 function
 author: windows-driver-content
 description: The HBA_ScsiReportLUNsV2 routine sends a SCSI report LUNs command to the indicated remote port.
@@ -7,7 +7,7 @@ old-location: storage\hba_scsireportlunsv2.htm
 old-project: storage
 ms.assetid: 6a4dfb93-4044-4a7a-a993-38c91f84cae2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: HBA_ScsiReportLUNsV2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hbaapi.lib
 req.dll: Hbaapi.dll
 req.irql: 
+req.typenames: HBA_WWNTYPE
 ---
 
 # HBA_ScsiReportLUNsV2 function
@@ -62,7 +63,7 @@ HBA_STATUS HBA_API HBA_ScsiReportLUNsV2(
 
 ### -param HbaHandle [in]
 
-Contains a value returned by the routine <a href="storage.hba_openadapter">HBA_OpenAdapter</a> that identifies the HBA through which the SCSI report LUNs command is sent.
+Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a> that identifies the HBA through which the SCSI report LUNs command is sent.
 
 
 ### -param HbaPortWWN [in]
@@ -101,7 +102,7 @@ On input, indicates the size, in bytes, of the buffer at <i>pSenseBuffer</i>. On
 
 
 ## -returns
-The <b>HBA_ScsiReportLUNsV2</b> routine returns a value of type <a href="storage.hba_status">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_ScsiReportLUNsV2</b> returns one of the following values.
+The <b>HBA_ScsiReportLUNsV2</b> routine returns a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a> that indicates the status of the HBA. In particular, <b>HBA_ScsiReportLUNsV2</b> returns one of the following values.
 <dl>
 <dt><b>HBA_STATUS_OK</b></dt>
 </dl>Returned if the complete payload of a reply to the SCSI report LUNs command was successfully retrieved. 
@@ -178,15 +179,15 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hba_openadapter">HBA_OpenAdapter</a>
+<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
 </dt>
 <dt>
-<a href="storage.hba_status">HBA_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_ScsiReportLUNsV2 routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20HBA_ScsiReportLUNsV2 routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

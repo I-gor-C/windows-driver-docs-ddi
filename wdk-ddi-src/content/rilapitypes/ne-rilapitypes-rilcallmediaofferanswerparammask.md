@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILCALLMEDIAOFFERANSWERPARAMMASK
+UID: NE:rilapitypes.RILCALLMEDIAOFFERANSWERPARAMMASK
 title: RILCALLMEDIAOFFERANSWERPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmediaofferanswerparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2dd7a85e-b284-42be-89d4-a4a7361d5c6d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILCALLMEDIAOFFERANSWERPARAMMASK, RILCALLMEDIAOFFERANSWERPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLMEDIAOFFERANSWERPARAMMASK
 req.product: Windows 10 or later.
 ---
 

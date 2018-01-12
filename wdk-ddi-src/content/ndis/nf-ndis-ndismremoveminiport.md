@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMRemoveMiniport
+UID: NF:ndis.NdisMRemoveMiniport
 title: NdisMRemoveMiniport function
 author: windows-driver-content
 description: The NdisMRemoveMiniport function removes the specified miniport driver adapter that the miniport driver has determined is unrecoverable from the system.
 old-location: netvista\ndismremoveminiport.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 70745b03-f9a3-4398-b41a-dc75bd16ffe0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMRemoveMiniport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMRemoveMiniport function
@@ -147,7 +148,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>
 </td>
 </tr>
 </table>

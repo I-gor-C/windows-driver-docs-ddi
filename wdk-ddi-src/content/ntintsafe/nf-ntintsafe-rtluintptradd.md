@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlUIntPtrAdd
+UID: NF:ntintsafe.RtlUIntPtrAdd
 title: RtlUIntPtrAdd function
 author: windows-driver-content
 description: Adds two values of type UINT_PTR.
@@ -7,7 +7,7 @@ old-location: kernel\rtluintptradd.htm
 old-project: kernel
 ms.assetid: 9106CE96-A26F-4358-9668-2C0E331BB793
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlUIntPtrAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlUIntPtrAdd function

@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSAC3_ERROR_CONCEALMENT
+UID: NS:ksmedia.KSAC3_ERROR_CONCEALMENT
 title: KSAC3_ERROR_CONCEALMENT
 author: windows-driver-content
 description: The KSAC3_ERROR_CONCEALMENT structure specifies how errors in an AC-3-encoded stream should be concealed during playback.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 1ef69cb7-2437-4ab4-8727-b7718a3adbb1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSAC3_ERROR_CONCEALMENT, PKSAC3_ERROR_CONCEALMENT, *PKSAC3_ERROR_CONCEALMENT, KSAC3_ERROR_CONCEALMENT
+ms.keywords: KSAC3_ERROR_CONCEALMENT, *PKSAC3_ERROR_CONCEALMENT, KSAC3_ERROR_CONCEALMENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSAC3_ERROR_CONCEALMENT, KSAC3_ERROR_CONCEALMENT
 ---
 
 # KSAC3_ERROR_CONCEALMENT structure

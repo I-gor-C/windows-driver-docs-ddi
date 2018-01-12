@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSAUDIO_MIXCAP_TABLE
+UID: NS:ksmedia.KSAUDIO_MIXCAP_TABLE
 title: KSAUDIO_MIXCAP_TABLE
 author: windows-driver-content
 description: The KSAUDIO_MIXCAP_TABLE structure specifies the mixing capabilities of a supermixer node (KSNODETYPE_SUPERMIX). This structure is used to get or set the data value for the KSPROPERTY_AUDIO_MIX_LEVEL_CAPS property.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 508d73f6-1660-4663-87f5-8dbd1dff153a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSAUDIO_MIXCAP_TABLE, PKSAUDIO_MIXCAP_TABLE, KSAUDIO_MIXCAP_TABLE, *PKSAUDIO_MIXCAP_TABLE
+ms.keywords: KSAUDIO_MIXCAP_TABLE, *PKSAUDIO_MIXCAP_TABLE, KSAUDIO_MIXCAP_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSAUDIO_MIXCAP_TABLE, KSAUDIO_MIXCAP_TABLE
 ---
 
 # KSAUDIO_MIXCAP_TABLE structure

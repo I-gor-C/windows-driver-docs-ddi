@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILOSGEOLOCATIONINFOPARAMMASK
+UID: NE:rilapitypes.RILOSGEOLOCATIONINFOPARAMMASK
 title: RILOSGEOLOCATIONINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilosgeolocationinfoparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: cee22f5b-e8ae-4d44-90db-d4f5a8e35eec
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILOSGEOLOCATIONINFOPARAMMASK, RILOSGEOLOCATIONINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILOSGEOLOCATIONINFOPARAMMASK
 req.product: Windows 10 or later.
 ---
 

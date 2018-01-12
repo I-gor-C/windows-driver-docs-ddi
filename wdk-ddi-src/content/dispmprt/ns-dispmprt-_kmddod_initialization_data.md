@@ -1,5 +1,5 @@
 ---
-UID: NS.DISPMPRT._KMDDOD_INITIALIZATION_DATA
+UID: NS:dispmprt._KMDDOD_INITIALIZATION_DATA
 title: _KMDDOD_INITIALIZATION_DATA
 author: windows-driver-content
 description: Contains pointers to functions implemented by a kernel mode display-only driver (KMDOD). The KMDOD's DriverEntry function provides the Microsoft DirectX graphics kernel subsystem with entry points by filling in the members of this structure.
@@ -7,8 +7,8 @@ old-location: display\kmddod_initialization_data.htm
 old-project: display
 ms.assetid: 04c1ece1-1c8f-40eb-8437-ac2fe1445095
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _KMDDOD_INITIALIZATION_DATA, KMDDOD_INITIALIZATION_DATA, *PKMDDOD_INITIALIZATION_DATA, PKMDDOD_INITIALIZATION_DATA
+ms.date: 12/29/2017
+ms.keywords: _KMDDOD_INITIALIZATION_DATA, KMDDOD_INITIALIZATION_DATA, *PKMDDOD_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: KMDDOD_INITIALIZATION_DATA, *PKMDDOD_INITIALIZATION_DATA
 ---
 
 # _KMDDOD_INITIALIZATION_DATA structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-Contains pointers to functions implemented by a kernel mode display-only driver (KMDOD). The KMDOD's <a href="display.driverentry_of_display_miniport_driver">DriverEntry</a> function provides the Microsoft DirectX graphics kernel subsystem with entry points by filling in the members of this structure.
+Contains pointers to functions implemented by a kernel mode display-only driver (KMDOD). The KMDOD's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function provides the Microsoft DirectX graphics kernel subsystem with entry points by filling in the members of this structure.
 
 
 
@@ -307,7 +308,7 @@ A pointer to the KMDOD's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_getscanline.md
 ### -field DxgkDdiPowerRuntimeControlRequest
 
 
-      A pointer to the KMDOD's <a href="display.dxgkddipowerruntimecontrolrequest">DxgkDdiPowerRuntimeControlRequest</a> function.
+      A pointer to the KMDOD's <a href="https://msdn.microsoft.com/56535128-3107-4fb5-b0e1-2e913c386cc2">DxgkDdiPowerRuntimeControlRequest</a> function.
 
 
 ### -field DxgkDdiNotifySurpriseRemoval
@@ -358,15 +359,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.driverentry_of_display_miniport_driver">DriverEntry of Display Miniport Driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556157">DriverEntry of Display Miniport Driver</a>
 </dt>
 <dt>
-<a href="display.dxgkinitializedisplayonlydriver">DxgkInitializeDisplayOnlyDriver</a>
+<a href="..\dispmprt\nf-dispmprt-dxgkinitializedisplayonlydriver.md">DxgkInitializeDisplayOnlyDriver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20KMDDOD_INITIALIZATION_DATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20KMDDOD_INITIALIZATION_DATA structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_IOCTL._WINBIO_CAPTURE_DATA
+UID: NS:winbio_ioctl._WINBIO_CAPTURE_DATA
 title: _WINBIO_CAPTURE_DATA
 author: windows-driver-content
 description: The IOCTL_BIOMETRIC_CAPTURE_DATA IOCTL returns the WINBIO_CAPTURE_DATA structure as output.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: 1d1df123-4c1a-498b-b629-ca63336a762b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_CAPTURE_DATA, PWINBIO_CAPTURE_DATA, WINBIO_CAPTURE_DATA, *PWINBIO_CAPTURE_DATA
+ms.keywords: _WINBIO_CAPTURE_DATA, WINBIO_CAPTURE_DATA, *PWINBIO_CAPTURE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_CAPTURE_DATA, *PWINBIO_CAPTURE_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -279,7 +280,7 @@ Failure detail values for WINBIO_TYPE_FINGERPRINT include:
 
 ### -field CaptureData
 
-A structure of type <a href="biometric.winbio_data">WINBIO_DATA</a> that contains data captured by the device, of the format specified. The <b>Data</b> array member of the WINBIO_DATA structure should contain a <a href="biometric.winbio_bir">WINBIO_BIR</a> structure.
+A structure of type <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a> that contains data captured by the device, of the format specified. The <b>Data</b> array member of the WINBIO_DATA structure should contain a <a href="..\winbio_types\ns-winbio_types-_winbio_bir.md">WINBIO_BIR</a> structure.
 
 
 ## -remarks

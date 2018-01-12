@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioEngineNode.GetDeviceChannelCount
+UID: NF:portcls.IMiniportAudioEngineNode.GetDeviceChannelCount
 title: IMiniportAudioEngineNode::GetDeviceChannelCount method
 author: windows-driver-content
 description: Gets a count of the number of channels supported by the audio device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioEngineNode::GetDeviceChannelCount method

@@ -1,5 +1,5 @@
 ---
-UID: NS.DXVA._DXVA_HIGHLIGHT
+UID: NS:dxva._DXVA_Highlight
 title: _DXVA_Highlight
 author: windows-driver-content
 description: The DXVA_Highlight structure is sent by the host decoder to the accelerator to specify a highlighted rectangular area of a subpicture, and to create an alpha-blending surface with DCCMD data and a DPXD surface.
@@ -7,8 +7,8 @@ old-location: display\dxva_highlight.htm
 old-project: display
 ms.assetid: 62c5f41a-1db2-4777-af86-67d2345a05c0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXVA_Highlight, DXVA_Highlight, *LPDXVA_Highlight, LPDXVA_Highlight
+ms.date: 12/29/2017
+ms.keywords: _DXVA_Highlight, *LPDXVA_Highlight, DXVA_Highlight
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPDXVA_Highlight, DXVA_Highlight
 ---
 
 # _DXVA_Highlight structure
@@ -93,7 +94,7 @@ For nonzero values, the specified blend is found using the following expression:
 
 ### -field HighlightRect
 
-Specifies a <a href="display.rect">RECT</a> structure that defines the area of the highlight rectangle.
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the area of the highlight rectangle.
 
 The following restrictions apply to the RECT dimensions:
 
@@ -134,12 +135,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.rect">RECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_Highlight structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_Highlight structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

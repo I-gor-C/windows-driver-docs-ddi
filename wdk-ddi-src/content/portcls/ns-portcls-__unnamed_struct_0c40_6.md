@@ -1,5 +1,5 @@
 ---
-UID: NS.PORTCLS.__UNNAMED_STRUCT_0C40_6
+UID: NS:portcls.__unnamed_struct_0c40_6
 title: PCAUTOMATION_TABLE
 author: windows-driver-content
 description: The PCAUTOMATION_TABLE structure contains a miniport driver's master table of properties, methods, and events.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PCAUTOMATION_TABLE, *PPCAUTOMATION_TABLE
 ---
 
 # PCAUTOMATION_TABLE structure
@@ -74,7 +75,7 @@ Specifies the number of property items in the <i>Properties</i> array.
 
 ### -field Properties
 
-Pointer to the filter's array of properties. This is an array of <a href="audio.pcproperty_item">PCPROPERTY_ITEM</a> structures.
+Pointer to the filter's array of properties. This is an array of <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a> structures.
 
 
 ### -field MethodItemSize
@@ -89,7 +90,7 @@ Specifies the number of method items in the <b>Methods</b> array.
 
 ### -field Methods
 
-Pointer to the filter's array of methods. This is an array of <a href="audio.pcmethod_item">PCMETHOD_ITEM</a> structures.
+Pointer to the filter's array of methods. This is an array of <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_4.md">PCMETHOD_ITEM</a> structures.
 
 
 ### -field EventItemSize
@@ -104,7 +105,7 @@ Specifies the number of event items in the <b>Events</b> array.
 
 ### -field Events
 
-Pointer to the filter's array of events. This is an array of <a href="audio.pcevent_item">PCEVENT_ITEM</a> structures.
+Pointer to the filter's array of events. This is an array of <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_5.md">PCEVENT_ITEM</a> structures.
 
 
 ### -field Reserved
@@ -115,7 +116,7 @@ Reserved. Initialize to zero.
 ## -remarks
 Any of the structure's item pointers can be <b>NULL</b>, in which case the corresponding counts should be zero. For item tables that are not zero length, the item size should not be smaller than the size of the corresponding item structure that is defined in the header file portcls.h. The minimum size for a property, event, or method item is <b>sizeof</b>(PCPROPERTY_ITEM), <b>sizeof</b>(PCEVENT_ITEM), or <b>sizeof</b>(PCMETHOD_ITEM), respectively. The item size can be larger than this, in which case the item structure is followed by whatever private data the miniport driver appends to it. Item sizes should be a multiple of eight.
 
-The <a href="audio.iminiport_getdescription">IMiniport::GetDescription</a> method outputs a <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_9.md">PCFILTER_DESCRIPTOR</a> structure that points to a PCAUTOMATION_TABLE structure that specifies the miniport driver's automation table.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a> method outputs a <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_9.md">PCFILTER_DESCRIPTOR</a> structure that points to a PCAUTOMATION_TABLE structure that specifies the miniport driver's automation table.
 
 
 ## -requirements
@@ -136,16 +137,16 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcproperty_item">PCPROPERTY_ITEM</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a>
 </dt>
 <dt>
-<a href="audio.pcevent_item">PCEVENT_ITEM</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_5.md">PCEVENT_ITEM</a>
 </dt>
 <dt>
-<a href="audio.pcmethod_item">PCMETHOD_ITEM</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_4.md">PCMETHOD_ITEM</a>
 </dt>
 <dt>
-<a href="audio.iminiport_getdescription">IMiniport::GetDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 </dt>
 <dt>
 <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_9.md">PCFILTER_DESCRIPTOR</a>

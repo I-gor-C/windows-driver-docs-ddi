@@ -1,5 +1,5 @@
 ---
-UID: NS.MFAPI.TAGCAPTUREDMETADATAEXPOSURECOMPENSATION
+UID: NS:mfapi.tagCapturedMetadataExposureCompensation
 title: tagCapturedMetadataExposureCompensation
 author: windows-driver-content
 description: This structure contains blob information for the EV compensation feedback for the photo captured.
@@ -7,7 +7,7 @@ old-location: stream\capturedmetadataexposurecompensation.htm
 old-project: stream
 ms.assetid: B7C32495-F9A1-4206-81D2-DCA247F83901
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: tagCapturedMetadataExposureCompensation, CapturedMetadataExposureCompensation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: CapturedMetadataExposureCompensation
 ---
 
 # tagCapturedMetadataExposureCompensation structure

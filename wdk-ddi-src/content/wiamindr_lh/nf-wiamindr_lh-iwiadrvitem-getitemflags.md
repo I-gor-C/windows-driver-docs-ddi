@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamindr_lh.IWiaDrvItem.GetItemFlags
+UID: NF:wiamindr_lh.IWiaDrvItem.GetItemFlags
 title: IWiaDrvItem::GetItemFlags method
 author: windows-driver-content
 description: The IWiaDrvItem::GetItemFlags method gets the item flags of the current IWiaDrvItem item.
 old-location: image\iwiadrvitem_getitemflags.htm
-old-project: Image
+old-project: image
 ms.assetid: 47358d69-ef45-4cac-8187-72c354912c4e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaDrvItem, IWiaDrvItem::GetItemFlags, GetItemFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSCANWINDOW, SCANWINDOW
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ If the method succeeds, it places the item flag values in the location pointed t
 
 
 ## -remarks
-The method places the current <b>IWiaDrvItem</b> item's flag values in the location pointed to by <i>pIFlags</i>. The item's flag values were set when the item was created by the driver services library function <a href="image.wiascreatedrvitem">wiasCreateDrvItem</a>.
+The method places the current <b>IWiaDrvItem</b> item's flag values in the location pointed to by <i>pIFlags</i>. The item's flag values were set when the item was created by the driver services library function <a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>.
 
 
 ## -requirements
@@ -106,12 +107,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.wiascreatedrvitem">wiasCreateDrvItem</a>
+<a href="https://msdn.microsoft.com/0609e1b2-48df-413c-90bd-d7ddea26510a">IWiaDrvItem</a>
+</dt>
+<dt>
+<a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20IWiaDrvItem::GetItemFlags method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaDrvItem::GetItemFlags method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

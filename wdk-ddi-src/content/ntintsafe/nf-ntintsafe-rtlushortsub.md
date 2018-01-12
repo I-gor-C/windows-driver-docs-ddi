@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlUShortSub
+UID: NF:ntintsafe.RtlUShortSub
 title: RtlUShortSub function
 author: windows-driver-content
 description: Subtracts one value of type USHORT from another.
@@ -7,7 +7,7 @@ old-location: kernel\rtlushortsub.htm
 old-project: kernel
 ms.assetid: 1C0392AE-F3BD-4F42-9094-87228B7C3E10
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlUShortSub
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlUShortSub function

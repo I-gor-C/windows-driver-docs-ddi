@@ -1,5 +1,5 @@
 ---
-UID: NC.wdm.PGET_DMA_TRANSFER_INFO
+UID: NC:wdm.PGET_DMA_TRANSFER_INFO
 title: PGET_DMA_TRANSFER_INFO
 author: windows-driver-content
 description: The GetDmaTransferInfo routine calculates the allocation requirements for a scatter/gather DMA transfer.
@@ -7,8 +7,8 @@ old-location: kernel\getdmatransferinfo.htm
 old-project: kernel
 ms.assetid: 27D1FAAE-6DEF-4485-AA29-32CC85A01000
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 1/4/2018
+ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ NTSTATUS GetDmaTransferInfo(
 
 ### -param DmaAdapter [in]
 
-A pointer to a <a href="kernel.dma_adapter">DMA_ADAPTER</a> structure. This structure is the adapter object that represents the driver's bus-master DMA device or system DMA channel. The caller obtained this pointer from a previous call to the <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> routine.
+A pointer to a <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structure. This structure is the adapter object that represents the driver's bus-master DMA device or system DMA channel. The caller obtained this pointer from a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> routine.
 
 
 ### -param Mdl [in]
@@ -89,7 +90,7 @@ Indicates whether the transfer is a write-only operation (that is, a transfer to
 
 ### -param TransferInfo [in, out]
 
-A pointer to a caller-allocated <a href="kernel.dma_transfer_info">DMA_TRANSFER_INFO</a> structure. The caller must set the <b>Version</b> member of the structure to DMA_TRANSFER_INFO_VERSION1 before calling <b>GetDmaTransferInfo</b>.
+A pointer to a caller-allocated <a href="..\wdm\ns-wdm-_dma_transfer_info.md">DMA_TRANSFER_INFO</a> structure. The caller must set the <b>Version</b> member of the structure to DMA_TRANSFER_INFO_VERSION1 before calling <b>GetDmaTransferInfo</b>.
 
 
 ## -returns
@@ -103,7 +104,7 @@ A pointer to a caller-allocated <a href="kernel.dma_transfer_info">DMA_TRANSFER_
 
 
 ## -remarks
-<b>GetDmaTransferInfo</b><i> is not a system routine that can be called directly by name. This routine can be called only by pointer from the address returned in a </i><a href="kernel.dma_operations">DMA_OPERATIONS</a><i> structure. </i>Drivers obtain the address of this routine by calling <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> with the <b>Version</b> member of the <i>DeviceDescription</i> parameter set to DEVICE_DESCRIPTION_VERSION3. If <b>IoGetDmaAdapter</b> returns <b>NULL</b>, the routine is not available on your platform.
+<b>GetDmaTransferInfo</b><i> is not a system routine that can be called directly by name. This routine can be called only by pointer from the address returned in a </i><a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a><i> structure. </i>Drivers obtain the address of this routine by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> with the <b>Version</b> member of the <i>DeviceDescription</i> parameter set to DEVICE_DESCRIPTION_VERSION3. If <b>IoGetDmaAdapter</b> returns <b>NULL</b>, the routine is not available on your platform.
 
 Use <b>GetDmaTransferInfo</b> to calculate the size of the scatter/gather buffer to allocate for the <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a> and <a href="..\wdm\nc-wdm-pmap_transfer_ex.md">MapTransferEx</a> routines.
 
@@ -117,7 +118,7 @@ The amount of memory to allocate to hold the specified scatter/gather list. (Thi
 
 The number of map registers required to translate the physical addresses in the scatter/gather list to logical addresses.
 
-For information about the DMA transfer information that is provided by version 1 of the <b>DMA_TRANSFER_INFO_<i>XXX</i></b> structure, see <a href="kernel.dma_transfer_info_v1">DMA_TRANSFER_INFO_V1</a>.
+For information about the DMA transfer information that is provided by version 1 of the <b>DMA_TRANSFER_INFO_<i>XXX</i></b> structure, see <a href="..\wdm\ns-wdm-_dma_transfer_info_v1.md">DMA_TRANSFER_INFO_V1</a>.
 
 An MDL describes the physical memory pages that underlie a locked-down, contiguous block of virtual memory. Typically, these physical memory pages are non-contiguous. An MDL chain is an ordered collection of MDLs that describes memory that can be used to buffer I/O data. Typically, the virtual memory regions described by the MDLs in the chain are non-contiguous. For more information about MDLs and MDL chains, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565421">Using MDLs</a>.
 
@@ -177,16 +178,16 @@ IRQL
 <a href="..\wdm\nc-wdm-pcalculate_scatter_gather_list_size.md">CalculateScatterGatherList</a>
 </dt>
 <dt>
-<a href="kernel.dma_operations">DMA_OPERATIONS</a>
+<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
 </dt>
 <dt>
-<a href="kernel.dma_transfer_info">DMA_TRANSFER_INFO</a>
+<a href="..\wdm\ns-wdm-_dma_transfer_info.md">DMA_TRANSFER_INFO</a>
 </dt>
 <dt>
-<a href="kernel.dma_transfer_info_v1">DMA_TRANSFER_INFO_V1</a>
+<a href="..\wdm\ns-wdm-_dma_transfer_info_v1.md">DMA_TRANSFER_INFO_V1</a>
 </dt>
 <dt>
-<a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-pmap_transfer_ex.md">MapTransferEx</a>
@@ -196,5 +197,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PGET_DMA_TRANSFER_INFO callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PGET_DMA_TRANSFER_INFO callback function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

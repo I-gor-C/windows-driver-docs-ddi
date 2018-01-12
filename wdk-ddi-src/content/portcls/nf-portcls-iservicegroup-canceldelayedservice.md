@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IServiceGroup.CancelDelayedService
+UID: NF:portcls.IServiceGroup.CancelDelayedService
 title: IServiceGroup::CancelDelayedService method
 author: windows-driver-content
 description: The CancelDelayedService method cancels the previously requested delayed service.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IServiceGroup::CancelDelayedService method
@@ -105,7 +106,7 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 </dt>
 <dt>
-<a href="audio.iservicegroup_requestdelayedservice">IServiceGroup::RequestDelayedService</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537003">IServiceGroup::RequestDelayedService</a>
 </dt>
 </dl>
  

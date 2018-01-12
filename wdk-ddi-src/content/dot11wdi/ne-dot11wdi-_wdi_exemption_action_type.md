@@ -1,13 +1,13 @@
 ---
-UID: NE.dot11wdi._WDI_EXEMPTION_ACTION_TYPE
+UID: NE:dot11wdi._WDI_EXEMPTION_ACTION_TYPE
 title: _WDI_EXEMPTION_ACTION_TYPE
 author: windows-driver-content
 description: The WDI_EXEMPTION_ACTION_TYPE enumeration defines the exemption types.
 old-location: netvista\wdi_exemption_action_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 46640961-828c-411b-b1b9-bcceb04bdf17
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_EXEMPTION_ACTION_TYPE, WDI_EXEMPTION_ACTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_EXEMPTION_ACTION_TYPE
 ---
 
 # _WDI_EXEMPTION_ACTION_TYPE enumeration

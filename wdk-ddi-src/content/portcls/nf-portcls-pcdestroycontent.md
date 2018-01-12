@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcDestroyContent
+UID: NF:portcls.PcDestroyContent
 title: PcDestroyContent function
 author: windows-driver-content
 description: The PcDestroyContent function deletes a DRM content ID that was created by PcCreateContentMixed. Note that this function call is identical in operation to the DrmDestroyContent function, and its parameter definitions and return value are also identical.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcDestroyContent function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>PcDestroyContent</b> function deletes a DRM content ID that was created by <a href="audio.pccreatecontentmixed">PcCreateContentMixed</a>. Note that this function call is identical in operation to the <a href="audio.drmdestroycontent">DrmDestroyContent</a> function, and its parameter definitions and return value are also identical.
+The <b>PcDestroyContent</b> function deletes a DRM content ID that was created by <a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a>. Note that this function call is identical in operation to the <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a> function, and its parameter definitions and return value are also identical.
 
 
 
@@ -53,15 +54,15 @@ PORTCLASSAPI NTSTATUS NTAPI  PcDestroyContent(void);
 
 
 ## -returns
-See return value definition in <a href="audio.drmdestroycontent">DrmDestroyContent</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>.
 
-See return value definition in <a href="audio.drmdestroycontent">DrmDestroyContent</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>.
 
-See return value definition in <a href="audio.drmdestroycontent">DrmDestroyContent</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>.
 
 
 ## -remarks
-For more information, see the comments in <a href="audio.drmdestroycontent">DrmDestroyContent</a>.
+For more information, see the comments in <a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>.
 
 
 ## -requirements
@@ -114,10 +115,10 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pccreatecontentmixed">PcCreateContentMixed</a>
+<a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a>
 </dt>
 <dt>
-<a href="audio.drmdestroycontent">DrmDestroyContent</a>
+<a href="..\drmk\nf-drmk-drmdestroycontent.md">DrmDestroyContent</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NF.pepfx.PoFxRegisterCoreDevice
+UID: NF:pepfx.PoFxRegisterCoreDevice
 title: PoFxRegisterCoreDevice function
 author: windows-driver-content
 description: The PoFxRegisterCoreDevice routine registers a new core system resource with the Windows power management framework (PoFx).
@@ -7,7 +7,7 @@ old-location: kernel\pofxregistercoredevice.htm
 old-project: kernel
 ms.assetid: D1564DB7-57D9-44B2-8ED2-1170CA4C22EE
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PoFxRegisterCoreDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 # PoFxRegisterCoreDevice function
@@ -57,12 +58,12 @@ NTSTATUS PoFxRegisterCoreDevice(
 
 ### -param Id [in]
 
-A string that uniquely identifies the core system resource. This member is a pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains a <a href="devinst.device_identification_strings">device identification string</a>.
+A string that uniquely identifies the core system resource. This member is a pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a <a href="devinst.device_identification_strings">device identification string</a>.
 
 
 ### -param Device [in]
 
-A pointer to a <a href="kernel.po_fx_core_device">PO_FX_CORE_DEVICE</a> structure that describes the power characteristics of the core system resource.
+A pointer to a <a href="..\pepfx\ns-pepfx-_po_fx_core_device.md">PO_FX_CORE_DEVICE</a> structure that describes the power characteristics of the core system resource.
 
 
 ### -param Handle [out]
@@ -139,15 +140,15 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.po_fx_core_device">PO_FX_CORE_DEVICE</a>
+<a href="..\pepfx\ns-pepfx-_po_fx_core_device.md">PO_FX_CORE_DEVICE</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxRegisterCoreDevice routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxRegisterCoreDevice routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

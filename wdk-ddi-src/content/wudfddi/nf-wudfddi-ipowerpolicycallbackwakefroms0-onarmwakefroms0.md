@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IPowerPolicyCallbackWakeFromS0.OnArmWakeFromS0
+UID: NF:wudfddi.IPowerPolicyCallbackWakeFromS0.OnArmWakeFromS0
 title: IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0 method
 author: windows-driver-content
 description: A driver's OnArmWakeFromS0 callback function arms (that is, enables) a device so that it can trigger a wake signal while in a low-power device state, if the system remains in the system working state (S0).
@@ -7,7 +7,7 @@ old-location: wdf\ipowerpolicycallbackwakefroms0_onarmwakefroms0.htm
 old-project: wdf
 ms.assetid: 4801a7c4-8bd4-4372-bcdd-49e5570d833e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IPowerPolicyCallbackWakeFromS0, IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0, OnArmWakeFromS0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ A pointer to the <b>IWDFDevice</b> interface of the device object that represent
 ## -returns
 If the operation is successful, the <b>OnArmWakeFromS0</b> callback function must return S_OK or another status value for which SUCCEEDED(<i>status</i>) equals <b>TRUE</b>. Otherwise it must return a status value for which SUCCEEDED(<i>status</i>) equals <b>FALSE</b>.
 
-If SUCCEEDED(status) equals <b>FALSE</b>, the framework calls the driver's <a href="wdf.ipowerpolicycallbackwakefroms0_ondisarmwakefroms0">IPowerPolicyCallbackWakeFromS0::OnDisarmWakeFromS0</a> callback function. (The framework does not report a device failure to the PnP manager.) 
+If SUCCEEDED(status) equals <b>FALSE</b>, the framework calls the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556819">IPowerPolicyCallbackWakeFromS0::OnDisarmWakeFromS0</a> callback function. (The framework does not report a device failure to the PnP manager.) 
 
 
 
@@ -84,9 +85,9 @@ The framework calls the driver's <b>OnArmWakeFromS0</b> callback function.
 
 The framework requests the driver for the device's bus to lower the device's power.
 
-Immediately before your device enters a low power state, the framework will call your driver's <a href="wdf.ipnpcallback_ond0exit">IPnpCallback::OnD0Exit</a> callback function.
+Immediately before your device enters a low power state, the framework will call your driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556803">IPnpCallback::OnD0Exit</a> callback function.
 
-For more information about when the framework calls this callback function, see <a href="wdf.pnp_and_power_management_scenarios_in_umdf">PnP and Power Management Scenarios in UMDF</a>.
+For more information about when the framework calls this callback function, see <a href="https://msdn.microsoft.com/ca36eee5-482c-4cfe-a515-be9d3743e241">PnP and Power Management Scenarios in UMDF</a>.
 
 You do not need to provide an <b>OnArmWakeFromS0</b> callback function if your device:
 
@@ -96,7 +97,7 @@ Cannot be powered down while the system remains fully powered.
 
 Does not require special hardware operations that enable the device to trigger a wake signal.
 
-If your device supports USB "selective suspend" and if your driver specifies <b>IdleUsbSelectiveSuspend</b> when it calls <a href="wdf.iwdfdevice2_assigns0idlesettings">IWDFDevice2::AssignS0IdleSettings</a>, the framework sends a "selective suspend" request to the USB bus driver when the device has been idle for a preset amount of time.
+If your device supports USB "selective suspend" and if your driver specifies <b>IdleUsbSelectiveSuspend</b> when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>, the framework sends a "selective suspend" request to the USB bus driver when the device has been idle for a preset amount of time.
 
 For more information about this callback function, see <a href="wdf.supporting_idle_power_down_in_umdf_drivers">Supporting Idle Power-Down in UMDF-based Drivers</a>.
 
@@ -153,15 +154,15 @@ Header
 <a href="..\wudfddi\nn-wudfddi-ipowerpolicycallbackwakefroms0.md">IPowerPolicyCallbackWakeFromS0</a>
 </dt>
 <dt>
-<a href="wdf.ipowerpolicycallbackwakefroms0_ondisarmwakefroms0">IPowerPolicyCallbackWakeFromS0::OnDisarmWakeFromS0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556819">IPowerPolicyCallbackWakeFromS0::OnDisarmWakeFromS0</a>
 </dt>
 <dt>
-<a href="wdf.ipowerpolicycallbackwakefroms0_onwakefroms0triggered">IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556822">IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0 method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0 method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

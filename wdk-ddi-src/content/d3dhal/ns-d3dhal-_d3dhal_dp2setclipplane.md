@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DHAL._D3DHAL_DP2SETCLIPPLANE
+UID: NS:d3dhal._D3DHAL_DP2SETCLIPPLANE
 title: _D3DHAL_DP2SETCLIPPLANE
 author: windows-driver-content
 description: The D3DHAL_SETCLIPPLANE structure allows user defined clip planes to be used in world space.
@@ -7,8 +7,8 @@ old-location: display\d3dhal_dp2setclipplane.htm
 old-project: display
 ms.assetid: 84459f39-42cb-4877-b569-17c51ee2d6e4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DHAL_DP2SETCLIPPLANE, D3DHAL_DP2SETCLIPPLANE
+ms.date: 12/29/2017
+ms.keywords: _D3DHAL_DP2SETCLIPPLANE, D3DHAL_DP2SETCLIPPLANE, *LPD3DHAL_DP2SETCLIPPLANE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DHAL_DP2SETCLIPPLANE
 ---
 
 # _D3DHAL_DP2SETCLIPPLANE structure

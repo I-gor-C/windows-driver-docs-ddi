@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdfqueryinterface
 ---
 
 # Wdfqueryinterface.h header
@@ -16,6 +16,7 @@ Wdfqueryinterface.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [PFN_WDFDEVICEADDQUERYINTERFACE function](nc-wdfqueryinterface-pfn_wdfdeviceaddqueryinterface.md) | The WdfDeviceAddQueryInterface method creates a driver-defined interface that other drivers can query and use. |
 | [WDF_QUERY_INTERFACE_CONFIG_INIT function](nf-wdfqueryinterface-wdf_query_interface_config_init.md) | The WDF_QUERY_INTERFACE_CONFIG_INIT function initializes a driver's WDF_QUERY_INTERFACE_CONFIG structure. |
 | [WdfDeviceAddQueryInterface function](nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md) | The WdfDeviceAddQueryInterface method creates a driver-defined interface that other drivers can query and use. |
 | [WdfDeviceInterfaceDereferenceNoOp function](nf-wdfqueryinterface-wdfdeviceinterfacedereferencenoop.md) | The WdfDeviceInterfaceDereferenceNoOp method can be used for driver-defined interfaces that do not require reference counts. |

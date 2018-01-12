@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsclassextension.ISensorDriver.OnClientSubscribeToEvents
+UID: NF:sensorsclassextension.ISensorDriver.OnClientSubscribeToEvents
 title: ISensorDriver::OnClientSubscribeToEvents method
 author: windows-driver-content
 description: The ISensorDriver::OnClientSubscribeToEvents method notifies the sensor driver that an authorized client application is requesting event notifications.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <a href="sensors.isensordriver_onclientsubscribetoevents">ISensorDriver::OnClientSubscribeToEvents</a> method notifies the sensor driver that an authorized client application is requesting event notifications.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545589">ISensorDriver::OnClientSubscribeToEvents</a> method notifies the sensor driver that an authorized client application is requesting event notifications.
 
 
 

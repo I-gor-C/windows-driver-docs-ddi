@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPinName.GetPinName
+UID: NF:portcls.IPinName.GetPinName
 title: IPinName::GetPinName method
 author: windows-driver-content
 description: The GetPinName method retrieves the friendly name of an audio endpoint.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPinName::GetPinName method

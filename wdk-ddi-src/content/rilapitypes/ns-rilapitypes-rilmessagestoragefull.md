@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILMESSAGESTORAGEFULL
+UID: NS:rilapitypes.RILMESSAGESTORAGEFULL
 title: RILMESSAGESTORAGEFULL
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessagestoragefull_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: fa0e5c57-7ceb-442d-95ea-971824c88298
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILMESSAGESTORAGEFULL, *LPRILMESSAGESTORAGEFULL, RILMESSAGESTORAGEFULL
+ms.date: 1/8/2018
+ms.keywords: RILMESSAGESTORAGEFULL, RILMESSAGESTORAGEFULL, *LPRILMESSAGESTORAGEFULL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMESSAGESTORAGEFULL, *LPRILMESSAGESTORAGEFULL
 req.product: Windows 10 or later.
 ---
 

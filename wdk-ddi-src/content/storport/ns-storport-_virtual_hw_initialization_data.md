@@ -1,5 +1,5 @@
 ---
-UID: NS.STORPORT._VIRTUAL_HW_INITIALIZATION_DATA
+UID: NS:storport._VIRTUAL_HW_INITIALIZATION_DATA
 title: _VIRTUAL_HW_INITIALIZATION_DATA
 author: windows-driver-content
 description: The VIRTUAL_HW_INITIALIZATION_DATA structure contains information particular to each virtual miniport driver.
@@ -7,8 +7,8 @@ old-location: storage\virtual_hw_initialization_data.htm
 old-project: storage
 ms.assetid: 10e7e097-ed84-4200-b7b6-6a838a058fd2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VIRTUAL_HW_INITIALIZATION_DATA, PVIRTUAL_HW_INITIALIZATION_DATA, VIRTUAL_HW_INITIALIZATION_DATA, *PVIRTUAL_HW_INITIALIZATION_DATA
+ms.date: 1/10/2018
+ms.keywords: _VIRTUAL_HW_INITIALIZATION_DATA, *PVIRTUAL_HW_INITIALIZATION_DATA, VIRTUAL_HW_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PVIRTUAL_HW_INITIALIZATION_DATA, VIRTUAL_HW_INITIALIZATION_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -100,12 +101,12 @@ The Storport driver does not support legacy buses. Therefore, most of the adapte
 
 ### -field HwInitialize
 
-A pointer to the virtual miniport driver's <a href="storage.hwstorinitialize">HwStorInitialize</a> routine, which is a required entry point for all virtual miniport drivers.
+A pointer to the virtual miniport driver's <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a> routine, which is a required entry point for all virtual miniport drivers.
 
 
 ### -field HwStartIo
 
-A pointer to the virtual miniport driver's <a href="storage.hwstorstartio">HwStorStartIo</a> routine, which is a required entry point for all virtual miniport drivers.
+A pointer to the virtual miniport driver's <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine, which is a required entry point for all virtual miniport drivers.
 
 
 ### -field HwInterrupt
@@ -115,12 +116,12 @@ Not used. Virtual miniport drivers do not process interrupts.
 
 ### -field HwFindAdapter
 
-A pointer to the virtual miniport driver's <a href="storage.virtualhwstorfindadapter">VirtualHwStorFindAdapter</a> routine, which is a required entry point for all virtual miniport drivers.
+A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568008">VirtualHwStorFindAdapter</a> routine, which is a required entry point for all virtual miniport drivers.
 
 
 ### -field HwResetBus
 
-A pointer to the virtual miniport driver's <a href="storage.hwstorresetbus">HwStorResetBus</a> routine, which is a required entry point for all virtual miniport drivers.
+A pointer to the virtual miniport driver's <a href="..\storport\nc-storport-hw_reset_bus.md">HwStorResetBus</a> routine, which is a required entry point for all virtual miniport drivers.
 
 
 ### -field HwDmaStarted
@@ -220,7 +221,7 @@ The device identifier.
 
 ### -field HwAdapterControl
 
-A pointer to the virtual miniport driver's <a href="storage.hwstoradaptercontrol">HwStorAdapterControl</a> routine. 
+A pointer to the virtual miniport driver's <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a> routine. 
 
 
 ### -field HwBuildIo
@@ -231,31 +232,31 @@ A pointer to the virtual miniport driver's <a href="storage.hwstoradaptercontrol
 
 ### -field HwFreeAdapterResources
 
-A pointer to the virtual miniport driver's <a href="storage.hwstorfreeadapterresources">HwStorFreeAdapterResources</a> routine, which is a required entry point for all virtual miniport drivers.
+A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557392">HwStorFreeAdapterResources</a> routine, which is a required entry point for all virtual miniport drivers.
 
 
 ### -field HwProcessServiceRequest
 
-A pointer to the virtual miniport driver's <a href="storage.hwstorprocessservicerequest">HwStorProcessServiceRequest</a> routine.
+A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a> routine.
 
 
 ### -field HwCompleteServiceIrp
 
-A pointer to the virtual miniport driver's <a href="storage.hwstorcompleteserviceirp">HwStorCompleteServiceIrp</a> routine.
+A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557379">HwStorCompleteServiceIrp</a> routine.
 
 
 ### -field HwInitializeTracing
 
-A pointer to the virtual miniport driver's <a href="storage.hwstorinitializetracing">HwStorInitializeTracing</a> routine.
+A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557402">HwStorInitializeTracing</a> routine.
 
 
 ### -field HwCleanupTracing
 
-A pointer to the virtual miniport driver's <a href="storage.hwstorcleanuptracing">HwStorCleanupTracing</a> routine.
+A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557372">HwStorCleanupTracing</a> routine.
 
 
 ## -remarks
-If a virtual miniport driver will execute only on Windows 8 or later, the driver should use the <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a> structure instead of <b>VIRTUAL_HW_INITIALIZATION_DATA</b>.
+If a virtual miniport driver will execute only on Windows 8 or later, the driver should use the <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure instead of <b>VIRTUAL_HW_INITIALIZATION_DATA</b>.
 
 
 ## -requirements
@@ -276,39 +277,39 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hwstoradaptercontrol">HwStorAdapterControl</a>
+<a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
 </dt>
 <dt>
-<a href="storage.hwstorcleanuptracing">HwStorCleanupTracing</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557372">HwStorCleanupTracing</a>
 </dt>
 <dt>
-<a href="storage.hwstorcompleteserviceirp">HwStorCompleteServiceIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557379">HwStorCompleteServiceIrp</a>
 </dt>
 <dt>
-<a href="storage.hwstorfreeadapterresources">HwStorFreeAdapterResources</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557392">HwStorFreeAdapterResources</a>
 </dt>
 <dt>
-<a href="storage.hwstorinitialize">HwStorInitialize</a>
+<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
 </dt>
 <dt>
-<a href="storage.hwstorinitializetracing">HwStorInitializeTracing</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557402">HwStorInitializeTracing</a>
 </dt>
 <dt>
-<a href="storage.hwstorprocessservicerequest">HwStorProcessServiceRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a>
 </dt>
 <dt>
-<a href="storage.hwstorresetbus">HwStorResetBus</a>
+<a href="..\storport\nc-storport-hw_reset_bus.md">HwStorResetBus</a>
 </dt>
 <dt>
-<a href="storage.hwstorstartio">HwStorStartIo</a>
+<a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a>
 </dt>
 <dt>
-<a href="storage.virtualhwstorfindadapter">VirtualHwStorFindAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568008">VirtualHwStorFindAdapter</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20VIRTUAL_HW_INITIALIZATION_DATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20VIRTUAL_HW_INITIALIZATION_DATA structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

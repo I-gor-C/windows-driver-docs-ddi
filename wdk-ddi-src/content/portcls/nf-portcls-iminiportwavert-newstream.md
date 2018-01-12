@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveRT.NewStream
+UID: NF:portcls.IMiniportWaveRT.NewStream
 title: IMiniportWaveRT::NewStream method
 author: windows-driver-content
 description: The NewStream method creates a new instance of a WaveRT stream object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveRT::NewStream method
@@ -87,7 +88,7 @@ Pointer to a <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> structure th
 
 
 ## -remarks
-The <code>NewStream</code> method sets the initial state of the stream to <a href="https://msdn.microsoft.com/c71fd395-28aa-4421-9443-b5b0a1f3ac7e">KSSTATE_STOP</a> and its initial position to 0. For more information, see related methods <a href="audio.iminiportwavertstream_setstate">IMiniportWaveRTStream::SetState</a> and <a href="audio.iminiportwavertstream_getposition">IMiniportWaveRTStream::GetPosition</a>.
+The <code>NewStream</code> method sets the initial state of the stream to <a href="https://msdn.microsoft.com/c71fd395-28aa-4421-9443-b5b0a1f3ac7e">KSSTATE_STOP</a> and its initial position to 0. For more information, see related methods <a href="https://msdn.microsoft.com/library/windows/hardware/ff536756">IMiniportWaveRTStream::SetState</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff536749">IMiniportWaveRTStream::GetPosition</a>.
 
 The <i>DataFormat</i> parameter, which specifies the data format of the stream, points to one of the following audio-specific, extended versions of the KSDATAFORMAT structure:
 
@@ -158,10 +159,10 @@ Passive level.
 </dt>
 <dt>IMiniportWaveRTStream</dt>
 <dt>
-<a href="audio.iminiportwavertstream_setstate">IMiniportWaveRTStream::SetState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536756">IMiniportWaveRTStream::SetState</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavertstream_getposition">IMiniportWaveRTStream::GetPosition</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536749">IMiniportWaveRTStream::GetPosition</a>
 </dt>
 </dl>
  

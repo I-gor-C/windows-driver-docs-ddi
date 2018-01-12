@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA._KSCAMERA_PROFILE_CONCURRENCYINFO
+UID: NS:ksmedia._KSCAMERA_PROFILE_CONCURRENCYINFO
 title: _KSCAMERA_PROFILE_CONCURRENCYINFO
 author: windows-driver-content
 description: An array of KSCAMERA_PROFILE_CONCURRENCYINFO structures form the Camera.Concurrency parameter of the KSDEVICE_PROFILE_INFO structure (whose array size is specified by Camera.CountOfConcurrency parameter) indicating which profiles the profile identified in the KSCAMERA_PROFILE_INFO structure may run simultaneously on different cameras.
@@ -7,8 +7,8 @@ old-location: stream\kscamera_profile_concurrencyinfo.htm
 old-project: stream
 ms.assetid: 4E0A9CE6-2FA0-46A5-B478-C088E5FF1BAD
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _KSCAMERA_PROFILE_CONCURRENCYINFO, *PKSCAMERA_PROFILE_CONCURRENCYINFO, KSCAMERA_PROFILE_CONCURRENCYINFO, PKSCAMERA_PROFILE_CONCURRENCYINFO
+ms.date: 1/9/2018
+ms.keywords: _KSCAMERA_PROFILE_CONCURRENCYINFO, KSCAMERA_PROFILE_CONCURRENCYINFO, *PKSCAMERA_PROFILE_CONCURRENCYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSCAMERA_PROFILE_CONCURRENCYINFO, *PKSCAMERA_PROFILE_CONCURRENCYINFO
 ---
 
 # _KSCAMERA_PROFILE_CONCURRENCYINFO structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-An array of <b>KSCAMERA_PROFILE_CONCURRENCYINFO</b> structures form the <b>Camera.Concurrency</b> parameter of   the <a href="stream.ksdevice_profile_info">KSDEVICE_PROFILE_INFO</a> structure (whose array size is specified by <b>Camera.CountOfConcurrency</b> parameter) indicating which profiles the profile identified in the <a href="stream.kscamera_profile_info">KSCAMERA_PROFILE_INFO</a> structure may run simultaneously on different cameras.
+An array of <b>KSCAMERA_PROFILE_CONCURRENCYINFO</b> structures form the <b>Camera.Concurrency</b> parameter of   the <a href="..\ksmedia\ns-ksmedia-_ksdevice_profile_info.md">KSDEVICE_PROFILE_INFO</a> structure (whose array size is specified by <b>Camera.CountOfConcurrency</b> parameter) indicating which profiles the profile identified in the <a href="..\ksmedia\ns-ksmedia-_kscamera_profile_info.md">KSCAMERA_PROFILE_INFO</a> structure may run simultaneously on different cameras.
 
 
 

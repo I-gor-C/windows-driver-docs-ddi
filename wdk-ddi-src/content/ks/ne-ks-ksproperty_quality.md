@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSPROPERTY_QUALITY
+UID: NE:ks.KSPROPERTY_QUALITY
 title: KSPROPERTY_QUALITY
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksproperty_quality.htm
 old-project: stream
 ms.assetid: 6350A740-BD69-40C3-804A-075F9889865B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPROPERTY_QUALITY, KSPROPERTY_QUALITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_QUALITY
 ---
 
 # KSPROPERTY_QUALITY enumeration

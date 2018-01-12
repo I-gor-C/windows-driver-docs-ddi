@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_SYSTEM_PROCESSOR_INFO_EX
+UID: NS:ntddndis._NDIS_SYSTEM_PROCESSOR_INFO_EX
 title: _NDIS_SYSTEM_PROCESSOR_INFO_EX
 author: windows-driver-content
 description: The NDIS_SYSTEM_PROCESSOR_INFO_EX structure specifies information about the CPU topology of the local computer.
 old-location: netvista\ndis_system_processor_info_ex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ba3c6641-98bc-4c44-9889-7583c4cf61f0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_SYSTEM_PROCESSOR_INFO_EX, NDIS_SYSTEM_PROCESSOR_INFO_EX, PNDIS_SYSTEM_PROCESSOR_INFO_EX, *PNDIS_SYSTEM_PROCESSOR_INFO_EX
+ms.date: 1/8/2018
+ms.keywords: _NDIS_SYSTEM_PROCESSOR_INFO_EX, *PNDIS_SYSTEM_PROCESSOR_INFO_EX, NDIS_SYSTEM_PROCESSOR_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_SYSTEM_PROCESSOR_INFO_EX, NDIS_SYSTEM_PROCESSOR_INFO_EX
 ---
 
 # _NDIS_SYSTEM_PROCESSOR_INFO_EX structure
@@ -66,7 +67,7 @@ typedef struct _NDIS_SYSTEM_PROCESSOR_INFO_EX {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_SYSTEM_PROCESSOR_INFO_EX structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -82,7 +83,7 @@ Reserved. NDIS sets this member to zero.
 ### -field ProcessorVendor
 
 The processor vendor specified as one of the values from the 
-     <a href="netvista.ndis_processor_vendor">
+     <a href="..\ntddndis\ne-ntddndis-_ndis_processor_vendor.md">
      NDIS_PROCESSOR_VENDOR</a> enumeration.
 
 
@@ -114,7 +115,7 @@ The maximum number of logical processors that are in each hyper-threaded core pr
 ### -field ProcessorInfoOffset
 
 The offset, in bytes, from the start of the structure to an array of 
-     <a href="netvista.ndis_processor_info_ex">NDIS_PROCESSOR_INFO_EX</a> structures,
+     <a href="..\ntddndis\ns-ntddndis-_ndis_processor_info_ex.md">NDIS_PROCESSOR_INFO_EX</a> structures,
      with each entry describing a processor on the computer. The 
      <b>NumberOfProcessors</b> member contains the number of NDIS_PROCESSOR_INFO_EX structures in the array.
      The 
@@ -136,7 +137,7 @@ The size, in bytes, of elements in the array of NDIS_PROCESSOR_INFO_EX structure
 
 ## -remarks
 NDIS network drivers use the NDIS_SYSTEM_PROCESSOR_INFO_EX structure in calls to the 
-    <a href="netvista.ndisgetprocessorinformationex">
+    <a href="..\ndis\nf-ndis-ndisgetprocessorinformationex.md">
     NdisGetProcessorInformationEx</a> function. After 
     <b>NdisGetProcessorInformationEx</b> returns, this structure contains information about the CPU topology
     of the system.
@@ -170,19 +171,19 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_processor_info_ex">NDIS_PROCESSOR_INFO_EX</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_processor_info_ex.md">NDIS_PROCESSOR_INFO_EX</a>
 </dt>
 <dt>
-<a href="netvista.ndis_processor_vendor">NDIS_PROCESSOR_VENDOR</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_processor_vendor.md">NDIS_PROCESSOR_VENDOR</a>
 </dt>
 <dt>
-<a href="netvista.ndis_system_processor_info">NDIS_SYSTEM_PROCESSOR_INFO</a>
+<a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">NDIS_SYSTEM_PROCESSOR_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndisgetprocessorinformationex">
+<a href="..\ndis\nf-ndis-ndisgetprocessorinformationex.md">
    NdisGetProcessorInformationEx</a>
 </dt>
 </dl>
@@ -190,5 +191,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_SYSTEM_PROCESSOR_INFO_EX structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SYSTEM_PROCESSOR_INFO_EX structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

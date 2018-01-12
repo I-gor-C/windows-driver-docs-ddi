@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_GETPERSISTENTBINDING_OUT
+UID: NS:hbapiwmi._SM_GetPersistentBinding_OUT
 title: _SM_GetPersistentBinding_OUT
 author: windows-driver-content
 description: The SM_GetPersistentBinding_OUT structure is used to receive output parameters from the SM_GetPersistentBinding method.
@@ -7,8 +7,8 @@ old-location: storage\sm_getpersistentbinding_out.htm
 old-project: storage
 ms.assetid: aa80e05c-e322-4350-80e7-28d53821c510
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_GetPersistentBinding_OUT, *PSM_GetPersistentBinding_OUT, PSM_GetPersistentBinding_OUT, SM_GetPersistentBinding_OUT
+ms.date: 1/10/2018
+ms.keywords: _SM_GetPersistentBinding_OUT, SM_GetPersistentBinding_OUT, *PSM_GetPersistentBinding_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SM_GetPersistentBinding_OUT, *PSM_GetPersistentBinding_OUT
 ---
 
 # _SM_GetPersistentBinding_OUT structure
@@ -58,7 +59,7 @@ typedef struct _SM_GetPersistentBinding_OUT {
 
 ### -field HBAStatus
 
-The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.
+The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
 
 ### -field TotalEntryCount

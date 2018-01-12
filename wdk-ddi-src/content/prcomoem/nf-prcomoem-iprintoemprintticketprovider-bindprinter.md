@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemPrintTicketProvider.BindPrinter
+UID: NF:prcomoem.IPrintOemPrintTicketProvider.BindPrinter
 title: IPrintOemPrintTicketProvider::BindPrinter method
 author: windows-driver-content
 description: The IPrintOemPrintTicketProvider::BindPrinter method enables the core driver to associate a set of private namespace uniform resource identifiers (URIs) with a device.
@@ -7,7 +7,7 @@ old-location: print\iprintoemprintticketprovider_bindprinter.htm
 old-project: print
 ms.assetid: 6b31b340-de94-4e6c-a48a-7c1b874eb7cd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemPrintTicketProvider, IPrintOemPrintTicketProvider::BindPrinter, BindPrinter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -77,7 +78,7 @@ A pointer to a variable that receives one of the following enumerated values:
 
 ### -param OEMPT_DEFAULT
 
-The system places a binary encoding (a binary large object [BLOB]) of the private <a href="display.devmodew">DEVMODEW</a> structure into the print ticket in a conversion of a DEVMODEW to a print ticket. 
+The system places a binary encoding (a binary large object [BLOB]) of the private <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure into the print ticket in a conversion of a DEVMODEW to a print ticket. 
 
 
 ### -param OEMPT_NOSNAPSHOT
@@ -148,18 +149,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.iprintoemprintticketprovider_convertdevmodetoprintticket">IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553161">IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket</a>
 </dt>
 <dt>
-<a href="print.iprintoemprintticketprovider_convertprinttickettodevmode">IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553167">IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode</a>
 </dt>
 <dt>
-<a href="print.iprintoemprintticketprovider_getsupportedversions">IPrintOemPrintTicketProvider::GetSupportedVersions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553170">IPrintOemPrintTicketProvider::GetSupportedVersions</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemPrintTicketProvider::BindPrinter method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemPrintTicketProvider::BindPrinter method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisAllocateNetBuffer
+UID: NF:ndis.NdisAllocateNetBuffer
 title: NdisAllocateNetBuffer function
 author: windows-driver-content
 description: Call the NdisAllocateNetBuffer function to allocate and initialize a NET_BUFFER structure from a NET_BUFFER structure pool.
 old-location: netvista\ndisallocatenetbuffer.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b10c5a4b-fb43-4880-9641-ff2dcf0e5cb3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisAllocateNetBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisAllocateNetBuffer function
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 Call the 
   <b>NdisAllocateNetBuffer</b> function to allocate and initialize a 
-  <a href="netvista.net_buffer">NET_BUFFER</a> structure from a <b>NET_BUFFER</b> structure
+  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure from a <b>NET_BUFFER</b> structure
   pool.
 
 
@@ -61,14 +62,14 @@ PNET_BUFFER NdisAllocateNetBuffer(
 
 ### -param PoolHandle [in]
 
-A <a href="netvista.net_buffer">NET_BUFFER</a> structure pool handle that was previously returned from a call to 
-     <a href="netvista.ndisallocatenetbufferpool">
+A <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure pool handle that was previously returned from a call to 
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">
      NdisAllocateNetBufferPool</a>.
 
 
 ### -param MdlChain [in, optional]
 
-A pointer to an MDL chain that NDIS uses to initialize the new <a href="netvista.net_buffer">NET_BUFFER</a> structure. 
+A pointer to an MDL chain that NDIS uses to initialize the new <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure. 
      <i>MdlChain</i> can be <b>NULL</b>.
 
 
@@ -91,17 +92,17 @@ The length of the
 
 
 ## -returns
-<b>NdisAllocateNetBuffer</b> returns a pointer to the <a href="netvista.net_buffer">NET_BUFFER</a> structure that NDIS allocated. If the
+<b>NdisAllocateNetBuffer</b> returns a pointer to the <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure that NDIS allocated. If the
      allocation was unsuccessful, this pointer is <b>NULL</b>.
 
 
 ## -remarks
 Call 
-    <a href="netvista.ndisfreenetbuffer">NdisFreeNetBuffer</a> to free a 
-    <a href="netvista.net_buffer">NET_BUFFER</a> structure that was allocated from a
+    <a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a> to free a 
+    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure that was allocated from a
     <b>NET_BUFFER</b> structure pool.
 
-The preallocated <a href="netvista.net_buffer">NET_BUFFER</a> can be reused by reinitializing it with another MDL chain when it owns
+The preallocated <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> can be reused by reinitializing it with another MDL chain when it owns
     <b>NET_BUFFER</b>, but the 
     <i>DataOffset</i>, 
     <i>DataLength</i>, 
@@ -113,11 +114,11 @@ For example, if the original MDL chain contains <i>X</i>
 <i>DataOffset</i>, and 
     <i>CurrentMdl</i> starts with the second MDL (<i>M</i>) in the original MDL chain, 
     <i>CurrentMdlOffset</i> is <i>Z</i>. The 
-    <i>MdlChain</i> field in <a href="netvista.net_buffer_data">NET_BUFFER_DATA</a> then needs to point to a new MDL chain that contains <i>X'</i>
+    <i>MdlChain</i> field in <a href="..\ndis\ns-ndis-_net_buffer_data.md">NET_BUFFER_DATA</a> then needs to point to a new MDL chain that contains <i>X'</i>
 <i>DataLength</i> and <i>Y'</i>
 <i>DataOffset</i>. If 
     <i>CurrentMdl</i> starts with the third MDL (<i>M'</i>) in the new MDL chain, 
-    <i>CurrentMdlOffset</i> is <i>Z'</i>, and the following macros need to be used to set fields in <a href="netvista.net_buffer">NET_BUFFER</a>:
+    <i>CurrentMdlOffset</i> is <i>Z'</i>, and the following macros need to be used to set fields in <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>:
 
 
 ## -requirements
@@ -181,7 +182,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>, <a href="devtest.ndis_ndisallocatenetbuffer">NdisAllocateNetBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>, <a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
 </td>
 </tr>
 </table>
@@ -189,21 +190,21 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatenetbufferpool">NdisAllocateNetBufferPool</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">NdisAllocateNetBufferPool</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreenetbuffer">NdisFreeNetBuffer</a>
+<a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisAllocateNetBuffer function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateNetBuffer function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

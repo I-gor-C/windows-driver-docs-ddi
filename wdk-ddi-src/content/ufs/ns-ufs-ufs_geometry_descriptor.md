@@ -1,5 +1,5 @@
 ---
-UID: NS.UFS.UFS_GEOMETRY_DESCRIPTOR
+UID: NS:ufs.UFS_GEOMETRY_DESCRIPTOR
 title: UFS_GEOMETRY_DESCRIPTOR
 author: windows-driver-content
 description: UFS_GEOMETRY_DESCRIPTOR describes a device's geometric parameters.
@@ -7,8 +7,8 @@ old-location: storage\ufs_geometry_descriptor.htm
 old-project: storage
 ms.assetid: DD3AEB66-E36B-4F18-AFEC-D344132D4B8C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: UFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR, PUFS_GEOMETRY_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: UFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetThreadIdByHandle
+UID: NF:dbgeng.IDebugSystemObjects4.GetThreadIdByHandle
 title: IDebugSystemObjects4::GetThreadIdByHandle method
 author: windows-driver-content
 description: The GetThreadIdByHandle method returns the engine thread ID for the specified thread. The thread is specified by its system handle.
 old-location: debugger\getthreadidbyhandle.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 80962f29-9a11-456b-b083-bd0f4e26e954
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetThreadIdByHandle, GetThreadIdByHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetThreadIdByHandle method

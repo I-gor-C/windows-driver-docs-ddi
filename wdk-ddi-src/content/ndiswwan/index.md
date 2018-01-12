@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:ndiswwan
 ---
 
 # Ndiswwan.h header
 
 ## -description
 
-This header is used by NetVista. For more information, see
-- [NetVista](../_NetVista/index.md)
+This header is used by Networking drivers for Windows Vista and later. For more information, see
+- [Networking drivers for Windows Vista and later](../_netvista/index.md)
 
 Ndiswwan.h contain these programming interfaces:
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportMidiStream.SetFormat
+UID: NF:portcls.IMiniportMidiStream.SetFormat
 title: IMiniportMidiStream::SetFormat method
 author: windows-driver-content
 description: The SetFormat method sets the KS data format of the MIDI stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportMidiStream::SetFormat method

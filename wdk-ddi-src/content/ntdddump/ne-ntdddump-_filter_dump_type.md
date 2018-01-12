@@ -1,5 +1,5 @@
 ---
-UID: NE.ntdddump._FILTER_DUMP_TYPE
+UID: NE:ntdddump._FILTER_DUMP_TYPE
 title: _FILTER_DUMP_TYPE
 author: windows-driver-content
 description: The FILTER_DUMP_TYPE enumeration indicates the type of dump stack that this instance of the filter driver is loaded on.
@@ -7,8 +7,8 @@ old-location: storage\filter_dump_type.htm
 old-project: storage
 ms.assetid: 396aec33-b4b4-4b4e-9890-b4aa829c3bbd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _FILTER_DUMP_TYPE, *PFILTER_DUMP_TYPE, PFILTER_DUMP_TYPE, FILTER_DUMP_TYPE
+ms.date: 1/10/2018
+ms.keywords: _FILTER_DUMP_TYPE, *PFILTER_DUMP_TYPE, FILTER_DUMP_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PFILTER_DUMP_TYPE, FILTER_DUMP_TYPE
 ---
 
 # _FILTER_DUMP_TYPE enumeration

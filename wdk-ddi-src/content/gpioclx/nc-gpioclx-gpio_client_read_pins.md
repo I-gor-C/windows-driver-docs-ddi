@@ -1,5 +1,5 @@
 ---
-UID: NC.gpioclx.GPIO_CLIENT_READ_PINS
+UID: NC:gpioclx.GPIO_CLIENT_READ_PINS
 title: GPIO_CLIENT_READ_PINS
 author: windows-driver-content
 description: The CLIENT_ReadGpioPins event callback function reads a set of general-purpose I/O (GPIO) pins that are configured as data inputs.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: FE1AB8D5-DEA7-47BE-921E-BB33BBB61AC9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks.
+req.typenames: *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ---
 
 # GPIO_CLIENT_READ_PINS callback

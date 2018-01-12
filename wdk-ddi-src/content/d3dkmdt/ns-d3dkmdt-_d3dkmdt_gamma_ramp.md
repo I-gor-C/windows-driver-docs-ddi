@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDT._D3DKMDT_GAMMA_RAMP
+UID: NS:d3dkmdt._D3DKMDT_GAMMA_RAMP
 title: _D3DKMDT_GAMMA_RAMP
 author: windows-driver-content
 description: The D3DKMDT_GAMMA_RAMP structure contains descriptive information about a gamma lookup table and a pointer to the lookup table.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_gamma_ramp.htm
 old-project: display
 ms.assetid: 3a875a1e-ef4f-4851-9329-f1fd2aca261f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_GAMMA_RAMP, D3DKMDT_GAMMA_RAMP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMDT_GAMMA_RAMP
 ---
 
 # _D3DKMDT_GAMMA_RAMP structure
@@ -62,7 +63,7 @@ typedef struct _D3DKMDT_GAMMA_RAMP {
 
 ### -field Type
 
-A <a href="display.d3dddi_gammaramp_type">D3DDDI_GAMMARAMP_TYPE</a> enumerator that specifies the format of the lookup table. 
+A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_gammaramp_type.md">D3DDDI_GAMMARAMP_TYPE</a> enumerator that specifies the format of the lookup table. 
 
 
 ### -field DataSize
@@ -77,12 +78,12 @@ The size, in bytes, of the lookup table pointed to by <i>Data</i>.
 
 ### -field pRgb256x3x16
 
-If <b>Type</b> is equal to D3DDDI_GAMMARAMP_RGB256x3x16, this member is a pointer to a <a href="display.d3dddi_gamma_ramp_rgb256x3x16">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> structure that contains the lookup table. 
+If <b>Type</b> is equal to D3DDDI_GAMMARAMP_RGB256x3x16, this member is a pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_gamma_ramp_rgb256x3x16.md">D3DDDI_GAMMA_RAMP_RGB256x3x16</a> structure that contains the lookup table. 
 
 
 ### -field pDxgi1
 
-If <b>Type</b> is equal to D3DDDI_GAMMARAMP_DXGI_1, this member is a pointer to a <a href="display.d3dddi_gamma_ramp_dxgi_1">D3DDDI_GAMMA_RAMP_DXGI_1</a> structure that contains the lookup table. 
+If <b>Type</b> is equal to D3DDDI_GAMMARAMP_DXGI_1, this member is a pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_gamma_ramp_dxgi_1.md">D3DDDI_GAMMA_RAMP_DXGI_1</a> structure that contains the lookup table. 
 
 
 ### -field p3x4
@@ -98,7 +99,7 @@ This member provides an alternative way to access the lookup table data. For exa
 </dl>
 
 ## -remarks
-The <b>GammaRamp</b> member of the <a href="display.d3dkmdt_vidpn_present_path">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_GAMMA_RAMP structure.
+The <b>GammaRamp</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a D3DKMDT_GAMMA_RAMP structure.
 
 
 ## -requirements

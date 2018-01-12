@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._SELF_ID_MORE
+UID: NS:1394._SELF_ID_MORE
 title: _SELF_ID_MORE
 author: windows-driver-content
 description: The SELF_ID_MORE structure contains a raw packet one, two, or three self-ID packet. See the IEEE 1394 specification for details.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: d3c164a6-4830-4f1f-9fa5-5cd61e796e31
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SELF_ID_MORE, *PSELF_ID_MORE, PSELF_ID_MORE, SELF_ID_MORE
+ms.keywords: _SELF_ID_MORE, SELF_ID_MORE, *PSELF_ID_MORE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SELF_ID_MORE, *PSELF_ID_MORE
 ---
 
 # _SELF_ID_MORE structure

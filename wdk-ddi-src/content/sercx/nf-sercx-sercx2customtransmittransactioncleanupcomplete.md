@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2CustomTransmitTransactionCleanupComplete
+UID: NF:sercx.SerCx2CustomTransmitTransactionCleanupComplete
 title: SerCx2CustomTransmitTransactionCleanupComplete function
 author: windows-driver-content
 description: The SerCx2CustomTransmitTransactionCleanupComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished cleaning up the serial controller's hardware state after a custom-transmit transaction.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID SerCx2CustomTransmitTransactionCleanupComplete(
 
 ### -param CustomTransmitTransaction [in]
 
-A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265257">SERCX2CUSTOMTRANSMITTRANSACTION</a> handle to a custom-transmit object. The serial controller driver previously called the <a href="serports.sercx2customtransmittransactioncreate">SerCx2CustomTransmitTransactionCreate</a> method to create this object.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265257">SERCX2CUSTOMTRANSMITTRANSACTION</a> handle to a custom-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a> method to create this object.
 
 
 ## -returns
@@ -126,7 +127,7 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265257">SERCX2CUSTOMTRANSMITTRANSACTION</a>
 </dt>
 <dt>
-<a href="serports.sercx2customtransmittransactioncreate">SerCx2CustomTransmitTransactionCreate</a>
+<a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a>
 </dt>
 </dl>
  

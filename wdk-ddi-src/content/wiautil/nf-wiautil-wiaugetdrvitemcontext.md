@@ -1,13 +1,13 @@
 ---
-UID: NF.wiautil.wiauGetDrvItemContext
+UID: NF:wiautil.wiauGetDrvItemContext
 title: wiauGetDrvItemContext function
 author: windows-driver-content
 description: The wiauGetDrvItemContext function gets the driver item context, and optionally, the driver item.
 old-location: image\wiaugetdrvitemcontext.htm
-old-project: Image
+old-project: image
 ms.assetid: 6d4b7a25-436f-4547-8969-66dd45fa46fd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiauGetDrvItemContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SKIP_AMOUNT
 req.product: Windows 10 or later.
 ---
 

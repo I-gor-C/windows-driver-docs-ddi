@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP._SPLCLIENT_INFO_3_VISTA
+UID: NS:winsplp._SPLCLIENT_INFO_3_VISTA
 title: _SPLCLIENT_INFO_3_VISTA
 author: windows-driver-content
 description: Contains a super-set of the information in both a SPLCLIENT_INFO_1 and SPLCLIENT_INFO_2 structure. It also contains additional information needed by the provider.
@@ -7,8 +7,8 @@ old-location: print\splclient_info_3_vista.htm
 old-project: print
 ms.assetid: 076ECB20-CFAD-4A16-9B01-6936E0DD7E50
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SPLCLIENT_INFO_3_VISTA, SPLCLIENT_INFO_3_VISTA
+ms.date: 1/8/2018
+ms.keywords: _SPLCLIENT_INFO_3_VISTA, SPLCLIENT_INFO_3_VISTA, *LPSPLCLIENT_INFO_3, SPLCLIENT_INFO_3, *PSPLCLIENT_INFO_3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SPLCLIENT_INFO_3_VISTA
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlAreVolumeStartupApplicationsComplete
+UID: NF:ntifs.FsRtlAreVolumeStartupApplicationsComplete
 title: FsRtlAreVolumeStartupApplicationsComplete function
 author: windows-driver-content
 description: The FsRtlAreVolumeStartupApplicationsComplete function determines whether volume startup applications have completed processing.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlarevolumestartupapplicationscomplete.htm
 old-project: ifsk
 ms.assetid: a6ee1b04-7f62-452c-92b7-7325278bcd17
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlAreVolumeStartupApplicationsComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlAreVolumeStartupApplicationsComplete function
@@ -65,9 +66,9 @@ The <b>FsRtlAreVolumeStartupApplicationsComplete</b> function returns <b>TRUE</b
 
 You can use this information to modify the behavior of file system drivers.  For example, a file system driver can adversely affect Autochk.exe if the driver starts its processing before Autochck.exe has fully completed.  If <b>FsRtlAreVolumeStartupApplicationsComplete</b> returns <b>TRUE</b>, Autochk.exe is guaranteed to have fully completed.
 
-To retrieve information about the volume that a minifilter instance is attached to, see <a href="ifsk.fltqueryvolumeinformation">FltQueryVolumeInformation</a>. 
+To retrieve information about the volume that a minifilter instance is attached to, see <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>. 
 
-To retrieve information about the volume associated with a given file, directory, or storage device, see <a href="ifsk.fltqueryvolumeinformation">FltQueryVolumeInformation</a>. 
+To retrieve information about the volume associated with a given file, directory, or storage device, see <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>. 
 
 
 ## -requirements
@@ -141,15 +142,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltqueryvolumeinformation">FltQueryVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryvolumeinformationfile">ZwQueryVolumeInformationFile</a>
+<a href="..\ntifs\nf-ntifs-zwqueryvolumeinformationfile.md">ZwQueryVolumeInformationFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAreVolumeStartupApplicationsComplete function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAreVolumeStartupApplicationsComplete function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

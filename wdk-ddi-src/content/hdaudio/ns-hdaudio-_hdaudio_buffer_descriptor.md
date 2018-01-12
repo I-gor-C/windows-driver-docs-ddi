@@ -1,5 +1,5 @@
 ---
-UID: NS.HDAUDIO._HDAUDIO_BUFFER_DESCRIPTOR
+UID: NS:hdaudio._HDAUDIO_BUFFER_DESCRIPTOR
 title: _HDAUDIO_BUFFER_DESCRIPTOR
 author: windows-driver-content
 description: The HDAUDIO_BUFFER_DESCRIPTOR structure specifies a buffer descriptor, which is an entry in a buffer descriptor list (BDL).
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: da07d3c2-0bd5-4e61-87b3-6fda8007cf5f
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_BUFFER_DESCRIPTOR, *PHDAUDIO_BUFFER_DESCRIPTOR, PHDAUDIO_BUFFER_DESCRIPTOR, HDAUDIO_BUFFER_DESCRIPTOR
+ms.keywords: _HDAUDIO_BUFFER_DESCRIPTOR, HDAUDIO_BUFFER_DESCRIPTOR, *PHDAUDIO_BUFFER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: HDAUDIO_BUFFER_DESCRIPTOR, *PHDAUDIO_BUFFER_DESCRIPTOR
 ---
 
 # _HDAUDIO_BUFFER_DESCRIPTOR structure

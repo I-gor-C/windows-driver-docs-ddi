@@ -1,5 +1,5 @@
 ---
-UID: NE.spb.SPB_TRANSFER_BUFFER_FORMAT
+UID: NE:spb.SPB_TRANSFER_BUFFER_FORMAT
 title: SPB_TRANSFER_BUFFER_FORMAT
 author: windows-driver-content
 description: The SPB_TRANSFER_BUFFER_FORMAT enumeration specifies the format of the buffer that is described by an SPB_TRANSFER_BUFFER structure.
@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: EAC78940-318D-4785-9D7E-410B8AB2F4C7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SPB_TRANSFER_BUFFER_FORMAT, SPB_TRANSFER_BUFFER_FORMAT, *PSPB_TRANSFER_BUFFER_FORMAT
+ms.keywords: SPB_TRANSFER_BUFFER_FORMAT, *PSPB_TRANSFER_BUFFER_FORMAT, SPB_TRANSFER_BUFFER_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSPB_TRANSFER_BUFFER_FORMAT, SPB_TRANSFER_BUFFER_FORMAT
 req.product: Windows 10 or later.
 ---
 

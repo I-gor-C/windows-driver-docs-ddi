@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMCloseLog
+UID: NF:ndis.NdisMCloseLog
 title: NdisMCloseLog function
 author: windows-driver-content
 description: NdisMCloseLog releases resources that were used for logging.
 old-location: netvista\ndismcloselog.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a4b2bf1a-f15d-409f-bd5f-84dbf8dadc09
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMCloseLog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMCloseLog function
@@ -56,7 +57,7 @@ VOID NdisMCloseLog(
 ### -param LogHandle [in]
 
 Specifies the handle returned by 
-     <a href="netvista.ndismcreatelog">NdisMCreateLog</a>.
+     <a href="..\ndis\nf-ndis-ndismcreatelog.md">NdisMCreateLog</a>.
 
 
 ## -returns
@@ -136,18 +137,18 @@ PASSIVE_LEVEL
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismcreatelog">NdisMCreateLog</a>
+<a href="..\ndis\nf-ndis-ndismcreatelog.md">NdisMCreateLog</a>
 </dt>
 <dt>
-<a href="netvista.ndismflushlog">NdisMFlushLog</a>
+<a href="..\ndis\nf-ndis-ndismflushlog.md">NdisMFlushLog</a>
 </dt>
 <dt>
-<a href="netvista.ndismwritelogdata">NdisMWriteLogData</a>
+<a href="..\ndis\nf-ndis-ndismwritelogdata.md">NdisMWriteLogData</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMCloseLog function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCloseLog function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

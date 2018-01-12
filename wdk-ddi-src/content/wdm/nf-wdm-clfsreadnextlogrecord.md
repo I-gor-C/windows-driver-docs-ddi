@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ClfsReadNextLogRecord
+UID: NF:wdm.ClfsReadNextLogRecord
 title: ClfsReadNextLogRecord function
 author: windows-driver-content
 description: The ClfsReadNextLogRecord routine reads the next record in a sequence, relative to the current record in a read context.
@@ -7,7 +7,7 @@ old-location: kernel\clfsreadnextlogrecord.htm
 old-project: kernel
 ms.assetid: 4990f3d7-e48c-49ee-9384-4bcad93c9281
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ClfsReadNextLogRecord
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Clfs.lib
 req.dll: Clfs.sys
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ NTSTATUS ClfsReadNextLogRecord(
 
 ### -param pvReadContext [in, out]
 
-A pointer to a read context that the caller previously obtained by calling <a href="kernel.clfsreadlogrecord">ClfsReadLogRecord</a> or <a href="kernel.clfsreadrestartarea">ClfsReadRestartArea</a>.
+A pointer to a read context that the caller previously obtained by calling <a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a> or <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>.
 
 
 ### -param ppvBuffer [out]
@@ -121,7 +122,7 @@ The next record that is either a data record or a restart record.
 
 ### -param plsnUser [in, optional]
 
-A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that supplies the LSN of the record to be read. The specified record is read instead of the record that would have been read according to the mode (<b>ClfsContextUndoNext</b>, <b>ClfsContextPrevious</b>, or <b>ClfsContextForward</b>) of the read context (<i>pvReadContext</i>). The LSN supplied in <i>plsnUser</i> must be less than the current LSN of the read context. This parameter can be <b>NULL</b>.
+A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that supplies the LSN of the record to be read. The specified record is read instead of the record that would have been read according to the mode (<b>ClfsContextUndoNext</b>, <b>ClfsContextPrevious</b>, or <b>ClfsContextForward</b>) of the read context (<i>pvReadContext</i>). The LSN supplied in <i>plsnUser</i> must be less than the current LSN of the read context. This parameter can be <b>NULL</b>.
 
 
 ### -param plsnUndoNext [out]
@@ -222,18 +223,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfs_lsn">CLFS_LSN</a>
+<a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a>
 </dt>
 <dt>
-<a href="kernel.clfsreadlogrecord">ClfsReadLogRecord</a>
+<a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a>
 </dt>
 <dt>
-<a href="kernel.clfsreadrestartarea">ClfsReadRestartArea</a>
+<a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReadNextLogRecord routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReadNextLogRecord routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

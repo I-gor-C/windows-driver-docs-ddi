@@ -1,5 +1,5 @@
 ---
-UID: NS.WDFUSB._WDF_USB_CONTINUOUS_READER_CONFIG
+UID: NS:wdfusb._WDF_USB_CONTINUOUS_READER_CONFIG
 title: _WDF_USB_CONTINUOUS_READER_CONFIG
 author: windows-driver-content
 description: The WDF_USB_CONTINUOUS_READER_CONFIG structure contains information that the framework uses to configure a continuous reader for a USB pipe.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_usb_continuous_reader_config.htm
 old-project: wdf
 ms.assetid: 9b98d5f1-6052-4c52-b3d4-031c8a0db51c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_USB_CONTINUOUS_READER_CONFIG, WDF_USB_CONTINUOUS_READER_CONFIG, PWDF_USB_CONTINUOUS_READER_CONFIG, *PWDF_USB_CONTINUOUS_READER_CONFIG
+ms.date: 12/29/2017
+ms.keywords: _WDF_USB_CONTINUOUS_READER_CONFIG, WDF_USB_CONTINUOUS_READER_CONFIG, *PWDF_USB_CONTINUOUS_READER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_USB_CONTINUOUS_READER_CONFIG, *PWDF_USB_CONTINUOUS_READER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -91,7 +92,7 @@ The number of read requests that the framework will queue to receive data from t
 
 ### -field BufferAttributes
 
-A <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the framework memory object that the framework creates for each read request. This member can be <b>NULL</b>. You cannot set the <b>ParentObject</b> member of the WDF_OBJECT_ATTRIBUTES structure. 
+A <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the framework memory object that the framework creates for each read request. This member can be <b>NULL</b>. You cannot set the <b>ParentObject</b> member of the WDF_OBJECT_ATTRIBUTES structure. 
 
 
 ### -field EvtUsbTargetPipeReadComplete
@@ -106,13 +107,13 @@ An untyped pointer to driver-defined context information that the framework pass
 
 ### -field EvtUsbTargetPipeReadersFailed
 
-A pointer to the driver's <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_readers_failed.md">EvtUsbTargetPipeReadersFailed</a> callback function. This pointer is optional and can be <b>NULL</b>. For more information about about this parameter, see the Remarks section of <a href="wdf.wdfusbtargetpipeconfigcontinuousreader">WdfUsbTargetPipeConfigContinuousReader</a>.
+A pointer to the driver's <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_readers_failed.md">EvtUsbTargetPipeReadersFailed</a> callback function. This pointer is optional and can be <b>NULL</b>. For more information about about this parameter, see the Remarks section of <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader.md">WdfUsbTargetPipeConfigContinuousReader</a>.
 
 
 ## -remarks
-The <b>WDF_USB_CONTINUOUS_READER_CONFIG</b> structure is used as input to the <a href="wdf.wdfusbtargetpipeconfigcontinuousreader">WdfUsbTargetPipeConfigContinuousReader</a> method. 
+The <b>WDF_USB_CONTINUOUS_READER_CONFIG</b> structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader.md">WdfUsbTargetPipeConfigContinuousReader</a> method. 
 
-To initialize a WDF_USB_CONTINUOUS_READER_CONFIG structure, the driver must call <a href="wdf.wdf_usb_continuous_reader_config_init">WDF_USB_CONTINUOUS_READER_CONFIG_INIT</a>.
+To initialize a WDF_USB_CONTINUOUS_READER_CONFIG structure, the driver must call <a href="..\wdfusb\nf-wdfusb-wdf_usb_continuous_reader_config_init.md">WDF_USB_CONTINUOUS_READER_CONFIG_INIT</a>.
 
 Use the following guidelines when choosing a value for the <b>NumPendingReads</b> member:
 
@@ -173,18 +174,18 @@ Header
 <a href="..\wdfusb\nc-wdfusb-evt_wdf_usb_readers_failed.md">EvtUsbTargetPipeReadersFailed</a>
 </dt>
 <dt>
-<a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="wdf.wdf_usb_continuous_reader_config_init">WDF_USB_CONTINUOUS_READER_CONFIG_INIT</a>
+<a href="..\wdfusb\nf-wdfusb-wdf_usb_continuous_reader_config_init.md">WDF_USB_CONTINUOUS_READER_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="wdf.wdfusbtargetpipeconfigcontinuousreader">WdfUsbTargetPipeConfigContinuousReader</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeconfigcontinuousreader.md">WdfUsbTargetPipeConfigContinuousReader</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTINUOUS_READER_CONFIG structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_USB_CONTINUOUS_READER_CONFIG structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IDrmPort2.ForwardContentToDeviceObject
+UID: NF:portcls.IDrmPort2.ForwardContentToDeviceObject
 title: IDrmPort2::ForwardContentToDeviceObject method
 author: windows-driver-content
 description: The ForwardContentToDeviceObject method accepts a device object representing a device to which the caller intends to forward protected content.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IDrmPort2::ForwardContentToDeviceObject method
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <code>ForwardContentToDeviceObject</code> method accepts a device object representing a device to which the caller intends to forward protected content. Note that this method is identical in operation to the <a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a> function, and its parameter definitions and return value are also identical.
+The <code>ForwardContentToDeviceObject</code> method accepts a device object representing a device to which the caller intends to forward protected content. Note that this method is identical in operation to the <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a> function, and its parameter definitions and return value are also identical.
 
 
 
@@ -53,15 +54,15 @@ NTSTATUS ForwardContentToDeviceObject();
 
 
 ## -returns
-See return value definition in <a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>.
 
-See return value definition in <a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>.
 
-See return value definition in <a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>.
 
 
 ## -remarks
-See comments in <a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a>.
+See comments in <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>.
 
 
 ## -requirements
@@ -96,7 +97,7 @@ Header
 <a href="..\portcls\nn-portcls-idrmport2.md">IDrmPort2</a>
 </dt>
 <dt>
-<a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d12umddi.PFND3D12DDI_CREATECOMMANDQUEUE_0023
+UID: NC:d3d12umddi.PFND3D12DDI_CREATECOMMANDQUEUE_0023
 title: PFND3D12DDI_CREATECOMMANDQUEUE_0023
 author: windows-driver-content
 description: The pfnCreateCommandQueue callback function is used to create command queue.
@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_createcommandqueue_0023.htm
 old-project: display
 ms.assetid: 1DA52354-2338-4214-8489-B6BFCD6060FB
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 # PFND3D12DDI_CREATECOMMANDQUEUE_0023 callback

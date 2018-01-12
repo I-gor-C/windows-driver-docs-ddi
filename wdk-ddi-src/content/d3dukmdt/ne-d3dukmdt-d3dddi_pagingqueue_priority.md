@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dukmdt.D3DDDI_PAGINGQUEUE_PRIORITY
+UID: NE:d3dukmdt.D3DDDI_PAGINGQUEUE_PRIORITY
 title: D3DDDI_PAGINGQUEUE_PRIORITY
 author: windows-driver-content
 description: The D3DDDI_PAGINGQUEUE_PRIORITY enumeration indicates the scheduling priority relative to other paging queues on a device.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_pagingqueue_priority.htm
 old-project: display
 ms.assetid: A5CF6601-C0BF-4534-93DD-5FFA4F167CFC
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DDDI_PAGINGQUEUE_PRIORITY, D3DDDI_PAGINGQUEUE_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_PAGINGQUEUE_PRIORITY
 ---
 
 # D3DDDI_PAGINGQUEUE_PRIORITY enumeration

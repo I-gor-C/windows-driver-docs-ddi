@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMDeregisterScatterGatherDma
+UID: NF:ndis.NdisMDeregisterScatterGatherDma
 title: NdisMDeregisterScatterGatherDma function
 author: windows-driver-content
 description: Bus-master miniport drivers call NdisMDeregisterScatterGatherDma to release DMA resources that were allocated with the NdisMRegisterScatterGatherDma function.
 old-location: netvista\ndismderegisterscattergatherdma.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 44792a1f-c6d5-4491-a06d-e00e41e40059
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMDeregisterScatterGatherDma
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMDeregisterScatterGatherDma function
@@ -40,7 +41,7 @@ req.irql: PASSIVE_LEVEL
 ## -description
 Bus-master miniport drivers call 
   <b>NdisMDeregisterScatterGatherDma</b> to release DMA resources that were allocated with the 
-  <a href="netvista.ndismregisterscattergatherdma">
+  <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
   NdisMRegisterScatterGatherDma</a> function.
 
 
@@ -136,7 +137,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_init_registersg">Init_RegisterSG</a>, <a href="devtest.ndis_irql_gather_dma_function">Irql_Gather_DMA_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547153">Init_RegisterSG</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547934">Irql_Gather_DMA_Function</a>
 </td>
 </tr>
 </table>
@@ -147,25 +148,25 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterscattergatherdma">
+<a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
    NdisMRegisterScatterGatherDma</a>
 </dt>
 <dt>
-<a href="netvista.allocating_and_freeing_scatter_gather_lists">Allocating and Freeing Scatter/Gather Lists</a>
+<a href="https://msdn.microsoft.com/95463617-65df-4c02-82f4-e3aba44d42fb">Allocating and Freeing Scatter/Gather Lists</a>
 </dt>
 <dt>
-<a href="netvista.scatter_gather_dma2">Miniport Driver Scatter/Gather DMA</a>
+<a href="https://msdn.microsoft.com/c7e702aa-494f-4b27-a7c3-d42ef8f42a6e">Miniport Driver Scatter/Gather DMA</a>
 </dt>
 <dt>
-<a href="netvista.ndis_scatter_gather_dma">NDIS Scatter/Gather DMA</a>
+<a href="https://msdn.microsoft.com/70b8321b-7b21-4d11-a9c2-46b0caa26ce6">NDIS Scatter/Gather DMA</a>
 </dt>
 <dt>
-<a href="netvista.registering_and_deregistering_dma_channels">Registering and Deregistering DMA Channels</a>
+<a href="https://msdn.microsoft.com/b24e0a56-1864-4f70-a646-c35e8eccd9e3">Registering and Deregistering DMA Channels</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMDeregisterScatterGatherDma function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMDeregisterScatterGatherDma function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

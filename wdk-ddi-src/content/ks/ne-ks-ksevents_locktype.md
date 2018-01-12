@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSEVENTS_LOCKTYPE
+UID: NE:ks.KSEVENTS_LOCKTYPE
 title: KSEVENTS_LOCKTYPE
 author: windows-driver-content
 description: The KSEVENTS_LOCKTYPE enumeration identifies the type of exclusion lock. The types are used with EventFlags in several event-set helper functions.
@@ -7,7 +7,7 @@ old-location: stream\ksevents_locktype.htm
 old-project: stream
 ms.assetid: 775d08ad-40c2-44b7-af02-6c182301e46f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSEVENTS_LOCKTYPE, KSEVENTS_LOCKTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSEVENTS_LOCKTYPE
 ---
 
 # KSEVENTS_LOCKTYPE enumeration

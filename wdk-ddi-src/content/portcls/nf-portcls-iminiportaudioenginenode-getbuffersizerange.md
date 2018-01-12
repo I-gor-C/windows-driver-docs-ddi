@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioEngineNode.GetBufferSizeRange
+UID: NF:portcls.IMiniportAudioEngineNode.GetBufferSizeRange
 title: IMiniportAudioEngineNode::GetBufferSizeRange method
 author: windows-driver-content
 description: Gets the minimum and maximum buffer size that the hardware audio engine can support.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioEngineNode::GetBufferSizeRange method
@@ -67,7 +68,7 @@ A <a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVE
 
 ### -param pBufferSizeRange [out]
 
-A <a href="audio.ksaudio_buffer_limits">KSAUDIOENGINE_BUFFER_SIZE_RANGE</a> structure that represents the minimum and maximum buffer size that the hardware audio engine can support at the time when it is called.
+A <a href="..\ksmedia\ns-ksmedia-_tagksaudioengine_buffer_size_range.md">KSAUDIOENGINE_BUFFER_SIZE_RANGE</a> structure that represents the minimum and maximum buffer size that the hardware audio engine can support at the time when it is called.
 
 
 ## -returns

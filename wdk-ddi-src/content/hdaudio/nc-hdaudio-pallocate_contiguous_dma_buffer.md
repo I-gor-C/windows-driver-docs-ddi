@@ -1,5 +1,5 @@
 ---
-UID: NC.hdaudio.PALLOCATE_CONTIGUOUS_DMA_BUFFER
+UID: NC:hdaudio.PALLOCATE_CONTIGUOUS_DMA_BUFFER
 title: PALLOCATE_CONTIGUOUS_DMA_BUFFER
 author: windows-driver-content
 description: The AllocateContiguousDmaBuffer routine allocates a DMA buffer that consists of a single, contiguous block of physical memory.The function pointer type for an AllocateContiguousDmaBuffer routine is defined as:
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 4538ce8e-fccd-4862-b226-a99fe578a5fd
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 # PALLOCATE_CONTIGUOUS_DMA_BUFFER callback
@@ -64,7 +65,7 @@ NTSTATUS AllocateContiguousDmaBuffer(
 
 ### -param context [in]
 
-Specifies the context value from the <b>Context</b> member of the <a href="audio.hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
+Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
 
 
 ### -param handle [in]
@@ -172,7 +173,7 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="audio.hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a>
 </dt>
 <dt>
 <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCaptureDmaEngine</a>

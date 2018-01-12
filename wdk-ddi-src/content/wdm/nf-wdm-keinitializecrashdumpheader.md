@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeInitializeCrashDumpHeader
+UID: NF:wdm.KeInitializeCrashDumpHeader
 title: KeInitializeCrashDumpHeader function
 author: windows-driver-content
 description: The KeInitializeCrashDumpHeader routine supplies the header information the system requires for a crash dump file.
@@ -7,7 +7,7 @@ old-location: kernel\keinitializecrashdumpheader.htm
 old-project: kernel
 ms.assetid: 6fa0cf86-35f4-4e5d-bced-ebd2ec499b64
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeInitializeCrashDumpHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

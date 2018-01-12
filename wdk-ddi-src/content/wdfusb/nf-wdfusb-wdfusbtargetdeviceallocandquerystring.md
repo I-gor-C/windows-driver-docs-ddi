@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfusb.WdfUsbTargetDeviceAllocAndQueryString
+UID: NF:wdfusb.WdfUsbTargetDeviceAllocAndQueryString
 title: WdfUsbTargetDeviceAllocAndQueryString function
 author: windows-driver-content
 description: The WdfUsbTargetDeviceAllocAndQueryString method allocates a buffer, then it retrieves the Unicode string that is associated with a specified USB device and descriptor index value.
@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetdeviceallocandquerystring.htm
 old-project: wdf
 ms.assetid: a9dea258-601b-4ff7-b03b-b3f22d86f314
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfUsbTargetDeviceAllocAndQueryString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -63,12 +64,12 @@ NTSTATUS WdfUsbTargetDeviceAllocAndQueryString(
 
 ### -param UsbDevice [in]
 
-A handle to a USB device object that was obtained from a previous call to <a href="wdf.wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
+A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 
 ### -param StringMemoryAttributes [in, optional]
 
-A pointer to a caller-allocated <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains caller-supplied attributes for the new memory object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains caller-supplied attributes for the new memory object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 
 ### -param StringMemory [out]
@@ -83,7 +84,7 @@ A pointer to a location that receives the number of characters that are containe
 
 ### -param StringIndex [in]
 
-An index value that identifies the Unicode string. This index value is obtained from a <a href="buses.usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a>, <a href="buses.usb_configuration_descriptor">USB_CONFIGURATION_DESCRIPTOR</a>, or <a href="buses.usb_interface_descriptor">USB_INTERFACE_DESCRIPTOR</a> structure.
+An index value that identifies the Unicode string. This index value is obtained from a <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>, <a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>, or <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a> structure.
 
 
 ### -param LangID [in, optional]
@@ -116,15 +117,15 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 ## -remarks
-The <b>WdfUsbTargetDeviceAllocAndQueryString</b> method, which your driver only needs to call once to obtain a string descriptor, is an alternative to the <a href="wdf.wdfusbtargetdevicequerystring">WdfUsbTargetDeviceQueryString</a> method, which must be called twice to obtain a string.
+The <b>WdfUsbTargetDeviceAllocAndQueryString</b> method, which your driver only needs to call once to obtain a string descriptor, is an alternative to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicequerystring.md">WdfUsbTargetDeviceQueryString</a> method, which must be called twice to obtain a string.
 
 The method locates the specified USB string descriptor, copies the Unicode string from the descriptor into a memory object, and returns a handle to the memory object. 
 
-After calling <b>WdfUsbTargetDeviceAllocAndQueryString</b>, your driver can pass the <i>StringMemory</i> handle to <a href="wdf.wdfmemorygetbuffer">WdfMemoryGetBuffer</a> to access the contents of the memory object.
+After calling <b>WdfUsbTargetDeviceAllocAndQueryString</b>, your driver can pass the <i>StringMemory</i> handle to <a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a> to access the contents of the memory object.
 
 For more information about USB string descriptors, see the USB specification.
 
-For more information about the <b>WdfUsbTargetDeviceAllocAndQueryString</b> method and USB I/O targets, see <a href="wdf.usb_i_o_targets">USB I/O Targets</a>.
+For more information about the <b>WdfUsbTargetDeviceAllocAndQueryString</b> method and USB I/O targets, see <a href="https://msdn.microsoft.com/195c0f4b-7f33-428a-8de7-32643ad854c6">USB I/O Targets</a>.
 
 The following code example calls <b>WdfUsbTargetDeviceAllocAndQueryString</b> to obtain a manufacturer's name string, in USA English (0x0409), from a USB device descriptor. (The driver previously stored the descriptor in driver-defined context space.)
 
@@ -201,7 +202,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>, <a href="devtest.kmdf_usbkmdfirql">UsbKmdfIrql</a>, <a href="devtest.kmdf_usbkmdfirql2">UsbKmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554042">UsbKmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh995019">UsbKmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -209,27 +210,27 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usb_configuration_descriptor">USB_CONFIGURATION_DESCRIPTOR</a>
+<a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="buses.usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a>
+<a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="buses.usb_interface_descriptor">USB_INTERFACE_DESCRIPTOR</a>
+<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="wdf.wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
 </dt>
 <dt>
-<a href="wdf.wdfusbtargetdevicequerystring">WdfUsbTargetDeviceQueryString</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicequerystring.md">WdfUsbTargetDeviceQueryString</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceAllocAndQueryString method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceAllocAndQueryString method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

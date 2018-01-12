@@ -1,5 +1,5 @@
 ---
-UID: NC.dispmprt.DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION
+UID: NC:dispmprt.DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION
 title: DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION
 author: windows-driver-content
 description: The DxgkDdiOPMGetCOPPCompatibleInformation function retrieves information that is compatible with the Certified Output Protection Protocol (COPP) from the given protected output object.
@@ -7,8 +7,8 @@ old-location: display\dxgkddiopmgetcoppcompatibleinformation.htm
 old-project: display
 ms.assetid: 9f15df1e-bdf5-4634-97f1-78515664b594
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ---
 
 # DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION callback
@@ -71,12 +72,12 @@ The handle to a protected output object. The <a href="..\dispmprt\nc-dispmprt-dx
 
 ### -param Parameters [in]
 
-A pointer to a <a href="display.dxgkmdt_opm_copp_compatible_get_info_parameters">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that contains the type of COPP-compatible information to retrieve from the protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> determines if the parameters contain a valid request from the application that indirectly created the protected output object. For more information, see the Remarks section. 
+A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_copp_compatible_get_info_parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that contains the type of COPP-compatible information to retrieve from the protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> determines if the parameters contain a valid request from the application that indirectly created the protected output object. For more information, see the Remarks section. 
 
 
 ### -param RequestedInformation [out]
 
-A pointer to a <a href="display.dxgkmdt_opm_requested_information">DXGKMDT_OPM_REQUESTED_INFORMATION</a> structure that receives the protected output object's COPP-compatible information if <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> returns successfully.
+A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_requested_information.md">DXGKMDT_OPM_REQUESTED_INFORMATION</a> structure that receives the protected output object's COPP-compatible information if <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> returns successfully.
 
 If <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> fails, the value that <i>RequestedInformation</i> points to is unchanged.
 
@@ -96,7 +97,7 @@ The protected output object whose handle is specified in the <i>ProtectedOutputH
 </dd>
 <dt><b>STATUS_GRAPHICS_OPM_PROTECTED_OUTPUT_DOES_NOT_HAVE_OPM_SEMANTICS</b></dt>
 <dd>
-OPM-specific information was requested. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> cannot return OPM-specific information because it can return only COPP-specific information. Callers that require OPM-specific information should create a protected output with OPM semantics and then call <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>. Following are the types of requests (that are specified in the <b>guidInformation</b> member of the <a href="display.dxgkmdt_opm_copp_compatible_get_info_parameters">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to) that cause <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> to return this value:
+OPM-specific information was requested. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> cannot return OPM-specific information because it can return only COPP-specific information. Callers that require OPM-specific information should create a protected output with OPM semantics and then call <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>. Following are the types of requests (that are specified in the <b>guidInformation</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_copp_compatible_get_info_parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to) that cause <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> to return this value:
 
 
 
@@ -167,7 +168,7 @@ The <b>ulSequenceNumber</b> member of DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAM
 
 The protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter does not have COPP semantics. The DirectX graphics kernel subsystem should call the <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a> function instead of <i>DxgkDdiOPMGetCOPPCompatibleInformation </i>for protected output objects with OPM semantics.
 
-OPM-specific information was requested. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> cannot return OPM-specific information because it can return only COPP-specific information. Callers that require OPM-specific information should create a protected output with OPM semantics and then call <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>. Following are the types of requests (that are specified in the <b>guidInformation</b> member of the <a href="display.dxgkmdt_opm_copp_compatible_get_info_parameters">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to) that cause <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> to return this value:
+OPM-specific information was requested. <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> cannot return OPM-specific information because it can return only COPP-specific information. Callers that require OPM-specific information should create a protected output with OPM semantics and then call <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>. Following are the types of requests (that are specified in the <b>guidInformation</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_copp_compatible_get_info_parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to) that cause <i>DxgkDdiOPMGetCOPPCompatibleInformation</i> to return this value:
 
 
 ## -remarks
@@ -179,7 +180,7 @@ Following are some facts that pertain to <i>DxgkDdiOPMGetCOPPCompatibleInformati
 
 The DirectX graphics kernel subsystem can pass a handle to a protected output only with COPP semantics. 
 
-The <a href="display.dxgkmdt_opm_copp_compatible_get_info_parameters">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to is not signed.
+The <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_copp_compatible_get_info_parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure that the <i>Parameters</i> parameter points to is not signed.
 
 
 ## -requirements
@@ -236,18 +237,18 @@ PASSIVE_LEVEL (see Remarks section)
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers.md">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a>
 </dt>
 <dt>
-<a href="display.dxgkmdt_opm_copp_compatible_get_info_parameters">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_copp_compatible_get_info_parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a>
 </dt>
 <dt>
-<a href="display.dxgkmdt_opm_omac">DXGKMDT_OPM_OMAC</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_omac.md">DXGKMDT_OPM_OMAC</a>
 </dt>
 <dt>
-<a href="display.dxgkmdt_opm_requested_information">DXGKMDT_OPM_REQUESTED_INFORMATION</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_requested_information.md">DXGKMDT_OPM_REQUESTED_INFORMATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

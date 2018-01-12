@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IServiceGroup.RemoveMember
+UID: NF:portcls.IServiceGroup.RemoveMember
 title: IServiceGroup::RemoveMember method
 author: windows-driver-content
 description: The RemoveMember method removes the specified member from the service group.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IServiceGroup::RemoveMember method

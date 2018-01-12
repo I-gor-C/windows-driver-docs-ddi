@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._ECP_OPEN_PARAMETERS
+UID: NS:ntifs._ECP_OPEN_PARAMETERS
 title: _ECP_OPEN_PARAMETERS
 author: windows-driver-content
 description: The ECP_OPEN_PARAMETERS structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file.
@@ -7,8 +7,8 @@ old-location: ifsk\ecp_open_parameters.htm
 old-project: ifsk
 ms.assetid: 1223C77A-EAEC-4FCF-B2CC-F1E2935AF5CB
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _ECP_OPEN_PARAMETERS, PECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
+ms.date: 1/9/2018
+ms.keywords: _ECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ECP_OPEN_PARAMETERS, *PECP_OPEN_PARAMETERS
 ---
 
 # _ECP_OPEN_PARAMETERS structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
+UID: NS:1394._IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
 title: _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
 author: windows-driver-content
 description: This structure contains the fields necessary for the Bus driver to carry out an IsochModifyStreamProperties request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
 ---
 
 # _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES structure

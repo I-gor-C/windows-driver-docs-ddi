@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPowerNotify.PowerChangeNotify
+UID: NF:portcls.IPowerNotify.PowerChangeNotify
 title: IPowerNotify::PowerChangeNotify method
 author: windows-driver-content
 description: The PowerChangeNotify method notifies the miniport driver of changes in the power state.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPowerNotify::PowerChangeNotify method
@@ -55,7 +56,7 @@ void PowerChangeNotify(
 
 ### -param PowerState [in]
 
-Specifies the current power state. This parameter is a union of type POWER_STATE. The new power state (<i>PowerState</i>.<b>DeviceState</b>) can be one of the DEVICE_POWER_STATE enumeration values listed in <a href="audio.iadapterpowermanagement_powerchangestate">IAdapterPowerManagement::PowerChangeState</a>.
+Specifies the current power state. This parameter is a union of type POWER_STATE. The new power state (<i>PowerState</i>.<b>DeviceState</b>) can be one of the DEVICE_POWER_STATE enumeration values listed in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536488">IAdapterPowerManagement::PowerChangeState</a>.
 
 
 ## -returns
@@ -102,7 +103,7 @@ Header
 <a href="..\portcls\nn-portcls-ipowernotify.md">IPowerNotify</a>
 </dt>
 <dt>
-<a href="audio.iadapterpowermanagement_powerchangestate">IAdapterPowerManagement::PowerChangeState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536488">IAdapterPowerManagement::PowerChangeState</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NF.srb.ScsiDebugPrint
+UID: NF:srb.ScsiDebugPrint
 title: ScsiDebugPrint function
 author: windows-driver-content
 description: The ScsiDebugPrint routine prints debug information with a level of verbosity based on global values set in the kernel debugger or set in the registry and initialized when the system boots.
@@ -7,7 +7,7 @@ old-location: storage\scsidebugprint.htm
 old-project: storage
 ms.assetid: bbf3ea14-1802-4433-9043-73bfc0c447bf
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: ScsiDebugPrint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Scsiport.lib
 req.dll: 
 req.irql: 
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -72,7 +73,7 @@ None
 ## -remarks
 Prior to Windows XP, the <b>ScsiDebugPrint</b> routine compared the value passed to it in the <i>DebugPrintLevel </i>parameter with the value of the global variable <i>ScsiDebug</i>.and printed the <i>DebugMessage </i>string and diagnostic output whenever <i>DebugPrintLevel</i> was less than or equal to <i>ScsiDebug</i>. If <i>DebugPrintLevel</i> was <i>greater</i> than <i>ScsiDebug</i>.<b>ScsiDebugPrint</b> did not print anything. 
 
-In Windows XP and later operating systems, <b>ScsiDebugPrint</b> no longer compares <i>DebugPrintLevel </i>to <i>ScsiDebug. </i>Instead, <b>ScsiDebugPrint</b> simply calls the routine <a href="devtest.dbgprintex">DbgPrintEx</a> and passes it the <i>DebugMessage </i>pointer. Before <b>ScsiDebugPrint</b> calls <b>DbgPrintEx</b> it maps the value passed in <i>DebugPrintLevel </i>to a value used by <b>DbgPrintEx</b> as follows. 
+In Windows XP and later operating systems, <b>ScsiDebugPrint</b> no longer compares <i>DebugPrintLevel </i>to <i>ScsiDebug. </i>Instead, <b>ScsiDebugPrint</b> simply calls the routine <a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a> and passes it the <i>DebugMessage </i>pointer. Before <b>ScsiDebugPrint</b> calls <b>DbgPrintEx</b> it maps the value passed in <i>DebugPrintLevel </i>to a value used by <b>DbgPrintEx</b> as follows. 
 
 0
 
@@ -88,7 +89,7 @@ DPFLTR_TRACE_LEVEL
 
 DPFLTR_INFO_LEVEL
 
-To view the message pointed to by <i>DebugMessage </i>from the kernel debugger, use the component filter mask Kd_ScsiMiniPort_Mask. For more information about debugging masks, see <a href="devtest.dbgprintex">DbgPrintEx</a>. 
+To view the message pointed to by <i>DebugMessage </i>from the kernel debugger, use the component filter mask Kd_ScsiMiniPort_Mask. For more information about debugging masks, see <a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>. 
 
 <b>ScsiDebugPrint</b> only functions in checked builds. <b>ScsiDebugPrint</b> compiles to nothing in free builds. 
 
@@ -133,12 +134,12 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="devtest.dbgprintex">DbgPrintEx</a>
+<a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiDebugPrint routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiDebugPrint routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

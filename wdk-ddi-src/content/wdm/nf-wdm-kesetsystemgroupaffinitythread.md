@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeSetSystemGroupAffinityThread
+UID: NF:wdm.KeSetSystemGroupAffinityThread
 title: KeSetSystemGroupAffinityThread function
 author: windows-driver-content
 description: The KeSetSystemGroupAffinityThread routine changes the group number and affinity mask of the calling thread.
@@ -7,7 +7,7 @@ old-location: kernel\kesetsystemgroupaffinitythread.htm
 old-project: kernel
 ms.assetid: 8ccc097d-f997-43c1-a068-f2f532afa0d6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeSetSystemGroupAffinityThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL (see Remarks section).
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -57,12 +58,12 @@ VOID KeSetSystemGroupAffinityThread(
 
 ### -param Affinity [in]
 
-A pointer to a <a href="kernel.group_affinity">GROUP_AFFINITY</a> structure that specifies the new group number and group-relative affinity mask for the calling thread.
+A pointer to a <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a> structure that specifies the new group number and group-relative affinity mask for the calling thread.
 
 
 ### -param PreviousAffinity [out, optional]
 
-A pointer to a caller-allocated <b>GROUP_AFFINITY</b> structure into which the routine writes information about the previous group affinity of the calling thread. The caller can later use this pointer as an input parameter to the <a href="kernel.kereverttousergroupaffinitythread">KeRevertToUserGroupAffinityThread</a> routine to restore the previous thread affinity. Frequently, <b>KeSetSystemGroupAffinityThread</b> writes values to this structure that are not valid group affinities but that have special meaning to <b>KeRevertToUserGroupAffinityThread</b>. Do not supply pointers to these special values as <i>Affinity</i> parameters in subsequent <b>KeSetSystemGroupAffinityThread</b> calls.
+A pointer to a caller-allocated <b>GROUP_AFFINITY</b> structure into which the routine writes information about the previous group affinity of the calling thread. The caller can later use this pointer as an input parameter to the <a href="..\wdm\nf-wdm-kereverttousergroupaffinitythread.md">KeRevertToUserGroupAffinityThread</a> routine to restore the previous thread affinity. Frequently, <b>KeSetSystemGroupAffinityThread</b> writes values to this structure that are not valid group affinities but that have special meaning to <b>KeRevertToUserGroupAffinityThread</b>. Do not supply pointers to these special values as <i>Affinity</i> parameters in subsequent <b>KeSetSystemGroupAffinityThread</b> calls.
 
 If necessary, the caller can change the thread affinity more than once by calling <b>KeSetSystemGroupAffinityThread</b> multiple times. During the first of these calls, the caller should specify a non-<b>NULL</b> value for <i>PreviousAffinity</i> so that the original thread affinity can be captured and later restored. However, the later calls to <b>KeSetSystemGroupAffinityThread</b> can, as an option, set <i>PreviousAffinity</i> = <b>NULL</b>. For more information, see Remarks.
 
@@ -72,9 +73,9 @@ None
 
 
 ## -remarks
-This routine changes the group number and group-relative affinity mask of the calling thread. The <i>Affinity</i> parameter points to a <a href="kernel.group_affinity">GROUP_AFFINITY</a> structure. The group number and affinity mask in this structure identify a set of processors on which the thread can run. If successful, the routine schedules the thread to run on a processor in this set.
+This routine changes the group number and group-relative affinity mask of the calling thread. The <i>Affinity</i> parameter points to a <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a> structure. The group number and affinity mask in this structure identify a set of processors on which the thread can run. If successful, the routine schedules the thread to run on a processor in this set.
 
-If the <i>PreviousAffinity</i> parameter is non-<b>NULL</b>, the routine saves information about the previous group affinity, which were in effect at the start of the call, in the <b>GROUP_AFFINITY</b> structure that <i>PreviousAffinity</i> points to. To restore the previous thread affinity, the caller can supply the pointer to this structure as an input parameter to the <a href="kernel.kereverttousergroupaffinitythread">KeRevertToUserGroupAffinityThread</a> routine.
+If the <i>PreviousAffinity</i> parameter is non-<b>NULL</b>, the routine saves information about the previous group affinity, which were in effect at the start of the call, in the <b>GROUP_AFFINITY</b> structure that <i>PreviousAffinity</i> points to. To restore the previous thread affinity, the caller can supply the pointer to this structure as an input parameter to the <a href="..\wdm\nf-wdm-kereverttousergroupaffinitythread.md">KeRevertToUserGroupAffinityThread</a> routine.
 
 In a multiprocessor system, a kernel-mode driver routine that runs in the context of a user-mode thread might need to call <b>KeSetSystemGroupAffinityThread</b> to temporarily change the group affinity of the thread. Before the routine exits, it should call <b>KeRevertToUserGroupAffinityThread</b> to restore the affinity mask of the thread to its original value.
 
@@ -90,11 +91,11 @@ At least one of the processors that is specified in the affinity mask is active.
 
 If any of these conditions is not met, the group number and affinity mask of the thread remain unchanged. If <i>PreviousAffinity</i> is non-<b>NULL</b>, the routine writes zero to both the group number and the affinity mask in *<i>PreviousAffinity</i>.
 
-Additionally, <b>KeSetSystemGroupAffinityThread</b> writes zero to both the group number and the affinity mask in *<i>PreviousAffinity</i> if the previous group affinity was assigned to the thread in user mode. In response to a <b>GROUP_AFFINITY</b> structure in which the group number and affinity mask are both zero, <b>KeRevertToUserGroupAffinityThread</b> restores the current user-mode thread affinity. If the user-mode thread affinity changes between the <b>KeSetSystemGroupAffinityThread</b> and <b>KeRevertToUserGroupAffinityThread</b> calls, the most recent user-mode affinity is assigned to the thread. (An application can call a function such as <a href="base.setthreadgroupaffinity">SetThreadGroupAffinity</a> to change the user-mode group affinity of a thread.)
+Additionally, <b>KeSetSystemGroupAffinityThread</b> writes zero to both the group number and the affinity mask in *<i>PreviousAffinity</i> if the previous group affinity was assigned to the thread in user mode. In response to a <b>GROUP_AFFINITY</b> structure in which the group number and affinity mask are both zero, <b>KeRevertToUserGroupAffinityThread</b> restores the current user-mode thread affinity. If the user-mode thread affinity changes between the <b>KeSetSystemGroupAffinityThread</b> and <b>KeRevertToUserGroupAffinityThread</b> calls, the most recent user-mode affinity is assigned to the thread. (An application can call a function such as <a href="https://msdn.microsoft.com/9f24f1bf-a63d-4318-af2a-eb3553f2b0f9">SetThreadGroupAffinity</a> to change the user-mode group affinity of a thread.)
 
 Before the new affinity mask in *<i>Affinity</i> takes effect, <b>KeSetSystemGroupAffinityThread</b> removes (sets to zero) any affinity mask bits that correspond to processors that are not currently active. In a subsequent <b>KeSetSystemGroupAffinityThread</b> call, the value that the routine writes to *<i>PreviousAffinity</i> might contain an affinity mask that has been modified in this way.
 
-A related routine, <a href="kernel.kesetsystemaffinitythreadex">KeSetSystemAffinityThreadEx</a>, changes the affinity mask of the calling thread, but this routine, unlike <b>KeSetSystemGroupAffinityThread</b>, does not accept a group number as an input parameter. Starting with Windows 7, <b>KeSetSystemAffinityThreadEx</b> assumes that the affinity mask refers to processors in group 0, which is compatible with the behavior of this routine in earlier versions of Windows that do not support groups. This behavior ensures that existing drivers that call <b>KeSetSystemAffinityThreadEx</b> and that use no group-oriented features will run correctly in multiprocessor systems that have two or more groups. However, drivers that use any group-oriented features in Windows 7 and later versions of the Windows operating system should call <b>KeSetSystemGroupAffinityThread</b> instead of <b>KeSetSystemAffinityThreadEx</b>.
+A related routine, <a href="..\wdm\nf-wdm-kesetsystemaffinitythreadex.md">KeSetSystemAffinityThreadEx</a>, changes the affinity mask of the calling thread, but this routine, unlike <b>KeSetSystemGroupAffinityThread</b>, does not accept a group number as an input parameter. Starting with Windows 7, <b>KeSetSystemAffinityThreadEx</b> assumes that the affinity mask refers to processors in group 0, which is compatible with the behavior of this routine in earlier versions of Windows that do not support groups. This behavior ensures that existing drivers that call <b>KeSetSystemAffinityThreadEx</b> and that use no group-oriented features will run correctly in multiprocessor systems that have two or more groups. However, drivers that use any group-oriented features in Windows 7 and later versions of the Windows operating system should call <b>KeSetSystemGroupAffinityThread</b> instead of <b>KeSetSystemAffinityThreadEx</b>.
 
 <b>KeSetSystemGroupAffinityThread</b> and <b>KeRevertToUserGroupAffinityThread</b> support a variety of calling patterns. Two examples are shown in the following diagrams.
 
@@ -181,7 +182,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -189,18 +190,18 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.group_affinity">GROUP_AFFINITY</a>
+<a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a>
 </dt>
 <dt>
-<a href="kernel.kereverttousergroupaffinitythread">KeRevertToUserGroupAffinityThread</a>
+<a href="..\wdm\nf-wdm-kereverttousergroupaffinitythread.md">KeRevertToUserGroupAffinityThread</a>
 </dt>
 <dt>
-<a href="kernel.kesetsystemaffinitythreadex">KeSetSystemAffinityThreadEx</a>
+<a href="..\wdm\nf-wdm-kesetsystemaffinitythreadex.md">KeSetSystemAffinityThreadEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetSystemGroupAffinityThread routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetSystemGroupAffinityThread routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

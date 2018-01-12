@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_V2UPL_CONFIG
+UID: NS:gnssdriver.GNSS_V2UPL_CONFIG
 title: GNSS_V2UPL_CONFIG
 author: windows-driver-content
 description: This structure contains V2UPL configuration information.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: A1DCC547-8CAA-46B9-A855-5F591C69A3B0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_CONFIG, *PGNSS_V2UPL_CONFIG, PGNSS_V2UPL_CONFIG, GNSS_V2UPL_CONFIG
+ms.keywords: GNSS_V2UPL_CONFIG, GNSS_V2UPL_CONFIG, *PGNSS_V2UPL_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_V2UPL_CONFIG, *PGNSS_V2UPL_CONFIG
 ---
 
 # GNSS_V2UPL_CONFIG structure

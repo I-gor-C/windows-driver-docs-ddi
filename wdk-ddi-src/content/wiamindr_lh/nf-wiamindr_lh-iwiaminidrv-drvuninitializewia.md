@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamindr_lh.IWiaMiniDrv.drvUnInitializeWia
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvUnInitializeWia
 title: IWiaMiniDrv::drvUnInitializeWia method
 author: windows-driver-content
 description: The IWiaMiniDrv::drvUnInitializeWia method releases resources held by the minidriver.
 old-location: image\iwiaminidrv_drvuninitializewia.htm
-old-project: Image
+old-project: image
 ms.assetid: 974de3b5-c129-42ee-a522-071c26726cf1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaMiniDrv, IWiaMiniDrv::drvUnInitializeWia, drvUnInitializeWia
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSCANWINDOW, SCANWINDOW
 req.product: Windows 10 or later.
 ---
 
@@ -106,12 +107,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.iwiaminidrv_drvinitializewia">IWiaMiniDrv::drvInitializeWia</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544986">IWiaMiniDrv::drvInitializeWia</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20IWiaMiniDrv::drvUnInitializeWia method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrv::drvUnInitializeWia method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

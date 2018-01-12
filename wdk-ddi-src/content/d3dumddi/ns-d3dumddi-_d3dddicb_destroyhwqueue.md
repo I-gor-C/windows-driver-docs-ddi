@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDICB_DESTROYHWQUEUE
+UID: NS:d3dumddi._D3DDDICB_DESTROYHWQUEUE
 title: _D3DDDICB_DESTROYHWQUEUE
 author: windows-driver-content
 description: A structure that holds information to destroy a hardware queue.
@@ -7,7 +7,7 @@ old-location: display\d3dddicb_destroyhwqueue.htm
 old-project: display
 ms.assetid: 80735E36-C483-4CD8-AB53-873BA5E997D0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDICB_DESTROYHWQUEUE, D3DDDICB_DESTROYHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDICB_DESTROYHWQUEUE
 ---
 
 # _D3DDDICB_DESTROYHWQUEUE structure

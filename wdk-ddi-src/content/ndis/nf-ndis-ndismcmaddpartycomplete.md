@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMCmAddPartyComplete
+UID: NF:ndis.NdisMCmAddPartyComplete
 title: NdisMCmAddPartyComplete macro
 author: windows-driver-content
 description: NdisMCmAddPartyComplete returns the final status of a client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to add a party on an established multipoint VC.
 old-location: netvista\ndismcmaddpartycomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5bbcd552-00c2-4085-8222-c514eb92e654
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMCmAddPartyComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMCmAddPartyComplete macro
@@ -108,9 +109,9 @@ Change the traffic parameters for every party already on the VC when it successf
 
 Reject the request to add a new party. (This alternative implicitly forces clients to set up their
       traffic parameters for a multipoint VC with 
-      <a href="netvista.ndisclmakecall">NdisClMakeCall</a> and to specify the same
+      <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a> and to specify the same
       traffic parameters at each subsequent call to 
-      <a href="netvista.ndiscladdparty">NdisClAddParty</a> for the given multipoint
+      <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a> for the given multipoint
       VC.)
 
 If the MCM driver sets 
@@ -184,7 +185,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -195,17 +196,17 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatefromnpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
    NdisAllocateFromNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndiscladdparty">NdisClAddParty</a>
+<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmaddpartycomplete">NdisCmAddPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmaddpartycomplete.md">NdisCmAddPartyComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdroppartycomplete">NdisMCmDropPartyComplete</a>
+<a href="..\ndis\nf-ndis-ndismcmdroppartycomplete.md">NdisMCmDropPartyComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">ProtocolClAddPartyComplete</a>
@@ -218,5 +219,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMCmAddPartyComplete macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmAddPartyComplete macro%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

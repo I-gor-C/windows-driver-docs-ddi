@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_IOCTL._WINBIO_DATA
+UID: NS:winbio_ioctl._WINBIO_DATA
 title: _WINBIO_DATA
 author: windows-driver-content
 description: The WINBIO_DATA structure specifies data in IOCTL payloads.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: 00dc716c-621f-4312-bf53-6bc3ab492faa
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_DATA, *PWINBIO_DATA, WINBIO_DATA, PWINBIO_DATA
+ms.keywords: _WINBIO_DATA, WINBIO_DATA, *PWINBIO_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_DATA, *PWINBIO_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ Specifies the size, in bytes, of the payload.
 
 ### -field Data
 
-Specifies an array that contains the payload. Frequently this member contains a structure of type <a href="biometric.winbio_bir">WINBIO_BIR</a>.
+Specifies an array that contains the payload. Frequently this member contains a structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_bir.md">WINBIO_BIR</a>.
 
 
 ## -remarks

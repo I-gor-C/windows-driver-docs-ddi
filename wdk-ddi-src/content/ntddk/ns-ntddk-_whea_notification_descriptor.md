@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_NOTIFICATION_DESCRIPTOR
+UID: NS:ntddk._WHEA_NOTIFICATION_DESCRIPTOR
 title: _WHEA_NOTIFICATION_DESCRIPTOR
 author: windows-driver-content
 description: The WHEA_NOTIFICATION_DESCRIPTOR structure describes the notification mechanism that is used by an error source.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 5b228bb8-dd31-484d-b87a-ec7fed433a4a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_NOTIFICATION_DESCRIPTOR, PWHEA_NOTIFICATION_DESCRIPTOR, *PWHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_DESCRIPTOR
+ms.keywords: _WHEA_NOTIFICATION_DESCRIPTOR, *PWHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_DESCRIPTOR
 ---
 
 # _WHEA_NOTIFICATION_DESCRIPTOR structure
@@ -431,7 +432,7 @@ The window of time, in seconds, in which the number of errors specified by the <
 </dl>
 
 ## -remarks
-A WHEA_NOTIFICATION_DESCRIPTOR structure is contained within the <a href="whea.whea_generic_error_descriptor">WHEA_GENERIC_ERROR_DESCRIPTOR</a> and <a href="whea.whea_xpf_cmc_descriptor">WHEA_XPF_CMC_DESCRIPTOR</a> structures.
+A WHEA_NOTIFICATION_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a> and <a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a> structures.
 
 
 ## -requirements
@@ -463,10 +464,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_generic_error_descriptor">WHEA_GENERIC_ERROR_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="whea.whea_xpf_cmc_descriptor">WHEA_XPF_CMC_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
 </dt>
 </dl>
  

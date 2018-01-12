@@ -1,5 +1,5 @@
 ---
-UID: NF.winspool.GetPrintOutputInfo
+UID: NF:winspool.GetPrintOutputInfo
 title: GetPrintOutputInfo function
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\getprintoutputinfo.htm
 old-project: print
 ms.assetid: 0EC09215-48B1-4B71-9B4C-99A25C35269F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: GetPrintOutputInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BIDI_TYPE
 req.product: Windows 10 or later.
 ---
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMCmActivateVc
+UID: NF:ndis.NdisMCmActivateVc
 title: NdisMCmActivateVc function
 author: windows-driver-content
 description: NdisMCmActivateVc notifies NDIS that an MCM driver is ready to make transfers on a particular VC.
 old-location: netvista\ndismcmactivatevc.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2c2e4f7d-578a-4429-baca-ebe45423afff
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMCmActivateVc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMCmActivateVc function
@@ -89,12 +90,12 @@ For a client-initiated outgoing call, an MCM driver usually calls
     <b>NdisMCmActivateVc</b> following the handshake denoting a negotiated agreement with the remote node or
     successful call-setup at the switch, before it notifies NDIS (and the client) of outgoing call completion
     with 
-    <a href="netvista.ndismcmmakecallcomplete">NdisMCmMakeCallComplete</a>. For an
+    <a href="..\ndis\nf-ndis-ndismcmmakecallcomplete.md">NdisMCmMakeCallComplete</a>. For an
     incoming call, an MCM driver usually calls 
     <b>NdisMCmActivateVc</b> after it has called 
-    <a href="netvista.ndismcmcreatevc">NdisMCmCreateVc</a> successfully and before it
+    <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a> successfully and before it
     calls 
-    <a href="netvista.ndismcmdispatchincomingcall">
+    <a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">
     NdisMCmDispatchIncomingCall</a>.
 
 The driver writer determines whether an MCM driver has an (internal) 
@@ -103,7 +104,7 @@ The driver writer determines whether an MCM driver has an (internal)
 
 For the duration of the connection, an MCM driver can modify the call parameters as conditions on the
     network change and/or whenever the client calls 
-    <a href="netvista.ndisclmodifycallqos">NdisClModifyCallQoS</a>. The MCM driver
+    <a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>. The MCM driver
     must update the state that it maintains about call parameters to the new values if it can continue to
     make transfers on the VC according to the newly modified call parameters. It must call 
     <b>NdisMCmActivateVc</b> to notify NDIS of any changes in the call parameters for the active VC.
@@ -189,7 +190,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -203,22 +204,22 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_co_activate_vc.md">MiniportCoActivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmodifycallqos">NdisClModifyCallQoS</a>
+<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmactivatevc">NdisCmActivateVc</a>
+<a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdeactivatevc">NdisMCmDeactivateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdispatchincomingcall">NdisMCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmcreatevc">NdisMCmCreateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
@@ -228,5 +229,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMCmActivateVc function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmActivateVc function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

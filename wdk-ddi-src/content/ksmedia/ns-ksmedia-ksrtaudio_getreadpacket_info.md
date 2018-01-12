@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSRTAUDIO_GETREADPACKET_INFO
+UID: NS:ksmedia.KSRTAUDIO_GETREADPACKET_INFO
 title: KSRTAUDIO_GETREADPACKET_INFO
 author: windows-driver-content
 description: The KSRTAUDIO_GETREADPACKET_INFO structure describes information for an audio packet.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 0157FA09-C227-4BB2-BB75-0AB5802BC150
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSRTAUDIO_GETREADPACKET_INFO, KSRTAUDIO_GETREADPACKET_INFO, PKSRTAUDIO_GETREADPACKET_INFO, *PKSRTAUDIO_GETREADPACKET_INFO
+ms.keywords: KSRTAUDIO_GETREADPACKET_INFO, KSRTAUDIO_GETREADPACKET_INFO, *PKSRTAUDIO_GETREADPACKET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSRTAUDIO_GETREADPACKET_INFO, *PKSRTAUDIO_GETREADPACKET_INFO
 ---
 
 # KSRTAUDIO_GETREADPACKET_INFO structure

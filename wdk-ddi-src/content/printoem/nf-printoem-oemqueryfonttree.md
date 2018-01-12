@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMQueryFontTree
+UID: NF:printoem.OEMQueryFontTree
 title: OEMQueryFontTree function
 author: windows-driver-content
 description: The OEMQueryFontTree function provides GDI with a pointer to a structure that defines one of the following:
@@ -7,7 +7,7 @@ old-location: print\oemqueryfonttree.htm
 old-project: print
 ms.assetid: e2e30707-dffd-4990-a552-b67a7d9e2ca4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMQueryFontTree
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortGetDeviceObjects
+UID: NF:storport.StorPortGetDeviceObjects
 title: StorPortGetDeviceObjects function
 author: windows-driver-content
 description: The StorPortGetDeviceObjects routine returns the device objects that are associated with the adapter device stack.
@@ -7,7 +7,7 @@ old-location: storage\storportgetdeviceobjects.htm
 old-project: storage
 ms.assetid: e48b5048-5f5f-4efb-b7bf-2dd183074516
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortGetDeviceObjects
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 

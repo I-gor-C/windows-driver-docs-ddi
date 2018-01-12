@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_GENERIC_ERROR_DATA_ENTRY_V2
+UID: NS:ntddk._WHEA_GENERIC_ERROR_DATA_ENTRY_V2
 title: _WHEA_GENERIC_ERROR_DATA_ENTRY_V2
 author: windows-driver-content
 description: The WHEA_GENERIC_ERROR_DATA_ENTRY structure describes an error data section in a generic error status block.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 86834d99-34bd-487a-bbd4-4c0143d849a0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_GENERIC_ERROR_DATA_ENTRY_V2, PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY, *PWHEA_GENERIC_ERROR_DATA_ENTRY, *PWHEA_GENERIC_ERROR_DATA_ENTRY_V2
+ms.keywords: _WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY, *PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, *PWHEA_GENERIC_ERROR_DATA_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY, *PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, *PWHEA_GENERIC_ERROR_DATA_ENTRY
 ---
 
 # _WHEA_GENERIC_ERROR_DATA_ENTRY_V2 structure
@@ -75,12 +76,12 @@ The error data section contains the hardware error packet that was passed to the
 
 ### -field PROCESSOR_GENERIC_ERROR_SECTION_GUID
 
-The error data section contains processor error data that is not specific to a particular processor architecture. This data is described by a <a href="whea.whea_processor_generic_error_section">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.
+The error data section contains processor error data that is not specific to a particular processor architecture. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.
 
 
 ### -field FIRMWARE_ERROR_RECORD_REFERENCE_GUID
 
-The error data section contains a reference to a firmware error record that is specific to the Itanium processor architecture. This data is described by a <a href="whea.whea_firmware_error_record_reference">WHEA_FIRMWARE_ERROR_RECORD_REFERENCE</a> structure.
+The error data section contains a reference to a firmware error record that is specific to the Itanium processor architecture. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_firmware_error_record_reference.md">WHEA_FIRMWARE_ERROR_RECORD_REFERENCE</a> structure.
 
 
 ### -field IPF_PROCESSOR_ERROR_SECTION_GUID
@@ -90,27 +91,27 @@ The error data section contains processor error data that is specific to the Ita
 
 ### -field MEMORY_ERROR_SECTION_GUID
 
-The error data section contains platform memory error data. This data is described by a <a href="whea.whea_memory_error_section">WHEA_MEMORY_ERROR_SECTION</a> structure.
+The error data section contains platform memory error data. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a> structure.
 
 
 ### -field NMI_SECTION_GUID
 
-The error data section contains nonmaskable interrupt (NMI) error data. This data is described by a <a href="whea.whea_nmi_error_section">WHEA_NMI_ERROR_SECTION</a> structure.
+The error data section contains nonmaskable interrupt (NMI) error data. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_nmi_error_section.md">WHEA_NMI_ERROR_SECTION</a> structure.
 
 
 ### -field PCIEXPRESS_ERROR_SECTION_GUID
 
-The error data section contains PCI Express (PCIe) error data. This data is described by a <a href="whea.whea_pciexpress_error_section">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure.
+The error data section contains PCI Express (PCIe) error data. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure.
 
 
 ### -field PCIXBUS_ERROR_SECTION_GUID
 
-The error data section contains PCI/PCI-X bus error data. This data is described by a <a href="whea.whea_pcixbus_error_section">WHEA_PCIXBUS_ERROR_SECTION</a> structure.
+The error data section contains PCI/PCI-X bus error data. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a> structure.
 
 
 ### -field PCIXBUS_ERROR_SECTION_GUID
 
-The error data section contains PCI/PCI-X device error data. This data is described by a <a href="whea.whea_pcixdevice_error_section">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.
+The error data section contains PCI/PCI-X device error data. This data is described by a <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.
 
 
 ### -field XPF_PROCESSOR_ERROR_SECTION_GUID
@@ -124,12 +125,12 @@ For error data sections that do not conform to one of the standard section types
 
 ### -field ErrorSeverity
 
-A <a href="whea.whea_error_severity">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition that is described by the error data section.
+A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition that is described by the error data section.
 
 
 ### -field Revision
 
-A <a href="whea.whea_revision">WHEA_REVISION</a> union that describes the revision level of the WHEA_GENERIC_ERROR_DATA_ENTRY structure.
+A <a href="..\ntddk\ns-ntddk-_whea_revision.md">WHEA_REVISION</a> union that describes the revision level of the WHEA_GENERIC_ERROR_DATA_ENTRY structure.
 
 
 ### -field ValidBits
@@ -213,7 +214,7 @@ A variable-sized buffer that contains the error data for the error data section.
 ## -remarks
 A generic error status block can contain one or more WHEA_GENERIC_ERROR_DATA_ENTRY structures. Each WHEA_GENERIC_ERROR_DATA_ENTRY structure describes a section of error information that is part of the error status data for a generic error source.
 
-The <b>Data</b> member of the <a href="whea.whea_generic_error">WHEA_GENERIC_ERROR</a> structure contains a generic error status block that contains the WHEA_GENERIC_ERROR_DATA_ENTRY structures. The number of WHEA_GENERIC_ERROR_DATA_ENTRY structures that are included in the generic error status block is specified by the <b>ErrorDataEntryCount</b> member of the <a href="whea.whea_generic_error_blockstatus">WHEA_GENERIC_ERROR_BLOCKSTATUS</a> union.
+The <b>Data</b> member of the <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure contains a generic error status block that contains the WHEA_GENERIC_ERROR_DATA_ENTRY structures. The number of WHEA_GENERIC_ERROR_DATA_ENTRY structures that are included in the generic error status block is specified by the <b>ErrorDataEntryCount</b> member of the <a href="..\ntddk\ns-ntddk-_whea_generic_error_blockstatus.md">WHEA_GENERIC_ERROR_BLOCKSTATUS</a> union.
 
 
 ## -requirements
@@ -245,10 +246,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_generic_error">WHEA_GENERIC_ERROR</a>
+<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
 </dt>
 <dt>
-<a href="whea.whea_generic_error_blockstatus">WHEA_GENERIC_ERROR_BLOCKSTATUS</a>
+<a href="..\ntddk\ns-ntddk-_whea_generic_error_blockstatus.md">WHEA_GENERIC_ERROR_BLOCKSTATUS</a>
 </dt>
 </dl>
  

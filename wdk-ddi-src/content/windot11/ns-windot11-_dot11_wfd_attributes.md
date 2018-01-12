@@ -1,13 +1,13 @@
 ---
-UID: NS.WINDOT11._DOT11_WFD_ATTRIBUTES
+UID: NS:windot11._DOT11_WFD_ATTRIBUTES
 title: _DOT11_WFD_ATTRIBUTES
 author: windows-driver-content
 description: The DOT11_WFD_ATTRIBUTES structure is returned in an NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES indication. The structure defines the attributes related to Wi-Fi Direct (WFD) operation modes.
 old-location: netvista\dot11_wfd_attributes.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7B221221-5C91-45DA-85C5-5E7CF71E6689
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _DOT11_WFD_ATTRIBUTES, DOT11_WFD_ATTRIBUTES, *PDOT11_WFD_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_WFD_ATTRIBUTES, *PDOT11_WFD_ATTRIBUTES
 req.product: Windows 10 or later.
 ---
 
@@ -92,12 +93,12 @@ The type, revision, and size of the <b>DOT11_WFD_ATTRIBUTES</b> structure. The r
 
 ### -field uNumConcurrentGORole
 
-The number of operational Wi-Fi Direct Group Owner (GO) roles simultaneously supported by the miniport driver. This value is the number of ports that can be simultaneously configured in <b>DOT11_OPERATION_MODE_WFD_GROUP_OWNER</b> operation mode. This member must be less than or equal to  <b>uNumWFDGroup</b> in  <a href="netvista.dot11_vwifi_combination_v3">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport driver.
+The number of operational Wi-Fi Direct Group Owner (GO) roles simultaneously supported by the miniport driver. This value is the number of ports that can be simultaneously configured in <b>DOT11_OPERATION_MODE_WFD_GROUP_OWNER</b> operation mode. This member must be less than or equal to  <b>uNumWFDGroup</b> in  <a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v3.md">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport driver.
 
 
 ### -field uNumConcurrentClientRole
 
-The number of operational Wi-Fi Direct Client roles simultaneously supported by the miniport driver. This value is the number of ports that can be simultaneously configured in <b>DOT11_OPERATION_MODE_WFD_CLIENT</b> operation mode. This member must be less than or equal to <b> uNumWFDGroup</b> in  <a href="netvista.dot11_vwifi_combination_v3">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport driver.
+The number of operational Wi-Fi Direct Client roles simultaneously supported by the miniport driver. This value is the number of ports that can be simultaneously configured in <b>DOT11_OPERATION_MODE_WFD_CLIENT</b> operation mode. This member must be less than or equal to <b> uNumWFDGroup</b> in  <a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v3.md">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport driver.
 
 
 ### -field WPSVersionsSupported
@@ -132,7 +133,7 @@ The WFD Peer-to-Peer  (P2P) device address. This address is used as a unique ide
 
 ### -field uInterfaceAddressListCount
 
-The number of P2P Interface Addresses supported by the WFD device. This value must be less than or equal to <b>uNumWFDGroup</b> in <a href="netvista.dot11_vwifi_combination_v3">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport.
+The number of P2P Interface Addresses supported by the WFD device. This value must be less than or equal to <b>uNumWFDGroup</b> in <a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v3.md">DOT11_VWIFI_COMBINATION_V3</a> returned by the miniport.
 
 
 ### -field pInterfaceAddressList
@@ -199,12 +200,12 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451795">OID_DOT11_WFD_DISCOVER_REQUEST</a>
 </dt>
 <dt>
-<a href="netvista.dot11_vwifi_combination_v3">DOT11_VWIFI_COMBINATION_V3</a>
+<a href="..\windot11\ns-windot11-_dot11_vwifi_combination_v3.md">DOT11_VWIFI_COMBINATION_V3</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_WFD_ATTRIBUTES structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_WFD_ATTRIBUTES structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

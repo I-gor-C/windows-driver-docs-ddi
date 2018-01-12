@@ -1,13 +1,13 @@
 ---
-UID: NF.ursdevice.UrsSetHardwareEventSupport
+UID: NF:ursdevice.UrsSetHardwareEventSupport
 title: UrsSetHardwareEventSupport function
 author: windows-driver-content
 description: Indicates the client driver's support for reporting new hardware events.
 old-location: buses\urssethardwareeventsupport.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 905BA306-29A5-4AAB-BA30-6B459E0062F6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UrsSetHardwareEventSupport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Urscxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UMDETW_ALLOCATION_USAGE
 req.product: Windows 10 or later.
 ---
 
@@ -57,14 +58,14 @@ FORCEINLINE void UrsSetHardwareEventSupport(
 
 ### -param Device [in]
 
-A handle to the framework device object that the client driver retrieved in the previous call to <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>.
+A handle to the framework device object that the client driver retrieved in the previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.
 
 
 ### -param HardwareEventReportingSupported [in]
 
 A boolean value that indicates support for  reporting hardware events. 
 
-TRUE indicates the client driver will report hardware events by calling <a href="buses.ursreporthardwareevent">UrsReportHardwareEvent</a>. 
+TRUE indicates the client driver will report hardware events by calling <a href="..\ursdevice\nf-ursdevice-ursreporthardwareevent.md">UrsReportHardwareEvent</a>. 
 
 FALSE indicates hardware event reporting is not handled by the client driver.
 
@@ -78,7 +79,7 @@ Before the client driver can report hardware events, the client driver for the d
 
 For certain controllers, the client driver might not support role detection before performing a role switch operation. In that case, the client driver must  set  <i>HardwareEventReportingSupported</i> to FALSE.  The operating system manages the role of the controller.
 
-Otherwise, if the driver supports role detection, it must set  <i>HardwareEventReportingSupported</i> to TRUE.  This indicates to the class extension that the client driver will  handle hardware events, such as ID pin interrupts, and report to the class extension that the role needs to be changed. The driver can report events by calling <a href="buses.ursreporthardwareevent">UrsReportHardwareEvent</a>.
+Otherwise, if the driver supports role detection, it must set  <i>HardwareEventReportingSupported</i> to TRUE.  This indicates to the class extension that the client driver will  handle hardware events, such as ID pin interrupts, and report to the class extension that the role needs to be changed. The driver can report events by calling <a href="..\ursdevice\nf-ursdevice-ursreporthardwareevent.md">UrsReportHardwareEvent</a>.
 
 
 ## -requirements
@@ -150,12 +151,12 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ursreporthardwareevent">UrsReportHardwareEvent</a>
+<a href="..\ursdevice\nf-ursdevice-ursreporthardwareevent.md">UrsReportHardwareEvent</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20UrsSetHardwareEventSupport function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UrsSetHardwareEventSupport function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

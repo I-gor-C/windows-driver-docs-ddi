@@ -1,5 +1,5 @@
 ---
-UID: NE.spbcx._SPB_REQUEST_TYPE
+UID: NE:spbcx._SPB_REQUEST_TYPE
 title: _SPB_REQUEST_TYPE
 author: windows-driver-content
 description: The SPB_REQUEST_TYPE enumeration specifies the type of SPB operation that a client is requesting.
@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: B3C2505E-A2B6-4D79-B8B7-9D1B53AA5B56
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SPB_REQUEST_TYPE, SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE, PSPB_REQUEST_TYPE
+ms.keywords: _SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Called at PASSIVE_LEVEL.
+req.irql: 
+req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -105,7 +106,7 @@ A request to unlock the specified target device.  This request is handled entire
 
 ### -field SpbRequestTypeOther
 
-An unknown I/O control (IOCTL) request sent by a client (peripheral driver) to a target device on the bus.  Call the <a href="kmdf.wdfrequestgetparameters">WdfRequestGetParameters</a> method to retrieve the parameters for this request; for this call, use the SPBREQUEST handle for the <i>Request</i> parameter. Your SPB controller driver receives requests of this type only if it registers an <a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a> callback function.  Otherwise, SpbCx rejects unknown IOCTL requests.
+An unknown I/O control (IOCTL) request sent by a client (peripheral driver) to a target device on the bus.  Call the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a> method to retrieve the parameters for this request; for this call, use the SPBREQUEST handle for the <i>Request</i> parameter. Your SPB controller driver receives requests of this type only if it registers an <a href="https://msdn.microsoft.com/5A4BC061-4703-4C46-BD5D-A891F3DA8842">EvtSpbControllerIoOther</a> callback function.  Otherwise, SpbCx rejects unknown IOCTL requests.
 
 
 ### -field SpbRequestTypeMax
@@ -172,7 +173,7 @@ Header
 <a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a>
 </dt>
 <dt>
-<a href="kmdf.wdfrequestgetparameters">WdfRequestGetParameters</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
 </dt>
 </dl>
  

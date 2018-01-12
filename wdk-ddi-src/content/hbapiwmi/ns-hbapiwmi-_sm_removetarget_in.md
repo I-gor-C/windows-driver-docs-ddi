@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_REMOVETARGET_IN
+UID: NS:hbapiwmi._SM_RemoveTarget_IN
 title: _SM_RemoveTarget_IN
 author: windows-driver-content
 description: The SM_RemoveTarget_IN structure is used to provide input parameters to the SM_RemoveTarget WMI method.
@@ -7,8 +7,8 @@ old-location: storage\sm_removetarget_in.htm
 old-project: storage
 ms.assetid: a32e2442-a6a8-4c1a-ab70-40fdb525bafb
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_RemoveTarget_IN, *PSM_RemoveTarget_IN, SM_RemoveTarget_IN, PSM_RemoveTarget_IN
+ms.date: 1/10/2018
+ms.keywords: _SM_RemoveTarget_IN, SM_RemoveTarget_IN, *PSM_RemoveTarget_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SM_RemoveTarget_IN, *PSM_RemoveTarget_IN
 ---
 
 # _SM_RemoveTarget_IN structure

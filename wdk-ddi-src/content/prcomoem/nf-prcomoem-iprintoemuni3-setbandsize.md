@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUni3.SetBandSize
+UID: NF:prcomoem.IPrintOemUni3.SetBandSize
 title: IPrintOemUni3::SetBandSize method
 author: windows-driver-content
 description: The IPrintOemUni3::SetBandSize method can be used with Unidrv-supported printers to specify the desired band size on the printed output.
@@ -7,7 +7,7 @@ old-location: print\iprintoemuni3_setbandsize.htm
 old-project: print
 ms.assetid: e75fdfa5-2b25-4d89-b3ef-40cb445f874f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUni3, IPrintOemUni3::SetBandSize, SetBandSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ HRESULT SetBandSize(
 
 ### -param pdevobj [in]
 
-A caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+A caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param iFormat [in]
@@ -197,11 +198,11 @@ This method is available in Windows Vista and later.
 
 This method is used by a rendering plug-in to specify band size using the plug-in's own calculations, rather than using Unidrv's band size calculations.
 
-You can disable banding operations by Unidrv by setting the <i>dwPageHeight</i> value to *<i>pdwRequiredHeight</i>, but you should consider the performance effect of the height value that the rendering plug-in requests. For rendering, Unidrv needs at least the amount of memory that is calculated by multiplying <i>dwPageWidthBytes</i> by *<i>pdwRequiredHeight</i>. If the rendering plug-in supports the <a href="print.iprintoemuni_driverdms">IPrintOemUni::DriverDMS</a> method and that method returns "S_OK", <code>IPrintOemUni3::SetBandSize</code> is not called.
+You can disable banding operations by Unidrv by setting the <i>dwPageHeight</i> value to *<i>pdwRequiredHeight</i>, but you should consider the performance effect of the height value that the rendering plug-in requests. For rendering, Unidrv needs at least the amount of memory that is calculated by multiplying <i>dwPageWidthBytes</i> by *<i>pdwRequiredHeight</i>. If the rendering plug-in supports the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554245">IPrintOemUni::DriverDMS</a> method and that method returns "S_OK", <code>IPrintOemUni3::SetBandSize</code> is not called.
 
 If this method is defined and the printer's generic printer description (GPD) file indicates that preanalysis is disabled (the GPD file includes "*<b>PreAnalysisOptions</b>: 0"), Unidrv calls this method to calculate band size. For information about the <b>PreAnalysisOptions</b> attribute, see <a href="https://msdn.microsoft.com/4c07145a-9a08-4507-8bab-769617e73d77">Preanalysis Infrastructure</a>.
 
-If the rendering plug-in supports <a href="print.iprintoemuni_driverdms">IPrintOemUni::DriverDMS</a> and that method returns S_OK, <code>IPrintOemUni3::SetBandSize</code> is not called.
+If the rendering plug-in supports <a href="https://msdn.microsoft.com/library/windows/hardware/ff554245">IPrintOemUni::DriverDMS</a> and that method returns S_OK, <code>IPrintOemUni3::SetBandSize</code> is not called.
 
 
 ## -requirements

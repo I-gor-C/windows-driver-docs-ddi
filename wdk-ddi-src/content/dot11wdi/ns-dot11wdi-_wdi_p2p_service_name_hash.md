@@ -1,14 +1,14 @@
 ---
-UID: NS.DOT11WDI._WDI_P2P_SERVICE_NAME_HASH
+UID: NS:dot11wdi._WDI_P2P_SERVICE_NAME_HASH
 title: _WDI_P2P_SERVICE_NAME_HASH
 author: windows-driver-content
 description: The WDI_P2P_SERVICE_NAME_HASH structure defines a hash of a WFDS Service Name.
 old-location: netvista\wdi_p2p_service_name_hash.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: B03C779A-ED25-48D7-BB5E-EB95ED1B2D00
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WDI_P2P_SERVICE_NAME_HASH, PWDI_P2P_SERVICE_NAME_HASH, WDI_P2P_SERVICE_NAME_HASH, *PWDI_P2P_SERVICE_NAME_HASH
+ms.date: 1/8/2018
+ms.keywords: _WDI_P2P_SERVICE_NAME_HASH, WDI_P2P_SERVICE_NAME_HASH, *PWDI_P2P_SERVICE_NAME_HASH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDI_P2P_SERVICE_NAME_HASH, *PWDI_P2P_SERVICE_NAME_HASH
 ---
 
 # _WDI_P2P_SERVICE_NAME_HASH structure

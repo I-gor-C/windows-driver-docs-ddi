@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinHandshake
+UID: NF:ks.KsPinHandshake
 title: KsPinHandshake function
 author: windows-driver-content
 description: The KsPinHandshake function attempts a protocol handshake with a connected pin.
@@ -7,7 +7,7 @@ old-location: stream\kspinhandshake.htm
 old-project: stream
 ms.assetid: 31855688-9221-4128-89c5-dbc4f3e6f794
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinHandshake
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsPinHandshake function
@@ -57,7 +58,7 @@ NTSTATUS KsPinHandshake(
 
 ### -param Pin [in]
 
-A pointer to the <a href="stream.kspin">KSPIN</a> structure that is initiating the handshake. The handshake request is passed on to the pin connected to this object.
+A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure that is initiating the handshake. The handshake request is passed on to the pin connected to this object.
 
 
 ### -param In [in]
@@ -129,7 +130,7 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kspingetconnectedpininterface">KsPinGetConnectedPinInterface</a>
+<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
 </dt>
 <dt>
 <a href="..\ks\ni-ks-ioctl_ks_handshake.md">IOCTL_KS_HANDSHAKE</a>
@@ -142,5 +143,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinHandshake function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinHandshake function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

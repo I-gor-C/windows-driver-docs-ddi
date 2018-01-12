@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMDriverDMS
+UID: NF:printoem.OEMDriverDMS
 title: OEMDriverDMS function
 author: windows-driver-content
 description: OEMDriverDMS function
@@ -7,7 +7,7 @@ old-location: print\oemdriverdms.htm
 old-project: print
 ms.assetid: 261d4dbc-6374-4b11-80a0-64b0a2fc6abe
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMDriverDMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

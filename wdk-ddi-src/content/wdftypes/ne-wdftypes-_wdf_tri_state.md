@@ -1,5 +1,5 @@
 ---
-UID: NE.wdftypes._WDF_TRI_STATE
+UID: NE:wdftypes._WDF_TRI_STATE
 title: _WDF_TRI_STATE
 author: windows-driver-content
 description: The WDF_TRI_STATE enumeration type defines three values that the framework uses for some structure members and function parameters.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_tri_state.htm
 old-project: wdf
 ms.assetid: 8ea6e373-225d-4fcd-abcf-c19b07f9f5d8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_TRI_STATE, PWDF_TRI_STATE, WDF_TRI_STATE, *PWDF_TRI_STATE
+ms.date: 12/29/2017
+ms.keywords: _WDF_TRI_STATE, WDF_TRI_STATE, *PWDF_TRI_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: WDF_TRI_STATE, *PWDF_TRI_STATE
 req.product: Windows 10 or later.
 ---
 

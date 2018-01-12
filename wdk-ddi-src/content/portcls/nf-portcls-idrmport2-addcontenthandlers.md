@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IDrmPort2.AddContentHandlers
+UID: NF:portcls.IDrmPort2.AddContentHandlers
 title: IDrmPort2::AddContentHandlers method
 author: windows-driver-content
 description: The AddContentHandlers method provides the system with a list of functions that handle protected content.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IDrmPort2::AddContentHandlers method
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <code>AddContentHandlers</code> method provides the system with a list of functions that handle protected content. Note that this method is identical in operation to the <a href="audio.drmaddcontenthandlers">DrmAddContentHandlers</a> function, and its parameter definitions and return value are also identical.
+The <code>AddContentHandlers</code> method provides the system with a list of functions that handle protected content. Note that this method is identical in operation to the <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a> function, and its parameter definitions and return value are also identical.
 
 
 
@@ -53,15 +54,15 @@ NTSTATUS AddContentHandlers();
 
 
 ## -returns
-See return value definition in <a href="audio.drmaddcontenthandlers">DrmAddContentHandlers</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
 
-See return value definition in <a href="audio.drmaddcontenthandlers">DrmAddContentHandlers</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
 
-See return value definition in <a href="audio.drmaddcontenthandlers">DrmAddContentHandlers</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
 
 
 ## -remarks
-See comments in <a href="audio.drmaddcontenthandlers">DrmAddContentHandlers</a>.
+See comments in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
 
 
 ## -requirements
@@ -96,7 +97,7 @@ Header
 <a href="..\portcls\nn-portcls-idrmport2.md">IDrmPort2</a>
 </dt>
 <dt>
-<a href="audio.drmaddcontenthandlers">DrmAddContentHandlers</a>
+<a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NE.sensorsdef.SENSOR_STATE
+UID: NE:sensorsdef.SENSOR_STATE
 title: SENSOR_STATE
 author: windows-driver-content
 description: This enumeration represents the valid states of a sensor.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SENSOR_STATE
 req.product: Windows 10 or later.
 ---
 

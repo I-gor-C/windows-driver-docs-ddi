@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSSTREAM_METADATA_INFO
+UID: NS:ks.KSSTREAM_METADATA_INFO
 title: KSSTREAM_METADATA_INFO
 author: windows-driver-content
 description: This structure contains the metadata information that is passed down to the driver.
@@ -7,8 +7,8 @@ old-location: stream\ksstream_metadata_info.htm
 old-project: stream
 ms.assetid: 40C09BCD-407F-4F2D-8780-4DEC1C9246E8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSSTREAM_METADATA_INFO, KSSTREAM_METADATA_INFO, *PKSSTREAM_METADATA_INFO, PKSSTREAM_METADATA_INFO
+ms.date: 1/9/2018
+ms.keywords: KSSTREAM_METADATA_INFO, KSSTREAM_METADATA_INFO, *PKSSTREAM_METADATA_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSSTREAM_METADATA_INFO, *PKSSTREAM_METADATA_INFO
 ---
 
 # KSSTREAM_METADATA_INFO structure

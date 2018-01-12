@@ -1,5 +1,5 @@
 ---
-UID: NC.ks.PFNKSCORRELATEDTIME
+UID: NC:ks.PFNKSCORRELATEDTIME
 title: PFNKSCORRELATEDTIME
 author: windows-driver-content
 description: A streaming minidriver's KStrCorrelatedTime routine is called to retrieve both the presentation time and physical time in a correlated manner. This allows the clock owner to completely determine the current time.
@@ -7,7 +7,7 @@ old-location: stream\kstrcorrelatedtime.htm
 old-project: stream
 ms.assetid: 6f1b2e93-bc3a-4256-af7b-b015a874112b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDSELECTOR
 ---
 
 # PFNKSCORRELATEDTIME callback
@@ -59,7 +60,7 @@ LONGLONG FASTCALL KStrCorrelatedTime(
 
 ### -param Context [in]
 
-Pointer to the minidriver-supplied information context. The minidriver passes the information context to <a href="stream.ksallocatedefaultclockex">KsAllocateDefaultClockEx</a> in the function's <i>DeferredContext</i> parameter when the minidriver allocates a custom DPC timer object.
+Pointer to the minidriver-supplied information context. The minidriver passes the information context to <a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a> in the function's <i>DeferredContext</i> parameter when the minidriver allocates a custom DPC timer object.
 
 
 ### -param SystemTime [out]
@@ -72,9 +73,9 @@ Returns the value of the performance counter in units of ticks.
 
 
 ## -remarks
-Typically, if a minidriver supplies a <i>KStrCorrelatedTime</i> callback function, the minidriver must also supply <a href="stream.kstrsettimer">KStrSetTimer</a> and <a href="stream.kstrcanceltimer">KStrCancelTimer</a> callback functions.
+Typically, if a minidriver supplies a <i>KStrCorrelatedTime</i> callback function, the minidriver must also supply <a href="https://msdn.microsoft.com/library/windows/hardware/ff567203">KStrSetTimer</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a> callback functions.
 
-The minidriver-supplied <i>KStrCorrelatedTimer </i>must have the same characteristics as <a href="kernel.kequeryperformancecounter">KeQueryPerformanceCounter</a>.
+The minidriver-supplied <i>KStrCorrelatedTimer </i>must have the same characteristics as <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>.
 
 
 ## -requirements
@@ -106,21 +107,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksallocatedefaultclockex">KsAllocateDefaultClockEx</a>
+<a href="..\ks\nf-ks-ksallocatedefaultclockex.md">KsAllocateDefaultClockEx</a>
 </dt>
 <dt>
-<a href="stream.kstrcanceltimer">KStrCancelTimer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567156">KStrCancelTimer</a>
 </dt>
 <dt>
-<a href="stream.kstrcorrelatedtime">KStrCorrelatedTime</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567167">KStrCorrelatedTime</a>
 </dt>
 <dt>
-<a href="kernel.kequeryperformancecounter">KeQueryPerformanceCounter</a>
+<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrCorrelatedTime routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrCorrelatedTime routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

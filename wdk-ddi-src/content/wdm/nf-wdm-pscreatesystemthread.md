@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.PsCreateSystemThread
+UID: NF:wdm.PsCreateSystemThread
 title: PsCreateSystemThread function
 author: windows-driver-content
 description: The PsCreateSystemThread routine creates a system thread that executes in kernel mode and returns a handle for the thread.
@@ -7,7 +7,7 @@ old-location: kernel\pscreatesystemthread.htm
 old-project: kernel
 ms.assetid: 4f6bfae4-8515-4fc4-aab3-9e16dbeda6da
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PsCreateSystemThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ NTSTATUS PsCreateSystemThread(
 
 ### -param ThreadHandle [out]
 
-Points to a variable that will receive the handle. The driver must close the handle with <a href="kernel.zwclose">ZwClose</a> once the handle is no longer in use. This handle is a kernel handle for Windows Vista and later versions of Windows. In earlier versions of Windows, the handle might not be a kernel handle.
+Points to a variable that will receive the handle. The driver must close the handle with <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> once the handle is no longer in use. This handle is a kernel handle for Windows Vista and later versions of Windows. In earlier versions of Windows, the handle might not be a kernel handle.
 
 
 ### -param DesiredAccess [in]
@@ -87,7 +88,7 @@ Points to a structure that receives the client identifier of the new thread. Thi
 
 ### -param StartRoutine [in]
 
-The entry point for the newly created system thread. This parameter is a function pointer to a <a href="kernel.threadstart">ThreadStart</a> routine that receives a single argument, which is the <i>StartContext</i> parameter value supplied by the caller.
+The entry point for the newly created system thread. This parameter is a function pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564627">ThreadStart</a> routine that receives a single argument, which is the <i>StartContext</i> parameter value supplied by the caller.
 
 
 ### -param StartContext [in, optional]
@@ -110,7 +111,7 @@ Starting with Windows XP, driver routines that run in a process context other th
 
 Drivers for Windows 2000 and Windows 98/Me must call <b>PsCreateSystemThread</b> only from the system process context.
 
-For more information about the <i>StartContext</i> parameter, see <a href="kernel.threadstart">ThreadStart</a>.
+For more information about the <i>StartContext</i> parameter, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564627">ThreadStart</a>.
 
  The newly created system thread runs at PASSIVE_LEVEL inside a critical region with <a href="https://msdn.microsoft.com/74ed953c-1b2a-40b9-9df3-16869b198b38">normal kernel APCs</a> disabled.
 
@@ -187,7 +188,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqlpspassive">IrqlPsPassive</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547882">IrqlPsPassive</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -195,27 +196,27 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 </dt>
 <dt>
-<a href="kernel.kesetbaseprioritythread">KeSetBasePriorityThread</a>
+<a href="..\ntddk\nf-ntddk-kesetbaseprioritythread.md">KeSetBasePriorityThread</a>
 </dt>
 <dt>
-<a href="kernel.kesetprioritythread">KeSetPriorityThread</a>
+<a href="..\wdm\nf-wdm-kesetprioritythread.md">KeSetPriorityThread</a>
 </dt>
 <dt>
-<a href="kernel.psterminatesystemthread">PsTerminateSystemThread</a>
+<a href="..\wdm\nf-wdm-psterminatesystemthread.md">PsTerminateSystemThread</a>
 </dt>
 <dt>
-<a href="kernel.threadstart">ThreadStart</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564627">ThreadStart</a>
 </dt>
 <dt>
-<a href="kernel.zwsetinformationthread">ZwSetInformationThread</a>
+<a href="..\ntddk\nf-ntddk-zwsetinformationthread.md">ZwSetInformationThread</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PsCreateSystemThread routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PsCreateSystemThread routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdfpdo
 ---
 
 # Wdfpdo.h header
@@ -16,6 +16,25 @@ Wdfpdo.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [PFN_WDFPDOADDEJECTIONRELATIONSPHYSICALDEVICE function](nc-wdfpdo-pfn_wdfpdoaddejectionrelationsphysicaldevice.md) | The WdfPdoAddEjectionRelationsPhysicalDevice method indicates that a specified device is ejected when another specified device is ejected. |
+| [PFN_WDFPDOCLEAREJECTIONRELATIONSDEVICES function](nc-wdfpdo-pfn_wdfpdoclearejectionrelationsdevices.md) | The WdfPdoClearEjectionRelationsDevices method removes all devices from the list of devices that must be ejected when a specified device is ejected. |
+| [PFN_WDFPDOGETPARENT function](nc-wdfpdo-pfn_wdfpdogetparent.md) | The WdfPdoGetParent method returns a handle to the framework device object that represents the parent device of a specified device. |
+| [PFN_WDFPDOINITADDCOMPATIBLEID function](nc-wdfpdo-pfn_wdfpdoinitaddcompatibleid.md) | The WdfPdoInitAddCompatibleID method adds a compatible ID to the list of compatible IDs for a child device. |
+| [PFN_WDFPDOINITADDDEVICETEXT function](nc-wdfpdo-pfn_wdfpdoinitadddevicetext.md) | The WdfPdoInitAddDeviceText method adds a device description and device location to a device, for a specified locale. |
+| [PFN_WDFPDOINITADDHARDWAREID function](nc-wdfpdo-pfn_wdfpdoinitaddhardwareid.md) | The WdfPdoInitAddHardwareID method adds a hardware ID to the list of hardware IDs for a child device. |
+| [PFN_WDFPDOINITALLOCATE function](nc-wdfpdo-pfn_wdfpdoinitallocate.md) | The WdfPdoInitAllocate method allocates a WDFDEVICE_INIT structure for a framework-based bus driver, which the bus driver uses when reporting a new device. |
+| [PFN_WDFPDOINITALLOWFORWARDINGREQUESTTOPARENT function](nc-wdfpdo-pfn_wdfpdoinitallowforwardingrequesttoparent.md) | The WdfPdoInitAllowForwardingRequestToParent method enables a driver's ability to call WdfRequestForwardToParentDeviceIoQueue. |
+| [PFN_WDFPDOINITASSIGNCONTAINERID function](nc-wdfpdo-pfn_wdfpdoinitassigncontainerid.md) | The WdfPdoInitAssignContainerID method updates the container ID for a child device. |
+| [PFN_WDFPDOINITASSIGNDEVICEID function](nc-wdfpdo-pfn_wdfpdoinitassigndeviceid.md) | The WdfPdoInitAssignDeviceID method updates the device ID for a child device. |
+| [PFN_WDFPDOINITASSIGNINSTANCEID function](nc-wdfpdo-pfn_wdfpdoinitassigninstanceid.md) | The WdfPdoInitAssignInstanceID method updates the instance ID for a child device. |
+| [PFN_WDFPDOINITSETDEFAULTLOCALE function](nc-wdfpdo-pfn_wdfpdoinitsetdefaultlocale.md) | The WdfPdoInitSetDefaultLocale method sets a device's default locale. |
+| [PFN_WDFPDOINITSETEVENTCALLBACKS function](nc-wdfpdo-pfn_wdfpdoinitseteventcallbacks.md) | The WdfPdoInitSetEventCallbacks method registers a bus driver's event callback functions. |
+| [PFN_WDFPDOMARKMISSING function](nc-wdfpdo-pfn_wdfpdomarkmissing.md) | The WdfPdoMarkMissing method informs the framework that a device is no longer accessible. |
+| [PFN_WDFPDOREMOVEEJECTIONRELATIONSPHYSICALDEVICE function](nc-wdfpdo-pfn_wdfpdoremoveejectionrelationsphysicaldevice.md) | The WdfPdoRemoveEjectionRelationsPhysicalDevice method removes a specified device from the list of devices that must be ejected when another specified device is ejected. |
+| [PFN_WDFPDOREQUESTEJECT function](nc-wdfpdo-pfn_wdfpdorequesteject.md) | The WdfPdoRequestEject method informs the framework that a specified device is about to be ejected from its docking station. |
+| [PFN_WDFPDORETRIEVEADDRESSDESCRIPTION function](nc-wdfpdo-pfn_wdfpdoretrieveaddressdescription.md) | The WdfPdoRetrieveAddressDescription method retrieves the address description that is associated with a specified framework device object. |
+| [PFN_WDFPDORETRIEVEIDENTIFICATIONDESCRIPTION function](nc-wdfpdo-pfn_wdfpdoretrieveidentificationdescription.md) | The WdfPdoRetrieveIdentificationDescription method retrieves the identification description that is associated with a specified framework device object. |
+| [PFN_WDFPDOUPDATEADDRESSDESCRIPTION function](nc-wdfpdo-pfn_wdfpdoupdateaddressdescription.md) | The WdfPdoUpdateAddressDescription method updates the address description that is associated with a specified framework device object. |
 | [WDF_PDO_EVENT_CALLBACKS_INIT function](nf-wdfpdo-wdf_pdo_event_callbacks_init.md) | The WDF_PDO_EVENT_CALLBACKS_INIT function initializes a WDF_PDO_EVENT_CALLBACKS structure. |
 | [WdfPdoAddEjectionRelationsPhysicalDevice function](nf-wdfpdo-wdfpdoaddejectionrelationsphysicaldevice.md) | The WdfPdoAddEjectionRelationsPhysicalDevice method indicates that a specified device is ejected when another specified device is ejected. |
 | [WdfPdoClearEjectionRelationsDevices function](nf-wdfpdo-wdfpdoclearejectionrelationsdevices.md) | The WdfPdoClearEjectionRelationsDevices method removes all devices from the list of devices that must be ejected when a specified device is ejected. |
@@ -37,17 +56,6 @@ Wdfpdo.h contain these programming interfaces:
 | [WdfPdoRetrieveAddressDescription function](nf-wdfpdo-wdfpdoretrieveaddressdescription.md) | The WdfPdoRetrieveAddressDescription method retrieves the address description that is associated with a specified framework device object. |
 | [WdfPdoRetrieveIdentificationDescription function](nf-wdfpdo-wdfpdoretrieveidentificationdescription.md) | The WdfPdoRetrieveIdentificationDescription method retrieves the identification description that is associated with a specified framework device object. |
 | [WdfPdoUpdateAddressDescription function](nf-wdfpdo-wdfpdoupdateaddressdescription.md) | The WdfPdoUpdateAddressDescription method updates the address description that is associated with a specified framework device object. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_WDF_DEVICE_DISABLE_WAKE_AT_BUS callback](nc-wdfpdo-evt_wdf_device_disable_wake_at_bus.md) | A bus driver's EvtDeviceDisableWakeAtBus event callback function performs bus-level operations that disable the ability of one of the bus's devices to trigger a wake-up signal on the bus. |
-| [EVT_WDF_DEVICE_EJECT callback](nc-wdfpdo-evt_wdf_device_eject.md) | A driver's EvtDeviceEject event callback function handles operations that are necessary to eject a device from its docking station. |
-| [EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS callback](nc-wdfpdo-evt_wdf_device_enable_wake_at_bus.md) | A bus driver's EvtDeviceEnableWakeAtBus event callback function performs bus-level operations that enable one of the bus's devices to trigger a wake-up signal on the bus. |
-| [EVT_WDF_DEVICE_REPORTED_MISSING callback](nc-wdfpdo-evt_wdf_device_reported_missing.md) | A bus driver's EvtDeviceReportedMissing event callback function informs the driver that the framework has reported the physical device object (PDO) missing to the Plug and Play manager. |
-| [EVT_WDF_DEVICE_RESOURCE_REQUIREMENTS_QUERY callback](nc-wdfpdo-evt_wdf_device_resource_requirements_query.md) | A bus driver's EvtDeviceResourceRequirementsQuery event callback function creates a resource requirements list that represents the device's required hardware resources. |
-| [EVT_WDF_DEVICE_SET_LOCK callback](nc-wdfpdo-evt_wdf_device_set_lock.md) | A driver's EvtDeviceSetLock event callback function locks the specified device so that it cannot be ejected, or unlocks the device so that it can be ejected. |
 
 ## Structures
 

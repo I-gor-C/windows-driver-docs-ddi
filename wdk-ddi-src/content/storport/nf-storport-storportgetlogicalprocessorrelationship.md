@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortGetLogicalProcessorRelationship
+UID: NF:storport.StorPortGetLogicalProcessorRelationship
 title: StorPortGetLogicalProcessorRelationship function
 author: windows-driver-content
 description: The StorPortGetLogicalProcessorRelationship routine returns relationship information for one or more specified types.
@@ -7,7 +7,7 @@ old-location: storage\storportgetlogicalprocessorrelationship.htm
 old-project: storage
 ms.assetid: 32b92771-7f23-492c-a3b0-b10032c9f80a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortGetLogicalProcessorRelationship
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -154,7 +155,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.storport_storportirql">StorPortIrql</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
 </td>
 </tr>
 </table>

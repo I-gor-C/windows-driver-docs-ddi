@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfhwaccess.WDF_WRITE_PORT_ULONG
+UID: NF:wdfhwaccess.WDF_WRITE_PORT_ULONG
 title: WDF_WRITE_PORT_ULONG function
 author: windows-driver-content
 description: The WDF_WRITE_PORT_ULONG function writes a ULONG value to the specified port address.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_port_ulong.htm
 old-project: wdf
 ms.assetid: 553CA9E0-66C7-436B-AE34-5A6201479D6D
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WDF_WRITE_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 

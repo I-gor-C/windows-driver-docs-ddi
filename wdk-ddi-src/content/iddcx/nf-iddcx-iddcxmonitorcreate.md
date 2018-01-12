@@ -1,5 +1,5 @@
 ---
-UID: NF.iddcx.IddCxMonitorCreate
+UID: NF:iddcx.IddCxMonitorCreate
 title: IddCxMonitorCreate function
 author: windows-driver-content
 description: An OS callback function the driver calls to create a monitor object that can later be used for arrival.
@@ -7,7 +7,7 @@ old-location: display\iddcxmonitorcreate.htm
 old-project: display
 ms.assetid: 2e089827-dd50-43cb-9e1a-34c439780831
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IddCxMonitorCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IddCxMonitorCreate function

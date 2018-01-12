@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._STORAGE_PHYSICAL_DEVICE_DATA
+UID: NS:ntddstor._STORAGE_PHYSICAL_DEVICE_DATA
 title: _STORAGE_PHYSICAL_DEVICE_DATA
 author: windows-driver-content
 description: Specifies the physical device data of a storage device.
@@ -7,8 +7,8 @@ old-location: storage\storage_physical_device_data.htm
 old-project: storage
 ms.assetid: 9D8E67D1-EB7C-4EED-8BDD-43D5E012B99C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_PHYSICAL_DEVICE_DATA, STORAGE_PHYSICAL_DEVICE_DATA, PSTORAGE_PHYSICAL_DEVICE_DATA, *PSTORAGE_PHYSICAL_DEVICE_DATA
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_PHYSICAL_DEVICE_DATA, STORAGE_PHYSICAL_DEVICE_DATA, *PSTORAGE_PHYSICAL_DEVICE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_PHYSICAL_DEVICE_DATA, *PSTORAGE_PHYSICAL_DEVICE_DATA
 ---
 
 # _STORAGE_PHYSICAL_DEVICE_DATA structure
@@ -76,22 +77,22 @@ The role of the storage device. A bitmask can be use to specify multiple roles, 
 
 ### -field HealthStatus
 
-Indicates the health status of a storage device, of type <a href="storage.storage_component_health_status">STORAGE_COMPONENT_HEALTH_STATUS</a>.
+Indicates the health status of a storage device, of type <a href="..\ntddstor\ne-ntddstor-_storage_component_health_status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.
 
 
 ### -field CommandProtocol
 
-Specifies the storage command protocols that are used between software and hardware, of type <a href="storage.storage_protocol_type">STORAGE_PROTOCOL_TYPE</a>.
+Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor-_storage_protocol_type.md">STORAGE_PROTOCOL_TYPE</a>.
 
 
 ### -field SpecVersion
 
-Indicates the specification of the storage device, of type <a href="storage.storage_spec_version">STORAGE_SPEC_VERSION</a>.
+Indicates the specification of the storage device, of type <a href="..\ntddstor\ns-ntddstor-_storage_spec_version.md">STORAGE_SPEC_VERSION</a>.
 
 
 ### -field FormFactor
 
-Indicates the form factor of a storage device, of type <a href="storage.storage_device_form_factor">STORAGE_DEVICE_FORM_FACTOR</a>.
+Indicates the form factor of a storage device, of type <a href="..\ntddstor\ne-ntddstor-_storage_device_form_factor.md">STORAGE_DEVICE_FORM_FACTOR</a>.
 
 
 ### -field Vendor[8]

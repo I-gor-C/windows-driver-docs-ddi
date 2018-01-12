@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfobject.WdfObjectContextGetObject
+UID: NF:wdfobject.WdfObjectContextGetObject
 title: WdfObjectContextGetObject function
 author: windows-driver-content
 description: The WdfObjectContextGetObject method returns a handle to the framework object that a specified context space belongs to.
@@ -7,7 +7,7 @@ old-location: wdf\wdfobjectcontextgetobject.htm
 old-project: wdf
 ms.assetid: 7288a7e5-8e64-4ac3-9779-edc27a3888bb
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfObjectContextGetObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: Any level
+req.typenames: WDF_SYNCHRONIZATION_SCOPE
 req.product: Windows 10 or later.
 ---
 
@@ -66,7 +67,7 @@ A pointer to object context space. The driver can obtain this pointer by calling
 
 
 ## -remarks
-For more information about object context space, see <a href="wdf.framework_object_context_space">Framework Object Context Space</a>. 
+For more information about object context space, see <a href="https://msdn.microsoft.com/21a46e04-2330-4a3d-ba72-c04295bfbb3c">Framework Object Context Space</a>. 
 
 The following code example obtains a handle to the framework object that a specified context space belongs to.
 
@@ -143,7 +144,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
 </td>
 </tr>
 </table>
@@ -158,5 +159,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfObjectContextGetObject method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfObjectContextGetObject method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

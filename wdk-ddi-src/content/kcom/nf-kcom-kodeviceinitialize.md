@@ -1,5 +1,5 @@
 ---
-UID: NF.kcom.KoDeviceInitialize
+UID: NF:kcom.KoDeviceInitialize
 title: KoDeviceInitialize function
 author: windows-driver-content
 description: The KoDeviceInitialize function adds a kernel COM create-item entry to the specified device object.
@@ -7,7 +7,7 @@ old-location: stream\kodeviceinitialize.htm
 old-project: stream
 ms.assetid: 68ae87c5-7d71-4e85-8052-4e5c422340fb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KoDeviceInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: CONNECT_DATA, *PCONNECT_DATA
 ---
 
 # KoDeviceInitialize function

@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES
+UID: NS:ndis._NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES
 title: _NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\ndis_miniport_adapter_native_802_11_attributes.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f841c7f9-9ad3-4b53-b2d9-0d66d6e64b8b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES
+ms.date: 1/8/2018
+ms.keywords: _NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES
 ---
 
 # _NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure
@@ -68,7 +69,7 @@ typedef struct {
 
 The type, revision, and size of the NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure. This
      member is formatted as an 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
      
 
 The miniport driver must set the members of 
@@ -102,7 +103,7 @@ For later versions of the Windows operating systems, this member must be set to
 </dd>
 </dl>
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field OpModeCapability
@@ -202,7 +203,7 @@ This member is available beginning with Windows 7.
 ### -field ExtAPAttributes
 
 A pointer to a 
-      <a href="netvista.dot11_extap_attributes">DOT11_EXTAP_ATTRIBUTES</a> structure
+      <a href="..\windot11\ns-windot11-_dot11_extap_attributes.md">DOT11_EXTAP_ATTRIBUTES</a> structure
       that specifies the attributes of the miniport driver and 802.11 station when it operates in Extensible
       Access Point (ExtAP) mode.
 
@@ -212,7 +213,7 @@ This member is available beginning with Windows 7.
 ### -field WFDAttributes
 
 A pointer to a 
-      <a href="netvista.dot11_wfd_attributes">DOT11_WFD_ATTRIBUTES</a> structure
+      <a href="..\windot11\ns-windot11-_dot11_wfd_attributes.md">DOT11_WFD_ATTRIBUTES</a> structure
       that specifies the attributes of the miniport driver and 802.11 station when it operates in Wi-Fi Direct (WFD) mode.
 
 This member is available beginning with Windows 8.
@@ -222,7 +223,7 @@ This member is available beginning with Windows 8.
 When its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function is
     called, the miniport driver must call the 
-    <a href="netvista.ndismsetminiportattributes">
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
     NdisMSetMiniportAttributes</a> function to define the Native 802.11 attributes of the driver and 802.11
     station. The miniport driver must follow these guidelines when it makes the call to 
     <b>NdisMSetMiniportAttributes</b>:
@@ -278,7 +279,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_extap_attributes">DOT11_EXTAP_ATTRIBUTES</a>
+<a href="..\windot11\ns-windot11-_dot11_extap_attributes.md">DOT11_EXTAP_ATTRIBUTES</a>
 </dt>
 <dt>
 <a href="..\windot11\ns-windot11-dot11_extsta_attributes.md">DOT11_EXTSTA_ATTRIBUTES</a>
@@ -290,7 +291,7 @@ Header
 <a href="..\windot11\ns-windot11-dot11_vwifi_attributes.md">DOT11_VWIFI_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="netvista.dot11_wfd_attributes">DOT11_WFD_ATTRIBUTES</a>
+<a href="..\windot11\ns-windot11-_dot11_wfd_attributes.md">DOT11_WFD_ATTRIBUTES</a>
 </dt>
 <dt>
 <a href="netvista.extensible_station_operation_mode">Extensible Station Operation
@@ -307,18 +308,18 @@ Header
    Driver Initialization</a>
 </dt>
 <dt>
-<a href="netvista.native_802_11_operation_modes">Native 802.11 Operation Modes</a>
+<a href="https://msdn.microsoft.com/68b188c1-740f-426c-8ee5-5a605dc77565">Native 802.11 Operation Modes</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

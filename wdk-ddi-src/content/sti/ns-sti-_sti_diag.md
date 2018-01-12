@@ -1,14 +1,14 @@
 ---
-UID: NS.STI._STI_DIAG
+UID: NS:sti._STI_DIAG
 title: _STI_DIAG
 author: windows-driver-content
 description: The STI_DIAG structure is used as a parameter to the IStiDevice::Diagnostic and IStiUSD::Diagnostic methods.
 old-location: image\sti_diag.htm
-old-project: Image
+old-project: image
 ms.assetid: 07caa8b0-849c-4ad9-9adb-b1726edc9234
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _STI_DIAG, *LPSTI_DIAG, STI_DIAG, LPSTI_DIAG
+ms.date: 1/10/2018
+ms.keywords: _STI_DIAG, *LPSTI_DIAG, STI_DIAG, DIAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPSTI_DIAG, STI_DIAG
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The STI_DIAG structure is used as a parameter to the <a href="image.istidevice_diagnostic">IStiDevice::Diagnostic</a> and <a href="image.istiusd_diagnostic">IStiUSD::Diagnostic</a> methods.
+The STI_DIAG structure is used as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543736">IStiDevice::Diagnostic</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543814">IStiUSD::Diagnostic</a> methods.
 
 
 
@@ -80,7 +81,7 @@ Reserved for future use.
 
 ### -field sErrorInfo
 
-Structure of type <a href="image.sti_error_info">STI_ERROR_INFO</a>.
+Structure of type <a href="..\sti\ns-sti-_error_infow.md">STI_ERROR_INFO</a>.
 
 
 ## -remarks

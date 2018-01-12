@@ -1,5 +1,5 @@
 ---
-UID: NF.mcd.ChangerError
+UID: NF:mcd.ChangerError
 title: ChangerError function
 author: windows-driver-content
 description: ChangerError performs device-specific error handling.
@@ -7,7 +7,7 @@ old-location: storage\changererror.htm
 old-project: storage
 ms.assetid: e2196971-47ad-4ac4-a3e9-c8f7f6b05321
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: ChangerError
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 # ChangerError function

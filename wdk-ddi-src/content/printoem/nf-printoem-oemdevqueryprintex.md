@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMDevQueryPrintEx
+UID: NF:printoem.OEMDevQueryPrintEx
 title: OEMDevQueryPrintEx function
 author: windows-driver-content
 description: OEMDevQueryPrintEx function
@@ -7,7 +7,7 @@ old-location: print\oemdevqueryprintex.htm
 old-project: print
 ms.assetid: 3d555be3-2a1b-40b4-adf4-b797bb4b09b7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMDevQueryPrintEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

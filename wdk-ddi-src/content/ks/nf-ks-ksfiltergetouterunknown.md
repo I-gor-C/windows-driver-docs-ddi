@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsFilterGetOuterUnknown
+UID: NF:ks.KsFilterGetOuterUnknown
 title: KsFilterGetOuterUnknown function
 author: windows-driver-content
 description: The KsFilterGetOuterUnknown function returns the outer IUnknown interface of the filter specified by Filter.
@@ -7,7 +7,7 @@ old-location: stream\ksfiltergetouterunknown.htm
 old-project: stream
 ms.assetid: 599a6583-dcf2-4fe3-949a-5072bff9915c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsFilterGetOuterUnknown
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsFilterGetOuterUnknown function
@@ -55,7 +56,7 @@ PUNKNOWN __inline KsFilterGetOuterUnknown(
 
 ### -param Filter [in]
 
-A pointer to the <a href="stream.ksfilter">KSFILTER</a> structure for which to return the outer <b>IUnknown</b>.
+A pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure for which to return the outer <b>IUnknown</b>.
 
 
 ## -returns
@@ -63,7 +64,7 @@ A pointer to the <a href="stream.ksfilter">KSFILTER</a> structure for which to r
 
 
 ## -remarks
-This call is an inline function call to <a href="stream.ksgetouterunknown">KsGetOuterUnknown</a>.
+This call is an inline function call to <a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>.
 
 
 ## -requirements
@@ -115,31 +116,31 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksgetouterunknown">KsGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="stream.ksregisteraggregatedclientunknown">KsRegisterAggregatedClientUnknown</a>
+<a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
 </dt>
 <dt>
-<a href="stream.kspinregisteraggregatedclientunknown">KsPinRegisterAggregatedClientUnknown</a>
+<a href="..\ks\nf-ks-kspinregisteraggregatedclientunknown.md">KsPinRegisterAggregatedClientUnknown</a>
 </dt>
 <dt><b>KsRegisterAggregatedClientUnknown</b></dt>
 <dt>
 <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>
 </dt>
 <dt>
-<a href="stream.ksfilterregisteraggregatedclientunknown">KsFilterRegisterAggregatedClientUnknown</a>
+<a href="..\ks\nf-ks-ksfilterregisteraggregatedclientunknown.md">KsFilterRegisterAggregatedClientUnknown</a>
 </dt>
 <dt>
-<a href="stream.kspingetouterunknown">KsPinGetOuterUnknown</a>
+<a href="..\ks\nf-ks-kspingetouterunknown.md">KsPinGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterGetOuterUnknown function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterGetOuterUnknown function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

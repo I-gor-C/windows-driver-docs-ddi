@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportStreamAudioEngineNode2.SetStreamCurrentWritePositionForLastBuffer
+UID: NF:portcls.IMiniportStreamAudioEngineNode2.SetStreamCurrentWritePositionForLastBuffer
 title: IMiniportStreamAudioEngineNode2::SetStreamCurrentWritePositionForLastBuffer method
 author: windows-driver-content
 description: Sets the current cursor position in the last audio data stream that was written to the audio buffer.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportStreamAudioEngineNode2::SetStreamCurrentWritePositionForLastBuffer method

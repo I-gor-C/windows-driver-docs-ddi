@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IXpsDocumentConsumer.GetNewEmptyPart
+UID: NF:filterpipeline.IXpsDocumentConsumer.GetNewEmptyPart
 title: IXpsDocumentConsumer::GetNewEmptyPart method
 author: windows-driver-content
 description: The GetNewEmptyPart method creates a new XPS part.
@@ -7,7 +7,7 @@ old-location: print\ixpsdocumentconsumer_getnewemptypart.htm
 old-project: print
 ms.assetid: cc0911da-46ca-4cf7-a59e-da0d53e1d10c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IXpsDocumentConsumer, IXpsDocumentConsumer::GetNewEmptyPart, GetNewEmptyPart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IXpsDocumentConsumer::GetNewEmptyPart method
@@ -68,43 +69,43 @@ A reference identifier (REFIID) for one of the following interfaces:
 <ul>
 <li>
 
-<a href="print.ifixeddocument">IFixedDocument</a>
+<a href="..\filterpipeline\nn-filterpipeline-ifixeddocument.md">IFixedDocument</a>
 
 
 </li>
 <li>
 
-<a href="print.ifixedpage">IFixedPage</a>
+<a href="..\filterpipeline\nn-filterpipeline-ifixedpage.md">IFixedPage</a>
 
 
 </li>
 <li>
 
-<a href="print.ipartimage">IPartImage</a>
+<a href="..\filterpipeline\nn-filterpipeline-ipartimage.md">IPartImage</a>
 
 
 </li>
 <li>
 
-<a href="print.ipartthumbnail">IPartThumbnail</a>
+<a href="..\filterpipeline\nn-filterpipeline-ipartthumbnail.md">IPartThumbnail</a>
 
 
 </li>
 <li>
 
-<a href="print.ipartfont">IPartFont</a>
+<a href="..\filterpipeline\nn-filterpipeline-ipartfont.md">IPartFont</a>
 
 
 </li>
 <li>
 
-<a href="print.ipartprintticket">IPartPrintTicket</a>
+<a href="..\filterpipeline\nn-filterpipeline-ipartprintticket.md">IPartPrintTicket</a>
 
 
 </li>
 <li>
 
-<a href="print.ipartcolorprofile">IPartColorProfile</a>
+<a href="..\filterpipeline\nn-filterpipeline-ipartcolorprofile.md">IPartColorProfile</a>
 
 
 </li>
@@ -168,30 +169,33 @@ IDL
 ## -see-also
 <dl>
 <dt>
-<a href="print.ifixeddocument">IFixedDocument</a>
+<a href="..\filterpipeline\nn-filterpipeline-ixpsdocumentconsumer.md">IXpsDocumentConsumer</a>
 </dt>
 <dt>
-<a href="print.ifixedpage">IFixedPage</a>
+<a href="..\filterpipeline\nn-filterpipeline-ifixeddocument.md">IFixedDocument</a>
 </dt>
 <dt>
-<a href="print.ipartcolorprofile">IPartColorProfile</a>
+<a href="..\filterpipeline\nn-filterpipeline-ifixedpage.md">IFixedPage</a>
 </dt>
 <dt>
-<a href="print.ipartfont">IPartFont</a>
+<a href="..\filterpipeline\nn-filterpipeline-ipartcolorprofile.md">IPartColorProfile</a>
 </dt>
 <dt>
-<a href="print.ipartimage">IPartImage</a>
+<a href="..\filterpipeline\nn-filterpipeline-ipartfont.md">IPartFont</a>
 </dt>
 <dt>
-<a href="print.ipartprintticket">IPartPrintTicket</a>
+<a href="..\filterpipeline\nn-filterpipeline-ipartimage.md">IPartImage</a>
 </dt>
 <dt>
-<a href="print.ipartthumbnail">IPartThumbnail</a>
+<a href="..\filterpipeline\nn-filterpipeline-ipartprintticket.md">IPartPrintTicket</a>
+</dt>
+<dt>
+<a href="..\filterpipeline\nn-filterpipeline-ipartthumbnail.md">IPartThumbnail</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IXpsDocumentConsumer::GetNewEmptyPart method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IXpsDocumentConsumer::GetNewEmptyPart method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

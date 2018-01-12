@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDPAR._PAR_SET_INFORMATION
+UID: NS:ntddpar._PAR_SET_INFORMATION
 title: _PAR_SET_INFORMATION
 author: windows-driver-content
 description: The PAR_SET_INFORMATION structure specifies the initial operating status of a parallel port.
@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: 05e889b1-4b18-4122-9332-69778017e15c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PAR_SET_INFORMATION, *PPAR_SET_INFORMATION, PPAR_SET_INFORMATION, PAR_SET_INFORMATION
+ms.keywords: _PAR_SET_INFORMATION, *PPAR_SET_INFORMATION, PAR_SET_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPAR_SET_INFORMATION, PAR_SET_INFORMATION
 ---
 
 # _PAR_SET_INFORMATION structure
@@ -86,7 +87,7 @@ Header
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_set_information.md">IOCTL_PAR_SET_INFORMATION</a>
 </dt>
 <dt>
-<a href="parports.par_query_information">PAR_QUERY_INFORMATION</a>
+<a href="..\ntddpar\ns-ntddpar-_par_query_information.md">PAR_QUERY_INFORMATION</a>
 </dt>
 </dl>
  

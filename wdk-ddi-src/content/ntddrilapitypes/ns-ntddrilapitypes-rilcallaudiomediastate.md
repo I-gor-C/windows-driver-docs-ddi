@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLAUDIOMEDIASTATE
+UID: NS:ntddrilapitypes.RILCALLAUDIOMEDIASTATE
 title: RILCALLAUDIOMEDIASTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallaudiomediastate.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f8e65085-6837-4d49-a39e-784942ee39a4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLAUDIOMEDIASTATE, LPRILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE, *LPRILCALLAUDIOMEDIASTATE
+ms.date: 1/8/2018
+ms.keywords: RILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE, *LPRILCALLAUDIOMEDIASTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLAUDIOMEDIASTATE, *LPRILCALLAUDIOMEDIASTATE
 ---
 
 # RILCALLAUDIOMEDIASTATE structure

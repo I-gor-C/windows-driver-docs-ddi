@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTSignalSynchronizationObjectFromCpu
+UID: NF:d3dkmthk.D3DKMTSignalSynchronizationObjectFromCpu
 title: D3DKMTSignalSynchronizationObjectFromCpu function
 author: windows-driver-content
 description: D3DKMTSignalSynchronizationObjectFromCpu enables a driver to signal a monitored fence.D3DKMTSignalSynchronizationObjectFromCpu enables a driver to signal a monitored fence.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtsignalsynchronizationobjectfromcpu.htm
 old-project: display
 ms.assetid: 23DC5EB1-E606-499D-B78A-AFF95E6B00A3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTSignalSynchronizationObjectFromCpu
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: GDI32.lib
 req.dll: GDI32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTSignalSynchronizationObjectFromCpu function
@@ -60,7 +61,7 @@ HRESULT APIENTRY D3DKMTSignalSynchronizationObjectFromCpu(
 
 ### -param pData [in]
 
-A pointer to a <a href="display.d3dkmt_signalsynchronizationobjectfromcpu">D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU</a> structure that provides the details of the requested operation..
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_signalsynchronizationobjectfromcpu.md">D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU</a> structure that provides the details of the requested operation..
 
 
 ## -returns

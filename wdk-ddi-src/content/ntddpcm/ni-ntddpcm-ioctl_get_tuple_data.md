@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpcm.IOCTL_GET_TUPLE_DATA
+UID: NI:ntddpcm.IOCTL_GET_TUPLE_DATA
 title: IOCTL_GET_TUPLE_DATA
 author: windows-driver-content
 description: This request retrieves tuple data that is stored in a PC Card's or CardBus card's attribute memory.
@@ -8,7 +8,7 @@ old-project: PCMCIA
 ms.assetid: 90bb06c3-2975-4290-b6f1-0c36e7b8678b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS, PPCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
+ms.keywords: _PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS
 ---
 
 # IOCTL_GET_TUPLE_DATA IOCTL

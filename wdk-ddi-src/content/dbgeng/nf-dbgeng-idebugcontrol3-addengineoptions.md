@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.AddEngineOptions
+UID: NF:dbgeng.IDebugControl3.AddEngineOptions
 title: IDebugControl3::AddEngineOptions method
 author: windows-driver-content
 description: The AddEngineOptions method turns on some of the debugger engine's options.
 old-location: debugger\addengineoptions.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 088036f5-13cb-47ba-953c-a71c923f028e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::AddEngineOptions, AddEngineOptions
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl3::AddEngineOptions method
@@ -69,7 +70,7 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-After the engine options have been changed, the engine sends out notification to each client's <a href="debugger.e#event_callback_objects#event_callback_objects">event callback object</a> by passing the DEBUG_CES_ENGINE_OPTIONS flag to the <a href="debugger.idebugeventcallbacks_changeenginestate">IDebugEventCallbacks::ChangeEngineState</a> method.
+After the engine options have been changed, the engine sends out notification to each client's <a href="debugger.e#event_callback_objects#event_callback_objects">event callback object</a> by passing the DEBUG_CES_ENGINE_OPTIONS flag to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550683">IDebugEventCallbacks::ChangeEngineState</a> method.
 
 
 ## -requirements
@@ -110,18 +111,18 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 </dt>
 <dt>
-<a href="debugger.getengineoptions">GetEngineOptions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546598">GetEngineOptions</a>
 </dt>
 <dt>
-<a href="debugger.removeengineoptions">RemoveEngineOptions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554491">RemoveEngineOptions</a>
 </dt>
 <dt>
-<a href="debugger.setengineoptions">SetEngineOptions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556670">SetEngineOptions</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugControl::AddEngineOptions method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::AddEngineOptions method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

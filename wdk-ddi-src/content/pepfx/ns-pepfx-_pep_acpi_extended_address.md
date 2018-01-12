@@ -1,5 +1,5 @@
 ---
-UID: NS.PEPFX._PEP_ACPI_EXTENDED_ADDRESS
+UID: NS:pepfx._PEP_ACPI_EXTENDED_ADDRESS
 title: _PEP_ACPI_EXTENDED_ADDRESS
 author: windows-driver-content
 description: The PEP_ACPI_EXTENDED_ADDRESS structure is used to report resource usage in the address space such as memory and IO.
@@ -7,8 +7,8 @@ old-location: kernel\pep_acpi_extended_address.htm
 old-project: kernel
 ms.assetid: E784765E-E346-4D57-B334-D0A0A823DAA8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_ACPI_EXTENDED_ADDRESS, *PPEP_ACPI_EXTENDED_ADDRESS, PPEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS
+ms.date: 1/4/2018
+ms.keywords: _PEP_ACPI_EXTENDED_ADDRESS, *PPEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS
 ---
 
 # _PEP_ACPI_EXTENDED_ADDRESS structure
@@ -68,12 +69,12 @@ typedef struct _PEP_ACPI_EXTENDED_ADDRESS {
 
 ### -field Type
 
-A <a href="kernel.pep_acpi_resource_type">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.
+A <a href="..\pepfx\ne-pepfx-_pep_acpi_resource_type.md">PEP_ACPI_RESOURCE_TYPE</a> enumeration value describing this resource.
 
 
 ### -field Flags
 
-A <a href="kernel.pep_acpi_resource_flags">PEP_ACPI_RESOURCE_FLAGS</a> structure describing this resource.
+A <a href="..\pepfx\ns-pepfx-_pep_acpi_resource_flags.md">PEP_ACPI_RESOURCE_FLAGS</a> structure describing this resource.
 
 
 ### -field ResourceFlags

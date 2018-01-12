@@ -1,13 +1,13 @@
 ---
-UID: NF.rilapi.RIL_StartModemLogs
+UID: NF:rilapi.RIL_StartModemLogs
 title: RIL_StartModemLogs function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_startmodemlogs.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6f9b79a0-0947-4f69-b2b6-f35ad2ee70d5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RIL_StartModemLogs
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product: Windows 10 or later.
 ---
 

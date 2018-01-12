@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbChannelSaveEnd
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelSaveEnd
 title: VmbChannelSaveEnd function
 author: windows-driver-content
 description: The VmbChannelSaveEnd function cleans up any resources that were allocated for saving state of a channel.
 old-location: netvista\vmbchannelsaveend.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0E61AF98-DC71-4234-B337-71B2AF65D858
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbChannelSaveEnd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

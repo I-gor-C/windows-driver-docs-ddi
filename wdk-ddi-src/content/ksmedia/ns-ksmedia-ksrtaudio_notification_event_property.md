@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY
+UID: NS:ksmedia.KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY
 title: KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY
 author: windows-driver-content
 description: The KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure appends an event handle to a KSPROPERTY structure
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 364db984-1107-4381-ade3-413e238b9796
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY, *PKSRTAUDIO_NOTIFICATION_EVENT_PROPERTY, KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY, PKSRTAUDIO_NOTIFICATION_EVENT_PROPERTY
+ms.keywords: KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY, *PKSRTAUDIO_NOTIFICATION_EVENT_PROPERTY, KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSRTAUDIO_NOTIFICATION_EVENT_PROPERTY, KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY
 ---
 
 # KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure appends an event handle to a <a href="stream.ksproperty">KSPROPERTY</a> structure
+The KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure appends an event handle to a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure
 
 
 
@@ -98,7 +99,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksproperty">KSPROPERTY</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537385">KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT</a>

@@ -1,14 +1,14 @@
 ---
-UID: NE.netdma._NET_DMA_PNP_NOTIFICATION_CODE
+UID: NE:netdma._NET_DMA_PNP_NOTIFICATION_CODE
 title: _NET_DMA_PNP_NOTIFICATION_CODE
 author: windows-driver-content
 description: The NET_DMA_PNP_NOTIFICATION_CODE enumeration identifies the type of a NetDMA Plug and Play (PnP) event.
 old-location: netvista\net_dma_pnp_notification_code.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1c9c09ae-5b7a-4482-8f6b-1ad5ede5b3f5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NET_DMA_PNP_NOTIFICATION_CODE, NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE, PNET_DMA_PNP_NOTIFICATION_CODE
+ms.date: 1/8/2018
+ms.keywords: _NET_DMA_PNP_NOTIFICATION_CODE, NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 # _NET_DMA_PNP_NOTIFICATION_CODE enumeration
@@ -99,7 +100,7 @@ The total number of supported NetDMA PnP events.
 
 ## -remarks
 The NET_DMA_PNP_NOTIFICATION_CODE enumeration is used in the 
-    <a href="netvista.net_dma_pnp_notification">
+    <a href="..\netdma\ns-netdma-_net_dma_pnp_notification.md">
     NET_DMA_PNP_NOTIFICATION</a> structure.
 
 
@@ -131,12 +132,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_dma_pnp_notification">NET_DMA_PNP_NOTIFICATION</a>
+<a href="..\netdma\ns-netdma-_net_dma_pnp_notification.md">NET_DMA_PNP_NOTIFICATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NET_DMA_PNP_NOTIFICATION_CODE enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_DMA_PNP_NOTIFICATION_CODE enumeration%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

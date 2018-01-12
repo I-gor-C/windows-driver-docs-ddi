@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportStreamAudioEngineNode.GetStreamPresentationPosition
+UID: NF:portcls.IMiniportStreamAudioEngineNode.GetStreamPresentationPosition
 title: IMiniportStreamAudioEngineNode::GetStreamPresentationPosition method
 author: windows-driver-content
 description: Gets the current cursor position in the audio data stream that is being rendered to the endpoint.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportStreamAudioEngineNode::GetStreamPresentationPosition method

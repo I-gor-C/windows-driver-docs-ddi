@@ -1,5 +1,5 @@
 ---
-UID: NE.ksmedia.KSCAMERA_PERFRAMESETTING_ITEM_TYPE
+UID: NE:ksmedia.KSCAMERA_PERFRAMESETTING_ITEM_TYPE
 title: KSCAMERA_PERFRAMESETTING_ITEM_TYPE
 author: windows-driver-content
 description: This enumeration contains the different item types for the per-frame settings DDI.
@@ -7,7 +7,7 @@ old-location: stream\kscamera_perframesetting_item_type.htm
 old-project: stream
 ms.assetid: B4312084-E545-45FD-BA93-3BE551CE52DF
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSCAMERA_PERFRAMESETTING_ITEM_TYPE, KSCAMERA_PERFRAMESETTING_ITEM_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSCAMERA_PERFRAMESETTING_ITEM_TYPE
 ---
 
 # KSCAMERA_PERFRAMESETTING_ITEM_TYPE enumeration

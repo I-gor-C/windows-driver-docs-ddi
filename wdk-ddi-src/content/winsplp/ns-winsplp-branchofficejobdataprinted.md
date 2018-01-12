@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP.BRANCHOFFICEJOBDATAPRINTED
+UID: NS:winsplp.BranchOfficeJobDataPrinted
 title: BranchOfficeJobDataPrinted
 author: windows-driver-content
 description: Contains the necessary data for logging a branch office job completed event on a remote server. This is based on standard job-related data available to the spooler.
@@ -7,8 +7,8 @@ old-location: print\branchofficejobdataprinted.htm
 old-project: print
 ms.assetid: 77737A33-9592-43A3-B12A-5BFDCA0209BE
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: BranchOfficeJobDataPrinted, PBranchOfficeJobDataPrinted, BranchOfficeJobDataPrinted, *PBranchOfficeJobDataPrinted
+ms.date: 1/8/2018
+ms.keywords: BranchOfficeJobDataPrinted, BranchOfficeJobDataPrinted, *PBranchOfficeJobDataPrinted
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BranchOfficeJobDataPrinted, *PBranchOfficeJobDataPrinted
 req.product: Windows 10 or later.
 ---
 

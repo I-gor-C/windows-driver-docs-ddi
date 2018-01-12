@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._GET_LOCAL_HOST_INFO3
+UID: NS:1394._GET_LOCAL_HOST_INFO3
 title: _GET_LOCAL_HOST_INFO3
 author: windows-driver-content
 description: The GET_LOCAL_HOST_INFO3 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel = GET_POWER_SUPPLIED.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 49c24328-dfd9-4d4d-a40f-a375f1384a5c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GET_LOCAL_HOST_INFO3, PGET_LOCAL_HOST_INFO3, GET_LOCAL_HOST_INFO3, *PGET_LOCAL_HOST_INFO3
+ms.keywords: _GET_LOCAL_HOST_INFO3, GET_LOCAL_HOST_INFO3, *PGET_LOCAL_HOST_INFO3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GET_LOCAL_HOST_INFO3, *PGET_LOCAL_HOST_INFO3
 ---
 
 # _GET_LOCAL_HOST_INFO3 structure

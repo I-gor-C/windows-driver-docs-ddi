@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisFreeCloneNetBufferList
+UID: NF:ndis.NdisFreeCloneNetBufferList
 title: NdisFreeCloneNetBufferList function
 author: windows-driver-content
 description: Call the NdisFreeCloneNetBufferList function to free a NET_BUFFER_LIST structure and all associated NET_BUFFER structures and MDL chains that were previously allocated by calling the NdisAllocateCloneNetBufferList function.
 old-location: netvista\ndisfreeclonenetbufferlist.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3c632d54-8eb2-475b-8cdf-363028f67437
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisFreeCloneNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisFreeCloneNetBufferList function
@@ -40,10 +41,10 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 Call the 
   <b>NdisFreeCloneNetBufferList</b> function to free a 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure and all associated 
-  <a href="netvista.net_buffer">NET_BUFFER</a> structures and MDL chains that were
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure and all associated 
+  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures and MDL chains that were
   previously allocated by calling the 
-  <a href="netvista.ndisallocateclonenetbufferlist">
+  <a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
   NdisAllocateCloneNetBufferList</a> function.
 
 
@@ -82,7 +83,7 @@ Reserved for NDIS.
 ### -param NDIS_CLONE_FLAGS_USE_ORIGINAL_MDLS
 
 If this flag is set, NDIS did not allocate new MDLs for the cloned NET_BUFFER_LIST in the 
-       <a href="netvista.ndisallocateclonenetbufferlist">
+       <a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
        NdisAllocateCloneNetBufferList</a> function. Instead, the cloned NET_BUFFER_LIST used the same MDL
        chain as in the original NET_BUFFER_LIST. If NDIS_CLONE_FLAGS_USE_ORIGINAL_MDLS is cleared, NDIS
        allocated new MDLs to reference the original data buffers.
@@ -97,7 +98,7 @@ None
 ## -remarks
 The caller must specifiy the same flags that it specified in the 
     <i>AllocateCloneFlags</i> parameter when it called the 
-    <a href="netvista.ndisallocateclonenetbufferlist">
+    <a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
     NdisAllocateCloneNetBufferList</a> function.
 
 
@@ -162,7 +163,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -170,13 +171,13 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocateclonenetbufferlist">
+<a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
    NdisAllocateCloneNetBufferList</a>
 </dt>
 </dl>
@@ -184,5 +185,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisFreeCloneNetBufferList function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeCloneNetBufferList function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

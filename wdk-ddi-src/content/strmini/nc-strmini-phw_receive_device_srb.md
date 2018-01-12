@@ -1,14 +1,14 @@
 ---
-UID: NC.strmini.PHW_RECEIVE_DEVICE_SRB
+UID: NC:strmini.PHW_RECEIVE_DEVICE_SRB
 title: PHW_RECEIVE_DEVICE_SRB
 author: windows-driver-content
-description: The minidriver-supplied StrMiniReceiveDevicePacket routine handles class driver requests that apply to the driver as a whole, such as initializing the device, or opening a stream within the device.
-old-location: stream\strminireceivedevicepacket.htm
+description: The stream class driver calls the minidriver's StrMiniReceiveStreamControlPacket routine to handle I/O requests for a specific stream.
+old-location: stream\strminireceivestreamdatapacket.htm
 old-project: stream
-ms.assetid: 51d8a18d-cd90-4fac-a991-6c0de505576e
+ms.assetid: 4b354e7d-01b9-43b5-8d22-6e15a4ae4958
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _ZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR
+ms.date: 1/9/2018
+ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -19,7 +19,7 @@ req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: StrMiniReceiveDevicePacket
+req.alt-api: StrMiniReceiveStreamDataPacket
 req.alt-loc: strmini.h
 req.ddi-compliance: 
 req.unicode-ansi: 
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 req.product: Windows 10 or later.
 ---
 
@@ -39,16 +40,16 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<i>The minidriver-supplied StrMiniReceiveDevicePacket</i> routine handles class driver requests that apply to the driver as a whole, such as initializing the device, or opening a stream within the device.
+The stream class driver calls the minidriver's <i>StrMiniReceiveStreamControlPacket</i> routine to handle I/O requests for a specific stream.
 
 
 
 ## -prototype
 
 ````
-PHW_RECEIVE_DEVICE_SRB StrMiniReceiveDevicePacket;
+PHW_RECEIVE_DEVICE_SRB StrMiniReceiveStreamDataPacket;
 
-VOID StrMiniReceiveDevicePacket(
+VOID StrMiniReceiveStreamDataPacket(
   _In_ PHW_STREAM_REQUEST_BLOCK pSRB
 )
 { ... }
@@ -67,11 +68,11 @@ None
 
 
 ## -remarks
-The minidriver specifies this routine in the <b>HwReceivePacket</b> member of its <a href="stream.hw_initialization_data">HW_INITIALIZATION_DATA</a> structure. The minidriver passes this structure to the class driver when it registers itself by calling <a href="stream.streamclassregisterminidriver">StreamClassRegisterMinidriver</a>.
+The stream class driver calls the minidriver's <i>StrMiniReceiveStreamDataPacket</i> routine to handle read and write requests for a specific stream.
 
-<i>StrMiniReceiveDevicePacket</i> must handle class driver requests that apply to the driver as a whole, such as initializing the device, or opening a stream within the device. The class driver passes its information in the form of a pointer to a stream request block. The class driver fills in some of the entries in the stream request block. The minidriver, upon completion of the routine, must fill in additional information that the class driver will use to continue processing. 
+The minidriver registers its <i>StrMiniReceiveStreamDataPacket</i> routine as follows: When the class driver opens the stream, it passes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568191">SRB_OPEN_STREAM</a> request block to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568463">StrMiniReceiveDevicePacket</a> routine. The StreamObject of the request packet points to a <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a>. The minidriver sets the <b>ReceiveDataPacket</b> member of the structure pointed to by <i>pSrb</i>-&gt;<b>StreamObject</b> to the minidriver's <i>StrMiniReceiveDataPacket</i> routine. 
 
-Upon completion of its handling of the request, the minidriver passes the structure back to the class driver by calling <a href="stream.streamclassdevicenotification">StreamClassDeviceNotification</a><b>(DeviceRequestComplete, pSRB-&gt;HwDeviceExtension, pSRB)</b>. 
+Upon completion of its handling of the request, the minidriver passes the structure back to the class driver by calling <a href="..\strmini\nf-strmini-streamclassstreamnotification.md">StreamClassStreamNotification</a><b>(StreamRequestComplete, pSRB-&gt;StreamObject, pSRB)</b>. 
 
 See information about relevant SRB codes in <a href="https://msdn.microsoft.com/library/windows/hardware/ff568295">Stream Class SRB Reference</a>.
 

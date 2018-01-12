@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUI2.QueryJobAttributes
+UID: NF:prcomoem.IPrintOemUI2.QueryJobAttributes
 title: IPrintOemUI2::QueryJobAttributes method
 author: windows-driver-content
 description: The IPrintOemUI2::QueryJobAttributes method allows a UI plug-in to postprocess the core driver's results after a call to the DrvQueryJobAttributes DDI.
@@ -7,7 +7,7 @@ old-location: print\iprintoemui2_queryjobattributes.htm
 old-project: print
 ms.assetid: cb510aa6-7156-4b02-bab1-6951becbc1a0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUI2, IPrintOemUI2::QueryJobAttributes, QueryJobAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <code>IPrintOemUI2::QueryJobAttributes</code> method allows a UI plug-in to postprocess the core driver's results after a call to the <a href="print.drvqueryjobattributes">DrvQueryJobAttributes</a> DDI. The plug-in can choose to overwrite the values that the core driver placed in the <i>lpAttributeInfo</i> output buffer.
+The <code>IPrintOemUI2::QueryJobAttributes</code> method allows a UI plug-in to postprocess the core driver's results after a call to the <a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a> DDI. The plug-in can choose to overwrite the values that the core driver placed in the <i>lpAttributeInfo</i> output buffer.
 
 
 
@@ -64,7 +65,7 @@ Specifies the caller-supplied printer handle.
 
 ### -param pDevmode 
 
-Pointer to a caller-supplied <a href="display.devmodew">DEVMODEW</a> structure.
+Pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure.
 
 
 ### -param dwLevel 
@@ -83,7 +84,7 @@ Specifies a caller-supplied value indicating the type of structure pointed to by
 </td>
 <td>
 
-<a href="print.attribute_info_1">ATTRIBUTE_INFO_1</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_1.md">ATTRIBUTE_INFO_1</a>
 
 
 </td>
@@ -95,7 +96,7 @@ Specifies a caller-supplied value indicating the type of structure pointed to by
 </td>
 <td>
 
-<a href="print.attribute_info_2">ATTRIBUTE_INFO_2</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>
 
 
 </td>
@@ -107,7 +108,7 @@ Specifies a caller-supplied value indicating the type of structure pointed to by
 </td>
 <td>
 
-<a href="print.attribute_info_3">ATTRIBUTE_INFO_3</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>
 
 
 </td>
@@ -119,7 +120,7 @@ Specifies a caller-supplied value indicating the type of structure pointed to by
 </td>
 <td>
 
-<a href="print.attribute_info_4">ATTRIBUTE_INFO_4</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
 
 
 </td>
@@ -140,13 +141,13 @@ Pointer to a memory location that receives the address of a structure of the typ
 
 
 ## -returns
-If the UI plug-in supports this method, and the method succeeded, it should return S_OK. This causes the core driver to return <b>TRUE</b> for the <a href="print.drvqueryjobattributes">DrvQueryJobAttributes</a> DDI. If the UI plug-in supports this method, but the method failed, it should return E_FAIL. This causes the core driver to return <b>FALSE</b> for the DrvQueryJobAttributes DDI. If the UI plug-in does not support this method, it should return E_NOTIMPL.
+If the UI plug-in supports this method, and the method succeeded, it should return S_OK. This causes the core driver to return <b>TRUE</b> for the <a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a> DDI. If the UI plug-in supports this method, but the method failed, it should return E_FAIL. This causes the core driver to return <b>FALSE</b> for the DrvQueryJobAttributes DDI. If the UI plug-in does not support this method, it should return E_NOTIMPL.
 
 
 ## -remarks
 When the printer has multiple UI plug-ins installed, the core driver calls the UI plug-ins in the order they were installed. The HRESULT returned by the last UI plug-in that supports this method is used to determine the core driver's DrvQueryJobAttributes DDI return value as described in the previous section.
 
-See <a href="print.drvqueryjobattributes">DrvQueryJobAttributes</a> for more information.
+See <a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a> for more information.
 
 
 ## -requirements
@@ -178,27 +179,27 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.attribute_info_1">ATTRIBUTE_INFO_1</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_1.md">ATTRIBUTE_INFO_1</a>
 </dt>
 <dt>
-<a href="print.attribute_info_2">ATTRIBUTE_INFO_2</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>
 </dt>
 <dt>
-<a href="print.attribute_info_3">ATTRIBUTE_INFO_3</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>
 </dt>
 <dt>
-<a href="print.attribute_info_4">ATTRIBUTE_INFO_4</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
 </dt>
 <dt>
-<a href="display.devmodew">DEVMODEW</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a>
 </dt>
 <dt>
-<a href="print.drvqueryjobattributes">DrvQueryJobAttributes</a>
+<a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemUI2::QueryJobAttributes method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemUI2::QueryJobAttributes method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

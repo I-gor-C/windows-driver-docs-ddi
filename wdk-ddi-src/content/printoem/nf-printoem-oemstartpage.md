@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMStartPage
+UID: NF:printoem.OEMStartPage
 title: OEMStartPage function
 author: windows-driver-content
 description: The OEMStartPage function is called by GDI when it is ready to start sending the contents of a physical page to the driver for rendering.
@@ -7,7 +7,7 @@ old-location: print\oemstartpage.htm
 old-project: print
 ms.assetid: 86cee994-2dfe-4eaf-906b-ce6d9051399e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMStartPage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

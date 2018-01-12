@@ -1,5 +1,5 @@
 ---
-UID: NF.poscx.PosCxIsPosApp
+UID: NF:poscx.PosCxIsPosApp
 title: PosCxIsPosApp function
 author: windows-driver-content
 description: PosCxIsPosApp checks if the open instance is associated with a point-of-service application.
@@ -7,7 +7,7 @@ old-location: pos\poscxisposapp.htm
 old-project: pos
 ms.assetid: 890A0ACB-9717-4BF8-87B5-A6C1FAD661C2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: PosCxIsPosApp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POS_CX_EVENT_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ A handle to a framework device object that represents the device.
 
 ### -param fileObject [in]
 
-A handle to a framework file object that identifies the caller, usually acquired with <a href="wdf.wdfrequestgetfileobject">WdfRequestGetFileObject</a>.
+A handle to a framework file object that identifies the caller, usually acquired with <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a>.
 
 
 ## -returns

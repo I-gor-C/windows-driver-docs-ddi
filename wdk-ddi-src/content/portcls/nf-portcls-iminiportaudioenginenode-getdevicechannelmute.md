@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioEngineNode.GetDeviceChannelMute
+UID: NF:portcls.IMiniportAudioEngineNode.GetDeviceChannelMute
 title: IMiniportAudioEngineNode::GetDeviceChannelMute method
 author: windows-driver-content
 description: Gets the state of the Mute node for the audio device channel.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioEngineNode::GetDeviceChannelMute method

@@ -1,13 +1,13 @@
 ---
-UID: NF.stiusd.IStiDeviceControl.GetMyDeviceOpenMode
+UID: NF:stiusd.IStiDeviceControl.GetMyDeviceOpenMode
 title: IStiDeviceControl::GetMyDeviceOpenMode method
 author: windows-driver-content
 description: The IStiDeviceControl::GetMyDeviceOpenMode method allows a still image minidriver to obtain the transfer mode that an application specified when it created an instance of a still image device.
 old-location: image\istidevicecontrol_getmydeviceopenmode.htm
-old-project: Image
+old-project: image
 ms.assetid: 814e739f-6147-4287-876e-db6fc41c5aa1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IStiDeviceControl, IStiDeviceControl::GetMyDeviceOpenMode, GetMyDeviceOpenMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTI_WIA_DEVICE_INFORMATIONW, STI_WIA_DEVICE_INFORMATIONW
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ HRESULT GetMyDeviceOpenMode(
 
 ### -param pdwOpenMode 
 
-Receives the mode flag that an application previously specified as the <i>dwMode</i> argument to <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a>.
+Receives the mode flag that an application previously specified as the <i>dwMode</i> argument to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a>.
 
 
 ## -returns
@@ -64,7 +65,7 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 
 
 ## -remarks
-A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as an input argument to its <a href="image.istiusd_initialize">IStiUSD::Initialize</a> method.
+A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as an input argument to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a> method.
 
 
 ## -requirements

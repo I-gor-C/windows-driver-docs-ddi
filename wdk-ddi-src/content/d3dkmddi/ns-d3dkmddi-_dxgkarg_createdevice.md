@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_CREATEDEVICE
+UID: NS:d3dkmddi._DXGKARG_CREATEDEVICE
 title: _DXGKARG_CREATEDEVICE
 author: windows-driver-content
 description: The DXGKARG_CREATEDEVICE structure describes a graphics context device.
@@ -7,8 +7,8 @@ old-location: display\dxgkarg_createdevice.htm
 old-project: display
 ms.assetid: 88d20349-4039-4a5d-a1fd-0488148c623d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKARG_CREATEDEVICE, DXGKARG_CREATEDEVICE
+ms.date: 12/29/2017
+ms.keywords: _DXGKARG_CREATEDEVICE, DXGKARG_CREATEDEVICE, *INOUT_PDXGKARG_CREATEDEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_CREATEDEVICE
 ---
 
 # _DXGKARG_CREATEDEVICE structure
@@ -70,12 +71,12 @@ The driver generates a unique handle and passes it back to the DirectX graphics 
 
 ### -field Flags
 
- A <a href="display.dxgk_createdeviceflags">DXGK_CREATEDEVICEFLAGS</a> structure that identifies how to create the device.
+ A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createdeviceflags.md">DXGK_CREATEDEVICEFLAGS</a> structure that identifies how to create the device.
 
 
 ### -field pInfo
 
-A pointer to a <a href="display.dxgk_deviceinfo">DXGK_DEVICEINFO</a> structure that contains parameters that the DirectX graphics subsystem requires from the display miniport driver.
+A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_deviceinfo.md">DXGK_DEVICEINFO</a> structure that contains parameters that the DirectX graphics subsystem requires from the display miniport driver.
 
 
 ### -field Pasid
@@ -123,10 +124,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgk_createdeviceflags">DXGK_CREATEDEVICEFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createdeviceflags.md">DXGK_CREATEDEVICEFLAGS</a>
 </dt>
 <dt>
-<a href="display.dxgk_deviceinfo">DXGK_DEVICEINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_deviceinfo.md">DXGK_DEVICEINFO</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
@@ -136,5 +137,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_CREATEDEVICE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_CREATEDEVICE structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

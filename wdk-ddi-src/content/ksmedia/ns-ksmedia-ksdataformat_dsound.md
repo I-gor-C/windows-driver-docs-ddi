@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSDATAFORMAT_DSOUND
+UID: NS:ksmedia.KSDATAFORMAT_DSOUND
 title: KSDATAFORMAT_DSOUND
 author: windows-driver-content
 description: The KSDATAFORMAT_DSOUND structure provides detailed information about a DirectSound audio stream.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 2b620e4f-8c26-479a-8b06-4e558b0813e5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSDATAFORMAT_DSOUND, PKSDATAFORMAT_DSOUND, KSDATAFORMAT_DSOUND, *PKSDATAFORMAT_DSOUND
+ms.keywords: KSDATAFORMAT_DSOUND, *PKSDATAFORMAT_DSOUND, KSDATAFORMAT_DSOUND
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSDATAFORMAT_DSOUND, KSDATAFORMAT_DSOUND
 ---
 
 # KSDATAFORMAT_DSOUND structure
@@ -65,7 +66,7 @@ Describes the DirectSound buffer. This member is a structure of type <a href="..
 
 
 ## -remarks
-In response to an input <i>DataRange</i> parameter that specifies a DirectSound format (see example in <a href="https://msdn.microsoft.com/cc31eb2d-7421-4748-b14c-f4d3d15f9884">DirectSound Stream Data Range</a>), the <a href="audio.iminiport_datarangeintersection">IMiniport::DataRangeIntersection</a> method checks to see if the specified pin supports a compatible DirectSound format. If so, the method outputs a KSDATAFORMAT_DSOUND structure (see example in <a href="https://msdn.microsoft.com/41d3d5ad-7336-4ecf-b6e2-a24ee4ec731f">DirectSound Stream Data Format</a>) to the buffer that its <i>ResultantFormat</i> parameter points to.
+In response to an input <i>DataRange</i> parameter that specifies a DirectSound format (see example in <a href="https://msdn.microsoft.com/cc31eb2d-7421-4748-b14c-f4d3d15f9884">DirectSound Stream Data Range</a>), the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536764">IMiniport::DataRangeIntersection</a> method checks to see if the specified pin supports a compatible DirectSound format. If so, the method outputs a KSDATAFORMAT_DSOUND structure (see example in <a href="https://msdn.microsoft.com/41d3d5ad-7336-4ecf-b6e2-a24ee4ec731f">DirectSound Stream Data Format</a>) to the buffer that its <i>ResultantFormat</i> parameter points to.
 
 
 ## -requirements
@@ -92,7 +93,7 @@ Header
 <a href="..\ksmedia\ns-ksmedia-ksdsound_bufferdesc.md">KSDSOUND_BUFFERDESC</a>
 </dt>
 <dt>
-<a href="audio.iminiport_datarangeintersection">IMiniport::DataRangeIntersection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536764">IMiniport::DataRangeIntersection</a>
 </dt>
 </dl>
  

@@ -1,14 +1,14 @@
 ---
-UID: NE.ntddndis._NDIS_HYPERVISOR_PARTITION_TYPE
+UID: NE:ntddndis._NDIS_HYPERVISOR_PARTITION_TYPE
 title: _NDIS_HYPERVISOR_PARTITION_TYPE
 author: windows-driver-content
 description: The NDIS_HYPERVISOR_PARTITION_TYPE enumeration identifies the current partition type that is running on the hypervisor.
 old-location: netvista\ndis_hypervisor_partition_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 830460f8-4cd6-4a52-ac32-004dc4a204e3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_HYPERVISOR_PARTITION_TYPE, PNDIS_HYPERVISOR_PARTITION_TYPE, NDIS_HYPERVISOR_PARTITION_TYPE, *PNDIS_HYPERVISOR_PARTITION_TYPE
+ms.date: 1/8/2018
+ms.keywords: _NDIS_HYPERVISOR_PARTITION_TYPE, NDIS_HYPERVISOR_PARTITION_TYPE, *PNDIS_HYPERVISOR_PARTITION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_HYPERVISOR_PARTITION_TYPE, *PNDIS_HYPERVISOR_PARTITION_TYPE
 ---
 
 # _NDIS_HYPERVISOR_PARTITION_TYPE enumeration
@@ -79,7 +80,7 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-For more information about Hyper-V parent and child partitions, see <a href="netvista.virtualized_networking_concepts_and_terms">Virtualized Networking Concepts and Terms</a>.
+For more information about Hyper-V parent and child partitions, see <a href="https://msdn.microsoft.com/467996B2-9319-47F9-BAEB-5AC1F20B6E01">Virtualized Networking Concepts and Terms</a>.
 
 
 ## -requirements
@@ -110,12 +111,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_hypervisor_info">NDIS_HYPERVISOR_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_hypervisor_info.md">NDIS_HYPERVISOR_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_HYPERVISOR_PARTITION_TYPE enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_HYPERVISOR_PARTITION_TYPE enumeration%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeSynchronizeExecution
+UID: NF:wdm.KeSynchronizeExecution
 title: KeSynchronizeExecution function
 author: windows-driver-content
 description: The KeSynchronizeExecution routine synchronizes the execution of the specified routine with the interrupt service routine (ISR) that is assigned to a set of one or more interrupt objects.
@@ -7,7 +7,7 @@ old-location: kernel\kesynchronizeexecution.htm
 old-project: kernel
 ms.assetid: f378a30f-7e6b-4c81-b98b-a5b40e9a1a17
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeSynchronizeExecution
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DIRQL (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -58,17 +59,17 @@ BOOLEAN KeSynchronizeExecution(
 
 ### -param Interrupt [in, out]
 
-A pointer to a set of interrupt objects. The caller obtained this pointer from the <a href="kernel.ioconnectinterrupt">IoConnectInterrupt</a> or <a href="kernel.ioconnectinterruptex">IoConnectInterruptEx</a> routine.
+A pointer to a set of interrupt objects. The caller obtained this pointer from the <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a> or <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> routine.
 
 
 ### -param SynchronizeRoutine [in]
 
-Specifies a caller-supplied <a href="kernel.synchcritsection">SynchCritSection</a> routine whose execution is to be synchronized with the execution of the ISR assigned to the interrupt objects.
+Specifies a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff563928">SynchCritSection</a> routine whose execution is to be synchronized with the execution of the ISR assigned to the interrupt objects.
 
 
 ### -param SynchronizeContext [in, optional]
 
-A pointer to a caller-supplied context value to be passed to the <a href="kernel.synchcritsection">SynchCritSection</a> routine when it is called.
+A pointer to a caller-supplied context value to be passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563928">SynchCritSection</a> routine when it is called.
 
 
 ## -returns
@@ -78,11 +79,11 @@ A pointer to a caller-supplied context value to be passed to the <a href="kernel
 ## -remarks
 When this routine is called, the following occurs:
 
-The IRQL is raised to the <i>SynchronizeIrql</i> value specified in the call to <a href="kernel.ioconnectinterrupt">IoConnectInterrupt</a> or <a href="kernel.ioconnectinterruptex">IoConnectInterruptEx</a>.
+The IRQL is raised to the <i>SynchronizeIrql</i> value specified in the call to <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a> or <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>.
 
 Access to <i>SynchronizeContext</i> is synchronized with the assigned ISR by acquiring the associated interrupt object spin lock (or system event object, in the case of an ISR that runs at PASSIVE_LEVEL).
 
-The specified <a href="kernel.synchcritsection">SynchCritSection</a> routine is called with the <i>SynchronizeContext</i> value as its parameter.
+The specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff563928">SynchCritSection</a> routine is called with the <i>SynchronizeContext</i> value as its parameter.
 
 If the ISR runs at DIRQL &gt;= DISPATCH_LEVEL, the <i>SynchCritSection</i> routine runs at the same DIRQL and must therefore run for as brief a time as possible to avoid delaying other high-priority tasks.
 
@@ -162,15 +163,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.ioconnectinterrupt">IoConnectInterrupt</a>
+<a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
 </dt>
 <dt>
-<a href="kernel.ioconnectinterruptex">IoConnectInterruptEx</a>
+<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSynchronizeExecution routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSynchronizeExecution routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

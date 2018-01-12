@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILRANGE
+UID: NS:rilapitypes.RILRANGE
 title: RILRANGE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrange_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f14aa2bc-1eeb-4c17-836a-52046ba388f1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILRANGE, *LPRILRANGE, RILRANGE
+ms.date: 1/8/2018
+ms.keywords: RILRANGE, RILRANGE, *LPRILRANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRANGE, *LPRILRANGE
 req.product: Windows 10 or later.
 ---
 

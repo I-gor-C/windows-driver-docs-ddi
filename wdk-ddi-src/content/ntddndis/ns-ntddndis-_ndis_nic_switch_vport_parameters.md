@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_NIC_SWITCH_VPORT_PARAMETERS
+UID: NS:ntddndis._NDIS_NIC_SWITCH_VPORT_PARAMETERS
 title: _NDIS_NIC_SWITCH_VPORT_PARAMETERS
 author: windows-driver-content
 description: The NDIS_NIC_SWITCH_VPORT_PARAMETERS structure specifies the configuration for a virtual port (VPort) on a network adapter switch of the network adapter.
 old-location: netvista\ndis_nic_switch_vport_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d75bec3d-b427-40d2-bec3-95b7409f31bb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_NIC_SWITCH_VPORT_PARAMETERS, PNDIS_NIC_SWITCH_VPORT_PARAMETERS, NDIS_NIC_SWITCH_VPORT_PARAMETERS, *PNDIS_NIC_SWITCH_VPORT_PARAMETERS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_NIC_SWITCH_VPORT_PARAMETERS, *PNDIS_NIC_SWITCH_VPORT_PARAMETERS, NDIS_NIC_SWITCH_VPORT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_NIC_SWITCH_VPORT_PARAMETERS, NDIS_NIC_SWITCH_VPORT_PARAMETERS
 ---
 
 # _NDIS_NIC_SWITCH_VPORT_PARAMETERS structure
@@ -65,7 +66,7 @@ typedef struct _NDIS_NIC_SWITCH_VPORT_PARAMETERS {
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_NIC_SWITCH_VPORT_PARAMETERS</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_NIC_SWITCH_VPORT_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_VPORT_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -156,7 +157,7 @@ The switch identifier is an integer between zero and the number of switches that
 
 An NDIS_NIC_SWITCH_VPORT_ID value that specifies the identifier of a VPort  on the network adapter. The value is allocated by NDIS,  and is unique across the network adapter. 
 
-The <b>VPortId</b> value is within the range from zero to (<b>NumVPorts</b> - 1), where <b>NumVPorts</b> is the number of VPorts that the miniport driver has configured on the network adapter. The driver specifies this number in the <b>NumVPorts</b> member of the <a href="netvista.ndis_nic_switch_info">NDIS_NIC_SWITCH_INFO</a> structure. The driver returns this structure through an OID query request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451819">OID_NIC_SWITCH_ENUM_SWITCHES</a>. 
+The <b>VPortId</b> value is within the range from zero to (<b>NumVPorts</b> - 1), where <b>NumVPorts</b> is the number of VPorts that the miniport driver has configured on the network adapter. The driver specifies this number in the <b>NumVPorts</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a> structure. The driver returns this structure through an OID query request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451819">OID_NIC_SWITCH_ENUM_SWITCHES</a>. 
 
 
 <div class="alert"><b>Note</b>  A VPort identifier of NDIS_DEFAULT_VPORT_ID is reserved for the default VPort that is attached to the PF on the default NIC switch.</div>
@@ -185,14 +186,14 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 
 ### -field InterruptModeration
 
-An <a href="netvista.ndis_nic_switch_vport_interrupt_moderation">NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION</a> value that specifies the interrupt moderation setting of the VPort.
+An <a href="..\ntddndis\ne-ntddndis-_ndis_nic_switch_vport_interrupt_moderation.md">NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION</a> value that specifies the interrupt moderation setting of the VPort.
 
 
 
 
 ### -field VPortState
 
-An <a href="netvista.ndis_nic_switch_vport_state">NDIS_NIC_SWITCH_VPORT_STATE</a> value that specifies the current state of the VPort.
+An <a href="..\ntddndis\ne-ntddndis-_ndis_nic_switch_vport_state.md">NDIS_NIC_SWITCH_VPORT_STATE</a> value that specifies the current state of the VPort.
 
 
 ### -field ProcessorAffinity
@@ -214,7 +215,7 @@ This member is reserved for future use. This member must be set to zero.
 ## -remarks
 This structure is used in OID requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451825">OID_NIC_SWITCH_VPORT_PARAMETERS</a>.
 
-For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.
+For more information about the SR-IOV interface, see 	<a href="https://msdn.microsoft.com/B241F468-F568-4500-9356-E576CEBA8F3B">Overview of Single Root I/O Virtualization (SR-IOV)</a>.
 
 
 ## -requirements
@@ -246,13 +247,13 @@ Header
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="netvista.ndis_nic_switch_info">NDIS_NIC_SWITCH_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndis_nic_switch_vf_info">NDIS_NIC_SWITCH_VF_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vf_info.md">NDIS_NIC_SWITCH_VF_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>
@@ -268,5 +269,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_NIC_SWITCH_VPORT_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_PARAMETERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

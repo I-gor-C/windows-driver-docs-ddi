@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.PsGetVersion
+UID: NF:wdm.PsGetVersion
 title: PsGetVersion function
 author: windows-driver-content
 description: This function is obsolete in Windows XP and later versions of the Windows operating system. Use RtlGetVersion instead.PsGetVersion returns caller-selected information about the current version of the NT-based operating system.
@@ -7,7 +7,7 @@ old-location: kernel\psgetversion.htm
 old-project: kernel
 ms.assetid: db3d2e34-3d83-423d-b446-2800d53a8220
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PsGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-This function is <u>obsolete</u> in Windows XP and later versions of the Windows operating system. Use <a href="kernel.rtlgetversion">RtlGetVersion</a> instead.
+This function is <u>obsolete</u> in Windows XP and later versions of the Windows operating system. Use <a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a> instead.
 
 <b>PsGetVersion</b> returns caller-selected information about the current version of the NT-based operating system. 
 
@@ -169,7 +170,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqlpspassive">IrqlPsPassive</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547882">IrqlPsPassive</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>

@@ -1,13 +1,13 @@
 ---
-UID: NC.ks.PFNKSCLOCK_GETTIME
+UID: NC:ks.PFNKSCLOCK_GETTIME
 title: PFNKSCLOCK_GETTIME
 author: windows-driver-content
-description: KStrClockGetPhysicalTime is a system-supplied routine that retrieves the current system time minus any suspended delta.
-old-location: stream\kstrclockgetphysicaltime.htm
+description: KStrClockGetTime is a system-supplied routine that retrieves the current system time.
+old-location: stream\kstrclockgettime.htm
 old-project: stream
-ms.assetid: 0ffa7638-a954-40ef-88c0-e5bc7b16116d
+ms.assetid: 4b1028a1-8c86-4958-a19f-32c490dda790
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -19,7 +19,7 @@ req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.alt-api: KStrClockGetPhysicalTime
+req.alt-api: KStrClockGetTime
 req.alt-loc: ks.h
 req.ddi-compliance: 
 req.unicode-ansi: 
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDSELECTOR
 ---
 
 # PFNKSCLOCK_GETTIME callback
@@ -38,16 +39,16 @@ req.irql:
 
 
 ## -description
-<i>KStrClockGetPhysicalTime</i> is a system-supplied routine that retrieves the current system time minus any suspended delta.
+<i>KStrClockGetTime</i> is a system-supplied routine that retrieves the current system time.
 
 
 
 ## -prototype
 
 ````
-PFNKSCLOCK_GETTIME KStrClockGetPhysicalTime;
+PFNKSCLOCK_GETTIME KStrClockGetTime;
 
-LONGLONG FASTCALL KStrClockGetPhysicalTime(
+LONGLONG FASTCALL KStrClockGetTime(
   _In_ PFILE_OBJECT FileObject
 )
 { ... }
@@ -58,11 +59,11 @@ LONGLONG FASTCALL KStrClockGetPhysicalTime(
 
 ### -param FileObject [in]
 
-A pointer to the <a href="kernel.file_object">FILE_OBJECT</a> structure to which a handle was returned when the clock instance was created.
+A pointer to the <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure to which a handle was returned when the clock instance was created.
 
 
 ## -returns
-This routine returns the requested time value as type LONGLONG. This value is specified in 100 nanosecond units.
+This routine returns the requested time value as a value of type LONGLONG. This value is specified in 100 nanosecond units.
 
 
 ## -remarks
@@ -108,5 +109,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KStrClockGetPhysicalTime routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20PFNKSCLOCK_GETTIME routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

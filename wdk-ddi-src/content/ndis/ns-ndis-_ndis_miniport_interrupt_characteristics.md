@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
+UID: NS:ndis._NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
 title: _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
 author: windows-driver-content
 description: An NDIS miniport driver defines its interrupt characteristics in an NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure and passes the structure to the NdisMRegisterInterruptEx function.
 old-location: netvista\ndis_miniport_interrupt_characteristics.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f4176e2d-d8d2-4e75-bccb-0c452da4d703
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
 ---
 
 # _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure
@@ -40,7 +41,7 @@ req.irql: See Remarks section
 ## -description
 An NDIS miniport driver defines its interrupt characteristics in an
   NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure and passes the structure to the 
-  <a href="netvista.ndismregisterinterruptex">
+  <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">
   NdisMRegisterInterruptEx</a> function.
 
 
@@ -71,7 +72,7 @@ typedef struct _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_MINIPORT_INTERRUPT, the 
@@ -173,13 +174,13 @@ A variable of type <b>NDIS_INTERRUPT_TYPE</b>. NDIS sets this variable to indica
 ### -field MessageInfoTable
 
 An NDIS-supplied pointer to an 
-     <a href="kernel.io_interrupt_message_info">
+     <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">
      IO_INTERRUPT_MESSAGE_INFO</a> structure. 
 
 <ul>
 <li>
 If 
-     <b>InterruptType</b> is <b>NDIS_CONNECT_MESSAGE_BASED</b>, NDIS initializes an <a href="kernel.io_interrupt_message_info">IO_INTERRUPT_MESSAGE_INFO</a>
+     <b>InterruptType</b> is <b>NDIS_CONNECT_MESSAGE_BASED</b>, NDIS initializes an <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a>
      structure with information about the interrupt and sets 
      <b>MessageInfoTable</b> to a pointer to the structure. Miniport drivers must not modify the
      structure.
@@ -193,7 +194,7 @@ If <b>InterruptType</b> is <b>NDIS_CONNECT_LINE_BASED</b>, <b>MessageInfoTable</
 
 ## -remarks
 A miniport driver calls the 
-    <a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a> function
+    <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a> function
     to register an interrupt. The driver allocates and initializes an <b>NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</b>
     structure to specify the interrupt characteristics and handler entry points and passes the structure to 
     <b>NdisMRegisterInterruptEx</b>.
@@ -227,7 +228,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.io_interrupt_message_info">IO_INTERRUPT_MESSAGE_INFO</a>
+<a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
@@ -256,15 +257,15 @@ Header
 <a href="..\ndis\nc-ndis-miniport_message_interrupt.md">MiniportMessageInterrupt</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

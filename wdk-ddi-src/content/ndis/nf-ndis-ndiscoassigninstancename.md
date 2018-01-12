@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCoAssignInstanceName
+UID: NF:ndis.NdisCoAssignInstanceName
 title: NdisCoAssignInstanceName function
 author: windows-driver-content
 description: NdisCoAssignInstanceName assigns an instance name to a VC and causes NDIS to register a GUID (globally unique identifier) for the assigned name with Windows Management Instrumentation (WMI).
 old-location: netvista\ndiscoassigninstancename.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 78a1808e-d244-4f23-bba1-c48a7b2e051b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisCoAssignInstanceName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCoAssignInstanceName function
@@ -60,7 +61,7 @@ NDIS_STATUS NdisCoAssignInstanceName(
 
 Specifies the handle to the VC being named. This handle was supplied by NDIS when the VC was
      originally created with 
-     <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>, whether by the client in
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>, whether by the client in
      preparation for making an outgoing call or by the call manager in preparation for dispatching an
      incoming call to the client.
 
@@ -71,7 +72,7 @@ Pointer to an NDIS_STRING type that describes a caller-supplied Unicode string t
      base name of the VC. The base name can be any localizable Unicode string that uniquely identifies the VC
      with respect to the other named VCs within the scope of the miniport driver. For Windows Vista and
      later, NDIS defines the NDIS_STRING type as a 
-     <a href="kernel.unicode_string">UNICODE_STRING</a> type.
+     <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> type.
 
 
 ### -param VcInstanceName [out, optional]
@@ -98,7 +99,7 @@ Pointer to a caller-allocated NDIS_STRING type in which this routine returns a U
 
 ## -remarks
 After initiating the setup of a VC with 
-    <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>, a call manager or
+    <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>, a call manager or
     connection-oriented client can name the VC with 
     <b>NdisCoAssignInstanceName</b>. Calling 
     <b>NdisCoAssignInstanceName</b>, causes NDIS to assign the VC an instance name and register the instance
@@ -127,9 +128,9 @@ The caller can associate the returned instance name with the handle for the name
 
 The caller is responsible for freeing the buffer containing the returned instance name. After deleting
     the named VC with 
-    <a href="netvista.ndiscodeletevc">NdisCoDeleteVc</a>, the caller must free the
+    <a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>, the caller must free the
     buffer with 
-    <a href="netvista.ndisfreestring">NdisFreeString</a>.
+    <a href="..\ndis\nf-ndis-ndisfreestring.md">NdisFreeString</a>.
 
 
 ## -requirements
@@ -197,7 +198,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_connection_function">Irql_Connection_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547924">Irql_Connection_Function</a>
 </td>
 </tr>
 </table>
@@ -211,21 +212,21 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndiscodeletevc">NdisCoDeleteVC</a>
+<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVC</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreestring">NdisFreeString</a>
+<a href="..\ndis\nf-ndis-ndisfreestring.md">NdisFreeString</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCoAssignInstanceName function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoAssignInstanceName function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

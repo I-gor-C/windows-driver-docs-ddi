@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortInitializePoFxPower
+UID: NF:storport.StorPortInitializePoFxPower
 title: StorPortInitializePoFxPower function
 author: windows-driver-content
 description: A miniport driver calls StorPortInitializePoFxPower to register a storage device with the power management framework (PoFx).
@@ -7,7 +7,7 @@ old-location: storage\storportinitializepofxpower.htm
 old-project: storage
 ms.assetid: 154EAF9B-4B30-4124-B31D-6C7D09B52674
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortInitializePoFxPower
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -69,7 +70,7 @@ The address of a storage device unit. This parameter is <b>NULL</b> when registe
 
 ### -param Device [in]
 
-A pointer to a <b>STOR_POFX_DEVICE_V2</b> structure cast to a pointer to <a href="storage.stor_pofx_device">STOR_POFX_DEVICE</a>. This structure contains a component list with F-states for a storage device.
+A pointer to a <b>STOR_POFX_DEVICE_V2</b> structure cast to a pointer to <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>. This structure contains a component list with F-states for a storage device.
 
 
 ### -param D3ColdEnabled [in, out]
@@ -93,7 +94,7 @@ The storage device specified by <i>Address</i> is not found.
 
 -or-
 
-The <a href="storage.stor_pofx_device">STOR_POFX_DEVICE</a> structure pointed to by  <i>Device</i> is formatted incorrectly or contains invalid data.
+The <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a> structure pointed to by  <i>Device</i> is formatted incorrectly or contains invalid data.
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
 </dl>The storage device was successfully registered with PoFx.
@@ -156,12 +157,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.stor_pofx_device">STOR_POFX_DEVICE</a>
+<a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortInitializePoFxPower routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortInitializePoFxPower routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NS.NDIS._PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NS:ndis._PD_BUFFER_VIRTUAL_SUBNET_INFO
 title: _PD_BUFFER_VIRTUAL_SUBNET_INFO
 author: windows-driver-content
 description: This structure contains the virtual subnet information.
 old-location: netvista\pd_buffer_virtual_subnet_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 569424A2-4279-4758-A6F1-402D25F9B04F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # _PD_BUFFER_VIRTUAL_SUBNET_INFO structure

@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinGetOuterUnknown
+UID: NF:ks.KsPinGetOuterUnknown
 title: KsPinGetOuterUnknown function
 author: windows-driver-content
 description: The KsPinGetOuterUnknown function returns the outer IUnknown of the pin specified by Pin.
@@ -7,7 +7,7 @@ old-location: stream\kspingetouterunknown.htm
 old-project: stream
 ms.assetid: 58b14ddd-6698-487a-925d-7d559057e55d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinGetOuterUnknown
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsPinGetOuterUnknown function
@@ -55,7 +56,7 @@ PUNKNOWN __inline KsPinGetOuterUnknown(
 
 ### -param Pin [in]
 
-A pointer to the <a href="stream.kspin">KSPIN</a> structure for which to return the outer <b>IUnknown</b>.
+A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which to return the outer <b>IUnknown</b>.
 
 
 ## -returns
@@ -63,7 +64,7 @@ A pointer to the <a href="stream.kspin">KSPIN</a> structure for which to return 
 
 
 ## -remarks
-<b>KsPinGetOuterUnknown</b> is an inline function call to <a href="stream.ksgetouterunknown">KsGetOuterUnknown</a>. 
+<b>KsPinGetOuterUnknown</b> is an inline function call to <a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>. 
 
 
 ## -requirements
@@ -115,30 +116,30 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksgetouterunknown">KsGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="stream.ksregisteraggregatedclientunknown">KsRegisterAggregatedClientUnknown</a>
+<a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/305039fe-0a00-4f3e-ae1a-61c50a2f2fb3">AVStream Overview</a>
 </dt>
 <dt>
-<a href="stream.ksfiltergetouterunknown">KsFilterGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 <dt>
-<a href="stream.ksfilterfactorygetouterunknown">KsFilterFactoryGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksfilterfactorygetouterunknown.md">KsFilterFactoryGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="stream.ksdevicegetouterunknown">KsDeviceGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksdevicegetouterunknown.md">KsDeviceGetOuterUnknown</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetOuterUnknown function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetOuterUnknown function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

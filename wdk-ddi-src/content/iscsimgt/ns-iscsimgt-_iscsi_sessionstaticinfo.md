@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIMGT._ISCSI_SESSIONSTATICINFO
+UID: NS:iscsimgt._ISCSI_SessionStaticInfo
 title: _ISCSI_SessionStaticInfo
 author: windows-driver-content
 description: The ISCSI_SessionStaticInfo structure provides information about the characteristics of an iSCSI session.
@@ -7,8 +7,8 @@ old-location: storage\iscsi_sessionstaticinfo.htm
 old-project: storage
 ms.assetid: c652268f-4a31-4ec1-a668-8700cb7f4e1b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ISCSI_SessionStaticInfo, *PISCSI_SessionStaticInfo, PISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo
+ms.date: 1/10/2018
+ms.keywords: _ISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo, *PISCSI_SessionStaticInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ISCSI_SessionStaticInfo, *PISCSI_SessionStaticInfo
 ---
 
 # _ISCSI_SessionStaticInfo structure
@@ -71,7 +72,7 @@ typedef struct _ISCSI_SessionStaticInfo {
 
 ### -field UniqueSessionId
 
-A 64-bit integer that uniquely identifies the session. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the <b>ISID</b> and <b>TSID</b> members.
+A 64-bit integer that uniquely identifies the session. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in their UniqueSessionId parameter. Do not confuse this value with the values in the <b>ISID</b> and <b>TSID</b> members.
 
 
 ### -field InitiatoriSCSIName
@@ -106,7 +107,7 @@ A Boolean value that indicates if the initiator and target have agreed to allow 
 
 ### -field Type
 
-An <a href="storage.iscsi_session_type_qualifiers">ISCSI_SESSION_TYPE_QUALIFIERS</a> enumeration value that specifies the type of logon session.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/ff561567">ISCSI_SESSION_TYPE_QUALIFIERS</a> enumeration value that specifies the type of logon session.
 
 <table>
 <tr>
@@ -201,7 +202,7 @@ The number of connections that currently belong to this session.
 
 ### -field ConnectionsList
 
-A variable length array of <a href="storage.iscsi_connectionstaticinfo">ISCSI_ConnectionStaticInfo</a> structures that specifies the static configuration data for each connection that is associated with this session. <b>ConnectionCount</b> indicates the number of elements in the array.
+A variable length array of <a href="..\iscsimgt\ns-iscsimgt-_iscsi_connectionstaticinfo.md">ISCSI_ConnectionStaticInfo</a> structures that specifies the static configuration data for each connection that is associated with this session. <b>ConnectionCount</b> indicates the number of elements in the array.
 
 
 ## -remarks
@@ -225,21 +226,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.addconnectiontosession">AddConnectionToSession</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="storage.iscsi_connectionstaticinfo">ISCSI_ConnectionStaticInfo</a>
+<a href="..\iscsimgt\ns-iscsimgt-_iscsi_connectionstaticinfo.md">ISCSI_ConnectionStaticInfo</a>
 </dt>
 <dt>
-<a href="storage.loginsessiontype">LOGINSESSIONTYPE</a>
+<a href="..\iscsiop\ne-iscsiop-ploginsessiontype.md">LOGINSESSIONTYPE</a>
 </dt>
 <dt>
-<a href="storage.logintotarget">LoginToTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_SessionStaticInfo structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_SessionStaticInfo structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

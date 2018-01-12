@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpar.IOCTL_PAR_SET_READ_ADDRESS
+UID: NI:ntddpar.IOCTL_PAR_SET_READ_ADDRESS
 title: IOCTL_PAR_SET_READ_ADDRESS
 author: windows-driver-content
 description: The IOCTL_PAR_SET_READ_ADDRESS request sets an extended capabilities port (ECP) or enhanced parallel port (EPP) read address (channel) for a parallel device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # IOCTL_PAR_SET_READ_ADDRESS IOCTL

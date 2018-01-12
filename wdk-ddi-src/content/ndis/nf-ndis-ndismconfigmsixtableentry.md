@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMConfigMSIXTableEntry
+UID: NF:ndis.NdisMConfigMSIXTableEntry
 title: NdisMConfigMSIXTableEntry function
 author: windows-driver-content
 description: The NdisMConfigMSIXTableEntry function performs configuration operations for MSI-X table entries for device-assigned MSI-X messages.
 old-location: netvista\ndismconfigmsixtableentry.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 93f94a42-bffb-4e4d-a560-b0da5d7d0019
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMConfigMSIXTableEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMConfigMSIXTableEntry function
@@ -66,7 +67,7 @@ An NDIS miniport adapter handle that NDIS supplied to the
 ### -param MSIXConfigParameters [in]
 
 A pointer to a caller-allocated 
-     <a href="netvista.ndis_msix_config_parameters">
+     <a href="..\ndis\ns-ndis-_ndis_msix_config_parameters.md">
      NDIS_MSIX_CONFIG_PARAMETERS</a> structure that defines the requested configuration operation and
      specifies the parameters that are required for that particular operation.
 
@@ -80,7 +81,7 @@ A pointer to a caller-allocated
 <dl>
 <dt><b>NDIS_STATUS_INVALID_PARAMETER</b></dt>
 </dl><b>NdisMConfigMSIXTableEntry</b> failed because one or more members in the 
-       <a href="netvista.ndis_msix_config_parameters">
+       <a href="..\ndis\ns-ndis-_ndis_msix_config_parameters.md">
        NDIS_MSIX_CONFIG_PARAMETERS</a> structure were invalid.
 
  
@@ -186,12 +187,12 @@ See Remarks section
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_msix_config_parameters">NDIS_MSIX_CONFIG_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_msix_config_parameters.md">NDIS_MSIX_CONFIG_PARAMETERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMConfigMSIXTableEntry function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMConfigMSIXTableEntry function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

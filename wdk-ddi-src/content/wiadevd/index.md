@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:wiadevd
 ---
 
 # Wiadevd.h header
 
 ## -description
 
-This header is used by Image. For more information, see
-- [Image](../_Image/index.md)
+This header is used by Imaging devices. For more information, see
+- [Imaging devices](../_image/index.md)
 
 Wiadevd.h contain these programming interfaces:
 

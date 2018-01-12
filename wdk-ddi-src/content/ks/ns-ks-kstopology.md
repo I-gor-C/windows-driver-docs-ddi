@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSTOPOLOGY
+UID: NS:ks.KSTOPOLOGY
 title: KSTOPOLOGY
 author: windows-driver-content
 description: The KSTOPOLOGY structure describes the topology of pins and nodes.
@@ -7,8 +7,8 @@ old-location: stream\kstopology.htm
 old-project: stream
 ms.assetid: 8dbd37ed-5d71-43bd-a3ca-caa5b0d08075
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSTOPOLOGY, *PKSTOPOLOGY, PKSTOPOLOGY, KSTOPOLOGY
+ms.date: 1/9/2018
+ms.keywords: KSTOPOLOGY, KSTOPOLOGY, *PKSTOPOLOGY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSTOPOLOGY, *PKSTOPOLOGY
 ---
 
 # KSTOPOLOGY structure
@@ -82,7 +83,7 @@ Points to the beginning of the array of GUIDs that describe the type of each nod
 
 ### -field TopologyConnectionsCount
 
-Specifies the number of entries in the array pointed to by <b>TopologyConnections</b>. The node numbers of each entry must correspond to the array offset of the node within <b>TopologyNodes</b>. When this structure is a part of a streaming minidriver's <a href="stream.hw_stream_header">HW_STREAM_HEADER</a>, the pin numbers must correspond to the offsets within the array of <a href="stream.hw_stream_information">HW_STREAM_INFORMATION</a> structures in the minidriver's <a href="stream.hw_stream_descriptor">HW_STREAM_DESCRIPTOR</a> structure.
+Specifies the number of entries in the array pointed to by <b>TopologyConnections</b>. The node numbers of each entry must correspond to the array offset of the node within <b>TopologyNodes</b>. When this structure is a part of a streaming minidriver's <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>, the pin numbers must correspond to the offsets within the array of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures in the minidriver's <a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.
 
 
 ### -field TopologyConnections
@@ -101,7 +102,7 @@ Reserved for system use. Drivers should set this to zero.
 
 
 ## -remarks
-A stream class minidriver creates and passes this structure as part of its <a href="stream.hw_stream_header">HW_STREAM_HEADER</a> structure. The class driver uses this structure to process topology property requests. The property data that the class driver returns is determined from the KSTOPOLOGY structure as follows:
+A stream class minidriver creates and passes this structure as part of its <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a> structure. The class driver uses this structure to process topology property requests. The property data that the class driver returns is determined from the KSTOPOLOGY structure as follows:
 
 
 
@@ -130,13 +131,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.hw_stream_header">HW_STREAM_HEADER</a>
+<a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>
 </dt>
 <dt>
-<a href="stream.hw_stream_information">HW_STREAM_INFORMATION</a>
+<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
 </dt>
 <dt>
-<a href="stream.hw_stream_descriptor">HW_STREAM_DESCRIPTOR</a>
+<a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
@@ -146,5 +147,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSTOPOLOGY structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSTOPOLOGY structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

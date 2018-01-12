@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSNODEPROPERTY
+UID: NS:ksmedia.KSNODEPROPERTY
 title: KSNODEPROPERTY
 author: windows-driver-content
 description: The KSNODEPROPERTY structure specifies a node and a property of that node.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: bbcf7597-217a-499b-b0f2-deef1e85becc
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSNODEPROPERTY, *PKSNODEPROPERTY, KSNODEPROPERTY, PKSNODEPROPERTY
+ms.keywords: KSNODEPROPERTY, *PKSNODEPROPERTY, KSNODEPROPERTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSNODEPROPERTY, KSNODEPROPERTY
 ---
 
 # KSNODEPROPERTY structure
@@ -57,7 +58,7 @@ typedef struct {
 
 ### -field Property
 
-Specifies the property to get or set. This member is a structure of type <a href="stream.ksproperty">KSPROPERTY</a>.
+Specifies the property to get or set. This member is a structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.
 
 
 ### -field NodeId
@@ -94,7 +95,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksproperty">KSPROPERTY</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a>

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.ZwNotifyChangeKey
+UID: NF:ntifs.ZwNotifyChangeKey
 title: ZwNotifyChangeKey function
 author: windows-driver-content
 description: The ZwNotifyChangeKey routine allows a driver to request notification when a registry key changes.
@@ -7,7 +7,7 @@ old-location: kernel\zwnotifychangekey.htm
 old-project: kernel
 ms.assetid: 660c04b0-499b-40e7-94c2-5cb457e93f00
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwNotifyChangeKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # ZwNotifyChangeKey function
@@ -64,7 +65,7 @@ NTSTATUS ZwNotifyChangeKey(
 
 ### -param KeyHandle [in]
 
-Handle to the key to register a notification routine for. This handle is created by a successful call to <a href="kernel.zwcreatekey">ZwCreateKey</a> or <a href="kernel.zwopenkey">ZwOpenKey</a>. The caller must have specified KEY_NOTIFY access.
+Handle to the key to register a notification routine for. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> or <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>. The caller must have specified KEY_NOTIFY access.
 
 
 ### -param Event [in, optional]
@@ -81,7 +82,7 @@ Handle to a caller-created event. If not <b>NULL</b>, the caller is placed into 
 
 ### -param ApcContext [in, optional]
 
-The meaning of this parameter depends on whether the routine is called from kernel mode or from user mode. For a kernel-mode call, set this parameter to one of the following <a href="kernel.work_queue_type">WORK_QUEUE_TYPE</a> enumeration values:
+The meaning of this parameter depends on whether the routine is called from kernel mode or from user mode. For a kernel-mode call, set this parameter to one of the following <a href="..\wdm\ne-wdm-_work_queue_type.md">WORK_QUEUE_TYPE</a> enumeration values:
 
 <ul>
 <li>
@@ -98,7 +99,7 @@ The parameter value must be cast to type PVOID. For a user-mode call, this param
 
 ### -param IoStatusBlock [out]
 
-Pointer to an <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure that contains the final status and information about the operation. For successful calls that return data, the number of bytes written to <i>Buffer</i> is supplied in <i>IoStatusBlock</i>-&gt;<b>Information</b>.
+Pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that contains the final status and information about the operation. For successful calls that return data, the number of bytes written to <i>Buffer</i> is supplied in <i>IoStatusBlock</i>-&gt;<b>Information</b>.
 
 
 ### -param CompletionFilter [in]
@@ -232,7 +233,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -240,27 +241,27 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.io_status_block">IO_STATUS_BLOCK</a>
+<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatekey">ZwCreateKey</a>
+<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
 </dt>
 <dt>
-<a href="kernel.zwopenkey">ZwOpenKey</a>
+<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
 </dt>
 <dt>
-<a href="ifsk.work_queue_item">WORK_QUEUE_ITEM</a>
+<a href="..\wdm\ns-wdm-_work_queue_item.md">WORK_QUEUE_ITEM</a>
 </dt>
 <dt>
-<a href="kernel.work_queue_type">WORK_QUEUE_TYPE</a>
+<a href="..\wdm\ne-wdm-_work_queue_type.md">WORK_QUEUE_TYPE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwNotifyChangeKey routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwNotifyChangeKey routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

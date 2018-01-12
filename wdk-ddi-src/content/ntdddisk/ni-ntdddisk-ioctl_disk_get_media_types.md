@@ -1,5 +1,5 @@
 ---
-UID: NI.ntdddisk.IOCTL_DISK_GET_MEDIA_TYPES
+UID: NI:ntdddisk.IOCTL_DISK_GET_MEDIA_TYPES
 title: IOCTL_DISK_GET_MEDIA_TYPES
 author: windows-driver-content
 description: In Microsoft Windows 2000 and later operating systems, this IOCTL is replaced by IOCTL_STORAGE_GET_MEDIA_TYPES. The only difference between the two IOCTLs is the base value.
@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_get_media_types.htm
 old-project: storage
 ms.assetid: d6e6cd4c-680d-4885-b910-3de8de143e2b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_GET_MEDIA_TYPES IOCTL

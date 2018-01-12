@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMPaint
+UID: NF:printoem.OEMPaint
 title: OEMPaint function
 author: windows-driver-content
 description: The OEMPaint function is obsolete, and is no longer called by GDI in Windows 2000 and later. See DrvPaint.
@@ -7,7 +7,7 @@ old-location: print\oempaint.htm
 old-project: print
 ms.assetid: 4054c805-5307-41f4-a7ff-65743ae4be69
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMPaint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <code>OEMPaint</code> function is obsolete, and is no longer called by GDI in Windows 2000 and later. See <a href="display.drvpaint">DrvPaint</a>.
+The <code>OEMPaint</code> function is obsolete, and is no longer called by GDI in Windows 2000 and later. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff556256">DrvPaint</a>.
 
 
 

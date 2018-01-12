@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP.BRANCHOFFICEJOBDATAPIPELINEFAILED
+UID: NS:winsplp.BranchOfficeJobDataPipelineFailed
 title: BranchOfficeJobDataPipelineFailed
 author: windows-driver-content
 description: Contains the necessary data for logging a branch office job Pipeline Rendering Failed event on a remote server. This is based on standard job-related data available to the spooler.
@@ -7,8 +7,8 @@ old-location: print\branchofficejobdatapipelinefailed.htm
 old-project: print
 ms.assetid: 3F5DB2F5-40B6-4A8D-983C-065D17E62AE6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: BranchOfficeJobDataPipelineFailed, BranchOfficeJobDataPipelineFailed, PBranchOfficeJobDataPipelineFailed, *PBranchOfficeJobDataPipelineFailed
+ms.date: 1/8/2018
+ms.keywords: BranchOfficeJobDataPipelineFailed, BranchOfficeJobDataPipelineFailed, *PBranchOfficeJobDataPipelineFailed
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BranchOfficeJobDataPipelineFailed, *PBranchOfficeJobDataPipelineFailed
 req.product: Windows 10 or later.
 ---
 

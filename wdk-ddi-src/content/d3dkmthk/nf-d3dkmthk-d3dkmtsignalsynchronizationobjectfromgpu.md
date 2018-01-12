@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTSignalSynchronizationObjectFromGpu
+UID: NF:d3dkmthk.D3DKMTSignalSynchronizationObjectFromGpu
 title: D3DKMTSignalSynchronizationObjectFromGpu function
 author: windows-driver-content
 description: D3DKMTSignalSynchronizationObjectFromGpu is used to signal a monitored fence.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtsignalsynchronizationobjectfromgpu.htm
 old-project: display
 ms.assetid: 5343A7F6-7EFC-4BAE-8D21-CA8FB9B6078A
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTSignalSynchronizationObjectFromGpu
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: GDI32.lib
 req.dll: GDI32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTSignalSynchronizationObjectFromGpu function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-<b>D3DKMTSignalSynchronizationObjectFromGpu</b> is used to signal a monitored fence. When a particular graphics processing unit (GPU) engine is not capable of writing a new monitored fence value directly using its GPU virtual address, the driver needs to flush its command buffer and issue a signal from GPU packet using <a href="display.d3dkmtsignalsynchronizationobjectfromgpu2">D3DKMTSignalSynchronizationObjectFromGpu2</a>. For Windows Display Driver Model (WDDM) v2 drivers, existing <a href="display.d3dkmtsignalsynchronizationobject">D3DKMTSignalSynchronizationObject</a> and <a href="display.d3dkmtsignalsynchronizationobject2">D3DKMTSignalSynchronizationObject2</a> callbacks are deprecated and will eventually be removed.  
+<b>D3DKMTSignalSynchronizationObjectFromGpu</b> is used to signal a monitored fence. When a particular graphics processing unit (GPU) engine is not capable of writing a new monitored fence value directly using its GPU virtual address, the driver needs to flush its command buffer and issue a signal from GPU packet using <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobjectfromgpu2.md">D3DKMTSignalSynchronizationObjectFromGpu2</a>. For Windows Display Driver Model (WDDM) v2 drivers, existing <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobject.md">D3DKMTSignalSynchronizationObject</a> and <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobject2.md">D3DKMTSignalSynchronizationObject2</a> callbacks are deprecated and will eventually be removed.  
 
 
 
@@ -55,7 +56,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTSignalSynchronizationObjectFromG
 
 ### -param pData [in]
 
-A <a href="display.d3dkmt_signalsynchronizationobjectfromgpu">D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU</a> structure that provides the details of the requested operation.
+A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_signalsynchronizationobjectfromgpu.md">D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU</a> structure that provides the details of the requested operation.
 
 
 ## -returns
@@ -147,21 +148,21 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_signalsynchronizationobjectfromgpu">D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_signalsynchronizationobjectfromgpu.md">D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU</a>
 </dt>
 <dt>
-<a href="display.d3dkmtsignalsynchronizationobjectfromgpu2">D3DKMTSignalSynchronizationObjectFromGpu2</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobjectfromgpu2.md">D3DKMTSignalSynchronizationObjectFromGpu2</a>
 </dt>
 <dt>
-<a href="display.d3dkmtsignalsynchronizationobject">D3DKMTSignalSynchronizationObject</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobject.md">D3DKMTSignalSynchronizationObject</a>
 </dt>
 <dt>
-<a href="display.d3dkmtsignalsynchronizationobject2">D3DKMTSignalSynchronizationObject2</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobject2.md">D3DKMTSignalSynchronizationObject2</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTSignalSynchronizationObjectFromGpu function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTSignalSynchronizationObjectFromGpu function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -5,7 +5,6 @@
 ### [_SCARD_CARD_CAPABILITIES structure](../smclib/ns-smclib-_scard_card_capabilities.md)
 ### [_SCARD_READER_CAPABILITIES structure](../smclib/ns-smclib-_scard_reader_capabilities.md)
 ### [_SMARTCARD_EXTENSION structure](../smclib/ns-smclib-_smartcard_extension.md)
-### [_SMARTCARD_EXTENSION structure](../smclib/ns-smclib-_smartcard_extension~r1.md)
 ### [_SMARTCARD_REPLY structure](../smclib/ns-smclib-_smartcard_reply.md)
 ### [_SMARTCARD_REQUEST structure](../smclib/ns-smclib-_smartcard_request.md)
 ### [_T0_DATA structure](../smclib/ns-smclib-_t0_data.md)

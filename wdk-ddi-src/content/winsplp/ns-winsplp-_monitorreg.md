@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP._MONITORREG
+UID: NS:winsplp._MONITORREG
 title: _MONITORREG
 author: windows-driver-content
 description: The MONITORREG structure supplies print monitors with the address of registry functions to use instead of Win32 registry API functions.
@@ -7,8 +7,8 @@ old-location: print\monitorreg.htm
 old-project: print
 ms.assetid: 57c146bc-574f-4137-89bb-e891e005de05
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _MONITORREG, MONITORREG, PMONITORREG, *PMONITORREG
+ms.date: 1/8/2018
+ms.keywords: _MONITORREG, MONITORREG, *PMONITORREG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MONITORREG, *PMONITORREG
 req.product: Windows 10 or later.
 ---
 
@@ -156,7 +157,7 @@ Size, in bytes, of the MONITORREG structure.
 
 
 ## -remarks
-The MONITORREG structure's address is supplied in a <a href="print.monitorinit">MONITORINIT</a> structure, which is passed to a print monitor's <a href="print.initializeprintmonitor2">InitializePrintMonitor2</a> function.
+The MONITORREG structure's address is supplied in a <a href="..\winsplp\ns-winsplp-_monitorinit.md">MONITORINIT</a> structure, which is passed to a print monitor's <a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a> function.
 
 When <a href="https://msdn.microsoft.com/b1c83729-d7d2-4920-9402-4e00baa12633">storing port configuration information</a>, print monitors must not explicitly call either the Win32 registry API or the cluster registry API. Instead, they must call equivalent spooler registry functions. The MONITORREG structure supplies the addresses of these functions. The following table lists each spooler registry function and its equivalent cluster registry function.
 
@@ -202,9 +203,9 @@ When <a href="https://msdn.microsoft.com/b1c83729-d7d2-4920-9402-4e00baa12633">s
 
 Input and output parameters for these spooler functions match the parameters of the equivalent cluster registry functions (described in the Microsoft Windows SDK documentation), with the following exceptions:
 
-Each spooler registry function requires an <i>hSpooler</i> input parameter. This is the spooler handle received in the <a href="print.monitorinit">MONITORINIT</a> structure.
+Each spooler registry function requires an <i>hSpooler</i> input parameter. This is the spooler handle received in the <a href="..\winsplp\ns-winsplp-_monitorinit.md">MONITORINIT</a> structure.
 
-The spooler registry functions use HANDLE and PHANDLE parameter types instead of the HKEY and PHKEY types used by the cluster registry functions. Monitors receive the handle of the root registry location in the <b>hckRegistryRoot</b> member of the <a href="print.monitorinit">MONITORINIT</a> structure.
+The spooler registry functions use HANDLE and PHANDLE parameter types instead of the HKEY and PHKEY types used by the cluster registry functions. Monitors receive the handle of the root registry location in the <b>hckRegistryRoot</b> member of the <a href="..\winsplp\ns-winsplp-_monitorinit.md">MONITORINIT</a> structure.
 
 
 ## -requirements
@@ -225,15 +226,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.monitorinit">MONITORINIT</a>
+<a href="..\winsplp\ns-winsplp-_monitorinit.md">MONITORINIT</a>
 </dt>
 <dt>
-<a href="print.initializeprintmonitor2">InitializePrintMonitor2</a>
+<a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20MONITORREG structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20MONITORREG structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

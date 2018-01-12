@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGKS_DATAFORMAT_IMAGEINFO
+UID: NS:ksmedia.tagKS_DATAFORMAT_IMAGEINFO
 title: tagKS_DATAFORMAT_IMAGEINFO
 author: windows-driver-content
 description: Specifies an image data format that is used for an independent image pin (or stream).
@@ -7,8 +7,8 @@ old-location: stream\ks_dataformat_imageinfo.htm
 old-project: stream
 ms.assetid: d63289bc-9603-4e79-8a77-d2eb0f2c784c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagKS_DATAFORMAT_IMAGEINFO, KS_DATAFORMAT_IMAGEINFO, *PKS_DATAFORMAT_IMAGEINFO, PKS_DATAFORMAT_IMAGEINFO
+ms.date: 1/9/2018
+ms.keywords: tagKS_DATAFORMAT_IMAGEINFO, KS_DATAFORMAT_IMAGEINFO, *PKS_DATAFORMAT_IMAGEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KS_DATAFORMAT_IMAGEINFO, *PKS_DATAFORMAT_IMAGEINFO
 ---
 
 # tagKS_DATAFORMAT_IMAGEINFO structure
@@ -61,7 +62,7 @@ A <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> structure that specifie
 
 ### -field ImageInfoHeader
 
-A <a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a> structure that specifies image color and dimension information that the still image capture stream would provide.
+A <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that specifies image color and dimension information that the still image capture stream would provide.
 
 
 ## -remarks
@@ -105,7 +106,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ks_bitmapinfoheader">KS_BITMAPINFOHEADER</a>
+<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
@@ -115,5 +116,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_DATAFORMAT_IMAGEINFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KS_DATAFORMAT_IMAGEINFO structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

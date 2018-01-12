@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.SearchMemory
+UID: NF:wdbgexts.SearchMemory
 title: SearchMemory function
 author: windows-driver-content
 description: The SearchMemory function searches the target's virtual memory for a specified pattern of bytes.
 old-location: debugger\searchmemory.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 7e07c47e-803b-44fa-9d0f-aa86475246d2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: SearchMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 

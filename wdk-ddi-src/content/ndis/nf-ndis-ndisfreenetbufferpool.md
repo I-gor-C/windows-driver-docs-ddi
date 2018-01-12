@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisFreeNetBufferPool
+UID: NF:ndis.NdisFreeNetBufferPool
 title: NdisFreeNetBufferPool function
 author: windows-driver-content
 description: Call the NdisFreeNetBufferPool function to free NET_BUFFER structure pools that are created with the NdisAllocateNetBufferPool function.
 old-location: netvista\ndisfreenetbufferpool.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e1ea63d1-9322-44c7-8196-2fe1a7b6a220
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisFreeNetBufferPool
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisFreeNetBufferPool function
@@ -40,9 +41,9 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 Call the 
   <b>NdisFreeNetBufferPool</b> function to free 
-  <a href="netvista.net_buffer">NET_BUFFER</a> structure pools that are created with
+  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure pools that are created with
   the 
-  <a href="netvista.ndisallocatenetbufferpool">
+  <a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">
   NdisAllocateNetBufferPool</a> function.
 
 
@@ -69,9 +70,9 @@ None
 
 ## -remarks
 You should free all the 
-    <a href="netvista.net_buffer">NET_BUFFER</a> structures in a pool before freeing
+    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures in a pool before freeing
     the NET_BUFFER structure pool. Call the 
-    <a href="netvista.ndisfreenetbuffer">NdisFreeNetBuffer</a> function to free each
+    <a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a> function to free each
     NET_BUFFER structure.
 
 
@@ -136,7 +137,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -144,18 +145,18 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatenetbufferpool">NdisAllocateNetBufferPool</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferpool.md">NdisAllocateNetBufferPool</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreenetbuffer">NdisFreeNetBuffer</a>
+<a href="..\ndis\nf-ndis-ndisfreenetbuffer.md">NdisFreeNetBuffer</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisFreeNetBufferPool function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeNetBufferPool function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

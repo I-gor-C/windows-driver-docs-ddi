@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMPrinterEvent
+UID: NF:printoem.OEMPrinterEvent
 title: OEMPrinterEvent function
 author: windows-driver-content
 description: OEMPrinterEvent function
@@ -7,7 +7,7 @@ old-location: print\oemprinterevent.htm
 old-project: print
 ms.assetid: bbd37342-f0d0-43e0-bc27-1b47c426da6e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMPrinterEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

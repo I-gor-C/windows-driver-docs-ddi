@@ -1,6 +1,6 @@
 ---
-UID: NS.PORTCLS.__UNNAMED_STRUCT_0C40_4
-title: *PPCMETHOD_ITEM
+UID: NS:portcls.__unnamed_struct_0c40_4
+title: PCMETHOD_ITEM
 author: windows-driver-content
 description: The PCMETHOD_ITEM structure describes a method supported by a filter, pin, or node.
 old-location: audio\pcmethod_item.htm
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 588d2f0e-0f87-46c7-b2fa-f14f29f6a9f0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: *PPCMETHOD_ITEM, *PPCMETHOD_ITEM, PCMETHOD_ITEM
+ms.keywords: PCMETHOD_ITEM, PCMETHOD_ITEM, *PPCMETHOD_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PCMETHOD_ITEM, *PPCMETHOD_ITEM
 ---
 
-# *PPCMETHOD_ITEM structure
+# PCMETHOD_ITEM structure
 
 
 
@@ -146,7 +147,7 @@ Pointer to the method-handler routine. This member is a function pointer of type
 </td>
 </tr>
 </table></span></div>
-When calling the <b>Handler</b> routine, the caller passes in a single call parameter, which is a pointer to a structure of type <a href="audio.pcmethod_request">PCMETHOD_REQUEST</a>.
+When calling the <b>Handler</b> routine, the caller passes in a single call parameter, which is a pointer to a structure of type <a href="..\portcls\ns-portcls-_pcmethod_request.md">PCMETHOD_REQUEST</a>.
 
 
 ## -remarks
@@ -173,7 +174,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcmethod_request">PCMETHOD_REQUEST</a>
+<a href="..\portcls\ns-portcls-_pcmethod_request.md">PCMETHOD_REQUEST</a>
 </dt>
 </dl>
  

@@ -1,14 +1,14 @@
 ---
-UID: NS.IGPUPVDEV._LUID
+UID: NS:igpupvdev._LUID
 title: _LUID
 author: windows-driver-content
 description: The locally unique identifier (LUID) is a 64-bit value guaranteed to be unique only on the system on which it was generated.
 old-location: netvista\luid.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9547d3e1-a811-4b89-be71-f7cf81e92b93
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _LUID, LUID
+ms.date: 1/8/2018
+ms.keywords: _LUID, LUID, *PLUID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: LUID
 ---
 
 # _LUID structure

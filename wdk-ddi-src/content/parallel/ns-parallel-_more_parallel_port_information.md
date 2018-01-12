@@ -1,5 +1,5 @@
 ---
-UID: NS.PARALLEL._MORE_PARALLEL_PORT_INFORMATION
+UID: NS:parallel._MORE_PARALLEL_PORT_INFORMATION
 title: _MORE_PARALLEL_PORT_INFORMATION
 author: windows-driver-content
 description: The MORE_PARALLEL_PORT_INFORMATION structure specifies information about the system interface that supports the operation of a parallel port.
@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: b21bfbce-5436-4865-b291-2e55abc4aad1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _MORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION, *PMORE_PARALLEL_PORT_INFORMATION, PMORE_PARALLEL_PORT_INFORMATION
+ms.keywords: _MORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION, *PMORE_PARALLEL_PORT_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MORE_PARALLEL_PORT_INFORMATION, *PMORE_PARALLEL_PORT_INFORMATION
 ---
 
 # _MORE_PARALLEL_PORT_INFORMATION structure
@@ -124,10 +125,10 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
 </dt>
 <dt>
-<a href="parports.parallel_port_information">PARALLEL_PORT_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_parallel_port_information.md">PARALLEL_PORT_INFORMATION</a>
 </dt>
 <dt>
-<a href="parports.parallel_pnp_information">PARALLEL_PNP_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a>
 </dt>
 </dl>
  

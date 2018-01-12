@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteTyped.Field
+UID: NF:engextcpp.ExtRemoteTyped.Field
 title: ExtRemoteTyped::Field method
 author: windows-driver-content
 description: The Field method returns the typed data for a member in the typed data that is represented by this object.
 old-location: debugger\extremotetyped_field.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: be662551-c4d3-4979-8a9b-c913fb6bd336
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped::Field, Field
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteTyped::Field method

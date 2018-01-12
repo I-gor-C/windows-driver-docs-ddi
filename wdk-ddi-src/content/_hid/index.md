@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:hid
 ---
 
 # Human Interface Devices (HID)
@@ -77,9 +77,6 @@ For the programming guide, see [Human Interface Devices (HID)](https://docs.micr
 
 | Title   | Description   |
 | ---- |:---- |
-| [EVT_VHF_ASYNC_OPERATION callback](..\vhf\nc-vhf-evt_vhf_async_operation.md) | The HID source driver implements this event callback if it wants to support one of the four asynchronous operation to get and set HID reports. |
-| [EVT_VHF_CLEANUP callback](..\vhf\nc-vhf-evt_vhf_cleanup.md) | The HID source driver implements this event callback to free resources that might the driver allocated to the virtual HID device. |
-| [EVT_VHF_READY_FOR_NEXT_READ_REPORT callback](..\vhf\nc-vhf-evt_vhf_ready_for_next_read_report.md) | The HID source driver implements this event call back function to use its buffering scheme for HID Input Reports, and wants to get notified when the next report can be submitted to VHF. |
 | [PI8042_ISR_WRITE_PORT callback](..\ntdd8042\nc-ntdd8042-pi8042_isr_write_port.md) | The PI8042_ISR_WRITE_PORT-typed callback routine writes data to an i8042 port. I8042prt provides this callback. |
 | [PI8042_KEYBOARD_INITIALIZATION_ROUTINE callback](..\ntdd8042\nc-ntdd8042-pi8042_keyboard_initialization_routine.md) | A PI8042_KEYBOARD_INITIALIZATION_ROUTINE-typed callback routine supplements the default initialization of a keyboard device by I8042prt. |
 | [PI8042_KEYBOARD_ISR callback](..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md) | A PI8042_KEYBOARD_ISR-typed callback routine customizes the operation of the I8042prt keyboard ISR. |

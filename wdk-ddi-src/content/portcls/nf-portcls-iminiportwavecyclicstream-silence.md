@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveCyclicStream.Silence
+UID: NF:portcls.IMiniportWaveCyclicStream.Silence
 title: IMiniportWaveCyclicStream::Silence method
 author: windows-driver-content
 description: The Silence method is used to copy silence samples to a specified buffer.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveCyclicStream::Silence method

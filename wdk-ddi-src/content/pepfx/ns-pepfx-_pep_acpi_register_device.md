@@ -1,5 +1,5 @@
 ---
-UID: NS.PEPFX._PEP_ACPI_REGISTER_DEVICE
+UID: NS:pepfx._PEP_ACPI_REGISTER_DEVICE
 title: _PEP_ACPI_REGISTER_DEVICE
 author: windows-driver-content
 description: The PEP_ACPI_REGISTER_DEVICE structure contains registration information about a device for which the platform extension plug-in (PEP) is to provide ACPI services.
@@ -7,8 +7,8 @@ old-location: kernel\pep_acpi_register_device.htm
 old-project: kernel
 ms.assetid: 96FB6959-1583-42E0-9851-A09AE0CB73DB
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_ACPI_REGISTER_DEVICE, PEP_ACPI_REGISTER_DEVICE, *PPEP_ACPI_REGISTER_DEVICE, PPEP_ACPI_REGISTER_DEVICE
+ms.date: 1/4/2018
+ms.keywords: _PEP_ACPI_REGISTER_DEVICE, *PPEP_ACPI_REGISTER_DEVICE, PEP_ACPI_REGISTER_DEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPEP_ACPI_REGISTER_DEVICE, PEP_ACPI_REGISTER_DEVICE
 ---
 
 # _PEP_ACPI_REGISTER_DEVICE structure
@@ -59,7 +60,7 @@ typedef struct _PEP_ACPI_REGISTER_DEVICE {
 
 ### -field AcpiDeviceName
 
-[in] An <a href="kernel.ansi_string">ANSI_STRING</a> structure that contains the fully qualified BIOS name for the device. The same name was previously supplied as an input value in the <a href="kernel.pep_acpi_prepare_device">PEP_ACPI_PREPARE_DEVICE</a> notification for the device. This name specifies the path and name of the device in the ACPI namespace. For more information, see <a href="https://msdn.microsoft.com/fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67">Enumerating Child Devices and Control Methods</a>.
+[in] An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a> structure that contains the fully qualified BIOS name for the device. The same name was previously supplied as an input value in the <a href="..\pepfx\ns-pepfx-_pep_acpi_prepare_device.md">PEP_ACPI_PREPARE_DEVICE</a> notification for the device. This name specifies the path and name of the device in the ACPI namespace. For more information, see <a href="https://msdn.microsoft.com/fe0553df-a5b9-46c4-8e1d-8b89a7d4ad67">Enumerating Child Devices and Control Methods</a>.
 
 
 ### -field InputFlags
@@ -69,7 +70,7 @@ typedef struct _PEP_ACPI_REGISTER_DEVICE {
 
 ### -field KernelHandle
 
-[in] A POHANDLE value that represents the registration of the device with the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx). The PEP can use this handle to identify the device in subsequent communications with PoFx.
+[in] A POHANDLE value that represents the registration of the device with the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx). The PEP can use this handle to identify the device in subsequent communications with PoFx.
 
 
 ### -field DeviceHandle
@@ -114,10 +115,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.ansi_string">ANSI_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
 </dt>
 <dt>
-<a href="kernel.pep_acpi_prepare_device">PEP_ACPI_PREPARE_DEVICE</a>
+<a href="..\pepfx\ns-pepfx-_pep_acpi_prepare_device.md">PEP_ACPI_PREPARE_DEVICE</a>
 </dt>
 <dt>
 <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a>
@@ -130,5 +131,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_REGISTER_DEVICE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_ACPI_REGISTER_DEVICE structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

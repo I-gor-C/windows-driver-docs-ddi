@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortMidi.Notify
+UID: NF:portcls.IPortMidi.Notify
 title: IPortMidi::Notify method
 author: windows-driver-content
 description: The Notify method notifies the port driver that an interrupt indicating the progress of the DMA pointer has occurred. It should be called from the miniport driver's interrupt service routine (ISR).
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortMidi::Notify method

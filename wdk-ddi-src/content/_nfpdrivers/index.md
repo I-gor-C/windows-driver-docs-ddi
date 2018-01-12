@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:nfpdrivers
 ---
 
 # Near field communications (NFC)
@@ -33,14 +33,6 @@ For the programming guide, see [Near field communications (NFC)](===404===https:
 | [NfcCxSetLlcpConfig function](..\nfccx\nf-nfccx-nfccxsetllcpconfig.md) | Called by the client driver to configure the LLCP parameters. |
 | [NfcCxSetRfDiscoveryConfig function](..\nfccx\nf-nfccx-nfccxsetrfdiscoveryconfig.md) | Called by the client driver to configure the RF discovery parameters. |
 | [NfcCxUnregisterSequenceHandler function](..\nfccx\nf-nfccx-nfccxunregistersequencehandler.md) | Called by the client driver during device shutdown to unregister for the previously registered sequence handler callback. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_NFC_CX_DEVICE_IO_CONTROL callback](..\nfccx\nc-nfccx-evt_nfc_cx_device_io_control.md) | Called by the NFC CX to send an unhandled IOCTL to the client driver. |
-| [EVT_NFC_CX_SEQUENCE_HANDLER callback](..\nfccx\nc-nfccx-evt_nfc_cx_sequence_handler.md) | Called by the NFC CX to notify the client driver to handle the specific registered sequence. |
-| [EVT_NFC_CX_WRITE_NCI_PACKET callback](..\nfccx\nc-nfccx-evt_nfc_cx_write_nci_packet.md) | Called by the NFC CX to send a write packet to the client driver. |
 
 ## Structures
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.GetParameters
+UID: NF:dbgeng.IDebugBreakpoint2.GetParameters
 title: IDebugBreakpoint2::GetParameters method
 author: windows-driver-content
 description: The GetParameters method returns the parameters for a breakpoint.
 old-location: debugger\getparameters.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 6b0e2a3d-2a62-4a79-a4e1-03168277caec
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::GetParameters, GetParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::GetParameters method
@@ -55,7 +56,7 @@ HRESULT GetParameters(
 
 ### -param Params [out]
 
-The breakpoint's parameters.  For more information about the parameters, see <a href="debugger.debug_breakpoint_parameters">DEBUG_BREAKPOINT_PARAMETERS</a>.
+The breakpoint's parameters.  For more information about the parameters, see <a href="..\dbgeng\ns-dbgeng-_debug_breakpoint_parameters.md">DEBUG_BREAKPOINT_PARAMETERS</a>.
 
 
 ## -returns

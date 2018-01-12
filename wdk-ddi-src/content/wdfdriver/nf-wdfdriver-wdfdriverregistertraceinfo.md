@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdriver.WdfDriverRegisterTraceInfo
+UID: NF:wdfdriver.WdfDriverRegisterTraceInfo
 title: WdfDriverRegisterTraceInfo function
 author: windows-driver-content
 description: The WdfDriverRegisterTraceInfo method is reserved for internal use only.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdriverregistertraceinfo.htm
 old-project: wdf
 ms.assetid: f2d332cd-d744-444c-b616-d8400ad30d43
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDriverRegisterTraceInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Not applicable
+req.typenames: WDF_DRIVER_INIT_FLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -99,7 +100,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
 </td>
 </tr>
 </table>

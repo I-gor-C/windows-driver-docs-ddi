@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlSubtreeSuccessor
+UID: NF:ntddk.RtlSubtreeSuccessor
 title: RtlSubtreeSuccessor function
 author: windows-driver-content
 description: The RtlSubtreeSuccessor routine returns a pointer to the successor of the specified node within the subtree that is rooted at that node.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlsubtreesuccessor.htm
 old-project: ifsk
 ms.assetid: de592c2a-6f52-48ef-b2ee-253d83cafa80
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlSubtreeSuccessor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: See Remarks section.
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlSubtreeSuccessor function
@@ -141,21 +142,21 @@ See Remarks section.
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.rtlinitializesplaylinks">RtlInitializeSplayLinks</a>
+<a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
 </dt>
 <dt>
-<a href="ifsk.rtlrealsuccessor">RtlRealSuccessor</a>
+<a href="..\ntddk\nf-ntddk-rtlrealsuccessor.md">RtlRealSuccessor</a>
 </dt>
 <dt>
-<a href="ifsk.rtlsplay">RtlSplay</a>
+<a href="..\ntddk\nf-ntddk-rtlsplay.md">RtlSplay</a>
 </dt>
 <dt>
-<a href="ifsk.rtlsubtreepredecessor">RtlSubtreePredecessor</a>
+<a href="..\ntddk\nf-ntddk-rtlsubtreepredecessor.md">RtlSubtreePredecessor</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlSubtreeSuccessor routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlSubtreeSuccessor routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

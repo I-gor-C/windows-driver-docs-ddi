@@ -1,5 +1,5 @@
 ---
-UID: NF.mrx.RxStopMinirdr
+UID: NF:mrx.RxStopMinirdr
 title: RxStopMinirdr function
 author: windows-driver-content
 description: RxStopMinirdr is called to stop a network mini-redirector that has previously been started.
@@ -7,7 +7,7 @@ old-location: ifsk\rxstopminirdr.htm
 old-project: ifsk
 ms.assetid: 059d2a99-f4da-45f1-8d91-0e57930595d2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RxStopMinirdr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: *PSetDSMCounters_IN, SetDSMCounters_IN
 ---
 
 # RxStopMinirdr function
@@ -94,7 +95,7 @@ IRP_MJ_CLOSE
 
 The stop sequence for RDBSS and the network mini-redirector must be completed in the context of the file system process. If the call to <b>RxStopMinirdr</b> comes from a different process (a user-mode request, for example), then the request must be posted for later processing and STATUS_PENDING will be returned. In this case, the effective user ID (the logon ID) of the caller is saved in the <b>FsdUid</b> member of the <i>RxContext</i> parameter. In addition, If certain internal RDBSS locks cannot be obtained without waiting, STATUS_PENDING is returned and <i>PostToFsp</i> is set to <b>TRUE</b>. When STATUS_PENDING is returned, then <b>RxStopMinirdr</b> will be posted for later processing by a file system process and completed. 
 
-If a network mini-redirector indicates support for UNC when registering with RDBSS (the <i>Controls</i> parameter to <b>RxRegisterMinirdr</b>), then <b>RxStopMinirdr</b> will try to de-register the <i>DeviceName</i> of the network mini-redirector as a UNC provider with MUP (calls <a href="ifsk.fsrtlderegisteruncprovider">FsRtlDeregisterUncProvider</a> on behalf of the network mini-redirector). <b>RxStopMinirdr</b> also de-registers the file system with the I/O manager (calls <a href="ifsk.iounregisterfilesystem">IoUnregisterFileSystem</a>) on behalf of the network mini-redirector).
+If a network mini-redirector indicates support for UNC when registering with RDBSS (the <i>Controls</i> parameter to <b>RxRegisterMinirdr</b>), then <b>RxStopMinirdr</b> will try to de-register the <i>DeviceName</i> of the network mini-redirector as a UNC provider with MUP (calls <a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a> on behalf of the network mini-redirector). <b>RxStopMinirdr</b> also de-registers the file system with the I/O manager (calls <a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>) on behalf of the network mini-redirector).
 
 The <b>RxStopMinirdr</b> routine then calls the network mini-redirector <b>MrxStop</b> callback routine if this routine is implemented. If there are no active FCBs remaining, STATUS_SUCCESS is returned. If there are some remaining active FCBs, STATUS_REDIRECTOR_HAS_OPEN_HANDLES is returned. In either case, the RDBSS dispatcher for the redrector is spun down and the internal state of the network mini-redirector in RDBSS is set to RDBSS_STARTABLE. 
 
@@ -138,27 +139,27 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fsrtlderegisteruncprovider">FsRtlDeregisterUncProvider</a>
+<a href="..\ntifs\nf-ntifs-fsrtlderegisteruncprovider.md">FsRtlDeregisterUncProvider</a>
 </dt>
 <dt>
-<a href="ifsk.iounregisterfilesystem">IoUnregisterFileSystem</a>
+<a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>
 </dt>
 <dt>
-<a href="ifsk.rxregisterminirdr">RxRegisterMinirdr</a>
+<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
 </dt>
 <dt>
-<a href="ifsk.rxstartminirdr">RxStartMiniRdr</a>
+<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMiniRdr</a>
 </dt>
 <dt>
-<a href="ifsk.rxpunregisterminirdr">RxpUnregisterMinirdr</a>
+<a href="..\mrx\nf-mrx-rxpunregisterminirdr.md">RxpUnregisterMinirdr</a>
 </dt>
 <dt>
-<a href="ifsk.rxunregisterminirdr">RxUnregisterMinirdr</a>
+<a href="..\rxstruc\nf-rxstruc-rxunregisterminirdr.md">RxUnregisterMinirdr</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxStopMinirdr function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxStopMinirdr function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

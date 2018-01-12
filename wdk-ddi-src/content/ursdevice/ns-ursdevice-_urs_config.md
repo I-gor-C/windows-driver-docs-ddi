@@ -1,14 +1,14 @@
 ---
-UID: NS.URSDEVICE._URS_CONFIG
+UID: NS:ursdevice._URS_CONFIG
 title: _URS_CONFIG
 author: windows-driver-content
 description: Contains pointers to event callback functions implemented by the URS client driver for a USB dual-role controller. Initialize this structure by calling URS_CONFIG_INIT.
 old-location: buses\urs_config.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 3857CA53-6992-410A-96D1-EEA9CC586EDF
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _URS_CONFIG, URS_CONFIG, PURS_CONFIG, *PURS_CONFIG
+ms.date: 1/4/2018
+ms.keywords: _URS_CONFIG, *PURS_CONFIG, URS_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PURS_CONFIG, URS_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Contains pointers to event callback functions implemented by the URS client driver for a USB dual-role controller. Initialize this structure by calling <a href="buses.urs_config_init">URS_CONFIG_INIT</a>.
+Contains pointers to event callback functions implemented by the URS client driver for a USB dual-role controller. Initialize this structure by calling <a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>.
 
 
 
@@ -64,12 +65,12 @@ The size of this structure.
 
 ### -field HostInterfaceType
 
-A <a href="buses.urs_host_interface_type">URS_HOST_INTERFACE_TYPE</a> type value that indicates the type of USB host controller: EHCI, xHCI, or other.
+A <a href="..\urstypes\ne-urstypes-_urs_host_interface_type.md">URS_HOST_INTERFACE_TYPE</a> type value that indicates the type of USB host controller: EHCI, xHCI, or other.
 
 
 ### -field EvtUrsFilterRemoveResourceRequirements
 
-A pointer to an <a href="buses.evt_urs_device_filter_resource_requirements">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a> callback function.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595921">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a> callback function.
 
 
 ### -field EvtUrsSetRole
@@ -108,15 +109,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ursdeviceinitialize">UrsDeviceInitialize</a>
+<a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
 </dt>
 <dt>
-<a href="buses.urs_config_init">URS_CONFIG_INIT</a>
+<a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20URS_CONFIG structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20URS_CONFIG structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

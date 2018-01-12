@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSPROPERTY_CLOCK
+UID: NE:ks.KSPROPERTY_CLOCK
 title: KSPROPERTY_CLOCK
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksproperty_clock.htm
 old-project: stream
 ms.assetid: 7269B231-62EC-4AF3-A11E-B51A19B85160
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPROPERTY_CLOCK, KSPROPERTY_CLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_CLOCK
 ---
 
 # KSPROPERTY_CLOCK enumeration

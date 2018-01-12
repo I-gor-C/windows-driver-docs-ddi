@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._MS_SMHBA_SCSIENTRY
+UID: NS:hbapiwmi._MS_SMHBA_SCSIENTRY
 title: _MS_SMHBA_SCSIENTRY
 author: windows-driver-content
 description: The MS_SMHBA_SCSIENTRY structure is used to report target LUN mapping information.
@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_scsientry.htm
 old-project: storage
 ms.assetid: 38779458-a561-4048-86d8-905e4e50095f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MS_SMHBA_SCSIENTRY, PMS_SMHBA_SCSIENTRY, MS_SMHBA_SCSIENTRY, *PMS_SMHBA_SCSIENTRY
+ms.date: 1/10/2018
+ms.keywords: _MS_SMHBA_SCSIENTRY, *PMS_SMHBA_SCSIENTRY, MS_SMHBA_SCSIENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMS_SMHBA_SCSIENTRY, MS_SMHBA_SCSIENTRY
 ---
 
 # _MS_SMHBA_SCSIENTRY structure

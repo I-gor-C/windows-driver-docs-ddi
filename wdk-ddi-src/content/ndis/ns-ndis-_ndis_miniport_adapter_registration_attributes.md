@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES
+UID: NS:ndis._NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES
 title: _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES
 author: windows-driver-content
 description: An NDIS miniport driver sets up an NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure to define registration attributes that are associated with a miniport adapter.
 old-location: netvista\ndis_miniport_adapter_registration_attributes.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8f0d539a-50c5-4ecd-b62d-6b32fe7cfaba
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, PNDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES
+ms.date: 1/8/2018
+ms.keywords: _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES
 ---
 
 # _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure
@@ -60,7 +61,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES {
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES. To specify the version of the <b>NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
 
@@ -154,7 +155,7 @@ Set by a CoNDIS miniport driver that does not provide TAPI services. Setting
 ### -field NDIS_MINIPORT_ATTRIBUTES_CONTROLS_DEFAULT_PORT
 
 Set by a miniport driver that calls the 
-       <a href="netvista.ndismnetpnpevent">NdisMNetPnPEvent</a> function to activate
+       <a href="..\ndis\nf-ndis-ndismnetpnpevent.md">NdisMNetPnPEvent</a> function to activate
        its default port. If NDIS_MINIPORT_ATTRIBUTES_CONTROLS_DEFAULT_PORT is not set, the default port is
        active. NDIS does not bind protocol drivers or attach filter modules to a miniport adapter if its
        default port is not active.
@@ -190,7 +191,7 @@ The  interval that NDIS uses when calling
 
 If this member is 0, the default time-out interval is 2 seconds.
 
-<div class="alert"><b>Note</b>  The time-out interval must be greater than your miniport driver's initialization time. For more information, see <a href="netvista.miniport_adapter_check_for_hang_and_reset_operations">Miniport Adapter Check-for-Hang and Reset Operations</a>.</div>
+<div class="alert"><b>Note</b>  The time-out interval must be greater than your miniport driver's initialization time. For more information, see <a href="https://msdn.microsoft.com/53ffc5a9-bcba-4189-8845-73adfcf6816d">Miniport Adapter Check-for-Hang and Reset Operations</a>.</div>
 <div> </div>
 
 ### -field InterfaceType
@@ -284,7 +285,7 @@ This parameter is irrelevant for intermediate drivers, which should specify 0 fo
 A miniport driver passes a pointer to an NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure in
     the 
     <i>MiniportAttributes</i> parameter of the 
-    <a href="netvista.ndismsetminiportattributes">
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
     NdisMSetMiniportAttributes</a> function. A miniport driver calls 
     <b>NdisMSetMiniportAttributes</b> from its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function
@@ -350,24 +351,24 @@ Header
 <a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndismnetpnpevent">NdisMNetPnPEvent</a>
+<a href="..\ndis\nf-ndis-ndismnetpnpevent.md">NdisMNetPnPEvent</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569780">OID_PNP_SET_POWER</a>
 </dt>
 <dt>
-<a href="netvista.miniport_adapter_check_for_hang_and_reset_operations">Miniport Adapter Check-for-Hang and Reset Operations</a>
+<a href="https://msdn.microsoft.com/53ffc5a9-bcba-4189-8845-73adfcf6816d">Miniport Adapter Check-for-Hang and Reset Operations</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

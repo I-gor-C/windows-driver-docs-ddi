@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPartFont.GetFontProperties
+UID: NF:filterpipeline.IPartFont.GetFontProperties
 title: IPartFont::GetFontProperties method
 author: windows-driver-content
 description: The GetFontProperties method gets the font properties.
@@ -7,7 +7,7 @@ old-location: print\ipartfont_getfontproperties.htm
 old-project: print
 ms.assetid: 6a19c32c-62f2-4b88-908c-c6b92419e410
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPartFont, IPartFont::GetFontProperties, GetFontProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPartFont::GetFontProperties method

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoSetIoPriorityHint
+UID: NF:wdm.IoSetIoPriorityHint
 title: IoSetIoPriorityHint function
 author: windows-driver-content
 description: The IoSetIoPriorityHint routine sets the priority hint value for an IRP.
@@ -7,7 +7,7 @@ old-location: kernel\iosetiopriorityhint.htm
 old-project: kernel
 ms.assetid: ecd4ed14-b9f2-45ff-a42b-5c67f1ccfd91
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoSetIoPriorityHint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ Specifies the IRP to set the priority hint value for.
 
 ### -param PriorityHint [in]
 
-Specifies the <a href="kernel.io_priority_hint">IO_PRIORITY_HINT</a> value that indicates the new priority hint.
+Specifies the <a href="..\wdm\ne-wdm-_io_priority_hint.md">IO_PRIORITY_HINT</a> value that indicates the new priority hint.
 
 
 ## -returns
@@ -144,15 +145,15 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.io_priority_hint">IO_PRIORITY_HINT</a>
+<a href="..\wdm\ne-wdm-_io_priority_hint.md">IO_PRIORITY_HINT</a>
 </dt>
 <dt>
-<a href="kernel.iogetiopriorityhint">IoGetIoPriorityHint</a>
+<a href="..\wdm\nf-wdm-iogetiopriorityhint.md">IoGetIoPriorityHint</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoSetIoPriorityHint routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoSetIoPriorityHint routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

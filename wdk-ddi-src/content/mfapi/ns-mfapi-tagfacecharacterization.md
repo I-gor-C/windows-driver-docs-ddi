@@ -1,5 +1,5 @@
 ---
-UID: NS.MFAPI.TAGFACECHARACTERIZATION
+UID: NS:mfapi.tagFaceCharacterization
 title: tagFaceCharacterization
 author: windows-driver-content
 description: The FaceCharacterization structure describes the blob format for the MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS attribute.
@@ -7,7 +7,7 @@ old-location: stream\facecharacterization.htm
 old-project: stream
 ms.assetid: 8A8F6E06-DA09-4595-BF42-8B905453CCCA
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: tagFaceCharacterization, FaceCharacterization
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FaceCharacterization
 ---
 
 # tagFaceCharacterization structure
@@ -81,7 +82,7 @@ The <b>MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS</b> attribute contains the b
 
 The facial expressions that can be detected are defined as follows:
 
-The <a href="stream.facecharacterizationblobheader">FaceCharacterizationBlobHeader</a> and <b>FaceCharacterization</b> structures only describe the blob format for the <b>MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS</b> attribute.  The metadata item structure for the face characterizations (<a href="stream.kscamera_metadata_itemheader">KSCAMERA_METADATA_ITEMHEADER</a> + face characterizations metadata payload) is up to driver and must be 8-byte aligned. 
+The <a href="..\mfapi\ns-mfapi-tagfacecharacterizationblobheader.md">FaceCharacterizationBlobHeader</a> and <b>FaceCharacterization</b> structures only describe the blob format for the <b>MF_CAPTURE_METADATA_FACEROICHARACTERIZATIONS</b> attribute.  The metadata item structure for the face characterizations (<a href="..\ksmedia\ns-ksmedia-tagkscamera_metadata_itemheader.md">KSCAMERA_METADATA_ITEMHEADER</a> + face characterizations metadata payload) is up to driver and must be 8-byte aligned. 
 
 
 ## -requirements

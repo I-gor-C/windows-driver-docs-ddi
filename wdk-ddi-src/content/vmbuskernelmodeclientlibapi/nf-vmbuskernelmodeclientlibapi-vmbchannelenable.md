@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbChannelEnable
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelEnable
 title: VmbChannelEnable function
 author: windows-driver-content
 description: The VmbChannelEnable function enables a channel that is in the disabled state by connecting to VMBus and offering or opening a channel, as appropriate for the endpoint type.
 old-location: netvista\vmbchannelenable.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: A0256B3F-C35C-45AB-A825-0A82189F08DC
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbChannelEnable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Vmbkmcl.lib
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

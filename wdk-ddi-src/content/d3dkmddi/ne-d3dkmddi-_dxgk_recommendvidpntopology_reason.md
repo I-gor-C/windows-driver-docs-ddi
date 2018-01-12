@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_RECOMMENDVIDPNTOPOLOGY_REASON
+UID: NE:d3dkmddi._DXGK_RECOMMENDVIDPNTOPOLOGY_REASON
 title: _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON
 author: windows-driver-content
 description: Indicates the reason for calling the display miniport driver's DxgkDdiRecommendVidPnTopology function.
@@ -7,7 +7,7 @@ old-location: display\dxgk_recommendvidpntopology_reason.htm
 old-project: display
 ms.assetid: 2a67a119-863b-4cde-9308-e4862823bad1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, DXGK_RECOMMENDVIDPNTOPOLOGY_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_RECOMMENDVIDPNTOPOLOGY_REASON
 ---
 
 # _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON enumeration
@@ -59,7 +60,7 @@ typedef enum _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON {
 
 ### -field DXGK_RVT_UNINITIALIZED
 
-Indicates that a variable of type <a href="display.dxgk_recommendvidpntopology_reason">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a> has not yet been assigned a meaningful value.
+Indicates that a variable of type <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_recommendvidpntopology_reason.md">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a> has not yet been assigned a meaningful value.
 
 
 ### -field DXGK_RVT_INITIALIZATION_NOLKG

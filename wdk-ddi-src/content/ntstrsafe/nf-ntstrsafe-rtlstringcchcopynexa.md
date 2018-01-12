@@ -1,5 +1,5 @@
 ---
-UID: NF.ntstrsafe.RtlStringCchCopyNExA
+UID: NF:ntstrsafe.RtlStringCchCopyNExA
 title: RtlStringCchCopyNExA function
 author: windows-driver-content
 description: The RtlStringCchCopyNExW and RtlStringCchCopyNExA functions copy a character-counted string to a buffer while limiting the size of the copied string.
@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcchcopynex.htm
 old-project: kernel
 ms.assetid: c53672b7-fbe7-45f7-b3ff-30cfeefa7d52
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlStringCchCopyNExA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntstrsafe.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE
 ---
 
 # RtlStringCchCopyNExA function
@@ -176,7 +177,7 @@ The functions copy a given number of characters from a source string. The size, 
 
 Note that these functions behave differently from <b>strncpy</b> in one respect. If <i>cchSrc</i> is larger than the number of characters in <i>pszSrc</i>, <b>RtlStringCchCopyNExW</b> and <b>RtlStringCchCopyNExA</b>—unlike <b>strncpy</b>—do not continue to pad <i>pszDest</i> with null characters until <i>cchSrc</i> characters have been copied.
 
-<b>RtlStringCchCopyNExW</b> and <b>RtlStringCchCopyNExA</b> add to the functionality of <a href="kernel.rtlstringcchcopyn">RtlStringCchCopyN</a> by returning a pointer to the end of the destination string, as well as the number of characters left unused in that string. Flags can be passed to the function for additional control.
+<b>RtlStringCchCopyNExW</b> and <b>RtlStringCchCopyNExA</b> add to the functionality of <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynw.md">RtlStringCchCopyN</a> by returning a pointer to the end of the destination string, as well as the number of characters left unused in that string. Flags can be passed to the function for additional control.
 
 Use <b>RtlStringCchCopyNExW</b> to handle Unicode strings and <b>RtlStringCchCopyNExA</b> to handle ANSI strings. The form you  use depends on your data, as shown in the following table.
 
@@ -269,15 +270,15 @@ Unicode and ANSI names
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlstringcchcopyn">RtlStringCchCopyN</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcopynw.md">RtlStringCchCopyN</a>
 </dt>
 <dt>
-<a href="kernel.rtlstringcbcopynex">RtlStringCbCopyNEx</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcopynexw.md">RtlStringCbCopyNEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCchCopyNExW function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlStringCchCopyNExW function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

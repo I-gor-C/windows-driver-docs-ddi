@@ -1,5 +1,5 @@
 ---
-UID: NF.winspool.ExtDeviceMode
+UID: NF:winspool.ExtDeviceMode
 title: ExtDeviceMode function
 author: windows-driver-content
 description: The ExtDeviceMode function is provided only for compatibility with 16-bit applications.
@@ -7,7 +7,7 @@ old-location: print\extdevicemode.htm
 old-project: print
 ms.assetid: dade9d25-7143-4566-adc1-0c97cb508c07
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: ExtDeviceMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Winspool.lib
 req.dll: WinSpool.drv
 req.irql: 
+req.typenames: BIDI_TYPE
 req.product: Windows 10 or later.
 ---
 

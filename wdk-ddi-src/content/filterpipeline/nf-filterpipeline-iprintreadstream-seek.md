@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPrintReadStream.Seek
+UID: NF:filterpipeline.IPrintReadStream.Seek
 title: IPrintReadStream::Seek method
 author: windows-driver-content
 description: The Seek method changes the seek pointer to a new location in the stream.
@@ -7,7 +7,7 @@ old-location: print\iprintreadstream_seek.htm
 old-project: print
 ms.assetid: b563e080-32ab-47b7-94f4-1d3dd19f3311
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintReadStream, IPrintReadStream::Seek, Seek
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintReadStream::Seek method

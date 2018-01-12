@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUKMDT._DXGK_PTE
+UID: NS:d3dukmdt._DXGK_PTE
 title: _DXGK_PTE
 author: windows-driver-content
 description: A page table entry (PTE) provides a physical address of a page and other attributes. The exact format of PTE depends on hardware implementation.
@@ -7,7 +7,7 @@ old-location: display\dxgk_pte.htm
 old-project: display
 ms.assetid: 2d5c1f3e-69a6-4f7f-9c99-bbaf94e6401b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # _DXGK_PTE structure
@@ -121,7 +122,7 @@ Supported starting with Windows 10.
 
 ### -field PageTablePageSize
 
-For the level 1 page table entry defines the pages size of the leaf page table PTEs. The value is provided by the  <a href="display.dxgk_pte_page_size">DXGK_PTE_PAGE_SIZE</a> enumerator. This value should be ignored  when dual-PTE is supported.
+For the level 1 page table entry defines the pages size of the leaf page table PTEs. The value is provided by the  <a href="..\d3dukmdt\ne-d3dukmdt-_dxgk_pte_page_size.md">DXGK_PTE_PAGE_SIZE</a> enumerator. This value should be ignored  when dual-PTE is supported.
 
 Supported starting with Windows 10.
 

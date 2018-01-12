@@ -1,13 +1,13 @@
 ---
-UID: NC.ndischimney.NDIS_TCP_OFFLOAD_EVENT_INDICATE
+UID: NC:ndischimney.NDIS_TCP_OFFLOAD_EVENT_INDICATE
 title: NDIS_TCP_OFFLOAD_EVENT_INDICATE
 author: windows-driver-content
 description: An offload target calls the NdisTcpOffloadEventHandler function to indicate an event that pertains to an offloaded TCP connection.
 old-location: netvista\ndistcpoffloadeventhandler.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b62e8a07-fe7b-4c52-8795-19e4bb889b6e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # NDIS_TCP_OFFLOAD_EVENT_INDICATE callback
@@ -64,7 +65,7 @@ VOID NdisTcpOffloadEventHandler(
 A handle that identifies the offloaded TCP connection on which the indication is being made. When
      the connection was offloaded, this handle was supplied in the 
      <b>NdisOffloadHandle</b> member of the 
-     <a href="netvista.ndis_miniport_offload_block_list">
+     <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that was associated with the connection state.
 
 
@@ -164,7 +165,7 @@ Call the
 
 Complete all outstanding send requests and disconnect requests on the connection with
       NDIS_STATUS_REQUEST_ABORTED. The offload target writes this status value to the 
-      <b>Status</b> member of each <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure in the linked list that it passes to the 
+      <b>Status</b> member of each <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure in the linked list that it passes to the 
       <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">
       NdisTcpOffloadSendComplete</a> function or to the 
       <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
@@ -256,7 +257,7 @@ CLOSE_WAIT--The local host might still be sending data.
 
 An offload target can request the termination of all TCP connections that have been offloaded to it.
     For more information, see 
-    <a href="netvista.ndismoffloadeventindicate">NdisMOffloadEventIndicate</a>.
+    <a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>.
 
 The send backlog size can be a function of the round-trip time (RTT) for the connection, the interface
     bandwidth, and other parameters. The specific variables and algorithm that the offload target uses to
@@ -316,7 +317,7 @@ DISPATCH_LEVEL
 <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndismoffloadeventindicate">NdisMOffloadEventIndicate</a>
+<a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_disconnect_complete.md">
@@ -333,7 +334,7 @@ DISPATCH_LEVEL
 <a href="..\ndischimney\nc-ndischimney-tcp_offload_event_handler.md">ProtocolTcpOffloadEvent</a>
 </dt>
 <dt>
-<a href="netvista.indicating_tcp_chimney_specific_events">Indicating TCP Chimney-Specific Events</a>
+<a href="https://msdn.microsoft.com/98b22b7f-8881-4029-9558-d5d94bb7878e">Indicating TCP Chimney-Specific Events</a>
 </dt>
 <dt>
 <a href="netvista.responding_to_the_reception_of_a_fin_or_rst_segment">Responding to
@@ -344,5 +345,5 @@ DISPATCH_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_TCP_OFFLOAD_EVENT_INDICATE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_EVENT_INDICATE callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

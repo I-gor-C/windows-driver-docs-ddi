@@ -1,5 +1,5 @@
 ---
-UID: NF.hidpddi.HidP_GetCollectionDescription
+UID: NF:hidpddi.HidP_GetCollectionDescription
 title: HidP_GetCollectionDescription function
 author: windows-driver-content
 description: Fills a device description block with collection description and the corresponding report ID information for the specified report descriptor.
@@ -7,7 +7,7 @@ old-location: hid\hidp_getcollectiondescription.htm
 old-project: hid
 ms.assetid: F8FD0C10-115D-4ACF-8C7F-127D342EA9CD
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidP_GetCollectionDescription
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hidparse.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: HID_XFER_PACKET, *PHID_XFER_PACKET
 ---
 
 # HidP_GetCollectionDescription function
@@ -71,13 +72,13 @@ The length of the report descriptor array.
 
 ### -param PoolType [in]
 
-A <a href="kernel.pool_type">POOL_TYPE</a>-value that indicates the pool type from which memory for the linked list is allocated. This includes each <a href="hid.hidp_collection_desc">HIDP_COLLECTION_DESC</a> array element of <a href="hid.hidp_device_desc">HIDP_DEVICE_DESC</a>, each <a href="hid._hidp_preparsed_data">HIDP_PREPARSED_DATA</a> in each <b>HIDP_COLLECTION_DESC</b>, each <a href="hid.hidp_report_ids">HIDP_REPORT_IDS</a> array element of <b>HIDP_DEVICE_DESC</b>.
+A <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>-value that indicates the pool type from which memory for the linked list is allocated. This includes each <a href="..\hidpddi\ns-hidpddi-_hidp_collection_desc.md">HIDP_COLLECTION_DESC</a> array element of <a href="..\hidpddi\ns-hidpddi-_hidp_device_desc.md">HIDP_DEVICE_DESC</a>, each <a href="hid._hidp_preparsed_data">HIDP_PREPARSED_DATA</a> in each <b>HIDP_COLLECTION_DESC</b>, each <a href="..\hidpddi\ns-hidpddi-_hidp_report_ids.md">HIDP_REPORT_IDS</a> array element of <b>HIDP_DEVICE_DESC</b>.
 
 
 ### -param DeviceDescription [out]
 
-A pointer to a <a href="hid.hidp_device_desc">HIDP_DEVICE_DESC</a> structure that is populated with device description block filled in
-                         collection descriptors as linked lists. This is a caller-allocated structure. However, its <a href="hid.hidp_collection_desc">HIDP_COLLECTION_DESC</a> array elements and <a href="hid.hidp_report_ids">HIDP_REPORT_IDS</a> array elements are allocated by this function.
+A pointer to a <a href="..\hidpddi\ns-hidpddi-_hidp_device_desc.md">HIDP_DEVICE_DESC</a> structure that is populated with device description block filled in
+                         collection descriptors as linked lists. This is a caller-allocated structure. However, its <a href="..\hidpddi\ns-hidpddi-_hidp_collection_desc.md">HIDP_COLLECTION_DESC</a> array elements and <a href="..\hidpddi\ns-hidpddi-_hidp_report_ids.md">HIDP_REPORT_IDS</a> array elements are allocated by this function.
 
 
 ## -returns
@@ -96,7 +97,7 @@ A pointer to a <a href="hid.hidp_device_desc">HIDP_DEVICE_DESC</a> structure tha
 <dt>STATUS_COULD_NOT_INTERPRET       </dt>
 </dl>An error was detected in the report 
                                       descriptor. See the error code in
-                                      <b>Dbg</b> field of the <a href="hid.hidp_device_desc">HIDP_DEVICE_DESC</a> structure.
+                                      <b>Dbg</b> field of the <a href="..\hidpddi\ns-hidpddi-_hidp_device_desc.md">HIDP_DEVICE_DESC</a> structure.
 <dl>
 <dt>STATUS_BUFFER_TOO_SMALL</dt>
 </dl>Found the end of the report descriptor

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:fltkernel
 ---
 
 # Fltkernel.h header
@@ -288,6 +288,7 @@ Fltkernel.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [_FLT_CALLBACK_DATA structure](ns-fltkernel-_flt_callback_data.md) | The FLT_CALLBACK_DATA structure represents an I/O operation. The Filter Manager and minifilters use this structure to initiate and process I/O operations. |
+| [_FLT_CALLBACK_DATA_QUEUE structure](ns-fltkernel-_flt_callback_data_queue.md) | FLT_CALLBACK_DATA_QUEUE is an opaque structure that is used to specify the callback routines for a minifilter's callback data queue. Do not set the members of this structure directly. Use FltCbdqInitialize to initialize this structure. |
 | [_FLT_CONTEXT_REGISTRATION structure](ns-fltkernel-_flt_context_registration.md) | The FLT_CONTEXT_REGISTRATION structure is used to register context types. |
 | [_FLT_CREATEFILE_TARGET_ECP_CONTEXT structure](ns-fltkernel-_flt_createfile_target_ecp_context.md) | The FLT_CREATEFILE_TARGET_ECP_CONTEXT structure is an extra create parameter (ECP) used to return reparse target information back to the caller of FltCreateFileEx2. |
 | [_FLT_FILE_NAME_INFORMATION structure](ns-fltkernel-_flt_file_name_information.md) | The FLT_FILE_NAME_INFORMATION structure contains file name information. |
@@ -299,7 +300,6 @@ Fltkernel.h contain these programming interfaces:
 | [_FLT_RELATED_CONTEXTS structure](ns-fltkernel-_flt_related_contexts.md) | The FLT_RELATED_CONTEXTS structure contains a minifilter driver's contexts for the objects associated with an I/O operation. |
 | [_FLT_RELATED_CONTEXTS_EX structure](ns-fltkernel-_flt_related_contexts_ex.md) | The FLT_RELATED_CONTEXTS_EX structure contains a minifilter driver's contexts for the objects associated with an I/O operation. |
 | [_FLT_RELATED_OBJECTS structure](ns-fltkernel-_flt_related_objects.md) | The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation. |
-| [_FLT_RELATED_OBJECTS structure](ns-fltkernel-_flt_related_objects~r1.md) | The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation. |
 | [_FLT_TAG_DATA_BUFFER structure](ns-fltkernel-_flt_tag_data_buffer.md) | The FLT_TAG_DATA_BUFFER structure contains information about a reparse point tag. |
 | [_FLT_VOLUME_PROPERTIES structure](ns-fltkernel-_flt_volume_properties.md) | The FLT_VOLUME_PROPERTIES structure is passed as a parameter to FltGetVolumeProperties. |
 

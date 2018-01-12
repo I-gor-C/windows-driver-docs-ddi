@@ -1,5 +1,5 @@
 ---
-UID: NS.VIDEO._VPOSVERSIONINFO
+UID: NS:video._VPOSVERSIONINFO
 title: _VPOSVERSIONINFO
 author: windows-driver-content
 description: The VPOSVERSIONINFO structure contains version information about the currently running operating system.
@@ -7,8 +7,8 @@ old-location: display\vposversioninfo.htm
 old-project: display
 ms.assetid: b6335df5-81d9-4a00-8e97-0ebebb987d32
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VPOSVERSIONINFO, VPOSVERSIONINFO, *PVPOSVERSIONINFO, PVPOSVERSIONINFO
+ms.date: 12/29/2017
+ms.keywords: _VPOSVERSIONINFO, VPOSVERSIONINFO, *PVPOSVERSIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
+req.typenames: VPOSVERSIONINFO, *PVPOSVERSIONINFO
 req.product: Windows 10 or later.
 ---
 
@@ -92,7 +93,7 @@ Specifies the minor version number of the latest Service Pack installed on the o
 ## -remarks
 This structure is available in Windows XP and later.
 
-To obtain version information about the currently running operating system, a video miniport driver would call the <a href="display.videoportgetversion">VideoPortGetVersion</a> function, which fills in this structure.
+To obtain version information about the currently running operating system, a video miniport driver would call the <a href="..\video\nf-video-videoportgetversion.md">VideoPortGetVersion</a> function, which fills in this structure.
 
 
 ## -requirements
@@ -113,12 +114,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.videoportgetversion">VideoPortGetVersion</a>
+<a href="..\video\nf-video-videoportgetversion.md">VideoPortGetVersion</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VPOSVERSIONINFO structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VPOSVERSIONINFO structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

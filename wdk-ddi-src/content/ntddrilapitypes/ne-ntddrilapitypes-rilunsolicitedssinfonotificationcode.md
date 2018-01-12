@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILUNSOLICITEDSSINFONOTIFICATIONCODE
+UID: NE:ntddrilapitypes.RILUNSOLICITEDSSINFONOTIFICATIONCODE
 title: RILUNSOLICITEDSSINFONOTIFICATIONCODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilunsolicitedssinfonotificationcode.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 03dd4659-29fc-4426-8d30-2bbc0b71f899
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILUNSOLICITEDSSINFONOTIFICATIONCODE, RILUNSOLICITEDSSINFONOTIFICATIONCODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUNSOLICITEDSSINFONOTIFICATIONCODE
 ---
 
 # RILUNSOLICITEDSSINFONOTIFICATIONCODE enumeration

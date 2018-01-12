@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_SEGMENTDESCRIPTOR
+UID: NS:d3dkmddi._DXGK_SEGMENTDESCRIPTOR
 title: _DXGK_SEGMENTDESCRIPTOR
 author: windows-driver-content
 description: The DXGK_SEGMENTDESCRIPTOR structure contains information about a segment that the driver supports.
@@ -7,7 +7,7 @@ old-location: display\dxgk_segmentdescriptor.htm
 old-project: display
 ms.assetid: d9d79c58-6ef6-4917-b499-fd5a70dc8829
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_SEGMENTDESCRIPTOR, DXGK_SEGMENTDESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_SEGMENTDESCRIPTOR
 ---
 
 # _DXGK_SEGMENTDESCRIPTOR structure
@@ -70,7 +71,7 @@ The video memory manager ignores the base address of AGP-type aperture segments 
 
 [out] The base address of the segment, relative to the bus that the GPU is connected on. For example, when the GPU is connected on the PCI bus, <b>CpuTranslatedAddress </b>is the base address of the usable range that is specified by a PCI base-address register (BAR). The driver specifies this address only if it specifies a CPU-accessible segment by setting the <b>CpuVisible</b> bit-field flag in the <b>Flags</b> member. 
 
-This member is ignored for aperture segments, including the AGP-type aperture segment.  The only exception occurs when the  user-mode display driver has not set up an alternate virtual address for a primary allocation (that is, when the driver has not set <b>UseAlternateVA</b> in the <b>Flags</b> member of the <a href="display.d3dddicb_lockflags">D3DDDICB_LOCKFLAGS</a> structure during a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> function).
+This member is ignored for aperture segments, including the AGP-type aperture segment.  The only exception occurs when the  user-mode display driver has not set up an alternate virtual address for a primary allocation (that is, when the driver has not set <b>UseAlternateVA</b> in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lockflags.md">D3DDDICB_LOCKFLAGS</a> structure during a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a> function).
 
 Before the video memory manager maps a virtual address to the physical range, the video memory manager translates this physical address based on the CPU view of the bus and informs the driver about the operation so the driver can set up an aperture to access the content of the segment at the given location. 
 
@@ -117,7 +118,7 @@ The driver specifies this array only if it also sets the <b>UseBanking</b> bit-f
 
 ### -field Flags
 
-[out] A <a href="display.dxgk_segmentflags">DXGK_SEGMENTFLAGS</a> structure that identifies properties, in bit-field flags, for the segment.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentflags.md">DXGK_SEGMENTFLAGS</a> structure that identifies properties, in bit-field flags, for the segment.
 
 Note that for an AGP-type aperture segment, the driver must exclusively set the <b>Agp</b> member of the structure in the union that DXGK_SEGMENTFLAGS contains. Although the AGP-type aperture segment is an aperture and is accessible to the CPU, if any other members are set, the adapter fails to initialize. 
 
@@ -153,22 +154,22 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddicb_lockflags">D3DDDICB_LOCKFLAGS</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lockflags.md">D3DDDICB_LOCKFLAGS</a>
 </dt>
 <dt>
-<a href="display.dxgk_allocationinfo">DXGK_ALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 </dt>
 <dt>
-<a href="display.dxgk_querysegmentin">DXGK_QUERYSEGMENTIN</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentin.md">DXGK_QUERYSEGMENTIN</a>
 </dt>
 <dt>
-<a href="display.dxgk_querysegmentout">DXGK_QUERYSEGMENTOUT</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_querysegmentout.md">DXGK_QUERYSEGMENTOUT</a>
 </dt>
 <dt>
-<a href="display.dxgk_segmentflags">DXGK_SEGMENTFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_segmentflags.md">DXGK_SEGMENTFLAGS</a>
 </dt>
 <dt>
-<a href="display.dxgkarg_queryadapterinfo">DXGKARG_QUERYADAPTERINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryadapterinfo.md">DXGKARG_QUERYADAPTERINFO</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
@@ -181,5 +182,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_SEGMENTDESCRIPTOR structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_SEGMENTDESCRIPTOR structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

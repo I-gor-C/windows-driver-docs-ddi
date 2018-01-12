@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ntstrsafe
 ---
 
 # Ntstrsafe.h header

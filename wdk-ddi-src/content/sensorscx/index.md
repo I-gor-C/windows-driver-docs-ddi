@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:sensorscx
 ---
 
 # Sensorscx.h header
@@ -25,15 +25,6 @@ Sensorscx.h contain these programming interfaces:
 | [SensorsCxSensorDataReady function](nf-sensorscx-sensorscxsensordataready.md) | This function notifies the class extension that the driver has retrieved data. |
 | [SensorsCxSensorInitialize function](nf-sensorscx-sensorscxsensorinitialize.md) | This function sets the enumeration properties of a sensor. |
 | [SensorsCxStateChange function](nf-sensorscx-sensorscxstatechange.md) | Used to initialize a state change. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_SENSOR_DRIVER_DISABLE_WAKE callback](nc-sensorscx-evt_sensor_driver_disable_wake.md) | Callback to disable wake for the sensor. |
-| [EVT_SENSOR_DRIVER_ENABLE_WAKE callback](nc-sensorscx-evt_sensor_driver_enable_wake.md) | Callback to enable wake for the sensor. |
-| [EVT_SENSOR_DRIVER_START_STATE_CHANGE_NOTIFICATION callback](nc-sensorscx-evt_sensor_driver_start_state_change_notification.md) | Used to start a state change notification. |
-| [EVT_SENSOR_DRIVER_STOP_STATE_CHANGE_NOTIFICATION callback](nc-sensorscx-evt_sensor_driver_stop_state_change_notification.md) | Used to stop a state change notification. |
 
 ## Structures
 

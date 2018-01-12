@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSPROPERTY_VIDEODECODER_S
+UID: NS:ksmedia.KSPROPERTY_VIDEODECODER_S
 title: KSPROPERTY_VIDEODECODER_S
 author: windows-driver-content
 description: The KSPROPERTY_VIDEODECODER_S structure describes property settings in the PROPSETID_VIDCAP_VIDEODECODER property set.
@@ -7,8 +7,8 @@ old-location: stream\ksproperty_videodecoder_s.htm
 old-project: stream
 ms.assetid: 9444835d-0290-49e7-8f49-a1506ce282cd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSPROPERTY_VIDEODECODER_S, KSPROPERTY_VIDEODECODER_S, *PKSPROPERTY_VIDEODECODER_S, PKSPROPERTY_VIDEODECODER_S
+ms.date: 1/9/2018
+ms.keywords: KSPROPERTY_VIDEODECODER_S, KSPROPERTY_VIDEODECODER_S, *PKSPROPERTY_VIDEODECODER_S
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_VIDEODECODER_S, *PKSPROPERTY_VIDEODECODER_S
 ---
 
 # KSPROPERTY_VIDEODECODER_S structure
@@ -56,7 +57,7 @@ typedef struct {
 
 ### -field Property
 
-Specifies an initialized <a href="stream.ksproperty">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 
 ### -field Value
@@ -86,7 +87,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksproperty">KSPROPERTY</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566058">KSPROPERTY_VIDEODECODER_STANDARD</a>
@@ -102,5 +103,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_VIDEODECODER_S structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROPERTY_VIDEODECODER_S structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

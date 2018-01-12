@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfrequest.WdfRequestSetActivityId
+UID: NF:wdfrequest.WdfRequestSetActivityId
 title: WdfRequestSetActivityId function
 author: windows-driver-content
 description: The WdfRequestSetActivityId method associates an activity identifier with an I/O request.
@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestsetactivityid.htm
 old-project: wdf
 ms.assetid: 05FE0F91-781F-4B8B-87D1-E06BC315856C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfRequestSetActivityId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: WUDFx02000.lib
 req.dll: WUDFx02000.dll; TBD
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -74,11 +75,11 @@ This method does not return a value.
 ## -remarks
 Calling <b>WdfRequestSetActivityId</b> does not set an association with any previously present activity identifier. When the driver calls <b>WdfRequestSetActivityId</b>, any existing activity identifier is overwritten.
 
-To set an association, retrieve the existing identifier by calling <a href="wdf.wdfrequestretrieveactivityid">WdfRequestRetrieveActivityId</a> and then associate the existing identifier with the new one by calling <a href="etw.eventwritetransfer_func">EventWriteTransfer</a>.
+To set an association, retrieve the existing identifier by calling <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveactivityid.md">WdfRequestRetrieveActivityId</a> and then associate the existing identifier with the new one by calling <a href="https://msdn.microsoft.com/798cf3ba-e1cc-4eaf-a1d2-2313a64aab1a">EventWriteTransfer</a>.
 
-The framework does not clear a request's activity identifier when the driver calls <a href="wdf.wdfrequestreuse">WdfRequestReuse</a>.
+The framework does not clear a request's activity identifier when the driver calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestreuse.md">WdfRequestReuse</a>.
 
-For more information about activity identifiers, see <a href="wdf.using_activity_identifiers">Using Activity Identifiers</a>.
+For more information about activity identifiers, see <a href="https://msdn.microsoft.com/2B70953F-5192-4654-9506-6A84373D20B4">Using Activity Identifiers</a>.
 
 
 ## -requirements
@@ -163,12 +164,12 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfrequestretrieveactivityid">WdfRequestRetrieveActivityId</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveactivityid.md">WdfRequestRetrieveActivityId</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestSetActivityId method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestSetActivityId method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

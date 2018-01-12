@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlUIntPtrToUInt
+UID: NF:ntintsafe.RtlUIntPtrToUInt
 title: RtlUIntPtrToUInt function
 author: windows-driver-content
 description: Converts a value of type UINT_PTR to a value of type UINT.
@@ -7,7 +7,7 @@ old-location: kernel\rtluintptrtouint.htm
 old-project: kernel
 ms.assetid: DA00BB09-7559-439A-935C-55A1304C6BBC
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlUIntPtrToUInt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlUIntPtrToUInt function

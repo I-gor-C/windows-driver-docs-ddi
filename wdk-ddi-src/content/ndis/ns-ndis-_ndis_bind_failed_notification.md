@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_BIND_FAILED_NOTIFICATION
+UID: NS:ndis._NDIS_BIND_FAILED_NOTIFICATION
 title: _NDIS_BIND_FAILED_NOTIFICATION
 author: windows-driver-content
 description: The NDIS_BIND_FAILED_NOTIFICATION structure describes a binding event failure.
 old-location: netvista\ndis_bind_failed_notification.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5420839B-EB81-43CC-B7BD-9D1FA2560A3D
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_BIND_FAILED_NOTIFICATION, NDIS_BIND_FAILED_NOTIFICATION, *PNDIS_BIND_FAILED_NOTIFICATION, PNDIS_BIND_FAILED_NOTIFICATION
+ms.date: 1/8/2018
+ms.keywords: _NDIS_BIND_FAILED_NOTIFICATION, *PNDIS_BIND_FAILED_NOTIFICATION, NDIS_BIND_FAILED_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNDIS_BIND_FAILED_NOTIFICATION, NDIS_BIND_FAILED_NOTIFICATION
 ---
 
 # _NDIS_BIND_FAILED_NOTIFICATION structure
@@ -57,7 +58,7 @@ typedef struct _NDIS_BIND_FAILED_NOTIFICATION {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_BIND_FAILED_NOTIFICATION</b> structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>, the 

@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamindr_lh.IWiaMiniDrv.drvGetDeviceErrorStr
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvGetDeviceErrorStr
 title: IWiaMiniDrv::drvGetDeviceErrorStr method
 author: windows-driver-content
 description: The IWiaMiniDrv::drvGetDeviceErrorStr method maps an error code to a Unicode string that describes the error.
 old-location: image\iwiaminidrv_drvgetdeviceerrorstr.htm
-old-project: Image
+old-project: image
 ms.assetid: c34a6834-8875-400c-9634-6c2b9b68164f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaMiniDrv, IWiaMiniDrv::drvGetDeviceErrorStr, drvGetDeviceErrorStr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSCANWINDOW, SCANWINDOW
 req.product: Windows 10 or later.
 ---
 

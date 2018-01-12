@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_RENDERKM_OPERATION
+UID: NE:d3dkmddi._DXGK_RENDERKM_OPERATION
 title: _DXGK_RENDERKM_OPERATION
 author: windows-driver-content
 description: The DXGK_RENDERKM_OPERATION enumeration indicates the type of GDI hardware-accelerated rendering operation to perform when the DxgkDdiRenderKm function is called.
@@ -7,7 +7,7 @@ old-location: display\dxgk_renderkm_operation.htm
 old-project: display
 ms.assetid: bde22894-97a1-42a8-97c1-ba9738c087b9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_RENDERKM_OPERATION, DXGK_RENDERKM_OPERATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_RENDERKM_OPERATION
 ---
 
 # _DXGK_RENDERKM_OPERATION enumeration
@@ -81,7 +82,7 @@ Indicates a stretch blt.
 
 ### -field DXGK_GDIOP_ESCAPE
 
-Reserved for future use. The driver should skip this command when setting the value of the <b>CommandSize</b> member of the <a href="display.dxgk_renderkm_command">DXGK_RENDERKM_COMMAND</a> structure.
+Reserved for future use. The driver should skip this command when setting the value of the <b>CommandSize</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_renderkm_command.md">DXGK_RENDERKM_COMMAND</a> structure.
 
 
 ### -field DXGK_GDIOP_TRANSPARENTBLT
@@ -125,7 +126,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgk_renderkm_command">DXGK_RENDERKM_COMMAND</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_renderkm_command.md">DXGK_RENDERKM_COMMAND</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_renderkm.md">DxgkDdiRenderKm</a>
@@ -135,5 +136,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_RENDERKM_OPERATION enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_RENDERKM_OPERATION enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

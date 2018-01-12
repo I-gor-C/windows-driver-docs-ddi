@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsLoadResource
+UID: NF:ks.KsLoadResource
 title: KsLoadResource function
 author: windows-driver-content
 description: Copies (loads) a resource from the given image.
@@ -7,7 +7,7 @@ old-location: stream\ksloadresource.htm
 old-project: stream
 ms.assetid: a7b9dcca-ce89-4fde-9e58-3c4a675227bc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsLoadResource
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsLoadResource function

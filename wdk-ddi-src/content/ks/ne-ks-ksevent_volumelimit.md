@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSEVENT_VOLUMELIMIT
+UID: NE:ks.KSEVENT_VOLUMELIMIT
 title: KSEVENT_VOLUMELIMIT
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksevent_volumelimit.htm
 old-project: stream
 ms.assetid: B03477A0-B7ED-491F-9D6F-B32A0E719475
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSEVENT_VOLUMELIMIT, KSEVENT_VOLUMELIMIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSEVENT_VOLUMELIMIT
 ---
 
 # KSEVENT_VOLUMELIMIT enumeration

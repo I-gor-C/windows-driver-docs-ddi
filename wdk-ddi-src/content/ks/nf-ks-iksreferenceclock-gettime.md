@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.IKsReferenceClock.GetTime
+UID: NF:ks.IKsReferenceClock.GetTime
 title: IKsReferenceClock::GetTime method
 author: windows-driver-content
 description: The IKsReferenceClock::GetTime method queries the associated reference clock for the current time.
@@ -7,7 +7,7 @@ old-location: stream\iksreferenceclock_gettime.htm
 old-project: stream
 ms.assetid: 3e5ff621-47ec-4ab7-bf8e-26bff57588f8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IKsReferenceClock, IKsReferenceClock::GetTime, GetTime
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IKsReferenceClock::GetTime method
@@ -61,7 +62,7 @@ The <b>IKsReferenceClock::GetTime</b> method returns the current stream time for
 
 
 ## -remarks
-Do not call this method when obtaining a time stamp for the <b>PresentationTime</b> member of <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>. Instead, call <a href="stream.iksreferenceclock_getcorrelatedtime">IKsReferenceClock::GetCorrelatedTime</a> in this situation.
+Do not call this method when obtaining a time stamp for the <b>PresentationTime</b> member of <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>. Instead, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff560728">IKsReferenceClock::GetCorrelatedTime</a> in this situation.
 
 For more information, see <a href="https://msdn.microsoft.com/fc1d5bca-72e3-48e2-b46f-09a13bba83b4">AVStream Clocks</a>.
 
@@ -97,12 +98,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kspingetreferenceclockinterface">KsPinGetReferenceClockInterface</a>
+<a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsReferenceClock::GetTime method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsReferenceClock::GetTime method%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

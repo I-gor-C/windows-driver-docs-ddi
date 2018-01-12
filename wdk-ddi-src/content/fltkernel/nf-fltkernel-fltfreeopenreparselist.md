@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltFreeOpenReparseList
+UID: NF:fltkernel.FltFreeOpenReparseList
 title: FltFreeOpenReparseList function
 author: windows-driver-content
 description: This routine deallocates any information copied into a create operation by a previous call to FltCopyOpenReparseList.
@@ -7,7 +7,7 @@ old-location: ifsk\fltfreeopenreparselist.htm
 old-project: ifsk
 ms.assetid: 78FA1585-F834-48E4-BB15-78BA5563F9D0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltFreeOpenReparseList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _IRQL_requires_max_(APC_LEVEL)
+req.typenames: EXpsFontRestriction
 ---
 
 # FltFreeOpenReparseList function
@@ -39,7 +40,7 @@ req.irql: _IRQL_requires_max_(APC_LEVEL)
 
 ## -description
 This routine deallocates any information copied into a create operation by
-    a previous call to <a href="ifsk.fltcopyopenreparselist">FltCopyOpenReparseList</a>.  
+    a previous call to <a href="..\fltkernel\nf-fltkernel-fltcopyopenreparselist.md">FltCopyOpenReparseList</a>.  
 
 
 

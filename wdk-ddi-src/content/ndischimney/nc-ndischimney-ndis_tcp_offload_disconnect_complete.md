@@ -1,13 +1,13 @@
 ---
-UID: NC.ndischimney.NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE
+UID: NC:ndischimney.NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE
 title: NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE
 author: windows-driver-content
 description: An offload target calls the NdisTcpOffloadDisconnectComplete function to complete a disconnect request that was initiated by a previous call to the MiniportTcpOffloadDisconnect function of the offload target.
 old-location: netvista\ndistcpoffloaddisconnectcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e862d9fe-a60c-4397-95ce-62aa1ef17eae
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE callback
@@ -63,14 +64,14 @@ VOID NdisTcpOffloadDisconnectComplete(
 ### -param NdisMiniportHandle [in]
 
 The handle that the offload target obtained in a previous call to the 
-     <a href="netvista.ndismregisterminiportdriver">
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a> function.
 
 
 ### -param NetBufferList [in]
 
 A pointer to a single 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure. The offload
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. The offload
      target obtained this pointer as an input parameter to its 
      <a href="..\ndischimney\nc-ndischimney-w_tcp_offload_disconnect_handler.md">
      MiniportTcpOffloadDisconnect</a> function.
@@ -97,7 +98,7 @@ Write a status value to the
       <b>Status</b> member of the NET_BUFFER_LIST structure pointed to by the 
       <i>NetBufferList</i> pointer. A status value of NDIS_STATUS_SUCCESS indicates that the offload target
       successfully sent the RST segment. For a description of the allowable status values, see 
-      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>.
+      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>.
 
 <b>Completing a Graceful Disconnect
     </b>
@@ -116,7 +117,7 @@ Specify the number of user data bytes that were sent and successfully acknowledg
       <b>TcpOffloadBytesTransferred</b>.
 
 Call the 
-      <a href="netvista.ndisadvancenetbufferdatastart">
+      <a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
       NdisAdvanceNetBufferDataStart</a> function. The 
       <i>NetBufferList</i> parameter should point to the NET_BUFFER structure associated with the
       NET_BUFFER_LIST structure that the offload target passes to the 
@@ -170,20 +171,20 @@ Header
    MiniportTcpOffloadDisconnect</a>
 </dt>
 <dt>
-<a href="netvista.ndisadvancenetbufferdatastart">
+<a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
    NdisAdvanceNetBufferDataStart</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
@@ -193,5 +194,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_OFFLOAD_DISCONNECT_COMPLETE callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KdChangeOption
+UID: NF:wdm.KdChangeOption
 title: KdChangeOption function
 author: windows-driver-content
 description: The KdChangeOption routine accesses and changes state in the kernel that is related to kernel debugging.
@@ -7,7 +7,7 @@ old-location: devtest\kdchangeoption.htm
 old-project: devtest
 ms.assetid: 6f93b62b-6dc2-417b-9e1c-44be628c489c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: KdChangeOption
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

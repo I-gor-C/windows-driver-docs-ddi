@@ -1,5 +1,5 @@
 ---
-UID: NF.ksproxy.IKsClockPropertySet.KsGetState
+UID: NF:ksproxy.IKsClockPropertySet.KsGetState
 title: IKsClockPropertySet::KsGetState method
 author: windows-driver-content
 description: The KsGetState method retrieves the streaming state of a pin from the underlying clock.
@@ -7,7 +7,7 @@ old-location: stream\iksclockpropertyset_ksgetstate.htm
 old-project: stream
 ms.assetid: 153e4f47-ae07-4f1e-9ab5-69ef6565ad5d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IKsClockPropertySet, IKsClockPropertySet::KsGetState, KsGetState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PIPE_STATE
 ---
 
 # IKsClockPropertySet::KsGetState method
@@ -55,7 +56,7 @@ HRESULT KsGetState(
 
 ### -param State [out]
 
-Pointer to a variable that receives a value that specifies the streaming state of a pin. This value can be one of the following values from the <a href="stream.ksstate">KSSTATE</a> enumerated type:
+Pointer to a variable that receives a value that specifies the streaming state of a pin. This value can be one of the following values from the <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a> enumerated type:
 
 <table>
 <tr>

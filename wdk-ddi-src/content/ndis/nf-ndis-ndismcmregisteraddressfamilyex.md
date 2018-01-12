@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMCmRegisterAddressFamilyEx
+UID: NF:ndis.NdisMCmRegisterAddressFamilyEx
 title: NdisMCmRegisterAddressFamilyEx function
 author: windows-driver-content
 description: The NdisMCmRegisterAddressFamilyEx function registers an address family (AF) for communication between a miniport call manager (MCM) and CoNDIS clients.
 old-location: netvista\ndismcmregisteraddressfamilyex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f58a9c08-d2cf-48d1-98d1-68aecd3b7bd0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMCmRegisterAddressFamilyEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMCmRegisterAddressFamilyEx function
@@ -105,11 +106,11 @@ The caller tried to register a duplicate AF for a given miniport adapter.
 
 ## -remarks
 NDIS MCMs, which register as NDIS miniport drivers by calling the 
-    <a href="netvista.ndismregisterminiportdriver">
+    <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
     NdisMRegisterMiniportDriver</a> function, should call the 
     <b>NdisMCmRegisterAddressFamilyEx</b> function to register an AF. Stand-alone call managers should instead
     call the 
-    <a href="netvista.ndiscmregisteraddressfamilyex">
+    <a href="..\ndis\nf-ndis-ndiscmregisteraddressfamilyex.md">
     NdisCmRegisterAddressFamilyEx</a> function.
 
 To register an AF for a miniport adapter, the MCM should call 
@@ -204,7 +205,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -218,11 +219,11 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmregisteraddressfamilyex">
+<a href="..\ndis\nf-ndis-ndiscmregisteraddressfamilyex.md">
    NdisCmRegisterAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
@@ -251,5 +252,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMCmRegisterAddressFamilyEx function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmRegisterAddressFamilyEx function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.gnssdriver.GNSS_SUPL_CERT_ACTION
+UID: NE:gnssdriver.GNSS_SUPL_CERT_ACTION
 title: GNSS_SUPL_CERT_ACTION
 author: windows-driver-content
 description: This enumeration indicates the action to take upon receipt of the SUPL certificate, which is defined by the GNSS_SUPL_CERT_CONFIG structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # GNSS_SUPL_CERT_ACTION enumeration

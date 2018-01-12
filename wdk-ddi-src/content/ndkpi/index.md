@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:ndkpi
 ---
 
 # Ndkpi.h header
 
 ## -description
 
-This header is used by NetVista. For more information, see
-- [NetVista](../_NetVista/index.md)
+This header is used by Networking drivers for Windows Vista and later. For more information, see
+- [Networking drivers for Windows Vista and later](../_netvista/index.md)
 
 Ndkpi.h contain these programming interfaces:
 
@@ -80,41 +80,31 @@ Ndkpi.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [_NDK_ADAPTER structure](ns-ndkpi-_ndk_adapter.md) | The NDK_ADAPTER structure specifies the attributes of an NDK adapter object. |
-| [_NDK_ADAPTER structure](ns-ndkpi-_ndk_adapter~r1.md) | The NDK_ADAPTER structure specifies the attributes of an NDK adapter object. |
 | [_NDK_ADAPTER_DISPATCH structure](ns-ndkpi-_ndk_adapter_dispatch.md) | The NDK_ADAPTER_DISPATCH structure specifies dispatch function entry points for the NDK adapter object. |
 | [_NDK_CONNECTOR structure](ns-ndkpi-_ndk_connector.md) | The NDK_CONNECTOR structure specifies the attributes of an NDK connector object. |
-| [_NDK_CONNECTOR structure](ns-ndkpi-_ndk_connector~r1.md) | The NDK_CONNECTOR structure specifies the attributes of an NDK connector object. |
 | [_NDK_CONNECTOR_DISPATCH structure](ns-ndkpi-_ndk_connector_dispatch.md) | The NDK_CONNECTOR_DISPATCH structure specifies dispatch function entry points for the NDK connector object. |
 | [_NDK_CQ structure](ns-ndkpi-_ndk_cq.md) | The NDK_CQ structure specifies the attributes of an NDK completion queue (CQ) object. |
-| [_NDK_CQ structure](ns-ndkpi-_ndk_cq~r1.md) | The NDK_CQ structure specifies the attributes of an NDK completion queue (CQ) object. |
 | [_NDK_CQ_DISPATCH structure](ns-ndkpi-_ndk_cq_dispatch.md) | The NDK_CQ_DISPATCH structure specifies dispatch function entry points for the NDK completion queue (CQ) object. |
 | [_NDK_EXTENSION_INTERFACE structure](ns-ndkpi-_ndk_extension_interface.md) | The NDK_EXTENSION_INTERFACE structure specifies dispatch function entry points for an NDK extension interface. |
 | [_NDK_LISTENER structure](ns-ndkpi-_ndk_listener.md) | The NDK_LISTENER structure specifies the attributes of an NDK listener object. |
-| [_NDK_LISTENER structure](ns-ndkpi-_ndk_listener~r1.md) | The NDK_LISTENER structure specifies the attributes of an NDK listener object. |
 | [_NDK_LISTENER_DISPATCH structure](ns-ndkpi-_ndk_listener_dispatch.md) | The NDK_LISTENER_DISPATCH structure specifies dispatch function entry points for the NDK listener object. |
 | [_NDK_LOGICAL_ADDRESS_MAPPING structure](ns-ndkpi-_ndk_logical_address_mapping.md) | The NDK_LOGICAL_ADDRESS_MAPPING structure contains an array of adapter logical addresses. |
 | [_NDK_MR structure](ns-ndkpi-_ndk_mr.md) | The NDK_MR structure specifies the attributes of an NDK memory region (MR) object. |
-| [_NDK_MR structure](ns-ndkpi-_ndk_mr~r1.md) | The NDK_MR structure specifies the attributes of an NDK memory region (MR) object. |
 | [_NDK_MR_DISPATCH structure](ns-ndkpi-_ndk_mr_dispatch.md) | The NDK_MR_DISPATCH structure specifies dispatch function entry points for the NDK memory region (MR) object. |
 | [_NDK_MW structure](ns-ndkpi-_ndk_mw.md) | The NDK_MW structure specifies the attributes of an NDK memory window (MW) object. |
-| [_NDK_MW structure](ns-ndkpi-_ndk_mw~r1.md) | The NDK_MW structure specifies the attributes of an NDK memory window (MW) object. |
 | [_NDK_MW_DISPATCH structure](ns-ndkpi-_ndk_mw_dispatch.md) | The NDK_MW_DISPATCH structure specifies dispatch function entry points for the NDK memory window (MW) object. |
 | [_NDK_OBJECT_HEADER structure](ns-ndkpi-_ndk_object_header.md) | The NDK_OBJECT_HEADER structure specifies the object version, type, and other information. It is used in the Header member of every NDK object. |
 | [_NDK_OBJECT_HEADER_RESERVED_BLOCK structure](ns-ndkpi-_ndk_object_header_reserved_block.md) | The NDK_OBJECT_HEADER_RESERVED_BLOCK structure specifies reserved information in an NDK object. |
 | [_NDK_PD structure](ns-ndkpi-_ndk_pd.md) | The NDK_PD structure specifies the attributes of an NDK protection domain (PD) object. |
-| [_NDK_PD structure](ns-ndkpi-_ndk_pd~r1.md) | The NDK_PD structure specifies the attributes of an NDK protection domain (PD) object. |
 | [_NDK_PD_DISPATCH structure](ns-ndkpi-_ndk_pd_dispatch.md) | The NDK_PD_DISPATCH structure specifies dispatch function entry points for the NDK protection domain (PD) object. |
 | [_NDK_QP structure](ns-ndkpi-_ndk_qp.md) | The NDK_QP structure specifies the attributes of an NDK queue pair (QP) object. |
-| [_NDK_QP structure](ns-ndkpi-_ndk_qp~r1.md) | The NDK_QP structure specifies the attributes of an NDK queue pair (QP) object. |
 | [_NDK_QP_DISPATCH structure](ns-ndkpi-_ndk_qp_dispatch.md) | The NDK_QP_DISPATCH structure specifies dispatch function entry points for the NDK queue pair (QP) object. |
 | [_NDK_RESULT structure](ns-ndkpi-_ndk_result.md) | The NDK_RESULT structure returns the results for an NDK request operation. |
 | [_NDK_RESULT_EX structure](ns-ndkpi-_ndk_result_ex.md) | The NDK_RESULT_EX structure returns the results for an NDK request operation. It is identical to the NDK_RESULT structure, except that it has additional Type and TypeSpecificCompletionOutput members. |
 | [_NDK_SGE structure](ns-ndkpi-_ndk_sge.md) | The NDK_SGE structure specifies the local buffers for NDK work requests. |
 | [_NDK_SHARED_ENDPOINT structure](ns-ndkpi-_ndk_shared_endpoint.md) | The NDK_SHARED_ENDPOINT structure specifies the attributes of an NDK shared endpoint object. |
-| [_NDK_SHARED_ENDPOINT structure](ns-ndkpi-_ndk_shared_endpoint~r1.md) | The NDK_SHARED_ENDPOINT structure specifies the attributes of an NDK shared endpoint object. |
 | [_NDK_SHARED_ENDPOINT_DISPATCH structure](ns-ndkpi-_ndk_shared_endpoint_dispatch.md) | The NDK_SHARED_ENDPOINT_DISPATCH structure specifies dispatch function entry points for the NDK shared endpoint object. |
 | [_NDK_SRQ structure](ns-ndkpi-_ndk_srq.md) | The NDK_SRQ structure specifies the attributes of an NDK shared receive queue (SRQ) object. |
-| [_NDK_SRQ structure](ns-ndkpi-_ndk_srq~r1.md) | The NDK_SRQ structure specifies the attributes of an NDK shared receive queue (SRQ) object. |
 | [_NDK_SRQ_DISPATCH structure](ns-ndkpi-_ndk_srq_dispatch.md) | The NDK_SRQ_DISPATCH structure specifies dispatch function entry points for the NDK shared receive queue (SRQ) object. |
 
 ## Enumerations

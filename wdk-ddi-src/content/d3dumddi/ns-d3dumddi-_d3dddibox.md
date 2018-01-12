@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDIBOX
+UID: NS:d3dumddi._D3DDDIBOX
 title: _D3DDDIBOX
 author: windows-driver-content
 description: Describes the bounds of a volume texture.
@@ -7,7 +7,7 @@ old-location: display\d3dddibox.htm
 old-project: display
 ms.assetid: 3CE49C9F-EFFC-4F43-A939-623B28FD5EFB
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDIBOX, D3DDDIBOX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDIBOX
 ---
 
 # _D3DDDIBOX structure

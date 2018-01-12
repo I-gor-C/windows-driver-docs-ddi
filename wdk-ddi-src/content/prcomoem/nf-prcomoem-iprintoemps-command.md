@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemPS.Command
+UID: NF:prcomoem.IPrintOemPS.Command
 title: IPrintOemPS::Command method
 author: windows-driver-content
 description: The IPrintOemPS::Command method is used by rendering plug-ins for the Microsoft PostScript printer driver, in order to insert PostScript commands into the print job's data stream.
@@ -7,7 +7,7 @@ old-location: print\iprintoemps_command.htm
 old-project: print
 ms.assetid: b79dd6e7-361c-4051-9e7c-18c64d459a70
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemPS, IPrintOemPS::Command, Command
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ HRESULT Command(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param dwIndex 
@@ -242,7 +243,7 @@ PSINJECT_VMSAVE
 
 Before the printer driver sends a <b>save</b> command. (See PSINJECT_VMRESTORE.)
 
-The <code>IPrintOemPS::Command</code> method must call <a href="print.iprintoemdriverps_drvwritespoolbuf">IPrintOemDriverPS::DrvWriteSpoolBuf</a> to insert the PostScript commands.
+The <code>IPrintOemPS::Command</code> method must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff553103">IPrintOemDriverPS::DrvWriteSpoolBuf</a> to insert the PostScript commands.
 
 If <code>IPrintOemPS::Command</code> methods are exported by multiple rendering plug-ins, the methods are called in the order that the plug-ins are specified for installation, every time that the printer driver reaches an injection point. The following rules apply:
 

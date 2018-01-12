@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinGetReferenceClockInterface
+UID: NF:ks.KsPinGetReferenceClockInterface
 title: KsPinGetReferenceClockInterface function
 author: windows-driver-content
 description: The KsPinGetReferenceClockInterface function returns a COM style interface to the reference clock associated with Pin. This interface pointer will be an IKsReferenceClock interface.
@@ -7,7 +7,7 @@ old-location: stream\kspingetreferenceclockinterface.htm
 old-project: stream
 ms.assetid: 49c78b4e-aa3a-4c4b-8720-0302a537c84c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinGetReferenceClockInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsPinGetReferenceClockInterface function
@@ -56,7 +57,7 @@ NTSTATUS KsPinGetReferenceClockInterface(
 
 ### -param Pin [in]
 
-A pointer to the <a href="stream.kspin">KSPIN</a> structure for which to return the reference clock interface.
+A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which to return the reference clock interface.
 
 
 ### -param Interface [out]
@@ -134,33 +135,33 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kspingetconnectedpininterface">KsPinGetConnectedPinInterface</a>
+<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
 </dt>
 <dt>
-<a href="stream.kspingetconnectedfilterinterface">KsPinGetConnectedFilterInterface</a>
+<a href="..\ks\nf-ks-kspingetconnectedfilterinterface.md">KsPinGetConnectedFilterInterface</a>
 </dt>
 <dt>
-<a href="stream.kspinsetpinclocktime">KsPinSetPinClockTime</a>
+<a href="..\ks\nf-ks-kspinsetpinclocktime.md">KsPinSetPinClockTime</a>
 </dt>
 <dt>
-<a href="stream.ksgetouterunknown">KsGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="..\ks\nn-ks-ikscontrol~r1.md">IKsControl</a>
+<a href="..\ksproxy\nn-ksproxy-ikscontrol.md">IKsControl</a>
 </dt>
 <dt>
 <a href="..\ks\nn-ks-iksreferenceclock.md">IKsReferenceClock</a>
 </dt>
 <dt>
-<a href="stream.ksfiltergetouterunknown">KsFilterGetOuterUnknown</a>
+<a href="..\ks\nf-ks-ksfiltergetouterunknown.md">KsFilterGetOuterUnknown</a>
 </dt>
 <dt>
-<a href="stream.ksregisteraggregatedclientunknown">KsRegisterAggregatedClientUnknown</a>
+<a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetReferenceClockInterface function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetReferenceClockInterface function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

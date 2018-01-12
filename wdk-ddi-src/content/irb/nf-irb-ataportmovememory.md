@@ -1,5 +1,5 @@
 ---
-UID: NF.irb.AtaPortMoveMemory
+UID: NF:irb.AtaPortMoveMemory
 title: AtaPortMoveMemory function
 author: windows-driver-content
 description: The AtaPortMoveMemory routine copies data from one location to another.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
@@ -7,7 +7,7 @@ old-location: storage\ataportmovememory.htm
 old-project: storage
 ms.assetid: c9d724bb-cc65-428c-ad48-21b227f3c8b1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: AtaPortMoveMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ataport.lib; Pciidex.lib
 req.dll: 
 req.irql: 
+req.typenames: IDE_POWER_STATE
 ---
 
 # AtaPortMoveMemory function

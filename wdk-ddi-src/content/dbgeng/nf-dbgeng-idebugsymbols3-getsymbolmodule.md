@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.GetSymbolModule
+UID: NF:dbgeng.IDebugSymbols3.GetSymbolModule
 title: IDebugSymbols3::GetSymbolModule method
 author: windows-driver-content
 description: The GetSymbolModule method returns the base address of module which contains the specified symbol.
 old-location: debugger\getsymbolmodule.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f3774204-86c3-467b-96ba-739f19d300e3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::GetSymbolModule, GetSymbolModule
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::GetSymbolModule method

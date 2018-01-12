@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_LOGUMDMARKERCB
+UID: NC:d3dumddi.PFND3DDDI_LOGUMDMARKERCB
 title: PFND3DDDI_LOGUMDMARKERCB
 author: windows-driver-content
 description: Called by the user-mode display driver to log a custom Event Tracing for Windows (ETW) marker event.
@@ -7,7 +7,7 @@ old-location: display\pfnlogumdmarkercb.htm
 old-project: display
 ms.assetid: BD544686-20D3-4577-9950-9C3B6853C4BD
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_LOGUMDMARKERCB callback

@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasDownSampleBuffer
+UID: NF:wiamdef.wiasDownSampleBuffer
 title: wiasDownSampleBuffer function
 author: windows-driver-content
 description: The wiasDownSampleBuffer function takes in a buffer of DWORD-aligned pixel data and downsamples it (produces image data of lower resolution) to the specified size and resolution.
 old-location: image\wiasdownsamplebuffer.htm
-old-project: Image
+old-project: image
 ms.assetid: 4581b852-f539-4cad-93fd-2638c885c2e7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasDownSampleBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -70,7 +71,7 @@ WIAS_GET_DOWNSAMPLED_SIZE_ONLY
 
 </td>
 <td>
-Do not copy the downsampled data to the destination buffer. Instead, set the following members of the <a href="image.wias_down_sample_info">WIAS_DOWN_SAMPLE_INFO</a> structure: <b>ulDownSampledHeight</b>, <b>ulDownSampleWidth</b>, <b>ulAlignedHeight</b>, <b>ulAlignedWidth</b>.
+Do not copy the downsampled data to the destination buffer. Instead, set the following members of the <a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_down_sample_info.md">WIAS_DOWN_SAMPLE_INFO</a> structure: <b>ulDownSampledHeight</b>, <b>ulDownSampleWidth</b>, <b>ulAlignedHeight</b>, <b>ulAlignedWidth</b>.
 
 </td>
 </tr>
@@ -80,7 +81,7 @@ Do not copy the downsampled data to the destination buffer. Instead, set the fol
 
 ### -param pInfo [in, out]
 
-Pointer to the <a href="image.wias_down_sample_info">WIAS_DOWN_SAMPLE_INFO</a> structure that contains all of the information needed for the downsampling operation.
+Pointer to the <a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_down_sample_info.md">WIAS_DOWN_SAMPLE_INFO</a> structure that contains all of the information needed for the downsampling operation.
 
 
 ## -returns
@@ -192,12 +193,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="image.wias_down_sample_info">WIAS_DOWN_SAMPLE_INFO</a>
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_down_sample_info.md">WIAS_DOWN_SAMPLE_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20wiasDownSampleBuffer function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasDownSampleBuffer function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

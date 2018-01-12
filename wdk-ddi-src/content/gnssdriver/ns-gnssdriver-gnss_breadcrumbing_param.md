@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_BREADCRUMBING_PARAM
+UID: NS:gnssdriver.GNSS_BREADCRUMBING_PARAM
 title: GNSS_BREADCRUMBING_PARAM
 author: windows-driver-content
 description: This structure contains the configuration passed into the start of breadcrumbing via IOCTL_GNSS_START_BREADCRUMBING.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 1EAD5B17-B662-4D97-B045-ED09E4AF6E99
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_BREADCRUMBING_PARAM, PGNSS_BREADCRUMBING_PARAM, GNSS_BREADCRUMBING_PARAM, *PGNSS_BREADCRUMBING_PARAM
+ms.keywords: GNSS_BREADCRUMBING_PARAM, *PGNSS_BREADCRUMBING_PARAM, GNSS_BREADCRUMBING_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_BREADCRUMBING_PARAM, GNSS_BREADCRUMBING_PARAM
 ---
 
 # GNSS_BREADCRUMBING_PARAM structure

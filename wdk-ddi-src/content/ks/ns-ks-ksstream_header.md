@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSSTREAM_HEADER
+UID: NS:ks.KSSTREAM_HEADER
 title: KSSTREAM_HEADER
 author: windows-driver-content
 description: The KSSTREAM_HEADER structure is a variable-length structure that describes a packet of data to be read from or written to a streaming driver pin.
@@ -7,8 +7,8 @@ old-location: stream\ksstream_header.htm
 old-project: stream
 ms.assetid: c1057dcf-2988-460d-b006-f6cf16ec969e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSSTREAM_HEADER, *PKSSTREAM_HEADER, KSSTREAM_HEADER, PKSSTREAM_HEADER
+ms.date: 1/9/2018
+ms.keywords: KSSTREAM_HEADER, KSSTREAM_HEADER, *PKSSTREAM_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSSTREAM_HEADER, *PKSSTREAM_HEADER
 ---
 
 # KSSTREAM_HEADER structure
@@ -88,7 +89,7 @@ Specifies the size of the entire frame. The region within the frame extent is av
 
 ### -field DataUsed
 
-For a write operation, this member specifies the number of bytes within the frame that are valid when submitting a frame to a lower-level driver. The headers are not modified on a write operation; however, the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the total number of bytes actually written. For a read operation, this member is not used when submitting a frame to a lower-level driver and must be set to zero. On return, this member contains the number of bytes actually filled in this frame and the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the size of the list of headers actually used. Note that if the minidriver specifies KSPIN_FLAG_GENERATE_MAPPINGS in <a href="stream.kspin_descriptor_ex">KSPIN_DESCRIPTOR_EX</a>, when a stream pointer is advanced past a frame, <b>DataUsed</b> is set to <b>Count</b> minus <b>Remaining</b> (members of <a href="stream.ksstream_pointer_offset">KSSTREAM_POINTER_OFFSET</a>). If the driver does not specify this flag, the minidriver is responsible for setting <b>DataUsed</b>.
+For a write operation, this member specifies the number of bytes within the frame that are valid when submitting a frame to a lower-level driver. The headers are not modified on a write operation; however, the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the total number of bytes actually written. For a read operation, this member is not used when submitting a frame to a lower-level driver and must be set to zero. On return, this member contains the number of bytes actually filled in this frame and the <b>Information</b> member of the IO_STATUS_BLOCK structure contains the size of the list of headers actually used. Note that if the minidriver specifies KSPIN_FLAG_GENERATE_MAPPINGS in <a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>, when a stream pointer is advanced past a frame, <b>DataUsed</b> is set to <b>Count</b> minus <b>Remaining</b> (members of <a href="..\ks\ns-ks-_ksstream_pointer_offset.md">KSSTREAM_POINTER_OFFSET</a>). If the driver does not specify this flag, the minidriver is responsible for setting <b>DataUsed</b>.
 
 
 ### -field Data
@@ -315,5 +316,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSSTREAM_HEADER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSSTREAM_HEADER structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

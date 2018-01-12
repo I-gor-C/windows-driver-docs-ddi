@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILCALLAUDIOQUALITY
+UID: NE:ntddrilapitypes.RILCALLAUDIOQUALITY
 title: RILCALLAUDIOQUALITY
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallaudioquality.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bdd9879a-ec9b-431a-be95-4a1844e6238f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILCALLAUDIOQUALITY, RILCALLAUDIOQUALITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLAUDIOQUALITY
 ---
 
 # RILCALLAUDIOQUALITY enumeration

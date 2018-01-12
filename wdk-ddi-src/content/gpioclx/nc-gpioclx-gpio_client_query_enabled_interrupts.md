@@ -1,5 +1,5 @@
 ---
-UID: NC.gpioclx.GPIO_CLIENT_QUERY_ENABLED_INTERRUPTS
+UID: NC:gpioclx.GPIO_CLIENT_QUERY_ENABLED_INTERRUPTS
 title: GPIO_CLIENT_QUERY_ENABLED_INTERRUPTS
 author: windows-driver-content
 description: The CLIENT_QueryEnabledInterrupts event callback function queries the state of a set of general-purpose I/O (GPIO) pins to determine which pins are both configured as interrupt inputs and enabled for interrupts.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 2F09006A-EFC6-4A38-AC5D-661DA48155FA
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks.
+req.typenames: *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ---
 
 # GPIO_CLIENT_QUERY_ENABLED_INTERRUPTS callback

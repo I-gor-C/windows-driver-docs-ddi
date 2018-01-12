@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:gpio
 ---
 
 # General-purpose I/O (GPIO) controllers

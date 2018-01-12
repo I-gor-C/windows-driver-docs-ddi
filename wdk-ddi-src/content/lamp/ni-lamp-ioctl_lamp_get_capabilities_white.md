@@ -1,5 +1,5 @@
 ---
-UID: NI.lamp.IOCTL_LAMP_GET_CAPABILITIES_WHITE
+UID: NI:lamp.IOCTL_LAMP_GET_CAPABILITIES_WHITE
 title: IOCTL_LAMP_GET_CAPABILITIES_WHITE
 author: windows-driver-content
 description: The IOCTL_LAMP_GET_CAPABILITIES_WHITE control code queries the capabilities of the lamp when the device is configured to emit white light.
@@ -7,7 +7,7 @@ old-location: stream\ioctl_lamp_get_capabilities_white.htm
 old-project: stream
 ms.assetid: F4A7CF9A-023F-42FC-A40C-E95964EC5392
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: LAMP_MODE, LAMP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: LAMP_MODE
 ---
 
 # IOCTL_LAMP_GET_CAPABILITIES_WHITE IOCTL

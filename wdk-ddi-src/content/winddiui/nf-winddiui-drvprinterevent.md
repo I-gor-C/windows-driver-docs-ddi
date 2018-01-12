@@ -1,5 +1,5 @@
 ---
-UID: NF.winddiui.DrvPrinterEvent
+UID: NF:winddiui.DrvPrinterEvent
 title: DrvPrinterEvent function
 author: windows-driver-content
 description: A printer interface DLL's DrvPrinterEvent function is called by the print spooler when processing printer-specific events that might require action by the printer driver.
@@ -7,7 +7,7 @@ old-location: print\drvprinterevent.htm
 old-project: print
 ms.assetid: 7566f92d-0e25-44bf-a2b3-587bb11a7d03
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: DrvPrinterEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
 req.product: Windows 10 or later.
 ---
 
@@ -87,7 +88,7 @@ PRINTER_EVENT_ATTRIBUTES_CHANGED
 
 </td>
 <td>
-The attribute bits for a printer have changed. In response to an application's call to the <b>SetPrinter</b> function (described in the Windows SDK documentation), the spooler calls the printer driver's <b>DrvPrinterEvent</b> function, passing the event code in the call. When this event code is used, the <i>lParam</i> parameter points to a <a href="print.printer_event_attributes_info">PRINTER_EVENT_ATTRIBUTES_INFO</a> structure that describes the old and the new attributes.
+The attribute bits for a printer have changed. In response to an application's call to the <b>SetPrinter</b> function (described in the Windows SDK documentation), the spooler calls the printer driver's <b>DrvPrinterEvent</b> function, passing the event code in the call. When this event code is used, the <i>lParam</i> parameter points to a <a href="..\winddiui\ns-winddiui-_printer_event_attributes_info.md">PRINTER_EVENT_ATTRIBUTES_INFO</a> structure that describes the old and the new attributes.
 
 </td>
 </tr>

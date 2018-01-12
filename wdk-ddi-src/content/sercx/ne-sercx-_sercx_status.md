@@ -1,5 +1,5 @@
 ---
-UID: NE.sercx._SERCX_STATUS
+UID: NE:sercx._SERCX_STATUS
 title: _SERCX_STATUS
 author: windows-driver-content
 description: The SERCX_STATUS enumeration indicates the status of a serial receive or transmit operation.
@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 7EF129C7-25C3-49D2-8FC5-FFA1C4E77935
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SERCX_STATUS, *PSERCX_STATUS, SERCX_STATUS, PSERCX_STATUS
+ms.keywords: _SERCX_STATUS, SERCX_STATUS, *PSERCX_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Called at IRQL <= DISPATCH_LEVEL
+req.irql: 
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -68,11 +69,11 @@ The operation was canceled.
 
 ### -field SerCxStatusTimeout
 
-The operation timed out. This enumeration value applies only to read interval time-outs for receive operations. For more information, see the description of the <b>ReadIntervalTimeout</b> member in <a href="serports.serial_timeouts">SERIAL_TIMEOUTS</a>.
+The operation timed out. This enumeration value applies only to read interval time-outs for receive operations. For more information, see the description of the <b>ReadIntervalTimeout</b> member in <a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>.
 
 
 ## -remarks
-The <a href="serports.sercxprogressreceive">SerCxProgressReceive</a> and <a href="serports.sercxprogresstransmit">SerCxProgressTransmit</a> methods have parameters that are <b>SERCX_STATUS</b> enumeration values.
+The <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a> and <a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a> methods have parameters that are <b>SERCX_STATUS</b> enumeration values.
 
 
 ## -requirements
@@ -103,13 +104,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercxprogressreceive">SerCxProgressReceive</a>
+<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 </dt>
 <dt>
-<a href="serports.sercxprogresstransmit">SerCxProgressTransmit</a>
+<a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
 </dt>
 <dt>
-<a href="serports.serial_timeouts">SERIAL_TIMEOUTS</a>
+<a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>
 </dt>
 </dl>
  

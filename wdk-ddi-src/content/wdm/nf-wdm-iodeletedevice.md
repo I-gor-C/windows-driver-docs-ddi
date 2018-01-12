@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoDeleteDevice
+UID: NF:wdm.IoDeleteDevice
 title: IoDeleteDevice function
 author: windows-driver-content
 description: The IoDeleteDevice routine removes a device object from the system, for example, when the underlying device is removed from the system.
@@ -7,7 +7,7 @@ old-location: kernel\iodeletedevice.htm
 old-project: kernel
 ms.assetid: 973549c3-c570-48ab-9a82-9398c920dbd9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoDeleteDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ When handling a PnP <a href="https://msdn.microsoft.com/library/windows/hardware
 
 A legacy driver should call this routine when it is being unloaded or when its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine encounters a fatal initialization error, such as being unable to properly initialize a physical device. This routine also is called when a driver reconfigures its devices dynamically. For example, a disk driver called to repartition a disk would call <b>IoDeleteDevice</b> to tear down the device objects representing partitions to be replaced.
 
-A driver must release certain resources for which the driver supplied storage in its device extension before it calls <b>IoDeleteDevice</b>. For example, if the driver stores the pointer to its interrupt object(s) in the device extension, it must call <a href="kernel.iodisconnectinterrupt">IoDisconnectInterrupt</a> before calling <b>IoDeleteDevice</b>.
+A driver must release certain resources for which the driver supplied storage in its device extension before it calls <b>IoDeleteDevice</b>. For example, if the driver stores the pointer to its interrupt object(s) in the device extension, it must call <a href="..\wdm\nf-wdm-iodisconnectinterrupt.md">IoDisconnectInterrupt</a> before calling <b>IoDeleteDevice</b>.
 
 A driver can call <b>IoDeleteDevice</b> only once for a given device object.
 
@@ -147,7 +148,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_deletedevice">DeleteDevice</a>, <a href="devtest.wdm_irqlioapclte">IrqlIoApcLte</a>, <a href="devtest.wdm_pnpsurpriseremove">PnpSurpriseRemove</a>, <a href="devtest.wdm_removelockcheck">RemoveLockCheck</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975146">DeleteDevice</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547759">IrqlIoApcLte</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550417">PnpSurpriseRemove</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975207">RemoveLockCheck</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -155,15 +156,15 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iocreatedevice">IoCreateDevice</a>
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 </dt>
 <dt>
-<a href="kernel.iodisconnectinterrupt">IoDisconnectInterrupt</a>
+<a href="..\wdm\nf-wdm-iodisconnectinterrupt.md">IoDisconnectInterrupt</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoDeleteDevice routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoDeleteDevice routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbServerChannelInitSetMmioMegabytes
+UID: NF:vmbuskernelmodeclientlibapi.VmbServerChannelInitSetMmioMegabytes
 title: VmbServerChannelInitSetMmioMegabytes function
 author: windows-driver-content
 description: The VmbServerChannelInitSetMmioMegabytes function specifies the amount, in megabytes, of guest memory-mapped I/O (MMIO) space to reserve for the device.
 old-location: netvista\vmbserverchannelinitsetmmiomegabytes.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9E19BCC0-5529-470C-BF69-521FEFA3303E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbServerChannelInitSetMmioMegabytes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

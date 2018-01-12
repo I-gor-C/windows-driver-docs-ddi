@@ -1,5 +1,5 @@
 ---
-UID: NS.IRB._IDE_CHANNEL_INTERFACE
+UID: NS:irb._IDE_CHANNEL_INTERFACE
 title: _IDE_CHANNEL_INTERFACE
 author: windows-driver-content
 description: The IDE_CHANNEL_INTERFACE structure contains interface information for the indicated channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
@@ -7,8 +7,8 @@ old-location: storage\ide_channel_interface.htm
 old-project: storage
 ms.assetid: 0a742dc2-fa1a-4b93-a136-52f4571bde22
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IDE_CHANNEL_INTERFACE, *PIDE_CHANNEL_INTERFACE, IDE_CHANNEL_INTERFACE, PIDE_CHANNEL_INTERFACE
+ms.date: 1/10/2018
+ms.keywords: _IDE_CHANNEL_INTERFACE, IDE_CHANNEL_INTERFACE, *PIDE_CHANNEL_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IDE_CHANNEL_INTERFACE, *PIDE_CHANNEL_INTERFACE
 ---
 
 # _IDE_CHANNEL_INTERFACE structure
@@ -123,27 +124,27 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.idehwinitialize">IdeHwInitialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>
 </dt>
 <dt>
-<a href="storage.idehwbuildio">IdeHwBuildIo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557462">IdeHwBuildIo</a>
 </dt>
 <dt>
-<a href="storage.idehwstartio">IdeHwStartIo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559003">IdeHwStartIo</a>
 </dt>
 <dt>
-<a href="storage.idehwinterrupt">IdeHwInterrupt</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558992">IdeHwInterrupt</a>
 </dt>
 <dt>
-<a href="storage.idehwreset">IdeHwReset</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558998">IdeHwReset</a>
 </dt>
 <dt>
-<a href="storage.idehwcontrol">IdeHwControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDE_CHANNEL_INTERFACE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IDE_CHANNEL_INTERFACE structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

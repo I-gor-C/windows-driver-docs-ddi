@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlDWordPtrSub
+UID: NF:ntintsafe.RtlDWordPtrSub
 title: RtlDWordPtrSub function
 author: windows-driver-content
 description: Subtracts one value of type DWORD_PTR from another.
@@ -7,7 +7,7 @@ old-location: kernel\rtldwordptrsub.htm
 old-project: kernel
 ms.assetid: B3268640-F256-4B64-AE95-8D30A6A7BF6C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlDWordPtrSub
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlDWordPtrSub function

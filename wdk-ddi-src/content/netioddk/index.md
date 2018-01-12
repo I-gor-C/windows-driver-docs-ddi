@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:netioddk
 ---
 
 # Netioddk.h header
 
 ## -description
 
-This header is used by NetVista. For more information, see
-- [NetVista](../_NetVista/index.md)
+This header is used by Networking drivers for Windows Vista and later. For more information, see
+- [Networking drivers for Windows Vista and later](../_netvista/index.md)
 
 Netioddk.h contain these programming interfaces:
 
@@ -42,8 +42,5 @@ Netioddk.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [_NPI_CLIENT_CHARACTERISTICS structure](ns-netioddk-_npi_client_characteristics.md) | The NPI_CLIENT_CHARACTERISTICS structure defines the characteristics of a client module. |
-| [_NPI_CLIENT_CHARACTERISTICS structure](ns-netioddk-_npi_client_characteristics~r1.md) | The NPI_CLIENT_CHARACTERISTICS structure defines the characteristics of a client module. |
 | [_NPI_PROVIDER_CHARACTERISTICS structure](ns-netioddk-_npi_provider_characteristics.md) | The NPI_PROVIDER_CHARACTERISTICS structure defines the characteristics of a provider module. |
-| [_NPI_PROVIDER_CHARACTERISTICS structure](ns-netioddk-_npi_provider_characteristics~r1.md) | The NPI_PROVIDER_CHARACTERISTICS structure defines the characteristics of a provider module. |
 | [_NPI_REGISTRATION_INSTANCE structure](ns-netioddk-_npi_registration_instance.md) | The NPI_REGISTRATION_INSTANCE structure defines the data related to the registration of a network module with the NMR. |
-| [_NPI_REGISTRATION_INSTANCE structure](ns-netioddk-_npi_registration_instance~r1.md) | The NPI_REGISTRATION_INSTANCE structure defines the data related to the registration of a network module with the NMR. |

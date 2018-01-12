@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUKMDT._D3DDDIARG_CREATERESOURCE2
+UID: NS:d3dukmdt._D3DDDIARG_CREATERESOURCE2
 title: _D3DDDIARG_CREATERESOURCE2
 author: windows-driver-content
 description: Contains information for creating a resource. Used by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_createresource2.htm
 old-project: display
 ms.assetid: 337874d1-9f9b-429d-a970-60b5d86ac7a2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDIARG_CREATERESOURCE2, D3DDDIARG_CREATERESOURCE2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDIARG_CREATERESOURCE2
 ---
 
 # _D3DDDIARG_CREATERESOURCE2 structure
@@ -68,17 +69,17 @@ typedef struct _D3DDDIARG_CREATERESOURCE2 {
 
 ### -field Format
 
-[in] A value of type <a href="display.d3dddiformat">D3DDDIFORMAT</a> that indicates the format of the resources.
+[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> that indicates the format of the resources.
 
 
 ### -field Pool
 
-[in] A value of type <a href="display.d3dddi_pool">D3DDDI_POOL</a> that indicates the type of memory pool that the resources are created from.
+[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a> that indicates the type of memory pool that the resources are created from.
 
 
 ### -field MultisampleType
 
-[in] A value of type <a href="display.d3dddimultisample_type">D3DDDIMULTISAMPLE_TYPE</a> that indicates the number of samples for a multiple-sampled surface. If the surface is not multiple sampled, this value is D3DDDIMULTISAMPLE_NONE (0).
+[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddimultisample_type.md">D3DDDIMULTISAMPLE_TYPE</a> that indicates the number of samples for a multiple-sampled surface. If the surface is not multiple sampled, this value is D3DDDIMULTISAMPLE_NONE (0).
 
 
 ### -field MultisampleQuality
@@ -90,7 +91,7 @@ Note that even if the surface is not multiple-sampled (that is, if <b>D3DDDIMULT
 
 ### -field pSurfList
 
-[in] An array of <a href="display.d3dddi_surfaceinfo">D3DDDI_SURFACEINFO</a> structures for the list of surfaces (or other resource types) to create.
+[in] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_surfaceinfo.md">D3DDDI_SURFACEINFO</a> structures for the list of surfaces (or other resource types) to create.
 
 
 ### -field SurfCount
@@ -115,7 +116,7 @@ Note that even if the surface is not multiple-sampled (that is, if <b>D3DDDIMULT
 
 ### -field RefreshRate
 
-[in] A <a href="display.d3dddi_rational">D3DDDI_RATIONAL</a> structure that specifies the refresh rate that the resource is used with. This member is applicable only if the resource is the primary surface and the <b>MatchGdiPrimary</b> bit-field flag is not set in the <b>Flags</b> member. In addition, if the <b>InterlacedRefresh</b> bit-field flag is set in <b>Flags</b>, the user-mode display driver determines that the refresh rate is interleaved (otherwise, progressive).
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_rational.md">D3DDDI_RATIONAL</a> structure that specifies the refresh rate that the resource is used with. This member is applicable only if the resource is the primary surface and the <b>MatchGdiPrimary</b> bit-field flag is not set in the <b>Flags</b> member. In addition, if the <b>InterlacedRefresh</b> bit-field flag is set in <b>Flags</b>, the user-mode display driver determines that the refresh rate is interleaved (otherwise, progressive).
 
 
 ### -field hResource
@@ -127,12 +128,12 @@ The driver generates a unique handle and passes it back to the Direct3D runtime.
 
 ### -field Flags
 
-[in] A <a href="display.d3dddi_resourceflags">D3DDDI_RESOURCEFLAGS</a> structure that identifies the type of resources to create. Note that some of the bit-field flags in <b>D3DDDI_RESOURCEFLAGS</b> require that additional bit-field flags are set as well.
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_resourceflags.md">D3DDDI_RESOURCEFLAGS</a> structure that identifies the type of resources to create. Note that some of the bit-field flags in <b>D3DDDI_RESOURCEFLAGS</b> require that additional bit-field flags are set as well.
 
 
 ### -field Rotation
 
-[in] A <a href="display.d3dddi_rotation">D3DDDI_ROTATION</a>-typed value that identifies the orientation of the resource. 
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>-typed value that identifies the orientation of the resource. 
 
 For example, consider that the user-mode display driver receives a request for a 480x640 surface to be rotated 90 degrees (<b>D3DDDI_ROTATION_90</b>). The driver should allocate the surface in 640x480 mode for scanning purposes. When rendering to the surface, the driver should perform the 90 degree rotation. 
 
@@ -141,7 +142,7 @@ Orientations other than <b>D3DDDI_ROTATION_IDENTITY</b> are set only when the <b
 
 ### -field Flags2
 
-[in] A <a href="display.d3dddi_resourceflags2">D3DDDI_RESOURCEFLAGS2</a> structure that identifies the type of resources to create. Note that some of the bit-field flags in <b>D3DDDI_RESOURCEFLAGS2</b> require that additional bit-field flags are set as well.
+[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_resourceflags2.md">D3DDDI_RESOURCEFLAGS2</a> structure that identifies the type of resources to create. Note that some of the bit-field flags in <b>D3DDDI_RESOURCEFLAGS2</b> require that additional bit-field flags are set as well.
 
 
 ## -remarks
@@ -188,30 +189,30 @@ Header
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource2.md">CreateResource2</a>
 </dt>
 <dt>
-<a href="display.d3dddiformat">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="display.d3dddimultisample_type">D3DDDIMULTISAMPLE_TYPE</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddimultisample_type.md">D3DDDIMULTISAMPLE_TYPE</a>
 </dt>
 <dt>
-<a href="display.d3dddi_pool">D3DDDI_POOL</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>
 </dt>
 <dt>
-<a href="display.d3dddi_rational">D3DDDI_RATIONAL</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_rational.md">D3DDDI_RATIONAL</a>
 </dt>
 <dt>
-<a href="display.d3dddi_resourceflags2">D3DDDI_RESOURCEFLAGS2</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_resourceflags2.md">D3DDDI_RESOURCEFLAGS2</a>
 </dt>
 <dt>
-<a href="display.d3dddi_rotation">D3DDDI_ROTATION</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_rotation.md">D3DDDI_ROTATION</a>
 </dt>
 <dt>
-<a href="display.d3dddi_surfaceinfo">D3DDDI_SURFACEINFO</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_surfaceinfo.md">D3DDDI_SURFACEINFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATERESOURCE2 structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_CREATERESOURCE2 structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportStreamAudioEngineNode.GetStreamLinearBufferPosition
+UID: NF:portcls.IMiniportStreamAudioEngineNode.GetStreamLinearBufferPosition
 title: IMiniportStreamAudioEngineNode::GetStreamLinearBufferPosition method
 author: windows-driver-content
 description: Gets the number of bytes that the DMA has fetched from the audio buffer since the beginning of the stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportStreamAudioEngineNode::GetStreamLinearBufferPosition method

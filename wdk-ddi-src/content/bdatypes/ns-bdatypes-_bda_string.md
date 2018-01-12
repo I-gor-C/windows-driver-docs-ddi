@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_STRING
+UID: NS:bdatypes._BDA_STRING
 title: _BDA_STRING
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bda_string.htm
 old-project: stream
 ms.assetid: 69E2090F-02A6-43FB-85CB-E482B9142645
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_STRING, *PBDA_STRING, PBDA_STRING, BDA_STRING
+ms.date: 1/9/2018
+ms.keywords: _BDA_STRING, *PBDA_STRING, BDA_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PBDA_STRING, BDA_STRING
 ---
 
 # _BDA_STRING structure

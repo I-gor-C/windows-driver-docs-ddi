@@ -1,5 +1,5 @@
 ---
-UID: NS.DXVA._DXVA_DEINTERLACEBLTEX32
+UID: NS:dxva._DXVA_DeinterlaceBltEx32
 title: _DXVA_DeinterlaceBltEx32
 author: windows-driver-content
 description: The DXVA_DeinterlaceBltEx structure describes parameters for deinterlace or frame-rate conversion, for combining the deinterlaced or frame-rate converted video with any supplied video substreams, and for writing the combined output to a destination surface. It is used for forwarding 32-bit DXVA_DeinterlaceBltEx calls on 64-bit drivers.
@@ -7,7 +7,7 @@ old-location: display\dxva_deinterlacebltex32.htm
 old-project: display
 ms.assetid: ae88acca-5d29-4cca-acae-613632d565d8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVA_DeinterlaceBltEx32, DXVA_DeinterlaceBltEx32
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVA_DeinterlaceBltEx32
 ---
 
 # _DXVA_DeinterlaceBltEx32 structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The DXVA_DeinterlaceBltEx structure describes parameters for deinterlace or frame-rate conversion, for combining the deinterlaced or frame-rate converted video with any supplied video substreams, and for writing the combined output to a destination surface. It is used for forwarding  32-bit <a href="display.dxva_deinterlacebltex">DXVA_DeinterlaceBltEx</a> calls on 64-bit drivers. 
+The DXVA_DeinterlaceBltEx structure describes parameters for deinterlace or frame-rate conversion, for combining the deinterlaced or frame-rate converted video with any supplied video substreams, and for writing the combined output to a destination surface. It is used for forwarding  32-bit <a href="..\dxva\ns-dxva-_dxva_deinterlacebltex.md">DXVA_DeinterlaceBltEx</a> calls on 64-bit drivers. 
 
 
 
@@ -68,17 +69,17 @@ Specifies the size of the structure, in bytes.
 
 ### -field BackgroundColor
 
-Specifies a <a href="display.dxva_ayuvsample2">DXVA_AYUVsample2</a> structure that identifies background color and opacity level. For Windows Server 2003 with SP1 and Windows XP with SP2, the opacity level is not used and should be ignored by the driver.
+Specifies a <a href="..\dxva\ns-dxva-_dxva_ayuvsample2.md">DXVA_AYUVsample2</a> structure that identifies background color and opacity level. For Windows Server 2003 with SP1 and Windows XP with SP2, the opacity level is not used and should be ignored by the driver.
 
 
 ### -field rcTarget
 
-Specifies a pointer to a <a href="display.rect">RECT</a> structure that describes the location within the destination surface to which the output image is written. Note that the output image is restricted to the pixels within the <b>rcTarget</b> rectangle--that is, every pixel within this rectangle must be written to; pixels outside this rectangle must not be modified. 
+Specifies a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that describes the location within the destination surface to which the output image is written. Note that the output image is restricted to the pixels within the <b>rcTarget</b> rectangle--that is, every pixel within this rectangle must be written to; pixels outside this rectangle must not be modified. 
 
 
 ### -field rtTarget
 
-Identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a sample, as defined in the <a href="display.dxva_videosample32">DXVA_VideoSample32</a> structure, or the midpoint between the starting display time and the ending display time. For more information, see Remarks.
+Identifies the location of the output frame within the sequence of input frames. If only deinterlacing is performed, the target time should coincide with either the starting display time of a sample, as defined in the <a href="..\dxva\ns-dxva-_dxva_videosample32.md">DXVA_VideoSample32</a> structure, or the midpoint between the starting display time and the ending display time. For more information, see Remarks.
 
 If a frame-rate conversion is requested, the <b>rtTarget</b> time can be different from any of the <b>rtStart</b> times of the samples.
 
@@ -105,7 +106,7 @@ Specifies format information for the destination surface. For Windows Server 200
 
 ### -field DestinationFlags
 
-Specifies a collection of flags that indicate changes in the current destination surface from the previous destination surface. This member is a bitwise-OR of one or more of the flags in the <a href="display.dxva_destinationflags">DXVA_DestinationFlags</a> enumeration type.
+Specifies a collection of flags that indicate changes in the current destination surface from the previous destination surface. This member is a bitwise-OR of one or more of the flags in the <a href="..\dxva\ne-dxva-_dxva_destinationflags.md">DXVA_DestinationFlags</a> enumeration type.
 
 
 ## -remarks
@@ -139,21 +140,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxva_deinterlacebobdeviceclass_deinterlacebltex">DeinterlaceBltEx</a>
+<a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
 </dt>
 <dt>
-<a href="display.dxva_deinterlacecaps">DXVA_DeinterlaceCaps</a>
+<a href="..\dxva\ns-dxva-_dxva_deinterlacecaps.md">DXVA_DeinterlaceCaps</a>
 </dt>
 <dt>
-<a href="display.dxva_destinationflags">DXVA_DestinationFlags</a>
+<a href="..\dxva\ne-dxva-_dxva_destinationflags.md">DXVA_DestinationFlags</a>
 </dt>
 <dt>
-<a href="display.dxva_videosample32">DXVA_VideoSample32</a>
+<a href="..\dxva\ns-dxva-_dxva_videosample32.md">DXVA_VideoSample32</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_DeinterlaceBltEx32 structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_DeinterlaceBltEx32 structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

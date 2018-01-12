@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_ALLOCATIONINFOFLAGS
+UID: NS:d3dkmddi._DXGK_ALLOCATIONINFOFLAGS
 title: _DXGK_ALLOCATIONINFOFLAGS
 author: windows-driver-content
 description: The DXGK_ALLOCATIONINFOFLAGS structure identifies properties for an allocation. The display miniport driver specifies these flags for the video memory manager.
@@ -7,7 +7,7 @@ old-location: display\dxgk_allocationinfoflags.htm
 old-project: display
 ms.assetid: 04bd00c3-83a8-44bb-9493-cf7f43f10602
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_ALLOCATIONINFOFLAGS, DXGK_ALLOCATIONINFOFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_ALLOCATIONINFOFLAGS
 ---
 
 # _DXGK_ALLOCATIONINFOFLAGS structure
@@ -170,7 +171,7 @@ Setting this member is equivalent to setting the eighth bit of the 32-bit <b>Val
 
 ### -field Overlay
 
-[out] A UINT value that specifies whether the allocation is for an overlay operation. Overlay allocations are pinned in memory, and the video memory manager cannot evict them unless the Timeout Detection and Recovery (TDR) process, Plug and Play (PnP) stop, or <a href="https://msdn.microsoft.com/780d37d9-40c6-4737-9042-473810868227">level three synchronization</a> occurs. Note that before level three synchronization occurs, overlays are typically destroyed. By default, overlay allocations are limited and cannot occupy more than the last 20 percent of a segment. If an overlay allocation is allocated in an aperture segment, the display miniport driver should limit the size of any other allocation that uses that aperture segment as an eviction segment to 80 percent of the segment size. The display miniport driver indicates that an allocation can use a segment for eviction by specifying the appropriate bit for the segment in the <b>EvictionSegmentSet</b> member of the <a href="display.dxgk_allocationinfo">DXGK_ALLOCATIONINFO</a> structure for the allocation. If the display miniport driver does not limit the size of another allocation, the video memory manager cannot evict that allocation through the segment because the pinned allocation (that is, the overlay allocation) occupies the area that is required for eviction. In this case, the content of the other allocation that is being evicted is lost, and the application that owns the lost allocation can no longer render with that allocation. 
+[out] A UINT value that specifies whether the allocation is for an overlay operation. Overlay allocations are pinned in memory, and the video memory manager cannot evict them unless the Timeout Detection and Recovery (TDR) process, Plug and Play (PnP) stop, or <a href="https://msdn.microsoft.com/780d37d9-40c6-4737-9042-473810868227">level three synchronization</a> occurs. Note that before level three synchronization occurs, overlays are typically destroyed. By default, overlay allocations are limited and cannot occupy more than the last 20 percent of a segment. If an overlay allocation is allocated in an aperture segment, the display miniport driver should limit the size of any other allocation that uses that aperture segment as an eviction segment to 80 percent of the segment size. The display miniport driver indicates that an allocation can use a segment for eviction by specifying the appropriate bit for the segment in the <b>EvictionSegmentSet</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a> structure for the allocation. If the display miniport driver does not limit the size of another allocation, the video memory manager cannot evict that allocation through the segment because the pinned allocation (that is, the overlay allocation) occupies the area that is required for eviction. In this case, the content of the other allocation that is being evicted is lost, and the application that owns the lost allocation can no longer render with that allocation. 
 
 Setting this member is equivalent to setting the ninth bit of the 32-bit <b>Value</b> member (0x00000100).
 
@@ -379,7 +380,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgk_allocationinfo">DXGK_ALLOCATIONINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
@@ -395,5 +396,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_ALLOCATIONINFOFLAGS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_ALLOCATIONINFOFLAGS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

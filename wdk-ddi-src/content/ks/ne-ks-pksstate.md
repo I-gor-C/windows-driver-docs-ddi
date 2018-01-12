@@ -1,14 +1,14 @@
 ---
-UID: NE.ks.PKSSTATE
-title: PKSSTATE
+UID: NE:ks.PKSSTATE
+title: *PKSSTATE
 author: windows-driver-content
 description: The KSSTATE enumeration lists possible states of a kernel streaming object.
 old-location: stream\ksstate.htm
 old-project: stream
 ms.assetid: 6f5a3c65-9d6c-4d5f-af99-71aba16eb254
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: PKSSTATE, KSSTATE, PKSSTATE
+ms.date: 1/9/2018
+ms.keywords: *PKSSTATE, *PKSSTATE, KSSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSSTATE, KSSTATE
 ---
 
-# PKSSTATE enumeration
+# *PKSSTATE enumeration
 
 
 

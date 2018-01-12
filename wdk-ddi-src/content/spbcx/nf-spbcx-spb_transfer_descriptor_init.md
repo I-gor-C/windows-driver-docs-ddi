@@ -1,5 +1,5 @@
 ---
-UID: NF.spbcx.SPB_TRANSFER_DESCRIPTOR_INIT
+UID: NF:spbcx.SPB_TRANSFER_DESCRIPTOR_INIT
 title: SPB_TRANSFER_DESCRIPTOR_INIT function
 author: windows-driver-content
 description: The SPB_TRANSFER_DESCRIPTOR_INIT function initializes an SPB_TRANSFER_DESCRIPTOR structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 

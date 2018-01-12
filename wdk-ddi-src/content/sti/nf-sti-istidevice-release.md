@@ -1,13 +1,13 @@
 ---
-UID: NF.sti.IStiDevice.Release
+UID: NF:sti.IStiDevice.Release
 title: IStiDevice::Release method
 author: windows-driver-content
 description: The IStiDevice::Release method closes the instance of the COM object that was created by a previous call to IStillImage::CreateDevice, and removes access to the object's interface.
 old-location: image\istidevice_release.htm
-old-project: Image
+old-project: image
 ms.assetid: cff05099-cf27-4cc6-a820-1d8a5c3ef88e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IStiDevice, IStiDevice::Release, Release
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STI_DEVICE_MJ_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>IStiDevice::Release</b> method closes the instance of the COM object that was created by a previous call to <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a>, and removes access to the object's interface.
+The <b>IStiDevice::Release</b> method closes the instance of the COM object that was created by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a>, and removes access to the object's interface.
 
 
 

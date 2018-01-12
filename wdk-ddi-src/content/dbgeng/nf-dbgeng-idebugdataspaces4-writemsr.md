@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.WriteMsr
+UID: NF:dbgeng.IDebugDataSpaces4.WriteMsr
 title: IDebugDataSpaces4::WriteMsr method
 author: windows-driver-content
 description: The WriteMsr method writes a value to the specified Model-Specific Register (MSR).
 old-location: debugger\writemsr2.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: c9838b9e-b390-455d-98d6-249a49c9165d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::WriteMsr, WriteMsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::WriteMsr method

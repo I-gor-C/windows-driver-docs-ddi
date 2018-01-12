@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDVDEO._VIDEO_POINTER_POSITION
+UID: NS:ntddvdeo._VIDEO_POINTER_POSITION
 title: _VIDEO_POINTER_POSITION
 author: windows-driver-content
 description: The VIDEO_POINTER_POSITION structure contains the location of the screen pointer relative to the top left corner of the screen.
@@ -7,8 +7,8 @@ old-location: display\video_pointer_position.htm
 old-project: display
 ms.assetid: 07586be9-a8bc-4149-8037-7b649a75a818
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VIDEO_POINTER_POSITION, *PVIDEO_POINTER_POSITION, PVIDEO_POINTER_POSITION, VIDEO_POINTER_POSITION
+ms.date: 12/29/2017
+ms.keywords: _VIDEO_POINTER_POSITION, VIDEO_POINTER_POSITION, *PVIDEO_POINTER_POSITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VIDEO_POINTER_POSITION, *PVIDEO_POINTER_POSITION
 ---
 
 # _VIDEO_POINTER_POSITION structure

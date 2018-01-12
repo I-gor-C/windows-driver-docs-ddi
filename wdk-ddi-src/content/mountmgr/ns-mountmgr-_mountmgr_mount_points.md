@@ -1,5 +1,5 @@
 ---
-UID: NS.MOUNTMGR._MOUNTMGR_MOUNT_POINTS
+UID: NS:mountmgr._MOUNTMGR_MOUNT_POINTS
 title: _MOUNTMGR_MOUNT_POINTS
 author: windows-driver-content
 description: The MOUNTMGR_MOUNT_POINTS structure is used by mount manager to send a client the list of mount points associated with a device.
@@ -7,8 +7,8 @@ old-location: storage\mountmgr_mount_points.htm
 old-project: storage
 ms.assetid: e85c0d92-d989-4afc-8516-c63535d2c728
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MOUNTMGR_MOUNT_POINTS, *PMOUNTMGR_MOUNT_POINTS, PMOUNTMGR_MOUNT_POINTS, MOUNTMGR_MOUNT_POINTS
+ms.date: 1/10/2018
+ms.keywords: _MOUNTMGR_MOUNT_POINTS, MOUNTMGR_MOUNT_POINTS, *PMOUNTMGR_MOUNT_POINTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MOUNTMGR_MOUNT_POINTS, *PMOUNTMGR_MOUNT_POINTS
 ---
 
 # _MOUNTMGR_MOUNT_POINTS structure
@@ -71,7 +72,7 @@ Contains an array of elements of type MOUNTMGR_MOUNT_POINT that contain informat
 
 
 ## -remarks
-For a discussion of the different between symbolic links, unique IDs, and nonpersistent device names, see <a href="storage.supporting_mount_manager_requests_in_a_storage_class_driver">Supporting Mount Manager Requests in a Storage Class Driver</a>. 
+For a discussion of the different between symbolic links, unique IDs, and nonpersistent device names, see <a href="https://msdn.microsoft.com/fb37f862-70d6-4514-b481-16f664346422">Supporting Mount Manager Requests in a Storage Class Driver</a>. 
 
 
 ## -requirements
@@ -99,5 +100,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MOUNTMGR_MOUNT_POINTS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MOUNTMGR_MOUNT_POINTS structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

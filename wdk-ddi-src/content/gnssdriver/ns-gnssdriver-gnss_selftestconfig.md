@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_SELFTESTCONFIG
+UID: NS:gnssdriver.GNSS_SELFTESTCONFIG
 title: GNSS_SELFTESTCONFIG
 author: windows-driver-content
 description: This structure defines the specific data elements associated with a carrier wave test results returned from the driver.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: DE0D4A9A-F85D-4AA4-8A21-1BEC86837444
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_SELFTESTCONFIG, PGNSS_SELFTESTCONFIG, GNSS_SELFTESTCONFIG, *PGNSS_SELFTESTCONFIG
+ms.keywords: GNSS_SELFTESTCONFIG, *PGNSS_SELFTESTCONFIG, GNSS_SELFTESTCONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_SELFTESTCONFIG, GNSS_SELFTESTCONFIG
 ---
 
 # GNSS_SELFTESTCONFIG structure

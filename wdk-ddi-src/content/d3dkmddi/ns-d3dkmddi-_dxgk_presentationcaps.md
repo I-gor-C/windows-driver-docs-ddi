@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_PRESENTATIONCAPS
+UID: NS:d3dkmddi._DXGK_PRESENTATIONCAPS
 title: _DXGK_PRESENTATIONCAPS
 author: windows-driver-content
 description: The DXGK_PRESENTATIONCAPS structure identifies presentation capabilities of a display miniport driver that the driver provides through a call to its DxgkDdiQueryAdapterInfo function.
@@ -7,7 +7,7 @@ old-location: display\dxgk_presentationcaps.htm
 old-project: display
 ms.assetid: 38de4631-535f-4950-b361-d70f8c638c36
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PRESENTATIONCAPS, DXGK_PRESENTATIONCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_PRESENTATIONCAPS
 ---
 
 # _DXGK_PRESENTATIONCAPS structure
@@ -222,7 +223,7 @@ Supported starting with Windows 7.
 
 ### -field SupportMirrorStretchBlt
 
-[in] A UINT value that specifies whether the display miniport driver supports Stretch Blt operations (using the <a href="display.dxgk_gdiarg_stretchblt">DXGK_GDIARG_STRETCHBLT</a> structure) in mirror mode. If <b>SupportMirrorStretchBlt </b>is set, the driver supports such operations.
+[in] A UINT value that specifies whether the display miniport driver supports Stretch Blt operations (using the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_stretchblt.md">DXGK_GDIARG_STRETCHBLT</a> structure) in mirror mode. If <b>SupportMirrorStretchBlt </b>is set, the driver supports such operations.
 
 Setting this member is equivalent to setting the fifteenth bit of the 32-bit <b>Value</b> member (0x00004000). 
 
@@ -231,7 +232,7 @@ Supported starting with Windows 7.
 
 ### -field SupportMonoStretchBltModes
 
-[in] A UINT value that specifies whether the display miniport driver supports Stretch Blt operations (using the <a href="display.dxgk_gdiarg_stretchblt">DXGK_GDIARG_STRETCHBLT</a> structure) in BLACKONWHITE or WHITEONBLACK monochromatic rendering modes. If <b>SupportMonoStretchBltModes</b> is set, the driver supports such operations.
+[in] A UINT value that specifies whether the display miniport driver supports Stretch Blt operations (using the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_gdiarg_stretchblt.md">DXGK_GDIARG_STRETCHBLT</a> structure) in BLACKONWHITE or WHITEONBLACK monochromatic rendering modes. If <b>SupportMonoStretchBltModes</b> is set, the driver supports such operations.
 
 Setting this member is equivalent to setting the sixteenth bit of the 32-bit <b>Value</b> member (0x00008000). 
 
@@ -274,7 +275,7 @@ Supported starting with Windows 7.
 
 ### -field NoTempSurfaceForClearTypeBlend
 
-[in] A UINT value that specifies whether the driver needs a temporary surface during processing of commands that are specified by the <b>ClearTypeBlend</b> member of the <a href="display.dxgk_renderkm_command">DXGK_RENDERKM_COMMAND</a> structure. If <b>NoTempSurfaceForClearTypeBlend</b> is set, the driver does not need a temporary surface. In this case, the driver will use less video memory.
+[in] A UINT value that specifies whether the driver needs a temporary surface during processing of commands that are specified by the <b>ClearTypeBlend</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_renderkm_command.md">DXGK_RENDERKM_COMMAND</a> structure. If <b>NoTempSurfaceForClearTypeBlend</b> is set, the driver does not need a temporary surface. In this case, the driver will use less video memory.
 
 Setting this member to zero is equivalent to setting the twenty-first bit of the 32-bit <b>Value</b> member (0x00100000).
 
@@ -365,10 +366,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmdt_gdisurfacetype">D3DKMDT_GDISURFACETYPE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>
 </dt>
 <dt>
-<a href="display.dxgk_drivercaps">DXGK_DRIVERCAPS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
@@ -381,5 +382,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_PRESENTATIONCAPS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_PRESENTATIONCAPS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

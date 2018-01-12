@@ -1,5 +1,5 @@
 ---
-UID: NC.gpioclx.GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION
+UID: NC:gpioclx.GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION
 title: GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION
 author: windows-driver-content
 description: The CLIENT_ControllerSpecificFunction event callback function performs an operation that is specific to a particular general-purpose I/O (GPIO) controller.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 27551BE5-1260-4F05-9847-97C90ADF7968
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at PASSIVE_LEVEL.
+req.typenames: *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ---
 
 # GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION callback

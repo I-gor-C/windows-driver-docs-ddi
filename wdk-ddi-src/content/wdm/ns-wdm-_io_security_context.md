@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._IO_SECURITY_CONTEXT
+UID: NS:wdm._IO_SECURITY_CONTEXT
 title: _IO_SECURITY_CONTEXT
 author: windows-driver-content
 description: The IO_SECURITY_CONTEXT structure represents the security context of an IRP_MJ_CREATE request.
@@ -7,8 +7,8 @@ old-location: kernel\io_security_context.htm
 old-project: kernel
 ms.assetid: 6500c46b-ae39-4c91-8b84-14df0a7046a1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IO_SECURITY_CONTEXT, IO_SECURITY_CONTEXT, *PIO_SECURITY_CONTEXT, PIO_SECURITY_CONTEXT
+ms.date: 1/4/2018
+ms.keywords: _IO_SECURITY_CONTEXT, IO_SECURITY_CONTEXT, *PIO_SECURITY_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: IO_SECURITY_CONTEXT, *PIO_SECURITY_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ Reserved for system use.
 
 ### -field AccessState
 
-Reserved for use by file systems and file system filter drivers. This member is a pointer to an <a href="ifsk.access_state">ACCESS_STATE</a> structure that contains the object's subject context, granted access types, and remaining desired access types. 
+Reserved for use by file systems and file system filter drivers. This member is a pointer to an <a href="..\wdm\ns-wdm-_access_state.md">ACCESS_STATE</a> structure that contains the object's subject context, granted access types, and remaining desired access types. 
 
 
 ### -field DesiredAccess
@@ -101,7 +102,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="ifsk.access_state">ACCESS_STATE</a>
+<a href="..\wdm\ns-wdm-_access_state.md">ACCESS_STATE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
@@ -111,5 +112,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_SECURITY_CONTEXT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_SECURITY_CONTEXT structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

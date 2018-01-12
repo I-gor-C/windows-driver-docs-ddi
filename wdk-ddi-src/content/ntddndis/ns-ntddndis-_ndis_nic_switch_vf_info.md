@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_NIC_SWITCH_VF_INFO
+UID: NS:ntddndis._NDIS_NIC_SWITCH_VF_INFO
 title: _NDIS_NIC_SWITCH_VF_INFO
 author: windows-driver-content
 description: The NDIS_NIC_SWITCH_VF_INFO structure specifies the information about a PCI Express (PCIe) Virtual Function (VF) that has been allocated on the network adapter.
 old-location: netvista\ndis_nic_switch_vf_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1af8b1cd-c594-49c7-8c25-674226295d90
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_NIC_SWITCH_VF_INFO, NDIS_NIC_SWITCH_VF_INFO, PNDIS_NIC_SWITCH_VF_INFO, *PNDIS_NIC_SWITCH_VF_INFO
+ms.date: 1/8/2018
+ms.keywords: _NDIS_NIC_SWITCH_VF_INFO, NDIS_NIC_SWITCH_VF_INFO, *PNDIS_NIC_SWITCH_VF_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_NIC_SWITCH_VF_INFO, *PNDIS_NIC_SWITCH_VF_INFO
 ---
 
 # _NDIS_NIC_SWITCH_VF_INFO structure
@@ -65,7 +66,7 @@ typedef struct _NDIS_NIC_SWITCH_VF_INFO {
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_NIC_SWITCH_VF_INFO</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_NIC_SWITCH_VF_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_VF_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -117,7 +118,7 @@ An NDIS_SWITCH_NIC_NAME value that specifies the name of the virtual machine (VM
 
 The VM network adapter is a virtual device that is exposed in the guest operating system that runs in a Hyper-V child partition. The VM network adapter teams with the VF network adapter to provide the hardware-based VF data path over the SR-IOV interface. 
 
-For more information about the VF data path, see <a href="netvista.sr-iov_vf_data_path">SR-IOV VF Data Path</a>.
+For more information about the VF data path, see <a href="https://msdn.microsoft.com/0DC2327E-3A58-46BC-A3D6-3AFD24ABC901">SR-IOV VF Data Path</a>.
 
 
 ### -field MacAddressLength
@@ -146,9 +147,9 @@ An NDIS_VF_RID that specifies the PCI Express (PCIe) Requestor ID (RID) of the V
 
 
 ## -remarks
-An <b>NDIS_NIC_SWITCH_VF_INFO</b> structure contains information about a VF that was previously created through an OID method request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>. When this OID request is issued, one or more <b>NDIS_NIC_SWITCH_VF_INFO</b> structures are returned within an <a href="netvista.ndis_nic_switch_vf_info_array">NDIS_NIC_SWITCH_VF_INFO_ARRAY</a> structure.
+An <b>NDIS_NIC_SWITCH_VF_INFO</b> structure contains information about a VF that was previously created through an OID method request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>. When this OID request is issued, one or more <b>NDIS_NIC_SWITCH_VF_INFO</b> structures are returned within an <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vf_info_array.md">NDIS_NIC_SWITCH_VF_INFO_ARRAY</a> structure.
 
-For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.
+For more information about the SR-IOV interface, see 	<a href="https://msdn.microsoft.com/B241F468-F568-4500-9356-E576CEBA8F3B">Overview of Single Root I/O Virtualization (SR-IOV)</a>.
 
 
 ## -requirements
@@ -180,10 +181,10 @@ Header
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="netvista.ndis_nic_switch_vf_info_array">NDIS_NIC_SWITCH_VF_INFO_ARRAY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vf_info_array.md">NDIS_NIC_SWITCH_VF_INFO_ARRAY</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>
@@ -193,5 +194,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_NIC_SWITCH_VF_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VF_INFO structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDMMC._FEATURE_HEADER
+UID: NS:ntddmmc._FEATURE_HEADER
 title: _FEATURE_HEADER
 author: windows-driver-content
 description: The FEATURE_HEADER structure is used in conjunction with the IOCTL_CDROM_GET_CONFIGURATION request to report header information for both feature and profile descriptors.
@@ -7,8 +7,8 @@ old-location: storage\feature_header.htm
 old-project: storage
 ms.assetid: 61831fbb-48ad-4831-8b69-7b1a5cafa629
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _FEATURE_HEADER, *PFEATURE_HEADER, FEATURE_HEADER, PFEATURE_HEADER
+ms.date: 1/10/2018
+ms.keywords: _FEATURE_HEADER, FEATURE_HEADER, *PFEATURE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FEATURE_HEADER, *PFEATURE_HEADER
 ---
 
 # _FEATURE_HEADER structure
@@ -60,7 +61,7 @@ typedef struct _FEATURE_HEADER {
 
 ### -field FeatureCode
 
-Contains a value between zero and 0xffff that indicates a feature. The <a href="storage.feature_number">FEATURE_NUMBER</a> enumeration provides a list of currently supported feature numbers. <b>FeatureCode</b>[0] contains the most significant byte of the feature number. <b>FeatureCode</b>[1] contains the least significant byte. 
+Contains a value between zero and 0xffff that indicates a feature. The <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a> enumeration provides a list of currently supported feature numbers. <b>FeatureCode</b>[0] contains the most significant byte of the feature number. <b>FeatureCode</b>[1] contains the least significant byte. 
 
 
 ### -field Current
@@ -112,15 +113,15 @@ Header
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_configuration.md">IOCTL_CDROM_GET_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="storage.get_configuration_header">GET_CONFIGURATION_HEADER</a>
+<a href="..\ntddmmc\ns-ntddmmc-_get_configuration_header.md">GET_CONFIGURATION_HEADER</a>
 </dt>
 <dt>
-<a href="storage.feature_number">FEATURE_NUMBER</a>
+<a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_HEADER structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20FEATURE_HEADER structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

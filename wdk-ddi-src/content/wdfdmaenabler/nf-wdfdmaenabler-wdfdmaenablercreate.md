@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdmaenabler.WdfDmaEnablerCreate
+UID: NF:wdfdmaenabler.WdfDmaEnablerCreate
 title: WdfDmaEnablerCreate function
 author: windows-driver-content
 description: The WdfDmaEnablerCreate method creates a DMA enabler object.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdmaenablercreate.htm
 old-project: wdf
 ms.assetid: 750c9293-7662-41e0-9a2a-5c19e49ad20e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDmaEnablerCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_DMA_PROFILE
 req.product: Windows 10 or later.
 ---
 
@@ -66,12 +67,12 @@ A handle to a framework device object.
 
 ### -param Config [in]
 
-A pointer to a <a href="wdf.wdf_dma_enabler_config">WDF_DMA_ENABLER_CONFIG</a> structure. Drivers must initialize this structure by calling <a href="wdf.wdf_dma_enabler_config_init">WDF_DMA_ENABLER_CONFIG_INIT</a>.
+A pointer to a <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a> structure. Drivers must initialize this structure by calling <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf_dma_enabler_config_init.md">WDF_DMA_ENABLER_CONFIG_INIT</a>.
 
 
 ### -param Attributes [in, optional]
 
-A pointer to a <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the new DMA enabler object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES. 
+A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the new DMA enabler object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES. 
 
 
 ### -param DmaEnablerHandle [out]
@@ -91,14 +92,14 @@ A handle to a new DMA enabler object.
        
 <dl>
 <dt><b>STATUS_INFO_LENGTH_MISMATCH</b></dt>
-</dl>The size of the <a href="wdf.wdf_dma_enabler_config">WDF_DMA_ENABLER_CONFIG</a> structure is incorrect.
+</dl>The size of the <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a> structure is incorrect.
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
 </dl>The driver requested DMA version 3 on an operating system earlier than Windows 8.
 
  
 
-For a list of other return values that the <b>WdfDmaEnablerCreate</b> method might return, see <a href="wdf.framework_object_creation_errors">Framework Object Creation Errors</a>.
+For a list of other return values that the <b>WdfDmaEnablerCreate</b> method might return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
 
 
@@ -112,13 +113,13 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## -remarks
 Framework-based drivers must call <b>WdfDmaEnablerCreate</b> before creating DMA transactions for a device.
 
-Before a driver calls <b>WdfDmaEnablerCreate</b>, it must call <a href="wdf.wdfdevicesetalignmentrequirement">WdfDeviceSetAlignmentRequirement</a>.
+Before a driver calls <b>WdfDmaEnablerCreate</b>, it must call <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetalignmentrequirement.md">WdfDeviceSetAlignmentRequirement</a>.
 
-The framework device object that the <i>Device</i> parameter of <b>WdfDmaEnablerCreate</b> specifies always becomes the parent object for the new DMA enabler object. If the driver specifies a different parent in the <b>ParentObject</b> member of the <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure, the framework ignores this value. The framework deletes the DMA enabler object when it deletes the parent object.
+The framework device object that the <i>Device</i> parameter of <b>WdfDmaEnablerCreate</b> specifies always becomes the parent object for the new DMA enabler object. If the driver specifies a different parent in the <b>ParentObject</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure, the framework ignores this value. The framework deletes the DMA enabler object when it deletes the parent object.
 
-When called with a  <i>Config</i> parameter that requests a system-mode DMA profile, <b>WdfDmaEnablerCreate</b> creates a partially initialized DMA enabler.  The driver must subsequently call <a href="wdf.wdfdmaenablerconfiguresystemprofile">WdfDmaEnablerConfigureSystemProfile</a> to set up the DMA settings for the underlying channels.
+When called with a  <i>Config</i> parameter that requests a system-mode DMA profile, <b>WdfDmaEnablerCreate</b> creates a partially initialized DMA enabler.  The driver must subsequently call <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablerconfiguresystemprofile.md">WdfDmaEnablerConfigureSystemProfile</a> to set up the DMA settings for the underlying channels.
 
-For more information about DMA enabler objects and <b>WdfDmaEnablerCreate</b>, see <a href="wdf.enabling_dma_transactions">Enabling DMA Transactions</a>.
+For more information about DMA enabler objects and <b>WdfDmaEnablerCreate</b>, see <a href="https://msdn.microsoft.com/87735776-c371-425b-bc53-0c68375c9562">Enabling DMA Transactions</a>.
 
 The following code example is from the <a href="wdf.sample_kmdf_drivers">PLX9x5x</a> sample driver. This example sets a device's requirement for buffer alignment, initializes a WDF_DMA_ENABLER_CONFIG structure, and calls <b>WdfDmaEnablerCreate</b>.
 
@@ -164,7 +165,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -184,7 +185,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -192,21 +193,21 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdf_dma_enabler_config">WDF_DMA_ENABLER_CONFIG</a>
+<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_enabler_config.md">WDF_DMA_ENABLER_CONFIG</a>
 </dt>
 <dt>
-<a href="wdf.wdf_dma_enabler_config_init">WDF_DMA_ENABLER_CONFIG_INIT</a>
+<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdf_dma_enabler_config_init.md">WDF_DMA_ENABLER_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a>
+<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="wdf.wdfdevicesetalignmentrequirement">WdfDeviceSetAlignmentRequirement</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetalignmentrequirement.md">WdfDeviceSetAlignmentRequirement</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaEnablerCreate method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDmaEnablerCreate method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

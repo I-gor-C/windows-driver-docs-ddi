@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGTRANSPORTAUDIOPARMS
+UID: NS:ksmedia.tagTRANSPORTAUDIOPARMS
 title: tagTRANSPORTAUDIOPARMS
 author: windows-driver-content
 description: The TRANSPORTAUDIOPARMS structure is defined but not used.
@@ -7,8 +7,8 @@ old-location: stream\transportaudioparms.htm
 old-project: stream
 ms.assetid: 591ef01a-1a89-454a-ab58-a76813a9d4c2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagTRANSPORTAUDIOPARMS, PTRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS, *PTRANSPORTAUDIOPARMS
+ms.date: 1/9/2018
+ms.keywords: tagTRANSPORTAUDIOPARMS, *PTRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PTRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS
 ---
 
 # tagTRANSPORTAUDIOPARMS structure

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:usbsidebandaudio
 ---
 
 # Usbsidebandaudio.h header

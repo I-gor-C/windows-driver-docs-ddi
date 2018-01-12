@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUKMDT._D3DDDICB_LOCKFLAGS
+UID: NS:d3dukmdt._D3DDDICB_LOCKFLAGS
 title: _D3DDDICB_LOCKFLAGS
 author: windows-driver-content
 description: The D3DDDICB_LOCKFLAGS structure identifies how to lock an allocation.
@@ -7,7 +7,7 @@ old-location: display\d3dddicb_lockflags.htm
 old-project: display
 ms.assetid: 4b3a266f-4d60-4d39-81fb-ea2b4aa12a8d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDICB_LOCKFLAGS, D3DDDICB_LOCKFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDICB_LOCKFLAGS
 ---
 
 # _D3DDDICB_LOCKFLAGS structure
@@ -138,7 +139,7 @@ Setting this member is equivalent to setting the ninth bit of the 32-bit <b>Valu
 
 ### -field UseAlternateVA
 
-A UINT value that specifies whether the display miniport driver can lock an allocation at a different physical address than the allocation's current segment location or with a different memory footprint than was previously allocated. When this flag is specified, the display miniport driver can update the base address and size of the physical address range that the allocation is CPU accessible through (by updating the <b>RangeSize</b> and <b>CPUTranslatedAddress</b> members of the <a href="display.dxgkarg_acquireswizzlingrange">DXGKARG_ACQUIRESWIZZLINGRANGE</a> structure in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a> function). When this flag is specified, the video memory manager attempts to allocate a new virtual address to handle the lock request rather than use the allocation backing store virtual address. However, if the video memory manager cannot allocate the new virtual address, the lock request fails.
+A UINT value that specifies whether the display miniport driver can lock an allocation at a different physical address than the allocation's current segment location or with a different memory footprint than was previously allocated. When this flag is specified, the display miniport driver can update the base address and size of the physical address range that the allocation is CPU accessible through (by updating the <b>RangeSize</b> and <b>CPUTranslatedAddress</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_acquireswizzlingrange.md">DXGKARG_ACQUIRESWIZZLINGRANGE</a> structure in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a> function). When this flag is specified, the video memory manager attempts to allocate a new virtual address to handle the lock request rather than use the allocation backing store virtual address. However, if the video memory manager cannot allocate the new virtual address, the lock request fails.
 
 This flag is also used to lock swizzled or tiled allocations that are currently located in a non-AGP aperture segment. In this type of lock, the video memory manager maps the alternate virtual address to a physical address range that can be unswizzled or untiled on the fly and then redirects the memory access to the system memory pages.
 
@@ -162,7 +163,7 @@ The allocation is being paged in after it was evicted while under lock.
 
 </li>
 </ul>
-Be aware that <b>UseAlternateVA</b> can only be used on the primary allocation if the primary allocation was created by specifying the <b>UseAlternateVA</b> bit-field flag in the <b>Flags</b> member of the <a href="display.dxgk_allocationinfo">DXGK_ALLOCATIONINFO</a> structure in a call to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> function. A primary allocation that is created in such a way can only be locked with the <b>UseAlternateVA</b> flag.
+Be aware that <b>UseAlternateVA</b> can only be used on the primary allocation if the primary allocation was created by specifying the <b>UseAlternateVA</b> bit-field flag in the <b>Flags</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a> structure in a call to the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a> function. A primary allocation that is created in such a way can only be locked with the <b>UseAlternateVA</b> flag.
 
 <b>UseAlternateVA</b> cannot be used on a shared allocation.
 
@@ -207,7 +208,7 @@ Because specifying the <b>UseAlternateVA</b> member indicates that an aperture i
 
 Retired or offered allocations cannot be locked. See also <a href="https://msdn.microsoft.com/f22e19ba-9ff3-4aa1-a3f0-103f67ea7c60">Requesting to Rename an Allocation</a>.
 
-An allocation can be locked only if it was created with the <b>CpuVisible</b>  member set in the <a href="display.dxgk_allocationinfoflags">DXGK_ALLOCATIONINFOFLAGS</a> structure.
+An allocation can be locked only if it was created with the <b>CpuVisible</b>  member set in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a> structure.
 
 Only the owner (creator) of a shared allocation can lock it, unless it's a GDI non-managed primary allocation.
 
@@ -242,10 +243,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddicb_lock">D3DDDICB_LOCK</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock.md">D3DDDICB_LOCK</a>
 </dt>
 <dt>
-<a href="display.dxgk_allocationinfoflags">DXGK_ALLOCATIONINFOFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a>
@@ -258,5 +259,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDICB_LOCKFLAGS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDICB_LOCKFLAGS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

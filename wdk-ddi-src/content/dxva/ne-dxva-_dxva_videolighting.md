@@ -1,5 +1,5 @@
 ---
-UID: NE.dxva._DXVA_VideoLighting
+UID: NE:dxva._DXVA_VideoLighting
 title: _DXVA_VideoLighting
 author: windows-driver-content
 description: The DXVA_VideoLighting enumeration type contains enumerators that identify lighting conditions for viewing video.
@@ -7,7 +7,7 @@ old-location: display\dxva_videolighting.htm
 old-project: display
 ms.assetid: 09adfa3f-443b-4500-bb08-27f91da20778
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVA_VideoLighting, DXVA_VideoLighting
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVA_VideoLighting
 ---
 
 # _DXVA_VideoLighting enumeration
@@ -95,7 +96,7 @@ Specifies near darkness for viewing video (for example, movie-theatre lighting).
 
 
 ## -remarks
-One of the enumerators of DXVA_VideoLighting can be specified in the <b>VideoLighting</b> member of the <a href="display.dxva_extendedformat">DXVA_ExtendedFormat</a> structure.
+One of the enumerators of DXVA_VideoLighting can be specified in the <b>VideoLighting</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure.
 
 The video lighting enumerators can be used to alter the gamma to generate a comparable experience in a different lighting condition. 
 
@@ -128,12 +129,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxva_extendedformat">DXVA_ExtendedFormat</a>
+<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_VideoLighting enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVA_VideoLighting enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

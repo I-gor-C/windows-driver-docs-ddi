@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ntddpcm
 ---
 
 # Ntddpcm.h header
@@ -11,13 +11,6 @@ This header is used by PCMCIA. For more information, see
 
 Ntddpcm.h contain these programming interfaces:
 
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [PCMCIA_MODIFY_MEMORY_WINDOW callback](nc-ntddpcm-pcmcia_modify_memory_window.md) | The PCMCIA_MODIFY_MEMORY_WINDOW interface routine sets the attributes of a memory window for a PCMCIA memory card. The memory window is mapped by the PCMCIA bus driver. |
-| [PCMCIA_SET_VPP callback](nc-ntddpcm-pcmcia_set_vpp.md) | The PCMCIA_SET_VPP interface routine sets the power level of the Vpp PCMCIA pin (secondary power source). |
 
 ## Structures
 

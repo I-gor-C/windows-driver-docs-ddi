@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasValidateItemProperties
+UID: NF:wiamdef.wiasValidateItemProperties
 title: wiasValidateItemProperties function
 author: windows-driver-content
 description: The wiasValidateItemProperties function validates a list of simple item properties against their current valid values.
 old-location: image\wiasvalidateitemproperties.htm
-old-project: Image
+old-project: image
 ms.assetid: d7858b1b-88cf-4e75-a466-40afdcb01d9b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasValidateItemProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 

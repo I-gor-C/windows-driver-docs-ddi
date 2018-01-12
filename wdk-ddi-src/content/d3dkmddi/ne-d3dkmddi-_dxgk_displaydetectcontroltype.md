@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmddi._DXGK_DISPLAYDETECTCONTROLTYPE
+UID: NE:d3dkmddi._DXGK_DISPLAYDETECTCONTROLTYPE
 title: _DXGK_DISPLAYDETECTCONTROLTYPE
 author: windows-driver-content
 description: Enumeration indicating the type of display detection action.
@@ -7,7 +7,7 @@ old-location: display\dxgk_displaydetectcontroltype.htm
 old-project: display
 ms.assetid: D777342E-439E-4BEF-9DCC-7962B1AF8EAB
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_DISPLAYDETECTCONTROLTYPE, DXGK_DISPLAYDETECTCONTROLTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_DISPLAYDETECTCONTROLTYPE
 ---
 
 # _DXGK_DISPLAYDETECTCONTROLTYPE enumeration

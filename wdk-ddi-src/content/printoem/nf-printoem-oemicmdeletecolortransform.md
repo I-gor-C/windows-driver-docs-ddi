@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMIcmDeleteColorTransform
+UID: NF:printoem.OEMIcmDeleteColorTransform
 title: OEMIcmDeleteColorTransform function
 author: windows-driver-content
 description: The OEMIcmDeleteColorTransform function deletes the specified color transform.
@@ -7,7 +7,7 @@ old-location: print\oemicmdeletecolortransform.htm
 old-project: print
 ms.assetid: 820d9e28-fe06-4aa7-91d8-a90340affb94
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMIcmDeleteColorTransform
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

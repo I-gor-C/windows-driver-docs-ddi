@@ -1,19 +1,19 @@
 ---
-UID: NE.rilapitypes.RILSUBSCRIBERINFOPARAMMASK
+UID: NE:rilapitypes.RILSUBSCRIBERINFOPARAMMASK
 title: RILSUBSCRIBERINFOPARAMMASK
 author: windows-driver-content
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location: netvista\rilsubscriberinfoparammask_2.htm
-old-project: NetVista
-ms.assetid: fe8b08d4-4cc1-49cd-b0f8-29e8b198b0d1
+description: This enumeration describes the RILSUBSCRIBERINFOPARAMMASK.
+old-location: netvista\rilsubscriberinfoparammask.htm
+old-project: netvista
+ms.assetid: 271492ee-9053-4150-9e31-f121c9a94097
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILSUBSCRIBERINFOPARAMMASK, RILSUBSCRIBERINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
 req.header: rilapitypes.h
-req.include-header: 
+req.include-header: Rilapitypes.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSUBSCRIBERINFOPARAMMASK
 req.product: Windows 10 or later.
 ---
 
@@ -39,22 +40,24 @@ req.product: Windows 10 or later.
 
 
 ## -description
-This topic supports the Windows driver infrastructure and is not intended to be used directly from your code. 
-
-
 
 ## -syntax
 
 ````
-typedef enum _RILSUBSCRIBERINFOPARAMMASK { 
-  RIL_PARAM_SI_DESCRIPTION,
-  RIL_PARAM_SI_SERVICE,
-  RIL_PARAM_SI_ALL
-} RILSUBSCRIBERINFOPARAMMASK;
+enum RILSUBSCRIBERINFOPARAMMASK {
+  RIL_PARAM_SI_ADDRESS      = 0x00000001, 
+  RIL_PARAM_SI_DESCRIPTION  = 0x00000002, 
+  RIL_PARAM_SI_SERVICE      = 0x00000004, 
+  RIL_PARAM_SI_ALL          = 0x00000007 
+
+};
 ````
 
 
 ## -enum-fields
+
+### -field RIL_PARAM_SI_ADDRESS
+
 
 ### -field RIL_PARAM_SI_DESCRIPTION
 
@@ -77,8 +80,21 @@ Header
 </th>
 <td width="70%">
 <dl>
-<dt>Rilapitypes.h</dt>
+<dt>Rilapitypes.h (include Rilapitypes.h)</dt>
 </dl>
 </td>
 </tr>
 </table>
+
+## -see-also
+<dl>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+</dt>
+</dl>
+ 
+
+ 
+
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20RILSUBSCRIBERINFOPARAMMASK enumeration%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+

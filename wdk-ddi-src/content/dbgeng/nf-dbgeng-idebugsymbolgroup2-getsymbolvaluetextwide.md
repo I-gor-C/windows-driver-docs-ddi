@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbolGroup2.GetSymbolValueTextWide
+UID: NF:dbgeng.IDebugSymbolGroup2.GetSymbolValueTextWide
 title: IDebugSymbolGroup2::GetSymbolValueTextWide method
 author: windows-driver-content
 description: The GetSymbolValueTextWide method returns a string that represents the value of a symbol.
 old-location: debugger\getsymbolvaluetextwide.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 56e147ea-497b-4691-8a62-8165828b1f36
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbolGroup2, IDebugSymbolGroup2::GetSymbolValueTextWide, GetSymbolValueTextWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbolGroup2::GetSymbolValueTextWide method
@@ -90,7 +91,7 @@ This method can also return error values.  For more information, see <a href="ht
 
 
 ## -remarks
-If you added the symbol to the symbol group by using the <a href="debugger.addsymbol">AddSymbol</a> method, the string that is returned to <i>Buffer</i> is the name of the symbol that is passed to <b>AddSymbol</b>.
+If you added the symbol to the symbol group by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537925">AddSymbol</a> method, the string that is returned to <i>Buffer</i> is the name of the symbol that is passed to <b>AddSymbol</b>.
 
 For more information about symbol groups, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554702">Scopes and Symbol Groups</a>.
 
@@ -127,15 +128,15 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
 </dt>
 <dt>
-<a href="debugger.getnumbersymbols">GetNumberSymbols</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
 </dt>
 <dt>
-<a href="debugger.writesymbol">WriteSymbol</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561457">WriteSymbol</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugSymbolGroup2::GetSymbolValueTextWide method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbolGroup2::GetSymbolValueTextWide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

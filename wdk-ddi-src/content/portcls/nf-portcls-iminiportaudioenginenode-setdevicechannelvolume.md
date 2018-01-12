@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioEngineNode.SetDeviceChannelVolume
+UID: NF:portcls.IMiniportAudioEngineNode.SetDeviceChannelVolume
 title: IMiniportAudioEngineNode::SetDeviceChannelVolume method
 author: windows-driver-content
 description: Sets the volume level for a given channel of the audio device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioEngineNode::SetDeviceChannelVolume method

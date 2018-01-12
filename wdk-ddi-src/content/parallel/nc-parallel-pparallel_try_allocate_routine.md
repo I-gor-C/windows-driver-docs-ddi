@@ -1,5 +1,5 @@
 ---
-UID: NC.parallel.PPARALLEL_TRY_ALLOCATE_ROUTINE
+UID: NC:parallel.PPARALLEL_TRY_ALLOCATE_ROUTINE
 title: PPARALLEL_TRY_ALLOCATE_ROUTINE
 author: windows-driver-content
 description: The PPARALLEL_TRY_ALLOCATE_ROUTINE-typed (ISR) callback routine attempts to allocate a parallel port at IRQL = DIRQL. The system-supplied function driver for parallel ports supplies this routine.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DIRQL
+req.typenames: *LPRILGBATOKEN, RILGBATOKEN
 ---
 
 # PPARALLEL_TRY_ALLOCATE_ROUTINE callback
@@ -70,7 +71,7 @@ Pointer to the device extension of a functional device object that represents a 
 
 
 ## -remarks
-A kernel-mode driver connects an interrupt service routine by using an <a href="..\parallel\ni-parallel-ioctl_internal_parallel_connect_interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>, which returns a <a href="parports.parallel_interrupt_information">PARALLEL_INTERRUPT_INFORMATION</a> structure. This structure includes the <b>TryAllocatePortAtInterruptLevel</b> member, which is a pointer to the system-supplied <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> (ISR) callback.
+A kernel-mode driver connects an interrupt service routine by using an <a href="..\parallel\ni-parallel-ioctl_internal_parallel_connect_interrupt.md">IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT</a>, which returns a <a href="..\parallel\ns-parallel-_parallel_interrupt_information.md">PARALLEL_INTERRUPT_INFORMATION</a> structure. This structure includes the <b>TryAllocatePortAtInterruptLevel</b> member, which is a pointer to the system-supplied <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> (ISR) callback.
 
 The <i>PPARALLEL_TRY_ALLOCATE_ROUTINE</i> (ISR) callback is nonblocking, does not queue an allocate request, and returns immediately.
 
@@ -133,7 +134,7 @@ DIRQL
 <a href="..\parallel\ni-parallel-ioctl_internal_parallel_port_free.md">IOCTL_INTERNAL_PARALLEL_PORT_FREE</a>
 </dt>
 <dt>
-<a href="parports.parallel_interrupt_information">PARALLEL_INTERRUPT_INFORMATION</a>
+<a href="..\parallel\ns-parallel-_parallel_interrupt_information.md">PARALLEL_INTERRUPT_INFORMATION</a>
 </dt>
 <dt>
 <a href="..\parallel\nc-parallel-pparallel_free_routine.md">PPARALLEL_FREE_ROUTINE (ISR)</a>

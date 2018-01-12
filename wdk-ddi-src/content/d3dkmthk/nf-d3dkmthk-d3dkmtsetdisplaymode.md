@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTSetDisplayMode
+UID: NF:d3dkmthk.D3DKMTSetDisplayMode
 title: D3DKMTSetDisplayMode function
 author: windows-driver-content
 description: The D3DKMTSetDisplayMode function sets the allocation that is used to scan out to the display.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtsetdisplaymode.htm
 old-project: display
 ms.assetid: bf51b8dc-82e8-420e-bc3d-7cb9e8d72b9f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTSetDisplayMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Gdi32.lib
 req.dll: Gdi32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTSetDisplayMode function
@@ -55,7 +56,7 @@ NTSTATUS APIENTRY D3DKMTSetDisplayMode(
 
 ### -param pData [in, out]
 
-A pointer to a <a href="display.d3dkmt_setdisplaymode">D3DKMT_SETDISPLAYMODE</a> structure that describes the allocation that is used to scan out.
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setdisplaymode.md">D3DKMT_SETDISPLAYMODE</a> structure that describes the allocation that is used to scan out.
 
 
 ## -returns
@@ -73,12 +74,12 @@ A pointer to a <a href="display.d3dkmt_setdisplaymode">D3DKMT_SETDISPLAYMODE</a>
 <dt><b>STATUS_GRAPHICS_NOT_EXCLUSIVE_MODE_OWNER</b></dt>
 </dl>
         Before the call to 
-      <a href="display.d3dkmtsetdisplaymode">D3DKMTSetDisplayMode</a>, the device did not acquire exclusive ownership of the view; therefore, the device could not set the display mode.
+      <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplaymode.md">D3DKMTSetDisplayMode</a>, the device did not acquire exclusive ownership of the view; therefore, the device could not set the display mode.
        
 <dl>
 <dt><b>D3DDDIERR_INCOMPATIBLEPRIVATEFORMAT</b></dt>
-</dl>The OpenGL installable client driver (ICD) must convert the format of the surface that is associated with the allocation that the <b>hPrimaryAllocation</b> member of <a href="display.d3dkmt_setdisplaymode">D3DKMT_SETDISPLAYMODE</a> specifies into the format attribute that the <b>PrivateDriverFormatAttribute</b> member of D3DKMT_SETDISPLAYMODE specifies. The ICD should then call 
-      <a href="display.d3dkmtsetdisplaymode">D3DKMTSetDisplayMode</a> again. The ICD could allocate a new allocation, perform a conversion bit-block transfer (bitblt) from the old primary to the new, and then destroy the old primary as long as the ICD uses the new allocation handle for this allocation for all subsequent operations. The ICD should repeat this process until 
+</dl>The OpenGL installable client driver (ICD) must convert the format of the surface that is associated with the allocation that the <b>hPrimaryAllocation</b> member of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setdisplaymode.md">D3DKMT_SETDISPLAYMODE</a> specifies into the format attribute that the <b>PrivateDriverFormatAttribute</b> member of D3DKMT_SETDISPLAYMODE specifies. The ICD should then call 
+      <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplaymode.md">D3DKMTSetDisplayMode</a> again. The ICD could allocate a new allocation, perform a conversion bit-block transfer (bitblt) from the old primary to the new, and then destroy the old primary as long as the ICD uses the new allocation handle for this allocation for all subsequent operations. The ICD should repeat this process until 
       <i>D3DKMTSetDisplayMode</i> returns a different return value. 
 
  
@@ -153,12 +154,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_setdisplaymode">D3DKMT_SETDISPLAYMODE</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setdisplaymode.md">D3DKMT_SETDISPLAYMODE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTSetDisplayMode function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTSetDisplayMode function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.POCLASS._BATTERY_INFORMATION
+UID: NS:poclass._BATTERY_INFORMATION
 title: _BATTERY_INFORMATION
 author: windows-driver-content
 description: Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: e9326d96-bd96-4493-a0b2-abe6b8f2401a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _BATTERY_INFORMATION, *PBATTERY_INFORMATION, PBATTERY_INFORMATION, BATTERY_INFORMATION
+ms.keywords: _BATTERY_INFORMATION, BATTERY_INFORMATION, *PBATTERY_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Called at PASSIVE_LEVEL.
+req.irql: 
+req.typenames: BATTERY_INFORMATION, *PBATTERY_INFORMATION
 ---
 
 # _BATTERY_INFORMATION structure
@@ -38,7 +39,7 @@ req.irql: Called at PASSIVE_LEVEL.
 
 
 ## -description
-Battery miniclass drivers fill in this structure in response to certain <a href="battery.batteryminiqueryinformation">BatteryMiniQueryInformation</a> requests. 
+Battery miniclass drivers fill in this structure in response to certain <a href="https://msdn.microsoft.com/bd96b79a-5670-4aaf-b72c-619818c2a2e7">BatteryMiniQueryInformation</a> requests. 
 
 
 
@@ -133,7 +134,7 @@ Specify the capacity (in milliwatt-hours) at which a warning battery alert shoul
 
 ### -field CriticalBias
 
-Specify the amount (in milliwatt-hours) of any small reserved charge that remains when the critical battery level shows zero. Miniclass drivers should subtract this value from the battery's <b>FullChargedCapacity</b> and remaining capacity (reported in <a href="battery.battery_status">BATTERY_STATUS</a>) before reporting those values.
+Specify the amount (in milliwatt-hours) of any small reserved charge that remains when the critical battery level shows zero. Miniclass drivers should subtract this value from the battery's <b>FullChargedCapacity</b> and remaining capacity (reported in <a href="..\poclass\ns-poclass-_battery_status.md">BATTERY_STATUS</a>) before reporting those values.
 
 
 ### -field CycleCount
@@ -162,10 +163,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="battery.batteryminiqueryinformation">BatteryMiniQueryInformation</a>
+<a href="https://msdn.microsoft.com/bd96b79a-5670-4aaf-b72c-619818c2a2e7">BatteryMiniQueryInformation</a>
 </dt>
 <dt>
-<a href="battery.batteryminiquerystatus">BatteryMiniQueryStatus</a>
+<a href="https://msdn.microsoft.com/04811f63-8a57-4b39-84c5-c9b7f803c057">BatteryMiniQueryStatus</a>
 </dt>
 </dl>
  

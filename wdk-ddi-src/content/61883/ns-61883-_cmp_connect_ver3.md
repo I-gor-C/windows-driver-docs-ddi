@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CMP_CONNECT_VER3
+UID: NS:61883._CMP_CONNECT_VER3
 title: _CMP_CONNECT_VER3
 author: windows-driver-content
 description: This structure contains information for a connection request.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 1F2C2B8E-6535-40F1-A5D3-46DAD43E923E
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CMP_CONNECT_VER3, CMP_CONNECT_VER3, *PCMP_CONNECT_VER3, PCMP_CONNECT_VER3
+ms.keywords: _CMP_CONNECT_VER3, CMP_CONNECT_VER3, *PCMP_CONNECT_VER3, *PCMP_CONNECT, CMP_CONNECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: CMP_CONNECT_VER3, *PCMP_CONNECT_VER3
 ---
 
 # _CMP_CONNECT_VER3 structure

@@ -1,5 +1,5 @@
 ---
-UID: NE.fltuserstructures._FLT_FILESYSTEM_TYPE
+UID: NE:fltuserstructures._FLT_FILESYSTEM_TYPE
 title: _FLT_FILESYSTEM_TYPE
 author: windows-driver-content
 description: The FLT_FILESYSTEM_TYPE enumeration identifies the type of file system being used on a volume.
@@ -7,8 +7,8 @@ old-location: ifsk\flt_filesystem_type.htm
 old-project: ifsk
 ms.assetid: b4bdfa93-3db5-4dfa-b539-112927cbedb0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FLT_FILESYSTEM_TYPE, PFLT_FILESYSTEM_TYPE, *PFLT_FILESYSTEM_TYPE, FLT_FILESYSTEM_TYPE
+ms.date: 1/9/2018
+ms.keywords: _FLT_FILESYSTEM_TYPE, *PFLT_FILESYSTEM_TYPE, FLT_FILESYSTEM_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PFLT_FILESYSTEM_TYPE, FLT_FILESYSTEM_TYPE
 ---
 
 # _FLT_FILESYSTEM_TYPE enumeration
@@ -264,13 +265,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.filter_volume_standard_information">FILTER_VOLUME_STANDARD_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_filter_volume_standard_information.md">FILTER_VOLUME_STANDARD_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetfilesystemtype">FltGetFileSystemType</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetfilesystemtype.md">FltGetFileSystemType</a>
 </dt>
 <dt>
-<a href="ifsk.instance_aggregate_standard_information">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_instance_aggregate_standard_information.md">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_instance_setup_callback.md">PFLT_INSTANCE_SETUP_CALLBACK</a>
@@ -280,5 +281,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_FILESYSTEM_TYPE enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_FILESYSTEM_TYPE enumeration%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.WMISTR.TAGWNODE_ALL_DATA
+UID: NS:wmistr.tagWNODE_ALL_DATA
 title: tagWNODE_ALL_DATA
 author: windows-driver-content
 description: The WNODE_ALL_DATA structure contains data for all instances of a data block or event block.
@@ -7,8 +7,8 @@ old-location: kernel\wnode_all_data.htm
 old-project: kernel
 ms.assetid: 15582270-6cc4-43d4-b9e6-dceab3bc092d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: tagWNODE_ALL_DATA, WNODE_ALL_DATA, *PWNODE_ALL_DATA, PWNODE_ALL_DATA
+ms.date: 1/4/2018
+ms.keywords: tagWNODE_ALL_DATA, WNODE_ALL_DATA, *PWNODE_ALL_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: WNODE_ALL_DATA, *PWNODE_ALL_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ typedef struct tagWNODE_ALL_DATA {
 
 ### -field WnodeHeader
 
-Specifies a <a href="kernel.wnode_header">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.
+Specifies a <a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.
 
 
 ### -field DataBlockOffset
@@ -149,15 +150,15 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551650">IRP_MN_QUERY_ALL_DATA</a>
 </dt>
 <dt>
-<a href="kernel.wnode_event_item">WNODE_EVENT_ITEM</a>
+<a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a>
 </dt>
 <dt>
-<a href="kernel.wnode_header">WNODE_HEADER</a>
+<a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_ALL_DATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_ALL_DATA structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

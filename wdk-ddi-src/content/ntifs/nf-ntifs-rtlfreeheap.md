@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlFreeHeap
+UID: NF:ntifs.RtlFreeHeap
 title: RtlFreeHeap function
 author: windows-driver-content
 description: The RtlFreeHeap routine frees a memory block that was allocated from a heap by RtlAllocateHeap.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlfreeheap.htm
 old-project: ifsk
 ms.assetid: 5e8b6bd7-71e7-45ad-985c-fe197693ce05
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlFreeHeap
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: < DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlFreeHeap function
@@ -38,7 +39,7 @@ req.irql: < DISPATCH_LEVEL
 
 
 ## -description
-The <b>RtlFreeHeap</b> routine frees a memory block that was allocated from a heap by <a href="ifsk.rtlallocateheap">RtlAllocateHeap</a>. 
+The <b>RtlFreeHeap</b> routine frees a memory block that was allocated from a heap by <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>. 
 
 
 
@@ -57,12 +58,12 @@ BOOLEAN RtlFreeHeap(
 
 ### -param HeapHandle [in]
 
-A handle for the heap whose memory block is to be freed. This parameter is a handle returned by <a href="ifsk.rtlcreateheap">RtlCreateHeap</a>. 
+A handle for the heap whose memory block is to be freed. This parameter is a handle returned by <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>. 
 
 
 ### -param Flags [in, optional]
 
-A set of flags that controls aspects of freeing a memory block. Specifying the following value overrides the corresponding value that was specified in the <i>Flags</i> parameter when the heap was created by <a href="ifsk.rtlcreateheap">RtlCreateHeap</a>. 
+A set of flags that controls aspects of freeing a memory block. Specifying the following value overrides the corresponding value that was specified in the <i>Flags</i> parameter when the heap was created by <a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>. 
 
 <table>
 <tr>
@@ -85,7 +86,7 @@ Mutual exclusion will not be used when <b>RtlFreeHeap</b> is accessing the heap.
 
 ### -param HeapBase [in]
 
-A pointer to the memory block to free. This pointer is returned by <a href="ifsk.rtlallocateheap">RtlAllocateHeap</a>. 
+A pointer to the memory block to free. This pointer is returned by <a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>. 
 
 
 ## -returns
@@ -171,18 +172,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.rtlallocateheap">RtlAllocateHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlallocateheap.md">RtlAllocateHeap</a>
 </dt>
 <dt>
-<a href="ifsk.rtlcreateheap">RtlCreateHeap</a>
+<a href="..\ntifs\nf-ntifs-rtlcreateheap.md">RtlCreateHeap</a>
 </dt>
 <dt>
-<a href="ifsk.rtldestroyheap">RtlDestroyHeap</a>
+<a href="..\ntifs\nf-ntifs-rtldestroyheap.md">RtlDestroyHeap</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlFreeHeap routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlFreeHeap routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

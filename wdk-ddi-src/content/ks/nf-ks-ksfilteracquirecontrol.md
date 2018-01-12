@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsFilterAcquireControl
+UID: NF:ks.KsFilterAcquireControl
 title: KsFilterAcquireControl function
 author: windows-driver-content
 description: The KsFilterAcquireControl function acquires the filter control mutex for the AVStream filter specified by Filter.
@@ -7,7 +7,7 @@ old-location: stream\ksfilteracquirecontrol.htm
 old-project: stream
 ms.assetid: 93dfe9fe-e1af-45db-ab28-fd166f511fcc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsFilterAcquireControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsFilterAcquireControl function
@@ -55,7 +56,7 @@ void __inline KsFilterAcquireControl(
 
 ### -param Filter [in]
 
-The <a href="stream.ksfilter">KSFILTER</a> for which to acquire the control mutex.
+The <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> for which to acquire the control mutex.
 
 
 ## -returns
@@ -63,7 +64,7 @@ None
 
 
 ## -remarks
-This function is an inline call to <a href="stream.ksacquirecontrol">KsAcquireControl</a> with the appropriate typecasting. Minidrivers that manipulate the filter control mutex should call this function instead of calling <b>KsAcquireControl </b>directly. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
+This function is an inline call to <a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a> with the appropriate typecasting. Minidrivers that manipulate the filter control mutex should call this function instead of calling <b>KsAcquireControl </b>directly. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
 
 
 ## -requirements
@@ -115,18 +116,18 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksfilterreleasecontrol">KsFilterReleaseControl</a>
+<a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a>
 </dt>
 <dt>
-<a href="stream.ksacquirecontrol">KsAcquireControl</a>
+<a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
 </dt>
 <dt>
-<a href="stream.ksfilter">KSFILTER</a>
+<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterAcquireControl function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterAcquireControl function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

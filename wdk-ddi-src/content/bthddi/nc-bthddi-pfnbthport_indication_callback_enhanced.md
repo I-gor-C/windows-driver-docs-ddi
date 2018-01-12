@@ -1,5 +1,5 @@
 ---
-UID: NC.bthddi.PFNBTHPORT_INDICATION_CALLBACK_ENHANCED
+UID: NC:bthddi.PFNBTHPORT_INDICATION_CALLBACK_ENHANCED
 title: PFNBTHPORT_INDICATION_CALLBACK_ENHANCED
 author: windows-driver-content
 description: Profile drivers implement an enhanced L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about any changes to the status of a currently open L2CAP or eL2CAP connection.
@@ -7,7 +7,7 @@ old-location: bltooth\enhanced_l2cap_callback_function.htm
 old-project: bltooth
 ms.assetid: 1C08937A-2B0C-4A6C-ACDF-1A751BF0D6F6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ---
 
 # PFNBTHPORT_INDICATION_CALLBACK_ENHANCED callback
@@ -70,14 +71,14 @@ For
 ### -param Indication [in]
 
 An 
-     <a href="bltooth.indication_code">INDICATION_CODE</a> value that indicates the type
+     <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> value that indicates the type
      of L2CAP event.
 
 
 ### -param Parameters [in]
 
 An 
-     <a href="bltooth.indication_parameters_enhanced">INDICATION_PARAMETERS_ENHANCED</a> structure that
+     <a href="..\bthddi\ns-bthddi-_indication_parameters_enhanced.md">INDICATION_PARAMETERS_ENHANCED</a> structure that
      contains event-specific parameters.
 
 
@@ -96,10 +97,10 @@ After the profile driver registers its L2CAP callback function, the callback fun
     Profile drivers can register a single callback function to handle L2CAP channel notifications as a client.
 
 The 
-    <a href="bltooth.indication_parameters_enhanced">INDICATION_PARAMETERS_ENHANCED</a> structure held in
+    <a href="..\bthddi\ns-bthddi-_indication_parameters_enhanced.md">INDICATION_PARAMETERS_ENHANCED</a> structure held in
     the 
     <i>Parameters</i> parameter is interpreted according to the value of the 
-    <a href="bltooth.indication_code">INDICATION_CODE</a> enumeration that the Bluetooth
+    <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> enumeration that the Bluetooth
     driver stack passes to the profile driver's enhanced L2CAP callback function through the 
     <i>Indication</i> parameter. For most notifications, there is an INDICATION_PARAMETERS_ENHANCED union member that
     corresponds to the event and contains event-specific parameters.

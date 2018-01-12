@@ -1,5 +1,5 @@
 ---
-UID: NS.CHARGING._BATTERYPROVISIONINGSTATUS
+UID: NS:charging._BATTERYPROVISIONINGSTATUS
 title: _BATTERYPROVISIONINGSTATUS
 author: windows-driver-content
 description: This structure is for internal use only.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: 4CDDBBC4-2462-41B3-B425-D635B4F1F0C4
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _BATTERYPROVISIONINGSTATUS, *PBATTERYPROVISIONINGSTATUS, BATTERYPROVISIONINGSTATUS, PBATTERYPROVISIONINGSTATUS
+ms.keywords: _BATTERYPROVISIONINGSTATUS, *PBATTERYPROVISIONINGSTATUS, BATTERYPROVISIONINGSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PBATTERYPROVISIONINGSTATUS, BATTERYPROVISIONINGSTATUS
 ---
 
 # _BATTERYPROVISIONINGSTATUS structure

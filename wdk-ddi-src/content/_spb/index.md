@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:spb
 ---
 
 # Simple Peripheral Bus (SPB)

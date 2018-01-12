@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_CLR_DTR
+UID: NI:ntddser.IOCTL_SERIAL_CLR_DTR
 title: IOCTL_SERIAL_CLR_DTR
 author: windows-driver-content
 description: The IOCTL_SERIAL_CLR_DTR request clears the data terminal ready (DTR) control signal.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_CLR_DTR IOCTL

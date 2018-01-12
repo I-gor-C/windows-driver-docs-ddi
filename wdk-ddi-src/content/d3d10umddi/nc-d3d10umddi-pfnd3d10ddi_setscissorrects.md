@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d10umddi.PFND3D10DDI_SETSCISSORRECTS
+UID: NC:d3d10umddi.PFND3D10DDI_SETSCISSORRECTS
 title: PFND3D10DDI_SETSCISSORRECTS
 author: windows-driver-content
 description: The SetScissorRects function marks portions of render targets that rendering is confined to.
@@ -7,8 +7,8 @@ old-location: display\setscissorrects.htm
 old-project: display
 ms.assetid: ef61f50b-a82b-43df-865f-2f9d9ca906d4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, PSETRESULT_INFO, SETRESULT_INFO
+ms.date: 12/29/2017
+ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSETRESULT_INFO, SETRESULT_INFO
 ---
 
 # PFND3D10DDI_SETSCISSORRECTS callback
@@ -78,7 +79,7 @@ Note that the number that <i>ClearScissorRects</i> specifies is only an optimiza
 
 ### -param pRects [in]
 
- An array of <a href="display.rect">RECT</a> structures for the render-target portions to mark. 
+ An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structures for the render-target portions to mark. 
 
 
 ## -returns
@@ -88,7 +89,7 @@ The driver can use the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror
 
 
 ## -remarks
-The D3D10_DDI_RECT structure is defined as a <a href="display.rect">RECT</a> structure.
+The D3D10_DDI_RECT structure is defined as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure.
 
 The user-mode display driver must set all render-target portions atomically as one operation. 
 
@@ -148,12 +149,12 @@ Header
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a>
 </dt>
 <dt>
-<a href="display.rect">RECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D10DDI_SETSCISSORRECTS callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3D10DDI_SETSCISSORRECTS callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

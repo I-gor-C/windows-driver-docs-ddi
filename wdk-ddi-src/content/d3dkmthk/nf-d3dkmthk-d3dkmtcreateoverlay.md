@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTCreateOverlay
+UID: NF:d3dkmthk.D3DKMTCreateOverlay
 title: D3DKMTCreateOverlay function
 author: windows-driver-content
 description: The D3DKMTCreateOverlay function creates a kernel-mode overlay object.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtcreateoverlay.htm
 old-project: display
 ms.assetid: f77c20a1-c05c-456b-874b-e07d6edf5982
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTCreateOverlay
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Gdi32.lib
 req.dll: Gdi32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTCreateOverlay function
@@ -55,7 +56,7 @@ NTSTATUS D3DKMTCreateOverlay(
 
 ### -param pData [in, out]
 
-A pointer to a <a href="display.d3dkmt_createoverlay">D3DKMT_CREATEOVERLAY</a> structure that describes overlay hardware.
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createoverlay.md">D3DKMT_CREATEOVERLAY</a> structure that describes overlay hardware.
 
 
 ## -returns
@@ -72,7 +73,7 @@ A pointer to a <a href="display.d3dkmt_createoverlay">D3DKMT_CREATEOVERLAY</a> s
 <dl>
 <dt><b>STATUS_NO_MEMORY</b></dt>
 </dl>
-<a href="display.d3dkmtcreateoverlay">D3DKMTCreateOverlay</a> could not complete because of insufficient memory.
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateoverlay.md">D3DKMTCreateOverlay</a> could not complete because of insufficient memory.
 
  
 
@@ -143,12 +144,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_createoverlay">D3DKMT_CREATEOVERLAY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createoverlay.md">D3DKMT_CREATEOVERLAY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTCreateOverlay function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTCreateOverlay function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

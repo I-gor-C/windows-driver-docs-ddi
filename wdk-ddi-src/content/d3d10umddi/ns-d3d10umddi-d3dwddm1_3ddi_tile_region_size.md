@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3DWDDM1_3DDI_TILE_REGION_SIZE
+UID: NS:d3d10umddi.D3DWDDM1_3DDI_TILE_REGION_SIZE
 title: D3DWDDM1_3DDI_TILE_REGION_SIZE
 author: windows-driver-content
 description: Specifies a tiled region.
@@ -7,7 +7,7 @@ old-location: display\d3dwddm1_3ddi_tile_region_size.htm
 old-project: display
 ms.assetid: 276ED4AC-15D9-4550-AC51-83320DE9D5B2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DWDDM1_3DDI_TILE_REGION_SIZE, D3DWDDM1_3DDI_TILE_REGION_SIZE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DWDDM1_3DDI_TILE_REGION_SIZE
 ---
 
 # D3DWDDM1_3DDI_TILE_REGION_SIZE structure

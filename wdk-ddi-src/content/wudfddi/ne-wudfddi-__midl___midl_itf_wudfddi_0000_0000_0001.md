@@ -1,5 +1,5 @@
 ---
-UID: NE.wudfddi.__MIDL___MIDL_itf_wudfddi_0000_0000_0001
+UID: NE:wudfddi.__MIDL___MIDL_itf_wudfddi_0000_0000_0001
 title: __MIDL___MIDL_itf_wudfddi_0000_0000_0001
 author: windows-driver-content
 description: The POWER_ACTION enumeration identifies the system power actions that can occur on a computer.
@@ -7,8 +7,8 @@ old-location: wdf\power_action.htm
 old-project: wdf
 ms.assetid: 0c4a5eb8-d364-4e5d-9d2f-2605c8c34f63
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, *PPOWER_ACTION, POWER_ACTION
+ms.date: 12/29/2017
+ms.keywords: __MIDL___MIDL_itf_wudfddi_0000_0000_0001, POWER_ACTION, *PPOWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -104,7 +105,7 @@ The computer is being ejected from an ACPI-compatible dock device. Typically, th
 
 
 ## -remarks
-The <b>POWER_ACTION</b> enumeration is used as the return value for <a href="wdf.iwdfdevice2_getsystempoweraction">IWDFDevice2::GetSystemPowerAction</a>.
+The <b>POWER_ACTION</b> enumeration is used as the return value for <a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>.
 
 
 ## -requirements
@@ -145,12 +146,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.iwdfdevice2_getsystempoweraction">IWDFDevice2::GetSystemPowerAction</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20POWER_ACTION enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20POWER_ACTION enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_CONTINUOUSTRACKING_PARAM
+UID: NS:gnssdriver.GNSS_CONTINUOUSTRACKING_PARAM
 title: GNSS_CONTINUOUSTRACKING_PARAM
 author: windows-driver-content
 description: This structure defines the parameters for a continuous tracking fix session.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: D69D317C-5B42-4709-87AF-4323DF2EBE2D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_CONTINUOUSTRACKING_PARAM, PGNSS_CONTINUOUSTRACKING_PARAM, *PGNSS_CONTINUOUSTRACKING_PARAM, GNSS_CONTINUOUSTRACKING_PARAM
+ms.keywords: GNSS_CONTINUOUSTRACKING_PARAM, *PGNSS_CONTINUOUSTRACKING_PARAM, GNSS_CONTINUOUSTRACKING_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_CONTINUOUSTRACKING_PARAM, GNSS_CONTINUOUSTRACKING_PARAM
 ---
 
 # GNSS_CONTINUOUSTRACKING_PARAM structure

@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTSharedPrimaryUnLockNotification
+UID: NF:d3dkmthk.D3DKMTSharedPrimaryUnLockNotification
 title: D3DKMTSharedPrimaryUnLockNotification function
 author: windows-driver-content
 description: The D3DKMTSharedPrimaryUnLockNotification function notifies the operating system that a shared primary surface was unlocked.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtsharedprimaryunlocknotification.htm
 old-project: display
 ms.assetid: 1d602d09-cd80-4079-9132-1caced4d1eee
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTSharedPrimaryUnLockNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Gdi32.lib
 req.dll: Gdi32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTSharedPrimaryUnLockNotification function
@@ -55,7 +56,7 @@ NTSTATUS APIENTRY D3DKMTSharedPrimaryUnLockNotification(
 
 ### -param pData [in]
 
-A pointer to a <a href="display.d3dkmt_sharedprimaryunlocknotification">D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION</a> structure that describes the shared primary surface that was unlocked.
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_sharedprimaryunlocknotification.md">D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION</a> structure that describes the shared primary surface that was unlocked.
 
 
 ## -returns
@@ -73,7 +74,7 @@ This function might also return other NTSTATUS values.
 
 
 ## -remarks
-The OpenGL ICD calls the <b>D3DKMTSharedPrimaryUnLockNotification</b> function to inform the operating system that an application just unlocked the GDI shared primary surface that exists on the graphics adapter and video present source that the <b>AdapterLuid</b> and <b>VidPnSourceId</b> members of the <a href="display.d3dkmt_sharedprimaryunlocknotification">D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION</a> structure specify. The OpenGL ICD should call <b>D3DKMTSharedPrimaryUnLockNotification</b> after it calls the <a href="display.d3dkmtunlock">D3DKMTUnlock</a> function to unlock the GDI shared primary surface.
+The OpenGL ICD calls the <b>D3DKMTSharedPrimaryUnLockNotification</b> function to inform the operating system that an application just unlocked the GDI shared primary surface that exists on the graphics adapter and video present source that the <b>AdapterLuid</b> and <b>VidPnSourceId</b> members of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_sharedprimaryunlocknotification.md">D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION</a> structure specify. The OpenGL ICD should call <b>D3DKMTSharedPrimaryUnLockNotification</b> after it calls the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtunlock.md">D3DKMTUnlock</a> function to unlock the GDI shared primary surface.
 
 
 ## -requirements
@@ -137,15 +138,15 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_sharedprimaryunlocknotification">D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_sharedprimaryunlocknotification.md">D3DKMT_SHAREDPRIMARYUNLOCKNOTIFICATION</a>
 </dt>
 <dt>
-<a href="display.d3dkmtunlock">D3DKMTUnlock</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtunlock.md">D3DKMTUnlock</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTSharedPrimaryUnLockNotification function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTSharedPrimaryUnLockNotification function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

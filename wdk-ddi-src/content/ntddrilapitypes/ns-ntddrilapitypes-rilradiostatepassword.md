@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILRADIOSTATEPASSWORD
+UID: NS:ntddrilapitypes.RILRADIOSTATEPASSWORD
 title: RILRADIOSTATEPASSWORD
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilradiostatepassword.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5329a688-ca72-456c-b9fa-32a922783d97
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILRADIOSTATEPASSWORD, LPRILRADIOSTATEPASSWORD, *LPRILRADIOSTATEPASSWORD, RILRADIOSTATEPASSWORD
+ms.date: 1/8/2018
+ms.keywords: RILRADIOSTATEPASSWORD, RILRADIOSTATEPASSWORD, *LPRILRADIOSTATEPASSWORD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRADIOSTATEPASSWORD, *LPRILRADIOSTATEPASSWORD
 ---
 
 # RILRADIOSTATEPASSWORD structure

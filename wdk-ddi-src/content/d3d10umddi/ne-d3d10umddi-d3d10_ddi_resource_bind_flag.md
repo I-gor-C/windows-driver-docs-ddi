@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D10_DDI_RESOURCE_BIND_FLAG
+UID: NE:d3d10umddi.D3D10_DDI_RESOURCE_BIND_FLAG
 title: D3D10_DDI_RESOURCE_BIND_FLAG
 author: windows-driver-content
 description: Identifies how a resource is bound.
@@ -7,7 +7,7 @@ old-location: display\d3d10_ddi_resource_bind_flag.htm
 old-project: display
 ms.assetid: 1c911435-5a55-4b92-9c65-3116d98f8ecf
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D10_DDI_RESOURCE_BIND_FLAG, D3D10_DDI_RESOURCE_BIND_FLAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D10_DDI_RESOURCE_BIND_FLAG
 ---
 
 # D3D10_DDI_RESOURCE_BIND_FLAG enumeration
@@ -122,7 +123,7 @@ A mask value that indicates the valid bitfields in a bitwise <b>OR</b> combinati
 
 ### -field D3D10_DDI_BIND_PRESENT
 
-The resource can be used in a call to the <a href="display.presentdxgi">PresentDXGI</a> function (that is, the resource can be used as a back buffer).
+The resource can be used in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function (that is, the resource can be used as a back buffer).
 
 
 ### -field D3D10_DDI_BIND_MASK
@@ -258,7 +259,7 @@ Header
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_ia_setvertexbuffers.md">IaSetVertexBuffers</a>
 </dt>
 <dt>
-<a href="display.presentdxgi">PresentDXGI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setshaderresources.md">PsSetShaderResources</a>
@@ -271,5 +272,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_DDI_RESOURCE_BIND_FLAG enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D10_DDI_RESOURCE_BIND_FLAG enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

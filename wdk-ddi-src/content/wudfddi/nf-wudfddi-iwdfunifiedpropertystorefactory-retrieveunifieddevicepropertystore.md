@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFUnifiedPropertyStoreFactory.RetrieveUnifiedDevicePropertyStore
+UID: NF:wudfddi.IWDFUnifiedPropertyStoreFactory.RetrieveUnifiedDevicePropertyStore
 title: IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore method
 author: windows-driver-content
 description: The RetrieveUnifiedDevicePropertyStore method retrieves a unified property store interface.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertys
 old-project: wdf
 ms.assetid: A54E56A6-9A6C-435D-83FD-84BB0E072C74
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFUnifiedPropertyStoreFactory, IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, RetrieveUnifiedDevicePropertyStore
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ HRESULT RetrieveUnifiedDevicePropertyStore(
 
 ### -param RootSpecifier [in]
 
-The address of a driver-allocated <a href="wdf.wdf_property_store_root">WDF_PROPERTY_STORE_ROOT</a> structure. The driver fills in this structure to identify the unified property store that <b>RetrieveUnifiedDevicePropertyStore</b> retrieves.
+The address of a driver-allocated <a href="..\wudfddi_types\ns-wudfddi_types-_wdf_property_store_root.md">WDF_PROPERTY_STORE_ROOT</a> structure. The driver fills in this structure to identify the unified property store that <b>RetrieveUnifiedDevicePropertyStore</b> retrieves.
 
 
 ### -param PropertyStore [out]
@@ -84,7 +85,7 @@ This method might return one of the other values that <i>Winerror.h</i> contains
 ## -remarks
 Your driver can call <b>RetrieveUnifiedDevicePropertyStore</b> to obtain access to a current device's hardware key or a device interface key that the device supports.
 
-The <b>RootClass</b> member of the <a href="wdf.wdf_property_store_root">WDF_PROPERTY_STORE_ROOT</a> structure pointed to by <i>RootSpecifier</i> must be set to <b>WdfPropertyStoreRootClassHardwareKey</b> or <b>WdfPropertyStoreRootClassDeviceInterfaceKey</b>.
+The <b>RootClass</b> member of the <a href="..\wudfddi_types\ns-wudfddi_types-_wdf_property_store_root.md">WDF_PROPERTY_STORE_ROOT</a> structure pointed to by <i>RootSpecifier</i> must be set to <b>WdfPropertyStoreRootClassHardwareKey</b> or <b>WdfPropertyStoreRootClassDeviceInterfaceKey</b>.
 
 In addition, if <b>RootClass</b> is set to <b>WdfPropertyStoreRootClassHardwareKey</b>, then the <b>Qualifier.HardwareKey.ServiceName</b> member of <i>RootSpecifier</i> must be NULL.
 
@@ -163,5 +164,5 @@ DLL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

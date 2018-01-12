@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMEnableDriver
+UID: NF:printoem.OEMEnableDriver
 title: OEMEnableDriver function
 author: windows-driver-content
 description: OEMEnableDriver function
@@ -7,7 +7,7 @@ old-location: print\oemenabledriver.htm
 old-project: print
 ms.assetid: 9ea2f53c-de27-4803-b09a-444180b796ac
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMEnableDriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

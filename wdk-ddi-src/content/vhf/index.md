@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:vhf
 ---
 
 # Vhf.h header
@@ -22,14 +22,6 @@ Vhf.h contain these programming interfaces:
 | [VhfDelete function](nf-vhf-vhfdelete.md) | The HID Source device driver calls this method to delete a VHF device. |
 | [VhfReadReportSubmit function](nf-vhf-vhfreadreportsubmit.md) | The HID source driver calls this method to submit a HID Read (Input) Report to Virtual HID Framework (VHF). |
 | [VhfStart function](nf-vhf-vhfstart.md) | The HID source driver calls this method to start the virtual HID device. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_VHF_ASYNC_OPERATION callback](nc-vhf-evt_vhf_async_operation.md) | The HID source driver implements this event callback if it wants to support one of the four asynchronous operation to get and set HID reports. |
-| [EVT_VHF_CLEANUP callback](nc-vhf-evt_vhf_cleanup.md) | The HID source driver implements this event callback to free resources that might the driver allocated to the virtual HID device. |
-| [EVT_VHF_READY_FOR_NEXT_READ_REPORT callback](nc-vhf-evt_vhf_ready_for_next_read_report.md) | The HID source driver implements this event call back function to use its buffering scheme for HID Input Reports, and wants to get notified when the next report can be submitted to VHF. |
 
 ## Structures
 

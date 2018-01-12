@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.PopEntryList
+UID: NF:wdm.PopEntryList
 title: PopEntryList function
 author: windows-driver-content
 description: The PopEntryList routine removes the first entry from a singly linked list of SINGLE_LIST_ENTRY structures.
@@ -7,7 +7,7 @@ old-location: kernel\popentrylist.htm
 old-project: kernel
 ms.assetid: b24ec573-4164-4016-a19d-574ebd75ec8f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PopEntryList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>PopEntryList</b> routine removes the first entry from a singly linked list of <a href="kernel.single_list_entry">SINGLE_LIST_ENTRY</a> structures.
+The <b>PopEntryList</b> routine removes the first entry from a singly linked list of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563799">SINGLE_LIST_ENTRY</a> structures.
 
 
 
@@ -56,7 +57,7 @@ PSINGLE_LIST_ENTRY PopEntryList(
 
 ### -param ListHead [in, out]
 
-Pointer to the <a href="kernel.single_list_entry">SINGLE_LIST_ENTRY</a> structure that represents the head of the list. On return, <i>ListHead</i>-&gt;<b>Next</b> points to the beginning of the list with the first entry removed. 
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563799">SINGLE_LIST_ENTRY</a> structure that represents the head of the list. On return, <i>ListHead</i>-&gt;<b>Next</b> points to the beginning of the list with the first entry removed. 
 
 
 ## -returns
@@ -120,15 +121,15 @@ Any level (see Remarks section)
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exinterlockedpopentrylist">ExInterlockedPopEntryList</a>
+<a href="..\wdm\nf-wdm-exinterlockedpopentrylist.md">ExInterlockedPopEntryList</a>
 </dt>
 <dt>
-<a href="kernel.pushentrylist">PushEntryList</a>
+<a href="..\wdm\nf-wdm-pushentrylist.md">PushEntryList</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PopEntryList routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PopEntryList routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

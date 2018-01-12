@@ -1,13 +1,13 @@
 ---
-UID: NF.wia_lh.IWiaLog.InitializeLog
+UID: NF:wia_lh.IWiaLog.InitializeLog
 title: IWiaLog::InitializeLog method
 author: windows-driver-content
 description: Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros.The IWiaLog::InitializeLog method initializes the lWiaLog interface.
 old-location: image\iwialog_initializelog.htm
-old-project: Image
+old-project: image
 ms.assetid: ef637329-a291-445b-8ac7-6e55d5d7931e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaLog, IWiaLog::InitializeLog, InitializeLog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBMP_IMAGE_INFO, BMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Note that the <b>IWiaLog</b> interface is <b>obsolete</b> for Microsoft Windows XP and later, and is no longer supported. Instead, use the <a href="image.diagnostic_log_macros">Diagnostic Log Macros</a>.
+Note that the <b>IWiaLog</b> interface is <b>obsolete</b> for Microsoft Windows XP and later, and is no longer supported. Instead, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540599">Diagnostic Log Macros</a>.
 
 The <b>IWiaLog::InitializeLog</b> method initializes the <b>lWiaLog</b> interface.
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.LAMP.LAMP_INTENSITY_WHITE
+UID: NS:lamp.LAMP_INTENSITY_WHITE
 title: LAMP_INTENSITY_WHITE
 author: windows-driver-content
 description: This structure is the I/O parameter type of IOCTL_LAMP_GET_INTENSITY_WHITE and IOCTL_LAMP_SET_INTENSITY_WHITE.
@@ -7,7 +7,7 @@ old-location: stream\lamp_intensity_white.htm
 old-project: stream
 ms.assetid: BDE53311-589F-4458-9510-1B02F1BD0289
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: LAMP_INTENSITY_WHITE, LAMP_INTENSITY_WHITE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 # LAMP_INTENSITY_WHITE structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-This structure is the I/O parameter type of <a href="stream.ioctl_lamp_get__intensity_white">IOCTL_LAMP_GET_INTENSITY_WHITE</a> and <a href="..\lamp\ni-lamp-ioctl_lamp_set_intensity_white.md">IOCTL_LAMP_SET_INTENSITY_WHITE</a>.
+This structure is the I/O parameter type of <a href="..\lamp\ni-lamp-ioctl_lamp_get_intensity_white.md">IOCTL_LAMP_GET_INTENSITY_WHITE</a> and <a href="..\lamp\ni-lamp-ioctl_lamp_set_intensity_white.md">IOCTL_LAMP_SET_INTENSITY_WHITE</a>.
 
 
 

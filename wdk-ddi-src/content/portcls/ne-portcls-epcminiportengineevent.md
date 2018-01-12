@@ -1,5 +1,5 @@
 ---
-UID: NE.portcls.EPcMiniportEngineEvent
+UID: NE:portcls.EPcMiniportEngineEvent
 title: EPcMiniportEngineEvent
 author: windows-driver-content
 description: This topic introduces the EPcMiniportEngineEvent enum, and describes the parameters that provide additional information when the miniport driver reports a glitching error.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EPcMiniportEngineEvent
 ---
 
 # EPcMiniportEngineEvent enumeration
@@ -298,7 +299,7 @@ Header
 <a href="https://msdn.microsoft.com/9FF2A5D6-9382-4EE6-AA21-DCF47210F73B">Glitch Reporting for Offloaded Audio</a>
 </dt>
 <dt>
-<a href="audio.iportclsetwhelper_miniportwriteetwevent">MiniportWriteEtwEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265124">MiniportWriteEtwEvent</a>
 </dt>
 </dl>
  

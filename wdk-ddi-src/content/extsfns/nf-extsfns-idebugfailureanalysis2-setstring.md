@@ -1,13 +1,13 @@
 ---
-UID: NF.extsfns.IDebugFailureAnalysis2.SetString
+UID: NF:extsfns.IDebugFailureAnalysis2.SetString
 title: IDebugFailureAnalysis2::SetString method
 author: windows-driver-content
 description: The SetString method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it sets (overwrites) the data block of the FA entry to a specified string value.
 old-location: debugger\idebugfailureanalysis2_setstring.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 38B63AFF-BE37-45FB-9FD2-A49F216E1B81
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugFailureAnalysis2, IDebugFailureAnalysis2::SetString, SetString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 # IDebugFailureAnalysis2::SetString method
@@ -65,7 +66,7 @@ A pointer to a null-terminated ANSI string to be written to the data block of th
 
 
 ## -returns
-If this method succeeds, it returns a pointer to the new or existing <a href="debugger.fa_entry">FA_ENTRY</a> structure. Otherwise, it returns <b>NULL</b>.
+If this method succeeds, it returns a pointer to the new or existing <a href="..\extsfns\ns-extsfns-_fa_entry.md">FA_ENTRY</a> structure. Otherwise, it returns <b>NULL</b>.
 
 
 ## -remarks
@@ -109,18 +110,18 @@ Header
 <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
 </dt>
 <dt>
-<a href="debugger.idebugfailureanalysis2_getstring">GetString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983419">GetString</a>
 </dt>
 <dt>
-<a href="debugger.idebugfailureanalysis2_addstring">AddString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406612">AddString</a>
 </dt>
 <dt>
-<a href="debugger._efn_analyze">_EFN_Analyze</a>
+<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugFailureAnalysis2::SetString method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFailureAnalysis2::SetString method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

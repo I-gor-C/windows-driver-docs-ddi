@@ -1,5 +1,5 @@
 ---
-UID: NE.gnssdriver.GNSS_AGNSS_REQUEST_TYPE
+UID: NE:gnssdriver.GNSS_AGNSS_REQUEST_TYPE
 title: GNSS_AGNSS_REQUEST_TYPE
 author: windows-driver-content
 description: This enumeration indicates the type of AGNSS injection request represented by the GNSS_AGNSS_REQUEST_PARAM structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: GNSS_AGNSS_REQUEST_TYPE
 ---
 
 # GNSS_AGNSS_REQUEST_TYPE enumeration

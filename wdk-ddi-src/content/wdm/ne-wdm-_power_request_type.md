@@ -1,5 +1,5 @@
 ---
-UID: NE.wdm._POWER_REQUEST_TYPE
+UID: NE:wdm._POWER_REQUEST_TYPE
 title: _POWER_REQUEST_TYPE
 author: windows-driver-content
 description: The POWER_REQUEST_TYPE enumeration indicates the power request type.
@@ -7,8 +7,8 @@ old-location: kernel\power_request_type.htm
 old-project: kernel
 ms.assetid: 266cdf1a-6122-4f46-8e93-8f76fceb0180
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _POWER_REQUEST_TYPE, *PPOWER_REQUEST_TYPE, PPOWER_REQUEST_TYPE, POWER_REQUEST_TYPE
+ms.date: 1/4/2018
+ms.keywords: _POWER_REQUEST_TYPE, *PPOWER_REQUEST_TYPE, POWER_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: PASSIVE_LEVEL (See Remarks section)
+req.typenames: *PPOWER_REQUEST_TYPE, POWER_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -78,9 +79,9 @@ Not used by drivers. For more information, see Remarks.
 
 
 ## -remarks
-This enumeration is used by the kernel-mode <a href="kernel.poclearpowerrequest">PoClearPowerRequest</a> and <a href="kernel.posetpowerrequest">PoSetPowerRequest</a> routines. Drivers that call these routines must specify the <b>PowerRequestSystemRequired</b> enumeration value.
+This enumeration is used by the kernel-mode <a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a> and <a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a> routines. Drivers that call these routines must specify the <b>PowerRequestSystemRequired</b> enumeration value.
 
-The other three enumeration values—<b>PowerRequestDisplayRequired</b>, <b>PowerRequestAwayModeRequired</b>, and <b>PowerRequestExecutionRequired</b>—are not used by drivers. Applications specify these power request types in calls to the <a href="base.powersetrequest">PowerSetRequest</a> and <a href="base.powerclearrequest">PowerClearRequest</a> functions.
+The other three enumeration values—<b>PowerRequestDisplayRequired</b>, <b>PowerRequestAwayModeRequired</b>, and <b>PowerRequestExecutionRequired</b>—are not used by drivers. Applications specify these power request types in calls to the <a href="https://msdn.microsoft.com/85249de8-5832-4f25-bbd9-3576cfd1caa0">PowerSetRequest</a> and <a href="https://msdn.microsoft.com/794248b1-5aa8-495e-aca6-1a1f35dc9c7f">PowerClearRequest</a> functions.
 
 A <b>PowerRequestDisplayRequired</b> power request has the following effects:
 
@@ -123,21 +124,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.poclearpowerrequest">PoClearPowerRequest</a>
+<a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a>
 </dt>
 <dt>
-<a href="kernel.posetpowerrequest">PoSetPowerRequest</a>
+<a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a>
 </dt>
 <dt>
-<a href="base.powerclearrequest">PowerClearRequest</a>
+<a href="https://msdn.microsoft.com/794248b1-5aa8-495e-aca6-1a1f35dc9c7f">PowerClearRequest</a>
 </dt>
 <dt>
-<a href="base.powersetrequest">PowerSetRequest</a>
+<a href="https://msdn.microsoft.com/85249de8-5832-4f25-bbd9-3576cfd1caa0">PowerSetRequest</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20POWER_REQUEST_TYPE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20POWER_REQUEST_TYPE enumeration%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_TS_SELECTORINFO
+UID: NS:bdatypes._BDA_TS_SELECTORINFO
 title: _BDA_TS_SELECTORINFO
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bda_ts_selectorinfo.htm
 old-project: stream
 ms.assetid: 34F10EDD-C196-4022-8D03-45A005F17F5F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_TS_SELECTORINFO, BDA_TS_SELECTORINFO, *PBDA_TS_SELECTORINFO, PBDA_TS_SELECTORINFO
+ms.date: 1/9/2018
+ms.keywords: _BDA_TS_SELECTORINFO, BDA_TS_SELECTORINFO, *PBDA_TS_SELECTORINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: BDA_TS_SELECTORINFO, *PBDA_TS_SELECTORINFO
 ---
 
 # _BDA_TS_SELECTORINFO structure

@@ -1,5 +1,5 @@
 ---
-UID: NF.iddcx.IddCxDeviceInitialize
+UID: NF:iddcx.IddCxDeviceInitialize
 title: IddCxDeviceInitialize function
 author: windows-driver-content
 description: Initializes a WDF device.
@@ -7,7 +7,7 @@ old-location: display\iddcxdeviceinitialize.htm
 old-project: display
 ms.assetid: 4967e897-1a71-4f17-ad5b-9cc9916b0087
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IddCxDeviceInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _Must_inspect_result_
+req.typenames: 
 ---
 
 # IddCxDeviceInitialize function

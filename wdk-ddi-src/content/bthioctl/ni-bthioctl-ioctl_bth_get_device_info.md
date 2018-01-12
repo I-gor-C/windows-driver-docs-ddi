@@ -1,5 +1,5 @@
 ---
-UID: NI.bthioctl.IOCTL_BTH_GET_DEVICE_INFO
+UID: NI:bthioctl.IOCTL_BTH_GET_DEVICE_INFO
 title: IOCTL_BTH_GET_DEVICE_INFO
 author: windows-driver-content
 description: The IOCTL_BTH_GET_DEVICE_INFO request returns information about all cached, previously discovered remote radios that are Bluetooth-enabled.
@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bth_get_device_info.htm
 old-project: bltooth
 ms.assetid: 99bc222f-9c27-45b7-ade1-2401dfa41d7c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, PHFP_BYPASS_CODEC_ID_V1
+ms.date: 12/21/2017
+ms.keywords: _HFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_BTH_GET_DEVICE_INFO IOCTL
@@ -54,18 +55,18 @@ The IOCTL_BTH_GET_DEVICE_INFO request returns information about all cached, prev
 ### -input-buffer
 The 
       <b>AssociatedIrp.SystemBuffer</b> member points to a buffer for a 
-      <a href="bltooth.bth_device_info_list">BTH_DEVICE_INFO_LIST</a> structure.
+      <a href="..\bthioctl\ns-bthioctl-_bth_device_info_list.md">BTH_DEVICE_INFO_LIST</a> structure.
 
 
 ### -input-buffer-length
 The length of a 
-      <a href="bltooth.bth_device_info_list">BTH_DEVICE_INFO_LIST</a> structure
+      <a href="..\bthioctl\ns-bthioctl-_bth_device_info_list.md">BTH_DEVICE_INFO_LIST</a> structure
 
 
 ### -output-buffer
 The 
       <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a 
-      <a href="bltooth.bth_device_info_list">BTH_DEVICE_INFO_LIST</a> structure. The 
+      <a href="..\bthioctl\ns-bthioctl-_bth_device_info_list.md">BTH_DEVICE_INFO_LIST</a> structure. The 
       <b>numOfDevices</b> member of the BTH_DEVICE_INFO_LIST structure contains the number of devices for
       which there is information and an array of 
       <a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a> structures; one array
@@ -167,7 +168,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="bltooth.bth_device_info_list">BTH_DEVICE_INFO_LIST</a>
+<a href="..\bthioctl\ns-bthioctl-_bth_device_info_list.md">BTH_DEVICE_INFO_LIST</a>
 </dt>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a></dt>
 </dl>
@@ -175,5 +176,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20IOCTL_BTH_GET_DEVICE_INFO control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20IOCTL_BTH_GET_DEVICE_INFO control code%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

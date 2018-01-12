@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_IPV6_ADDRESS
+UID: NS:bdatypes._BDA_IPv6_ADDRESS
 title: _BDA_IPv6_ADDRESS
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bda_ipv6_address.htm
 old-project: stream
 ms.assetid: 50D52380-1FBE-4046-A7DC-8415501D7FA6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_IPv6_ADDRESS, *PBDA_IPv6_ADDRESS, PBDA_IPv6_ADDRESS, BDA_IPv6_ADDRESS
+ms.date: 1/9/2018
+ms.keywords: _BDA_IPv6_ADDRESS, BDA_IPv6_ADDRESS, *PBDA_IPv6_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: BDA_IPv6_ADDRESS, *PBDA_IPv6_ADDRESS
 ---
 
 # _BDA_IPv6_ADDRESS structure

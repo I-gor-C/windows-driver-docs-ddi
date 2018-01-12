@@ -1,5 +1,5 @@
 ---
-UID: NF.printerextension.IPrintSchemaTicket.GetCapabilities
+UID: NF:printerextension.IPrintSchemaTicket.GetCapabilities
 title: IPrintSchemaTicket::GetCapabilities method
 author: windows-driver-content
 description: Gets an IPrintSchemaCapabilities object that represents the printer capabilities based on the current settings of this IPrintSchemaTicket object.
@@ -7,7 +7,7 @@ old-location: print\iprintschematicket_getcapabilities.htm
 old-project: print
 ms.assetid: 5556BD5E-6489-4CCF-8C62-DDA53AD9F368
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintSchemaTicket, IPrintSchemaTicket::GetCapabilities, GetCapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PrintSchemaSelectionType
 req.product: Windows 10 or later.
 ---
 
@@ -102,18 +103,18 @@ Header
 <a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
 </dt>
 <dt>
-<a href="print.iprintschemafeature_selectedoption">IPrintSchemaFeature::SelectedOption</a>
+<a href="https://msdn.microsoft.com/C22BC037-05D2-4F44-8704-D1D56909B603">IPrintSchemaFeature::SelectedOption</a>
 </dt>
 <dt>
-<a href="print.iprintschemaelement_xmlnode">IPrintSchemaElement::XmlNode</a>
+<a href="https://msdn.microsoft.com/5E7F2292-1F71-4581-8E34-86F1464EC08F">IPrintSchemaElement::XmlNode</a>
 </dt>
 <dt>
-<a href="print.iprintschematicket_put_jobcopiesalldocuments">IPrintSchemaTicket::put_JobCopiesAllDocuments</a>
+<a href="https://msdn.microsoft.com/DF788C8F-DA60-47F1-83DB-2E1947E41142">IPrintSchemaTicket::put_JobCopiesAllDocuments</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaTicket::GetCapabilities method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintSchemaTicket::GetCapabilities method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

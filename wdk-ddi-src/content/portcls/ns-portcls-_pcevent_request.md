@@ -1,5 +1,5 @@
 ---
-UID: NS.PORTCLS._PCEVENT_REQUEST
+UID: NS:portcls._PCEVENT_REQUEST
 title: _PCEVENT_REQUEST
 author: windows-driver-content
 description: The PCEVENT_REQUEST structure specifies an event request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPCEVENT_REQUEST, PCEVENT_REQUEST
 ---
 
 # _PCEVENT_REQUEST structure
@@ -62,13 +63,13 @@ typedef struct _PCEVENT_REQUEST {
 ### -field MajorTarget
 
 
-<a href="com.iunknown">IUnknown</a> pointer to the main miniport object. This member contains the <i>UnknownMiniport</i> pointer that the adapter driver previously passed to the <a href="audio.iport_init">IPort::Init</a> method.
+<a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointer to the main miniport object. This member contains the <i>UnknownMiniport</i> pointer that the adapter driver previously passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a> method.
 
 
 ### -field MinorTarget
 
 
-<a href="com.iunknown">IUnknown</a> pointer to a stream object that is associated with the <i>MajorTarget</i> miniport object. This member contains the stream-object pointer that the port driver previously retrieved from the IMiniport<i>Xxx</i>::NewStream method (for example, the <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a> method's <i>Stream</i> parameter).
+<a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointer to a stream object that is associated with the <i>MajorTarget</i> miniport object. This member contains the stream-object pointer that the port driver previously retrieved from the IMiniport<i>Xxx</i>::NewStream method (for example, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a> method's <i>Stream</i> parameter).
 
 
 ### -field Node
@@ -78,12 +79,12 @@ Specifies a node ID. This member identifies the target node for the request. If 
 
 ### -field EventItem
 
-Pointer to the <a href="audio.pcevent_item">PCEVENT_ITEM</a> structure for this request
+Pointer to the <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_5.md">PCEVENT_ITEM</a> structure for this request
 
 
 ### -field EventEntry
 
-Pointer to the <a href="stream.ksevent_entry">KSEVENT_ENTRY</a> structure for this request
+Pointer to the <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure for this request
 
 
 ### -field Verb
@@ -101,7 +102,7 @@ PCEVENT_VERB_ADD
 
 </td>
 <td>
-Indicates that a client wants to enable the specified event. After validating the event and target information, the <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a> routine adds the event by calling the <a href="audio.iportevents_addeventtoeventlist">IPortEvents::AddEventToEventList</a> method.
+Indicates that a client wants to enable the specified event. After validating the event and target information, the <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a> routine adds the event by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536886">IPortEvents::AddEventToEventList</a> method.
 
 </td>
 </tr>
@@ -141,21 +142,21 @@ No action is needed.
 
 ### -field Irp
 
-Pointer to the <a href="kernel.irp">IRP</a> containing the event request
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> containing the event request
 
 
 ## -remarks
-This is the structure that the port driver passes to the miniport driver's <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a> routine. The <a href="audio.pcevent_item">PCEVENT_ITEM</a> structure contains a function pointer to an event handler that takes a <b>PCEVENT_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCEVENT_REQUEST</b> structure, extracts the relevant information from the original event request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
+This is the structure that the port driver passes to the miniport driver's <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a> routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_5.md">PCEVENT_ITEM</a> structure contains a function pointer to an event handler that takes a <b>PCEVENT_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCEVENT_REQUEST</b> structure, extracts the relevant information from the original event request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
 
 In WDM audio, the target of an event request can be a pin instance but not a filter instance. The target can also include a node ID.
 
-The <b>MajorTarget</b> and <b>MinorTarget</b> members are <a href="com.iunknown">IUnknown</a> pointers to the main miniport object and an associated stream object, respectively. The event handler can query these objects for their miniport and stream interfaces.
+The <b>MajorTarget</b> and <b>MinorTarget</b> members are <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointers to the main miniport object and an associated stream object, respectively. The event handler can query these objects for their miniport and stream interfaces.
 
 For example, if the target for the event request is a pin instance on a WaveCyclic filter:
 
-The handler can call <a href="com.iunknown_queryinterface">QueryInterface</a> on the <b>MajorTarget</b> object's <a href="com.iunknown">IUnknown</a> interface to obtain a reference to the object's <a href="..\portcls\nn-portcls-iminiportwavecyclic.md">IMiniportWaveCyclic</a> interface.
+The handler can call <a href="https://msdn.microsoft.com/54d5ff80-18db-43f2-b636-f93ac053146d">QueryInterface</a> on the <b>MajorTarget</b> object's <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface to obtain a reference to the object's <a href="..\portcls\nn-portcls-iminiportwavecyclic.md">IMiniportWaveCyclic</a> interface.
 
-The handler can call <a href="com.iunknown_queryinterface">QueryInterface</a> on the <b>MinorTarget</b> object's <a href="com.iunknown">IUnknown</a> interface to obtain a reference to the object's <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a> interface.
+The handler can call <a href="https://msdn.microsoft.com/54d5ff80-18db-43f2-b636-f93ac053146d">QueryInterface</a> on the <b>MinorTarget</b> object's <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface to obtain a reference to the object's <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a> interface.
 
 
 ## -requirements
@@ -179,16 +180,16 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537695">PCFILTER_NODE</a>
 </dt>
 <dt>
-<a href="audio.pcevent_item">PCEVENT_ITEM</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_5.md">PCEVENT_ITEM</a>
 </dt>
 <dt>
-<a href="stream.ksevent_entry">KSEVENT_ENTRY</a>
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 </dt>
 <dt>
 <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>
 </dt>
 <dt>
-<a href="audio.iportevents_addeventtoeventlist">IPortEvents::AddEventToEventList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536886">IPortEvents::AddEventToEventList</a>
 </dt>
 </dl>
  

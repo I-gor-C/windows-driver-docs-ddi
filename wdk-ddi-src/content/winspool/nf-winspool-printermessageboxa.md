@@ -1,5 +1,5 @@
 ---
-UID: NF.winspool.PrinterMessageBoxA
+UID: NF:winspool.PrinterMessageBoxA
 title: PrinterMessageBoxA function
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\printermessageboxa.htm
 old-project: print
 ms.assetid: 6C238FF8-1EBC-4E3B-9184-D82F5A39DA2F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: PrinterMessageBoxA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BIDI_TYPE
 req.product: Windows 10 or later.
 ---
 

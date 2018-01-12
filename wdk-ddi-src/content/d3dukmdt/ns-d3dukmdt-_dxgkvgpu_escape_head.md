@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUKMDT._DXGKVGPU_ESCAPE_HEAD
+UID: NS:d3dukmdt._DXGKVGPU_ESCAPE_HEAD
 title: _DXGKVGPU_ESCAPE_HEAD
 author: windows-driver-content
 description: A structure describing the escape head.
@@ -7,7 +7,7 @@ old-location: display\dxgkvgpu_escape_head_.htm
 old-project: display
 ms.assetid: BB9D12EB-A1B1-4D7B-A1E4-40A932F62C88
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGKVGPU_ESCAPE_HEAD, DXGKVGPU_ESCAPE_HEAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGKVGPU_ESCAPE_HEAD
 ---
 
 # _DXGKVGPU_ESCAPE_HEAD structure

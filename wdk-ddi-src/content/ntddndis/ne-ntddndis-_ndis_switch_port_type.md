@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddndis._NDIS_SWITCH_PORT_TYPE
+UID: NE:ntddndis._NDIS_SWITCH_PORT_TYPE
 title: _NDIS_SWITCH_PORT_TYPE
 author: windows-driver-content
 description: The NDIS_SWITCH_PORT_TYPE enumeration specifies the type of a Hyper-V extensible switch port.
 old-location: netvista\ndis_switch_port_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4FCE88BC-6FA1-44D0-9BC1-3065A5EEE1A0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _NDIS_SWITCH_PORT_TYPE, NDIS_SWITCH_PORT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SWITCH_PORT_TYPE
 ---
 
 # _NDIS_SWITCH_PORT_TYPE enumeration
@@ -73,7 +74,7 @@ This value specifies a port that is connected to an external network adapter. Th
 
 The external network adapter provides the connection to the  physical network interface that is available on the host. This allows processes that run in either the management or guest operating systems to send or receive packets over the extensible switch.
 
-<div class="alert"><b>Note</b>  An extensible switch supports no more than one external network adapter. The external network adapter can be bound to one or more underlying physical network adapters. For more information, see <a href="netvista.external_network_adapters">External Network Adapters</a>.</div>
+<div class="alert"><b>Note</b>  An extensible switch supports no more than one external network adapter. The external network adapter can be bound to one or more underlying physical network adapters. For more information, see <a href="https://msdn.microsoft.com/4029437C-97EA-4F21-A3F0-3B29DC650233">External Network Adapters</a>.</div>
 <div> </div>
 
 ### -field NdisSwitchPortTypeSynthetic
@@ -96,15 +97,15 @@ This value specifies a port that is connected to an internal network adapter. Th
 
 The internal network adapter provides access to an extensible switch for processes that run in the management operating system. This allows these processes to send or receive packets over the extensible switch.
 
-<div class="alert"><b>Note</b>  An extensible switch supports no more than one internal network adapter. For more information, see <a href="netvista.internal_network_adapters">Internal Network Adapters</a>.</div>
+<div class="alert"><b>Note</b>  An extensible switch supports no more than one internal network adapter. For more information, see <a href="https://msdn.microsoft.com/4E4B0EC9-8E4C-47FC-B608-EC6D18367A79">Internal Network Adapters</a>.</div>
 <div> </div>
 
 ## -remarks
-The <b>PortType</b> member of the <a href="netvista.ndis_switch_port_parameters">NDIS_SWITCH_PORT_PARAMETERS</a> structure is an <b>NDIS_SWITCH_PORT_TYPE</b> enumeration data type. 
+The <b>PortType</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_parameters.md">NDIS_SWITCH_PORT_PARAMETERS</a> structure is an <b>NDIS_SWITCH_PORT_TYPE</b> enumeration data type. 
 
 
 
-For more information on the extensible switch ports, see <a href="netvista.hyper_v_extensible_switch_ports">Hyper-V Extensible Switch Ports</a>.
+For more information on the extensible switch ports, see <a href="https://msdn.microsoft.com/A9A07C71-BA64-4223-8402-254D87810167">Hyper-V Extensible Switch Ports</a>.
 
 
 
@@ -138,12 +139,12 @@ Header
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="netvista.ndis_switch_port_parameters">NDIS_SWITCH_PORT_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_parameters.md">NDIS_SWITCH_PORT_PARAMETERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_SWITCH_PORT_TYPE enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PORT_TYPE enumeration%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

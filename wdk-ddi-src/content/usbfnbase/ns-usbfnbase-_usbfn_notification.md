@@ -1,14 +1,14 @@
 ---
-UID: NS.USBFNBASE._USBFN_NOTIFICATION
+UID: NS:usbfnbase._USBFN_NOTIFICATION
 title: _USBFN_NOTIFICATION
 author: windows-driver-content
 description: Describes information about a Universal Serial Bus (USB) event notification that was received by using IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION.
 old-location: buses\usbfn_notification.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 84B66823-F357-44DD-A401-79E27FA6B324
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBFN_NOTIFICATION, *PUSBFN_NOTIFICATION, PUSBFN_NOTIFICATION, USBFN_NOTIFICATION
+ms.date: 1/4/2018
+ms.keywords: _USBFN_NOTIFICATION, *PUSBFN_NOTIFICATION, USBFN_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PUSBFN_NOTIFICATION, USBFN_NOTIFICATION
 req.product: Windows 10 or later.
 ---
 
@@ -65,7 +66,7 @@ typedef struct _USBFN_NOTIFICATION {
 
 ### -field Event
 
-Bus notification indicated by a <a href="buses.usbfn_event">USBFN_EVENT</a>-typed flag.
+Bus notification indicated by a <a href="..\usbfnbase\ne-usbfnbase-_usbfn_event.md">USBFN_EVENT</a>-typed flag.
 
 
 ### -field u
@@ -73,7 +74,7 @@ Bus notification indicated by a <a href="buses.usbfn_event">USBFN_EVENT</a>-type
 
 ### -field BusSpeed
 
-The operating bus speed indicated by <a href="buses.usbfn_bus_speed">USBFN_BUS_SPEED</a>-typed flags.
+The operating bus speed indicated by <a href="..\usbfnbase\ne-usbfnbase-_usbfn_bus_speed.md">USBFN_BUS_SPEED</a>-typed flags.
 
 
 ### -field SetupPacket
@@ -88,12 +89,12 @@ The <b>bConfigurationValue</b> field of a USB configuration descriptor.
 
 ### -field PortType
 
-Possible port types supported by a function controller indicated by a <a href="buses.usbfn_port_type">USBFN_PORT_TYPE</a>-typed flag.
+Possible port types supported by a function controller indicated by a <a href="..\usbfnbase\ne-usbfnbase-_usbfn_port_type.md">USBFN_PORT_TYPE</a>-typed flag.
 
 
 ### -field AlternateInterface
 
-Alternate setting of the interface indicated by <a href="buses.alternate_interface">ALTERNATE_INTERFACE</a>.
+Alternate setting of the interface indicated by <a href="..\usbfnbase\ns-usbfnbase-_alternate_interface.md">ALTERNATE_INTERFACE</a>.
 
 </dd>
 </dl>

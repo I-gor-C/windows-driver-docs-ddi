@@ -1,14 +1,14 @@
 ---
-UID: NC.ndkpi.NDK_FN_CREATE_QP_WITH_SRQ
+UID: NC:ndkpi.NDK_FN_CREATE_QP_WITH_SRQ
 title: NDK_FN_CREATE_QP_WITH_SRQ
 author: windows-driver-content
 description: The NdkCreateQpWithSrq (NDK_FN_CREATE_QP_WITH_SRQ) function create an NDK queue pair (QP) object with an NDK shared receive queue (SRQ) object.
 old-location: netvista\ndk_fn_create_qp_with_srq.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: B3AAC8BE-E874-48C7-9DF6-0C9A6BDBB9B5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS, PNDIS_WWAN_VISIBLE_PROVIDERS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PNDIS_WWAN_VISIBLE_PROVIDERS, NDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 # NDK_FN_CREATE_QP_WITH_SRQ callback
@@ -68,12 +69,12 @@ NTSTATUS NdkCreateQpWithSrq(
 
 ### -param pNdkPd [in]
 
-A pointer to an NDK protection domain (PD) object (<a href="netvista.ndk_pd">NDK_PD</a>).
+A pointer to an NDK protection domain (PD) object (<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>).
 
 
 ### -param pReceiveCq [in]
 
-A pointer to a completion queue (CQ) to use for receive request completions (<a href="netvista.ndk_cq">NDK_CQ</a>).
+A pointer to a completion queue (CQ) to use for receive request completions (<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>).
 
 
 ### -param pInitiatorCq [in]
@@ -83,17 +84,17 @@ A pointer to a CQ to use for initiator request completions.
 
 ### -param pSrq [in]
 
-A pointer to an NDK shared receive queue (SRQ) object (<a href="netvista.ndk_srq">NDK_SRQ</a>) to post receive requests.
+A pointer to an NDK shared receive queue (SRQ) object (<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>) to post receive requests.
 
 
 ### -param QPContext [in, optional]
 
-A context value to be returned in the <b>QPContext</b> member of the  <a href="netvista.ndk_result">NDK_RESULT</a> structure for all requests that are posted over this QP.
+A context value to be returned in the <b>QPContext</b> member of the  <a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a> structure for all requests that are posted over this QP.
 
 
 ### -param InitiatorQueueDepth [in]
 
-The maximum number of initiator requests that can be outstanding over the QP. This value must be less than or equal to the value in the  <b>MaxInitiatorQueueDepth</b> member of the  <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure.
+The maximum number of initiator requests that can be outstanding over the QP. This value must be less than or equal to the value in the  <b>MaxInitiatorQueueDepth</b> member of the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a> structure.
 
 
 ### -param MaxInitiatorRequestSge [in]
@@ -118,7 +119,7 @@ A context value that the NDK provider passes back to the <i>NdkCreateCompletion<
 
 ### -param ppNdkQp 
 
-A pointer to a created QP object (<a href="netvista.ndk_qp">NDK_QP</a>) is returned in this location if the request succeeds without returning STATUS_PENDING. If the request returns STATUS_PENDING then this parameter is ignored and the created object is returned with the callback that is specified in the  <i>CreateCompletion</i> parameter.
+A pointer to a created QP object (<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>) is returned in this location if the request succeeds without returning STATUS_PENDING. If the request returns STATUS_PENDING then this parameter is ignored and the created object is returned with the callback that is specified in the  <i>CreateCompletion</i> parameter.
 
 
 ## -returns
@@ -133,7 +134,7 @@ The
  
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The request failed because the requested <i>InitiatorQueueDepth</i>,  <i>MaxInitiatorRequestSge</i> or <i>InlineDataSize</i> is not within the limits that are specified in the  <a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a> structure.
+</dl>The request failed because the requested <i>InitiatorQueueDepth</i>,  <i>MaxInitiatorRequestSge</i> or <i>InlineDataSize</i> is not within the limits that are specified in the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a> structure.
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl>The request failed due to insufficient resources. 
@@ -208,33 +209,33 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndk_adapter_info">NDK_ADAPTER_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439851">NDK_ADAPTER_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndk_cq">NDK_CQ</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>
 </dt>
 <dt>
 <a href="..\ndkpi\nc-ndkpi-ndk_fn_create_completion.md">NDK_FN_CREATE_COMPLETION</a>
 </dt>
 <dt>
-<a href="netvista.ndk_pd">NDK_PD</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>
 </dt>
 <dt>
-<a href="netvista.ndk_qp">NDK_QP</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>
 </dt>
 <dt>
-<a href="netvista.ndk_result">NDK_RESULT</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a>
 </dt>
 <dt>
-<a href="netvista.ndk_srq">NDK_SRQ</a>
+<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>
 </dt>
 <dt>
-<a href="netvista.ndkpi_object_lifetime_requirements">NDKPI Object Lifetime Requirements</a>
+<a href="https://msdn.microsoft.com/94993523-D0D7-441E-B95C-417800840BAC">NDKPI Object Lifetime Requirements</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDK_FN_CREATE_QP_WITH_SRQ callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDK_FN_CREATE_QP_WITH_SRQ callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

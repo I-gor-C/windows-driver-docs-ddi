@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.OpenLogFile
+UID: NF:dbgeng.IDebugControl3.OpenLogFile
 title: IDebugControl3::OpenLogFile method
 author: windows-driver-content
 description: The OpenLogFile method opens a log file that will receive output from the client objects.
 old-location: debugger\openlogfile.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: aba8839e-4c44-4c10-8b6f-9f5832c12166
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::OpenLogFile, OpenLogFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl3::OpenLogFile method
@@ -74,7 +75,7 @@ This method can also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-<b>OpenLogFile</b> and <b>OpenLogFileWide</b> behave the same way as <a href="debugger.openlogfile2">OpenLogFile2</a> and <b>OpenLogFile2Wide</b> with <i>Flags</i> set to DEBUG_LOG_APPEND if <i>Append</i> is <b>TRUE</b> and DEBUG_LOG_DEFAULT otherwise.
+<b>OpenLogFile</b> and <b>OpenLogFileWide</b> behave the same way as <a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a> and <b>OpenLogFile2Wide</b> with <i>Flags</i> set to DEBUG_LOG_APPEND if <i>Append</i> is <b>TRUE</b> and DEBUG_LOG_DEFAULT otherwise.
 
 Only one log file can be open at a time.  If there is already a log file open, it will be closed.
 
@@ -119,19 +120,19 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 </dt>
 <dt>
-<a href="debugger.openlogfile2">OpenLogFile2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553155">OpenLogFile2</a>
 </dt>
 <dt>
-<a href="debugger.getlogfile">GetLogFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547016">GetLogFile</a>
 </dt>
 <dt>
-<a href="debugger.closelogfile">CloseLogFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539148">CloseLogFile</a>
 </dt>
 <dt>
-<a href="debugger.getlogmask">GetLogMask</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547066">GetLogMask</a>
 </dt>
 <dt>
-<a href="debugger.setlogmask">SetLogMask</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556734">SetLogMask</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564018">.logopen (Open Log File)</a>
@@ -144,5 +145,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugControl::OpenLogFile method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::OpenLogFile method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

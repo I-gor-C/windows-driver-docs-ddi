@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_ERRORINFO
+UID: NS:gnssdriver.GNSS_ERRORINFO
 title: GNSS_ERRORINFO
 author: windows-driver-content
 description: This structure contains error information.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 754CD1DD-88E6-4E02-8E24-1939222FE326
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_ERRORINFO, *PGNSS_ERRORINFO, GNSS_ERRORINFO, PGNSS_ERRORINFO
+ms.keywords: GNSS_ERRORINFO, GNSS_ERRORINFO, *PGNSS_ERRORINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_ERRORINFO, *PGNSS_ERRORINFO
 ---
 
 # GNSS_ERRORINFO structure

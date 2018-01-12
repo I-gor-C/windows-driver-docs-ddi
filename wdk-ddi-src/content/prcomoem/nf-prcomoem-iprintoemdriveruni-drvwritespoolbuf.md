@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemDriverUni.DrvWriteSpoolBuf
+UID: NF:prcomoem.IPrintOemDriverUni.DrvWriteSpoolBuf
 title: IPrintOemDriverUni::DrvWriteSpoolBuf method
 author: windows-driver-content
 description: The IPrintOemDriverUni::DrvWriteSpoolBuf method is provided by the Unidrv driver so that a rendering plug-in can send printer data to the spooler.
@@ -7,7 +7,7 @@ old-location: print\iprintoemdriveruni_drvwritespoolbuf.htm
 old-project: print
 ms.assetid: e019b88a-bffe-44d2-8031-de37b6a1cf1c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemDriverUni, IPrintOemDriverUni::DrvWriteSpoolBuf, DrvWriteSpoolBuf
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ HRESULT DrvWriteSpoolBuf(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param pBuffer 
@@ -93,7 +94,7 @@ The method must return one of the following values.
 
 
 ## -remarks
-OEMs use the Unidrv helper function <code>IPrintOemDriverUni::DrvWriteSpoolBuf</code> to send output to the printer. If a print job is terminated by the user, <code>IPrintOemDriverUni::DrvWriteSpoolBuf</code> returns E_FAIL and can no longer be used to send any data to the printer. When this occurs, certain printers must have a clean-up code fragment sent to them, resetting their states before they can start new print jobs. For these printers, <a href="print.iprintoemdriveruni_drvwriteabortbuf">IPrintOemDriverUni::DrvWriteAbortBuf</a> can be used to send this code fragment to the printer. 
+OEMs use the Unidrv helper function <code>IPrintOemDriverUni::DrvWriteSpoolBuf</code> to send output to the printer. If a print job is terminated by the user, <code>IPrintOemDriverUni::DrvWriteSpoolBuf</code> returns E_FAIL and can no longer be used to send any data to the printer. When this occurs, certain printers must have a clean-up code fragment sent to them, resetting their states before they can start new print jobs. For these printers, <a href="https://msdn.microsoft.com/library/windows/hardware/ff553135">IPrintOemDriverUni::DrvWriteAbortBuf</a> can be used to send this code fragment to the printer. 
 
 Rendering plug-ins are described in <a href="https://msdn.microsoft.com/b7761209-1f6f-4288-af47-4ed855c2e629">Customizing Microsoft's Printer Drivers</a>.
 

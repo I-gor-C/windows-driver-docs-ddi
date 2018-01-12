@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:ieee
 ---
 
 # IEEE 1394 bus

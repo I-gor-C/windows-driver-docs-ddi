@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL
+UID: NC:d3dumddi.PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL
 title: PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL
 author: windows-driver-content
 description: The DestroyAuthenticatedChannel function releases resources for the authenticated channel that the CreateAuthenticatedChannel function creates.
@@ -7,7 +7,7 @@ old-location: display\destroyauthenticatedchannel.htm
 old-project: display
 ms.assetid: ccea427b-e19e-433b-91b0-b40ce7c1da5a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL callback
@@ -64,7 +65,7 @@ __checkReturn HRESULT APIENTRY DestroyAuthenticatedChannel(
 
 ### -param pData [in]
 
- A pointer to a <a href="display.d3dddiarg_destroyauthenticatedchannel">D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL</a> structure that contains one member that specifies the handle to the authenticated channel to destroy. 
+ A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_destroyauthenicatedchannel.md">D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL</a> structure that contains one member that specifies the handle to the authenticated channel to destroy. 
 
 
 ## -returns
@@ -129,12 +130,12 @@ Header
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a>
 </dt>
 <dt>
-<a href="display.d3dddiarg_destroyauthenticatedchannel">D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_destroyauthenicatedchannel.md">D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

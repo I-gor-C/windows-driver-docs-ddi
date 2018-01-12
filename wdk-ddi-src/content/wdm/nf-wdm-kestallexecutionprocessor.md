@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeStallExecutionProcessor
+UID: NF:wdm.KeStallExecutionProcessor
 title: KeStallExecutionProcessor function
 author: windows-driver-content
 description: The KeStallExecutionProcessor routine stalls the caller on the current processor for a specified time interval.
@@ -7,7 +7,7 @@ old-location: kernel\kestallexecutionprocessor.htm
 old-project: kernel
 ms.assetid: 9f03af94-0a29-42f4-84f1-09d8d1c97dd6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeStallExecutionProcessor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hal.lib
 req.dll: Hal.dll
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -140,18 +141,18 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.kedelayexecutionthread">KeDelayExecutionThread</a>
+<a href="..\wdm\nf-wdm-kedelayexecutionthread.md">KeDelayExecutionThread</a>
 </dt>
 <dt>
-<a href="kernel.kewaitformultipleobjects">KeWaitForMultipleObjects</a>
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
 </dt>
 <dt>
-<a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeStallExecutionProcessor routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeStallExecutionProcessor routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

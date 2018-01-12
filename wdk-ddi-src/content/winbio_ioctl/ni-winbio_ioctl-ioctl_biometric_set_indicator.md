@@ -1,5 +1,5 @@
 ---
-UID: NI.winbio_ioctl.IOCTL_BIOMETRIC_SET_INDICATOR
+UID: NI:winbio_ioctl.IOCTL_BIOMETRIC_SET_INDICATOR
 title: IOCTL_BIOMETRIC_SET_INDICATOR
 author: windows-driver-content
 description: The IOCTL_BIOMETRIC_SET_INDICATOR IOCTL directs the driver to update the status of the indicator light.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBMP_IMAGE_INFO, BMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -51,12 +52,12 @@ This IOCTL must be implemented if the driver supports the WINBIO_CAPABILITY_INDI
 
 ### -input-buffer
 
-<a href="biometric.winbio_set_indicator">WINBIO_SET_INDICATOR</a>
+<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_set_indicator.md">WINBIO_SET_INDICATOR</a>
 
 
 
 ### -input-buffer-length
-Length of a <a href="biometric.winbio_set_indicator">WINBIO_SET_INDICATOR</a> structure.
+Length of a <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_set_indicator.md">WINBIO_SET_INDICATOR</a> structure.
 
 
 ### -output-buffer

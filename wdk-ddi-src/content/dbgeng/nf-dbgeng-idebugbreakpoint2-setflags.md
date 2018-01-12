@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.SetFlags
+UID: NF:dbgeng.IDebugBreakpoint2.SetFlags
 title: IDebugBreakpoint2::SetFlags method
 author: windows-driver-content
 description: The SetFlags method sets the flags for a breakpoint.
 old-location: debugger\setflags.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 126741ba-b373-466e-986d-44e33c841eee
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::SetFlags, SetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::SetFlags method

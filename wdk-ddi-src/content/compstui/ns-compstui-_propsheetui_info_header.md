@@ -1,5 +1,5 @@
 ---
-UID: NS.COMPSTUI._PROPSHEETUI_INFO_HEADER
+UID: NS:compstui._PROPSHEETUI_INFO_HEADER
 title: _PROPSHEETUI_INFO_HEADER
 author: windows-driver-content
 description: The PROPSHEETUI_INFO_HEADER structure is used as an input parameter to an application's PFNPROPSHEETUI-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_INFO_HEADER.
@@ -7,8 +7,8 @@ old-location: print\propsheetui_info_header.htm
 old-project: print
 ms.assetid: 148c463c-a18b-4f24-b3dc-af74c3de97b7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PROPSHEETUI_INFO_HEADER, PPROPSHEETUI_INFO_HEADER, *PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER
+ms.date: 1/8/2018
+ms.keywords: _PROPSHEETUI_INFO_HEADER, *PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER
 ---
 
 # _PROPSHEETUI_INFO_HEADER structure
@@ -136,7 +137,7 @@ String identifier, representing text to be displayed in the property sheet's tit
 
 ### -field hWndParent
 
-Handle to the window to be used as the parent of the property sheet. By default, CPSUI supplies the window handle that it received for the <i>hWndOwner</i> parameter to <a href="print.commonpropertysheetui">CommonPropertySheetUI</a>, but the application can overwrite that handle with another.
+Handle to the window to be used as the parent of the property sheet. By default, CPSUI supplies the window handle that it received for the <i>hWndOwner</i> parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546148">CommonPropertySheetUI</a>, but the application can overwrite that handle with another.
 
 
 ### -field hInst

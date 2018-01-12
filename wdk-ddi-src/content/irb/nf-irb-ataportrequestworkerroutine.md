@@ -1,5 +1,5 @@
 ---
-UID: NF.irb.AtaPortRequestWorkerRoutine
+UID: NF:irb.AtaPortRequestWorkerRoutine
 title: AtaPortRequestWorkerRoutine function
 author: windows-driver-content
 description: The AtaPortRequestWorkerRoutine routine requests a worker routine.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
@@ -7,7 +7,7 @@ old-location: storage\ataportrequestworkerroutine.htm
 old-project: storage
 ms.assetid: 2d9a6886-aeec-4d61-8c9d-056d1409b905
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: AtaPortRequestWorkerRoutine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IDE_POWER_STATE
 ---
 
 # AtaPortRequestWorkerRoutine function

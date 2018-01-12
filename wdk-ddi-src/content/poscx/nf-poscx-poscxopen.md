@@ -1,5 +1,5 @@
 ---
-UID: NF.poscx.PosCxOpen
+UID: NF:poscx.PosCxOpen
 title: PosCxOpen function
 author: windows-driver-content
 description: PosCxOpen is called to create an open PosCx library instance. This function initializes all resources it needs to manage a single open instance. It should be called from the driver's EVT_WDF_DEVICE_FILE_CREATE callback.
@@ -7,7 +7,7 @@ old-location: pos\poscxopen.htm
 old-project: pos
 ms.assetid: 6AB1BB0A-B350-44D7-B0D0-9A19FD6DEE19
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: PosCxOpen
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POS_CX_EVENT_PRIORITY
 req.product: Windows 10 or later.
 ---
 

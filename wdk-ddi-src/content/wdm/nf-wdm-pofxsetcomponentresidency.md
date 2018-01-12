@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.PoFxSetComponentResidency
+UID: NF:wdm.PoFxSetComponentResidency
 title: PoFxSetComponentResidency function
 author: windows-driver-content
 description: The PoFxSetComponentResidency routine sets the estimated time for how long a component is likely to remain idle after the component enters the idle condition.
@@ -7,7 +7,7 @@ old-location: kernel\pofxsetcomponentresidency.htm
 old-project: kernel
 ms.assetid: B4216BA1-FC5C-4A3B-BB74-E071BD2048F8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PoFxSetComponentResidency
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: Ntoskrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -58,12 +59,12 @@ VOID PoFxSetComponentResidency(
 
 ### -param Handle [in]
 
-A handle that represents the registration of the device with the power management framework (PoFx). The device driver previously received this handle from the <a href="kernel.pofxregisterdevice">PoFxRegisterDevice</a> routine.
+A handle that represents the registration of the device with the power management framework (PoFx). The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.
 
 
 ### -param Component [in]
 
-The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="kernel.po_fx_device">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
+The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="..\wdm\ns-wdm-_po_fx_device_v1.md">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
 
 ### -param Residency [in]

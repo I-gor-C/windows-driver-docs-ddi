@@ -1,5 +1,5 @@
 ---
-UID: NS.SENSORSCX._SENSOR_CONFIG
+UID: NS:sensorscx._SENSOR_CONFIG
 title: _SENSOR_CONFIG
 author: windows-driver-content
 description: This structure contains information that the sensor driver passes to the class extension about each sensor.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: E21E2FEC-8733-4A8A-A0C4-899F10824F9B
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SENSOR_CONFIG, SENSOR_CONFIG, PSENSOR_CONFIG, *PSENSOR_CONFIG
+ms.keywords: _SENSOR_CONFIG, *PSENSOR_CONFIG, SENSOR_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSENSOR_CONFIG, SENSOR_CONFIG
 req.product: Windows 10 or later.
 ---
 

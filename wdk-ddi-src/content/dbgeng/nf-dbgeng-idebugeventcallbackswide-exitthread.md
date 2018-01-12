@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugEventCallbacksWide.ExitThread
+UID: NF:dbgeng.IDebugEventCallbacksWide.ExitThread
 title: IDebugEventCallbacksWide::ExitThread method
 author: windows-driver-content
 description: The ExitThread callback method is called by the engine when an exit-threaddebugging event occurs in the target.
 old-location: debugger\idebugeventcallbackswide_exitthread.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 77933fa9-ff30-45cf-894d-83a425802e25
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugEventCallbacksWide, IDebugEventCallbacksWide::ExitThread, ExitThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugEventCallbacksWide::ExitThread method
@@ -63,7 +64,7 @@ This method returns a <a href="https://msdn.microsoft.com/library/windows/hardwa
 
 
 ## -remarks
-This method is only called by the engine if the DEBUG_EVENT_EXIT_THREAD flag is set in the mask returned by <a href="debugger.idebugeventcallbackswide_getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.
+This method is only called by the engine if the DEBUG_EVENT_EXIT_THREAD flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550625">IDebugEventCallbacksWide::GetInterestMask</a>.
 
 For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.  For information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
 

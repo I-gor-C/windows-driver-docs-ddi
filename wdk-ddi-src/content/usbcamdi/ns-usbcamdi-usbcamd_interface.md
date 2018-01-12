@@ -1,5 +1,5 @@
 ---
-UID: NS.USBCAMDI.USBCAMD_INTERFACE
+UID: NS:usbcamdi.USBCAMD_INTERFACE
 title: USBCAMD_INTERFACE
 author: windows-driver-content
 description: The USBCAMD_INTERFACE structure defines a set of services related to the USB bus interfaces.
@@ -7,8 +7,8 @@ old-location: stream\usbcamd_interface.htm
 old-project: stream
 ms.assetid: 864dbe8d-2771-4532-8a50-ed1bf5286658
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: USBCAMD_INTERFACE, USBCAMD_INTERFACE, *PUSBCAMD_INTERFACE, PUSBCAMD_INTERFACE
+ms.date: 1/9/2018
+ms.keywords: USBCAMD_INTERFACE, *PUSBCAMD_INTERFACE, USBCAMD_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBCAMD_INTERFACE, USBCAMD_INTERFACE
 req.product: Windows 10 or later.
 ---
 
@@ -66,27 +67,27 @@ Describes the interface that USBCAMD exports for use by other drivers.
 
 ### -field USBCAMD_WaitOnDeviceEvent
 
-Pointer to the camera minidriver defined <a href="stream.usbcamd_waitondeviceevent">USBCAMD_WaitOnDeviceEvent</a> service.
+Pointer to the camera minidriver defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff568638">USBCAMD_WaitOnDeviceEvent</a> service.
 
 
 ### -field USBCAMD_BulkReadWrite
 
-Pointer to the camera minidriver defined <a href="stream.usbcamd_bulkreadwrite">USBCAMD_BulkReadWrite</a> service.
+Pointer to the camera minidriver defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff568577">USBCAMD_BulkReadWrite</a> service.
 
 
 ### -field USBCAMD_SetVideoFormat
 
-Pointer to the camera minidriver defined <a href="stream.usbcamd_setvideoformat">USBCAMD_SetVideoFormat</a> service.
+Pointer to the camera minidriver defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff568634">USBCAMD_SetVideoFormat</a> service.
 
 
 ### -field USBCAMD_SetIsoPipeState
 
-Pointer to the camera minidriver defined <a href="stream.usbcamd_setisopipestate">USBCAMD_SetIsoPipeState</a> service.
+Pointer to the camera minidriver defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff568629">USBCAMD_SetIsoPipeState</a> service.
 
 
 ### -field USBCAMD_CancelBulkReadWrite
 
-Pointer to the camera minidriver defined <a href="stream.usbcamd_cancelbulkreadwrite">USBCAMD_CancelBulkReadWrite</a> service.
+Pointer to the camera minidriver defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff568580">USBCAMD_CancelBulkReadWrite</a> service.
 
 
 ## -remarks
@@ -114,22 +115,22 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.interface">INTERFACE</a>
+<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 </dt>
 <dt>
-<a href="stream.usbcamd_waitondeviceevent">USBCAMD_WaitOnDeviceEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568638">USBCAMD_WaitOnDeviceEvent</a>
 </dt>
 <dt>
-<a href="stream.usbcamd_bulkreadwrite">USBCAMD_BulkReadWrite</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568577">USBCAMD_BulkReadWrite</a>
 </dt>
 <dt>
-<a href="stream.usbcamd_setvideoformat">USBCAMD_SetVideoFormat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568634">USBCAMD_SetVideoFormat</a>
 </dt>
 <dt>
-<a href="stream.usbcamd_setisopipestate">USBCAMD_SetIsoPipeState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568629">USBCAMD_SetIsoPipeState</a>
 </dt>
 <dt>
-<a href="stream.usbcamd_cancelbulkreadwrite">USBCAMD_CancelBulkReadWrite</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568580">USBCAMD_CancelBulkReadWrite</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568182">SRB_INITIALIZATION_COMPLETE</a>
@@ -142,5 +143,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_INTERFACE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_INTERFACE structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMPDriverEvent
+UID: NF:printoem.OEMPDriverEvent
 title: OEMPDriverEvent function
 author: windows-driver-content
 description: OEMPDriverEvent function
@@ -7,7 +7,7 @@ old-location: print\oempdriverevent.htm
 old-project: print
 ms.assetid: 761967c9-c31f-4b7b-837a-bd48285c54fc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMPDriverEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

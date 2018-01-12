@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDT._D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT
+UID: NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT
 title: _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT
 author: windows-driver-content
 description: The D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure is used to indicate the types of copy protection that are supported by a particular VidPN present path.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_present_path_copyprotection_support.htm
 old-project: display
 ms.assetid: 2b0c7428-bc88-461c-ab72-daccf02606da
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT
 ---
 
 # _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure
@@ -77,7 +78,7 @@ Reserved for future use.
 
 
 ## -remarks
-The <b>CopyProtectionSupport</b> member of the <a href="display.d3dkmdt_vidpn_present_path_copyprotection">D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION</a> structure is a D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure.
+The <b>CopyProtectionSupport</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_copyprotection.md">D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION</a> structure is a D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure.
 
 
 ## -requirements

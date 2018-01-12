@@ -1,5 +1,5 @@
 ---
-UID: NC.61883.PCMP_MONITOR_ROUTINE
+UID: NC:61883.PCMP_MONITOR_ROUTINE
 title: PCMP_MONITOR_ROUTINE
 author: windows-driver-content
 description: This routine is called for plug monitoring.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: E140D097-EE2F-4179-A43D-570397459762
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _TOPOLOGY_MAP, *PTOPOLOGY_MAP, TOPOLOGY_MAP, PTOPOLOGY_MAP
+ms.keywords: _TOPOLOGY_MAP, *PTOPOLOGY_MAP, TOPOLOGY_MAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PTOPOLOGY_MAP, TOPOLOGY_MAP
 ---
 
 # PCMP_MONITOR_ROUTINE callback

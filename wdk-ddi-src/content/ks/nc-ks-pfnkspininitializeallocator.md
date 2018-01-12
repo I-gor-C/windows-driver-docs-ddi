@@ -1,5 +1,5 @@
 ---
-UID: NC.ks.PFNKSPININITIALIZEALLOCATOR
+UID: NC:ks.PFNKSPININITIALIZEALLOCATOR
 title: PFNKSPININITIALIZEALLOCATOR
 author: windows-driver-content
 description: An AVStream minidriver's AVStrMiniInitializeAllocator routine initializes an allocator that will be associated with a pin.
@@ -7,7 +7,7 @@ old-location: stream\avstrminiinitializeallocator.htm
 old-project: stream
 ms.assetid: 9c6d3856-702c-416b-a5d2-b3578a55bbcd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: NpdBrokerUninitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDSELECTOR
 ---
 
 # PFNKSPININITIALIZEALLOCATOR callback
@@ -60,7 +61,7 @@ NTSTATUS AVStrMiniInitializeAllocator(
 
 ### -param Pin [in]
 
-Pointer to a <a href="stream.kspin">KSPIN</a> structure describing the pin with which the allocator is to be associated.
+Pointer to a <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure describing the pin with which the allocator is to be associated.
 
 
 ### -param AllocatorFraming [in]
@@ -70,7 +71,7 @@ Pointer to a <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a
 
 ### -param Context [out]
 
-Pointer to a context for the allocator that will be passed as a parameter to the other routines for this structure. For example, the driver could store pin or allocator framing structures for later reference by the other callback routines. Note that other routines for <a href="stream.ksallocator_dispatch">KSALLOCATOR_DISPATCH</a> must have at least an indirect way of referencing <i>Pin</i>. (For instance, <a href="stream.avstrminiallocate">AVStrMiniAllocate</a> will need to be able to access the <i>AllocatorFraming</i> information for <i>Pin</i>, and <i>Context</i> is the only parameter that AVStream will pass it.)
+Pointer to a context for the allocator that will be passed as a parameter to the other routines for this structure. For example, the driver could store pin or allocator framing structures for later reference by the other callback routines. Note that other routines for <a href="..\ks\ns-ks-_ksallocator_dispatch.md">KSALLOCATOR_DISPATCH</a> must have at least an indirect way of referencing <i>Pin</i>. (For instance, <a href="..\ks\nc-ks-pfnksdefaultallocate.md">AVStrMiniAllocate</a> will need to be able to access the <i>AllocatorFraming</i> information for <i>Pin</i>, and <i>Context</i> is the only parameter that AVStream will pass it.)
 
 
 ## -returns
@@ -78,7 +79,7 @@ Pointer to a context for the allocator that will be passed as a parameter to the
 
 
 ## -remarks
-The minidriver specifies this routine's address in the <b>InitializeAllocator</b> member of its <a href="stream.ksallocator_dispatch">KSALLOCATOR_DISPATCH</a> structure. The minidriver passes this structure to the class driver in <a href="stream.kspin_dispatch">KSPIN_DISPATCH</a>.
+The minidriver specifies this routine's address in the <b>InitializeAllocator</b> member of its <a href="..\ks\ns-ks-_ksallocator_dispatch.md">KSALLOCATOR_DISPATCH</a> structure. The minidriver passes this structure to the class driver in <a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>.
 
 Note that kernel-mode allocators cannot allocate frames that could eventually reach user mode.
 
@@ -126,24 +127,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.avstrminideleteallocator">AVStrMiniDeleteAllocator</a>
+<a href="..\ks\nc-ks-pfnksdeleteallocator.md">AVStrMiniDeleteAllocator</a>
 </dt>
 <dt>
-<a href="stream.ksallocator_dispatch">KSALLOCATOR_DISPATCH</a>
+<a href="..\ks\ns-ks-_ksallocator_dispatch.md">KSALLOCATOR_DISPATCH</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
 </dt>
 <dt>
-<a href="stream.kspin">KSPIN</a>
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 </dt>
 <dt>
-<a href="stream.kspin_dispatch">KSPIN_DISPATCH</a>
+<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVStrMiniInitializeAllocator routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20PFNKSPININITIALIZEALLOCATOR routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.bthxddi.IOCTL_BTHX_GET_VERSION
+UID: NI:bthxddi.IOCTL_BTHX_GET_VERSION
 title: IOCTL_BTHX_GET_VERSION
 author: windows-driver-content
 description: Profile drivers use IOCTL_BTHX_GET_VERSION to get the version supported by the transport driver.
@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bthx_get_version.htm
 old-project: bltooth
 ms.assetid: F4FD760B-551C-4738-A13D-444E08215D59
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BTHX_SCO_SUPPORT, PBTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.date: 12/21/2017
+ms.keywords: _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
 ---
 
 # IOCTL_BTHX_GET_VERSION IOCTL
@@ -58,11 +59,11 @@ None.
 
 
 ### -output-buffer
-Profile drivers should use KMDF and its <a href="kmdf.wdfrequestretrieveoutputmemory">WdfRequestRetrieveOutputMemory</a> method to retrieve output parameters.  For example, to get the output buffer:
+Profile drivers should use KMDF and its <a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputmemory.md">WdfRequestRetrieveOutputMemory</a> method to retrieve output parameters.  For example, to get the output buffer:
 
 <code>Status = WdfRequestRetrieveOutputMemory(_Request, &amp;ReqOutMemory);</code>
 
-The buffer describes a <a href="bltooth.bthx_version">BTHX_VERSION</a> structure. 
+The buffer describes a <a href="..\bthxddi\ns-bthxddi-_bthx_version.md">BTHX_VERSION</a> structure. 
 
 Refer to the WDK Bluetooth samples for more information.
 

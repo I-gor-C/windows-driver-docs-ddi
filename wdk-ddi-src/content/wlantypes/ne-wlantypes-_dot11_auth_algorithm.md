@@ -1,14 +1,14 @@
 ---
-UID: NE.wlantypes._DOT11_AUTH_ALGORITHM
+UID: NE:wlantypes._DOT11_AUTH_ALGORITHM
 title: _DOT11_AUTH_ALGORITHM
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_auth_algorithm.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 27bba553-2d46-4892-864a-52e44caf6d56
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGORITHM, *PDOT11_AUTH_ALGORITHM, PDOT11_AUTH_ALGORITHM
+ms.date: 1/8/2018
+ms.keywords: _DOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGORITHM, *PDOT11_AUTH_ALGORITHM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_AUTH_ALGORITHM, *PDOT11_AUTH_ALGORITHM
 req.product: Windows 10 or later.
 ---
 
@@ -179,7 +180,7 @@ Starting with Windows 7, an 802.11 miniport driver can report any combination of
 
 If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport driver must allow
     peer stations to associate with the Extensible AP by using 
-    <a href="netvista.open_system_authentication">Open System Authentication</a> or 
+    <a href="https://msdn.microsoft.com/f07d2d77-ccaf-4599-b59e-6ea4ecf55e0f">Open System Authentication</a> or 
     <a href="https://msdn.microsoft.com/41dd280b-e54c-4233-8051-45e7b1284d1d">Wired Equivalent Privacy (WEP)</a> algorithms, regardless of
     the enabled authorization and cipher algorithms. For more information about WPS and Extensible AP, see 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569436">OID_DOT11_WPS_ENABLED</a>.
@@ -232,5 +233,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_AUTH_ALGORITHM enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_AUTH_ALGORITHM enumeration%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

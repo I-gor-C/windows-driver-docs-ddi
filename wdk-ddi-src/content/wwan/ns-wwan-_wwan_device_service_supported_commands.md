@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
+UID: NS:wwan._WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
 title: _WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
 author: windows-driver-content
 description: The WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure represents a list of commands supported by a device service.
 old-location: netvista\wwan_device_service_supported_commands.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2AFE312D-8CCE-4A91-A23E-D5C6D2B0B01A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, *PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
+ms.date: 1/8/2018
+ms.keywords: _WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, *PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ The GUID of the device service command.
 ### -field ListHeader
 
 A formatted 
-     <a href="netvista.wwan_list_header">WWAN_LIST_HEADER</a> object that represents the
+     <a href="..\wwan\ns-wwan-_wwan_list_header.md">WWAN_LIST_HEADER</a> object that represents the
      list of commands supported by the device service.
 
 
@@ -98,12 +99,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_list_header">WWAN_LIST_HEADER</a>
+<a href="..\wwan\ns-wwan-_wwan_list_header.md">WWAN_LIST_HEADER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

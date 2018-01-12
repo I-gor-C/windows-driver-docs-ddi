@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSPROPERTY_PIN
+UID: NE:ks.KSPROPERTY_PIN
 title: KSPROPERTY_PIN
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksproperty_pin.htm
 old-project: stream
 ms.assetid: C73B306C-A6DA-469A-984C-3FC605CC5E19
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPROPERTY_PIN, KSPROPERTY_PIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_PIN
 ---
 
 # KSPROPERTY_PIN enumeration

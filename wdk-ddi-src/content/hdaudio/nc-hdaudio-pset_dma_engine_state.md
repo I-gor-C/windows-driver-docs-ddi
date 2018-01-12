@@ -1,5 +1,5 @@
 ---
-UID: NC.hdaudio.PSET_DMA_ENGINE_STATE
+UID: NC:hdaudio.PSET_DMA_ENGINE_STATE
 title: PSET_DMA_ENGINE_STATE
 author: windows-driver-content
 description: The SetDmaEngineState routine sets the state of one or more DMA engines to the Running, Stopped, Paused, or Reset state.The function pointer type for a SetDmaEngineState routine is defined as:
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 05cfb827-e143-4d77-b378-e02dd381e429
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 # PSET_DMA_ENGINE_STATE callback
@@ -63,7 +64,7 @@ NTSTATUS SetDmaEngineState(
 
 ### -param context [in]
 
-Specifies the context value from the <b>Context</b> member of the <a href="audio.hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>, or <a href="audio.hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
+Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>, or <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
 
 
 ### -param streamState [in]
@@ -133,7 +134,7 @@ From a Running or Reset state, the stream state can change directly to either Pa
 
 From a paused or stopped state, the stream state can change directly to either Running or Reset.
 
-A WDM audio driver calls this routine during a call to its <b>SetState</b> method. For example, see <a href="audio.iminiportwavecyclicstream_setstate">IMiniportWaveCyclicStream::SetState</a>.
+A WDM audio driver calls this routine during a call to its <b>SetState</b> method. For example, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536720">IMiniportWaveCyclicStream::SetState</a>.
 
 
 ## -requirements
@@ -175,13 +176,13 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="audio.hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a>
 </dt>
 <dt>
-<a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
 </dt>
 <dt>
-<a href="audio.hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_bdl.md">HDAUDIO_BUS_INTERFACE_BDL</a>
 </dt>
 <dt>
 <a href="..\hdaudio\nc-hdaudio-pallocate_dma_buffer.md">AllocateDmaBuffer</a>
@@ -190,7 +191,7 @@ IRQL
 <a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">SetupDmaEngineWithBdl</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavecyclicstream_setstate">IMiniportWaveCyclicStream::SetState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536720">IMiniportWaveCyclicStream::SetState</a>
 </dt>
 </dl>
  

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILUICCAPPINFO
+UID: NS:ntddrilapitypes.RILUICCAPPINFO
 title: RILUICCAPPINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccappinfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b3a688fe-928c-458e-ac47-59a9ae61bc5e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUICCAPPINFO, RILUICCAPPINFO, *LPRILUICCAPPINFO, LPRILUICCAPPINFO
+ms.date: 1/8/2018
+ms.keywords: RILUICCAPPINFO, *LPRILUICCAPPINFO, RILUICCAPPINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILUICCAPPINFO, RILUICCAPPINFO
 ---
 
 # RILUICCAPPINFO structure

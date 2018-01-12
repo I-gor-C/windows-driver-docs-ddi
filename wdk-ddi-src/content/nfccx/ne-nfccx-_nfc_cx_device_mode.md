@@ -1,5 +1,5 @@
 ---
-UID: NE.nfccx._NFC_CX_DEVICE_MODE
+UID: NE:nfccx._NFC_CX_DEVICE_MODE
 title: _NFC_CX_DEVICE_MODE
 author: windows-driver-content
 description: Specifies device mode flags.
@@ -7,8 +7,8 @@ old-location: nfpdrivers\nfc_cx_device_mode.htm
 old-project: nfpdrivers
 ms.assetid: B9996339-984D-4F6B-BFE9-2F536EC75924
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NFC_CX_DEVICE_MODE, NFC_CX_DEVICE_MODE, PNFC_CX_DEVICE_MODE, *PNFC_CX_DEVICE_MODE
+ms.date: 12/18/2017
+ms.keywords: _NFC_CX_DEVICE_MODE, *PNFC_CX_DEVICE_MODE, NFC_CX_DEVICE_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Requires same
+req.irql: < DISPATCH_LEVEL
+req.typenames: *PNFC_CX_DEVICE_MODE, NFC_CX_DEVICE_MODE
 ---
 
 # _NFC_CX_DEVICE_MODE enumeration
@@ -117,5 +118,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_DEVICE_MODE enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [nfpdrivers\nfpdrivers]:%20NFC_CX_DEVICE_MODE enumeration%20 RELEASE:%20(12/18/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSAUDIO_MICROPHONE_COORDINATES
+UID: NS:ksmedia.KSAUDIO_MICROPHONE_COORDINATES
 title: KSAUDIO_MICROPHONE_COORDINATES
 author: windows-driver-content
 description: The KSAUDIO_MICROPHONE_COORDINATES structure specifies the type and the coordinates of a single microphone in the microphone array.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 443fb3c0-0e75-4abc-b44f-047752b3cab7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSAUDIO_MICROPHONE_COORDINATES, PKSAUDIO_MICROPHONE_COORDINATES, *PKSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES
+ms.keywords: KSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES, *PKSAUDIO_MICROPHONE_COORDINATES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSAUDIO_MICROPHONE_COORDINATES, *PKSAUDIO_MICROPHONE_COORDINATES
 ---
 
 # KSAUDIO_MICROPHONE_COORDINATES structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_IOCTL._WINBIO_SENSOR_ATTRIBUTES
+UID: NS:winbio_ioctl._WINBIO_SENSOR_ATTRIBUTES
 title: _WINBIO_SENSOR_ATTRIBUTES
 author: windows-driver-content
 description: The IOCTL_BIOMETRIC_GET_ATTRIBUTES structure returns the WINBIO_SENSOR_ATTRIBUTES structure as output.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: edfd5b49-f658-46c7-a3f3-221afb35abb7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_SENSOR_ATTRIBUTES, *PWINBIO_SENSOR_ATTRIBUTES, PWINBIO_SENSOR_ATTRIBUTES, WINBIO_SENSOR_ATTRIBUTES
+ms.keywords: _WINBIO_SENSOR_ATTRIBUTES, WINBIO_SENSOR_ATTRIBUTES, *PWINBIO_SENSOR_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_SENSOR_ATTRIBUTES, *PWINBIO_SENSOR_ATTRIBUTES
 req.product: Windows 10 or later.
 ---
 
@@ -105,7 +106,7 @@ The driver could not gather the necessary information from the device.
 
 ### -field WinBioVersion
 
-A structure of type <a href="biometric.winbio_version">WINBIO_VERSION</a> that contains a WinBio WBDI version that is supported by the driver. To be compatible with the WinBio service, <b>WinBioVersion</b> must contain the same major version as the current major version of the WinBio service, in addition to a minor version that is less than or equal to the current minor version of the WinBio service. 
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md">WINBIO_VERSION</a> that contains a WinBio WBDI version that is supported by the driver. To be compatible with the WinBio service, <b>WinBioVersion</b> must contain the same major version as the current major version of the WinBio service, in addition to a minor version that is less than or equal to the current minor version of the WinBio service. 
 
 
 ### -field SensorType
@@ -310,7 +311,7 @@ A structure of type WINBIO_STRING that contains the serial number of the device,
 
 ### -field FirmwareVersion
 
- A structure of type <a href="biometric.winbio_version">WINBIO_VERSION</a> that contains the version of the firmware that is loaded on the device.
+ A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_version.md">WINBIO_VERSION</a> that contains the version of the firmware that is loaded on the device.
 
 
 ### -field SupportedFormatEntries
@@ -320,7 +321,7 @@ A structure of type WINBIO_STRING that contains the serial number of the device,
 
 ### -field SupportedFormat
 
-A structure of type <a href="biometric.winbio_registered_format">WINBIO_REGISTERED_FORMAT</a> that contains a list of the formats supported by the driver and device. 
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> that contains a list of the formats supported by the driver and device. 
 
 
 ## -remarks

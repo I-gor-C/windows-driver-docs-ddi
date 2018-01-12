@@ -1,5 +1,5 @@
 ---
-UID: NF.xpsrassvc.IXpsRasterizer.RasterizeRect
+UID: NF:xpsrassvc.IXpsRasterizer.RasterizeRect
 title: IXpsRasterizer::RasterizeRect method
 author: windows-driver-content
 description: The RasterizeRect method rasterizes an axis-aligned, rectangular region of an XPS fixed page.
@@ -7,7 +7,7 @@ old-location: print\ixpsrasterizer_rasterizerect.htm
 old-project: print
 ms.assetid: abf8dfc7-7921-4e9c-a338-ec783a01fca7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IXpsRasterizer, IXpsRasterizer::RasterizeRect, RasterizeRect
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: XPSRAS_BACKGROUND_COLOR
 req.product: Windows 10 or later.
 ---
 
@@ -81,7 +82,7 @@ The height, in pixels, of the output bitmap.
 
 ### -param notificationCallback [in, optional]
 
-Pointer to the <a href="print.ixpsrasterizernotificationcallback_interface">IXpsRasterizerNotificationCallback</a> interface of a notification object that is implemented by the caller. This parameter is optional and can be <b>NULL</b> if the caller does not require notification callbacks.
+Pointer to the <a href="https://msdn.microsoft.com/7616b5c7-a21f-4db1-923b-ebf2a039b5ec">IXpsRasterizerNotificationCallback</a> interface of a notification object that is implemented by the caller. This parameter is optional and can be <b>NULL</b> if the caller does not require notification callbacks.
 
 
 ### -param bitmap [out, optional]
@@ -108,7 +109,7 @@ If successful, this method creates a Windows imaging component (WIC) bitmap obje
 
 The WIC bitmap created by this method has a 32-bit pixel format that contains 8-bit red, green, and blue channels and uses the standard RGB (sRGB) color space. In addition, the format contains an 8-bit alpha component. The color components in each pixel value are pre-multiplied by the alpha component. The pixel format is specified by the GUID value <b>GUID_WICPixelFormat32bppPBGRA</b>, which is defined in the header file Wincodec.h. For more information about this format, see <a href="http://go.microsoft.com/fwlink/p/?linkid=133874">Native Pixel Formats Overview</a>.
 
-The <a href="print.ixpsrasterizationfactory_createrasterizer">IXpsRasterizationFactory::CreateRasterizer</a> method's <i>DPI</i> parameter specifies the resolution, in dots per inch, at which the bitmap is to be rendered. As described in the <a href="https://msdn.microsoft.com/library/windows/hardware/gg463431">XPS specification</a><u>, </u>the width and height of a fixed page in an XPS document are specified in 1/96-inch units. To determine the dimensions (in pixels) of the bitmap required to represent the entire fixed page, multiply the width and height by <i>DPI</i>/96.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556350">IXpsRasterizationFactory::CreateRasterizer</a> method's <i>DPI</i> parameter specifies the resolution, in dots per inch, at which the bitmap is to be rendered. As described in the <a href="https://msdn.microsoft.com/library/windows/hardware/gg463431">XPS specification</a><u>, </u>the width and height of a fixed page in an XPS document are specified in 1/96-inch units. To determine the dimensions (in pixels) of the bitmap required to represent the entire fixed page, multiply the width and height by <i>DPI</i>/96.
 
 To accommodate printers that require a fixed page to be rasterized as a series of horizontal or vertical bands, parameters <i>x</i>, <i>y</i>, <i>width</i>, and <i>height</i> specify a rectangular region of the fixed page that is to be rasterized. All four parameter values are specified in pixels. Parameters <i>x</i> and <i>y</i> are the coordinates of the top, left corner of the rectangular region; they are specified as pixel displacements from the coordinate origin (0, 0). Parameters <i>width</i> and <i>height</i> are the dimensions of the rectangular region.
 
@@ -163,18 +164,18 @@ Header
 <dl>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee719675.aspx">IWICBitmap</a></dt>
 <dt>
-<a href="print.ixpsrasterizer_setminimallinewidth">IXpsRasterizer::SetMinimalLineWidth</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556366">IXpsRasterizer::SetMinimalLineWidth</a>
 </dt>
 <dt>
-<a href="print.ixpsrasterizernotificationcallback_interface">IXpsRasterizerNotificationCallback</a>
+<a href="https://msdn.microsoft.com/7616b5c7-a21f-4db1-923b-ebf2a039b5ec">IXpsRasterizerNotificationCallback</a>
 </dt>
 <dt>
-<a href="print.ixpsrasterizationfactory_createrasterizer">IXpsRasterizationFactory::CreateRasterizer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556350">IXpsRasterizationFactory::CreateRasterizer</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IXpsRasterizer::RasterizeRect method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IXpsRasterizer::RasterizeRect method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

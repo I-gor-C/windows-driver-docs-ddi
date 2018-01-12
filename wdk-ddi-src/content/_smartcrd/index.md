@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:smartcrd
 ---
 
 # Smart Card Reader Devices
@@ -25,7 +25,6 @@ For the programming guide, see [Smart Card Reader Devices](===404===https://docs
 | [_SCARD_CARD_CAPABILITIES structure](..\smclib\ns-smclib-_scard_card_capabilities.md) | The SCARD_CARD_CAPABILITIES structure declaration defines the data that is stored in the CardCapabilites member of the SMARTCARD_EXTENSION structure and holds all information that is specific to the particular smart card that is currently used. |
 | [_SCARD_READER_CAPABILITIES structure](..\smclib\ns-smclib-_scard_reader_capabilities.md) | The SCARD_READER_CAPABILITIES structure holds state information about the smart card reader. |
 | [_SMARTCARD_EXTENSION structure](..\smclib\ns-smclib-_smartcard_extension.md) | The SMARTCARD_EXTENSION structure is used by both the smart card reader driver and the smart card driver library to access all other smart card data structures. |
-| [_SMARTCARD_EXTENSION structure](..\smclib\ns-smclib-_smartcard_extension~r1.md) | The SMARTCARD_EXTENSION structure is used by both the smart card reader driver and the smart card driver library to access all other smart card data structures. |
 | [_SMARTCARD_REPLY structure](..\smclib\ns-smclib-_smartcard_reply.md) | Describes the reply buffer received from the smart card. |
 | [_SMARTCARD_REQUEST structure](..\smclib\ns-smclib-_smartcard_request.md) | Describes the request buffer that contains data to send to the card. |
 | [_T0_DATA structure](..\smclib\ns-smclib-_t0_data.md) | The T0_DATA structure is used by the smart card driver library to process T0 I/O. |

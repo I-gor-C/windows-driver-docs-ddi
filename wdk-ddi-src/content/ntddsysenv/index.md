@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ntddsysenv
 ---
 
 # Ntddsysenv.h header

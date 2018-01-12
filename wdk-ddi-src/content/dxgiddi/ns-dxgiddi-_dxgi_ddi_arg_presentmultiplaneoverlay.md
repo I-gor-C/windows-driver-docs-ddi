@@ -1,5 +1,5 @@
 ---
-UID: NS.DXGIDDI._DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY
+UID: NS:dxgiddi._DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY
 title: _DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY
 author: windows-driver-content
 description: Specifies a multiplane overlay resource to display.
@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_arg_presentmultiplaneoverlay.htm
 old-project: display
 ms.assetid: 3d965c9b-1d71-4ef5-9b76-391b36b1d8c7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY, DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY
 ---
 
 # _DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY structure
@@ -69,7 +70,7 @@ typedef struct _DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY {
 
 ### -field pDXGIContext
 
-[in] A handle to the DXGI context. This handle is opaque to the driver. The driver should assign the handle in this member to the <b>pDXGIContext</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present_multiplane_overlay.md">DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY</a> structure when the driver calls the <a href="display.pfnpresentmultiplaneoverlaycb_dxgi">pfnPresentMultiPlaneOverlayCb (DXGI)</a> function. 
+[in] A handle to the DXGI context. This handle is opaque to the driver. The driver should assign the handle in this member to the <b>pDXGIContext</b> member of the <a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present_multiplane_overlay.md">DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY</a> structure when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780324">pfnPresentMultiPlaneOverlayCb (DXGI)</a> function. 
 
 
 ### -field VidPnSourceId
@@ -94,7 +95,7 @@ typedef struct _DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY {
 
 ### -field pPresentPlanes
 
-[in] A pointer to a structure of type <a href="display.dxgi_ddi_present_multiplane_overlay">DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY</a> that  describes the overlay plane to display.
+[in] A pointer to a structure of type <a href="..\dxgiddi\ns-dxgiddi-_dxgi_ddi_present_multiplane_overlay.md">DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY</a> that  describes the overlay plane to display.
 
 
 ### -field Reserved
@@ -155,18 +156,18 @@ Header
 <a href="..\dxgiddi\ns-dxgiddi-dxgi_ddi_present_flags.md">DXGI_DDI_PRESENT_FLAGS</a>
 </dt>
 <dt>
-<a href="display.dxgi_ddi_present_multiplane_overlay">DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY</a>
+<a href="..\dxgiddi\ns-dxgiddi-_dxgi_ddi_present_multiplane_overlay.md">DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY</a>
 </dt>
 <dt>
 <a href="..\dxgiddi\ns-dxgiddi-dxgiddicb_present_multiplane_overlay.md">DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY</a>
 </dt>
 <dt>
-<a href="display.pfnpresentmultiplaneoverlaycb_dxgi">pfnPresentMultiPlaneOverlayCb (DXGI)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh780324">pfnPresentMultiPlaneOverlayCb (DXGI)</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

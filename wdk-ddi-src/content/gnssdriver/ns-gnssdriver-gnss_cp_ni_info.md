@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_CP_NI_INFO
+UID: NS:gnssdriver.GNSS_CP_NI_INFO
 title: GNSS_CP_NI_INFO
 author: windows-driver-content
 description: This structure contains CP NI information.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: FC05C59C-F8B5-4573-A1F0-722A25BDA151
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_CP_NI_INFO, *PGNSS_CP_NI_INFO, PGNSS_CP_NI_INFO, GNSS_CP_NI_INFO
+ms.keywords: GNSS_CP_NI_INFO, GNSS_CP_NI_INFO, *PGNSS_CP_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_CP_NI_INFO, *PGNSS_CP_NI_INFO
 ---
 
 # GNSS_CP_NI_INFO structure

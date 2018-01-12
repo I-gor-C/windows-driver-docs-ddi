@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortMidi.RegisterServiceGroup
+UID: NF:portcls.IPortMidi.RegisterServiceGroup
 title: IPortMidi::RegisterServiceGroup method
 author: windows-driver-content
 description: The RegisterServiceGroup method registers the service group to be used for the IPortMidi::Notify method.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortMidi::RegisterServiceGroup method
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The <code>RegisterServiceGroup</code> method registers the service group to be used for the <a href="audio.iportmidi_notify">IPortMidi::Notify</a> method.
+The <code>RegisterServiceGroup</code> method registers the service group to be used for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a> method.
 
 
 
@@ -108,7 +109,7 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iportmidi.md">IPortMidi</a>
 </dt>
 <dt>
-<a href="audio.iportmidi_notify">IPortMidi::Notify</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>

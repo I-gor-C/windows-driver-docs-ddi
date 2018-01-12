@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_GETMULTISAMPLEMETHODLIST
+UID: NS:d3dkmthk._D3DKMT_GETMULTISAMPLEMETHODLIST
 title: _D3DKMT_GETMULTISAMPLEMETHODLIST
 author: windows-driver-content
 description: The D3DKMT_GETMULTISAMPLEMETHODLIST structure describes parameters to retrieve the list of multiple-sample methods for an allocation.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_getmultisamplemethodlist.htm
 old-project: display
 ms.assetid: 138f6f75-3986-42f8-840c-d48edb271203
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_GETMULTISAMPLEMETHODLIST, D3DKMT_GETMULTISAMPLEMETHODLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_GETMULTISAMPLEMETHODLIST
 ---
 
 # _D3DKMT_GETMULTISAMPLEMETHODLIST structure
@@ -81,12 +82,12 @@ typedef struct _D3DKMT_GETMULTISAMPLEMETHODLIST {
 
 ### -field Format
 
-[in] A <a href="display.d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.
+[in] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.
 
 
 ### -field pMethodList
 
-[out] An array of <a href="display.d3dkmt_multisamplemethod">D3DKMT_MULTISAMPLEMETHOD</a> structures that describe the list of multiple-sampling methods used for the allocation; otherwise, this member is <b>NULL</b>.
+[out] An array of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_multisamplemethod.md">D3DKMT_MULTISAMPLEMETHOD</a> structures that describe the list of multiple-sampling methods used for the allocation; otherwise, this member is <b>NULL</b>.
 
 
 ### -field MethodCount
@@ -126,18 +127,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiformat">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="display.d3dkmt_multisamplemethod">D3DKMT_MULTISAMPLEMETHOD</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_multisamplemethod.md">D3DKMT_MULTISAMPLEMETHOD</a>
 </dt>
 <dt>
-<a href="display.d3dkmtgetmultisamplemethodlist">D3DKMTGetMultisampleMethodList</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetmultisamplemethodlist.md">D3DKMTGetMultisampleMethodList</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_GETMULTISAMPLEMETHODLIST structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMT_GETMULTISAMPLEMETHODLIST structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

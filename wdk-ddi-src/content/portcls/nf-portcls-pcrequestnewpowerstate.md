@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcRequestNewPowerState
+UID: NF:portcls.PcRequestNewPowerState
 title: PcRequestNewPowerState function
 author: windows-driver-content
 description: The PcRequestNewPowerState function is used to request a new power state for the device. This function is typically not needed by adapter drivers but can occasionally be useful in working around some kinds of hardware problems.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcRequestNewPowerState function
@@ -56,7 +57,7 @@ NTSTATUS PcRequestNewPowerState(
 
 ### -param pDeviceObject [in]
 
-Pointer to the adapter's <a href="wdkgloss.f#wdkgloss.functional_device_object__fdo_#wdkgloss.functional_device_object__fdo_"><i>functional device object (FDO)</i></a>. This parameter must point to a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Pointer to the adapter's <a href="wdkgloss.f#wdkgloss.functional_device_object__fdo_#wdkgloss.functional_device_object__fdo_"><i>functional device object (FDO)</i></a>. This parameter must point to a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 
 ### -param RequestedNewState [in]
@@ -154,7 +155,7 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 </dl>
  

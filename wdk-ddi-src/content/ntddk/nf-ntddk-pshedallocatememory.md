@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PshedAllocateMemory
+UID: NF:ntddk.PshedAllocateMemory
 title: PshedAllocateMemory function
 author: windows-driver-content
 description: The PshedAllocateMemory function allocates a block of memory from the nonpaged pool.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Pshed.lib
 req.dll: Pshed.dll
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PshedAllocateMemory function
@@ -63,7 +64,7 @@ The size, in bytes, of the block of memory being allocated.
 
 
 ## -remarks
-A PSHED plug-in calls the <b>PshedAllocateMemory</b> function to allocate a block of memory. When the PSHED plug-in is done using the allocated block of memory, it calls the <a href="whea.pshedfreememory">PshedFreeMemory</a> function to free the memory.
+A PSHED plug-in calls the <b>PshedAllocateMemory</b> function to allocate a block of memory. When the PSHED plug-in is done using the allocated block of memory, it calls the <a href="..\ntddk\nf-ntddk-pshedfreememory.md">PshedFreeMemory</a> function to free the memory.
 
 
 ## -requirements
@@ -138,7 +139,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="whea.pshedfreememory">PshedFreeMemory</a>
+<a href="..\ntddk\nf-ntddk-pshedfreememory.md">PshedFreeMemory</a>
 </dt>
 </dl>
  

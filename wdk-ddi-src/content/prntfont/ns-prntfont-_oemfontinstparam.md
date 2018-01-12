@@ -1,5 +1,5 @@
 ---
-UID: NS.PRNTFONT._OEMFONTINSTPARAM
+UID: NS:prntfont._OEMFONTINSTPARAM
 title: _OEMFONTINSTPARAM
 author: windows-driver-content
 description: The OEMFONTINSTPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI::FontInstallerDlgProc method.
@@ -7,8 +7,8 @@ old-location: print\oemfontinstparam.htm
 old-project: print
 ms.assetid: cdd3ed28-a077-4b89-9222-ba282b9c7205
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _OEMFONTINSTPARAM, OEMFONTINSTPARAM, POEMFONTINSTPARAM, *POEMFONTINSTPARAM
+ms.date: 1/8/2018
+ms.keywords: _OEMFONTINSTPARAM, *POEMFONTINSTPARAM, OEMFONTINSTPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POEMFONTINSTPARAM, OEMFONTINSTPARAM
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The OEMFONTINSTPARAM structure is used as an input parameter to a user interface plug-in's <a href="print.iprintoemui_fontinstallerdlgproc">IPrintOemUI::FontInstallerDlgProc</a> method.
+The OEMFONTINSTPARAM structure is used as an input parameter to a user interface plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554176">IPrintOemUI::FontInstallerDlgProc</a> method.
 
 
 
@@ -86,7 +87,7 @@ Unidrv-supplied flags. The only defined flag is FG_CANCHANGE which, if set, indi
 
 ### -field pFontInstallerName
 
-Pointer to a string representing the font installer's name. The <a href="print.iprintoemui_fontinstallerdlgproc">IPrintOemUI::FontInstallerDlgProc</a> method must supply this string if the received message is WM_USER+WM_FI_NAME. The string must be placed in memory allocated using <b>hHeap</b>.
+Pointer to a string representing the font installer's name. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff554176">IPrintOemUI::FontInstallerDlgProc</a> method must supply this string if the received message is WM_USER+WM_FI_NAME. The string must be placed in memory allocated using <b>hHeap</b>.
 
 
 ## -remarks

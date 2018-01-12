@@ -1,5 +1,5 @@
 ---
-UID: NF.bdasup.BdaGetChangeState
+UID: NF:bdasup.BdaGetChangeState
 title: BdaGetChangeState function
 author: windows-driver-content
 description: The BdaGetChangeState function returns the current change state of BDA topology.
@@ -7,7 +7,7 @@ old-location: stream\bdagetchangestate.htm
 old-project: stream
 ms.assetid: fd111e80-fc3e-4f21-97cb-1f75ae34d1e9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: BdaGetChangeState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Bdasup.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PKSP_BDA_NODE_PIN, KSP_BDA_NODE_PIN
 ---
 
 # BdaGetChangeState function
@@ -61,7 +62,7 @@ Points to the IRP for the request to get the current change state. The BDA minid
 
 ### -param pChangeState [out, optional]
 
-Points to a variable that receives the current change state of BDA topology. The BDA change state can be one of the following values from the <a href="stream.bda_change_state">BDA_CHANGE_STATE</a> enumerated type:
+Points to a variable that receives the current change state of BDA topology. The BDA change state can be one of the following values from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556518">BDA_CHANGE_STATE</a> enumerated type:
 
 <table>
 <tr>
@@ -97,7 +98,7 @@ Returns STATUS_SUCCESS or an appropriate error code.
 
 
 ## -remarks
-A BDA minidriver calls the <b>BdaGetChangeState</b> function to retrieve the current change state of BDA topology after the minidriver receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563417">KSMETHOD_BDA_GET_CHANGE_STATE</a> request of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a> method set from the network provider. BDA minidrivers define dispatch and filter-automation tables so that those minidrivers either dispatch the <b>BdaGetChangeState</b> function directly or intercept this request using an internal method (<a href="stream.kstrmethodhandler">KStrMethodHandler</a>), which then calls the <b>BdaGetChangeState</b> function. For example, BDA minidrivers that intercept this request can obtain a pointer to the BDA filter from the passed IRP so that they can: 
+A BDA minidriver calls the <b>BdaGetChangeState</b> function to retrieve the current change state of BDA topology after the minidriver receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563417">KSMETHOD_BDA_GET_CHANGE_STATE</a> request of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a> method set from the network provider. BDA minidrivers define dispatch and filter-automation tables so that those minidrivers either dispatch the <b>BdaGetChangeState</b> function directly or intercept this request using an internal method (<a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>), which then calls the <b>BdaGetChangeState</b> function. For example, BDA minidrivers that intercept this request can obtain a pointer to the BDA filter from the passed IRP so that they can: 
 
 Not only check for pending topology changes but also for pending changes on the filter. 
 
@@ -166,7 +167,7 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.bda_change_state">BDA_CHANGE_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556518">BDA_CHANGE_STATE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563417">KSMETHOD_BDA_GET_CHANGE_STATE</a>
@@ -175,12 +176,12 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
 </dt>
 <dt>
-<a href="stream.kstrmethodhandler">KStrMethodHandler</a>
+<a href="..\ks\nc-ks-pfnkshandler.md">KStrMethodHandler</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BdaGetChangeState function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BdaGetChangeState function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

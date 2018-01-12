@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_TYPES._WINBIO_BIR_HEADER
+UID: NS:winbio_types._WINBIO_BIR_HEADER
 title: _WINBIO_BIR_HEADER
 author: windows-driver-content
 description: The WINBIO_BIR_HEADER structure contains the Common Biometric Exchange File Format (CBEFF) Patron Format A information that describes the rest of the BIR.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: 5053b027-61a9-463a-967c-9e9ff1673b1c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_BIR_HEADER, WINBIO_BIR_HEADER
+ms.keywords: _WINBIO_BIR_HEADER, WINBIO_BIR_HEADER, *PWINBIO_BIR_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_BIR_HEADER
 req.product: Windows 10 or later.
 ---
 
@@ -146,12 +147,12 @@ Specifies the validity period of this BIR by using the format described in <i>Cr
 
 ### -field BiometricDataFormat
 
-A structure of type <a href="biometric.winbio_registered_format">WINBIO_REGISTERED_FORMAT</a> that specifies the data format of the <b>StandardDataBlock</b> for this <a href="biometric.winbio_bir">WINBIO_BIR</a>.
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> that specifies the data format of the <b>StandardDataBlock</b> for this <a href="..\winbio_types\ns-winbio_types-_winbio_bir.md">WINBIO_BIR</a>.
 
 
 ### -field ProductId
 
-A structure of type <a href="biometric.winbio_registered_format">WINBIO_REGISTERED_FORMAT</a> that specifies the product identifier for the component that generated the <b>StandardDataBlock</b> for this WINBIO_BIR.
+A structure of type <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> that specifies the product identifier for the component that generated the <b>StandardDataBlock</b> for this WINBIO_BIR.
 
 
 ## -remarks
@@ -186,10 +187,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="biometric.winbio_bir">WINBIO_BIR</a>
+<a href="..\winbio_types\ns-winbio_types-_winbio_bir.md">WINBIO_BIR</a>
 </dt>
 <dt>
-<a href="biometric.winbio_bir_data">WINBIO_BIR_DATA</a>
+<a href="..\winbio_types\ns-winbio_types-_winbio_bir_data.md">WINBIO_BIR_DATA</a>
 </dt>
 </dl>
  

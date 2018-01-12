@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_CIPHER_KEY_DIRECTION
+UID: NE:wditypes._WDI_CIPHER_KEY_DIRECTION
 title: _WDI_CIPHER_KEY_DIRECTION
 author: windows-driver-content
 description: The WDI_CIPHER_KEY_DIRECTION enumeration defines the traffic directions decrypted by a cipher key.
 old-location: netvista\wdi_cipher_key_direction.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: BE054858-F61A-488B-87A3-615A646C27F0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_CIPHER_KEY_DIRECTION, WDI_CIPHER_KEY_DIRECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_CIPHER_KEY_DIRECTION
 req.product: Windows 10 or later.
 ---
 

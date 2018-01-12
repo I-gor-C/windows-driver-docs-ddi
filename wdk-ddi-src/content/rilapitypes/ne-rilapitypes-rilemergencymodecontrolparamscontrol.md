@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILEMERGENCYMODECONTROLPARAMSCONTROL
+UID: NE:rilapitypes.RILEMERGENCYMODECONTROLPARAMSCONTROL
 title: RILEMERGENCYMODECONTROLPARAMSCONTROL
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilemergencymodecontrolparamscontrol_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b169e3a3-141b-4bca-9eaa-ce55f7194e4f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILEMERGENCYMODECONTROLPARAMSCONTROL, RILEMERGENCYMODECONTROLPARAMSCONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILEMERGENCYMODECONTROLPARAMSCONTROL
 req.product: Windows 10 or later.
 ---
 

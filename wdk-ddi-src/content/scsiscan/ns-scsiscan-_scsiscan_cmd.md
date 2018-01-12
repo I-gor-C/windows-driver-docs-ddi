@@ -1,14 +1,14 @@
 ---
-UID: NS.SCSISCAN._SCSISCAN_CMD
+UID: NS:scsiscan._SCSISCAN_CMD
 title: _SCSISCAN_CMD
 author: windows-driver-content
 description: The SCSISCAN_CMD structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_SCSISCAN_CMD.
 old-location: image\scsiscan_cmd.htm
-old-project: Image
+old-project: image
 ms.assetid: 412c35b2-eb08-43a3-b776-053645806f5d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SCSISCAN_CMD, PSCSISCAN_CMD, *PSCSISCAN_CMD, SCSISCAN_CMD
+ms.date: 1/10/2018
+ms.keywords: _SCSISCAN_CMD, *PSCSISCAN_CMD, SCSISCAN_CMD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSCSISCAN_CMD, SCSISCAN_CMD
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The SCSISCAN_CMD structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\scsiscan\ni-scsiscan-ioctl_scsiscan_cmd.md">IOCTL_SCSISCAN_CMD</a>.
+The SCSISCAN_CMD structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="..\scsiscan\ni-scsiscan-ioctl_scsiscan_cmd.md">IOCTL_SCSISCAN_CMD</a>.
 
 
 
@@ -101,7 +102,7 @@ Reserved. Do not use.
 
 ### -field TransferLength
 
-Length, in bytes, of the buffer to be transferred. This should match the value specified for the <a href="base.deviceiocontrol">DeviceIoControl</a> function's <i>nOutBufferSize</i> parameter.
+Length, in bytes, of the buffer to be transferred. This should match the value specified for the <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> function's <i>nOutBufferSize</i> parameter.
 
 
 ### -field Cdb

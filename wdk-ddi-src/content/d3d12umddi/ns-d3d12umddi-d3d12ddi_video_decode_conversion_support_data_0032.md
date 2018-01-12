@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032
+UID: NS:d3d12umddi.D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032
 title: D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032
 author: windows-driver-content
 description: Video decode conversion support data.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-video-decode-conversion-support-data-0032.htm
 old-project: display
 ms.assetid: 1395fe30-9bbf-433c-8696-a0f842bad10e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032, D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032
 ---
 
 # D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032 structure

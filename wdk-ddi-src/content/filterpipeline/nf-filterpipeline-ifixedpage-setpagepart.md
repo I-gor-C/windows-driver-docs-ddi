@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IFixedPage.SetPagePart
+UID: NF:filterpipeline.IFixedPage.SetPagePart
 title: IFixedPage::SetPagePart method
 author: windows-driver-content
 description: The SetPagePart method associates a new part with the page.
@@ -7,7 +7,7 @@ old-location: print\ifixedpage_setpagepart.htm
 old-project: print
 ms.assetid: 12970111-3d25-4004-9c6d-8582ef7afef3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IFixedPage, IFixedPage::SetPagePart, SetPagePart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IFixedPage::SetPagePart method

@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SERCX2_CONFIG_INIT
+UID: NF:sercx.SERCX2_CONFIG_INIT
 title: SERCX2_CONFIG_INIT function
 author: windows-driver-content
 description: The SERCX2_CONFIG_INIT function initializes a SERCX2_CONFIG structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level.
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>SERCX2_CONFIG_INIT</b> function initializes a <a href="serports.sercx2_config">SERCX2_CONFIG</a> structure.
+The <b>SERCX2_CONFIG_INIT</b> function initializes a <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a> structure.
 
 
 
@@ -59,22 +60,22 @@ VOID SERCX2_CONFIG_INIT(
 
 ### -param Config [out]
 
-A pointer to the <a href="serports.sercx2_config">SERCX2_CONFIG</a> structure that is to be initialized.
+A pointer to the <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a> structure that is to be initialized.
 
 
 ### -param EvtSerCx2ApplyConfig [in]
 
-The value to load into the <b>EvtSerCx2ApplyConfig</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="serports.sercx2_config">SERCX2_CONFIG</a>.
+The value to load into the <b>EvtSerCx2ApplyConfig</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>.
 
 
 ### -param EvtSerCx2Control [in]
 
-The value to load into the <b>EvtSerCx2Control</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="serports.sercx2_config">SERCX2_CONFIG</a>.
+The value to load into the <b>EvtSerCx2Control</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>.
 
 
 ### -param EvtSerCx2PurgeFifos [in]
 
-The value to load into the <b>EvtSerCx2PurgeFifos</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="serports.sercx2_config">SERCX2_CONFIG</a>.
+The value to load into the <b>EvtSerCx2PurgeFifos</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>.
 
 
 ## -returns
@@ -82,7 +83,7 @@ None.
 
 
 ## -remarks
-Your serial controller driver must use this function to initialize a <a href="serports.sercx2_config">SERCX2_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="serports.sercx2initializedevice">SerCx2InitializeDevice</a> method.
+Your serial controller driver must use this function to initialize a <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method.
 
 <b>SERCX2_CONFIG_INIT</b> sets the <b>Size</b> member of the structure to <b>sizeof</b>(<b>SERCX2_CONFIG</b>), and sets three additional members of the structure to the values supplied as input parameters to the function. The function sets the other members of the structure to zero. The driver can, if necessary, explicitly set these other members to nonzero values after the <b>SERCX2_CONFIG_INIT</b> call.
 
@@ -136,10 +137,10 @@ Any level.
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercx2_config">SERCX2_CONFIG</a>
+<a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>
 </dt>
 <dt>
-<a href="serports.sercx2initializedevice">SerCx2InitializeDevice</a>
+<a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
 </dt>
 </dl>
  

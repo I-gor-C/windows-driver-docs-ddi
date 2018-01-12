@@ -1,5 +1,5 @@
 ---
-UID: NS.PRNTFONT._DATA_HEADER
+UID: NS:prntfont._DATA_HEADER
 title: _DATA_HEADER
 author: windows-driver-content
 description: The DATA_HEADER structure is used to specify a data section within a Unidrv font format file (.uff file).
@@ -7,8 +7,8 @@ old-location: print\data_header.htm
 old-project: print
 ms.assetid: 8c7b6d2f-d2d9-49a5-8137-13d71dfd2611
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DATA_HEADER, *PDATA_HEADER, PDATA_HEADER, DATA_HEADER
+ms.date: 1/8/2018
+ms.keywords: _DATA_HEADER, DATA_HEADER, *PDATA_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DATA_HEADER, *PDATA_HEADER
 req.product: Windows 10 or later.
 ---
 
@@ -137,7 +138,7 @@ If the data section contains variable data, this value must be zero.
 
 ### -field dwDataSize
 
-Specifies the size, in bytes, of all the information represented by this DATA_HEADER structure. For example, if <b>dwSignature</b> is DATA_UFM_SIG, this value represents the size, in bytes, of the font's <a href="print.unifm_hdr">UNIFM_HDR</a> structure and all associated structures. The size value does not include any byte padding required to align the next DATA_HEADER structure to a DWORD.
+Specifies the size, in bytes, of all the information represented by this DATA_HEADER structure. For example, if <b>dwSignature</b> is DATA_UFM_SIG, this value represents the size, in bytes, of the font's <a href="..\prntfont\ns-prntfont-_unifm_hdr.md">UNIFM_HDR</a> structure and all associated structures. The size value does not include any byte padding required to align the next DATA_HEADER structure to a DWORD.
 
 
 ### -field dwReserved
@@ -169,12 +170,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.unifm_hdr">UNIFM_HDR</a>
+<a href="..\prntfont\ns-prntfont-_unifm_hdr.md">UNIFM_HDR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DATA_HEADER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20DATA_HEADER structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

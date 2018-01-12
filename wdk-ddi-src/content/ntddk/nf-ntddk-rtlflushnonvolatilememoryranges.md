@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlFlushNonVolatileMemoryRanges
+UID: NF:ntddk.RtlFlushNonVolatileMemoryRanges
 title: RtlFlushNonVolatileMemoryRanges function
 author: windows-driver-content
 description: The routine RtlFlushNonVolatileMemoryRanges optimally flushes the given non-volatile memory regions.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlflushnonvolatilememoryranges.htm
 old-project: ifsk
 ms.assetid: 169C5F41-B372-4056-AAC5-53DD0582A563
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlFlushNonVolatileMemoryRanges
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlFlushNonVolatileMemoryRanges function
@@ -59,7 +60,7 @@ NTSTATUS RtlFlushNonVolatileMemoryRanges(
 ### -param NvToken 
 
  A pointer to an opaque structure that has
-        information about various properties of the non-volatile memory region which <a href="ifsk.rtlgetnonvolatiletoken">RtlGetNonVolatileToken</a> had returned.
+        information about various properties of the non-volatile memory region which <a href="..\ntddk\nf-ntddk-rtlgetnonvolatiletoken.md">RtlGetNonVolatileToken</a> had returned.
 
 
 ### -param NvRanges 
@@ -74,7 +75,7 @@ Specifies the number of elements in the <b>NVRanges</b> array.
 
 ### -param Flags 
 
-For flags specified, refer <a href="ifsk.rtlflushnonvolatilememory">RtlFlushNonVolatileMemory</a> as this routine also honors the flags apart from passing it to <b>RtlFlushNonVolatileMemory</b>.
+For flags specified, refer <a href="..\ntddk\nf-ntddk-rtlflushnonvolatilememory.md">RtlFlushNonVolatileMemory</a> as this routine also honors the flags apart from passing it to <b>RtlFlushNonVolatileMemory</b>.
 
 
 ## -returns
@@ -131,25 +132,25 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.RtlDrainNonVolatileFlush">RtlDrainNonVolatileFlush</a>
+<a href="https://msdn.microsoft.com/EA1C2DF3-591C-407A-ABBF-DE615466A498">RtlDrainNonVolatileFlush</a>
 </dt>
 <dt>
-<a href="ifsk.RtlFlushNonVolatileMemory">
+<a href="https://msdn.microsoft.com/759CDFAA-D939-44E7-AE03-E3ED90F8E09D">
 RtlFlushNonVolatileMemory</a>
 </dt>
 <dt>
-<a href="ifsk.RtlFreeNonVolatileToken">RtlFreeNonVolatileToken</a>
+<a href="https://msdn.microsoft.com/8E083814-7408-47D2-A811-2DCBDCD13097">RtlFreeNonVolatileToken</a>
 </dt>
 <dt>
-<a href="ifsk.RtlGetNonVolatileToken">RtlGetNonVolatileToken</a>
+<a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>
 </dt>
 <dt>
-<a href="ifsk.RtlWriteNonVolatileMemory">RtlWriteNonVolatileMemory</a>
+<a href="https://msdn.microsoft.com/49DDDEF8-F949-4674-A18B-9BB091D163C2">RtlWriteNonVolatileMemory</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlFlushNonVolatileMemoryRanges routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlFlushNonVolatileMemoryRanges routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

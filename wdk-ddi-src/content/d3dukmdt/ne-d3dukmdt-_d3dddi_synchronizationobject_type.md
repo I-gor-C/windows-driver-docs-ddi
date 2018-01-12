@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECT_TYPE
+UID: NE:d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECT_TYPE
 title: _D3DDDI_SYNCHRONIZATIONOBJECT_TYPE
 author: windows-driver-content
 description: The D3DDDI_SYNCHRONIZATIONOBJECT_TYPE enumeration indicates the type of synchronization object.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_synchronizationobject_type.htm
 old-project: display
 ms.assetid: afd1aad4-d4cd-420f-bd3f-f171dc818a3e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDI_SYNCHRONIZATIONOBJECT_TYPE, D3DDDI_SYNCHRONIZATIONOBJECT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_SYNCHRONIZATIONOBJECT_TYPE
 ---
 
 # _D3DDDI_SYNCHRONIZATIONOBJECT_TYPE enumeration

@@ -1,13 +1,13 @@
 ---
-UID: NF.rilapi.RIL_SendDTMF
+UID: NF:rilapi.RIL_SendDTMF
 title: RIL_SendDTMF function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_senddtmf.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4091a37e-5115-4213-9242-76b119ad28fc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RIL_SendDTMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product: Windows 10 or later.
 ---
 

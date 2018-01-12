@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA._TAGKSAUDIOENGINE_VOLUMELEVEL
+UID: NS:ksmedia._tagKSAUDIOENGINE_VOLUMELEVEL
 title: _tagKSAUDIOENGINE_VOLUMELEVEL
 author: windows-driver-content
 description: The KSAUDIOENGINE_VOLUMELEVEL structure specifies the target volume level, ramp type, and duration within which the volume level should change, for a given volume level request via the KSPROPERTY_AUDIOENGINE_VOLUMELEVEL property.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: E29E6F8B-F708-493B-94C3-A9DEE691ED3C
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _tagKSAUDIOENGINE_VOLUMELEVEL, PKSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL, *PKSAUDIOENGINE_VOLUMELEVEL
+ms.keywords: _tagKSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL, *PKSAUDIOENGINE_VOLUMELEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSAUDIOENGINE_VOLUMELEVEL, *PKSAUDIOENGINE_VOLUMELEVEL
 ---
 
 # _tagKSAUDIOENGINE_VOLUMELEVEL structure

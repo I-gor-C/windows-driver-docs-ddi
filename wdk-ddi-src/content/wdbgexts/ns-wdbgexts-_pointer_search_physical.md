@@ -1,14 +1,14 @@
 ---
-UID: NS.WDBGEXTS._POINTER_SEARCH_PHYSICAL
+UID: NS:wdbgexts._POINTER_SEARCH_PHYSICAL
 title: _POINTER_SEARCH_PHYSICAL
 author: windows-driver-content
 description: The IG_POINTER_SEARCH_PHYSICAL Ioctl operation searches the target's physical memory for pointers lying within a specified range.
 old-location: debugger\ig_pointer_search_physical.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: fdb8376b-fbda-4bee-895e-a306fd0f632a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _POINTER_SEARCH_PHYSICAL, POINTER_SEARCH_PHYSICAL, PPOINTER_SEARCH_PHYSICAL, *PPOINTER_SEARCH_PHYSICAL
+ms.date: 1/10/2018
+ms.keywords: _POINTER_SEARCH_PHYSICAL, POINTER_SEARCH_PHYSICAL, *PPOINTER_SEARCH_PHYSICAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POINTER_SEARCH_PHYSICAL, *PPOINTER_SEARCH_PHYSICAL
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The IG_POINTER_SEARCH_PHYSICAL <a href="debugger.ioctl">Ioctl</a> operation searches the target's physical memory for pointers lying within a specified range.  When calling <b>Ioctl</b> with <i>IoctlType</i> set to IG_POINTER_SEARCH_PHYSICAL, <i>IpvData</i> should contain an instance of the POINTER_SEARCH_PHYSICAL structure.
+The IG_POINTER_SEARCH_PHYSICAL <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation searches the target's physical memory for pointers lying within a specified range.  When calling <b>Ioctl</b> with <i>IoctlType</i> set to IG_POINTER_SEARCH_PHYSICAL, <i>IpvData</i> should contain an instance of the POINTER_SEARCH_PHYSICAL structure.
 
 
 
@@ -150,7 +151,7 @@ Receives the number of pointers found that match the search criteria.
 
 
 ## -remarks
-The parameters for the IG_POINTER_SEARCH_PHYSICAL <a href="debugger.ioctl">Ioctl</a> operation are the members of the POINTER_SEARCH_PHYSICAL structure.
+The parameters for the IG_POINTER_SEARCH_PHYSICAL <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation are the members of the POINTER_SEARCH_PHYSICAL structure.
 
 
 ## -requirements
@@ -171,12 +172,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="debugger.ioctl">Ioctl</a>
+<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20POINTER_SEARCH_PHYSICAL structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20POINTER_SEARCH_PHYSICAL structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

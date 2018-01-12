@@ -1,5 +1,5 @@
 ---
-UID: NF.video.VideoPortGetMdl
+UID: NF:video.VideoPortGetMdl
 title: VideoPortGetMdl function
 author: windows-driver-content
 description: The VideoPortGetMdl function is obsolete in Windows 2000 and later.VideoPortGetMdl retrieves the memory descriptor list (MDL) that represents the page table of the locked buffer.
@@ -7,7 +7,7 @@ old-location: display\videoportgetmdl.htm
 old-project: display
 ms.assetid: 03ec6323-a3f9-485d-80c8-92ac99d8e73a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VideoPortGetMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
 req.irql: 
+req.typenames: VIDEO_PORT_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ Pointer to the miniport driver's device extension.
 
 ### -param pDma [in]
 
-Is a handle to the DMA context being queried. This handle was obtained from <a href="display.videoportlockpages">VideoPortLockPages</a> or <a href="display.videoportdodma">VideoPortDoDma</a>.
+Is a handle to the DMA context being queried. This handle was obtained from <a href="..\video\nf-video-videoportlockpages.md">VideoPortLockPages</a> or <a href="..\video\nf-video-videoportdodma.md">VideoPortDoDma</a>.
 
 
 ## -returns

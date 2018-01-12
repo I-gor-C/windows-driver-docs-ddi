@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
+UID: NS:d3dkmddi._DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
 title: _DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
 author: windows-driver-content
 description: The DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure describes a standard allocation type.
@@ -7,8 +7,8 @@ old-location: display\dxgkarg_getstandardallocationdriverdata.htm
 old-project: display
 ms.assetid: 4327ba59-bd74-4018-85d2-54a1693c62c1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
+ms.date: 12/29/2017
+ms.keywords: _DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, *INOUT_PDXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
 ---
 
 # _DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure
@@ -67,27 +68,27 @@ typedef struct _DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA {
 
 ### -field StandardAllocationType
 
-[in] A <a href="display.d3dkmdt_standardallocation_type">D3DKMDT_STANDARDALLOCATION_TYPE</a>-typed value that identifies the type of standard allocation to describe.
+[in] A <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_standardallocation_type.md">D3DKMDT_STANDARDALLOCATION_TYPE</a>-typed value that identifies the type of standard allocation to describe.
 
 
 ### -field pCreateSharedPrimarySurfaceData
 
-[in] A pointer to a <a href="display.d3dkmdt_sharedprimarysurfacedata">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a> structure, if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE.
+[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_sharedprimarysurfacedata.md">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a> structure, if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_SHAREDPRIMARYSURFACE.
 
 
 ### -field pCreateShadowSurfaceData
 
-[in] A pointer to a <a href="display.d3dkmdt_shadowsurfacedata">D3DKMDT_SHADOWSURFACEDATA</a> structure, if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_SHADOWSURFACE.
+[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_shadowsurfacedata.md">D3DKMDT_SHADOWSURFACEDATA</a> structure, if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_SHADOWSURFACE.
 
 
 ### -field pCreateStagingSurfaceData
 
-[in] A pointer to a <a href="display.d3dkmdt_stagingsurfacedata">D3DKMDT_STAGINGSURFACEDATA</a> structure, if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_STAGINGSURFACE.
+[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_stagingsurfacedata.md">D3DKMDT_STAGINGSURFACEDATA</a> structure, if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_STAGINGSURFACE.
 
 
 ### -field pCreateGdiSurfaceData
 
-[in] A pointer to a <a href="display.d3dkmdt_gdisurfacedata">D3DKMDT_GDISURFACEDATA</a> structure, only available if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_GDISURFACE.
+[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_gdisurfacedata.md">D3DKMDT_GDISURFACEDATA</a> structure, only available if <b>StandardAllocationType</b> specifies D3DKMDT_STANDARDALLOCATION_GDISURFACE.
 
 This member is available beginning with Windows 7.
 
@@ -150,19 +151,19 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmdt_gdisurfacedata">D3DKMDT_GDISURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_gdisurfacedata.md">D3DKMDT_GDISURFACEDATA</a>
 </dt>
 <dt>
-<a href="display.d3dkmdt_shadowsurfacedata">D3DKMDT_SHADOWSURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_shadowsurfacedata.md">D3DKMDT_SHADOWSURFACEDATA</a>
 </dt>
 <dt>
-<a href="display.d3dkmdt_sharedprimarysurfacedata">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_sharedprimarysurfacedata.md">D3DKMDT_SHAREDPRIMARYSURFACEDATA</a>
 </dt>
 <dt>
-<a href="display.d3dkmdt_stagingsurfacedata">D3DKMDT_STAGINGSURFACEDATA</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_stagingsurfacedata.md">D3DKMDT_STAGINGSURFACEDATA</a>
 </dt>
 <dt>
-<a href="display.d3dkmdt_standardallocation_type">D3DKMDT_STANDARDALLOCATION_TYPE</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_standardallocation_type.md">D3DKMDT_STANDARDALLOCATION_TYPE</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_getstandardallocationdriverdata.md">DxgkDdiGetStandardAllocationDriverData</a>
@@ -172,5 +173,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

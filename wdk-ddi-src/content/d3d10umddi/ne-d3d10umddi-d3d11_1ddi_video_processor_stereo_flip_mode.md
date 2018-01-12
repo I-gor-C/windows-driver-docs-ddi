@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE
+UID: NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE
 title: D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE
 author: windows-driver-content
 description: For stereo 3-D video, specifies whether the data in frame 0 or frame 1 is flipped, either horizontally or vertically.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_stereo_flip_mode.htm
 old-project: display
 ms.assetid: b385a0fd-6181-45c3-ba6e-e292e0b10e68
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE, D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE
 ---
 
 # D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE enumeration

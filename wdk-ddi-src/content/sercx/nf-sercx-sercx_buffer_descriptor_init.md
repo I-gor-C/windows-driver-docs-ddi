@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SERCX_BUFFER_DESCRIPTOR_INIT
+UID: NF:sercx.SERCX_BUFFER_DESCRIPTOR_INIT
 title: SERCX_BUFFER_DESCRIPTOR_INIT function
 author: windows-driver-content
 description: The SERCX_BUFFER_DESCRIPTOR_INIT function initializes a SERCX_BUFFER_DESCRIPTOR structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 

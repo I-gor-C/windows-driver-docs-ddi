@@ -1,5 +1,5 @@
 ---
-UID: NE.xpsrassvc.__MIDL___MIDL_itf_xpsrassvc_0000_0003_0001
+UID: NE:xpsrassvc.__MIDL___MIDL_itf_xpsrassvc_0000_0003_0001
 title: __MIDL___MIDL_itf_xpsrassvc_0000_0003_0001
 author: windows-driver-content
 description: XPSRAS_PIXEL_FORMAT allows a caller to select the pixel format used by the IWICBitmap interface that is returned by the IXpsRasterizer::RasterizeRect method. XPSRAS_PIXEL_FORMAT is provided with Windows 8 and later versions of Windows.
@@ -7,7 +7,7 @@ old-location: print\xpsras_pixel_format.htm
 old-project: print
 ms.assetid: 54EA7ED6-BBE1-4110-8405-DEC0C5EA1C27
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: __MIDL___MIDL_itf_xpsrassvc_0000_0003_0001, XPSRAS_PIXEL_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: XPSRAS_PIXEL_FORMAT
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-<b>XPSRAS_PIXEL_FORMAT</b> allows a caller to select the pixel format used by the <a href="http://go.microsoft.com/fwlink/p/?linkid=133875">IWICBitmap</a> interface that is returned by the  <a href="print.ixpsrasterizer_rasterizerect">IXpsRasterizer::RasterizeRect</a> method. <b>XPSRAS_PIXEL_FORMAT</b> is provided with  Windows 8 and later versions of Windows.  
+<b>XPSRAS_PIXEL_FORMAT</b> allows a caller to select the pixel format used by the <a href="http://go.microsoft.com/fwlink/p/?linkid=133875">IWICBitmap</a> interface that is returned by the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff556365">IXpsRasterizer::RasterizeRect</a> method. <b>XPSRAS_PIXEL_FORMAT</b> is provided with  Windows 8 and later versions of Windows.  
 
 
 
@@ -114,7 +115,7 @@ Header
 <dl>
 <dt><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee719675.aspx">IWICBitmap</a></dt>
 <dt>
-<a href="print.xpsrasterizationfactory1_createrasterizer1">IXpsRasterizationFactory1::CreateRasterizer1</a>
+<a href="https://msdn.microsoft.com/00F1C6B7-9AD8-4E42-B433-4BD73E85CFA3">IXpsRasterizationFactory1::CreateRasterizer1</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/a6a3746a-3638-464b-bca0-60003f37af76">Using the XPS Rasterization Service</a>
@@ -124,5 +125,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20XPSRAS_PIXEL_FORMAT enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20XPSRAS_PIXEL_FORMAT enumeration%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

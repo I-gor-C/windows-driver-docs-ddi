@@ -1,13 +1,13 @@
 ---
-UID: NF.rilapi.RIL_GetCallForwardingSettings
+UID: NF:rilapi.RIL_GetCallForwardingSettings
 title: RIL_GetCallForwardingSettings function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getcallforwardingsettings.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f9abb454-5fd1-4680-ab83-f24897c89193
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RIL_GetCallForwardingSettings
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.winppi.GdiPlayPageEMF
+UID: NF:winppi.GdiPlayPageEMF
 title: GdiPlayPageEMF function
 author: windows-driver-content
 description: The GdiPlayPageEMF function plays the EMF records within a specified rectangle for one document page of a spooled print job.
@@ -7,7 +7,7 @@ old-location: print\gdiplaypageemf.htm
 old-project: print
 ms.assetid: e0122858-0c9d-4aa8-a394-89d65fb98fda
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: GdiPlayPageEMF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Gdi32.Lib
 req.dll: Gdi32.dll
 req.irql: 
+req.typenames: DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -60,17 +61,17 @@ BOOL GdiPlayPageEMF(
 
 ### -param SpoolFileHandle 
 
-Caller-supplied spool file handle, obtained by a previous call to <a href="print.gdigetspoolfilehandle">GdiGetSpoolFileHandle</a>.
+Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.
 
 
 ### -param hemf 
 
-Caller-supplied page handle, obtained by calling <a href="print.gdigetpagehandle">GdiGetPageHandle</a>, identifying the page for which records are to be played.
+Caller-supplied page handle, obtained by calling <a href="..\winppi\nf-winppi-gdigetpagehandle.md">GdiGetPageHandle</a>, identifying the page for which records are to be played.
 
 
 ### -param prectDocument 
 
-Caller-supplied pointer to a <a href="display.rect">RECT</a> structure specifying the rectangle into which the page is to be drawn.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure specifying the rectangle into which the page is to be drawn.
 
 
 ### -param prectBorder 
@@ -88,9 +89,9 @@ If the operation succeeds, the function returns <b>TRUE</b>. Otherwise the funct
 
 
 ## -remarks
-The <b>GdiPlayPageEMF</b> function is exported by gdi32.dll for use within a print processor's <a href="print.printdocumentonprintprocessor">PrintDocumentOnPrintProcessor</a> function.
+The <b>GdiPlayPageEMF</b> function is exported by gdi32.dll for use within a print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> function.
 
-The <b>GdiPlayPageEMF</b> function is the means by which a print processor positions a document page or a specified rectangular region of a document page on a physical page. Note that <b>GdiPlayPageEMF</b> does not actually print on the device context, but instead prepares a data structure that describes the text and graphics that are to be printed on the physical page(s). The text and graphics are printed to the device context when <a href="print.gdiendpageemf">GdiEndPageEMF</a> is called.
+The <b>GdiPlayPageEMF</b> function is the means by which a print processor positions a document page or a specified rectangular region of a document page on a physical page. Note that <b>GdiPlayPageEMF</b> does not actually print on the device context, but instead prepares a data structure that describes the text and graphics that are to be printed on the physical page(s). The text and graphics are printed to the device context when <a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a> is called.
 
 The print processor uses <i>prectClip</i> to describe the rectangular region to be printed, and <i>prectDocument</i> to describe a rectangle into which the document page (or clipped region) must fit. If<i> prectClip</i> is <b>NULL</b>, the entire document page will be printed. For non-<b>NULL</b> values of <i>prectClip</i>, only the portion of the document page within the clip region will be printed. The <b>GdiPlayPageEMF</b> function then performs the scaling and translation operations required to make the document page (or selected portion) fit into the rectangle.
 
@@ -150,12 +151,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="print.gdiendpageemf">GdiEndPageEMF</a>
+<a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GdiPlayPageEMF function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20GdiPlayPageEMF function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

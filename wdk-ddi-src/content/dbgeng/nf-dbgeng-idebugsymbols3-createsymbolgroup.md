@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.CreateSymbolGroup
+UID: NF:dbgeng.IDebugSymbols3.CreateSymbolGroup
 title: IDebugSymbols3::CreateSymbolGroup method
 author: windows-driver-content
 description: The CreateSymbolGroup method creates a new symbol group.
 old-location: debugger\createsymbolgroup.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f55aa290-5e57-48d8-9454-370c494bbd65
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::CreateSymbolGroup, CreateSymbolGroup
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::CreateSymbolGroup method
@@ -69,7 +70,7 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-The newly created symbol group is empty; it does not contain any <a href="debugger.symbols#symbols#symbols">symbols</a>.  Symbols may be added to the symbol group using <a href="debugger.addsymbol">IDebugSymbolGroup::AddSymbol</a>.
+The newly created symbol group is empty; it does not contain any <a href="debugger.symbols#symbols#symbols">symbols</a>.  Symbols may be added to the symbol group using <a href="https://msdn.microsoft.com/b77de459-b5ac-4752-89eb-f24fdde36134">IDebugSymbolGroup::AddSymbol</a>.
 
 References to the returned object are managed like other COM objects, using the <b>IUnknown::AddRef</b> and <b>IUnknown::Release</b> methods.  In particular, the <b>IUnknown::Release</b> method must be called when the returned object is no longer needed.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff560088">Using Client Objects</a> for more information about using COM interfaces in the Debugger Engine API.
 
@@ -117,12 +118,12 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
 </dt>
 <dt>
-<a href="debugger.addsymbol">IDebugSymbolGroup::AddSymbol</a>
+<a href="https://msdn.microsoft.com/b77de459-b5ac-4752-89eb-f24fdde36134">IDebugSymbolGroup::AddSymbol</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugSymbols::CreateSymbolGroup method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::CreateSymbolGroup method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

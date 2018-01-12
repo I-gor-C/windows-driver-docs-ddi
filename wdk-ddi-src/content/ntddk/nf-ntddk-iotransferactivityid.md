@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.IoTransferActivityId
+UID: NF:ntddk.IoTransferActivityId
 title: IoTransferActivityId function
 author: windows-driver-content
 description: The IoTransferActivityId routine logs an ETW transfer event using the I/O tracing provider on behalf of the caller. This allows a driver to associate two related activity IDs without requiring a specific provider to be enabled.
@@ -7,7 +7,7 @@ old-location: kernel\iotransferactivityid.htm
 old-project: kernel
 ms.assetid: BA6EBD60-B7D8-4EDE-A655-2F18F27E6299
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoTransferActivityId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # IoTransferActivityId function

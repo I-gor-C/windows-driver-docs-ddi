@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcRegisterPhysicalConnectionToExternal
+UID: NF:portcls.PcRegisterPhysicalConnectionToExternal
 title: PcRegisterPhysicalConnectionToExternal function
 author: windows-driver-content
 description: The PcRegisterPhysicalConnectionToExternal function registers a physical connection from an audio adapter filter to an external audio adapter filter.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcRegisterPhysicalConnectionToExternal function
@@ -59,7 +60,7 @@ NTSTATUS PcRegisterPhysicalConnectionToExternal(
 
 ### -param DeviceObject [in]
 
-Pointer to the device object for the device. This is a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Pointer to the device object for the device. This is a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 
 ### -param FromUnknown [in]
@@ -95,7 +96,7 @@ The <i>ToString</i> parameter is a symbolic link to the subdevice that is expose
 
 The information that is required to register an external physical connection must be supplied to the two drivers. This can be done either during an initial coordinated install of the two devices, or dynamically by a user-mode configuration program that coordinates changes to the configuration of both devices.
 
-An adapter driver can call the <a href="audio.iunregisterphysicalconnection_unregisterphysicalconnectiontoexternal">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal</a> method to delete the registration of a physical connection that was registered by a previous call to <b>PcRegisterPhysicalConnectionToExternal</b>. For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>.
+An adapter driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537029">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal</a> method to delete the registration of a physical connection that was registered by a previous call to <b>PcRegisterPhysicalConnectionToExternal</b>. For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>.
 
 
 ## -requirements
@@ -158,13 +159,13 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcregisterphysicalconnection">PcRegisterPhysicalConnection</a>
+<a href="..\portcls\nf-portcls-pcregisterphysicalconnection.md">PcRegisterPhysicalConnection</a>
 </dt>
 <dt>
-<a href="audio.pcregisterphysicalconnectionfromexternal">PcRegisterPhysicalConnectionFromExternal</a>
+<a href="..\portcls\nf-portcls-pcregisterphysicalconnectionfromexternal.md">PcRegisterPhysicalConnectionFromExternal</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iport.md">IPort</a>
@@ -173,7 +174,7 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565205">KSPROPERTY_PIN_PHYSICALCONNECTION</a>
 </dt>
 <dt>
-<a href="audio.iunregisterphysicalconnection_unregisterphysicalconnectiontoexternal">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537029">IUnregisterPhysicalConnection::UnregisterPhysicalConnectionToExternal</a>
 </dt>
 </dl>
  

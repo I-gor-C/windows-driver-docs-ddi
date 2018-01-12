@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILUICCCMDPARAMETERSPARAMMASK
+UID: NE:rilapitypes.RILUICCCMDPARAMETERSPARAMMASK
 title: RILUICCCMDPARAMETERSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluicccmdparametersparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 56b6b8e6-529d-4480-bce8-ae94d09d1643
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILUICCCMDPARAMETERSPARAMMASK, RILUICCCMDPARAMETERSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUICCCMDPARAMETERSPARAMMASK
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_CREATEPROCESS
+UID: NS:d3dkmddi._DXGKARG_CREATEPROCESS
 title: _DXGKARG_CREATEPROCESS
 author: windows-driver-content
 description: DXGKARG_CREATEPROCESS is used with DxgkDdiCreateProcess to create a kernel mode driver object for a Microsoft DirectX graphics kernel process object.
@@ -7,8 +7,8 @@ old-location: display\dxgkarg_createprocess.htm
 old-project: display
 ms.assetid: F4FDF254-1C36-43DC-B1FD-376AD7658E61
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKARG_CREATEPROCESS, DXGKARG_CREATEPROCESS
+ms.date: 12/29/2017
+ms.keywords: _DXGKARG_CREATEPROCESS, DXGKARG_CREATEPROCESS, *INOUT_PDXGKARG_CREATEPROCESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_CREATEPROCESS
 ---
 
 # _DXGKARG_CREATEPROCESS structure
@@ -69,7 +70,7 @@ typedef struct _DXGKARG_CREATEPROCESS {
 
 ### -field Flags
 
-[in] A <a href="display.dxgk_createprocessflags">DXGK_CREATEPROCESSFLAGS</a> structure describing the operation.
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createprocessflags.md">DXGK_CREATEPROCESSFLAGS</a> structure describing the operation.
 
 
 ### -field NumPasid
@@ -123,7 +124,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgk_createprocessflags">DXGK_CREATEPROCESSFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createprocessflags.md">DXGK_CREATEPROCESSFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>
@@ -133,5 +134,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_CREATEPROCESS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_CREATEPROCESS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

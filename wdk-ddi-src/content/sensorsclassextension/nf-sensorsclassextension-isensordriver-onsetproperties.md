@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsclassextension.ISensorDriver.OnSetProperties
+UID: NF:sensorsclassextension.ISensorDriver.OnSetProperties
 title: ISensorDriver::OnSetProperties method
 author: windows-driver-content
 description: The ISensorDriver::OnSetProperties method specifies values for the specified list of properties.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -84,7 +85,7 @@ If the operation succeeds, this method returns S_OK. Otherwise, this method retu
 ## -remarks
 Properties describe the sensor device, as opposed to data fields, which contain sensor-generated data.  Platform-defined properties are defined in sensors.h.
 
-The list of properties provided through <i>pPropertiesToSet</i> is typically  a subset of the list you returned through <a href="sensors.isensordriver_ongetsupportedproperties">ISensorDriver::OnGetSupportedProperties</a>. However, the sensor class extension does not enforce this condition on client applications.
+The list of properties provided through <i>pPropertiesToSet</i> is typically  a subset of the list you returned through <a href="https://msdn.microsoft.com/library/windows/hardware/ff545630">ISensorDriver::OnGetSupportedProperties</a>. However, the sensor class extension does not enforce this condition on client applications.
 
 The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> structures returned by this method.
 
@@ -161,7 +162,7 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="sensors.isensordriver_ongetproperties">ISensorDriver::OnGetProperties</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._ATOMIC_CREATE_ECP_CONTEXT
+UID: NS:ntifs._ATOMIC_CREATE_ECP_CONTEXT
 title: _ATOMIC_CREATE_ECP_CONTEXT
 author: windows-driver-content
 description: This structure allows supplemental operations to be performed on a file atomically during create.
@@ -7,8 +7,8 @@ old-location: ifsk\atomic_create_ecp_context.htm
 old-project: ifsk
 ms.assetid: CFA879CC-6124-4E1C-B440-358455A5E6EF
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _ATOMIC_CREATE_ECP_CONTEXT, PATOMIC_CREATE_ECP_CONTEXT, *PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_CONTEXT
+ms.date: 1/9/2018
+ms.keywords: _ATOMIC_CREATE_ECP_CONTEXT, *PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_CONTEXT
 ---
 
 # _ATOMIC_CREATE_ECP_CONTEXT structure
@@ -252,7 +253,7 @@ The optional value that is used with <b>ATOMIC_CREATE_ECP_IN_FLAG_VDL_SPECIFIED<
 
 ### -field FileTimestamps
 
-Pointer to an optional <a href="ifsk.file_timestamps">FILE_TIMESTAMPS</a> structure which contains  the last recorded instance of specific actions on a file.
+Pointer to an optional <a href="..\ntifs\ns-ntifs-_file_timestamps.md">FILE_TIMESTAMPS</a> structure which contains  the last recorded instance of specific actions on a file.
 
 
 ### -field FileAttributes

@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIOP._ISCSI_PERSISTENT_LOGIN
+UID: NS:iscsiop._ISCSI_Persistent_Login
 title: _ISCSI_Persistent_Login
 author: windows-driver-content
 description: The ISCSI_Persistent_Login structure defines a persistent logon that the operating system initiates automatically when the computer boots up.
@@ -7,8 +7,8 @@ old-location: storage\iscsi_persistent_login.htm
 old-project: storage
 ms.assetid: c43ee3dd-552a-41ab-9b4f-01611e44f453
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ISCSI_Persistent_Login, ISCSI_Persistent_Login, *PISCSI_Persistent_Login, PISCSI_Persistent_Login
+ms.date: 1/10/2018
+ms.keywords: _ISCSI_Persistent_Login, *PISCSI_Persistent_Login, ISCSI_Persistent_Login
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PISCSI_Persistent_Login, ISCSI_Persistent_Login
 ---
 
 # _ISCSI_Persistent_Login structure
@@ -69,7 +70,7 @@ A wide character string that indicates the name of the target with which the iSC
 
 ### -field SecurityFlags
 
-A bitwise OR of security flags that indicate the security requirements of the target that is specified in the persistent logon. For a list of possible values for this member, see <a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>.
+A bitwise OR of security flags that indicate the security requirements of the target that is specified in the persistent logon. For a list of possible values for this member, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>.
 
 
 ### -field InitiatorPortNumber
@@ -94,17 +95,17 @@ Portal to use for initial connection
 
 ### -field TargetPortal
 
-An <a href="storage.iscsi_targetportal">ISCSI_TargetPortal</a> structure that specifies which target portal to use for the initial logon connection.
+An <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a> structure that specifies which target portal to use for the initial logon connection.
 
 
 ### -field LoginOptions
 
-An <a href="storage.iscsi_loginoptions">ISCSI_LoginOptions</a> structure that specifies the characteristics of the persistent logon session. 
+An <a href="..\iscsidef\ns-iscsidef-_iscsi_loginoptions.md">ISCSI_LoginOptions</a> structure that specifies the characteristics of the persistent logon session. 
 
 
 ### -field TargetMapping
 
-An <a href="storage.iscsi_targetmapping">ISCSI_TargetMapping</a> structure that defines the target mappings. 
+An <a href="..\iscsidef\ns-iscsidef-_iscsi_targetmapping.md">ISCSI_TargetMapping</a> structure that defines the target mappings. 
 
 
 ### -field Username
@@ -133,24 +134,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.iscsi_persistent_login_wmi_class">ISCSI_Persistent_Login WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561556">ISCSI_Persistent_Login WMI Class</a>
 </dt>
 <dt>
-<a href="storage.iscsi_loginoptions">ISCSI_LoginOptions</a>
+<a href="..\iscsidef\ns-iscsidef-_iscsi_loginoptions.md">ISCSI_LoginOptions</a>
 </dt>
 <dt>
-<a href="storage.iscsi_targetmapping">ISCSI_TargetMapping</a>
+<a href="..\iscsidef\ns-iscsidef-_iscsi_targetmapping.md">ISCSI_TargetMapping</a>
 </dt>
 <dt>
-<a href="storage.iscsi_targetportal">ISCSI_TargetPortal</a>
+<a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
 </dt>
 <dt>
-<a href="storage.security_flag_qualifiers">SECURITY_FLAG_QUALIFIERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_Persistent_Login structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_Persistent_Login structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

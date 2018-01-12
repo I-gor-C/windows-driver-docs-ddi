@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDT._D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
+UID: NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
 title: _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
 author: windows-driver-content
 description: The D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT structure is used to indicate the angles of rotation that are supported by a particular VidPN present path.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_present_path_rotation_support.htm
 old-project: display
 ms.assetid: f60cd2cf-23b6-4fed-8548-d0483fb17fe1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
 ---
 
 # _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT structure
@@ -111,7 +112,7 @@ Supported starting with Windows 8.1 Update.
 
 
 ## -remarks
-The <b>RotationSupport</b> member of the <a href="display.d3dkmdt_vidpn_present_path_transformation">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a <b>D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</b> structure.
+The <b>RotationSupport</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path_transformation.md">D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION</a> structure is a <b>D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT</b> structure.
 
 
 ## -requirements

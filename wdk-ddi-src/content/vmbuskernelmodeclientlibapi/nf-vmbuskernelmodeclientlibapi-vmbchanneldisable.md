@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbChannelDisable
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelDisable
 title: VmbChannelDisable function
 author: windows-driver-content
 description: The VmbChannelDisable function disables a channel, which closes it for client channels and revokes the channel offer for server channels. This function waits until the channel is completely torn down before it returns.
 old-location: netvista\vmbchanneldisable.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 688A1DF3-F801-47C3-8403-9FA5D96BD428
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbChannelDisable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Vmbkmcl.lib
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

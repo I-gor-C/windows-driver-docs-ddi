@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltQueryVolumeInformation
+UID: NF:fltkernel.FltQueryVolumeInformation
 title: FltQueryVolumeInformation function
 author: windows-driver-content
 description: The FltQueryVolumeInformation routine retrieves information about the volume that the given instance is attached to.
@@ -7,7 +7,7 @@ old-location: ifsk\fltqueryvolumeinformation.htm
 old-project: ifsk
 ms.assetid: 57b65e87-7f2d-44fc-84b9-e029c8075be3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltQueryVolumeInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltQueryVolumeInformation function
@@ -92,7 +93,7 @@ The type of information requested. One of the following value.
 
 </td>
 <td width="60%">
-Return a <a href="ifsk.file_fs_attribute_information">FILE_FS_ATTRIBUTE_INFORMATION</a> structure containing attribute information about the file system responsible for the volume. 
+Return a <a href="..\ntifs\ns-ntifs-_file_fs_attribute_information.md">FILE_FS_ATTRIBUTE_INFORMATION</a> structure containing attribute information about the file system responsible for the volume. 
 
 </td>
 </tr>
@@ -102,7 +103,7 @@ Return a <a href="ifsk.file_fs_attribute_information">FILE_FS_ATTRIBUTE_INFORMAT
 
 </td>
 <td width="60%">
-Return a <a href="ifsk.file_fs_control_information">FILE_FS_CONTROL_INFORMATION</a> structure containing file system control information about the volume. 
+Return a <a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a> structure containing file system control information about the volume. 
 
 </td>
 </tr>
@@ -112,7 +113,7 @@ Return a <a href="ifsk.file_fs_control_information">FILE_FS_CONTROL_INFORMATION<
 
 </td>
 <td width="60%">
-Return a <a href="kernel.file_fs_device_information">FILE_FS_DEVICE_INFORMATION</a> structure containing device information for the volume. 
+Return a <a href="..\wdm\ns-wdm-_file_fs_device_information.md">FILE_FS_DEVICE_INFORMATION</a> structure containing device information for the volume. 
 
 </td>
 </tr>
@@ -122,7 +123,7 @@ Return a <a href="kernel.file_fs_device_information">FILE_FS_DEVICE_INFORMATION<
 
 </td>
 <td width="60%">
-Return a <a href="ifsk.file_fs_driver_path_information">FILE_FS_DRIVER_PATH_INFORMATION</a> structure containing information about whether a specified driver is in the I/O path for the volume. The caller must store the name of the driver into the <b>FILE_FS_DRIVER_PATH_INFORMATION</b> structure before calling <b>FltQueryVolumeInformation</b>. 
+Return a <a href="..\ntifs\ns-ntifs-_file_fs_driver_path_information.md">FILE_FS_DRIVER_PATH_INFORMATION</a> structure containing information about whether a specified driver is in the I/O path for the volume. The caller must store the name of the driver into the <b>FILE_FS_DRIVER_PATH_INFORMATION</b> structure before calling <b>FltQueryVolumeInformation</b>. 
 
 </td>
 </tr>
@@ -132,7 +133,7 @@ Return a <a href="ifsk.file_fs_driver_path_information">FILE_FS_DRIVER_PATH_INFO
 
 </td>
 <td width="60%">
-Return a <a href="ifsk.file_fs_full_size_information">FILE_FS_FULL_SIZE_INFORMATION</a> structure containing information about the total amount of space available on the volume. 
+Return a <a href="..\ntddk\ns-ntddk-_file_fs_full_size_information.md">FILE_FS_FULL_SIZE_INFORMATION</a> structure containing information about the total amount of space available on the volume. 
 
 </td>
 </tr>
@@ -142,7 +143,7 @@ Return a <a href="ifsk.file_fs_full_size_information">FILE_FS_FULL_SIZE_INFORMAT
 
 </td>
 <td width="60%">
-Return a <a href="ifsk.file_fs_objectid_information">FILE_FS_OBJECTID_INFORMATION</a> structure containing file system-specific object ID information for the volume. Be aware that this is not the same as the (GUID-based) unique volume name assigned by the operating system. <div class="alert"><b>Note</b>  This value is not valid for snapshot volumes.</div>
+Return a <a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a> structure containing file system-specific object ID information for the volume. Be aware that this is not the same as the (GUID-based) unique volume name assigned by the operating system. <div class="alert"><b>Note</b>  This value is not valid for snapshot volumes.</div>
 <div> </div>
 
 
@@ -154,7 +155,7 @@ Return a <a href="ifsk.file_fs_objectid_information">FILE_FS_OBJECTID_INFORMATIO
 
 </td>
 <td width="60%">
-Return a <a href="ifsk.file_fs_size_information">FILE_FS_SIZE_INFORMATION</a> structure containing information about the amount of space on the volume that is available to the user associated with the calling thread. 
+Return a <a href="..\ntddk\ns-ntddk-_file_fs_size_information.md">FILE_FS_SIZE_INFORMATION</a> structure containing information about the amount of space on the volume that is available to the user associated with the calling thread. 
 
 </td>
 </tr>
@@ -164,7 +165,7 @@ Return a <a href="ifsk.file_fs_size_information">FILE_FS_SIZE_INFORMATION</a> st
 
 </td>
 <td width="60%">
-Return a <a href="ifsk.file_fs_volume_information">FILE_FS_VOLUME_INFORMATION</a> containing information about the volume such as the volume label, serial number, and creation time. 
+Return a <a href="..\ntddk\ns-ntddk-_file_fs_volume_information.md">FILE_FS_VOLUME_INFORMATION</a> containing information about the volume such as the volume label, serial number, and creation time. 
 
 </td>
 </tr>
@@ -174,7 +175,7 @@ Return a <a href="ifsk.file_fs_volume_information">FILE_FS_VOLUME_INFORMATION</a
 
 </td>
 <td width="60%">
-Return a <a href="ifsk.file_fs_sector_size_information">FILE_FS_SECTOR_SIZE_INFORMATION</a> structure that contains information about the physical and logical sector sizes of a volume.
+Return a <a href="..\ntddk\ns-ntddk-_file_fs_sector_size_information.md">FILE_FS_SECTOR_SIZE_INFORMATION</a> structure that contains information about the physical and logical sector sizes of a volume.
 
 </td>
 </tr>
@@ -187,13 +188,13 @@ The <b>FltQueryVolumeInformation</b> routine returns <b>STATUS_SUCCESS</b> or an
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl>
-<a href="ifsk.fltqueryvolumeinformation">FltQueryVolumeInformation</a> encountered a pool allocation failure. This is an error code. 
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> encountered a pool allocation failure. This is an error code. 
 <dl>
 <dt><b>STATUS_INVALID_INFO_CLASS</b></dt>
 </dl>An invalid value was specified for <i>FsInformationClass</i>. This is an error code. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>The <i>Instance</i> is attached to a network volume. <a href="ifsk.fltqueryvolumeinformation">FltQueryVolumeInformation</a> cannot be used to query network volume information. This is an error code. 
+</dl>The <i>Instance</i> is attached to a network volume. <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a> cannot be used to query network volume information. This is an error code. 
 
  
 
@@ -201,13 +202,13 @@ The <b>FltQueryVolumeInformation</b> routine returns <b>STATUS_SUCCESS</b> or an
 ## -remarks
 Fields in the FILE_<i>XXX</i>_INFORMATION structure that are not supported by the underlying file system are set to zero. 
 
-To change information about a volume, call <a href="ifsk.fltsetvolumeinformation">FltSetVolumeInformation</a>. 
+To change information about a volume, call <a href="..\fltkernel\nf-fltkernel-fltsetvolumeinformation.md">FltSetVolumeInformation</a>. 
 
-To get volume property information for the given volume, call <a href="ifsk.fltgetvolumeproperties">FltGetVolumeProperties</a>. 
+To get volume property information for the given volume, call <a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>. 
 
-To get the volume name for a given volume, call <a href="ifsk.fltgetvolumename">FltGetVolumeName</a>. 
+To get the volume name for a given volume, call <a href="..\fltkernel\nf-fltkernel-fltgetvolumename.md">FltGetVolumeName</a>. 
 
-To get the volume GUID name for a given volume, call <a href="ifsk.fltgetvolumeguidname">FltGetVolumeGuidName</a>. 
+To get the volume GUID name for a given volume, call <a href="..\fltkernel\nf-fltkernel-fltgetvolumeguidname.md">FltGetVolumeGuidName</a>. 
 
 
 ## -requirements
@@ -281,46 +282,46 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_fs_attribute_information">FILE_FS_ATTRIBUTE_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_fs_attribute_information.md">FILE_FS_ATTRIBUTE_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_fs_control_information">FILE_FS_CONTROL_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_fs_device_information">FILE_FS_DEVICE_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_file_fs_device_information.md">FILE_FS_DEVICE_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_fs_driver_path_information">FILE_FS_DRIVER_PATH_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_fs_driver_path_information.md">FILE_FS_DRIVER_PATH_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_fs_full_size_information">FILE_FS_FULL_SIZE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_fs_full_size_information.md">FILE_FS_FULL_SIZE_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_fs_objectid_information">FILE_FS_OBJECTID_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a>
 </dt>
 <dt><b>FILE_FS_SECTOR_SIZE_INFORMATION</b></dt>
 <dt>
-<a href="ifsk.file_fs_size_information">FILE_FS_SIZE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_fs_size_information.md">FILE_FS_SIZE_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_fs_volume_information">FILE_FS_VOLUME_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_fs_volume_information.md">FILE_FS_VOLUME_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetvolumeguidname">FltGetVolumeGuidName</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeguidname.md">FltGetVolumeGuidName</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetvolumename">FltGetVolumeName</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumename.md">FltGetVolumeName</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetvolumeproperties">FltGetVolumeProperties</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumeproperties.md">FltGetVolumeProperties</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetvolumeinformation">FltSetVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetvolumeinformation.md">FltSetVolumeInformation</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryVolumeInformation routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryVolumeInformation routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

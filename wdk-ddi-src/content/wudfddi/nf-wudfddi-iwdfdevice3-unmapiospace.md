@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFDevice3.UnmapIoSpace
+UID: NF:wudfddi.IWDFDevice3.UnmapIoSpace
 title: IWDFDevice3::UnmapIoSpace method
 author: windows-driver-content
 description: The UnmapIoSpace method unmaps a specified range of physical addresses previously mapped by MapIoSpace method.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfdevice3_unmapiospace.htm
 old-project: wdf
 ms.assetid: E95AC8E6-222A-4C88-8EBD-6BD7F22B9F18
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFDevice3, IWDFDevice3::UnmapIoSpace, UnmapIoSpace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
-The <b>UnmapIoSpace</b> method unmaps a specified range of physical addresses previously mapped by <a href="wdf.iwdfdevice3_mapiospace">MapIoSpace</a> method.
+The <b>UnmapIoSpace</b> method unmaps a specified range of physical addresses previously mapped by <a href="https://msdn.microsoft.com/library/windows/hardware/hh451225">MapIoSpace</a> method.
 
 
 
@@ -59,7 +60,7 @@ VOID UnmapIoSpace(
 
 ### -param PseudoBaseAddress [in]
 
-Pointer to the pseudo base address obtained from a previous call to <a href="wdf.iwdfdevice3_mapiospace">MapIoSpace</a> method to which the physical address range was mapped.
+Pointer to the pseudo base address obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451225">MapIoSpace</a> method to which the physical address range was mapped.
 
 
 ### -param NumberOfBytes [in]
@@ -72,11 +73,11 @@ This method does not return a value.
 
 
 ## -remarks
-If a driver calls <a href="wdf.iwdfdevice3_mapiospace">MapIoSpace</a> in <a href="wdf.ipnpcallbackhardware2_onpreparehardware">OnPrepareHardware</a> callback. It calls <b>UnmapIoSpace</b> in its <a href="wdf.ipnpcallbackhardware2_onreleasehardware">OnReleaseHardware</a> callback.
+If a driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/hh451225">MapIoSpace</a> in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439734">OnPrepareHardware</a> callback. It calls <b>UnmapIoSpace</b> in its <a href="https://msdn.microsoft.com/library/windows/hardware/hh439739">OnReleaseHardware</a> callback.
 
 For an example, see <a href="wdf.finding_and_mapping_hardware_resources_in_a_umdf_driver">Finding and Mapping Hardware Resources in a UMDF Driver</a>.
 
-See example code in <a href="wdf.iwdfdevice3_mapiospace">IWDFDevice3::MapIoSpace</a>.
+See example code in <a href="https://msdn.microsoft.com/243C7299-7C74-408A-8FB9-32FB3315251F">IWDFDevice3::MapIoSpace</a>.
 
 
 ## -requirements
@@ -146,5 +147,5 @@ DLL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice3::UnmapIoSpace method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDevice3::UnmapIoSpace method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.bthioctl.IOCTL_INTERNAL_BTH_SUBMIT_BRB
+UID: NI:bthioctl.IOCTL_INTERNAL_BTH_SUBMIT_BRB
 title: IOCTL_INTERNAL_BTH_SUBMIT_BRB
 author: windows-driver-content
 description: Profile drivers use IOCTL_INTERNAL_BTH_SUBMIT_BRB to submit a Bluetooth Request Block (BRB) to the Bluetooth driver stack.
@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_internal_bth_submit_brb.htm
 old-project: bltooth
 ms.assetid: 60e4ee90-81d4-47a1-aed4-ee39b9fe3174
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, PHFP_BYPASS_CODEC_ID_V1
+ms.date: 12/21/2017
+ms.keywords: _HFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_INTERNAL_BTH_SUBMIT_BRB IOCTL
@@ -275,7 +276,7 @@ Profile drivers use BRBs to handle most input, output, and connection tasks. A n
     defined for these tasks, and each one uses a specific, corresponding structure. All BRBs share a common
     header, which contains the type of the BRB. The Bluetooth driver stack uses the BRB header to correctly
     interpret the remainder of the BRB. For more information about BRB headers, see the 
-    <a href="bltooth.brb_header">BRB_HEADER</a> structure.
+    <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure.
 
 For more information about how profile drivers use BRBs to communicate with the Bluetooth driver
     stack, see 
@@ -322,10 +323,10 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="bltooth.brb_header">BRB_HEADER</a>
+<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
 </dt>
 <dt>
-<a href="bltooth.brb_type">BRB_TYPE</a>
+<a href="..\bthddi\ne-bthddi-_brb_type.md">BRB_TYPE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536657">Building and Sending a BRB</a>
@@ -335,5 +336,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20IOCTL_INTERNAL_BTH_SUBMIT_BRB control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20IOCTL_INTERNAL_BTH_SUBMIT_BRB control code%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

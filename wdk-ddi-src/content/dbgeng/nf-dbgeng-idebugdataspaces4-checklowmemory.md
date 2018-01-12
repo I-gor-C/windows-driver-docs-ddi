@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.CheckLowMemory
+UID: NF:dbgeng.IDebugDataSpaces4.CheckLowMemory
 title: IDebugDataSpaces4::CheckLowMemory method
 author: windows-driver-content
 description: The CheckLowMemory method checks for memory corruption in the low 4 GB of memory.
 old-location: debugger\checklowmemory.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: b7e3bb5c-d4c7-469e-aa2d-fa9a98706c2f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::CheckLowMemory, CheckLowMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::CheckLowMemory method

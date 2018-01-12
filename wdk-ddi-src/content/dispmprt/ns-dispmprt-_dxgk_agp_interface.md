@@ -1,5 +1,5 @@
 ---
-UID: NS.DISPMPRT._DXGK_AGP_INTERFACE
+UID: NS:dispmprt._DXGK_AGP_INTERFACE
 title: _DXGK_AGP_INTERFACE
 author: windows-driver-content
 description: The DXGK_AGP_INTERFACE structure contains pointers to functions in the AGP interface, which is implemented by the display port driver.
@@ -7,8 +7,8 @@ old-location: display\dxgk_agp_interface.htm
 old-project: display
 ms.assetid: ebaa2aba-426f-4f5f-b2bf-a8433cdc9205
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_AGP_INTERFACE, *PDXGK_AGP_INTERFACE, PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE
+ms.date: 12/29/2017
+ms.keywords: _DXGK_AGP_INTERFACE, *PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE
 ---
 
 # _DXGK_AGP_INTERFACE structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The DXGK_AGP_INTERFACE structure contains pointers to functions in the <a href="display.agp_interface">AGP interface</a>, which is implemented by the display port driver.
+The DXGK_AGP_INTERFACE structure contains pointers to functions in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538228">AGP interface</a>, which is implemented by the display port driver.
 
 
 

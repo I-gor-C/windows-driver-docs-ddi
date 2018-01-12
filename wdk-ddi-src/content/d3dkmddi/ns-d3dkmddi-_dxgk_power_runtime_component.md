@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_POWER_RUNTIME_COMPONENT
+UID: NS:d3dkmddi._DXGK_POWER_RUNTIME_COMPONENT
 title: _DXGK_POWER_RUNTIME_COMPONENT
 author: windows-driver-content
 description: Describes information about a power component&#8212;for example, a graphics processing engine, a display device, or a block of memory.
@@ -7,7 +7,7 @@ old-location: display\dxgk_power_runtime_component.htm
 old-project: display
 ms.assetid: ed7e6fc4-651d-4dc3-9c90-cca3c5f0eb67
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_POWER_RUNTIME_COMPONENT, DXGK_POWER_RUNTIME_COMPONENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_POWER_RUNTIME_COMPONENT
 ---
 
 # _DXGK_POWER_RUNTIME_COMPONENT structure
@@ -67,19 +68,19 @@ Defines the number of idle states (F-states) for the power component.
 
 ### -field States
 
-A <a href="display.dxgk_power_runtime_state">DXGK_POWER_RUNTIME_STATE</a> structure that defines information about every idle state. 
+A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_runtime_state.md">DXGK_POWER_RUNTIME_STATE</a> structure that defines information about every idle state. 
 
 <b>DXGK_MAX_F_STATES</b> is the maximum number of F-states that a power component can have. In Windows 8, <b>DXGK_MAX_F_STATES</b> is defined to have a value of 8.
 
 
 ### -field ComponentMapping
 
-A <a href="display.dxgk_power_component_mapping">DXGK_POWER_COMPONENT_MAPPING</a> structure that defines the standard component types of the DirectX graphics kernel subsystem (Dxgkrnl.sys) that describe the power component.
+A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_mapping.md">DXGK_POWER_COMPONENT_MAPPING</a> structure that defines the standard component types of the DirectX graphics kernel subsystem (Dxgkrnl.sys) that describe the power component.
 
 
 ### -field Flags
 
-A <a href="display.dxgk_power_component_flags">DXGK_POWER_COMPONENT_FLAGS</a> structure that specifies power state transition information.
+A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_flags.md">DXGK_POWER_COMPONENT_FLAGS</a> structure that specifies power state transition information.
 
 
 ### -field ComponentGuid
@@ -146,18 +147,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgk_power_component_flags">DXGK_POWER_COMPONENT_FLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_flags.md">DXGK_POWER_COMPONENT_FLAGS</a>
 </dt>
 <dt>
-<a href="display.dxgk_power_component_mapping">DXGK_POWER_COMPONENT_MAPPING</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_component_mapping.md">DXGK_POWER_COMPONENT_MAPPING</a>
 </dt>
 <dt>
-<a href="display.dxgk_power_runtime_state">DXGK_POWER_RUNTIME_STATE</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_power_runtime_state.md">DXGK_POWER_RUNTIME_STATE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_POWER_RUNTIME_COMPONENT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_POWER_RUNTIME_COMPONENT structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

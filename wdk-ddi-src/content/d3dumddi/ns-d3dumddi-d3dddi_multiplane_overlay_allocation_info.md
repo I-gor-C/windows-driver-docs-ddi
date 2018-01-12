@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI.D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO
+UID: NS:d3dumddi.D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO
 title: D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO
 author: windows-driver-content
 description: Specifies info about a multiplane overlay allocation.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_allocation_info.htm
 old-project: display
 ms.assetid: ce3610ab-a927-45e7-8ceb-3f38b5f50f00
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO, D3DDDI_MULTIPLANE_ALLOCATION_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_MULTIPLANE_ALLOCATION_INFO
 ---
 
 # D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO structure

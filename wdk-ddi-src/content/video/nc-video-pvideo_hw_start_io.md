@@ -1,5 +1,5 @@
 ---
-UID: NC.video.PVIDEO_HW_START_IO
+UID: NC:video.PVIDEO_HW_START_IO
 title: PVIDEO_HW_START_IO
 author: windows-driver-content
 description: HwVidStartIO processes the specified VRP.
@@ -7,8 +7,8 @@ old-location: display\hwvidstartio.htm
 old-project: display
 ms.assetid: 82951291-cf3e-486b-ad0e-f347fefe0370
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VHF_CONFIG, *PVHF_CONFIG, PVHF_CONFIG, VHF_CONFIG
+ms.date: 12/29/2017
+ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -65,7 +66,7 @@ Pointer to the miniport driver's per-adapter storage area. For more information,
 
 ### -param RequestPacket 
 
-Pointer to a <a href="display.video_request_packet">VIDEO_REQUEST_PACKET</a> structure, which contains all the parameters originally passed to <a href="display.engdeviceiocontrol">EngDeviceIoControl</a>.
+Pointer to a <a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a> structure, which contains all the parameters originally passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff564838">EngDeviceIoControl</a>.
 
 
 ## -returns
@@ -75,7 +76,7 @@ Pointer to a <a href="display.video_request_packet">VIDEO_REQUEST_PACKET</a> str
 ## -remarks
 Every video miniport driver must have a <i>HwVidStartIO</i> function.
 
-The video port driver calls <i>HwVidStartIO</i> in response to each GDI <a href="display.engdeviceiocontrol">EngDeviceIoControl</a> request, which originates in the corresponding display driver. When <i>HwVidStartIO</i> is called, the miniport driver owns the input video request packet until it completes the requested operation. <i>HwVidStartIO</i> must do the following:
+The video port driver calls <i>HwVidStartIO</i> in response to each GDI <a href="https://msdn.microsoft.com/library/windows/hardware/ff564838">EngDeviceIoControl</a> request, which originates in the corresponding display driver. When <i>HwVidStartIO</i> is called, the miniport driver owns the input video request packet until it completes the requested operation. <i>HwVidStartIO</i> must do the following:
 
 Look at the <b>IoControlCode</b> member of the <a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> to determine the operation being requested by the display driver.
 
@@ -121,18 +122,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.video_miniport_driver_i_o_control_codes">Video Miniport Driver I/O Control Codes</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570515">Video Miniport Driver I/O Control Codes</a>
 </dt>
 <dt>
-<a href="display.video_request_packet">VIDEO_REQUEST_PACKET</a>
+<a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a>
 </dt>
 <dt>
-<a href="display.videoportsynchronizeexecution">VideoPortSynchronizeExecution</a>
+<a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_START_IO callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_START_IO callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

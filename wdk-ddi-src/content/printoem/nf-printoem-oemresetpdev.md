@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMResetPDEV
+UID: NF:printoem.OEMResetPDEV
 title: OEMResetPDEV function
 author: windows-driver-content
 description: OEMResetPDEV function
@@ -7,7 +7,7 @@ old-location: print\oemresetpdev.htm
 old-project: print
 ms.assetid: 92ae8382-49f3-4bfc-917a-047991953809
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMResetPDEV
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

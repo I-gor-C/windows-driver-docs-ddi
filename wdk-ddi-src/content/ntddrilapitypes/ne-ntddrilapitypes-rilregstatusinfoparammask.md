@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILREGSTATUSINFOPARAMMASK
+UID: NE:ntddrilapitypes.RILREGSTATUSINFOPARAMMASK
 title: RILREGSTATUSINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilregstatusinfoparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7857f845-d695-4b0f-9e52-8871c0140a74
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILREGSTATUSINFOPARAMMASK, RILREGSTATUSINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILREGSTATUSINFOPARAMMASK
 ---
 
 # RILREGSTATUSINFOPARAMMASK enumeration

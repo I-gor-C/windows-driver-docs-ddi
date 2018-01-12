@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.GetFieldOffset
+UID: NF:dbgeng.IDebugSymbols3.GetFieldOffset
 title: IDebugSymbols3::GetFieldOffset method
 author: windows-driver-content
 description: The GetFieldOffset method returns the offset of a field from the base address of an instance of a type.
 old-location: debugger\getfieldoffset2.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 4081ddf9-673d-4df6-8698-726a70d32c03
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::GetFieldOffset, GetFieldOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::GetFieldOffset method

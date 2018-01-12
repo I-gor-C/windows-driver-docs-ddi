@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdevice.WdfDeviceSetDeviceInterfaceState
+UID: NF:wdfdevice.WdfDeviceSetDeviceInterfaceState
 title: WdfDeviceSetDeviceInterfaceState function
 author: windows-driver-content
 description: The WdfDeviceSetDeviceInterfaceState method enables or disables a device interface for a specified device.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicesetdeviceinterfacestate.htm
 old-project: wdf
 ms.assetid: 345003fc-fdc3-4529-bb15-c9e380e77bba
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDeviceSetDeviceInterfaceState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -71,7 +72,7 @@ A pointer to a GUID that identifies the device interface class.
 
 ### -param ReferenceString [in, optional]
 
-A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that describes a reference string for the device interface. This parameter is optional and can be <b>NULL</b>. 
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that describes a reference string for the device interface. This parameter is optional and can be <b>NULL</b>. 
 
 
 ### -param IsInterfaceEnabled [in]
@@ -86,7 +87,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 ## -remarks
-For more information about device interfaces and the <b>WdfDeviceSetDeviceInterfaceState</b> method, see <a href="wdf.using_device_interfaces">Using Device Interfaces</a>.
+For more information about device interfaces and the <b>WdfDeviceSetDeviceInterfaceState</b> method, see <a href="https://msdn.microsoft.com/98199220-947e-462e-a50c-85d81ca50108">Using Device Interfaces</a>.
 
 The following code example disables a driver's COM port interface.
 
@@ -163,7 +164,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -171,15 +172,15 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 <dt>
-<a href="wdf.wdfdevicecreatedeviceinterface">WdfDeviceCreateDeviceInterface</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatedeviceinterface.md">WdfDeviceCreateDeviceInterface</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceSetDeviceInterfaceState method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceSetDeviceInterfaceState method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

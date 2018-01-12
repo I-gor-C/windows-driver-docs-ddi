@@ -1,5 +1,5 @@
 ---
-UID: NF.ksproxy.IKsPin.KsGetCurrentCommunication
+UID: NF:ksproxy.IKsPin.KsGetCurrentCommunication
 title: IKsPin::KsGetCurrentCommunication method
 author: windows-driver-content
 description: The KsGetCurrentCommunication method retrieves the current communication direction, interface, and medium of a pin.
@@ -7,7 +7,7 @@ old-location: stream\ikspin_ksgetcurrentcommunication.htm
 old-project: stream
 ms.assetid: 3fca9bf5-5430-4877-846e-e796e54991a2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IKsPin, IKsPin::KsGetCurrentCommunication, KsGetCurrentCommunication
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PIPE_STATE
 ---
 
 # IKsPin::KsGetCurrentCommunication method
@@ -120,12 +121,12 @@ The pin cannot connect to other pins, but instances may be created on it to rece
 
 ### -param Interface [out, optional]
 
-Pointer to a variable that receives a <a href="stream.kspin_interface">KSPIN_INTERFACE</a> structure that describes the current interface for a pin. 
+Pointer to a variable that receives a <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a> structure that describes the current interface for a pin. 
 
 
 ### -param Medium [out, optional]
 
-Pointer to a variable that receives a <a href="stream.kspin_medium">KSPIN_MEDIUM</a> structure that describes the current medium for a pin. 
+Pointer to a variable that receives a <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a> structure that describes the current medium for a pin. 
 
 
 ## -returns
@@ -167,10 +168,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kspin_interface">KSPIN_INTERFACE</a>
+<a href="..\ks\ns-ks-ksidentifier.md">KSPIN_INTERFACE</a>
 </dt>
 <dt>
-<a href="stream.kspin_medium">KSPIN_MEDIUM</a>
+<a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>
@@ -180,5 +181,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsPin::KsGetCurrentCommunication method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsPin::KsGetCurrentCommunication method%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

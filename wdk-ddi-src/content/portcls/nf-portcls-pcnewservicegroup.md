@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcNewServiceGroup
+UID: NF:portcls.PcNewServiceGroup
 title: PcNewServiceGroup function
 author: windows-driver-content
 description: The PcNewServiceGroup function creates and initializes a service group.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcNewServiceGroup function
@@ -61,7 +62,7 @@ Pointer to the service-group object created by this function. This parameter poi
 
 ### -param OuterUnknown [in, optional]
 
-Pointer to the <a href="com.iunknown">IUnknown</a> interface of an object that needs to aggregate the object. Unless aggregation is required, set this parameter to <b>NULL</b>.
+Pointer to the <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> interface of an object that needs to aggregate the object. Unless aggregation is required, set this parameter to <b>NULL</b>.
 
 
 ## -returns

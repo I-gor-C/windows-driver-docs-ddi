@@ -1,5 +1,5 @@
 ---
-UID: NE.dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_BLEND
+UID: NE:dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_BLEND
 title: DXGI_DDI_MULTIPLANE_OVERLAY_BLEND
 author: windows-driver-content
 description: Identifies a blend operation to be performed on an overlay plane.
@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_multiplane_overlay_blend.htm
 old-project: display
 ms.assetid: 00b263e7-8655-4219-8e06-e0feba659d04
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: DXGI_DDI_MULTIPLANE_OVERLAY_BLEND, DXGI_DDI_MULTIPLANE_OVERLAY_BLEND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGI_DDI_MULTIPLANE_OVERLAY_BLEND
 ---
 
 # DXGI_DDI_MULTIPLANE_OVERLAY_BLEND enumeration

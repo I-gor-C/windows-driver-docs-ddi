@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddvol.IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS
+UID: NI:ntddvol.IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS
 title: IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS
 author: windows-driver-content
 description: Returns the physical location(s) of a volume on one or more disks.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_volume_get_volume_disk_extents.htm
 old-project: storage
 ms.assetid: d831ea36-16ee-4723-95b1-f9903106b7c0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VIDEO_WIN32K_CALLBACKS_PARAMS, PVIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
+ms.date: 1/10/2018
+ms.keywords: _VIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
 # IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS IOCTL
@@ -115,15 +116,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.volume_disk_extents">VOLUME_DISK_EXTENTS</a>
+<a href="..\ntddvol\ns-ntddvol-_volume_disk_extents.md">VOLUME_DISK_EXTENTS</a>
 </dt>
 <dt>
-<a href="storage.disk_extent">DISK_EXTENT</a>
+<a href="..\ntddvol\ns-ntddvol-_disk_extent.md">DISK_EXTENT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

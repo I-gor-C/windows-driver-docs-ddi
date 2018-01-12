@@ -1,14 +1,14 @@
 ---
-UID: NE.ntddndis._NDIS_RECEIVE_FILTER_TEST
+UID: NE:ntddndis._NDIS_RECEIVE_FILTER_TEST
 title: _NDIS_RECEIVE_FILTER_TEST
 author: windows-driver-content
 description: The NDIS_RECEIVE_FILTER_TEST enumeration identifies the type of test that the receive filter performs.
 old-location: netvista\ndis_receive_filter_test.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 064d8335-3ebf-4bc2-901e-10ce46bf7732
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_RECEIVE_FILTER_TEST, PNDIS_RECEIVE_FILTER_TEST, *PNDIS_RECEIVE_FILTER_TEST, NDIS_RECEIVE_FILTER_TEST
+ms.date: 1/8/2018
+ms.keywords: _NDIS_RECEIVE_FILTER_TEST, *PNDIS_RECEIVE_FILTER_TEST, NDIS_RECEIVE_FILTER_TEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_RECEIVE_FILTER_TEST, NDIS_RECEIVE_FILTER_TEST
 ---
 
 # _NDIS_RECEIVE_FILTER_TEST enumeration
@@ -89,7 +90,7 @@ The maximum value for this enumeration. This value might change in future versio
 
 ## -remarks
 The NDIS_RECEIVE_FILTER_TEST enumeration is used in the 
-    <a href="netvista.ndis_receive_filter_field_parameters">
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
     NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
 
 
@@ -121,7 +122,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_receive_filter_field_parameters">
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>
 </dt>
 </dl>
@@ -129,5 +130,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_RECEIVE_FILTER_TEST enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_TEST enumeration%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

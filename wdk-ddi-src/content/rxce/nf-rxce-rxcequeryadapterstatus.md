@@ -1,5 +1,5 @@
 ---
-UID: NF.rxce.RxCeQueryAdapterStatus
+UID: NF:rxce.RxCeQueryAdapterStatus
 title: RxCeQueryAdapterStatus function
 author: windows-driver-content
 description: RxCeQueryAdapterStatus returns the ADAPTER_STATUS structure for a given transport in a caller-allocated buffer.
@@ -7,7 +7,7 @@ old-location: ifsk\rxcequeryadapterstatus.htm
 old-project: ifsk
 ms.assetid: ebe9bec3-6c38-48d8-b9af-03aadbc09d98
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RxCeQueryAdapterStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: *LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -126,15 +127,15 @@ IRQL
 <dl>
 <dt><a href="http://go.microsoft.com/fwlink/p/?linkid=138885">ADAPTER_STATUS</a></dt>
 <dt>
-<a href="ifsk.rxcequeryinformation">RxCeQueryInformation</a>
+<a href="..\rxce\nf-rxce-rxcequeryinformation.md">RxCeQueryInformation</a>
 </dt>
 <dt>
-<a href="ifsk.rxcequerytransportinformation">RxCeQueryTransportInformation</a>
+<a href="..\rxce\nf-rxce-rxcequerytransportinformation.md">RxCeQueryTransportInformation</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeQueryAdapterStatus function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCeQueryAdapterStatus function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

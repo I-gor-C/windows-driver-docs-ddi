@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHDDI._CHANNEL_CONFIG_PARAMETERS_ENHANCED
+UID: NS:bthddi._CHANNEL_CONFIG_PARAMETERS_ENHANCED
 title: _CHANNEL_CONFIG_PARAMETERS_ENHANCED
 author: windows-driver-content
 description: The CHANNEL_CONFIG_PARAMETERS_ENHANCED structure describes configuration parameters for inbound and outbound directions of an L2CAP channel.
@@ -7,8 +7,8 @@ old-location: bltooth\channel_config_parameters_enhanced.htm
 old-project: bltooth
 ms.assetid: 4C28FD6E-A1DD-4887-95B0-6028ECA18204
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _CHANNEL_CONFIG_PARAMETERS_ENHANCED, CHANNEL_CONFIG_PARAMETERS_ENHANCED, PCHANNEL_CONFIG_PARAMETERS_ENHANCED, *PCHANNEL_CONFIG_PARAMETERS_ENHANCED
+ms.date: 12/21/2017
+ms.keywords: _CHANNEL_CONFIG_PARAMETERS_ENHANCED, CHANNEL_CONFIG_PARAMETERS_ENHANCED, *PCHANNEL_CONFIG_PARAMETERS_ENHANCED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: CHANNEL_CONFIG_PARAMETERS_ENHANCED, *PCHANNEL_CONFIG_PARAMETERS_ENHANCED
 ---
 
 # _CHANNEL_CONFIG_PARAMETERS_ENHANCED structure

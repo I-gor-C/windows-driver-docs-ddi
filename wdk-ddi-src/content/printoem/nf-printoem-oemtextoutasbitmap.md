@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMTextOutAsBitmap
+UID: NF:printoem.OEMTextOutAsBitmap
 title: OEMTextOutAsBitmap function
 author: windows-driver-content
 description: OEMTextOutAsBitmap function
@@ -7,7 +7,7 @@ old-location: print\oemtextoutasbitmap.htm
 old-project: print
 ms.assetid: 37bf1cbe-9200-4d3e-b5e6-746f18293c1a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMTextOutAsBitmap
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

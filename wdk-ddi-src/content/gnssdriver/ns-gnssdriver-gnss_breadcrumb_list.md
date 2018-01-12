@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_BREADCRUMB_LIST
+UID: NS:gnssdriver.GNSS_BREADCRUMB_LIST
 title: GNSS_BREADCRUMB_LIST
 author: windows-driver-content
 description: This structure contains the response to an IOCTL_GNSS_POP_BREADCRUMBS.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 40C11C4B-2FFE-452F-AA08-2BCD4B6A4F7F
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_BREADCRUMB_LIST, GNSS_BREADCRUMB_LIST, PGNSS_BREADCRUMB_LIST, *PGNSS_BREADCRUMB_LIST
+ms.keywords: GNSS_BREADCRUMB_LIST, GNSS_BREADCRUMB_LIST, *PGNSS_BREADCRUMB_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_BREADCRUMB_LIST, *PGNSS_BREADCRUMB_LIST
 ---
 
 # GNSS_BREADCRUMB_LIST structure

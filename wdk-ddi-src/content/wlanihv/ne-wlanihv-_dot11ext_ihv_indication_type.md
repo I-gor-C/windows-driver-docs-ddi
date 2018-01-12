@@ -1,14 +1,14 @@
 ---
-UID: NE.wlanihv._DOT11EXT_IHV_INDICATION_TYPE
+UID: NE:wlanihv._DOT11EXT_IHV_INDICATION_TYPE
 title: _DOT11EXT_IHV_INDICATION_TYPE
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11ext_ihv_indication_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c4cba30d-f0ba-424b-aa05-2717fa8fcc4e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11EXT_IHV_INDICATION_TYPE, DOT11EXT_IHV_INDICATION_TYPE, *PDOT11EXT_IHV_INDICATION_TYPE
+ms.date: 1/8/2018
+ms.keywords: _DOT11EXT_IHV_INDICATION_TYPE, *PDOT11EXT_IHV_INDICATION_TYPE, DOT11EXT_IHV_INDICATION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT11EXT_IHV_INDICATION_TYPE, DOT11EXT_IHV_INDICATION_TYPE
 req.product: Windows 10 or later.
 ---
 

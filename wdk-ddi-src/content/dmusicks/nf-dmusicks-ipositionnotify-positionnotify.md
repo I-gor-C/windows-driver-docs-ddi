@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.IPositionNotify.PositionNotify
+UID: NF:dmusicks.IPositionNotify.PositionNotify
 title: IPositionNotify::PositionNotify method
 author: windows-driver-content
 description: Byte position notify for MXF graph.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # IPositionNotify::PositionNotify method

@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_CA_MODULE_UI
+UID: NS:bdatypes._BDA_CA_MODULE_UI
 title: _BDA_CA_MODULE_UI
 author: windows-driver-content
 description: The BDA_CA_MODULE_UI structure describes the user interface (UI) that conditional access (CA) plugins can display.
@@ -7,8 +7,8 @@ old-location: stream\bda_ca_module_ui.htm
 old-project: stream
 ms.assetid: 2f2c8cb5-0e84-467f-9671-735575835c3a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_CA_MODULE_UI, *PBDA_CA_MODULE_UI, BDA_CA_MODULE_UI, PBDA_CA_MODULE_UI
+ms.date: 1/9/2018
+ms.keywords: _BDA_CA_MODULE_UI, BDA_CA_MODULE_UI, *PBDA_CA_MODULE_UI
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: BDA_CA_MODULE_UI, *PBDA_CA_MODULE_UI
 ---
 
 # _BDA_CA_MODULE_UI structure
@@ -101,5 +102,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BDA_CA_MODULE_UI structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BDA_CA_MODULE_UI structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.wiautil.wiauDbgInit
+UID: NF:wiautil.wiauDbgInit
 title: wiauDbgInit function
 author: windows-driver-content
 description: The wiauDbgInit function initializes WIA debugging.
 old-location: image\wiaudbginit.htm
-old-project: Image
+old-project: image
 ms.assetid: a9308d66-c8b0-4e0e-8203-e2b3f91b7e27
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiauDbgInit
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SKIP_AMOUNT
 req.product: Windows 10 or later.
 ---
 

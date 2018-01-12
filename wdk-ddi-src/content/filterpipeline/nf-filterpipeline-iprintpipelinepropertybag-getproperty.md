@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPrintPipelinePropertyBag.GetProperty
+UID: NF:filterpipeline.IPrintPipelinePropertyBag.GetProperty
 title: IPrintPipelinePropertyBag::GetProperty method
 author: windows-driver-content
 description: The GetProperty method gets a property from a property bag.
@@ -7,7 +7,7 @@ old-location: print\iprintpipelinepropertybag_getproperty.htm
 old-project: print
 ms.assetid: 10a5ada8-98ab-4e1c-a4b5-2f6d60674952
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintPipelinePropertyBag, IPrintPipelinePropertyBag::GetProperty, GetProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintPipelinePropertyBag::GetProperty method

@@ -1,14 +1,14 @@
 ---
-UID: NI.scsiscan.IOCTL_SCSISCAN_UNLOCKDEVICE
+UID: NI:scsiscan.IOCTL_SCSISCAN_UNLOCKDEVICE
 title: IOCTL_SCSISCAN_UNLOCKDEVICE
 author: windows-driver-content
 description: Reserved for use by Microsoft.
 old-location: image\ioctl_scsiscan_unlockdevice.htm
-old-project: Image
+old-project: image
 ms.assetid: 6dc380a9-b983-453e-949d-f49f85df4c7b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _ZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR
+ms.date: 1/10/2018
+ms.keywords: _ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR
 req.product: Windows 10 or later.
 ---
 

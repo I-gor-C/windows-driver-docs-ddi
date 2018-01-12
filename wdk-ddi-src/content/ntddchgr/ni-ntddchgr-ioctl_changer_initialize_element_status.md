@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddchgr.IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS
+UID: NI:ntddchgr.IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS
 title: IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS
 author: windows-driver-content
 description: Initializes the status of all elements or of specified number of elements of a particular type.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_changer_initialize_element_status.htm
 old-project: storage
 ms.assetid: 25cbb42a-7263-47b7-84c7-cfcb41a858c8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ELEMENT_TYPE, PELEMENT_TYPE, ELEMENT_TYPE, *PELEMENT_TYPE
+ms.date: 1/10/2018
+ms.keywords: _ELEMENT_TYPE, ELEMENT_TYPE, *PELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ELEMENT_TYPE, *PELEMENT_TYPE
 ---
 
 # IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS IOCTL
@@ -51,7 +52,7 @@ Initializes the status of all elements or of specified number of elements of a p
 
 ### -input-buffer
 
-       The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains an <a href="storage.changer_initialize_element_status">CHANGER_INITIALIZE_ELEMENT_STATUS</a> structure that indicates the element type and the number of elements to initialize. If the <b>BarCodeScan</b> member is <b>TRUE</b> and CHANGER_BAR_CODE_SCANNER_INSTALLED is also set in <b>Features0</b> of <a href="storage.get_changer_parameters">GET_CHANGER_PARAMETERS</a>, the elements should be initialized using a bar code scan. 
+       The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains an <a href="..\ntddchgr\ns-ntddchgr-_changer_initialize_element_status.md">CHANGER_INITIALIZE_ELEMENT_STATUS</a> structure that indicates the element type and the number of elements to initialize. If the <b>BarCodeScan</b> member is <b>TRUE</b> and CHANGER_BAR_CODE_SCANNER_INSTALLED is also set in <b>Features0</b> of <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a>, the elements should be initialized using a bar code scan. 
 
 
 ### -input-buffer-length
@@ -100,15 +101,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.changer_initialize_element_status">CHANGER_INITIALIZE_ELEMENT_STATUS</a>
+<a href="..\ntddchgr\ns-ntddchgr-_changer_initialize_element_status.md">CHANGER_INITIALIZE_ELEMENT_STATUS</a>
 </dt>
 <dt>
-<a href="storage.changerinitializeelementstatus">ChangerInitializeElementStatus</a>
+<a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

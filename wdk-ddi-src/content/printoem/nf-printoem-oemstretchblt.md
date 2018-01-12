@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMStretchBlt
+UID: NF:printoem.OEMStretchBlt
 title: OEMStretchBlt function
 author: windows-driver-content
 description: The OEMStretchBlt function provides stretching bit-block transfer capabilities between any combination of device-managed and GDI-managed surfaces.
@@ -7,7 +7,7 @@ old-location: print\oemstretchblt.htm
 old-project: print
 ms.assetid: 5a533a68-6bdb-45dc-b5d3-04fa8d3e7129
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMStretchBlt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

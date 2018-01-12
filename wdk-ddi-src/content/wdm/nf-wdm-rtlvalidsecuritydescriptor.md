@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.RtlValidSecurityDescriptor
+UID: NF:wdm.RtlValidSecurityDescriptor
 title: RtlValidSecurityDescriptor function
 author: windows-driver-content
 description: The RtlValidSecurityDescriptor routine checks a given security descriptor's validity.
@@ -7,7 +7,7 @@ old-location: kernel\rtlvalidsecuritydescriptor.htm
 old-project: kernel
 ms.assetid: 50d07154-a6d2-4b95-822f-33c0f37ece2f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlValidSecurityDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ BOOLEAN RtlValidSecurityDescriptor(
 
 ### -param SecurityDescriptor [in]
 
-Pointer to the <a href="kernel.security_descriptor">SECURITY_DESCRIPTOR</a> to be checked.
+Pointer to the <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> to be checked.
 
 
 ## -returns
@@ -64,7 +65,7 @@ Pointer to the <a href="kernel.security_descriptor">SECURITY_DESCRIPTOR</a> to b
 
 
 ## -remarks
-The routine checks the validity of an absolute-format security descriptor. To check the validity of a self-relative security descriptor, use the <a href="kernel.rtlvalidrelativesecuritydescriptor">RtlValidRelativeSecurityDescriptor</a> routine instead.
+The routine checks the validity of an absolute-format security descriptor. To check the validity of a self-relative security descriptor, use the <a href="..\wdm\nf-wdm-rtlvalidrelativesecuritydescriptor.md">RtlValidRelativeSecurityDescriptor</a> routine instead.
 
 
 ## -requirements
@@ -138,24 +139,24 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlcreatesecuritydescriptor">RtlCreateSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.rtllengthsecuritydescriptor">RtlLengthSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.rtlsetdaclsecuritydescriptor">RtlSetDaclSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.rtlvalidrelativesecuritydescriptor">RtlValidRelativeSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlvalidrelativesecuritydescriptor.md">RtlValidRelativeSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.security_descriptor">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlValidSecurityDescriptor routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlValidSecurityDescriptor routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

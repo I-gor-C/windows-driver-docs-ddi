@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveRTOutputStream.GetOutputStreamPresentationPosition
+UID: NF:portcls.IMiniportWaveRTOutputStream.GetOutputStreamPresentationPosition
 title: IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition method
 author: windows-driver-content
 description: Returns stream presentation information.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition method
@@ -55,7 +56,7 @@ NTSTATUS GetOutputStreamPresentationPosition(
 
 ### -param pPresentationPosition [out]
 
- pPresentationPosition returns a <a href="..\ksmedia\ns-ksmedia-ksaudio_presentation_position.md">KSAUDIO_PRESENTATION_POSITION</a> structure that represents a recent presentation position in the audio data stream. For more information, see <a href="audio.iminiportstreamaudioenginenode_getstreampresentationposition">IMiniportStreamAudioEngineNode::GetStreamPresentationPosition</a>.
+ pPresentationPosition returns a <a href="..\ksmedia\ns-ksmedia-ksaudio_presentation_position.md">KSAUDIO_PRESENTATION_POSITION</a> structure that represents a recent presentation position in the audio data stream. For more information, see <a href="https://msdn.microsoft.com/872A4445-8E0B-4804-ADDC-8CD9608E3EBF">IMiniportStreamAudioEngineNode::GetStreamPresentationPosition</a>.
 
 
 ## -returns

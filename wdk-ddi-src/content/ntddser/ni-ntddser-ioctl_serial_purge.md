@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_PURGE
+UID: NI:ntddser.IOCTL_SERIAL_PURGE
 title: IOCTL_SERIAL_PURGE
 author: windows-driver-content
 description: The IOCTL_SERIAL_PURGE request cancels the specified requests and deletes data from the specified buffers.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_PURGE IOCTL

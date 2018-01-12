@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGTRANSPORTVIDEOPARMS
+UID: NS:ksmedia.tagTRANSPORTVIDEOPARMS
 title: tagTRANSPORTVIDEOPARMS
 author: windows-driver-content
 description: The TRANSPORTVIDEOPARMS structure is defined but not presently used. It may be used in the future.
@@ -7,8 +7,8 @@ old-location: stream\transportvideoparms.htm
 old-project: stream
 ms.assetid: 14bc6133-78f1-4f25-8638-9348245180fa
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagTRANSPORTVIDEOPARMS, *PTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS, PTRANSPORTVIDEOPARMS
+ms.date: 1/9/2018
+ms.keywords: tagTRANSPORTVIDEOPARMS, *PTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PTRANSPORTVIDEOPARMS, TRANSPORTVIDEOPARMS
 ---
 
 # tagTRANSPORTVIDEOPARMS structure

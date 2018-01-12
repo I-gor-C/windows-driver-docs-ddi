@@ -1,14 +1,14 @@
 ---
-UID: NS.USBIOCTL._USB_PORT_CONNECTOR_PROPERTIES
+UID: NS:usbioctl._USB_PORT_CONNECTOR_PROPERTIES
 title: _USB_PORT_CONNECTOR_PROPERTIES
 author: windows-driver-content
 description: The USB_PORT_CONNECTOR_PROPERTIES structure is used with the IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES I/O control request to retrieve information about a port on a particular SuperSpeed hub.
 old-location: buses\usb_port_connector_properties.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 93818067-A7EC-4796-B80F-75ADD6315ADF
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USB_PORT_CONNECTOR_PROPERTIES, USB_PORT_CONNECTOR_PROPERTIES, PUSB_PORT_CONNECTOR_PROPERTIES, *PUSB_PORT_CONNECTOR_PROPERTIES
+ms.date: 1/4/2018
+ms.keywords: _USB_PORT_CONNECTOR_PROPERTIES, *PUSB_PORT_CONNECTOR_PROPERTIES, USB_PORT_CONNECTOR_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PUSB_PORT_CONNECTOR_PROPERTIES, USB_PORT_CONNECTOR_PROPERTIES
 req.product: Windows 10 or later.
 ---
 
@@ -72,7 +73,7 @@ The number of bytes required to hold the entire <b>USB_PORT_CONNECTOR_PROPERTIES
 
 ### -field UsbPortProperties
 
-The port properties. Upon completion of the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_port_connector_properties.md">IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES</a> request, <b>UsbPortProperties</b> contains a bitwise <b>OR</b> of one or more flags indicating the properties and capabilities of the port. The flags are defined in <a href="buses.usb_port_properties">USB_PORT_PROPERTIES</a>.
+The port properties. Upon completion of the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_port_connector_properties.md">IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES</a> request, <b>UsbPortProperties</b> contains a bitwise <b>OR</b> of one or more flags indicating the properties and capabilities of the port. The flags are defined in <a href="..\usbioctl\ns-usbioctl-_usb_port_properties.md">USB_PORT_PROPERTIES</a>.
 
 
 ### -field CompanionIndex
@@ -149,13 +150,13 @@ Header
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_port_connector_properties.md">IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES</a>
 </dt>
 <dt>
-<a href="buses.usb_port_connector_properties">USB_PORT_CONNECTOR_PROPERTIES</a>
+<a href="..\usbioctl\ns-usbioctl-_usb_port_connector_properties.md">USB_PORT_CONNECTOR_PROPERTIES</a>
 </dt>
 <dt>
-<a href="buses.usb_port_properties">USB_PORT_PROPERTIES</a>
+<a href="..\usbioctl\ns-usbioctl-_usb_port_properties.md">USB_PORT_PROPERTIES</a>
 </dt>
 <dt>
-<a href="buses.usb_hub_information_ex">USB_HUB_INFORMATION_EX</a>
+<a href="..\usbioctl\ns-usbioctl-_usb_hub_information_ex.md">USB_HUB_INFORMATION_EX</a>
 </dt>
 <dt>
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex_v2.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2</a>
@@ -165,5 +166,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20USB_PORT_CONNECTOR_PROPERTIES structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_PORT_CONNECTOR_PROPERTIES structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

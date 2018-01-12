@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.PoSetPowerState
+UID: NF:wdm.PoSetPowerState
 title: PoSetPowerState function
 author: windows-driver-content
 description: The PoSetPowerState routine notifies the system of a change in the device power state for a device.
@@ -7,7 +7,7 @@ old-location: kernel\posetpowerstate.htm
 old-project: kernel
 ms.assetid: 9fff319e-0428-4185-a792-d3842ab9feb8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PoSetPowerState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: See Remarks section.
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -58,17 +59,17 @@ POWER_STATE PoSetPowerState(
 
 ### -param DeviceObject [in]
 
-A pointer to the target <a href="kernel.device_object">DEVICE_OBJECT</a>.
+A pointer to the target <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 
 ### -param Type [in]
 
-Indicates a <a href="kernel.power_state_type">POWER_STATE_TYPE</a> value. Drivers must specify <b>DevicePowerState</b>.
+Indicates a <a href="..\wdm\ne-wdm-_power_state_type.md">POWER_STATE_TYPE</a> value. Drivers must specify <b>DevicePowerState</b>.
 
 
 ### -param State [in]
 
-Specifies the power state to be set. Drivers must specify a <a href="kernel.device_power_state">DEVICE_POWER_STATE</a> value.
+Specifies the power state to be set. Drivers must specify a <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a> value.
 
 
 ## -returns
@@ -78,7 +79,7 @@ On Windows 2000 and later versions of the operating system, <b>PoSetPowerState</
 ## -remarks
 <b>PoSetPowerState</b> notifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> of the new power state for a device. Each driver in a device stack (filter, function, and bus drivers) must call <b>PoSetPowerState</b> to inform the power manager of a change in the power state of its corresponding device object. For example:
 
-A driver calls this routine after receiving a device set-power request and before calling <a href="kernel.postartnextpowerirp">PoStartNextPowerIrp</a>. When handling a PnP <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request, the driver should call <b>PoSetPowerState</b> to notify the power manager that the device is in the D0 state.
+A driver calls this routine after receiving a device set-power request and before calling <a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>. When handling a PnP <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request, the driver should call <b>PoSetPowerState</b> to notify the power manager that the device is in the D0 state.
 
 If the device is powering down, the driver must call <b>PoSetPowerState</b> before leaving the D0 state. In addition, the driver must be able to process client requests before <b>PoSetPowerState</b> returns.
 
@@ -163,12 +164,12 @@ See Remarks section.
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
 </dt>
 <dt>
-<a href="kernel.postartnextpowerirp">PoStartNextPowerIrp</a>
+<a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoSetPowerState routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoSetPowerState routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

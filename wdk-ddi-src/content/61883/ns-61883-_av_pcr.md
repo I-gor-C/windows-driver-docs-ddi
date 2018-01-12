@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._AV_PCR
+UID: NS:61883._AV_PCR
 title: _AV_PCR
 author: windows-driver-content
 description: The AV_PCR structure specifies settings for an input or output plug.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: f6d3f95b-7484-4a6b-9b7e-69f6172b7a12
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _AV_PCR, PAV_PCR, AV_PCR, *PAV_PCR
+ms.keywords: _AV_PCR, AV_PCR, *PAV_PCR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: AV_PCR, *PAV_PCR
 ---
 
 # _AV_PCR structure

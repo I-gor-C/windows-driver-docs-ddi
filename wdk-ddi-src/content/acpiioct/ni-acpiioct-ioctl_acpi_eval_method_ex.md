@@ -1,5 +1,5 @@
 ---
-UID: NI.acpiioct.IOCTL_ACPI_EVAL_METHOD_EX
+UID: NI:acpiioct.IOCTL_ACPI_EVAL_METHOD_EX
 title: IOCTL_ACPI_EVAL_METHOD_EX
 author: windows-driver-content
 description: A driver for a device can use the IOCTL_ACPI_EVAL_METHOD_EX device control request to synchronously evaluate an ACPI control method that is supported by a child device in the namespace of the device.
@@ -7,8 +7,8 @@ old-location: acpi\ioctl_acpi_eval_method_ex.htm
 old-project: acpi
 ms.assetid: 5c8a1038-efc7-424a-8ef9-fd28d0dcb13c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS, PUNIT_ISOCH_PARAMS
+ms.date: 12/31/2017
+ms.keywords: _UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_EVAL_METHOD_EX IOCTL
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-A driver for a device can use the IOCTL_ACPI_EVAL_METHOD_EX device control request to synchronously evaluate an ACPI control method that is supported by a child device in the namespace of the device. The driver should call <a href="kernel.iobuilddeviceiocontrolrequest">IoBuildDeviceIoControlRequest</a> and pass the following input and output parameters to build this request. 
+A driver for a device can use the IOCTL_ACPI_EVAL_METHOD_EX device control request to synchronously evaluate an ACPI control method that is supported by a child device in the namespace of the device. The driver should call <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a> and pass the following input and output parameters to build this request. 
 
 
 
@@ -69,9 +70,9 @@ Set the <b>IoBuildDeviceIoControlRequest</b> input parameters as follows:
 ### -output-buffer
 Set the <i>IoBuildDeviceIoControlRequest</i> output parameters as follows:
 
-<i>OutputBuffer</i> supplies a pointer to an <a href="acpi.acpi_eval_output_buffer">ACPI_EVAL_OUTPUT_BUFFER</a> structure that contains the output arguments from the control method.
+<i>OutputBuffer</i> supplies a pointer to an <a href="..\acpiioct\ns-acpiioct-_acpi_eval_output_buffer_v1.md">ACPI_EVAL_OUTPUT_BUFFER</a> structure that contains the output arguments from the control method.
 
-<i>IoStatusBlock</i> is set to a pointer to an <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure.
+<i>IoStatusBlock</i> is set to a pointer to an <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure.
 
 
 ### -output-buffer-length
@@ -99,22 +100,22 @@ A driver for a device can use IOCTL_ACPI_EVAL_METHOD_EX to synchronously evaluat
 IOCTL_ACPI_EVAL_METHOD_EX supports the following types of input buffer structures:
 
 
-<a href="acpi.acpi_eval_input_buffer_ex">ACPI_EVAL_INPUT_BUFFER_EX</a>
+<a href="..\acpiioct\ns-acpiioct-_acpi_eval_input_buffer_v1_ex.md">ACPI_EVAL_INPUT_BUFFER_EX</a>
 
 
 
-<a href="acpi.acpi_eval_input_buffer_simple_integer_ex">ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX</a>
+<a href="..\acpiioct\ns-acpiioct-_acpi_eval_input_buffer_simple_integer_v1_ex.md">ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX</a>
 
 
 
-<a href="acpi.acpi_eval_input_buffer_simple_string_ex">ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX</a>
+<a href="..\acpiioct\ns-acpiioct-_acpi_eval_input_buffer_simple_string_v1_ex.md">ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX</a>
 
 
 
-<a href="acpi.acpi_eval_input_buffer_complex_ex">ACPI_EVAL_INPUT_BUFFER_COMPLEX_EX</a>
+<a href="..\acpiioct\ns-acpiioct-_acpi_eval_input_buffer_complex_v1_ex.md">ACPI_EVAL_INPUT_BUFFER_COMPLEX_EX</a>
 
 
-The output arguments from the control method are returned in the variable-length <a href="acpi.acpi_eval_output_buffer">ACPI_EVAL_OUTPUT_BUFFER</a> structure that is supplied by the <i>OutBuffer</i> pointer. The ACPI_EVAL_OUTPUT_BUFFER includes an array of variable-length <a href="acpi.acpi_method_argument">ACPI_METHOD_ARGUMENT</a> structures, each one of which returns an output argument.
+The output arguments from the control method are returned in the variable-length <a href="..\acpiioct\ns-acpiioct-_acpi_eval_output_buffer_v1.md">ACPI_EVAL_OUTPUT_BUFFER</a> structure that is supplied by the <i>OutBuffer</i> pointer. The ACPI_EVAL_OUTPUT_BUFFER includes an array of variable-length <a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a> structures, each one of which returns an output argument.
 
 For more information about how to synchronously evaluate control methods, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/evaluating-acpi-control-methods-synchronously">Evaluating ACPI Control Methods Synchronously</a>.
 
@@ -153,19 +154,19 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="acpi.acpi_eval_input_buffer_ex">ACPI_EVAL_INPUT_BUFFER_EX</a>
+<a href="..\acpiioct\ns-acpiioct-_acpi_eval_input_buffer_v1_ex.md">ACPI_EVAL_INPUT_BUFFER_EX</a>
 </dt>
 <dt>
-<a href="acpi.acpi_eval_input_buffer_complex_ex">ACPI_EVAL_INPUT_BUFFER_COMPLEX_EX</a>
+<a href="..\acpiioct\ns-acpiioct-_acpi_eval_input_buffer_complex_v1_ex.md">ACPI_EVAL_INPUT_BUFFER_COMPLEX_EX</a>
 </dt>
 <dt>
-<a href="acpi.acpi_eval_input_buffer_simple_integer_ex">ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX</a>
+<a href="..\acpiioct\ns-acpiioct-_acpi_eval_input_buffer_simple_integer_v1_ex.md">ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX</a>
 </dt>
 <dt>
-<a href="acpi.acpi_eval_input_buffer_simple_string_ex">ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX</a>
+<a href="..\acpiioct\ns-acpiioct-_acpi_eval_input_buffer_simple_string_v1_ex.md">ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX</a>
 </dt>
 <dt>
-<a href="acpi.acpi_eval_output_buffer">ACPI_EVAL_OUTPUT_BUFFER</a>
+<a href="..\acpiioct\ns-acpiioct-_acpi_eval_output_buffer_v1.md">ACPI_EVAL_OUTPUT_BUFFER</a>
 </dt>
 <dt>
 <a href="..\acpiioct\ni-acpiioct-ioctl_acpi_async_eval_method.md">IOCTL_ACPI_ASYNC_EVAL_METHOD</a>
@@ -181,5 +182,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20IOCTL_ACPI_EVAL_METHOD_EX control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [acpi\acpi]:%20IOCTL_ACPI_EVAL_METHOD_EX control code%20 RELEASE:%20(12/31/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

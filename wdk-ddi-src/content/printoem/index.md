@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:printoem
 ---
 
 # Printoem.h header
@@ -86,6 +86,7 @@ Printoem.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [OEMCUIPCALLBACK callback](nc-printoem-oemcuipcallback.md) | The OEMCUIPCALLBACK function type is used for defining callback functions that are specified by a user interface plug-in's IPrintOemUI |
 | [PFNGETINFO callback](nc-printoem-pfngetinfo.md) | The UNIFONTOBJ_GetInfo callback function is provided by the Unidrv driver so that rendering plug-ins can obtain font or glyph information. |
 
 ## Structures
@@ -96,7 +97,6 @@ Printoem.h contain these programming interfaces:
 | [OEMMEMORYUSAGE structure](ns-printoem-oemmemoryusage.md) | The OEMMEMORYUSAGE structure is used as an input parameter to a rendering plug-in's IPrintOemUni |
 | [_CUSTOMSIZEPARAM structure](ns-printoem-_customsizeparam.md) | The CUSTOMSIZEPARAM structure holds information pertaining to a single custom page size parameter for a printer. |
 | [_DEVOBJ structure](ns-printoem-_devobj.md) | The DEVOBJ structure is used as an input argument to several of a rendering plug-in's COM interface methods. |
-| [_DEVOBJ structure](ns-printoem-_devobj~r1.md) | The DEVOBJ structure is used as an input argument to several of a rendering plug-in's COM interface methods. |
 | [_DRVPROCS structure](ns-printoem-_drvprocs.md) | The DRVPROCS structure is obsolete and is not used with the COM interfaces for Microsoft printer drivers. |
 | [_FINVOCATION structure](ns-printoem-_finvocation.md) | The FINVOCATION structure is used as input to the IPrintOemUni |
 | [_GETINFO_FONTOBJ structure](ns-printoem-_getinfo_fontobj.md) | The GETINFO_FONTOBJ structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
@@ -106,7 +106,6 @@ Printoem.h contain these programming interfaces:
 | [_GETINFO_MEMORY structure](ns-printoem-_getinfo_memory.md) | The GETINFO_MEMORY structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
 | [_GETINFO_STDVAR structure](ns-printoem-_getinfo_stdvar.md) | The GETINFO_STDVAR structure is used as input to the UNIFONTOBJ_GetInfo callback function. |
 | [_OEMCUIPPARAM structure](ns-printoem-_oemcuipparam.md) | The OEMCUIPPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI |
-| [_OEMCUIPPARAM structure](ns-printoem-_oemcuipparam~r1.md) | The OEMCUIPPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI |
 | [_OEMDMPARAM structure](ns-printoem-_oemdmparam.md) | The OEMDMPARAM structure is used as an input parameter to the IPrintOemUI |
 | [_OEMUIOBJ structure](ns-printoem-_oemuiobj.md) | The OEMUIOBJ structure is used as an input argument to several of the methods exported by user interface plug-ins. |
 | [_OEMUIPROCS structure](ns-printoem-_oemuiprocs.md) | The OEMUIPROCS structure is obsolete.The OEMUIPROCS structure contains the address of the DrvGetDriverSetting and DrvUpdateUISetting functions that are exported by Microsoft printer drivers. |

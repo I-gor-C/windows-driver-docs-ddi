@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMPlgBlt
+UID: NF:printoem.OEMPlgBlt
 title: OEMPlgBlt function
 author: windows-driver-content
 description: The OEMPlgBlt function provides rotate bit-block transfer capabilities between combinations of device-managed and GDI-managed surfaces.
@@ -7,7 +7,7 @@ old-location: print\oemplgblt.htm
 old-project: print
 ms.assetid: c33a9592-8e1b-4028-bd34-72cc4885f17f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMPlgBlt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlAllocatePoolWithQuotaTag
+UID: NF:ntifs.FsRtlAllocatePoolWithQuotaTag
 title: FsRtlAllocatePoolWithQuotaTag macro
 author: windows-driver-content
 description: The FsRtlAllocatePoolWithQuotaTag routine allocates pool memory, charging quota against the current process.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlallocatepoolwithquotatag.htm
 old-project: ifsk
 ms.assetid: 241525fd-c21b-4c24-91a0-6a79df4faea7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlAllocatePoolWithQuotaTag
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL (see Remarks section)
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlAllocatePoolWithQuotaTag macro
@@ -152,18 +153,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exallocatepoolwithquotatag">ExAllocatePoolWithQuotaTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
 </dt>
 <dt>
-<a href="kernel.exfreepool">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlallocatepoolwithquota">FsRtlAllocatePoolWithQuota</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545659">FsRtlAllocatePoolWithQuota</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocatePoolWithQuotaTag routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocatePoolWithQuotaTag routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NC.video.PVIDEO_HW_GET_CHILD_DESCRIPTOR
+UID: NC:video.PVIDEO_HW_GET_CHILD_DESCRIPTOR
 title: PVIDEO_HW_GET_CHILD_DESCRIPTOR
 author: windows-driver-content
 description: HwVidGetVideoChildDescriptor returns a descriptor, a type, and an identification number for a particular child device of the display adapter.
@@ -7,8 +7,8 @@ old-location: display\hwvidgetvideochilddescriptor.htm
 old-project: display
 ms.assetid: 175030c1-95d9-4a3b-976c-16e04852cb91
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VHF_CONFIG, *PVHF_CONFIG, PVHF_CONFIG, VHF_CONFIG
+ms.date: 12/29/2017
+ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -69,7 +70,7 @@ Pointer to the miniport driver's per-adapter storage area. For more information,
 
 ### -param ChildEnumInfo [in]
 
-Is a <a href="display.video_child_enum_info">VIDEO_CHILD_ENUM_INFO</a> structure that describes the device being enumerated.
+Is a <a href="..\video\ns-video-_video_child_enum_info.md">VIDEO_CHILD_ENUM_INFO</a> structure that describes the device being enumerated.
 
 
 ### -param VideoChildType [out]
@@ -89,7 +90,7 @@ Pointer to a location in which the miniport driver returns the type of child bei
 <td>
 The child device is a monitor.
 
-If the miniport driver detects that the monitor has a DDC2-compliant <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> structure associated with it, the miniport driver should extract the EDID information from the monitor and return it in the buffer to which <i>pChildDescriptor</i> points. The miniport driver can more easily obtain the EDID from the monitor by calling <a href="display.videoportddcmonitorhelper">VideoPortDDCMonitorHelper</a>.
+If the miniport driver detects that the monitor has a DDC2-compliant <a href="wdkgloss.e#wdkgloss.edid#wdkgloss.edid"><i>EDID</i></a> structure associated with it, the miniport driver should extract the EDID information from the monitor and return it in the buffer to which <i>pChildDescriptor</i> points. The miniport driver can more easily obtain the EDID from the monitor by calling <a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a>.
 
 If the detected monitor is not DDC2-compliant, the miniport driver should not return anything in <i>pChildDescriptor</i>.
 
@@ -135,7 +136,7 @@ The miniport driver should return the device's PnP hardware identifier as a Unic
 
 ### -param pChildDescriptor [out]
 
-Pointer to a buffer in which the miniport driver can return data that identifies the device. The information returned depends on the child type specified in <i>VideoChildType</i>. The size of this buffer is specified by the video port driver in the <b>ChildDescriptorSize</b> member of <a href="display.video_child_enum_info">VIDEO_CHILD_ENUM_INFO</a>.
+Pointer to a buffer in which the miniport driver can return data that identifies the device. The information returned depends on the child type specified in <i>VideoChildType</i>. The size of this buffer is specified by the video port driver in the <b>ChildDescriptorSize</b> member of <a href="..\video\ns-video-_video_child_enum_info.md">VIDEO_CHILD_ENUM_INFO</a>.
 
 
 ### -param UId [out]
@@ -164,7 +165,7 @@ Is unused and must be set to zero.
 
 
 ## -remarks
-By default, <i>HwVidGetVideoChildDescriptor</i> is not called until after the device is started by <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>. To allow the enumeration of a device's children before the device is started, set the <b>AllowEarlyEnumeration</b> member of <a href="display.video_hw_initialization_data">VIDEO_HW_INITIALIZATION_DATA</a>. When <b>AllowEarlyEnumeration</b> is set, <i>HwVidGetVideoChildDescriptor</i> can be called at any time.
+By default, <i>HwVidGetVideoChildDescriptor</i> is not called until after the device is started by <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>. To allow the enumeration of a device's children before the device is started, set the <b>AllowEarlyEnumeration</b> member of <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>. When <b>AllowEarlyEnumeration</b> is set, <i>HwVidGetVideoChildDescriptor</i> can be called at any time.
 
 <i>HwVidGetVideoChildDescriptor</i> should do the following:
 
@@ -212,18 +213,18 @@ Header
 <a href="..\video\nc-video-pvideo_hw_power_set.md">HwVidSetPowerState</a>
 </dt>
 <dt>
-<a href="display.video_child_enum_info">VIDEO_CHILD_ENUM_INFO</a>
+<a href="..\video\ns-video-_video_child_enum_info.md">VIDEO_CHILD_ENUM_INFO</a>
 </dt>
 <dt>
-<a href="display.videoportddcmonitorhelper">VideoPortDDCMonitorHelper</a>
+<a href="..\video\nf-video-videoportddcmonitorhelper.md">VideoPortDDCMonitorHelper</a>
 </dt>
 <dt>
-<a href="display.videoportenumeratechildren">VideoPortEnumerateChildren</a>
+<a href="..\video\nf-video-videoportenumeratechildren.md">VideoPortEnumerateChildren</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_GET_CHILD_DESCRIPTOR callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_GET_CHILD_DESCRIPTOR callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSPROPERTY_CAMERACONTROL_S2
+UID: NS:ksmedia.KSPROPERTY_CAMERACONTROL_S2
 title: KSPROPERTY_CAMERACONTROL_S2
 author: windows-driver-content
 description: The KSPROPERTY_CAMERACONTROL_S2 structure describes filter-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time.
@@ -7,8 +7,8 @@ old-location: stream\ksproperty_cameracontrol_s2.htm
 old-project: stream
 ms.assetid: b0ea25c0-5b10-403f-8c61-7840fe062596
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSPROPERTY_CAMERACONTROL_S2, PKSPROPERTY_CAMERACONTROL_S2, KSPROPERTY_CAMERACONTROL_S2, *PKSPROPERTY_CAMERACONTROL_S2
+ms.date: 1/9/2018
+ms.keywords: KSPROPERTY_CAMERACONTROL_S2, *PKSPROPERTY_CAMERACONTROL_S2, KSPROPERTY_CAMERACONTROL_S2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSPROPERTY_CAMERACONTROL_S2, KSPROPERTY_CAMERACONTROL_S2
 ---
 
 # KSPROPERTY_CAMERACONTROL_S2 structure
@@ -59,7 +60,7 @@ typedef struct {
 
 ### -field Property
 
-Specifies an initialized <a href="stream.ksproperty">KSPROPERTY</a> structure that describes the property set, property ID, and request type. 
+Specifies an initialized <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property set, property ID, and request type. 
 
 
 ### -field Value1

@@ -1,5 +1,5 @@
 ---
-UID: NF.keyworddetectoroemadapter.IKeywordDetectorOemAdapter.ComputeAndAddUserModelData
+UID: NF:keyworddetectoroemadapter.IKeywordDetectorOemAdapter.ComputeAndAddUserModelData
 title: IKeywordDetectorOemAdapter::ComputeAndAddUserModelData method
 author: windows-driver-content
 description: The ComputeAndAddUserModelData method is used by the training user experience to compute the user-specific information relative to the user-independent keyword.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDID
 ---
 
 # IKeywordDetectorOemAdapter::ComputeAndAddUserModelData method
@@ -64,7 +65,7 @@ A pointer to the <b>IStream</b> object bound to model data. It is modified by th
 
 ### -param KeywordSelector [in]
 
-A <a href="audio.keywordselector">KEYWORDSELECTOR</a> struct that uniquely identifies this model.
+A <a href="..\keyworddetectoroemadapter\ns-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0003.md">KEYWORDSELECTOR</a> struct that uniquely identifies this model.
 
 
 ### -param KeywordEndBytePos [in]
@@ -155,7 +156,7 @@ IDL
 <a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
 </dt>
 <dt>
-<a href="audio.keywordselector">KEYWORDSELECTOR</a>
+<a href="..\keyworddetectoroemadapter\ns-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0003.md">KEYWORDSELECTOR</a>
 </dt>
 </dl>
  

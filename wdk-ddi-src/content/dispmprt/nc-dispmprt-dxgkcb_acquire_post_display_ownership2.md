@@ -1,5 +1,5 @@
 ---
-UID: NC.dispmprt.DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP2
+UID: NC:dispmprt.DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP2
 title: DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP2
 author: windows-driver-content
 description: Called by a display miniport driver to obtain the display information from the current power-on self-test (POST) display device or the previously running Windows Display Driver Model (WDDM) driver.
@@ -7,8 +7,8 @@ old-location: display\dxgkcb_acquire_post_display_ownership2.htm
 old-project: display
 ms.assetid: 923A2107-8F5E-4EF7-8C3C-4EFDE26A50F5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ---
 
 # DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP2 callback
@@ -77,7 +78,7 @@ A pointer to a DXGK_DISPLAY_OWNERSHIP_FLAGS structure that is allocated by the d
 
 ## -returns
 
-<a href="display.DxgkCbAcquirePostDisplayOwnership">DxgkCbAcquirePostDisplayOwnership</a> returns STATUS_SUCCESS if it succeeds. 
+<a href="https://msdn.microsoft.com/6454adb3-c958-467b-acbc-b8937b98cd57">DxgkCbAcquirePostDisplayOwnership</a> returns STATUS_SUCCESS if it succeeds. 
 
 
 ## -remarks

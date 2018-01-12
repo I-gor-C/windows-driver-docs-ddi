@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_BUS_RESET_NOTIFICATION
+UID: NS:1394._IRB_REQ_BUS_RESET_NOTIFICATION
 title: _IRB_REQ_BUS_RESET_NOTIFICATION
 author: windows-driver-content
 description: This structure contains the fields necessary for the 1394 bus driver to carry out a bus reset notification request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_BUS_RESET_NOTIFICATION
 ---
 
 # _IRB_REQ_BUS_RESET_NOTIFICATION structure

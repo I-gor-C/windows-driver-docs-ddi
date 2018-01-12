@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILGEOLOCATIONREQUESTINFO
+UID: NS:ntddrilapitypes.RILGEOLOCATIONREQUESTINFO
 title: RILGEOLOCATIONREQUESTINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgeolocationrequestinfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f3fa5212-66c1-45f8-a96f-78d1f2f01fe8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILGEOLOCATIONREQUESTINFO, LPRILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO, *LPRILGEOLOCATIONREQUESTINFO
+ms.date: 1/8/2018
+ms.keywords: RILGEOLOCATIONREQUESTINFO, *LPRILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO
 ---
 
 # RILGEOLOCATIONREQUESTINFO structure

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.RtlIoEncodeMemIoResource
+UID: NF:wdm.RtlIoEncodeMemIoResource
 title: RtlIoEncodeMemIoResource function
 author: windows-driver-content
 description: The RtlIoEncodeMemIoResource routine updates an IO_RESOURCE_DESCRIPTOR structure to describe a range of memory or I/O port addresses.
@@ -7,7 +7,7 @@ old-location: kernel\rtlioencodememioresource.htm
 old-project: kernel
 ms.assetid: b2f51d54-3fda-4cbf-a148-0572122ed9fa
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlIoEncodeMemIoResource
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>RtlIoEncodeMemIoResource</b> routine updates an <a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structure to describe a range of memory or I/O port addresses.
+The <b>RtlIoEncodeMemIoResource</b> routine updates an <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure to describe a range of memory or I/O port addresses.
 
 
 
@@ -61,7 +62,7 @@ NTSTATUS RtlIoEncodeMemIoResource(
 
 ### -param Descriptor [in]
 
-A pointer to the <a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structure to update.
+A pointer to the <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure to update.
 
 
 ### -param Type [in]
@@ -93,7 +94,7 @@ The maximum address that can be assigned to the device.
 <b>RtlIoEncodeMemIoResource</b> returns an NTSTATUS value. This routine might return one of the following values:
 <dl>
 <dt><b>STATUS_SUCCESS</b></dt>
-</dl>The <a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structure was updated.
+</dl>The <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure was updated.
 <dl>
 <dt><b>STATUS_UNSUCCESSFUL</b></dt>
 </dl>The specified value for <i>Length</i> or <i>Alignment</i> could not be encoded in an <b>IO_RESOURCE_DESCRIPTOR</b> structure.
@@ -191,15 +192,15 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a>
+<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="kernel.rtliodecodememioresource">RtlIoDecodeMemIoResource</a>
+<a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlIoEncodeMemIoResource routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlIoEncodeMemIoResource routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

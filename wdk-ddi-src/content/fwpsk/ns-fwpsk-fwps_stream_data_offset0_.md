@@ -1,13 +1,13 @@
 ---
-UID: NS.FWPSK.FWPS_STREAM_DATA_OFFSET0_
+UID: NS:fwpsk.FWPS_STREAM_DATA_OFFSET0_
 title: FWPS_STREAM_DATA_OFFSET0_
 author: windows-driver-content
 description: The FWPS_STREAM_DATA_OFFSET0 structure defines an offset into a portion of a data stream that is described by an FWPS_STREAM_DATA0 structure.Note  FWPS_STREAM_DATA_OFFSET0 is a specific version of FWPS_STREAM_DATA_OFFSET.
 old-location: netvista\fwps_stream_data_offset0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a6b60fa1-23ed-44dd-8300-c66d5f907993
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FWPS_STREAM_DATA_OFFSET0_, FWPS_STREAM_DATA_OFFSET0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_STREAM_DATA_OFFSET0
 ---
 
 # FWPS_STREAM_DATA_OFFSET0_ structure
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 The <b>FWPS_STREAM_DATA_OFFSET0</b> structure defines an offset into a portion of a data stream that is
   described by an 
-  <a href="netvista.fwps_stream_data0">FWPS_STREAM_DATA0</a> structure.
+  <a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a> structure.
 
 
 
@@ -63,14 +64,14 @@ typedef struct FWPS_STREAM_DATA_OFFSET0_ {
 ### -field netBufferList
 
 A pointer to the 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure in which the
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure in which the
      offset lies.
 
 
 ### -field netBuffer
 
 A pointer to the 
-     <a href="netvista.net_buffer">NET_BUFFER</a> structure in which the offset
+     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure in which the offset
      lies.
 
 
@@ -97,7 +98,7 @@ Reserved for system use. Callout drivers must not use this member.
 
 ## -remarks
 An FWPS_STREAM_DATA_OFFSET0 structure is contained within an 
-    <a href="netvista.fwps_stream_data0">FWPS_STREAM_DATA0</a> structure. The
+    <a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a> structure. The
     FWPS_STREAM_DATA_OFFSET0 structure specifies an offset into the data stream.
 
 The combination of the 
@@ -135,18 +136,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwps_stream_data0">FWPS_STREAM_DATA0</a>
+<a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FWPS_STREAM_DATA_OFFSET0 structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_STREAM_DATA_OFFSET0 structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlSetOwnerSecurityDescriptor
+UID: NF:ntifs.RtlSetOwnerSecurityDescriptor
 title: RtlSetOwnerSecurityDescriptor function
 author: windows-driver-content
 description: The RtlSetOwnerSecurityDescriptor routine sets the owner information of an absolute-format security descriptor. It replaces any owner information that is already present in the security descriptor.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlsetownersecuritydescriptor.htm
 old-project: ifsk
 ms.assetid: 43392c57-8fe9-4219-9f00-ac73c83c3abc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlSetOwnerSecurityDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
 req.irql: < DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlSetOwnerSecurityDescriptor function
@@ -62,7 +63,7 @@ Pointer to the SECURITY_DESCRIPTOR structure whose owner is to be set. <b>RtlSet
 
 ### -param Owner [in, optional]
 
-Pointer to a security identifier (<a href="ifsk.sid">SID</a>) structure for the security descriptor's new primary owner. This pointer, not the SID structure itself, is copied into the security descriptor. If this parameter is <b>NULL</b>, <b>RtlSetOwnerSecurityDescriptor</b> clears the security descriptor's owner information. This marks the security descriptor as having no owner. 
+Pointer to a security identifier (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>) structure for the security descriptor's new primary owner. This pointer, not the SID structure itself, is copied into the security descriptor. If this parameter is <b>NULL</b>, <b>RtlSetOwnerSecurityDescriptor</b> clears the security descriptor's owner information. This marks the security descriptor as having no owner. 
 
 
 ### -param OwnerDefaulted [in, optional]
@@ -151,36 +152,36 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlcreatesecuritydescriptor">RtlCreateSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlcreatesecuritydescriptor.md">RtlCreateSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="ifsk.rtlcreatesecuritydescriptorrelative">RtlCreateSecurityDescriptorRelative</a>
+<a href="..\ntifs\nf-ntifs-rtlcreatesecuritydescriptorrelative.md">RtlCreateSecurityDescriptorRelative</a>
 </dt>
 <dt>
-<a href="kernel.rtllengthsecuritydescriptor">RtlLengthSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtllengthsecuritydescriptor.md">RtlLengthSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.rtlsetdaclsecuritydescriptor">RtlSetDaclSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlsetdaclsecuritydescriptor.md">RtlSetDaclSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.rtlvalidsecuritydescriptor">RtlValidSecurityDescriptor</a>
+<a href="..\wdm\nf-wdm-rtlvalidsecuritydescriptor.md">RtlValidSecurityDescriptor</a>
 </dt>
 <dt>
-<a href="kernel.seassignsecurity">SeAssignSecurity</a>
+<a href="..\wdm\nf-wdm-seassignsecurity.md">SeAssignSecurity</a>
 </dt>
 <dt>
-<a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="ifsk.security_descriptor_control">SECURITY_DESCRIPTOR_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556619">SECURITY_DESCRIPTOR_CONTROL</a>
 </dt>
 <dt>
-<a href="ifsk.sid">SID</a>
+<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlSetOwnerSecurityDescriptor routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlSetOwnerSecurityDescriptor routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

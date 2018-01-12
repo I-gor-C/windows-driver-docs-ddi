@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:pepfx
 ---
 
 # Pepfx.h header
@@ -34,10 +34,6 @@ Pepfx.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PEPCALLBACKNOTIFYACPI callback](nc-pepfx-pepcallbacknotifyacpi.md) | An AcceptAcpiNotification event callback routine handles ACPI notifications from the Windows power management framework (PoFx). |
-| [PEPCALLBACKNOTIFYDPM callback](nc-pepfx-pepcallbacknotifydpm.md) | An AcceptDeviceNotification event callback routine handles device power management (DPM) notifications from the Windows power management framework (PoFx). |
-| [PEPCALLBACKNOTIFYPPM callback](nc-pepfx-pepcallbacknotifyppm.md) | An AcceptProcessorNotification event callback routine handles processor power management (PPM) notifications from the Windows power management framework (PoFx). |
-| [PEPCALLBACKPOWERONCRASHDUMPDEVICE callback](nc-pepfx-pepcallbackpoweroncrashdumpdevice.md) | The PowerOnDumpDeviceCallback callback routine turns on the crash-dump device. |
 | [POFXCALLBACKCRITICALRESOURCE callback](nc-pepfx-pofxcallbackcriticalresource.md) | The TransitionCriticalResource routine changes the active/inactive state of a core system component. |
 | [POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS callback](nc-pepfx-pofxcallbackenumerateunmaskedinterrupts.md) | The EnumerateUnmaskedInterrupts routine enumerates interrupt sources whose interrupts are unmasked and enabled. |
 | [POFXCALLBACKPLATFORMIDLEVETO callback](nc-pepfx-pofxcallbackplatformidleveto.md) | The PlatformIdleVeto routine increments or decrements the veto count for a veto code for a platform idle state. |

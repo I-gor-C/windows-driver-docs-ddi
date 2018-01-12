@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltIsVolumeSnapshot
+UID: NF:fltkernel.FltIsVolumeSnapshot
 title: FltIsVolumeSnapshot function
 author: windows-driver-content
 description: The FltIsVolumeSnapshot routine determines whether a volume or minifilter driver instance is attached to a snapshot volume.
@@ -7,7 +7,7 @@ old-location: ifsk\fltisvolumesnapshot.htm
 old-project: ifsk
 ms.assetid: eb35e108-577e-4897-8f8c-f3c54753c1f7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltIsVolumeSnapshot
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fltmgr.lib
 req.dll: FltMgr.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltIsVolumeSnapshot function

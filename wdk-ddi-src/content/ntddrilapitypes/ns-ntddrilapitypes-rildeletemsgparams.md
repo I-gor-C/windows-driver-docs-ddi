@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILDELETEMSGPARAMS
+UID: NS:ntddrilapitypes.RILDELETEMSGPARAMS
 title: RILDELETEMSGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildeletemsgparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e87104d2-96e4-4840-8609-8a75247a039a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILDELETEMSGPARAMS, RILDELETEMSGPARAMS, LPRILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILDELETEMSGPARAMS, RILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS
 ---
 
 # RILDELETEMSGPARAMS structure

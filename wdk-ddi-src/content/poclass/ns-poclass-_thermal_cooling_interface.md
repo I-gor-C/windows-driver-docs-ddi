@@ -1,5 +1,5 @@
 ---
-UID: NS.POCLASS._THERMAL_COOLING_INTERFACE
+UID: NS:poclass._THERMAL_COOLING_INTERFACE
 title: _THERMAL_COOLING_INTERFACE
 author: windows-driver-content
 description: The THERMAL_COOLING_INTERFACE structure enables the operating system to control the thermal management settings of a device.
@@ -7,8 +7,8 @@ old-location: kernel\thermal_cooling_interface.htm
 old-project: kernel
 ms.assetid: 1636CA34-7F5F-4690-B2AB-2882F0E91D74
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _THERMAL_COOLING_INTERFACE, *PTHERMAL_COOLING_INTERFACE, THERMAL_COOLING_INTERFACE, PTHERMAL_COOLING_INTERFACE
+ms.date: 1/4/2018
+ms.keywords: _THERMAL_COOLING_INTERFACE, THERMAL_COOLING_INTERFACE, *PTHERMAL_COOLING_INTERFACE, THERMAL_DEVICE_INTERFACE, *PTHERMAL_DEVICE_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Called at PASSIVE_LEVEL.
+req.irql: 
+req.typenames: THERMAL_COOLING_INTERFACE, *PTHERMAL_COOLING_INTERFACE
 ---
 
 # _THERMAL_COOLING_INTERFACE structure
@@ -77,12 +78,12 @@ A pointer to interface-specific context information. During a callback to any of
 
 ### -field InterfaceReference
 
- A pointer to an <a href="kernel.interfacereference">InterfaceReference</a> routine that increments the interface's reference count.
+ A pointer to an <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a> routine that increments the interface's reference count.
 
 
 ### -field InterfaceDereference
 
-A pointer to an <a href="kernel.interfacedereference">InterfaceDereference</a> routine that decrements the interface's reference count.
+A pointer to an <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a> routine that decrements the interface's reference count.
 
 
 ### -field Flags
@@ -101,11 +102,11 @@ A pointer to an <a href="..\poclass\nc-poclass-device_passive_cooling.md">Passiv
 
 
 ## -remarks
-The <b>THERMAL_COOLING_INTERFACE</b> structure is an extension of the <a href="kernel.interface">INTERFACE</a> structure.
+The <b>THERMAL_COOLING_INTERFACE</b> structure is an extension of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure.
 
 Starting with Windows 8, the operating system calls the routines pointed to by the <b>THERMAL_COOLING_INTERFACE</b> structure to control the thermal levels of the devices in a hardware platform. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh698236">Device-Level Thermal Management</a>.
 
-All implementations of the <a href="kernel.guid_thermal_cooling_interface">GUID_THERMAL_COOLING_INTERFACE</a> driver interface must supply <i>InterfaceReference</i> and <i>InterfaceDereference</i> routines. In addition, an implementation must supply either an <i>ActiveCooling</i> routine or a <i>PassiveCooling</i> routine, and can supply both.
+All implementations of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh698265">GUID_THERMAL_COOLING_INTERFACE</a> driver interface must supply <i>InterfaceReference</i> and <i>InterfaceDereference</i> routines. In addition, an implementation must supply either an <i>ActiveCooling</i> routine or a <i>PassiveCooling</i> routine, and can supply both.
 
 The driver for a device that provides an active cooling function (for example, a fan) implements an <i>ActiveCooling</i> routine. The operating system calls this routine to engage and disengage the active cooling function. Initially, before the first call to this routine, the device is configured so that the active cooling function is disengaged (turned off).
 
@@ -113,7 +114,7 @@ The driver for a device that provides a passive cooling function implements a <i
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh698271">Passive and Active Cooling Modes</a>.
 
-When a device driver receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> request for the GUID_THERMAL_COOLING_INTERFACE driver interface, the input parameters for this request are contained in the <b>Parameters.QueryInterface</b> member of the <a href="kernel.io_stack_location">IO_STACK_LOCATION</a> structure. The <b>Size</b> and <b>Version</b> input parameters specify which version of the interface is being requested. If the device driver that handles this request supports the specified version, this driver should set the <b>Size</b> and <b>Version</b> members of the <b>THERMAL_COOLING_INTERFACE</b> structure to the same values as the <b>Size</b> and <b>Version</b> input parameters. A device driver that does not support the specified interface version should complete the request with status code STATUS_NOT_SUPPORTED.
+When a device driver receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> request for the GUID_THERMAL_COOLING_INTERFACE driver interface, the input parameters for this request are contained in the <b>Parameters.QueryInterface</b> member of the <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure. The <b>Size</b> and <b>Version</b> input parameters specify which version of the interface is being requested. If the device driver that handles this request supports the specified version, this driver should set the <b>Size</b> and <b>Version</b> members of the <b>THERMAL_COOLING_INTERFACE</b> structure to the same values as the <b>Size</b> and <b>Version</b> input parameters. A device driver that does not support the specified interface version should complete the request with status code STATUS_NOT_SUPPORTED.
 
 
 ## -requirements
@@ -147,19 +148,19 @@ Header
 <a href="..\poclass\nc-poclass-device_active_cooling.md">ActiveCooling</a>
 </dt>
 <dt>
-<a href="kernel.guid_thermal_cooling_interface">GUID_THERMAL_COOLING_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh698265">GUID_THERMAL_COOLING_INTERFACE</a>
 </dt>
 <dt>
-<a href="kernel.interface">INTERFACE</a>
+<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 </dt>
 <dt>
-<a href="kernel.interfacedereference">InterfaceDereference</a>
+<a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>
 </dt>
 <dt>
-<a href="kernel.interfacereference">InterfaceReference</a>
+<a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>
 </dt>
 <dt>
-<a href="kernel.io_stack_location">IO_STACK_LOCATION</a>
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
@@ -172,5 +173,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20THERMAL_COOLING_INTERFACE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20THERMAL_COOLING_INTERFACE structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

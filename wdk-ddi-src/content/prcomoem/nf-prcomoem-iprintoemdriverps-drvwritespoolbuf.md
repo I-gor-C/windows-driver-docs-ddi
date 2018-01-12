@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemDriverPS.DrvWriteSpoolBuf
+UID: NF:prcomoem.IPrintOemDriverPS.DrvWriteSpoolBuf
 title: IPrintOemDriverPS::DrvWriteSpoolBuf method
 author: windows-driver-content
 description: The IPrintOemDriverPS::DrvWriteSpoolBuf method is provided by the Pscript5 driver so that rendering plug-ins can send printer data to the spooler.
@@ -7,7 +7,7 @@ old-location: print\iprintoemdriverps_drvwritespoolbuf.htm
 old-project: print
 ms.assetid: 91eb36b3-ea05-4a5e-8bba-47c262a4fa4a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemDriverPS, IPrintOemDriverPS::DrvWriteSpoolBuf, DrvWriteSpoolBuf
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ HRESULT DrvWriteSpoolBuf(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param pBuffer 

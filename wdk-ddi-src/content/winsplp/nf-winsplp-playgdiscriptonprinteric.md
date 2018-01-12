@@ -1,5 +1,5 @@
 ---
-UID: NF.winsplp.PlayGdiScriptOnPrinterIC
+UID: NF:winsplp.PlayGdiScriptOnPrinterIC
 title: PlayGdiScriptOnPrinterIC function
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\playgdiscriptonprinteric.htm
 old-project: print
 ms.assetid: DB5FCF40-77C2-4741-9E6B-77A9CD98E29A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: PlayGdiScriptOnPrinterIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: NOTIFICATION_CONFIG_FLAGS
 req.product: Windows 10 or later.
 ---
 

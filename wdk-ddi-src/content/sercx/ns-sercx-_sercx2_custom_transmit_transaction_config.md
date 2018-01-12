@@ -1,5 +1,5 @@
 ---
-UID: NS.SERCX._SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG
+UID: NS:sercx._SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG
 title: _SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG
 author: windows-driver-content
 description: The SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG structure contains information that version 2 of the serial framework extension (SerCx2) uses to configure a new custom-transmit-transaction object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG, *PSERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ typedef struct _SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG {
 
 ### -field Size
 
-The size, in bytes, of this structure. The <a href="serports.sercx2customtransmittransactioncreate">SerCx2CustomTransmitTransactionCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
 
 
 ### -field EvtSerCx2CustomTransmitTransactionInitialize
@@ -78,7 +79,7 @@ A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_custom
 
 
 ## -remarks
-The <a href="serports.sercx2customtransmittransactioncreate">SerCx2CustomTransmitTransactionCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomTransmitTransactionInitialize</b>, call the <a href="serports.sercx2_custom_transmit_transaction_config_init">SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT</a> function to initialize this structure.
+The <a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomTransmitTransactionInitialize</b>, call the <a href="..\sercx\nf-sercx-sercx2_custom_transmit_transaction_config_init.md">SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT</a> function to initialize this structure.
 
 
 ## -requirements
@@ -118,10 +119,10 @@ Header
 <a href="..\sercx\nc-sercx-evt_sercx2_custom_transmit_transaction_start.md">EvtSerCx2CustomTransmitTransactionStart</a>
 </dt>
 <dt>
-<a href="serports.sercx2_custom_transmit_transaction_config_init">SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx2_custom_transmit_transaction_config_init.md">SERCX2_CUSTOM_TRANSMIT_TRANSACTION_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="serports.sercx2customtransmittransactioncreate">SerCx2CustomTransmitTransactionCreate</a>
+<a href="..\sercx\nf-sercx-sercx2customtransmittransactioncreate.md">SerCx2CustomTransmitTransactionCreate</a>
 </dt>
 </dl>
  

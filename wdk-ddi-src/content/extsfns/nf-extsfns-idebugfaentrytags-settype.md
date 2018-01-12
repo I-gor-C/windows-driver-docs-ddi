@@ -1,13 +1,13 @@
 ---
-UID: NF.extsfns.IDebugFAEntryTags.SetType
+UID: NF:extsfns.IDebugFAEntryTags.SetType
 title: IDebugFAEntryTags::SetType method
 author: windows-driver-content
 description: The SetType method sets the data type that is associated with a tag in a DebugFailureAnalysisTags object.
 old-location: debugger\idebugfaentrytags_settype.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: F507864B-B20C-4F71-B068-802780243106
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugFAEntryTags, IDebugFAEntryTags::SetType, SetType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 # IDebugFAEntryTags::SetType method
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>SetType</b> method sets the data type that is associated with a tag in a <a href="debugger.idebugfaentrytags">DebugFailureAnalysisTags</a> object.
+The <b>SetType</b> method sets the data type that is associated with a tag in a <a href="..\extsfns\nn-extsfns-idebugfaentrytags.md">DebugFailureAnalysisTags</a> object.
 
 
 
@@ -107,7 +108,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="debugger.idebugfaentrytags">IDebugFAEntryTags</a>
+<a href="..\extsfns\nn-extsfns-idebugfaentrytags.md">IDebugFAEntryTags</a>
 </dt>
 <dt>
 <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
@@ -116,15 +117,15 @@ Header
 <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
 </dt>
 <dt>
-<a href="debugger.idebugfaentrytags_gettype">GetType</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj991813">GetType</a>
 </dt>
 <dt>
-<a href="debugger._efn_analyze">_EFN_Analyze</a>
+<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugFAEntryTags::SetType method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugFAEntryTags::SetType method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

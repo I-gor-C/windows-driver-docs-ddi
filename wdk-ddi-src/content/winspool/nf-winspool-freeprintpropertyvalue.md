@@ -1,5 +1,5 @@
 ---
-UID: NF.winspool.FreePrintPropertyValue
+UID: NF:winspool.FreePrintPropertyValue
 title: FreePrintPropertyValue function
 author: windows-driver-content
 description: Frees the value that is retrieved using GetJobNamedPropertyValue function.
@@ -7,7 +7,7 @@ old-location: print\freeprintpropertyvalue.htm
 old-project: print
 ms.assetid: 38B760D9-CB6E-45AD-A83F-3C26D1B31A30
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FreePrintPropertyValue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: WinSpool.lib
 req.dll: Spoolss.dll; WinSpool.drv
 req.irql: 
+req.typenames: BIDI_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Frees the value that is retrieved using <a href="print.getjobnamedpropertyvalue">GetJobNamedPropertyValue</a> function. 
+Frees the value that is retrieved using <a href="..\winspool\nf-winspool-getjobnamedpropertyvalue.md">GetJobNamedPropertyValue</a> function. 
 
 
 
@@ -57,7 +58,7 @@ DWORD WINAPI FreePrintPropertyValue(
 
 ### -param pValue [in, out]
 
-Pointer to <b>PrintPropertyValue</b> structure that is returned from <a href="print.getjobnamedpropertyvalue">GetJobNamedPropertyValue</a>. 
+Pointer to <b>PrintPropertyValue</b> structure that is returned from <a href="..\winspool\nf-winspool-getjobnamedpropertyvalue.md">GetJobNamedPropertyValue</a>. 
 
 
 

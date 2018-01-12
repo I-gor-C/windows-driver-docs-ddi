@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_PIN_DESC
+UID: NS:wwan._WWAN_PIN_DESC
 title: _WWAN_PIN_DESC
 author: windows-driver-content
 description: The WWAN_PIN_DESC structure represents the description or current status for a Personal Identification Number (PIN).
 old-location: netvista\wwan_pin_desc.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a88f56eb-b527-4c7c-8f59-650dd10c671e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_PIN_DESC, *PWWAN_PIN_DESC, PWWAN_PIN_DESC, WWAN_PIN_DESC
+ms.date: 1/8/2018
+ms.keywords: _WWAN_PIN_DESC, WWAN_PIN_DESC, *PWWAN_PIN_DESC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WWAN_PIN_DESC, *PWWAN_PIN_DESC
 req.product: Windows 10 or later.
 ---
 
@@ -115,18 +116,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_pin_mode">WWAN_PIN_MODE</a>
+<a href="..\wwan\ne-wwan-_wwan_pin_mode.md">WWAN_PIN_MODE</a>
 </dt>
 <dt>
-<a href="netvista.wwan_pin_format">WWAN_PIN_FORMAT</a>
+<a href="..\wwan\ne-wwan-_wwan_pin_format.md">WWAN_PIN_FORMAT</a>
 </dt>
 <dt>
-<a href="netvista.wwan_pin_list">WWAN_PIN_LIST</a>
+<a href="..\wwan\ns-wwan-_wwan_pin_list.md">WWAN_PIN_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_PIN_DESC structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PIN_DESC structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.wia_lh.IWiaTransferCallback.TransferCallback
+UID: NF:wia_lh.IWiaTransferCallback.TransferCallback
 title: IWiaTransferCallback::TransferCallback method
 author: windows-driver-content
 description: The IWiaTransferCallback::TransferCallback method is implemented by an image processing filter. It is called by the WIA service as a result of an application calling IWiaTransfer::Download or the preview component's IWiaPreview::GetNewPreview.
 old-location: image\iwiatransfercallback_transfercallback.htm
-old-project: Image
+old-project: image
 ms.assetid: dc6c2057-9617-4c69-ac79-2a8f910a1ee2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaTransferCallback, IWiaTransferCallback::TransferCallback, TransferCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBMP_IMAGE_INFO, BMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 

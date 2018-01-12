@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:fwpsk
 ---
 
 # Fwpsk.h header
 
 ## -description
 
-This header is used by NetVista. For more information, see
-- [NetVista](../_NetVista/index.md)
+This header is used by Networking drivers for Windows Vista and later. For more information, see
+- [Networking drivers for Windows Vista and later](../_netvista/index.md)
 
 Fwpsk.h contain these programming interfaces:
 
@@ -124,14 +124,6 @@ Fwpsk.h contain these programming interfaces:
 | [FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_ structure](ns-fwpsk-fwps_vswitch_event_dispatch_table0_.md) | The FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 structure specifies a callout driver-supplied virtual switch event dispatch table.Note  FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 is a specific version of FWPS_VSWITCH_EVENT_DISPATCH_TABLE. |
 | [_FWPS_BIND_REQUEST0 structure](ns-fwpsk-_fwps_bind_request0.md) | The FWPS_BIND_REQUEST0 structure defines modifiable data for the FWPM_LAYER_ALE_AUTH_BIND_REDIRECT_V4 and FWPM_LAYER_ALE_AUTH_BIND_REDIRECT_V6 layers. |
 | [_FWPS_CONNECT_REQUEST0 structure](ns-fwpsk-_fwps_connect_request0.md) | The FWPS_CONNECT_REQUEST0 structure defines modifiable data for the FWPM_LAYER_ALE_AUTH_CONNECT_REDIRECT_V4 and FWPM_LAYER_ALE_AUTH_CONNECT_REDIRECT_V6 layers. |
-| [_NDIS_SWITCH_NIC_ARRAY structure](ns-fwpsk-_ndis_switch_nic_array.md) | The NDIS_SWITCH_NIC_ARRAY structure specifies an array of network adapter configuration parameters. |
-| [_NDIS_SWITCH_NIC_PARAMETERS structure](ns-fwpsk-_ndis_switch_nic_parameters.md) | The NDIS_SWITCH_NIC_PARAMETERS structure specifies the configuration parameters for a network adapter (NIC) that is connected to a Hyper-V extensible switch port. |
-| [_NDIS_SWITCH_NIC_SAVE_STATE structure](ns-fwpsk-_ndis_switch_nic_save_state.md) | The NDIS_SWITCH_NIC_SAVE_STATE structure specifies the run-time state information for a Hyper-V extensible switch port. The extensible switch extension uses this structure to save or restore run-time port information. |
-| [_NDIS_SWITCH_PARAMETERS structure](ns-fwpsk-_ndis_switch_parameters.md) | The NDIS_SWITCH_PARAMETERS structure contains the configuration data for a Hyper-V extensible switch. |
-| [_NDIS_SWITCH_PORT_ARRAY structure](ns-fwpsk-_ndis_switch_port_array.md) | The NDIS_SWITCH_PORT_ARRAY structure specifies an array of port configuration parameters. Each element in the array specifies the parameters for a Hyper-V extensible switch port. Each element is formatted as an NDIS_SWITCH_PORT_PARAMETERS structure. |
-| [_NDIS_SWITCH_PORT_PARAMETERS structure](ns-fwpsk-_ndis_switch_port_parameters.md) | The NDIS_SWITCH_PORT_PARAMETERS structure contains the configuration data for a Hyper-V extensible switch port. |
-| [_NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS structure](ns-fwpsk-_ndis_switch_port_property_delete_parameters.md) | The NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS structure specifies the parameters for a Hyper-V extensible switch port policy property that will be deleted. |
-| [_NDIS_SWITCH_PORT_PROPERTY_PARAMETERS structure](ns-fwpsk-_ndis_switch_port_property_parameters.md) | The NDIS_SWITCH_PORT_PROPERTY_PARAMETERS structure specifies the parameters for a policy property of a Hyper-V extensible switch port. |
 
 ## Enumerations
 

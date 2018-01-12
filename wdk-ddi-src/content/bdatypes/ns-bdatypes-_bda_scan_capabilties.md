@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_SCAN_CAPABILTIES
+UID: NS:bdatypes._BDA_SCAN_CAPABILTIES
 title: _BDA_SCAN_CAPABILTIES
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bda_scan_capabilties.htm
 old-project: stream
 ms.assetid: AB97C5AC-E5B8-4C2B-ADA1-73E27E4B81D5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_SCAN_CAPABILTIES, PBDA_SCAN_CAPABILTIES, *PBDA_SCAN_CAPABILTIES, BDA_SCAN_CAPABILTIES
+ms.date: 1/9/2018
+ms.keywords: _BDA_SCAN_CAPABILTIES, *PBDA_SCAN_CAPABILTIES, BDA_SCAN_CAPABILTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PBDA_SCAN_CAPABILTIES, BDA_SCAN_CAPABILTIES
 ---
 
 # _BDA_SCAN_CAPABILTIES structure

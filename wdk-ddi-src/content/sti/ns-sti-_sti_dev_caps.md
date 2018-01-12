@@ -1,14 +1,14 @@
 ---
-UID: NS.STI._STI_DEV_CAPS
+UID: NS:sti._STI_DEV_CAPS
 title: _STI_DEV_CAPS
 author: windows-driver-content
 description: The STI_DEV_CAPS structure is used as a parameter to the IStiDevice::GetCapabilities method. It is also a member of the STI_DEVICE_INFORMATION and STI_WIA_DEVICE_INFORMATION structures.
 old-location: image\sti_dev_caps.htm
-old-project: Image
+old-project: image
 ms.assetid: 99e0f896-19d2-4895-8b01-deaf30ec5fe9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _STI_DEV_CAPS, PSTI_DEV_CAPS, *PSTI_DEV_CAPS, STI_DEV_CAPS
+ms.date: 1/10/2018
+ms.keywords: _STI_DEV_CAPS, STI_DEV_CAPS, *PSTI_DEV_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STI_DEV_CAPS, *PSTI_DEV_CAPS
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The STI_DEV_CAPS structure is used as a parameter to the <a href="image.istidevice_getcapabilities">IStiDevice::GetCapabilities</a> method. It is also a member of the <a href="image.sti_device_information">STI_DEVICE_INFORMATION</a> and <a href="image.sti_wia_device_information">STI_WIA_DEVICE_INFORMATION</a> structures.
+The STI_DEV_CAPS structure is used as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543745">IStiDevice::GetCapabilities</a> method. It is also a member of the <a href="..\sti\ns-sti-_sti_device_informationw.md">STI_DEVICE_INFORMATION</a> and <a href="..\sti\ns-sti-_sti_wia_device_informationw.md">STI_WIA_DEVICE_INFORMATION</a> structures.
 
 
 
@@ -81,7 +82,7 @@ The still image server will generate a <b>GUID_DeviceArrivedLaunch</b> event whe
 
 ### -field STI_GENCAP_NOTIFICATIONS
 
-The device supports event notifications (either asynchronously or through polling), and the device can be subscribed to (see <a href="image.istidevice_subscribe">IStiDevice::Subscribe</a>).
+The device supports event notifications (either asynchronously or through polling), and the device can be subscribed to (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543768">IStiDevice::Subscribe</a>).
 
 </dd>
 </dl>
@@ -90,7 +91,7 @@ The device supports event notifications (either asynchronously or through pollin
 
 ### -field STI_GENCAP_POLLING_NEEDED
 
-The device is not capable of issuing asynchronous notifications; polling of the device is required (see <a href="image.istidevice_getstatus">IStiDevice::GetStatus</a>).
+The device is not capable of issuing asynchronous notifications; polling of the device is required (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543752">IStiDevice::GetStatus</a>).
 
 </dd>
 </dl>

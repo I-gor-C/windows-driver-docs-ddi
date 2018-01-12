@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltPrepareComplete
+UID: NF:fltkernel.FltPrepareComplete
 title: FltPrepareComplete function
 author: windows-driver-content
 description: The FltPrepareComplete routine acknowledges a TRANSACTION_NOTIFY_PREPARE notification.
@@ -7,7 +7,7 @@ old-location: ifsk\fltpreparecomplete.htm
 old-project: ifsk
 ms.assetid: 5b6322a3-3813-4ca8-a966-d6b8bddbe794
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltPrepareComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltPrepareComplete function
@@ -86,17 +87,17 @@ The minifilter driver's <i>TransactionNotificationCallback</i> routine performs 
 
 The minifilter driver's <i>TransactionNotificationCallback</i> routine posts any needed processing to a worker thread and returns STATUS_PENDING. After performing the processing asynchronously, the minifilter driver's work routine must call <b>FltPrepareComplete</b> to indicate that it has finished this processing. If the minifilter driver's work routine does not call <b>FltPrepareComplete</b>, the transaction prepare operation cannot be completed by the kernel transaction manager. 
 
-To register a <i>TransactionNotificationCallback</i> routine, a minifilter driver stores the address of a routine of type <a href="..\fltkernel\nc-fltkernel-pflt_transaction_notification_callback.md">PFLT_TRANSACTION_NOTIFICATION_CALLBACK</a> in the <b>TransactionNotificationCallback</b> member of the <a href="ifsk.flt_registration">FLT_REGISTRATION</a> structure that the minifilter driver passes as the <i>Registration</i> parameter of <a href="ifsk.fltregisterfilter">FltRegisterFilter</a>. 
+To register a <i>TransactionNotificationCallback</i> routine, a minifilter driver stores the address of a routine of type <a href="..\fltkernel\nc-fltkernel-pflt_transaction_notification_callback.md">PFLT_TRANSACTION_NOTIFICATION_CALLBACK</a> in the <b>TransactionNotificationCallback</b> member of the <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a> structure that the minifilter driver passes as the <i>Registration</i> parameter of <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>. 
 
-To enlist in a transaction, call <a href="ifsk.fltenlistintransaction">FltEnlistInTransaction</a>.
+To enlist in a transaction, call <a href="..\fltkernel\nf-fltkernel-fltenlistintransaction.md">FltEnlistInTransaction</a>.
 
-To allocate a new transaction context, call <a href="ifsk.fltallocatecontext">FltAllocateContext</a>. 
+To allocate a new transaction context, call <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>. 
 
-To retrieve a transaction context, call <a href="ifsk.fltgettransactioncontext">FltGetTransactionContext</a>. 
+To retrieve a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a>. 
 
-To delete a transaction context, call <a href="ifsk.fltdeletetransactioncontext">FltDeleteTransactionContext</a> or <a href="ifsk.fltdeletecontext">FltDeleteContext</a>. 
+To delete a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltdeletetransactioncontext.md">FltDeleteTransactionContext</a> or <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>. 
 
-To set a transaction context, call <a href="ifsk.fltsettransactioncontext">FltSetTransactionContext</a>. 
+To set a transaction context, call <a href="..\fltkernel\nf-fltkernel-fltsettransactioncontext.md">FltSetTransactionContext</a>. 
 
 
 ## -requirements
@@ -170,43 +171,43 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.flt_registration">FLT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocatecontext">FltAllocateContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltcommitcomplete">FltCommitComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltcommitcomplete.md">FltCommitComplete</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeletecontext">FltDeleteContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeletetransactioncontext">FltDeleteTransactionContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletetransactioncontext.md">FltDeleteTransactionContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltenlistintransaction">FltEnlistInTransaction</a>
+<a href="..\fltkernel\nf-fltkernel-fltenlistintransaction.md">FltEnlistInTransaction</a>
 </dt>
 <dt>
-<a href="ifsk.fltgettransactioncontext">FltGetTransactionContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltprepreparecomplete">FltPrePrepareComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltprepreparecomplete.md">FltPrePrepareComplete</a>
 </dt>
 <dt>
-<a href="ifsk.fltregisterfilter">FltRegisterFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
 </dt>
 <dt>
-<a href="ifsk.fltreleasecontext">FltReleaseContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltrollbackcomplete">FltRollbackComplete</a>
+<a href="..\fltkernel\nf-fltkernel-fltrollbackcomplete.md">FltRollbackComplete</a>
 </dt>
 <dt>
-<a href="ifsk.fltrollbackenlistment">FltRollbackEnlistment</a>
+<a href="..\fltkernel\nf-fltkernel-fltrollbackenlistment.md">FltRollbackEnlistment</a>
 </dt>
 <dt>
-<a href="ifsk.fltsettransactioncontext">FltSetTransactionContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsettransactioncontext.md">FltSetTransactionContext</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_transaction_notification_callback.md">PFLT_TRANSACTION_NOTIFICATION_CALLBACK</a>
@@ -216,5 +217,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltPrepareComplete routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltPrepareComplete routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

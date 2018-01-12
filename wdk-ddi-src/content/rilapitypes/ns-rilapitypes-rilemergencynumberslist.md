@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILEMERGENCYNUMBERSLIST
+UID: NS:rilapitypes.RILEMERGENCYNUMBERSLIST
 title: RILEMERGENCYNUMBERSLIST
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilemergencynumberslist_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 06816431-a6fc-4c24-a31d-c486a4ba667f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST, *LPRILEMERGENCYNUMBERSLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILEMERGENCYNUMBERSLIST, *LPRILEMERGENCYNUMBERSLIST
 req.product: Windows 10 or later.
 ---
 

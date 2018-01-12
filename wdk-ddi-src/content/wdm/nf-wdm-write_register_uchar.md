@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.WRITE_REGISTER_UCHAR
+UID: NF:wdm.WRITE_REGISTER_UCHAR
 title: WRITE_REGISTER_UCHAR function
 author: windows-driver-content
 description: The WRITE_REGISTER_UCHAR routine writes a byte to the specified address.
@@ -7,7 +7,7 @@ old-location: kernel\write_register_uchar.htm
 old-project: kernel
 ms.assetid: 2d97d31f-d8c6-45d6-9aee-69397a523bbd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: WRITE_REGISTER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

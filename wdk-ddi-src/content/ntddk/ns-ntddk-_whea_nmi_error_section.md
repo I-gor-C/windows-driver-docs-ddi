@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_NMI_ERROR_SECTION
+UID: NS:ntddk._WHEA_NMI_ERROR_SECTION
 title: _WHEA_NMI_ERROR_SECTION
 author: windows-driver-content
 description: The WHEA_NMI_ERROR_SECTION structure describes nonmaskable interrupt (NMI) error data.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 960186a4-09ca-4636-b704-166137da6113
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_NMI_ERROR_SECTION, WHEA_NMI_ERROR_SECTION, *PWHEA_NMI_ERROR_SECTION, PWHEA_NMI_ERROR_SECTION
+ms.keywords: _WHEA_NMI_ERROR_SECTION, *PWHEA_NMI_ERROR_SECTION, WHEA_NMI_ERROR_SECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_NMI_ERROR_SECTION, WHEA_NMI_ERROR_SECTION
 ---
 
 # _WHEA_NMI_ERROR_SECTION structure
@@ -100,7 +101,7 @@ A ULONG representation of the contents of the WHEA_NMI_ERROR_SECTION_FLAGS union
 </dl>
 
 ## -remarks
-The WHEA_NMI_ERROR_SECTION structure describes the error data contained in a nonmaskable interrupt (NMI) error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains an NMI error section only if the <b>SectionType </b>member of one of the <a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains NMI_SECTION_GUID.
+The WHEA_NMI_ERROR_SECTION structure describes the error data contained in a nonmaskable interrupt (NMI) error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. An error record contains an NMI error section only if the <b>SectionType </b>member of one of the <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures that describe the error record sections for that error record contains NMI_SECTION_GUID.
 
 
 ## -requirements
@@ -135,7 +136,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
 </dt>
 <dt>
-<a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
 </dt>
 </dl>
  

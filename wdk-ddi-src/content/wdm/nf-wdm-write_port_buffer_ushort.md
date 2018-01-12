@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.WRITE_PORT_BUFFER_USHORT
+UID: NF:wdm.WRITE_PORT_BUFFER_USHORT
 title: WRITE_PORT_BUFFER_USHORT function
 author: windows-driver-content
 description: The WRITE_PORT_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified port address.
@@ -7,7 +7,7 @@ old-location: kernel\write_port_buffer_ushort.htm
 old-project: kernel
 ms.assetid: e715c0b5-8f72-4642-9a48-2066df0a2650
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: WRITE_PORT_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hal.lib
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

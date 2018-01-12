@@ -1,13 +1,13 @@
 ---
-UID: NE.fwpsk.FWPS_FIELDS_RPC_PROXY_IF_
+UID: NE:fwpsk.FWPS_FIELDS_RPC_PROXY_IF_
 title: FWPS_FIELDS_RPC_PROXY_IF_
 author: windows-driver-content
 description: The FWPS_FIELDS_RPC_PROXY_IF_IF enumeration type specifies the data field identifiers for the FWPS_LAYER_RPC_PROXY_IF run-time filtering layer.
 old-location: netvista\fwps_fields_rpc_proxy_if_if.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 60389be9-8cda-40cf-b02a-c13a2d17091f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FWPS_FIELDS_RPC_PROXY_IF_, FWPS_FIELDS_RPC_PROXY_IF_IF
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_FIELDS_RPC_PROXY_IF_IF
 ---
 
 # FWPS_FIELDS_RPC_PROXY_IF_ enumeration

@@ -1,14 +1,14 @@
 ---
-UID: NS.USBFNBASE._USBFN_INTERFACE_INFO
+UID: NS:usbfnbase._USBFN_INTERFACE_INFO
 title: _USBFN_INTERFACE_INFO
 author: windows-driver-content
 description: Describes an interface and its endpoints.
 old-location: buses\usbfn_interface_info.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 54647A9E-E0AB-4DE7-93FB-D0232D6AC646
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBFN_INTERFACE_INFO, USBFN_INTERFACE_INFO, PUSBFN_INTERFACE_INFO, *PUSBFN_INTERFACE_INFO
+ms.date: 1/4/2018
+ms.keywords: _USBFN_INTERFACE_INFO, *PUSBFN_INTERFACE_INFO, USBFN_INTERFACE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PUSBFN_INTERFACE_INFO, USBFN_INTERFACE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ The index number of the interface.
 
 ### -field Speed
 
-The operating bus speed indicated by <a href="buses.usbfn_bus_speed">USBFN_BUS_SPEED</a>-typed flags.
+The operating bus speed indicated by <a href="..\usbfnbase\ne-usbfnbase-_usbfn_bus_speed.md">USBFN_BUS_SPEED</a>-typed flags.
 
 
 ### -field  Size
@@ -98,12 +99,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbfn_bus_speed">USBFN_BUS_SPEED</a>
+<a href="..\usbfnbase\ne-usbfnbase-_usbfn_bus_speed.md">USBFN_BUS_SPEED</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20USBFN_INTERFACE_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBFN_INTERFACE_INFO structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

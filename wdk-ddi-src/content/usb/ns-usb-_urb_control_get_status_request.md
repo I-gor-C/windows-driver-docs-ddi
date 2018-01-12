@@ -1,13 +1,13 @@
 ---
-UID: NS.USB._URB_CONTROL_GET_STATUS_REQUEST
+UID: NS:usb._URB_CONTROL_GET_STATUS_REQUEST
 title: _URB_CONTROL_GET_STATUS_REQUEST
 author: windows-driver-content
 description: The _URB_CONTROL_GET_STATUS_REQUEST structure is used by USB client drivers to retrieve status from a device, interface, endpoint, or other device-defined target.
 old-location: buses\_urb_control_get_status_request.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 6a005ff3-951f-462d-84e6-e1fd931c5afc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: _URB_CONTROL_GET_STATUS_REQUEST,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 req.product: Windows 10 or later.
 ---
 
@@ -126,7 +127,7 @@ Reserved. Do not use.
 
 
 ## -remarks
-Drivers can use the <a href="buses.usbbuildgetstatusrequest">UsbBuildGetStatusRequest</a> service routine to format this URB.
+Drivers can use the <a href="..\usbdlib\nf-usbdlib-usbbuildgetstatusrequest.md">UsbBuildGetStatusRequest</a> service routine to format this URB.
 
 The reserved members of this structure must be treated as opaque and are reserved for system use.
 
@@ -149,18 +150,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="buses.urb">URB</a>
+<a href="..\usb\ns-usb-_urb.md">URB</a>
 </dt>
 <dt>
 <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
 </dt>
 <dt>
-<a href="buses.usb_structures_and_enumerations">USB Structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20_URB_CONTROL_GET_STATUS_REQUEST structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20_URB_CONTROL_GET_STATUS_REQUEST structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

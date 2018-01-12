@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsGateCaptureThreshold
+UID: NF:ks.KsGateCaptureThreshold
 title: KsGateCaptureThreshold function
 author: windows-driver-content
 description: The KsGateCaptureThreshold function is used to capture an ON input of an AND gate specified by Gate.
@@ -7,7 +7,7 @@ old-location: stream\ksgatecapturethreshold.htm
 old-project: stream
 ms.assetid: 24a7745d-28f8-4f5a-9f51-37ad2d0ffa0b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGateCaptureThreshold
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: 
 ---
 
 # KsGateCaptureThreshold function
@@ -55,7 +56,7 @@ BOOLEAN __inline KsGateCaptureThreshold(
 
 ### -param Gate [in]
 
-A pointer to a <a href="stream.ksgate">KSGATE</a> structure representing the AND gate for which to capture an ON input synchronously.
+A pointer to a <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure representing the AND gate for which to capture an ON input synchronously.
 
 
 ## -returns
@@ -119,48 +120,48 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksgateinitializeand">KsGateInitializeAnd</a>
+<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
 </dt>
 <dt>
-<a href="stream.ksgateinitializeor">KsGateInitializeOr</a>
+<a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
 </dt>
 <dt>
-<a href="stream.ksgategetstateunsafe">KsGateGetStateUnsafe</a>
+<a href="..\ks\nf-ks-ksgategetstateunsafe.md">KsGateGetStateUnsafe</a>
 </dt>
 <dt>
-<a href="stream.ksgateaddoninputtoand">KsGateAddOnInputToAnd</a>
+<a href="..\ks\nf-ks-ksgateaddoninputtoand.md">KsGateAddOnInputToAnd</a>
 </dt>
 <dt>
-<a href="stream.ksgateaddoninputtoor">KsGateAddOnInputToOr</a>
+<a href="..\ks\nf-ks-ksgateaddoninputtoor.md">KsGateAddOnInputToOr</a>
 </dt>
 <dt>
-<a href="stream.ksgateaddoffinputtoand">KsGateAddOffInputToAnd</a>
+<a href="..\ks\nf-ks-ksgateaddoffinputtoand.md">KsGateAddOffInputToAnd</a>
 </dt>
 <dt>
-<a href="stream.ksgateaddoffinputtoor">KsGateAddOffInputToOr</a>
+<a href="..\ks\nf-ks-ksgateaddoffinputtoor.md">KsGateAddOffInputToOr</a>
 </dt>
 <dt>
-<a href="stream.ksgateremoveoninputfromand">KsGateRemoveOnInputFromAnd</a>
+<a href="..\ks\nf-ks-ksgateremoveoninputfromand.md">KsGateRemoveOnInputFromAnd</a>
 </dt>
 <dt>
-<a href="stream.ksgateremoveoninputfromor">KsGateRemoveOnInputFromOr</a>
+<a href="..\ks\nf-ks-ksgateremoveoninputfromor.md">KsGateRemoveOnInputFromOr</a>
 </dt>
 <dt>
-<a href="stream.ksgateremoveoffinputfromand">KsGateRemoveOffInputFromAnd</a>
+<a href="..\ks\nf-ks-ksgateremoveoffinputfromand.md">KsGateRemoveOffInputFromAnd</a>
 </dt>
 <dt>
-<a href="stream.ksgateremoveoffinputfromor">KsGateRemoveOffInputFromOr</a>
+<a href="..\ks\nf-ks-ksgateremoveoffinputfromor.md">KsGateRemoveOffInputFromOr</a>
 </dt>
 <dt>
-<a href="stream.ksgateturninputon">KsGateTurnInputOn</a>
+<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
 </dt>
 <dt>
-<a href="stream.ksgateturninputoff">KsGateTurnInputOff</a>
+<a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGateCaptureThreshold function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGateCaptureThreshold function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

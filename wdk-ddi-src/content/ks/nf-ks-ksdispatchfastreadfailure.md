@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsDispatchFastReadFailure
+UID: NF:ks.KsDispatchFastReadFailure
 title: KsDispatchFastReadFailure function
 author: windows-driver-content
 description: The KsDispatchFastReadFailure function is used in a KSDISPATCH_TABLE.FastRead entry when fast I/O read is not handled. The function should always return FALSE.
@@ -7,7 +7,7 @@ old-location: stream\ksdispatchfastreadfailure.htm
 old-project: stream
 ms.assetid: 7e0c72ce-0959-4835-ac1a-3f37869cc81f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsDispatchFastReadFailure
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsDispatchFastReadFailure function

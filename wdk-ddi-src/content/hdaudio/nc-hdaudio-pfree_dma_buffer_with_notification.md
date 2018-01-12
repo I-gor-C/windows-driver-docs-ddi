@@ -1,5 +1,5 @@
 ---
-UID: NC.hdaudio.PFREE_DMA_BUFFER_WITH_NOTIFICATION
+UID: NC:hdaudio.PFREE_DMA_BUFFER_WITH_NOTIFICATION
 title: PFREE_DMA_BUFFER_WITH_NOTIFICATION
 author: windows-driver-content
 description: The FreeDmaBufferWithNotification routine frees a DMA buffer that was previously allocated by a call to AllocateDmaBufferWithNotification.The function pointer type for a FreeDmaBufferWithNotification routine is defined as follows.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 98fc6201-d9b4-4c85-b624-011f360df068
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 # PFREE_DMA_BUFFER_WITH_NOTIFICATION callback
@@ -63,7 +64,7 @@ NTSTATUS FreeDmaBufferWithNotification(
 
 ### -param context [in]
 
-Specifies the context value from the Context member of the <a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a> structure.
+Specifies the context value from the Context member of the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a> structure.
 
 
 ### -param handle [in]
@@ -160,7 +161,7 @@ PASSIVE_LEVEL
 <a href="..\hdaudio\nc-hdaudio-pallocate_render_dma_engine.md">AllocateRenderDmaEngine</a>
 </dt>
 <dt>
-<a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
 </dt>
 </dl>
  

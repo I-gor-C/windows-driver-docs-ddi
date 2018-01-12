@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsPower.SetIdlePowerManagement
+UID: NF:portcls.IPortClsPower.SetIdlePowerManagement
 title: IPortClsPower::SetIdlePowerManagement method
 author: windows-driver-content
 description: The SetIdlePowerManagement method provides a way for the adapter driver to opt in or opt out of idle state detection.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsPower::SetIdlePowerManagement method
@@ -56,7 +57,7 @@ NTSTATUS SetIdlePowerManagement(
 
 ### -param DeviceObject [in]
 
-Specifies a pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
+Specifies a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 
 ### -param bEnabled [in]
@@ -124,7 +125,7 @@ PASSIVE_LEVEL.
 <a href="..\portcls\nn-portcls-iportclspower.md">IPortClsPower</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/43721EC9-4901-4C68-9CCC-E0A71BF2200E">Immediate Idle Timeout Opt-in</a>

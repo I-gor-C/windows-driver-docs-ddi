@@ -1,5 +1,5 @@
 ---
-UID: NS.HIDPI._HIDP_VALUE_CAPS
+UID: NS:hidpi._HIDP_VALUE_CAPS
 title: _HIDP_VALUE_CAPS
 author: windows-driver-content
 description: The HIDP_VALUE_CAPS structure contains information that describes the capability of a set of HID control values (either a single usage or a usage range).
@@ -7,8 +7,8 @@ old-location: hid\hidp_value_caps.htm
 old-project: hid
 ms.assetid: 37084f3a-f57e-45bb-a364-157b3d155394
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HIDP_VALUE_CAPS, HIDP_VALUE_CAPS, PHIDP_VALUE_CAPS, *PHIDP_VALUE_CAPS
+ms.date: 12/21/2017
+ms.keywords: _HIDP_VALUE_CAPS, *PHIDP_VALUE_CAPS, HIDP_VALUE_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PHIDP_VALUE_CAPS, HIDP_VALUE_CAPS
 ---
 
 # _HIDP_VALUE_CAPS structure
@@ -303,7 +304,7 @@ Reserved for internal system use.
 </dl>
 
 ## -remarks
-Clients obtain a <a href="https://msdn.microsoft.com/d447dda6-a1e5-4e57-b06f-f79f8662c236">value capability array</a> by calling <a href="hid.hidp_getvaluecaps">HidP_GetValueCaps</a> or <a href="hid.hidp_getspecificvaluecaps">HidP_GetSpecificValueCaps</a>. These routines return an array of HIDP_VALUE_CAPS structures in a caller-allocated buffer. The required buffer length is specified in the <a href="hid.hidp_caps">HIDP_CAPS</a> structure returned by <a href="hid.hidp_getcaps">HidP_GetCaps</a>. 
+Clients obtain a <a href="https://msdn.microsoft.com/d447dda6-a1e5-4e57-b06f-f79f8662c236">value capability array</a> by calling <a href="..\hidpi\nf-hidpi-hidp_getvaluecaps.md">HidP_GetValueCaps</a> or <a href="..\hidpi\nf-hidpi-hidp_getspecificvaluecaps.md">HidP_GetSpecificValueCaps</a>. These routines return an array of HIDP_VALUE_CAPS structures in a caller-allocated buffer. The required buffer length is specified in the <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure returned by <a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>. 
 
 For information about the capabilities of HID control values, see <a href="https://msdn.microsoft.com/228fab4f-ff90-43c5-bc68-26b29e8a7dd6">Collection Capability</a> and <a href="https://msdn.microsoft.com/d447dda6-a1e5-4e57-b06f-f79f8662c236">Value Capability Arrays</a>.
 
@@ -326,33 +327,33 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="hid.hidp_getbuttoncaps">HidP_GetButtonCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp_getbuttoncaps.md">HidP_GetButtonCaps</a>
 </dt>
 <dt>
-<a href="hid.hidp_getspecificbuttoncaps">HidP_GetSpecificButtonCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp_getspecificbuttoncaps.md">HidP_GetSpecificButtonCaps</a>
 </dt>
 <dt>
-<a href="hid.hidp_getspecificvaluecaps">HidP_GetSpecificValueCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp_getspecificvaluecaps.md">HidP_GetSpecificValueCaps</a>
 </dt>
 <dt>
-<a href="hid.hidp_getusagevalue">HidP_GetUsageValue</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusagevalue.md">HidP_GetUsageValue</a>
 </dt>
 <dt>
-<a href="hid.hidp_getusagevaluearray">HidP_GetUsageValueArray</a>
+<a href="..\hidpi\nf-hidpi-hidp_getusagevaluearray.md">HidP_GetUsageValueArray</a>
 </dt>
 <dt>
-<a href="hid.hidp_getvaluecaps">HidP_GetValueCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp_getvaluecaps.md">HidP_GetValueCaps</a>
 </dt>
 <dt>
-<a href="hid.hidp_getcaps">HidP_GetCaps</a>
+<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
 </dt>
 <dt>
-<a href="hid.hidp_caps">HIDP_CAPS</a>
+<a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_VALUE_CAPS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_VALUE_CAPS structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

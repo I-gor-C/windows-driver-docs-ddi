@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveRTStreamNotification.RegisterNotificationEvent
+UID: NF:portcls.IMiniportWaveRTStreamNotification.RegisterNotificationEvent
 title: IMiniportWaveRTStreamNotification::RegisterNotificationEvent method
 author: windows-driver-content
 description: The RegisterNotificationEvent method registers an event to be notified for DMA-driven event notification.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveRTStreamNotification::RegisterNotificationEvent method

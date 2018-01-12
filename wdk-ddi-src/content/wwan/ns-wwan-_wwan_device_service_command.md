@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_DEVICE_SERVICE_COMMAND
+UID: NS:wwan._WWAN_DEVICE_SERVICE_COMMAND
 title: _WWAN_DEVICE_SERVICE_COMMAND
 author: windows-driver-content
 description: The WWAN_DEVICE_SERVICE_COMMAND structure represents a device service command.
 old-location: netvista\wwan_device_service_command.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 475D7ECF-B8A8-445D-8ED7-029BD57C8C48
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_DEVICE_SERVICE_COMMAND, WWAN_DEVICE_SERVICE_COMMAND, PWWAN_DEVICE_SERVICE_COMMAND, *PWWAN_DEVICE_SERVICE_COMMAND
+ms.date: 1/8/2018
+ms.keywords: _WWAN_DEVICE_SERVICE_COMMAND, WWAN_DEVICE_SERVICE_COMMAND, *PWWAN_DEVICE_SERVICE_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WWAN_DEVICE_SERVICE_COMMAND, *PWWAN_DEVICE_SERVICE_COMMAND
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ The ID for the command.
 
 ### -field uDataSize
 
-The size, in bytes, of the device service command data that follows the structure instance in memory. This value should not exceed the value of the <b>uMaxCommandDataSize</b> member of the <a href="netvista.wwan_supported_device_services">WWAN_SUPPORTED_DEVICE_SERVICES</a> structure.
+The size, in bytes, of the device service command data that follows the structure instance in memory. This value should not exceed the value of the <b>uMaxCommandDataSize</b> member of the <a href="..\wwan\ns-wwan-_wwan_supported_device_services.md">WWAN_SUPPORTED_DEVICE_SERVICES</a> structure.
 
 
 ## -remarks
@@ -103,12 +104,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_supported_device_services">WWAN_SUPPORTED_DEVICE_SERVICES</a>
+<a href="..\wwan\ns-wwan-_wwan_supported_device_services.md">WWAN_SUPPORTED_DEVICE_SERVICES</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_DEVICE_SERVICE_COMMAND structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_SERVICE_COMMAND structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHHFPDDI._BTHHFP_DESCRIPTOR
+UID: NS:bthhfpddi._BTHHFP_DESCRIPTOR
 title: _BTHHFP_DESCRIPTOR
 author: windows-driver-content
 description: The BTHHFP_DESCRIPTOR data structure stores information describing a paired Handsfree profile (HFP) device.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: A3C1E53B-2E41-437A-8613-C43DCD4768B5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _BTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR, PBTHHFP_DESCRIPTOR, *PBTHHFP_DESCRIPTOR
+ms.keywords: _BTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR, *PBTHHFP_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BTHHFP_DESCRIPTOR, *PBTHHFP_DESCRIPTOR
 ---
 
 # _BTHHFP_DESCRIPTOR structure
@@ -101,7 +102,7 @@ If <i>SupportsVolume</i> is true, the audio driver includes volume support in it
 
 The audio driver uses the string returned in <i>FriendlyName</i> to set the DEVPKEY_DeviceInterface_FriendlyName property on the KS filter’s KSCATEGORY_AUDIO device interface. To do this, the audio driver calls IoSetDeviceInterfacePropertyData and sets the property type to DEVPROP_TYPE_STRING_INDIRECT. An example string is "@System32\drivers\bthhfenum.sys,#2;%1 Hands-Free%0..;(SomeDeviceName)”. Note that this is an indirect string and therefore not necessarily the human readable string that is directly displayed in a user interface. The audio system uses this string to generate localized strings used for display to the user, such as in the Sounds control panel.
 
-For information about the IOCTLs that work with this structure, see <a href="audio.bluetooth_hfp_ddi_ioctls">Bluetooth HFP DDI IOCTLs</a>.
+For information about the IOCTLs that work with this structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>.
 
 
 ## -requirements
@@ -142,10 +143,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.bluetooth_hfp_ddi_ioctls">Bluetooth HFP DDI IOCTLs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
 </dt>
 <dt>
-<a href="audio.bluetooth_hfp_ddi_structures">Bluetooth HFP DDI Structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302029">Bluetooth HFP DDI Structures</a>
 </dt>
 <dt>
 <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a>

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdevice.WdfDeviceAssignProperty
+UID: NF:wdfdevice.WdfDeviceAssignProperty
 title: WdfDeviceAssignProperty function
 author: windows-driver-content
 description: The WdfDeviceAssignProperty method modifies the current setting of a device property.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceassignproperty.htm
 old-project: wdf
 ms.assetid: 5110C452-53E6-401A-9D14-EBD95D3F8BE2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDeviceAssignProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: APC_LEVEL
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -67,7 +68,7 @@ A handle to a framework device object.
 
 ### -param DeviceProperty [in]
 
-A pointer to a <a href="wdf.wdf_device_property_data">WDF_DEVICE_PROPERTY_DATA</a> structure that identifies the device property to modify.
+A pointer to a <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_property_data.md">WDF_DEVICE_PROPERTY_DATA</a> structure that identifies the device property to modify.
 
 
 ### -param Type [in]
@@ -101,7 +102,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## -remarks
 You can use <b>WdfDeviceAssignProperty</b> to modify the setting of any property that is exposed through the unified property model.
 
-For information about related methods, see <a href="wdf.accessing_the_unified_device_property_model">Accessing the Unified Device Property Model</a>.
+For information about related methods, see <a href="https://msdn.microsoft.com/C81988F9-E0DA-439F-B770-DAD86E33D5F3">Accessing the Unified Device Property Model</a>.
 
 
 ## -requirements
@@ -175,12 +176,12 @@ APC_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfdeviceassigninterfaceproperty">WdfDeviceAssignInterfaceProperty</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigninterfaceproperty.md">WdfDeviceAssignInterfaceProperty</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceAssignProperty method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfDeviceAssignProperty method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._CONFIG_ROM
+UID: NS:1394._CONFIG_ROM
 title: _CONFIG_ROM
 author: windows-driver-content
 description: The CONFIG_ROM structure is used to contain the first 24 bytes of an IEEE 1394 device's configuration ROM.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 0ab96bc2-a89f-42cf-9ee2-020b47dff4cf
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CONFIG_ROM, CONFIG_ROM, PCONFIG_ROM, *PCONFIG_ROM
+ms.keywords: _CONFIG_ROM, *PCONFIG_ROM, CONFIG_ROM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCONFIG_ROM, CONFIG_ROM
 ---
 
 # _CONFIG_ROM structure

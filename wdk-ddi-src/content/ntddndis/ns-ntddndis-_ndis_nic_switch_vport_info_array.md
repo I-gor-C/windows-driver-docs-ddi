@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_NIC_SWITCH_VPORT_INFO_ARRAY
+UID: NS:ntddndis._NDIS_NIC_SWITCH_VPORT_INFO_ARRAY
 title: _NDIS_NIC_SWITCH_VPORT_INFO_ARRAY
 author: windows-driver-content
 description: The NDIS_NIC_SWITCH_VPORT_INFO_ARRAY structure specifies an array. Each element in the array specifies the attributes of a virtual port (VPort) that has been created on a network adapter's network adapter switch.
 old-location: netvista\ndis_nic_switch_vport_info_array.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 64bb0edf-b281-40cc-b36e-6ae1fb71ccb4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY, NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, *PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY
+ms.date: 1/8/2018
+ms.keywords: _NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, *PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, *PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY
 ---
 
 # _NDIS_NIC_SWITCH_VPORT_INFO_ARRAY structure
@@ -61,7 +62,7 @@ typedef struct _NDIS_NIC_SWITCH_VPORT_INFO_ARRAY {
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 NDIS sets the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</b> structure, NDIS sets the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -120,7 +121,7 @@ The <b>AttachedFunctionId</b> member is only valid  if NDIS_NIC_SWITCH_VPORT_INF
 
 ### -field FirstElementOffset
 
-A ULONG value that specifies the offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</b> structure up to the beginning of the first element. Each element in the array is an <a href="netvista.ndis_nic_switch_vport_info">NDIS_NIC_SWITCH_VPORT_INFO</a> structure.
+A ULONG value that specifies the offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_info.md">NDIS_NIC_SWITCH_VPORT_INFO</a> structure.
 
 
 
@@ -141,9 +142,9 @@ A ULONG value that specifies the size, in bytes, of each element that follows th
 NDIS returns an <b>NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</b> structure when NDIS handles an OID method request of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451821">OID_NIC_SWITCH_ENUM_VPORTS</a>.  Each
     element in the array that follows the <b>NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</b> structure is an 
     
-    <a href="netvista.ndis_nic_switch_vport_info">NDIS_NIC_SWITCH_VPORT_INFO</a> structure.
+    <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_info.md">NDIS_NIC_SWITCH_VPORT_INFO</a> structure.
 
-For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.
+For more information about the SR-IOV interface, see 	<a href="https://msdn.microsoft.com/B241F468-F568-4500-9356-E576CEBA8F3B">Overview of Single Root I/O Virtualization (SR-IOV)</a>.
 
 
 ## -requirements
@@ -175,10 +176,10 @@ Header
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="netvista.ndis_nic_switch_vport_info">NDIS_NIC_SWITCH_VPORT_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_info.md">NDIS_NIC_SWITCH_VPORT_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451821">OID_NIC_SWITCH_ENUM_VPORTS</a>
@@ -188,5 +189,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_NIC_SWITCH_VPORT_INFO_ARRAY structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_INFO_ARRAY structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

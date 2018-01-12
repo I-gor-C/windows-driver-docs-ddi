@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISWWAN._NDIS_WWAN_PIN_LIST
+UID: NS:ndiswwan._NDIS_WWAN_PIN_LIST
 title: _NDIS_WWAN_PIN_LIST
 author: windows-driver-content
 description: The NDIS_WWAN_PIN_LIST structure represents a list of descriptions of Personal Identification Numbers (PINs).
 old-location: netvista\ndis_wwan_pin_list.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1d3c1084-8f51-4c8a-813e-6700d60c3dab
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WWAN_PIN_LIST, NDIS_WWAN_PIN_LIST, *PNDIS_WWAN_PIN_LIST, PNDIS_WWAN_PIN_LIST
+ms.date: 1/8/2018
+ms.keywords: _NDIS_WWAN_PIN_LIST, NDIS_WWAN_PIN_LIST, *PNDIS_WWAN_PIN_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_WWAN_PIN_LIST, *PNDIS_WWAN_PIN_LIST
 ---
 
 # _NDIS_WWAN_PIN_LIST structure
@@ -104,7 +105,7 @@ sizeof(NDIS_WWAN_PIN_LIST)
  
 
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field uStatus
@@ -186,7 +187,7 @@ The operation failed because a bad SIM card was detected.
 ### -field PinList
 
 A formatted 
-     <a href="netvista.wwan_pin_list">WWAN_PIN_LIST</a> object that represents a list
+     <a href="..\wwan\ns-wwan-_wwan_pin_list.md">WWAN_PIN_LIST</a> object that represents a list
      of descriptions of Personal Identification Numbers (PINs).
 
 
@@ -221,15 +222,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.wwan_pin_list">WWAN_PIN_LIST</a>
+<a href="..\wwan\ns-wwan-_wwan_pin_list.md">WWAN_PIN_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_WWAN_PIN_LIST structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_PIN_LIST structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

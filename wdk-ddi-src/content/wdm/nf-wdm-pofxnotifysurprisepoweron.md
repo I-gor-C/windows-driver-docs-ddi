@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.PoFxNotifySurprisePowerOn
+UID: NF:wdm.PoFxNotifySurprisePowerOn
 title: PoFxNotifySurprisePowerOn function
 author: windows-driver-content
 description: The PoFxNotifySurprisePowerOn routine notifies the power management framework (PoFx) that a device was turned on as a side effect of supplying power to some other device.
@@ -7,7 +7,7 @@ old-location: kernel\pofxnotifysurprisepoweron.htm
 old-project: kernel
 ms.assetid: AB9C7D32-D536-4B2B-9C85-DF5A0031798C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PoFxNotifySurprisePowerOn
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: Ntoskrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID PoFxNotifySurprisePowerOn(
 
 ### -param Pdo [in]
 
-A pointer to a <a href="wdkgloss.p#wdkgloss.physical_device_object__pdo_#wdkgloss.physical_device_object__pdo_">physical device object</a> (PDO). This parameter points to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure that represents the physical device that was turned on as a side effect. The caller is always the bus driver that enumerated the PDO.
+A pointer to a <a href="wdkgloss.p#wdkgloss.physical_device_object__pdo_#wdkgloss.physical_device_object__pdo_">physical device object</a> (PDO). This parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the physical device that was turned on as a side effect. The caller is always the bus driver that enumerated the PDO.
 
 
 ## -returns
@@ -76,7 +77,7 @@ On entry to <b>PoFxNotifySurprisePowerOn</b>, the device represented by the <i>P
 
 If the bus driver fails to call this routine when the device is turned on, the device hardware might stay in the fully on state for an indefinite time, during which PoFx assumes that the device remains in the D3 (fully off) power state.
 
-Call <b>PoFxNotifySurprisePowerOn</b> only if the device was turned on incidentally, as a side effect of turning on some other device. If the bus driver restores power to a device in response to a <a href="kernel.devicepowerrequiredcallback">DevicePowerRequiredCallback</a> callback or an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> request for a D0 transition, call the <a href="kernel.pofxreportdevicepoweredon">PoFxReportDevicePoweredOn</a> routine instead to inform PoFx when power is restored to the device.
+Call <b>PoFxNotifySurprisePowerOn</b> only if the device was turned on incidentally, as a side effect of turning on some other device. If the bus driver restores power to a device in response to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450949">DevicePowerRequiredCallback</a> callback or an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> request for a D0 transition, call the <a href="..\wdm\nf-wdm-pofxreportdevicepoweredon.md">PoFxReportDevicePoweredOn</a> routine instead to inform PoFx when power is restored to the device.
 
 
 ## -requirements
@@ -150,21 +151,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="kernel.devicepowerrequiredcallback">DevicePowerRequiredCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450949">DevicePowerRequiredCallback</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
 </dt>
 <dt>
-<a href="kernel.pofxreportdevicepoweredon">PoFxReportDevicePoweredOn</a>
+<a href="..\wdm\nf-wdm-pofxreportdevicepoweredon.md">PoFxReportDevicePoweredOn</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxNotifySurprisePowerOn routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxNotifySurprisePowerOn routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

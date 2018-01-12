@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSPROPERTY_GENERAL
+UID: NE:ks.KSPROPERTY_GENERAL
 title: KSPROPERTY_GENERAL
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksproperty_general.htm
 old-project: stream
 ms.assetid: 45D94211-4756-4D3C-8512-2AF7953CFADC
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPROPERTY_GENERAL, KSPROPERTY_GENERAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_GENERAL
 ---
 
 # KSPROPERTY_GENERAL enumeration

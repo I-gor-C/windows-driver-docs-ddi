@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortFreeWorker
+UID: NF:storport.StorPortFreeWorker
 title: StorPortFreeWorker function
 author: windows-driver-content
 description: Frees a Storport work item previously allocated by the StorPortInitializeWorker routine.
@@ -7,7 +7,7 @@ old-location: storage\storportfreeworker.htm
 old-project: storage
 ms.assetid: 90BD61C8-322B-48D5-83E0-7204E3DC4423
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortFreeWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Frees a Storport work item previously allocated by the <a href="storage.storportinitializeworker">StorPortInitializeWorker</a> routine.
+Frees a Storport work item previously allocated by the <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a> routine.
 
 
 
@@ -62,11 +63,11 @@ A pointer to the hardware device extension for the host bus adapter (HBA).
 
 ### -param WorkItem [in]
 
-A pointer to an opaque buffer for the work item context returned by <a href="storage.storportinitializeworker">StorPortInitializeWorker</a>.
+A pointer to an opaque buffer for the work item context returned by <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>.
 
 
 ## -returns
-The <a href="storage.storportinitializeworker">StorPortInitializeWorker</a> routine returns one of these status codes:
+The <a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a> routine returns one of these status codes:
 <dl>
 <dt><b>STOR_STATUS_INVALID_IRQL</b></dt>
 </dl>Current IRQL &gt; DISPATCH_LEVEL.
@@ -139,15 +140,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storportinitializeworker">StorPortInitializeWorker</a>
+<a href="..\storport\nf-storport-storportinitializeworker.md">StorPortInitializeWorker</a>
 </dt>
 <dt>
-<a href="storage.storportqueueworkitem">StorPortQueueWorkItem</a>
+<a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortFreeWorker routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortFreeWorker routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

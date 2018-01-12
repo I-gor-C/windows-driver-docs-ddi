@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB
+UID: NC:d3dumddi.PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB
 title: PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB
 author: windows-driver-content
 description: The pfnSetDisplayPrivateDriverFormatCb function changes the private-format attribute of a video present source.
@@ -7,7 +7,7 @@ old-location: display\pfnsetdisplayprivatedriverformatcb.htm
 old-project: display
 ms.assetid: 499e6de7-67cc-4834-bcec-4f3907b180f7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB callback
@@ -64,7 +65,7 @@ A handle to the display device (graphics context).
 
 ### -param pData [in]
 
-A pointer to a <a href="display.d3dddicb_setdisplayprivatedriverformat">D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT</a> structure that describes how to format a video present source. 
+A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_setdisplayprivatedriverformat.md">D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT</a> structure that describes how to format a video present source. 
 
 
 ## -returns
@@ -97,7 +98,7 @@ Change the private-format attribute of the primary surface and call <b>pfnSetDis
 
 Call <b>pfnSetDisplayPrivateDriverFormatCb</b> and attempt to change the private-format attribute of the video present source. The driver can then call <b>pfnSetDisplayModeCb</b> again. 
 
-The user-mode display driver can call <b>pfnSetDisplayPrivateDriverFormatCb</b> only if the <b>Version</b> member of the <a href="display.d3dddiarg_createdevice">D3DDDIARG_CREATEDEVICE</a> structure was set to greater than seven when the display device (specified by the <i>hDevice</i> parameter) was created in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a> function. 
+The user-mode display driver can call <b>pfnSetDisplayPrivateDriverFormatCb</b> only if the <b>Version</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a> structure was set to greater than seven when the display device (specified by the <i>hDevice</i> parameter) was created in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a> function. 
 
 
 ## -requirements
@@ -142,13 +143,13 @@ Header
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
 </dt>
 <dt>
-<a href="display.d3dddi_devicecallbacks">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
-<a href="display.d3dddiarg_createdevice">D3DDDIARG_CREATEDEVICE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
 </dt>
 <dt>
-<a href="display.d3dddicb_setdisplayprivatedriverformat">D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_setdisplayprivatedriverformat.md">D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymodecb.md">pfnSetDisplayModeCb</a>
@@ -158,5 +159,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

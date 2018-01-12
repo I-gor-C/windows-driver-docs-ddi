@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NET_IF_INFORMATION
+UID: NS:ndis._NET_IF_INFORMATION
 title: _NET_IF_INFORMATION
 author: windows-driver-content
 description: The NET_IF_INFORMATION structure provides NDIS with information about a registered network interface.
 old-location: netvista\net_if_information.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5508650c-473c-4710-869e-053481e83f1b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NET_IF_INFORMATION, PNET_IF_INFORMATION, NET_IF_INFORMATION, *PNET_IF_INFORMATION
+ms.date: 1/8/2018
+ms.keywords: _NET_IF_INFORMATION, *PNET_IF_INFORMATION, NET_IF_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNET_IF_INFORMATION, NET_IF_INFORMATION
 ---
 
 # _NET_IF_INFORMATION structure
@@ -75,7 +76,7 @@ typedef struct _NET_IF_INFORMATION {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      interface information structure (NET_IF_INFORMATION). The provider sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -123,7 +124,7 @@ Reserved for NDIS.
 ### -field PhysicalLocation
 
 The physical location for the hardware that is associated with an interface specified in a 
-     <a href="netvista.net_physical_location">
+     <a href="https://msdn.microsoft.com/e5661e05-a83f-4632-af98-2a021eeb7d80">
      NET_PHYSICAL_LOCATION</a> structure.
 
 
@@ -142,21 +143,21 @@ The NDIS port number for the interface.
 ### -field AccessType
 
 A 
-     <a href="netvista.net_if_access_type">NET_IF_ACCESS_TYPE</a> NDIS network interface
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a> NDIS network interface
      access type.
 
 
 ### -field DirectionType
 
 A 
-     <a href="netvista.net_if_direction_type">NET_IF_DIRECTION_TYPE</a> NDIS network
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a> NDIS network
      interface direction type.
 
 
 ### -field ConnectionType
 
 A 
-     <a href="netvista.net_if_connection_type">NET_IF_CONNECTION_TYPE</a> NDIS network
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a> NDIS network
      interface connection type.
 
 
@@ -211,9 +212,9 @@ The offset of the beginning of the friendly name, in bytes, from the beginning o
 
 The GUID that is associated with the interface. The interface provider generates the interface
      GUID for the interface. The provider can call the 
-     <a href="kernel.exuuidcreate">ExUuidCreate</a> routine to create the GUID. The
+     <a href="..\ntddk\nf-ntddk-exuuidcreate.md">ExUuidCreate</a> routine to create the GUID. The
      interface GUID should be associated with the 
-     <a href="netvista.net_luid">NET_LUID</a> value that is assigned to the interface.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> value that is assigned to the interface.
      If the provider retains information about the interface in persistent storage, it should save the GUID
      and reuse the GUID when it reregisters the interface after the computer restarts.
 
@@ -229,7 +230,7 @@ The GUID that is associated with the network that the interface belongs to. If t
 
 The statistics that the interface supports. For more information, see the 
      <b>SupportedStatistics</b> member of the 
-     <a href="netvista.ndis_miniport_adapter_general_attributes">
+     <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_general_attributes.md">
      NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure .
 
 
@@ -237,7 +238,7 @@ The statistics that the interface supports. For more information, see the
 
 The 
      <b>NdisMedium</b><i>Xxx</i> type that the interface supports. For more information, see 
-     <a href="netvista.ndis_medium">NDIS_MEDIUM</a>.
+     <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>.
 
 
 ### -field PhysicalMediumType
@@ -251,7 +252,7 @@ The physical medium type for the interface. For more information, see
 A network interface provider initializes a NET_IF_INFORMATION structure to provide NDIS with
     information about a registered interface. To register an interface, a provider passes a pointer to a
     NET_IF_INFORMATION structure to the 
-    <a href="netvista.ndisifregisterinterface">
+    <a href="..\ndis\nf-ndis-ndisifregisterinterface.md">
     NdisIfRegisterInterface</a> function.
 
 The interface provider should allocate enough memory for the structure and the arrays that the 
@@ -289,35 +290,35 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exuuidcreate">ExUuidCreate</a>
+<a href="..\ntddk\nf-ntddk-exuuidcreate.md">ExUuidCreate</a>
 </dt>
 <dt>
-<a href="netvista.ndis_medium">NDIS_MEDIUM</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_adapter_general_attributes">
+<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_general_attributes.md">
    NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndisifregisterinterface">NdisIfRegisterInterface</a>
+<a href="..\ndis\nf-ndis-ndisifregisterinterface.md">NdisIfRegisterInterface</a>
 </dt>
 <dt>
-<a href="netvista.net_if_access_type">NET_IF_ACCESS_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.net_if_connection_type">NET_IF_CONNECTION_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.net_if_direction_type">NET_IF_DIRECTION_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.net_luid">NET_LUID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
 </dt>
 <dt>
-<a href="netvista.net_physical_location">NET_PHYSICAL_LOCATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568750">NET_PHYSICAL_LOCATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569069">OID_802_3_CURRENT_ADDRESS</a>
@@ -336,5 +337,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NET_IF_INFORMATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_IF_INFORMATION structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

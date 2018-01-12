@@ -1,14 +1,14 @@
 ---
-UID: NS.WIAMINDR_LH._WIAS_DOWN_SAMPLE_INFO
+UID: NS:wiamindr_lh._WIAS_DOWN_SAMPLE_INFO
 title: _WIAS_DOWN_SAMPLE_INFO
 author: windows-driver-content
 description: The WIAS_DOWN_SAMPLE_INFO structure stores information used by the downsampling helper function, wiasDownSampleBuffer.
 old-location: image\wias_down_sample_info.htm
-old-project: Image
+old-project: image
 ms.assetid: af9d35d8-9e3c-4be0-8ba4-a0b548b1d7ac
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WIAS_DOWN_SAMPLE_INFO, WIAS_DOWN_SAMPLE_INFO, *PWIAS_DOWN_SAMPLE_INFO
+ms.date: 1/10/2018
+ms.keywords: _WIAS_DOWN_SAMPLE_INFO, *PWIAS_DOWN_SAMPLE_INFO, WIAS_DOWN_SAMPLE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWIAS_DOWN_SAMPLE_INFO, WIAS_DOWN_SAMPLE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The WIAS_DOWN_SAMPLE_INFO structure stores information used by the downsampling helper function, <a href="image.wiasdownsamplebuffer">wiasDownSampleBuffer</a>.
+The WIAS_DOWN_SAMPLE_INFO structure stores information used by the downsampling helper function, <a href="..\wiamdef\nf-wiamdef-wiasdownsamplebuffer.md">wiasDownSampleBuffer</a>.
 
 
 
@@ -156,12 +157,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.wiasdownsamplebuffer">wiasDownSampleBuffer</a>
+<a href="..\wiamdef\nf-wiamdef-wiasdownsamplebuffer.md">wiasDownSampleBuffer</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20WIAS_DOWN_SAMPLE_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_DOWN_SAMPLE_INFO structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

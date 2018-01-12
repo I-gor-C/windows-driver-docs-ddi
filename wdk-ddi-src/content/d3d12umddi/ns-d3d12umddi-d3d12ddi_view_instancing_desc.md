@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_VIEW_INSTANCING_DESC
+UID: NS:d3d12umddi.D3D12DDI_VIEW_INSTANCING_DESC
 title: D3D12DDI_VIEW_INSTANCING_DESC
 author: windows-driver-content
 description: View instancing description.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-view-instancing-desc.htm
 old-project: display
 ms.assetid: 4d942de6-d829-499c-80cf-3cff8266aee4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_VIEW_INSTANCING_DESC, D3D12DDI_VIEW_INSTANCING_DESC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_VIEW_INSTANCING_DESC
 ---
 
 # D3D12DDI_VIEW_INSTANCING_DESC structure

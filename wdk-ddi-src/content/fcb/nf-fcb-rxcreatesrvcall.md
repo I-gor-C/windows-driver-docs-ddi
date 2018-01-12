@@ -1,5 +1,5 @@
 ---
-UID: NF.fcb.RxCreateSrvCall
+UID: NF:fcb.RxCreateSrvCall
 title: RxCreateSrvCall function
 author: windows-driver-content
 description: RxCreateSrvCall builds a SRV_CALL structure and inserts the name into the net name table maintained by RDBSS.
@@ -7,7 +7,7 @@ old-location: ifsk\rxcreatesrvcall.htm
 old-project: ifsk
 ms.assetid: 0eda9724-686f-4681-a1f0-92bdc36e695d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RxCreateSrvCall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: *PFA_ENTRY, FA_ENTRY
 ---
 
 # RxCreateSrvCall function
@@ -127,72 +128,72 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.rxcreatenetfcb">RxCreateNetFcb</a>
+<a href="..\fcb\nf-fcb-rxcreatenetfcb.md">RxCreateNetFcb</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreatenetfobx">RxCreateNetFobx</a>
+<a href="..\fcb\nf-fcb-rxcreatenetfobx.md">RxCreateNetFobx</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreatenetroot">RxCreateNetRoot</a>
+<a href="..\fcb\nf-fcb-rxcreatenetroot.md">RxCreateNetRoot</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreatesrvopen">RxCreateSrvOpen</a>
+<a href="..\fcb\nf-fcb-rxcreatesrvopen.md">RxCreateSrvOpen</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreatevnetroot">RxCreateVNetRoot</a>
+<a href="..\fcb\nf-fcb-rxcreatevnetroot.md">RxCreateVNetRoot</a>
 </dt>
 <dt>
-<a href="ifsk.rxdereference">RxDereference</a>
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizeconnection">RxFinalizeConnection</a>
+<a href="..\rxprocs\nf-rxprocs-rxfinalizeconnection.md">RxFinalizeConnection</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizenetfcb">RxFinalizeNetFcb</a>
+<a href="..\rxprocs\nf-rxprocs-rxfinalizenetfcb.md">RxFinalizeNetFcb</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizenetfobx">RxFinalizeNetFobx</a>
+<a href="..\fcb\nf-fcb-rxfinalizenetfobx.md">RxFinalizeNetFobx</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizenetroot">RxFinalizeNetRoot</a>
+<a href="..\fcb\nf-fcb-rxfinalizenetroot.md">RxFinalizeNetRoot</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizesrvcall">RxFinalizeSrvCall</a>
+<a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizesrvopen">RxFinalizeSrvOpen</a>
+<a href="..\fcb\nf-fcb-rxfinalizesrvopen.md">RxFinalizeSrvOpen</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizevnetroot">RxFinalizeVNetRoot</a>
+<a href="..\fcb\nf-fcb-rxfinalizevnetroot.md">RxFinalizeVNetRoot</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinishfcbinitialization">RxFinishFcbInitialization</a>
+<a href="..\fcb\nf-fcb-rxfinishfcbinitialization.md">RxFinishFcbInitialization</a>
 </dt>
 <dt>
-<a href="ifsk.rxforcefinalizeallvnetroots">RxForceFinalizeAllVNetRoots</a>
+<a href="..\rxprocs\nf-rxprocs-rxforcefinalizeallvnetroots.md">RxForceFinalizeAllVNetRoots</a>
 </dt>
 <dt>
-<a href="ifsk.rxreference">RxReference</a>
+<a href="..\rxprocs\nf-rxprocs-rxreference.md">RxReference</a>
 </dt>
 <dt>
-<a href="ifsk.rxsetsrvcalldomainname">RxSetSrvCallDomainName</a>
+<a href="..\rxprocs\nf-rxprocs-rxsetsrvcalldomainname.md">RxSetSrvCallDomainName</a>
 </dt>
 <dt>
-<a href="ifsk.rxpdereferencenetfcb">RxpDereferenceNetFcb</a>
+<a href="..\fcb\nf-fcb-rxpdereferencenetfcb.md">RxpDereferenceNetFcb</a>
 </dt>
 <dt>
-<a href="ifsk.rxpreferencenetfcb">RxpReferenceNetFcb</a>
+<a href="..\fcb\nf-fcb-rxpreferencenetfcb.md">RxpReferenceNetFcb</a>
 </dt>
 <dt>
-<a href="ifsk.rx_context">RX_CONTEXT</a>
+<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
 </dt>
 <dt>
-<a href="ifsk.the_srv_call_structure">The SRV_CALL Structure</a>
+<a href="https://msdn.microsoft.com/9a3bb194-0289-47f4-a5c8-848d8d82cdd7">The SRV_CALL Structure</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCreateSrvCall function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxCreateSrvCall function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

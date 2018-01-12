@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILWRITEPHONEBOOKENTRYPARAMS
+UID: NS:rilapitypes.RILWRITEPHONEBOOKENTRYPARAMS
 title: RILWRITEPHONEBOOKENTRYPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilwritephonebookentryparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ae92f321-d6dc-4e48-8107-1a6fbd3bb15a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS
 req.product: Windows 10 or later.
 ---
 

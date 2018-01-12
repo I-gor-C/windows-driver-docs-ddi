@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDICB_RENDER
+UID: NS:d3dumddi._D3DDDICB_RENDER
 title: _D3DDDICB_RENDER
 author: windows-driver-content
 description: The D3DDDICB_RENDER structure describes the current command buffer to be rendered.
@@ -7,7 +7,7 @@ old-location: display\d3dddicb_render.htm
 old-project: display
 ms.assetid: 7a2bf1a8-d416-46bc-a9ba-9122407ea2a2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDICB_RENDER, D3DDDICB_RENDER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDICB_RENDER
 ---
 
 # _D3DDDICB_RENDER structure
@@ -106,7 +107,7 @@ The driver receives the size, in bytes, of the next command buffer to use.
 
 ### -field pNewAllocationList
 
-[out] An array of <a href="display.d3dddi_allocationlist">D3DDDI_ALLOCATIONLIST</a> structures that the user-mode display driver receives to use as the allocation list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
+[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the user-mode display driver receives to use as the allocation list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
 
 
 ### -field NewAllocationListSize
@@ -118,7 +119,7 @@ The driver receives the number of elements for the allocation list that will be 
 
 ### -field pNewPatchLocationList
 
-[out] An array of <a href="display.d3dddi_patchlocationlist">D3DDDI_PATCHLOCATIONLIST</a> structures that the user-mode display driver receives to use as the patch-location list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
+[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the user-mode display driver receives to use as the patch-location list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
 
 
 ### -field NewPatchLocationListSize
@@ -130,7 +131,7 @@ The driver receives the number of elements for the patch-location list that will
 
 ### -field Flags
 
-[in] A <a href="display.d3dddicb_renderflags">D3DDDICB_RENDERFLAGS</a> structure that indicates information about a command buffer to be rendered.
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_renderflags.md">D3DDDICB_RENDERFLAGS</a> structure that indicates information about a command buffer to be rendered.
 
 
 ### -field hContext
@@ -207,13 +208,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddi_allocationlist">D3DDDI_ALLOCATIONLIST</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="display.d3dddi_patchlocationlist">D3DDDI_PATCHLOCATIONLIST</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="display.d3dddicb_renderflags">D3DDDICB_RENDERFLAGS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_renderflags.md">D3DDDICB_RENDERFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
@@ -223,5 +224,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDICB_RENDER structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDICB_RENDER structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

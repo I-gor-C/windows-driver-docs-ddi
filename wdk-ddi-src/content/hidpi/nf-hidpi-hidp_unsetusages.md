@@ -1,5 +1,5 @@
 ---
-UID: NF.hidpi.HidP_UnsetUsages
+UID: NF:hidpi.HidP_UnsetUsages
 title: HidP_UnsetUsages function
 author: windows-driver-content
 description: The HidP_UnsetUsages routine sets specified HID control button usages OFF (zero) in a HID report.
@@ -7,7 +7,7 @@ old-location: hid\hidp_unsetusages.htm
 old-project: hid
 ms.assetid: 55dcd9f3-6903-4718-98c2-ee42ee1026e3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidP_UnsetUsages
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hidparse.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 # HidP_UnsetUsages function
@@ -62,7 +63,7 @@ NTSTATUS __stdcall HidP_UnsetUsages(
 
 ### -param ReportType [in]
 
-Specifies a <a href="hid.hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of report located at <i>Report</i>.
+Specifies a <a href="..\hidpi\ne-hidpi-_hidp_report_type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of report located at <i>Report</i>.
 
 
 ### -param UsagePage [in]
@@ -97,7 +98,7 @@ Pointer to a report.
 
 ### -param ReportLength [in]
 
-Specifies the size, in bytes, of the report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="hid.hidp_getcaps">HidP_GetCaps</a> returns in a collection's <a href="hid.hidp_caps">HIDP_CAPS</a> structure.
+Specifies the size, in bytes, of the report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a> returns in a collection's <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure.
 
 
 ## -returns
@@ -216,10 +217,10 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
 </dt>
 <dt>
-<a href="hid.hidp_setdata">HidP_SetData</a>
+<a href="..\hidpi\nf-hidpi-hidp_setdata.md">HidP_SetData</a>
 </dt>
 <dt>
-<a href="hid.hidp_setusages">HidP_SetUsages</a>
+<a href="..\hidpi\nf-hidpi-hidp_setusages.md">HidP_SetUsages</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539812">HidP_UnsetButtons</a>
@@ -229,5 +230,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_UnsetUsages routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HidP_UnsetUsages routine%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

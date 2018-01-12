@@ -1,5 +1,5 @@
 ---
-UID: NS.KS._KSPROPERTY_GRAPHMANAGER_INTERFACE
+UID: NS:ks._KSPROPERTY_GRAPHMANAGER_INTERFACE
 title: _KSPROPERTY_GRAPHMANAGER_INTERFACE
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\ksproperty_graphmanager_interface.htm
 old-project: stream
 ms.assetid: CC2A3E78-0A28-4760-A4E1-A2C600CE03CB
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _KSPROPERTY_GRAPHMANAGER_INTERFACE, PKSPROPERTY_GRAPHMANAGER_INTERFACE, KSPROPERTY_GRAPHMANAGER_INTERFACE, *PKSPROPERTY_GRAPHMANAGER_INTERFACE
+ms.date: 1/9/2018
+ms.keywords: _KSPROPERTY_GRAPHMANAGER_INTERFACE, KSPROPERTY_GRAPHMANAGER_INTERFACE, *PKSPROPERTY_GRAPHMANAGER_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_GRAPHMANAGER_INTERFACE, *PKSPROPERTY_GRAPHMANAGER_INTERFACE
 ---
 
 # _KSPROPERTY_GRAPHMANAGER_INTERFACE structure

@@ -1,14 +1,14 @@
 ---
-UID: NS.USB._USBD_ENDPOINT_OFFLOAD_INFORMATION
+UID: NS:usb._USBD_ENDPOINT_OFFLOAD_INFORMATION
 title: _USBD_ENDPOINT_OFFLOAD_INFORMATION
 author: windows-driver-content
 description: Stores xHCI-specific information that is used by client drivers to transfer data to and from the offloaded endpoints.
 old-location: buses\usbd_endpoint_offload_information.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: F2A8E966-269E-447F-9467-EB2E877FFAA2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBD_ENDPOINT_OFFLOAD_INFORMATION, USBD_ENDPOINT_OFFLOAD_INFORMATION, PUSBD_ENDPOINT_OFFLOAD_INFORMATION, *PUSBD_ENDPOINT_OFFLOAD_INFORMATION
+ms.date: 1/4/2018
+ms.keywords: _USBD_ENDPOINT_OFFLOAD_INFORMATION, USBD_ENDPOINT_OFFLOAD_INFORMATION, *PUSBD_ENDPOINT_OFFLOAD_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: USBD_ENDPOINT_OFFLOAD_INFORMATION, *PUSBD_ENDPOINT_OFFLOAD_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -90,7 +91,7 @@ The resource identifier.
 
 ### -field Mode
 
-A <a href="buses.usbd_endpoint_offload_mode">USBD_ENDPOINT_OFFLOAD_MODE</a>-type value that indicates whether endpoint offloading is handled in software or the USB device or host controller.
+A <a href="..\usb\ne-usb-_usbd_endpoint_offload_mode.md">USBD_ENDPOINT_OFFLOAD_MODE</a>-type value that indicates whether endpoint offloading is handled in software or the USB device or host controller.
 
 
 ### -field RootHubPortNumber

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugAdvanced4.GetSymbolInformationWideEx
+UID: NF:dbgeng.IDebugAdvanced4.GetSymbolInformationWideEx
 title: IDebugAdvanced4::GetSymbolInformationWideEx method
 author: windows-driver-content
 description: The GetSymbolInformationWideEx method returns specified information about a symbol.
 old-location: debugger\getsymbolinformationwideex.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: E862C691-133F-4FA5-A698-09CD5D0E32B3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugAdvanced4, IDebugAdvanced4::GetSymbolInformationWideEx, GetSymbolInformationWideEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugAdvanced4::GetSymbolInformationWideEx method
@@ -207,7 +208,7 @@ Receives the size, in characters, of the string returned to <i>StringBuffer</i>.
 
 ### -param pInfoEx [out, optional]
 
-A pointer to a <a href="debugger.symbol_info_ex">SYMBOL_INFO_EX</a> structure. 
+A pointer to a <a href="..\dbgeng\ns-dbgeng-_symbol_info_ex.md">SYMBOL_INFO_EX</a> structure. 
 
 
 ## -returns

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlGetSupportedFeatures
+UID: NF:ntifs.FsRtlGetSupportedFeatures
 title: FsRtlGetSupportedFeatures function
 author: windows-driver-content
 description: The FsRtlGetSupportedFeatures routine returns the supported features of a volume attached to the specified device object.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlgetsupportedfeatures.htm
 old-project: ifsk
 ms.assetid: 24852B9A-5156-41BB-87F9-81B147A85AC2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlGetSupportedFeatures
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlGetSupportedFeatures function

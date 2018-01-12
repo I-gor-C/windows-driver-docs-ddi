@@ -1,5 +1,5 @@
 ---
-UID: NF.ksproxy.IKsControl.KsMethod
+UID: NF:ksproxy.IKsControl.KsMethod
 title: IKsControl::KsMethod method
 author: windows-driver-content
 description: The KsMethod method sends a method to a KS object, along with any other defined support operations available on a method set.
@@ -7,7 +7,7 @@ old-location: stream\ikscontrol_ksmethod.htm
 old-project: stream
 ms.assetid: 9f9121be-786d-4a1c-bb01-7bf3c1d3b6cf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IKsControl, IKsControl::KsMethod, KsMethod
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PIPE_STATE
 ---
 
 # IKsControl::KsMethod method
@@ -59,7 +60,7 @@ HRESULT KsMethod(
 
 ### -param Method [in]
 
-Pointer to a <a href="stream.ksmethod">KSMETHOD</a> structure that describes a method and the request type of the method request. 
+Pointer to a <a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a> structure that describes a method and the request type of the method request. 
 
 
 ### -param MethodLength [in]
@@ -122,12 +123,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksmethod">KSMETHOD</a>
+<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsControl::KsMethod method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsControl::KsMethod method%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

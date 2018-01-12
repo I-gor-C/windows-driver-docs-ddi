@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamindr_lh.IWiaMiniDrv.drvInitializeWia
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvInitializeWia
 title: IWiaMiniDrv::drvInitializeWia method
 author: windows-driver-content
 description: The IWiaMiniDrv::drvInitializeWia method initializes the minidriver and builds the driver item tree representing the device.
 old-location: image\iwiaminidrv_drvinitializewia.htm
-old-project: Image
+old-project: image
 ms.assetid: 93b155eb-0254-441f-b01f-3da8eb7376a5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaMiniDrv, IWiaMiniDrv::drvInitializeWia, drvInitializeWia
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSCANWINDOW, SCANWINDOW
 req.product: Windows 10 or later.
 ---
 
@@ -94,7 +95,7 @@ Points to an <a href="https://msdn.microsoft.com/b026fb74-9ce6-4d4e-8a5b-4027319
 
 ### -param ppIDrvItemRoot [out, optional]
 
-Points to a memory location that will receive the address of a <a href="image.iwiadrvitem_interface">IWiaDrvItem Interface</a>, the interface of the root item.
+Points to a memory location that will receive the address of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543896">IWiaDrvItem Interface</a>, the interface of the root item.
 
 
 ### -param ppIUnknownInner [out, optional]
@@ -110,7 +111,7 @@ Points to a memory location that will receive a status code for this method. If 
 ## -returns
 On success, the method should return S_OK and clear the device error value pointed to by <i>plDevErrVal</i>. If the method fails, it should return a standard COM error code and place a minidriver-specific error code value in the memory pointed to by <i>plDevErrVal</i>.
 
-The value pointed to by <i>plDevErrVal</i> can be converted to a string by calling <a href="image.iwiaminidrv_drvgetdeviceerrorstr">IWiaMiniDrv::drvGetDeviceErrorStr</a>.
+The value pointed to by <i>plDevErrVal</i> can be converted to a string by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>.
 
 
 ## -remarks
@@ -160,21 +161,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.wiascreatedrvitem">wiasCreateDrvItem</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 </dt>
 <dt>
-<a href="image.iwiadrvitem_additemtofolder">IWiaDrvItem::AddItemToFolder</a>
+<a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
 </dt>
 <dt>
-<a href="image.iwiaminidrv_drvgetdeviceerrorstr">IWiaMiniDrv::drvGetDeviceErrorStr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543856">IWiaDrvItem::AddItemToFolder</a>
 </dt>
 <dt>
-<a href="image.iwiaminidrv_drvuninitializewia">IWiaMiniDrv::drvUnInitializeWia</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
+</dt>
+<dt>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545010">IWiaMiniDrv::drvUnInitializeWia</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20IWiaMiniDrv::drvInitializeWia method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrv::drvInitializeWia method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

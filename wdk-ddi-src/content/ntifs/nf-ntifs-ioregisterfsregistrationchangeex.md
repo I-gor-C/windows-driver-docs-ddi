@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.IoRegisterFsRegistrationChangeEx
+UID: NF:ntifs.IoRegisterFsRegistrationChangeEx
 title: IoRegisterFsRegistrationChangeEx function
 author: windows-driver-content
 description: The IoRegisterFsRegistrationChangeEx routine registers a file system filter driver's notification routine to be called whenever a file system registers or unregisters itself as an active file system.
@@ -7,7 +7,7 @@ old-location: ifsk\ioregisterfsregistrationchangeex.htm
 old-project: ifsk
 ms.assetid: e318e13b-8b6c-4593-93ce-17d2a1056ac2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IoRegisterFsRegistrationChangeEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # IoRegisterFsRegistrationChangeEx function
@@ -61,7 +62,7 @@ Pointer to the driver object for the file system filter driver.
 
 ### -param DriverNotificationRoutine [in]
 
-A pointer to the <a href="ifsk.pdriver_fs_notification">PDRIVER_FS_NOTIFICATION</a> routine, which the file system calls when it registers or unregisters itself.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551037">PDRIVER_FS_NOTIFICATION</a> routine, which the file system calls when it registers or unregisters itself.
 
 
 ## -returns
@@ -77,21 +78,21 @@ A pointer to the <a href="ifsk.pdriver_fs_notification">PDRIVER_FS_NOTIFICATION<
 
 
 ## -remarks
-The effect of <b>IoRegisterFsRegistrationChangeEx</b> is identical to that of <a href="ifsk.ioregisterfsregistrationchange">IoRegisterFsRegistrationChange</a> on Windows XP and later. 
+The effect of <b>IoRegisterFsRegistrationChangeEx</b> is identical to that of <a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a> on Windows XP and later. 
 
-<b>IoRegisterFsRegistrationChangeEx</b> registers a file system filter driver to be notified whenever a file system calls <a href="ifsk.ioregisterfilesystem">IoRegisterFileSystem</a> or <a href="ifsk.iounregisterfilesystem">IoUnregisterFileSystem</a>. 
+<b>IoRegisterFsRegistrationChangeEx</b> registers a file system filter driver to be notified whenever a file system calls <a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a> or <a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>. 
 
-To stop receiving such notifications, the filter driver should call <a href="ifsk.iounregisterfsregistrationchange">IoUnregisterFsRegistrationChange</a>. 
+To stop receiving such notifications, the filter driver should call <a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>. 
 
-When a file system filter driver calls <b>IoRegisterFsRegistrationChangeEx</b>, its notification routine is also called immediately for all currently registered file systems (that is, file systems that have already called <a href="ifsk.ioregisterfilesystem">IoRegisterFileSystem</a> but have not yet called <a href="ifsk.iounregisterfilesystem">IoUnregisterFileSystem</a>). 
+When a file system filter driver calls <b>IoRegisterFsRegistrationChangeEx</b>, its notification routine is also called immediately for all currently registered file systems (that is, file systems that have already called <a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a> but have not yet called <a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>). 
 
 Because the caller's notification routine can be called even before <b>IoRegisterFsRegistrationChangeEx</b> returns, a filter driver should not call this routine until after it has created any data structures that it needs to process these notifications. 
 
-<b>IoRegisterFsRegistrationChangeEx</b> ignores RAW devices. For information about attaching to the RAW file system by name, see <a href="ifsk.attaching_the_filter_device_object_to_the_target_device_object">Attaching the Filter Device Object to the Target Device Object</a>. 
+<b>IoRegisterFsRegistrationChangeEx</b> ignores RAW devices. For information about attaching to the RAW file system by name, see <a href="https://msdn.microsoft.com/1df293db-417a-4fee-afb8-06ab527331fb">Attaching the Filter Device Object to the Target Device Object</a>. 
 
 <b>IoRegisterFsRegistrationChangeEx</b> increments the reference count on the filter driver's driver object. 
 
-If a file system filter driver calls <b>IoRegisterFsRegistrationChangeEx</b> twice in succession (without calling <a href="ifsk.iounregisterfsregistrationchange">IoUnregisterFsRegistrationChange</a> in between), passing the same values for the <i>DriverObject</i> and <i>DriverNotificationRoutine</i> parameters that it registered in the previous call to <b>IoRegisterFsRegistrationChangeEx</b>, and no other filter drivers have registered since the first call, <b>IoRegisterFsRegistrationChangeEx</b> returns STATUS_DEVICE_ALREADY_ATTACHED. 
+If a file system filter driver calls <b>IoRegisterFsRegistrationChangeEx</b> twice in succession (without calling <a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a> in between), passing the same values for the <i>DriverObject</i> and <i>DriverNotificationRoutine</i> parameters that it registered in the previous call to <b>IoRegisterFsRegistrationChangeEx</b>, and no other filter drivers have registered since the first call, <b>IoRegisterFsRegistrationChangeEx</b> returns STATUS_DEVICE_ALREADY_ATTACHED. 
 
 
 ## -requirements
@@ -143,21 +144,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ioregisterfilesystem">IoRegisterFileSystem</a>
+<a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a>
 </dt>
 <dt>
-<a href="ifsk.ioregisterfsregistrationchange">IoRegisterFsRegistrationChange</a>
+<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
 </dt>
 <dt>
-<a href="ifsk.iounregisterfilesystem">IoUnregisterFileSystem</a>
+<a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>
 </dt>
 <dt>
-<a href="ifsk.iounregisterfsregistrationchange">IoUnregisterFsRegistrationChange</a>
+<a href="..\ntifs\nf-ntifs-iounregisterfsregistrationchange.md">IoUnregisterFsRegistrationChange</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoRegisterFsRegistrationChangeEx routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoRegisterFsRegistrationChangeEx routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

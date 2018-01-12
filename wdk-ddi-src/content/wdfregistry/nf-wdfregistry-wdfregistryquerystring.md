@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfregistry.WdfRegistryQueryString
+UID: NF:wdfregistry.WdfRegistryQueryString
 title: WdfRegistryQueryString function
 author: windows-driver-content
 description: The WdfRegistryQueryString method retrieves the string data that is currently assigned to a specified registry string value and assigns the string to a specified framework string object.
@@ -7,7 +7,7 @@ old-location: wdf\wdfregistryquerystring.htm
 old-project: wdf
 ms.assetid: 2c1242ea-5d77-464e-9203-ef2236ea4619
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfRegistryQueryString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -65,7 +66,7 @@ A handle to a registry-key object that represents an opened registry key.
 
 ### -param ValueName [in]
 
-A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains a name for the registry value. 
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a name for the registry value. 
 
 
 ### -param String [in]
@@ -78,7 +79,7 @@ A handle to a framework string object. The framework will assign the registry va
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl>
-<a href="wdf.wdfregistryquerystring">WdfRegistryQueryString</a> was not called at IRQL = PASSIVE_LEVEL. 
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryquerystring.md">WdfRegistryQueryString</a> was not called at IRQL = PASSIVE_LEVEL. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl>An invalid parameter was specified.
@@ -100,7 +101,7 @@ A handle to a framework string object. The framework will assign the registry va
 
  
 
-For a list of other return values that the <b>WdfRegistryQueryString</b> method might return, see <a href="wdf.framework_object_creation_errors">Framework Object Creation Errors</a>.
+For a list of other return values that the <b>WdfRegistryQueryString</b> method might return, see <a href="https://msdn.microsoft.com/f5345c88-1c3a-4b32-9c93-c252713f7641">Framework Object Creation Errors</a>.
 
 
 
@@ -112,7 +113,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 ## -remarks
-To obtain a string from a string object, your driver can call <a href="wdf.wdfstringgetunicodestring">WdfStringGetUnicodeString</a>. 
+To obtain a string from a string object, your driver can call <a href="..\wdfstring\nf-wdfstring-wdfstringgetunicodestring.md">WdfStringGetUnicodeString</a>. 
 
 For more information about registry-key objects, see <a href="wdf.using_the_registry_in_kmdf_drivers">Using the Registry in Framework-Based Drivers</a>.
 
@@ -191,7 +192,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -199,33 +200,33 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryquerymemory">WdfRegistryQueryMemory</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryquerymemory.md">WdfRegistryQueryMemory</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryquerymultistring">WdfRegistryQueryMultiString</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryquerymultistring.md">WdfRegistryQueryMultiString</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryqueryunicodestring">WdfRegistryQueryUnicodeString</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryqueryunicodestring.md">WdfRegistryQueryUnicodeString</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryqueryulong">WdfRegistryQueryULong</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryqueryulong.md">WdfRegistryQueryULong</a>
 </dt>
 <dt>
-<a href="wdf.wdfregistryqueryvalue">WdfRegistryQueryValue</a>
+<a href="..\wdfregistry\nf-wdfregistry-wdfregistryqueryvalue.md">WdfRegistryQueryValue</a>
 </dt>
 <dt>
-<a href="wdf.wdfstringcreate">WdfStringCreate</a>
+<a href="..\wdfstring\nf-wdfstring-wdfstringcreate.md">WdfStringCreate</a>
 </dt>
 <dt>
-<a href="wdf.wdfstringgetunicodestring">WdfStringGetUnicodeString</a>
+<a href="..\wdfstring\nf-wdfstring-wdfstringgetunicodestring.md">WdfStringGetUnicodeString</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryQueryString method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRegistryQueryString method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

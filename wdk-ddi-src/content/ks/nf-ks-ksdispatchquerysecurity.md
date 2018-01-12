@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsDispatchQuerySecurity
+UID: NF:ks.KsDispatchQuerySecurity
 title: KsDispatchQuerySecurity function
 author: windows-driver-content
 description: The KsDispatchQuerySecurity function is used in the KSDISPATCH_TABLE.QuerySecurity entry to handle querying about the current security descriptor.
@@ -7,7 +7,7 @@ old-location: stream\ksdispatchquerysecurity.htm
 old-project: stream
 ms.assetid: 0aed2613-b40f-4328-91c4-c8e945c6ef17
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsDispatchQuerySecurity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsDispatchQuerySecurity function

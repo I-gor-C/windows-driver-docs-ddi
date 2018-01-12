@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSQUALITY
+UID: NS:ks.KSQUALITY
 title: KSQUALITY
 author: windows-driver-content
 description: The KSQUALITY structure is used to report QM problems in both kernel and user mode to their respective quality managers.
@@ -7,8 +7,8 @@ old-location: stream\ksquality.htm
 old-project: stream
 ms.assetid: 36caaea9-2354-4ed8-9649-5eb102def8d5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSQUALITY, *PKSQUALITY, PKSQUALITY, KSQUALITY
+ms.date: 1/9/2018
+ms.keywords: KSQUALITY, *PKSQUALITY, KSQUALITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSQUALITY, KSQUALITY
 ---
 
 # KSQUALITY structure

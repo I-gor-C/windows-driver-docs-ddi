@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._SET_LOCAL_HOST_PROPS2
+UID: NS:1394._SET_LOCAL_HOST_PROPS2
 title: _SET_LOCAL_HOST_PROPS2
 author: windows-driver-content
 description: SET_LOCAL_HOST_PROPS2 sets a lower bound on the value the bus will use for its gap count.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: ec4b8630-500d-494a-9a86-2f9cf9f9227b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SET_LOCAL_HOST_PROPS2, *PSET_LOCAL_HOST_PROPS2, SET_LOCAL_HOST_PROPS2, PSET_LOCAL_HOST_PROPS2
+ms.keywords: _SET_LOCAL_HOST_PROPS2, SET_LOCAL_HOST_PROPS2, *PSET_LOCAL_HOST_PROPS2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SET_LOCAL_HOST_PROPS2, *PSET_LOCAL_HOST_PROPS2
 ---
 
 # _SET_LOCAL_HOST_PROPS2 structure

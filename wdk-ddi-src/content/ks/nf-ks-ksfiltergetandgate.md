@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsFilterGetAndGate
+UID: NF:ks.KsFilterGetAndGate
 title: KsFilterGetAndGate function
 author: windows-driver-content
 description: The KsFilterGetAndGate function returns Filter's AND gate.
@@ -7,7 +7,7 @@ old-location: stream\ksfiltergetandgate.htm
 old-project: stream
 ms.assetid: b5f7c4ed-0596-4e88-b987-fd454e4b4971
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsFilterGetAndGate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsFilterGetAndGate function
@@ -55,11 +56,11 @@ PKSGATE KsFilterGetAndGate(
 
 ### -param Filter [in]
 
-A pointer to the <a href="stream.ksfilter">KSFILTER</a> structure for which to acquire the corresponding AND gate.
+A pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure for which to acquire the corresponding AND gate.
 
 
 ## -returns
-<b>KsFilterGetAndGate</b> returns <i>Filter</i>'s AND gate as a pointer to a <a href="stream.ksgate">KSGATE</a> structure.
+<b>KsFilterGetAndGate</b> returns <i>Filter</i>'s AND gate as a pointer to a <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure.
 
 
 ## -remarks
@@ -116,27 +117,27 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksgate">KSGATE</a>
+<a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
 </dt>
 <dt>
-<a href="stream.ksgatecapturethreshold">KsGateCaptureThreshold</a>
+<a href="..\ks\nf-ks-ksgatecapturethreshold.md">KsGateCaptureThreshold</a>
 </dt>
 <dt>
-<a href="stream.ksgateturninputon">KsGateTurnInputOn</a>
+<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
 </dt>
 <dt>
-<a href="stream.ksgateturninputoff">KsGateTurnInputOff</a>
+<a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
 </dt>
 <dt>
-<a href="stream.kspinattachandgate">KsPinAttachAndGate</a>
+<a href="..\ks\nf-ks-kspinattachandgate.md">KsPinAttachAndGate</a>
 </dt>
 <dt>
-<a href="stream.kspingetandgate">KsPinGetAndGate</a>
+<a href="..\ks\nf-ks-kspingetandgate.md">KsPinGetAndGate</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterGetAndGate function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterGetAndGate function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

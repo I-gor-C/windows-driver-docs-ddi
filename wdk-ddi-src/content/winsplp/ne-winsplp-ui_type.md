@@ -1,5 +1,5 @@
 ---
-UID: NE.winsplp.UI_TYPE
+UID: NE:winsplp.UI_TYPE
 title: UI_TYPE
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\ui_type.htm
 old-project: print
 ms.assetid: 99C87D65-C633-4AA2-95DF-6AE74428C71D
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: UI_TYPE, UI_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UI_TYPE
 req.product: Windows 10 or later.
 ---
 

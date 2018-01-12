@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLWAITINGINFO
+UID: NS:ntddrilapitypes.RILCALLWAITINGINFO
 title: RILCALLWAITINGINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallwaitinginfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 526ce708-93bb-43f2-9d78-b3e8360e01da
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLWAITINGINFO, RILCALLWAITINGINFO, *LPRILCALLWAITINGINFO, LPRILCALLWAITINGINFO
+ms.date: 1/8/2018
+ms.keywords: RILCALLWAITINGINFO, RILCALLWAITINGINFO, *LPRILCALLWAITINGINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLWAITINGINFO, *LPRILCALLWAITINGINFO
 ---
 
 # RILCALLWAITINGINFO structure

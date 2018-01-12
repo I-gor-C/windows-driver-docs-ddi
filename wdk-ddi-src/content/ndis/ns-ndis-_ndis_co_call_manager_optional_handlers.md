@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
+UID: NS:ndis._NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
 title: _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
 author: windows-driver-content
 description: The NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure specifies CoNDIS call manager ProtocolXxx functions for the driver that passes this structure to the NdisSetOptionalHandlers function.
 old-location: netvista\ndis_co_call_manager_optional_handlers.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 12d541e1-04dd-4512-827e-d27f16260fe3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, *PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, *PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS, *PNDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS
 ---
 
 # _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure
@@ -40,7 +41,7 @@ req.irql: See Remarks section
 ## -description
 The NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure specifies CoNDIS call manager 
   <i>ProtocolXxx</i> functions for the driver that passes this structure to the 
-  <a href="netvista.ndissetoptionalhandlers">
+  <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">
   NdisSetOptionalHandlers</a> function.
 
 
@@ -77,7 +78,7 @@ typedef struct _NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      call manager CoNDIS characteristics structure (NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS). Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_CO_CALL_MANAGER_OPTIONAL_HANDLERS, the 
@@ -206,7 +207,7 @@ The entry point of the caller's
 ## -remarks
 To specify entry points as a CoNDIS call manager, a protocol driver or miniport call manager (MCM)
     initializes an NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure and passes it to the 
-    <a href="netvista.ndissetoptionalhandlers">
+    <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">
     NdisSetOptionalHandlers</a> function.
 
 A stand-alone call manager calls 
@@ -215,25 +216,25 @@ A stand-alone call manager calls
      call manager must set every entry point in the NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure to a
      driver-supplied 
      <i>ProtocolXxx</i> function when it calls 
-     <a href="netvista.ndissetoptionalhandlers">NdisSetOptionalHandlers</a>, even if
+     <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>, even if
      the call manager does not support incoming calls, outgoing calls, or point-to-multipoint connections.
      For whatever subset of connection-oriented functionality that such a call manager does not support, its
      placeholder 
      <i>ProtocolXxx</i> functions should simply return NDIS_STATUS_NOT_SUPPORTED.
 
 After a stand-alone call manager calls the 
-     <a href="netvista.ndiscmregisteraddressfamilyex">
+     <a href="..\ndis\nf-ndis-ndiscmregisteraddressfamilyex.md">
      NdisCmRegisterAddressFamilyEx</a> function successfully, NDIS ignores any entry point that the call
      manager previously specified for the 
      <a href="..\ndis\nc-ndis-protocol_oid_request_complete.md">
      ProtocolOidRequestComplete</a> function of the 
-     <a href="netvista.ndis_protocol_driver_characteristics">
+     <a href="..\ndis\ns-ndis-_ndis_protocol_driver_characteristics.md">
      NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</a> structure that it passed to the 
-     <a href="netvista.ndisregisterprotocoldriver">
+     <a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">
      NdisRegisterProtocolDriver</a> function.
 
 An MCM calls the 
-     <a href="netvista.ndissetoptionalhandlers">NdisSetOptionalHandlers</a> function
+     <a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a> function
      from the 
      <a href="netvista.miniportsetoptions">MiniportSetOptions</a> function. The
      MCM must set every 
@@ -315,21 +316,21 @@ Header
 <a href="netvista.miniportsetoptions">MiniportSetOptions</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_protocol_driver_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_protocol_driver_characteristics.md">
    NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmregisteraddressfamilyex">
+<a href="..\ndis\nf-ndis-ndiscmregisteraddressfamilyex.md">
    NdisCmRegisterAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisregisterprotocoldriver">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndissetoptionalhandlers">NdisSetOptionalHandlers</a>
+<a href="..\ndis\nf-ndis-ndissetoptionalhandlers.md">NdisSetOptionalHandlers</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cm_activate_vc_complete.md">
@@ -381,5 +382,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CO_CALL_MANAGER_OPTIONAL_HANDLERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

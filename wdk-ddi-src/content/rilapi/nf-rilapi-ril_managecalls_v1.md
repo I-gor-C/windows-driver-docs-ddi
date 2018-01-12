@@ -1,13 +1,13 @@
 ---
-UID: NF.rilapi.RIL_ManageCalls_V1
+UID: NF:rilapi.RIL_ManageCalls_V1
 title: RIL_ManageCalls_V1 function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_managecalls_v1.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 98a9dd7a-fef0-4d2f-9302-86c9c5b790e0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RIL_ManageCalls_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product: Windows 10 or later.
 ---
 

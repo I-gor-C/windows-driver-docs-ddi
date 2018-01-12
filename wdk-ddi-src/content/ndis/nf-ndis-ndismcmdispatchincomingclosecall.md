@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMCmDispatchIncomingCloseCall
+UID: NF:ndis.NdisMCmDispatchIncomingCloseCall
 title: NdisMCmDispatchIncomingCloseCall macro
 author: windows-driver-content
 description: NdisMCmDispatchIncomingCloseCall tells a client to tear down an active or offered call, usually because the MCM driver has received a request from the network to close the connection.
 old-location: netvista\ndismcmdispatchincomingclosecall.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 843050e1-a1ec-4313-b527-529c4ff6ca07
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMCmDispatchIncomingCloseCall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMCmDispatchIncomingCloseCall macro
@@ -68,7 +69,7 @@ Specifies a caller-determined NDIS_STATUS_<i>XXX</i>, indicating the reason for 
 
 Specifies the handle to the VC of the call being disconnected. This handle was supplied by NDIS
      when the VC was originally created, whether by the MCM driver with 
-     <a href="netvista.ndismcmcreatevc">NdisMCmCreateVc</a> or as an input parameter
+     <a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a> or as an input parameter
      to its 
      <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
 
@@ -90,7 +91,7 @@ In the course of normal network operations, an MCM driver calls
     <b>NdisMCmDispatchIncomingCloseCall</b> with the 
     <i>CloseStatus</i> set to NDIS_STATUS_SUCCESS because the corresponding client on the remote node has
     called 
-    <a href="netvista.ndisclclosecall">NdisClCloseCall</a>.
+    <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>.
 
 However, an MCM driver also can call 
     <b>NdisMCmDispatchIncomingCloseCall</b> if either of the following occur:
@@ -112,12 +113,12 @@ Abormal network conditions force the MCM driver to tear down active calls. For e
 After the client calls 
     <b>NdisClCloseCall</b> thereby causing the deactivation of the VC, the original creator of the VC is
     responsible for destroying the VC. Either the client calls 
-    <a href="netvista.ndiscodeletevc">NdisCoDeleteVc</a>, which causes NDIS to call
+    <a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>, which causes NDIS to call
     the MCM driver's 
     <a href="..\ndis\nc-ndis-protocol_co_delete_vc.md">ProtocolCoDeleteVc</a> function, or the
     MCM driver calls 
     <b>NdisMCmDeleteVc</b> after calling 
-    <a href="netvista.ndismcmdeactivatevc">NdisMCmDeactivateVc</a> and releasing any
+    <a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a> and releasing any
     additional resources it had associated with the VC that it created.
 
 A call to 
@@ -185,7 +186,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -196,20 +197,20 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
 </dt>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdispatchincomingdropparty">
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingdropparty.md">
    NdisMCmDispatchIncomingDropParty</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdeactivatevc">NdisMCmDeactivateVc</a>
+<a href="..\ndis\nf-ndis-ndismcmdeactivatevc.md">NdisMCmDeactivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdeletevc">NdisMCmDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdispatchincomingcall">NdisMCmDispatchIncomingCall</a>
+<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_incoming_close_call.md">ProtocolClIncomingCloseCall</a>
@@ -222,5 +223,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMCmDispatchIncomingCloseCall macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmDispatchIncomingCloseCall macro%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

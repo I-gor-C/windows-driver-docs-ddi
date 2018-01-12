@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsProbeStreamIrp
+UID: NF:ks.KsProbeStreamIrp
 title: KsProbeStreamIrp function
 author: windows-driver-content
 description: The KsProbeStreamIrp function makes the specified modifications to the input and output buffers of the given IRP based on the flags passed, and it then validates the stream header.
@@ -7,7 +7,7 @@ old-location: stream\ksprobestreamirp.htm
 old-project: stream
 ms.assetid: 25b49781-2676-4b5e-b17b-dcb1bf98b297
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsProbeStreamIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsProbeStreamIrp function

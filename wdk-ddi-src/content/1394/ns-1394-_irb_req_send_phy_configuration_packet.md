@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
+UID: NS:1394._IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
 title: _IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
 author: windows-driver-content
 description: This structure contains the fields necessary to carry out a SendPhyConfigurationPacket request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
 ---
 
 # _IRB_REQ_SEND_PHY_CONFIGURATION_PACKET structure

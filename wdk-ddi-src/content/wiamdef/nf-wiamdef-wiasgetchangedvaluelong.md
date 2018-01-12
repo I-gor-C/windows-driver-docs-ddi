@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasGetChangedValueLong
+UID: NF:wiamdef.wiasGetChangedValueLong
 title: wiasGetChangedValueLong function
 author: windows-driver-content
 description: The wiasGetChangedValueLong function determines whether a property with a long integer value has been changed by an application.
 old-location: image\wiasgetchangedvaluelong.htm
-old-project: Image
+old-project: image
 ms.assetid: 2c23729c-9fab-4e3c-9205-175a6aba8f8a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasGetChangedValueLong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -65,7 +66,7 @@ Pointer to a WIA item context.
 
 ### -param pContext [in]
 
-Pointer to a <a href="image.wia_property_context">WIA_PROPERTY_CONTEXT</a> structure that contains the current property context.
+Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a> structure that contains the current property context.
 
 
 ### -param bNoValidation 
@@ -80,7 +81,7 @@ Specifies the property identifier of the property being tested.
 
 ### -param pValInfo [out]
 
-Pointer to a <a href="image.wias_changed_value_info">WIAS_CHANGED_VALUE_INFO</a> structure that contains the current and previous values of the property.
+Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_changed_value_info.md">WIAS_CHANGED_VALUE_INFO</a> structure that contains the current and previous values of the property.
 
 
 ## -returns
@@ -152,24 +153,24 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="image.wiasgetchangedvaluefloat">wiasGetChangedValueFloat</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluefloat.md">wiasGetChangedValueFloat</a>
 </dt>
 <dt>
-<a href="image.wiasgetchangedvalueguid">wiasGetChangedValueGuid</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvalueguid.md">wiasGetChangedValueGuid</a>
 </dt>
 <dt>
-<a href="image.wiasgetchangedvaluestr">wiasGetChangedValueStr</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluestr.md">wiasGetChangedValueStr</a>
 </dt>
 <dt>
-<a href="image.wia_property_context">WIA_PROPERTY_CONTEXT</a>
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a>
 </dt>
 <dt>
-<a href="image.wias_changed_value_info">WIAS_CHANGED_VALUE_INFO</a>
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_changed_value_info.md">WIAS_CHANGED_VALUE_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20wiasGetChangedValueLong function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasGetChangedValueLong function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

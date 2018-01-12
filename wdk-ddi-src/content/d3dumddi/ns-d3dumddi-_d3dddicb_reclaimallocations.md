@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDICB_RECLAIMALLOCATIONS
+UID: NS:d3dumddi._D3DDDICB_RECLAIMALLOCATIONS
 title: _D3DDDICB_RECLAIMALLOCATIONS
 author: windows-driver-content
 description: Describes video memory resources that are to be reclaimed and that the user-mode display driver previously offered for reuse. Used with the pfnReclaimAllocationsCb function.
@@ -7,7 +7,7 @@ old-location: display\d3dddicb_reclaimallocations.htm
 old-project: display
 ms.assetid: 61c8fdbf-b003-4caa-af13-ba6f1e22400c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDICB_RECLAIMALLOCATIONS, D3DDDICB_RECLAIMALLOCATIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDICB_RECLAIMALLOCATIONS
 ---
 
 # _D3DDDICB_RECLAIMALLOCATIONS structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-Describes video memory resources that are to be reclaimed and that the user-mode display driver  previously offered  for reuse. Used with the  <a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a> function.
+Describes video memory resources that are to be reclaimed and that the user-mode display driver  previously offered  for reuse. Used with the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a> function.
 
 
 
@@ -135,12 +136,12 @@ Header
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a>
 </dt>
 <dt>
-<a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDICB_RECLAIMALLOCATIONS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDICB_RECLAIMALLOCATIONS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

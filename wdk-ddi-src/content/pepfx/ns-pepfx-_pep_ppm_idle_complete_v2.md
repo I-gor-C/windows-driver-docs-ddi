@@ -1,5 +1,5 @@
 ---
-UID: NS.PEPFX._PEP_PPM_IDLE_COMPLETE_V2
+UID: NS:pepfx._PEP_PPM_IDLE_COMPLETE_V2
 title: _PEP_PPM_IDLE_COMPLETE_V2
 author: windows-driver-content
 description: The PEP_PPM_IDLE_COMPLETE_V2 structure describe the idle states from which the processor and hardware platform are waking.
@@ -7,8 +7,8 @@ old-location: kernel\pep_ppm_idle_complete_v2.htm
 old-project: kernel
 ms.assetid: 2807D1D7-DCAF-446C-8DAD-CAF244B52CD2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_PPM_IDLE_COMPLETE_V2, PEP_PPM_IDLE_COMPLETE_V2, *PPEP_PPM_IDLE_COMPLETE_V2, PPEP_PPM_IDLE_COMPLETE_V2
+ms.date: 1/4/2018
+ms.keywords: _PEP_PPM_IDLE_COMPLETE_V2, PEP_PPM_IDLE_COMPLETE_V2, *PPEP_PPM_IDLE_COMPLETE_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PEP_PPM_IDLE_COMPLETE_V2, *PPEP_PPM_IDLE_COMPLETE_V2
 ---
 
 # _PEP_PPM_IDLE_COMPLETE_V2 structure
@@ -65,7 +66,7 @@ typedef struct _PEP_PPM_IDLE_COMPLETE_V2 {
 
 
 ## -remarks
-This structure is used by the <a href="kernel.pep_notify_ppm_idle_complete">PEP_NOTIFY_PPM_IDLE_COMPLETE</a> notification. The <b>ProcessorState</b> and <b>PlatformState</b> members contain input values that are supplied by the Windows <a href="kernel.power_management_framework__pofx__routines">power management framework</a> (PoFx) when this notification is sent to the PEP.
+This structure is used by the <a href="kernel.pep_notify_ppm_idle_complete">PEP_NOTIFY_PPM_IDLE_COMPLETE</a> notification. The <b>ProcessorState</b> and <b>PlatformState</b> members contain input values that are supplied by the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx) when this notification is sent to the PEP.
 
 
 ## -requirements

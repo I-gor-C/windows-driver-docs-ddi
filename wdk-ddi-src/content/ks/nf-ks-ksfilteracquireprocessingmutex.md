@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsFilterAcquireProcessingMutex
+UID: NF:ks.KsFilterAcquireProcessingMutex
 title: KsFilterAcquireProcessingMutex function
 author: windows-driver-content
 description: The KsFilterAcquireProcessingMutex function acquires the processing mutex for a specified AVStream filter.
@@ -7,7 +7,7 @@ old-location: stream\ksfilteracquireprocessingmutex.htm
 old-project: stream
 ms.assetid: d4a2fe1a-9a16-45b8-b061-9d1b1398e801
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsFilterAcquireProcessingMutex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsFilterAcquireProcessingMutex function
@@ -55,7 +56,7 @@ void KsFilterAcquireProcessingMutex(
 
 ### -param Filter [in]
 
-A pointer to the <a href="stream.ksfilter">KSFILTER</a> structure representing the AVStream filter for which to acquire the processing mutex.
+A pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure representing the AVStream filter for which to acquire the processing mutex.
 
 
 ## -returns
@@ -128,25 +129,25 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksfilterreleaseprocessingmutex">KsFilterReleaseProcessingMutex</a>
+<a href="..\ks\nf-ks-ksfilterreleaseprocessingmutex.md">KsFilterReleaseProcessingMutex</a>
 </dt>
 <dt><b>KsFilterReleaseProcessingMutex</b></dt>
 <dt>
-<a href="stream.ksfilterattemptprocessing">KsFilterAttemptProcessing</a>
+<a href="..\ks\nf-ks-ksfilterattemptprocessing.md">KsFilterAttemptProcessing</a>
 </dt>
 <dt>
-<a href="stream.kspingetandgate">KsPinGetAndGate</a>
+<a href="..\ks\nf-ks-kspingetandgate.md">KsPinGetAndGate</a>
 </dt>
 <dt>
-<a href="stream.kspinacquireprocessingmutex">KsPinAcquireProcessingMutex</a>
+<a href="..\ks\nf-ks-kspinacquireprocessingmutex.md">KsPinAcquireProcessingMutex</a>
 </dt>
 <dt>
-<a href="stream.kspinreleaseprocessingmutex">KsPinReleaseProcessingMutex</a>
+<a href="..\ks\nf-ks-kspinreleaseprocessingmutex.md">KsPinReleaseProcessingMutex</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterAcquireProcessingMutex function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterAcquireProcessingMutex function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioSignalProcessing.GetModes
+UID: NF:portcls.IMiniportAudioSignalProcessing.GetModes
 title: IMiniportAudioSignalProcessing::GetModes method
 author: windows-driver-content
 description: The GetModes method, Gets the audio signal processing modes supported by an audio pin.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioSignalProcessing::GetModes method

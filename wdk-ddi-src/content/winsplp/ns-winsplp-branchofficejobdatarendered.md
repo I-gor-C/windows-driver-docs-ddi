@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP.BRANCHOFFICEJOBDATARENDERED
+UID: NS:winsplp.BranchOfficeJobDataRendered
 title: BranchOfficeJobDataRendered
 author: windows-driver-content
 description: Contains the necessary data for logging a branch office job Pipeline Rendering Event on a remote server. This is based on job-related data available to the spooler.
@@ -7,8 +7,8 @@ old-location: print\branchofficejobdatarendered.htm
 old-project: print
 ms.assetid: 67A296B3-5D59-475E-9026-EDAB90C8E3DD
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: BranchOfficeJobDataRendered, BranchOfficeJobDataRendered, *PBranchOfficeJobDataRendered, PBranchOfficeJobDataRendered
+ms.date: 1/8/2018
+ms.keywords: BranchOfficeJobDataRendered, BranchOfficeJobDataRendered, *PBranchOfficeJobDataRendered
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BranchOfficeJobDataRendered, *PBranchOfficeJobDataRendered
 req.product: Windows 10 or later.
 ---
 

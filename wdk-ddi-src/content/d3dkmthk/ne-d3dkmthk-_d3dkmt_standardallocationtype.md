@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmthk._D3DKMT_STANDARDALLOCATIONTYPE
+UID: NE:d3dkmthk._D3DKMT_STANDARDALLOCATIONTYPE
 title: _D3DKMT_STANDARDALLOCATIONTYPE
 author: windows-driver-content
 description: Used to give information on the allocation type.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt-standardallocationtype.htm
 old-project: display
 ms.assetid: 7ce6d148-bfe8-4040-a4c1-ccd22fd07307
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_STANDARDALLOCATIONTYPE, D3DKMT_STANDARDALLOCATIONTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_STANDARDALLOCATIONTYPE
 ---
 
 # _D3DKMT_STANDARDALLOCATIONTYPE enumeration

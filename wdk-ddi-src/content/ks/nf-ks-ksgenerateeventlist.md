@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsGenerateEventList
+UID: NF:ks.KsGenerateEventList
 title: KsGenerateEventList function
 author: windows-driver-content
 description: The KsGenerateEventList function enumerates the event list and searches for the specified event to generate.
@@ -7,7 +7,7 @@ old-location: stream\ksgenerateeventlist.htm
 old-project: stream
 ms.assetid: 336dbbc1-0f3c-4a3f-b3b4-017f4d158bda
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGenerateEventList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: Any level (See Remarks section)
+req.typenames: 
 ---
 
 # KsGenerateEventList function
@@ -140,21 +141,21 @@ Any level (See Remarks section)
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksfiltergenerateevents">KsFilterGenerateEvents</a>
+<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
 </dt>
 <dt>
-<a href="stream.kspingenerateevents">KsPinGenerateEvents</a>
+<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
 </dt>
 <dt>
-<a href="stream.kspinaddevent">KsPinAddEvent</a>
+<a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
 </dt>
 <dt>
-<a href="stream.ksfilteraddevent">KsFilterAddEvent</a>
+<a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGenerateEventList function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGenerateEventList function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

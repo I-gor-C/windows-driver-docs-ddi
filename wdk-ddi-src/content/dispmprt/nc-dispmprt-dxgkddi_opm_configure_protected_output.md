@@ -1,5 +1,5 @@
 ---
-UID: NC.dispmprt.DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT
+UID: NC:dispmprt.DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT
 title: DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT
 author: windows-driver-content
 description: The DxgkDdiOPMConfigureProtectedOutput function configures the given protected output object.
@@ -7,8 +7,8 @@ old-location: display\dxgkddiopmconfigureprotectedoutput.htm
 old-project: display
 ms.assetid: a7829587-c1e7-43ec-a0bb-92bca94b7c3d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ---
 
 # DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT callback
@@ -72,7 +73,7 @@ The handle to a protected output object. The <a href="..\dispmprt\nc-dispmprt-dx
 
 ### -param Parameters [in]
 
-A pointer to a <a href="display.dxgkmdt_opm_configure_parameters">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a> structure that contains parameters that are used to configure the protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter. 
+A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_configure_parameters.md">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a> structure that contains parameters that are used to configure the protected output object whose handle is specified in the <i>ProtectedOutputHandle</i> parameter. 
 
 
 ### -param AdditionalParametersSize [in]
@@ -156,12 +157,12 @@ PASSIVE_LEVEL (see Remarks section)
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
 </dt>
 <dt>
-<a href="display.dxgkmdt_opm_configure_parameters">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_configure_parameters.md">DXGKMDT_OPM_CONFIGURE_PARAMETERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

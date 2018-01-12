@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_NI_REQUEST_PARAM
+UID: NS:gnssdriver.GNSS_NI_REQUEST_PARAM
 title: GNSS_NI_REQUEST_PARAM
 author: windows-driver-content
 description: This structure contains the NI request parameters.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 0528EEE6-31D6-4CF6-8192-3557C28B4D10
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_NI_REQUEST_PARAM, PGNSS_NI_REQUEST_PARAM, GNSS_NI_REQUEST_PARAM, *PGNSS_NI_REQUEST_PARAM
+ms.keywords: GNSS_NI_REQUEST_PARAM, GNSS_NI_REQUEST_PARAM, *PGNSS_NI_REQUEST_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_NI_REQUEST_PARAM, *PGNSS_NI_REQUEST_PARAM
 ---
 
 # GNSS_NI_REQUEST_PARAM structure

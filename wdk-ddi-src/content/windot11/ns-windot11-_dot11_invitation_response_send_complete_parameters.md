@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11._DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS
+UID: NS:windot11._DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS
 title: _DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS
 author: windows-driver-content
 description: The parameters for an invitation response send completion are specified in a DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS structure. This structure is sent with an NDIS_STATUS_DOT11_WFD_INVITATION_RESPONSE_SEND_COMPLETE indication.
 old-location: netvista\dot11_invitation_response_send_complete_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: EE537A6E-6722-4829-986A-37D41B149E37
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS, *PDOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS
+ms.date: 1/8/2018
+ms.keywords: _DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS, DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS, *PDOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS, *PDOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS
 req.product: Windows 10 or later.
 ---
 
@@ -83,7 +84,7 @@ The type, revision, and size of the <b>DOT11_INVITATION_RESPONSE_SEND_COMPLETE_P
 
 ### -field ReceiverDeviceAddress
 
-The address of the device that the invitation response was sent to. This must match the <b>ReceiverDeviceAddress</b> member of <a href="netvista.dot11_send_invitation_response_parameters">DOT11_SEND_INVITATION_RESPONSE_PARAMETERS</a> sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451807">OID_DOT11_WFD_SEND_INVITATION_RESPONSE</a> request.
+The address of the device that the invitation response was sent to. This must match the <b>ReceiverDeviceAddress</b> member of <a href="..\windot11\ns-windot11-_dot11_send_invitation_response_parameters.md">DOT11_SEND_INVITATION_RESPONSE_PARAMETERS</a> sent with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451807">OID_DOT11_WFD_SEND_INVITATION_RESPONSE</a> request.
 
 
 ### -field DialogToken
@@ -137,7 +138,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_invitation_response_send_complete_parameters">DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS</a>
+<a href="..\windot11\ns-windot11-_dot11_invitation_response_send_complete_parameters.md">DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439781">NDIS_STATUS_DOT11_WFD_INVITATION_RESPONSE_SEND_COMPLETE</a>
@@ -150,5 +151,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_INVITATION_RESPONSE_SEND_COMPLETE_PARAMETERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

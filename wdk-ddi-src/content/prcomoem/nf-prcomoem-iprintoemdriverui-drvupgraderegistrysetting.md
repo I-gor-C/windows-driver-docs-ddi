@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemDriverUI.DrvUpgradeRegistrySetting
+UID: NF:prcomoem.IPrintOemDriverUI.DrvUpgradeRegistrySetting
 title: IPrintOemDriverUI::DrvUpgradeRegistrySetting method
 author: windows-driver-content
 description: The IPrintOemDriverUI::DrvUpdateRegistrySetting method is provided by the Unidrv and Pscript5 minidrivers so that user interface plug-ins can update device settings stored in the registry.
@@ -7,7 +7,7 @@ old-location: print\iprintoemdriverui_drvupgraderegistrysetting.htm
 old-project: print
 ms.assetid: 9249dd75-7d90-414a-b6b5-4be0fc4f3170
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemDriverUI, IPrintOemDriverUI::DrvUpgradeRegistrySetting, DrvUpgradeRegistrySetting
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -87,7 +88,7 @@ The method must return one of the following values.
 
 
 ## -remarks
-The <code>IPrintOemDriverUI::DrvUpdateRegistrySetting</code> method is meant to be called from a user interface plug-in's <a href="print.iprintoemui_upgradeprinter">IPrintOemUI::UpgradePrinter</a> method, when it is necessary to update registry settings that were stored in private registry keys for an earlier version of the driver, but are now contained in a GPD or PPD file.
+The <code>IPrintOemDriverUI::DrvUpdateRegistrySetting</code> method is meant to be called from a user interface plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554189">IPrintOemUI::UpgradePrinter</a> method, when it is necessary to update registry settings that were stored in private registry keys for an earlier version of the driver, but are now contained in a GPD or PPD file.
 
 
 ## -requirements

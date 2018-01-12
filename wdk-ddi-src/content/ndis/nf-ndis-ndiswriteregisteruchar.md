@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisWriteRegisterUchar
+UID: NF:ndis.NdisWriteRegisterUchar
 title: NdisWriteRegisterUchar macro
 author: windows-driver-content
 description: NdisWriteRegisterUchar is called by the miniport driver to write a UCHAR to a memory-mapped device register.
 old-location: netvista\ndiswriteregisteruchar.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8f720af6-d70a-4682-86f4-011e70a6f64f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisWriteRegisterUchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisWriteRegisterUchar macro
@@ -59,7 +60,7 @@ VOID NdisWriteRegisterUchar(
 
 Pointer to the memory-mapped register. This virtual address must fall within a range returned by
      an initialization-time call to 
-     <a href="netvista.ndismmapiospace">NdisMMapIoSpace</a>.
+     <a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>.
 
 
 ### -param Data [in]
@@ -129,21 +130,21 @@ Any level
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismmapiospace">NdisMMapIoSpace</a>
+<a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
 </dt>
 <dt>
-<a href="netvista.ndisreadregisteruchar">NdisReadRegisterUchar</a>
+<a href="..\ndis\nf-ndis-ndisreadregisteruchar.md">NdisReadRegisterUchar</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteregisterulong">NdisWriteRegisterUlong</a>
+<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteregisterushort">NdisWriteRegisterUshort</a>
+<a href="..\ndis\nf-ndis-ndiswriteregisterushort.md">NdisWriteRegisterUshort</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisWriteRegisterUchar macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisWriteRegisterUchar macro%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

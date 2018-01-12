@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfusb.IWDFUsbTargetPipe.SetPipePolicy
+UID: NF:wudfusb.IWDFUsbTargetPipe.SetPipePolicy
 title: IWDFUsbTargetPipe::SetPipePolicy method
 author: windows-driver-content
 description: The SetPipePolicy method sets the WinUsb pipe policy.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbtargetpipe_setpipepolicy.htm
 old-project: wdf
 ms.assetid: 3c8f5c4a-a1a3-41a9-ae55-f83048aab0ec
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFUsbTargetPipe, IWDFUsbTargetPipe::SetPipePolicy, SetPipePolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -78,11 +79,11 @@ A pointer to the buffer that contains the WinUsb pipe policy.
 <dl>
 <dt><b>S_OK </b></dt>
 </dl>
-<a href="wdf.iwdfusbtargetpipe_setpipepolicy">SetPipePolicy</a> successfully set the WinUsb pipe policy. 
+<a href="https://msdn.microsoft.com/3c8f5c4a-a1a3-41a9-ae55-f83048aab0ec">SetPipePolicy</a> successfully set the WinUsb pipe policy. 
 <dl>
 <dt><b>E_OUTOFMEMORY </b></dt>
 </dl>
-<a href="wdf.iwdfusbtargetpipe_setpipepolicy">SetPipePolicy</a> encountered an allocation failure.
+<a href="https://msdn.microsoft.com/3c8f5c4a-a1a3-41a9-ae55-f83048aab0ec">SetPipePolicy</a> encountered an allocation failure.
 <dl>
 <dt><b>An error code that is defined in Winerror.h</b></dt>
 </dl>This value corresponds to the error code that the WinUsb API returned.
@@ -93,9 +94,9 @@ A pointer to the buffer that contains the WinUsb pipe policy.
 ## -remarks
 Pipe policy controls the behavior of the USB pipe (for example, time-outs, handling short packets, and so on).
 
-For more information about valid policy types and values that a UMDF driver can pass for the <i>PolicyType</i> and <i>Value</i> parameters, see the <a href="buses.winusb_setpipepolicy">WinUsb_SetPipePolicy</a> function.
+For more information about valid policy types and values that a UMDF driver can pass for the <i>PolicyType</i> and <i>Value</i> parameters, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540304">WinUsb_SetPipePolicy</a> function.
 
-For information about the behavior of the pipe policies, see <a href="buses.winusb_functions_for_pipe_policy_modification">WinUSB Functions for Pipe Policy Modification</a>.
+For information about the behavior of the pipe policies, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff728833">WinUSB Functions for Pipe Policy Modification</a>.
 
 The <b>SetPipePolicy</b> method generates a UMDF request and synchronously sends the request to the I/O target.
 
@@ -165,15 +166,15 @@ DLL
 <a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe.md">IWDFUsbTargetPipe</a>
 </dt>
 <dt>
-<a href="buses.winusb_setpipepolicy">WinUsb_SetPipePolicy</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540304">WinUsb_SetPipePolicy</a>
 </dt>
 <dt>
-<a href="wdf.iwdfusbtargetpipe_retrievepipepolicy">IWDFUsbTargetPipe::RetrievePipePolicy</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560418">IWDFUsbTargetPipe::RetrievePipePolicy</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetPipe::SetPipePolicy method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFUsbTargetPipe::SetPipePolicy method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

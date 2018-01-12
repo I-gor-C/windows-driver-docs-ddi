@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpar.IOCTL_IEEE1284_GET_MODE
+UID: NI:ntddpar.IOCTL_IEEE1284_GET_MODE
 title: IOCTL_IEEE1284_GET_MODE
 author: windows-driver-content
 description: The IOCTL_IEEE1284_GET_MODE request returns the IEEE 1284 read and write protocols that are currently set for a parallel device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # IOCTL_IEEE1284_GET_MODE IOCTL
@@ -66,7 +67,7 @@ The <b>AssociatedIrp.SystemBuffer</b> member points to a PARCLASS_NEGOTIATION_MA
 
 
 ### -output-buffer-length
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="parports.parclass_negotiation_mask">PARCLASS_NEGOTIATION_MASK</a> structure. 
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\ntddpar\ns-ntddpar-_parclass_negotiation_mask.md">PARCLASS_NEGOTIATION_MASK</a> structure. 
 
 
 ### -in-out-buffer
@@ -118,7 +119,7 @@ Header
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_get_device_caps.md">IOCTL_PAR_GET_DEVICE_CAPS</a>
 </dt>
 <dt>
-<a href="parports.parclass_negotiation_mask">PARCLASS_NEGOTIATION_MASK</a>
+<a href="..\ntddpar\ns-ntddpar-_parclass_negotiation_mask.md">PARCLASS_NEGOTIATION_MASK</a>
 </dt>
 </dl>
  

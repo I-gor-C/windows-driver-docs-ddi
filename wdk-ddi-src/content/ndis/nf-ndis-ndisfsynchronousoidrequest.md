@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisFSynchronousOidRequest
+UID: NF:ndis.NdisFSynchronousOidRequest
 title: NdisFSynchronousOidRequest function
 author: windows-driver-content
 description: This function is reserved.
 old-location: netvista\ndisfsynchronousoidrequest.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 01B625EB-AB6D-496F-95F2-22845460324A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisFSynchronousOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisFSynchronousOidRequest function

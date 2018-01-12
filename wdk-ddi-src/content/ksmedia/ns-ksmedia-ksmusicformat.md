@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSMUSICFORMAT
+UID: NS:ksmedia.KSMUSICFORMAT
 title: KSMUSICFORMAT
 author: windows-driver-content
 description: The KSMUSICFORMAT structure is used to send and receive information about MIDI data that is input from and output to WDM audio devices.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 836e2eb5-b8cf-4c12-a855-f63709622c74
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSMUSICFORMAT, *PKSMUSICFORMAT, PKSMUSICFORMAT, KSMUSICFORMAT
+ms.keywords: KSMUSICFORMAT, KSMUSICFORMAT, *PKSMUSICFORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSMUSICFORMAT, *PKSMUSICFORMAT
 ---
 
 # KSMUSICFORMAT structure

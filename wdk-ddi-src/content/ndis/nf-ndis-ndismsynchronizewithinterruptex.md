@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMSynchronizeWithInterruptEx
+UID: NF:ndis.NdisMSynchronizeWithInterruptEx
 title: NdisMSynchronizeWithInterruptEx function
 author: windows-driver-content
 description: Miniport drivers call the NdisMSynchronizeWithInterruptEx function to synchronize the execution of a miniport driver-supplied function with the MiniportInterrupt function.
 old-location: netvista\ndismsynchronizewithinterruptex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5dca9258-a3ae-43f4-a5aa-d591165d72ed
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMSynchronizeWithInterruptEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DIRQL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMSynchronizeWithInterruptEx function
@@ -62,7 +63,7 @@ BOOLEAN NdisMSynchronizeWithInterruptEx(
 ### -param NdisInterruptHandle [in]
 
 An interrupt handle that the miniport driver obtained in a previous call to the 
-     <a href="netvista.ndismregisterinterruptex">
+     <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">
      NdisMRegisterInterruptEx</a> function.
 
 
@@ -71,9 +72,9 @@ An interrupt handle that the miniport driver obtained in a previous call to the
 A message-signaled interrupt with which the driver must synchronize. If NDIS did not grant message
      signaled interrupts for the driver, NDIS ignores this parameter. 
      <i>MessageId</i> is an index to the 
-     <a href="kernel.io_interrupt_message_info_entry">
+     <a href="..\wdm\ns-wdm-_io_interrupt_message_info_entry.md">
      IO_INTERRUPT_MESSAGE_INFO_ENTRY</a> structures inside a 
-     <a href="kernel.io_interrupt_message_info">
+     <a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">
      IO_INTERRUPT_MESSAGE_INFO</a> structure. NDIS passes a pointer to the associated
      IO_INTERRUPT_MESSAGE_INFO structure at the 
      <b>MessageInfoTable</b> member when the driver successfully registers for MSI with the 
@@ -183,7 +184,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_ndismderegisterinterruptex">NdisMDeregisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismderegisterinterruptex.md">NdisMDeregisterInterruptEx</a>
 </td>
 </tr>
 </table>
@@ -191,10 +192,10 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.io_interrupt_message_info">IO_INTERRUPT_MESSAGE_INFO</a>
+<a href="..\wdm\ns-wdm-_io_interrupt_message_info.md">IO_INTERRUPT_MESSAGE_INFO</a>
 </dt>
 <dt>
-<a href="kernel.io_interrupt_message_info_entry">
+<a href="..\wdm\ns-wdm-_io_interrupt_message_info_entry.md">
    IO_INTERRUPT_MESSAGE_INFO_ENTRY</a>
 </dt>
 <dt>
@@ -205,12 +206,12 @@ DDI compliance rules
    MiniportSynchronizeInterrupt</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterinterruptex">NdisMRegisterInterruptEx</a>
+<a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMSynchronizeWithInterruptEx function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMSynchronizeWithInterruptEx function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

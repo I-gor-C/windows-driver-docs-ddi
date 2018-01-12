@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:windot11
 ---
 
 # Windot11.h header
 
 ## -description
 
-This header is used by NetVista. For more information, see
-- [NetVista](../_NetVista/index.md)
+This header is used by Networking drivers for Windows Vista and later. For more information, see
+- [Networking drivers for Windows Vista and later](../_netvista/index.md)
 
 Windot11.h contain these programming interfaces:
 
@@ -31,11 +31,8 @@ Windot11.h contain these programming interfaces:
 | [DOT11_ENCAP_ENTRY structure](ns-windot11-dot11_encap_entry.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [DOT11_ERP_PHY_ATTRIBUTES structure](ns-windot11-dot11_erp_phy_attributes.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [DOT11_EXTSTA_ATTRIBUTES structure](ns-windot11-dot11_extsta_attributes.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
-| [DOT11_EXTSTA_ATTRIBUTES structure](ns-windot11-dot11_extsta_attributes~r1.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [DOT11_EXTSTA_RECV_CONTEXT structure](ns-windot11-dot11_extsta_recv_context.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
-| [DOT11_EXTSTA_RECV_CONTEXT structure](ns-windot11-dot11_extsta_recv_context~r1.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [DOT11_EXTSTA_SEND_CONTEXT structure](ns-windot11-dot11_extsta_send_context.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
-| [DOT11_EXTSTA_SEND_CONTEXT structure](ns-windot11-dot11_extsta_send_context~r1.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [DOT11_HRDSSS_PHY_ATTRIBUTES structure](ns-windot11-dot11_hrdsss_phy_attributes.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [DOT11_KEY_ALGO_BIP structure](ns-windot11-dot11_key_algo_bip.md) | The DOT11_KEY_ALGO_BIP structure defines a cipher key that is used by the Broadcast Integrity Protocol (BIP) algorithm for management frame integrity protection. |
 | [DOT11_KEY_ALGO_CCMP structure](ns-windot11-dot11_key_algo_ccmp.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
@@ -45,7 +42,6 @@ Windot11.h contain these programming interfaces:
 | [DOT11_OFDM_PHY_ATTRIBUTES structure](ns-windot11-dot11_ofdm_phy_attributes.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [DOT11_OFFLOAD_NETWORK structure](ns-windot11-dot11_offload_network.md) | The DOT11_OFFLOAD_NETWORK structure describes a network list offload. |
 | [DOT11_PHY_ATTRIBUTES structure](ns-windot11-dot11_phy_attributes.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
-| [DOT11_PHY_ATTRIBUTES structure](ns-windot11-dot11_phy_attributes~r1.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [DOT11_PHY_FRAME_STATISTICS structure](ns-windot11-dot11_phy_frame_statistics.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [DOT11_PHY_ID_LIST structure](ns-windot11-dot11_phy_id_list.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [DOT11_PRIVACY_EXEMPTION structure](ns-windot11-dot11_privacy_exemption.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
@@ -138,7 +134,6 @@ Windot11.h contain these programming interfaces:
 | [_DOT11_ASSOCIATION_STATE enumeration](ne-windot11-_dot11_association_state.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11_DIVERSITY_SUPPORT enumeration](ne-windot11-_dot11_diversity_support.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11_PHY_TYPE enumeration](ne-windot11-_dot11_phy_type.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
-| [_DOT11_PHY_TYPE enumeration](ne-windot11-_dot11_phy_type~r1.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11_POWER_MODE enumeration](ne-windot11-_dot11_power_mode.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11_POWER_MODE_REASON enumeration](ne-windot11-_dot11_power_mode_reason.md) | The DOT11_POWER_MODE_REASON lists the different reasons for changes to auto power save mode state. |
 | [_DOT11_TEMP_TYPE enumeration](ne-windot11-_dot11_temp_type.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |

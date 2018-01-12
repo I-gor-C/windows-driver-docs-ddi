@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfcompaniontarget._WDF_TASK_SEND_OPTIONS_FLAGS
+UID: NE:wdfcompaniontarget._WDF_TASK_SEND_OPTIONS_FLAGS
 title: _WDF_TASK_SEND_OPTIONS_FLAGS
 author: windows-driver-content
 description: For internal use only.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_task_send_options_flags.htm
 old-project: wdf
 ms.assetid: 8ff13908-57f2-404f-a8ea-70c798ee3d7d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _WDF_TASK_SEND_OPTIONS_FLAGS, WDF_TASK_SEND_OPTIONS_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_TASK_SEND_OPTIONS_FLAGS
 req.product: Windows 10 or later.
 ---
 

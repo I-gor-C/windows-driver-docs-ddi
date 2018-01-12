@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:d3dumddi
 ---
 
 # D3Dumddi.h header
@@ -133,7 +133,6 @@ D3Dumddi.h contain these programming interfaces:
 | [PFND3DDDI_OPENRESOURCE callback](nc-d3dumddi-pfnd3dddi_openresource.md) | The OpenResource function informs the driver that a shared resource is opened. |
 | [PFND3DDDI_PRESENT callback](nc-d3dumddi-pfnd3dddi_present.md) | The Present function notifies the user-mode display driver that an application finished rendering and requests that the driver display the source surface by either copying or flipping or that the driver perform a color-fill operation. |
 | [PFND3DDDI_PRESENT1 callback](nc-d3dumddi-pfnd3dddi_present1.md) | Notifies the user-mode display driver that an application finished rendering and that all ownership of the shared resource is released, and requests that the driver display to the destination surface. |
-| [PFND3DDDI_PRESENT1 callback](nc-d3dumddi-pfnd3dddi_present1~r1.md) | Notifies the user-mode display driver that an application finished rendering and that all ownership of the shared resource is released, and requests that the driver display to the destination surface. |
 | [PFND3DDDI_PRESENTCB callback](nc-d3dumddi-pfnd3dddi_presentcb.md) | The pfnPresentCb function copies content from a source allocation. |
 | [PFND3DDDI_PRESENTMULTIPLANEOVERLAY callback](nc-d3dumddi-pfnd3dddi_presentmultiplaneoverlay.md) | Called by the Microsoft Direct3D runtime to notify the user-mode display driver that an application finished rendering and requests that the driver display the source surface by either copying or flipping or that the driver perform a color-fill operation. Must be implemented by Windows Display Driver Model (WDDM) 1.3 or later drivers that support multiplane overlays. |
 | [PFND3DDDI_PRESENTMULTIPLANEOVERLAYCB callback](nc-d3dumddi-pfnd3dddi_presentmultiplaneoverlaycb.md) | Copies content from a source multiplane overlay allocation to a destination allocation. Can be called by Windows Display Driver Model (WDDM) 1.3 or later user-mode display drivers. |
@@ -313,7 +312,6 @@ D3Dumddi.h contain these programming interfaces:
 | [_D3DDDIARG_LOCK structure](ns-d3dumddi-_d3dddiarg_lock.md) | The D3DDDIARG_LOCK structure describes a resource or a surface within the resource to lock. |
 | [_D3DDDIARG_LOCKASYNC structure](ns-d3dumddi-_d3dddiarg_lockasync.md) | The D3DDDIARG_LOCKASYNC structure describes a resource or a surface within the resource to lock. |
 | [_D3DDDIARG_MULTIPLYTRANSFORM structure](ns-d3dumddi-_d3dddiarg_multiplytransform.md) | The D3DDDIARG_MULTIPLYTRANSFORM structure describes how to modify the current transform. |
-| [_D3DDDIARG_OFFERRESOURCES structure](ns-d3dumddi-_d3dddiarg_offerresources.md) | Describes video memory resources that the user-mode display driver offers for reuse. Used with the OfferResources function. |
 | [_D3DDDIARG_OPENADAPTER structure](ns-d3dumddi-_d3dddiarg_openadapter.md) | The D3DDDIARG_OPENADAPTER structure contains information that describes the graphics adapter object. |
 | [_D3DDDIARG_OPENRESOURCE structure](ns-d3dumddi-_d3dddiarg_openresource.md) | The D3DDDIARG_OPENRESOURCE structure contains information for opening a shared resource. |
 | [_D3DDDIARG_PRESENT structure](ns-d3dumddi-_d3dddiarg_present.md) | The D3DDDIARG_PRESENT structure describes a resource to display. |
@@ -497,7 +495,7 @@ D3Dumddi.h contain these programming interfaces:
 | [_DXVAHDDDI_VPCAPS structure](ns-d3dumddi-_dxvahdddi_vpcaps.md) | Describes a video processor and its capabilities. |
 | [_DXVAHDDDI_VPDEVCAPS structure](ns-d3dumddi-_dxvahdddi_vpdevcaps.md) | The DXVAHDDDI_VPDEVCAPS structure describes the video processor capabilities that the decode device supports. |
 | [_FORMATOP structure](ns-d3dumddi-_formatop.md) | The FORMATOP structure describes a surface format and operations that can be performed with such a surface. |
-| [_GETENCRYPTIONBLTKEY structure](ns-d3dumddi-_getencryptionbltkey.md) | The D3DDDIARG_GETENCRYPTIONBLTKEY structure describes an encrypted bit-block transfer (bitblt) session for which the GetEncryptionBltKey function retrieves the encryption key. |
+| [_GETENCRYPTIONBLTKEY structure](ns-d3dumddi-_getencryptionbltkey.md) | The _GETENCRYPTIONBLTKEY structure describes an encrypted bit-block transfer (bitblt) session for which the GetEncryptionBltKey function retrieves the encryption key. |
 
 ## Enumerations
 

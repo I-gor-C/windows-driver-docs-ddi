@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTCheckVidPnExclusiveOwnership
+UID: NF:d3dkmthk.D3DKMTCheckVidPnExclusiveOwnership
 title: D3DKMTCheckVidPnExclusiveOwnership function
 author: windows-driver-content
 description: The D3DKMTCheckVidPnExclusiveOwnership function determines the video present source in the path of a video present network (VidPN) topology that exclusively owns the VidPN.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtcheckvidpnexclusiveownership.htm
 old-project: display
 ms.assetid: 06333989-177c-4c58-b95a-60313c04fe35
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTCheckVidPnExclusiveOwnership
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Gdi32.lib
 req.dll: Gdi32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTCheckVidPnExclusiveOwnership function
@@ -55,7 +56,7 @@ NTSTATUS D3DKMTCheckVidPnExclusiveOwnership(
 
 ### -param pData [in]
 
-A pointer to a <a href="display.d3dkmt_checkvidpnexclusiveownership">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a> structure that describes the parameters to determine exclusive VidPN ownership. 
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkvidpnexclusiveownership.md">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a> structure that describes the parameters to determine exclusive VidPN ownership. 
 
 
 ## -returns
@@ -68,7 +69,7 @@ A pointer to a <a href="display.d3dkmt_checkvidpnexclusiveownership">D3DKMT_CHEC
 </dl>The graphics adapter was stopped or the display device was reset.
 <dl>
 <dt><b>STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE</b></dt>
-</dl>The video present source that is identified by the <b>VidPnSourceId</b> member of <a href="display.d3dkmt_checkvidpnexclusiveownership">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a> is already owned by a display mode manager (DMM) client and cannot be used until the client releases the video present source.
+</dl>The video present source that is identified by the <b>VidPnSourceId</b> member of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkvidpnexclusiveownership.md">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a> is already owned by a display mode manager (DMM) client and cannot be used until the client releases the video present source.
 <dl>
 <dt><b>STATUS_GRAPHICS_INVALID_VIDEO_PRESENT_SOURCE</b></dt>
 </dl>The video present source that is identified by the <b>VidPnSourceId</b> member of D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP is invalid. 
@@ -145,12 +146,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_checkvidpnexclusiveownership">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_checkvidpnexclusiveownership.md">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTCheckVidPnExclusiveOwnership function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTCheckVidPnExclusiveOwnership function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

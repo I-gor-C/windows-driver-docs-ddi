@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11._DOT11_CURRENT_OPERATION_MODE
+UID: NS:windot11._DOT11_CURRENT_OPERATION_MODE
 title: _DOT11_CURRENT_OPERATION_MODE
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_current_operation_mode.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 085ee8f4-7e96-416a-a59f-f35c8ad0dbf4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11_CURRENT_OPERATION_MODE, PDOT11_CURRENT_OPERATION_MODE, *PDOT11_CURRENT_OPERATION_MODE, DOT11_CURRENT_OPERATION_MODE
+ms.date: 1/8/2018
+ms.keywords: _DOT11_CURRENT_OPERATION_MODE, DOT11_CURRENT_OPERATION_MODE, *PDOT11_CURRENT_OPERATION_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_CURRENT_OPERATION_MODE, *PDOT11_CURRENT_OPERATION_MODE
 req.product: Windows 10 or later.
 ---
 
@@ -143,19 +144,19 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_adapter">DOT11_ADAPTER</a>
+<a href="..\wlclient\ns-wlclient-_dot11_adapter.md">DOT11_ADAPTER</a>
 </dt>
 <dt>
 <a href="netvista.oid_dot11_current_operation_mode">
    OID_DOT11_CURRENT_OPERATION_MODE</a>
 </dt>
 <dt>
-<a href="netvista.native_802_11_operation_modes">Native 802.11 Operation Modes</a>
+<a href="https://msdn.microsoft.com/68b188c1-740f-426c-8ee5-5a605dc77565">Native 802.11 Operation Modes</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_CURRENT_OPERATION_MODE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_CURRENT_OPERATION_MODE structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

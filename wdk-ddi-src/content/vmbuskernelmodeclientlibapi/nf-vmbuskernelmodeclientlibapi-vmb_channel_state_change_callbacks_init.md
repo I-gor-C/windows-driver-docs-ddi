@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT
+UID: NF:vmbuskernelmodeclientlibapi.VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT
 title: VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT function
 author: windows-driver-content
 description: The VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT function saves callback functions to be used for state changes for a channel.
 old-location: netvista\vmb_channel_state_change_callbacks_init.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2255C8A2-85FB-4B96-8AE9-66FAFD73EE73
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VMB_CHANNEL_STATE_CHANGE_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d12umddi.PFND3D12DDI_CREATECRYPTOSESSIONPOLICY_0030
+UID: NC:d3d12umddi.PFND3D12DDI_CREATECRYPTOSESSIONPOLICY_0030
 title: PFND3D12DDI_CREATECRYPTOSESSIONPOLICY_0030
 author: windows-driver-content
 description: Used to create a crypto session policy.
@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_createcryptosessionpolicy_0030.htm
 old-project: display
 ms.assetid: BB3B2C57-CE5A-4E15-ABCB-4817C0234B62
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 # PFND3D12DDI_CREATECRYPTOSESSIONPOLICY_0030 callback

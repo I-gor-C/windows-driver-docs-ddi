@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfrequest.WdfRequestGetParameters
+UID: NF:wdfrequest.WdfRequestGetParameters
 title: WdfRequestGetParameters function
 author: windows-driver-content
 description: The WdfRequestGetParameters method retrieves the parameters that are associated with a specified framework request object.
@@ -7,7 +7,7 @@ old-location: wdf\wdfrequestgetparameters.htm
 old-project: wdf
 ms.assetid: 7d9924a9-23b6-4bec-95f0-cebc3e99fda4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfRequestGetParameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: WDF_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ A handle to a framework request object.
 
 ### -param Parameters [out]
 
-A pointer to a caller-allocated <a href="wdf.wdf_request_parameters">WDF_REQUEST_PARAMETERS</a> structure that the <a href="wdf.wdf_request_parameters_init">WDF_REQUEST_PARAMETERS_INIT</a> routine initialized and filled in.
+A pointer to a caller-allocated <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_parameters.md">WDF_REQUEST_PARAMETERS</a> structure that the <a href="..\wdfrequest\nf-wdfrequest-wdf_request_parameters_init.md">WDF_REQUEST_PARAMETERS_INIT</a> routine initialized and filled in.
 
 
 ## -returns
@@ -78,9 +79,9 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## -remarks
 A driver cannot retrieve parameters from a driver-created request by calling <b>WdfRequestGetParameters</b>  because the framework does not allocate a stack location for the current driver.
 
-For more information about <b>WdfRequestGetParameters</b>, see <a href="wdf.obtaining_information_about_an_i_o_request">Obtaining Information About an I/O Request</a>.
+For more information about <b>WdfRequestGetParameters</b>, see <a href="https://msdn.microsoft.com/a686ea00-6987-480a-a4ce-892e1efbed87">Obtaining Information About an I/O Request</a>.
 
-For a code example that uses <b>WdfRequestGetParameters</b>, see <a href="wdf.wdfrequestcomplete">WdfRequestComplete</a>.
+For a code example that uses <b>WdfRequestGetParameters</b>, see <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a>.
 
 
 ## -requirements
@@ -155,7 +156,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_evtioresumegetparam">evtioresumegetparam</a>, <a href="devtest.kmdf_evtiostopgetparam">evtiostopgetparam</a>, <a href="devtest.kmdf_invalidreqaccess">InvalidReqAccess</a>, <a href="devtest.kmdf_invalidreqaccesslocal">InvalidReqAccessLocal</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975073">evtioresumegetparam</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975074">evtiostopgetparam</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547261">InvalidReqAccess</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff547267">InvalidReqAccessLocal</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -163,18 +164,18 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfrequestwdmgetirp">WdfRequestWdmGetIrp</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestwdmgetirp.md">WdfRequestWdmGetIrp</a>
 </dt>
 <dt>
-<a href="wdf.wdf_request_parameters_init">WDF_REQUEST_PARAMETERS_INIT</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdf_request_parameters_init.md">WDF_REQUEST_PARAMETERS_INIT</a>
 </dt>
 <dt>
-<a href="wdf.wdf_request_parameters">WDF_REQUEST_PARAMETERS</a>
+<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_parameters.md">WDF_REQUEST_PARAMETERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestGetParameters method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfRequestGetParameters method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

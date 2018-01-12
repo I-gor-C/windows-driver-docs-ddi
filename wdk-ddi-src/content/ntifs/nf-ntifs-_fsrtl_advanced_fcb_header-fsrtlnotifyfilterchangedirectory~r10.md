@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlNotifyFilterChangeDirectory~r10
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlNotifyFilterChangeDirectory~r10
 title: FsRtlNotifyFilterChangeDirectory function
 author: windows-driver-content
 description: The FsRtlNotifyFilterChangeDirectory routine creates a notify structure for an IRP_MN_NOTIFY_CHANGE_DIRECTORY request and adds it to the specified notify list.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlnotifyfilterchangedirectory.htm
 old-project: ifsk
 ms.assetid: 445b6836-aeac-4183-ba11-a787c1e125ac
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlNotifyFilterChangeDirectory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: < APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlNotifyFilterChangeDirectory function
@@ -262,7 +263,7 @@ Optional pointer to a callback routine to be invoked when a change occurs in a s
 </td>
 </tr>
 </table></span></div>
-For more information about the <i>TargetContext</i> parameter, see the <i>TargetContext</i> parameter of <a href="ifsk.fsrtlnotifyfullreportchange">FsRtlNotifyFullReportChange</a>. <i>TraverseCallback</i> is ignored if <i>NotifyIrp</i> is <b>NULL</b>.
+For more information about the <i>TargetContext</i> parameter, see the <i>TargetContext</i> parameter of <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullreportchange~r8.md">FsRtlNotifyFullReportChange</a>. <i>TraverseCallback</i> is ignored if <i>NotifyIrp</i> is <b>NULL</b>.
 
 
 ### -param SubjectContext [in, optional]
@@ -272,7 +273,7 @@ Pointer to a context structure to be passed to <i>TraverseCallback</i>. <b>FsRtl
 
 ### -param FilterCallback [in, optional]
 
-Optional pointer to a callback routine to be invoked when a change occurs to the directory. If this callback routine returns <b>TRUE</b>, <a href="ifsk.fsrtlnotifyfilterreportchange">FsRtlNotifyFilterReportChange</a> completes the pending IRP_MN_NOTIFY_CHANGE_DIRECTORY requests in the notify list; otherwise, it does not. Such a caller-supplied routine is declared as follows: 
+Optional pointer to a callback routine to be invoked when a change occurs to the directory. If this callback routine returns <b>TRUE</b>, <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterreportchange~r9.md">FsRtlNotifyFilterReportChange</a> completes the pending IRP_MN_NOTIFY_CHANGE_DIRECTORY requests in the notify list; otherwise, it does not. Such a caller-supplied routine is declared as follows: 
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -294,7 +295,7 @@ None
 
 
 ## -remarks
-<b>FsRtlNotifyFilterChangeDirectory</b> is called by a file system that has received an IRP with major function code <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>, minor function code IRP_MN_NOTIFY_CHANGE_DIRECTORY. 
+<b>FsRtlNotifyFilterChangeDirectory</b> is called by a file system that has received an IRP with major function code <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>, minor function code IRP_MN_NOTIFY_CHANGE_DIRECTORY. 
 
 The file system calls <b>FsRtlNotifyFilterChangeDirectory</b> to create a notify structure to hold the IRP and add the notify structure to the notify list for the current volume. 
 
@@ -306,7 +307,7 @@ Checks whether the IRP's file object has undergone cleanup. If so, <b>FsRtlNotif
 
 If the IRP's file object has not undergone cleanup, <b>FsRtlNotifyFilterChangeDirectory</b> checks whether the notify list already contains a notify structure for the given <i>FsContext</i> value. If such a notify structure is found, and there are pending changes to report, <b>FsRtlNotifyFilterChangeDirectory</b> completes <i>NotifyIrp</i>. If a notify structure is found, but there are no pending changes to report, <b>FsRtlNotifyFilterChangeDirectory</b> marks the IRP pointed to by <i>NotifyIrp</i>  as pending and inserts it into the list of notify IRPs in the notify structure. If no such notify structure is found, <b>FsRtlNotifyFilterChangeDirectory</b> marks the IRP pointed to by <i>NotifyIrp</i>  as pending, creates a notify structure, and inserts it into the notify list. 
 
-When a change occurs to the directory, the file system calls <a href="ifsk.fsrtlnotifyfilterreportchange">FsRtlNotifyFilterReportChange</a> to complete the pending IRP_MN_NOTIFY_CHANGE_DIRECTORY requests in the notify list. 
+When a change occurs to the directory, the file system calls <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterreportchange~r9.md">FsRtlNotifyFilterReportChange</a> to complete the pending IRP_MN_NOTIFY_CHANGE_DIRECTORY requests in the notify list. 
 
 
 ## -requirements
@@ -380,24 +381,24 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fsrtlnotifyfilterreportchange">FsRtlNotifyFilterReportChange</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterreportchange~r9.md">FsRtlNotifyFilterReportChange</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlnotifyfullchangedirectory">FsRtlNotifyFullChangeDirectory</a>
+<a href="..\rxprocs\nf-rxprocs-fsrtlnotifyfullchangedirectory.md">FsRtlNotifyFullChangeDirectory</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlnotifyfullreportchange">FsRtlNotifyFullReportChange</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullreportchange~r8.md">FsRtlNotifyFullReportChange</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
 </dt>
 <dt>
-<a href="ifsk.security_subject_context">SECURITY_SUBJECT_CONTEXT</a>
+<a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlNotifyFilterChangeDirectory routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlNotifyFilterChangeDirectory routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

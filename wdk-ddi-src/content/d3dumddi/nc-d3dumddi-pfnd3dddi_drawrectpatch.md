@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_DRAWRECTPATCH
+UID: NC:d3dumddi.PFND3DDDI_DRAWRECTPATCH
 title: PFND3DDDI_DRAWRECTPATCH
 author: windows-driver-content
 description: The DrawRectPatch function draws a new or cached rectangular patch or updates the specification of a previously defined patch.
@@ -7,7 +7,7 @@ old-location: display\drawrectpatch.htm
 old-project: display
 ms.assetid: c0e3046c-f2af-4406-ac5a-c3e44f40b1fd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_DRAWRECTPATCH callback
@@ -66,7 +67,7 @@ __checkReturn HRESULT APIENTRY DrawRectPatch(
 
 ### -param pData [in]
 
- A pointer to a <a href="display.d3dddiarg_drawrectpatch">D3DDDIARG_DRAWRECTPATCH</a> structure that describes the rectangular patch to draw.
+ A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_drawrectpatch.md">D3DDDIARG_DRAWRECTPATCH</a> structure that describes the rectangular patch to draw.
 
 
 ### -param pInfo [in]
@@ -84,7 +85,7 @@ __checkReturn HRESULT APIENTRY DrawRectPatch(
 
 
 ## -remarks
-When the Microsoft Direct3D runtime calls<i>pPatch</i> the user-mode display driver's <b>DrawRectPatch</b> function, it can optionally supply information in the <i>pInfo</i> and  parameters. The runtime sets flags in the <b>Flags</b> member of the <a href="display.d3dddiarg_drawrectpatch">D3DDDIARG_DRAWRECTPATCH</a> structure that is specified by <i>pData</i> to indicate if it supplies this optional information. 
+When the Microsoft Direct3D runtime calls<i>pPatch</i> the user-mode display driver's <b>DrawRectPatch</b> function, it can optionally supply information in the <i>pInfo</i> and  parameters. The runtime sets flags in the <b>Flags</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_drawrectpatch.md">D3DDDIARG_DRAWRECTPATCH</a> structure that is specified by <i>pData</i> to indicate if it supplies this optional information. 
 
 The runtime supplies a UINT value in the <b>Handle</b> member of D3DDDIARG_DRAWRECTPATCH to refer to the patch surface. Whenever the runtime redraws the patch surface, it passes the patch handle value and is not required to re-specify the D3DDDIRECTPATCH_INFO data structure for the patch surface. The user-mode display driver can precompute and cache forward-difference coefficients and any other information. Therefore, subsequent calls to the driver's <b>DrawRectPatch</b> function that use the same patch handle value run more efficiently.
 
@@ -144,15 +145,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiarg_drawrectpatch">D3DDDIARG_DRAWRECTPATCH</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_drawrectpatch.md">D3DDDIARG_DRAWRECTPATCH</a>
 </dt>
 <dt>
-<a href="display.d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_DRAWRECTPATCH callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_DRAWRECTPATCH callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

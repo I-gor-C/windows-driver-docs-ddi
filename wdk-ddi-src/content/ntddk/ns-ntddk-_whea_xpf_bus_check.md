@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_XPF_BUS_CHECK
+UID: NS:ntddk._WHEA_XPF_BUS_CHECK
 title: _WHEA_XPF_BUS_CHECK
 author: windows-driver-content
 description: The WHEA_XPF_BUS_CHECK union describes bus error information for an x86 or x64 processor.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 7886a796-2755-4367-bbbd-2017e7900bf4
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_XPF_BUS_CHECK, *PWHEA_XPF_BUS_CHECK, WHEA_XPF_BUS_CHECK, PWHEA_XPF_BUS_CHECK
+ms.keywords: _WHEA_XPF_BUS_CHECK, WHEA_XPF_BUS_CHECK, *PWHEA_XPF_BUS_CHECK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_XPF_BUS_CHECK, *PWHEA_XPF_BUS_CHECK
 ---
 
 # _WHEA_XPF_BUS_CHECK structure
@@ -234,14 +235,14 @@ This member contains valid data only if the <b>UncorrectedValid</b> bit is set.
 
 ### -field PreciseIP
 
-A single bit that indicates that the instruction pointer that is specified in the <b>InstructionPointer</b> member of the <a href="whea.whea_xpf_procinfo">WHEA_XPF_PROCINFO</a> structure that contains this WHEA_XPF_BUS_CHECK union is directly associated with the error.
+A single bit that indicates that the instruction pointer that is specified in the <b>InstructionPointer</b> member of the <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure that contains this WHEA_XPF_BUS_CHECK union is directly associated with the error.
 
 This member contains valid data only if the <b>PreciseIPValid</b> bit is set.
 
 
 ### -field RestartableIP
 
-A single bit that indicates that program execution can be restarted reliably at the instruction pointer that is specified in the <b>InstructionPointer</b> member of the <a href="whea.whea_xpf_procinfo">WHEA_XPF_PROCINFO</a> union that contains this WHEA_XPF_BUS_CHECK structure.
+A single bit that indicates that program execution can be restarted reliably at the instruction pointer that is specified in the <b>InstructionPointer</b> member of the <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> union that contains this WHEA_XPF_BUS_CHECK structure.
 
 This member contains valid data only if the <b>RestartableIPValid</b> bit is set.
 
@@ -333,7 +334,7 @@ A ULONGLONG representation of the contents of the WHEA_XPF_BUS_CHECK union.
 
 
 ## -remarks
-If the <b>CheckInfoId</b> member of a <a href="whea.whea_xpf_procinfo">WHEA_XPF_PROCINFO</a> structure contains WHEA_BUSCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_BUS_CHECK union.
+If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure contains WHEA_BUSCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_BUS_CHECK union.
 
 
 ## -requirements
@@ -365,7 +366,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_xpf_procinfo">WHEA_XPF_PROCINFO</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a>
 </dt>
 </dl>
  

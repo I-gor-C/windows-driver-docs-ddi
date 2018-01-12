@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSRELATIVEEVENT
+UID: NS:ks.KSRELATIVEEVENT
 title: KSRELATIVEEVENT
 author: windows-driver-content
 description: The KSPROPERTY_CONNECTION_STARTAT property is passed a KSRELATIVEEVENT structure.
@@ -7,7 +7,7 @@ old-location: stream\ksrelativeevent.htm
 old-project: stream
 ms.assetid: 4edb8b74-d5e5-49ee-85a7-9eb095f5a575
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSRELATIVEEVENT, KSRELATIVEEVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSRELATIVEEVENT
 ---
 
 # KSRELATIVEEVENT structure
@@ -88,7 +89,7 @@ Reserved and set to zero.
 
 ### -field Event
 
-A <a href="stream.ksevent">KSEVENT</a> structure that contains the event to be used.
+A <a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a> structure that contains the event to be used.
 
 
 ### -field EventData

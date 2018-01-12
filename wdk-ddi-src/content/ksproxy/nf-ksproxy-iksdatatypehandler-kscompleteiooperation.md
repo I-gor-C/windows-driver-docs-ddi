@@ -1,5 +1,5 @@
 ---
-UID: NF.ksproxy.IKsDataTypeHandler.KsCompleteIoOperation
+UID: NF:ksproxy.IKsDataTypeHandler.KsCompleteIoOperation
 title: IKsDataTypeHandler::KsCompleteIoOperation method
 author: windows-driver-content
 description: The KsCompleteIoOperation method cleans up the extended header and completes the input and output (I/O) operation.
@@ -7,7 +7,7 @@ old-location: stream\iksdatatypehandler_kscompleteiooperation.htm
 old-project: stream
 ms.assetid: 46a58007-16bf-422b-8408-30a7b65dbee6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IKsDataTypeHandler, IKsDataTypeHandler::KsCompleteIoOperation, KsCompleteIoOperation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PIPE_STATE
 ---
 
 # IKsDataTypeHandler::KsCompleteIoOperation method
@@ -109,7 +110,7 @@ Returns NOERROR if successful; otherwise, returns an error code. If the stream's
 
 
 ## -remarks
-The client only calls <b>KsCompleteIoOperation</b> if the data type handler indicated to the client the existence of extended header information in a call to the <a href="stream.iksdatatypehandler_ksqueryextendedsize">IKsDataTypeHandler::KsQueryExtendedSize</a> method.
+The client only calls <b>KsCompleteIoOperation</b> if the data type handler indicated to the client the existence of extended header information in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559836">IKsDataTypeHandler::KsQueryExtendedSize</a> method.
 
 For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK documentation.
 
@@ -143,12 +144,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.iksdatatypehandler_ksqueryextendedsize">IKsDataTypeHandler::KsQueryExtendedSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559836">IKsDataTypeHandler::KsQueryExtendedSize</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsDataTypeHandler::KsCompleteIoOperation method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsDataTypeHandler::KsCompleteIoOperation method%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

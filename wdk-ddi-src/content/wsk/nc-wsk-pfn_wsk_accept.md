@@ -1,14 +1,14 @@
 ---
-UID: NC.wsk.PFN_WSK_ACCEPT
+UID: NC:wsk.PFN_WSK_ACCEPT
 title: PFN_WSK_ACCEPT
 author: windows-driver-content
 description: The WskAccept function accepts an incoming connection on a listening socket.
 old-location: netvista\wskaccept.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9fa8bb07-7ee5-400b-aaca-33db3911d79f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/8/2018
+ms.keywords: _WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -67,7 +68,7 @@ NTSTATUS WSKAPI * WskAccept(
 ### -param ListenSocket [in]
 
 A pointer to a 
-     <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
+     <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that specifies the socket
      object for the listening or stream socket that is being checked for an incoming connection.
 
 
@@ -89,7 +90,7 @@ A pointer to a caller-supplied context for the socket that is being accepted. Th
 ### -param AcceptSocketDispatch [in, optional]
 
 A pointer to a constant 
-     <a href="netvista.wsk_client_connection_dispatch">
+     <a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
      WSK_CLIENT_CONNECTION_DISPATCH</a> structure. This structure is a dispatch table that contains
      pointers to the event callback functions for the accepted socket. If the WSK application will not be
      enabling all of the event callback functions for the accepted socket, it should set the pointers in the
@@ -207,7 +208,7 @@ If a WSK application specifies a non-<b>NULL</b> pointer in the
     <b>WskAccept</b> function until after the IRP is completed.
 
 The WSK subsystem allocates the memory for the socket object structure (
-    <a href="netvista.wsk_socket">WSK_SOCKET</a>) for the accepted connection on
+    <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>) for the accepted connection on
     behalf of the WSK application. The WSK subsystem deallocates this memory when the socket is closed.
 
 
@@ -273,25 +274,25 @@ IRQL
 <a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
 </dt>
 <dt>
-<a href="netvista.sockaddr">SOCKADDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_connection_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
    WSK_CLIENT_CONNECTION_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_listen_dispatch">WSK_PROVIDER_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_listen_dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_stream_dispatch">WSK_PROVIDER_STREAM_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_socket">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PFN_WSK_ACCEPT callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_ACCEPT callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

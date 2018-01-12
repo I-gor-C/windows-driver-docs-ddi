@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ClfsReserveAndAppendLog
+UID: NF:wdm.ClfsReserveAndAppendLog
 title: ClfsReserveAndAppendLog function
 author: windows-driver-content
 description: The ClfsReserveAndAppendLog routine reserves space in a marshalling area or appends a record to a marshalling area or does both atomically.
@@ -7,7 +7,7 @@ old-location: kernel\clfsreserveandappendlog.htm
 old-project: kernel
 ms.assetid: e3ffbf18-151b-42da-8fc1-ae07c152738c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ClfsReserveAndAppendLog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Clfs.lib
 req.dll: Clfs.sys
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -64,12 +65,12 @@ NTSTATUS ClfsReserveAndAppendLog(
 
 ### -param pvMarshalContext [in]
 
-A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="kernel.clfscreatemarshallingarea">ClfsCreateMarshallingArea</a>.
+A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.
 
 
 ### -param rgWriteEntries [in, optional]
 
-A pointer to an array of <a href="kernel.clfs_write_entry">CLFS_WRITE_ENTRY</a> structures, each of which holds a pointer to a buffer of data that will become part of the record that is appended to the log. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.
+A pointer to an array of <a href="..\wdm\ns-wdm-_cls_write_entry.md">CLFS_WRITE_ENTRY</a> structures, each of which holds a pointer to a buffer of data that will become part of the record that is appended to the log. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.
 
 
 ### -param cWriteEntries [in]
@@ -79,7 +80,7 @@ The number of elements in the array pointed to by <i>rgWriteEntries</i>. This pa
 
 ### -param plsnUndoNext [in, optional]
 
-A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that supplies the undo-next LSN of the record to be appended.
+A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that supplies the undo-next LSN of the record to be appended.
 
 
 ### -param plsnPrevious [in, optional]
@@ -142,7 +143,7 @@ The current record is placed in reserved space in a log I/O block within the mar
 
 ### -param plsn [out, optional]
 
-A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure that receives the LSN of the appended record. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.
+A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that receives the LSN of the appended record. This parameter can be <b>NULL</b> if <i>cWriteEntries</i> is zero.
 
 
 ## -returns
@@ -186,7 +187,7 @@ CLFS_USE_RESERVATION flag is cleared.
 
 Appends a record to the marshalling area by reserving new space. Also reserves space for a set of records that are not appended at this time. The <i>rgcbReservation</i> parameter gives the size of each record that needs space reserved. Increases the number of reserved record spaces by the value of <i>cReserveRecords</i>.
 
-Calling <b>ClfsReserveAndAppendLog</b> is equivalent to calling <a href="kernel.clfsreserveandappendlogaligned">ClfsReserveAndAppendLogAligned</a> with the <i>cbEntryAlignment</i> parameter set to one.
+Calling <b>ClfsReserveAndAppendLog</b> is equivalent to calling <a href="..\wdm\nf-wdm-clfsreserveandappendlogaligned.md">ClfsReserveAndAppendLogAligned</a> with the <i>cbEntryAlignment</i> parameter set to one.
 
 For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>. 
 
@@ -262,21 +263,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfs_lsn">CLFS_LSN</a>
+<a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a>
 </dt>
 <dt>
-<a href="kernel.clfs_write_entry">CLFS_WRITE_ENTRY</a>
+<a href="..\wdm\ns-wdm-_cls_write_entry.md">CLFS_WRITE_ENTRY</a>
 </dt>
 <dt>
-<a href="kernel.clfscreatemarshallingarea">ClfsCreateMarshallingArea</a>
+<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
 </dt>
 <dt>
-<a href="kernel.clfsreserveandappendlogaligned">ClfsReserveAndAppendLogAligned</a>
+<a href="..\wdm\nf-wdm-clfsreserveandappendlogaligned.md">ClfsReserveAndAppendLogAligned</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReserveAndAppendLog routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReserveAndAppendLog routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

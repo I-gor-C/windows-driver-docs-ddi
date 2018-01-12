@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinRegisterPowerCallbacks
+UID: NF:ks.KsPinRegisterPowerCallbacks
 title: KsPinRegisterPowerCallbacks function
 author: windows-driver-content
 description: The KsPinRegisterPowerCallbacks function registers power management callbacks for Pin.
@@ -7,7 +7,7 @@ old-location: stream\kspinregisterpowercallbacks.htm
 old-project: stream
 ms.assetid: e498a907-8d20-4d00-9411-8e82030af223
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinRegisterPowerCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsPinRegisterPowerCallbacks function
@@ -57,17 +58,17 @@ void KsPinRegisterPowerCallbacks(
 
 ### -param Pin [in]
 
-A pointer to the <a href="stream.kspin">KSPIN</a> structure for which to register power callbacks. Note that the pin must actually process (be pin-centric) in order to receive power notification messages.
+A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which to register power callbacks. Note that the pin must actually process (be pin-centric) in order to receive power notification messages.
 
 
 ### -param Sleep [in, optional]
 
-This parameter supplies the address of a <a href="stream.avstrminipinpower">AVStrMiniPinPower</a>  function that handles sleep requests for the device. Optional.
+This parameter supplies the address of a <a href="..\ks\nc-ks-pfnkspinpower.md">AVStrMiniPinPower</a>  function that handles sleep requests for the device. Optional.
 
 
 ### -param Wake [in, optional]
 
-This parameter supplies the address of a <a href="stream.avstrminipinpower">AVStrMiniPinPower</a>  function that handles wake requests for the device. Optional.
+This parameter supplies the address of a <a href="..\ks\nc-ks-pfnkspinpower.md">AVStrMiniPinPower</a>  function that handles wake requests for the device. Optional.
 
 
 ## -returns
@@ -128,15 +129,15 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksfilterregisterpowercallbacks">KsFilterRegisterPowerCallbacks</a>
+<a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
 </dt>
 <dt>
-<a href="stream.avstrminipinpower">AVStrMiniPinPower</a>
+<a href="..\ks\nc-ks-pfnkspinpower.md">AVStrMiniPinPower</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinRegisterPowerCallbacks function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinRegisterPowerCallbacks function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

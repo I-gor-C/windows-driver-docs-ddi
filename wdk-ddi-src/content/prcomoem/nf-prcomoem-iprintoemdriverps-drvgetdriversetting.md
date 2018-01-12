@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemDriverPS.DrvGetDriverSetting
+UID: NF:prcomoem.IPrintOemDriverPS.DrvGetDriverSetting
 title: IPrintOemDriverPS::DrvGetDriverSetting method
 author: windows-driver-content
 description: The IPrintOemDriverPS::DrvGetDriverSetting method is provided by the Pscript5 driver so that rendering plug-ins can obtain the current status of printer features and other internal information.
@@ -7,7 +7,7 @@ old-location: print\iprintoemdriverps_drvgetdriversetting.htm
 old-project: print
 ms.assetid: c3e9775b-a5ab-42e4-a889-a746a7243b37
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemDriverPS, IPrintOemDriverPS::DrvGetDriverSetting, DrvGetDriverSetting
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ HRESULT DrvGetDriverSetting(
 
 ### -param pdriverobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param Feature 

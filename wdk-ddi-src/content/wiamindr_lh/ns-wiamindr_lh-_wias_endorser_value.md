@@ -1,14 +1,14 @@
 ---
-UID: NS.WIAMINDR_LH._WIAS_ENDORSER_VALUE
+UID: NS:wiamindr_lh._WIAS_ENDORSER_VALUE
 title: _WIAS_ENDORSER_VALUE
 author: windows-driver-content
 description: The WIAS_ENDORSER_VALUE structure stores token/value pairs for endorser strings.
 old-location: image\wias_endorser_value.htm
-old-project: Image
+old-project: image
 ms.assetid: 54395899-c35d-4251-9e9d-ec2128b28c67
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WIAS_ENDORSER_VALUE, *PWIAS_ENDORSER_VALUE, WIAS_ENDORSER_VALUE
+ms.date: 1/10/2018
+ms.keywords: _WIAS_ENDORSER_VALUE, WIAS_ENDORSER_VALUE, *PWIAS_ENDORSER_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WIAS_ENDORSER_VALUE, *PWIAS_ENDORSER_VALUE
 req.product: Windows 10 or later.
 ---
 
@@ -66,7 +67,7 @@ Specifies the value with which to replace the token.
 
 
 ## -remarks
-This structure is used indirectly by the <a href="image.wiasparseendorserstring">wiasParseEndorserString</a> function. One of the parameters of this function is a <a href="image.wias_endorser_info">WIAS_ENDORSER_INFO</a> structure, which has a WIAS_ENDORSER_VALUE structure as one of its members.
+This structure is used indirectly by the <a href="..\wiamdef\nf-wiamdef-wiasparseendorserstring.md">wiasParseEndorserString</a> function. One of the parameters of this function is a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_info.md">WIAS_ENDORSER_INFO</a> structure, which has a WIAS_ENDORSER_VALUE structure as one of its members.
 
 
 ## -requirements
@@ -97,15 +98,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.wiasparseendorserstring">wiasParseEndorserString</a>
+<a href="..\wiamdef\nf-wiamdef-wiasparseendorserstring.md">wiasParseEndorserString</a>
 </dt>
 <dt>
-<a href="image.wias_endorser_info">WIAS_ENDORSER_INFO</a>
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_info.md">WIAS_ENDORSER_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20WIAS_ENDORSER_VALUE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_ENDORSER_VALUE structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

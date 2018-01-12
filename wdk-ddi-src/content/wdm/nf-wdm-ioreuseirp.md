@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoReuseIrp
+UID: NF:wdm.IoReuseIrp
 title: IoReuseIrp function
 author: windows-driver-content
 description: The IoReuseIrp routine reinitializes an IRP so that it can be reused.
@@ -7,7 +7,7 @@ old-location: kernel\ioreuseirp.htm
 old-project: kernel
 ms.assetid: 18ad2c76-110f-45a9-986b-67e7c81f256f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoReuseIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <=DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -72,7 +73,7 @@ None
 ## -remarks
 Drivers for Windows 2000 and later versions of Windows use <b>IoReuseIrp</b> to reuse an IRP.
 
-A driver should use <b>IoReuseIrp</b> only on IRPs it previously allocated either as raw memory or with <a href="kernel.ioallocateirp">IoAllocateIrp</a>. In particular, drivers should not use this routine for IRPs created with <a href="kernel.iomakeassociatedirp">IoMakeAssociatedIrp</a>, <a href="kernel.iobuildsynchronousfsdrequest">IoBuildSynchronousFsdRequest</a>, <a href="kernel.iobuildasynchronousfsdrequest">IoBuildAsynchronousFsdRequest</a>, or <a href="kernel.iobuilddeviceiocontrolrequest">IoBuildDeviceIoControlRequest</a>. 
+A driver should use <b>IoReuseIrp</b> only on IRPs it previously allocated either as raw memory or with <a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>. In particular, drivers should not use this routine for IRPs created with <a href="..\ntddk\nf-ntddk-iomakeassociatedirp.md">IoMakeAssociatedIrp</a>, <a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>, <a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>, or <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>. 
 
 See <a href="https://msdn.microsoft.com/library/windows/hardware/ff561107">Reusing IRPs</a> for more details on how to reuse IRPs. 
 
@@ -149,7 +150,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_ioreuseirp">IoReuseIrp</a>, <a href="devtest.wdm_ioreuseirp2">IoReuseIrp2</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975177">IoReuseIrp2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -157,21 +158,21 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.ioinitializeirp">IoInitializeIrp</a>
+<a href="..\wdm\nf-wdm-ioinitializeirp.md">IoInitializeIrp</a>
 </dt>
 <dt>
-<a href="kernel.ioallocateirp">IoAllocateIrp</a>
+<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
 </dt>
 <dt>
-<a href="kernel.iomakeassociatedirp">IoMakeAssociatedIrp</a>
+<a href="..\ntddk\nf-ntddk-iomakeassociatedirp.md">IoMakeAssociatedIrp</a>
 </dt>
 <dt>
-<a href="kernel.irp">IRP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoReuseIrp routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoReuseIrp routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

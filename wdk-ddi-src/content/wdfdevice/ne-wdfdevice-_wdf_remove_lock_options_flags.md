@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfdevice._WDF_REMOVE_LOCK_OPTIONS_FLAGS
+UID: NE:wdfdevice._WDF_REMOVE_LOCK_OPTIONS_FLAGS
 title: _WDF_REMOVE_LOCK_OPTIONS_FLAGS
 author: windows-driver-content
 description: The WDF_REMOVE_LOCK_OPTIONS_FLAGS enumeration type defines flags that are used in a driver's WDF_REMOVE_LOCK_OPTIONS structure.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_remove_lock_options_flags.htm
 old-project: wdf
 ms.assetid: 3822B8A2-1EFB-45C7-A7DB-FBCE76A06336
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _WDF_REMOVE_LOCK_OPTIONS_FLAGS, WDF_REMOVE_LOCK_OPTIONS_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: See Remarks section.
+req.irql: <=DISPATCH_LEVEL
+req.typenames: WDF_REMOVE_LOCK_OPTIONS_FLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WDF_REMOVE_LOCK_OPTIONS_FLAGS</b> enumeration type defines flags that are used in a driver's <a href="wdf.wdf_remove_lock_options">WDF_REMOVE_LOCK_OPTIONS</a> structure.
+The <b>WDF_REMOVE_LOCK_OPTIONS_FLAGS</b> enumeration type defines flags that are used in a driver's <a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_lock_options.md">WDF_REMOVE_LOCK_OPTIONS</a> structure.
 
 
 
@@ -62,7 +63,7 @@ Specifies that the framework should acquire a remove lock before delivering an I
 
 
 ## -remarks
-For more information about using remove locks in a framework-based driver, see <a href="wdf.wdfdeviceinitsetremovelockoptions">WdfDeviceInitSetRemoveLockOptions</a>.
+For more information about using remove locks in a framework-based driver, see <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetremovelockoptions.md">WdfDeviceInitSetRemoveLockOptions</a>.
 
 
 ## -requirements
@@ -93,18 +94,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfdeviceinitsetremovelockoptions">WdfDeviceInitSetRemoveLockOptions</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetremovelockoptions.md">WdfDeviceInitSetRemoveLockOptions</a>
 </dt>
 <dt>
-<a href="wdf.wdf_remove_lock_options_init">WDF_REMOVE_LOCK_OPTIONS_INIT</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdf_remove_lock_options_init.md">WDF_REMOVE_LOCK_OPTIONS_INIT</a>
 </dt>
 <dt>
-<a href="wdf.wdf_remove_lock_options">WDF_REMOVE_LOCK_OPTIONS</a>
+<a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_lock_options.md">WDF_REMOVE_LOCK_OPTIONS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REMOVE_LOCK_OPTIONS_FLAGS enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REMOVE_LOCK_OPTIONS_FLAGS enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NC.mrx.PMRX_IS_LOCK_REALIZABLE
+UID: NC:mrx.PMRX_IS_LOCK_REALIZABLE
 title: PMRX_IS_LOCK_REALIZABLE
 author: windows-driver-content
 description: The MRxIsLockRealizable routine is called by RDBSS to request that a network mini-redirector indicate whether a specific byte-range lock is supported on this NET_ROOT structure.
@@ -7,8 +7,8 @@ old-location: ifsk\mrxislockrealizable.htm
 old-project: ifsk
 ms.assetid: 4b8c9a94-a81e-4a02-b68c-10b2fb64157f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SetDSMCounters_IN, *PSetDSMCounters_IN, SetDSMCounters_IN, PSetDSMCounters_IN
+ms.date: 1/9/2018
+ms.keywords: _SetDSMCounters_IN, *PSetDSMCounters_IN, SetDSMCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSetDSMCounters_IN, SetDSMCounters_IN
 ---
 
 # PMRX_IS_LOCK_REALIZABLE callback
@@ -123,51 +124,51 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.mrxarefilesaliased">MRxAreFilesAliased</a>
+<a href="..\mrx\nc-mrx-pmrx_chkfcb_calldown.md">MRxAreFilesAliased</a>
 </dt>
 <dt>
-<a href="ifsk.mrxcleanupfobx">MRxCleanupFobx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549841">MRxCleanupFobx</a>
 </dt>
 <dt>
-<a href="ifsk.mrxclosesrvopen">MRxCloseSrvOpen</a>
+<a href="..\mrx\nc-mrx-pmrx_calldown.md">MRxCloseSrvOpen</a>
 </dt>
 <dt>
-<a href="ifsk.mrxcollapseopen">MRxCollapseOpen</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549847">MRxCollapseOpen</a>
 </dt>
 <dt>
-<a href="ifsk.mrxcreate">MRxCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549862">MRxCreate</a>
 </dt>
 <dt>
-<a href="ifsk.mrxdeallocateforfcb">MRxDeallocateForFcb</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549871">MRxDeallocateForFcb</a>
 </dt>
 <dt>
-<a href="ifsk.mrxdeallocateforfobx">MRxDeallocateForFobx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549872">MRxDeallocateForFobx</a>
 </dt>
 <dt>
-<a href="ifsk.mrxextendforcache">MRxExtendForCache</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549878">MRxExtendForCache</a>
 </dt>
 <dt>
-<a href="ifsk.mrxextendfornoncache">MRxExtendForNonCache</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549879">MRxExtendForNonCache</a>
 </dt>
 <dt>
-<a href="ifsk.mrxflush">MRxFlush</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550669">MRxFlush</a>
 </dt>
 <dt>
-<a href="ifsk.mrxforceclosed">MRxForceClosed</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550677">MRxForceClosed</a>
 </dt>
 <dt>
-<a href="ifsk.mrxshouldtrytocollapsethisopen">MRxShouldTryToCollapseThisOpen</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550817">MRxShouldTryToCollapseThisOpen</a>
 </dt>
 <dt>
-<a href="ifsk.mrxtruncate">MRxTruncate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550839">MRxTruncate</a>
 </dt>
 <dt>
-<a href="ifsk.mrxzeroextend">MRxZeroExtend</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550844">MRxZeroExtend</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxIsLockRealizable routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MRxIsLockRealizable routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

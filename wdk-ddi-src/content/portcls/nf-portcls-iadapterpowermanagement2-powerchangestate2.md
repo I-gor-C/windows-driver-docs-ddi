@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IAdapterPowerManagement2.PowerChangeState2
+UID: NF:portcls.IAdapterPowerManagement2.PowerChangeState2
 title: IAdapterPowerManagement2::PowerChangeState2 method
 author: windows-driver-content
 description: Portcls calls the IAdapterPowerManagement2::PowerChangeState2 method to request a change to the new power state. This request is passed on to the adapter driver.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IAdapterPowerManagement2::PowerChangeState2 method
@@ -56,12 +57,12 @@ void PowerChangeState2(
 
 ### -param NewDeviceState [in]
 
-Specifies the new power state that Portcls has requested for the device. This parameter is an enumeration of type <a href="kernel.device_power_state">DEVICE_POWER_STATE</a>.
+Specifies the new power state that Portcls has requested for the device. This parameter is an enumeration of type <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>.
 
 
 ### -param NewSystemState [in]
 
-Specifies the new power state that Portcls has requested for the system. This parameter is an enumeration of type <a href="kernel.system_power_state">SYSTEM_POWER_STATE</a>.
+Specifies the new power state that Portcls has requested for the system. This parameter is an enumeration of type <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>.
 
 
 ## -returns
@@ -116,10 +117,10 @@ Header
 <a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
 </dt>
 <dt>
-<a href="kernel.device_power_state">DEVICE_POWER_STATE</a>
+<a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
 </dt>
 <dt>
-<a href="kernel.system_power_state">SYSTEM_POWER_STATE</a>
+<a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546941">Handling System Power State Requests</a>

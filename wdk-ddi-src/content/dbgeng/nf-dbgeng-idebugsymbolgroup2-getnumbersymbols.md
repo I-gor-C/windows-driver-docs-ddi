@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbolGroup2.GetNumberSymbols
+UID: NF:dbgeng.IDebugSymbolGroup2.GetNumberSymbols
 title: IDebugSymbolGroup2::GetNumberSymbols method
 author: windows-driver-content
 description: The GetNumberSymbols method returns the number of symbols that are contained in a symbol group.
 old-location: debugger\getnumbersymbols.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5a202530-7146-472d-9560-580871cd56ec
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbolGroup2, IDebugSymbolGroup2::GetNumberSymbols, GetNumberSymbols
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbolGroup2::GetNumberSymbols method

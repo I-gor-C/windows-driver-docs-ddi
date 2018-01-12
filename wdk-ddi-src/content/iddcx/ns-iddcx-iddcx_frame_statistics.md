@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDDCX_FRAME_STATISTICS
+UID: NS:iddcx.IDDCX_FRAME_STATISTICS
 title: IDDCX_FRAME_STATISTICS
 author: windows-driver-content
 description: Gives information about the current frame being processed.
@@ -7,7 +7,7 @@ old-location: display\iddcx_frame_statistics.htm
 old-project: display
 ms.assetid: 5099ff37-eed9-44fd-8254-3828b8c5d8bd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_FRAME_STATISTICS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDDCX_FRAME_STATISTICS structure

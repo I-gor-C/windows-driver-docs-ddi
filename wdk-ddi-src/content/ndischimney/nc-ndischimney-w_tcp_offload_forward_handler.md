@@ -1,13 +1,13 @@
 ---
-UID: NC.ndischimney.W_TCP_OFFLOAD_FORWARD_HANDLER
+UID: NC:ndischimney.W_TCP_OFFLOAD_FORWARD_HANDLER
 title: W_TCP_OFFLOAD_FORWARD_HANDLER
 author: windows-driver-content
 description: NDIS calls the MiniportTcpOffloadForward function to forward unacknowledged received TCP segments to an offload target.
 old-location: netvista\miniporttcpoffloadforward.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e5702476-60a3-4bfc-b959-198e98f0f9ba
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # W_TCP_OFFLOAD_FORWARD_HANDLER callback
@@ -67,7 +68,7 @@ NDIS_STATUS MiniportTcpOffloadForward(
 The handle to an offload-target allocated context area in which the offload target maintains state
      information about this instance of the adapter. The miniport driver provided this handle to NDIS when it
      called 
-     <a href="netvista.ndismsetminiportattributes">
+     <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
      NdisMSetMiniportAttributes</a> from its 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
@@ -84,10 +85,10 @@ A pointer to a memory location that contains a PVOID value. This PVOID value ref
 ### -param NetBufferList [in]
 
 A pointer to a 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure. This structure
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. This structure
      may be a stand-alone structure or the first structure in a linked list of NET_BUFFER_LIST structures.
      Each NET_BUFFER_LIST structure in the list describes one 
-     <a href="netvista.net_buffer">NET_BUFFER</a> structure. Each NET_BUFFER structure
+     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure. Each NET_BUFFER structure
      maps to a chain of memory descriptor lists (MDLs). The MDLs associated with a NET_BUFFER structure
      contain one and only one TCP segment that is being forwarded to the offload target. The first byte of
      the first MDL is the first byte of the TCP header. The NET_BUFFER_LIST and associated structures are
@@ -175,19 +176,19 @@ Any level
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_forward_complete.md">
    NdisTcpOffloadForwardComplete</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20W_TCP_OFFLOAD_FORWARD_HANDLER callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_FORWARD_HANDLER callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

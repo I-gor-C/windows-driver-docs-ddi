@@ -1,5 +1,5 @@
 ---
-UID: NS.DRMK.KSDRMAUDIOSTREAM_CONTENTID
+UID: NS:drmk.KSDRMAUDIOSTREAM_CONTENTID
 title: KSDRMAUDIOSTREAM_CONTENTID
 author: windows-driver-content
 description: The KSDRMAUDIOSTREAM_CONTENTID structure specifies the DRM content ID and DRM content rights for a KSPROPERTY_DRMAUDIOSTREAM_CONTENTIDset-property request.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: d11be514-2a45-407e-884a-66f6f503f57a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSDRMAUDIOSTREAM_CONTENTID, *PKSDRMAUDIOSTREAM_CONTENTID, PKSDRMAUDIOSTREAM_CONTENTID, KSDRMAUDIOSTREAM_CONTENTID
+ms.keywords: KSDRMAUDIOSTREAM_CONTENTID, *PKSDRMAUDIOSTREAM_CONTENTID, KSDRMAUDIOSTREAM_CONTENTID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PKSDRMAUDIOSTREAM_CONTENTID, KSDRMAUDIOSTREAM_CONTENTID
 ---
 
 # KSDRMAUDIOSTREAM_CONTENTID structure
@@ -61,7 +62,7 @@ Specifies the DRM content ID. This member identifies a protected KS audio stream
 
 ### -field DrmRights
 
-Specifies the DRM content rights assigned to the stream. This member is a pointer to a <a href="audio.drmrights">DRMRIGHTS</a> structure.
+Specifies the DRM content rights assigned to the stream. This member is a pointer to a <a href="..\drmk\ns-drmk-tagdrmrights.md">DRMRIGHTS</a> structure.
 
 
 ## -remarks
@@ -88,7 +89,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>
 </dt>
 <dt>
-<a href="audio.drmrights">DRMRIGHTS</a>
+<a href="..\drmk\ns-drmk-tagdrmrights.md">DRMRIGHTS</a>
 </dt>
 </dl>
  

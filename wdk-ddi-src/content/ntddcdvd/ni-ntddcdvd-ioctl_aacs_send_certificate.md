@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdvd.IOCTL_AACS_SEND_CERTIFICATE
+UID: NI:ntddcdvd.IOCTL_AACS_SEND_CERTIFICATE
 title: IOCTL_AACS_SEND_CERTIFICATE
 author: windows-driver-content
 description: Sends the host certificate to the logical unit.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_aacs_send_certificate.htm
 old-project: storage
 ms.assetid: e56b2d31-cb59-489d-ab12-7657406ba67a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, PDVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.date: 1/10/2018
+ms.keywords: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_SEND_CERTIFICATE IOCTL
@@ -45,7 +46,7 @@ Sends the host certificate to the logical unit.
 ## -ioctlparameters
 
 ### -input-buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains host certificate of type <a href="storage.aacs_send_certificate">AACS_SEND_CERTIFICATE</a>.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains host certificate of type <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_send_certificate.md">AACS_SEND_CERTIFICATE</a>.
 
 <b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location indicates the size, in bytes, of the buffer, which must be &gt;= <b>sizeof</b>(AACS_SEND_CERTIFICATE). 
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddtape.IOCTL_TAPE_PREPARE
+UID: NI:ntddtape.IOCTL_TAPE_PREPARE
 title: IOCTL_TAPE_PREPARE
 author: windows-driver-content
 description: Loads or unloads the tape, resets tape tension, locks or unlocks the ejection mechanism, or formats the tape.
@@ -7,7 +7,7 @@ old-location: storage\ioctl_tape_prepare.htm
 old-project: storage
 ms.assetid: 0e016f3a-4f3a-4256-bb7b-10a5f955b930
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: _TAPE_DRIVE_PROBLEM_TYPE, TAPE_DRIVE_PROBLEM_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TAPE_DRIVE_PROBLEM_TYPE
 ---
 
 # IOCTL_TAPE_PREPARE IOCTL
@@ -51,7 +52,7 @@ Loads or unloads the tape, resets tape tension, locks or unlocks the ejection me
 
 ### -input-buffer
 
-       The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="storage.tape_prepare">TAPE_PREPARE</a> structure that indicates the type of operation.
+       The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\ntddtape\ns-ntddtape-_tape_prepare.md">TAPE_PREPARE</a> structure that indicates the type of operation.
 
 If the <b>Immediate</b> member is <b>TRUE</b>, the operation should be asynchronous. 
 
@@ -102,18 +103,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.tapeminiprepare">TapeMiniPrepare</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567950">TapeMiniPrepare</a>
 </dt>
 <dt>
-<a href="storage.tape_prepare">TAPE_PREPARE</a>
+<a href="..\ntddtape\ns-ntddtape-_tape_prepare.md">TAPE_PREPARE</a>
 </dt>
 <dt>
-<a href="storage.tape_status">TAPE_STATUS</a>
+<a href="..\minitape\ne-minitape-_tape_status.md">TAPE_STATUS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_TAPE_PREPARE control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_TAPE_PREPARE control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

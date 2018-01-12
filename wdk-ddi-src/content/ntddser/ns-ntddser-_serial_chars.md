@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSER._SERIAL_CHARS
+UID: NS:ntddser._SERIAL_CHARS
 title: _SERIAL_CHARS
 author: windows-driver-content
 description: The SERIAL_CHARS structure specifies the special characters that the serial controller driver uses for handshake flow control.
@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: D9146B9F-5AE4-436B-B223-0A61400FE9AC
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SERIAL_CHARS, SERIAL_CHARS, *PSERIAL_CHARS, PSERIAL_CHARS
+ms.keywords: _SERIAL_CHARS, SERIAL_CHARS, *PSERIAL_CHARS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SERIAL_CHARS, *PSERIAL_CHARS
 ---
 
 # _SERIAL_CHARS structure

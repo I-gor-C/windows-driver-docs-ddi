@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHHFPDDI._BTHHFP_AUDIO_DEVICE_CAPABILTIES
+UID: NS:bthhfpddi._BTHHFP_AUDIO_DEVICE_CAPABILTIES
 title: _BTHHFP_AUDIO_DEVICE_CAPABILTIES
 author: windows-driver-content
 description: The BTHHFP_AUDIO_DEVICE_CAPABILTIES data structure describes the capabilities of a Bluetooth HFP device, including the version and whether it supports 16 kHz sampling.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 56c2bbb9-8fcd-43d4-9202-c8925575e44d
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _BTHHFP_AUDIO_DEVICE_CAPABILTIES, *PBTHHFP_AUDIO_DEVICE_CAPABILTIES, PBTHHFP_AUDIO_DEVICE_CAPABILTIES, BTHHFP_AUDIO_DEVICE_CAPABILTIES
+ms.keywords: _BTHHFP_AUDIO_DEVICE_CAPABILTIES, BTHHFP_AUDIO_DEVICE_CAPABILTIES, *PBTHHFP_AUDIO_DEVICE_CAPABILTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BTHHFP_AUDIO_DEVICE_CAPABILTIES, *PBTHHFP_AUDIO_DEVICE_CAPABILTIES
 ---
 
 # _BTHHFP_AUDIO_DEVICE_CAPABILTIES structure

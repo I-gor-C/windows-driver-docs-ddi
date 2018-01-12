@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltQueueDeferredIoWorkItem
+UID: NF:fltkernel.FltQueueDeferredIoWorkItem
 title: FltQueueDeferredIoWorkItem function
 author: windows-driver-content
 description: The FltQueueDeferredIoWorkItem routine posts an IRP-based I/O operation to a work queue.
@@ -7,7 +7,7 @@ old-location: ifsk\fltqueuedeferredioworkitem.htm
 old-project: ifsk
 ms.assetid: c6a51b9b-544e-4595-842a-76c667928350
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltQueueDeferredIoWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fltmgr.lib
 req.dll: Fltmgr.sys
 req.irql: <= DISPATCH_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltQueueDeferredIoWorkItem function
@@ -59,12 +60,12 @@ NTSTATUS FltQueueDeferredIoWorkItem(
 
 ### -param FltWorkItem [in]
 
-A pointer to the work item to add to the work queue. The work item must have been allocated by calling <a href="ifsk.fltallocatedeferredioworkitem">FltAllocateDeferredIoWorkItem</a>. 
+A pointer to the work item to add to the work queue. The work item must have been allocated by calling <a href="..\fltkernel\nf-fltkernel-fltallocatedeferredioworkitem.md">FltAllocateDeferredIoWorkItem</a>. 
 
 
 ### -param Data [in]
 
-A pointer to the callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the I/O operation. The operation must be an IRP-based I/O operation. To determine whether a given callback data structure represents an IRP-based I/O operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. 
+A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. The operation must be an IRP-based I/O operation. To determine whether a given callback data structure represents an IRP-based I/O operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. 
 
 
 ### -param WorkerRoutine [in]
@@ -155,7 +156,7 @@ The <b>FltQueueDeferredIoWorkItem</b> routine returns STATUS_SUCCESS or an appro
 <dt><b>STATUS_FLT_NOT_SAFE_TO_POST_OPERATION</b></dt>
 </dl>The I/O operation cannot be posted safely to a worker thread. Possible reasons include the following: 
 
-<b>FltQueueDeferredIoWorkItem</b> cannot post an I/O operation to a worker thread if the <b>TopLevelIrp</b> field of the current thread is not <b>NULL</b>, because the resulting file system recursion could cause deadlocks or stack overflows. (For more information, see <a href="ifsk.iogettoplevelirp">IoGetTopLevelIrp</a>.) 
+<b>FltQueueDeferredIoWorkItem</b> cannot post an I/O operation to a worker thread if the <b>TopLevelIrp</b> field of the current thread is not <b>NULL</b>, because the resulting file system recursion could cause deadlocks or stack overflows. (For more information, see <a href="..\ntifs\nf-ntifs-iogettoplevelirp.md">IoGetTopLevelIrp</a>.) 
 
 <b>FltQueueDeferredIoWorkItem</b> cannot post a paging I/O operation to a worker thread. 
 
@@ -171,25 +172,25 @@ The operation must be an IRP-based I/O operation. To determine whether a given c
 
 A minifilter driver can use <b>FltQueueDeferredIoWorkItem</b> in a preoperation callback (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine as follows: 
 
-The preoperation callback calls <a href="ifsk.fltallocatedeferredioworkitem">FltAllocateDeferredIoWorkItem</a> to allocate the work item. 
+The preoperation callback calls <a href="..\fltkernel\nf-fltkernel-fltallocatedeferredioworkitem.md">FltAllocateDeferredIoWorkItem</a> to allocate the work item. 
 
 The preoperation callback calls <b>FltQueueDeferredIoWorkItem</b> to post the operation to the work queue. 
 
 The preoperation callback returns FLT_PREOP_PENDING. 
 
-After processing the I/O operation, the work routine calls <a href="ifsk.fltcompletependedpreoperation">FltCompletePendedPreOperation</a> to return the I/O operation to the Filter Manager. 
+After processing the I/O operation, the work routine calls <a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a> to return the I/O operation to the Filter Manager. 
 
-The work routine calls <a href="ifsk.fltfreedeferredioworkitem">FltFreeDeferredIoWorkItem</a> to free the work item. 
+The work routine calls <a href="..\fltkernel\nf-fltkernel-fltfreedeferredioworkitem.md">FltFreeDeferredIoWorkItem</a> to free the work item. 
 
 A minifilter driver can use <b>FltQueueDeferredIoWorkItem</b> in a post-operation callback (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) routine as follows: 
 
-The post-operation callback calls <a href="ifsk.fltallocatedeferredioworkitem">FltAllocateDeferredIoWorkItem</a> to allocate the work item. 
+The post-operation callback calls <a href="..\fltkernel\nf-fltkernel-fltallocatedeferredioworkitem.md">FltAllocateDeferredIoWorkItem</a> to allocate the work item. 
 
 The post-operation callback calls <b>FltQueueDeferredIoWorkItem</b> to post the operation to the work queue. 
 
 The post-operation callback returns FLT_POSTOP_MORE_PROCESSING_REQUIRED. 
 
-After processing the I/O operation, the work routine calls <a href="ifsk.fltcompletependedpostoperation">FltCompletePendedPostOperation</a> to return the I/O operation to the Filter Manager. 
+After processing the I/O operation, the work routine calls <a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a> to return the I/O operation to the Filter Manager. 
 
 IRP_MJ_READ
 
@@ -269,25 +270,25 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocatedeferredioworkitem">FltAllocateDeferredIoWorkItem</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatedeferredioworkitem.md">FltAllocateDeferredIoWorkItem</a>
 </dt>
 <dt>
-<a href="ifsk.fltcompletependedpostoperation">FltCompletePendedPostOperation</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a>
 </dt>
 <dt>
-<a href="ifsk.fltcompletependedpreoperation">FltCompletePendedPreOperation</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a>
 </dt>
 <dt>
-<a href="ifsk.fltfreedeferredioworkitem">FltFreeDeferredIoWorkItem</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreedeferredioworkitem.md">FltFreeDeferredIoWorkItem</a>
 </dt>
 <dt>
-<a href="ifsk.iogettoplevelirp">IoGetTopLevelIrp</a>
+<a href="..\ntifs\nf-ntifs-iogettoplevelirp.md">IoGetTopLevelIrp</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
@@ -300,5 +301,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueueDeferredIoWorkItem routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueueDeferredIoWorkItem routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

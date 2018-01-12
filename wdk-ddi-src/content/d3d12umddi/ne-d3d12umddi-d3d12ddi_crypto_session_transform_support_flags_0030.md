@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAGS_0030
+UID: NE:d3d12umddi.D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAGS_0030
 title: D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAGS_0030
 author: windows-driver-content
 description: The crypto session transform support flags.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-crypto-session-transform-support-flags-0030.htm
 old-project: display
 ms.assetid: 9b8fea62-9947-42ce-acb6-1736ac6e3d86
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAGS_0030, D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAGS_0030
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAGS_0030
 ---
 
 # D3D12DDI_CRYPTO_SESSION_TRANSFORM_SUPPORT_FLAGS_0030 enumeration

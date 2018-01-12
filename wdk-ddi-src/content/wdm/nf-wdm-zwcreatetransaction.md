@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ZwCreateTransaction
+UID: NF:wdm.ZwCreateTransaction
 title: ZwCreateTransaction function
 author: windows-driver-content
 description: The ZwCreateTransaction routine creates a transaction object.
@@ -7,7 +7,7 @@ old-location: kernel\zwcreatetransaction.htm
 old-project: kernel
 ms.assetid: b4c2dd68-3c1a-46d3-ab9c-be2291ed80f4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwCreateTransaction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -83,7 +84,7 @@ TRANSACTION_COMMIT
 
 </td>
 <td>
-Commit the transaction (see <a href="kernel.zwcommittransaction">ZwCommitTransaction</a>).
+Commit the transaction (see <a href="..\wdm\nf-wdm-zwcommittransaction.md">ZwCommitTransaction</a>).
 
 </td>
 </tr>
@@ -93,7 +94,7 @@ TRANSACTION_ENLIST
 
 </td>
 <td>
-Create an enlistment for the transaction (see <a href="kernel.zwcreateenlistment">ZwCreateEnlistment</a>).
+Create an enlistment for the transaction (see <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>).
 
 </td>
 </tr>
@@ -113,7 +114,7 @@ TRANSACTION_QUERY_INFORMATION
 
 </td>
 <td>
-Obtain information about the transaction (see <a href="kernel.zwqueryinformationtransaction">ZwQueryInformationTransaction</a>).
+Obtain information about the transaction (see <a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>).
 
 </td>
 </tr>
@@ -123,7 +124,7 @@ TRANSACTION_ROLLBACK
 
 </td>
 <td>
-Roll back the transaction (see <a href="kernel.zwrollbacktransaction">ZwRollbackTransaction</a>).
+Roll back the transaction (see <a href="..\wdm\nf-wdm-zwrollbacktransaction.md">ZwRollbackTransaction</a>).
 
 </td>
 </tr>
@@ -133,7 +134,7 @@ TRANSACTION_SET_INFORMATION
 
 </td>
 <td>
-Set information for the transaction (see <a href="kernel.zwsetinformationtransaction">ZwSetInformationTransaction</a>).
+Set information for the transaction (see <a href="..\wdm\nf-wdm-zwsetinformationtransaction.md">ZwSetInformationTransaction</a>).
 
 </td>
 </tr>
@@ -207,7 +208,7 @@ The <i>DesiredAccess</i> value cannot be zero.
 
 ### -param ObjectAttributes [in, optional]
 
-A pointer to an <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> routine to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. This parameter is optional and can be <b>NULL</b>.
+A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> routine to initialize this structure. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>. This parameter is optional and can be <b>NULL</b>.
 
 
 ### -param Uow [in, optional]
@@ -217,7 +218,7 @@ A pointer to a GUID that KTM uses as the new transaction object's <a href="https
 
 ### -param TmHandle [in, optional]
 
-A handle to a <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a> that was obtained by a previous call to <a href="kernel.zwcreatetransactionmanager">ZwCreateTransactionManager</a> or <a href="kernel.zwopentransactionmanager">ZwOpenTransactionManager</a>. KTM assigns the new transaction object to the specified transaction manager object. If this parameter is <b>NULL</b>, KTM assigns the new transaction object to a transaction manager later, when a resource manager creates an enlistment for the transaction. 
+A handle to a <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a> or <a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>. KTM assigns the new transaction object to the specified transaction manager object. If this parameter is <b>NULL</b>, KTM assigns the new transaction object to a transaction manager later, when a resource manager creates an enlistment for the transaction. 
 
 
 ### -param CreateOptions [in, optional]
@@ -255,12 +256,12 @@ Reserved for future use. Callers should set this parameter to zero.
 
 ### -param Timeout [in, optional]
 
-A pointer to a time-out value. If the transaction has not been committed by the time specified by this parameter, KTM rolls back the transaction. The time-out value is expressed in system time units (100-nanosecond intervals), and can specify either an absolute time or a relative time. If the value pointed to by <i>Timeout</i> is negative, the expiration time is relative to the current system time. Otherwise, the expiration time is absolute. This pointer is optional and can be <b>NULL</b> if you do not want the transaction to have a time-out value. If <i>Timeout</i> = <b>NULL</b> or *<i>Timeout</i> = 0, the transaction never times out. (You can also use <a href="kernel.zwsetinformationtransaction">ZwSetInformationTransaction</a> to set a time-out value.)
+A pointer to a time-out value. If the transaction has not been committed by the time specified by this parameter, KTM rolls back the transaction. The time-out value is expressed in system time units (100-nanosecond intervals), and can specify either an absolute time or a relative time. If the value pointed to by <i>Timeout</i> is negative, the expiration time is relative to the current system time. Otherwise, the expiration time is absolute. This pointer is optional and can be <b>NULL</b> if you do not want the transaction to have a time-out value. If <i>Timeout</i> = <b>NULL</b> or *<i>Timeout</i> = 0, the transaction never times out. (You can also use <a href="..\wdm\nf-wdm-zwsetinformationtransaction.md">ZwSetInformationTransaction</a> to set a time-out value.)
 
 
 ### -param Description [in, optional]
 
-A pointer to a caller-supplied <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains a NULL-terminated string. The string provides a description of the transaction. KTM stores a copy of the string and includes the string in messages that it writes to the log stream. The maximum string length is MAX_TRANSACTION_DESCRIPTION_LENGTH. This parameter is optional and can be <b>NULL</b>.
+A pointer to a caller-supplied <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a NULL-terminated string. The string provides a description of the transaction. KTM stores a copy of the string and includes the string in messages that it writes to the log stream. The maximum string length is MAX_TRANSACTION_DESCRIPTION_LENGTH. This parameter is optional and can be <b>NULL</b>.
 
 
 ## -returns
@@ -293,11 +294,11 @@ The routine might return other <a href="https://msdn.microsoft.com/library/windo
 
 
 ## -remarks
-The caller can use the <i>Uow</i> parameter to specify a UOW identifier for the transaction object. If the caller does not specify a UOW identifier, KTM generates a GUID and assigns it to the transaction object. The caller can later obtain this GUID by calling <a href="kernel.zwqueryinformationtransaction">ZwQueryInformationTransaction</a>.
+The caller can use the <i>Uow</i> parameter to specify a UOW identifier for the transaction object. If the caller does not specify a UOW identifier, KTM generates a GUID and assigns it to the transaction object. The caller can later obtain this GUID by calling <a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>.
 
 Typically, you should let KTM generate a GUID for the transaction object, unless your component communicates with another TPS component that has already generated a UOW identifier for the transaction.
 
-To close the transaction handle, the component that called <b>ZwCreateTransaction</b> must call <a href="kernel.zwclose">ZwClose</a>. If the last transaction handle closes before any component calls <a href="kernel.zwcommittransaction">ZwCommitTransaction</a> for the transaction, KTM rolls back the transaction.
+To close the transaction handle, the component that called <b>ZwCreateTransaction</b> must call <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>. If the last transaction handle closes before any component calls <a href="..\wdm\nf-wdm-zwcommittransaction.md">ZwCommitTransaction</a> for the transaction, KTM rolls back the transaction.
 
 For more information about how transaction clients should use <b>ZwCreateTransaction</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542876">Creating a Transactional Client</a>.
 
@@ -376,7 +377,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -387,48 +388,48 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 </dt>
 <dt>
-<a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a>
+<a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="kernel.zwclose">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 </dt>
 <dt>
-<a href="kernel.zwcommittransaction">ZwCommitTransaction</a>
+<a href="..\wdm\nf-wdm-zwcommittransaction.md">ZwCommitTransaction</a>
 </dt>
 <dt>
-<a href="kernel.zwcreateenlistment">ZwCreateEnlistment</a>
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatetransactionmanager">ZwCreateTransactionManager</a>
+<a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a>
 </dt>
 <dt>
-<a href="kernel.zwopentransaction">ZwOpenTransaction</a>
+<a href="..\wdm\nf-wdm-zwopentransaction.md">ZwOpenTransaction</a>
 </dt>
 <dt>
-<a href="kernel.zwopentransactionmanager">ZwOpenTransactionManager</a>
+<a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>
 </dt>
 <dt>
-<a href="kernel.zwqueryinformationtransaction">ZwQueryInformationTransaction</a>
+<a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
 </dt>
 <dt>
-<a href="kernel.zwrollbacktransaction">ZwRollbackTransaction</a>
+<a href="..\wdm\nf-wdm-zwrollbacktransaction.md">ZwRollbackTransaction</a>
 </dt>
 <dt>
-<a href="kernel.zwsetinformationtransaction">ZwSetInformationTransaction</a>
+<a href="..\wdm\nf-wdm-zwsetinformationtransaction.md">ZwSetInformationTransaction</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateTransaction routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateTransaction routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

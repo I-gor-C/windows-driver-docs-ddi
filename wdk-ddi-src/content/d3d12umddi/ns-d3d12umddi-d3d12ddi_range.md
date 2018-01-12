@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_RANGE
+UID: NS:d3d12umddi.D3D12DDI_RANGE
 title: D3D12DDI_RANGE
 author: windows-driver-content
 description: Specifies a range.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_range.htm
 old-project: display
 ms.assetid: B3A8F252-D56D-4F20-A0DE-2A29904BC907
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_RANGE, D3D12DDI_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_RANGE
 ---
 
 # D3D12DDI_RANGE structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_FIXDATA_ACCURACY
+UID: NS:gnssdriver.GNSS_FIXDATA_ACCURACY
 title: GNSS_FIXDATA_ACCURACY
 author: windows-driver-content
 description: This structure defines the accuracy details of a fix.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 3C08FE5D-1385-4FE3-98C9-9FC530C6C755
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_FIXDATA_ACCURACY, *PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY, PGNSS_FIXDATA_ACCURACY
+ms.keywords: GNSS_FIXDATA_ACCURACY, *PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY
 ---
 
 # GNSS_FIXDATA_ACCURACY structure

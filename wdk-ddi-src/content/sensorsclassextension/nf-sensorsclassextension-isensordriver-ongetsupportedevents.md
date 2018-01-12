@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsclassextension.ISensorDriver.OnGetSupportedEvents
+UID: NF:sensorsclassextension.ISensorDriver.OnGetSupportedEvents
 title: ISensorDriver::OnGetSupportedEvents method
 author: windows-driver-content
 description: The ISensorDriver::OnGetSupportedEvents method retrieves the list of events that the specified sensor can raise.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <a href="sensors.isensordriver_ongetsupportedevents">ISensorDriver::OnGetSupportedEvents</a> method retrieves the list of events that the specified sensor can raise.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545623">ISensorDriver::OnGetSupportedEvents</a> method retrieves the list of events that the specified sensor can raise.
 
 
 

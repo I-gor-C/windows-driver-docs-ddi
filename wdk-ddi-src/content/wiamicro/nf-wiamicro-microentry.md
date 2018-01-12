@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamicro.MicroEntry
+UID: NF:wiamicro.MicroEntry
 title: MicroEntry function
 author: windows-driver-content
 description: The MicroEntry function responds to commands sent by the WIA Flatbed driver.
 old-location: image\microentry.htm
-old-project: Image
+old-project: image
 ms.assetid: 3e0c51af-ceb9-4c06-ab6a-ccc468997fdd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: MicroEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -72,7 +73,7 @@ If the function succeeds, it returns S_OK. If a passed command is not supported,
 ## -remarks
 This function performs many different tasks, depending on the command passed in the <i>lCommand</i> parameter. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a> reference section for a list of these commands.
 
-Two structures are passed to the function. A <a href="..\wiamicro\ns-wiamicro-val.md">VAL</a> structure is passed in the <i>pValue</i> pointer, and the <b>pScanInfo</b> member of the VAL structure points to a <a href="image.scaninfo">SCANINFO</a> structure. The VAL structure is used to pass information between the WIA Flatbed Driver and the microdriver. The SCANINFO structure is used to store and communicate parameters of a scan data acquisition. Many of the commands passed to this function set values in the SCANINFO structure.
+Two structures are passed to the function. A <a href="..\wiamicro\ns-wiamicro-val.md">VAL</a> structure is passed in the <i>pValue</i> pointer, and the <b>pScanInfo</b> member of the VAL structure points to a <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure. The VAL structure is used to pass information between the WIA Flatbed Driver and the microdriver. The SCANINFO structure is used to store and communicate parameters of a scan data acquisition. Many of the commands passed to this function set values in the SCANINFO structure.
 
 
 ## -requirements
@@ -117,18 +118,18 @@ Header
 <a href="..\wiamicro\ns-wiamicro-val.md">VAL</a>
 </dt>
 <dt>
-<a href="image.scaninfo">SCANINFO</a>
+<a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a>
 </dt>
 <dt>
-<a href="image.wia_microdriver_structures">WIA Microdriver Structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552722">WIA Microdriver Structures</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20MicroEntry function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20MicroEntry function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

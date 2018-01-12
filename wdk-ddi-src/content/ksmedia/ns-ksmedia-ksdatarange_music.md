@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSDATARANGE_MUSIC
+UID: NS:ksmedia.KSDATARANGE_MUSIC
 title: KSDATARANGE_MUSIC
 author: windows-driver-content
 description: The KSDATARANGE_MUSIC structure specifies a range of DirectMusic MIDI formats.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 2ada5d1c-9c46-4f7b-99e5-72aa8f6fee9f
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSDATARANGE_MUSIC, *PKSDATARANGE_MUSIC, KSDATARANGE_MUSIC, PKSDATARANGE_MUSIC
+ms.keywords: KSDATARANGE_MUSIC, KSDATARANGE_MUSIC, *PKSDATARANGE_MUSIC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSDATARANGE_MUSIC, *PKSDATARANGE_MUSIC
 ---
 
 # KSDATARANGE_MUSIC structure
@@ -59,7 +60,7 @@ typedef struct {
 
 ### -field DataRange
 
-Specifies the MajorFormat and SubFormat GUIDs as well as the Specifier GUID for the DirectMusic data. This member is an initialized <a href="stream.ksdatarange">KSDATARANGE</a> structure.
+Specifies the MajorFormat and SubFormat GUIDs as well as the Specifier GUID for the DirectMusic data. This member is an initialized <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a> structure.
 
 
 ### -field Technology
@@ -145,7 +146,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksdatarange">KSDATARANGE</a>
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
 </dt>
 </dl>
  

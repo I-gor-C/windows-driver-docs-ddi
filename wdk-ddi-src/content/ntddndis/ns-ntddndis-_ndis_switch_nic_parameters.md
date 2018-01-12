@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_SWITCH_NIC_PARAMETERS
+UID: NS:ntddndis._NDIS_SWITCH_NIC_PARAMETERS
 title: _NDIS_SWITCH_NIC_PARAMETERS
 author: windows-driver-content
 description: The NDIS_SWITCH_NIC_PARAMETERS structure specifies the configuration parameters for a network adapter (NIC) that is connected to a Hyper-V extensible switch port.
 old-location: netvista\ndis_switch_nic_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 52B9DD8B-E96F-464C-9D98-5EF8B6C050C5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_SWITCH_NIC_PARAMETERS, *PNDIS_SWITCH_NIC_PARAMETERS, PNDIS_SWITCH_NIC_PARAMETERS, NDIS_SWITCH_NIC_PARAMETERS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_SWITCH_NIC_PARAMETERS, *PNDIS_SWITCH_NIC_PARAMETERS, NDIS_SWITCH_NIC_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_SWITCH_NIC_PARAMETERS, NDIS_SWITCH_NIC_PARAMETERS
 ---
 
 # _NDIS_SWITCH_NIC_PARAMETERS structure
@@ -76,7 +77,7 @@ typedef struct _NDIS_SWITCH_NIC_PARAMETERS {
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -144,17 +145,17 @@ An NDIS_SWITCH_PORT_ID value that contains the unique identifier of the extensib
 
 An NDIS_SWITCH_NIC_INDEX value that specifies the index of the network adapter that is connected to the  extensible switch port specified by the <b>PortId</b> member.
 
-For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="netvista.network_adapter_index_values">Network Adapter Index Values</a>.
+For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="https://msdn.microsoft.com/969333DA-0282-474B-8D56-72CD623C5329">Network Adapter Index Values</a>.
 
 
 ### -field NicType
 
-An <a href="netvista.ndis_switch_nic_type">NDIS_SWITCH_NIC_TYPE</a> value that specifies the type of the network adapter that is connected to an extensible switch port.
+An <a href="..\ntddndis\ne-ntddndis-_ndis_switch_nic_type.md">NDIS_SWITCH_NIC_TYPE</a> value that specifies the type of the network adapter that is connected to an extensible switch port.
 
 
 ### -field NicState
 
-An <a href="netvista.ndis_switch_nic_state">NDIS_SWITCH_NIC_STATE</a> value that specifies the current state of the network adapter.
+An <a href="..\ntddndis\ne-ntddndis-_ndis_switch_nic_state.md">NDIS_SWITCH_NIC_STATE</a> value that specifies the current state of the network adapter.
 
 
 ### -field VmName
@@ -214,7 +215,7 @@ A <b>UCHAR</b> array that specifies the media access control (MAC) address as co
 
 ### -field VMMacAddress
 
-A <b>UCHAR</b> array that specifies the MAC address that is configured on the network adapter inside the VM itself. The field is all zeros for non VM NICs. If <i>AllowMacSpoofing</i> (from <a href="netvista.ndis_switch_port_property_security">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>) is TRUE, this address will also be applied to the <i>CurrentMacAddress.</i>
+A <b>UCHAR</b> array that specifies the MAC address that is configured on the network adapter inside the VM itself. The field is all zeros for non VM NICs. If <i>AllowMacSpoofing</i> (from <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_security.md">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>) is TRUE, this address will also be applied to the <i>CurrentMacAddress.</i>
 
 
 ### -field CurrentMacAddress
@@ -234,7 +235,7 @@ For more information, see the Remarks section.
 <div> </div>
 
 ## -remarks
-OID query requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh598261">OID_SWITCH_NIC_ARRAY</a> return an <a href="netvista.ndis_switch_nic_array">NDIS_SWITCH_NIC_ARRAY</a> structure that contains zero or more elements. Each element is formatted as an <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure.
+OID query requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh598261">OID_SWITCH_NIC_ARRAY</a> return an <a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_array.md">NDIS_SWITCH_NIC_ARRAY</a> structure that contains zero or more elements. Each element is formatted as an <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure.
 
 The <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure is also used in the following OID requests: 
 
@@ -311,19 +312,19 @@ Header
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_switch_nic_array">NDIS_SWITCH_NIC_ARRAY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_array.md">NDIS_SWITCH_NIC_ARRAY</a>
 </dt>
 <dt>
-<a href="netvista.ndis_switch_nic_parameters">NDIS_SWITCH_NIC_PARAMETERS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_switch_nic_state">NDIS_SWITCH_NIC_STATE</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_switch_nic_state.md">NDIS_SWITCH_NIC_STATE</a>
 </dt>
 <dt>
-<a href="netvista.ndis_switch_nic_type">NDIS_SWITCH_NIC_TYPE</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_switch_nic_type.md">NDIS_SWITCH_NIC_TYPE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598206">NDIS_STATUS_SWITCH_PORT_REMOVE_VF</a>
@@ -357,5 +358,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_SWITCH_NIC_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_NIC_PARAMETERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

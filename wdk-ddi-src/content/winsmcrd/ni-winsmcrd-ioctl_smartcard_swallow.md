@@ -1,5 +1,5 @@
 ---
-UID: NI.winsmcrd.IOCTL_SMARTCARD_SWALLOW
+UID: NI:winsmcrd.IOCTL_SMARTCARD_SWALLOW
 title: IOCTL_SMARTCARD_SWALLOW
 author: windows-driver-content
 description: The IOCTL_SMARTCARD_SWALLOW request causes the smart card reader to swallow the card.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 req.product: Windows 10 or later.
 ---
 

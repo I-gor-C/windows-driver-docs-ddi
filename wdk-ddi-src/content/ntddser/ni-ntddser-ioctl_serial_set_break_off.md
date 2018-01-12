@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_SET_BREAK_OFF
+UID: NI:ntddser.IOCTL_SERIAL_SET_BREAK_OFF
 title: IOCTL_SERIAL_SET_BREAK_OFF
 author: windows-driver-content
 description: The IOCTL_SERIAL_SET_BREAK_OFF request sets the line control break signal inactive.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_BREAK_OFF IOCTL

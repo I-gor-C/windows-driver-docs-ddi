@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILMESSAGEFLAGS
+UID: NE:ntddrilapitypes.RILMESSAGEFLAGS
 title: RILMESSAGEFLAGS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessageflags.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 82f36886-20bf-4981-b0f0-3871a87b6c4e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMESSAGEFLAGS, RILMESSAGEFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMESSAGEFLAGS
 ---
 
 # RILMESSAGEFLAGS enumeration

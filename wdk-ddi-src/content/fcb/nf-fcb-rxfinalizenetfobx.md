@@ -1,5 +1,5 @@
 ---
-UID: NF.fcb.RxFinalizeNetFobx
+UID: NF:fcb.RxFinalizeNetFobx
 title: RxFinalizeNetFobx function
 author: windows-driver-content
 description: RxFinalizeNetFOBX finalizes the given FOBX structure. The caller must have an exclusive lock on the FCB associated with FOBX structure.
@@ -7,7 +7,7 @@ old-location: ifsk\rxfinalizenetfobx.htm
 old-project: ifsk
 ms.assetid: 052e7995-fab8-4863-a3a2-8b9bd6f21ec9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RxFinalizeNetFobx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: *PFA_ENTRY, FA_ENTRY
 ---
 
 # RxFinalizeNetFobx function
@@ -123,72 +124,72 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.the_fcb_structure">The FCB Structure</a>
+<a href="https://msdn.microsoft.com/feb38b24-c028-4c8d-be45-11d9a4659f8d">The FCB Structure</a>
 </dt>
 <dt>
-<a href="ifsk.the_fobx_structure">The FOBX Structure</a>
+<a href="https://msdn.microsoft.com/95177b38-4ca5-49ed-9f9d-bafedd156044">The FOBX Structure</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreatenetfcb">RxCreateNetFcb</a>
+<a href="..\fcb\nf-fcb-rxcreatenetfcb.md">RxCreateNetFcb</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreatenetfobx">RxCreateNetFobx</a>
+<a href="..\fcb\nf-fcb-rxcreatenetfobx.md">RxCreateNetFobx</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreatenetroot">RxCreateNetRoot</a>
+<a href="..\fcb\nf-fcb-rxcreatenetroot.md">RxCreateNetRoot</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreatesrvcall">RxCreateSrvCall</a>
+<a href="..\fcb\nf-fcb-rxcreatesrvcall.md">RxCreateSrvCall</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreatesrvopen">RxCreateSrvOpen</a>
+<a href="..\fcb\nf-fcb-rxcreatesrvopen.md">RxCreateSrvOpen</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreatevnetroot">RxCreateVNetRoot</a>
+<a href="..\fcb\nf-fcb-rxcreatevnetroot.md">RxCreateVNetRoot</a>
 </dt>
 <dt>
-<a href="ifsk.rxdereference">RxDereference</a>
+<a href="..\rxprocs\nf-rxprocs-rxdereference.md">RxDereference</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizeconnection">RxFinalizeConnection</a>
+<a href="..\rxprocs\nf-rxprocs-rxfinalizeconnection.md">RxFinalizeConnection</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizenetfcb">RxFinalizeNetFcb</a>
+<a href="..\rxprocs\nf-rxprocs-rxfinalizenetfcb.md">RxFinalizeNetFcb</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizenetroot">RxFinalizeNetRoot</a>
+<a href="..\fcb\nf-fcb-rxfinalizenetroot.md">RxFinalizeNetRoot</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizesrvcall">RxFinalizeSrvCall</a>
+<a href="..\fcb\nf-fcb-rxfinalizesrvcall.md">RxFinalizeSrvCall</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizesrvopen">RxFinalizeSrvOpen</a>
+<a href="..\fcb\nf-fcb-rxfinalizesrvopen.md">RxFinalizeSrvOpen</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinalizevnetroot">RxFinalizeVNetRoot</a>
+<a href="..\fcb\nf-fcb-rxfinalizevnetroot.md">RxFinalizeVNetRoot</a>
 </dt>
 <dt>
-<a href="ifsk.rxfinishfcbinitialization">RxFinishFcbInitialization</a>
+<a href="..\fcb\nf-fcb-rxfinishfcbinitialization.md">RxFinishFcbInitialization</a>
 </dt>
 <dt>
-<a href="ifsk.rxforcefinalizeallvnetroots">RxForceFinalizeAllVNetRoots</a>
+<a href="..\rxprocs\nf-rxprocs-rxforcefinalizeallvnetroots.md">RxForceFinalizeAllVNetRoots</a>
 </dt>
 <dt>
-<a href="ifsk.rxreference">RxReference</a>
+<a href="..\rxprocs\nf-rxprocs-rxreference.md">RxReference</a>
 </dt>
 <dt>
-<a href="ifsk.rxsetsrvcalldomainname">RxSetSrvCallDomainName</a>
+<a href="..\rxprocs\nf-rxprocs-rxsetsrvcalldomainname.md">RxSetSrvCallDomainName</a>
 </dt>
 <dt>
-<a href="ifsk.rxpdereferencenetfcb">RxpDereferenceNetFcb</a>
+<a href="..\fcb\nf-fcb-rxpdereferencenetfcb.md">RxpDereferenceNetFcb</a>
 </dt>
 <dt>
-<a href="ifsk.rxpreferencenetfcb">RxpReferenceNetFcb</a>
+<a href="..\fcb\nf-fcb-rxpreferencenetfcb.md">RxpReferenceNetFcb</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinalizeNetFOBX function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxFinalizeNetFOBX function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.SePrivilegeCheck
+UID: NF:ntifs.SePrivilegeCheck
 title: SePrivilegeCheck function
 author: windows-driver-content
 description: The SePrivilegeCheck routine determines whether a specified set of privileges is enabled in the subject's access token.
@@ -7,7 +7,7 @@ old-location: ifsk\seprivilegecheck.htm
 old-project: ifsk
 ms.assetid: 707ced39-4153-4a6e-b87d-7e4eb487e738
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: SePrivilegeCheck
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # SePrivilegeCheck function
@@ -143,33 +144,33 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.luid_and_attributes">LUID_AND_ATTRIBUTES</a>
+<a href="..\wdm\ns-wdm-_luid_and_attributes.md">LUID_AND_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="ifsk.privilege_set">PRIVILEGE_SET</a>
+<a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a>
 </dt>
 <dt>
-<a href="kernel.seaccesscheck">SeAccessCheck</a>
+<a href="..\wdm\nf-wdm-seaccesscheck.md">SeAccessCheck</a>
 </dt>
 <dt>
-<a href="ifsk.seappendprivileges">SeAppendPrivileges</a>
+<a href="..\ntifs\nf-ntifs-seappendprivileges.md">SeAppendPrivileges</a>
 </dt>
 <dt>
-<a href="ifsk.security_subject_context">SECURITY_SUBJECT_CONTEXT</a>
+<a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
 </dt>
 <dt>
-<a href="kernel.sefreeprivileges">SeFreePrivileges</a>
+<a href="..\ntifs\nf-ntifs-sefreeprivileges.md">SeFreePrivileges</a>
 </dt>
 <dt>
-<a href="ifsk.sequeryinformationtoken">SeQueryInformationToken</a>
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
 </dt>
 <dt>
-<a href="kernel.sesingleprivilegecheck">SeSinglePrivilegeCheck</a>
+<a href="..\ntddk\nf-ntddk-sesingleprivilegecheck.md">SeSinglePrivilegeCheck</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SePrivilegeCheck routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SePrivilegeCheck routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.MCD._MCD_INIT_DATA
+UID: NS:mcd._MCD_INIT_DATA
 title: _MCD_INIT_DATA
 author: windows-driver-content
 description: The changer miniclass driver fills the MCD_INIT_DATA structure with pointers to its internal command processing routines and passes them to the changer class driver.
@@ -7,8 +7,8 @@ old-location: storage\mcd_init_data.htm
 old-project: storage
 ms.assetid: 4fc4c36f-a2ad-4b9f-a30b-e7ed600c38e9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MCD_INIT_DATA, PMCD_INIT_DATA, MCD_INIT_DATA, *PMCD_INIT_DATA
+ms.date: 1/10/2018
+ms.keywords: _MCD_INIT_DATA, *PMCD_INIT_DATA, MCD_INIT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PMCD_INIT_DATA, MCD_INIT_DATA
 ---
 
 # _MCD_INIT_DATA structure
@@ -395,49 +396,49 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.changeradditionalextensionsize">ChangerAdditionalExtensionSize</a>
+<a href="..\mcd\nf-mcd-changeradditionalextensionsize.md">ChangerAdditionalExtensionSize</a>
 </dt>
 <dt>
-<a href="storage.changerinitialize">ChangerInitialize</a>
+<a href="..\mcd\nf-mcd-changerinitialize.md">ChangerInitialize</a>
 </dt>
 <dt>
-<a href="storage.changererror">ChangerError</a>
+<a href="..\mcd\nf-mcd-changererror.md">ChangerError</a>
 </dt>
 <dt>
-<a href="storage.changerperformdiagnostics">ChangerPerformDiagnostics</a>
+<a href="..\mcd\nf-mcd-changerperformdiagnostics.md">ChangerPerformDiagnostics</a>
 </dt>
 <dt>
-<a href="storage.changergetparameters">ChangerGetParameters</a>
+<a href="..\mcd\nf-mcd-changergetparameters.md">ChangerGetParameters</a>
 </dt>
 <dt>
-<a href="storage.changergetstatus">ChangerGetStatus</a>
+<a href="..\mcd\nf-mcd-changergetstatus.md">ChangerGetStatus</a>
 </dt>
 <dt>
-<a href="storage.changergetproductdata">ChangerGetProductData</a>
+<a href="..\mcd\nf-mcd-changergetproductdata.md">ChangerGetProductData</a>
 </dt>
 <dt>
-<a href="storage.changersetaccess">ChangerSetAccess</a>
+<a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a>
 </dt>
 <dt>
-<a href="storage.changergetelementstatus">ChangerGetElementStatus</a>
+<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
 </dt>
 <dt>
-<a href="storage.changerinitializeelementstatus">ChangerInitializeElementStatus</a>
+<a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
 </dt>
 <dt>
-<a href="storage.changersetposition">ChangerSetPosition</a>
+<a href="..\mcd\nf-mcd-changersetposition.md">ChangerSetPosition</a>
 </dt>
 <dt>
-<a href="storage.changerexchangemedium">ChangerExchangeMedium</a>
+<a href="..\mcd\nf-mcd-changerexchangemedium.md">ChangerExchangeMedium</a>
 </dt>
 <dt>
-<a href="storage.changermovemedium">ChangerMoveMedium</a>
+<a href="..\mcd\nf-mcd-changermovemedium.md">ChangerMoveMedium</a>
 </dt>
 <dt>
-<a href="storage.changerreinitializeunit">ChangerReinitializeUnit</a>
+<a href="..\mcd\nf-mcd-changerreinitializeunit.md">ChangerReinitializeUnit</a>
 </dt>
 <dt>
-<a href="storage.changerqueryvolumetags">ChangerQueryVolumeTags</a>
+<a href="..\mcd\nf-mcd-changerqueryvolumetags.md">ChangerQueryVolumeTags</a>
 </dt>
 <dt>
 <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_parameters.md">IOCTL_CHANGER_GET_PARAMETERS</a>
@@ -471,5 +472,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MCD_INIT_DATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MCD_INIT_DATA structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:bthsdpddi
 ---
 
 # Bthsdpddi.h header
@@ -24,6 +24,7 @@ Bthsdpddi.h contain these programming interfaces:
 | [PGETNEXTELEMENT callback](nc-bthsdpddi-pgetnextelement.md) | The Bluetooth SdpGetNextElement function is used to iterate through the entries found in an SDP record stream. |
 | [PRETRIEVEUINT64 callback](nc-bthsdpddi-pretrieveuint64.md) | The Bluetooth SdpRetrieveUint128 function is used to copy an unaligned 128-bit integer from an SDP stream. |
 | [PRETRIEVEUUID128 callback](nc-bthsdpddi-pretrieveuuid128.md) | The Bluetooth SdpRetrieveUuid128 function is used to copy an unaligned 128-bit universally unique identifier (UUID) from an SDP stream. |
+| [PVALIDATESTREAM callback](nc-bthsdpddi-pvalidatestream.md) | The Bluetooth SdpValidateStream function is used to parse a raw SDP record and determine if it contains errors. |
 
 ## Structures
 

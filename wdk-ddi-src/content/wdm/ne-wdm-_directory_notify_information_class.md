@@ -1,5 +1,5 @@
 ---
-UID: NE.wdm._DIRECTORY_NOTIFY_INFORMATION_CLASS
+UID: NE:wdm._DIRECTORY_NOTIFY_INFORMATION_CLASS
 title: _DIRECTORY_NOTIFY_INFORMATION_CLASS
 author: windows-driver-content
 description: A value that specifies which structure to use to query or set information for a files in a directory.
@@ -7,8 +7,8 @@ old-location: ifsk\_directory_notify_information_class.htm
 old-project: ifsk
 ms.assetid: 77c2515b-f20a-47ac-9564-9eab009cf625
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DIRECTORY_NOTIFY_INFORMATION_CLASS, PDIRECTORY_NOTIFY_INFORMATION_CLASS, *PDIRECTORY_NOTIFY_INFORMATION_CLASS, DIRECTORY_NOTIFY_INFORMATION_CLASS
+ms.date: 1/9/2018
+ms.keywords: _DIRECTORY_NOTIFY_INFORMATION_CLASS, *PDIRECTORY_NOTIFY_INFORMATION_CLASS, DIRECTORY_NOTIFY_INFORMATION_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: PASSIVE_LEVEL (See Remarks section)
+req.typenames: *PDIRECTORY_NOTIFY_INFORMATION_CLASS, DIRECTORY_NOTIFY_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 

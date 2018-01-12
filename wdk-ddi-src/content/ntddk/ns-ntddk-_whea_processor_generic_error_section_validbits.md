@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
+UID: NS:ntddk._WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
 title: _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
 author: windows-driver-content
 description: The WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contain valid data.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: f7173767-a177-4a79-917b-41acc9eff758
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
+ms.keywords: _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, *PWHEA_GENERIC_PROCESSOR_ERROR_VALIDBITS, WHEA_GENERIC_PROCESSOR_ERROR_VALIDBITS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
 ---
 
 # _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union describes which members of a <a href="whea.whea_processor_generic_error_section">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure contain valid data.
+The WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure contain valid data.
 
 
 
@@ -145,7 +146,7 @@ A ULONGLONG representation of the contents of the WHEA_PROCESSOR_GENERIC_ERROR_S
 
 
 ## -remarks
-A WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union is contained within the <a href="whea.whea_processor_generic_error_section">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.
+A WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.
 
 
 ## -requirements
@@ -177,7 +178,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_processor_generic_error_section">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>
 </dt>
 </dl>
  

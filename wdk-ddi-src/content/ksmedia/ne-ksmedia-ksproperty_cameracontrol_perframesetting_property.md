@@ -1,5 +1,5 @@
 ---
-UID: NE.ksmedia.KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY
+UID: NE:ksmedia.KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY
 title: KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY
 author: windows-driver-content
 description: This enumeration contains the property IDs defined for the per-frame property set.
@@ -7,7 +7,7 @@ old-location: stream\ksproperty_cameracontrol_perframesetting_property.htm
 old-project: stream
 ms.assetid: 59328DD6-3E7B-43C3-A1FF-E02DC24228BA
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY, KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY
 ---
 
 # KSPROPERTY_CAMERACONTROL_PERFRAMESETTING_PROPERTY enumeration

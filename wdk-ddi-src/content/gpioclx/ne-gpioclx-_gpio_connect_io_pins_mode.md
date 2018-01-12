@@ -1,5 +1,5 @@
 ---
-UID: NE.gpioclx._GPIO_CONNECT_IO_PINS_MODE
+UID: NE:gpioclx._GPIO_CONNECT_IO_PINS_MODE
 title: _GPIO_CONNECT_IO_PINS_MODE
 author: windows-driver-content
 description: The GPIO_CONNECT_IO_PINS_MODE enumeration indicates whether a set of general-purpose I/O (GPIO) pins is configured as inputs or outputs.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 17E98D35-8C63-4EEC-B8DD-896FA2B084A8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE, PGPIO_CONNECT_IO_PINS_MODE, *PGPIO_CONNECT_IO_PINS_MODE
+ms.keywords: _GPIO_CONNECT_IO_PINS_MODE, *PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks.
+req.typenames: *PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE
 ---
 
 # _GPIO_CONNECT_IO_PINS_MODE enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NE.pmi.PMI_CAPABILITIES_TYPE
+UID: NE:pmi.PMI_CAPABILITIES_TYPE
 title: PMI_CAPABILITIES_TYPE
 author: windows-driver-content
 description: The PMI_CAPABILITIES_TYPE enumeration defines the type of capabilities data that is referenced by the Capability member of the PMI_CAPABILITIES structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PMI_CAPABILITIES_TYPE
 ---
 
 # PMI_CAPABILITIES_TYPE enumeration
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The PMI_CAPABILITIES_TYPE enumeration defines the type of capabilities data that is referenced by the <b>Capability</b> member of the <a href="powermeter.pmi_capabilities">PMI_CAPABILITIES</a> structure. This enumeration is also used to specify the type of <b>PMI_CAPABILITIES</b> structure to return through an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> I/O control (IOCTL) request.
+The PMI_CAPABILITIES_TYPE enumeration defines the type of capabilities data that is referenced by the <b>Capability</b> member of the <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> structure. This enumeration is also used to specify the type of <b>PMI_CAPABILITIES</b> structure to return through an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> I/O control (IOCTL) request.
 
 
 
@@ -57,12 +58,12 @@ typedef enum  {
 
 ### -field PmiReportedCapabilities
 
-The PMI capabilities data, formatted as a <a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a> structure, specifies the power capabilities of the power meter.
+The PMI capabilities data, formatted as a <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure, specifies the power capabilities of the power meter.
 
 
 ### -field PmiMeteredHardware
 
-The PMI capabilities data, formatted as a <a href="powermeter.pmi_metered_hardware_information">PMI_METERED_HARDWARE_INFORMATION</a> structure, specifies the hardware devices that the power meter provides measurement data to.
+The PMI capabilities data, formatted as a <a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a> structure, specifies the hardware devices that the power meter provides measurement data to.
 
 
 ### -field PmiCapabilitiesMax
@@ -71,7 +72,7 @@ The maximum number of PMI capability structures.
 
 
 ## -remarks
-The <b>CapabilityType</b> member of the <a href="powermeter.pmi_capabilities">PMI_CAPABILITIES</a> structure contains information about the type of PMI capability data that is referenced by the <b>Capabilities</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> IOCTL request.
+The <b>CapabilityType</b> member of the <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> structure contains information about the type of PMI capability data that is referenced by the <b>Capabilities</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> IOCTL request.
 
 
 ## -requirements
@@ -105,13 +106,13 @@ Header
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_capabilities">PMI_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_metered_hardware_information">PMI_METERED_HARDWARE_INFORMATION</a>
+<a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
 </dt>
 </dl>
  

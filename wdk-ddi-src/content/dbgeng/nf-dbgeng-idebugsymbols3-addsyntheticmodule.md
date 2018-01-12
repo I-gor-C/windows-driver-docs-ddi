@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.AddSyntheticModule
+UID: NF:dbgeng.IDebugSymbols3.AddSyntheticModule
 title: IDebugSymbols3::AddSyntheticModule method
 author: windows-driver-content
 description: The AddSyntheticModule method adds a synthetic module to the module list the debugger maintains for the current process.
 old-location: debugger\addsyntheticmodule.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 87d9f307-996b-47df-b3dd-368fef6c1042
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::AddSyntheticModule, AddSyntheticModule
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::AddSyntheticModule method
@@ -95,7 +96,7 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 ## -remarks
 The memory region of the synthetic module, described by the <i>Base</i> and <i>Size</i> parameters, must not overlap the memory region of any other module.
 
-If all the modules are reloaded - for example, by calling <a href="debugger.reload">Reload</a> with the  <i>Module</i> parameter set to an empty string - all synthetic modules will be discarded.
+If all the modules are reloaded - for example, by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff554379">Reload</a> with the  <i>Module</i> parameter set to an empty string - all synthetic modules will be discarded.
 
 For more information about synthetic modules, see <a href="debugger.modules#synthetic_modules#synthetic_modules">Synthetic Modules</a>.
 
@@ -132,15 +133,15 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 </dt>
 <dt>
-<a href="debugger.removesyntheticmodule">RemoveSyntheticModule</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554536">RemoveSyntheticModule</a>
 </dt>
 <dt>
-<a href="debugger.addsyntheticsymbol">AddSyntheticSymbol</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537943">AddSyntheticSymbol</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugSymbols3::AddSyntheticModule method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::AddSyntheticModule method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

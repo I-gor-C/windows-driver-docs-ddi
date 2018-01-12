@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_SUPL_NI_INFO
+UID: NS:gnssdriver.GNSS_SUPL_NI_INFO
 title: GNSS_SUPL_NI_INFO
 author: windows-driver-content
 description: This structure contains the requested SUPL NI information.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 78D19A0C-E247-4DDA-A689-494B5A61A673
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_SUPL_NI_INFO, *PGNSS_SUPL_NI_INFO, GNSS_SUPL_NI_INFO, PGNSS_SUPL_NI_INFO
+ms.keywords: GNSS_SUPL_NI_INFO, GNSS_SUPL_NI_INFO, *PGNSS_SUPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_SUPL_NI_INFO, *PGNSS_SUPL_NI_INFO
 ---
 
 # GNSS_SUPL_NI_INFO structure

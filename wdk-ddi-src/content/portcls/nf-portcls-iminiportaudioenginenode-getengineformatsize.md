@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioEngineNode.GetEngineFormatSize
+UID: NF:portcls.IMiniportAudioEngineNode.GetEngineFormatSize
 title: IMiniportAudioEngineNode::GetEngineFormatSize method
 author: windows-driver-content
 description: Gets the format type and the buffer size for the audio engine's audio data format.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioEngineNode::GetEngineFormatSize method

@@ -1,5 +1,5 @@
 ---
-UID: NS.MINITAPE._TAPE_INIT_DATA
+UID: NS:minitape._TAPE_INIT_DATA
 title: _TAPE_INIT_DATA
 author: windows-driver-content
 description: TAPE_INIT_DATA is used only by legacy tape miniclass drivers. Use TAPE_INIT_DATA_EX instead.
@@ -7,8 +7,8 @@ old-location: storage\tape_init_data.htm
 old-project: storage
 ms.assetid: 11f5201b-ddd3-43ad-9746-a1a9885c99b1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _TAPE_INIT_DATA, *PTAPE_INIT_DATA, PTAPE_INIT_DATA, TAPE_INIT_DATA
+ms.date: 1/10/2018
+ms.keywords: _TAPE_INIT_DATA, *PTAPE_INIT_DATA, TAPE_INIT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PTAPE_INIT_DATA, TAPE_INIT_DATA
 ---
 
 # _TAPE_INIT_DATA structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-TAPE_INIT_DATA is used only by legacy tape miniclass drivers. Use <a href="storage.tape_init_data_ex">TAPE_INIT_DATA_EX</a> instead. 
+TAPE_INIT_DATA is used only by legacy tape miniclass drivers. Use <a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a> instead. 
 
 
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.ehstorioctl.IOCTL_EHSTOR_DEVICE_SET_AUTHZ_STATE
+UID: NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_SET_AUTHZ_STATE
 title: IOCTL_EHSTOR_DEVICE_SET_AUTHZ_STATE
 author: windows-driver-content
 description: This IOCTL is used to inform the owning driver for the IEEE 1667 device PDOs that the authorization state has changed.
@@ -7,7 +7,7 @@ old-location: storage\ioctl_ehstor_device_set_authz_state.htm
 old-project: storage
 ms.assetid: 8C71F597-2141-4DA6-8A14-8B10CB69E5CC
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: _PDO_TYPE, PDO_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PDO_TYPE
 ---
 
 # IOCTL_EHSTOR_DEVICE_SET_AUTHZ_STATE IOCTL
@@ -45,11 +46,11 @@ This IOCTL is used to inform the owning driver for the IEEE 1667 device PDOs tha
 ## -ioctlparameters
 
 ### -input-buffer
-The input buffer at Irp-&gt;AssociatedIrp.SystemBuffer must contain a structure of type <a href="storage.act_authz_state">ACT_AUTHZ_STATE</a>.
+The input buffer at Irp-&gt;AssociatedIrp.SystemBuffer must contain a structure of type <a href="..\ehstorioctl\ns-ehstorioctl-tagact_authz_state.md">ACT_AUTHZ_STATE</a>.
 
 
 ### -input-buffer-length
-The length of an <a href="storage.act_authz_state">ACT_AUTHZ_STATE</a> structure.
+The length of an <a href="..\ehstorioctl\ns-ehstorioctl-tagact_authz_state.md">ACT_AUTHZ_STATE</a> structure.
 
 
 ### -output-buffer

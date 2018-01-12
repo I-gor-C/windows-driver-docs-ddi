@@ -1,5 +1,5 @@
 ---
-UID: NE.wudfddi_types._WDF_DEVICE_IO_TYPE
+UID: NE:wudfddi_types._WDF_DEVICE_IO_TYPE
 title: _WDF_DEVICE_IO_TYPE
 author: windows-driver-content
 description: The WDF_DEVICE_IO_TYPE enumeration is used to specify a method for accessing data buffers.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_io_type__umdf_.htm
 old-project: wdf
 ms.assetid: 52733647-d577-4507-a5ad-5f56f3a9f8a2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_DEVICE_IO_TYPE, WDF_DEVICE_IO_TYPE, *PWDF_DEVICE_IO_TYPE, PWDF_DEVICE_IO_TYPE
+ms.date: 12/29/2017
+ms.keywords: _WDF_DEVICE_IO_TYPE, *PWDF_DEVICE_IO_TYPE, WDF_DEVICE_IO_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_DEVICE_IO_TYPE, WDF_DEVICE_IO_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -93,7 +94,7 @@ Reserved for system use.
 
 
 ## -remarks
-The <b>WDF_DEVICE_IO_TYPE</b> enumeration is used as input to <a href="wdf.iwdfdeviceinitialize2_setiotypepreference">IWDFDeviceInitialize2::SetIoTypePreference</a> and as output from <a href="wdf.iwdfiorequest2_geteffectiveiotype">IWDFIoRequest2::GetEffectiveIoType</a>.
+The <b>WDF_DEVICE_IO_TYPE</b> enumeration is used as input to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556969">IWDFDeviceInitialize2::SetIoTypePreference</a> and as output from <a href="https://msdn.microsoft.com/library/windows/hardware/ff558994">IWDFIoRequest2::GetEffectiveIoType</a>.
 
 You should use the following guidelines when choosing an I/O type for your driver:
 
@@ -105,7 +106,7 @@ Typically, a filter driver that can reside in several driver stacks and performs
 
 For more information about accessing an I/O request's data buffers, see <a href="wdf.accessing_data_buffers_in_umdf_drivers">Accessing Data Buffers in UMDF-Based Drivers</a>.
 
-For the KMDF version of this enumeration, see <a href="wdf.wdf_device_io_type">WDF_DEVICE_IO_TYPE</a>.
+For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>.
 
 
 ## -requirements
@@ -146,18 +147,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.iwdfdeviceinitialize2_setiotypepreference">IWDFDeviceInitialize2::SetIoTypePreference</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556969">IWDFDeviceInitialize2::SetIoTypePreference</a>
 </dt>
 <dt>
-<a href="wdf.iwdfiorequest2_geteffectiveiotype">IWDFIoRequest2::GetEffectiveIoType</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558994">IWDFIoRequest2::GetEffectiveIoType</a>
 </dt>
 <dt>
-<a href="wdf.wdf_device_io_buffer_retrieval">WDF_DEVICE_IO_BUFFER_RETRIEVAL</a>
+<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_buffer_retrieval.md">WDF_DEVICE_IO_BUFFER_RETRIEVAL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_IO_TYPE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_IO_TYPE enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

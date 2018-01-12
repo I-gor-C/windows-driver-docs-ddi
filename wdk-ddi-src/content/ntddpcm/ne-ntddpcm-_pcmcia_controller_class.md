@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddpcm._PCMCIA_CONTROLLER_CLASS
+UID: NE:ntddpcm._PCMCIA_CONTROLLER_CLASS
 title: _PCMCIA_CONTROLLER_CLASS
 author: windows-driver-content
 description: The PCMCIA_CONTROLLER_CLASS enumeration lists the different sorts of PC Card and CardBus controllers.
@@ -8,7 +8,7 @@ old-project: PCMCIA
 ms.assetid: d834d97c-cf2d-430b-8f54-b0b47ab1503c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS, PPCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
+ms.keywords: _PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL (See Remarks section.)
+req.irql: 
+req.typenames: *PPCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS
 ---
 
 # _PCMCIA_CONTROLLER_CLASS enumeration

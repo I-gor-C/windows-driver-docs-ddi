@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILMSGDCSPARAMMASK
+UID: NE:rilapitypes.RILMSGDCSPARAMMASK
 title: RILMSGDCSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgdcsparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 58ec244c-ccd5-480d-8185-2c62273aeb1f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMSGDCSPARAMMASK, RILMSGDCSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGDCSPARAMMASK
 req.product: Windows 10 or later.
 ---
 

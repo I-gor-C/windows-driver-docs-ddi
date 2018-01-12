@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IResourceList.NumberOfEntriesOfType
+UID: NF:portcls.IResourceList.NumberOfEntriesOfType
 title: IResourceList::NumberOfEntriesOfType method
 author: windows-driver-content
 description: The NumberOfEntriesOfType method returns the number of resource items of a given type in the resource list. For each resource type, a macro is defined to call this method as previously described.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IResourceList::NumberOfEntriesOfType method
@@ -55,7 +56,7 @@ ULONG NumberOfEntriesOfType(
 
 ### -param Type [in]
 
-Identifies the resource type of the entries that are to be counted. For a list of valid resource-type values, see the <b>Type</b> member of the <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.
+Identifies the resource type of the entries that are to be counted. For a list of valid resource-type values, see the <b>Type</b> member of the <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.
 
 
 ## -returns
@@ -108,7 +109,7 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 </dt>
 <dt>
-<a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
+<a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 </dt>
 </dl>
  

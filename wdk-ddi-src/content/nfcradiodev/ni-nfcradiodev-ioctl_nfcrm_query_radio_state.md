@@ -1,5 +1,5 @@
 ---
-UID: NI.nfcradiodev.IOCTL_NFCRM_QUERY_RADIO_STATE
+UID: NI:nfcradiodev.IOCTL_NFCRM_QUERY_RADIO_STATE
 title: IOCTL_NFCRM_QUERY_RADIO_STATE
 author: windows-driver-content
 description: This IOCTL is used by the radio management application or service to query the current radio power state of the proximity device.
@@ -7,8 +7,8 @@ old-location: nfpdrivers\ioctl_nfcrm_query_radio_state.htm
 old-project: nfpdrivers
 ms.assetid: BEFA6568-3E89-4626-AAC2-A0C628E5429F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG, PNFC_CX_RF_DISCOVERY_CONFIG, *PNFC_CX_RF_DISCOVERY_CONFIG
+ms.date: 12/18/2017
+ms.keywords: _NFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG, *PNFC_CX_RF_DISCOVERY_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: NFC_CX_RF_DISCOVERY_CONFIG, *PNFC_CX_RF_DISCOVERY_CONFIG
 ---
 
 # IOCTL_NFCRM_QUERY_RADIO_STATE IOCTL
@@ -54,7 +55,7 @@ None
 
 ### -output-buffer
 
-<a href="nfpdrivers._nfcrm_radio_state_"> NFCRM_RADIO_STATE structure</a>
+<a href="..\nfcradiodev\ns-nfcradiodev-_nfcrm_radio_state.md"> NFCRM_RADIO_STATE structure</a>
 
 
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.OutputTypedDataPhysical
+UID: NF:dbgeng.IDebugSymbols3.OutputTypedDataPhysical
 title: IDebugSymbols3::OutputTypedDataPhysical method
 author: windows-driver-content
 description: The OutputTypedDataPhysical method formats the contents of a variable in the target computer's physical memory, and then sends this to the output callbacks.
 old-location: debugger\outputtypeddataphysical.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 0c2ae1ff-bbf1-462f-b9ab-49f74cf12fae
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::OutputTypedDataPhysical, OutputTypedDataPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::OutputTypedDataPhysical method

@@ -1,5 +1,5 @@
 ---
-UID: NF.bidispl.IBidiRequest.GetOutputData
+UID: NF:bidispl.IBidiRequest.GetOutputData
 title: IBidiRequest::GetOutputData method
 author: windows-driver-content
 description: The IBidiRequest::GetOutputData method gets the specified output data coming back from the printer.
@@ -7,7 +7,7 @@ old-location: print\ibidirequest_ibidirequest__getoutputdata.htm
 old-project: print
 ms.assetid: 0757dbc2-850b-4267-9339-b87591f85767
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IBidiRequest, IBidiRequest::GetOutputData, GetOutputData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: Bidispl.dll
 req.irql: 
+req.typenames: *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ---
 
 # IBidiRequest::GetOutputData method
@@ -189,7 +190,7 @@ The method returns one of the following values. For more information about COM e
 
 
 ## -remarks
-A single bidi request can have multiple results. The application calls <a href="print.ibidirequest_ibidirequest__getenumcount">IBidiRequest::GetEnumCount</a> to get the number of results from the bidi request.
+A single bidi request can have multiple results. The application calls <a href="https://msdn.microsoft.com/library/windows/hardware/dd144974">IBidiRequest::GetEnumCount</a> to get the number of results from the bidi request.
 
 If an application calls <b>GetOutputData</b> with the same index twice, the interface allocates two different buffers and thus the application must free both buffers.
 
@@ -254,7 +255,7 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="print.bidirectional_communication_interfaces">Bidirectional Communication Interfaces</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
@@ -263,12 +264,12 @@ DLL
 <a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
 </dt>
 <dt>
-<a href="print.ibidirequest_ibidirequest__getenumcount">IBidiRequest::GetEnumCount</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144974">IBidiRequest::GetEnumCount</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IBidiRequest::IBidiRequest::GetOutputData method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IBidiRequest::IBidiRequest::GetOutputData method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcCompletePendingPropertyRequest
+UID: NF:portcls.PcCompletePendingPropertyRequest
 title: PcCompletePendingPropertyRequest function
 author: windows-driver-content
 description: The PcCompletePendingPropertyRequest function is called to complete a pending property request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcCompletePendingPropertyRequest function
@@ -56,7 +57,7 @@ NTSTATUS PcCompletePendingPropertyRequest(
 
 ### -param PropertyRequest [in]
 
-Pointer to the property request that was passed to the property handler. The request is a structure of type <a href="audio.pcproperty_request">PCPROPERTY_REQUEST</a>.
+Pointer to the property request that was passed to the property handler. The request is a structure of type <a href="..\portcls\ns-portcls-_pcproperty_request.md">PCPROPERTY_REQUEST</a>.
 
 
 ### -param NtStatus [in]
@@ -134,10 +135,10 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcproperty_request">PCPROPERTY_REQUEST</a>
+<a href="..\portcls\ns-portcls-_pcproperty_request.md">PCPROPERTY_REQUEST</a>
 </dt>
 <dt>
-<a href="kernel.iocompleterequest">IoCompleteRequest</a>
+<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._PUBLIC_OBJECT_BASIC_INFORMATION
+UID: NS:ntifs._PUBLIC_OBJECT_BASIC_INFORMATION
 title: _PUBLIC_OBJECT_BASIC_INFORMATION
 author: windows-driver-content
 description: The PUBLIC_OBJECT_BASIC_INFORMATION structure holds a subset of the full information that is available for an object.
@@ -7,8 +7,8 @@ old-location: ifsk\public_object_basic_information.htm
 old-project: ifsk
 ms.assetid: 2190f88e-6905-4e58-9523-2b6d4864c776
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PUBLIC_OBJECT_BASIC_INFORMATION, PPUBLIC_OBJECT_BASIC_INFORMATION, *PPUBLIC_OBJECT_BASIC_INFORMATION, PUBLIC_OBJECT_BASIC_INFORMATION
+ms.date: 1/9/2018
+ms.keywords: _PUBLIC_OBJECT_BASIC_INFORMATION, PUBLIC_OBJECT_BASIC_INFORMATION, *PPUBLIC_OBJECT_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_BASIC_INFORMATION, *PPUBLIC_OBJECT_BASIC_INFORMATION
 ---
 
 # _PUBLIC_OBJECT_BASIC_INFORMATION structure

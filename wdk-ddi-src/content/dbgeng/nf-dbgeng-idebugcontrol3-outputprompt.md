@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.OutputPrompt
+UID: NF:dbgeng.IDebugControl3.OutputPrompt
 title: IDebugControl3::OutputPrompt method
 author: windows-driver-content
 description: The OutputPrompt method formats and sends a user prompt to the output callback objects.
 old-location: debugger\outputprompt.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 463d6fbd-cbe4-4de1-a01a-52a5002f24b8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::OutputPrompt, OutputPrompt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl3::OutputPrompt method
@@ -259,7 +260,7 @@ This method can also return error values. See <a href="https://msdn.microsoft.co
 ## -remarks
 <b>OutputPrompt</b> and <b>OutputPromptWide</b> can be used to prompt the user for input.
 
-The standard prompt will be sent to the output callbacks before the formatted text described by <i>Format</i>.  The contents of the standard prompt is returned by the method <a href="debugger.getprompttext">GetPromptText</a>.
+The standard prompt will be sent to the output callbacks before the formatted text described by <i>Format</i>.  The contents of the standard prompt is returned by the method <a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>.
 
 The prompt text is sent to the output callbacks with the <a href="https://msdn.microsoft.com/0c500a2e-0817-45de-8607-4cd4a29d5813">DEBUG_OUTPUT_PROMPT</a> output mask set.
 
@@ -304,13 +305,13 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 </dt>
 <dt>
-<a href="debugger.outputpromptvalist">OutputPromptVaList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553231">OutputPromptVaList</a>
 </dt>
 <dt>
-<a href="debugger.getprompttext">GetPromptText</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>
 </dt>
 <dt>
-<a href="debugger.controlledoutput">ControlledOutput</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539248">ControlledOutput</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541518">DEBUG_OUTPUT_XXX</a>
@@ -320,5 +321,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugControl::OutputPrompt method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl::OutputPrompt method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

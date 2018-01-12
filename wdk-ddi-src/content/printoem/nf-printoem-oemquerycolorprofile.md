@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMQueryColorProfile
+UID: NF:printoem.OEMQueryColorProfile
 title: OEMQueryColorProfile function
 author: windows-driver-content
 description: OEMQueryColorProfile function
@@ -7,7 +7,7 @@ old-location: print\oemquerycolorprofile.htm
 old-project: print
 ms.assetid: a33a216d-f97e-44be-b9a5-bdadf1c422e1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMQueryColorProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

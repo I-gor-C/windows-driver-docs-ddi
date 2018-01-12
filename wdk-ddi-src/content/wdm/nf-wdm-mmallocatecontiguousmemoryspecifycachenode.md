@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.MmAllocateContiguousMemorySpecifyCacheNode
+UID: NF:wdm.MmAllocateContiguousMemorySpecifyCacheNode
 title: MmAllocateContiguousMemorySpecifyCacheNode function
 author: windows-driver-content
 description: The MmAllocateContiguousMemorySpecifyCacheNode routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space.
@@ -7,7 +7,7 @@ old-location: kernel\mmallocatecontiguousmemoryspecifycachenode.htm
 old-project: kernel
 ms.assetid: ce54870e-80af-4588-a0ca-1ad115739256
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: MmAllocateContiguousMemorySpecifyCacheNode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -81,7 +82,7 @@ The physical address multiple that the allocated buffer must not cross. A physic
 
 ### -param CacheType [in]
 
-Specifies a <a href="kernel.memory_caching_type">MEMORY_CACHING_TYPE</a> value, which indicates the type of caching requested for the contiguous physical memory.
+Specifies a <a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a> value, which indicates the type of caching requested for the contiguous physical memory.
 
 
 ### -param PreferredNode [in]
@@ -102,7 +103,7 @@ Drivers must not access memory beyond the requested allocation size. For example
 
 Because contiguous physical memory is usually in short supply, it should be used sparingly and only when necessary. A driver that must use contiguous memory should allocate this memory during driver initialization because physical memory is likely to become fragmented over time as the operating system allocates and frees memory. Typically, a driver calls <b>MmAllocateContiguousMemorySpecifyCacheNode</b> from its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine to allocate an internal buffer for long-term use, and frees the buffer just before the driver is unloaded.
 
-Memory allocated by <b>MmAllocateContiguousMemorySpecifyCacheNode</b> must be freed when the memory is no longer needed. Call the <a href="kernel.mmfreecontiguousmemory">MmFreeContiguousMemory</a> routine to free memory that is allocated by <b>MmAllocateContiguousMemorySpecifyCacheNode</b>.
+Memory allocated by <b>MmAllocateContiguousMemorySpecifyCacheNode</b> must be freed when the memory is no longer needed. Call the <a href="..\wdm\nf-wdm-mmfreecontiguousmemory.md">MmFreeContiguousMemory</a> routine to free memory that is allocated by <b>MmAllocateContiguousMemorySpecifyCacheNode</b>.
 
 If you specify a nonzero value for the <i>BoundaryAddressMultiple</i> parameter, the physical address range of the allocated memory block will not cross an address boundary that is an integer multiple of this value. A driver should set this parameter to zero unless a nonzero value is required to work around a hardware limitation. For example, if a device cannot transfer data across 16-megabyte physical boundaries, the driver should specify a value of 0x1000000 for this parameter to ensure that the addresses that the device sees do not wrap around at a 16-megabyte boundary.
 
@@ -181,15 +182,15 @@ IRQL
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 </dt>
 <dt>
-<a href="kernel.memory_caching_type">MEMORY_CACHING_TYPE</a>
+<a href="..\wdm\ne-wdm-_memory_caching_type.md">MEMORY_CACHING_TYPE</a>
 </dt>
 <dt>
-<a href="kernel.mmfreecontiguousmemory">MmFreeContiguousMemory</a>
+<a href="..\wdm\nf-wdm-mmfreecontiguousmemory.md">MmFreeContiguousMemory</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmAllocateContiguousMemorySpecifyCacheNode routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmAllocateContiguousMemorySpecifyCacheNode routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

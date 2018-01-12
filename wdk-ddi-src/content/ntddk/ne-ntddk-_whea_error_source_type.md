@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddk._WHEA_ERROR_SOURCE_TYPE
+UID: NE:ntddk._WHEA_ERROR_SOURCE_TYPE
 title: _WHEA_ERROR_SOURCE_TYPE
 author: windows-driver-content
 description: The WHEA_ERROR_SOURCE_TYPE enumeration defines the different types of error sources that can report hardware errors.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: d2615320-6c8a-4813-afb5-c5b510e5fde9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_SOURCE_TYPE, *PWHEA_ERROR_SOURCE_TYPE, WHEA_ERROR_SOURCE_TYPE, PWHEA_ERROR_SOURCE_TYPE
+ms.keywords: _WHEA_ERROR_SOURCE_TYPE, *PWHEA_ERROR_SOURCE_TYPE, WHEA_ERROR_SOURCE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_ERROR_SOURCE_TYPE, WHEA_ERROR_SOURCE_TYPE
 ---
 
 # _WHEA_ERROR_SOURCE_TYPE enumeration
@@ -131,7 +132,7 @@ The maximum number of error source types that can report hardware errors.
 
 
 ## -remarks
-The <a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure contains a member of type WHEA_ERROR_SOURCE_TYPE that specifies the type of error source that is described by the structure.
+The <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure contains a member of type WHEA_ERROR_SOURCE_TYPE that specifies the type of error source that is described by the structure.
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure contains a member of type WHEA_ERROR_SOURCE_TYPE that specifies the type of error source that caused the error condition described by the structure.
 
@@ -168,7 +169,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
 </dt>
 <dt>
-<a href="whea.whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 </dt>
 </dl>
  

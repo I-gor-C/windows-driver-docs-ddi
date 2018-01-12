@@ -1,5 +1,5 @@
 ---
-UID: NE.winsplp._NOTIFICATION_CONFIG_FLAGS
+UID: NE:winsplp._NOTIFICATION_CONFIG_FLAGS
 title: _NOTIFICATION_CONFIG_FLAGS
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\notification_config_flags.htm
 old-project: print
 ms.assetid: B53AB706-D780-4E29-A531-51D3A9041D24
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _NOTIFICATION_CONFIG_FLAGS, NOTIFICATION_CONFIG_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: NOTIFICATION_CONFIG_FLAGS
 req.product: Windows 10 or later.
 ---
 

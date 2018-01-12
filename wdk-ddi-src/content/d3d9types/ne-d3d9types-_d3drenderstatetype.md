@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d9types._D3DRENDERSTATETYPE
+UID: NE:d3d9types._D3DRENDERSTATETYPE
 title: _D3DRENDERSTATETYPE
 author: windows-driver-content
 description: The D3DRENDERSTATETYPE enumerated type lists a variety of attributes, or render states.
@@ -7,7 +7,7 @@ old-location: display\d3drenderstatetype.htm
 old-project: display
 ms.assetid: 82978b22-1538-4da0-bcf2-c4c52d2e3429
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DRENDERSTATETYPE, D3DRENDERSTATETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DRENDERSTATETYPE
 ---
 
 # _D3DRENDERSTATETYPE enumeration
@@ -169,9 +170,9 @@ Identify which render states to update, and what the new render state values sho
 
 Note that for certain render states to be honored, the driver must have previously set capability flags in the relevant member of the D3DPRIMCAPS structure.
 
-In order to indicate a specific render state update, Direct3D inserts a <a href="display.d3dhal_dp2command">D3DHAL_DP2COMMAND</a> structure into the command buffer, setting the <b>bCommand</b> member of this structure to D3DDP2OP_RENDERSTATE (see the description for D3DDP2OP_RENDERSTATE in <a href="display.d3dhal_dp2operation">D3DHAL_DP2OPERATION</a>), and setting the <b>wStateCount</b> member of the same structure to the number of render states to be updated.
+In order to indicate a specific render state update, Direct3D inserts a <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a> structure into the command buffer, setting the <b>bCommand</b> member of this structure to D3DDP2OP_RENDERSTATE (see the description for D3DDP2OP_RENDERSTATE in <a href="..\d3dhal\ne-d3dhal-_d3dhal_dp2operation.md">D3DHAL_DP2OPERATION</a>), and setting the <b>wStateCount</b> member of the same structure to the number of render states to be updated.
 
-Immediately following the <a href="display.d3dhal_dp2command">D3DHAL_DP2COMMAND</a> structure, Direct3D inserts one <a href="display.d3dhal_dp2renderstate">D3DHAL_DP2RENDERSTATE</a> structure into the command buffer for each render state to be updated. The <b>RenderState</b> member of this structure identifies the render state to be changed; the new value of this render state is specified in either the <b>dwState</b> member (for DWORD values) or the <b>fState</b> member (for D3DVALUE values).
+Immediately following the <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a> structure, Direct3D inserts one <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2renderstate.md">D3DHAL_DP2RENDERSTATE</a> structure into the command buffer for each render state to be updated. The <b>RenderState</b> member of this structure identifies the render state to be changed; the new value of this render state is specified in either the <b>dwState</b> member (for DWORD values) or the <b>fState</b> member (for D3DVALUE values).
 
 The following figure shows a portion of the command buffer containing a D3DDP2OP_RENDERSTATE command and two D3DHAL_DP2RENDERSTATE structures. The first of the three structures indicates that two render states are to be updated. The second structure indicates that the D3DRENDERSTATE_FILLMODE render state is to be changed to D3DFILL_SOLID. The third structure indicates that the D3DRENDERSTATE_SHADEMODE render state should be updated to D3DSHADE_GOURAUD.
 

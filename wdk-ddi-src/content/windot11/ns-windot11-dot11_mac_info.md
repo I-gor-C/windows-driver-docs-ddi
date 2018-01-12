@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11.DOT11_MAC_INFO
+UID: NS:windot11.DOT11_MAC_INFO
 title: DOT11_MAC_INFO
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_mac_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0ca8814c-e91a-4f6a-b797-c440abf5cdd2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: DOT11_MAC_INFO, *PDOT11_MAC_INFO, PDOT11_MAC_INFO, DOT11_MAC_INFO
+ms.date: 1/8/2018
+ms.keywords: DOT11_MAC_INFO, *PDOT11_MAC_INFO, DOT11_MAC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT11_MAC_INFO, DOT11_MAC_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ Reserved for system use.
 A ULONG value that specifies the number of the NDIS port that the 802.11 miniport driver has
      allocated to reference a newly created 802.11 MAC entity. This value is equal to the 
      <b>PortNumber</b> member of the 
-     <a href="netvista.ndis_port_characteristics">
+     <a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">
      NDIS_PORT_CHARACTERISTICS</a> structure.
 
 
@@ -106,7 +107,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_port_characteristics">NDIS_PORT_CHARACTERISTICS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">NDIS_PORT_CHARACTERISTICS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569124">OID_DOT11_CREATE_MAC</a>
@@ -116,5 +117,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_MAC_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_MAC_INFO structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

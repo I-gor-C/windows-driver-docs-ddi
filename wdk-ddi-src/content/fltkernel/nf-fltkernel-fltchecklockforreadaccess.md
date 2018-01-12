@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltCheckLockForReadAccess
+UID: NF:fltkernel.FltCheckLockForReadAccess
 title: FltCheckLockForReadAccess function
 author: windows-driver-content
 description: The FltCheckLockForReadAccess routine determines whether the caller has read access to a locked byte range of a file.
@@ -7,7 +7,7 @@ old-location: ifsk\fltchecklockforreadaccess.htm
 old-project: ifsk
 ms.assetid: 18920aaa-ae43-48ec-a06d-69ccaf75ebd8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltCheckLockForReadAccess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltCheckLockForReadAccess function
@@ -56,12 +57,12 @@ BOOLEAN FltCheckLockForReadAccess(
 
 ### -param FileLock [in]
 
-Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a> or <a href="ifsk.fltinitializefilelock">FltInitializeFileLock</a>.
+Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a> or <a href="..\fltkernel\nf-fltkernel-fltinitializefilelock.md">FltInitializeFileLock</a>.
 
 
 ### -param CallbackData [in]
 
-Pointer to the callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the <a href="ifsk.irp_mj_read">IRP_MJ_READ</a> operation. 
+Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> operation. 
 
 
 ## -returns
@@ -73,11 +74,11 @@ This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 
 
 <b>FltCheckLockForReadAccess</b> checks whether the caller has read access to the entire byte range indicated in the callback data structure. 
 
-<b>FltCheckLockForReadAccess</b> does not complete the <a href="ifsk.irp_mj_read">IRP_MJ_READ</a> operation. 
+<b>FltCheckLockForReadAccess</b> does not complete the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> operation. 
 
-To allocate and initialize a new file lock structure, call <a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a>. 
+To allocate and initialize a new file lock structure, call <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>. 
 
-To free an initialized FILE_LOCK structure, call <a href="ifsk.fltfreefilelock">FltFreeFileLock</a>. 
+To free an initialized FILE_LOCK structure, call <a href="..\fltkernel\nf-fltkernel-fltfreefilelock.md">FltFreeFileLock</a>. 
 
 
 ## -requirements
@@ -130,36 +131,36 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fltchecklockforwriteaccess">FltCheckLockForWriteAccess</a>
+<a href="..\fltkernel\nf-fltkernel-fltchecklockforwriteaccess.md">FltCheckLockForWriteAccess</a>
 </dt>
 <dt>
-<a href="ifsk.fltfreefilelock">FltFreeFileLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreefilelock.md">FltFreeFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fltinitializefilelock">FltInitializeFileLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltinitializefilelock.md">FltInitializeFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fltprocessfilelock">FltProcessFileLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltprocessfilelock.md">FltProcessFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fltuninitializefilelock">FltUninitializeFileLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltuninitializefilelock.md">FltUninitializeFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlchecklockforreadaccess">FsRtlCheckLockForReadAccess</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlchecklockforreadaccess~r1.md">FsRtlCheckLockForReadAccess</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_read">IRP_MJ_READ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCheckLockForReadAccess routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltCheckLockForReadAccess routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

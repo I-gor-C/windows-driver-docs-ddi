@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.SYSAUDIO_ATTACH_VIRTUAL_SOURCE
+UID: NS:ksmedia.SYSAUDIO_ATTACH_VIRTUAL_SOURCE
 title: SYSAUDIO_ATTACH_VIRTUAL_SOURCE
 author: windows-driver-content
 description: The SYSAUDIO_ATTACH_VIRTUAL_SOURCE structure is used to attach a mixer-line virtual source (for example, a volume or mute control) to a mixer pin on the virtual audio device.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 1215cf8e-8e94-4da4-9fb9-2212e8386abd
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SYSAUDIO_ATTACH_VIRTUAL_SOURCE, *PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE, PSYSAUDIO_ATTACH_VIRTUAL_SOURCE
+ms.keywords: SYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE, *PSYSAUDIO_ATTACH_VIRTUAL_SOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SYSAUDIO_ATTACH_VIRTUAL_SOURCE, *PSYSAUDIO_ATTACH_VIRTUAL_SOURCE
 ---
 
 # SYSAUDIO_ATTACH_VIRTUAL_SOURCE structure
@@ -57,7 +58,7 @@ typedef struct {
 
 ### -field Property
 
-Specifies the property. This parameter is a structure of type <a href="stream.ksproperty">KSPROPERTY</a>.
+Specifies the property. This parameter is a structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.
 
 
 ### -field MixerPinId

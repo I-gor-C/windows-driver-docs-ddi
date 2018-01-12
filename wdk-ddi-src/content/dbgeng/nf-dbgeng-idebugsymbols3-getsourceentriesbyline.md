@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.GetSourceEntriesByLine
+UID: NF:dbgeng.IDebugSymbols3.GetSourceEntriesByLine
 title: IDebugSymbols3::GetSourceEntriesByLine method
 author: windows-driver-content
 description: The GetSourceEntriesByLine method queries symbol information and returns locations in the target's memory that correspond to lines in a source file.
 old-location: debugger\getsourceentriesbyline.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 02ab63fe-0c59-480c-a333-a9b14d83ad68
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::GetSourceEntriesByLine, GetSourceEntriesByLine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::GetSourceEntriesByLine method
@@ -127,7 +128,7 @@ To use the default set of flags, set <i>Flags</i> to DEBUG_GSEL_DEFAULT.  This h
 
 ### -param Entries [out, optional]
 
-Receives the locations in the target's memory that correspond to the source lines queried for.  Each entry in this array is of type <a href="debugger.debug_symbol_source_entry">DEBUG_SYMBOL_SOURCE_ENTRY</a> and contains the source line number along with a location in the target's memory.
+Receives the locations in the target's memory that correspond to the source lines queried for.  Each entry in this array is of type <a href="..\dbgeng\ns-dbgeng-_debug_symbol_source_entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a> and contains the source line number along with a location in the target's memory.
 
 
 ### -param EntriesCount [in]
@@ -193,15 +194,15 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 </dt>
 <dt>
-<a href="debugger.debug_symbol_source_entry">DEBUG_SYMBOL_SOURCE_ENTRY</a>
+<a href="..\dbgeng\ns-dbgeng-_debug_symbol_source_entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a>
 </dt>
 <dt>
-<a href="debugger.getsourcefilelineoffsets">GetSourceFileLineOffsets</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548339">GetSourceFileLineOffsets</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugSymbols3::GetSourceEntriesByLine method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols3::GetSourceEntriesByLine method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

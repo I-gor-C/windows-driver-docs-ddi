@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWavePciStream.GetAllocatorFraming
+UID: NF:portcls.IMiniportWavePciStream.GetAllocatorFraming
 title: IMiniportWavePciStream::GetAllocatorFraming method
 author: windows-driver-content
 description: The GetAllocatorFraming method gets the preferred allocator-framing parameters for the stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWavePciStream::GetAllocatorFraming method

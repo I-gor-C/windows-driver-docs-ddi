@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CMP_MONITOR_INFO
+UID: NS:61883._CMP_MONITOR_INFO
 title: _CMP_MONITOR_INFO
 author: windows-driver-content
 description: The CMP_MONITOR_INFO structure is used in conjunction with the Av61883_MonitorPlugs request to allow a driver to monitor access to local oPCR and iPCR plugs.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 258bcd6f-0536-48d3-a06a-10277f8bef87
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CMP_MONITOR_INFO, PCMP_MONITOR_INFO, CMP_MONITOR_INFO, *PCMP_MONITOR_INFO
+ms.keywords: _CMP_MONITOR_INFO, *PCMP_MONITOR_INFO, CMP_MONITOR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCMP_MONITOR_INFO, CMP_MONITOR_INFO
 ---
 
 # _CMP_MONITOR_INFO structure

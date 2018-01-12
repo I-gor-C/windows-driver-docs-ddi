@@ -1,14 +1,14 @@
 ---
-UID: NS.WDITYPES._WDI_TYPE_NONCE
+UID: NS:wditypes._WDI_TYPE_NONCE
 title: _WDI_TYPE_NONCE
 author: windows-driver-content
 description: The WDI_TYPE_NONCE structure defines the SNonce or ANonce (802.11r).
 old-location: netvista\wdi_type_nonce.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 62E3A714-BA18-4DD5-ACFC-A9EFA37EABB4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WDI_TYPE_NONCE, *PWDI_TYPE_NONCE, PWDI_TYPE_NONCE, WDI_TYPE_NONCE
+ms.date: 1/8/2018
+ms.keywords: _WDI_TYPE_NONCE, WDI_TYPE_NONCE, *PWDI_TYPE_NONCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_TYPE_NONCE, *PWDI_TYPE_NONCE
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltQuerySecurityObject
+UID: NF:fltkernel.FltQuerySecurityObject
 title: FltQuerySecurityObject function
 author: windows-driver-content
 description: FltQuerySecurityObject retrieves a copy of an object's security descriptor.
@@ -7,7 +7,7 @@ old-location: ifsk\fltquerysecurityobject.htm
 old-project: ifsk
 ms.assetid: 388dc11d-79cc-4e6b-bce0-b99cca556342
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltQuerySecurityObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltQuerySecurityObject function
@@ -74,7 +75,7 @@ File object pointer for the object whose security descriptor is being queried. T
 ### -param SecurityInformation [in]
 
 
-<a href="ifsk.security_information">SECURITY_INFORMATION</a> value. This parameter is 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a> value. This parameter is 
        required and must be one of the following:
 
 <table>
@@ -133,7 +134,7 @@ The system ACL (SACL) of the object is being queried. Requires
 ### -param SecurityDescriptor [in, out]
 
 Pointer to a caller-supplied output buffer that receives a copy of the security descriptor for the 
-      specified object. The <a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a> 
+      specified object. The <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> 
       structure is returned in self-relative format. This parameter is optional and can be 
       <b>NULL</b>.
 
@@ -172,11 +173,11 @@ A security descriptor can be in absolute or self-relative form. In self-relative
 The NTFS file system imposes a 64-KB limit on the size of the security descriptor that is written to disk for a 
      file. (The FAT file system does not support security descriptors for files.) Thus, a 64-KB buffer pointed to by 
      the <i>SecurityDescriptor</i> parameter is guaranteed to be large enough to hold the returned 
-     <a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a> structure.
+     <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> structure.
 
 The object that the <i>FileObject</i> parameter points to can represent a named data stream. 
      For more information about named data streams, see 
-     <a href="ifsk.file_stream_information">FILE_STREAM_INFORMATION</a>.
+     <a href="..\ntifs\ns-ntifs-_file_stream_information.md">FILE_STREAM_INFORMATION</a>.
 
 For more information about security and access control, see the Microsoft Windows SDK documentation.
 
@@ -242,18 +243,18 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_stream_information">FILE_STREAM_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_stream_information.md">FILE_STREAM_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="ifsk.security_information">SECURITY_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQuerySecurityObject function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQuerySecurityObject function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

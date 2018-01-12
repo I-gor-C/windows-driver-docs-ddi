@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltQueryDirectoryFile
+UID: NF:fltkernel.FltQueryDirectoryFile
 title: FltQueryDirectoryFile function
 author: windows-driver-content
 description: The FltQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file object.
@@ -7,7 +7,7 @@ old-location: ifsk\fltquerydirectoryfile.htm
 old-project: ifsk
 ms.assetid: d77dfcc7-a7a7-4027-9831-42b1b79738d0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltQueryDirectoryFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: EXpsFontRestriction
 ---
 
 # FltQueryDirectoryFile function
@@ -228,7 +229,7 @@ The final call to <b>FltQueryDirectoryFile</b> returns an empty output buffer an
 
 <b>FltQueryDirectoryFile </b>returns zero in any member of a FILE_<i>XXX</i>_INFORMATION structure that is not supported by the file system. 
 
-For information about other file information query routines, see <a href="kernel.file_objects">File Objects</a>. 
+For information about other file information query routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545843">File Objects</a>. 
 
 Callers of <b>FltQueryDirectoryFile</b> must be running at IRQL = PASSIVE_LEVEL and with APCs enabled. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543219">Disabling APCs</a>.
 
@@ -304,45 +305,45 @@ PASSIVE_LEVEL (see Remarks section)
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_both_dir_information">FILE_BOTH_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_both_dir_information.md">FILE_BOTH_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_directory_information">FILE_DIRECTORY_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_directory_information.md">FILE_DIRECTORY_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_full_dir_information">FILE_FULL_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_full_dir_information.md">FILE_FULL_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_id_both_dir_information">FILE_ID_BOTH_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_id_both_dir_information.md">FILE_ID_BOTH_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_id_full_dir_information">FILE_ID_FULL_DIR_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_id_full_dir_information.md">FILE_ID_FULL_DIR_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_names_information">FILE_NAMES_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_names_information.md">FILE_NAMES_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_objectid_information">FILE_OBJECTID_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_objectid_information.md">FILE_OBJECTID_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_reparse_point_information">FILE_REPARSE_POINT_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_reparse_point_information.md">FILE_REPARSE_POINT_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltcreatefile">FltCreateFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
 </dt>
 <dt>
-<a href="ifsk.fltcreatefileex">FltCreateFileEx</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 <dt>
-<a href="kernel.zwquerydirectoryfile">ZwQueryDirectoryFile</a>
+<a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryDirectoryFile routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltQueryDirectoryFile routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

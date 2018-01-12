@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_GET_COMMSTATUS
+UID: NI:ntddser.IOCTL_SERIAL_GET_COMMSTATUS
 title: IOCTL_SERIAL_GET_COMMSTATUS
 author: windows-driver-content
 description: The IOCTL_SERIAL_GET_COMMSTATUS request returns information about the communication status of a serial device. For more information about the status information that is retrieved by this request, see SERIAL_STATUS.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_COMMSTATUS IOCTL
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>IOCTL_SERIAL_GET_COMMSTATUS</b> request returns information about the communication status of a serial device. For more information about the status information that is retrieved by this request, see <a href="serports.serial_status">SERIAL_STATUS</a>.
+The <b>IOCTL_SERIAL_GET_COMMSTATUS</b> request returns information about the communication status of a serial device. For more information about the status information that is retrieved by this request, see <a href="..\ntddser\ns-ntddser-_serial_status.md">SERIAL_STATUS</a>.
 
 
 
@@ -96,7 +97,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="serports.serial_status">SERIAL_STATUS</a>
+<a href="..\ntddser\ns-ntddser-_serial_status.md">SERIAL_STATUS</a>
 </dt>
 </dl>
  

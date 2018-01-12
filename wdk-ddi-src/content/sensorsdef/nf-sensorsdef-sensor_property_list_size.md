@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsdef.SENSOR_PROPERTY_LIST_SIZE
+UID: NF:sensorsdef.SENSOR_PROPERTY_LIST_SIZE
 title: SENSOR_PROPERTY_LIST_SIZE function
 author: windows-driver-content
 description: This function returns the size of the property list.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SENSOR_STATE
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIMGT._ISCSI_REDIRECTPORTALINFO
+UID: NS:iscsimgt._ISCSI_RedirectPortalInfo
 title: _ISCSI_RedirectPortalInfo
 author: windows-driver-content
 description: This ISCSI_RedirectPortalInfo structure contains information about a collection of iSCSI portals that can be used during portal hopping or portal redirect operations.
@@ -7,8 +7,8 @@ old-location: storage\iscsi_redirectportalinfo.htm
 old-project: storage
 ms.assetid: 90d9c5e9-4bdf-4c7a-b5ac-54e1f94818bf
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ISCSI_RedirectPortalInfo, PISCSI_RedirectPortalInfo, *PISCSI_RedirectPortalInfo, ISCSI_RedirectPortalInfo
+ms.date: 1/10/2018
+ms.keywords: _ISCSI_RedirectPortalInfo, *PISCSI_RedirectPortalInfo, ISCSI_RedirectPortalInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PISCSI_RedirectPortalInfo, ISCSI_RedirectPortalInfo
 ---
 
 # _ISCSI_RedirectPortalInfo structure
@@ -61,7 +62,7 @@ typedef struct _ISCSI_RedirectPortalInfo {
 
 ### -field UniqueConnectionId
 
-The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="storage.logintotarget">LoginToTarget</a> and <a href="storage.addconnectiontosession">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter. This value is not to be confused with the connection ID (CID).
+The connection identifier (ID) that the operating system and application software use to uniquely identify the connection. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a> methods both return this value in the UniqueConnectionId parameter. This value is not to be confused with the connection ID (CID).
 
 
 ### -field OriginalIPAddr
@@ -115,15 +116,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.addconnectiontosession">AddConnectionToSession</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 </dt>
 <dt>
-<a href="storage.logintotarget">LoginToTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_RedirectPortalInfo structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ISCSI_RedirectPortalInfo structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

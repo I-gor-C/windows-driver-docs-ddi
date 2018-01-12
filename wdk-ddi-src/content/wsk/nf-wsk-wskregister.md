@@ -1,13 +1,13 @@
 ---
-UID: NF.wsk.WskRegister
+UID: NF:wsk.WskRegister
 title: WskRegister function
 author: windows-driver-content
 description: The WskRegister function registers a WSK application, given the application's WSK client Network Programming Interface (NPI).
 old-location: netvista\wskregister.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 340933ad-1a71-421c-b1e1-360aa9c441fd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: WskRegister
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Netio.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ A pointer to the client NPI implemented by the WSK application.
 A pointer to a memory location that identifies a WSK application's registration instance. This
      memory location will be initialized by the 
      <b>WskRegister</b> call and will be used by the other 
-     <a href="netvista.wsk_registration_functions">WSK registration functions</a>. The
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571179">WSK registration functions</a>. The
      WSK application should never change the contents of this memory location directly.
 
 
@@ -91,22 +92,22 @@ A WSK client object can call this function multiple times, but a different
 
 For each call to 
     <b>WskRegister</b> that returns a success code, there must be exactly one corresponding 
-    <a href="netvista.wskderegister">WskDeregister</a> call that uses the same 
+    <a href="..\wsk\nf-wsk-wskderegister.md">WskDeregister</a> call that uses the same 
     <i>WskRegistration</i> parameter that was passed to 
     <b>WskRegister</b>.
 
 The block of memory pointed to by 
     <i>WskRegistration</i> must be kept allocated (must not be freed or go out of scope) as long as there are
     outstanding calls to other 
-    <a href="netvista.wsk_registration_functions">WSK registration functions</a>.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571179">WSK registration functions</a>.
 
 
     
     Using the 
     <b>WskRegister</b> and 
-    <a href="netvista.wskderegister">WskDeregister</a> functions is the preferred
+    <a href="..\wsk\nf-wsk-wskderegister.md">WskDeregister</a> functions is the preferred
     method for registering and unregistering WSK applications. The 
-    <a href="netvista.network_module_registrar2">Network Module Registrar</a> remains
+    <a href="https://msdn.microsoft.com/23c15c42-94aa-410b-8551-fafa8b24ad86">Network Module Registrar</a> remains
     available for compatibility.
     
 
@@ -176,18 +177,18 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wskderegister">WskDeregister</a>
+<a href="..\wsk\nf-wsk-wskderegister.md">WskDeregister</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_npi">WSK_CLIENT_NPI</a>
+<a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a>
 </dt>
 <dt>
-<a href="netvista.wsk_registration">WSK_REGISTRATION</a>
+<a href="..\wsk\ns-wsk-_wsk_registration.md">WSK_REGISTRATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WskRegister function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WskRegister function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

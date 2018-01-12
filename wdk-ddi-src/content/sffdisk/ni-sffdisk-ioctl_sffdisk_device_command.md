@@ -1,5 +1,5 @@
 ---
-UID: NI.sffdisk.IOCTL_SFFDISK_DEVICE_COMMAND
+UID: NI:sffdisk.IOCTL_SFFDISK_DEVICE_COMMAND
 title: IOCTL_SFFDISK_DEVICE_COMMAND
 author: windows-driver-content
 description: User-mode applications use this IOCTL to send Secure Digital (SD) card commands to an SD card.
@@ -7,7 +7,7 @@ old-location: sd\ioctl_sffdisk_device_command.htm
 old-project: SD
 ms.assetid: ccf9e0a2-b891-474c-ac95-7b18112857c0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/18/2017
 ms.keywords: SFFDISK_DPCMD, SFFDISK_DPCMD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SFFDISK_DPCMD
 req.product: Windows 10 or later.
 ---
 
@@ -43,7 +44,7 @@ User-mode applications use this IOCTL to send Secure Digital (SD) card commands 
 
 The caller must fill in an <a href="https://msdn.microsoft.com/68205c17-5ff6-45a3-83c7-e106b314f9a5">SFFDISK_DEVICE_COMMAND_DATA</a> structure and pass it as a parameter to the call. 
 
-To perform this operation, call the <a href="base.deviceiocontrol">DeviceIoControl</a> function (described in the Microsoft Windows SDK documentation) with the following parameters.
+To perform this operation, call the <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> function (described in the Microsoft Windows SDK documentation) with the following parameters.
 
 
 
@@ -91,9 +92,9 @@ bRet = DeviceIoControl (
 
 ### -status-block
 I/O Status block
-If the operation succeeds, <a href="base.deviceiocontrol">DeviceIoControl</a> returns a nonzero value.
+If the operation succeeds, <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> returns a nonzero value.
 
-If the operation fails, <a href="base.deviceiocontrol">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.
+If the operation fails, <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> returns zero. To get extended error information, call <b>GetLastError</b>.
 
 
 ## -remarks

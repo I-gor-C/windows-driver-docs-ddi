@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetEventThread
+UID: NF:dbgeng.IDebugSystemObjects4.GetEventThread
 title: IDebugSystemObjects4::GetEventThread method
 author: windows-driver-content
 description: The GetEventThread method returns the engine thread ID for the thread on which the last event occurred.
 old-location: debugger\geteventthread.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 7a28c9bd-480e-4864-b7ff-9ff0dc1d04ad
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetEventThread, GetEventThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetEventThread method

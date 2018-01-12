@@ -1,5 +1,5 @@
 ---
-UID: NS.MFAPI.TAGCAPTUREDMETADATAISOGAINS
+UID: NS:mfapi.tagCapturedMetadataISOGains
 title: tagCapturedMetadataISOGains
 author: windows-driver-content
 description: The CapturedMetadataISOGains structure describes the blob format for MF_CAPTURE_METADATA_ISO_GAINS.
@@ -7,7 +7,7 @@ old-location: stream\capturedmetadataisogains.htm
 old-project: stream
 ms.assetid: 6B87BDFB-EAD5-496D-BE6A-9AE709119515
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: tagCapturedMetadataISOGains, CapturedMetadataISOGains
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: CapturedMetadataISOGains
 ---
 
 # tagCapturedMetadataISOGains structure
@@ -61,7 +62,7 @@ typedef struct tagCapturedMetadataISOGains {
 
 
 ## -remarks
-The <b>CapturedMetadataISOGains</b> structure only describes the blob format for the <b>MF_CAPTURE_METADATA_ISO_GAINS</b> attribute.  The metadata item structure for ISO gains (<a href="stream.kscamera_metadata_itemheader">KSCAMERA_METADATA_ITEMHEADER</a> + ISO gains metadata payload) is up to driver and must be 8-byte aligned.
+The <b>CapturedMetadataISOGains</b> structure only describes the blob format for the <b>MF_CAPTURE_METADATA_ISO_GAINS</b> attribute.  The metadata item structure for ISO gains (<a href="..\ksmedia\ns-ksmedia-tagkscamera_metadata_itemheader.md">KSCAMERA_METADATA_ITEMHEADER</a> + ISO gains metadata payload) is up to driver and must be 8-byte aligned.
 
 
 ## -requirements

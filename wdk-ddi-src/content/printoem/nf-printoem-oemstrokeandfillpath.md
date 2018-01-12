@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMStrokeAndFillPath
+UID: NF:printoem.OEMStrokeAndFillPath
 title: OEMStrokeAndFillPath function
 author: windows-driver-content
 description: The OEMStrokeAndFillPath function concurrently strokes and fills a path.
@@ -7,7 +7,7 @@ old-location: print\oemstrokeandfillpath.htm
 old-project: print
 ms.assetid: f8a2df5d-426f-4872-8d54-55895c4fe6e3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMStrokeAndFillPath
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

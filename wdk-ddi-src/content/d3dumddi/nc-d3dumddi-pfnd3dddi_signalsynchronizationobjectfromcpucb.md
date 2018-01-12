@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMCPUCB
+UID: NC:d3dumddi.PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMCPUCB
 title: PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMCPUCB
 author: windows-driver-content
 description: pfnSignalSynchronizationObjectFromCpuCb enables a driver to signal a monitored fence.
@@ -7,7 +7,7 @@ old-location: display\pfnsignalsynchronizationobjectfromcpucb.htm
 old-project: display
 ms.assetid: E6FD5215-09CE-4DC8-B5AB-F65E68E2A884
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMCPUCB callback

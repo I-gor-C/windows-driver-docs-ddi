@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinDataIntersectionEx
+UID: NF:ks.KsPinDataIntersectionEx
 title: KsPinDataIntersectionEx function
 author: windows-driver-content
 description: The KsPinDataIntersectionEx function handles the KSPROPERTY_PIN_DATAINTERSECTION through a callback function.
@@ -7,7 +7,7 @@ old-location: stream\kspindataintersectionex.htm
 old-project: stream
 ms.assetid: 4d471d91-7b2c-441d-a640-4f66ef7f1b2f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinDataIntersectionEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsPinDataIntersectionEx function
@@ -92,7 +93,7 @@ Size of the descriptor structures, in bytes.
 
 ### -param IntersectHandler [in, optional]
 
-Contains the optional minidriver-defined <a href="stream.kstrintersecthandlerex">KStrIntersectHandlerEx</a> callback function to compare data ranges.
+Contains the optional minidriver-defined <a href="..\ks\nc-ks-pfnksintersecthandlerex.md">KStrIntersectHandlerEx</a> callback function to compare data ranges.
 
 
 ### -param HandlerContext [in, optional]
@@ -149,12 +150,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kstrintersecthandlerex">KStrIntersectHandlerEx</a>
+<a href="..\ks\nc-ks-pfnksintersecthandlerex.md">KStrIntersectHandlerEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinDataIntersectionEx function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinDataIntersectionEx function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

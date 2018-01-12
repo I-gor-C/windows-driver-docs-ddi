@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugClient5.AttachProcess
+UID: NF:dbgeng.IDebugClient5.AttachProcess
 title: IDebugClient5::AttachProcess method
 author: windows-driver-content
 description: The AttachProcess method connects the debugger engine to a user-modeprocess.
 old-location: debugger\attachprocess.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 0787da49-23e0-43e3-bb32-1221db32a449
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugClient5, IDebugClient5::AttachProcess, AttachProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugClient5::AttachProcess method
@@ -84,7 +85,7 @@ This method is available only for live user-mode debugging.
 
 For more information about creating and attaching to live user-mode targets, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552020">Live User-Mode Targets</a>.
 
-The DEBUG_ATTACH_<i>XXX</i> bit-flags control how the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> attaches to a user-mode process.  For the DEBUG_ATTACH_<i>XXX</i> options used when attaching to a kernel target, see <a href="debugger.attachkernel">AttachKernel</a>.
+The DEBUG_ATTACH_<i>XXX</i> bit-flags control how the <a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a> attaches to a user-mode process.  For the DEBUG_ATTACH_<i>XXX</i> options used when attaching to a kernel target, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538145">AttachKernel</a>.
 
 The following table describes the possible flag values.
 
@@ -164,37 +165,37 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562135">.attach (Attach to Process)</a>
 </dt>
 <dt>
-<a href="debugger.attachkernel">AttachKernel</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538145">AttachKernel</a>
 </dt>
 <dt>
-<a href="debugger.connectprocessserver">ConnectProcessServer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539237">ConnectProcessServer</a>
 </dt>
 <dt>
-<a href="debugger.createprocess2">CreateProcess2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539323">CreateProcess2</a>
 </dt>
 <dt>
-<a href="debugger.createprocessandattach2">CreateProcessAndAttach2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540055">CreateProcessAndAttach2</a>
 </dt>
 <dt><a href="debugger.introduction#debugger_engine#debugger_engine">debugger engine</a></dt>
 <dt>
-<a href="debugger.getrunningprocesssystemids">GetRunningProcessSystemIds</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548265">GetRunningProcessSystemIds</a>
 </dt>
 <dt>
-<a href="debugger.getrunningprocessdescription">GetRunningProcessDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548243">GetRunningProcessDescription</a>
 </dt>
 <dt>
-<a href="debugger.detachcurrentprocess">DetachCurrentProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541846">DetachCurrentProcess</a>
 </dt>
 <dt>
-<a href="debugger.terminatecurrentprocess">TerminateCurrentProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558866">TerminateCurrentProcess</a>
 </dt>
 <dt>
-<a href="debugger.abandoncurrentprocess">AbandonCurrentProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537786">AbandonCurrentProcess</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugClient::AttachProcess method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugClient::AttachProcess method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

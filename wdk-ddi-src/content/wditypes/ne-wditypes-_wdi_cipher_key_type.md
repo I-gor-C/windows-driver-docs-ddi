@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_CIPHER_KEY_TYPE
+UID: NE:wditypes._WDI_CIPHER_KEY_TYPE
 title: _WDI_CIPHER_KEY_TYPE
 author: windows-driver-content
 description: The WDI_CIPHER_KEY_TYPE enumeration defines the cipher key types.
 old-location: netvista\wdi_cipher_key_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 09874F77-5A9C-4C98-996F-29BB90CAE4B6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_CIPHER_KEY_TYPE, WDI_CIPHER_KEY_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_CIPHER_KEY_TYPE
 req.product: Windows 10 or later.
 ---
 

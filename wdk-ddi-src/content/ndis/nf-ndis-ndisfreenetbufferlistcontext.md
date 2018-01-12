@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisFreeNetBufferListContext
+UID: NF:ndis.NdisFreeNetBufferListContext
 title: NdisFreeNetBufferListContext function
 author: windows-driver-content
 description: Call the NdisFreeNetBufferListContext function to release context space in the NET_BUFFER_LIST_CONTEXT structure of a NET_BUFFER_LIST structure.
 old-location: netvista\ndisfreenetbufferlistcontext.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e5554790-a7a2-4c0d-a6ae-585ea909cd3d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisFreeNetBufferListContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisFreeNetBufferListContext function
@@ -40,9 +41,9 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 Call the 
   <b>NdisFreeNetBufferListContext</b> function to release context space in the 
-  <a href="netvista.net_buffer_list_context">NET_BUFFER_LIST_CONTEXT</a> structure of a
+  <a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a> structure of a
   
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 
 
@@ -74,7 +75,7 @@ None
 
 ## -remarks
 <b>NdisFreeNetBufferListContext</b> releases context space that was allocated in a previous call to 
-    <a href="netvista.ndisallocatenetbufferlistcontext">
+    <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistcontext.md">
     NdisAllocateNetBufferListContext</a>. If 
     <b>NdisAllocateNetBufferListContext</b> allocated memory to satisfy in the call to 
     <b>NdisAllocateNetBufferListContext</b>, 
@@ -142,7 +143,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -150,13 +151,13 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list_context">NET_BUFFER_LIST_CONTEXT</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatenetbufferlistcontext">
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistcontext.md">
    NdisAllocateNetBufferListContext</a>
 </dt>
 </dl>
@@ -164,5 +165,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisFreeNetBufferListContext function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeNetBufferListContext function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

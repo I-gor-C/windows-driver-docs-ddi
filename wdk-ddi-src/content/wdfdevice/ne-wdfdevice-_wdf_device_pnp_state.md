@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfdevice._WDF_DEVICE_PNP_STATE
+UID: NE:wdfdevice._WDF_DEVICE_PNP_STATE
 title: _WDF_DEVICE_PNP_STATE
 author: windows-driver-content
 description: The WDF_DEVICE_PNP_STATE enumeration identifies all of the states that the framework's Plug and Play state machine can enter.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_pnp_state.htm
 old-project: wdf
 ms.assetid: b907a1ca-d9ef-45e9-9e1b-26e58e3e1e07
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE, PWDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE
+ms.date: 12/29/2017
+ms.keywords: _WDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: See Remarks section.
+req.irql: <=DISPATCH_LEVEL
+req.typenames: WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -296,7 +297,7 @@ typedef enum _WDF_DEVICE_PNP_STATE {
 
 
 ## -remarks
-The WDF_DEVICE_PNP_STATE enumeration is used as a member type for  the <a href="wdf.wdf_device_pnp_notification_data">WDF_DEVICE_PNP_NOTIFICATION_DATA</a> structure and as the return type for the <a href="wdf.wdfdevicegetdevicepnpstate">WdfDeviceGetDevicePnpState</a> method.
+The WDF_DEVICE_PNP_STATE enumeration is used as a member type for  the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_pnp_notification_data.md">WDF_DEVICE_PNP_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepnpstate.md">WdfDeviceGetDevicePnpState</a> method.
 
 
 ## -requirements

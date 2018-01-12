@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILGETPREFERENCEDOPERATORLISTFORMAT
+UID: NE:ntddrilapitypes.RILGETPREFERENCEDOPERATORLISTFORMAT
 title: RILGETPREFERENCEDOPERATORLISTFORMAT
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilgetpreferencedoperatorlistformat.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 77526649-dc98-4c40-b348-6e5620f6e4eb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILGETPREFERENCEDOPERATORLISTFORMAT, RILGETPREFERENCEDOPERATORLISTFORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILGETPREFERENCEDOPERATORLISTFORMAT
 ---
 
 # RILGETPREFERENCEDOPERATORLISTFORMAT enumeration

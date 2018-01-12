@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsFilterGetFirstChildPin
+UID: NF:ks.KsFilterGetFirstChildPin
 title: KsFilterGetFirstChildPin function
 author: windows-driver-content
 description: The KsFilterGetFirstChildPin function returns the first instantiated pin of type PinID on the filter specified by Filter.
@@ -7,7 +7,7 @@ old-location: stream\ksfiltergetfirstchildpin.htm
 old-project: stream
 ms.assetid: b026908a-51d4-45a8-9c0e-1c163563bfbf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsFilterGetFirstChildPin
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsFilterGetFirstChildPin function
@@ -56,7 +57,7 @@ PKSPIN KsFilterGetFirstChildPin(
 
 ### -param Filter [in]
 
-A pointer to the <a href="stream.ksfilter">KSFILTER</a> structure to query for instantiated pins.
+A pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure to query for instantiated pins.
 
 
 ### -param PinId [in]
@@ -65,7 +66,7 @@ The numeric ID of the pin type for which to find the first instantiated member.
 
 
 ## -returns
-<b>KsFilterGetFirstChildPin</b> returns a pointer to the first instantiated <a href="stream.kspin">KSPIN</a> structure of type <i>PinID</i> on the specified filter.
+<b>KsFilterGetFirstChildPin</b> returns a pointer to the first instantiated <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure of type <i>PinID</i> on the specified filter.
 
 
 ## -remarks
@@ -132,18 +133,18 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kspin">KSPIN</a>
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 </dt>
 <dt>
-<a href="stream.ksfiltergetchildpincount">KsFilterGetChildPinCount</a>
+<a href="..\ks\nf-ks-ksfiltergetchildpincount.md">KsFilterGetChildPinCount</a>
 </dt>
 <dt>
-<a href="stream.kspingetnextsiblingpin">KsPinGetNextSiblingPin</a>
+<a href="..\ks\nf-ks-kspingetnextsiblingpin.md">KsPinGetNextSiblingPin</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterGetFirstChildPin function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterGetFirstChildPin function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

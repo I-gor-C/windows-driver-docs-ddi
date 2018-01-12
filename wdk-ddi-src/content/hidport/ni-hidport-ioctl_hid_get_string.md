@@ -1,5 +1,5 @@
 ---
-UID: NI.hidport.IOCTL_HID_GET_STRING
+UID: NI:hidport.IOCTL_HID_GET_STRING
 title: IOCTL_HID_GET_STRING
 author: windows-driver-content
 description: The IOCTL_HID_GET_STRING request obtains a manufacturer ID, product ID, or serial number for a top-level collection. The retrieved string is a NULL-terminated wide character string in a human-readable format.
@@ -7,7 +7,7 @@ old-location: hid\ioctl_hid_get_string.htm
 old-project: hid
 ms.assetid: 0812f27f-f38c-487d-9e92-98e16ddde21c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: HidRegisterMinidriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSAGE_AND_PAGE, USAGE_AND_PAGE
 ---
 
 # IOCTL_HID_GET_STRING IOCTL
@@ -118,16 +119,16 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="hid.hidd_getindexedstring">HidD_GetIndexedString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_getindexedstring.md">HidD_GetIndexedString</a>
 </dt>
 <dt>
-<a href="hid.hidd_getmanufacturerstring">HidD_GetManufacturerString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_getmanufacturerstring.md">HidD_GetManufacturerString</a>
 </dt>
 <dt>
-<a href="hid.hidd_getproductstring">HidD_GetProductString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_getproductstring.md">HidD_GetProductString</a>
 </dt>
 <dt>
-<a href="hid.hidd_getserialnumberstring">HidD_GetSerialNumberString</a>
+<a href="..\hidsdi\nf-hidsdi-hidd_getserialnumberstring.md">HidD_GetSerialNumberString</a>
 </dt>
 <dt>
 <a href="..\hidclass\ni-hidclass-ioctl_hid_get_indexed_string.md">IOCTL_HID_GET_INDEXED_STRING</a>
@@ -146,5 +147,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20IOCTL_HID_GET_STRING control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20IOCTL_HID_GET_STRING control code%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

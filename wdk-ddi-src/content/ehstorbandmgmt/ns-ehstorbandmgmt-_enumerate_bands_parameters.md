@@ -1,5 +1,5 @@
 ---
-UID: NS.EHSTORBANDMGMT._ENUMERATE_BANDS_PARAMETERS
+UID: NS:ehstorbandmgmt._ENUMERATE_BANDS_PARAMETERS
 title: _ENUMERATE_BANDS_PARAMETERS
 author: windows-driver-content
 description: The ENUMERATE_BANDS_PARAMETERS structure is used to select which band information entries are selected for return from an IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS request.
@@ -7,8 +7,8 @@ old-location: storage\enumerate_bands_parameters.htm
 old-project: storage
 ms.assetid: A493EF45-AA62-43FE-8E19-613B66FA0D83
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ENUMERATE_BANDS_PARAMETERS, PENUMERATE_BANDS_PARAMETERS, ENUMERATE_BANDS_PARAMETERS, *PENUMERATE_BANDS_PARAMETERS
+ms.date: 1/10/2018
+ms.keywords: _ENUMERATE_BANDS_PARAMETERS, *PENUMERATE_BANDS_PARAMETERS, ENUMERATE_BANDS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PENUMERATE_BANDS_PARAMETERS, ENUMERATE_BANDS_PARAMETERS
 ---
 
 # _ENUMERATE_BANDS_PARAMETERS structure
@@ -88,7 +89,7 @@ All bands are returned. When this flag is set, the <b>BandId</b>, <b>BandStart</
 
 </td>
 <td width="60%">
-Include media encryption algorithm information in the <b>SecurityInfo</b> member of <a href="storage.band_table_entry">BAND_TABLE_ENTRY</a>.
+Include media encryption algorithm information in the <b>SecurityInfo</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a>.
 
 </td>
 </tr>
@@ -117,7 +118,7 @@ An optional band size match value in bytes. If <b>BandSize</b> == 0 and <b>BandI
 
 
 ## -remarks
-When <b>ENUMBANDS_ENUM_ALL_BANDS</b> is not set in <b>Flags</b>, a selection attempt is made to match a single band. A single band match is made based on the values in <b>BandID</b>, <b>BandStart</b>, and <b>BandSize</b>. Precedence is given to <b>BandID</b> for band selection. If <b>BandID</b> &gt; 0 and  <b>BandID</b> &lt; <b>MaxBandCount</b> member of <a href="storage.band_management_capabilities">BAND_MANAGEMENT_CAPABILITIES</a> If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <b>BAND_MANAGEMENT_CAPABILITIES</b>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> and <b>BandSize</b> are used as  match criteria to select a band.
+When <b>ENUMBANDS_ENUM_ALL_BANDS</b> is not set in <b>Flags</b>, a selection attempt is made to match a single band. A single band match is made based on the values in <b>BandID</b>, <b>BandStart</b>, and <b>BandSize</b>. Precedence is given to <b>BandID</b> for band selection. If <b>BandID</b> &gt; 0 and  <b>BandID</b> &lt; <b>MaxBandCount</b> member of <a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a> If <b>BandID</b>  is greater than   0 and  <b>BandID</b>  is less than the  <b>MaxBandCount</b> member of <b>BAND_MANAGEMENT_CAPABILITIES</b>, then   <b>BandID</b> is used as the only selection criteria for a band match. If  <b>BandID</b> == –1, then <b>BandStart</b> and <b>BandSize</b> are used as  match criteria to select a band.
 
 When <b>BandStart</b> and <b>BandSize</b> are used to match a band, the first band configured at or after the <b>BandStart</b> location having the exact size of  <b>BandSize</b> is returned. If <b>BandSize</b> == 0, when <b>BandStart</b> is valid, then the first band configured at or after <b>BandStart</b> is returned.
 
@@ -154,13 +155,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.band_management_capabilities">BAND_MANAGEMENT_CAPABILITIES</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_management_capabilities.md">BAND_MANAGEMENT_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="storage.band_table">BAND_TABLE</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table.md">BAND_TABLE</a>
 </dt>
 <dt>
-<a href="storage.band_table_entry">BAND_TABLE_ENTRY</a>
+<a href="..\ehstorbandmgmt\ns-ehstorbandmgmt-_band_table_entry.md">BAND_TABLE_ENTRY</a>
 </dt>
 <dt>
 <a href="..\ehstorbandmgmt\ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_enumerate_bands.md">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a>
@@ -170,5 +171,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ENUMERATE_BANDS_PARAMETERS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ENUMERATE_BANDS_PARAMETERS structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

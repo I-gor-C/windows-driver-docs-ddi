@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisReadNetworkAddress
+UID: NF:ndis.NdisReadNetworkAddress
 title: NdisReadNetworkAddress function
 author: windows-driver-content
 description: The NdisReadNetworkAddress function returns the software-configurable network address that was stored in the registry for a NIC when it was installed in the machine.
 old-location: netvista\ndisreadnetworkaddress.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 42519c60-6dc6-4c20-a2e8-954d9610a982
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisReadNetworkAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisReadNetworkAddress function
@@ -97,7 +98,7 @@ A pointer to a caller-supplied variable in which this function returns the numbe
 ### -param ConfigurationHandle [in]
 
 The configuration handle returned by the 
-     <a href="netvista.ndisopenconfigurationex">
+     <a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">
      NdisOpenConfigurationEx</a> function.
 
 
@@ -112,7 +113,7 @@ None
     <b>NetworkAddress</b>, converts the value of this string-type entry into a sequence of byte integers, and
     stores the requested information internally. The storage that NDIS allocates for such an address remains
     valid until the miniport driver calls the 
-    <a href="netvista.ndiscloseconfiguration">NdisCloseConfiguration</a> function,
+    <a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a> function,
     which frees the memory.
 
 
@@ -179,7 +180,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -187,15 +188,15 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndiscloseconfiguration">NdisCloseConfiguration</a>
+<a href="..\ndis\nf-ndis-ndiscloseconfiguration.md">NdisCloseConfiguration</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenconfigurationex">NdisOpenConfigurationEx</a>
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisReadNetworkAddress function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisReadNetworkAddress function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

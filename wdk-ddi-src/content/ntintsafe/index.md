@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ntintsafe
 ---
 
 # Ntintsafe.h header
@@ -113,9 +113,6 @@ Ntintsafe.h contain these programming interfaces:
 | [RtlPtrdiffTAdd function](nf-ntintsafe-rtlptrdifftadd.md) | Adds two values of type PTRDIFF_T. |
 | [RtlPtrdiffTMult function](nf-ntintsafe-rtlptrdifftmult.md) | Multiplies one value of type PTRDIFF_T by another. |
 | [RtlPtrdiffTSub function](nf-ntintsafe-rtlptrdifftsub.md) | Subtracts one value of type PTRDIFF_T from another. |
-| [RtlSIZETAdd function](nf-ntintsafe-rtlsizetadd~r1.md) | Adds two values of type SIZE_T. |
-| [RtlSIZETMult function](nf-ntintsafe-rtlsizetmult~r1.md) | Multiplies one value of type SIZE_T by another. |
-| [RtlSIZETSub function](nf-ntintsafe-rtlsizetsub~r1.md) | Subtracts one value of type SIZE_T from another. |
 | [RtlSSIZETAdd function](nf-ntintsafe-rtlssizetadd.md) | Adds two values of type SSIZE_T. |
 | [RtlSSIZETMult function](nf-ntintsafe-rtlssizetmult.md) | Multiplies one value of type SSIZE_T by another. |
 | [RtlSSIZETSub function](nf-ntintsafe-rtlssizetsub.md) | Subtracts one value of type SSIZE_T from another. |

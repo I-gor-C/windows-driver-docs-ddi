@@ -1,5 +1,5 @@
 ---
-UID: NE.pointofservicecommontypes._BarcodeSymbologyDecodeLengthType
+UID: NE:pointofservicecommontypes._BarcodeSymbologyDecodeLengthType
 title: _BarcodeSymbologyDecodeLengthType
 author: windows-driver-content
 description: The BarcodeSymbologyDecodeLengthType enum describes values for the decode length which can be set to support a range, two discrete values, or be set to any length.
@@ -7,7 +7,7 @@ old-location: pos\barcodesymbologydecodelengthtype.htm
 old-project: pos
 ms.assetid: 155D1C71-7935-4512-8AA2-0EB167FCBF5E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _BarcodeSymbologyDecodeLengthType, BarcodeSymbologyDecodeLengthType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Called at PASSIVE_LEVEL.
+req.irql: 
+req.typenames: BarcodeSymbologyDecodeLengthType
 ---
 
 # _BarcodeSymbologyDecodeLengthType enumeration

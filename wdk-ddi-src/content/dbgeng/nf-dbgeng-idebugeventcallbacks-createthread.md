@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugEventCallbacks.CreateThread
+UID: NF:dbgeng.IDebugEventCallbacks.CreateThread
 title: IDebugEventCallbacks::CreateThread method
 author: windows-driver-content
 description: The CreateThread callback method is called by the engine when a create-threaddebugging event occurs in the target.
 old-location: debugger\idebugeventcallbacks_createthread.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: c3b2cbaa-33b9-4784-922d-d1209fc23dfd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugEventCallbacks, IDebugEventCallbacks::CreateThread, CreateThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugEventCallbacks::CreateThread method
@@ -75,7 +76,7 @@ This method returns a <a href="https://msdn.microsoft.com/library/windows/hardwa
 
 
 ## -remarks
-This method is only called by the engine if the DEBUG_EVENT_CREATE_THREAD flag is set in the mask returned by <a href="debugger.idebugeventcallbacks_getinterestmask">IDebugEventCallbacks::GetInterestMask</a>.
+This method is only called by the engine if the DEBUG_EVENT_CREATE_THREAD flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550737">IDebugEventCallbacks::GetInterestMask</a>.
 
 For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.  For information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
 

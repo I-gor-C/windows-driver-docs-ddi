@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCoOidRequest
+UID: NF:ndis.NdisCoOidRequest
 title: NdisCoOidRequest function
 author: windows-driver-content
 description: The NdisCoOidRequest function forwards a request to targeted CoNDIS drivers to query or set OID-specified information of the target driver.
 old-location: netvista\ndiscooidrequest.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7d46f2c1-7b54-4510-968a-2e35e33cf849
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisCoOidRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCoOidRequest function
@@ -62,7 +63,7 @@ NDIS_STATUS NdisCoOidRequest(
 ### -param NdisBindingHandle [in]
 
 A handle that the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function returned
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function returned
      that identifies the target adapter for the binding.
 
 
@@ -76,7 +77,7 @@ A handle that identifies the address family (AF) that is shared among the client
 <li>
 If the caller is a client that is making a request to the call manager, the client originally
        obtained this handle from a successful call to the 
-       <a href="netvista.ndisclopenaddressfamilyex">
+       <a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">
        NdisClOpenAddressFamilyEx</a> function.
 
 </li>
@@ -97,7 +98,7 @@ A handle that identifies the virtual connection (VC) the caller is requesting or
      information for, if the request is VC-specific. Otherwise, if this parameter is <b>NULL</b>, the request is not
      VC-specific. For any VC-specific request, the caller originally obtained this handle either when it
      created the VC with the 
-     <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a> function, or as an input
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> function, or as an input
      parameter to its 
      <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function. For a
      VC-specific request that is directed to the underlying miniport driver, this handle identifies the VC,
@@ -112,8 +113,8 @@ A handle that identifies the party on a multipoint VC the caller is requesting o
      information for, if the request is party-specific. Otherwise, if this parameter is <b>NULL</b>, the request is
      not party-specific. For any party-specific request, a client originally obtained this handle from a
      successful call to the 
-     <a href="netvista.ndiscladdparty">NdisClAddParty</a> function or the 
-     <a href="netvista.ndisclmakecall">NdisClMakeCall</a> function or the call
+     <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a> function or the 
+     <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a> function or the call
      manager obtained this handle as an input parameter to its 
      <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function. If 
      <i>NdisAfHandle</i> is <b>NULL</b>, 
@@ -123,7 +124,7 @@ A handle that identifies the party on a multipoint VC the caller is requesting o
 ### -param OidRequest [in, out]
 
 A pointer to an 
-     <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure that specifies
      the operation that is requested with a given OID_<i>XXX</i> code to query or to set information.
 
 
@@ -142,7 +143,7 @@ The target driver determines which NDIS_STATUS_<i>XXX</i> code
 <dt><b>NDIS_STATUS_INVALID_OID</b></dt>
 </dl>The OID_<i>XXX</i> code that was specified in the 
        <b>Oid</b> member of the 
-       <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure at the 
+       <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure at the 
        <i>OidRequest</i> parameter is invalid or unsupported by the underlying driver.
 <dl>
 <dt><b>NDIS_STATUS_INVALID_LENGTH or NDIS_STATUS_BUFFER_TOO_SHORT</b></dt>
@@ -156,7 +157,7 @@ The target driver determines which NDIS_STATUS_<i>XXX</i> code
 <dt><b>NDIS_STATUS_INVALID_DATA</b></dt>
 </dl>The data supplied at 
        <b>InformationBuffer</b> in the given 
-       <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure is invalid
+       <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure is invalid
        for the given OID_<i>XXX</i> code.
 <dl>
 <dt><b>NDIS_STATUS_NOT_SUPPORTED or NDIS_STATUS_NOT_RECOGNIZED</b></dt>
@@ -248,7 +249,7 @@ If a driver passes <b>NULL</b> for
     encountered for all of the VCs.
 
 Clients and stand-alone call managers should call the 
-    <a href="netvista.ndisoidrequest">NdisOidRequest</a> function for all of the OIDs
+    <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a> function for all of the OIDs
     that are not connection-oriented, such as those that are returned in an 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569642">OID_GEN_SUPPORTED_LIST</a> query, which is
     commonly issued during initialization after the protocol driver has bound itself to the underlying NIC
@@ -266,11 +267,11 @@ If
 For more information about the sets of OIDs that are defined to use with 
     <b>NdisCoOidRequest</b> and 
     <b>NdisOidRequest</b>, see 
-    <a href="netvista.ndis_oids">NDIS OIDs</a>.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566707">NDIS OIDs</a>.
 
 Only clients and stand-alone call managers, which are protocol drivers, can call 
     <b>NdisCoOidRequest</b>. MCMs call the 
-    <a href="netvista.ndismcmoidrequest">NdisMCmOidRequest</a> function to
+    <a href="..\ndis\nf-ndis-ndismcmoidrequest.md">NdisMCmOidRequest</a> function to
     communicate with their clients.
 
 
@@ -335,7 +336,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_connection_function">Irql_Connection_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547924">Irql_Connection_Function</a>
 </td>
 </tr>
 </table>
@@ -349,28 +350,28 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_reset.md">MiniportResetEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
-<a href="netvista.ndiscladdparty">NdisClAddParty</a>
+<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a>
+<a href="..\ndis\nf-ndis-ndisclopenaddressfamilyex.md">NdisClOpenAddressFamilyEx</a>
 </dt>
 <dt>
-<a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmoidrequest">NdisMCmOidRequest</a>
+<a href="..\ndis\nf-ndis-ndismcmoidrequest.md">NdisMCmOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndisoidrequest">NdisOidRequest</a>
+<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569562">OID_GEN_CO_RCV_CRC_ERROR</a>
@@ -399,5 +400,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCoOidRequest function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoOidRequest function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

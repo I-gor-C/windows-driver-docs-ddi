@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.KeSetKernelStackSwapEnable
+UID: NF:ntifs.KeSetKernelStackSwapEnable
 title: KeSetKernelStackSwapEnable function
 author: windows-driver-content
 description: The KeSetKernelStackSwapEnable routine enables and disables swapping of the caller's stack to disk.
@@ -7,7 +7,7 @@ old-location: kernel\kesetkernelstackswapenable.htm
 old-project: kernel
 ms.assetid: ec914f67-b2c2-4370-8685-770bca045034
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeSetKernelStackSwapEnable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # KeSetKernelStackSwapEnable function
@@ -69,7 +70,7 @@ Stack swapping can occur only if the thread is in a wait state that was caused b
 
 It is not typically necessary to disable stack swapping. Do this only in  rare cases. For an example that discusses alternatives to disabling stack swapping, see the following Examples section.
 
-In a call to a kernel-mode wait routine, such as <a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>, the caller specifies a <i>WaitMode</i> parameter to indicate whether the caller waits in kernel mode or user mode. If <i>WaitMode</i> = <b>UserMode</b>, and if the wait duration is sufficiently long, the memory manager might page out sections of the stack that belongs to the waiting thread. However, if the stack contains data items that must remain memory-resident for the duration of the wait, the thread can prevent the stack from being paged out by calling <b>KeSetKernelStackSwapEnable</b> and specifying <i>Enable</i> = <b>FALSE</b>.
+In a call to a kernel-mode wait routine, such as <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>, the caller specifies a <i>WaitMode</i> parameter to indicate whether the caller waits in kernel mode or user mode. If <i>WaitMode</i> = <b>UserMode</b>, and if the wait duration is sufficiently long, the memory manager might page out sections of the stack that belongs to the waiting thread. However, if the stack contains data items that must remain memory-resident for the duration of the wait, the thread can prevent the stack from being paged out by calling <b>KeSetKernelStackSwapEnable</b> and specifying <i>Enable</i> = <b>FALSE</b>.
 
 A thread must not exit (terminate) while stack swapping is disabled or a system bug check will occur.
 
@@ -151,15 +152,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.keinitializeevent">KeInitializeEvent</a>
+<a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
 </dt>
 <dt>
-<a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetKernelStackSwapEnable routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetKernelStackSwapEnable routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

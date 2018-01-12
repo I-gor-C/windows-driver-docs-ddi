@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSFRAMETIME
+UID: NS:ks.KSFRAMETIME
 title: KSFRAMETIME
 author: windows-driver-content
 description: The KSFRAMETIME structure is supported by rendering pins, and is used to return the duration of the next &#0034;frame&#0034; of data, and flags associated with that frame.
@@ -7,8 +7,8 @@ old-location: stream\ksframetime.htm
 old-project: stream
 ms.assetid: 0e3beb72-2b00-41be-a7b4-341bcf065e92
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSFRAMETIME, KSFRAMETIME, *PKSFRAMETIME, PKSFRAMETIME
+ms.date: 1/9/2018
+ms.keywords: KSFRAMETIME, KSFRAMETIME, *PKSFRAMETIME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSFRAMETIME, *PKSFRAMETIME
 ---
 
 # KSFRAMETIME structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHSDPDDI._BTHDDI_SDP_PARSE_INTERFACE
+UID: NS:bthsdpddi._BTHDDI_SDP_PARSE_INTERFACE
 title: _BTHDDI_SDP_PARSE_INTERFACE
 author: windows-driver-content
 description: The BTHDDI_SDP_PARSE_INTERFACE structure provides functions for parsing SDP records.
@@ -7,8 +7,8 @@ old-location: bltooth\bthddi_sdp_parse_interface.htm
 old-project: bltooth
 ms.assetid: bb8a1dd5-8207-4034-993e-eed49dc0f9c4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BTHDDI_SDP_PARSE_INTERFACE, BTHDDI_SDP_PARSE_INTERFACE, PBTHDDI_SDP_PARSE_INTERFACE, *PBTHDDI_SDP_PARSE_INTERFACE
+ms.date: 12/21/2017
+ms.keywords: _BTHDDI_SDP_PARSE_INTERFACE, BTHDDI_SDP_PARSE_INTERFACE, *PBTHDDI_SDP_PARSE_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: BTHDDI_SDP_PARSE_INTERFACE, *PBTHDDI_SDP_PARSE_INTERFACE
 ---
 
 # _BTHDDI_SDP_PARSE_INTERFACE structure
@@ -74,7 +75,7 @@ typedef struct _BTHDDI_SDP_PARSE_INTERFACE {
 A structure that describes the 
      <b>BTHDDI_SDP_NODE_INTERFACE</b> interface for use by profile drivers. For more information about this
      structure, see 
-     <a href="kernel.interface">INTERFACE</a>.
+     <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>.
 
 
 ### -field SdpValidateStream
@@ -100,7 +101,7 @@ A pointer to the
 ### -field SdpFreeTree
 
 A pointer to the 
-     <a href="bltooth.sdpfreetree">SdpFreeTree</a> function.
+     <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a> function.
 
 
 ### -field SdpByteSwapUuid128
@@ -142,7 +143,7 @@ A pointer to the
 ### -field SdpFindAttributeInTree
 
 A pointer to the 
-     <a href="bltooth.sdpfindattributeintree">
+     <a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">
      SdpFindAttributeInTree</a> function.
 
 
@@ -209,7 +210,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.interface">INTERFACE</a>
+<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 </dt>
 <dt>
 <a href="..\bthsdpddi\nc-bthsdpddi-pvalidatestream.md">SdpValidateStream</a>
@@ -221,7 +222,7 @@ Header
 <a href="..\bthsdpddi\nc-bthsdpddi-pconverttreetostream.md">SdpConvertTreeToStream</a>
 </dt>
 <dt>
-<a href="bltooth.sdpfreetree">SdpFreeTree</a>
+<a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a>
 </dt>
 <dt>
 <a href="..\bthsdpddi\nc-bthsdpddi-pbyteswapuuid128.md">SdpByteSwapUuid128</a>
@@ -242,7 +243,7 @@ Header
 <a href="..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md">SdpRetrieveUint64</a>
 </dt>
 <dt>
-<a href="bltooth.sdpfindattributeintree">SdpFindAttributeInTree</a>
+<a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">SdpFindAttributeInTree</a>
 </dt>
 <dt>
 <a href="..\bthsdpddi\nc-bthsdpddi-pgetnextelement.md">SdpGetNextElement</a>
@@ -252,5 +253,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTHDDI_SDP_PARSE_INTERFACE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20BTHDDI_SDP_PARSE_INTERFACE structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

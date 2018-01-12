@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSAUDIO_DYNAMIC_RANGE
+UID: NS:ksmedia.KSAUDIO_DYNAMIC_RANGE
 title: KSAUDIO_DYNAMIC_RANGE
 author: windows-driver-content
 description: The KSAUDIO_DYNAMIC_RANGE structure specifies the dynamic range of an audio stream. This structure is used to get or set the data value for the KSPROPERTY_AUDIO_DYNAMIC_RANGE property.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 4bf5c95f-dc08-4d1e-8e52-6d0de19df4c0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSAUDIO_DYNAMIC_RANGE, *PKSAUDIO_DYNAMIC_RANGE, KSAUDIO_DYNAMIC_RANGE, PKSAUDIO_DYNAMIC_RANGE
+ms.keywords: KSAUDIO_DYNAMIC_RANGE, KSAUDIO_DYNAMIC_RANGE, *PKSAUDIO_DYNAMIC_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSAUDIO_DYNAMIC_RANGE, *PKSAUDIO_DYNAMIC_RANGE
 ---
 
 # KSAUDIO_DYNAMIC_RANGE structure

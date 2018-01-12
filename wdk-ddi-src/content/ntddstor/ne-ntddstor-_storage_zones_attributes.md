@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddstor._STORAGE_ZONES_ATTRIBUTES
+UID: NE:ntddstor._STORAGE_ZONES_ATTRIBUTES
 title: _STORAGE_ZONES_ATTRIBUTES
 author: windows-driver-content
 description: Note  This structure is for internal use only and should not be called from your code. .
@@ -7,8 +7,8 @@ old-location: storage\storage_zones_attributes.htm
 old-project: storage
 ms.assetid: 6C86A931-C87C-4273-9409-A45A3FDB8B4C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_ZONES_ATTRIBUTES, PSTORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES, *PSTORAGE_ZONES_ATTRIBUTES
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_ZONES_ATTRIBUTES, *PSTORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTORAGE_ZONES_ATTRIBUTES, STORAGE_ZONES_ATTRIBUTES
 ---
 
 # _STORAGE_ZONES_ATTRIBUTES enumeration

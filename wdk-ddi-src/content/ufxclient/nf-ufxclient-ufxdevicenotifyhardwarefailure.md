@@ -1,13 +1,13 @@
 ---
-UID: NF.ufxclient.UfxDeviceNotifyHardwareFailure
+UID: NF:ufxclient.UfxDeviceNotifyHardwareFailure
 title: UfxDeviceNotifyHardwareFailure function
 author: windows-driver-content
 description: Notifies UFX about a non-recoverable hardware failure in the controller.
 old-location: buses\ufxdevicenotifyhardwarefailure.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 2EEA262C-5186-4450-A01D-212278ED710B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UfxDeviceNotifyHardwareFailure
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -57,12 +58,12 @@ VOID UfxDeviceNotifyHardwareFailure(
 
 ### -param UfxDevice [in]
 
-A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
+A handle to a UFX device object that the driver created by calling <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.
 
 
 ### -param HardwareFailureContext [in, optional]
 
-Optional pointer to a client driver-defined <a href="buses.ufx_hardware_failure_context">UFX_HARDWARE_FAILURE_CONTEXT</a> structure containing controller-specific information about the hardware failure.  
+Optional pointer to a client driver-defined <a href="..\ufxbase\ns-ufxbase-_ufx_hardware_failure_context.md">UFX_HARDWARE_FAILURE_CONTEXT</a> structure containing controller-specific information about the hardware failure.  
 
 
 ## -returns

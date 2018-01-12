@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbChannelPause
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelPause
 title: VmbChannelPause function
 author: windows-driver-content
 description: The VmbChannelPause function moves a channel into the paused state, which prevents new I/O.
 old-location: netvista\vmbchannelpause.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 434CA5F7-24D4-40E7-AE77-C0732D3FBBFF
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbChannelPause
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Vmbkmcl.lib
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

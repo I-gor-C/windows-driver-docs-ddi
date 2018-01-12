@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamindr_lh.IWiaDrvItem.DumpItemData
+UID: NF:wiamindr_lh.IWiaDrvItem.DumpItemData
 title: IWiaDrvItem::DumpItemData method
 author: windows-driver-content
 description: The IWiaDrvItem::DumpItemData method dumps private data associated with an IWiaDrvItem item into an allocated private buffer.
 old-location: image\iwiadrvitem_dumpitemdata.htm
-old-project: Image
+old-project: image
 ms.assetid: e17da654-60a7-4942-99f9-f55df87a1ca3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaDrvItem, IWiaDrvItem::DumpItemData, DumpItemData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSCANWINDOW, SCANWINDOW
 req.product: Windows 10 or later.
 ---
 

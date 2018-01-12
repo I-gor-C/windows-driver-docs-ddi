@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR
+UID: NS:ntddstor._STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR
 title: _STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR
 author: windows-driver-content
 description: The output buffer for the StorageDeviceIoCapabilityProperty as defined in STORAGE_PROPERTY_ID.
@@ -7,8 +7,8 @@ old-location: storage\storage_device_io_capability_descriptor.htm
 old-project: storage
 ms.assetid: 98377F8F-62C8-4E8F-838B-A63DC63E4A0C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, PSTORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, PSTORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR, PSTORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR
 ---
 
 # _STORAGE_DEVICE_IO_CAPABILITY_DESCRIPTOR structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The output buffer for the StorageDeviceIoCapabilityProperty as defined in <a href="storage.storage_property_id">STORAGE_PROPERTY_ID</a>.
+The output buffer for the StorageDeviceIoCapabilityProperty as defined in <a href="https://msdn.microsoft.com/library/windows/hardware/ff566996">STORAGE_PROPERTY_ID</a>.
 
 
 

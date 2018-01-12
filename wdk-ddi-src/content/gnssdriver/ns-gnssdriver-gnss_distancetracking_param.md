@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_DISTANCETRACKING_PARAM
+UID: NS:gnssdriver.GNSS_DISTANCETRACKING_PARAM
 title: GNSS_DISTANCETRACKING_PARAM
 author: windows-driver-content
 description: This structure defines the parameters for a distance-based tracking fix session.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: B37B3C59-225C-40BC-BCA4-9ABF2500AFC0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_DISTANCETRACKING_PARAM, PGNSS_DISTANCETRACKING_PARAM, *PGNSS_DISTANCETRACKING_PARAM, GNSS_DISTANCETRACKING_PARAM
+ms.keywords: GNSS_DISTANCETRACKING_PARAM, *PGNSS_DISTANCETRACKING_PARAM, GNSS_DISTANCETRACKING_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_DISTANCETRACKING_PARAM, GNSS_DISTANCETRACKING_PARAM
 ---
 
 # GNSS_DISTANCETRACKING_PARAM structure

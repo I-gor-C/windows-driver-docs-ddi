@@ -1,5 +1,5 @@
 ---
-UID: NS.WDFREQUEST._WDF_REQUEST_PARAMETERS
+UID: NS:wdfrequest._WDF_REQUEST_PARAMETERS
 title: _WDF_REQUEST_PARAMETERS
 author: windows-driver-content
 description: The WDF_REQUEST_PARAMETERS structure receives parameters that are associated with an I/O request.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_request_parameters.htm
 old-project: wdf
 ms.assetid: 012e34c0-3cc6-49dc-94ad-d359d857720f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_REQUEST_PARAMETERS, WDF_REQUEST_PARAMETERS, *PWDF_REQUEST_PARAMETERS, PWDF_REQUEST_PARAMETERS
+ms.date: 12/29/2017
+ms.keywords: _WDF_REQUEST_PARAMETERS, WDF_REQUEST_PARAMETERS, *PWDF_REQUEST_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_REQUEST_PARAMETERS, *PWDF_REQUEST_PARAMETERS
 req.product: Windows 10 or later.
 ---
 
@@ -101,12 +102,12 @@ The IRP minor function code, if any, that is associated with the I/O request. So
 
 ### -field Type
 
-A <a href="wdf.wdf_request_type">WDF_REQUEST_TYPE</a>-typed value that identifies the I/O request's type. 
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>-typed value that identifies the I/O request's type. 
 
 
 ### -field Parameters
 
-Parameters that are unique for each IRP major function code. This member contains a subset of the Parameters member of the <a href="kernel.io_stack_location">IO_STACK_LOCATION</a> structure. 
+Parameters that are unique for each IRP major function code. This member contains a subset of the Parameters member of the <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure. 
 
 
 
@@ -138,7 +139,7 @@ Use of this member is defined by the driver stack.
 </dl>
 
 ## -remarks
-The <b>WDF_REQUEST_PARAMETERS</b> structure is used as input to <a href="wdf.wdfrequestgetparameters">WdfRequestGetParameters</a>. Drivers must call <a href="wdf.wdf_request_parameters_init">WDF_REQUEST_PARAMETERS_INIT</a> to initialize this structure before they call <b>WdfRequestGetParameters</b>.
+The <b>WDF_REQUEST_PARAMETERS</b> structure is used as input to <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>. Drivers must call <a href="..\wdfrequest\nf-wdfrequest-wdf_request_parameters_init.md">WDF_REQUEST_PARAMETERS_INIT</a> to initialize this structure before they call <b>WdfRequestGetParameters</b>.
 
 
 ## -requirements
@@ -179,18 +180,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfrequestgetparameters">WdfRequestGetParameters</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
 </dt>
 <dt>
-<a href="kernel.io_stack_location">IO_STACK_LOCATION</a>
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="wdf.wdf_request_parameters_init">WDF_REQUEST_PARAMETERS_INIT</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdf_request_parameters_init.md">WDF_REQUEST_PARAMETERS_INIT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_PARAMETERS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_REQUEST_PARAMETERS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

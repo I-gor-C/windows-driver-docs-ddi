@@ -1,14 +1,14 @@
 ---
-UID: NS.STI._STI_DEVICE_STATUS
+UID: NS:sti._STI_DEVICE_STATUS
 title: _STI_DEVICE_STATUS
 author: windows-driver-content
 description: The STI_DEVICE_STATUS structure is used as a parameter to the IStiDevice::GetStatus and IStiUSD::GetStatus methods.
 old-location: image\sti_device_status.htm
-old-project: Image
+old-project: image
 ms.assetid: 40104e1f-b936-430b-9e8c-28738579f4c7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _STI_DEVICE_STATUS, STI_DEVICE_STATUS, *PSTI_DEVICE_STATUS, PSTI_DEVICE_STATUS
+ms.date: 1/10/2018
+ms.keywords: _STI_DEVICE_STATUS, *PSTI_DEVICE_STATUS, STI_DEVICE_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTI_DEVICE_STATUS, STI_DEVICE_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The STI_DEVICE_STATUS structure is used as a parameter to the <a href="image.istidevice_getstatus">IStiDevice::GetStatus</a> and <a href="image.istiusd_getstatus">IStiUSD::GetStatus</a> methods.
+The STI_DEVICE_STATUS structure is used as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543752">IStiDevice::GetStatus</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543823">IStiUSD::GetStatus</a> methods.
 
 
 

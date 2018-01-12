@@ -1,13 +1,13 @@
 ---
-UID: NF.usbdlib.USBD_ParseConfigurationDescriptor
+UID: NF:usbdlib.USBD_ParseConfigurationDescriptor
 title: USBD_ParseConfigurationDescriptor function
 author: windows-driver-content
 description: The USBD_ParseConfigurationDescriptor routine has been deprecated. Use USBD_ParseConfigurationDescriptorEx instead.
 old-location: buses\usbd_parseconfigurationdescriptor.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: a82816d8-2516-4bba-a5aa-0154cd079d5b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: USBD_ParseConfigurationDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Usbd.lib
 req.dll: 
 req.irql: 
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The  <b>USBD_ParseConfigurationDescriptor</b> routine has been deprecated. Use <a href="buses.usbd_parseconfigurationdescriptorex">USBD_ParseConfigurationDescriptorEx</a> instead.
+The  <b>USBD_ParseConfigurationDescriptor</b> routine has been deprecated. Use <a href="..\usbdlib\nf-usbdlib-usbd_parseconfigurationdescriptorex.md">USBD_ParseConfigurationDescriptorEx</a> instead.
 
 
 
@@ -97,7 +98,7 @@ Version
 
 </th>
 <td width="70%">
-Deprecated. Use <a href="buses.usbd_parseconfigurationdescriptorex">USBD_ParseConfigurationDescriptorEx</a> instead.
+Deprecated. Use <a href="..\usbdlib\nf-usbdlib-usbd_parseconfigurationdescriptorex.md">USBD_ParseConfigurationDescriptorEx</a> instead.
 
 </td>
 </tr>
@@ -128,7 +129,7 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbd_parseconfigurationdescriptorex">USBD_ParseConfigurationDescriptorEx</a>
+<a href="..\usbdlib\nf-usbdlib-usbd_parseconfigurationdescriptorex.md">USBD_ParseConfigurationDescriptorEx</a>
 </dt>
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 </dl>
@@ -136,5 +137,5 @@ Library
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20USBD_ParseConfigurationDescriptor routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USBD_ParseConfigurationDescriptor routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

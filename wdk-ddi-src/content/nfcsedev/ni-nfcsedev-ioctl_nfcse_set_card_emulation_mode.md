@@ -1,5 +1,5 @@
 ---
-UID: NI.nfcsedev.IOCTL_NFCSE_SET_CARD_EMULATION_MODE
+UID: NI:nfcsedev.IOCTL_NFCSE_SET_CARD_EMULATION_MODE
 title: IOCTL_NFCSE_SET_CARD_EMULATION_MODE
 author: windows-driver-content
 description: The IOCTL_NFCSE_SET_CARD_EMULATION_MODE control code sets whether the specified secure element is exposed in card emulation mode.
@@ -7,8 +7,8 @@ old-location: nfpdrivers\ioctl_nfcse_set_card_emulation_mode.htm
 old-project: nfpdrivers
 ms.assetid: B7E55FDE-573C-4F45-869C-A3EE253BD777
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, PSECURE_ELEMENT_TYPE
+ms.date: 12/18/2017
+ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # IOCTL_NFCSE_SET_CARD_EMULATION_MODE IOCTL
@@ -47,7 +48,7 @@ The <b>IOCTL_NFCSE_SET_CARD_EMULATION_MODE</b>
 
 ### -input-buffer
 
-<a href="nfpdrivers.secure_element_set_card_emulation_mode_info"> SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO</a> structure.
+<a href="..\nfcsedev\ns-nfcsedev-_secure_element_set_card_emulation_mode_info.md"> SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO</a> structure.
 
 
 ### -input-buffer-length

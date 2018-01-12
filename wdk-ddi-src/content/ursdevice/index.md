@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:ursdevice
 ---
 
 # Ursdevice.h header
 
 ## -description
 
-This header is used by UsbRef. For more information, see
-- [UsbRef](../_UsbRef/index.md)
+This header is used by Universal Serial Bus(USB). For more information, see
+- [Universal Serial Bus(USB)](../_usbref/index.md)
 
 Ursdevice.h contain these programming interfaces:
 
@@ -23,12 +23,6 @@ Ursdevice.h contain these programming interfaces:
 | [UrsReportHardwareEvent function](nf-ursdevice-ursreporthardwareevent.md) | Notifies the USB dual-role class extension about a new hardware event. |
 | [UrsSetHardwareEventSupport function](nf-ursdevice-urssethardwareeventsupport.md) | Indicates the client driver's support for reporting new hardware events. |
 | [UrsSetPoHandle function](nf-ursdevice-urssetpohandle.md) | Registers and deletes the client driver's registration with the power management framework (PoFx). |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_URS_SET_ROLE callback](nc-ursdevice-evt_urs_set_role.md) | The URS class extension invokes this event callback when it requires the client driver to change the role of the controller. |
 
 ## Structures
 

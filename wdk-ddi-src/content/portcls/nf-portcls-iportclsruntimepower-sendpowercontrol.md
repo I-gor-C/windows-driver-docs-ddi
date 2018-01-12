@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsRuntimePower.SendPowerControl
+UID: NF:portcls.IPortClsRuntimePower.SendPowerControl
 title: IPortClsRuntimePower::SendPowerControl method
 author: windows-driver-content
 description: The port class driver (PortCls) uses the SendPowerControl method to send power control codes to the audio adapter.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsRuntimePower::SendPowerControl method

@@ -1,13 +1,13 @@
 ---
-UID: NS.NDIS._NET_BUFFER_LIST
+UID: NS:ndis._NET_BUFFER_LIST
 title: _NET_BUFFER_LIST
 author: windows-driver-content
 description: The NET_BUFFER_LIST structure specifies a linked list of NET_BUFFER structures.
 old-location: netvista\net_buffer_list.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3b61a424-33f8-4b33-aaef-f68f0026ce27
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _NET_BUFFER_LIST, *PNET_BUFFER_LIST, NET_BUFFER_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNET_BUFFER_LIST, NET_BUFFER_LIST
 ---
 
 # _NET_BUFFER_LIST structure
@@ -39,7 +40,7 @@ req.irql: See Remarks section
 
 ## -description
 The NET_BUFFER_LIST structure specifies a linked list of 
-  <a href="netvista.net_buffer">NET_BUFFER</a> structures.
+  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures.
 
 
 
@@ -70,14 +71,14 @@ typedef struct _NET_BUFFER_LIST {
 ### -field NetBufferListHeader
 
 A 
-     <a href="netvista.net_buffer_list_header">
+     <a href="..\ndis\ns-ndis-_net_buffer_list_header.md">
      NET_BUFFER_LIST_HEADER</a> structure.
 
 
 ### -field Context
 
 A pointer to a 
-      <a href="netvista.net_buffer_list_context">NET_BUFFER_LIST_CONTEXT</a> structure.
+      <a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a> structure.
       Protocol and miniport drivers use this structure to store information about the NET_BUFFER_LIST
       structure. Information stored in the NET_BUFFER_LIST_CONTEXT structure is opaque to NDIS and other
       drivers in the stack.
@@ -87,14 +88,14 @@ Use the following functions and macros to access data in the NET_BUFFER_LIST_CON
 <dl>
 <dd>
 
-<a href="netvista.ndisallocatenetbufferlistcontext">
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistcontext.md">
          NdisAllocateNetBufferListContext</a>
 
 
 </dd>
 <dd>
 
-<a href="netvista.ndisfreenetbufferlistcontext">
+<a href="..\ndis\nf-ndis-ndisfreenetbufferlistcontext.md">
          NdisFreeNetBufferListContext</a>
 
 
@@ -120,7 +121,7 @@ Use the following functions and macros to access data in the NET_BUFFER_LIST_CON
 If this NET_BUFFER_LIST structure is a clone of another NET_BUFFER_LIST structure, this member
      specifies a pointer to the parent NET_BUFFER_LIST structure. Otherwise, this parameter is <b>NULL</b>. A driver
      uses the 
-     <a href="netvista.ndisallocateclonenetbufferlist">
+     <a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
      NdisAllocateCloneNetBufferList</a> function to create a clone.
 
 
@@ -307,7 +308,7 @@ Attributes of the NET_BUFFER_LIST structure. The following definitions specify a
 
 This set is reserved for protocol drivers.
 
-<div class="alert"><b>Note</b>  Starting with NDIS 6.30, two additional bits are available for protocol use: 0x00000003.  A NDIS 6.30 protocol may use these bits if and only if <a href="netvista.ndisgetversion">NdisGetVersion</a> returns a value greater than or equal to <b>NDIS_RUNTIME_VERSION_630</b>.  Protocols must not use these bits on earlier versions of NDIS, because prior to 6.30, NDIS uses them internally.</div>
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, two additional bits are available for protocol use: 0x00000003.  A NDIS 6.30 protocol may use these bits if and only if <a href="..\ndis\nf-ndis-ndisgetversion.md">NdisGetVersion</a> returns a value greater than or equal to <b>NDIS_RUNTIME_VERSION_630</b>.  Protocols must not use these bits on earlier versions of NDIS, because prior to 6.30, NDIS uses them internally.</div>
 <div> </div>
 
 ### -field NBL_FLAGS_MINIPORT_RESERVED
@@ -333,7 +334,7 @@ This set is reserved for NDIS.
 
 The final completion status of a network data operation on this NET_BUFFER_LIST structure.
      Miniport drivers write this value before calling the 
-     <a href="netvista.ndismsendnetbufferlistscomplete">
+     <a href="..\ndis\nf-ndis-ndismsendnetbufferlistscomplete.md">
      NdisMSendNetBufferListsComplete</a> function. Miniport drivers specify one of the following values:
      
 
@@ -389,7 +390,7 @@ An array of values containing information that is common to all NET_BUFFER struc
      This information is often referred to as "out-of-band (OOB) data."
 
 Use the 
-     <a href="netvista.ndis_net_buffer_list_info">
+     <a href="..\ndis\ne-ndis-_ndis_net_buffer_list_info.md">
      NDIS_NET_BUFFER_LIST_INFO</a> enumeration values with the 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a> macro to set and
      get values in the 
@@ -401,26 +402,26 @@ NDIS drivers can call any of the following functions to allocate and initialize 
     structure:
 
 
-<a href="netvista.ndisallocatenetbufferlist">NdisAllocateNetBufferList</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
 
 
 
-<a href="netvista.ndisallocatenetbufferandnetbufferlist">
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
        NdisAllocateNetBufferAndNetBufferList</a>
 
 
 
-<a href="netvista.ndisallocateclonenetbufferlist">
+<a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
        NdisAllocateCloneNetBufferList</a>
 
 
 
-<a href="netvista.ndisallocatefragmentnetbufferlist">
+<a href="..\ndis\nf-ndis-ndisallocatefragmentnetbufferlist.md">
        NdisAllocateFragmentNetBufferList</a>
 
 
 
-<a href="netvista.ndisallocatereassemblednetbufferlist">
+<a href="..\ndis\nf-ndis-ndisallocatereassemblednetbufferlist.md">
        NdisAllocateReassembledNetBufferList</a>
 
 
@@ -430,14 +431,14 @@ All NET_BUFFER structures associated with a NET_BUFFER_LIST structure have the a
     <b>Context</b> members.
 
 When a driver calls the 
-    <a href="netvista.ndissendnetbufferlists">NdisSendNetBufferLists</a> or 
-    <a href="netvista.ndisfsendnetbufferlists">NdisFSendNetBufferLists</a> function,
+    <a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">NdisSendNetBufferLists</a> or 
+    <a href="..\ndis\nf-ndis-ndisfsendnetbufferlists.md">NdisFSendNetBufferLists</a> function,
     it loses ownership of:
 
 The specified NET_BUFFER_LIST structure.
 
 The attached 
-      <a href="netvista.net_buffer">NET_BUFFER</a> structures and MDLs.
+      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures and MDLs.
 
 Any attached NDIS_REQUEST_CONTROLs.
 
@@ -497,12 +498,12 @@ To access members of the NET_BUFFER_LIST structure, use the following macros and
 
 
 
-<a href="netvista.ndisgetpoolfromnetbufferlist">
+<a href="..\ndis\nf-ndis-ndisgetpoolfromnetbufferlist.md">
        NdisGetPoolFromNetBufferList</a>
 
 
 For more information on how to use net buffers, see 
-    <a href="netvista.net_buffer_architecture">NET_BUFFER Architecture</a>.
+    <a href="https://msdn.microsoft.com/97cddcd1-7242-4cc5-9af9-fe82a2ef995f">NET_BUFFER Architecture</a>.
 
 
 ## -requirements
@@ -533,48 +534,48 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_net_buffer_list_info">NDIS_NET_BUFFER_LIST_INFO</a>
+<a href="..\ndis\ne-ndis-_ndis_net_buffer_list_info.md">NDIS_NET_BUFFER_LIST_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocateclonenetbufferlist">
+<a href="..\ndis\nf-ndis-ndisallocateclonenetbufferlist.md">
    NdisAllocateCloneNetBufferList</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatefragmentnetbufferlist">
+<a href="..\ndis\nf-ndis-ndisallocatefragmentnetbufferlist.md">
    NdisAllocateFragmentNetBufferList</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatenetbufferlist">NdisAllocateNetBufferList</a>
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlist.md">NdisAllocateNetBufferList</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatenetbufferandnetbufferlist">
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferandnetbufferlist.md">
    NdisAllocateNetBufferAndNetBufferList</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatereassemblednetbufferlist">
+<a href="..\ndis\nf-ndis-ndisallocatereassemblednetbufferlist.md">
    NdisAllocateReassembledNetBufferList</a>
 </dt>
 <dt>
-<a href="netvista.ndiscancelsendnetbufferlists">NdisCancelSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndiscancelsendnetbufferlists.md">NdisCancelSendNetBufferLists</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561630">NdisClearNblFlag</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreenetbufferlistcontext">NdisFreeNetBufferListContext</a>
+<a href="..\ndis\nf-ndis-ndisfreenetbufferlistcontext.md">NdisFreeNetBufferListContext</a>
 </dt>
 <dt>
-<a href="netvista.ndisgeneratepartialcancelid">NdisGeneratePartialCancelId</a>
+<a href="..\ndis\nf-ndis-ndisgeneratepartialcancelid.md">NdisGeneratePartialCancelId</a>
 </dt>
 <dt>
-<a href="netvista.ndisgetpoolfromnetbufferlist">NdisGetPoolFromNetBufferList</a>
+<a href="..\ndis\nf-ndis-ndisgetpoolfromnetbufferlist.md">NdisGetPoolFromNetBufferList</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatenetbufferlistcontext">
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistcontext.md">
    NdisAllocateNetBufferListContext</a>
 </dt>
 <dt>
-<a href="netvista.ndissendnetbufferlists">NdisSendNetBufferLists</a>
+<a href="..\ndis\nf-ndis-ndissendnetbufferlists.md">NdisSendNetBufferLists</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564542">NdisSetNblFlag</a>
@@ -586,10 +587,10 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564626">NdisTestNblFlags</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list_context">NET_BUFFER_LIST_CONTEXT</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 <dt>
 <a href="netvista.net_buffer_list_context_data_size">
@@ -606,7 +607,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568395">NET_BUFFER_LIST_FLAGS</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list_header">NET_BUFFER_LIST_HEADER</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list_header.md">NET_BUFFER_LIST_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
@@ -630,5 +631,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NET_BUFFER_LIST structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_BUFFER_LIST structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

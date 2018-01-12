@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbChannelPacketFail
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelPacketFail
 title: VmbChannelPacketFail function
 author: windows-driver-content
 description: The VmbChannelPacketFail function fails a packet during packet processing due to an unrecoverable error. This function stops the queue.
 old-location: netvista\vmbchannelpacketfail.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 177B4509-A0EC-4F71-AF21-916A7A5F06DB
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbChannelPacketFail
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Vmbkmcl.lib
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

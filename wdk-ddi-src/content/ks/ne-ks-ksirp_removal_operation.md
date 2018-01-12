@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSIRP_REMOVAL_OPERATION
+UID: NE:ks.KSIRP_REMOVAL_OPERATION
 title: KSIRP_REMOVAL_OPERATION
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksirp_removal_operation.htm
 old-project: stream
 ms.assetid: 10AC7347-6C6B-4A37-9298-B773ADCB3FDA
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSIRP_REMOVAL_OPERATION, KSIRP_REMOVAL_OPERATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSIRP_REMOVAL_OPERATION
 ---
 
 # KSIRP_REMOVAL_OPERATION enumeration

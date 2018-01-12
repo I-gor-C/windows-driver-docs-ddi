@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_FREE_BANDWIDTH
+UID: NS:1394._IRB_REQ_ISOCH_FREE_BANDWIDTH
 title: _IRB_REQ_ISOCH_FREE_BANDWIDTH
 author: windows-driver-content
 description: This structure contains the fields necessary in order for the Bus driver to carry out an IsochFreeBandwidth request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_FREE_BANDWIDTH
 ---
 
 # _IRB_REQ_ISOCH_FREE_BANDWIDTH structure

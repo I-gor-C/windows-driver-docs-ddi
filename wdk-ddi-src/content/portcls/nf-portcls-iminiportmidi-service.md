@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportMidi.Service
+UID: NF:portcls.IMiniportMidi.Service
 title: IMiniportMidi::Service method
 author: windows-driver-content
 description: The Service method notifies the miniport driver of a request for service.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportMidi::Service method
@@ -61,9 +62,9 @@ None
 
 
 ## -remarks
-When the port driver calls the miniport driver's <a href="audio.iminiportmidi_init">IMiniportMidi::Init</a> method, that method outputs a reference to the miniport driver's <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> object. The port driver adds its own <a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a> object to this service group and then waits to receive notification of a service request. The source of the notification is typically the miniport driver's interrupt service routine (ISR).
+When the port driver calls the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536709">IMiniportMidi::Init</a> method, that method outputs a reference to the miniport driver's <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> object. The port driver adds its own <a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a> object to this service group and then waits to receive notification of a service request. The source of the notification is typically the miniport driver's interrupt service routine (ISR).
 
-When the miniport driver's ISR calls the port driver's <a href="audio.iportmidi_notify">IPortMidi::Notify</a> routine, the port driver queues a deferred procedure call (DPC). When the DPC executes, it calls the <b>RequestService</b> method on each of the <b>IServiceSink</b> objects in the service group. When the DPC calls this method on the port driver's <b>IServiceSink</b> object, the port driver in turn calls the miniport driver's <code>Service</code> method. 
+When the miniport driver's ISR calls the port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a> routine, the port driver queues a deferred procedure call (DPC). When the DPC executes, it calls the <b>RequestService</b> method on each of the <b>IServiceSink</b> objects in the service group. When the DPC calls this method on the port driver's <b>IServiceSink</b> object, the port driver in turn calls the miniport driver's <code>Service</code> method. 
 
 
 ## -requirements
@@ -108,7 +109,7 @@ DISPATCH_LEVEL
 <a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
 </dt>
 <dt>
-<a href="audio.iminiportmidi_init">IMiniportMidi::Init</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536709">IMiniportMidi::Init</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
@@ -117,7 +118,7 @@ DISPATCH_LEVEL
 <a href="..\portcls\nn-portcls-iservicesink.md">IServiceSink</a>
 </dt>
 <dt>
-<a href="audio.iportmidi_notify">IPortMidi::Notify</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a>
 </dt>
 </dl>
  

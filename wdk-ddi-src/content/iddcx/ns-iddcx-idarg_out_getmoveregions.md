@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDARG_OUT_GETMOVEREGIONS
+UID: NS:iddcx.IDARG_OUT_GETMOVEREGIONS
 title: IDARG_OUT_GETMOVEREGIONS
 author: windows-driver-content
 description: Gives information about move regions that were handled by the OS.
@@ -7,7 +7,7 @@ old-location: display\idarg_out_getmoveregions.htm
 old-project: display
 ms.assetid: b95b2da7-8078-4e71-91db-a1b399bc44a2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDARG_OUT_GETMOVEREGIONS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDARG_OUT_GETMOVEREGIONS structure

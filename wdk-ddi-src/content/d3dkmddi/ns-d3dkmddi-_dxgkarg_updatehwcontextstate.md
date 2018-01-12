@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_UPDATEHWCONTEXTSTATE
+UID: NS:d3dkmddi._DXGKARG_UPDATEHWCONTEXTSTATE
 title: _DXGKARG_UPDATEHWCONTEXTSTATE
 author: windows-driver-content
 description: Used to update the context state.
@@ -7,7 +7,7 @@ old-location: display\dxgkarg_updatehwcontextstate.htm
 old-project: display
 ms.assetid: 39BF7EBF-DD13-41F0-9F54-78E5D82CAB4F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGKARG_UPDATEHWCONTEXTSTATE, DXGKARG_UPDATEHWCONTEXTSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_UPDATEHWCONTEXTSTATE
 ---
 
 # _DXGKARG_UPDATEHWCONTEXTSTATE structure

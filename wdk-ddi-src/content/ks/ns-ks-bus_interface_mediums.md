@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.BUS_INTERFACE_MEDIUMS
+UID: NS:ks.BUS_INTERFACE_MEDIUMS
 title: BUS_INTERFACE_MEDIUMS
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bus_interface_mediums.htm
 old-project: stream
 ms.assetid: 0A2D1D8F-8C82-4335-9FBF-4515A8DC20C1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: BUS_INTERFACE_MEDIUMS, *PBUS_INTERFACE_MEDIUMS, PBUS_INTERFACE_MEDIUMS, BUS_INTERFACE_MEDIUMS
+ms.date: 1/9/2018
+ms.keywords: BUS_INTERFACE_MEDIUMS, *PBUS_INTERFACE_MEDIUMS, BUS_INTERFACE_MEDIUMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBUS_INTERFACE_MEDIUMS, BUS_INTERFACE_MEDIUMS
 ---
 
 # BUS_INTERFACE_MEDIUMS structure

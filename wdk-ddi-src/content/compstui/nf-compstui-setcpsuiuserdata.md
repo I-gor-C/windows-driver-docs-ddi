@@ -1,5 +1,5 @@
 ---
-UID: NF.compstui.SetCPSUIUserData
+UID: NF:compstui.SetCPSUIUserData
 title: SetCPSUIUserData function
 author: windows-driver-content
 description: CPSUI's SetCPSUIUserData function allows CPSUI applications (including printer interface DLLs) to associate nondisplayed data with a property sheet dialog box.
@@ -7,7 +7,7 @@ old-location: print\setcpsuiuserdata.htm
 old-project: print
 ms.assetid: 35119100-adf9-4376-bb1a-7317733fbcc5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: SetCPSUIUserData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Compstui.lib
 req.dll: Compstui.dll
 req.irql: 
+req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ---
 
 # SetCPSUIUserData function
@@ -69,9 +70,9 @@ The  function returns <b>TRUE</b> if it is successful in associating the nondisp
 
 
 ## -remarks
-The <code>SetCPSUIUserData</code> function should be called only from within a dialog box procedure that has been associated with a dialog box by using a <a href="print.dlgpage">DLGPAGE</a> or an <a href="print.extpush">EXTPUSH</a> structure.
+The <code>SetCPSUIUserData</code> function should be called only from within a dialog box procedure that has been associated with a dialog box by using a <a href="..\compstui\ns-compstui-_dlgpage.md">DLGPAGE</a> or an <a href="..\compstui\ns-compstui-_extpush.md">EXTPUSH</a> structure.
 
-A value that is stored by calling <code>SetCPSUIUserData</code> can be later retrieved by calling <a href="print.getcpsuiuserdata">GetCPSUIUserData</a>.
+A value that is stored by calling <code>SetCPSUIUserData</code> can be later retrieved by calling <a href="..\compstui\nf-compstui-getcpsuiuserdata.md">GetCPSUIUserData</a>.
 
 The handle specified for <i>hDlg</i> must be the handle received as input to the dialog box procedure. (Dialog box procedures are described in the Microsoft Windows SDK documentation.)
 

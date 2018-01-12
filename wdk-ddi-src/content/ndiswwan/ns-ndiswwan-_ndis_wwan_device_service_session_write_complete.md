@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISWWAN._NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
+UID: NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
 title: _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
 author: windows-driver-content
 description: The NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure represents the status of a device service session write operation.
 old-location: netvista\ndis_wwan_device_service_session_write_complete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 16A48882-BEA6-4F95-8E9F-572BFD102031
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
+ms.date: 1/8/2018
+ms.keywords: _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE structure
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE_COMPLETE)
  
 
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field uStatus

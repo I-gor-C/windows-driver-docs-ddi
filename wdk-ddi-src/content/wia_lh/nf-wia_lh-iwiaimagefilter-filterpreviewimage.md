@@ -1,13 +1,13 @@
 ---
-UID: NF.wia_lh.IWiaImageFilter.FilterPreviewImage
+UID: NF:wia_lh.IWiaImageFilter.FilterPreviewImage
 title: IWiaImageFilter::FilterPreviewImage method
 author: windows-driver-content
 description: The IWiaImageFilter::FilterPreviewImage method is called by the WIA Preview component, when an application calls the IWiaPreview::UpdatePreview method.
 old-location: image\iwiaimagefilter_filterpreviewimage.htm
-old-project: Image
+old-project: image
 ms.assetid: 92e4ea13-156b-4d5e-8268-ddb45f6d7b50
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaImageFilter, IWiaImageFilter::FilterPreviewImage, FilterPreviewImage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBMP_IMAGE_INFO, BMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ HRESULT  FilterPreviewImage(
 
 ### -param pWiaChildItem2 [in]
 
-Pointer to the item that the image process is to process. This item must be a child item of the item specified in the pWiaItem2 parameter, which was passed into the <a href="image.iwiaimagefilter_initializefilter">IWiaImageFilter::InitializeFilter</a> method. 
+Pointer to the item that the image process is to process. This item must be a child item of the item specified in the pWiaItem2 parameter, which was passed into the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543916">IWiaImageFilter::InitializeFilter</a> method. 
 
 
 

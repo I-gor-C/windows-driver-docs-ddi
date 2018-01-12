@@ -1,5 +1,5 @@
 ---
-UID: NF.wdffileobject.WdfFileObjectGetDevice
+UID: NF:wdffileobject.WdfFileObjectGetDevice
 title: WdfFileObjectGetDevice function
 author: windows-driver-content
 description: The WdfFileObjectGetDevice method returns the framework device object that is associated with a specified framework file object.
@@ -7,7 +7,7 @@ old-location: wdf\wdffileobjectgetdevice.htm
 old-project: wdf
 ms.assetid: 10bb8bbd-0347-4ceb-844e-87f049813684
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfFileObjectGetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 
@@ -70,7 +71,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 ## -remarks
-For more information about framework file objects, see <a href="wdf.framework_file_objects">Framework File Objects</a>.
+For more information about framework file objects, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8">Framework File Objects</a>.
 
 The following code example shows how an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_close.md">EvtFileClose</a> callback function can obtain the framework device object that is associated with a specified framework file object.
 
@@ -147,7 +148,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>

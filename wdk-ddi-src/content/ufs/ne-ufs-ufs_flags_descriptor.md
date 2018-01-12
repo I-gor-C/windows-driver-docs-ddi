@@ -1,5 +1,5 @@
 ---
-UID: NE.ufs.UFS_FLAGS_DESCRIPTOR
+UID: NE:ufs.UFS_FLAGS_DESCRIPTOR
 title: UFS_FLAGS_DESCRIPTOR
 author: windows-driver-content
 description: UFS_FLAGS_DESCRIPTOR describes the different types of flags used by Universal Flash Storage (UFS) descriptors.
@@ -7,7 +7,7 @@ old-location: storage\ufs_flags_descriptor.htm
 old-project: storage
 ms.assetid: D530355F-5824-4F7C-84C4-57D3D03A7116
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: UFS_FLAGS_DESCRIPTOR, UFS_FLAGS_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UFS_FLAGS_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 

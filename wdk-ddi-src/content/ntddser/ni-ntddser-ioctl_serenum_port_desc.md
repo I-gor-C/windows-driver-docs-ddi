@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERENUM_PORT_DESC
+UID: NI:ntddser.IOCTL_SERENUM_PORT_DESC
 title: IOCTL_SERENUM_PORT_DESC
 author: windows-driver-content
 description: The IOCTL_SERENUM_PORT_DESC request returns a description of the RS-232 port associated with a filter DO.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERENUM_PORT_DESC IOCTL

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ExInterlockedAddLargeInteger
+UID: NF:wdm.ExInterlockedAddLargeInteger
 title: ExInterlockedAddLargeInteger function
 author: windows-driver-content
 description: The ExInterlockedAddLargeInteger routine adds a large integer value to the specified variable as an atomic operation.
@@ -7,7 +7,7 @@ old-location: kernel\exinterlockedaddlargeinteger.htm
 old-project: kernel
 ms.assetid: ace8405b-74a7-4797-8d3d-3caf673dace2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ExInterlockedAddLargeInteger
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -158,21 +159,21 @@ Any level (see Remarks section)
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exinterlockedaddulong">ExInterlockedAddUlong</a>
+<a href="..\wdm\nf-wdm-exinterlockedaddulong.md">ExInterlockedAddUlong</a>
 </dt>
 <dt>
-<a href="kernel.interlockedincrement">InterlockedIncrement</a>
+<a href="..\wdm\nf-wdm-interlockedincrement.md">InterlockedIncrement</a>
 </dt>
 <dt>
-<a href="kernel.interlockeddecrement">InterlockedDecrement</a>
+<a href="..\wdm\nf-wdm-interlockeddecrement.md">InterlockedDecrement</a>
 </dt>
 <dt>
-<a href="kernel.keinitializespinlock">KeInitializeSpinLock</a>
+<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExInterlockedAddLargeInteger routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExInterlockedAddLargeInteger routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

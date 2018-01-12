@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_TIMESTAMP
+UID: NS:ntddk._WHEA_TIMESTAMP
 title: _WHEA_TIMESTAMP
 author: windows-driver-content
 description: The WHEA_TIMESTAMP union describes the time that an error was reported to the operating system.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 70a6555d-1da9-4013-911a-4a9d011b0205
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_TIMESTAMP, WHEA_TIMESTAMP, *PWHEA_TIMESTAMP, PWHEA_TIMESTAMP
+ms.keywords: _WHEA_TIMESTAMP, WHEA_TIMESTAMP, *PWHEA_TIMESTAMP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_TIMESTAMP, *PWHEA_TIMESTAMP
 ---
 
 # _WHEA_TIMESTAMP structure
@@ -117,7 +118,7 @@ A LARGE_INTEGER representation of the contents of the WHEA_TIMESTAMP union.
 
 
 ## -remarks
-A WHEA_TIMESTAMP union is contained within the <a href="whea.whea_error_record_header">WHEA_ERROR_RECORD_HEADER</a> structure.
+A WHEA_TIMESTAMP union is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure.
 
 
 ## -requirements
@@ -149,7 +150,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_error_record_header">WHEA_ERROR_RECORD_HEADER</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
 </dt>
 </dl>
  

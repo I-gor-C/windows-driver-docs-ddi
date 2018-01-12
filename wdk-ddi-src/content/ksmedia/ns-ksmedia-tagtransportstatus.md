@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGTRANSPORTSTATUS
+UID: NS:ksmedia.tagTRANSPORTSTATUS
 title: tagTRANSPORTSTATUS
 author: windows-driver-content
 description: The TRANSPORTSTATUS structure describes the current transport status.
@@ -7,8 +7,8 @@ old-location: stream\transportstatus.htm
 old-project: stream
 ms.assetid: 2896fd39-5c33-4c79-8adb-f6862b7b4314
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagTRANSPORTSTATUS, *PTRANSPORTSTATUS, TRANSPORTSTATUS, PTRANSPORTSTATUS
+ms.date: 1/9/2018
+ms.keywords: tagTRANSPORTSTATUS, TRANSPORTSTATUS, *PTRANSPORTSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TRANSPORTSTATUS, *PTRANSPORTSTATUS
 ---
 
 # tagTRANSPORTSTATUS structure

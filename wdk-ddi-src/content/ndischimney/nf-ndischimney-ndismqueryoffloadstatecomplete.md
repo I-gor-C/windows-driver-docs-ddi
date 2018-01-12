@@ -1,13 +1,13 @@
 ---
-UID: NF.ndischimney.NdisMQueryOffloadStateComplete
+UID: NF:ndischimney.NdisMQueryOffloadStateComplete
 title: NdisMQueryOffloadStateComplete function
 author: windows-driver-content
 description: An offload target calls the NdisMQueryOffloadStateComplete function to complete a query offload operation that was initiated by a previous call to the offload target's MiniportQueryOffload function.
 old-location: netvista\ndismqueryoffloadstatecomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7bcc6610-0c48-4a7f-b8fa-be372af201ba
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMQueryOffloadStateComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # NdisMQueryOffloadStateComplete function
@@ -63,14 +64,14 @@ VOID NdisMQueryOffloadStateComplete(
 ### -param NdisMiniportHandle [in]
 
 The handle that the offload driver obtained in a previous call to 
-     <a href="netvista.ndismregisterminiportdriver">
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a>.
 
 
 ### -param OffloadBlockList [in]
 
 A pointer to an 
-     <a href="netvista.ndis_miniport_offload_block_list">
+     <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure. The offload target obtained this pointer as an input
      parameter to its 
      <a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">
@@ -141,16 +142,16 @@ Any level
 <a href="..\ndischimney\nc-ndischimney-w_query_offload_handler.md">MiniportQueryOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_offload_block_list">
+<a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMQueryOffloadStateComplete function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMQueryOffloadStateComplete function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

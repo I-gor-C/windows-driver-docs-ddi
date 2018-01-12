@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeSetSystemAffinityThreadEx
+UID: NF:wdm.KeSetSystemAffinityThreadEx
 title: KeSetSystemAffinityThreadEx function
 author: windows-driver-content
 description: The KeSetSystemAffinityThreadEx routine sets the system affinity of the current thread.
@@ -7,7 +7,7 @@ old-location: kernel\kesetsystemaffinitythreadex.htm
 old-project: kernel
 ms.assetid: db7980c1-3da6-408e-a3a4-509bc9c0ef2e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeSetSystemAffinityThreadEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL (see Remarks section).
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -82,7 +83,7 @@ At least one of the processors that is specified in the <i>Affinity</i> value is
 
 If either of these conditions is not met, the call to <b>KeSetSystemAffinityThreadEx</b> has no effect.
 
-Windows 7 and later versions of Windows support processor groups. Drivers that are designed to handle information about processor groups should use the <a href="kernel.kesetsystemgroupaffinitythread">KeSetSystemGroupAffinityThread</a> routine, which specifies a processor group, instead of <b>KeSetSystemAffinityThreadEx</b>, which does not. However, the implementation of <b>KeSetSystemAffinityThreadEx</b> in Windows 7 and later versions of Windows provides compatibility for drivers that were written for earlier versions of Windows, which do not support processor groups. In this implementation, <b>KeSetSystemAffinityThreadEx</b> assigns the thread to group 0, and uses the affinity mask to specify a set of logical processors in this group on which the thread can run. The routine returns the previous group-relative affinity mask, but not the previous group.
+Windows 7 and later versions of Windows support processor groups. Drivers that are designed to handle information about processor groups should use the <a href="..\wdm\nf-wdm-kesetsystemgroupaffinitythread.md">KeSetSystemGroupAffinityThread</a> routine, which specifies a processor group, instead of <b>KeSetSystemAffinityThreadEx</b>, which does not. However, the implementation of <b>KeSetSystemAffinityThreadEx</b> in Windows 7 and later versions of Windows provides compatibility for drivers that were written for earlier versions of Windows, which do not support processor groups. In this implementation, <b>KeSetSystemAffinityThreadEx</b> assigns the thread to group 0, and uses the affinity mask to specify a set of logical processors in this group on which the thread can run. The routine returns the previous group-relative affinity mask, but not the previous group.
 
 If <b>KeSetSystemAffinityThreadEx</b> is called at IRQL &lt;= APC_LEVEL and the call is successful, the new affinity mask takes effect immediately. When the call returns, the calling thread is already running on a processor that is specified in the new affinity mask. If <b>KeSetSystemAffinityThreadEx</b> is called at IRQL = DISPATCH_LEVEL and the call is successful, the pending processor change is deferred until the caller lowers the IRQL below DISPATCH_LEVEL.
 
@@ -161,18 +162,18 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
 </dt>
 <dt>
-<a href="kernel.kereverttouseraffinitythreadex">KeRevertToUserAffinityThreadEx</a>
+<a href="..\wdm\nf-wdm-kereverttouseraffinitythreadex.md">KeRevertToUserAffinityThreadEx</a>
 </dt>
 <dt>
-<a href="kernel.kesetsystemaffinitythread">KeSetSystemAffinityThread</a>
+<a href="..\wdm\nf-wdm-kesetsystemaffinitythread.md">KeSetSystemAffinityThread</a>
 </dt>
 <dt>
-<a href="kernel.kesetsystemgroupaffinitythread">KeSetSystemGroupAffinityThread</a>
+<a href="..\wdm\nf-wdm-kesetsystemgroupaffinitythread.md">KeSetSystemGroupAffinityThread</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetSystemAffinityThreadEx routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSetSystemAffinityThreadEx routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

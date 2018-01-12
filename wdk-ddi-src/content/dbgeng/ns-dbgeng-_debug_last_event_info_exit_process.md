@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_LAST_EVENT_INFO_EXIT_PROCESS
+UID: NS:dbgeng._DEBUG_LAST_EVENT_INFO_EXIT_PROCESS
 title: _DEBUG_LAST_EVENT_INFO_EXIT_PROCESS
 author: windows-driver-content
 description: Describes the exit process of the last event.
 old-location: debugger\debug_last_event_info_exit_process.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: B4AFCD4C-0415-4EC4-BC10-D98F3AB409C5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_LAST_EVENT_INFO_EXIT_PROCESS, DEBUG_LAST_EVENT_INFO_EXIT_PROCESS, *PDEBUG_LAST_EVENT_INFO_EXIT_PROCESS, PDEBUG_LAST_EVENT_INFO_EXIT_PROCESS
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_LAST_EVENT_INFO_EXIT_PROCESS, DEBUG_LAST_EVENT_INFO_EXIT_PROCESS, *PDEBUG_LAST_EVENT_INFO_EXIT_PROCESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DEBUG_LAST_EVENT_INFO_EXIT_PROCESS, *PDEBUG_LAST_EVENT_INFO_EXIT_PROCESS
 ---
 
 # _DEBUG_LAST_EVENT_INFO_EXIT_PROCESS structure

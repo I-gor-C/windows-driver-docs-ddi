@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.MapSecurityError
+UID: NF:ntifs.MapSecurityError
 title: MapSecurityError function
 author: windows-driver-content
 description: The MapSecurityError function maps a security interface SECURITY_STATUS status code to a corresponding NSTATUS status code.
@@ -7,7 +7,7 @@ old-location: ifsk\mapsecurityerror.htm
 old-project: ifsk
 ms.assetid: 899b7d6e-a17b-4030-9512-591b003ca6b2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: MapSecurityError
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any.
+req.typenames: TOKEN_TYPE
 ---
 
 # MapSecurityError function

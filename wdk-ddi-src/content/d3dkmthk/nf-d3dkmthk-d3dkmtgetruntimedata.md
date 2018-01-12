@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTGetRuntimeData
+UID: NF:d3dkmthk.D3DKMTGetRuntimeData
 title: D3DKMTGetRuntimeData function
 author: windows-driver-content
 description: The D3DKMTGetRuntimeData function is for system use only.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtgetruntimedata.htm
 old-project: display
 ms.assetid: a73ebde8-a1d5-4f97-8457-1f01244bb266
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTGetRuntimeData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: GDI32.lib
 req.dll: GDI32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTGetRuntimeData function

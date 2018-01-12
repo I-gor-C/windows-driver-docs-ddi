@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.CcFastCopyWrite
+UID: NF:ntifs.CcFastCopyWrite
 title: CcFastCopyWrite function
 author: windows-driver-content
 description: The CcFastCopyWrite routine performs a fast copy write from a buffer in memory to a cached file.
@@ -7,7 +7,7 @@ old-location: ifsk\ccfastcopywrite.htm
 old-project: ifsk
 ms.assetid: 414d0b36-d7c2-4a01-8ceb-3817a11c422c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: CcFastCopyWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: 
+req.typenames: TOKEN_TYPE
 ---
 
 # CcFastCopyWrite function
@@ -81,7 +82,7 @@ None
 
 
 ## -remarks
-<b>CcFastCopyWrite</b> is a faster version of <a href="ifsk.cccopywrite">CcCopyWrite</a>. It differs from <b>CcCopyWrite</b> in the following respects:
+<b>CcFastCopyWrite</b> is a faster version of <a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>. It differs from <b>CcCopyWrite</b> in the following respects:
 
 <i>FileOffset</i> is a ULONG, not a PLARGE_INTEGER.
 
@@ -93,7 +94,7 @@ If the required pages of the cached file are already resident in memory, the dat
 
 If any failure occurs, <b>CcFastCopyWrite</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcFastCopyWrite</b> raises a STATUS_INSUFFICIENT_RESOURCES exception; if an I/O error occurs, <b>CcFastCopyWrite</b> raises the status exception of the I/O error. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcFastCopyWrite</b> in a <b>try-except</b> or <b>try-finally</b> statement.
 
-To cache a file, use <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>.
+To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
 
 
 ## -requirements
@@ -147,15 +148,15 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.cccopywrite">CcCopyWrite</a>
+<a href="..\ntifs\nf-ntifs-cccopywrite.md">CcCopyWrite</a>
 </dt>
 <dt>
-<a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcFastCopyWrite routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcFastCopyWrite routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILUNSOLICITEDSSINFOPARAMMASK
+UID: NE:rilapitypes.RILUNSOLICITEDSSINFOPARAMMASK
 title: RILUNSOLICITEDSSINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilunsolicitedssinfoparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 772b2ab3-6ce6-4303-8b1e-145e4e28ee44
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILUNSOLICITEDSSINFOPARAMMASK, RILUNSOLICITEDSSINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUNSOLICITEDSSINFOPARAMMASK
 req.product: Windows 10 or later.
 ---
 

@@ -1,14 +1,14 @@
 ---
-UID: NI.usbfnioctl.IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS
+UID: NI:usbfnioctl.IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS
 title: IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS
 author: windows-driver-content
 description: The USB class driver sends this request to activate the bus so that the driver can prepare to process bus events and handle traffic.
 old-location: buses\ioctl_internal_usbfn_activate_usb_bus.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: A9CBD73D-2A51-4925-9B88-7D2ED97A59DA
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBFN_USB_STRING, USBFN_USB_STRING, PUSBFN_USB_STRING, *PUSBFN_USB_STRING
+ms.date: 1/4/2018
+ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBFN_USB_STRING, USBFN_USB_STRING
 req.product: Windows 10 or later.
 ---
 

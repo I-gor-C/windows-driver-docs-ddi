@@ -1,5 +1,5 @@
 ---
-UID: NF.rxstruc.RxUnregisterMinirdr
+UID: NF:rxstruc.RxUnregisterMinirdr
 title: RxUnregisterMinirdr function
 author: windows-driver-content
 description: RxUnregisterMinirdr is an inline routine called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table.
@@ -7,7 +7,7 @@ old-location: ifsk\rxunregisterminirdr.htm
 old-project: ifsk
 ms.assetid: 090e5fc5-a0cf-4df2-b9b9-abaf4833aef7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RxUnregisterMinirdr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -113,24 +114,24 @@ IRQL
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 </dt>
 <dt>
-<a href="kernel.iodeletedevice">IoDeleteDevice</a>
+<a href="..\wdm\nf-wdm-iodeletedevice.md">IoDeleteDevice</a>
 </dt>
 <dt>
-<a href="ifsk.rxregisterminirdr">RxRegisterMinirdr</a>
+<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
 </dt>
 <dt>
-<a href="ifsk.rxstartminirdr">RxStartMiniRdr</a>
+<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMiniRdr</a>
 </dt>
 <dt>
-<a href="ifsk.rxstopminirdr">RxStopMiniRdr</a>
+<a href="..\mrx\nf-mrx-rxstopminirdr.md">RxStopMiniRdr</a>
 </dt>
 <dt>
-<a href="ifsk.rxpunregisterminirdr">RxpUnregisterMinirdr</a>
+<a href="..\mrx\nf-mrx-rxpunregisterminirdr.md">RxpUnregisterMinirdr</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxUnregisterMinirdr routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxUnregisterMinirdr routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

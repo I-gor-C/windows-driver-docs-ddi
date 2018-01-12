@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IServiceSink.RequestService
+UID: NF:portcls.IServiceSink.RequestService
 title: IServiceSink::RequestService method
 author: windows-driver-content
 description: The RequestService method is called to forward a service request to an IServiceSink object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IServiceSink::RequestService method

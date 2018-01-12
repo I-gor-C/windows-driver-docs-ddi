@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ks
 ---
 
 # Ks.h header
@@ -39,10 +39,8 @@ Ks.h contain these programming interfaces:
 | [KsCompletePendingRequest function](nf-ks-kscompletependingrequest.md) | The KsCompletePendingRequest function is used to complete an I/O request in response to which an AVStream dispatch function previously returned STATUS_PENDING. |
 | [KsCopyObjectBagItems function](nf-ks-kscopyobjectbagitems.md) | The KsCopyObjectBagItems function copies all items from one object bag into another. |
 | [KsCreateAllocator function](nf-ks-kscreateallocator.md) | The KsCreateAllocator function creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP. |
-| [KsCreateAllocator function](nf-ks-kscreateallocator~r1.md) | The KsCreateAllocator function creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP. |
 | [KsCreateAllocator2 function](nf-ks-kscreateallocator2.md) | Creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP. |
 | [KsCreateClock function](nf-ks-kscreateclock.md) | The KsCreateClock function creates a handle to a clock instance. |
-| [KsCreateClock function](nf-ks-kscreateclock~r1.md) | The KsCreateClock function creates a handle to a clock instance. |
 | [KsCreateClock2 function](nf-ks-kscreateclock2.md) | Creates a handle to a clock instance. Call this function after the Component Object Model (COM) is initialized. |
 | [KsCreateDefaultAllocator function](nf-ks-kscreatedefaultallocator.md) | Given a validated IRP_MJ_CREATE request, the KsCreateDefaultAllocator function creates a default allocator that uses the specified memory pool and associates the IoGetCurrentIrpStackLocation(Irp)-&gt;FileObject with the allocator using an internal dispatch table (KSDISPATCH_TABLE). |
 | [KsCreateDefaultAllocatorEx function](nf-ks-kscreatedefaultallocatorex.md) | Creates a default allocator that uses the specified memory pool and associates the IoGetCurrentIrpStackLocation(pIrp)-&gt;FileObject with this allocator using an internal dispatch table (KSDISPATCH_TABLE). |
@@ -51,10 +49,8 @@ Ks.h contain these programming interfaces:
 | [KsCreateDevice function](nf-ks-kscreatedevice.md) | The KsCreateDevice function creates an AVStream device. |
 | [KsCreateFilterFactory function](nf-ks-kscreatefilterfactory.md) | The KsCreateFilterFactory function adds a filter factory to a given device. |
 | [KsCreatePin function](nf-ks-kscreatepin.md) | The KsCreatePin function passes a connection request to a device, creating a pin instance. This function can only be called at PASSIVE_LEVEL for kernel-mode clients. |
-| [KsCreatePin function](nf-ks-kscreatepin~r1.md) | The KsCreatePin function passes a connection request to a device, creating a pin instance. This function can only be called at PASSIVE_LEVEL for kernel-mode clients. |
 | [KsCreatePin2 function](nf-ks-kscreatepin2.md) | Passes a connection request to a device, creating a pin instance. |
 | [KsCreateTopologyNode function](nf-ks-kscreatetopologynode.md) | The KsCreateTopologyNode function creates a handle to a topology node instance. The function can only be called at PASSIVE_LEVEL. |
-| [KsCreateTopologyNode function](nf-ks-kscreatetopologynode~r1.md) | The KsCreateTopologyNode function creates a handle to a topology node instance. The function can only be called at PASSIVE_LEVEL. |
 | [KsCreateTopologyNode2 function](nf-ks-kscreatetopologynode2.md) | Creates a handle to a topology node instance. |
 | [KsDecrementCountedWorker function](nf-ks-ksdecrementcountedworker.md) | Decrements the current worker count of a worker previous created by KsRegisterCountedWorker. This should be called after each task within a worker has been completed. |
 | [KsDefaultAddEventHandler function](nf-ks-ksdefaultaddeventhandler.md) | The KsDefaultAddEventHandler function is a default routine to handle event 'add' requests. |
@@ -210,6 +206,7 @@ Ks.h contain these programming interfaces:
 | [KsProbeStreamIrp function](nf-ks-ksprobestreamirp.md) | The KsProbeStreamIrp function makes the specified modifications to the input and output buffers of the given IRP based on the flags passed, and it then validates the stream header. |
 | [KsProcessPinUpdate function](nf-ks-ksprocesspinupdate.md) | The KsProcessPinUpdate function is called from within a filter-centric filter's AVStrMiniFilterProcess dispatch to update a process pin. |
 | [KsPropertyHandler function](nf-ks-kspropertyhandler.md) | Drivers call KsPropertyHandler function for IRP handling. |
+| [KsPropertyHandlerWithAllocator function](nf-ks-kspropertyhandlerwithallocator.md) | The KsPropertyHandlerWithAllocator performs the same handling as KsPropertyHandler, with the same restrictions, but allows an optional allocator callback to be used to provide a buffer for the parameters. |
 | [KsPublishDeviceProfile function](nf-ks-kspublishdeviceprofile.md) | The KsPublishDeviceProfile API is called to publish device profile information. |
 | [KsQueryDevicePnpObject function](nf-ks-ksquerydevicepnpobject.md) | The KsQueryDevicePnpObject function returns the PnP device object that can be stored in the device header. This is the next device object on the PnP stack and is the device object that PnP requests are forwarded to if KsDefaultDispatchPnp is used. |
 | [KsQueryInformationFile function](nf-ks-ksqueryinformationfile.md) | The KsQueryInformationFile function performs an information query against the specified file object. The function attempts to use FastIoDispatch if possible, or it generates an information request against the device object. |
@@ -259,6 +256,7 @@ Ks.h contain these programming interfaces:
 | [KsUnregisterWorker function](nf-ks-ksunregisterworker.md) | The KsUnregisterWorker function allows clients to unregister a worker. |
 | [KsUnserializeObjectPropertiesFromRegistry function](nf-ks-ksunserializeobjectpropertiesfromregistry.md) | The KsUnserializeObjectPropertiesFromRegistry function, when given a destination object and a registry path, enumerates the named values and applies them as serialized data to the specified property sets listed in the serialized data. |
 | [KsValidateAllocatorCreateRequest function](nf-ks-ksvalidateallocatorcreaterequest.md) | The KsValidateAllocatorCreateRequest function validates an IRP_MJ_CREATE request as an allocator request and returns the create structure associated with the request on success. |
+| [KsValidateAllocatorFramingEx function](nf-ks-ksvalidateallocatorframingex.md) | For system use only. |
 | [KsValidateClockCreateRequest function](nf-ks-ksvalidateclockcreaterequest.md) | The KsValidateClockCreateRequest function validates the clock creation request and returns the create structure associated with the request.This can only be called at PASSIVE_LEVEL. |
 | [KsValidateConnectRequest function](nf-ks-ksvalidateconnectrequest.md) | The KsValidateConnectRequest function validates a connection request and returns a pointer to the connection structure associated with the request.This function can only be called at PASSIVE_LEVEL. |
 | [KsValidateTopologyNodeCreateRequest function](nf-ks-ksvalidatetopologynodecreaterequest.md) | The KsValidateTopologyNodeCreateRequest function validates a topology node creation request and returns the create structure associated with the request. The function can only be called at PASSIVE_LEVEL. |
@@ -275,8 +273,8 @@ Ks.h contain these programming interfaces:
 | [PFNKSADDEVENT callback](nc-ks-pfnksaddevent.md) | An AVStream minidriver's AVStrMiniAddEvent routine is called when a client registers to be notified of an event. This routine is optional. |
 | [PFNKSALLOCATOR callback](nc-ks-pfnksallocator.md) | Minidrivers can optionally supply a callback function of type PFNKSALLOCATOR as a parameter in calls to KsEnableEventWithAllocator, KsPropertyHandlerWithAllocator, and KsMethodHandlerWithAllocator. |
 | [PFNKSCANCELTIMER callback](nc-ks-pfnkscanceltimer.md) | A streaming minidriver's KStrCancelTimer routine is called to cancel a custom timer object that was previously specified in the SetTimer parameter in a call to KsAllocateDefaultClockEx. |
-| [PFNKSCLOCK_CORRELATEDTIME callback](nc-ks-pfnksclock_correlatedtime.md) | KStrClockGetCorrelatedPhysicalTime is a system-supplied routine that retrieves both the current system time minus suspended delta and the corresponding clock tick since boot. |
-| [PFNKSCLOCK_GETTIME callback](nc-ks-pfnksclock_gettime.md) | KStrClockGetPhysicalTime is a system-supplied routine that retrieves the current system time minus any suspended delta. |
+| [PFNKSCLOCK_CORRELATEDTIME callback](nc-ks-pfnksclock_correlatedtime.md) | KStrClockGetCorrelatedTime is a system-supplied routine that retrieves both the current system time and the corresponding clock tick count since boot. |
+| [PFNKSCLOCK_GETTIME callback](nc-ks-pfnksclock_gettime.md) | KStrClockGetTime is a system-supplied routine that retrieves the current system time. |
 | [PFNKSCONTEXT_DISPATCH callback](nc-ks-pfnkscontext_dispatch.md) | A streaming minidriver's KStrContextDispatch routine is called to process IRP_MJ_POWER IRPs. |
 | [PFNKSCORRELATEDTIME callback](nc-ks-pfnkscorrelatedtime.md) | A streaming minidriver's KStrCorrelatedTime routine is called to retrieve both the presentation time and physical time in a correlated manner. This allows the clock owner to completely determine the current time. |
 | [PFNKSDEFAULTALLOCATE callback](nc-ks-pfnksdefaultallocate.md) | An AVStream minidriver's AVStrMiniAllocate routine allocates a frame using the allocator specified in the Context parameter. |
@@ -284,31 +282,31 @@ Ks.h contain these programming interfaces:
 | [PFNKSDELETEALLOCATOR callback](nc-ks-pfnksdeleteallocator.md) | An AVStream minidriver's AVStrMiniDeleteAllocator routine deletes the allocator that is associated with a pin. |
 | [PFNKSDEVICE callback](nc-ks-pfnksdevice.md) | An AVStream minidriver's AVStrMiniDevicePostStart routine is called when AVStream performs post-PnP-start processing. Use it to load drivers at start time, for example. Such events then will occur in the context of a worker thread after PnP start. |
 | [PFNKSDEVICECREATE callback](nc-ks-pfnksdevicecreate.md) | An AVStream minidriver's AVStrMiniDeviceAdd routine notifies the minidriver that AVStream's PnP AddDevice routine has completed. |
-| [PFNKSDEVICEIRP callback](nc-ks-pfnksdeviceirp.md) | AVStream calls a minidriver's AVStrMiniDeviceQueryInterface routine when it receives an IRP_MN_QUERY_INTERFACE. |
-| [PFNKSDEVICEIRPVOID callback](nc-ks-pfnksdeviceirpvoid.md) | An AVStream minidriver's AVStrMiniDeviceCancelRemove routine is called when an IRP_MN_CANCEL_REMOVE_DEVICE is dispatched by the device. |
+| [PFNKSDEVICEIRP callback](nc-ks-pfnksdeviceirp.md) | An AVStream minidriver's IRP handler routine is called when these IRPs is dispatched by the device.IRP_MN_QUERY_REMOVE_DEVICEIRP_MN_QUERY_STOP_DEVICEIRP_MN_QUERY_INTERFACE |
+| [PFNKSDEVICEIRPVOID callback](nc-ks-pfnksdeviceirpvoid.md) | An AVStream minidriver's IRP handling routine is called when these IRPs are dispatched by the device.IRP_MN_CANCEL_STOP_DEVICEIRP_MN_CANCEL_REMOVE_DEVICEIRP_MN_REMOVE_DEVICEIRP_MN_STOP_DEVICEIRP_MN_SURPRISE_REMOVAL |
 | [PFNKSDEVICEPNPSTART callback](nc-ks-pfnksdevicepnpstart.md) | An AVStream minidriver's AVStrMiniDeviceStart routine is called when an IRP_MN_START_DEVICE request is sent for a specified device. |
 | [PFNKSDEVICEQUERYCAPABILITIES callback](nc-ks-pfnksdevicequerycapabilities.md) | An AVStream minidriver's AVStrMiniDeviceQueryCapabilities routine is called when an IRP_MN_QUERY_CAPABILITIES is dispatched by the device. |
 | [PFNKSDEVICEQUERYPOWER callback](nc-ks-pfnksdevicequerypower.md) | AVStream calls a minidriver's AVStrMiniDeviceQueryPower routine when it receives an IRP_MN_QUERY_POWER request. |
 | [PFNKSDEVICESETPOWER callback](nc-ks-pfnksdevicesetpower.md) | AVStream calls a minidriver's AVStrMiniDeviceSetPower routine when it receives an IRP_MN_SET_POWER. |
 | [PFNKSFASTHANDLER callback](nc-ks-pfnksfasthandler.md) | KStrFastHandler is a driver-supplied routine that handles a property or method request without the creation of an IRP. |
-| [PFNKSFILTERIRP callback](nc-ks-pfnksfilterirp.md) | An AVStream minidriver's AVStrMiniFilterClose routine is called when a filter is closed. It usually is provided by minidrivers that want to free the context and resources associated with the filter. |
+| [PFNKSFILTERIRP callback](nc-ks-pfnksfilterirp.md) | An AVStream minidriver's AVStrMiniFilterCreate routine is called when a filter receives an IRP. |
 | [PFNKSFILTERPROCESS callback](nc-ks-pfnksfilterprocess.md) | An AVStream minidriver's AVStrMiniFilterProcess routine is called when the filter is meant to process frames. It is used to perform Filter-Centric Processing. |
 | [PFNKSFILTERVOID callback](nc-ks-pfnksfiltervoid.md) | An AVStream minidriver's AVStrMiniFilterReset routine is called when AVStream receives an IOCTL_KS_RESET_STATE to return the filter to the state it was in at Acquire-time. |
-| [PFNKSHANDLER callback](nc-ks-pfnkshandler.md) | The minidriver-provided KStrGetPropertyHandler routine is called when Kernel Streaming receives a get property request. |
+| [PFNKSHANDLER callback](nc-ks-pfnkshandler.md) | The minidriver-provided KStrMethodHandler routine is called when Kernel Streaming receives an IOCTL_KS_METHOD. Provide a pointer to this handler in the relevant KSMETHOD_ITEM structure. |
 | [PFNKSINTERSECTHANDLER callback](nc-ks-pfnksintersecthandler.md) | A streaming minidriver's KStrIntersectHandler routine is called to compare a data range to determine if there is an intersection, and if so, the data format of the intersection. |
 | [PFNKSINTERSECTHANDLEREX callback](nc-ks-pfnksintersecthandlerex.md) | AVStream calls a minidriver's AVStrMiniIntersectHandlerEx routine to determine the highest quality intersection of two data ranges. |
 | [PFNKSIRPLISTCALLBACK callback](nc-ks-pfnksirplistcallback.md) | A streaming minidriver's KStrIrpListCallback routine is called to determine whether the passed in IRP should be moved from the source list to the destination list, or if IRP enumeration should be terminated. |
 | [PFNKSITEMFREECALLBACK callback](nc-ks-pfnksitemfreecallback.md) | A streaming minidriver's KStrItemFreeCallback routine is called to free a previously allocated create item. KStrItemFreeCallback allows the minidriver to perform any cleanup, including flushing security descriptor changes, if necessary. |
-| [PFNKSPIN callback](nc-ks-pfnkspin.md) | An AVStream minidriver's AVStrMiniPinConnect routine is called when the relevant KSPIN is serving as a sink pin and is connected to an AVStream source pin. |
+| [PFNKSPIN callback](nc-ks-pfnkspin.md) | An AVStream minidriver's callback routine is called when |
 | [PFNKSPINFRAMERETURN callback](nc-ks-pfnkspinframereturn.md) | An AVStream minidriver's AVStrMiniFrameReturn routine is called when an injected frame has completed its trip around the circuit and is ready to be recycled or freed. |
 | [PFNKSPINHANDSHAKE callback](nc-ks-pfnkspinhandshake.md) | An AVStream minidriver's AVStrMiniPinHandshake routine is called when AVStream receives a protocol handshake request that it does not handle. |
 | [PFNKSPININITIALIZEALLOCATOR callback](nc-ks-pfnkspininitializeallocator.md) | An AVStream minidriver's AVStrMiniInitializeAllocator routine initializes an allocator that will be associated with a pin. |
-| [PFNKSPINIRP callback](nc-ks-pfnkspinirp.md) | An AVStream minidriver's AVStrMiniPinClose routine is called when a pin is closed. It usually is provided by minidrivers that want to free the context and resources associated with the pin. |
+| [PFNKSPINIRP callback](nc-ks-pfnkspinirp.md) | An AVStream minidriver's routine is called when an activity on the pin is performed and it receives these IRPs |
 | [PFNKSPINIRPCOMPLETION callback](nc-ks-pfnkspinirpcompletion.md) | An AVStream minidriver's AVStrMiniPinIrpCompletion routine is called when an IRP completes a pass around the circuit and the frame that is associated with the IRP is about to be recycled or retired. |
 | [PFNKSPINPOWER callback](nc-ks-pfnkspinpower.md) | An AVStream minidriver's AVStrMiniPinPower routine is called for pin-centric pins when the device is waking or entering a sleep state. |
 | [PFNKSPINSETDATAFORMAT callback](nc-ks-pfnkspinsetdataformat.md) | An AVStream minidriver's AVStrMiniPinSetDataFormat routine is called at pin creation time to verify that the previously agreed upon data format is acceptable for this KSPIN structure and a match for this KSDATARANGE structure. |
 | [PFNKSPINSETDEVICESTATE callback](nc-ks-pfnkspinsetdevicestate.md) | An AVStream minidriver's AVStrMiniPinSetDeviceState routine is called when the state of a KSPIN structure is changed due to the arrival of a connection state property 'set' IOCTL. |
-| [PFNKSPINVOID callback](nc-ks-pfnkspinvoid.md) | An AVStream minidriver's AVStrMiniPinDisconnect routine is called when the relevant KSPIN is serving as a sink pin and this sink pin is disconnected from an AVStream source pin. |
+| [PFNKSPINVOID callback](nc-ks-pfnkspinvoid.md) | An AVStream minidriver's callback routine is called when |
 | [PFNKSREMOVEEVENT callback](nc-ks-pfnksremoveevent.md) | An AVStream minidriver's AVStrMiniRemoveEvent routine is called when a client requests to be removed from the notification queue for an event. This routine is optional. |
 | [PFNKSSETTIMER callback](nc-ks-pfnkssettimer.md) | A streaming minidriver's KStrSetTimer routine is called to generate DPC timer callbacks based on presentation time. |
 | [PFNKSSTREAMPOINTER callback](nc-ks-pfnksstreampointer.md) | AVStream calls a minidriver's AVStrMiniCancelCallback routine when the IRP that is associated with a cloned stream pointer is canceled. This routine is optional. |
@@ -326,14 +324,12 @@ Ks.h contain these programming interfaces:
 | [KSATTRIBUTE structure](ns-ks-ksattribute.md) | The KSATTRIBUTE structure defines an additional attribute of a data format or data range that is not covered by the KSDATAFORMAT and KSDATARANGE structures or the extended information based on the format and range specifiers. |
 | [KSATTRIBUTE_LIST structure](ns-ks-ksattribute_list.md) | The KSATTRIBUTE_LIST structure contains an attribute defined in a KSATTRIBUTE structure. |
 | [KSAUTOMATION_TABLE_ structure](ns-ks-ksautomation_table_.md) | The KSAUTOMATION_TABLE structure defines a structure that combines tables for properties, methods, and events. |
-| [KSAUTOMATION_TABLE_ structure](ns-ks-ksautomation_table_~r1.md) | The KSAUTOMATION_TABLE structure defines a structure that combines tables for properties, methods, and events. |
 | [KSBUFFER_ITEM structure](ns-ks-ksbuffer_item.md) | The KSBUFFER_ITEM structure is used to store a list of data buffers copied from the event source, which can be retrieved by the event sink through KSEVENT_TYPE_QUERYBUFFER. |
 | [KSCLOCK_CREATE structure](ns-ks-ksclock_create.md) | The KSCLOCK_CREATE structure is used in clock create parameters for the KsCreateClock function. |
 | [KSCLOCK_FUNCTIONTABLE structure](ns-ks-ksclock_functiontable.md) | The KSCLOCK_FUNCTIONTABLE structure describes a function table for the master clock. |
 | [KSCOMPONENTID structure](ns-ks-kscomponentid.md) | The KSCOMPONENTID structure contains unique identifiers that describe an individual kernel streaming object. |
 | [KSCORRELATED_TIME structure](ns-ks-kscorrelated_time.md) | The KSCORRELATED_TIME structure contains a clock time as well as the corresponding number of clock ticks since system boot. |
 | [KSDATAFORMAT structure](ns-ks-ksdataformat.md) | The KSDATAFORMAT structure is a variable-length structure that describes a data format. |
-| [KSDATAFORMAT structure](ns-ks-ksdataformat~r1.md) | The KSDATAFORMAT structure is a variable-length structure that describes a data format. |
 | [KSDISPATCH_TABLE structure](ns-ks-ksdispatch_table.md) | The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines. |
 | [KSDPC_ITEM structure](ns-ks-ksdpc_item.md) | The KSDPC_ITEM structure is used to store information related to any internal DPCs that might be used to generate event notification from a raised IRQL. |
 | [KSERROR structure](ns-ks-kserror.md) | The KSERROR structure is used to report streaming errors in both kernel and user mode to their respective quality managers. |
@@ -404,45 +400,27 @@ Ks.h contain these programming interfaces:
 | [KS_FRAMING_RANGE structure](ns-ks-ks_framing_range.md) | The KS_FRAMING_RANGE structure specifies a range for frame sizes for a given framing item. |
 | [KS_FRAMING_RANGE_WEIGHTED structure](ns-ks-ks_framing_range_weighted.md) | Drivers can use the KS_FRAMING_RANGE_WEIGHTED structure to specify a range of weighted frame sizes. |
 | [_KSALLOCATOR_DISPATCH structure](ns-ks-_ksallocator_dispatch.md) | The KSALLOCATOR_DISPATCH structure contains the callbacks required for a pin to implement its own kernel-level allocator. |
-| [_KSALLOCATOR_DISPATCH structure](ns-ks-_ksallocator_dispatch~r1.md) | The KSALLOCATOR_DISPATCH structure contains the callbacks required for a pin to implement its own kernel-level allocator. |
 | [_KSCLOCK_DISPATCH structure](ns-ks-_ksclock_dispatch.md) | The KSCLOCK_DISPATCH structure contains the callbacks required for a pin to implement a clock object. |
-| [_KSCLOCK_DISPATCH structure](ns-ks-_ksclock_dispatch~r1.md) | The KSCLOCK_DISPATCH structure contains the callbacks required for a pin to implement a clock object. |
 | [_KSDEVICE structure](ns-ks-_ksdevice.md) | The KSDEVICE structure describes a WDM functional device that is managed by AVStream. |
-| [_KSDEVICE structure](ns-ks-_ksdevice~r1.md) | The KSDEVICE structure describes a WDM functional device that is managed by AVStream. |
 | [_KSDEVICE_DESCRIPTOR structure](ns-ks-_ksdevice_descriptor.md) | The KSDEVICE_DESCRIPTOR structure describes the characteristics of a particular device. |
-| [_KSDEVICE_DESCRIPTOR structure](ns-ks-_ksdevice_descriptor~r1.md) | The KSDEVICE_DESCRIPTOR structure describes the characteristics of a particular device. |
 | [_KSDEVICE_DISPATCH structure](ns-ks-_ksdevice_dispatch.md) | The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events. |
-| [_KSDEVICE_DISPATCH structure](ns-ks-_ksdevice_dispatch~r1.md) | The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events. |
 | [_KSDEVICE_THERMAL_DISPATCH structure](ns-ks-_ksdevice_thermal_dispatch.md) | The KSDEVICE_THERMAL_DISPATCH structure is used by the miniport driver in the API call to register thermal notification callbacks. This structure contains the callback function pointers for active and passive cooling interfaces. |
+| [_KSEVENT_ENTRY structure](ns-ks-_ksevent_entry.md) | The kernel streaming subsystem uses the KSEVENT_ENTRY structure to describe how an event should be triggered. |
 | [_KSFILTER structure](ns-ks-_ksfilter.md) | The KSFILTER structure describes an instantiated filter. |
-| [_KSFILTER structure](ns-ks-_ksfilter~r1.md) | The KSFILTER structure describes an instantiated filter. |
 | [_KSFILTERFACTORY structure](ns-ks-_ksfilterfactory.md) | The KSFILTERFACTORY structure represents a filter factory. |
-| [_KSFILTERFACTORY structure](ns-ks-_ksfilterfactory~r1.md) | The KSFILTERFACTORY structure represents a filter factory. |
 | [_KSFILTER_DESCRIPTOR structure](ns-ks-_ksfilter_descriptor.md) | The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory. |
-| [_KSFILTER_DESCRIPTOR structure](ns-ks-_ksfilter_descriptor~r1.md) | The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory. |
 | [_KSFILTER_DISPATCH structure](ns-ks-_ksfilter_dispatch.md) | The KSFILTER_DISPATCH structure describes the client callbacks that are made to notify the client of certain events on a given filter type. |
-| [_KSFILTER_DISPATCH structure](ns-ks-_ksfilter_dispatch~r1.md) | The KSFILTER_DISPATCH structure describes the client callbacks that are made to notify the client of certain events on a given filter type. |
 | [_KSGATE structure](ns-ks-_ksgate.md) | The KSGATE structure describes an AVStream gate object. |
-| [_KSGATE structure](ns-ks-_ksgate~r1.md) | The KSGATE structure describes an AVStream gate object. |
 | [_KSMAPPING structure](ns-ks-_ksmapping.md) | The KSMAPPING structure is used to describe a single contiguous chunk of physical memory for use in scatter/gather DMA operations. |
-| [_KSMAPPING structure](ns-ks-_ksmapping~r1.md) | The KSMAPPING structure is used to describe a single contiguous chunk of physical memory for use in scatter/gather DMA operations. |
 | [_KSNODE_DESCRIPTOR structure](ns-ks-_ksnode_descriptor.md) | The KSNODE_DESCRIPTOR structure describes a topology node within a filter. |
-| [_KSNODE_DESCRIPTOR structure](ns-ks-_ksnode_descriptor~r1.md) | The KSNODE_DESCRIPTOR structure describes a topology node within a filter. |
 | [_KSPIN structure](ns-ks-_kspin.md) | The KSPIN structure describes an instantiated pin. |
-| [_KSPIN structure](ns-ks-_kspin~r1.md) | The KSPIN structure describes an instantiated pin. |
 | [_KSPIN_DESCRIPTOR_EX structure](ns-ks-_kspin_descriptor_ex.md) | The KSPIN_DESCRIPTOR_EX structure describes the characteristics of a pin type on a given filter type. |
-| [_KSPIN_DESCRIPTOR_EX structure](ns-ks-_kspin_descriptor_ex~r1.md) | The KSPIN_DESCRIPTOR_EX structure describes the characteristics of a pin type on a given filter type. |
 | [_KSPIN_DISPATCH structure](ns-ks-_kspin_dispatch.md) | The KSPIN_DISPATCH structure describes the callbacks for which clients can register in order to receive notification of pin events. |
-| [_KSPIN_DISPATCH structure](ns-ks-_kspin_dispatch~r1.md) | The KSPIN_DISPATCH structure describes the callbacks for which clients can register in order to receive notification of pin events. |
 | [_KSPROCESSPIN structure](ns-ks-_ksprocesspin.md) | The KSPROCESSPIN structure describes the process state of a specific pin. |
-| [_KSPROCESSPIN structure](ns-ks-_ksprocesspin~r1.md) | The KSPROCESSPIN structure describes the process state of a specific pin. |
 | [_KSPROCESSPIN_INDEXENTRY structure](ns-ks-_ksprocesspin_indexentry.md) | The KSPROCESSPIN_INDEXENTRY structure is used in Filter-Centric Processing to bring together all of the input and output pins in one context. |
-| [_KSPROCESSPIN_INDEXENTRY structure](ns-ks-_ksprocesspin_indexentry~r1.md) | The KSPROCESSPIN_INDEXENTRY structure is used in Filter-Centric Processing to bring together all of the input and output pins in one context. |
 | [_KSPROPERTY_GRAPHMANAGER_INTERFACE structure](ns-ks-_ksproperty_graphmanager_interface.md) | . |
 | [_KSSTREAM_POINTER structure](ns-ks-_ksstream_pointer.md) | The KSSTREAM_POINTER structure is the basic AVStream pointer into a stream. |
-| [_KSSTREAM_POINTER structure](ns-ks-_ksstream_pointer~r1.md) | The KSSTREAM_POINTER structure is the basic AVStream pointer into a stream. |
 | [_KSSTREAM_POINTER_OFFSET structure](ns-ks-_ksstream_pointer_offset.md) | The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame. |
-| [_KSSTREAM_POINTER_OFFSET structure](ns-ks-_ksstream_pointer_offset~r1.md) | The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame. |
 | [_MF_MDL_SHARED_PAYLOAD_KEY structure](ns-ks-_mf_mdl_shared_payload_key.md) | This union is used internally by the operating system. |
 
 ## I/O control codes
@@ -462,6 +440,9 @@ Ks.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [*PKSPIN_COMMUNICATION enumeration](ne-ks-pkspin_communication.md) | . |
+| [*PKSPIN_DATAFLOW enumeration](ne-ks-pkspin_dataflow.md) | An instance of the KSPIN_DATAFLOW enumeration is returned by KSPROPERTY_PIN_DATAFLOW. |
+| [*PKSSTATE enumeration](ne-ks-pksstate.md) | The KSSTATE enumeration lists possible states of a kernel streaming object. |
 | [KSCOMPLETION_INVOCATION enumeration](ne-ks-kscompletion_invocation.md) | . |
 | [KSDEGRADE_STANDARD enumeration](ne-ks-ksdegrade_standard.md) | The KSDEGRADE_STANDARD enumeration lists different types of degradation. |
 | [KSDEVICE_THERMAL_STATE enumeration](ne-ks-ksdevice_thermal_state.md) | A KS-defined enumeration for thermal state changes. |
@@ -498,15 +479,23 @@ Ks.h contain these programming interfaces:
 | [KSTARGET_STATE enumeration](ne-ks-kstarget_state.md) | . |
 | [KS_SEEKING_CAPABILITIES enumeration](ne-ks-ks_seeking_capabilities.md) | . |
 | [KS_SEEKING_FLAGS enumeration](ne-ks-ks_seeking_flags.md) | The KS_SEEKING_FLAGS enumeration lists positioning options that can be used in conjunction with the KSPROPERTY_POSITIONS structure. |
-| [PKSPIN_COMMUNICATION enumeration](ne-ks-pkspin_communication.md) | . |
-| [PKSPIN_DATAFLOW enumeration](ne-ks-pkspin_dataflow.md) | An instance of the KSPIN_DATAFLOW enumeration is returned by KSPROPERTY_PIN_DATAFLOW. |
-| [PKSSTATE enumeration](ne-ks-pksstate.md) | The KSSTATE enumeration lists possible states of a kernel streaming object. |
 | [VARENUM enumeration](ne-ks-varenum.md) | . |
+
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [IKsControl interface](nn-ks-ikscontrol.md) | The IKsControl interface is a COM-style interface implemented on AVStream filters and pins. |
+| [IKsDeviceFunctions interface](nn-ks-iksdevicefunctions.md) | The IKsDeviceFunctions interface is a COM-style interface implemented on AVStream devices. This interface is available in Windows Server 2003 SP1 and later versions of Windows. |
+| [IKsReferenceClock interface](nn-ks-iksreferenceclock.md) | The IKsReferenceClock interface is a COM-style interface that is provided by AVStream on all pins. The pin passes the request onto the master clock. |
 
 ## Macros
 
 | Title   | Description   |
 | ---- |:---- |
+| [KSEVENT_ENTRY_IRP_STORAGE macro](nf-ks-ksevent_entry_irp_storage.md) | This macro retrieves a pointer to the KSEVENT_ENTRY structure stored in Irp. |
+| [KSEVENT_ITEM_IRP_STORAGE macro](nf-ks-ksevent_item_irp_storage.md) | This macro retrieves a pointer to the KSEVENT_ITEM structure stored in Irp. |
+| [KSEVENT_SET_IRP_STORAGE macro](nf-ks-ksevent_set_irp_storage.md) | This macro retrieves a pointer to the KSEVENT_SET structure stored in Irp. This information is initialized only for basic support requests; it is not initialized for enable requests. |
 | [KSMETHOD_ITEM_IRP_STORAGE macro](nf-ks-ksmethod_item_irp_storage.md) | This macro accesses a pointer to the relevant KSMETHOD_ITEM. Note that this pointer is only set when using KsMethodHandlerWithAllocator. |
 | [KSMETHOD_SET_IRP_STORAGE macro](nf-ks-ksmethod_set_irp_storage.md) | This macro returns a pointer to the KSMETHOD_SET in which the method is located. |
 | [KSMETHOD_TYPE_IRP_STORAGE macro](nf-ks-ksmethod_type_irp_storage.md) | This macro accesses the type of method as described in the KSMETHOD_ITEM. If the method will be processed asynchronously using KsDispatchSpecificMethod, this storage must be maintained intact. |

@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_V2UPL_NI_INFO
+UID: NS:gnssdriver.GNSS_V2UPL_NI_INFO
 title: GNSS_V2UPL_NI_INFO
 author: windows-driver-content
 description: This structure contains V2UPL NI information.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 884C8141-2A15-4BAE-8A5C-73355BD84D53
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ---
 
 # GNSS_V2UPL_NI_INFO structure

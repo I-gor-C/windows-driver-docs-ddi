@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorscx.SensorsCxStateChange
+UID: NF:sensorscx.SensorsCxStateChange
 title: SensorsCxStateChange function
 author: windows-driver-content
 description: Used to initialize a state change.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 

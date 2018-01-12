@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:dxgitype
 ---
 
 # Dxgitype.h header

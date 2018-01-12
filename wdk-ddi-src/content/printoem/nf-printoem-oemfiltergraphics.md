@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMFilterGraphics
+UID: NF:printoem.OEMFilterGraphics
 title: OEMFilterGraphics function
 author: windows-driver-content
 description: OEMFilterGraphics function
@@ -7,7 +7,7 @@ old-location: print\oemfiltergraphics.htm
 old-project: print
 ms.assetid: 1b81de5a-440a-4209-992e-7f79c047245c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMFilterGraphics
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

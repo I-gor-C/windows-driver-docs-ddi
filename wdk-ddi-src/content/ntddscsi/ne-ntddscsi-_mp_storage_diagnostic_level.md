@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddscsi._MP_STORAGE_DIAGNOSTIC_LEVEL
+UID: NE:ntddscsi._MP_STORAGE_DIAGNOSTIC_LEVEL
 title: _MP_STORAGE_DIAGNOSTIC_LEVEL
 author: windows-driver-content
 description: The MP_STORAGE_DIAGNOSTIC_LEVEL enumeration allows the caller to control what kinds of data the provider should return.
@@ -7,8 +7,8 @@ old-location: storage\mp_storage_diagnostic_level.htm
 old-project: storage
 ms.assetid: BB05D543-7B99-481E-8CDB-AE350CBCCA2A
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MP_STORAGE_DIAGNOSTIC_LEVEL, *PMP_STORAGE_DIAGNOSTIC_LEVEL, MP_STORAGE_DIAGNOSTIC_LEVEL, PMP_STORAGE_DIAGNOSTIC_LEVEL
+ms.date: 1/10/2018
+ms.keywords: _MP_STORAGE_DIAGNOSTIC_LEVEL, MP_STORAGE_DIAGNOSTIC_LEVEL, *PMP_STORAGE_DIAGNOSTIC_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MP_STORAGE_DIAGNOSTIC_LEVEL, *PMP_STORAGE_DIAGNOSTIC_LEVEL
 ---
 
 # _MP_STORAGE_DIAGNOSTIC_LEVEL enumeration

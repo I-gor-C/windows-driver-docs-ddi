@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._D3DKMDT_GTFCOMPLIANCE
+UID: NE:d3dkmdt._D3DKMDT_GTFCOMPLIANCE
 title: _D3DKMDT_GTFCOMPLIANCE
 author: windows-driver-content
 description: The D3DKMDT_GTFCOMPLIANCE enumeration is reserved for system use. Do not use it in your driver.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_gtfcompliance.htm
 old-project: display
 ms.assetid: f66bee69-206d-4e94-aca8-72f59569ab4a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_GTFCOMPLIANCE, D3DKMDT_GTFCOMPLIANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3DKMDT_GTFCOMPLIANCE
 ---
 
 # _D3DKMDT_GTFCOMPLIANCE enumeration

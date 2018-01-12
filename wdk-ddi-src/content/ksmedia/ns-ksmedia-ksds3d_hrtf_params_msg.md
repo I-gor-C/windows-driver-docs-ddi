@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSDS3D_HRTF_PARAMS_MSG
+UID: NS:ksmedia.KSDS3D_HRTF_PARAMS_MSG
 title: KSDS3D_HRTF_PARAMS_MSG
 author: windows-driver-content
 description: The KSDS3D_HRTF_PARAMS_MSG structure specifies the parameter settings to apply to a head-relative transfer function (HRTF).
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: e746fc3d-ebfd-41a1-b640-6f803423bd95
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSDS3D_HRTF_PARAMS_MSG, *PKSDS3D_HRTF_PARAMS_MSG, PKSDS3D_HRTF_PARAMS_MSG, KSDS3D_HRTF_PARAMS_MSG
+ms.keywords: KSDS3D_HRTF_PARAMS_MSG, *PKSDS3D_HRTF_PARAMS_MSG, KSDS3D_HRTF_PARAMS_MSG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSDS3D_HRTF_PARAMS_MSG, KSDS3D_HRTF_PARAMS_MSG
 ---
 
 # KSDS3D_HRTF_PARAMS_MSG structure

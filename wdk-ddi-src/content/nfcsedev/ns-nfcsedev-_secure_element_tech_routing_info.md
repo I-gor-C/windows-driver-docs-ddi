@@ -1,5 +1,5 @@
 ---
-UID: NS.NFCSEDEV._SECURE_ELEMENT_TECH_ROUTING_INFO
+UID: NS:nfcsedev._SECURE_ELEMENT_TECH_ROUTING_INFO
 title: _SECURE_ELEMENT_TECH_ROUTING_INFO
 author: windows-driver-content
 description: SECURE_ELEMENT_TECH_ROUTING_INFO is a member of SECURE_ELEMENT_ROUTING_TABLE_ENTRY.
@@ -7,8 +7,8 @@ old-location: nfpdrivers\_secure_element_tech_routing_info.htm
 old-project: nfpdrivers
 ms.assetid: 62622A56-D84A-40E4-9CFA-4B0938B8FD85
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO, PSECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO
+ms.date: 12/18/2017
+ms.keywords: _SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSECURE_ELEMENT_TECH_ROUTING_INFO, SECURE_ELEMENT_TECH_ROUTING_INFO
 ---
 
 # _SECURE_ELEMENT_TECH_ROUTING_INFO structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-SECURE_ELEMENT_TECH_ROUTING_INFO is  a member of <a href="nfpdrivers._secure_element_routing_table_entry">SECURE_ELEMENT_ROUTING_TABLE_ENTRY</a>.
+SECURE_ELEMENT_TECH_ROUTING_INFO is  a member of <a href="..\nfcsedev\ns-nfcsedev-_secure_element_routing_table_entry.md">SECURE_ELEMENT_ROUTING_TABLE_ENTRY</a>.
 
 
 

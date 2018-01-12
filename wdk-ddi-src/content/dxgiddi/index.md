@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:dxgiddi
 ---
 
 # Dxgiddi.h header
@@ -54,7 +54,6 @@ Dxgiddi.h contain these programming interfaces:
 | [DXGI_DDI_PRIMARY_DESC structure](ns-dxgiddi-dxgi_ddi_primary_desc.md) | Describes a resource that is used as a primary (that is, a resource that is scanned out to the display). |
 | [DXGI_DDI_RATIONAL structure](ns-dxgiddi-dxgi_ddi_rational.md) | The DXGI_DDI_RATIONAL structure describes a fractional value that represents vertical and horizontal frequencies of a display mode (that is, vertical sync and horizontal sync). |
 | [_DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT structure](ns-dxgiddi-_dxgi_ddi_arg_checkmultiplaneoverlaysupport.md) | Used in a call to the pfnCheckMultiPlaneOverlaySupport (DXGI) function to check details on hardware support for multiplane overlays. |
-| [_DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT structure](ns-dxgiddi-_dxgi_ddi_arg_checkpresentdurationsupport.md) | Used in a call to the pfnCheckPresentDurationSupport(DXGI) function to check details on hardware device support for seamlessly switching to a new monitor refresh rate. |
 | [_DXGI_DDI_ARG_GETMULTIPLANEOVERLAYCAPS structure](ns-dxgiddi-_dxgi_ddi_arg_getmultiplaneoverlaycaps.md) | Used in a call to the pfnGetMultiPlaneOverlayCaps function to get overlay plane capabilities. |
 | [_DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS structure](ns-dxgiddi-_dxgi_ddi_arg_getmultiplaneoverlaygroupcaps.md) | Used in a call to the pfnGetMultiplaneOverlayGroupCaps function to get a group of overlay plane capabilities. |
 | [_DXGI_DDI_ARG_OFFERRESOURCES structure](ns-dxgiddi-_dxgi_ddi_arg_offerresources.md) | Describes video memory resources that the user-mode display driver offers for reuse. Used with the pfnOfferResources function. Used with the pfnReclaimResources function by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers. |

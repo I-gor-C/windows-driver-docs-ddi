@@ -1,5 +1,5 @@
 ---
-UID: NS.PEP_X._PEP_PROCESSOR_IDLE_STATE
+UID: NS:pep_x._PEP_PROCESSOR_IDLE_STATE
 title: _PEP_PROCESSOR_IDLE_STATE
 author: windows-driver-content
 description: The PEP_PROCESSOR_IDLE_STATE structure describes the capabilities of a processor idle state.
@@ -7,8 +7,8 @@ old-location: kernel\pep_processor_idle_state.htm
 old-project: kernel
 ms.assetid: 10CAB3CA-83BF-421B-81F5-2B42790B8928
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_PROCESSOR_IDLE_STATE, PPEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE, *PPEP_PROCESSOR_IDLE_STATE
+ms.date: 1/4/2018
+ms.keywords: _PEP_PROCESSOR_IDLE_STATE, *PPEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE
 ---
 
 # _PEP_PROCESSOR_IDLE_STATE structure
@@ -107,7 +108,7 @@ Reserved for future use.
 </dl>
 
 ## -remarks
-The <b>IdleStates</b> member of the <a href="kernel.pep_ppm_query_idle_states">PEP_PPM_QUERY_IDLE_STATES</a> structure is the first element in an array of <b>PEP_PROCESSOR_IDLE_STATE</b> structures.
+The <b>IdleStates</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_query_idle_states.md">PEP_PPM_QUERY_IDLE_STATES</a> structure is the first element in an array of <b>PEP_PROCESSOR_IDLE_STATE</b> structures.
 
 
 ## -requirements
@@ -138,12 +139,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.pep_ppm_query_idle_states">PEP_PPM_QUERY_IDLE_STATES</a>
+<a href="..\pep_x\ns-pep_x-_pep_ppm_query_idle_states.md">PEP_PPM_QUERY_IDLE_STATES</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PROCESSOR_IDLE_STATE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_PROCESSOR_IDLE_STATE structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

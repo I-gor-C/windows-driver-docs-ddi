@@ -1,5 +1,5 @@
 ---
-UID: NS.WDFDEVICE._WDF_DEVICE_PROPERTY_DATA
+UID: NS:wdfdevice._WDF_DEVICE_PROPERTY_DATA
 title: _WDF_DEVICE_PROPERTY_DATA
 author: windows-driver-content
 description: The WDF_DEVICE_PROPERTY_DATA structure describes a device property.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_property_data.htm
 old-project: wdf
 ms.assetid: C49562C0-D8B6-4BAE-96EB-4005D9EB19DE
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_DEVICE_PROPERTY_DATA, *PWDF_DEVICE_PROPERTY_DATA, PWDF_DEVICE_PROPERTY_DATA, WDF_DEVICE_PROPERTY_DATA
+ms.date: 12/29/2017
+ms.keywords: _WDF_DEVICE_PROPERTY_DATA, *PWDF_DEVICE_PROPERTY_DATA, WDF_DEVICE_PROPERTY_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_DEVICE_PROPERTY_DATA, WDF_DEVICE_PROPERTY_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -77,13 +78,13 @@ Specifies a locale identifier. Set this parameter either to a language-specific 
 
 ### -field Flags
 
-Set to  <b>PLUGPLAY_PROPERTY_PERSISTENT</b> if this property value is being set by <a href="wdf.wdfdeviceassignproperty">WdfDeviceAssignProperty</a>. Otherwise, set this member to zero.
+Set to  <b>PLUGPLAY_PROPERTY_PERSISTENT</b> if this property value is being set by <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassignproperty.md">WdfDeviceAssignProperty</a>. Otherwise, set this member to zero.
 
 
 ## -remarks
 The <b>WDF_DEVICE_PROPERTY_DATA</b> structure is used as input to the following methods:
 
-Drivers should initialize this structure by calling <a href="wdf.wdf_device_property_data_init">WDF_DEVICE_PROPERTY_DATA_INIT</a>.
+Drivers should initialize this structure by calling <a href="..\wdfdevice\nf-wdfdevice-wdf_device_property_data_init.md">WDF_DEVICE_PROPERTY_DATA_INIT</a>.
 
 
 ## -requirements
@@ -124,27 +125,27 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdf_device_property_data_init">WDF_DEVICE_PROPERTY_DATA_INIT</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdf_device_property_data_init.md">WDF_DEVICE_PROPERTY_DATA_INIT</a>
 </dt>
 <dt>
-<a href="wdf.wdfdeviceallocandquerypropertyex">WdfDeviceAllocAndQueryPropertyEx</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandquerypropertyex.md">WdfDeviceAllocAndQueryPropertyEx</a>
 </dt>
 <dt>
-<a href="wdf.wdfdeviceassignproperty">WdfDeviceAssignProperty</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassignproperty.md">WdfDeviceAssignProperty</a>
 </dt>
 <dt>
-<a href="wdf.wdfdevicequerypropertyex">WdfDeviceQueryPropertyEx</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicequerypropertyex.md">WdfDeviceQueryPropertyEx</a>
 </dt>
 <dt>
-<a href="wdf.wdffdoinitallocandquerypropertyex">WdfFdoInitAllocAndQueryPropertyEx</a>
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitallocandquerypropertyex.md">WdfFdoInitAllocAndQueryPropertyEx</a>
 </dt>
 <dt>
-<a href="wdf.wdffdoinitquerypropertyex">WdfFdoInitQueryPropertyEx</a>
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitquerypropertyex.md">WdfFdoInitQueryPropertyEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_PROPERTY_DATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_PROPERTY_DATA structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

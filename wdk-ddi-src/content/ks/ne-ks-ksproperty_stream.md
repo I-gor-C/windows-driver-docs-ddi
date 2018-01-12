@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSPROPERTY_STREAM
+UID: NE:ks.KSPROPERTY_STREAM
 title: KSPROPERTY_STREAM
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksproperty_stream.htm
 old-project: stream
 ms.assetid: 1A7C7181-00AF-4AAB-822F-017F11DB9409
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPROPERTY_STREAM, KSPROPERTY_STREAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_STREAM
 ---
 
 # KSPROPERTY_STREAM enumeration

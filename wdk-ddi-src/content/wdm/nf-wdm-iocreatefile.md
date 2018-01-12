@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoCreateFile
+UID: NF:wdm.IoCreateFile
 title: IoCreateFile function
 author: windows-driver-content
 description: The IoCreateFile routine either causes a new file or directory to be created, or it opens an existing file, device, directory, or volume, giving the caller a handle for the file object.
@@ -7,7 +7,7 @@ old-location: kernel\iocreatefile.htm
 old-project: kernel
 ms.assetid: 928f16d4-19cb-4d80-96a6-d25357bfdc30
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoCreateFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -69,17 +70,17 @@ NTSTATUS IoCreateFile(
 
 ### -param FileHandle [out]
 
-A pointer to a variable that receives the file handle if the call is successful. The driver must close the handle with <a href="kernel.zwclose">ZwClose</a> once the handle is no longer in use.
+A pointer to a variable that receives the file handle if the call is successful. The driver must close the handle with <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> once the handle is no longer in use.
 
 
 ### -param DesiredAccess [in]
 
-Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the type of access that the caller requires to the file or directory. See <a href="kernel.zwcreatefile">ZwCreateFile</a> for a description of the possible values for this parameter.
+Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the type of access that the caller requires to the file or directory. See <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> for a description of the possible values for this parameter.
 
 
 ### -param ObjectAttributes [in]
 
-A pointer to a structure that specifies the object's attributes, which has already been initialized with <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>. If the caller is not running in the system process context, it must set the OBJ_KERNEL_HANDLE attribute for <i>ObjectAttributes</i>.
+A pointer to a structure that specifies the object's attributes, which has already been initialized with <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>. If the caller is not running in the system process context, it must set the OBJ_KERNEL_HANDLE attribute for <i>ObjectAttributes</i>.
 
 
 ### -param IoStatusBlock [out]
@@ -120,7 +121,7 @@ Optionally specifies the initial allocation size in bytes for the file. A nonzer
 
 ### -param FileAttributes [in]
 
-Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE_ATTRIBUTE_NORMAL, which can be overridden by an ORed combination of one or more FILE_ATTRIBUTE_<i>XXX</i> flags, which are defined in Wdm.h. For a list of flags that can be used with <b>IoCreateFile</b>, see <a href="fs.createfile">CreateFile</a> in the Microsoft Windows SDK documentation.
+Explicitly specified attributes are applied only when the file is created, superseded, or, in some cases, overwritten. By default, this value is FILE_ATTRIBUTE_NORMAL, which can be overridden by an ORed combination of one or more FILE_ATTRIBUTE_<i>XXX</i> flags, which are defined in Wdm.h. For a list of flags that can be used with <b>IoCreateFile</b>, see <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> in the Microsoft Windows SDK documentation.
 
 
 ### -param ShareAccess [in]
@@ -540,13 +541,13 @@ The <i>CreateOptions</i> FILE_DIRECTORY_FILE value specifies that the file to be
 
 The <i>CreateOptions</i> FILE_NO_INTERMEDIATE_BUFFERING flag prevents the file system from performing any intermediate buffering on behalf of the caller. Specifying this value places certain restrictions on the caller's parameters to the <b>Zw<i>Xxx</i>File</b> routines, including the following:
 
-Any optional <i>ByteOffset</i> passed to <a href="kernel.zwreadfile">ZwReadFile</a> or <a href="kernel.zwwritefile">ZwWriteFile</a> must be an integral of the sector size.
+Any optional <i>ByteOffset</i> passed to <a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a> or <a href="..\wdm\nf-wdm-zwwritefile.md">ZwWriteFile</a> must be an integral of the sector size.
 
 The <i>Length</i> passed to <b>ZwReadFile</b> or <b>ZwWriteFile</b>, must be an integral of the sector size. Note that specifying a read operation to a buffer whose length is exactly the sector size might result in a lesser number of significant bytes being transferred to that buffer if the end of the file was reached during the transfer.
 
-Buffers must be aligned in accordance with the alignment requirement of the underlying device. This information can be obtained by calling <b>IoCreateFile</b> to get a handle for the file object that represents the physical device, and, then, calling <a href="kernel.zwqueryinformationfile">ZwQueryInformationFile</a> with that handle. For a list of the system FILE_<i>XXX</i>_ALIGNMENT values, see <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Buffers must be aligned in accordance with the alignment requirement of the underlying device. This information can be obtained by calling <b>IoCreateFile</b> to get a handle for the file object that represents the physical device, and, then, calling <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> with that handle. For a list of the system FILE_<i>XXX</i>_ALIGNMENT values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
-Calls to <a href="kernel.zwsetinformationfile">ZwSetInformationFile</a> with the <i>FileInformationClass</i> parameter set to <b>FilePositionInformation</b> must specify an offset that is an integral of the sector size.
+Calls to <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a> with the <i>FileInformationClass</i> parameter set to <b>FilePositionInformation</b> must specify an offset that is an integral of the sector size.
 
 The <i>CreateOptions</i> FILE_SYNCHRONOUS_IO_ALERT and FILE_SYNCHRONOUS_IO_NONALERT, which are mutually exclusive as their names suggest, specify that all I/O operations on the file are to be synchronous as long as they occur through the file object referred to by the returned <i>FileHandle</i>. All I/O on such a file is serialized across all threads using the returned handle. With either of these <i>CreateOptions</i>, the <i>DesiredAccess</i> SYNCHRONIZE flag must be set so that the I/O manager will use the file object as a synchronization object. With either of these <i>CreateOptions</i> set, the I/O manager maintains the "file position context" for the file object, an internal, current file position offset. This offset can be used in calls to <b>ZwReadFile</b> and <b>ZwWriteFile</b>. Its position also can be queried or set with <b>ZwQueryInformationFile</b> and <b>ZwSetInformationFile</b>.
 
@@ -578,7 +579,7 @@ The <i>Options</i> IO_NO_PARAMETER_CHECKING flag can be useful if a kernel-mode 
 
 NTFS is the only Microsoft file system that implements FILE_RESERVE_OPFILTER.
 
-Driver routines that run in a process context other than that of the system process must set the OBJ_KERNEL_HANDLE attribute for the <i>ObjectAttributes</i> parameter of <b>IoCreateFile</b>. This restricts the use of the handle returned by <b>IoCreateFile</b> to processes running only in kernel mode. Otherwise, the handle can be accessed by the process in whose context the driver is running. Drivers can call <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> to set the OBJ_KERNEL_HANDLE attribute as follows.
+Driver routines that run in a process context other than that of the system process must set the OBJ_KERNEL_HANDLE attribute for the <i>ObjectAttributes</i> parameter of <b>IoCreateFile</b>. This restricts the use of the handle returned by <b>IoCreateFile</b> to processes running only in kernel mode. Otherwise, the handle can be accessed by the process in whose context the driver is running. Drivers can call <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> to set the OBJ_KERNEL_HANDLE attribute as follows.
 
 
 ## -requirements
@@ -653,7 +654,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqliopassive4">IrqlIoPassive4</a>, <a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547787">IrqlIoPassive4</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -664,12 +665,12 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatefile">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoCreateFile routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoCreateFile routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

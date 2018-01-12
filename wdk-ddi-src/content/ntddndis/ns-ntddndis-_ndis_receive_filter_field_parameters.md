@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_RECEIVE_FILTER_FIELD_PARAMETERS
+UID: NS:ntddndis._NDIS_RECEIVE_FILTER_FIELD_PARAMETERS
 title: _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS
 author: windows-driver-content
 description: The NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure specifies the filter test criterion for a field in a network packet header.
 old-location: netvista\ndis_receive_filter_field_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3d387fe9-a7cc-4034-b31e-ba1359db2ae1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS
 ---
 
 # _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure
@@ -44,13 +45,13 @@ The <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b> structure specifies the filter t
 NDIS receive filters are used in the following NDIS interfaces:
 
 
-<a href="netvista.ndis_packet_coalescing">NDIS Packet Coalescing</a>. For more information about how to use receive filters in this interface, see <a href="netvista.managing_packet_coalescing_receive_filters">Managing Packet Coalescing Receive Filters</a>.
+<a href="https://msdn.microsoft.com/500FBF0F-54D9-4675-8E2D-447387DA8798">NDIS Packet Coalescing</a>. For more information about how to use receive filters in this interface, see <a href="https://msdn.microsoft.com/20EA71E0-B880-4891-A12E-76F4C9AB16E6">Managing Packet Coalescing Receive Filters</a>.
 
 
-<a href="netvista.single_root_i_o_virtualization__sr-iov_">Single Root I/O Virtualization (SR-IOV)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_a_receive_filter_on_a_virtual_port">Setting a Receive Filter on a Virtual Port</a>.
+<a href="https://msdn.microsoft.com/E64DD4F0-D5F8-4FFF-931B-C04C5C42D000">Single Root I/O Virtualization (SR-IOV)</a>. For more information about how to use receive filters in this interface, see <a href="https://msdn.microsoft.com/F0137D59-1701-4DFC-BB30-27E477FC0706">Setting a Receive Filter on a Virtual Port</a>.
 
 
-<a href="netvista.virtual_machine_queue__vmq__in_ndis_6_20">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="netvista.setting_and_clearing_vmq_filters">Setting and Clearing VMQ Filters</a>.
+<a href="https://msdn.microsoft.com/c502c7d6-bdf1-4656-b5a5-339250910f08">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="https://msdn.microsoft.com/bfee8a3c-d2be-4718-beb4-067b66756a41">Setting and Clearing VMQ Filters</a>.
 
 
 
@@ -92,7 +93,7 @@ typedef struct _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b> structure. The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
@@ -195,7 +196,7 @@ The type of test to perform for the receive filter.
 ### -field HeaderField
 
 The type of field in a header. The field type (for example,
-     <a href="netvista.ndis_mac_header_field">NDIS_MAC_HEADER_FIELD</a>) corresponds to the type of header that is specified in the 
+     <a href="..\ntddndis\ne-ntddndis-_ndis_mac_header_field.md">NDIS_MAC_HEADER_FIELD</a>) corresponds to the type of header that is specified in the 
      <b>FrameHeader</b> member.
      
 
@@ -215,14 +216,14 @@ The type of field in an Address Resolution Protocol (ARP) header.
 ### -field IPv4HeaderField
 
 An 
-       <a href="netvista.ndis_ipv4_header_field">NDIS_IPV4_HEADER_FIELD</a> enumeration
+       <a href="..\ntddndis\ne-ntddndis-_ndis_ipv4_header_field.md">NDIS_IPV4_HEADER_FIELD</a> enumeration
        value that specifies the type of field in an IP version 4 (IPv4) header.
 
 
 ### -field IPv6HeaderField
 
 An 
-       <a href="netvista.ndis_ipv6_header_field">NDIS_IPV6_HEADER_FIELD</a> enumeration
+       <a href="..\ntddndis\ne-ntddndis-_ndis_ipv6_header_field.md">NDIS_IPV6_HEADER_FIELD</a> enumeration
        value that specifies the type of field in an IP version 6 (IPv6) header.
 
 
@@ -249,7 +250,7 @@ This union contains the following members:
 
 A <b>UCHAR</b> value to compare with a field in a network packet.
 
-<div class="alert"><b>Note</b>  If the <b>MacHeaderField</b> member specifies an <b>NdisMacHeaderFieldPacketType</b> enumeration value, this member contains an <a href="netvista.ndis_mac_packet_type">NDIS_MAC_PACKET_TYPE</a> enumeration value.</div>
+<div class="alert"><b>Note</b>  If the <b>MacHeaderField</b> member specifies an <b>NdisMacHeaderFieldPacketType</b> enumeration value, this member contains an <a href="..\ntddndis\ne-ntddndis-_ndis_mac_packet_type.md">NDIS_MAC_PACKET_TYPE</a> enumeration value.</div>
 <div> </div>
 
 ### -field FieldShortValue
@@ -315,7 +316,7 @@ A <b>UCHAR</b> array to compare with a test result.
 ## -remarks
 The <b>NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</b> structure specifies the filter test criterion for one field
     in a possible array of field tests that can be specified with the 
-    <a href="netvista.ndis_receive_filter_parameters">
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_parameters.md">
     NDIS_RECEIVE_FILTER_PARAMETERS</a> structure.
 
 The following table describes how the network adapter uses the <b>ReceiveFilterTest</b>, <b>FieldValue</b>, and <b>ResultValue</b> members to perform a filter test on the specified header field value of a received packet.
@@ -331,14 +332,14 @@ Starting with NDIS 6.30, if the <b>NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNT
 The miniport driver must return a failed status for the
        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569795">OID_RECEIVE_FILTER_SET_FILTER</a> method request.
 
-The miniport driver  must configure the network adapter  to inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="netvista.ndis_net_buffer_list_8021q_info">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> that is associated with the packet's <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+The miniport driver  must configure the network adapter  to inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="..\ndis\ns-ndis-_ndis_net_buffer_list_8021q_info.md">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> that is associated with the packet's <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 Starting with NDIS 6.30, if the <b>NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO</b> flag is not set and there is a non-zero VLAN identifier filter that was configured by an OID set request of
        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569795">OID_RECEIVE_FILTER_SET_FILTER</a>, the miniport driver must do the following:
 
 The miniport driver must configure the network adapter  to inspect and filter the specified MAC address and VLAN identifier fields. 
 
-If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="netvista.ndis_net_buffer_list_8021q_info">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> that is associated with the packet's <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="..\ndis\ns-ndis-_ndis_net_buffer_list_8021q_info.md">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> that is associated with the packet's <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 
 ## -requirements
@@ -369,35 +370,35 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_arp_header_field">NDIS_ARP_HEADER_FIELD</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_arp_header_field.md">NDIS_ARP_HEADER_FIELD</a>
 </dt>
 <dt>
-<a href="netvista.ndis_frame_header">NDIS_FRAME_HEADER</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_frame_header.md">NDIS_FRAME_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_ipv4_header_field">NDIS_IPV4_HEADER_FIELD</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_ipv4_header_field.md">NDIS_IPV4_HEADER_FIELD</a>
 </dt>
 <dt>
-<a href="netvista.ndis_ipv6_header_field">NDIS_IPV6_HEADER_FIELD</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_ipv6_header_field.md">NDIS_IPV6_HEADER_FIELD</a>
 </dt>
 <dt>
-<a href="netvista.ndis_udp_header_field">NDIS_UDP_HEADER_FIELD</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_udp_header_field.md">NDIS_UDP_HEADER_FIELD</a>
 </dt>
 <dt>
-<a href="netvista.ndis_mac_header_field">NDIS_MAC_HEADER_FIELD</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_mac_header_field.md">NDIS_MAC_HEADER_FIELD</a>
 </dt>
 <dt>
-<a href="netvista.ndis_mac_packet_type">NDIS_MAC_PACKET_TYPE</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_mac_packet_type.md">NDIS_MAC_PACKET_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_receive_filter_parameters">
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_parameters.md">
    NDIS_RECEIVE_FILTER_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_receive_filter_test">NDIS_RECEIVE_FILTER_TEST</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_receive_filter_test.md">NDIS_RECEIVE_FILTER_TEST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569795">OID_RECEIVE_FILTER_SET_FILTER</a>
@@ -407,5 +408,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

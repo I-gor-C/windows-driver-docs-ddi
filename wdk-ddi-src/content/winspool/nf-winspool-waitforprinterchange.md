@@ -1,5 +1,5 @@
 ---
-UID: NF.winspool.WaitForPrinterChange
+UID: NF:winspool.WaitForPrinterChange
 title: WaitForPrinterChange function
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\waitforprinterchange.htm
 old-project: print
 ms.assetid: BD9DD9C4-D736-42DC-A55F-7F299351FA65
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: WaitForPrinterChange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BIDI_TYPE
 req.product: Windows 10 or later.
 ---
 

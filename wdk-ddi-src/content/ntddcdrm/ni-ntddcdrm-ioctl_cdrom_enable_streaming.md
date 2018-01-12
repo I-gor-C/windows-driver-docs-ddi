@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdrm.IOCTL_CDROM_ENABLE_STREAMING
+UID: NI:ntddcdrm.IOCTL_CDROM_ENABLE_STREAMING
 title: IOCTL_CDROM_ENABLE_STREAMING
 author: windows-driver-content
 description: Enables or disables CDROM streaming mode on a per-handle basis for raw read and write requests.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_cdrom_enable_streaming.htm
 old-project: storage
 ms.assetid: DC31EABA-CE58-4B6F-ADCD-0BF72A92C6AB
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, PWRITE_ROTATION, WRITE_ROTATION
+ms.date: 1/10/2018
+ms.keywords: _WRITE_ROTATION, *PWRITE_ROTATION, WRITE_ROTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWRITE_ROTATION, WRITE_ROTATION
 ---
 
 # IOCTL_CDROM_ENABLE_STREAMING IOCTL
@@ -41,7 +42,7 @@ req.irql:
 Enables or disables CDROM streaming mode on a per-handle basis for raw read and write requests. 
 
 To perform this operation, call the 
-   <a href="base.deviceiocontrol">DeviceIoControl</a> 
+   <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> 
    function and specify the <b>IOCTL_CDROM_ENABLE_STREAMING</b> I/O control request as the <i>dwIoControlCode</i> parameter.
 
 
@@ -50,12 +51,12 @@ To perform this operation, call the
 
 ### -input-buffer
 
-<a href="storage.cdrom_streaming_control">CDROM_STREAMING_CONTROL</a>
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_streaming_control.md">CDROM_STREAMING_CONTROL</a>
 
 
 
 ### -input-buffer-length
-Length of a <a href="storage.cdrom_streaming_control">CDROM_STREAMING_CONTROL</a>.
+Length of a <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_streaming_control.md">CDROM_STREAMING_CONTROL</a>.
 
 
 ### -output-buffer
@@ -116,15 +117,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="base.deviceiocontrol">DeviceIoControl</a>
+<a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>
 </dt>
 <dt>
-<a href="storage.cdrom_streaming_control">CDROM_STREAMING_CONTROL</a>
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_streaming_control.md">CDROM_STREAMING_CONTROL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_CDROM_ENABLE_STREAMING control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_CDROM_ENABLE_STREAMING control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

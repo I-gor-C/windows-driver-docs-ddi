@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfcompanion._WDF_TASK_QUEUE_DISPATCH_TYPE
+UID: NE:wdfcompanion._WDF_TASK_QUEUE_DISPATCH_TYPE
 title: _WDF_TASK_QUEUE_DISPATCH_TYPE
 author: windows-driver-content
 description: For internal use only.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_task_queue_dispatch_type.htm
 old-project: wdf
 ms.assetid: 27cc4067-33de-4f2d-abad-05c73c875458
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _WDF_TASK_QUEUE_DISPATCH_TYPE, WDF_TASK_QUEUE_DISPATCH_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: 
+req.typenames: WDF_TASK_QUEUE_DISPATCH_TYPE
 req.product: Windows 10 or later.
 ---
 

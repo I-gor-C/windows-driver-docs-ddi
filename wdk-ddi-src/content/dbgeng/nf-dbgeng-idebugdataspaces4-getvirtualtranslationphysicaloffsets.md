@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.GetVirtualTranslationPhysicalOffsets
+UID: NF:dbgeng.IDebugDataSpaces4.GetVirtualTranslationPhysicalOffsets
 title: IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets method
 author: windows-driver-content
 description: The GetVirtualTranslationPhysicalOffsets method returns the physical addresses of the system paging structures at different levels of the paging hierarchy.
 old-location: debugger\getvirtualtranslationphysicaloffsets.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 40438ee7-2e58-4048-8739-75f21179c22c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets method
@@ -93,7 +94,7 @@ This method is only available in kernel-mode debugging.
 
 Translating a virtual address to a physical address requires Windows  to walk down the paging hierarchy.  At each level it reads paging information from physical memory.  This method returns the offsets for these physical pages.  The number of levels in the paging hierarchy may be different for different addresses.
 
-The address at the last level of the hierarchy is the physical address corresponding to the specified virtual address.  This is what <a href="debugger.virtualtophysical">VirtualToPhysical</a> would return.
+The address at the last level of the hierarchy is the physical address corresponding to the specified virtual address.  This is what <a href="https://msdn.microsoft.com/library/windows/hardware/ff560335">VirtualToPhysical</a> would return.
 
 For details on how virtual addresses are translated into physical addresses, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.
 

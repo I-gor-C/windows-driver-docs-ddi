@@ -1,5 +1,5 @@
 ---
-UID: NS.FLTKERNEL._FLT_REGISTRATION
+UID: NS:fltkernel._FLT_REGISTRATION
 title: _FLT_REGISTRATION
 author: windows-driver-content
 description: The FLT_REGISTRATION structure is passed as a parameter to FltRegisterFilter.
@@ -7,8 +7,8 @@ old-location: ifsk\flt_registration.htm
 old-project: ifsk
 ms.assetid: 3313af42-0e0a-4ad0-b0bb-0afb795e24fd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FLT_REGISTRATION, FLT_REGISTRATION, PFLT_REGISTRATION, *PFLT_REGISTRATION
+ms.date: 1/9/2018
+ms.keywords: _FLT_REGISTRATION, FLT_REGISTRATION, *PFLT_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FLT_REGISTRATION, *PFLT_REGISTRATION
 ---
 
 # _FLT_REGISTRATION structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The FLT_REGISTRATION structure is passed as a parameter to <a href="ifsk.fltregisterfilter">FltRegisterFilter</a>. 
+The FLT_REGISTRATION structure is passed as a parameter to <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>. 
 
 
 
@@ -127,12 +128,12 @@ If this flag is set, the minifilter will support attaching to a direct access (D
 
 ### -field ContextRegistration
 
- A variable-length array of <a href="ifsk.flt_context_registration">FLT_CONTEXT_REGISTRATION</a> structures, one for each context type that the minifilter uses. The last element in the array must be {FLT_CONTEXT_END}. 
+ A variable-length array of <a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a> structures, one for each context type that the minifilter uses. The last element in the array must be {FLT_CONTEXT_END}. 
 
 
 ### -field OperationRegistration
 
-A variable-length array of <a href="ifsk.flt_operation_registration">FLT_OPERATION_REGISTRATION</a> structures, one for each type of I/O for which the minifilter registers preoperation (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) and postoperation (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) callback routines. The last element in the array must be {IRP_MJ_OPERATION_END}. 
+A variable-length array of <a href="..\fltkernel\ns-fltkernel-_flt_operation_registration.md">FLT_OPERATION_REGISTRATION</a> structures, one for each type of I/O for which the minifilter registers preoperation (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) and postoperation (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) callback routines. The last element in the array must be {IRP_MJ_OPERATION_END}. 
 
 
 ### -field FilterUnloadCallback
@@ -184,7 +185,7 @@ A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt_normalize
 
 (Windows Vista and later only.)   A pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt_normalize_name_component_ex.md">PFLT_NORMALIZE_NAME_COMPONENT_EX</a> to be registered as the minifilter driver's <i>NormalizeNameComponentExCallback</i> routine. This member is optional and can be <b>NULL</b>.  
 
-Compared to the <i>NormalizeNameComponentCallback</i> callback routine, the <i>NormalizeNameComponentExCallback</i> callback routine supports an additional file object parameter,   <i> FileObject</i> (of type PFILE_OBJECT). A minifilter driver can use this parameter to acquire additional information, such as that provided by the <a href="ifsk.txn_parameter_block">TXN_PARAMETER_BLOCK</a> structure.
+Compared to the <i>NormalizeNameComponentCallback</i> callback routine, the <i>NormalizeNameComponentExCallback</i> callback routine supports an additional file object parameter,   <i> FileObject</i> (of type PFILE_OBJECT). A minifilter driver can use this parameter to acquire additional information, such as that provided by the <a href="..\ntddk\ns-ntddk-_txn_parameter_block.md">TXN_PARAMETER_BLOCK</a> structure.
 
 A minifilter driver can simultaneously set both the <i>NormalizeNameComponentCallback</i> and <i>NormalizeNameComponentExCallback</i> members to <b>NULL</b>; however, a name provider minifilter driver must register either a <i>NormalizeNameComponentCallback</i> or <i>NormalizeNameComponentExCallback</i> callback routine, or both.  For example, a name provider minifilter driver that has no use for the additional <i>FileObject</i> parameter can set the <i>NormalizeNameComponentExCallback</i> member to <b>NULL</b> and only provide a <i>NormalizeNameComponentCallback</i> callback routine.
 
@@ -193,11 +194,11 @@ A minifilter driver can provide both a <i>NormalizeNameComponentCallback</i> cal
 
 ### -field SectionNotificationCallback
 
-Pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt_section_conflict_notification_callback.md">PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK</a> to be registered as the minifilter's <i>SectionNotificationCallback</i> routine. This member is optional and can be <b>NULL</b>. This callback is called for notifications of I/O failures for sections created with <a href="ifsk.fltcreatesectionfordatascan">FltCreateSectionForDatascan</a>.
+Pointer to a routine of type <a href="..\fltkernel\nc-fltkernel-pflt_section_conflict_notification_callback.md">PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK</a> to be registered as the minifilter's <i>SectionNotificationCallback</i> routine. This member is optional and can be <b>NULL</b>. This callback is called for notifications of I/O failures for sections created with <a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDatascan</a>.
 
 
 ## -remarks
-The FLT_REGISTRATION structure is used to provide information about a file system minifilter, such as a <i>FilterUnloadCallback</i> (<a href="..\fltkernel\nc-fltkernel-pflt_filter_unload_callback.md">PFLT_FILTER_UNLOAD_CALLBACK</a>) routine and preoperation (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) and postoperation (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) callback routines, to the filter manager. The minifilter passes a pointer to this structure as the <i>Registration</i> parameter to <a href="ifsk.fltregisterfilter">FltRegisterFilter</a>. 
+The FLT_REGISTRATION structure is used to provide information about a file system minifilter, such as a <i>FilterUnloadCallback</i> (<a href="..\fltkernel\nc-fltkernel-pflt_filter_unload_callback.md">PFLT_FILTER_UNLOAD_CALLBACK</a>) routine and preoperation (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) and postoperation (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) callback routines, to the filter manager. The minifilter passes a pointer to this structure as the <i>Registration</i> parameter to <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>. 
 
 
 ## -requirements
@@ -218,13 +219,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.flt_context_registration">FLT_CONTEXT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="ifsk.flt_operation_registration">FLT_OPERATION_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_operation_registration.md">FLT_OPERATION_REGISTRATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltregisterfilter">FltRegisterFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_filter_unload_callback.md">PFLT_FILTER_UNLOAD_CALLBACK</a>
@@ -264,5 +265,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_REGISTRATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FLT_REGISTRATION structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

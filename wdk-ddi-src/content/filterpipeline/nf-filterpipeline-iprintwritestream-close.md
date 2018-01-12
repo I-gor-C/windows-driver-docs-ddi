@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPrintWriteStream.Close
+UID: NF:filterpipeline.IPrintWriteStream.Close
 title: IPrintWriteStream::Close method
 author: windows-driver-content
 description: The Close method closes a stream and ends the writing to that stream. This method is mandatory. You must call this method when the filter is done writing.
@@ -7,7 +7,7 @@ old-location: print\iprintwritestream_close.htm
 old-project: print
 ms.assetid: d3f828bf-854f-4d2d-a869-ee5c002a1728
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintWriteStream, IPrintWriteStream::Close, Close
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintWriteStream::Close method

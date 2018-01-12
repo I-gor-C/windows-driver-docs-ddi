@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._ISOCH_DESCRIPTOR
+UID: NS:1394._ISOCH_DESCRIPTOR
 title: _ISOCH_DESCRIPTOR
 author: windows-driver-content
 description: The ISOCH_DESCRIPTOR structure describes a buffer to be attached or detailed from a resource handle, using the REQUEST_ISOCH_ATTACH_BUFFERS and REQUEST_ISOCH_DETACH_BUFFERS requests.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 4f508af6-942b-4d48-8874-4b6d9918f01f
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR, PISOCH_DESCRIPTOR
+ms.keywords: _ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR
 ---
 
 # _ISOCH_DESCRIPTOR structure

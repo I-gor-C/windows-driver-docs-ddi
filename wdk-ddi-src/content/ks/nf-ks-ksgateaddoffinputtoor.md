@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsGateAddOffInputToOr
+UID: NF:ks.KsGateAddOffInputToOr
 title: KsGateAddOffInputToOr function
 author: windows-driver-content
 description: The KsGateAddOffInputToOr function adds a new input in the OFF state to a given OR gate.
@@ -7,7 +7,7 @@ old-location: stream\ksgateaddoffinputtoor.htm
 old-project: stream
 ms.assetid: 93d5076c-d8db-4b4b-b390-5f9072d2ae63
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGateAddOffInputToOr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: 
 ---
 
 # KsGateAddOffInputToOr function
@@ -55,7 +56,7 @@ void __inline KsGateAddOffInputToOr(
 
 ### -param OrGate [in]
 
-A pointer to a <a href="stream.ksgate">KSGATE</a> structure representing the OR gate to which to add a new OFF input.
+A pointer to a <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure representing the OR gate to which to add a new OFF input.
 
 
 ## -returns
@@ -117,24 +118,24 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksgateremoveoffinputfromor">KsGateRemoveOffInputFromOr</a>
+<a href="..\ks\nf-ks-ksgateremoveoffinputfromor.md">KsGateRemoveOffInputFromOr</a>
 </dt>
 <dt>
-<a href="stream.ksgateaddoninputtoor">KsGateAddOnInputToOr</a>
+<a href="..\ks\nf-ks-ksgateaddoninputtoor.md">KsGateAddOnInputToOr</a>
 </dt>
 <dt>
-<a href="stream.ksgateremoveoninputfromor">KsGateRemoveOnInputFromOr</a>
+<a href="..\ks\nf-ks-ksgateremoveoninputfromor.md">KsGateRemoveOnInputFromOr</a>
 </dt>
 <dt>
-<a href="stream.ksgateturninputon">KsGateTurnInputOn</a>
+<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
 </dt>
 <dt>
-<a href="stream.ksgateturninputoff">KsGateTurnInputOff</a>
+<a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGateAddOffInputToOr function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGateAddOffInputToOr function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

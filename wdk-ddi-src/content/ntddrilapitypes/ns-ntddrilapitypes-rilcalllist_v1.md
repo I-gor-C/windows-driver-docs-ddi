@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLLIST_V1
+UID: NS:ntddrilapitypes.RILCALLLIST_V1
 title: RILCALLLIST_V1
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcalllist_v1.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 09b4f4e7-2688-4d6e-8512-a94c5ce25a79
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLLIST_V1, LPRILCALLLIST_V1, RILCALLLIST_V1, *LPRILCALLLIST_V1
+ms.date: 1/8/2018
+ms.keywords: RILCALLLIST_V1, RILCALLLIST_V1, *LPRILCALLLIST_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLLIST_V1, *LPRILCALLLIST_V1
 ---
 
 # RILCALLLIST_V1 structure

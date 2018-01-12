@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMFreeSharedMemory
+UID: NF:ndis.NdisMFreeSharedMemory
 title: NdisMFreeSharedMemory function
 author: windows-driver-content
 description: NdisMFreeSharedMemory frees memory that was previously allocated by NdisMAllocateSharedMemory or NdisMAllocateSharedMemoryAsyncEx by the driver of a DMA NIC.
 old-location: netvista\ndismfreesharedmemory.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6ab11b97-e422-4ce9-b98b-51496974cb47
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMFreeSharedMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMFreeSharedMemory function
@@ -39,8 +40,8 @@ req.irql: <= DISPATCH_LEVEL
 
 ## -description
 <b>NdisMFreeSharedMemory</b> frees memory that was previously allocated by 
-  <a href="netvista.ndismallocatesharedmemory">NdisMAllocateSharedMemory</a> or 
-  <a href="netvista.ndismallocatesharedmemoryasyncex">
+  <a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a> or 
+  <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
   NdisMAllocateSharedMemoryAsyncEx</a> by the driver of a DMA NIC.
 
 
@@ -96,8 +97,8 @@ None
 
 ## -remarks
 If it has already made a successful call to 
-    <a href="netvista.ndismallocatesharedmemory">NdisMAllocateSharedMemory</a> or 
-    <a href="netvista.ndismallocatesharedmemoryasyncex">
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a> or 
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
     NdisMAllocateSharedMemoryAsyncEx</a>, the miniport driver of a DMA device calls 
     <b>NdisMFreeSharedMemory</b> if any of the following occurs:
 
@@ -195,7 +196,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>, <a href="devtest.ndis_ndismfreesharedmemory">NdisMFreeSharedMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>, <a href="..\ndis\nf-ndis-ndismfreesharedmemory.md">NdisMFreeSharedMemory</a>
 </td>
 </tr>
 </table>
@@ -216,10 +217,10 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_shutdown.md">MiniportShutdownEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismallocatesharedmemory">NdisMAllocateSharedMemory</a>
+<a href="..\ndis\nf-ndis-ndismallocatesharedmemory.md">NdisMAllocateSharedMemory</a>
 </dt>
 <dt>
-<a href="netvista.ndismallocatesharedmemoryasyncex">
+<a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
    NdisMAllocateSharedMemoryAsyncEx</a>
 </dt>
 </dl>
@@ -227,5 +228,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMFreeSharedMemory function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMFreeSharedMemory function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

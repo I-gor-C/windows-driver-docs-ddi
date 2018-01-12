@@ -1,5 +1,5 @@
 ---
-UID: NF.winsplp.GetPrintProcessorCapabilities
+UID: NF:winsplp.GetPrintProcessorCapabilities
 title: GetPrintProcessorCapabilities function
 author: windows-driver-content
 description: A print processor's GetPrintProcessorCapabilities function returns capabilities associated with a specified input data type.
@@ -7,7 +7,7 @@ old-location: print\getprintprocessorcapabilities.htm
 old-project: print
 ms.assetid: 81aacb41-cba7-4bd0-aded-919a4df0b934
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: GetPrintProcessorCapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: NOTIFICATION_CONFIG_FLAGS
 req.product: Windows 10 or later.
 ---
 

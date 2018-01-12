@@ -1,5 +1,5 @@
 ---
-UID: NE.mfidl.MF_TRANSFER_VIDEO_FRAME_FLAGS
+UID: NE:mfidl.MF_TRANSFER_VIDEO_FRAME_FLAGS
 title: MF_TRANSFER_VIDEO_FRAME_FLAGS
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\mf_transfer_video_frame_flags.htm
 old-project: stream
 ms.assetid: 0F4006D0-11B7-48F3-8ED4-00B09EFA67D1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: MF_TRANSFER_VIDEO_FRAME_FLAGS, MF_TRANSFER_VIDEO_FRAME_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: MF_TRANSFER_VIDEO_FRAME_FLAGS
 ---
 
 # MF_TRANSFER_VIDEO_FRAME_FLAGS enumeration

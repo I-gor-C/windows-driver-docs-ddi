@@ -1,13 +1,13 @@
 ---
-UID: NF.ufxclient.UfxDeviceNotifyResume
+UID: NF:ufxclient.UfxDeviceNotifyResume
 title: UfxDeviceNotifyResume function
 author: windows-driver-content
 description: Notifies UFX about a USB bus resume event.
 old-location: buses\ufxdevicenotifyresume.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: A89E9E65-937D-455F-A718-A6BC7611BB8F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UfxDeviceNotifyResume
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID UfxDeviceNotifyResume(
 
 ### -param UfxDevice [in]
 
-A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
+A handle to a UFX device object that the driver created by calling <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.
 
 
 ## -returns

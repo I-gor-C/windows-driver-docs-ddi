@@ -1,14 +1,14 @@
 ---
-UID: NS.DOT11WDI._WDI_TX_COMPLETE_DATA
+UID: NS:dot11wdi._WDI_TX_COMPLETE_DATA
 title: _WDI_TX_COMPLETE_DATA
 author: windows-driver-content
 description: The WDI_TX_COMPLETE_DATA structure defines TX completion data.
 old-location: netvista\wdi_tx_complete_data.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bf7951de-3368-4faf-9bae-272c6d76d1a0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA, PWDI_TX_COMPLETE_DATA, *PWDI_TX_COMPLETE_DATA
+ms.date: 1/8/2018
+ms.keywords: _WDI_TX_COMPLETE_DATA, *PWDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDI_TX_COMPLETE_DATA, WDI_TX_COMPLETE_DATA
 ---
 
 # _WDI_TX_COMPLETE_DATA structure

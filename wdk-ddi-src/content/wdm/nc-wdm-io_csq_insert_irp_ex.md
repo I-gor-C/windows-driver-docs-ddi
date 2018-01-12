@@ -1,5 +1,5 @@
 ---
-UID: NC.wdm.IO_CSQ_INSERT_IRP_EX
+UID: NC:wdm.IO_CSQ_INSERT_IRP_EX
 title: IO_CSQ_INSERT_IRP_EX
 author: windows-driver-content
 description: The CsqInsertIrpEx routine is used by the system to insert an IRP into a driver-implemented, cancel-safe IRP queue.
@@ -7,8 +7,8 @@ old-location: kernel\csqinsertirpex.htm
 old-project: kernel
 ms.assetid: 1e407bcc-0a2b-42fa-982d-8ab0f12f082b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, PWDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.date: 1/4/2018
+ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -79,9 +80,9 @@ Pointer to driver-defined context for the insert operation.
 
 
 ## -remarks
-The driver specifies the <i>CsqInsertIrpEx</i> routine for a cancel-safe IRP queue when it initializes the queue's <b>IO_CSQ</b> structure. The driver specifies the routine as the <i>CsqInsertIrp</i> parameter of <a href="kernel.iocsqinitializeex">IoCsqInitializeEx</a> when it initializes <b>IO_CSQ</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540755">Cancel-Safe IRP Queues</a>.
+The driver specifies the <i>CsqInsertIrpEx</i> routine for a cancel-safe IRP queue when it initializes the queue's <b>IO_CSQ</b> structure. The driver specifies the routine as the <i>CsqInsertIrp</i> parameter of <a href="..\wdm\nf-wdm-iocsqinitializeex.md">IoCsqInitializeEx</a> when it initializes <b>IO_CSQ</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540755">Cancel-Safe IRP Queues</a>.
 
-The <a href="kernel.iocsqinsertirpex">IoCsqInsertIrpEx</a> routine calls <i>CsqInsertIrpEx</i> to insert the IRP into the queue. The <i>InsertContext</i> parameter of <b>IoCsqInsertIrpEx</b> is passed as the <i>InsertContext</i> parameter of <i>CsqInsertIrpEx</i>.
+The <a href="..\wdm\nf-wdm-iocsqinsertirpex.md">IoCsqInsertIrpEx</a> routine calls <i>CsqInsertIrpEx</i> to insert the IRP into the queue. The <i>InsertContext</i> parameter of <b>IoCsqInsertIrpEx</b> is passed as the <i>InsertContext</i> parameter of <i>CsqInsertIrpEx</i>.
 
 To define a <i>CsqInsertIrpEx</i> callback routine, you must first provide a function declaration that identifies the type of callback routine you're defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps <a href="https://msdn.microsoft.com/2F3549EF-B50F-455A-BDC7-1F67782B8DCA">Code Analysis for Drivers</a>, <a href="https://msdn.microsoft.com/74feeb16-387c-4796-987a-aff3fb79b556">Static Driver Verifier</a> (SDV), and other verification tools find errors, and it's a requirement for writing drivers for the Windows operating system.
 
@@ -124,22 +125,22 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550560">IO_CSQ</a>
 </dt>
 <dt>
-<a href="kernel.iocsqinitialize">IoCsqInitialize</a>
+<a href="..\wdm\nf-wdm-iocsqinitialize.md">IoCsqInitialize</a>
 </dt>
 <dt>
-<a href="kernel.iocsqinitializeex">IoCsqInitializeEx</a>
+<a href="..\wdm\nf-wdm-iocsqinitializeex.md">IoCsqInitializeEx</a>
 </dt>
 <dt>
-<a href="kernel.iocsqinsertirp">IoCsqInsertIrp</a>
+<a href="..\wdm\nf-wdm-iocsqinsertirp.md">IoCsqInsertIrp</a>
 </dt>
 <dt>
-<a href="kernel.iocsqinsertirpex">IoCsqInsertIrpEx</a>
+<a href="..\wdm\nf-wdm-iocsqinsertirpex.md">IoCsqInsertIrpEx</a>
 </dt>
 <dt>
-<a href="kernel.iocsqremoveirp">IoCsqRemoveIrp</a>
+<a href="..\wdm\nf-wdm-iocsqremoveirp.md">IoCsqRemoveIrp</a>
 </dt>
 <dt>
-<a href="kernel.iocsqremovenextirp">IoCsqRemoveNextIrp</a>
+<a href="..\wdm\nf-wdm-iocsqremovenextirp.md">IoCsqRemoveNextIrp</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-io_csq_acquire_lock.md">CsqAcquireLock</a>
@@ -164,5 +165,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_CSQ_INSERT_IRP_EX routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_CSQ_INSERT_IRP_EX routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

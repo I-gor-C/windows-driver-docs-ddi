@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILCALLVIDEOMEDIASTATE
+UID: NS:ntddrilapitypes.RILCALLVIDEOMEDIASTATE
 title: RILCALLVIDEOMEDIASTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallvideomediastate.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f40b9989-a911-4b89-a5a3-dda9a225b576
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLVIDEOMEDIASTATE, RILCALLVIDEOMEDIASTATE, LPRILCALLVIDEOMEDIASTATE, *LPRILCALLVIDEOMEDIASTATE
+ms.date: 1/8/2018
+ms.keywords: RILCALLVIDEOMEDIASTATE, RILCALLVIDEOMEDIASTATE, *LPRILCALLVIDEOMEDIASTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLVIDEOMEDIASTATE, *LPRILCALLVIDEOMEDIASTATE
 ---
 
 # RILCALLVIDEOMEDIASTATE structure

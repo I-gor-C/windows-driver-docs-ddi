@@ -1,5 +1,5 @@
 ---
-UID: NC.dispmprt.DXGKDDI_OPM_CREATE_PROTECTED_OUTPUT
+UID: NC:dispmprt.DXGKDDI_OPM_CREATE_PROTECTED_OUTPUT
 title: DXGKDDI_OPM_CREATE_PROTECTED_OUTPUT
 author: windows-driver-content
 description: The DxgkDdiOPMCreateProtectedOutput function creates a new protected output object with Certified Output Protection Protocol (COPP) or OPM semantics.
@@ -7,8 +7,8 @@ old-location: display\dxgkddiopmcreateprotectedoutput.htm
 old-project: display
 ms.assetid: 8143732e-cef6-49f1-9b20-db6b6ee073e6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 12/29/2017
+ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ---
 
 # DXGKDDI_OPM_CREATE_PROTECTED_OUTPUT callback
@@ -71,7 +72,7 @@ An integer that uniquely identifies the video present target that corresponds to
 
 ### -param NewVideoOutputSemantics [in]
 
-A <a href="display.dxgkmdt_opm_video_output_semantics">DXGKMDT_OPM_VIDEO_OUTPUT_SEMANTICS</a>-typed value that determines whether the new protected output has COPP or OPM semantics.
+A <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_video_output_semantics.md">DXGKMDT_OPM_VIDEO_OUTPUT_SEMANTICS</a>-typed value that determines whether the new protected output has COPP or OPM semantics.
 
 
 ### -param NewProtectedOutputHandle [out]
@@ -180,12 +181,12 @@ PASSIVE_LEVEL (see Remarks section)
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_destroy_protected_output.md">DxgkDdiOPMDestroyProtectedOutput</a>
 </dt>
 <dt>
-<a href="display.dxgkmdt_opm_video_output_semantics">DXGKMDT_OPM_VIDEO_OUTPUT_SEMANTICS</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_video_output_semantics.md">DXGKMDT_OPM_VIDEO_OUTPUT_SEMANTICS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_OPM_CREATE_PROTECTED_OUTPUT callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKDDI_OPM_CREATE_PROTECTED_OUTPUT callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

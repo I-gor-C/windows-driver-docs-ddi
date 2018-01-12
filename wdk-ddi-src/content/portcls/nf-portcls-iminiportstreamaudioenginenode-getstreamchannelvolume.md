@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportStreamAudioEngineNode.GetStreamChannelVolume
+UID: NF:portcls.IMiniportStreamAudioEngineNode.GetStreamChannelVolume
 title: IMiniportStreamAudioEngineNode::GetStreamChannelVolume method
 author: windows-driver-content
 description: Gets the current volume level that is applied to the audio stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportStreamAudioEngineNode::GetStreamChannelVolume method

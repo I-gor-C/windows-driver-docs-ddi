@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:61883
 ---
 
 # 61883.h header
@@ -33,7 +33,6 @@ This header is used by IEEE. For more information, see
 | [_CIP_DATA_FORMAT_VER2 structure](ns-61883-_cip_data_format_ver2.md) | This structure is a CIP data format which is used by CMP_CONNECT_VER2. |
 | [_CIP_DATA_FORMAT_VER3 structure](ns-61883-_cip_data_format_ver3.md) | This structure is used by CipDataFormat. |
 | [_CIP_FRAME structure](ns-61883-_cip_frame.md) | The CIP_FRAME structure describes a frame to be attached to an input or output plug. |
-| [_CIP_FRAME structure](ns-61883-_cip_frame~r1.md) | The CIP_FRAME structure describes a frame to be attached to an input or output plug. |
 | [_CIP_LISTEN structure](ns-61883-_cip_listen.md) | This structure is used for a listen request. The request begins isochronous reception on the specified connection. |
 | [_CIP_NOTIFY_INFO structure](ns-61883-_cip_notify_info.md) | The CIP_NOTIFY_INFO structure contains information about the frame. |
 | [_CIP_STOP structure](ns-61883-_cip_stop.md) | This structure is used to stop transmission or reception. |
@@ -53,9 +52,7 @@ This header is used by IEEE. For more information, see
 | [_FCP_FRAME structure](ns-61883-_fcp_frame.md) | The FCP_FRAME structure describes a function control protocol (FCP) request. |
 | [_FCP_GET_REQUEST structure](ns-61883-_fcp_get_request.md) | This structure is used for a get request. |
 | [_FCP_GET_RESPONSE structure](ns-61883-_fcp_get_response.md) | The structure is used in a request yjsy retrieves the next FCP response from the queue of requests maintained by the IEC-61883 protocol driver. |
-| [_FCP_GET_RESPONSE structure](ns-61883-_fcp_get_response~r1.md) | The structure is used in a request yjsy retrieves the next FCP response from the queue of requests maintained by the IEC-61883 protocol driver. |
 | [_FCP_SEND_REQUEST structure](ns-61883-_fcp_send_request.md) | This structure is used for a send request. |
-| [_FCP_SEND_REQUEST structure](ns-61883-_fcp_send_request~r1.md) | This structure is used for a send request. |
 | [_FCP_SEND_RESPONSE structure](ns-61883-_fcp_send_response.md) | This structure is used for a send response. |
 | [_GET_UNIT_CAPABILITIES structure](ns-61883-_get_unit_capabilities.md) | The GET_UNIT_CAPABILITIES structure is used in conjunction with the Av61883_GetUnitInfo request to retrieve unit information about a device's capabilities. |
 | [_GET_UNIT_IDS structure](ns-61883-_get_unit_ids.md) | The GET_UNIT_CAPABILITIES structure is used in conjunction with the Av61883_GetUnitInfo request to retrieve device identifiers. |

@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d12umddi.PFND3D12DDI_CREATE_PIPELINE_STATE_0021
+UID: NC:d3d12umddi.PFND3D12DDI_CREATE_PIPELINE_STATE_0021
 title: PFND3D12DDI_CREATE_PIPELINE_STATE_0021
 author: windows-driver-content
 description: The pfnCreatePipelineState callback function creates a pipeline state.
@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_create_pipeline_state_0021.htm
 old-project: display
 ms.assetid: 08C19E55-7DD7-4BDF-8C9A-A2E1B973AFEC
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 # PFND3D12DDI_CREATE_PIPELINE_STATE_0021 callback

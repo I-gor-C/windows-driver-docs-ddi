@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA._KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT
+UID: NS:ksmedia._KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT
 title: _KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT
 author: windows-driver-content
 description: The KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT structure describes the constraints specific to any signal processing mode.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT
 ---
 
 # _KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT structure
@@ -111,7 +112,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.ksaudio_packetsize_constraints">KSAUDIO_PACKETSIZE_CONSTRAINTS</a>
+<a href="..\ksmedia\ns-ksmedia-_ksaudio_packetsize_constraints.md">KSAUDIO_PACKETSIZE_CONSTRAINTS</a>
 </dt>
 </dl>
  

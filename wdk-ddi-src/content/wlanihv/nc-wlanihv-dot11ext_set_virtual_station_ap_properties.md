@@ -1,14 +1,14 @@
 ---
-UID: NC.wlanihv.DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES
+UID: NC:wlanihv.DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES
 title: DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11extsetvirtualstationapproperties.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 11ba5799-2bb5-475f-bf69-cf1a1c3c128c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BINARY_CONTAINER, *PBINARY_CONTAINER, PBINARY_CONTAINER, BINARY_CONTAINER
+ms.date: 1/8/2018
+ms.keywords: _DRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W, DRIVER_INFO_8
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -82,7 +83,7 @@ The number of elements in the array of structures pointed to by the
 ### -param pProperties [in]
 
 A pointer to an array of 
-     <a href="netvista.dot11ext_virtual_station_ap_property">
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_virtual_station_ap_property.md">
      DOT11EXT_VIRTUAL_STATION_AP_PROPERTY</a> structures that specify the properties of access points (APs)
      that the virtual 802.11 station is attempting to host in the current connection session.
 
@@ -153,7 +154,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11ext_virtual_station_ap_property">
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_virtual_station_ap_property.md">
    DOT11EXT_VIRTUAL_STATION_AP_PROPERTY</a>
 </dt>
 <dt>
@@ -168,5 +169,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

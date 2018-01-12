@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioEngineNode.SetGfxState
+UID: NF:portcls.IMiniportAudioEngineNode.SetGfxState
 title: IMiniportAudioEngineNode::SetGfxState method
 author: windows-driver-content
 description: Sets the state of the global effects (GFX) node in the audio engine.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioEngineNode::SetGfxState method

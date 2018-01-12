@@ -1,5 +1,5 @@
 ---
-UID: NE.keyworddetectoroemadapter.__MIDL_IKeywordDetectorOemAdapter_0002
+UID: NE:keyworddetectoroemadapter.__MIDL_IKeywordDetectorOemAdapter_0002
 title: __MIDL_IKeywordDetectorOemAdapter_0002
 author: windows-driver-content
 description: The KEYWORDID enumeration identifies the phrase text/function of a keyword. The value is also be used in the Windows Biometric Service adapters.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDID
 ---
 
 # __MIDL_IKeywordDetectorOemAdapter_0002 enumeration

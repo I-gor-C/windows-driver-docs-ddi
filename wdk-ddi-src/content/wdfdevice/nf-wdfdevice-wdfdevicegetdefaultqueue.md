@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdevice.WdfDeviceGetDefaultQueue
+UID: NF:wdfdevice.WdfDeviceGetDefaultQueue
 title: WdfDeviceGetDefaultQueue function
 author: windows-driver-content
 description: The WdfDeviceGetDefaultQueue method returns a handle to a device's default I/O queue.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicegetdefaultqueue.htm
 old-project: wdf
 ms.assetid: 914c4ef8-2210-468c-8720-11f8adf9dce7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDeviceGetDefaultQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 ## -remarks
-For more information about default I/O queues, see <a href="wdf.creating_i_o_queues">Creating I/O Queues</a>.
+For more information about default I/O queues, see <a href="https://msdn.microsoft.com/03b09c94-6b72-4234-b21f-203f93b7a2e8">Creating I/O Queues</a>.
 
 The following code example obtains a handle to a device's default I/O queue.
 
@@ -145,7 +146,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>

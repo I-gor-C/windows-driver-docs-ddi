@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemPrintTicketProvider.CompletePrintCapabilities
+UID: NF:prcomoem.IPrintOemPrintTicketProvider.CompletePrintCapabilities
 title: IPrintOemPrintTicketProvider::CompletePrintCapabilities method
 author: windows-driver-content
 description: The IPrintOemPrintTicketProvider::CompletePrintCapabilities method fills in the remaining entries of the specified print capabilities document.
@@ -7,7 +7,7 @@ old-location: print\iprintoemprintticketprovider_completeprintcapabilities.htm
 old-project: print
 ms.assetid: 067eca3b-f487-405a-9799-bd62376f9e24
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemPrintTicketProvider, IPrintOemPrintTicketProvider::CompletePrintCapabilities, CompletePrintCapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 

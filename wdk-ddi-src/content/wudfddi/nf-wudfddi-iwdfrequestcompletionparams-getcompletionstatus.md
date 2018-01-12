@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFRequestCompletionParams.GetCompletionStatus
+UID: NF:wudfddi.IWDFRequestCompletionParams.GetCompletionStatus
 title: IWDFRequestCompletionParams::GetCompletionStatus method
 author: windows-driver-content
 description: The GetCompletionStatus method retrieves the completion status of an I/O request.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfrequestcompletionparams_getcompletionstatus.htm
 old-project: wdf
 ms.assetid: 8959fc25-2477-485a-aa40-10d6228cb476
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFRequestCompletionParams, IWDFRequestCompletionParams::GetCompletionStatus, GetCompletionStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -58,15 +59,15 @@ HRESULT GetCompletionStatus();
 ## -returns
 <b>GetCompletionStatus</b> returns S_OK for a successful completion status. Otherwise, this method returns one of the error codes that are defined in Winerror.h.
 
-For a code example of how to use the <b>GetCompletionStatus</b> method, see <a href="wdf.iwdfiorequest_getcompletionparams">IWDFIoRequest::GetCompletionParams</a>.
+For a code example of how to use the <b>GetCompletionStatus</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a>.
 
 <b>GetCompletionStatus</b> returns S_OK for a successful completion status. Otherwise, this method returns one of the error codes that are defined in Winerror.h.
 
-For a code example of how to use the <b>GetCompletionStatus</b> method, see <a href="wdf.iwdfiorequest_getcompletionparams">IWDFIoRequest::GetCompletionParams</a>.
+For a code example of how to use the <b>GetCompletionStatus</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a>.
 
 <b>GetCompletionStatus</b> returns S_OK for a successful completion status. Otherwise, this method returns one of the error codes that are defined in Winerror.h.
 
-For a code example of how to use the <b>GetCompletionStatus</b> method, see <a href="wdf.iwdfiorequest_getcompletionparams">IWDFIoRequest::GetCompletionParams</a>.
+For a code example of how to use the <b>GetCompletionStatus</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559084">IWDFIoRequest::GetCompletionParams</a>.
 
 
 ## -remarks
@@ -139,5 +140,5 @@ DLL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFRequestCompletionParams::GetCompletionStatus method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFRequestCompletionParams::GetCompletionStatus method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

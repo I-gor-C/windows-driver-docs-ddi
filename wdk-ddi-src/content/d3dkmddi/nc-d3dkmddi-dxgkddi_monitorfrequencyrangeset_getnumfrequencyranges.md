@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES
+UID: NC:d3dkmddi.DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES
 title: DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES
 author: windows-driver-content
 description: The pfnGetNumFrequencyRanges returns the number of frequency range descriptors in a specified monitor frequency range set object.
@@ -7,7 +7,7 @@ old-location: display\dxgk_monitorfrequencyrangeset_interface_pfngetnumfrequency
 old-project: display
 ms.assetid: ba70c191-832f-4dd1-b949-cb47cf736c6e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 # DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES callback
@@ -59,7 +60,7 @@ NTSTATUS APIENTRY pfnGetNumFrequencyRanges(
 
 ### -param hMonitorFrequencyRangeSet [in]
 
-[in] A handle to a monitor frequency range set object. The display miniport driver previously obtained this handle by calling the <b>pfnGetMonitorFrequencyRangeSet</b> function of the <a href="display.monitor_interface">Monitor interface</a>. 
+[in] A handle to a monitor frequency range set object. The display miniport driver previously obtained this handle by calling the <b>pfnGetMonitorFrequencyRangeSet</b> function of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568433">Monitor interface</a>. 
 
 
 ### -param pNumMonitorFrequencyRanges [out]

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.DbgPrint
+UID: NF:wdm.DbgPrint
 title: DbgPrint function
 author: windows-driver-content
 description: The DbgPrint routine sends a message to the kernel debugger.
@@ -7,7 +7,7 @@ old-location: devtest\dbgprint.htm
 old-project: devtest
 ms.assetid: abff1656-dceb-464f-a89c-30d7a24f742d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: DbgPrint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
 req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql: <= DIRQL (see Comments section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -76,7 +77,7 @@ If successful, <b>DbgPrint</b> returns the NTSTATUS code STATUS_SUCCESS; otherwi
 
 Only kernel-mode drivers can call the <b>DbgPrint</b> routine. 
 
-In Microsoft Windows Server 2003 and earlier versions of Windows, the <b>DbgPrint</b> routine sends a message to the kernel debugger. In Windows Vista and later versions of Windows, <b>DbgPrint</b> sends a message only if certain conditions apply. Specifically, it behaves like the <a href="devtest.dbgprintex">DbgPrintEx</a> routine with the DEFAULT component and a message importance level of DPFLTR_INFO_LEVEL. In other words, the following two function calls are identical:
+In Microsoft Windows Server 2003 and earlier versions of Windows, the <b>DbgPrint</b> routine sends a message to the kernel debugger. In Windows Vista and later versions of Windows, <b>DbgPrint</b> sends a message only if certain conditions apply. Specifically, it behaves like the <a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a> routine with the DEFAULT component and a message importance level of DPFLTR_INFO_LEVEL. In other words, the following two function calls are identical:
 
 For more information about message filtering, components, and message importance level, see <a href="https://msdn.microsoft.com/2ad320f6-596d-4b4c-bfad-d570c856bcc7">Reading and Filtering Debugging Messages</a>.
 
@@ -158,18 +159,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="devtest.dbgprintex">DbgPrintEx</a>
+<a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
 </dt>
 <dt>
-<a href="devtest.kdprint">KdPrint</a>
+<a href="..\wdm\nf-wdm-kdprint.md">KdPrint</a>
 </dt>
 <dt>
-<a href="devtest.kdprintex">KdPrintEx</a>
+<a href="..\wdm\nf-wdm-kdprintex.md">KdPrintEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20DbgPrint routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [devtest\devtest]:%20DbgPrint routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

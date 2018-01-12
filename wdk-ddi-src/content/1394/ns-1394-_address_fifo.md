@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._ADDRESS_FIFO
+UID: NS:1394._ADDRESS_FIFO
 title: _ADDRESS_FIFO
 author: windows-driver-content
 description: The ADDRESS_FIFO structure is an entry in a singly-linked list of MDLs used by the REQUEST_ALLOCATE_ADDRESS_RANGE IEEE 1394 bus request.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: df2b6438-271d-4ea2-a06b-49a83415ca7a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _ADDRESS_FIFO, ADDRESS_FIFO, PADDRESS_FIFO, *PADDRESS_FIFO
+ms.keywords: _ADDRESS_FIFO, *PADDRESS_FIFO, ADDRESS_FIFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PADDRESS_FIFO, ADDRESS_FIFO
 ---
 
 # _ADDRESS_FIFO structure

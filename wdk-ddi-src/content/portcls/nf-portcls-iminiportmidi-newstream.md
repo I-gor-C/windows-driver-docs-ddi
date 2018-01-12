@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportMidi.NewStream
+UID: NF:portcls.IMiniportMidi.NewStream
 title: IMiniportMidi::NewStream method
 author: windows-driver-content
 description: The NewStream method creates a new instance of a logical stream associated with a specified physical channel.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportMidi::NewStream method
@@ -71,12 +72,12 @@ Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate th
 
 ### -param PoolType [in]
 
-Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter is set to one of the <a href="kernel.pool_type">POOL_TYPE</a> enumeration values.
+Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter is set to one of the <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a> enumeration values.
 
 
 ### -param Pin [in]
 
-Specifies the pin ID. This parameter identifies the pin that is to be opened. If the MIDI miniport object's <a href="audio.iminiport_getdescription">IMiniport::GetDescription</a> method outputs a filter descriptor that specifies a total of <i>n</i> pin factories on the filter, then valid pin IDs are in the range 0 to <i>n</i>-1.
+Specifies the pin ID. This parameter identifies the pin that is to be opened. If the MIDI miniport object's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a> method outputs a filter descriptor that specifies a total of <i>n</i> pin factories on the filter, then valid pin IDs are in the range 0 to <i>n</i>-1.
 
 
 ### -param Capture [in]
@@ -149,10 +150,10 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>
 </dt>
 <dt>
-<a href="kernel.pool_type">POOL_TYPE</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 </dt>
 <dt>
-<a href="audio.iminiport_getdescription">IMiniport::GetDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>

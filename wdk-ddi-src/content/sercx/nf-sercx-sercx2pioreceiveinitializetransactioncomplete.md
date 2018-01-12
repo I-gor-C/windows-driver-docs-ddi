@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2PioReceiveInitializeTransactionComplete
+UID: NF:sercx.SerCx2PioReceiveInitializeTransactionComplete
 title: SerCx2PioReceiveInitializeTransactionComplete function
 author: windows-driver-content
 description: The SerCx2PioReceiveInitializeTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial driver has finished initializing the serial controller hardware in preparation for a new PIO-receive transaction.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -57,7 +58,7 @@ VOID SerCx2PioReceiveInitializeTransactionComplete(
 
 ### -param PioReceive [in]
 
-A <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> method to create this object.
+A <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a> method to create this object.
 
 
 ### -param InitSuccess [in]
@@ -132,7 +133,7 @@ IRQL
 <a href="serports.sercx2pioreceive_object_handle">SERCX2PIORECEIVE</a>
 </dt>
 <dt>
-<a href="serports.sercx2pioreceivecreate">SerCx2PioReceiveCreate</a>
+<a href="..\sercx\nf-sercx-sercx2pioreceivecreate.md">SerCx2PioReceiveCreate</a>
 </dt>
 </dl>
  

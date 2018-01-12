@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILSENDMSGACKPARAMS_V2
+UID: NS:ntddrilapitypes.RILSENDMSGACKPARAMS_V2
 title: RILSENDMSGACKPARAMS_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendmsgackparams_v2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3c05c1a0-339e-447f-b0df-18303ee63f98
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS_V2, *LPRILSENDMSGACKPARAMS, LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS_V2, *LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSENDMSGACKPARAMS_V2, *LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS
 ---
 
 # RILSENDMSGACKPARAMS_V2 structure

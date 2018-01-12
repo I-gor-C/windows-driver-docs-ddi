@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILRADIOSTATEITEMATTRIBUTES
+UID: NE:rilapitypes.RILRADIOSTATEITEMATTRIBUTES
 title: RILRADIOSTATEITEMATTRIBUTES
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilradiostateitemattributes_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d13c1946-1283-4ed6-953e-626fda91a782
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILRADIOSTATEITEMATTRIBUTES, RILRADIOSTATEITEMATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRADIOSTATEITEMATTRIBUTES
 req.product: Windows 10 or later.
 ---
 

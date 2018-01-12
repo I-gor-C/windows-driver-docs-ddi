@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorscx.SensorsCxDeviceGetSensorList
+UID: NF:sensorscx.SensorsCxDeviceGetSensorList
 title: SensorsCxDeviceGetSensorList function
 author: windows-driver-content
 description: This function returns a list of sensor instances associated with a WDFDEVICE.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 

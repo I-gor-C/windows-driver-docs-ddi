@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:dot11wdi
 ---
 
 # Dot11Wdi.h header
 
 ## -description
 
-This header is used by NetVista. For more information, see
-- [NetVista](../_NetVista/index.md)
+This header is used by Networking drivers for Windows Vista and later. For more information, see
+- [Networking drivers for Windows Vista and later](../_netvista/index.md)
 
 Dot11Wdi.h contain these programming interfaces:
 
@@ -92,10 +92,8 @@ Dot11Wdi.h contain these programming interfaces:
 | [_TAL_TXRX_PARAMETERS structure](ns-dot11wdi-_tal_txrx_parameters.md) | The TAL_TXRX_PARAMETERS structure defines the TAL TXRX parameters. |
 | [_WDI_FRAME_METADATA structure](ns-dot11wdi-_wdi_frame_metadata.md) | The WDI_FRAME_METADATA structure defines the frame metadata. |
 | [_WDI_MAC_ADDRESS structure](ns-dot11wdi-_wdi_mac_address.md) | The WDI_MAC_ADDRESS structure defines an IEEE media access control (MAC) address. |
-| [_WDI_MAC_ADDRESS structure](ns-dot11wdi-_wdi_mac_address~r1.md) | The WDI_MAC_ADDRESS structure defines an IEEE media access control (MAC) address. |
 | [_WDI_MESSAGE_HEADER structure](ns-dot11wdi-_wdi_message_header.md) | The WDI_MESSAGE_HEADER structure defines the WDI message header. All WDI command messages must start with this header. |
 | [_WDI_P2P_SERVICE_NAME_HASH structure](ns-dot11wdi-_wdi_p2p_service_name_hash.md) | The WDI_P2P_SERVICE_NAME_HASH structure defines a hash of a WFDS Service Name. |
-| [_WDI_P2P_SERVICE_NAME_HASH structure](ns-dot11wdi-_wdi_p2p_service_name_hash~r1.md) | The WDI_P2P_SERVICE_NAME_HASH structure defines a hash of a WFDS Service Name. |
 | [_WDI_RX_METADATA structure](ns-dot11wdi-_wdi_rx_metadata.md) | The WDI_RX_METADATA structure defines the RX metadata. |
 | [_WDI_TXRX_MPDU_PN structure](ns-dot11wdi-_wdi_txrx_mpdu_pn.md) | The WDI_TXRX_MPDU_PN union defines the parameters that are passed down to the TXRX component. |
 | [_WDI_TXRX_PARAMETERS structure](ns-dot11wdi-_wdi_txrx_parameters.md) | The WDI_TXRX_PARAMETERS structure defines the parameters that are passed down to the TXRX component. |

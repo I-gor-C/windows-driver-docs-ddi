@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._FILE_PROVIDER_EXTERNAL_INFO_V0
+UID: NS:ntifs._FILE_PROVIDER_EXTERNAL_INFO_V0
 title: _FILE_PROVIDER_EXTERNAL_INFO_V0
 author: windows-driver-content
 description: This structure may be altered or unavailable. Instead, use FILE_PROVIDER_EXTERNAL_INFO_V1.
@@ -7,8 +7,8 @@ old-location: ifsk\file_provider_external_info_v0.htm
 old-project: ifsk
 ms.assetid: E2368589-9F75-4743-9D38-323221B20EF8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FILE_PROVIDER_EXTERNAL_INFO_V0, PFILE_PROVIDER_EXTERNAL_INFO_V0, FILE_PROVIDER_EXTERNAL_INFO_V0, *PFILE_PROVIDER_EXTERNAL_INFO_V0
+ms.date: 1/9/2018
+ms.keywords: _FILE_PROVIDER_EXTERNAL_INFO_V0, *PFILE_PROVIDER_EXTERNAL_INFO_V0, FILE_PROVIDER_EXTERNAL_INFO_V0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PFILE_PROVIDER_EXTERNAL_INFO_V0, FILE_PROVIDER_EXTERNAL_INFO_V0
 ---
 
 # _FILE_PROVIDER_EXTERNAL_INFO_V0 structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-This structure may be altered or unavailable. Instead, use <a href="ifsk.file_provider_external_info_v1">FILE_PROVIDER_EXTERNAL_INFO_V1</a>.
+This structure may be altered or unavailable. Instead, use <a href="..\ntifs\ns-ntifs-_file_provider_external_info_v1.md">FILE_PROVIDER_EXTERNAL_INFO_V1</a>.
 
 
 
@@ -101,12 +102,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_provider_external_info_v1">FILE_PROVIDER_EXTERNAL_INFO_V1</a>
+<a href="..\ntifs\ns-ntifs-_file_provider_external_info_v1.md">FILE_PROVIDER_EXTERNAL_INFO_V1</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_PROVIDER_EXTERNAL_INFO_V0 structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FILE_PROVIDER_EXTERNAL_INFO_V0 structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

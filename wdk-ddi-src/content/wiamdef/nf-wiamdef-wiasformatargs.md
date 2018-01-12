@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasFormatArgs
+UID: NF:wiamdef.wiasFormatArgs
 title: wiasFormatArgs function
 author: windows-driver-content
 description: The wiasFormatArgs function formats an argument list into a packaged string for logging.
 old-location: image\wiasformatargs.htm
-old-project: Image
+old-project: image
 ms.assetid: 409c4ff6-3a0e-408a-879d-2875ac245fb8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasFormatArgs
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 

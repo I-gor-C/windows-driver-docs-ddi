@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfverifier.WdfGetTriageInfo
+UID: NF:wdfverifier.WdfGetTriageInfo
 title: WdfGetTriageInfo function
 author: windows-driver-content
 description: The WdfGetTriageInfo method is reserved for internal use only.
@@ -7,7 +7,7 @@ old-location: wdf\wdfgettriageinfo.htm
 old-project: wdf
 ms.assetid: F6B1DC49-B691-45E4-8DE9-ADCD73D90ADE
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfGetTriageInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -108,7 +109,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
 </td>
 </tr>
 </table>

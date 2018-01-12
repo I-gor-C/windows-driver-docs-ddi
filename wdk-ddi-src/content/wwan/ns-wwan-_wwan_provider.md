@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_PROVIDER
+UID: NS:wwan._WWAN_PROVIDER
 title: _WWAN_PROVIDER
 author: windows-driver-content
 description: The WWAN_PROVIDER structure represents details about a network provider.
 old-location: netvista\wwan_provider.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2bca3123-3ac4-44fe-8d47-051314ef3cb7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_PROVIDER, PWWAN_PROVIDER, *PWWAN_PROVIDER, WWAN_PROVIDER
+ms.date: 1/8/2018
+ms.keywords: _WWAN_PROVIDER, *PWWAN_PROVIDER, WWAN_PROVIDER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWWAN_PROVIDER, WWAN_PROVIDER
 req.product: Windows 10 or later.
 ---
 
@@ -228,7 +229,7 @@ Miniport drivers should specify a <b>NULL</b> string for devices that do not hav
 A bitmap that represents the data-class(es) that the device supports. For a detailed list of
      values, see the 
      <b>WwanDataClass</b> member of 
-     <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>.
+     <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>.
      
 
 This member can be ignored when queried for OID_WWAN_HOME_PROVIDER.
@@ -265,21 +266,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_wwan_home_provider">NDIS_WWAN_HOME_PROVIDER</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_home_provider.md">NDIS_WWAN_HOME_PROVIDER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_wwan_preferred_providers">NDIS_WWAN_PREFERRED_PROVIDERS</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_preferred_providers.md">NDIS_WWAN_PREFERRED_PROVIDERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_wwan_visible_providers">NDIS_WWAN_VISIBLE_PROVIDERS</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_visible_providers.md">NDIS_WWAN_VISIBLE_PROVIDERS</a>
 </dt>
 <dt>
-<a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>
+<a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_PROVIDER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_PROVIDER structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

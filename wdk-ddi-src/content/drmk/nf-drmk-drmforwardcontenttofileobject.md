@@ -1,5 +1,5 @@
 ---
-UID: NF.drmk.DrmForwardContentToFileObject
+UID: NF:drmk.DrmForwardContentToFileObject
 title: DrmForwardContentToFileObject function
 author: windows-driver-content
 description: The DrmForwardContentToFileObject function is obsolete and is maintained only to support existing drivers.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Drmk.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDI_TX_METADATA, WDI_TX_METADATA
 ---
 
 # DrmForwardContentToFileObject function
@@ -74,11 +75,11 @@ Pointer to a file object that represents the KS audio pin to which the KS audio 
 
 
 ## -remarks
-This function is superseded by <a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a>. A driver that calls <code>DrmForwardContentToFileObject</code> forces the system to run at a lower DRM security level. New drivers should call <code>DrmForwardContentToDeviceObject</code> instead.
+This function is superseded by <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>. A driver that calls <code>DrmForwardContentToFileObject</code> forces the system to run at a lower DRM security level. New drivers should call <code>DrmForwardContentToDeviceObject</code> instead.
 
-The <code>DrmForwardContentToFileObject</code> function authenticates the KS audio filter that implements the KS audio pin represented by <i>FileObject</i>. If <code>DrmForwardContentToFileObject</code> successfully authenticates the KS audio filter, it sets the KS property <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a> on the audio pin that is represented by <i>FileObject</i>. The property data includes a DRM content ID and a <a href="audio.drmrights">DRMRIGHTS</a> structure. <code>DrmForwardContentToFileObject</code> makes no use of <i>FileObject</i> after returning.
+The <code>DrmForwardContentToFileObject</code> function authenticates the KS audio filter that implements the KS audio pin represented by <i>FileObject</i>. If <code>DrmForwardContentToFileObject</code> successfully authenticates the KS audio filter, it sets the KS property <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a> on the audio pin that is represented by <i>FileObject</i>. The property data includes a DRM content ID and a <a href="..\drmk\ns-drmk-tagdrmrights.md">DRMRIGHTS</a> structure. <code>DrmForwardContentToFileObject</code> makes no use of <i>FileObject</i> after returning.
 
-<code>DrmForwardContentToFileObject</code> performs the same function as <a href="audio.pcforwardcontenttofileobject">PcForwardContentToFileObject</a> and <a href="audio.idrmport_forwardcontenttofileobject">IDrmPort::ForwardContentToFileObject</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.
+<code>DrmForwardContentToFileObject</code> performs the same function as <a href="..\portcls\nf-portcls-pcforwardcontenttofileobject.md">PcForwardContentToFileObject</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff536584">IDrmPort::ForwardContentToFileObject</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.
 
 
 ## -requirements
@@ -131,19 +132,19 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537351">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>
 </dt>
 <dt>
-<a href="audio.drmrights">DRMRIGHTS</a>
+<a href="..\drmk\ns-drmk-tagdrmrights.md">DRMRIGHTS</a>
 </dt>
 <dt>
-<a href="audio.pcforwardcontenttofileobject">PcForwardContentToFileObject</a>
+<a href="..\portcls\nf-portcls-pcforwardcontenttofileobject.md">PcForwardContentToFileObject</a>
 </dt>
 <dt>
-<a href="audio.idrmport_forwardcontenttofileobject">IDrmPort::ForwardContentToFileObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536584">IDrmPort::ForwardContentToFileObject</a>
 </dt>
 </dl>
  

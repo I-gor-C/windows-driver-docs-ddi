@@ -1,14 +1,14 @@
 ---
-UID: NC.dot11wdi.MINIPORT_WDI_TAL_TXRX_ADD_PORT
+UID: NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_ADD_PORT
 title: MINIPORT_WDI_TAL_TXRX_ADD_PORT
 author: windows-driver-content
 description: The MiniportWdiTalTxRxAddPort handler function notifies the datapath components of the creation of a new virtual port.
 old-location: netvista\miniportwditaltxrxaddport.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: D3006A0B-B0E0-4FEA-864A-FA4B75594FB0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS, PSYNTH_STATS
+ms.date: 1/8/2018
+ms.keywords: _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 # MINIPORT_WDI_TAL_TXRX_ADD_PORT callback
@@ -43,7 +44,7 @@ The
 
 It also specifies the default operation mode for the port.
 
-This is a WDI miniport handler inside <a href="netvista.ndis_miniport_wdi_data_handlers">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>.
+This is a WDI miniport handler inside <a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_wdi_data_handlers.md">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>.
 
 
 
@@ -133,13 +134,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_miniport_wdi_data_handlers">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>
+<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_wdi_data_handlers.md">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt297625">TAL_TXRX_HANDLE</a>
 </dt>
 <dt>
-<a href="netvista.wdi_operation_mode">WDI_OPERATION_MODE</a>
+<a href="..\dot11wdi\ne-dot11wdi-_wdi_operation_mode.md">WDI_OPERATION_MODE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt269099">WDI_PORT_ID</a>
@@ -148,12 +149,12 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn925949">OID_WDI_TASK_CREATE_PORT</a>
 </dt>
 <dt>
-<a href="netvista.wdi_general_datapath_interfaces">WDI general datapath interfaces</a>
+<a href="https://msdn.microsoft.com/5B40171C-4E5F-4C35-A6E7-1EA5181C02E8">WDI general datapath interfaces</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_WDI_TAL_TXRX_ADD_PORT callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_WDI_TAL_TXRX_ADD_PORT callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

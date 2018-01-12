@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILUICCAPPINFOPARAMMASK
+UID: NE:ntddrilapitypes.RILUICCAPPINFOPARAMMASK
 title: RILUICCAPPINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccappinfoparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0e3bac55-6de7-4572-963f-dead9664cf1d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILUICCAPPINFOPARAMMASK, RILUICCAPPINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUICCAPPINFOPARAMMASK
 ---
 
 # RILUICCAPPINFOPARAMMASK enumeration

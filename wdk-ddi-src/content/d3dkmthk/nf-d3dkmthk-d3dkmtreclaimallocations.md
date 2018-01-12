@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTReclaimAllocations
+UID: NF:d3dkmthk.D3DKMTReclaimAllocations
 title: D3DKMTReclaimAllocations function
 author: windows-driver-content
 description: Reclaims video memory allocations.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtreclaimallocations.htm
 old-project: display
 ms.assetid: 3bfb2a82-9451-4365-b113-6311c3f13fe6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTReclaimAllocations
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Gdi32.lib
 req.dll: Gdi32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTReclaimAllocations function
@@ -55,7 +56,7 @@ EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTReclaimAllocations(
 
 ### -param pData [in, out]
 
-A pointer to a <a href="display.d3dkmt_reclaimallocations">D3DKMT_RECLAIMALLOCATIONS</a> structure that defines memory allocations to reclaim.
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_reclaimallocations.md">D3DKMT_RECLAIMALLOCATIONS</a> structure that defines memory allocations to reclaim.
 
 
 ## -returns
@@ -147,15 +148,15 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_reclaimallocations">D3DKMT_RECLAIMALLOCATIONS</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_reclaimallocations.md">D3DKMT_RECLAIMALLOCATIONS</a>
 </dt>
 <dt>
-<a href="display.d3dkmtofferallocations">D3DKMTOfferAllocations</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtofferallocations.md">D3DKMTOfferAllocations</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTReclaimAllocations function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTReclaimAllocations function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

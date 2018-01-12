@@ -1,5 +1,5 @@
 ---
-UID: NS.SERCX._SERCX_ACTIVITY
+UID: NS:sercx._SERCX_ACTIVITY
 title: _SERCX_ACTIVITY
 author: windows-driver-content
 description: The SERCX_ACTIVITY structure contains a summary of work items that are ready for the serial controller driver to process.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: SERCX_ACTIVITY, *PSERCX_ACTIVITY
 req.product: Windows 10 or later.
 ---
 
@@ -58,7 +59,7 @@ typedef struct _SERCX_ACTIVITY {
 
 ### -field Size
 
-The size, in bytes, of this structure. The <a href="serports.sercxgetactivity">SerCxGetActivity</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercxgetactivity.md">SerCxGetActivity</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
 
 
 ### -field Transmitting
@@ -72,7 +73,7 @@ Whether a receive (read) operation is in progress. This member is TRUE if a rece
 
 
 ## -remarks
-This structure must be initialized by the <a href="serports.sercx_activity_init">SERCX_ACTIVITY_INIT</a> function before its initial use. Thereafter, calls to the <a href="serports.sercxgetactivity">SerCxGetActivity</a> method update the contents of this structure to indicate the work that is currently pending.
+This structure must be initialized by the <a href="..\sercx\nf-sercx-sercx_activity_init.md">SERCX_ACTIVITY_INIT</a> function before its initial use. Thereafter, calls to the <a href="..\sercx\nf-sercx-sercxgetactivity.md">SerCxGetActivity</a> method update the contents of this structure to indicate the work that is currently pending.
 
 The <b>SERCX_ACTIVITY</b> structure summarizes the pending work that the serial framework extension (SerCx) assigns to the serial controller driver. This work is driven by I/O requests from clients, but an I/O request does not necessarily spawn a work item. For example, if SerCx has a sufficient amount of received data in its memory buffer to complete a pending read request, this request does not cause the <b>Receiving</b> member of the <b>SERCX_ACTIVITY</b> structure to be set to TRUE.
 
@@ -107,19 +108,19 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercx_activity_init">SERCX_ACTIVITY_INIT</a>
+<a href="..\sercx\nf-sercx-sercx_activity_init.md">SERCX_ACTIVITY_INIT</a>
 </dt>
 <dt>
-<a href="serports.sercxcompletewait">SerCxCompleteWait</a>
+<a href="..\sercx\nf-sercx-sercxcompletewait.md">SerCxCompleteWait</a>
 </dt>
 <dt>
-<a href="serports.sercxgetactivity">SerCxGetActivity</a>
+<a href="..\sercx\nf-sercx-sercxgetactivity.md">SerCxGetActivity</a>
 </dt>
 <dt>
-<a href="serports.sercxprogressreceive">SerCxProgressReceive</a>
+<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 </dt>
 <dt>
-<a href="serports.sercxprogresstransmit">SerCxProgressTransmit</a>
+<a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
 </dt>
 </dl>
  

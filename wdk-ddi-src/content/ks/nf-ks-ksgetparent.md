@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsGetParent
+UID: NF:ks.KsGetParent
 title: KsGetParent function
 author: windows-driver-content
 description: The KsGetParent function acquires the parent of the given object.
@@ -7,7 +7,7 @@ old-location: stream\ksgetparent.htm
 old-project: stream
 ms.assetid: d7804745-295f-491a-80f4-84441598bbf4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGetParent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsGetParent function
@@ -55,7 +56,7 @@ PVOID KsGetParent(
 
 ### -param Object [in]
 
-A pointer to the AVStream object for which to find the parent. Must be a pointer to one of the following types: <a href="stream.ksdevice">KSDEVICE</a>, <a href="stream.ksfilterfactory">KSFILTERFACTORY</a>, <a href="stream.ksfilter">KSFILTER</a>, or <a href="stream.kspin">KSPIN</a>. Callers must manually typecast the object to a PVOID.
+A pointer to the AVStream object for which to find the parent. Must be a pointer to one of the following types: <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>, <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>, <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>, or <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>. Callers must manually typecast the object to a PVOID.
 
 
 ## -returns
@@ -67,7 +68,7 @@ For a graphical representation of AVStream parent/child relationships, see the d
 
 The object hierarchy is only guaranteed stable while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
 
-Minidrivers rarely use this function directly. Callers of <b>KsGetParent</b> must manually perform typecasts to and from PVOID. There are a number of inline versions that do the casting for you: <a href="stream.ksfilterfactorygetparentdevice">KsFilterFactoryGetParentDevice</a>, <a href="stream.ksfiltergetparentfilterfactory">KsFilterGetParentFilterFactory</a>, and <a href="stream.kspingetparentfilter">KsPinGetParentFilter</a>.
+Minidrivers rarely use this function directly. Callers of <b>KsGetParent</b> must manually perform typecasts to and from PVOID. There are a number of inline versions that do the casting for you: <a href="..\ks\nf-ks-ksfilterfactorygetparentdevice.md">KsFilterFactoryGetParentDevice</a>, <a href="..\ks\nf-ks-ksfiltergetparentfilterfactory.md">KsFilterGetParentFilterFactory</a>, and <a href="..\ks\nf-ks-kspingetparentfilter.md">KsPinGetParentFilter</a>.
 
 
 ## -requirements
@@ -130,30 +131,30 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksdevice">KSDEVICE</a>
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 </dt>
 <dt>
-<a href="stream.ksfilterfactory">KSFILTERFACTORY</a>
+<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
 </dt>
 <dt>
-<a href="stream.ksfilter">KSFILTER</a>
+<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
 </dt>
 <dt>
-<a href="stream.kspin">KSPIN</a>
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 </dt>
 <dt>
-<a href="stream.ksfilterfactorygetparentdevice">KsFilterFactoryGetParentDevice</a>
+<a href="..\ks\nf-ks-ksfilterfactorygetparentdevice.md">KsFilterFactoryGetParentDevice</a>
 </dt>
 <dt>
-<a href="stream.ksfiltergetparentfilterfactory">KsFilterGetParentFilterFactory</a>
+<a href="..\ks\nf-ks-ksfiltergetparentfilterfactory.md">KsFilterGetParentFilterFactory</a>
 </dt>
 <dt>
-<a href="stream.kspingetparentfilter">KsPinGetParentFilter</a>
+<a href="..\ks\nf-ks-kspingetparentfilter.md">KsPinGetParentFilter</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGetParent function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGetParent function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._IO_RESOURCE_LIST
+UID: NS:wdm._IO_RESOURCE_LIST
 title: _IO_RESOURCE_LIST
 author: windows-driver-content
 description: The IO_RESOURCE_LIST structure describes a range of raw hardware resources, of various types, that can be used by a device.
@@ -7,8 +7,8 @@ old-location: kernel\io_resource_list.htm
 old-project: kernel
 ms.assetid: d8c29339-274e-410a-893d-328703d902c3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _IO_RESOURCE_LIST, PIO_RESOURCE_LIST, IO_RESOURCE_LIST, *PIO_RESOURCE_LIST
+ms.date: 1/4/2018
+ms.keywords: _IO_RESOURCE_LIST, *PIO_RESOURCE_LIST, IO_RESOURCE_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PIO_RESOURCE_LIST, IO_RESOURCE_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>IO_RESOURCE_LIST</b> structure describes a range of raw hardware resources, of various types, that can be used by a device. The resources specified represent a single, acceptable resource configuration for a device. An array of <b>IO_RESOURCE_LIST</b> structures is contained within each <a href="kernel.io_resource_requirements_list">IO_RESOURCE_REQUIREMENTS_LIST</a> structure.
+The <b>IO_RESOURCE_LIST</b> structure describes a range of raw hardware resources, of various types, that can be used by a device. The resources specified represent a single, acceptable resource configuration for a device. An array of <b>IO_RESOURCE_LIST</b> structures is contained within each <a href="..\wdm\ns-wdm-_io_resource_requirements_list.md">IO_RESOURCE_REQUIREMENTS_LIST</a> structure.
 
 
 
@@ -74,7 +75,7 @@ The number of elements in the <b>Descriptors</b> array.
 
 ### -field Descriptors
 
-The first element in an array of one or more <a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structures.
+The first element in an array of one or more <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structures.
 
 
 ## -remarks
@@ -99,15 +100,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a>
+<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="kernel.io_resource_requirements_list">IO_RESOURCE_REQUIREMENTS_LIST</a>
+<a href="..\wdm\ns-wdm-_io_resource_requirements_list.md">IO_RESOURCE_REQUIREMENTS_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_RESOURCE_LIST structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IO_RESOURCE_LIST structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

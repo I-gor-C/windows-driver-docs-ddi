@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_GDIARG_TRANSPARENTBLT
+UID: NS:d3dkmddi._DXGK_GDIARG_TRANSPARENTBLT
 title: _DXGK_GDIARG_TRANSPARENTBLT
 author: windows-driver-content
 description: The DXGK_GDIARG_TRANSPARENTBLT structure describes the characteristics of a GDI hardware-accelerated bit-block transfer (bitblt) operation with transparency.
@@ -7,7 +7,7 @@ old-location: display\dxgk_gdiarg_transparentblt.htm
 old-project: display
 ms.assetid: 2536fafc-3b62-42a6-8b53-60fa8d61d5a9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_GDIARG_TRANSPARENTBLT, DXGK_GDIARG_TRANSPARENTBLT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_GDIARG_TRANSPARENTBLT
 ---
 
 # _DXGK_GDIARG_TRANSPARENTBLT structure
@@ -63,14 +64,14 @@ typedef struct _DXGK_GDIARG_TRANSPARENTBLT {
 
 ### -field SrcRect
 
-[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be copied. This rectangle is specified in the coordinate system of the source surface and is defined by two points: upper left and lower right. The two points that define the rectangle are always well ordered. 
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be copied. This rectangle is specified in the coordinate system of the source surface and is defined by two points: upper left and lower right. The two points that define the rectangle are always well ordered. 
 
 For more information, see the Remarks section.
 
 
 ### -field DstRect
 
-[in] A <a href="display.rect">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. 
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structure that defines the rectangular area to be modified. This rectangle is specified in the coordinate system of the destination surface and is defined by two points: upper left and lower right. The rectangle is lower-right exclusive; that is, its lower and right edges are not a part of the bit-block transfer. The two points that define the rectangle are always well ordered. 
 
 The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the destination surface, but sub-rectangles cannot. Additionally, all sub-rectangles are guaranteed to fit inside the destination surface. Sub-rectangles can be constrained further by a bounding rectangle that is smaller than the destination rectangle. 
 
@@ -94,7 +95,7 @@ For more information, see the Remarks section.
 ### -field Color
 
 
-      [in] Specifies the physical transparent color in the source surface, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="display.d3dddiformat">D3DDDIFORMAT</a> enumeration). Any pixels on the source surface that match the transparent color that is specified by <b>Color</b> are not copied.
+      [in] Specifies the physical transparent color in the source surface, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration). Any pixels on the source surface that match the transparent color that is specified by <b>Color</b> are not copied.
      
 
 
@@ -115,7 +116,7 @@ For more information, see the Remarks section.
 ### -field Flags
 
 
-      [in] A <a href="display.d3dkm_transparentbltflags">D3DKM_TRANSPARENTBLTFLAGS</a> structure that specifies the display adapter's hardware-accelerated transparent bit-block transfer capabilities.
+      [in] A <a href="..\d3dkmddi\ns-d3dkmddi-_d3dkm_transparentbltflags.md">D3DKM_TRANSPARENTBLTFLAGS</a> structure that specifies the display adapter's hardware-accelerated transparent bit-block transfer capabilities.
      
 
 
@@ -168,18 +169,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkm_transparentbltflags">D3DKM_TRANSPARENTBLTFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_d3dkm_transparentbltflags.md">D3DKM_TRANSPARENTBLTFLAGS</a>
 </dt>
 <dt>
-<a href="display.dxgk_renderkm_command">DXGK_RENDERKM_COMMAND</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_renderkm_command.md">DXGK_RENDERKM_COMMAND</a>
 </dt>
 <dt>
-<a href="display.rect">RECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_GDIARG_TRANSPARENTBLT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_GDIARG_TRANSPARENTBLT structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

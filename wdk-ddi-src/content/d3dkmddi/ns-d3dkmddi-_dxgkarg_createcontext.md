@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_CREATECONTEXT
+UID: NS:d3dkmddi._DXGKARG_CREATECONTEXT
 title: _DXGKARG_CREATECONTEXT
 author: windows-driver-content
 description: The DXGKARG_CREATECONTEXT structure describes parameters to create a device context.
@@ -7,8 +7,8 @@ old-location: display\dxgkarg_createcontext.htm
 old-project: display
 ms.assetid: 94239501-2eeb-479a-851a-14ae665c5887
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKARG_CREATECONTEXT, DXGKARG_CREATECONTEXT
+ms.date: 12/29/2017
+ms.keywords: _DXGKARG_CREATECONTEXT, DXGKARG_CREATECONTEXT, *INOUT_PDXGKARG_CREATECONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_CREATECONTEXT
 ---
 
 # _DXGKARG_CREATECONTEXT structure
@@ -76,7 +77,7 @@ typedef struct _DXGKARG_CREATECONTEXT {
 
 ### -field Flags
 
-[in] A <a href="display.dxgk_createcontextflags">DXGK_CREATECONTEXTFLAGS</a> structure that identifies how to create the context.
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a> structure that identifies how to create the context.
 
 
 ### -field pPrivateDriverData
@@ -91,7 +92,7 @@ typedef struct _DXGKARG_CREATECONTEXT {
 
 ### -field ContextInfo
 
-[out] A <a href="display.dxgk_contextinfo">DXGK_CONTEXTINFO</a> structure that the display miniport driver populates to describe the device context.
+[out] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a> structure that the display miniport driver populates to describe the device context.
 
 
 ## -remarks
@@ -125,10 +126,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgk_contextinfo">DXGK_CONTEXTINFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_contextinfo.md">DXGK_CONTEXTINFO</a>
 </dt>
 <dt>
-<a href="display.dxgk_createcontextflags">DXGK_CREATECONTEXTFLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createcontextflags.md">DXGK_CREATECONTEXTFLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
@@ -147,5 +148,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_CREATECONTEXT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_CREATECONTEXT structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

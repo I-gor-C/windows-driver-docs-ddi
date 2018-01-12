@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.RtlUpcaseUnicodeStringToOemString
+UID: NF:ntifs.RtlUpcaseUnicodeStringToOemString
 title: RtlUpcaseUnicodeStringToOemString function
 author: windows-driver-content
 description: The RtlUpcaseUnicodeStringToOemString routine translates a given Unicode source string into an uppercase OEM string using the current system OEM code page.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlupcaseunicodestringtooemstring.htm
 old-project: ifsk
 ms.assetid: 3d81c5e4-780b-4b1f-ad3a-6d59cab5650f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlUpcaseUnicodeStringToOemString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: < DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # RtlUpcaseUnicodeStringToOemString function
@@ -81,7 +82,7 @@ This routine can substitute a default character in the destination string for al
 
 This routine does not modify the source string. It returns a null-terminated OEM string. 
 
-For information about other string-handling routines, see <a href="kernel.strings">Strings</a>. 
+For information about other string-handling routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563884">Strings</a>. 
 
 
 ## -requirements
@@ -145,30 +146,30 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.oem_string">OEM_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
 </dt>
 <dt>
-<a href="ifsk.rtlfreeoemstring">RtlFreeOemString</a>
+<a href="..\ntifs\nf-ntifs-rtlfreeoemstring.md">RtlFreeOemString</a>
 </dt>
 <dt>
-<a href="ifsk.rtlunicodestringtocountedoemstring">RtlUnicodeStringToCountedOemString</a>
+<a href="..\ntifs\nf-ntifs-rtlunicodestringtocountedoemstring.md">RtlUnicodeStringToCountedOemString</a>
 </dt>
 <dt>
-<a href="ifsk.rtlunicodestringtooemstring">RtlUnicodeStringToOemString</a>
+<a href="..\ntifs\nf-ntifs-rtlunicodestringtooemstring.md">RtlUnicodeStringToOemString</a>
 </dt>
 <dt>
-<a href="ifsk.rtlunicodestringtooemsize">RtlUnicodeStringToOemSize</a>
+<a href="..\ntifs\nf-ntifs-rtlunicodestringtooemsize.md">RtlUnicodeStringToOemSize</a>
 </dt>
 <dt>
-<a href="ifsk.rtlupcaseunicodetooemn">RtlUpcaseUnicodeToOemN</a>
+<a href="..\ntifs\nf-ntifs-rtlupcaseunicodetooemn.md">RtlUpcaseUnicodeToOemN</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlUpcaseUnicodeStringToOemString routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlUpcaseUnicodeStringToOemString routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

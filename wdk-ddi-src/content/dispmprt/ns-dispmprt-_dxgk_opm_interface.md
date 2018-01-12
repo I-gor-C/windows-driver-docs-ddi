@@ -1,5 +1,5 @@
 ---
-UID: NS.DISPMPRT._DXGK_OPM_INTERFACE
+UID: NS:dispmprt._DXGK_OPM_INTERFACE
 title: _DXGK_OPM_INTERFACE
 author: windows-driver-content
 description: The DXGK_OPM_INTERFACE structure contains pointers to functions in the Output Protection Manager (OPM) Interface, which is implemented by the display miniport driver.
@@ -7,8 +7,8 @@ old-location: display\dxgk_opm_interface.htm
 old-project: display
 ms.assetid: 6ae1d9a8-db9a-460d-b258-222a2bd96265
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_OPM_INTERFACE, DXGK_OPM_INTERFACE, PDXGK_OPM_INTERFACE, *PDXGK_OPM_INTERFACE
+ms.date: 12/29/2017
+ms.keywords: _DXGK_OPM_INTERFACE, DXGK_OPM_INTERFACE, *PDXGK_OPM_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_OPM_INTERFACE, *PDXGK_OPM_INTERFACE
 ---
 
 # _DXGK_OPM_INTERFACE structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The DXGK_OPM_INTERFACE structure contains pointers to functions in the <a href="display.opm_interface">Output Protection Manager (OPM) Interface</a>, which is implemented by the display miniport driver.
+The DXGK_OPM_INTERFACE structure contains pointers to functions in the <a href="https://msdn.microsoft.com/8dc171f7-76ca-4e1a-865e-7dcb6ab9a2e9">Output Protection Manager (OPM) Interface</a>, which is implemented by the display miniport driver.
 
 
 
@@ -83,12 +84,12 @@ A pointer to a private context block. <b>Context</b> must be set to <b>NULL</b>.
 
 ### -field InterfaceReference
 
-A pointer to an interface reference function that is implemented by the display miniport driver. For more information about the operation of an interface reference function, see the Remarks section of the <a href="kernel.interface">INTERFACE</a> structure.
+A pointer to an interface reference function that is implemented by the display miniport driver. For more information about the operation of an interface reference function, see the Remarks section of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure.
 
 
 ### -field InterfaceDereference
 
-A pointer to an interface dereference function that is implemented by the display miniport driver. For more information about the operation of an interface dereference function, see the Remarks section of the <a href="kernel.interface">INTERFACE</a> structure.
+A pointer to an interface dereference function that is implemented by the display miniport driver. For more information about the operation of an interface dereference function, see the Remarks section of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure.
 
 
 ### -field DxgkDdiOPMGetCertificateSize
@@ -200,12 +201,12 @@ Header
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_interface.md">DxgkDdiQueryInterface</a>
 </dt>
 <dt>
-<a href="kernel.interface">INTERFACE</a>
+<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_OPM_INTERFACE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_OPM_INTERFACE structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

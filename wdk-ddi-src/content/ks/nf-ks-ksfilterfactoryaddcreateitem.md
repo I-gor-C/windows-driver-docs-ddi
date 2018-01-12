@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsFilterFactoryAddCreateItem
+UID: NF:ks.KsFilterFactoryAddCreateItem
 title: KsFilterFactoryAddCreateItem function
 author: windows-driver-content
 description: The KsFilterFactoryAddCreateItem function adds a new create item for the specified filter factory.
@@ -7,7 +7,7 @@ old-location: stream\ksfilterfactoryaddcreateitem.htm
 old-project: stream
 ms.assetid: c09840fb-8195-4ac5-a164-ba4d82615344
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsFilterFactoryAddCreateItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsFilterFactoryAddCreateItem function
@@ -58,7 +59,7 @@ NTSTATUS KsFilterFactoryAddCreateItem(
 
 ### -param FilterFactory [in]
 
-A pointer to a <a href="stream.ksfilterfactory">KSFILTERFACTORY</a> structure representing the filter factory to which to add a new create item.
+A pointer to a <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> structure representing the filter factory to which to add a new create item.
 
 
 ### -param RefString [in]
@@ -139,24 +140,24 @@ Library
 <a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
 </dt>
 <dt>
-<a href="stream.ksallocateobjectcreateitem">KsAllocateObjectCreateItem</a>
+<a href="..\ks\nf-ks-ksallocateobjectcreateitem.md">KsAllocateObjectCreateItem</a>
 </dt>
 <dt>
-<a href="stream.ksaddobjectcreateitemtodeviceheader">KsAddObjectCreateItemToDeviceHeader</a>
+<a href="..\ks\nf-ks-ksaddobjectcreateitemtodeviceheader.md">KsAddObjectCreateItemToDeviceHeader</a>
 </dt>
 <dt>
-<a href="stream.ksaddobjectcreateitemtoobjectheader">KsAddObjectCreateItemToObjectHeader</a>
+<a href="..\ks\nf-ks-ksaddobjectcreateitemtoobjectheader.md">KsAddObjectCreateItemToObjectHeader</a>
 </dt>
 <dt>
-<a href="stream.ksfreeobjectcreateitem">KsFreeObjectCreateItem</a>
+<a href="..\ks\nf-ks-ksfreeobjectcreateitem.md">KsFreeObjectCreateItem</a>
 </dt>
 <dt>
-<a href="stream.ksqueryobjectcreateitem">KsQueryObjectCreateItem</a>
+<a href="..\ks\nf-ks-ksqueryobjectcreateitem.md">KsQueryObjectCreateItem</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterFactoryAddCreateItem function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterFactoryAddCreateItem function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

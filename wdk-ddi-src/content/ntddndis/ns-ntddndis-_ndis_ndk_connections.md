@@ -1,13 +1,13 @@
 ---
-UID: NS.NTDDNDIS._NDIS_NDK_CONNECTIONS
+UID: NS:ntddndis._NDIS_NDK_CONNECTIONS
 title: _NDIS_NDK_CONNECTIONS
 author: windows-driver-content
 description: The NDIS_NDK_CONNECTIONS structure describes the NDK connections that are active on a miniport adapter.
 old-location: netvista\ndis_ndk_connections.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 24149E73-6BA8-4C5E-8649-25A90A3D01AF
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _NDIS_NDK_CONNECTIONS, NDIS_NDK_CONNECTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_NDK_CONNECTIONS
 ---
 
 # _NDIS_NDK_CONNECTIONS structure
@@ -58,7 +59,7 @@ typedef struct _NDIS_NDK_CONNECTIONS {
 
 ### -field Header
 
-An <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_CONNECTIONS</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:
+An <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_CONNECTIONS</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:
 
 <ul>
 <li>Set the <b>Type</b> member to <b>NDIS_OBJECT_TYPE_DEFAULT</b>.</li>
@@ -68,7 +69,7 @@ An <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure that d
 
 ### -field Count
 
-The number of elements in the connection array that is passed in the <b>Connections</b> member. Each element in the array is an <a href="netvista.ndis_ndk_connection_entry">NDIS_NDK_CONNECTION_ENTRY</a> structure. 
+The number of elements in the connection array that is passed in the <b>Connections</b> member. Each element in the array is an <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_connection_entry.md">NDIS_NDK_CONNECTION_ENTRY</a> structure. 
 
 
 ### -field NDConnectionsMappedtoTCPConnections
@@ -78,11 +79,11 @@ A BOOLEAN value that specifies how the connections are mapped. If the RDMA techn
 
 ### -field Connections
 
-A variable-sized array of <a href="netvista.ndis_ndk_connection_entry">NDIS_NDK_CONNECTION_ENTRY</a> structures where the size of the array is determined by the number of connections being returned. The <b>Count</b> member  specifies the number of elements in the connection array. 
+A variable-sized array of <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_connection_entry.md">NDIS_NDK_CONNECTION_ENTRY</a> structures where the size of the array is determined by the number of connections being returned. The <b>Count</b> member  specifies the number of elements in the connection array. 
 
 
 ## -remarks
-The <b>NDIS_NDK_CONNECTIONS</b> structure is returned with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451810">OID_NDK_CONNECTIONS</a> OID. The <b>InformationBuffer</b> member of the <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure contains a pointer to this structure.
+The <b>NDIS_NDK_CONNECTIONS</b> structure is returned with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451810">OID_NDK_CONNECTIONS</a> OID. The <b>InformationBuffer</b> member of the <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure contains a pointer to this structure.
 
 
 
@@ -143,10 +144,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_ndk_connection_entry">NDIS_NDK_CONNECTION_ENTRY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_ndk_connection_entry.md">NDIS_NDK_CONNECTION_ENTRY</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451810">OID_NDK_CONNECTIONS</a>
@@ -156,5 +157,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_NDK_CONNECTIONS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_CONNECTIONS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

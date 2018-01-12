@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdvd.IOCTL_AACS_READ_MEDIA_KEY_BLOCK
+UID: NI:ntddcdvd.IOCTL_AACS_READ_MEDIA_KEY_BLOCK
 title: IOCTL_AACS_READ_MEDIA_KEY_BLOCK
 author: windows-driver-content
 description: Queries the logical unit for the Media Key Block (MKB).
@@ -7,8 +7,8 @@ old-location: storage\ioctl_aacs_read_media_key_block.htm
 old-project: storage
 ms.assetid: 08852f41-1836-4c55-bf6f-0246caa2c8bd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, PDVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.date: 1/10/2018
+ms.keywords: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_READ_MEDIA_KEY_BLOCK IOCTL
@@ -45,7 +46,10 @@ Queries the logical unit for the Media Key Block (MKB).
 ## -ioctlparameters
 
 ### -input-buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the <a href="storage.aacs_layer_number">AACS_LAYER_NUMBER</a> number of the layer.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the AACS_LAYER_NUMBER number of the layer. The AACS_LAYER_NUMBER is an unsigned long integer value in the range 0 to 255 inclusive that specifies the layer of the media to which a command applies.
+
+<code>typedef ULONG AACS_LAYER_NUMBER, *PAACS_LAYER_NUMBER;
+</code>
 
 
 ### -input-buffer-length

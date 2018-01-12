@@ -1,5 +1,5 @@
 ---
-UID: NF.upssvc.UPSTurnOff
+UID: NF:upssvc.UPSTurnOff
 title: UPSTurnOff function
 author: windows-driver-content
 description: The UPSTurnOff function turns off the UPS unit's power outlets, after a specified delay time.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UMDETW_ALLOCATION_USAGE
 req.product: Windows 10 or later.
 ---
 

@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILUICCSERVICESTATE
+UID: NE:rilapitypes.RILUICCSERVICESTATE
 title: RILUICCSERVICESTATE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccservicestate_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f817db6b-bda4-45cd-953b-fd3d81bafa8f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILUICCSERVICESTATE, RILUICCSERVICESTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUICCSERVICESTATE
 req.product: Windows 10 or later.
 ---
 

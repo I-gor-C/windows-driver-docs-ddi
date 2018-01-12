@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE
+UID: NE:d3d10umddi.D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE
 title: D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE
 author: windows-driver-content
 description: Specifies the type of Microsoft Direct3D authenticated channel.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_authenticated_channel_type.htm
 old-project: display
 ms.assetid: da04ef5d-c3e4-4321-8cc8-e20763c5a7db
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE, D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE
 ---
 
 # D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE enumeration

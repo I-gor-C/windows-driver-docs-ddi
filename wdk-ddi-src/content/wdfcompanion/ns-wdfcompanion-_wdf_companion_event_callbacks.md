@@ -1,5 +1,5 @@
 ---
-UID: NS.WDFCOMPANION._WDF_COMPANION_EVENT_CALLBACKS
+UID: NS:wdfcompanion._WDF_COMPANION_EVENT_CALLBACKS
 title: _WDF_COMPANION_EVENT_CALLBACKS
 author: windows-driver-content
 description: For internal use only.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_companion_event_callbacks.htm
 old-project: wdf
 ms.assetid: 6a9c5420-1847-4145-aea5-9e9c58d86ea1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_COMPANION_EVENT_CALLBACKS, WDF_COMPANION_EVENT_CALLBACKS, PWDF_COMPANION_EVENT_CALLBACKS, *PWDF_COMPANION_EVENT_CALLBACKS
+ms.date: 12/29/2017
+ms.keywords: _WDF_COMPANION_EVENT_CALLBACKS, WDF_COMPANION_EVENT_CALLBACKS, *PWDF_COMPANION_EVENT_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_COMPANION_EVENT_CALLBACKS, *PWDF_COMPANION_EVENT_CALLBACKS
 req.product: Windows 10 or later.
 ---
 

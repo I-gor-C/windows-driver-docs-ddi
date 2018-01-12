@@ -1,13 +1,13 @@
 ---
-UID: NC.ndis.MINIPORT_PNP_IRP
+UID: NC:ndis.MINIPORT_PNP_IRP
 title: MINIPORT_PNP_IRP
 author: windows-driver-content
 description: The MiniportPnpIrp function enables a miniport driver to optionally manage its Plug and Play (PnP) resources.
 old-location: netvista\miniportstartdevice.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ccccb2c5-16ba-4463-bb35-1dc3dcc61a2f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 # MINIPORT_PNP_IRP callback
@@ -113,7 +114,7 @@ The driver will register for line-based interrupts in the
 
 To register 
     <i>MiniportFilterResourceRequirements</i>, specify the entry point in the 
-    <a href="netvista.ndis_miniport_pnp_characteristics">
+    <a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
     NDIS_MINIPORT_PNP_CHARACTERISTICS</a> structure.
 
 NDIS calls the 
@@ -133,7 +134,7 @@ A miniport driver can set an affinity policy for each resource of type
     for a specific set of processors, the miniport driver also sets a 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a> mask at the 
     <b>Interrupt.TargetedProcessors</b> member in the 
-    <a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structure.
+    <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure.
 
 If an NDIS 6.1 or later miniport driver requires more message interrupt resources, it can add more
     message interrupt resources to the resources list. If the operating system can provide more message
@@ -145,7 +146,7 @@ Each message interrupt resource in the list is assigned a message number that co
     interrupt resources minus one.
 
 To assign an MSI-X table entry to a CPU at run time, the miniport driver can call the 
-    <a href="netvista.ndismconfigmsixtableentry">
+    <a href="..\ndis\nf-ndis-ndismconfigmsixtableentry.md">
     NdisMConfigMSIXTableEntry</a> function.
 
 A miniport driver can remove all of the resources of type 
@@ -157,10 +158,10 @@ A miniport driver can remove all of the resources of type
     <i>MiniportInitializeEx</i>.
 
 To allocate memory for a new resource-requirements list, use the 
-    <a href="netvista.ndisallocatememorywithtagpriority">
+    <a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
     NdisAllocateMemoryWithTagPriority</a> function. The miniport driver can free the memory for the old
     resources-requirement list with the 
-    <a href="netvista.ndisfreememory">NdisFreeMemory</a> function. The PnP manager
+    <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a> function. The PnP manager
     frees any driver-allocated memory after the associated IRP is complete.
 
 Miniport drivers should not modify other resources, such as 
@@ -194,7 +195,7 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 <i>MiniportStartDevice</i> is an optional function. Miniport drivers that support
     MSI-X can specify an entry point for this function in the 
-    <a href="netvista.ndis_miniport_pnp_characteristics">
+    <a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
     NDIS_MINIPORT_PNP_CHARACTERISTICS</a> structure. When NDIS receives a request from the Plug and Play
     (PnP) manager to start a device, NDIS calls the 
     <i>MiniportStartDevice</i> function, if any. If a miniport driver adds new resources
@@ -268,7 +269,7 @@ PASSIVE_LEVEL
 <dl>
 <dt><b>MiniportFilterResourceRequirements</b></dt>
 <dt>
-<a href="kernel.io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a>
+<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/f43dc60e-de88-4af0-ad83-3ce3a414d880">
@@ -290,18 +291,18 @@ PASSIVE_LEVEL
 <a href="..\ndis\nc-ndis-miniport_pnp_irp.md">MiniportStartDevice</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_pnp_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
    NDIS_MINIPORT_PNP_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatememorywithtagpriority">
+<a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
    NdisAllocateMemoryWithTagPriority</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreememory">NdisFreeMemory</a>
+<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 </dt>
 <dt>
-<a href="netvista.ndismconfigmsixtableentry">NdisMConfigMSIXTableEntry</a>
+<a href="..\ndis\nf-ndis-ndismconfigmsixtableentry.md">NdisMConfigMSIXTableEntry</a>
 </dt>
 <dt><b>MiniportStartDevice</b></dt>
 <dt>
@@ -318,7 +319,7 @@ PASSIVE_LEVEL
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_pnp_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_miniport_pnp_characteristics.md">
    NDIS_MINIPORT_PNP_CHARACTERISTICS</a>
 </dt>
 </dl>
@@ -326,5 +327,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20MINIPORT_PNP_IRP callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20MINIPORT_PNP_IRP callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

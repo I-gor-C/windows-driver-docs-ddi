@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWavePci.Init
+UID: NF:portcls.IMiniportWavePci.Init
 title: IMiniportWavePci::Init method
 author: windows-driver-content
 description: The Init method initializes the WavePci miniport object. Initialization includes verification of the hardware using the resources specified in the resource list.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWavePci::Init method
@@ -68,7 +69,7 @@ Pointer to <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> in
 
 ### -param Port [in]
 
-Pointer to the port driver's <a href="audio.iportwavepci">IPortWavePci</a> interface object. The caller specifies a valid, non-NULL pointer value for this parameter.
+Pointer to the port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536905">IPortWavePci</a> interface object. The caller specifies a valid, non-NULL pointer value for this parameter.
 
 
 ### -param ServiceGroup [out]
@@ -81,7 +82,7 @@ Output pointer for the service group. This parameter points to a caller-allocate
 
 
 ## -remarks
-The <i>UnknownAdapter</i> and <i>ResourceList</i> parameters are the same pointer values that the adapter driver earlier passed as parameters to the <b>IPortWavePci</b> object's <b>Init</b> method (see <a href="audio.iport_init">IPort::Init</a>).
+The <i>UnknownAdapter</i> and <i>ResourceList</i> parameters are the same pointer values that the adapter driver earlier passed as parameters to the <b>IPortWavePci</b> object's <b>Init</b> method (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>).
 
 The <i>UnknownAdapter</i>, <i>ResourceList</i>, <i>Port</i>, and <i>ServiceGroup</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.
 
@@ -131,13 +132,13 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 </dt>
 <dt>
-<a href="audio.iportwavepci">IPortWavePci</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536905">IPortWavePci</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 </dt>
 <dt>
-<a href="audio.iport_init">IPort::Init</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>
 </dt>
 </dl>
  

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl4.GetEventIndexDescriptionWide
+UID: NF:dbgeng.IDebugControl4.GetEventIndexDescriptionWide
 title: IDebugControl4::GetEventIndexDescriptionWide method
 author: windows-driver-content
 description: The GetEventIndexDescriptionWide method describes the specified event in a static list of events for the current target.
 old-location: debugger\geteventindexdescriptionwide.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 0153ee1d-93b3-497c-9fbf-e285c3730f72
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl4, IDebugControl4::GetEventIndexDescriptionWide, GetEventIndexDescriptionWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl4::GetEventIndexDescriptionWide method
@@ -127,15 +128,15 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
 </dt>
 <dt>
-<a href="debugger.getnumberevents">GetNumberEvents</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547906">GetNumberEvents</a>
 </dt>
 <dt>
-<a href="debugger.getcurrenteventindex">GetCurrentEventIndex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545755">GetCurrentEventIndex</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugControl4::GetEventIndexDescriptionWide method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl4::GetEventIndexDescriptionWide method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

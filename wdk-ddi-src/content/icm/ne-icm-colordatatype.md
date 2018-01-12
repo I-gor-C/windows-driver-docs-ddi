@@ -1,5 +1,5 @@
 ---
-UID: NE.icm.COLORDATATYPE
+UID: NE:icm.COLORDATATYPE
 title: COLORDATATYPE
 author: windows-driver-content
 description: The values of the COLORDATATYPE enumeration are used by WCS functions to indicate the data type of vector content.
@@ -7,8 +7,8 @@ old-location: print\colordatatype.htm
 old-project: print
 ms.assetid: ff7c9a81-3445-4a9e-aee3-2c63aafb0c82
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: COLORDATATYPE, COLORDATATYPE
+ms.date: 1/8/2018
+ms.keywords: COLORDATATYPE, COLORDATATYPE, *PCOLORDATATYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: COLORDATATYPE
 ---
 
 # COLORDATATYPE enumeration

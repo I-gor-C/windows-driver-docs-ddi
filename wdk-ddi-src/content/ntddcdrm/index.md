@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ntddcdrm
 ---
 
 # Ntddcdrm.h header

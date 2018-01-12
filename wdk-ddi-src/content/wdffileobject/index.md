@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdffileobject
 ---
 
 # Wdffileobject.h header
@@ -16,6 +16,11 @@ Wdffileobject.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [PFN_WDFFILEOBJECTGETDEVICE function](nc-wdffileobject-pfn_wdffileobjectgetdevice.md) | The WdfFileObjectGetDevice method returns the framework device object that is associated with a specified framework file object. |
+| [PFN_WDFFILEOBJECTGETFILENAME function](nc-wdffileobject-pfn_wdffileobjectgetfilename.md) | The WdfFileObjectGetFileName method returns the file name that a specified framework file object contains. |
+| [PFN_WDFFILEOBJECTGETFLAGS function](nc-wdffileobject-pfn_wdffileobjectgetflags.md) | The WdfFileObjectGetFlags method returns the flags that a specified framework file object contains. |
+| [PFN_WDFFILEOBJECTGETRELATEDFILEOBJECT function](nc-wdffileobject-pfn_wdffileobjectgetrelatedfileobject.md) | The WdfFileObjectGetRelatedFileObject method retrieves the related file object to a framework file object. |
+| [PFN_WDFFILEOBJECTWDMGETFILEOBJECT function](nc-wdffileobject-pfn_wdffileobjectwdmgetfileobject.md) | The WdfFileObjectWdmGetFileObject method returns the Windows Driver Model (WDM) file object that is associated with a specified framework file object. |
 | [WdfFileObjectGetDevice function](nf-wdffileobject-wdffileobjectgetdevice.md) | The WdfFileObjectGetDevice method returns the framework device object that is associated with a specified framework file object. |
 | [WdfFileObjectGetFileName function](nf-wdffileobject-wdffileobjectgetfilename.md) | The WdfFileObjectGetFileName method returns the file name that a specified framework file object contains. |
 | [WdfFileObjectGetFlags function](nf-wdffileobject-wdffileobjectgetflags.md) | The WdfFileObjectGetFlags method returns the flags that a specified framework file object contains. |

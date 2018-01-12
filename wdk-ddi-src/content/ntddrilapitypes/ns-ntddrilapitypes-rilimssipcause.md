@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILIMSSIPCAUSE
+UID: NS:ntddrilapitypes.RILIMSSIPCAUSE
 title: RILIMSSIPCAUSE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimssipcause.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 79a57fc5-1526-4f18-b51c-7d045092fcb4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILIMSSIPCAUSE, RILIMSSIPCAUSE, *LPRILIMSSIPCAUSE, LPRILIMSSIPCAUSE
+ms.date: 1/8/2018
+ms.keywords: RILIMSSIPCAUSE, RILIMSSIPCAUSE, *LPRILIMSSIPCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILIMSSIPCAUSE, *LPRILIMSSIPCAUSE
 ---
 
 # RILIMSSIPCAUSE structure

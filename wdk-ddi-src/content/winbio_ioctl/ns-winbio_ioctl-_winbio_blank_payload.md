@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_IOCTL._WINBIO_BLANK_PAYLOAD
+UID: NS:winbio_ioctl._WINBIO_BLANK_PAYLOAD
 title: _WINBIO_BLANK_PAYLOAD
 author: windows-driver-content
 description: The IOCTL_BIOMETRIC_RESET and IOCTL_BIOMETRIC_UPDATE_FIRMWARE IOCTLs return the WINBIO_BLANK_PAYLOAD structure as output.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: 0bc28853-1c00-42d3-a269-198093d64dd7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_BLANK_PAYLOAD, WINBIO_BLANK_PAYLOAD, PWINBIO_BLANK_PAYLOAD, *PWINBIO_BLANK_PAYLOAD
+ms.keywords: _WINBIO_BLANK_PAYLOAD, *PWINBIO_BLANK_PAYLOAD, WINBIO_BLANK_PAYLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWINBIO_BLANK_PAYLOAD, WINBIO_BLANK_PAYLOAD
 req.product: Windows 10 or later.
 ---
 

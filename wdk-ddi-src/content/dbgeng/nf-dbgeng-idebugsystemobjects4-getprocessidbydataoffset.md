@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetProcessIdByDataOffset
+UID: NF:dbgeng.IDebugSystemObjects4.GetProcessIdByDataOffset
 title: IDebugSystemObjects4::GetProcessIdByDataOffset method
 author: windows-driver-content
 description: The GetProcessIdByDataOffset method returns the engine process ID for the specified process. The process is specified by its data offset.
 old-location: debugger\getprocessidbydataoffset.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: a2c094f4-f54d-4c3c-95e7-75df717db8cc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetProcessIdByDataOffset, GetProcessIdByDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetProcessIdByDataOffset method
@@ -79,7 +80,7 @@ This method may also return other error values.  See <a href="https://msdn.micro
 ## -remarks
 This method is currently not available in kernel-mode debugging.
 
-In user-mode debugging, this method behaves the same as <a href="debugger.getprocessidbypeb">GetProcessIdByPeb</a>.
+In user-mode debugging, this method behaves the same as <a href="https://msdn.microsoft.com/library/windows/hardware/ff548150">GetProcessIdByPeb</a>.
 
 For more information about processes, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
 

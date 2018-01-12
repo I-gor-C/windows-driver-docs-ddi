@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.SetImplicitProcessDataOffset
+UID: NF:dbgeng.IDebugSystemObjects4.SetImplicitProcessDataOffset
 title: IDebugSystemObjects4::SetImplicitProcessDataOffset method
 author: windows-driver-content
 description: The SetImplicitProcessDataOffset method sets the implicit process for the current target.
 old-location: debugger\setimplicitprocessdataoffset.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 2a09341d-a580-4817-9103-29d8c36b81e3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::SetImplicitProcessDataOffset, SetImplicitProcessDataOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::SetImplicitProcessDataOffset method

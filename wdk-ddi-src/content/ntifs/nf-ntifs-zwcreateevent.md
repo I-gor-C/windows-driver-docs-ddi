@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.ZwCreateEvent
+UID: NF:ntifs.ZwCreateEvent
 title: ZwCreateEvent function
 author: windows-driver-content
 description: The ZwCreateEvent routine creates an event object, sets the initial state of the event to the specified value, and opens a handle to the object with the specified desired access.
@@ -7,7 +7,7 @@ old-location: kernel\zwcreateevent.htm
 old-project: kernel
 ms.assetid: c11265fb-df9d-405e-ac9f-e868ab392e7b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwCreateEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # ZwCreateEvent function
@@ -89,7 +90,7 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCES
 
 ### -param ObjectAttributes [in, optional]
 
-A pointer to the object attributes structure supplied by the caller to be used for the specified object. These attributes would include the <b>ObjectName</b> and the <a href="kernel.security_descriptor">SECURITY_DESCRIPTOR</a>, for example. This parameter is initialized by calling the <a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a> macro.
+A pointer to the object attributes structure supplied by the caller to be used for the specified object. These attributes would include the <b>ObjectName</b> and the <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>, for example. This parameter is initialized by calling the <a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a> macro.
 
 
 ### -param EventType [in]
@@ -115,7 +116,7 @@ The initial state of the event object. Set to <b>TRUE</b> to initialize the even
 </dl>The specified <i>EventType</i> parameter was invalid. The allowable <i>EventType</i> values are <b>NotificationEvent</b> or <b>SynchronizationEvent</b>. The REALTIME_OBJECT_FLAG can also be specified for these <i>EventType</i> parameters.
 <dl>
 <dt><b>STATUS_OBJECT_NAME_INVALID</b></dt>
-</dl>The <i>ObjectAttributes</i> parameter contained an <b>ObjectName</b> in the <a href="kernel.object_attributes">OBJECT_ATTRIBUTES</a> structure that was invalid.
+</dl>The <i>ObjectAttributes</i> parameter contained an <b>ObjectName</b> in the <a href="..\wudfwdm\ns-wudfwdm-_object_attributes.md">OBJECT_ATTRIBUTES</a> structure that was invalid.
 <dl>
 <dt><b>STATUS_OBJECT_PATH_SYNTAX_BAD</b></dt>
 </dl>The <i>ObjectAttributes</i> parameter did not contain a <b>RootDirectory</b> member, but the <b>ObjectName</b> member in the <b>OBJECT_ATTRIBUTES</b> structure was an empty string or did not contain an OBJECT_NAME_PATH_SEPARATOR character. This indicates incorrect syntax for the object path.
@@ -143,9 +144,9 @@ To synchronize on a notification event:
 
 Create the notification event with <b>ZwCreateEvent</b> with the <i>EventType</i> parameter set to <b>NotificationEvent</b>.
 
-Wait for the event to be signaled by calling <a href="kernel.zwwaitforsingleobject">ZwWaitForSingleObject</a> with the <i>EventHandle</i> returned by <b>ZwCreateEvent</b>. More than one thread of execution can wait for a given notification event to be signaled. To poll instead of stall, specify a <i>Timeout</i> of zero to <b>ZwWaitForSingleObject</b>.
+Wait for the event to be signaled by calling <a href="..\ntifs\nf-ntifs-zwwaitforsingleobject.md">ZwWaitForSingleObject</a> with the <i>EventHandle</i> returned by <b>ZwCreateEvent</b>. More than one thread of execution can wait for a given notification event to be signaled. To poll instead of stall, specify a <i>Timeout</i> of zero to <b>ZwWaitForSingleObject</b>.
 
-Close the handle to the notification event with <a href="kernel.zwclose">ZwClose</a> when access to the event is no longer needed.
+Close the handle to the notification event with <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> when access to the event is no longer needed.
 
 The <b>ZwCreateEvent</b> function is called after the <b>InitializeObjectAttributes</b> macro is used to set attributes in the <b>OBJECT_ATTRIBUTES</b> structure for the object. 
 
@@ -155,7 +156,7 @@ As a fully qualified pathname, supplied in the <b>ObjectName</b> member of the i
 
 As pathname relative to the directory represented by the handle in the <b>RootDirectory</b> member of the input <i>ObjectAttributes</i>.
 
-To release the event, a driver calls <a href="kernel.zwclose">ZwClose</a> with the event handle.
+To release the event, a driver calls <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> with the event handle.
 
 For more information about events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544323">Event Objects</a>.
 
@@ -234,7 +235,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -245,42 +246,42 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="kernel.initializeobjectattributes">InitializeObjectAttributes</a>
+<a href="..\wudfwdm\nf-wudfwdm-initializeobjectattributes.md">InitializeObjectAttributes</a>
 </dt>
 <dt>
-<a href="kernel.iocreatenotificationevent">IoCreateNotificationEvent</a>
+<a href="..\wdm\nf-wdm-iocreatenotificationevent.md">IoCreateNotificationEvent</a>
 </dt>
 <dt>
-<a href="kernel.iocreatesynchronizationevent">IoCreateSynchronizationEvent</a>
+<a href="..\wdm\nf-wdm-iocreatesynchronizationevent.md">IoCreateSynchronizationEvent</a>
 </dt>
 <dt>
-<a href="kernel.keclearevent">KeClearEvent</a>
+<a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
 </dt>
 <dt>
-<a href="kernel.keresetevent">KeResetEvent</a>
+<a href="..\wdm\nf-wdm-keresetevent.md">KeResetEvent</a>
 </dt>
 <dt>
-<a href="kernel.kesetevent">KeSetEvent</a>
+<a href="..\wdm\nf-wdm-kesetevent.md">KeSetEvent</a>
 </dt>
 <dt>
-<a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="kernel.zwclose">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 </dt>
 <dt>
-<a href="kernel.zwsetevent">ZwSetEvent</a>
+<a href="..\ntifs\nf-ntifs-zwsetevent.md">ZwSetEvent</a>
 </dt>
 <dt>
-<a href="kernel.zwwaitforsingleobject">ZwWaitForSingleObject</a>
+<a href="..\ntifs\nf-ntifs-zwwaitforsingleobject.md">ZwWaitForSingleObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateEvent routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwCreateEvent routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE
+UID: NI:parallel.IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE
 title: IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE
 author: windows-driver-content
 description: The IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE request allocates a parallel port for exclusive access by a client.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGBATOKEN, RILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE IOCTL

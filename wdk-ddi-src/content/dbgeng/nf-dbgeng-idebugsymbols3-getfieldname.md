@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.GetFieldName
+UID: NF:dbgeng.IDebugSymbols3.GetFieldName
 title: IDebugSymbols3::GetFieldName method
 author: windows-driver-content
 description: The GetFieldName method returns the name of a field within a structure.
 old-location: debugger\getfieldname.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 3fb9abdd-f2c0-41b4-8df9-2f7f5065f90c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::GetFieldName, GetFieldName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::GetFieldName method

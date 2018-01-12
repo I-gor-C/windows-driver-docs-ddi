@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddstor._STORAGE_ZONE_CONDITION
+UID: NE:ntddstor._STORAGE_ZONE_CONDITION
 title: _STORAGE_ZONE_CONDITION
 author: windows-driver-content
 description: Note  This structure is for internal use only and should not be called from your code. .
@@ -7,8 +7,8 @@ old-location: storage\storage_zone_condition.htm
 old-project: storage
 ms.assetid: 57FF3890-6B37-45EB-BB02-22B2ADDFAA90
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_ZONE_CONDITION, PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # _STORAGE_ZONE_CONDITION enumeration

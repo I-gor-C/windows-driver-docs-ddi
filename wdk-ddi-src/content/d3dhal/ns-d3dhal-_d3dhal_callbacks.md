@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DHAL._D3DHAL_CALLBACKS
+UID: NS:d3dhal._D3DHAL_CALLBACKS
 title: _D3DHAL_CALLBACKS
 author: windows-driver-content
 description: D3DHAL_CALLBACKS is one of several callback structures that describe the Direct3D support provided by the driver.
@@ -7,8 +7,8 @@ old-location: display\d3dhal_callbacks.htm
 old-project: display
 ms.assetid: 3b045732-a41f-47e7-9835-41e3ef54f14c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DHAL_CALLBACKS, D3DHAL_CALLBACKS, *LPD3DHAL_CALLBACKS
+ms.date: 12/29/2017
+ms.keywords: _D3DHAL_CALLBACKS, D3DHAL_CALLBACKS, *LPD3DHAL_CALLBACKS, *LPD3DHAL_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DHAL_CALLBACKS, *LPD3DHAL_CALLBACKS
 ---
 
 # _D3DHAL_CALLBACKS structure
@@ -263,7 +264,7 @@ Must be zero.
 
 
 ## -remarks
-The driver allocates this structure and sets appropriate values in all members. The driver's <a href="display.drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a> function returns a pointer to this structure in the <b>lpD3DHALCallbacks</b> member of the <a href="display.dd_halinfo">DD_HALINFO</a> structure.
+The driver allocates this structure and sets appropriate values in all members. The driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a> function returns a pointer to this structure in the <b>lpD3DHALCallbacks</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551627">DD_HALINFO</a> structure.
 
 Texture management is now handled though opcodes that are managed in the driver's implementation of <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>.
 
@@ -295,18 +296,18 @@ Header
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="display.d3dhal_callbacks3">D3DHAL_CALLBACKS3</a>
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_callbacks3.md">D3DHAL_CALLBACKS3</a>
 </dt>
 <dt>
-<a href="display.ddgetdriverinfo">DdGetDriverInfo</a>
+<a href="https://msdn.microsoft.com/89a22163-a678-4c72-932a-ae4d17922e0b">DdGetDriverInfo</a>
 </dt>
 <dt>
-<a href="display.drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556229">DrvGetDirectDrawInfo</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_CALLBACKS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_CALLBACKS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

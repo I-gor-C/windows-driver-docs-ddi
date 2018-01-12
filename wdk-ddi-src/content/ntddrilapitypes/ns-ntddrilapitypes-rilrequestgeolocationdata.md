@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILREQUESTGEOLOCATIONDATA
+UID: NS:ntddrilapitypes.RILREQUESTGEOLOCATIONDATA
 title: RILREQUESTGEOLOCATIONDATA
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilrequestgeolocationdata.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 814e00c5-7248-4853-a61b-e70be86bca0e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA, LPRILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA
+ms.date: 1/8/2018
+ms.keywords: RILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA
 ---
 
 # RILREQUESTGEOLOCATIONDATA structure

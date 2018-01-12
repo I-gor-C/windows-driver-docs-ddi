@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ExSetTimer
+UID: NF:wdm.ExSetTimer
 title: ExSetTimer function
 author: windows-driver-content
 description: The ExSetTimer routine starts a timer operation and sets the timer to expire at the specified due time.
@@ -7,7 +7,7 @@ old-location: kernel\exsettimer.htm
 old-project: kernel
 ms.assetid: 0320AB36-CA88-40E7-859E-B940401474DD
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ExSetTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ BOOLEAN ExSetTimer(
 
 ### -param Timer [in]
 
-A pointer to an <a href="kernel.ex_timer">EX_TIMER</a> structure. This structure is a timer object that was previously allocated by the <a href="kernel.exallocatetimer">ExAllocateTimer</a> routine.
+A pointer to an <a href="kernel.ex_timer">EX_TIMER</a> structure. This structure is a timer object that was previously allocated by the <a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a> routine.
 
 
 ### -param DueTime [in]
@@ -76,7 +77,7 @@ An optional period for the timer in system time units (100-nanosecond intervals)
 
 ### -param Parameters [in, optional]
 
-A pointer to an <a href="kernel.ext_set_parameters">EXT_SET_PARAMETERS</a> structure. The calling driver previously called the <a href="kernel.exinitializesettimerparameters">ExInitializeSetTimerParameters</a> routine to initialize this structure.
+A pointer to an <a href="..\wdm\ns-wdm-_ext_set_parameters_v0.md">EXT_SET_PARAMETERS</a> structure. The calling driver previously called the <a href="..\wdm\nf-wdm-exinitializesettimerparameters.md">ExInitializeSetTimerParameters</a> routine to initialize this structure.
 
 
 ## -returns
@@ -86,9 +87,9 @@ This routine returns <b>TRUE</b> if it cancels a timer that was pending at the t
 ## -remarks
 Your driver can call this routine to set a timer to expire at a future time. The driver can then wait for the timer to expire. Or, the driver can implement a callback routine that is called when the timer expires.
 
-After a driver calls <b>ExSetTimer</b>, the driver can call a routine such as <a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a> or or <a href="kernel.kewaitformultipleobjects">KeWaitForMultipleObjects</a> to wait for the timer to expire. When the timer expires, the operating system signals the timer object.
+After a driver calls <b>ExSetTimer</b>, the driver can call a routine such as <a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a> or or <a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a> to wait for the timer to expire. When the timer expires, the operating system signals the timer object.
 
-As an option, the driver can implement an <a href="kernel.extimercallback">ExTimerCallback</a> callback routine, and supply a pointer to this routine as an input parameter to the <a href="kernel.exallocatetimer">ExAllocateTimer</a> routine. When the timer expires, the operating system calls the <i>ExTimerCallback</i> routine.
+As an option, the driver can implement an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265190">ExTimerCallback</a> callback routine, and supply a pointer to this routine as an input parameter to the <a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a> routine. When the timer expires, the operating system calls the <i>ExTimerCallback</i> routine.
 
 An <b>ExSetTimer</b> call implicitly cancels any previously started set-timer operation on the timer object specified by <i>Timer</i>. If your driver previously called <b>ExSetTimer</b> to set a timer that uses <i>Timer</i>, and this timer has not yet expired when <b>ExSetTimer</b> is called a second time, the second call cancels the timer from the first call and then starts the new timer. In this case, the second call returns <b>TRUE</b>. However, if the timer started by the first call expires before the second call can cancel this timer, the second call starts the new timer and returns <b>FALSE</b>.
 
@@ -165,30 +166,30 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exallocatetimer">ExAllocateTimer</a>
+<a href="..\wdm\nf-wdm-exallocatetimer.md">ExAllocateTimer</a>
 </dt>
 <dt>
-<a href="kernel.exinitializesettimerparameters">ExInitializeSetTimerParameters</a>
+<a href="..\wdm\nf-wdm-exinitializesettimerparameters.md">ExInitializeSetTimerParameters</a>
 </dt>
 <dt>
 <a href="kernel.ex_timer">EX_TIMER</a>
 </dt>
 <dt>
-<a href="kernel.extimercallback">ExTimerCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265190">ExTimerCallback</a>
 </dt>
 <dt>
-<a href="kernel.ext_set_parameters">EXT_SET_PARAMETERS</a>
+<a href="..\wdm\ns-wdm-_ext_set_parameters_v0.md">EXT_SET_PARAMETERS</a>
 </dt>
 <dt>
-<a href="kernel.kewaitformultipleobjects">KeWaitForMultipleObjects</a>
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
 </dt>
 <dt>
-<a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExSetTimer routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ExSetTimer routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

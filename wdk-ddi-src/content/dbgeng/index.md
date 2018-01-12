@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:dbgeng
 ---
 
 # Dbgeng.h header
@@ -7,7 +7,7 @@ UID: NA:
 ## -description
 
 This header is used by Debugger. For more information, see
-- [Debugger](../_Debugger/index.md)
+- [Debugger](../_debugger/index.md)
 
 Dbgeng.h contain these programming interfaces:
 
@@ -27,6 +27,19 @@ Dbgeng.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [PDEBUG_EXTENSION_CALL callback](nc-dbgeng-pdebug_extension_call.md) | Callback functions of the type PDEBUG_EXTENSION_CALL are called by the engine to execute extension commands. You can give these functions any name you want, as long as it contains no uppercase letters. |
+| [PDEBUG_EXTENSION_CANUNLOAD callback](nc-dbgeng-pdebug_extension_canunload.md) | The DebugExtensionCanUnload callback function checks whether a debug extension can unload after the uninitialization call. |
+| [PDEBUG_EXTENSION_INITIALIZE callback](nc-dbgeng-pdebug_extension_initialize.md) | The DebugExtensionInitialize callback function is called by the engine after loading a DbgEng extension DLL.C++ CALLBACK* PDEBUG_EXTENSION_INITIALIZE DebugExtensionInitialize; |
+| [PDEBUG_EXTENSION_KNOWN_STRUCT callback](nc-dbgeng-pdebug_extension_known_struct.md) | The engine calls the KnownStructOutput callback function to request information about structures that the extension DLL can format for printing. The engine calls this function for the following reasons. |
+| [PDEBUG_EXTENSION_KNOWN_STRUCT_EX callback](nc-dbgeng-pdebug_extension_known_struct_ex.md) | The DebugExtensionKnownStructEx callback function is called by extensions in order to dump structures that are well known to them. |
+| [PDEBUG_EXTENSION_NOTIFY callback](nc-dbgeng-pdebug_extension_notify.md) | The engine calls the DebugExtensionNotify callback function to inform the extension DLL when a session changes its active or accessible status.C++ CALLBACK* PDEBUG_EXTENSION_NOTIFY DebugExtensionNotify; |
+| [PDEBUG_EXTENSION_PROVIDE_VALUE callback](nc-dbgeng-pdebug_extension_provide_value.md) | The DebugExtensionProvideValue callback function sets pseudo-register values.C++ CALLBACK* PDEBUG_EXTENSION_PROVIDE_VALUE DebugExtensionProvideValue; |
+| [PDEBUG_EXTENSION_QUERY_VALUE_NAMES callback](nc-dbgeng-pdebug_extension_query_value_names.md) | The DebugExtensionQueryValueNames callback function recovers pseudo-register values.C++ CALLBACK* PDEBUG_EXTENSION_QUERY_VALUE_NAMES DebugExtensionQueryValueNames; |
+| [PDEBUG_EXTENSION_UNINITIALIZE callback](nc-dbgeng-pdebug_extension_uninitialize.md) | The DebugExtensionUninitialize callback function is called by the engine to uninitialize the DbgEng extension DLL before it is unloaded. |
+| [PDEBUG_EXTENSION_UNLOAD callback](nc-dbgeng-pdebug_extension_unload.md) | The DebugExtensionUnload callback function unloads the debug extension. |
+| [PDEBUG_STACK_PROVIDER_BEGINTHREADSTACKRECONSTRUCTION callback](nc-dbgeng-pdebug_stack_provider_beginthreadstackreconstruction.md) | The BeginThreadStackReconstruction callback function causes debugger to pass the stream to the dump stack provider prior to thread enumeration. |
+| [PDEBUG_STACK_PROVIDER_ENDTHREADSTACKRECONSTRUCTION callback](nc-dbgeng-pdebug_stack_provider_endthreadstackreconstruction.md) | The EndThreadStackReconstruction callback function may be called after stack reconstruction to clean up state. |
+| [PDEBUG_STACK_PROVIDER_FREESTACKSYMFRAMES callback](nc-dbgeng-pdebug_stack_provider_freestacksymframes.md) | The FreeStackSymFrames callback function frees memory from a stack provider. |
+| [PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK callback](nc-dbgeng-pdebug_stack_provider_reconstructstack.md) | The ReconstructStack callback function queries dump stream provider on a per-thread basis. |
 
 ## Structures
 
@@ -72,6 +85,60 @@ Dbgeng.h contain these programming interfaces:
 | [_STACK_SRC_INFO structure](ns-dbgeng-_stack_src_info.md) | Defines stack source information. |
 | [_STACK_SYM_FRAME_INFO structure](ns-dbgeng-_stack_sym_frame_info.md) | Defines stack source information for an extended stack frame. |
 | [_SYMBOL_INFO_EX structure](ns-dbgeng-_symbol_info_ex.md) | The SYMBOL_INFO_EX structure describes the extended line symbol information. |
+
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [IDebugAdvanced interface](nn-dbgeng-idebugadvanced.md) | IDebugAdvanced interface |
+| [IDebugAdvanced2 interface](nn-dbgeng-idebugadvanced2.md) | IDebugAdvanced2 interface |
+| [IDebugAdvanced3 interface](nn-dbgeng-idebugadvanced3.md) | IDebugAdvanced3 interface |
+| [IDebugAdvanced4 interface](nn-dbgeng-idebugadvanced4.md) | IDebugAdvanced4 interface |
+| [IDebugBreakpoint interface](nn-dbgeng-idebugbreakpoint.md) | IDebugBreakpoint interface |
+| [IDebugBreakpoint2 interface](nn-dbgeng-idebugbreakpoint2.md) | IDebugBreakpoint2 interface |
+| [IDebugBreakpoint3 interface](nn-dbgeng-idebugbreakpoint3.md) | . |
+| [IDebugClient interface](nn-dbgeng-idebugclient.md) | IDebugClient interface |
+| [IDebugClient2 interface](nn-dbgeng-idebugclient2.md) | IDebugClient2 interface |
+| [IDebugClient3 interface](nn-dbgeng-idebugclient3.md) | IDebugClient3 interface |
+| [IDebugClient4 interface](nn-dbgeng-idebugclient4.md) | IDebugClient4 interface |
+| [IDebugClient5 interface](nn-dbgeng-idebugclient5.md) | IDebugClient5 interface |
+| [IDebugClient6 interface](nn-dbgeng-idebugclient6.md) | This interface supports event context callbacks. |
+| [IDebugClient7 interface](nn-dbgeng-idebugclient7.md) | The IDebugClient7 interface is reserved for internal use. |
+| [IDebugControl interface](nn-dbgeng-idebugcontrol.md) | IDebugControl interface |
+| [IDebugControl2 interface](nn-dbgeng-idebugcontrol2.md) | IDebugControl2 interface |
+| [IDebugControl3 interface](nn-dbgeng-idebugcontrol3.md) | IDebugControl3 interface |
+| [IDebugControl4 interface](nn-dbgeng-idebugcontrol4.md) | IDebugControl4 interface |
+| [IDebugControl5 interface](nn-dbgeng-idebugcontrol5.md) | . |
+| [IDebugControl6 interface](nn-dbgeng-idebugcontrol6.md) | . |
+| [IDebugControl7 interface](nn-dbgeng-idebugcontrol7.md) | . |
+| [IDebugDataSpaces interface](nn-dbgeng-idebugdataspaces.md) | IDebugDataSpaces interface |
+| [IDebugDataSpaces2 interface](nn-dbgeng-idebugdataspaces2.md) | IDebugDataSpaces2 interface |
+| [IDebugDataSpaces3 interface](nn-dbgeng-idebugdataspaces3.md) | IDebugDataSpaces3 interface |
+| [IDebugDataSpaces4 interface](nn-dbgeng-idebugdataspaces4.md) | IDebugDataSpaces4 interface |
+| [IDebugEventCallbacks interface](nn-dbgeng-idebugeventcallbacks.md) | IDebugEventCallbacks interface |
+| [IDebugEventCallbacksWide interface](nn-dbgeng-idebugeventcallbackswide.md) | IDebugEventCallbacksWide interface |
+| [IDebugEventContextCallbacks interface](nn-dbgeng-idebugeventcontextcallbacks.md) | This interface supports event context callbacks and replaces the use of the IDebugClient |
+| [IDebugInputCallbacks interface](nn-dbgeng-idebuginputcallbacks.md) | IDebugInputCallbacks interface |
+| [IDebugOutputCallbacks interface](nn-dbgeng-idebugoutputcallbacks.md) | IDebugOutputCallbacks interface |
+| [IDebugOutputCallbacks2 interface](nn-dbgeng-idebugoutputcallbacks2.md) | The IDebugOutputCallbacks2 interface allows clients to receive full debugger markup language (DML) content for presentation. |
+| [IDebugOutputCallbacksWide interface](nn-dbgeng-idebugoutputcallbackswide.md) | IDebugOutputCallbacksWide interface |
+| [IDebugOutputStream interface](nn-dbgeng-idebugoutputstream.md) | Supports the debug output stream. |
+| [IDebugPlmClient interface](nn-dbgeng-idebugplmclient.md) | This interface supports Process Lifecycle Management (PLM) for the debug client. |
+| [IDebugPlmClient2 interface](nn-dbgeng-idebugplmclient2.md) | This interface supports Process Lifecycle Management (PLM) for the debug client. |
+| [IDebugPlmClient3 interface](nn-dbgeng-idebugplmclient3.md) | This interface supports Process Lifecycle Management (PLM) for the debug client. |
+| [IDebugRegisters interface](nn-dbgeng-idebugregisters.md) | IDebugRegisters interface |
+| [IDebugRegisters2 interface](nn-dbgeng-idebugregisters2.md) | IDebugRegisters2 interface |
+| [IDebugSymbolGroup interface](nn-dbgeng-idebugsymbolgroup.md) | IDebugSymbolGroup interface |
+| [IDebugSymbolGroup2 interface](nn-dbgeng-idebugsymbolgroup2.md) | IDebugSymbolGroup2 interface |
+| [IDebugSymbols interface](nn-dbgeng-idebugsymbols.md) | IDebugSymbols interface |
+| [IDebugSymbols2 interface](nn-dbgeng-idebugsymbols2.md) | IDebugSymbols2 interface |
+| [IDebugSymbols3 interface](nn-dbgeng-idebugsymbols3.md) | IDebugSymbols3 interface |
+| [IDebugSymbols4 interface](nn-dbgeng-idebugsymbols4.md) | This interface supports determination of the symbol of an inline frame. |
+| [IDebugSymbols5 interface](nn-dbgeng-idebugsymbols5.md) | This interface supports using index values for the current frame. |
+| [IDebugSystemObjects interface](nn-dbgeng-idebugsystemobjects.md) | IDebugSystemObjects interface |
+| [IDebugSystemObjects2 interface](nn-dbgeng-idebugsystemobjects2.md) | IDebugSystemObjects2 interface |
+| [IDebugSystemObjects3 interface](nn-dbgeng-idebugsystemobjects3.md) | IDebugSystemObjects3 interface |
+| [IDebugSystemObjects4 interface](nn-dbgeng-idebugsystemobjects4.md) | IDebugSystemObjects4 interface |
 
 ## Methods
 
@@ -519,6 +586,7 @@ Dbgeng.h contain these programming interfaces:
 | [IDebugSymbolGroup2::RemoveSymbolByNameWide method](nf-dbgeng-idebugsymbolgroup2-removesymbolbynamewide.md) | The RemoveSymbolByNameWide method removes the specified symbol from a symbol group. |
 | [IDebugSymbolGroup2::WriteSymbol method](nf-dbgeng-idebugsymbolgroup2-writesymbol.md) | The WriteSymbol methods set the value of the specified symbol. |
 | [IDebugSymbolGroup2::WriteSymbolWide method](nf-dbgeng-idebugsymbolgroup2-writesymbolwide.md) | The WriteSymbolWide method sets the value of the specified symbol. |
+| [IDebugSymbols2::GetFieldOffset method](nf-dbgeng-idebugsymbols2-getfieldoffset.md) | The GetFieldOffset function returns the offset of a member from the beginning of a structure. |
 | [IDebugSymbols3::AddSymbolOptions method](nf-dbgeng-idebugsymbols3-addsymboloptions.md) | The AddSymbolOptions method turns on some of the engine's global symbol options. |
 | [IDebugSymbols3::AddSyntheticModule method](nf-dbgeng-idebugsymbols3-addsyntheticmodule.md) | The AddSyntheticModule method adds a synthetic module to the module list the debugger maintains for the current process. |
 | [IDebugSymbols3::AddSyntheticModuleWide method](nf-dbgeng-idebugsymbols3-addsyntheticmodulewide.md) | The AddSyntheticModuleWide method adds a synthetic module to the module list the debugger maintains for the current process. |
@@ -642,6 +710,7 @@ Dbgeng.h contain these programming interfaces:
 | [IDebugSymbols3::StartSymbolMatchWide method](nf-dbgeng-idebugsymbols3-startsymbolmatchwide.md) | The StartSymbolMatchWide method initializes a search for symbols whose names match a given pattern. |
 | [IDebugSymbols3::WriteTypedDataPhysical method](nf-dbgeng-idebugsymbols3-writetypeddataphysical.md) | The WriteTypedDataPhysical method writes the value of a variable in the target computer's physical memory. |
 | [IDebugSymbols3::WriteTypedDataVirtual method](nf-dbgeng-idebugsymbols3-writetypeddatavirtual.md) | The WriteTypedDataVirtual method writes data to the target's virtual address space. The number of bytes written is the size of the specified type. |
+| [IDebugSymbols4::GetFieldOffset method](nf-dbgeng-idebugsymbols4-getfieldoffset.md) | The GetFieldOffset function returns the offset of a member from the beginning of a structure. |
 | [IDebugSymbols4::GetLineByInlineContext method](nf-dbgeng-idebugsymbols4-getlinebyinlinecontext.md) | Gets a line by inline context. |
 | [IDebugSymbols4::GetLineByInlineContextWide method](nf-dbgeng-idebugsymbols4-getlinebyinlinecontextwide.md) | Gets a line by inline context. |
 | [IDebugSymbols4::GetNameByInlineContext method](nf-dbgeng-idebugsymbols4-getnamebyinlinecontext.md) | Gets a name by inline context. |

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisGetRssProcessorInformation
+UID: NF:ndis.NdisGetRssProcessorInformation
 title: NdisGetRssProcessorInformation function
 author: windows-driver-content
 description: The NdisGetRssProcessorInformation function retrieves information about the set of processors that a miniport driver must use for receive side scaling (RSS).
 old-location: netvista\ndisgetrssprocessorinformation.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0da022d5-7294-4780-bab8-119ff6385abf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisGetRssProcessorInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisGetRssProcessorInformation function
@@ -72,7 +73,7 @@ An NDIS instance handle that was obtained during caller initialization. NDIS dri
 </dd>
 <dd>
 
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 
 </dd>
@@ -81,9 +82,9 @@ An NDIS instance handle that was obtained during caller initialization. NDIS dri
 ### -param RssProcessorInfo [out, optional]
 
 A pointer to a caller-allocated buffer where NDIS puts the 
-     <a href="netvista.ndis_rss_processor_info">NDIS_RSS_PROCESSOR_INFO</a> structure
+     <a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor_info.md">NDIS_RSS_PROCESSOR_INFO</a> structure
      and an array of 
-     <a href="netvista.ndis_rss_processor">NDIS_RSS_PROCESSOR</a> structures that
+     <a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a> structures that
      contain information about the RSS processor set. The caller provides the length of the buffer in the 
      <i>Size</i> parameter.
 
@@ -190,18 +191,18 @@ IRQL
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_rss_processor">NDIS_RSS_PROCESSOR</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a>
 </dt>
 <dt>
-<a href="netvista.ndis_rss_processor_info">NDIS_RSS_PROCESSOR_INFO</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor_info.md">NDIS_RSS_PROCESSOR_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisGetRssProcessorInformation function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisGetRssProcessorInformation function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

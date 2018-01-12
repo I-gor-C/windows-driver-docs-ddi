@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSPROPERTY_MEDIASEEKING
+UID: NE:ks.KSPROPERTY_MEDIASEEKING
 title: KSPROPERTY_MEDIASEEKING
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksproperty_mediaseeking.htm
 old-project: stream
 ms.assetid: 9B9C308B-7D0B-4549-9EE5-2E53B0B8946C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPROPERTY_MEDIASEEKING, KSPROPERTY_MEDIASEEKING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_MEDIASEEKING
 ---
 
 # KSPROPERTY_MEDIASEEKING enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NC.bthddi.PFNBTHPORT_INDICATION_CALLBACK
+UID: NC:bthddi.PFNBTHPORT_INDICATION_CALLBACK
 title: PFNBTHPORT_INDICATION_CALLBACK
 author: windows-driver-content
 description: Profile drivers implement a L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming L2CAP connection requests from remote devices, and any changes to the status of a currently open L2CAP connection.
@@ -7,7 +7,7 @@ old-location: bltooth\l2cap_callback_function.htm
 old-project: bltooth
 ms.assetid: d3ca900d-1dd6-49da-ae94-855de3fbd086
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ---
 
 # PFNBTHPORT_INDICATION_CALLBACK callback
@@ -75,14 +76,14 @@ For incoming remote connection request indications, this is the context specifie
 ### -param Indication [in]
 
 An 
-     <a href="bltooth.indication_code">INDICATION_CODE</a> value that indicates the type
+     <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> value that indicates the type
      of L2CAP event.
 
 
 ### -param Parameters [in]
 
 An 
-     <a href="bltooth.indication_parameters">INDICATION_PARAMETERS</a> structure that
+     <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a> structure that
      contains event-specific parameters.
 
 
@@ -114,10 +115,10 @@ After the profile driver registers its L2CAP callback function, the callback fun
     connection notifications as a server.
 
 The 
-    <a href="bltooth.indication_parameters">INDICATION_PARAMETERS</a> structure held in
+    <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a> structure held in
     the 
     <i>Parameters</i> parameter is interpreted according to the value of the 
-    <a href="bltooth.indication_code">INDICATION_CODE</a> enumeration that the Bluetooth
+    <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> enumeration that the Bluetooth
     driver stack passes to the profile driver's L2CAP callback function through the 
     <i>Indication</i> parameter. For most notifications, there is an INDICATION_PARAMETERS union member that
     corresponds to the event and contains event-specific parameters.
@@ -180,15 +181,15 @@ Developers should code this function to operate at either IRQL = DISPATCH_LEVEL 
 <a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
 </dt>
 <dt>
-<a href="bltooth.indication_code">INDICATION_CODE</a>
+<a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
 </dt>
 <dt>
-<a href="bltooth.indication_parameters">INDICATION_PARAMETERS</a>
+<a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20PFNBTHPORT_INDICATION_CALLBACK callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20PFNBTHPORT_INDICATION_CALLBACK callback function%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

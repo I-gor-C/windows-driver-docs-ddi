@@ -1,14 +1,14 @@
 ---
-UID: NS.WSK._WSK_PROVIDER_CONNECTION_DISPATCH
+UID: NS:wsk._WSK_PROVIDER_CONNECTION_DISPATCH
 title: _WSK_PROVIDER_CONNECTION_DISPATCH
 author: windows-driver-content
 description: The WSK_PROVIDER_CONNECTION_DISPATCH structure specifies the WSK subsystem's table of functions for a connection-oriented socket.
 old-location: netvista\wsk_provider_connection_dispatch.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 70a86809-07f2-4723-9e50-4dbdd31ff900
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WSK_PROVIDER_CONNECTION_DISPATCH, WSK_PROVIDER_CONNECTION_DISPATCH, *PWSK_PROVIDER_CONNECTION_DISPATCH, PWSK_PROVIDER_CONNECTION_DISPATCH
+ms.date: 1/8/2018
+ms.keywords: _WSK_PROVIDER_CONNECTION_DISPATCH, WSK_PROVIDER_CONNECTION_DISPATCH, *PWSK_PROVIDER_CONNECTION_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WSK_PROVIDER_CONNECTION_DISPATCH, *PWSK_PROVIDER_CONNECTION_DISPATCH
 req.product: Windows 10 or later.
 ---
 
@@ -67,7 +68,7 @@ typedef struct _WSK_PROVIDER_CONNECTION_DISPATCH {
 ### -field Basic
 
 The members of the 
-     <a href="netvista.wsk_provider_basic_dispatch">
+     <a href="..\wsk\ns-wsk-_wsk_provider_basic_dispatch.md">
      WSK_PROVIDER_BASIC_DISPATCH</a> structure are included as members of the 
      <b>WSK_PROVIDER_CONNECTION_DISPATCH</b> structure.
 
@@ -132,7 +133,7 @@ A pointer to the WSK subsystem's
 
 ## -remarks
 The member list of the WSK_PROVIDER_CONNECTION_DISPATCH structure includes an unnamed 
-    <a href="netvista.wsk_provider_basic_dispatch">
+    <a href="..\wsk\ns-wsk-_wsk_provider_basic_dispatch.md">
     WSK_PROVIDER_BASIC_DISPATCH</a> structure. The compiler that is included with the WDK supports a
     Microsoft-specific extension to the C language that allows unnamed structures within structure
     declarations. The result is that the structure members of the WSK_PROVIDER_BASIC_DISPATCH structure are
@@ -161,7 +162,7 @@ The WSK subsystem calls the WSK application's
 
 The pointer to the WSK_PROVIDER_CONNECTION_DISPATCH structure is contained in the 
     <b>Dispatch</b> member of the 
-    <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that is received from the
+    <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that is received from the
     WSK subsystem.
 
 
@@ -236,19 +237,19 @@ Header
 <a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_connection_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">
    WSK_CLIENT_CONNECTION_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_basic_dispatch">WSK_PROVIDER_BASIC_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_basic_dispatch.md">WSK_PROVIDER_BASIC_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_socket">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WSK_PROVIDER_CONNECTION_DISPATCH structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_CONNECTION_DISPATCH structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

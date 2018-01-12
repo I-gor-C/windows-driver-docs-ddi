@@ -1,5 +1,5 @@
 ---
-UID: NI.nfcsedev.IOCTL_NFCSE_GET_NEXT_EVENT
+UID: NI:nfcsedev.IOCTL_NFCSE_GET_NEXT_EVENT
 title: IOCTL_NFCSE_GET_NEXT_EVENT
 author: windows-driver-content
 description: The IOCTL_NFCSE_GET_NEXT_EVENT control code returns the next event available in the buffer, or if there are no more buffered events remains pending until a secure element event is available. The event details must then be returned to the caller.
@@ -7,8 +7,8 @@ old-location: nfpdrivers\ioctl_nfcse_get_next_event.htm
 old-project: nfpdrivers
 ms.assetid: B142BB21-D70E-4BA2-B2C1-60468FA8378E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE, PSECURE_ELEMENT_TYPE
+ms.date: 12/18/2017
+ms.keywords: _SECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SECURE_ELEMENT_TYPE, *PSECURE_ELEMENT_TYPE
 ---
 
 # IOCTL_NFCSE_GET_NEXT_EVENT IOCTL
@@ -55,7 +56,7 @@ None
 
 ### -output-buffer
 
-                A <b>DWORD</b> indicating the size of the <a href="nfpdrivers.secure_element_event_info">SECURE_ELEMENT_EVENT_INFO</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_EVENT_INFO</b> structure itself. 
+                A <b>DWORD</b> indicating the size of the <a href="..\nfcsedev\ns-nfcsedev-_secure_element_event_info.md">SECURE_ELEMENT_EVENT_INFO</a> structure plus its payload, immediately followed by the <b>SECURE_ELEMENT_EVENT_INFO</b> structure itself. 
 
 
 ### -output-buffer-length

@@ -1,5 +1,5 @@
 ---
-UID: NF.drmk.DrmAddContentHandlers
+UID: NF:drmk.DrmAddContentHandlers
 title: DrmAddContentHandlers function
 author: windows-driver-content
 description: The DrmAddContentHandlers function provides the system with a list of functions that handle protected content.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Drmk.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDI_TX_METADATA, WDI_TX_METADATA
 ---
 
 # DrmAddContentHandlers function
@@ -77,13 +78,13 @@ Specifies the number of function pointers in the <i>paHandlers</i> array.
 ## -remarks
 Before allowing protected content to flow through a data path, the system verifies that the data path is secure. To do so, the system authenticates each module in the data path beginning at the upstream end of the data path and moving downstream. As each module is authenticated, that module gives the system information about the next module in the data path so that it can also be authenticated. To be successfully authenticated, a module's binary file must be signed as DRM-compliant.
 
-If two adjacent modules communicate with each other through either the <a href="kernel.iocalldriver">IoCallDriver</a> function or the downstream module's COM interface, the upstream module calls the <a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a> or <a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a> function, respectively, to provide the system with information about the downstream module. However, if the two modules use any other type of interface to communicate, the upstream module calls the <code>DrmAddContentHandlers</code> function instead.
+If two adjacent modules communicate with each other through either the <a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a> function or the downstream module's COM interface, the upstream module calls the <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a> or <a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a> function, respectively, to provide the system with information about the downstream module. However, if the two modules use any other type of interface to communicate, the upstream module calls the <code>DrmAddContentHandlers</code> function instead.
 
 The <i>paHandlers</i> array contains function pointers to entry points in the downstream module. <code>DrmAddContentHandlers</code> authenticates the module that implements these functions. (If the entry points are distributed among several modules, the function authenticates all these modules.) The vendor-defined functions in this array make up an interface that is understood by both the module that calls the functions and the module that implements the functions. <code>DrmAddContentHandlers</code> does not directly call any of these functions.
 
 The upstream module can pass both the content ID and content rights to the downstream module by using one of the functions in the <i>paHandlers</i> array for this purpose. The downstream module needs the content ID to advise the system of any modules to which it sends the protected content.
 
-<i>DrmAddContentHandlers</i> performs the same function as <a href="audio.pcaddcontenthandlers">PcAddContentHandlers</a> and <a href="audio.idrmport2_addcontenthandlers">IDrmPort2::AddContentHandlers</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.
+<i>DrmAddContentHandlers</i> performs the same function as <a href="..\portcls\nf-portcls-pcaddcontenthandlers.md">PcAddContentHandlers</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff536575">IDrmPort2::AddContentHandlers</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.
 
 
 ## -requirements
@@ -136,19 +137,19 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iocalldriver">IoCallDriver</a>
+<a href="..\wdm\nf-wdm-iocalldriver.md">IoCallDriver</a>
 </dt>
 <dt>
-<a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
 </dt>
 <dt>
-<a href="audio.drmforwardcontenttodeviceobject">DrmForwardContentToDeviceObject</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttodeviceobject.md">DrmForwardContentToDeviceObject</a>
 </dt>
 <dt>
-<a href="audio.pcaddcontenthandlers">PcAddContentHandlers</a>
+<a href="..\portcls\nf-portcls-pcaddcontenthandlers.md">PcAddContentHandlers</a>
 </dt>
 <dt>
-<a href="audio.idrmport2_addcontenthandlers">IDrmPort2::AddContentHandlers</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536575">IDrmPort2::AddContentHandlers</a>
 </dt>
 </dl>
  

@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_NET_BUFFER_LIST_8021Q_INFO
+UID: NS:ndis._NDIS_NET_BUFFER_LIST_8021Q_INFO
 title: _NDIS_NET_BUFFER_LIST_8021Q_INFO
 author: windows-driver-content
 description: The NDIS_NET_BUFFER_LIST_8021Q_INFO structure specifies 802.1Q information that is associated with a NET_BUFFER_LIST structure.
 old-location: netvista\ndis_net_buffer_list_8021q_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4314d3f9-2457-41f6-844c-197e5d05b0fe
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_NET_BUFFER_LIST_8021Q_INFO, PNDIS_NET_BUFFER_LIST_8021Q_INFO, NDIS_NET_BUFFER_LIST_8021Q_INFO, *PNDIS_NET_BUFFER_LIST_8021Q_INFO
+ms.date: 1/8/2018
+ms.keywords: _NDIS_NET_BUFFER_LIST_8021Q_INFO, *PNDIS_NET_BUFFER_LIST_8021Q_INFO, NDIS_NET_BUFFER_LIST_8021Q_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNDIS_NET_BUFFER_LIST_8021Q_INFO, NDIS_NET_BUFFER_LIST_8021Q_INFO
 ---
 
 # _NDIS_NET_BUFFER_LIST_8021Q_INFO structure
@@ -39,7 +40,7 @@ req.irql: See Remarks section
 
 ## -description
 The NDIS_NET_BUFFER_LIST_8021Q_INFO structure specifies 802.1Q information that is associated with a 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 
 
@@ -152,12 +153,12 @@ This member is reserved and should be set to zero.
 A member in the union that is contained in NDIS_NET_BUFFER_LIST_8021Q_INFO. 
       <b>Value</b> contains a pointer value that is type-compatible with the 
       <b>NetBufferListInfo</b> member in the 
-      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 
 ## -remarks
 To retrieve or insert 802.1Q information that is associated with a 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure, an NDIS driver
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure, an NDIS driver
     calls the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a> macro and specifies
     the 
@@ -177,14 +178,14 @@ Miniport drivers that support the 802.1Q tag in hardware must use the NDIS_NET_B
 
 For transmit operations, the miniport driver must check for NDIS_NET_BUFFER_LIST_8021Q_INFO OOB data
       in the 
-      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure. The miniport
+      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. The miniport
       driver must ensure that the hardware creates the 802.1Q tag from the NDIS_NET_BUFFER_LIST_8021Q_INFO
       specifications and insert it into the Ethernet frame.
 
 For receive operations, the miniport driver must remove the 802.1Q tag from the Ethernet frame and
       map the 802.1Q tag information into the NDIS_NET_BUFFER_LIST_8021Q_INFO OOB data in the NET_BUFFER_LIST
       structure before indicating the data to NDIS with the 
-      <a href="netvista.ndismindicatereceivenetbufferlists">
+      <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
       NdisMIndicateReceiveNetBufferLists</a> function.
 
 
@@ -216,11 +217,11 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndismindicatereceivenetbufferlists">
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
    NdisMIndicateReceiveNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568401">NET_BUFFER_LIST_INFO</a>
@@ -230,5 +231,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_NET_BUFFER_LIST_8021Q_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NET_BUFFER_LIST_8021Q_INFO structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

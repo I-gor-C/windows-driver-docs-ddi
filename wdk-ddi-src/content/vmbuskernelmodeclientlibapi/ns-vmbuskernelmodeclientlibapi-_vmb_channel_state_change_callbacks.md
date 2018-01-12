@@ -1,14 +1,14 @@
 ---
-UID: NS.VMBUSKERNELMODECLIENTLIBAPI._VMB_CHANNEL_STATE_CHANGE_CALLBACKS
+UID: NS:vmbuskernelmodeclientlibapi._VMB_CHANNEL_STATE_CHANGE_CALLBACKS
 title: _VMB_CHANNEL_STATE_CHANGE_CALLBACKS
 author: windows-driver-content
 description: The VMB_CHANNEL_STATE_CHANGE_CALLBACKS structure contains callback functions that relate to the state changes for a channel.
 old-location: netvista\vmb_channel_state_change_callbacks.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 01A9A947-76F0-407C-8480-B2721A9A8A7B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _VMB_CHANNEL_STATE_CHANGE_CALLBACKS, PVMB_CHANNEL_STATE_CHANGE_CALLBACKS, VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
+ms.date: 1/8/2018
+ms.keywords: _VMB_CHANNEL_STATE_CHANGE_CALLBACKS, VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
 req.product: Windows 10 or later.
 ---
 

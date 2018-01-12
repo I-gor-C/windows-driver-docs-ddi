@@ -1,5 +1,5 @@
 ---
-UID: NS.DXGIDDI.DXGI1_3_DDI_BASE_FUNCTIONS
+UID: NS:dxgiddi.DXGI1_3_DDI_BASE_FUNCTIONS
 title: DXGI1_3_DDI_BASE_FUNCTIONS
 author: windows-driver-content
 description: Contains pointers to functions that a Windows Display Driver Model (WDDM) 1.3 and later user-mode display driver can implement to perform low-level tasks like presenting rendered frames to an output, controlling gamma, getting notifications regarding shared and Windows Graphics Device Interface (GDI) interoperable surfaces, and managing a full-screen transition.
@@ -7,7 +7,7 @@ old-location: display\dxgi1_3_ddi_base_functions.htm
 old-project: display
 ms.assetid: F857BA54-A572-4376-83F3-573F90033261
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: DXGI1_3_DDI_BASE_FUNCTIONS, DXGI1_3_DDI_BASE_FUNCTIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGI1_3_DDI_BASE_FUNCTIONS
 ---
 
 # DXGI1_3_DDI_BASE_FUNCTIONS structure
@@ -72,67 +73,67 @@ typedef struct DXGI1_3_DDI_BASE_FUNCTIONS {
 
 ### -field pfnPresent
 
-A pointer to the driver's <a href="display.presentdxgi">PresentDXGI</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569179">PresentDXGI</a> function.
 
 
 ### -field pfnGetGammaCaps
 
-A pointer to the driver's <a href="display.getgammacapsdxgi">GetGammaCapsDXGI</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff566790">GetGammaCapsDXGI</a> function.
 
 
 ### -field pfnSetDisplayMode
 
-A pointer to the driver's <a href="display.setdisplaymodedxgi">SetDisplayModeDXGI</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a> function.
 
 
 ### -field pfnSetResourcePriority
 
-A pointer to the driver's <a href="display.setresourceprioritydxgi">SetResourcePriorityDXGI</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569657">SetResourcePriorityDXGI</a> function.
 
 
 ### -field pfnQueryResourceResidency
 
-A pointer to the driver's <a href="display.queryresourceresidencydxgi">QueryResourceResidencyDXGI</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569224">QueryResourceResidencyDXGI</a> function.
 
 
 ### -field pfnRotateResourceIdentities
 
-A pointer to the driver's <a href="display.rotateresourceidentitiesdxgi">RotateResourceIdentitiesDXGI</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569514">RotateResourceIdentitiesDXGI</a> function.
 
 
 ### -field pfnBlt
 
-A pointer to the driver's <a href="display.bltdxgi">BltDXGI</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff538252">BltDXGI</a> function.
 
 
 ### -field pfnResolveSharedResource
 
-A pointer to the driver's <a href="display.resolvesharedresourcedxgi">ResolveSharedResourceDXGI</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff569488">ResolveSharedResourceDXGI</a> function.
 
 
 ### -field pfnBlt1
 
-A pointer to the driver's  <a href="display.blt1dxgi">Blt1DXGI</a> function.
+A pointer to the driver's  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406235">Blt1DXGI</a> function.
 
 
 ### -field pfnOfferResources
 
-A pointer to the driver's <a href="display.pfnofferresources">pfnOfferResources</a> function.
+A pointer to the driver's <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_offerresources.md">pfnOfferResources</a> function.
 
 
 ### -field pfnReclaimResources
 
-A pointer to the driver's <a href="display.pfnreclaimresources">pfnReclaimResources</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/AF3DCD16-9F8C-442A-A9A5-9EA2BD1C3B84">pfnReclaimResources</a> function.
 
 
 ### -field pfnGetMultiPlaneOverlayCaps
 
-A pointer to the driver's <a href="display.pfngetmultiplaneoverlaycaps">pfnGetMultiPlaneOverlayCaps</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/dn265493">pfnGetMultiPlaneOverlayCaps</a> function.
 
 
 ### -field pfnGetMultiplaneOverlayGroupCaps
 
-A pointer to the driver's <a href="display.pfngetmultiplaneoverlaygroupcaps">pfnGetMultiplaneOverlayGroupCaps</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/dn265494">pfnGetMultiplaneOverlayGroupCaps</a> function.
 
 
 ### -field pfnReserved1
@@ -152,12 +153,12 @@ Reserved for system use.
 
 ### -field pfnPresent1
 
-A pointer to the driver's <a href="display.pfnpresent1_dxgi_">pfnPresent1(DXGI)</a> function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/dn469267">pfnPresent1(DXGI)</a> function.
 
 
 ### -field pfnCheckPresentDurationSupport
 
-A pointer to the driver's <a href="display.pfncheckpresentdurationsupport_dxgi_">pfnCheckPresentDurationSupport(DXGI)</a> function.
+A pointer to the driver's <a href="..\dxgiddi\ns-dxgiddi-_dxgi_ddi_arg_checkpresentdurationsupport.md">pfnCheckPresentDurationSupport(DXGI)</a> function.
 
 
 ## -remarks
@@ -231,5 +232,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI1_3_DDI_BASE_FUNCTIONS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI1_3_DDI_BASE_FUNCTIONS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

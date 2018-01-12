@@ -1,5 +1,5 @@
 ---
-UID: NE.ksproxy.KSIOOPERATION
+UID: NE:ksproxy.KSIOOPERATION
 title: KSIOOPERATION
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksiooperation.htm
 old-project: stream
 ms.assetid: 993909CB-B00C-40C0-ADDA-DB4389D9812E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSIOOPERATION, KSIOOPERATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSIOOPERATION
 ---
 
 # KSIOOPERATION enumeration

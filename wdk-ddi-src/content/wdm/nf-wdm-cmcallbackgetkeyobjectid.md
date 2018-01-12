@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.CmCallbackGetKeyObjectID
+UID: NF:wdm.CmCallbackGetKeyObjectID
 title: CmCallbackGetKeyObjectID function
 author: windows-driver-content
 description: The CmCallbackGetKeyObjectID routine retrieves the unique identifier and object name that are associated with a specified registry key object.
@@ -7,7 +7,7 @@ old-location: kernel\cmcallbackgetkeyobjectid.htm
 old-project: kernel
 ms.assetid: e8db3009-7941-4fcc-a888-22c887bf59d5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: CmCallbackGetKeyObjectID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -59,12 +60,12 @@ NTSTATUS CmCallbackGetKeyObjectID(
 
 ### -param Cookie [in]
 
-The cookie value that the driver previously obtained by calling the <a href="kernel.cmregistercallback">CmRegisterCallback</a> or <a href="kernel.cmregistercallbackex">CmRegisterCallbackEx</a> routine.
+The cookie value that the driver previously obtained by calling the <a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a> or <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a> routine.
 
 
 ### -param Object [in]
 
-The pointer value that the driver's <a href="kernel.registrycallback">RegistryCallback</a> callback routine received in the <b>Object</b> member of one of the <b>REG_<i>XXX</i>_KEY_INFORMATION</b> structures. 
+The pointer value that the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> callback routine received in the <b>Object</b> member of one of the <b>REG_<i>XXX</i>_KEY_INFORMATION</b> structures. 
 
 <div class="alert"><b>Warning</b>  In certain circumstances registry callback notification structures may contain invalid non-NULL object pointers. Registry filtering drivers must not pass such pointers to this routine. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=613134">Invalid Key Object Pointers in Registry Notifications</a>.</div>
 <div> </div>
@@ -76,7 +77,7 @@ A pointer to a location that receives a pointer to the unique identifier that re
 
 ### -param ObjectName [out, optional]
 
-A pointer to a location that receives a pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure. This structure contains the object name of the registry key object that <i>Object</i> specifies. The object name is actually the full path name of the registry key that the object represents. The caller must not write to this <b>UNICODE_STRING</b> structure or free it. This parameter is optional and can be <b>NULL</b>.
+A pointer to a location that receives a pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure. This structure contains the object name of the registry key object that <i>Object</i> specifies. The object name is actually the full path name of the registry key that the object represents. The caller must not write to this <b>UNICODE_STRING</b> structure or free it. This parameter is optional and can be <b>NULL</b>.
 
 
 ## -returns
@@ -89,7 +90,7 @@ A pointer to a location that receives a pointer to a <a href="kernel.unicode_str
 
 
 ## -remarks
-The <b>CmCallbackGetKeyObjectID</b> routine is available starting with Windows Vista. An improved version of this routine, <a href="kernel.cmcallbackgetkeyobjectidex">CmCallbackGetKeyObjectIDEx</a>, is available starting with Windows 8. Drivers that run only in Windows 8 and later versions of Windows should call <b>CmCallbackGetKeyObjectIDEx</b> instead of <b>CmCallbackGetKeyObjectID</b>.
+The <b>CmCallbackGetKeyObjectID</b> routine is available starting with Windows Vista. An improved version of this routine, <a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectidex.md">CmCallbackGetKeyObjectIDEx</a>, is available starting with Windows 8. Drivers that run only in Windows 8 and later versions of Windows should call <b>CmCallbackGetKeyObjectIDEx</b> instead of <b>CmCallbackGetKeyObjectID</b>.
 
 Drivers can use <b>CmCallbackGetKeyObjectID</b> to obtain the registry key identifier, the object name, or both, by supplying non-<b>NULL</b> values for the <i>ObjectID</i> or <i>ObjectName</i> parameters.
 
@@ -173,24 +174,24 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.cmcallbackgetkeyobjectidex">CmCallbackGetKeyObjectIDEx</a>
+<a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectidex.md">CmCallbackGetKeyObjectIDEx</a>
 </dt>
 <dt>
-<a href="kernel.cmregistercallback">CmRegisterCallback</a>
+<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>
 </dt>
 <dt>
-<a href="kernel.cmregistercallbackex">CmRegisterCallbackEx</a>
+<a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>
 </dt>
 <dt>
-<a href="kernel.registrycallback">RegistryCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CmCallbackGetKeyObjectID routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CmCallbackGetKeyObjectID routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

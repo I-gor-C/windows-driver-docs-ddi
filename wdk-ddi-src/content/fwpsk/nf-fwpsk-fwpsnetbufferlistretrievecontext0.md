@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsNetBufferListRetrieveContext0
+UID: NF:fwpsk.FwpsNetBufferListRetrieveContext0
 title: FwpsNetBufferListRetrieveContext0 function
 author: windows-driver-content
 description: The FwpsNetBufferListRetrieveContext0 function retrieves the context associated with a network buffer list that was tagged in another layer.Note  FwpsNetBufferListRetrieveContext0 is a specific version of FwpsNetBufferListRetrieveContext.
 old-location: netvista\fwpsnetbufferlistretrievecontext0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 482cec75-8a21-4988-b869-639d019f9460
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpsNetBufferListRetrieveContext0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsNetBufferListRetrieveContext0 function
@@ -68,9 +69,9 @@ A network buffer list that indicates one or more packets of interest to the call
 ### -param contextTag [in]
 
 A locally unique identifier obtained by calling the 
-     <a href="netvista.fwpsnetbufferlistgettagforcontext0">
+     <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistgettagforcontext0.md">
      FwpsNetBufferListGetTagForContext0</a> function. This is the context tag used in the initial call to 
-     <a href="netvista.fwpsnetbufferlistassociatecontext0">FwpsNetBufferListAssociateContext0</a>.
+     <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">FwpsNetBufferListAssociateContext0</a>.
 
 
 ### -param removeContext [in]
@@ -173,18 +174,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.fwpsnetbufferlistassociatecontext0">
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">
    FwpsNetBufferListAssociateContext0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsnetbufferlistgettagforcontext0">
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistgettagforcontext0.md">
    FwpsNetBufferListGetTagForContext0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsnetbufferlistremovecontext0">
+<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistremovecontext0.md">
    FwpsNetBufferListRemoveContext0</a>
 </dt>
 </dl>
@@ -192,5 +193,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsNetBufferListRetrieveContext0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsNetBufferListRetrieveContext0 function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

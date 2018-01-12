@@ -1,5 +1,5 @@
 ---
-UID: NS.PORTCLS._PCSTREAMRESOURCE_DESCRIPTOR
+UID: NS:portcls._PCSTREAMRESOURCE_DESCRIPTOR
 title: _PCSTREAMRESOURCE_DESCRIPTOR
 author: windows-driver-content
 description: PCSTREAMRESOURCE_DESCRIPTOR defines the stream resource. Use PCSTREAMRESOURCE_DESCRIPTOR_INIT to correctly initialize this structure.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 978D06FC-B5CC-409C-BE5D-CA4B53005D8C
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PCSTREAMRESOURCE_DESCRIPTOR, *PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR, PPCSTREAMRESOURCE_DESCRIPTOR
+ms.keywords: _PCSTREAMRESOURCE_DESCRIPTOR, *PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR
 ---
 
 # _PCSTREAMRESOURCE_DESCRIPTOR structure
@@ -143,7 +144,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcstreamresourcetype">PcStreamResourceType</a>
+<a href="..\portcls\ne-portcls-_pcstreamresourcetype.md">PcStreamResourceType</a>
 </dt>
 </dl>
  

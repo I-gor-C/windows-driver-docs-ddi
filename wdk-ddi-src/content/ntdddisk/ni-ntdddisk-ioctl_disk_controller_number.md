@@ -1,5 +1,5 @@
 ---
-UID: NI.ntdddisk.IOCTL_DISK_CONTROLLER_NUMBER
+UID: NI:ntdddisk.IOCTL_DISK_CONTROLLER_NUMBER
 title: IOCTL_DISK_CONTROLLER_NUMBER
 author: windows-driver-content
 description: Retrieves the controller number and disk number for an IDE disk.
@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_controller_number.htm
 old-project: storage
 ms.assetid: dbf7829b-c5b9-4428-a296-34199a726ec5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_CONTROLLER_NUMBER IOCTL
@@ -58,7 +59,7 @@ None.
 
 
 ### -output-buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the <a href="storage.disk_controller_number">DISK_CONTROLLER_NUMBER</a> data.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the <a href="..\ntdddisk\ns-ntdddisk-_disk_controller_number.md">DISK_CONTROLLER_NUMBER</a> data.
 
 
 ### -output-buffer-length
@@ -101,12 +102,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.disk_controller_number">DISK_CONTROLLER_NUMBER</a>
+<a href="..\ntdddisk\ns-ntdddisk-_disk_controller_number.md">DISK_CONTROLLER_NUMBER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_DISK_CONTROLLER_NUMBER control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_DISK_CONTROLLER_NUMBER control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

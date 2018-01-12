@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:hbapiwmi
 ---
 
 # Hbapiwmi.h header

@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._CLIENT_CONTROLLER_BASIC_INFORMATION
+UID: NS:gpioclx._CLIENT_CONTROLLER_BASIC_INFORMATION
 title: _CLIENT_CONTROLLER_BASIC_INFORMATION
 author: windows-driver-content
 description: The CLIENT_CONTROLLER_BASIC_INFORMATION structure contains general-purpose I/O (GPIO) controller hardware attributes and configuration information.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: CE92249C-99B5-411E-B0D7-C1FF4824949E
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CLIENT_CONTROLLER_BASIC_INFORMATION, PCLIENT_CONTROLLER_BASIC_INFORMATION, *PCLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION
+ms.keywords: _CLIENT_CONTROLLER_BASIC_INFORMATION, *PCLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PCLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION
 ---
 
 # _CLIENT_CONTROLLER_BASIC_INFORMATION structure

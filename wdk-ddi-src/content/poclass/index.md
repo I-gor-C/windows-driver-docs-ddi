@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:poclass
 ---
 
 # Poclass.h header
@@ -12,13 +12,6 @@ This header is used by Battery, Windows kernel. For more information, see
 
 Poclass.h contain these programming interfaces:
 
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [DEVICE_ACTIVE_COOLING callback](nc-poclass-device_active_cooling.md) | The ActiveCooling callback routine engages or disengages a device's active-cooling function. |
-| [DEVICE_PASSIVE_COOLING callback](nc-poclass-device_passive_cooling.md) | The PassiveCooling callback routine controls the degree to which the device must throttle its performance to meet cooling requirements. |
 
 ## Structures
 

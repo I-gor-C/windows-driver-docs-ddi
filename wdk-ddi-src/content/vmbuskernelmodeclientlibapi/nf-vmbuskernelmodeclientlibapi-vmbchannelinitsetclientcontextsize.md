@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbChannelInitSetClientContextSize
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelInitSetClientContextSize
 title: VmbChannelInitSetClientContextSize function
 author: windows-driver-content
 description: The VmbChannelInitSetClientContextSize function sets the size of the optional context area allocated for the client driver on each incoming packet.
 old-location: netvista\vmbchannelinitsetclientcontextsize.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6AABB3EB-F61A-40DA-BA9F-2AB91FC4B89E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbChannelInitSetClientContextSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Vmbkmcl.lib
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d10umddi.PFND3DWDDM1_3DDI_RESIZETILEPOOL
+UID: NC:d3d10umddi.PFND3DWDDM1_3DDI_RESIZETILEPOOL
 title: PFND3DWDDM1_3DDI_RESIZETILEPOOL
 author: windows-driver-content
 description: Resizes a tile pool.
@@ -7,8 +7,8 @@ old-location: display\resizetilepool.htm
 old-project: display
 ms.assetid: 184EF418-1B1E-4A10-8F10-1331DF99DCBD
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, PSETRESULT_INFO, SETRESULT_INFO
+ms.date: 12/29/2017
+ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSETRESULT_INFO, SETRESULT_INFO
 ---
 
 # PFND3DWDDM1_3DDI_RESIZETILEPOOL callback

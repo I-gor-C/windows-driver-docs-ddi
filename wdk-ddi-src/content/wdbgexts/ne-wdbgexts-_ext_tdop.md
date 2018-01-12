@@ -1,13 +1,13 @@
 ---
-UID: NE.wdbgexts._EXT_TDOP
+UID: NE:wdbgexts._EXT_TDOP
 title: _EXT_TDOP
 author: windows-driver-content
 description: The EXT_TDOP enumeration is used in the Operation member of the EXT_TYPED_DATA structure to specify which suboperation the DEBUG_REQUEST_EXT_TYPED_DATA_ANSI Request operation will perform.
 old-location: debugger\ext_tdop.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 1793aaff-b0ac-4858-8a15-56eace87a09a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _EXT_TDOP, EXT_TDOP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -39,8 +40,8 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The EXT_TDOP enumeration is used in the <b>Operation</b> member of the <a href="debugger.ext_typed_data">EXT_TYPED_DATA</a> structure to specify which suboperation the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541547">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</a>
-<a href="debugger.request"> Request</a> operation will perform.
+The EXT_TDOP enumeration is used in the <b>Operation</b> member of the <a href="..\wdbgexts\ns-wdbgexts-_ext_typed_data.md">EXT_TYPED_DATA</a> structure to specify which suboperation the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541547">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</a>
+<a href="https://msdn.microsoft.com/efb3c93c-5405-418b-a063-afa8e5e9e59a"> Request</a> operation will perform.
 
 
 
@@ -196,18 +197,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="debugger.ext_typed_data">EXT_TYPED_DATA</a>
+<a href="..\wdbgexts\ns-wdbgexts-_ext_typed_data.md">EXT_TYPED_DATA</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541547">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</a>
 </dt>
 <dt>
-<a href="debugger.request">Request</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20EXT_TDOP enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20EXT_TDOP enumeration%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

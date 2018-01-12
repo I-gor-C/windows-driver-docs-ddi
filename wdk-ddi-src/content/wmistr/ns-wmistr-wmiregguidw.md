@@ -1,5 +1,5 @@
 ---
-UID: NS.WMISTR.WMIREGGUIDW
+UID: NS:wmistr.WMIREGGUIDW
 title: WMIREGGUIDW
 author: windows-driver-content
 description: The WMIREGGUID structure contains new or updated registration information for a data block or event block.
@@ -7,8 +7,8 @@ old-location: kernel\wmiregguid.htm
 old-project: kernel
 ms.assetid: f9f240ea-5689-4d33-8da7-b1cb7e66bc5b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: WMIREGGUIDW, WMIREGGUIDW, *PWMIREGGUIDW, PWMIREGGUIDW
+ms.date: 1/4/2018
+ms.keywords: WMIREGGUIDW, WMIREGGUIDW, *PWMIREGGUIDW, WMIREGGUID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: WMIREGGUIDW, *PWMIREGGUIDW
 req.product: Windows 10 or later.
 ---
 
@@ -88,7 +89,7 @@ Requests WMI to generate static instance names from a base name provided by the 
 
 ### -field WMIREG_FLAG_INSTANCE_PDO
 
-Requests WMI to generate static instance names from the device instance ID for the PDO. If this flag is set, <b>InstanceInfo</b> points to the PDO passed to the driver's <a href="kernel.adddevice">AddDevice</a> routine. WMI generates instance names from the device instance path of the PDO. Using the device instance path as a base for static instance names is efficient because such names are guaranteed to be unique. WMI automatically supplies a "friendly" name for the instance as an item in a data block that can be queried by data consumers.
+Requests WMI to generate static instance names from the device instance ID for the PDO. If this flag is set, <b>InstanceInfo</b> points to the PDO passed to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine. WMI generates instance names from the device instance path of the PDO. Using the device instance path as a base for static instance names is efficient because such names are guaranteed to be unique. WMI automatically supplies a "friendly" name for the instance as an item in a data block that can be queried by data consumers.
 
 </dd>
 </dl>
@@ -143,7 +144,7 @@ Indicates the offset in bytes from the beginning of the <b>WMIREGINFO</b> struct
 
 ### -field Pdo
 
-Pointer to the physical device object (PDO) passed to the driver's <a href="kernel.adddevice">AddDevice</a> routine. WMI uses the device instance path of this PDO as a base from which to generate static instance names. This member is valid only if WMIREG_FLAG_INSTANCE_PDO is set in <b>Flags</b>. If the block is being registered with dynamic instance names, WMI ignores <b>Pdo</b>. 
+Pointer to the physical device object (PDO) passed to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine. WMI uses the device instance path of this PDO as a base from which to generate static instance names. This member is valid only if WMIREG_FLAG_INSTANCE_PDO is set in <b>Flags</b>. If the block is being registered with dynamic instance names, WMI ignores <b>Pdo</b>. 
 
 
 ### -field InstanceInfo
@@ -188,5 +189,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WMIREGGUIDW structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WMIREGGUIDW structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

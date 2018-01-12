@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.RtlUlonglongByteSwap
+UID: NF:wdm.RtlUlonglongByteSwap
 title: RtlUlonglongByteSwap function
 author: windows-driver-content
 description: The RtlUlonglongByteSwap routine reverses the ordering of the eight bytes in a 64-bit unsigned integer value.
@@ -7,7 +7,7 @@ old-location: kernel\rtlulonglongbyteswap.htm
 old-project: kernel
 ms.assetid: 70d16119-ac78-40a2-995a-d20ca63c53c1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlUlonglongByteSwap
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ For example, if the <i>Source</i> parameter value is 0x0123456789abcdef, the rou
 
 A typical use of this routine is to convert a ULONGLONG value from little-endian byte format to big-endian byte format, and vice versa.
 
-To reverse the ordering of bytes in a USHORT value, use the <a href="kernel.rtlushortbyteswap">RtlUshortByteSwap</a> routine. To reverse ordering of bytes in a ULONG value, use the <a href="kernel.rtlulongbyteswap">RtlUlongByteSwap</a> routine.
+To reverse the ordering of bytes in a USHORT value, use the <a href="..\wdm\nf-wdm-rtlushortbyteswap.md">RtlUshortByteSwap</a> routine. To reverse ordering of bytes in a ULONG value, use the <a href="..\wdm\nf-wdm-rtlulongbyteswap.md">RtlUlongByteSwap</a> routine.
 
 
 ## -requirements
@@ -142,15 +143,15 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlulongbyteswap">RtlUlongByteSwap</a>
+<a href="..\wdm\nf-wdm-rtlulongbyteswap.md">RtlUlongByteSwap</a>
 </dt>
 <dt>
-<a href="kernel.rtlushortbyteswap">RtlUshortByteSwap</a>
+<a href="..\wdm\nf-wdm-rtlushortbyteswap.md">RtlUshortByteSwap</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlUlonglongByteSwap routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlUlonglongByteSwap routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

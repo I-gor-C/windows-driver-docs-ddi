@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSEVENT_PINCAPS_CHANGENOTIFICATIONS
+UID: NE:ks.KSEVENT_PINCAPS_CHANGENOTIFICATIONS
 title: KSEVENT_PINCAPS_CHANGENOTIFICATIONS
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksevent_pincaps_changenotifications.htm
 old-project: stream
 ms.assetid: FC46144A-8343-4C1F-8061-4C9DCAB22370
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSEVENT_PINCAPS_CHANGENOTIFICATIONS, KSEVENT_PINCAPS_CHANGENOTIFICATIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSEVENT_PINCAPS_CHANGENOTIFICATIONS
 ---
 
 # KSEVENT_PINCAPS_CHANGENOTIFICATIONS enumeration

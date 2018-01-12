@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddchgr._CHANGER_DEVICE_PROBLEM_TYPE
+UID: NE:ntddchgr._CHANGER_DEVICE_PROBLEM_TYPE
 title: _CHANGER_DEVICE_PROBLEM_TYPE
 author: windows-driver-content
 description: The CHANGER_DEVICE_PROBLEM_TYPE data type contains the values returned by the ChangerPerformDiagnostics routine.
@@ -7,8 +7,8 @@ old-location: storage\changer_device_problem_type.htm
 old-project: storage
 ms.assetid: 2ba267ad-cfd7-4a19-9ecb-16be9187406a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CHANGER_DEVICE_PROBLEM_TYPE, CHANGER_DEVICE_PROBLEM_TYPE, PCHANGER_DEVICE_PROBLEM_TYPE, *PCHANGER_DEVICE_PROBLEM_TYPE
+ms.date: 1/10/2018
+ms.keywords: _CHANGER_DEVICE_PROBLEM_TYPE, *PCHANGER_DEVICE_PROBLEM_TYPE, CHANGER_DEVICE_PROBLEM_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCHANGER_DEVICE_PROBLEM_TYPE, CHANGER_DEVICE_PROBLEM_TYPE
 ---
 
 # _CHANGER_DEVICE_PROBLEM_TYPE enumeration
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The CHANGER_DEVICE_PROBLEM_TYPE data type contains the values returned by the <a href="storage.changerperformdiagnostics">ChangerPerformDiagnostics</a> routine.
+The CHANGER_DEVICE_PROBLEM_TYPE data type contains the values returned by the <a href="..\mcd\nf-mcd-changerperformdiagnostics.md">ChangerPerformDiagnostics</a> routine.
 
 
 
@@ -157,15 +158,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.changerperformdiagnostics">ChangerPerformDiagnostics</a>
+<a href="..\mcd\nf-mcd-changerperformdiagnostics.md">ChangerPerformDiagnostics</a>
 </dt>
 <dt>
-<a href="storage.wmi_changer_problem_device_error">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a>
+<a href="..\wmidata\ns-wmidata-_wmi_changer_problem_device_error.md">WMI_CHANGER_PROBLEM_DEVICE_ERROR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CHANGER_DEVICE_PROBLEM_TYPE enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CHANGER_DEVICE_PROBLEM_TYPE enumeration%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSEVENTDATA
+UID: NS:ks.KSEVENTDATA
 title: KSEVENTDATA
 author: windows-driver-content
 description: Kernel streaming clients send the KSEVENTDATA structure to the class driver to specify a notification method.
@@ -7,8 +7,8 @@ old-location: stream\kseventdata.htm
 old-project: stream
 ms.assetid: 83503353-e4f7-47ba-9a0c-71264798e983
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSEVENTDATA, PKSEVENTDATA, *PKSEVENTDATA, KSEVENTDATA
+ms.date: 1/9/2018
+ms.keywords: KSEVENTDATA, *PKSEVENTDATA, KSEVENTDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSEVENTDATA, KSEVENTDATA
 ---
 
 # KSEVENTDATA structure
@@ -226,24 +227,24 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
 </dt>
 <dt>
-<a href="stream.ksevent">KSEVENT</a>
+<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
 </dt>
 <dt>
-<a href="ifsk.work_queue_item">WORK_QUEUE_ITEM</a>
+<a href="..\wdm\ns-wdm-_work_queue_item.md">WORK_QUEUE_ITEM</a>
 </dt>
 <dt>
-<a href="kernel.work_queue_type">WORK_QUEUE_TYPE</a>
+<a href="..\wdm\ne-wdm-_work_queue_type.md">WORK_QUEUE_TYPE</a>
 </dt>
 <dt>
-<a href="stream.ksincrementcountedworker">KsIncrementCountedWorker</a>
+<a href="..\ks\nf-ks-ksincrementcountedworker.md">KsIncrementCountedWorker</a>
 </dt>
 <dt>
-<a href="stream.ksregisterworker">KsRegisterWorker</a>
+<a href="..\ks\nf-ks-ksregisterworker.md">KsRegisterWorker</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSEVENTDATA structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSEVENTDATA structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

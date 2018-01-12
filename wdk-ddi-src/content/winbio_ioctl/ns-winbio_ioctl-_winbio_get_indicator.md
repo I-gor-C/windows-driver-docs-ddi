@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_IOCTL._WINBIO_GET_INDICATOR
+UID: NS:winbio_ioctl._WINBIO_GET_INDICATOR
 title: _WINBIO_GET_INDICATOR
 author: windows-driver-content
 description: The WINBIO_GET_INDICATOR structure is the OUT payload for IOCTL_BIOMETRIC_GET_INDICATOR.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: e0920576-de0f-44bd-8d95-85dde4ee6817
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_GET_INDICATOR, *PWINBIO_GET_INDICATOR, PWINBIO_GET_INDICATOR, WINBIO_GET_INDICATOR
+ms.keywords: _WINBIO_GET_INDICATOR, WINBIO_GET_INDICATOR, *PWINBIO_GET_INDICATOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_GET_INDICATOR, *PWINBIO_GET_INDICATOR
 req.product: Windows 10 or later.
 ---
 
@@ -138,7 +139,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="biometric.winbio_set_indicator">WINBIO_SET_INDICATOR</a>
+<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_set_indicator.md">WINBIO_SET_INDICATOR</a>
 </dt>
 <dt>
 <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_indicator.md">IOCTL_BIOMETRIC_GET_INDICATOR</a>

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisFreeMdl
+UID: NF:ndis.NdisFreeMdl
 title: NdisFreeMdl function
 author: windows-driver-content
 description: The NdisFreeMdl function frees an MDL that was allocated by calling the NdisAllocateMdl function.
 old-location: netvista\ndisfreemdl.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 612a66fa-0e0c-4eee-99b0-9bc09437b026
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisFreeMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisFreeMdl function
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 The 
   <b>NdisFreeMdl</b> function frees an MDL that was allocated by calling the 
-  <a href="netvista.ndisallocatemdl">NdisAllocateMdl</a> function.
+  <a href="..\ndis\nf-ndis-ndisallocatemdl.md">NdisAllocateMdl</a> function.
 
 
 
@@ -128,7 +129,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>, <a href="devtest.ndis_ndisallocatemdl">NdisAllocateMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>, <a href="..\ndis\nf-ndis-ndisallocatemdl.md">NdisAllocateMdl</a>
 </td>
 </tr>
 </table>
@@ -136,12 +137,12 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisallocatemdl">NdisAllocateMdl</a>
+<a href="..\ndis\nf-ndis-ndisallocatemdl.md">NdisAllocateMdl</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisFreeMdl function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeMdl function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

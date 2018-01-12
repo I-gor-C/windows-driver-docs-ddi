@@ -1,13 +1,13 @@
 ---
-UID: NF.ursdevice.UrsDeviceInitInitialize
+UID: NF:ursdevice.UrsDeviceInitInitialize
 title: UrsDeviceInitInitialize function
 author: windows-driver-content
 description: Initializes device initialization operations when the Plug and Play (PnP) manager reports the existence of a device.
 old-location: buses\ursdeviceinitinitialize.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: EFA83238-77DF-474D-8F8F-2400C9B23A00
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UrsDeviceInitInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Urscxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UMDETW_ALLOCATION_USAGE
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ FORCEINLINE NTSTATUS UrsDeviceInitInitialize(
 
 ### -param DeviceInit 
 
-A pointer to a framework-allocated <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure. 
+A pointer to a framework-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure. 
 
 
 ## -returns
@@ -64,7 +65,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 
 ## -remarks
-The client driver for the dual-role controller calls this method in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> implementation before it calls <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a> and <a href="buses.ursdeviceinitialize">UrsDeviceInitialize</a>. For code example, see <b>UrsDeviceInitialize</b>.
+The client driver for the dual-role controller calls this method in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> implementation before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> and <a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>. For code example, see <b>UrsDeviceInitialize</b>.
 
 
 ## -requirements
@@ -136,12 +137,12 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20UrsDeviceInitInitialize method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UrsDeviceInitInitialize method%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

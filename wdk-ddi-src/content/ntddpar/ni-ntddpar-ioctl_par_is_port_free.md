@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpar.IOCTL_PAR_IS_PORT_FREE
+UID: NI:ntddpar.IOCTL_PAR_IS_PORT_FREE
 title: IOCTL_PAR_IS_PORT_FREE
 author: windows-driver-content
 description: The IOCTL_PAR_IS_PORT_FREE request determines if a parallel device's parent parallel port is free at the time the system-supplied bus driver for parallel ports processes the request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # IOCTL_PAR_IS_PORT_FREE IOCTL

@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinRegisterHandshakeCallback
+UID: NF:ks.KsPinRegisterHandshakeCallback
 title: KsPinRegisterHandshakeCallback function
 author: windows-driver-content
 description: The KsPinRegisterHandshakeCallback function registers a minidriver-provided callback routine for a given pin.
@@ -7,7 +7,7 @@ old-location: stream\kspinregisterhandshakecallback.htm
 old-project: stream
 ms.assetid: a5b9f731-e029-40c2-9fbb-d7a3b63615df
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinRegisterHandshakeCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsPinRegisterHandshakeCallback function
@@ -56,14 +57,14 @@ void KsPinRegisterHandshakeCallback(
 
 ### -param Pin [in]
 
-A pointer to the <a href="stream.kspin">KSPIN</a> structure for which to register a handshake callback.
+A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which to register a handshake callback.
 
 
 ### -param Handshake [in]
 
 <dl>
 <dd>
-A pointer to a minidriver-supplied <a href="stream.avstrminipinhandshake">AVStrMiniPinHandshake</a> routine to be called when AVStream receives a protocol handshake request on <i>Pin</i> that it does not handle.
+A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnkspinhandshake.md">AVStrMiniPinHandshake</a> routine to be called when AVStream receives a protocol handshake request on <i>Pin</i> that it does not handle.
 
 </dd>
 </dl>
@@ -138,27 +139,27 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kspinhandshake">KsPinHandshake</a>
+<a href="..\ks\nf-ks-kspinhandshake.md">KsPinHandshake</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a>
 </dt>
 <dt>
-<a href="stream.ksfilterregisterpowercallbacks">KsFilterRegisterPowerCallbacks</a>
+<a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
 </dt>
 <dt>
-<a href="stream.kspinregisterpowercallbacks">KsPinRegisterPowerCallbacks</a>
+<a href="..\ks\nf-ks-kspinregisterpowercallbacks.md">KsPinRegisterPowerCallbacks</a>
 </dt>
 <dt>
-<a href="stream.ksregisteraggregatedclientunknown">KsRegisterAggregatedClientUnknown</a>
+<a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
 </dt>
 <dt>
-<a href="stream.avstrminipinhandshake">AVStrMiniPinHandshake</a>
+<a href="..\ks\nc-ks-pfnkspinhandshake.md">AVStrMiniPinHandshake</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinRegisterHandshakeCallback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinRegisterHandshakeCallback function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

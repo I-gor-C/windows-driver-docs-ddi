@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_SINGLESHOT_PARAM
+UID: NS:gnssdriver.GNSS_SINGLESHOT_PARAM
 title: GNSS_SINGLESHOT_PARAM
 author: windows-driver-content
 description: This structure defines the parameters for a single-shot fix session.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: BD1CB6CE-4196-4B85-AED0-A7B8ED957ADF
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_SINGLESHOT_PARAM, PGNSS_SINGLESHOT_PARAM, *PGNSS_SINGLESHOT_PARAM, GNSS_SINGLESHOT_PARAM
+ms.keywords: GNSS_SINGLESHOT_PARAM, *PGNSS_SINGLESHOT_PARAM, GNSS_SINGLESHOT_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_SINGLESHOT_PARAM, GNSS_SINGLESHOT_PARAM
 ---
 
 # GNSS_SINGLESHOT_PARAM structure

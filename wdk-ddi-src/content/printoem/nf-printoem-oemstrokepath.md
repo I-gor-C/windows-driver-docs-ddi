@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMStrokePath
+UID: NF:printoem.OEMStrokePath
 title: OEMStrokePath function
 author: windows-driver-content
 description: The OEMStrokePath function strokes a path.
@@ -7,7 +7,7 @@ old-location: print\oemstrokepath.htm
 old-project: print
 ms.assetid: e761a8b4-729f-4f03-a4b4-2ed1b62ec012
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMStrokePath
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

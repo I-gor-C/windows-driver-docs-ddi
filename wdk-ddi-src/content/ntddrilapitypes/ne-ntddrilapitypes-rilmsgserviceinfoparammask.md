@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILMSGSERVICEINFOPARAMMASK
+UID: NE:ntddrilapitypes.RILMSGSERVICEINFOPARAMMASK
 title: RILMSGSERVICEINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgserviceinfoparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9314909a-4580-49f9-b587-4d5e70ff0d4f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMSGSERVICEINFOPARAMMASK, RILMSGSERVICEINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGSERVICEINFOPARAMMASK
 ---
 
 # RILMSGSERVICEINFOPARAMMASK enumeration

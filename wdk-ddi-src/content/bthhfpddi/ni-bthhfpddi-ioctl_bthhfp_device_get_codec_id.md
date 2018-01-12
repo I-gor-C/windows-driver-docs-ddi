@@ -1,5 +1,5 @@
 ---
-UID: NI.bthhfpddi.IOCTL_BTHHFP_DEVICE_GET_CODEC_ID
+UID: NI:bthhfpddi.IOCTL_BTHHFP_DEVICE_GET_CODEC_ID
 title: IOCTL_BTHHFP_DEVICE_GET_CODEC_ID
 author: windows-driver-content
 description: An audio driver can send an IOCTL_BTHHFP_DEVICE_GET_CODEC_ID control code to query the Bluetooth driver stack about the codec ID used by the HFP service. This helps the audio driver determine the sampling rate for the data.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION
 ---
 
 # IOCTL_BTHHFP_DEVICE_GET_CODEC_ID IOCTL
@@ -46,15 +47,15 @@ An audio driver can send an <b>IOCTL_BTHHFP_DEVICE_GET_CODEC_ID</b>
 ## -ioctlparameters
 
 ### -input-buffer
-An <a href="audio.hfp_bypass_codec_id_version">HFP_BYPASS_CODEC_ID_VERSION</a> enumeration value. Currently, only REQ_HFP_BYPASS_CODEC_ID_V1 is supported.
+An <a href="..\bthhfpddi\ne-bthhfpddi-_hfp_bypass_codec_id_version.md">HFP_BYPASS_CODEC_ID_VERSION</a> enumeration value. Currently, only REQ_HFP_BYPASS_CODEC_ID_V1 is supported.
 
 
 ### -input-buffer-length
-The size of an <a href="audio.hfp_bypass_codec_id_version">HFP_BYPASS_CODEC_ID_VERSION</a> enumeration value.
+The size of an <a href="..\bthhfpddi\ne-bthhfpddi-_hfp_bypass_codec_id_version.md">HFP_BYPASS_CODEC_ID_VERSION</a> enumeration value.
 
 
 ### -output-buffer
-A codec ID structure containing the codec ID information. Currently, only <a href="audio.hfp_bypass_codec_id_v1">HFP_BYPASS_CODEC_ID_V1</a> is supported.
+A codec ID structure containing the codec ID information. Currently, only <a href="..\bthhfpddi\ns-bthhfpddi-_hfp_bypass_codec_id_v1.md">HFP_BYPASS_CODEC_ID_V1</a> is supported.
 
 
 ### -output-buffer-length
@@ -115,7 +116,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.bluetooth_hfp_ddi_ioctls">Bluetooth HFP DDI IOCTLs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
 </dt>
 </dl>
  

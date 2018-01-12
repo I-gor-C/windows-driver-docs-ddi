@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUKMDT._DXGKVGPU_ESCAPE_READ_VGPU_TYPE
+UID: NS:d3dukmdt._DXGKVGPU_ESCAPE_READ_VGPU_TYPE
 title: _DXGKVGPU_ESCAPE_READ_VGPU_TYPE
 author: windows-driver-content
 description: A structure used to read the VGPU type of an escape.
@@ -7,7 +7,7 @@ old-location: display\dxgkvgpu_escape_read_vgpu_type.htm
 old-project: display
 ms.assetid: 2D3D8927-74E3-438F-94CF-63456C7C7BBC
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGKVGPU_ESCAPE_READ_VGPU_TYPE, DXGKVGPU_ESCAPE_READ_VGPU_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGKVGPU_ESCAPE_READ_VGPU_TYPE
 ---
 
 # _DXGKVGPU_ESCAPE_READ_VGPU_TYPE structure

@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11._DOT11_OFFLOAD_NETWORK_LIST_INFO
+UID: NS:windot11._DOT11_OFFLOAD_NETWORK_LIST_INFO
 title: _DOT11_OFFLOAD_NETWORK_LIST_INFO
 author: windows-driver-content
 description: The DOT11_OFFLOAD_NETWORK_LIST_INFO structure describes a network offload-list (NLO).
 old-location: netvista\dot11_offload_network_list_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0FB1D72F-B183-408A-BB84-A9D54B6C276F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11_OFFLOAD_NETWORK_LIST_INFO, PDOT11_OFFLOAD_NETWORK_LIST_INFO, *PDOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO
+ms.date: 1/8/2018
+ms.keywords: _DOT11_OFFLOAD_NETWORK_LIST_INFO, *PDOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO
 req.product: Windows 10 or later.
 ---
 

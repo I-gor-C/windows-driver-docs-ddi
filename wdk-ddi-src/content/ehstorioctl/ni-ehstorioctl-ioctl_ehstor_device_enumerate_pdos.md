@@ -1,5 +1,5 @@
 ---
-UID: NI.ehstorioctl.IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
+UID: NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
 title: IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
 author: windows-driver-content
 description: This IOCTL returns a result set containing the enumeration of all active storage Physical Device Objects (PDOs) associated with the given Addressable Command Target (ACT).
@@ -7,7 +7,7 @@ old-location: storage\ioctl_ehstor_device_enumerate_pdos.htm
 old-project: storage
 ms.assetid: 900A8CAB-287D-4D92-B4CB-2959E87C8E67
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: _PDO_TYPE, PDO_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PDO_TYPE
 ---
 
 # IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS IOCTL
@@ -89,7 +90,7 @@ DeviceIoControl(
 ## -ioctlparameters
 
 ### -input-buffer
-The input buffer at Irp-&gt;AssociatedIrp.SystemBuffer must contain a ULONG value as defined in <a href="storage.pdo_type">PDO_TYPE</a>,
+The input buffer at Irp-&gt;AssociatedIrp.SystemBuffer must contain a ULONG value as defined in <a href="..\ehstorioctl\ne-ehstorioctl-_pdo_type.md">PDO_TYPE</a>,
 
 where either all of the PDOs, just the disk PDO, just the control PDO or all silo PDOs are enumerated respectively according to the provided PDO_TYPE input value.
 
@@ -101,7 +102,7 @@ The length of a ULONG.
 ### -output-buffer
 Irp-&gt;AssociatedIrp.SystemBuffer points to the buffer that will receive the PDO enumeration results. If the client supplied a non-<b>NULL</b> buffer with the issued IOCTL, then the driver fills it with the result set only if the Parameters.DeviceIoControl.The return value is STATUS_SUCCESS if the buffer size is sufficient and the results have been copied to the buffer. Otherwise STATUS_INVALID_BUFFER_SIZE is returned and the output buffer is unmodified.
 
-The returned enumeration buffer contains a result set structured according to the following rules. The leading structure in the buffer, <a href="storage.enum_pdo_results">ENUM_PDO_RESULTS</a>, consists of a structure count and an array of <a href="storage.enum_pdo_entry">ENUM_PDO_ENTRY</a> structures.
+The returned enumeration buffer contains a result set structured according to the following rules. The leading structure in the buffer, <a href="..\ehstorioctl\ns-ehstorioctl-_enum_pdo_results.md">ENUM_PDO_RESULTS</a>, consists of a structure count and an array of <a href="..\ehstorioctl\ns-ehstorioctl-_enum_pdo_entry.md">ENUM_PDO_ENTRY</a> structures.
 
 
 ### -output-buffer-length

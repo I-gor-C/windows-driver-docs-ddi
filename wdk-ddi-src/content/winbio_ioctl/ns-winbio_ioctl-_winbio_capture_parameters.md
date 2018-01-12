@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_IOCTL._WINBIO_CAPTURE_PARAMETERS
+UID: NS:winbio_ioctl._WINBIO_CAPTURE_PARAMETERS
 title: _WINBIO_CAPTURE_PARAMETERS
 author: windows-driver-content
 description: The IOCTL_BIOMETRIC_CAPTURE_DATA IOCTL uses the WINBIO_CAPTURE_PARAMETERS structure as input.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: 60f35000-c62d-4d1b-8592-862c2d74b7a2
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_CAPTURE_PARAMETERS, WINBIO_CAPTURE_PARAMETERS, PWINBIO_CAPTURE_PARAMETERS, *PWINBIO_CAPTURE_PARAMETERS
+ms.keywords: _WINBIO_CAPTURE_PARAMETERS, WINBIO_CAPTURE_PARAMETERS, *PWINBIO_CAPTURE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_CAPTURE_PARAMETERS, *PWINBIO_CAPTURE_PARAMETERS
 req.product: Windows 10 or later.
 ---
 
@@ -88,7 +89,7 @@ The following code example shows the possible bitmask values for WINBIO_BIR_PURP
 
 ### -field Format
 
-Specifies the <a href="biometric.winbio_registered_format">WINBIO_REGISTERED_FORMAT</a> format of the data to be returned.
+Specifies the <a href="..\winbio_types\ns-winbio_types-_winbio_registered_format.md">WINBIO_REGISTERED_FORMAT</a> format of the data to be returned.
 
 
 ### -field VendorFormat

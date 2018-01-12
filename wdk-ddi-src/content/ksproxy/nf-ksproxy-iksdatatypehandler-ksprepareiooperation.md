@@ -1,5 +1,5 @@
 ---
-UID: NF.ksproxy.IKsDataTypeHandler.KsPrepareIoOperation
+UID: NF:ksproxy.IKsDataTypeHandler.KsPrepareIoOperation
 title: IKsDataTypeHandler::KsPrepareIoOperation method
 author: windows-driver-content
 description: The KsPrepareIoOperation method initializes the extended header and prepares the media sample for an I/O operation.
@@ -7,7 +7,7 @@ old-location: stream\iksdatatypehandler_ksprepareiooperation.htm
 old-project: stream
 ms.assetid: 16411d58-5fff-430f-b96d-78eed1dbb01c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IKsDataTypeHandler, IKsDataTypeHandler::KsPrepareIoOperation, KsPrepareIoOperation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PIPE_STATE
 ---
 
 # IKsDataTypeHandler::KsPrepareIoOperation method
@@ -103,7 +104,7 @@ Returns NOERROR if successful; otherwise, returns an error code. If the stream's
 
 
 ## -remarks
-The client only calls <b>KsPrepareIoOperation</b> if the data type handler indicated to the client the existence of extended header information in a call to the <a href="stream.iksdatatypehandler_ksqueryextendedsize">IKsDataTypeHandler::KsQueryExtendedSize</a> method.
+The client only calls <b>KsPrepareIoOperation</b> if the data type handler indicated to the client the existence of extended header information in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559836">IKsDataTypeHandler::KsQueryExtendedSize</a> method.
 
 For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK documentation.
 
@@ -137,12 +138,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.iksdatatypehandler_ksqueryextendedsize">IKsDataTypeHandler::KsQueryExtendedSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559836">IKsDataTypeHandler::KsQueryExtendedSize</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsDataTypeHandler::KsPrepareIoOperation method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IKsDataTypeHandler::KsPrepareIoOperation method%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

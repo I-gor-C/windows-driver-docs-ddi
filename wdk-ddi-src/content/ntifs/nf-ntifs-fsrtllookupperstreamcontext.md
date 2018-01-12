@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlLookupPerStreamContext
+UID: NF:ntifs.FsRtlLookupPerStreamContext
 title: FsRtlLookupPerStreamContext macro
 author: windows-driver-content
 description: The FsRtlLookupPerStreamContext macro retrieves a per-stream context structure for a file stream.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtllookupperstreamcontext.htm
 old-project: ifsk
 ms.assetid: 8f8c47c3-1917-4252-b812-711ef52d22d7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlLookupPerStreamContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlLookupPerStreamContext macro
@@ -57,7 +58,7 @@ PFSRTL_PER_STREAM_CONTEXT FsRtlLookupPerStreamContext(
 
 ### -param StreamContext [in]
 
-Pointer to the FSRTL_ADVANCED_FCB_HEADER structure for the file stream. To get this pointer from a file object, use the <a href="ifsk.fsrtlgetperstreamcontextpointer">FsRtlGetPerStreamContextPointer</a> macro. 
+Pointer to the FSRTL_ADVANCED_FCB_HEADER structure for the file stream. To get this pointer from a file object, use the <a href="..\ntifs\nf-ntifs-fsrtlgetperstreamcontextpointer.md">FsRtlGetPerStreamContextPointer</a> macro. 
 
 
 ### -param OwnerId [in, optional]
@@ -77,13 +78,13 @@ If a non-<b>NULL</b> value is supplied for <i>OwnerId</i> and <i>InstanceId</i> 
 ## -remarks
 A file system filter driver calls <b>FsRtlLookupPerStreamContext</b> to retrieve its per-stream context structure for a file stream. The per-stream context structure contains context information that the filter driver maintains for the file stream. 
 
-To initialize a per-stream context structure, use the <a href="ifsk.fsrtlinitperstreamcontext">FsRtlInitPerStreamContext</a> macro. 
+To initialize a per-stream context structure, use the <a href="..\ntifs\nf-ntifs-fsrtlinitperstreamcontext.md">FsRtlInitPerStreamContext</a> macro. 
 
-To associate an initialized per-stream context structure with a file stream, call <a href="ifsk.fsrtlinsertperstreamcontext">FsRtlInsertPerStreamContext</a>. 
+To associate an initialized per-stream context structure with a file stream, call <a href="..\ntifs\nf-ntifs-fsrtlinsertperstreamcontext.md">FsRtlInsertPerStreamContext</a>. 
 
-To remove a per-stream context structure that is associated with a file stream, call <a href="ifsk.fsrtlremoveperstreamcontext">FsRtlRemovePerStreamContext</a>. 
+To remove a per-stream context structure that is associated with a file stream, call <a href="..\ntifs\nf-ntifs-fsrtlremoveperstreamcontext.md">FsRtlRemovePerStreamContext</a>. 
 
-For more information, see <a href="ifsk.tracking_per_stream_context_in_a_legacy_file_system_filter_driver">Tracking Per-Stream Context in a Legacy File System Filter Driver</a>. 
+For more information, see <a href="https://msdn.microsoft.com/d908ee30-a433-460c-8c14-883702b4f810">Tracking Per-Stream Context in a Legacy File System Filter Driver</a>. 
 
 
 ## -requirements
@@ -157,36 +158,36 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fsrtl_advanced_fcb_header">FSRTL_ADVANCED_FCB_HEADER</a>
+<a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtl_per_stream_context">FSRTL_PER_STREAM_CONTEXT</a>
+<a href="..\ntifs\ns-ntifs-_fsrtl_per_stream_context.md">FSRTL_PER_STREAM_CONTEXT</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlgetperstreamcontextpointer">FsRtlGetPerStreamContextPointer</a>
+<a href="..\ntifs\nf-ntifs-fsrtlgetperstreamcontextpointer.md">FsRtlGetPerStreamContextPointer</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlinitperstreamcontext">FsRtlInitPerStreamContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtlinitperstreamcontext.md">FsRtlInitPerStreamContext</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlinsertperstreamcontext">FsRtlInsertPerStreamContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtlinsertperstreamcontext.md">FsRtlInsertPerStreamContext</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlremoveperstreamcontext">FsRtlRemovePerStreamContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtlremoveperstreamcontext.md">FsRtlRemovePerStreamContext</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlsetupadvancedheader">FsRtlSetupAdvancedHeader</a>
+<a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547285">FsRtlSupportsPerStreamContexts</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlteardownperstreamcontexts">FsRtlTeardownPerStreamContexts</a>
+<a href="..\ntifs\nf-ntifs-fsrtlteardownperstreamcontexts.md">FsRtlTeardownPerStreamContexts</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlLookupPerStreamContext function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlLookupPerStreamContext function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

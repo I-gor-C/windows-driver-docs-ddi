@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlInitExtraCreateParameterLookasideList
+UID: NF:ntifs.FsRtlInitExtraCreateParameterLookasideList
 title: FsRtlInitExtraCreateParameterLookasideList function
 author: windows-driver-content
 description: The FsRtlInitExtraCreateParameterLookasideList routine initializes a paged or nonpaged pool lookaside list used for the allocation of one or more extra create parameter context structures (ECPs) of fixed size.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlinitextracreateparameterlookasidelist.htm
 old-project: ifsk
 ms.assetid: 30ad87de-a371-415b-b77f-513369fed098
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlInitExtraCreateParameterLookasideList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlInitExtraCreateParameterLookasideList function
@@ -73,7 +74,7 @@ Specifies the size, in bytes, for all ECP entries in the lookaside list.
 
 ### -param Tag [in]
 
-Specifies the pool tag to use when allocating lookaside list ECP entries. For more information about pool tags, see the <i>Tag</i> parameter of <a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>. 
+Specifies the pool tag to use when allocating lookaside list ECP entries. For more information about pool tags, see the <i>Tag</i> parameter of <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>. 
 
 
 ## -returns
@@ -81,9 +82,9 @@ None
 
 
 ## -remarks
-Use this routine to initialize a paged or nonpaged pool lookaside list. Use the <a href="ifsk.fsrtlallocateextracreateparameterfromlookasidelist">FsRtlAllocateExtraCreateParameterFromLookasideList</a> routine to allocate an ECP from the lookaside list, and the <a href="ifsk.fsrtlfreeextracreateparameter">FsRtlFreeExtraCreateParameter</a> routine to return an ECP buffer to the lookaside list for recycling.
+Use this routine to initialize a paged or nonpaged pool lookaside list. Use the <a href="..\ntifs\nf-ntifs-fsrtlallocateextracreateparameterfromlookasidelist.md">FsRtlAllocateExtraCreateParameterFromLookasideList</a> routine to allocate an ECP from the lookaside list, and the <a href="..\ntifs\nf-ntifs-fsrtlfreeextracreateparameter.md">FsRtlFreeExtraCreateParameter</a> routine to return an ECP buffer to the lookaside list for recycling.
 
-Use the <a href="ifsk.fsrtldeleteextracreateparameterlookasidelist">FsRtlDeleteExtraCreateParameterLookasideList</a> routine to free the lookaside list itself.
+Use the <a href="..\ntifs\nf-ntifs-fsrtldeleteextracreateparameterlookasidelist.md">FsRtlDeleteExtraCreateParameterLookasideList</a> routine to free the lookaside list itself.
 
 Drivers must free all ECPs and lookaside lists that they create before they unload.
 
@@ -161,19 +162,19 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ecp_list">ECP_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
 </dt>
 <dt>
-<a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlallocateextracreateparameterfromlookasidelist">FsRtlAllocateExtraCreateParameterFromLookasideList</a>
+<a href="..\ntifs\nf-ntifs-fsrtlallocateextracreateparameterfromlookasidelist.md">FsRtlAllocateExtraCreateParameterFromLookasideList</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtldeleteextracreateparameterlookasidelist">FsRtlDeleteExtraCreateParameterLookasideList</a>
+<a href="..\ntifs\nf-ntifs-fsrtldeleteextracreateparameterlookasidelist.md">FsRtlDeleteExtraCreateParameterLookasideList</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlfreeextracreateparameter">FsRtlFreeExtraCreateParameter</a>
+<a href="..\ntifs\nf-ntifs-fsrtlfreeextracreateparameter.md">FsRtlFreeExtraCreateParameter</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a>
@@ -186,5 +187,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlInitExtraCreateParameterLookasideList routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlInitExtraCreateParameterLookasideList routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

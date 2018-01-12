@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlInsertPerFileContext
+UID: NF:ntifs.FsRtlInsertPerFileContext
 title: FsRtlInsertPerFileContext function
 author: windows-driver-content
 description: The FsRtlInsertPerFileContext routine associates a FSRTL_PER_FILE_CONTEXT object with a driver-specified context object for a file.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlinsertperfilecontext.htm
 old-project: ifsk
 ms.assetid: accc3600-9614-48e0-912d-1e8b324e659f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlInsertPerFileContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <=APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlInsertPerFileContext function
@@ -38,7 +39,7 @@ req.irql: <=APC_LEVEL
 
 
 ## -description
-The <b>FsRtlInsertPerFileContext</b> routine associates a <a href="ifsk.fsrtl_per_file_context">FSRTL_PER_FILE_CONTEXT</a> object with a driver-specified context object for a file.
+The <b>FsRtlInsertPerFileContext</b> routine associates a <a href="..\ntifs\ns-ntifs-_fsrtl_per_file_context.md">FSRTL_PER_FILE_CONTEXT</a> object with a driver-specified context object for a file.
 
 
 
@@ -68,7 +69,7 @@ A pointer to the driver-specific context structure.
 The <b>FsRtlInsertPerFileContext</b> routine returns STATUS_SUCCESS, or an appropriate error code, such as:
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The underlying file system does not support filter file contexts. You can use the <a href="ifsk.fsrtlsupportsperfilecontexts">FsRtlSupportsPerFileContexts</a> macro to check whether a file system supports per file context objects.
+</dl>The underlying file system does not support filter file contexts. You can use the <a href="..\ntifs\nf-ntifs-fsrtlsupportsperfilecontexts.md">FsRtlSupportsPerFileContexts</a> macro to check whether a file system supports per file context objects.
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl>The system could not allocate resources (typically memory).
@@ -153,21 +154,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fsrtl_per_file_context">FSRTL_PER_FILE_CONTEXT</a>
+<a href="..\ntifs\ns-ntifs-_fsrtl_per_file_context.md">FSRTL_PER_FILE_CONTEXT</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtllookupperfilecontext">FsRtlLookupPerFileContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtllookupperfilecontext.md">FsRtlLookupPerFileContext</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlremoveperfilecontext">FsRtlRemovePerFileContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtlremoveperfilecontext.md">FsRtlRemovePerFileContext</a>
 </dt>
 <dt>
-<a href="ifsk.tracking_per_file_context_in_a_legacy_file_system_filter_driver">Tracking Per-File Context in a Legacy File System Filter Driver</a>
+<a href="https://msdn.microsoft.com/6be3ff10-47e4-47f5-8f15-88a80a16f451">Tracking Per-File Context in a Legacy File System Filter Driver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlInsertPerFileContext routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlInsertPerFileContext routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

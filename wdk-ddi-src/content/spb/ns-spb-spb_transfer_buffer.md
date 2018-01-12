@@ -1,5 +1,5 @@
 ---
-UID: NS.SPB.SPB_TRANSFER_BUFFER
+UID: NS:spb.SPB_TRANSFER_BUFFER
 title: SPB_TRANSFER_BUFFER
 author: windows-driver-content
 description: The SPB_TRANSFER_BUFFER structure describes the data buffer for an individual transfer in an I/O transfer sequence.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSPB_TRANSFER_BUFFER, SPB_TRANSFER_BUFFER
 req.product: Windows 10 or later.
 ---
 

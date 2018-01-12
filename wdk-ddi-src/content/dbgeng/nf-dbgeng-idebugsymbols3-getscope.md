@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.GetScope
+UID: NF:dbgeng.IDebugSymbols3.GetScope
 title: IDebugSymbols3::GetScope method
 author: windows-driver-content
 description: The GetScope method returns information about the current scope.
 old-location: debugger\getscope.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 59eb490e-66d5-4108-8d00-5503fa56665d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::GetScope, GetScope
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::GetScope method
@@ -63,7 +64,7 @@ Receives the location in the process's virtual address space of the current scop
 
 ### -param ScopeFrame [out, optional]
 
-Receives the <a href="debugger.debug_stack_frame">DEBUG_STACK_FRAME</a> structure representing the current scope's stack frame.
+Receives the <a href="..\dbgeng\ns-dbgeng-_debug_stack_frame.md">DEBUG_STACK_FRAME</a> structure representing the current scope's stack frame.
 
 
 ### -param ScopeContext [out, optional]
@@ -130,18 +131,18 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
 </dt>
 <dt>
-<a href="debugger.geteffectiveprocessortype">IDebugControl::GetEffectiveProcessorType</a>
+<a href="https://msdn.microsoft.com/66a5aa3d-fe35-4c30-951f-f25de75dacb0">IDebugControl::GetEffectiveProcessorType</a>
 </dt>
 <dt>
-<a href="debugger.resetscope">ResetScope</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554577">ResetScope</a>
 </dt>
 <dt>
-<a href="debugger.setscope">SetScope</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556773">SetScope</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugSymbols::GetScope method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugSymbols::GetScope method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.ACPITABL._BBRT_TABLE
+UID: NS:acpitabl._BBRT_TABLE
 title: _BBRT_TABLE
 author: windows-driver-content
 description: Defines a Boot Background Resource Table.
@@ -7,8 +7,8 @@ old-location: acpi\bbrt_table.htm
 old-project: acpi
 ms.assetid: 0FC4D7BA-4292-4D87-8982-D20D267D6FA5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BBRT_TABLE, *PBBRT_TABLE, BBRT_TABLE, PBBRT_TABLE
+ms.date: 12/31/2017
+ms.keywords: _BBRT_TABLE, BBRT_TABLE, *PBBRT_TABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BBRT_TABLE, *PBBRT_TABLE
 ---
 
 # _BBRT_TABLE structure

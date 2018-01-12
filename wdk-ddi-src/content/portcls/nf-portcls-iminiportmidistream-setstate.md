@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportMidiStream.SetState
+UID: NF:portcls.IMiniportMidiStream.SetState
 title: IMiniportMidiStream::SetState method
 author: windows-driver-content
 description: The SetState method sets the stream's transport state to a new state value.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportMidiStream::SetState method
@@ -55,7 +56,7 @@ NTSTATUS SetState(
 
 ### -param NewState [in]
 
-Specifies the new state that the stream is to be set to. This parameter is a <a href="stream.ksstate">KSSTATE</a> enumeration value. For more information, see the following Remarks section.
+Specifies the new state that the stream is to be set to. This parameter is a <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a> enumeration value. For more information, see the following Remarks section.
 
 
 ## -returns
@@ -63,7 +64,7 @@ Specifies the new state that the stream is to be set to. This parameter is a <a 
 
 
 ## -remarks
-For an audio filter graph, the four <a href="stream.ksstate">KSSTATE</a> enumeration values are interpreted as follows:
+For an audio filter graph, the four <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a> enumeration values are interpreted as follows:
 
 KSSTATE_RUN 
 
@@ -81,7 +82,7 @@ KSSTATE_STOP
 
 Data transport is stopped in the current audio filter graph.
 
-For most miniport drivers, KSSTATE_ACQUIRE and KSSTATE_PAUSE are indistinguishable. The <a href="audio.iminiportmidi_newstream">IMiniportMidi::NewStream</a> method sets the initial state of the stream to KSSTATE_STOP.
+For most miniport drivers, KSSTATE_ACQUIRE and KSSTATE_PAUSE are indistinguishable. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff536710">IMiniportMidi::NewStream</a> method sets the initial state of the stream to KSSTATE_STOP.
 
 Transitions always occur in one of the following two sequences:
 
@@ -132,13 +133,13 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>
 </dt>
 <dt>
-<a href="stream.ksstate">KSSTATE</a>
+<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565110">KSPROPERTY_CONNECTION_STATE</a>
 </dt>
 <dt>
-<a href="audio.iminiportmidi_newstream">IMiniportMidi::NewStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536710">IMiniportMidi::NewStream</a>
 </dt>
 </dl>
  

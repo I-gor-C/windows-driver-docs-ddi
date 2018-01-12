@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.ReadPhysical
+UID: NF:dbgeng.IDebugDataSpaces4.ReadPhysical
 title: IDebugDataSpaces4::ReadPhysical method
 author: windows-driver-content
 description: The ReadPhysical method reads the target's memory from the specified physical address.
 old-location: debugger\readphysical3.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 8df51985-9208-46ce-8802-6bc5ec707ab2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::ReadPhysical, ReadPhysical
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::ReadPhysical method

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ExIsSoftBoot
+UID: NF:wdm.ExIsSoftBoot
 title: ExIsSoftBoot function
 author: windows-driver-content
 description: Determines whether the system has gone through a soft restart.
@@ -7,7 +7,7 @@ old-location: kernel\exissoftboot.htm
 old-project: kernel
 ms.assetid: ff67bc75-b424-4278-b979-f67d118232aa
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ExIsSoftBoot
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe (kernel mode)
 req.irql: <=APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

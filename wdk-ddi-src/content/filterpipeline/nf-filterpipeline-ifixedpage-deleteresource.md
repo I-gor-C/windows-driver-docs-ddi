@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IFixedPage.DeleteResource
+UID: NF:filterpipeline.IFixedPage.DeleteResource
 title: IFixedPage::DeleteResource method
 author: windows-driver-content
 description: The DeleteResource method deletes a resource that is associated with the page.
@@ -7,7 +7,7 @@ old-location: print\ifixedpage_deleteresource.htm
 old-project: print
 ms.assetid: 11aefa65-9f1c-4a6e-aac0-8727c6e00a02
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IFixedPage, IFixedPage::DeleteResource, DeleteResource
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IFixedPage::DeleteResource method

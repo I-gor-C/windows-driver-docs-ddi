@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:storduid
 ---
 
 # Storduid.h header
@@ -17,7 +17,6 @@ Storduid.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [CompareStorageDuids function](nf-storduid-comparestorageduids.md) | The CompareStorageDuids routine compares two device unique identifiers (DUIDs) and reports whether they match or not. |
-| [CompareStorageDuids function](nf-storduid-comparestorageduids~r1.md) | The CompareStorageDuids routine compares two device unique identifiers (DUIDs) and reports whether they match or not. |
 
 ## Structures
 

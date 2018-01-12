@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:udecxusbdevice
 ---
 
 # Udecxusbdevice.h header
 
 ## -description
 
-This header is used by UsbRef. For more information, see
-- [UsbRef](../_UsbRef/index.md)
+This header is used by Universal Serial Bus(USB). For more information, see
+- [Universal Serial Bus(USB)](../_usbref/index.md)
 
 Udecxusbdevice.h contain these programming interfaces:
 
@@ -35,17 +35,6 @@ Udecxusbdevice.h contain these programming interfaces:
 | [UdecxUsbDeviceSetFunctionSuspendAndWakeComplete function](nf-udecxusbdevice-udecxusbdevicesetfunctionsuspendandwakecomplete.md) | Completes an asynchronous request for changing the power state of a particular function of a virtual USB 3.0 device. |
 | [UdecxUsbDeviceSignalFunctionWake function](nf-udecxusbdevice-udecxusbdevicesignalfunctionwake.md) | Initiates wake up of the specified function from a low power state. This applies to virtual USB 3.0 devices. |
 | [UdecxUsbDeviceSignalWake function](nf-udecxusbdevice-udecxusbdevicesignalwake.md) | Initiates wake up from a low link power state for a virtual USB 2.0 device. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_UDECX_USB_DEVICE_D0_ENTRY callback](nc-udecxusbdevice-evt_udecx_usb_device_d0_entry.md) | The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to bring the virtual USB device out of a low power state to working state. |
-| [EVT_UDECX_USB_DEVICE_D0_EXIT callback](nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md) | The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to send the virtual USB device to a low power state. |
-| [EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD callback](nc-udecxusbdevice-evt_udecx_usb_device_default_endpoint_add.md) | The USB device emulation class extension (UdeCx) invokes this callback function to request the client driver to create the default control endpoint on the virtual USB device. |
-| [EVT_UDECX_USB_DEVICE_ENDPOINTS_CONFIGURE callback](nc-udecxusbdevice-evt_udecx_usb_device_endpoints_configure.md) | The USB device emulation class extension (UdeCx) invokes this callback function to change the configuration by selecting an alternate setting, disabling current endpoints, or adding dynamic endpoints. |
-| [EVT_UDECX_USB_DEVICE_ENDPOINT_ADD callback](nc-udecxusbdevice-evt_udecx_usb_device_endpoint_add.md) | The USB device emulation class extension (UdeCx) invokes this callback function to request the client driver to create a dynamic endpoint on the virtual USB device. |
-| [EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE callback](nc-udecxusbdevice-evt_udecx_usb_device_set_function_suspend_and_wake.md) | The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to change the function state of the specified interface of the virtual USB 3.0 device. |
 
 ## Structures
 

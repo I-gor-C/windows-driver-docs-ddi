@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPrintPipelineManagerControl.FilterFinished
+UID: NF:filterpipeline.IPrintPipelineManagerControl.FilterFinished
 title: IPrintPipelineManagerControl::FilterFinished method
 author: windows-driver-content
 description: The FilterFinished method reports that a filter is finished processing.
@@ -7,7 +7,7 @@ old-location: print\iprintpipelinemanagercontrol_filterfinished.htm
 old-project: print
 ms.assetid: 6393b959-f67a-42e8-bb2b-e830bcf0d45f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintPipelineManagerControl, IPrintPipelineManagerControl::FilterFinished, FilterFinished
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintPipelineManagerControl::FilterFinished method
@@ -61,7 +62,7 @@ HRESULT STDMETHODCALLTYPE FilterFinished(
 
 
 ## -remarks
-The filter does not need to call the <code>FilterFinished</code> method. The filter pipeline assumes the filter has finished when the <a href="print.iprintpipelinefilter_startoperation">IPrintPipelineFilter::StartOperation</a> method returns. <code>FilterFinished</code> is provided for compatibility and, when called, it does nothing but returns.
+The filter does not need to call the <code>FilterFinished</code> method. The filter pipeline assumes the filter has finished when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554301">IPrintPipelineFilter::StartOperation</a> method returns. <code>FilterFinished</code> is provided for compatibility and, when called, it does nothing but returns.
 
 
 ## -requirements

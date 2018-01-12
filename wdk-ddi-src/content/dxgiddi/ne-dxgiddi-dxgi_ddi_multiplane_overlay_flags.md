@@ -1,5 +1,5 @@
 ---
-UID: NE.dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS
+UID: NE:dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS
 title: DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS
 author: windows-driver-content
 description: Identifies a flip operation to be performed on an overlay plane.
@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_multiplane_overlay_flags.htm
 old-project: display
 ms.assetid: 74245a8b-1b52-4336-a744-1aedaca0eef5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS, DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS
 ---
 
 # DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS enumeration

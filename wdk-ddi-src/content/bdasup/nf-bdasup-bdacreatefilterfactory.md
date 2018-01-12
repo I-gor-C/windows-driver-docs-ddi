@@ -1,5 +1,5 @@
 ---
-UID: NF.bdasup.BdaCreateFilterFactory
+UID: NF:bdasup.BdaCreateFilterFactory
 title: BdaCreateFilterFactory function
 author: windows-driver-content
 description: The BdaCreateFilterFactory function adds the specified filter descriptor as a filter factory to the specified device and associates the filter factory with the specified BDA template topology.
@@ -7,7 +7,7 @@ old-location: stream\bdacreatefilterfactory.htm
 old-project: stream
 ms.assetid: bce1a41a-03fa-4f41-aeba-e18c85b07e00
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: BdaCreateFilterFactory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Bdasup.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PKSP_BDA_NODE_PIN, KSP_BDA_NODE_PIN
 ---
 
 # BdaCreateFilterFactory function
@@ -62,12 +63,12 @@ Points to the BDA device to which to add the filter factory with associated BDA 
 
 ### -param pFilterDescriptor [in]
 
-Points to a <a href="stream.ksfilter_descriptor">KSFILTER_DESCRIPTOR</a> structure that describes a filter for the BDA device. Note that not all of the template pin and node types may be exposed as pin and node factories when the filter is first initialized. 
+Points to a <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a> structure that describes a filter for the BDA device. Note that not all of the template pin and node types may be exposed as pin and node factories when the filter is first initialized. 
 
 
 ### -param pBdaFilterTemplate [in]
 
-Points to a <a href="stream.bda_filter_template">BDA_FILTER_TEMPLATE</a> structure that describes a BDA template topology. 
+Points to a <a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a> structure that describes a BDA template topology. 
 
 
 ## -returns
@@ -89,7 +90,7 @@ A BDA minidriver calls the <b>BdaCreateFilterFactory</b> function to add a filte
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
 
 
-If a BDA minidriver requires a pointer to the newly created filter factory (<a href="stream.ksfilterfactory">KSFILTERFACTORY</a>), the minidriver should call the <a href="stream.bdacreatefilterfactoryex">BdaCreateFilterFactoryEx</a> function instead.
+If a BDA minidriver requires a pointer to the newly created filter factory (<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>), the minidriver should call the <a href="..\bdasup\nf-bdasup-bdacreatefilterfactoryex.md">BdaCreateFilterFactoryEx</a> function instead.
 
 
 ## -requirements
@@ -152,19 +153,19 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.bdacreatefilterfactoryex">BdaCreateFilterFactoryEx</a>
+<a href="..\bdasup\nf-bdasup-bdacreatefilterfactoryex.md">BdaCreateFilterFactoryEx</a>
 </dt>
 <dt>
-<a href="stream.bda_filter_template">BDA_FILTER_TEMPLATE</a>
+<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
 </dt>
 <dt>
-<a href="stream.ksdevice">KSDEVICE</a>
+<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
 </dt>
 <dt>
-<a href="stream.ksfilter_descriptor">KSFILTER_DESCRIPTOR</a>
+<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="stream.ksfilterfactory">KSFILTERFACTORY</a>
+<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563403">KSMETHODSETID_BdaChangeSync</a>
@@ -180,5 +181,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BdaCreateFilterFactory function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BdaCreateFilterFactory function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

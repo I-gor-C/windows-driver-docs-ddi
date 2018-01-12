@@ -1,6 +1,6 @@
 ---
-UID: NS.PORTCLS.__UNNAMED_STRUCT_0C40_3
-title: *PPCPROPERTY_ITEM
+UID: NS:portcls.__unnamed_struct_0c40_3
+title: PCPROPERTY_ITEM
 author: windows-driver-content
 description: The PCPROPERTY_ITEM structure describes a property that is supported by a particular filter, pin, or node.
 old-location: audio\pcproperty_item.htm
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: aec5b9df-22cc-4ef8-8d09-103124ab357c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: *PPCPROPERTY_ITEM, *PPCPROPERTY_ITEM, PCPROPERTY_ITEM
+ms.keywords: PCPROPERTY_ITEM, PCPROPERTY_ITEM, *PPCPROPERTY_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PCPROPERTY_ITEM, *PPCPROPERTY_ITEM
 ---
 
-# *PPCPROPERTY_ITEM structure
+# PCPROPERTY_ITEM structure
 
 
 
@@ -182,11 +183,11 @@ See the following Remarks section.
 ## -remarks
 The <b>PCPROPERTY_ITEM</b> structure specifies a particular property item in an automation table. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a> structure points to an array of <b>PCPROPERTY_ITEM</b> structures.
 
-When calling the <b>Handler</b> routine, the caller passes in a single call parameter, which is a pointer to a <a href="audio.pcproperty_request">PCPROPERTY_REQUEST</a> structure. This structure is allocated by the caller, and the caller frees it under either of the following conditions:
+When calling the <b>Handler</b> routine, the caller passes in a single call parameter, which is a pointer to a <a href="..\portcls\ns-portcls-_pcproperty_request.md">PCPROPERTY_REQUEST</a> structure. This structure is allocated by the caller, and the caller frees it under either of the following conditions:
 
 If the <b>Handler</b> routine returns any status code other than STATUS_PENDING, the caller frees the structure. In this case, the miniport driver should not attempt to access the structure after the <b>Handler</b> routine returns.
 
-The <b>Handler</b> routine can also return STATUS_PENDING, in which case the miniport driver is obliged to call <a href="audio.pccompletependingpropertyrequest">PcCompletePendingPropertyRequest</a> at a later time to complete the pending property request. The <b>PcCompletePendingPropertyRequest</b> function frees the structure. After calling <b>PcCompletePendingPropertyRequest</b>, the miniport driver should not attempt to access the structure.
+The <b>Handler</b> routine can also return STATUS_PENDING, in which case the miniport driver is obliged to call <a href="..\portcls\nf-portcls-pccompletependingpropertyrequest.md">PcCompletePendingPropertyRequest</a> at a later time to complete the pending property request. The <b>PcCompletePendingPropertyRequest</b> function frees the structure. After calling <b>PcCompletePendingPropertyRequest</b>, the miniport driver should not attempt to access the structure.
 
 If the miniport driver attempts to access the structure after it has been freed, this action is likely to cause a bug check or to corrupt another driver's memory.
 
@@ -211,10 +212,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcproperty_request">PCPROPERTY_REQUEST</a>
+<a href="..\portcls\ns-portcls-_pcproperty_request.md">PCPROPERTY_REQUEST</a>
 </dt>
 <dt>
-<a href="audio.pccompletependingpropertyrequest">PcCompletePendingPropertyRequest</a>
+<a href="..\portcls\nf-portcls-pccompletependingpropertyrequest.md">PcCompletePendingPropertyRequest</a>
 </dt>
 </dl>
  

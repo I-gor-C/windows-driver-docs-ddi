@@ -1,5 +1,5 @@
 ---
-UID: NS.PORTCLS._PCNOTIFICATION_BUFFER
+UID: NS:portcls._PCNOTIFICATION_BUFFER
 title: _PCNOTIFICATION_BUFFER
 author: windows-driver-content
 description: The notification buffer used by IPortClsNotifications.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: EEE091E4-29D1-4C6F-B543-C54736660CCA
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PCNOTIFICATION_BUFFER, PCNOTIFICATION_BUFFER, PPCNOTIFICATION_BUFFER, *PPCNOTIFICATION_BUFFER
+ms.keywords: _PCNOTIFICATION_BUFFER, PCNOTIFICATION_BUFFER, *PPCNOTIFICATION_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PCNOTIFICATION_BUFFER, *PPCNOTIFICATION_BUFFER
 ---
 
 # _PCNOTIFICATION_BUFFER structure

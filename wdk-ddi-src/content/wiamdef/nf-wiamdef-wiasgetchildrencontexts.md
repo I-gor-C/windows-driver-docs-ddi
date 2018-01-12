@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasGetChildrenContexts
+UID: NF:wiamdef.wiasGetChildrenContexts
 title: wiasGetChildrenContexts function
 author: windows-driver-content
 description: The wiasGetChildrenContexts function retrieves an array of item contexts belonging to the current item's children.
 old-location: image\wiasgetchildrencontexts.htm
-old-project: Image
+old-project: image
 ms.assetid: a69216f4-1272-488f-8d06-8dc3b6a88452
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasGetChildrenContexts
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 

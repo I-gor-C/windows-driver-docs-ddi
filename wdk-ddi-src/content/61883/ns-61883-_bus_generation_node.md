@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._BUS_GENERATION_NODE
+UID: NS:61883._BUS_GENERATION_NODE
 title: _BUS_GENERATION_NODE
 author: windows-driver-content
 description: The BUS_GENERATION_NODE structure is used in conjunction with the Av61883_GetUnitInfo request to retrieve bus characteristics.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 8db151ca-6358-41b0-a96a-e69b9d6c2c95
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _BUS_GENERATION_NODE, *PBUS_GENERATION_NODE, BUS_GENERATION_NODE, PBUS_GENERATION_NODE
+ms.keywords: _BUS_GENERATION_NODE, *PBUS_GENERATION_NODE, BUS_GENERATION_NODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBUS_GENERATION_NODE, BUS_GENERATION_NODE
 ---
 
 # _BUS_GENERATION_NODE structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.STORPORT._PERF_CONFIGURATION_DATA
+UID: NS:storport._PERF_CONFIGURATION_DATA
 title: _PERF_CONFIGURATION_DATA
 author: windows-driver-content
 description: The PERF_CONFIGURATION_DATA structure describes the performance optimizations that are supported by the StorPortInitializePerfOpts routine.
@@ -7,8 +7,8 @@ old-location: storage\perf_configuration_data.htm
 old-project: storage
 ms.assetid: 47db8f0f-9f3b-44d9-8110-dc0b79d0e26a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PERF_CONFIGURATION_DATA, PERF_CONFIGURATION_DATA, *PPERF_CONFIGURATION_DATA, PPERF_CONFIGURATION_DATA
+ms.date: 1/10/2018
+ms.keywords: _PERF_CONFIGURATION_DATA, PERF_CONFIGURATION_DATA, *PPERF_CONFIGURATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PERF_CONFIGURATION_DATA, *PPERF_CONFIGURATION_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The PERF_CONFIGURATION_DATA structure describes the performance optimizations that are supported by the <a href="storage.storportinitializeperfopts">StorPortInitializePerfOpts</a> routine.
+The PERF_CONFIGURATION_DATA structure describes the performance optimizations that are supported by the <a href="..\storport\nf-storport-storportinitializeperfopts.md">StorPortInitializePerfOpts</a> routine.
 
 
 
@@ -100,7 +101,7 @@ STOR_PERF_CONCURRENT_CHANNELS
 
 </td>
 <td>
-This flag is used to indicate that concurrent calls to the <a href="storage.hwstorstartio">HwStorStartIo</a> routine are supported. Prior to Windows 8, miniports must not set this flag.
+This flag is used to indicate that concurrent calls to the <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine are supported. Prior to Windows 8, miniports must not set this flag.
 
 This flag is valid when <b>Version</b> is set to 2 or 3.
 
@@ -174,7 +175,7 @@ This flag is valid when <b>Version</b> is set to 5.
 
 ### -field ConcurrentChannels
 
-The number of concurrent calls to the <a href="storage.hwstorstartio">HwStorStartIo</a> routine that the miniport driver and the device  support. This member is only accessed when the STOR_PERF_CONCURRENT_CHANNELS flag has been set. Prior to Windows 8, miniports must not set this value.
+The number of concurrent calls to the <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine that the miniport driver and the device  support. This member is only accessed when the STOR_PERF_CONCURRENT_CHANNELS flag has been set. Prior to Windows 8, miniports must not set this value.
 
 
 ### -field FirstRedirectionMessageNumber
@@ -199,7 +200,7 @@ Reserved for system use.
 
 ### -field MessageTargets
 
-When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes the fields of in the structures of a <a href="kernel.group_affinity">GROUP_AFFINITY</a> array. These structures correspond to the redirection messages that are currently in use. The array itself is zero-based, but <b>FirstRedirectionMessageNumber</b> is not required to be zero. The miniport allocates this array and sets <b>MessageTargets</b> to point to it. The miniport driver must allocate a <b>GROUP_AFFINITY</b> array large enough to hold all the returned affinity masks.
+When the <b>Flags</b> member has the STOR_PERF_ADV_CONFIG_LOCALITY flag set, Storport initializes the fields of in the structures of a <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a> array. These structures correspond to the redirection messages that are currently in use. The array itself is zero-based, but <b>FirstRedirectionMessageNumber</b> is not required to be zero. The miniport allocates this array and sets <b>MessageTargets</b> to point to it. The miniport driver must allocate a <b>GROUP_AFFINITY</b> array large enough to hold all the returned affinity masks.
 
 
 ## -remarks
@@ -207,7 +208,7 @@ The current version of this structure is defined by <b>STOR_PERF_VERSION</b>. Se
 
 The purpose of the STOR_PERF_DPC_REDIRECTION flag is to ensure that individual CPUs are not overwhelmed with DPC processing. When this flag is set, DPC processing is spread over multiple CPUs. If STOR_PERF_DPC_REDIRECTION_CURRENT_CPU is not set, StorPort will attempt to schedule I/O completion DPCs on the same CPU that originated the I/O.
 
-Typically, a miniport  completes I/O requests in it's <a href="storage.hwstorstartio">HwStorStartIo</a> routine and calls <a href="storage.storportnotification__notificationtype___requestcomplete_">StorPortNotification</a> with the <b>RequestComplete</b> notification type. For processing I/O in this manner, the miniport will leave the STOR_PERF_OPTIMIZE_FOR_COMPLETION_DURING_STARTIO flag set in the <b>Flags</b> member allowing Storport to adjust DPC redirection.
+Typically, a miniport  completes I/O requests in it's <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine and calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567433">StorPortNotification</a> with the <b>RequestComplete</b> notification type. For processing I/O in this manner, the miniport will leave the STOR_PERF_OPTIMIZE_FOR_COMPLETION_DURING_STARTIO flag set in the <b>Flags</b> member allowing Storport to adjust DPC redirection.
 
 For information about enabling message-signaled interrupts for a device, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544246">Enabling Message-Signaled Interrupts in the Registry</a>.
 
@@ -230,12 +231,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storportinitializeperfopts">StorPortInitializePerfOpts</a>
+<a href="..\storport\nf-storport-storportinitializeperfopts.md">StorPortInitializePerfOpts</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20PERF_CONFIGURATION_DATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20PERF_CONFIGURATION_DATA structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

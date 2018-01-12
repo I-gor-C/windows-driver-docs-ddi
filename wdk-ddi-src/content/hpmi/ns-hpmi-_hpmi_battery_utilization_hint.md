@@ -1,5 +1,5 @@
 ---
-UID: NS.HPMI._HPMI_BATTERY_UTILIZATION_HINT
+UID: NS:hpmi._HPMI_BATTERY_UTILIZATION_HINT
 title: _HPMI_BATTERY_UTILIZATION_HINT
 author: windows-driver-content
 description: This hint indicates if the OEM Battery Manager should attempt to save as much charge as possible in the non-hot swappable batteries (i.e.
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: A974998F-C9AF-496E-88B1-510413C17C4A
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HPMI_BATTERY_UTILIZATION_HINT, *PHPMI_BATTERY_UTILIZATION_HINT, HPMI_BATTERY_UTILIZATION_HINT, PHPMI_BATTERY_UTILIZATION_HINT
+ms.keywords: _HPMI_BATTERY_UTILIZATION_HINT, HPMI_BATTERY_UTILIZATION_HINT, *PHPMI_BATTERY_UTILIZATION_HINT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HPMI_BATTERY_UTILIZATION_HINT, *PHPMI_BATTERY_UTILIZATION_HINT
 ---
 
 # _HPMI_BATTERY_UTILIZATION_HINT structure
@@ -112,13 +113,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="powermeter.hpmi_hint_bool">HPMI_HINT_BOOL</a>
+<a href="..\hpmi\ne-hpmi-_hpmi_hint_bool.md">HPMI_HINT_BOOL</a>
 </dt>
 <dt>
 <a href="..\hpmi\ni-hpmi-ioctl_hpmi_battery_utilization_hint.md">IOCTL_HPMI_BATTERY_UTILIZATION_HINT</a>
 </dt>
 <dt>
-<a href="powermeter.hpmi_h">hpmi.h</a>
+<a href="https://msdn.microsoft.com/35934D6C-3FB4-4AD4-AA50-BD3A7790269F">hpmi.h</a>
 </dt>
 </dl>
  

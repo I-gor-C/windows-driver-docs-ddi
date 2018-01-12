@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFRemoteInterfaceInitialize.GetInterfaceGuid
+UID: NF:wudfddi.IWDFRemoteInterfaceInitialize.GetInterfaceGuid
 title: IWDFRemoteInterfaceInitialize::GetInterfaceGuid method
 author: windows-driver-content
 description: The GetInterfaceGuid method retrieves the GUID that identifies a device interface.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfremoteinterfaceinitialize_getinterfaceguid.htm
 old-project: wdf
 ms.assetid: 3c68d458-9b34-4e45-993a-67f915347637
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFRemoteInterfaceInitialize, IWDFRemoteInterfaceInitialize::GetInterfaceGuid, GetInterfaceGuid
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ None.
 ## -remarks
 For more information about the <b>GetInterfaceGuid</b> method, see <a href="wdf.using_device_interfaces_in_umdf_drivers">Using Device Interfaces in UMDF-based Drivers</a>.
 
-The following code example shows how a driver's <a href="wdf.ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a> callback function can obtain the GUID that identifies the device interface that has arrived.
+The following code example shows how a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556775">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a> callback function can obtain the GUID that identifies the device interface that has arrived.
 
 
 ## -requirements
@@ -134,12 +135,12 @@ DLL
 <a href="..\wudfddi\nn-wudfddi-iwdfremoteinterfaceinitialize.md">IWDFRemoteInterfaceInitialize</a>
 </dt>
 <dt>
-<a href="wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink">IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560242">IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFRemoteInterfaceInitialize::GetInterfaceGuid method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFRemoteInterfaceInitialize::GetInterfaceGuid method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

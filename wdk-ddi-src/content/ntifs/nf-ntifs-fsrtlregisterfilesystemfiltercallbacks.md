@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlRegisterFileSystemFilterCallbacks
+UID: NF:ntifs.FsRtlRegisterFileSystemFilterCallbacks
 title: FsRtlRegisterFileSystemFilterCallbacks function
 author: windows-driver-content
 description: File system filter drivers and file systems call the FsRtlRegisterFileSystemFilterCallbacks routine to register notification callback routines to be invoked when the underlying file system performs certain operations.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlregisterfilesystemfiltercallbacks.htm
 old-project: ifsk
 ms.assetid: cd6d2ab6-ce17-47db-b5d0-4f9543e15487
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlRegisterFileSystemFilterCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlRegisterFileSystemFilterCallbacks function

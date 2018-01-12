@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteTyped.Eval
+UID: NF:engextcpp.ExtRemoteTyped.Eval
 title: ExtRemoteTyped::Eval method
 author: windows-driver-content
 description: The Eval method returns typed data that is the result of evaluating an expression.
 old-location: debugger\extremotetyped_eval.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f54c7dfd-1997-4056-b20a-94438552aeca
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped::Eval, Eval
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteTyped::Eval method

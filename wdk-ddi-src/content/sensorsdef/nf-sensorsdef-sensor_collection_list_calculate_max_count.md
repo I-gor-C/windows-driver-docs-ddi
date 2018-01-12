@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsdef.SENSOR_COLLECTION_LIST_CALCULATE_MAX_COUNT
+UID: NF:sensorsdef.SENSOR_COLLECTION_LIST_CALCULATE_MAX_COUNT
 title: SENSOR_COLLECTION_LIST_CALCULATE_MAX_COUNT function
 author: windows-driver-content
 description: This function calculates the number of SENSOR_VALUE_PAIR elements in a SENSOR_COLLECTION_LIST structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SENSOR_STATE
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._DEVICE_TRIM_DESCRIPTOR
+UID: NS:ntddstor._DEVICE_TRIM_DESCRIPTOR
 title: _DEVICE_TRIM_DESCRIPTOR
 author: windows-driver-content
 description: The DEVICE_TRIM_DESCRIPTOR structure is used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve the trim descriptor data for a device.
@@ -7,8 +7,8 @@ old-location: storage\device_trim_descriptor.htm
 old-project: storage
 ms.assetid: e36bca55-63d0-41ef-83b9-8f0cfd450323
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DEVICE_TRIM_DESCRIPTOR, DEVICE_TRIM_DESCRIPTOR, PDEVICE_TRIM_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: _DEVICE_TRIM_DESCRIPTOR, *PDEVICE_TRIM_DESCRIPTOR, DEVICE_TRIM_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDEVICE_TRIM_DESCRIPTOR, DEVICE_TRIM_DESCRIPTOR
 ---
 
 # _DEVICE_TRIM_DESCRIPTOR structure
@@ -99,5 +100,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_TRIM_DESCRIPTOR structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DEVICE_TRIM_DESCRIPTOR structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

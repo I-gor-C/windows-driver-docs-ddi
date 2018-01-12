@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamicro.Scan
+UID: NF:wiamicro.Scan
 title: Scan function
 author: windows-driver-content
 description: The Scan function reads data from the device and returns the data to the WIA Flatbed driver.
 old-location: image\scan.htm
-old-project: Image
+old-project: image
 ms.assetid: 057b548a-d9e4-4db4-b34f-d867b7be3971
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: Scan
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ WIAMICRO_API HRESULT Scan(
 
 ### -param pScanInfo [in, out]
 
-Specifies the <a href="image.scaninfo">SCANINFO</a> structure that represents the microdriver's settings. This is stored by the WIA Flatbed driver to guarantee that the settings between the microdriver and the WIA Flatbed driver are synchronized. 
+Specifies the <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure that represents the microdriver's settings. This is stored by the WIA Flatbed driver to guarantee that the settings between the microdriver and the WIA Flatbed driver are synchronized. 
 
 
 ### -param lPhase 
@@ -78,7 +79,7 @@ SCAN_FIRST
 
 </td>
 <td>
-This signals the first phase of the scan. The microdriver performs three tasks: it initializes the device, it uses the data in the <a href="image.scaninfo">SCANINFO</a> structure to set up the scan (for example, set the resolution, the start position, the width and the height on the device), and it starts the scan. Data must be returned from this call. Data must be put into the buffer pointed to by <i>pBuffer</i> and the <i>pReceived</i> parameter must be set to the amount of data put in the buffer.
+This signals the first phase of the scan. The microdriver performs three tasks: it initializes the device, it uses the data in the <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure to set up the scan (for example, set the resolution, the start position, the width and the height on the device), and it starts the scan. Data must be returned from this call. Data must be put into the buffer pointed to by <i>pBuffer</i> and the <i>pReceived</i> parameter must be set to the amount of data put in the buffer.
 
 </td>
 </tr>
@@ -100,7 +101,7 @@ SCAN_FINISHED
 <td>
 This will be called at the end of the scan to terminate the scanning process. No data should be transferred. SCAN_FINISHED will always be called even if the user cancels the scan. The microdriver should stop transferring data and the scanner should be reset so that it is ready for the next scan.
 
-The data returned from this function should be in raw format without any header. The data can be either packed or planar, aligned or unaligned, and in RGB or BGR order. Set the <b>RawDataFormat</b>, <b>RawPixelOrder</b>, and <b>bNeedDataAlignment</b> members of the <a href="image.scaninfo">SCANINFO</a> structure appropriately in response to the CMD_INITIALIZE command.
+The data returned from this function should be in raw format without any header. The data can be either packed or planar, aligned or unaligned, and in RGB or BGR order. Set the <b>RawDataFormat</b>, <b>RawPixelOrder</b>, and <b>bNeedDataAlignment</b> members of the <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure appropriately in response to the CMD_INITIALIZE command.
 
 </td>
 </tr>
@@ -191,18 +192,18 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="image.scaninfo">SCANINFO</a>
+<a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552714">WIA Microdriver Commands</a>
 </dt>
 <dt>
-<a href="image.wia_microdriver_structures">WIA Microdriver Structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552722">WIA Microdriver Structures</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20Scan function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20Scan function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

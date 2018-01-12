@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILUICCSERVICEINFO
+UID: NS:ntddrilapitypes.RILUICCSERVICEINFO
 title: RILUICCSERVICEINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccserviceinfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 80abf9a7-0a34-4fc2-ab5a-afcb678b7003
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUICCSERVICEINFO, *LPRILUICCSERVICEINFO, LPRILUICCSERVICEINFO, RILUICCSERVICEINFO
+ms.date: 1/8/2018
+ms.keywords: RILUICCSERVICEINFO, *LPRILUICCSERVICEINFO, RILUICCSERVICEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILUICCSERVICEINFO, RILUICCSERVICEINFO
 ---
 
 # RILUICCSERVICEINFO structure

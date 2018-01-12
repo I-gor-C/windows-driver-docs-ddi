@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDDISK._DISK_GEOMETRY
+UID: NS:ntdddisk._DISK_GEOMETRY
 title: _DISK_GEOMETRY
 author: windows-driver-content
 description: The DISK_GEOMETRY structure is obsolete and provided only to support existing drivers.
@@ -7,8 +7,8 @@ old-location: storage\disk_geometry.htm
 old-project: storage
 ms.assetid: f92d1f63-4361-4775-88f8-be1c9bf781ef
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DISK_GEOMETRY, PDISK_GEOMETRY, DISK_GEOMETRY
+ms.date: 1/10/2018
+ms.keywords: _DISK_GEOMETRY, *PDISK_GEOMETRY, DISK_GEOMETRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDISK_GEOMETRY, DISK_GEOMETRY
 ---
 
 # _DISK_GEOMETRY structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The DISK_GEOMETRY structure is obsolete and provided only to support existing drivers. New drivers must use <a href="storage.disk_geometry_ex">DISK_GEOMETRY_EX</a>. DISK_GEOMETRY is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a> and the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_media_types.md">IOCTL_DISK_GET_MEDIA_TYPES</a> requests, in order to retrieve information about the geometry of a physical disk. 
+The DISK_GEOMETRY structure is obsolete and provided only to support existing drivers. New drivers must use <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>. DISK_GEOMETRY is used in conjunction with the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a> and the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_media_types.md">IOCTL_DISK_GET_MEDIA_TYPES</a> requests, in order to retrieve information about the geometry of a physical disk. 
 
 
 
@@ -64,7 +65,7 @@ Indicates the number of cylinders on the disk device.
 
 ### -field MediaType
 
-Indicates the type of disk. The enumeration <a href="storage.media_type">MEDIA_TYPE</a> lists the values that can be assigned to this member. 
+Indicates the type of disk. The enumeration <a href="https://msdn.microsoft.com/library/windows/hardware/ff562216">MEDIA_TYPE</a> lists the values that can be assigned to this member. 
 
 
 ### -field TracksPerCylinder
@@ -84,7 +85,7 @@ Indicates the number of bytes in a disk sector.
 
 ## -remarks
 
-<a href="storage.disk_geometry_ex">DISK_GEOMETRY_EX</a> must be used with new drivers, in order to accommodate GUID Partition Table (GPT) partitions. The DISK_GEOMETRY structure is nested within the DISK_GEOMETRY_EX structure.
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a> must be used with new drivers, in order to accommodate GUID Partition Table (GPT) partitions. The DISK_GEOMETRY structure is nested within the DISK_GEOMETRY_EX structure.
 
 
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_media_types.md">IOCTL_DISK_GET_MEDIA_TYPES</a> causes an array of these structures to be returned. 
@@ -108,7 +109,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.disk_geometry_ex">DISK_GEOMETRY_EX</a>
+<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a>
 </dt>
 <dt>
 <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_drive_geometry.md">IOCTL_DISK_GET_DRIVE_GEOMETRY</a>
@@ -121,5 +122,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DISK_GEOMETRY structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20DISK_GEOMETRY structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

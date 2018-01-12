@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDCDRM._CDROM_EXCLUSIVE_ACCESS
+UID: NS:ntddcdrm._CDROM_EXCLUSIVE_ACCESS
 title: _CDROM_EXCLUSIVE_ACCESS
 author: windows-driver-content
 description: The CDROM_EXCLUSIVE_ACCESS structure is used with the IOCTL_CDROM_EXCLUSIVE_ACCESS request to query the access state of a CD-ROM device or to lock or unlock the device for exclusive access.
@@ -7,8 +7,8 @@ old-location: storage\cdrom_exclusive_access.htm
 old-project: storage
 ms.assetid: 95248a4a-1fc1-4985-baff-2fe77532d398
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CDROM_EXCLUSIVE_ACCESS, CDROM_EXCLUSIVE_ACCESS, PCDROM_EXCLUSIVE_ACCESS, *PCDROM_EXCLUSIVE_ACCESS
+ms.date: 1/10/2018
+ms.keywords: _CDROM_EXCLUSIVE_ACCESS, *PCDROM_EXCLUSIVE_ACCESS, CDROM_EXCLUSIVE_ACCESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCDROM_EXCLUSIVE_ACCESS, CDROM_EXCLUSIVE_ACCESS
 ---
 
 # _CDROM_EXCLUSIVE_ACCESS structure
@@ -56,7 +57,7 @@ typedef struct _CDROM_EXCLUSIVE_ACCESS {
 
 ### -field RequestType
 
-An <a href="storage.exclusive_access_request_type">EXCLUSIVE_ACCESS_REQUEST_TYPE</a>-typed enumeration value that specifies the type of operation.
+An <a href="..\ntddcdrm\ne-ntddcdrm-_exclusive_access_request_type.md">EXCLUSIVE_ACCESS_REQUEST_TYPE</a>-typed enumeration value that specifies the type of operation.
 
 
 ### -field Flags
@@ -153,5 +154,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_EXCLUSIVE_ACCESS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_EXCLUSIVE_ACCESS structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSE_PIN
+UID: NS:ks.KSE_PIN
 title: KSE_PIN
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\kse_pin.htm
 old-project: stream
 ms.assetid: 6936F732-ECAA-4CA7-B2AF-CA22A5C93FC9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSE_PIN, PKSE_PIN, *PKSE_PIN, KSE_PIN
+ms.date: 1/9/2018
+ms.keywords: KSE_PIN, KSE_PIN, *PKSE_PIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSE_PIN, *PKSE_PIN
 ---
 
 # KSE_PIN structure

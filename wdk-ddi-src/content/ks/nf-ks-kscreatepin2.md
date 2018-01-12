@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsCreatePin2
+UID: NF:ks.KsCreatePin2
 title: KsCreatePin2 function
 author: windows-driver-content
 description: Passes a connection request to a device, creating a pin instance.
@@ -7,7 +7,7 @@ old-location: stream\kscreatepin2.htm
 old-project: stream
 ms.assetid: 43408247-0c34-46bd-a36b-b11540a10c55
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsCreatePin2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsCreatePin2 function
@@ -75,7 +76,7 @@ Specifies the access desired to the pin. This is typically <b>GENERIC_READ</b> o
 
 ### -param ConnectionHandle [out]
 
-Specifies the connection handle passed. The routine fills this in with a handle to the file object of the created connection. This value can then be used to disconnect with the <a href="base.closehandle">CloseHandle</a> function.
+Specifies the connection handle passed. The routine fills this in with a handle to the file object of the created connection. This value can then be used to disconnect with the <a href="https://msdn.microsoft.com/9b84891d-62ca-4ddc-97b7-c4c79482abd9">CloseHandle</a> function.
 
 
 ## -returns
@@ -83,7 +84,7 @@ Returns <b>NOERROR</b> if successful; otherwise, returns an error code.
 
 
 ## -remarks
-This is a new version of the <a href="stream.kscreatepin">KsCreatePin</a> function and uses the device broker to create the handle to the kernel streaming object. In addition, the Component Object Model (COM) <a href="com.coinitialize">CoInitialize</a> function must be called before this function is called.
+This is a new version of the <a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a> function and uses the device broker to create the handle to the kernel streaming object. In addition, the Component Object Model (COM) <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a> function must be called before this function is called.
 
 The routine sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> request to the driver. The driver accepts the request only if the interface, medium, and data format are compatible.
 
@@ -149,13 +150,13 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="com.coinitialize">CoInitialize</a>
+<a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 </dt>
 <dt>
-<a href="stream.kscreatepin">KsCreatePin</a>
+<a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
@@ -168,5 +169,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsCreatePin2 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsCreatePin2 function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

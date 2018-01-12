@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlLongLongToLongPtr
+UID: NF:ntintsafe.RtlLongLongToLongPtr
 title: RtlLongLongToLongPtr function
 author: windows-driver-content
 description: Converts a value of type LONGLONG to a value of type LONG_PTR.
@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongtolongptr.htm
 old-project: kernel
 ms.assetid: 1E7B693A-B363-4AE0-B9E3-45CC01FE9724
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlLongLongToLongPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlLongLongToLongPtr function

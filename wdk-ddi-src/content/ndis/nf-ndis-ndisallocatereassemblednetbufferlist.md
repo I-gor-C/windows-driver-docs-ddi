@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisAllocateReassembledNetBufferList
+UID: NF:ndis.NdisAllocateReassembledNetBufferList
 title: NdisAllocateReassembledNetBufferList function
 author: windows-driver-content
 description: Call the NdisAllocateReassembledNetBufferList function to reassemble a fragmented NET_BUFFER_LIST structure.
 old-location: netvista\ndisallocatereassemblednetbufferlist.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6a7fcb43-93bf-4351-8198-1d788b1bcc8c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisAllocateReassembledNetBufferList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisAllocateReassembledNetBufferList function
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 Call the 
   <b>NdisAllocateReassembledNetBufferList</b> function to reassemble a fragmented 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 
 
@@ -68,10 +69,10 @@ A pointer to the NET_BUFFER_LIST structure to reassemble.
 ### -param NetBufferAndNetBufferListPoolHandle [in, optional]
 
 A NET_BUFFER_LIST structure pool handle that was previously returned from the 
-     <a href="netvista.ndisallocatenetbufferlistpool">
+     <a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
      NdisAllocateNetBufferListPool</a> function. The 
      <b>fAllocateNetBuffer</b> member of the 
-     <a href="netvista.net_buffer_list_pool_parameters">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure that the caller passed to 
+     <a href="..\ndis\ns-ndis-_net_buffer_list_pool_parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a> structure that the caller passed to 
      <b>NdisAllocateNetBufferListPool</b> must have been set to <b>TRUE</b>, and the 
      <b>DataSize</b> member set to zero. If this parameter is <b>NULL</b>, NDIS uses an internal pool.
 
@@ -79,7 +80,7 @@ A NET_BUFFER_LIST structure pool handle that was previously returned from the
 ### -param StartOffset [in]
 
 The amount of data to skip at the beginning of each source 
-     <a href="netvista.net_buffer">NET_BUFFER</a> structure. This amount is in addition
+     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure. This amount is in addition
      to the value that is specified in the 
      <b>DataOffset</b> member of the NET_BUFFER structure.
 
@@ -112,19 +113,19 @@ If the reassemble operation succeeds,
 
 ## -remarks
 <b>NdisAllocateReassembledNetBufferList</b> allocates, initializes, and returns a new 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure that includes one 
-    <a href="netvista.net_buffer">NET_BUFFER</a> structure and one MDL chain. The new
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that includes one 
+    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure and one MDL chain. The new
     NET_BUFFER_LIST structure describes the same data as the fragmented source NET_BUFFER_LIST structure that
     the driver passed at 
     <i>FragmentedNetBufferList</i>. After skipping the number of bytes specified in 
     <i>StartOffset</i> in every fragmented NET_BUFFER structure, NDIS concatenates the remaining data in each
     fragmented NET_BUFFER structure into one reassembled NET_BUFFER structure. Reassembled NET_BUFFER_LIST
     structures do not include an initial 
-    <a href="netvista.net_buffer_list_context">
+    <a href="..\ndis\ns-ndis-_net_buffer_list_context.md">
     NET_BUFFER_LIST_CONTEXT</a> structure.
 
 Call the 
-    <a href="netvista.ndisfreereassemblednetbufferlist">
+    <a href="..\ndis\nf-ndis-ndisfreereassemblednetbufferlist.md">
     NdisFreeReassembledNetBufferList</a> function to free a reassembled NET_BUFFER_LIST structure and all
     of the associated NET_BUFFER structures and MDL chains.
 
@@ -190,7 +191,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_netbuffer_function">Irql_NetBuffer_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547985">Irql_NetBuffer_Function</a>
 </td>
 </tr>
 </table>
@@ -198,29 +199,29 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisallocatenetbufferlistpool">
+<a href="..\ndis\nf-ndis-ndisallocatenetbufferlistpool.md">
    NdisAllocateNetBufferListPool</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreereassemblednetbufferlist">
+<a href="..\ndis\nf-ndis-ndisfreereassemblednetbufferlist.md">
    NdisFreeReassembledNetBufferList</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer">NET_BUFFER</a>
+<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list_context">NET_BUFFER_LIST_CONTEXT</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list_context.md">NET_BUFFER_LIST_CONTEXT</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list_pool_parameters">NET_BUFFER_LIST_POOL_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list_pool_parameters.md">NET_BUFFER_LIST_POOL_PARAMETERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisAllocateReassembledNetBufferList function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisAllocateReassembledNetBufferList function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

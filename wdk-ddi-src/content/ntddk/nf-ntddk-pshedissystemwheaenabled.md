@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PshedIsSystemWheaEnabled
+UID: NF:ntddk.PshedIsSystemWheaEnabled
 title: PshedIsSystemWheaEnabled function
 author: windows-driver-content
 description: The PshedIsSystemWheaEnabled function returns a Boolean value that indicates whether the system is WHEA-enabled.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Pshed.lib
 req.dll: Pshed.dll
 req.irql: Any
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PshedIsSystemWheaEnabled function
@@ -61,7 +62,7 @@ A Boolean value that indicates whether the system is WHEA-enabled.
 
 
 ## -remarks
-A PSHED plug-in can call the <b>PshedIsSystemWheaEnabled</b> function before it calls the <a href="whea.pshedregisterplugin">PshedRegisterPlugin</a> function to verify that the system is WHEA-enabled.
+A PSHED plug-in can call the <b>PshedIsSystemWheaEnabled</b> function before it calls the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function to verify that the system is WHEA-enabled.
 
 
 ## -requirements
@@ -136,7 +137,7 @@ Any
 ## -see-also
 <dl>
 <dt>
-<a href="whea.pshedregisterplugin">PshedRegisterPlugin</a>
+<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
 </dt>
 </dl>
  

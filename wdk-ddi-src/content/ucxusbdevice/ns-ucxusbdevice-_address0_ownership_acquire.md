@@ -1,14 +1,14 @@
 ---
-UID: NS.UCXUSBDEVICE._ADDRESS0_OWNERSHIP_ACQUIRE
+UID: NS:ucxusbdevice._ADDRESS0_OWNERSHIP_ACQUIRE
 title: _ADDRESS0_OWNERSHIP_ACQUIRE
 author: windows-driver-content
 description: Contains parameters for configuring the device.
 old-location: buses\_address0_ownership_acquire.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: D2FECBA5-21DF-411C-BBDB-968328E18C12
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _ADDRESS0_OWNERSHIP_ACQUIRE, PADDRESS0_OWNERSHIP_ACQUIRE, *PADDRESS0_OWNERSHIP_ACQUIRE, ADDRESS0_OWNERSHIP_ACQUIRE
+ms.date: 1/4/2018
+ms.keywords: _ADDRESS0_OWNERSHIP_ACQUIRE, *PADDRESS0_OWNERSHIP_ACQUIRE, ADDRESS0_OWNERSHIP_ACQUIRE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PADDRESS0_OWNERSHIP_ACQUIRE, ADDRESS0_OWNERSHIP_ACQUIRE
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ typedef struct _ADDRESS0_OWNERSHIP_ACQUIRE {
 
 ### -field Header
 
-A <a href="buses._usbdevice_mgmt_header">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
+A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
 
 
 ## -remarks

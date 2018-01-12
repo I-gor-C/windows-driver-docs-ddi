@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlCheckOplockEx~r5
+UID: NF:ntifs._FSRTL_ADVANCED_FCB_HEADER.FsRtlCheckOplockEx~r5
 title: FsRtlCheckOplockEx function
 author: windows-driver-content
 description: The FsRtlCheckOplockEx routine synchronizes the IRP for a file I/O operation with the current opportunistic lock (oplock) state of the file.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlcheckoplockex.htm
 old-project: ifsk
 ms.assetid: e06ae137-fbd8-47cc-8102-9fe21993f1ca
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlCheckOplockEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlCheckOplockEx function
@@ -60,7 +61,7 @@ NTSTATUS FsRtlCheckOplockEx(
 
 ### -param Oplock [in]
 
-A opaque opportunistic lock pointer for the file. This pointer must have been initialized by a previous call to <a href="ifsk.fsrtlinitializeoplock">FsRtlInitializeOplock</a>. 
+A opaque opportunistic lock pointer for the file. This pointer must have been initialized by a previous call to <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializeoplock.md">FsRtlInitializeOplock</a>. 
 
 
 ### -param Irp [in]
@@ -91,7 +92,7 @@ Specifies that <b>FsRtlCheckOplockEx</b> should only check for an opportunistic 
 
 Supported starting with Windows 7.
 
-Specifies that <b>FsRtlCheckOplockEx</b> should revert any state that was previously set up through a call to the <a href="ifsk.fsrtloplockfsctrl">FsRtlOplockFsctrl</a> routine. <b>FsRtlOplockFsctrl</b> is called during processing of an IRP_MJ_CREATE request that specifies the FILE_OPEN_REQUIRING_OPLOCK flag in the create options parameter. The OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK flag is typically used in final processing of such a create request when it previously failed. 
+Specifies that <b>FsRtlCheckOplockEx</b> should revert any state that was previously set up through a call to the <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl~r2.md">FsRtlOplockFsctrl</a> routine. <b>FsRtlOplockFsctrl</b> is called during processing of an IRP_MJ_CREATE request that specifies the FILE_OPEN_REQUIRING_OPLOCK flag in the create options parameter. The OPLOCK_FLAG_BACK_OUT_ATOMIC_OPLOCK flag is typically used in final processing of such a create request when it previously failed. 
 
 
 ### -param OPLOCK_FLAG_IGNORE_OPLOCK_KEYS (0x00000008)
@@ -250,7 +251,7 @@ IRP_MJ_WRITE
 
 For more information about opportunistic locks, see the Microsoft Windows SDK documentation. 
 
-Minifilters should call <a href="ifsk.fltcheckoplockex">FltCheckOplockEx</a> instead of <b>FsRtlCheckOplockEx</b>. 
+Minifilters should call <a href="..\fltkernel\nf-fltkernel-fltcheckoplockex.md">FltCheckOplockEx</a> instead of <b>FsRtlCheckOplockEx</b>. 
 
 
 ## -requirements
@@ -324,51 +325,51 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltcheckoplockex">FltCheckOplockEx</a>
+<a href="..\fltkernel\nf-fltkernel-fltcheckoplockex.md">FltCheckOplockEx</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_opbatch_ack_close_pending">FSCTL_OPBATCH_ACK_CLOSE_PENDING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545462">FSCTL_OPBATCH_ACK_CLOSE_PENDING</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_oplock_break_ack_no_2">FSCTL_OPLOCK_BREAK_ACK_NO_2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545476">FSCTL_OPLOCK_BREAK_ACK_NO_2</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_oplock_break_acknowledge">FSCTL_OPLOCK_BREAK_ACKNOWLEDGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545468">FSCTL_OPLOCK_BREAK_ACKNOWLEDGE</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_oplock_break_notify">FSCTL_OPLOCK_BREAK_NOTIFY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545485">FSCTL_OPLOCK_BREAK_NOTIFY</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_request_batch_oplock">FSCTL_REQUEST_BATCH_OPLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545510">FSCTL_REQUEST_BATCH_OPLOCK</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_request_filter_oplock">FSCTL_REQUEST_FILTER_OPLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545518">FSCTL_REQUEST_FILTER_OPLOCK</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_request_oplock_level_1">FSCTL_REQUEST_OPLOCK_LEVEL_1</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545538">FSCTL_REQUEST_OPLOCK_LEVEL_1</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_request_oplock_level_2">FSCTL_REQUEST_OPLOCK_LEVEL_2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545546">FSCTL_REQUEST_OPLOCK_LEVEL_2</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlcurrentbatchoplock">FsRtlCurrentBatchOplock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcurrentbatchoplock.md">FsRtlCurrentBatchOplock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlinitializeoplock">FsRtlInitializeOplock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializeoplock.md">FsRtlInitializeOplock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtloplockfsctrl">FsRtlOplockFsctrl</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockfsctrl~r2.md">FsRtlOplockFsctrl</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtloplockisfastiopossible">FsRtlOplockIsFastIoPossible</a>
+<a href="..\rxprocs\nf-rxprocs-fsrtloplockisfastiopossible.md">FsRtlOplockIsFastIoPossible</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtluninitializeoplock">FsRtlUninitializeOplock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtluninitializeoplock.md">FsRtlUninitializeOplock</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCheckOplockEx routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlCheckOplockEx routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

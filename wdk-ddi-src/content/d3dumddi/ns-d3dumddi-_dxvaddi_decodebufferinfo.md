@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._DXVADDI_DECODEBUFFERINFO
+UID: NS:d3dumddi._DXVADDI_DECODEBUFFERINFO
 title: _DXVADDI_DECODEBUFFERINFO
 author: windows-driver-content
 description: The DXVADDI_DECODEBUFFERINFO structure describes information about a particular type of compressed buffer that is required for a video decoding scenario.
@@ -7,7 +7,7 @@ old-location: display\dxvaddi_decodebufferinfo.htm
 old-project: display
 ms.assetid: e0a0ad31-86c1-44bd-b069-70442973a539
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVADDI_DECODEBUFFERINFO, DXVADDI_DECODEBUFFERINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVADDI_DECODEBUFFERINFO
 ---
 
 # _DXVADDI_DECODEBUFFERINFO structure
@@ -58,7 +59,7 @@ typedef struct _DXVADDI_DECODEBUFFERINFO {
 
 ### -field CompressedBufferType
 
-[out] A <a href="display.d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the buffer.
+[out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the buffer.
 
 
 ### -field CreationWidth
@@ -77,11 +78,11 @@ The driver must assign a value to <b>CreationHeight</b> that does not exceed 655
 
 ### -field CreationPool
 
-[out] A <a href="display.d3dddi_pool">D3DDDI_POOL</a>-typed value that indicates the type of memory that the buffer exists in.
+[out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>-typed value that indicates the type of memory that the buffer exists in.
 
 
 ## -remarks
-A pointer to the <a href="display.dxvaddi_decodeinput">DXVADDI_DECODEINPUT</a> structure is specified in the <b>pInfo</b> member of the <a href="display.d3dddiarg_getcaps">D3DDDIARG_GETCAPS</a> structure--along with a D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFO value in the <b>Type</b> member of D3DDDIARG_GETCAPS--in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function to retrieve information about the types of compressed buffers that are required to accelerate a particular DirectX VA video decode type. The information about the types of compressed buffers is returned in an array of DXVADDI_DECODEBUFFERINFO structures through the <b>pData</b> member of D3DDDIARG_GETCAPS.
+A pointer to the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodeinput.md">DXVADDI_DECODEINPUT</a> structure is specified in the <b>pInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> structure--along with a D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFO value in the <b>Type</b> member of D3DDDIARG_GETCAPS--in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function to retrieve information about the types of compressed buffers that are required to accelerate a particular DirectX VA video decode type. The information about the types of compressed buffers is returned in an array of DXVADDI_DECODEBUFFERINFO structures through the <b>pData</b> member of D3DDDIARG_GETCAPS.
 
 
 ## -requirements
@@ -112,13 +113,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddiarg_getcaps">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
 </dt>
 <dt>
-<a href="display.d3dddicaps_type">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
 </dt>
 <dt>
-<a href="display.dxvaddi_decodeinput">DXVADDI_DECODEINPUT</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodeinput.md">DXVADDI_DECODEINPUT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
@@ -128,5 +129,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_DECODEBUFFERINFO structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_DECODEBUFFERINFO structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

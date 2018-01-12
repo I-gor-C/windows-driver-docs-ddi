@@ -1,5 +1,5 @@
 ---
-UID: NF.srb.ScsiPortValidateRange
+UID: NF:srb.ScsiPortValidateRange
 title: ScsiPortValidateRange function
 author: windows-driver-content
 description: The ScsiPortValidateRange routine indicates whether the specified access range values have already been claimed in the registry by another driver.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
@@ -7,7 +7,7 @@ old-location: storage\scsiportvalidaterange.htm
 old-project: storage
 ms.assetid: a9ad58c2-16fc-410a-abc7-01c3f2354b88
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: ScsiPortValidateRange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Scsiport.lib
 req.dll: 
 req.irql: 
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ BOOLEAN ScsiPortValidateRange(
 
 ### -param HwDeviceExtension [in]
 
-Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="storage.scsiportinitialize">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. 
+Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device. 
 
 
 ### -param BusType [in]
@@ -94,7 +95,7 @@ Indicates when TRUE that the range is in I/O space, rather than in memory. When 
 
 
 ## -remarks
-<b>ScsiPortValidateRange </b>can be called only from a miniport driver's <a href="storage.hwscsifindadapter">HwScsiFindAdapter</a> routine. Calls from other miniport driver routines will result in system failure or incorrect operation for the caller.
+<b>ScsiPortValidateRange </b>can be called only from a miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a> routine. Calls from other miniport driver routines will result in system failure or incorrect operation for the caller.
 
 If the operating system-specific port driver initializes any <b>AccessRanges</b> element of the PORT_CONFIGURATION_INFORMATION structure before it calls the miniport driver's <i>HwScsiFindAdapter</i> routine, the miniport driver must pass the supplied values to <b>ScsiPortGetDeviceBase</b> and use the mapped logical addresses for the range to determine whether an HBA is one that it supports.
 
@@ -157,24 +158,24 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="storage.access_range">ACCESS_RANGE</a>
+<a href="..\srb\ns-srb-_access_range.md">ACCESS_RANGE</a>
 </dt>
 <dt>
-<a href="storage.hwscsifindadapter">HwScsiFindAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
 </dt>
 <dt>
-<a href="storage.port_configuration_information__scsi_">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 </dt>
 <dt>
-<a href="storage.scsiportgetdevicebase">ScsiPortGetDeviceBase</a>
+<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
 </dt>
 <dt>
-<a href="storage.scsiportinitialize">ScsiPortInitialize</a>
+<a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortValidateRange routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20ScsiPortValidateRange routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

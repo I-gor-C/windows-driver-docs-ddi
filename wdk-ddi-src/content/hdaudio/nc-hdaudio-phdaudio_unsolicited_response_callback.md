@@ -1,5 +1,5 @@
 ---
-UID: NC.hdaudio.PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK
+UID: NC:hdaudio.PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK
 title: PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK
 author: windows-driver-content
 description: HDAudio codec unsolicited response callback function. PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK is used by the PREGISTER_EVENT_CALLBACK callback function.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: B98F669D-D0DE-4FF2-903C-D51E0FEEE840
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 # PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK callback
@@ -61,7 +62,7 @@ typedef PHDAUDIO_UNSOLICITED_RESPONSE_CALLBACK HDAudioUnsolicitedResponseCallbac
 
 ### -param HDAudioCodecResponse 
 
-This is a structure of type <a href="audio.hdaudio_codec_response">HDAUDIO_CODEC_RESPONSE</a> that specifies the codec's response to the command. This structure is passed by value.  
+This is a structure of type <a href="..\hdaudio\ns-hdaudio-_hdaudio_codec_response.md">HDAUDIO_CODEC_RESPONSE</a> that specifies the codec's response to the command. This structure is passed by value.  
 
 
 ### -param Context 

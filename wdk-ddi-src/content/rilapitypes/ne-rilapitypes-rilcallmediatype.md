@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILCALLMEDIATYPE
+UID: NE:rilapitypes.RILCALLMEDIATYPE
 title: RILCALLMEDIATYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmediatype_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: f4ecaf9a-1d8d-4a56-afa0-b893eb0c4c62
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILCALLMEDIATYPE, RILCALLMEDIATYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLMEDIATYPE
 req.product: Windows 10 or later.
 ---
 

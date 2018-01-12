@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS
+UID: NS:d3d10umddi.D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS
 title: D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS
 author: windows-driver-content
 description: Specifies the protection level for video content.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_authenticated_protection_flags.htm
 old-project: display
 ms.assetid: 687eb573-ea7c-4e8a-80df-65339521ec18
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS, D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS
 ---
 
 # D3D11_1DDI_AUTHENTICATED_PROTECTION_FLAGS structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSER._SERIAL_BAUD_RATE
+UID: NS:ntddser._SERIAL_BAUD_RATE
 title: _SERIAL_BAUD_RATE
 author: windows-driver-content
 description: The SERIAL_BAUD_RATE structure specifies the baud rate at which a serial port is currently configured to transmit and receive data.
@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 1534B7AC-8968-4AE2-A871-D8F4D4E45CA1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SERIAL_BAUD_RATE, *PSERIAL_BAUD_RATE, SERIAL_BAUD_RATE, PSERIAL_BAUD_RATE
+ms.keywords: _SERIAL_BAUD_RATE, SERIAL_BAUD_RATE, *PSERIAL_BAUD_RATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SERIAL_BAUD_RATE, *PSERIAL_BAUD_RATE
 ---
 
 # _SERIAL_BAUD_RATE structure
@@ -61,7 +62,7 @@ The baud rate. This parameter specifies the number of bits per second that a ser
 ## -remarks
 The <a href="..\ntddser\ni-ntddser-ioctl_serial_get_baud_rate.md">IOCTL_SERIAL_GET_BAUD_RATE</a> and <a href="..\ntddser\ni-ntddser-ioctl_serial_set_baud_rate.md">IOCTL_SERIAL_SET_BAUD_RATE</a> I/O control requests use the <b>SERIAL_BAUD_RATE</b> structure to specify the baud rate of a serial port. The <b>IOCTL_SERIAL_SET_BAUD_RATE</b> request configures a serial port to operate at a specified baud rate. The <b>IOCTL_SERIAL_GET_BAUD_RATE</b> request queries a serial port for the baud rate that it is currently configured to operate at.
 
-For more information about some of the possible baud rates that a serial controller driver might support, see the description of the <b>MaxBaud</b> member in <a href="serports.serial_commprop">SERIAL_COMMPROP</a>.
+For more information about some of the possible baud rates that a serial controller driver might support, see the description of the <b>MaxBaud</b> member in <a href="..\ntddser\ns-ntddser-_serial_commprop.md">SERIAL_COMMPROP</a>.
 
 
 ## -requirements
@@ -98,7 +99,7 @@ Header
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_baud_rate.md">IOCTL_SERIAL_SET_BAUD_RATE</a>
 </dt>
 <dt>
-<a href="serports.serial_commprop">SERIAL_COMMPROP</a>
+<a href="..\ntddser\ns-ntddser-_serial_commprop.md">SERIAL_COMMPROP</a>
 </dt>
 </dl>
  

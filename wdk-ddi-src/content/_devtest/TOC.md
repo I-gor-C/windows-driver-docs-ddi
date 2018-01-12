@@ -7,7 +7,6 @@
 ### [DbgBreakPointWithStatus function](../wdm/nf-wdm-dbgbreakpointwithstatus.md)
 ### [DbgPrint function](../wdm/nf-wdm-dbgprint.md)
 ### [DbgPrintEx function](../wdm/nf-wdm-dbgprintex.md)
-### [ETWENABLECALLBACK callback](../wdm/nc-wdm-etwenablecallback.md)
 ### [EtwActivityIdControl function](../wdm/nf-wdm-etwactivityidcontrol.md)
 ### [EtwEventEnabled function](../wdm/nf-wdm-etweventenabled.md)
 ### [EtwProviderEnabled function](../wdm/nf-wdm-etwproviderenabled.md)

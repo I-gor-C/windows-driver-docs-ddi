@@ -1,5 +1,5 @@
 ---
-UID: NS.UFS.UFS_DEVICE_HEALTH_DESCRIPTOR
+UID: NS:ufs.UFS_DEVICE_HEALTH_DESCRIPTOR
 title: UFS_DEVICE_HEALTH_DESCRIPTOR
 author: windows-driver-content
 description: The UFS_DEVICE_HEALTH_DESCRIPTOR structure describes the health of a device.
@@ -7,8 +7,8 @@ old-location: storage\ufs_device_health_descriptor.htm
 old-project: storage
 ms.assetid: 6B085DBB-2AAA-4170-A2B1-EA4D2C207A24
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: UFS_DEVICE_HEALTH_DESCRIPTOR, UFS_DEVICE_HEALTH_DESCRIPTOR, *PUFS_DEVICE_HEALTH_DESCRIPTOR, PUFS_DEVICE_HEALTH_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: UFS_DEVICE_HEALTH_DESCRIPTOR, *PUFS_DEVICE_HEALTH_DESCRIPTOR, UFS_DEVICE_HEALTH_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PUFS_DEVICE_HEALTH_DESCRIPTOR, UFS_DEVICE_HEALTH_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 

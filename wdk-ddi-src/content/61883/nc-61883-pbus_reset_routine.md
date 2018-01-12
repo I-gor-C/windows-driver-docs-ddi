@@ -1,5 +1,5 @@
 ---
-UID: NC.61883.PBUS_RESET_ROUTINE
+UID: NC:61883.PBUS_RESET_ROUTINE
 title: PBUS_RESET_ROUTINE
 author: windows-driver-content
 description: This is a caller-supplied function to be called by the protocol driver when the 1394 bus is reset.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 99555765-A58F-45A1-B146-3742C390E666
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _TOPOLOGY_MAP, *PTOPOLOGY_MAP, TOPOLOGY_MAP, PTOPOLOGY_MAP
+ms.keywords: _TOPOLOGY_MAP, *PTOPOLOGY_MAP, TOPOLOGY_MAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PTOPOLOGY_MAP, TOPOLOGY_MAP
 ---
 
 # PBUS_RESET_ROUTINE callback

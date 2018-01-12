@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSCOMPLETION_INVOCATION
+UID: NE:ks.KSCOMPLETION_INVOCATION
 title: KSCOMPLETION_INVOCATION
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\kscompletion_invocation.htm
 old-project: stream
 ms.assetid: 2BD1A2F8-BAA2-40A3-9C97-667780A6F395
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSCOMPLETION_INVOCATION, KSCOMPLETION_INVOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSCOMPLETION_INVOCATION
 ---
 
 # KSCOMPLETION_INVOCATION enumeration

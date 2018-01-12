@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMDownloadCharGlyph
+UID: NF:printoem.OEMDownloadCharGlyph
 title: OEMDownloadCharGlyph function
 author: windows-driver-content
 description: OEMDownloadCharGlyph function
@@ -7,7 +7,7 @@ old-location: print\oemdownloadcharglyph.htm
 old-project: print
 ms.assetid: da9a4058-1a0e-484b-afcd-9d4558810acd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMDownloadCharGlyph
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

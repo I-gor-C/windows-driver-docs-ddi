@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTGetContextInProcessSchedulingPriority
+UID: NF:d3dkmthk.D3DKMTGetContextInProcessSchedulingPriority
 title: D3DKMTGetContextInProcessSchedulingPriority function
 author: windows-driver-content
 description: Called by an in-process (in-proc) Microsoft Direct3D composition device to retrieve the scheduling priority for a device context that is in the same process as other device contexts.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtgetcontextinprocessschedulingpriority.htm
 old-project: display
 ms.assetid: e2a662b6-6a16-4e63-b5a8-5701a7180f60
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTGetContextInProcessSchedulingPriority
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTGetContextInProcessSchedulingPriority function
@@ -55,7 +56,7 @@ _Check_return_ NTSTATUS APIENTRY D3DKMTGetContextInProcessSchedulingPriority(
 
 ### -param pContextPriority [in, out]
 
-A pointer to a <a href="display.d3dkmt_getcontextinprocessschedulingpriority">D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY</a> structure that describes information that is required to retrieve the scheduling priority for a device context.
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getcontextinprocessschedulingpriority.md">D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY</a> structure that describes information that is required to retrieve the scheduling priority for a device context.
 
 
 ## -returns
@@ -124,15 +125,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_getcontextinprocessschedulingpriority">D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getcontextinprocessschedulingpriority.md">D3DKMT_GETCONTEXTINPROCESSSCHEDULINGPRIORITY</a>
 </dt>
 <dt>
-<a href="display.d3dkmtsetcontextinprocessschedulingpriority">D3DKMTSetContextInProcessSchedulingPriority</a>
+<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetcontextinprocessschedulingpriority.md">D3DKMTSetContextInProcessSchedulingPriority</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTGetContextInProcessSchedulingPriority function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTGetContextInProcessSchedulingPriority function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

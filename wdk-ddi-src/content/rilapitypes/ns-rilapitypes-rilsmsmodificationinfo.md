@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILSMSMODIFICATIONINFO
+UID: NS:rilapitypes.RILSMSMODIFICATIONINFO
 title: RILSMSMODIFICATIONINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsmsmodificationinfo_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 64e5ea3d-a002-45df-b3ad-c8f723cbe54d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO, *LPRILSMSMODIFICATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSMSMODIFICATIONINFO, *LPRILSMSMODIFICATIONINFO
 req.product: Windows 10 or later.
 ---
 

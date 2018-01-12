@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
+UID: NE:d3dkmdt._D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
 title: _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
 author: windows-driver-content
 description: The D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration is used to indicate the type of constraint under which a monitor frequency range is supported.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_monitor_frequency_range_constraint.htm
 old-project: display
 ms.assetid: 12bf26fc-86c2-4b9b-82d4-1e8b2e38fa79
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT, D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
 ---
 
 # _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration
@@ -71,7 +72,7 @@ Indicates that the constraint is a pixel rate.
 
 
 ## -remarks
-The <b>ConstraintType</b> member of a <a href="display.d3dkmdt_monitor_frequency_range">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a value from the D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration.
+The <b>ConstraintType</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_frequency_range.md">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a value from the D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration.
 
 
 ## -requirements

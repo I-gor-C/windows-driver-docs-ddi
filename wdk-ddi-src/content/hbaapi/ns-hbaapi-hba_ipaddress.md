@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAAPI.HBA_IPADDRESS
+UID: NS:hbaapi.HBA_ipaddress
 title: HBA_ipaddress
 author: windows-driver-content
 description: The HBA_ipaddress structure specifies an IP address in a way that is independent of the version of the IP protocol in use.
@@ -7,8 +7,8 @@ old-location: storage\hba_ipaddress.htm
 old-project: storage
 ms.assetid: c3f79350-29e8-4e31-a31d-359c9781777d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: HBA_ipaddress, HBA_IPADDRESS, *PHBA_IPADDRESS, PHBA_IPADDRESS
+ms.date: 1/10/2018
+ms.keywords: HBA_ipaddress, HBA_IPADDRESS, *PHBA_IPADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HBA_IPADDRESS, *PHBA_IPADDRESS
 ---
 
 # HBA_ipaddress structure

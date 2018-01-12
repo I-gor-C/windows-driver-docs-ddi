@@ -1,5 +1,5 @@
 ---
-UID: NE.bthddi._SCO_RETRANSMISSION_EFFORT
+UID: NE:bthddi._SCO_RETRANSMISSION_EFFORT
 title: _SCO_RETRANSMISSION_EFFORT
 author: windows-driver-content
 description: The SCO_RETRANSMISSION_EFFORT enumeration type is used to determine the retransmission policies of a SCO channel.
@@ -7,8 +7,8 @@ old-location: bltooth\sco_retransmission_effort.htm
 old-project: bltooth
 ms.assetid: bf466384-bf13-42cc-a02d-ef880cac4c02
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SCO_RETRANSMISSION_EFFORT, PSCO_RETRANSMISSION_EFFORT, SCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT
+ms.date: 12/21/2017
+ms.keywords: _SCO_RETRANSMISSION_EFFORT, SCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: SCO_RETRANSMISSION_EFFORT, *PSCO_RETRANSMISSION_EFFORT
 ---
 
 # _SCO_RETRANSMISSION_EFFORT enumeration

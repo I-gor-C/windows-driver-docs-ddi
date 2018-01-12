@@ -1,13 +1,13 @@
 ---
-UID: NF.ucxsstreams.UcxStaticStreamsCreate
+UID: NF:ucxsstreams.UcxStaticStreamsCreate
 title: UcxStaticStreamsCreate function
 author: windows-driver-content
 description: Creates a static streams object.
 old-location: buses\_ucxstaticstreamscreate.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: F7AA10E3-5F56-4751-A603-54A0BFB00927
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UcxStaticStreamsCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ NTSTATUS UcxStaticStreamsCreate(
 
 ### -param Endpoint [in]
 
-A handle to the endpoint object that supports static streams. The client driver retrieved the handle in a previous call to <a href="buses._ucxendpointcreate">UcxEndpointCreate</a>.
+A handle to the endpoint object that supports static streams. The client driver retrieved the handle in a previous call to <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>.
 
 
 ### -param SStreamsInit [out]
@@ -71,7 +72,7 @@ A pointer to a <b>UCXSSTREAMS_INIT</b> structure that describes various configur
 
 ### -param Attributes [in, optional]
 
-A pointer to a caller-allocated <a href="wdf.wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the stream object. 
+A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the stream object. 
 
 
 ### -param SStreams [out]
@@ -84,7 +85,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 
 ## -remarks
-The client driver for the host controller must call this method after the <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a> call. The parent of the new endpoint object is the endpoint object. 
+The client driver for the host controller must call this method after the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. The parent of the new endpoint object is the endpoint object. 
 
 Typically, the client driver calls this method in its implementation of the <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_endpoint_add.md">EVT_UCX_USBDEVICE_ENDPOINT_ADD</a> event callback. 
 

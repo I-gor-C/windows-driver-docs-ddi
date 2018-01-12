@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILMESSAGEPARAMMASK
+UID: NE:rilapitypes.RILMESSAGEPARAMMASK
 title: RILMESSAGEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessageparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1c20e35b-3589-46a5-8155-c35206d5e6c0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMESSAGEPARAMMASK, RILMESSAGEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMESSAGEPARAMMASK
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.BTHHFPDDI._BTHHFP_DESCRIPTOR2
+UID: NS:bthhfpddi._BTHHFP_DESCRIPTOR2
 title: _BTHHFP_DESCRIPTOR2
 author: windows-driver-content
 description: The BTHHFP_DESCRIPTOR2 data structure stores information describing a paired Handsfree profile (HFP) device.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: A455F181-E1DB-47CC-96E5-AE72988366F3
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _BTHHFP_DESCRIPTOR2, PBTHHFP_DESCRIPTOR2, *PBTHHFP_DESCRIPTOR2, BTHHFP_DESCRIPTOR2
+ms.keywords: _BTHHFP_DESCRIPTOR2, *PBTHHFP_DESCRIPTOR2, BTHHFP_DESCRIPTOR2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBTHHFP_DESCRIPTOR2, BTHHFP_DESCRIPTOR2
 ---
 
 # _BTHHFP_DESCRIPTOR2 structure
@@ -142,10 +143,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.bluetooth_hfp_ddi_ioctls">Bluetooth HFP DDI IOCTLs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
 </dt>
 <dt>
-<a href="audio.bluetooth_hfp_ddi_structures">Bluetooth HFP DDI Structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302029">Bluetooth HFP DDI Structures</a>
 </dt>
 <dt>
 <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor2.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2</a>

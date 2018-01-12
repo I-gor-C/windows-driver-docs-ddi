@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.RtlInitUnicodeString
+UID: NF:wdm.RtlInitUnicodeString
 title: RtlInitUnicodeString function
 author: windows-driver-content
 description: For more information, see the WdmlibRtlInitUnicodeStringEx function.
@@ -7,7 +7,7 @@ old-location: kernel\rtlinitunicodestring.htm
 old-project: kernel
 ms.assetid: c6ef7438-36a6-4da6-b745-2985d9b30614
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlInitUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: For more information, see  the Remarks section of the WdmlibRtlInitUnicodeStringEx  function.
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-For more information, see  the <a href="kernel.wdmlibrtlinitunicodestringex">WdmlibRtlInitUnicodeStringEx</a> function.
+For more information, see  the <a href="..\wdmsec\nf-wdmsec-wdmlibrtlinitunicodestringex.md">WdmlibRtlInitUnicodeStringEx</a> function.
 
 
 
@@ -57,16 +58,16 @@ VOID RtlInitUnicodeString(
 
 ### -param DestinationString [out]
 
-For more information, see  the <a href="kernel.wdmlibrtlinitunicodestringex">WdmlibRtlInitUnicodeStringEx</a> function.
+For more information, see  the <a href="..\wdmsec\nf-wdmsec-wdmlibrtlinitunicodestringex.md">WdmlibRtlInitUnicodeStringEx</a> function.
 
 
 ### -param SourceString [in, optional]
 
-For more information, see  the <a href="kernel.wdmlibrtlinitunicodestringex">WdmlibRtlInitUnicodeStringEx</a> function.
+For more information, see  the <a href="..\wdmsec\nf-wdmsec-wdmlibrtlinitunicodestringex.md">WdmlibRtlInitUnicodeStringEx</a> function.
 
 
 ## -returns
-For more information, see  the <a href="kernel.wdmlibrtlinitunicodestringex">WdmlibRtlInitUnicodeStringEx</a> function.
+For more information, see  the <a href="..\wdmsec\nf-wdmsec-wdmlibrtlinitunicodestringex.md">WdmlibRtlInitUnicodeStringEx</a> function.
 
 
 ## -remarks
@@ -88,7 +89,7 @@ Pointer to a null-terminated string to initialize the counted string with.
 
 <b>RTL_CONSTANT_STRING</b> returns either a string structure or Unicode string structure.
 
-The <b>RTL_CONSTANT_STRING</b> macro replaces the <a href="kernel.rtlinitansistring">RtlInitAnsiString</a>, <a href="kernel.rtlinitstring">RtlInitString</a>, and <b>RtlInitUnicodeString</b> routines when passing a constant string.
+The <b>RTL_CONSTANT_STRING</b> macro replaces the <a href="..\wdm\nf-wdm-rtlinitansistring.md">RtlInitAnsiString</a>, <a href="..\wdm\nf-wdm-rtlinitstring.md">RtlInitString</a>, and <b>RtlInitUnicodeString</b> routines when passing a constant string.
 
 You can use <b>RTL_CONSTANT_STRING</b> to initialize global variables.
 
@@ -164,21 +165,21 @@ For more information, see  the Remarks section of the WdmlibRtlInitUnicodeString
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.rtlunicodestringinit">RtlUnicodeStringInit</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringinit.md">RtlUnicodeStringInit</a>
 </dt>
 <dt>
-<a href="kernel.rtlunicodestringinitex">RtlUnicodeStringInitEx</a>
+<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringinitex.md">RtlUnicodeStringInitEx</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 <dt>
-<a href="kernel.wdmlibrtlinitunicodestringex">WdmlibRtlInitUnicodeStringEx</a>
+<a href="..\wdmsec\nf-wdmsec-wdmlibrtlinitunicodestringex.md">WdmlibRtlInitUnicodeStringEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlInitUnicodeString routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlInitUnicodeString routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

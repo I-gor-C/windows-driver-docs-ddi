@@ -1,5 +1,5 @@
 ---
-UID: NF.hwnclx.HwNProcessAddDevicePostDeviceCreate
+UID: NF:hwnclx.HwNProcessAddDevicePostDeviceCreate
 title: HwNProcessAddDevicePostDeviceCreate function
 author: windows-driver-content
 description: Creates I/O queues. It should be called after the client driver’s EVT_WDF_DRIVER_DEVICE_ADD callback function is invoked and the device object has been created.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Mshwnclxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
 ---
 
 # HwNProcessAddDevicePostDeviceCreate function
@@ -139,7 +140,7 @@ PASSIVE_LEVEL
 <dl>
 <dt><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a></dt>
 <dt>
-<a href="gpiobtn.hardware_notifications_reference">Hardware notifications reference</a>
+<a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
 </dt>
 </dl>
  

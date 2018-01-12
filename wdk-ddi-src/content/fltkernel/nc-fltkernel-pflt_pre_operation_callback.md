@@ -1,5 +1,5 @@
 ---
-UID: NC.fltkernel.PFLT_PRE_OPERATION_CALLBACK
+UID: NC:fltkernel.PFLT_PRE_OPERATION_CALLBACK
 title: PFLT_PRE_OPERATION_CALLBACK
 author: windows-driver-content
 description: A minifilter driver's PFLT_PRE_OPERATION_CALLBACK routine performs pre-operation processing for I/O operations.
@@ -7,7 +7,7 @@ old-location: ifsk\pflt_pre_operation_callback.htm
 old-project: ifsk
 ms.assetid: 758a480a-b52c-45e4-8c78-74c805c61e07
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IXpsPartIterator, IXpsPartIterator::Reset, Reset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: EXpsFontRestriction
 ---
 
 # PFLT_PRE_OPERATION_CALLBACK callback
@@ -57,12 +58,12 @@ typedef FLT_PREOP_CALLBACK_STATUS ( *PFLT_PRE_OPERATION_CALLBACK)(
 
 ### -param Data [in, out]
 
-A pointer to the callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the I/O operation. 
+A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. 
 
 
 ### -param FltObjects [in]
 
-A pointer to an <a href="ifsk.flt_related_objects">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current I/O request. 
+A pointer to an <a href="..\fltkernel\ns-fltkernel-_flt_related_objects.md">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current I/O request. 
 
 
 ### -param CompletionContext [out]
@@ -80,7 +81,7 @@ This callback routine returns one of the following FLT_PREOP_CALLBACK_STATUS val
 </dl>The operation is a fast I/O operation, and the minifilter driver is not allowing the fast I/O path to be used for this operation. The filter manager does not send the fast I/O operation to any minifilter drivers below the caller in the driver stack or to the file system. In this case, the filter manager only calls the post-operation callback routines of the minifilter drivers above the caller in the driver stack. 
 <dl>
 <dt><b>FLT_PREOP_PENDING</b></dt>
-</dl>The minifilter driver has pended the I/O operation, and the operation is still pending. The filter manager does not process the I/O operation further until the minifilter driver calls <a href="ifsk.fltcompletependedpreoperation">FltCompletePendedPreOperation</a>. 
+</dl>The minifilter driver has pended the I/O operation, and the operation is still pending. The filter manager does not process the I/O operation further until the minifilter driver calls <a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a>. 
 <dl>
 <dt><b>FLT_PREOP_SUCCESS_NO_CALLBACK</b></dt>
 </dl>The minifilter driver is returning the I/O operation to the filter manager for further processing. In this case, the filter manager does not call the minifilter driver's post-operation callback, if one exists, during I/O completion. 
@@ -97,13 +98,13 @@ This callback routine returns one of the following FLT_PREOP_CALLBACK_STATUS val
 ## -remarks
 A minifilter driver's pre-operation callback routine processes one or more types of I/O operations. This callback routine is similar to a dispatch routine in the legacy filter model. 
 
-A minifilter driver registers a pre-operation callback routine for a particular type of I/O operation by storing the callback routine's entry point in the <b>OperationRegistration</b> array of the <a href="ifsk.flt_registration">FLT_REGISTRATION</a> structure. The minifilter driver passes this structure as a parameter to <a href="ifsk.fltregisterfilter">FltRegisterFilter</a> in its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. A minifilter driver can register a pre-operation callback routine for a given type of I/O operation without registering a post-operation callback (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) routine and vice versa. 
+A minifilter driver registers a pre-operation callback routine for a particular type of I/O operation by storing the callback routine's entry point in the <b>OperationRegistration</b> array of the <a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a> structure. The minifilter driver passes this structure as a parameter to <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a> in its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. A minifilter driver can register a pre-operation callback routine for a given type of I/O operation without registering a post-operation callback (<a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>) routine and vice versa. 
 
 If this routine returns FLT_PREOP_COMPLETE, it must set the callback data structure's <b>IoStatus.Status</b> field to the final NTSTATUS value for the I/O operation. This NTSTATUS value cannot be STATUS_PENDING. For a cleanup or close operation, it must be a success NTSTATUS value other than STATUS_PENDING because cleanup and close operations cannot fail. 
 
 If this routine returns FLT_PREOP_DISALLOW_FASTIO, it should not set the callback data structure's <b>IoStatus.Status</b> field because the filter manager automatically sets this field to STATUS_FLT_DISALLOW_FAST_IO. 
 
-FLT_PREOP_DISALLOW_FASTIO can only be returned for a fast I/O operation. To determine whether a given callback data structure represents a fast I/O operation, use the <a href="ifsk.flt_is_fastio_operation">FLT_IS_FASTIO_OPERATION</a> macro. 
+FLT_PREOP_DISALLOW_FASTIO can only be returned for a fast I/O operation. To determine whether a given callback data structure represents a fast I/O operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a> macro. 
 
 FLT_PREOP_PENDING can only be returned for IRP-based I/O operations because only IRP-based I/O operations can be pended. To determine whether a given callback data structure represents an IRP-based I/O operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a> macro. 
 
@@ -115,7 +116,7 @@ Minifilter drivers should not return FLT_PREOP_SYNCHRONIZE for create operations
 
 Minifilter drivers must never return FLT_PREOP_SYNCHRONIZE for asynchronous read and write operations. Doing so can severely degrade both minifilter driver and system performance. 
 
-A minifilter driver's pre-operation or post-operation callback routine can modify the contents of the callback data structure for the operation. If it does, it must then call <a href="ifsk.fltsetcallbackdatadirty">FltSetCallbackDataDirty</a>, unless it has changed the contents of the callback data structure's <b>IoStatus</b> field. 
+A minifilter driver's pre-operation or post-operation callback routine can modify the contents of the callback data structure for the operation. If it does, it must then call <a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>, unless it has changed the contents of the callback data structure's <b>IoStatus</b> field. 
 
 The IRQL for this generic callback routine depends on its specific IO paths.
 
@@ -176,13 +177,13 @@ See Remarks section
 <a href="https://msdn.microsoft.com/C3B285EA-0DAB-48D4-AE2F-CB4FBB30EF15">_Flt_CompletionContext_Outptr_</a>
 </dt>
 <dt>
-<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="ifsk.flt_io_parameter_block">FLT_IO_PARAMETER_BLOCK</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a>
 </dt>
 <dt>
-<a href="ifsk.flt_is_fastio_operation">FLT_IS_FASTIO_OPERATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
@@ -194,25 +195,25 @@ See Remarks section
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544663">FLT_IS_SYSTEM_BUFFER</a>
 </dt>
 <dt>
-<a href="ifsk.flt_registration">FLT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_registration.md">FLT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="ifsk.flt_related_objects">FLT_RELATED_OBJECTS</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_related_objects.md">FLT_RELATED_OBJECTS</a>
 </dt>
 <dt>
-<a href="ifsk.fltcompletependedpostoperation">FltCompletePendedPostOperation</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpostoperation.md">FltCompletePendedPostOperation</a>
 </dt>
 <dt>
-<a href="ifsk.fltcompletependedpreoperation">FltCompletePendedPreOperation</a>
+<a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a>
 </dt>
 <dt>
-<a href="ifsk.fltqueuedeferredioworkitem">FltQueueDeferredIoWorkItem</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueuedeferredioworkitem.md">FltQueueDeferredIoWorkItem</a>
 </dt>
 <dt>
-<a href="ifsk.fltregisterfilter">FltRegisterFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetcallbackdatadirty">FltSetCallbackDataDirty</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>
@@ -222,5 +223,5 @@ See Remarks section
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_PRE_OPERATION_CALLBACK function pointer%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PFLT_PRE_OPERATION_CALLBACK function pointer%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

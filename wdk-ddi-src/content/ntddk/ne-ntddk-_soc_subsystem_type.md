@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddk._SOC_SUBSYSTEM_TYPE
+UID: NE:ntddk._SOC_SUBSYSTEM_TYPE
 title: _SOC_SUBSYSTEM_TYPE
 author: windows-driver-content
 description: The SOC_SYBSYSTEM_TYPE enumeration defines different types of System on a Chip (SoC) subsystems.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 179D61E3-C2EE-4821-93F8-DB763892DD3D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SOC_SUBSYSTEM_TYPE, PSOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE, *PSOC_SUBSYSTEM_TYPE
+ms.keywords: _SOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE, *PSOC_SUBSYSTEM_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SOC_SUBSYSTEM_TYPE, *PSOC_SUBSYSTEM_TYPE
 ---
 
 # _SOC_SUBSYSTEM_TYPE enumeration
@@ -40,7 +41,7 @@ req.irql:
 ## -description
 The <b>SOC_SYBSYSTEM_TYPE</b> enumeration defines different types of System on a Chip (SoC) subsystems.
 
-The <b>SybsysType</b> member of the <a href="whea.soc_subsystem_failure_details">SOC_SUBSYSTEM_FAILURE_DETAILS</a> structure is a value from this enumeration. The <b>SOC_SUBSYSTEM_FAILURE_DETAILS</b> structure is used by these bug codes:
+The <b>SybsysType</b> member of the <a href="..\ntddk\ns-ntddk-_soc_subsystem_failure_details.md">SOC_SUBSYSTEM_FAILURE_DETAILS</a> structure is a value from this enumeration. The <b>SOC_SUBSYSTEM_FAILURE_DETAILS</b> structure is used by these bug codes:
 
 
 

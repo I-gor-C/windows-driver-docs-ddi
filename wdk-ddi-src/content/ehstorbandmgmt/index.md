@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ehstorbandmgmt
 ---
 
 # Ehstorbandmgmt.h header

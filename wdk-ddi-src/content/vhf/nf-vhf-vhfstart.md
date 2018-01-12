@@ -1,5 +1,5 @@
 ---
-UID: NF.vhf.VhfStart
+UID: NF:vhf.VhfStart
 title: VhfStart function
 author: windows-driver-content
 description: The HID source driver calls this method to start the virtual HID device.
@@ -7,7 +7,7 @@ old-location: hid\vhfstart.htm
 old-project: hid
 ms.assetid: F3DA4CBB-5749-4E7D-828F-398714575173
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: VhfStart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: VhfKm.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ NTSTATUS VhfStart(
 
 ### -param VhfHandle [in]
 
-A handle to a virtual HID device that your HID source driver received in the previous call to <a href="hid.vhfcreate">VhfCreate</a>.
+A handle to a virtual HID device that your HID source driver received in the previous call to <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a>.
 
 
 ## -returns

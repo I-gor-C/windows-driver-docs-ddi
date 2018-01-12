@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES
+UID: NS:ndis._NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES
 title: _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES
 author: windows-driver-content
 description: An NDIS miniport driver sets up an NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES structure to define the general miniport driver attributes that are associated with a miniport adapter.
 old-location: netvista\ndis_miniport_adapter_general_attributes.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5423d073-02a5-468b-b91e-713ac67a5253
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES, PNDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES
+ms.date: 1/8/2018
+ms.keywords: _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES
 ---
 
 # _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES structure
@@ -91,7 +92,7 @@ typedef struct _NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</b>.
@@ -131,7 +132,7 @@ Reserved for NDIS.
 
 The 
      <b>NdisMedium<i>Xxx</i></b> type that the miniport adapter supports. For more information, see 
-     <a href="netvista.ndis_medium">NDIS_MEDIUM</a>.
+     <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>.
 
 
 ### -field PhysicalMediumType
@@ -251,21 +252,21 @@ The receive side scaling (RSS) capabilities of the NIC. If the miniport adapter 
 ### -field AccessType
 
 A 
-     <a href="netvista.net_if_access_type">NET_IF_ACCESS_TYPE</a> NDIS network interface
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a> NDIS network interface
      access type.
 
 
 ### -field DirectionType
 
 A 
-     <a href="netvista.net_if_direction_type">NET_IF_DIRECTION_TYPE</a> NDIS network
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a> NDIS network
      interface direction type.
 
 
 ### -field ConnectionType
 
 A 
-     <a href="netvista.net_if_connection_type">NET_IF_CONNECTION_TYPE</a> NDIS network
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a> NDIS network
      interface connection type.
 
 
@@ -503,7 +504,7 @@ The adapter has auto-negotiated the pause functions with the link partner.
 ### -field PowerManagementCapabilitiesEx
 
 A pointer to an 
-     <a href="netvista.ndis_pm_capabilities">NDIS_PM_CAPABILITIES</a> structure. This
+     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_capabilities.md">NDIS_PM_CAPABILITIES</a> structure. This
      structure specifies power management capabilities of the miniport adapter. This member is mandatory for
      NDIS 6.20 and later drivers.
 
@@ -511,13 +512,13 @@ A pointer to an
 ## -remarks
 A miniport driver passes a pointer to an NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES structure in the 
     <i>MiniportAttributes</i> parameter of the 
-    <a href="netvista.ndismsetminiportattributes">
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
     NdisMSetMiniportAttributes</a> function. A miniport driver calls 
     <b>NdisMSetMiniportAttributes</b> from its 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function
     during initialization. Miniport drivers should set the these attributes after they set the registration
     attributes in the 
-    <a href="netvista.ndis_miniport_adapter_registration_attributes">
+    <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_registration_attributes.md">
     NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure and before they set any other attributes.
     Setting these attribute is mandatory. 
 
@@ -553,32 +554,32 @@ Header
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_medium">NDIS_MEDIUM</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_adapter_registration_attributes">
+<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_registration_attributes.md">
    NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_pm_capabilities">NDIS_PM_CAPABILITIES</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_pm_capabilities.md">NDIS_PM_CAPABILITIES</a>
 </dt>
 <dt>
 <a href="netvista.oid_gen_statistics">NDIS_STATISTICS_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
-<a href="netvista.net_if_access_type">NET_IF_ACCESS_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568739">NET_IF_ACCESS_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.net_if_connection_type">NET_IF_CONNECTION_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568741">NET_IF_CONNECTION_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.net_if_direction_type">NET_IF_DIRECTION_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569069">OID_802_3_CURRENT_ADDRESS</a>
@@ -631,5 +632,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

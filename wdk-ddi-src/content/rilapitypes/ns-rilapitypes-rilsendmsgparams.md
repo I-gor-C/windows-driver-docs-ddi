@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILSENDMSGPARAMS
+UID: NS:rilapitypes.RILSENDMSGPARAMS
 title: RILSENDMSGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendmsgparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: db2eeb43-710a-4be6-8d9f-49809ff70057
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILSENDMSGPARAMS, RILSENDMSGPARAMS, *LPRILSENDMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSENDMSGPARAMS, *LPRILSENDMSGPARAMS
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
+UID: NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
 title: _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
 author: windows-driver-content
 description: DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY describes a residency allocation change operation.
@@ -7,7 +7,7 @@ old-location: display\dxgk_buildpagingbuffer_notifyresidency.htm
 old-project: display
 ms.assetid: 0E70F621-03CD-4593-88C7-DF6F2ADC902A
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
 ---
 
 # _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY structure
@@ -79,7 +80,7 @@ This member is not used and should be set to zero.
 
 
 ## -remarks
-The paging operations is issued only for allocations, for which the kernel mode driver sets the <a href="display.dxgk_allocationinfoflags">DXGK_ALLOCATIONINFOFLAGS</a>::<b>ExplicitResidencyNotification</b> and <b>AccessedPhysically</b> flags.
+The paging operations is issued only for allocations, for which the kernel mode driver sets the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>::<b>ExplicitResidencyNotification</b> and <b>AccessedPhysically</b> flags.
 
 The operation is issued after <i>FillVirtual</i> or <i>TransferVirtual</i> operations when the allocation is committed to a memory segment (<b>Resident</b> == 1). Note that the previous paging operations might not yet be finished by graphics processing unit (GPU).
 
@@ -128,7 +129,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgkarg_buildpagingbuffer">DXGKARG_BUILDPAGINGBUFFER</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
@@ -138,5 +139,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

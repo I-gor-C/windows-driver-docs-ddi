@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DHAL._D3DHAL_CONTEXTCREATEDATA
+UID: NS:d3dhal._D3DHAL_CONTEXTCREATEDATA
 title: _D3DHAL_CONTEXTCREATEDATA
 author: windows-driver-content
 description: The D3DHAL_CONTEXTCREATEDATA structure contains all of the information that the D3dContextCreate function requires to create a new context.
@@ -7,8 +7,8 @@ old-location: display\d3dhal_contextcreatedata.htm
 old-project: display
 ms.assetid: 9ad169a8-81a7-497c-849a-c36be66caa8e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DHAL_CONTEXTCREATEDATA, D3DHAL_CONTEXTCREATEDATA
+ms.date: 12/29/2017
+ms.keywords: _D3DHAL_CONTEXTCREATEDATA, D3DHAL_CONTEXTCREATEDATA, *LPD3DHAL_CONTEXTCREATEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DHAL_CONTEXTCREATEDATA
 ---
 
 # _D3DHAL_CONTEXTCREATEDATA structure
@@ -77,7 +78,7 @@ typedef struct _D3DHAL_CONTEXTCREATEDATA {
 
 ### -field lpDDLcl
 
-Points to the DirectDraw object that an application must create in order to retrieve the COM Interface to Direct3D. This allows context information to be shared between a DirectDraw application and the driver. <b>lpDDLcl</b> is the common and binding factor between the application's context and the driver's context. It points to a <a href="display.dd_directdraw_local">DD_DIRECTDRAW_LOCAL</a> structure that is used to identify the surfaces that belong to a given Direct3D context and is relevant to the current DirectDraw process only. <b>lpDDLcl</b> is necessary because surfaces (for example, depth buffers, rendering buffers, and textures) can be created before a Direct3D context is ever created in the driver. 
+Points to the DirectDraw object that an application must create in order to retrieve the COM Interface to Direct3D. This allows context information to be shared between a DirectDraw application and the driver. <b>lpDDLcl</b> is the common and binding factor between the application's context and the driver's context. It points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff550595">DD_DIRECTDRAW_LOCAL</a> structure that is used to identify the surfaces that belong to a given Direct3D context and is relevant to the current DirectDraw process only. <b>lpDDLcl</b> is necessary because surfaces (for example, depth buffers, rendering buffers, and textures) can be created before a Direct3D context is ever created in the driver. 
 
 
 ### -field lpDDS
@@ -87,7 +88,7 @@ Points to the DirectDraw object that an application must create in order to retr
 
 ### -field lpDDSLcl
 
-Points to a <a href="display.dd_surface_local">DD_SURFACE_LOCAL</a> structure that describes the DirectDraw surface to be used as the rendering target.
+Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a> structure that describes the DirectDraw surface to be used as the rendering target.
 
 
 ### -field lpDDSZ
@@ -171,15 +172,15 @@ Header
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextcreatecb.md">D3dContextCreate</a>
 </dt>
 <dt>
-<a href="display.dd_directdraw_local">DD_DIRECTDRAW_LOCAL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550595">DD_DIRECTDRAW_LOCAL</a>
 </dt>
 <dt>
-<a href="display.dd_surface_local">DD_SURFACE_LOCAL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551733">DD_SURFACE_LOCAL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_CONTEXTCREATEDATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_CONTEXTCREATEDATA structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

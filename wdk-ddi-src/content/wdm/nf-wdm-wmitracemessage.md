@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.WmiTraceMessage
+UID: NF:wdm.WmiTraceMessage
 title: WmiTraceMessage function
 author: windows-driver-content
 description: The WmiTraceMessage routine adds a message to the output log of a WPP software tracing session.
@@ -7,7 +7,7 @@ old-location: kernel\wmitracemessage.htm
 old-project: kernel
 ms.assetid: 045c45fe-c971-4d41-a43d-415c2a4d464b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: WmiTraceMessage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: See Remarks section.
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -102,7 +103,7 @@ Provides a required list of message parameters that specify a set of message par
 
 
 ## -remarks
-A caller can use <b>WmiTraceMessage</b> or <a href="kernel.wmitracemessageva">WmiTraceMessageVa</a> to add a message to the output log of a WPP software tracing session. <b>WmiTraceMessage</b> simplifies a caller's code by handling the variable list mechanism before calling <b>WmiTraceMessageVa</b>.
+A caller can use <b>WmiTraceMessage</b> or <a href="..\wdm\nf-wdm-wmitracemessageva.md">WmiTraceMessageVa</a> to add a message to the output log of a WPP software tracing session. <b>WmiTraceMessage</b> simplifies a caller's code by handling the variable list mechanism before calling <b>WmiTraceMessageVa</b>.
 
 A caller can set the following message flags:
 
@@ -206,24 +207,24 @@ See Remarks section.
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iowmiwriteevent">IoWmiWriteEvent</a>
+<a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWmiWriteEvent</a>
 </dt>
 <dt>
-<a href="kernel.trace_information_class">TRACE_INFORMATION_CLASS</a>
+<a href="..\wdm\ne-wdm-_trace_information_class.md">TRACE_INFORMATION_CLASS</a>
 </dt>
 <dt>
-<a href="kernel.wmifireevent">WmiFireEvent</a>
+<a href="..\wmilib\nf-wmilib-wmifireevent.md">WmiFireEvent</a>
 </dt>
 <dt>
-<a href="kernel.wmiquerytraceinformation">WmiQueryTraceInformation</a>
+<a href="..\wdm\nf-wdm-wmiquerytraceinformation.md">WmiQueryTraceInformation</a>
 </dt>
 <dt>
-<a href="kernel.wmitracemessageva">WmiTraceMessageVa</a>
+<a href="..\wdm\nf-wdm-wmitracemessageva.md">WmiTraceMessageVa</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WmiTraceMessage routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WmiTraceMessage routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

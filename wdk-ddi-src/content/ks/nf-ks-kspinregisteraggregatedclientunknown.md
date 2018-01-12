@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinRegisterAggregatedClientUnknown
+UID: NF:ks.KsPinRegisterAggregatedClientUnknown
 title: KsPinRegisterAggregatedClientUnknown function
 author: windows-driver-content
 description: This inline function is a wrapper for KsRegisterAggregatedClientUnknown.
@@ -7,7 +7,7 @@ old-location: stream\kspinregisteraggregatedclientunknown.htm
 old-project: stream
 ms.assetid: 302d87be-a276-49ea-98f2-89e1f231c3c6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinRegisterAggregatedClientUnknown
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsPinRegisterAggregatedClientUnknown function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-This inline function is a wrapper for <a href="stream.ksregisteraggregatedclientunknown">KsRegisterAggregatedClientUnknown</a>.
+This inline function is a wrapper for <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>.
 
 
 
@@ -56,7 +57,7 @@ PUNKNOWN __inline KsPinRegisterAggregatedClientUnknown(
 
 ### -param Pin [in]
 
-A pointer to a <a href="stream.kspin">KSPIN</a> structure.
+A pointer to a <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure.
 
 
 ### -param ClientUnknown [in]
@@ -69,7 +70,7 @@ A pointer to an <b>IUnknown</b> interface.
 
 
 ## -remarks
-This inline function only performs a typecast and then calls <a href="stream.ksregisteraggregatedclientunknown">KsRegisterAggregatedClientUnknown</a>.
+This inline function only performs a typecast and then calls <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>.
 
 
 ## -requirements
@@ -111,12 +112,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksregisteraggregatedclientunknown">KsRegisterAggregatedClientUnknown</a>
+<a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinRegisterAggregatedClientUnknown function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinRegisterAggregatedClientUnknown function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

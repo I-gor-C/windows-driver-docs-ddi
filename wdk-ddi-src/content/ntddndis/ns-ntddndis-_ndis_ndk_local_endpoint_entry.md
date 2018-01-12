@@ -1,13 +1,13 @@
 ---
-UID: NS.NTDDNDIS._NDIS_NDK_LOCAL_ENDPOINT_ENTRY
+UID: NS:ntddndis._NDIS_NDK_LOCAL_ENDPOINT_ENTRY
 title: _NDIS_NDK_LOCAL_ENDPOINT_ENTRY
 author: windows-driver-content
 description: The NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure specifies an ND local endpoint entry for an ND local endpoint on a miniport adapter.
 old-location: netvista\ndis_ndk_local_endpoint_entry.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 83B88D3D-8FBF-4DC1-8A73-FAB306281F36
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _NDIS_NDK_LOCAL_ENDPOINT_ENTRY, NDIS_NDK_LOCAL_ENDPOINT_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_NDK_LOCAL_ENDPOINT_ENTRY
 ---
 
 # _NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure
@@ -77,7 +78,7 @@ A process identifier for an NDS user-mode connection.
 
 
 ## -remarks
-The NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure is used in the <a href="netvista.ndis_ndk_local_endpoints">NDIS_NDK_LOCAL_ENDPOINTS</a> structure to specify an array of local endpoints.
+The NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure is used in the <a href="..\ntddndis\ns-ntddndis-_ndis_ndk_local_endpoints.md">NDIS_NDK_LOCAL_ENDPOINTS</a> structure to specify an array of local endpoints.
 
 
 ## -requirements
@@ -128,12 +129,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_ndk_local_endpoints">NDIS_NDK_LOCAL_ENDPOINTS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_ndk_local_endpoints.md">NDIS_NDK_LOCAL_ENDPOINTS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

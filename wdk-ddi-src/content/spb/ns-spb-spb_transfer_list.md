@@ -1,5 +1,5 @@
 ---
-UID: NS.SPB.SPB_TRANSFER_LIST
+UID: NS:spb.SPB_TRANSFER_LIST
 title: SPB_TRANSFER_LIST
 author: windows-driver-content
 description: The SPB_TRANSFER_LIST structure describes an I/O transfer sequence.
@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: DC4E165B-4D3A-4C5F-9B6F-8CB825BAF4FD
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SPB_TRANSFER_LIST, SPB_TRANSFER_LIST, *PSPB_TRANSFER_LIST
+ms.keywords: SPB_TRANSFER_LIST, *PSPB_TRANSFER_LIST, SPB_TRANSFER_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSPB_TRANSFER_LIST, SPB_TRANSFER_LIST
 req.product: Windows 10 or later.
 ---
 

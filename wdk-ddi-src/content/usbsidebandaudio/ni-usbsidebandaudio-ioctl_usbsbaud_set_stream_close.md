@@ -1,5 +1,5 @@
 ---
-UID: NI.usbsidebandaudio.IOCTL_USBSBAUD_SET_STREAM_CLOSE
+UID: NI:usbsidebandaudio.IOCTL_USBSBAUD_SET_STREAM_CLOSE
 title: IOCTL_USBSBAUD_SET_STREAM_CLOSE
 author: windows-driver-content
 description: TBD
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 0D7B03AB-28D7-4B70-AE24-8CB60616768D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _USBSCAN_TIMEOUT, PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT, *PUSBSCAN_TIMEOUT
+ms.keywords: _USBSCAN_TIMEOUT, *PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT
 req.product: Windows 10 or later.
 ---
 
@@ -105,13 +106,13 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendinternalioctlotherssynchronously">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendinternalioctlsynchronously">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendioctlsynchronously">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 </dl>
  

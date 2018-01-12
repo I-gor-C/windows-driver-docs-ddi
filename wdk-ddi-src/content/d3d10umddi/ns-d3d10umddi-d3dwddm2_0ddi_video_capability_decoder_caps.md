@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS
+UID: NS:d3d10umddi.D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS
 title: D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS
 author: windows-driver-content
 description: D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS contains information describing the capabilities of the video decoder.
@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_0ddi_video_capability_decoder_caps.htm
 old-project: display
 ms.assetid: C248B20E-A9A1-4C79-9053-16AC2059205E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS, D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS
 ---
 
 # D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS structure

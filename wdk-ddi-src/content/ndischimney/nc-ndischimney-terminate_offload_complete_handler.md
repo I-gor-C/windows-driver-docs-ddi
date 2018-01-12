@@ -1,13 +1,13 @@
 ---
-UID: NC.ndischimney.TERMINATE_OFFLOAD_COMPLETE_HANDLER
+UID: NC:ndischimney.TERMINATE_OFFLOAD_COMPLETE_HANDLER
 title: TERMINATE_OFFLOAD_COMPLETE_HANDLER
 author: windows-driver-content
 description: NDIS calls a protocol or intermediate driver's ProtocolTerminateOffloadComplete function to complete a terminate offload operation that the driver previously initiated by calling the NdisTerminateOffload function.
 old-location: netvista\protocolterminateoffloadcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 614d36e8-38ac-49a7-8711-7a6c6646309c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # TERMINATE_OFFLOAD_COMPLETE_HANDLER callback
@@ -43,7 +44,7 @@ req.irql:
 NDIS calls a protocol or intermediate driver's 
   <i>ProtocolTerminateOffloadComplete</i> function to complete a terminate offload operation that the driver
   previously initiated by calling the 
-  <a href="netvista.ndisterminateoffload">NdisTerminateOffload</a> function.
+  <a href="..\ndischimney\nf-ndischimney-ndisterminateoffload.md">NdisTerminateOffload</a> function.
 
 
 
@@ -67,13 +68,13 @@ VOID ProtocolTerminateOffloadComplete(
 A handle to a context area allocated by the protocol driver. The driver maintains the per binding
      context information in this context area. The driver supplied this handle to NDIS when the driver called
      the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function.
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
 
 ### -param OffloadBlockList [in]
 
 A pointer to an 
-     <a href="netvista.ndis_protocol_offload_block_list">
+     <a href="..\ndischimney\ns-ndischimney-_ndis_protocol_offload_block_list.md">
      NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a> structure that can be a stand-alone structure or the root of a
      linked list of such structures. These structures identify the state that was terminated or that was
      attempted to be terminated.
@@ -85,7 +86,7 @@ None
 
 ## -remarks
 In response to an underlying offload target's or intermediate driver's call to the 
-    <a href="netvista.ndismterminateoffloadcomplete">
+    <a href="..\ndischimney\nf-ndischimney-ndismterminateoffloadcomplete.md">
     NdisMTerminateOffloadComplete</a> function, NDIS calls a protocol or intermediate driver's 
     <i>ProtocolTerminateOffloadComplete</i> function.
 
@@ -97,7 +98,7 @@ An intermediate driver must propagate the completion of the terminate offload op
 
 From the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure that was passed to its 
     <i>ProtocolTerminateOffloadComplete</i> function, the intermediate driver constructs an 
-    <a href="netvista.ndis_miniport_offload_block_list">
+    <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure. For more information, see 
     <a href="netvista.reusing_an_ndis_protocol_offload_block_list_structure">Reusing an
     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST Structure</a>. When calling the 
@@ -127,27 +128,27 @@ Header
 <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_offload_block_list">
+<a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 </dt>
 <dt>
-<a href="netvista.ndismterminateoffloadcomplete">
+<a href="..\ndischimney\nf-ndischimney-ndismterminateoffloadcomplete.md">
    NdisMTerminateOffloadComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_protocol_offload_block_list">
+<a href="..\ndischimney\ns-ndischimney-_ndis_protocol_offload_block_list.md">
    NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a>
 </dt>
 <dt>
-<a href="netvista.ndisterminateoffload">NdisTerminateOffload</a>
+<a href="..\ndischimney\nf-ndischimney-ndisterminateoffload.md">NdisTerminateOffload</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20TERMINATE_OFFLOAD_COMPLETE_HANDLER callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20TERMINATE_OFFLOAD_COMPLETE_HANDLER callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

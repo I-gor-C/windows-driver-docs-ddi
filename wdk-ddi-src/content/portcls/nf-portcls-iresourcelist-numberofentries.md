@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IResourceList.NumberOfEntries
+UID: NF:portcls.IResourceList.NumberOfEntries
 title: IResourceList::NumberOfEntries method
 author: windows-driver-content
 description: The NumberOfEntries method returns the number of resource items in the resource list.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IResourceList::NumberOfEntries method

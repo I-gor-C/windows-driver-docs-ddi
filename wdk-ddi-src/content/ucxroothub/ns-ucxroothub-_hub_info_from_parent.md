@@ -1,14 +1,14 @@
 ---
-UID: NS.UCXROOTHUB._HUB_INFO_FROM_PARENT
+UID: NS:ucxroothub._HUB_INFO_FROM_PARENT
 title: _HUB_INFO_FROM_PARENT
 author: windows-driver-content
 description: Describes information about a hub from its parent device.
 old-location: buses\_hub_info_from_parent.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 6259CC70-A54B-4A44-B38B-D24C296C8EA0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT, PHUB_INFO_FROM_PARENT
+ms.date: 1/4/2018
+ms.keywords: _HUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT
 req.product: Windows 10 or later.
 ---
 
@@ -75,7 +76,7 @@ A pointer to the WDM device object of the parent that represents the I/O target.
 
 ### -field DeviceDescriptor
 
-A <a href="buses.usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.
+A <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.
 
 
 ### -field U1ExitLatency
@@ -132,7 +133,7 @@ The total TP propagation delay.
 
 ### -field HubFlags
 
-A bitwise-OR of <a href="buses._parent_hub_flags">PARENT_HUB_FLAGS</a> flags.
+A bitwise-OR of <a href="..\ucxroothub\ns-ucxroothub-_parent_hub_flags.md">PARENT_HUB_FLAGS</a> flags.
 
 
 ### -field SublinkSpeedAttr

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_CREATESTANDARDALLOCATION
+UID: NS:d3dkmthk._D3DKMT_CREATESTANDARDALLOCATION
 title: _D3DKMT_CREATESTANDARDALLOCATION
 author: windows-driver-content
 description: Used to create a standard allocation.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt-createstandardallocation.htm
 old-project: display
 ms.assetid: 7698ab93-68af-479d-97a4-c45ac84b0710
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_CREATESTANDARDALLOCATION, D3DKMT_CREATESTANDARDALLOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_CREATESTANDARDALLOCATION
 ---
 
 # _D3DKMT_CREATESTANDARDALLOCATION structure

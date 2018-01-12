@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsReadFile
+UID: NF:ks.KsReadFile
 title: KsReadFile function
 author: windows-driver-content
 description: The KsReadFile function performs a read against the specified file object.
@@ -7,7 +7,7 @@ old-location: stream\ksreadfile.htm
 old-project: stream
 ms.assetid: e3bb6ead-8129-4605-8755-3a56d4b3d8f6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsReadFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsReadFile function

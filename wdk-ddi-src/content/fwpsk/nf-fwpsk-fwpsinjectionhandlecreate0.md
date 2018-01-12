@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsInjectionHandleCreate0
+UID: NF:fwpsk.FwpsInjectionHandleCreate0
 title: FwpsInjectionHandleCreate0 function
 author: windows-driver-content
 description: The FwpsInjectionHandleCreate0 function creates a handle that can be used by packet injection functions to inject packet or stream data into the TCP/IP network stack and by the FwpsQueryPacketInjectionState0 function to query the packet injection state.Note  FwpsInjectionHandleCreate0 is a specific version of FwpsInjectionHandleCreate. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwpsinjectionhandlecreate0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 61cee8ef-1070-46d4-a541-94a9f09b593b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpsInjectionHandleCreate0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsInjectionHandleCreate0 function
@@ -40,9 +41,9 @@ req.irql: PASSIVE_LEVEL
 ## -description
 The 
   <b>FwpsInjectionHandleCreate0</b> function creates a handle that can be used by 
-  <a href="netvista.packet_injection_functions">packet injection functions</a> to inject
+  <a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">packet injection functions</a> to inject
   packet or stream data into the TCP/IP network stack and by the 
-  <a href="netvista.fwpsquerypacketinjectionstate0">FwpsQueryPacketInjectionState0</a> function to query the packet injection state.
+  <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">FwpsQueryPacketInjectionState0</a> function to query the packet injection state.
 
 
 
@@ -101,32 +102,32 @@ A flag value set by a callout driver to indicate the type of data to be injected
 ### -param FWPS_INJECTION_TYPE_FORWARD
 
 Packet data will be injected by calling the 
-       <a href="netvista.fwpsinjectforwardasync0">
+       <a href="..\fwpsk\nf-fwpsk-fwpsinjectforwardasync0.md">
        FwpsInjectForwardAsync0</a> function.
 
 
 ### -param FWPS_INJECTION_TYPE_NETWORK
 
 Network data will be injected by calling either the 
-       <a href="netvista.fwpsinjectnetworkreceiveasync0">
+       <a href="..\fwpsk\nf-fwpsk-fwpsinjectnetworkreceiveasync0.md">
        FwpsInjectNetworkReceiveAsync0</a> function or the 
-       <a href="netvista.fwpsinjectnetworksendasync0">
+       <a href="..\fwpsk\nf-fwpsk-fwpsinjectnetworksendasync0.md">
        FwpsInjectNetworkSendAsync0</a> function.
 
 
 ### -param FWPS_INJECTION_TYPE_STREAM
 
 Stream data will be injected by calling the 
-       <a href="netvista.fwpsstreaminjectasync0">
+       <a href="..\fwpsk\nf-fwpsk-fwpsstreaminjectasync0.md">
        FwpsStreamInjectAsync0</a> function.
 
 
 ### -param FWPS_INJECTION_TYPE_TRANSPORT
 
 Transport data will be injected by calling either the 
-       <a href="netvista.fwpsinjecttransportreceiveasync0">
+       <a href="..\fwpsk\nf-fwpsk-fwpsinjecttransportreceiveasync0.md">
        FwpsInjectTransportReceiveAsync0</a> function or the 
-       <a href="netvista.fwpsinjecttransportsendasync0">
+       <a href="..\fwpsk\nf-fwpsk-fwpsinjecttransportsendasync0.md">
        FwpsInjectTransportSendAsync0</a> function.
 
 </dd>
@@ -150,7 +151,7 @@ The
 <dl>
 <dt><b>STATUS_FWP_TCPIP_NOT_READY</b></dt>
 </dl>The TCP/IP network stack is not ready. A callout driver should call the 
-       <a href="netvista.fwpsinjectionhandlecreate0">FwpsInjectionHandleCreate0</a> function again at a later time to create an injection handle.
+       <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a> function again at a later time to create an injection handle.
 <dl>
 <dt><b>Other status codes</b></dt>
 </dl>An error occurred.
@@ -165,11 +166,11 @@ A callout driver calls the
     passes the created handle to the 
     <a href="netvista.packet_injection_functions">packet injection
     functions</a> and 
-    <a href="netvista.fwpsquerypacketinjectionstate0">
+    <a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
     FwpsQueryPacketInjectionState0</a>.
 
 After a callout driver has finished using an injection handle, it must call the 
-    <a href="netvista.fwpsinjectionhandledestroy0">FwpsInjectionHandleDestroy0</a> function to destroy the handle. If pending injections have not yet
+    <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandledestroy0.md">FwpsInjectionHandleDestroy0</a> function to destroy the handle. If pending injections have not yet
     completed, this function will wait for their completion before returning.
 
 When injections are being made to the network layer and both IPv4 and IPv6 address families are being
@@ -239,19 +240,19 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwpsinjectionhandledestroy0">FwpsInjectionHandleDestroy0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandledestroy0.md">FwpsInjectionHandleDestroy0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsquerypacketinjectionstate0">
+<a href="..\fwpsk\nf-fwpsk-fwpsquerypacketinjectionstate0.md">
    FwpsQueryPacketInjectionState0</a>
 </dt>
 <dt>
-<a href="netvista.packet_injection_functions">Packet Injection Functions</a>
+<a href="https://msdn.microsoft.com/ebbcafb6-7fbf-40e6-8806-0131aa1d4df5">Packet Injection Functions</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsInjectionHandleCreate0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsInjectionHandleCreate0 function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IQueueCallbackIoCanceledOnQueue.OnIoCanceledOnQueue
+UID: NF:wudfddi.IQueueCallbackIoCanceledOnQueue.OnIoCanceledOnQueue
 title: IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue method
 author: windows-driver-content
 description: A driver's OnIoCanceledOnQueue event callback function informs the driver that an I/O request was canceled while it was in an I/O queue.
@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackiocanceledonqueue_oniocanceledonqueue.htm
 old-project: wdf
 ms.assetid: 901ff312-d1bb-46bf-b8e6-6abc47fa3c7f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IQueueCallbackIoCanceledOnQueue, IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue, OnIoCanceledOnQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -72,9 +73,9 @@ None.
 
 
 ## -remarks
-A driver registers an I/O queue's <a href="..\wudfddi\nn-wudfddi-iqueuecallbackiocanceledonqueue.md">IQueueCallbackIoCanceledOnQueue</a> interface and <b>OnIoCanceledOnQueue</b> callback function when the driver calls the <a href="wdf.iwdfdevice_createioqueue">IWDFDevice::CreateIoQueue</a>. For more information about how to register the interface, see <a href="..\wudfddi\nn-wudfddi-iqueuecallbackiocanceledonqueue.md">IQueueCallbackIoCanceledOnQueue</a>.
+A driver registers an I/O queue's <a href="..\wudfddi\nn-wudfddi-iqueuecallbackiocanceledonqueue.md">IQueueCallbackIoCanceledOnQueue</a> interface and <b>OnIoCanceledOnQueue</b> callback function when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>. For more information about how to register the interface, see <a href="..\wudfddi\nn-wudfddi-iqueuecallbackiocanceledonqueue.md">IQueueCallbackIoCanceledOnQueue</a>.
 
-If a driver registers an <b>OnIoCanceledOnQueue</b> callback function for an I/O queue, the framework calls the callback function if a request handler receives an I/O request from an I/O queue, the driver calls <a href="wdf.iwdfiorequest_forwardtoioqueue">IWDFIoRequest::ForwardToIoQueue</a> or <a href="wdf.iwdfiorequest2_requeue">IWDFIoRequest2::Requeue</a> to requeue the request to the I/O queue for which the <b>OnIoCanceledOnQueue</b> callback function is registered, and the associated I/O operation is subsequently canceled.
+If a driver registers an <b>OnIoCanceledOnQueue</b> callback function for an I/O queue, the framework calls the callback function if a request handler receives an I/O request from an I/O queue, the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff559081">IWDFIoRequest::ForwardToIoQueue</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff559028">IWDFIoRequest2::Requeue</a> to requeue the request to the I/O queue for which the <b>OnIoCanceledOnQueue</b> callback function is registered, and the associated I/O operation is subsequently canceled.
 
 After the framework calls the <b>OnIoCanceledOnQueue</b> callback function, the driver owns the request object and, therefore, must <a href="https://msdn.microsoft.com/library/windows/hardware/hh406716">cancel</a> the request.
 
@@ -82,7 +83,7 @@ The framework does not call the driver's <b>OnIoCanceledOnQueue</b> callback fun
 
 The framework calls an <b>OnIoCanceledOnQueue</b> callback function as soon as it determines that an I/O request has been canceled, regardless of the <a href="wdf.configuring_dispatch_mode_for_an_i_o_queue">dispatching method</a> that the driver has set for the I/O queue. Therefore, the framework can call an <b>OnIoCanceledOnQueue</b> callback function for a request in a queue that uses sequential dispatching, even if the driver currently owns another request from the queue.
 
-For more information about the <b>OnIoCanceledOnQueue</b> callback function, see <a href="wdf.canceling_i_o_requests">Canceling I/O Requests</a>.
+For more information about the <b>OnIoCanceledOnQueue</b> callback function, see <a href="https://msdn.microsoft.com/9a486fa4-7fd3-4433-88aa-34a54d9b1e16">Canceling I/O Requests</a>.
 
 
 ## -requirements
@@ -137,15 +138,15 @@ Header
 <a href="..\wudfddi\nn-wudfddi-iqueuecallbackiocanceledonqueue.md">IQueueCallbackIoCanceledOnQueue</a>
 </dt>
 <dt>
-<a href="wdf.iwdfdevice_createioqueue">IWDFDevice::CreateIoQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a>
 </dt>
 <dt>
-<a href="wdf.iwdfiorequest_forwardtoioqueue">IWDFIoRequest::ForwardToIoQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559081">IWDFIoRequest::ForwardToIoQueue</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinGetTrailingEdgeStreamPointer
+UID: NF:ks.KsPinGetTrailingEdgeStreamPointer
 title: KsPinGetTrailingEdgeStreamPointer function
 author: windows-driver-content
 description: The KsPinGetTrailingEdgeStreamPointer function acquires the trailing edge stream pointer for the queue associated with the specified pin.
@@ -7,7 +7,7 @@ old-location: stream\kspingettrailingedgestreampointer.htm
 old-project: stream
 ms.assetid: 763f1f66-4d83-44aa-9db5-206cf6b6f9b1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinGetTrailingEdgeStreamPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: 
 ---
 
 # KsPinGetTrailingEdgeStreamPointer function
@@ -56,7 +57,7 @@ PKSSTREAM_POINTER KsPinGetTrailingEdgeStreamPointer(
 
 ### -param Pin [in]
 
-A pointer to the <a href="stream.kspin">KSPIN</a> structure for whose queue to return the trailing edge stream pointer.
+A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for whose queue to return the trailing edge stream pointer.
 
 
 ### -param State [in]
@@ -81,11 +82,11 @@ Acquire and lock the leading edge stream pointer. If no data frame is associated
 </dl>
 
 ## -returns
-<b>KsPinGetTrailingEdgeStreamPointer</b> returns either a pointer to a <a href="stream.ksstream_pointer">KSSTREAM_POINTER</a> structure representing the trailing edge stream pointer or <b>NULL</b>. A return value of <b>NULL</b> can indicate that there is no trailing edge for the queue associated with the pin. In this case, the pin descriptor probably does not specify that the pin should have a distinct trailing edge. Alternatively, <b>NULL</b> can indicate that there is no queue associated with the pin. In this case, the pin in question does not use the standard transport mechanism. A return value of <b>NULL</b> can also indicate that an attempt to lock the trailing edge failed. In other words, there is no data frame currently associated with the leading edge.
+<b>KsPinGetTrailingEdgeStreamPointer</b> returns either a pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure representing the trailing edge stream pointer or <b>NULL</b>. A return value of <b>NULL</b> can indicate that there is no trailing edge for the queue associated with the pin. In this case, the pin descriptor probably does not specify that the pin should have a distinct trailing edge. Alternatively, <b>NULL</b> can indicate that there is no queue associated with the pin. In this case, the pin in question does not use the standard transport mechanism. A return value of <b>NULL</b> can also indicate that an attempt to lock the trailing edge failed. In other words, there is no data frame currently associated with the leading edge.
 
 
 ## -remarks
-The trailing edge stream pointer is a special pointer into the data stream that exists if and only if the pin descriptor for the pin specifies a distinct trailing edge. If this pointer exists, it points to the oldest data in the queue unless specifically advanced by a <b>KsStreamPointerAdvance</b><i>Xxx</i> or a <a href="stream.ksstreampointerunlock">KsStreamPointerUnlock</a> call. Older data can exist in the queue also if cloned stream pointers exist for frames older than the one pointed to by the trailing edge.
+The trailing edge stream pointer is a special pointer into the data stream that exists if and only if the pin descriptor for the pin specifies a distinct trailing edge. If this pointer exists, it points to the oldest data in the queue unless specifically advanced by a <b>KsStreamPointerAdvance</b><i>Xxx</i> or a <a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a> call. Older data can exist in the queue also if cloned stream pointers exist for frames older than the one pointed to by the trailing edge.
 
 Data frames that reside in the window between the leading edge stream pointer and the trailing edge stream pointer have at least one reference count and thus will not leave the queue and be completed until they exit the window as a result of the advancement of the trailing edge. Note that frames between the leading edge and trailing edge are <b>not</b> locked by default and therefore can be canceled.
 
@@ -154,30 +155,30 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.kspingetleadingedgestreampointer">KsPinGetLeadingEdgeStreamPointer</a>
+<a href="..\ks\nf-ks-kspingetleadingedgestreampointer.md">KsPinGetLeadingEdgeStreamPointer</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerlock">KsStreamPointerLock</a>
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerunlock">KsStreamPointerUnlock</a>
+<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointeradvance">KsStreamPointerAdvance</a>
+<a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointeradvanceoffsetsandunlock">KsStreamPointerAdvanceOffsetsAndUnlock</a>
+<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerclone">KsStreamPointerClone</a>
+<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerdelete">KsStreamPointerDelete</a>
+<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetTrailingEdgeStreamPointer function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetTrailingEdgeStreamPointer function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

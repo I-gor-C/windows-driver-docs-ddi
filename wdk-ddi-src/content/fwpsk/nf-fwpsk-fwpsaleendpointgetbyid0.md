@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsAleEndpointGetById0
+UID: NF:fwpsk.FwpsAleEndpointGetById0
 title: FwpsAleEndpointGetById0 function
 author: windows-driver-content
 description: The FwpsAleEndpointGetById0 function retrieves information about an application layer enforcement (ALE) endpoint.Note  FwpsAleEndpointGetById0 is a specific version of FwpsAleEndpointGetById.
 old-location: netvista\fwpsaleendpointgetbyid0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: fa9a5078-d254-4b4a-bbfb-256491beff5f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpsAleEndpointGetById0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsAleEndpointGetById0 function
@@ -61,7 +62,7 @@ NTSTATUS NTAPI FwpsAleEndpointGetById0(
 
 A handle for an open session with the filter engine. This handle is obtained when a session is
      opened by calling 
-     <a href="netvista.fwpmengineopen0">FwpmEngineOpen0</a>.
+     <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>.
 
 
 ### -param endpointId [in]
@@ -72,7 +73,7 @@ The unique endpoint identifier.
 ### -param properties [out]
 
 A pointer to an 
-     <a href="netvista.fwps_ale_endpoint_properties0">
+     <a href="https://msdn.microsoft.com/1dd5dbd1-b7a7-45a3-8cab-ea62c7eff35b">
      FWPS_ALE_ENDPOINT_PROPERTIES0</a> structure that contains the properties of the endpoint.
 
 
@@ -152,14 +153,14 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwpsaleendpointenum0">FwpsAleEndpointEnum0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointenum0.md">FwpsAleEndpointEnum0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsaleendpointgetsecurityinfo0">
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetsecurityinfo0.md">
    FwpsAleEndpointGetSecurityInfo0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsaleendpointsetsecurityinfo0">
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointsetsecurityinfo0.md">
    FwpsAleEndpointSetSecurityInfo0</a>
 </dt>
 </dl>
@@ -167,5 +168,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsAleEndpointGetById0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAleEndpointGetById0 function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

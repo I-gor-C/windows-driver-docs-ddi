@@ -1,5 +1,5 @@
 ---
-UID: NI.hidclass.IOCTL_HID_GET_DRIVER_CONFIG
+UID: NI:hidclass.IOCTL_HID_GET_DRIVER_CONFIG
 title: IOCTL_HID_GET_DRIVER_CONFIG
 author: windows-driver-content
 description: The IOCTL_HID_GET_DRIVER_CONFIG request retrieves the driver configuration.
@@ -7,8 +7,8 @@ old-location: hid\ioctl_hid_get_driver_config.htm
 old-project: hid
 ms.assetid: F648EF1E-2673-499D-81BF-03B7B2148FA2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
+ms.date: 12/21/2017
+ms.keywords: _HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_GET_DRIVER_CONFIG IOCTL

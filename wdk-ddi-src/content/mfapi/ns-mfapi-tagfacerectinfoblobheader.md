@@ -1,5 +1,5 @@
 ---
-UID: NS.MFAPI.TAGFACERECTINFOBLOBHEADER
+UID: NS:mfapi.tagFaceRectInfoBlobHeader
 title: tagFaceRectInfoBlobHeader
 author: windows-driver-content
 description: The FaceRectInfoBlobHeader structure describes the size and count information of the blob format for the MF_CAPTURE_METADATA_FACEROIS attribute.
@@ -7,7 +7,7 @@ old-location: stream\facerectinfoblobheader.htm
 old-project: stream
 ms.assetid: BDDC33C2-CD2D-4F97-AAD1-DF69250F60B3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: tagFaceRectInfoBlobHeader, FaceRectInfoBlobHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FaceRectInfoBlobHeader
 ---
 
 # tagFaceRectInfoBlobHeader structure
@@ -56,7 +57,7 @@ typedef struct tagFaceRectInfoBlobHeader {
 
 ### -field Size
 
-Size of this header + all following <a href="stream.facerectinfo">FaceRectInfo</a> structures.
+Size of this header + all following <a href="..\mfapi\ns-mfapi-tagfacerectinfo.md">FaceRectInfo</a> structures.
 
 
 ### -field Count

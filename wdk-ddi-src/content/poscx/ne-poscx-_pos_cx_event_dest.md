@@ -1,5 +1,5 @@
 ---
-UID: NE.poscx._POS_CX_EVENT_DEST
+UID: NE:poscx._POS_CX_EVENT_DEST
 title: _POS_CX_EVENT_DEST
 author: windows-driver-content
 description: The POS_CX_EVENT_DEST defines which applications receive this event.
@@ -7,7 +7,7 @@ old-location: pos\pos_cx_event_dest.htm
 old-project: pos
 ms.assetid: 63D16B9E-82CC-4171-B80A-D0FA6F2066E2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _POS_CX_EVENT_DEST, POS_CX_EVENT_DEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: PASSIVE_LEVEL
+req.typenames: POS_CX_EVENT_DEST
 req.product: Windows 10 or later.
 ---
 

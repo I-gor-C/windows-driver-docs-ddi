@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMMapIoSpace
+UID: NF:ndis.NdisMMapIoSpace
 title: NdisMMapIoSpace function
 author: windows-driver-content
 description: NdisMMapIoSpace maps a given bus-relative &#0034;physical&#0034; range of device RAM or registers onto a system-space virtual range.
 old-location: netvista\ndismmapiospace.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 16c62146-ed8d-4bf7-9d5e-0c5dbbf3c9c4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMMapIoSpace
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMMapIoSpace function
@@ -189,7 +190,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>, <a href="devtest.ndis_ndismmapiospace">NdisMMapIoSpace</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>, <a href="..\ndis\nf-ndis-ndismmapiospace.md">NdisMMapIoSpace</a>
 </td>
 </tr>
 </table>
@@ -203,36 +204,36 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismgetbusdata">NdisMGetBusData</a>
+<a href="..\ndis\nf-ndis-ndismgetbusdata.md">NdisMGetBusData</a>
 </dt>
 <dt>
-<a href="netvista.ndismunmapiospace">NdisMUnmapIoSpace</a>
+<a href="..\ndis\nf-ndis-ndismunmapiospace.md">NdisMUnmapIoSpace</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenconfigurationex">NdisOpenConfigurationEx</a>
+<a href="..\ndis\nf-ndis-ndisopenconfigurationex.md">NdisOpenConfigurationEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisreadregisteruchar">NdisReadRegisterUchar</a>
+<a href="..\ndis\nf-ndis-ndisreadregisteruchar.md">NdisReadRegisterUchar</a>
 </dt>
 <dt>
-<a href="netvista.ndisreadregisterulong">NdisReadRegisterUlong</a>
+<a href="..\ndis\nf-ndis-ndisreadregisterulong.md">NdisReadRegisterUlong</a>
 </dt>
 <dt>
-<a href="netvista.ndisreadregisterushort">NdisReadRegisterUshort</a>
+<a href="..\ndis\nf-ndis-ndisreadregisterushort.md">NdisReadRegisterUshort</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteregisteruchar">NdisWriteRegisterUchar</a>
+<a href="..\ndis\nf-ndis-ndiswriteregisteruchar.md">NdisWriteRegisterUchar</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteregisterulong">NdisWriteRegisterUlong</a>
+<a href="..\ndis\nf-ndis-ndiswriteregisterulong.md">NdisWriteRegisterUlong</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteregisterushort">NdisWriteRegisterUshort</a>
+<a href="..\ndis\nf-ndis-ndiswriteregisterushort.md">NdisWriteRegisterUshort</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMMapIoSpace function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMMapIoSpace function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

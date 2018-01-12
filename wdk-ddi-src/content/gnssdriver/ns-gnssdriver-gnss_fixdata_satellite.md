@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_FIXDATA_SATELLITE
+UID: NS:gnssdriver.GNSS_FIXDATA_SATELLITE
 title: GNSS_FIXDATA_SATELLITE
 author: windows-driver-content
 description: This structure defines satellite-related information of a fix.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: D1454F07-3CBA-498B-B054-6A0D5020A164
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_FIXDATA_SATELLITE, GNSS_FIXDATA_SATELLITE, PGNSS_FIXDATA_SATELLITE, *PGNSS_FIXDATA_SATELLITE
+ms.keywords: GNSS_FIXDATA_SATELLITE, *PGNSS_FIXDATA_SATELLITE, GNSS_FIXDATA_SATELLITE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_FIXDATA_SATELLITE, GNSS_FIXDATA_SATELLITE
 ---
 
 # GNSS_FIXDATA_SATELLITE structure

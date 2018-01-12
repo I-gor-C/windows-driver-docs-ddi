@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11.DOT11_OFFLOAD_NETWORK
+UID: NS:windot11.DOT11_OFFLOAD_NETWORK
 title: DOT11_OFFLOAD_NETWORK
 author: windows-driver-content
 description: The DOT11_OFFLOAD_NETWORK structure describes a network list offload.
 old-location: netvista\dot11_offload_network.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 75DC558F-801B-42ED-9282-127E86E78923
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: DOT11_OFFLOAD_NETWORK, *PDOT11_OFFLOAD_NETWORK, PDOT11_OFFLOAD_NETWORK, DOT11_OFFLOAD_NETWORK
+ms.date: 1/8/2018
+ms.keywords: DOT11_OFFLOAD_NETWORK, DOT11_OFFLOAD_NETWORK, *PDOT11_OFFLOAD_NETWORK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_OFFLOAD_NETWORK, *PDOT11_OFFLOAD_NETWORK
 req.product: Windows 10 or later.
 ---
 

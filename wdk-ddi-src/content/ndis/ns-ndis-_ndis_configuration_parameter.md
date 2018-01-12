@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_CONFIGURATION_PARAMETER
+UID: NS:ndis._NDIS_CONFIGURATION_PARAMETER
 title: _NDIS_CONFIGURATION_PARAMETER
 author: windows-driver-content
 description: The NDIS_CONFIGURATION_PARAMETER structure contains the data and type of a named entry in the registry.
 old-location: netvista\ndis_configuration_parameter.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 80250799-4263-43c0-85d5-f1c1c1fb0bae
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_CONFIGURATION_PARAMETER, PNDIS_CONFIGURATION_PARAMETER, *PNDIS_CONFIGURATION_PARAMETER, NDIS_CONFIGURATION_PARAMETER
+ms.date: 1/8/2018
+ms.keywords: _NDIS_CONFIGURATION_PARAMETER, *PNDIS_CONFIGURATION_PARAMETER, NDIS_CONFIGURATION_PARAMETER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: *PNDIS_CONFIGURATION_PARAMETER, NDIS_CONFIGURATION_PARAMETER
 ---
 
 # _NDIS_CONFIGURATION_PARAMETER structure
@@ -62,11 +63,11 @@ typedef struct _NDIS_CONFIGURATION_PARAMETER {
 ### -field ParameterType
 
 The type of the parameter specified as one of the 
-     <a href="netvista.ndis_parameter_type">NDIS_PARAMETER_TYPE</a> enumeration values. 
+     <a href="..\ndis\ne-ndis-_ndis_parameter_type.md">NDIS_PARAMETER_TYPE</a> enumeration values. 
      
 
 For successful calls to the 
-     <a href="netvista.ndisreadconfiguration">NdisReadConfiguration</a> function, the
+     <a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a> function, the
      
      <b>ParameterType</b> value matches the value at the 
      <i>ParameterType</i> parameter. However, when the 
@@ -82,7 +83,7 @@ A union that contains the value of the given named entry. If ParameterType is a 
       member is an NDIS_STRING type describing a counted string in the system-default character set. For
       Microsoft Windows 2000 and later drivers, such a string contains Unicode characters. That is, for
       Windows 2000 and later, NDIS defines the NDIS_STRING type as a 
-      <a href="kernel.unicode_string">UNICODE_STRING</a> type.
+      <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> type.
 
 This union contains the following members:
 
@@ -115,13 +116,13 @@ A
 
 ## -remarks
 To read parameters in the registry, an NDIS driver can call the 
-    <a href="netvista.ndisreadconfiguration">NdisReadConfiguration</a> function. If
+    <a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a> function. If
     the call is successful, NDIS returns a pointer to an NDIS_CONFIGURATION_PARAMETER structure at the 
     <i>ParameterValue</i> parameter of 
     <b>NdisReadConfiguration</b>.
 
 To write parameters to the registry, an NDIS driver can call the 
-    <a href="netvista.ndiswriteconfiguration">NdisWriteConfiguration</a> function. In
+    <a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a> function. In
     this case, the driver initializes an NDIS_CONFIGURATION_PARAMETER structure and passes it at the 
     <i>ParameterValue</i> parameter of 
     <b>NdisWriteConfiguration</b>.
@@ -159,21 +160,21 @@ Header
 <a href="..\ndis\ns-ndis-binary_data.md">BINARY_DATA</a>
 </dt>
 <dt>
-<a href="netvista.ndis_parameter_type">NDIS_PARAMETER_TYPE</a>
+<a href="..\ndis\ne-ndis-_ndis_parameter_type.md">NDIS_PARAMETER_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.ndisreadconfiguration">NdisReadConfiguration</a>
+<a href="..\ndis\nf-ndis-ndisreadconfiguration.md">NdisReadConfiguration</a>
 </dt>
 <dt>
-<a href="netvista.ndiswriteconfiguration">NdisWriteConfiguration</a>
+<a href="..\ndis\nf-ndis-ndiswriteconfiguration.md">NdisWriteConfiguration</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_CONFIGURATION_PARAMETER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_CONFIGURATION_PARAMETER structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

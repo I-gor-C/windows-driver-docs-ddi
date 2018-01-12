@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
+UID: NS:d3dumddi._D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 title: _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 author: windows-driver-content
 description: A structure that holds information to wait for synchronized objects.
@@ -7,7 +7,7 @@ old-location: display\d3dddicb_submitwaitforsyncobjectstohwqueue.htm
 old-project: display
 ms.assetid: 9890EB61-2CED-41AB-9A87-76D5020D84A0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE, D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE
 ---
 
 # _D3DDDICB_SUBMITWAITFORSYNCOBJECTSTOHWQUEUE structure

@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILRADIOPRESENCE
+UID: NE:rilapitypes.RILRADIOPRESENCE
 title: RILRADIOPRESENCE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilradiopresence_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0fd02d1a-e6c4-418d-b890-9b60f4f0c1ce
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILRADIOPRESENCE, RILRADIOPRESENCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILRADIOPRESENCE
 req.product: Windows 10 or later.
 ---
 

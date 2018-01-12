@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_PORT_CHARACTERISTICS
+UID: NS:ntddndis._NDIS_PORT_CHARACTERISTICS
 title: _NDIS_PORT_CHARACTERISTICS
 author: windows-driver-content
 description: The NDIS_PORT_CHARACTERISTICS structure specifies the characteristics of an NDIS port. For more information about NDIS ports, see NDIS Ports.
 old-location: netvista\ndis_port_characteristics.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: fd602dd6-c216-413a-a4da-292739774937
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_PORT_CHARACTERISTICS, NDIS_PORT_CHARACTERISTICS, PNDIS_PORT_CHARACTERISTICS, *PNDIS_PORT_CHARACTERISTICS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_PORT_CHARACTERISTICS, NDIS_PORT_CHARACTERISTICS, *PNDIS_PORT_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_PORT_CHARACTERISTICS, *PNDIS_PORT_CHARACTERISTICS
 ---
 
 # _NDIS_PORT_CHARACTERISTICS structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The <b>NDIS_PORT_CHARACTERISTICS</b> structure specifies the characteristics of an NDIS port. For more information about NDIS ports, see <a href="netvista.ndis_ports">NDIS Ports</a>.
+The <b>NDIS_PORT_CHARACTERISTICS</b> structure specifies the characteristics of an NDIS port. For more information about NDIS ports, see <a href="https://msdn.microsoft.com/e65f4af5-c527-4d6d-a38c-56da006b1ef7">NDIS Ports</a>.
 
 
 
@@ -67,7 +68,7 @@ typedef struct _NDIS_PORT_CHARACTERISTICS {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_PORT_CHARACTERISTICS</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -98,7 +99,7 @@ If the NDIS_PORT_CHAR_USE_DEFAULT_AUTH_SETTINGS flag is set, NDIS ignores authen
 
 ### -field Type
 
-The type of NDIS port. For more information, see <a href="netvista.types_of_ndis_ports">Types of NDIS Ports</a>. This type can be one of the following values:
+The type of NDIS port. For more information, see <a href="https://msdn.microsoft.com/a77ceb1b-d4b9-4a42-aa5b-685295722fa3">Types of NDIS Ports</a>. This type can be one of the following values:
      
 
 
@@ -155,7 +156,7 @@ The receive link speed of the port, in bits per second. A value of -1 in this me
 ### -field Direction
 
 A 
-     <a href="netvista.net_if_direction_type">NET_IF_DIRECTION_TYPE</a> NDIS network
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a> NDIS network
      interface direction type.
 
 
@@ -287,19 +288,19 @@ The port is re-authorizing for receive operations.
 ## -remarks
 The <b>NDIS_PORT_CHARACTERISTICS</b> structure specifies the characteristics of an NDIS port. This structure
     appears in a list of port characteristics that are provided in the 
-    <a href="netvista.ndis_port_array">NDIS_PORT_ARRAY</a> structure that is used with
+    <a href="..\ntddndis\ns-ntddndis-_ndis_port_array.md">NDIS_PORT_ARRAY</a> structure that is used with
     the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569583">OID_GEN_ENUMERATE_PORTS</a> OID.
 
 To allocate an NDIS port, a driver initializes an <b>NDIS_PORT_CHARACTERISTICS</b> structure and passes it to
     the 
-    <a href="netvista.ndismallocateport">NdisMAllocatePort</a> function. When 
+    <a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a> function. When 
     <b>NdisMAllocatePort</b> successfully returns, NDIS sets the 
     <b>PortNumber</b> member of <b>NDIS_PORT_CHARACTERISTICS</b> to the port number that NDIS assigned to the
     port.
 
 NDIS uses a linked list of ports in port activation Plug and Play (PnP) events. NDIS uses the 
-    <a href="netvista.ndis_port">NDIS_PORT</a> structure to create a linked list of
+    <a href="..\ntddndis\ns-ntddndis-_ndis_port.md">NDIS_PORT</a> structure to create a linked list of
     ports, and each <b>NDIS_PORT</b> structure contains an <b>NDIS_PORT_CHARACTERISTICS</b> structure.
 
 
@@ -331,19 +332,19 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_port">NDIS_PORT</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_port.md">NDIS_PORT</a>
 </dt>
 <dt>
-<a href="netvista.ndis_port_array">NDIS_PORT_ARRAY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_port_array.md">NDIS_PORT_ARRAY</a>
 </dt>
 <dt>
-<a href="netvista.ndismallocateport">NdisMAllocatePort</a>
+<a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a>
 </dt>
 <dt>
-<a href="netvista.net_if_direction_type">NET_IF_DIRECTION_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568742">NET_IF_DIRECTION_TYPE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569583">OID_GEN_ENUMERATE_PORTS</a>
@@ -352,15 +353,15 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569605">OID_GEN_MEDIA_CONNECT_STATUS_EX</a>
 </dt>
 <dt>
-<a href="netvista.ndis_ports">NDIS Ports</a>
+<a href="https://msdn.microsoft.com/e65f4af5-c527-4d6d-a38c-56da006b1ef7">NDIS Ports</a>
 </dt>
 <dt>
-<a href="netvista.types_of_ndis_ports">Types of NDIS Ports</a>
+<a href="https://msdn.microsoft.com/a77ceb1b-d4b9-4a42-aa5b-685295722fa3">Types of NDIS Ports</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_PORT_CHARACTERISTICS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PORT_CHARACTERISTICS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

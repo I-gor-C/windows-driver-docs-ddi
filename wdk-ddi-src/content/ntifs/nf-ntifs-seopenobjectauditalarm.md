@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.SeOpenObjectAuditAlarm
+UID: NF:ntifs.SeOpenObjectAuditAlarm
 title: SeOpenObjectAuditAlarm function
 author: windows-driver-content
 description: The SeOpenObjectAuditAlarm routine generates audit and alarm messages when an attempt is made to open an object.
@@ -7,7 +7,7 @@ old-location: ifsk\seopenobjectauditalarm.htm
 old-project: ifsk
 ms.assetid: a4310cf8-1518-4d25-b2f9-a232ddd9c535
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: SeOpenObjectAuditAlarm
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # SeOpenObjectAuditAlarm function
@@ -179,39 +180,39 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.access_state">ACCESS_STATE</a>
+<a href="..\wdm\ns-wdm-_access_state.md">ACCESS_STATE</a>
 </dt>
 <dt>
-<a href="ifsk.seauditingfileevents">SeAuditingFileEvents</a>
+<a href="..\ntifs\nf-ntifs-seauditingfileevents.md">SeAuditingFileEvents</a>
 </dt>
 <dt>
-<a href="ifsk.seauditingfileorglobalevents">SeAuditingFileOrGlobalEvents</a>
+<a href="..\ntifs\nf-ntifs-seauditingfileorglobalevents.md">SeAuditingFileOrGlobalEvents</a>
 </dt>
 <dt>
-<a href="ifsk.security_descriptor">SECURITY_DESCRIPTOR</a>
+<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="ifsk.sedeleteobjectauditalarm">SeDeleteObjectAuditAlarm</a>
+<a href="..\ntifs\nf-ntifs-sedeleteobjectauditalarm.md">SeDeleteObjectAuditAlarm</a>
 </dt>
 <dt>
-<a href="ifsk.selocksubjectcontext">SeLockSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-selocksubjectcontext.md">SeLockSubjectContext</a>
 </dt>
 <dt>
-<a href="ifsk.seopenobjectfordeleteauditalarm">SeOpenObjectForDeleteAuditAlarm</a>
+<a href="..\ntifs\nf-ntifs-seopenobjectfordeleteauditalarm.md">SeOpenObjectForDeleteAuditAlarm</a>
 </dt>
 <dt>
-<a href="ifsk.sesetaccessstategenericmapping">SeSetAccessStateGenericMapping</a>
+<a href="..\ntifs\nf-ntifs-sesetaccessstategenericmapping.md">SeSetAccessStateGenericMapping</a>
 </dt>
 <dt>
-<a href="ifsk.seunlocksubjectcontext">SeUnlockSubjectContext</a>
+<a href="..\ntifs\nf-ntifs-seunlocksubjectcontext.md">SeUnlockSubjectContext</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeOpenObjectAuditAlarm routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeOpenObjectAuditAlarm routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

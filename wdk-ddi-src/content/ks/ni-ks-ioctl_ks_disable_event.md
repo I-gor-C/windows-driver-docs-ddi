@@ -1,5 +1,5 @@
 ---
-UID: NI.ks.IOCTL_KS_DISABLE_EVENT
+UID: NI:ks.IOCTL_KS_DISABLE_EVENT
 title: IOCTL_KS_DISABLE_EVENT
 author: windows-driver-content
 description: An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the IoControl parameter of a call to KsSynchronousDeviceControl.
@@ -7,7 +7,7 @@ old-location: stream\ioctl_ks_disable_event.htm
 old-project: stream
 ms.assetid: 4e451d0c-6548-4735-833a-3972cf5e59c6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: _KsEdit
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IOCTL_KS_DISABLE_EVENT IOCTL
@@ -39,11 +40,11 @@ req.irql:
 
 ## -description
 
-An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the <b>IoControl</b> parameter of a call to <a href="stream.kssynchronousdevicecontrol">KsSynchronousDeviceControl</a>.
+An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the <b>IoControl</b> parameter of a call to <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a>.
 
 
 
-An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the <b>IoControl</b> parameter of a call to <a href="stream.kssynchronousdevicecontrol">KsSynchronousDeviceControl</a>.
+An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the <b>IoControl</b> parameter of a call to <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a>.
 
 
 
@@ -105,7 +106,7 @@ Header
 <a href="..\ks\ns-ks-ksevent_set.md">KSEVENT_SET</a>
 </dt>
 <dt>
-<a href="stream.ksevent_entry">KSEVENT_ENTRY</a>
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-ksdpc_item.md">KSDPC_ITEM</a>
@@ -114,10 +115,10 @@ Header
 <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
 </dt>
 <dt>
-<a href="stream.ksevent">KSEVENT</a>
+<a href="..\ks\nf-ks-ikscontrol-ksevent.md">KSEVENT</a>
 </dt>
 <dt>
-<a href="stream.ksdisableevent">KsDisableEvent</a>
+<a href="..\ks\nf-ks-ksdisableevent.md">KsDisableEvent</a>
 </dt>
 <dt>
 <a href="..\ks\ni-ks-ioctl_ks_disable_event.md">IOCTL_KS_DISABLE_EVENT</a>
@@ -127,5 +128,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_DISABLE_EVENT control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_KS_DISABLE_EVENT control code%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.STORPORT._STARTIO_PERFORMANCE_PARAMETERS
+UID: NS:storport._STARTIO_PERFORMANCE_PARAMETERS
 title: _STARTIO_PERFORMANCE_PARAMETERS
 author: windows-driver-content
 description: The STARTIO_PERFORMANCE_PARAMETERS structure describes the performance parameters that are returned to the miniport driver by the StorPortGetStartIoPerfParams routine.
@@ -7,8 +7,8 @@ old-location: storage\startio_performance_parameters.htm
 old-project: storage
 ms.assetid: 984a8584-ebdd-4e93-868b-1537a3615c1b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STARTIO_PERFORMANCE_PARAMETERS, *PSTARTIO_PERFORMANCE_PARAMETERS, PSTARTIO_PERFORMANCE_PARAMETERS, STARTIO_PERFORMANCE_PARAMETERS
+ms.date: 1/10/2018
+ms.keywords: _STARTIO_PERFORMANCE_PARAMETERS, STARTIO_PERFORMANCE_PARAMETERS, *PSTARTIO_PERFORMANCE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STARTIO_PERFORMANCE_PARAMETERS, *PSTARTIO_PERFORMANCE_PARAMETERS
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>STARTIO_PERFORMANCE_PARAMETERS</b> structure describes the performance parameters that are returned to the miniport driver by the <a href="storage.storportgetstartioperfparams">StorPortGetStartIoPerfParams</a> routine.
+The <b>STARTIO_PERFORMANCE_PARAMETERS</b> structure describes the performance parameters that are returned to the miniport driver by the <a href="..\storport\nf-storport-storportgetstartioperfparams.md">StorPortGetStartIoPerfParams</a> routine.
 
 
 
@@ -98,12 +99,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storportgetstartioperfparams">StorPortGetStartIoPerfParams</a>
+<a href="..\storport\nf-storport-storportgetstartioperfparams.md">StorPortGetStartIoPerfParams</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STARTIO_PERFORMANCE_PARAMETERS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STARTIO_PERFORMANCE_PARAMETERS structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

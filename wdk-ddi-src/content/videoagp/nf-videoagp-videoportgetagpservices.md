@@ -1,5 +1,5 @@
 ---
-UID: NF.videoagp.VideoPortGetAgpServices
+UID: NF:videoagp.VideoPortGetAgpServices
 title: VideoPortGetAgpServices function
 author: windows-driver-content
 description: The VideoPortGetAgpServices function is obsolete and is supported only for backward compatibility with existing drivers.
@@ -7,7 +7,7 @@ old-location: display\videoportgetagpservices.htm
 old-project: display
 ms.assetid: 3b01831d-d429-4dc5-9b12-a0e1fc58634d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VideoPortGetAgpServices
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: *PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>VideoPortGetAgpServices</b> function is <b>obsolete</b> and is supported only for backward compatibility with existing drivers. In its place, driver writers should use <a href="display.videoportqueryservices">VideoPortQueryServices</a>.
+The <b>VideoPortGetAgpServices</b> function is <b>obsolete</b> and is supported only for backward compatibility with existing drivers. In its place, driver writers should use <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>.
 
 <b>VideoPortGetAgpServices</b> returns a list of video port driver-implemented AGP service functions.
 
@@ -64,7 +65,7 @@ Pointer to the miniport driver's device extension.
 
 ### -param AgpServices [in]
 
-Pointer to an uninitialized, miniport driver-allocated <a href="display.video_port_agp_services">VIDEO_PORT_AGP_SERVICES</a> structure.
+Pointer to an uninitialized, miniport driver-allocated <a href="..\videoagp\ns-videoagp-_video_port_agp_services.md">VIDEO_PORT_AGP_SERVICES</a> structure.
 
 
 ## -returns
@@ -74,7 +75,7 @@ Pointer to an uninitialized, miniport driver-allocated <a href="display.video_po
 ## -remarks
 PnP video miniport drivers that can use AGP should call <b>VideoPortGetAgpServices</b>.
 
-The video port driver initializes the <a href="display.video_port_agp_services">VIDEO_PORT_AGP_SERVICES</a> structure as follows:
+The video port driver initializes the <a href="..\videoagp\ns-videoagp-_video_port_agp_services.md">VIDEO_PORT_AGP_SERVICES</a> structure as follows:
 
 All function pointers are initialized to point to the corresponding video port driver-implemented AGP service functions.
 
@@ -152,7 +153,7 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="display.videoportqueryservices">VideoPortQueryServices</a>
+<a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
 </dt>
 <dt>
 <a href="..\videoagp\nc-videoagp-pagp_commit_physical.md">AgpCommitPhysical</a>
@@ -177,12 +178,12 @@ PASSIVE_LEVEL
 </dt>
 <dt><b>AgpReleasePhysical</b></dt>
 <dt>
-<a href="display.video_port_agp_services">VIDEO_PORT_AGP_SERVICES</a>
+<a href="..\videoagp\ns-videoagp-_video_port_agp_services.md">VIDEO_PORT_AGP_SERVICES</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortGetAgpServices function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortGetAgpServices function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

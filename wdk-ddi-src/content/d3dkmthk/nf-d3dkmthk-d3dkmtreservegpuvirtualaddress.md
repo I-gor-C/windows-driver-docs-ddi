@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTReserveGpuVirtualAddress
+UID: NF:d3dkmthk.D3DKMTReserveGpuVirtualAddress
 title: D3DKMTReserveGpuVirtualAddress function
 author: windows-driver-content
 description: D3DKMTReserveGpuVirtualAddress reserves an address range in the current process graphics processing unit (GPU) virtual address space. The address range is only reserved, there is no actual memory behind it.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtreservegpuvirtualaddress.htm
 old-project: display
 ms.assetid: 2F8B689C-162C-4C1B-BD45-A154079334D0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTReserveGpuVirtualAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: GDI32.lib
 req.dll: GDI32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTReserveGpuVirtualAddress function

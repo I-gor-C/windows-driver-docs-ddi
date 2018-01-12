@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL
+UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL
 title: tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL
 author: windows-driver-content
 description: This structure contains information for an ROI ISP control.
@@ -7,8 +7,8 @@ old-location: stream\kscamera_extendedprop_roi_ispcontrol.htm
 old-project: stream
 ms.assetid: 49EAB8F3-35B9-4F99-A7B8-66B582B228B1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL, PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL
+ms.date: 1/9/2018
+ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL structure

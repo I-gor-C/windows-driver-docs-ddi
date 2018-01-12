@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILREMOVECALLFORWARDINGPARAMS
+UID: NS:rilapitypes.RILREMOVECALLFORWARDINGPARAMS
 title: RILREMOVECALLFORWARDINGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilremovecallforwardingparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5bdd8542-e1ef-42ac-99d7-c004039d2f33
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILREMOVECALLFORWARDINGPARAMS, RILREMOVECALLFORWARDINGPARAMS, *LPRILREMOVECALLFORWARDINGPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILREMOVECALLFORWARDINGPARAMS, *LPRILREMOVECALLFORWARDINGPARAMS, RILREMOVECALLFORWARDINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILREMOVECALLFORWARDINGPARAMS, RILREMOVECALLFORWARDINGPARAMS
 req.product: Windows 10 or later.
 ---
 

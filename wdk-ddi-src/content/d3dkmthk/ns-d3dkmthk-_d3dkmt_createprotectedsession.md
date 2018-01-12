@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_CREATEPROTECTEDSESSION
+UID: NS:d3dkmthk._D3DKMT_CREATEPROTECTEDSESSION
 title: _D3DKMT_CREATEPROTECTEDSESSION
 author: windows-driver-content
 description: Used to create a protected session.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt-createprotectedsession.htm
 old-project: display
 ms.assetid: 4ec42f5a-df33-4da3-a959-64cb400f3177
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_CREATEPROTECTEDSESSION, D3DKMT_CREATEPROTECTEDSESSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_CREATEPROTECTEDSESSION
 ---
 
 # _D3DKMT_CREATEPROTECTEDSESSION structure

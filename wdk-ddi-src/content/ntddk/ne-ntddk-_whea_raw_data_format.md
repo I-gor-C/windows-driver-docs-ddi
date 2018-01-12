@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddk._WHEA_RAW_DATA_FORMAT
+UID: NE:ntddk._WHEA_RAW_DATA_FORMAT
 title: _WHEA_RAW_DATA_FORMAT
 author: windows-driver-content
 description: The WHEA_RAW_DATA_FORMAT enumeration defines the possible formats that raw hardware error data can be encoded in a hardware error packet.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 809f2d72-e769-48c1-9ecf-6fa9020f6cdb
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT, PWHEA_RAW_DATA_FORMAT
+ms.keywords: _WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # _WHEA_RAW_DATA_FORMAT enumeration
@@ -110,7 +111,7 @@ The raw data in the hardware error packet contains a PCI/PCI-X device error data
 
 ### -field WheaRawDataFormatGeneric
 
-The raw data in the hardware error packet contains a <a href="whea.whea_generic_error">WHEA_GENERIC_ERROR</a> structure.
+The raw data in the hardware error packet contains a <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure.
 
 
 ### -field WheaRawDataFormatMax
@@ -119,7 +120,7 @@ The maximum number of formats of raw hardware error data.
 
 
 ## -remarks
-The <a href="whea.whea_error_packet_v1">WHEA_ERROR_PACKET_V1</a> structure contains a member of type WHEA_RAW_DATA_FORMAT that specifies the format of the raw data that is contained in the hardware error packet.
+The <a href="..\ntddk\ns-ntddk-_whea_error_packet_v1.md">WHEA_ERROR_PACKET_V1</a> structure contains a member of type WHEA_RAW_DATA_FORMAT that specifies the format of the raw data that is contained in the hardware error packet.
 
 
 ## -requirements
@@ -157,10 +158,10 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>
 </dt>
 <dt>
-<a href="whea.whea_error_packet_v1">WHEA_ERROR_PACKET_V1</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_packet_v1.md">WHEA_ERROR_PACKET_V1</a>
 </dt>
 <dt>
-<a href="whea.whea_generic_error">WHEA_GENERIC_ERROR</a>
+<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
 </dt>
 </dl>
  

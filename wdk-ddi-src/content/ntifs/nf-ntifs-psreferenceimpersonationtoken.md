@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.PsReferenceImpersonationToken
+UID: NF:ntifs.PsReferenceImpersonationToken
 title: PsReferenceImpersonationToken function
 author: windows-driver-content
 description: The PsReferenceImpersonationToken routine increments the reference count of the impersonation token for the specified thread.
@@ -7,7 +7,7 @@ old-location: ifsk\psreferenceimpersonationtoken.htm
 old-project: ifsk
 ms.assetid: c72f48a8-ba51-423f-9105-7d78521dcae2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: PsReferenceImpersonationToken
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # PsReferenceImpersonationToken function
@@ -153,21 +154,21 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.obdereferenceobject">ObDereferenceObject</a>
+<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
 </dt>
 <dt>
-<a href="ifsk.psdereferenceimpersonationtoken">PsDereferenceImpersonationToken</a>
+<a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
 </dt>
 <dt>
-<a href="ifsk.psimpersonateclient">PsImpersonateClient</a>
+<a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
 </dt>
 <dt>
-<a href="ifsk.security_impersonation_level">SECURITY_IMPERSONATION_LEVEL</a>
+<a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PsReferenceImpersonationToken routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20PsReferenceImpersonationToken routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

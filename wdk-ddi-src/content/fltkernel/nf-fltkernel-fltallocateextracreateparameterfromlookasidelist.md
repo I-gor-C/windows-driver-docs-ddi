@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltAllocateExtraCreateParameterFromLookasideList
+UID: NF:fltkernel.FltAllocateExtraCreateParameterFromLookasideList
 title: FltAllocateExtraCreateParameterFromLookasideList function
 author: windows-driver-content
 description: The FltAllocateExtraCreateParameterFromLookasideList routine allocates memory pool from a given lookaside list for an extra create parameter (ECP) context structure and generates a pointer to that structure.
@@ -7,7 +7,7 @@ old-location: ifsk\fltallocateextracreateparameterfromlookasidelist.htm
 old-project: ifsk
 ms.assetid: 33ab7ff3-d9b0-43ad-9971-62735f3240df
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltAllocateExtraCreateParameterFromLookasideList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltAllocateExtraCreateParameterFromLookasideList function
@@ -76,7 +77,7 @@ The size, in bytes, of the ECP context structure.
 
 ### -param Flags [in]
 
-Defines pool allocation options.  If the value of the <i>SizeOfContext</i> parameter is larger than the size, in bytes, of the given lookaside list, the ECP context structure will be allocated from system pool instead of the lookaside list.  In this case, if the <i>Flags</i> parameter contains the FSRTL_ALLOCATE_ECP_FLAG_CHARGE_QUOTA bit flag value, system pool allocated by the routine will be charged against the current process' memory quota. See the <i>Flags</i> parameter of <a href="ifsk.fltallocateextracreateparameter">FltAllocateExtraCreateParameter</a> for more information.  In the more typical case when memory for the ECP context structure is allocated from the lookaside list, the FSRTL_ALLOCATE_ECP_FLAG_CHARGE_QUOTA bit flag is not used by the routine.
+Defines pool allocation options.  If the value of the <i>SizeOfContext</i> parameter is larger than the size, in bytes, of the given lookaside list, the ECP context structure will be allocated from system pool instead of the lookaside list.  In this case, if the <i>Flags</i> parameter contains the FSRTL_ALLOCATE_ECP_FLAG_CHARGE_QUOTA bit flag value, system pool allocated by the routine will be charged against the current process' memory quota. See the <i>Flags</i> parameter of <a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameter.md">FltAllocateExtraCreateParameter</a> for more information.  In the more typical case when memory for the ECP context structure is allocated from the lookaside list, the FSRTL_ALLOCATE_ECP_FLAG_CHARGE_QUOTA bit flag is not used by the routine.
 
 
 ### -param CleanupCallback [in, optional]
@@ -87,7 +88,7 @@ Optional pointer to a minifilter-defined cleanup callback routine of type <a hre
 ### -param LookasideList [in, out]
 
 
-      Pointer to an initialized lookaside list in which to attempt to allocate pool from (for the ECP context structure).  To initialize the lookaside list, use the <a href="ifsk.fltinitextracreateparameterlookasidelist">FltInitExtraCreateParameterLookasideList</a> routine.
+      Pointer to an initialized lookaside list in which to attempt to allocate pool from (for the ECP context structure).  To initialize the lookaside list, use the <a href="..\fltkernel\nf-fltkernel-fltinitextracreateparameterlookasidelist.md">FltInitExtraCreateParameterLookasideList</a> routine.
      
 
 
@@ -113,9 +114,9 @@ This routine is available starting with Windows Vista.
 
 The <b>FltAllocateExtraCreateParameterFromLookasideList</b> routine allocates memory pool for an ECP context structure from the given initialized paged or non-paged lookaside list.  However, if the size of the ECP context structure (as defined by the <i>SizeOfContext</i>  parameter) is larger than the lookaside list, the routine analogously allocates memory from paged or non-paged system pool.
 
-Use the <a href="ifsk.fltinitextracreateparameterlookasidelist">FltInitExtraCreateParameterLookasideList</a> routine to initialize a paged or non-paged pool lookaside list. Use the <b>FltAllocateExtraCreateParameterFromLookasideList</b> routine to allocate an ECP context structure from the lookaside list, and the <a href="ifsk.fltfreeextracreateparameter">FltFreeExtraCreateParameter</a> routine to deallocate the ECP context structure.
+Use the <a href="..\fltkernel\nf-fltkernel-fltinitextracreateparameterlookasidelist.md">FltInitExtraCreateParameterLookasideList</a> routine to initialize a paged or non-paged pool lookaside list. Use the <b>FltAllocateExtraCreateParameterFromLookasideList</b> routine to allocate an ECP context structure from the lookaside list, and the <a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a> routine to deallocate the ECP context structure.
 
-Use the <a href="ifsk.fltdeleteextracreateparameterlookasidelist">FltDeleteExtraCreateParameterLookasideList</a> routine to free a lookaside list.
+Use the <a href="..\fltkernel\nf-fltkernel-fltdeleteextracreateparameterlookasidelist.md">FltDeleteExtraCreateParameterLookasideList</a> routine to free a lookaside list.
 
 Drivers must free all ECP context structures and lookaside lists they create before unloading.
 
@@ -172,43 +173,43 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ecp_list">ECP_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocateextracreateparameter">FltAllocateExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameter.md">FltAllocateExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocateextracreateparameterlist">FltAllocateExtraCreateParameterList</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
 </dt>
 <dt>
-<a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeleteextracreateparameterlookasidelist">FltDeleteExtraCreateParameterLookasideList</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeleteextracreateparameterlookasidelist.md">FltDeleteExtraCreateParameterLookasideList</a>
 </dt>
 <dt>
-<a href="ifsk.fltfreeextracreateparameter">FltFreeExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltfreeextracreateparameterlist">FltFreeExtraCreateParameterList</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetecplistfromcallbackdata">FltGetEcpListFromCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
 </dt>
 <dt>
-<a href="ifsk.fltinitextracreateparameterlookasidelist">FltInitExtraCreateParameterLookasideList</a>
+<a href="..\fltkernel\nf-fltkernel-fltinitextracreateparameterlookasidelist.md">FltInitExtraCreateParameterLookasideList</a>
 </dt>
 <dt>
-<a href="ifsk.fltinsertextracreateparameter">FltInsertExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltremoveextracreateparameter">FltRemoveExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltremoveextracreateparameter.md">FltRemoveExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetecplistintocallbackdata">FltSetEcpListIntoCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
 </dt>
 <dt>
-<a href="ifsk.iocreatefileex">IoCreateFileEx</a>
+<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
 </dt>
 <dt>
 <a href="..\ntifs\nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>
@@ -218,5 +219,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateExtraCreateParameterFromLookasideList routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateExtraCreateParameterFromLookasideList routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

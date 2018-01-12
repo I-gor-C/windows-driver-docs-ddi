@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_HANDLETYPE
+UID: NE:d3d12umddi.D3D12DDI_HANDLETYPE
 title: D3D12DDI_HANDLETYPE
 author: windows-driver-content
 description: Contains driver handle types.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_handletype.htm
 old-project: display
 ms.assetid: 807CC73E-C5A5-4D49-AFAF-32A51D832F82
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_HANDLETYPE, D3D12DDI_HANDLETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_HANDLETYPE
 ---
 
 # D3D12DDI_HANDLETYPE enumeration

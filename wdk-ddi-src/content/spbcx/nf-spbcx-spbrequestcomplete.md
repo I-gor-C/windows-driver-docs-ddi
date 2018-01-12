@@ -1,5 +1,5 @@
 ---
-UID: NF.spbcx.SpbRequestComplete
+UID: NF:spbcx.SpbRequestComplete
 title: SpbRequestComplete function
 author: windows-driver-content
 description: The SpbRequestComplete method completes an I/O request and supplies a completion status.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Spbcxstubs.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -91,7 +92,7 @@ None.
 ## -remarks
 Your controller driver calls this method to complete an I/O request that it previously received during one of the following callbacks:
 
-Call <b>SpbRequestComplete</b> instead of the <a href="kmdf.wdfrequestcomplete">WdfRequestComplete</a> method to complete I/O requests received by the callback functions in the preceding list.
+Call <b>SpbRequestComplete</b> instead of the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> method to complete I/O requests received by the callback functions in the preceding list.
 
 A bug check occurs if the caller supplies an invalid SPBREQUEST handle.
 
@@ -173,7 +174,7 @@ IRQL
 <a href="buses.spbrequest_object_handle">SPBREQUEST</a>
 </dt>
 <dt>
-<a href="kmdf.wdfrequestcomplete">WdfRequestComplete</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NS.HWNCLX._CLIENT_DEVICE_INFORMATION
+UID: NS:hwnclx._CLIENT_DEVICE_INFORMATION
 title: _CLIENT_DEVICE_INFORMATION
 author: windows-driver-content
 description: The CLIENT_DEVICE_INFORMATION structure is used by the hardware notification callback HWN_CLIENT_QUERY_DEVICE_INFORMATION to return the total number of hardware notifications that the client device driver provides.
@@ -8,7 +8,7 @@ old-project: gpiobtn
 ms.assetid: ae438f89-27b7-423f-9f82-b103ba70b7b5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CLIENT_DEVICE_INFORMATION, CLIENT_DEVICE_INFORMATION, *PCLIENT_DEVICE_INFORMATION, PCLIENT_DEVICE_INFORMATION
+ms.keywords: _CLIENT_DEVICE_INFORMATION, *PCLIENT_DEVICE_INFORMATION, CLIENT_DEVICE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PCLIENT_DEVICE_INFORMATION, CLIENT_DEVICE_INFORMATION
 ---
 
 # _CLIENT_DEVICE_INFORMATION structure
@@ -117,7 +118,7 @@ Header
 <dl>
 <dt><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a></dt>
 <dt>
-<a href="gpiobtn.hardware_notifications_reference">Hardware notifications reference</a>
+<a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
 </dt>
 </dl>
  

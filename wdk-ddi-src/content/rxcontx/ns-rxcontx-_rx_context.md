@@ -1,5 +1,5 @@
 ---
-UID: NS.RXCONTX._RX_CONTEXT
+UID: NS:rxcontx._RX_CONTEXT
 title: _RX_CONTEXT
 author: windows-driver-content
 description: The RX_CONTEXT structure encapsulates an IRP for use by RDBSS, network mini-redirectors, and the file system.
@@ -7,8 +7,8 @@ old-location: ifsk\rx_context.htm
 old-project: ifsk
 ms.assetid: 5eb83a7a-d6dd-445f-89a8-91cdf67512af
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _RX_CONTEXT, *PRX_CONTEXT, PRX_CONTEXT, RX_CONTEXT
+ms.date: 1/9/2018
+ms.keywords: _RX_CONTEXT, RX_CONTEXT, *PRX_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -209,7 +210,7 @@ typedef struct _RX_CONTEXT {
 
 ### -field NodeTypeCode
 
-The unique node type used for an RX_CONTEXT structure. All of the major structure types (RX_CONTEXT, SRV_CALL, NET_ROOT, V_NET_ROOT, SRV_OPEN, FCB, and FOBX, for example) used by RDBSS have a unique two-byte node type code defined in the <i>nodetype.h</i> include file which can be used for debugging. RDBSS sets this member to RDBSS_NTC_RX_CONTEXT when an RX_CONTEXT is initialized in the <a href="ifsk.rxinitializecontext">RxInitializeContext</a> routine. If a network mini-redirector driver initializes an RX_CONTEXT structure using some other method, this member must be set.
+The unique node type used for an RX_CONTEXT structure. All of the major structure types (RX_CONTEXT, SRV_CALL, NET_ROOT, V_NET_ROOT, SRV_OPEN, FCB, and FOBX, for example) used by RDBSS have a unique two-byte node type code defined in the <i>nodetype.h</i> include file which can be used for debugging. RDBSS sets this member to RDBSS_NTC_RX_CONTEXT when an RX_CONTEXT is initialized in the <a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a> routine. If a network mini-redirector driver initializes an RX_CONTEXT structure using some other method, this member must be set.
 
 RDBSS defines this member as part of a standard header for all structures used by RDBSS. 
 
@@ -245,7 +246,7 @@ The minor function for the IRP encapsulated by this RX_CONTEXT.
 
 ### -field PendingReturned
 
-If set to <b>TRUE</b>, this specifies that RDBSS or a driver has marked the IRP pending. Each <a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a> routine should check the value of this flag. If the flag is <b>TRUE</b>, and if the <b>IoCompletion</b> routine will not return STATUS_MORE_PROCESSING_REQUIRED, the routine should call <a href="kernel.iomarkirppending">IoMarkIrpPending</a> to propagate the pending status to drivers above it in the device stack. This member is similar to the same field in the IRP. 
+If set to <b>TRUE</b>, this specifies that RDBSS or a driver has marked the IRP pending. Each <a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a> routine should check the value of this flag. If the flag is <b>TRUE</b>, and if the <b>IoCompletion</b> routine will not return STATUS_MORE_PROCESSING_REQUIRED, the routine should call <a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a> to propagate the pending status to drivers above it in the device stack. This member is similar to the same field in the IRP. 
 
 RDBSS always sets this member to <b>TRUE</b> before calling the network mini-redirector driver.
 
@@ -257,7 +258,7 @@ If set to <b>TRUE</b>, this indicates if the associated request is to be posted 
 
 ### -field RealDevice
 
-A pointer to the device object for the target network mini-redirector driver. RDBSS sets this member to the device object for the network mini-redirector driver when an RX_CONTEXT is allocated in the <a href="ifsk.rxinitializecontext">RxInitializeContext</a> routine. This member is copied from the <b>FileObject-&gt;DeviceObject</b> member from the IRP stack. The device object for the network mini-redirector is also stored in the <b>RxDeviceObject</b> structure member.
+A pointer to the device object for the target network mini-redirector driver. RDBSS sets this member to the device object for the network mini-redirector driver when an RX_CONTEXT is allocated in the <a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a> routine. This member is copied from the <b>FileObject-&gt;DeviceObject</b> member from the IRP stack. The device object for the network mini-redirector is also stored in the <b>RxDeviceObject</b> structure member.
 
 The <b>RealDevice</b>  member is not currently used by RDBSS, but can be used by network mini-redirectors.
 
@@ -349,7 +350,7 @@ If set to <b>TRUE</b>, this member specifies that the FCB paging I/O resource ha
 
 ### -field MustSucceedDescriptorNumber
 
-A member initially set to zero in the <a href="ifsk.rxcreaterxcontext">RxCreateRxContext</a> routine. This member is not otherwise used by RDBSS, but it may be used by network mini-redirectors.
+A member initially set to zero in the <a href="..\rxcontx\nf-rxcontx-rxcreaterxcontext.md">RxCreateRxContext</a> routine. This member is not otherwise used by RDBSS, but it may be used by network mini-redirectors.
 
 
 ### -field ( unnamed struct )
@@ -359,7 +360,7 @@ A member initially set to zero in the <a href="ifsk.rxcreaterxcontext">RxCreateR
 
 ### -field StoredStatus
 
-A member of an unnamed union used to return status information by a network mini-redirector driver for low I/O operations. RDBSS also sets this value based on the status returned by the <a href="ifsk.mrxqueryfileinfo">MRxQueryFileInfo</a> routine when the file query operation is not understood by RDBSS.
+A member of an unnamed union used to return status information by a network mini-redirector driver for low I/O operations. RDBSS also sets this value based on the status returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550770">MRxQueryFileInfo</a> routine when the file query operation is not understood by RDBSS.
 
 
 ### -field StoredStatusAlignment
@@ -436,7 +437,7 @@ A pointer to the list entry used to serialize pipe operations on a per-file-obje
 
 ### -field Info
 
-A structure member of an unnamed union used for the <a href="ifsk.mrxquerydirectory">MRxQueryDirectory</a>, <a href="ifsk.mrxqueryfileinfo">MRxQueryFileInfo</a>, <a href="ifsk.mrxqueryvolumeinfo">MRxQueryVolumeInfo</a>, <a href="ifsk.mrxsetfileinfo">MRxSetFileInfo</a>, <a href="ifsk.mrxsetfileinfoatcleanup">MRxSetFileInfoAtCleanup</a>, and <a href="ifsk.mrxsetvolumeinfo">MRxSetVolumeInfo</a> routines. RDBSS passes information in the <b>Info</b> structure member to the network mini-redirector and the network mini-redirector returns information to RDBSS in the <b>Info</b> structure member. 
+A structure member of an unnamed union used for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550755">MRxQueryDirectory</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550770">MRxQueryFileInfo</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550782">MRxQueryVolumeInfo</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550790">MRxSetFileInfo</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550796">MRxSetFileInfoAtCleanup</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550810">MRxSetVolumeInfo</a> routines. RDBSS passes information in the <b>Info</b> structure member to the network mini-redirector and the network mini-redirector returns information to RDBSS in the <b>Info</b> structure member. 
 
 
 ### -field FsInformationClass
@@ -478,7 +479,7 @@ This member is reserved for internal use.
 
 ### -field PrefixClaim
 
-A structure member of an unnamed union used for prefix resolution requests sent from the Multiple UNC Provider (MUP). A prefix claim results from an <a href="ifsk.irp_mj_device_control">IRP_MJ_DEVICE_CONTROL</a> request from MUP to RDBSS for <a href="..\ntifs\ni-ntifs-ioctl_redir_query_path.md">IOCTL_REDIR_QUERY_PATH</a> or <a href="..\ntifs\ni-ntifs-ioctl_redir_query_path_ex.md">IOCTL_REDIR_QUERY_PATH_EX</a>. RDBSS passes information in the <b>PrefixClaim</b> structure to the network mini-redirector and the network mini-redirector returns information to RDBSS in the <b>PrefixClaim</b> structure. 
+A structure member of an unnamed union used for prefix resolution requests sent from the Multiple UNC Provider (MUP). A prefix claim results from an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a> request from MUP to RDBSS for <a href="..\ntifs\ni-ntifs-ioctl_redir_query_path.md">IOCTL_REDIR_QUERY_PATH</a> or <a href="..\ntifs\ni-ntifs-ioctl_redir_query_path_ex.md">IOCTL_REDIR_QUERY_PATH_EX</a>. RDBSS passes information in the <b>PrefixClaim</b> structure to the network mini-redirector and the network mini-redirector returns information to RDBSS in the <b>PrefixClaim</b> structure. 
 
 
 ### -field SuppliedPathName
@@ -502,7 +503,7 @@ This member is not currently used. The security context is passed in the <b>Crea
 
 ### -field Create
 
-A structure member of an unnamed union used for handling <a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a> requests. This member is used for handling file open requests that result in calls to the <a href="ifsk.mrxcreate">MRxCreate</a> routine. This member is also used for prefix resolution requests. RDBSS passes information in the <b>Create</b> structure member to the network mini-redirector and the network mini-redirector returns information to RDBSS in the <b>Create</b> structure member. 
+A structure member of an unnamed union used for handling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> requests. This member is used for handling file open requests that result in calls to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549862">MRxCreate</a> routine. This member is also used for prefix resolution requests. RDBSS passes information in the <b>Create</b> structure member to the network mini-redirector and the network mini-redirector returns information to RDBSS in the <b>Create</b> structure member. 
 
 
 ### -field NtCreateParameters
@@ -629,7 +630,7 @@ A Unicode string that contains the domain name for this <b>UserName</b>.
 
 ### -field QueryDirectory
 
-A structure member of an unnamed union used for handling <a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a> requests. This member is used for handling query directory requests that result in calls to the <b>MrxQueryDirectory</b> routine. RDBSS passes information in the <b>QueryDirectory</b> structure member to the network mini-redirector. 
+A structure member of an unnamed union used for handling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a> requests. This member is used for handling query directory requests that result in calls to the <b>MrxQueryDirectory</b> routine. RDBSS passes information in the <b>QueryDirectory</b> structure member to the network mini-redirector. 
 
 
 ### -field FileIndex
@@ -661,7 +662,7 @@ A Boolean value that is set to <b>TRUE</b> when the query is not a wild card que
 
 ### -field NotifyChangeDirectory
 
-A structure member of an unnamed union used for handling IRP_MJ_DIRECTORY_CONTROL requests with a minor function of IRP_MN_NOTIFY_CHANGE_DIRECTORY. This member is used for handling directory change requests that result in calls to the <a href="ifsk.mrxlowiosubmit_lowio_op_notify_change_directory_">MRxLowIOSubmit[LOWIO_OP_NOTIFY_CHANGE_DIRECTORY]</a> routine. RDBSS passes information in the <b>NotifyChangeDirectory</b> structure member and the <b>pLowIoContext-&gt;ParamsFor.NotifyChangeDirectory</b> structure to the network mini-redirector. 
+A structure member of an unnamed union used for handling IRP_MJ_DIRECTORY_CONTROL requests with a minor function of IRP_MN_NOTIFY_CHANGE_DIRECTORY. This member is used for handling directory change requests that result in calls to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550721">MRxLowIOSubmit[LOWIO_OP_NOTIFY_CHANGE_DIRECTORY]</a> routine. RDBSS passes information in the <b>NotifyChangeDirectory</b> structure member and the <b>pLowIoContext-&gt;ParamsFor.NotifyChangeDirectory</b> structure to the network mini-redirector. 
 
 
 ### -field pVNetRoot
@@ -673,12 +674,12 @@ A pointer to the V_NET_ROOT structure associated with the directory. This parame
 
 ### -field QueryEa
 
-A structure member of an unnamed union used for handling <a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a> requests. This member is used for handling extended attribute query requests that result in calls to the <a href="ifsk.mrxqueryeainfo">MRxQueryEaInfo</a> routine. RDBSS passes information in the <b>QueryEa</b> structure member to the network mini-redirector. 
+A structure member of an unnamed union used for handling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a> requests. This member is used for handling extended attribute query requests that result in calls to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550759">MRxQueryEaInfo</a> routine. RDBSS passes information in the <b>QueryEa</b> structure member to the network mini-redirector. 
 
 
 ### -field UserEaList
 
-A pointer to a caller-supplied input buffer containing a <a href="ifsk.file_get_ea_information">FILE_GET_EA_INFORMATION</a> structure specifying the extended attributes to be queried. This parameter is set to <b>IrpSp-&gt;Parameters.QueryEa.EaList</b>.
+A pointer to a caller-supplied input buffer containing a <a href="..\ntifs\ns-ntifs-_file_get_ea_information.md">FILE_GET_EA_INFORMATION</a> structure specifying the extended attributes to be queried. This parameter is set to <b>IrpSp-&gt;Parameters.QueryEa.EaList</b>.
 
 
 ### -field UserEaListLength
@@ -710,7 +711,7 @@ A Boolean value when set to <b>TRUE</b> indicates to begin the scan at the entry
 
 ### -field QuerySecurity
 
-A structure member of an unnamed union used for handling <a href="ifsk.irp_mj_query_security">IRP_MJ_QUERY_SECURITY</a> requests. This member is used for handling query security requests that result in calls to the <a href="ifsk.mrxquerysdinfo">MRxQuerySdInfo</a> routine. RDBSS passes information in the <b>QuerySecurity</b> structure member to the network mini-redirector. 
+A structure member of an unnamed union used for handling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549298">IRP_MJ_QUERY_SECURITY</a> requests. This member is used for handling query security requests that result in calls to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550776">MRxQuerySdInfo</a> routine. RDBSS passes information in the <b>QuerySecurity</b> structure member to the network mini-redirector. 
 
 
 ### -field SecurityInformation
@@ -727,7 +728,7 @@ The length, in bytes, of the buffer pointed to by <b>SecurityInformation</b> mem
 
 ### -field SetSecurity
 
-A structure member of an unnamed union used for handling <a href="ifsk.irp_mj_set_security">IRP_MJ_SET_SECURITY</a> requests. This member is used for handling query security requests that result in calls to the <a href="ifsk.mrxsetsdinfo">MRxSetSdInfo</a> routine. RDBSS passes information in the <b>SetSecurity</b> structure member to the network mini-redirector. 
+A structure member of an unnamed union used for handling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549407">IRP_MJ_SET_SECURITY</a> requests. This member is used for handling query security requests that result in calls to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550805">MRxSetSdInfo</a> routine. RDBSS passes information in the <b>SetSecurity</b> structure member to the network mini-redirector. 
 
 
 ### -field SecurityInformation
@@ -745,7 +746,7 @@ A pointer to a SECURITY_DESCRIPTOR structure that contains the values of the sec
 
 ### -field QueryQuota
 
-A structure member of an unnamed union used for handling <a href="ifsk.irp_mj_query_quota">IRP_MJ_QUERY_QUOTA</a> requests. This member is used for handling query security requests that result in calls to the <a href="ifsk.mrxqueryquotainfo">MRxQueryQuotaInfo</a> routine. RDBSS passes information in the <b>QueryQuota</b> structure member to the network mini-redirector. 
+A structure member of an unnamed union used for handling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a> requests. This member is used for handling query security requests that result in calls to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550773">MRxQueryQuotaInfo</a> routine. RDBSS passes information in the <b>QueryQuota</b> structure member to the network mini-redirector. 
 
 
 ### -field Length
@@ -787,7 +788,7 @@ A Boolean value when set to <b>TRUE</b> indicates to begin the scan at the entry
 
 ### -field SetQuota
 
-A structure member of an unnamed union used for handling <a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a> requests. This structure is not currently used by RDBSS. 
+A structure member of an unnamed union used for handling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a> requests. This structure is not currently used by RDBSS. 
 
 
 ### -field Length
@@ -821,7 +822,7 @@ An unused member of the <b>DosVolumeFunction</b> structure.
 
 ### -field ( unnamed struct )
 
-The unique node type used for an RX_CONTEXT structure. All of the major structure types (RX_CONTEXT, SRV_CALL, NET_ROOT, V_NET_ROOT, SRV_OPEN, FCB, and FOBX, for example) used by RDBSS have a unique two-byte node type code defined in the <i>nodetype.h</i> include file which can be used for debugging. RDBSS sets this member to RDBSS_NTC_RX_CONTEXT when an RX_CONTEXT is initialized in the <a href="ifsk.rxinitializecontext">RxInitializeContext</a> routine. If a network mini-redirector driver initializes an RX_CONTEXT structure using some other method, this member must be set.
+The unique node type used for an RX_CONTEXT structure. All of the major structure types (RX_CONTEXT, SRV_CALL, NET_ROOT, V_NET_ROOT, SRV_OPEN, FCB, and FOBX, for example) used by RDBSS have a unique two-byte node type code defined in the <i>nodetype.h</i> include file which can be used for debugging. RDBSS sets this member to RDBSS_NTC_RX_CONTEXT when an RX_CONTEXT is initialized in the <a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a> routine. If a network mini-redirector driver initializes an RX_CONTEXT structure using some other method, this member must be set.
 
 RDBSS defines this member as part of a standard header for all structures used by RDBSS. 
 
@@ -840,7 +841,7 @@ A pointer to a LOWIO_CONTEXT structure passed to the network mini-redirector. <b
 
 ### -field FsdUid
 
-The effective user ID if <a href="ifsk.rxstartminirdr">RxStartMinirdr</a> was called using a user-mode process thread. This member is not used by RDBSS.
+The effective user ID if <a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a> was called using a user-mode process thread. This member is not used by RDBSS.
 
 
 ### -field AlsoCanonicalNameBuffer
@@ -890,13 +891,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_get_ea_information">FILE_GET_EA_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_get_ea_information.md">FILE_GET_EA_INFORMATION</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-io_completion_routine.md">IoCompletion</a>
 </dt>
 <dt>
-<a href="kernel.iomarkirppending">IoMarkIrpPending</a>
+<a href="..\wdm\nf-wdm-iomarkirppending.md">IoMarkIrpPending</a>
 </dt>
 <dt>
 <a href="..\ntifs\ni-ntifs-ioctl_redir_query_path.md">IOCTL_REDIR_QUERY_PATH</a>
@@ -905,78 +906,78 @@ Header
 <a href="..\ntifs\ni-ntifs-ioctl_redir_query_path_ex.md">IOCTL_REDIR_QUERY_PATH_EX</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_create">IRP_MJ_CREATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_device_control">IRP_MJ_DEVICE_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_directory_control">IRP_MJ_DIRECTORY_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_query_ea">IRP_MJ_QUERY_EA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549279">IRP_MJ_QUERY_EA</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_query_quota">IRP_MJ_QUERY_QUOTA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549293">IRP_MJ_QUERY_QUOTA</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_query_security">IRP_MJ_QUERY_SECURITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549298">IRP_MJ_QUERY_SECURITY</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_set_quota">IRP_MJ_SET_QUOTA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549401">IRP_MJ_SET_QUOTA</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_set_security">IRP_MJ_SET_SECURITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549407">IRP_MJ_SET_SECURITY</a>
 </dt>
 <dt>
-<a href="ifsk.mrxcreate">MRxCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549862">MRxCreate</a>
 </dt>
 <dt>
-<a href="ifsk.mrxlowiosubmit_lowio_op_notify_change_directory_">MRxLowIOSubmit[LOWIO_OP_NOTIFY_CHANGE_DIRECTORY]</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550721">MRxLowIOSubmit[LOWIO_OP_NOTIFY_CHANGE_DIRECTORY]</a>
 </dt>
 <dt>
-<a href="ifsk.mrxquerydirectory">MRxQueryDirectory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550755">MRxQueryDirectory</a>
 </dt>
 <dt>
-<a href="ifsk.mrxqueryeainfo">MRxQueryEaInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550759">MRxQueryEaInfo</a>
 </dt>
 <dt>
-<a href="ifsk.mrxqueryfileinfo">MRxQueryFileInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550770">MRxQueryFileInfo</a>
 </dt>
 <dt>
-<a href="ifsk.mrxqueryquotainfo">MRxQueryQuotaInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550773">MRxQueryQuotaInfo</a>
 </dt>
 <dt>
-<a href="ifsk.mrxquerysdinfo">MRxQuerySdInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550776">MRxQuerySdInfo</a>
 </dt>
 <dt>
-<a href="ifsk.mrxqueryvolumeinfo">MRxQueryVolumeInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550782">MRxQueryVolumeInfo</a>
 </dt>
 <dt>
-<a href="ifsk.mrxsetfileinfo">MRxSetFileInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550790">MRxSetFileInfo</a>
 </dt>
 <dt>
-<a href="ifsk.mrxsetfileinfoatcleanup">MRxSetFileInfoAtCleanup</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550796">MRxSetFileInfoAtCleanup</a>
 </dt>
 <dt>
-<a href="ifsk.mrxsetsdinfo">MRxSetSdInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550805">MRxSetSdInfo</a>
 </dt>
 <dt>
-<a href="ifsk.mrxsetvolumeinfo">MRxSetVolumeInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550810">MRxSetVolumeInfo</a>
 </dt>
 <dt>
-<a href="ifsk.rxcreaterxcontext">RxCreateRxContext</a>
+<a href="..\rxcontx\nf-rxcontx-rxcreaterxcontext.md">RxCreateRxContext</a>
 </dt>
 <dt>
-<a href="ifsk.rxinitializecontext">RxInitializeContext</a>
+<a href="..\rxcontx\nf-rxcontx-rxinitializecontext.md">RxInitializeContext</a>
 </dt>
 <dt>
-<a href="ifsk.rxstartminirdr">RxStartMinirdr</a>
+<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RX_CONTEXT structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RX_CONTEXT structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

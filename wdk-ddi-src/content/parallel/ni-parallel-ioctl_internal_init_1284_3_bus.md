@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_INIT_1284_3_BUS
+UID: NI:parallel.IOCTL_INTERNAL_INIT_1284_3_BUS
 title: IOCTL_INTERNAL_INIT_1284_3_BUS
 author: windows-driver-content
 description: The IOCTL_INTERNAL_INIT_1284_3_BUS request initializes and assigns an IEEE 1284.3 device ID to all the 1284.3 daisy chain devices that are attached to a parallel port.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGBATOKEN, RILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_INIT_1284_3_BUS IOCTL

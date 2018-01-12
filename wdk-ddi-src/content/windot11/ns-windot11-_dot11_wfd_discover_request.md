@@ -1,13 +1,13 @@
 ---
-UID: NS.WINDOT11._DOT11_WFD_DISCOVER_REQUEST
+UID: NS:windot11._DOT11_WFD_DISCOVER_REQUEST
 title: _DOT11_WFD_DISCOVER_REQUEST
 author: windows-driver-content
 description: The OID_DOT11_WFD_DISCOVER_REQUEST structure is the input data for an OID_DOT11_WFD_DISCOVER_REQUEST request. The structure contains the parameters for a Wi-Fi Direct device discovery.
 old-location: netvista\_dot11_wfd_discover_request.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 231318AA-9112-41E2-9E7A-FEC64E5FB30A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _DOT11_WFD_DISCOVER_REQUEST, DOT11_WFD_DISCOVER_REQUEST, *PDOT11_WFD_DISCOVER_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_WFD_DISCOVER_REQUEST, *PDOT11_WFD_DISCOVER_REQUEST
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ typedef struct _DOT11_WFD_DISCOVER_REQUEST {
 ### -field Header
 
 The type, revision, and size of the<b>OID_DOT11_WFD_DISCOVER_REQUEST</b> structure. This member is formatted as an 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
      
 
 The miniport driver must set the members of 
@@ -89,7 +90,7 @@ This member must be set to
 </dd>
 </dl>
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field DiscoverType
@@ -113,7 +114,7 @@ The offset to the list of P2P Device filters, which specifies the P2P devices an
 
 When a list entry specifies a non-broadcast MAC address as the Device ID, the driver must use this MAC address in the Device ID Attribute of the P2P IEs it includes in the probe requests.
 
-The offset in the <b>InformationBuffer</b> of the <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> where a list of P2P device identifiers begins. These are the identifiers to for during device discovery.
+The offset in the <b>InformationBuffer</b> of the <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> where a list of P2P device identifiers begins. These are the identifiers to for during device discovery.
 
 
 ### -field uNumDeviceFilters
@@ -123,7 +124,7 @@ The number of P2P device filters to use during WFD device discovery. The default
 
 ### -field uIEsOffset
 
-The offset in the <b>InformationBuffer</b> of the <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure where the additional Informational Elements (IEs) begin.
+The offset in the <b>InformationBuffer</b> of the <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure where the additional Informational Elements (IEs) begin.
 
 
 ### -field uIEsLength
@@ -137,7 +138,7 @@ When TRUE, the Wi-Fi Direct device must also attempt to discover legacy networks
 
 
 ## -remarks
-Each entry in the device identifier list at <b>uDeviceFilterListOffset</b> is formatted as a <a href="netvista.dot11_mac_address">DOT11_MAC_ADDRESS</a> structure. When a non-broadcast MAC address is specified in this list, the driver must use this address in the Device ID attribute of the P2P IEs probe requests it transmits
+Each entry in the device identifier list at <b>uDeviceFilterListOffset</b> is formatted as a <a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a> structure. When a non-broadcast MAC address is specified in this list, the driver must use this address in the Device ID attribute of the P2P IEs probe requests it transmits
 
 The IEs present at <b>uIEsOffset</b>, for the duration of the device discovery, will temporarily replace IEs found at <b>DefaultRequestIEs</b> in input structure of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451790">OID_DOT11_WFD_ADDITIONAL_IE</a> request.
 
@@ -170,13 +171,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_wfd_discover_type">DOT11_WFD_DISCOVER_TYPE</a>
+<a href="..\windot11\ne-windot11-_dot11_wfd_discover_type.md">DOT11_WFD_DISCOVER_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.dot11_wfd_scan_type">DOT11_WFD_SCAN_TYPE</a>
+<a href="..\windot11\ne-windot11-_dot11_wfd_scan_type.md">DOT11_WFD_SCAN_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451795">OID_DOT11_WFD_DISCOVER_REQUEST</a>
@@ -186,5 +187,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20 DOT11_WFD_DISCOVER_REQUEST structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20 DOT11_WFD_DISCOVER_REQUEST structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.gnssdriver.GNSS_NI_REQUEST_TYPE
+UID: NE:gnssdriver.GNSS_NI_REQUEST_TYPE
 title: GNSS_NI_REQUEST_TYPE
 author: windows-driver-content
 description: This enumeration indicates the network initiated (NI) request type represented by the GNSS_NI_REQUEST_PARAM structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: GNSS_NI_REQUEST_TYPE
 ---
 
 # GNSS_NI_REQUEST_TYPE enumeration

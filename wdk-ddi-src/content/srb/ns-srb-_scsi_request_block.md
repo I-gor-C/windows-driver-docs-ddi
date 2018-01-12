@@ -1,5 +1,5 @@
 ---
-UID: NS.SRB._SCSI_REQUEST_BLOCK
+UID: NS:srb._SCSI_REQUEST_BLOCK
 title: _SCSI_REQUEST_BLOCK
 author: windows-driver-content
 description: SCSI_REQUEST_BLOCK structure
@@ -7,8 +7,8 @@ old-location: storage\scsi_request_block.htm
 old-project: storage
 ms.assetid: ddd5180d-275c-4226-9af8-8e2ae25256e7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SCSI_REQUEST_BLOCK, PSCSI_REQUEST_BLOCK, *PSCSI_REQUEST_BLOCK, SCSI_REQUEST_BLOCK
+ms.date: 1/10/2018
+ms.keywords: _SCSI_REQUEST_BLOCK, SCSI_REQUEST_BLOCK, *PSCSI_REQUEST_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SCSI_REQUEST_BLOCK, *PSCSI_REQUEST_BLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -151,7 +152,7 @@ The miniport driver should flush any cached data for the target device. This req
 ### -field SRB_FUNCTION_IO_CONTROL (0x02)
 
 <dd>
-The request is an I/O control request, originating in a user-mode application with a dedicated HBA. The SRB <b>DataBuffer</b> points to an SRB_IO_CONTROL header followed by the data area. The value in <b>DataBuffer</b> can be used by the driver, regardless of the value of <b>MapBuffers</b>. Only the SRB <b>Function</b>, <b>SrbFlags</b>, <b>TimeOutValue</b>, <b>DataBuffer</b>, and <b>DataTransferLength</b> members are valid, along with the <b>SrbExtension</b> member if the miniport driver requested SRB extensions when it initialized. If a miniport driver controls an application-dedicated HBA so it supports this request, the miniport driver should execute the request and notify the OS-specific port driver when the SRB has completed, using the normal mechanism of calls to <a href="storage.scsiportnotification">ScsiPortNotification</a> with <b>RequestComplete</b> and <b>NextRequest</b>.
+The request is an I/O control request, originating in a user-mode application with a dedicated HBA. The SRB <b>DataBuffer</b> points to an SRB_IO_CONTROL header followed by the data area. The value in <b>DataBuffer</b> can be used by the driver, regardless of the value of <b>MapBuffers</b>. Only the SRB <b>Function</b>, <b>SrbFlags</b>, <b>TimeOutValue</b>, <b>DataBuffer</b>, and <b>DataTransferLength</b> members are valid, along with the <b>SrbExtension</b> member if the miniport driver requested SRB extensions when it initialized. If a miniport driver controls an application-dedicated HBA so it supports this request, the miniport driver should execute the request and notify the OS-specific port driver when the SRB has completed, using the normal mechanism of calls to <a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a> with <b>RequestComplete</b> and <b>NextRequest</b>.
 
 
 ### -field SRB_FUNCTION_LOCK_QUEUE (0x18)
@@ -169,7 +170,7 @@ Releases the port driver's queue for a logical unit that was previously locked w
 ### -field SRB_FUNCTION_DUMP_POINTERS (0x26)
 
 <dd>
-A request with this function is sent to a Storport miniport driver that is used to control the disk that holds the crash dump data. The request collects information needed from the miniport driver to support crash dump and hibernation. See the <b>MINIPORT_DUMP_POINTERS</b> structure. A physical miniport driver must set the STOR_FEATURE_DUMP_POINTERS flag in the <b>FeatureSupport</b> member of its <a href="storage.hw_initialization_data__storport_">HW_INITIALIZATION_DATA</a> to receive a request with this function.
+A request with this function is sent to a Storport miniport driver that is used to control the disk that holds the crash dump data. The request collects information needed from the miniport driver to support crash dump and hibernation. See the <b>MINIPORT_DUMP_POINTERS</b> structure. A physical miniport driver must set the STOR_FEATURE_DUMP_POINTERS flag in the <b>FeatureSupport</b> member of its <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> to receive a request with this function.
 
 
 ### -field SRB_FUNCTION_FREE_DUMP_POINTERS (0x27)
@@ -182,7 +183,7 @@ A request with this function is sent to a Storport miniport driver to release an
 
 ### -field SrbStatus
 
-Returns the status of the completed request. This member should be set by the miniport driver before it notifies the OS-specific driver that the request has completed by calling <a href="storage.scsiportnotification">ScsiPortNotification</a> with <b>RequestComplete</b>. The value of this member can be one of the following:
+Returns the status of the completed request. This member should be set by the miniport driver before it notifies the OS-specific driver that the request has completed by calling <a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a> with <b>RequestComplete</b>. The value of this member can be one of the following:
 
 
 ### -field SRB_STATUS_PENDING
@@ -427,7 +428,7 @@ Indicates data will be transferred from the system to the device.
 ### -field SRB_FLAGS_UNSPECIFIED_DIRECTION
 
 <dd>
-Defined for backward compatibility with the ASPI/CAM SCSI interfaces, this flag indicates that the transfer direction could be either of the preceding because both of the preceding flags are set. If this flag is set, a miniport driver should determine the transfer direction by examining the data phase for the target on the SCSI bus. If its HBA is a subordinate DMA device, such a miniport driver must update SRB_FLAGS_DATA_OUT or SRB_FLAGS_DATA_IN to the correct value before it calls <a href="storage.scsiportiomaptransfer">ScsiPortIoMapTransfer</a>.
+Defined for backward compatibility with the ASPI/CAM SCSI interfaces, this flag indicates that the transfer direction could be either of the preceding because both of the preceding flags are set. If this flag is set, a miniport driver should determine the transfer direction by examining the data phase for the target on the SCSI bus. If its HBA is a subordinate DMA device, such a miniport driver must update SRB_FLAGS_DATA_OUT or SRB_FLAGS_DATA_IN to the correct value before it calls <a href="..\srb\nf-srb-scsiportiomaptransfer.md">ScsiPortIoMapTransfer</a>.
 
 
 ### -field SRB_FLAGS_NO_DATA_TRANSFER
@@ -469,13 +470,13 @@ Is irrelevant to miniport drivers.
 ### -field SRB_FLAGS_ALLOCATED_FROM_ZONE
 
 <dd>
-Is irrelevant to miniport drivers and is obsolete to current Windows class drivers. To a Windows legacy class driver, this indicates whether the SRB was allocated from a zone buffer. If this flag is set, the class driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545387">ExInterlockedFreeToZone</a> to release the SRB; otherwise, it must call <a href="kernel.exfreepool">ExFreePool</a>. New class drivers should use lookaside lists rather than zone buffers.
+Is irrelevant to miniport drivers and is obsolete to current Windows class drivers. To a Windows legacy class driver, this indicates whether the SRB was allocated from a zone buffer. If this flag is set, the class driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545387">ExInterlockedFreeToZone</a> to release the SRB; otherwise, it must call <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>. New class drivers should use lookaside lists rather than zone buffers.
 
 
 ### -field SRB_FLAGS_SGLIST_FROM_POOL
 
 <dd>
-Is irrelevant to miniport drivers. To a Windows class driver, this indicates that memory for a scatter/gather list was allocated from nonpaged pool. If this flag is set, the class driver must call <a href="kernel.exfreepool">ExFreePool</a> to release the memory after the SRB is completed. 
+Is irrelevant to miniport drivers. To a Windows class driver, this indicates that memory for a scatter/gather list was allocated from nonpaged pool. If this flag is set, the class driver must call <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> to release the memory after the SRB is completed. 
 
 
 ### -field SRB_FLAGS_BYPASS_LOCKED_QUEUE
@@ -530,7 +531,7 @@ Points to the IRP for this request. This member is irrelevant to miniport driver
 
 ### -field SrbExtension
 
-Points to the Srb extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the SCSI_HW_INITIALIZATION_DATA. The memory at <b>SrbExtension</b> is not initialized by the OS-specific port driver, and the miniport driver-determined data can be accessed directly by the HBA. The corresponding physical address can be obtained by calling <a href="storage.scsiportgetphysicaladdress">ScsiPortGetPhysicalAddress</a> with the <b>SrbExtension</b> pointer.
+Points to the Srb extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the SCSI_HW_INITIALIZATION_DATA. The memory at <b>SrbExtension</b> is not initialized by the OS-specific port driver, and the miniport driver-determined data can be accessed directly by the HBA. The corresponding physical address can be obtained by calling <a href="..\srb\nf-srb-scsiportgetphysicaladdress.md">ScsiPortGetPhysicalAddress</a> with the <b>SrbExtension</b> pointer.
 
 
 ### -field InternalStatus
@@ -594,39 +595,39 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exfreepool">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545387">ExInterlockedFreeToZone</a>
 </dt>
 <dt>
-<a href="storage.hw_initialization_data__scsi_">HW_INITIALIZATION_DATA (SCSI)</a>
+<a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
 </dt>
 <dt>
-<a href="storage.port_configuration_information__scsi_">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 </dt>
 <dt>
-<a href="storage.scsi_wmi_request_block">SCSI_WMI_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_scsi_wmi_request_block.md">SCSI_WMI_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="storage.scsiportgetphysicaladdress">ScsiPortGetPhysicalAddress</a>
+<a href="..\srb\nf-srb-scsiportgetphysicaladdress.md">ScsiPortGetPhysicalAddress</a>
 </dt>
 <dt>
-<a href="storage.scsiportgetsrb">ScsiPortGetSrb</a>
+<a href="..\srb\nf-srb-scsiportgetsrb.md">ScsiPortGetSrb</a>
 </dt>
 <dt>
-<a href="storage.scsiportiomaptransfer">ScsiPortIoMapTransfer</a>
+<a href="..\srb\nf-srb-scsiportiomaptransfer.md">ScsiPortIoMapTransfer</a>
 </dt>
 <dt>
-<a href="storage.scsiportnotification">ScsiPortNotification</a>
+<a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a>
 </dt>
 <dt>
-<a href="storage.srb_io_control">SRB_IO_CONTROL</a>
+<a href="..\ntddscsi\ns-ntddscsi-_srb_io_control.md">SRB_IO_CONTROL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSI_REQUEST_BLOCK structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSI_REQUEST_BLOCK structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

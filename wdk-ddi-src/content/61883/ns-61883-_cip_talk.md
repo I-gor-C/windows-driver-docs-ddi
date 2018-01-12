@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CIP_TALK
+UID: NS:61883._CIP_TALK
 title: _CIP_TALK
 author: windows-driver-content
 description: This structure is used to begin transmission.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: DD5EB79D-122B-4D17-9109-37473AC49C4A
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CIP_TALK, CIP_TALK, *PCIP_TALK, PCIP_TALK
+ms.keywords: _CIP_TALK, *PCIP_TALK, CIP_TALK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCIP_TALK, CIP_TALK
 ---
 
 # _CIP_TALK structure

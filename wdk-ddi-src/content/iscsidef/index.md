@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:iscsidef
 ---
 
 # Iscsidef.h header
@@ -27,6 +27,6 @@ Iscsidef.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PISCSIIPADDRESSTYPE enumeration](ne-iscsidef-piscsiipaddresstype.md) | The ISCSIIPADDRESSTYPE enumeration indicates formats for an IP address. |
-| [PISCSI_AUTH_TYPES enumeration](ne-iscsidef-piscsi_auth_types.md) | The ISCSI_AUTH_TYPES enumeration indicates the type of authentication method that is used to establish a logon connection. |
-| [PISCSI_DIGEST_TYPES enumeration](ne-iscsidef-piscsi_digest_types.md) | The ISCSI_DIGEST_TYPES enumeration indicates the digest type. |
+| [*PISCSIIPADDRESSTYPE enumeration](ne-iscsidef-piscsiipaddresstype.md) | The ISCSIIPADDRESSTYPE enumeration indicates formats for an IP address. |
+| [*PISCSI_AUTH_TYPES enumeration](ne-iscsidef-piscsi_auth_types.md) | The ISCSI_AUTH_TYPES enumeration indicates the type of authentication method that is used to establish a logon connection. |
+| [*PISCSI_DIGEST_TYPES enumeration](ne-iscsidef-piscsi_digest_types.md) | The ISCSI_DIGEST_TYPES enumeration indicates the digest type. |

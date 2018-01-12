@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILCALLMODIFICATIONINFO
+UID: NS:rilapitypes.RILCALLMODIFICATIONINFO
 title: RILCALLMODIFICATIONINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmodificationinfo_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 2e17e480-325a-4a7c-84b8-07775ddd52bc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO
+ms.date: 1/8/2018
+ms.keywords: RILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO
 req.product: Windows 10 or later.
 ---
 

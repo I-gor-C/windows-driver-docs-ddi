@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH
 title: DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH
 author: windows-driver-content
 description: The pfnRemovePath function removes a video present path to a specified VidPN topology object.
@@ -7,7 +7,7 @@ old-location: display\dxgk_vidpntopology_interface_pfnremovepath.htm
 old-project: display
 ms.assetid: 463973e0-c443-417a-86ff-0b78773d40cc
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 # DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH callback
@@ -60,7 +61,7 @@ NTSTATUS APIENTRY pfnRemovePath(
 
 ### -param hVidPnTopology [in]
 
-[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_gettopology.md">pfnGetTopology</a> function of the <a href="display.dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
+[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_gettopology.md">pfnGetTopology</a> function of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidpn_interface.md">DXGK_VIDPN_INTERFACE</a> interface.
 
 
 ### -param VidPnSourceId [in]

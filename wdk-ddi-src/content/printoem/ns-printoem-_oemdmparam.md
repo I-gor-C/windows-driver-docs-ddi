@@ -1,5 +1,5 @@
 ---
-UID: NS.PRINTOEM._OEMDMPARAM
+UID: NS:printoem._OEMDMPARAM
 title: _OEMDMPARAM
 author: windows-driver-content
 description: The OEMDMPARAM structure is used as an input parameter to the IPrintOemUI::DevMode, IPrintOemUni::DevMode, and IPrintOemPS::DevMode methods.
@@ -7,8 +7,8 @@ old-location: print\oemdmparam.htm
 old-project: print
 ms.assetid: 625980d1-47eb-4427-a9e8-967b1873bbd6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _OEMDMPARAM, OEMDMPARAM, POEMDMPARAM, *POEMDMPARAM
+ms.date: 1/8/2018
+ms.keywords: _OEMDMPARAM, *POEMDMPARAM, OEMDMPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POEMDMPARAM, OEMDMPARAM
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The OEMDMPARAM structure is used as an input parameter to the <a href="print.iprintoemui_devmode">IPrintOemUI::DevMode</a>, <a href="print.iprintoemuni_devmode">IPrintOemUni::DevMode</a>, and <a href="print.iprintoemps_devmode">IPrintOemPS::DevMode</a> methods.
+The OEMDMPARAM structure is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554167">IPrintOemUI::DevMode</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554230">IPrintOemUni::DevMode</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff553205">IPrintOemPS::DevMode</a> methods.
 
 
 
@@ -79,7 +80,7 @@ Not used.
 
 ### -field For IPrintOemUni::DevMode and IPrintOemPS::DevMode:
 
-Pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 </dd>
 </dl>
@@ -122,7 +123,7 @@ On output, contains the method-supplied size of the current version of the priva
 
 
 ## -remarks
-For more information about the use of OEMDMPARAM structure members, see the description of the <a href="print.iprintoemui_devmode">IPrintOemUI::DevMode</a> method.
+For more information about the use of OEMDMPARAM structure members, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554167">IPrintOemUI::DevMode</a> method.
 
 
 ## -requirements

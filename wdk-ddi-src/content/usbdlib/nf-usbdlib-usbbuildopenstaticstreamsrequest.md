@@ -1,13 +1,13 @@
 ---
-UID: NF.usbdlib.UsbBuildOpenStaticStreamsRequest
+UID: NF:usbdlib.UsbBuildOpenStaticStreamsRequest
 title: UsbBuildOpenStaticStreamsRequest function
 author: windows-driver-content
 description: The UsbBuildOpenStaticStreamsRequest inline function formats an URB structure for an open-streams request. The request opens streams associated with the specified bulk endpoint.
 old-location: buses\usbbuildopenbasicstreamsrequest.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: B514B88E-2D1F-43F1-BF70-BC49294CFE93
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UsbBuildOpenStaticStreamsRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>UsbBuildOpenStaticStreamsRequest</b> inline function formats an <a href="buses.urb">URB</a> structure for an open-streams request. The request opens streams associated with the specified bulk endpoint.
+The <b>UsbBuildOpenStaticStreamsRequest</b> inline function formats an <a href="..\usb\ns-usb-_urb.md">URB</a> structure for an open-streams request. The request opens streams associated with the specified bulk endpoint.
 
 
 
@@ -59,7 +60,7 @@ void UsbBuildOpenStaticStreamsRequest(
 
 ### -param Urb [in, out]
 
-Pointer to the <a href="buses.urb">URB</a> structure to be formatted for the open-stream request (URB_FUNCTION_OPEN_STATIC_STREAMS). The caller must allocate nonpaged pool for this <b>URB</b>.
+Pointer to the <a href="..\usb\ns-usb-_urb.md">URB</a> structure to be formatted for the open-stream request (URB_FUNCTION_OPEN_STATIC_STREAMS). The caller must allocate nonpaged pool for this <b>URB</b>.
 
 
 
@@ -73,7 +74,7 @@ The client driver obtains <b>PipeHandle</b> from a previous select-configuration
 
 ### -param NumberOfStreams [in]
 
-The number of streams to open. The <b>NumberOfStreams</b> value indicates the number of elements in the array pointed to by <b>Streams</b>. This value must be greater than zero and less than or equal to the maximum number of streams supported by the host controller hardware. To get the maximum number of supported streams, call <a href="buses.usbd_getcapability">USBD_QueryUsbCapability</a>. 
+The number of streams to open. The <b>NumberOfStreams</b> value indicates the number of elements in the array pointed to by <b>Streams</b>. This value must be greater than zero and less than or equal to the maximum number of streams supported by the host controller hardware. To get the maximum number of supported streams, call <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>. 
 
 The number streams must also be less than or equal to the maximum number of streams supported by the USB device. To get that number, inspect the endpoint companion descriptor. 
 
@@ -82,7 +83,7 @@ In the <b>NumberOfStreams</b> value, specify lesser of two values supported by t
 
 ### -param StreamInfoArray [in]
 
-Pointer to a caller-allocated, initialized array of <a href="buses.usbd_stream_information">USBD_STREAM_INFORMATION</a> structures. The length of the array depends on the number of streams to open and must be the same as the <b>NumberOfStreams</b> value.
+Pointer to a caller-allocated, initialized array of <a href="..\usb\ns-usb-_usbd_stream_information.md">USBD_STREAM_INFORMATION</a> structures. The length of the array depends on the number of streams to open and must be the same as the <b>NumberOfStreams</b> value.
 
 
 ## -returns
@@ -90,7 +91,7 @@ This function does not return a value.
 
 
 ## -remarks
-For a code example that shows the URB format required for an open-streams request, see <a href="buses.how_to_open_streams_in_a_usb_endpoint">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
+For a code example that shows the URB format required for an open-streams request, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
 
 
 ## -requirements
@@ -135,12 +136,12 @@ Header
 <a href="..\usb\ns-usb-_urb_open_static_streams.md">_URB_OPEN_STATIC_STREAMS</a>
 </dt>
 <dt>
-<a href="buses.how_to_open_streams_in_a_usb_endpoint">How to Open and Close Static Streams in a USB Bulk Endpoint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20UsbBuildOpenStaticStreamsRequest function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UsbBuildOpenStaticStreamsRequest function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.COMPSTUI._OPTCOMBO
+UID: NS:compstui._OPTCOMBO
 title: _OPTCOMBO
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: print\optcombo.htm
 old-project: print
 ms.assetid: B1F5A79A-8F64-4B7B-ADB4-BDD8EC17F22E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _OPTCOMBO, POPTCOMBO, OPTCOMBO, *POPTCOMBO
+ms.date: 1/8/2018
+ms.keywords: _OPTCOMBO, *POPTCOMBO, OPTCOMBO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POPTCOMBO, OPTCOMBO
 ---
 
 # _OPTCOMBO structure

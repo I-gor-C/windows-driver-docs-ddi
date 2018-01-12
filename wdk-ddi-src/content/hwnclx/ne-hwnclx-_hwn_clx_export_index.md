@@ -1,5 +1,5 @@
 ---
-UID: NE.hwnclx._HWN_CLX_EXPORT_INDEX
+UID: NE:hwnclx._HWN_CLX_EXPORT_INDEX
 title: _HWN_CLX_EXPORT_INDEX
 author: windows-driver-content
 description: Defines the position for each of the Hardware Notification exports in the export table.
@@ -8,7 +8,7 @@ old-project: gpiobtn
 ms.assetid: fcbbd188-438a-4eaa-8034-67ca52d1fb56
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HWN_CLX_EXPORT_INDEX, PHWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX, HWN_CLX_EXPORT_INDEX
+ms.keywords: _HWN_CLX_EXPORT_INDEX, HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: 
+req.typenames: HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
 ---
 
 # _HWN_CLX_EXPORT_INDEX enumeration
@@ -60,25 +61,25 @@ typedef enum _HWN_CLX_EXPORT_INDEX {
 
 ### -field RegisterClientIndex
 
-Position of the <a href="gpiobtn.hwnregisterclient">HwNRegisterClient</a> hardware notification in the export table.
+Position of the <a href="..\hwnclx\nf-hwnclx-hwnregisterclient.md">HwNRegisterClient</a> hardware notification in the export table.
 
 
 
 ### -field UnregisterClientIndex
 
-Position of the <a href="gpiobtn.hwnunregisterclient">HwNUnregisterClient</a> hardware notification in the export table.
+Position of the <a href="..\hwnclx\nf-hwnclx-hwnunregisterclient.md">HwNUnregisterClient</a> hardware notification in the export table.
 
 
 
 ### -field AddDevicePreDeviceCreateIndex
 
-Position of the <a href="gpiobtn.hwnprocessadddevicepredevicecreate">HwNProcessAddDevicePreDeviceCreate</a> hardware notification in the export table.
+Position of the <a href="..\hwnclx\nf-hwnclx-hwnprocessadddevicepredevicecreate.md">HwNProcessAddDevicePreDeviceCreate</a> hardware notification in the export table.
 
 
 
 ### -field AddDevicePostDeviceCreateIndex
 
-Position of the <a href="gpiobtn.hwnprocessadddevicepostdevicecreate">HwNProcessAddDevicePostDeviceCreate</a> hardware notification in the export table.
+Position of the <a href="..\hwnclx\nf-hwnclx-hwnprocessadddevicepostdevicecreate.md">HwNProcessAddDevicePostDeviceCreate</a> hardware notification in the export table.
 
 
 
@@ -130,7 +131,7 @@ Header
 <dl>
 <dt><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/dn789335">Hardware notifications support</a></dt>
 <dt>
-<a href="gpiobtn.hardware_notifications_reference">Hardware notifications reference</a>
+<a href="https://msdn.microsoft.com/405ff6db-9bc0-42f3-a740-49dd3967a8b3">Hardware notifications reference</a>
 </dt>
 </dl>
  

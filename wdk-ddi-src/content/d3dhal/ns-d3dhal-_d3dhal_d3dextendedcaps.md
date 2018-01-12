@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DHAL._D3DHAL_D3DEXTENDEDCAPS
+UID: NS:d3dhal._D3DHAL_D3DEXTENDEDCAPS
 title: _D3DHAL_D3DEXTENDEDCAPS
 author: windows-driver-content
 description: D3DHAL_D3DEXTENDEDCAPS describes additional 3D capabilities of the driver.
@@ -7,8 +7,8 @@ old-location: display\d3dhal_d3dextendedcaps.htm
 old-project: display
 ms.assetid: b1e63dce-6d51-438c-a4aa-cc17d9292576
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DHAL_D3DEXTENDEDCAPS, D3DHAL_D3DEXTENDEDCAPS
+ms.date: 12/29/2017
+ms.keywords: _D3DHAL_D3DEXTENDEDCAPS, D3DHAL_D3DEXTENDEDCAPS, *LPD3DHAL_D3DEXTENDEDCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DHAL_D3DEXTENDEDCAPS
 ---
 
 # _D3DHAL_D3DEXTENDEDCAPS structure
@@ -637,7 +638,7 @@ Reserved for system use.
 
 
 ## -remarks
-The driver allocates and zero-initializes this structure and sets appropriate values in the members it supports. The driver's <a href="display.ddgetdriverinfo">DdGetDriverInfo</a> function returns a pointer to this structure when that function is called with the GUID_D3DExtendedCaps GUID.
+The driver allocates and zero-initializes this structure and sets appropriate values in the members it supports. The driver's <a href="https://msdn.microsoft.com/89a22163-a678-4c72-932a-ae4d17922e0b">DdGetDriverInfo</a> function returns a pointer to this structure when that function is called with the GUID_D3DExtendedCaps GUID.
 
 When the driver fills in this structure, it can set values for execute buffer capabilities even when the interface being used to retrieve the capabilities (such as <b>lDirect3DDevice3</b>) does not support execute buffers.
 
@@ -660,12 +661,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.ddgetdriverinfo">DdGetDriverInfo</a>
+<a href="https://msdn.microsoft.com/89a22163-a678-4c72-932a-ae4d17922e0b">DdGetDriverInfo</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_D3DEXTENDEDCAPS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_D3DEXTENDEDCAPS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

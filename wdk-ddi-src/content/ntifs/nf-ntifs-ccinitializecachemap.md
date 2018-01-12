@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.CcInitializeCacheMap
+UID: NF:ntifs.CcInitializeCacheMap
 title: CcInitializeCacheMap function
 author: windows-driver-content
 description: File systems call the CcInitializeCacheMap routine to cache a file.
@@ -7,7 +7,7 @@ old-location: ifsk\ccinitializecachemap.htm
 old-project: ifsk
 ms.assetid: a76027d9-b486-4596-bbe4-0a801ed73256
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: CcInitializeCacheMap
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: 
+req.typenames: TOKEN_TYPE
 ---
 
 # CcInitializeCacheMap function
@@ -178,9 +179,9 @@ If any failure occurs, <b>CcInitializeCacheMap</b> raises a status exception for
 
 File systems must call <b>CcInitializeCacheMap</b> to cache a file before using any other cache manager routines on the file, unless the file was created with data caching disabled. In most file systems, file caching is enabled by default, but can be disabled by setting the FILE_NO_INTERMEDIATE_BUFFERING flag to <b>TRUE</b> in the file create options.
 
-After calling <b>CcInitializeCacheMap</b>, the file system can call <a href="ifsk.ccsetadditionalcacheattributes">CcSetAdditionalCacheAttributes</a> to disable read-ahead or write-behind, if desired.
+After calling <b>CcInitializeCacheMap</b>, the file system can call <a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a> to disable read-ahead or write-behind, if desired.
 
-When closing a file, every file system that supports file caching must call <a href="ifsk.ccuninitializecachemap">CcUninitializeCacheMap</a> on that file, whether the file is cached or not. Even if the file was created with caching disabled, the file system still must call <b>CcUninitializeCacheMap</b>.
+When closing a file, every file system that supports file caching must call <a href="..\ntifs\nf-ntifs-ccuninitializecachemap.md">CcUninitializeCacheMap</a> on that file, whether the file is cached or not. Even if the file was created with caching disabled, the file system still must call <b>CcUninitializeCacheMap</b>.
 
 The <b>CcIsFileCached</b> macro determines whether a file is cached or not.
 
@@ -238,15 +239,15 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ccsetadditionalcacheattributes">CcSetAdditionalCacheAttributes</a>
+<a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
 </dt>
 <dt>
-<a href="ifsk.ccuninitializecachemap">CcUninitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccuninitializecachemap.md">CcUninitializeCacheMap</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcInitializeCacheMap routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcInitializeCacheMap routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

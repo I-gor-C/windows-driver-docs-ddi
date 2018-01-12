@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._PROCESS_READWRITEVM_LOGGING_INFORMATION
+UID: NS:ntddk._PROCESS_READWRITEVM_LOGGING_INFORMATION
 title: _PROCESS_READWRITEVM_LOGGING_INFORMATION
 author: windows-driver-content
 description: Stores options for read/write access for telemetry per process.
@@ -7,8 +7,8 @@ old-location: kernel\process_readwritevm_logging_information.htm
 old-project: kernel
 ms.assetid: F1C769FD-D05F-4C23-A91E-FAEE8EA029EC
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PROCESS_READWRITEVM_LOGGING_INFORMATION, PPROCESS_READWRITEVM_LOGGING_INFORMATION, PROCESS_READWRITEVM_LOGGING_INFORMATION, *PPROCESS_READWRITEVM_LOGGING_INFORMATION
+ms.date: 1/4/2018
+ms.keywords: _PROCESS_READWRITEVM_LOGGING_INFORMATION, *PPROCESS_READWRITEVM_LOGGING_INFORMATION, PROCESS_READWRITEVM_LOGGING_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPROCESS_READWRITEVM_LOGGING_INFORMATION, PROCESS_READWRITEVM_LOGGING_INFORMATION
 ---
 
 # _PROCESS_READWRITEVM_LOGGING_INFORMATION structure

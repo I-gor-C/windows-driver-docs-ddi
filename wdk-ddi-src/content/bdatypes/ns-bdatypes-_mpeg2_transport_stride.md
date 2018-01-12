@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._MPEG2_TRANSPORT_STRIDE
+UID: NS:bdatypes._MPEG2_TRANSPORT_STRIDE
 title: _MPEG2_TRANSPORT_STRIDE
 author: windows-driver-content
 description: The MPEG2_TRANSPORT_STRIDE structure describes the format block of the MPEG2 transport stride.
@@ -7,8 +7,8 @@ old-location: stream\mpeg2_transport_stride.htm
 old-project: stream
 ms.assetid: 5756bb06-8fd3-4124-b3c8-35d5ed0bd57b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _MPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE, PMPEG2_TRANSPORT_STRIDE
+ms.date: 1/9/2018
+ms.keywords: _MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ---
 
 # _MPEG2_TRANSPORT_STRIDE structure

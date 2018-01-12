@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.READ_REGISTER_USHORT
+UID: NF:wdm.READ_REGISTER_USHORT
 title: READ_REGISTER_USHORT function
 author: windows-driver-content
 description: The READ_REGISTER_USHORT routine reads a USHORT value from the specified register address.
@@ -7,7 +7,7 @@ old-location: kernel\read_register_ushort.htm
 old-project: kernel
 ms.assetid: d1160b0a-9969-44ba-82e7-14048e1554c2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: READ_REGISTER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

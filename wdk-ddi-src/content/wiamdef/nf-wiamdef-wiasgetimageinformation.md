@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasGetImageInformation
+UID: NF:wiamdef.wiasGetImageInformation
 title: wiasGetImageInformation function
 author: windows-driver-content
 description: The wiasGetImageInformation function retrieves transfer context information from an item.
 old-location: image\wiasgetimageinformation.htm
-old-project: Image
+old-project: image
 ms.assetid: 457c4b98-313d-4b31-aa6c-fb62fea6fc7d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasGetImageInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -86,7 +87,7 @@ Initialize the MINIDRV_TRANSFER_CONTEXT structure.
 
 ### -param pmdtc [in, out]
 
-Pointer to a <a href="image.minidrv_transfer_context">MINIDRV_TRANSFER_CONTEXT</a> structure. Upon return, this structure contains the requested image item information.
+Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a> structure. Upon return, this structure contains the requested image item information.
 
 
 ## -returns
@@ -94,9 +95,9 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 
 ## -remarks
-This function uses a <a href="image.minidrv_transfer_context">MINIDRV_TRANSFER_CONTEXT</a> structure to calculate item image and item header sizes. In addition, it can optionally fill in an image header if the image format requires a data header. The header will be copied to the buffer if the <b>pTransferBuffer</b> member of the MINIDRV_TRANSFER_CONTEXT structure is not <b>NULL</b>. When using image formats (such as JPEG) that do not have a header, the header size in the <b>lHeaderSize</b> member of the MINIDRV_TRANSFER_CONTEXT structure is reported as zero.
+This function uses a <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a> structure to calculate item image and item header sizes. In addition, it can optionally fill in an image header if the image format requires a data header. The header will be copied to the buffer if the <b>pTransferBuffer</b> member of the MINIDRV_TRANSFER_CONTEXT structure is not <b>NULL</b>. When using image formats (such as JPEG) that do not have a header, the header size in the <b>lHeaderSize</b> member of the MINIDRV_TRANSFER_CONTEXT structure is reported as zero.
 
-For image formats where the actual final size of the image is not known until after data acquisition, as with multipage TIFF and compressed formats, the <b>lItemSize</b> member of the <a href="image.minidrv_transfer_context">MINIDRV_TRANSFER_CONTEXT</a> structure is reported as zero. The <b>lImageSize</b> member is reported as the size, in bytes, of the uncompressed image in a single page. 
+For image formats where the actual final size of the image is not known until after data acquisition, as with multipage TIFF and compressed formats, the <b>lItemSize</b> member of the <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a> structure is reported as zero. The <b>lImageSize</b> member is reported as the size, in bytes, of the uncompressed image in a single page. 
 
 If WIAS_INIT_CONTEXT is specified in the <i>lFlags</i> parameter, the MINIDRV_TRANSFER_CONTEXT structure pointed to by the <i>pmdtc</i> parameter is filled in with information derived from the item's image properties. This flag should be used when a minidriver has allocated a new context.
 
@@ -162,12 +163,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="image.minidrv_transfer_context">MINIDRV_TRANSFER_CONTEXT</a>
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20wiasGetImageInformation function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasGetImageInformation function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_SWIZZLE_PATTERN
+UID: NE:d3d12umddi.D3D12DDI_SWIZZLE_PATTERN
 title: D3D12DDI_SWIZZLE_PATTERN
 author: windows-driver-content
 description: Specifies a swizzle pattern.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_swizzle_pattern.htm
 old-project: display
 ms.assetid: 2C51BB44-3204-4EE8-9C86-605698BD58C0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_SWIZZLE_PATTERN, D3D12DDI_SWIZZLE_PATTERN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_SWIZZLE_PATTERN
 ---
 
 # D3D12DDI_SWIZZLE_PATTERN enumeration

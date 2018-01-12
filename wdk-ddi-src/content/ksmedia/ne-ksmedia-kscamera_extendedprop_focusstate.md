@@ -1,5 +1,5 @@
 ---
-UID: NE.ksmedia.KSCAMERA_EXTENDEDPROP_FOCUSSTATE
+UID: NE:ksmedia.KSCAMERA_EXTENDEDPROP_FOCUSSTATE
 title: KSCAMERA_EXTENDEDPROP_FOCUSSTATE
 author: windows-driver-content
 description: This enumeration contains the focus states.
@@ -7,7 +7,7 @@ old-location: stream\kscamera_extendedprop_focusstate.htm
 old-project: stream
 ms.assetid: 2B74DB73-1D27-49E6-B1D8-8246FCE2F5E1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSCAMERA_EXTENDEDPROP_FOCUSSTATE, KSCAMERA_EXTENDEDPROP_FOCUSSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSCAMERA_EXTENDEDPROP_FOCUSSTATE
 ---
 
 # KSCAMERA_EXTENDEDPROP_FOCUSSTATE enumeration

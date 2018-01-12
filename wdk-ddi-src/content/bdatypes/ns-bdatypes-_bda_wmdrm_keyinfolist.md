@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_WMDRM_KEYINFOLIST
+UID: NS:bdatypes._BDA_WMDRM_KEYINFOLIST
 title: _BDA_WMDRM_KEYINFOLIST
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bda_wmdrm_keyinfolist.htm
 old-project: stream
 ms.assetid: 0A151425-C22F-4201-855F-FF6FECE611D7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_WMDRM_KEYINFOLIST, PBDA_WMDRM_KEYINFOLIST, BDA_WMDRM_KEYINFOLIST, *PBDA_WMDRM_KEYINFOLIST
+ms.date: 1/9/2018
+ms.keywords: _BDA_WMDRM_KEYINFOLIST, BDA_WMDRM_KEYINFOLIST, *PBDA_WMDRM_KEYINFOLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: BDA_WMDRM_KEYINFOLIST, *PBDA_WMDRM_KEYINFOLIST
 ---
 
 # _BDA_WMDRM_KEYINFOLIST structure

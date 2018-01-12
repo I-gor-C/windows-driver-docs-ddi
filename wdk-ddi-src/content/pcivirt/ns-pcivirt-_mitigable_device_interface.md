@@ -1,5 +1,5 @@
 ---
-UID: NS.PCIVIRT._MITIGABLE_DEVICE_INTERFACE
+UID: NS:pcivirt._MITIGABLE_DEVICE_INTERFACE
 title: _MITIGABLE_DEVICE_INTERFACE
 author: windows-driver-content
 description: Stores function pointers to callback functions implemented by the physical function (PF) driver for the mitigable device interface.
@@ -7,8 +7,8 @@ old-location: pci\mitigable_device_interface.htm
 old-project: PCI
 ms.assetid: 1fac7c03-2a48-4b29-951d-c777fbec7dd3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _MITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE, PMITIGABLE_DEVICE_INTERFACE, *PMITIGABLE_DEVICE_INTERFACE
+ms.date: 12/29/2017
+ms.keywords: _MITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE, *PMITIGABLE_DEVICE_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: MITIGABLE_DEVICE_INTERFACE, *PMITIGABLE_DEVICE_INTERFACE
 ---
 
 # _MITIGABLE_DEVICE_INTERFACE structure
@@ -75,23 +76,23 @@ Driver-defined context passed by the driver.
 
 ### -field InterfaceReference
 
-Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="kernel.interfacereference">InterfaceReference</a>. 
+Pointer to a routine that increments the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_reference.md">InterfaceReference</a>. 
 
 
 ### -field InterfaceDereference
 
-Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="kernel.interfacedereference">InterfaceDereference</a>. 
+Pointer to a routine that decrements the number of references to this interface. For more information about this routine, see <a href="..\wdm\nc-wdm-pinterface_dereference.md">InterfaceDereference</a>. 
 
 
 ### -field ReadWriteMitigatedRegister
 
-Pointer to the driver's implementation of the <a href="buses.read_write_mitigated_register">READ_WRITE_MITIGATED_REGISTER</a> callback function.
+Pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/7cd45484-0fee-4b8e-aa35-4142883c146e">READ_WRITE_MITIGATED_REGISTER</a> callback function.
 
 
 ## -remarks
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to reset a specific virtual function. 
 
-The PF driver registers its implementation by setting the <b>ReadVfConfig</b> member of the <a href="buses._sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="wdf.wdf_query_interface_config">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="wdf.wdfdeviceaddqueryinterface">WdfDeviceAddQueryInterface</a>.
+The PF driver registers its implementation by setting the <b>ReadVfConfig</b> member of the <a href="https://msdn.microsoft.com/c71add7d-9920-4b2f-a46a-4a09a94f3900">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
 
 
 ## -requirements

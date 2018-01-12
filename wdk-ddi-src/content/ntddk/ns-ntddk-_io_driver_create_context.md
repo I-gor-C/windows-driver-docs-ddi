@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._IO_DRIVER_CREATE_CONTEXT
+UID: NS:ntddk._IO_DRIVER_CREATE_CONTEXT
 title: _IO_DRIVER_CREATE_CONTEXT
 author: windows-driver-content
 description: The IO_DRIVER_CREATE_CONTEXT structure is used to pass additional parameters to the IoCreateFileEx and FltCreateFileEx2 routines.
@@ -7,8 +7,8 @@ old-location: ifsk\io_driver_create_context.htm
 old-project: ifsk
 ms.assetid: c2d10f76-5587-4855-9a02-fa7656a3805e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _IO_DRIVER_CREATE_CONTEXT, *PIO_DRIVER_CREATE_CONTEXT, PIO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT
+ms.date: 1/9/2018
+ms.keywords: _IO_DRIVER_CREATE_CONTEXT, *PIO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PIO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT
 ---
 
 # _IO_DRIVER_CREATE_CONTEXT structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The IO_DRIVER_CREATE_CONTEXT structure is used to pass additional parameters to the <a href="ifsk.iocreatefileex">IoCreateFileEx</a> and <a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a> routines. This structure is optional.
+The IO_DRIVER_CREATE_CONTEXT structure is used to pass additional parameters to the <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a> and <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> routines. This structure is optional.
 
 
 
@@ -59,19 +60,19 @@ typedef struct _IO_DRIVER_CREATE_CONTEXT {
 
 ### -field Size
 
-A read-only member initialized by the <a href="ifsk.ioinitializedrivercreatecontext">IoInitializeDriverCreateContext</a> routine.
+A read-only member initialized by the <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a> routine.
 
 
 ### -field ExtraCreateParameter
 
-A pointer to an <a href="ifsk.ecp_list">ECP_LIST</a> structure, which contains a list of extra create parameter (ECP) entries.  See the following Remarks section for important information.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a> structure, which contains a list of extra create parameter (ECP) entries.  See the following Remarks section for important information.
 
 
 ### -field DeviceObjectHint
 
-If IO_DRIVER_CREATE_CONTEXT is being used to pass additional create parameters to the <a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a> routine, this member must be <b>NULL</b>.
+If IO_DRIVER_CREATE_CONTEXT is being used to pass additional create parameters to the <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> routine, this member must be <b>NULL</b>.
 
-If IO_DRIVER_CREATE_CONTEXT is being used to pass additional create parameters to the <a href="ifsk.iocreatefileex">IoCreateFileEx</a> routine, this member is a pointer to the device object to which the create request will be sent. The device object must be a legacy filter or file system device object in the file system driver stack for the volume on which the file or directory resides. In the <b>IoCreateFileEx</b> case, this parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request will be sent to the device object at the top of the driver stack.
+If IO_DRIVER_CREATE_CONTEXT is being used to pass additional create parameters to the <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a> routine, this member is a pointer to the device object to which the create request will be sent. The device object must be a legacy filter or file system device object in the file system driver stack for the volume on which the file or directory resides. In the <b>IoCreateFileEx</b> case, this parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request will be sent to the device object at the top of the driver stack.
 
 
 ### -field TxnParameters
@@ -85,19 +86,19 @@ The container that the file resides on. <b>This member was introduced in Windows
 
 
 ## -remarks
-The IO_DRIVER_CREATE_CONTEXT structure can be allocated from paged or nonpaged pool. The <a href="ifsk.ioinitializedrivercreatecontext">IoInitializeDriverCreateContext</a> routine must initialize the IO_DRIVER_CREATE_CONTEXT structure before the structure can be used. 
+The IO_DRIVER_CREATE_CONTEXT structure can be allocated from paged or nonpaged pool. The <a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a> routine must initialize the IO_DRIVER_CREATE_CONTEXT structure before the structure can be used. 
 
-The members of the IO_DRIVER_CREATE_CONTEXT structure (excluding the <b>Size</b> member) function as additional parameters to the <a href="ifsk.iocreatefileex">IoCreateFileEx</a> and <a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a> routines.  Relative to the <b>IoCreateFileEx</b> and <b>FltCreateFileEx2</b> routine's interface, the following information may be helpful:
+The members of the IO_DRIVER_CREATE_CONTEXT structure (excluding the <b>Size</b> member) function as additional parameters to the <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a> and <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> routines.  Relative to the <b>IoCreateFileEx</b> and <b>FltCreateFileEx2</b> routine's interface, the following information may be helpful:
 
-An ECP_LIST structure contains a list of extra create parameter (ECP) entries.  Each ECP entry (ECP context structure) in the ECP list (ECP_LIST structure) functions as an additional create parameter to <a href="ifsk.iocreatefileex">IoCreateFileEx</a> and <a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a>.
+An ECP_LIST structure contains a list of extra create parameter (ECP) entries.  Each ECP entry (ECP context structure) in the ECP list (ECP_LIST structure) functions as an additional create parameter to <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a> and <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>.
 
 To specify an ECP as part of a create operation, initialize the <b>ExtraCreateParameter</b> member of the IO_DRIVER_CREATE_CONTEXT structure with the correct routine:
 
-If ECPs are used, they must be created, manipulated, and freed by using the appropriate routines.  For example, minifilter drivers use the <a href="ifsk.fltinsertextracreateparameter">FltInsertExtraCreateParameter</a> routine to insert an ECP entry into an ECP list.  The following See Also section lists many of these required routines.
+If ECPs are used, they must be created, manipulated, and freed by using the appropriate routines.  For example, minifilter drivers use the <a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a> routine to insert an ECP entry into an ECP list.  The following See Also section lists many of these required routines.
 
-Upon return from a call to <a href="ifsk.iocreatefileex">IoCreateFileEx</a> or <a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a>, the ECP list is unchanged and can be passed to additional <b>IoCreateFileEx</b> or <b>FltCreateFileEx2</b> calls for new create operations.
+Upon return from a call to <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a> or <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>, the ECP list is unchanged and can be passed to additional <b>IoCreateFileEx</b> or <b>FltCreateFileEx2</b> calls for new create operations.
 
- To create or open a file in the context of a transaction, set the <b>TxnParameters</b> member of the IO_DRIVER_CREATE_CONTEXT structure to the value returned by the <a href="ifsk.iogettransactionparameterblock">IoGetTransactionParameterBlock</a> routine.  For more information regarding transactions, see <a href="http://go.microsoft.com/fwlink/p/?linkid=66161">Transaction Management (TxF)</a>.
+ To create or open a file in the context of a transaction, set the <b>TxnParameters</b> member of the IO_DRIVER_CREATE_CONTEXT structure to the value returned by the <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a> routine.  For more information regarding transactions, see <a href="http://go.microsoft.com/fwlink/p/?linkid=66161">Transaction Management (TxF)</a>.
 
 
 ## -requirements
@@ -128,57 +129,57 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ecp_list">ECP_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocateextracreateparameterfromlookasidelist">FltAllocateExtraCreateParameterFromLookasideList</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterfromlookasidelist.md">FltAllocateExtraCreateParameterFromLookasideList</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocateextracreateparameterlist">FltAllocateExtraCreateParameterList</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
 </dt>
 <dt>
-<a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 </dt>
 <dt>
-<a href="ifsk.fltfreeextracreateparameter">FltFreeExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltfreeextracreateparameterlist">FltFreeExtraCreateParameterList</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetecplistfromcallbackdata">FltGetEcpListFromCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
 </dt>
 <dt>
-<a href="ifsk.fltinsertextracreateparameter">FltInsertExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltremoveextracreateparameter">FltRemoveExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltremoveextracreateparameter.md">FltRemoveExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetecplistintocallbackdata">FltSetEcpListIntoCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlallocateextracreateparameterlist">FsRtlAllocateExtraCreateParameterList</a>
+<a href="..\ntifs\nf-ntifs-fsrtlallocateextracreateparameterlist.md">FsRtlAllocateExtraCreateParameterList</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlfreeextracreateparameterlist">FsRtlFreeExtraCreateParameterList</a>
+<a href="..\ntifs\nf-ntifs-fsrtlfreeextracreateparameterlist.md">FsRtlFreeExtraCreateParameterList</a>
 </dt>
 <dt>
-<a href="ifsk.iocreatefileex">IoCreateFileEx</a>
+<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
 </dt>
 <dt>
-<a href="ifsk.iocreatefilespecifydeviceobjecthint">IoCreateFileSpecifyDeviceObjectHint</a>
+<a href="..\ntddk\nf-ntddk-iocreatefilespecifydeviceobjecthint.md">IoCreateFileSpecifyDeviceObjectHint</a>
 </dt>
 <dt>
-<a href="ifsk.iogettransactionparameterblock">IoGetTransactionParameterBlock</a>
+<a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a>
 </dt>
 <dt>
-<a href="ifsk.ioinitializedrivercreatecontext">IoInitializeDriverCreateContext</a>
+<a href="..\ntddk\nf-ntddk-ioinitializedrivercreatecontext.md">IoInitializeDriverCreateContext</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IO_DRIVER_CREATE_CONTEXT structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IO_DRIVER_CREATE_CONTEXT structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

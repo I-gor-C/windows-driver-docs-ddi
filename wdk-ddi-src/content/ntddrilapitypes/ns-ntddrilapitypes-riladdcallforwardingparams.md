@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILADDCALLFORWARDINGPARAMS
+UID: NS:ntddrilapitypes.RILADDCALLFORWARDINGPARAMS
 title: RILADDCALLFORWARDINGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riladdcallforwardingparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8918552d-6a7b-414a-ab0c-a5690f109db4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILADDCALLFORWARDINGPARAMS, *LPRILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS, LPRILADDCALLFORWARDINGPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS, *LPRILADDCALLFORWARDINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILADDCALLFORWARDINGPARAMS, *LPRILADDCALLFORWARDINGPARAMS
 ---
 
 # RILADDCALLFORWARDINGPARAMS structure

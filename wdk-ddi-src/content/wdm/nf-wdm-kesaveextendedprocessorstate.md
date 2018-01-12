@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeSaveExtendedProcessorState
+UID: NF:wdm.KeSaveExtendedProcessorState
 title: KeSaveExtendedProcessorState function
 author: windows-driver-content
 description: The KeSaveExtendedProcessorState routine saves extended processor state information.
@@ -7,7 +7,7 @@ old-location: kernel\kesaveextendedprocessorstate.htm
 old-project: kernel
 ms.assetid: 06be6c3b-cc1a-4e57-8700-03357215d624
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeSaveExtendedProcessorState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: Ntoskrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -57,7 +58,7 @@ NTSTATUS KeSaveExtendedProcessorState(
 
 ### -param Mask [in]
 
-A 64-bit feature mask. The bits in this mask identify the extended processor feature states to save. If a mask bit is one, the routine saves the state of the feature that is identified by this bit. If a mask bit is zero, the state for the corresponding feature is not saved. This mask must not identify extended processor features that the operating system has not enabled. To obtain a mask of the enabled features, call the <a href="kernel.rtlgetenabledextendedfeatures">RtlGetEnabledExtendedFeatures</a> routine.
+A 64-bit feature mask. The bits in this mask identify the extended processor feature states to save. If a mask bit is one, the routine saves the state of the feature that is identified by this bit. If a mask bit is zero, the state for the corresponding feature is not saved. This mask must not identify extended processor features that the operating system has not enabled. To obtain a mask of the enabled features, call the <a href="..\ntddk\nf-ntddk-rtlgetenabledextendedfeatures.md">RtlGetEnabledExtendedFeatures</a> routine.
 
 A caller can set this parameter to the bitwise OR of one or more of the following <b>XSTATE_MASK_<i>XXX</i></b> flag bits:
 
@@ -127,7 +128,7 @@ A pointer to a caller-allocated buffer into which the routine writes an <a href=
 ## -remarks
 On x86-based processors that support the XSAVE and XRSTOR instructions, these instructions provide a flexible mechanism to save and restore extended processor state information. <b>KeSaveExtendedProcessorState</b> uses these instructions if they are available.
 
-To restore the extended processor state that was saved by <b>KeSaveExtendedProcessorState</b>, call the <a href="kernel.kerestoreextendedprocessorstate">KeRestoreExtendedProcessorState</a> routine.
+To restore the extended processor state that was saved by <b>KeSaveExtendedProcessorState</b>, call the <a href="..\wdm\nf-wdm-kerestoreextendedprocessorstate.md">KeRestoreExtendedProcessorState</a> routine.
 
 The <i>Mask</i> parameter specifies the extended processor features whose state is to be saved. A <b>KeRestoreExtendedProcessorState</b> call restores only the extended processor state that was saved by the <b>KeSaveExtendedProcessorState</b> call that saved the state.
 
@@ -135,7 +136,7 @@ Kernel-mode code must save the state of an extended processor feature before it 
 
 Interrupt service routines (ISRs) run under severe time constraints that typically prevent them from using extended processor features. However, an ISR can schedule a deferred procedure call (DPC) that uses one or more extended processor features. The DPC routine must save and restore the state of the extended features to preserve the context of the interrupted program in whose process address space the routine runs.
 
-The <a href="kernel.kesavefloatingpointstate">KeSaveFloatingPointState</a> and <a href="kernel.kerestorefloatingpointstate">KeRestoreFloatingPointState</a> routines save and restore just the floating-point state (the x87/MMX registers) and the SSE state. 
+The <a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState</a> and <a href="..\wdm\nf-wdm-kerestorefloatingpointstate.md">KeRestoreFloatingPointState</a> routines save and restore just the floating-point state (the x87/MMX registers) and the SSE state. 
 
 
 ## -requirements
@@ -209,16 +210,16 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.kerestoreextendedprocessorstate">KeRestoreExtendedProcessorState</a>
+<a href="..\wdm\nf-wdm-kerestoreextendedprocessorstate.md">KeRestoreExtendedProcessorState</a>
 </dt>
 <dt>
-<a href="kernel.kerestorefloatingpointstate">KeRestoreFloatingPointState</a>
+<a href="..\wdm\nf-wdm-kerestorefloatingpointstate.md">KeRestoreFloatingPointState</a>
 </dt>
 <dt>
-<a href="kernel.kesavefloatingpointstate">KeSaveFloatingPointState</a>
+<a href="..\wdm\nf-wdm-kesavefloatingpointstate.md">KeSaveFloatingPointState</a>
 </dt>
 <dt>
-<a href="kernel.rtlgetenabledextendedfeatures">RtlGetEnabledExtendedFeatures</a>
+<a href="..\ntddk\nf-ntddk-rtlgetenabledextendedfeatures.md">RtlGetEnabledExtendedFeatures</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566414">XSTATE_SAVE</a>
@@ -228,5 +229,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSaveExtendedProcessorState routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeSaveExtendedProcessorState routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

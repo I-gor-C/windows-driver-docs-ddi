@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2CustomReceiveTransactionInitializeComplete
+UID: NF:sercx.SerCx2CustomReceiveTransactionInitializeComplete
 title: SerCx2CustomReceiveTransactionInitializeComplete function
 author: windows-driver-content
 description: The SerCx2CustomReceiveTransactionInitializeComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished initializing the serial controller and associated hardware in preparation for a new custom-receive transaction.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -57,7 +58,7 @@ VOID SerCx2CustomReceiveTransactionInitializeComplete(
 
 ### -param CustomReceiveTransaction [in]
 
-A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a> handle to a custom-receive object. The serial controller driver previously called the <a href="serports.sercx2customreceivetransactioncreate">SerCx2CustomReceiveTransactionCreate</a> method to create this object.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a> handle to a custom-receive object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a> method to create this object.
 
 
 ### -param InitSuccess [in]
@@ -132,7 +133,7 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
 </dt>
 <dt>
-<a href="serports.sercx2customreceivetransactioncreate">SerCx2CustomReceiveTransactionCreate</a>
+<a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
 </dt>
 </dl>
  

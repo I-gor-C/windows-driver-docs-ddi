@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemDriverUni.DrvGetStandardVariable
+UID: NF:prcomoem.IPrintOemDriverUni.DrvGetStandardVariable
 title: IPrintOemDriverUni::DrvGetStandardVariable method
 author: windows-driver-content
 description: The IPrintOemDriverUni::DrvGetStandardVariable method is provided by the Unidrv driver so that rendering plug-ins can obtain the current value of Unidrv's standard variables.
@@ -7,7 +7,7 @@ old-location: print\iprintoemdriveruni_drvgetstandardvariable.htm
 old-project: print
 ms.assetid: d55d3130-14e7-438f-bfb5-18927466bd60
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemDriverUni, IPrintOemDriverUni::DrvGetStandardVariable, DrvGetStandardVariable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ HRESULT DrvGetStandardVariable(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param dwIndex 

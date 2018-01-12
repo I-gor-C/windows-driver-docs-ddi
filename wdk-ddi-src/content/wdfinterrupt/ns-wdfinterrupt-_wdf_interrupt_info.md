@@ -1,5 +1,5 @@
 ---
-UID: NS.WDFINTERRUPT._WDF_INTERRUPT_INFO
+UID: NS:wdfinterrupt._WDF_INTERRUPT_INFO
 title: _WDF_INTERRUPT_INFO
 author: windows-driver-content
 description: The WDF_INTERRUPT_INFO structure contains information about a device's interrupt resource.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_interrupt_info.htm
 old-project: wdf
 ms.assetid: 7e626306-6ad9-4d99-a578-60bf69a3e73d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO, PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO
+ms.date: 12/29/2017
+ms.keywords: _WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: *PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -104,12 +105,12 @@ The IRQL at which the device interrupts.
 
 ### -field Mode
 
-A <a href="kernel.kinterrupt_mode">KINTERRUPT_MODE</a>-typed enumerator that indicates whether the interrupt is level-triggered or edge-triggered.
+A <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>-typed enumerator that indicates whether the interrupt is level-triggered or edge-triggered.
 
 
 ### -field Polarity
 
-A <a href="wdf.wdf_interrupt_polarity">WDF_INTERRUPT_POLARITY</a>-typed enumerator that identifies the interrupt signal's polarity.
+A <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_polarity.md">WDF_INTERRUPT_POLARITY</a>-typed enumerator that identifies the interrupt signal's polarity.
 
 
 ### -field MessageSignaled
@@ -128,7 +129,7 @@ A value that identifies the processor group that the <b>TargetProcessorSet</b> m
 
 
 ## -remarks
-The <b>WDF_INTERRUPT_INFO</b> structure is used as input to the <a href="wdf.wdfinterruptgetinfo">WdfInterruptGetInfo</a> method. To initialize a <b>WDF_INTERRUPT_INFO</b> structure, your driver should call <a href="wdf.wdf_interrupt_info_init">WDF_INTERRUPT_INFO_INIT</a> before calling <b>WdfInterruptGetInfo</b>.
+The <b>WDF_INTERRUPT_INFO</b> structure is used as input to the <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptgetinfo.md">WdfInterruptGetInfo</a> method. To initialize a <b>WDF_INTERRUPT_INFO</b> structure, your driver should call <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a> before calling <b>WdfInterruptGetInfo</b>.
 
 
 ## -requirements
@@ -169,24 +170,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfinterruptgetinfo">WdfInterruptGetInfo</a>
+<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptgetinfo.md">WdfInterruptGetInfo</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
 </dt>
 <dt>
-<a href="kernel.kinterrupt_mode">KINTERRUPT_MODE</a>
+<a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
 </dt>
 <dt>
-<a href="wdf.wdf_interrupt_info_init">WDF_INTERRUPT_INFO_INIT</a>
+<a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a>
 </dt>
 <dt>
-<a href="wdf.wdf_interrupt_polarity">WDF_INTERRUPT_POLARITY</a>
+<a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_polarity.md">WDF_INTERRUPT_POLARITY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_INTERRUPT_INFO structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_INTERRUPT_INFO structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

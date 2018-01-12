@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILSENDRTTDATAPARAMS
+UID: NS:rilapitypes.RILSENDRTTDATAPARAMS
 title: RILSENDRTTDATAPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendrttdataparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9fc4662f-e827-473a-8e18-f60afb62cd5e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSENDRTTDATAPARAMS, RILSENDRTTDATAPARAMS, *LPRILSENDRTTDATAPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILSENDRTTDATAPARAMS, *LPRILSENDRTTDATAPARAMS, RILSENDRTTDATAPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSENDRTTDATAPARAMS, RILSENDRTTDATAPARAMS
 req.product: Windows 10 or later.
 ---
 

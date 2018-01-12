@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorscx.SensorsCxSensorDataReady
+UID: NF:sensorscx.SensorsCxSensorDataReady
 title: SensorsCxSensorDataReady function
 author: windows-driver-content
 description: This function notifies the class extension that the driver has retrieved data.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 

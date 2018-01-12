@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeIpiGenericCall
+UID: NF:wdm.KeIpiGenericCall
 title: KeIpiGenericCall function
 author: windows-driver-content
 description: The KeIpiGenericCall routine causes the specified routine to run on all processors simultaneously.
@@ -7,7 +7,7 @@ old-location: kernel\keipigenericcall.htm
 old-project: kernel
 ms.assetid: 11424e94-d279-4003-a97c-a46d1a75e8e5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeIpiGenericCall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: < IPI_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -57,7 +58,7 @@ ULONG_PTR KeIpiGenericCall(
 
 ### -param BroadcastFunction [in]
 
-Pointer to an <a href="kernel.ipigenericcall">IpiGenericCall</a> routine. This routine is run on every processor simultaneously.
+Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550688">IpiGenericCall</a> routine. This routine is run on every processor simultaneously.
 
 
 ### -param Context [in]
@@ -66,11 +67,11 @@ Specifies the value to pass to <i>IpiGenericCall</i> when it is called.
 
 
 ## -returns
-<b>KeIpiGenericCall</b> returns the value that <a href="kernel.ipigenericcall">IpiGenericCall</a> returns on the source processor (the processor that called <b>KeIpiGenericCall</b>). 
+<b>KeIpiGenericCall</b> returns the value that <a href="https://msdn.microsoft.com/library/windows/hardware/ff550688">IpiGenericCall</a> returns on the source processor (the processor that called <b>KeIpiGenericCall</b>). 
 
 
 ## -remarks
-When a driver calls <b>KeIpiGenericCall</b>, the system interrupts every processor and raises the IRQL to IPI_LEVEL (interprocessor interrupt level). Each processor spins on a barrier until all processors have reached the barrier; then, all processors begin calling <a href="kernel.ipigenericcall">IpiGenericCall</a>. <b>KeIpiGenericCall</b> waits for all calls to <i>IpiGenericCall</i> to complete before returning. 
+When a driver calls <b>KeIpiGenericCall</b>, the system interrupts every processor and raises the IRQL to IPI_LEVEL (interprocessor interrupt level). Each processor spins on a barrier until all processors have reached the barrier; then, all processors begin calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550688">IpiGenericCall</a>. <b>KeIpiGenericCall</b> waits for all calls to <i>IpiGenericCall</i> to complete before returning. 
 
 
 ## -requirements
@@ -144,12 +145,12 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.ipigenericcall">IpiGenericCall</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550688">IpiGenericCall</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeIpiGenericCall routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeIpiGenericCall routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE
+UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE
 title: tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE
 author: windows-driver-content
 description: This structure contains the ROI info structure for white balance.
@@ -7,8 +7,8 @@ old-location: stream\kscamera_extendedprop_roi_whitebalance.htm
 old-project: stream
 ms.assetid: 16BDC61E-390C-4D79-A8D0-049404974733
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, *PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE
+ms.date: 1/9/2018
+ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, *PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE, KSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE structure
@@ -56,7 +57,7 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_WHITEBALANCE {
 
 ### -field ROIInfo
 
-See the <a href="stream.kscamera_extendedprop_roi_info">KSCAMERA_EXTENDEDPROP_ROI_INFO</a> structure for more information.
+See the <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_info.md">KSCAMERA_EXTENDEDPROP_ROI_INFO</a> structure for more information.
 
 
 ### -field Reserved

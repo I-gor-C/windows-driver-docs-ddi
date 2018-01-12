@@ -1,5 +1,5 @@
 ---
-UID: NE.ksmedia.KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY
+UID: NE:ksmedia.KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY
 title: KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY
 author: windows-driver-content
 description: This enumeration contains extended camera controls.
@@ -7,7 +7,7 @@ old-location: stream\ksproperty_cameracontrol_extended_property.htm
 old-project: stream
 ms.assetid: DA89A917-75F3-4120-90A4-8DA9DB322B4F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY, KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY
 ---
 
 # KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSDS3D_LISTENER_ORIENTATION
+UID: NS:ksmedia.KSDS3D_LISTENER_ORIENTATION
 title: KSDS3D_LISTENER_ORIENTATION
 author: windows-driver-content
 description: A KSD3D_LISTENER_ORIENTATION structure specifies the position vector of the 3D listener. This structure is used to get or set the data value for the KSPROPERTY_DIRECTSOUND3DLISTENER_ORIENTATION property.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 3bcb9a6f-aacc-4b42-ba8e-1a1a4898f96d
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSDS3D_LISTENER_ORIENTATION, *PKSDS3D_LISTENER_ORIENTATION, KSDS3D_LISTENER_ORIENTATION, PKSDS3D_LISTENER_ORIENTATION
+ms.keywords: KSDS3D_LISTENER_ORIENTATION, *PKSDS3D_LISTENER_ORIENTATION, KSDS3D_LISTENER_ORIENTATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSDS3D_LISTENER_ORIENTATION, KSDS3D_LISTENER_ORIENTATION
 ---
 
 # KSDS3D_LISTENER_ORIENTATION structure
@@ -56,7 +57,7 @@ typedef struct {
 
 ### -field Front
 
-Specifies the front orientation vector of the 3D listener. This member is a structure of type <a href="audio.ds3dvector">DS3DVECTOR</a>.
+Specifies the front orientation vector of the 3D listener. This member is a structure of type <a href="..\ksmedia\ns-ksmedia-_ds3dvector.md">DS3DVECTOR</a>.
 
 
 ### -field Top
@@ -89,7 +90,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537343">KSPROPERTY_DIRECTSOUND3DLISTENER_ORIENTATION</a>
 </dt>
 <dt>
-<a href="audio.ds3dvector">DS3DVECTOR</a>
+<a href="..\ksmedia\ns-ksmedia-_ds3dvector.md">DS3DVECTOR</a>
 </dt>
 </dl>
  

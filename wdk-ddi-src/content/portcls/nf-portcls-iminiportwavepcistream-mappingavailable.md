@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWavePciStream.MappingAvailable
+UID: NF:portcls.IMiniportWavePciStream.MappingAvailable
 title: IMiniportWavePciStream::MappingAvailable method
 author: windows-driver-content
 description: The MappingAvailable method indicates that a new mapping is available.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL (see Remarks section)
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWavePciStream::MappingAvailable method
@@ -61,7 +62,7 @@ None
 
 
 ## -remarks
-The port driver calls the <code>MappingAvailable</code> method to notify the miniport driver that a new mapping has become available, but it does so only when the miniport driver's previous request for mapping through <a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a> has been refused.
+The port driver calls the <code>MappingAvailable</code> method to notify the miniport driver that a new mapping has become available, but it does so only when the miniport driver's previous request for mapping through <a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a> has been refused.
 
 The port driver (Portcls.sys) can call the <code>MappingAvailable</code> method at any level equal to or below DISPATCH_LEVEL, depending on the circumstances under which the call is made. As a result, the <code>MappingAvailable</code> method must be in a non-paged code segment and can only touch non-paged code.
 
@@ -110,7 +111,7 @@ IRQL
 <a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
 </dt>
 <dt>
-<a href="audio.iportwavepcistream_getmapping">IPortWavePciStream::GetMapping</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>
 </dt>
 </dl>
  

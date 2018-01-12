@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:prcomoem
 ---
 
 # Prcomoem.h header
@@ -23,6 +23,12 @@ Prcomoem.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [tagOEMPTOPTS enumeration](ne-prcomoem-tagoemptopts.md) | . |
+
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [IPrintOemEngine interface](nn-prcomoem-iprintoemengine.md) | . |
 
 ## Methods
 

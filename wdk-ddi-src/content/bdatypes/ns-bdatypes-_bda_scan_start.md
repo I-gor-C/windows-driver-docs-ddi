@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_SCAN_START
+UID: NS:bdatypes._BDA_SCAN_START
 title: _BDA_SCAN_START
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bda_scan_start.htm
 old-project: stream
 ms.assetid: 931CC532-BC46-4B64-B6BA-29D20827EC0A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_SCAN_START, *PBDA_SCAN_START, PBDA_SCAN_START, BDA_SCAN_START
+ms.date: 1/9/2018
+ms.keywords: _BDA_SCAN_START, *PBDA_SCAN_START, BDA_SCAN_START
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PBDA_SCAN_START, BDA_SCAN_START
 ---
 
 # _BDA_SCAN_START structure

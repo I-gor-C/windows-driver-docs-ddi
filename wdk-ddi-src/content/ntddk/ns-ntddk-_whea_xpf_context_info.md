@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_XPF_CONTEXT_INFO
+UID: NS:ntddk._WHEA_XPF_CONTEXT_INFO
 title: _WHEA_XPF_CONTEXT_INFO
 author: windows-driver-content
 description: The WHEA_XPF_CONTEXT_INFO structure describes processor context information for an x86 or x64 processor.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 044af92b-b77c-415c-9ca5-4436bfe497e5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_XPF_CONTEXT_INFO, PWHEA_XPF_CONTEXT_INFO, WHEA_XPF_CONTEXT_INFO, *PWHEA_XPF_CONTEXT_INFO
+ms.keywords: _WHEA_XPF_CONTEXT_INFO, WHEA_XPF_CONTEXT_INFO, *PWHEA_XPF_CONTEXT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_XPF_CONTEXT_INFO, *PWHEA_XPF_CONTEXT_INFO
 ---
 
 # _WHEA_XPF_CONTEXT_INFO structure
@@ -210,10 +211,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_x64_register_state">WHEA_X64_REGISTER_STATE</a>
+<a href="..\ntddk\ns-ntddk-_whea_x64_register_state.md">WHEA_X64_REGISTER_STATE</a>
 </dt>
 <dt>
-<a href="whea.whea_x86_register_state">WHEA_X86_REGISTER_STATE</a>
+<a href="..\ntddk\ns-ntddk-_whea_x86_register_state.md">WHEA_X86_REGISTER_STATE</a>
 </dt>
 <dt>
 <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>

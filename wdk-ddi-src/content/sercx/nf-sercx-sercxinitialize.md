@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCxInitialize
+UID: NF:sercx.SerCxInitialize
 title: SerCxInitialize function
 author: windows-driver-content
 description: The SerCxInitialize method completes the initialization of the serial framework extension (SerCx) after this driver creates the associated device object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ A WDFDEVICE handle to the framework device object that represents the serial con
 
 ### -param Config [in]
 
-A pointer to a caller-allocated <a href="serports.sercx_config">SERCX_CONFIG</a> structure that contains configuration information for SerCx. The caller previously called the <a href="serports.sercx_config_init">SERCX_CONFIG_INIT</a> function to initialize this structure.
+A pointer to a caller-allocated <a href="..\sercx\ns-sercx-_sercx_config.md">SERCX_CONFIG</a> structure that contains configuration information for SerCx. The caller previously called the <a href="..\sercx\nf-sercx-sercx_config_init.md">SERCX_CONFIG_INIT</a> function to initialize this structure.
 
 
 ## -returns
@@ -82,7 +83,7 @@ The serial controller driver calls this method after it creates the associated d
 
 <b>SerCxInitialize</b> registers the controller driver’s I/O callback functions with SerCx. In addition, this method defines the transfer mode for the I/O queue.  During the call, this method creates all of the internal structures required by SerCx (including the I/O queue for the serial controller).  After this method returns, SerCx is ready to process I/O.  However, the controller driver might configure controller hardware settings before it returns from the <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback or before it adds the PDO to the child list.
 
-If the parameters are invalid (as described in <a href="serports.sercx_config">SERCX_CONFIG</a>), <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> will raise an error.
+If the parameters are invalid (as described in <a href="..\sercx\ns-sercx-_sercx_config.md">SERCX_CONFIG</a>), <a href="https://msdn.microsoft.com/library/windows/hardware/ff557262">Driver Verifier</a> will raise an error.
 
 This routine must be called before committing the device (returning from <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> or adding the PDO to the child list).
 
@@ -139,10 +140,10 @@ PASSIVE_LEVEL
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 </dt>
 <dt>
-<a href="serports.sercx_config">SERCX_CONFIG</a>
+<a href="..\sercx\ns-sercx-_sercx_config.md">SERCX_CONFIG</a>
 </dt>
 <dt>
-<a href="serports.sercx_config_init">SERCX_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx_config_init.md">SERCX_CONFIG_INIT</a>
 </dt>
 </dl>
  

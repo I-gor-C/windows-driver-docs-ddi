@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsStreamPointerAdvanceOffsetsAndUnlock
+UID: NF:ks.KsStreamPointerAdvanceOffsetsAndUnlock
 title: KsStreamPointerAdvanceOffsetsAndUnlock function
 author: windows-driver-content
 description: The KsStreamPointerAdvanceOffsetsAndUnlock function advances StreamPointer the specified number of bytes into the stream (adjusting the OffsetIn and OffsetOut fields of StreamPointer as requested) and unlocks it.
@@ -7,7 +7,7 @@ old-location: stream\ksstreampointeradvanceoffsetsandunlock.htm
 old-project: stream
 ms.assetid: bb15eb8e-b609-4110-b0de-71efb8ef1f5e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsStreamPointerAdvanceOffsetsAndUnlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: 
 ---
 
 # KsStreamPointerAdvanceOffsetsAndUnlock function
@@ -58,7 +59,7 @@ void KsStreamPointerAdvanceOffsetsAndUnlock(
 
 ### -param StreamPointer [in]
 
-A pointer to a <a href="stream.ksstream_pointer">KSSTREAM_POINTER</a> structure representing the stream pointer to advance and unlock.
+A pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer to advance and unlock.
 
 
 ### -param InUsed [in]
@@ -144,24 +145,24 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksstreampointeradvance">KsStreamPointerAdvance</a>
+<a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerunlock">KsStreamPointerUnlock</a>
+<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerlock">KsStreamPointerLock</a>
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerclone">KsStreamPointerClone</a>
+<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerdelete">KsStreamPointerDelete</a>
+<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerAdvanceOffsetsAndUnlock function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerAdvanceOffsetsAndUnlock function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

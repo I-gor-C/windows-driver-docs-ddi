@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ClfsReadRestartArea
+UID: NF:wdm.ClfsReadRestartArea
 title: ClfsReadRestartArea function
 author: windows-driver-content
 description: The ClfsReadRestartArea routine reads the restart record that was most recently written to a specified CLFS stream.
@@ -7,7 +7,7 @@ old-location: kernel\clfsreadrestartarea.htm
 old-project: kernel
 ms.assetid: d391a7ed-220e-412a-8e32-22b206c7a062
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ClfsReadRestartArea
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Clfs.lib
 req.dll: Clfs.sys
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ NTSTATUS ClfsReadRestartArea(
 
 ### -param pvMarshalContext [in, out]
 
-A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="kernel.clfscreatemarshallingarea">ClfsCreateMarshallingArea</a>.
+A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.
 
 
 ### -param ppvRestartBuffer [out]
@@ -80,7 +81,7 @@ A pointer to a CLFS_LSN structure that receives the LSN of the restart record th
 
 ### -param ppvReadContext [out]
 
-A pointer to a variable that receives a pointer to an opaque read context. The caller can pass this context to <a href="kernel.clfsreadpreviousrestartarea">ClfsReadPreviousRestartArea</a> or <a href="kernel.clfsreadnextlogrecord">ClfsReadNextLogRecord</a>. When the caller has finished using the read context, it must free the context by calling <a href="kernel.clfsterminatereadlog">ClfsTerminateReadLog</a>.
+A pointer to a variable that receives a pointer to an opaque read context. The caller can pass this context to <a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a> or <a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>. When the caller has finished using the read context, it must free the context by calling <a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a>.
 
 
 ## -returns
@@ -166,21 +167,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfscreatemarshallingarea">ClfsCreateMarshallingArea</a>
+<a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>
 </dt>
 <dt>
-<a href="kernel.clfsreadnextlogrecord">ClfsReadNextLogRecord</a>
+<a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
 </dt>
 <dt>
-<a href="kernel.clfsreadpreviousrestartarea">ClfsReadPreviousRestartArea</a>
+<a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
 </dt>
 <dt>
-<a href="kernel.clfsterminatereadlog">ClfsTerminateReadLog</a>
+<a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReadRestartArea routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsReadRestartArea routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

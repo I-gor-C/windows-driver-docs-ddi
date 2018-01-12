@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddstor.IOCTL_STORAGE_FIRMWARE_ACTIVATE
+UID: NI:ntddstor.IOCTL_STORAGE_FIRMWARE_ACTIVATE
 title: IOCTL_STORAGE_FIRMWARE_ACTIVATE
 author: windows-driver-content
 description: A driver can use IOCTL_STORAGE_FIRMWARE_ACTIVATE to activate a firmware image on a storage device.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_storage_firmware_activate.htm
 old-project: storage
 ms.assetid: 5604A708-D321-423B-826D-94F4295B4307
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_ZONE_CONDITION, PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_FIRMWARE_ACTIVATE IOCTL
@@ -46,12 +47,12 @@ A driver can use <b>IOCTL_STORAGE_FIRMWARE_ACTIVATE</b> to activate a firmware i
 
 ### -input-buffer
 <b>
-       Irp-&gt;AssociatedIrp.SystemBuffer</b> contains <a href="storage.storage_hw_firmware_activate">STORAGE_HW_FIRMWARE_ACTIVATE</a> data that specifies information about the downloaded firmware to activate.
+       Irp-&gt;AssociatedIrp.SystemBuffer</b> contains <a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_activate.md">STORAGE_HW_FIRMWARE_ACTIVATE</a> data that specifies information about the downloaded firmware to activate.
 
 
 ### -input-buffer-length
 <b>
-       Parameters.DeviceIoControl.InputBufferLength</b> indicates the size, in bytes, of the parameter buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be &gt;= <b>sizeof</b>(<a href="storage.storage_hw_firmware_activate">STORAGE_HW_FIRMWARE_ACTIVATE</a>).
+       Parameters.DeviceIoControl.InputBufferLength</b> indicates the size, in bytes, of the parameter buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>, which must be &gt;= <b>sizeof</b>(<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_activate.md">STORAGE_HW_FIRMWARE_ACTIVATE</a>).
 
 
 ### -output-buffer
@@ -116,30 +117,30 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storage_hw_firmware_activate">STORAGE_HW_FIRMWARE_ACTIVATE</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_activate.md">STORAGE_HW_FIRMWARE_ACTIVATE</a>
 </dt>
 <dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_firmware_download.md">IOCTL_STORAGE_FIRMWARE_DOWNLOAD</a>
 </dt>
 <dt>
-<a href="storage.storage_hw_firmware_download">STORAGE_HW_FIRMWARE_DOWNLOAD</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_download.md">STORAGE_HW_FIRMWARE_DOWNLOAD</a>
 </dt>
 <dt>
 <a href="..\ntddstor\ni-ntddstor-ioctl_storage_firmware_get_info.md">IOCTL_STORAGE_FIRMWARE_GET_INFO</a>
 </dt>
 <dt>
-<a href="storage.storage_hw_firmware_info">STORAGE_HW_FIRMWARE_INFO</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info.md">STORAGE_HW_FIRMWARE_INFO</a>
 </dt>
 <dt>
-<a href="storage.storage_hw_firmware_info_query">STORAGE_HW_FIRMWARE_INFO_QUERY</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_info_query.md">STORAGE_HW_FIRMWARE_INFO_QUERY</a>
 </dt>
 <dt>
-<a href="storage.storage_hw_firmware_slot_info">STORAGE_HW_FIRMWARE_SLOT_INFO</a>
+<a href="..\ntddstor\ns-ntddstor-_storage_hw_firmware_slot_info.md">STORAGE_HW_FIRMWARE_SLOT_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_STORAGE_FIRMWARE_ACTIVATE control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_STORAGE_FIRMWARE_ACTIVATE control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSIOP._REMOVEPERSISTENTLOGIN_IN
+UID: NS:iscsiop._RemovePersistentLogin_IN
 title: _RemovePersistentLogin_IN
 author: windows-driver-content
 description: The RemovePersistentLogin_IN structure holds the input data for the RemovePersistentLogin method, which is used to remove persistent login information.
@@ -7,8 +7,8 @@ old-location: storage\removepersistentlogin_in.htm
 old-project: storage
 ms.assetid: 94dc7a87-83a0-419d-914c-008d797fec87
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _RemovePersistentLogin_IN, PRemovePersistentLogin_IN, *PRemovePersistentLogin_IN, RemovePersistentLogin_IN
+ms.date: 1/10/2018
+ms.keywords: _RemovePersistentLogin_IN, *PRemovePersistentLogin_IN, RemovePersistentLogin_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PRemovePersistentLogin_IN, RemovePersistentLogin_IN
 ---
 
 # _RemovePersistentLogin_IN structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The RemovePersistentLogin_IN structure holds the input data for the <a href="storage.removepersistentlogin">RemovePersistentLogin</a> method, which is used to remove persistent login information.
+The RemovePersistentLogin_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563995">RemovePersistentLogin</a> method, which is used to remove persistent login information.
 
 
 
@@ -67,7 +68,7 @@ The iSCSI target name to be removed from the initiator's list of persistent logo
 
 ### -field TargetPortal
 
-A <a href="storage.iscsi_targetportal">ISCSI_TargetPortal</a> structure that specifies the target portal for which the initiator should delete persistent logons. ISCSI_TargetPortal has an <b>Address</b> member of type <a href="storage.iscsi_ip_address">ISCSI_IP_Address</a>. If the <b>Type</b> member of ISCSI_IP_Address is set to ISCSI_IP_ADDRESS_EMPTY, the <a href="storage.removepersistentlogin">RemovePersistentLogin</a> method removes the persistent logons to the target for all portals.
+A <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a> structure that specifies the target portal for which the initiator should delete persistent logons. ISCSI_TargetPortal has an <b>Address</b> member of type <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>. If the <b>Type</b> member of ISCSI_IP_Address is set to ISCSI_IP_ADDRESS_EMPTY, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563995">RemovePersistentLogin</a> method removes the persistent logons to the target for all portals.
 
 
 ## -remarks
@@ -92,21 +93,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.iscsi_ip_address">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
 </dt>
 <dt>
-<a href="storage.iscsi_targetportal">ISCSI_TargetPortal</a>
+<a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
 </dt>
 <dt>
-<a href="storage.removepersistentlogin">RemovePersistentLogin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563995">RemovePersistentLogin</a>
 </dt>
 <dt>
-<a href="storage.removepersistentlogin_out">RemovePersistentLogin_OUT</a>
+<a href="..\iscsiop\ns-iscsiop-_removepersistentlogin_out.md">RemovePersistentLogin_OUT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20RemovePersistentLogin_IN structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20RemovePersistentLogin_IN structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

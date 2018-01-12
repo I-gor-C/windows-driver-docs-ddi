@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcRegisterSubdevice
+UID: NF:portcls.PcRegisterSubdevice
 title: PcRegisterSubdevice function
 author: windows-driver-content
 description: The PcRegisterSubdevice function registers a subdevice to make it available for use by clients.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcRegisterSubdevice function
@@ -57,7 +58,7 @@ NTSTATUS PcRegisterSubdevice(
 
 ### -param DeviceObject [in]
 
-Pointer to the adapter driver's device object. This is a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Pointer to the adapter driver's device object. This is a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 
 ### -param Name [in]
@@ -75,11 +76,11 @@ Pointer to the <a href="..\portcls\nn-portcls-iport.md">IPort</a> interface of t
 
 
 ## -remarks
-The function registers the device interface instance for a filter object that represents a subdevice on an audio adapter. The I/O manager appends the string specified by the <i>Name</i> parameter to the reference string that it uses to identify the instance. The modified reference string is useful for distinguishing among the subdevices in the audio adapter. For more information about reference strings, see <a href="kernel.ioregisterdeviceinterface">IoRegisterDeviceInterface</a>.
+The function registers the device interface instance for a filter object that represents a subdevice on an audio adapter. The I/O manager appends the string specified by the <i>Name</i> parameter to the reference string that it uses to identify the instance. The modified reference string is useful for distinguishing among the subdevices in the audio adapter. For more information about reference strings, see <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>.
 
 For more information about the role of the <b>PcRegisterSubdevice</b> function in registering a subdevice, see <a href="https://msdn.microsoft.com/e4ba1209-adc6-48c3-9633-247e9e3849bc">Subdevice Creation</a>.
 
-An adapter driver can call the <a href="audio.iunregistersubdevice_unregistersubdevice">IUnregisterSubdevice::UnregisterSubdevice</a> method to delete the registration of a physical connection that was registered by a previous call to <b>PcRegisterSubdevice</b>. For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>. 
+An adapter driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537032">IUnregisterSubdevice::UnregisterSubdevice</a> method to delete the registration of a physical connection that was registered by a previous call to <b>PcRegisterSubdevice</b>. For more information, see <a href="https://msdn.microsoft.com/d8ebd6d9-37ed-4890-aae1-5ecf58f2e22a">Dynamic Audio Subdevices</a>. 
 
 
 ## -requirements
@@ -142,16 +143,16 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iport.md">IPort</a>
 </dt>
 <dt>
-<a href="kernel.ioregisterdeviceinterface">IoRegisterDeviceInterface</a>
+<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
 </dt>
 <dt>
-<a href="audio.iunregistersubdevice_unregistersubdevice">IUnregisterSubdevice::UnregisterSubdevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537032">IUnregisterSubdevice::UnregisterSubdevice</a>
 </dt>
 </dl>
  

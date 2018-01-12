@@ -1,5 +1,5 @@
 ---
-UID: NE.lamp.LAMP_MODE
+UID: NE:lamp.LAMP_MODE
 title: LAMP_MODE
 author: windows-driver-content
 description: This enumeration contains the operating modes of a lamp device.
@@ -7,7 +7,7 @@ old-location: stream\lamp_mode.htm
 old-project: stream
 ms.assetid: B379B6EF-C3AD-4E6F-B32D-F85228DB6A72
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: LAMP_MODE, LAMP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: LAMP_MODE
 ---
 
 # LAMP_MODE enumeration

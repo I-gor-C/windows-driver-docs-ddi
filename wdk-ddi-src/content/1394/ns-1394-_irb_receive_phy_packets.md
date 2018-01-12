@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_RECEIVE_PHY_PACKETS
+UID: NS:1394._IRB_RECEIVE_PHY_PACKETS
 title: _IRB_RECEIVE_PHY_PACKETS
 author: windows-driver-content
 description: This structure contains the fields necessary to carry out a ReceivePhyPackets request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_RECEIVE_PHY_PACKETS
 ---
 
 # _IRB_RECEIVE_PHY_PACKETS structure

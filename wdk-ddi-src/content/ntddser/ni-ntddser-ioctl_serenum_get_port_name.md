@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERENUM_GET_PORT_NAME
+UID: NI:ntddser.IOCTL_SERENUM_GET_PORT_NAME
 title: IOCTL_SERENUM_GET_PORT_NAME
 author: windows-driver-content
 description: The IOCTL_SERENUM_GET_PORT_NAME request returns the value of the PortName (or Identifier) entry value for the RS-232 port -- see Registry Settings for a Plug and Play Serial Device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERENUM_GET_PORT_NAME IOCTL

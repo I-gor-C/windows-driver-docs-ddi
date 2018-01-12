@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltFindExtraCreateParameter
+UID: NF:fltkernel.FltFindExtraCreateParameter
 title: FltFindExtraCreateParameter function
 author: windows-driver-content
 description: The FltFindExtraCreateParameter routine searches a given ECP list for an ECP context structure of a given type and returns a pointer to this structure if it is found.
@@ -7,7 +7,7 @@ old-location: ifsk\fltfindextracreateparameter.htm
 old-project: ifsk
 ms.assetid: bfa38f16-55cf-40a9-b271-65d784d5156e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltFindExtraCreateParameter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltFindExtraCreateParameter function
@@ -168,37 +169,37 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ecp_list">ECP_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocateextracreateparameterfromlookasidelist">FltAllocateExtraCreateParameterFromLookasideList</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterfromlookasidelist.md">FltAllocateExtraCreateParameterFromLookasideList</a>
 </dt>
 <dt><b>FltAllocateExtraCreateParameterFromLookasideList</b></dt>
 <dt>
-<a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 </dt>
 <dt>
-<a href="ifsk.fltinsertextracreateparameter">FltInsertExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltfreeextracreateparameter">FltFreeExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetecplistfromcallbackdata">FltGetEcpListFromCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
 </dt>
 <dt>
-<a href="ifsk.fltremoveextracreateparameter">FltRemoveExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltremoveextracreateparameter.md">FltRemoveExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetecplistintocallbackdata">FltSetEcpListIntoCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
 </dt>
 <dt>
-<a href="ifsk.iocreatefileex">IoCreateFileEx</a>
+<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltFindExtraCreateParameter routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltFindExtraCreateParameter routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.ksmedia.KSCAMERA_EXTENDEDPROP_MetadataAlignment
+UID: NE:ksmedia.KSCAMERA_EXTENDEDPROP_MetadataAlignment
 title: KSCAMERA_EXTENDEDPROP_MetadataAlignment
 author: windows-driver-content
 description: This enumeration contains identifiers for the metadata alignment.
@@ -7,7 +7,7 @@ old-location: stream\kscamera_extendedprop_metadataalignment.htm
 old-project: stream
 ms.assetid: A122F923-D98E-4D73-896A-551A233E7491
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSCAMERA_EXTENDEDPROP_MetadataAlignment, KSCAMERA_EXTENDEDPROP_MetadataAlignment
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSCAMERA_EXTENDEDPROP_MetadataAlignment
 ---
 
 # KSCAMERA_EXTENDEDPROP_MetadataAlignment enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfusb.WdfUsbTargetDeviceQueryUsbCapability
+UID: NF:wdfusb.WdfUsbTargetDeviceQueryUsbCapability
 title: WdfUsbTargetDeviceQueryUsbCapability function
 author: windows-driver-content
 description: The WdfUsbTargetDeviceQueryUsbCapability method determines whether the host controller and USB driver stack support a specific capability.
@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetdevicequeryusbcapability.htm
 old-project: wdf
 ms.assetid: B6C3E94F-AFC9-45EC-91F1-F0E3586DBDA1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfUsbTargetDeviceQueryUsbCapability
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -91,7 +92,7 @@ Length, in bytes, of the buffer pointed to by <i>CapabilityBuffer</i>.
 ### -param CapabilityBuffer [out, optional]
 
 A pointer to a caller-allocated buffer to receive the requested USB capability. This parameter is optional. If 
-                       <i>CapabilityBufferLength</i> is zero, this parameter must be NULL. Similarly, if <i>CapabilityBufferLength</i> is nonzero, this parameter must be supplied. This parameter corresponds to the <i>OutputBuffer</i> parameter of the <a href="buses.usbd_getcapability">USBD_QueryUsbCapability</a> routine.
+                       <i>CapabilityBufferLength</i> is zero, this parameter must be NULL. Similarly, if <i>CapabilityBufferLength</i> is nonzero, this parameter must be supplied. This parameter corresponds to the <i>OutputBuffer</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a> routine.
 
 
 ### -param ResultLength [out, optional]
@@ -123,28 +124,28 @@ This method also might return other <a href="https://msdn.microsoft.com/library/
 
 
 ## -remarks
-Before calling <b>WdfUsbTargetDeviceQueryUsbCapability</b>, the driver must call  <a href="wdf.wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a> to register with the underlying USB driver stack.
+Before calling <b>WdfUsbTargetDeviceQueryUsbCapability</b>, the driver must call  <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a> to register with the underlying USB driver stack.
 
 <b>WdfUsbTargetDeviceQueryUsbCapability</b> must be called after the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a> callback function has been called. 
 
 The following table describes the USB-specific capabilities that a KMDF-based USB client driver can query through a <b>WdfUsbTargetDeviceQueryUsbCapability</b> call. 
 
-The new USB driver stack in Windows 8 is capable of accepting a chained MDL (see <a href="kernel.mdl">MDL</a>) from the a KMDF-based USB client driver.
+The new USB driver stack in Windows 8 is capable of accepting a chained MDL (see <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>) from the a KMDF-based USB client driver.
 
- For more information about the chained MDLs capability in the USB driver stack, see <a href="buses.how_to_send_chained_mdls">How to Send Chained MDLs</a>.  
+ For more information about the chained MDLs capability in the USB driver stack, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450848">How to Send Chained MDLs</a>.  
 
 This GUID applies to KMDF drivers only.
 
  Whereas USB 2.0 and earlier supports sending only a single data stream through a bulk endpoint, USB 3.0 permits sending and receiving multiple data streams through a bulk endpoint. 
 
 
-For more information about opening streams, see <a href="buses.how_to_open_streams_in_a_usb_endpoint">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
+For more information about opening streams, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
 
 The Universal Serial Bus (USB) 3.0 specification defines a new feature called function suspend. The feature enables an individual function of a composite device to enter a low-power state, independently of other functions. 
 
-For more information about function suspend, see <a href="buses.how-to__implement_remote_and_function_wake_support">How to Implement Function Suspend in a Composite Driver</a>.
+For more information about function suspend, see <a href="https://msdn.microsoft.com/91F96D30-CD18-4DDC-BA5A-7BFFA8FBED9B">How to Implement Function Suspend in a Composite Driver</a>.
 
-For information about selective suspend, see <a href="buses.usb_selective_suspend">USB Selective Suspend</a>.
+For information about selective suspend, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540144">USB Selective Suspend</a>.
 
 Determines whether the bus is operating at high-speed or higher. 
 
@@ -235,7 +236,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
 </td>
 </tr>
 </table>
@@ -243,15 +244,15 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbd_getcapability">USBD_QueryUsbCapability</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>
 </dt>
 <dt>
-<a href="wdf.wdfusbtargetdeviceretrieveinformation">WdfUsbTargetDeviceRetrieveInformation</a>
+<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceretrieveinformation.md">WdfUsbTargetDeviceRetrieveInformation</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceQueryUsbCapability method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceQueryUsbCapability method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

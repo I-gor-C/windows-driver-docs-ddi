@@ -1,5 +1,5 @@
 ---
-UID: NF.mrx.__RxFillAndInstallFastIoDispatch
+UID: NF:mrx.__RxFillAndInstallFastIoDispatch
 title: __RxFillAndInstallFastIoDispatch function
 author: windows-driver-content
 description: RxFillAndInstallFastIoDispatch fills out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed.
@@ -7,7 +7,7 @@ old-location: ifsk\__rxfillandinstallfastiodispatch.htm
 old-project: ifsk
 ms.assetid: 4619a1aa-0c91-4b77-abbf-077f28437e0f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: __RxFillAndInstallFastIoDispatch
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: *PSetDSMCounters_IN, SetDSMCounters_IN
 ---
 
 # __RxFillAndInstallFastIoDispatch function
@@ -77,7 +78,7 @@ None
 ## -remarks
 The <b>__RxFillAndInstallFastIoDispatch</b> routine is implemented differently for monolithic and non-monolithic drivers network mini-redirector. 
 
-For non-monolithic network mini-redirector drivers, such as the Microsoft SMB redirector that links to rdbss.sys dynamically, <b>__RxFillAndInstallFastIoDispatch</b> is a convenience routine that copies the normal dispatch I/O vector table routines to the fast I/O dispatch vector table. This routine would normally be used by a non-monolithic network mini-redirector to fill out the fast I/O dispatch table before calling <a href="ifsk.rxregisterminirdr">RxRegisterMiniRdr</a>. This routine uses the minimum of the <i>FastIoDispatchSize</i> parameter and the size of the FAST_IO_DISPATCH structure defined in ntifs.h to determine the number of bytes to copy.
+For non-monolithic network mini-redirector drivers, such as the Microsoft SMB redirector that links to rdbss.sys dynamically, <b>__RxFillAndInstallFastIoDispatch</b> is a convenience routine that copies the normal dispatch I/O vector table routines to the fast I/O dispatch vector table. This routine would normally be used by a non-monolithic network mini-redirector to fill out the fast I/O dispatch table before calling <a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMiniRdr</a>. This routine uses the minimum of the <i>FastIoDispatchSize</i> parameter and the size of the FAST_IO_DISPATCH structure defined in ntifs.h to determine the number of bytes to copy.
 
 For monolithic network mini-redirectors built by developers, the <b>__RxFillAndInstallFastIoDispatch</b> routine does nothing.
 
@@ -121,21 +122,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.rxregisterminirdr">RxRegisterMinirdr</a>
+<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
 </dt>
 <dt>
-<a href="ifsk.rxsetdomainformailslotbroadcast">RxSetDomainForMailslotBroadcast</a>
+<a href="..\mrx\nf-mrx-rxsetdomainformailslotbroadcast.md">RxSetDomainForMailslotBroadcast</a>
 </dt>
 <dt>
-<a href="ifsk.rxstartminirdr">RxStartMiniRdr</a>
+<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMiniRdr</a>
 </dt>
 <dt>
-<a href="ifsk.rxstopminirdr">RxStopMiniRdr</a>
+<a href="..\mrx\nf-mrx-rxstopminirdr.md">RxStopMiniRdr</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20__RxFillAndInstallFastIoDispatch function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20__RxFillAndInstallFastIoDispatch function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

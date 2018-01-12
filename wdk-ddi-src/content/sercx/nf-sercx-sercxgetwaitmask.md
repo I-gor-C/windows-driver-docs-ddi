@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCxGetWaitMask
+UID: NF:sercx.SerCxGetWaitMask
 title: SerCxGetWaitMask function
 author: windows-driver-content
 description: The SerCxGetWaitMask method returns the event wait mask for the wait operation that is currently pending.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisGetVersion
+UID: NF:ndis.NdisGetVersion
 title: NdisGetVersion function
 author: windows-driver-content
 description: The NdisGetVersion function returns the version number of NDIS.
 old-location: netvista\ndisgetversion.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d3e2c799-f789-499f-9948-f41d7576296e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisGetVersion function
@@ -134,7 +135,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>

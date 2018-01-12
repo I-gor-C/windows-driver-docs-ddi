@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.MmPrefetchPages
+UID: NF:ntifs.MmPrefetchPages
 title: MmPrefetchPages function
 author: windows-driver-content
 description: The MmPrefetchPages routine reads groups of pages from secondary storage in the optimal fashion.
@@ -7,7 +7,7 @@ old-location: ifsk\mmprefetchpages.htm
 old-project: ifsk
 ms.assetid: fd76dfed-2c47-4289-a672-1db8129f5a9e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: MmPrefetchPages
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # MmPrefetchPages function

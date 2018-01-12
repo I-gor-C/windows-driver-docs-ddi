@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILNITZINFO_V2
+UID: NS:ntddrilapitypes.RILNITZINFO_V2
 title: RILNITZINFO_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilnitzinfo_v2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 31980e7f-b767-4f63-9dc6-efce582d84ea
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILNITZINFO_V2, *LPRILNITZINFO, RILNITZINFO_V2, RILNITZINFO, LPRILNITZINFO, LPRILNITZINFO_V2, *LPRILNITZINFO_V2
+ms.date: 1/8/2018
+ms.keywords: RILNITZINFO_V2, RILNITZINFO, *LPRILNITZINFO_V2, *LPRILNITZINFO, RILNITZINFO_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILNITZINFO, *LPRILNITZINFO_V2, *LPRILNITZINFO, RILNITZINFO_V2
 ---
 
 # RILNITZINFO_V2 structure

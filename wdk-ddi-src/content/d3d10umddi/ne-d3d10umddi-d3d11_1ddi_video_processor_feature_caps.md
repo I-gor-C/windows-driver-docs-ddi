@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS
+UID: NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS
 title: D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS
 author: windows-driver-content
 description: Defines features that a Microsoft Direct3D 11 video processor can support.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_feature_caps.htm
 old-project: display
 ms.assetid: 994f8de8-bb2f-441d-af45-87b9e600ed64
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS
 ---
 
 # D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS enumeration
@@ -68,17 +69,17 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS {
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_FILL
 
-The video processor can set alpha values on the output pixels. For more information, see <a href="display.videoprocessorsetoutputalphafillmode">VideoProcessorSetOutputAlphaFillMode</a>.
+The video processor can set alpha values on the output pixels. For more information, see <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetoutputalphafillmode.md">VideoProcessorSetOutputAlphaFillMode</a>.
 
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_CONSTRICTION
 
-The video processor can downsample the video output. For more information, see <a href="display.videoprocessorsetoutputconstriction">VideoProcessorSetOutputConstriction</a>.
+The video processor can downsample the video output. For more information, see <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetoutputconstriction.md">VideoProcessorSetOutputConstriction</a>.
 
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_LUMA_KEY
 
-The video processor can perform luma keying. For more information, see <a href="display.videoprocessorsetstreamlumakey">VideoProcessorSetStreamLumaKey</a>.
+The video processor can perform luma keying. For more information, see <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetstreamlumakey.md">VideoProcessorSetStreamLumaKey</a>.
 
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALPHA_PALETTE
@@ -102,7 +103,7 @@ The driver does not support the DXVA-HDDDI. If this capability flag is set, the 
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_STEREO
 
-The video processor can support 3-D stereo video. For more information, see <a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a>.
+The video processor can support 3-D stereo video. For more information, see <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetstreamstereoformat.md">VideoProcessorSetStreamStereoFormat</a>.
 
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ROTATION
@@ -122,14 +123,14 @@ The video processor supports explicit aspect ratios for the source and destinati
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_MIRROR
 
-Indicates that the driver supports <a href="display.videoprocessorsetstreammirror">VideoProcessorSetStreamMirror</a>.
+Indicates that the driver supports <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm2_0ddi_videoprocessorsetstreammirror.md">VideoProcessorSetStreamMirror</a>.
 
 Supported starting with Windows 10.
 
 
 ### -field D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_PIXEL_SHADER_USAGE
 
-Indicates that the hardware can benefit from a hint as to whether a shader might be used to read the output of  <a href="display.videoprocessorblt">VideoProcessorBlt</a>.  This should only be set by hardware that support multi-plane overlays.
+Indicates that the hardware can benefit from a hint as to whether a shader might be used to read the output of  <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorblt.md">VideoProcessorBlt</a>.  This should only be set by hardware that support multi-plane overlays.
 
 Supported starting with Windows 10.
 
@@ -178,27 +179,27 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.videoprocessorsetoutputalphafillmode">VideoProcessorSetOutputAlphaFillMode</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetoutputalphafillmode.md">VideoProcessorSetOutputAlphaFillMode</a>
 </dt>
 <dt>
-<a href="display.videoprocessorsetoutputconstriction">VideoProcessorSetOutputConstriction</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetoutputconstriction.md">VideoProcessorSetOutputConstriction</a>
 </dt>
 <dt>
-<a href="display.videoprocessorsetstreamlumakey">VideoProcessorSetStreamLumaKey</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetstreamlumakey.md">VideoProcessorSetStreamLumaKey</a>
 </dt>
 <dt>
-<a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetstreamstereoformat.md">VideoProcessorSetStreamStereoFormat</a>
 </dt>
 <dt>
-<a href="display.videoprocessorsetstreammirror">VideoProcessorSetStreamMirror</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm2_0ddi_videoprocessorsetstreammirror.md">VideoProcessorSetStreamMirror</a>
 </dt>
 <dt>
-<a href="display.videoprocessorblt">VideoProcessorBlt</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorblt.md">VideoProcessorBlt</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

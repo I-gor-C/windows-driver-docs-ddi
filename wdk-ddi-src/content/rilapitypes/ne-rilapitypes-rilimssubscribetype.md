@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILIMSSUBSCRIBETYPE
+UID: NE:rilapitypes.RILIMSSUBSCRIBETYPE
 title: RILIMSSUBSCRIBETYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimssubscribetype_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 84b2de56-55f9-471c-8d32-84fe1365dfbf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILIMSSUBSCRIBETYPE, RILIMSSUBSCRIBETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILIMSSUBSCRIBETYPE
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUni.TTYGetInfo
+UID: NF:prcomoem.IPrintOemUni.TTYGetInfo
 title: IPrintOemUni::TTYGetInfo method
 author: windows-driver-content
 description: The IPrintOemUni::TTYGetInfo method enables a rendering plug-in to supply Unidrv with information relevant to text-only printers.
@@ -7,7 +7,7 @@ old-location: print\iprintoemuni_ttygetinfo.htm
 old-project: print
 ms.assetid: 0df8c555-4298-47e7-a6a7-43f101620e04
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUni, IPrintOemUni::TTYGetInfo, TTYGetInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ HRESULT TTYGetInfo(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param dwInfoIndex 
@@ -135,7 +136,7 @@ The method must return one of the following values.
 
 
 ## -remarks
-The <code>IPrintOemUni::TTYGetInfo</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "TTYGetInfo" as input.
+The <code>IPrintOemUni::TTYGetInfo</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "TTYGetInfo" as input.
 
 
 ## -requirements

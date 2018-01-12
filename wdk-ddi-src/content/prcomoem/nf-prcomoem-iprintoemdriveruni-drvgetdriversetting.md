@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemDriverUni.DrvGetDriverSetting
+UID: NF:prcomoem.IPrintOemDriverUni.DrvGetDriverSetting
 title: IPrintOemDriverUni::DrvGetDriverSetting method
 author: windows-driver-content
 description: The IPrintOemDriverUni::DrvGetDriverSetting method is provided by the Unidrv driver so that rendering plug-ins can obtain the current status of printer features and other internal information.
@@ -7,7 +7,7 @@ old-location: print\iprintoemdriveruni_drvgetdriversetting.htm
 old-project: print
 ms.assetid: 29ccd7e6-60eb-4a8e-9a71-9fbed4b2bdcf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemDriverUni, IPrintOemDriverUni::DrvGetDriverSetting, DrvGetDriverSetting
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ HRESULT DrvGetDriverSetting(
 
 ### -param pdriverobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param Feature 

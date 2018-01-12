@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_CREATEPERIODICFRAMENOTIFICATION
+UID: NS:d3dkmddi._DXGKARG_CREATEPERIODICFRAMENOTIFICATION
 title: _DXGKARG_CREATEPERIODICFRAMENOTIFICATION
 author: windows-driver-content
 description: The arguments needed to create a periodic frame notification.
@@ -7,8 +7,8 @@ old-location: display\dxgkarg_createperiodicframenotification.htm
 old-project: display
 ms.assetid: 455C3FBD-2E0D-4CD7-B753-E53ED58A7F6F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKARG_CREATEPERIODICFRAMENOTIFICATION, DXGKARG_CREATEPERIODICFRAMENOTIFICATION
+ms.date: 12/29/2017
+ms.keywords: _DXGKARG_CREATEPERIODICFRAMENOTIFICATION, DXGKARG_CREATEPERIODICFRAMENOTIFICATION, *INOUT_PDXGKARG_CREATEPERIODICFRAMENOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_CREATEPERIODICFRAMENOTIFICATION
 ---
 
 # _DXGKARG_CREATEPERIODICFRAMENOTIFICATION structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._STORAGE_HW_FIRMWARE_INFO_QUERY
+UID: NS:ntddstor._STORAGE_HW_FIRMWARE_INFO_QUERY
 title: _STORAGE_HW_FIRMWARE_INFO_QUERY
 author: windows-driver-content
 description: This structure contains information about the device firmware.
@@ -7,8 +7,8 @@ old-location: storage\storage_hw_firmware_info_query.htm
 old-project: storage
 ms.assetid: 7B58F050-2AF4-4BD5-95AB-254BCAA865F6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_HW_FIRMWARE_INFO_QUERY, *PSTORAGE_HW_FIRMWARE_INFO_QUERY, STORAGE_HW_FIRMWARE_INFO_QUERY, PSTORAGE_HW_FIRMWARE_INFO_QUERY
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_HW_FIRMWARE_INFO_QUERY, STORAGE_HW_FIRMWARE_INFO_QUERY, *PSTORAGE_HW_FIRMWARE_INFO_QUERY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_HW_FIRMWARE_INFO_QUERY, *PSTORAGE_HW_FIRMWARE_INFO_QUERY
 ---
 
 # _STORAGE_HW_FIRMWARE_INFO_QUERY structure

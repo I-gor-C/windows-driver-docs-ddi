@@ -1,5 +1,5 @@
 ---
-UID: NE.dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT
+UID: NE:dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT
 title: DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT
 author: windows-driver-content
 description: Identifies the overlay plane's video frame format. Only the DXGI_DDI_MULIIPLANE_OVERLAY_VIDEO_FRAME_FORMAT_PROGRESSIVE value is supported.
@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_multiplane_overlay_video_frame_format.htm
 old-project: display
 ms.assetid: b183ae45-bc37-47e5-88b7-ab9a7c148fea
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT, DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT
 ---
 
 # DXGI_DDI_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT enumeration

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.SetMatchThreadId
+UID: NF:dbgeng.IDebugBreakpoint2.SetMatchThreadId
 title: IDebugBreakpoint2::SetMatchThreadId method
 author: windows-driver-content
 description: The SetMatchThreadId method sets the engine thread ID of the thread that can trigger a breakpoint.
 old-location: debugger\setmatchthreadid.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 66170e28-24db-4125-bd4e-ef07e8e82e79
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::SetMatchThreadId, SetMatchThreadId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::SetMatchThreadId method

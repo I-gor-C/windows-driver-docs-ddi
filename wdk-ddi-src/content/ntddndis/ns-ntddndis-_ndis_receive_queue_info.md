@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_RECEIVE_QUEUE_INFO
+UID: NS:ntddndis._NDIS_RECEIVE_QUEUE_INFO
 title: _NDIS_RECEIVE_QUEUE_INFO
 author: windows-driver-content
 description: The NDIS_RECEIVE_QUEUE_INFO structure contains information about a receive queue on a network adapter.
 old-location: netvista\ndis_receive_queue_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7cdc45d4-e8aa-437a-b6fc-8b8c0dc17585
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO, *PNDIS_RECEIVE_QUEUE_INFO, PNDIS_RECEIVE_QUEUE_INFO
+ms.date: 1/8/2018
+ms.keywords: _NDIS_RECEIVE_QUEUE_INFO, *PNDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO
 ---
 
 # _NDIS_RECEIVE_QUEUE_INFO structure
@@ -70,7 +71,7 @@ typedef struct _NDIS_RECEIVE_QUEUE_INFO {
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
 
@@ -103,7 +104,7 @@ A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags. This member is 
 ### -field QueueType
 
 An 
-     <a href="netvista.ndis_receive_queue_type">NDIS_RECEIVE_QUEUE_TYPE</a> enumeration
+     <a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_type.md">NDIS_RECEIVE_QUEUE_TYPE</a> enumeration
      value that specifies the type of the receive queue.
 
 
@@ -122,7 +123,7 @@ This member is reserved for NDIS.
 ### -field QueueState
 
 An 
-     <a href="netvista.ndis_receive_queue_operational_state">
+     <a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_operational_state.md">
      NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE</a> enumeration value that specifies the operational state of the
      receive queue.
 
@@ -179,14 +180,14 @@ A ULONG value that is reserved for use by NDIS. This value is used for informati
 
 ## -remarks
 The <b>NDIS_RECEIVE_QUEUE_INFO</b> structure is used with the 
-    <a href="netvista.ndis_receive_queue_info_array">
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info_array.md">
     NDIS_RECEIVE_QUEUE_INFO_ARRAY</a> structure for the 
     <a href="netvista.oid_receive_filter_enum_queues">
     OID_RECEIVE_FILTER_ENUM_QUEUES</a> OID that enumerates receive queues on a network adapter.
 
 With a successful return from the <a href="netvista.oid_receive_filter_enum_queues">
     OID_RECEIVE_FILTER_ENUM_QUEUES</a>, NDIS provides an
-    <a href="netvista.ndis_receive_queue_info_array">NDIS_RECEIVE_QUEUE_INFO_ARRAY</a> structure that defines the properties of the receive queue array. Each
+    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info_array.md">NDIS_RECEIVE_QUEUE_INFO_ARRAY</a> structure that defines the properties of the receive queue array. Each
     element in the array is an <b>NDIS_RECEIVE_QUEUE_INFO</b> structure.
 
 
@@ -218,17 +219,17 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_receive_queue_info_array">NDIS_RECEIVE_QUEUE_INFO_ARRAY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_receive_queue_info_array.md">NDIS_RECEIVE_QUEUE_INFO_ARRAY</a>
 </dt>
 <dt>
-<a href="netvista.ndis_receive_queue_operational_state">
+<a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_operational_state.md">
    NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE</a>
 </dt>
 <dt>
-<a href="netvista.ndis_receive_queue_type">NDIS_RECEIVE_QUEUE_TYPE</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_receive_queue_type.md">NDIS_RECEIVE_QUEUE_TYPE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569788">OID_RECEIVE_FILTER_ENUM_QUEUES</a>
@@ -244,5 +245,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_RECEIVE_QUEUE_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RECEIVE_QUEUE_INFO structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

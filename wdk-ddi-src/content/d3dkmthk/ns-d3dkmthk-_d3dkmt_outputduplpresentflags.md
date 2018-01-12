@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_OUTPUTDUPLPRESENTFLAGS
+UID: NS:d3dkmthk._D3DKMT_OUTPUTDUPLPRESENTFLAGS
 title: _D3DKMT_OUTPUTDUPLPRESENTFLAGS
 author: windows-driver-content
 description: Describes options for a Desktop Duplication API swapchain present operation.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_outputduplpresentflags.htm
 old-project: display
 ms.assetid: d80bcf24-4d53-4ec9-897d-d3243c7fda25
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_OUTPUTDUPLPRESENTFLAGS, D3DKMT_OUTPUTDUPLPRESENTFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_OUTPUTDUPLPRESENTFLAGS
 ---
 
 # _D3DKMT_OUTPUTDUPLPRESENTFLAGS structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-Describes options for a <a href="direct3ddxgi.desktop_dup_api">Desktop Duplication API</a> swapchain present operation.
+Describes options for a <a href="https://msdn.microsoft.com/523FBFAD-5D78-4EE3-A3B7-8FD5BA39DC46">Desktop Duplication API</a> swapchain present operation.
 
 
 

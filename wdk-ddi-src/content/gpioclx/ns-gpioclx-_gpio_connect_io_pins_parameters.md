@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_CONNECT_IO_PINS_PARAMETERS
+UID: NS:gpioclx._GPIO_CONNECT_IO_PINS_PARAMETERS
 title: _GPIO_CONNECT_IO_PINS_PARAMETERS
 author: windows-driver-content
 description: The GPIO_CONNECT_IO_PINS_PARAMETERS structure describes a logical connection to a set of general-purpose I/O (GPIO) pins and specifies whether to configure these pins as data inputs or outputs.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: C8A156F4-3150-4241-947E-B0A6927F2BFE
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_CONNECT_IO_PINS_PARAMETERS, *PGPIO_CONNECT_IO_PINS_PARAMETERS, PGPIO_CONNECT_IO_PINS_PARAMETERS, GPIO_CONNECT_IO_PINS_PARAMETERS
+ms.keywords: _GPIO_CONNECT_IO_PINS_PARAMETERS, *PGPIO_CONNECT_IO_PINS_PARAMETERS, GPIO_CONNECT_IO_PINS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PGPIO_CONNECT_IO_PINS_PARAMETERS, GPIO_CONNECT_IO_PINS_PARAMETERS
 ---
 
 # _GPIO_CONNECT_IO_PINS_PARAMETERS structure

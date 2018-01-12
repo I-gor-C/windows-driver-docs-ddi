@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILSETPREFERREDOPERATORLISTPARAMS
+UID: NS:rilapitypes.RILSETPREFERREDOPERATORLISTPARAMS
 title: RILSETPREFERREDOPERATORLISTPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetpreferredoperatorlistparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: ff498364-f9ea-437f-904b-170ba0df7826
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSETPREFERREDOPERATORLISTPARAMS, *LPRILSETPREFERREDOPERATORLISTPARAMS, RILSETPREFERREDOPERATORLISTPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILSETPREFERREDOPERATORLISTPARAMS, RILSETPREFERREDOPERATORLISTPARAMS, *LPRILSETPREFERREDOPERATORLISTPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSETPREFERREDOPERATORLISTPARAMS, *LPRILSETPREFERREDOPERATORLISTPARAMS
 req.product: Windows 10 or later.
 ---
 

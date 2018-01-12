@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMTextOut
+UID: NF:printoem.OEMTextOut
 title: OEMTextOut function
 author: windows-driver-content
 description: The OEMTextOut function calls for the driver to render a set of glyphs at specified positions.
@@ -7,7 +7,7 @@ old-location: print\oemtextout.htm
 old-project: print
 ms.assetid: cecce6ae-9b26-4b5f-aad3-69630ea340a4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMTextOut
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.WSK._WSK_PROVIDER_NPI
+UID: NS:wsk._WSK_PROVIDER_NPI
 title: _WSK_PROVIDER_NPI
 author: windows-driver-content
 description: The WSK_PROVIDER_NPI structure identifies a provider Network Programming Interface (NPI) implemented by the WSK subsystem.
 old-location: netvista\wsk_provider_npi.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 471689f4-d1f6-4785-82df-313fe2ca627a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WSK_PROVIDER_NPI, PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI, *PWSK_PROVIDER_NPI
+ms.date: 1/8/2018
+ms.keywords: _WSK_PROVIDER_NPI, *PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI
 req.product: Windows 10 or later.
 ---
 
@@ -63,14 +64,14 @@ A pointer to a
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a> structure that was returned through
      the 
      <i>WskProviderNpi</i> parameter of the 
-     <a href="netvista.wskcaptureprovidernpi">
+     <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">
      WskCaptureProviderNPI</a> function.
 
 
 ### -field Dispatch
 
 A pointer to a constant 
-     <a href="netvista.wsk_provider_dispatch">
+     <a href="..\wsk\ns-wsk-_wsk_provider_dispatch.md">
      WSK_PROVIDER_DISPATCH</a> structure.
 
 
@@ -106,18 +107,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wskcaptureprovidernpi">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff571155">WSK_CLIENT</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_dispatch">WSK_PROVIDER_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_dispatch.md">WSK_PROVIDER_DISPATCH</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WSK_PROVIDER_NPI structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_NPI structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

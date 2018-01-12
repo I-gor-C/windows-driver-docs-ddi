@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._PHY_CONFIGURATION_PACKET
+UID: NS:1394._PHY_CONFIGURATION_PACKET
 title: _PHY_CONFIGURATION_PACKET
 author: windows-driver-content
 description: The PHY_CONFIGURATION_PACKET structure contains a raw PHY configuration packet.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 5a5acd4a-ad99-4b8c-b8ea-490a7b467e14
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PHY_CONFIGURATION_PACKET, PHY_CONFIGURATION_PACKET, PPHY_CONFIGURATION_PACKET, *PPHY_CONFIGURATION_PACKET
+ms.keywords: _PHY_CONFIGURATION_PACKET, PHY_CONFIGURATION_PACKET, *PPHY_CONFIGURATION_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PHY_CONFIGURATION_PACKET, *PPHY_CONFIGURATION_PACKET
 ---
 
 # _PHY_CONFIGURATION_PACKET structure

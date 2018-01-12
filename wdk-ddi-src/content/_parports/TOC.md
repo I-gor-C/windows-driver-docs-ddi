@@ -43,7 +43,6 @@
 ### [IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT IOCTL](../parallel/ni-parallel-ioctl_internal_unlock_port_no_deselect.md)
 ### [PDETERMINE_IEEE_MODES callback](../parallel/nc-parallel-pdetermine_ieee_modes.md)
 ### [PNEGOTIATE_IEEE_MODE callback](../parallel/nc-parallel-pnegotiate_ieee_mode.md)
-### [PNEGOTIATE_IEEE_MODE callback](../parallel/nc-parallel-pnegotiate_ieee_mode~r1.md)
 ### [PPARALLEL_CLEAR_CHIP_MODE callback](../parallel/nc-parallel-pparallel_clear_chip_mode.md)
 ### [PPARALLEL_DESELECT_ROUTINE callback](../parallel/nc-parallel-pparallel_deselect_routine.md)
 ### [PPARALLEL_FREE_ROUTINE callback](../parallel/nc-parallel-pparallel_free_routine.md)

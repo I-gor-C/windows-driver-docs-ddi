@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDDISK._PARTITION_INFORMATION
+UID: NS:ntdddisk._PARTITION_INFORMATION
 title: _PARTITION_INFORMATION
 author: windows-driver-content
 description: The PARTITION_INFORMATION structure contains partition information for a partition with a traditional AT-style Master Boot Record (MBR).
@@ -7,8 +7,8 @@ old-location: storage\partition_information.htm
 old-project: storage
 ms.assetid: 06c3ed56-3640-431d-a4f0-bf3228a02cc2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PARTITION_INFORMATION, PPARTITION_INFORMATION, PARTITION_INFORMATION, *PPARTITION_INFORMATION
+ms.date: 1/10/2018
+ms.keywords: _PARTITION_INFORMATION, *PPARTITION_INFORMATION, PARTITION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPARTITION_INFORMATION, PARTITION_INFORMATION
 ---
 
 # _PARTITION_INFORMATION structure
@@ -251,7 +252,7 @@ Specifies an NTFT partition. This value is used in combination (that is, bitwise
 
 ### -field BootIndicator
 
-Indicates, when <b>TRUE</b>, that this partition is a bootable (active) partition for this device. When <b>FALSE</b>, this partition is not bootable. This member is set according to the partition list entry boot indicator returned by <a href="storage.ioreadpartitiontable">IoReadPartitionTable</a>. 
+Indicates, when <b>TRUE</b>, that this partition is a bootable (active) partition for this device. When <b>FALSE</b>, this partition is not bootable. This member is set according to the partition list entry boot indicator returned by <a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>. 
 
 
 ### -field RecognizedPartition
@@ -265,9 +266,9 @@ Indicates, when <b>TRUE</b>, that the partition information has changed. When <b
 
 
 ## -remarks
-The partition entry data in PARTITION_INFORMATION forms part of the drive layout information reported by the legacy routine <a href="storage.ioreadpartitiontable">IoReadPartitionTable</a> in the <a href="storage.drive_layout_information">DRIVE_LAYOUT_INFORMATION</a> structure. DRIVE_LAYOUT_INFORMATION contains an array of PARTITION_INFORMATION structures pointed to by its <b>PartitionEntry</b> member. Each partition entry contains information for a partition on the drive. PARTITION_INFORMATION is also used with the legacy routine <a href="storage.iosetpartitioninformation">IoSetPartitionInformation</a> to change the properties of the partition, such as its type, recorded on the disk. 
+The partition entry data in PARTITION_INFORMATION forms part of the drive layout information reported by the legacy routine <a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a> in the <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information.md">DRIVE_LAYOUT_INFORMATION</a> structure. DRIVE_LAYOUT_INFORMATION contains an array of PARTITION_INFORMATION structures pointed to by its <b>PartitionEntry</b> member. Each partition entry contains information for a partition on the drive. PARTITION_INFORMATION is also used with the legacy routine <a href="..\ntddk\nf-ntddk-iosetpartitioninformation.md">IoSetPartitionInformation</a> to change the properties of the partition, such as its type, recorded on the disk. 
 
-In Windows 2000 and later operating systems, disk drivers should use structures <a href="storage.drive_layout_information_ex">DRIVE_LAYOUT_INFORMATION_EX</a> and <a href="storage.partition_information_ex">PARTITION_INFORMATION_EX</a> along with routines <a href="storage.ioreadpartitiontableex">IoReadPartitionTableEx</a> and <a href="storage.iosetpartitioninformationex">IoSetPartitionInformationEx</a> to read and alter partition information on the disk. 
+In Windows 2000 and later operating systems, disk drivers should use structures <a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DRIVE_LAYOUT_INFORMATION_EX</a> and <a href="..\ntdddisk\ns-ntdddisk-_partition_information_ex.md">PARTITION_INFORMATION_EX</a> along with routines <a href="..\ntddk\nf-ntddk-ioreadpartitiontableex.md">IoReadPartitionTableEx</a> and <a href="..\ntddk\nf-ntddk-iosetpartitioninformationex.md">IoSetPartitionInformationEx</a> to read and alter partition information on the disk. 
 
 
 ## -requirements
@@ -288,30 +289,30 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.ioreadpartitiontable">IoReadPartitionTable</a>
+<a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>
 </dt>
 <dt>
-<a href="storage.iosetpartitioninformation">IoSetPartitionInformation</a>
+<a href="..\ntddk\nf-ntddk-iosetpartitioninformation.md">IoSetPartitionInformation</a>
 </dt>
 <dt>
-<a href="storage.ioreadpartitiontableex">IoReadPartitionTableEx</a>
+<a href="..\ntddk\nf-ntddk-ioreadpartitiontableex.md">IoReadPartitionTableEx</a>
 </dt>
 <dt>
-<a href="storage.iosetpartitioninformationex">IoSetPartitionInformationEx</a>
+<a href="..\ntddk\nf-ntddk-iosetpartitioninformationex.md">IoSetPartitionInformationEx</a>
 </dt>
 <dt>
-<a href="storage.drive_layout_information">DRIVE_LAYOUT_INFORMATION</a>
+<a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information.md">DRIVE_LAYOUT_INFORMATION</a>
 </dt>
 <dt>
-<a href="storage.drive_layout_information_ex">DRIVE_LAYOUT_INFORMATION_EX</a>
+<a href="..\ntdddisk\ns-ntdddisk-_drive_layout_information_ex.md">DRIVE_LAYOUT_INFORMATION_EX</a>
 </dt>
 <dt>
-<a href="storage.partition_information_ex">PARTITION_INFORMATION_EX</a>
+<a href="..\ntdddisk\ns-ntdddisk-_partition_information_ex.md">PARTITION_INFORMATION_EX</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20PARTITION_INFORMATION structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20PARTITION_INFORMATION structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioEngineNode.GetMixFormat
+UID: NF:portcls.IMiniportAudioEngineNode.GetMixFormat
 title: IMiniportAudioEngineNode::GetMixFormat method
 author: windows-driver-content
 description: Gets the audio data format for the audio engine mixer.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioEngineNode::GetMixFormat method

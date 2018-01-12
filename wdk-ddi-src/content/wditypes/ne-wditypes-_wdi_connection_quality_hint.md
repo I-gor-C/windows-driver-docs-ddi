@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_CONNECTION_QUALITY_HINT
+UID: NE:wditypes._WDI_CONNECTION_QUALITY_HINT
 title: _WDI_CONNECTION_QUALITY_HINT
 author: windows-driver-content
 description: The WDI_CONNECTION_QUALITY_HINT enumeration defines the Wi-Fi connection quality hints.
 old-location: netvista\wdi_connection_quality_hint.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: D83AE2BE-1273-48A1-A42C-C2EADA07D9C0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_CONNECTION_QUALITY_HINT, WDI_CONNECTION_QUALITY_HINT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_CONNECTION_QUALITY_HINT
 req.product: Windows 10 or later.
 ---
 

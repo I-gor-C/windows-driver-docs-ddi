@@ -1,5 +1,5 @@
 ---
-UID: NC.irb.IDE_HW_RESET
+UID: NC:irb.IDE_HW_RESET
 title: IDE_HW_RESET
 author: windows-driver-content
 description: The IdeHwReset miniport driver routine resets the channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
@@ -7,7 +7,7 @@ old-location: storage\idehwreset.htm
 old-project: storage
 ms.assetid: 722810c8-ddf2-4910-8cf3-af3511d8c167
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: WdmlibIoGetAffinityInterrupt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: LUID
 ---
 
 # IDE_HW_RESET callback

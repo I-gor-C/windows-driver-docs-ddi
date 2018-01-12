@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:1394
 ---
 
 # 1394.h header
@@ -28,6 +28,8 @@ This header is used by IEEE. For more information, see
 | [_GET_LOCAL_HOST_INFO4 structure](ns-1394-_get_local_host_info4.md) | The GET_LOCAL_HOST_INFO4 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel = GET_PHYS_ADDR_ROUTINE. |
 | [_GET_LOCAL_HOST_INFO5 structure](ns-1394-_get_local_host_info5.md) | The GET_LOCAL_HOST_INFO5 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel = GET_HOST_CONFIG_ROM. |
 | [_GET_LOCAL_HOST_INFO6 structure](ns-1394-_get_local_host_info6.md) | The GET_LOCAL_HOST_INFO6 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel = GET_HOST_CSR_CONTENTS. |
+| [_GET_LOCAL_HOST_INFO7_W2K structure](ns-1394-_get_local_host_info7_w2k.md) | The GET_LOCAL_HOST_INFO7 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request with u.GetLocalHostInformation.nLevel set to GET_HOST_DMA_CAPABILITIES. |
+| [_GET_LOCAL_HOST_INFO7_WXP structure](ns-1394-_get_local_host_info7_wxp.md) | The GET_LOCAL_HOST_INFO7 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request with u.GetLocalHostInformation.nLevel set to GET_HOST_DMA_CAPABILITIES. |
 | [_GET_LOCAL_HOST_INFO8 structure](ns-1394-_get_local_host_info8.md) | The GET_LOCAL_HOST_INFO8 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request with u.GetLocalHostInformation.nLevel set to GET_HOST_DDI_VERSION. |
 | [_IO_ADDRESS structure](ns-1394-_io_address.md) | The IO_ADDRESS structure specifies the 1394 64-bit destination address for read, write and lock operations. |
 | [_IRB structure](ns-1394-_irb.md) | Drivers use this structure to pass most requests to IEEE 1394 bus driver. |
@@ -70,6 +72,8 @@ This header is used by IEEE. For more information, see
 | [_IRB_REQ_SET_LOCAL_HOST_PROPERTIES structure](ns-1394-_irb_req_set_local_host_properties.md) | This structure contains the fields required to carry out a SetLocalHostProperties request. |
 | [_ISOCH_DESCRIPTOR structure](ns-1394-_isoch_descriptor.md) | The ISOCH_DESCRIPTOR structure describes a buffer to be attached or detailed from a resource handle, using the REQUEST_ISOCH_ATTACH_BUFFERS and REQUEST_ISOCH_DETACH_BUFFERS requests. |
 | [_NODE_ADDRESS structure](ns-1394-_node_address.md) | The NODE_ADDRESS structure specifies the 10-bit bus number and 6-bit node number that serve as the node address for a 1394 node. |
+| [_NOTIFICATION_INFO_W2K structure](ns-1394-_notification_info_w2k.md) | The bus driver passes NOTIFICATION_INFO to pass information to the driver-provided notification routine for a driver-allocated address range in the computer's IEEE 1394 address space. |
+| [_NOTIFICATION_INFO_WXP structure](ns-1394-_notification_info_wxp.md) | The bus driver passes NOTIFICATION_INFO to pass information to the driver-provided notification routine for a driver-allocated address range in the computer's IEEE 1394 address space. |
 | [_PHY_CONFIGURATION_PACKET structure](ns-1394-_phy_configuration_packet.md) | The PHY_CONFIGURATION_PACKET structure contains a raw PHY configuration packet. |
 | [_SELF_ID structure](ns-1394-_self_id.md) | The SELF_ID structure contains a raw packet zero self-ID packet. See the IEEE 1394 Trade Association specification website for details. |
 | [_SELF_ID_MORE structure](ns-1394-_self_id_more.md) | The SELF_ID_MORE structure contains a raw packet one, two, or three self-ID packet. See the IEEE 1394 specification for details. |

@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IXpsPartIterator.Current
+UID: NF:filterpipeline.IXpsPartIterator.Current
 title: IXpsPartIterator::Current method
 author: windows-driver-content
 description: The Current method provides the current URI and part.
@@ -7,7 +7,7 @@ old-location: print\ixpspartiterator_current.htm
 old-project: print
 ms.assetid: ccc8125a-c571-4267-860a-11fc313e395c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IXpsPartIterator, IXpsPartIterator::Current, Current
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IXpsPartIterator::Current method
@@ -69,7 +70,7 @@ The current part in the iterator. If <b>NULL</b>, the <i>pUri</i> parameter migh
 
 
 ## -remarks
-Filters should call the <a href="print.ixpspartiterator_isdone">IXpsPartIterator::IsDone</a> method before calling <code>Current</code>. One or both parameters can be <b>NULL</b>.
+Filters should call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556342">IXpsPartIterator::IsDone</a> method before calling <code>Current</code>. One or both parameters can be <b>NULL</b>.
 
 
 ## -requirements

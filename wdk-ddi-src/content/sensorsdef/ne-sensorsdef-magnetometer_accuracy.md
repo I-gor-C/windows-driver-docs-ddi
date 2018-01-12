@@ -1,5 +1,5 @@
 ---
-UID: NE.sensorsdef.MAGNETOMETER_ACCURACY
+UID: NE:sensorsdef.MAGNETOMETER_ACCURACY
 title: MAGNETOMETER_ACCURACY
 author: windows-driver-content
 description: This enumeration represents the accuracy states of the magnetometer.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MAGNETOMETER_ACCURACY
 req.product: Windows 10 or later.
 ---
 

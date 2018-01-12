@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILSENDMSGRESPONSEPARAMMASK
+UID: NE:ntddrilapitypes.RILSENDMSGRESPONSEPARAMMASK
 title: RILSENDMSGRESPONSEPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsendmsgresponseparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d3bf2b1a-22ac-4b37-a442-ecd8a2108b46
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILSENDMSGRESPONSEPARAMMASK, RILSENDMSGRESPONSEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSENDMSGRESPONSEPARAMMASK
 ---
 
 # RILSENDMSGRESPONSEPARAMMASK enumeration

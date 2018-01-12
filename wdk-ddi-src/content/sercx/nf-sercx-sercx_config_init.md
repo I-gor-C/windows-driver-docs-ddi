@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SERCX_CONFIG_INIT
+UID: NF:sercx.SERCX_CONFIG_INIT
 title: SERCX_CONFIG_INIT function
 author: windows-driver-content
 description: The SERCX_CONFIG_INIT function initializes a SERCX_CONFIG structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>SERCX_CONFIG_INIT</b> function initializes a <a href="serports.sercx_config">SERCX_CONFIG</a> structure.
+The <b>SERCX_CONFIG_INIT</b> function initializes a <a href="..\sercx\ns-sercx-_sercx_config.md">SERCX_CONFIG</a> structure.
 
 
 
@@ -115,7 +116,7 @@ Any IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="serports.sercx_config">SERCX_CONFIG</a>
+<a href="..\sercx\ns-sercx-_sercx_config.md">SERCX_CONFIG</a>
 </dt>
 </dl>
  

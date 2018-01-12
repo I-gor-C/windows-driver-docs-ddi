@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_GET_STATS
+UID: NI:ntddser.IOCTL_SERIAL_GET_STATS
 title: IOCTL_SERIAL_GET_STATS
 author: windows-driver-content
 description: The IOCTL_SERIAL_GET_STATS request returns information about the performance of a serial controller.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_STATS IOCTL
@@ -59,7 +60,7 @@ The <b>AssociatedIrp.SystemBuffer</b> member points to a client-allocated <b>SER
 
 
 ### -output-buffer-length
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="serports.serialperf_stats">SERIALPERF_STATS</a> structure.
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\ntddser\ns-ntddser-_serialperf_stats.md">SERIALPERF_STATS</a> structure.
 
 
 ### -in-out-buffer
@@ -99,7 +100,7 @@ Header
 <a href="..\ntddser\ni-ntddser-ioctl_serial_clear_stats.md">IOCTL_SERIAL_CLEAR_STATS</a>
 </dt>
 <dt>
-<a href="serports.serialperf_stats">SERIALPERF_STATS</a>
+<a href="..\ntddser\ns-ntddser-_serialperf_stats.md">SERIALPERF_STATS</a>
 </dt>
 </dl>
  

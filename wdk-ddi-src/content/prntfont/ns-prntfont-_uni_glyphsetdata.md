@@ -1,5 +1,5 @@
 ---
-UID: NS.PRNTFONT._UNI_GLYPHSETDATA
+UID: NS:prntfont._UNI_GLYPHSETDATA
 title: _UNI_GLYPHSETDATA
 author: windows-driver-content
 description: The UNI_GLYPHSEDATA structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
@@ -7,8 +7,8 @@ old-location: print\uni_glyphsetdata.htm
 old-project: print
 ms.assetid: a2c98783-c463-435e-9d78-c10686f1c75c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UNI_GLYPHSETDATA, PUNI_GLYPHSETDATA, UNI_GLYPHSETDATA, *PUNI_GLYPHSETDATA
+ms.date: 1/8/2018
+ms.keywords: _UNI_GLYPHSETDATA, UNI_GLYPHSETDATA, *PUNI_GLYPHSETDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UNI_GLYPHSETDATA, *PUNI_GLYPHSETDATA
 req.product: Windows 10 or later.
 ---
 
@@ -91,27 +92,27 @@ Specifies the number of glyphs provided by this font.
 
 ### -field dwRunCount
 
-Specifies the number of <a href="print.glyphrun">GLYPHRUN</a> structures in the array pointed to by <b>loRunOffset</b>.
+Specifies the number of <a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a> structures in the array pointed to by <b>loRunOffset</b>.
 
 
 ### -field loRunOffset
 
-Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="print.glyphrun">GLYPHRUN</a> structures.
+Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a> structures.
 
 
 ### -field dwCodePageCount
 
-Specifies the number of <a href="print.uni_codepageinfo">UNI_CODEPAGEINFO</a> structures in the array pointed to by <b>loCodePageOffset</b>.
+Specifies the number of <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a> structures in the array pointed to by <b>loCodePageOffset</b>.
 
 
 ### -field loCodePageOffset
 
-Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="print.uni_codepageinfo">UNI_CODEPAGEINFO</a> structures.
+Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a> structures.
 
 
 ### -field loMapTableOffset
 
-Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of a <a href="print.maptable">MAPTABLE</a> structure.
+Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of a <a href="..\prntfont\ns-prntfont-_maptable.md">MAPTABLE</a> structure.
 
 
 ### -field dwReserved
@@ -141,18 +142,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.glyphrun">GLYPHRUN</a>
+<a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a>
 </dt>
 <dt>
-<a href="print.uni_codepageinfo">UNI_CODEPAGEINFO</a>
+<a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a>
 </dt>
 <dt>
-<a href="print.maptable">MAPTABLE</a>
+<a href="..\prntfont\ns-prntfont-_maptable.md">MAPTABLE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20UNI_GLYPHSETDATA structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20UNI_GLYPHSETDATA structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

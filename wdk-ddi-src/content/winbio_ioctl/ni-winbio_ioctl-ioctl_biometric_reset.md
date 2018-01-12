@@ -1,5 +1,5 @@
 ---
-UID: NI.winbio_ioctl.IOCTL_BIOMETRIC_RESET
+UID: NI:winbio_ioctl.IOCTL_BIOMETRIC_RESET
 title: IOCTL_BIOMETRIC_RESET
 author: windows-driver-content
 description: The IOCTL_BIOMETRIC_RESET IOCTL resets the device to a known or idle state, according to the current power state. Vendor-supplied WBDI drivers must support this IOCTL.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBMP_IMAGE_INFO, BMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -54,11 +55,11 @@ None.
 
 
 ### -output-buffer
-The <b>AssociatedIrp</b>.<b>SystemBuffer</b> member points to a buffer that contains a <a href="biometric.winbio_blank_payload">WINBIO_BLANK_PAYLOAD</a> structure.
+The <b>AssociatedIrp</b>.<b>SystemBuffer</b> member points to a buffer that contains a <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_blank_payload.md">WINBIO_BLANK_PAYLOAD</a> structure.
 
 
 ### -output-buffer-length
-The length of a <a href="biometric.winbio_blank_payload">WINBIO_BLANK_PAYLOAD</a> structure.
+The length of a <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_blank_payload.md">WINBIO_BLANK_PAYLOAD</a> structure.
 
 The vendor-supplied driver can optionally return a DWORD-sized buffer that specifies the buffer size necessary for the requested operation.
 

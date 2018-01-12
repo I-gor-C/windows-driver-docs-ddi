@@ -1,13 +1,13 @@
 ---
-UID: NS.FWPSK.FWPS_CALLOUT2_
+UID: NS:fwpsk.FWPS_CALLOUT2_
 title: FWPS_CALLOUT2_
 author: windows-driver-content
 description: The FWPS_CALLOUT2 structure defines the data that is required for a callout driver to register a callout with the filter engine.Note  FWPS_CALLOUT2 is the specific version of FWPS_CALLOUT used in Windows 8 and later.
 old-location: netvista\fwps_callout2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 88d5a5ad-b71a-49b3-a1cf-b0dff1a85745
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FWPS_CALLOUT2_, FWPS_CALLOUT2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_CALLOUT2
 ---
 
 # FWPS_CALLOUT2_ structure
@@ -39,7 +40,7 @@ req.irql: <= DISPATCH_LEVEL
 
 ## -description
 The <b>FWPS_CALLOUT2</b> structure defines the data that is required for a callout driver to register a
-  callout with the filter engine.<div class="alert"><b>Note</b>  <b>FWPS_CALLOUT2</b> is the specific version of <b>FWPS_CALLOUT</b> used in Windows 8 and later. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information. For Windows 7, <a href="netvista.fwps_callout1">FWPS_CALLOUT1</a> is available. For Windows Vista, <a href="netvista.fwps_callout0">FWPS_CALLOUT0</a> is available.</div>
+  callout with the filter engine.<div class="alert"><b>Note</b>  <b>FWPS_CALLOUT2</b> is the specific version of <b>FWPS_CALLOUT</b> used in Windows 8 and later. See <a href="https://msdn.microsoft.com/FBDF53E5-F7DE-4DEB-AC18-6D2BB59FE670">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information. For Windows 7, <a href="..\fwpsk\ns-fwpsk-fwps_callout1_.md">FWPS_CALLOUT1</a> is available. For Windows Vista, <a href="..\fwpsk\ns-fwpsk-fwps_callout0_.md">FWPS_CALLOUT0</a> is available.</div>
 <div> </div>
 
 
@@ -87,7 +88,7 @@ A callout driver can specify this flag when registering a callout that will be a
        <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn2.md">classifyFn2</a> callout function only if there
        is a context associated with the data flow. A callout driver associates a context with a data flow by
        calling the 
-       <a href="netvista.fwpsflowassociatecontext0">FwpsFlowAssociateContext0</a> function.
+       <a href="..\fwpsk\nf-fwpsk-fwpsflowassociatecontext0.md">FwpsFlowAssociateContext0</a> function.
 
 </td>
 </tr>
@@ -124,7 +125,7 @@ A callout driver specifies this flag to indicate that it can receive notificatio
 
 </td>
 <td width="60%">
-A callout driver specifies this flag to indicate that it can perform  dynamic stream inspection of data flows at stream level. See <a href="netvista.stream_inspection">Stream Inspection</a>.
+A callout driver specifies this flag to indicate that it can perform  dynamic stream inspection of data flows at stream level. See <a href="https://msdn.microsoft.com/77e152bf-cb6b-4845-9a5e-9c37281f23f1">Stream Inspection</a>.
 
 </td>
 </tr>
@@ -168,22 +169,22 @@ A callout driver specifies this flag to indicate that the callout supports recei
 
 </td>
 <td width="60%">
-A callout driver specifies this flag when registering a callout that will be added at layer 2, to indicate that its <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn2.md">classifyFn2</a> callout function can classify multiple chained <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures. For more info, see <a href="netvista.using_layer_2_filtering">Using Layer 2 Filtering</a>.
+A callout driver specifies this flag when registering a callout that will be added at layer 2, to indicate that its <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn2.md">classifyFn2</a> callout function can classify multiple chained <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures. For more info, see <a href="https://msdn.microsoft.com/679E6DE2-4EFB-44F6-936D-2BF611BC9726">Using Layer 2 Filtering</a>.
 
 <div class="alert"><b>Caution</b>  <p class="note">If a callout driver sets this flag, it cannot use the following functions to modify NET_BUFFER_LISTs.
 
 <ul>
 <li>
-<a href="netvista.fwpsreferencenetbufferlist0">FwpsReferenceNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsreferencenetbufferlist0.md">FwpsReferenceNetBufferList0</a>
 </li>
 <li>
-<a href="netvista.fwpsdereferencenetbufferlist0">FwpsDereferenceNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsdereferencenetbufferlist0.md">FwpsDereferenceNetBufferList0</a>
 </li>
 <li>
-<a href="netvista.fwpsallocateclonenetbufferlist0">FwpsAllocateCloneNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">FwpsAllocateCloneNetBufferList0</a>
 </li>
 <li>
-<a href="netvista.fwpsfreeclonenetbufferlist0">FwpsFreeCloneNetBufferList0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsfreeclonenetbufferlist0.md">FwpsFreeCloneNetBufferList0</a>
 </li>
 </ul>
 <p class="note">With this flag set, <b>FwpsAllocateCloneNetBufferList0</b> will always return an <b>INVALID_PARAMETER</b> error. This may unexpectedly cause a 3rd party callout driver to fail to manage the reference count of NET_BUFFER_LISTs, causing send and receive operations to stop.
@@ -223,7 +224,7 @@ If a callout driver does not associate a context with the data flows that the ca
 
 ## -remarks
 A callout driver passes a pointer to an initialized <b>FWPS_CALLOUT2</b> structure to the 
-    <a href="netvista.fwpscalloutregister2">FwpsCalloutRegister2</a> function when it
+    <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister2.md">FwpsCalloutRegister2</a> function when it
     registers a callout with the filter engine.
 
 A callout can set the <b>FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW</b> flag only for connections on which
@@ -232,7 +233,7 @@ A callout can set the <b>FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW</b> flag only for 
     data.
 
 This structure is essentially identical to the previous version, 
-    <a href="netvista.fwps_callout1">FWPS_CALLOUT1</a>. The only differences are that
+    <a href="..\fwpsk\ns-fwpsk-fwps_callout1_.md">FWPS_CALLOUT1</a>. The only differences are that
     the members of this version store the updated versions of the callout function pointers, and additional flags are available for callout drivers to set.
 
 
@@ -273,21 +274,21 @@ Header
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_flow_delete_notify_fn0.md">flowDeleteFn</a>
 </dt>
 <dt>
-<a href="netvista.fwps_callout0">FWPS_CALLOUT0</a>
+<a href="..\fwpsk\ns-fwpsk-fwps_callout0_.md">FWPS_CALLOUT0</a>
 </dt>
 <dt>
-<a href="netvista.fwps_callout1">FWPS_CALLOUT1</a>
+<a href="..\fwpsk\ns-fwpsk-fwps_callout1_.md">FWPS_CALLOUT1</a>
 </dt>
 <dt>
-<a href="netvista.fwpscalloutregister2">FwpsCalloutRegister2</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister2.md">FwpsCalloutRegister2</a>
 </dt>
 <dt>
-<a href="netvista.using_layer_2_filtering">Using Layer 2 Filtering</a>
+<a href="https://msdn.microsoft.com/679E6DE2-4EFB-44F6-936D-2BF611BC9726">Using Layer 2 Filtering</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FWPS_CALLOUT2 structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT2 structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

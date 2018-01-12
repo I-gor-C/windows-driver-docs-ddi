@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_DISEQC_RESPONSE
+UID: NS:bdatypes._BDA_DISEQC_RESPONSE
 title: _BDA_DISEQC_RESPONSE
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\bda_diseqc_response.htm
 old-project: stream
 ms.assetid: 724FD17B-D12B-423D-AA0E-93D9D31DC93E
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_DISEQC_RESPONSE, BDA_DISEQC_RESPONSE, *PBDA_DISEQC_RESPONSE, PBDA_DISEQC_RESPONSE
+ms.date: 1/9/2018
+ms.keywords: _BDA_DISEQC_RESPONSE, *PBDA_DISEQC_RESPONSE, BDA_DISEQC_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PBDA_DISEQC_RESPONSE, BDA_DISEQC_RESPONSE
 ---
 
 # _BDA_DISEQC_RESPONSE structure

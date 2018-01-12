@@ -1,5 +1,5 @@
 ---
-UID: NE.ksmedia.AUDIO_CURVE_TYPE
+UID: NE:ksmedia.AUDIO_CURVE_TYPE
 title: AUDIO_CURVE_TYPE
 author: windows-driver-content
 description: The AUDIO_CURVE_TYPE enumeration defines constants that specify a curve algorithm to be applied to set a volume level.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: AUDIO_CURVE_TYPE
 ---
 
 # AUDIO_CURVE_TYPE enumeration
@@ -130,7 +131,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.ksaudioengine_volumelevel">KSAUDIOENGINE_VOLUMELEVEL</a>
+<a href="..\ksmedia\ns-ksmedia-_tagksaudioengine_volumelevel.md">KSAUDIOENGINE_VOLUMELEVEL</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh831855">KSPROPERTY_AUDIOENGINE_VOLUMELEVEL</a>

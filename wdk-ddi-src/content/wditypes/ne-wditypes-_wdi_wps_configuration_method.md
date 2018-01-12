@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_WPS_CONFIGURATION_METHOD
+UID: NE:wditypes._WDI_WPS_CONFIGURATION_METHOD
 title: _WDI_WPS_CONFIGURATION_METHOD
 author: windows-driver-content
 description: The WDI_WPS_CONFIGURATION_METHOD enumeration defines WPS configuration methods.
 old-location: netvista\wdi_wps_configuration_method.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 116B19BD-959F-4711-B3FB-9880539B7849
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_WPS_CONFIGURATION_METHOD, WDI_WPS_CONFIGURATION_METHOD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_WPS_CONFIGURATION_METHOD
 req.product: Windows 10 or later.
 ---
 

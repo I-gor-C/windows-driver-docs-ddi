@@ -1,5 +1,5 @@
 ---
-UID: NS.NTPOAPI.BATTERY_REPORTING_SCALE
+UID: NS:ntpoapi.BATTERY_REPORTING_SCALE
 title: BATTERY_REPORTING_SCALE
 author: windows-driver-content
 description: Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: aea1d82d-39b8-4535-a5c3-fb987be1e43c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: BATTERY_REPORTING_SCALE, PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+ms.keywords: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE
 ---
 
 # BATTERY_REPORTING_SCALE structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-Battery miniclass drivers fill in this structure in response to certain <a href="battery.batteryminiqueryinformation">BatteryMiniQueryInformation</a> requests. 
+Battery miniclass drivers fill in this structure in response to certain <a href="https://msdn.microsoft.com/bd96b79a-5670-4aaf-b72c-619818c2a2e7">BatteryMiniQueryInformation</a> requests. 
 
 
 
@@ -85,7 +86,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="battery.batteryminiqueryinformation">BatteryMiniQueryInformation</a>
+<a href="https://msdn.microsoft.com/bd96b79a-5670-4aaf-b72c-619818c2a2e7">BatteryMiniQueryInformation</a>
 </dt>
 </dl>
  

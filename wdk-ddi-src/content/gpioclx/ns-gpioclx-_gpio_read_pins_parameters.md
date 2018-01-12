@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_READ_PINS_PARAMETERS
+UID: NS:gpioclx._GPIO_READ_PINS_PARAMETERS
 title: _GPIO_READ_PINS_PARAMETERS
 author: windows-driver-content
 description: The GPIO_READ_PINS_PARAMETERS structure describes a read operation on a group of general-purpose I/O (GPIO) pins.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: D04C836E-C440-4AB9-BB44-7D1E8E0F681D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_READ_PINS_PARAMETERS, PGPIO_READ_PINS_PARAMETERS, *PGPIO_READ_PINS_PARAMETERS, GPIO_READ_PINS_PARAMETERS
+ms.keywords: _GPIO_READ_PINS_PARAMETERS, GPIO_READ_PINS_PARAMETERS, *PGPIO_READ_PINS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: GPIO_READ_PINS_PARAMETERS, *PGPIO_READ_PINS_PARAMETERS
 ---
 
 # _GPIO_READ_PINS_PARAMETERS structure

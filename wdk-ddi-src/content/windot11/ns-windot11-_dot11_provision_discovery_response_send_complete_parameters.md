@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11._DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS
+UID: NS:windot11._DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS
 title: _DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS
 author: windows-driver-content
 description: The parameters for a provision discovery response are specified in a DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS structure. This structure is sent with an NDIS_STATUS_DOT11_WFD_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE indication.
 old-location: netvista\dot11_provision_discovery_response_send_complete_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: EAE45375-63BA-4BBB-A36D-1D56E986694A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS, *PDOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS, DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS
+ms.date: 1/8/2018
+ms.keywords: _DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS, DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS, *PDOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS, *PDOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS
 req.product: Windows 10 or later.
 ---
 
@@ -88,7 +89,7 @@ The device address of the Wi-Fi Direct (WFD) device that the provision discovery
 
 ### -field DialogToken
 
-The dialog token used for the provision discovery response packet. This token must match the token sent with the <a href="netvista._oid_dot11_wfd_send_provision_discovery_request">OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_REQUEST</a> request.
+The dialog token used for the provision discovery response packet. This token must match the token sent with the <a href="https://msdn.microsoft.com/69490609-60CB-426F-8ED7-F8B35CDFCE2A">OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_REQUEST</a> request.
 
 
 ### -field Status
@@ -140,12 +141,12 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439785">NDIS_STATUS_DOT11_WFD_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE</a>
 </dt>
 <dt>
-<a href="netvista._oid_dot11_wfd_send_provision_discovery_request">OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_REQUEST</a>
+<a href="https://msdn.microsoft.com/69490609-60CB-426F-8ED7-F8B35CDFCE2A">OID_DOT11_WFD_SEND_PROVISION_DISCOVERY_REQUEST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_PROVISION_DISCOVERY_RESPONSE_SEND_COMPLETE_PARAMETERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPartDiscardControl.GetDiscardProperties
+UID: NF:filterpipeline.IPartDiscardControl.GetDiscardProperties
 title: IPartDiscardControl::GetDiscardProperties method
 author: windows-driver-content
 description: The GetDiscardProperties method gets the properties of the discard control.
@@ -7,7 +7,7 @@ old-location: print\ipartdiscardcontrol_getdiscardproperties.htm
 old-project: print
 ms.assetid: 37f624b8-3b15-41ee-9670-84287c3e10e6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPartDiscardControl, IPartDiscardControl::GetDiscardProperties, GetDiscardProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPartDiscardControl::GetDiscardProperties method

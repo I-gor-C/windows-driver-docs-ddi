@@ -1,5 +1,5 @@
 ---
-UID: NS.DXVA._DXVA_CONFIGALPHALOAD
+UID: NS:dxva._DXVA_ConfigAlphaLoad
 title: _DXVA_ConfigAlphaLoad
 author: windows-driver-content
 description: The DXVA_ConfigAlphaLoad structure is sent by the host decoder to the accelerator to set the configuration for alpha-blend, texture-loading operations.
@@ -7,8 +7,8 @@ old-location: display\dxva_configalphaload.htm
 old-project: display
 ms.assetid: 0754c362-57b8-40e8-a050-c9dded5180c1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXVA_ConfigAlphaLoad, *LPDXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad, LPDXVA_ConfigAlphaLoad
+ms.date: 12/29/2017
+ms.keywords: _DXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad, *LPDXVA_ConfigAlphaLoad
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVA_ConfigAlphaLoad, *LPDXVA_ConfigAlphaLoad
 ---
 
 # _DXVA_ConfigAlphaLoad structure

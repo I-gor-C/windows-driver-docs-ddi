@@ -1,13 +1,13 @@
 ---
-UID: NS.WIAMINDR_LH._WIAS_CHANGED_VALUE_INFO
+UID: NS:wiamindr_lh._WIAS_CHANGED_VALUE_INFO
 title: _WIAS_CHANGED_VALUE_INFO
 author: windows-driver-content
 description: The WIAS_CHANGED_VALUE_INFO structure is used to store the current and previous values of a property.
 old-location: image\wias_changed_value_info.htm
-old-project: Image
+old-project: image
 ms.assetid: bfef9d54-fcd5-436b-b3ec-8cd3b8f38360
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _WIAS_CHANGED_VALUE_INFO, *PWIAS_CHANGED_VALUE_INFO, WIAS_CHANGED_VALUE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWIAS_CHANGED_VALUE_INFO, WIAS_CHANGED_VALUE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -69,7 +70,7 @@ typedef struct _WIAS_CHANGED_VALUE_INFO {
 
 ### -field bChanged
 
-Is a Boolean that indicates whether a property has changed. That is, if the property's current value is different from its value before <a href="image.iwiaminidrv_drvvalidateitemproperties">IWiaMiniDrv::drvValidateItemProperties</a> was called. Upon return from one of the <b>wiasGetChangedValue</b><i>Xxx</i> functions, this member is <b>TRUE</b> if the property changed, and <b>FALSE</b> if the property did not change. 
+Is a Boolean that indicates whether a property has changed. That is, if the property's current value is different from its value before <a href="https://msdn.microsoft.com/library/windows/hardware/ff545017">IWiaMiniDrv::drvValidateItemProperties</a> was called. Upon return from one of the <b>wiasGetChangedValue</b><i>Xxx</i> functions, this member is <b>TRUE</b> if the property changed, and <b>FALSE</b> if the property did not change. 
 
 
 ### -field vt
@@ -124,7 +125,7 @@ See the PROPVARIANT structure in the Microsoft Windows SDK documentation for mor
 
 
 ## -remarks
-The <b>wiasGetChangedValue</b><i>Xxx</i> functions, use this structure to determine whether a property of a certain type has been changed by an application. These functions are used when the minidriver performs property validation, which occurs within the body of <a href="image.iwiaminidrv_drvvalidateitemproperties">IWiaMiniDrv::drvValidateItemProperties</a>.
+The <b>wiasGetChangedValue</b><i>Xxx</i> functions, use this structure to determine whether a property of a certain type has been changed by an application. These functions are used when the minidriver performs property validation, which occurs within the body of <a href="https://msdn.microsoft.com/library/windows/hardware/ff545017">IWiaMiniDrv::drvValidateItemProperties</a>.
 
 
 ## -requirements
@@ -155,24 +156,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.iwiaminidrv_drvvalidateitemproperties">IWiaMiniDrv::drvValidateItemProperties</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545017">IWiaMiniDrv::drvValidateItemProperties</a>
 </dt>
 <dt>
-<a href="image.wiasgetchangedvaluefloat">wiasGetChangedValueFloat</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluefloat.md">wiasGetChangedValueFloat</a>
 </dt>
 <dt>
-<a href="image.wiasgetchangedvalueguid">wiasGetChangedValueGuid</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvalueguid.md">wiasGetChangedValueGuid</a>
 </dt>
 <dt>
-<a href="image.wiasgetchangedvaluelong">wiasGetChangedValueLong</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluelong.md">wiasGetChangedValueLong</a>
 </dt>
 <dt>
-<a href="image.wiasgetchangedvaluestr">wiasGetChangedValueStr</a>
+<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluestr.md">wiasGetChangedValueStr</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20WIAS_CHANGED_VALUE_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20WIAS_CHANGED_VALUE_INFO structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

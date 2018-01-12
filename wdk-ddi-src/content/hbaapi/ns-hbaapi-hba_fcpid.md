@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAAPI.HBA_FCPID
+UID: NS:hbaapi.HBA_FcpId
 title: HBA_FcpId
 author: windows-driver-content
 description: The HBA_FcpId structure is identical to the HBAFCPID structure.
@@ -7,8 +7,8 @@ old-location: storage\hba_fcpid.htm
 old-project: storage
 ms.assetid: fed2c733-5011-4dba-a8ec-3a0742574949
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: HBA_FcpId, *PHBA_FCPID, PHBA_FCPID, HBA_FCPID
+ms.date: 1/10/2018
+ms.keywords: HBA_FcpId, HBA_FCPID, *PHBA_FCPID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HBA_FCPID, *PHBA_FCPID
 ---
 
 # HBA_FcpId structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The HBA_FcpId structure is identical to the <a href="storage.hbafcpid">HBAFCPID</a> structure.
+The HBA_FcpId structure is identical to the <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpid.md">HBAFCPID</a> structure.
 
 
 

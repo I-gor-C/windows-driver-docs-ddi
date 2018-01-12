@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdevice.WdfDeviceGetSystemPowerAction
+UID: NF:wdfdevice.WdfDeviceGetSystemPowerAction
 title: WdfDeviceGetSystemPowerAction function
 author: windows-driver-content
 description: The WdfDeviceGetSystemPowerAction method returns the system power action, if any, that is currently occurring for the computer.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdevicegetsystempoweraction.htm
 old-project: wdf
 ms.assetid: 5c4e44cd-94a3-4265-b195-7a5711d8035d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDeviceGetSystemPowerAction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -84,7 +85,7 @@ If the device is entering a low-power idle state or returning to its working (D0
 
 If the computer and the device are both in their working states when the driver calls <b>WdfDeviceGetSystemPowerAction</b>, the method returns <b>PowerActionNone</b>.
 
-For more information about low-power states, see <a href="wdf.a_device_enters_a_low_power_state">A Device Enters a Low-Power State</a>.
+For more information about low-power states, see <a href="https://msdn.microsoft.com/07d7c460-4316-40a9-b502-f7c1bd1182c2">A Device Enters a Low-Power State</a>.
 
 The following code example obtains the power transition activity that is currently occurring for the computer.
 
@@ -161,7 +162,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>

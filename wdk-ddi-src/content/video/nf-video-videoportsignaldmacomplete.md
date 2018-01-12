@@ -1,5 +1,5 @@
 ---
-UID: NF.video.VideoPortSignalDmaComplete
+UID: NF:video.VideoPortSignalDmaComplete
 title: VideoPortSignalDmaComplete function
 author: windows-driver-content
 description: The VideoPortSignalDmaComplete function is obsolete in Windows 2000 and later.VideoPortSignalDmaComplete indicates to the video miniport driver whether the current DMA transfer is complete.
@@ -7,7 +7,7 @@ old-location: display\videoportsignaldmacomplete.htm
 old-project: display
 ms.assetid: 81730acb-ff15-438d-8225-125283f61db2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VideoPortSignalDmaComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
 req.irql: 
+req.typenames: VIDEO_PORT_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ Pointer to the miniport driver's device extension.
 
 ### -param pDmaHandle [in]
 
-Pointer to a DMA handle. To obtain the appropriate DMA handle, use the value in the <b>OutputBuffer</b> member of the <i>pVrp</i> parameter after <a href="display.videoportlockpages">VideoPortLockPages</a> returns. 
+Pointer to a DMA handle. To obtain the appropriate DMA handle, use the value in the <b>OutputBuffer</b> member of the <i>pVrp</i> parameter after <a href="..\video\nf-video-videoportlockpages.md">VideoPortLockPages</a> returns. 
 
 
 ## -returns

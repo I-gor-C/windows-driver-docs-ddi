@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.MmDoesFileHaveUserWritableReferences
+UID: NF:ntifs.MmDoesFileHaveUserWritableReferences
 title: MmDoesFileHaveUserWritableReferences function
 author: windows-driver-content
 description: The MmDoesFileHaveUserWritableReferences function returns the number of writable references for a file object.
@@ -7,7 +7,7 @@ old-location: ifsk\mmdoesfilehaveuserwritablereferences.htm
 old-project: ifsk
 ms.assetid: b88afd6e-3a0a-471e-a874-db8fc3175d61
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: MmDoesFileHaveUserWritableReferences
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # MmDoesFileHaveUserWritableReferences function
@@ -55,7 +56,7 @@ ULONG MmDoesFileHaveUserWritableReferences(
 
 ### -param SectionPointer [in]
 
-Pointer to a <a href="kernel.section_object_pointers">SECTION_OBJECT_POINTERS</a> structure that contains the file object's section object pointers.  This parameter is required and cannot be <b>NULL</b>.
+Pointer to a <a href="..\wdm\ns-wdm-_section_object_pointers.md">SECTION_OBJECT_POINTERS</a> structure that contains the file object's section object pointers.  This parameter is required and cannot be <b>NULL</b>.
 
 
 ## -returns
@@ -71,15 +72,15 @@ Pointer to a <a href="kernel.section_object_pointers">SECTION_OBJECT_POINTERS</a
 
  The number of writable views for the associated file object.
 
- The number of outstanding <a href="kernel.mdl">MDL</a>s, which are mapping regions for the associated file object.
+ The number of outstanding <a href="..\wdm\ns-wdm-_mdl.md">MDL</a>s, which are mapping regions for the associated file object.
 
 For transactional file systems, you can use this function to determine if a given transaction is referencing a file object that can change.  If so, the transaction must be rolled back because <a href="https://msdn.microsoft.com/b558ace9-b416-4572-ac94-58a083c9d33b">atomicity</a> cannot be guaranteed.
 
 Prior to calling <b>MmDoesFileHaveUserWritableReferences</b>, transactional file systems must check and intercept the creation of file objects that specify write access.  Specifically, prior to starting a transaction, transactional file systems must ensure that there are no writable file objects that currently exist for the given file in the transaction.  While the transaction is ongoing, transactional file systems must fail the requests to create file objects with write access for the transacted files.
 
-For more information about transactions, see <a href="https://msdn.microsoft.com/b558ace9-b416-4572-ac94-58a083c9d33b">Kernel Transaction Manager Design Guide</a> and <a href="kernel.kernel_transaction_manager__ktm__routines">Kernel Transaction Manager Routines</a>.
+For more information about transactions, see <a href="https://msdn.microsoft.com/b558ace9-b416-4572-ac94-58a083c9d33b">Kernel Transaction Manager Design Guide</a> and <a href="https://msdn.microsoft.com/bdff1ef1-3465-4612-ab15-63e877e5f888">Kernel Transaction Manager Routines</a>.
 
-For more information about file objects, see <a href="kernel.file_object">FILE_OBJECT</a>.
+For more information about file objects, see <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>.
 
 
 ## -requirements
@@ -153,12 +154,12 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.file_object">FILE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MmDoesFileHaveUserWritableReferences function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20MmDoesFileHaveUserWritableReferences function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

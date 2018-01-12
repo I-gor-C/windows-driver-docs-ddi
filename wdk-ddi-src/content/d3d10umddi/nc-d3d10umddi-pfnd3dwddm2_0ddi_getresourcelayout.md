@@ -1,5 +1,5 @@
 ---
-UID: NC.d3d10umddi.PFND3DWDDM2_0DDI_GETRESOURCELAYOUT
+UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_GETRESOURCELAYOUT
 title: PFND3DWDDM2_0DDI_GETRESOURCELAYOUT
 author: windows-driver-content
 description: The pfnGetResourceLayout callback function supports getting resource layout information.
@@ -7,8 +7,8 @@ old-location: display\pfnd3dwddm2_0ddi_getresourcelayout.htm
 old-project: display
 ms.assetid: 0158F1B4-AA6E-41F9-BAEF-A3C688758205
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, PSETRESULT_INFO, SETRESULT_INFO
+ms.date: 12/29/2017
+ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSETRESULT_INFO, SETRESULT_INFO
 ---
 
 # PFND3DWDDM2_0DDI_GETRESOURCELAYOUT callback

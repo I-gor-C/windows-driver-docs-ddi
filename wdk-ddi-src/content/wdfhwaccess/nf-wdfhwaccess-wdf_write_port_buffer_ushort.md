@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfhwaccess.WDF_WRITE_PORT_BUFFER_USHORT
+UID: NF:wdfhwaccess.WDF_WRITE_PORT_BUFFER_USHORT
 title: WDF_WRITE_PORT_BUFFER_USHORT function
 author: windows-driver-content
 description: The WDF_WRITE_PORT_BUFFER_USHORT function writes a number of USHORT values from a buffer to the specified port address.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_port_buffer_ushort.htm
 old-project: wdf
 ms.assetid: 7E4638B0-6FFE-483A-8B71-33B939854CFA
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WDF_WRITE_PORT_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 

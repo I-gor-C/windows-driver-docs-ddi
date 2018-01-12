@@ -1,5 +1,5 @@
 ---
-UID: NS.WMISTR._WNODE_HEADER
+UID: NS:wmistr._WNODE_HEADER
 title: _WNODE_HEADER
 author: windows-driver-content
 description: The WNODE_HEADER structure is the first member of all other WNODE_XXX structures. It contains information common to all such structures.
@@ -7,8 +7,8 @@ old-location: kernel\wnode_header.htm
 old-project: kernel
 ms.assetid: a895f048-b111-4ccc-8466-fe9b169a2f95
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WNODE_HEADER, PWNODE_HEADER, *PWNODE_HEADER, WNODE_HEADER
+ms.date: 1/4/2018
+ms.keywords: _WNODE_HEADER, WNODE_HEADER, *PWNODE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
 req.product: Windows 10 or later.
 ---
 
@@ -77,7 +78,7 @@ This member specifies the size, in bytes, of the nonpaged buffer to receive any 
 
 ### -field ProviderId
 
-If <b>Flags</b> is set to WNODE_FLAG_EVENT_ITEM or WNODE_FLAG_EVENT_REFERENCE, <b>ProviderId</b> should contain the ID of the WMI provider associated with the device object. You can obtain the <b>ProviderId</b> value by calling <a href="kernel.iowmideviceobjecttoproviderid">IoWMIDeviceObjectToProviderId</a>. If <b>Flags</b> is set to any other value, this member is reserved.
+If <b>Flags</b> is set to WNODE_FLAG_EVENT_ITEM or WNODE_FLAG_EVENT_REFERENCE, <b>ProviderId</b> should contain the ID of the WMI provider associated with the device object. You can obtain the <b>ProviderId</b> value by calling <a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWMIDeviceObjectToProviderId</a>. If <b>Flags</b> is set to any other value, this member is reserved.
 
 
 ### -field HistoricalContext
@@ -167,7 +168,7 @@ This member indicates the type of <b>WNODE_<i>XXX</i></b> structure that contain
 
 ### -field WNODE_FLAG_ALL_DATA
 
-The rest of a <a href="kernel.wnode_all_data">WNODE_ALL_DATA</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer. 
+The rest of a <a href="..\wmistr\ns-wmistr-tagwnode_all_data.md">WNODE_ALL_DATA</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer. 
 
 WMI sets this flag in the <b>WNODE_HEADER</b> structure that it passes with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551650">IRP_MN_QUERY_ALL_DATA</a> request.
 
@@ -181,21 +182,21 @@ A driver sets this flag to indicate that the <b>WNODE_<i>XXX</i></b> structure w
 
 ### -field WNODE_FLAG_EVENT_REFERENCE 
 
-The rest of a <a href="kernel.wnode_event_reference">WNODE_EVENT_REFERENCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer. 
+The rest of a <a href="..\wmistr\ns-wmistr-tagwnode_event_reference.md">WNODE_EVENT_REFERENCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer. 
 
 A driver sets this flag when it generates an event that is larger than the maximum size specified in the registry for an event. WMI uses the information in the <b>WNODE_EVENT_REFERENCE</b> structure to request the event data and schedules such a request according to the value of WNODE_FLAG_SEVERITY_MASK.
 
 
 ### -field WNODE_FLAG_METHOD_ITEM
 
-The rest of a <a href="kernel.wnode_method_item">WNODE_METHOD_ITEM</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.
+The rest of a <a href="..\wmistr\ns-wmistr-tagwnode_method_item.md">WNODE_METHOD_ITEM</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.
 
 WMI sets this flag in the <b>WNODE_HEADER</b> structure that it passes with an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550868">IRP_MN_EXECUTE_METHOD</a> request. 
 
 
 ### -field WNODE_FLAG_SINGLE_INSTANCE
 
-The rest of a <a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.
+The rest of a <a href="..\wmistr\ns-wmistr-tagwnode_single_instance.md">WNODE_SINGLE_INSTANCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.
 
 WMI sets this flag in the <b>WNODE_HEADER</b> structure that it passes with a request to query or change an instance.
 
@@ -204,7 +205,7 @@ A driver sets this flag in the <b>WNODE_HEADER</b> structure of an event that co
 
 ### -field WNODE_FLAG_SINGLE_ITEM
 
-The rest of a <a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.
+The rest of a <a href="..\wmistr\ns-wmistr-tagwnode_single_instance.md">WNODE_SINGLE_INSTANCE</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.
 
 WMI sets this flag in the <b>WNODE_HEADER</b> structure that it passes with a request to change an item.
 
@@ -213,7 +214,7 @@ A driver sets this flag in the <b>WNODE_HEADER</b> structure of an event that co
 
 ### -field WNODE_FLAG_TOO_SMALL
 
-The rest of a <a href="kernel.wnode_too_small">WNODE_TOO_SMALL</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.
+The rest of a <a href="..\wmistr\ns-wmistr-tagwnode_too_small.md">WNODE_TOO_SMALL</a> structure follows the <b>WNODE_HEADER</b> structure in the buffer.
 
 A driver sets this flag when it passes a <b>WNODE_TOO_SMALL</b> structure, indicating that the buffer is too small for all of the <b>WNODE_<i>XXX</i></b> data to be returned.
 
@@ -252,7 +253,7 @@ WMI sets this flag before requesting <b>WNODE_<i>XXX</i></b> data for data block
 
 ### -field WNODE_FLAG_SEVERITY_MASK 
 
-The driver-determined severity level of the event associated with a returned <a href="kernel.wnode_event_reference">WNODE_EVENT_REFERENCE</a>, with 0x00 indicating the least severe and 0xff indicating the most severe level.
+The driver-determined severity level of the event associated with a returned <a href="..\wmistr\ns-wmistr-tagwnode_event_reference.md">WNODE_EVENT_REFERENCE</a>, with 0x00 indicating the least severe and 0xff indicating the most severe level.
 
 WMI uses the value of this flag to prioritize its requests for the event data.
 
@@ -275,7 +276,7 @@ An event block is to be sent to the system logger. The event header is a standar
 
 ### -field WNODE_FLAG_TRACED_GUID
 
-An event block is to be sent only to the system logger. It does not get sent to WMI data consumers. The event header is an <b>EVENT_TRACE_HEADER</b> structure, declared in <i>Evntrace.h</i>, instead of a <b>WNODE_HEADER</b>. The driver must allocate memory for the <b>WNODE_<i>XXX</i></b> and free it after <a href="kernel.iowmiwriteevent">IoWMIWriteEvent</a> returns. The driver can allocate such memory either from the stack or, to minimize the overhead of allocating and freeing the memory, from the driver's thread local storage if the driver creates and maintains its own thread pool.
+An event block is to be sent only to the system logger. It does not get sent to WMI data consumers. The event header is an <b>EVENT_TRACE_HEADER</b> structure, declared in <i>Evntrace.h</i>, instead of a <b>WNODE_HEADER</b>. The driver must allocate memory for the <b>WNODE_<i>XXX</i></b> and free it after <a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWMIWriteEvent</a> returns. The driver can allocate such memory either from the stack or, to minimize the overhead of allocating and freeing the memory, from the driver's thread local storage if the driver creates and maintains its own thread pool.
 
 
 ### -field WNODE_FLAG_USE_GUID_PTR
@@ -312,39 +313,39 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iowmiwriteevent">IoWMIWriteEvent</a>
+<a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWMIWriteEvent</a>
 </dt>
 <dt>
-<a href="kernel.iowmideviceobjecttoproviderid">IoWMIDeviceObjectToProviderId</a>
+<a href="..\wdm\nf-wdm-iowmideviceobjecttoproviderid.md">IoWMIDeviceObjectToProviderId</a>
 </dt>
 <dt>
-<a href="kernel.kequerysystemtime">KeQuerySystemTime</a>
+<a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
 </dt>
 <dt>
-<a href="kernel.wnode_all_data">WNODE_ALL_DATA</a>
+<a href="..\wmistr\ns-wmistr-tagwnode_all_data.md">WNODE_ALL_DATA</a>
 </dt>
 <dt>
-<a href="kernel.wnode_event_item">WNODE_EVENT_ITEM</a>
+<a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a>
 </dt>
 <dt>
-<a href="kernel.wnode_event_reference">WNODE_EVENT_REFERENCE</a>
+<a href="..\wmistr\ns-wmistr-tagwnode_event_reference.md">WNODE_EVENT_REFERENCE</a>
 </dt>
 <dt>
-<a href="kernel.wnode_method_item">WNODE_METHOD_ITEM</a>
+<a href="..\wmistr\ns-wmistr-tagwnode_method_item.md">WNODE_METHOD_ITEM</a>
 </dt>
 <dt>
-<a href="kernel.wnode_single_instance">WNODE_SINGLE_INSTANCE</a>
+<a href="..\wmistr\ns-wmistr-tagwnode_single_instance.md">WNODE_SINGLE_INSTANCE</a>
 </dt>
 <dt>
-<a href="kernel.wnode_single_item">WNODE_SINGLE_ITEM</a>
+<a href="..\wmistr\ns-wmistr-tagwnode_single_item.md">WNODE_SINGLE_ITEM</a>
 </dt>
 <dt>
-<a href="kernel.wnode_too_small">WNODE_TOO_SMALL</a>
+<a href="..\wmistr\ns-wmistr-tagwnode_too_small.md">WNODE_TOO_SMALL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_HEADER structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20WNODE_HEADER structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

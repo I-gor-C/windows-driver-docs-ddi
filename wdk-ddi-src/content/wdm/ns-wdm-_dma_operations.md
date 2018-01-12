@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._DMA_OPERATIONS
+UID: NS:wdm._DMA_OPERATIONS
 title: _DMA_OPERATIONS
 author: windows-driver-content
 description: The DMA_OPERATIONS structure provides a table of pointers to functions that control the operation of a DMA controller.
@@ -7,7 +7,7 @@ old-location: kernel\dma_operations.htm
 old-project: kernel
 ms.assetid: b4a5d830-252b-410e-be2c-390371af971c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: _DMA_OPERATIONS, DMA_OPERATIONS, *PDMA_OPERATIONS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: DMA_OPERATIONS, *PDMA_OPERATIONS
 req.product: Windows 10 or later.
 ---
 
@@ -89,7 +90,7 @@ The size, in bytes, of this <b>DMA_OPERATIONS</b> structure.
 
 ### -field PutDmaAdapter
 
-A pointer to a system-defined routine to free a <a href="kernel.dma_adapter">DMA_ADAPTER</a> structure. For more information, see <a href="..\wdm\nc-wdm-pput_dma_adapter.md">PutDmaAdapter</a>.
+A pointer to a system-defined routine to free a <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structure. For more information, see <a href="..\wdm\nc-wdm-pput_dma_adapter.md">PutDmaAdapter</a>.
 
 
 ### -field AllocateCommonBuffer
@@ -228,7 +229,7 @@ A pointer to a system-defined routine that cancels a mapped transfer. <b>CancelM
 
 
 ## -remarks
-All members of this structure, with the exception of <b>Size</b>, are pointers to functions that drivers use to perform DMA operations for their devices. Drivers obtain these pointers by calling the <a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a> routine. The version of the <b>DMA_OPERATIONS</b> structure that this routine returns depends on the <b>Version</b> member of the <a href="kernel.device_description">DEVICE_DESCRIPTION</a> structure that is passed to <b>IoGetDmaAdapter</b> as an input parameter. If <b>Version</b> is DEVICE_DESCRIPTION_VERSION or DEVICE_DESCRIPTION_VERSION1, version 1 of this structure is returned. If <b>Version</b> is DEVICE_DESCRIPTION_VERSION2, version 2 of this structure is returned. Version 2 of <b>DMA_OPERATIONS</b> is available starting with  Windows XP. If <b>Version</b> is DEVICE_DESCRIPTION_VERSION3, version 3 of this structure is returned. Version 3 of <b>DMA_OPERATIONS</b> is available starting with  Windows 8.
+All members of this structure, with the exception of <b>Size</b>, are pointers to functions that drivers use to perform DMA operations for their devices. Drivers obtain these pointers by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> routine. The version of the <b>DMA_OPERATIONS</b> structure that this routine returns depends on the <b>Version</b> member of the <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a> structure that is passed to <b>IoGetDmaAdapter</b> as an input parameter. If <b>Version</b> is DEVICE_DESCRIPTION_VERSION or DEVICE_DESCRIPTION_VERSION1, version 1 of this structure is returned. If <b>Version</b> is DEVICE_DESCRIPTION_VERSION2, version 2 of this structure is returned. Version 2 of <b>DMA_OPERATIONS</b> is available starting with  Windows XP. If <b>Version</b> is DEVICE_DESCRIPTION_VERSION3, version 3 of this structure is returned. Version 3 of <b>DMA_OPERATIONS</b> is available starting with  Windows 8.
 
 
 ## -requirements
@@ -292,7 +293,7 @@ Header
 <a href="..\wdm\nc-wdm-pconfigure_adapter_channel.md">ConfigureAdapterChannel</a>
 </dt>
 <dt>
-<a href="kernel.device_description">DEVICE_DESCRIPTION</a>
+<a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
@@ -331,7 +332,7 @@ Header
 <a href="..\wdm\nc-wdm-pinitialize_dma_transfer_context.md">InitializeDmaTransferContext</a>
 </dt>
 <dt>
-<a href="kernel.iogetdmaadapter">IoGetDmaAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a>
@@ -353,5 +354,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DMA_OPERATIONS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DMA_OPERATIONS structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

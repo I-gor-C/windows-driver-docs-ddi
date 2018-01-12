@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGKSCAMERA_METADATA_ITEMHEADER
+UID: NS:ksmedia.tagKSCAMERA_METADATA_ITEMHEADER
 title: tagKSCAMERA_METADATA_ITEMHEADER
 author: windows-driver-content
 description: This structure contains the metadata header information that is filled by the camera driver.
@@ -7,8 +7,8 @@ old-location: stream\kscamera_metadata_itemheader.htm
 old-project: stream
 ms.assetid: B4AC04D7-9F98-41F1-A38D-927F3F3A7699
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagKSCAMERA_METADATA_ITEMHEADER, KSCAMERA_METADATA_ITEMHEADER, PKSCAMERA_METADATA_ITEMHEADER, *PKSCAMERA_METADATA_ITEMHEADER
+ms.date: 1/9/2018
+ms.keywords: tagKSCAMERA_METADATA_ITEMHEADER, KSCAMERA_METADATA_ITEMHEADER, *PKSCAMERA_METADATA_ITEMHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSCAMERA_METADATA_ITEMHEADER, *PKSCAMERA_METADATA_ITEMHEADER
 ---
 
 # tagKSCAMERA_METADATA_ITEMHEADER structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDPAR._PAR_QUERY_INFORMATION
+UID: NS:ntddpar._PAR_QUERY_INFORMATION
 title: _PAR_QUERY_INFORMATION
 author: windows-driver-content
 description: The PAR_QUERY_INFORMATION structure specifies the operating status of a parallel port.
@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: 3115b0c2-0190-4c5c-8b31-dbafddc9c44d
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PAR_QUERY_INFORMATION, *PPAR_QUERY_INFORMATION, PAR_QUERY_INFORMATION, PPAR_QUERY_INFORMATION
+ms.keywords: _PAR_QUERY_INFORMATION, *PPAR_QUERY_INFORMATION, PAR_QUERY_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPAR_QUERY_INFORMATION, PAR_QUERY_INFORMATION
 ---
 
 # _PAR_QUERY_INFORMATION structure
@@ -113,7 +114,7 @@ Header
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_set_information.md">IOCTL_PAR_SET_INFORMATION</a>
 </dt>
 <dt>
-<a href="parports.par_set_information">PAR_SET_INFORMATION</a>
+<a href="..\ntddpar\ns-ntddpar-_par_set_information.md">PAR_SET_INFORMATION</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NE.ks.KSPROPERTY_TOPOLOGY
+UID: NE:ks.KSPROPERTY_TOPOLOGY
 title: KSPROPERTY_TOPOLOGY
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\ksproperty_topology.htm
 old-project: stream
 ms.assetid: 9C000B4B-DB21-41E1-9AF0-D3B92EAC070B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KSPROPERTY_TOPOLOGY, KSPROPERTY_TOPOLOGY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSPROPERTY_TOPOLOGY
 ---
 
 # KSPROPERTY_TOPOLOGY enumeration

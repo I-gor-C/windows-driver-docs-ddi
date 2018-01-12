@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.LOOPEDSTREAMING_POSITION_EVENT_DATA
+UID: NS:ksmedia.LOOPEDSTREAMING_POSITION_EVENT_DATA
 title: LOOPEDSTREAMING_POSITION_EVENT_DATA
 author: windows-driver-content
 description: The LOOPEDSTREAMING_POSITION_EVENT_DATA structure describes a position event in a looped buffer.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: c9ce4ff9-1c69-40c4-8d82-d1ec4e134f34
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: LOOPEDSTREAMING_POSITION_EVENT_DATA, *PLOOPEDSTREAMING_POSITION_EVENT_DATA, PLOOPEDSTREAMING_POSITION_EVENT_DATA, LOOPEDSTREAMING_POSITION_EVENT_DATA
+ms.keywords: LOOPEDSTREAMING_POSITION_EVENT_DATA, LOOPEDSTREAMING_POSITION_EVENT_DATA, *PLOOPEDSTREAMING_POSITION_EVENT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: LOOPEDSTREAMING_POSITION_EVENT_DATA, *PLOOPEDSTREAMING_POSITION_EVENT_DATA
 ---
 
 # LOOPEDSTREAMING_POSITION_EVENT_DATA structure

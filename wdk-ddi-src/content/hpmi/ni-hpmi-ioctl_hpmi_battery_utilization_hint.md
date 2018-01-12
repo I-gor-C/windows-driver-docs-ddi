@@ -1,5 +1,5 @@
 ---
-UID: NI.hpmi.IOCTL_HPMI_BATTERY_UTILIZATION_HINT
+UID: NI:hpmi.IOCTL_HPMI_BATTERY_UTILIZATION_HINT
 title: IOCTL_HPMI_BATTERY_UTILIZATION_HINT
 author: windows-driver-content
 description: Set command sent to HPMI to provide battery utilization hints.
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: CE326F69-64A4-466E-8A02-5C08AFF8490C
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HPMI_HINT_BOOL, *PHPMI_HINT_BOOL, PHPMI_HINT_BOOL, HPMI_HINT_BOOL
+ms.keywords: _HPMI_HINT_BOOL, *PHPMI_HINT_BOOL, HPMI_HINT_BOOL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PHPMI_HINT_BOOL, HPMI_HINT_BOOL
 ---
 
 # IOCTL_HPMI_BATTERY_UTILIZATION_HINT IOCTL
@@ -48,11 +49,11 @@ Set command sent to HPMI to provide battery utilization hints.
 ## -ioctlparameters
 
 ### -input-buffer
-The AssociatedIrp.SystemBuffer member of the I/O request packet (IRP) points to an initiator-allocated buffer that is used both as the input buffer and the output buffer for the request. On input, this buffer contains a <a href="powermeter.hpmi_battery_utilization_hint">HPMI_BATTERY_UTILIZATION_HINT</a> structure  in which the version is set to a valid value. 
+The AssociatedIrp.SystemBuffer member of the I/O request packet (IRP) points to an initiator-allocated buffer that is used both as the input buffer and the output buffer for the request. On input, this buffer contains a <a href="..\hpmi\ns-hpmi-_hpmi_battery_utilization_hint.md">HPMI_BATTERY_UTILIZATION_HINT</a> structure  in which the version is set to a valid value. 
 
 
 ### -input-buffer-length
-The Parameters.DeviceIoControl.InputBufferLength member of the IRP's current I/O stack location (IO_STACK_LOCATION) is set to the size in bytes of the buffer that is pointed to by the AssociatedIrp.SystemBuffer member. This size must be greater than or equal to sizeof <a href="powermeter.hpmi_battery_utilization_hint">HPMI_BATTERY_UTILIZATION_HINT</a>  structure  or the request will fail with an error status of STATUS_INVALID_PARAMETER.
+The Parameters.DeviceIoControl.InputBufferLength member of the IRP's current I/O stack location (IO_STACK_LOCATION) is set to the size in bytes of the buffer that is pointed to by the AssociatedIrp.SystemBuffer member. This size must be greater than or equal to sizeof <a href="..\hpmi\ns-hpmi-_hpmi_battery_utilization_hint.md">HPMI_BATTERY_UTILIZATION_HINT</a>  structure  or the request will fail with an error status of STATUS_INVALID_PARAMETER.
 
 
 ### -output-buffer
@@ -112,10 +113,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="powermeter.hpmi_h">hpmi.h</a>
+<a href="https://msdn.microsoft.com/35934D6C-3FB4-4AD4-AA50-BD3A7790269F">hpmi.h</a>
 </dt>
 <dt>
-<a href="powermeter.hpmi_hint_bool">HPMI_HINT_BOOL</a>
+<a href="..\hpmi\ne-hpmi-_hpmi_hint_bool.md">HPMI_HINT_BOOL</a>
 </dt>
 <dt>
 <a href="..\hpmi\ni-hpmi-ioctl_hpmi_battery_utilization_hint.md">IOCTL_HPMI_BATTERY_UTILIZATION_HINT</a>
@@ -124,16 +125,16 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendinternalioctlotherssynchronously">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendinternalioctlsynchronously">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendioctlsynchronously">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="kernel.irp">IRP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
 </dt>
 </dl>
  

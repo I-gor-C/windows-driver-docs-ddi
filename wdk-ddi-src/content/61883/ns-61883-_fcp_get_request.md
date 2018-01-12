@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._FCP_GET_REQUEST
+UID: NS:61883._FCP_GET_REQUEST
 title: _FCP_GET_REQUEST
 author: windows-driver-content
 description: This structure is used for a get request.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 4DD05230-E9CA-4067-984B-7F0540FE8079
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _FCP_GET_REQUEST, PFCP_GET_REQUEST, *PFCP_GET_REQUEST, FCP_GET_REQUEST
+ms.keywords: _FCP_GET_REQUEST, *PFCP_GET_REQUEST, FCP_GET_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PFCP_GET_REQUEST, FCP_GET_REQUEST
 ---
 
 # _FCP_GET_REQUEST structure

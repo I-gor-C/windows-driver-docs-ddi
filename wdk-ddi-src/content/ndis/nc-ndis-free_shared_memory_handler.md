@@ -1,13 +1,13 @@
 ---
-UID: NC.ndis.FREE_SHARED_MEMORY_HANDLER
+UID: NC:ndis.FREE_SHARED_MEMORY_HANDLER
 title: FREE_SHARED_MEMORY_HANDLER
 author: windows-driver-content
 description: The NetFreeSharedMemory function (FREE_SHARED_MEMORY_HANDLER entry point) is called by NDIS when a driver frees shared memory from a shared memory provider.
 old-location: netvista\netfreesharedmemory.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: fdc3dfe7-6980-493d-ad41-aed501db3a6b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RxNameCacheInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 # FREE_SHARED_MEMORY_HANDLER callback
@@ -64,7 +65,7 @@ VOID NetFreeSharedMemory(
 An NDIS_HANDLE to a block of driver-allocated context information that identifies the provider.
      The provider supplied this information in the 
      <b>ProviderContext</b> member of the 
-     <a href="netvista.ndis_shared_memory_provider_characteristics">
+     <a href="..\ndis\ns-ndis-_ndis_shared_memory_provider_characteristics.md">
      NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a> structure.
 
 
@@ -84,11 +85,11 @@ None
 ## -remarks
 NDIS calls the 
     <i>NetFreeSharedMemory</i> function of a shared memory provider when a driver calls the 
-    <a href="netvista.ndisfreesharedmemory">NdisFreeSharedMemory</a> function.
+    <a href="..\ndis\nf-ndis-ndisfreesharedmemory.md">NdisFreeSharedMemory</a> function.
 
 The shared memory provider specified the entry point (FREE_SHARED_MEMORY_HANDLER) for 
     <i>NetFreeSharedMemory</i> in the 
-    <a href="netvista.ndis_shared_memory_provider_characteristics">
+    <a href="..\ndis\ns-ndis-_ndis_shared_memory_provider_characteristics.md">
     NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a> structure.
 
 
@@ -141,11 +142,11 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_shared_memory_provider_characteristics">
+<a href="..\ndis\ns-ndis-_ndis_shared_memory_provider_characteristics.md">
    NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndisfreesharedmemory">NdisFreeSharedMemory</a>
+<a href="..\ndis\nf-ndis-ndisfreesharedmemory.md">NdisFreeSharedMemory</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-allocate_shared_memory_handler.md">NetAllocateSharedMemory</a>
@@ -155,5 +156,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FREE_SHARED_MEMORY_HANDLER callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FREE_SHARED_MEMORY_HANDLER callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

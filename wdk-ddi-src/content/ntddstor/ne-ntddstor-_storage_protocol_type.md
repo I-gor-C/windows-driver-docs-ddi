@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddstor._STORAGE_PROTOCOL_TYPE
+UID: NE:ntddstor._STORAGE_PROTOCOL_TYPE
 title: _STORAGE_PROTOCOL_TYPE
 author: windows-driver-content
 description: This enumeration is used to define the different storage command protocols that are used between software and hardware.
@@ -7,8 +7,8 @@ old-location: storage\storage_protocol_type.htm
 old-project: storage
 ms.assetid: 3CC4DF0A-26F1-4825-AD89-D56B0D5F4AC6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_PROTOCOL_TYPE, STORAGE_PROTOCOL_TYPE, PSTORAGE_PROTOCOL_TYPE, *PSTORAGE_PROTOCOL_TYPE
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_PROTOCOL_TYPE, STORAGE_PROTOCOL_TYPE, *PSTORAGE_PROTOCOL_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_PROTOCOL_TYPE, *PSTORAGE_PROTOCOL_TYPE
 ---
 
 # _STORAGE_PROTOCOL_TYPE enumeration

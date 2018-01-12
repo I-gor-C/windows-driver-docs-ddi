@@ -1,5 +1,5 @@
 ---
-UID: NS.PORTCLS.__UNNAMED_STRUCT_0C40_9
+UID: NS:portcls.__unnamed_struct_0c40_9
 title: PCFILTER_DESCRIPTOR
 author: windows-driver-content
 description: The PCFILTER_DESCRIPTOR structure describes a miniport driver's implementation of a filter. The structure specifies the filter's pins, nodes, connections, and properties.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
 ---
 
 # PCFILTER_DESCRIPTOR structure
@@ -76,7 +77,7 @@ Pointer to the automation table. This is a structure of type <a href="..\portcls
 
 ### -field PinSize
 
-Specifies the size in bytes of each element in the <b>Pins</b> array. This value should be a multiple of eight and should be at least <b>sizeof</b>(<a href="audio.pcpin_descriptor">PCPIN_DESCRIPTOR</a>). Larger values allow client-specific descriptor information to be appended to pin descriptors.
+Specifies the size in bytes of each element in the <b>Pins</b> array. This value should be a multiple of eight and should be at least <b>sizeof</b>(<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_7.md">PCPIN_DESCRIPTOR</a>). Larger values allow client-specific descriptor information to be appended to pin descriptors.
 
 
 ### -field PinCount
@@ -86,12 +87,12 @@ Specifies the number of pin descriptors in the <b>Pins</b> array.
 
 ### -field Pins
 
-Pointer to the array of pin descriptors. Each array element is a <a href="audio.pcpin_descriptor">PCPIN_DESCRIPTOR</a> structure.
+Pointer to the array of pin descriptors. Each array element is a <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_7.md">PCPIN_DESCRIPTOR</a> structure.
 
 
 ### -field NodeSize
 
-Specifies the size in bytes of each element in the <b>Nodes</b> array. This value should be a multiple of eight and should be at least <b>sizeof</b>(<a href="audio.pcnode_descriptor">PCNODE_DESCRIPTOR</a>). Larger values allow client-specific descriptor information to be appended to node descriptors.
+Specifies the size in bytes of each element in the <b>Nodes</b> array. This value should be a multiple of eight and should be at least <b>sizeof</b>(<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_8.md">PCNODE_DESCRIPTOR</a>). Larger values allow client-specific descriptor information to be appended to node descriptors.
 
 
 ### -field NodeCount
@@ -101,7 +102,7 @@ Specifies the number of node descriptors in the <b>Nodes</b> array.
 
 ### -field Nodes
 
-Pointer to the array of node descriptors. Each array element is a <a href="audio.pcnode_descriptor">PCNODE_DESCRIPTOR</a> structure.
+Pointer to the array of node descriptors. Each array element is a <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_8.md">PCNODE_DESCRIPTOR</a> structure.
 
 
 ### -field ConnectionCount
@@ -111,7 +112,7 @@ Specifies the number of connections in the <b>Connections</b> array.
 
 ### -field Connections
 
-Pointer to the array of connections descriptors. Each array element is a <a href="audio.pcconnection_descriptor">PCCONNECTION_DESCRIPTOR</a> structure.
+Pointer to the array of connections descriptors. Each array element is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537688">PCCONNECTION_DESCRIPTOR</a> structure.
 
 
 ### -field CategoryCount
@@ -125,7 +126,7 @@ Pointer to the array of GUIDs that specifies the categories that the object belo
 
 
 ## -remarks
-A port driver obtains the miniport driver's filter descriptor by calling the <a href="audio.iminiport_getdescription">IMiniport::GetDescription</a> method. The filter descriptor is a <b>PCFILTER_DESCRIPTOR</b> structure describing the miniport driver's pins, nodes, connections, and properties. For more information, see <a href="https://msdn.microsoft.com/e0d52e97-459f-4095-9cf5-1474117ce66a">Filter, Pin, and Node Properties</a>.
+A port driver obtains the miniport driver's filter descriptor by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a> method. The filter descriptor is a <b>PCFILTER_DESCRIPTOR</b> structure describing the miniport driver's pins, nodes, connections, and properties. For more information, see <a href="https://msdn.microsoft.com/e0d52e97-459f-4095-9cf5-1474117ce66a">Filter, Pin, and Node Properties</a>.
 
 
 ## -requirements
@@ -149,16 +150,16 @@ Header
 <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a>
 </dt>
 <dt>
-<a href="audio.pcpin_descriptor">PCPIN_DESCRIPTOR</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_7.md">PCPIN_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="audio.pcnode_descriptor">PCNODE_DESCRIPTOR</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_8.md">PCNODE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="audio.pcconnection_descriptor">PCCONNECTION_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537688">PCCONNECTION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="audio.iminiport_getdescription">IMiniport::GetDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 </dt>
 </dl>
  

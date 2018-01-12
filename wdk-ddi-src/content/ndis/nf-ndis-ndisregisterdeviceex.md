@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisRegisterDeviceEx
+UID: NF:ndis.NdisRegisterDeviceEx
 title: NdisRegisterDeviceEx function
 author: windows-driver-content
 description: The NdisRegisterDeviceEx function creates a device object that is based upon the specified attributes.
 old-location: netvista\ndisregisterdeviceex.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8e0d406e-748c-4b37-90fb-c7b9dfc28362
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisRegisterDeviceEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisRegisterDeviceEx function
@@ -61,23 +62,23 @@ NDIS_STATUS NdisRegisterDeviceEx(
 ### -param NdisHandle [in]
 
 A miniport driver handle or filter driver handle that the caller obtained by calling the 
-     <a href="netvista.ndismregisterminiportdriver">
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a> function or the 
-     <a href="netvista.ndisfregisterfilterdriver">
+     <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
      NdisFRegisterFilterDriver</a> function respectively.
 
 
 ### -param DeviceObjectAttributes [in]
 
 A pointer to an 
-     <a href="netvista.ndis_device_object_attributes">
+     <a href="..\ndis\ns-ndis-_ndis_device_object_attributes.md">
      NDIS_DEVICE_OBJECT_ATTRIBUTES</a> structure that contains the attributes for the new device.
 
 
 ### -param pDeviceObject [out]
 
 A pointer that points to a pointer to a newly created 
-     <a href="kernel.device_object">DEVICE_OBJECT</a> structure, if the call succeeds.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure, if the call succeeds.
      If the call fails, 
      <i>pDeviceObject</i> is set to point to <b>NULL</b>.
 
@@ -86,7 +87,7 @@ A pointer that points to a pointer to a newly created
 
 A pointer to a caller-supplied variable in which this function, if it succeeds, returns a handle
      to the device object. This handle is a required parameter to the 
-     <a href="netvista.ndisderegisterdeviceex">NdisDeregisterDeviceEx</a> function
+     <a href="..\ndis\nf-ndis-ndisderegisterdeviceex.md">NdisDeregisterDeviceEx</a> function
      that the driver calls subsequently.
 
 
@@ -114,15 +115,15 @@ Miniport drivers and filter drivers can call
 If an NDIS driver requires space for context information in the device object, the driver can pass a
     nonzero value for the 
     <b>ExtensionSize</b> member in the 
-    <a href="netvista.ndis_device_object_attributes">
+    <a href="..\ndis\ns-ndis-_ndis_device_object_attributes.md">
     NDIS_DEVICE_OBJECT_ATTRIBUTES</a> structure at the 
     <i>DeviceObjectAttributes</i> parameter. In this case, NDIS allocates the extension for the driver, and
     the driver can call the 
-    <a href="netvista.ndisgetdevicereservedextension">
+    <a href="..\ndis\nf-ndis-ndisgetdevicereservedextension.md">
     NdisGetDeviceReservedExtension</a> function to get a pointer to the extension.
 
 The driver must subsequently call the 
-    <a href="netvista.ndisderegisterdeviceex">NdisDeregisterDeviceEx</a> function
+    <a href="..\ndis\nf-ndis-ndisderegisterdeviceex.md">NdisDeregisterDeviceEx</a> function
     when the device is no longer needed. If 
     <b>NdisRegisterDeviceEx</b> allocated an extension, 
     <b>NdisDeregisterDeviceEx</b> frees the extension.
@@ -189,7 +190,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -197,28 +198,28 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="netvista.ndis_device_object_attributes">NDIS_DEVICE_OBJECT_ATTRIBUTES</a>
+<a href="..\ndis\ns-ndis-_ndis_device_object_attributes.md">NDIS_DEVICE_OBJECT_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="netvista.ndisderegisterdeviceex">NdisDeregisterDeviceEx</a>
+<a href="..\ndis\nf-ndis-ndisderegisterdeviceex.md">NdisDeregisterDeviceEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndisgetdevicereservedextension">
+<a href="..\ndis\nf-ndis-ndisgetdevicereservedextension.md">
    NdisGetDeviceReservedExtension</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisRegisterDeviceEx function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisRegisterDeviceEx function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

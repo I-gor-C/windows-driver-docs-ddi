@@ -1,13 +1,13 @@
 ---
-UID: NF.ufxclient.UfxDeviceNotifyDetach
+UID: NF:ufxclient.UfxDeviceNotifyDetach
 title: UfxDeviceNotifyDetach function
 author: windows-driver-content
 description: Notifies UFX that the device's USB cable has been detached.
 old-location: buses\ufxdevicenotifydetach.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 890C7451-D9BF-4019-ABBE-D97446728E6B
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UfxDeviceNotifyDetach
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID UfxDeviceNotifyDetach(
 
 ### -param UfxDevice [in]
 
-A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
+A handle to a UFX device object that the driver created by calling <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.
 
 
 ## -returns

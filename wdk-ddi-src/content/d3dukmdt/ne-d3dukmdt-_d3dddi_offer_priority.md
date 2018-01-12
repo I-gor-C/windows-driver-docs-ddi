@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dukmdt._D3DDDI_OFFER_PRIORITY
+UID: NE:d3dukmdt._D3DDDI_OFFER_PRIORITY
 title: _D3DDDI_OFFER_PRIORITY
 author: windows-driver-content
 description: Indicates the importance of video memory resources that the user-mode display driver offers for reuse.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_offer_priority.htm
 old-project: display
 ms.assetid: 2e43f782-c89c-4926-83db-efe737544065
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDI_OFFER_PRIORITY, D3DDDI_OFFER_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_OFFER_PRIORITY
 ---
 
 # _D3DDDI_OFFER_PRIORITY enumeration
@@ -61,7 +62,7 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 
 The allocation should not be offered.
 
-<div class="alert"><b>Note</b>  Do not use this value in the <a href="display.d3dddicb_offerallocations">D3DDDICB_OFFERALLOCATIONS</a>.<b>Priority</b> member.</div>
+<div class="alert"><b>Note</b>  Do not use this value in the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>.<b>Priority</b> member.</div>
 <div> </div>
 
 ### -field D3DDDI_OFFER_PRIORITY_LOW
@@ -125,15 +126,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddi_allocationlist">D3DDDI_ALLOCATIONLIST</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
 </dt>
 <dt>
-<a href="display.d3dddicb_offerallocations">D3DDDICB_OFFERALLOCATIONS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_OFFER_PRIORITY enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_OFFER_PRIORITY enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

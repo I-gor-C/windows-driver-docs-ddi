@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGTRANSPORTBASICPARMS
+UID: NS:ksmedia.tagTRANSPORTBASICPARMS
 title: tagTRANSPORTBASICPARMS
 author: windows-driver-content
 description: The TRANSPORTBASICPARMS structure is defined but not used.
@@ -7,8 +7,8 @@ old-location: stream\transportbasicparms.htm
 old-project: stream
 ms.assetid: 40e305b3-e91c-4227-99e7-dbb939082f54
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagTRANSPORTBASICPARMS, *PTRANSPORTBASICPARMS, PTRANSPORTBASICPARMS, TRANSPORTBASICPARMS
+ms.date: 1/9/2018
+ms.keywords: tagTRANSPORTBASICPARMS, TRANSPORTBASICPARMS, *PTRANSPORTBASICPARMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TRANSPORTBASICPARMS, *PTRANSPORTBASICPARMS
 ---
 
 # tagTRANSPORTBASICPARMS structure

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:print
 ---
 
 # Print
@@ -15,6 +15,7 @@ To develop Print, you need these headers:
  * [d4iface.h](..\d4iface\index.md)
  * [filterpipeline.h](..\filterpipeline\index.md)
  * [icm.h](..\icm\index.md)
+ * [mfidl.h](..\mfidl\index.md)
  * [mxdc.h](..\mxdc\index.md)
  * [prcomoem.h](..\prcomoem\index.md)
  * [prdrvcom.h](..\prdrvcom\index.md)
@@ -59,7 +60,14 @@ To develop Print, you need these headers:
 | [DrvPrinterEvent function](..\winddiui\nf-winddiui-drvprinterevent.md) | A printer interface DLL's DrvPrinterEvent function is called by the print spooler when processing printer-specific events that might require action by the printer driver. |
 | [DrvQueryColorProfile function](..\winddiui\nf-winddiui-drvquerycolorprofile.md) | The DrvQueryColorProfile function allows a printer interface DLL to specify an ICC profile to use for color management. |
 | [DrvQueryJobAttributes function](..\winddiui\nf-winddiui-drvqueryjobattributes.md) | The DrvQueryJobAttributes function allows a printer interface DLL to specify support for such capabilities as printing multiple document pages on a physical page (&#0034;N-up&#0034; printing), printing multiple copies of each page, collating pages, and printing pages in reverse order. |
+| [DrvSplAbort function](..\winddiui\nf-winddiui-drvsplabort.md) | . |
+| [DrvSplClose function](..\winddiui\nf-winddiui-drvsplclose.md) | . |
 | [DrvSplDeviceCaps function](..\winddiui\nf-winddiui-drvspldevicecaps.md) | A printer interface DLL's DrvSplDeviceCaps function queries a printer for its capabilities. |
+| [DrvSplEndDoc function](..\winddiui\nf-winddiui-drvsplenddoc.md) | . |
+| [DrvSplEndPage function](..\winddiui\nf-winddiui-drvsplendpage.md) | . |
+| [DrvSplStartDoc function](..\winddiui\nf-winddiui-drvsplstartdoc.md) | . |
+| [DrvSplStartPage function](..\winddiui\nf-winddiui-drvsplstartpage.md) | . |
+| [DrvSplWritePrinter function](..\winddiui\nf-winddiui-drvsplwriteprinter.md) | . |
 | [DrvUpgradePrinter function](..\winddiui\nf-winddiui-drvupgradeprinter.md) | A printer interface DLL's DrvUpgradePrinter function is used for updating a printer's registry settings when a new version of the driver is added to a system. |
 | [EnumJobNamedProperties function](..\winspool\nf-winspool-enumjobnamedproperties.md) | . |
 | [ExtDeviceMode function](..\winspool\nf-winspool-extdevicemode.md) | The ExtDeviceMode function is provided only for compatibility with 16-bit applications. |
@@ -86,6 +94,8 @@ To develop Print, you need these headers:
 | [GetPrintOutputInfo function](..\winspool\nf-winspool-getprintoutputinfo.md) | . |
 | [GetPrintProcessorCapabilities function](..\winsplp\nf-winsplp-getprintprocessorcapabilities.md) | A print processor's GetPrintProcessorCapabilities function returns capabilities associated with a specified input data type. |
 | [ImpersonatePrinterClient function](..\winsplp\nf-winsplp-impersonateprinterclient.md) | ImpersonatePrinterClient resumes impersonation of the client, completing the operation begun by RevertToPrinterSelf. |
+| [InitializeMonitor function](..\winsplp\nf-winsplp-initializemonitor.md) | . |
+| [InitializeMonitorEx function](..\winsplp\nf-winsplp-initializemonitorex.md) | . |
 | [InitializePrintMonitor function](..\winsplp\nf-winsplp-initializeprintmonitor.md) | The InitializePrintMonitor function is obsolete and is supported only for compatibility purposes. |
 | [InitializePrintMonitor2 function](..\winsplp\nf-winsplp-initializeprintmonitor2.md) | A print monitor's InitializePrintMonitor2 function initializes a print monitor for use with clustered print servers. |
 | [InitializePrintMonitorUI function](..\winsplp\nf-winsplp-initializeprintmonitorui.md) | A port monitor UI DLL's InitializePrintMonitorUI function supplies the print spooler with addresses of DLL functions. |
@@ -216,6 +226,7 @@ To develop Print, you need these headers:
 
 | Title   | Description   |
 | ---- |:---- |
+| [OEMCUIPCALLBACK callback](..\printoem\nc-printoem-oemcuipcallback.md) | The OEMCUIPCALLBACK function type is used for defining callback functions that are specified by a user interface plug-in's IPrintOemUI |
 | [PFNCOMPROPSHEET callback](..\compstui\nc-compstui-pfncompropsheet.md) | The ComPropSheet function is supplied by CPSUI and can be called by CPSUI applications (including printer interface DLLs) to build property sheet pages. |
 | [PFNGETINFO callback](..\printoem\nc-printoem-pfngetinfo.md) | The UNIFONTOBJ_GetInfo callback function is provided by the Unidrv driver so that rendering plug-ins can obtain font or glyph information. |
 | [PFNPROPSHEETUI callback](..\compstui\nc-compstui-pfnpropsheetui.md) | The PFNPROPSHEETUI function type is used by CPSUI applications (including printer interface DLLs) for defining page creation callbacks, which specify property sheet pages for creation. |
@@ -259,7 +270,6 @@ To develop Print, you need these headers:
 | [_DELETE_PORT_DATA_1 structure](..\tcpxcv\ns-tcpxcv-_delete_port_data_1.md) | The XcvData function uses a DELETE_PORT_DATA_1 structure when it deletes a port. |
 | [_DEVICEPROPERTYHEADER structure](..\winddiui\ns-winddiui-_devicepropertyheader.md) | The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDevicePropertySheets function. |
 | [_DEVOBJ structure](..\printoem\ns-printoem-_devobj.md) | The DEVOBJ structure is used as an input argument to several of a rendering plug-in's COM interface methods. |
-| [_DEVOBJ structure](..\printoem\ns-printoem-_devobj~r1.md) | The DEVOBJ structure is used as an input argument to several of a rendering plug-in's COM interface methods. |
 | [_DEVQUERYPRINT_INFO structure](..\winddiui\ns-winddiui-_devqueryprint_info.md) | The DEVQUERYPRINT_INFO structure is used as an input parameter to a printer interface DLL's DevQueryPrintEx function. |
 | [_DLGPAGE structure](..\compstui\ns-compstui-_dlgpage.md) | The DLGPAGE structure is used for specifying a property sheet page to CPSUI's ComPropSheet function. The structure's address is included in a COMPROPSHEETUI structure, and all member values are supplied by the ComPropSheet caller. |
 | [_DOCEVENT_CREATEDCPRE structure](..\winddiui\ns-winddiui-_docevent_createdcpre.md) | The DOCEVENT_CREATEDCPRE structure contains a set of values used in certain calls to DrvDocumentEvent and IPrintOemUI2 |
@@ -271,6 +281,8 @@ To develop Print, you need these headers:
 | [_DOT4_DC_DESTROY_DATA structure](..\d4drvif\ns-d4drvif-_dot4_dc_destroy_data.md) | This topic describes the DOT4_DC_DESTROY_DATA structure. |
 | [_DOT4_DC_OPEN_DATA structure](..\d4drvif\ns-d4drvif-_dot4_dc_open_data.md) | This topic describes the DOT4_DC_OPEN_DATA structure. |
 | [_DOT4_DRIVER_CMD structure](..\d4drvif\ns-d4drvif-_dot4_driver_cmd.md) | This topic describes the DOT4_DRIVER_CMD structure. |
+| [_DRIVER_INFO_8A structure](..\winspool\ns-winspool-_driver_info_8a.md) | The DRIVER_INFO_8 structure contains printer driver information. |
+| [_DRIVER_INFO_8W structure](..\winspool\ns-winspool-_driver_info_8w.md) | The DRIVER_INFO_8 structure contains printer driver information. |
 | [_DRIVER_UPGRADE_INFO_1 structure](..\winddiui\ns-winddiui-_driver_upgrade_info_1.md) | The DRIVER_UPGRADE_INFO_1 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function. |
 | [_DRIVER_UPGRADE_INFO_2 structure](..\winddiui\ns-winddiui-_driver_upgrade_info_2.md) | The DRIVER_UPGRADE_INFO_2 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function. |
 | [_DRVPROCS structure](..\printoem\ns-printoem-_drvprocs.md) | The DRVPROCS structure is obsolete and is not used with the COM interfaces for Microsoft printer drivers. |
@@ -297,7 +309,6 @@ To develop Print, you need these headers:
 | [_MONITORUI structure](..\winsplp\ns-winsplp-_monitorui.md) | The MONITORUI structure contains pointers to the functions within a port monitor UI DLL that the print spooler calls. |
 | [_NOTIFICATION_CONFIG_1 structure](..\winsplp\ns-winsplp-_notification_config_1.md) | . |
 | [_OEMCUIPPARAM structure](..\printoem\ns-printoem-_oemcuipparam.md) | The OEMCUIPPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI |
-| [_OEMCUIPPARAM structure](..\printoem\ns-printoem-_oemcuipparam~r1.md) | The OEMCUIPPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI |
 | [_OEMDMPARAM structure](..\printoem\ns-printoem-_oemdmparam.md) | The OEMDMPARAM structure is used as an input parameter to the IPrintOemUI |
 | [_OEMFONTINSTPARAM structure](..\prntfont\ns-prntfont-_oemfontinstparam.md) | The OEMFONTINSTPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI |
 | [_OEMUIOBJ structure](..\printoem\ns-printoem-_oemuiobj.md) | The OEMUIOBJ structure is used as an input argument to several of the methods exported by user interface plug-ins. |
@@ -363,6 +374,9 @@ To develop Print, you need these headers:
 | [_NOTIFICATION_CALLBACK_COMMANDS enumeration](..\winsplp\ne-winsplp-_notification_callback_commands.md) | . |
 | [_NOTIFICATION_CONFIG_FLAGS enumeration](..\winsplp\ne-winsplp-_notification_config_flags.md) | . |
 | [_STDVARIABLEINDEX enumeration](..\printoem\ne-printoem-_stdvariableindex.md) | . |
+| [__MIDL___MIDL_itf_filterpipeline_0000_0000_0001 enumeration](..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0001.md) | The ExpsCompressionOptions enumeration describes compression options for an XPS part. |
+| [__MIDL___MIDL_itf_filterpipeline_0000_0000_0002 enumeration](..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0002.md) | The EXpsFontOptions enumeration describes the font options for an XPS part. |
+| [__MIDL___MIDL_itf_filterpipeline_0000_0000_0003 enumeration](..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0003.md) | The EXpsJobConsumption enumeration describes job consumption updates. |
 | [__MIDL___MIDL_itf_filterpipeline_0000_0000_0004 enumeration](..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0004.md) | . |
 | [__MIDL___MIDL_itf_xpsrassvc_0000_0001_0001 enumeration](..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0001_0001.md) | The XPSRAS_RENDERING_MODE enumeration specifies the rendering mode to be used by an XPS rasterizer. |
 | [__MIDL___MIDL_itf_xpsrassvc_0000_0003_0001 enumeration](..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0003_0001.md) | XPSRAS_PIXEL_FORMAT allows a caller to select the pixel format used by the IWICBitmap interface that is returned by the IXpsRasterizer |
@@ -390,6 +404,78 @@ To develop Print, you need these headers:
 | [IOCTL_DOT4_WAIT_ACTIVITY_BROADCAST IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_wait_activity_broadcast.md) | This topic describes IOCTL_DOT4_WAIT_ACTIVITY_BROADCAST. |
 | [IOCTL_DOT4_WAIT_FOR_CHANNEL IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_wait_for_channel.md) | This topic describes IOCTL_DOT4_WAIT_FOR_CHANNEL. |
 | [IOCTL_DOT4_WRITE IOCTL](..\d4drvif\ni-d4drvif-ioctl_dot4_write.md) | This topic describes IOCTL_DOT4_WRITE. |
+
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [IBidiRequest interface](..\bidispl\nn-bidispl-ibidirequest.md) | The IBidiRequest interface allows an application or other objects to compose a bidi request. |
+| [IBidiRequestContainer interface](..\bidispl\nn-bidispl-ibidirequestcontainer.md) | The IBidiRequestContainer interface allows an application or other objects to compose and retrieve a list of bidi requests. |
+| [IBidiSpl interface](..\bidispl\nn-bidispl-ibidispl.md) | The IBidiSpl interface allows an application or other objects to send a single bidi request or a list of bidi requests. |
+| [IBidiSpl2 interface](..\bidispl\nn-bidispl-ibidispl2.md) | The IBidiSpl2 interface enables an application or other objects to send one or more bidi requests using one of the Bidi Request Schemas and receive information formatted as one of the Bidi Response Schemas. |
+| [IFixedDocument interface](..\filterpipeline\nn-filterpipeline-ifixeddocument.md) | The IFixedDocument interface represents a fixed document for an XPS document sequence. |
+| [IFixedDocumentSequence interface](..\filterpipeline\nn-filterpipeline-ifixeddocumentsequence.md) | The IFixedDocumentSequence interface represents the fixed document sequence for an XPS document. |
+| [IFixedPage interface](..\filterpipeline\nn-filterpipeline-ifixedpage.md) | A filter uses the IFixedPage interface to work with fixed pages in an XPS document. |
+| [IInterFilterCommunicator interface](..\filterpipeline\nn-filterpipeline-iinterfiltercommunicator.md) | The IInterFilterCommunicator interface is implemented in an object that resides in the PrintFilterPipelineSvc service and is made available to filters through methods in the IPrintPipelineFilter interface. |
+| [IPartBase interface](..\filterpipeline\nn-filterpipeline-ipartbase.md) | The IPartBase interface is a common base for document part interfaces. |
+| [IPartColorProfile interface](..\filterpipeline\nn-filterpipeline-ipartcolorprofile.md) | The IPartColorProfile interface is the abstraction for an XPS color profile. |
+| [IPartDiscardControl interface](..\filterpipeline\nn-filterpipeline-ipartdiscardcontrol.md) | The filter pipeline supports the discard control. |
+| [IPartFont interface](..\filterpipeline\nn-filterpipeline-ipartfont.md) | The IPartFont interface is the abstraction for fonts in a part. |
+| [IPartFont2 interface](..\filterpipeline\nn-filterpipeline-ipartfont2.md) | . |
+| [IPartImage interface](..\filterpipeline\nn-filterpipeline-ipartimage.md) | The IPartImage interface is the abstraction for images in an XPS document. |
+| [IPartPrintTicket interface](..\filterpipeline\nn-filterpipeline-ipartprintticket.md) | The IPartPrintTicket interface is the abstraction for a print ticket in an XPS document. |
+| [IPartResourceDictionary interface](..\filterpipeline\nn-filterpipeline-ipartresourcedictionary.md) | The IPartResourceDictionary interface is the abstraction for an XPS resource dictionary. |
+| [IPartThumbnail interface](..\filterpipeline\nn-filterpipeline-ipartthumbnail.md) | The IPartThumbnail interface is an abstraction for thumbnails in an XPS document. |
+| [IPrintClassObjectFactory interface](..\filterpipeline\nn-filterpipeline-iprintclassobjectfactory.md) | TheIPrintClassObjectFactory interface creates print filter-related interfaces. |
+| [IPrintJob interface](..\printerextension\nn-printerextension-iprintjob.md) | Contains properties that represent a print job. |
+| [IPrintJobCollection interface](..\printerextension\nn-printerextension-iprintjobcollection.md) | This interfaces provides an enumeration of the jobs in the print queue. |
+| [IPrintOemEngine interface](..\prcomoem\nn-prcomoem-iprintoemengine.md) | . |
+| [IPrintPipelineFilter interface](..\filterpipeline\nn-filterpipeline-iprintpipelinefilter.md) | The methods in the IPrintPipelineFilter interface are called for initialization and shutdown. A filter must implement these methods. |
+| [IPrintPipelineManagerControl interface](..\filterpipeline\nn-filterpipeline-iprintpipelinemanagercontrol.md) | The IPrintPipelineManagerControl interface is passed to each filter in the IPrintPipelineFilter |
+| [IPrintPipelineProgressReport interface](..\filterpipeline\nn-filterpipeline-iprintpipelineprogressreport.md) | A rendering filter uses the IPrintPipelineProgressReport interface to send progress status to a spooler. |
+| [IPrintPipelinePropertyBag interface](..\filterpipeline\nn-filterpipeline-iprintpipelinepropertybag.md) | The IPrintPipelinePropertyBag interface is implemented by the PrintFilterPipelineSvc service and is made available to filters through methods in the IPrintPipelineFilter interface. IprintPipelinePropertyBag inherits from the IUnknown interface. |
+| [IPrintReadStream interface](..\filterpipeline\nn-filterpipeline-iprintreadstream.md) | Filters use the IPrintReadStream interface to read data as a raw stream of bytes. |
+| [IPrintReadStreamFactory interface](..\filterpipeline\nn-filterpipeline-iprintreadstreamfactory.md) | The IPrintReadStreamFactory interface creates a stream reader that a filter can use to access the stream. For example, a filter could use this stream to access the per-user print ticket. |
+| [IPrintSchemaAsyncOperation interface](..\printerextension\nn-printerextension-iprintschemaasyncoperation.md) | Represents an asynchronous operation context for validation, merge or commit operations. |
+| [IPrintSchemaAsyncOperationEvent interface](..\printerextension\nn-printerextension-iprintschemaasyncoperationevent.md) | Exposes a validation, merge, or commit completion event delegate. |
+| [IPrintSchemaCapabilities interface](..\printerextension\nn-printerextension-iprintschemacapabilities.md) | Provides the primary method to access PrintCapabilities. |
+| [IPrintSchemaCapabilities2 interface](..\printerextension\nn-printerextension-iprintschemacapabilities2.md) | The IPrintSchemaCapabilities2 interface represents an extension to the IPrintSchemaCapabilities object, which provides wrapper methods over a print capabilities document. |
+| [IPrintSchemaDisplayableElement interface](..\printerextension\nn-printerextension-iprintschemadisplayableelement.md) | Provides the displayable string for a PrintCapabilites PrintSchema element. |
+| [IPrintSchemaElement interface](..\printerextension\nn-printerextension-iprintschemaelement.md) | Provides access to the underlying XML node and &#0034;name&#0034; attribute information for a Print Schema element. |
+| [IPrintSchemaFeature interface](..\printerextension\nn-printerextension-iprintschemafeature.md) | Exposes a Print Schema Feature element. |
+| [IPrintSchemaNUpOption interface](..\printerextension\nn-printerextension-iprintschemanupoption.md) | Exposes a Print Schema NUp Option element. |
+| [IPrintSchemaOption interface](..\printerextension\nn-printerextension-iprintschemaoption.md) | Exposes a Print Schema Option object. |
+| [IPrintSchemaOptionCollection interface](..\printerextension\nn-printerextension-iprintschemaoptioncollection.md) | Exposes a collection of IPrintSchemaOption objects. |
+| [IPrintSchemaPageImageableSize interface](..\printerextension\nn-printerextension-iprintschemapageimageablesize.md) | Exposes the PageImageableSize property of PrintCapabilities. The properties of this interface map directly to those in the PageImageableSize property of PrintCapabilities. |
+| [IPrintSchemaPageMediaSizeOption interface](..\printerextension\nn-printerextension-iprintschemapagemediasizeoption.md) | Exposes a Print Schema PageMediaSize Option element. |
+| [IPrintSchemaParameterDefinition interface](..\printerextension\nn-printerextension-iprintschemaparameterdefinition.md) | The IPrintSchemaParameterDefinition interface represents a parameter definition, as defined in the Print Schema Specification. |
+| [IPrintSchemaParameterInitializer interface](..\printerextension\nn-printerextension-iprintschemaparameterinitializer.md) | The IPrintSchemaParameterInitializer interface represents a parameter initialization value, as defined in the print schema specification. |
+| [IPrintSchemaTicket interface](..\printerextension\nn-printerextension-iprintschematicket.md) | Provides the primary method to access and validate a PrintTicket. |
+| [IPrintSchemaTicket2 interface](..\printerextension\nn-printerextension-iprintschematicket2.md) | The IPrintSchemaTicket2 interface is an extension to the IPrintSchemaTicket interface, which provides wrapper methods over a print ticket document. |
+| [IPrintWriteStream interface](..\filterpipeline\nn-filterpipeline-iprintwritestream.md) | Filters use the IPrintWriteStream interface to write data as a raw stream of bytes. |
+| [IPrintWriteStreamFlush interface](..\filterpipeline\nn-filterpipeline-iprintwritestreamflush.md) | Filters use the IPrintWriteStreamFlush interface to explicitly flush data as a raw stream of bytes from a filter. This interface is retrieved through IPrintWriteStream |
+| [IPrinterBidiSetRequestCallback interface](..\printerextension\nn-printerextension-iprinterbidisetrequestcallback.md) | Describes the signature of the callback object that receives the Bidi response. |
+| [IPrinterExtensionAsyncOperation interface](..\printerextension\nn-printerextension-iprinterextensionasyncoperation.md) | Provides the context associated with an asynchronous operation. |
+| [IPrinterExtensionContext interface](..\printerextension\nn-printerextension-iprinterextensioncontext.md) | Represents the context for the activation of a UWP device app for printers. |
+| [IPrinterExtensionContextCollection interface](..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md) | Exposes a collection of IPrinterExtensionContext objects. |
+| [IPrinterExtensionEventArgs interface](..\printerextension\nn-printerextension-iprinterextensioneventargs.md) | Represents the context for the desktop printer extension activation. |
+| [IPrinterExtensionRequest interface](..\printerextension\nn-printerextension-iprinterextensionrequest.md) | Completes the given extension event with either a cancellation or success. |
+| [IPrinterPropertyBag interface](..\printerextension\nn-printerextension-iprinterpropertybag.md) | Provides strongly-typed get and set methods. |
+| [IPrinterQueue interface](..\printerextension\nn-printerextension-iprinterqueue.md) | Represents a single printer queue. |
+| [IPrinterQueue2 interface](..\printerextension\nn-printerextension-iprinterqueue2.md) | Represents a single printer queue. |
+| [IPrinterQueueEvent interface](..\printerextension\nn-printerextension-iprinterqueueevent.md) | Provides the event delegate for printer queue events. |
+| [IPrinterQueueView interface](..\printerextension\nn-printerextension-iprinterqueueview.md) | Provides a way to change the range of print jobs being monitored. |
+| [IPrinterQueueViewEvent interface](..\printerextension\nn-printerextension-iprinterqueueviewevent.md) | Provides the signature of the event handler. |
+| [IPrinterScriptContext interface](..\printerextension\nn-printerextension-iprinterscriptcontext.md) | Passed to all third-party constraints JavaScript functions, and provides access to relevant objects. |
+| [IPrinterScriptablePropertyBag interface](..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md) | The IPrinterScriptablePropertyBag interface is the property bag interface passed to script clients. |
+| [IPrinterScriptablePropertyBag2 interface](..\printerextension\nn-printerextension-iprinterscriptablepropertybag2.md) | . |
+| [IPrinterScriptableStream interface](..\printerextension\nn-printerextension-iprinterscriptablestream.md) | The IPrinterScriptableStream interface builds on IPrinterScriptableSequentialStream and adds IStream-like semantics. |
+| [IXpsDocument interface](..\filterpipeline\nn-filterpipeline-ixpsdocument.md) | The IXpsDocument interface represents the root of an XPS document. |
+| [IXpsDocumentConsumer interface](..\filterpipeline\nn-filterpipeline-ixpsdocumentconsumer.md) | A filter uses the IXpsDocumentConsumer interface when it generates XPS content for the pipeline to consume. |
+| [IXpsDocumentProvider interface](..\filterpipeline\nn-filterpipeline-ixpsdocumentprovider.md) | The IxpsDocumentProvider interface provides interfaces to consume parts of a document. |
+| [IXpsPartIterator interface](..\filterpipeline\nn-filterpipeline-ixpspartiterator.md) | The IXpsPartIterator interface is an iterator for XPS parts. |
+| [IXpsRasterizationFactory1 interface](..\xpsrassvc\nn-xpsrassvc-ixpsrasterizationfactory1.md) | In Windows 8, the improvement of XPSRas to handle high precision colors has led to the development of a new interface, IXPSRasterizationFactory1. |
+| [IXpsRasterizationFactory2 interface](..\xpsrassvc\nn-xpsrassvc-ixpsrasterizationfactory2.md) | In Windows 10, the IXpsRasterizationFactory2 interface represents an object factory for creating components that can convert content from XPS to PWG Raster using the XPS Rasterization Service. PWG Raster supports non-square DPIs. |
 
 ## Methods
 
@@ -426,6 +512,11 @@ To develop Print, you need these headers:
 | [IFixedPage::SetPrintTicket method](..\filterpipeline\nf-filterpipeline-ifixedpage-setprintticket.md) | The SetPrintTicket method associates a print ticket with the page. |
 | [IInterFilterCommunicator::RequestReader method](..\filterpipeline\nf-filterpipeline-iinterfiltercommunicator-requestreader.md) | The RequestReader method retrieves the reader interface for an IInterFilterCommunicator object. |
 | [IInterFilterCommunicator::RequestWriter method](..\filterpipeline\nf-filterpipeline-iinterfiltercommunicator-requestwriter.md) | The RequestWriter method retrieves the writer interface for an IInterFilterCommunicator object. |
+| [IMFMediaSession::Shutdown method](..\mfidl\nf-mfidl-imfmediasession-shutdown.md) | A print monitor's Shutdown function performs the tasks required to delete a monitor instance. |
+| [IMFMediaSink::Shutdown method](..\mfidl\nf-mfidl-imfmediasink-shutdown.md) | A print monitor's Shutdown function performs the tasks required to delete a monitor instance. |
+| [IMFMediaSource::Shutdown method](..\mfidl\nf-mfidl-imfmediasource-shutdown.md) | A print monitor's Shutdown function performs the tasks required to delete a monitor instance. |
+| [IMFQualityManager::Shutdown method](..\mfidl\nf-mfidl-imfqualitymanager-shutdown.md) | A print monitor's Shutdown function performs the tasks required to delete a monitor instance. |
+| [IMFShutdown::Shutdown method](..\mfidl\nf-mfidl-imfshutdown-shutdown.md) | A print monitor's Shutdown function performs the tasks required to delete a monitor instance. |
 | [IPartBase::GetPartCompression method](..\filterpipeline\nf-filterpipeline-ipartbase-getpartcompression.md) | The GetPartCompression method gets the compression of the part. |
 | [IPartBase::GetStream method](..\filterpipeline\nf-filterpipeline-ipartbase-getstream.md) | The GetStream method gets the stream object that contains the part data. Each part has part-specific data that is associated with it (for example, a font, image, and page markup). |
 | [IPartBase::GetUri method](..\filterpipeline\nf-filterpipeline-ipartbase-geturi.md) | The GetUri method gets the URI of the part. |

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
+UID: NS:ntddndis._NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
 title: _NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
 author: windows-driver-content
 description: The NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD structure contains the offload support state for receive segment coalescing (RSC).
 old-location: netvista\ndis_tcp_recv_seg_coalesce_offload.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: F474ABFA-D811-4C03-868A-E7C23BAE2017
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, *PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
+ms.date: 1/8/2018
+ms.keywords: _NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, *PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, *PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
 ---
 
 # _NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD structure
@@ -79,7 +80,7 @@ A BOOLEAN value that is set to TRUE if RSC processing on IPv6 traffic is support
 </dl>
 
 ## -remarks
-A miniport driver advertises support for receive segment coalescing (RSC) in the Rsc member of the <a href="netvista.ndis_offload">NDIS_OFFLOAD</a> structure that it passes to the <a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a> function. 
+A miniport driver advertises support for receive segment coalescing (RSC) in the Rsc member of the <a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a> structure that it passes to the <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a> function. 
 
 The miniport driver can set the <b>IPv4.Enabled</b> member or the <b>IPv6.Enabled</b> member or both in the <b>NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD</b> structure to TRUE if it supports RSC for these protocols. The miniport driver must support RSC for 802.3 encapsulation or greater, and can support any other encapsulations. If the miniport driver does not support RSC for some encapsulation, the received packets of that encapsulation type must be indicated up the stack normally. 
 
@@ -114,10 +115,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_offload">NDIS_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569806">OID_TCP_OFFLOAD_HARDWARE_CAPABILITIES</a>
@@ -127,5 +128,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

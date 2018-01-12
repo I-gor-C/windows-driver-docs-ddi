@@ -1,5 +1,5 @@
 ---
-UID: NE.iddcx.IDDCX_FRAME_STATUS
+UID: NE:iddcx.IDDCX_FRAME_STATUS
 title: IDDCX_FRAME_STATUS
 author: windows-driver-content
 description: Defines the processing status of the frame.
@@ -7,7 +7,7 @@ old-location: display\iddcx_frame_status.htm
 old-project: display
 ms.assetid: 437050ae-d1b7-48ce-9955-98f1d1b2e15a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_FRAME_STATUS,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: _requires_same_
+req.lib: Mscms.lib
+req.dll: Mscms.dll
+req.irql: 
+req.typenames: 
 ---
 
 # IDDCX_FRAME_STATUS enumeration

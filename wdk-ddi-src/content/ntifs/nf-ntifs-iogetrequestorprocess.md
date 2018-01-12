@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.IoGetRequestorProcess
+UID: NF:ntifs.IoGetRequestorProcess
 title: IoGetRequestorProcess function
 author: windows-driver-content
 description: The IoGetRequestorProcess routine returns a process pointer for the thread that originally requested a given I/O operation.
@@ -7,7 +7,7 @@ old-location: ifsk\iogetrequestorprocess.htm
 old-project: ifsk
 ms.assetid: 456e2354-1362-43f7-a2b0-3b3bec49b522
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: IoGetRequestorProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # IoGetRequestorProcess function
@@ -71,9 +72,9 @@ On  Windows XP, <b>IoGetRequestorProcess</b> returns a pointer to the process t
 
 Prior to Windows XP, <b>IoGetRequestorProcess</b> returns a pointer to the process that created the thread. 
 
-An IRP is automatically associated with a thread if it is issued by the I/O Manager or obtained by calling <a href="kernel.iobuildasynchronousfsdrequest">IoBuildAsynchronousFsdRequest</a>, <a href="kernel.iobuildsynchronousfsdrequest">IoBuildSynchronousFsdRequest</a>, or <a href="kernel.iobuilddeviceiocontrolrequest">IoBuildDeviceIoControlRequest</a>. 
+An IRP is automatically associated with a thread if it is issued by the I/O Manager or obtained by calling <a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>, <a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>, or <a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>. 
 
-For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="kernel.driver_threads__dispatcher_objects__and_resources">Driver Threads, Dispatcher Objects, and Resources</a>. 
+For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="https://msdn.microsoft.com/fbd8aadd-5a24-48c9-9865-80cc7dc97316">Driver Threads, Dispatcher Objects, and Resources</a>. 
 
 
 ## -requirements
@@ -137,21 +138,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iobuildasynchronousfsdrequest">IoBuildAsynchronousFsdRequest</a>
+<a href="..\wdm\nf-wdm-iobuildasynchronousfsdrequest.md">IoBuildAsynchronousFsdRequest</a>
 </dt>
 <dt>
-<a href="kernel.iobuilddeviceiocontrolrequest">IoBuildDeviceIoControlRequest</a>
+<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
 </dt>
 <dt>
-<a href="kernel.iobuildsynchronousfsdrequest">IoBuildSynchronousFsdRequest</a>
+<a href="..\wdm\nf-wdm-iobuildsynchronousfsdrequest.md">IoBuildSynchronousFsdRequest</a>
 </dt>
 <dt>
-<a href="ifsk.iogetrequestorprocessid">IoGetRequestorProcessId</a>
+<a href="..\ntifs\nf-ntifs-iogetrequestorprocessid.md">IoGetRequestorProcessId</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoGetRequestorProcess routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20IoGetRequestorProcess routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

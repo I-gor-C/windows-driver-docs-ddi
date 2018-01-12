@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_SWITCH_PARAMETERS
+UID: NS:ntddndis._NDIS_SWITCH_PARAMETERS
 title: _NDIS_SWITCH_PARAMETERS
 author: windows-driver-content
 description: The NDIS_SWITCH_PARAMETERS structure contains the configuration data for a Hyper-V extensible switch.
 old-location: netvista\ndis_switch_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 766e042a-3f21-4f57-a780-83f92bef0a6c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_SWITCH_PARAMETERS, PNDIS_SWITCH_PARAMETERS, *PNDIS_SWITCH_PARAMETERS, NDIS_SWITCH_PARAMETERS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_SWITCH_PARAMETERS, *PNDIS_SWITCH_PARAMETERS, NDIS_SWITCH_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_SWITCH_PARAMETERS, NDIS_SWITCH_PARAMETERS
 ---
 
 # _NDIS_SWITCH_PARAMETERS structure
@@ -60,7 +61,7 @@ typedef struct _NDIS_SWITCH_PARAMETERS {
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_PARAMETERS</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -87,7 +88,7 @@ A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserve
 
  An <b>NDIS_SWITCH_NAME</b> value that specifies the unique internal name of the extensible switch.
 
-The internal switch name is used by WMI-based policy management applications. For more information, see <a href="netvista.managing_hyper_v_extensible_switch_extensibility_policies">Managing Hyper-V Extensible Switch Policies</a>.
+The internal switch name is used by WMI-based policy management applications. For more information, see <a href="https://msdn.microsoft.com/F58A4BC0-C5C6-440D-BEA3-2224F7051BA5">Managing Hyper-V Extensible Switch Policies</a>.
 
 
 ### -field SwitchFriendlyName
@@ -102,7 +103,7 @@ A UINT32 value that specifies the number of ports configured on the extensible s
 
 ### -field IsActive
 
-A BOOLEAN that if TRUE indicates that the Hyper-V extensible switch activation has finished and it is safe to query for other switch configuration such as enumerating ports, NICs, and properties. If FALSE, the extension must wait for the <a href="netvista.net_pnp_event">NetEventSwitchActivate</a> PNP event to be issued before querying for switch configuration. 
+A BOOLEAN that if TRUE indicates that the Hyper-V extensible switch activation has finished and it is safe to query for other switch configuration such as enumerating ports, NICs, and properties. If FALSE, the extension must wait for the <a href="..\ndis\ns-ndis-_net_pnp_event.md">NetEventSwitchActivate</a> PNP event to be issued before querying for switch configuration. 
 
 
 ## -remarks
@@ -179,13 +180,13 @@ Header
 <a href="..\fwpsk\nc-fwpsk-fwps_vswitch_runtime_state_save_callback0.md">FWPS_VSWITCH_RUNTIME_STATE_SAVE_CALLBACK0</a>
 </dt>
 <dt>
-<a href="netvista.if_counted_string">_STRING</a>
+<a href="https://msdn.microsoft.com/44B59154-C5CA-42F0-A972-021833E29D81">_STRING</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.net_pnp_event">NetEventSwitchActivate</a>
+<a href="..\ndis\ns-ndis-_net_pnp_event.md">NetEventSwitchActivate</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598270">OID_SWITCH_PARAMETERS</a>
@@ -195,5 +196,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_SWITCH_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SWITCH_PARAMETERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

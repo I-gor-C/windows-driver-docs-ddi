@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.BUS_INTERFACE_REFERENCE
+UID: NS:ks.BUS_INTERFACE_REFERENCE
 title: BUS_INTERFACE_REFERENCE
 author: windows-driver-content
 description: A software device enumerator exports this interface to allow drivers to reference count physical device objects (PDOs) such that the device remains active while in use and is unloaded when not in use.
@@ -7,8 +7,8 @@ old-location: stream\bus_interface_reference.htm
 old-project: stream
 ms.assetid: 17c2c46c-ff79-4c80-82c9-c49b18426789
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: BUS_INTERFACE_REFERENCE, *PBUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE, PBUS_INTERFACE_REFERENCE
+ms.date: 1/9/2018
+ms.keywords: BUS_INTERFACE_REFERENCE, *PBUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE
 ---
 
 # BUS_INTERFACE_REFERENCE structure
@@ -58,22 +59,22 @@ typedef struct {
 
 ### -field Interface
 
-Specifies the exported <a href="kernel.interface">INTERFACE</a>.
+Specifies the exported <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>.
 
 
 ### -field ReferenceDeviceObject
 
-Pointer to a driver-supplied <a href="stream.kstrreferencedeviceobject">KStrReferenceDeviceObject</a> routine.
+Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567198">KStrReferenceDeviceObject</a> routine.
 
 
 ### -field DereferenceDeviceObject
 
-Pointer to a driver-supplied <a href="stream.kstrdereferencedeviceobject">KStrDereferenceDeviceObject</a> routine.
+Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567170">KStrDereferenceDeviceObject</a> routine.
 
 
 ### -field QueryReferenceString
 
-Pointer to a driver-supplied <a href="stream.kstrqueryreferencestring">KStrQueryReferenceString</a> routine.
+Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff567193">KStrQueryReferenceString</a> routine.
 
 
 ## -remarks

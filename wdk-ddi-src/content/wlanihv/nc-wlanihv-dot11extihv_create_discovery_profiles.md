@@ -1,14 +1,14 @@
 ---
-UID: NC.wlanihv.DOT11EXTIHV_CREATE_DISCOVERY_PROFILES
+UID: NC:wlanihv.DOT11EXTIHV_CREATE_DISCOVERY_PROFILES
 title: DOT11EXTIHV_CREATE_DISCOVERY_PROFILES
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11extihvcreatediscoveryprofiles.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e741bfa7-eb97-4f94-beb4-545d7bedcea8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BINARY_CONTAINER, *PBINARY_CONTAINER, PBINARY_CONTAINER, BINARY_CONTAINER
+ms.date: 1/8/2018
+ms.keywords: _DRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W, DRIVER_INFO_8
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -77,7 +78,7 @@ A Boolean value that specifies the security status of the discovery profiles. If
 ### -param pIhvProfileParams [in, optional]
 
 A pointer to a 
-     <a href="netvista.dot11ext_ihv_profile_params">
+     <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">
      DOT11EXT_IHV_PROFILE_PARAMS</a> structure. This structure defines the attributes of the basic service
      set (BSS) network to which the profile extensions will be applied.
 
@@ -85,11 +86,11 @@ A pointer to a
 ### -param pConnectableBssid [in, optional]
 
 A pointer to a 
-     <a href="netvista.dot11_bss_list">DOT11_BSS_LIST</a> structure, which contains one
+     <a href="..\wlclient\ns-wlclient-_dot11_bss_list.md">DOT11_BSS_LIST</a> structure, which contains one
      or more 802.11 Beacon or Probe Response frames received from a BSS network. This list is derived from
      the results of the last scan operation performed by the WLAN adapter. For more information about the
      scan operation, see 
-     <a href="netvista.native_802_11_scan_operations">Native 802.11 Scan Operations</a>.
+     <a href="https://msdn.microsoft.com/f670ea71-be96-44f1-b827-a026e91640bd">Native 802.11 Scan Operations</a>.
      
 
 <div class="alert"><b>Note</b>  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic
@@ -99,7 +100,7 @@ A pointer to a
 ### -param pIhvDiscoveryProfileList [out]
 
 A pointer to a 
-     <a href="netvista.dot11ext_ihv_discovery_profile_list">
+     <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_discovery_profile_list.md">
      DOT11EXT_IHV_DISCOVERY_PROFILE_LIST</a> structure that specifies a list of IHV discovery
      profiles.
 
@@ -190,14 +191,14 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_bss_list">DOT11_BSS_LIST</a>
+<a href="..\wlclient\ns-wlclient-_dot11_bss_list.md">DOT11_BSS_LIST</a>
 </dt>
 <dt>
-<a href="netvista.dot11ext_ihv_discovery_profile_list">
+<a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_discovery_profile_list.md">
    DOT11EXT_IHV_DISCOVERY_PROFILE_LIST</a>
 </dt>
 <dt>
-<a href="netvista.dot11ext_ihv_profile_params">DOT11EXT_IHV_PROFILE_PARAMS</a>
+<a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">DOT11EXT_IHV_PROFILE_PARAMS</a>
 </dt>
 <dt>
 <a href="..\wlanihv\nc-wlanihv-dot11ext_allocate_buffer.md">Dot11ExtAllocateBuffer</a>
@@ -213,5 +214,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11EXTIHV_CREATE_DISCOVERY_PROFILES callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_CREATE_DISCOVERY_PROFILES callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

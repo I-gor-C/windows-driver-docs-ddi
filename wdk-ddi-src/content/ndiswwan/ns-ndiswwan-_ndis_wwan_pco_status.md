@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISWWAN._NDIS_WWAN_PCO_STATUS
+UID: NS:ndiswwan._NDIS_WWAN_PCO_STATUS
 title: _NDIS_WWAN_PCO_STATUS
 author: windows-driver-content
 description: The NDIS_WWAN_PCO_STATUS structure represents the Protocol Configuration Option (PCO) status of the modem.
 old-location: netvista\ndis_wwan_pco_status.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: C71187C5-74B6-450A-8461-BB9FDF60DB8D
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_WWAN_PCO_STATUS, *PNDIS_WWAN_PCO_STATUS, PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_WWAN_PCO_STATUS, *PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS
 ---
 
 # _NDIS_WWAN_PCO_STATUS structure
@@ -103,7 +104,7 @@ sizeof(NDIS_WWAN_PCO_STATUS)
  
 
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field uStatus
@@ -223,7 +224,7 @@ The PCO value failed due to a read failure.
 
 ### -field PcoValue
 
-A formatted <a href="netvista.wwan_pco_value">WWAN_PCO_VALUE</a> structure, which contains the PCO information payload from the network as defined in the 3GPP TS24.008 spec.
+A formatted <a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a> structure, which contains the PCO information payload from the network as defined in the 3GPP TS24.008 spec.
 
 
 ## -remarks
@@ -257,24 +258,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.wwan_pco_value">WWAN_PCO_VALUE</a>
+<a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a>
 </dt>
 <dt>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-pco">OID_WWAN_PCO</a>
+<a href="https://msdn.microsoft.com/BE664B41-3FE7-4E93-8739-12BD2F0AE5B8">OID_WWAN_PCO</a>
 </dt>
 <dt>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-pco-status">NDIS_STATUS_WWAN_PCO_STATUS</a>
+<a href="https://msdn.microsoft.com/E0F70FAE-B7C6-4BE4-B89A-88084463EEA5">NDIS_STATUS_WWAN_PCO_STATUS</a>
 </dt>
 <dt>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-protocol-configuration-operations--pco-">MB Protocol Configuration Operations (PCO)</a>
+<a href="https://msdn.microsoft.com/682C507C-5B2C-45E3-99D2-EEC68F8FC715">MB Protocol Configuration Operations (PCO)</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_WWAN_PCO_STATUS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_WWAN_PCO_STATUS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

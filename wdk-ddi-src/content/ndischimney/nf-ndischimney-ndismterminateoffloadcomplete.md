@@ -1,13 +1,13 @@
 ---
-UID: NF.ndischimney.NdisMTerminateOffloadComplete
+UID: NF:ndischimney.NdisMTerminateOffloadComplete
 title: NdisMTerminateOffloadComplete function
 author: windows-driver-content
 description: An offload target calls the NdisMTerminateOffloadComplete function to complete a terminate offload operation that was initiated by a previous call to the MiniportTerminateOffload function of the offload target.
 old-location: netvista\ndismterminateoffloadcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d444eae5-2e7c-41f2-9fb2-55e172505cf6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMTerminateOffloadComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # NdisMTerminateOffloadComplete function
@@ -63,14 +64,14 @@ VOID NdisMTerminateOffloadComplete(
 ### -param NdisMiniportHandle [in]
 
 The handle that the offload target obtained in a previous call to 
-     <a href="netvista.ndismregisterminiportdriver">
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a>.
 
 
 ### -param OffloadBlockList [in]
 
 A pointer to an 
-     <a href="netvista.ndis_miniport_offload_block_list">
+     <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure. The offload target obtained this pointer as an input
      parameter to its 
      <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">
@@ -118,8 +119,8 @@ Complete any oustanding calls to the
       MiniportUpdateOffload</a> functions.
 
 Ensure that any outstanding calls to the 
-      <a href="netvista.ndismindicatestatusex">NdisMIndicateStatusEx</a>, 
-      <a href="netvista.ndismoffloadeventindicate">NdisMOffloadEventIndicate</a>, 
+      <a href="..\ndis\nf-ndis-ndismindicatestatusex.md">NdisMIndicateStatusEx</a>, 
+      <a href="..\ndischimney\nf-ndischimney-ndismoffloadeventindicate.md">NdisMOffloadEventIndicate</a>, 
       <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_event_indicate.md">NdisTcpOffloadEventHandler</a>,
       and 
       <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_receive_indicate.md">
@@ -127,7 +128,7 @@ Ensure that any outstanding calls to the
 
 If there is outstanding send data on a TCP connection that is being terminated, the offload target
     packages such data in net buffers and passes the packaged data to the host stack in a linked list of 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures. In this case,
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures. In this case,
     the offload target specifies a non-<b>NULL</b> value for the 
     <b>NetBufferListChain</b> member of the NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure for that connection.
     (The NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure is in the linked list pointed to by the 
@@ -205,19 +206,19 @@ Any level
 <a href="..\ndischimney\nc-ndischimney-w_terminate_offload_handler.md">MiniportTerminateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_offload_block_list">
+<a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="netvista.tcp_offload_state_delegated">TCP_OFFLOAD_STATE_DELEGATED</a>
+<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_delegated.md">TCP_OFFLOAD_STATE_DELEGATED</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMTerminateOffloadComplete function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMTerminateOffloadComplete function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

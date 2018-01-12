@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdfdmaenabler
 ---
 
 # Wdfdmaenabler.h header
@@ -16,6 +16,13 @@ Wdfdmaenabler.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [PFN_WDFDMAENABLERCONFIGURESYSTEMPROFILE function](nc-wdfdmaenabler-pfn_wdfdmaenablerconfiguresystemprofile.md) | The WdfDmaEnablerConfigureSystemProfile method configures the hardware-specific settings for a system-mode DMA enabler and completes the resource initialization. |
+| [PFN_WDFDMAENABLERCREATE function](nc-wdfdmaenabler-pfn_wdfdmaenablercreate.md) | The WdfDmaEnablerCreate method creates a DMA enabler object. |
+| [PFN_WDFDMAENABLERGETFRAGMENTLENGTH function](nc-wdfdmaenabler-pfn_wdfdmaenablergetfragmentlength.md) | The WdfDmaEnablerGetFragmentLength method returns the maximum transfer length that the operating system supports for a single DMA transfer. |
+| [PFN_WDFDMAENABLERGETMAXIMUMLENGTH function](nc-wdfdmaenabler-pfn_wdfdmaenablergetmaximumlength.md) | The WdfDmaEnablerGetMaximumLength method returns the maximum transfer length, for a single DMA transfer, that a device supports. |
+| [PFN_WDFDMAENABLERGETMAXIMUMSCATTERGATHERELEMENTS function](nc-wdfdmaenabler-pfn_wdfdmaenablergetmaximumscattergatherelements.md) | The WdfDmaEnablerGetMaximumScatterGatherElements method returns the maximum number of scatter/gather elements that the device and driver support, for a specified DMA enabler object. |
+| [PFN_WDFDMAENABLERSETMAXIMUMSCATTERGATHERELEMENTS function](nc-wdfdmaenabler-pfn_wdfdmaenablersetmaximumscattergatherelements.md) | The WdfDmaEnablerSetMaximumScatterGatherElements method sets the maximum number of scatter/gather elements that a device supports, for a specified DMA enabler object. |
+| [PFN_WDFDMAENABLERWDMGETDMAADAPTER function](nc-wdfdmaenabler-pfn_wdfdmaenablerwdmgetdmaadapter.md) | The WdfDmaEnablerWdmGetDmaAdapter method returns a pointer to a WDM DMA_ADAPTER structure that is associated with a DMA enabler object. |
 | [WDF_DMA_ENABLER_CONFIG_INIT function](nf-wdfdmaenabler-wdf_dma_enabler_config_init.md) | The WDF_DMA_ENABLER_CONFIG_INIT function initializes a driver's WDF_DMA_ENABLER_CONFIG structure. |
 | [WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function](nf-wdfdmaenabler-wdf_dma_system_profile_config_init.md) | The WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function initializes a driver's WDF_DMA_SYSTEM_PROFILE_CONFIG structure. |
 | [WdfDmaEnablerConfigureSystemProfile function](nf-wdfdmaenabler-wdfdmaenablerconfiguresystemprofile.md) | The WdfDmaEnablerConfigureSystemProfile method configures the hardware-specific settings for a system-mode DMA enabler and completes the resource initialization. |
@@ -25,17 +32,6 @@ Wdfdmaenabler.h contain these programming interfaces:
 | [WdfDmaEnablerGetMaximumScatterGatherElements function](nf-wdfdmaenabler-wdfdmaenablergetmaximumscattergatherelements.md) | The WdfDmaEnablerGetMaximumScatterGatherElements method returns the maximum number of scatter/gather elements that the device and driver support, for a specified DMA enabler object. |
 | [WdfDmaEnablerSetMaximumScatterGatherElements function](nf-wdfdmaenabler-wdfdmaenablersetmaximumscattergatherelements.md) | The WdfDmaEnablerSetMaximumScatterGatherElements method sets the maximum number of scatter/gather elements that a device supports, for a specified DMA enabler object. |
 | [WdfDmaEnablerWdmGetDmaAdapter function](nf-wdfdmaenabler-wdfdmaenablerwdmgetdmaadapter.md) | The WdfDmaEnablerWdmGetDmaAdapter method returns a pointer to a WDM DMA_ADAPTER structure that is associated with a DMA enabler object. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_WDF_DMA_ENABLER_DISABLE callback](nc-wdfdmaenabler-evt_wdf_dma_enabler_disable.md) | A driver's EvtDmaEnablerDisable event callback function disables a device's DMA capability before the device leaves its working (D0) state. |
-| [EVT_WDF_DMA_ENABLER_ENABLE callback](nc-wdfdmaenabler-evt_wdf_dma_enabler_enable.md) | A driver's EvtDmaEnablerEnable event callback function enables a device's DMA capability after the device enters its working (D0) state. |
-| [EVT_WDF_DMA_ENABLER_FILL callback](nc-wdfdmaenabler-evt_wdf_dma_enabler_fill.md) | A driver's EvtDmaEnablerFill event callback function allocates a device's DMA buffers. |
-| [EVT_WDF_DMA_ENABLER_FLUSH callback](nc-wdfdmaenabler-evt_wdf_dma_enabler_flush.md) | A driver's EvtDmaEnablerFlush event callback function deallocates a device's DMA buffers. |
-| [EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START callback](nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_start.md) | A driver's EvtDmaEnablerSelfManagedIoStart event callback function starts a DMA device's self-managed I/O operations. |
-| [EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_STOP callback](nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_stop.md) | A driver's EvtDmaEnablerSelfManagedIoStop event callback function stops a DMA device's self-managed I/O operations. |
 
 ## Structures
 

@@ -1,13 +1,13 @@
 ---
-UID: NS.FWPSK._FWPS_CONNECT_REQUEST0
+UID: NS:fwpsk._FWPS_CONNECT_REQUEST0
 title: _FWPS_CONNECT_REQUEST0
 author: windows-driver-content
 description: The FWPS_CONNECT_REQUEST0 structure defines modifiable data for the FWPM_LAYER_ALE_AUTH_CONNECT_REDIRECT_V4 and FWPM_LAYER_ALE_AUTH_CONNECT_REDIRECT_V6 layers.
 old-location: netvista\fwps_connect_request0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: dee5586d-62fd-4e08-854c-c7d44be60a71
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _FWPS_CONNECT_REQUEST0, FWPS_CONNECT_REQUEST0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_CONNECT_REQUEST0
 ---
 
 # _FWPS_CONNECT_REQUEST0 structure
@@ -69,22 +70,22 @@ typedef struct _FWPS_CONNECT_REQUEST0 {
 
 The local transport address of the connect request. This is an IPV4 or IPV6 address and TCP port
      formatted as a 
-     <a href="..\ntifs\ns-ntifs-sockaddr_storage.md">SOCKADDR_STORAGE</a> structure.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a> structure.
 
 
 ### -field remoteAddressAndPort
 
 The remote transport address of the connect request. This is an IPV4 or IPV6 address and TCP/UDP
      port formatted as a 
-     <a href="..\ntifs\ns-ntifs-sockaddr_storage.md">SOCKADDR_STORAGE</a> structure.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a> structure.
 
 
 ### -field portReservationToken
 
 A token used to reserve the appropriate port. The token is obtained when a port is reserved by
      calling either 
-     <a href="iphlp.createpersistenttcpportreservation">CreatePersistentTcpPortReservation</a> or 
-     <a href="iphlp.createpersistentudpportreservation">CreatePersistentUdpPortReservation</a>.
+     <a href="https://msdn.microsoft.com/19DAF828-B0E4-49E2-843D-7350C8083C45">CreatePersistentTcpPortReservation</a> or 
+     <a href="https://msdn.microsoft.com/AFD2EFD1-55AF-49C9-8109-D4D1B7BB7C94">CreatePersistentUdpPortReservation</a>.
 
 
 ### -field localRedirectTargetPID
@@ -109,12 +110,12 @@ The value of the
      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function's 
      <i>filter</i> parameter. For more information about the 
      <b>FilterId</b> member, see 
-     <a href="netvista.fwps_filter1">FWPS_FILTER1</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>.
 
 
 ### -field  localRedirectHandle
 
- The    redirect handle that the callout driver created by calling the <a href="netvista.fwpsredirecthandlecreate0">FwpsRedirectHandleCreate0</a> function.
+ The    redirect handle that the callout driver created by calling the <a href="..\fwpsk\nf-fwpsk-fwpsredirecthandlecreate0.md">FwpsRedirectHandleCreate0</a> function.
 
 <div class="alert"><b>Note</b>  Starting with Windows 8, the <b>localRedirectHandle</b> must be populated for redirection to work.</div>
 <div> </div>
@@ -122,7 +123,7 @@ The value of the
 ### -field  localRedirectContext
 
 A callout driver context area that the callout driver allocated by calling the 
-    <a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a> function.
+    <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a> function.
 
 <div class="alert"><b>Note</b>  Starting with Windows 8,  memory allocated for <b>localRedirectContext</b> will have its ownership taken by WFP, and will be freed when the proxied flow is removed.</div>
 <div> </div>
@@ -136,7 +137,7 @@ The    size, in bytes, of the callout-supplied context area.
 
 ## -remarks
 The callout driver obtains this structure by calling the 
-    <a href="netvista.fwpsacquirewritablelayerdatapointer0">
+    <a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">
     FwpsAcquireWritableLayerDataPointer0</a> function, which returns a pointer to a <b>FWPS_CONNECT_REQUEST0</b>
     structure through the 
     <i>writableLayerData</i> parameter. The 
@@ -146,17 +147,17 @@ The callout driver obtains this structure by calling the
     following:
 
 Make all changes to the <b>FWPS_CONNECT_REQUEST0</b> structure that was returned by 
-      <a href="netvista.fwpsacquirewritablelayerdatapointer0">FwpsAcquireWritableLayerDataPointer0</a>. Only the 
+      <a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">FwpsAcquireWritableLayerDataPointer0</a>. Only the 
       <b>remoteAddressAndPort</b>, 
       <b>portReservationToken</b>, <b>localRedirectTargetPID</b>, <b>localRedirectHandle</b>, <b>localRedirectContext</b>, and <b>localRedirectContextSize</b>  members can be modified.
 
 Call 
-      <a href="netvista.fwpsapplymodifiedlayerdata0">
+      <a href="..\fwpsk\nf-fwpsk-fwpsapplymodifiedlayerdata0.md">
       FwpsApplyModifiedLayerData0</a> with the 
       <i>modifiedLayerData</i> parameter set to the address of the <b>FWPS_CONNECT_REQUEST0</b> structure, even if the callout driver didn't modify any data. This value
       must be the same as the 
       <i>modifiedLayerData</i> parameter value returned through 
-      <a href="netvista.fwpsacquirewritablelayerdatapointer0">
+      <a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">
       FwpsAcquireWritableLayerDataPointer0</a>.
 
 This structure acts as a linked list that contains a record of all the changes made by other callout
@@ -197,23 +198,23 @@ Header
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
 </dt>
 <dt>
-<a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>
+<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
 </dt>
 <dt>
-<a href="netvista.fwps_filter1">FWPS_FILTER1</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552389">FWPS_FILTER1</a>
 </dt>
 <dt>
-<a href="netvista.fwpsapplymodifiedlayerdata0">FwpsApplyModifiedLayerData0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsapplymodifiedlayerdata0.md">FwpsApplyModifiedLayerData0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsacquirewritablelayerdatapointer0">
+<a href="..\fwpsk\nf-fwpsk-fwpsacquirewritablelayerdatapointer0.md">
    FwpsAcquireWritableLayerDataPointer0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsredirecthandlecreate0">FwpsRedirectHandleCreate0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsredirecthandlecreate0.md">FwpsRedirectHandleCreate0</a>
 </dt>
 <dt>
-<a href="..\ntifs\ns-ntifs-sockaddr_storage.md">SOCKADDR_STORAGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570825">SOCKADDR_STORAGE</a>
 </dt>
 <dt>
 <a href="netvista.using_bind_or_connect_redirection">Using Bind or Connect
@@ -224,5 +225,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FWPS_CONNECT_REQUEST0 structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CONNECT_REQUEST0 structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

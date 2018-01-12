@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.MmProbeAndLockPages
+UID: NF:wdm.MmProbeAndLockPages
 title: MmProbeAndLockPages function
 author: windows-driver-content
 description: The MmProbeAndLockPages routine probes the specified virtual memory pages, makes them resident, and locks them in memory.
@@ -7,7 +7,7 @@ old-location: kernel\mmprobeandlockpages.htm
 old-project: kernel
 ms.assetid: d958004f-1730-412d-be75-e51628e6fcdc
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: MmProbeAndLockPages
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: See Remarks section.
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -84,7 +85,7 @@ If the specified memory range is paged to a backing store (disk, network, and so
 
 The routine then confirms that the pages permit the operation specified by the <i>Operation</i> parameter.
 
-If the memory range permits the specified operation, the routine locks the pages in memory so that they cannot be paged out. Use the <a href="kernel.mmunlockpages">MmUnlockPages</a> routine to unlock the pages.
+If the memory range permits the specified operation, the routine locks the pages in memory so that they cannot be paged out. Use the <a href="..\wdm\nf-wdm-mmunlockpages.md">MmUnlockPages</a> routine to unlock the pages.
 
 Finally, the routine updates the <a href="wdkgloss.p#wdkgloss.page_frame_number__pfn_#wdkgloss.page_frame_number__pfn_"><i>page frame number</i></a> (PFN) array in the MDL to describe the locked physical pages.
 
@@ -92,7 +93,7 @@ A successful call to <b>MmProbeAndLockPages</b> locks the pages in an MDL and se
 
 If two or more MDLs describe the same physical page, the page can be locked multiple times—once for each MDL. The page is unlocked when the last MDL is set to the unlocked state.
 
-A routine such as <a href="kernel.mmbuildmdlfornonpagedpool">MmBuildMdlForNonPagedPool</a> or <a href="kernel.iobuildpartialmdl">IoBuildPartialMdl</a> updates an MDL to describe pages that are either nonpageable or already locked. A call to <b>MmProbeAndLockPages</b> or <b>MmUnlockPages</b> to lock or unlock such an MDL is not allowed.
+A routine such as <a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a> or <a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a> updates an MDL to describe pages that are either nonpageable or already locked. A call to <b>MmProbeAndLockPages</b> or <b>MmUnlockPages</b> to lock or unlock such an MDL is not allowed.
 
 Calls to <b>MmProbeAndLockPages</b> must be enclosed in a <b>try/except</b> block. If the pages do not support the specified operation, the routine raises the STATUS_ACCESS_VIOLATION or other exceptions. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546823">Handling Exceptions</a>.
 
@@ -173,7 +174,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -181,18 +182,18 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iobuildpartialmdl">IoBuildPartialMdl</a>
+<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
 </dt>
 <dt>
-<a href="kernel.mmbuildmdlfornonpagedpool">MmBuildMdlForNonPagedPool</a>
+<a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a>
 </dt>
 <dt>
-<a href="kernel.mmunlockpages">MmUnlockPages</a>
+<a href="..\wdm\nf-wdm-mmunlockpages.md">MmUnlockPages</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmProbeAndLockPages routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20MmProbeAndLockPages routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

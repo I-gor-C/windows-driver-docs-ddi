@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP.BRANCHOFFICEJOBDATAERROR
+UID: NS:winsplp.BranchOfficeJobDataError
 title: BranchOfficeJobDataError
 author: windows-driver-content
 description: This structure contains the necessary data for logging a branch office job failure event on a remote server. This is based on standard job-related data available to the spooler.
@@ -7,8 +7,8 @@ old-location: print\branchofficejobdataerror.htm
 old-project: print
 ms.assetid: 947C508E-2EB9-451D-AA8D-DCDDE27DEBE6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: BranchOfficeJobDataError, *PBranchOfficeJobDataError, PBranchOfficeJobDataError, BranchOfficeJobDataError
+ms.date: 1/8/2018
+ms.keywords: BranchOfficeJobDataError, *PBranchOfficeJobDataError, BranchOfficeJobDataError
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBranchOfficeJobDataError, BranchOfficeJobDataError
 req.product: Windows 10 or later.
 ---
 

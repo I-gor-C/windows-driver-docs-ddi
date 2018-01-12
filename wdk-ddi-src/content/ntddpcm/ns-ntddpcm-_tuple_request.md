@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDPCM._TUPLE_REQUEST
+UID: NS:ntddpcm._TUPLE_REQUEST
 title: _TUPLE_REQUEST
 author: windows-driver-content
 description: The TUPLE_REQUEST structure is used in conjunction with the IOCTL_GET_TUPLE_DATA request to retrieve tuple data from a PC Card's or CardBus card's attribute memory.
@@ -8,7 +8,7 @@ old-project: PCMCIA
 ms.assetid: c702d3aa-d586-4206-93be-30537c55edcf
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _TUPLE_REQUEST, TUPLE_REQUEST, PTUPLE_REQUEST, *PTUPLE_REQUEST
+ms.keywords: _TUPLE_REQUEST, TUPLE_REQUEST, *PTUPLE_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TUPLE_REQUEST, *PTUPLE_REQUEST
 ---
 
 # _TUPLE_REQUEST structure

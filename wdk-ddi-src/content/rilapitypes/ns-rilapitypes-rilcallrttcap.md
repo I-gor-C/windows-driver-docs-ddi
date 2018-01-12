@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILCALLRTTCAP
+UID: NS:rilapitypes.RILCALLRTTCAP
 title: RILCALLRTTCAP
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallrttcap_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e1652bc1-e15d-4018-8f4c-2514958ffd27
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILCALLRTTCAP, RILCALLRTTCAP, *LPRILCALLRTTCAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLRTTCAP, *LPRILCALLRTTCAP
 req.product: Windows 10 or later.
 ---
 

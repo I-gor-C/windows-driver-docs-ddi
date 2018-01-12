@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPersistDeviceProfile
+UID: NF:ks.KsPersistDeviceProfile
 title: KsPersistDeviceProfile function
 author: windows-driver-content
 description: The KsPersistDeviceProfile API commits the profile information to the persistent store.
@@ -7,7 +7,7 @@ old-location: stream\kspersistdeviceprofile.htm
 old-project: stream
 ms.assetid: 4EC3E99B-C73C-4EAC-9EBD-BB45ABFCE8EC
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPersistDeviceProfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsPersistDeviceProfile function
@@ -55,7 +56,7 @@ The <b>KsPersistDeviceProfile</b> API commits the profile information to the per
 
 ### -param FilterFactory [in]
 
-This is the <a href="stream.ksfilterfactory">KSFILTERFACTORY</a> that was used to initialize the profile store in <a href="stream.ksinitializedeviceprofile">KsInitializeDeviceProfile</a>.
+This is the <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> that was used to initialize the profile store in <a href="..\ks\nf-ks-ksinitializedeviceprofile.md">KsInitializeDeviceProfile</a>.
 
 
 ## -returns

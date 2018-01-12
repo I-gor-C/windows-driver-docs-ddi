@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMOutputCharStr
+UID: NF:printoem.OEMOutputCharStr
 title: OEMOutputCharStr function
 author: windows-driver-content
 description: OEMOutputCharStr function
@@ -7,7 +7,7 @@ old-location: print\oemoutputcharstr.htm
 old-project: print
 ms.assetid: ac23ec89-b455-4bfd-93a5-2294d8b8ffc2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMOutputCharStr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 
@@ -73,7 +74,7 @@ VOID APIENTRY OEMOutputCharStr(
 ## -returns
 This function does not return a value.
 
-This function is obsolete for Windows XP and later. It is supported only for earlier Unidrv plug-ins. Use <a href="print.iprintoemuni_outputcharstr">IPrintOemUni::OutputCharStr</a>.
+This function is obsolete for Windows XP and later. It is supported only for earlier Unidrv plug-ins. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff554267">IPrintOemUni::OutputCharStr</a>.
 
 
 ## -remarks

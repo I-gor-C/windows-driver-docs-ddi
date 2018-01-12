@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._DEVICE_CAPABILITIES
+UID: NS:wdm._DEVICE_CAPABILITIES
 title: _DEVICE_CAPABILITIES
 author: windows-driver-content
 description: A DEVICE_CAPABILITIES structure describes PnP and power capabilities of a device. This structure is returned in response to an IRP_MN_QUERY_CAPABILITIES IRP.
@@ -7,8 +7,8 @@ old-location: kernel\device_capabilities.htm
 old-project: kernel
 ms.assetid: 1edae050-8e72-42e7-9dc9-8f449699969c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DEVICE_CAPABILITIES, PDEVICE_CAPABILITIES, DEVICE_CAPABILITIES
+ms.date: 1/4/2018
+ms.keywords: _DEVICE_CAPABILITIES, DEVICE_CAPABILITIES, PDEVICE_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: DEVICE_CAPABILITIES, PDEVICE_CAPABILITIES
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-A <b>DEVICE_CAPABILITIES</b> structure describes PnP and power capabilities of a device. This structure is returned in response to an <a href="kernel.irp_mn_query_capabilities">IRP_MN_QUERY_CAPABILITIES</a> IRP.
+A <b>DEVICE_CAPABILITIES</b> structure describes PnP and power capabilities of a device. This structure is returned in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551664">IRP_MN_QUERY_CAPABILITIES</a> IRP.
 
 
 
@@ -131,7 +132,7 @@ Specifies whether the device is a docking peripheral.
 
 ### -field UniqueID
 
-Specifies whether the device's instance ID is unique system-wide. This bit is clear if the instance ID is unique only within the scope of the bus. For more information, see <a href="devinst.device_identification_strings">Device Identification Strings</a>.
+Specifies whether the device's instance ID is unique system-wide. This bit is clear if the instance ID is unique only within the scope of the bus. For more information, see <a href="https://msdn.microsoft.com/dae23185-63d9-4a0f-9786-c7fa66368826">Device Identification Strings</a>.
 
 
 ### -field SilentInstall
@@ -329,7 +330,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.irp_mn_query_capabilities">IRP_MN_QUERY_CAPABILITIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551664">IRP_MN_QUERY_CAPABILITIES</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559618">PNP_DEVICE_STATE</a>
@@ -339,5 +340,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DEVICE_CAPABILITIES structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DEVICE_CAPABILITIES structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY
+UID: NE:d3dkmdt._D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY
 title: _D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY
 author: windows-driver-content
 description: Specifies the capabilities for the preemption of graphic processing unit (GPU) graphics operations that the display miniport driver supports.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_graphics_preemption_granularity.htm
 old-project: display
 ms.assetid: 589b0eac-235a-4403-a917-ae3241313c8e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY, D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY
 ---
 
 # _D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY enumeration
@@ -134,15 +135,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmdt_compute_preemption_granularity">D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_compute_preemption_granularity.md">D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY</a>
 </dt>
 <dt>
-<a href="display.d3dkmdt_preemption_caps">D3DKMDT_PREEMPTION_CAPS</a>
+<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_preemption_caps.md">D3DKMDT_PREEMPTION_CAPS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMDT_GRAPHICS_PREEMPTION_GRANULARITY enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

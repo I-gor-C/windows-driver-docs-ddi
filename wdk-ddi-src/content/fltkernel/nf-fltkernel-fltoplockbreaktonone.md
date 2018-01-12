@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltOplockBreakToNone
+UID: NF:fltkernel.FltOplockBreakToNone
 title: FltOplockBreakToNone function
 author: windows-driver-content
 description: The FltOplockBreakToNone routine breaks all opportunistic locks (oplocks) immediately without regard for any oplock key.
@@ -7,7 +7,7 @@ old-location: ifsk\fltoplockbreaktonone.htm
 old-project: ifsk
 ms.assetid: 212dc455-9317-4901-9a96-1c71dde0faf3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltOplockBreakToNone
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltOplockBreakToNone function
@@ -59,12 +60,12 @@ FLT_PREOP_CALLBACK_STATUS FltOplockBreakToNone(
 
 ### -param Oplock [in]
 
-An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="ifsk.fltinitializeoplock">FltInitializeOplock</a>. 
+An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>. 
 
 
 ### -param CallbackData [in]
 
-A pointer to the callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the I/O operation. 
+A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. 
 
 
 ### -param Context [in, optional]
@@ -150,7 +151,7 @@ A context information pointer that was passed in the <i>Context</i> parameter to
 <b>FltOplockBreakToNone</b> returns one of the following FLT_PREOP_CALLBACK_STATUS codes: 
 <dl>
 <dt><b>FLT_PREOP_COMPLETE</b></dt>
-</dl><b>FltOplockBreakToNone</b> encountered a pool allocation failure, or a call to the <a href="ifsk.fsrtloplockbreaktononeex">FsRtlOplockBreakToNoneEx</a> function returned an error. <b>FltOplockBreakToNone</b> will set the error code in the <b>Status</b> member of the <a href="kernel.io_status_block">IO_STATUS_BLOCK</a> structure of the <b>IoStatus</b> member. The IO_STATUS_BLOCK structure is specified in the <b>IoStatus</b> member of the <a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a> callback data structure. The <i>CallbackData</i> parameter points to this FLT_CALLBACK_DATA. 
+</dl><b>FltOplockBreakToNone</b> encountered a pool allocation failure, or a call to the <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockbreaktononeex~r5.md">FsRtlOplockBreakToNoneEx</a> function returned an error. <b>FltOplockBreakToNone</b> will set the error code in the <b>Status</b> member of the <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure of the <b>IoStatus</b> member. The IO_STATUS_BLOCK structure is specified in the <b>IoStatus</b> member of the <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a> callback data structure. The <i>CallbackData</i> parameter points to this FLT_CALLBACK_DATA. 
 <dl>
 <dt><b>FLT_PREOP_PENDING</b></dt>
 </dl>An oplock break was initiated, which caused the Filter Manager to post the I/O operation to a work queue. The I/O operation is represented by the callback data that the <i>CallbackData</i> parameter points to. 
@@ -236,21 +237,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="ifsk.fltinitializeoplock">FltInitializeOplock</a>
+<a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtloplockbreaktononeex">FsRtlOplockBreakToNoneEx</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockbreaktononeex~r5.md">FsRtlOplockBreakToNoneEx</a>
 </dt>
 <dt>
-<a href="kernel.io_status_block">IO_STATUS_BLOCK</a>
+<a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltOplockBreakToNone routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltOplockBreakToNone routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

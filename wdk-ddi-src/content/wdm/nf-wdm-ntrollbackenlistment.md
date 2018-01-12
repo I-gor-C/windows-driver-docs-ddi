@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.NtRollbackEnlistment
+UID: NF:wdm.NtRollbackEnlistment
 title: NtRollbackEnlistment function
 author: windows-driver-content
 description: The ZwRollbackEnlistment routine rolls back the transaction that is associated with a specified enlistment.
@@ -7,7 +7,7 @@ old-location: kernel\zwrollbackenlistment.htm
 old-project: kernel
 ms.assetid: 30989717-bbf4-44e6-9f1b-4818a8314714
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: NtRollbackEnlistment
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -57,7 +58,7 @@ NTSTATUS ZwRollbackEnlistment(
 
 ### -param EnlistmentHandle [in]
 
-A handle to an <a href="https://msdn.microsoft.com/80e61475-4bb7-4eaa-b9f1-ff95eac9bc77">enlistment object</a> that was obtained by a previous call to <a href="kernel.zwcreateenlistment">ZwCreateEnlistment</a> or <a href="kernel.zwopenenlistment">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_SUBORDINATE_RIGHTS access to the object.
+A handle to an <a href="https://msdn.microsoft.com/80e61475-4bb7-4eaa-b9f1-ff95eac9bc77">enlistment object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a> or <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_SUBORDINATE_RIGHTS access to the object.
 
 
 ### -param TmVirtualClock [in, optional]
@@ -86,7 +87,7 @@ The routine might return other <a href="https://msdn.microsoft.com/library/windo
 
 
 ## -remarks
-A resource manager can call <b>ZwRollbackEnlistment</b> to roll back a transaction at any time before it calls <a href="kernel.zwpreparecomplete">ZwPrepareComplete</a>. 
+A resource manager can call <b>ZwRollbackEnlistment</b> to roll back a transaction at any time before it calls <a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a>. 
 
 For more information about <b>ZwRollbackEnlistment</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546928">Handling Rollback Operations</a>.
 
@@ -167,7 +168,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -175,24 +176,24 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.tmrollbackenlistment">TmRollbackEnlistment</a>
+<a href="..\wdm\nf-wdm-tmrollbackenlistment.md">TmRollbackEnlistment</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="kernel.zwcreateenlistment">ZwCreateEnlistment</a>
+<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
 </dt>
 <dt>
-<a href="kernel.zwopenenlistment">ZwOpenEnlistment</a>
+<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
 </dt>
 <dt>
-<a href="kernel.zwpreparecomplete">ZwPrepareComplete</a>
+<a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwRollbackEnlistment routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwRollbackEnlistment routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

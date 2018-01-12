@@ -1,14 +1,14 @@
 ---
-UID: NS.DOT11WDI._WDI_TXRX_PEER_CFG
+UID: NS:dot11wdi._WDI_TXRX_PEER_CFG
 title: _WDI_TXRX_PEER_CFG
 author: windows-driver-content
 description: The WDI_TXRX_PEER_CFG structure defines peer configuration.
 old-location: netvista\wdi_txrx_peer_cfg.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5d2a97a3-3214-4f23-bf9d-d0ed292a46f0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WDI_TXRX_PEER_CFG, *PWDI_TXRX_PEER_CFG, WDI_TXRX_PEER_CFG, PWDI_TXRX_PEER_CFG
+ms.date: 1/8/2018
+ms.keywords: _WDI_TXRX_PEER_CFG, WDI_TXRX_PEER_CFG, *PWDI_TXRX_PEER_CFG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDI_TXRX_PEER_CFG, *PWDI_TXRX_PEER_CFG
 ---
 
 # _WDI_TXRX_PEER_CFG structure
@@ -55,7 +56,7 @@ typedef struct _WDI_TXRX_PEER_CFG {
 
 ### -field PeerQoSConfig
 
-The peer's QoS capability as defined in <a href="netvista.wdi_txrx_peer_qos_caps">WDI_TXRX_PEER_QOS_CAPS</a>.
+The peer's QoS capability as defined in <a href="..\dot11wdi\ne-dot11wdi-_wdi_txrx_peer_qos_caps.md">WDI_TXRX_PEER_QOS_CAPS</a>.
 
 
 ## -remarks

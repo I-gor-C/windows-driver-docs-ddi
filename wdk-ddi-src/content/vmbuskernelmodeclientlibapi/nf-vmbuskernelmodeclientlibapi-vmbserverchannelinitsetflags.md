@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbServerChannelInitSetFlags
+UID: NF:vmbuskernelmodeclientlibapi.VmbServerChannelInitSetFlags
 title: VmbServerChannelInitSetFlags function
 author: windows-driver-content
 description: The VmbServerChannelInitSetFlags function sets flags unique to server channel endpoints.
 old-location: netvista\vmbserverchannelinitsetflags.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: F6DBD055-8B6F-4B2B-B584-3C06979DD6DF
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbServerChannelInitSetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_SETDISPLAYMODECB
+UID: NC:d3dumddi.PFND3DDDI_SETDISPLAYMODECB
 title: PFND3DDDI_SETDISPLAYMODECB
 author: windows-driver-content
 description: The pfnSetDisplayModeCb function sets the allocation that is used to scan out to the display.
@@ -7,7 +7,7 @@ old-location: display\pfnsetdisplaymodecb.htm
 old-project: display
 ms.assetid: a1f58757-809d-4351-8b1a-fd4420981c24
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_SETDISPLAYMODECB callback
@@ -64,7 +65,7 @@ A handle to the display device (graphics context).
 
 ### -param pData [in, out]
 
-A pointer to a <a href="display.d3dddicb_setdisplaymode">D3DDDICB_SETDISPLAYMODE</a> structure that describes the allocation that is used to scan out.
+A pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_setdisplaymode.md">D3DDDICB_SETDISPLAYMODE</a> structure that describes the allocation that is used to scan out.
 
 
 ## -returns
@@ -79,7 +80,7 @@ A pointer to a <a href="display.d3dddicb_setdisplaymode">D3DDDICB_SETDISPLAYMODE
        
 <dl>
 <dt><b>D3DDDIERR_INCOMPATIBLEPRIVATEFORMAT</b></dt>
-</dl>The user-mode display driver must convert the format of the surface that is associated with the allocation that the <b>hPrimaryAllocation</b> member of <a href="display.d3dddicb_setdisplaymode">D3DDDICB_SETDISPLAYMODE</a> specifies into the format attribute that the <b>PrivateDriverFormatAttribute</b> member of D3DDDICB_SETDISPLAYMODE specifies. The driver should then call <b>pfnSetDisplayModeCb</b> again. The driver could allocate a new allocation, perform a conversion bit-block transfer (bitblt) from the old primary surface to the new, and then destroy the old primary as long as the driver uses the new allocation handle for this allocation for all subsequent operations. The driver should repeat this process until <b>pfnSetDisplayModeCb</b> returns a different return value. 
+</dl>The user-mode display driver must convert the format of the surface that is associated with the allocation that the <b>hPrimaryAllocation</b> member of <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_setdisplaymode.md">D3DDDICB_SETDISPLAYMODE</a> specifies into the format attribute that the <b>PrivateDriverFormatAttribute</b> member of D3DDDICB_SETDISPLAYMODE specifies. The driver should then call <b>pfnSetDisplayModeCb</b> again. The driver could allocate a new allocation, perform a conversion bit-block transfer (bitblt) from the old primary surface to the new, and then destroy the old primary as long as the driver uses the new allocation handle for this allocation for all subsequent operations. The driver should repeat this process until <b>pfnSetDisplayModeCb</b> returns a different return value. 
 
  
 
@@ -89,7 +90,7 @@ This function might also return other HRESULT values.
 
 
 ## -remarks
-After the Microsoft Direct3D runtime calls the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymode.md">SetDisplayMode</a> or <a href="display.setdisplaymodedxgi">SetDisplayModeDXGI</a> function to set the primary surface to be scanned out to the display, the user-mode display driver calls the <b>pfnSetDisplayModeCb</b> function to set the underlying primary allocation that is used for scanning out. 
+After the Microsoft Direct3D runtime calls the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymode.md">SetDisplayMode</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a> function to set the primary surface to be scanned out to the display, the user-mode display driver calls the <b>pfnSetDisplayModeCb</b> function to set the underlying primary allocation that is used for scanning out. 
 
 
 <b>Direct3D Version 11 Note:  </b>For more information about how the driver calls <b>pfnSetDisplayModeCb</b>, see <a href="https://msdn.microsoft.com/014a5e44-f8c4-45c0-96e8-d82f37b8b28d">Changes from Direct3D 10</a>.
@@ -140,21 +141,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddicb_setdisplaymode">D3DDDICB_SETDISPLAYMODE</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_setdisplaymode.md">D3DDDICB_SETDISPLAYMODE</a>
 </dt>
 <dt>
-<a href="display.d3dddi_devicecallbacks">D3DDDI_DEVICECALLBACKS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicecallbacks.md">D3DDDI_DEVICECALLBACKS</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplaymode.md">SetDisplayMode</a>
 </dt>
 <dt>
-<a href="display.setdisplaymodedxgi">SetDisplayModeDXGI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569536">SetDisplayModeDXGI</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_SETDISPLAYMODECB callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PFND3DDDI_SETDISPLAYMODECB callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

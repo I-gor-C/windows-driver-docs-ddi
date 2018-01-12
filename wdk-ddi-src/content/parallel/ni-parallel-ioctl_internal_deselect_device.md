@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_DESELECT_DEVICE
+UID: NI:parallel.IOCTL_INTERNAL_DESELECT_DEVICE
 title: IOCTL_INTERNAL_DESELECT_DEVICE
 author: windows-driver-content
 description: The IOCTL_INTERNAL_DESELECT_DEVICE request deselects an IEEE 1284.3 daisy-chain device or an IEEE 1284 end-of-chain device attached to a parallel port.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGBATOKEN, RILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_DESELECT_DEVICE IOCTL
@@ -47,7 +48,7 @@ For more information, see <a href="https://msdn.microsoft.com/1a3ac1b1-9180-4b71
 ## -ioctlparameters
 
 ### -input-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="parports.parallel_1284_command">PARALLEL_1284_COMMAND</a> structure that the client allocates to input IEEE 1284.3 command information. The client can free the parallel port by not setting the PAR_HAVE_PORT_KEEP_PORT flag in the <b>CommandFlags</b> member.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a <a href="..\parallel\ns-parallel-_parallel_1284_command.md">PARALLEL_1284_COMMAND</a> structure that the client allocates to input IEEE 1284.3 command information. The client can free the parallel port by not setting the PAR_HAVE_PORT_KEEP_PORT flag in the <b>CommandFlags</b> member.
 
 
 ### -input-buffer-length
@@ -107,7 +108,7 @@ Header
 <a href="..\parallel\ni-parallel-ioctl_internal_select_device.md">IOCTL_INTERNAL_SELECT_DEVICE</a>
 </dt>
 <dt>
-<a href="parports.parallel_1284_command">PARALLEL_1284_COMMAND</a>
+<a href="..\parallel\ns-parallel-_parallel_1284_command.md">PARALLEL_1284_COMMAND</a>
 </dt>
 </dl>
  

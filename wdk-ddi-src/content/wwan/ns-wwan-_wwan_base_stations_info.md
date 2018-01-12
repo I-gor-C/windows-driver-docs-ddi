@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_BASE_STATIONS_INFO
+UID: NS:wwan._WWAN_BASE_STATIONS_INFO
 title: _WWAN_BASE_STATIONS_INFO
 author: windows-driver-content
 description: The WWAN_BASE_STATIONS_INFO structure represents information about both serving and neighboring base stations.
 old-location: netvista\wwan_base_stations_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 66460B28-C2B4-4F05-A133-31A753AF9489
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_BASE_STATIONS_INFO, PWWAN_BASE_STATIONS_INFO, *PWWAN_BASE_STATIONS_INFO, WWAN_BASE_STATIONS_INFO
+ms.date: 1/8/2018
+ms.keywords: _WWAN_BASE_STATIONS_INFO, WWAN_BASE_STATIONS_INFO, *PWWAN_BASE_STATIONS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WWAN_BASE_STATIONS_INFO, *PWWAN_BASE_STATIONS_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -75,7 +76,7 @@ typedef struct _WWAN_BASE_STATIONS_INFO {
 
 ### -field SystemType
 
-Indicates the system type (or types) for which serving cell information is valid. This member is a bitmask of one or more system types as defined in the <b>WwanDataClass</b> member of <a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>.
+Indicates the system type (or types) for which serving cell information is valid. This member is a bitmask of one or more system types as defined in the <b>WwanDataClass</b> member of <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>.
 
 
 ### -field GSMServingCellOffset
@@ -85,7 +86,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 ### -field GSMServingCellSize
 
-The size, in bytes, used for the buffer containing the GSM serving cell info, which is formatted as <a href="netvista.wwan_gsm_serving_cell_info">WWAN_GSM_SERVING_CELL_INFO</a>.
+The size, in bytes, used for the buffer containing the GSM serving cell info, which is formatted as <a href="..\wwan\ns-wwan-_wwan_gsm_serving_cell_info.md">WWAN_GSM_SERVING_CELL_INFO</a>.
 
 
 ### -field UMTSServingCellOffset
@@ -95,7 +96,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 ### -field UMTSServingCellSize
 
-The size, in bytes, used for the buffer containing the UMTS serving cell info, which is formatted as <a href="netvista.wwan_umts_serving_cell_info">WWAN_UMTS_SERVING_CELL_INFO</a>.
+The size, in bytes, used for the buffer containing the UMTS serving cell info, which is formatted as <a href="..\wwan\ns-wwan-_wwan_umts_serving_cell_info.md">WWAN_UMTS_SERVING_CELL_INFO</a>.
 
 
 ### -field TDSCDMAServingCellOffset
@@ -105,7 +106,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 ### -field TDSCDMAServingCellSize
 
-The size, in bytes, used for the buffer containing the TDSCDMA serving cell info, which is formatted as <a href="netvista.wwan_tdscdma_serving_cell_info">WWAN_TDSCDMA_SERVING_CELL_INFO</a>.
+The size, in bytes, used for the buffer containing the TDSCDMA serving cell info, which is formatted as <a href="..\wwan\ns-wwan-_wwan_tdscdma_serving_cell_info.md">WWAN_TDSCDMA_SERVING_CELL_INFO</a>.
 
 
 ### -field LTEServingCellOffset
@@ -115,7 +116,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 ### -field LTEServingCellSize
 
-The size, in bytes, used for the buffer containing the LTE serving cell info, which is formatted as <a href="netvista.wwan_lte_serving_cell_info">WWAN_LTE_SERVING_CELL_INFO</a>.
+The size, in bytes, used for the buffer containing the LTE serving cell info, which is formatted as <a href="..\wwan\ns-wwan-_wwan_lte_serving_cell_info.md">WWAN_LTE_SERVING_CELL_INFO</a>.
 
 
 ### -field GSMNmrOffset
@@ -125,7 +126,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 ### -field GSMNmrSize
 
-The size, in bytes, of the buffer containing the GSM network measurement report (NMR), which is formatted as <a href="netvista.wwan_gsm_nmr">WWAN_GSM_NMR</a>.
+The size, in bytes, of the buffer containing the GSM network measurement report (NMR), which is formatted as <a href="..\wwan\ns-wwan-_wwan_gsm_nmr.md">WWAN_GSM_NMR</a>.
 
 
 ### -field UMTSMrlOffset
@@ -135,7 +136,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 ### -field UMTSMrlSize
 
-The size, in bytes, of the buffer containing the UMTS measured results list (MRL), which is formatted as <a href="netvista.wwan_umts_mrl">WWAN_UMTS_MRL</a>.
+The size, in bytes, of the buffer containing the UMTS measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan-_wwan_umts_mrl.md">WWAN_UMTS_MRL</a>.
 
 
 ### -field TDSCDMAMrlOffset
@@ -145,7 +146,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 ### -field TDSCDMAMrlSize
 
-The size, in bytes, of the buffer containing the TDSCDMA measured results list (MRL), which is formatted as <a href="netvista.wwan_tdscdma_mrl">WWAN_TDSCDMA_MRL</a>.
+The size, in bytes, of the buffer containing the TDSCDMA measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan-_wwan_tdscdma_mrl.md">WWAN_TDSCDMA_MRL</a>.
 
 
 ### -field LTEMrlOffset
@@ -155,7 +156,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 ### -field LTEMrlSize
 
-The size, in bytes, of the buffer containing the LTE measured results list (MRL), which is formatted as <a href="netvista.wwan_lte_mrl">WWAN_LTE_MRL</a>.
+The size, in bytes, of the buffer containing the LTE measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan-_wwan_lte_mrl.md">WWAN_LTE_MRL</a>.
 
 
 ### -field CDMAMrlOffset
@@ -165,7 +166,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 ### -field CDMAMrlSize
 
-The size, in bytes, of the buffer containing the CDMA measured results list (MRL), which is formatted as <a href="netvista.wwan_cdma_mrl">WWAN_CDMA_MRL</a>.
+The size, in bytes, of the buffer containing the CDMA measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan-_wwan_cdma_mrl.md">WWAN_CDMA_MRL</a>.
 
 
 ### -field BaseStationsData[ANYSIZE_ARRAY]
@@ -204,45 +205,45 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_wwan_base_stations_info">NDIS_WWAN_BASE_STATIONS_INFO</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_base_stations_info.md">NDIS_WWAN_BASE_STATIONS_INFO</a>
 </dt>
 <dt>
-<a href="netvista.wwan_device_caps">WWAN_DEVICE_CAPS</a>
+<a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
 </dt>
 <dt>
-<a href="netvista.wwan_gsm_serving_cell_info">WWAN_GSM_SERVING_CELL_INFO</a>
+<a href="..\wwan\ns-wwan-_wwan_gsm_serving_cell_info.md">WWAN_GSM_SERVING_CELL_INFO</a>
 </dt>
 <dt>
-<a href="netvista.wwan_umts_serving_cell_info">WWAN_UMTS_SERVING_CELL_INFO</a>
+<a href="..\wwan\ns-wwan-_wwan_umts_serving_cell_info.md">WWAN_UMTS_SERVING_CELL_INFO</a>
 </dt>
 <dt>
-<a href="netvista.wwan_tdscdma_serving_cell_info">WWAN_TDSCDMA_SERVING_CELL_INFO</a>
+<a href="..\wwan\ns-wwan-_wwan_tdscdma_serving_cell_info.md">WWAN_TDSCDMA_SERVING_CELL_INFO</a>
 </dt>
 <dt>
-<a href="netvista.wwan_lte_serving_cell_info">WWAN_LTE_SERVING_CELL_INFO</a>
+<a href="..\wwan\ns-wwan-_wwan_lte_serving_cell_info.md">WWAN_LTE_SERVING_CELL_INFO</a>
 </dt>
 <dt>
-<a href="netvista.wwan_gsm_nmr">WWAN_GSM_NMR</a>
+<a href="..\wwan\ns-wwan-_wwan_gsm_nmr.md">WWAN_GSM_NMR</a>
 </dt>
 <dt>
-<a href="netvista.wwan_umts_mrl">WWAN_UMTS_MRL</a>
+<a href="..\wwan\ns-wwan-_wwan_umts_mrl.md">WWAN_UMTS_MRL</a>
 </dt>
 <dt>
-<a href="netvista.wwan_tdscdma_mrl">WWAN_TDSCDMA_MRL</a>
+<a href="..\wwan\ns-wwan-_wwan_tdscdma_mrl.md">WWAN_TDSCDMA_MRL</a>
 </dt>
 <dt>
-<a href="netvista.wwan_lte_mrl">WWAN_LTE_MRL</a>
+<a href="..\wwan\ns-wwan-_wwan_lte_mrl.md">WWAN_LTE_MRL</a>
 </dt>
 <dt>
-<a href="netvista.wwan_cdma_mrl">WWAN_CDMA_MRL</a>
+<a href="..\wwan\ns-wwan-_wwan_cdma_mrl.md">WWAN_CDMA_MRL</a>
 </dt>
 <dt>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
+<a href="https://msdn.microsoft.com/200954a6-0f6c-4c00-86cb-510399f7b713">MB base stations information query support</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_BASE_STATIONS_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_BASE_STATIONS_INFO structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

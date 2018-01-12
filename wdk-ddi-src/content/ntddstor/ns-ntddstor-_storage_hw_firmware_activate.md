@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSTOR._STORAGE_HW_FIRMWARE_ACTIVATE
+UID: NS:ntddstor._STORAGE_HW_FIRMWARE_ACTIVATE
 title: _STORAGE_HW_FIRMWARE_ACTIVATE
 author: windows-driver-content
 description: This structure contains information about the downloaded firmware to activate.
@@ -7,8 +7,8 @@ old-location: storage\storage_hw_firmware_activate.htm
 old-project: storage
 ms.assetid: FCE1DE7B-CDFE-4533-90E7-A400EC236007
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_HW_FIRMWARE_ACTIVATE, PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE
 ---
 
 # _STORAGE_HW_FIRMWARE_ACTIVATE structure

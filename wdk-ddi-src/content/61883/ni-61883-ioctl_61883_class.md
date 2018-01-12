@@ -1,5 +1,5 @@
 ---
-UID: NI.61883.IOCTL_61883_CLASS
+UID: NI:61883.IOCTL_61883_CLASS
 title: IOCTL_61883_CLASS
 author: windows-driver-content
 description: An IEC-61883 client driver uses the IRP_MJ_INTERNAL_DEVICE_CONTROL IRP with IoControlCode IOCTL_61883_CLASS to communicate with 1394 driver stack using the IEC-61883 protocol.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: CMP_PLUG_TYPE
 ---
 
 # IOCTL_61883_CLASS IOCTL

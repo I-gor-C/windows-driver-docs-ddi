@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSAC3_ROOM_TYPE
+UID: NS:ksmedia.KSAC3_ROOM_TYPE
 title: KSAC3_ROOM_TYPE
 author: windows-driver-content
 description: The KSAC3_ROOM_TYPE structure specifies the type of audio mixing room in which an AC-3-encoded stream was produced.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: adf514e1-5413-4552-b676-7567e8fa9954
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSAC3_ROOM_TYPE, KSAC3_ROOM_TYPE, PKSAC3_ROOM_TYPE, *PKSAC3_ROOM_TYPE
+ms.keywords: KSAC3_ROOM_TYPE, KSAC3_ROOM_TYPE, *PKSAC3_ROOM_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSAC3_ROOM_TYPE, *PKSAC3_ROOM_TYPE
 ---
 
 # KSAC3_ROOM_TYPE structure

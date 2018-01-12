@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILSETCALLWAITINGSTATUSPARAMS
+UID: NS:rilapitypes.RILSETCALLWAITINGSTATUSPARAMS
 title: RILSETCALLWAITINGSTATUSPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsetcallwaitingstatusparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d6b68e8c-aae1-4a50-8cb3-514379029982
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS, *LPRILSETCALLWAITINGSTATUSPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILSETCALLWAITINGSTATUSPARAMS, *LPRILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS
 req.product: Windows 10 or later.
 ---
 

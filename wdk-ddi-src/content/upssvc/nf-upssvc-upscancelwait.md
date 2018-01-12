@@ -1,5 +1,5 @@
 ---
-UID: NF.upssvc.UPSCancelWait
+UID: NF:upssvc.UPSCancelWait
 title: UPSCancelWait function
 author: windows-driver-content
 description: The UPSCancelWait function cancels all waits initiated by calls to UPSWaitForStateChange.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: UMDETW_ALLOCATION_USAGE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>UPSCancelWait</b> function cancels all waits initiated by calls to <a href="battery.upswaitforstatechange">UPSWaitForStateChange</a>. 
+The <b>UPSCancelWait</b> function cancels all waits initiated by calls to <a href="..\upssvc\nf-upssvc-upswaitforstatechange.md">UPSWaitForStateChange</a>. 
 
 
 
@@ -96,7 +97,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="battery.upswaitforstatechange">UPSWaitForStateChange</a>
+<a href="..\upssvc\nf-upssvc-upswaitforstatechange.md">UPSWaitForStateChange</a>
 </dt>
 </dl>
  

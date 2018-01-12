@@ -1,13 +1,13 @@
 ---
-UID: NE.wditypes._WDI_P2P_CHANNEL_INDICATE_REASON
+UID: NE:wditypes._WDI_P2P_CHANNEL_INDICATE_REASON
 title: _WDI_P2P_CHANNEL_INDICATE_REASON
 author: windows-driver-content
 description: The WDI_P2P_CHANNEL_INDICATE_REASON enumeration defines Wi-Fi Direct channel indication reason values.
 old-location: netvista\wdi_p2p_channel_indicate_reason.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: F6C2D044-E64B-4DA5-A168-20C99F325451
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_P2P_CHANNEL_INDICATE_REASON, WDI_P2P_CHANNEL_INDICATE_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_P2P_CHANNEL_INDICATE_REASON
 req.product: Windows 10 or later.
 ---
 

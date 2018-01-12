@@ -1,5 +1,5 @@
 ---
-UID: NS.SENSORSDEF.SENSOR_COLLECTION_LIST
+UID: NS:sensorsdef.SENSOR_COLLECTION_LIST
 title: SENSOR_COLLECTION_LIST
 author: windows-driver-content
 description: This structure contains a list of all SENSOR_VALUE_PAIR structures for each sensor. This structure is returned by calling ReadFile.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: B842C707-C6E0-4C56-986E-35BFD32F265D
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_COLLECTION_LIST, PSENSOR_COLLECTION_LIST, *PSENSOR_COLLECTION_LIST, SENSOR_COLLECTION_LIST
+ms.keywords: SENSOR_COLLECTION_LIST, SENSOR_COLLECTION_LIST, *PSENSOR_COLLECTION_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SENSOR_COLLECTION_LIST, *PSENSOR_COLLECTION_LIST
 req.product: Windows 10 or later.
 ---
 

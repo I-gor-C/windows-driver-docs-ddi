@@ -1,5 +1,5 @@
 ---
-UID: NC.parallel.PNEGOTIATE_IEEE_MODE
+UID: NC:parallel.PNEGOTIATE_IEEE_MODE
 title: PNEGOTIATE_IEEE_MODE
 author: windows-driver-content
 description: The PNEGOTIATE_IEEE_MODE-typed callback routine selects the fastest forward and reverse protocols that the system-supplied bus driver for parallel ports supports from among those specified by the caller.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGBATOKEN, RILGBATOKEN
 ---
 
 # PNEGOTIATE_IEEE_MODE callback
@@ -101,7 +102,7 @@ Specifies whether to connect the forward or the reverse protocol that the routin
 
 
 ## -remarks
-To obtain a pointer to the system-supplied PNEGOTIATE_IEEE_MODE callback, a kernel-mode driver uses an <a href="..\parallel\ni-parallel-ioctl_internal_parclass_connect.md">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request, which returns a <a href="parports.parclass_information">PARCLASS_INFORMATION</a> structure. The <b>NegotiateIeeeMode</b> member of the PARCLASS_INFORMATION structure is a pointer to this callback.
+To obtain a pointer to the system-supplied PNEGOTIATE_IEEE_MODE callback, a kernel-mode driver uses an <a href="..\parallel\ni-parallel-ioctl_internal_parclass_connect.md">IOCTL_INTERNAL_PARCLASS_CONNECT</a> request, which returns a <a href="..\parallel\ns-parallel-_parclass_information.md">PARCLASS_INFORMATION</a> structure. The <b>NegotiateIeeeMode</b> member of the PARCLASS_INFORMATION structure is a pointer to this callback.
 
 The PNEGOTIATE_IEEE_MODE callback runs in the caller's thread at the IRQL of the caller.
 

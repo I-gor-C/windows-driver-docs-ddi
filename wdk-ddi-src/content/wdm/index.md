@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdm
 ---
 
 # Wdm.h header
@@ -21,7 +21,6 @@ Wdm.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [AppendTailList function](nf-wdm-appendtaillist.md) | The AppendTailList routine appends a doubly linked list of LIST_ENTRY structures to the tail of another doubly linked list of LIST_ENTRY structures. |
-| [AppendTailList function](nf-wdm-appendtaillist~r1.md) | The AppendTailList routine appends a doubly linked list of LIST_ENTRY structures to the tail of another doubly linked list of LIST_ENTRY structures. |
 | [ClfsAddLogContainer function](nf-wdm-clfsaddlogcontainer.md) | The ClfsAddLogContainer routine adds a container to a CLFS log. |
 | [ClfsAddLogContainerSet function](nf-wdm-clfsaddlogcontainerset.md) | The ClfsAddLogContainerSet routine atomically adds a set of containers to a CLFS log. |
 | [ClfsAdvanceLogBase function](nf-wdm-clfsadvancelogbase.md) | The ClfsAdvanceLogBase routine sets the base LSN of a CLFS stream. |
@@ -102,7 +101,6 @@ Wdm.h contain these programming interfaces:
 | [ExAllocateFromLookasideListEx function](nf-wdm-exallocatefromlookasidelistex.md) | The ExAllocateFromLookasideListEx routine removes the first entry from the specified lookaside list, or, if the list is empty, dynamically allocates the storage for a new entry. |
 | [ExAllocateFromNPagedLookasideList function](nf-wdm-exallocatefromnpagedlookasidelist.md) | The ExAllocateFromNPagedLookasideList routine returns a pointer to a nonpaged entry from the given lookaside list, or it returns a pointer to a newly allocated nonpaged entry. |
 | [ExAllocateFromPagedLookasideList function](nf-wdm-exallocatefrompagedlookasidelist.md) | The ExAllocateFromPagedLookasideList routine returns a pointer to a paged entry from the given lookaside list, or it returns a pointer to a newly allocated paged entry. |
-| [ExAllocateFromPagedLookasideList function](nf-wdm-exallocatefrompagedlookasidelist~r1.md) | The ExAllocateFromPagedLookasideList routine returns a pointer to a paged entry from the given lookaside list, or it returns a pointer to a newly allocated paged entry. |
 | [ExAllocatePool function](nf-wdm-exallocatepool.md) | The ExAllocatePool routine is obsolete, and is exported only for existing binaries. Use ExAllocatePoolWithTag instead.ExAllocatePool allocates pool memory of the specified type and returns a pointer to the allocated block. |
 | [ExAllocatePoolWithQuota function](nf-wdm-exallocatepoolwithquota.md) | The ExAllocatePoolWithQuota routine is obsolete, and is exported only for existing driver binaries. Use ExAllocatePoolWithQuotaTag instead.ExAllocatePoolWithQuota allocates pool memory, charging quota against the current process. |
 | [ExAllocatePoolWithQuotaTag function](nf-wdm-exallocatepoolwithquotatag.md) | The ExAllocatePoolWithQuotaTag routine allocates pool memory, charging the quota against the current process. |
@@ -123,7 +121,6 @@ Wdm.h contain these programming interfaces:
 | [ExFreeToLookasideListEx function](nf-wdm-exfreetolookasidelistex.md) | The ExFreeToLookasideListEx routine inserts an entry into a lookaside list, or, if the list is full, frees the allocated storage for the entry. |
 | [ExFreeToNPagedLookasideList function](nf-wdm-exfreetonpagedlookasidelist.md) | The ExFreeToNPagedLookasideList routine returns a nonpaged entry to the given lookaside list or to nonpaged pool. |
 | [ExFreeToPagedLookasideList function](nf-wdm-exfreetopagedlookasidelist.md) | The ExFreeToPagedLookasideList routine returns a pageable entry to the given lookaside list or to paged pool. |
-| [ExFreeToPagedLookasideList function](nf-wdm-exfreetopagedlookasidelist~r1.md) | The ExFreeToPagedLookasideList routine returns a pageable entry to the given lookaside list or to paged pool. |
 | [ExGetExclusiveWaiterCount function](nf-wdm-exgetexclusivewaitercount.md) | The ExGetExclusiveWaiterCount routine returns the number of waiters on exclusive access to a given resource. |
 | [ExGetFirmwareEnvironmentVariable function](nf-wdm-exgetfirmwareenvironmentvariable.md) | The ExGetFirmwareEnvironmentVariable routine gets the value of the specified system firmware environment variable. |
 | [ExGetFirmwareType function](nf-wdm-exgetfirmwaretype.md) | Returns the system firmware type. |
@@ -155,7 +152,6 @@ Wdm.h contain these programming interfaces:
 | [ExLocalTimeToSystemTime function](nf-wdm-exlocaltimetosystemtime.md) | The ExLocalTimeToSystemTime routine converts a system time value for the current time zone to an unbiased, GreenGMT value. |
 | [ExNotifyCallback function](nf-wdm-exnotifycallback.md) | The ExNotifyCallback routine causes all callback routines registered for the given object to be called. |
 | [ExQueryDepthSList function](nf-wdm-exquerydepthslist.md) | The ExQueryDepthSList routine returns the number of entries currently in a given sequenced singly linked list. |
-| [ExQueryDepthSList function](nf-wdm-exquerydepthslist~r1.md) | The ExQueryDepthSList routine returns the number of entries currently in a given sequenced singly linked list. |
 | [ExQueryTimerResolution function](nf-wdm-exquerytimerresolution.md) | The ExQueryTimerResolution routine reports the range of timer resolutions that are supported by the system clock. |
 | [ExQueueWorkItem function](nf-wdm-exqueueworkitem.md) | ExQueueWorkItem inserts a given work item into a queue from which a system worker thread removes the item and gives control to the routine that the caller supplied to ExInitializeWorkItem. |
 | [ExRaiseStatus function](nf-wdm-exraisestatus.md) | The ExRaiseStatus routine is called by drivers that supply structured exception handlers to handle particular errors that occur while they are processing I/O requests. |
@@ -179,28 +175,19 @@ Wdm.h contain these programming interfaces:
 | [ExWaitForRundownProtectionRelease function](nf-wdm-exwaitforrundownprotectionrelease.md) | The ExWaitForRundownProtectionRelease routine waits until all drivers that have already been granted run-down protection complete their accesses of the shared object. |
 | [FirstEntrySList function](nf-wdm-firstentryslist.md) | The FirstEntrySList routine returns the first entry in a sequenced singly linked list. |
 | [InitializeListHead function](nf-wdm-initializelisthead.md) | The InitializeListHead routine initializes a LIST_ENTRY structure that represents the head of a doubly linked list. |
+| [InitializeSListHead function](nf-wdm-initializeslisthead.md) | The InitializeSListHead routine (or ExInitializeSListHead) initializes an SLIST_HEADER structure that represents the head of a sequenced singly linked list. |
 | [InsertHeadList function](nf-wdm-insertheadlist.md) | The InsertHeadList routine inserts an entry at the head of a doubly linked list of LIST_ENTRY structures. |
-| [InsertHeadList function](nf-wdm-insertheadlist~r1.md) | The InsertHeadList routine inserts an entry at the head of a doubly linked list of LIST_ENTRY structures. |
 | [InsertTailList function](nf-wdm-inserttaillist.md) | The InsertTailList routine inserts an entry at the tail of a doubly linked list of LIST_ENTRY structures. |
-| [InsertTailList function](nf-wdm-inserttaillist~r1.md) | The InsertTailList routine inserts an entry at the tail of a doubly linked list of LIST_ENTRY structures. |
 | [InterlockedAnd function](nf-wdm-interlockedand.md) | The InterlockedAnd macro atomically computes a bitwise AND operation. |
-| [InterlockedAnd function](nf-wdm-interlockedand~r1.md) | The InterlockedAnd macro atomically computes a bitwise AND operation. |
 | [InterlockedCompareExchange function](nf-wdm-interlockedcompareexchange.md) | The InterlockedCompareExchange routine performs an atomic operation that compares the input value pointed to by Destination with the value of Comparand. |
-| [InterlockedCompareExchange function](nf-wdm-interlockedcompareexchange~r1.md) | The InterlockedCompareExchange routine performs an atomic operation that compares the input value pointed to by Destination with the value of Comparand. |
 | [InterlockedCompareExchangePointer function](nf-wdm-interlockedcompareexchangepointer.md) | The InterlockedCompareExchangePointer routine performs an atomic operation that compares the input pointer value pointed to by Destination with the pointer value Comparand. |
 | [InterlockedDecrement function](nf-wdm-interlockeddecrement.md) | The InterlockedDecrement routine decrements a caller-supplied variable of type LONG as an atomic operation. |
-| [InterlockedDecrement function](nf-wdm-interlockeddecrement~r1.md) | The InterlockedDecrement routine decrements a caller-supplied variable of type LONG as an atomic operation. |
 | [InterlockedExchange function](nf-wdm-interlockedexchange.md) | The InterlockedExchange routine sets an integer variable to a given value as an atomic operation. |
-| [InterlockedExchange function](nf-wdm-interlockedexchange~r1.md) | The InterlockedExchange routine sets an integer variable to a given value as an atomic operation. |
 | [InterlockedExchangeAdd function](nf-wdm-interlockedexchangeadd.md) | The InterlockedExchangeAdd routine adds a value to a given integer as an atomic operation and returns the original value of the given integer. |
-| [InterlockedExchangeAdd function](nf-wdm-interlockedexchangeadd~r1.md) | The InterlockedExchangeAdd routine adds a value to a given integer as an atomic operation and returns the original value of the given integer. |
 | [InterlockedExchangePointer function](nf-wdm-interlockedexchangepointer.md) | The InterlockedExchangePointer routine performs an atomic operation that sets a pointer to a new value. |
 | [InterlockedIncrement function](nf-wdm-interlockedincrement.md) | The InterlockedIncrement routine increments a caller-supplied variable as an atomic operation. |
-| [InterlockedIncrement function](nf-wdm-interlockedincrement~r1.md) | The InterlockedIncrement routine increments a caller-supplied variable as an atomic operation. |
 | [InterlockedOr function](nf-wdm-interlockedor.md) | The InterlockedOr routine atomically computes a bitwise OR operation. |
-| [InterlockedOr function](nf-wdm-interlockedor~r1.md) | The InterlockedOr routine atomically computes a bitwise OR operation. |
 | [InterlockedXor function](nf-wdm-interlockedxor.md) | The InterlockedOr routine atomically computes a bitwise exclusive OR operation. |
-| [InterlockedXor function](nf-wdm-interlockedxor~r1.md) | The InterlockedOr routine atomically computes a bitwise exclusive OR operation. |
 | [IoAllocateDriverObjectExtension function](nf-wdm-ioallocatedriverobjectextension.md) | The IoAllocateDriverObjectExtension routine allocates a per-driver context area, called a driver object extension, and assigns a unique identifier to it. |
 | [IoAllocateErrorLogEntry function](nf-wdm-ioallocateerrorlogentry.md) | The IoAllocateErrorLogEntry routine allocates an error log entry, and returns a pointer to the packet that the caller uses to supply information about an I/O error. |
 | [IoAllocateIrp function](nf-wdm-ioallocateirp.md) | The IoAllocateIrp routine allocates an IRP, given the number of I/O stack locations for each driver layered under the caller, and, optionally, for the caller. |
@@ -354,18 +341,11 @@ Wdm.h contain these programming interfaces:
 | [KeEnterCriticalRegion function](nf-wdm-keentercriticalregion.md) | The KeEnterCriticalRegion routine temporarily disables the execution of normal kernel APCs, but does not prevent special kernel APCs from running. |
 | [KeEnterGuardedRegion function](nf-wdm-keenterguardedregion.md) | The KeEnterGuardedRegion routine enters a guarded region, which disables all kernel-mode APC delivery to the current thread. |
 | [KeFlushIoBuffers function](nf-wdm-keflushiobuffers.md) | The KeFlushIoBuffers routine flushes the memory region described by an MDL from caches of all processors. |
-| [KeFlushIoBuffers function](nf-wdm-keflushiobuffers~r1.md) | The KeFlushIoBuffers routine flushes the memory region described by an MDL from caches of all processors. |
-| [KeFlushIoBuffers function](nf-wdm-keflushiobuffers~r2.md) | The KeFlushIoBuffers routine flushes the memory region described by an MDL from caches of all processors. |
-| [KeFlushIoBuffers function](nf-wdm-keflushiobuffers~r3.md) | The KeFlushIoBuffers routine flushes the memory region described by an MDL from caches of all processors. |
 | [KeFlushQueuedDpcs function](nf-wdm-keflushqueueddpcs.md) | The KeFlushQueuedDpcs routine returns after all queued DPCs on all processors have executed. |
 | [KeGetCurrentIrql function](nf-wdm-kegetcurrentirql.md) | The KeGetCurrentIrql routine returns the current IRQL. |
-| [KeGetCurrentIrql function](nf-wdm-kegetcurrentirql~r1.md) | The KeGetCurrentIrql routine returns the current IRQL. |
-| [KeGetCurrentIrql function](nf-wdm-kegetcurrentirql~r2.md) | The KeGetCurrentIrql routine returns the current IRQL. |
-| [KeGetCurrentIrql function](nf-wdm-kegetcurrentirql~r3.md) | The KeGetCurrentIrql routine returns the current IRQL. |
 | [KeGetCurrentNodeNumber function](nf-wdm-kegetcurrentnodenumber.md) | The KeGetCurrentNodeNumber routine gets the NUMA node number for the logical processor that the caller is running on. |
 | [KeGetCurrentProcessorNumberEx function](nf-wdm-kegetcurrentprocessornumberex.md) | The KeGetCurrentProcessorNumberEx routine gets the processor number of the logical processor that the caller is running on. |
 | [KeGetCurrentThread function](nf-wdm-kegetcurrentthread.md) | The KeGetCurrentThread routine identifies the current thread. |
-| [KeGetCurrentThread function](nf-wdm-kegetcurrentthread~r1.md) | The KeGetCurrentThread routine identifies the current thread. |
 | [KeGetProcessorIndexFromNumber function](nf-wdm-kegetprocessorindexfromnumber.md) | The KeGetProcessorIndexFromNumber routine converts a group number and a group-relative processor number to a systemwide processor index. |
 | [KeGetProcessorNumberFromIndex function](nf-wdm-kegetprocessornumberfromindex.md) | The KeGetProcessorNumberFromIndex routine converts a systemwide processor index to a group number and a group-relative processor number. |
 | [KeGetRecommendedSharedDataAlignment function](nf-wdm-kegetrecommendedshareddataalignment.md) | The KeGetRecommendedSharedDataAlignment routine returns the preferred alignment for memory structures that can be accessed by more than one processor. |
@@ -388,9 +368,6 @@ Wdm.h contain these programming interfaces:
 | [KeLeaveGuardedRegion function](nf-wdm-keleaveguardedregion.md) | The KeLeaveGuardedRegion routine exits a guarded region entered by KeEnterGuardedRegion. |
 | [KeLowerIrql function](nf-wdm-kelowerirql.md) | The KeLowerIrql routine restores the IRQL on the current processor to its original value. |
 | [KeMemoryBarrier function](nf-wdm-kememorybarrier.md) | The KeMemoryBarrier routine creates a barrier at its position in the code&#8212;across which the compiler and the processor cannot move any operations. |
-| [KeMemoryBarrier function](nf-wdm-kememorybarrier~r1.md) | The KeMemoryBarrier routine creates a barrier at its position in the code&#8212;across which the compiler and the processor cannot move any operations. |
-| [KeMemoryBarrier function](nf-wdm-kememorybarrier~r2.md) | The KeMemoryBarrier routine creates a barrier at its position in the code&#8212;across which the compiler and the processor cannot move any operations. |
-| [KeMemoryBarrier function](nf-wdm-kememorybarrier~r3.md) | The KeMemoryBarrier routine creates a barrier at its position in the code&#8212;across which the compiler and the processor cannot move any operations. |
 | [KeQueryActiveGroupCount function](nf-wdm-kequeryactivegroupcount.md) | The KeQueryActiveGroupCount routine returns the number of active processor groups in a multiprocessor system. |
 | [KeQueryActiveProcessorCount function](nf-wdm-kequeryactiveprocessorcount.md) | The KeQueryActiveProcessorCount routine returns the number of currently active processors. |
 | [KeQueryActiveProcessorCountEx function](nf-wdm-kequeryactiveprocessorcountex.md) | The KeQueryActiveProcessorCountEx routine returns the number of active logical processors in a specified group in a multiprocessor system or in the entire system. |
@@ -434,16 +411,10 @@ Wdm.h contain these programming interfaces:
 | [KeResetEvent function](nf-wdm-keresetevent.md) | The KeResetEvent routine resets a specified event object to a not-signaled state and returns the previous state of that event object. |
 | [KeRestoreExtendedProcessorState function](nf-wdm-kerestoreextendedprocessorstate.md) | The KeRestoreExtendedProcessorState routine restores extended processor state information that was previously saved. |
 | [KeRestoreFloatingPointState function](nf-wdm-kerestorefloatingpointstate.md) | The KeRestoreFloatingPointState routine restores the nonvolatile floating-point context saved by the preceding call to KeSaveFloatingPointState. |
-| [KeRestoreFloatingPointState function](nf-wdm-kerestorefloatingpointstate~r1.md) | The KeRestoreFloatingPointState routine restores the nonvolatile floating-point context saved by the preceding call to KeSaveFloatingPointState. |
-| [KeRestoreFloatingPointState function](nf-wdm-kerestorefloatingpointstate~r2.md) | The KeRestoreFloatingPointState routine restores the nonvolatile floating-point context saved by the preceding call to KeSaveFloatingPointState. |
-| [KeRestoreFloatingPointState function](nf-wdm-kerestorefloatingpointstate~r3.md) | The KeRestoreFloatingPointState routine restores the nonvolatile floating-point context saved by the preceding call to KeSaveFloatingPointState. |
 | [KeRevertToUserAffinityThreadEx function](nf-wdm-kereverttouseraffinitythreadex.md) | The KeRevertToUserAffinityThreadEx routine restores the previous affinity of the current thread. |
 | [KeRevertToUserGroupAffinityThread function](nf-wdm-kereverttousergroupaffinitythread.md) | The KeRevertToUserGroupAffinityThread routine restores the group affinity of the calling thread to its original value at the time that the thread was created. |
 | [KeSaveExtendedProcessorState function](nf-wdm-kesaveextendedprocessorstate.md) | The KeSaveExtendedProcessorState routine saves extended processor state information. |
 | [KeSaveFloatingPointState function](nf-wdm-kesavefloatingpointstate.md) | The KeSaveFloatingPointState routine saves the nonvolatile floating-point context so the caller can carry out floating-point operations. |
-| [KeSaveFloatingPointState function](nf-wdm-kesavefloatingpointstate~r1.md) | The KeSaveFloatingPointState routine saves the nonvolatile floating-point context so the caller can carry out floating-point operations. |
-| [KeSaveFloatingPointState function](nf-wdm-kesavefloatingpointstate~r2.md) | The KeSaveFloatingPointState routine saves the nonvolatile floating-point context so the caller can carry out floating-point operations. |
-| [KeSaveFloatingPointState function](nf-wdm-kesavefloatingpointstate~r3.md) | The KeSaveFloatingPointState routine saves the nonvolatile floating-point context so the caller can carry out floating-point operations. |
 | [KeSetCoalescableTimer function](nf-wdm-kesetcoalescabletimer.md) | The KeSetCoalescableTimer routine sets the initial expiration time and period of a timer object and specifies how much delay can be tolerated in the expiration times. |
 | [KeSetEvent function](nf-wdm-kesetevent.md) | The KeSetEvent routine sets an event object to a signaled state if the event was not already signaled, and returns the previous state of the event object. |
 | [KeSetImportanceDpc function](nf-wdm-kesetimportancedpc.md) | The KeSetImportanceDpc routine specifies how soon the DPC routine is run. |
@@ -478,7 +449,6 @@ Wdm.h contain these programming interfaces:
 | [MmFreeMappingAddress function](nf-wdm-mmfreemappingaddress.md) | The MmFreeMappingAddress routine frees a range of virtual memory reserved by the MmAllocateMappingAddress routine. |
 | [MmFreePagesFromMdl function](nf-wdm-mmfreepagesfrommdl.md) | The MmFreePagesFromMdl routine frees all the physical pages that are described by an MDL that was created by the MmAllocatePagesForMdl routine. |
 | [MmGetSystemRoutineAddress function](nf-wdm-mmgetsystemroutineaddress.md) | The MmGetSystemRoutineAddress routine returns a pointer to a function specified by SystemRoutineName. |
-| [MmGetSystemRoutineAddress function](nf-wdm-mmgetsystemroutineaddress~r1.md) | The MmGetSystemRoutineAddress routine returns a pointer to a function specified by SystemRoutineName. |
 | [MmIsDriverSuspectForVerifier function](nf-wdm-mmisdriversuspectforverifier.md) | The MmIsDriverSuspectForVerifier routine indicates whether the driver represented by the specified driver object is in the list of drivers that are selected to be verified by Driver Verifier. |
 | [MmIsDriverVerifying function](nf-wdm-mmisdriververifying.md) | The MmIsDriverVerifying routine indicates whether the kernel-mode driver that is identified by the specified driver object is being verified or calls a driver that is being verified by Driver Verifier. |
 | [MmIsDriverVerifyingByAddress function](nf-wdm-mmisdriververifyingbyaddress.md) | The MmIsDriverVerifyingByAddress routine checks whether the kernel-mode driver that is identified by the specified image address is being verified or calls a driver that is being verified by Driver Verifier. |
@@ -598,7 +568,6 @@ Wdm.h contain these programming interfaces:
 | [PoUnregisterSystemState function](nf-wdm-pounregistersystemstate.md) | The PoUnregisterSystemState routine cancels a system state registration created by PoRegisterSystemState. |
 | [PopEntryList function](nf-wdm-popentrylist.md) | The PopEntryList routine removes the first entry from a singly linked list of SINGLE_LIST_ENTRY structures. |
 | [ProbeForRead function](nf-wdm-probeforread.md) | The ProbeForRead routine checks that a user-mode buffer actually resides in the user portion of the address space, and is correctly aligned. |
-| [ProbeForRead function](nf-wdm-probeforread~r1.md) | The ProbeForRead routine checks that a user-mode buffer actually resides in the user portion of the address space, and is correctly aligned. |
 | [ProbeForWrite function](nf-wdm-probeforwrite.md) | The ProbeForWrite routine checks that a user-mode buffer actually resides in the user-mode portion of the address space, is writable, and is correctly aligned. |
 | [PsCreateSystemThread function](nf-wdm-pscreatesystemthread.md) | The PsCreateSystemThread routine creates a system thread that executes in kernel mode and returns a handle for the thread. |
 | [PsGetCurrentThread function](nf-wdm-psgetcurrentthread.md) | The PsGetCurrentThread routine identifies the current thread. |
@@ -607,59 +576,20 @@ Wdm.h contain these programming interfaces:
 | [PsTerminateSystemThread function](nf-wdm-psterminatesystemthread.md) | The PsTerminateSystemThread routine terminates the current system thread. |
 | [PushEntryList function](nf-wdm-pushentrylist.md) | The PushEntryList routine inserts an entry at the beginning of a singly linked list of SINGLE_LIST_ENTRY structures. |
 | [READ_PORT_BUFFER_UCHAR function](nf-wdm-read_port_buffer_uchar.md) | The READ_PORT_BUFFER_UCHAR routine reads a number of bytes from the specified port address into a buffer. |
-| [READ_PORT_BUFFER_UCHAR function](nf-wdm-read_port_buffer_uchar~r1.md) | The READ_PORT_BUFFER_UCHAR routine reads a number of bytes from the specified port address into a buffer. |
-| [READ_PORT_BUFFER_UCHAR function](nf-wdm-read_port_buffer_uchar~r2.md) | The READ_PORT_BUFFER_UCHAR routine reads a number of bytes from the specified port address into a buffer. |
-| [READ_PORT_BUFFER_UCHAR function](nf-wdm-read_port_buffer_uchar~r3.md) | The READ_PORT_BUFFER_UCHAR routine reads a number of bytes from the specified port address into a buffer. |
 | [READ_PORT_BUFFER_ULONG function](nf-wdm-read_port_buffer_ulong.md) | The READ_PORT_BUFFER_ULONG routine reads a number of ULONG values from the specified port address into a buffer. |
-| [READ_PORT_BUFFER_ULONG function](nf-wdm-read_port_buffer_ulong~r1.md) | The READ_PORT_BUFFER_ULONG routine reads a number of ULONG values from the specified port address into a buffer. |
-| [READ_PORT_BUFFER_ULONG function](nf-wdm-read_port_buffer_ulong~r2.md) | The READ_PORT_BUFFER_ULONG routine reads a number of ULONG values from the specified port address into a buffer. |
-| [READ_PORT_BUFFER_ULONG function](nf-wdm-read_port_buffer_ulong~r3.md) | The READ_PORT_BUFFER_ULONG routine reads a number of ULONG values from the specified port address into a buffer. |
 | [READ_PORT_BUFFER_USHORT function](nf-wdm-read_port_buffer_ushort.md) | The READ_PORT_BUFFER_USHORT routine reads a number of USHORT values from the specified port address into a buffer. |
-| [READ_PORT_BUFFER_USHORT function](nf-wdm-read_port_buffer_ushort~r1.md) | The READ_PORT_BUFFER_USHORT routine reads a number of USHORT values from the specified port address into a buffer. |
-| [READ_PORT_BUFFER_USHORT function](nf-wdm-read_port_buffer_ushort~r2.md) | The READ_PORT_BUFFER_USHORT routine reads a number of USHORT values from the specified port address into a buffer. |
-| [READ_PORT_BUFFER_USHORT function](nf-wdm-read_port_buffer_ushort~r3.md) | The READ_PORT_BUFFER_USHORT routine reads a number of USHORT values from the specified port address into a buffer. |
 | [READ_PORT_UCHAR function](nf-wdm-read_port_uchar.md) | The READ_PORT_UCHAR routine reads a byte from the specified port address. |
-| [READ_PORT_UCHAR function](nf-wdm-read_port_uchar~r1.md) | The READ_PORT_UCHAR routine reads a byte from the specified port address. |
-| [READ_PORT_UCHAR function](nf-wdm-read_port_uchar~r2.md) | The READ_PORT_UCHAR routine reads a byte from the specified port address. |
-| [READ_PORT_UCHAR function](nf-wdm-read_port_uchar~r3.md) | The READ_PORT_UCHAR routine reads a byte from the specified port address. |
 | [READ_PORT_ULONG function](nf-wdm-read_port_ulong.md) | The READ_PORT_ULONG routine reads a ULONG value from the specified port address. |
-| [READ_PORT_ULONG function](nf-wdm-read_port_ulong~r1.md) | The READ_PORT_ULONG routine reads a ULONG value from the specified port address. |
-| [READ_PORT_ULONG function](nf-wdm-read_port_ulong~r2.md) | The READ_PORT_ULONG routine reads a ULONG value from the specified port address. |
-| [READ_PORT_ULONG function](nf-wdm-read_port_ulong~r3.md) | The READ_PORT_ULONG routine reads a ULONG value from the specified port address. |
 | [READ_PORT_USHORT function](nf-wdm-read_port_ushort.md) | The READ_PORT_USHORT routine reads a USHORT value from the specified port address. |
-| [READ_PORT_USHORT function](nf-wdm-read_port_ushort~r1.md) | The READ_PORT_USHORT routine reads a USHORT value from the specified port address. |
-| [READ_PORT_USHORT function](nf-wdm-read_port_ushort~r2.md) | The READ_PORT_USHORT routine reads a USHORT value from the specified port address. |
-| [READ_PORT_USHORT function](nf-wdm-read_port_ushort~r3.md) | The READ_PORT_USHORT routine reads a USHORT value from the specified port address. |
 | [READ_REGISTER_BUFFER_UCHAR function](nf-wdm-read_register_buffer_uchar.md) | The READ_REGISTER_BUFFER_UCHAR routine reads a number of bytes from the specified register address into a buffer. |
-| [READ_REGISTER_BUFFER_UCHAR function](nf-wdm-read_register_buffer_uchar~r1.md) | The READ_REGISTER_BUFFER_UCHAR routine reads a number of bytes from the specified register address into a buffer. |
-| [READ_REGISTER_BUFFER_UCHAR function](nf-wdm-read_register_buffer_uchar~r2.md) | The READ_REGISTER_BUFFER_UCHAR routine reads a number of bytes from the specified register address into a buffer. |
-| [READ_REGISTER_BUFFER_UCHAR function](nf-wdm-read_register_buffer_uchar~r3.md) | The READ_REGISTER_BUFFER_UCHAR routine reads a number of bytes from the specified register address into a buffer. |
 | [READ_REGISTER_BUFFER_ULONG function](nf-wdm-read_register_buffer_ulong.md) | The READ_REGISTER_BUFFER_ULONG routine reads a number of ULONG values from the specified register address into a buffer. |
-| [READ_REGISTER_BUFFER_ULONG function](nf-wdm-read_register_buffer_ulong~r1.md) | The READ_REGISTER_BUFFER_ULONG routine reads a number of ULONG values from the specified register address into a buffer. |
-| [READ_REGISTER_BUFFER_ULONG function](nf-wdm-read_register_buffer_ulong~r2.md) | The READ_REGISTER_BUFFER_ULONG routine reads a number of ULONG values from the specified register address into a buffer. |
-| [READ_REGISTER_BUFFER_ULONG function](nf-wdm-read_register_buffer_ulong~r3.md) | The READ_REGISTER_BUFFER_ULONG routine reads a number of ULONG values from the specified register address into a buffer. |
 | [READ_REGISTER_BUFFER_USHORT function](nf-wdm-read_register_buffer_ushort.md) | The READ_REGISTER_BUFFER_USHORT routine reads a number of USHORT values from the specified register address into a buffer. |
-| [READ_REGISTER_BUFFER_USHORT function](nf-wdm-read_register_buffer_ushort~r1.md) | The READ_REGISTER_BUFFER_USHORT routine reads a number of USHORT values from the specified register address into a buffer. |
-| [READ_REGISTER_BUFFER_USHORT function](nf-wdm-read_register_buffer_ushort~r2.md) | The READ_REGISTER_BUFFER_USHORT routine reads a number of USHORT values from the specified register address into a buffer. |
-| [READ_REGISTER_BUFFER_USHORT function](nf-wdm-read_register_buffer_ushort~r3.md) | The READ_REGISTER_BUFFER_USHORT routine reads a number of USHORT values from the specified register address into a buffer. |
 | [READ_REGISTER_UCHAR function](nf-wdm-read_register_uchar.md) | The READ_REGISTER_UCHAR routine reads a byte from the specified register address. |
-| [READ_REGISTER_UCHAR function](nf-wdm-read_register_uchar~r1.md) | The READ_REGISTER_UCHAR routine reads a byte from the specified register address. |
-| [READ_REGISTER_UCHAR function](nf-wdm-read_register_uchar~r2.md) | The READ_REGISTER_UCHAR routine reads a byte from the specified register address. |
-| [READ_REGISTER_UCHAR function](nf-wdm-read_register_uchar~r3.md) | The READ_REGISTER_UCHAR routine reads a byte from the specified register address. |
 | [READ_REGISTER_ULONG function](nf-wdm-read_register_ulong.md) | The READ_REGISTER_ULONG routine reads a ULONG value from the specified register address. |
-| [READ_REGISTER_ULONG function](nf-wdm-read_register_ulong~r1.md) | The READ_REGISTER_ULONG routine reads a ULONG value from the specified register address. |
-| [READ_REGISTER_ULONG function](nf-wdm-read_register_ulong~r2.md) | The READ_REGISTER_ULONG routine reads a ULONG value from the specified register address. |
-| [READ_REGISTER_ULONG function](nf-wdm-read_register_ulong~r3.md) | The READ_REGISTER_ULONG routine reads a ULONG value from the specified register address. |
 | [READ_REGISTER_USHORT function](nf-wdm-read_register_ushort.md) | The READ_REGISTER_USHORT routine reads a USHORT value from the specified register address. |
-| [READ_REGISTER_USHORT function](nf-wdm-read_register_ushort~r1.md) | The READ_REGISTER_USHORT routine reads a USHORT value from the specified register address. |
-| [READ_REGISTER_USHORT function](nf-wdm-read_register_ushort~r2.md) | The READ_REGISTER_USHORT routine reads a USHORT value from the specified register address. |
-| [READ_REGISTER_USHORT function](nf-wdm-read_register_ushort~r3.md) | The READ_REGISTER_USHORT routine reads a USHORT value from the specified register address. |
 | [RemoveEntryList function](nf-wdm-removeentrylist.md) | The RemoveEntryList routine removes an entry from a doubly linked list of LIST_ENTRY structures. |
-| [RemoveEntryList function](nf-wdm-removeentrylist~r1.md) | The RemoveEntryList routine removes an entry from a doubly linked list of LIST_ENTRY structures. |
 | [RemoveHeadList function](nf-wdm-removeheadlist.md) | The RemoveHeadList routine removes an entry from the beginning of a doubly linked list of LIST_ENTRY structures. |
-| [RemoveHeadList function](nf-wdm-removeheadlist~r1.md) | The RemoveHeadList routine removes an entry from the beginning of a doubly linked list of LIST_ENTRY structures. |
 | [RemoveTailList function](nf-wdm-removetaillist.md) | The RemoveTailList routine removes an entry from the end of a doubly linked list of LIST_ENTRY structures. |
-| [RemoveTailList function](nf-wdm-removetaillist~r1.md) | The RemoveTailList routine removes an entry from the end of a doubly linked list of LIST_ENTRY structures. |
 | [RtlAnsiStringToUnicodeString function](nf-wdm-rtlansistringtounicodestring.md) | RtlAnsiStringToUnicodeString converts the given ANSI source string into a Unicode string. |
 | [RtlAppendUnicodeStringToString function](nf-wdm-rtlappendunicodestringtostring.md) | The RtlAppendUnicodeStringToString routine concatenates two Unicode strings. |
 | [RtlAppendUnicodeToString function](nf-wdm-rtlappendunicodetostring.md) | The RtlAppendUnicodeToString routine concatenates the supplied Unicode string to a buffered Unicode string. |
@@ -769,53 +699,17 @@ Wdm.h contain these programming interfaces:
 | [TmRollbackTransaction function](nf-wdm-tmrollbacktransaction.md) | The TmRollbackTransaction routine initiates a rollback operation for a specified transaction. |
 | [TmSinglePhaseReject function](nf-wdm-tmsinglephasereject.md) | The TmSinglePhaseReject routine informs KTM that the calling resource manager will not support a single-phase commit operation for a specified enlistment. |
 | [WRITE_PORT_BUFFER_UCHAR function](nf-wdm-write_port_buffer_uchar.md) | The WRITE_PORT_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified port. |
-| [WRITE_PORT_BUFFER_UCHAR function](nf-wdm-write_port_buffer_uchar~r1.md) | The WRITE_PORT_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified port. |
-| [WRITE_PORT_BUFFER_UCHAR function](nf-wdm-write_port_buffer_uchar~r2.md) | The WRITE_PORT_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified port. |
-| [WRITE_PORT_BUFFER_UCHAR function](nf-wdm-write_port_buffer_uchar~r3.md) | The WRITE_PORT_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified port. |
 | [WRITE_PORT_BUFFER_ULONG function](nf-wdm-write_port_buffer_ulong.md) | The WRITE_PORT_BUFFER_ULONG routine writes a number of ULONG values from a buffer to the specified port address. |
-| [WRITE_PORT_BUFFER_ULONG function](nf-wdm-write_port_buffer_ulong~r1.md) | The WRITE_PORT_BUFFER_ULONG routine writes a number of ULONG values from a buffer to the specified port address. |
-| [WRITE_PORT_BUFFER_ULONG function](nf-wdm-write_port_buffer_ulong~r2.md) | The WRITE_PORT_BUFFER_ULONG routine writes a number of ULONG values from a buffer to the specified port address. |
-| [WRITE_PORT_BUFFER_ULONG function](nf-wdm-write_port_buffer_ulong~r3.md) | The WRITE_PORT_BUFFER_ULONG routine writes a number of ULONG values from a buffer to the specified port address. |
 | [WRITE_PORT_BUFFER_USHORT function](nf-wdm-write_port_buffer_ushort.md) | The WRITE_PORT_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified port address. |
-| [WRITE_PORT_BUFFER_USHORT function](nf-wdm-write_port_buffer_ushort~r1.md) | The WRITE_PORT_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified port address. |
-| [WRITE_PORT_BUFFER_USHORT function](nf-wdm-write_port_buffer_ushort~r2.md) | The WRITE_PORT_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified port address. |
-| [WRITE_PORT_BUFFER_USHORT function](nf-wdm-write_port_buffer_ushort~r3.md) | The WRITE_PORT_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified port address. |
 | [WRITE_PORT_UCHAR function](nf-wdm-write_port_uchar.md) | The WRITE_PORT_UCHAR routine writes a byte to the specified port address. |
-| [WRITE_PORT_UCHAR function](nf-wdm-write_port_uchar~r1.md) | The WRITE_PORT_UCHAR routine writes a byte to the specified port address. |
-| [WRITE_PORT_UCHAR function](nf-wdm-write_port_uchar~r2.md) | The WRITE_PORT_UCHAR routine writes a byte to the specified port address. |
-| [WRITE_PORT_UCHAR function](nf-wdm-write_port_uchar~r3.md) | The WRITE_PORT_UCHAR routine writes a byte to the specified port address. |
 | [WRITE_PORT_ULONG function](nf-wdm-write_port_ulong.md) | The WRITE_PORT_ULONG routine writes a ULONG value to the specified port address. |
-| [WRITE_PORT_ULONG function](nf-wdm-write_port_ulong~r1.md) | The WRITE_PORT_ULONG routine writes a ULONG value to the specified port address. |
-| [WRITE_PORT_ULONG function](nf-wdm-write_port_ulong~r2.md) | The WRITE_PORT_ULONG routine writes a ULONG value to the specified port address. |
-| [WRITE_PORT_ULONG function](nf-wdm-write_port_ulong~r3.md) | The WRITE_PORT_ULONG routine writes a ULONG value to the specified port address. |
 | [WRITE_PORT_USHORT function](nf-wdm-write_port_ushort.md) | The WRITE_PORT_USHORT routine writes a USHORT value to the specified port address. |
-| [WRITE_PORT_USHORT function](nf-wdm-write_port_ushort~r1.md) | The WRITE_PORT_USHORT routine writes a USHORT value to the specified port address. |
-| [WRITE_PORT_USHORT function](nf-wdm-write_port_ushort~r2.md) | The WRITE_PORT_USHORT routine writes a USHORT value to the specified port address. |
-| [WRITE_PORT_USHORT function](nf-wdm-write_port_ushort~r3.md) | The WRITE_PORT_USHORT routine writes a USHORT value to the specified port address. |
 | [WRITE_REGISTER_BUFFER_UCHAR function](nf-wdm-write_register_buffer_uchar.md) | The WRITE_REGISTER_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified register. |
-| [WRITE_REGISTER_BUFFER_UCHAR function](nf-wdm-write_register_buffer_uchar~r1.md) | The WRITE_REGISTER_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified register. |
-| [WRITE_REGISTER_BUFFER_UCHAR function](nf-wdm-write_register_buffer_uchar~r2.md) | The WRITE_REGISTER_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified register. |
-| [WRITE_REGISTER_BUFFER_UCHAR function](nf-wdm-write_register_buffer_uchar~r3.md) | The WRITE_REGISTER_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified register. |
 | [WRITE_REGISTER_BUFFER_ULONG function](nf-wdm-write_register_buffer_ulong.md) | The WRITE_REGISTER_BUFFER_ULONG routine writes a number of ULONG values from a buffer to the specified register. |
-| [WRITE_REGISTER_BUFFER_ULONG function](nf-wdm-write_register_buffer_ulong~r1.md) | The WRITE_REGISTER_BUFFER_ULONG routine writes a number of ULONG values from a buffer to the specified register. |
-| [WRITE_REGISTER_BUFFER_ULONG function](nf-wdm-write_register_buffer_ulong~r2.md) | The WRITE_REGISTER_BUFFER_ULONG routine writes a number of ULONG values from a buffer to the specified register. |
-| [WRITE_REGISTER_BUFFER_ULONG function](nf-wdm-write_register_buffer_ulong~r3.md) | The WRITE_REGISTER_BUFFER_ULONG routine writes a number of ULONG values from a buffer to the specified register. |
 | [WRITE_REGISTER_BUFFER_USHORT function](nf-wdm-write_register_buffer_ushort.md) | The WRITE_REGISTER_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified register. |
-| [WRITE_REGISTER_BUFFER_USHORT function](nf-wdm-write_register_buffer_ushort~r1.md) | The WRITE_REGISTER_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified register. |
-| [WRITE_REGISTER_BUFFER_USHORT function](nf-wdm-write_register_buffer_ushort~r2.md) | The WRITE_REGISTER_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified register. |
-| [WRITE_REGISTER_BUFFER_USHORT function](nf-wdm-write_register_buffer_ushort~r3.md) | The WRITE_REGISTER_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified register. |
 | [WRITE_REGISTER_UCHAR function](nf-wdm-write_register_uchar.md) | The WRITE_REGISTER_UCHAR routine writes a byte to the specified address. |
-| [WRITE_REGISTER_UCHAR function](nf-wdm-write_register_uchar~r1.md) | The WRITE_REGISTER_UCHAR routine writes a byte to the specified address. |
-| [WRITE_REGISTER_UCHAR function](nf-wdm-write_register_uchar~r2.md) | The WRITE_REGISTER_UCHAR routine writes a byte to the specified address. |
-| [WRITE_REGISTER_UCHAR function](nf-wdm-write_register_uchar~r3.md) | The WRITE_REGISTER_UCHAR routine writes a byte to the specified address. |
 | [WRITE_REGISTER_ULONG function](nf-wdm-write_register_ulong.md) | The WRITE_REGISTER_ULONG routine writes a ULONG value to the specified address. |
-| [WRITE_REGISTER_ULONG function](nf-wdm-write_register_ulong~r1.md) | The WRITE_REGISTER_ULONG routine writes a ULONG value to the specified address. |
-| [WRITE_REGISTER_ULONG function](nf-wdm-write_register_ulong~r2.md) | The WRITE_REGISTER_ULONG routine writes a ULONG value to the specified address. |
-| [WRITE_REGISTER_ULONG function](nf-wdm-write_register_ulong~r3.md) | The WRITE_REGISTER_ULONG routine writes a ULONG value to the specified address. |
 | [WRITE_REGISTER_USHORT function](nf-wdm-write_register_ushort.md) | The WRITE_REGISTER_USHORT routine writes a USHORT value to the specified address. |
-| [WRITE_REGISTER_USHORT function](nf-wdm-write_register_ushort~r1.md) | The WRITE_REGISTER_USHORT routine writes a USHORT value to the specified address. |
-| [WRITE_REGISTER_USHORT function](nf-wdm-write_register_ushort~r2.md) | The WRITE_REGISTER_USHORT routine writes a USHORT value to the specified address. |
-| [WRITE_REGISTER_USHORT function](nf-wdm-write_register_ushort~r3.md) | The WRITE_REGISTER_USHORT routine writes a USHORT value to the specified address. |
 | [WmiQueryTraceInformation function](nf-wdm-wmiquerytraceinformation.md) | The WmiQueryTraceInformation routine returns information about a WMI event trace. |
 | [WmiTraceMessage function](nf-wdm-wmitracemessage.md) | The WmiTraceMessage routine adds a message to the output log of a WPP software tracing session. |
 | [WmiTraceMessageVa function](nf-wdm-wmitracemessageva.md) | The WmiTraceMessageVa routine adds a message to the output log of a WPP software tracing session. |
@@ -892,23 +786,8 @@ Wdm.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [ALLOCATE_FUNCTION_EX callback](nc-wdm-allocate_function_ex.md) | The LookasideListAllocateEx routine allocates the storage for a new lookaside-list entry when a client requests an entry from a lookaside list that is empty. |
 | [BOUND_CALLBACK callback](nc-wdm-bound_callback.md) | The BoundCallback routine is executed whenever the system issues a bounds exception for a user-mode thread. |
-| [DRIVER_CONTROL callback](nc-wdm-driver_control.md) | This routine starts a DMA data-transfer or a data transfer operation. |
 | [DRIVER_INITIALIZE callback](nc-wdm-driver_initialize.md) | DriverEntry is the first routine called after a driver is loaded, and is responsible for initializing the driver. |
-| [DRIVER_LIST_CONTROL callback](nc-wdm-driver_list_control.md) | The AdapterListControl routine starts a direct memory access (DMA) scatter/gather operation. |
-| [ENABLE_VIRTUALIZATION callback](nc-wdm-enable_virtualization.md) | The EnableVirtualization routine enables or disables virtualization for a PCI Express (PCIe) device that supports the single root I/O virtualization (SR-IOV) interface. |
-| [ETWENABLECALLBACK callback](nc-wdm-etwenablecallback.md) | The EtwEnableCallback function is an optional driver-supplied callback function that is used to receive enable or disable notifications. |
-| [EX_CALLBACK_FUNCTION callback](nc-wdm-ex_callback_function.md) | A filter driver's RegistryCallback routine can monitor, block, or modify a registry operation. |
-| [FREE_FUNCTION_EX callback](nc-wdm-free_function_ex.md) | The LookasideListFreeEx routine frees the storage for a lookaside-list entry when a client tries to insert the entry into a lookaside list that is full. |
-| [GET_D3COLD_CAPABILITY callback](nc-wdm-get_d3cold_capability.md) | The GetBusDriverD3ColdSupport routine enables the driver for a device to query whether the enumerating bus driver supports the D3cold device power state. |
-| [GET_D3COLD_LAST_TRANSITION_STATUS callback](nc-wdm-get_d3cold_last_transition_status.md) | The GetLastTransitionStatus routine enables the driver for a device to query whether the most recent transition to the D3hot substate was followed by a transition to the D3cold substate. |
-| [GET_IDLE_WAKE_INFO callback](nc-wdm-get_idle_wake_info.md) | The GetIdleWakeInfo routine enables the driver for a device to discover the device power states from which the device can signal a wake event. |
-| [GET_SET_DEVICE_DATA callback](nc-wdm-get_set_device_data.md) | The GetBusData routine reads data from the device's configuration space. |
-| [GET_VIRTUAL_DEVICE_DATA callback](nc-wdm-get_virtual_device_data.md) | The GetVirtualFunctionData routine reads data from the PCI Express (PCIe) configuration space of a virtual function (VF) on a device that supports the single root I/O virtualization (SR-IOV) interface. |
-| [GET_VIRTUAL_DEVICE_LOCATION callback](nc-wdm-get_virtual_device_location.md) | The GetLocation routine returns the device location of a PCI Express (PCIe) virtual function (VF) on a PCI bus. A device that supports the single root I/O virtualization (SR-IOV) interface can expose one or more VFs on the PCI bus. |
-| [GET_VIRTUAL_DEVICE_RESOURCES callback](nc-wdm-get_virtual_device_resources.md) | The GetResources routine returns the resources that the PCI Express (PCIe) physical function (PF) requires in order to enable virtualization on a device that supports the single root I/O virtualization (SR-IOV) interface. |
-| [GET_VIRTUAL_FUNCTION_PROBED_BARS callback](nc-wdm-get_virtual_function_probed_bars.md) | The GetVirtualFunctionProbedBars routine returns the values of the PCI Express (PCIe) Base Address Registers (BARs) of a device that supports the single root I/O virtualization (SR-IOV) interface. |
 | [IO_COMPLETION_ROUTINE callback](nc-wdm-io_completion_routine.md) | The IoCompletion routine completes the processing of I/O operations. |
 | [IO_CSQ_ACQUIRE_LOCK callback](nc-wdm-io_csq_acquire_lock.md) | The CsqAcquireLock routine is used by the system to acquire the lock for a driver-implemented, cancel-safe IRP queue. |
 | [IO_CSQ_COMPLETE_CANCELED_IRP callback](nc-wdm-io_csq_complete_canceled_irp.md) | The CsqCompleteCanceledIrp routine is used by the system to signal to the driver that it can complete a canceled IRP. |
@@ -919,13 +798,6 @@ Wdm.h contain these programming interfaces:
 | [IO_CSQ_REMOVE_IRP callback](nc-wdm-io_csq_remove_irp.md) | The CsqRemoveIrp routine is used by the system to remove the specified IRP from a driver-implemented, cancel-safe IRP queue. |
 | [IO_SESSION_NOTIFICATION_FUNCTION callback](nc-wdm-io_session_notification_function.md) | The IO_SESSION_NOTIFICATION_FUNCTION function type defines a callback routine through which a driver receives notifications of changes in the state of user sessions that the driver is interested in. |
 | [IO_TIMER_ROUTINE callback](nc-wdm-io_timer_routine.md) | The IoTimer routine is a DPC that, if registered, is called once per second. |
-| [KBUGCHECK_CALLBACK_ROUTINE callback](nc-wdm-kbugcheck_callback_routine.md) | The BugCheckCallback routine is executed whenever the system issues a bug check. |
-| [KBUGCHECK_REASON_CALLBACK_ROUTINE callback](nc-wdm-kbugcheck_reason_callback_routine.md) | Driver-implemented callback functions that the system executes when it issues a bug check. |
-| [KIPI_BROADCAST_WORKER callback](nc-wdm-kipi_broadcast_worker.md) | The IpiGenericCall routine runs simultaneously on all processors. |
-| [KMESSAGE_SERVICE_ROUTINE callback](nc-wdm-kmessage_service_routine.md) | An InterruptMessageService routine services a message-signaled interrupt. |
-| [KSERVICE_ROUTINE callback](nc-wdm-kservice_routine.md) | The InterruptService routine (ISR) quickly services a device interrupt and schedules post-interrupt processing of received data, if necessary. |
-| [KSTART_ROUTINE callback](nc-wdm-kstart_routine.md) | The ThreadStart routine provides an entry point for a driver-created system thread. |
-| [KSYNCHRONIZE_ROUTINE callback](nc-wdm-ksynchronize_routine.md) | The SynchCritSection routine is used to access hardware resources or driver data that are shared with a driver's InterruptService routine. |
 | [MM_MDL_ROUTINE callback](nc-wdm-mm_mdl_routine.md) | A driver-supplied callback routine that is invoked after a memory descriptor list (MDL) is mapped by calling the MmMapMdl function. |
 | [PALLOCATE_ADAPTER_CHANNEL callback](nc-wdm-pallocate_adapter_channel.md) | The AllocateAdapterChannel routine prepares the system for a DMA operation on behalf of the target device object, and then calls the driver-supplied AdapterControl routine to carry out the DMA operation. |
 | [PALLOCATE_ADAPTER_CHANNEL_EX callback](nc-wdm-pallocate_adapter_channel_ex.md) | The AllocateAdapterChannelEx routine allocates the resources that are needed to perform a DMA transfer, and then calls the driver-supplied AdapterControl routine to initiate the DMA transfer. |
@@ -963,25 +835,12 @@ Wdm.h contain these programming interfaces:
 | [PMAP_TRANSFER_EX callback](nc-wdm-pmap_transfer_ex.md) | The MapTransferEx routine sets up map registers to map the physical addresses in a scatter/gather list to the logical addresses that are required to do a DMA transfer. |
 | [POB_POST_OPERATION_CALLBACK callback](nc-wdm-pob_post_operation_callback.md) | The ObjectPostCallback routine is called by the operating system after a process or thread handle operation occurs. |
 | [POB_PRE_OPERATION_CALLBACK callback](nc-wdm-pob_pre_operation_callback.md) | The ObjectPreCallback routine is called by the operating system when a process or thread handle operation occurs. |
-| [PO_FX_COMPONENT_ACTIVE_CONDITION_CALLBACK callback](nc-wdm-po_fx_component_active_condition_callback.md) | The ComponentActiveConditionCallback callback routine notifies the driver that the specified component completed a transition from the idle condition to the active condition. |
-| [PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK callback](nc-wdm-po_fx_component_critical_transition_callback.md) | The ComponentCriticalTransitionCallback callback routine handles a transition of the specified component between the F0 (fully on) and low-power Fx component power states. |
-| [PO_FX_COMPONENT_IDLE_CONDITION_CALLBACK callback](nc-wdm-po_fx_component_idle_condition_callback.md) | The ComponentIdleConditionCallback callback routine notifies the driver that the specified component completed a transition from the active condition to the idle condition. |
-| [PO_FX_COMPONENT_IDLE_STATE_CALLBACK callback](nc-wdm-po_fx_component_idle_state_callback.md) | The ComponentIdleStateCallback callback routine notifies the driver of a pending change to the Fx power state of the specified component. |
-| [PO_FX_COMPONENT_PERF_STATE_CALLBACK callback](nc-wdm-po_fx_component_perf_state_callback.md) | The ComponentPerfStateCallback callback routine notifies the driver that its request to change the performance state of a component is complete. |
-| [PO_FX_DEVICE_POWER_NOT_REQUIRED_CALLBACK callback](nc-wdm-po_fx_device_power_not_required_callback.md) | The DevicePowerNotRequiredCallback callback routine notifies the device driver that the device is not required to stay in the D0 power state. |
-| [PO_FX_DEVICE_POWER_REQUIRED_CALLBACK callback](nc-wdm-po_fx_device_power_required_callback.md) | The DevicePowerRequiredCallback callback routine notifies the device driver that the device must enter and remain in the D0 power state. |
-| [PO_FX_POWER_CONTROL_CALLBACK callback](nc-wdm-po_fx_power_control_callback.md) | The PowerControlCallback callback routine performs a power control operation that is requested by the power management framework (PoFx). |
 | [PPUT_DMA_ADAPTER callback](nc-wdm-pput_dma_adapter.md) | The PutDmaAdapter routine frees a DMA_ADAPTER structure previously allocated by IoGetDmaAdapter. |
 | [PPUT_SCATTER_GATHER_LIST callback](nc-wdm-pput_scatter_gather_list.md) | The PutScatterGatherList routine frees the previously allocated map registers and scatter/gather list used in scatter/gather DMA. |
 | [PREAD_DMA_COUNTER callback](nc-wdm-pread_dma_counter.md) | The ReadDmaCounter routine returns the number of bytes remaining to be transferred during the current subordinate DMA operation. |
 | [PREENUMERATE_SELF callback](nc-wdm-preenumerate_self.md) | A ReenumerateSelf routine requests that a bus driver reenumerate a child device. |
 | [PROCESSOR_HALT_ROUTINE callback](nc-wdm-processor_halt_routine.md) | A Halt callback routine transitions the processor to an idle state. |
 | [PTM_RM_NOTIFICATION callback](nc-wdm-ptm_rm_notification.md) | A resource manager's ResourceManagerNotification callback routine receives and handles transaction notifications. |
-| [REQUEST_POWER_COMPLETE callback](nc-wdm-request_power_complete.md) | The PowerCompletion callback routine completes the processing of a power IRP. |
-| [RTL_QUERY_REGISTRY_ROUTINE callback](nc-wdm-rtl_query_registry_routine.md) | The QueryRoutine routine provides information about a registry value that was requested in a preceding call to the RtlQueryRegistryValues routine. |
-| [SET_D3COLD_SUPPORT callback](nc-wdm-set_d3cold_support.md) | The SetD3ColdSupport routine enables or disables transitions to the D3cold device power state. |
-| [SET_VIRTUAL_DEVICE_DATA callback](nc-wdm-set_virtual_device_data.md) | The SetVirtualFunctionData routine writes data to the PCI Express (PCIe) configuration space of a virtual function (VF) on a device that supports the single root I/O virtualization (SR-IOV) interface. |
-| [TRANSLATE_BUS_ADDRESS callback](nc-wdm-translate_bus_address.md) | The TranslateBusAddress routine translates addresses on the parent bus to logical addresses. |
 
 ## Structures
 
@@ -990,6 +849,7 @@ Wdm.h contain these programming interfaces:
 | [CM_Power_Data_s structure](ns-wdm-cm_power_data_s.md) | The CM_POWER_DATA structure contains information about a device's power management state and capabilities. |
 | [PCI_X_CAPABILITY structure](ns-wdm-pci_x_capability.md) | The PCI_X_CAPABILITY structure reports the contents of the command and status registers of a device that is compliant with the PCI-X Addendum to the PCI Local Bus Specification. |
 | [_ACCESS_STATE structure](ns-wdm-_access_state.md) | The ACCESS_STATE structure describes the state of an access in progress. |
+| [_ACL structure](ns-wdm-_acl.md) | The ACL structure is the header of an access-control list (ACL). A complete ACL consists of an ACL structure followed by an ordered list of zero or more access-control entries (ACE). |
 | [_BOOTDISK_INFORMATION structure](ns-wdm-_bootdisk_information.md) | The BOOTDISK_INFORMATION structure contains basic information describing the boot and system disks. |
 | [_BOOTDISK_INFORMATION_EX structure](ns-wdm-_bootdisk_information_ex.md) | The BOOTDISK_INFORMATION_EX structure contains extended information describing the boot and system disks. |
 | [_BUS_INTERFACE_STANDARD structure](ns-wdm-_bus_interface_standard.md) | The BUS_INTERFACE_STANDARD interface structure enables device drivers to make direct calls to parent bus driver routines. This structure defines the GUID_BUS_INTERFACE_STANDARD interface. |
@@ -1020,26 +880,15 @@ Wdm.h contain these programming interfaces:
 | [_D3COLD_SUPPORT_INTERFACE structure](ns-wdm-_d3cold_support_interface.md) | The D3COLD_SUPPORT_INTERFACE interface structure contains pointers to the routines in the GUID_D3COLD_SUPPORT_INTERFACE driver interface. |
 | [_DEVICE_CAPABILITIES structure](ns-wdm-_device_capabilities.md) | A DEVICE_CAPABILITIES structure describes PnP and power capabilities of a device. This structure is returned in response to an IRP_MN_QUERY_CAPABILITIES IRP. |
 | [_DEVICE_DESCRIPTION structure](ns-wdm-_device_description.md) | The DEVICE_DESCRIPTION structure describes the attributes of the physical device for which a driver is requesting a DMA adapter. |
-| [_DEVICE_DESCRIPTION structure](ns-wdm-_device_description~r1.md) | The DEVICE_DESCRIPTION structure describes the attributes of the physical device for which a driver is requesting a DMA adapter. |
 | [_DEVICE_INTERFACE_CHANGE_NOTIFICATION structure](ns-wdm-_device_interface_change_notification.md) | The DEVICE_INTERFACE_CHANGE_NOTIFICATION structure describes a device interface that has been enabled (arrived) or disabled (removed). |
 | [_DEVICE_RESET_INTERFACE_STANDARD structure](ns-wdm-_device_reset_interface_standard.md) | The DEVICE_RESET_INTERFACE_STANDARD structure enables function drivers to reset and recover malfunctioning devices. This structure describes the GUID_DEVICE_RESET_INTERFACE_STANDARD interface. |
 | [_DMA_ADAPTER structure](ns-wdm-_dma_adapter.md) | The DMA_ADAPTER structure describes a system-defined interface to a DMA controller for a given device. A driver calls IoGetDmaAdapter to obtain this structure. |
-| [_DMA_ADAPTER structure](ns-wdm-_dma_adapter~r1.md) | The DMA_ADAPTER structure describes a system-defined interface to a DMA controller for a given device. A driver calls IoGetDmaAdapter to obtain this structure. |
-| [_DMA_ADAPTER structure](ns-wdm-_dma_adapter~r2.md) | The DMA_ADAPTER structure describes a system-defined interface to a DMA controller for a given device. A driver calls IoGetDmaAdapter to obtain this structure. |
-| [_DMA_ADAPTER structure](ns-wdm-_dma_adapter~r3.md) | The DMA_ADAPTER structure describes a system-defined interface to a DMA controller for a given device. A driver calls IoGetDmaAdapter to obtain this structure. |
-| [_DMA_ADAPTER structure](ns-wdm-_dma_adapter~r4.md) | The DMA_ADAPTER structure describes a system-defined interface to a DMA controller for a given device. A driver calls IoGetDmaAdapter to obtain this structure. |
-| [_DMA_ADAPTER structure](ns-wdm-_dma_adapter~r5.md) | The DMA_ADAPTER structure describes a system-defined interface to a DMA controller for a given device. A driver calls IoGetDmaAdapter to obtain this structure. |
 | [_DMA_ADAPTER_INFO structure](ns-wdm-_dma_adapter_info.md) | The DMA_ADAPTER_INFO structure is a container for a DMA_ADAPTER_INFO_XXX structure that describes the capabilities of a system DMA controller. |
 | [_DMA_ADAPTER_INFO_V1 structure](ns-wdm-_dma_adapter_info_v1.md) | The DMA_ADAPTER_INFO_V1 structure describes the capabilities of the system DMA controller that is represented by an adapter object. |
 | [_DMA_OPERATIONS structure](ns-wdm-_dma_operations.md) | The DMA_OPERATIONS structure provides a table of pointers to functions that control the operation of a DMA controller. |
-| [_DMA_OPERATIONS structure](ns-wdm-_dma_operations~r1.md) | The DMA_OPERATIONS structure provides a table of pointers to functions that control the operation of a DMA controller. |
 | [_DMA_TRANSFER_INFO structure](ns-wdm-_dma_transfer_info.md) | The DMA_TRANSFER_INFO structure is a container for a DMA_TRANSFER_INFO_XXX structure that describes the allocation requirements for a scatter/gather list. |
 | [_DMA_TRANSFER_INFO_V1 structure](ns-wdm-_dma_transfer_info_v1.md) | The DMA_TRANSFER_INFO_V1 structure contains the allocation requirements for a scatter/gather list that describes the I/O data buffer for a DMA transfer. |
 | [_DRIVER_OBJECT structure](ns-wdm-_driver_object.md) | Each driver object represents the image of a loaded kernel-mode driver. |
-| [_DRIVER_OBJECT structure](ns-wdm-_driver_object~r1.md) | Each driver object represents the image of a loaded kernel-mode driver. |
-| [_DRIVER_OBJECT structure](ns-wdm-_driver_object~r2.md) | Each driver object represents the image of a loaded kernel-mode driver. |
-| [_DRIVER_OBJECT structure](ns-wdm-_driver_object~r3.md) | Each driver object represents the image of a loaded kernel-mode driver. |
-| [_DRIVER_OBJECT structure](ns-wdm-_driver_object~r4.md) | Each driver object represents the image of a loaded kernel-mode driver. |
 | [_ENLISTMENT_BASIC_INFORMATION structure](ns-wdm-_enlistment_basic_information.md) | The ENLISTMENT_BASIC_INFORMATION structure contains information about an enlistment object. |
 | [_EXT_DELETE_PARAMETERS structure](ns-wdm-_ext_delete_parameters.md) | The EXT_DELETE_PARAMETERS structure contains an extended set of parameters for the ExDeleteTimer routine. |
 | [_EXT_SET_PARAMETERS_V0 structure](ns-wdm-_ext_set_parameters_v0.md) | The EXT_SET_PARAMETERS structure contains an extended set of parameters for the ExSetTimer routine. |
@@ -1051,9 +900,7 @@ Wdm.h contain these programming interfaces:
 | [_FILE_IS_REMOTE_DEVICE_INFORMATION structure](ns-wdm-_file_is_remote_device_information.md) | The FILE_IS_REMOTE_DEVICE_INFORMATION structure is used as an argument to the ZwQueryInformationFile routine. |
 | [_FILE_MEMORY_PARTITION_INFORMATION structure](ns-wdm-_file_memory_partition_information.md) | Stores information about memory partition. This structure is used by the ZwSetInformationFile function. |
 | [_FILE_NETWORK_OPEN_INFORMATION structure](ns-wdm-_file_network_open_information.md) | The FILE_NETWORK_OPEN_INFORMATION structure is used as an argument to ZwQueryInformationFile. |
-| [_FILE_OBJECT structure](ns-wdm-_file_object.md) | The FILE_OBJECT structure is used by the system to represent a file object. |
-| [_FILE_OBJECT structure](ns-wdm-_file_object~r1.md) | The FILE_OBJECT structure is used by the system to represent a file object. |
-| [_FILE_OBJECT structure](ns-wdm-_file_object~r2.md) | The FILE_OBJECT structure is used by the system to represent a file object. |
+| [_FILE_OBJECT structure](ns-wdm-_file_object.md) | The Common Log File System (CLFS) uses the LOG_FILE_OBJECT structure to represent logs. |
 | [_FILE_POSITION_INFORMATION structure](ns-wdm-_file_position_information.md) | The FILE_POSITION_INFORMATION structure is used as an argument to routines that query or set file information. |
 | [_FILE_STANDARD_INFORMATION structure](ns-wdm-_file_standard_information.md) | The FILE_STANDARD_INFORMATION structure is used as an argument to routines that query or set file information. |
 | [_FILE_STANDARD_INFORMATION_EX structure](ns-wdm-_file_standard_information_ex.md) | The FILE_STANDARD_INFORMATION_EX structure is used as an argument to routines that query or set file information. |
@@ -1108,7 +955,6 @@ Wdm.h contain these programming interfaces:
 | [_OSVERSIONINFOW structure](ns-wdm-_osversioninfow.md) | The RTL_OSVERSIONINFOW structure contains operating system version information. |
 | [_PCI_CAPABILITIES_HEADER structure](ns-wdm-_pci_capabilities_header.md) | The PCI_CAPABILITIES_HEADER structure defines a header that is present in every PCI capability structure. |
 | [_PCI_COMMON_CONFIG structure](ns-wdm-_pci_common_config.md) | The PCI_COMMON_CONFIG structure is obsolete. |
-| [_PCI_COMMON_CONFIG structure](ns-wdm-_pci_common_config~r1.md) | The PCI_COMMON_CONFIG structure is obsolete. |
 | [_PCI_DEVICE_PRESENT_INTERFACE structure](ns-wdm-_pci_device_present_interface.md) | The PCI_DEVICE_PRESENT_INTERFACE structure is reserved for system use. |
 | [_PCI_EXPRESS_AER_CAPABILITIES structure](ns-wdm-_pci_express_aer_capabilities.md) | The PCI_EXPRESS_AER_CAPABILITIES structure describes a PCI Express (PCIe) advanced error capabilities and control register of a PCIe advanced error reporting capability structure. |
 | [_PCI_EXPRESS_AER_CAPABILITY structure](ns-wdm-_pci_express_aer_capability.md) | The PCI_EXPRESS_AER_CAPABILITY structure describes a PCI Express (PCIe) advanced error reporting capability structure. |
@@ -1117,6 +963,7 @@ Wdm.h contain these programming interfaces:
 | [_PCI_EXPRESS_CORRECTABLE_ERROR_STATUS structure](ns-wdm-_pci_express_correctable_error_status.md) | The PCI_EXPRESS_CORRECTABLE_ERROR_STATUS structure describes a PCI Express (PCIe) correctable error status register of a PCIe advanced error reporting capability structure. |
 | [_PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure](ns-wdm-_pci_express_enhanced_capability_header.md) | The PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure describes the header for a PCI Express (PCIe) extended capability structure. |
 | [_PCI_EXPRESS_ERROR_SOURCE_ID structure](ns-wdm-_pci_express_error_source_id.md) | The PCI_EXPRESS_ERROR_SOURCE_ID structure describes the identifiers of the first correctable error and the first uncorrectable error that are reported in the PCI Express (PCIe) root error status register. |
+| [_PCI_EXPRESS_LINK_QUIESCENT_INTERFACE structure](ns-wdm-_pci_express_link_quiescent_interface.md) | The PCI_EXPRESS_LINK_QUIESCENT_INTERFACE structure is reserved for system use. |
 | [_PCI_EXPRESS_ROOTPORT_AER_CAPABILITY structure](ns-wdm-_pci_express_rootport_aer_capability.md) | The PCI_EXPRESS_ROOTPORT_AER_CAPABILITY structure describes a PCI Express (PCIe) advanced error reporting capability structure for a root port or a root complex event collector. |
 | [_PCI_EXPRESS_ROOT_ERROR_COMMAND structure](ns-wdm-_pci_express_root_error_command.md) | The PCI_EXPRESS_ROOT_ERROR_COMMAND structure describes a PCI Express (PCIe) root error command register of a PCIe advanced error reporting capability structure. |
 | [_PCI_EXPRESS_ROOT_ERROR_STATUS structure](ns-wdm-_pci_express_root_error_status.md) | The PCI_EXPRESS_ROOT_ERROR_STATUS structure describes a PCI Express (PCIe) root error status register of a PCIe advanced error reporting capability structure. |
@@ -1135,7 +982,6 @@ Wdm.h contain these programming interfaces:
 | [_PCI_PMCSR_BSE structure](ns-wdm-_pci_pmcsr_bse.md) | The PCI_PMCSR_BSE structure is used to report the contents of the power management control status register for PCI bridge support extensions. |
 | [_PCI_PM_CAPABILITY structure](ns-wdm-_pci_pm_capability.md) | The PCI_PM_CAPABILITY structure reports the power management capabilities of the device. |
 | [_PCI_SLOT_NUMBER structure](ns-wdm-_pci_slot_number.md) | The PCI_SLOT_NUMBER structure is obsolete. |
-| [_PCI_VIRTUALIZATION_INTERFACE structure](ns-wdm-_pci_virtualization_interface.md) | The PCI_VIRTUALIZATION_INTERFACE structure enables drivers to manage and configure the PCI Express (PCIe) configuration space for a virtual function (VF). |
 | [_PCW_CALLBACK_INFORMATION structure](ns-wdm-_pcw_callback_information.md) | The PCW_CALLBACK_INFORMATION union supplies details about the notification to send. A provider passes a pointer to this union as a parameter to the PcwCallback function. |
 | [_PCW_COUNTER_DESCRIPTOR structure](ns-wdm-_pcw_counter_descriptor.md) | The PCW_COUNTER_DESCRIPTOR structure supplies details about the notification to send. |
 | [_PCW_COUNTER_INFORMATION structure](ns-wdm-_pcw_counter_information.md) | The PCW_COUNTER_INFORMATION structure describes attributes that identify a specific instance of a counter set. |
@@ -1149,8 +995,10 @@ Wdm.h contain these programming interfaces:
 | [_PO_FX_COMPONENT_IDLE_STATE structure](ns-wdm-_po_fx_component_idle_state.md) | The PO_FX_COMPONENT_IDLE_STATE structure specifies the attributes of an Fx power state of a component in a device. |
 | [_PO_FX_COMPONENT_PERF_INFO structure](ns-wdm-_po_fx_component_perf_info.md) | The PO_FX_COMPONENT_PERF_INFO structure describes all the sets of performance states for a single component within a device. |
 | [_PO_FX_COMPONENT_PERF_SET structure](ns-wdm-_po_fx_component_perf_set.md) | The PO_FX_COMPONENT_PERF_SET structure represents a set of performance states for a single component within a device. |
+| [_PO_FX_COMPONENT_V1 structure](ns-wdm-_po_fx_component_v1.md) | The PO_FX_COMPONENT structure describes the power state attributes of a component in a device. |
 | [_PO_FX_COMPONENT_V2 structure](ns-wdm-_po_fx_component_v2.md) | The PO_FX_COMPONENT structure describes the power state attributes of a component in a device. |
 | [_PO_FX_DEVICE_V1 structure](ns-wdm-_po_fx_device_v1.md) | The PO_FX_DEVICE structure describes the power attributes of a device to the power management framework (PoFx). |
+| [_PO_FX_DEVICE_V2 structure](ns-wdm-_po_fx_device_v2.md) | The PO_FX_DEVICE structure describes the power attributes of a device to the power management framework (PoFx). |
 | [_PO_FX_PERF_STATE structure](ns-wdm-_po_fx_perf_state.md) | The PO_FX_PERF_STATE structure represents a performance state for a single component within a device. |
 | [_PO_FX_PERF_STATE_CHANGE structure](ns-wdm-_po_fx_perf_state_change.md) | The PO_FX_PERF_STATE_CHANGE structure contains information about a change to a performance state that is being requested by calling the PoFxIssueComponentPerfStateChange or PoFxIssueComponentPerfStateChangeMultiple routine. |
 | [_PRIVILEGE_SET structure](ns-wdm-_privilege_set.md) | The PRIVILEGE_SET structure specifies a set of security privileges. For more information, see the reference page for PRIVILEGE_SET in the Microsoft Windows SDK documentation. |
@@ -1183,12 +1031,9 @@ Wdm.h contain these programming interfaces:
 | [_RESOURCEMANAGER_BASIC_INFORMATION structure](ns-wdm-_resourcemanager_basic_information.md) | The RESOURCEMANAGER_BASIC INFORMATION structure contains information about a resource manager object. |
 | [_RESOURCEMANAGER_COMPLETION_INFORMATION structure](ns-wdm-_resourcemanager_completion_information.md) | The RESOURCEMANAGER_COMPLETION_INFORMATION structure is not used. |
 | [_SCATTER_GATHER_LIST structure](ns-wdm-_scatter_gather_list.md) | The SCATTER_GATHER_LIST structure describes the scatter/gather list for a DMA operation. |
-| [_SCATTER_GATHER_LIST structure](ns-wdm-_scatter_gather_list~r1.md) | The SCATTER_GATHER_LIST structure describes the scatter/gather list for a DMA operation. |
-| [_SCATTER_GATHER_LIST structure](ns-wdm-_scatter_gather_list~r2.md) | The SCATTER_GATHER_LIST structure describes the scatter/gather list for a DMA operation. |
-| [_SCATTER_GATHER_LIST structure](ns-wdm-_scatter_gather_list~r3.md) | The SCATTER_GATHER_LIST structure describes the scatter/gather list for a DMA operation. |
 | [_SDEV_IDENTIFIER_INTERFACE structure](ns-wdm-_sdev_identifier_interface.md) | TBD. |
 | [_SECTION_OBJECT_POINTERS structure](ns-wdm-_section_object_pointers.md) | The SECTION_OBJECT_POINTERS structure, allocated by a file system or a redirector driver, is used by the memory manager and cache manager to store file-mapping and cache-related information for a file stream. |
-| [_SINGLE_LIST_ENTRY structure](ns-wdm-_single_list_entry.md) | An SLIST_ENTRY structure describes an entry in a sequenced singly linked list. |
+| [_SECURITY_SUBJECT_CONTEXT structure](ns-wdm-_security_subject_context.md) | The SECURITY_SUBJECT_CONTEXT structure is used to capture subject security context for access validation and auditing. |
 | [_SYSTEM_POWER_STATE_CONTEXT structure](ns-wdm-_system_power_state_context.md) | The SYSTEM_POWER_STATE_CONTEXT structure is a partially opaque system structure that contains information about the previous system power states of a computer. |
 | [_TARGET_DEVICE_CUSTOM_NOTIFICATION structure](ns-wdm-_target_device_custom_notification.md) | The TARGET_DEVICE_CUSTOM_NOTIFICATION structure describes a custom device event. |
 | [_TARGET_DEVICE_REMOVAL_NOTIFICATION structure](ns-wdm-_target_device_removal_notification.md) | The TARGET_DEVICE_REMOVAL_NOTIFICATION structure describes a device-removal event. The PnP manager sends this structure to a driver that registered a callback routine for notification of EventCategoryTargetDeviceChange events. |
@@ -1224,6 +1069,8 @@ Wdm.h contain these programming interfaces:
 | [_ENLISTMENT_INFORMATION_CLASS enumeration](ne-wdm-_enlistment_information_class.md) | The ENLISTMENT_INFORMATION_CLASS enumeration identifies the type of information that the ZwSetInformationEnlistment routine can set and that the ZwQueryInformationEnlistment routine can retrieve for an enlistment object. |
 | [_FILE_INFORMATION_CLASS enumeration](ne-wdm-_file_information_class.md) | A value that specifies which structure to use to query or set information for a file object. |
 | [_FSINFOCLASS enumeration](ne-wdm-_fsinfoclass.md) | The FS_INFORMATION_CLASS enumeration contains the information class constants that specify what type of information structure is present for a set or a query operation. |
+| [_IMAGE_POLICY_ENTRY_TYPE enumeration](ne-wdm-_image_policy_entry_type.md) | This enumeration is not supported. |
+| [_IMAGE_POLICY_ID enumeration](ne-wdm-_image_policy_id.md) | This enumeration is not supported. |
 | [_INTERFACE_TYPE enumeration](ne-wdm-_interface_type.md) | The INTERFACE_TYPE enumeration indicates the bus type. |
 | [_IO_ACCESS_MODE enumeration](ne-wdm-_io_access_mode.md) | Defines the types of access mode for Scheduled File I/O (SFIO). |
 | [_IO_ACCESS_TYPE enumeration](ne-wdm-_io_access_type.md) | Defines the access rights for Scheduled File I/O (SFIO). |
@@ -1248,7 +1095,7 @@ Wdm.h contain these programming interfaces:
 | [_MEMORY_CACHING_TYPE enumeration](ne-wdm-_memory_caching_type.md) | The MEMORY_CACHING_TYPE enumeration type specifies the permitted caching behavior when allocating or mapping memory. |
 | [_MONITOR_DISPLAY_STATE enumeration](ne-wdm-_monitor_display_state.md) | Indicates the power state of the monitor being displayed on. |
 | [_PCW_CALLBACK_TYPE enumeration](ne-wdm-_pcw_callback_type.md) | The PCW_CALLBACK_TYPE enumeration defines the notification type to send to the registered provider of the counter set. A provider passes a pointer to this enumeration as a parameter to the PcwCallback function. |
-| [_POOL_TYPE enumeration](ne-wdm-_pool_type~r1.md) | The POOL_TYPE enumeration type specifies the type of system memory to allocate. |
+| [_POOL_TYPE enumeration](ne-wdm-_pool_type.md) | The POOL_TYPE enumeration type specifies the type of system memory to allocate. |
 | [_POWER_REQUEST_TYPE enumeration](ne-wdm-_power_request_type.md) | The POWER_REQUEST_TYPE enumeration indicates the power request type. |
 | [_POWER_STATE_TYPE enumeration](ne-wdm-_power_state_type.md) | The POWER_STATE_TYPE enumeration type indicates that a power state value is a system power state or a device power state. |
 | [_PO_FX_PERF_STATE_TYPE enumeration](ne-wdm-_po_fx_perf_state_type.md) | The PO_FX_PERF_STATE_TYPE enumeration contains values that describe the type of performance states in a PO_FX_COMPONENT_PERF_SET. |
@@ -1269,16 +1116,8 @@ Wdm.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [ASSERTMSG macro](nf-wdm-assertmsg.md) | ASSERTMSG tests an expression. If the expression is false, it breaks into the kernel debugger and sends it the specified message. |
-| [ExAllocatePoolWithQuotaTag macro](nf-wdm-exallocatepoolwithquotatag~r1.md) | The ExAllocatePoolWithQuotaTag routine allocates pool memory, charging the quota against the current process. |
-| [ExAllocatePoolWithTag macro](nf-wdm-exallocatepoolwithtag~r1.md) | The ExAllocatePoolWithTag routine allocates pool memory of the specified type and returns a pointer to the allocated block. |
 | [ExInterlockedAddLargeStatistic macro](nf-wdm-exinterlockedaddlargestatistic.md) | The ExInterlockedAddLargeStatistic routine performs an interlocked addition of a ULONG increment value to a LARGE_INTEGER variable. |
 | [ExInterlockedCompareExchange64 macro](nf-wdm-exinterlockedcompareexchange64.md) | The ExInterlockedCompareExchange64 routine compares one integer variable to another and, if they are equal, sets the first variable to a caller-supplied value. |
-| [ExInterlockedFlushSList macro](nf-wdm-exinterlockedflushslist~r1.md) | The ExInterlockedFlushSList routine atomically removes all entries from a sequenced singly linked list. |
-| [ExInterlockedPopEntrySList macro](nf-wdm-exinterlockedpopentryslist~r1.md) | The ExInterlockedPopEntrySList routine atomically removes the first entry from a sequenced singly linked list. |
-| [ExInterlockedPopEntrySList macro](nf-wdm-exinterlockedpopentryslist~r2.md) | The ExInterlockedPopEntrySList routine atomically removes the first entry from a sequenced singly linked list. |
-| [ExInterlockedPushEntrySList macro](nf-wdm-exinterlockedpushentryslist~r1.md) | The ExInterlockedPushEntrySList routine atomically inserts an entry at the beginning of a sequenced singly linked list. |
-| [ExInterlockedPushEntrySList macro](nf-wdm-exinterlockedpushentryslist~r2.md) | The ExInterlockedPushEntrySList routine atomically inserts an entry at the beginning of a sequenced singly linked list. |
-| [ExQueryDepthSList macro](nf-wdm-exquerydepthslist~r2.md) | The ExQueryDepthSList routine returns the number of entries currently in a given sequenced singly linked list. |
 | [FIELD_OFFSET macro](nf-wdm-field_offset.md) | The FIELD_OFFSET macro returns the byte offset of a named field in a known structure type. |
 | [IoAcquireRemoveLock macro](nf-wdm-ioacquireremovelock.md) | The IoAcquireRemoveLock routine increments the count for a remove lock, indicating that the associated device object should not be detached from the device stack or deleted. |
 | [IoAdjustPagingPathCount macro](nf-wdm-ioadjustpagingpathcount.md) | The IoAdjustPagingPathCount routine increments or decrements a caller-supplied page-file counter as an atomic operation. |
@@ -1290,16 +1129,11 @@ Wdm.h contain these programming interfaces:
 | [IoReleaseRemoveLock macro](nf-wdm-ioreleaseremovelock.md) | The IoReleaseRemoveLock routine releases a remove lock acquired with a previous call to IoAcquireRemoveLock. |
 | [IoReleaseRemoveLockAndWait macro](nf-wdm-ioreleaseremovelockandwait.md) | The IoReleaseRemoveLockAndWait routine releases a remove lock that the driver acquired in a previous call to IoAcquireRemoveLock, and waits until all acquisitions of the lock have been released. |
 | [IoSizeOfIrp macro](nf-wdm-iosizeofirp.md) | The IoSizeOfIrp routine determines the size in bytes for an IRP, given the number of stack locations in the IRP. |
-| [IoWMIDeviceObjectToProviderId macro](nf-wdm-iowmideviceobjecttoproviderid~r1.md) | The IoWMIDeviceObjectToProviderId routine translates the specified device object into the corresponding WMI Provider ID. |
 | [KdBreakPointWithStatus macro](nf-wdm-kdbreakpointwithstatus.md) | The KdBreakPointWithStatus macro breaks into the kernel debugger and sends the value of Status to the debugger. |
 | [KdPrint macro](nf-wdm-kdprint.md) | The KdPrint macro sends a message to the kernel debugger. |
 | [KdPrintEx macro](nf-wdm-kdprintex.md) | The KdPrintEx macro sends a string to the kernel debugger if the conditions you specify are met.A call to KdPrintEx requires double parentheses. |
 | [KeAcquireSpinLock macro](nf-wdm-keacquirespinlock.md) | The KeAcquireSpinLock routine acquires a spin lock so the caller can synchronize access to shared data in a multiprocessor-safe way by raising IRQL. |
-| [KeAcquireSpinLock macro](nf-wdm-keacquirespinlock~r1.md) | The KeAcquireSpinLock routine acquires a spin lock so the caller can synchronize access to shared data in a multiprocessor-safe way by raising IRQL. |
 | [KeAcquireSpinLockAtDpcLevel macro](nf-wdm-keacquirespinlockatdpclevel.md) | The KeAcquireSpinLockAtDpcLevel routine acquires a spin lock when the caller is already running at IRQL &gt;= DISPATCH_LEVEL. |
-| [KeFlushIoBuffers macro](nf-wdm-keflushiobuffers~r4.md) | The KeFlushIoBuffers routine flushes the memory region described by an MDL from caches of all processors. |
-| [KeLowerIrql macro](nf-wdm-kelowerirql~r1.md) | The KeLowerIrql routine restores the IRQL on the current processor to its original value. |
-| [KeQuerySystemTime macro](nf-wdm-kequerysystemtime~r1.md) | The KeQuerySystemTime routine obtains the current system time. |
 | [KeQueryTickCount macro](nf-wdm-kequerytickcount.md) | The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted. |
 | [KeRaiseIrql macro](nf-wdm-keraiseirql.md) | The KeRaiseIrql routine raises the hardware priority to the specified IRQL value, thereby masking off interrupts of equivalent or lower IRQL on the current processor. |
 | [KeReleaseSpinLock macro](nf-wdm-kereleasespinlock.md) | The KeReleaseSpinLock routine releases a spin lock and restores the original IRQL at which the caller was running. |
@@ -1312,14 +1146,10 @@ Wdm.h contain these programming interfaces:
 | [ObReferenceObject macro](nf-wdm-obreferenceobject.md) | The ObReferenceObject routine increments the reference count to the given object. |
 | [ObReferenceObjectWithTag macro](nf-wdm-obreferenceobjectwithtag.md) | The ObReferenceObjectWithTag routine increments the reference count of the specified object, and writes a four-byte tag value to the object to support object reference tracing. |
 | [RtlAnsiStringToUnicodeSize macro](nf-wdm-rtlansistringtounicodesize.md) | The RtlAnsiStringToUnicodeSize routine returns the number of bytes required to hold an ANSI string converted into a Unicode string. |
-| [RtlCheckBit macro](nf-wdm-rtlcheckbit~r1.md) | The RtlCheckBit routine determines whether a particular bit in a given bitmap variable is clear or set. |
 | [RtlCopyMemory macro](nf-wdm-rtlcopymemory.md) | The RtlCopyMemory routine copies the contents of a source memory block to a destination memory block. |
 | [RtlEqualMemory macro](nf-wdm-rtlequalmemory.md) | The RtlEqualMemory routine compares two blocks of memory to determine whether the specified number of bytes are identical. |
 | [RtlFillMemory macro](nf-wdm-rtlfillmemory.md) | The RtlFillMemory routine fills a block of memory with the specified fill value. |
 | [RtlIntPtrToUnicodeString macro](nf-wdm-rtlintptrtounicodestring.md) | The RtlIntPtrToUnicodeString routine converts a specified ULONG_PTR value to a Unicode string that represents the value in a specified base. |
 | [RtlMoveMemory macro](nf-wdm-rtlmovememory.md) | The RtlMoveMemory routine copies the contents of a source memory block to a destination memory block, and supports overlapping source and destination memory blocks. |
-| [RtlUlongByteSwap macro](nf-wdm-rtlulongbyteswap~r1.md) | The RtlUlongByteSwap routine reverses the ordering of the four bytes in a 32-bit unsigned integer value. |
-| [RtlUlonglongByteSwap macro](nf-wdm-rtlulonglongbyteswap~r1.md) | The RtlUlonglongByteSwap routine reverses the ordering of the eight bytes in a 64-bit unsigned integer value. |
 | [RtlUnicodeStringToAnsiSize macro](nf-wdm-rtlunicodestringtoansisize.md) | The RtlUnicodeStringToAnsiSize routine returns the number of bytes required for a null-terminated ANSI string that is equivalent to a specified Unicode string. |
-| [RtlUshortByteSwap macro](nf-wdm-rtlushortbyteswap~r1.md) | The RtlUshortByteSwap routine reverses the ordering of the two bytes in a 16-bit unsigned integer value. |
 | [RtlZeroMemory macro](nf-wdm-rtlzeromemory.md) | The RtlZeroMemory routine fills a block of memory with zeros, given a pointer to the block and the length, in bytes, to be filled. |

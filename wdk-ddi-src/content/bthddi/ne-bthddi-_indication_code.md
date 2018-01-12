@@ -1,5 +1,5 @@
 ---
-UID: NE.bthddi._INDICATION_CODE
+UID: NE:bthddi._INDICATION_CODE
 title: _INDICATION_CODE
 author: windows-driver-content
 description: The INDICATION_CODE enumeration type indicates to a profile driver what type of L2CAP event has occurred.
@@ -7,8 +7,8 @@ old-location: bltooth\indication_code.htm
 old-project: bltooth
 ms.assetid: 7fc374e3-ca5b-476d-bc44-afb28ecf9920
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _INDICATION_CODE, PINDICATION_CODE, *PINDICATION_CODE, INDICATION_CODE
+ms.date: 12/21/2017
+ms.keywords: _INDICATION_CODE, INDICATION_CODE, *PINDICATION_CODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+req.typenames: INDICATION_CODE, *PINDICATION_CODE
 ---
 
 # _INDICATION_CODE enumeration
@@ -86,7 +87,7 @@ Indicates to a server profile driver that a remote device is connecting to the P
      BRB_L2CA_OPEN_CHANNEL_RESPONSE</a> request. When this indication code is passed, the profile driver
      should use the parameters that are passed to it in the 
      <b>Connect</b> member of the 
-     <a href="bltooth.indication_parameters">
+     <a href="..\bthddi\ns-bthddi-_indication_parameters.md">
      INDICATION_PARAMETERS</a> structure.
 
 
@@ -127,7 +128,7 @@ Indicates to a registered profile driver that a packet has been received on the 
      this notification and keep a read BRB pending at all times. When this indication code is passed, the
      profile driver should use the parameters that are passed to it in the 
      <b>RecvPacket</b> member of the 
-     <a href="bltooth.indication_parameters">
+     <a href="..\bthddi\ns-bthddi-_indication_parameters.md">
      INDICATION_PARAMETERS</a> structure.
 
 
@@ -158,7 +159,7 @@ Indicates to a server profile driver that a low energy (LE) remote device is con
      BRB_L2CA_OPEN_CHANNEL_RESPONSE</a> request. When this indication code is passed, the profile driver
      should use the parameters that are passed to it in the 
      <b>Connect</b> member of the 
-     <a href="bltooth.indication_parameters">
+     <a href="..\bthddi\ns-bthddi-_indication_parameters.md">
      INDICATION_PARAMETERS</a> structure. This value is present in Windows 8 and later versions of Windows.
 
 
@@ -199,7 +200,7 @@ Header
 <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
 </dt>
 <dt>
-<a href="bltooth.indication_parameters">INDICATION_PARAMETERS</a>
+<a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
 </dt>
 <dt>
 <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
@@ -212,5 +213,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20INDICATION_CODE enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20INDICATION_CODE enumeration%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

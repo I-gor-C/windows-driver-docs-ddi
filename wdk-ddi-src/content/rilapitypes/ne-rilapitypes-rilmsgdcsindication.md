@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILMSGDCSINDICATION
+UID: NE:rilapitypes.RILMSGDCSINDICATION
 title: RILMSGDCSINDICATION
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmsgdcsindication_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 292f54d6-0555-47d0-97b9-b76e9e08bf78
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMSGDCSINDICATION, RILMSGDCSINDICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMSGDCSINDICATION
 req.product: Windows 10 or later.
 ---
 

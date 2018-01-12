@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlLongAdd
+UID: NF:ntintsafe.RtlLongAdd
 title: RtlLongAdd function
 author: windows-driver-content
 description: Adds two values of type LONG.
@@ -7,7 +7,7 @@ old-location: kernel\rtllongadd.htm
 old-project: kernel
 ms.assetid: E8CF5E74-2EDA-4B27-A9C0-053930FF741D
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlLongAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlLongAdd function

@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSDS3D_BUFFER_CONE_ANGLES
+UID: NS:ksmedia.KSDS3D_BUFFER_CONE_ANGLES
 title: KSDS3D_BUFFER_CONE_ANGLES
 author: windows-driver-content
 description: A KSDS3D_BUFFER_CONE_ANGLES structure specifies the inside and outside cone angles.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 702d3698-396d-4609-a082-74290d2ccb41
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSDS3D_BUFFER_CONE_ANGLES, PKSDS3D_BUFFER_CONE_ANGLES, KSDS3D_BUFFER_CONE_ANGLES, *PKSDS3D_BUFFER_CONE_ANGLES
+ms.keywords: KSDS3D_BUFFER_CONE_ANGLES, KSDS3D_BUFFER_CONE_ANGLES, *PKSDS3D_BUFFER_CONE_ANGLES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSDS3D_BUFFER_CONE_ANGLES, *PKSDS3D_BUFFER_CONE_ANGLES
 ---
 
 # KSDS3D_BUFFER_CONE_ANGLES structure

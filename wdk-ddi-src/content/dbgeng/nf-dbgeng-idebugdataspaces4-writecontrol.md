@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.WriteControl
+UID: NF:dbgeng.IDebugDataSpaces4.WriteControl
 title: IDebugDataSpaces4::WriteControl method
 author: windows-driver-content
 description: The WriteControl method writes implementation-specific system data.
 old-location: debugger\writecontrol.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 0b512c66-7cd8-4605-87d5-13b78d790c8c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::WriteControl, WriteControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::WriteControl method

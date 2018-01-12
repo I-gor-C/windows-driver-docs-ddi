@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlGetEnabledExtendedFeatures
+UID: NF:ntddk.RtlGetEnabledExtendedFeatures
 title: RtlGetEnabledExtendedFeatures function
 author: windows-driver-content
 description: The RtlGetEnabledExtendedFeatures routine returns a mask of extended processor features that are enabled by the system.
@@ -7,7 +7,7 @@ old-location: kernel\rtlgetenabledextendedfeatures.htm
 old-project: kernel
 ms.assetid: c23d3bfd-a83c-4480-b5a1-b057201ea279
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlGetEnabledExtendedFeatures
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntdll.lib (user mode); NtosKrnl.lib (kernel mode); OneCoreUAP.lib on Windows 10
 req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlGetEnabledExtendedFeatures function
@@ -113,7 +114,7 @@ The Intel Sandy Bridge (formerly Gesher) SSE extension.
 
 
 ## -remarks
-Another routine, <a href="kernel.exisprocessorfeaturepresent">ExIsProcessorFeaturePresent</a>, indicates whether an extended processor feature is available. Unlike <b>RtlGetEnabledExtendedFeatures</b>, however, it does not indicate whether the operating system has enabled the feature for use by kernel-mode drivers. 
+Another routine, <a href="..\wdm\nf-wdm-exisprocessorfeaturepresent.md">ExIsProcessorFeaturePresent</a>, indicates whether an extended processor feature is available. Unlike <b>RtlGetEnabledExtendedFeatures</b>, however, it does not indicate whether the operating system has enabled the feature for use by kernel-mode drivers. 
 
 
 ## -requirements
@@ -190,12 +191,12 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exisprocessorfeaturepresent">ExIsProcessorFeaturePresent</a>
+<a href="..\wdm\nf-wdm-exisprocessorfeaturepresent.md">ExIsProcessorFeaturePresent</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlGetEnabledExtendedFeatures routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20RtlGetEnabledExtendedFeatures routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

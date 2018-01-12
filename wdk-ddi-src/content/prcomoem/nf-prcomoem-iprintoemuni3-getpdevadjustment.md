@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUni3.GetPDEVAdjustment
+UID: NF:prcomoem.IPrintOemUni3.GetPDEVAdjustment
 title: IPrintOemUni3::GetPDEVAdjustment method
 author: windows-driver-content
 description: The IPrintOemUni3::GetPDEVAdjustment method enables a plug-in to override specific PDEV settings.
@@ -7,7 +7,7 @@ old-location: print\iprintoemuni3_getpdevadjustment.htm
 old-project: print
 ms.assetid: bb7d7248-9520-4bc8-8483-b05b78608fc7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUni3, IPrintOemUni3::GetPDEVAdjustment, GetPDEVAdjustment
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ HRESULT GetPDEVAdjustment(
 
 ### -param pdevobj 
 
-Pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param dwAdjustType 
@@ -78,7 +79,7 @@ PDEV_ADJUST_GRAPHICS_RESOLUTION_TYPE
 
 </td>
 <td>
-Adjust the graphics resolution setting that is reported in the PDEV structure. For more information, see the <a href="print.pdev_adjust_graphics_resolution">PDEV_ADJUST_GRAPHICS RESOLUTION</a> structure.
+Adjust the graphics resolution setting that is reported in the PDEV structure. For more information, see the <a href="..\printoem\ns-printoem-_pdev_adjust_graphics_resolution.md">PDEV_ADJUST_GRAPHICS RESOLUTION</a> structure.
 
 </td>
 </tr>
@@ -88,7 +89,7 @@ PDEV_IMAGEABLE_ORIGIN_AREA_TYPE
 
 </td>
 <td>
-Adjust the imageable origin area that is reported in the PDEV structure. For more information, see the <a href="print.pdev_adjust_imageable_origin_area">PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA</a> structure.
+Adjust the imageable origin area that is reported in the PDEV structure. For more information, see the <a href="..\printoem\ns-printoem-_pdev_adjust_imageable_origin_area.md">PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA</a> structure.
 
 </td>
 </tr>
@@ -98,7 +99,7 @@ PDEV_ADJUST_PHYSICAL_PAPER_SIZE_TYPE
 
 </td>
 <td>
-Adjust the physical paper size that is reported in the PDEV structure. For more information, see the <a href="print.pdev_adjust_paper_physical_size">PDEV_ADJUST_PAPER_PHYSICAL_SIZE</a> structure.
+Adjust the physical paper size that is reported in the PDEV structure. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559796">PDEV_ADJUST_PAPER_PHYSICAL_SIZE</a> structure.
 
 </td>
 </tr>
@@ -160,27 +161,27 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.pdev_adjust_graphics_resolution">PDEV_ADJUST_GRAPHICS RESOLUTION</a>
+<a href="..\printoem\ns-printoem-_pdev_adjust_graphics_resolution.md">PDEV_ADJUST_GRAPHICS RESOLUTION</a>
 </dt>
 <dt>
-<a href="print.pdev_adjust_imageable_origin_area">PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA</a>
+<a href="..\printoem\ns-printoem-_pdev_adjust_imageable_origin_area.md">PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA</a>
 </dt>
 <dt>
-<a href="print.pdev_adjust_paper_margin">PDEV_ADJUST_PAPER_MARGIN</a>
+<a href="..\printoem\ns-printoem-_pdev_adjust_paper_margin.md">PDEV_ADJUST_PAPER_MARGIN</a>
 </dt>
 <dt>
-<a href="print.pdev_adjust_paper_physical_size">PDEV_ADJUST_PAPER_PHYSICAL_SIZE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559796">PDEV_ADJUST_PAPER_PHYSICAL_SIZE</a>
 </dt>
 <dt>
-<a href="print.pdev_hostfont_enabled">PDEV_HOSTFONT_ENABLED</a>
+<a href="..\printoem\ns-printoem-_pdev_hostfont_enabled.md">PDEV_HOSTFONT_ENABLED</a>
 </dt>
 <dt>
-<a href="print.pdev_use_true_color">PDEV_USE_TRUE_COLOR</a>
+<a href="..\printoem\ns-printoem-_pdev_use_true_color.md">PDEV_USE_TRUE_COLOR</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemUni3::GetPDEVAdjustment method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemUni3::GetPDEVAdjustment method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.WIATWCMP._TWAIN_CAPABILITY
+UID: NS:wiatwcmp._TWAIN_CAPABILITY
 title: _TWAIN_CAPABILITY
 author: windows-driver-content
 description: The TWAIN_CAPABILITY structure holds information used when a TWAIN-compatible application communicates with a WIA driver.
 old-location: image\twain_capability.htm
-old-project: Image
+old-project: image
 ms.assetid: 79a2155d-eb06-4095-9fe6-b95d93e46211
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _TWAIN_CAPABILITY, TWAIN_CAPABILITY, PTWAIN_CAPABILITY, *PTWAIN_CAPABILITY
+ms.date: 1/10/2018
+ms.keywords: _TWAIN_CAPABILITY, *PTWAIN_CAPABILITY, TWAIN_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PTWAIN_CAPABILITY, TWAIN_CAPABILITY
 req.product: Windows 10 or later.
 ---
 

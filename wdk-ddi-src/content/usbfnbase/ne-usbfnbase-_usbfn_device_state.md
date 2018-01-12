@@ -1,14 +1,14 @@
 ---
-UID: NE.usbfnbase._USBFN_DEVICE_STATE
+UID: NE:usbfnbase._USBFN_DEVICE_STATE
 title: _USBFN_DEVICE_STATE
 author: windows-driver-content
 description: Defines the Universal Serial Bus (USB) device states for the device/controller. These states correspond to the USB device states as defined in section 9.1 of the USB 2.0 Specification.
 old-location: buses\usbfn_device_state.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: B367D0F7-5026-4C88-B88A-69068F76B675
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBFN_DEVICE_STATE, *PUSBFN_DEVICE_STATE, PUSBFN_DEVICE_STATE, USBFN_DEVICE_STATE
+ms.date: 1/4/2018
+ms.keywords: _USBFN_DEVICE_STATE, USBFN_DEVICE_STATE, *PUSBFN_DEVICE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: USBFN_DEVICE_STATE, *PUSBFN_DEVICE_STATE
 req.product: Windows 10 or later.
 ---
 

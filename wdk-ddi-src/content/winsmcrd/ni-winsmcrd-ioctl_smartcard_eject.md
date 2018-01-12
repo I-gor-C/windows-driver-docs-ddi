@@ -1,5 +1,5 @@
 ---
-UID: NI.winsmcrd.IOCTL_SMARTCARD_EJECT
+UID: NI:winsmcrd.IOCTL_SMARTCARD_EJECT
 title: IOCTL_SMARTCARD_EJECT
 author: windows-driver-content
 description: The IOCTL_SMARTCARD_EJECT request ejects the currently inserted smart card from the smart card reader.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME
 req.product: Windows 10 or later.
 ---
 

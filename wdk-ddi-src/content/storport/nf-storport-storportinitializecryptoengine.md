@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortInitializeCryptoEngine
+UID: NF:storport.StorPortInitializeCryptoEngine
 title: StorPortInitializeCryptoEngine function
 author: windows-driver-content
 description: Reserved for system use.
@@ -7,7 +7,7 @@ old-location: storage\storportinitializecryptoengine.htm
 old-project: storage
 ms.assetid: 49F4EEA1-BFA6-4A91-8306-E25569C679A6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortInitializeCryptoEngine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 

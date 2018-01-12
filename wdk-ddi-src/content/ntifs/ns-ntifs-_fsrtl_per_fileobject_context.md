@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._FSRTL_PER_FILEOBJECT_CONTEXT
+UID: NS:ntifs._FSRTL_PER_FILEOBJECT_CONTEXT
 title: _FSRTL_PER_FILEOBJECT_CONTEXT
 author: windows-driver-content
 description: The opaque FSRTL_PER_FILEOBJECT_CONTEXT structure is used by the operating system to track file system filter-driver-defined context information structures for a file object.
@@ -7,8 +7,8 @@ old-location: ifsk\fsrtl_per_fileobject_context.htm
 old-project: ifsk
 ms.assetid: f9d6f957-5878-45ca-86a3-1c62f2a52e65
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FSRTL_PER_FILEOBJECT_CONTEXT, *PFSRTL_PER_FILEOBJECT_CONTEXT, FSRTL_PER_FILEOBJECT_CONTEXT, PFSRTL_PER_FILEOBJECT_CONTEXT
+ms.date: 1/9/2018
+ms.keywords: _FSRTL_PER_FILEOBJECT_CONTEXT, FSRTL_PER_FILEOBJECT_CONTEXT, *PFSRTL_PER_FILEOBJECT_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FSRTL_PER_FILEOBJECT_CONTEXT, *PFSRTL_PER_FILEOBJECT_CONTEXT
 ---
 
 # _FSRTL_PER_FILEOBJECT_CONTEXT structure
@@ -57,7 +58,7 @@ typedef struct _FSRTL_PER_FILEOBJECT_CONTEXT {
 
 ### -field Links
 
-Link for this structure in the list of all per-file-object context structures associated with the same file object. <a href="ifsk.fsrtlinsertperfileobjectcontext">FsRtlInsertPerFileObjectContext</a> inserts this member into the list of all per-file-object context structures for the file object.
+Link for this structure in the list of all per-file-object context structures associated with the same file object. <a href="..\ntifs\nf-ntifs-fsrtlinsertperfileobjectcontext.md">FsRtlInsertPerFileObjectContext</a> inserts this member into the list of all per-file-object context structures for the file object.
 
 
 ### -field OwnerId
@@ -77,49 +78,49 @@ Each file object can have one per-file-object context structure list associated 
 
 Each filter-defined per-file-object context structure must include an initialized FSRTL_PER_FILEOBJECT_CONTEXT structure. The FSRTL_PER_FILEOBJECT_CONTEXT structure can be allocated from paged or nonpage pool and must be initialized using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546170">FsRtlInitPerFileObjectContext</a> macro.
 
-To insert a FSRTL_PER_FILEOBJECT_CONTEXT structure or a filter-defined per-file-object context structure (containing an initialized FSRTL_PER_FILEOBJECT_CONTEXT structure) into the list of all context structures for a file object, use the <a href="ifsk.fsrtlinsertperfileobjectcontext">FsRtlInsertPerFileObjectContext</a> function.
+To insert a FSRTL_PER_FILEOBJECT_CONTEXT structure or a filter-defined per-file-object context structure (containing an initialized FSRTL_PER_FILEOBJECT_CONTEXT structure) into the list of all context structures for a file object, use the <a href="..\ntifs\nf-ntifs-fsrtlinsertperfileobjectcontext.md">FsRtlInsertPerFileObjectContext</a> function.
 
-After a FSRTL_PER_FILEOBJECT_CONTEXT or per-file-object context structure has been associated with a file object, it can be retrieved by calling <a href="ifsk.fsrtllookupperfileobjectcontext">FsRtlLookupPerFileObjectContext </a>or removed by calling <a href="ifsk.fsrtlremoveperfileobjectcontext">FsRtlRemovePerFileObjectContext </a>(based upon the values of <b>OwnerId</b> and <b>InstanceId</b>).
+After a FSRTL_PER_FILEOBJECT_CONTEXT or per-file-object context structure has been associated with a file object, it can be retrieved by calling <a href="..\ntifs\nf-ntifs-fsrtllookupperfileobjectcontext.md">FsRtlLookupPerFileObjectContext </a>or removed by calling <a href="..\ntifs\nf-ntifs-fsrtlremoveperfileobjectcontext.md">FsRtlRemovePerFileObjectContext </a>(based upon the values of <b>OwnerId</b> and <b>InstanceId</b>).
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546170">FsRtlInitPerFileObjectContext</a>
 
 
 
-<a href="ifsk.fsrtlinsertperfileobjectcontext">FsRtlInsertPerFileObjectContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtlinsertperfileobjectcontext.md">FsRtlInsertPerFileObjectContext</a>
 
 
 
-<a href="ifsk.fsrtllookupperfileobjectcontext">FsRtlLookupPerFileObjectContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtllookupperfileobjectcontext.md">FsRtlLookupPerFileObjectContext</a>
 
 
 
-<a href="ifsk.fsrtlremoveperfileobjectcontext">FsRtlRemovePerFileObjectContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtlremoveperfileobjectcontext.md">FsRtlRemovePerFileObjectContext</a>
 
 <p class="note">Instead, minifilters can use the following functions to associate context information with a file object:
 
 
-<a href="ifsk.fltallocatecontext">FltAllocateContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 
 
 
-<a href="ifsk.fltdeletecontext">FltDeleteContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
 
 
 
-<a href="ifsk.fltsetstreamhandlecontext">FltSetStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetstreamhandlecontext.md">FltSetStreamHandleContext</a>
 
 
 
-<a href="ifsk.fltdeletestreamhandlecontext">FltDeleteStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
 
 
 
-<a href="ifsk.fltgetstreamhandlecontext">FltGetStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetstreamhandlecontext.md">FltGetStreamHandleContext</a>
 
 
 
-<a href="ifsk.fltreleasecontext">FltReleaseContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff546170">FsRtlInitPerFileObjectContext</a> macro initializes a <b>FSRTL_PER_FILEOBJECT_CONTEXT</b> structure.
@@ -155,48 +156,48 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="kernel.driver_object">DRIVER_OBJECT</a>
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 </dt>
 <dt>
-<a href="kernel.file_object">FILE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocatecontext">FltAllocateContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeletecontext">FltDeleteContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeletestreamhandlecontext">FltDeleteStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetstreamhandlecontext">FltGetStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetstreamhandlecontext.md">FltGetStreamHandleContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltreleasecontext">FltReleaseContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetstreamhandlecontext">FltSetStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetstreamhandlecontext.md">FltSetStreamHandleContext</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546170">FsRtlInitPerFileObjectContext</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlinsertperfileobjectcontext">FsRtlInsertPerFileObjectContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtlinsertperfileobjectcontext.md">FsRtlInsertPerFileObjectContext</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtllookupperfileobjectcontext">FsRtlLookupPerFileObjectContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtllookupperfileobjectcontext.md">FsRtlLookupPerFileObjectContext</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlremoveperfileobjectcontext">FsRtlRemovePerFileObjectContext</a>
+<a href="..\ntifs\nf-ntifs-fsrtlremoveperfileobjectcontext.md">FsRtlRemovePerFileObjectContext</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSRTL_PER_FILEOBJECT_CONTEXT structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSRTL_PER_FILEOBJECT_CONTEXT structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

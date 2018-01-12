@@ -1,13 +1,13 @@
 ---
-UID: NF.vmbuskernelmodeclientlibapi.VmbServerChannelInitSetTargetInterfaceId
+UID: NF:vmbuskernelmodeclientlibapi.VmbServerChannelInitSetTargetInterfaceId
 title: VmbServerChannelInitSetTargetInterfaceId function
 author: windows-driver-content
 description: The VmbServerChannelInitSetTargetInterfaceId function sets the target interface type GUID and instance GUID of the channel offer.
 old-location: netvista\vmbserverchannelinitsettargetinterfaceid.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 09123845-F734-48B6-A593-0368CD195379
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: VmbServerChannelInitSetTargetInterfaceId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES
 req.product: Windows 10 or later.
 ---
 

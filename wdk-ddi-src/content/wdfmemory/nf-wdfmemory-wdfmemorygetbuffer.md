@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfmemory.WdfMemoryGetBuffer
+UID: NF:wdfmemory.WdfMemoryGetBuffer
 title: WdfMemoryGetBuffer function
 author: windows-driver-content
 description: The WdfMemoryGetBuffer method returns a pointer to the buffer that is associated with a specified memory object.
@@ -7,7 +7,7 @@ old-location: wdf\wdfmemorygetbuffer.htm
 old-project: wdf
 ms.assetid: a5044eb5-d619-4adb-a00c-2d01e0311ade
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfMemoryGetBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: Any level
+req.typenames: WDF_MEMORY_DESCRIPTOR_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -76,7 +77,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 ## -remarks
-For more information about framework memory objects, see <a href="wdf.using_memory_buffers">Using Memory Buffers</a>.
+For more information about framework memory objects, see <a href="https://msdn.microsoft.com/f5699837-f1ba-4088-82b3-d7e27341fb46">Using Memory Buffers</a>.
 
 <b>WdfMemoryGetBuffer</b> can be called at any IRQL.
 
@@ -155,7 +156,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_memafterreqcompletedintioctla">MemAfterReqCompletedIntIoctlA</a>, <a href="devtest.kmdf_memafterreqcompletedioctla">MemAfterReqCompletedIoctlA</a>, <a href="devtest.kmdf_memafterreqcompletedreada">MemAfterReqCompletedReadA</a>, <a href="devtest.kmdf_memafterreqcompletedwritea">MemAfterReqCompletedWriteA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549090">MemAfterReqCompletedIntIoctlA</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549106">MemAfterReqCompletedIoctlA</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549116">MemAfterReqCompletedReadA</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549125">MemAfterReqCompletedWriteA</a>
 </td>
 </tr>
 </table>
@@ -163,18 +164,18 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfmemorycreate">WdfMemoryCreate</a>
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreate.md">WdfMemoryCreate</a>
 </dt>
 <dt>
-<a href="wdf.wdfmemorycreatepreallocated">WdfMemoryCreatePreallocated</a>
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatepreallocated.md">WdfMemoryCreatePreallocated</a>
 </dt>
 <dt>
-<a href="wdf.wdfobjectcontextgetobject">WdfObjectContextGetObject</a>
+<a href="..\wdfobject\nf-wdfobject-wdfobjectcontextgetobject.md">WdfObjectContextGetObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfMemoryGetBuffer method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfMemoryGetBuffer method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

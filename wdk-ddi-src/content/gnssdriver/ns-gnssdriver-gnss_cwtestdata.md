@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_CWTESTDATA
+UID: NS:gnssdriver.GNSS_CWTESTDATA
 title: GNSS_CWTESTDATA
 author: windows-driver-content
 description: This structure defines specific data elements associated with carrier wave test results returned from the driver.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 7F1C8574-8891-4ACB-BB25-2666148E3D02
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_CWTESTDATA, PGNSS_CWTESTDATA, GNSS_CWTESTDATA, *PGNSS_CWTESTDATA
+ms.keywords: GNSS_CWTESTDATA, GNSS_CWTESTDATA, *PGNSS_CWTESTDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_CWTESTDATA, *PGNSS_CWTESTDATA
 ---
 
 # GNSS_CWTESTDATA structure

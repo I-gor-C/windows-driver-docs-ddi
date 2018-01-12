@@ -1,5 +1,5 @@
 ---
-UID: NS.UFS.UFS_RPMB_UNIT_DESCRIPTOR
+UID: NS:ufs.UFS_RPMB_UNIT_DESCRIPTOR
 title: UFS_RPMB_UNIT_DESCRIPTOR
 author: windows-driver-content
 description: The UFS_RPMB_UNIT_DESCRIPTOR structure describes the contents of a Replay Protected Memory Block (RBMB) Unit.
@@ -7,8 +7,8 @@ old-location: storage\ufs_rpmb_unit_descriptor.htm
 old-project: storage
 ms.assetid: 19A066BD-1099-475C-BF81-F1BE7C7778E5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: UFS_RPMB_UNIT_DESCRIPTOR, UFS_RPMB_UNIT_DESCRIPTOR, *PUFS_RPMB_UNIT_DESCRIPTOR, PUFS_RPMB_UNIT_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: UFS_RPMB_UNIT_DESCRIPTOR, *PUFS_RPMB_UNIT_DESCRIPTOR, UFS_RPMB_UNIT_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PUFS_RPMB_UNIT_DESCRIPTOR, UFS_RPMB_UNIT_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 

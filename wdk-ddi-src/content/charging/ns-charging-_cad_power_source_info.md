@@ -1,5 +1,5 @@
 ---
-UID: NS.CHARGING._CAD_POWER_SOURCE_INFO
+UID: NS:charging._CAD_POWER_SOURCE_INFO
 title: _CAD_POWER_SOURCE_INFO
 author: windows-driver-content
 description: This structure is for internal use only.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: FF204AC6-0D01-4C19-A852-0CC12095C43C
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CAD_POWER_SOURCE_INFO, *PCAD_POWER_SOURCE_INFO, PCAD_POWER_SOURCE_INFO, CAD_POWER_SOURCE_INFO
+ms.keywords: _CAD_POWER_SOURCE_INFO, *PCAD_POWER_SOURCE_INFO, CAD_POWER_SOURCE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PCAD_POWER_SOURCE_INFO, CAD_POWER_SOURCE_INFO
 ---
 
 # _CAD_POWER_SOURCE_INFO structure

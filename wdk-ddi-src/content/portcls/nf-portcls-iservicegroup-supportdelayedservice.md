@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IServiceGroup.SupportDelayedService
+UID: NF:portcls.IServiceGroup.SupportDelayedService
 title: IServiceGroup::SupportDelayedService method
 author: windows-driver-content
 description: The SupportDelayedService method indicates that the service group should prepare to support delayed service.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IServiceGroup::SupportDelayedService method
@@ -61,7 +62,7 @@ None
 
 
 ## -remarks
-The <code>SupportDelayedService</code> method initializes the notification timer that is used for delayed service. Call this method once before making any calls to <a href="audio.iservicegroup_requestdelayedservice">IServiceGroup::RequestDelayedService</a>.
+The <code>SupportDelayedService</code> method initializes the notification timer that is used for delayed service. Call this method once before making any calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff537003">IServiceGroup::RequestDelayedService</a>.
 
 
 ## -requirements
@@ -106,7 +107,7 @@ IRQL
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
 </dt>
 <dt>
-<a href="audio.iservicegroup_requestdelayedservice">IServiceGroup::RequestDelayedService</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537003">IServiceGroup::RequestDelayedService</a>
 </dt>
 </dl>
  

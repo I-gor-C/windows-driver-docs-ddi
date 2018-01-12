@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDIARG_SETLIGHT
+UID: NS:d3dumddi._D3DDDIARG_SETLIGHT
 title: _D3DDDIARG_SETLIGHT
 author: windows-driver-content
 description: The D3DDDIARG_SETLIGHT structure describes how to set light properties.
@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_setlight.htm
 old-project: display
 ms.assetid: 91da1c7a-aff5-4ece-b18d-14bd41e95464
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDIARG_SETLIGHT, D3DDDIARG_SETLIGHT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDIARG_SETLIGHT
 ---
 
 # _D3DDDIARG_SETLIGHT structure
@@ -74,7 +75,7 @@ D3DDDISETLIGHT_DATA
 
 </td>
 <td>
-Specifies that a pointer to a <a href="display.d3dddi_light">D3DDDI_LIGHT</a> structure that defines light properties is supplied in the <i>pLightProperties</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setlight.md">SetLight</a> function.
+Specifies that a pointer to a <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_light.md">D3DDDI_LIGHT</a> structure that defines light properties is supplied in the <i>pLightProperties</i> parameter in a call to the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setlight.md">SetLight</a> function.
 
 </td>
 </tr>
@@ -133,7 +134,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddi_light">D3DDDI_LIGHT</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_light.md">D3DDDI_LIGHT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setlight.md">SetLight</a>
@@ -143,5 +144,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_SETLIGHT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDIARG_SETLIGHT structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

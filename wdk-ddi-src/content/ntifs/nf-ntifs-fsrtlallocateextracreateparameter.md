@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlAllocateExtraCreateParameter
+UID: NF:ntifs.FsRtlAllocateExtraCreateParameter
 title: FsRtlAllocateExtraCreateParameter function
 author: windows-driver-content
 description: The FsRtlAllocateExtraCreateParameter routine allocates memory for a user-defined extra create parameter (ECP) context structure and generates a pointer to that structure.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlallocateextracreateparameter.htm
 old-project: ifsk
 ms.assetid: 644680a9-ec56-4d65-890f-fbc11badf2b7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlAllocateExtraCreateParameter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlAllocateExtraCreateParameter function
@@ -92,7 +93,7 @@ Optional pointer to a filter-defined cleanup callback routine of type <a href=".
 
 ### -param PoolTag [in]
 
-Specifies the pool tag for the allocated memory. For more information, see the <i>Tag</i> parameter of <a href="kernel.exallocatepoolwithtag">ExAllocatePoolWithTag</a>.
+Specifies the pool tag for the allocated memory. For more information, see the <i>Tag</i> parameter of <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>.
 
 
 ### -param EcpContext [out]
@@ -113,9 +114,9 @@ FltAllocateExtraCreateParameter can return one of the following values:
 
 
 ## -remarks
-By default, the <b>FsRtlAllocateExtraCreateParameter</b> routine allocates paged memory pool for a user-defined ECP context structure.  If the FSRTL_ALLOCATE_ECP_FLAG_NONPAGED_POOL bitmask is used as described in the <i>Flags</i> parameter, a non-paged memory pool is allocated.  After this pool has been allocated and the ECP context structure has been initialized, the <a href="ifsk.fltinsertextracreateparameter">FltInsertExtraCreateParameter</a> routine is used to insert the ECP context structure (ECP list element) into an ECP list structure (<a href="ifsk.ecp_list">ECP_LIST</a>).
+By default, the <b>FsRtlAllocateExtraCreateParameter</b> routine allocates paged memory pool for a user-defined ECP context structure.  If the FSRTL_ALLOCATE_ECP_FLAG_NONPAGED_POOL bitmask is used as described in the <i>Flags</i> parameter, a non-paged memory pool is allocated.  After this pool has been allocated and the ECP context structure has been initialized, the <a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a> routine is used to insert the ECP context structure (ECP list element) into an ECP list structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>).
 
-If the caller allocates ECP_LIST and one or more ECPs are used in a call to <a href="ifsk.iocreatefileex">IoCreateFileEx</a>, the previous description is correct. In this case, the system does not free any of the ECPs, so the caller can make multiple calls to <b>IoCreateFileEx</b> with the same ECP set. However, if a file system or file system filter driver attaches an ECP to an existing or newly-created ECP_LIST while processing an IRP_MJ_CREATE request, this ECP is automatically cleaned up when the IRP completes. As a result, a filter driver does not have to clean up ECPs that are added dynamically. This allows a filter driver's ECP to be properly propagated across the reparse points--a process that can require multiple IRP_MJ_CREATE requests to be generated.
+If the caller allocates ECP_LIST and one or more ECPs are used in a call to <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>, the previous description is correct. In this case, the system does not free any of the ECPs, so the caller can make multiple calls to <b>IoCreateFileEx</b> with the same ECP set. However, if a file system or file system filter driver attaches an ECP to an existing or newly-created ECP_LIST while processing an IRP_MJ_CREATE request, this ECP is automatically cleaned up when the IRP completes. As a result, a filter driver does not have to clean up ECPs that are added dynamically. This allows a filter driver's ECP to be properly propagated across the reparse points--a process that can require multiple IRP_MJ_CREATE requests to be generated.
 
 
 ## -requirements
@@ -189,37 +190,37 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ecp_list">ECP_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540148">ECP_LIST</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocateextracreateparameterlist">FltAllocateExtraCreateParameterList</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterlist.md">FltAllocateExtraCreateParameterList</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocateextracreateparameterfromlookasidelist">FltAllocateExtraCreateParameterFromLookasideList</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocateextracreateparameterfromlookasidelist.md">FltAllocateExtraCreateParameterFromLookasideList</a>
 </dt>
 <dt>
-<a href="ifsk.fltcreatefileex2">FltCreateFileEx2</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a>
 </dt>
 <dt>
-<a href="ifsk.fltfreeextracreateparameter">FltFreeExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameter.md">FltFreeExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltfreeextracreateparameterlist">FltFreeExtraCreateParameterList</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreeextracreateparameterlist.md">FltFreeExtraCreateParameterList</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetecplistfromcallbackdata">FltGetEcpListFromCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetecplistfromcallbackdata.md">FltGetEcpListFromCallbackData</a>
 </dt>
 <dt>
-<a href="ifsk.fltinsertextracreateparameter">FltInsertExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltinsertextracreateparameter.md">FltInsertExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltremoveextracreateparameter">FltRemoveExtraCreateParameter</a>
+<a href="..\fltkernel\nf-fltkernel-fltremoveextracreateparameter.md">FltRemoveExtraCreateParameter</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetecplistintocallbackdata">FltSetEcpListIntoCallbackData</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetecplistintocallbackdata.md">FltSetEcpListIntoCallbackData</a>
 </dt>
 <dt>
-<a href="ifsk.iocreatefileex">IoCreateFileEx</a>
+<a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreateFileEx</a>
 </dt>
 <dt>
 <a href="..\ntifs\nc-ntifs-pfsrtl_extra_create_parameter_cleanup_callback.md">PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK</a>
@@ -229,5 +230,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocateExtraCreateParameter routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlAllocateExtraCreateParameter routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.video.VideoPortQueryPerformanceCounter
+UID: NF:video.VideoPortQueryPerformanceCounter
 title: VideoPortQueryPerformanceCounter function
 author: windows-driver-content
 description: The VideoPortQueryPerformanceCounter function provides the finest-grained running count available in the system.
@@ -7,7 +7,7 @@ old-location: display\videoportqueryperformancecounter.htm
 old-project: display
 ms.assetid: 44e9fca2-54b1-427c-864d-f170a8a26f5e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VideoPortQueryPerformanceCounter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
 req.irql: Any level
+req.typenames: VIDEO_PORT_SERVICES
 req.product: Windows 10 or later.
 ---
 

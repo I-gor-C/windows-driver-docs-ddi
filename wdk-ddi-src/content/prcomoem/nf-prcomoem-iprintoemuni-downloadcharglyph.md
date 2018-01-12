@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUni.DownloadCharGlyph
+UID: NF:prcomoem.IPrintOemUni.DownloadCharGlyph
 title: IPrintOemUni::DownloadCharGlyph method
 author: windows-driver-content
 description: The IPrintOemUni::DownloadCharGlyph method enables a rendering plug-in for Unidrv to send a character glyph for a specified soft font to the printer.
@@ -7,7 +7,7 @@ old-location: print\iprintoemuni_downloadcharglyph.htm
 old-project: print
 ms.assetid: 1ce7ebaa-759e-418a-af07-e530b1102567
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUni, IPrintOemUni::DownloadCharGlyph, DownloadCharGlyph
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -60,12 +61,12 @@ HRESULT DownloadCharGlyph(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param pUFObj 
 
-Caller-supplied pointer to a <a href="print.unifontobj">UNIFONTOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_unifontobj.md">UNIFONTOBJ</a> structure.
 
 
 ### -param hGlyph 
@@ -103,17 +104,17 @@ The <code>IPrintOemUni::DownloadCharGlyph</code> method is used for supporting s
 
 If a rendering plug-in implements the  <code>IPrintOemUni::DownloadCharGlyph</code> method, Unidrv calls the method immediately after sending the command string specified by the CmdSetCharCode command entry, which is contained in the printer's <a href="wdkgloss.g#wdkgloss.generic_printer_description__gpd_#wdkgloss.generic_printer_description__gpd_"><i>GPD</i></a> file. (GPD files are described in <a href="https://msdn.microsoft.com/1f5d68a1-3552-44a9-a0c5-b3ec5fe22a22">Microsoft Universal Printer Driver</a>.) The method should do the following:
 
-Call the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> function to obtain the glyph image specified by <i>hGlyph</i>.
+Call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> function to obtain the glyph image specified by <i>hGlyph</i>.
 
-Call <a href="print.iprintoemdriveruni_drvwritespoolbuf">IPrintOemDriverUni::DrvWriteSpoolBuf</a> to send the glyph to the printer.
+Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff553138">IPrintOemDriverUni::DrvWriteSpoolBuf</a> to send the glyph to the printer.
 
-Call the <a href="print.unifontobj_getinfo">UNIFONTOBJ_GetInfo</a> function again to obtain the glyph's width, then store the width in the address pointed to by <i>pdwWidth</i>. 
+Call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> function again to obtain the glyph's width, then store the width in the address pointed to by <i>pdwWidth</i>. 
 
 Return the amount of printer memory required to store the glyph by placing it in the location specified by <i>pdwResult</i>.
 
-The <code>IPrintOemUni::DownloadCharGlyph</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "DownloadCharGlyph" as input.
+The <code>IPrintOemUni::DownloadCharGlyph</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "DownloadCharGlyph" as input.
 
-If you implement the <code>IPrintOemUni::DownloadCharGlyph</code> method, you must also implement the <a href="print.iprintoemuni_downloadfontheader">IPrintOemUni::DownloadFontHeader</a> method.
+If you implement the <code>IPrintOemUni::DownloadCharGlyph</code> method, you must also implement the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554242">IPrintOemUni::DownloadFontHeader</a> method.
 
 For additional information see <a href="https://msdn.microsoft.com/6e643703-ace1-4660-990c-3a9ca735829d">Customized Font Management</a>.
 

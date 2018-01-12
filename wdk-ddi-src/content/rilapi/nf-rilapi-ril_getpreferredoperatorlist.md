@@ -1,13 +1,13 @@
 ---
-UID: NF.rilapi.RIL_GetPreferredOperatorList
+UID: NF:rilapi.RIL_GetPreferredOperatorList
 title: RIL_GetPreferredOperatorList function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\ril_getpreferredoperatorlist.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bee76337-8349-4e61-9b0c-e525ed001850
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RIL_GetPreferredOperatorList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
 req.product: Windows 10 or later.
 ---
 

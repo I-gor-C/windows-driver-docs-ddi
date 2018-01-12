@@ -1,5 +1,5 @@
 ---
-UID: NE.dmusicks.DMUS_STREAM_TYPE
+UID: NE:dmusicks.DMUS_STREAM_TYPE
 title: DMUS_STREAM_TYPE
 author: windows-driver-content
 description: Used for a DirectMusic synthesizer device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # DMUS_STREAM_TYPE enumeration

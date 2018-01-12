@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CIP_LISTEN
+UID: NS:61883._CIP_LISTEN
 title: _CIP_LISTEN
 author: windows-driver-content
 description: This structure is used for a listen request. The request begins isochronous reception on the specified connection.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 362ABECF-66D3-4B0B-913B-59F7196D6BFD
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CIP_LISTEN, *PCIP_LISTEN, PCIP_LISTEN, CIP_LISTEN
+ms.keywords: _CIP_LISTEN, *PCIP_LISTEN, CIP_LISTEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCIP_LISTEN, CIP_LISTEN
 ---
 
 # _CIP_LISTEN structure

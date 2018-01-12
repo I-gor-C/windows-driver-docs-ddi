@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IImpersonateCallback.OnImpersonate
+UID: NF:wudfddi.IImpersonateCallback.OnImpersonate
 title: IImpersonateCallback::OnImpersonate method
 author: windows-driver-content
 description: The OnImpersonate method handles impersonation.
@@ -7,7 +7,7 @@ old-location: wdf\iimpersonatecallback_onimpersonate.htm
 old-project: wdf
 ms.assetid: 6f06e89c-5298-4335-ab9a-ef69e635152c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IImpersonateCallback, IImpersonateCallback::OnImpersonate, OnImpersonate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -58,7 +59,7 @@ void OnImpersonate(
 
 ### -param Context [in, optional]
 
-A pointer to a context that was previously supplied in the <a href="wdf.iwdfiorequest_impersonate">IWDFIoRequest::Impersonate</a> method. This parameter is optional and can be <b>NULL</b> if a context is not required. 
+A pointer to a context that was previously supplied in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a> method. This parameter is optional and can be <b>NULL</b> if a context is not required. 
 
 
 ## -returns
@@ -70,7 +71,7 @@ Typically, the driver uses this callback to call a Win32 function directly. For 
 
 To ensure that impersonation does not leak across driver callback functions or between device drivers, <b>OnImpersonate</b> should not call any framework methods.
 
-A driver registers the <a href="..\wudfddi\nn-wudfddi-iimpersonatecallback.md">IImpersonateCallback</a> interface when the driver calls the <a href="wdf.iwdfiorequest_impersonate">IWDFIoRequest::Impersonate</a> method. 
+A driver registers the <a href="..\wudfddi\nn-wudfddi-iimpersonatecallback.md">IImpersonateCallback</a> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a> method. 
 
 For more information about how UMDF and UMDF drivers handle impersonation, see <a href="wdf.handling_client_impersonation">Handling Impersonation</a>.
 
@@ -96,12 +97,12 @@ Header
 <a href="..\wudfddi\nn-wudfddi-iimpersonatecallback.md">IImpersonateCallback</a>
 </dt>
 <dt>
-<a href="wdf.iwdfiorequest_impersonate">IWDFIoRequest::Impersonate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IImpersonateCallback::OnImpersonate method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IImpersonateCallback::OnImpersonate method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

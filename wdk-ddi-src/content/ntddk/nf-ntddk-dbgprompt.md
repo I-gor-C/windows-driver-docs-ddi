@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.DbgPrompt
+UID: NF:ntddk.DbgPrompt
 title: DbgPrompt function
 author: windows-driver-content
 description: The DbgPrompt routine displays a caller-specified user prompt string on the kernel debugger's display device and obtains a user response string.
@@ -7,7 +7,7 @@ old-location: devtest\dbgprompt.htm
 old-project: devtest
 ms.assetid: 4bb44aab-7032-4cc7-89e3-6ac3bee233d3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: DbgPrompt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
 req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
 req.irql: <= DIRQL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # DbgPrompt function

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMAllocateSharedMemory
+UID: NF:ndis.NdisMAllocateSharedMemory
 title: NdisMAllocateSharedMemory function
 author: windows-driver-content
 description: NdisMAllocateSharedMemory allocates and maps a host memory range so that the memory range is simultaneously accessible from both the host system and a DMA NIC.
 old-location: netvista\ndismallocatesharedmemory.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 8eda6100-598f-405d-a9b3-74424c829a58
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMAllocateSharedMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMAllocateSharedMemory function
@@ -99,7 +100,7 @@ Microsoft Windows Server 2003, Windows XP Service Pack 1, and later versions of 
     <b>NdisMAllocateSharedMemory</b>. Prior releases allow only bus-master DMA NICs to call 
     <b>NdisMAllocateSharedMemory</b>. In these prior releases, if 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> did not specify that the NIC is a bus master when it called 
-    <a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>, 
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>, 
     <b>NdisMAllocateSharedMemory</b> simply returns control without attempting to make an allocation.
 
 <b>NdisMAllocateSharedMemory</b> provides both the mapped virtual address range that the driver uses to
@@ -141,17 +142,17 @@ A miniport driver that supplies a
     <b>NdisMAllocateSharedMemory</b> for a moderate demand for network transfer operations through the NIC if
     the driver has a 
     <i>MiniportSharedMemoryAllocateComplete</i> function. Such a miniport driver can call 
-    <a href="netvista.ndismallocatesharedmemoryasyncex">
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
     NdisMAllocateSharedMemoryAsyncEx</a> dynamically to allocate more shared memory in periods of heavier
     transfer demand on a NIC. When the high demand for transfers subsides, such a driver calls 
-    <a href="netvista.ndismfreesharedmemory">NdisMFreeSharedMemory</a> to release the
+    <a href="..\ndis\nf-ndis-ndismfreesharedmemory.md">NdisMFreeSharedMemory</a> to release the
     additional memory it allocated. Note that only bus-master DMA NICs can call 
     <b>NdisMAllocateSharedMemoryAsyncEx</b> and export 
     <i>MiniportSharedMemoryAllocateComplete</i>. This functionality is not supported for subordinate DMA
     NICs.
 
 <b>NdisMAllocateSharedMemory</b> and 
-    <a href="netvista.ndismallocatesharedmemoryasyncex">NdisMAllocateSharedMemoryAsyncEx</a> are the only 
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">NdisMAllocateSharedMemoryAsyncEx</a> are the only 
     <b>Ndis<i>Xxx</i></b> functions that can be called to allocate host memory that is shared between the driver, which
     uses virtual addresses, and a NIC, which uses the corresponding logical addresses.
 
@@ -160,7 +161,7 @@ A miniport driver should align the buffers it allocates from shared cached memor
     data-integrity problems in the driver or degrade the driver's (and the system's) I/O performance by
     requiring excessive data-cache flushing to maintain data integrity. 
     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> can call 
-    <a href="netvista.ndismgetdmaalignment">NdisMGetDmaAlignment</a> to determine the
+    <a href="..\ndis\nf-ndis-ndismgetdmaalignment.md">NdisMGetDmaAlignment</a> to determine the
     alignment boundary in the current platform for device-accessible buffers that the driver will set up
     within an allocated range of shared memory.
 
@@ -171,7 +172,7 @@ A miniport driver should set a limit on how much shared memory it can allocate. 
 
 
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> also might call 
-    <a href="netvista.ndissystemprocessorcount">NdisSystemProcessorCount</a> before
+    <a href="..\ndis\nf-ndis-ndissystemprocessorcount.md">NdisSystemProcessorCount</a> before
     it calls 
     <b>NdisMAllocateSharedMemory</b> if the driver writer decides to allocate a larger shared memory block in
     multiprocessor machines on the assumption that any SMP machine is likely to be a network server with
@@ -184,22 +185,22 @@ If its call to
     resources it has already allocated and fail initialization.
 
 If the miniport driver subsequently indicates receives with 
-    <a href="netvista.ndismindicatereceivenetbufferlists">
+    <a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
     NdisMIndicateReceiveNetBufferLists</a>, it must allocate some number of buffer descriptors from buffer
     pool that map the NIC's receive buffers in the shared memory block.
 
 If the allocated memory is cached and, therefore, needs to be flushed on transfers, the miniport
     driver must call 
-    <a href="netvista.ndisallocatemdl">NdisAllocateMdl</a> to allocate an
+    <a href="..\ndis\nf-ndis-ndisallocatemdl.md">NdisAllocateMdl</a> to allocate an
     NDIS_BUFFER-type descriptor for the shared memory range. The miniport driver must call 
-    <a href="kernel.keflushiobuffers">KeFlushIoBuffers</a> with this buffer descriptor
+    <a href="..\wdm\nf-wdm-keflushiobuffers.md">KeFlushIoBuffers</a> with this buffer descriptor
     to perform such a flush.
 
 If a miniport driver calls 
-    <a href="netvista.ndismallocatesharedmemoryasyncex">
+    <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
     NdisMAllocateSharedMemoryAsyncEx</a> or 
     <b>NdisMAllocateSharedMemory</b>, it must release all outstanding allocations with one or more calls to 
-    <a href="netvista.ndismfreesharedmemory">NdisMFreeSharedMemory</a> when a NIC is
+    <a href="..\ndis\nf-ndis-ndismfreesharedmemory.md">NdisMFreeSharedMemory</a> when a NIC is
     removed, that is, when its 
     <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> function is called.
 
@@ -274,38 +275,38 @@ PASSIVE_LEVEL
    MiniportSharedMemoryAllocateComplete</a>
 </dt>
 <dt>
-<a href="kernel.keflushiobuffers">KeFlushIoBuffers</a>
+<a href="..\wdm\nf-wdm-keflushiobuffers.md">KeFlushIoBuffers</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatemdl">NdisAllocateMdl</a>
+<a href="..\ndis\nf-ndis-ndisallocatemdl.md">NdisAllocateMdl</a>
 </dt>
 <dt>
-<a href="netvista.ndismallocatenetbuffersglist">NdisMAllocateNetBufferSGList</a>
+<a href="..\ndis\nf-ndis-ndismallocatenetbuffersglist.md">NdisMAllocateNetBufferSGList</a>
 </dt>
 <dt>
-<a href="netvista.ndismallocatesharedmemoryasyncex">
+<a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
    NdisMAllocateSharedMemoryAsyncEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismfreesharedmemory">NdisMFreeSharedMemory</a>
+<a href="..\ndis\nf-ndis-ndismfreesharedmemory.md">NdisMFreeSharedMemory</a>
 </dt>
 <dt>
-<a href="netvista.ndismgetdmaalignment">NdisMGetDmaAlignment</a>
+<a href="..\ndis\nf-ndis-ndismgetdmaalignment.md">NdisMGetDmaAlignment</a>
 </dt>
 <dt>
-<a href="netvista.ndismindicatereceivenetbufferlists">
+<a href="..\ndis\nf-ndis-ndismindicatereceivenetbufferlists.md">
    NdisMIndicateReceiveNetBufferLists</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
-<a href="netvista.ndissystemprocessorcount">NdisSystemProcessorCount</a>
+<a href="..\ndis\nf-ndis-ndissystemprocessorcount.md">NdisSystemProcessorCount</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMAllocateSharedMemory function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMAllocateSharedMemory function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

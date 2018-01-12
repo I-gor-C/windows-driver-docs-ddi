@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2CustomReceiveTransactionNewDataNotification
+UID: NF:sercx.SerCx2CustomReceiveTransactionNewDataNotification
 title: SerCx2CustomReceiveTransactionNewDataNotification function
 author: windows-driver-content
 description: The SerCx2CustomReceiveTransactionNewDataNotification method notifies version 2 of the serial framework extension (SerCx2) that data is available to be read from the receive FIFO in the serial controller hardware.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID SerCx2CustomReceiveTransactionNewDataNotification(
 
 ### -param CustomReceiveTransaction [in]
 
-A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a> handle to a custom-receive object. The serial controller driver previously called the <a href="serports.sercx2customreceivetransactioncreate">SerCx2CustomReceiveTransactionCreate</a> method to create this object.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a> handle to a custom-receive object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a> method to create this object.
 
 
 ## -returns
@@ -64,13 +65,13 @@ None.
 
 
 ## -remarks
-If the receive FIFO in the serial controller becomes empty before a custom-receive transaction can be completed, SerCx2 calls the <a href="serports.evtsercx2customreceivetransactionenablenewdatanotification">EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</a> event callback function, if it is implemented, to enable a new-data notification to occur when new data is available to be read from the receive FIFO.
+If the receive FIFO in the serial controller becomes empty before a custom-receive transaction can be completed, SerCx2 calls the <a href="https://msdn.microsoft.com/C3E446AB-17AA-4FD8-8245-16D95134B0E7">EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</a> event callback function, if it is implemented, to enable a new-data notification to occur when new data is available to be read from the receive FIFO.
 
 If new-data notifications are enabled and new data is available to be read, the serial controller driver must call <b>SerCx2CustomReceiveTransactionNewDataNotification</b> to notify SerCx2. This notification occurs when the driver detects that one or more new bytes of received data either are ready to be transferred by the custom data-transfer mechanism or have already been transferred by this mechanism.
 
 The serial controller driver must call <b>SerCx2CustomReceiveTransactionNewDataNotification</b> only in response to a call to the <i>EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</i> function.
 
-If a serial controller driver supports new-data notifications for custom-receive transactions, SerCx uses these notifications to detect interval time-outs during the handling of read (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>) requests. For more information about interval time-outs, see <a href="serports.serial_timeouts">SERIAL_TIMEOUTS</a>. For more information about new-data notifications, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C-BE91-405A4BA2D5B0">SerCx2 Custom-Receive Transactions</a>.
+If a serial controller driver supports new-data notifications for custom-receive transactions, SerCx uses these notifications to detect interval time-outs during the handling of read (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>) requests. For more information about interval time-outs, see <a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>. For more information about new-data notifications, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C-BE91-405A4BA2D5B0">SerCx2 Custom-Receive Transactions</a>.
 
 
 ## -requirements
@@ -122,7 +123,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="serports.evtsercx2customreceivetransactionenablenewdatanotification">EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</a>
+<a href="https://msdn.microsoft.com/C3E446AB-17AA-4FD8-8245-16D95134B0E7">EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
@@ -131,10 +132,10 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
 </dt>
 <dt>
-<a href="serports.sercx2customreceivetransactioncreate">SerCx2CustomReceiveTransactionCreate</a>
+<a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
 </dt>
 <dt>
-<a href="serports.serial_timeouts">SERIAL_TIMEOUTS</a>
+<a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>
 </dt>
 </dl>
  

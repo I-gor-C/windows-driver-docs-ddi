@@ -1,5 +1,5 @@
 ---
-UID: NE.video.VIDEO_PORT_SERVICES
+UID: NE:video.VIDEO_PORT_SERVICES
 title: VIDEO_PORT_SERVICES
 author: windows-driver-content
 description: The VIDEO_PORT_SERVICES enumerated type lists the interfaces that the video miniport driver can request from the video port driver by calling VideoPortQueryServices.
@@ -7,7 +7,7 @@ old-location: display\video_port_services.htm
 old-project: display
 ms.assetid: 3ca53536-e847-4c11-a28d-e046e8a392de
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VIDEO_PORT_SERVICES, VIDEO_PORT_SERVICES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VIDEO_PORT_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The VIDEO_PORT_SERVICES enumerated type lists the interfaces that the video miniport driver can request from the video port driver by calling <a href="display.videoportqueryservices">VideoPortQueryServices</a>.
+The VIDEO_PORT_SERVICES enumerated type lists the interfaces that the video miniport driver can request from the video port driver by calling <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>.
 
 
 
@@ -119,24 +120,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.agp_functions_implemented_by_the_video_port_driver">AGP Functions Implemented by the Video Port Driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538227">AGP Functions Implemented by the Video Port Driver</a>
 </dt>
 <dt>
-<a href="display.i2c_functions_implemented_by_the_video_port_driver">I2C Functions Implemented by the Video Port Driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567384">I2C Functions Implemented by the Video Port Driver</a>
 </dt>
 <dt>
-<a href="display.int10_functions_implemented_by_the_video_port_driver">Int10 Functions Implemented by the Video Port Driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567732">Int10 Functions Implemented by the Video Port Driver</a>
 </dt>
 <dt>
-<a href="display.debug_report_functions_implemented_by_the_video_port_driver">Debug Report Functions Implemented by the Video Port Driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551792">Debug Report Functions Implemented by the Video Port Driver</a>
 </dt>
 <dt>
-<a href="display.videoportqueryservices">VideoPortQueryServices</a>
+<a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_PORT_SERVICES enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VIDEO_PORT_SERVICES enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

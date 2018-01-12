@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMTHK._D3DKMT_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
+UID: NS:d3dkmthk._D3DKMT_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
 title: _D3DKMT_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
 author: windows-driver-content
 description: A structure holding information to submit a signal to the hardware queue.
@@ -7,7 +7,7 @@ old-location: display\d3dkmt_submitsignalsyncobjectstohwqueue.htm
 old-project: display
 ms.assetid: BD192367-4960-4FD9-867F-02263AC93A61
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMT_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE, D3DKMT_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMT_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE
 ---
 
 # _D3DKMT_SUBMITSIGNALSYNCOBJECTSTOHWQUEUE structure

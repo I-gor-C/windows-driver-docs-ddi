@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._BUS_RESET_NOTIFY
+UID: NS:61883._BUS_RESET_NOTIFY
 title: _BUS_RESET_NOTIFY
 author: windows-driver-content
 description: This structure is used to register or deregister the PBUS_RESET_ROUTINE callback.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 9CF14B12-D94F-486D-A5FC-E7CC2730D8E9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _BUS_RESET_NOTIFY, PBUS_RESET_NOTIFY, BUS_RESET_NOTIFY, *PBUS_RESET_NOTIFY
+ms.keywords: _BUS_RESET_NOTIFY, BUS_RESET_NOTIFY, *PBUS_RESET_NOTIFY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: BUS_RESET_NOTIFY, *PBUS_RESET_NOTIFY
 ---
 
 # _BUS_RESET_NOTIFY structure

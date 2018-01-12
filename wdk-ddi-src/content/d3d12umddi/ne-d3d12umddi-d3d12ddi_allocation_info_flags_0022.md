@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_ALLOCATION_INFO_FLAGS_0022
+UID: NE:d3d12umddi.D3D12DDI_ALLOCATION_INFO_FLAGS_0022
 title: D3D12DDI_ALLOCATION_INFO_FLAGS_0022
 author: windows-driver-content
 description: Contains allocation information flags.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_allocation_info_flags_0022.htm
 old-project: display
 ms.assetid: DE3C133C-C1A9-4735-B1C4-9F6E791845A1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_ALLOCATION_INFO_FLAGS_0022, D3D12DDI_ALLOCATION_INFO_FLAGS_0022
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_ALLOCATION_INFO_FLAGS_0022
 ---
 
 # D3D12DDI_ALLOCATION_INFO_FLAGS_0022 enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDVDEO._DXGK_WIN32K_PARAM_DATA
+UID: NS:ntddvdeo._DXGK_WIN32K_PARAM_DATA
 title: _DXGK_WIN32K_PARAM_DATA
 author: windows-driver-content
 description: The DXGK_WIN32K_PARAM_DATA structure is reserved for system use.
@@ -7,8 +7,8 @@ old-location: display\dxgk_win32k_param_data.htm
 old-project: display
 ms.assetid: a6bb2127-64f7-402d-906e-199d5ec1b313
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_WIN32K_PARAM_DATA, *PDXGK_WIN32K_PARAM_DATA, DXGK_WIN32K_PARAM_DATA, PDXGK_WIN32K_PARAM_DATA
+ms.date: 12/29/2017
+ms.keywords: _DXGK_WIN32K_PARAM_DATA, DXGK_WIN32K_PARAM_DATA, *PDXGK_WIN32K_PARAM_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_WIN32K_PARAM_DATA, *PDXGK_WIN32K_PARAM_DATA
 ---
 
 # _DXGK_WIN32K_PARAM_DATA structure

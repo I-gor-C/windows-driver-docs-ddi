@@ -1,14 +1,14 @@
 ---
-UID: NS.USBSCAN._USBSCAN_TIMEOUT
+UID: NS:usbscan._USBSCAN_TIMEOUT
 title: _USBSCAN_TIMEOUT
 author: windows-driver-content
 description: The USBSCAN_TIMEOUT structure stores time-out values for USB bulk IN and bulk OUT operations, and interrupts.
 old-location: image\usbscan_timeout.htm
-old-project: Image
+old-project: image
 ms.assetid: afa900fc-7297-425b-8308-18806d7d97d3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBSCAN_TIMEOUT, PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT, *PUSBSCAN_TIMEOUT
+ms.date: 1/10/2018
+ms.keywords: _USBSCAN_TIMEOUT, *PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT
 req.product: Windows 10 or later.
 ---
 
@@ -74,7 +75,7 @@ Specifies the number of seconds to wait for an interrupt to occur.
 ## -remarks
 A value of zero means to wait forever for the read or write operation or interrupt.
 
-The USBSCAN_TIMEOUT structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_set_timeout.md">IOCTL_SET_TIMEOUT</a>.
+The USBSCAN_TIMEOUT structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_set_timeout.md">IOCTL_SET_TIMEOUT</a>.
 
 
 ## -requirements
@@ -102,5 +103,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20USBSCAN_TIMEOUT structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20USBSCAN_TIMEOUT structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.charging._POWERSOURCEID
+UID: NE:charging._POWERSOURCEID
 title: _POWERSOURCEID
 author: windows-driver-content
 description: This enum is for internal use only.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: AC6E3447-2E7E-41EC-AC04-CAB46F826095
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID, PPOWERSOURCEID
+ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PPOWERSOURCEID, POWERSOURCEID
 ---
 
 # _POWERSOURCEID enumeration

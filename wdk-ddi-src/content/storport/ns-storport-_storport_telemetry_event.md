@@ -1,5 +1,5 @@
 ---
-UID: NS.STORPORT._STORPORT_TELEMETRY_EVENT
+UID: NS:storport._STORPORT_TELEMETRY_EVENT
 title: _STORPORT_TELEMETRY_EVENT
 author: windows-driver-content
 description: The STORPORT_TELEMETRY_EVENT structure describes the miniport telemetry data payload.
@@ -7,8 +7,8 @@ old-location: storage\storport_telemetry_event.htm
 old-project: storage
 ms.assetid: 50A3EB6D-C485-4C04-8E88-9BD7D7ED0A62
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT, PSTORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT
+ms.date: 1/10/2018
+ms.keywords: _STORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT
 req.product: Windows 10 or later.
 ---
 
@@ -235,12 +236,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.storportlogtelemetry">StorPortLogTelemetry</a>
+<a href="..\storport\nf-storport-storportlogtelemetry.md">StorPortLogTelemetry</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORPORT_TELEMETRY_EVENT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STORPORT_TELEMETRY_EVENT structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

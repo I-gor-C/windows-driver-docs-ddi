@@ -1,5 +1,5 @@
 ---
-UID: NI.bthioctl.IOCTL_BTH_SDP_CONNECT
+UID: NI:bthioctl.IOCTL_BTH_SDP_CONNECT
 title: IOCTL_BTH_SDP_CONNECT
 author: windows-driver-content
 description: The IOCTL_BTH_SDP_CONNECT request creates a connection to the SDP service on a remote Bluetooth device.
@@ -7,8 +7,8 @@ old-location: bltooth\ioctl_bth_sdp_connect.htm
 old-project: bltooth
 ms.assetid: 8bfe92c9-6049-4d68-80a9-3a8f8dda3bcc
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, PHFP_BYPASS_CODEC_ID_V1
+ms.date: 12/21/2017
+ms.keywords: _HFP_BYPASS_CODEC_ID_V1, HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_BTH_SDP_CONNECT IOCTL
@@ -54,13 +55,13 @@ The IOCTL_BTH_SDP_CONNECT request creates a connection to the SDP service on a r
 ### -input-buffer
 The 
       <b>AssociatedIrp.SystemBuffer</b> member contains a 
-      <a href="bltooth.bth_sdp_connect">BTH_SDP_CONNECT</a> structure that specifies
+      <a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNECT</a> structure that specifies
       the address of the remote SDP server, the request's timeout setting, and other information specific to
       the connection.
 
 
 ### -input-buffer-length
-Length of a <a href="bltooth.bth_sdp_connect">BTH_SDP_CONNECT</a> structure.
+Length of a <a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNECT</a> structure.
 
 
 ### -output-buffer
@@ -70,7 +71,7 @@ The
 
 
 ### -output-buffer-length
-Length of a <a href="bltooth.bth_sdp_connect">BTH_SDP_CONNECT</a> structure.
+Length of a <a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNECT</a> structure.
 
 
 ### -in-out-buffer
@@ -165,7 +166,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="bltooth.bth_sdp_connect">BTH_SDP_CONNECT</a>
+<a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNECT</a>
 </dt>
 <dt>
 <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_disconnect.md">IOCTL_BTH_SDP_DISCONNECT</a>
@@ -175,5 +176,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20IOCTL_BTH_SDP_CONNECT control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20IOCTL_BTH_SDP_CONNECT control code%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

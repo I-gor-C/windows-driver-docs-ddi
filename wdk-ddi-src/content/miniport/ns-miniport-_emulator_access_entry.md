@@ -1,5 +1,5 @@
 ---
-UID: NS.MINIPORT._EMULATOR_ACCESS_ENTRY
+UID: NS:miniport._EMULATOR_ACCESS_ENTRY
 title: _EMULATOR_ACCESS_ENTRY
 author: windows-driver-content
 description: The EMULATOR_ACCESS_ENTRY structure specifies an element in the EmulatorAccessEntries array set up in the VIDEO_PORT_CONFIG_INFO structure by drivers of VGA-compatible (SVGA) adapters on x86-based NT-based operating system platforms.
@@ -7,8 +7,8 @@ old-location: display\emulator_access_entry.htm
 old-project: display
 ms.assetid: 966922b6-fa83-491e-bf03-848f798ebc69
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _EMULATOR_ACCESS_ENTRY, PEMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY, *PEMULATOR_ACCESS_ENTRY
+ms.date: 12/29/2017
+ms.keywords: _EMULATOR_ACCESS_ENTRY, *PEMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: *PEMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY
 ---
 
 # _EMULATOR_ACCESS_ENTRY structure
@@ -121,24 +122,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.video_access_range">VIDEO_ACCESS_RANGE</a>
+<a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a>
 </dt>
 <dt>
-<a href="display.video_port_config_info">VIDEO_PORT_CONFIG_INFO</a>
+<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
 </dt>
 <dt>
-<a href="display.videoportgetaccessranges">VideoPortGetAccessRanges</a>
+<a href="..\video\nf-video-videoportgetaccessranges.md">VideoPortGetAccessRanges</a>
 </dt>
 <dt>
-<a href="display.videoportsettrappedemulatorports">VideoPortSetTrappedEmulatorPorts</a>
+<a href="..\video\nf-video-videoportsettrappedemulatorports.md">VideoPortSetTrappedEmulatorPorts</a>
 </dt>
 <dt>
-<a href="display.videoportverifyaccessranges">VideoPortVerifyAccessRanges</a>
+<a href="..\video\nf-video-videoportverifyaccessranges.md">VideoPortVerifyAccessRanges</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20EMULATOR_ACCESS_ENTRY structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20EMULATOR_ACCESS_ENTRY structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

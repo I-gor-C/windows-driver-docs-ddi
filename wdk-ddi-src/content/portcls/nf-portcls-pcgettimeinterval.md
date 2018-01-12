@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcGetTimeInterval
+UID: NF:portcls.PcGetTimeInterval
 title: PcGetTimeInterval function
 author: windows-driver-content
 description: The PcGetTimeInterval function returns the time elapsed since a specified time. Time is measured in 100-nanosecond units.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: Any level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcGetTimeInterval function
@@ -63,7 +64,7 @@ Specifies the time from which to measure the interval. Typically, this function 
 
 
 ## -remarks
-The value that is specified in parameter <i>Since</i> is measured in 100-nanosecond units. If <i>Since</i> is zero, the time returned is the number of 100-nanosecond ticks since January 1, 1601. The time units are the same as those used to specify the system time in the <a href="kernel.kequerysystemtime">KeQuerySystemTime</a> function.
+The value that is specified in parameter <i>Since</i> is measured in 100-nanosecond units. If <i>Since</i> is zero, the time returned is the number of 100-nanosecond ticks since January 1, 1601. The time units are the same as those used to specify the system time in the <a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a> function.
 
 The following macros from portcls.h are useful for converting seconds, milliseconds, and microseconds to 100-millisecond units:
 
@@ -138,7 +139,7 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.kequerysystemtime">KeQuerySystemTime</a>
+<a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
 </dt>
 </dl>
  

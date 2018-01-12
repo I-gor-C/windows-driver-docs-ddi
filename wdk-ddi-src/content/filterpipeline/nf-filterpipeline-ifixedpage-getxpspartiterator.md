@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IFixedPage.GetXpsPartIterator
+UID: NF:filterpipeline.IFixedPage.GetXpsPartIterator
 title: IFixedPage::GetXpsPartIterator method
 author: windows-driver-content
 description: The GetXpsPartIterator method gets an iterator to enumerate all of the parts that are associated with the page.
@@ -7,7 +7,7 @@ old-location: print\ifixedpage_getxpspartiterator.htm
 old-project: print
 ms.assetid: c4605d9c-b12c-4056-bf19-a67df3ef8c8b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IFixedPage, IFixedPage::GetXpsPartIterator, GetXpsPartIterator
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IFixedPage::GetXpsPartIterator method

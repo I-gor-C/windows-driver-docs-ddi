@@ -1,5 +1,5 @@
 ---
-UID: NC.usbcamdi.PCAM_PROCESS_PACKET_ROUTINE_EX
+UID: NC:usbcamdi.PCAM_PROCESS_PACKET_ROUTINE_EX
 title: PCAM_PROCESS_PACKET_ROUTINE_EX
 author: windows-driver-content
 description: A camera minidriver's CamProcessUSBPacketEx callback function processes a USB packet.
@@ -7,8 +7,8 @@ old-location: stream\camprocessusbpacketex.htm
 old-project: stream
 ms.assetid: 9f69b2f0-6e55-440f-98ab-35d8faddf933
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3, PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3
+ms.date: 1/9/2018
+ms.keywords: _USB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product: Windows 10 or later.
 ---
 
@@ -83,7 +84,7 @@ Pointer to the camera minidriver's frame context.
 
 ### -param SyncPacket 
 
-Pointer to a <a href="buses.usbd_iso_packet_descriptor">USBD_ISO_PACKET_DESCRIPTOR</a> structure from the sync pipe. This value is <b>NULL</b> if the interface has only one pipe.
+Pointer to a <a href="..\usb\ns-usb-_usbd_iso_packet_descriptor.md">USBD_ISO_PACKET_DESCRIPTOR</a> structure from the sync pipe. This value is <b>NULL</b> if the interface has only one pipe.
 
 
 ### -param SyncBuffer 
@@ -159,7 +160,7 @@ This function returns the number of bytes that should be copied.
 
 
 ## -remarks
-The minidriver should complete its <b>CamProcessUSBPacketEx</b> function as quickly as possible. Image processing should be deferred to the <a href="stream.camprocessrawvideoframeex">CamProcessRawVideoFrameEx</a> function.
+The minidriver should complete its <b>CamProcessUSBPacketEx</b> function as quickly as possible. Image processing should be deferred to the <a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine_ex.md">CamProcessRawVideoFrameEx</a> function.
 
 This callback function is used with isochronous pipes only (video or still streaming).
 
@@ -207,15 +208,15 @@ DISPATCH_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbd_iso_packet_descriptor">USBD_ISO_PACKET_DESCRIPTOR</a>
+<a href="..\usb\ns-usb-_usbd_iso_packet_descriptor.md">USBD_ISO_PACKET_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="stream.camprocessrawvideoframeex">CamProcessRawVideoFrameEx</a>
+<a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine_ex.md">CamProcessRawVideoFrameEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20CamProcessUSBPacketEx routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20PCAM_PROCESS_PACKET_ROUTINE_EX routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

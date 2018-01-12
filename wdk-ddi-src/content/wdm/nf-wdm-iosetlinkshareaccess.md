@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoSetLinkShareAccess
+UID: NF:wdm.IoSetLinkShareAccess
 title: IoSetLinkShareAccess function
 author: windows-driver-content
 description: The IoSetLinkShareAccess routine sets the access rights for link sharing the specified file object.
@@ -7,7 +7,7 @@ old-location: kernel\iosetlinkshareaccess.htm
 old-project: kernel
 ms.assetid: 206D74F6-09D5-4C04-8A0A-A7765E64BB27
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoSetLinkShareAccess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: 
 req.irql: 
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -95,7 +96,7 @@ A pointer to the common share-access data structure that is associated with <i>F
 
 ### -param LinkShareAccess [in, out, optional]
 
-A pointer to the common link share-access data structure (<a href="kernel.link_share_access">LINK_SHARE_ACCESS</a>) that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.
+A pointer to the common link share-access data structure (<a href="..\wdm\ns-wdm-_link_share_access.md">LINK_SHARE_ACCESS</a>) that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.
 
 
 ### -param IoShareAccessFlags [in]
@@ -176,18 +177,18 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iochecklinkshareaccess">IoCheckLinkShareAccess</a>
+<a href="..\wdm\nf-wdm-iochecklinkshareaccess.md">IoCheckLinkShareAccess</a>
 </dt>
 <dt>
-<a href="kernel.ioupdatelinkshareaccess">IoUpdateLinkShareAccess</a>
+<a href="..\wdm\nf-wdm-ioupdatelinkshareaccess.md">IoUpdateLinkShareAccess</a>
 </dt>
 <dt>
-<a href="kernel.ioremovelinkshareaccess">IoRemoveLinkShareAccess</a>
+<a href="..\wdm\nf-wdm-ioremovelinkshareaccess.md">IoRemoveLinkShareAccess</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoSetLinkShareAccess function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoSetLinkShareAccess function%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.UFS.UFS_UNIT_CONFIG_DESCRIPTOR
+UID: NS:ufs.UFS_UNIT_CONFIG_DESCRIPTOR
 title: UFS_UNIT_CONFIG_DESCRIPTOR
 author: windows-driver-content
 description: The UFS_UNIT_CONFIG_DESCRIPTOR structure describes the user configurable parameters within the UFS_CONFIG_DESCRIPTOR.
@@ -7,8 +7,8 @@ old-location: storage\ufs_unit_config_descriptor.htm
 old-project: storage
 ms.assetid: 09CBAD0A-CBDC-464E-908C-BF142D515969
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: UFS_UNIT_CONFIG_DESCRIPTOR, UFS_UNIT_CONFIG_DESCRIPTOR, *PUFS_UNIT_CONFIG_DESCRIPTOR, PUFS_UNIT_CONFIG_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: UFS_UNIT_CONFIG_DESCRIPTOR, *PUFS_UNIT_CONFIG_DESCRIPTOR, UFS_UNIT_CONFIG_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PUFS_UNIT_CONFIG_DESCRIPTOR, UFS_UNIT_CONFIG_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 

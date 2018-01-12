@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILMESSAGETYPE
+UID: NE:ntddrilapitypes.RILMESSAGETYPE
 title: RILMESSAGETYPE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessagetype.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 02960e7c-f1b2-4c28-9f9b-f180df3d9563
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMESSAGETYPE, RILMESSAGETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMESSAGETYPE
 ---
 
 # RILMESSAGETYPE enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:hdaudio
 ---
 
 # Hdaudio.h header

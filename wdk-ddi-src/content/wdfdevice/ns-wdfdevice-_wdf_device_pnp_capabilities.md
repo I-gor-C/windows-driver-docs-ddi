@@ -1,5 +1,5 @@
 ---
-UID: NS.WDFDEVICE._WDF_DEVICE_PNP_CAPABILITIES
+UID: NS:wdfdevice._WDF_DEVICE_PNP_CAPABILITIES
 title: _WDF_DEVICE_PNP_CAPABILITIES
 author: windows-driver-content
 description: The WDF_DEVICE_PNP_CAPABILITIES structure describes a device's Plug and Play capabilities.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_pnp_capabilities.htm
 old-project: wdf
 ms.assetid: 0857e32e-9962-44ca-9d61-b98b09073c16
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_DEVICE_PNP_CAPABILITIES, WDF_DEVICE_PNP_CAPABILITIES, PWDF_DEVICE_PNP_CAPABILITIES, *PWDF_DEVICE_PNP_CAPABILITIES
+ms.date: 12/29/2017
+ms.keywords: _WDF_DEVICE_PNP_CAPABILITIES, WDF_DEVICE_PNP_CAPABILITIES, *PWDF_DEVICE_PNP_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDF_DEVICE_PNP_CAPABILITIES, *PWDF_DEVICE_PNP_CAPABILITIES
 req.product: Windows 10 or later.
 ---
 
@@ -74,7 +75,7 @@ The size, in bytes, of this structure.
 
 ### -field LockSupported
 
-A <a href="wdf.wdf_tri_state">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can be locked in its slot to prevent ejection. (This capability disables ejecting a device from its slot, not ejecting media from a device.) For more information about WDF_TRI_STATE-typed values, see the following Remarks section.  
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that indicates, if set to <b>WdfTrue</b>, that the device can be locked in its slot to prevent ejection. (This capability disables ejecting a device from its slot, not ejecting media from a device.) For more information about WDF_TRI_STATE-typed values, see the following Remarks section.  
 
 
 ### -field EjectSupported
@@ -94,7 +95,7 @@ A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the d
 
 ### -field UniqueID
 
-A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device's instance ID is unique to the entire system. If <b>UniqueID</b> is set to <b>WdfFalse</b>, the instance ID is unique only to the device's bus. For more information about instance IDs, see <a href="devinst.device_identification_strings">Device Identification Strings</a>.
+A WDF_TRI_STATE-typed value that indicates, if set to <b>WdfTrue</b>, that the device's instance ID is unique to the entire system. If <b>UniqueID</b> is set to <b>WdfFalse</b>, the instance ID is unique only to the device's bus. For more information about instance IDs, see <a href="https://msdn.microsoft.com/dae23185-63d9-4a0f-9786-c7fa66368826">Device Identification Strings</a>.
 
 
 ### -field SilentInstall
@@ -176,11 +177,11 @@ A number that is associated with the device and can be displayed in user interfa
 
 
 ## -remarks
-Several members use the <a href="wdf.wdf_tri_state">WDF_TRI_STATE</a> type. For these members, a value of <b>WdfTrue</b> indicates that the device supports the capability and a value of <b>WdfFalse</b> indicates it does not. A value of <b>WdfUseDefault</b> indicates the framework will use the value that a driver lower in the stack provided. For example, if a bus driver specifies <b>WdfTrue</b> for <b>LockSupported</b> and the device's function driver specifies <b>WdfUseDefault</b>, the framework stores <b>WdfTrue</b> for the capability.
+Several members use the <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a> type. For these members, a value of <b>WdfTrue</b> indicates that the device supports the capability and a value of <b>WdfFalse</b> indicates it does not. A value of <b>WdfUseDefault</b> indicates the framework will use the value that a driver lower in the stack provided. For example, if a bus driver specifies <b>WdfTrue</b> for <b>LockSupported</b> and the device's function driver specifies <b>WdfUseDefault</b>, the framework stores <b>WdfTrue</b> for the capability.
 
-The WDF_DEVICE_PNP_CAPABILITIES structure is used as input to <a href="wdf.wdfdevicesetpnpcapabilities">WdfDeviceSetPnpCapabilities</a>.
+The WDF_DEVICE_PNP_CAPABILITIES structure is used as input to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpnpcapabilities.md">WdfDeviceSetPnpCapabilities</a>.
 
-To initialize a WDF_DEVICE_PNP_CAPABILITIES structure, a driver should call <a href="wdf.wdf_device_pnp_capabilities_init">WDF_DEVICE_PNP_CAPABILITIES_INIT</a>.
+To initialize a WDF_DEVICE_PNP_CAPABILITIES structure, a driver should call <a href="..\wdfdevice\nf-wdfdevice-wdf_device_pnp_capabilities_init.md">WDF_DEVICE_PNP_CAPABILITIES_INIT</a>.
 
 
 ## -requirements
@@ -221,15 +222,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfdevicesetpowercapabilities">WdfDeviceSetPowerCapabilities</a>
+<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetpowercapabilities.md">WdfDeviceSetPowerCapabilities</a>
 </dt>
 <dt>
-<a href="wdf.wdfpdoinitassignrawdevice">WdfPdoInitAssignRawDevice</a>
+<a href="..\wdfpdo\nf-wdfpdo-wdfpdoinitassignrawdevice.md">WdfPdoInitAssignRawDevice</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_PNP_CAPABILITIES structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_DEVICE_PNP_CAPABILITIES structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

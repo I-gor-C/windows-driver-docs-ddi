@@ -1,5 +1,5 @@
 ---
-UID: NS.PMI._PMI_CAPABILITIES
+UID: NS:pmi._PMI_CAPABILITIES
 title: _PMI_CAPABILITIES
 author: windows-driver-content
 description: The PMI_CAPABILITIES structure contains information about the power metering and budgeting capabilities of a power meter.
@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: 7e564512-ff57-4bce-93c1-76e6034ec061
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PMI_CAPABILITIES, PMI_CAPABILITIES, PPMI_CAPABILITIES, *PPMI_CAPABILITIES
+ms.keywords: _PMI_CAPABILITIES, *PPMI_CAPABILITIES, PMI_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPMI_CAPABILITIES, PMI_CAPABILITIES
 ---
 
 # _PMI_CAPABILITIES structure
@@ -81,14 +82,14 @@ A union of the supported Power Meter Interface (PMI) capability structures. Base
 
 ### -field ReportedCapabilities
 
-A <a href="powermeter.pmi_metered_hardware_information">PMI_METERED_HARDWARE_INFORMATION</a> structure that specifies one or more hardware devices that are monitored by the power meter. 
+A <a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a> structure that specifies one or more hardware devices that are monitored by the power meter. 
 
 The <b>Capabilities</b> member contains this structure if the <b>CapabilityType</b> member is set to <b>PmiMeteredHardware</b>.
 
 
 ### -field MeteredHardwareInformation
 
-A <a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a> structure that specifies the PMI capabilities of the power meter, such as the following:
+A <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure that specifies the PMI capabilities of the power meter, such as the following:
 
 <ul>
 <li>Asset information 
@@ -114,7 +115,7 @@ For example, if an IOCTL query request of <a href="..\pmi\ni-pmi-ioctl_pmi_get_c
 
 The <b>CapabilitiesType</b> member is set to <b>PmiReportedCapabilities</b>.
 
-The <b>Capabilities</b> member contains data that is formatted as a <a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a> structure.
+The <b>Capabilities</b> member contains data that is formatted as a <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure.
 
 
 ## -requirements
@@ -151,10 +152,10 @@ Header
 <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_metered_hardware_information">PMI_METERED_HARDWARE_INFORMATION</a>
+<a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
 </dt>
 </dl>
  

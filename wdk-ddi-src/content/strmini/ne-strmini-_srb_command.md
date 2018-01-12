@@ -1,5 +1,5 @@
 ---
-UID: NE.strmini._SRB_COMMAND
+UID: NE:strmini._SRB_COMMAND
 title: _SRB_COMMAND
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\srb_command.htm
 old-project: stream
 ms.assetid: 2A72D3B5-286A-4C20-AFEC-77EDCDD56B6A
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: _SRB_COMMAND, SRB_COMMAND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SRB_COMMAND
 req.product: Windows 10 or later.
 ---
 

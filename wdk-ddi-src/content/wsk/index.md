@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:wsk
 ---
 
 # Wsk.h header
 
 ## -description
 
-This header is used by NetVista. For more information, see
-- [NetVista](../_NetVista/index.md)
+This header is used by Networking drivers for Windows Vista and later. For more information, see
+- [Networking drivers for Windows Vista and later](../_netvista/index.md)
 
 Wsk.h contain these programming interfaces:
 
@@ -62,7 +62,6 @@ Wsk.h contain these programming interfaces:
 | ---- |:---- |
 | [_WSK_BUF structure](ns-wsk-_wsk_buf.md) | The WSK_BUF structure defines a data buffer that is used for sending and receiving data over a socket. |
 | [_WSK_CLIENT_CONNECTION_DISPATCH structure](ns-wsk-_wsk_client_connection_dispatch.md) | The WSK_CLIENT_CONNECTION_DISPATCH structure specifies a WSK application's dispatch table of event callback functions for a connection-oriented socket. |
-| [_WSK_CLIENT_CONNECTION_DISPATCH structure](ns-wsk-_wsk_client_connection_dispatch~r1.md) | The WSK_CLIENT_CONNECTION_DISPATCH structure specifies a WSK application's dispatch table of event callback functions for a connection-oriented socket. |
 | [_WSK_CLIENT_DATAGRAM_DISPATCH structure](ns-wsk-_wsk_client_datagram_dispatch.md) | The WSK_CLIENT_DATAGRAM_DISPATCH structure specifies a WSK application's dispatch table of event callback functions for a datagram socket. |
 | [_WSK_CLIENT_DISPATCH structure](ns-wsk-_wsk_client_dispatch.md) | The WSK_CLIENT_DISPATCH structure specifies a WSK application's dispatch table of event callback functions for events that are not specific to a particular socket. |
 | [_WSK_CLIENT_LISTEN_DISPATCH structure](ns-wsk-_wsk_client_listen_dispatch.md) | The WSK_CLIENT_LISTEN_DISPATCH structure specifies a WSK application's dispatch table of event callback functions for a listening socket. |

@@ -1,14 +1,14 @@
 ---
-UID: NS.NDISCHIMNEY._NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
+UID: NS:ndischimney._NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
 title: _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
 author: windows-driver-content
 description: The NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure.
 old-location: netvista\ndis_protocol_offload_block_list.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 64febd55-1ab8-4e2e-b738-340167866333
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, *PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
+ms.date: 1/8/2018
+ms.keywords: _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, *PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
 ---
 
 # _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure
@@ -70,7 +71,7 @@ typedef struct _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST {
 ### -field Header
 
 The header of the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure. The header is formatted as an 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure. The
      NDIS_OBJECT_HEADER structure contains the revision number of the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
      structure, the type of offload state that immediately follows the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
      structure in memory, and the size of the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure, including the
@@ -90,21 +91,21 @@ The following OFFLOAD_STATE_TYPE values are supported:
 ### -field NeighborOffloadConstState
 
 Specifies the constant neighbor state. This state is formatted as a 
-       <a href="netvista.neighbor_offload_state_const">
+       <a href="..\ndischimney\ns-ndischimney-_neighbor_offload_state_const.md">
        NEIGHBOR_OFFLOAD_STATE_CONST</a> structure.
 
 
 ### -field NeighborOffloadCachedState
 
 Specifies the cached neighbor state. This state is formatted as a 
-       <a href="netvista.neighbor_offload_state_cached">
+       <a href="..\ndischimney\ns-ndischimney-_neighbor_offload_state_cached.md">
        NEIGHBOR_OFFLOAD_STATE_CACHED</a> structure.
 
 
 ### -field NeighborOffloadDelegatedState
 
 Specifies the delegated neighbor state. This state is formatted as a 
-       <a href="netvista.neighbor_offload_state_delegated">
+       <a href="..\ndischimney\ns-ndischimney-_neighbor_offload_state_delegated.md">
        NEIGHBOR_OFFLOAD_STATE_DELEGATED</a> structure.
 
 
@@ -119,21 +120,21 @@ Specifies all of the neighbor state, including the constant, cached, and delegat
 ### -field Ip4OffloadConstState
 
 Specifies the constant path state (IPv4). This state is formatted as a 
-       <a href="netvista.path_offload_state_const">
+       <a href="..\ndischimney\ns-ndischimney-_path_offload_state_const.md">
        PATH_OFFLOAD_STATE_CONST</a> structure.
 
 
 ### -field Ip4OffloadCachedState
 
 Specifies the cached path state (IPv4). This state is formatted as a 
-       <a href="netvista.path_offload_state_cached">
+       <a href="..\ndischimney\ns-ndischimney-_path_offload_state_cached.md">
        PATH_OFFLOAD_STATE_CACHED</a> structure.
 
 
 ### -field Ip4OffloadDelegatedState
 
 Specifies the delegated path state (IPv4). This state is formatted as a 
-       <a href="netvista.path_offload_state_delegated">
+       <a href="..\ndischimney\ns-ndischimney-_path_offload_state_delegated.md">
        PATH_OFFLOAD_STATE_DELEGATED</a> structure. Currently there is no delegated path state. The
        PATH_OFFLOAD_STATE_DELEGATED structure does not contain any variables.
 
@@ -174,21 +175,21 @@ Specifies all of the path state (IPv6), including the constant, cached, and dele
 ### -field TcpOffloadConstState
 
 Specifies the constant TCP state. This state is formatted as a 
-       <a href="netvista.tcp_offload_state_const">
+       <a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_const.md">
        TCP_OFFLOAD_STATE_CONST</a> structure.
 
 
 ### -field TcpOffloadCachedState
 
 Specifies the cached TCP state. This state is formatted as a 
-       <a href="netvista.tcp_offload_state_cached">
+       <a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_cached.md">
        TCP_OFFLOAD_STATE_CACHED</a> structure.
 
 
 ### -field TcpOffloadDelegatedState
 
 Specifies the delegated TCP state. This state is formatted as a 
-       <a href="netvista.tcp_offload_state_delegated">
+       <a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_delegated.md">
        TCP_OFFLOAD_STATE_DELEGATED</a> structure.
 
 
@@ -338,7 +339,7 @@ Query, update, invalidate, or terminate offload: Not an allowed status value.
 
 Initiate offload: The offload target failed to offload the state associated with the
        NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure because the host stack specified a non-<b>NULL</b><b>DlSourceAddress</b> member in the 
-       <a href="netvista.neighbor_offload_state_const">
+       <a href="..\ndischimney\ns-ndischimney-_neighbor_offload_state_const.md">
        NEIGHBOR_OFFLOAD_STATE_CONST</a> structure, and the offload target either does not support
        configurable source MAC addresses or cannot accept additional source MAC addresses.
        
@@ -352,7 +353,7 @@ Initiate offload: The offload target failed to offload the state associated with
        NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure because the offload target could not allocate a data
        structure for the source IP address that is referenced by the 
        <b>SourceAddress</b> pointer in the 
-       <a href="netvista.path_offload_state_const">
+       <a href="..\ndischimney\ns-ndischimney-_path_offload_state_const.md">
        PATH_OFFLOAD_STATE_CONST</a> structure.
        
 
@@ -384,7 +385,7 @@ Query, update, invalidate, or terminate offload: Not an allowed status value.
 Initiate offload: The offload target failed to offload the state associated with the
        NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure because the 
        <b>InitialRcvWnd</b> member specified in the 
-       <a href="netvista.tcp_offload_state_cached">
+       <a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_cached.md">
        TCP_OFFLOAD_STATE_CACHED</a> structure is larger than the offload target can support.
        
 
@@ -427,7 +428,7 @@ Reserved for use by NDIS.
 ### -field OffloadHandle
 
 A pointer to an 
-     <a href="netvista.ndis_offload_handle">NDIS_OFFLOAD_HANDLE</a> structure. The
+     <a href="..\ndischimney\ns-ndischimney-_ndis_offload_handle.md">NDIS_OFFLOAD_HANDLE</a> structure. The
      NDIS_OFFLOAD_HANDLE structure represents a protocol or intermediate driver's context for an offloaded
      state object.
 
@@ -464,7 +465,7 @@ When propagating the completion of a state-manipulation operation, an intermedia
       
       <b>SourceHandle</b> that it stored in its IM call entry to the 
       <b>SourceHandle</b> member of the 
-      <a href="netvista.ndis_miniport_offload_block_list">
+      <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
       NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that it passes to the NdisMXxxComplete function.
 
 
@@ -472,7 +473,7 @@ When propagating the completion of a state-manipulation operation, an intermedia
 
 A port number that identifies a miniport adapter port. To assign a miniport adapter port number,
      call the 
-     <a href="netvista.ndismallocateport">NdisMAllocatePort</a> function. A zero
+     <a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a> function. A zero
      value identifies the default port of a miniport adapter. Use the default port if the miniport driver has
      not allocated ports for the specified adapter.
 
@@ -485,10 +486,10 @@ When the protocol or intermediate driver specifies a <b>NULL</b> value,
 
 When a protocol or intermediate driver specifies a non-<b>NULL</b> value, 
       <b>NetBufferListChain</b> points to a 
-      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure that can be a
+      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that can be a
       stand-alone structure or the first structure in a linked list of such structures. Each NET_BUFFER_LIST
       structure in the linked list describes one 
-      <a href="netvista.net_buffer">NET_BUFFER</a> structure. The NET_BUFFER structure
+      <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure. The NET_BUFFER structure
       maps to a chain of memory descriptor lists (MDLs). The NET_BUFFER_LIST and associated structures are
       locked so that they remain resident in physical memory. However, they are not mapped into system
       memory.
@@ -503,7 +504,7 @@ An offload target or intermediate driver can pass outstanding send data to the o
       host stack when terminating the offload of a TCP connection. In this case, the offload target specifies
       a non-<b>NULL</b> value for the 
       <b>NetBufferListChain</b> member when calling the 
-      <a href="netvista.ndismterminateoffloadcomplete">
+      <a href="..\ndischimney\nf-ndischimney-ndismterminateoffloadcomplete.md">
       NdisMTerminateOffloadComplete</a> function. If the offload target is not passing send data for a TCP
       connection that is being terminated, it specifies a <b>NULL</b> value for the 
       <b>NetBufferListChain</b> member.
@@ -511,7 +512,7 @@ An offload target or intermediate driver can pass outstanding send data to the o
 
 ## -remarks
 An intermediate driver creates an NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure from an 
-    <a href="netvista.ndis_miniport_offload_block_list">
+    <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure when 
     <a href="netvista.propagating_state_manipulation_operations">propagating a
     state-manipulation operation</a>. When 
@@ -546,34 +547,34 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisinitiateoffload">NdisInitiateOffload</a>
+<a href="..\ndischimney\nf-ndischimney-ndisinitiateoffload.md">NdisInitiateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndisinvalidateoffload">NdisInvalidateOffload</a>
+<a href="..\ndischimney\nf-ndischimney-ndisinvalidateoffload.md">NdisInvalidateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndismallocateport">NdisMAllocatePort</a>
+<a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndisqueryoffload">NdisQueryOffload</a>
+<a href="..\ndischimney\nf-ndischimney-ndisqueryoffloadstate.md">NdisQueryOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndisterminateoffload">NdisTerminateOffload</a>
+<a href="..\ndischimney\nf-ndischimney-ndisterminateoffload.md">NdisTerminateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndisupdateoffload">NdisUpdateOffload</a>
+<a href="..\ndischimney\nf-ndischimney-ndisupdateoffload.md">NdisUpdateOffload</a>
 </dt>
 <dt>
-<a href="netvista.neighbor_offload_state_cached">NEIGHBOR_OFFLOAD_STATE_CACHED</a>
+<a href="..\ndischimney\ns-ndischimney-_neighbor_offload_state_cached.md">NEIGHBOR_OFFLOAD_STATE_CACHED</a>
 </dt>
 <dt>
-<a href="netvista.neighbor_offload_state_const">NEIGHBOR_OFFLOAD_STATE_CONST</a>
+<a href="..\ndischimney\ns-ndischimney-_neighbor_offload_state_const.md">NEIGHBOR_OFFLOAD_STATE_CONST</a>
 </dt>
 <dt>
-<a href="netvista.neighbor_offload_state_delegated">
+<a href="..\ndischimney\ns-ndischimney-_neighbor_offload_state_delegated.md">
    NEIGHBOR_OFFLOAD_STATE_DELEGATED</a>
 </dt>
 <dt>
@@ -597,27 +598,27 @@ Header
    ProtocolUpdateOffloadComplete</a>
 </dt>
 <dt>
-<a href="netvista.path_offload_state_cached">PATH_OFFLOAD_STATE_CACHED</a>
+<a href="..\ndischimney\ns-ndischimney-_path_offload_state_cached.md">PATH_OFFLOAD_STATE_CACHED</a>
 </dt>
 <dt>
-<a href="netvista.path_offload_state_const">PATH_OFFLOAD_STATE_CONST</a>
+<a href="..\ndischimney\ns-ndischimney-_path_offload_state_const.md">PATH_OFFLOAD_STATE_CONST</a>
 </dt>
 <dt>
-<a href="netvista.path_offload_state_delegated">PATH_OFFLOAD_STATE_DELEGATED</a>
+<a href="..\ndischimney\ns-ndischimney-_path_offload_state_delegated.md">PATH_OFFLOAD_STATE_DELEGATED</a>
 </dt>
 <dt>
-<a href="netvista.tcp_offload_state_cached">TCP_OFFLOAD_STATE_CACHED</a>
+<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_cached.md">TCP_OFFLOAD_STATE_CACHED</a>
 </dt>
 <dt>
-<a href="netvista.tcp_offload_state_const">TCP_OFFLOAD_STATE_CONST</a>
+<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_const.md">TCP_OFFLOAD_STATE_CONST</a>
 </dt>
 <dt>
-<a href="netvista.tcp_offload_state_delegated">TCP_OFFLOAD_STATE_DELEGATED</a>
+<a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_delegated.md">TCP_OFFLOAD_STATE_DELEGATED</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

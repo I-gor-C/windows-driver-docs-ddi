@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsFilterFactoryUpdateCacheData
+UID: NF:ks.KsFilterFactoryUpdateCacheData
 title: KsFilterFactoryUpdateCacheData function
 author: windows-driver-content
 description: The KsFilterFactoryUpdateCacheData function updates the FilterData registry key and the Medium cache (a set of registry keys) for a given filter factory.
@@ -7,7 +7,7 @@ old-location: stream\ksfilterfactoryupdatecachedata.htm
 old-project: stream
 ms.assetid: a5c868a5-0e79-482b-9694-02cae2de99ca
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsFilterFactoryUpdateCacheData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsFilterFactoryUpdateCacheData function
@@ -56,12 +57,12 @@ NTSTATUS KsFilterFactoryUpdateCacheData(
 
 ### -param FilterFactory [in]
 
-The <a href="stream.ksfilterfactory">KSFILTERFACTORY</a> for which to update FilterData and Medium cache in the registry.
+The <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> for which to update FilterData and Medium cache in the registry.
 
 
 ### -param FilterDescriptor [in, optional]
 
-An optional <a href="stream.ksfilter_descriptor">KSFILTER_DESCRIPTOR</a> for which the FilterData key and Medium cache will be updated. If <b>NULL</b>, <i>FilterFactory</i>'s descriptor is used instead. Provide if the filter factory uses dynamic pins and needs to update information for pins that have not yet been instantiated.
+An optional <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a> for which the FilterData key and Medium cache will be updated. If <b>NULL</b>, <i>FilterFactory</i>'s descriptor is used instead. Provide if the filter factory uses dynamic pins and needs to update information for pins that have not yet been instantiated.
 
 
 ## -returns
@@ -70,10 +71,10 @@ An optional <a href="stream.ksfilter_descriptor">KSFILTER_DESCRIPTOR</a> for whi
 
 
 ## -remarks
-This function updates the FilterData key and Medium cache for all categories specified in <i>FilterDescriptor</i>. If <i>FilterDescriptor</i> is <b>NULL</b>, the FilterData and Medium cache are updated for all categories specified in <i>FilterFactory</i>'s <a href="stream.ksfilter_descriptor">KSFILTER_DESCRIPTOR</a> member.
+This function updates the FilterData key and Medium cache for all categories specified in <i>FilterDescriptor</i>. If <i>FilterDescriptor</i> is <b>NULL</b>, the FilterData and Medium cache are updated for all categories specified in <i>FilterFactory</i>'s <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a> member.
 
 
-<a href="stream.ksregisterfilterwithnokspins">KsRegisterFilterWithNoKSPins</a> provides similar functionality, but should not be used if two instances of <a href="stream.ksfilter_descriptor">KSFILTER_DESCRIPTOR</a> under the same <a href="stream.ksdevice">KSDEVICE</a> are registered in the same category, and differ only in reference GUID. In this case, <b>KsRegisterFilterWithNoKSPins</b> updates data only for the first, even though the second may have been specified.
+<a href="..\ks\nf-ks-ksregisterfilterwithnokspins.md">KsRegisterFilterWithNoKSPins</a> provides similar functionality, but should not be used if two instances of <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a> under the same <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> are registered in the same category, and differ only in reference GUID. In this case, <b>KsRegisterFilterWithNoKSPins</b> updates data only for the first, even though the second may have been specified.
 
 Do not use this routine in place of <b>KsRegisterFilterWithNoKSPins</b> for filters with no KS pins, such as analog style crossbars. Use this routine only for a specific filter for which the minidriver is passing the corresponding filter factory.
 
@@ -132,18 +133,18 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksregisterfilterwithnokspins">KsRegisterFilterWithNoKSPins</a>
+<a href="..\ks\nf-ks-ksregisterfilterwithnokspins.md">KsRegisterFilterWithNoKSPins</a>
 </dt>
 <dt>
-<a href="stream.ksfilter_descriptor">KSFILTER_DESCRIPTOR</a>
+<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="stream.ksfilterfactory">KSFILTERFACTORY</a>
+<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterFactoryUpdateCacheData function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsFilterFactoryUpdateCacheData function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

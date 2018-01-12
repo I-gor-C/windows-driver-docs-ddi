@@ -1,5 +1,5 @@
 ---
-UID: NE.ntddk._WHEA_ERROR_SEVERITY
+UID: NE:ntddk._WHEA_ERROR_SEVERITY
 title: _WHEA_ERROR_SEVERITY
 author: windows-driver-content
 description: The WHEA_ERROR_SEVERITY enumeration defines the possible severity levels of a hardware error condition.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 3b056910-dc33-4608-bb7d-a3f13bc546ca
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_SEVERITY, WHEA_ERROR_SEVERITY, *PWHEA_ERROR_SEVERITY, PWHEA_ERROR_SEVERITY
+ms.keywords: _WHEA_ERROR_SEVERITY, WHEA_ERROR_SEVERITY, *PWHEA_ERROR_SEVERITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WHEA_ERROR_SEVERITY, *PWHEA_ERROR_SEVERITY
 ---
 
 # _WHEA_ERROR_SEVERITY enumeration
@@ -79,7 +80,7 @@ An error has not occurred.
 <div> </div>
 
 ## -remarks
-The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>, <a href="whea.whea_error_record_header">WHEA_ERROR_RECORD_HEADER</a>, <a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>, and <a href="whea.whea_generic_error">WHEA_GENERIC_ERROR</a> structures each contain a member of type WHEA_ERROR_SEVERITY that specifies the severity of the error that is described by the structure.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>, <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>, <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>, and <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structures each contain a member of type WHEA_ERROR_SEVERITY that specifies the severity of the error that is described by the structure.
 
 
 ## -requirements
@@ -114,13 +115,13 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
 </dt>
 <dt>
-<a href="whea.whea_error_record_header">WHEA_ERROR_RECORD_HEADER</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
 </dt>
 <dt>
-<a href="whea.whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="whea.whea_generic_error">WHEA_GENERIC_ERROR</a>
+<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
 </dt>
 </dl>
  

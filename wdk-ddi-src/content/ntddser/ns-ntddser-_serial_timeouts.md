@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSER._SERIAL_TIMEOUTS
+UID: NS:ntddser._SERIAL_TIMEOUTS
 title: _SERIAL_TIMEOUTS
 author: windows-driver-content
 description: The SERIAL_TIMEOUTS structure specifies the time-out parameters for read and write operations by the serial port.
@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 58DABEF8-5886-4575-BFB0-C10709BBACAE
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SERIAL_TIMEOUTS, SERIAL_TIMEOUTS, *PSERIAL_TIMEOUTS, PSERIAL_TIMEOUTS
+ms.keywords: _SERIAL_TIMEOUTS, *PSERIAL_TIMEOUTS, SERIAL_TIMEOUTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSERIAL_TIMEOUTS, SERIAL_TIMEOUTS
 ---
 
 # _SERIAL_TIMEOUTS structure
@@ -125,7 +126,7 @@ A read-interval time-out occurs when the interval between incoming bytes exceeds
 
 A possible way to more accurately measure smaller time-out intervals is to decrease the time between system clock ticks, but doing so is likely to increase power consumption. In addition, reducing the system clock period might not reliably achieve a finer system clock granularity unless interrupt-related processing by the various drivers in the platform can be guaranteed not to delay the processing of system clock interrupts.
 
-The <b>SERIAL_TIMEOUTS</b> structure is similar to the <a href="base.commtimeouts_str">COMMTIMEOUTS</a> structure, which is used by the user-mode <a href="base.setcommtimeouts">SetCommTimeouts</a> and <a href="base.getcommtimeouts">GetCommTimeouts</a> functions.
+The <b>SERIAL_TIMEOUTS</b> structure is similar to the <a href="https://msdn.microsoft.com/259aa110-b2c3-4583-a3f9-805a42025a81">COMMTIMEOUTS</a> structure, which is used by the user-mode <a href="https://msdn.microsoft.com/71aa6ab3-d56c-43bc-9932-5b4e61fc4b30">SetCommTimeouts</a> and <a href="https://msdn.microsoft.com/a5375b2e-0992-4e47-a20f-8a793addeef6">GetCommTimeouts</a> functions.
 
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547486">Setting Read and Write Timeouts for a Serial Device</a>.
 
@@ -158,10 +159,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="base.commtimeouts_str">COMMTIMEOUTS</a>
+<a href="https://msdn.microsoft.com/259aa110-b2c3-4583-a3f9-805a42025a81">COMMTIMEOUTS</a>
 </dt>
 <dt>
-<a href="base.getcommtimeouts">GetCommTimeouts</a>
+<a href="https://msdn.microsoft.com/a5375b2e-0992-4e47-a20f-8a793addeef6">GetCommTimeouts</a>
 </dt>
 <dt>
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_timeouts.md">IOCTL_SERIAL_SET_TIMEOUTS</a>
@@ -173,10 +174,10 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>
 </dt>
 <dt>
-<a href="serports.sercxgetreadintervaltimeout">SerCxGetReadIntervalTimeout</a>
+<a href="..\sercx\nf-sercx-sercxgetreadintervaltimeout.md">SerCxGetReadIntervalTimeout</a>
 </dt>
 <dt>
-<a href="base.setcommtimeouts">SetCommTimeouts</a>
+<a href="https://msdn.microsoft.com/71aa6ab3-d56c-43bc-9932-5b4e61fc4b30">SetCommTimeouts</a>
 </dt>
 </dl>
  

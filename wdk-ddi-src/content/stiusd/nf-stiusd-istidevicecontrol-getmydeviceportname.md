@@ -1,13 +1,13 @@
 ---
-UID: NF.stiusd.IStiDeviceControl.GetMyDevicePortName
+UID: NF:stiusd.IStiDeviceControl.GetMyDevicePortName
 title: IStiDeviceControl::GetMyDevicePortName method
 author: windows-driver-content
 description: The IStiDeviceControl::GetMyDevicePortName method allows a user-mode still image minidriver to obtain a device's port name.
 old-location: image\istidevicecontrol_getmydeviceportname.htm
-old-project: Image
+old-project: image
 ms.assetid: f400ab05-aea9-4154-a725-5b23a6dc06b6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IStiDeviceControl, IStiDeviceControl::GetMyDevicePortName, GetMyDevicePortName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTI_WIA_DEVICE_INFORMATIONW, STI_WIA_DEVICE_INFORMATIONW
 req.product: Windows 10 or later.
 ---
 
@@ -70,9 +71,9 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 
 
 ## -remarks
-The path name that a still image minidriver receives by calling <b>IStiDeviceControl::GetMyDevicePortName</b> can be used as an input argument to <a href="fs.createfile">CreateFile</a> (described in the Microsoft Windows SDK documentation).
+The path name that a still image minidriver receives by calling <b>IStiDeviceControl::GetMyDevicePortName</b> can be used as an input argument to <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a> (described in the Microsoft Windows SDK documentation).
 
-A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as an input argument to its <a href="image.istiusd_initialize">IStiUSD::Initialize</a> method.
+A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer as an input argument to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a> method.
 
 
 ## -requirements

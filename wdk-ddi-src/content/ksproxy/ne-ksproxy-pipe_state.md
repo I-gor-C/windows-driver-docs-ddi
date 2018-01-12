@@ -1,5 +1,5 @@
 ---
-UID: NE.ksproxy.PIPE_STATE
+UID: NE:ksproxy.PIPE_STATE
 title: PIPE_STATE
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: stream\pipe_state.htm
 old-project: stream
 ms.assetid: A3053A39-5DB6-4DB8-89ED-63ABDB1CD16F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: PIPE_STATE, PIPE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PIPE_STATE
 ---
 
 # PIPE_STATE enumeration

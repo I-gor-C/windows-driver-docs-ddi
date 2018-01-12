@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfcompanion.WdfCompanionWdmGetSecureDeviceHandle
+UID: NF:wdfcompanion.WdfCompanionWdmGetSecureDeviceHandle
 title: WdfCompanionWdmGetSecureDeviceHandle function
 author: windows-driver-content
 description: For internal use only.
@@ -7,7 +7,7 @@ old-location: wdf\wdfcompanionwdmgetsecuredevicehandle.htm
 old-project: wdf
 ms.assetid: 8fc3dc6f-8a21-490b-adbf-5f735cb953de
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfCompanionWdmGetSecureDeviceHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_TASK_QUEUE_DISPATCH_TYPE
 req.product: Windows 10 or later.
 ---
 

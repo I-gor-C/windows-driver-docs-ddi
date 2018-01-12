@@ -1,5 +1,5 @@
 ---
-UID: NC.hdaudio.PGET_DEVICE_INFORMATION
+UID: NC:hdaudio.PGET_DEVICE_INFORMATION
 title: PGET_DEVICE_INFORMATION
 author: windows-driver-content
 description: The GetDeviceInformation routine retrieves information about the HD Audio controller device.The function pointer type for a GetDeviceInformation routine is defined as:
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: bdd08133-0641-4eea-bfa3-75f700356132
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 # PGET_DEVICE_INFORMATION callback
@@ -61,12 +62,12 @@ NTSTATUS GetDeviceInformation(
 
 ### -param context [in]
 
-Specifies the context value from the <b>Context</b> member of the <a href="audio.hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a> or the <a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a> structure.
+Specifies the context value from the <b>Context</b> member of the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a> or the <a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a> structure.
 
 
 ### -param deviceInformation [in, out]
 
-Retrieves information about the HD Audio controller device. This parameter points to a caller-allocated <a href="audio.hdaudio_device_information">HDAUDIO_DEVICE_INFORMATION</a> structure into which the routine writes the device information.
+Retrieves information about the HD Audio controller device. This parameter points to a caller-allocated <a href="..\hdaudio\ns-hdaudio-_hdaudio_device_information.md">HDAUDIO_DEVICE_INFORMATION</a> structure into which the routine writes the device information.
 
 
 ## -returns
@@ -123,13 +124,13 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="audio.hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface.md">HDAUDIO_BUS_INTERFACE</a>
 </dt>
 <dt>
-<a href="audio.hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_bus_interface_v2.md">HDAUDIO_BUS_INTERFACE_V2</a>
 </dt>
 <dt>
-<a href="audio.hdaudio_device_information">HDAUDIO_DEVICE_INFORMATION</a>
+<a href="..\hdaudio\ns-hdaudio-_hdaudio_device_information.md">HDAUDIO_DEVICE_INFORMATION</a>
 </dt>
 </dl>
  

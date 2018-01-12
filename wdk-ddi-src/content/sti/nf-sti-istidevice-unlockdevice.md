@@ -1,13 +1,13 @@
 ---
-UID: NF.sti.IStiDevice.UnLockDevice
+UID: NF:sti.IStiDevice.UnLockDevice
 title: IStiDevice::UnLockDevice method
 author: windows-driver-content
 description: The IStiDevice::UnLockDevice method unlocks a device that was locked by a previous call to IStiDevice::LockDevice.
 old-location: image\istidevice_unlockdevice.htm
-old-project: Image
+old-project: image
 ms.assetid: 0bcd48c6-be8a-47af-9e34-a06ce572925c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IStiDevice, IStiDevice::UnLockDevice, UnLockDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STI_DEVICE_MJ_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>IStiDevice::UnLockDevice</b> method unlocks a device that was locked by a previous call to <a href="image.istidevice_lockdevice">IStiDevice::LockDevice</a>.
+The <b>IStiDevice::UnLockDevice</b> method unlocks a device that was locked by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543756">IStiDevice::LockDevice</a>.
 
 
 
@@ -62,9 +63,9 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 
 
 ## -remarks
-Before the <b>IStiDevice::UnLockDevice</b> method releases the <b>IStiDevice</b>-level lock on the device, it calls <a href="image.istiusd_unlockdevice">IStiUSD::UnLockDevice</a> in the appropriate vendor-supplied minidriver.
+Before the <b>IStiDevice::UnLockDevice</b> method releases the <b>IStiDevice</b>-level lock on the device, it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff543843">IStiUSD::UnLockDevice</a> in the appropriate vendor-supplied minidriver.
 
-Before calling <b>IStiDevice::UnLockDevice</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.
+Before calling <b>IStiDevice::UnLockDevice</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.
 
 
 ## -requirements

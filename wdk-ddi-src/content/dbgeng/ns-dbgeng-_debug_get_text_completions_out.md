@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_GET_TEXT_COMPLETIONS_OUT
+UID: NS:dbgeng._DEBUG_GET_TEXT_COMPLETIONS_OUT
 title: _DEBUG_GET_TEXT_COMPLETIONS_OUT
 author: windows-driver-content
 description: Defines information about text completions to get.
 old-location: debugger\debug_get_text_completions_out.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 09F3A720-C039-4C8D-84A4-8AF071E1FFB0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_GET_TEXT_COMPLETIONS_OUT, *PDEBUG_GET_TEXT_COMPLETIONS_OUT, PDEBUG_GET_TEXT_COMPLETIONS_OUT, DEBUG_GET_TEXT_COMPLETIONS_OUT
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_GET_TEXT_COMPLETIONS_OUT, DEBUG_GET_TEXT_COMPLETIONS_OUT, *PDEBUG_GET_TEXT_COMPLETIONS_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DEBUG_GET_TEXT_COMPLETIONS_OUT, *PDEBUG_GET_TEXT_COMPLETIONS_OUT
 ---
 
 # _DEBUG_GET_TEXT_COMPLETIONS_OUT structure

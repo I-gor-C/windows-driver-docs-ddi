@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.SetCommandWide
+UID: NF:dbgeng.IDebugBreakpoint2.SetCommandWide
 title: IDebugBreakpoint2::SetCommandWide method
 author: windows-driver-content
 description: The SetCommandWide method sets the command that is executed when a breakpoint is triggered.
 old-location: debugger\setcommandwide.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 3edab087-01e4-4cd4-82d3-38d67962c93c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::SetCommandWide, SetCommandWide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::SetCommandWide method

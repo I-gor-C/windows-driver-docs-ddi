@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltGetRequestorSessionId
+UID: NF:fltkernel.FltGetRequestorSessionId
 title: FltGetRequestorSessionId function
 author: windows-driver-content
 description: The FltGetRequestorSessionId routine returns the session ID of the process that originally requested the specified I/O operation.
@@ -7,7 +7,7 @@ old-location: ifsk\fltgetrequestorsessionid.htm
 old-project: ifsk
 ms.assetid: 6a0eb588-fe64-4f36-8648-8e006e16704e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltGetRequestorSessionId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltGetRequestorSessionId function
@@ -56,7 +57,7 @@ NTSTATUS FltGetRequestorSessionId(
 
 ### -param CallbackData [in]
 
-A pointer to the <a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a> structure specifying the I/O operation.
+A pointer to the <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a> structure specifying the I/O operation.
 
 
 ### -param SessionId [out]

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:ntddscsi
 ---
 
 # Ntddscsi.h header

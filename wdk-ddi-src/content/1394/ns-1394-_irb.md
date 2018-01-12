@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB
+UID: NS:1394._IRB
 title: _IRB
 author: windows-driver-content
 description: Drivers use this structure to pass most requests to IEEE 1394 bus driver.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 456712c9-720c-436c-b1db-a6d53c358e22
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _IRB, *PIRB, PIRB, IRB
+ms.keywords: _IRB, IRB, *PIRB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB, *PIRB
 ---
 
 # _IRB structure

@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFInterrupt.GetInfo
+UID: NF:wudfddi.IWDFInterrupt.GetInfo
 title: IWDFInterrupt::GetInfo method
 author: windows-driver-content
 description: The GetInfo method retrieves information about a specified interrupt.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfinterrupt_getinfo.htm
 old-project: wdf
 ms.assetid: 744D0FFE-6D3C-4AED-8935-63EE9B0AFA0F
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFInterrupt, IWDFInterrupt::GetInfo, GetInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -58,7 +59,7 @@ void GetInfo(
 
 ### -param Info 
 
-A pointer to a caller-allocated <a href="wdf.wdf_interrupt_info">WDF_INTERRUPT_INFO</a> structure that the driver has previously initialized by calling <a href="wdf.wdf_interrupt_info_init">WDF_INTERRUPT_INFO_INIT</a>.
+A pointer to a caller-allocated <a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a> structure that the driver has previously initialized by calling <a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a>.
 
 
 ## -returns
@@ -66,11 +67,11 @@ This method does not return a value.
 
 
 ## -remarks
-The <b>GetInfo</b> method can obtain interrupt information only if your driver calls it after the framework has called the driver's <a href="wdf.ipnpcallbackhardware2_onpreparehardware">OnPrepareHardware</a> callback function and before the framework has called the driver's <a href="wdf.ipnpcallbackhardware2_onreleasehardware">OnReleaseHardware</a> callback function.
+The <b>GetInfo</b> method can obtain interrupt information only if your driver calls it after the framework has called the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439734">OnPrepareHardware</a> callback function and before the framework has called the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439739">OnReleaseHardware</a> callback function.
 
-For information about the order in which a driver's callback functions are called, see <a href="wdf.pnp_and_power_management_scenarios_in_umdf">PnP and Power Management Scenarios in UMDF</a>.
+For information about the order in which a driver's callback functions are called, see <a href="https://msdn.microsoft.com/ca36eee5-482c-4cfe-a515-be9d3743e241">PnP and Power Management Scenarios in UMDF</a>.
 
-For more information about handling interrupts in UMDF drivers, see <a href="wdf.accessing_hardware_and_handling_interrupts">Accessing Hardware and Handling Interrupts</a>.
+For more information about handling interrupts in UMDF drivers, see <a href="https://msdn.microsoft.com/25D526CF-7C37-4D10-B099-352933F92F98">Accessing Hardware and Handling Interrupts</a>.
 
 
 ## -requirements
@@ -136,21 +137,21 @@ DLL
 <a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
 </dt>
 <dt>
-<a href="wdf.ipnpcallbackhardware2_onpreparehardware">OnPrepareHardware</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439734">OnPrepareHardware</a>
 </dt>
 <dt>
-<a href="wdf.ipnpcallbackhardware2_onreleasehardware">OnReleaseHardware</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439739">OnReleaseHardware</a>
 </dt>
 <dt>
-<a href="wdf.wdf_interrupt_info">WDF_INTERRUPT_INFO</a>
+<a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a>
 </dt>
 <dt>
-<a href="wdf.wdf_interrupt_info_init">WDF_INTERRUPT_INFO_INIT</a>
+<a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFInterrupt::GetInfo method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFInterrupt::GetInfo method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

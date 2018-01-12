@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ClfsLsnContainer
+UID: NF:wdm.ClfsLsnContainer
 title: ClfsLsnContainer function
 author: windows-driver-content
 description: The ClfsLsnContainer routine returns the logical container identifier contained in a specified LSN.
@@ -7,7 +7,7 @@ old-location: kernel\clfslsncontainer.htm
 old-project: kernel
 ms.assetid: 006edbf7-b3f8-45f2-902e-03d86e83b0a0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ClfsLsnContainer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Clfs.lib
 req.dll: Clfs.sys
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ CLFS_CONTAINER_ID ClfsLsnContainer(
 
 ### -param plsn [in]
 
-A pointer to a <a href="kernel.clfs_lsn">CLFS_LSN</a> structure from which the container identifier is retrieved.
+A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure from which the container identifier is retrieved.
 
 
 ## -returns
@@ -138,18 +139,18 @@ Any level
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfslsncreate">ClfsLsnCreate</a>
+<a href="..\wdm\nf-wdm-clfslsncreate.md">ClfsLsnCreate</a>
 </dt>
 <dt>
-<a href="kernel.clfslsnrecordsequence">ClfsLsnRecordSequence</a>
+<a href="..\wdm\nf-wdm-clfslsnrecordsequence.md">ClfsLsnRecordSequence</a>
 </dt>
 <dt>
-<a href="kernel.clfslsnblockoffset">ClfsLsnBlockOffset</a>
+<a href="..\wdm\nf-wdm-clfslsnblockoffset.md">ClfsLsnBlockOffset</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsLsnContainer routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsLsnContainer routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

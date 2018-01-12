@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_GET_CHARS
+UID: NI:ntddser.IOCTL_SERIAL_GET_CHARS
 title: IOCTL_SERIAL_GET_CHARS
 author: windows-driver-content
 description: The IOCTL_SERIAL_GET_CHARS request retrieves the special characters that the serial controller driver uses with handshake flow control. The special characters are described by a SERIAL_CHARS structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_CHARS IOCTL
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>IOCTL_SERIAL_GET_CHARS</b> request retrieves the special characters that the serial controller driver uses with handshake flow control. The special characters are described by a <a href="serports.serial_chars">SERIAL_CHARS</a> structure.
+The <b>IOCTL_SERIAL_GET_CHARS</b> request retrieves the special characters that the serial controller driver uses with handshake flow control. The special characters are described by a <a href="..\ntddser\ns-ntddser-_serial_chars.md">SERIAL_CHARS</a> structure.
 
 To set special characters, a client can use an <a href="..\ntddser\ni-ntddser-ioctl_serial_set_chars.md">IOCTL_SERIAL_SET_CHARS</a> request.
 
@@ -101,7 +102,7 @@ Header
 <a href="..\ntddser\ni-ntddser-ioctl_serial_set_chars.md">IOCTL_SERIAL_SET_CHARS</a>
 </dt>
 <dt>
-<a href="serports.serial_chars">SERIAL_CHARS</a>
+<a href="..\ntddser\ns-ntddser-_serial_chars.md">SERIAL_CHARS</a>
 </dt>
 </dl>
  

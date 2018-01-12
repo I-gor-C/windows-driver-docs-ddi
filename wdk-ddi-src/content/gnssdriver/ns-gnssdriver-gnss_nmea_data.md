@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_NMEA_DATA
+UID: NS:gnssdriver.GNSS_NMEA_DATA
 title: GNSS_NMEA_DATA
 author: windows-driver-content
 description: This structure contains generic (non-parsed) NMEA data.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 6B890F85-0E77-41D2-B3B9-004F1882B6B5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_NMEA_DATA, PGNSS_NMEA_DATA, GNSS_NMEA_DATA, *PGNSS_NMEA_DATA
+ms.keywords: GNSS_NMEA_DATA, *PGNSS_NMEA_DATA, GNSS_NMEA_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_NMEA_DATA, GNSS_NMEA_DATA
 ---
 
 # GNSS_NMEA_DATA structure

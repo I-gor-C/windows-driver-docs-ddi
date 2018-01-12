@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11.DOT11_BSS_ENTRY
+UID: NS:windot11.DOT11_BSS_ENTRY
 title: DOT11_BSS_ENTRY
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_bss_entry.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 50661fc9-2f1f-4c9a-bc15-1cdf7c1f6d01
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: DOT11_BSS_ENTRY, *PDOT11_BSS_ENTRY, PDOT11_BSS_ENTRY, DOT11_BSS_ENTRY
+ms.date: 1/8/2018
+ms.keywords: DOT11_BSS_ENTRY, DOT11_BSS_ENTRY, *PDOT11_BSS_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_BSS_ENTRY, *PDOT11_BSS_ENTRY
 req.product: Windows 10 or later.
 ---
 
@@ -87,7 +88,7 @@ The attributes of the PHY referenced by the
 The media access control (MAC) address of the access point (AP) (for infrastructure BSS networks)
      or peer station (for independent BSS networks) that sent the 802.11 Beacon or Probe Response frame
      received by the 802.11 station while scanning. The data type for this member is the 
-     <a href="netvista.dot11_mac_address">DOT11_MAC_ADDRESS</a> structure.
+     <a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a> structure.
 
 
 ### -field dot11BSSType
@@ -96,7 +97,7 @@ The BSS network type.
      
 
 The data type for this member is the 
-     <a href="netvista.dot11_bss_type">DOT11_BSS_TYPE</a> enumeration. The miniport
+     <a href="..\wlantypes\ne-wlantypes-_dot11_bss_type.md">DOT11_BSS_TYPE</a> enumeration. The miniport
      driver must not set this member to the 
      <b>dot11_BSS_type_any</b> value.
 
@@ -111,7 +112,7 @@ The received signal strength indicator (RSSI) value, in units of decibels refere
 
 The link quality value ranging from 0 through 100. A value of 100 specifies the highest link
      quality. For more information about determining the link quality, see 
-     <a href="netvista.link_quality_operations">Link Quality Operations</a>.
+     <a href="https://msdn.microsoft.com/a649114f-39d9-4cb1-9190-985dc7967268">Link Quality Operations</a>.
 
 
 ### -field bInRegDomain
@@ -171,7 +172,7 @@ The value of the Timestamp field from the 802.11 Beacon or Probe Response frame.
 ### -field ullHostTimestamp
 
 The timestamp, resolved through a call to 
-     <a href="netvista.ndisgetcurrentsystemtime">NdisGetCurrentSystemTime</a>, which
+     <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>, which
      records when the 802.11 station received the 802.11 Beacon or Probe Response frame.
 
 
@@ -245,20 +246,20 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_bss_list">DOT11_BSS_LIST</a>
+<a href="..\wlclient\ns-wlclient-_dot11_bss_list.md">DOT11_BSS_LIST</a>
 </dt>
 <dt>
-<a href="netvista.dot11_bss_type">DOT11_BSS_TYPE</a>
+<a href="..\wlantypes\ne-wlantypes-_dot11_bss_type.md">DOT11_BSS_TYPE</a>
 </dt>
 <dt>
-<a href="netvista.dot11_mac_address">DOT11_MAC_ADDRESS</a>
+<a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
 </dt>
 <dt>
 <a href="..\windot11\ns-windot11-dot11_bss_entry_phy_specific_info.md">
    DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO</a>
 </dt>
 <dt>
-<a href="netvista.ndisgetcurrentsystemtime">NdisGetCurrentSystemTime</a>
+<a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569360">OID_DOT11_ENUM_BSS_LIST</a>
@@ -275,5 +276,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_BSS_ENTRY structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_BSS_ENTRY structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

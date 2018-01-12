@@ -1,14 +1,14 @@
 ---
-UID: NS.USBSCAN._USBSCAN_PIPE_CONFIGURATION
+UID: NS:usbscan._USBSCAN_PIPE_CONFIGURATION
 title: _USBSCAN_PIPE_CONFIGURATION
 author: windows-driver-content
 description: The USBSCAN_PIPE_CONFIGURATION structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_PIPE_CONFIGURATION.
 old-location: image\usbscan_pipe_configuration.htm
-old-project: Image
+old-project: image
 ms.assetid: c9b0247b-1444-46c9-a430-897594f8d223
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBSCAN_PIPE_CONFIGURATION, PUSBSCAN_PIPE_CONFIGURATION, *PUSBSCAN_PIPE_CONFIGURATION, USBSCAN_PIPE_CONFIGURATION
+ms.date: 1/10/2018
+ms.keywords: _USBSCAN_PIPE_CONFIGURATION, *PUSBSCAN_PIPE_CONFIGURATION, USBSCAN_PIPE_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBSCAN_PIPE_CONFIGURATION, USBSCAN_PIPE_CONFIGURATION
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The USBSCAN_PIPE_CONFIGURATION structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_get_pipe_configuration.md">IOCTL_GET_PIPE_CONFIGURATION</a>.
+The USBSCAN_PIPE_CONFIGURATION structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_get_pipe_configuration.md">IOCTL_GET_PIPE_CONFIGURATION</a>.
 
 
 
@@ -62,7 +63,7 @@ The number of transfer pipes supported for the device.
 
 ### -field PipeInfo
 
-Pointer to a <b>NumberOfPipes</b>-sized array of <a href="image.usbscan_pipe_information">USBSCAN_PIPE_INFORMATION</a> structures.
+Pointer to a <b>NumberOfPipes</b>-sized array of <a href="..\usbscan\ns-usbscan-_usbscan_pipe_information.md">USBSCAN_PIPE_INFORMATION</a> structures.
 
 
 ## -remarks

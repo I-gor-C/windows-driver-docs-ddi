@@ -1,5 +1,5 @@
 ---
-UID: NF.wpprecorder.WppRecorderGetTriageInfo
+UID: NF:wpprecorder.WppRecorderGetTriageInfo
 title: WppRecorderGetTriageInfo macro
 author: windows-driver-content
 description: The WppRecorderGetTriageInfo.
@@ -7,7 +7,7 @@ old-location: devtest\wpprecordergettriageinfo.htm
 old-project: devtest
 ms.assetid: D2790496-1F86-4EF0-8AFE-77AC0C89EE05
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: WppRecorderGetTriageInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ NTSTATUS WppRecorderGetTriageInfo(
 
 ### -param WppTriageInfo [out]
 
-Pointer to a <a href="devtest.wpp_triage_info">WPP_TRIAGE_INFO</a> structure.
+Pointer to a <a href="..\wpprecorder\ns-wpprecorder-_wpp_triage_info.md">WPP_TRIAGE_INFO</a> structure.
 
 
 ## -remarks

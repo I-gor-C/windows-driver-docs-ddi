@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3DWDDM2_2DDI_SHADERCACHE_HASH
+UID: NS:d3d10umddi.D3DWDDM2_2DDI_SHADERCACHE_HASH
 title: D3DWDDM2_2DDI_SHADERCACHE_HASH
 author: windows-driver-content
 description: Contains a hash value for a shader cache.
@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_2ddi_shadercache_hash.htm
 old-project: display
 ms.assetid: 1024FF58-7758-473A-8B1F-9CE184B9667A
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DWDDM2_2DDI_SHADERCACHE_HASH, D3DWDDM2_2DDI_SHADERCACHE_HASH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DWDDM2_2DDI_SHADERCACHE_HASH
 ---
 
 # D3DWDDM2_2DDI_SHADERCACHE_HASH structure

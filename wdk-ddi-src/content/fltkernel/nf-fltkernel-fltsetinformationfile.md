@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltSetInformationFile
+UID: NF:fltkernel.FltSetInformationFile
 title: FltSetInformationFile function
 author: windows-driver-content
 description: FltSetInformationFile sets information for a given file.
@@ -7,7 +7,7 @@ old-location: ifsk\fltsetinformationfile.htm
 old-project: ifsk
 ms.assetid: 8d0a91ef-9fb0-45a6-979a-614aed1703a5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltSetInformationFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltSetInformationFile function
@@ -92,7 +93,7 @@ Specifies the type of information to be set for the file. The following values a
 
 </td>
 <td>
-Set <a href="ifsk.file_allocation_information">FILE_ALLOCATION_INFORMATION</a> for the file. 
+Set <a href="..\ntifs\ns-ntifs-_file_allocation_information.md">FILE_ALLOCATION_INFORMATION</a> for the file. 
 
 </td>
 </tr>
@@ -102,7 +103,7 @@ Set <a href="ifsk.file_allocation_information">FILE_ALLOCATION_INFORMATION</a> f
 
 </td>
 <td>
-Set <a href="kernel.file_basic_information">FILE_BASIC_INFORMATION</a> for the file. 
+Set <a href="..\wdm\ns-wdm-_file_basic_information.md">FILE_BASIC_INFORMATION</a> for the file. 
 
 </td>
 </tr>
@@ -112,7 +113,7 @@ Set <a href="kernel.file_basic_information">FILE_BASIC_INFORMATION</a> for the f
 
 </td>
 <td>
-Set <a href="kernel.file_disposition_information">FILE_DISPOSITION_INFORMATION</a> for the file. 
+Set <a href="..\ntddk\ns-ntddk-_file_disposition_information.md">FILE_DISPOSITION_INFORMATION</a> for the file. 
 
 </td>
 </tr>
@@ -122,7 +123,7 @@ Set <a href="kernel.file_disposition_information">FILE_DISPOSITION_INFORMATION</
 
 </td>
 <td>
-Set <a href="kernel.file_end_of_file_information">FILE_END_OF_FILE_INFORMATION</a> for the file. 
+Set <a href="..\ntddk\ns-ntddk-_file_end_of_file_information.md">FILE_END_OF_FILE_INFORMATION</a> for the file. 
 
 </td>
 </tr>
@@ -132,7 +133,7 @@ Set <a href="kernel.file_end_of_file_information">FILE_END_OF_FILE_INFORMATION</
 
 </td>
 <td>
-Set <a href="ifsk.file_link_information">FILE_LINK_INFORMATION</a> for the file. 
+Set <a href="..\ntifs\ns-ntifs-_file_link_information.md">FILE_LINK_INFORMATION</a> for the file. 
 
 </td>
 </tr>
@@ -142,7 +143,7 @@ Set <a href="ifsk.file_link_information">FILE_LINK_INFORMATION</a> for the file.
 
 </td>
 <td>
-Set <a href="kernel.file_position_information">FILE_POSITION_INFORMATION</a> for the file. 
+Set <a href="..\wdm\ns-wdm-_file_position_information.md">FILE_POSITION_INFORMATION</a> for the file. 
 
 </td>
 </tr>
@@ -152,7 +153,7 @@ Set <a href="kernel.file_position_information">FILE_POSITION_INFORMATION</a> for
 
 </td>
 <td>
-Set <a href="ifsk.file_rename_information">FILE_RENAME_INFORMATION</a> for the file. For more information about file renaming, see the following Remarks section. 
+Set <a href="..\ntifs\ns-ntifs-_file_rename_information.md">FILE_RENAME_INFORMATION</a> for the file. For more information about file renaming, see the following Remarks section. 
 
 </td>
 </tr>
@@ -162,7 +163,7 @@ Set <a href="ifsk.file_rename_information">FILE_RENAME_INFORMATION</a> for the f
 
 </td>
 <td>
-Set <a href="kernel.file_valid_data_length_information">FILE_VALID_DATA_LENGTH_INFORMATION</a> for the file. 
+Set <a href="..\ntddk\ns-ntddk-_file_valid_data_length_information.md">FILE_VALID_DATA_LENGTH_INFORMATION</a> for the file. 
 
 </td>
 </tr>
@@ -177,9 +178,9 @@ Set <a href="kernel.file_valid_data_length_information">FILE_VALID_DATA_LENGTH_I
 ## -remarks
 A minifilter driver calls <b>FltSetInformationFile</b> to set information for a given file. The file must currently be open. 
 
-A file rename operation imposes the following restriction on the parameter values passed to <b>FltSetInformationFile</b>: As noted in the reference entry for <a href="ifsk.file_rename_information">FILE_RENAME_INFORMATION</a>, a file or directory can only be renamed within a volume. In other words, a rename operation cannot cause a file or directory to be moved to a different volume. Unlike <a href="kernel.zwsetinformationfile">ZwSetInformationFile</a>, <b>FltSetInformationFile</b> does not validate the contents of the FILE_RENAME_INFORMATION structure. Thus the caller of <b>FltSetInformationFile</b> is responsible for ensuring that the new name for the file or directory is on the same volume as the old name. 
+A file rename operation imposes the following restriction on the parameter values passed to <b>FltSetInformationFile</b>: As noted in the reference entry for <a href="..\ntifs\ns-ntifs-_file_rename_information.md">FILE_RENAME_INFORMATION</a>, a file or directory can only be renamed within a volume. In other words, a rename operation cannot cause a file or directory to be moved to a different volume. Unlike <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>, <b>FltSetInformationFile</b> does not validate the contents of the FILE_RENAME_INFORMATION structure. Thus the caller of <b>FltSetInformationFile</b> is responsible for ensuring that the new name for the file or directory is on the same volume as the old name. 
 
-Minifilter drivers must use <b>FltSetInformationFile</b> , not <a href="kernel.zwsetinformationfile">ZwSetInformationFile</a>, to rename a file. 
+Minifilter drivers must use <b>FltSetInformationFile</b> , not <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>, to rename a file. 
 
 
 ## -requirements
@@ -243,42 +244,42 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_allocation_information">FILE_ALLOCATION_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_allocation_information.md">FILE_ALLOCATION_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_basic_information">FILE_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_file_basic_information.md">FILE_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_disposition_information">FILE_DISPOSITION_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_disposition_information.md">FILE_DISPOSITION_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_end_of_file_information">FILE_END_OF_FILE_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_end_of_file_information.md">FILE_END_OF_FILE_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_link_information">FILE_LINK_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_link_information.md">FILE_LINK_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_position_information">FILE_POSITION_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_file_position_information.md">FILE_POSITION_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.file_rename_information">FILE_RENAME_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_rename_information.md">FILE_RENAME_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.file_valid_data_length_information">FILE_VALID_DATA_LENGTH_INFORMATION</a>
+<a href="..\ntddk\ns-ntddk-_file_valid_data_length_information.md">FILE_VALID_DATA_LENGTH_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltqueryinformationfile">FltQueryInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryinformationfile.md">FltQueryInformationFile</a>
 </dt>
 <dt>
-<a href="ifsk.fltqueryvolumeinformationfile">FltQueryVolumeInformationFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformationfile.md">FltQueryVolumeInformationFile</a>
 </dt>
 <dt>
-<a href="kernel.zwsetinformationfile">ZwSetInformationFile</a>
+<a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetInformationFile function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltSetInformationFile function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

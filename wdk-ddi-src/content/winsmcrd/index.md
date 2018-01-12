@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:winsmcrd
 ---
 
 # Winsmcrd.h header

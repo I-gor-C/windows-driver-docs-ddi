@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeInitializeMutex
+UID: NF:wdm.KeInitializeMutex
 title: KeInitializeMutex function
 author: windows-driver-content
 description: The KeInitializeMutex routine initializes a mutex object, setting it to a signaled state.
@@ -7,7 +7,7 @@ old-location: kernel\keinitializemutex.htm
 old-project: kernel
 ms.assetid: dca6c4a7-66e0-4bdd-9fdd-a32d49836980
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeInitializeMutex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -151,7 +152,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -159,27 +160,27 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exinitializefastmutex">ExInitializeFastMutex</a>
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
 </dt>
 <dt>
-<a href="kernel.kereadstatemutex">KeReadStateMutex</a>
+<a href="..\wdm\nf-wdm-kereadstatemutex.md">KeReadStateMutex</a>
 </dt>
 <dt>
-<a href="kernel.kereleasemutex">KeReleaseMutex</a>
+<a href="..\wdm\nf-wdm-kereleasemutex.md">KeReleaseMutex</a>
 </dt>
 <dt>
-<a href="kernel.kewaitformultipleobjects">KeWaitForMultipleObjects</a>
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
 </dt>
 <dt>
-<a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeInitializeMutex routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeInitializeMutex routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

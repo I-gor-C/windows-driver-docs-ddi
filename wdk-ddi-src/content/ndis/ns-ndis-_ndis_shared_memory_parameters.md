@@ -1,14 +1,14 @@
 ---
-UID: NS.NDIS._NDIS_SHARED_MEMORY_PARAMETERS
+UID: NS:ndis._NDIS_SHARED_MEMORY_PARAMETERS
 title: _NDIS_SHARED_MEMORY_PARAMETERS
 author: windows-driver-content
 description: The NDIS_SHARED_MEMORY_PARAMETERS structure specifies the shared memory parameters for a shared memory allocation request.
 old-location: netvista\ndis_shared_memory_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 286b08f6-179e-426e-ae65-b108529d049a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_SHARED_MEMORY_PARAMETERS, NDIS_SHARED_MEMORY_PARAMETERS, PNDIS_SHARED_MEMORY_PARAMETERS, *PNDIS_SHARED_MEMORY_PARAMETERS
+ms.date: 1/8/2018
+ms.keywords: _NDIS_SHARED_MEMORY_PARAMETERS, NDIS_SHARED_MEMORY_PARAMETERS, *PNDIS_SHARED_MEMORY_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NDIS_SHARED_MEMORY_PARAMETERS, *PNDIS_SHARED_MEMORY_PARAMETERS
 ---
 
 # _NDIS_SHARED_MEMORY_PARAMETERS structure
@@ -68,7 +69,7 @@ typedef struct _NDIS_SHARED_MEMORY_PARAMETERS {
 
 ### -field Header
 
-The type, revision, and size of the NDIS_SHARED_MEMORY_PARAMETERS structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the NDIS_SHARED_MEMORY_PARAMETERS structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the NDIS_SHARED_MEMORY_PARAMETERS structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
 
@@ -119,7 +120,7 @@ An NDIS_RECEIVE_QUEUE_ID value that contains a virtual machine queue (VMQ) or si
 
 An NDIS_HANDLE value that identifies a block of shared memory. NDIS provides this handle before it
      returns from the 
-     <a href="netvista.ndisallocatesharedmemory">
+     <a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">
      NdisAllocateSharedMemory</a> function.
 
 
@@ -131,7 +132,7 @@ A NODE_REQUIREMENT value that indicates the preferred node to use while allocati
 ### -field Usage
 
 An 
-     <a href="netvista.ndis_shared_memory_usage">NDIS_SHARED_MEMORY_USAGE</a> enumeration
+     <a href="..\ndis\ne-ndis-_ndis_shared_memory_usage.md">NDIS_SHARED_MEMORY_USAGE</a> enumeration
      value that specifies the purpose of the shared memory.
 
 
@@ -155,7 +156,7 @@ A ULONG value that contains the length, in bytes, of the scatter gather list buf
 ### -field SGListBuffer
 
 A pointer to a 
-     <a href="kernel.scatter_gather_list">SCATTER_GATHER_LIST</a> structure.
+     <a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a> structure.
 
 
 ### -field VPortId
@@ -172,7 +173,7 @@ The NDIS_SHARED_MEMORY_PARAMETERS structure specifies the shared memory paramete
     allocation request for a receive queue.
 
 NDIS drivers pass this structure to the 
-    <a href="netvista.ndisallocatesharedmemory">NdisAllocateSharedMemory</a> function
+    <a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">NdisAllocateSharedMemory</a> function
     and NDIS passes this structure to the 
     <a href="..\ndis\nc-ndis-allocate_shared_memory_handler.md">NetAllocateSharedMemory</a> function
     (ALLOCATE_SHARED_MEMORY_HANDLER entry point).
@@ -206,24 +207,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_shared_memory_usage">NDIS_SHARED_MEMORY_USAGE</a>
+<a href="..\ndis\ne-ndis-_ndis_shared_memory_usage.md">NDIS_SHARED_MEMORY_USAGE</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatesharedmemory">NdisAllocateSharedMemory</a>
+<a href="..\ndis\nf-ndis-ndisallocatesharedmemory.md">NdisAllocateSharedMemory</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-allocate_shared_memory_handler.md">NetAllocateSharedMemory</a>
 </dt>
 <dt>
-<a href="kernel.scatter_gather_list">SCATTER_GATHER_LIST</a>
+<a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_SHARED_MEMORY_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_SHARED_MEMORY_PARAMETERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

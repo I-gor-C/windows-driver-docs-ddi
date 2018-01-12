@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSCSI._SRB_IO_CONTROL
+UID: NS:ntddscsi._SRB_IO_CONTROL
 title: _SRB_IO_CONTROL
 author: windows-driver-content
 description: SRB_IO_CONTROL structure
@@ -7,8 +7,8 @@ old-location: storage\srb_io_control.htm
 old-project: storage
 ms.assetid: 754d2a4c-6a22-4c25-87e2-e30e87b9c1ba
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SRB_IO_CONTROL, SRB_IO_CONTROL, PSRB_IO_CONTROL, *PSRB_IO_CONTROL
+ms.date: 1/10/2018
+ms.keywords: _SRB_IO_CONTROL, SRB_IO_CONTROL, *PSRB_IO_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SRB_IO_CONTROL, *PSRB_IO_CONTROL
 ---
 
 # _SRB_IO_CONTROL structure
@@ -72,7 +73,7 @@ Indicates the interval in seconds that the request can execute before the OS-spe
 
 ### -field ControlCode
 
-Indicates the operation to be performed. There are no system-defined operations. Values must be defined by the driver as a set of private I/O control codes with which the application can make requests by calling the Win32 <a href="base.deviceiocontrol">DeviceIoControl</a> function. For more information about defining private I/O control codes for device control requests, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565406">Using I/O Control Codes</a>.
+Indicates the operation to be performed. There are no system-defined operations. Values must be defined by the driver as a set of private I/O control codes with which the application can make requests by calling the Win32 <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a> function. For more information about defining private I/O control codes for device control requests, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565406">Using I/O Control Codes</a>.
 
 
 ### -field ReturnCode
@@ -107,16 +108,16 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.scsi_port_i_o_control_codes">SCSI Port I/O Control Codes</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565367">SCSI Port I/O Control Codes</a>
 </dt>
 <dt>SCSI Port I/O Control Codes</dt>
 <dt>
-<a href="storage.scsi_request_block">SCSI_REQUEST_BLOCK</a>
+<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SRB_IO_CONTROL structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SRB_IO_CONTROL structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

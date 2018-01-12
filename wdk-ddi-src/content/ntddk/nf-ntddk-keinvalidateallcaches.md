@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.KeInvalidateAllCaches
+UID: NF:ntddk.KeInvalidateAllCaches
 title: KeInvalidateAllCaches function
 author: windows-driver-content
 description: The KeInvalidateAllCaches routine flushes all processor caches.
@@ -7,7 +7,7 @@ old-location: kernel\keinvalidateallcaches.htm
 old-project: kernel
 ms.assetid: a7971cd1-1e9b-4d81-8422-1ee36651973a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeInvalidateAllCaches
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # KeInvalidateAllCaches function

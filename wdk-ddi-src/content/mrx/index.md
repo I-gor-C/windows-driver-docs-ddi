@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:mrx
 ---
 
 # Mrx.h header
@@ -29,7 +29,7 @@ Mrx.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [PMRX_CALLDOWN callback](nc-mrx-pmrx_calldown.md) | The MRxCleanupFobx routine is called by RDBSS to request the network mini-redirector to close a file system object extension. RDBSS issues this call in response to receiving an IRP_MJ_CLEANUP request on a file object. |
+| [PMRX_CALLDOWN callback](nc-mrx-pmrx_calldown.md) | This callback is called by RDBSS to request that the network mini-redirector perform an action based in the supplied IRP. |
 | [PMRX_CALLDOWN_CTX callback](nc-mrx-pmrx_calldown_ctx.md) | TheMRxStart routine is called by RDBSS to start the network mini-redirector. |
 | [PMRX_CHANGE_BUFFERING_STATE_CALLDOWN callback](nc-mrx-pmrx_change_buffering_state_calldown.md) | TheMRxCompleteBufferingStateChangeRequest routine is called by RDBSS to notify the network mini-redirector that a buffering state change request has been completed. |
 | [PMRX_CHKDIR_CALLDOWN callback](nc-mrx-pmrx_chkdir_calldown.md) | TheMRxIsValidDirectory routine is called by RDBSS to request that a network mini-redirector check for the existence of a remote directory. |

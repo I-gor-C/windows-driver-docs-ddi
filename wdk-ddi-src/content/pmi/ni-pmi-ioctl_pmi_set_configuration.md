@@ -1,5 +1,5 @@
 ---
-UID: NI.pmi.IOCTL_PMI_SET_CONFIGURATION
+UID: NI:pmi.IOCTL_PMI_SET_CONFIGURATION
 title: IOCTL_PMI_SET_CONFIGURATION
 author: windows-driver-content
 description: The IOCTL_PMI_SET_CONFIGURATION request sets the configuration data for a power meter.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PMI_MEASUREMENT_UNIT
 ---
 
 # IOCTL_PMI_SET_CONFIGURATION IOCTL
@@ -45,11 +46,11 @@ The <b>IOCTL_PMI_SET_CONFIGURATION</b> request sets the configuration data for a
 ## -ioctlparameters
 
 ### -input-buffer
-The <b>AssociatedIrp.SystemBuffer</b> member of the I/O request packet (IRP) points to an initiator-allocated input buffer that contains a <a href="powermeter.pmi_configuration">PMI_CONFIGURATION</a> structure. This structure contains the configuration data.
+The <b>AssociatedIrp.SystemBuffer</b> member of the I/O request packet (IRP) points to an initiator-allocated input buffer that contains a <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a> structure. This structure contains the configuration data.
 
 
 ### -input-buffer-length
-The <b>Parameters.DeviceIoControl.InputBufferLength</b> member of the IRP's current I/O stack location (<a href="kernel.io_stack_location">IO_STACK_LOCATION</a>) is set to the size in bytes of the input buffer that is pointed to by the <b>AssociatedIrp.SystemBuffer</b> member. This size must be greater than or equal to <b>sizeof</b>(<b>PMI_CONFIGURATION</b>) or the request fails with an error status of STATUS_BUFFER_TOO_SMALL.
+The <b>Parameters.DeviceIoControl.InputBufferLength</b> member of the IRP's current I/O stack location (<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>) is set to the size in bytes of the input buffer that is pointed to by the <b>AssociatedIrp.SystemBuffer</b> member. This size must be greater than or equal to <b>sizeof</b>(<b>PMI_CONFIGURATION</b>) or the request fails with an error status of STATUS_BUFFER_TOO_SMALL.
 
 
 ### -output-buffer
@@ -70,7 +71,7 @@ None.
 
 ### -status-block
 I/O Status block
-The <b>Information</b> member is set to the size, in bytes, of a <a href="powermeter.pmi_configuration">PMI_CONFIGURATION</a> structure.
+The <b>Information</b> member is set to the size, in bytes, of a <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a> structure.
 
 The <b>Status</b> member is set to one of the following values:
 
@@ -78,11 +79,11 @@ The <b>Status</b> member is set to one of the following values:
 
 The WDM driver that supports the PMI interface has completed the IOCTL request successfully. 
 
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="kernel.irp">IRP</a> is less than the size, in bytes, of a <a href="powermeter.pmi_configuration">PMI_CONFIGURATION</a> structure. 
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> is less than the size, in bytes, of a <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a> structure. 
 
 
 ## -remarks
-The <b>IOCTL_PMI_SET_CONFIGURATION</b> request sets the configuration parameters for the power meter. The <b>AssociatedIrp.SystemBuffer</b> member of the IRP references a buffer that contains a <a href="powermeter.pmi_configuration">PMI_CONFIGURATION</a> structure. The <b>ConfigurationType</b> member of this structure contains information about the type of PMI configuration data to set in the power meter.
+The <b>IOCTL_PMI_SET_CONFIGURATION</b> request sets the configuration parameters for the power meter. The <b>AssociatedIrp.SystemBuffer</b> member of the IRP references a buffer that contains a <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a> structure. The <b>ConfigurationType</b> member of this structure contains information about the type of PMI configuration data to set in the power meter.
 
 Only PMI configuration data that the power meter supports with read/write permissions can be changed by using a set request of <b>IOCTL_PMI_SET_CONFIGURATION</b>. A set request of <b>IOCTL_PMI_SET_CONFIGURATION</b> to change read-only PMI configuration data will fail, and the data will not be changed on the power meter.
 
@@ -115,16 +116,16 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.io_stack_location">IO_STACK_LOCATION</a>
+<a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="kernel.irp">IRP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_configuration">PMI_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
 </dt>
 </dl>
  

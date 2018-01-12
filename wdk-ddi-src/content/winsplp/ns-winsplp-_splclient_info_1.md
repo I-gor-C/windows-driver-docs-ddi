@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP._SPLCLIENT_INFO_1
+UID: NS:winsplp._SPLCLIENT_INFO_1
 title: _SPLCLIENT_INFO_1
 author: windows-driver-content
 description: The SPLCLIENT_INFO_1 structure is used as input to the GenerateCopyFilePaths function that is exported by Point and Print DLLs.
@@ -7,8 +7,8 @@ old-location: print\splclient_info_1.htm
 old-project: print
 ms.assetid: a9659f77-e84b-471a-a778-a4628d89ce19
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SPLCLIENT_INFO_1, LPSPLCLIENT_INFO_1, SPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1, PSPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1
+ms.date: 1/8/2018
+ms.keywords: _SPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1, SPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSPLCLIENT_INFO_1, SPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The SPLCLIENT_INFO_1 structure is used as input to the <a href="print.generatecopyfilepaths">GenerateCopyFilePaths</a> function that is exported by <a href="https://msdn.microsoft.com/7ead940e-8426-4756-890f-f3607dc1f9ca">Point and Print DLLs</a>.
+The SPLCLIENT_INFO_1 structure is used as input to the <a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a> function that is exported by <a href="https://msdn.microsoft.com/7ead940e-8426-4756-890f-f3607dc1f9ca">Point and Print DLLs</a>.
 
 
 
@@ -96,7 +97,7 @@ The client's processor architecture, as returned by the Window SDK <b>GetSystemI
 
 
 ## -remarks
-Values for all structure members are supplied by the print spooler before the spooler calls <a href="print.generatecopyfilepaths">GenerateCopyFilePaths</a>.
+Values for all structure members are supplied by the print spooler before the spooler calls <a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a>.
 
 
 ## -requirements

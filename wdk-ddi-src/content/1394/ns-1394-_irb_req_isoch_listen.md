@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_LISTEN
+UID: NS:1394._IRB_REQ_ISOCH_LISTEN
 title: _IRB_REQ_ISOCH_LISTEN
 author: windows-driver-content
 description: This structure contains the fields necessary to carry out a ReqIsochListen request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_LISTEN
 ---
 
 # _IRB_REQ_ISOCH_LISTEN structure

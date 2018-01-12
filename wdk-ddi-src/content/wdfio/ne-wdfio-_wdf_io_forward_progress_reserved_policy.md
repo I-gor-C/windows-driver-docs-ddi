@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfio._WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY
+UID: NE:wdfio._WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY
 title: _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY
 author: windows-driver-content
 description: The WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY enumeration identifies actions that the framework can take when it receives an I/O request for your driver, if a low-memory situation exists.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_forward_progress_reserved_policy.htm
 old-project: wdf
 ms.assetid: 6d530cf2-de06-4aa3-9f4d-08619906c9ed
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <= DISPATCH_LEVEL (see Remarks section)
+req.irql: PASSIVE_LEVEL
+req.typenames: WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY
 req.product: Windows 10 or later.
 ---
 
@@ -74,11 +75,11 @@ In a low-memory situation, the framework calls the driver's <a href="..\wdfio\nc
 
 ### -field WdfIoForwardProgressReservedPolicyPagingIO
 
-In a low-memory situation, if the <b>Flags</b> member of the I/O request's <a href="kernel.irp">IRP</a> structure indicates a paging operation, the framework uses a reserved request object, if one is available. If the I/O request is not a paging operation, the framework completes the I/O request with an error status value.
+In a low-memory situation, if the <b>Flags</b> member of the I/O request's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure indicates a paging operation, the framework uses a reserved request object, if one is available. If the I/O request is not a paging operation, the framework completes the I/O request with an error status value.
 
 
 ## -remarks
-The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</b> enumeration is used as a member type in the <a href="wdf.wdf_io_queue_forward_progress_policy">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.
+The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</b> enumeration is used as a member type in the <a href="..\wdfio\ns-wdfio-_wdf_io_queue_forward_progress_policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.
 
 
 ## -requirements

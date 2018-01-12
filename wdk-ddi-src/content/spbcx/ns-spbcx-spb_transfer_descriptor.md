@@ -1,5 +1,5 @@
 ---
-UID: NS.SPBCX.SPB_TRANSFER_DESCRIPTOR
+UID: NS:spbcx.SPB_TRANSFER_DESCRIPTOR
 title: SPB_TRANSFER_DESCRIPTOR
 author: windows-driver-content
 description: The SPB_TRANSFER_DESCRIPTOR structure describes a single transfer in an I/O transfer sequence.
@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 3D370646-3879-4415-8D80-04D0B23839B0
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR, *PSPB_TRANSFER_DESCRIPTOR
+ms.keywords: SPB_TRANSFER_DESCRIPTOR, *PSPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: *PSPB_TRANSFER_DESCRIPTOR, SPB_TRANSFER_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 

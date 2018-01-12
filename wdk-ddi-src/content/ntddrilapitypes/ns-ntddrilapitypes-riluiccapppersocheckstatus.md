@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILUICCAPPPERSOCHECKSTATUS
+UID: NS:ntddrilapitypes.RILUICCAPPPERSOCHECKSTATUS
 title: RILUICCAPPPERSOCHECKSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccapppersocheckstatus.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 6438f692-75b0-4a41-a2f9-68b0fe3f23cf
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUICCAPPPERSOCHECKSTATUS, *LPRILUICCAPPPERSOCHECKSTATUS, LPRILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS
+ms.date: 1/8/2018
+ms.keywords: RILUICCAPPPERSOCHECKSTATUS, *LPRILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS
 ---
 
 # RILUICCAPPPERSOCHECKSTATUS structure

@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d9types._D3DSHADER_INSTRUCTION_OPCODE_TYPE
+UID: NE:d3d9types._D3DSHADER_INSTRUCTION_OPCODE_TYPE
 title: _D3DSHADER_INSTRUCTION_OPCODE_TYPE
 author: windows-driver-content
 description: This section lists the operation codes that can be contained in the first 16 bits (0 - 15) of an Instruction Token. The sections that follow describe the token format of the instructions that correspond to the operation codes.
@@ -7,7 +7,7 @@ old-location: display\shader_operation_codes.htm
 old-project: display
 ms.assetid: 58a34fe6-6e63-4022-81b5-2bfc10a75372
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DSHADER_INSTRUCTION_OPCODE_TYPE, D3DSHADER_INSTRUCTION_OPCODE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DSHADER_INSTRUCTION_OPCODE_TYPE
 ---
 
 # _D3DSHADER_INSTRUCTION_OPCODE_TYPE enumeration

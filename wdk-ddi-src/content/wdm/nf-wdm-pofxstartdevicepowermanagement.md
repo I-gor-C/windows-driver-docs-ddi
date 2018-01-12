@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.PoFxStartDevicePowerManagement
+UID: NF:wdm.PoFxStartDevicePowerManagement
 title: PoFxStartDevicePowerManagement function
 author: windows-driver-content
 description: The PoFxStartDevicePowerManagement routine completes the registration of a device with the power management framework (PoFx) and starts device power management.
@@ -7,7 +7,7 @@ old-location: kernel\pofxstartdevicepowermanagement.htm
 old-project: kernel
 ms.assetid: DA034B30-203E-4418-B5BD-1094B3D438FE
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PoFxStartDevicePowerManagement
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ntoskrnl.lib
 req.dll: Ntoskrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID PoFxStartDevicePowerManagement(
 
 ### -param Handle [in]
 
-A handle that represents the registration of the device with the power management framework (PoFx). The device driver previously received this handle from the <a href="kernel.pofxregisterdevice">PoFxRegisterDevice</a> routine.
+A handle that represents the registration of the device with the power management framework (PoFx). The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.
 
 
 ## -returns
@@ -64,9 +65,9 @@ None.
 
 
 ## -remarks
-After a driver calls the <a href="kernel.pofxregisterdevice">PoFxRegisterDevice</a> routine to register a device with PoFx, all components in the device are fully on and in the active condition so that the driver can finish initializing the hardware. To start active power management, the driver must call <b>PoFxStartDevicePowerManagement</b>. By default, this call switches all components to the idle condition.
+After a driver calls the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine to register a device with PoFx, all components in the device are fully on and in the active condition so that the driver can finish initializing the hardware. To start active power management, the driver must call <b>PoFxStartDevicePowerManagement</b>. By default, this call switches all components to the idle condition.
 
-After <b>PoFxStartDevicePowerManagement</b> switches a component to the idle condition, PoFx might immediately start calling the driver's callback routines, even before <b>PoFxStartDevicePowerManagement</b> returns. PoFx calls the driver's <a href="kernel.componentidleconditioncallback">ComponentIdleConditionCallback</a> callback routine to indicate that a component has switched to the idle condition. The driver must not access a component that is in the idle condition. Before the driver can access the component, the driver must call the <a href="kernel.pofxactivatecomponent">PoFxActivateComponent</a> and wait for PoFx to call the driver's <a href="kernel.componentactiveconditioncallback">ComponentActiveConditionCallback</a> callback routine. This callback informs the driver that the component is in the active condition and can safely be accessed.
+After <b>PoFxStartDevicePowerManagement</b> switches a component to the idle condition, PoFx might immediately start calling the driver's callback routines, even before <b>PoFxStartDevicePowerManagement</b> returns. PoFx calls the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a> callback routine to indicate that a component has switched to the idle condition. The driver must not access a component that is in the idle condition. Before the driver can access the component, the driver must call the <a href="..\wdm\nf-wdm-pofxactivatecomponent.md">PoFxActivateComponent</a> and wait for PoFx to call the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a> callback routine. This callback informs the driver that the component is in the active condition and can safely be accessed.
 
 If the driver requires a component to be in the active condition immediately after power management starts, the driver must explicitly activate the component by calling the <b>PoFxActivateComponent</b> routine, and this call must occur after the <b>PoFxRegisterDevice</b> call but before the <b>PoFxStartDevicePowerManagement</b> call.
 
@@ -142,21 +143,21 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.componentactiveconditioncallback">ComponentActiveConditionCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a>
 </dt>
 <dt>
-<a href="kernel.componentidleconditioncallback">ComponentIdleConditionCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a>
 </dt>
 <dt>
-<a href="kernel.pofxactivatecomponent">PoFxActivateComponent</a>
+<a href="..\wdm\nf-wdm-pofxactivatecomponent.md">PoFxActivateComponent</a>
 </dt>
 <dt>
-<a href="kernel.pofxregisterdevice">PoFxRegisterDevice</a>
+<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxStartDevicePowerManagement routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoFxStartDevicePowerManagement routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisFreeMemoryWithTagPriority
+UID: NF:ndis.NdisFreeMemoryWithTagPriority
 title: NdisFreeMemoryWithTagPriority function
 author: windows-driver-content
 description: The NdisFreeMemoryWithTagPriority function releases memory that was allocated with the NdisAllocateMemoryWithTagPriority function.
 old-location: netvista\ndisfreememorywithtagpriority.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3870e2c8-22cf-4f96-8c2b-4c3cac26d50f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisFreeMemoryWithTagPriority
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: See Remarks section.
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisFreeMemoryWithTagPriority function
@@ -40,7 +41,7 @@ req.irql: See Remarks section.
 ## -description
 The 
   <b>NdisFreeMemoryWithTagPriority</b> function releases memory that was allocated with the 
-  <a href="netvista.ndisallocatememorywithtagpriority">
+  <a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
   NdisAllocateMemoryWithTagPriority</a> function.
 
 
@@ -62,10 +63,10 @@ VOID NdisFreeMemoryWithTagPriority(
 
 An NDIS driver or instance handle that was obtained during caller initialization. This should be
      the same handle that the driver passed to the 
-     <a href="netvista.ndisallocatememorywithtagpriority">
+     <a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
      NdisAllocateMemoryWithTagPriority</a> function. For example, a miniport driver can use the NDIS handle
      that it obtained from the 
-     <a href="netvista.ndismregisterminiportdriver">
+     <a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">
      NdisMRegisterMiniportDriver</a> or 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function.
      Other NDIS drivers can use the handles from the following functions:
@@ -74,19 +75,19 @@ An NDIS driver or instance handle that was obtained during caller initialization
 <dl>
 <dd>
 
-<a href="netvista.ndisregisterprotocoldriver">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 
 
 </dd>
 <dd>
 
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 
 
 </dd>
 <dd>
 
-<a href="netvista.ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 
 
 </dd>
@@ -101,7 +102,7 @@ An NDIS driver or instance handle that was obtained during caller initialization
 ### -param VirtualAddress [in]
 
 A pointer to the base virtual address of the allocated memory. This address was returned by the 
-     <a href="netvista.ndisallocatememorywithtagpriority">
+     <a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
      NdisAllocateMemoryWithTagPriority</a> function.
 
 
@@ -201,25 +202,25 @@ See Remarks section.
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatememorywithtagpriority">
+<a href="..\ndis\nf-ndis-ndisallocatememorywithtagpriority.md">
    NdisAllocateMemoryWithTagPriority</a>
 </dt>
 <dt>
-<a href="netvista.ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+<a href="..\ndis\nf-ndis-ndismregisterminiportdriver.md">NdisMRegisterMiniportDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndisregisterprotocoldriver">NdisRegisterProtocolDriver</a>
+<a href="..\ndis\nf-ndis-ndisregisterprotocoldriver.md">NdisRegisterProtocolDriver</a>
 </dt>
 <dt>
-<a href="netvista.ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisFreeMemoryWithTagPriority function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFreeMemoryWithTagPriority function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

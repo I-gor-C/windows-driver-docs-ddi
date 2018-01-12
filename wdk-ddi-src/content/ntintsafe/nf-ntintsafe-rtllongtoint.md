@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlLongToInt
+UID: NF:ntintsafe.RtlLongToInt
 title: RtlLongToInt function
 author: windows-driver-content
 description: Converts a value of type LONG to a value of type INT.
@@ -7,7 +7,7 @@ old-location: kernel\rtllongtoint.htm
 old-project: kernel
 ms.assetid: 9C35B77E-FFEC-42A0-9D2C-9E52E210C941
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlLongToInt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlLongToInt function

@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_CONTENT
+UID: NE:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_CONTENT
 title: _D3DKMDT_VIDPN_PRESENT_PATH_CONTENT
 author: windows-driver-content
 description: The D3DKMDT_VIDPN_PRESENT_PATH_CONTENT enumeration is used to indicate the type of content that is displayed on a VidPN present path.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_present_path_content.htm
 old-project: display
 ms.assetid: 29423933-c3cf-4fe4-b79c-f82718163a23
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_VIDPN_PRESENT_PATH_CONTENT, D3DKMDT_VIDPN_PRESENT_PATH_CONTENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3DKMDT_VIDPN_PRESENT_PATH_CONTENT
 ---
 
 # _D3DKMDT_VIDPN_PRESENT_PATH_CONTENT enumeration
@@ -77,7 +78,7 @@ Indicates that no content type has been specified.
 
 
 ## -remarks
-The <b>Content</b> member of a <a href="display.d3dkmdt_vidpn_present_path">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_CONTENT enumeration.
+The <b>Content</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_present_path.md">D3DKMDT_VIDPN_PRESENT_PATH</a> structure is a value from the D3DKMDT_VIDPN_PRESENT_PATH_CONTENT enumeration.
 
 
 ## -requirements

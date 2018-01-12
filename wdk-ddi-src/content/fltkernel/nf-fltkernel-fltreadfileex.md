@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltReadFileEx
+UID: NF:fltkernel.FltReadFileEx
 title: FltReadFileEx function
 author: windows-driver-content
 description: FltReadFileEx reads data from an open file, stream, or device. This function extends FltReadFile to allow the optional use of an MDL for read data instead of a mapped buffer address.
@@ -7,7 +7,7 @@ old-location: ifsk\fltreadfileex.htm
 old-project: ifsk
 ms.assetid: 356D4CFD-E256-4920-AAB7-D6399F357591
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltReadFileEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltReadFileEx function
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-<b>FltReadFileEx</b> reads data from an open file, stream, or device. This function extends <a href="ifsk.fltreadfile">FltReadFile</a>  to allow the optional use of an MDL for read data instead of a mapped buffer address.
+<b>FltReadFileEx</b> reads data from an open file, stream, or device. This function extends <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>  to allow the optional use of an MDL for read data instead of a mapped buffer address.
 
 
 
@@ -188,11 +189,11 @@ A minifilter driver calls <b>FltReadFileEx</b> to read data from an open file.
 
 The caller set the FLTFL_IO_OPERATION_NON_CACHED flag in the <i>Flags</i> parameter. 
 
-The file object was opened for noncached I/O. Usually, this is done by specifying the FILE_NO_INTERMEDIATE_BUFFERING <i>CreateOptions</i> flag in the preceding call to <a href="ifsk.fltcreatefile">FltCreateFile</a>, <a href="ifsk.fltcreatefileex">FltCreateFileEx</a>, or <a href="kernel.zwcreatefile">ZwCreateFile</a>. 
+The file object was opened for noncached I/O. Usually, this is done by specifying the FILE_NO_INTERMEDIATE_BUFFERING <i>CreateOptions</i> flag in the preceding call to <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>, <a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>, or <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>. 
 
 Noncached I/O imposes the following restrictions on the parameter values passed to <b>FltReadFileEx</b>: 
 
-The buffer that the <i>Buffer</i> parameter points to must be aligned in accordance with the alignment requirement of the underlying storage device. To allocate such an aligned buffer, call <a href="ifsk.fltallocatepoolalignedwithtag">FltAllocatePoolAlignedWithTag</a>. 
+The buffer that the <i>Buffer</i> parameter points to must be aligned in accordance with the alignment requirement of the underlying storage device. To allocate such an aligned buffer, call <a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>. 
 
 The byte offset that the <i>ByteOffset</i> parameter points to must be a nonnegative multiple of the volume's sector size. 
 
@@ -204,7 +205,7 @@ If the value of the <i>CallbackRoutine</i> parameter is not <b>NULL</b>, the rea
 
 If the value of the <i>CallbackRoutine</i> parameter is <b>NULL</b>, the read operation is performed synchronously. That is, <b>FltReadFileEx</b> waits until the read operation is complete before returning. This is true even if the file object that <i>FileObject</i> points to was opened for asynchronous I/O. 
 
-If multiple threads call <b>FltReadFileEx</b> for the same file object, and the file object was opened for synchronous I/O, the filter manager does not attempt to serialize I/O on the file. In this respect, <b>FltReadFileEx</b> differs from <a href="kernel.zwreadfile">ZwReadFile</a>. 
+If multiple threads call <b>FltReadFileEx</b> for the same file object, and the file object was opened for synchronous I/O, the filter manager does not attempt to serialize I/O on the file. In this respect, <b>FltReadFileEx</b> differs from <a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a>. 
 
 The <i>Mdl</i> parameter is provided as a convenience when a minifilter already has an MDL available. The MDL is used directly and the additional step of mapping an address for <i>Buffer</i> can be avoided.
 
@@ -280,36 +281,36 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltallocatepoolalignedwithtag">FltAllocatePoolAlignedWithTag</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatepoolalignedwithtag.md">FltAllocatePoolAlignedWithTag</a>
 </dt>
 <dt>
-<a href="ifsk.fltcreatefile">FltCreateFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
 </dt>
 <dt>
-<a href="ifsk.fltcreatefileex">FltCreateFileEx</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
 </dt>
 <dt>
-<a href="ifsk.fltwritefile">FltWriteFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
 </dt>
 <dt>
-<a href="ifsk.fltwritefileex">FltWriteFileEx</a>
+<a href="..\fltkernel\nf-fltkernel-fltwritefileex.md">FltWriteFileEx</a>
 </dt>
 <dt>
-<a href="kernel.obreferenceobjectbyhandle">ObReferenceObjectByHandle</a>
+<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_completed_async_io_callback.md">PFLT_COMPLETED_ASYNC_IO_CALLBACK</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatefile">ZwCreateFile</a>
+<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
 </dt>
 <dt>
-<a href="kernel.zwreadfile">ZwReadFile</a>
+<a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltReadFileEx function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltReadFileEx function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

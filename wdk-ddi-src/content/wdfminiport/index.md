@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdfminiport
 ---
 
 # Wdfminiport.h header
@@ -16,5 +16,6 @@ Wdfminiport.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [PFN_WDFDEVICEMINIPORTCREATE function](nc-wdfminiport-pfn_wdfdeviceminiportcreate.md) | The WdfDeviceMiniportCreate method creates a framework device object that a miniport driver can use. |
 | [WdfDeviceMiniportCreate function](nf-wdfminiport-wdfdeviceminiportcreate.md) | The WdfDeviceMiniportCreate method creates a framework device object that a miniport driver can use. |
 | [WdfDriverMiniportUnload function](nf-wdfminiport-wdfdriverminiportunload.md) | The WdfDriverMiniportUnload method deletes a specified miniport driver's framework driver object. |

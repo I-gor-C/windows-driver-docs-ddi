@@ -1,13 +1,13 @@
 ---
-UID: NF.knetpwrdepbroker.NpdBrokerInitialize
+UID: NF:knetpwrdepbroker.NpdBrokerInitialize
 title: NpdBrokerInitialize function
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\npdbrokerinitialize.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7B23A6DF-2B78-48DF-BDD4-451A19521CAC
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NpdBrokerInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: KEYWORDSELECTOR
 ---
 
 # NpdBrokerInitialize function

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.ZwSetInformationVirtualMemory
+UID: NF:ntifs.ZwSetInformationVirtualMemory
 title: ZwSetInformationVirtualMemory function
 author: windows-driver-content
 description: The ZwSetInformationVirtualMemory routine performs an operation on a specified list of address ranges in the user address space of a process.
@@ -7,7 +7,7 @@ old-location: kernel\zwsetinformationvirtualmemory.htm
 old-project: kernel
 ms.assetid: 1D53D6C6-7546-439F-818C-85E65901B5DC
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwSetInformationVirtualMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # ZwSetInformationVirtualMemory function
@@ -188,7 +189,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>

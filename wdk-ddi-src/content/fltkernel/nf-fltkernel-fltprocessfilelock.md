@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltProcessFileLock
+UID: NF:fltkernel.FltProcessFileLock
 title: FltProcessFileLock function
 author: windows-driver-content
 description: The FltProcessFileLock routine processes and completes a file lock operation.
@@ -7,7 +7,7 @@ old-location: ifsk\fltprocessfilelock.htm
 old-project: ifsk
 ms.assetid: 72b8aad8-39e1-4624-ac77-13eb52036b3b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltProcessFileLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltProcessFileLock function
@@ -57,17 +58,17 @@ FLT_PREOP_CALLBACK_STATUS FltProcessFileLock(
 
 ### -param FileLock [in]
 
-Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a> or <a href="ifsk.fltinitializefilelock">FltInitializeFileLock</a>. 
+Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a> or <a href="..\fltkernel\nf-fltkernel-fltinitializefilelock.md">FltInitializeFileLock</a>. 
 
 
 ### -param CallbackData [in]
 
-Pointer to the callback data (<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the <a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a> operation. 
+Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a> operation. 
 
 
 ### -param Context [in, optional]
 
-Context pointer to be used when completing the operation. This context pointer is passed to the <i>CompleteLockCallbackDataRoutine</i> and <i>UnlockRoutine</i> callback routines that the minifilter driver registered in a previous call to <a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a>. This parameter is optional and can be <b>NULL</b>. 
+Context pointer to be used when completing the operation. This context pointer is passed to the <i>CompleteLockCallbackDataRoutine</i> and <i>UnlockRoutine</i> callback routines that the minifilter driver registered in a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>. This parameter is optional and can be <b>NULL</b>. 
 
 
 ## -returns
@@ -86,19 +87,19 @@ Context pointer to be used when completing the operation. This context pointer i
 
 
 ## -remarks
-<b>FltProcessFileLock</b> processes a file lock (<a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a>) operation. The lock operation can be a fast I/O or IRP-based operation. 
+<b>FltProcessFileLock</b> processes a file lock (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a>) operation. The lock operation can be a fast I/O or IRP-based operation. 
 
-For unlock operations, the Filter Manager calls the <i>UnlockRoutine</i> (<a href="ifsk.punlock_routine">PUNLOCK_ROUTINE</a>) callback routine that the caller registered for the <a href="ifsk.file_lock">FILE_LOCK</a> structure in a previous call to <a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a>. 
+For unlock operations, the Filter Manager calls the <i>UnlockRoutine</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551951">PUNLOCK_ROUTINE</a>) callback routine that the caller registered for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a> structure in a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>. 
 
-When the lock operation is completed, the Filter Manager calls the <i>CompleteLockCallbackDataRoutine</i> (<a href="..\fltkernel\nc-fltkernel-pflt_complete_lock_callback_data_routine.md">PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE</a>) completion callback routine that the caller registered for the <a href="ifsk.file_lock">FILE_LOCK</a> structure in a previous call to <a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a>. 
+When the lock operation is completed, the Filter Manager calls the <i>CompleteLockCallbackDataRoutine</i> (<a href="..\fltkernel\nc-fltkernel-pflt_complete_lock_callback_data_routine.md">PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE</a>) completion callback routine that the caller registered for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a> structure in a previous call to <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>. 
 
-When the <i>CallbackData</i> parameter passed to <b>FltProcessFileLock</b> represents a fast I/O operation, the callback specified in <i>CompleteLockCallbackDataRoutine</i> parameter of the <a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a> routine is not invoked. Only when the I/O operation in <i>CallbackData</i> is an IRP, and <i>CompleteLockCallbackDataRoutine</i> is not NULL, will the callback routine be called.
+When the <i>CallbackData</i> parameter passed to <b>FltProcessFileLock</b> represents a fast I/O operation, the callback specified in <i>CompleteLockCallbackDataRoutine</i> parameter of the <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a> routine is not invoked. Only when the I/O operation in <i>CallbackData</i> is an IRP, and <i>CompleteLockCallbackDataRoutine</i> is not NULL, will the callback routine be called.
 
-To determine whether the <i>CallbackData</i> represents a fast I/O operation, use the <a href="ifsk.flt_is_fastio_operation">FLT_IS_FASTIO_OPERATION</a> macro. 
+To determine whether the <i>CallbackData</i> represents a fast I/O operation, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a> macro. 
 
-To allocate and initialize a new file lock structure, call <a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a>. 
+To allocate and initialize a new file lock structure, call <a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>. 
 
-To free an initialized<a href="ifsk.file_lock">FILE_LOCK</a> structure, call <a href="ifsk.fltfreefilelock">FltFreeFileLock</a>
+To free an initialized<a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a> structure, call <a href="..\fltkernel\nf-fltkernel-fltfreefilelock.md">FltFreeFileLock</a>
 
 
 
@@ -173,48 +174,48 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_lock">FILE_LOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540328">FILE_LOCK</a>
 </dt>
 <dt>
-<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="ifsk.flt_is_fastio_operation">FLT_IS_FASTIO_OPERATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltallocatefilelock">FltAllocateFileLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatefilelock.md">FltAllocateFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fltchecklockforreadaccess">FltCheckLockForReadAccess</a>
+<a href="..\fltkernel\nf-fltkernel-fltchecklockforreadaccess.md">FltCheckLockForReadAccess</a>
 </dt>
 <dt>
-<a href="ifsk.fltchecklockforwriteaccess">FltCheckLockForWriteAccess</a>
+<a href="..\fltkernel\nf-fltkernel-fltchecklockforwriteaccess.md">FltCheckLockForWriteAccess</a>
 </dt>
 <dt>
-<a href="ifsk.fltfreefilelock">FltFreeFileLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltfreefilelock.md">FltFreeFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fltinitializefilelock">FltInitializeFileLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltinitializefilelock.md">FltInitializeFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fltuninitializefilelock">FltUninitializeFileLock</a>
+<a href="..\fltkernel\nf-fltkernel-fltuninitializefilelock.md">FltUninitializeFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlprocessfilelock">FsRtlProcessFileLock</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlprocessfilelock~r2.md">FsRtlProcessFileLock</a>
 </dt>
 <dt>
-<a href="ifsk.irp_mj_lock_control">IRP_MJ_LOCK_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_complete_lock_callback_data_routine.md">PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE</a>
 </dt>
 <dt>
-<a href="ifsk.punlock_routine">PUNLOCK_ROUTINE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551951">PUNLOCK_ROUTINE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltProcessFileLock routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltProcessFileLock routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

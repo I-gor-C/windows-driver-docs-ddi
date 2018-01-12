@@ -1,13 +1,13 @@
 ---
-UID: NC.ndischimney.W_TCP_OFFLOAD_SEND_HANDLER
+UID: NC:ndischimney.W_TCP_OFFLOAD_SEND_HANDLER
 title: W_TCP_OFFLOAD_SEND_HANDLER
 author: windows-driver-content
 description: NDIS calls the MiniportTcpOffloadSend function to transmit data on an offloaded TCP connection.
 old-location: netvista\miniporttcpoffloadsend.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7c96412f-a866-4863-a06a-9eb6adb2a33b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _PD_BUFFER_VIRTUAL_SUBNET_INFO, PD_BUFFER_VIRTUAL_SUBNET_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # W_TCP_OFFLOAD_SEND_HANDLER callback
@@ -66,7 +67,7 @@ NDIS_STATUS MiniportTcpOffloadSend(
 The handle to an offload-target allocated context area in which the offload target maintains state
      information about this instance of the adapter. The offload target provided this handle to NDIS when it
      called 
-     <a href="netvista.ndismsetminiportattributes">
+     <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
      NdisMSetMiniportAttributes</a> from its 
      <a href="..\ndis\nc-ndis-miniport_initialize.md">
      MiniportInitializeEx</a> function.
@@ -83,10 +84,10 @@ A pointer to a memory location that contains a PVOID value. This PVOID value ref
 ### -param NetBufferList [in]
 
 A pointer to a 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure. This structure
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. This structure
      can be a stand-alone structure or the first structure in a linked list of NET_BUFFER_LIST structures.
      Each NET_BUFFER_LIST structure in the list describes a list of 
-     <a href="netvista.net_buffer">NET_BUFFER</a> structures. Each NET_BUFFER structure
+     <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures. Each NET_BUFFER structure
      in the list maps to a chain of memory descriptor lists (MDLs). The MDLs contain the data to be
      transmitted. The NET_BUFFER_LIST and associated structures are locked so that they remain resident in
      physical memory. However, they are not mapped into system memory.
@@ -102,7 +103,7 @@ NDIS_STATUS_PENDING is the only return value that is allowed. An offload target 
 ## -remarks
 An offload target must transmit data in first in, first out (FIFO) order. The order of the linked list
     of 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structures that NDIS passes
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that NDIS passes
     at 
     <i>NetBufferList</i> represents the order in which the offload target must transmit the network data. In
     addition, an offload target should send the data that it receives from multiple calls to the 
@@ -173,18 +174,18 @@ Any level
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
 <a href="..\ndischimney\nc-ndischimney-ndis_tcp_offload_send_complete.md">NdisTcpOffloadSendComplete</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20W_TCP_OFFLOAD_SEND_HANDLER callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20W_TCP_OFFLOAD_SEND_HANDLER callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

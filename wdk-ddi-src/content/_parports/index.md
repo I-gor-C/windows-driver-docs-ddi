@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:parports
 ---
 
 # Parallel Ports
@@ -21,7 +21,6 @@ For the programming guide, see [Parallel Ports](https://docs.microsoft.com/en-us
 | ---- |:---- |
 | [PDETERMINE_IEEE_MODES callback](..\parallel\nc-parallel-pdetermine_ieee_modes.md) | The PDETERMINE_IEEE_MODES-typed callback routine determines which IEEE 1284 protocols a parallel device supports. The system-supplied bus driver for parallel ports supplies this routine. |
 | [PNEGOTIATE_IEEE_MODE callback](..\parallel\nc-parallel-pnegotiate_ieee_mode.md) | The PNEGOTIATE_IEEE_MODE-typed callback routine selects the fastest forward and reverse protocols that the system-supplied bus driver for parallel ports supports from among those specified by the caller. |
-| [PNEGOTIATE_IEEE_MODE callback](..\parallel\nc-parallel-pnegotiate_ieee_mode~r1.md) | The PNEGOTIATE_IEEE_MODE-typed callback routine selects the fastest forward and reverse protocols that the system-supplied bus driver for parallel ports supports from among those specified by the caller. |
 | [PPARALLEL_CLEAR_CHIP_MODE callback](..\parallel\nc-parallel-pparallel_clear_chip_mode.md) | The PPARALLEL_CLEAR_CHIP_MODE-typed callback routine clears the operating mode of a parallel port by resetting the communication mode of the host chipset to IEEE 1284-compatibility mode. |
 | [PPARALLEL_DESELECT_ROUTINE callback](..\parallel\nc-parallel-pparallel_deselect_routine.md) | The PPARALLEL_DESELECT_ROUTINE-typed callback routine deselects either an IEEE 1284.3 daisy chain device or an IEEE 1284 end-of-chain device that is attached to a parallel port. |
 | [PPARALLEL_FREE_ROUTINE callback](..\parallel\nc-parallel-pparallel_free_routine.md) | The PPARALLEL_FREE_ROUTINE-typed callback routine frees a parallel port. The system-supplied function driver for parallel ports supplies this routine. |

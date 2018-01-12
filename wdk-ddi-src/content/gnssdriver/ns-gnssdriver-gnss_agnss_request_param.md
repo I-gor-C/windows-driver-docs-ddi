@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_AGNSS_REQUEST_PARAM
+UID: NS:gnssdriver.GNSS_AGNSS_REQUEST_PARAM
 title: GNSS_AGNSS_REQUEST_PARAM
 author: windows-driver-content
 description: This structure defines AGNSS request parameters.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 67A1DAEF-13D3-4D47-B10C-0CA30C8EB22F
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_AGNSS_REQUEST_PARAM, PGNSS_AGNSS_REQUEST_PARAM, *PGNSS_AGNSS_REQUEST_PARAM, GNSS_AGNSS_REQUEST_PARAM
+ms.keywords: GNSS_AGNSS_REQUEST_PARAM, GNSS_AGNSS_REQUEST_PARAM, *PGNSS_AGNSS_REQUEST_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_AGNSS_REQUEST_PARAM, *PGNSS_AGNSS_REQUEST_PARAM
 ---
 
 # GNSS_AGNSS_REQUEST_PARAM structure

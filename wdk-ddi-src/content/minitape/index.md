@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:minitape
 ---
 
 # Minitape.h header
@@ -29,10 +29,10 @@ Minitape.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [TAPE_ERROR_ROUTINE callback](nc-minitape-tape_error_routine.md) | TapeMiniTapeError provides device-specific error handling when an SRB is completed with an error status. This routine is optional. |
-| [TAPE_EXTENSION_INIT_ROUTINE callback](nc-minitape-tape_extension_init_routine.md) | TapeMiniExtensionInit initializes an optional, driver-specific context area. This routine is called by TapeClassInitialize when the tape miniclass driver is loaded. This routine is optional. |
-| [TAPE_PROCESS_COMMAND_ROUTINE callback](nc-minitape-tape_process_command_routine.md) | TapeMiniCreatePartition handles the device-specific aspects of an IOCTL_TAPE_CREATE_PARTITION request. This routine is required. |
-| [TAPE_VERIFY_INQUIRY_ROUTINE callback](nc-minitape-tape_verify_inquiry_routine.md) | TapeMiniVerifyInquiry determines whether the tape miniclass driver recognizes and supports a given device. This routine is required. |
+| [TAPE_ERROR_ROUTINE callback](nc-minitape-tape_error_routine.md) | TAPE_ERROR_ROUTINE provides device-specific error handling when an SRB is completed with an error status. This routine is optional. |
+| [TAPE_EXTENSION_INIT_ROUTINE callback](nc-minitape-tape_extension_init_routine.md) | ExtensionInit initializes an optional, driver-specific context area. This routine is called by TapeClassInitialize when the tape miniclass driver is loaded. This routine is optional. |
+| [TAPE_PROCESS_COMMAND_ROUTINE callback](nc-minitape-tape_process_command_routine.md) | TAPE_PROCESS_COMMAND_ROUTINE handles the device-specific aspects of an IOCTL request. |
+| [TAPE_VERIFY_INQUIRY_ROUTINE callback](nc-minitape-tape_verify_inquiry_routine.md) | TAPE_VERIFY_INQUIRY_ROUTINE determines whether the tape miniclass driver recognizes and supports a given device. This routine is required. |
 
 ## Structures
 

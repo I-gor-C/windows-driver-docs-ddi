@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfcompaniontarget.WdfCompanionTargetSendTaskSynchronously
+UID: NF:wdfcompaniontarget.WdfCompanionTargetSendTaskSynchronously
 title: WdfCompanionTargetSendTaskSynchronously function
 author: windows-driver-content
 description: For internal use only.
@@ -7,7 +7,7 @@ old-location: wdf\wdfcompaniontargetsendtasksynchronously.htm
 old-project: wdf
 ms.assetid: d58a275a-aaaa-4159-ba00-6998b7a63434
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfCompanionTargetSendTaskSynchronously
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_TASK_SEND_OPTIONS_FLAGS
 req.product: Windows 10 or later.
 ---
 

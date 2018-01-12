@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._FCP_SEND_REQUEST
+UID: NS:61883._FCP_SEND_REQUEST
 title: _FCP_SEND_REQUEST
 author: windows-driver-content
 description: This structure is used for a send request.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 82F36729-57E0-49AB-8C2D-BCBA6EED33EE
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _FCP_SEND_REQUEST, *PFCP_REQUEST, FCP_REQUEST, *PFCP_SEND_REQUEST, FCP_SEND_REQUEST
+ms.keywords: _FCP_SEND_REQUEST, FCP_REQUEST, *PFCP_REQUEST, *PFCP_SEND_REQUEST, FCP_SEND_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FCP_REQUEST, *PFCP_REQUEST, *PFCP_SEND_REQUEST, FCP_SEND_REQUEST
 ---
 
 # _FCP_SEND_REQUEST structure

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSymbols3.OutputTypedDataVirtual
+UID: NF:dbgeng.IDebugSymbols3.OutputTypedDataVirtual
 title: IDebugSymbols3::OutputTypedDataVirtual method
 author: windows-driver-content
 description: The OutputTypedDataVirtual method formats the contents of a variable in the target's virtual memory, and then sends this to the output callbacks.
 old-location: debugger\outputtypeddatavirtual.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: d6faa4ee-2fdb-425a-81db-8257285ba47d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3::OutputTypedDataVirtual, OutputTypedDataVirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSymbols3::OutputTypedDataVirtual method

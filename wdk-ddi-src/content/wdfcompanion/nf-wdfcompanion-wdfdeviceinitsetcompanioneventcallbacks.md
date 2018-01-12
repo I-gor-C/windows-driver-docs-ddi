@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfcompanion.WdfDeviceInitSetCompanionEventCallbacks
+UID: NF:wdfcompanion.WdfDeviceInitSetCompanionEventCallbacks
 title: WdfDeviceInitSetCompanionEventCallbacks function
 author: windows-driver-content
 description: For internal use only.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceinitsetcompanioneventcallbacks.htm
 old-project: wdf
 ms.assetid: 7320238d-0c7f-423c-8de7-2b22d02d77bd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDeviceInitSetCompanionEventCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_TASK_QUEUE_DISPATCH_TYPE
 req.product: Windows 10 or later.
 ---
 

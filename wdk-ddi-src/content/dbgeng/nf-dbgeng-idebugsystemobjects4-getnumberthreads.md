@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetNumberThreads
+UID: NF:dbgeng.IDebugSystemObjects4.GetNumberThreads
 title: IDebugSystemObjects4::GetNumberThreads method
 author: windows-driver-content
 description: The GetNumberThreads method returns the number of threads in the current process.
 old-location: debugger\getnumberthreads.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: f56da2d0-4c4c-4302-a87b-c672dec25d9f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetNumberThreads, GetNumberThreads
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetNumberThreads method
@@ -70,7 +71,7 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 ## -remarks
 In kernel-mode debugging, there is a virtual thread representing each processor.
 
-In user-mode debugging, the number of threads changes with the <a href="debugger.idebugeventcallbacks_createthread">IDebugEventCallbacks::CreateThread</a> and <a href="debugger.idebugeventcallbacks_exitthread">IDebugEventCallbacks::ExitThread</a> events.
+In user-mode debugging, the number of threads changes with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550713">IDebugEventCallbacks::CreateThread</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550730">IDebugEventCallbacks::ExitThread</a> events.
 
 For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
 

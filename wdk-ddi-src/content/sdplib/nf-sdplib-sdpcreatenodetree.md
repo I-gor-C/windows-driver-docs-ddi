@@ -1,5 +1,5 @@
 ---
-UID: NF.sdplib.SdpCreateNodeTree
+UID: NF:sdplib.SdpCreateNodeTree
 title: SdpCreateNodeTree function
 author: windows-driver-content
 description: The Bluetooth SdpCreateNodeTree function is used to allocate an empty root SDP_TREE_ROOT_NODE structure.
@@ -7,7 +7,7 @@ old-location: bltooth\sdpcreatenodetree.htm
 old-project: bltooth
 ms.assetid: c019f382-1ad3-4b08-a254-ae803e2b6bc6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 12/21/2017
 ms.keywords: SdpCreateNodeTree
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
+req.typenames: *PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +42,7 @@ req.product: Windows 10 or later.
 ## -description
 The Bluetooth 
   <b>SdpCreateNodeTree</b> function is used to allocate an empty root 
-  <a href="bltooth.sdp_tree_root_node">SDP_TREE_ROOT_NODE</a> structure.
+  <a href="..\sdpnode\ns-sdpnode-_sdp_tree_root_node.md">SDP_TREE_ROOT_NODE</a> structure.
 
 
 
@@ -71,14 +72,14 @@ Calling the
     <b>SdpCreateNodeTree</b> function is the first step in building an SDP tree. After a Bluetooth profile
     driver allocates a root node by using this function, the node can be populated by using calls to other
     functions pointed to by the 
-    <a href="bltooth.bthddi_sdp_node_interface">
+    <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">
     BTHDDI_SDP_NODE_INTERFACE</a> structure.
 
 When an SDP tree is no longer needed, the Bluetooth profile driver should destroy it by calling the 
-    <a href="bltooth.sdpfreetree">SdpFreeTree</a> function. 
+    <a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a> function. 
     <b>SdpFreeTree</b> frees the root node and all child nodes that have been attached to it. Individual 
-    <a href="bltooth.sdp_node">SDP_NODE</a> structures can be freed by calling the 
-    <a href="kernel.exfreepool">ExFreePool</a> driver support routine as long as they
+    <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a> structures can be freed by calling the 
+    <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a> driver support routine as long as they
     are no longer part of a tree or other list.
 
 Bluetooth profile drivers can obtain a pointer to this function through the BTHDDI_SDP_NODE_INTERFACE
@@ -134,24 +135,24 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="bltooth.sdp_tree_root_node">SDP_TREE_ROOT_NODE</a>
+<a href="..\sdpnode\ns-sdpnode-_sdp_tree_root_node.md">SDP_TREE_ROOT_NODE</a>
 </dt>
 <dt>
-<a href="bltooth.bthddi_sdp_node_interface">BTHDDI_SDP_NODE_INTERFACE</a>
+<a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
 </dt>
 <dt>
-<a href="bltooth.sdpfreetree">SdpFreeTree</a>
+<a href="..\sdplib\nf-sdplib-sdpfreetree.md">SdpFreeTree</a>
 </dt>
 <dt>
-<a href="bltooth.sdp_node">SDP_NODE</a>
+<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
 </dt>
 <dt>
-<a href="kernel.exfreepool">ExFreePool</a>
+<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SdpCreateNodeTree function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [bltooth\bltooth]:%20SdpCreateNodeTree function%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

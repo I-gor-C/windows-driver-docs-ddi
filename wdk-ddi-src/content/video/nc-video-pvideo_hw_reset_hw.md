@@ -1,5 +1,5 @@
 ---
-UID: NC.video.PVIDEO_HW_RESET_HW
+UID: NC:video.PVIDEO_HW_RESET_HW
 title: PVIDEO_HW_RESET_HW
 author: windows-driver-content
 description: HwVidResetHw resets the adapter to character mode.
@@ -7,8 +7,8 @@ old-location: display\hwvidresethw.htm
 old-project: display
 ms.assetid: dae00663-17bd-461d-9b3f-febff2d9811b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VHF_CONFIG, *PVHF_CONFIG, PVHF_CONFIG, VHF_CONFIG
+ms.date: 12/29/2017
+ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -85,11 +86,11 @@ The HAL calls <i>HwVidResetHw</i> if the system is about to crash, so that the H
 
 Most miniport drivers must provide this function, except for drivers of adapters that are reset to a VGA standard character mode on receipt of an INT10, MODE3-type command.
 
-<i>HwVidResetHw</i> resets the adapter to character mode, according to the given <i>Columns</i> and <i>Rows</i> values. However, because the system is shutting down, <i>HwVidResetHw</i> cannot call the BIOS or any pageable code. <i>HwVidResetHw</i> should call only the <b>VideoPortRead/WritePort</b><i>Xxx</i> and/or <b>VideoPortRead/WriteRegister</b><i>Xxx</i> functions. (See <a href="display.functions_exported_by_the_video_port_driver">Functions Exported by the Video Port Driver</a>.)
+<i>HwVidResetHw</i> resets the adapter to character mode, according to the given <i>Columns</i> and <i>Rows</i> values. However, because the system is shutting down, <i>HwVidResetHw</i> cannot call the BIOS or any pageable code. <i>HwVidResetHw</i> should call only the <b>VideoPortRead/WritePort</b><i>Xxx</i> and/or <b>VideoPortRead/WriteRegister</b><i>Xxx</i> functions. (See <a href="https://msdn.microsoft.com/library/windows/hardware/ff566461">Functions Exported by the Video Port Driver</a>.)
 
 If <i>HwVidResetHw</i> cannot change the mode of the adapter by simply programming the adapter registers, it can set up the appropriate values in adapter registers and return <b>FALSE</b>. This causes the HAL to perform an extended INT10-type operation to reset the video adapter to character mode.
 
-<i>HwVidResetHw</i> must not call <a href="display.videoportint10">VideoPortInt10</a>. A miniport driver's <a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a> function is called with the <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_reset_device.md">IOCTL_VIDEO_RESET_DEVICE</a><a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> to reset the adapter whenever the Display program is used to test or change the graphics display mode, <i>not</i> the miniport driver's <i>HwVidResetHw</i> function.
+<i>HwVidResetHw</i> must not call <a href="..\video\nf-video-videoportint10.md">VideoPortInt10</a>. A miniport driver's <a href="..\video\nc-video-pvideo_hw_start_io.md">HwVidStartIO</a> function is called with the <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_reset_device.md">IOCTL_VIDEO_RESET_DEVICE</a><a href="wdkgloss.v#wdkgloss.video_request_packet__vrp_#wdkgloss.video_request_packet__vrp_"><i>VRP</i></a> to reset the adapter whenever the Display program is used to test or change the graphics display mode, <i>not</i> the miniport driver's <i>HwVidResetHw</i> function.
 
 <i>HwVidResetHw</i> must not be made pageable.
 
@@ -123,7 +124,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.functions_exported_by_the_video_port_driver">Functions Exported by the Video Port Driver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566461">Functions Exported by the Video Port Driver</a>
 </dt>
 <dt>
 <a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a>
@@ -135,12 +136,12 @@ Header
 <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_reset_device.md">IOCTL_VIDEO_RESET_DEVICE</a>
 </dt>
 <dt>
-<a href="display.videoportint10">VideoPortInt10</a>
+<a href="..\video\nf-video-videoportint10.md">VideoPortInt10</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_RESET_HW callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PVIDEO_HW_RESET_HW callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

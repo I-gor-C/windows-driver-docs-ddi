@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUni.Compression
+UID: NF:prcomoem.IPrintOemUni.Compression
 title: IPrintOemUni::Compression method
 author: windows-driver-content
 description: The IPrintOemUni::Compression method can be used with Unidrv-supported printers to provide a customized bitmap compression method.
@@ -7,7 +7,7 @@ old-location: print\iprintoemuni_compression.htm
 old-project: print
 ms.assetid: 02524493-3842-462e-86f6-2ab35998c65e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUni, IPrintOemUni::Compression, Compression
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ HRESULT Compression(
 
 ### -param pdevobj 
 
-Caller-supplied pointer to a <a href="print.devobj">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
 
 
 ### -param pInBuf 
@@ -119,7 +120,7 @@ If, after Unidrv tries all enabled compression methods, the compressed data retu
 
 If possible, the method's compression algorithm should use the received <i>dwOutLen</i> value to determine whether it can stop the algorithm before completion, to save time if another compression method has already created a better result.
 
-The <code>IPrintOemUni::Compression</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="print.iprintoemuni_getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "Compression" as input.
+The <code>IPrintOemUni::Compression</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554253">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "Compression" as input.
 
 
 ## -requirements

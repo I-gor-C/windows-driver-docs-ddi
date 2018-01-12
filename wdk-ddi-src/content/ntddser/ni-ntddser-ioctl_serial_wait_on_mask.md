@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_WAIT_ON_MASK
+UID: NI:ntddser.IOCTL_SERIAL_WAIT_ON_MASK
 title: IOCTL_SERIAL_WAIT_ON_MASK
 author: windows-driver-content
 description: The IOCTL_SERIAL_WAIT_ON_MASK request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_WAIT_ON_MASK IOCTL

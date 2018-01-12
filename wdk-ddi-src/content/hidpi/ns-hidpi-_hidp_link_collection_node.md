@@ -1,5 +1,5 @@
 ---
-UID: NS.HIDPI._HIDP_LINK_COLLECTION_NODE
+UID: NS:hidpi._HIDP_LINK_COLLECTION_NODE
 title: _HIDP_LINK_COLLECTION_NODE
 author: windows-driver-content
 description: The HIDP_LINK_COLLECTION_NODE structure contains information about a link collection in a top-level collection's link collection array.
@@ -7,8 +7,8 @@ old-location: hid\hidp_link_collection_node.htm
 old-project: hid
 ms.assetid: 66ffd219-4a62-404d-ba51-4a91eccfcf96
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HIDP_LINK_COLLECTION_NODE, HIDP_LINK_COLLECTION_NODE, PHIDP_LINK_COLLECTION_NODE, *PHIDP_LINK_COLLECTION_NODE
+ms.date: 12/21/2017
+ms.keywords: _HIDP_LINK_COLLECTION_NODE, *PHIDP_LINK_COLLECTION_NODE, HIDP_LINK_COLLECTION_NODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PHIDP_LINK_COLLECTION_NODE, HIDP_LINK_COLLECTION_NODE
 ---
 
 # _HIDP_LINK_COLLECTION_NODE structure
@@ -113,7 +114,7 @@ Pointer to application-specific information.
 
 
 ## -remarks
-The <a href="hid.hidp_getlinkcollectionnodes">HidP_GetLinkCollectionNodes</a> routine returns a top-level collection's link collection array. The indices specified in a link collection node are indices in the collection's link collection array.
+The <a href="..\hidpi\nf-hidpi-hidp_getlinkcollectionnodes.md">HidP_GetLinkCollectionNodes</a> routine returns a top-level collection's link collection array. The indices specified in a link collection node are indices in the collection's link collection array.
 
 
 ## -requirements
@@ -134,18 +135,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="hid.hidp_getlinkcollectionnodes">HidP_GetLinkCollectionNodes</a>
+<a href="..\hidpi\nf-hidpi-hidp_getlinkcollectionnodes.md">HidP_GetLinkCollectionNodes</a>
 </dt>
 <dt>
-<a href="hid.hidp_button_caps">HIDP_BUTTON_CAPS</a>
+<a href="..\hidpi\ns-hidpi-_hidp_button_caps.md">HIDP_BUTTON_CAPS</a>
 </dt>
 <dt>
-<a href="hid.hidp_value_caps">HIDP_VALUE_CAPS</a>
+<a href="..\hidpi\ns-hidpi-_hidp_value_caps.md">HIDP_VALUE_CAPS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_LINK_COLLECTION_NODE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [hid\hid]:%20HIDP_LINK_COLLECTION_NODE structure%20 RELEASE:%20(12/21/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

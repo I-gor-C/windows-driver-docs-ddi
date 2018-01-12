@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_REMOVEPORT_IN
+UID: NS:hbapiwmi._SM_RemovePort_IN
 title: _SM_RemovePort_IN
 author: windows-driver-content
 description: The SM_RemovePort_IN structure is used to provide input parameters to the SM_RemovePort WMI method.
@@ -7,8 +7,8 @@ old-location: storage\sm_removeport_in.htm
 old-project: storage
 ms.assetid: b8eb6321-928f-4366-9553-c75900fa1ac6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_RemovePort_IN, PSM_RemovePort_IN, *PSM_RemovePort_IN, SM_RemovePort_IN
+ms.date: 1/10/2018
+ms.keywords: _SM_RemovePort_IN, SM_RemovePort_IN, *PSM_RemovePort_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SM_RemovePort_IN, *PSM_RemovePort_IN
 ---
 
 # _SM_RemovePort_IN structure

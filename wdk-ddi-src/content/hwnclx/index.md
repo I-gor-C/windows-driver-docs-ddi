@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:hwnclx
 ---
 
 # Hwnclx.h header
@@ -20,18 +20,6 @@ Hwnclx.h contain these programming interfaces:
 | [HwNProcessAddDevicePreDeviceCreate function](nf-hwnclx-hwnprocessadddevicepredevicecreate.md) | Supplies the device prepare/release and entry/exit callbacks to the Windows Driver Foundation (WDF) for transitioning the device into different states. |
 | [HwNRegisterClient function](nf-hwnclx-hwnregisterclient.md) | Registers the hardware notification client driver and its callback functions with the class extension. |
 | [HwNUnregisterClient function](nf-hwnclx-hwnunregisterclient.md) | Unregisters the hardware notification client driver and its callback functions with the class extension. This function should be invoked when the client driver is unloaded. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [HWN_CLIENT_GET_STATE callback](nc-hwnclx-hwn_client_get_state.md) | Implemented by the client driver to get hardware notification component state. It is invoked when a user requests status information. |
-| [HWN_CLIENT_INITIALIZE_DEVICE callback](nc-hwnclx-hwn_client_initialize_device.md) | Implemented by the client driver and is invoked as a result of a call to EVT_WDF_DEVICE_PREPARE_HARDWARE. |
-| [HWN_CLIENT_QUERY_DEVICE_INFORMATION callback](nc-hwnclx-hwn_client_query_device_information.md) | Implemented by the client driver to retrieve hardware notification component attributes. |
-| [HWN_CLIENT_SET_STATE callback](nc-hwnclx-hwn_client_set_state.md) | Implemented by the client driver to set hardware notification component state. It is invoked when a user wants to change the state of a driver. |
-| [HWN_CLIENT_START_DEVICE callback](nc-hwnclx-hwn_client_start_device.md) | Implemented by the client driver to start the hardware notification component. It is invoked as a result of a call to EVT_WDF_DEVICE_D0_ENTRY. |
-| [HWN_CLIENT_STOP_DEVICE callback](nc-hwnclx-hwn_client_stop_device.md) | Implemented by the client driver TO start the hardware notification component. It is invoked as a result of a call to EVT_WDF_DEVICE_D0_EXIT. |
-| [HWN_CLIENT_UNINITIALIZE_DEVICE callback](nc-hwnclx-hwn_client_uninitialize_device.md) | Implemented by the client driver and invoked as invoked as a result of a call to EVT_WDF_DEVICE_RELEASE_HARDWARE. This callback function uninitializes the hardware notification component. |
 
 ## Structures
 

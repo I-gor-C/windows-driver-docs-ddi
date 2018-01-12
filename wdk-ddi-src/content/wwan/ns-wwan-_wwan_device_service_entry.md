@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_DEVICE_SERVICE_ENTRY
+UID: NS:wwan._WWAN_DEVICE_SERVICE_ENTRY
 title: _WWAN_DEVICE_SERVICE_ENTRY
 author: windows-driver-content
 description: The WWAN_DEVICE_SERVICE_ENTRY structure describes information about a device service.
 old-location: netvista\wwan_device_service_entry.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 26B26715-0C1E-4FF1-B3FA-B6952BF70572
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_DEVICE_SERVICE_ENTRY, WWAN_DEVICE_SERVICE_ENTRY, PWWAN_DEVICE_SERVICE_ENTRY, *PWWAN_DEVICE_SERVICE_ENTRY
+ms.date: 1/8/2018
+ms.keywords: _WWAN_DEVICE_SERVICE_ENTRY, WWAN_DEVICE_SERVICE_ENTRY, *PWWAN_DEVICE_SERVICE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WWAN_DEVICE_SERVICE_ENTRY, *PWWAN_DEVICE_SERVICE_ENTRY
 req.product: Windows 10 or later.
 ---
 
@@ -103,12 +104,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_device_service_session_capability">WWAN_DEVICE_SERVICE_SESSION_CAPABILITY</a>
+<a href="..\wwan\ne-wwan-_wwan_device_service_session_capability.md">WWAN_DEVICE_SERVICE_SESSION_CAPABILITY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_DEVICE_SERVICE_ENTRY structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_DEVICE_SERVICE_ENTRY structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NC.wsk.PFN_WSK_INSPECT_COMPLETE
+UID: NC:wsk.PFN_WSK_INSPECT_COMPLETE
 title: PFN_WSK_INSPECT_COMPLETE
 author: windows-driver-content
 description: The WskInspectComplete function completes the inspection of a previously pended incoming connection request that was received on a listening socket that has conditional accept mode enabled.
 old-location: netvista\wskinspectcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 31846ec9-0a4b-4e1f-9c14-c1b139f39c55
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/8/2018
+ms.keywords: _WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -65,7 +66,7 @@ NTSTATUS WSKAPI * WskInspectComplete(
 ### -param ListenSocket [in]
 
 A pointer to a 
-     <a href="netvista.wsk_socket">WSK_SOCKET</a> structure. This pointer specifies the
+     <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure. This pointer specifies the
      listening socket on which the WSK application received the incoming connection request that it is
      inspecting.
 
@@ -73,7 +74,7 @@ A pointer to a
 ### -param InspectID [in]
 
 A pointer to a 
-     <a href="netvista.wsk_inspect_id">WSK_INSPECT_ID</a> structure. The contents of
+     <a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a> structure. The contents of
      the structure identify the specific connection request that the WSK application is inspecting.
 
 
@@ -135,7 +136,7 @@ A WSK application can call the
     Accepting Incoming Connections</a>.
 
 The WSK subsystem passed a pointer to a 
-    <a href="netvista.wsk_inspect_id">WSK_INSPECT_ID</a> structure to the WSK
+    <a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a> structure to the WSK
     application when it called the application's 
     <i>WskInspectEvent</i> event callback function. The WSK application copied the contents of that structure
     to its own WSK_INSPECT_ID structure before returning 
@@ -239,18 +240,18 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570829">SO_CONDITIONAL_ACCEPT</a>
 </dt>
 <dt>
-<a href="netvista.wsk_inspect_id">WSK_INSPECT_ID</a>
+<a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_listen_dispatch">WSK_PROVIDER_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_listen_dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_socket">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PFN_WSK_INSPECT_COMPLETE callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_INSPECT_COMPLETE callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

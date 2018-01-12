@@ -1,5 +1,5 @@
 ---
-UID: NS.PEPFX._PEP_POWER_CONTROL_COMPLETE
+UID: NS:pepfx._PEP_POWER_CONTROL_COMPLETE
 title: _PEP_POWER_CONTROL_COMPLETE
 author: windows-driver-content
 description: The PEP_POWER_CONTROL_COMPLETE structure contains status information for a power control operation that the PEP previously requested and that the device driver has completed.
@@ -7,8 +7,8 @@ old-location: kernel\pep_power_control_complete.htm
 old-project: kernel
 ms.assetid: E270B609-2D47-4D55-94A6-BE82B2E5B77A
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_POWER_CONTROL_COMPLETE, PPEP_POWER_CONTROL_COMPLETE, PEP_POWER_CONTROL_COMPLETE, *PPEP_POWER_CONTROL_COMPLETE
+ms.date: 1/4/2018
+ms.keywords: _PEP_POWER_CONTROL_COMPLETE, PEP_POWER_CONTROL_COMPLETE, *PPEP_POWER_CONTROL_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PEP_POWER_CONTROL_COMPLETE, *PPEP_POWER_CONTROL_COMPLETE
 ---
 
 # _PEP_POWER_CONTROL_COMPLETE structure
@@ -69,7 +70,7 @@ typedef struct _PEP_POWER_CONTROL_COMPLETE {
 
 ### -field RequestContext
 
-[in] A pointer to the request context that was sent by the PEP in the <a href="kernel.pep_work_information">PEP_WORK_INFORMATION</a> structure that the PEP supplied in the original work request. Typically, this member points to a structure that contains a pointer to an output buffer to contain the results of the power control operation that was requested by the PEP.
+[in] A pointer to the request context that was sent by the PEP in the <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a> structure that the PEP supplied in the original work request. Typically, this member points to a structure that contains a pointer to an output buffer to contain the results of the power control operation that was requested by the PEP.
 
 
 ### -field BytesReturned
@@ -121,5 +122,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_POWER_CONTROL_COMPLETE structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_POWER_CONTROL_COMPLETE structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

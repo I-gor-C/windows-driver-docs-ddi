@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisCoDeleteVc
+UID: NF:ndis.NdisCoDeleteVc
 title: NdisCoDeleteVc function
 author: windows-driver-content
 description: NdisCoDeleteVc destroys a caller-created VC.
 old-location: netvista\ndiscodeletevc.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 31e88a5b-d97c-482a-aab0-dd987b15d657
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisCoDeleteVc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisCoDeleteVc function
@@ -57,7 +58,7 @@ NDIS_STATUS NdisCoDeleteVc(
 
 Specifies the handle identifying the VC to be deleted. The caller originally obtained this handle
      from 
-     <a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>.
+     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>.
 
 
 ## -returns
@@ -81,12 +82,12 @@ When a protocol calls
     deactivated. To meet these requirements implies that the following conditions hold:
 
 If the call tear-down was initiated by a local client, that client has already called 
-      <a href="netvista.ndisclclosecall">NdisClCloseCall</a> with the given 
+      <a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a> with the given 
       <i>NdisVcHandle</i> and its close-call request has completed successfully.
 
 If the call tear-down was initiated by a remote client, the stand-alone call manager has already
       called 
-      <a href="netvista.ndiscmdeactivatevc">NdisCmDeactivateVc</a> with the given 
+      <a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a> with the given 
       <i>NdisVcHandle</i> and its deactivation request has completed successfully.
 
 Only the protocol that created a particular VC can delete that VC. A call to 
@@ -103,7 +104,7 @@ When
 Stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
     <b>NdisCoDeleteVc</b>. Connection-oriented miniport drivers that provide integrated call-management
     support call 
-    <a href="netvista.ndismcmdeletevc">NdisMCmDeleteVc</a> instead.
+    <a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a> instead.
 
 
 ## -requirements
@@ -171,7 +172,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_connection_function">Irql_Connection_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547924">Irql_Connection_Function</a>
 </td>
 </tr>
 </table>
@@ -182,16 +183,16 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_co_delete_vc.md">MiniportCoDeleteVc</a>
 </dt>
 <dt>
-<a href="netvista.ndisclclosecall">NdisClCloseCall</a>
+<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmdeactivatevc">NdisCmDeactivateVc</a>
+<a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndiscocreatevc">NdisCoCreateVc</a>
+<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
 </dt>
 <dt>
-<a href="netvista.ndismcmdeletevc">NdisMCmDeleteVc</a>
+<a href="..\ndis\nf-ndis-ndismcmdeletevc.md">NdisMCmDeleteVc</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_close_call_complete.md">ProtocolClCloseCallComplete</a>
@@ -210,5 +211,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisCoDeleteVc function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisCoDeleteVc function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

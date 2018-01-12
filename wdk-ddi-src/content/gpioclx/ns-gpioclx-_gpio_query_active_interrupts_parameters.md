@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
+UID: NS:gpioclx._GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
 title: _GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
 author: windows-driver-content
 description: The GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS structure describes a set of general-purpose I/O (GPIO) interrupt pins to query for their enabled and active states.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: A3111B9C-319F-4560-B5A9-5CA6523AD935
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
+ms.keywords: _GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
 ---
 
 # _GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS structure

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:sensors
 ---
 
 # Sensors
@@ -35,15 +35,6 @@ For the programming guide, see [Sensors](https://docs.microsoft.com/en-us/window
 | [SensorsCxSensorDataReady function](..\sensorscx\nf-sensorscx-sensorscxsensordataready.md) | This function notifies the class extension that the driver has retrieved data. |
 | [SensorsCxSensorInitialize function](..\sensorscx\nf-sensorscx-sensorscxsensorinitialize.md) | This function sets the enumeration properties of a sensor. |
 | [SensorsCxStateChange function](..\sensorscx\nf-sensorscx-sensorscxstatechange.md) | Used to initialize a state change. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_SENSOR_DRIVER_DISABLE_WAKE callback](..\sensorscx\nc-sensorscx-evt_sensor_driver_disable_wake.md) | Callback to disable wake for the sensor. |
-| [EVT_SENSOR_DRIVER_ENABLE_WAKE callback](..\sensorscx\nc-sensorscx-evt_sensor_driver_enable_wake.md) | Callback to enable wake for the sensor. |
-| [EVT_SENSOR_DRIVER_START_STATE_CHANGE_NOTIFICATION callback](..\sensorscx\nc-sensorscx-evt_sensor_driver_start_state_change_notification.md) | Used to start a state change notification. |
-| [EVT_SENSOR_DRIVER_STOP_STATE_CHANGE_NOTIFICATION callback](..\sensorscx\nc-sensorscx-evt_sensor_driver_stop_state_change_notification.md) | Used to stop a state change notification. |
 
 ## Structures
 
@@ -160,6 +151,13 @@ For the programming guide, see [Sensors](https://docs.microsoft.com/en-us/window
 | [IOCTL_GNSS_START_FIXSESSION IOCTL](..\gnssdriver\ni-gnssdriver-ioctl_gnss_start_fixsession.md) | The IOCTL_GNSS_START_FIXSESSION control code is used by the GNSS adapter to start a fix session. |
 | [IOCTL_GNSS_STOP_BREADCRUMBING IOCTL](..\gnssdriver\ni-gnssdriver-ioctl_gnss_stop_breadcrumbing.md) | The IOCTL_GNSS_STOP_BREADCRUMBING control code is used to stop breadcrumbing. |
 | [IOCTL_GNSS_STOP_FIXSESSION IOCTL](..\gnssdriver\ni-gnssdriver-ioctl_gnss_stop_fixsession.md) | The IOCTL_GNSS_STOP_FIXSESSION control code is used by the GNSS adapter to stop an active fix session. |
+
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [ISensorClassExtension interface](..\sensorsclassextension\nn-sensorsclassextension-isensorclassextension.md) | The ISensorClassExtension interface provides methods that the sensor driver uses to communicate with the sensor platform (and, therefore, client applications) through the sensor class extension object. |
+| [ISensorDriver interface](..\sensorsclassextension\nn-sensorsclassextension-isensordriver.md) | The ISensorDriver interface provides callback methods that the sensor class extension uses to provide requests and notifications to the sensor driver. |
 
 ## Methods
 

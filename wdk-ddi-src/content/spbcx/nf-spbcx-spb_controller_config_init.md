@@ -1,5 +1,5 @@
 ---
-UID: NF.spbcx.SPB_CONTROLLER_CONFIG_INIT
+UID: NF:spbcx.SPB_CONTROLLER_CONFIG_INIT
 title: SPB_CONTROLLER_CONFIG_INIT function
 author: windows-driver-content
 description: The SPB_CONTROLLER_CONFIG_INIT function initializes an SPB_CONTROLLER_CONFIG structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 

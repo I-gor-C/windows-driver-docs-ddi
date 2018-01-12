@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:pcivirt
 ---
 
 # Pcivirt.h header
@@ -11,26 +11,6 @@ This header is used by PCI. For more information, see
 
 Pcivirt.h contain these programming interfaces:
 
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [READ_WRITE_MITIGATED_REGISTER callback](nc-pcivirt-read_write_mitigated_register.md) | Reads or writes to mitigated address spaces. |
-| [SRIOV_GET_DEVICE_LOCATION callback](nc-pcivirt-sriov_get_device_location.md) | Retrieves information about the current location of the PCI device on the bus, such as PCI Segment, Bus, Device and Function number. |
-| [SRIOV_GET_RESOURCE_FOR_BAR callback](nc-pcivirt-sriov_get_resource_for_bar.md) | Gets the translated resource for a specific Base Address Register (BAR). |
-| [SRIOV_GET_VENDOR_AND_DEVICE_IDS callback](nc-pcivirt-sriov_get_vendor_and_device_ids.md) | Supplies the Vendor and Device ID for a PCI Express SR-IOV Virtual Function (VF) to be used for generating a more generic Plug and Play ID for the VF. These IDs cannot be read directly from the VF’s configuration space. |
-| [SRIOV_QUERY_LUID callback](nc-pcivirt-sriov_query_luid.md) | Gets the local unique identifier of the SR-IOV device. |
-| [SRIOV_QUERY_LUID_VF callback](nc-pcivirt-sriov_query_luid_vf.md) | Gets the PCI Express SR-IOV Virtual Function (VF) given a unique identifier. |
-| [SRIOV_QUERY_PROBED_BARS callback](nc-pcivirt-sriov_query_probed_bars.md) | Queries the data read from the physical function's (PF) base address registers (BARs) if the value -1 were written to them first. |
-| [SRIOV_QUERY_PROBED_BARS_2 callback](nc-pcivirt-sriov_query_probed_bars_2.md) | Queries the data read from the specified PCI Express SR-IOV Virtual Function (VF) base address registers (BARs) if the value -1 were written to them first. |
-| [SRIOV_QUERY_VF_LUID callback](nc-pcivirt-sriov_query_vf_luid.md) | Gets the local unique identifier of the PCI Express SR-IOV Virtual Function (VF). |
-| [SRIOV_READ_BLOCK callback](nc-pcivirt-sriov_read_block.md) | Reads data from the specified configuration block of a PCI Express SR-IOV Virtual Function (VF). |
-| [SRIOV_READ_CONFIG callback](nc-pcivirt-sriov_read_config.md) | Reads data from the configuration space of the specified PCI Express SR-IOV Virtual Function (VF). |
-| [SRIOV_RESET_FUNCTION callback](nc-pcivirt-sriov_reset_function.md) | Resets the specified PCI Express SR-IOV Virtual Function (VF). |
-| [SRIOV_SET_POWER_STATE callback](nc-pcivirt-sriov_set_power_state.md) | Sets the power state of the specified PCI Express SR-IOV Virtual Function (VF). |
-| [SRIOV_WRITE_BLOCK callback](nc-pcivirt-sriov_write_block.md) | Writes data to the specified configuration block of a PCI Express SR-IOV Virtual Function (VF). |
-| [SRIOV_WRITE_CONFIG callback](nc-pcivirt-sriov_write_config.md) | Writes configuration data to a PCI Express SR-IOV Virtual Function (VF). |
 
 ## Structures
 

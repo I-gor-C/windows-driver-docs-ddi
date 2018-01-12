@@ -1,5 +1,5 @@
 ---
-UID: NS.SERCX._SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG
+UID: NS:sercx._SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG
 title: _SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG
 author: windows-driver-content
 description: The SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG structure contains information that version 2 of the serial framework extension (SerCx2) uses to configure a new custom-receive-transaction object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
+req.typenames: SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG, *PSERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -61,7 +62,7 @@ typedef struct _SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG {
 
 ### -field Size
 
-The size, in bytes, of this structure. The <a href="serports.sercx2customreceivetransactioncreate">SerCx2CustomReceiveTransactionCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
+The size, in bytes, of this structure. The <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a> method uses this member to determine which version of the structure the caller is using. The size of this structure might change in future versions of the Sercx.h header file.
 
 
 ### -field EvtSerCx2CustomReceiveTransactionInitialize
@@ -81,16 +82,16 @@ A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_custom
 
 ### -field EvtSerCx2CustomReceiveTransactionEnableNewDataNotification
 
-A pointer to the driver-implemented <a href="serports.evtsercx2customreceivetransactionenablenewdatanotification">EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
+A pointer to the driver-implemented <a href="https://msdn.microsoft.com/C3E446AB-17AA-4FD8-8245-16D95134B0E7">EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</a> event callback function. This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
 
 
 ### -field EvtSerCx2CustomReceiveTransactionQueryProgress
 
-A pointer to the driver-implemented <a href="serports.evtsercx2customreceivetransactionqueryprogress">EvtSerCx2CustomReceiveTransactionQueryProgress</a> event callback function. This member must point to a valid function.
+A pointer to the driver-implemented <a href="https://msdn.microsoft.com/B0B08257-E867-4E22-949E-555AD44C2DDE">EvtSerCx2CustomReceiveTransactionQueryProgress</a> event callback function. This member must point to a valid function.
 
 
 ## -remarks
-The <a href="serports.sercx2customreceivetransactioncreate">SerCx2CustomReceiveTransactionCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomReceiveTransactionInitialize</b>, call the <a href="serports.sercx2_custom_receive_transaction_config_init">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT</a> function to initialize this structure.
+The <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomReceiveTransactionInitialize</b>, call the <a href="..\sercx\nf-sercx-sercx2_custom_receive_transaction_config_init.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT</a> function to initialize this structure.
 
 
 ## -requirements
@@ -124,22 +125,22 @@ Header
 <a href="..\sercx\nc-sercx-evt_sercx2_custom_receive_transaction_cleanup.md">EvtSerCx2CustomReceiveTransactionCleanup</a>
 </dt>
 <dt>
-<a href="serports.evtsercx2customreceivetransactionenablenewdatanotification">EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</a>
+<a href="https://msdn.microsoft.com/C3E446AB-17AA-4FD8-8245-16D95134B0E7">EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</a>
 </dt>
 <dt>
 <a href="..\sercx\nc-sercx-evt_sercx2_custom_receive_transaction_initialize.md">EvtSerCx2CustomReceiveTransactionInitialize</a>
 </dt>
 <dt>
-<a href="serports.evtsercx2customreceivetransactionqueryprogress">EvtSerCx2CustomReceiveTransactionQueryProgress</a>
+<a href="https://msdn.microsoft.com/B0B08257-E867-4E22-949E-555AD44C2DDE">EvtSerCx2CustomReceiveTransactionQueryProgress</a>
 </dt>
 <dt>
 <a href="..\sercx\nc-sercx-evt_sercx2_custom_receive_transaction_start.md">EvtSerCx2CustomReceiveTransactionStart</a>
 </dt>
 <dt>
-<a href="serports.sercx2_custom_receive_transaction_config_init">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT</a>
+<a href="..\sercx\nf-sercx-sercx2_custom_receive_transaction_config_init.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="serports.sercx2customreceivetransactioncreate">SerCx2CustomReceiveTransactionCreate</a>
+<a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
 </dt>
 </dl>
  

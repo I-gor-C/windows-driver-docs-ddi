@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._PCW_COUNTER_INFORMATION
+UID: NS:wdm._PCW_COUNTER_INFORMATION
 title: _PCW_COUNTER_INFORMATION
 author: windows-driver-content
 description: The PCW_COUNTER_INFORMATION structure describes attributes that identify a specific instance of a counter set.
@@ -7,8 +7,8 @@ old-location: devtest\pcw_counter_information.htm
 old-project: devtest
 ms.assetid: fe4d8df4-0e15-49fb-a5ec-40aa8acf3675
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PCW_COUNTER_INFORMATION, *PPCW_COUNTER_INFORMATION, PPCW_COUNTER_INFORMATION, PCW_COUNTER_INFORMATION
+ms.date: 1/10/2018
+ms.keywords: _PCW_COUNTER_INFORMATION, PCW_COUNTER_INFORMATION, *PPCW_COUNTER_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: PCW_COUNTER_INFORMATION, *PPCW_COUNTER_INFORMATION
 req.product: Windows 10 or later.
 ---
 

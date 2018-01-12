@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._FILE_PIPE_LOCAL_INFORMATION
+UID: NS:ntifs._FILE_PIPE_LOCAL_INFORMATION
 title: _FILE_PIPE_LOCAL_INFORMATION
 author: windows-driver-content
 description: The FILE_PIPE_LOCAL_INFORMATION structure contains information about the local end of a named pipe.
@@ -7,8 +7,8 @@ old-location: ifsk\file_pipe_local_information.htm
 old-project: ifsk
 ms.assetid: 7ca66b75-e5ff-46a6-8a40-47aa53bf0f6f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION, *PFILE_PIPE_LOCAL_INFORMATION
+ms.date: 1/9/2018
+ms.keywords: _FILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION, *PFILE_PIPE_LOCAL_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FILE_PIPE_LOCAL_INFORMATION, *PFILE_PIPE_LOCAL_INFORMATION
 ---
 
 # _FILE_PIPE_LOCAL_INFORMATION structure
@@ -214,7 +215,7 @@ The type of the named pipe end, which specifies whether this is the client or th
 
 
 ## -remarks
-For information about pipes, see <a href="base.pipes">Pipes</a>.
+For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-eec8-4dda-9cb7-8d37abcee6f4">Pipes</a>.
 
 
 ## -requirements

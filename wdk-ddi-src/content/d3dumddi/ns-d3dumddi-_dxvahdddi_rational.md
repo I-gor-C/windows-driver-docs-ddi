@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._DXVAHDDDI_RATIONAL
+UID: NS:d3dumddi._DXVAHDDDI_RATIONAL
 title: _DXVAHDDDI_RATIONAL
 author: windows-driver-content
 description: The DXVAHDDDI_RATIONAL structure describes a fractional value that represents the vertical and horizontal frequencies of a video mode (that is, vertical sync and horizontal sync).
@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_rational.htm
 old-project: display
 ms.assetid: 4560fb48-24c3-4beb-acc3-b8d2ed3a81d3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVAHDDDI_RATIONAL, DXVAHDDDI_RATIONAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVAHDDDI_RATIONAL
 ---
 
 # _DXVAHDDDI_RATIONAL structure

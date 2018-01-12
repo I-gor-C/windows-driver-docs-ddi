@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfhwaccess.WDF_READ_REGISTER_BUFFER_USHORT
+UID: NF:wdfhwaccess.WDF_READ_REGISTER_BUFFER_USHORT
 title: WDF_READ_REGISTER_BUFFER_USHORT function
 author: windows-driver-content
 description: The WDF_READ_REGISTER_BUFFER_USHORT function reads a number of USHORT values from the specified register address into a buffer.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_register_buffer_ushort.htm
 old-project: wdf
 ms.assetid: BA47B3D0-9515-40C6-B23D-A2D9FC993FB3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WDF_READ_REGISTER_BUFFER_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 

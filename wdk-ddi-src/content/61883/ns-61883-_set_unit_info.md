@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._SET_UNIT_INFO
+UID: NS:61883._SET_UNIT_INFO
 title: _SET_UNIT_INFO
 author: windows-driver-content
 description: This structure is used to set unit information.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: D4A9B507-E199-42EA-BC29-6F477BEC8D20
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SET_UNIT_INFO, PSET_UNIT_INFO, SET_UNIT_INFO, *PSET_UNIT_INFO
+ms.keywords: _SET_UNIT_INFO, *PSET_UNIT_INFO, SET_UNIT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSET_UNIT_INFO, SET_UNIT_INFO
 ---
 
 # _SET_UNIT_INFO structure

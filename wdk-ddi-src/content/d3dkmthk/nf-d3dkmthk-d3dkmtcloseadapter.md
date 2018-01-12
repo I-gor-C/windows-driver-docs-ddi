@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTCloseAdapter
+UID: NF:d3dkmthk.D3DKMTCloseAdapter
 title: D3DKMTCloseAdapter function
 author: windows-driver-content
 description: The D3DKMTCloseAdapter function closes a graphics adapter that was previously opened by using the D3DKMTOpenAdapterFromHdc function.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtcloseadapter.htm
 old-project: display
 ms.assetid: d8f1a47b-4ba0-41e0-a6e3-0589e1efcf06
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTCloseAdapter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Gdi32.lib
 req.dll: Gdi32.dll
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTCloseAdapter function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>D3DKMTCloseAdapter</b> function closes a graphics adapter that was previously opened by using the <a href="display.d3dkmtopenadapterfromhdc">D3DKMTOpenAdapterFromHdc</a> function.
+The <b>D3DKMTCloseAdapter</b> function closes a graphics adapter that was previously opened by using the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenadapterfromhdc.md">D3DKMTOpenAdapterFromHdc</a> function.
 
 
 
@@ -55,7 +56,7 @@ NTSTATUS APIENTRY D3DKMTCloseAdapter(
 
 ### -param pData [in]
 
-A pointer to a <a href="display.d3dkmt_closeadapter">D3DKMT_CLOSEADAPTER</a> structure that specifies the adapter to close.
+A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_closeadapter.md">D3DKMT_CLOSEADAPTER</a> structure that specifies the adapter to close.
 
 
 ## -returns
@@ -138,12 +139,12 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dkmt_closeadapter">D3DKMT_CLOSEADAPTER</a>
+<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_closeadapter.md">D3DKMT_CLOSEADAPTER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTCloseAdapter function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DKMTCloseAdapter function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

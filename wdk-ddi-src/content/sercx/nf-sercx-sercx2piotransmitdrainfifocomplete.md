@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2PioTransmitDrainFifoComplete
+UID: NF:sercx.SerCx2PioTransmitDrainFifoComplete
 title: SerCx2PioTransmitDrainFifoComplete function
 author: windows-driver-content
 description: The SerCx2PioTransmitDrainFifoComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished draining the data from the transmit FIFO in the serial controller hardware.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ VOID SerCx2PioTransmitDrainFifoComplete(
 
 ### -param PioTransmit [in]
 
-A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
+A <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a> method to create this object.
 
 
 ## -returns
@@ -129,7 +130,7 @@ IRQL
 <a href="serports.sercx2piotransmit_object_handle">SERCX2PIOTRANSMIT</a>
 </dt>
 <dt>
-<a href="serports.sercx2piotransmitcreate">SerCx2PioTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2piotransmitcreate.md">SerCx2PioTransmitCreate</a>
 </dt>
 </dl>
  

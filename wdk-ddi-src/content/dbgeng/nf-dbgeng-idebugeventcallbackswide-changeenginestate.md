@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugEventCallbacksWide.ChangeEngineState
+UID: NF:dbgeng.IDebugEventCallbacksWide.ChangeEngineState
 title: IDebugEventCallbacksWide::ChangeEngineState method
 author: windows-driver-content
 description: The ChangeEngineState callback method is called by the engine when its state has changed.
 old-location: debugger\idebugeventcallbackswide_changeenginestate.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 14205476-3f58-4105-99a7-a3baa2eba033
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugEventCallbacksWide, IDebugEventCallbacksWide::ChangeEngineState, ChangeEngineState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugEventCallbacksWide::ChangeEngineState method
@@ -306,7 +307,7 @@ The return value is ignored by the engine unless it indicates a remote procedure
 
 
 ## -remarks
-This method is only called by the engine if the DEBUG_EVENT_CHANGE_ENGINE_STATE flag is set in the mask returned by <a href="debugger.idebugeventcallbackswide_getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.
+This method is only called by the engine if the DEBUG_EVENT_CHANGE_ENGINE_STATE flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550625">IDebugEventCallbacksWide::GetInterestMask</a>.
 
 For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>. 
 

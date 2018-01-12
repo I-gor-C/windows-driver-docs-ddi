@@ -1,5 +1,5 @@
 ---
-UID: NS.USBSIDEBANDAUDIO._USBSIDEBANDAUDIO_VOLUME_PARAMS
+UID: NS:usbsidebandaudio._USBSIDEBANDAUDIO_VOLUME_PARAMS
 title: _USBSIDEBANDAUDIO_VOLUME_PARAMS
 author: windows-driver-content
 description: TBD.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 253CD4CB-AC8D-4CA0-B620-EB1CC4DFD925
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, PUSBSIDEBANDAUDIO_VOLUME_PARAMS
+ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
 req.product: Windows 10 or later.
 ---
 

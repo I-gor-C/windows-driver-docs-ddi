@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.CcRepinBcb
+UID: NF:ntifs.CcRepinBcb
 title: CcRepinBcb function
 author: windows-driver-content
 description: The CcRepinBcb routine pins a buffer control block (BCB) an additional time to prevent it from being freed by a subsequent call to CcUnpinData.
@@ -7,7 +7,7 @@ old-location: ifsk\ccrepinbcb.htm
 old-project: ifsk
 ms.assetid: 81c2446e-8f11-4146-8da5-17fc451c2729
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: CcRepinBcb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: 
+req.typenames: TOKEN_TYPE
 ---
 
 # CcRepinBcb function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>CcRepinBcb</b> routine pins a buffer control block (BCB) an additional time to prevent it from being freed by a subsequent call to <a href="ifsk.ccunpindata">CcUnpinData</a>.
+The <b>CcRepinBcb</b> routine pins a buffer control block (BCB) an additional time to prevent it from being freed by a subsequent call to <a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>.
 
 
 
@@ -55,7 +56,7 @@ VOID CcRepinBcb(
 
 ### -param Bcb [in]
 
-Buffer control block (BCB) pointer returned by <a href="ifsk.ccpinread">CcPinRead</a> or <a href="ifsk.ccpreparepinwrite">CcPreparePinWrite</a>.
+Buffer control block (BCB) pointer returned by <a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a> or <a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>.
 
 
 ## -returns
@@ -65,7 +66,7 @@ None
 ## -remarks
 File systems call <b>CcRepinBcb</b> to preserve a BCB for write-through or error recovery. Typically a file system would do this the first time it marks a BCB as dirty while processing a write-through request, or any time that it determines that a buffer will be required for write-through.
 
-Every call to <b>CcRepinBcb</b> must be matched by a subsequent call to <a href="ifsk.ccunpinrepinnedbcb">CcUnpinRepinnedBcb</a>.
+Every call to <b>CcRepinBcb</b> must be matched by a subsequent call to <a href="..\ntifs\nf-ntifs-ccunpinrepinnedbcb.md">CcUnpinRepinnedBcb</a>.
 
 
 ## -requirements
@@ -119,21 +120,21 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ccpinread">CcPinRead</a>
+<a href="..\ntifs\nf-ntifs-ccpinread.md">CcPinRead</a>
 </dt>
 <dt>
-<a href="ifsk.ccpreparepinwrite">CcPreparePinWrite</a>
+<a href="..\ntifs\nf-ntifs-ccpreparepinwrite.md">CcPreparePinWrite</a>
 </dt>
 <dt>
-<a href="ifsk.ccunpindata">CcUnpinData</a>
+<a href="..\ntifs\nf-ntifs-ccunpindata.md">CcUnpinData</a>
 </dt>
 <dt>
-<a href="ifsk.ccunpinrepinnedbcb">CcUnpinRepinnedBcb</a>
+<a href="..\ntifs\nf-ntifs-ccunpinrepinnedbcb.md">CcUnpinRepinnedBcb</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcRepinBcb routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20CcRepinBcb routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

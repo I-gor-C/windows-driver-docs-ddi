@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteTyped.HasField
+UID: NF:engextcpp.ExtRemoteTyped.HasField
 title: ExtRemoteTyped::HasField method
 author: windows-driver-content
 description: The HasField method determines if the type of the data represented by this object contains the specified member.
 old-location: debugger\extremotetyped_hasfield.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: c206d8e7-1a90-4866-868b-20275a52e2dd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped::HasField, HasField
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteTyped::HasField method

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpar.IOCTL_PAR_QUERY_INFORMATION
+UID: NI:ntddpar.IOCTL_PAR_QUERY_INFORMATION
 title: IOCTL_PAR_QUERY_INFORMATION
 author: windows-driver-content
 description: The IOCTL_PAR_QUERY_INFORMATION request returns the status of an IEEE 1284 end-of-chain device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION
 ---
 
 # IOCTL_PAR_QUERY_INFORMATION IOCTL
@@ -74,7 +75,7 @@ PARALLEL_SELECTED
 
 
 ### -output-buffer-length
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="parports.par_query_information">PAR_QUERY_INFORMATION</a> structure. 
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\ntddpar\ns-ntddpar-_par_query_information.md">PAR_QUERY_INFORMATION</a> structure. 
 
 
 ### -in-out-buffer
@@ -120,7 +121,7 @@ Header
 <a href="..\ntddpar\ni-ntddpar-ioctl_par_query_location.md">IOCTL_PAR_QUERY_LOCATION</a>
 </dt>
 <dt>
-<a href="parports.par_query_information">PAR_QUERY_INFORMATION</a>
+<a href="..\ntddpar\ns-ntddpar-_par_query_information.md">PAR_QUERY_INFORMATION</a>
 </dt>
 </dl>
  

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILUICCSERVICEPARAMS
+UID: NS:ntddrilapitypes.RILUICCSERVICEPARAMS
 title: RILUICCSERVICEPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riluiccserviceparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0f43b2be-d371-42d8-825b-56362de05c5e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS, LPRILUICCSERVICEPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS
 ---
 
 # RILUICCSERVICEPARAMS structure

@@ -1,14 +1,14 @@
 ---
-UID: NE.ntddndis._NDIS_REQUEST_TYPE
+UID: NE:ntddndis._NDIS_REQUEST_TYPE
 title: _NDIS_REQUEST_TYPE
 author: windows-driver-content
 description: The NDIS_REQUEST_TYPE enumeration identifies the request type in an OID request.
 old-location: netvista\ndis_request_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c4352eab-8bbd-429e-93ad-190372d29f2c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_REQUEST_TYPE, NDIS_REQUEST_TYPE, *PNDIS_REQUEST_TYPE, PNDIS_REQUEST_TYPE
+ms.date: 1/8/2018
+ms.keywords: _NDIS_REQUEST_TYPE, NDIS_REQUEST_TYPE, *PNDIS_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_REQUEST_TYPE, *PNDIS_REQUEST_TYPE
 ---
 
 # _NDIS_REQUEST_TYPE enumeration
@@ -142,7 +143,7 @@ A method request. NDIS forwards such a request to the underlying driver's
 
 ## -remarks
 The NDIS_REQUEST_TYPE enumeration is used in the 
-    <a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a> structure.
+    <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure.
 
 
 ## -requirements
@@ -176,12 +177,12 @@ Header
 <a href="..\ndis\nc-ndis-miniport_oid_request.md">MiniportOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_REQUEST_TYPE enumeration%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_REQUEST_TYPE enumeration%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

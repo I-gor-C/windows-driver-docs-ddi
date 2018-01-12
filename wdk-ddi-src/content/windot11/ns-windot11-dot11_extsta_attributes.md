@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11.DOT11_EXTSTA_ATTRIBUTES
+UID: NS:windot11.DOT11_EXTSTA_ATTRIBUTES
 title: DOT11_EXTSTA_ATTRIBUTES
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11_extsta_attributes.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 319017a7-f398-46f7-ab03-1dcb057c1332
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: DOT11_EXTSTA_ATTRIBUTES, DOT11_EXTSTA_ATTRIBUTES, *PDOT11_EXTSTA_ATTRIBUTES
+ms.date: 1/8/2018
+ms.keywords: DOT11_EXTSTA_ATTRIBUTES, *PDOT11_EXTSTA_ATTRIBUTES, DOT11_EXTSTA_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT11_EXTSTA_ATTRIBUTES, DOT11_EXTSTA_ATTRIBUTES
 req.product: Windows 10 or later.
 ---
 
@@ -83,7 +84,7 @@ typedef struct DOT11_EXTSTA_ATTRIBUTES {
 
 The type, revision, and size of the <b>DOT11_EXTSTA_ATTRIBUTES</b> structure. This member is formatted as
      an 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
      
 
 The miniport driver must set the members of 
@@ -136,7 +137,7 @@ This member must be set to
 </dd>
 </dl>
 For more information about these members, see 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 
 ### -field uScanSSIDListSize
@@ -223,7 +224,7 @@ The maximum length, in bytes, of a WEP cipher key supported by the 802.11 statio
 
 The following table lists the minimum and maximum key lengths, in bytes, for the various WEP cipher
      values defined through 
-     <a href="netvista.dot11_cipher_algorithm">DOT11_CIPHER_ALGORITHM</a>.
+     <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>.
 
 <table>
 <tr>
@@ -297,7 +298,7 @@ The maximum number of per-station default cipher key tables supported by the 802
      
 
 For more information about per-station default cipher key tables, see 
-     <a href="netvista.per_station_default_keys">Per-Station Default Keys</a>.
+     <a href="https://msdn.microsoft.com/a68799cb-1422-4d0b-8dca-7f9bacb9f133">Per-Station Default Keys</a>.
 
 
 ### -field bStrictlyOrderedServiceClassImplemented
@@ -501,10 +502,10 @@ A pointer to an array of authentication and cipher algorithm pair which the devi
 
 ## -remarks
 The 
-    <a href="netvista.ndis_miniport_adapter_native_802_11_attributes">
+    <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_native_802_11_attributes.md">
     NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a> structure contains a member (<b>pExtSTAAttributes</b>) that specifies the address of a DOT11_EXTSTA_ATTRIBUTES structure. When the
     miniport driver calls 
-    <a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>,
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>,
     the driver sets the 
     <i>MiniportAttributes</i> parameter to the address of a driver-allocated block of memory which contains an
     NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES structure along with the DOT11_EXTSTA_ATTRIBUTES
@@ -545,7 +546,7 @@ Header
 <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">DOT11_AUTH_CIPHER_PAIR</a>
 </dt>
 <dt>
-<a href="netvista.dot11_cipher_algorithm">DOT11_CIPHER_ALGORITHM</a>
+<a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
 </dt>
 <dt>
 <a href="netvista.dot11_country_or_region_string">
@@ -556,14 +557,14 @@ Header
    Mode</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_adapter_native_802_11_attributes">
+<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_native_802_11_attributes.md">
    NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 <dt>
 <a href="netvista.oid_dot11_cipher_key_mapping_key">
@@ -593,12 +594,12 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
 </dt>
 <dt>
-<a href="netvista.per_station_default_keys">Per-Station Default Keys</a>
+<a href="https://msdn.microsoft.com/a68799cb-1422-4d0b-8dca-7f9bacb9f133">Per-Station Default Keys</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_EXTSTA_ATTRIBUTES structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_EXTSTA_ATTRIBUTES structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsQueryInformationFile
+UID: NF:ks.KsQueryInformationFile
 title: KsQueryInformationFile function
 author: windows-driver-content
 description: The KsQueryInformationFile function performs an information query against the specified file object. The function attempts to use FastIoDispatch if possible, or it generates an information request against the device object.
@@ -7,7 +7,7 @@ old-location: stream\ksqueryinformationfile.htm
 old-project: stream
 ms.assetid: db1cce43-1eae-4af0-bb61-a5c295e3d325
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsQueryInformationFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsQueryInformationFile function

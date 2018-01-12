@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:bthddi
 ---
 
 # Bthddi.h header
@@ -61,13 +61,12 @@ Bthddi.h contain these programming interfaces:
 | [_CHANNEL_CONFIG_RESULTS_ENHANCED structure](ns-bthddi-_channel_config_results_enhanced.md) | The CHANNEL_CONFIG_RESULTS_ENHANCED structure describes configuration parameters and the buffer size of any extra option for the inbound and outbound directions of an L2CAP channel. |
 | [_CO_HEADER structure](ns-bthddi-_co_header.md) | The CO_HEADER structure is used to specify values for the Header member of the L2CAP_CONFIG_OPTION structure. |
 | [_INDICATION_PARAMETERS structure](ns-bthddi-_indication_parameters.md) | The INDICATION_PARAMETERS structure is passed as the Parameters parameter to a profile driver's L2CAP Callback Function. |
-| [_INDICATION_PARAMETERS structure](ns-bthddi-_indication_parameters~r1.md) | The INDICATION_PARAMETERS structure is passed as the Parameters parameter to a profile driver's L2CAP Callback Function. |
 | [_INDICATION_PARAMETERS_ENHANCED structure](ns-bthddi-_indication_parameters_enhanced.md) | The INDICATION_PARAMETERS_ENHANCED structure is passed as the Parameters parameter to a profile driver's enhanced L2CAP Callback Function. |
-| [_INDICATION_PARAMETERS_ENHANCED structure](ns-bthddi-_indication_parameters_enhanced~r1.md) | The INDICATION_PARAMETERS_ENHANCED structure is passed as the Parameters parameter to a profile driver's enhanced L2CAP Callback Function. |
 | [_L2CAP_CONFIG_OPTION structure](ns-bthddi-_l2cap_config_option.md) | An array of L2CAP_CONFIG_OPTION structures is used to specify values for the ExtraOptions member of the CHANNEL_CONFIG_PARAMETERS, _BRB_L2CA_OPEN_CHANNEL, and INDICATION_PARAMETERS structures. |
 | [_L2CAP_CONFIG_RANGE structure](ns-bthddi-_l2cap_config_range.md) | The L2CAP_CONFIG_RANGE structure is used to specify a range of possible values for the FlushTO member of the _BRB_L2CA_OPEN_CHANNEL structure during incoming requests. |
 | [_L2CAP_CONFIG_VALUE_RANGE structure](ns-bthddi-_l2cap_config_value_range.md) | The L2CAP_CONFIG_VALUE_RANGE structure is used to specify values for the Mtu and FlushTO members of the _BRB_L2CA_OPEN_CHANNEL structure. |
 | [_L2CAP_EXTENDED_FLOW_SPEC structure](ns-bthddi-_l2cap_extended_flow_spec.md) | The L2CAP_EXTENDED_FLOW_SPEC is reserved for future use. |
+| [_L2CAP_FLOWSPEC structure](ns-bthddi-_l2cap_flowspec.md) | This structure reserved for future use. |
 | [_L2CAP_RETRANSMISSION_AND_FLOW_CONTROL structure](ns-bthddi-_l2cap_retransmission_and_flow_control.md) | The L2CAP_RETRANSMISSION_AND_FLOW_CONTROL structure describes configuration parameters for enhanced retransmission mode and streaming mode. |
 | [_SCO_INDICATION_PARAMETERS structure](ns-bthddi-_sco_indication_parameters.md) | The SCO_INDICATION_PARAMETERS structure describes indication parameters about a SCO connect or disconnect notification. |
 
@@ -77,10 +76,13 @@ Bthddi.h contain these programming interfaces:
 | ---- |:---- |
 | [_ACL_MODE enumeration](ne-bthddi-_acl_mode.md) | The ACL_MODE enumeration type is used to list the possible states of an ACL connection. |
 | [_BRB_TYPE enumeration](ne-bthddi-_brb_type.md) | The BRB_TYPE enumeration type is used to determine the Bluetooth request block when a profile driver builds and sends a BRB. |
+| [_BRB_VERSION enumeration](ne-bthddi-_brb_version.md) | Reserved for internal use. |
+| [_CODING_FORMAT enumeration](ne-bthddi-_coding_format.md) | This enumeration is for internal use only. |
+| [_ENUMERATOR_ACTION enumeration](ne-bthddi-_enumerator_action.md) | Reserved for internal use. |
 | [_ENUMERATOR_TYPE enumeration](ne-bthddi-_enumerator_type.md) | The ENUMERATOR_TYPE enumeration type is used to determine whether the enumerated device is associated with a service or a protocol. The ENUMERATOR_TYPE enumeration is intended for internal use only and should not be used by profile drivers. |
 | [_INDICATION_CODE enumeration](ne-bthddi-_indication_code.md) | The INDICATION_CODE enumeration type indicates to a profile driver what type of L2CAP event has occurred. |
-| [_INDICATION_CODE enumeration](ne-bthddi-_indication_code~r1.md) | The INDICATION_CODE enumeration type indicates to a profile driver what type of L2CAP event has occurred. |
 | [_L2CAP_DISCONNECT_REASON enumeration](ne-bthddi-_l2cap_disconnect_reason.md) | The L2CAP_DISCONNECT_REASON enumeration type gives the reason an L2CAP channel has been disconnected. |
+| [_PCM_DATA_FORMAT enumeration](ne-bthddi-_pcm_data_format.md) | This enumeration is for internal use only. |
 | [_SCO_DISCONNECT_REASON enumeration](ne-bthddi-_sco_disconnect_reason.md) | The SCO_DISCONNECT_REASON enumeration type gives the reason an SCO channel has been disconnected. |
 | [_SCO_INDICATION_CODE enumeration](ne-bthddi-_sco_indication_code.md) | The SCO_INDICATION_CODE enumeration type describes the type of an incoming SCO connection or bonding state change. The Bluetooth driver stack passes a value from this enumeration in the Indication argument of a profile driver's SCO Callback Function. |
 | [_SCO_LINK_TYPE enumeration](ne-bthddi-_sco_link_type.md) | The SCO_LINK_TYPE enumeration type describes the type of link used by the SCO connection when a ScoIndicationRemoteConnect indication event is processed. |

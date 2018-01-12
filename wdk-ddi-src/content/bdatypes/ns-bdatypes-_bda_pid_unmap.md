@@ -1,5 +1,5 @@
 ---
-UID: NS.BDATYPES._BDA_PID_UNMAP
+UID: NS:bdatypes._BDA_PID_UNMAP
 title: _BDA_PID_UNMAP
 author: windows-driver-content
 description: The BDA_PID_UNMAP structure describes packet types to stop filtering from the input stream of a packet identifier (PID) filter. These packet types are identified with PIDs.
@@ -7,8 +7,8 @@ old-location: stream\bda_pid_unmap.htm
 old-project: stream
 ms.assetid: 7c669708-9b5d-424f-ab6f-6e3498331c74
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BDA_PID_UNMAP, BDA_PID_UNMAP, PBDA_PID_UNMAP, *PBDA_PID_UNMAP
+ms.date: 1/9/2018
+ms.keywords: _BDA_PID_UNMAP, BDA_PID_UNMAP, *PBDA_PID_UNMAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: BDA_PID_UNMAP, *PBDA_PID_UNMAP
 ---
 
 # _BDA_PID_UNMAP structure
@@ -85,13 +86,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.bda_pid_map">BDA_PID_MAP</a>
+<a href="..\bdatypes\ns-bdatypes-_bda_pid_map.md">BDA_PID_MAP</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566551">KSPROPSETID_BdaPIDFilter</a>
 </dt>
 <dt>
-<a href="stream.media_sample_content">MEDIA_SAMPLE_CONTENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567719">MEDIA_SAMPLE_CONTENT</a>
 </dt>
 <dt>
 <a href="..\bdatypes\ns-bdatypes-pid_map.md">PID_MAP</a>
@@ -101,5 +102,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BDA_PID_UNMAP structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BDA_PID_UNMAP structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltEnumerateInstanceInformationByFilter
+UID: NF:fltkernel.FltEnumerateInstanceInformationByFilter
 title: FltEnumerateInstanceInformationByFilter function
 author: windows-driver-content
 description: The FltEnumerateInstanceInformationByFilter routine provides information about instances of a given minifilter driver.
@@ -7,7 +7,7 @@ old-location: ifsk\fltenumerateinstanceinformationbyfilter.htm
 old-project: ifsk
 ms.assetid: c5590897-45cf-4712-b980-b99aaacfba88
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltEnumerateInstanceInformationByFilter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltEnumerateInstanceInformationByFilter function
@@ -83,7 +84,7 @@ Type of information requested. This parameter can have one of the following valu
 
 </td>
 <td>
-The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_basic_information">INSTANCE_BASIC_INFORMATION</a> structure for the instance. 
+The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="..\fltuserstructures\ns-fltuserstructures-_instance_basic_information.md">INSTANCE_BASIC_INFORMATION</a> structure for the instance. 
 
 </td>
 </tr>
@@ -93,7 +94,7 @@ The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.i
 
 </td>
 <td>
-The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_full_information">INSTANCE_FULL_INFORMATION</a> structure for the instance. 
+The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="..\fltuserstructures\ns-fltuserstructures-_instance_full_information.md">INSTANCE_FULL_INFORMATION</a> structure for the instance. 
 
 </td>
 </tr>
@@ -103,7 +104,7 @@ The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.i
 
 </td>
 <td>
-The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_partial_information">INSTANCE_PARTIAL_INFORMATION</a> structure for the instance. 
+The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="..\fltuserstructures\ns-fltuserstructures-_instance_partial_information.md">INSTANCE_PARTIAL_INFORMATION</a> structure for the instance. 
 
 </td>
 </tr>
@@ -113,7 +114,7 @@ The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.i
 
 </td>
 <td>
-The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="ifsk.instance_aggregate_standard_information">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a> structure for the instance.  The <i>LegacyFilter</i> portion of the structure is not utilized. This structure is available starting with Windows Vista.
+The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="..\fltuserstructures\ns-fltuserstructures-_instance_aggregate_standard_information.md">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a> structure for the instance.  The <i>LegacyFilter</i> portion of the structure is not utilized. This structure is available starting with Windows Vista.
 
 </td>
 </tr>
@@ -157,17 +158,17 @@ Pointer to a caller-allocated variable that receives the number of bytes returne
 ## -remarks
 The <i>Index</i> parameter is simply a way for <b>FltEnumerateInstanceInformationByFilter </b>to select among instances in the instance list for the minifilter driver specified by <i>Filter</i>.  Because the minifilter driver instances in the instance list can change at any time, two calls to <b>FltEnumerateInstanceInformationByFilter </b>with the same <i>Index</i> and <i>Filter</i> values are not guaranteed to return the same result. 
 
-To enumerate all registered minifilter drivers, call <a href="ifsk.fltenumeratefilters">FltEnumerateFilters</a>. 
+To enumerate all registered minifilter drivers, call <a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>. 
 
-To list filter information for all registered minifilter drivers, call <a href="ifsk.fltenumeratefilterinformation">FltEnumerateFilterInformation</a>. 
+To list filter information for all registered minifilter drivers, call <a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>. 
 
-To get filter information for a given minifilter driver, call <a href="ifsk.fltgetfilterinformation">FltGetFilterInformation</a>. 
+To get filter information for a given minifilter driver, call <a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>. 
 
-To enumerate all minifilter driver instances on a given volume, call <a href="ifsk.fltenumerateinstanceinformationbyvolume">FltEnumerateInstanceInformationByVolume</a>. 
+To enumerate all minifilter driver instances on a given volume, call <a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>. 
 
-To enumerate instances of all minifilter drivers on all volumes, call <a href="ifsk.fltenumerateinstances">FltEnumerateInstances</a>. 
+To enumerate instances of all minifilter drivers on all volumes, call <a href="..\fltkernel\nf-fltkernel-fltenumerateinstances.md">FltEnumerateInstances</a>. 
 
-To enumerate all volumes that are known to the Filter Manager, call <a href="ifsk.fltenumeratevolumes">FltEnumerateVolumes</a>. 
+To enumerate all volumes that are known to the Filter Manager, call <a href="..\fltkernel\nf-fltkernel-fltenumeratevolumes.md">FltEnumerateVolumes</a>. 
 
 .
 
@@ -222,36 +223,36 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltenumeratefilterinformation">FltEnumerateFilterInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratefilterinformation.md">FltEnumerateFilterInformation</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumeratefilters">FltEnumerateFilters</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratefilters.md">FltEnumerateFilters</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumerateinstanceinformationbyvolume">FltEnumerateInstanceInformationByVolume</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumerateinstanceinformationbyvolume.md">FltEnumerateInstanceInformationByVolume</a>
 </dt>
 <dt>
-<a href="ifsk.fltenumeratevolumes">FltEnumerateVolumes</a>
+<a href="..\fltkernel\nf-fltkernel-fltenumeratevolumes.md">FltEnumerateVolumes</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetfilterinformation">FltGetFilterInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetfilterinformation.md">FltGetFilterInformation</a>
 </dt>
 <dt>
-<a href="ifsk.instance_aggregate_standard_information">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_instance_aggregate_standard_information.md">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.instance_basic_information">INSTANCE_BASIC_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_instance_basic_information.md">INSTANCE_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.instance_full_information">INSTANCE_FULL_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_instance_full_information.md">INSTANCE_FULL_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.instance_partial_information">INSTANCE_PARTIAL_INFORMATION</a>
+<a href="..\fltuserstructures\ns-fltuserstructures-_instance_partial_information.md">INSTANCE_PARTIAL_INFORMATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateInstanceInformationByFilter routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltEnumerateInstanceInformationByFilter routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

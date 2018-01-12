@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ClfsMgmtInstallPolicy
+UID: NF:wdm.ClfsMgmtInstallPolicy
 title: ClfsMgmtInstallPolicy function
 author: windows-driver-content
 description: The ClfsMgmtInstallPolicy routine adds a CLFS_MGMT_POLICY structure to a physical log.
@@ -7,7 +7,7 @@ old-location: kernel\clfsmgmtinstallpolicy.htm
 old-project: kernel
 ms.assetid: 0a492a86-e732-4302-b35d-9b2a5eb05445
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ClfsMgmtInstallPolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Clfs.lib
 req.dll: Clfs.sys
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>ClfsMgmtInstallPolicy</b> routine adds a <a href="kernel.clfs_mgmt_policy">CLFS_MGMT_POLICY</a> structure to a physical log.
+The <b>ClfsMgmtInstallPolicy</b> routine adds a <a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a> structure to a physical log.
 
 
 
@@ -58,12 +59,12 @@ NTSTATUS ClfsMgmtInstallPolicy(
 
 ### -param LogFile [in]
 
-A pointer to a <a href="kernel.log_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log that this instance of the <b>CLFS_MGMT_POLICY</b> structure will apply to. The policy applies to all streams within the log, even if a single stream within the log was specified. 
+A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">LOG_FILE_OBJECT</a> structure that represents the CLFS log that this instance of the <b>CLFS_MGMT_POLICY</b> structure will apply to. The policy applies to all streams within the log, even if a single stream within the log was specified. 
 
 
 ### -param Policy [in]
 
-A pointer to a <a href="kernel.clfs_mgmt_policy">CLFS_MGMT_POLICY</a> structure that contains the policy to be installed.
+A pointer to a <a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a> structure that contains the policy to be installed.
 
 
 ### -param PolicyLength [in]
@@ -84,7 +85,7 @@ The <b>ClfsMgmtInstallPolicy</b> routine returns one of the following NTSTATUS v
 </dl>A <b>NULL</b> value was supplied for the <i>Policy</i> parameter. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER_3</b></dt>
-</dl>The value of the <i>PolicyLength</i> parameter is less than the size of an instance of the <a href="kernel.clfs_mgmt_policy">CLFS_MGMT_POLICY</a> structure.
+</dl>The value of the <i>PolicyLength</i> parameter is less than the size of an instance of the <a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a> structure.
 <dl>
 <dt><b>STATUS_NOT_SUPPORTED</b></dt>
 </dl>The <b>PolicyFlags</b> member of the <b>CLFS_MGMT_POLICY_STRUCTURE</b> pointed to by the <i>Policy</i> parameter specifies any flag other than LOG_POLICY_OVERWRITE.
@@ -188,12 +189,12 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfs_mgmt_policy">CLFS_MGMT_POLICY</a>
+<a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsMgmtInstallPolicy routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsMgmtInstallPolicy routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

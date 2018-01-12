@@ -1,5 +1,5 @@
 ---
-UID: NS.BDAMEDIA.TAGBDA_TRANSPORT_INFO
+UID: NS:bdamedia.tagBDA_TRANSPORT_INFO
 title: tagBDA_TRANSPORT_INFO
 author: windows-driver-content
 description: The BDA_TRANSPORT_INFO structure describes formatting for a stream connection.
@@ -7,8 +7,8 @@ old-location: stream\bda_transport_info.htm
 old-project: stream
 ms.assetid: 995a1d2f-8e2b-426e-a08c-283124ce905e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagBDA_TRANSPORT_INFO, *PBDA_TRANSPORT_INFO, PBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO
+ms.date: 1/9/2018
+ms.keywords: tagBDA_TRANSPORT_INFO, *PBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO
 ---
 
 # tagBDA_TRANSPORT_INFO structure
@@ -100,10 +101,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksdatarange">KSDATARANGE</a>
+<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
 </dt>
 <dt>
-<a href="stream.ks_datarange_bda_transport">KS_DATARANGE_BDA_TRANSPORT</a>
+<a href="..\bdamedia\ns-bdamedia-tagks_datarange_bda_transport.md">KS_DATARANGE_BDA_TRANSPORT</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
@@ -113,5 +114,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BDA_TRANSPORT_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20BDA_TRANSPORT_INFO structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

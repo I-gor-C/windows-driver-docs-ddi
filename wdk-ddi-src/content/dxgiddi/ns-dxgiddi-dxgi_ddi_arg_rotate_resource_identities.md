@@ -1,5 +1,5 @@
 ---
-UID: NS.DXGIDDI.DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES
+UID: NS:dxgiddi.DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES
 title: DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES
 author: windows-driver-content
 description: Describes a list of resources to rotate.
@@ -7,7 +7,7 @@ old-location: display\dxgi_ddi_arg_rotate_resource_identities.htm
 old-project: display
 ms.assetid: 904b16d1-44dc-4d7a-96cb-3fd82d378b24
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES, DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES
 ---
 
 # DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES structure
@@ -103,12 +104,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.rotateresourceidentitiesdxgi">RotateResourceIdentitiesDXGI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569514">RotateResourceIdentitiesDXGI</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGI_DDI_ARG_ROTATE_RESOURCE_IDENTITIES structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

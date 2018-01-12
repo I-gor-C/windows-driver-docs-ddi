@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFDeviceInitialize.SetFilter
+UID: NF:wudfddi.IWDFDeviceInitialize.SetFilter
 title: IWDFDeviceInitialize::SetFilter method
 author: windows-driver-content
 description: The SetFilter method sets the property that enables a device as a filter device.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfdeviceinitialize_setfilter.htm
 old-project: wdf
 ms.assetid: a5f61a83-43db-4ad7-9b18-0cdf574ea546
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFDeviceInitialize, IWDFDeviceInitialize::SetFilter, SetFilter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -66,9 +67,9 @@ None
 ## -remarks
 A filter driver calls <b>SetFilter</b> to mark itself as a filter.  When you tell the framework that your driver is a filter, the framework:
 
-A driver typically calls <b>SetFilter</b> from its <a href="wdf.idriverentry_ondeviceadd">IDriverEntry::OnDeviceAdd</a> method.
+A driver typically calls <b>SetFilter</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554896">IDriverEntry::OnDeviceAdd</a> method.
 
-For a code example of how to use the <b>SetFilter</b> method, see <a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a>.
+For a code example of how to use the <b>SetFilter</b> method, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>.
 
 
 ## -requirements
@@ -134,12 +135,12 @@ DLL
 <a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
 </dt>
 <dt>
-<a href="wdf.iwdfdriver_createdevice">IWDFDriver::CreateDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDeviceInitialize::SetFilter method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFDeviceInitialize::SetFilter method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

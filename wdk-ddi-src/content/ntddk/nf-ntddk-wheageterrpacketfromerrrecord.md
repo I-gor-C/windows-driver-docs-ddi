@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.WheaGetErrPacketFromErrRecord
+UID: NF:ntddk.WheaGetErrPacketFromErrRecord
 title: WheaGetErrPacketFromErrRecord function
 author: windows-driver-content
 description: The WheaGetErrPacketFromErrRecord function returns a pointer to the hardware error packet that is contained within a WHEA error record. The hardware error packet is formatted as a WHEA_ERROR_PACKET structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # WheaGetErrPacketFromErrRecord function
@@ -55,11 +56,11 @@ PWHEA_ERROR_PACKET WheaGetErrPacketFromErrRecord(
 
 ### -param Record [in]
 
-A pointer to a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a> that is formatted as a <a href="whea.whea_error_record">WHEA_ERROR_RECORD</a> structure.
+A pointer to a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a> that is formatted as a <a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a> structure.
 
 
 ## -returns
-<b>WheaGetErrPacketFromErrRecord</b> returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure within the <a href="whea.whea_error_record">WHEA_ERROR_RECORD</a> structure. If the function does not locate the WHEA_ERROR_PACKET structure, it returns <b>NULL</b>.
+<b>WheaGetErrPacketFromErrRecord</b> returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure within the <a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a> structure. If the function does not locate the WHEA_ERROR_PACKET structure, it returns <b>NULL</b>.
 
 
 ## -remarks
@@ -122,7 +123,7 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
 </dt>
 <dt>
-<a href="whea.whea_error_record">WHEA_ERROR_RECORD</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
 </dt>
 </dl>
  

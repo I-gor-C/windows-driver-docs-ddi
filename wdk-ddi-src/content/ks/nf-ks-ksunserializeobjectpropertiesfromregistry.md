@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsUnserializeObjectPropertiesFromRegistry
+UID: NF:ks.KsUnserializeObjectPropertiesFromRegistry
 title: KsUnserializeObjectPropertiesFromRegistry function
 author: windows-driver-content
 description: The KsUnserializeObjectPropertiesFromRegistry function, when given a destination object and a registry path, enumerates the named values and applies them as serialized data to the specified property sets listed in the serialized data.
@@ -7,7 +7,7 @@ old-location: stream\ksunserializeobjectpropertiesfromregistry.htm
 old-project: stream
 ms.assetid: e08ddef7-5942-4943-9dbe-9658279892f0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsUnserializeObjectPropertiesFromRegistry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsUnserializeObjectPropertiesFromRegistry function

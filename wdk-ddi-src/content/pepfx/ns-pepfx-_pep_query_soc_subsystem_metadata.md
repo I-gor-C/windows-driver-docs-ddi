@@ -1,5 +1,5 @@
 ---
-UID: NS.PEPFX._PEP_QUERY_SOC_SUBSYSTEM_METADATA
+UID: NS:pepfx._PEP_QUERY_SOC_SUBSYSTEM_METADATA
 title: _PEP_QUERY_SOC_SUBSYSTEM_METADATA
 author: windows-driver-content
 description: The PEP_QUERY_SOC_SUBSYSTEM_METADATA structure is used with the PEP_DPM_QUERY_SOC_SUBSYSTEM_METADATA notification to collect optional metadata about the system on a chip (SoC) subsystem whose blocking time has just been queried.
@@ -7,8 +7,8 @@ old-location: kernel\pep_query_soc_subsystem_metadata.htm
 old-project: kernel
 ms.assetid: D823EF66-1440-45B7-A0D8-A98522AA69E1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _PEP_QUERY_SOC_SUBSYSTEM_METADATA, PEP_QUERY_SOC_SUBSYSTEM_METADATA, *PPEP_QUERY_SOC_SUBSYSTEM_METADATA, PPEP_QUERY_SOC_SUBSYSTEM_METADATA
+ms.date: 1/4/2018
+ms.keywords: _PEP_QUERY_SOC_SUBSYSTEM_METADATA, PEP_QUERY_SOC_SUBSYSTEM_METADATA, *PPEP_QUERY_SOC_SUBSYSTEM_METADATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PEP_QUERY_SOC_SUBSYSTEM_METADATA, *PPEP_QUERY_SOC_SUBSYSTEM_METADATA
 ---
 
 # _PEP_QUERY_SOC_SUBSYSTEM_METADATA structure
@@ -85,7 +86,7 @@ This member is reserved and should be set to zero.
 
 ### -field Metadata
 
-[in/out] An array of pointers to <a href="kernel.pep_soc_subsystem_metadata">PEP_SOC_SUBSYSTEM_METADATA</a> structures.  Each entry holds one key/value metadata string-pair.
+[in/out] An array of pointers to <a href="..\pepfx\ns-pepfx-_pep_soc_subsystem_metadata.md">PEP_SOC_SUBSYSTEM_METADATA</a> structures.  Each entry holds one key/value metadata string-pair.
 
 
 ## -remarks
@@ -120,12 +121,12 @@ Header
 <dl>
 <dt><b>PEP_DPM_QUERY_SOC_SUBSYSTEM_METADATA</b></dt>
 <dt>
-<a href="kernel.pep_soc_subsystem_metadata">PEP_SOC_SUBSYSTEM_METADATA</a>
+<a href="..\pepfx\ns-pepfx-_pep_soc_subsystem_metadata.md">PEP_SOC_SUBSYSTEM_METADATA</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_QUERY_SOC_SUBSYSTEM_METADATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PEP_QUERY_SOC_SUBSYSTEM_METADATA structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

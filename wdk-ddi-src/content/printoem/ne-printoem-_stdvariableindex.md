@@ -1,5 +1,5 @@
 ---
-UID: NE.printoem._STDVARIABLEINDEX
+UID: NE:printoem._STDVARIABLEINDEX
 title: _STDVARIABLEINDEX
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\stdvariableindex.htm
 old-project: print
 ms.assetid: 02E54636-0B8D-40FE-8405-0FB130139828
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _STDVARIABLEINDEX, STDVARIABLEINDEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasSetItemPropAttribs
+UID: NF:wiamdef.wiasSetItemPropAttribs
 title: wiasSetItemPropAttribs function
 author: windows-driver-content
 description: The wiasSetItemPropAttribs function sets the access flags and valid values for an item's set of properties.
 old-location: image\wiassetitempropattribs.htm
-old-project: Image
+old-project: image
 ms.assetid: 354d09c3-8db4-4af9-b077-8e3bcda7a6f2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasSetItemPropAttribs
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 
@@ -74,7 +75,7 @@ Pointer to the first element of an array of PROPSPEC structures (defined in the 
 
 ### -param pwpi [in]
 
-Pointer to the first element of an array of <a href="image.wia_property_info">WIA_PROPERTY_INFO</a> structures that contain the property values to be written.
+Pointer to the first element of an array of <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_info.md">WIA_PROPERTY_INFO</a> structures that contain the property values to be written.
 
 
 ## -returns
@@ -96,7 +97,7 @@ WIA_PROP_LIST
 
 VT_UI1, VT_UI2, VT_UI4, VT_UI8, VT_I1, VT_I2, VT_I4, ,VT_I8, VT_R4, VT_R8, VT_BSTR
 
-Minidrivers should initialize complex properties using the <a href="image.wiassetpropertyattributes">wiasSetPropertyAttributes</a> function.
+Minidrivers should initialize complex properties using the <a href="..\wiamdef\nf-wiamdef-wiassetpropertyattributes.md">wiasSetPropertyAttributes</a> function.
 
 The minidriver can set the WIA_PROP_CACHEABLE flag on a property that does not change over time. By setting this flag on a property, the minidriver indicates that the WIA service can cache the property value. See the Windows SDK documentation for a list of all property attributes.
 
@@ -170,18 +171,18 @@ DLL
 ## -see-also
 <dl>
 <dt>
-<a href="image.wiassetpropertyattributes">wiasSetPropertyAttributes</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetpropertyattributes.md">wiasSetPropertyAttributes</a>
 </dt>
 <dt>
-<a href="image.wiassetitempropnames">wiasSetItemPropNames</a>
+<a href="..\wiamdef\nf-wiamdef-wiassetitempropnames.md">wiasSetItemPropNames</a>
 </dt>
 <dt>
-<a href="image.wia_property_info">WIA_PROPERTY_INFO</a>
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_info.md">WIA_PROPERTY_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20wiasSetItemPropAttribs function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20wiasSetItemPropAttribs function%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

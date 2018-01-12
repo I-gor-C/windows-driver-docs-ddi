@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPrintPipelinePropertyBag.AddProperty
+UID: NF:filterpipeline.IPrintPipelinePropertyBag.AddProperty
 title: IPrintPipelinePropertyBag::AddProperty method
 author: windows-driver-content
 description: The AddProperty method adds a property to a property bag.
@@ -7,7 +7,7 @@ old-location: print\iprintpipelinepropertybag_addproperty.htm
 old-project: print
 ms.assetid: ba994342-c203-443e-a9fd-60fd29721dae
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintPipelinePropertyBag, IPrintPipelinePropertyBag::AddProperty, AddProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintPipelinePropertyBag::AddProperty method

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugEventCallbacks.ExitProcess
+UID: NF:dbgeng.IDebugEventCallbacks.ExitProcess
 title: IDebugEventCallbacks::ExitProcess method
 author: windows-driver-content
 description: The ExitProcess callback method is called by the engine when an exit-processdebugging event occurs in the target.
 old-location: debugger\idebugeventcallbacks_exitprocess.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 050b747e-5570-4e25-81e4-eccdde4f6995
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugEventCallbacks, IDebugEventCallbacks::ExitProcess, ExitProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugEventCallbacks::ExitProcess method
@@ -63,7 +64,7 @@ This method returns a <a href="https://msdn.microsoft.com/library/windows/hardwa
 
 
 ## -remarks
-This method is only called by the engine if the DEBUG_EVENT_EXIT_PROCESS flag is set in the mask returned by <a href="debugger.idebugeventcallbacks_getinterestmask">IDebugEventCallbacks::GetInterestMask</a>.
+This method is only called by the engine if the DEBUG_EVENT_EXIT_PROCESS flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550737">IDebugEventCallbacks::GetInterestMask</a>.
 
 For more information about handling events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.  For information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.
 

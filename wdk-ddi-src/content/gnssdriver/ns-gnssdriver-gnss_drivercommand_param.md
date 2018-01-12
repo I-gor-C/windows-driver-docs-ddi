@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_DRIVERCOMMAND_PARAM
+UID: NS:gnssdriver.GNSS_DRIVERCOMMAND_PARAM
 title: GNSS_DRIVERCOMMAND_PARAM
 author: windows-driver-content
 description: This structure is used to send a command to the GNSS driver.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: EC6EDD7A-B57F-4350-9EB9-56721EAC19BD
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_DRIVERCOMMAND_PARAM, *PGNSS_DRIVERCOMMAND_PARAM, PGNSS_DRIVERCOMMAND_PARAM, GNSS_DRIVERCOMMAND_PARAM
+ms.keywords: GNSS_DRIVERCOMMAND_PARAM, *PGNSS_DRIVERCOMMAND_PARAM, GNSS_DRIVERCOMMAND_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_DRIVERCOMMAND_PARAM, GNSS_DRIVERCOMMAND_PARAM
 ---
 
 # GNSS_DRIVERCOMMAND_PARAM structure

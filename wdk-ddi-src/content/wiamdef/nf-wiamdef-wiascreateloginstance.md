@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamdef.wiasCreateLogInstance
+UID: NF:wiamdef.wiasCreateLogInstance
 title: wiasCreateLogInstance function
 author: windows-driver-content
 description: The wiasCreateLogInstance function creates an instance of a logging object.
 old-location: image\wiascreateloginstance.htm
-old-project: Image
+old-project: image
 ms.assetid: 7a340187-51c5-4997-b4d0-5b89ea8e16c0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: wiasCreateLogInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wiaservc.lib
 req.dll: Wiaservc.dll
 req.irql: 
+req.typenames: *LPDEVICEDIALOGDATA2, DEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2
 req.product: Windows 10 or later.
 ---
 

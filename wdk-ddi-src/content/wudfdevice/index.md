@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wudfdevice
 ---
 
 # Wudfdevice.h header

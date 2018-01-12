@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IResourceList.AddEntry
+UID: NF:portcls.IResourceList.AddEntry
 title: IResourceList::AddEntry method
 author: windows-driver-content
 description: The AddEntry method adds an entry to a resource list.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IResourceList::AddEntry method
@@ -56,7 +57,7 @@ NTSTATUS AddEntry(
 
 ### -param Translated [in]
 
-Pointer to a translated version of the entry. This parameter points to a <a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure containing the translated version of the entry to be added.
+Pointer to a translated version of the entry. This parameter points to a <a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure containing the translated version of the entry to be added.
 
 
 ### -param Untranslated [in]
@@ -118,7 +119,7 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
 </dt>
 <dt>
-<a href="kernel.cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
+<a href="..\wdm\ns-wdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 </dt>
 </dl>
  

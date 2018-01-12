@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintCoreHelperPS.GetFontSubstitution
+UID: NF:prcomoem.IPrintCoreHelperPS.GetFontSubstitution
 title: IPrintCoreHelperPS::GetFontSubstitution method
 author: windows-driver-content
 description: The IPrintCoreHelperPS::GetFontSubstitution method indicates which device font, if any, is used as a substitution font for a specified TrueType font.
@@ -7,7 +7,7 @@ old-location: print\iprintcorehelperps_getfontsubstitution.htm
 old-project: print
 ms.assetid: d5f71935-8371-413d-a602-a9a4a9e976c3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintCoreHelperPS, IPrintCoreHelperPS::GetFontSubstitution, GetFontSubstitution
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -123,12 +124,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.iprintcorehelperps_setfontsubstitution">IPrintCoreHelperPS::SetFontSubstitution</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552908">IPrintCoreHelperPS::SetFontSubstitution</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintCoreHelperPS::GetFontSubstitution method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintCoreHelperPS::GetFontSubstitution method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

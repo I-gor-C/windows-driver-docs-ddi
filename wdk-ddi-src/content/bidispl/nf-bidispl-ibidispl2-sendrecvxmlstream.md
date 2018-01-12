@@ -1,5 +1,5 @@
 ---
-UID: NF.bidispl.IBidiSpl2.SendRecvXMLStream
+UID: NF:bidispl.IBidiSpl2.SendRecvXMLStream
 title: IBidiSpl2::SendRecvXMLStream method
 author: windows-driver-content
 description: The IBidiSpl2::SendRecvXMLStream method sends a bidirectional printer communication request and receives the response as IStream objects formatted in accordance with the Bidirectional Communication Schemas.
@@ -7,7 +7,7 @@ old-location: print\ibidispl2_ibidispl2__sendrecvxmlstream.htm
 old-project: print
 ms.assetid: 2daf99a8-42dc-4739-8e7e-80d3c9a084b7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IBidiSpl2, IBidiSpl2::SendRecvXMLStream, SendRecvXMLStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: Bidispl.dll
 req.irql: 
+req.typenames: *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
 ---
 
 # IBidiSpl2::SendRecvXMLStream method
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>IBidiSpl2::SendRecvXMLStream</b> method sends a bidirectional printer communication request and receives the response as <a href="stg.istream">IStream</a> objects formatted in accordance with the <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schemas</a>.
+The <b>IBidiSpl2::SendRecvXMLStream</b> method sends a bidirectional printer communication request and receives the response as <a href="https://msdn.microsoft.com/c6f60e37-eadc-46a1-94f6-cacc23613531">IStream</a> objects formatted in accordance with the <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schemas</a>.
 
 
 
@@ -148,7 +149,7 @@ DLL
 <a href="..\bidispl\nn-bidispl-ibidispl2.md">IBidiSpl2</a>
 </dt>
 <dt>
-<a href="print.bidirectional_communication_interfaces">Bidirectional Communication Interfaces</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
@@ -161,5 +162,5 @@ DLL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IBidiSpl2::IBidiSpl2::SendRecvXMLStream method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IBidiSpl2::IBidiSpl2::SendRecvXMLStream method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

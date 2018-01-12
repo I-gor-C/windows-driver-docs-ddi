@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11._DOT11_WFD_DEVICE_ENTRY
+UID: NS:windot11._DOT11_WFD_DEVICE_ENTRY
 title: _DOT11_WFD_DEVICE_ENTRY
 author: windows-driver-content
 description: The DOT11_WFD_DEVICE_ENTRY structure contains information about a discovered Wi-Fi Direct (WFD) device, a discovered WFD Group Owner (GO), or or a discovered infrastructure access point.
 old-location: netvista\_dot11_wfd_device_entry.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 548A40F7-1C02-4BF0-8F78-EB8C3C97CEB4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11_WFD_DEVICE_ENTRY, *PDOT11_WFD_DEVICE_ENTRY, DOT11_WFD_DEVICE_ENTRY
+ms.date: 1/8/2018
+ms.keywords: _DOT11_WFD_DEVICE_ENTRY, DOT11_WFD_DEVICE_ENTRY, *PDOT11_WFD_DEVICE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DOT11_WFD_DEVICE_ENTRY, *PDOT11_WFD_DEVICE_ENTRY
 req.product: Windows 10 or later.
 ---
 
@@ -113,12 +114,12 @@ The value received from the timestamp field of the most recent beacon or probe r
 
 ### -field ullBeaconHostTimestamp
 
-The timestamp, determined by a value returned from <a href="netvista.ndisgetcurrentsystemtime">NdisGetCurrentSystemTime</a>, recording the time when the beacon packet was received.
+The timestamp, determined by a value returned from <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>, recording the time when the beacon packet was received.
 
 
 ### -field ullProbeResponseHostTimestamp
 
-The timestamp, determined by a value returned from <a href="netvista.ndisgetcurrentsystemtime">NdisGetCurrentSystemTime</a>, recording the time when the probe response packet was received.
+The timestamp, determined by a value returned from <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>, recording the time when the probe response packet was received.
 
 
 ### -field usCapabilityInformation
@@ -177,19 +178,19 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.dot11_bss_type">DOT11_BSS_TYPE</a>
+<a href="..\wlantypes\ne-wlantypes-_dot11_bss_type.md">DOT11_BSS_TYPE</a>
 </dt>
 <dt>
 <a href="..\windot11\ns-windot11-dot11_bss_entry_phy_specific_info.md">DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO</a>
 </dt>
 <dt>
-<a href="netvista.dot11_mac_address">DOT11_MAC_ADDRESS</a>
+<a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451704">NDIS_STATUS_DOT11_WFD_DISCOVER_COMPLETE</a>
 </dt>
 <dt>
-<a href="netvista.ndisgetcurrentsystemtime">NdisGetCurrentSystemTime</a>
+<a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569426">OID_DOT11_SUPPORTED_PHY_TYPES</a>
@@ -202,5 +203,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20 DOT11_WFD_DEVICE_ENTRY structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20 DOT11_WFD_DEVICE_ENTRY structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

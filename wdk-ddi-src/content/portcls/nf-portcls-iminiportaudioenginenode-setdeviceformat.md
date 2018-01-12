@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioEngineNode.SetDeviceFormat
+UID: NF:portcls.IMiniportAudioEngineNode.SetDeviceFormat
 title: IMiniportAudioEngineNode::SetDeviceFormat method
 author: windows-driver-content
 description: Sets the audio data format for an audio device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioEngineNode::SetDeviceFormat method

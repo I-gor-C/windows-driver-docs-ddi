@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.SYSAUDIO_SELECT_GRAPH
+UID: NS:ksmedia.SYSAUDIO_SELECT_GRAPH
 title: SYSAUDIO_SELECT_GRAPH
 author: windows-driver-content
 description: The SYSAUDIO_SELECT_GRAPH structure is used to specify a graph that includes an optional node such as an AEC control.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: f114e8ef-4fb7-4fdd-9c83-d8e74c91190e
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SYSAUDIO_SELECT_GRAPH, *PSYSAUDIO_SELECT_GRAPH, PSYSAUDIO_SELECT_GRAPH, SYSAUDIO_SELECT_GRAPH
+ms.keywords: SYSAUDIO_SELECT_GRAPH, *PSYSAUDIO_SELECT_GRAPH, SYSAUDIO_SELECT_GRAPH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSYSAUDIO_SELECT_GRAPH, SYSAUDIO_SELECT_GRAPH
 ---
 
 # SYSAUDIO_SELECT_GRAPH structure
@@ -59,7 +60,7 @@ typedef struct {
 
 ### -field Property
 
-Specifies the property to get or set. This parameter is a structure of type <a href="stream.ksproperty">KSPROPERTY</a>.
+Specifies the property to get or set. This parameter is a structure of type <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.
 
 
 ### -field PinId
@@ -103,7 +104,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksproperty">KSPROPERTY</a>
+<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537428">KSPROPERTY_SYSAUDIO_SELECT_GRAPH</a>

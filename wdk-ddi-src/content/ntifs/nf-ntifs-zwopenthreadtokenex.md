@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.ZwOpenThreadTokenEx
+UID: NF:ntifs.ZwOpenThreadTokenEx
 title: ZwOpenThreadTokenEx function
 author: windows-driver-content
 description: The ZwOpenThreadTokenEx routine opens the access token associated with a thread.
@@ -7,7 +7,7 @@ old-location: kernel\zwopenthreadtokenex.htm
 old-project: kernel
 ms.assetid: def462ee-30c6-44c0-8639-f8f7d3d0b69e
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ZwOpenThreadTokenEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # ZwOpenThreadTokenEx function
@@ -65,7 +66,7 @@ Handle to the thread whose access token is to be opened. The handle must have TH
 ### -param DesiredAccess [in]
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> structure specifying the requested types of access to the access token. These requested access types are compared with the token's discretionary access-control list (<a href="ifsk.acl">DACL</a>) to determine which access rights are granted or denied. 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> structure specifying the requested types of access to the access token. These requested access types are compared with the token's discretionary access-control list (<a href="..\wdm\ns-wdm-_acl.md">DACL</a>) to determine which access rights are granted or denied. 
 
 
 ### -param OpenAsSelf [in]
@@ -92,7 +93,7 @@ Pointer to a caller-allocated variable that receives a handle to the newly opene
 </dl><i>ThreadHandle</i> did not have THREAD_QUERY_INFORMATION access. 
 <dl>
 <dt><b>STATUS_CANT_OPEN_ANONYMOUS</b></dt>
-</dl>The client requested the SecurityAnonymous impersonation level. However, an anonymous token cannot be opened. For more information, see <a href="ifsk.security_impersonation_level">SECURITY_IMPERSONATION_LEVEL</a>. 
+</dl>The client requested the SecurityAnonymous impersonation level. However, an anonymous token cannot be opened. For more information, see <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>. 
 <dl>
 <dt><b>STATUS_INVALID_HANDLE</b></dt>
 </dl><i>ThreadHandle</i> was not a valid handle. 
@@ -195,7 +196,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -206,27 +207,27 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 </dt>
 <dt>
-<a href="ifsk.acl">ACL</a>
+<a href="..\wdm\ns-wdm-_acl.md">ACL</a>
 </dt>
 <dt>
-<a href="ifsk.psdereferenceprimarytoken">PsDereferencePrimaryToken</a>
+<a href="..\ntifs\nf-ntifs-psdereferenceprimarytoken.md">PsDereferencePrimaryToken</a>
 </dt>
 <dt>
-<a href="ifsk.security_impersonation_level">SECURITY_IMPERSONATION_LEVEL</a>
+<a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="kernel.zwclose">ZwClose</a>
+<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
 </dt>
 <dt>
-<a href="kernel.zwopenprocesstokenex">ZwOpenProcessTokenEx</a>
+<a href="..\ntifs\nf-ntifs-zwopenprocesstokenex.md">ZwOpenProcessTokenEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwOpenThreadTokenEx routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwOpenThreadTokenEx routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILUNSOLICITEDSSINFO_V2
+UID: NS:rilapitypes.RILUNSOLICITEDSSINFO_V2
 title: RILUNSOLICITEDSSINFO_V2
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilunsolicitedssinfo_v2_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1c59c4fa-610e-4200-a94a-2c28754dfe43
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO, *LPRILUNSOLICITEDSSINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO, *LPRILUNSOLICITEDSSINFO
 req.product: Windows 10 or later.
 ---
 

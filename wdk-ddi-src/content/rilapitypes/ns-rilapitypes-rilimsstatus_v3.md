@@ -1,14 +1,14 @@
 ---
-UID: NS.RILAPITYPES.RILIMSSTATUS_V3
+UID: NS:rilapitypes.RILIMSSTATUS_V3
 title: RILIMSSTATUS_V3
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilimsstatus_v3_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7ae2e97d-d055-412f-a219-258780319797
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILIMSSTATUS_V3, RILIMSSTATUS_V3, RILIMSSTATUS, *LPRILIMSSTATUS, *LPRILIMSSTATUS_V3
+ms.date: 1/8/2018
+ms.keywords: RILIMSSTATUS_V3, RILIMSSTATUS, *LPRILIMSSTATUS, *LPRILIMSSTATUS_V3, RILIMSSTATUS_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILIMSSTATUS, *LPRILIMSSTATUS, *LPRILIMSSTATUS_V3, RILIMSSTATUS_V3
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.SeTokenIsAdmin
+UID: NF:ntifs.SeTokenIsAdmin
 title: SeTokenIsAdmin function
 author: windows-driver-content
 description: The SeTokenIsAdmin routine determines whether a token contains the local administrators group.
@@ -7,7 +7,7 @@ old-location: ifsk\setokenisadmin.htm
 old-project: ifsk
 ms.assetid: 7d0a5d28-175a-44a7-888f-d11dc3f55904
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: SeTokenIsAdmin
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # SeTokenIsAdmin function
@@ -137,30 +138,30 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.psdereferenceimpersonationtoken">PsDereferenceImpersonationToken</a>
+<a href="..\ntifs\nf-ntifs-psdereferenceimpersonationtoken.md">PsDereferenceImpersonationToken</a>
 </dt>
 <dt>
-<a href="ifsk.psdereferenceprimarytoken">PsDereferencePrimaryToken</a>
+<a href="..\ntifs\nf-ntifs-psdereferenceprimarytoken.md">PsDereferencePrimaryToken</a>
 </dt>
 <dt>
-<a href="ifsk.sequeryauthenticationidtoken">SeQueryAuthenticationIdToken</a>
+<a href="..\ntifs\nf-ntifs-sequeryauthenticationidtoken.md">SeQueryAuthenticationIdToken</a>
 </dt>
 <dt>
-<a href="ifsk.sequeryinformationtoken">SeQueryInformationToken</a>
+<a href="..\ntifs\nf-ntifs-sequeryinformationtoken.md">SeQueryInformationToken</a>
 </dt>
 <dt>
-<a href="ifsk.sequerysubjectcontexttoken">SeQuerySubjectContextToken</a>
+<a href="..\ntifs\nf-ntifs-sequerysubjectcontexttoken.md">SeQuerySubjectContextToken</a>
 </dt>
 <dt>
-<a href="ifsk.setokenisadmin">SeTokenIsAdmin</a>
+<a href="..\ntifs\nf-ntifs-setokenisadmin.md">SeTokenIsAdmin</a>
 </dt>
 <dt>
-<a href="ifsk.setokenisrestricted">SeTokenIsRestricted</a>
+<a href="..\ntifs\nf-ntifs-setokenisrestricted.md">SeTokenIsRestricted</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeTokenIsAdmin routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20SeTokenIsAdmin routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

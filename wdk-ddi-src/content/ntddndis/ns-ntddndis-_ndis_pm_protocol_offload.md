@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_PM_PROTOCOL_OFFLOAD
+UID: NS:ntddndis._NDIS_PM_PROTOCOL_OFFLOAD
 title: _NDIS_PM_PROTOCOL_OFFLOAD
 author: windows-driver-content
 description: The NDIS_PM_PROTOCOL_OFFLOAD structure specifies parameters for a low power protocol offload to a network adapter.
 old-location: netvista\ndis_pm_protocol_offload.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1ae68e5c-f9ea-4454-b015-82e3af0f7ccd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_PM_PROTOCOL_OFFLOAD, NDIS_PM_PROTOCOL_OFFLOAD, *PNDIS_PM_PROTOCOL_OFFLOAD, PNDIS_PM_PROTOCOL_OFFLOAD
+ms.date: 1/8/2018
+ms.keywords: _NDIS_PM_PROTOCOL_OFFLOAD, NDIS_PM_PROTOCOL_OFFLOAD, *PNDIS_PM_PROTOCOL_OFFLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_PM_PROTOCOL_OFFLOAD, *PNDIS_PM_PROTOCOL_OFFLOAD
 ---
 
 # _NDIS_PM_PROTOCOL_OFFLOAD structure
@@ -84,7 +85,7 @@ typedef struct _NDIS_PM_PROTOCOL_OFFLOAD {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      structure (NDIS_PM_PROTOCOL_OFFLOAD). The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -129,14 +130,14 @@ Specifies the highest priority protocol offload.
 ### -field ProtocolOffloadType
 
 An 
-     <a href="netvista.ndis_pm_protocol_offload_type">
+     <a href="..\ntddndis\ne-ntddndis-_ndis_pm_protocol_offload_type.md">
      NDIS_PM_PROTOCOL_OFFLOAD_TYPE</a> value that contains the type of protocol offload.
 
 
 ### -field FriendlyName
 
 An 
-     <a href="netvista.ndis_pm_counted_string">NDIS_PM_COUNTED_STRING</a> structure
+     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a> structure
      that contains the user-readable description of the low power protocol offload.
 
 
@@ -322,13 +323,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_pm_counted_string">NDIS_PM_COUNTED_STRING</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_pm_counted_string.md">NDIS_PM_COUNTED_STRING</a>
 </dt>
 <dt>
-<a href="netvista.ndis_pm_protocol_offload_type">NDIS_PM_PROTOCOL_OFFLOAD_TYPE</a>
+<a href="..\ntddndis\ne-ntddndis-_ndis_pm_protocol_offload_type.md">NDIS_PM_PROTOCOL_OFFLOAD_TYPE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569763">OID_PM_ADD_PROTOCOL_OFFLOAD</a>
@@ -341,5 +342,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_PM_PROTOCOL_OFFLOAD structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

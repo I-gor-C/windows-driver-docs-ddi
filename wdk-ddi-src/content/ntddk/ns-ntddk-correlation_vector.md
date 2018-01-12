@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK.CORRELATION_VECTOR
+UID: NS:ntddk.CORRELATION_VECTOR
 title: CORRELATION_VECTOR
 author: windows-driver-content
 description: Store the correlation vector that is used to reference events and the generated logs for diagnostic purposes.
@@ -7,8 +7,8 @@ old-location: kernel\correlation_vector.htm
 old-project: kernel
 ms.assetid: 35c1799f-2012-42b0-95e6-6902c818a094
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: CORRELATION_VECTOR, CORRELATION_VECTOR
+ms.date: 1/4/2018
+ms.keywords: CORRELATION_VECTOR, CORRELATION_VECTOR, *PCORRELATION_VECTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: CORRELATION_VECTOR
 ---
 
 # CORRELATION_VECTOR structure

@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortGetRequestInfo
+UID: NF:storport.StorPortGetRequestInfo
 title: StorPortGetRequestInfo function
 author: windows-driver-content
 description: The StorPortGetRequestInfo routine retrieves the IO request information associated with a SCSI request block (SRB) and returns it in a STOR_REQUEST_INFO structure.
@@ -7,7 +7,7 @@ old-location: storage\storportgetrequestinfo.htm
 old-project: storage
 ms.assetid: 3B0A25E8-6DBC-4AA9-A0D0-DDB36B402F43
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortGetRequestInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 
-   The <b>StorPortGetRequestInfo</b> routine retrieves the IO request information associated with a SCSI request block (SRB) and  returns it in a <a href="storage.stor_request_info">STOR_REQUEST_INFO</a> structure. 
+   The <b>StorPortGetRequestInfo</b> routine retrieves the IO request information associated with a SCSI request block (SRB) and  returns it in a <a href="..\storport\ns-storport-_stor_request_info_v1.md">STOR_REQUEST_INFO</a> structure. 
   
 
 
@@ -70,14 +71,14 @@ A pointer to the SRB to be queried.
 
 ### -param RequestInfo [out]
 
-A pointer to a caller-supplied <a href="storage.stor_request_info">STOR_REQUEST_INFO</a> structure.
+A pointer to a caller-supplied <a href="..\storport\ns-storport-_stor_request_info_v1.md">STOR_REQUEST_INFO</a> structure.
 
 
 ## -returns
 The <b>StorPortGetRequestInfo</b> routine returns one of these status codes:
 <dl>
 <dt><b>STOR_STATUS_UNSUPPORTED_VERSION</b></dt>
-</dl>The version specified for <a href="storage.stor_request_info">STOR_REQUEST_INFO</a> is invalid.
+</dl>The version specified for <a href="..\storport\ns-storport-_stor_request_info_v1.md">STOR_REQUEST_INFO</a> is invalid.
 <dl>
 <dt><b>STOR_STATUS_SUCCESS</b></dt>
 </dl>The operation was successful.
@@ -141,12 +142,12 @@ Any
 ## -see-also
 <dl>
 <dt>
-<a href="storage.stor_request_info">STOR_REQUEST_INFO</a>
+<a href="..\storport\ns-storport-_stor_request_info_v1.md">STOR_REQUEST_INFO</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortGetRequestInfo routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20StorPortGetRequestInfo routine%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

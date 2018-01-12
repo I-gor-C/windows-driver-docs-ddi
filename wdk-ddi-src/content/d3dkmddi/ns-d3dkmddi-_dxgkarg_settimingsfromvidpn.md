@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_SETTIMINGSFROMVIDPN
+UID: NS:d3dkmddi._DXGKARG_SETTIMINGSFROMVIDPN
 title: _DXGKARG_SETTIMINGSFROMVIDPN
 author: windows-driver-content
 description: Used to hold the arguments for DXGKDDI_SETTIMINGSFROMVIDPN.
@@ -7,8 +7,8 @@ old-location: display\dxgkarg_settimingsfromvidpn.htm
 old-project: display
 ms.assetid: 14D652C4-9812-481E-8E69-A6D7923F01A3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKARG_SETTIMINGSFROMVIDPN, DXGKARG_SETTIMINGSFROMVIDPN
+ms.date: 12/29/2017
+ms.keywords: _DXGKARG_SETTIMINGSFROMVIDPN, DXGKARG_SETTIMINGSFROMVIDPN, *IN_OUT_PDXGKARG_SETTIMINGSFROMVIDPN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_SETTIMINGSFROMVIDPN
 ---
 
 # _DXGKARG_SETTIMINGSFROMVIDPN structure

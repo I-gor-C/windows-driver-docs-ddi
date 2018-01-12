@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_COMMITVIDPN
+UID: NS:d3dkmddi._DXGKARG_COMMITVIDPN
 title: _DXGKARG_COMMITVIDPN
 author: windows-driver-content
 description: The DXGKARG_COMMITVIDPN structure holds arguments for the DxgkDdiCommitVidPn function. The DxgkDdiCommitVidPn function makes a specified video present network (VidPN) active on a display adapter.
@@ -7,7 +7,7 @@ old-location: display\dxgkarg_commitvidpn.htm
 old-project: display
 ms.assetid: d297d917-fc49-454a-aacd-4db0ac7a09c2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGKARG_COMMITVIDPN, DXGKARG_COMMITVIDPN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_COMMITVIDPN
 ---
 
 # _DXGKARG_COMMITVIDPN structure
@@ -69,7 +70,7 @@ The constant D3DDDI_ID_ALL or the identifier of a particular video present sourc
 
 ### -field MonitorConnectivityChecks
 
-A <a href="display.d3dkmdt_monitor_connectivity_checks">D3DKMDT_MONITOR_CONNECTIVITY_CHECKS</a> enumerator (<b>D3DKMDT_MCC_IGNORE</b> or <b>D3DKMDT_MCC_ENFORCE</b>) that specifies whether to verify that video outputs in the new topology have monitors connected. If this member is equal to <b>D3DKMDT_MCC_ENFORCE</b> and one of the video outputs in the new VidPN's topology does not have a monitor connected, <i>DxgkDdiCommitVidPn</i> must leave the currently active VidPN in place and return STATUS_GRAPHICS_INVALID_VIDPN_TOPOLOGY. If this member is equal to D3DKMDT_MCC_IGNORE, <i>DxgkDdiCommitVidPn</i> can make the new VidPN active without checking to see whether any video outputs have monitors connected.
+A <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_monitor_connectivity_checks.md">D3DKMDT_MONITOR_CONNECTIVITY_CHECKS</a> enumerator (<b>D3DKMDT_MCC_IGNORE</b> or <b>D3DKMDT_MCC_ENFORCE</b>) that specifies whether to verify that video outputs in the new topology have monitors connected. If this member is equal to <b>D3DKMDT_MCC_ENFORCE</b> and one of the video outputs in the new VidPN's topology does not have a monitor connected, <i>DxgkDdiCommitVidPn</i> must leave the currently active VidPN in place and return STATUS_GRAPHICS_INVALID_VIDPN_TOPOLOGY. If this member is equal to D3DKMDT_MCC_IGNORE, <i>DxgkDdiCommitVidPn</i> can make the new VidPN active without checking to see whether any video outputs have monitors connected.
 
 
 ### -field hPrimaryAllocation
@@ -79,7 +80,7 @@ A handle to the primary allocation associated with the video present source iden
 
 ### -field Flags
 
-[in] A <a href="display.dxgkarg_commitvidpn_flags">DXGKARG_COMMITVIDPN_FLAGS</a> structure that identifies details about a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a> function.
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_commitvidpn_flags.md">DXGKARG_COMMITVIDPN_FLAGS</a> structure that identifies details about a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a> function.
 
 
 ## -remarks
@@ -117,12 +118,12 @@ Header
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_commitvidpn.md">DxgkDdiCommitVidPn</a>
 </dt>
 <dt>
-<a href="display.d3dkmdt_monitor_connectivity_checks">D3DKMDT_MONITOR_CONNECTIVITY_CHECKS</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_monitor_connectivity_checks.md">D3DKMDT_MONITOR_CONNECTIVITY_CHECKS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_COMMITVIDPN structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARG_COMMITVIDPN structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

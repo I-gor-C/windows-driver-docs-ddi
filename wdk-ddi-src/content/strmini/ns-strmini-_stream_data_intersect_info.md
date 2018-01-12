@@ -1,5 +1,5 @@
 ---
-UID: NS.STRMINI._STREAM_DATA_INTERSECT_INFO
+UID: NS:strmini._STREAM_DATA_INTERSECT_INFO
 title: _STREAM_DATA_INTERSECT_INFO
 author: windows-driver-content
 description: STREAM_DATA_INTERSECT_INFO describes the parameters of a data intersection operation.
@@ -7,8 +7,8 @@ old-location: stream\stream_data_intersect_info.htm
 old-project: stream
 ms.assetid: 92a37945-4b7c-4d10-a071-ae1584590692
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _STREAM_DATA_INTERSECT_INFO, *PSTREAM_DATA_INTERSECT_INFO, PSTREAM_DATA_INTERSECT_INFO, STREAM_DATA_INTERSECT_INFO
+ms.date: 1/9/2018
+ms.keywords: _STREAM_DATA_INTERSECT_INFO, *PSTREAM_DATA_INTERSECT_INFO, STREAM_DATA_INTERSECT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTREAM_DATA_INTERSECT_INFO, STREAM_DATA_INTERSECT_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ typedef struct _STREAM_DATA_INTERSECT_INFO {
 
 ### -field StreamNumber
 
-Specifies the stream number. This corresponds to the offset of the stream within the minidriver's array of <a href="stream.hw_stream_information">HW_STREAM_INFORMATION</a> structures. The possible data formats depend on the stream type.
+Specifies the stream number. This corresponds to the offset of the stream within the minidriver's array of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures. The possible data formats depend on the stream type.
 
 
 ### -field DataRange
@@ -78,7 +79,7 @@ Specifies the size in bytes of the <b>DataFormatBuffer</b>.
 
 
 ## -remarks
-The class driver passes this data structure when it submits a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568168">SRB_GET_DATA_INTERSECTION</a> request to the minidriver's <a href="stream.strminireceivedevicepacket">StrMiniReceiveDevicePacket</a>.
+The class driver passes this data structure when it submits a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568168">SRB_GET_DATA_INTERSECTION</a> request to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568463">StrMiniReceiveDevicePacket</a>.
 
 
 ## -requirements

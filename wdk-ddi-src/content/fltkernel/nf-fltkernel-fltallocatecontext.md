@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltAllocateContext
+UID: NF:fltkernel.FltAllocateContext
 title: FltAllocateContext function
 author: windows-driver-content
 description: The FltAllocateContext routine allocates a context structure for a specified context type.
@@ -7,7 +7,7 @@ old-location: ifsk\fltallocatecontext.htm
 old-project: ifsk
 ms.assetid: 34be4ca1-9484-41c5-9382-4785c36fca1a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltAllocateContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltAllocateContext function
@@ -117,7 +118,7 @@ Setting this parameter to an invalid value causes the system to execute an ASSER
 
 ### -param ReturnedContext [out]
 
-A pointer to a caller-allocated variable that receives the address of the newly allocated context. The caller is responsible for calling <a href="ifsk.fltreleasecontext">FltReleaseContext</a> to release this context when it is no longer needed. 
+A pointer to a caller-allocated variable that receives the address of the newly allocated context. The caller is responsible for calling <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a> to release this context when it is no longer needed. 
 
 
 ## -returns
@@ -131,7 +132,7 @@ A pointer to a caller-allocated variable that receives the address of the newly 
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl>
-<a href="ifsk.fltallocatecontext">FltAllocateContext</a> encountered a pool allocation failure. This is an error code. 
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a> encountered a pool allocation failure. This is an error code. 
 <dl>
 <dt><b>STATUS_INVALID_PARAMETER</b></dt>
 </dl>An invalid value was specified for the <i>ContextType</i> or the <i>ContextSize</i> parameter. This is an error code. 
@@ -150,102 +151,102 @@ After the context is allocated, it can be set on an object by passing the <i>Ret
 FLT_FILE_CONTEXT
 
 
-<a href="ifsk.fltsetfilecontext">FltSetFileContext</a> (starting with Windows Vista)
+<a href="..\fltkernel\nf-fltkernel-fltsetfilecontext.md">FltSetFileContext</a> (starting with Windows Vista)
 
 FLT_INSTANCE_CONTEXT
 
 
-<a href="ifsk.fltsetinstancecontext">FltSetInstanceContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetinstancecontext.md">FltSetInstanceContext</a>
 
 
 FLT_SECTION_CONTEXT
 
 
-<a href="ifsk.fltcreatesectionfordatascan">FltCreateSectionForDataScan</a> (Windows 8 and later only.)
+<a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a> (Windows 8 and later only.)
 
 FLT_STREAM_CONTEXT
 
 
-<a href="ifsk.fltsetstreamcontext">FltSetStreamContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetstreamcontext.md">FltSetStreamContext</a>
 
 
 FLT_STREAMHANDLE_CONTEXT
 
 
-<a href="ifsk.fltsetstreamhandlecontext">FltSetStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetstreamhandlecontext.md">FltSetStreamHandleContext</a>
 
 
 FLT_TRANSACTION_CONTEXT
 
 
-<a href="ifsk.fltsettransactioncontext">FltSetTransactionContext</a> (starting with Windows Vista)
+<a href="..\fltkernel\nf-fltkernel-fltsettransactioncontext.md">FltSetTransactionContext</a> (starting with Windows Vista)
 
 FLT_VOLUME_CONTEXT
 
 
-<a href="ifsk.fltsetvolumecontext">FltSetVolumeContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetvolumecontext.md">FltSetVolumeContext</a>
 
 
-When a minifilter driver calls <a href="ifsk.fltregisterfilter">FltRegisterFilter</a> from its <b>DriverEntry</b> routine, it must register each context type that it uses. For more information, see the reference entry for the <a href="ifsk.flt_context_registration">FLT_CONTEXT_REGISTRATION</a> structure. 
+When a minifilter driver calls <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a> from its <b>DriverEntry</b> routine, it must register each context type that it uses. For more information, see the reference entry for the <a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a> structure. 
 
 <b>FltAllocateContext</b> does not initialize the contents of the portion of the context structure specific to the minifilter driver. 
 
-To get the context for an object, call <a href="ifsk.fltgetcontexts">FltGetContexts</a> or the appropriate get-context routine from the following table.
+To get the context for an object, call <a href="..\fltkernel\nf-fltkernel-fltgetcontexts.md">FltGetContexts</a> or the appropriate get-context routine from the following table.
 
 
-<a href="ifsk.fltgetfilecontext">FltGetFileContext</a> (starting with Windows Vista)
+<a href="..\fltkernel\nf-fltkernel-fltgetfilecontext.md">FltGetFileContext</a> (starting with Windows Vista)
 
 
-<a href="ifsk.fltgetinstancecontext">FltGetInstanceContext</a>
-
-
-
-<a href="ifsk.fltgetsectioncontext">FltGetSectionContext</a> (starting with Windows 8)
-
-
-<a href="ifsk.fltgetstreamcontext">FltGetStreamContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetinstancecontext.md">FltGetInstanceContext</a>
 
 
 
-<a href="ifsk.fltgetstreamhandlecontext">FltGetStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetsectioncontext.md">FltGetSectionContext</a> (starting with Windows 8)
+
+
+<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
 
 
 
-<a href="ifsk.fltgettransactioncontext">FltGetTransactionContext</a> (starting with Windows Vista )
-
-
-<a href="ifsk.fltgetvolumecontext">FltGetVolumeContext</a>
-
-
-Contexts are reference-counted and on a successful return from <b>FltAllocateContext</b>, the context  pointed to by <i>ReturnedContext</i> has a reference count of 1. A context is freed automatically when its reference count reaches zero. To increment the reference count on a context, call <a href="ifsk.fltreferencecontext">FltReferenceContext</a>. 
-
-To decrement the reference count on a context, call <a href="ifsk.fltreleasecontext">FltReleaseContext</a>. 
-
-Because contexts are reference-counted, it is not usually necessary to delete them. To delete a context explicitly, call <a href="ifsk.fltdeletecontext">FltDeleteContext</a> or the appropriate delete-context routine from the following table.
-
-
-<a href="ifsk.fltdeletefilecontext">FltDeleteFileContext</a> (starting with Windows Vista)
-
-
-<a href="ifsk.fltdeleteinstancecontext">FltDeleteInstanceContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetstreamhandlecontext.md">FltGetStreamHandleContext</a>
 
 
 
-<a href="ifsk.fltclosesectionfordatascan">FltCloseSectionForDataScan</a> (starting with Windows 8)
+<a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a> (starting with Windows Vista )
 
 
-<a href="ifsk.fltdeletestreamcontext">FltDeleteStreamContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumecontext.md">FltGetVolumeContext</a>
+
+
+Contexts are reference-counted and on a successful return from <b>FltAllocateContext</b>, the context  pointed to by <i>ReturnedContext</i> has a reference count of 1. A context is freed automatically when its reference count reaches zero. To increment the reference count on a context, call <a href="..\fltkernel\nf-fltkernel-fltreferencecontext.md">FltReferenceContext</a>. 
+
+To decrement the reference count on a context, call <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>. 
+
+Because contexts are reference-counted, it is not usually necessary to delete them. To delete a context explicitly, call <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a> or the appropriate delete-context routine from the following table.
+
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletefilecontext.md">FltDeleteFileContext</a> (starting with Windows Vista)
+
+
+<a href="..\fltkernel\nf-fltkernel-fltdeleteinstancecontext.md">FltDeleteInstanceContext</a>
 
 
 
-<a href="ifsk.fltdeletestreamhandlecontext">FltDeleteStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a> (starting with Windows 8)
+
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletestreamcontext.md">FltDeleteStreamContext</a>
 
 
 
-<a href="ifsk.fltdeletetransactioncontext">FltDeleteTransactionContext</a> (starting with Windows Vista)
+<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
 
 
-<a href="ifsk.fltdeletevolumecontext">FltDeleteVolumeContext</a>
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletetransactioncontext.md">FltDeleteTransactionContext</a> (starting with Windows Vista)
+
+
+<a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
 
 
 
@@ -310,90 +311,90 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.flt_context_registration">FLT_CONTEXT_REGISTRATION</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
 </dt>
 <dt>
-<a href="ifsk.fltclosesectionfordatascan">FltCloseSectionForDataScan</a>
+<a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a>
 </dt>
 <dt>
-<a href="ifsk.fltcreatesectionfordatascan">FltCreateSectionForDataScan</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeletecontext">FltDeleteContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeletefilecontext">FltDeleteFileContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletefilecontext.md">FltDeleteFileContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeleteinstancecontext">FltDeleteInstanceContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeleteinstancecontext.md">FltDeleteInstanceContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeletestreamcontext">FltDeleteStreamContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletestreamcontext.md">FltDeleteStreamContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeletestreamhandlecontext">FltDeleteStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeletetransactioncontext">FltDeleteTransactionContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletetransactioncontext.md">FltDeleteTransactionContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltdeletevolumecontext">FltDeleteVolumeContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetcontexts">FltGetContexts</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetcontexts.md">FltGetContexts</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetfilecontext">FltGetFileContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetfilecontext.md">FltGetFileContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetinstancecontext">FltGetInstanceContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetinstancecontext.md">FltGetInstanceContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetsectioncontext">FltGetSectionContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetsectioncontext.md">FltGetSectionContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetstreamcontext">FltGetStreamContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetstreamhandlecontext">FltGetStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetstreamhandlecontext.md">FltGetStreamHandleContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltgettransactioncontext">FltGetTransactionContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltgetvolumecontext">FltGetVolumeContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltgetvolumecontext.md">FltGetVolumeContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltreferencecontext">FltReferenceContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreferencecontext.md">FltReferenceContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltregisterfilter">FltRegisterFilter</a>
+<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
 </dt>
 <dt>
-<a href="ifsk.fltreleasecontext">FltReleaseContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetfilecontext">FltSetFileContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetfilecontext.md">FltSetFileContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetinstancecontext">FltSetInstanceContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetinstancecontext.md">FltSetInstanceContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetstreamcontext">FltSetStreamContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetstreamcontext.md">FltSetStreamContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetstreamhandlecontext">FltSetStreamHandleContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetstreamhandlecontext.md">FltSetStreamHandleContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltsettransactioncontext">FltSetTransactionContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsettransactioncontext.md">FltSetTransactionContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltsetvolumecontext">FltSetVolumeContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltsetvolumecontext.md">FltSetVolumeContext</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateContext routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltAllocateContext routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NC.video.PMINIPORT_GET_REGISTRY_ROUTINE
+UID: NC:video.PMINIPORT_GET_REGISTRY_ROUTINE
 title: PMINIPORT_GET_REGISTRY_ROUTINE
 author: windows-driver-content
 description: HwVidQueryNamedValueCallback processes the specified data retrieved from the registry.
@@ -7,8 +7,8 @@ old-location: display\hwvidquerynamedvaluecallback.htm
 old-project: display
 ms.assetid: 90020700-b9c8-42e6-bafa-908cbc3eb233
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VHF_CONFIG, *PVHF_CONFIG, PVHF_CONFIG, VHF_CONFIG
+ms.date: 12/29/2017
+ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ Pointer to the miniport driver's per-adapter storage area. For more information,
 
 ### -param Context 
 
-Pointer to a driver-determined context specified as input to the <a href="display.videoportgetregistryparameters">VideoPortGetRegistryParameters</a> function.
+Pointer to a driver-determined context specified as input to the <a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a> function.
 
 
 ### -param ValueName 
@@ -91,11 +92,11 @@ Specifies the size in bytes of the buffer at <i>ValueData</i>.
 
 
 ## -remarks
-<i>HwVidQueryNamedValueCallback</i> is an optional miniport driver function passed in a call to <a href="display.videoportgetregistryparameters">VideoPortGetRegistryParameters</a>.
+<i>HwVidQueryNamedValueCallback</i> is an optional miniport driver function passed in a call to <a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a>.
 
 <b>VideoPortGetRegistryParameters</b> calls <i>HwVidQueryNamedValueCallback</i> after collecting available configuration information about the given <i>ValueName</i> in the <b>adapter</b> key of the registry. 
 
-<i>HwVidFindAdapter</i> or <a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a> can call <b>VideoPortGetRegistryParameters</b> with a driver-supplied <i>HwVidQueryNamedValueCallback</i> function, pointers to the device extension and any driver-supplied context data (which can be the <a href="display.video_port_config_info">VIDEO_PORT_CONFIG_INFO</a> buffer), and a pointer to a Unicode string naming the value to be retrieved from the registry.
+<i>HwVidFindAdapter</i> or <a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a> can call <b>VideoPortGetRegistryParameters</b> with a driver-supplied <i>HwVidQueryNamedValueCallback</i> function, pointers to the device extension and any driver-supplied context data (which can be the <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a> buffer), and a pointer to a Unicode string naming the value to be retrieved from the registry.
 
 <i>HwVidFindAdapter</i> or <i>HwVidInitialize</i> can set <b>VideoPortGetRegistryParameters</b>'s <i>IsFileNameParameter</i> argument to <b>TRUE</b> if the driver-supplied Unicode string is a named registry entry whose value is a file name. For this specification, the returned data will be the contents of the named file.
 
@@ -143,18 +144,18 @@ Header
 <a href="..\video\nc-video-pvideo_hw_initialize.md">HwVidInitialize</a>
 </dt>
 <dt>
-<a href="display.video_port_config_info">VIDEO_PORT_CONFIG_INFO</a>
+<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
 </dt>
 <dt>
-<a href="display.videoportgetregistryparameters">VideoPortGetRegistryParameters</a>
+<a href="..\video\nf-video-videoportgetregistryparameters.md">VideoPortGetRegistryParameters</a>
 </dt>
 <dt>
-<a href="display.videoportsetregistryparameters">VideoPortSetRegistryParameters</a>
+<a href="..\video\nf-video-videoportsetregistryparameters.md">VideoPortSetRegistryParameters</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PMINIPORT_GET_REGISTRY_ROUTINE callback function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20PMINIPORT_GET_REGISTRY_ROUTINE callback function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._DRIVER_OBJECT
+UID: NS:wdm._DRIVER_OBJECT
 title: _DRIVER_OBJECT
 author: windows-driver-content
 description: Each driver object represents the image of a loaded kernel-mode driver.
@@ -7,7 +7,7 @@ old-location: kernel\driver_object.htm
 old-project: kernel
 ms.assetid: 512e3fd5-7ea5-423c-a628-0db6b30fd708
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: _DRIVER_OBJECT, *PDRIVER_OBJECT, DRIVER_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PDRIVER_OBJECT, DRIVER_OBJECT
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Each driver object represents the image of a loaded kernel-mode driver. A pointer to the driver object is an input parameter to a driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>, <a href="kernel.adddevice">AddDevice</a>, and optional <a href="..\ntddk\nc-ntddk-driver_reinitialize.md">Reinitialize</a> routines and to its <a href="kernel.unload">Unload</a> routine, if any.
+Each driver object represents the image of a loaded kernel-mode driver. A pointer to the driver object is an input parameter to a driver's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>, and optional <a href="..\ntddk\nc-ntddk-driver_reinitialize.md">Reinitialize</a> routines and to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine, if any.
 
 A driver object is partially opaque. Driver writers must know about certain members of a driver object to initialize a driver and to unload it if the driver is unloadable. The following members of the driver object are accessible to drivers.
 
@@ -65,12 +66,12 @@ typedef struct _DRIVER_OBJECT {
 
 ### -field DeviceObject
 
-Pointer to the device objects created by the driver. This member is automatically updated when the driver calls <a href="kernel.iocreatedevice">IoCreateDevice</a> successfully. A driver can use this member and the <b>NextDevice</b> member of <a href="kernel.device_object">DEVICE_OBJECT</a> to step through a list of all the device objects that the driver created.
+Pointer to the device objects created by the driver. This member is automatically updated when the driver calls <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> successfully. A driver can use this member and the <b>NextDevice</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> to step through a list of all the device objects that the driver created.
 
 
 ### -field DriverExtension
 
-Pointer to the driver extension. The only accessible member of the driver extension is <b>DriverExtension-&gt;AddDevice</b>, into which a driver's <b>DriverEntry</b> routine stores the driver's <a href="kernel.adddevice">AddDevice</a> routine.
+Pointer to the driver extension. The only accessible member of the driver extension is <b>DriverExtension-&gt;AddDevice</b>, into which a driver's <b>DriverEntry</b> routine stores the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routine.
 
 
 ### -field HardwareDatabase
@@ -90,12 +91,12 @@ The entry point for the <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry
 
 ### -field DriverStartIo
 
-The entry point for the driver's <a href="kernel.startio">StartIo</a> routine, if any, which is set by the <b>DriverEntry</b> routine when the driver initializes. If a driver has no <i>StartIo</i> routine, this member is <b>NULL</b>.
+The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563858">StartIo</a> routine, if any, which is set by the <b>DriverEntry</b> routine when the driver initializes. If a driver has no <i>StartIo</i> routine, this member is <b>NULL</b>.
 
 
 ### -field DriverUnload
 
-The entry point for the driver's <a href="kernel.unload">Unload</a> routine, if any, which is set by the <b>DriverEntry</b> routine when the driver initializes. If a driver has no <i>Unload</i> routine, this member is <b>NULL</b>.
+The entry point for the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine, if any, which is set by the <b>DriverEntry</b> routine when the driver initializes. If a driver has no <i>Unload</i> routine, this member is <b>NULL</b>.
 
 
 ### -field MajorFunction
@@ -144,7 +145,7 @@ Each kernel-mode driver's initialization routine should be named <a href="..\wdm
 
 A driver must set its <i>DispatchXxx</i> entry points in the driver object that is passed in to the <b>DriverEntry</b> routine when the driver is loaded. A device driver must set one or more <i>DispatchXxx</i> entry points for the <b>IRP_MJ_<i>XXX</i></b> that any driver of the same type of device is required to handle. A higher-level driver must set one or more <i>DispatchXxx</i> entry points for all the <b>IRP_MJ_<i>XXX</i></b> that it must pass on to the underlying device driver. Otherwise, a driver is not sent IRPs for any <b>IRP_MJ_<i>XXX</i></b> for which it does not set up a <i>DispatchXxx</i> routine in the driver object. For more information about the set of <b>IRP_MJ_<i>XXX</i></b> that drivers for different types of underlying devices are required to handle, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550710">IRP Major Function Codes</a>.
 
-The <b>DriverEntry</b> routine also sets the driver's <i>AddDevice</i>, <i>StartIo</i> and/or <a href="kernel.unload">Unload</a> entry points, if any, in the driver object.
+The <b>DriverEntry</b> routine also sets the driver's <i>AddDevice</i>, <i>StartIo</i> and/or <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> entry points, if any, in the driver object.
 
 The <b>HardwareDatabase</b> string can be used by device drivers to get hardware configuration information from the registry when the driver is loaded. A driver is given read-only access to this string.
 
@@ -174,21 +175,21 @@ Header
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 </dt>
 <dt>
-<a href="kernel.iocreatedevice">IoCreateDevice</a>
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 </dt>
 <dt>
-<a href="kernel.iodeletedevice">IoDeleteDevice</a>
+<a href="..\wdm\nf-wdm-iodeletedevice.md">IoDeleteDevice</a>
 </dt>
 <dt>
-<a href="kernel.startio">StartIo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563858">StartIo</a>
 </dt>
 <dt>
-<a href="kernel.unload">Unload</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DRIVER_OBJECT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20DRIVER_OBJECT structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NE.portcls.eChannelTargetType
+UID: NE:portcls.eChannelTargetType
 title: eChannelTargetType
 author: windows-driver-content
 description: The eChannelTargetType enumeration defines constants that specify a type of node (target) in a given channel.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: eChannelTargetType
 ---
 
 # eChannelTargetType enumeration

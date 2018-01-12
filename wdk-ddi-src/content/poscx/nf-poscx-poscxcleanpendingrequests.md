@@ -1,5 +1,5 @@
 ---
-UID: NF.poscx.PosCxCleanPendingRequests
+UID: NF:poscx.PosCxCleanPendingRequests
 title: PosCxCleanPendingRequests function
 author: windows-driver-content
 description: PosCxCleanPendingRequests is called to cancel all pending requests for a given caller, identified by the open instance.
@@ -7,7 +7,7 @@ old-location: pos\poscxcleanpendingrequests.htm
 old-project: pos
 ms.assetid: FD6036D5-C316-43E6-8C37-067F5705BCB6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: PosCxCleanPendingRequests
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: POS_CX_EVENT_PRIORITY
 req.product: Windows 10 or later.
 ---
 

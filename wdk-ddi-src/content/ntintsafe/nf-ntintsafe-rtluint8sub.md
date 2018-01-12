@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlUInt8Sub
+UID: NF:ntintsafe.RtlUInt8Sub
 title: RtlUInt8Sub function
 author: windows-driver-content
 description: The RtlUInt8Sub routine subtracts one value of type UINT8 from another.
@@ -7,7 +7,7 @@ old-location: kernel\rtluint8sub.htm
 old-project: kernel
 ms.assetid: D8BD24AA-64CF-42CB-8AD2-2B6C77D4B195
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlUInt8Sub
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlUInt8Sub function

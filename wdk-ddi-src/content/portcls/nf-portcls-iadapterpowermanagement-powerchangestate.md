@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IAdapterPowerManagement.PowerChangeState
+UID: NF:portcls.IAdapterPowerManagement.PowerChangeState
 title: IAdapterPowerManagement::PowerChangeState method
 author: windows-driver-content
 description: The PowerChangeState method requests that the device change to a new power state.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IAdapterPowerManagement::PowerChangeState method

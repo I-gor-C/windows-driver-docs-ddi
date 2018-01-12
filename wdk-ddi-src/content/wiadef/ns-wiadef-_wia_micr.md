@@ -1,13 +1,13 @@
 ---
-UID: NS.WIADEF._WIA_MICR
+UID: NS:wiadef._WIA_MICR
 title: _WIA_MICR
 author: windows-driver-content
 description: The WIA_MICR structure stores header information for the MICR metadata report of one scan job (one call to IWiaMiniDrv::drvAcquireItemData).
 old-location: image\wia_micr.htm
-old-project: Image
+old-project: image
 ms.assetid: CAD08405-698C-4C3A-A03F-827837199CC8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _WIA_MICR, WIA_MICR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
+req.typenames: WIA_MICR
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>WIA_MICR</b> structure stores header information for the MICR metadata report of one scan job (one call to <a href="image.iwiaminidrv_drvacquireitemdata">IWiaMiniDrv::drvAcquireItemData</a>).
+The <b>WIA_MICR</b> structure stores header information for the MICR metadata report of one scan job (one call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543956">IWiaMiniDrv::drvAcquireItemData</a>).
 
 
 
@@ -71,7 +72,7 @@ Must be the value 0x00010000 (Version 1.0).
 
 ### -field Size
 
-The complete size of this <b>WIA_MICR</b> header structure, in bytes, including the complete size of the <a href="image.wia_micr_info">WIA_MICR_INFO</a> list.
+The complete size of this <b>WIA_MICR</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> list.
 
 
 ### -field Placeholder
@@ -81,12 +82,12 @@ Placeholder for unrecognized characters.
 
 ### -field Count
 
-Specifies the number of <a href="image.wia_micr_info">WIA_MICR_INFO</a> elements in the <b>Micr</b> sequence.
+Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> elements in the <b>Micr</b> sequence.
 
 
 ### -field Micr
 
-Placeholder for a sequence of <b>Count</b> contiguous <a href="image.wia_micr_info">WIA_MICR_INFO</a> structures.
+Placeholder for a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> structures.
 
 
 ## -remarks

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfdevice.WdfDeviceAssignMofResourceName
+UID: NF:wdfdevice.WdfDeviceAssignMofResourceName
 title: WdfDeviceAssignMofResourceName function
 author: windows-driver-content
 description: The WdfDeviceAssignMofResourceName method registers a MOF resource name for a specified device.
@@ -7,7 +7,7 @@ old-location: wdf\wdfdeviceassignmofresourcename.htm
 old-project: wdf
 ms.assetid: b4ab0a7b-9c5a-4295-94fc-35310ca8e05b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfDeviceAssignMofResourceName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -64,14 +65,14 @@ A handle to a framework device object.
 
 ### -param MofResourceName [in]
 
-A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that specifies the name of a MOF resource. 
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that specifies the name of a MOF resource. 
 
 
 ## -returns
 If the operation succeeds, <b>WdfDeviceAssignMofResourceName</b> returns STATUS_SUCCESS. Additional return values include:
 <dl>
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
-</dl>The driver has already called <a href="wdf.wdfdeviceassignmofresourcename">WdfDeviceAssignMofResourceName</a>.
+</dl>The driver has already called <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassignmofresourcename.md">WdfDeviceAssignMofResourceName</a>.
 <dl>
 <dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
 </dl> Insufficient memory is available.
@@ -134,7 +135,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -154,7 +155,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>

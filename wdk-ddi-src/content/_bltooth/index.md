@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:bltooth
 ---
 
 # Bluetooth
@@ -23,48 +23,27 @@ For the programming guide, see [Bluetooth](===404===https://docs.microsoft.com/e
 | Title   | Description   |
 | ---- |:---- |
 | [SdpAddAttributeToTree function](..\sdplib\nf-sdplib-sdpaddattributetotree.md) | The Bluetooth SdpAddAttributeToTree function is used to attach an SDP attribute node to the top level of an SDP record. |
-| [SdpAddAttributeToTree function](..\sdplib\nf-sdplib-sdpaddattributetotree~r1.md) | The Bluetooth SdpAddAttributeToTree function is used to attach an SDP attribute node to the top level of an SDP record. |
 | [SdpAppendNodeToContainerNode function](..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md) | The Bluetooth SdpAppendNodeToContainerNode function is used to attach an SDP node to a sequence or alternative SDP node. |
 | [SdpCreateNodeAlternative function](..\sdplib\nf-sdplib-sdpcreatenodealternative.md) | The Bluetooth SdpCreateNodeAlternative function is used to create an empty alternative sequence SDP node. |
-| [SdpCreateNodeAlternative function](..\sdplib\nf-sdplib-sdpcreatenodealternative~r1.md) | The Bluetooth SdpCreateNodeAlternative function is used to create an empty alternative sequence SDP node. |
 | [SdpCreateNodeBoolean function](..\sdplib\nf-sdplib-sdpcreatenodeboolean.md) | The Bluetooth SdpCreateNodeBoolean function is used to allocate and initialize an SDP_NODE structure to a Boolean type. |
-| [SdpCreateNodeBoolean function](..\sdplib\nf-sdplib-sdpcreatenodeboolean~r1.md) | The Bluetooth SdpCreateNodeBoolean function is used to allocate and initialize an SDP_NODE structure to a Boolean type. |
 | [SdpCreateNodeInt128 function](..\sdplib\nf-sdplib-sdpcreatenodeint128.md) | The Bluetooth SdpCreateNodeInt128 function is used to allocate and initialize an SDP_NODE structure to a 128-bit integer type. |
-| [SdpCreateNodeInt128 function](..\sdplib\nf-sdplib-sdpcreatenodeint128~r1.md) | The Bluetooth SdpCreateNodeInt128 function is used to allocate and initialize an SDP_NODE structure to a 128-bit integer type. |
 | [SdpCreateNodeInt16 function](..\sdplib\nf-sdplib-sdpcreatenodeint16.md) | The Bluetooth SdpCreateNodeInt16 function is used to allocate and initialize an SDP_NODE structure to a 16-bit integer type. |
-| [SdpCreateNodeInt16 function](..\sdplib\nf-sdplib-sdpcreatenodeint16~r1.md) | The Bluetooth SdpCreateNodeInt16 function is used to allocate and initialize an SDP_NODE structure to a 16-bit integer type. |
 | [SdpCreateNodeInt32 function](..\sdplib\nf-sdplib-sdpcreatenodeint32.md) | The Bluetooth SdpCreateNodeInt32 function is used to allocate and initialize an SDP_NODE structure to a 32-bit integer type. |
-| [SdpCreateNodeInt32 function](..\sdplib\nf-sdplib-sdpcreatenodeint32~r1.md) | The Bluetooth SdpCreateNodeInt32 function is used to allocate and initialize an SDP_NODE structure to a 32-bit integer type. |
 | [SdpCreateNodeInt64 function](..\sdplib\nf-sdplib-sdpcreatenodeint64.md) | The Bluetooth SdpCreateNodeInt64 function is used to allocate and initialize an SDP_NODE structure to a 64-bit integer type. |
-| [SdpCreateNodeInt64 function](..\sdplib\nf-sdplib-sdpcreatenodeint64~r1.md) | The Bluetooth SdpCreateNodeInt64 function is used to allocate and initialize an SDP_NODE structure to a 64-bit integer type. |
 | [SdpCreateNodeInt8 function](..\sdplib\nf-sdplib-sdpcreatenodeint8.md) | The Bluetooth SdpCreateNodeInt8 function is used to allocate and initialize an SDP_NODE structure to an 8-bit integer type. |
-| [SdpCreateNodeInt8 function](..\sdplib\nf-sdplib-sdpcreatenodeint8~r1.md) | The Bluetooth SdpCreateNodeInt8 function is used to allocate and initialize an SDP_NODE structure to an 8-bit integer type. |
 | [SdpCreateNodeNil function](..\sdplib\nf-sdplib-sdpcreatenodenil.md) | The Bluetooth SdpCreateNodeNil function is used to allocate and initialize an SDP_NODE structure to an empty node type. |
-| [SdpCreateNodeNil function](..\sdplib\nf-sdplib-sdpcreatenodenil~r1.md) | The Bluetooth SdpCreateNodeNil function is used to allocate and initialize an SDP_NODE structure to an empty node type. |
 | [SdpCreateNodeSequence function](..\sdplib\nf-sdplib-sdpcreatenodesequence.md) | The Bluetooth SdpCreateNodeSequence function is used to create an empty sequence SDP node. |
-| [SdpCreateNodeSequence function](..\sdplib\nf-sdplib-sdpcreatenodesequence~r1.md) | The Bluetooth SdpCreateNodeSequence function is used to create an empty sequence SDP node. |
 | [SdpCreateNodeString function](..\sdplib\nf-sdplib-sdpcreatenodestring.md) | The Bluetooth SdpCreateNodeString function is used to allocate and initialize an SDP_NODE structure to a string type. |
-| [SdpCreateNodeString function](..\sdplib\nf-sdplib-sdpcreatenodestring~r1.md) | The Bluetooth SdpCreateNodeString function is used to allocate and initialize an SDP_NODE structure to a string type. |
 | [SdpCreateNodeTree function](..\sdplib\nf-sdplib-sdpcreatenodetree.md) | The Bluetooth SdpCreateNodeTree function is used to allocate an empty root SDP_TREE_ROOT_NODE structure. |
-| [SdpCreateNodeTree function](..\sdplib\nf-sdplib-sdpcreatenodetree~r1.md) | The Bluetooth SdpCreateNodeTree function is used to allocate an empty root SDP_TREE_ROOT_NODE structure. |
 | [SdpCreateNodeUInt128 function](..\sdplib\nf-sdplib-sdpcreatenodeuint128.md) | The Bluetooth SdpCreateNodeUInt128 function is used to allocate and initialize an SDP_NODE structure to an unsigned 128-bit integer type. |
-| [SdpCreateNodeUInt128 function](..\sdplib\nf-sdplib-sdpcreatenodeuint128~r1.md) | The Bluetooth SdpCreateNodeUInt128 function is used to allocate and initialize an SDP_NODE structure to an unsigned 128-bit integer type. |
 | [SdpCreateNodeUInt16 function](..\sdplib\nf-sdplib-sdpcreatenodeuint16.md) | The Bluetooth SdpCreateNodeUInt16 function is used to allocate and initialize an SDP_NODE structure to an unsigned 16-bit integer type. |
-| [SdpCreateNodeUInt16 function](..\sdplib\nf-sdplib-sdpcreatenodeuint16~r1.md) | The Bluetooth SdpCreateNodeUInt16 function is used to allocate and initialize an SDP_NODE structure to an unsigned 16-bit integer type. |
 | [SdpCreateNodeUInt32 function](..\sdplib\nf-sdplib-sdpcreatenodeuint32.md) | The Bluetooth SdpCreateNodeUInt32 function is used to allocate and initialize an SDP_NODE structure to an unsigned 32-bit integer type. |
-| [SdpCreateNodeUInt32 function](..\sdplib\nf-sdplib-sdpcreatenodeuint32~r1.md) | The Bluetooth SdpCreateNodeUInt32 function is used to allocate and initialize an SDP_NODE structure to an unsigned 32-bit integer type. |
 | [SdpCreateNodeUInt64 function](..\sdplib\nf-sdplib-sdpcreatenodeuint64.md) | The Bluetooth SdpCreateNodeUInt64 function is used to allocate and initialize an SDP_NODE structure to an unsigned 64-bit integer type. |
-| [SdpCreateNodeUInt64 function](..\sdplib\nf-sdplib-sdpcreatenodeuint64~r1.md) | The Bluetooth SdpCreateNodeUInt64 function is used to allocate and initialize an SDP_NODE structure to an unsigned 64-bit integer type. |
 | [SdpCreateNodeUInt8 function](..\sdplib\nf-sdplib-sdpcreatenodeuint8.md) | The Bluetooth SdpCreateNodeUInt8 function is used to allocate and initialize an SDP_NODE structure to an unsigned 8-bit integer type. |
-| [SdpCreateNodeUInt8 function](..\sdplib\nf-sdplib-sdpcreatenodeuint8~r1.md) | The Bluetooth SdpCreateNodeUInt8 function is used to allocate and initialize an SDP_NODE structure to an unsigned 8-bit integer type. |
 | [SdpCreateNodeUUID128 function](..\sdplib\nf-sdplib-sdpcreatenodeuuid128.md) | The Bluetooth SdpCreateNodeUUID128 function is used to allocate and initialize an SDP_NODE structure to a 128-bit UUID type. |
-| [SdpCreateNodeUUID128 function](..\sdplib\nf-sdplib-sdpcreatenodeuuid128~r1.md) | The Bluetooth SdpCreateNodeUUID128 function is used to allocate and initialize an SDP_NODE structure to a 128-bit UUID type. |
 | [SdpCreateNodeUUID16 function](..\sdplib\nf-sdplib-sdpcreatenodeuuid16.md) | The Bluetooth SdpCreateNodeUUID16 function is used to allocate and initialize an SDP_NODE structure to a 16-bit UUID type. |
-| [SdpCreateNodeUUID16 function](..\sdplib\nf-sdplib-sdpcreatenodeuuid16~r1.md) | The Bluetooth SdpCreateNodeUUID16 function is used to allocate and initialize an SDP_NODE structure to a 16-bit UUID type. |
 | [SdpCreateNodeUUID32 function](..\sdplib\nf-sdplib-sdpcreatenodeuuid32.md) | The Bluetooth SdpCreateNodeUUID32 function is used to allocate and initialize an SDP_NODE structure to a 32-bit UUID type. |
-| [SdpCreateNodeUUID32 function](..\sdplib\nf-sdplib-sdpcreatenodeuuid32~r1.md) | The Bluetooth SdpCreateNodeUUID32 function is used to allocate and initialize an SDP_NODE structure to a 32-bit UUID type. |
 | [SdpCreateNodeUrl function](..\sdplib\nf-sdplib-sdpcreatenodeurl.md) | The Bluetooth SdpCreateNodeUrl function is used to allocate and initialize an SDP_NODE structure to a URL type. |
-| [SdpCreateNodeUrl function](..\sdplib\nf-sdplib-sdpcreatenodeurl~r1.md) | The Bluetooth SdpCreateNodeUrl function is used to allocate and initialize an SDP_NODE structure to a URL type. |
 | [SdpFindAttributeInTree function](..\sdplib\nf-sdplib-sdpfindattributeintree.md) | The Bluetooth SdpFindAttributeInTree function is used to locate the specified attribute node in the tree-based representation of an SDP record. |
 | [SdpFreeTree function](..\sdplib\nf-sdplib-sdpfreetree.md) | The Bluetooth SdpFreeTree function is used to free the memory allocated for the tree-based representation of an SDP record. |
 
@@ -88,6 +67,7 @@ For the programming guide, see [Bluetooth](===404===https://docs.microsoft.com/e
 | [PGETNEXTELEMENT callback](..\bthsdpddi\nc-bthsdpddi-pgetnextelement.md) | The Bluetooth SdpGetNextElement function is used to iterate through the entries found in an SDP record stream. |
 | [PRETRIEVEUINT64 callback](..\bthsdpddi\nc-bthsdpddi-pretrieveuint64.md) | The Bluetooth SdpRetrieveUint128 function is used to copy an unaligned 128-bit integer from an SDP stream. |
 | [PRETRIEVEUUID128 callback](..\bthsdpddi\nc-bthsdpddi-pretrieveuuid128.md) | The Bluetooth SdpRetrieveUuid128 function is used to copy an unaligned 128-bit universally unique identifier (UUID) from an SDP stream. |
+| [PVALIDATESTREAM callback](..\bthsdpddi\nc-bthsdpddi-pvalidatestream.md) | The Bluetooth SdpValidateStream function is used to parse a raw SDP record and determine if it contains errors. |
 
 ## Structures
 
@@ -144,13 +124,12 @@ For the programming guide, see [Bluetooth](===404===https://docs.microsoft.com/e
 | [_CHANNEL_CONFIG_RESULTS_ENHANCED structure](..\bthddi\ns-bthddi-_channel_config_results_enhanced.md) | The CHANNEL_CONFIG_RESULTS_ENHANCED structure describes configuration parameters and the buffer size of any extra option for the inbound and outbound directions of an L2CAP channel. |
 | [_CO_HEADER structure](..\bthddi\ns-bthddi-_co_header.md) | The CO_HEADER structure is used to specify values for the Header member of the L2CAP_CONFIG_OPTION structure. |
 | [_INDICATION_PARAMETERS structure](..\bthddi\ns-bthddi-_indication_parameters.md) | The INDICATION_PARAMETERS structure is passed as the Parameters parameter to a profile driver's L2CAP Callback Function. |
-| [_INDICATION_PARAMETERS structure](..\bthddi\ns-bthddi-_indication_parameters~r1.md) | The INDICATION_PARAMETERS structure is passed as the Parameters parameter to a profile driver's L2CAP Callback Function. |
 | [_INDICATION_PARAMETERS_ENHANCED structure](..\bthddi\ns-bthddi-_indication_parameters_enhanced.md) | The INDICATION_PARAMETERS_ENHANCED structure is passed as the Parameters parameter to a profile driver's enhanced L2CAP Callback Function. |
-| [_INDICATION_PARAMETERS_ENHANCED structure](..\bthddi\ns-bthddi-_indication_parameters_enhanced~r1.md) | The INDICATION_PARAMETERS_ENHANCED structure is passed as the Parameters parameter to a profile driver's enhanced L2CAP Callback Function. |
 | [_L2CAP_CONFIG_OPTION structure](..\bthddi\ns-bthddi-_l2cap_config_option.md) | An array of L2CAP_CONFIG_OPTION structures is used to specify values for the ExtraOptions member of the CHANNEL_CONFIG_PARAMETERS, _BRB_L2CA_OPEN_CHANNEL, and INDICATION_PARAMETERS structures. |
 | [_L2CAP_CONFIG_RANGE structure](..\bthddi\ns-bthddi-_l2cap_config_range.md) | The L2CAP_CONFIG_RANGE structure is used to specify a range of possible values for the FlushTO member of the _BRB_L2CA_OPEN_CHANNEL structure during incoming requests. |
 | [_L2CAP_CONFIG_VALUE_RANGE structure](..\bthddi\ns-bthddi-_l2cap_config_value_range.md) | The L2CAP_CONFIG_VALUE_RANGE structure is used to specify values for the Mtu and FlushTO members of the _BRB_L2CA_OPEN_CHANNEL structure. |
 | [_L2CAP_EXTENDED_FLOW_SPEC structure](..\bthddi\ns-bthddi-_l2cap_extended_flow_spec.md) | The L2CAP_EXTENDED_FLOW_SPEC is reserved for future use. |
+| [_L2CAP_FLOWSPEC structure](..\bthddi\ns-bthddi-_l2cap_flowspec.md) | This structure reserved for future use. |
 | [_L2CAP_RETRANSMISSION_AND_FLOW_CONTROL structure](..\bthddi\ns-bthddi-_l2cap_retransmission_and_flow_control.md) | The L2CAP_RETRANSMISSION_AND_FLOW_CONTROL structure describes configuration parameters for enhanced retransmission mode and streaming mode. |
 | [_SCO_INDICATION_PARAMETERS structure](..\bthddi\ns-bthddi-_sco_indication_parameters.md) | The SCO_INDICATION_PARAMETERS structure describes indication parameters about a SCO connect or disconnect notification. |
 | [_SDP_NODE structure](..\sdpnode\ns-sdpnode-_sdp_node.md) | The SDP_NODE structure holds information about an element in a tree-based representation of an SDP record. |
@@ -164,12 +143,15 @@ For the programming guide, see [Bluetooth](===404===https://docs.microsoft.com/e
 | ---- |:---- |
 | [_ACL_MODE enumeration](..\bthddi\ne-bthddi-_acl_mode.md) | The ACL_MODE enumeration type is used to list the possible states of an ACL connection. |
 | [_BRB_TYPE enumeration](..\bthddi\ne-bthddi-_brb_type.md) | The BRB_TYPE enumeration type is used to determine the Bluetooth request block when a profile driver builds and sends a BRB. |
+| [_BRB_VERSION enumeration](..\bthddi\ne-bthddi-_brb_version.md) | Reserved for internal use. |
 | [_BTHX_HCI_PACKET_TYPE enumeration](..\bthxddi\ne-bthxddi-_bthx_hci_packet_type.md) | The BTHX_HCI_PACKET_TYPE enumeration lists the different types of packets being sent from the Bluetooth stack to the transport driver. |
 | [_BTHX_SCO_SUPPORT enumeration](..\bthxddi\ne-bthxddi-_bthx_sco_support.md) | The BTHX_SCO_SUPPORT enumeration lists the different types of SCO supported by the transport driver. |
+| [_CODING_FORMAT enumeration](..\bthddi\ne-bthddi-_coding_format.md) | This enumeration is for internal use only. |
+| [_ENUMERATOR_ACTION enumeration](..\bthddi\ne-bthddi-_enumerator_action.md) | Reserved for internal use. |
 | [_ENUMERATOR_TYPE enumeration](..\bthddi\ne-bthddi-_enumerator_type.md) | The ENUMERATOR_TYPE enumeration type is used to determine whether the enumerated device is associated with a service or a protocol. The ENUMERATOR_TYPE enumeration is intended for internal use only and should not be used by profile drivers. |
 | [_INDICATION_CODE enumeration](..\bthddi\ne-bthddi-_indication_code.md) | The INDICATION_CODE enumeration type indicates to a profile driver what type of L2CAP event has occurred. |
-| [_INDICATION_CODE enumeration](..\bthddi\ne-bthddi-_indication_code~r1.md) | The INDICATION_CODE enumeration type indicates to a profile driver what type of L2CAP event has occurred. |
 | [_L2CAP_DISCONNECT_REASON enumeration](..\bthddi\ne-bthddi-_l2cap_disconnect_reason.md) | The L2CAP_DISCONNECT_REASON enumeration type gives the reason an L2CAP channel has been disconnected. |
+| [_PCM_DATA_FORMAT enumeration](..\bthddi\ne-bthddi-_pcm_data_format.md) | This enumeration is for internal use only. |
 | [_SCO_DISCONNECT_REASON enumeration](..\bthddi\ne-bthddi-_sco_disconnect_reason.md) | The SCO_DISCONNECT_REASON enumeration type gives the reason an SCO channel has been disconnected. |
 | [_SCO_INDICATION_CODE enumeration](..\bthddi\ne-bthddi-_sco_indication_code.md) | The SCO_INDICATION_CODE enumeration type describes the type of an incoming SCO connection or bonding state change. The Bluetooth driver stack passes a value from this enumeration in the Indication argument of a profile driver's SCO Callback Function. |
 | [_SCO_LINK_TYPE enumeration](..\bthddi\ne-bthddi-_sco_link_type.md) | The SCO_LINK_TYPE enumeration type describes the type of link used by the SCO connection when a ScoIndicationRemoteConnect indication event is processed. |

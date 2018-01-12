@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.ReadListEntry
+UID: NF:wdbgexts.ReadListEntry
 title: ReadListEntry function
 author: windows-driver-content
 description: The ReadListEntry function reads a doubly-linked list entry from the target's memory.
 old-location: debugger\readlistentry.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: b5bfbb6d-4797-4e5f-bc66-398527b13d85
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ReadListEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 

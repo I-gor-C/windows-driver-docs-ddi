@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltGetSectionContext
+UID: NF:fltkernel.FltGetSectionContext
 title: FltGetSectionContext function
 author: windows-driver-content
 description: The FltGetSectionContext routine retrieves a section context that was created for a file stream by a specified minifilter driver instance.
@@ -7,7 +7,7 @@ old-location: ifsk\fltgetsectioncontext.htm
 old-project: ifsk
 ms.assetid: 0B5C1BF9-59C3-4AC9-B545-FD7260B75E90
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltGetSectionContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: <= APC_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltGetSectionContext function
@@ -83,12 +84,12 @@ A pointer to a caller-allocated variable that receives the address of the contex
 
 
 ## -remarks
-<b>FltGetSectionContext</b> retrieves a section context that was created for a file stream by a specified minifilter driver instance. A section context is created by calling <a href="ifsk.fltcreatesectionfordatascan">FltCreateSectionForDataScan</a>.
+<b>FltGetSectionContext</b> retrieves a section context that was created for a file stream by a specified minifilter driver instance. A section context is created by calling <a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>.
 
-<b>FltGetSectionContext</b> increments the reference count on the context that the <i>Context </i>parameter points to. When this context pointer is no longer needed, the caller must decrement its reference count by calling <a href="ifsk.fltreleasecontext">FltReleaseContext</a>. Thus every successful call to <b>FltGetSectionContext</b> must be matched by a subsequent call to <b>FltReleaseContext</b>. 
+<b>FltGetSectionContext</b> increments the reference count on the context that the <i>Context </i>parameter points to. When this context pointer is no longer needed, the caller must decrement its reference count by calling <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>. Thus every successful call to <b>FltGetSectionContext</b> must be matched by a subsequent call to <b>FltReleaseContext</b>. 
 
-To allocate a new context, call <a href="ifsk.fltallocatecontext">FltAllocateContext</a>. 
-<p class="note">Minifilters must not explicitly delete a section context passed to <a href="ifsk.fltcreatesectionfordatascan">FltCreateSectionForDataScan</a>. A section context is deallocated and removed from a stream  by calling <a href="ifsk.fltclosesectionfordatascan">FltCloseSectionForDataScan</a> in this case.
+To allocate a new context, call <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>. 
+<p class="note">Minifilters must not explicitly delete a section context passed to <a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>. A section context is deallocated and removed from a stream  by calling <a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a> in this case.
 
 
 ## -requirements
@@ -162,21 +163,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.fltallocatecontext">FltAllocateContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
 </dt>
 <dt>
-<a href="ifsk.fltclosesectionfordatascan">FltCloseSectionForDataScan</a>
+<a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a>
 </dt>
 <dt>
-<a href="ifsk.fltcreatesectionfordatascan">FltCreateSectionForDataScan</a>
+<a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>
 </dt>
 <dt>
-<a href="ifsk.fltreleasecontext">FltReleaseContext</a>
+<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetSectionContext routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltGetSectionContext routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NC.fwpsk.FWPS_CALLOUT_NOTIFY_FN2
+UID: NC:fwpsk.FWPS_CALLOUT_NOTIFY_FN2
 title: FWPS_CALLOUT_NOTIFY_FN2
 author: windows-driver-content
 description: The filter engine calls a callout's notifyFn2 callout function to notify the callout driver about events that are associated with the callout.Note  notifyFn2 is the specific version of notifyFn used in Windows 8 and later.
 old-location: netvista\notifyfn2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c70c987b-5b4c-4ddd-8eb8-8c3c40003ab3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpmEngineOpen0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: PINSTANCE_PARTIAL_INFORMATION, INSTANCE_PARTIAL_INFORMATION
 ---
 
 # FWPS_CALLOUT_NOTIFY_FN2 callback
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 The filter engine calls a callout's 
   <i>notifyFn2</i> callout function to notify the callout driver about events that are associated with the
-  callout.<div class="alert"><b>Note</b>  <i>notifyFn2</i> is the specific version of <a href="netvista.notifyfn">notifyFn</a> used in Windows 8 and later. See <a href="fwp.wfp_version-independent_names_and_targeting_specific_versions_of_windows">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information. For Windows 7, <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn1.md">notifyFn1</a> is available. For Windows Vista, <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn0.md">notifyFn0</a> is available.</div>
+  callout.<div class="alert"><b>Note</b>  <i>notifyFn2</i> is the specific version of <a href="https://msdn.microsoft.com/library/windows/hardware/ff568802">notifyFn</a> used in Windows 8 and later. See <a href="https://msdn.microsoft.com/FBDF53E5-F7DE-4DEB-AC18-6D2BB59FE670">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information. For Windows 7, <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn1.md">notifyFn1</a> is available. For Windows Vista, <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn0.md">notifyFn0</a> is available.</div>
 <div> </div>
 
 
@@ -101,7 +102,7 @@ A pointer to the management identifier for the filter, as specified by the appli
 ### -param filter [in, out]
 
 A pointer to an 
-     <a href="netvista.fwps_filter2">FWPS_FILTER2</a> structure. This structure
+     <a href="https://msdn.microsoft.com/library/windows/hardware/hh439768">FWPS_FILTER2</a> structure. This structure
      describes the filter that is being added to or deleted from the filter engine.
      
 
@@ -139,7 +140,7 @@ A callout's
 
 ## -remarks
 A callout driver registers a callout's callout functions with the filter engine by calling the 
-    <a href="netvista.fwpscalloutregister2">FwpsCalloutRegister2</a> function.
+    <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister2.md">FwpsCalloutRegister2</a> function.
 
 The filter engine calls a callout driver's 
     <i>notifyFn2</i> function to notify the callout driver about events that are associated with the callout.
@@ -168,11 +169,11 @@ When a filter that specifies a callout for the filter's action is deleted from t
     <i>notifyFn2</i> function and passes FWP_CALLOUT_NOTIFY_DELETE_FILTER in the 
     <i>notifyType</i> parameter and NULL in the 
     <i>filterKey</i> parameter. For more information, see 
-    <a href="netvista.processing_notify_callouts">Processing Notify Callouts</a>.
+    <a href="https://msdn.microsoft.com/d686989e-97f0-4095-b172-1c2ccf7a26e6">Processing Notify Callouts</a>.
 
 This function is essentially identical to the previous version, 
     <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn1.md">notifyFn1</a>. The only difference is the 
-       updated <a href="netvista.fwps_filter2">FWPS_FILTER2</a> structure pointed to by the 
+       updated <a href="https://msdn.microsoft.com/library/windows/hardware/hh439768">FWPS_FILTER2</a> structure pointed to by the 
        <i>filter</i> parameter.
 
 
@@ -214,13 +215,13 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwps_filter2">FWPS_FILTER2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439768">FWPS_FILTER2</a>
 </dt>
 <dt>
-<a href="netvista.fwpscalloutregister2">FwpsCalloutRegister2</a>
+<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister2.md">FwpsCalloutRegister2</a>
 </dt>
 <dt>
-<a href="netvista.notifyfn">notifyFn</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568802">notifyFn</a>
 </dt>
 <dt>
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn0.md">notifyFn0</a>
@@ -229,12 +230,12 @@ IRQL
 <a href="..\fwpsk\nc-fwpsk-fwps_callout_notify_fn1.md">notifyFn1</a>
 </dt>
 <dt>
-<a href="netvista.callout_driver_callout_functions">Callout Driver Callout Functions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543875">Callout Driver Callout Functions</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FWPS_CALLOUT_NOTIFY_FN2 callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FWPS_CALLOUT_NOTIFY_FN2 callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

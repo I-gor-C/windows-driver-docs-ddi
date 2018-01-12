@@ -1,5 +1,5 @@
 ---
-UID: NS.PRINTOEM._PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
+UID: NS:printoem._PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
 title: _PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
 author: windows-driver-content
 description: The PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA structure specifies the imageable origin area.
@@ -7,8 +7,8 @@ old-location: print\pdev_adjust_imageable_origin_area.htm
 old-project: print
 ms.assetid: 7b66ed24-64c2-49bc-a417-05fe11178b9f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, *PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
+ms.date: 1/8/2018
+ms.keywords: _PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, *PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPDEV_ADJUST_IMAGEABLE_ORIGIN_AREA, PDEV_ADJUST_IMAGEABLE_ORIGIN_AREA
 req.product: Windows 10 or later.
 ---
 

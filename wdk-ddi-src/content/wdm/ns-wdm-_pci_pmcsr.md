@@ -1,5 +1,5 @@
 ---
-UID: NS.WDM._PCI_PMCSR
+UID: NS:wdm._PCI_PMCSR
 title: _PCI_PMCSR
 author: windows-driver-content
 description: The PCI_PMCSR structure is used to report the contents of the device's power management control status register.
@@ -7,8 +7,8 @@ old-location: pci\pci_pmcsr.htm
 old-project: PCI
 ms.assetid: 5c4bf4c0-c36f-4779-a012-6364c94f37a1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _PCI_PMCSR, PPCI_PMCSR, *PPCI_PMCSR, PCI_PMCSR
+ms.date: 12/29/2017
+ms.keywords: _PCI_PMCSR, *PPCI_PMCSR, PCI_PMCSR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PPCI_PMCSR, PCI_PMCSR
 req.product: Windows 10 or later.
 ---
 
@@ -167,5 +168,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20PCI_PMCSR structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [PCI\buses]:%20PCI_PMCSR structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

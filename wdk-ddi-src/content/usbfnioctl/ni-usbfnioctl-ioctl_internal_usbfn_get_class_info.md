@@ -1,14 +1,14 @@
 ---
-UID: NI.usbfnioctl.IOCTL_INTERNAL_USBFN_GET_CLASS_INFO
+UID: NI:usbfnioctl.IOCTL_INTERNAL_USBFN_GET_CLASS_INFO
 title: IOCTL_INTERNAL_USBFN_GET_CLASS_INFO
 author: windows-driver-content
 description: The class driver sends this request IO control code to retrieve information about the available pipes for a device, as configured in the registry.
 old-location: buses\ioctl_internal_usbfn_get_class_info.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 870D7D8C-B2FE-487A-9098-C004E6C7E159
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USBFN_USB_STRING, USBFN_USB_STRING, PUSBFN_USB_STRING, *PUSBFN_USB_STRING
+ms.date: 1/4/2018
+ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUSBFN_USB_STRING, USBFN_USB_STRING
 req.product: Windows 10 or later.
 ---
 
@@ -54,11 +55,11 @@ None.
 
 
 ### -output-buffer
-A pointer to a buffer that contains a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.
+A pointer to a buffer that contains a <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_information_packet.md">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.
 
 
 ### -output-buffer-length
-The size of a <a href="buses.usbfn_class_information_packet">USBFN_CLASS_INFORMATION_PACKET</a> structure.
+The size of a <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_information_packet.md">USBFN_CLASS_INFORMATION_PACKET</a> structure.
 
 
 ### -in-out-buffer

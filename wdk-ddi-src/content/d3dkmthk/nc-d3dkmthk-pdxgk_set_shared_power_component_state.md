@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dkmthk.PDXGK_SET_SHARED_POWER_COMPONENT_STATE
+UID: NC:d3dkmthk.PDXGK_SET_SHARED_POWER_COMPONENT_STATE
 title: PDXGK_SET_SHARED_POWER_COMPONENT_STATE
 author: windows-driver-content
 description: A callback to indicate whether the specified power component is active.
@@ -7,7 +7,7 @@ old-location: display\pdxgk_set_shared_power_component_state.htm
 old-project: display
 ms.assetid: 779072A4-A82B-4251-93F5-5B6C7ED0598E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_TARGETMODE_DETAIL_TIMING, DXGK_TARGETMODE_DETAIL_TIMING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_TARGETMODE_DETAIL_TIMING
 ---
 
 # PDXGK_SET_SHARED_POWER_COMPONENT_STATE callback

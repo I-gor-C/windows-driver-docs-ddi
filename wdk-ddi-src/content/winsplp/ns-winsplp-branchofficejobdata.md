@@ -1,5 +1,5 @@
 ---
-UID: NS.WINSPLP.BRANCHOFFICEJOBDATA
+UID: NS:winsplp.BranchOfficeJobData
 title: BranchOfficeJobData
 author: windows-driver-content
 description: This structure contains the type of event to log (eEventType), the job ID, and the data required by the event.
@@ -7,8 +7,8 @@ old-location: print\branchofficejobdata.htm
 old-project: print
 ms.assetid: B49FEED5-C90A-4E4F-9B73-E06E56FB4311
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: BranchOfficeJobData, PBranchOfficeJobData, BranchOfficeJobData, *PBranchOfficeJobData
+ms.date: 1/8/2018
+ms.keywords: BranchOfficeJobData, *PBranchOfficeJobData, BranchOfficeJobData
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBranchOfficeJobData, BranchOfficeJobData
 req.product: Windows 10 or later.
 ---
 

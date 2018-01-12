@@ -1,6 +1,6 @@
 ---
-UID: NS.PORTCLS.__UNNAMED_STRUCT_0C40_5
-title: *PPCEVENT_ITEM
+UID: NS:portcls.__unnamed_struct_0c40_5
+title: PCEVENT_ITEM
 author: windows-driver-content
 description: The PCEVENT_ITEM structure is used to describe an event that is supported by a particular filter, pin, or node.
 old-location: audio\pcevent_item.htm
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: b91a7582-e146-4ded-a6b7-cb77850bfd2c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: *PPCEVENT_ITEM, *PPCEVENT_ITEM, PCEVENT_ITEM
+ms.keywords: PCEVENT_ITEM, PCEVENT_ITEM, *PPCEVENT_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,9 +31,10 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PCEVENT_ITEM, *PPCEVENT_ITEM
 ---
 
-# *PPCEVENT_ITEM structure
+# PCEVENT_ITEM structure
 
 
 
@@ -107,7 +108,7 @@ Pointer to the miniport driver's event-handler routine. This member is a functio
 </td>
 </tr>
 </table></span></div>
-When calling the <b>Handler</b> routine, the caller passes in a single call parameter, which is a pointer to a caller-allocated <a href="audio.pcevent_request">PCEVENT_REQUEST</a> structure.
+When calling the <b>Handler</b> routine, the caller passes in a single call parameter, which is a pointer to a caller-allocated <a href="..\portcls\ns-portcls-_pcevent_request.md">PCEVENT_REQUEST</a> structure.
 
 
 ## -remarks
@@ -134,7 +135,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.pcevent_request">PCEVENT_REQUEST</a>
+<a href="..\portcls\ns-portcls-_pcevent_request.md">PCEVENT_REQUEST</a>
 </dt>
 <dt>
 <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a>

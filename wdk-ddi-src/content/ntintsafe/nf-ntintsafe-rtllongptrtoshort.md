@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlLongPtrToShort
+UID: NF:ntintsafe.RtlLongPtrToShort
 title: RtlLongPtrToShort function
 author: windows-driver-content
 description: Converts a value of type LONG_PTR to a value of type SHORT.
@@ -7,7 +7,7 @@ old-location: kernel\rtllongptrtoshort.htm
 old-project: kernel
 ms.assetid: 934967A0-9CEF-4377-9505-EE4C4E9AF706
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlLongPtrToShort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlLongPtrToShort function

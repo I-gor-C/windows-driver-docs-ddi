@@ -1,14 +1,14 @@
 ---
-UID: NS.WWAN._WWAN_REGISTRATION_STATE
+UID: NS:wwan._WWAN_REGISTRATION_STATE
 title: _WWAN_REGISTRATION_STATE
 author: windows-driver-content
 description: The WWAN_REGISTRATION_STATE structure represents the registration state of the MB device.
 old-location: netvista\wwan_registration_state.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 72a41403-9e22-4212-955a-16e243f7af1d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WWAN_REGISTRATION_STATE, PWWAN_REGISTRATION_STATE, *PWWAN_REGISTRATION_STATE, WWAN_REGISTRATION_STATE
+ms.date: 1/8/2018
+ms.keywords: _WWAN_REGISTRATION_STATE, *PWWAN_REGISTRATION_STATE, WWAN_REGISTRATION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWWAN_REGISTRATION_STATE, WWAN_REGISTRATION_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -71,7 +72,7 @@ A network specific error, in the event of a registration failure. For more infor
 ### -field RegisterState
 
 The registration state of the device. For a list of defined values, see 
-     <a href="netvista.wwan_register_state">WWAN_REGISTER_STATE</a>.
+     <a href="..\wwan\ne-wwan-_wwan_register_state.md">WWAN_REGISTER_STATE</a>.
      
 
 The 
@@ -85,7 +86,7 @@ The
 ### -field RegisterMode
 
 The registration mode of the device. For a list of defined values, see 
-     <a href="netvista.wwan_register_mode">WWAN_REGISTER_MODE</a>.
+     <a href="..\wwan\ne-wwan-_wwan_register_mode.md">WWAN_REGISTER_MODE</a>.
 
 
 ### -field ProviderId
@@ -200,7 +201,7 @@ The current cellular class of the registered network. For networks that only sup
     <b>uNwError</b> member. If there is no network specific error or the network specific error is not known,
     miniport drivers should set this member to zero. The 
     "Status Indication Structure" section in 
-    <a href="netvista.mb_operational_semantics">MB Operational Semantics</a> shows the
+    <a href="https://msdn.microsoft.com/5f04b7fd-3df3-4efa-bb26-c7f4cd3c9ebd">MB Operational Semantics</a> shows the
     registration cause code failure values that are defined in the 
     <i>3GPP TS 24.008 Specification</i>.
 
@@ -272,18 +273,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wwan_register_state">WWAN_REGISTER_STATE</a>
+<a href="..\wwan\ne-wwan-_wwan_register_state.md">WWAN_REGISTER_STATE</a>
 </dt>
 <dt>
-<a href="netvista.wwan_register_mode">WWAN_REGISTER_MODE</a>
+<a href="..\wwan\ne-wwan-_wwan_register_mode.md">WWAN_REGISTER_MODE</a>
 </dt>
 <dt>
-<a href="netvista.ndis_wwan_registration_state">NDIS_WWAN_REGISTRATION_STATE</a>
+<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_registration_state.md">NDIS_WWAN_REGISTRATION_STATE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WWAN_REGISTRATION_STATE structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WWAN_REGISTRATION_STATE structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

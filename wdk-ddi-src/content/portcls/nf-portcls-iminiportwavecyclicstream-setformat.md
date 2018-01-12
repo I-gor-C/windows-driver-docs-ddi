@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveCyclicStream.SetFormat
+UID: NF:portcls.IMiniportWaveCyclicStream.SetFormat
 title: IMiniportWaveCyclicStream::SetFormat method
 author: windows-driver-content
 description: The SetFormat method sets the KS data format of the wave stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveCyclicStream::SetFormat method
@@ -63,7 +64,7 @@ Specifies the new format of the stream. This parameter is a pointer to a structu
 
 
 ## -remarks
-The wave stream's initial format is specified in the <a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a> call that creates the stream. Following stream creation, the <code>SetFormat</code> call can change the stream's format from its initial setting.
+The wave stream's initial format is specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a> call that creates the stream. Following stream creation, the <code>SetFormat</code> call can change the stream's format from its initial setting.
 
 For information about specifying wave stream formats, see <a href="https://msdn.microsoft.com/85aa74b4-8e33-49f4-82e7-561baa55c265">Audio Data Formats and Data Ranges</a>. 
 
@@ -113,7 +114,7 @@ PASSIVE_LEVEL
 <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavecyclic_newstream">IMiniportWaveCyclic::NewStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536723">IMiniportWaveCyclic::NewStream</a>
 </dt>
 </dl>
  

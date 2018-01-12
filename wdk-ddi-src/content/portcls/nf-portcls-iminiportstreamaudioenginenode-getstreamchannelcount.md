@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportStreamAudioEngineNode.GetStreamChannelCount
+UID: NF:portcls.IMiniportStreamAudioEngineNode.GetStreamChannelCount
 title: IMiniportStreamAudioEngineNode::GetStreamChannelCount method
 author: windows-driver-content
 description: Gets a count of the number of channels available for the stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportStreamAudioEngineNode::GetStreamChannelCount method

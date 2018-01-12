@@ -1,5 +1,5 @@
 ---
-UID: NF.kcom.KoCreateInstance
+UID: NF:kcom.KoCreateInstance
 title: KoCreateInstance function
 author: windows-driver-content
 description: The KoCreateInstance function creates an object of the class with the specified CLSID.
@@ -7,7 +7,7 @@ old-location: stream\kocreateinstance.htm
 old-project: stream
 ms.assetid: ee719cbe-0933-4adc-b5c7-62b66f2bf4e1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KoCreateInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: CONNECT_DATA, *PCONNECT_DATA
 ---
 
 # KoCreateInstance function

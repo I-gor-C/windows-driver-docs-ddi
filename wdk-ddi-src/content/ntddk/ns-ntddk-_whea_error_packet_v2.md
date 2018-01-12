@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_ERROR_PACKET_V2
+UID: NS:ntddk._WHEA_ERROR_PACKET_V2
 title: _WHEA_ERROR_PACKET_V2
 author: windows-driver-content
 description: The WHEA_ERROR_PACKET_V2 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V2 structure is supported in Windows 7 and later versions of Windows.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 10cfc201-d5c9-4887-997e-673ef6abb7db
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V2, PWHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET_V2
+ms.keywords: _WHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET
 ---
 
 # _WHEA_ERROR_PACKET_V2 structure
@@ -85,17 +86,17 @@ The size, in bytes, of the hardware error packet, including the hardware error d
 
 ### -field Flags
 
-A <a href="whea.whea_error_packet_flags">WHEA_ERROR_PACKET_FLAGS</a> union that specifies the format of the hardware error data. 
+A <a href="..\ntddk\ns-ntddk-_whea_error_packet_flags.md">WHEA_ERROR_PACKET_FLAGS</a> union that specifies the format of the hardware error data. 
 
 
 ### -field ErrorType
 
-A <a href="whea.whea_error_type">WHEA_ERROR_TYPE</a> value that specifies the type of hardware component that reported the hardware error.
+A <a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a> value that specifies the type of hardware component that reported the hardware error.
 
 
 ### -field ErrorSeverity
 
-A <a href="whea.whea_error_severity">WHEA_ERROR_SEVERITY</a> value that specifies the severity of the error condition.
+A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a> value that specifies the severity of the error condition.
 
 
 ### -field ErrorSourceId
@@ -105,7 +106,7 @@ The identifier of the error source that reported the hardware error.
 
 ### -field ErrorSourceType
 
-A <a href="whea.whea_error_source_type">WHEA_ERROR_SOURCE_TYPE</a> value that indicates the type of the error source that reported the hardware error.
+A <a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a> value that indicates the type of the error source that reported the hardware error.
 
 
 ### -field NotifyType
@@ -161,7 +162,7 @@ Reserved for system use.
 
 ### -field DataFormat
 
-A <a href="whea.whea_error_packet_data_format">WHEA_ERROR_PACKET_DATA_FORMAT</a> value  that indicates the format of the hardware error information that is contained in the data that is referenced through the <b>DataOffset </b>and <b>DataLength</b> members.
+A <a href="..\ntddk\ne-ntddk-_whea_error_packet_data_format.md">WHEA_ERROR_PACKET_DATA_FORMAT</a> value  that indicates the format of the hardware error information that is contained in the data that is referenced through the <b>DataOffset </b>and <b>DataLength</b> members.
 
 
 ### -field Reserved1
@@ -192,7 +193,7 @@ The length, in bytes, of the PSHED data buffer.
 ## -remarks
 The WHEA_ERROR_PACKET_V2 structure is used to report a hardware error in Windows 7 and later versions of Windows. If your <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">platform-specific hardware error driver (PSHED) plug-ins</a> run on any WHEA-compatible Windows version, You can inspect the version of WHEA_ERROR_PACKET by following these steps:
 
-If the <b>Signature</b> member for the WHEA_ERROR_PACKET equals WHEA_ERROR_PACKET_V1, the code is running on an early version of Windows, and the error packet is formatted as a <a href="whea.whea_error_packet_v1">WHEA_ERROR_PACKET_V1</a> structure.
+If the <b>Signature</b> member for the WHEA_ERROR_PACKET equals WHEA_ERROR_PACKET_V1, the code is running on an early version of Windows, and the error packet is formatted as a <a href="..\ntddk\ns-ntddk-_whea_error_packet_v1.md">WHEA_ERROR_PACKET_V1</a> structure.
 
 If the <b>Signature</b> member for the WHEA_ERROR_PACKET equals WHEA_ERROR_PACKET_V2, the code is running on a later version of Windows, and the error packet is formatted as a <b>WHEA_ERROR_PACKET_V2</b> structure.
 
@@ -200,7 +201,7 @@ An LLHEH passes a WHEA_ERROR_PACKET_V2 structure to the operating system when it
 
 The WHEA_ERROR_PACKET_V2 structure describes the error data that is contained in a hardware error packet error section of an <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a>. The hardware error data is referenced through the <b>DataOffset </b>and<b> DataLength </b>members. The error data's type is defined through the <b>DataFormat</b> member.
 
-In addition, <a href="whea.platform_specific_hardware_error_driver_plug_ins">platform-specific hardware error driver (PSHED) plug-ins</a> can add supplementary platform-specific error data that is referenced through the <b>PshedDataOffset</b> and <b>PshedDataLength</b> members. Both of these members must be set to 0 if PSHED data has not been added.
+In addition, <a href="https://msdn.microsoft.com/7c56a8e2-11e9-4ef0-83f2-50a17713bffa">platform-specific hardware error driver (PSHED) plug-ins</a> can add supplementary platform-specific error data that is referenced through the <b>PshedDataOffset</b> and <b>PshedDataLength</b> members. Both of these members must be set to 0 if PSHED data has not been added.
 
 
 ## -requirements
@@ -235,22 +236,22 @@ Header
 <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">Platform-Specific Hardware Error Driver (PSHED) Plug-Ins</a>
 </dt>
 <dt>
-<a href="whea.whea_error_packet_data_format">WHEA_ERROR_PACKET_DATA_FORMAT</a>
+<a href="..\ntddk\ne-ntddk-_whea_error_packet_data_format.md">WHEA_ERROR_PACKET_DATA_FORMAT</a>
 </dt>
 <dt>
-<a href="whea.whea_error_packet_flags">WHEA_ERROR_PACKET_FLAGS</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_packet_flags.md">WHEA_ERROR_PACKET_FLAGS</a>
 </dt>
 <dt>
-<a href="whea.whea_error_packet_v1">WHEA_ERROR_PACKET_V1</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_packet_v1.md">WHEA_ERROR_PACKET_V1</a>
 </dt>
 <dt>
-<a href="whea.whea_error_severity">WHEA_ERROR_SEVERITY</a>
+<a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>
 </dt>
 <dt>
-<a href="whea.whea_error_source_type">WHEA_ERROR_SOURCE_TYPE</a>
+<a href="..\ntddk\ne-ntddk-_whea_error_source_type.md">WHEA_ERROR_SOURCE_TYPE</a>
 </dt>
 <dt>
-<a href="whea.whea_error_type">WHEA_ERROR_TYPE</a>
+<a href="..\ntddk\ne-ntddk-_whea_error_type.md">WHEA_ERROR_TYPE</a>
 </dt>
 </dl>
  

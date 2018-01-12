@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsStreamPointerGetIrp
+UID: NF:ks.KsStreamPointerGetIrp
 title: KsStreamPointerGetIrp function
 author: windows-driver-content
 description: The KsStreamPointerGetIrp function returns the IRP associated with the frame that is referenced by the given stream pointer.
@@ -7,7 +7,7 @@ old-location: stream\ksstreampointergetirp.htm
 old-project: stream
 ms.assetid: 3ed4ed2f-66be-4429-b2d6-2d9d3f9bcf3e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsStreamPointerGetIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: 
 ---
 
 # KsStreamPointerGetIrp function
@@ -57,7 +58,7 @@ PIRP KsStreamPointerGetIrp(
 
 ### -param StreamPointer [in]
 
-A pointer to the <a href="stream.ksstream_pointer">KSSTREAM_POINTER</a> structure that references the frame for which the associated IRP is returned.
+A pointer to the <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure that references the frame for which the associated IRP is returned.
 
 
 ### -param FirstFrameInIrp [out, optional]
@@ -144,15 +145,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksstreampointerlock">KsStreamPointerLock</a>
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointergetmdl">KsStreamPointerGetMdl</a>
+<a href="..\ks\nf-ks-ksstreampointergetmdl.md">KsStreamPointerGetMdl</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerGetIrp function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerGetIrp function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

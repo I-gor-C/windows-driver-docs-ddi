@@ -1,14 +1,14 @@
 ---
-UID: NS.USBSCAN._CHANNEL_INFO
+UID: NS:usbscan._CHANNEL_INFO
 title: _CHANNEL_INFO
 author: windows-driver-content
 description: The CHANNEL_INFO structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_GET_CHANNEL_ALIGN_RQST.
 old-location: image\channel_info.htm
-old-project: Image
+old-project: image
 ms.assetid: 1f1cb952-9a63-461f-b70f-4cc41b8d88f8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _CHANNEL_INFO, *PCHANNEL_INFO, CHANNEL_INFO, PCHANNEL_INFO
+ms.date: 1/10/2018
+ms.keywords: _CHANNEL_INFO, *PCHANNEL_INFO, CHANNEL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCHANNEL_INFO, CHANNEL_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The CHANNEL_INFO structure is used as a parameter to <a href="base.deviceiocontrol">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_get_channel_align_rqst.md">IOCTL_GET_CHANNEL_ALIGN_RQST</a>.
+The CHANNEL_INFO structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_get_channel_align_rqst.md">IOCTL_GET_CHANNEL_ALIGN_RQST</a>.
 
 
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.WDFIO._WDF_IO_QUEUE_CONFIG
+UID: NS:wdfio._WDF_IO_QUEUE_CONFIG
 title: _WDF_IO_QUEUE_CONFIG
 author: windows-driver-content
 description: The WDF_IO_QUEUE_CONFIG structure contains configuration information for a framework queue object.
@@ -7,8 +7,8 @@ old-location: wdf\wdf_io_queue_config.htm
 old-project: wdf
 ms.assetid: aa8b64a7-eae9-444c-892f-841ca5a610cf
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _WDF_IO_QUEUE_CONFIG, PWDF_IO_QUEUE_CONFIG, WDF_IO_QUEUE_CONFIG, *PWDF_IO_QUEUE_CONFIG
+ms.date: 12/29/2017
+ms.keywords: _WDF_IO_QUEUE_CONFIG, WDF_IO_QUEUE_CONFIG, *PWDF_IO_QUEUE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL.
+req.typenames: WDF_IO_QUEUE_CONFIG, *PWDF_IO_QUEUE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -81,20 +82,20 @@ The length, in bytes, of this structure.
 
 ### -field DispatchType
 
-A <a href="wdf.wdf_io_queue_dispatch_type">WDF_IO_QUEUE_DISPATCH_TYPE</a> enumerator that identifies the request dispatching type for the queue.
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a> enumerator that identifies the request dispatching type for the queue.
 
 
 ### -field PowerManaged
 
-A <a href="wdf.wdf_tri_state">WDF_TRI_STATE</a>-typed value that, if set to <b>WdfTrue</b>, indicates that the framework handles power management of the queue. 
+A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed value that, if set to <b>WdfTrue</b>, indicates that the framework handles power management of the queue. 
 
 If set to <b>WdfFalse</b>, the driver must handle power management of the queue. 
 
-If set to <b>WdfDefault</b>, the framework handles power management for the queue unless the driver calls <a href="wdf.wdffdoinitsetfilter">WdfFdoInitSetFilter</a>. 
+If set to <b>WdfDefault</b>, the framework handles power management for the queue unless the driver calls <a href="..\wdffdo\nf-wdffdo-wdffdoinitsetfilter.md">WdfFdoInitSetFilter</a>. 
 
 Drivers above the <a href="wdf.power_policy_ownership">power policy owner</a> in the driver stack must not set the <b>PowerManaged</b> member to <b>WdfTrue</b>. 
 
-For more information about power-managed I/O queues, see <a href="wdf.power_management_for_i_o_queues">Power Management for I/O Queues</a>. 
+For more information about power-managed I/O queues, see <a href="https://msdn.microsoft.com/2e1bf9d2-615b-49b0-b677-f41b23c42eda">Power Management for I/O Queues</a>. 
 
 
 ### -field AllowZeroLengthRequests
@@ -169,14 +170,14 @@ For internal use only.  Set to NULL. This member is available in version 1.11 an
 
 
 ## -remarks
-The driver must initialize the <b>WDF_IO_QUEUE_CONFIG</b> structure by calling <a href="wdf.wdf_io_queue_config_init">WDF_IO_QUEUE_CONFIG_INIT</a> or <a href="wdf.wdf_io_queue_config_init_default_queue">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a>.
+The driver must initialize the <b>WDF_IO_QUEUE_CONFIG</b> structure by calling <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init.md">WDF_IO_QUEUE_CONFIG_INIT</a> or <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init_default_queue.md">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a>.
 
-The WDF_IO_QUEUE_CONFIG structure is used as an input parameter to <a href="wdf.wdfioqueuecreate">WdfIoQueueCreate</a>.
+The WDF_IO_QUEUE_CONFIG structure is used as an input parameter to <a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>.
 
 Beginning with version 1.9 of KMDF, drivers can use the <b>NumberOfPresentedRequests</b> member to specify the maximum number of I/O requests that the framework asynchronously delivers to a parallel I/O queue's request handlers. After the framework has delivered the specified number of I/O requests to the driver, it does not deliver more requests from the queue until the driver <a href="wdf.completing_i_o_requests">completes</a>, <a href="wdf.canceling_i_o_requests">cancels</a>, or <a href="wdf.requeuing_i_o_requests">requeues</a> at least one of the requests. 
 
 For parallel queues, 
-     <a href="wdf.wdf_io_queue_config_init">WDF_IO_QUEUE_CONFIG_INIT</a> and <a href="wdf.wdf_io_queue_config_init_default_queue">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a> set the <b>NumberOfPresentedRequests</b> member to its default value (-1), which indicates that the framework can deliver an unlimited number of I/O requests to the driver.
+     <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init.md">WDF_IO_QUEUE_CONFIG_INIT</a> and <a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init_default_queue.md">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a> set the <b>NumberOfPresentedRequests</b> member to its default value (-1), which indicates that the framework can deliver an unlimited number of I/O requests to the driver.
 
 
 ## -requirements
@@ -217,21 +218,21 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfioqueuecreate">WdfIoQueueCreate</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>
 </dt>
 <dt>
-<a href="wdf.wdf_io_queue_config_init">WDF_IO_QUEUE_CONFIG_INIT</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init.md">WDF_IO_QUEUE_CONFIG_INIT</a>
 </dt>
 <dt>
-<a href="wdf.wdf_io_queue_config_init_default_queue">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a>
+<a href="..\wdfio\nf-wdfio-wdf_io_queue_config_init_default_queue.md">WDF_IO_QUEUE_CONFIG_INIT_DEFAULT_QUEUE</a>
 </dt>
 <dt>
-<a href="wdf.wdf_io_queue_dispatch_type">WDF_IO_QUEUE_DISPATCH_TYPE</a>
+<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_CONFIG structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_QUEUE_CONFIG structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

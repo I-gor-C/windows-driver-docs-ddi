@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcInitializeAdapterDriver
+UID: NF:portcls.PcInitializeAdapterDriver
 title: PcInitializeAdapterDriver function
 author: windows-driver-content
 description: The PcInitializeAdapterDriver function binds an adapter driver to the PortCls system driver.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcInitializeAdapterDriver function
@@ -57,7 +58,7 @@ NTSTATUS PcInitializeAdapterDriver(
 
 ### -param DriverObject [in]
 
-Pointer to the driver object, which is a system structure of type <a href="kernel.driver_object">DRIVER_OBJECT</a>. This pointer is passed as a parameter to the adapter's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> function.
+Pointer to the driver object, which is a system structure of type <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>. This pointer is passed as a parameter to the adapter's <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> function.
 
 
 ### -param RegistryPathName [in]
@@ -67,7 +68,7 @@ Specifies the registry path name that is to be passed as a parameter to the adap
 
 ### -param AddDevice [in]
 
-Pointer to the adapter's <a href="kernel.adddevice">AddDevice</a> function. This is a pointer of type PDRIVER_ADD_DEVICE, which is defined in ntddk.h to be:
+Pointer to the adapter's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> function. This is a pointer of type PDRIVER_ADD_DEVICE, which is defined in ntddk.h to be:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -89,7 +90,7 @@ Pointer to the adapter's <a href="kernel.adddevice">AddDevice</a> function. This
 
 
 ## -remarks
-The <a href="kernel.adddevice">AddDevice</a> handler supplied in the call to this function should call <a href="audio.pcaddadapterdevice">PcAddAdapterDevice</a>. For more information, see <a href="https://msdn.microsoft.com/bf88b9de-f4c4-4f9c-9355-603789b9ad3d">Startup Sequence</a>.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> handler supplied in the call to this function should call <a href="..\portcls\nf-portcls-pcaddadapterdevice.md">PcAddAdapterDevice</a>. For more information, see <a href="https://msdn.microsoft.com/bf88b9de-f4c4-4f9c-9355-603789b9ad3d">Startup Sequence</a>.
 
 The <b>PcInitializeAdapterDriver</b> function loads pointers to handlers for the following IRPs into the driver object:
 
@@ -117,7 +118,7 @@ IRP_MJ_WRITE
 
 PortCls uses its own internal handlers for the CREATE, PNP, POWER, and SYSTEM_CONTROL IRPs above. It uses the default KS handlers for the other seven IRPs.
 
-An adapter driver that overwrites one or more of the pointers above with a pointer to its own IRP handler can call <a href="audio.pcdispatchirp">PcDispatchIrp</a> from within its handler routine in order to forward the IRP to PortCls. For a code example, see the SB16 sample audio driver in the Microsoft Windows Driver Kit (WDK).
+An adapter driver that overwrites one or more of the pointers above with a pointer to its own IRP handler can call <a href="..\portcls\nf-portcls-pcdispatchirp.md">PcDispatchIrp</a> from within its handler routine in order to forward the IRP to PortCls. For a code example, see the SB16 sample audio driver in the Microsoft Windows Driver Kit (WDK).
 
 
 ## -requirements
@@ -180,19 +181,19 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.driver_object">DRIVER_OBJECT</a>
+<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 </dt>
 <dt>
 <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a>
 </dt>
 <dt>
-<a href="kernel.adddevice">AddDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
 </dt>
 <dt>
-<a href="audio.pcaddadapterdevice">PcAddAdapterDevice</a>
+<a href="..\portcls\nf-portcls-pcaddadapterdevice.md">PcAddAdapterDevice</a>
 </dt>
 <dt>
-<a href="audio.pcdispatchirp">PcDispatchIrp</a>
+<a href="..\portcls\nf-portcls-pcdispatchirp.md">PcDispatchIrp</a>
 </dt>
 </dl>
  

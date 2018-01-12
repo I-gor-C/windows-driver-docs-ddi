@@ -1,5 +1,5 @@
 ---
-UID: NI.ehstorioctl.IOCTL_EHSTOR_DEVICE_SILO_COMMAND
+UID: NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_SILO_COMMAND
 title: IOCTL_EHSTOR_DEVICE_SILO_COMMAND
 author: windows-driver-content
 description: This IOCTL issues a silo command to the targeted silo on the device. Both input and output data are structured according to the definition of silo commands, as found in the IEEE 1667 specification document.
@@ -7,7 +7,7 @@ old-location: storage\ioctl_ehstor_device_silo_command.htm
 old-project: storage
 ms.assetid: 3258FA16-E1FE-4CBF-8C87-0C7A8B2A7EBF
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: _PDO_TYPE, PDO_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PDO_TYPE
 ---
 
 # IOCTL_EHSTOR_DEVICE_SILO_COMMAND IOCTL
@@ -45,11 +46,11 @@ This IOCTL issues a silo command to the targeted silo on the device. Both input 
 ## -ioctlparameters
 
 ### -input-buffer
-The input buffer at Irp-&gt;AssociatedIrp.SystemBuffer must contain a structure of type <a href="storage.silo_command">SILO_COMMAND</a>.
+The input buffer at Irp-&gt;AssociatedIrp.SystemBuffer must contain a structure of type <a href="..\ehstorioctl\ns-ehstorioctl-tagsilo_command.md">SILO_COMMAND</a>.
 
 
 ### -input-buffer-length
-The length of a <a href="storage.silo_command">SILO_COMMAND</a> structure.
+The length of a <a href="..\ehstorioctl\ns-ehstorioctl-tagsilo_command.md">SILO_COMMAND</a> structure.
 
 
 ### -output-buffer

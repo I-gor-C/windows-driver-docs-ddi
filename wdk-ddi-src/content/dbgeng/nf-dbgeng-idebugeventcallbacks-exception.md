@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugEventCallbacks.Exception
+UID: NF:dbgeng.IDebugEventCallbacks.Exception
 title: IDebugEventCallbacks::Exception method
 author: windows-driver-content
 description: The Exception callback method is called by the engine when an exceptiondebugging event occurs in the target.
 old-location: debugger\idebugeventcallbacks_exception.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 93f915ab-1f9e-453c-b76e-8260eecd7298
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugEventCallbacks, IDebugEventCallbacks::Exception, Exception
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugEventCallbacks::Exception method
@@ -69,7 +70,7 @@ This method returns a <a href="https://msdn.microsoft.com/library/windows/hardwa
 
 
 ## -remarks
-This method is only called by the engine if the DEBUG_EVENT_EXCEPTION flag is set in the mask returned by <a href="debugger.idebugeventcallbacks_getinterestmask">IDebugEventCallbacks::GetInterestMask</a>.
+This method is only called by the engine if the DEBUG_EVENT_EXCEPTION flag is set in the mask returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff550737">IDebugEventCallbacks::GetInterestMask</a>.
 
 Because the structure that <i>Exception</i> points to might be deleted after this method returns, implementations of <b>IDebugEventCallbacks</b> should not access this structure after returning.
 

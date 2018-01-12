@@ -1,5 +1,5 @@
 ---
-UID: NS.ISCSICFG._MSISCSI_RADIUSCONFIG
+UID: NS:iscsicfg._MSiSCSI_RADIUSConfig
 title: _MSiSCSI_RADIUSConfig
 author: windows-driver-content
 description: The MSiSCSI_RADIUSConfig structure provides information that the initiator requires to use the remote authentication dial-in user service (RADIUS).
@@ -7,8 +7,8 @@ old-location: storage\msiscsi_radiusconfig.htm
 old-project: storage
 ms.assetid: 6f8be86e-2729-4aa9-982d-df323f05cf1c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MSiSCSI_RADIUSConfig, *PMSiSCSI_RADIUSConfig, MSiSCSI_RADIUSConfig, PMSiSCSI_RADIUSConfig
+ms.date: 1/10/2018
+ms.keywords: _MSiSCSI_RADIUSConfig, MSiSCSI_RADIUSConfig, *PMSiSCSI_RADIUSConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MSiSCSI_RADIUSConfig, *PMSiSCSI_RADIUSConfig
 ---
 
 # _MSiSCSI_RADIUSConfig structure
@@ -70,7 +71,7 @@ The size, in bytes, of shared secret for use with RADIUS servers.
 
 ### -field RADIUSServer
 
-A <a href="storage.iscsi_ip_address">ISCSI_IP_Address</a> structure that specifies a fixed address for the RADIUS server. The ISCSI_IP_Address structure defines the IP address in a way that is independent of the version of the IP protocol in use. 
+A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that specifies a fixed address for the RADIUS server. The ISCSI_IP_Address structure defines the IP address in a way that is independent of the version of the IP protocol in use. 
 
 
 ### -field BackupRADIUSServer
@@ -91,7 +92,7 @@ A variable-length array that contains a shared secret. The initiator uses this s
 ## -remarks
 Initiators use RADIUS servers to perform authentication during the challenge handshake of CHAP.
 
-The WMI tool suite automatically generates a declaration of the MSiSCSI_RADIUSConfig structure when it compiles the <a href="storage.msiscsi_radiusconfig_wmi_class">MSiSCSI_RADIUSConfig WMI Class</a> in <i>Config.mof</i>. 
+The WMI tool suite automatically generates a declaration of the MSiSCSI_RADIUSConfig structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563114">MSiSCSI_RADIUSConfig WMI Class</a> in <i>Config.mof</i>. 
 
 Initiators that support using RADIUS for CHAP authentication must implement the MSiSCSI_RADIUSConfig class.
 
@@ -118,15 +119,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.iscsi_ip_address">ISCSI_IP_Address</a>
+<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
 </dt>
 <dt>
-<a href="storage.msiscsi_radiusconfig_wmi_class">MSiSCSI_RADIUSConfig WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563114">MSiSCSI_RADIUSConfig WMI Class</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_RADIUSConfig structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MSiSCSI_RADIUSConfig structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

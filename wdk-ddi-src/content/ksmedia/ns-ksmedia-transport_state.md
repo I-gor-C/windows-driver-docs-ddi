@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TRANSPORT_STATE
+UID: NS:ksmedia.TRANSPORT_STATE
 title: TRANSPORT_STATE
 author: windows-driver-content
 description: The TRANSPORT_STATE structure
@@ -7,8 +7,8 @@ old-location: stream\transport_state.htm
 old-project: stream
 ms.assetid: 373fb91d-e469-4136-b2e3-bf57016c0fd6
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: TRANSPORT_STATE, *PTRANSPORT_STATE, PTRANSPORT_STATE, TRANSPORT_STATE
+ms.date: 1/9/2018
+ms.keywords: TRANSPORT_STATE, *PTRANSPORT_STATE, TRANSPORT_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PTRANSPORT_STATE, TRANSPORT_STATE
 ---
 
 # TRANSPORT_STATE structure

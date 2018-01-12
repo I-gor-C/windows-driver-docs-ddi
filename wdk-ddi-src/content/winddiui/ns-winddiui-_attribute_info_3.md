@@ -1,5 +1,5 @@
 ---
-UID: NS.WINDDIUI._ATTRIBUTE_INFO_3
+UID: NS:winddiui._ATTRIBUTE_INFO_3
 title: _ATTRIBUTE_INFO_3
 author: windows-driver-content
 description: The ATTRIBUTE_INFO_3 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied.
@@ -7,8 +7,8 @@ old-location: print\attribute_info_3.htm
 old-project: print
 ms.assetid: a9299c25-4210-4161-bfd6-8a13113b93e1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _ATTRIBUTE_INFO_3, ATTRIBUTE_INFO_3, *PATTRIBUTE_INFO_3, PATTRIBUTE_INFO_3
+ms.date: 1/8/2018
+ms.keywords: _ATTRIBUTE_INFO_3, *PATTRIBUTE_INFO_3, ATTRIBUTE_INFO_3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PATTRIBUTE_INFO_3, ATTRIBUTE_INFO_3
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The ATTRIBUTE_INFO_3 structure is used as a parameter for a printer interface DLL's <a href="print.drvqueryjobattributes">DrvQueryJobAttributes</a> function. All member values are function-supplied.
+The ATTRIBUTE_INFO_3 structure is used as a parameter for a printer interface DLL's <a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a> function. All member values are function-supplied.
 
 
 
@@ -199,7 +200,7 @@ The print processor should not use monochrome color optimization.
 
 ### -field dmPrintQuality
 
-Value to be used instead of the <b>dmPrintQuality</b> member of the print job's <a href="display.devmodew">DEVMODEW</a> structure, if the COLOR_OPTIMIZATION flag is set in <b>dwColorOptimization</b>.
+Value to be used instead of the <b>dmPrintQuality</b> member of the print job's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure, if the COLOR_OPTIMIZATION flag is set in <b>dwColorOptimization</b>.
 
 
 ### -field dmYResolution
@@ -208,13 +209,13 @@ Value to be used instead of the <b>dmYResolution</b> member of the print job's D
 
 
 ## -remarks
-If the <b>dmPrintQuality</b> member of a print job's DEVMODEW structure is a negative value, such as DMRES_HIGH, and if monochrome color optimization is enabled, then switching between color and monochrome could result in different resolutions being used. This is because DMRES_HIGH might be assigned to different DPI values for color and monochrome rendering. (For Unidrv-supported devices, this assignment occurs in the printer's <a href="wdkgloss.g#wdkgloss.generic_printer_description__gpd_#wdkgloss.generic_printer_description__gpd_"><i>GPD</i></a> file.) To ensure a consistent resolution throughout the print job, the driver can specify positive <b>dmPrintQuality</b> and <b>dmYResolution</b> values (representing a specific DPI resolution) to override the equivalent <a href="display.devmodew">DEVMODEW</a> values. 
+If the <b>dmPrintQuality</b> member of a print job's DEVMODEW structure is a negative value, such as DMRES_HIGH, and if monochrome color optimization is enabled, then switching between color and monochrome could result in different resolutions being used. This is because DMRES_HIGH might be assigned to different DPI values for color and monochrome rendering. (For Unidrv-supported devices, this assignment occurs in the printer's <a href="wdkgloss.g#wdkgloss.generic_printer_description__gpd_#wdkgloss.generic_printer_description__gpd_"><i>GPD</i></a> file.) To ensure a consistent resolution throughout the print job, the driver can specify positive <b>dmPrintQuality</b> and <b>dmYResolution</b> values (representing a specific DPI resolution) to override the equivalent <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> values. 
 
 The EMF print processor uses the flag specified for <b>dwColorOptimization</b> to determine whether to request GDI to perform monochrome color optimization. If monochrome color optimization is enabled, the print job can be switched between monochrome and color rendering as appropriate.
 
-If you are creating a Unidrv rendering plug-in to generate color watermarks, note that when the <b>dwColorOptimization</b> member is set to COLOR_OPTIMIZATION, color watermarks are printed in black and white when they are printed on black-and-white documents. To ensure that color watermarks print correctly with color and black-and-white documents, disable color optimization. Color optimization also can be controlled by the Unidrv *<b>ChangeColorModeOnDoc?</b> color attribute (see <a href="https://msdn.microsoft.com/c8de0186-9cf5-43e5-81e7-33351a34c13c">Color Attributes</a>), and by the <a href="print.gdiendpageemf">GdiEndPageEMF</a> function. 
+If you are creating a Unidrv rendering plug-in to generate color watermarks, note that when the <b>dwColorOptimization</b> member is set to COLOR_OPTIMIZATION, color watermarks are printed in black and white when they are printed on black-and-white documents. To ensure that color watermarks print correctly with color and black-and-white documents, disable color optimization. Color optimization also can be controlled by the Unidrv *<b>ChangeColorModeOnDoc?</b> color attribute (see <a href="https://msdn.microsoft.com/c8de0186-9cf5-43e5-81e7-33351a34c13c">Color Attributes</a>), and by the <a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a> function. 
 
-For information about other ATTRIBUTE_INFO_3 structure members, see <a href="print.attribute_info_1">ATTRIBUTE_INFO_1</a> and <a href="print.attribute_info_2">ATTRIBUTE_INFO_2</a>.
+For information about other ATTRIBUTE_INFO_3 structure members, see <a href="..\winddiui\ns-winddiui-_attribute_info_1.md">ATTRIBUTE_INFO_1</a> and <a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>.
 
 
 ## -requirements
@@ -235,24 +236,24 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.attribute_info_2">ATTRIBUTE_INFO_2</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>
 </dt>
 <dt>
-<a href="print.attribute_info_4">ATTRIBUTE_INFO_4</a>
+<a href="..\winddiui\ns-winddiui-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
 </dt>
 <dt>
-<a href="print.drvqueryjobattributes">DrvQueryJobAttributes</a>
+<a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
 </dt>
 <dt>
-<a href="print.gdiendpageemf">GdiEndPageEMF</a>
+<a href="..\winppi\nf-winppi-gdiendpageemf.md">GdiEndPageEMF</a>
 </dt>
 <dt>
-<a href="print.getjobattributesex">GetJobAttributesEx</a>
+<a href="..\winsplp\nf-winsplp-getjobattributesex.md">GetJobAttributesEx</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20ATTRIBUTE_INFO_3 structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20ATTRIBUTE_INFO_3 structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILTERMINALCAPABILITYINFO
+UID: NS:ntddrilapitypes.RILTERMINALCAPABILITYINFO
 title: RILTERMINALCAPABILITYINFO
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilterminalcapabilityinfo.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e6ad67bf-cd16-469e-af49-6a640a4319c0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILTERMINALCAPABILITYINFO, RILTERMINALCAPABILITYINFO, LPRILTERMINALCAPABILITYINFO, *LPRILTERMINALCAPABILITYINFO
+ms.date: 1/8/2018
+ms.keywords: RILTERMINALCAPABILITYINFO, *LPRILTERMINALCAPABILITYINFO, RILTERMINALCAPABILITYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILTERMINALCAPABILITYINFO, RILTERMINALCAPABILITYINFO
 ---
 
 # RILTERMINALCAPABILITYINFO structure

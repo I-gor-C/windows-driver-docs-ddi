@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_GEOFENCES_TRACKINGSTATUS_DATA
+UID: NS:gnssdriver.GNSS_GEOFENCES_TRACKINGSTATUS_DATA
 title: GNSS_GEOFENCES_TRACKINGSTATUS_DATA
 author: windows-driver-content
 description: This structure is used by the GNSS engine to notify of any changes in the tracking status while tracking a set of previously created geofences.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 65E59305-B1D9-4255-926A-A72F3B4887AF
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_GEOFENCES_TRACKINGSTATUS_DATA, GNSS_GEOFENCES_TRACKINGSTATUS_DATA, *PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, PGNSS_GEOFENCES_TRACKINGSTATUS_DATA
+ms.keywords: GNSS_GEOFENCES_TRACKINGSTATUS_DATA, GNSS_GEOFENCES_TRACKINGSTATUS_DATA, *PGNSS_GEOFENCES_TRACKINGSTATUS_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_GEOFENCES_TRACKINGSTATUS_DATA, *PGNSS_GEOFENCES_TRACKINGSTATUS_DATA
 ---
 
 # GNSS_GEOFENCES_TRACKINGSTATUS_DATA structure

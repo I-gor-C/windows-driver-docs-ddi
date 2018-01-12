@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsGenerateThermalEvent
+UID: NF:ks.KsGenerateThermalEvent
 title: KsGenerateThermalEvent function
 author: windows-driver-content
 description: This function is used by clients (miniport drivers) that do not want to subscribe to the thermal manager, but want to do their own thermal management.
@@ -7,7 +7,7 @@ old-location: stream\ksgeneratethermalevent.htm
 old-project: stream
 ms.assetid: CE450017-1792-4B69-8289-902396D0D7B1
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGenerateThermalEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsGenerateThermalEvent function
@@ -58,7 +59,7 @@ void KSDDKAPI NTSTATUS NTAPI KsGenerateThermalEvent(
 
 ### -param Object [in]
 
-Can be  <a href="stream.ksdevice">KSDEVICE</a>, <a href="stream.ksfilter">KSFILTER</a>, or <a href="stream.kspin">KSPIN</a>. Depending on the object passed, the thermal notification is sent device-wide, filter-wide, or to the pin.
+Can be  <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>, <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>, or <a href="..\ks\ns-ks-_kspin.md">KSPIN</a>. Depending on the object passed, the thermal notification is sent device-wide, filter-wide, or to the pin.
 
 
 ### -param Value [in]

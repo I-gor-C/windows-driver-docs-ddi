@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMStartDoc
+UID: NF:printoem.OEMStartDoc
 title: OEMStartDoc function
 author: windows-driver-content
 description: The OEMStartDoc function is called by GDI when it is ready to start sending a document to the driver for rendering.
@@ -7,7 +7,7 @@ old-location: print\oemstartdoc.htm
 old-project: print
 ms.assetid: 67580632-ff9a-4d29-8e4e-c21f04aa4b47
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMStartDoc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

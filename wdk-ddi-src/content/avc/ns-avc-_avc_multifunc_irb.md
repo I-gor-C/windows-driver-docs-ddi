@@ -1,5 +1,5 @@
 ---
-UID: NS.AVC._AVC_MULTIFUNC_IRB
+UID: NS:avc._AVC_MULTIFUNC_IRB
 title: _AVC_MULTIFUNC_IRB
 author: windows-driver-content
 description: The AVC_MULTIFUNC_IRB structure contains other AV/C related structures in a union.
@@ -7,8 +7,8 @@ old-location: stream\avc_multifunc_irb.htm
 old-project: stream
 ms.assetid: cd8090b1-47d7-4d82-86b3-757b0642c5fe
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _AVC_MULTIFUNC_IRB, PAVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB, AVC_MULTIFUNC_IRB
+ms.date: 1/9/2018
+ms.keywords: _AVC_MULTIFUNC_IRB, AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: AVC_MULTIFUNC_IRB, *PAVC_MULTIFUNC_IRB
 ---
 
 # _AVC_MULTIFUNC_IRB structure
@@ -142,34 +143,34 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.avc_pin_count">AVC_PIN_COUNT</a>
+<a href="..\avc\ns-avc-_avc_pin_count.md">AVC_PIN_COUNT</a>
 </dt>
 <dt>
-<a href="stream.avc_pin_descriptor">AVC_PIN_DESCRIPTOR</a>
+<a href="..\avc\ns-avc-_avc_pin_descriptor.md">AVC_PIN_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="stream.avc_preconnect_info">AVC_PRECONNECT_INFO</a>
+<a href="..\avc\ns-avc-_avc_preconnect_info.md">AVC_PRECONNECT_INFO</a>
 </dt>
 <dt>
-<a href="stream.avc_setconnect_info">AVC_SETCONNECT_INFO</a>
+<a href="..\avc\ns-avc-_avc_setconnect_info.md">AVC_SETCONNECT_INFO</a>
 </dt>
 <dt>
-<a href="stream.avc_pin_id">AVC_PIN_ID</a>
+<a href="..\avc\ns-avc-_avc_pin_id.md">AVC_PIN_ID</a>
 </dt>
 <dt>
-<a href="stream.avc_ext_plug_counts">AVC_EXT_PLUG_COUNTS</a>
+<a href="..\avc\ns-avc-_avc_ext_plug_counts.md">AVC_EXT_PLUG_COUNTS</a>
 </dt>
 <dt>
-<a href="stream.avc_unique_id">AVC_UNIQUE_ID</a>
+<a href="..\avc\ns-avc-_avc_unique_id.md">AVC_UNIQUE_ID</a>
 </dt>
 <dt>
-<a href="stream.avc_peer_do_locator">AVC_PEER_DO_LOCATOR</a>
+<a href="..\avc\ns-avc-_avc_peer_do_locator.md">AVC_PEER_DO_LOCATOR</a>
 </dt>
 <dt>
-<a href="stream.avc_peer_do_list">AVC_PEER_DO_LIST</a>
+<a href="..\avc\ns-avc-_avc_peer_do_list.md">AVC_PEER_DO_LIST</a>
 </dt>
 <dt>
-<a href="stream.avc_subunit_info_block">AVC_SUBUNIT_INFO_BLOCK</a>
+<a href="..\avc\ns-avc-_avc_subunit_info_block.md">AVC_SUBUNIT_INFO_BLOCK</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554158">AVC_FUNCTION_GET_PIN_COUNT</a>
@@ -212,5 +213,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_MULTIFUNC_IRB structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20AVC_MULTIFUNC_IRB structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

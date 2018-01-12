@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._GET_LOCAL_HOST_INFO5
+UID: NS:1394._GET_LOCAL_HOST_INFO5
 title: _GET_LOCAL_HOST_INFO5
 author: windows-driver-content
 description: The GET_LOCAL_HOST_INFO5 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel = GET_HOST_CONFIG_ROM.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: a0cdf40e-627e-4d39-9c7b-6defcc2f29c3
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GET_LOCAL_HOST_INFO5, GET_LOCAL_HOST_INFO5, *PGET_LOCAL_HOST_INFO5, PGET_LOCAL_HOST_INFO5
+ms.keywords: _GET_LOCAL_HOST_INFO5, GET_LOCAL_HOST_INFO5, *PGET_LOCAL_HOST_INFO5
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GET_LOCAL_HOST_INFO5, *PGET_LOCAL_HOST_INFO5
 ---
 
 # _GET_LOCAL_HOST_INFO5 structure

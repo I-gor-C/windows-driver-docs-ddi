@@ -1,5 +1,5 @@
 ---
-UID: NS.ACPIIOCT._ACPI_EVAL_INPUT_BUFFER_V2
+UID: NS:acpiioct._ACPI_EVAL_INPUT_BUFFER_V2
 title: _ACPI_EVAL_INPUT_BUFFER_V2
 author: windows-driver-content
 description: This topic describes the ACPI_EVAL_INPUT_BUFFER_V2 structure.
@@ -7,8 +7,8 @@ old-location: acpi\acpi_eval_input_buffer_v2.htm
 old-project: acpi
 ms.assetid: EDB4862E-FAD4-4AB2-BF0C-CF4C6342F0E4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _ACPI_EVAL_INPUT_BUFFER_V2, *PACPI_EVAL_INPUT_BUFFER_V2, PACPI_EVAL_INPUT_BUFFER_V2, ACPI_EVAL_INPUT_BUFFER_V2
+ms.date: 12/31/2017
+ms.keywords: _ACPI_EVAL_INPUT_BUFFER_V2, ACPI_EVAL_INPUT_BUFFER_V2, *PACPI_EVAL_INPUT_BUFFER_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ACPI_EVAL_INPUT_BUFFER_V2, *PACPI_EVAL_INPUT_BUFFER_V2
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_V2 structure

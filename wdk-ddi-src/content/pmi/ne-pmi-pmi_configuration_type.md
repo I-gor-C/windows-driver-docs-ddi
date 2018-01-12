@@ -1,5 +1,5 @@
 ---
-UID: NE.pmi.PMI_CONFIGURATION_TYPE
+UID: NE:pmi.PMI_CONFIGURATION_TYPE
 title: PMI_CONFIGURATION_TYPE
 author: windows-driver-content
 description: The PMI_CONFIGURATION_TYPE enumeration defines the type of PMI configuration data that is referenced by the Configuration member of the PMI_CONFIGURATION structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PMI_CONFIGURATION_TYPE
 ---
 
 # PMI_CONFIGURATION_TYPE enumeration
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The PMI_CONFIGURATION_TYPE enumeration defines the type of PMI configuration data that is referenced by the <b>Configuration</b> member of the <a href="powermeter.pmi_configuration">PMI_CONFIGURATION</a> structure. This enumeration is also used to specify the type of <a href="powermeter.pmi_capabilities">PMI_CAPABILITIES</a> structure to return through an <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> I/O control (IOCTL) request.
+The PMI_CONFIGURATION_TYPE enumeration defines the type of PMI configuration data that is referenced by the <b>Configuration</b> member of the <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a> structure. This enumeration is also used to specify the type of <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> structure to return through an <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> I/O control (IOCTL) request.
 
 
 
@@ -58,17 +59,17 @@ typedef enum  {
 
 ### -field PmiMeasurementConfiguration
 
-The PMI configuration data, formatted as a <a href="powermeter.pmi_measurement_configuration">PMI_MEASUREMENT_CONFIGURATION</a> structure, contains information about the measurement configuration of the power meter.
+The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a> structure, contains information about the measurement configuration of the power meter.
 
 
 ### -field PmiBudgetingConfiguration
 
-The PMI configuration data, formatted as a <a href="powermeter.pmi_budgeting_configuration">PMI_BUDGETING_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.
+The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.
 
 
 ### -field PmiThresholdConfiguration
 
-The PMI configuration data, formatted as a <a href="powermeter.pmi_threshold_configuration">PMI_THRESHOLD_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.
+The PMI configuration data, formatted as a <a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGURATION</a> structure, contains information about the budgeting configuration of the power meter.
 
 
 ### -field PmiConfigurationMax
@@ -77,7 +78,7 @@ The maximum number of PMI configuration structures.
 
 
 ## -remarks
-The <b>ConfigurationType</b> member of the <a href="powermeter.pmi_configuration">PMI_CONFIGURATION</a> structure contains information about the type of PMI configuration data that is referenced by the <b>Configuration</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> IOCTL request and is passed in the input buffer for an <a href="..\pmi\ni-pmi-ioctl_pmi_set_configuration.md">IOCTL_PMI_SET_CONFIGURATION</a> IOCTL request.
+The <b>ConfigurationType</b> member of the <a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a> structure contains information about the type of PMI configuration data that is referenced by the <b>Configuration</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_configuration.md">IOCTL_PMI_GET_CONFIGURATION</a> IOCTL request and is passed in the input buffer for an <a href="..\pmi\ni-pmi-ioctl_pmi_set_configuration.md">IOCTL_PMI_SET_CONFIGURATION</a> IOCTL request.
 
 
 ## -requirements
@@ -114,16 +115,16 @@ Header
 <a href="..\pmi\ni-pmi-ioctl_pmi_set_configuration.md">IOCTL_PMI_SET_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_budgeting_configuration">PMI_BUDGETING_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_configuration">PMI_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi-_pmi_configuration.md">PMI_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_measurement_configuration">PMI_MEASUREMENT_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi-_pmi_measurement_configuration.md">PMI_MEASUREMENT_CONFIGURATION</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_threshold_configuration">PMI_THRESHOLD_CONFIGURATION</a>
+<a href="..\pmi\ns-pmi-_pmi_threshold_configuration.md">PMI_THRESHOLD_CONFIGURATION</a>
 </dt>
 </dl>
  

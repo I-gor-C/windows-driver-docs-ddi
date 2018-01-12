@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILMESSAGEINFOPARAMMASK
+UID: NE:ntddrilapitypes.RILMESSAGEINFOPARAMMASK
 title: RILMESSAGEINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmessageinfoparammask.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 70e0f22c-14d4-43e6-bfb6-66523706ba52
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILMESSAGEINFOPARAMMASK, RILMESSAGEINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILMESSAGEINFOPARAMMASK
 ---
 
 # RILMESSAGEINFOPARAMMASK enumeration

@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsFreeCloneNetBufferList0
+UID: NF:fwpsk.FwpsFreeCloneNetBufferList0
 title: FwpsFreeCloneNetBufferList0 function
 author: windows-driver-content
 description: The FwpsFreeCloneNetBufferList0 function frees a clone NET_BUFFER_LIST structure that was previously allocated by a call to the FwpsAllocateCloneNetBufferList0 function.Note  FwpsFreeCloneNetBufferList0 is a specific version of FwpsFreeCloneNetBufferList. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwpsfreeclonenetbufferlist0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0d0dea63-de0d-4421-b123-ce31ac6af1d9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpsFreeCloneNetBufferList0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsFreeCloneNetBufferList0 function
@@ -40,9 +41,9 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 The 
   <b>FwpsFreeCloneNetBufferList0</b> function frees a clone 
-  <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure that was previously
+  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that was previously
   allocated by a call to the 
-  <a href="netvista.fwpsallocateclonenetbufferlist0">
+  <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
   FwpsAllocateCloneNetBufferList0</a> function.
 
 
@@ -62,7 +63,7 @@ void NTAPI FwpsFreeCloneNetBufferList0(
 ### -param netBufferList [in, out]
 
 A pointer to the clone 
-     <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure that is being
+     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that is being
      freed.
 
 
@@ -79,9 +80,9 @@ None.
 ## -remarks
 A callout driver calls the 
     <b>FwpsFreeCloneNetBufferList0</b> function to free a clone 
-    <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure that was
+    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that was
     previously allocated by a call to the 
-    <a href="netvista.fwpsallocateclonenetbufferlist0">FwpsAllocateCloneNetBufferList0</a> function.
+    <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">FwpsAllocateCloneNetBufferList0</a> function.
 
 
 ## -requirements
@@ -144,16 +145,16 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwpsallocateclonenetbufferlist0">
+<a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
    FwpsAllocateCloneNetBufferList0</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsFreeCloneNetBufferList0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsFreeCloneNetBufferList0 function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

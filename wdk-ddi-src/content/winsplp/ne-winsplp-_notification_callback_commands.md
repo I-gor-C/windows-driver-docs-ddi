@@ -1,5 +1,5 @@
 ---
-UID: NE.winsplp._NOTIFICATION_CALLBACK_COMMANDS
+UID: NE:winsplp._NOTIFICATION_CALLBACK_COMMANDS
 title: _NOTIFICATION_CALLBACK_COMMANDS
 author: windows-driver-content
 description: .
@@ -7,7 +7,7 @@ old-location: print\notification_callback_commands.htm
 old-project: print
 ms.assetid: D93D09AE-B0B8-4682-BBBA-1EEC952A733D
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _NOTIFICATION_CALLBACK_COMMANDS, NOTIFICATION_CALLBACK_COMMANDS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: NOTIFICATION_CALLBACK_COMMANDS
 req.product: Windows 10 or later.
 ---
 

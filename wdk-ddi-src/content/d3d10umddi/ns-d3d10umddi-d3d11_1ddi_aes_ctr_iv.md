@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1DDI_AES_CTR_IV
+UID: NS:d3d10umddi.D3D11_1DDI_AES_CTR_IV
 title: D3D11_1DDI_AES_CTR_IV
 author: windows-driver-content
 description: Contains an initialization vector (IV) for 128-bit Advanced Encryption Standard CTR mode (AES-CTR) block cipher encryption.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_aes_ctr_iv.htm
 old-project: display
 ms.assetid: 56228a1d-ca3b-4bd4-850c-af736e91494c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_AES_CTR_IV, D3D11_1DDI_AES_CTR_IV
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_AES_CTR_IV
 ---
 
 # D3D11_1DDI_AES_CTR_IV structure

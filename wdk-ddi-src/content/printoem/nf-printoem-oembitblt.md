@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMBitBlt
+UID: NF:printoem.OEMBitBlt
 title: OEMBitBlt function
 author: windows-driver-content
 description: The OEMBitBlt function provides general bit-block transfer capabilities between device-managed surfaces, between GDI-managed standard-format bitmaps, or between a device-managed surface and a GDI-managed standard-format bitmap.
@@ -7,7 +7,7 @@ old-location: print\oembitblt.htm
 old-project: print
 ms.assetid: d47e1bdb-2c91-4f73-b742-5312d989781a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMBitBlt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 

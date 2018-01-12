@@ -1,5 +1,5 @@
 ---
-UID: NE.hdaudio._HDAUDIO_STREAM_STATE
+UID: NE:hdaudio._HDAUDIO_STREAM_STATE
 title: _HDAUDIO_STREAM_STATE
 author: windows-driver-content
 description: The HDAUDIO_STREAM_STATE enumeration defines constants that specify the different stream states supported by HDAudio.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: A1029A2D-980F-44F5-B7D6-1C37F97D0368
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_STREAM_STATE, PHDAUDIO_STREAM_STATE, *PHDAUDIO_STREAM_STATE, HDAUDIO_STREAM_STATE
+ms.keywords: _HDAUDIO_STREAM_STATE, *PHDAUDIO_STREAM_STATE, HDAUDIO_STREAM_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: *PHDAUDIO_STREAM_STATE, HDAUDIO_STREAM_STATE
 ---
 
 # _HDAUDIO_STREAM_STATE enumeration

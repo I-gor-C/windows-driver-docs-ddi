@@ -1,5 +1,5 @@
 ---
-UID: NF.printoem.OEMQueryFont
+UID: NF:printoem.OEMQueryFont
 title: OEMQueryFont function
 author: windows-driver-content
 description: The OEMQueryFont function is used by GDI to get the IFIMETRICS structure for a given font.
@@ -7,7 +7,7 @@ old-location: print\oemqueryfont.htm
 old-project: print
 ms.assetid: cee6b2dd-e79b-4372-8371-c57fe950de88
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: OEMQueryFont
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STDVARIABLEINDEX
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <code>OEMQueryFont</code> function is used by GDI to get the <a href="display.ifimetrics">IFIMETRICS</a> structure for a given font. 
+The <code>OEMQueryFont</code> function is used by GDI to get the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a> structure for a given font. 
 
 
 

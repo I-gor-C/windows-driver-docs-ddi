@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._CMP_SET_PLUG
+UID: NS:61883._CMP_SET_PLUG
 title: _CMP_SET_PLUG
 author: windows-driver-content
 description: This structure is used to assign settings to a plug.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 2C47165D-9D04-46C8-A1EC-04E6F32AE516
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CMP_SET_PLUG, CMP_SET_PLUG, *PCMP_SET_PLUG, PCMP_SET_PLUG
+ms.keywords: _CMP_SET_PLUG, *PCMP_SET_PLUG, CMP_SET_PLUG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCMP_SET_PLUG, CMP_SET_PLUG
 ---
 
 # _CMP_SET_PLUG structure

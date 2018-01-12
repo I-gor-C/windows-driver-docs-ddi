@@ -1,5 +1,5 @@
 ---
-UID: NC.ntddk.PSHED_PI_GET_INJECTION_CAPABILITIES
+UID: NC:ntddk.PSHED_PI_GET_INJECTION_CAPABILITIES
 title: PSHED_PI_GET_INJECTION_CAPABILITIES
 author: windows-driver-content
 description: A PSHED plug-in's GetInjectionCapabilities callback function returns an error injection capabilities union that describes the types of hardware errors that can be injected into the hardware platform.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 8cb19677-11b8-4594-b4dd-ebd00fae07d4
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
+ms.keywords: _FILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
 ---
 
 # PSHED_PI_GET_INJECTION_CAPABILITIES callback
@@ -59,12 +60,12 @@ NTSTATUS GetInjectionCapabilities(
 
 ### -param PluginContext [in, out, optional]
 
-A pointer to the context area that was specified in the <b>Context</b> member of the <a href="whea.whea_pshed_plugin_registration_packet">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure when the PSHED plug-in called the <a href="whea.pshedregisterplugin">PshedRegisterPlugin</a> function to register itself with the PSHED.
+A pointer to the context area that was specified in the <b>Context</b> member of the <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure when the PSHED plug-in called the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function to register itself with the PSHED.
 
 
 ### -param Capabilities [out]
 
-A pointer to a <a href="whea.whea_error_injection_capabilities">WHEA_ERROR_INJECTION_CAPABILITIES</a> union. This union receives the data that describes the types of hardware errors that can be injected into the hardware platform.
+A pointer to a <a href="..\ntddk\ns-ntddk-_whea_error_injection_capabilities.md">WHEA_ERROR_INJECTION_CAPABILITIES</a> union. This union receives the data that describes the types of hardware errors that can be injected into the hardware platform.
 
 
 ## -returns
@@ -80,7 +81,7 @@ A PSHED plug-in's <i>GetInjectionCapabilities</i> callback function returns one 
 
 
 ## -remarks
-A PSHED plug-in that participates in error injection sets the <b>Callbacks.GetInjectionCapabilities </b>and <b>Callbacks.InjectError </b>members of the <a href="whea.whea_pshed_plugin_registration_packet">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure to point to its <i>GetInjectionCapabilities</i> and <a href="..\ntddk\nc-ntddk-pshed_pi_inject_error.md">InjectError</a> callback functions when the plug-in calls the <a href="whea.pshedregisterplugin">PshedRegisterPlugin</a> function to register itself with the PSHED. The PSHED plug-in must also set the <b>PshedFAErrorInjection</b> flag in the <b>FunctionalAreaMask</b> member of the WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure.
+A PSHED plug-in that participates in error injection sets the <b>Callbacks.GetInjectionCapabilities </b>and <b>Callbacks.InjectError </b>members of the <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a> structure to point to its <i>GetInjectionCapabilities</i> and <a href="..\ntddk\nc-ntddk-pshed_pi_inject_error.md">InjectError</a> callback functions when the plug-in calls the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function to register itself with the PSHED. The PSHED plug-in must also set the <b>PshedFAErrorInjection</b> flag in the <b>FunctionalAreaMask</b> member of the WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure.
 
 The Windows kernel calls into the PSHED to retrieve information about the types of hardware errors that can be injected into the hardware platform in response to an error injection capabilities inquiry by a WHEA management application. If a PSHED plug-in is registered to participate in error injection, the PSHED calls the PSHED plug-in's <i>GetInjectionCapabilities</i> callback function to retrieve information about additional types of hardware errors that can be injected into the hardware platform.
 
@@ -135,16 +136,16 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="whea.pshedregisterplugin">PshedRegisterPlugin</a>
+<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
 </dt>
 <dt>
 <a href="..\ntddk\nc-ntddk-pshed_pi_inject_error.md">InjectError</a>
 </dt>
 <dt>
-<a href="whea.whea_error_injection_capabilities">WHEA_ERROR_INJECTION_CAPABILITIES</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_injection_capabilities.md">WHEA_ERROR_INJECTION_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="whea.whea_pshed_plugin_registration_packet">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
+<a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_registration_packet.md">WHEA_PSHED_PLUGIN_REGISTRATION_PACKET</a>
 </dt>
 </dl>
  

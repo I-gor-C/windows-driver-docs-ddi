@@ -1,5 +1,5 @@
 ---
-UID: NS.VIDEO._VP_DEVICE_DESCRIPTION
+UID: NS:video._VP_DEVICE_DESCRIPTION
 title: _VP_DEVICE_DESCRIPTION
 author: windows-driver-content
 description: The VP_DEVICE_DESCRIPTION structure describes the attributes of the physical device for which a driver is requesting a DMA object.
@@ -7,8 +7,8 @@ old-location: display\vp_device_description.htm
 old-project: display
 ms.assetid: a605e37d-56cd-4d72-a713-314e20c2f630
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VP_DEVICE_DESCRIPTION, VP_DEVICE_DESCRIPTION, *PVP_DEVICE_DESCRIPTION, PVP_DEVICE_DESCRIPTION
+ms.date: 12/29/2017
+ms.keywords: _VP_DEVICE_DESCRIPTION, *PVP_DEVICE_DESCRIPTION, VP_DEVICE_DESCRIPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
+req.typenames: *PVP_DEVICE_DESCRIPTION, VP_DEVICE_DESCRIPTION
 req.product: Windows 10 or later.
 ---
 

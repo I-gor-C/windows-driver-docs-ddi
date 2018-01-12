@@ -1,5 +1,5 @@
 ---
-UID: NF.spb.SPB_TRANSFER_LIST_INIT
+UID: NF:spb.SPB_TRANSFER_LIST_INIT
 title: SPB_TRANSFER_LIST_INIT function
 author: windows-driver-content
 description: The SPB_TRANSFER_LIST_INIT function initializes an SPB_TRANSFER_LIST structure.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SPB_TRANSFER_DIRECTION, *PSPB_TRANSFER_DIRECTION
 req.product: Windows 10 or later.
 ---
 

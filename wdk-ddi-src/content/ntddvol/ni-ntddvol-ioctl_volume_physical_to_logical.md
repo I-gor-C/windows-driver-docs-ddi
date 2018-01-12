@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddvol.IOCTL_VOLUME_PHYSICAL_TO_LOGICAL
+UID: NI:ntddvol.IOCTL_VOLUME_PHYSICAL_TO_LOGICAL
 title: IOCTL_VOLUME_PHYSICAL_TO_LOGICAL
 author: windows-driver-content
 description: Returns the logical offset corresponding to a physical disk number and a physical offset.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_volume_physical_to_logical.htm
 old-project: storage
 ms.assetid: 3e127456-6387-4340-84c1-d613d8094f33
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _VIDEO_WIN32K_CALLBACKS_PARAMS, PVIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
+ms.date: 1/10/2018
+ms.keywords: _VIDEO_WIN32K_CALLBACKS_PARAMS, VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
 # IOCTL_VOLUME_PHYSICAL_TO_LOGICAL IOCTL
@@ -52,7 +53,7 @@ The volume manager supports this IOCTL as described for all types of basic and d
 ## -ioctlparameters
 
 ### -input-buffer
-Caller inserts the <a href="storage.volume_physical_offset">VOLUME_PHYSICAL_OFFSET</a> structure, containing the physical offset and physical disk number, at the beginning of the buffer, at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. 
+Caller inserts the <a href="..\ntddvol\ns-ntddvol-_volume_physical_offset.md">VOLUME_PHYSICAL_OFFSET</a> structure, containing the physical offset and physical disk number, at the beginning of the buffer, at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. 
 
 
 ### -input-buffer-length
@@ -61,7 +62,7 @@ Caller inserts the <a href="storage.volume_physical_offset">VOLUME_PHYSICAL_OFFS
 
 
 ### -output-buffer
-The volume manager returns the logical offset in the <a href="storage.volume_logical_offset">VOLUME_LOGICAL_OFFSET</a> structure at the beginning of the buffer, at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. 
+The volume manager returns the logical offset in the <a href="..\ntddvol\ns-ntddvol-_volume_logical_offset.md">VOLUME_LOGICAL_OFFSET</a> structure at the beginning of the buffer, at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. 
 
 
 ### -output-buffer-length
@@ -120,18 +121,18 @@ Header
 <a href="..\ntddvol\ni-ntddvol-ioctl_volume_logical_to_physical.md">IOCTL_VOLUME_LOGICAL_TO_PHYSICAL</a>
 </dt>
 <dt>
-<a href="storage.volume_logical_offset">VOLUME_LOGICAL_OFFSET</a>
+<a href="..\ntddvol\ns-ntddvol-_volume_logical_offset.md">VOLUME_LOGICAL_OFFSET</a>
 </dt>
 <dt>
-<a href="storage.volume_physical_offsets">VOLUME_PHYSICAL_OFFSETS</a>
+<a href="..\ntddvol\ns-ntddvol-_volume_physical_offsets.md">VOLUME_PHYSICAL_OFFSETS</a>
 </dt>
 <dt>
-<a href="storage.volume_physical_offset">VOLUME_PHYSICAL_OFFSET</a>
+<a href="..\ntddvol\ns-ntddvol-_volume_physical_offset.md">VOLUME_PHYSICAL_OFFSET</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_VOLUME_PHYSICAL_TO_LOGICAL control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20IOCTL_VOLUME_PHYSICAL_TO_LOGICAL control code%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

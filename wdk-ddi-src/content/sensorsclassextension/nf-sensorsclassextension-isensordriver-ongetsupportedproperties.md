@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsclassextension.ISensorDriver.OnGetSupportedProperties
+UID: NF:sensorsclassextension.ISensorDriver.OnGetSupportedProperties
 title: ISensorDriver::OnGetSupportedProperties method
 author: windows-driver-content
 description: The ISensorDriver::OnGetSupportedProperties method retrieves the list of properties that the specified sensor provides.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <a href="sensors.isensordriver_ongetsupportedproperties">ISensorDriver::OnGetSupportedProperties</a> method retrieves the list of properties that the specified sensor provides.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545630">ISensorDriver::OnGetSupportedProperties</a> method retrieves the list of properties that the specified sensor provides.
 
 
 

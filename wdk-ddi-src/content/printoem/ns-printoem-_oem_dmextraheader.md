@@ -1,5 +1,5 @@
 ---
-UID: NS.PRINTOEM._OEM_DMEXTRAHEADER
+UID: NS:printoem._OEM_DMEXTRAHEADER
 title: _OEM_DMEXTRAHEADER
 author: windows-driver-content
 description: The OEM_DMEXTRAHEADER structure must be used to define the first members of a set of private DEVMODEW structure members.
@@ -7,8 +7,8 @@ old-location: print\oem_dmextraheader.htm
 old-project: print
 ms.assetid: fecefdbc-3036-4991-900c-203ae8be254b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _OEM_DMEXTRAHEADER, POEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER, *POEM_DMEXTRAHEADER
+ms.date: 1/8/2018
+ms.keywords: _OEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER, *POEM_DMEXTRAHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEM_DMEXTRAHEADER, *POEM_DMEXTRAHEADER
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The OEM_DMEXTRAHEADER structure must be used to define the first members of a set of private <a href="display.devmodew">DEVMODEW</a> structure members.
+The OEM_DMEXTRAHEADER structure must be used to define the first members of a set of private <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure members.
 
 
 
@@ -63,7 +64,7 @@ Total size, in bytes, of the added private DEVMODEW structure members, including
 
 ### -field dwSignature
 
-Unique signature value that the plug-in also returns when its <a href="print.iprintoemui_getinfo">IPrintOemUI::GetInfo</a> method receives the OEMGI_GETSIGNATURE flag.
+Unique signature value that the plug-in also returns when its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554178">IPrintOemUI::GetInfo</a> method receives the OEMGI_GETSIGNATURE flag.
 
 
 ### -field dwVersion

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1DDI_VIDEO_PROCESSOR_STREAM
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_STREAM
 title: D3D11_1DDI_VIDEO_PROCESSOR_STREAM
 author: windows-driver-content
 description: Contains stream-level data for the VideoProcessorBlt function.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_stream.htm
 old-project: display
 ms.assetid: 7edbe37b-ea45-4d37-908c-25c840e4cd74
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_STREAM, D3D11_1DDI_VIDEO_PROCESSOR_STREAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_STREAM
 ---
 
 # D3D11_1DDI_VIDEO_PROCESSOR_STREAM structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-Contains stream-level data for the <a href="display.videoprocessorblt">VideoProcessorBlt</a> function.
+Contains stream-level data for the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorblt.md">VideoProcessorBlt</a> function.
 
 
 
@@ -65,7 +66,7 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_STREAM {
 
 ### -field Enable
 
-Specifies whether this input stream is enabled. If the value is <b>TRUE</b>, the <a href="display.videoprocessorblt">VideoProcessorBlt</a> function blits this stream to the output surface. Otherwise, this stream is not blitted.
+Specifies whether this input stream is enabled. If the value is <b>TRUE</b>, the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorblt.md">VideoProcessorBlt</a> function blits this stream to the output surface. Otherwise, this stream is not blitted.
 
 The maximum number of streams that can be enabled at one time is given in the <b>MaxInputStreams</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_processor_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CAPS</a> structure.
 
@@ -109,7 +110,7 @@ A <b>D3D11_1DDI_HVIDEOPROCESSORINPUTVIEW</b> pointer to an array of pointers, al
 
 If the stereo 3-D format is <b>D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT_SEPARATE</b>, this member is a <b>D3D11_1DDI_HVIDEOPROCESSORINPUTVIEW</b> pointer to an array of   pointers that contains the past reference frames for the right view. The number of elements in the array is equal to <b>PastFrames</b>.
 
-For any other stereo 3-D format, set this member to <b>NULL</b>. For more information, see <a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a>.
+For any other stereo 3-D format, set this member to <b>NULL</b>. For more information, see <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetstreamstereoformat.md">VideoProcessorSetStreamStereoFormat</a>.
 
 
 
@@ -183,15 +184,15 @@ Header
 <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_processor_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_CAPS</a>
 </dt>
 <dt>
-<a href="display.videoprocessorblt">VideoProcessorBlt</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorblt.md">VideoProcessorBlt</a>
 </dt>
 <dt>
-<a href="display.videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a>
+<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetstreamstereoformat.md">VideoProcessorSetStreamStereoFormat</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1DDI_VIDEO_PROCESSOR_STREAM structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1DDI_VIDEO_PROCESSOR_STREAM structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

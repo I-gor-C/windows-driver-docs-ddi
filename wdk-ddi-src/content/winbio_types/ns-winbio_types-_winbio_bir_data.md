@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_TYPES._WINBIO_BIR_DATA
+UID: NS:winbio_types._WINBIO_BIR_DATA
 title: _WINBIO_BIR_DATA
 author: windows-driver-content
 description: The WINBIO_BIR_DATA structure contains the location and size of a block in a BIR. The offset is measured from the beginning of the WINBIO_BIR structure.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: c9ce383e-277d-4fed-839b-8539554f654c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_BIR_DATA, WINBIO_BIR_DATA
+ms.keywords: _WINBIO_BIR_DATA, WINBIO_BIR_DATA, *PWINBIO_BIR_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WINBIO_BIR_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The WINBIO_BIR_DATA structure contains the location and size of a block in a BIR. The offset is measured from the beginning of the <a href="biometric.winbio_bir">WINBIO_BIR</a> structure.
+The WINBIO_BIR_DATA structure contains the location and size of a block in a BIR. The offset is measured from the beginning of the <a href="..\winbio_types\ns-winbio_types-_winbio_bir.md">WINBIO_BIR</a> structure.
 
 
 
@@ -96,13 +97,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="biometric.winbio_capture_data">WINBIO_CAPTURE_DATA</a>
+<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_capture_data.md">WINBIO_CAPTURE_DATA</a>
 </dt>
 <dt>
-<a href="biometric.winbio_data">WINBIO_DATA</a>
+<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a>
 </dt>
 <dt>
-<a href="biometric.winbio_bir_header">WINBIO_BIR_HEADER</a>
+<a href="..\winbio_types\ns-winbio_types-_winbio_bir_header.md">WINBIO_BIR_HEADER</a>
 </dt>
 </dl>
  

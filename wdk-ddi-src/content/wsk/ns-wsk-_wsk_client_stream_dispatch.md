@@ -1,14 +1,14 @@
 ---
-UID: NS.WSK._WSK_CLIENT_STREAM_DISPATCH
+UID: NS:wsk._WSK_CLIENT_STREAM_DISPATCH
 title: _WSK_CLIENT_STREAM_DISPATCH
 author: windows-driver-content
 description: The WSK_CLIENT_STREAM_DISPATCH structure specifies a WSK application's dispatch table of event callback functions for a stream socket.
 old-location: netvista\wsk_client_stream_dispatch.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 7E682868-1D39-4677-A4EC-E7C9F841EC82
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WSK_CLIENT_STREAM_DISPATCH, *PWSK_CLIENT_STREAM_DISPATCH, WSK_CLIENT_STREAM_DISPATCH, PWSK_CLIENT_STREAM_DISPATCH
+ms.date: 1/8/2018
+ms.keywords: _WSK_CLIENT_STREAM_DISPATCH, WSK_CLIENT_STREAM_DISPATCH, *PWSK_CLIENT_STREAM_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WSK_CLIENT_STREAM_DISPATCH, *PWSK_CLIENT_STREAM_DISPATCH
 req.product: Windows 10 or later.
 ---
 
@@ -58,13 +59,13 @@ typedef struct _WSK_CLIENT_STREAM_DISPATCH {
 
 ### -field Listen
 
-A pointer to a <a href="netvista.wsk_client_listen_dispatch">WSK_CLIENT_LISTEN_DISPATCH</a> structure, which specifies a WSK application's dispatch table of event
+A pointer to a <a href="..\wsk\ns-wsk-_wsk_client_listen_dispatch.md">WSK_CLIENT_LISTEN_DISPATCH</a> structure, which specifies a WSK application's dispatch table of event
   callback functions for a stream socket which is acting as a listening socket.
 
 
 ### -field Connect
 
-A pointer to a <a href="netvista.wsk_client_connection_dispatch">WSK_CLIENT_CONNECTION_DISPATCH</a> structure, which specifies a WSK application's dispatch table of event
+A pointer to a <a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">WSK_CLIENT_CONNECTION_DISPATCH</a> structure, which specifies a WSK application's dispatch table of event
   callback functions for a stream socket which is acting as a connection-oriented socket.
 
 
@@ -106,18 +107,18 @@ Header
 <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_connection_dispatch">WSK_CLIENT_CONNECTION_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_client_connection_dispatch.md">WSK_CLIENT_CONNECTION_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_listen_dispatch">WSK_CLIENT_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_client_listen_dispatch.md">WSK_CLIENT_LISTEN_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_stream_dispatch">WSK_PROVIDER_STREAM_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WSK_CLIENT_STREAM_DISPATCH structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_CLIENT_STREAM_DISPATCH structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

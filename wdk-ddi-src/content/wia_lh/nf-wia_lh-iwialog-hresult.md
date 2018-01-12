@@ -1,13 +1,13 @@
 ---
-UID: NF.wia_lh.IWiaLog.hResult
+UID: NF:wia_lh.IWiaLog.hResult
 title: IWiaLog::hResult method
 author: windows-driver-content
 description: Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported.
 old-location: image\iwialog_hresult.htm
-old-project: Image
+old-project: image
 ms.assetid: 74d9b770-c2b6-483d-a6d7-070ac2a55133
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaLog, IWiaLog::hResult, hResult
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBMP_IMAGE_INFO, BMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-Note that the <b>IWiaLog</b> interface is <b>obsolete </b>for Microsoft Windows XP and later, and is no longer supported. Instead, use the <a href="image.diagnostic_log_macros">Diagnostic Log Macros</a>.
+Note that the <b>IWiaLog</b> interface is <b>obsolete </b>for Microsoft Windows XP and later, and is no longer supported. Instead, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540599">Diagnostic Log Macros</a>.
 
 The <b>IWiaLog::hResult</b> method translates an HRESULT value into a string and writes the string to <i>Wiaservc.log</i>.
 

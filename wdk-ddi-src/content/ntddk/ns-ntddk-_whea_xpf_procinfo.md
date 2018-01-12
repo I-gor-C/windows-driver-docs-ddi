@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_XPF_PROCINFO
+UID: NS:ntddk._WHEA_XPF_PROCINFO
 title: _WHEA_XPF_PROCINFO
 author: windows-driver-content
 description: The WHEA_XPF_PROCINFO structure describes processor error information that is specific to the x86 and x64 processor architectures.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 90fb54dd-a2df-423c-8dd6-bd99c5ad1de4
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO, *PWHEA_XPF_PROCINFO, PWHEA_XPF_PROCINFO
+ms.keywords: _WHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO, *PWHEA_XPF_PROCINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WHEA_XPF_PROCINFO, *PWHEA_XPF_PROCINFO
 ---
 
 # _WHEA_XPF_PROCINFO structure
@@ -96,7 +97,7 @@ The <b>CheckInfo.MsCheck</b> member contains microarchitecture-specific error in
 
 ### -field ValidBits
 
-A <a href="whea.whea_xpf_procinfo_validbits">WHEA_XPF_PROCINFO_VALIDBITS</a> union that specifies which members of this structure contain valid data.
+A <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo_validbits.md">WHEA_XPF_PROCINFO_VALIDBITS</a> union that specifies which members of this structure contain valid data.
 
 
 ### -field CheckInfo
@@ -110,22 +111,22 @@ This member contains valid data only if the <b>ValidBits.CheckInfo</b> bit is se
 
 ### -field CacheCheck
 
-A <a href="whea.whea_xpf_cache_check">WHEA_XPF_CACHE_CHECK</a> union that describes cache error information. 
+A <a href="..\ntddk\ns-ntddk-_whea_xpf_cache_check.md">WHEA_XPF_CACHE_CHECK</a> union that describes cache error information. 
 
 
 ### -field TlbCheck
 
-A <a href="whea.whea_xpf_tlb_check">WHEA_XPF_TLB_CHECK</a> union that describes translation lookaside buffer error information. 
+A <a href="..\ntddk\ns-ntddk-_whea_xpf_tlb_check.md">WHEA_XPF_TLB_CHECK</a> union that describes translation lookaside buffer error information. 
 
 
 ### -field BusCheck
 
-A <a href="whea.whea_xpf_bus_check">WHEA_XPF_BUS_CHECK</a> union that describes bus error information.
+A <a href="..\ntddk\ns-ntddk-_whea_xpf_bus_check.md">WHEA_XPF_BUS_CHECK</a> union that describes bus error information.
 
 
 ### -field MsCheck
 
-A <a href="whea.whea_xpf_ms_check">WHEA_XPF_MS_CHECK</a> union that describes microarchitecture-specific error information. 
+A <a href="..\ntddk\ns-ntddk-_whea_xpf_ms_check.md">WHEA_XPF_MS_CHECK</a> union that describes microarchitecture-specific error information. 
 
 
 ### -field AsULONGLONG
@@ -196,22 +197,22 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_xpf_bus_check">WHEA_XPF_BUS_CHECK</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_bus_check.md">WHEA_XPF_BUS_CHECK</a>
 </dt>
 <dt>
-<a href="whea.whea_xpf_cache_check">WHEA_XPF_CACHE_CHECK</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_cache_check.md">WHEA_XPF_CACHE_CHECK</a>
 </dt>
 <dt>
-<a href="whea.whea_xpf_ms_check">WHEA_XPF_MS_CHECK</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_ms_check.md">WHEA_XPF_MS_CHECK</a>
 </dt>
 <dt>
 <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>
 </dt>
 <dt>
-<a href="whea.whea_xpf_procinfo_validbits">WHEA_XPF_PROCINFO_VALIDBITS</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo_validbits.md">WHEA_XPF_PROCINFO_VALIDBITS</a>
 </dt>
 <dt>
-<a href="whea.whea_xpf_tlb_check">WHEA_XPF_TLB_CHECK</a>
+<a href="..\ntddk\ns-ntddk-_whea_xpf_tlb_check.md">WHEA_XPF_TLB_CHECK</a>
 </dt>
 </dl>
  

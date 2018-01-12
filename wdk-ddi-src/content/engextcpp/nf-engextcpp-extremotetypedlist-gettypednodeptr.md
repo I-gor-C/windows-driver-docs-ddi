@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteTypedList.GetTypedNodePtr
+UID: NF:engextcpp.ExtRemoteTypedList.GetTypedNodePtr
 title: ExtRemoteTypedList::GetTypedNodePtr method
 author: windows-driver-content
 description: The GetTypedNodePtr method returns a pointer to the current list item.
 old-location: debugger\extremotetypedlist_gettypednodeptr.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 3bf50952-7ac9-4c6b-9318-dd64748de9d2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteTypedList, ExtRemoteTypedList::GetTypedNodePtr, GetTypedNodePtr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteTypedList::GetTypedNodePtr method

@@ -1,5 +1,5 @@
 ---
-UID: NS.SMCLIB._CLOCK_RATE_CONVERSION
+UID: NS:smclib._CLOCK_RATE_CONVERSION
 title: _CLOCK_RATE_CONVERSION
 author: windows-driver-content
 description: The CLOCK_RATE_CONVERSION structure holds a value that determines the duration of a bit of data and the corresponding maximum operating frequency that accompanies the indicated bit length.
@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: c3011034-c77c-4699-9c04-b1163faa79fc
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CLOCK_RATE_CONVERSION, *PCLOCK_RATE_CONVERSION, CLOCK_RATE_CONVERSION, PCLOCK_RATE_CONVERSION
+ms.keywords: _CLOCK_RATE_CONVERSION, CLOCK_RATE_CONVERSION, *PCLOCK_RATE_CONVERSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: CLOCK_RATE_CONVERSION, *PCLOCK_RATE_CONVERSION
 req.product: Windows 10 or later.
 ---
 

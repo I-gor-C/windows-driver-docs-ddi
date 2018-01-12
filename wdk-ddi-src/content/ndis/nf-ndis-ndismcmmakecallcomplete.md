@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMCmMakeCallComplete
+UID: NF:ndis.NdisMCmMakeCallComplete
 title: NdisMCmMakeCallComplete macro
 author: windows-driver-content
 description: NdisMCmMakeCallComplete returns the final status of a client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to make an outgoing call.
 old-location: netvista\ndismcmmakecallcomplete.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b518f36e-5937-4a74-a1d4-9e1709750843
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMCmMakeCallComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMCmMakeCallComplete macro
@@ -105,7 +106,7 @@ An MCM driver should call
     <b>NdisMCmMakeCallComplete</b> with NDIS_STATUS_SUCCESS only if it is ready to make data transfers on the
     VC. That is, the MCM driver has negotiated with the network to establish the call parameters for the VC,
     set up a NIC for those call parameters, and called 
-    <a href="netvista.ndismcmactivatevc">NdisMCmActivateVc</a> to notify NDIS of the
+    <a href="..\ndis\nf-ndis-ndismcmactivatevc.md">NdisMCmActivateVc</a> to notify NDIS of the
     VC activation.
 
 An MCM driver must call 
@@ -207,7 +208,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_mcm_function">Irql_MCM_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547967">Irql_MCM_Function</a>
 </td>
 </tr>
 </table>
@@ -218,14 +219,14 @@ DDI compliance rules
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545384">CO_CALL_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndisallocatefromnpagedlookasidelist">
+<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
    NdisAllocateFromNPagedLookasideList</a>
 </dt>
 <dt>
-<a href="netvista.ndisclmakecall">NdisClMakeCall</a>
+<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
 </dt>
 <dt>
-<a href="netvista.ndiscmmakecallcomplete">NdisCmMakeCallComplete</a>
+<a href="..\ndis\nf-ndis-ndiscmmakecallcomplete.md">NdisCmMakeCallComplete</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-protocol_cl_make_call_complete.md">ProtocolClMakeCallComplete</a>
@@ -241,5 +242,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMCmMakeCallComplete macro%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMCmMakeCallComplete macro%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

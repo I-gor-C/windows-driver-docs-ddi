@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:winsplp
 ---
 
 # Winsplp.h header
@@ -33,6 +33,8 @@ Winsplp.h contain these programming interfaces:
 | [GetJobAttributesEx function](nf-winsplp-getjobattributesex.md) | Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated. |
 | [GetPrintProcessorCapabilities function](nf-winsplp-getprintprocessorcapabilities.md) | A print processor's GetPrintProcessorCapabilities function returns capabilities associated with a specified input data type. |
 | [ImpersonatePrinterClient function](nf-winsplp-impersonateprinterclient.md) | ImpersonatePrinterClient resumes impersonation of the client, completing the operation begun by RevertToPrinterSelf. |
+| [InitializeMonitor function](nf-winsplp-initializemonitor.md) | . |
+| [InitializeMonitorEx function](nf-winsplp-initializemonitorex.md) | . |
 | [InitializePrintMonitor function](nf-winsplp-initializeprintmonitor.md) | The InitializePrintMonitor function is obsolete and is supported only for compatibility purposes. |
 | [InitializePrintMonitor2 function](nf-winsplp-initializeprintmonitor2.md) | A print monitor's InitializePrintMonitor2 function initializes a print monitor for use with clustered print servers. |
 | [InitializePrintMonitorUI function](nf-winsplp-initializeprintmonitorui.md) | A port monitor UI DLL's InitializePrintMonitorUI function supplies the print spooler with addresses of DLL functions. |

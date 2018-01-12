@@ -1,14 +1,14 @@
 ---
-UID: NA:
+UID: NA:ksmedia
 ---
 
 # Ksmedia.h header
 
 ## -description
 
-This header is used by Audio, Streaming media devices, Display. For more information, see
-- [Audio](../_audio/index.md)
+This header is used by Streaming media devices, Audio, Display. For more information, see
 - [Streaming media devices](../_stream/index.md)
+- [Audio](../_audio/index.md)
 - [Display](../_display/index.md)
 
 Ksmedia.h contain these programming interfaces:
@@ -120,9 +120,7 @@ Ksmedia.h contain these programming interfaces:
 | [KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure](ns-ksmedia-ksrtaudio_notification_event_property.md) | The KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure appends an event handle to a KSPROPERTY structure |
 | [KSRTAUDIO_SETWRITEPACKET_INFO structure](ns-ksmedia-ksrtaudio_setwritepacket_info.md) | The KSRTAUDIO_SETWRITEPACKET_INFO structure describes information associated with an audio packet. |
 | [KSVPMAXPIXELRATE structure](ns-ksmedia-ksvpmaxpixelrate.md) | The KSVPMAXPIXELRATE structure is used to describe the maximum pixel rate of a video port. |
-| [KSVPMAXPIXELRATE structure](ns-ksmedia-ksvpmaxpixelrate~r1.md) | The KSVPMAXPIXELRATE structure is used to describe the maximum pixel rate of a video port. |
 | [KSVPSURFACEPARAMS structure](ns-ksmedia-ksvpsurfaceparams.md) | The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface. |
-| [KSVPSURFACEPARAMS structure](ns-ksmedia-ksvpsurfaceparams~r1.md) | The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface. |
 | [KSWAVE_BUFFER structure](ns-ksmedia-kswave_buffer.md) | The KSWAVE_BUFFER structure is used to describe a sample buffer. |
 | [KSWAVE_COMPATCAPS structure](ns-ksmedia-kswave_compatcaps.md) | The KSWAVE_COMPATCAPS structure is used to describe the compatible capabilities of a device. |
 | [KSWAVE_INPUT_CAPABILITIES structure](ns-ksmedia-kswave_input_capabilities.md) | The KSWAVE_INPUT_CAPABILITIES structure is used to describe the input capabilities of a device. |
@@ -245,6 +243,7 @@ Ksmedia.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [*PCAPTURE_MEMORY_ALLOCATION_FLAGS enumeration](ne-ksmedia-pcapture_memory_allocation_flags.md) | The CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration defines types of memory surfaces to which AVStream minidrivers can capture audio and video data. |
 | [AUDIO_CURVE_TYPE enumeration](ne-ksmedia-audio_curve_type.md) | The AUDIO_CURVE_TYPE enumeration defines constants that specify a curve algorithm to be applied to set a volume level. |
 | [KSCAMERA_EXTENDEDPROP_FOCUSSTATE enumeration](ne-ksmedia-kscamera_extendedprop_focusstate.md) | This enumeration contains the focus states. |
 | [KSCAMERA_EXTENDEDPROP_MetadataAlignment enumeration](ne-ksmedia-kscamera_extendedprop_metadataalignment.md) | This enumeration contains identifiers for the metadata alignment. |
@@ -273,7 +272,6 @@ Ksmedia.h contain these programming interfaces:
 | [KS_VIDEODECODER_FLAGS enumeration](ne-ksmedia-ks_videodecoder_flags.md) | The KS_VIDEODECODER_FLAGS enumeration defines video decoder capabilities. |
 | [KS_VideoControlFlags enumeration](ne-ksmedia-ks_videocontrolflags.md) | The KS_VideoControlFlags enumeration defines video control capabilities for a specific stream. |
 | [KS_VideoStreamingHints enumeration](ne-ksmedia-ks_videostreaminghints.md) | The KS_VideoStreamingHints enumeration defines video compression hints. |
-| [PCAPTURE_MEMORY_ALLOCATION_FLAGS enumeration](ne-ksmedia-pcapture_memory_allocation_flags.md) | The CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration defines types of memory surfaces to which AVStream minidrivers can capture audio and video data. |
 | [TELEPHONY_CALLCONTROLOP enumeration](ne-ksmedia-telephony_callcontrolop.md) | The TELEPHONY_CALLCONTROLOP enumeration defines constants that specify an operation to perform on a phone call. |
 | [TELEPHONY_CALLSTATE enumeration](ne-ksmedia-telephony_callstate.md) | The TELEPHONY_CALLSTATE enumeration defines constants that specify the state of a phone call. |
 | [TELEPHONY_CALLTYPE enumeration](ne-ksmedia-telephony_calltype.md) | The TELEPHONY_CALLTYPE enumeration defines constants that specify the type of phone call. |

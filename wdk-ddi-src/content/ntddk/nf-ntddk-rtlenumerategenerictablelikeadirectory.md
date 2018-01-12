@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlEnumerateGenericTableLikeADirectory
+UID: NF:ntddk.RtlEnumerateGenericTableLikeADirectory
 title: RtlEnumerateGenericTableLikeADirectory function
 author: windows-driver-content
 description: The RtlEnumerateGenericTableLikeADirectory routine returns the elements of a generic table, one-by-one, in collation order.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlenumerategenerictablelikeadirectory.htm
 old-project: ifsk
 ms.assetid: 206c8b70-575d-47e2-a03d-4c88e0d92fe0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlEnumerateGenericTableLikeADirectory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL (See Remarks section)
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlEnumerateGenericTableLikeADirectory function
@@ -61,7 +62,7 @@ PVOID RtlEnumerateGenericTableLikeADirectory(
 
 ### -param Table [in]
 
-A pointer to the Adelson-Velsky/Landis (AVL) table (<a href="ifsk.rtl_avl_table">RTL_AVL_TABLE</a>) that will be enumerated.
+A pointer to the Adelson-Velsky/Landis (AVL) table (<a href="..\ntddk\ns-ntddk-_rtl_avl_table.md">RTL_AVL_TABLE</a>) that will be enumerated.
 
 
 ### -param MatchFunction [in, optional]
@@ -135,11 +136,11 @@ There are four routines you can use to enumerate a generic table:
 
 
 
-The <a href="ifsk.rtlenumerategenerictable">RtlEnumerateGenericTable</a> routine enumerates a generic table in collation order safely across insertions and deletions. However, this routine is not reentrant, so a caller that uses <b>RtlEnumerateGenericTable</b> must acquire exclusive access to the table during the entire enumeration. This routine often used by a caller that is deleting all the elements of a table.
+The <a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTable</a> routine enumerates a generic table in collation order safely across insertions and deletions. However, this routine is not reentrant, so a caller that uses <b>RtlEnumerateGenericTable</b> must acquire exclusive access to the table during the entire enumeration. This routine often used by a caller that is deleting all the elements of a table.
 
-The <a href="ifsk.rtlenumerategenerictablewithoutsplaying">RtlEnumerateGenericTableWithoutSplaying</a>routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. However, it is not safe to use <b>RtlEnumerateGenericTableWithoutSplaying</b>across insertions and deletions. Callers that use <b>RtlEnumerateGenericTableWithoutSplaying</b>can share access to the table, but they must lock out changes by other threads during the entire enumeration.
+The <a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplaying</a>routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. However, it is not safe to use <b>RtlEnumerateGenericTableWithoutSplaying</b>across insertions and deletions. Callers that use <b>RtlEnumerateGenericTableWithoutSplaying</b>can share access to the table, but they must lock out changes by other threads during the entire enumeration.
 
-The <a href="ifsk.rtlgetelementgenerictable">RtlGetElementGenericTable</a> routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. Furthermore, multiple threads can do insertions and deletions during an enumeration. A thread must obtain shared access for each individual call, but is not required to lock out changes to the table for the entire duration of the enumeration. However, insertions and deletions can cause table entries to be enumerated more than once or dropped completely. For this reason, the <b>RtlGetElementGenericTable</b> routine  is not recommended.
+The <a href="..\ntddk\nf-ntddk-rtlgetelementgenerictable.md">RtlGetElementGenericTable</a> routine enumerates a generic table in collation order, and it is reentrant, so different threads can use it to read the table. Furthermore, multiple threads can do insertions and deletions during an enumeration. A thread must obtain shared access for each individual call, but is not required to lock out changes to the table for the entire duration of the enumeration. However, insertions and deletions can cause table entries to be enumerated more than once or dropped completely. For this reason, the <b>RtlGetElementGenericTable</b> routine  is not recommended.
 
 The <b>RtlEnumerateGenericTableLikeADirectory</b> routine enumerates a generic table in collation order; it is reentrant, and it allows multiple threads to do insertions and deletions during the enumeration without dropping or repeating key names in the enumeration. Caller must acquire shared access that locks out changes to the table across each call to the routine, but it is not necessary to hold a lock for the entire duration of the enumeration.
 
@@ -225,18 +226,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.rtlenumerategenerictable">RtlEnumerateGenericTable</a>
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictable.md">RtlEnumerateGenericTable</a>
 </dt>
 <dt>
-<a href="ifsk.rtlenumerategenerictablewithoutsplaying">RtlEnumerateGenericTableWithoutSplaying</a>
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictablewithoutsplaying.md">RtlEnumerateGenericTableWithoutSplaying</a>
 </dt>
 <dt>
-<a href="ifsk.rtlgetelementgenerictable">RtlGetElementGenericTable</a>
+<a href="..\ntddk\nf-ntddk-rtlgetelementgenerictable.md">RtlGetElementGenericTable</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlEnumerateGenericTableLikeADirectory routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlEnumerateGenericTableLikeADirectory routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

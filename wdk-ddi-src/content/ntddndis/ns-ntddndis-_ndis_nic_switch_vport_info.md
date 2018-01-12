@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_NIC_SWITCH_VPORT_INFO
+UID: NS:ntddndis._NDIS_NIC_SWITCH_VPORT_INFO
 title: _NDIS_NIC_SWITCH_VPORT_INFO
 author: windows-driver-content
 description: The NDIS_NIC_SWITCH_VPORT_INFO structure specifies the configuration for a virtual port (VPort) on a network adapter switch of the network adapter.
 old-location: netvista\ndis_nic_switch_vport_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 5effb179-18e8-4306-84c5-724cb5483449
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_NIC_SWITCH_VPORT_INFO, *PNDIS_NIC_SWITCH_VPORT_INFO, NDIS_NIC_SWITCH_VPORT_INFO, PNDIS_NIC_SWITCH_VPORT_INFO
+ms.date: 1/8/2018
+ms.keywords: _NDIS_NIC_SWITCH_VPORT_INFO, *PNDIS_NIC_SWITCH_VPORT_INFO, NDIS_NIC_SWITCH_VPORT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_NIC_SWITCH_VPORT_INFO, NDIS_NIC_SWITCH_VPORT_INFO
 ---
 
 # _NDIS_NIC_SWITCH_VPORT_INFO structure
@@ -66,7 +67,7 @@ typedef struct _NDIS_NIC_SWITCH_VPORT_INFO {
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_NIC_SWITCH_VPORT_INFO</b> structure. This member is formatted as an <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_NIC_SWITCH_VPORT_INFO</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_VPORT_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -134,17 +135,17 @@ One or more queue pairs are configured on a nondefault VPort through an OID meth
 
 ### -field InterruptModeration
 
-An <a href="netvista.ndis_nic_switch_vport_interrupt_moderation">NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION</a> value that specifies the interrupt moderation setting of the VPort.
+An <a href="..\ntddndis\ne-ntddndis-_ndis_nic_switch_vport_interrupt_moderation.md">NDIS_NIC_SWITCH_VPORT_INTERRUPT_MODERATION</a> value that specifies the interrupt moderation setting of the VPort.
 
 
 ### -field VPortState
 
-An <a href="netvista.ndis_nic_switch_vport_state">NDIS_NIC_SWITCH_VPORT_STATE</a> value that specifies the state of the VPort.  
+An <a href="..\ntddndis\ne-ntddndis-_ndis_nic_switch_vport_state.md">NDIS_NIC_SWITCH_VPORT_STATE</a> value that specifies the state of the VPort.  
 
 
 ### -field ProcessorAffinity
 
-A <a href="kernel.group_affinity">GROUP_AFFINITY</a> value that specifies the group number and a bitmap of the CPUs that this VPort can be associated with. 
+A <a href="..\miniport\ns-miniport-_group_affinity.md">GROUP_AFFINITY</a> value that specifies the group number and a bitmap of the CPUs that this VPort can be associated with. 
 
 This member is valid only for the VPorts attached to the PF. This field is not valid for nondefault VPorts that are attached to a VF. 
 
@@ -178,9 +179,9 @@ A nondefault VPort that was previously created through an OID method request of 
 
 The default VPort that is attached to the PF. The default VPort always exists and cannot be deleted.
 
-One or more <b>NDIS_NIC_SWITCH_VPORT_INFO</b> structures are returned through the <a href="netvista.ndis_nic_switch_vport_info_array">NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</a> structure.
+One or more <b>NDIS_NIC_SWITCH_VPORT_INFO</b> structures are returned through the <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_info_array.md">NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</a> structure.
 
-For more information about the SR-IOV interface, see 	<a href="netvista.overview_of_single_root_i_o_virtualization__sr-iov_">Overview of Single Root I/O Virtualization (SR-IOV)</a>.
+For more information about the SR-IOV interface, see 	<a href="https://msdn.microsoft.com/B241F468-F568-4500-9356-E576CEBA8F3B">Overview of Single Root I/O Virtualization (SR-IOV)</a>.
 
 
 ## -requirements
@@ -212,10 +213,10 @@ Header
 <dl>
 <dt><b></b></dt>
 <dt>
-<a href="netvista.ndis_nic_switch_vport_info_array">NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_vport_info_array.md">NDIS_NIC_SWITCH_VPORT_INFO_ARRAY</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451816">OID_NIC_SWITCH_CREATE_VPORT</a>
@@ -228,5 +229,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_NIC_SWITCH_VPORT_INFO structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_NIC_SWITCH_VPORT_INFO structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

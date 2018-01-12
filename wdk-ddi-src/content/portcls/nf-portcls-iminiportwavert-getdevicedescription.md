@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveRT.GetDeviceDescription
+UID: NF:portcls.IMiniportWaveRT.GetDeviceDescription
 title: IMiniportWaveRT::GetDeviceDescription method
 author: windows-driver-content
 description: The GetDeviceDescription method returns a pointer to a DEVICE_DESCRIPTION structure describing the device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveRT::GetDeviceDescription method
@@ -38,7 +39,7 @@ req.irql: Passive level
 
 
 ## -description
-The <code>GetDeviceDescription</code> method returns a pointer to a <a href="kernel.device_description">DEVICE_DESCRIPTION</a> structure describing the device.
+The <code>GetDeviceDescription</code> method returns a pointer to a <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a> structure describing the device.
 
 
 
@@ -121,7 +122,7 @@ Passive level
 <a href="..\portcls\nn-portcls-iportwavert.md">IPortWaveRT</a>
 </dt>
 <dt>
-<a href="kernel.device_description">DEVICE_DESCRIPTION</a>
+<a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
 </dt>
 </dl>
  

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._D3DDDI_DEVICECALLBACKS
+UID: NS:d3dumddi._D3DDDI_DEVICECALLBACKS
 title: _D3DDDI_DEVICECALLBACKS
 author: windows-driver-content
 description: The D3DDDI_DEVICECALLBACKS structure contains Microsoft Direct3D runtime callback functions that the user-mode display driver can use.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_devicecallbacks.htm
 old-project: display
 ms.assetid: 29810132-5f53-4ba6-8302-6de315ecd04a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DDDI_DEVICECALLBACKS, D3DDDI_DEVICECALLBACKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_DEVICECALLBACKS
 ---
 
 # _D3DDDI_DEVICECALLBACKS structure
@@ -227,14 +228,14 @@ A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setdisplayprivatedri
 
 ### -field pfnOfferAllocationsCb
 
-A pointer to the <a href="display.pfnofferallocationscb">pfnOfferAllocationsCb</a> function, which a WDDM 1.2 and later user-mode display driver   calls to offer  video memory allocations for reuse.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451693">pfnOfferAllocationsCb</a> function, which a WDDM 1.2 and later user-mode display driver   calls to offer  video memory allocations for reuse.
 
 Supported starting with Windows 8.
 
 
 ### -field pfnReclaimAllocationsCb
 
-A pointer to the <a href="display.pfnreclaimallocationscb">pfnReclaimAllocationsCb</a> function, which a WDDM 1.2 and later user-mode display driver   calls to reclaim access to video memory allocations that were previously offered  for reuse.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451695">pfnReclaimAllocationsCb</a> function, which a WDDM 1.2 and later user-mode display driver   calls to reclaim access to video memory allocations that were previously offered  for reuse.
 
 Supported starting with Windows 8.
 
@@ -262,7 +263,7 @@ Supported starting with Windows 8.
 
 ### -field pfnPresentMultiPlaneOverlayCb
 
-A pointer to the <a href="display.pfnpresentmultiplaneoverlaycb_d3d">pfnPresentMultiPlaneOverlayCb (D3D)</a> function, which a WDDM 1.3 and later user-mode display driver uses to copy content from a source multiplane overlay allocation to a destination allocation.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh780323">pfnPresentMultiPlaneOverlayCb (D3D)</a> function, which a WDDM 1.3 and later user-mode display driver uses to copy content from a source multiplane overlay allocation to a destination allocation.
 
 Supported starting with Windows 8.1.
 
@@ -371,7 +372,7 @@ A pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizatio
 
 ### -field pfnReclaimAllocations2Cb
 
-A pointer to the <a href="display.pfnreclaimallocations2cb">pfnReclaimAllocations2Cb</a> function.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn903528">pfnReclaimAllocations2Cb</a> function.
 
 
 ### -field pfnGetResourcePresentPrivateDriverDataCb
@@ -510,7 +511,7 @@ Header
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_waitforsynchronizationobject2cb.md">pfnWaitForSynchronizationObject2Cb</a>
 </dt>
 <dt>
-<a href="display.pfnpresentmultiplaneoverlaycb_d3d">pfnPresentMultiPlaneOverlayCb (D3D)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh780323">pfnPresentMultiPlaneOverlayCb (D3D)</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_offerallocations2cb.md">pfnOfferAllocations2Cb</a>
@@ -523,5 +524,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_DEVICECALLBACKS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_DEVICECALLBACKS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsRuntimePower.RegisterPowerControlCallback
+UID: NF:portcls.IPortClsRuntimePower.RegisterPowerControlCallback
 title: IPortClsRuntimePower::RegisterPowerControlCallback method
 author: windows-driver-content
 description: The port class driver (PortCls) uses the RegisterPowerControlCallback method to register a power control callback.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsRuntimePower::RegisterPowerControlCallback method

@@ -1,5 +1,5 @@
 ---
-UID: NE.gnssdriver.GNSS_GEOREGIONTYPE
+UID: NE:gnssdriver.GNSS_GEOREGIONTYPE
 title: GNSS_GEOREGIONTYPE
 author: windows-driver-content
 description: This enumeration is used for defining a geographical shape. A shape is used to define a geofence. Windows 10 currently only supports circular geofences.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: GNSS_GEOREGIONTYPE
 ---
 
 # GNSS_GEOREGIONTYPE enumeration

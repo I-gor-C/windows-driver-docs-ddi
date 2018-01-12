@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.READ_PORT_ULONG
+UID: NF:wdm.READ_PORT_ULONG
 title: READ_PORT_ULONG function
 author: windows-driver-content
 description: The READ_PORT_ULONG routine reads a ULONG value from the specified port address.
@@ -7,7 +7,7 @@ old-location: kernel\read_port_ulong.htm
 old-project: kernel
 ms.assetid: 8a2f4429-b805-4a36-afdf-8b9c9a886951
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: READ_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hal.lib
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

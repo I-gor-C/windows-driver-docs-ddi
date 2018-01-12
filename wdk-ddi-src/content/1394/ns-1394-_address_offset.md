@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._ADDRESS_OFFSET
+UID: NS:1394._ADDRESS_OFFSET
 title: _ADDRESS_OFFSET
 author: windows-driver-content
 description: The ADDRESS_OFFSET structure specifies the 48-bit address within a device's IEEE 1394 address space.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: e1ee536f-40e4-48b7-b2d0-6ead22520ec8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _ADDRESS_OFFSET, ADDRESS_OFFSET, *PADDRESS_OFFSET, PADDRESS_OFFSET
+ms.keywords: _ADDRESS_OFFSET, ADDRESS_OFFSET, *PADDRESS_OFFSET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ADDRESS_OFFSET, *PADDRESS_OFFSET
 ---
 
 # _ADDRESS_OFFSET structure

@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCx2SystemDmaTransmitInitializeTransactionComplete
+UID: NF:sercx.SerCx2SystemDmaTransmitInitializeTransactionComplete
 title: SerCx2SystemDmaTransmitInitializeTransactionComplete function
 author: windows-driver-content
 description: The SerCx2SystemDmaTransmitInitializeTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished initializing the serial controller hardware in preparation for a new system-DMA-transmit transaction.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -57,7 +58,7 @@ VOID SerCx2SystemDmaTransmitInitializeTransactionComplete(
 
 ### -param SystemDmaTransmit [in]
 
-A <a href="serports.sercx2systemdmatransmit_object_handle">SERCX2SYSTEMDMATRANSMIT</a> handle to a system-DMA-transmit object. The serial controller driver previously called the <a href="serports.sercx2systemdmatransmitcreate">SerCx2SystemDmaTransmitCreate</a> method to create this object.
+A <a href="serports.sercx2systemdmatransmit_object_handle">SERCX2SYSTEMDMATRANSMIT</a> handle to a system-DMA-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a> method to create this object.
 
 
 ### -param InitSuccess [in]
@@ -132,7 +133,7 @@ IRQL
 <a href="serports.sercx2systemdmatransmit_object_handle">SERCX2SYSTEMDMATRANSMIT</a>
 </dt>
 <dt>
-<a href="serports.sercx2systemdmatransmitcreate">SerCx2SystemDmaTransmitCreate</a>
+<a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a>
 </dt>
 </dl>
  

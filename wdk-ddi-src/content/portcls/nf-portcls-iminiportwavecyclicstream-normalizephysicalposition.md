@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveCyclicStream.NormalizePhysicalPosition
+UID: NF:portcls.IMiniportWaveCyclicStream.NormalizePhysicalPosition
 title: IMiniportWaveCyclicStream::NormalizePhysicalPosition method
 author: windows-driver-content
 description: The NormalizePhysicalPosition method converts a physical buffer position to a time-based value.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveCyclicStream::NormalizePhysicalPosition method

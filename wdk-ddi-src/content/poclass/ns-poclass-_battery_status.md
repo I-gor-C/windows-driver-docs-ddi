@@ -1,5 +1,5 @@
 ---
-UID: NS.POCLASS._BATTERY_STATUS
+UID: NS:poclass._BATTERY_STATUS
 title: _BATTERY_STATUS
 author: windows-driver-content
 description: The BATTERY_STATUS structure is used by battery miniclass drivers to return status information in response to a call to BatteryMiniQueryStatus.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: 48df787b-f9f6-45d1-872c-ceeda3087af6
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _BATTERY_STATUS, PBATTERY_STATUS, *PBATTERY_STATUS, BATTERY_STATUS
+ms.keywords: _BATTERY_STATUS, *PBATTERY_STATUS, BATTERY_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,7 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Called at PASSIVE_LEVEL.
+req.irql: 
+req.typenames: *PBATTERY_STATUS, BATTERY_STATUS
 ---
 
 # _BATTERY_STATUS structure
@@ -38,7 +39,7 @@ req.irql: Called at PASSIVE_LEVEL.
 
 
 ## -description
-The BATTERY_STATUS structure is used by battery miniclass drivers to return status information in response to a call to <a href="battery.batteryminiquerystatus">BatteryMiniQueryStatus</a>.
+The BATTERY_STATUS structure is used by battery miniclass drivers to return status information in response to a call to <a href="https://msdn.microsoft.com/04811f63-8a57-4b39-84c5-c9b7f803c057">BatteryMiniQueryStatus</a>.
 
 
 
@@ -97,7 +98,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="battery.batteryminiquerystatus">BatteryMiniQueryStatus</a>
+<a href="https://msdn.microsoft.com/04811f63-8a57-4b39-84c5-c9b7f803c057">BatteryMiniQueryStatus</a>
 </dt>
 </dl>
  

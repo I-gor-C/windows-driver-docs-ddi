@@ -1,5 +1,5 @@
 ---
-UID: NE.ksmedia.TELEPHONY_CALLTYPE
+UID: NE:ksmedia.TELEPHONY_CALLTYPE
 title: TELEPHONY_CALLTYPE
 author: windows-driver-content
 description: The TELEPHONY_CALLTYPE enumeration defines constants that specify the type of phone call.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TELEPHONY_CALLTYPE
 ---
 
 # TELEPHONY_CALLTYPE enumeration
@@ -121,13 +122,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.kstelephony_callcontrol">KSTELEPHONY_CALLCONTROL</a>
+<a href="..\ksmedia\ns-ksmedia-_tagkstelephony_callcontrol.md">KSTELEPHONY_CALLCONTROL</a>
 </dt>
 <dt>
-<a href="audio.kstelephony_callinfo">KSTELEPHONY_CALLINFO</a>
+<a href="..\ksmedia\ns-ksmedia-_tagkstelephony_callinfo.md">KSTELEPHONY_CALLINFO</a>
 </dt>
 <dt>
-<a href="audio.kstelephony_providerchange">KSTELEPHONY_PROVIDERCHANGE</a>
+<a href="..\ksmedia\ns-ksmedia-_tagkstelephony_providerchange.md">KSTELEPHONY_PROVIDERCHANGE</a>
 </dt>
 </dl>
  

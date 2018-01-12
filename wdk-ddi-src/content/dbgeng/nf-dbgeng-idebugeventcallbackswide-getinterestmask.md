@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugEventCallbacksWide.GetInterestMask
+UID: NF:dbgeng.IDebugEventCallbacksWide.GetInterestMask
 title: IDebugEventCallbacksWide::GetInterestMask method
 author: windows-driver-content
 description: The GetInterestMask callback method is called to determine which events the IDebugEventCallbacksWide object is interested in. The engine calls GetInterestMask when the object is registered with a client by using SetEventCallbacks.
 old-location: debugger\idebugeventcallbackswide_getinterestmask.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: b1e62ae3-4a3d-42db-b7fe-87d1a7e0b438
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugEventCallbacksWide, IDebugEventCallbacksWide::GetInterestMask, GetInterestMask
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugEventCallbacksWide::GetInterestMask method
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>GetInterestMask</b> callback method is called to determine which <a href="debugger.events#events#events">events</a> the <b>IDebugEventCallbacksWide</b> object is interested in.  The engine calls <b>GetInterestMask</b> when the object is registered with a client by using <a href="debugger.seteventcallbacks">SetEventCallbacks</a>.
+The <b>GetInterestMask</b> callback method is called to determine which <a href="debugger.events#events#events">events</a> the <b>IDebugEventCallbacksWide</b> object is interested in.  The engine calls <b>GetInterestMask</b> when the object is registered with a client by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff556671">SetEventCallbacks</a>.
 
 
 

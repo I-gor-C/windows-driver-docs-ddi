@@ -1,13 +1,13 @@
 ---
-UID: NE.dot11wdi._WDI_FRAME_PAYLOAD_TYPE
+UID: NE:dot11wdi._WDI_FRAME_PAYLOAD_TYPE
 title: _WDI_FRAME_PAYLOAD_TYPE
 author: windows-driver-content
 description: The WDI_FRAME_PAYLOAD_TYPE enumeration defines the frame payload type.
 old-location: netvista\wdi_frame_payload_type.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 28aef1bd-915a-4f05-a4b0-bec63ddfdfb5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _WDI_FRAME_PAYLOAD_TYPE, WDI_FRAME_PAYLOAD_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WDI_FRAME_PAYLOAD_TYPE
 ---
 
 # _WDI_FRAME_PAYLOAD_TYPE enumeration

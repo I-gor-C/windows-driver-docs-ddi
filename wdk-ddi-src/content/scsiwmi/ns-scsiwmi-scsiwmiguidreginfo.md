@@ -1,5 +1,5 @@
 ---
-UID: NS.SCSIWMI.SCSIWMIGUIDREGINFO
+UID: NS:scsiwmi.SCSIWMIGUIDREGINFO
 title: SCSIWMIGUIDREGINFO
 author: windows-driver-content
 description: The SCSIWMIGUIDREGINFO structure contains information about a given data or event block supported by a SCSI miniport driver.
@@ -7,8 +7,8 @@ old-location: storage\scsiwmiguidreginfo.htm
 old-project: storage
 ms.assetid: 7116445e-751b-478a-8e58-8f5c90d06b9b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: SCSIWMIGUIDREGINFO, PSCSIWMIGUIDREGINFO, *PSCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO
+ms.date: 1/10/2018
+ms.keywords: SCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO, *PSCSIWMIGUIDREGINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SCSIWMIGUIDREGINFO, *PSCSIWMIGUIDREGINFO
 req.product: Windows 10 or later.
 ---
 
@@ -91,7 +92,7 @@ Removes support for a previously registered block when set.
 </dl>
 
 ## -remarks
-The miniport driver passes a pointer to a SCSI_WMILIB_CONTEXT which contains a SCSIWMIREGGUID array in the <i>WmiLibInfo</i> parameter of <a href="storage.scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>. The miniport driver passes this information each time it calls <b>ScsiPortWmiDispatchFunction</b>. Each SCSIWMIREGGUID structure in the array represents one of the miniport driver's data or event blocks. 
+The miniport driver passes a pointer to a SCSI_WMILIB_CONTEXT which contains a SCSIWMIREGGUID array in the <i>WmiLibInfo</i> parameter of <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>. The miniport driver passes this information each time it calls <b>ScsiPortWmiDispatchFunction</b>. Each SCSIWMIREGGUID structure in the array represents one of the miniport driver's data or event blocks. 
 
 A miniport driver's SCSIWMIREGGUID array should include any standard data blocks defined in <i>wmicore.mof</i> for its device type, and might include miniport driver-defined data and event blocks. A miniport driver defines custom data and event blocks in a MOF file, which is compiled as a resource attached to the miniport driver's binary image and specified in the <i>MofResourceName</i> parameter of the miniport driver's HwScsiWmiQueryReginfo routine. 
 
@@ -116,18 +117,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.hwscsiwmiqueryreginfo">HwScsiWmiQueryReginfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557344">HwScsiWmiQueryReginfo</a>
 </dt>
 <dt>
-<a href="storage.scsi_wmilib_context">SCSI_WMILIB_CONTEXT</a>
+<a href="..\scsiwmi\ns-scsiwmi-_scsiwmilib_context.md">SCSI_WMILIB_CONTEXT</a>
 </dt>
 <dt>
-<a href="storage.scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>
+<a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSIWMIGUIDREGINFO structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SCSIWMIGUIDREGINFO structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

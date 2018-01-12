@@ -1,5 +1,5 @@
 ---
-UID: NE.wdfusb._WdfUsbTargetDeviceSelectSettingType
+UID: NE:wdfusb._WdfUsbTargetDeviceSelectSettingType
 title: _WdfUsbTargetDeviceSelectSettingType
 author: windows-driver-content
 description: The WdfUsbTargetDeviceSelectSettingType enumeration defines techniques for specifying an alternate setting for a USB interface.
@@ -7,7 +7,7 @@ old-location: wdf\wdfusbtargetdeviceselectsettingtype.htm
 old-project: wdf
 ms.assetid: 3bbe3da6-f069-4965-ae60-2d755d7557c1
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _WdfUsbTargetDeviceSelectSettingType, WdfUsbTargetDeviceSelectSettingType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL  (See Remarks section.)
+req.irql: PASSIVE_LEVEL
+req.typenames: WdfUsbTargetDeviceSelectSettingType
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ typedef enum _WdfUsbTargetDeviceSelectSettingType {
 
 ### -field WdfUsbInterfaceSelectSettingTypeDescriptor
 
-Specify an interface's alternate setting by providing a <a href="buses.usb_interface_descriptor">USB_INTERFACE_DESCRIPTOR</a> structure.
+Specify an interface's alternate setting by providing a <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a> structure.
 
 
 ### -field WdfUsbInterfaceSelectSettingTypeSetting
@@ -70,11 +71,11 @@ Specify an interface's alternate setting by providing a setting index value.
 
 ### -field WdfUsbInterfaceSelectSettingTypeUrb
 
-Specify an interface's alternate setting by providing a <a href="buses.urb">URB</a>.
+Specify an interface's alternate setting by providing a <a href="..\usb\ns-usb-_urb.md">URB</a>.
 
 
 ## -remarks
-The <b>WdfUsbTargetDeviceSelectSettingType</b> enumeration is used in the <a href="wdf.wdf_usb_interface_select_setting_params">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a> structure.
+The <b>WdfUsbTargetDeviceSelectSettingType</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_interface_select_setting_params.md">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a> structure.
 
 
 ## -requirements
@@ -115,18 +116,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="buses.urb">URB</a>
+<a href="..\usb\ns-usb-_urb.md">URB</a>
 </dt>
 <dt>
-<a href="buses.usb_interface_descriptor">USB_INTERFACE_DESCRIPTOR</a>
+<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="wdf.wdf_usb_interface_select_setting_params">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a>
+<a href="..\wdfusb\ns-wdfusb-_wdf_usb_interface_select_setting_params.md">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceSelectSettingType enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfUsbTargetDeviceSelectSettingType enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

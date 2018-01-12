@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILTDSCDMAKIND
+UID: NE:ntddrilapitypes.RILTDSCDMAKIND
 title: RILTDSCDMAKIND
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\riltdscdmakind.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 61b5d7f8-bd45-448b-b7a1-3e52909a63cb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILTDSCDMAKIND, RILTDSCDMAKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILTDSCDMAKIND
 ---
 
 # RILTDSCDMAKIND enumeration

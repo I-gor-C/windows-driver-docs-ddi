@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSDS3D_HRTF_FILTER_FORMAT_MSG
+UID: NS:ksmedia.KSDS3D_HRTF_FILTER_FORMAT_MSG
 title: KSDS3D_HRTF_FILTER_FORMAT_MSG
 author: windows-driver-content
 description: The KSDS3D_HRTF_FILTER_FORMAT_MSG structure specifies the filter format to use for a head-relative transfer function (HRTF).
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: c0122c96-5bd3-4c1f-85d3-5d4ead5c0c86
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSDS3D_HRTF_FILTER_FORMAT_MSG, *PKSDS3D_HRTF_FILTER_FORMAT_MSG, PKSDS3D_HRTF_FILTER_FORMAT_MSG, KSDS3D_HRTF_FILTER_FORMAT_MSG
+ms.keywords: KSDS3D_HRTF_FILTER_FORMAT_MSG, KSDS3D_HRTF_FILTER_FORMAT_MSG, *PKSDS3D_HRTF_FILTER_FORMAT_MSG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KSDS3D_HRTF_FILTER_FORMAT_MSG, *PKSDS3D_HRTF_FILTER_FORMAT_MSG
 ---
 
 # KSDS3D_HRTF_FILTER_FORMAT_MSG structure

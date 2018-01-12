@@ -1,5 +1,5 @@
 ---
-UID: NF.video.VideoPortStallExecution
+UID: NF:video.VideoPortStallExecution
 title: VideoPortStallExecution function
 author: windows-driver-content
 description: The VideoPortStallExecution function retains control of the processor for the specified number of microseconds and returns to the caller.
@@ -7,7 +7,7 @@ old-location: display\videoportstallexecution.htm
 old-project: display
 ms.assetid: 70b406f8-d9ac-4882-89bc-e257cbe06921
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VideoPortStallExecution
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
 req.irql: Any level
+req.typenames: VIDEO_PORT_SERVICES
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ Maximum acceptable values for <i>Microseconds</i> are thousands of microseconds 
 
 While a miniport driver's <a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a> function can call <b>VideoPortStallExecution</b>, the miniport driver should be designed to avoid such a call if at all possible. Delays while running at high hardware priorities adversely affect the overall I/O throughput of the system and can freeze the machine.
 
-If a miniport driver has work to be done at regular intervals of more than 50 microseconds, it should implement the <a href="..\video\nc-video-pvideo_hw_timer.md">HwVidTimer</a> function. Calls to a miniport driver-supplied <i>HwVidTimer</i> function at approximately one-second intervals can be enabled with <a href="display.videoportstarttimer">VideoPortStartTimer</a> and disabled with <a href="display.videoportstoptimer">VideoPortStopTimer</a>. 
+If a miniport driver has work to be done at regular intervals of more than 50 microseconds, it should implement the <a href="..\video\nc-video-pvideo_hw_timer.md">HwVidTimer</a> function. Calls to a miniport driver-supplied <i>HwVidTimer</i> function at approximately one-second intervals can be enabled with <a href="..\video\nf-video-videoportstarttimer.md">VideoPortStartTimer</a> and disabled with <a href="..\video\nf-video-videoportstoptimer.md">VideoPortStopTimer</a>. 
 
 
 ## -requirements
@@ -151,15 +152,15 @@ Any level
 <a href="..\video\nc-video-pvideo_hw_timer.md">HwVidTimer</a>
 </dt>
 <dt>
-<a href="display.videoportstarttimer">VideoPortStartTimer</a>
+<a href="..\video\nf-video-videoportstarttimer.md">VideoPortStartTimer</a>
 </dt>
 <dt>
-<a href="display.videoportstoptimer">VideoPortStopTimer</a>
+<a href="..\video\nf-video-videoportstoptimer.md">VideoPortStopTimer</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortStallExecution function%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20VideoPortStallExecution function%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

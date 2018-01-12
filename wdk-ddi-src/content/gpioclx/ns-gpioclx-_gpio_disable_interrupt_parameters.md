@@ -1,5 +1,5 @@
 ---
-UID: NS.GPIOCLX._GPIO_DISABLE_INTERRUPT_PARAMETERS
+UID: NS:gpioclx._GPIO_DISABLE_INTERRUPT_PARAMETERS
 title: _GPIO_DISABLE_INTERRUPT_PARAMETERS
 author: windows-driver-content
 description: The GPIO_DISABLE_INTERRUPT_PARAMETERS structure describes a general-purpose I/O (GPIO) interrupt pin to disable.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 6F71C67C-ACA6-405A-9371-9DC72CC6DDCE
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_DISABLE_INTERRUPT_PARAMETERS, GPIO_DISABLE_INTERRUPT_PARAMETERS, *PGPIO_DISABLE_INTERRUPT_PARAMETERS, PGPIO_DISABLE_INTERRUPT_PARAMETERS
+ms.keywords: _GPIO_DISABLE_INTERRUPT_PARAMETERS, *PGPIO_DISABLE_INTERRUPT_PARAMETERS, GPIO_DISABLE_INTERRUPT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PGPIO_DISABLE_INTERRUPT_PARAMETERS, GPIO_DISABLE_INTERRUPT_PARAMETERS
 ---
 
 # _GPIO_DISABLE_INTERRUPT_PARAMETERS structure

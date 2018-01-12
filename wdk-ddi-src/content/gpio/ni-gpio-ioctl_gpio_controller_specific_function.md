@@ -1,5 +1,5 @@
 ---
-UID: NI.gpio.IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
+UID: NI:gpio.IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
 title: IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
 author: windows-driver-content
 description: The IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION I/O control code enables a client of the general-purpose I/O (GPIO) controller to request a controller-specific device-control operation.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 9B62BF0B-A172-4131-9196-590188C747AD
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO
+ms.keywords: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO
 ---
 
 # IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION IOCTL
@@ -88,7 +89,7 @@ The meaning of the <b>IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION</b> control code i
 
 For example, the input buffer to the <b>IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION</b> request might contain a controller-defined command code and some number of input parameters. The GPIO controller driver may or may not write data to the output buffer, depending on the command code.
 
-The peripheral device driver sends this I/O control request to the file object for the target GPIO device. The file object is a <a href="kernel.file_object">FILE_OBJECT</a> structure that represents an open connection to a set of pins on the GPIO controller. Kernel-mode driver framework (KMDF) drivers use a WDFIOTARGET handle to refer to this file object. User-mode driver framework (UMDF) drivers access the file object through the <a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a> interface.
+The peripheral device driver sends this I/O control request to the file object for the target GPIO device. The file object is a <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure that represents an open connection to a set of pins on the GPIO controller. Kernel-mode driver framework (KMDF) drivers use a WDFIOTARGET handle to refer to this file object. User-mode driver framework (UMDF) drivers access the file object through the <a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a> interface.
 
 
 ## -requirements
@@ -119,7 +120,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.file_object">FILE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
 </dt>
 </dl>
  

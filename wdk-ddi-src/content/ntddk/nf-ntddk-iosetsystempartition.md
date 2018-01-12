@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.IoSetSystemPartition
+UID: NF:ntddk.IoSetSystemPartition
 title: IoSetSystemPartition function
 author: windows-driver-content
 description: The IoSetSystemPartition routine sets the boot partition for the system.
@@ -7,7 +7,7 @@ old-location: kernel\iosetsystempartition.htm
 old-project: kernel
 ms.assetid: f1606881-da8b-4034-bbdf-53c75e594032
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoSetSystemPartition
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # IoSetSystemPartition function

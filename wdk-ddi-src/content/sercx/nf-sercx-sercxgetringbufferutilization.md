@@ -1,5 +1,5 @@
 ---
-UID: NF.sercx.SerCxGetRingBufferUtilization
+UID: NF:sercx.SerCxGetRingBufferUtilization
 title: SerCxGetRingBufferUtilization function
 author: windows-driver-content
 description: The SerCxGetRingBufferUtilization method enables the serial controller driver to determine how much of the type-ahead ring buffer is currently filled by data received from the serial port.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: SERCX_STATUS, *PSERCX_STATUS
 req.product: Windows 10 or later.
 ---
 

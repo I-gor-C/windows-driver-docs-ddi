@@ -1,5 +1,5 @@
 ---
-UID: NE.ksmedia.KS_AMVP_MODE
+UID: NE:ksmedia.KS_AMVP_MODE
 title: KS_AMVP_MODE
 author: windows-driver-content
 description: The KS_AMVP_MODE enumeration defines video port display modes.
@@ -7,7 +7,7 @@ old-location: stream\ks_amvp_mode.htm
 old-project: stream
 ms.assetid: 9464a17a-fa09-46c5-a4a7-d5cbd58deebd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KS_AMVP_MODE, KS_AMVP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KS_AMVP_MODE
 ---
 
 # KS_AMVP_MODE enumeration

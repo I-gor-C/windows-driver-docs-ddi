@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.TmInitializeTransactionManager
+UID: NF:wdm.TmInitializeTransactionManager
 title: TmInitializeTransactionManager function
 author: windows-driver-content
 description: The TmInitializeTransactionManager routine initializes a transaction manager object.
@@ -7,7 +7,7 @@ old-location: kernel\tminitializetransactionmanager_.htm
 old-project: kernel
 ms.assetid: A44B4B93-4EC7-4FC3-B64F-BF1FF19D067E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: TmInitializeTransactionManager
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ A pointer to the transaction manager object to initialize.
 
 ### -param LogFileName [in, optional]
 
-A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the path and file name of a <a href="https://msdn.microsoft.com/4da3cb49-dc20-4713-813b-ff458c99ab90">CLFS</a> log file stream associated with the transaction manager object. 
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the path and file name of a <a href="https://msdn.microsoft.com/4da3cb49-dc20-4713-813b-ff458c99ab90">CLFS</a> log file stream associated with the transaction manager object. 
 
 
 ### -param TmId [in]

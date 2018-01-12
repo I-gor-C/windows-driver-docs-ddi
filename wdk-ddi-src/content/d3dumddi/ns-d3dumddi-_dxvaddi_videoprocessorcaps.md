@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUMDDI._DXVADDI_VIDEOPROCESSORCAPS
+UID: NS:d3dumddi._DXVADDI_VIDEOPROCESSORCAPS
 title: _DXVADDI_VIDEOPROCESSORCAPS
 author: windows-driver-content
 description: The DXVADDI_VIDEOPROCESSORCAPS structure describes the video processing capabilities of a specific deinterlace mode.
@@ -7,7 +7,7 @@ old-location: display\dxvaddi_videoprocessorcaps.htm
 old-project: display
 ms.assetid: bea6d458-943e-466f-adca-466f26dc3599
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXVADDI_VIDEOPROCESSORCAPS, DXVADDI_VIDEOPROCESSORCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXVADDI_VIDEOPROCESSORCAPS
 ---
 
 # _DXVADDI_VIDEOPROCESSORCAPS structure
@@ -63,7 +64,7 @@ typedef struct _DXVADDI_VIDEOPROCESSORCAPS {
 
 ### -field InputPool
 
-[out] A <a href="display.d3dddi_pool">D3DDDI_POOL</a>-typed value that indicates the memory pool from which the interlaced source surfaces should be allocated. 
+[out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>-typed value that indicates the memory pool from which the interlaced source surfaces should be allocated. 
 
 
 ### -field NumForwardRefSamples
@@ -78,7 +79,7 @@ typedef struct _DXVADDI_VIDEOPROCESSORCAPS {
 
 ### -field OutputFormat
 
-[out] A <a href="display.d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the uncompressed output frames. Typically, a deinterlace algorithm outputs frames in a pixel format that matches the input sample format. This member ensures that the Video Mixing Renderer (VMR) or other video renderer is able to supply the correct output frame surfaces to the deinterlacing hardware.
+[out] A <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the uncompressed output frames. Typically, a deinterlace algorithm outputs frames in a pixel format that matches the input sample format. This member ensures that the Video Mixing Renderer (VMR) or other video renderer is able to supply the correct output frame surfaces to the deinterlacing hardware.
 
 Note that if the DXVADDI_VIDEOPROCESS_YUV2RGB value is returned in the <b>VideoProcessorOperations</b> member, the VMR determines that valid output formats are specified by this member as well as an D3DFMT_X8R8G8B8 format.
 
@@ -364,7 +365,7 @@ DXVADDI_VIDEOPROCESS_ALPHABLENDEXTENDED
 
 </td>
 <td>
-An alpha-blend operation can be performed with the destination surface when the deinterlaced and composited pixels are written to the destination surface. The driver must handle background color based on the alpha value of the <b>Alpha</b> member of the <a href="display.d3dddiarg_videoprocessblt">D3DDDIARG_VIDEOPROCESSBLT</a> structure. When the alpha value is 1.0, the background color is drawn opaque (without transparency). When the alpha value is 0.0, the background should not be drawn (transparent).
+An alpha-blend operation can be performed with the destination surface when the deinterlaced and composited pixels are written to the destination surface. The driver must handle background color based on the alpha value of the <b>Alpha</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a> structure. When the alpha value is 1.0, the background color is drawn opaque (without transparency). When the alpha value is 0.0, the background should not be drawn (transparent).
 
 </td>
 </tr>
@@ -374,7 +375,7 @@ DXVADDI_VIDEOPROCESS_CONSTRICTION
 
 </td>
 <td>
-The video processing device can temporarily reduce the output frame to a size that the <b>ConstrictionSize</b> member of the <a href="display.d3dddiarg_videoprocessblt">D3DDDIARG_VIDEOPROCESSBLT</a> structure specifies.
+The video processing device can temporarily reduce the output frame to a size that the <b>ConstrictionSize</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a> structure specifies.
 
 </td>
 </tr>
@@ -599,22 +600,22 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddi_pool">D3DDDI_POOL</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_pool.md">D3DDDI_POOL</a>
 </dt>
 <dt>
-<a href="display.d3dddiarg_getcaps">D3DDDIARG_GETCAPS</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a>
 </dt>
 <dt>
-<a href="display.d3dddicaps_type">D3DDDICAPS_TYPE</a>
+<a href="..\d3dumddi\ne-d3dumddi-_d3dddicaps_type.md">D3DDDICAPS_TYPE</a>
 </dt>
 <dt>
-<a href="display.d3dddiarg_videoprocessblt">D3DDDIARG_VIDEOPROCESSBLT</a>
+<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a>
 </dt>
 <dt>
-<a href="display.d3dddiformat">D3DDDIFORMAT</a>
+<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
 </dt>
 <dt>
-<a href="display.dxvaddi_videoprocessorinput">DXVADDI_VIDEOPROCESSORINPUT</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videoprocessorinput.md">DXVADDI_VIDEOPROCESSORINPUT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
@@ -624,5 +625,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_VIDEOPROCESSORCAPS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXVADDI_VIDEOPROCESSORCAPS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

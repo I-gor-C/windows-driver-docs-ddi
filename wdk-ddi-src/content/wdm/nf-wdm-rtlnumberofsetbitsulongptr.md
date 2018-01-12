@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.RtlNumberOfSetBitsUlongPtr
+UID: NF:wdm.RtlNumberOfSetBitsUlongPtr
 title: RtlNumberOfSetBitsUlongPtr function
 author: windows-driver-content
 description: The RtlNumberOfSetBitsUlongPtr routine returns the number of bits in the specified ULONG_PTR integer value that are set to one.
@@ -7,7 +7,7 @@ old-location: kernel\rtlnumberofsetbitsulongptr.htm
 old-project: kernel
 ms.assetid: CD619018-7E6D-4B45-93C3-AD89FDFEB1E9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlNumberOfSetBitsUlongPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any IRQL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

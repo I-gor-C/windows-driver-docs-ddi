@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWavePci.NewStream
+UID: NF:portcls.IMiniportWavePci.NewStream
 title: IMiniportWavePci::NewStream method
 author: windows-driver-content
 description: The NewStream method creates a new instance of a logical stream associated with a specified physical channel.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWavePci::NewStream method
@@ -73,7 +74,7 @@ Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate th
 
 ### -param PoolType [in]
 
-Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter will be one of the nonpaged pool types defined in the <a href="kernel.pool_type">POOL_TYPE</a> enumeration.
+Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter will be one of the nonpaged pool types defined in the <a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a> enumeration.
 
 
 ### -param PortStream [in]
@@ -111,7 +112,7 @@ Output pointer for the service group. This parameter points to a caller-allocate
 
 
 ## -remarks
-The <code>NewStream</code> method sets the initial state of the stream to KSSTATE_STOP and its initial position to zero. (See <a href="audio.iminiportwavepcistream_setstate">IMiniportWavePciStream::SetState</a> and <a href="audio.iminiportwavepcistream_getposition">IMiniportWavePciStream::GetPosition</a>.)
+The <code>NewStream</code> method sets the initial state of the stream to KSSTATE_STOP and its initial position to zero. (See <a href="https://msdn.microsoft.com/library/windows/hardware/ff536733">IMiniportWavePciStream::SetState</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff536727">IMiniportWavePciStream::GetPosition</a>.)
 
 The <i>DataFormat</i> parameter, which specifies the data format of the stream, points to one of the following audio-specific, extended versions of the <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> structure:
 
@@ -197,7 +198,7 @@ PASSIVE_LEVEL
 <a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVEFORMATEX</a>
 </dt>
 <dt>
-<a href="kernel.pool_type">POOL_TYPE</a>
+<a href="..\wdm\ne-wdm-_pool_type.md">POOL_TYPE</a>
 </dt>
 </dl>
  

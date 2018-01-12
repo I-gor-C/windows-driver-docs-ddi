@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._MS_SMHBA_PORTATTRIBUTES
+UID: NS:hbapiwmi._MS_SMHBA_PORTATTRIBUTES
 title: _MS_SMHBA_PORTATTRIBUTES
 author: windows-driver-content
 description: The MS_SMHBA_PORTATTRIBUTES structure is used to report the port information.
@@ -7,8 +7,8 @@ old-location: storage\ms_smhba_portattributes.htm
 old-project: storage
 ms.assetid: ce967b15-723f-4ab7-8a79-8234291d1950
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MS_SMHBA_PORTATTRIBUTES, *PMS_SMHBA_PORTATTRIBUTES, PMS_SMHBA_PORTATTRIBUTES, MS_SMHBA_PORTATTRIBUTES
+ms.date: 1/10/2018
+ms.keywords: _MS_SMHBA_PORTATTRIBUTES, *PMS_SMHBA_PORTATTRIBUTES, MS_SMHBA_PORTATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMS_SMHBA_PORTATTRIBUTES, MS_SMHBA_PORTATTRIBUTES
 ---
 
 # _MS_SMHBA_PORTATTRIBUTES structure

@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsCopyStreamDataToBuffer0
+UID: NF:fwpsk.FwpsCopyStreamDataToBuffer0
 title: FwpsCopyStreamDataToBuffer0 function
 author: windows-driver-content
 description: The FwpsCopyStreamDataToBuffer0 function copies stream data to a buffer.Note  FwpsCopyStreamDataToBuffer0 is a specific version of FwpsCopyStreamDataToBuffer.
 old-location: netvista\fwpscopystreamdatatobuffer0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 758733a4-9657-48a4-bbcc-f266c72c1d6a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpsCopyStreamDataToBuffer0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsCopyStreamDataToBuffer0 function
@@ -60,7 +61,7 @@ void NTAPI FwpsCopyStreamDataToBuffer0(
 ### -param calloutStreamData [in]
 
 A pointer to a 
-     <a href="netvista.fwps_stream_data0">FWPS_STREAM_DATA0</a> structure that contains
+     <a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a> structure that contains
      the stream data to be copied.
 
 
@@ -153,12 +154,12 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwps_stream_data0">FWPS_STREAM_DATA0</a>
+<a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsCopyStreamDataToBuffer0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsCopyStreamDataToBuffer0 function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

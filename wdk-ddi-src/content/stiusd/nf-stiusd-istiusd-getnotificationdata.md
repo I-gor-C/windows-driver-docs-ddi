@@ -1,13 +1,13 @@
 ---
-UID: NF.stiusd.IStiUSD.GetNotificationData
+UID: NF:stiusd.IStiUSD.GetNotificationData
 title: IStiUSD::GetNotificationData method
 author: windows-driver-content
 description: A still image minidriver's IStiUSD::GetNotificationData method returns a description of the most recent event that occurred on a still image device.
 old-location: image\istiusd_getnotificationdata.htm
-old-project: Image
+old-project: image
 ms.assetid: c4293fa8-07c9-40b2-acc2-8a3128b6dad4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IStiUSD, IStiUSD::GetNotificationData, GetNotificationData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSTI_WIA_DEVICE_INFORMATIONW, STI_WIA_DEVICE_INFORMATIONW
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ HRESULT GetNotificationData(
 
 ### -param pBuffer 
 
-Caller-supplied pointer to an <a href="image.stinotify">STINOTIFY</a> structure to receive event information.
+Caller-supplied pointer to an <a href="..\sti\ns-sti-_stinotify.md">STINOTIFY</a> structure to receive event information.
 
 
 ## -returns
@@ -64,7 +65,7 @@ If the operation succeeds, the method should return S_OK. Otherwise, it should r
 
 
 ## -remarks
-Each time a device event occurs, the still image event monitor calls <b>IStiUSD::GetNotificationData</b> to obtain an event description. These descriptions are added to a linked list and when an application calls <a href="image.istidevice_getlastnotificationdata">IStiDevice::GetLastNotificationData</a>, the most recent addition to the list is returned.
+Each time a device event occurs, the still image event monitor calls <b>IStiUSD::GetNotificationData</b> to obtain an event description. These descriptions are added to a linked list and when an application calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff543751">IStiDevice::GetLastNotificationData</a>, the most recent addition to the list is returned.
 
 
 ## -requirements

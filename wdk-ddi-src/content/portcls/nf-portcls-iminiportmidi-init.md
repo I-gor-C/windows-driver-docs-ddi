@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportMidi.Init
+UID: NF:portcls.IMiniportMidi.Init
 title: IMiniportMidi::Init method
 author: windows-driver-content
 description: The Init method initializes the MIDI miniport object.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportMidi::Init method
@@ -85,11 +86,11 @@ The <i>UnknownAdapter</i> parameter is optional:
 
 If <i>UnknownAdapter</i> is non-<b>NULL</b>, the <code>Init</code> method queries the <i>UnknownAdapter</i> object for its <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a> interface.
 
-If <i>UnknownAdapter</i> is <b>NULL</b>, the <code>Init</code> method calls <a href="audio.pcnewinterruptsync">PcNewInterruptSync</a> to create a new <b>IInterruptSync</b> object. In this case, the resource list that <i>ResourceList</i> points to supplies the interrupt resource that the new <b>IInterruptSync</b> object uses.
+If <i>UnknownAdapter</i> is <b>NULL</b>, the <code>Init</code> method calls <a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a> to create a new <b>IInterruptSync</b> object. In this case, the resource list that <i>ResourceList</i> points to supplies the interrupt resource that the new <b>IInterruptSync</b> object uses.
 
 In either case, the <code>Init</code> method and calls the <b>RegisterServiceRoutine</b> method on the <b>IInterruptSync</b> object in order to add the miniport driver's interrupt service routine (ISR) to the list of interrupt sync routines. When the adapter driver later frees the port object, the port driver releases its reference to the <b>IInterruptSync</b> object.
 
-The <i>UnknownAdapter</i> and <i>ResourceList</i> parameters are the same pointer values that the adapter driver earlier passed as parameters to the <b>IPortMidi</b> object's <b>Init</b> method (see <a href="audio.iport_init">IPort::Init</a>).
+The <i>UnknownAdapter</i> and <i>ResourceList</i> parameters are the same pointer values that the adapter driver earlier passed as parameters to the <b>IPortMidi</b> object's <b>Init</b> method (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>).
 
 The <i>UnknownAdapter</i>, <i>ResourceList</i>, <i>Port</i>, and <i>ServiceGroup</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>.
 
@@ -148,10 +149,10 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iinterruptsync.md">IInterruptSync</a>
 </dt>
 <dt>
-<a href="audio.pcnewinterruptsync">PcNewInterruptSync</a>
+<a href="..\portcls\nf-portcls-pcnewinterruptsync.md">PcNewInterruptSync</a>
 </dt>
 <dt>
-<a href="audio.iport_init">IPort::Init</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a>
 </dt>
 </dl>
  

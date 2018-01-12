@@ -1,5 +1,5 @@
 ---
-UID: NF.keyworddetectoroemadapter.IKeywordDetectorOemAdapter.ParseDetectionResultData
+UID: NF:keyworddetectoroemadapter.IKeywordDetectorOemAdapter.ParseDetectionResultData
 title: IKeywordDetectorOemAdapter::ParseDetectionResultData method
 author: windows-driver-content
 description: The ParseDetectionResultData method is called by the operating system after handling a keyword detection event and after retrieving the result data from KSPROPERTY_SOUNDDETECTOR_MATCHRESULT.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: KEYWORDID
 ---
 
 # IKeywordDetectorOemAdapter::ParseDetectionResultData method
@@ -122,7 +123,7 @@ This method can return one of these values.
 If the driver includes any portion of the spoken keyword in the burst keyword/command stream from its keyword detector pin, then the driver must return a valid value for <i>KeywordEndTime</i>. Otherwise the driver may optionally return 0.
 
 
-If the driver returns <i>KeywordStartTime</i> or <i>KeywordEndTime</i>, the returned values must be consistent with the time stamps returned from the driver’s <a href="audio.iminiportwavertinputstream_getreadpacket">IMiniportWaveRTInputStream::GetReadPacket</a> routine.
+If the driver returns <i>KeywordStartTime</i> or <i>KeywordEndTime</i>, the returned values must be consistent with the time stamps returned from the driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/dn946533">IMiniportWaveRTInputStream::GetReadPacket</a> routine.
 
 
 The driver may return valid values for <i>KeywordStartTime</i> and <i>KeywordEndTime</i> regardless of whether the driver includes any portion of the spoken keyword in the burst keyword/command stream.
@@ -189,13 +190,13 @@ IDL
 <a href="..\ksmedia\ns-ksmedia-sounddetector_patternheader.md">SOUNDDETECTOR_PATTERNHEADER</a>
 </dt>
 <dt>
-<a href="com.cotaskmemalloc">CoTaskMemAlloc</a>
+<a href="https://msdn.microsoft.com/c4cb588d-9482-4f90-a92e-75b604540d5c">CoTaskMemAlloc</a>
 </dt>
 <dt>
-<a href="com.cotaskmemfree">CoTaskMemFree</a>
+<a href="https://msdn.microsoft.com/3d0af12e-fc74-4ef7-b2dd-e9da5d0483c7">CoTaskMemFree</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavertinputstream_getreadpacket">IMiniportWaveRTInputStream::GetReadPacket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946533">IMiniportWaveRTInputStream::GetReadPacket</a>
 </dt>
 </dl>
  

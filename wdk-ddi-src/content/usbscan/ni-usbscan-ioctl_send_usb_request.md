@@ -1,13 +1,13 @@
 ---
-UID: NI.usbscan.IOCTL_SEND_USB_REQUEST
+UID: NI:usbscan.IOCTL_SEND_USB_REQUEST
 title: IOCTL_SEND_USB_REQUEST
 author: windows-driver-content
 description: Sends a vendor-defined request to a USB device, using the control pipe, and optionally sends or receives additional data.
 old-location: image\ioctl_send_usb_request.htm
-old-project: Image
+old-project: image
 ms.assetid: 27e22a21-cd89-43e8-8ce1-448c0f4c4d78
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RAW_PIPE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -51,7 +52,7 @@ Sends a vendor-defined request to a USB device, using the control pipe, and opti
 ## -ioctlparameters
 
 ### -input-buffer
-Pointer to an <a href="image.io_block_ex">IO_BLOCK_EX</a> structure.
+Pointer to an <a href="..\usbscan\ns-usbscan-_io_block_ex.md">IO_BLOCK_EX</a> structure.
 
 
 ### -input-buffer-length
@@ -82,11 +83,11 @@ I/O Status block
 ## -remarks
 
 
-Device handle, obtained by calling <a href="fs.createfile">CreateFile</a>.
+Device handle, obtained by calling <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a>.
 
 IOCTL_SEND_USB_REQUEST
 
-Pointer to an <a href="image.io_block_ex">IO_BLOCK_EX</a> structure.
+Pointer to an <a href="..\usbscan\ns-usbscan-_io_block_ex.md">IO_BLOCK_EX</a> structure.
 
 Size of the input buffer.
 
@@ -98,7 +99,7 @@ Pointer to a location to receive the number of bytes returned.
 
 Optional pointer to an OVERLAPPED structure (described in the Microsoft Windows SDK documentation).
 
-When the <b>DeviceloControl</b> function is called with the IOCTL_SEND_USB_REQUEST control code, the caller must specify the address of an <a href="image.io_block_ex">IO_BLOCK_EX</a> structure as the function's <i>lpInBuffer</i> parameter. The type of request specified with this I/O control code is device-specific and vendor-defined, as are the type and size of any information that might be sent or received.
+When the <b>DeviceloControl</b> function is called with the IOCTL_SEND_USB_REQUEST control code, the caller must specify the address of an <a href="..\usbscan\ns-usbscan-_io_block_ex.md">IO_BLOCK_EX</a> structure as the function's <i>lpInBuffer</i> parameter. The type of request specified with this I/O control code is device-specific and vendor-defined, as are the type and size of any information that might be sent or received.
 
 The following table shows how input arguments should be specified.
 
@@ -140,7 +141,7 @@ Same value as <i>lpOutBufferSize</i>.
 
 Note that the <b>bmRequestType</b> member of the IO_BLOCK_EX structure is not used with IOCTL_SEND_USB_REQUEST.
 
-Using the <a href="image.io_block_ex">IO_BLOCK_EX</a> structure contents, the kernel-mode driver creates a <a href="buses.urb">URB</a> that contains a <a href="..\usb\ns-usb-_urb_control_vendor_or_class_request.md">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> structure.
+Using the <a href="..\usbscan\ns-usbscan-_io_block_ex.md">IO_BLOCK_EX</a> structure contents, the kernel-mode driver creates a <a href="..\usb\ns-usb-_urb.md">URB</a> that contains a <a href="..\usb\ns-usb-_urb_control_vendor_or_class_request.md">_URB_CONTROL_VENDOR_OR_CLASS_REQUEST</a> structure.
 
 The following table indicates the values assigned to _URB_CONTROL_VENDOR_OR_CLASS_REQUEST structure members.
 

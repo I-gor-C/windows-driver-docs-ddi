@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:ucxcontroller
 ---
 
 # Ucxcontroller.h header
 
 ## -description
 
-This header is used by UsbRef. For more information, see
-- [UsbRef](../_UsbRef/index.md)
+This header is used by Universal Serial Bus(USB). For more information, see
+- [Universal Serial Bus(USB)](../_usbref/index.md)
 
 Ucxcontroller.h contain these programming interfaces:
 
@@ -24,20 +24,6 @@ Ucxcontroller.h contain these programming interfaces:
 | [UcxControllerSetFailed function](nf-ucxcontroller-ucxcontrollersetfailed.md) | Informs USB Host Controller Extension (UCX) that the controller has encountered a critical failure. |
 | [UcxControllerSetIdStrings function](nf-ucxcontroller-ucxcontrollersetidstrings.md) | Updates the identifier strings of a controller after the controller has been initialized. |
 | [UcxIoDeviceControl function](nf-ucxcontroller-ucxiodevicecontrol.md) | Allows USB host controller extension (UCX) to handle an I/O control code (IOCTL) request from user mode. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER callback](nc-ucxcontroller-evt_ucx_controller_get_current_framenumber.md) | The client driver's implementation that UCX calls to retrieve the current 32-bit frame number. |
-| [EVT_UCX_CONTROLLER_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC callback](nc-ucxcontroller-evt_ucx_controller_get_frame_number_and_qpc_for_time_sync.md) | UCX invokes this callback to retrieves the system query performance counter (QPC) value synchronized with the frame and microframe. |
-| [EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS callback](nc-ucxcontroller-evt_ucx_controller_get_transport_characteristics.md) | UCX invokes this callback to retrieve the host controller characteristics. |
-| [EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY callback](nc-ucxcontroller-evt_ucx_controller_query_usb_capability.md) | The client driver's implementation to determine if the controller supports a specific capability. |
-| [EVT_UCX_CONTROLLER_RESET callback](nc-ucxcontroller-evt_ucx_controller_reset.md) | The client driver's implementation that UCX calls to reset the controller. |
-| [EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION callback](nc-ucxcontroller-evt_ucx_controller_set_transport_characteristics_change_notification.md) | UCX invokes this callback function to specify its preference in transport characteristics for which the client driver must send notifications when changes occur. |
-| [EVT_UCX_CONTROLLER_START_TRACKING_FOR_TIME_SYNC callback](nc-ucxcontroller-evt_ucx_controller_start_tracking_for_time_sync.md) | UCX invokes this callback function to the start time tracking functionality in the controller. |
-| [EVT_UCX_CONTROLLER_STOP_TRACKING_FOR_TIME_SYNC callback](nc-ucxcontroller-evt_ucx_controller_stop_tracking_for_time_sync.md) | UCX invokes this callback function to the stop time tracking functionality in the controller. |
-| [EVT_UCX_CONTROLLER_USBDEVICE_ADD callback](nc-ucxcontroller-evt_ucx_controller_usbdevice_add.md) | The client driver's implementation that UCX calls when a new USB device is detected. |
 
 ## Structures
 

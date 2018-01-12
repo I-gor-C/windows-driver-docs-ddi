@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDSCSI._MPIO_PASS_THROUGH_PATH_EX
+UID: NS:ntddscsi._MPIO_PASS_THROUGH_PATH_EX
 title: _MPIO_PASS_THROUGH_PATH_EX
 author: windows-driver-content
 description: The MPIO_PASS_THROUGH_PATH_EX structure is used together with an IOCTL_MPIO_PASS_THROUGH_PATH_EX request to instruct the port driver to send an embedded SCSI command to the target device.
@@ -7,8 +7,8 @@ old-location: storage\mpio_pass_through_path_ex.htm
 old-project: storage
 ms.assetid: DAEA7A9C-3ACD-49E5-A634-A844D9694412
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MPIO_PASS_THROUGH_PATH_EX, PMPIO_PASS_THROUGH_PATH_EX, *PMPIO_PASS_THROUGH_PATH_EX, MPIO_PASS_THROUGH_PATH_EX
+ms.date: 1/10/2018
+ms.keywords: _MPIO_PASS_THROUGH_PATH_EX, MPIO_PASS_THROUGH_PATH_EX, *PMPIO_PASS_THROUGH_PATH_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MPIO_PASS_THROUGH_PATH_EX, *PMPIO_PASS_THROUGH_PATH_EX
 ---
 
 # _MPIO_PASS_THROUGH_PATH_EX structure
@@ -60,7 +61,7 @@ typedef struct _MPIO_PASS_THROUGH_PATH_EX {
 
 ### -field PassThroughOffset
 
-The offset from the beginning of this structure to a <a href="storage.scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a> structure that is configured in the same manner as it is for an <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a> request.
+The offset from the beginning of this structure to a <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a> structure that is configured in the same manner as it is for an <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_ex.md">IOCTL_SCSI_PASS_THROUGH_EX</a> request.
 
 
 ### -field Version
@@ -124,7 +125,7 @@ The claiming DSM should choose the real LUN.
 
 ### -field PortNumber
 
-The port number if MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set. Otherwise, this member is zero. If MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set, the <b>PathID</b> and <b>TargetId</b> values are taken from address structure associated with the embedded <a href="storage.scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a> structure.
+The port number if MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set. Otherwise, this member is zero. If MPIO_IOCTL_FLAG_USE_SCSIADDRESS is set, the <b>PathID</b> and <b>TargetId</b> values are taken from address structure associated with the embedded <a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a> structure.
 
 
 ### -field MpioPathId
@@ -169,10 +170,10 @@ Header
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_pass_through_direct_ex.md">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>
 </dt>
 <dt>
-<a href="storage.scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a>
+<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_ex.md">SCSI_PASS_THROUGH_EX</a>
 </dt>
 <dt>
-<a href="storage.scsi_pass_through_direct_ex">SCSI_PASS_THROUGH_DIRECT_EX</a>
+<a href="..\ntddscsi\ns-ntddscsi-_scsi_pass_through_direct_ex.md">SCSI_PASS_THROUGH_DIRECT_EX</a>
 </dt>
 <dt>
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_mpio_pass_through_path_ex.md">IOCTL_MPIO_PASS_THROUGH_PATH_EX</a>
@@ -181,12 +182,12 @@ Header
 <a href="..\ntddscsi\ni-ntddscsi-ioctl_mpio_pass_through_path_direct_ex.md">IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT_EX</a>
 </dt>
 <dt>
-<a href="storage.storage_request_block">STORAGE_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MPIO_PASS_THROUGH_PATH_EX structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20MPIO_PASS_THROUGH_PATH_EX structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

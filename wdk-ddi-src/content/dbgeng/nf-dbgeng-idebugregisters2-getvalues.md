@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugRegisters2.GetValues
+UID: NF:dbgeng.IDebugRegisters2.GetValues
 title: IDebugRegisters2::GetValues method
 author: windows-driver-content
 description: The GetValues method gets the value of several of the target's registers.
 old-location: debugger\getvalues.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: d78c54a7-04a5-4c51-bf33-a5b7fb937897
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugRegisters2, IDebugRegisters2::GetValues, GetValues
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugRegisters2::GetValues method
@@ -73,7 +74,7 @@ If <i>Indices</i> is <b>NULL</b>, the registers will be read consecutively start
 
 ### -param Values [out]
 
-Receives the values of the registers.  The number of elements this array holds is <i>Count</i>.  See <a href="debugger.debug_value">DEBUG_VALUE</a> for a description of this parameter type.
+Receives the values of the registers.  The number of elements this array holds is <i>Count</i>.  See <a href="..\dbgeng\ns-dbgeng-_debug_value.md">DEBUG_VALUE</a> for a description of this parameter type.
 
 
 ## -returns
@@ -96,9 +97,9 @@ This list does not contain all the errors that might occur.  For a list of possi
 
 If the return value is not S_OK, some of the registers still might have been read.  If the target was not accessible, the return type is E_UNEXPECTED and <i>Values</i> is unchanged; otherwise, <i>Values</i> will contain partial results and the registers that could not be read will have type DEBUG_VALUE_INVALID.  Ambiguity in the case of the return value E_UNEXPECTED can be avoided by setting the memory of <i>Values</i> to zero before calling this method.
 
-To receive the value of only a single register, use the <a href="debugger.getvalue">GetValue</a> method instead.
+To receive the value of only a single register, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff597624">GetValue</a> method instead.
 
-The method <a href="debugger.getvalues2">GetValues2</a> performs the same task as this method but also allows the register source to be specified.
+The method <a href="https://msdn.microsoft.com/library/windows/hardware/ff549487">GetValues2</a> performs the same task as this method but also allows the register source to be specified.
 
 For an overview of the <a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a> interface and other register-related methods, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554369">Registers</a>.
 
@@ -138,15 +139,15 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
 </dt>
 <dt>
-<a href="debugger.getvalue">GetValue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff597624">GetValue</a>
 </dt>
 <dt>
-<a href="debugger.getvalues2">GetValues2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549487">GetValues2</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugRegisters::GetValues method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugRegisters::GetValues method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.WRITE_REGISTER_BUFFER_UCHAR
+UID: NF:wdm.WRITE_REGISTER_BUFFER_UCHAR
 title: WRITE_REGISTER_BUFFER_UCHAR function
 author: windows-driver-content
 description: The WRITE_REGISTER_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified register.
@@ -7,7 +7,7 @@ old-location: kernel\write_register_buffer_uchar.htm
 old-project: kernel
 ms.assetid: 4cb90f37-c7ce-4f78-9e68-cbe4aaf6ea72
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: WRITE_REGISTER_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

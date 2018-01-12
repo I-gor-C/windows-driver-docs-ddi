@@ -1,5 +1,5 @@
 ---
-UID: NS.SENSORSDEF.SENSOR_VALUE_PAIR
+UID: NS:sensorsdef.SENSOR_VALUE_PAIR
 title: SENSOR_VALUE_PAIR
 author: windows-driver-content
 description: This structure pairs the property keys listed in the Sensor properties section with the data that each key represents.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 0D0B06FE-BE88-4FB2-92FC-8B6D396CEFE8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SENSOR_VALUE_PAIR, PSENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR
+ms.keywords: SENSOR_VALUE_PAIR, SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
 req.product: Windows 10 or later.
 ---
 

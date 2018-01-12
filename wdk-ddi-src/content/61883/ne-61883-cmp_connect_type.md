@@ -1,5 +1,5 @@
 ---
-UID: NE.61883.CMP_CONNECT_TYPE
+UID: NE:61883.CMP_CONNECT_TYPE
 title: CMP_CONNECT_TYPE
 author: windows-driver-content
 description: This enumeration specifies a connection type.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: CMP_CONNECT_TYPE
 ---
 
 # CMP_CONNECT_TYPE enumeration

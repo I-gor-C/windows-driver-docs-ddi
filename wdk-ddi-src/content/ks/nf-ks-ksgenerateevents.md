@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsGenerateEvents
+UID: NF:ks.KsGenerateEvents
 title: KsGenerateEvents function
 author: windows-driver-content
 description: The KsGenerateEvents function generates events of an indicated type that are present in Object's event list.
@@ -7,7 +7,7 @@ old-location: stream\ksgenerateevents.htm
 old-project: stream
 ms.assetid: 3c96012f-8307-417c-be8f-bb466c576669
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsGenerateEvents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: 
 ---
 
 # KsGenerateEvents function
@@ -101,13 +102,13 @@ None
 ## -remarks
 When calling this function, a minidriver must place <i>Data</i> and <i>CallBackContext</i> in a locked, nonpageable data segment. In addition, note that the <i>CallBack</i> is made at DISPATCH_LEVEL. The callback function must be in a locked segment and must be prepared to run at IRQL = DISPATCH_LEVEL. Note that there is an additional issue in DX8 <i>only</i>: <i>EventSet</i> must be in a locked data segment.
 
-Minidrivers typically do not call this function directly and instead use one of the versions that performs appropriate casting: <a href="stream.ksfiltergenerateevents">KsFilterGenerateEvents</a> or <a href="stream.kspingenerateevents">KsPinGenerateEvents</a>.
+Minidrivers typically do not call this function directly and instead use one of the versions that performs appropriate casting: <a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a> or <a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>.
 
 An event is generated if it is present in <i>Object's </i>event list and <i>EventId </i>matches the event's ID, <i>EventSet</i> either matches the event's set GUID or is <b>NULL</b>, and <i>CallBack </i>is either <b>NULL</b> or authorizes the match.
 
 <i>CallBack</i> is a caller-specified callback used for additional match determination. It is prototyped as follows:
 
-AVStream passes the contents of the <b>KsGenerateEvents</b> routine's parameter <i>CallBackContext</i> in this callback's <i>Context</i> parameter. <i>EventEntry</i> is a pointer to a <a href="stream.ksevent_entry">KSEVENT_ENTRY</a> structure that specifies the event that would be generated. The callback function should return <b>TRUE</b> if this event should be generated.
+AVStream passes the contents of the <b>KsGenerateEvents</b> routine's parameter <i>CallBackContext</i> in this callback's <i>Context</i> parameter. <i>EventEntry</i> is a pointer to a <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure that specifies the event that would be generated. The callback function should return <b>TRUE</b> if this event should be generated.
 
 For more information, see <a href="https://msdn.microsoft.com/7add2055-8d3f-432d-8aa1-44459ac197dd">Event Handling in AVStream</a> and <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07-b358-823394baec9b">KS Events</a>. 
 
@@ -172,21 +173,21 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksaddevent">KsAddEvent</a>
+<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
 </dt>
 <dt>
-<a href="stream.ksfiltergenerateevents">KsFilterGenerateEvents</a>
+<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
 </dt>
 <dt>
-<a href="stream.kspingenerateevents">KsPinGenerateEvents</a>
+<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
 </dt>
 <dt>
-<a href="stream.ksevent_entry">KSEVENT_ENTRY</a>
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGenerateEvents function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsGenerateEvents function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

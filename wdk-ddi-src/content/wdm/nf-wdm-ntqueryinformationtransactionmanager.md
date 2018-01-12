@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.NtQueryInformationTransactionManager
+UID: NF:wdm.NtQueryInformationTransactionManager
 title: NtQueryInformationTransactionManager function
 author: windows-driver-content
 description: The ZwQueryInformationTransactionManager routine retrieves information about a specified transaction manager object.
@@ -7,7 +7,7 @@ old-location: kernel\zwqueryinformationtransactionmanager.htm
 old-project: kernel
 ms.assetid: c87e0635-ad0a-4832-97ed-30c731559fb9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: NtQueryInformationTransactionManager
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -60,12 +61,12 @@ NTSTATUS ZwQueryInformationTransactionManager(
 
 ### -param TransactionManagerHandle [in]
 
-A handle to a <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a> that was obtained by a previous call to <a href="kernel.zwcreatetransactionmanager">ZwCreateTransactionManager</a> or <a href="kernel.zwopentransactionmanager">ZwOpenTransactionManager</a>. The handle must have TRANSACTIONMANAGER_QUERY_INFORMATION access to the object.
+A handle to a <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a> or <a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>. The handle must have TRANSACTIONMANAGER_QUERY_INFORMATION access to the object.
 
 
 ### -param TransactionManagerInformationClass [in]
 
-A <a href="kernel.transactionmanager_information_class">TRANSACTIONMANAGER_INFORMATION_CLASS</a>-typed enumeration value that specifies the information to be obtained. This value must be one of the following:
+A <a href="..\wdm\ne-wdm-_transactionmanager_information_class.md">TRANSACTIONMANAGER_INFORMATION_CLASS</a>-typed enumeration value that specifies the information to be obtained. This value must be one of the following:
 
 <ul>
 <li>
@@ -86,7 +87,7 @@ The enumeration's <b>TransactionManagerOnlineProbeInformation</b> value is not u
 
 ### -param TransactionManagerInformation [out]
 
-A pointer to a caller-allocated buffer that receives the information that the <i>TransactionManagerInformationClass</i> parameter specifies. The buffer's structure type must be <a href="kernel.transactionmanager_basic_information">TRANSACTIONMANAGER_BASIC_INFORMATION</a>, <a href="kernel.transactionmanager_log_information">TRANSACTIONMANAGER_LOG_INFORMATION</a>, <a href="kernel.transactionmanager_logpath_information">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>, or <a href="kernel.transactionmanager_recovery_information">TRANSACTIONMANAGER_RECOVERY_INFORMATION</a>.
+A pointer to a caller-allocated buffer that receives the information that the <i>TransactionManagerInformationClass</i> parameter specifies. The buffer's structure type must be <a href="..\wdm\ns-wdm-_transactionmanager_basic_information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a>, <a href="..\wdm\ns-wdm-_transactionmanager_log_information.md">TRANSACTIONMANAGER_LOG_INFORMATION</a>, <a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>, or <a href="..\wdm\ns-wdm-_transactionmanager_recovery_information.md">TRANSACTIONMANAGER_RECOVERY_INFORMATION</a>.
 
 
 ### -param TransactionManagerInformationLength [in]
@@ -205,7 +206,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_powerirpddis">PowerIrpDDis</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -213,36 +214,36 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.transactionmanager_basic_information">TRANSACTIONMANAGER_BASIC_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_transactionmanager_basic_information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.transactionmanager_log_information">TRANSACTIONMANAGER_LOG_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_transactionmanager_log_information.md">TRANSACTIONMANAGER_LOG_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.transactionmanager_logpath_information">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>
+<a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>
 </dt>
 <dt>
-<a href="kernel.transactionmanager_information_class">TRANSACTIONMANAGER_INFORMATION_CLASS</a>
+<a href="..\wdm\ne-wdm-_transactionmanager_information_class.md">TRANSACTIONMANAGER_INFORMATION_CLASS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 </dt>
 <dt>
-<a href="kernel.zwcreatetransactionmanager">ZwCreateTransactionManager</a>
+<a href="..\wdm\nf-wdm-zwcreatetransactionmanager.md">ZwCreateTransactionManager</a>
 </dt>
 <dt>
-<a href="kernel.zwopentransactionmanager">ZwOpenTransactionManager</a>
+<a href="..\wdm\nf-wdm-zwopentransactionmanager.md">ZwOpenTransactionManager</a>
 </dt>
 <dt>
-<a href="kernel.zwrecovertransactionmanager">ZwRecoverTransactionManager</a>
+<a href="..\wdm\nf-wdm-zwrecovertransactionmanager.md">ZwRecoverTransactionManager</a>
 </dt>
 <dt>
-<a href="kernel.zwrollforwardtransactionmanager">ZwRollforwardTransactionManager</a>
+<a href="..\wdm\nf-wdm-zwrollforwardtransactionmanager.md">ZwRollforwardTransactionManager</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryInformationTransactionManager routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ZwQueryInformationTransactionManager routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

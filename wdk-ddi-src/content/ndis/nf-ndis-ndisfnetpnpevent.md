@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisFNetPnPEvent
+UID: NF:ndis.NdisFNetPnPEvent
 title: NdisFNetPnPEvent function
 author: windows-driver-content
 description: A filter driver can call the NdisFNetPnPEvent function to forward a network Plug and Play (PnP) or Power Management event to overlying drivers.
 old-location: netvista\ndisfnetpnpevent.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 383f9dcb-68ba-4323-b25f-668169043f35
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisFNetPnPEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisFNetPnPEvent function
@@ -66,7 +67,7 @@ A handle to the context area for the filter module. The filter driver created an
 ### -param NetPnPEvent [in]
 
 A pointer to a 
-     <a href="netvista.net_pnp_event_notification">
+     <a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">
      NET_PNP_EVENT_NOTIFICATION</a> structure, which describes the network PnP event or Power Management
      event being forwarded by the filter driver.
 
@@ -154,7 +155,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_filter_driver_function">Irql_Filter_Driver_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547930">Irql_Filter_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -171,12 +172,12 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-filter_oid_request.md">FilterOidRequest</a>
 </dt>
 <dt>
-<a href="netvista.net_pnp_event_notification">NET_PNP_EVENT_NOTIFICATION</a>
+<a href="..\ndis\ns-ndis-_net_pnp_event_notification.md">NET_PNP_EVENT_NOTIFICATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisFNetPnPEvent function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisFNetPnPEvent function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsclassextension.ISensorDriver.OnClientUnsubscribeFromEvents
+UID: NF:sensorsclassextension.ISensorDriver.OnClientUnsubscribeFromEvents
 title: ISensorDriver::OnClientUnsubscribeFromEvents method
 author: windows-driver-content
 description: The ISensorDriver::OnClientUnsubscribeFromEvents method notifies the sensor driver that a client application no longer requests event notifications.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <a href="sensors.isensordriver_onclientunsubscribefromevents">ISensorDriver::OnClientUnsubscribeFromEvents</a> method notifies the sensor driver that a client application no longer requests event notifications.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545598">ISensorDriver::OnClientUnsubscribeFromEvents</a> method notifies the sensor driver that a client application no longer requests event notifications.
 
 
 
@@ -80,7 +81,7 @@ The user revokes permission for an application to access the device that contain
 
 The sensor class extension is shutting down.
 
-The cleanup work from a call to <a href="sensors.isensorclassextension_cleanupfile">ISensorClassExtension::CleanupFile</a> has completed.
+The cleanup work from a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545512">ISensorClassExtension::CleanupFile</a> has completed.
 
 You can use this call as a signal to update the reference count of applications requesting events for the specified sensor.
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndischimney.NdisInitiateOffload
+UID: NF:ndischimney.NdisInitiateOffload
 title: NdisInitiateOffload function
 author: windows-driver-content
 description: A protocol or intermediate driver calls the NdisInitiateOffload function to offload TCP chimney state objects.
 old-location: netvista\ndisinitiateoffload.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a1979227-a447-4dd3-8a5d-7986362020cd
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisInitiateOffload
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: 
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 # NdisInitiateOffload function
@@ -61,7 +62,7 @@ VOID NdisInitiateOffload(
 
 The handle that NDIS provided at the 
      <i>NdisBindingHandle</i> parameter of 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>. This handle
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>. This handle
      identifies the binding between the caller and the underlying intermediate driver or offload
      target.
 
@@ -69,7 +70,7 @@ The handle that NDIS provided at the
 ### -param OffloadBlockList [in, out]
 
 A pointer to an 
-     <a href="netvista.ndis_protocol_offload_block_list">
+     <a href="..\ndischimney\ns-ndischimney-_ndis_protocol_offload_block_list.md">
      NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a> structure that can be a stand-alone structure or the root of a
      linked list of such structures. These structures identify the state that is being offloaded.
 
@@ -86,7 +87,7 @@ An intermediate driver calls the
     State-Manipulation Operations</a>.
 
 From the 
-    <a href="netvista.ndis_miniport_offload_block_list">
+    <a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that was passed to its 
     <i>MiniportInitiateOffload</i> function, the intermediate driver constructs an
     NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure. For more information, see 
@@ -139,17 +140,17 @@ Library
 <a href="..\ndischimney\nc-ndischimney-w_initiate_offload_handler.md">MiniportInitiateOffload</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_offload_block_list">
+<a href="..\ndischimney\ns-ndischimney-_ndis_miniport_offload_block_list.md">
    NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a>
 </dt>
 <dt>
-<a href="netvista.ndisminitiateoffloadcomplete">NdisMInitiateOffloadComplete</a>
+<a href="..\ndischimney\nf-ndischimney-ndisminitiateoffloadcomplete.md">NdisMInitiateOffloadComplete</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_protocol_offload_block_list">
+<a href="..\ndischimney\ns-ndischimney-_ndis_protocol_offload_block_list.md">
    NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a>
 </dt>
 <dt>
@@ -161,5 +162,5 @@ Library
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisInitiateOffload function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisInitiateOffload function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

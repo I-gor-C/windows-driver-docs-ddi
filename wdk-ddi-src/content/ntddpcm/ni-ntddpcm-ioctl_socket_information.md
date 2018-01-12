@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddpcm.IOCTL_SOCKET_INFORMATION
+UID: NI:ntddpcm.IOCTL_SOCKET_INFORMATION
 title: IOCTL_SOCKET_INFORMATION
 author: windows-driver-content
 description: This request retrieves socket information for the socket that is indicated by the caller.
@@ -8,7 +8,7 @@ old-project: PCMCIA
 ms.assetid: 95563d68-e812-4c62-9668-8cb25b4735aa
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS, PPCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
+ms.keywords: _PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS
 ---
 
 # IOCTL_SOCKET_INFORMATION IOCTL

@@ -1,14 +1,14 @@
 ---
-UID: NC.netdma.DMA_APPEND_HANDLER
+UID: NC:netdma.DMA_APPEND_HANDLER
 title: DMA_APPEND_HANDLER
 author: windows-driver-content
 description: The ProviderAppendDma function appends a linked list of DMA descriptors to the last descriptor on a DMA channel.
 old-location: netvista\providerappenddma.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 51de8ddf-cbfc-4e49-b44a-207307a937e7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _MIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE, PMIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+ms.date: 1/8/2018
+ms.keywords: _MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PMIRACAST_DRIVER_INTERFACE, MIRACAST_DRIVER_INTERFACE
 ---
 
 # DMA_APPEND_HANDLER callback
@@ -68,7 +69,7 @@ A pointer that identifies a DMA channel's context area. The DMA provider returne
 ### -param DescriptorVirtualAddress [in]
 
 A pointer to the virtual address of the first 
-     <a href="netvista.net_dma_descriptor">NET_DMA_DESCRIPTOR</a> structure in a linked
+     <a href="..\netdma\ns-netdma-_net_dma_descriptor.md">NET_DMA_DESCRIPTOR</a> structure in a linked
      list of DMA descriptors. The corresponding physical address is specified at the 
      <i>DescriptorPhysicalAddress</i> parameter.
 
@@ -120,7 +121,7 @@ The NetDMA interface sets the
 If the current descriptor in an active transfer is the last descriptor, the DMA engine must reread the
     last descriptor. The 
     <b>NextDescriptor</b> member in the last 
-    <a href="netvista.net_dma_descriptor">NET_DMA_DESCRIPTOR</a> structure should have
+    <a href="..\netdma\ns-netdma-_net_dma_descriptor.md">NET_DMA_DESCRIPTOR</a> structure should have
     a new address, and the DMA engine should continue with the next descriptor. If the current descriptor is
     not the last descriptor, the DMA engine can continue processing DMA descriptors with no additional
     tasks.
@@ -169,7 +170,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.net_dma_descriptor">NET_DMA_DESCRIPTOR</a>
+<a href="..\netdma\ns-netdma-_net_dma_descriptor.md">NET_DMA_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
@@ -182,5 +183,5 @@ IRQL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DMA_APPEND_HANDLER callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DMA_APPEND_HANDLER callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

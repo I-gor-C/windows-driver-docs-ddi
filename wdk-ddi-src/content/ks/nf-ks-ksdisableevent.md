@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsDisableEvent
+UID: NF:ks.KsDisableEvent
 title: KsDisableEvent function
 author: windows-driver-content
 description: The KsDisableEvent function disables events requested through IOCTL_KS_DISABLE_EVENT.
@@ -7,7 +7,7 @@ old-location: stream\ksdisableevent.htm
 old-project: stream
 ms.assetid: 4af94bc4-9df3-4b37-a810-303748cc4b75
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsDisableEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsDisableEvent function
@@ -63,7 +64,7 @@ Specifies the IRP passed to the removal function, which uses the IRP to obtain c
 
 ### -param EventsList [in, out]
 
-Points to the head of the list of <a href="stream.ksevent_entry">KSEVENT_ENTRY</a> items on which the event may be found. If a client uses multiple event lists and does not know what list this event is on, the client can call this function multiple times. An event not found will return STATUS_UNSUCCESSFUL.
+Points to the head of the list of <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> items on which the event may be found. If a client uses multiple event lists and does not know what list this event is on, the client can call this function multiple times. An event not found will return STATUS_UNSUCCESSFUL.
 
 
 ### -param EventsFlags [in]
@@ -124,12 +125,12 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksenableevent">KsEnableEvent</a>
+<a href="..\ks\nf-ks-ksenableevent.md">KsEnableEvent</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsDisableEvent function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsDisableEvent function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

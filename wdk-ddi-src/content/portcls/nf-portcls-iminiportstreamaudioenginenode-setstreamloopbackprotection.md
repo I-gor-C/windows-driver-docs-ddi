@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportStreamAudioEngineNode.SetStreamLoopbackProtection
+UID: NF:portcls.IMiniportStreamAudioEngineNode.SetStreamLoopbackProtection
 title: IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection method
 author: windows-driver-content
 description: Sets the loopback protection status of the audio engine node.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection method

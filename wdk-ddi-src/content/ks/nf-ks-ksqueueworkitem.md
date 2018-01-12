@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsQueueWorkItem
+UID: NF:ks.KsQueueWorkItem
 title: KsQueueWorkItem function
 author: windows-driver-content
 description: The KsQueueWorkItem function queues the specified work item with a worker previous created by the KsRegisterWorker function.
@@ -7,7 +7,7 @@ old-location: stream\ksqueueworkitem.htm
 old-project: stream
 ms.assetid: a700979e-aee4-4bce-8f98-b44b864fbb43
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsQueueWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsQueueWorkItem function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>KsQueueWorkItem</b> function queues the specified work item with a worker previous created by the <a href="stream.ksregisterworker">KsRegisterWorker</a> function.
+The <b>KsQueueWorkItem</b> function queues the specified work item with a worker previous created by the <a href="..\ks\nf-ks-ksregisterworker.md">KsRegisterWorker</a> function.
 
 
 
@@ -61,7 +62,7 @@ Specifies the previously allocated worker.
 
 ### -param WorkItem [in]
 
-Specifies the initialized work item to queue. This work item is only associated with the worker as long as the worker is on a queue. The work item must have been initialized by <a href="kernel.ioallocateworkitem">IoAllocateWorkItem</a>.
+Specifies the initialized work item to queue. This work item is only associated with the worker as long as the worker is on a queue. The work item must have been initialized by <a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>.
 
 
 ## -returns

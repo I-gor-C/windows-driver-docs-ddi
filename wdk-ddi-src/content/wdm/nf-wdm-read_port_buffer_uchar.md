@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.READ_PORT_BUFFER_UCHAR
+UID: NF:wdm.READ_PORT_BUFFER_UCHAR
 title: READ_PORT_BUFFER_UCHAR function
 author: windows-driver-content
 description: The READ_PORT_BUFFER_UCHAR routine reads a number of bytes from the specified port address into a buffer.
@@ -7,7 +7,7 @@ old-location: kernel\read_port_buffer_uchar.htm
 old-project: kernel
 ms.assetid: a32a7c6a-16dd-4d12-aa32-6bdb60990568
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: READ_PORT_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hal.lib
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

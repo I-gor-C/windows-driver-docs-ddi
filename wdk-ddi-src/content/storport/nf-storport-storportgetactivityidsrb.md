@@ -1,5 +1,5 @@
 ---
-UID: NF.storport.StorPortGetActivityIdSrb
+UID: NF:storport.StorPortGetActivityIdSrb
 title: StorPortGetActivityIdSrb function
 author: windows-driver-content
 description: Retrieves the Event Tracing for Windows (ETW) activity ID associated with a request block.
@@ -7,7 +7,7 @@ old-location: storage\storportgetactivityidsrb.htm
 old-project: storage
 ms.assetid: 63E956F5-C87C-45AA-BE16-2AD07F3BA050
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: StorPortGetActivityIdSrb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Storport.lib
 req.dll: 
 req.irql: Any
+req.typenames: STOR_SPINLOCK
 req.product: Windows 10 or later.
 ---
 

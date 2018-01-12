@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._TEXTUAL_LEAF
+UID: NS:1394._TEXTUAL_LEAF
 title: _TEXTUAL_LEAF
 author: windows-driver-content
 description: The TEXTUAL_LEAF structure describes the device description that can be stored in the Configuration ROM of devices that satisfy the PC 98 or PC 99 specifications.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 883c561c-0d1b-4a6c-946e-8ca567b12c9a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _TEXTUAL_LEAF, *PTEXTUAL_LEAF, TEXTUAL_LEAF, PTEXTUAL_LEAF
+ms.keywords: _TEXTUAL_LEAF, *PTEXTUAL_LEAF, TEXTUAL_LEAF
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PTEXTUAL_LEAF, TEXTUAL_LEAF
 ---
 
 # _TEXTUAL_LEAF structure

@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_GEOFENCE_CREATE_RESPONSE
+UID: NS:gnssdriver.GNSS_GEOFENCE_CREATE_RESPONSE
 title: GNSS_GEOFENCE_CREATE_RESPONSE
 author: windows-driver-content
 description: This structure defines the response expected from the GNSS engine when a new geofence is created.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: D832B534-34E2-402F-833A-C072007E3106
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE, *PGNSS_GEOFENCE_CREATE_RESPONSE, PGNSS_GEOFENCE_CREATE_RESPONSE
+ms.keywords: GNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE, *PGNSS_GEOFENCE_CREATE_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_GEOFENCE_CREATE_RESPONSE, *PGNSS_GEOFENCE_CREATE_RESPONSE
 ---
 
 # GNSS_GEOFENCE_CREATE_RESPONSE structure

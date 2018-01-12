@@ -1,5 +1,5 @@
 ---
-UID: NS.DISPMPRT._DXGK_DEBUG_REPORT_INTERFACE
+UID: NS:dispmprt._DXGK_DEBUG_REPORT_INTERFACE
 title: _DXGK_DEBUG_REPORT_INTERFACE
 author: windows-driver-content
 description: The DXGK_DEBUG_REPORT_INTERFACE structure contains pointers to functions in the Debug Report interface, which is implemented by the display port driver.
@@ -7,8 +7,8 @@ old-location: display\dxgk_debug_report_interface.htm
 old-project: display
 ms.assetid: fb1bd1dd-feab-4aa4-8b4f-932f0d5ec4ab
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGK_DEBUG_REPORT_INTERFACE, *PDXGK_DEBUG_REPORT_INTERFACE, DXGK_DEBUG_REPORT_INTERFACE, PDXGK_DEBUG_REPORT_INTERFACE
+ms.date: 12/29/2017
+ms.keywords: _DXGK_DEBUG_REPORT_INTERFACE, DXGK_DEBUG_REPORT_INTERFACE, *PDXGK_DEBUG_REPORT_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGK_DEBUG_REPORT_INTERFACE, *PDXGK_DEBUG_REPORT_INTERFACE
 ---
 
 # _DXGK_DEBUG_REPORT_INTERFACE structure
@@ -38,7 +39,7 @@ req.irql: PASSIVE_LEVEL
 
 
 ## -description
-The DXGK_DEBUG_REPORT_INTERFACE structure contains pointers to functions in the <a href="display.debug_report_interface">Debug Report interface</a>, which is implemented by the display port driver.
+The DXGK_DEBUG_REPORT_INTERFACE structure contains pointers to functions in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551798">Debug Report interface</a>, which is implemented by the display port driver.
 
 
 
@@ -96,17 +97,17 @@ A pointer to an interface dereference function that is implemented by the displa
 
 ### -field DbgReportCreate
 
-A pointer to the display port driver's <a href="display.dbgreportcreate2">DbgReportCreate</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff549088">DbgReportCreate</a> function.
 
 
 ### -field DbgReportSecondaryData
 
-A pointer to the display port driver's <a href="display.dbgreportsecondarydata2">DbgReportSecondaryData</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff549099">DbgReportSecondaryData</a> function.
 
 
 ### -field DbgReportComplete
 
-A pointer to the display port driver's <a href="display.dbgreportcomplete">DbgReportComplete</a> function. 
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff549080">DbgReportComplete</a> function. 
 
 
 ## -remarks

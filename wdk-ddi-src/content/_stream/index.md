@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:stream
 ---
 
 # Streaming media devices
@@ -86,11 +86,9 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [KsCompletePendingRequest function](..\ks\nf-ks-kscompletependingrequest.md) | The KsCompletePendingRequest function is used to complete an I/O request in response to which an AVStream dispatch function previously returned STATUS_PENDING. |
 | [KsCopyObjectBagItems function](..\ks\nf-ks-kscopyobjectbagitems.md) | The KsCopyObjectBagItems function copies all items from one object bag into another. |
 | [KsCreateAllocator function](..\ks\nf-ks-kscreateallocator.md) | The KsCreateAllocator function creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP. |
-| [KsCreateAllocator function](..\ks\nf-ks-kscreateallocator~r1.md) | The KsCreateAllocator function creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP. |
 | [KsCreateAllocator2 function](..\ks\nf-ks-kscreateallocator2.md) | Creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP. |
 | [KsCreateBusEnumObject function](..\swenum\nf-swenum-kscreatebusenumobject.md) | The KsCreateBusEnumObject function creates a demand-load bus enumerator object and initializes it for use with the demand-load bus enumerator services. |
 | [KsCreateClock function](..\ks\nf-ks-kscreateclock.md) | The KsCreateClock function creates a handle to a clock instance. |
-| [KsCreateClock function](..\ks\nf-ks-kscreateclock~r1.md) | The KsCreateClock function creates a handle to a clock instance. |
 | [KsCreateClock2 function](..\ks\nf-ks-kscreateclock2.md) | Creates a handle to a clock instance. Call this function after the Component Object Model (COM) is initialized. |
 | [KsCreateDefaultAllocator function](..\ks\nf-ks-kscreatedefaultallocator.md) | Given a validated IRP_MJ_CREATE request, the KsCreateDefaultAllocator function creates a default allocator that uses the specified memory pool and associates the IoGetCurrentIrpStackLocation(Irp)-&gt;FileObject with the allocator using an internal dispatch table (KSDISPATCH_TABLE). |
 | [KsCreateDefaultAllocatorEx function](..\ks\nf-ks-kscreatedefaultallocatorex.md) | Creates a default allocator that uses the specified memory pool and associates the IoGetCurrentIrpStackLocation(pIrp)-&gt;FileObject with this allocator using an internal dispatch table (KSDISPATCH_TABLE). |
@@ -99,10 +97,8 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [KsCreateDevice function](..\ks\nf-ks-kscreatedevice.md) | The KsCreateDevice function creates an AVStream device. |
 | [KsCreateFilterFactory function](..\ks\nf-ks-kscreatefilterfactory.md) | The KsCreateFilterFactory function adds a filter factory to a given device. |
 | [KsCreatePin function](..\ks\nf-ks-kscreatepin.md) | The KsCreatePin function passes a connection request to a device, creating a pin instance. This function can only be called at PASSIVE_LEVEL for kernel-mode clients. |
-| [KsCreatePin function](..\ks\nf-ks-kscreatepin~r1.md) | The KsCreatePin function passes a connection request to a device, creating a pin instance. This function can only be called at PASSIVE_LEVEL for kernel-mode clients. |
 | [KsCreatePin2 function](..\ks\nf-ks-kscreatepin2.md) | Passes a connection request to a device, creating a pin instance. |
 | [KsCreateTopologyNode function](..\ks\nf-ks-kscreatetopologynode.md) | The KsCreateTopologyNode function creates a handle to a topology node instance. The function can only be called at PASSIVE_LEVEL. |
-| [KsCreateTopologyNode function](..\ks\nf-ks-kscreatetopologynode~r1.md) | The KsCreateTopologyNode function creates a handle to a topology node instance. The function can only be called at PASSIVE_LEVEL. |
 | [KsCreateTopologyNode2 function](..\ks\nf-ks-kscreatetopologynode2.md) | Creates a handle to a topology node instance. |
 | [KsDecrementCountedWorker function](..\ks\nf-ks-ksdecrementcountedworker.md) | Decrements the current worker count of a worker previous created by KsRegisterCountedWorker. This should be called after each task within a worker has been completed. |
 | [KsDefaultAddEventHandler function](..\ks\nf-ks-ksdefaultaddeventhandler.md) | The KsDefaultAddEventHandler function is a default routine to handle event 'add' requests. |
@@ -268,6 +264,7 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [KsProbeStreamIrp function](..\ks\nf-ks-ksprobestreamirp.md) | The KsProbeStreamIrp function makes the specified modifications to the input and output buffers of the given IRP based on the flags passed, and it then validates the stream header. |
 | [KsProcessPinUpdate function](..\ks\nf-ks-ksprocesspinupdate.md) | The KsProcessPinUpdate function is called from within a filter-centric filter's AVStrMiniFilterProcess dispatch to update a process pin. |
 | [KsPropertyHandler function](..\ks\nf-ks-kspropertyhandler.md) | Drivers call KsPropertyHandler function for IRP handling. |
+| [KsPropertyHandlerWithAllocator function](..\ks\nf-ks-kspropertyhandlerwithallocator.md) | The KsPropertyHandlerWithAllocator performs the same handling as KsPropertyHandler, with the same restrictions, but allows an optional allocator callback to be used to provide a buffer for the parameters. |
 | [KsPublishDeviceProfile function](..\ks\nf-ks-kspublishdeviceprofile.md) | The KsPublishDeviceProfile API is called to publish device profile information. |
 | [KsQueryDevicePnpObject function](..\ks\nf-ks-ksquerydevicepnpobject.md) | The KsQueryDevicePnpObject function returns the PnP device object that can be stored in the device header. This is the next device object on the PnP stack and is the device object that PnP requests are forwarded to if KsDefaultDispatchPnp is used. |
 | [KsQueryInformationFile function](..\ks\nf-ks-ksqueryinformationfile.md) | The KsQueryInformationFile function performs an information query against the specified file object. The function attempts to use FastIoDispatch if possible, or it generates an information request against the device object. |
@@ -324,6 +321,7 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [KsUnregisterWorker function](..\ks\nf-ks-ksunregisterworker.md) | The KsUnregisterWorker function allows clients to unregister a worker. |
 | [KsUnserializeObjectPropertiesFromRegistry function](..\ks\nf-ks-ksunserializeobjectpropertiesfromregistry.md) | The KsUnserializeObjectPropertiesFromRegistry function, when given a destination object and a registry path, enumerates the named values and applies them as serialized data to the specified property sets listed in the serialized data. |
 | [KsValidateAllocatorCreateRequest function](..\ks\nf-ks-ksvalidateallocatorcreaterequest.md) | The KsValidateAllocatorCreateRequest function validates an IRP_MJ_CREATE request as an allocator request and returns the create structure associated with the request on success. |
+| [KsValidateAllocatorFramingEx function](..\ks\nf-ks-ksvalidateallocatorframingex.md) | For system use only. |
 | [KsValidateClockCreateRequest function](..\ks\nf-ks-ksvalidateclockcreaterequest.md) | The KsValidateClockCreateRequest function validates the clock creation request and returns the create structure associated with the request.This can only be called at PASSIVE_LEVEL. |
 | [KsValidateConnectRequest function](..\ks\nf-ks-ksvalidateconnectrequest.md) | The KsValidateConnectRequest function validates a connection request and returns a pointer to the connection structure associated with the request.This function can only be called at PASSIVE_LEVEL. |
 | [KsValidateTopologyNodeCreateRequest function](..\ks\nf-ks-ksvalidatetopologynodecreaterequest.md) | The KsValidateTopologyNodeCreateRequest function validates a topology node creation request and returns the create structure associated with the request. The function can only be called at PASSIVE_LEVEL. |
@@ -334,12 +332,15 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [StreamClassDebugAssert function](..\strmini\nf-strmini-streamclassdebugassert.md) | A minidriver can use the StreamClassDebugAssert routine in a checked build environment to fail an assert, causing the stream class driver to output a debug message and break into the kernel debugger. |
 | [StreamClassDebugPrint function](..\strmini\nf-strmini-streamclassdebugprint.md) | In a checked build environment, the minidriver can use the StreamClassDebugPrint routine to print debug messages to the application window and to the Debugger Command window. |
 | [StreamClassDeviceNotification function](..\strmini\nf-strmini-streamclassdevicenotification.md) | Minidrivers use the StreamClassDeviceNotification routine to notify the class driver that it has completed a stream request, or that an event has occurred. |
+| [StreamClassFilterReenumerateStreams function](..\strmini\nf-strmini-streamclassfilterreenumeratestreams.md) | Obsolete. Do not use. |
 | [StreamClassGetDmaBuffer function](..\strmini\nf-strmini-streamclassgetdmabuffer.md) | The StreamClassGetDmaBuffer routine returns a pointer to the DMA buffer that the class driver allocates for the minidriver. |
 | [StreamClassGetNextEvent function](..\strmini\nf-strmini-streamclassgetnextevent.md) | Minidrivers can use the StreamClassGetNextEvent routine to search the event queue of a device or of a particular stream. |
 | [StreamClassGetPhysicalAddress function](..\strmini\nf-strmini-streamclassgetphysicaladdress.md) | The StreamClassGetPhysicalAddress routine translates a virtual memory address to a physical memory address and locks the corresponding physical memory for a DMA operation. |
 | [StreamClassQueryMasterClock function](..\strmini\nf-strmini-streamclassquerymasterclock.md) | When the minidriver calls the StreamClassQueryMasterClock routine, the class driver queries the appropriate time value of the master clock asynchronously, and passes the result to the routine passed in the ClockCallbackRoutine parameter. |
 | [StreamClassQueryMasterClockSync function](..\strmini\nf-strmini-streamclassquerymasterclocksync.md) | The minidriver may call the StreamClassQueryMasterClockSync routine to synchronously query a stream's master clock. |
 | [StreamClassReadWriteConfig function](..\strmini\nf-strmini-streamclassreadwriteconfig.md) | The StreamClassReadWriteConfig routine reads or writes configuration data for the minidriver's parent bus driver. |
+| [StreamClassReenumerateStreams function](..\strmini\nf-strmini-streamclassreenumeratestreams.md) | Obsolete. Do not use. |
+| [StreamClassRegisterAdapter function](..\strmini\nf-strmini-streamclassregisteradapter.md) | The StreamClassRegisterAdapter routine registers a stream class minidriver. |
 | [StreamClassRegisterFilterWithNoKSPins function](..\strmini\nf-strmini-streamclassregisterfilterwithnokspins.md) | The StreamClassRegisterFilterWithNoKSPins routine is used to register filter drivers with Microsoft DirectShow that have no kernel streaming pins and, therefore, do not stream in kernel mode. |
 | [StreamClassScheduleTimer function](..\strmini\nf-strmini-streamclassscheduletimer.md) | The minidriver calls the StreamClassScheduleTimer routine to schedule a timer, and to specify a routine that is called when the timer expires. |
 | [StreamClassStreamNotification function](..\strmini\nf-strmini-streamclassstreamnotification.md) | Streams use the StreamClassStreamNotification routine to notify the class driver that it has completed a stream request, or that an event has occurred. |
@@ -356,14 +357,24 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 
 | Title   | Description   |
 | ---- |:---- |
+| [PADAPTER_RECEIVE_PACKET_ROUTINE callback](..\usbcamdi\nc-usbcamdi-padapter_receive_packet_routine.md) | A camera minidriver's AdapterReceivePacket callback function processes adapter-based stream request blocks (SRBs) passed to it by the stream class driver. |
+| [PCAM_ALLOCATE_BW_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_allocate_bw_routine.md) | A camera minidriver's CamAllocateBandwidth callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
 | [PCAM_ALLOCATE_BW_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_allocate_bw_routine_ex.md) | A camera minidriver's CamAllocateBandwidthEx callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
+| [PCAM_CONFIGURE_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_configure_routine.md) | A camera minidriver's CamConfigure callback function configures the isochronous streaming interface. |
 | [PCAM_CONFIGURE_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_configure_routine_ex.md) | A camera minidriver's CamConfigureEx callback function configures the isochronous streaming interface. |
+| [PCAM_FREE_BW_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_free_bw_routine.md) | A camera minidriver's CamFreeBandwidth callback function selects an alternate setting within the USB video streaming interface that uses no bandwidth. |
 | [PCAM_FREE_BW_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_free_bw_routine_ex.md) | A camera minidriver's CamFreeBandwidthEx callback function selects an alternate setting within the USB video streaming interface that uses no bandwidth. |
-| [PCAM_INITIALIZE_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_initialize_routine.md) | A camera minidriver's CamInitialize callback function initializes the device. |
+| [PCAM_INITIALIZE_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_initialize_routine.md) | A camera minidriver's callback function initializes the device or performs any minidriver-specific clean-up that is required. |
+| [PCAM_NEW_FRAME_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_new_frame_routine.md) | A camera minidriver's CamNewVideoFrame callback function initializes a new video frame context structure. |
 | [PCAM_NEW_FRAME_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_new_frame_routine_ex.md) | A camera minidriver's CamNewVideoFrameEx callback function initializes a new video frame context structure. |
+| [PCAM_PROCESS_PACKET_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_process_packet_routine.md) | A camera minidriver's CamProcessUSBPacket callback function processes a USB packet. |
 | [PCAM_PROCESS_PACKET_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_process_packet_routine_ex.md) | A camera minidriver's CamProcessUSBPacketEx callback function processes a USB packet. |
+| [PCAM_PROCESS_RAW_FRAME_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine.md) | A camera minidriver's CamProcessRawVideoFrame callback function decodes a raw video frame. |
 | [PCAM_PROCESS_RAW_FRAME_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine_ex.md) | A camera minidriver's CamProcessRawVideoFrameEx callback function decodes a raw video frame. |
+| [PCAM_START_CAPTURE_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_start_capture_routine.md) | A camera minidriver's CamStartCapture callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
 | [PCAM_START_CAPTURE_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_start_capture_routine_ex.md) | A camera minidriver's CamStartCaptureEx callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream. |
+| [PCAM_STATE_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_state_routine.md) | A camera minidriver's state callback function restores a previously saved device context state or saves the current device context state. |
+| [PCAM_STOP_CAPTURE_ROUTINE callback](..\usbcamdi\nc-usbcamdi-pcam_stop_capture_routine.md) | A camera minidriver's CamStopCapture callback function performs any processing after the stream is stopped. |
 | [PCAM_STOP_CAPTURE_ROUTINE_EX callback](..\usbcamdi\nc-usbcamdi-pcam_stop_capture_routine_ex.md) | A camera minidriver's CamStopCaptureEx callback function performs any processing after the stream is stopped. |
 | [PCOMMAND_COMPLETE_FUNCTION callback](..\usbcamdi\nc-usbcamdi-pcommand_complete_function.md) | A camera minidriver's CommandCompleteFunction callback function allows the camera minidriver to perform any additional tasks necessary to complete certain USBCAMD services |
 | [PFNALLOCATOR_ALLOCATEFRAME callback](..\ks\nc-ks-pfnallocator_allocateframe.md) | The KStrAllocateFrame routine describes a vendor-supplied frame allocation function. |
@@ -373,8 +384,8 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [PFNKSADDEVENT callback](..\ks\nc-ks-pfnksaddevent.md) | An AVStream minidriver's AVStrMiniAddEvent routine is called when a client registers to be notified of an event. This routine is optional. |
 | [PFNKSALLOCATOR callback](..\ks\nc-ks-pfnksallocator.md) | Minidrivers can optionally supply a callback function of type PFNKSALLOCATOR as a parameter in calls to KsEnableEventWithAllocator, KsPropertyHandlerWithAllocator, and KsMethodHandlerWithAllocator. |
 | [PFNKSCANCELTIMER callback](..\ks\nc-ks-pfnkscanceltimer.md) | A streaming minidriver's KStrCancelTimer routine is called to cancel a custom timer object that was previously specified in the SetTimer parameter in a call to KsAllocateDefaultClockEx. |
-| [PFNKSCLOCK_CORRELATEDTIME callback](..\ks\nc-ks-pfnksclock_correlatedtime.md) | KStrClockGetCorrelatedPhysicalTime is a system-supplied routine that retrieves both the current system time minus suspended delta and the corresponding clock tick since boot. |
-| [PFNKSCLOCK_GETTIME callback](..\ks\nc-ks-pfnksclock_gettime.md) | KStrClockGetPhysicalTime is a system-supplied routine that retrieves the current system time minus any suspended delta. |
+| [PFNKSCLOCK_CORRELATEDTIME callback](..\ks\nc-ks-pfnksclock_correlatedtime.md) | KStrClockGetCorrelatedTime is a system-supplied routine that retrieves both the current system time and the corresponding clock tick count since boot. |
+| [PFNKSCLOCK_GETTIME callback](..\ks\nc-ks-pfnksclock_gettime.md) | KStrClockGetTime is a system-supplied routine that retrieves the current system time. |
 | [PFNKSCONTEXT_DISPATCH callback](..\ks\nc-ks-pfnkscontext_dispatch.md) | A streaming minidriver's KStrContextDispatch routine is called to process IRP_MJ_POWER IRPs. |
 | [PFNKSCORRELATEDTIME callback](..\ks\nc-ks-pfnkscorrelatedtime.md) | A streaming minidriver's KStrCorrelatedTime routine is called to retrieve both the presentation time and physical time in a correlated manner. This allows the clock owner to completely determine the current time. |
 | [PFNKSDEFAULTALLOCATE callback](..\ks\nc-ks-pfnksdefaultallocate.md) | An AVStream minidriver's AVStrMiniAllocate routine allocates a frame using the allocator specified in the Context parameter. |
@@ -382,31 +393,31 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [PFNKSDELETEALLOCATOR callback](..\ks\nc-ks-pfnksdeleteallocator.md) | An AVStream minidriver's AVStrMiniDeleteAllocator routine deletes the allocator that is associated with a pin. |
 | [PFNKSDEVICE callback](..\ks\nc-ks-pfnksdevice.md) | An AVStream minidriver's AVStrMiniDevicePostStart routine is called when AVStream performs post-PnP-start processing. Use it to load drivers at start time, for example. Such events then will occur in the context of a worker thread after PnP start. |
 | [PFNKSDEVICECREATE callback](..\ks\nc-ks-pfnksdevicecreate.md) | An AVStream minidriver's AVStrMiniDeviceAdd routine notifies the minidriver that AVStream's PnP AddDevice routine has completed. |
-| [PFNKSDEVICEIRP callback](..\ks\nc-ks-pfnksdeviceirp.md) | AVStream calls a minidriver's AVStrMiniDeviceQueryInterface routine when it receives an IRP_MN_QUERY_INTERFACE. |
-| [PFNKSDEVICEIRPVOID callback](..\ks\nc-ks-pfnksdeviceirpvoid.md) | An AVStream minidriver's AVStrMiniDeviceCancelRemove routine is called when an IRP_MN_CANCEL_REMOVE_DEVICE is dispatched by the device. |
+| [PFNKSDEVICEIRP callback](..\ks\nc-ks-pfnksdeviceirp.md) | An AVStream minidriver's IRP handler routine is called when these IRPs is dispatched by the device.IRP_MN_QUERY_REMOVE_DEVICEIRP_MN_QUERY_STOP_DEVICEIRP_MN_QUERY_INTERFACE |
+| [PFNKSDEVICEIRPVOID callback](..\ks\nc-ks-pfnksdeviceirpvoid.md) | An AVStream minidriver's IRP handling routine is called when these IRPs are dispatched by the device.IRP_MN_CANCEL_STOP_DEVICEIRP_MN_CANCEL_REMOVE_DEVICEIRP_MN_REMOVE_DEVICEIRP_MN_STOP_DEVICEIRP_MN_SURPRISE_REMOVAL |
 | [PFNKSDEVICEPNPSTART callback](..\ks\nc-ks-pfnksdevicepnpstart.md) | An AVStream minidriver's AVStrMiniDeviceStart routine is called when an IRP_MN_START_DEVICE request is sent for a specified device. |
 | [PFNKSDEVICEQUERYCAPABILITIES callback](..\ks\nc-ks-pfnksdevicequerycapabilities.md) | An AVStream minidriver's AVStrMiniDeviceQueryCapabilities routine is called when an IRP_MN_QUERY_CAPABILITIES is dispatched by the device. |
 | [PFNKSDEVICEQUERYPOWER callback](..\ks\nc-ks-pfnksdevicequerypower.md) | AVStream calls a minidriver's AVStrMiniDeviceQueryPower routine when it receives an IRP_MN_QUERY_POWER request. |
 | [PFNKSDEVICESETPOWER callback](..\ks\nc-ks-pfnksdevicesetpower.md) | AVStream calls a minidriver's AVStrMiniDeviceSetPower routine when it receives an IRP_MN_SET_POWER. |
 | [PFNKSFASTHANDLER callback](..\ks\nc-ks-pfnksfasthandler.md) | KStrFastHandler is a driver-supplied routine that handles a property or method request without the creation of an IRP. |
-| [PFNKSFILTERIRP callback](..\ks\nc-ks-pfnksfilterirp.md) | An AVStream minidriver's AVStrMiniFilterClose routine is called when a filter is closed. It usually is provided by minidrivers that want to free the context and resources associated with the filter. |
+| [PFNKSFILTERIRP callback](..\ks\nc-ks-pfnksfilterirp.md) | An AVStream minidriver's AVStrMiniFilterCreate routine is called when a filter receives an IRP. |
 | [PFNKSFILTERPROCESS callback](..\ks\nc-ks-pfnksfilterprocess.md) | An AVStream minidriver's AVStrMiniFilterProcess routine is called when the filter is meant to process frames. It is used to perform Filter-Centric Processing. |
 | [PFNKSFILTERVOID callback](..\ks\nc-ks-pfnksfiltervoid.md) | An AVStream minidriver's AVStrMiniFilterReset routine is called when AVStream receives an IOCTL_KS_RESET_STATE to return the filter to the state it was in at Acquire-time. |
-| [PFNKSHANDLER callback](..\ks\nc-ks-pfnkshandler.md) | The minidriver-provided KStrGetPropertyHandler routine is called when Kernel Streaming receives a get property request. |
+| [PFNKSHANDLER callback](..\ks\nc-ks-pfnkshandler.md) | The minidriver-provided KStrMethodHandler routine is called when Kernel Streaming receives an IOCTL_KS_METHOD. Provide a pointer to this handler in the relevant KSMETHOD_ITEM structure. |
 | [PFNKSINTERSECTHANDLER callback](..\ks\nc-ks-pfnksintersecthandler.md) | A streaming minidriver's KStrIntersectHandler routine is called to compare a data range to determine if there is an intersection, and if so, the data format of the intersection. |
 | [PFNKSINTERSECTHANDLEREX callback](..\ks\nc-ks-pfnksintersecthandlerex.md) | AVStream calls a minidriver's AVStrMiniIntersectHandlerEx routine to determine the highest quality intersection of two data ranges. |
 | [PFNKSIRPLISTCALLBACK callback](..\ks\nc-ks-pfnksirplistcallback.md) | A streaming minidriver's KStrIrpListCallback routine is called to determine whether the passed in IRP should be moved from the source list to the destination list, or if IRP enumeration should be terminated. |
 | [PFNKSITEMFREECALLBACK callback](..\ks\nc-ks-pfnksitemfreecallback.md) | A streaming minidriver's KStrItemFreeCallback routine is called to free a previously allocated create item. KStrItemFreeCallback allows the minidriver to perform any cleanup, including flushing security descriptor changes, if necessary. |
-| [PFNKSPIN callback](..\ks\nc-ks-pfnkspin.md) | An AVStream minidriver's AVStrMiniPinConnect routine is called when the relevant KSPIN is serving as a sink pin and is connected to an AVStream source pin. |
+| [PFNKSPIN callback](..\ks\nc-ks-pfnkspin.md) | An AVStream minidriver's callback routine is called when |
 | [PFNKSPINFRAMERETURN callback](..\ks\nc-ks-pfnkspinframereturn.md) | An AVStream minidriver's AVStrMiniFrameReturn routine is called when an injected frame has completed its trip around the circuit and is ready to be recycled or freed. |
 | [PFNKSPINHANDSHAKE callback](..\ks\nc-ks-pfnkspinhandshake.md) | An AVStream minidriver's AVStrMiniPinHandshake routine is called when AVStream receives a protocol handshake request that it does not handle. |
 | [PFNKSPININITIALIZEALLOCATOR callback](..\ks\nc-ks-pfnkspininitializeallocator.md) | An AVStream minidriver's AVStrMiniInitializeAllocator routine initializes an allocator that will be associated with a pin. |
-| [PFNKSPINIRP callback](..\ks\nc-ks-pfnkspinirp.md) | An AVStream minidriver's AVStrMiniPinClose routine is called when a pin is closed. It usually is provided by minidrivers that want to free the context and resources associated with the pin. |
+| [PFNKSPINIRP callback](..\ks\nc-ks-pfnkspinirp.md) | An AVStream minidriver's routine is called when an activity on the pin is performed and it receives these IRPs |
 | [PFNKSPINIRPCOMPLETION callback](..\ks\nc-ks-pfnkspinirpcompletion.md) | An AVStream minidriver's AVStrMiniPinIrpCompletion routine is called when an IRP completes a pass around the circuit and the frame that is associated with the IRP is about to be recycled or retired. |
 | [PFNKSPINPOWER callback](..\ks\nc-ks-pfnkspinpower.md) | An AVStream minidriver's AVStrMiniPinPower routine is called for pin-centric pins when the device is waking or entering a sleep state. |
 | [PFNKSPINSETDATAFORMAT callback](..\ks\nc-ks-pfnkspinsetdataformat.md) | An AVStream minidriver's AVStrMiniPinSetDataFormat routine is called at pin creation time to verify that the previously agreed upon data format is acceptable for this KSPIN structure and a match for this KSDATARANGE structure. |
 | [PFNKSPINSETDEVICESTATE callback](..\ks\nc-ks-pfnkspinsetdevicestate.md) | An AVStream minidriver's AVStrMiniPinSetDeviceState routine is called when the state of a KSPIN structure is changed due to the arrival of a connection state property 'set' IOCTL. |
-| [PFNKSPINVOID callback](..\ks\nc-ks-pfnkspinvoid.md) | An AVStream minidriver's AVStrMiniPinDisconnect routine is called when the relevant KSPIN is serving as a sink pin and this sink pin is disconnected from an AVStream source pin. |
+| [PFNKSPINVOID callback](..\ks\nc-ks-pfnkspinvoid.md) | An AVStream minidriver's callback routine is called when |
 | [PFNKSREMOVEEVENT callback](..\ks\nc-ks-pfnksremoveevent.md) | An AVStream minidriver's AVStrMiniRemoveEvent routine is called when a client requests to be removed from the notification queue for an event. This routine is optional. |
 | [PFNKSSETTIMER callback](..\ks\nc-ks-pfnkssettimer.md) | A streaming minidriver's KStrSetTimer routine is called to generate DPC timer callbacks based on presentation time. |
 | [PFNKSSTREAMPOINTER callback](..\ks\nc-ks-pfnksstreampointer.md) | AVStream calls a minidriver's AVStrMiniCancelCallback routine when the IRP that is associated with a cloned stream pointer is canceled. This routine is optional. |
@@ -419,9 +430,10 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [PFNUSBCAMD_WaitOnDeviceEvent callback](..\usbcamdi\nc-usbcamdi-pfnusbcamd_waitondeviceevent.md) | The USBCAMD_WaitOnDeviceEvent service is used to perform a read from the interrupt pipe if the camera has an interrupt pipe for external event notifications. |
 | [PHW_CANCEL_SRB callback](..\strmini\nc-strmini-phw_cancel_srb.md) | The class driver calls the minidriver's StrMiniCancelPacket routine to signal that a stream request has been canceled. |
 | [PHW_EVENT_ROUTINE callback](..\strmini\nc-strmini-phw_event_routine.md) | The class driver calls the stream minidriver's StrMiniEvent routine to signal to a minidriver an event should be enabled or disabled. |
+| [PHW_INTERRUPT callback](..\strmini\nc-strmini-phw_interrupt.md) | StrMiniInterrupt is the minidriver's interrupt service routine. |
 | [PHW_PRIORITY_ROUTINE callback](..\strmini\nc-strmini-phw_priority_routine.md) | StrMiniPriorityRoutine is a minidriver-supplied callback routine to be executed at a specified priority level. |
 | [PHW_QUERY_CLOCK_ROUTINE callback](..\strmini\nc-strmini-phw_query_clock_routine.md) | Each stream may have a clock associated to it. The class driver queries the clock by calling the stream minidriver-supplied StrMiniClock function, provided in each stream's HW_STREAM_OBJECT. |
-| [PHW_RECEIVE_DEVICE_SRB callback](..\strmini\nc-strmini-phw_receive_device_srb.md) | The minidriver-supplied StrMiniReceiveDevicePacket routine handles class driver requests that apply to the driver as a whole, such as initializing the device, or opening a stream within the device. |
+| [PHW_RECEIVE_DEVICE_SRB callback](..\strmini\nc-strmini-phw_receive_device_srb.md) | The stream class driver calls the minidriver's StrMiniReceiveStreamControlPacket routine to handle I/O requests for a specific stream. |
 | [PHW_REQUEST_TIMEOUT_HANDLER callback](..\strmini\nc-strmini-phw_request_timeout_handler.md) | The stream class driver calls the minidriver's StrMiniRequestTimeout routine to signal to the minidriver that a request has timed out. |
 
 ## Structures
@@ -435,7 +447,6 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [KSATTRIBUTE structure](..\ks\ns-ks-ksattribute.md) | The KSATTRIBUTE structure defines an additional attribute of a data format or data range that is not covered by the KSDATAFORMAT and KSDATARANGE structures or the extended information based on the format and range specifiers. |
 | [KSATTRIBUTE_LIST structure](..\ks\ns-ks-ksattribute_list.md) | The KSATTRIBUTE_LIST structure contains an attribute defined in a KSATTRIBUTE structure. |
 | [KSAUTOMATION_TABLE_ structure](..\ks\ns-ks-ksautomation_table_.md) | The KSAUTOMATION_TABLE structure defines a structure that combines tables for properties, methods, and events. |
-| [KSAUTOMATION_TABLE_ structure](..\ks\ns-ks-ksautomation_table_~r1.md) | The KSAUTOMATION_TABLE structure defines a structure that combines tables for properties, methods, and events. |
 | [KSBUFFER_ITEM structure](..\ks\ns-ks-ksbuffer_item.md) | The KSBUFFER_ITEM structure is used to store a list of data buffers copied from the event source, which can be retrieved by the event sink through KSEVENT_TYPE_QUERYBUFFER. |
 | [KSCAMERA_PERFRAMESETTING_CAP_HEADER structure](..\ksmedia\ns-ksmedia-kscamera_perframesetting_cap_header.md) | This structure contains the header information for the per frame settings capabilities. |
 | [KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure](..\ksmedia\ns-ksmedia-kscamera_perframesetting_cap_item_header.md) | This structure contains the header information for a per-frame settings item. |
@@ -449,7 +460,6 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [KSCOMPONENTID structure](..\ks\ns-ks-kscomponentid.md) | The KSCOMPONENTID structure contains unique identifiers that describe an individual kernel streaming object. |
 | [KSCORRELATED_TIME structure](..\ks\ns-ks-kscorrelated_time.md) | The KSCORRELATED_TIME structure contains a clock time as well as the corresponding number of clock ticks since system boot. |
 | [KSDATAFORMAT structure](..\ks\ns-ks-ksdataformat.md) | The KSDATAFORMAT structure is a variable-length structure that describes a data format. |
-| [KSDATAFORMAT structure](..\ks\ns-ks-ksdataformat~r1.md) | The KSDATAFORMAT structure is a variable-length structure that describes a data format. |
 | [KSDISPATCH_TABLE structure](..\ks\ns-ks-ksdispatch_table.md) | The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines. |
 | [KSDPC_ITEM structure](..\ks\ns-ks-ksdpc_item.md) | The KSDPC_ITEM structure is used to store information related to any internal DPCs that might be used to generate event notification from a raised IRQL. |
 | [KSERROR structure](..\ks\ns-ks-kserror.md) | The KSERROR structure is used to report streaming errors in both kernel and user mode to their respective quality managers. |
@@ -571,9 +581,7 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [KSTOPOLOGY structure](..\ks\ns-ks-kstopology.md) | The KSTOPOLOGY structure describes the topology of pins and nodes. |
 | [KSTOPOLOGY_CONNECTION structure](..\ks\ns-ks-kstopology_connection.md) | The KSTOPOLOGY_CONNECTION structure describes a single data-path connection inside a kernel streaming filter. |
 | [KSVPMAXPIXELRATE structure](..\ksmedia\ns-ksmedia-ksvpmaxpixelrate.md) | The KSVPMAXPIXELRATE structure is used to describe the maximum pixel rate of a video port. |
-| [KSVPMAXPIXELRATE structure](..\ksmedia\ns-ksmedia-ksvpmaxpixelrate~r1.md) | The KSVPMAXPIXELRATE structure is used to describe the maximum pixel rate of a video port. |
 | [KSVPSURFACEPARAMS structure](..\ksmedia\ns-ksmedia-ksvpsurfaceparams.md) | The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface. |
-| [KSVPSURFACEPARAMS structure](..\ksmedia\ns-ksmedia-ksvpsurfaceparams~r1.md) | The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface. |
 | [KSWAVE_BUFFER structure](..\ksmedia\ns-ksmedia-kswave_buffer.md) | The KSWAVE_BUFFER structure is used to describe a sample buffer. |
 | [KSWAVE_COMPATCAPS structure](..\ksmedia\ns-ksmedia-kswave_compatcaps.md) | The KSWAVE_COMPATCAPS structure is used to describe the compatible capabilities of a device. |
 | [KSWAVE_INPUT_CAPABILITIES structure](..\ksmedia\ns-ksmedia-kswave_input_capabilities.md) | The KSWAVE_INPUT_CAPABILITIES structure is used to describe the input capabilities of a device. |
@@ -597,6 +605,7 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [USBCAMD_INTERFACE structure](..\usbcamdi\ns-usbcamdi-usbcamd_interface.md) | The USBCAMD_INTERFACE structure defines a set of services related to the USB bus interfaces. |
 | [VRAM_SURFACE_INFO structure](..\ksmedia\ns-ksmedia-vram_surface_info.md) | The VRAM_SURFACE_INFO structure describes a region of system or display memory into which an AVStream minidriver captures audio or video data. |
 | [VRAM_SURFACE_INFO_PROPERTY_S structure](..\ksmedia\ns-ksmedia-vram_surface_info_property_s.md) | The VRAM_SURFACE_INFO_PROPERTY_S structure describes property items in the KSPROPSETID_VramCapture property set. |
+| [_ALLOCATOR_PROPERTIES_EX structure](..\ksproxy\ns-ksproxy-_allocator_properties_ex.md) | The ALLOCATOR_PROPERTIES_EX structure is for proxy use and not recommended for application use. ALLOCATOR_PROPERTIES_EX contains information that describes properties of an allocator. |
 | [_AVCCONNECTINFO structure](..\avc\ns-avc-_avcconnectinfo.md) | The AVCCONNECTINFO structure is used to initialize a subunit driver and establish pin connections. |
 | [_AVCPRECONNECTINFO structure](..\avc\ns-avc-_avcpreconnectinfo.md) | The AVCPRECONNECTINFO structure is used to initialize a subunit driver and establish pin connections. |
 | [_AVCSTRM_BUFFER_STRUCT structure](..\avcstrm\ns-avcstrm-_avcstrm_buffer_struct.md) | The AVCSTRM_BUFFER_STRUCT structure describes a buffer to be submitted to avcstrm.sys for read or write operations. |
@@ -671,69 +680,49 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [_DVINFO structure](..\avcstrm\ns-avcstrm-_dvinfo.md) | The DVINFO structure describes a DV stream format including its default streaming source information and stream control information. |
 | [_HW_CLOCK_OBJECT structure](..\strmini\ns-strmini-_hw_clock_object.md) | The HW_CLOCK_OBJECT structure describes the clock associated with a stream. |
 | [_HW_EVENT_DESCRIPTOR structure](..\strmini\ns-strmini-_hw_event_descriptor.md) | When the class driver calls one of the minidriver's StrMiniEvent routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled. |
-| [_HW_INITIALIZATION_DATA structure](..\strmini\ns-strmini-_hw_initialization_data.md) | The HW_INITIALIZATION_DATA structure specifies the basic information the class driver needs to begin initializing the minidriver. |
 | [_HW_STREAM_DESCRIPTOR structure](..\strmini\ns-strmini-_hw_stream_descriptor.md) | The minidriver uses the HW_STREAM_DESCRIPTOR structure to return stream information to the stream class driver. |
 | [_HW_STREAM_HEADER structure](..\strmini\ns-strmini-_hw_stream_header.md) | The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a HW_STREAM_DESCRIPTOR structure. |
 | [_HW_STREAM_INFORMATION structure](..\strmini\ns-strmini-_hw_stream_information.md) | The HW_STREAM_INFORMATION structure describes the kernel streaming semantics supported by individual streams, as part of an HW_STREAM_DESCRIPTOR structure. |
-| [_HW_STREAM_OBJECT structure](..\strmini\ns-strmini-_hw_stream_object~r1.md) | HW_STREAM_OBJECT describes an instance of a minidriver stream. |
+| [_HW_STREAM_OBJECT structure](..\strmini\ns-strmini-_hw_stream_object.md) | HW_STREAM_OBJECT describes an instance of a minidriver stream. |
 | [_HW_STREAM_REQUEST_BLOCK structure](..\strmini\ns-strmini-_hw_stream_request_block.md) | The stream class driver uses the HW_STREAM_REQUEST_BLOCK structure to pass information to and from the minidriver, using minidriver provided callbacks. |
 | [_HW_TIME_CONTEXT structure](..\strmini\ns-strmini-_hw_time_context.md) | The class driver passes an HW_TIME_CONTEXT structure as a parameter to be filled in by a stream's StrMiniClock routine, or returns a completed HW_TIME_CONTEXT structure when it responds to a StreamClassQueryMasterClock or StreamClassQueryMasterClockSync request. |
 | [_KSALLOCATOR_DISPATCH structure](..\ks\ns-ks-_ksallocator_dispatch.md) | The KSALLOCATOR_DISPATCH structure contains the callbacks required for a pin to implement its own kernel-level allocator. |
-| [_KSALLOCATOR_DISPATCH structure](..\ks\ns-ks-_ksallocator_dispatch~r1.md) | The KSALLOCATOR_DISPATCH structure contains the callbacks required for a pin to implement its own kernel-level allocator. |
 | [_KSCAMERA_EXTENDEDPROP_PROFILE structure](..\ksmedia\ns-ksmedia-_kscamera_extendedprop_profile.md) | The payload of the KSPROPERTY_CAMERACONTROL_EXTENDED_PROFILE control contains KSCAMERA_EXTENDEDPROP_HEADER + KSCAMERA_EXTENDEDPROP_PROFILE. |
 | [_KSCAMERA_PROFILE_CONCURRENCYINFO structure](..\ksmedia\ns-ksmedia-_kscamera_profile_concurrencyinfo.md) | An array of KSCAMERA_PROFILE_CONCURRENCYINFO structures form the Camera.Concurrency parameter of the KSDEVICE_PROFILE_INFO structure (whose array size is specified by Camera.CountOfConcurrency parameter) indicating which profiles the profile identified in the KSCAMERA_PROFILE_INFO structure may run simultaneously on different cameras. |
 | [_KSCAMERA_PROFILE_INFO structure](..\ksmedia\ns-ksmedia-_kscamera_profile_info.md) | The KSCAMERA_PROFILE_INFO structure is used to uniquely identify a given profile. |
 | [_KSCAMERA_PROFILE_MEDIAINFO structure](..\ksmedia\ns-ksmedia-_kscamera_profile_mediainfo.md) | This structure contains the relevant media type information presented for each camera profile. |
 | [_KSCAMERA_PROFILE_PININFO structure](..\ksmedia\ns-ksmedia-_kscamera_profile_pininfo.md) | This structure specifies the available list of media types for each of the camera driver pins. |
 | [_KSCLOCK_DISPATCH structure](..\ks\ns-ks-_ksclock_dispatch.md) | The KSCLOCK_DISPATCH structure contains the callbacks required for a pin to implement a clock object. |
-| [_KSCLOCK_DISPATCH structure](..\ks\ns-ks-_ksclock_dispatch~r1.md) | The KSCLOCK_DISPATCH structure contains the callbacks required for a pin to implement a clock object. |
 | [_KSDEVICE structure](..\ks\ns-ks-_ksdevice.md) | The KSDEVICE structure describes a WDM functional device that is managed by AVStream. |
-| [_KSDEVICE structure](..\ks\ns-ks-_ksdevice~r1.md) | The KSDEVICE structure describes a WDM functional device that is managed by AVStream. |
 | [_KSDEVICE_DESCRIPTOR structure](..\ks\ns-ks-_ksdevice_descriptor.md) | The KSDEVICE_DESCRIPTOR structure describes the characteristics of a particular device. |
-| [_KSDEVICE_DESCRIPTOR structure](..\ks\ns-ks-_ksdevice_descriptor~r1.md) | The KSDEVICE_DESCRIPTOR structure describes the characteristics of a particular device. |
 | [_KSDEVICE_DISPATCH structure](..\ks\ns-ks-_ksdevice_dispatch.md) | The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events. |
-| [_KSDEVICE_DISPATCH structure](..\ks\ns-ks-_ksdevice_dispatch~r1.md) | The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events. |
 | [_KSDEVICE_PROFILE_INFO structure](..\ksmedia\ns-ksmedia-_ksdevice_profile_info.md) | The KSDEVICE_PROFILE_INFO is a generic structure designed to handle profile information for various device types. |
 | [_KSDEVICE_THERMAL_DISPATCH structure](..\ks\ns-ks-_ksdevice_thermal_dispatch.md) | The KSDEVICE_THERMAL_DISPATCH structure is used by the miniport driver in the API call to register thermal notification callbacks. This structure contains the callback function pointers for active and passive cooling interfaces. |
+| [_KSEVENT_ENTRY structure](..\ks\ns-ks-_ksevent_entry.md) | The kernel streaming subsystem uses the KSEVENT_ENTRY structure to describe how an event should be triggered. |
 | [_KSFILTER structure](..\ks\ns-ks-_ksfilter.md) | The KSFILTER structure describes an instantiated filter. |
-| [_KSFILTER structure](..\ks\ns-ks-_ksfilter~r1.md) | The KSFILTER structure describes an instantiated filter. |
 | [_KSFILTERFACTORY structure](..\ks\ns-ks-_ksfilterfactory.md) | The KSFILTERFACTORY structure represents a filter factory. |
-| [_KSFILTERFACTORY structure](..\ks\ns-ks-_ksfilterfactory~r1.md) | The KSFILTERFACTORY structure represents a filter factory. |
 | [_KSFILTER_DESCRIPTOR structure](..\ks\ns-ks-_ksfilter_descriptor.md) | The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory. |
-| [_KSFILTER_DESCRIPTOR structure](..\ks\ns-ks-_ksfilter_descriptor~r1.md) | The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory. |
 | [_KSFILTER_DISPATCH structure](..\ks\ns-ks-_ksfilter_dispatch.md) | The KSFILTER_DISPATCH structure describes the client callbacks that are made to notify the client of certain events on a given filter type. |
-| [_KSFILTER_DISPATCH structure](..\ks\ns-ks-_ksfilter_dispatch~r1.md) | The KSFILTER_DISPATCH structure describes the client callbacks that are made to notify the client of certain events on a given filter type. |
 | [_KSGATE structure](..\ks\ns-ks-_ksgate.md) | The KSGATE structure describes an AVStream gate object. |
-| [_KSGATE structure](..\ks\ns-ks-_ksgate~r1.md) | The KSGATE structure describes an AVStream gate object. |
 | [_KSMAPPING structure](..\ks\ns-ks-_ksmapping.md) | The KSMAPPING structure is used to describe a single contiguous chunk of physical memory for use in scatter/gather DMA operations. |
-| [_KSMAPPING structure](..\ks\ns-ks-_ksmapping~r1.md) | The KSMAPPING structure is used to describe a single contiguous chunk of physical memory for use in scatter/gather DMA operations. |
 | [_KSMPEGVID_RECT structure](..\ksmedia\ns-ksmedia-_ksmpegvid_rect.md) | KSMPEGVID_RECT structure |
 | [_KSM_BDA_PIN structure](..\bdamedia\ns-bdamedia-_ksm_bda_pin.md) | The KSM_BDA_PIN structure describes a method request to create or delete a pin factory for a filter. |
 | [_KSM_BDA_PIN_PAIR structure](..\bdamedia\ns-bdamedia-_ksm_bda_pin_pair.md) | The KSM_BDA_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins. |
 | [_KSM_PIN structure](..\bdasup\ns-bdasup-_ksm_pin.md) | The KSM_PIN structure describes a method request to create or delete a pin factory for a filter. |
 | [_KSM_PIN_PAIR structure](..\bdasup\ns-bdasup-_ksm_pin_pair.md) | The KSM_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins. |
 | [_KSNODE_DESCRIPTOR structure](..\ks\ns-ks-_ksnode_descriptor.md) | The KSNODE_DESCRIPTOR structure describes a topology node within a filter. |
-| [_KSNODE_DESCRIPTOR structure](..\ks\ns-ks-_ksnode_descriptor~r1.md) | The KSNODE_DESCRIPTOR structure describes a topology node within a filter. |
 | [_KSPIN structure](..\ks\ns-ks-_kspin.md) | The KSPIN structure describes an instantiated pin. |
-| [_KSPIN structure](..\ks\ns-ks-_kspin~r1.md) | The KSPIN structure describes an instantiated pin. |
 | [_KSPIN_DESCRIPTOR_EX structure](..\ks\ns-ks-_kspin_descriptor_ex.md) | The KSPIN_DESCRIPTOR_EX structure describes the characteristics of a pin type on a given filter type. |
-| [_KSPIN_DESCRIPTOR_EX structure](..\ks\ns-ks-_kspin_descriptor_ex~r1.md) | The KSPIN_DESCRIPTOR_EX structure describes the characteristics of a pin type on a given filter type. |
 | [_KSPIN_DISPATCH structure](..\ks\ns-ks-_kspin_dispatch.md) | The KSPIN_DISPATCH structure describes the callbacks for which clients can register in order to receive notification of pin events. |
-| [_KSPIN_DISPATCH structure](..\ks\ns-ks-_kspin_dispatch~r1.md) | The KSPIN_DISPATCH structure describes the callbacks for which clients can register in order to receive notification of pin events. |
 | [_KSPROCESSPIN structure](..\ks\ns-ks-_ksprocesspin.md) | The KSPROCESSPIN structure describes the process state of a specific pin. |
-| [_KSPROCESSPIN structure](..\ks\ns-ks-_ksprocesspin~r1.md) | The KSPROCESSPIN structure describes the process state of a specific pin. |
 | [_KSPROCESSPIN_INDEXENTRY structure](..\ks\ns-ks-_ksprocesspin_indexentry.md) | The KSPROCESSPIN_INDEXENTRY structure is used in Filter-Centric Processing to bring together all of the input and output pins in one context. |
-| [_KSPROCESSPIN_INDEXENTRY structure](..\ks\ns-ks-_ksprocesspin_indexentry~r1.md) | The KSPROCESSPIN_INDEXENTRY structure is used in Filter-Centric Processing to bring together all of the input and output pins in one context. |
 | [_KSPROPERTY_GRAPHMANAGER_INTERFACE structure](..\ks\ns-ks-_ksproperty_graphmanager_interface.md) | . |
 | [_KSPROPERTY_SPHLI structure](..\ksmedia\ns-ksmedia-_ksproperty_sphli.md) | The KSPROPERTY_SPHLI structure is used to describe a rectangle of subpicture or screen whose color or contrast is to be changed. |
 | [_KSPROPERTY_SPPAL structure](..\ksmedia\ns-ksmedia-_ksproperty_sppal.md) | The KSPROPERTY_SPPAL structure is used to describe the palette of a subpicture display. |
 | [_KSP_BDA_NODE_PIN structure](..\bdamedia\ns-bdamedia-_ksp_bda_node_pin.md) | The KSP_BDA_NODE_PIN structure describes a property request to retrieve the controlling pin for a node. |
 | [_KSSTREAM_POINTER structure](..\ks\ns-ks-_ksstream_pointer.md) | The KSSTREAM_POINTER structure is the basic AVStream pointer into a stream. |
-| [_KSSTREAM_POINTER structure](..\ks\ns-ks-_ksstream_pointer~r1.md) | The KSSTREAM_POINTER structure is the basic AVStream pointer into a stream. |
 | [_KSSTREAM_POINTER_OFFSET structure](..\ks\ns-ks-_ksstream_pointer_offset.md) | The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame. |
-| [_KSSTREAM_POINTER_OFFSET structure](..\ks\ns-ks-_ksstream_pointer_offset~r1.md) | The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame. |
 | [_KSSTREAM_SEGMENT structure](..\ksproxy\ns-ksproxy-_ksstream_segment.md) | The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream. |
-| [_KSSTREAM_SEGMENT structure](..\ksproxy\ns-ksproxy-_ksstream_segment~r1.md) | The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream. |
 | [_KS_COLCON structure](..\ksmedia\ns-ksmedia-_ks_colcon.md) | The KS_COLCON structure is used to describe color and contrast settings. |
 | [_KS_COPY_MACROVISION structure](..\ksmedia\ns-ksmedia-_ks_copy_macrovision.md) | The KS_COPY_MACROVISION structure specifies the Macrovision level of the data stream. |
 | [_KS_DVDCOPY_BUSKEY structure](..\ksmedia\ns-ksmedia-_ks_dvdcopy_buskey.md) | The KS_DVDCOPY_BUSKEY structure is used to describe the bus key information for the DVD copyright protection authentication process. |
@@ -747,7 +736,8 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [_KS_VIDEO_STREAM_CONFIG_CAPS structure](..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md) | The KS_VIDEO_STREAM_CONFIG_CAPS structure describes the configuration and capabilities of a video stream, including analog video standard (for example, NTSC, PAL or SECAM), scaling, and cropping capabilities; minimum and maximum frame rates; and minimum and maximum data rates. |
 | [_MF_MDL_SHARED_PAYLOAD_KEY structure](..\ks\ns-ks-_mf_mdl_shared_payload_key.md) | This union is used internally by the operating system. |
 | [_MPEG2_TRANSPORT_STRIDE structure](..\bdatypes\ns-bdatypes-_mpeg2_transport_stride.md) | The MPEG2_TRANSPORT_STRIDE structure describes the format block of the MPEG2 transport stride. |
-| [_PORT_CONFIGURATION_INFORMATION structure](..\strmini\ns-strmini-_port_configuration_information~r1.md) | PORT_CONFIGURATION_INFORMATION describes the hardware settings of a streaming minidriver's device. The class driver fills in most members with information provided by the operating system. |
+| [_PIPE_DIMENSIONS structure](..\ksproxy\ns-ksproxy-_pipe_dimensions.md) | The PIPE_DIMENSIONS structure is for proxy use and not recommended for application use. PIPE_DIMENSIONS contains information that describes the compression/expansion ratio of frames on various pins related to a pipe. |
+| [_PIPE_TERMINATION structure](..\ksproxy\ns-ksproxy-_pipe_termination.md) | The PIPE_TERMINATION structure is for proxy use and not recommended for application use. PIPE_TERMINATION contains information that describes the pin terminator of a pipe. |
 | [_STREAM_DATA_INTERSECT_INFO structure](..\strmini\ns-strmini-_stream_data_intersect_info.md) | STREAM_DATA_INTERSECT_INFO describes the parameters of a data intersection operation. |
 | [_STREAM_METHOD_DESCRIPTOR structure](..\strmini\ns-strmini-_stream_method_descriptor.md) | . |
 | [_STREAM_PROPERTY_DESCRIPTOR structure](..\strmini\ns-strmini-_stream_property_descriptor.md) | STREAM_PROPERTY_DESCRIPTOR specifies the parameters of property get/set requests that the class driver passes to the minidriver. |
@@ -845,6 +835,10 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 
 | Title   | Description   |
 | ---- |:---- |
+| [*PCAPTURE_MEMORY_ALLOCATION_FLAGS enumeration](..\ksmedia\ne-ksmedia-pcapture_memory_allocation_flags.md) | The CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration defines types of memory surfaces to which AVStream minidrivers can capture audio and video data. |
+| [*PKSPIN_COMMUNICATION enumeration](..\ks\ne-ks-pkspin_communication.md) | . |
+| [*PKSPIN_DATAFLOW enumeration](..\ks\ne-ks-pkspin_dataflow.md) | An instance of the KSPIN_DATAFLOW enumeration is returned by KSPROPERTY_PIN_DATAFLOW. |
+| [*PKSSTATE enumeration](..\ks\ne-ks-pksstate.md) | The KSSTATE enumeration lists possible states of a kernel streaming object. |
 | [FRAMING_CACHE_OPS enumeration](..\ksproxy\ne-ksproxy-framing_cache_ops.md) | . |
 | [FRAMING_PROP enumeration](..\ksproxy\ne-ksproxy-framing_prop.md) | . |
 | [KSALLOCATORMODE enumeration](..\ksproxy\ne-ksproxy-ksallocatormode.md) | . |
@@ -918,12 +912,8 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [LAMP_MODE enumeration](..\lamp\ne-lamp-lamp_mode.md) | This enumeration contains the operating modes of a lamp device. |
 | [MF_MEDIASOURCE_STATUS_INFO enumeration](..\mfidl\ne-mfidl-mf_mediasource_status_info.md) | . |
 | [MF_TRANSFER_VIDEO_FRAME_FLAGS enumeration](..\mfidl\ne-mfidl-mf_transfer_video_frame_flags.md) | . |
-| [PCAPTURE_MEMORY_ALLOCATION_FLAGS enumeration](..\ksmedia\ne-ksmedia-pcapture_memory_allocation_flags.md) | The CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration defines types of memory surfaces to which AVStream minidrivers can capture audio and video data. |
 | [PIPE_ALLOCATOR_PLACE enumeration](..\ksproxy\ne-ksproxy-pipe_allocator_place.md) | . |
 | [PIPE_STATE enumeration](..\ksproxy\ne-ksproxy-pipe_state.md) | . |
-| [PKSPIN_COMMUNICATION enumeration](..\ks\ne-ks-pkspin_communication.md) | . |
-| [PKSPIN_DATAFLOW enumeration](..\ks\ne-ks-pkspin_dataflow.md) | An instance of the KSPIN_DATAFLOW enumeration is returned by KSPROPERTY_PIN_DATAFLOW. |
-| [PKSSTATE enumeration](..\ks\ne-ks-pksstate.md) | The KSSTATE enumeration lists possible states of a kernel streaming object. |
 | [STREAM_BUFFER_TYPE enumeration](..\strmini\ne-strmini-stream_buffer_type.md) | This enumeration defines the buffer types for StreamClassGetPhysicalAddress. |
 | [STREAM_DEBUG_LEVEL enumeration](..\strmini\ne-strmini-stream_debug_level.md) | The STREAM_DEBUG_LEVEL enumeration lists incrementally increasing levels of debugger output. |
 | [TIME_FUNCTION enumeration](..\strmini\ne-strmini-time_function.md) | . |
@@ -963,6 +953,7 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [IOCTL_LAMP_GET_CAPABILITIES_WHITE IOCTL](..\lamp\ni-lamp-ioctl_lamp_get_capabilities_white.md) | The IOCTL_LAMP_GET_CAPABILITIES_WHITE control code queries the capabilities of the lamp when the device is configured to emit white light. |
 | [IOCTL_LAMP_GET_EMITTING_LIGHT IOCTL](..\lamp\ni-lamp-ioctl_lamp_get_emitting_light.md) | The IOCTL_LAMP_GET_EMITTING_LIGHT control code queries if the lamp is turned on. |
 | [IOCTL_LAMP_GET_INTENSITY_COLOR IOCTL](..\lamp\ni-lamp-ioctl_lamp_get_intensity_color.md) | The IOCTL_LAMP_GET_INTENSITY_COLOR control code queries the light intensity when the lamp is configured to emit color light. |
+| [IOCTL_LAMP_GET_INTENSITY_WHITE IOCTL](..\lamp\ni-lamp-ioctl_lamp_get_intensity_white.md) | The IOCTL_LAMP_GET_INTENSITY_WHITE control code queries the light intensity when the lamp is configured to emit white light. |
 | [IOCTL_LAMP_GET_MODE IOCTL](..\lamp\ni-lamp-ioctl_lamp_get_mode.md) | The IOCTL_LAMP_GET_MODE control code queries the mode with which the lamp is currently configured. |
 | [IOCTL_LAMP_SET_EMITTING_LIGHT IOCTL](..\lamp\ni-lamp-ioctl_lamp_set_emitting_light.md) | The IOCTL_LAMP_SET_EMITTING_LIGHT control code turns the lamp on or off. |
 | [IOCTL_LAMP_SET_INTENSITY_COLOR IOCTL](..\lamp\ni-lamp-ioctl_lamp_set_intensity_color.md) | The IOCTL_LAMP_SET_INTENSITY_COLOR control code sets the lamp to the specified light intensity. |
@@ -972,11 +963,39 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [IOCTL_SWENUM_INSTALL_INTERFACE IOCTL](..\swenum\ni-swenum-ioctl_swenum_install_interface.md) | TBD |
 | [IOCTL_SWENUM_REMOVE_INTERFACE IOCTL](..\swenum\ni-swenum-ioctl_swenum_remove_interface.md) | TBD |
 
+## Interfaces
+
+| Title   | Description   |
+| ---- |:---- |
+| [IKsAggregateControl interface](..\ksproxy\nn-ksproxy-iksaggregatecontrol.md) | The IKsAggregateControl interface provides methods that add and remove COM servers as aggregate providers on KS objects that support the interface. |
+| [IKsAllocator interface](..\ksproxy\nn-ksproxy-iksallocator.md) | TheIKsAllocator interface provides methods that control and query an allocator. IKsAllocator is for proxy use and not recommended for application use. |
+| [IKsAllocatorEx interface](..\ksproxy\nn-ksproxy-iksallocatorex.md) | The IKsAllocatorEx interface is for proxy use and not recommended for application use. IKsAllocatorEx inherits all the methods of the IKsAllocator interface and extends IKsAllocator to provide methods that further control and query an allocator. |
+| [IKsClockPropertySet interface](..\ksproxy\nn-ksproxy-iksclockpropertyset.md) | The IKsClockPropertySet interface provides methods that let the proxy accurately reflect time. |
+| [IKsControl interface](..\ks\nn-ks-ikscontrol.md) | The IKsControl interface is a COM-style interface implemented on AVStream filters and pins. |
+| [IKsControl interface](..\ksproxy\nn-ksproxy-ikscontrol.md) | The IKsControl interface provides user-mode methods that control a KS filter or KS pin. See the IKsControl AVStream COM interface for information about the user-mode equivalent of this interface. |
+| [IKsDataTypeCompletion interface](..\ksproxy\nn-ksproxy-iksdatatypecompletion.md) | The IKsDataTypeCompletion interface provides a method to complete partially specified media types that are passed to the IAMStreamConfig |
+| [IKsDataTypeHandler interface](..\ksproxy\nn-ksproxy-iksdatatypehandler.md) | The IKsDataTypeHandler interface provides methods that perform optional preprocessing and postprocessing of media samples. |
+| [IKsDeviceFunctions interface](..\ks\nn-ks-iksdevicefunctions.md) | The IKsDeviceFunctions interface is a COM-style interface implemented on AVStream devices. This interface is available in Windows Server 2003 SP1 and later versions of Windows. |
+| [IKsInterfaceHandler interface](..\ksproxy\nn-ksproxy-iksinterfacehandler.md) | The IKsInterfaceHandler interface provides methods that marshal samples into the kernel based on the KSPIN_INTERFACE structure specified for the established connection. The IID for this interface is IID_IKsInterfaceHandler. |
+| [IKsNotifyEvent interface](..\ksproxy\nn-ksproxy-iksnotifyevent.md) | The IKsNotifyEvent interface provides a method to cause the KS object that owns a DirectShow event to issue the event with the given parameters. |
+| [IKsObject interface](..\ksproxy\nn-ksproxy-iksobject.md) | The IKsObject interface provides a method to retrieve the file handle of a KS object. |
+| [IKsPin interface](..\ksproxy\nn-ksproxy-ikspin.md) | The IKsPin interface provides methods that control and retrieve information about a pin. |
+| [IKsPinEx interface](..\ksproxy\nn-ksproxy-ikspinex.md) | The IKsPinEx interface inherits all the methods of the IKsPin interface and extends IKsPin to provide a method that notifies the filter graph of an error to give the filter graph an opportunity to halt. |
+| [IKsPinFactory interface](..\ksproxy\nn-ksproxy-ikspinfactory.md) | The IKsPinFactory interface provides a method that retrieves the identifier of a pin factory. |
+| [IKsPinPipe interface](..\ksproxy\nn-ksproxy-ikspinpipe.md) | The IKsPinPipe interface is for proxy use and not recommended for application use. IKsPinPipe provides methods that control a pin pipe. |
+| [IKsPropertySet interface](..\dsound\nn-dsound-ikspropertyset.md) | The IKsPropertySet interface provides methods that access properties of KS objects that are implemented in a KS minidriver. |
+| [IKsQualityForwarder interface](..\ksproxy\nn-ksproxy-iksqualityforwarder.md) | The IKsQualityForwarder interface inherits the method of the IKsObject interface and extends IKsObject to provide a method that flushes information from a pin. |
+| [IKsReferenceClock interface](..\ks\nn-ks-iksreferenceclock.md) | The IKsReferenceClock interface is a COM-style interface that is provided by AVStream on all pins. The pin passes the request onto the master clock. |
+| [IKsTopology interface](..\ksproxy\nn-ksproxy-ikstopology.md) | The IKsTopology interface provides a method that opens topology node objects contained within a filter. |
+
 ## Macros
 
 | Title   | Description   |
 | ---- |:---- |
 | [INIT_AVCSTRM_HEADER macro](..\avcstrm\nf-avcstrm-init_avcstrm_header.md) | The INIT_AVCSTRM_HEADER macro initializes the SizeOfThisBlock, Version and Function members of the AVC_STREAM_REQUEST_BLOCK structure. |
+| [KSEVENT_ENTRY_IRP_STORAGE macro](..\ks\nf-ks-ksevent_entry_irp_storage.md) | This macro retrieves a pointer to the KSEVENT_ENTRY structure stored in Irp. |
+| [KSEVENT_ITEM_IRP_STORAGE macro](..\ks\nf-ks-ksevent_item_irp_storage.md) | This macro retrieves a pointer to the KSEVENT_ITEM structure stored in Irp. |
+| [KSEVENT_SET_IRP_STORAGE macro](..\ks\nf-ks-ksevent_set_irp_storage.md) | This macro retrieves a pointer to the KSEVENT_SET structure stored in Irp. This information is initialized only for basic support requests; it is not initialized for enable requests. |
 | [KSMETHOD_ITEM_IRP_STORAGE macro](..\ks\nf-ks-ksmethod_item_irp_storage.md) | This macro accesses a pointer to the relevant KSMETHOD_ITEM. Note that this pointer is only set when using KsMethodHandlerWithAllocator. |
 | [KSMETHOD_SET_IRP_STORAGE macro](..\ks\nf-ks-ksmethod_set_irp_storage.md) | This macro returns a pointer to the KSMETHOD_SET in which the method is located. |
 | [KSMETHOD_TYPE_IRP_STORAGE macro](..\ks\nf-ks-ksmethod_type_irp_storage.md) | This macro accesses the type of method as described in the KSMETHOD_ITEM. If the method will be processed asynchronously using KsDispatchSpecificMethod, this storage must be maintained intact. |
@@ -989,6 +1008,13 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | ---- |:---- |
 | [IKsAggregateControl::KsAddAggregate method](..\ksproxy\nf-ksproxy-iksaggregatecontrol-ksaddaggregate.md) | The KsAddAggregate method adds a COM server as an aggregate provider to the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
 | [IKsAggregateControl::KsRemoveAggregate method](..\ksproxy\nf-ksproxy-iksaggregatecontrol-ksremoveaggregate.md) | The KsRemoveAggregate method removes a previously added COM server aggregate provider from the list of interface providers for the KS object that exposes the IKsAggregateControl interface. |
+| [IKsAllocator::KsGetAllocatorHandle method](..\ksproxy\nf-ksproxy-iksallocator-ksgetallocatorhandle.md) | Retrieves a file handle to an allocator. |
+| [IKsAllocator::KsGetAllocatorMode method](..\ksproxy\nf-ksproxy-iksallocator-ksgetallocatormode.md) | Returns the mode in which an allocator allocates memory. |
+| [IKsAllocator::KsGetAllocatorStatus method](..\ksproxy\nf-ksproxy-iksallocator-ksgetallocatorstatus.md) | Retrieves the status of an allocator. |
+| [IKsAllocator::KsSetAllocatorMode method](..\ksproxy\nf-ksproxy-iksallocator-kssetallocatormode.md) | Sets the mode in which an allocator allocates memory. |
+| [IKsAllocatorEx::KsGetProperties method](..\ksproxy\nf-ksproxy-iksallocatorex-ksgetproperties.md) | Returns the properties for an allocator. |
+| [IKsAllocatorEx::KsSetAllocatorHandle method](..\ksproxy\nf-ksproxy-iksallocatorex-kssetallocatorhandle.md) | Sets the handle for an allocator. |
+| [IKsAllocatorEx::KsSetProperties method](..\ksproxy\nf-ksproxy-iksallocatorex-kssetproperties.md) | Sets the properties for an allocator. |
 | [IKsClockPropertySet::KsGetCorrelatedPhysicalTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetcorrelatedphysicaltime.md) | The KsGetCorrelatedPhysicalTime method retrieves the physical time and the correlated system time from the underlying clock. |
 | [IKsClockPropertySet::KsGetCorrelatedTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetcorrelatedtime.md) | The KsGetCorrelatedTime method retrieves the current time and the correlated system time from the underlying clock. |
 | [IKsClockPropertySet::KsGetPhysicalTime method](..\ksproxy\nf-ksproxy-iksclockpropertyset-ksgetphysicaltime.md) | The KsGetPhysicalTime method retrieves the physical time from the underlying clock. |
@@ -1029,6 +1055,17 @@ For the programming guide, see [Streaming media devices](https://docs.microsoft.
 | [IKsPin::KsQueryMediums method](..\ksproxy\nf-ksproxy-ikspin-ksquerymediums.md) | The KsQueryMediums method retrieves mediums that a pin supports. |
 | [IKsPinEx::KsNotifyError method](..\ksproxy\nf-ksproxy-ikspinex-ksnotifyerror.md) | The KsNotifyError method notifies the filter graph of an error to give the filter graph an opportunity to halt. |
 | [IKsPinFactory::KsPinFactory method](..\ksproxy\nf-ksproxy-ikspinfactory-kspinfactory.md) | The KsPinFactory method retrieves the identifier of a pin factory. |
+| [IKsPinPipe::KsGetConnectedPin method](..\ksproxy\nf-ksproxy-ikspinpipe-ksgetconnectedpin.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetFilterName method](..\ksproxy\nf-ksproxy-ikspinpipe-ksgetfiltername.md) | Returns the name of a filter. |
+| [IKsPinPipe::KsGetPinBusCache method](..\ksproxy\nf-ksproxy-ikspinpipe-ksgetpinbuscache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetPinFramingCache method](..\ksproxy\nf-ksproxy-ikspinpipe-ksgetpinframingcache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetPinName method](..\ksproxy\nf-ksproxy-ikspinpipe-ksgetpinname.md) | Returns the name of a pin. |
+| [IKsPinPipe::KsGetPipe method](..\ksproxy\nf-ksproxy-ikspinpipe-ksgetpipe.md) | Not recommended for application use. |
+| [IKsPinPipe::KsGetPipeAllocatorFlag method](..\ksproxy\nf-ksproxy-ikspinpipe-ksgetpipeallocatorflag.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPinBusCache method](..\ksproxy\nf-ksproxy-ikspinpipe-kssetpinbuscache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPinFramingCache method](..\ksproxy\nf-ksproxy-ikspinpipe-kssetpinframingcache.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPipe method](..\ksproxy\nf-ksproxy-ikspinpipe-kssetpipe.md) | Not recommended for application use. |
+| [IKsPinPipe::KsSetPipeAllocatorFlag method](..\ksproxy\nf-ksproxy-ikspinpipe-kssetpipeallocatorflag.md) | Not recommended for application use. |
 | [IKsPropertySet::Get method](..\ksproxy\nf-ksproxy-ikspropertyset-get.md) | The Get method retrieves a property identified by a property-set GUID and a property identifier. |
 | [IKsPropertySet::QuerySupported method](..\ksproxy\nf-ksproxy-ikspropertyset-querysupported.md) | The QuerySupported method determines whether a KS object supports a property set and the type of that support. |
 | [IKsPropertySet::Set method](..\dsound\nf-dsound-ikspropertyset-set.md) | The Set method sets a property identified by a property-set GUID and a property identifier. |

@@ -1,5 +1,5 @@
 ---
-UID: NF.mxdc.MxdcGetPDEVAdjustment
+UID: NF:mxdc.MxdcGetPDEVAdjustment
 title: MxdcGetPDEVAdjustment function
 author: windows-driver-content
 description: The MxdcGetPDEVAdjustment function is exported by a printer interface DLL and supplies printer configuration data for the Microsoft XPS Document Converter (MXDC).
@@ -7,7 +7,7 @@ old-location: print\mxdcgetpdevadjustment.htm
 old-project: print
 ms.assetid: 4839337b-0328-4919-8f49-d7847743845c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: MxdcGetPDEVAdjustment
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 # MxdcGetPDEVAdjustment function
@@ -66,7 +67,7 @@ The handle of the currently instantiated printer.
 
 ### -param cbDevMode [in]
 
-The size of the <a href="display.devmodew">DEVMODE</a> structure, in bytes, including the driver's private DEVMODE data.
+The size of the <a href="https://msdn.microsoft.com/b2369876-9a79-40c8-8d27-c8b9d8e68e6b">DEVMODE</a> structure, in bytes, including the driver's private DEVMODE data.
 
 
 ### -param pDevMode [in]
@@ -98,13 +99,13 @@ The <b>PrintPropertiesCollection</b> data structure from which the printer inter
 <code>MxdcGetPDEVAdjustment</code> should return one of the following values.
 <dl>
 <dt><b>S_OK</b></dt>
-</dl>The printer interface DLL successfully returned an adjusted imageable area, compression type, or DPI based on the given DEVMODE structure. The MXDC will validate the returned imageable area and then use it to populate the <a href="display.gdiinfo">GDIINFO</a> structure to the respective fields.
+</dl>The printer interface DLL successfully returned an adjusted imageable area, compression type, or DPI based on the given DEVMODE structure. The MXDC will validate the returned imageable area and then use it to populate the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566484">GDIINFO</a> structure to the respective fields.
 <dl>
 <dt><b>E_NOTIMPL</b></dt>
 </dl>The <code>MxdcGetPDEVAdjustment</code> function is not implemented by the printer interface. The printer interface must not modify the fields that it does not support. The MXDC defaults to its current defaults. For the imageable area case, MXDC defaults to using the physical page size. For the compression option, MXDC defaults to medium JPEG compression.
 <dl>
 <dt><b>E_FAIL</b></dt>
-</dl>For this value or any other failure values, the MXDC returns -1 to the <a href="display.drvenablepdev">DrvEnablePDEV</a> function, catches the internal exception, and sets a flag to fail and end the print job.
+</dl>For this value or any other failure values, the MXDC returns -1 to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a> function, catches the internal exception, and sets a flag to fail and end the print job.
 
  
 
@@ -118,7 +119,7 @@ The corner coordinates of the area in which a printer can lay down ink, as deter
 
 The file format of an image, either JPEG or PNG, and the level of compression for JPEG images.
 
-The resolution of an image in dots per inch (DPI). If the printer interface DLL does not support this field, MXDC defaults to a device-independent resolution that the <b>dmPrintQuality</b> field of the <a href="display.devmodew">DEVMODEW</a> structure sets.
+The resolution of an image in dots per inch (DPI). If the printer interface DLL does not support this field, MXDC defaults to a device-independent resolution that the <b>dmPrintQuality</b> field of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure sets.
 
 MXDC enables the printer interface DLL to adjust DPI through the <code>MxdcGetPDEVAdjustment</code> function only if the print job's <b>dmPrintQuality</b> field has a value that is less than or equal to 0. If the DPI value is not adjusted, MXDC maps negative <b>dmPrintQuality</b> values to the following resolutions.
 
@@ -261,18 +262,18 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.drvenablepdev">DrvEnablePDEV</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a>
 </dt>
 <dt>
-<a href="display.gdiinfo">GDIINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566484">GDIINFO</a>
 </dt>
 <dt>
-<a href="print.iprintoemuimxdc_interface">IPrintOemUIMXDC Interface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554157">IPrintOemUIMXDC Interface</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20MxdcGetPDEVAdjustment function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20MxdcGetPDEVAdjustment function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

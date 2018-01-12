@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.IoSetMasterIrpStatus
+UID: NF:ntddk.IoSetMasterIrpStatus
 title: IoSetMasterIrpStatus function
 author: windows-driver-content
 description: The IoSetMasterIrpStatus routine conditionally replaces the Status value in an IRP with the specified NTSTATUS value.
@@ -7,7 +7,7 @@ old-location: kernel\iosetmasterirpstatus.htm
 old-project: kernel
 ms.assetid: 68C7C46B-AFDB-449D-99B5-1F9A5A9AFFA4
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoSetMasterIrpStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: Any level.
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # IoSetMasterIrpStatus function
@@ -56,7 +57,7 @@ VOID IoSetMasterIrpStatus(
 
 ### -param MasterIrp [in, out]
 
-A pointer to the master <a href="kernel.irp">IRP</a>. For more information, see Remarks.
+A pointer to the master <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>. For more information, see Remarks.
 
 
 ### -param Status [in]
@@ -151,12 +152,12 @@ Any level.
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.irp">IRP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoSetMasterIrpStatus routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoSetMasterIrpStatus routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

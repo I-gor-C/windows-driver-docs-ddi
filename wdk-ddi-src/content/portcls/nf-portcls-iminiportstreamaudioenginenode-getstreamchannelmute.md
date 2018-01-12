@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportStreamAudioEngineNode.GetStreamChannelMute
+UID: NF:portcls.IMiniportStreamAudioEngineNode.GetStreamChannelMute
 title: IMiniportStreamAudioEngineNode::GetStreamChannelMute method
 author: windows-driver-content
 description: Gets the state of the Mute node in the path of the audio stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportStreamAudioEngineNode::GetStreamChannelMute method

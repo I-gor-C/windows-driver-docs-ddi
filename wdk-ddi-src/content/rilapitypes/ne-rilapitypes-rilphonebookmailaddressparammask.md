@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILPHONEBOOKMAILADDRESSPARAMMASK
+UID: NE:rilapitypes.RILPHONEBOOKMAILADDRESSPARAMMASK
 title: RILPHONEBOOKMAILADDRESSPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilphonebookmailaddressparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4ce9142e-2a59-4908-a8d4-c6a9328d0dc5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILPHONEBOOKMAILADDRESSPARAMMASK, RILPHONEBOOKMAILADDRESSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILPHONEBOOKMAILADDRESSPARAMMASK
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.sensorsclassextension.ISensorClassExtension.PostStateChange
+UID: NF:sensorsclassextension.ISensorClassExtension.PostStateChange
 title: ISensorClassExtension::PostStateChange method
 author: windows-driver-content
 description: The ISensorClassExtension::PostStateChange method notifies the sensor class extension about a change in the operational state of the sensor.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: SensorsClassExtension.lib
 req.dll: 
 req.irql: 
+req.typenames: SensorConnectionType
 req.product: Windows 10 or later.
 ---
 
@@ -63,7 +64,7 @@ HRESULT PostStateChange(
 ### -param State [in]
 
 
-<a href="sensors.sensorstate">SensorState</a> value that indicates the new state.
+<a href="..\sensorsclassextension\ne-sensorsclassextension-__midl___midl_itf_windowssensorclassextension_0000_0000_0001.md">SensorState</a> value that indicates the new state.
 
 
 ## -returns
@@ -82,7 +83,7 @@ This method returns an HRESULT. Possible values include, but are not limited to,
 
 
 ## -remarks
-Sensor state information is also available through the <a href="https://msdn.microsoft.com/a9f88dad-a81d-45dc-b607-e7b4c5036774">SENSOR_PROPERTY_STATE</a> property key.
+Sensor state information is also available through the <a href="https://msdn.microsoft.com/1BF1568D-A889-4158-9C6D-160D9B06F0DE">SENSOR_PROPERTY_STATE</a> property key.
 
 The following example code demonstrates a function that posts a state-changed event.
 
@@ -157,10 +158,10 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="sensors.isensordriver_onclientsubscribetoevents">ISensorDriver::OnClientSubscribeToEvents</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545589">ISensorDriver::OnClientSubscribeToEvents</a>
 </dt>
 <dt>
-<a href="sensors.isensordriver_onclientunsubscribefromevents">ISensorDriver::OnClientUnsubscribeFromEvents</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545598">ISensorDriver::OnClientUnsubscribeFromEvents</a>
 </dt>
 </dl>
  

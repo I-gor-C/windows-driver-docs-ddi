@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_LKGFIX_PARAM
+UID: NS:gnssdriver.GNSS_LKGFIX_PARAM
 title: GNSS_LKGFIX_PARAM
 author: windows-driver-content
 description: This structure is not used currently by the system and is not required to be implemented.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: AE4F03D6-A3A7-40DD-9DD9-D9B8F25FD567
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_LKGFIX_PARAM, GNSS_LKGFIX_PARAM, PGNSS_LKGFIX_PARAM, *PGNSS_LKGFIX_PARAM
+ms.keywords: GNSS_LKGFIX_PARAM, GNSS_LKGFIX_PARAM, *PGNSS_LKGFIX_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_LKGFIX_PARAM, *PGNSS_LKGFIX_PARAM
 ---
 
 # GNSS_LKGFIX_PARAM structure

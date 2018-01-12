@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._FILE_ID_GLOBAL_TX_DIR_INFORMATION
+UID: NS:ntifs._FILE_ID_GLOBAL_TX_DIR_INFORMATION
 title: _FILE_ID_GLOBAL_TX_DIR_INFORMATION
 author: windows-driver-content
 description: The FILE_ID_GLOBAL_TX_DIR_INFORMATION structure contains information about transactional visibility for the files in a directory.
@@ -7,8 +7,8 @@ old-location: ifsk\file_id_global_tx_dir_information.htm
 old-project: ifsk
 ms.assetid: 4c4a0458-8ab3-4ef0-b455-c7a70737f322
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION, *PFILE_ID_GLOBAL_TX_DIR_INFORMATION, PFILE_ID_GLOBAL_TX_DIR_INFORMATION
+ms.date: 1/9/2018
+ms.keywords: _FILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION, *PFILE_ID_GLOBAL_TX_DIR_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FILE_ID_GLOBAL_TX_DIR_INFORMATION, *PFILE_ID_GLOBAL_TX_DIR_INFORMATION
 ---
 
 # _FILE_ID_GLOBAL_TX_DIR_INFORMATION structure
@@ -233,7 +234,7 @@ A sequence of Unicode characters containing the file name.
 <div> </div>
 
 ## -remarks
-The <b>FILE_ID_GLOBAL_TX_DIR_INFORMATION</b> structure can be implemented for file systems that return the FILE_SUPPORTS_TRANSACTIONS flag in response to a query using a <a href="ifsk.file_fs_attribute_information">FILE_FS_ATTRIBUTE_INFORMATION</a> structure. It must not be implemented for file systems that do not return that flag.
+The <b>FILE_ID_GLOBAL_TX_DIR_INFORMATION</b> structure can be implemented for file systems that return the FILE_SUPPORTS_TRANSACTIONS flag in response to a query using a <a href="..\ntifs\ns-ntifs-_file_fs_attribute_information.md">FILE_FS_ATTRIBUTE_INFORMATION</a> structure. It must not be implemented for file systems that do not return that flag.
   
 
 If the FILE_ID_GLOBAL_TX_DIR_INFO_FLAG_WRITELOCKED flag is not set in <b>TxInfoFlags</b>, <b>LockingTransactionId</b> is ignored.

@@ -1,5 +1,5 @@
 ---
-UID: NF.spbcx.SpbRequestGetTarget
+UID: NF:spbcx.SpbRequestGetTarget
 title: SpbRequestGetTarget function
 author: windows-driver-content
 description: The SpbRequestGetTarget method retrieves the SPBTARGET handle from the specified I/O request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Spbcxstubs.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 

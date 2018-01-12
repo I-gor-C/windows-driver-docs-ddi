@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamindr_lh.IWiaDrvItem.GetFullItemName
+UID: NF:wiamindr_lh.IWiaDrvItem.GetFullItemName
 title: IWiaDrvItem::GetFullItemName method
 author: windows-driver-content
 description: The IWiaDrvItem::GetFullItemName method gets the item's full name, including path information.
 old-location: image\iwiadrvitem_getfullitemname.htm
-old-project: Image
+old-project: image
 ms.assetid: 810faf49-faa9-45f2-af94-af576f4c1075
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaDrvItem, IWiaDrvItem::GetFullItemName, GetFullItemName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSCANWINDOW, SCANWINDOW
 req.product: Windows 10 or later.
 ---
 
@@ -66,7 +67,7 @@ If the method succeeds, it stores a pointer to the item's full name, including p
 ## -remarks
 If there is enough memory available, this method allocates a string containing the current item's full name including path information. The method returns a pointer to the string in <i>pbstrFullItemName</i>. The minidriver must deallocate the memory used by the string by calling the <b>SysFreeString</b> function, which is documented in the Microsoft Windows SDK documentation. 
 
-The name returned in <i>pbstrFullItemName </i>is the name associated with the item when the item was first created by the driver services library function <a href="image.wiascreatedrvitem">wiasCreateDrvItem</a>.
+The name returned in <i>pbstrFullItemName </i>is the name associated with the item when the item was first created by the driver services library function <a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>.
 
 
 ## -requirements
@@ -108,12 +109,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.wiascreatedrvitem">wiasCreateDrvItem</a>
+<a href="https://msdn.microsoft.com/0609e1b2-48df-413c-90bd-d7ddea26510a">IWiaDrvItem</a>
+</dt>
+<dt>
+<a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20IWiaDrvItem::GetFullItemName method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaDrvItem::GetFullItemName method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

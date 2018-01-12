@@ -1,5 +1,5 @@
 ---
-UID: NF.prnasntp.RouterGetPrintClassObject
+UID: NF:prnasntp.RouterGetPrintClassObject
 title: RouterGetPrintClassObject function
 author: windows-driver-content
 description: The RouterGetPrintClassObject function enumerates the list of print providers, searching for the print provider with the specified name and interface ID.
@@ -7,7 +7,7 @@ old-location: print\routergetprintclassobject.htm
 old-project: print
 ms.assetid: e2df591d-59bd-4aae-ac1b-8fdf01da3ea7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RouterGetPrintClassObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Spoolss.lib
 req.dll: Spoolss.dll
 req.irql: 
+req.typenames: USERDATA, *PUSERDATA
 req.product: Windows 10 or later.
 ---
 

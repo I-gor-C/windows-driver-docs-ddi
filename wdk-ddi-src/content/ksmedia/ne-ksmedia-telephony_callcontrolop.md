@@ -1,5 +1,5 @@
 ---
-UID: NE.ksmedia.TELEPHONY_CALLCONTROLOP
+UID: NE:ksmedia.TELEPHONY_CALLCONTROLOP
 title: TELEPHONY_CALLCONTROLOP
 author: windows-driver-content
 description: The TELEPHONY_CALLCONTROLOP enumeration defines constants that specify an operation to perform on a phone call.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TELEPHONY_CALLCONTROLOP
 ---
 
 # TELEPHONY_CALLCONTROLOP enumeration
@@ -95,7 +96,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.kstelephony_callcontrol">KSTELEPHONY_CALLCONTROL</a>
+<a href="..\ksmedia\ns-ksmedia-_tagkstelephony_callcontrol.md">KSTELEPHONY_CALLCONTROL</a>
 </dt>
 </dl>
  

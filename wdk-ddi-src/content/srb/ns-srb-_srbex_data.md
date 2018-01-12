@@ -1,5 +1,5 @@
 ---
-UID: NS.SRB._SRBEX_DATA
+UID: NS:srb._SRBEX_DATA
 title: _SRBEX_DATA
 author: windows-driver-content
 description: The SRBEX_DATA structure is the generalized format for containing extended SRB data.
@@ -7,8 +7,8 @@ old-location: storage\srbex_data.htm
 old-project: storage
 ms.assetid: 15FB9877-6339-484B-83D5-6AD44EEE1D6E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SRBEX_DATA, PSRBEX_DATA, SRBEX_DATA
+ms.date: 1/10/2018
+ms.keywords: _SRBEX_DATA, SRBEX_DATA, *PSRBEX_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SRBEX_DATA, *PSRBEX_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -81,7 +82,7 @@ The SRB extended data type is unknown.
 
 </td>
 <td width="60%">
-The SRB extended data is formatted as an <a href="storage.srbex_data_bidirectional">SRBEX_DATA_BIDIRECTIONAL</a> structure.
+The SRB extended data is formatted as an <a href="..\storport\ns-storport-_srbex_data_bidirectional.md">SRBEX_DATA_BIDIRECTIONAL</a> structure.
 
 </td>
 </tr>
@@ -91,7 +92,7 @@ The SRB extended data is formatted as an <a href="storage.srbex_data_bidirection
 
 </td>
 <td width="60%">
-The SRB extended data is formatted as an <a href="storage.srbex_data_scsi_cdb16">SRBEX_DATA_SCSI_CDB16</a> structure.
+The SRB extended data is formatted as an <a href="..\storport\ns-storport-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a> structure.
 
 </td>
 </tr>
@@ -101,7 +102,7 @@ The SRB extended data is formatted as an <a href="storage.srbex_data_scsi_cdb16"
 
 </td>
 <td width="60%">
-The SRB extended data is formatted as an <a href="storage.srbex_data_scsi_cdb32">SRBEX_DATA_SCSI_CDB32</a> structure.
+The SRB extended data is formatted as an <a href="..\storport\ns-storport-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a> structure.
 
 </td>
 </tr>
@@ -111,7 +112,7 @@ The SRB extended data is formatted as an <a href="storage.srbex_data_scsi_cdb32"
 
 </td>
 <td width="60%">
-The SRB extended data is formatted as an <a href="storage.srbex_data_scsi_cdb_var">SRBEX_DATA_SCSI_CDB_VAR</a> structure.
+The SRB extended data is formatted as an <a href="..\storport\ns-storport-_srbex_data_scsi_cdb_var.md">SRBEX_DATA_SCSI_CDB_VAR</a> structure.
 
 </td>
 </tr>
@@ -121,7 +122,7 @@ The SRB extended data is formatted as an <a href="storage.srbex_data_scsi_cdb_va
 
 </td>
 <td width="60%">
-The SRB extended data is formatted as an <a href="storage.srbex_data_wmi">SRBEX_DATA_WMI</a> structure.
+The SRB extended data is formatted as an <a href="..\storport\ns-storport-_srbex_data_wmi.md">SRBEX_DATA_WMI</a> structure.
 
 </td>
 </tr>
@@ -131,7 +132,7 @@ The SRB extended data is formatted as an <a href="storage.srbex_data_wmi">SRBEX_
 
 </td>
 <td width="60%">
-The SRB extended data is formatted as an <a href="storage.srbex_data_power">SRBEX_DATA_POWER</a> structure.
+The SRB extended data is formatted as an <a href="..\storport\ns-storport-_srbex_data_power.md">SRBEX_DATA_POWER</a> structure.
 
 </td>
 </tr>
@@ -141,7 +142,7 @@ The SRB extended data is formatted as an <a href="storage.srbex_data_power">SRBE
 
 </td>
 <td width="60%">
-The SRB extended data is formatted as an <a href="storage.srbex_data_pnp">SRBEX_DATA_PNP</a> structure.
+The SRB extended data is formatted as an <a href="..\storport\ns-storport-_srbex_data_pnp.md">SRBEX_DATA_PNP</a> structure.
 
 </td>
 </tr>
@@ -151,7 +152,7 @@ The SRB extended data is formatted as an <a href="storage.srbex_data_pnp">SRBEX_
 
 </td>
 <td width="60%">
-The SRB extended data is formatted as an <a href="storage.srbex_data_io_info">SRBEX_DATA_IO_INFO</a> structure.
+The SRB extended data is formatted as an <a href="..\storport\ns-storport-_srbex_data_io_info.md">SRBEX_DATA_IO_INFO</a> structure.
 
 </td>
 </tr>
@@ -170,7 +171,7 @@ The extended SRB data block contents.
 
 
 ## -remarks
-The SRB extended data is present when the <b>SrbExDataOffset</b> array in the <a href="storage.storage_request_block">STORAGE_REQUEST_BLOCK</a> structure contains valid offset locations.  A storage driver initially references a memory offset location contained in <b>SrbExDataOffset</b> as an <b>SRBEX_DATA</b> structure. A pointer to the data block is then cast to the appropriate structure type based on the data type value in the <b>Type</b> member.
+The SRB extended data is present when the <b>SrbExDataOffset</b> array in the <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a> structure contains valid offset locations.  A storage driver initially references a memory offset location contained in <b>SrbExDataOffset</b> as an <b>SRBEX_DATA</b> structure. A pointer to the data block is then cast to the appropriate structure type based on the data type value in the <b>Type</b> member.
 
 The following example code fragment shows how to access the extended data for the an SRB function of SRB_FUNCTION_PNP.
 
@@ -203,33 +204,33 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.srbex_data_bidirectional">SRBEX_DATA_BIDIRECTIONAL</a>
+<a href="..\storport\ns-storport-_srbex_data_bidirectional.md">SRBEX_DATA_BIDIRECTIONAL</a>
 </dt>
 <dt>
-<a href="storage.srbex_data_io_info">SRBEX_DATA_IO_INFO</a>
+<a href="..\storport\ns-storport-_srbex_data_io_info.md">SRBEX_DATA_IO_INFO</a>
 </dt>
 <dt>
-<a href="storage.srbex_data_pnp">SRBEX_DATA_PNP</a>
+<a href="..\storport\ns-storport-_srbex_data_pnp.md">SRBEX_DATA_PNP</a>
 </dt>
 <dt>
-<a href="storage.srbex_data_power">SRBEX_DATA_POWER</a>
+<a href="..\storport\ns-storport-_srbex_data_power.md">SRBEX_DATA_POWER</a>
 </dt>
 <dt>
-<a href="storage.srbex_data_scsi_cdb16">SRBEX_DATA_SCSI_CDB16</a>
+<a href="..\storport\ns-storport-_srbex_data_scsi_cdb16.md">SRBEX_DATA_SCSI_CDB16</a>
 </dt>
 <dt>
-<a href="storage.srbex_data_scsi_cdb32">SRBEX_DATA_SCSI_CDB32</a>
+<a href="..\storport\ns-storport-_srbex_data_scsi_cdb32.md">SRBEX_DATA_SCSI_CDB32</a>
 </dt>
 <dt>
-<a href="storage.srbex_data_scsi_cdb_var">SRBEX_DATA_SCSI_CDB_VAR</a>
+<a href="..\storport\ns-storport-_srbex_data_scsi_cdb_var.md">SRBEX_DATA_SCSI_CDB_VAR</a>
 </dt>
 <dt>
-<a href="storage.srbex_data_wmi">SRBEX_DATA_WMI</a>
+<a href="..\storport\ns-storport-_srbex_data_wmi.md">SRBEX_DATA_WMI</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SRBEX_DATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SRBEX_DATA structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

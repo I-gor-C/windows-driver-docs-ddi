@@ -1,14 +1,14 @@
 ---
-UID: NS.UCMMANAGER._UCM_CONNECTOR_PD_CONFIG
+UID: NS:ucmmanager._UCM_CONNECTOR_PD_CONFIG
 title: _UCM_CONNECTOR_PD_CONFIG
 author: windows-driver-content
 description: Describes the Power Delivery 2.0 capabilities of the connector.
 old-location: buses\ucm_connector_pd_config.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 9DE2AF2D-D6B5-4FC4-8871-246F3661980F
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _UCM_CONNECTOR_PD_CONFIG, *PUCM_CONNECTOR_PD_CONFIG, PUCM_CONNECTOR_PD_CONFIG, UCM_CONNECTOR_PD_CONFIG
+ms.date: 1/4/2018
+ms.keywords: _UCM_CONNECTOR_PD_CONFIG, *PUCM_CONNECTOR_PD_CONFIG, UCM_CONNECTOR_PD_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUCM_CONNECTOR_PD_CONFIG, UCM_CONNECTOR_PD_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -71,7 +72,7 @@ If FALSE, a PD role is not supported.
 
 ### -field SupportedPowerRoles
 
-Indicates the operating mode of the connector. This value is a bitwise OR of <a href="buses.ucm_power_role">UCM_POWER_ROLE</a>-typed flags.
+Indicates the operating mode of the connector. This value is a bitwise OR of <a href="..\ucmtypes\ne-ucmtypes-_ucm_power_role.md">UCM_POWER_ROLE</a>-typed flags.
 
 
 ### -field EvtSetPowerRole
@@ -80,7 +81,7 @@ A pointer to the Policy Manager's implementation of the <a href="..\ucmmanager\n
 
 
 ## -remarks
-Initialize this structure by calling <a href="buses.ucm_connector_pd_config_init">UCM_CONNECTOR_PD_CONFIG_INIT</a>. An initialized <a href="buses.ucm_connector_type_c_config">UCM_CONNECTOR_TYPEC_CONFIG</a> structure is set to the <b>PdConfig</b> member of the <a href="buses.ucm_connector_config">UCM_CONNECTOR_CONFIG</a> structure, which is an input parameter value to <a href="buses.ucmconnectorcreate">UcmConnectorCreate</a> that is called by Policy Manager to create a connector object.
+Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_pd_config_init.md">UCM_CONNECTOR_PD_CONFIG_INIT</a>. An initialized <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_config.md">UCM_CONNECTOR_TYPEC_CONFIG</a> structure is set to the <b>PdConfig</b> member of the <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_config.md">UCM_CONNECTOR_CONFIG</a> structure, which is an input parameter value to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a> that is called by Policy Manager to create a connector object.
 
 
 ## -requirements
@@ -141,12 +142,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="buses.ucmconnectorcreate">UcmConnectorCreate</a>
+<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20UCM_CONNECTOR_PD_CONFIG structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20UCM_CONNECTOR_PD_CONFIG structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

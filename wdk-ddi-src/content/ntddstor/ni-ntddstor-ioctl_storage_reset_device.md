@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddstor.IOCTL_STORAGE_RESET_DEVICE
+UID: NI:ntddstor.IOCTL_STORAGE_RESET_DEVICE
 title: IOCTL_STORAGE_RESET_DEVICE
 author: windows-driver-content
 description: If possible, resets a non-SCSI storage device without affecting other devices on the bus.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_storage_reset_device.htm
 old-project: storage
 ms.assetid: 85ada0f2-5690-4686-86e5-0e1cdc6b2054
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_ZONE_CONDITION, PSTORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+ms.date: 1/10/2018
+ms.keywords: _STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_RESET_DEVICE IOCTL

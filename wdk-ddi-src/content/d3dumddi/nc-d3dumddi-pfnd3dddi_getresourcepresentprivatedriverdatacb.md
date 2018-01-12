@@ -1,5 +1,5 @@
 ---
-UID: NC.d3dumddi.PFND3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATACB
+UID: NC:d3dumddi.PFND3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATACB
 title: PFND3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATACB
 author: windows-driver-content
 description: pfnGetResourcePresentPrivateDriverDataCb is used to query the resource private data, which is associated with the resource during Present.
@@ -7,7 +7,7 @@ old-location: display\pfngetresourcepresentprivatedriverdatacb.htm
 old-project: display
 ms.assetid: D4F0F272-60DC-4060-9762-3DB49236CE62
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGK_PTE, DXGK_PTE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DXGK_PTE
 ---
 
 # PFND3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATACB callback
@@ -65,7 +66,7 @@ A handle to the display device.
 
 ### -param pData [in, out]
 
-A pointer to a <a href="display.d3dddi_getresourcepresentprivatedriverdata">D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA</a> structure that describes the operation to perform and contains the results.
+A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_getresourcepresentprivatedriverdata.md">D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA</a> structure that describes the operation to perform and contains the results.
 
 
 
@@ -76,7 +77,7 @@ A pointer to a <a href="display.d3dddi_getresourcepresentprivatedriverdata">D3DD
 </dl>The operation completed successfully.
 <dl>
 <dt>STATUS_INVALID_BUFFER_SIZE</dt>
-</dl>The value of <a href="display.d3dddi_getresourcepresentprivatedriverdata">D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA</a>::<b>PrivateDriverDataSize</b> was zero or was insufficient to hold the data. When control returns to the caller, <b>PrivateDriverDataSize</b> will contain the required buffer size.
+</dl>The value of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_getresourcepresentprivatedriverdata.md">D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA</a>::<b>PrivateDriverDataSize</b> was zero or was insufficient to hold the data. When control returns to the caller, <b>PrivateDriverDataSize</b> will contain the required buffer size.
 
  
 

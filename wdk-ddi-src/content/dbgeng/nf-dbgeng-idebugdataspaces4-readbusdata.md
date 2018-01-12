@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugDataSpaces4.ReadBusData
+UID: NF:dbgeng.IDebugDataSpaces4.ReadBusData
 title: IDebugDataSpaces4::ReadBusData method
 author: windows-driver-content
 description: The ReadBusData method reads data from a system bus.
 old-location: debugger\readbusdata.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5790b133-dbdc-4f77-a70e-616b0902794e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4::ReadBusData, ReadBusData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::ReadBusData method

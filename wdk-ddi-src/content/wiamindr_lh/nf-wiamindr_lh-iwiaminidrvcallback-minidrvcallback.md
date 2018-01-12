@@ -1,13 +1,13 @@
 ---
-UID: NF.wiamindr_lh.IWiaMiniDrvCallBack.MiniDrvCallback
+UID: NF:wiamindr_lh.IWiaMiniDrvCallBack.MiniDrvCallback
 title: IWiaMiniDrvCallBack::MiniDrvCallback method
 author: windows-driver-content
-description: The IWiaMiniDrvCallBack::MiniDrvCallback method provides a callback method for WIA minidrivers to use during a callback data transfer.
+description: The MiniDrvCallback method provides a callback method for WIA minidrivers to use during a callback data transfer.
 old-location: image\iwiaminidrvcallback_minidrvcallback.htm
-old-project: Image
+old-project: image
 ms.assetid: 7d1c0d8a-65db-47fd-ad6a-a83c7ed3acd9
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaMiniDrvCallBack, IWiaMiniDrvCallBack::MiniDrvCallback, MiniDrvCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSCANWINDOW, SCANWINDOW
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>IWiaMiniDrvCallBack::MiniDrvCallback</b> method provides a callback method for WIA minidrivers to use during a callback data transfer.
+The <b>MiniDrvCallback</b> method provides a callback method for WIA minidrivers to use during a callback data transfer.
 
 
 
@@ -213,7 +214,7 @@ Specifies the number of bytes contained in the transfer.
 
 ### -param pTranCtx [in]
 
-Points to a <a href="image.minidrv_transfer_context">MINIDRV_TRANSFER_CONTEXT</a> structure containing the data transfer values.
+Points to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a> structure containing the data transfer values.
 
 
 ### -param lReserved [in]
@@ -270,12 +271,15 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="image.minidrv_transfer_context">MINIDRV_TRANSFER_CONTEXT</a>
+<a href="https://msdn.microsoft.com/cf2460c5-325f-43c3-a1fe-5b6982234194">IWiaMiniDrvCallBack</a>
+</dt>
+<dt>
+<a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Image\image]:%20IWiaMiniDrvCallBack::MiniDrvCallback method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [image\image]:%20IWiaMiniDrvCallBack::MiniDrvCallback method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

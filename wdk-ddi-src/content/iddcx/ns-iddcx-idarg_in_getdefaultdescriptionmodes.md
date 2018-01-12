@@ -1,5 +1,5 @@
 ---
-UID: NS.IDDCX.IDARG_IN_GETDEFAULTDESCRIPTIONMODES
+UID: NS:iddcx.IDARG_IN_GETDEFAULTDESCRIPTIONMODES
 title: IDARG_IN_GETDEFAULTDESCRIPTIONMODES
 author: windows-driver-content
 description: Gives information about the default monitor modes passed into the driver.
@@ -7,7 +7,7 @@ old-location: display\idarg_in_getdefaultdescriptionmodes.htm
 old-project: display
 ms.assetid: 4d0a1f81-efc0-40aa-9dde-b9cac64afb8b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDARG_IN_GETDEFAULTDESCRIPTIONMODES,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # IDARG_IN_GETDEFAULTDESCRIPTIONMODES structure

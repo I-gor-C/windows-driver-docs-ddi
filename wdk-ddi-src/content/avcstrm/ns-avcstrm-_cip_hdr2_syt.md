@@ -1,5 +1,5 @@
 ---
-UID: NS.AVCSTRM._CIP_HDR2_SYT
+UID: NS:avcstrm._CIP_HDR2_SYT
 title: _CIP_HDR2_SYT
 author: windows-driver-content
 description: The CIP_HDR2_SYT structure describes the second quadlet of a CIP header pair for a DV format stream.
@@ -7,8 +7,8 @@ old-location: stream\cip_hdr2_syt.htm
 old-project: stream
 ms.assetid: e66b721f-4cc0-4d35-9e24-6d7dd4029ea4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _CIP_HDR2_SYT, CIP_HDR2_SYT, *PCIP_HDR2_SYT, PCIP_HDR2_SYT
+ms.date: 1/9/2018
+ms.keywords: _CIP_HDR2_SYT, *PCIP_HDR2_SYT, CIP_HDR2_SYT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCIP_HDR2_SYT, CIP_HDR2_SYT
 ---
 
 # _CIP_HDR2_SYT structure
@@ -80,7 +81,7 @@ Specifies field encoding or time-shift flag depending on the value of FMT. This 
 
 ### -field FMT
 
-CIP format ID. For example, 000000 = DV and 100000 = MPEG2TS. If this is 111111 (no data), then DBS, FN, SPH and DBC (in the first quadlet of the CIP header, <a href="stream.cip_hdr1">CIP_HDR1</a>) are ignored.
+CIP format ID. For example, 000000 = DV and 100000 = MPEG2TS. If this is 111111 (no data), then DBS, FN, SPH and DBC (in the first quadlet of the CIP header, <a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>) are ignored.
 
 
 ### -field Bit10
@@ -109,12 +110,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.cip_hdr1">CIP_HDR1</a>
+<a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20CIP_HDR2_SYT structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20CIP_HDR2_SYT structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

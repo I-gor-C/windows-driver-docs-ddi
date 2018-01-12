@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11._DOT11_POWER_MGMT_MODE_STATUS_INFO
+UID: NS:windot11._DOT11_POWER_MGMT_MODE_STATUS_INFO
 title: _DOT11_POWER_MGMT_MODE_STATUS_INFO
 author: windows-driver-content
 description: The DOT11_POWER_MGMT_MODE_STATUS_INFO structure describes the power mode of the hardware.
 old-location: netvista\dot11_power_mgmt_mode_status_info.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: A373EA34-A7CF-47B3-8194-438BE7F4FC9C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO, PDOT11_POWER_MGMT_MODE_STATUSINFO, DOT11_POWER_MGMT_MODE_STATUS_INFO
+ms.date: 1/8/2018
+ms.keywords: _DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO, DOT11_POWER_MGMT_MODE_STATUS_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT11_POWER_MGMT_MODE_STATUSINFO, DOT11_POWER_MGMT_MODE_STATUS_INFO
 req.product: Windows 10 or later.
 ---
 

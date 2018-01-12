@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_FIXSESSION_PARAM
+UID: NS:gnssdriver.GNSS_FIXSESSION_PARAM
 title: GNSS_FIXSESSION_PARAM
 author: windows-driver-content
 description: This structure defines the parameters used by the GNSS adapter to start a fix session.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: D51126FD-0448-487A-BD4E-170901E90B1E
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_FIXSESSION_PARAM, PGNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM, *PGNSS_FIXSESSION_PARAM
+ms.keywords: GNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM, *PGNSS_FIXSESSION_PARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: GNSS_FIXSESSION_PARAM, *PGNSS_FIXSESSION_PARAM
 ---
 
 # GNSS_FIXSESSION_PARAM structure

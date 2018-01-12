@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPartFont.SetFontContent
+UID: NF:filterpipeline.IPartFont.SetFontContent
 title: IPartFont::SetFontContent method
 author: windows-driver-content
 description: The SetFontContent method sets the content of the font.
@@ -7,7 +7,7 @@ old-location: print\ipartfont_setfontcontent.htm
 old-project: print
 ms.assetid: bd77d32f-97fd-4f80-945d-9fff7553fcc5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPartFont, IPartFont::SetFontContent, SetFontContent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPartFont::SetFontContent method

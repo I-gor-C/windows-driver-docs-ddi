@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D12UMDDI.D3D12DDI_SWIZZLE_PATTERN_DESC_0022
+UID: NS:d3d12umddi.D3D12DDI_SWIZZLE_PATTERN_DESC_0022
 title: D3D12DDI_SWIZZLE_PATTERN_DESC_0022
 author: windows-driver-content
 description: Describes a swizzle pattern.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_swizzle_pattern_desc_0022.htm
 old-project: display
 ms.assetid: A52C8293-C037-4062-9A63-AD69237F7B3D
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_SWIZZLE_PATTERN_DESC_0022, D3D12DDI_SWIZZLE_PATTERN_DESC_0022
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_SWIZZLE_PATTERN_DESC_0022
 ---
 
 # D3D12DDI_SWIZZLE_PATTERN_DESC_0022 structure

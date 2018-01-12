@@ -1,5 +1,5 @@
 ---
-UID: NS.DXVA._DXVA_PICRESAMPLE
+UID: NS:dxva._DXVA_PicResample
 title: _DXVA_PicResample
 author: windows-driver-content
 description: The DXVA_PicResample structure is sent by the host decoder to the accelerator to control the resampling process. This process is invoked when the bDXVA_Func variable is equal to 4.
@@ -7,8 +7,8 @@ old-location: display\dxva_picresample.htm
 old-project: display
 ms.assetid: 29b26400-9b27-4bff-9c7e-d612d250da30
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXVA_PicResample, *LPDXVA_PicResample, DXVA_PicResample, LPDXVA_PicResample
+ms.date: 12/29/2017
+ms.keywords: _DXVA_PicResample, *LPDXVA_PicResample, DXVA_PicResample
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPDXVA_PicResample, DXVA_PicResample
 ---
 
 # _DXVA_PicResample structure

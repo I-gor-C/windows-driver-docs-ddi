@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlLongLongToChar
+UID: NF:ntintsafe.RtlLongLongToChar
 title: RtlLongLongToChar function
 author: windows-driver-content
 description: Converts a value of type LONGLONG to a value of type CHAR.
@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongtochar.htm
 old-project: kernel
 ms.assetid: E69889FC-11EF-4C49-A550-7C9C9FE1FDA7
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlLongLongToChar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlLongLongToChar function

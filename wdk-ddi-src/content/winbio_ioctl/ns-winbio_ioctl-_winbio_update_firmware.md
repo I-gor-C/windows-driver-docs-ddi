@@ -1,5 +1,5 @@
 ---
-UID: NS.WINBIO_IOCTL._WINBIO_UPDATE_FIRMWARE
+UID: NS:winbio_ioctl._WINBIO_UPDATE_FIRMWARE
 title: _WINBIO_UPDATE_FIRMWARE
 author: windows-driver-content
 description: The WINBIO_UPDATE_FIRMWARE structure is the IN payload for IOCTL_BIOMETRIC_UPDATE_FIRMWARE.
@@ -8,7 +8,7 @@ old-project: biometric
 ms.assetid: 14775785-27e3-4bfa-ad69-695869ebb5d6
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WINBIO_UPDATE_FIRMWARE, *PWINBIO_UPDATE_FIRMWARE, PWINBIO_UPDATE_FIRMWARE, WINBIO_UPDATE_FIRMWARE
+ms.keywords: _WINBIO_UPDATE_FIRMWARE, *PWINBIO_UPDATE_FIRMWARE, WINBIO_UPDATE_FIRMWARE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWINBIO_UPDATE_FIRMWARE, WINBIO_UPDATE_FIRMWARE
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ Specifies the total size of the payload, which includes the fixed length structu
 
 ### -field FirmwareData
 
-Specifies a structure of type <a href="biometric.winbio_data">WINBIO_DATA</a> that contains the vendor-specific firmware image.
+Specifies a structure of type <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a> that contains the vendor-specific firmware image.
 
 
 ## -remarks
@@ -99,7 +100,7 @@ Header
 <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_update_firmware.md">IOCTL_BIOMETRIC_UPDATE_FIRMWARE</a>
 </dt>
 <dt>
-<a href="biometric.winbio_blank_payload">WINBIO_BLANK_PAYLOAD</a>
+<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_blank_payload.md">WINBIO_BLANK_PAYLOAD</a>
 </dt>
 </dl>
  

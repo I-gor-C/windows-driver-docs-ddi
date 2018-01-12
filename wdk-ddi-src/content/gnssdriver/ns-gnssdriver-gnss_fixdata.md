@@ -1,5 +1,5 @@
 ---
-UID: NS.GNSSDRIVER.GNSS_FIXDATA
+UID: NS:gnssdriver.GNSS_FIXDATA
 title: GNSS_FIXDATA
 author: windows-driver-content
 description: This structure defines the specific data elements associated with a GNSS fix returned from the driver.
@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: 2939F01A-2F1C-4434-BAE1-59F1F320BD44
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: GNSS_FIXDATA, GNSS_FIXDATA, PGNSS_FIXDATA, *PGNSS_FIXDATA
+ms.keywords: GNSS_FIXDATA, *PGNSS_FIXDATA, GNSS_FIXDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PGNSS_FIXDATA, GNSS_FIXDATA
 ---
 
 # GNSS_FIXDATA structure

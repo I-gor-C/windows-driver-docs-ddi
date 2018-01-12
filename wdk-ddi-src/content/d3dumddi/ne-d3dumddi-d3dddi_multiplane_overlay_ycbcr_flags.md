@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dumddi.D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS
+UID: NE:d3dumddi.D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS
 title: D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS
 author: windows-driver-content
 description: Identifies YUV range and conversion info that describes a multiplane overlay.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_overlay_ycbcr_flags.htm
 old-project: display
 ms.assetid: d28170a4-2cf3-4e42-bc76-afdb8c3bce70
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS, D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS
 ---
 
 # D3DDDI_MULTIPLANE_OVERLAY_YCbCr_FLAGS enumeration
@@ -71,7 +72,7 @@ YUV values contain xvYCC data, instead of conventional YCbCr data.
 
 
 ## -remarks
-For more info on how YUV ranges are defined and converted, see <a href="display.yuv_format_ranges">YUV format ranges in Windows 8.1</a>.
+For more info on how YUV ranges are defined and converted, see <a href="https://msdn.microsoft.com/D76FFB8C-CA42-446E-826F-52982B1849E5">YUV format ranges in Windows 8.1</a>.
 
 
 ## -requirements

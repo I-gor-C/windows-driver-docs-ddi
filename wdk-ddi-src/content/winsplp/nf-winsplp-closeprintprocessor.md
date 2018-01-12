@@ -1,5 +1,5 @@
 ---
-UID: NF.winsplp.ClosePrintProcessor
+UID: NF:winsplp.ClosePrintProcessor
 title: ClosePrintProcessor function
 author: windows-driver-content
 description: A print processor's ClosePrintProcessor function completes the printing of a print job and makes the associated handle invalid.
@@ -7,7 +7,7 @@ old-location: print\closeprintprocessor.htm
 old-project: print
 ms.assetid: 3cf87a18-8b5a-40f2-9c0e-2b29167e283d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: ClosePrintProcessor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Nwprint.lib
 req.dll: 
 req.irql: 
+req.typenames: NOTIFICATION_CONFIG_FLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ BOOL ClosePrintProcessor(
 
 ### -param hPrintProcessor [in, out]
 
-Caller-supplied print processor handle. This is the handle returned by a previous call to <a href="print.openprintprocessor">OpenPrintProcessor</a>.
+Caller-supplied print processor handle. This is the handle returned by a previous call to <a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>.
 
 
 ## -returns
@@ -64,7 +65,7 @@ If the operation succeeds, the function should return <b>TRUE</b>. If the operat
 
 
 ## -remarks
-Print processors are required to export a <b>ClosePrintProcessor</b> function. The spooler calls the function after the print processor's <a href="print.printdocumentonprintprocessor">PrintDocumentOnPrintProcessor</a> returns. The function should free all resources that were allocated by the <a href="print.openprintprocessor">OpenPrintProcessor</a> function.
+Print processors are required to export a <b>ClosePrintProcessor</b> function. The spooler calls the function after the print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> returns. The function should free all resources that were allocated by the <a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a> function.
 
 
 ## -requirements
@@ -107,15 +108,15 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="print.openprintprocessor">OpenPrintProcessor</a>
+<a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>
 </dt>
 <dt>
-<a href="print.printdocumentonprintprocessor">PrintDocumentOnPrintProcessor</a>
+<a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20ClosePrintProcessor function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20ClosePrintProcessor function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

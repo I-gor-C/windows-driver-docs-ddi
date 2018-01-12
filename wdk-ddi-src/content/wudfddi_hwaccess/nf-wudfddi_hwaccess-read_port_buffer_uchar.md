@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi_hwaccess.READ_PORT_BUFFER_UCHAR
+UID: NF:wudfddi_hwaccess.READ_PORT_BUFFER_UCHAR
 title: READ_PORT_BUFFER_UCHAR function
 author: windows-driver-content
 description: The READ_PORT_BUFFER_UCHAR function reads a number of bytes from the specified port address into a buffer.
@@ -7,7 +7,7 @@ old-location: wdf\read_port_buffer_uchar.htm
 old-project: wdf
 ms.assetid: CDA0A86B-94E7-4825-9826-0E12ECF42B57
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: READ_PORT_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PUMDF_IO_TARGET_OPEN_PARAMS, UMDF_IO_TARGET_OPEN_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -84,7 +85,7 @@ This function does not return a value.
 
 
 ## -remarks
-For more information, see <a href="wdf.reading_and_writing_to_device_registers_in_umdf_1_x_drivers">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.
+For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD-B292-CC1875EF7F7D">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.
 
 
 ## -requirements

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1DDI_VIDEO_INPUT
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_INPUT
 title: D3D11_1DDI_VIDEO_INPUT
 author: windows-driver-content
 description: Reserved for system use. Do not use in your driver.
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_input.htm
 old-project: display
 ms.assetid: 371f494c-abd2-43c8-ab06-749144762b01
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_VIDEO_INPUT, D3D11_1DDI_VIDEO_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_VIDEO_INPUT
 ---
 
 # D3D11_1DDI_VIDEO_INPUT structure

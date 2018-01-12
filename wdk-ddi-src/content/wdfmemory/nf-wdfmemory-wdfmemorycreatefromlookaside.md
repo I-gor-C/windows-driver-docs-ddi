@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfmemory.WdfMemoryCreateFromLookaside
+UID: NF:wdfmemory.WdfMemoryCreateFromLookaside
 title: WdfMemoryCreateFromLookaside function
 author: windows-driver-content
 description: The WdfMemoryCreateFromLookaside method creates a framework memory object and obtains a memory buffer from a specified lookaside list.
@@ -7,7 +7,7 @@ old-location: wdf\wdfmemorycreatefromlookaside.htm
 old-project: wdf
 ms.assetid: aeafa20c-e4be-4b6d-88b7-22b84ef4cedd
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfMemoryCreateFromLookaside
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: See Remarks section.
+req.typenames: WDF_MEMORY_DESCRIPTOR_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -59,7 +60,7 @@ NTSTATUS WdfMemoryCreateFromLookaside(
 
 ### -param Lookaside [in]
 
-A handle to a framework lookaside-list object that is obtained by calling <a href="wdf.wdflookasidelistcreate">WdfLookasideListCreate</a>.
+A handle to a framework lookaside-list object that is obtained by calling <a href="..\wdfmemory\nf-wdfmemory-wdflookasidelistcreate.md">WdfLookasideListCreate</a>.
 
 
 ### -param Memory [out]
@@ -86,13 +87,13 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 ## -remarks
-After your driver calls <a href="wdf.wdflookasidelistcreate">WdfLookasideListCreate</a> to create a lookaside-list object, the driver can call <b>WdfMemoryCreateFromLookaside</b> to obtain a buffer from the lookaside list. 
+After your driver calls <a href="..\wdfmemory\nf-wdfmemory-wdflookasidelistcreate.md">WdfLookasideListCreate</a> to create a lookaside-list object, the driver can call <b>WdfMemoryCreateFromLookaside</b> to obtain a buffer from the lookaside list. 
 
 The framework provides a handle to a memory object that represents the buffer. When the framework creates the memory object, it uses object attributes that the driver supplied when it called <b>WdfMemoryCreateFromLookaside</b>.
 
-When your driver has finished using a memory object that it obtained from a lookaside list, the driver must call <a href="wdf.wdfobjectdelete">WdfObjectDelete</a> to return the memory object to the lookaside list.
+When your driver has finished using a memory object that it obtained from a lookaside list, the driver must call <a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a> to return the memory object to the lookaside list.
 
-For more information about framework memory objects and lookaside lists, see <a href="wdf.using_memory_buffers">Using Memory Buffers</a>.
+For more information about framework memory objects and lookaside lists, see <a href="https://msdn.microsoft.com/f5699837-f1ba-4088-82b3-d7e27341fb46">Using Memory Buffers</a>.
 
 If lookaside-list buffers are being allocated from the pageable memory pool, the <b>WdfMemoryCreateFromLookaside</b> method must be called at IRQL &lt;= APC_LEVEL. Otherwise, the method can be called at IRQL &lt;= DISPATCH_LEVEL.
 
@@ -140,7 +141,7 @@ Library
 </th>
 <td width="70%">
 <dl>
-<dt>Wdf01000.sys (see <a href="wdf.framework_library_versioning">Framework Library Versioning</a>.)</dt>
+<dt>Wdf01000.sys (see <a href="https://msdn.microsoft.com/51db6f3c-45cb-46a7-9dd4-2bab67893fea">Framework Library Versioning</a>.)</dt>
 </dl>
 </td>
 </tr>
@@ -160,7 +161,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
 </td>
 </tr>
 </table>
@@ -168,21 +169,21 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdflookasidelistcreate">WdfLookasideListCreate</a>
+<a href="..\wdfmemory\nf-wdfmemory-wdflookasidelistcreate.md">WdfLookasideListCreate</a>
 </dt>
 <dt>
-<a href="wdf.wdfmemorycreate">WdfMemoryCreate</a>
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreate.md">WdfMemoryCreate</a>
 </dt>
 <dt>
-<a href="wdf.wdfmemorycreatepreallocated">WdfMemoryCreatePreallocated</a>
+<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatepreallocated.md">WdfMemoryCreatePreallocated</a>
 </dt>
 <dt>
-<a href="wdf.wdfobjectdelete">WdfObjectDelete</a>
+<a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfMemoryCreateFromLookaside method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfMemoryCreateFromLookaside method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

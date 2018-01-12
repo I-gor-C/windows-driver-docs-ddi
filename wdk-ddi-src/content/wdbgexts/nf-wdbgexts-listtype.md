@@ -1,13 +1,13 @@
 ---
-UID: NF.wdbgexts.ListType
+UID: NF:wdbgexts.ListType
 title: ListType function
 author: windows-driver-content
 description: The ListType function calls a specified callback function for every element in a linked list.
 old-location: debugger\listtype.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5c250438-8805-4f45-b08f-65ec87b3e61a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ListType
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXT_TDOP
 req.product: Windows 10 or later.
 ---
 
@@ -98,7 +99,7 @@ Specifies a pointer that is passed to the callback function specified by <i>Call
 
 ### -param CallbackRoutine [in]
 
-Specifies a function that is called for each entry in the linked list.  The parameters passed to the function are the <i>Context</i> pointer and a <a href="debugger.field_info">FIELD_INFO</a> structure; the address of the entry is found in the <b>address</b> member of this structure.
+Specifies a function that is called for each entry in the linked list.  The parameters passed to the function are the <i>Context</i> pointer and a <a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a> structure; the address of the entry is found in the <b>address</b> member of this structure.
 
 
 ## -returns

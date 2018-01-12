@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIODISK._MPIO_GET_DESCRIPTOR
+UID: NS:mpiodisk._MPIO_GET_DESCRIPTOR
 title: _MPIO_GET_DESCRIPTOR
 author: windows-driver-content
 description: The MPIO_GET_DESCRIPTOR structure is used to query for LUN instances that correspond to various paths.
@@ -7,8 +7,8 @@ old-location: storage\mpio_get_descriptor.htm
 old-project: storage
 ms.assetid: cabd2a6d-20d0-4499-8494-7ad746f2d915
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _MPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR, *PMPIO_GET_DESCRIPTOR, PMPIO_GET_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: _MPIO_GET_DESCRIPTOR, *PMPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PMPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR
 ---
 
 # _MPIO_GET_DESCRIPTOR structure

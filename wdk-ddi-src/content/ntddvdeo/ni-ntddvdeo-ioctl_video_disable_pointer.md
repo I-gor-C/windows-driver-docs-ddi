@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddvdeo.IOCTL_VIDEO_DISABLE_POINTER
+UID: NI:ntddvdeo.IOCTL_VIDEO_DISABLE_POINTER
 title: IOCTL_VIDEO_DISABLE_POINTER
 author: windows-driver-content
 description: Makes the pointer invisible by disabling the pointer attributes. Support for this modal request is optional.
@@ -7,8 +7,8 @@ old-location: display\ioctl_video_disable_pointer.htm
 old-project: display
 ms.assetid: 0ec5597b-53a4-4711-84f0-d307ad96ef9d
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS, TAPE_WRITE_MARKS, PTAPE_WRITE_MARKS
+ms.date: 12/29/2017
+ms.keywords: _TAPE_WRITE_MARKS, TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_DISABLE_POINTER IOCTL
@@ -75,7 +76,7 @@ None
 
 ### -status-block
 I/O Status block
-The miniport driver does not set the <b>Information</b> member of the <a href="display.status_block">STATUS_BLOCK</a> structure.
+The miniport driver does not set the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure.
 
 
 ## -remarks

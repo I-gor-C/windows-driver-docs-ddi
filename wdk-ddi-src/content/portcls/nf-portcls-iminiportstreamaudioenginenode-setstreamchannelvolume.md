@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportStreamAudioEngineNode.SetStreamChannelVolume
+UID: NF:portcls.IMiniportStreamAudioEngineNode.SetStreamChannelVolume
 title: IMiniportStreamAudioEngineNode::SetStreamChannelVolume method
 author: windows-driver-content
 description: Sets the volume level to be applied to the audio stream.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportStreamAudioEngineNode::SetStreamChannelVolume method

@@ -1,13 +1,13 @@
 ---
-UID: NF.fwpsk.FwpsAleEndpointGetSecurityInfo0
+UID: NF:fwpsk.FwpsAleEndpointGetSecurityInfo0
 title: FwpsAleEndpointGetSecurityInfo0 function
 author: windows-driver-content
 description: The FwpsAleEndpointGetSecurityInfo0 function retrieves security information about the application layer enforcement (ALE) endpoint enumeration session.Note  FwpsAleEndpointGetSecurityInfo0 is a specific version of FwpsAleEndpointGetSecurityInfo.
 old-location: netvista\fwpsaleendpointgetsecurityinfo0.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0c825695-7fef-4eb1-8615-f41c526aa32d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: FwpsAleEndpointGetSecurityInfo0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Fwpkclnt.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 # FwpsAleEndpointGetSecurityInfo0 function
@@ -65,13 +66,13 @@ NTSTATUS NTAPI FwpsAleEndpointGetSecurityInfo0(
 
 A handle for an open session with the filter engine. This handle is obtained when a session is
      opened by calling 
-     <a href="netvista.fwpmengineopen0">FwpmEngineOpen0</a>.
+     <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>.
 
 
 ### -param securityInfo [in]
 
 A set of security information flags. For more information, see the 
-     <a href="ifsk.security_information">SECURITY_INFORMATION</a> description in the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff556635">SECURITY_INFORMATION</a> description in the
      Installable File Systems driver documentation.
 
 
@@ -176,13 +177,13 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.fwpsaleendpointenum0">FwpsAleEndpointEnum0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointenum0.md">FwpsAleEndpointEnum0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsaleendpointgetbyid0">FwpsAleEndpointGetById0</a>
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetbyid0.md">FwpsAleEndpointGetById0</a>
 </dt>
 <dt>
-<a href="netvista.fwpsaleendpointsetsecurityinfo0">
+<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointsetsecurityinfo0.md">
    FwpsAleEndpointSetSecurityInfo0</a>
 </dt>
 </dl>
@@ -190,5 +191,5 @@ PASSIVE_LEVEL
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20FwpsAleEndpointGetSecurityInfo0 function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20FwpsAleEndpointGetSecurityInfo0 function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.WRITE_PORT_BUFFER_UCHAR
+UID: NF:wdm.WRITE_PORT_BUFFER_UCHAR
 title: WRITE_PORT_BUFFER_UCHAR function
 author: windows-driver-content
 description: The WRITE_PORT_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified port.
@@ -7,7 +7,7 @@ old-location: kernel\write_port_buffer_uchar.htm
 old-project: kernel
 ms.assetid: 59a7b11a-c6b6-4452-9518-1e5c7c07ec18
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: WRITE_PORT_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hal.lib
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

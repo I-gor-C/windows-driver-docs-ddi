@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.SetCommand
+UID: NF:dbgeng.IDebugBreakpoint2.SetCommand
 title: IDebugBreakpoint2::SetCommand method
 author: windows-driver-content
 description: The SetCommand method sets the command that is executed when a breakpoint is triggered.
 old-location: debugger\setcommand.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 0c9db77e-6e5d-45cd-a52c-dcc3acf5cba0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::SetCommand, SetCommand
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::SetCommand method

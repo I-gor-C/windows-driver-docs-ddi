@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlLongLongToULongLong
+UID: NF:ntintsafe.RtlLongLongToULongLong
 title: RtlLongLongToULongLong function
 author: windows-driver-content
 description: Converts a value of type LONGLONG to a value of type LONGLONG.
@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongtoulonglong.htm
 old-project: kernel
 ms.assetid: AE273E51-FEB5-4470-AB19-0F55A2F8EFFD
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlLongLongToULongLong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlLongLongToULongLong function

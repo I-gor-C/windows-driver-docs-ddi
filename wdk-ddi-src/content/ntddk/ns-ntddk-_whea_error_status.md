@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_ERROR_STATUS
+UID: NS:ntddk._WHEA_ERROR_STATUS
 title: _WHEA_ERROR_STATUS
 author: windows-driver-content
 description: The WHEA_ERROR_STATUS union describes generic error codes that are abstracted from the data contained in implementation-specific error registers.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 5b11112b-e900-4894-a9ce-6895a4fa1956
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS, PWHEA_ERROR_STATUS
+ms.keywords: _WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS
 ---
 
 # _WHEA_ERROR_STATUS structure
@@ -217,7 +218,7 @@ Reserved for system use.
 ## -remarks
 The WHEA_ERROR_STATUS union provides the capability to abstract information from implementation-specific error registers into generic error codes so that the operating system can process the errors without an intimate knowledge of the underlying platform. This union is derived from the Error Status section of the <a href="http://go.microsoft.com/fwlink/p/?linkid=26730">Intel Itanium Processor Family System Abstraction Layer Specification</a>.
 
-A WHEA_ERROR_STATUS union is contained within the <a href="whea.whea_memory_error_section">WHEA_MEMORY_ERROR_SECTION</a>, <a href="whea.whea_pcixbus_error_section">WHEA_PCIXBUS_ERROR_SECTION</a>, and <a href="whea.whea_pcixdevice_error_section">WHEA_PCIXDEVICE_ERROR_SECTION</a> structures.
+A WHEA_ERROR_STATUS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>, <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a>, and <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structures.
 
 
 ## -requirements
@@ -249,13 +250,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_memory_error_section">WHEA_MEMORY_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>
 </dt>
 <dt>
-<a href="whea.whea_pcixbus_error_section">WHEA_PCIXBUS_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a>
 </dt>
 <dt>
-<a href="whea.whea_pcixdevice_error_section">WHEA_PCIXDEVICE_ERROR_SECTION</a>
+<a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a>
 </dt>
 </dl>
  

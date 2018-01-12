@@ -1,14 +1,14 @@
 ---
-UID: NC.wlanihv.DOT11EXTIHV_ADAPTER_RESET
+UID: NC:wlanihv.DOT11EXTIHV_ADAPTER_RESET
 title: DOT11EXTIHV_ADAPTER_RESET
 author: windows-driver-content
 description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
 old-location: netvista\dot11extihvadapterreset.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c1e8cce7-6fa4-45d3-a8c8-9f2ef0a8e846
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _BINARY_CONTAINER, *PBINARY_CONTAINER, PBINARY_CONTAINER, BINARY_CONTAINER
+ms.date: 1/8/2018
+ms.keywords: _DRIVER_INFO_8W, DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W, DRIVER_INFO_8
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -73,7 +74,7 @@ The operating system calls
     <i>Dot11ExtIhvAdapterReset</i> whenever one of the following events occurs.
 
 The WLAN adapter performs a disconnection operation. For more information about this operation, see 
-      <a href="netvista.disconnection_operations">Disconnection Operations</a>.
+      <a href="https://msdn.microsoft.com/f0ccdd41-3470-4602-a26b-af166e7eac82">Disconnection Operations</a>.
 
 The operating system resets the Native 802.11 miniport driver, which manages the adapter, through a
       set request of 
@@ -85,7 +86,7 @@ The
     was called.
 
 For more information about the reset operation for WLAN adapters, see 
-    <a href="netvista.802_11_wlan_adapter_reset">802.11 WLAN Adapter Reset</a>.
+    <a href="https://msdn.microsoft.com/1f993977-b4a1-42ec-8de3-2f4855db93a7">802.11 WLAN Adapter Reset</a>.
 
 
 ## -requirements
@@ -138,5 +139,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11EXTIHV_ADAPTER_RESET callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11EXTIHV_ADAPTER_RESET callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

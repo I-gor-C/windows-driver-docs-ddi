@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfhwaccess.WDF_READ_PORT_ULONG
+UID: NF:wdfhwaccess.WDF_READ_PORT_ULONG
 title: WDF_READ_PORT_ULONG function
 author: windows-driver-content
 description: The WDF_READ_PORT_ULONG function reads a ULONG value from the specified port address.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_port_ulong.htm
 old-project: wdf
 ms.assetid: 7553FE66-8138-4172-843F-84EE2D5A90BE
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WDF_READ_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 

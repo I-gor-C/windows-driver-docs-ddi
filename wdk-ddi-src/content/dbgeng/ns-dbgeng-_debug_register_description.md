@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._DEBUG_REGISTER_DESCRIPTION
+UID: NS:dbgeng._DEBUG_REGISTER_DESCRIPTION
 title: _DEBUG_REGISTER_DESCRIPTION
 author: windows-driver-content
 description: The DEBUG_REGISTER_DESCRIPTION structure is returned by GetDescription to describe a processor's register.
 old-location: debugger\debug_register_description.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 92e7800d-4de6-498c-87f8-8690d7e8fc51
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DEBUG_REGISTER_DESCRIPTION, PDEBUG_REGISTER_DESCRIPTION, *PDEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION
+ms.date: 1/10/2018
+ms.keywords: _DEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION, *PDEBUG_REGISTER_DESCRIPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DEBUG_REGISTER_DESCRIPTION, *PDEBUG_REGISTER_DESCRIPTION
 ---
 
 # _DEBUG_REGISTER_DESCRIPTION structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>DEBUG_REGISTER_DESCRIPTION</b> structure is returned by <a href="debugger.getdescription">GetDescription</a> to describe a processor's register.
+The <b>DEBUG_REGISTER_DESCRIPTION</b> structure is returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff546575">GetDescription</a> to describe a processor's register.
 
 
 
@@ -61,7 +62,7 @@ typedef struct _DEBUG_REGISTER_DESCRIPTION {
 
 ### -field Type
 
-The type of value that this register holds.  The possible values are the same as for the <b>Type</b> field in the <a href="debugger.debug_value">DEBUG_VALUE</a> structure.
+The type of value that this register holds.  The possible values are the same as for the <b>Type</b> field in the <a href="..\dbgeng\ns-dbgeng-_debug_value.md">DEBUG_VALUE</a> structure.
 
 
 ### -field Flags

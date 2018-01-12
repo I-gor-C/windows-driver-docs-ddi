@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DHAL._D3DHAL_DP2STARTVERTEX
+UID: NS:d3dhal._D3DHAL_DP2STARTVERTEX
 title: _D3DHAL_DP2STARTVERTEX
 author: windows-driver-content
 description: A D3DHAL_DP2STARTVERTEX structure follows certain D3DHAL_DP2COMMAND structures in the command buffer, and indicates the offset in the vertex buffer for the first vertex to use in D3dDrawPrimitives2.
@@ -7,8 +7,8 @@ old-location: display\d3dhal_dp2startvertex.htm
 old-project: display
 ms.assetid: 302ed135-9fde-4101-876f-1f70bed501b0
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _D3DHAL_DP2STARTVERTEX, D3DHAL_DP2STARTVERTEX, *LPD3DHAL_DP2STARTVERTEX, LPD3DHAL_DP2STARTVERTEX
+ms.date: 12/29/2017
+ms.keywords: _D3DHAL_DP2STARTVERTEX, D3DHAL_DP2STARTVERTEX, *LPD3DHAL_DP2STARTVERTEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DHAL_DP2STARTVERTEX, *LPD3DHAL_DP2STARTVERTEX
 ---
 
 # _D3DHAL_DP2STARTVERTEX structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-A D3DHAL_DP2STARTVERTEX structure follows certain <a href="display.d3dhal_dp2command">D3DHAL_DP2COMMAND</a> structures in the command buffer, and indicates the offset in the vertex buffer for the first vertex to use in <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>.
+A D3DHAL_DP2STARTVERTEX structure follows certain <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a> structures in the command buffer, and indicates the offset in the vertex buffer for the first vertex to use in <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>.
 
 
 
@@ -71,7 +72,7 @@ D3DDP2OP_INDEXEDTRIANGLESTRIP
 
 D3DDP2OP_INDEXEDTRIANGLEFAN
 
-The first vertex of such primitives is located (<b>wVStart</b> + <b>dwVertexOffset</b>) bytes from the beginning of the vertex buffer, where <b>dwVertexOffset</b> is a member of <a href="display.d3dhal_drawprimitives2data">D3DHAL_DRAWPRIMITIVES2DATA</a>.
+The first vertex of such primitives is located (<b>wVStart</b> + <b>dwVertexOffset</b>) bytes from the beginning of the vertex buffer, where <b>dwVertexOffset</b> is a member of <a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>.
 
 
 ## -requirements
@@ -100,15 +101,15 @@ Header
 <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
 </dt>
 <dt>
-<a href="display.d3dhal_dp2command">D3DHAL_DP2COMMAND</a>
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
 </dt>
 <dt>
-<a href="display.d3dhal_drawprimitives2data">D3DHAL_DRAWPRIMITIVES2DATA</a>
+<a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2STARTVERTEX structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DHAL_DP2STARTVERTEX structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

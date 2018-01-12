@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.ClfsTerminateReadLog
+UID: NF:wdm.ClfsTerminateReadLog
 title: ClfsTerminateReadLog function
 author: windows-driver-content
 description: The ClfsTerminateReadLog routine invalidates a specified read context after freeing resources associated with the context.
@@ -7,7 +7,7 @@ old-location: kernel\clfsterminatereadlog.htm
 old-project: kernel
 ms.assetid: 47633903-0314-4d50-8dd5-ddb0eb934e09
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: ClfsTerminateReadLog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Clfs.lib
 req.dll: Clfs.sys
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -56,7 +57,7 @@ NTSTATUS ClfsTerminateReadLog(
 
 ### -param pvCursorContext [in]
 
-A pointer to the read context to be invalidated. The caller previously obtained this pointer by calling <a href="kernel.clfsreadlogrecord">ClfsReadLogRecord</a> or <a href="kernel.clfsreadrestartarea">ClfsReadRestartArea</a>.
+A pointer to the read context to be invalidated. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a> or <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>.
 
 
 ## -returns
@@ -140,15 +141,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.clfsreadlogrecord">ClfsReadLogRecord</a>
+<a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a>
 </dt>
 <dt>
-<a href="kernel.clfsreadrestartarea">ClfsReadRestartArea</a>
+<a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsTerminateReadLog routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20ClfsTerminateReadLog routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

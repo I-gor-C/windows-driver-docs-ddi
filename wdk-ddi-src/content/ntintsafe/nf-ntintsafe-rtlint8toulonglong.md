@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlInt8ToULongLong
+UID: NF:ntintsafe.RtlInt8ToULongLong
 title: RtlInt8ToULongLong function
 author: windows-driver-content
 description: Converts a value of type INT8 to a value of type ULONGLONG.
@@ -7,7 +7,7 @@ old-location: kernel\rtlint8toulonglong.htm
 old-project: kernel
 ms.assetid: C840CDA4-36C8-4D7C-88EB-19292429C45C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlInt8ToULongLong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlInt8ToULongLong function

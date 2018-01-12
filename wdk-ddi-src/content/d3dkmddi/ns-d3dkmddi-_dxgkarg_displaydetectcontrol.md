@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARG_DISPLAYDETECTCONTROL
+UID: NS:d3dkmddi._DXGKARG_DISPLAYDETECTCONTROL
 title: _DXGKARG_DISPLAYDETECTCONTROL
 author: windows-driver-content
 description: Used to hold the arguments for DXGKDDI_DISPLAYDETECTCONTROL.
@@ -7,7 +7,7 @@ old-location: display\dxgkarg_displaydetectcontrol.htm
 old-project: display
 ms.assetid: A0B5798E-FF4D-4133-BFA9-39B37CC387F6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _DXGKARG_DISPLAYDETECTCONTROL, DXGKARG_DISPLAYDETECTCONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARG_DISPLAYDETECTCONTROL
 ---
 
 # _DXGKARG_DISPLAYDETECTCONTROL structure

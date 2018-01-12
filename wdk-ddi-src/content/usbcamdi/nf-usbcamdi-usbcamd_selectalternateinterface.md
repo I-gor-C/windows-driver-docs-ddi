@@ -1,5 +1,5 @@
 ---
-UID: NF.usbcamdi.USBCAMD_SelectAlternateInterface
+UID: NF:usbcamdi.USBCAMD_SelectAlternateInterface
 title: USBCAMD_SelectAlternateInterface function
 author: windows-driver-content
 description: The USBCAMD_SelectAlternateInterface function selects an alternate setting within the USB video streaming interface.
@@ -7,7 +7,7 @@ old-location: stream\usbcamd_selectalternateinterface.htm
 old-project: stream
 ms.assetid: b9a31719-2674-4d3f-8792-b099640faa07
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: USBCAMD_SelectAlternateInterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Usbcamd2.lib
 req.dll: 
 req.irql: 
+req.typenames: USB_BUS_INTERFACE_USBDI_V3, *PUSB_BUS_INTERFACE_USBDI_V3
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ Pointer to a device-specific context.
 
 ### -param RequestInterface [in, out]
 
-Pointer to a <a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATION</a> structure initialized with the proper values for a SELECT_INTERFACE URB request. This interface structure corresponds to a single isochronous interface on the device.
+Pointer to a <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structure initialized with the proper values for a SELECT_INTERFACE URB request. This interface structure corresponds to a single isochronous interface on the device.
 
 
 ## -returns
@@ -123,12 +124,12 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="buses.usbd_interface_information">USBD_INTERFACE_INFORMATION</a>
+<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_SelectAlternateInterface function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20USBCAMD_SelectAlternateInterface function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

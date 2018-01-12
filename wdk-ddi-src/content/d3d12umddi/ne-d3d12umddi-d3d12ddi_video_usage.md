@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_VIDEO_USAGE
+UID: NE:d3d12umddi.D3D12DDI_VIDEO_USAGE
 title: D3D12DDI_VIDEO_USAGE
 author: windows-driver-content
 description: A hint for the graphics driver to optimize for different scenarios.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_video_usage.htm
 old-project: display
 ms.assetid: 663790EE-A9E3-4EBC-93C7-20DE0D759A26
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_VIDEO_USAGE, D3D12DDI_VIDEO_USAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_VIDEO_USAGE
 ---
 
 # D3D12DDI_VIDEO_USAGE enumeration

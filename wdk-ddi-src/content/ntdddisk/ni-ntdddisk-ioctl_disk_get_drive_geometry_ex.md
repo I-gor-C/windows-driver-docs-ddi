@@ -1,5 +1,5 @@
 ---
-UID: NI.ntdddisk.IOCTL_DISK_GET_DRIVE_GEOMETRY_EX
+UID: NI:ntdddisk.IOCTL_DISK_GET_DRIVE_GEOMETRY_EX
 title: IOCTL_DISK_GET_DRIVE_GEOMETRY_EX
 author: windows-driver-content
 description: Returns information about the physical disk's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).The difference between IOCTL_DISK_GET_DRIVE_GEOMETRY_EX and the older IOCTL_DISK_GET_DRIVE_GEOMETRY request is that IOCTL_DISK_GET_DRIVE_GEOMETRY_EX can retrieve information from both Master Boot Record (MBR) and GUID Partition Table (GPT)-type partitioned media, whereas IOCTL_DISK_GET_DRIVE_GEOMETRY can only read MBR-style media.
@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_get_drive_geometry_ex.htm
 old-project: storage
 ms.assetid: c0cf6b73-3283-4a58-845a-79f3b078db46
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/10/2018
 ms.keywords: _DETECTION_TYPE, DETECTION_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_GET_DRIVE_GEOMETRY_EX IOCTL
@@ -62,7 +63,7 @@ None.
 
 
 ### -output-buffer
-The driver returns the <a href="storage.disk_geometry_ex">DISK_GEOMETRY_EX</a> data in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The size of the output buffer may not be the same size as the input buffer.
+The driver returns the <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry_ex.md">DISK_GEOMETRY_EX</a> data in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>. The size of the output buffer may not be the same size as the input buffer.
 
 
 ### -output-buffer-length
@@ -87,7 +88,7 @@ The <b>Status</b> field returns one of the following values:
 ## -remarks
 Only callers above Partmgr.sys may call this IOCTL as it contains disk partition information. 
 
-This IOCTL uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff560357">IOCTL_DISK_GET_DRIVE_GEOMETRY</a> to get the <a href="storage.disk_geometry">DISK_GEOMETRY</a> structure and <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_length_info.md">IOCTL_DISK_GET_LENGTH_INFO</a> to get the  <a href="storage.get_length_information">GET_LENGTH_INFORMATION</a> structure. Both of these IOCTL's are supported for use at the disk.sys level. 
+This IOCTL uses <a href="https://msdn.microsoft.com/library/windows/hardware/ff560357">IOCTL_DISK_GET_DRIVE_GEOMETRY</a> to get the <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a> structure and <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_length_info.md">IOCTL_DISK_GET_LENGTH_INFO</a> to get the  <a href="..\ntdddisk\ns-ntdddisk-_get_length_information.md">GET_LENGTH_INFORMATION</a> structure. Both of these IOCTL's are supported for use at the disk.sys level. 
 
 
 ## -requirements

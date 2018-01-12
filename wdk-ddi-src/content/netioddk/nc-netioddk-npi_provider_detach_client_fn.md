@@ -1,14 +1,14 @@
 ---
-UID: NC.netioddk.NPI_PROVIDER_DETACH_CLIENT_FN
+UID: NC:netioddk.NPI_PROVIDER_DETACH_CLIENT_FN
 title: NPI_PROVIDER_DETACH_CLIENT_FN
 author: windows-driver-content
 description: A provider module's ProviderDetachClient callback function detaches the provider module from a client module.
 old-location: netvista\providerdetachclient.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0f29bf89-856c-4019-a966-3e666a7fc78d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS, PNET_DMA_PROVIDER_CHARACTERISTICS
+ms.date: 1/8/2018
+ms.keywords: _NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PNET_DMA_PROVIDER_CHARACTERISTICS, NET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 # NPI_PROVIDER_DETACH_CLIENT_FN callback
@@ -84,9 +85,9 @@ A provider module's
 The NMR calls a provider module's 
     <i>ProviderDetachClient</i> callback function whenever the binding between the provider module and a
     client module needs to be terminated. Detachment is initiated by either the client module calling the 
-    <a href="netvista.nmrderegisterclient">NmrDeregisterClient</a> function or the
+    <a href="..\netioddk\nf-netioddk-nmrderegisterclient.md">NmrDeregisterClient</a> function or the
     provider module calling the 
-    <a href="netvista.nmrderegisterprovider">NmrDeregisterProvider</a> function.
+    <a href="..\netioddk\nf-netioddk-nmrderegisterprovider.md">NmrDeregisterProvider</a> function.
 
 After its 
     <i>ProviderDetachClient</i> callback function has been called, a provider module should not make any more
@@ -104,7 +105,7 @@ If there are in-progress calls to one or more of the client module's
     <i>ProviderDetachClient</i> callback function is called, the provider module's 
     <i>ProviderDetachClient</i> callback function returns STATUS_PENDING. In this situation, the provider
     module must call the 
-    <a href="netvista.nmrproviderdetachclientcomplete">
+    <a href="..\netioddk\nf-netioddk-nmrproviderdetachclientcomplete.md">
     NmrProviderDetachClientComplete</a> function after all in-progress calls to the client module's 
     NPI callback functions have
     completed. The call to the 
@@ -162,13 +163,13 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.nmrderegisterclient">NmrDeregisterClient</a>
+<a href="..\netioddk\nf-netioddk-nmrderegisterclient.md">NmrDeregisterClient</a>
 </dt>
 <dt>
-<a href="netvista.nmrderegisterprovider">NmrDeregisterProvider</a>
+<a href="..\netioddk\nf-netioddk-nmrderegisterprovider.md">NmrDeregisterProvider</a>
 </dt>
 <dt>
-<a href="netvista.nmrproviderdetachclientcomplete">
+<a href="..\netioddk\nf-netioddk-nmrproviderdetachclientcomplete.md">
    NmrProviderDetachClientComplete</a>
 </dt>
 <dt>
@@ -182,12 +183,12 @@ IRQL
    ProviderCleanupBindingContext</a>
 </dt>
 <dt>
-<a href="netvista.npi_provider_characteristics">NPI_PROVIDER_CHARACTERISTICS</a>
+<a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">NPI_PROVIDER_CHARACTERISTICS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NPI_PROVIDER_DETACH_CLIENT_FN callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NPI_PROVIDER_DETACH_CLIENT_FN callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

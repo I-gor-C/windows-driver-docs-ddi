@@ -1,13 +1,13 @@
 ---
-UID: NS.NDIS._NDIS_RW_LOCK_REFCOUNT
+UID: NS:ndis._NDIS_RW_LOCK_REFCOUNT
 title: _NDIS_RW_LOCK_REFCOUNT
 author: windows-driver-content
 description: The NDIS_RW_LOCK_REFCOUNT union defines attributes of a read/write lock.
 old-location: netvista\ndis_rw_lock_refcount.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 1b2c93dd-a80e-4197-bc4f-cad12f6d6c77
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: _NDIS_RW_LOCK_REFCOUNT, NDIS_RW_LOCK_REFCOUNT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
+req.typenames: NDIS_RW_LOCK_REFCOUNT
 ---
 
 # _NDIS_RW_LOCK_REFCOUNT structure

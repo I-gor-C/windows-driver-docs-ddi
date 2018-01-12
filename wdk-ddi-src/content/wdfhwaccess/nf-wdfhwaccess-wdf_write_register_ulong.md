@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfhwaccess.WDF_WRITE_REGISTER_ULONG
+UID: NF:wdfhwaccess.WDF_WRITE_REGISTER_ULONG
 title: WDF_WRITE_REGISTER_ULONG function
 author: windows-driver-content
 description: The WDF_WRITE_REGISTER_ULONG routine writes a ULONG value to the specified address.
@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_register_ulong.htm
 old-project: wdf
 ms.assetid: C2EBA90C-3F36-45AC-9344-DFB1824A66B9
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WDF_WRITE_REGISTER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsStreamPointerCancelTimeout
+UID: NF:ks.KsStreamPointerCancelTimeout
 title: KsStreamPointerCancelTimeout function
 author: windows-driver-content
 description: The KsStreamPointerCancelTimeout function cancels a previously scheduled time-out callback on the specified stream pointer.
@@ -7,7 +7,7 @@ old-location: stream\ksstreampointercanceltimeout.htm
 old-project: stream
 ms.assetid: 9e1dd010-0074-45fb-b3cb-f8ea7ad15e02
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsStreamPointerCancelTimeout
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: 
 ---
 
 # KsStreamPointerCancelTimeout function
@@ -55,7 +56,7 @@ void KsStreamPointerCancelTimeout(
 
 ### -param StreamPointer [in]
 
-A pointer to a <a href="stream.ksstream_pointer">KSSTREAM_POINTER</a> structure representing the stream pointer for which to cancel a registered time-out callback.
+A pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer for which to cancel a registered time-out callback.
 
 
 ## -returns
@@ -63,7 +64,7 @@ None
 
 
 ## -remarks
-Minidrivers should use <a href="stream.ksstreampointerscheduletimeout">KsStreamPointerScheduleTimeout</a> to schedule a time-out callback on a specified stream pointer.
+Minidrivers should use <a href="..\ks\nf-ks-ksstreampointerscheduletimeout.md">KsStreamPointerScheduleTimeout</a> to schedule a time-out callback on a specified stream pointer.
 
 The <b>KsStreamPointerCancelTimeout</b> function does not affect stream pointers that have no currently scheduled time-out callback.
 
@@ -128,15 +129,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksstreampointerscheduletimeout">KsStreamPointerScheduleTimeout</a>
+<a href="..\ks\nf-ks-ksstreampointerscheduletimeout.md">KsStreamPointerScheduleTimeout</a>
 </dt>
 <dt>
-<a href="stream.kspingetfirstclonestreampointer">KsPinGetFirstCloneStreamPointer</a>
+<a href="..\ks\nf-ks-kspingetfirstclonestreampointer.md">KsPinGetFirstCloneStreamPointer</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerCancelTimeout function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsStreamPointerCancelTimeout function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

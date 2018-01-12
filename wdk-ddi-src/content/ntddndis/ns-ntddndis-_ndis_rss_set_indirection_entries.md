@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_RSS_SET_INDIRECTION_ENTRIES
+UID: NS:ntddndis._NDIS_RSS_SET_INDIRECTION_ENTRIES
 title: _NDIS_RSS_SET_INDIRECTION_ENTRIES
 author: windows-driver-content
 description: The NDIS_RSS_SET_INDIRECTION_ENTRIES structure represents a set of actions, where each action moves a single entry of the Receive Side Scaling (RSS) indirection table of a specified VPort to a specified target CPU.
 old-location: netvista\ndis_rss_set_indirection_entries.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9AB69EC6-FE78-4242-89C7-D36AA16676BF
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_RSS_SET_INDIRECTION_ENTRIES, NDIS_RSS_SET_INDIRECTION_ENTRIES, *PNDIS_RSS_SET_INDIRECTION_ENTRIES, PNDIS_RSS_SET_INDIRECTION_ENTRIES
+ms.date: 1/8/2018
+ms.keywords: _NDIS_RSS_SET_INDIRECTION_ENTRIES, *PNDIS_RSS_SET_INDIRECTION_ENTRIES, NDIS_RSS_SET_INDIRECTION_ENTRIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PNDIS_RSS_SET_INDIRECTION_ENTRIES, NDIS_RSS_SET_INDIRECTION_ENTRIES
 ---
 
 # _NDIS_RSS_SET_INDIRECTION_ENTRIES structure
@@ -60,7 +61,7 @@ typedef struct _NDIS_RSS_SET_INDIRECTION_ENTRIES {
 ### -field Header
 
 The 
-     <a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RSS_SET_INDIRECTION_ENTRIES</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. 
@@ -82,12 +83,12 @@ An opaque number that needs to be added to the pointer during array traversal.
 
 ### -field RssEntryTableOffset
 
-The offset of the <a href="netvista.ndis_rss_set_indirection_entry">NDIS_RSS_SET_INDIRECTION_ENTRY</a> array from the beginning of this structure.
+The offset of the <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entry.md">NDIS_RSS_SET_INDIRECTION_ENTRY</a> array from the beginning of this structure.
 
 
 ### -field NumberOfRssEntries
 
-The number of formatted <a href="netvista.ndis_rss_set_indirection_entry">NDIS_RSS_SET_INDIRECTION_ENTRY</a> structures in the array.
+The number of formatted <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entry.md">NDIS_RSS_SET_INDIRECTION_ENTRY</a> structures in the array.
 
 
 ## -remarks
@@ -121,27 +122,27 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-">Receive Side Scaling Version 2 (RSSv2)</a>
+<a href="https://msdn.microsoft.com/192CAA41-0D17-4C06-8F13-68EA7C26D023">Receive Side Scaling Version 2 (RSSv2)</a>
 </dt>
 <dt>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-rss-set-indirection-table-entries">OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES</a>
+<a href="https://msdn.microsoft.com/F59D861C-B7DB-4C28-8842-4FDBAE1B95F1">OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES</a>
 </dt>
 <dt>
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID request interface in NDIS 6.80</a>
+<a href="https://msdn.microsoft.com/6BF2E800-90A0-48FC-B702-5AD4EC318A35">Synchronous OID request interface in NDIS 6.80</a>
 </dt>
 <dt>
-<a href="netvista.ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="netvista.ndis_rss_set_indirection_entry">NDIS_RSS_SET_INDIRECTION_ENTRY</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entry.md">NDIS_RSS_SET_INDIRECTION_ENTRY</a>
 </dt>
 <dt>
-<a href="netvista.ndis_nic_switch_capabilities">NDIS_NIC_SWITCH_CAPABILITIES</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_capabilities.md">NDIS_NIC_SWITCH_CAPABILITIES</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_RSS_SET_INDIRECTION_ENTRIES structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_RSS_SET_INDIRECTION_ENTRIES structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

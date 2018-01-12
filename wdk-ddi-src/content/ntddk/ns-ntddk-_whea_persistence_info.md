@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDK._WHEA_PERSISTENCE_INFO
+UID: NS:ntddk._WHEA_PERSISTENCE_INFO
 title: _WHEA_PERSISTENCE_INFO
 author: windows-driver-content
 description: The WHEA_PERSISTENCE_INFO union describes data that is used by the error record persistence interface for storing an error record.
@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: ab429d1b-0b4d-4897-b5f0-73113d16758e
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_PERSISTENCE_INFO, WHEA_PERSISTENCE_INFO, *PWHEA_PERSISTENCE_INFO, PWHEA_PERSISTENCE_INFO
+ms.keywords: _WHEA_PERSISTENCE_INFO, *PWHEA_PERSISTENCE_INFO, WHEA_PERSISTENCE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PWHEA_PERSISTENCE_INFO, WHEA_PERSISTENCE_INFO
 ---
 
 # _WHEA_PERSISTENCE_INFO structure
@@ -97,7 +98,7 @@ A ULONGLONG representation of the contents of the WHEA_PERSISTENCE_INFO union.
 
 
 ## -remarks
-A WHEA_PERSISTENCE_INFO union is contained within the <a href="whea.whea_error_record_header">WHEA_ERROR_RECORD_HEADER</a> structure.
+A WHEA_PERSISTENCE_INFO union is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure.
 
 
 ## -requirements
@@ -129,7 +130,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="whea.whea_error_record_header">WHEA_ERROR_RECORD_HEADER</a>
+<a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
 </dt>
 </dl>
  

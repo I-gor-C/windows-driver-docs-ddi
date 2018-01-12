@@ -1,5 +1,5 @@
 ---
-UID: NI.avcstrm.IOCTL_AVCSTRM_CLASS
+UID: NI:avcstrm.IOCTL_AVCSTRM_CLASS
 title: IOCTL_AVCSTRM_CLASS
 author: windows-driver-content
 description: An AV/C subunit driver uses the IRP_MJ_INTERNAL_DEVICE_CONTROL IRP, with the IoControlCode member set to IOCTL_AVCSTRM_CLASS, to communicate with avcstrm.sys.
@@ -7,7 +7,7 @@ old-location: stream\ioctl_avcstrm_class.htm
 old-project: stream
 ms.assetid: 50a5cbe1-acae-461f-892b-c1a3b5b218b3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: INIT_AVCSTRM_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: AVCSTRM_FUNCTION
 ---
 
 # IOCTL_AVCSTRM_CLASS IOCTL
@@ -54,19 +55,19 @@ For more information about IRPs and IOCTLs, see <a href="https://msdn.microsoft.
 ## -ioctlparameters
 
 ### -input-buffer
-On input, <b>Irp-&gt;Parameters-&gt;Others.Arguments1</b> points to an <a href="stream.avc_stream_request_block">AVC_STREAM_REQUEST_BLOCK</a> structure. The <b>Function</b> member of the AVC_STREAM_REQUEST_BLOCK specifies the type of request. Do not set this member directly. Use the <a href="stream.init_avcstrm_header">INIT_AVCSTRM_HEADER</a> macro to initialize this member (as well as additional members of the AVC_STREAM_REQUEST_BLOCK structure). The <b>CommandData</b> member of the AVC_STREAM_REQUEST_BLOCK is a union that specifies the request-type-specific parameters of the request. The parameters and their meaning are documented with each request (function code). The <a href="stream.avcstrm_function">AVCSTRM_FUNCTION</a> enumeration provides a list of function codes supported by <i>avcstrm.sys</i>.
+On input, <b>Irp-&gt;Parameters-&gt;Others.Arguments1</b> points to an <a href="..\avcstrm\ns-avcstrm-_avc_stream_request_block.md">AVC_STREAM_REQUEST_BLOCK</a> structure. The <b>Function</b> member of the AVC_STREAM_REQUEST_BLOCK specifies the type of request. Do not set this member directly. Use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro to initialize this member (as well as additional members of the AVC_STREAM_REQUEST_BLOCK structure). The <b>CommandData</b> member of the AVC_STREAM_REQUEST_BLOCK is a union that specifies the request-type-specific parameters of the request. The parameters and their meaning are documented with each request (function code). The <a href="..\avcstrm\ne-avcstrm-_avcstrm_function.md">AVCSTRM_FUNCTION</a> enumeration provides a list of function codes supported by <i>avcstrm.sys</i>.
 
 
 ### -input-buffer-length
-Length of an <a href="stream.avc_stream_request_block">AVC_STREAM_REQUEST_BLOCK</a> structure.
+Length of an <a href="..\avcstrm\ns-avcstrm-_avc_stream_request_block.md">AVC_STREAM_REQUEST_BLOCK</a> structure.
 
 
 ### -output-buffer
-On output, <b>Irp-&gt;Parameters-&gt;Others.Arguments1</b> points to the <a href="stream.avc_stream_request_block">AVC_STREAM_REQUEST_BLOCK</a> structure passed as input. As part of completing the request, the bus driver fills in certain members of the <b>CommandData</b> union of the AVC_STREAM_REQUEST_BLOCK structure with information for the driver.
+On output, <b>Irp-&gt;Parameters-&gt;Others.Arguments1</b> points to the <a href="..\avcstrm\ns-avcstrm-_avc_stream_request_block.md">AVC_STREAM_REQUEST_BLOCK</a> structure passed as input. As part of completing the request, the bus driver fills in certain members of the <b>CommandData</b> union of the AVC_STREAM_REQUEST_BLOCK structure with information for the driver.
 
 
 ### -output-buffer-length
-Length of an <a href="stream.avc_stream_request_block">AVC_STREAM_REQUEST_BLOCK</a> structure.
+Length of an <a href="..\avcstrm\ns-avcstrm-_avc_stream_request_block.md">AVC_STREAM_REQUEST_BLOCK</a> structure.
 
 
 ### -in-out-buffer
@@ -135,5 +136,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_AVCSTRM_CLASS control code%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20IOCTL_AVCSTRM_CLASS control code%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

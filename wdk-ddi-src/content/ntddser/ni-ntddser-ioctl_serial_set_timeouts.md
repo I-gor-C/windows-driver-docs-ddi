@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_SET_TIMEOUTS
+UID: NI:ntddser.IOCTL_SERIAL_SET_TIMEOUTS
 title: IOCTL_SERIAL_SET_TIMEOUTS
 author: windows-driver-content
 description: An IOCTL_SERIAL_SET_TIMEOUTS request resets the time-out value that the system-supplied bus driver for parallel ports uses with write requests.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_TIMEOUTS IOCTL

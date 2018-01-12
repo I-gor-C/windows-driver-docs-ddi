@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsPinGetLeadingEdgeStreamPointer
+UID: NF:ks.KsPinGetLeadingEdgeStreamPointer
 title: KsPinGetLeadingEdgeStreamPointer function
 author: windows-driver-content
 description: The KsPinGetLeadingEdgeStreamPointer function acquires the leading edge stream pointer for the queue associated with the given pin.
@@ -7,7 +7,7 @@ old-location: stream\kspingetleadingedgestreampointer.htm
 old-project: stream
 ms.assetid: 05615730-dbeb-496a-b4a8-a16830b31586
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsPinGetLeadingEdgeStreamPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: 
 ---
 
 # KsPinGetLeadingEdgeStreamPointer function
@@ -56,7 +57,7 @@ PKSSTREAM_POINTER KsPinGetLeadingEdgeStreamPointer(
 
 ### -param Pin [in]
 
-A pointer to the <a href="stream.kspin">KSPIN</a> structure owning the queue for which the leading edge stream pointer should be acquired.
+A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure owning the queue for which the leading edge stream pointer should be acquired.
 
 
 ### -param State [in]
@@ -81,7 +82,7 @@ Acquire and lock the leading edge stream pointer. If no data frame is associated
 </dl>
 
 ## -returns
-<b>KsPinGetLeadingEdgeStreamPointer</b> returns a pointer to a <a href="stream.ksstream_pointer">KSSTREAM_POINTER</a> structure or <b>NULL</b>. A return value of <b>NULL</b> may occur because there is no queue associated with the pin, indicating that the pin does not use the standard transport mechanism. Alternatively, a return value of <b>NULL</b> may occur because an attempt to lock the leading edge failed, indicating that there is no data frame associated with the leading edge.
+<b>KsPinGetLeadingEdgeStreamPointer</b> returns a pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure or <b>NULL</b>. A return value of <b>NULL</b> may occur because there is no queue associated with the pin, indicating that the pin does not use the standard transport mechanism. Alternatively, a return value of <b>NULL</b> may occur because an attempt to lock the leading edge failed, indicating that there is no data frame associated with the leading edge.
 
 
 ## -remarks
@@ -148,30 +149,30 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksstreampointerlock">KsStreamPointerLock</a>
+<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerunlock">KsStreamPointerUnlock</a>
+<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointeradvance">KsStreamPointerAdvance</a>
+<a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointeradvanceoffsetsandunlock">KsStreamPointerAdvanceOffsetsAndUnlock</a>
+<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerclone">KsStreamPointerClone</a>
+<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
 </dt>
 <dt>
-<a href="stream.ksstreampointerdelete">KsStreamPointerDelete</a>
+<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
 </dt>
 <dt>
-<a href="stream.kspingettrailingedgestreampointer">KsPinGetTrailingEdgeStreamPointer</a>
+<a href="..\ks\nf-ks-kspingettrailingedgestreampointer.md">KsPinGetTrailingEdgeStreamPointer</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetLeadingEdgeStreamPointer function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsPinGetLeadingEdgeStreamPointer function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

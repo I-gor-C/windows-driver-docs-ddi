@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILDIALEDIDSETTINGS
+UID: NS:ntddrilapitypes.RILDIALEDIDSETTINGS
 title: RILDIALEDIDSETTINGS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildialedidsettings.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: e68ed118-76c7-44ff-a10f-dc64f1ce2d0e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILDIALEDIDSETTINGS, RILDIALEDIDSETTINGS, *LPRILDIALEDIDSETTINGS, LPRILDIALEDIDSETTINGS
+ms.date: 1/8/2018
+ms.keywords: RILDIALEDIDSETTINGS, RILDIALEDIDSETTINGS, *LPRILDIALEDIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILDIALEDIDSETTINGS, *LPRILDIALEDIDSETTINGS
 ---
 
 # RILDIALEDIDSETTINGS structure

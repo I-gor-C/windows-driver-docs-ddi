@@ -1,14 +1,14 @@
 ---
-UID: NC.wsk.PFN_WSK_INSPECT_EVENT
+UID: NC:wsk.PFN_WSK_INSPECT_EVENT
 title: PFN_WSK_INSPECT_EVENT
 author: windows-driver-content
 description: The WskInspectEvent event callback function notifies a WSK application that an incoming connection request on a listening socket that has conditional accept mode enabled has been received.
 old-location: netvista\wskinspectevent.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 40f184ac-4ef3-485a-a529-71c1f2716427
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/8/2018
+ms.keywords: _WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -87,7 +88,7 @@ A pointer to a buffer that contains the remote transport address from which the 
 ### -param InspectID [in, optional]
 
 A pointer to a 
-     <a href="netvista.wsk_inspect_id">WSK_INSPECT_ID</a> structure. The contents of
+     <a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a> structure. The contents of
      the structure identify the incoming connection request that is being inspected. If this pointer is <b>NULL</b>,
      the listening socket is no longer functional and the WSK application must call the 
      <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a> function to close the
@@ -145,7 +146,7 @@ If a WSK application returns
     has determined whether the incoming connection request should be accepted or rejected (unless the
     incoming connection request is aborted in the meantime). The WSK application must copy the contents of
     the 
-    <a href="netvista.wsk_inspect_id">WSK_INSPECT_ID</a> structure that is pointed to
+    <a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a> structure that is pointed to
     by the 
     <i>InspectID</i> parameter to its own WSK_INSPECT_ID structure before returning from the 
     <i>WskInspectEvent</i> event callback function. The WSK application passes a pointer to its own
@@ -155,7 +156,7 @@ If a WSK application returns
     complete.
 
 The 
-    <a href="netvista.sockaddr">SOCKADDR</a> structures that are pointed to by the 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a> structures that are pointed to by the 
     <i>LocalAddress</i> and 
     <i>RemoteAddress</i> parameters are valid only for the duration of the call to the 
     <i>WskInspectEvent</i> event callback function. If a WSK application returns 
@@ -231,18 +232,18 @@ IRQL
 <a href="..\wsk\nc-wsk-pfn_wsk_accept_event.md">WskAcceptEvent</a>
 </dt>
 <dt>
-<a href="netvista.sockaddr">SOCKADDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570822">SOCKADDR</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_listen_dispatch">WSK_CLIENT_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_client_listen_dispatch.md">WSK_CLIENT_LISTEN_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_inspect_id">WSK_INSPECT_ID</a>
+<a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PFN_WSK_INSPECT_EVENT callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_INSPECT_EVENT callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

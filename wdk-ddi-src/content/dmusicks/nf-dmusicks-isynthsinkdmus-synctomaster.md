@@ -1,5 +1,5 @@
 ---
-UID: NF.dmusicks.ISynthSinkDMus.SyncToMaster
+UID: NF:dmusicks.ISynthSinkDMus.SyncToMaster
 title: ISynthSinkDMus::SyncToMaster method
 author: windows-driver-content
 description: The SyncToMaster method allows synchronization to the master clock in order to avoid drift.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # ISynthSinkDMus::SyncToMaster method
@@ -71,7 +72,7 @@ Specifies whether the sample clock is to be reset to zero with this reference ti
 ## -remarks
 Because the master time and sample time might be driven by different crystals, they can drift apart. The port driver periodically calls this method to give the miniport driver an opportunity to synchronize its sample clock to the master clock.
 
-Parameter <i>fStart</i> is <b>TRUE</b> during the first call to <code>SyncToMaster</code> after the stream enters the KSSTATE_RUN state (see <a href="stream.ksstate">KSSTATE</a>). Otherwise, <i>fStart</i> is <b>FALSE</b>.
+Parameter <i>fStart</i> is <b>TRUE</b> during the first call to <code>SyncToMaster</code> after the stream enters the KSSTATE_RUN state (see <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>). Otherwise, <i>fStart</i> is <b>FALSE</b>.
 
 
 ## -requirements
@@ -106,7 +107,7 @@ Header
 <a href="..\dmusicks\nn-dmusicks-isynthsinkdmus.md">ISynthSinkDMus</a>
 </dt>
 <dt>
-<a href="stream.ksstate">KSSTATE</a>
+<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
 </dt>
 </dl>
  

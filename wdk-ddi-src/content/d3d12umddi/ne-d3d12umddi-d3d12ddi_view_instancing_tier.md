@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_VIEW_INSTANCING_TIER
+UID: NE:d3d12umddi.D3D12DDI_VIEW_INSTANCING_TIER
 title: D3D12DDI_VIEW_INSTANCING_TIER
 author: windows-driver-content
 description: Defines the view instancing tier.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi-view-instancing-tier.htm
 old-project: display
 ms.assetid: 4d52ddb2-818f-4b46-b19f-d6eea36a07da
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_VIEW_INSTANCING_TIER, D3D12DDI_VIEW_INSTANCING_TIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_VIEW_INSTANCING_TIER
 ---
 
 # D3D12DDI_VIEW_INSTANCING_TIER enumeration

@@ -1,13 +1,13 @@
 ---
-UID: NF.engextcpp.ExtRemoteList.StartHead
+UID: NF:engextcpp.ExtRemoteList.StartHead
 title: ExtRemoteList::StartHead method
 author: windows-driver-content
 description: The StartHead method initializes the list for iterating forward starting at the head.
 old-location: debugger\extremotelist_starthead.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: d7d9163b-54bb-4753-96a3-f92eddbe25f5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: ExtRemoteList, ExtRemoteList::StartHead, StartHead
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # ExtRemoteList::StartHead method

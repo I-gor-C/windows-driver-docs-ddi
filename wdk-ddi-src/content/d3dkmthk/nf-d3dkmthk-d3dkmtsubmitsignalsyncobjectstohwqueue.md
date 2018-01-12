@@ -1,5 +1,5 @@
 ---
-UID: NF.d3dkmthk.D3DKMTSubmitSignalSyncObjectsToHwQueue
+UID: NF:d3dkmthk.D3DKMTSubmitSignalSyncObjectsToHwQueue
 title: D3DKMTSubmitSignalSyncObjectsToHwQueue function
 author: windows-driver-content
 description: Used to submit a signal to the hardware queue.
@@ -7,7 +7,7 @@ old-location: display\d3dkmtsubmitsignalsyncobjectstohwqueue.htm
 old-project: display
 ms.assetid: DA0D44AF-168F-4B9B-B184-1DC8C3477CBC
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DKMTSubmitSignalSyncObjectsToHwQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Tbd
 req.dll: Tbd
 req.irql: 
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # D3DKMTSubmitSignalSyncObjectsToHwQueue function

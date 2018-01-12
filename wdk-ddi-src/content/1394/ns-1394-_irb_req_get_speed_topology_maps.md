@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_GET_SPEED_TOPOLOGY_MAPS
+UID: NS:1394._IRB_REQ_GET_SPEED_TOPOLOGY_MAPS
 title: _IRB_REQ_GET_SPEED_TOPOLOGY_MAPS
 author: windows-driver-content
 description: This structure contains the fields necessary for the 1394 bus driver to carry out a GetSpeedTopologyMaps request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_GET_SPEED_TOPOLOGY_MAPS
 ---
 
 # _IRB_REQ_GET_SPEED_TOPOLOGY_MAPS structure

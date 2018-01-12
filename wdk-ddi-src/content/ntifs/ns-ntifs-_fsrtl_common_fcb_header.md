@@ -1,5 +1,5 @@
 ---
-UID: NS.NTIFS._FSRTL_COMMON_FCB_HEADER
+UID: NS:ntifs._FSRTL_COMMON_FCB_HEADER
 title: _FSRTL_COMMON_FCB_HEADER
 author: windows-driver-content
 description: Do not use the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure.
@@ -7,8 +7,8 @@ old-location: ifsk\fsrtl_common_fcb_header.htm
 old-project: ifsk
 ms.assetid: b0b199ea-d72f-4de3-a6b1-bd22140d13cb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _FSRTL_COMMON_FCB_HEADER, FSRTL_COMMON_FCB_HEADER
+ms.date: 1/9/2018
+ms.keywords: _FSRTL_COMMON_FCB_HEADER, FSRTL_COMMON_FCB_HEADER, *PFSRTL_COMMON_FCB_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: FSRTL_COMMON_FCB_HEADER
 ---
 
 # _FSRTL_COMMON_FCB_HEADER structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-Do not use the FSRTL_COMMON_FCB_HEADER structure outside of the <a href="ifsk.fsrtl_advanced_fcb_header">FSRTL_ADVANCED_FCB_HEADER</a> structure.  The FSRTL_COMMON_FCB_HEADER structure contains context information that a file system maintains about a file, directory, volume, or alternate data stream.  
+Do not use the FSRTL_COMMON_FCB_HEADER structure outside of the <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> structure.  The FSRTL_COMMON_FCB_HEADER structure contains context information that a file system maintains about a file, directory, volume, or alternate data stream.  
 
 
 
@@ -93,7 +94,7 @@ Reserved for system use.
 
 ### -field FSRTL_FLAG_LIMIT_MODIFIED_PAGES
 
-Reserved for system use.  File system drivers (except for filter drivers) that must set or clear a limit of modified data for a file should call <a href="ifsk.ccsetdirtypagethreshold">CcSetDirtyPageThreshold</a>.
+Reserved for system use.  File system drivers (except for filter drivers) that must set or clear a limit of modified data for a file should call <a href="..\ntifs\nf-ntifs-ccsetdirtypagethreshold.md">CcSetDirtyPageThreshold</a>.
 
 
 ### -field FSRTL_FLAG_ACQUIRE_MAIN_RSRC_EX
@@ -113,7 +114,7 @@ The Cache Manager sets this flag to indicate that a view is mapped to a file.
 
 ### -field FSRTL_FLAG_ADVANCED_HEADER
 
-This flag indicates that the file system is using <a href="ifsk.fsrtl_advanced_fcb_header">FSRTL_ADVANCED_FCB_HEADER</a> instead of FSRTL_COMMON_FCB_HEADER in its file control block (FCB) structures. This flag is required because use of the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure is deprecated.
+This flag indicates that the file system is using <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> instead of FSRTL_COMMON_FCB_HEADER in its file control block (FCB) structures. This flag is required because use of the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure is deprecated.
 
 
 ### -field FSRTL_FLAG_EOF_ADVANCE_ACTIVE
@@ -165,7 +166,7 @@ The FCB for the file is bad, or an opportunistic lock (also called  "oplock") ex
 </table>
  
 
-For more information about these values, see the reference entries for <a href="ifsk.fsrtlaretherecurrentfilelocks">FsRtlAreThereCurrentFileLocks</a>, <a href="ifsk.fsrtlcopyread">FsRtlCopyRead</a>, and <a href="ifsk.fsrtlcopywrite">FsRtlCopyWrite</a>. 
+For more information about these values, see the reference entries for <a href="..\ntifs\nf-ntifs-fsrtlaretherecurrentfilelocks.md">FsRtlAreThereCurrentFileLocks</a>, <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopyread~r7.md">FsRtlCopyRead</a>, and <a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopywrite~r7.md">FsRtlCopyWrite</a>. 
 
 
 ### -field Flags2
@@ -192,7 +193,7 @@ If this flag is set, the Cache Manager will flush and purge the cache map when a
 
 ### -field FSRTL_FLAG2_SUPPORTS_FILTER_CONTEXTS
 
-This flag indicates that the file system is using <a href="ifsk.fsrtl_advanced_fcb_header">FSRTL_ADVANCED_FCB_HEADER</a> instead of FSRTL_COMMON_FCB_HEADER in its FCB structures. This flag is required because use of the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure is deprecated.
+This flag indicates that the file system is using <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> instead of FSRTL_COMMON_FCB_HEADER in its FCB structures. This flag is required because use of the FSRTL_COMMON_FCB_HEADER structure outside of the FSRTL_ADVANCED_FCB_HEADER structure is deprecated.
 
 
 ### -field FSRTL_FLAG2_IS_PAGING_FILE 
@@ -209,7 +210,7 @@ Reserved for system use. Drivers must set this bit-field to zero.
 
 ### -field Version
 
-Reserved for system use.  This bit-field is set by the <a href="ifsk.fsrtlsetupadvancedheader">FsRtlSetupAdvancedHeader</a> or <a href="ifsk.fsrtlsetupadvancedheaderex">FsRtlSetupAdvancedHeaderEx</a> macro.  Starting with Windows Vista, the value of this bit-field is FSRTL_FCB_HEADER_V1 or greater; otherwise, the value is FSRTL_FCB_HEADER_V0.  See <a href="ifsk.fsrtl_advanced_fcb_header">FSRTL_ADVANCED_FCB_HEADER</a> for more information.
+Reserved for system use.  This bit-field is set by the <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a> or <a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheaderex.md">FsRtlSetupAdvancedHeaderEx</a> macro.  Starting with Windows Vista, the value of this bit-field is FSRTL_FCB_HEADER_V1 or greater; otherwise, the value is FSRTL_FCB_HEADER_V0.  See <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> for more information.
 
 
 ### -field Resource
@@ -230,7 +231,7 @@ Filter drivers should treat this member as opaque.
 
 Allocation size for the file stream. 
 
-For more information about the <b>AllocationSize</b>, <b>FileSize</b>, and <b>ValidDataLength</b> members, see <a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>.
+For more information about the <b>AllocationSize</b>, <b>FileSize</b>, and <b>ValidDataLength</b> members, see <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
 
 
 ### -field FileSize
@@ -244,7 +245,7 @@ Valid data length of the file stream.
 
 
 ## -remarks
-File systems must set the <b>FsContext</b> member of every file object to point to an <a href="ifsk.fsrtl_advanced_fcb_header">FSRTL_ADVANCED_FCB_HEADER</a> structure.  This structure can be embedded inside of a file-system-specific stream context object structure (the remainder of this structure is file-system-specific). Usually, the FSRTL_ADVANCED_FCB_HEADER  structure is a file control block (FCB). However, on some file systems that support multiple data streams, such as NTFS, it is a stream control block (SCB).
+File systems must set the <b>FsContext</b> member of every file object to point to an <a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a> structure.  This structure can be embedded inside of a file-system-specific stream context object structure (the remainder of this structure is file-system-specific). Usually, the FSRTL_ADVANCED_FCB_HEADER  structure is a file control block (FCB). However, on some file systems that support multiple data streams, such as NTFS, it is a stream control block (SCB).
 
 If the file is used as a paging file, the FSRTL_ADVANCED_FCB_HEADER structure must be allocated from nonpaged pool. Otherwise, it can be allocated from paged or nonpaged pool.
 
@@ -267,30 +268,30 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ccinitializecachemap">CcInitializeCacheMap</a>
+<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtl_advanced_fcb_header">FSRTL_ADVANCED_FCB_HEADER</a>
+<a href="..\ntifs\ns-ntifs-_fsrtl_advanced_fcb_header.md">FSRTL_ADVANCED_FCB_HEADER</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtl_per_stream_context">FSRTL_PER_STREAM_CONTEXT</a>
+<a href="..\ntifs\ns-ntifs-_fsrtl_per_stream_context.md">FSRTL_PER_STREAM_CONTEXT</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlaretherecurrentfilelocks">FsRtlAreThereCurrentFileLocks</a>
+<a href="..\ntifs\nf-ntifs-fsrtlaretherecurrentfilelocks.md">FsRtlAreThereCurrentFileLocks</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlcopyread">FsRtlCopyRead</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopyread~r7.md">FsRtlCopyRead</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlcopywrite">FsRtlCopyWrite</a>
+<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcopywrite~r7.md">FsRtlCopyWrite</a>
 </dt>
 <dt>
-<a href="ifsk.fsrtlsetupadvancedheader">FsRtlSetupAdvancedHeader</a>
+<a href="..\ntifs\nf-ntifs-fsrtlsetupadvancedheader.md">FsRtlSetupAdvancedHeader</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSRTL_COMMON_FCB_HEADER structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FSRTL_COMMON_FCB_HEADER structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

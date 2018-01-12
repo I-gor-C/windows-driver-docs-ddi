@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDT._D3DKMDT_GDISURFACEFLAGS
+UID: NS:d3dkmdt._D3DKMDT_GDISURFACEFLAGS
 title: _D3DKMDT_GDISURFACEFLAGS
 author: windows-driver-content
 description: The D3DKMDT_GDISURFACEFLAGS structure is reserved for system use. Do not use it in your driver.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_gdisurfaceflags.htm
 old-project: display
 ms.assetid: ce6e1ca4-7a44-46ee-a5ac-33e143ce6377
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_GDISURFACEFLAGS, D3DKMDT_GDISURFACEFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DKMDT_GDISURFACEFLAGS
 ---
 
 # _D3DKMDT_GDISURFACEFLAGS structure

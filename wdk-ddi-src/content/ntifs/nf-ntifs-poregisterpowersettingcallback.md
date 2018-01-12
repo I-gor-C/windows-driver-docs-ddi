@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.PoRegisterPowerSettingCallback
+UID: NF:ntifs.PoRegisterPowerSettingCallback
 title: PoRegisterPowerSettingCallback function
 author: windows-driver-content
 description: The PoRegisterPowerSettingCallback routine registers a power-setting callback routine to receive notifications of changes in the specified power setting.
@@ -7,7 +7,7 @@ old-location: kernel\poregisterpowersettingcallback.htm
 old-project: kernel
 ms.assetid: a4dd91c4-f6b1-4751-a2be-9b4872fa7bb2
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PoRegisterPowerSettingCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: TOKEN_TYPE
 ---
 
 # PoRegisterPowerSettingCallback function
@@ -59,7 +60,7 @@ NTSTATUS PoRegisterPowerSettingCallback(
 
 ### -param DeviceObject [in, optional]
 
-A pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure that is associated with the caller of this routine. This parameter is optional. It is used internally only for debugging purposes. If this parameter is not supplied, it must be set to <b>NULL</b>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that is associated with the caller of this routine. This parameter is optional. It is used internally only for debugging purposes. If this parameter is not supplied, it must be set to <b>NULL</b>.
 
 
 ### -param SettingGuid [in]
@@ -79,7 +80,7 @@ A pointer to the context for the callback routine. This parameter is optional. I
 
 ### -param Handle [out]
 
-A handle that the power manager uses to represent the callback routine. A driver must subsequently supply this handle in a call to <a href="kernel.pounregisterpowersettingcallback">PoUnregisterPowerSettingCallback</a> to unregister the callback routine.
+A handle that the power manager uses to represent the callback routine. A driver must subsequently supply this handle in a call to <a href="..\wdm\nf-wdm-pounregisterpowersettingcallback.md">PoUnregisterPowerSettingCallback</a> to unregister the callback routine.
 
 
 ## -returns
@@ -99,7 +100,7 @@ A driver calls <b>PoRegisterPowerSettingCallback</b> to register a callback rout
 
 A driver should call <b>PoRegisterPowerSettingCallback</b> for each power setting that the driver needs to monitor. Drivers should call this routine in their <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine during initialization. Typically, most drivers pass a pointer to a device extension in the <i>Context</i> parameter.
 
-To unregister a power-setting callback, call the <a href="kernel.pounregisterpowersettingcallback">PoUnregisterPowerSettingCallback</a> routine.
+To unregister a power-setting callback, call the <a href="..\wdm\nf-wdm-pounregisterpowersettingcallback.md">PoUnregisterPowerSettingCallback</a> routine.
 
 Typically, Kernel-Mode Driver Framework (KMDF) drivers should call <b>PoRegisterPowerSettingCallback</b> from their <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_init.md">EvtDeviceSelfManagedIoInit</a> callback function, and should call <b>PoUnregisterPowerSettingCallback</b> from their <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_self_managed_io_cleanup.md">EvtDeviceSelfManagedIoCleanup</a> callback function. These drivers should <u>not</u> call <b>PoRegisterPowerSettingCallback</b> from their <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function; otherwise, the power-setting callback routine might be called before the driver stack is completely built.
 
@@ -217,12 +218,12 @@ PASSIVE_LEVEL (see Remarks section)
 <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
 </dt>
 <dt>
-<a href="kernel.pounregisterpowersettingcallback">PoUnregisterPowerSettingCallback</a>
+<a href="..\wdm\nf-wdm-pounregisterpowersettingcallback.md">PoUnregisterPowerSettingCallback</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoRegisterPowerSettingCallback routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20PoRegisterPowerSettingCallback routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

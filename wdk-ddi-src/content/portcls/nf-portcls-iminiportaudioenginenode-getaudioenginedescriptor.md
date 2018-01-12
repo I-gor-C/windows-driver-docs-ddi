@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportAudioEngineNode.GetAudioEngineDescriptor
+UID: NF:portcls.IMiniportAudioEngineNode.GetAudioEngineDescriptor
 title: IMiniportAudioEngineNode::GetAudioEngineDescriptor method
 author: windows-driver-content
 description: Gets the descriptor for the audio engine node.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportAudioEngineNode::GetAudioEngineDescriptor method
@@ -61,7 +62,7 @@ The ID of the audio engine node.
 
 ### -param pAudioEngineDescriptor [out]
 
-Audio engine descriptor object. This parameter is of type <a href="audio.ksaudioengine_descriptor">KSAUDIOENGINE_DESCRIPTOR</a>.
+Audio engine descriptor object. This parameter is of type <a href="..\ksmedia\ns-ksmedia-_tagksaudioengine_descriptor.md">KSAUDIOENGINE_DESCRIPTOR</a>.
 
 
 ## -returns
@@ -123,7 +124,7 @@ Header
 <a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
 </dt>
 <dt>
-<a href="audio.ksaudioengine_descriptor">KSAUDIOENGINE_DESCRIPTOR</a>
+<a href="..\ksmedia\ns-ksmedia-_tagksaudioengine_descriptor.md">KSAUDIOENGINE_DESCRIPTOR</a>
 </dt>
 </dl>
  

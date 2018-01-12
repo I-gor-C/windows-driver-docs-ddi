@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
+UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
 title: tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
 author: windows-driver-content
 description: This structure contains the header information for ROI ISP controls.
@@ -7,8 +7,8 @@ old-location: stream\kscamera_extendedprop_roi_ispcontrolheader.htm
 old-project: stream
 ms.assetid: F57B0E44-A6A1-4C43-83EE-8DF4A605C0D0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
+ms.date: 1/9/2018
+ms.keywords: tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure
@@ -57,7 +58,7 @@ typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER {
 
 ### -field Size
 
-The sum of this structure size, all <a href="stream.kscamera_extendedprop_roi_ispcontrol">KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL</a> structures, and all KSCAMERA_EXTENDEDPROP_ROI_RECTINFO structures that follow
+The sum of this structure size, all <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_ispcontrol.md">KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL</a> structures, and all KSCAMERA_EXTENDEDPROP_ROI_RECTINFO structures that follow
 
 
 ### -field ControlCount

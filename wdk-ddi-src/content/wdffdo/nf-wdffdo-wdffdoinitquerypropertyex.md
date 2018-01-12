@@ -1,5 +1,5 @@
 ---
-UID: NF.wdffdo.WdfFdoInitQueryPropertyEx
+UID: NF:wdffdo.WdfFdoInitQueryPropertyEx
 title: WdfFdoInitQueryPropertyEx function
 author: windows-driver-content
 description: The WdfFdoInitQueryPropertyEx method retrieves a specified device property.
@@ -7,7 +7,7 @@ old-location: wdf\wdffdoinitquerypropertyex.htm
 old-project: wdf
 ms.assetid: C8377EE4-A7A1-4063-A7DC-53D0D8C6E0C3
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfFdoInitQueryPropertyEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -63,12 +64,12 @@ NTSTATUS WdfFdoInitQueryPropertyEx(
 
 ### -param DeviceInit [in]
 
-A pointer to a <a href="wdf.wdfdevice_init">WDFDEVICE_INIT</a> structure that the driver obtained from its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff546951">WDFDEVICE_INIT</a> structure that the driver obtained from its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function.
 
 
 ### -param DeviceProperty [in]
 
-A pointer to a <a href="wdf.wdf_device_property_data">WDF_DEVICE_PROPERTY_DATA</a> structure that identifies the device property to be retrieved.
+A pointer to a <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_property_data.md">WDF_DEVICE_PROPERTY_DATA</a> structure that identifies the device property to be retrieved.
 
 
 ### -param BufferLength [in]
@@ -116,13 +117,13 @@ A bug check occurs if the driver supplies an invalid object handle.
 ## -remarks
 Before receiving device property data, drivers typically call the <b>WdfFdoInitQueryPropertyEx</b> method just to obtain the required buffer size. For some properties, the data size can change between when the required size is returned and when the driver calls <b>WdfFdoInitQueryPropertyEx</b> again. Therefore, drivers should call <b>WdfFdoInitQueryPropertyEx</b> inside a loop that executes until the return status is not STATUS_BUFFER_TOO_SMALL. 
 
-It is best to use <b>WdfFdoInitQueryPropertyEx</b> only if the required buffer size is known and unchanging, because in that case the driver has to call <b>WdfFdoInitQueryPropertyEx</b> only once. If the required buffer size is unknown or varies, the driver should call <a href="wdf.wdffdoinitallocandquerypropertyex">WdfFdoInitAllocAndQueryPropertyEx</a>. 
+It is best to use <b>WdfFdoInitQueryPropertyEx</b> only if the required buffer size is known and unchanging, because in that case the driver has to call <b>WdfFdoInitQueryPropertyEx</b> only once. If the required buffer size is unknown or varies, the driver should call <a href="..\wdffdo\nf-wdffdo-wdffdoinitallocandquerypropertyex.md">WdfFdoInitAllocAndQueryPropertyEx</a>. 
 
-The driver can call <b>WdfFdoInitQueryPropertyEx</b> only before calling <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>. For more information about calling <b>WdfDeviceCreate</b>, see <a href="wdf.creating_a_framework_device_object">Creating a Framework Device Object</a>.
+The driver can call <b>WdfFdoInitQueryPropertyEx</b> only before calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information about calling <b>WdfDeviceCreate</b>, see <a href="https://msdn.microsoft.com/25023c19-a153-4bd4-9fb6-3a1bf85860aa">Creating a Framework Device Object</a>.
 
-After calling <a href="wdf.wdfdevicecreate">WdfDeviceCreate</a>, a driver can obtain device property information by calling <a href="wdf.wdfdevicequerypropertyex">WdfDeviceQueryPropertyEx</a>.
+After calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>, a driver can obtain device property information by calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicequerypropertyex.md">WdfDeviceQueryPropertyEx</a>.
 
-For information about related methods, see <a href="wdf.accessing_the_unified_device_property_model">Accessing the Unified Device Property Model</a>.
+For information about related methods, see <a href="https://msdn.microsoft.com/C81988F9-E0DA-439F-B770-DAD86E33D5F3">Accessing the Unified Device Property Model</a>.
 
 
 ## -requirements
@@ -196,12 +197,12 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdffdoinitqueryproperty">WdfFdoInitQueryProperty</a>
+<a href="..\wdffdo\nf-wdffdo-wdffdoinitqueryproperty.md">WdfFdoInitQueryProperty</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfFdoInitQueryPropertyEx method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfFdoInitQueryPropertyEx method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

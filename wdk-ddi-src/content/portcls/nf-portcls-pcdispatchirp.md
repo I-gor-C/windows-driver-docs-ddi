@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcDispatchIrp
+UID: NF:portcls.PcDispatchIrp
 title: PcDispatchIrp function
 author: windows-driver-content
 description: The PcDispatchIrp function dispatches an IRP to the PortCls system driver's default handler.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcDispatchIrp function
@@ -56,12 +57,12 @@ PORTCLASSAPI NTSTATUS NTAPI PcDispatchIrp(
 
 ### -param DeviceObject [in]
 
-Pointer to the device object. This parameter must point to a system structure of type <a href="kernel.device_object">DEVICE_OBJECT</a>.
+Pointer to the device object. This parameter must point to a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 
 ### -param Irp [in]
 
-Pointer to the <a href="kernel.irp">IRP</a> that is to be dispatched
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> that is to be dispatched
 
 
 ## -returns
@@ -69,7 +70,7 @@ Pointer to the <a href="kernel.irp">IRP</a> that is to be dispatched
 
 
 ## -remarks
-As part of its initialization process, the <a href="audio.pcinitializeadapterdriver">PcInitializeAdapterDriver</a> function loads pointers to handlers for several IRPs into the driver object. Following the call to <b>PcInitializeAdapterDriver</b>, an adapter driver can choose to overwrite one or more of the PortCls handler pointers with pointers to its own IRP handlers.
+As part of its initialization process, the <a href="..\portcls\nf-portcls-pcinitializeadapterdriver.md">PcInitializeAdapterDriver</a> function loads pointers to handlers for several IRPs into the driver object. Following the call to <b>PcInitializeAdapterDriver</b>, an adapter driver can choose to overwrite one or more of the PortCls handler pointers with pointers to its own IRP handlers.
 
 If, after receiving an IRP, the adapter driver's IRP handler determines that the IRP should be handled by the PortCls IRP handler instead, the adapter driver's handler calls <b>PcDispatchIrp</b> to forward the IRP to the PortCls handler.
 
@@ -136,13 +137,13 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="kernel.irp">IRP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
 </dt>
 <dt>
-<a href="audio.pcinitializeadapterdriver">PcInitializeAdapterDriver</a>
+<a href="..\portcls\nf-portcls-pcinitializeadapterdriver.md">PcInitializeAdapterDriver</a>
 </dt>
 </dl>
  

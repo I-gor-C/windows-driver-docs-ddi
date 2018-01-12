@@ -1,14 +1,14 @@
 ---
-UID: NE.ntddrilapitypes.RILCALLMODIFICATIONCAUSECODE
+UID: NE:ntddrilapitypes.RILCALLMODIFICATIONCAUSECODE
 title: RILCALLMODIFICATIONCAUSECODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallmodificationcausecode.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: d2785ee2-6e5d-474e-9d0f-57da956b6ec7
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILCALLMODIFICATIONCAUSECODE, RILCALLMODIFICATIONCAUSECODE, *LPRILCALLMODIFICATIONCAUSECODE, LPRILCALLMODIFICATIONCAUSECODE
+ms.date: 1/8/2018
+ms.keywords: RILCALLMODIFICATIONCAUSECODE, *LPRILCALLMODIFICATIONCAUSECODE, RILCALLMODIFICATIONCAUSECODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILCALLMODIFICATIONCAUSECODE, RILCALLMODIFICATIONCAUSECODE
 ---
 
 # RILCALLMODIFICATIONCAUSECODE enumeration

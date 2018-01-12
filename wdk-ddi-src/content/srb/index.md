@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:srb
 ---
 
 # Srb.h header
@@ -63,11 +63,27 @@ Srb.h contain these programming interfaces:
 | [ScsiPortWriteRegisterUlong function](nf-srb-scsiportwriteregisterulong.md) | The ScsiPortWriteRegisterUlong routine transfers a ULONG value to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
 | [ScsiPortWriteRegisterUshort function](nf-srb-scsiportwriteregisterushort.md) | The ScsiPortWriteRegisterUshort routine transfers a USHORT value to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
 
+## Callback functions
+
+| Title   | Description   |
+| ---- |:---- |
+| [PHW_ADAPTER_CONTROL callback](nc-srb-phw_adapter_control.md) | The PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs. |
+| [PHW_ADAPTER_STATE callback](nc-srb-phw_adapter_state.md) | The PHW_INITIALIZE routine prototype declares a routine that saves or restores the state of the miniport driver's HBA. |
+| [PHW_DMA_STARTED callback](nc-srb-phw_dma_started.md) | The PHW_DMA_STARTED routine prototype declares a SCSI miniport driver routine that starts DMA for subordinate DMA device. |
+| [PHW_FIND_ADAPTER callback](nc-srb-phw_find_adapter.md) | The PHW_FIND_ADAPTER prototype declares a routine that uses supplied configuration to determine whether a specific HBA is supported and, if it is, to return configuration information about that adapter. |
+| [PHW_INITIALIZE callback](nc-srb-phw_initialize.md) | The PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs. |
+| [PHW_INTERRUPT callback](nc-srb-phw_interrupt.md) | The PHW_INTERRUPT routine prototype declares the miniport driver's interrupt handler routine. |
+| [PHW_RESET_BUS callback](nc-srb-phw_reset_bus.md) | The PHW_RESET_BUS prototype declares a routine that resets the indicated SCSI bus. |
+| [PHW_STARTIO callback](nc-srb-phw_startio.md) | The PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs. |
+| [PHW_TIMER callback](nc-srb-phw_timer.md) | The PHW_TIMER routine prototype declares a SCSI miniport driver's timer routine. |
+
 ## Structures
 
 | Title   | Description   |
 | ---- |:---- |
 | [_ACCESS_RANGE structure](ns-srb-_access_range.md) | An ACCESS_RANGE describes a memory or I/O port range used by an HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |
+| [_HW_INITIALIZATION_DATA structure](ns-srb-_hw_initialization_data.md) | Each SCSI miniport driver's DriverEntry routine must initialize with zeros and, then, fill in the relevant HW_INITIALIZATION_DATA (SCSI) information for the OS-specific port driver.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models. |
+| [_PORT_CONFIGURATION_INFORMATION structure](ns-srb-_port_configuration_information.md) | PORT_CONFIGURATION_INFORMATION (SCSI) contains configuration information for an HBA. |
 | [_SCSI_REQUEST_BLOCK structure](ns-srb-_scsi_request_block.md) | SCSI_REQUEST_BLOCK structure |
 | [_SCSI_WMI_REQUEST_BLOCK structure](ns-srb-_scsi_wmi_request_block.md) | This structure is a special version of a SCSI_REQUEST_BLOCK for use with WMI commands. |
 | [_SRBEX_DATA structure](ns-srb-_srbex_data.md) | The SRBEX_DATA structure is the generalized format for containing extended SRB data. |
@@ -80,9 +96,3 @@ Srb.h contain these programming interfaces:
 | [_SRBEX_DATA_SCSI_CDB_VAR structure](ns-srb-_srbex_data_scsi_cdb_var.md) | The SRBEX_DATA_SCSI_CDB_VAR structure contains the extended SRB data for a variable length SCSI command data block (CDB). |
 | [_SRBEX_DATA_WMI structure](ns-srb-_srbex_data_wmi.md) | The SRBEX_DATA_WMI structure contains the request data for an extended WMI SRB. |
 | [_STORAGE_REQUEST_BLOCK structure](ns-srb-_storage_request_block.md) | The STORAGE_REQUEST_BLOCK is the extended format SCSI Request Block (SRB) structure. |
-
-## Macros
-
-| Title   | Description   |
-| ---- |:---- |
-| [ScsiPortConvertPhysicalAddressToUlong macro](nf-srb-scsiportconvertphysicaladdresstoulong~r1.md) | The ScsiPortConvertPhysicalAddressToUlong routine truncates a SCSI_PHYSICAL_ADDRESS to a ULONG.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. |

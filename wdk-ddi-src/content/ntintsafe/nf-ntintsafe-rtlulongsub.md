@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlULongSub
+UID: NF:ntintsafe.RtlULongSub
 title: RtlULongSub function
 author: windows-driver-content
 description: Subtracts one value of type ULONG from another.
@@ -7,7 +7,7 @@ old-location: kernel\rtlulongsub.htm
 old-project: kernel
 ms.assetid: 54776F17-C7EE-46DB-BA3F-2F545240FC61
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlULongSub
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlULongSub function

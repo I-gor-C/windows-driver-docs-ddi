@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: TP:powermeter
 ---
 
 # Power metering

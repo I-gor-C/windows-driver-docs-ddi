@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:gpioclx
 ---
 
 # Gpioclx.h header
@@ -27,26 +27,16 @@ Gpioclx.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
-| [GPIO_CLIENT_CONNECT_IO_PINS callback](nc-gpioclx-gpio_client_connect_io_pins.md) | The CLIENT_ConnectIoPins event callback function opens a logical connection to a set of general-purpose I/O (GPIO) pins and configures these pins for data read or write operations. |
+| [GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS callback](nc-gpioclx-gpio_client_clear_active_interrupts.md) | The CLIENT_ClearActiveInterrupts event callback function clears active interrupts on a set of general-purpose I/O (GPIO) pins that are configured as interrupt inputs. |
 | [GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION callback](nc-gpioclx-gpio_client_controller_specific_function.md) | The CLIENT_ControllerSpecificFunction event callback function performs an operation that is specific to a particular general-purpose I/O (GPIO) controller. |
-| [GPIO_CLIENT_DISABLE_INTERRUPT callback](nc-gpioclx-gpio_client_disable_interrupt.md) | The CLIENT_DisableInterrupt event callback function disables interrupts on a general-purpose I/O (GPIO) pin that is configured as an interrupt input. |
-| [GPIO_CLIENT_DISCONNECT_IO_PINS callback](nc-gpioclx-gpio_client_disconnect_io_pins.md) | The CLIENT_DisconnectIoPins event callback function closes a logical connection to a set of general-purpose I/O (GPIO) pins that are configured for data read or write operations. |
-| [GPIO_CLIENT_ENABLE_INTERRUPT callback](nc-gpioclx-gpio_client_enable_interrupt.md) | The CLIENT_EnableInterrupt event callback function enables interrupts on a general-purpose I/O (GPIO) pin that is configured as an interrupt input. |
 | [GPIO_CLIENT_MASK_INTERRUPTS callback](nc-gpioclx-gpio_client_mask_interrupts.md) | The CLIENT_MaskInterrupts event callback function masks interrupts on a set of general-purpose I/O (GPIO) pins that are configured as interrupt inputs. |
-| [GPIO_CLIENT_PREPARE_CONTROLLER callback](nc-gpioclx-gpio_client_prepare_controller.md) | The CLIENT_PrepareController event callback function performs any operations that are needed to make the general-purpose I/O (GPIO) controller ready to be accessed by the GPIO controller driver. |
-| [GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT callback](nc-gpioclx-gpio_client_pre_process_controller_interrupt.md) | The CLIENT_PreProcessControllerInterrupt event callback function performs any pre-processing of a general-purpose I/O (GPIO) interrupt that must be done immediately if the ISR is scheduled to run at a later time. |
 | [GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS callback](nc-gpioclx-gpio_client_query_active_interrupts.md) | The CLIENT_QueryActiveInterrupts event callback function queries the state of a set of general-purpose I/O (GPIO) pins that are configured as interrupt inputs. |
-| [GPIO_CLIENT_QUERY_CONTROLLER_BASIC_INFORMATION callback](nc-gpioclx-gpio_client_query_controller_basic_information.md) | The CLIENT_QueryControllerBasicInformation event callback function retrieves the hardware attributes of the general-purpose I/O (GPIO) controller. |
 | [GPIO_CLIENT_QUERY_ENABLED_INTERRUPTS callback](nc-gpioclx-gpio_client_query_enabled_interrupts.md) | The CLIENT_QueryEnabledInterrupts event callback function queries the state of a set of general-purpose I/O (GPIO) pins to determine which pins are both configured as interrupt inputs and enabled for interrupts. |
-| [GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION callback](nc-gpioclx-gpio_client_query_set_controller_information.md) | The CLIENT_QuerySetControllerInformation event callback function queries the general-purpose I/O (GPIO) controller driver for the specified set of attributes of the GPIO controller. |
 | [GPIO_CLIENT_READ_PINS callback](nc-gpioclx-gpio_client_read_pins.md) | The CLIENT_ReadGpioPins event callback function reads a set of general-purpose I/O (GPIO) pins that are configured as data inputs. |
 | [GPIO_CLIENT_READ_PINS_MASK callback](nc-gpioclx-gpio_client_read_pins_mask.md) | The CLIENT_ReadGpioPinsUsingMask event callback function reads a bank of general-purpose I/O (GPIO) pins. |
 | [GPIO_CLIENT_RECONFIGURE_INTERRUPT callback](nc-gpioclx-gpio_client_reconfigure_interrupt.md) | The CLIENT_ReconfigureInterrupt event callback function reconfigures a general-purpose I/O (GPIO) pin that is used as an interrupt input. |
-| [GPIO_CLIENT_RELEASE_CONTROLLER callback](nc-gpioclx-gpio_client_release_controller.md) | The CLIENT_ReleaseController event callback function performs operations that are needed when the general-purpose I/O (GPIO) controller device is no longer accessible. |
 | [GPIO_CLIENT_RESTORE_BANK_HARDWARE_CONTEXT callback](nc-gpioclx-gpio_client_restore_bank_hardware_context.md) | The CLIENT_RestoreBankHardwareContext event callback function restores the hardware context of a bank of general-purpose I/O (GPIO) pins. |
 | [GPIO_CLIENT_SAVE_BANK_HARDWARE_CONTEXT callback](nc-gpioclx-gpio_client_save_bank_hardware_context.md) | The CLIENT_SaveBankHardwareContext event callback function saves the hardware context of a bank of general-purpose I/O (GPIO) pins. |
-| [GPIO_CLIENT_START_CONTROLLER callback](nc-gpioclx-gpio_client_start_controller.md) | The CLIENT_StartController event callback function performs operations that are needed when the general-purpose I/O (GPIO) controller device enters the D0 power state. |
-| [GPIO_CLIENT_STOP_CONTROLLER callback](nc-gpioclx-gpio_client_stop_controller.md) | The CLIENT_StopController event callback function performs operations that are needed to prepare the general-purpose I/O (GPIO) controller device to exit the D0 power state. |
 | [GPIO_CLIENT_UNMASK_INTERRUPT callback](nc-gpioclx-gpio_client_unmask_interrupt.md) | The CLIENT_UnmaskInterrupt event callback function unmasks the interrupt on a general-purpose I/O (GPIO) pin that is configured as an interrupt input. |
 | [GPIO_CLIENT_WRITE_PINS callback](nc-gpioclx-gpio_client_write_pins.md) | The CLIENT_WriteGpioPins event callback function writes to a set of general-purpose I/O (GPIO) pins that are configured as data outputs. |
 | [GPIO_CLIENT_WRITE_PINS_MASK callback](nc-gpioclx-gpio_client_write_pins_mask.md) | The CLIENT_WriteGpioPinsUsingMask event callback function writes to a set of general-purpose I/O (GPIO) pins that are configured as data outputs. |

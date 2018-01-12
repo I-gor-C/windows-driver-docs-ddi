@@ -1,14 +1,14 @@
 ---
-UID: NE.storport.PSTOR_POWER_ACTION
-title: PSTOR_POWER_ACTION
+UID: NE:storport.PSTOR_POWER_ACTION
+title: *PSTOR_POWER_ACTION
 author: windows-driver-content
 description: The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition.
 old-location: storage\stor_power_action.htm
 old-project: storage
 ms.assetid: ffc7c1ec-faec-4383-ab69-844cf68d054f
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: PSTOR_POWER_ACTION, PSTOR_POWER_ACTION, STOR_POWER_ACTION
+ms.date: 1/10/2018
+ms.keywords: *PSTOR_POWER_ACTION, STOR_POWER_ACTION, *PSTOR_POWER_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,10 +31,11 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STOR_POWER_ACTION, *PSTOR_POWER_ACTION
 req.product: Windows 10 or later.
 ---
 
-# PSTOR_POWER_ACTION enumeration
+# *PSTOR_POWER_ACTION enumeration
 
 
 
@@ -122,12 +123,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.scsi_power_request_block">SCSI_POWER_REQUEST_BLOCK</a>
+<a href="..\storport\ns-storport-_scsi_power_request_block.md">SCSI_POWER_REQUEST_BLOCK</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_POWER_ACTION enumeration%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20STOR_POWER_ACTION enumeration%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

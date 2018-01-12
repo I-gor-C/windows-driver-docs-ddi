@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemUIMXDC.AdjustImageableArea
+UID: NF:prcomoem.IPrintOemUIMXDC.AdjustImageableArea
 title: IPrintOemUIMXDC::AdjustImageableArea method
 author: windows-driver-content
 description: The IPrintOemUIMXDC::AdjustImageableArea method enables an XPS filter pipeline driver to use UnidrvUI.dll or PS5UI.dll to support configuration of the printable area, including orientation and direction of rotation.
@@ -7,7 +7,7 @@ old-location: print\iprintoemuimxdc_adjustimageablearea.htm
 old-project: print
 ms.assetid: a698fcb9-1285-4201-9b49-e79dcda66043
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemUIMXDC, IPrintOemUIMXDC::AdjustImageableArea, AdjustImageableArea
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 
@@ -66,7 +67,7 @@ A handle to the printer that is currently being queried.
 
 ### -param cbDevMode 
 
-The size of the <a href="display.devmodew">DEVMODE</a> structure, in bytes, including appended data.
+The size of the <a href="https://msdn.microsoft.com/b2369876-9a79-40c8-8d27-c8b9d8e68e6b">DEVMODE</a> structure, in bytes, including appended data.
 
 
 ### -param pDevMode 
@@ -86,7 +87,7 @@ A pointer to the data that is contained in the vendor portion of the DEVMODE str
 
 ### -param prclImageableArea 
 
-A pointer to a <a href="display.rectl">RECTL</a> structure that contains the printable area. This parameter is populated by UnidrvUI.dll or PS5UI.dll with data from the corresponding GPD or PPD, before the parameter is passed to the plug-in. The plug-in can then update this data before returning. 
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a> structure that contains the printable area. This parameter is populated by UnidrvUI.dll or PS5UI.dll with data from the corresponding GPD or PPD, before the parameter is passed to the plug-in. The plug-in can then update this data before returning. 
 
 
 ## -returns
@@ -138,12 +139,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.rectl">RECTL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569236">RECTL</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemUIMXDC::AdjustImageableArea method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20IPrintOemUIMXDC::AdjustImageableArea method%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

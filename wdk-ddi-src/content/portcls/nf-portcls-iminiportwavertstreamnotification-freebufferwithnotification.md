@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveRTStreamNotification.FreeBufferWithNotification
+UID: NF:portcls.IMiniportWaveRTStreamNotification.FreeBufferWithNotification
 title: IMiniportWaveRTStreamNotification::FreeBufferWithNotification method
 author: windows-driver-content
 description: The FreeBufferWithNotification method is used to free an audio buffer previously allocated with a call to IMiniportWaveRTStreamNotification::AllocateBufferWithNotification.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveRTStreamNotification::FreeBufferWithNotification method
@@ -38,7 +39,7 @@ req.irql: Passive level.
 
 
 ## -description
-The <code>FreeBufferWithNotification</code> method is used to free an audio buffer previously allocated with a call to <a href="audio.iminiportwavertstreamnotification_allocatebufferwithnotification">IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</a>.
+The <code>FreeBufferWithNotification</code> method is used to free an audio buffer previously allocated with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536740">IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</a>.
 
 
 
@@ -56,7 +57,7 @@ VOID FreeBufferWithNotification(
 
 ### -param AudioBufferMdl [in]
 
-Specifies a memory descriptor list (<a href="kernel.mdl">MDL</a>) previously allocated with a call to <b>IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</b>.
+Specifies a memory descriptor list (<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>) previously allocated with a call to <b>IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</b>.
 
 
 ### -param SizeWritten [in]
@@ -124,10 +125,10 @@ Passive level.
 <a href="..\portcls\nn-portcls-iminiportwavertstreamnotification.md">IMiniportWaveRTStreamNotification</a>
 </dt>
 <dt>
-<a href="kernel.mdl">MDL</a>
+<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavertstreamnotification_allocatebufferwithnotification">IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536740">IMiniportWaveRTStreamNotification::AllocateBufferWithNotification</a>
 </dt>
 </dl>
  

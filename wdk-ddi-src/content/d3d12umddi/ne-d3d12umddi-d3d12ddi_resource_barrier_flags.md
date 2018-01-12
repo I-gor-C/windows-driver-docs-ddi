@@ -1,5 +1,5 @@
 ---
-UID: NE.d3d12umddi.D3D12DDI_RESOURCE_BARRIER_FLAGS
+UID: NE:d3d12umddi.D3D12DDI_RESOURCE_BARRIER_FLAGS
 title: D3D12DDI_RESOURCE_BARRIER_FLAGS
 author: windows-driver-content
 description: Contains resource barrier flags.
@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_resource_barrier_flags.htm
 old-project: display
 ms.assetid: 876ABC9C-F9BE-480F-8641-AE132840F8D5
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D12DDI_RESOURCE_BARRIER_FLAGS, D3D12DDI_RESOURCE_BARRIER_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D12DDI_RESOURCE_BARRIER_FLAGS
 ---
 
 # D3D12DDI_RESOURCE_BARRIER_FLAGS enumeration

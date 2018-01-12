@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.TAGKS_ANALOGVIDEOINFO
+UID: NS:ksmedia.tagKS_AnalogVideoInfo
 title: tagKS_AnalogVideoInfo
 author: windows-driver-content
 description: The KS_ANALOGVIDEOINFO structure describes an analog video stream.
@@ -7,8 +7,8 @@ old-location: stream\ks_analogvideoinfo.htm
 old-project: stream
 ms.assetid: a3562a08-c567-4bb5-9de2-aaa561687b88
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: tagKS_AnalogVideoInfo, *PKS_ANALOGVIDEOINFO, KS_ANALOGVIDEOINFO, PKS_ANALOGVIDEOINFO
+ms.date: 1/9/2018
+ms.keywords: tagKS_AnalogVideoInfo, *PKS_ANALOGVIDEOINFO, KS_ANALOGVIDEOINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKS_ANALOGVIDEOINFO, KS_ANALOGVIDEOINFO
 ---
 
 # tagKS_AnalogVideoInfo structure

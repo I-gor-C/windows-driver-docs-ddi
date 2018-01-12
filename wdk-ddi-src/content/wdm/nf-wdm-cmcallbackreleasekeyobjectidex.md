@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.CmCallbackReleaseKeyObjectIDEx
+UID: NF:wdm.CmCallbackReleaseKeyObjectIDEx
 title: CmCallbackReleaseKeyObjectIDEx function
 author: windows-driver-content
 description: The CmCallbackReleaseKeyObjectIDEx routine frees an object name string obtained from the CmCallbackGetKeyObjectIDEx routine.
@@ -7,7 +7,7 @@ old-location: kernel\cmcallbackreleasekeyobjectidex.htm
 old-project: kernel
 ms.assetid: 3361DAEF-AC2A-401B-80E8-0220F191587C
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: CmCallbackReleaseKeyObjectIDEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>CmCallbackReleaseKeyObjectIDEx</b> routine frees an object name string obtained from the <a href="kernel.cmcallbackgetkeyobjectidex">CmCallbackGetKeyObjectIDEx</a> routine.
+The <b>CmCallbackReleaseKeyObjectIDEx</b> routine frees an object name string obtained from the <a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectidex.md">CmCallbackGetKeyObjectIDEx</a> routine.
 
 
 
@@ -56,7 +57,7 @@ VOID CmCallbackReleaseKeyObjectIDEx(
 
 ### -param ObjectName 
 
-A pointer to a <a href="kernel.unicode_string">UNICODE_STRING</a> structure that contains the object name string. The driver previously obtained this pointer by calling <a href="kernel.cmcallbackgetkeyobjectidex">CmCallbackGetKeyObjectIDEx</a>.
+A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the object name string. The driver previously obtained this pointer by calling <a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectidex.md">CmCallbackGetKeyObjectIDEx</a>.
 
 
 ## -returns
@@ -137,15 +138,15 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.cmcallbackgetkeyobjectidex">CmCallbackGetKeyObjectIDEx</a>
+<a href="..\wdm\nf-wdm-cmcallbackgetkeyobjectidex.md">CmCallbackGetKeyObjectIDEx</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CmCallbackReleaseKeyObjectIDEx routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20CmCallbackReleaseKeyObjectIDEx routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

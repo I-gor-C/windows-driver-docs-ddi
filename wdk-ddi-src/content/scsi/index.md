@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:scsi
 ---
 
 # Scsi.h header
@@ -25,7 +25,6 @@ Scsi.h contain these programming interfaces:
 | [ST_PARAMETER_DATA structure](ns-scsi-st_parameter_data.md) | The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command. |
 | [WRITE_USING_TOKEN_HEADER structure](ns-scsi-write_using_token_header.md) | The WRITE_USING_TOKEN_HEADER structure describes the destination data locations for an offload write data operation. |
 | [_INQUIRYDATA structure](ns-scsi-_inquirydata.md) | The INQUIRYDATA structure is used in conjunction with the TapeMiniExtensionInit and TapeMiniVerifyInquiry routines to report SCSI inquiry data associated with a tape device. |
-| [_INQUIRYDATA structure](ns-scsi-_inquirydata~r1.md) | The INQUIRYDATA structure is used in conjunction with the TapeMiniExtensionInit and TapeMiniVerifyInquiry routines to report SCSI inquiry data associated with a tape device. |
 | [_REPORT_ZONES_DATA structure](ns-scsi-_report_zones_data.md) | Note  This structure is for internal use only and should not be called from your code. . |
 | [_SES_CONFIGURATION_DIAGNOSTIC_PAGE structure](ns-scsi-_ses_configuration_diagnostic_page.md) | TBD. |
 | [_SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure](ns-scsi-_ses_download_microcode_control_diagnostic_page.md) | The SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure contains a vendor specific microcode (i.e., firmware) image for use by the enclosure services process. |

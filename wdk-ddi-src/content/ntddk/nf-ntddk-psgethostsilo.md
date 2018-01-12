@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PsGetHostSilo
+UID: NF:ntddk.PsGetHostSilo
 title: PsGetHostSilo function
 author: windows-driver-content
 description: This routine returns the host silo.
@@ -7,7 +7,7 @@ old-location: kernel\psgethostsilo.htm
 old-project: kernel
 ms.assetid: 0B78562C-25DD-4CF2-9804-6DBEDE8B5F69
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PsGetHostSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PsGetHostSilo function

@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMRegisterDmaChannel
+UID: NF:ndis.NdisMRegisterDmaChannel
 title: NdisMRegisterDmaChannel function
 author: windows-driver-content
 description: The NdisMRegisterDmaChannel function claims a system DMA controller channel during initialization for DMA operations on a subordinate NIC or on an ISA bus-master NIC.
 old-location: netvista\ndismregisterdmachannel.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 32e92f77-8f45-408b-a284-c00d3b5bd1b4
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMRegisterDmaChannel
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMRegisterDmaChannel function
@@ -203,20 +204,20 @@ The driver of an ISA bus-master NIC also must call
     <i>MiniportInitializeEx</i> to claim a system DMA controller channel for the NIC in the registry.
 
 <i>MiniportInitializeEx</i> must call the 
-    <a href="netvista.ndismsetminiportattributes">
+    <a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">
     NdisMSetMiniportAttributes</a> function before calling 
     <b>NdisMRegisterDmaChannel</b>.
 
 <i>MiniportInitializeEx</i> obtained the bus-relative values passed to 
     <b>NdisMRegisterDmaChannel</b> either from the registry or by calling the 
-    <a href="netvista.ndismgetbusdata">NdisMGetBusData</a> function.
+    <a href="..\ndis\nf-ndis-ndismgetbusdata.md">NdisMGetBusData</a> function.
 
 If such a driver cannot allocate the system DMA resources that its device needs, 
     <i>MiniportInitializeEx</i> should release all resources it already allocated for the NIC and, then, fail
     initialization for that NIC.
 
 If the driver successfully registers the DMA channel, it must later call the 
-    <a href="netvista.ndismderegisterdmachannel">
+    <a href="..\ndis\nf-ndis-ndismderegisterdmachannel.md">
     NdisMDeregisterDmaChannel</a> function to deregister the DMA channel.
 
 
@@ -285,7 +286,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -296,18 +297,18 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndismderegisterdmachannel">NdisMDeregisterDmaChannel</a>
+<a href="..\ndis\nf-ndis-ndismderegisterdmachannel.md">NdisMDeregisterDmaChannel</a>
 </dt>
 <dt>
-<a href="netvista.ndismgetbusdata">NdisMGetBusData</a>
+<a href="..\ndis\nf-ndis-ndismgetbusdata.md">NdisMGetBusData</a>
 </dt>
 <dt>
-<a href="netvista.ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+<a href="..\ndis\nf-ndis-ndismsetminiportattributes.md">NdisMSetMiniportAttributes</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMRegisterDmaChannel function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMRegisterDmaChannel function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

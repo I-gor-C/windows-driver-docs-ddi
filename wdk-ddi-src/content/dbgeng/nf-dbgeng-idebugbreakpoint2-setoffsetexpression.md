@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.SetOffsetExpression
+UID: NF:dbgeng.IDebugBreakpoint2.SetOffsetExpression
 title: IDebugBreakpoint2::SetOffsetExpression method
 author: windows-driver-content
 description: The SetOffsetExpression methods set an expression string that evaluates to the location that triggers a breakpoint.
 old-location: debugger\setoffsetexpression.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 63cfb3f2-5240-4cb6-9c23-8cdb363f62a8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::SetOffsetExpression, SetOffsetExpression
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::SetOffsetExpression method

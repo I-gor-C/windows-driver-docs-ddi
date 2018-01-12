@@ -1,5 +1,5 @@
 ---
-UID: NE.icm.COLORTYPE
+UID: NE:icm.COLORTYPE
 title: COLORTYPE
 author: windows-driver-content
 description: The values of the COLORTYPE enumeration are used by WCS functions to indicate the format of vector content. Most values have equivalent structures that are contained in the ICM COLOR structure (described in the Microsoft Windows SDK documentation).
@@ -7,8 +7,8 @@ old-location: print\colortype.htm
 old-project: print
 ms.assetid: aa7d8d32-7bbe-4091-82a2-32ade463dd9e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: COLORTYPE, COLORTYPE
+ms.date: 1/8/2018
+ms.keywords: COLORTYPE, COLORTYPE, *PCOLORTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: COLORTYPE
 ---
 
 # COLORTYPE enumeration

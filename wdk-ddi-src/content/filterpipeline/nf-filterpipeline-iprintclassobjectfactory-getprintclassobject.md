@@ -1,5 +1,5 @@
 ---
-UID: NF.filterpipeline.IPrintClassObjectFactory.GetPrintClassObject
+UID: NF:filterpipeline.IPrintClassObjectFactory.GetPrintClassObject
 title: IPrintClassObjectFactory::GetPrintClassObject method
 author: windows-driver-content
 description: The GetPrintClassObject method creates a print filter-related object for a specified printer by using the IID of the interface object to create.
@@ -7,7 +7,7 @@ old-location: print\iprintclassobjectfactory_getprintclassobject.htm
 old-project: print
 ms.assetid: 96ba0c27-d512-4bca-9053-a753434e461d
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintClassObjectFactory, IPrintClassObjectFactory::GetPrintClassObject, GetPrintClassObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintClassObjectFactory::GetPrintClassObject method

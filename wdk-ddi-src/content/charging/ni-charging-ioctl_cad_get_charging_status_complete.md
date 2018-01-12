@@ -1,5 +1,5 @@
 ---
-UID: NI.charging.IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE
+UID: NI:charging.IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE
 title: IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE
 author: windows-driver-content
 description: This IOCTL is for internal use only.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: 715F1DF3-C3CF-4662-8095-22ECA0E45796
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID, PPOWERSOURCEID
+ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PPOWERSOURCEID, POWERSOURCEID
 ---
 
 # IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE IOCTL

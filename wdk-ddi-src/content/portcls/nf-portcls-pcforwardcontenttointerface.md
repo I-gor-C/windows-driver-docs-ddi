@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.PcForwardContentToInterface
+UID: NF:portcls.PcForwardContentToInterface
 title: PcForwardContentToInterface function
 author: windows-driver-content
 description: The PcForwardContentToInterface function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Portcls.lib
 req.dll: 
 req.irql: 
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # PcForwardContentToInterface function
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The <b>PcForwardContentToInterface</b> function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content. Note that this function call is identical in operation to the <a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a> function, and its parameter definitions and return value are also identical.
+The <b>PcForwardContentToInterface</b> function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content. Note that this function call is identical in operation to the <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a> function, and its parameter definitions and return value are also identical.
 
 
 
@@ -53,15 +54,15 @@ PORTCLASSAPI NTSTATUS NTAPI  PcForwardContentToInterface(void);
 
 
 ## -returns
-See return value definition in <a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>.
 
-See return value definition in <a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>.
 
-See return value definition in <a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a>.
+See return value definition in <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>.
 
 
 ## -remarks
-For more information, see the comments in <a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a>.
+For more information, see the comments in <a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>.
 
 
 ## -requirements
@@ -114,7 +115,7 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="audio.drmforwardcontenttointerface">DrmForwardContentToInterface</a>
+<a href="..\drmk\nf-drmk-drmforwardcontenttointerface.md">DrmForwardContentToInterface</a>
 </dt>
 </dl>
  

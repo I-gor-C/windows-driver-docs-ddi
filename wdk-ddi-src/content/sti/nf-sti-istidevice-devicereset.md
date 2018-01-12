@@ -1,13 +1,13 @@
 ---
-UID: NF.sti.IStiDevice.DeviceReset
+UID: NF:sti.IStiDevice.DeviceReset
 title: IStiDevice::DeviceReset method
 author: windows-driver-content
 description: The IStiDevice::DeviceReset method resets a still image device to a known state.
 old-location: image\istidevice_devicereset.htm
-old-project: Image
+old-project: image
 ms.assetid: 8a52c452-9a80-45d5-9bc8-85e17654eb6a
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IStiDevice, IStiDevice::DeviceReset, DeviceReset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STI_DEVICE_MJ_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -62,11 +63,11 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 
 
 ## -remarks
-The <b>IStiDevice::DeviceReset</b> method resets the device by calling <a href="image.istiusd_devicereset">IStiUSD::DeviceReset</a>, which is exported by vendor-supplied minidrivers.
+The <b>IStiDevice::DeviceReset</b> method resets the device by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543812">IStiUSD::DeviceReset</a>, which is exported by vendor-supplied minidrivers.
 
-Before calling <b>IStiDevice::DeviceReset</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="image.istillimage_createdevice">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.
+Before calling <b>IStiDevice::DeviceReset</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.
 
-A call to <b>IStiDevice::DeviceReset</b> must be preceded by a call to <a href="image.istidevice_lockdevice">IStiDevice::LockDevice</a> and followed by a call to <a href="image.istidevice_unlockdevice">IStiDevice::UnLockDevice</a>.
+A call to <b>IStiDevice::DeviceReset</b> must be preceded by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543756">IStiDevice::LockDevice</a> and followed by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543770">IStiDevice::UnLockDevice</a>.
 
 
 ## -requirements

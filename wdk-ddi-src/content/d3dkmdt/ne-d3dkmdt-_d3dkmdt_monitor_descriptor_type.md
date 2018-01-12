@@ -1,5 +1,5 @@
 ---
-UID: NE.d3dkmdt._D3DKMDT_MONITOR_DESCRIPTOR_TYPE
+UID: NE:d3dkmdt._D3DKMDT_MONITOR_DESCRIPTOR_TYPE
 title: _D3DKMDT_MONITOR_DESCRIPTOR_TYPE
 author: windows-driver-content
 description: The D3DKMDT_MONITOR_DESCRIPTOR_TYPE enumeration is used to indicate a particular type of monitor descriptor.
@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_monitor_descriptor_type.htm
 old-project: display
 ms.assetid: f5ec761f-fc20-4baf-a012-c32356644a6c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: _D3DKMDT_MONITOR_DESCRIPTOR_TYPE, D3DKMDT_MONITOR_DESCRIPTOR_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: D3DKMDT_MONITOR_DESCRIPTOR_TYPE
 ---
 
 # _D3DKMDT_MONITOR_DESCRIPTOR_TYPE enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:d3dhal
 ---
 
 # D3Dhal.h header
@@ -29,11 +29,7 @@ D3Dhal.h contain these programming interfaces:
 | [_D3DDeviceDesc_V2 structure](ns-d3dhal-_d3ddevicedesc_v2.md) | The D3DDEVICEDESC_V2 structure contains fields that are already reported in the D3DHAL_D3DEXTENDEDCAPS structure when responding to the GUID_D3DExtendedCaps GUID in DdGetDriverInfo. |
 | [_D3DDeviceDesc_V3 structure](ns-d3dhal-_d3ddevicedesc_v3.md) | The D3DDEVICEDESC_V3 structure contains fields that are already reported in the D3DHAL_D3DEXTENDEDCAPS structure when responding to the GUID_D3DExtendedCaps GUID in DdGetDriverInfo. |
 | [_D3DHAL_CALLBACKS structure](ns-d3dhal-_d3dhal_callbacks.md) | D3DHAL_CALLBACKS is one of several callback structures that describe the Direct3D support provided by the driver. |
-| [_D3DHAL_CALLBACKS structure](ns-d3dhal-_d3dhal_callbacks~r1.md) | D3DHAL_CALLBACKS is one of several callback structures that describe the Direct3D support provided by the driver. |
-| [_D3DHAL_CALLBACKS structure](ns-d3dhal-_d3dhal_callbacks~r2.md) | D3DHAL_CALLBACKS is one of several callback structures that describe the Direct3D support provided by the driver. |
 | [_D3DHAL_CALLBACKS3 structure](ns-d3dhal-_d3dhal_callbacks3.md) | D3DHAL_CALLBACKS3 is one of several callback structures that describe the Direct3D support provided by the driver. |
-| [_D3DHAL_CALLBACKS3 structure](ns-d3dhal-_d3dhal_callbacks3~r1.md) | D3DHAL_CALLBACKS3 is one of several callback structures that describe the Direct3D support provided by the driver. |
-| [_D3DHAL_CALLBACKS3 structure](ns-d3dhal-_d3dhal_callbacks3~r2.md) | D3DHAL_CALLBACKS3 is one of several callback structures that describe the Direct3D support provided by the driver. |
 | [_D3DHAL_CLIPPEDTRIANGLEFAN structure](ns-d3dhal-_d3dhal_clippedtrianglefan.md) | DirectX 8.0 and later versions only. |
 | [_D3DHAL_CONTEXTCREATEDATA structure](ns-d3dhal-_d3dhal_contextcreatedata.md) | The D3DHAL_CONTEXTCREATEDATA structure contains all of the information that the D3dContextCreate function requires to create a new context. |
 | [_D3DHAL_CONTEXTDESTROYDATA structure](ns-d3dhal-_d3dhal_contextdestroydata.md) | The D3DHAL_CONTEXTDESTROYDATA structure contains the information that the D3dContextDestroy function requires to delete a context. |

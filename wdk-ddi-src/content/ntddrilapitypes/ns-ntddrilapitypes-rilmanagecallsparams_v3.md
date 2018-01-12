@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILMANAGECALLSPARAMS_V3
+UID: NS:ntddrilapitypes.RILMANAGECALLSPARAMS_V3
 title: RILMANAGECALLSPARAMS_V3
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilmanagecallsparams_v3.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: a398086b-827e-4684-a79c-db849926b3c3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILMANAGECALLSPARAMS_V3, LPRILMANAGECALLSPARAMS_V3, *LPRILMANAGECALLSPARAMS_V3, RILMANAGECALLSPARAMS_V3
+ms.date: 1/8/2018
+ms.keywords: RILMANAGECALLSPARAMS_V3, *LPRILMANAGECALLSPARAMS_V3, RILMANAGECALLSPARAMS_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILMANAGECALLSPARAMS_V3, RILMANAGECALLSPARAMS_V3
 ---
 
 # RILMANAGECALLSPARAMS_V3 structure

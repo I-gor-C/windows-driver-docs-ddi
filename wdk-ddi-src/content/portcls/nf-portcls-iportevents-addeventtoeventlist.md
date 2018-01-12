@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortEvents.AddEventToEventList
+UID: NF:portcls.IPortEvents.AddEventToEventList
 title: IPortEvents::AddEventToEventList method
 author: windows-driver-content
 description: The AddEventToEventList method adds an event to the port driver's event list.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortEvents::AddEventToEventList method
@@ -55,7 +56,7 @@ void AddEventToEventList(
 
 ### -param EventEntry [in]
 
-Pointer to the event entry that describes the event. This is an opaque system structure of type <a href="stream.ksevent_entry">KSEVENT_ENTRY</a>.
+Pointer to the event entry that describes the event. This is an opaque system structure of type <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>.
 
 
 ## -returns
@@ -108,10 +109,10 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iportevents.md">IPortEvents</a>
 </dt>
 <dt>
-<a href="stream.ksevent_entry">KSEVENT_ENTRY</a>
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 </dt>
 <dt>
-<a href="audio.iportevents_generateeventlist">IPortEvents::GenerateEventList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536889">IPortEvents::GenerateEventList</a>
 </dt>
 <dt>
 <a href="..\portcls\nc-portcls-pcpfnevent_handler.md">EventHandler</a>

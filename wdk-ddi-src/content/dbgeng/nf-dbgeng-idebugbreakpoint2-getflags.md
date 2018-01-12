@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.GetFlags
+UID: NF:dbgeng.IDebugBreakpoint2.GetFlags
 title: IDebugBreakpoint2::GetFlags method
 author: windows-driver-content
 description: The GetFlags method returns the flags for a breakpoint.
 old-location: debugger\getflags.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 0137a872-63e9-4630-86fa-accfaa9b6d6b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::GetFlags, GetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::GetFlags method
@@ -69,7 +70,7 @@ This method can also return error values.  For more information, see <a href="ht
 
 
 ## -remarks
-The <a href="debugger.getparameters">GetParameters</a> method also returns the breakpoint's flags.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548095">GetParameters</a> method also returns the breakpoint's flags.
 
 For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.
 

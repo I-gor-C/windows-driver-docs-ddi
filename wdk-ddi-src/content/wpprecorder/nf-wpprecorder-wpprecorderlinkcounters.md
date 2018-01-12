@@ -1,5 +1,5 @@
 ---
-UID: NF.wpprecorder.WppRecorderLinkCounters
+UID: NF:wpprecorder.WppRecorderLinkCounters
 title: WppRecorderLinkCounters macro
 author: windows-driver-content
 description: The WppRecorderLinkCounters.
@@ -7,7 +7,7 @@ old-location: devtest\wpprecorderlinkcounters.htm
 old-project: devtest
 ms.assetid: D8FF1E87-EB3E-491E-9649-076376C272B3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: WppRecorderLinkCounters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
 req.product: Windows 10 or later.
 ---
 

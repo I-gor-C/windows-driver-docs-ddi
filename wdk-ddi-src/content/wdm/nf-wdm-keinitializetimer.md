@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.KeInitializeTimer
+UID: NF:wdm.KeInitializeTimer
 title: KeInitializeTimer function
 author: windows-driver-content
 description: The KeInitializeTimer routine initializes a timer object.
@@ -7,7 +7,7 @@ old-location: kernel\keinitializetimer.htm
 old-project: kernel
 ms.assetid: 97140cf6-9c5a-4fdc-b7c7-10e6d28b9b1b
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: KeInitializeTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -68,9 +69,9 @@ The timer object is initialized to a not-signaled state.
 
 Storage for a timer object must be resident: in the device extension of a driver-created device object, in the controller extension of a driver-created controller object, or in nonpaged pool allocated by the caller.
 
-<b>KeInitializeTimer</b> can only initialize a notification timer. Use <a href="kernel.keinitializetimerex">KeInitializeTimerEx</a> to initialize a notification timer or a synchronization timer.
+<b>KeInitializeTimer</b> can only initialize a notification timer. Use <a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a> to initialize a notification timer or a synchronization timer.
 
-Use <a href="kernel.kesettimer">KeSetTimer</a> or <a href="kernel.kesettimerex">KeSetTimerEx</a> to define when the timer will expire.
+Use <a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a> or <a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a> to define when the timer will expire.
 
 For more information about timer objects, see <a href="https://msdn.microsoft.com/b58487de-6e9e-45f4-acb8-9233c8718ee2">Timer Objects and DPCs</a>.
 
@@ -149,7 +150,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.wdm_irqlkedispatchlte">IrqlKeDispatchLte</a>, <a href="devtest.storport_hwstorportprohibitedddis">HwStorPortProhibitedDDIs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547812">IrqlKeDispatchLte</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
 </td>
 </tr>
 </table>
@@ -157,30 +158,30 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.kecanceltimer">KeCancelTimer</a>
+<a href="..\wdm\nf-wdm-kecanceltimer.md">KeCancelTimer</a>
 </dt>
 <dt>
-<a href="kernel.keinitializetimerex">KeInitializeTimerEx</a>
+<a href="..\wdm\nf-wdm-keinitializetimerex.md">KeInitializeTimerEx</a>
 </dt>
 <dt>
-<a href="kernel.kereadstatetimer">KeReadStateTimer</a>
+<a href="..\wdm\nf-wdm-kereadstatetimer.md">KeReadStateTimer</a>
 </dt>
 <dt>
-<a href="kernel.kesettimer">KeSetTimer</a>
+<a href="..\wdm\nf-wdm-kesettimer.md">KeSetTimer</a>
 </dt>
 <dt>
-<a href="kernel.kesettimerex">KeSetTimerEx</a>
+<a href="..\wdm\nf-wdm-kesettimerex.md">KeSetTimerEx</a>
 </dt>
 <dt>
-<a href="kernel.kewaitformultipleobjects">KeWaitForMultipleObjects</a>
+<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
 </dt>
 <dt>
-<a href="kernel.kewaitforsingleobject">KeWaitForSingleObject</a>
+<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeInitializeTimer routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20KeInitializeTimer routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

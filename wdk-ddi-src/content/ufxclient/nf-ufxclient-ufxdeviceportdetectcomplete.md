@@ -1,13 +1,13 @@
 ---
-UID: NF.ufxclient.UfxDevicePortDetectComplete
+UID: NF:ufxclient.UfxDevicePortDetectComplete
 title: UfxDevicePortDetectComplete function
 author: windows-driver-content
 description: Notifies UFX about the port type that was detected.
 old-location: buses\ufxdeviceportdetectcomplete.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: D5F65152-54CD-45FA-99CE-F5B4DF444BB8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UfxDevicePortDetectComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -57,12 +58,12 @@ VOID UfxDevicePortDetectComplete(
 
 ### -param UfxDevice [in]
 
-A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
+A handle to a UFX device object that the driver created by calling <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.
 
 
 ### -param PortType [in]
 
-Contains an enumeration value of type <a href="buses.usbfn_port_type">USBFN_PORT_TYPE</a>.
+Contains an enumeration value of type <a href="..\usbfnbase\ne-usbfnbase-_usbfn_port_type.md">USBFN_PORT_TYPE</a>.
 
 
 ## -returns

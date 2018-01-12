@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDNDIS._NDIS_TCP_LARGE_SEND_OFFLOAD_V1
+UID: NS:ntddndis._NDIS_TCP_LARGE_SEND_OFFLOAD_V1
 title: _NDIS_TCP_LARGE_SEND_OFFLOAD_V1
 author: windows-driver-content
 description: The NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure provides large send offload version 1 (LSOV1) information in the NDIS_OFFLOAD structure.
 old-location: netvista\ndis_tcp_large_send_offload_v1.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 3e26b6ae-15e1-41d5-b00d-3e09c1534413
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _NDIS_TCP_LARGE_SEND_OFFLOAD_V1, *PNDIS_TCP_LARGE_SEND_OFFLOAD_V1, NDIS_TCP_LARGE_SEND_OFFLOAD_V1, PNDIS_TCP_LARGE_SEND_OFFLOAD_V1
+ms.date: 1/8/2018
+ms.keywords: _NDIS_TCP_LARGE_SEND_OFFLOAD_V1, NDIS_TCP_LARGE_SEND_OFFLOAD_V1, *PNDIS_TCP_LARGE_SEND_OFFLOAD_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_TCP_LARGE_SEND_OFFLOAD_V1, *PNDIS_TCP_LARGE_SEND_OFFLOAD_V1
 ---
 
 # _NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure
@@ -40,7 +41,7 @@ req.irql: PASSIVE_LEVEL
 ## -description
 The NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure provides large send offload version 1 (LSOV1)
   information in the 
-  <a href="netvista.ndis_offload">NDIS_OFFLOAD</a> structure.
+  <a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a> structure.
 
 
 
@@ -111,19 +112,19 @@ A ULONG value that a miniport driver sets to indicate that a miniport adapter ca
 ## -remarks
 The <b>NDIS_TCP_LARGE_SEND_OFFLOAD_V1</b> structure is used in the 
     <b>LsoV1</b> member of the 
-    <a href="netvista.ndis_offload">NDIS_OFFLOAD</a> structure.
+    <a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a> structure.
     <b>NDIS_TCP_LARGE_SEND_OFFLOAD_V1</b> specifies current or supported services that a miniport adapter provides
     for segmenting large TCP packets into smaller packets. NDIS also provides large send offload version 2
     (LSOV2), which is an enhanced version of LSO. For more information about LSOV2, see 
-    <a href="netvista.ndis_tcp_large_send_offload_v2">
+    <a href="..\ntddndis\ns-ntddndis-_ndis_tcp_large_send_offload_v2.md">
     NDIS_TCP_LARGE_SEND_OFFLOAD_V2</a>.
 
 
-<a href="netvista.ndis_offload">NDIS_OFFLOAD</a> is used in the 
-    <a href="netvista.ndis_miniport_adapter_offload_attributes">
+<a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a> is used in the 
+    <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_offload_attributes.md">
     NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a> structure, 
-    <a href="netvista.ndis_bind_parameters">NDIS_BIND_PARAMETERS</a> structure, 
-    <a href="netvista.ndis_filter_attach_parameters">
+    <a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a> structure, 
+    <a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">
     NDIS_FILTER_ATTACH_PARAMETERS</a> structure, 
     <a href="netvista.oid_tcp_offload_current_config">
     OID_TCP_OFFLOAD_CURRENT_CONFIG</a> OID, and the 
@@ -132,7 +133,7 @@ The <b>NDIS_TCP_LARGE_SEND_OFFLOAD_V1</b> structure is used in the
 
 For 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569805">OID_TCP_OFFLOAD_CURRENT_CONFIG</a>,
-    the <a href="netvista.ndis_offload">NDIS_OFFLOAD</a> structure specifies the task offload capabilities that a miniport adapter supports. If
+    the <a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a> structure specifies the task offload capabilities that a miniport adapter supports. If
     the current offloads capabilities change, a miniport driver reports the new capabilities in an 
     <a href="netvista.ndis_status_task_offload_current_config">
     NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a> status indication.
@@ -169,7 +170,7 @@ Specifies IEEE 802.3p and IEEE 802.3q encapsulation.
 
 Specifies that IEEE 802.3p and IEEE 802.3q encapsulation settings are specified in the 
       <b>NetBufferListInfo</b> member of each 
-      <a href="netvista.net_buffer_list">NET_BUFFER_LIST</a> structure.
+      <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
 
 Specifies logical link control (LLC) encapsulation for routed protocols, as described in RFC
       1483. This flag is also used to indicate Ethernet LLC/SNAP encapsulation.
@@ -216,31 +217,31 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndis_bind_parameters">NDIS_BIND_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_filter_attach_parameters">NDIS_FILTER_ATTACH_PARAMETERS</a>
+<a href="..\ndis\ns-ndis-_ndis_filter_attach_parameters.md">NDIS_FILTER_ATTACH_PARAMETERS</a>
 </dt>
 <dt>
-<a href="netvista.ndis_miniport_adapter_offload_attributes">
+<a href="..\ndis\ns-ndis-_ndis_miniport_adapter_offload_attributes.md">
    NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="netvista.ndis_offload">NDIS_OFFLOAD</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a>
 </dt>
 <dt>
-<a href="netvista.ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
 </dt>
 <dt>
 <a href="netvista.ndis_status_task_offload_current_config">
    NDIS_STATUS_TASK_OFFLOAD_CURRENT_CONFIG</a>
 </dt>
 <dt>
-<a href="netvista.ndis_tcp_large_send_offload_v2">
+<a href="..\ntddndis\ns-ntddndis-_ndis_tcp_large_send_offload_v2.md">
    NDIS_TCP_LARGE_SEND_OFFLOAD_V2</a>
 </dt>
 <dt>
-<a href="netvista.net_buffer_list">NET_BUFFER_LIST</a>
+<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569805">OID_TCP_OFFLOAD_CURRENT_CONFIG</a>
@@ -250,5 +251,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

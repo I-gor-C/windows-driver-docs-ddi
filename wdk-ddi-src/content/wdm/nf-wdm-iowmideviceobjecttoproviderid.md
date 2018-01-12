@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoWMIDeviceObjectToProviderId
+UID: NF:wdm.IoWMIDeviceObjectToProviderId
 title: IoWMIDeviceObjectToProviderId function
 author: windows-driver-content
 description: The IoWMIDeviceObjectToProviderId routine translates the specified device object into the corresponding WMI Provider ID.
@@ -7,7 +7,7 @@ old-location: kernel\iowmideviceobjecttoproviderid.htm
 old-project: kernel
 ms.assetid: 211d41ae-18d3-4ca5-b9f5-868d97fab6fb
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoWMIDeviceObjectToProviderId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -64,7 +65,7 @@ Pointer to a device object.
 
 
 ## -remarks
-<b>IoWMIDeviceObjectToProviderId</b> should be used when filling in the <b>ProviderId</b> member of the <a href="kernel.wnode_header">WNODE_HEADER</a> structure in those cases when the <b>WNODEHEADER</b> structure is being initialized as part of a <a href="kernel.wnode_event_item">WNODE_EVENT_ITEM</a> or <a href="kernel.wnode_event_reference">WNODE_EVENT_REFERENCE</a> structure. (If the <b>WNODE_HEADER</b> is being used for other purposes, <i>ProviderId</i> is reserved.)
+<b>IoWMIDeviceObjectToProviderId</b> should be used when filling in the <b>ProviderId</b> member of the <a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a> structure in those cases when the <b>WNODEHEADER</b> structure is being initialized as part of a <a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a> or <a href="..\wmistr\ns-wmistr-tagwnode_event_reference.md">WNODE_EVENT_REFERENCE</a> structure. (If the <b>WNODE_HEADER</b> is being used for other purposes, <i>ProviderId</i> is reserved.)
 
 When running on a 32-bit operating system, the provider ID and the device object are identical. When running on a 64-bit operating system, <b>IoWMIDeviceObjectToProviderId</b> will convert the 64-bit device object to a 32-bit provider ID.
 
@@ -140,18 +141,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.wnode_header">WNODE_HEADER</a>
+<a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a>
 </dt>
 <dt>
-<a href="kernel.wnode_event_item">WNODE_EVENT_ITEM</a>
+<a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a>
 </dt>
 <dt>
-<a href="kernel.wnode_event_reference">WNODE_EVENT_REFERENCE</a>
+<a href="..\wmistr\ns-wmistr-tagwnode_event_reference.md">WNODE_EVENT_REFERENCE</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIDeviceObjectToProviderId routine%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IoWMIDeviceObjectToProviderId routine%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

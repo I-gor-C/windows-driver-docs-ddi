@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IPortClsPower.UnregisterAdapterPowerManagement
+UID: NF:portcls.IPortClsPower.UnregisterAdapterPowerManagement
 title: IPortClsPower::UnregisterAdapterPowerManagement method
 author: windows-driver-content
 description: The UnregisterAdapterPowerManagement method unregisters the adapter's power management interface with PortCls.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IPortClsPower::UnregisterAdapterPowerManagement method
@@ -55,7 +56,7 @@ NTSTATUS UnregisterAdapterPowerManagement(
 
 ### -param DeviceObject [in]
 
-Specifies a pointer to a <a href="kernel.device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
+Specifies a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 
 ## -returns
@@ -63,7 +64,7 @@ The <code>UnregisterAdapterPowerManagement</code> method returns STATUS_SUCCESS 
 
 
 ## -remarks
-The <code>UnregisterAdapterPowerManagement</code> method unregisters the adapter's power management interface that was registered by the <a href="audio.iportclspower_registeradapterpowermanagement">IPortClsPower::RegisterAdapterPowerManagement</a> method.
+The <code>UnregisterAdapterPowerManagement</code> method unregisters the adapter's power management interface that was registered by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536874">IPortClsPower::RegisterAdapterPowerManagement</a> method.
 
 
 ## -requirements
@@ -118,10 +119,10 @@ PASSIVE_LEVEL.
 <a href="..\portcls\nn-portcls-iportclspower.md">IPortClsPower</a>
 </dt>
 <dt>
-<a href="kernel.device_object">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 </dt>
 <dt>
-<a href="audio.iportclspower_registeradapterpowermanagement">IPortClsPower::RegisterAdapterPowerManagement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536874">IPortClsPower::RegisterAdapterPowerManagement</a>
 </dt>
 </dl>
  

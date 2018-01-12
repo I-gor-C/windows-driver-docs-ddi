@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.WRITE_PORT_ULONG
+UID: NF:wdm.WRITE_PORT_ULONG
 title: WRITE_PORT_ULONG function
 author: windows-driver-content
 description: The WRITE_PORT_ULONG routine writes a ULONG value to the specified port address.
@@ -7,7 +7,7 @@ old-location: kernel\write_port_ulong.htm
 old-project: kernel
 ms.assetid: fe7c8a20-dadb-4c8d-b208-8fbbf8c719a6
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: WRITE_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Hal.lib
 req.dll: 
 req.irql: Any level (see Remarks section)
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddser.IOCTL_SERIAL_INTERNAL_DO_WAIT_WAKE
+UID: NI:ntddser.IOCTL_SERIAL_INTERNAL_DO_WAIT_WAKE
 title: IOCTL_SERIAL_INTERNAL_DO_WAIT_WAKE
 author: windows-driver-content
 description: The IOCTL_SERIAL_INTERNAL_DO_WAIT_WAKE request enables the wait/wake operation of a serial device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_INTERNAL_DO_WAIT_WAKE IOCTL

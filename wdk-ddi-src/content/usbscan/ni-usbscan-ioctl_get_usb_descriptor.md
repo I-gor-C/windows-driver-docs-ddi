@@ -1,13 +1,13 @@
 ---
-UID: NI.usbscan.IOCTL_GET_USB_DESCRIPTOR
+UID: NI:usbscan.IOCTL_GET_USB_DESCRIPTOR
 title: IOCTL_GET_USB_DESCRIPTOR
 author: windows-driver-content
 description: Returns a specified USB Descriptor.
 old-location: image\ioctl_get_usb_descriptor.htm
-old-project: Image
+old-project: image
 ms.assetid: a5490a2a-d406-4029-b8be-446236a936bb
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: _RAW_PIPE_TYPE, RAW_PIPE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RAW_PIPE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -46,7 +47,7 @@ Returns a specified USB Descriptor.
 ## -ioctlparameters
 
 ### -input-buffer
-Pointer to a <a href="image.usbscan_get_descriptor">USBSCAN_GET_DESCRIPTOR</a> structure.
+Pointer to a <a href="..\usbscan\ns-usbscan-_usbscan_get_descriptor.md">USBSCAN_GET_DESCRIPTOR</a> structure.
 
 
 ### -input-buffer-length
@@ -54,7 +55,7 @@ Size of the input buffer.
 
 
 ### -output-buffer
-Pointer to a <a href="buses.usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a>, <a href="buses.usb_string_descriptor">USB_STRING_DESCRIPTOR</a>, or <a href="buses.usb_configuration_descriptor">USB_CONFIGURATION_DESCRIPTOR</a> structure.
+Pointer to a <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>, <a href="..\usbspec\ns-usbspec-_usb_string_descriptor.md">USB_STRING_DESCRIPTOR</a>, or <a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> structure.
 
 
 ### -output-buffer-length
@@ -77,15 +78,15 @@ I/O Status block
 ## -remarks
 
 
-Device handle, obtained by calling <a href="fs.createfile">CreateFile</a>.
+Device handle, obtained by calling <a href="https://msdn.microsoft.com/80a96083-4de9-4422-9705-b8ad2b6cbd1b">CreateFile</a>.
 
 IOCTL_GET_USB_DESCRIPTOR
 
-Pointer to a <a href="image.usbscan_get_descriptor">USBSCAN_GET_DESCRIPTOR</a> structure.
+Pointer to a <a href="..\usbscan\ns-usbscan-_usbscan_get_descriptor.md">USBSCAN_GET_DESCRIPTOR</a> structure.
 
 Size of the input buffer.
 
-Pointer to a <a href="buses.usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a>, <a href="buses.usb_string_descriptor">USB_STRING_DESCRIPTOR</a>, or <a href="buses.usb_configuration_descriptor">USB_CONFIGURATION_DESCRIPTOR</a> structure.
+Pointer to a <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>, <a href="..\usbspec\ns-usbspec-_usb_string_descriptor.md">USB_STRING_DESCRIPTOR</a>, or <a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> structure.
 
 Size of the output buffer.
 
@@ -93,7 +94,7 @@ Pointer to a location to receive the number of bytes returned.
 
 Optional pointer to an OVERLAPPED structure (described in the Microsoft Windows SDK documentation).
 
-When the <b>DeviceloControl</b> function is called with the IOCTL_GET_USB_DESCRIPTOR I/O control code, the caller must specify the address of a <a href="image.usbscan_get_descriptor">USBSCAN_GET_DESCRIPTOR</a> structure as the function's <i>lpInBuffer</i> parameter. Depending on the value specified for the <b>DescriptorType</b> member of the USBSCAN_GET_DESCRIPTOR structure, the function's <i>lpOutbuffer</i> parameter must point to either a <a href="buses.usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a>, <a href="buses.usb_string_descriptor">USB_STRING_DESCRIPTOR</a>, or <a href="buses.usb_configuration_descriptor">USB_CONFIGURATION_DESCRIPTOR</a> structure.
+When the <b>DeviceloControl</b> function is called with the IOCTL_GET_USB_DESCRIPTOR I/O control code, the caller must specify the address of a <a href="..\usbscan\ns-usbscan-_usbscan_get_descriptor.md">USBSCAN_GET_DESCRIPTOR</a> structure as the function's <i>lpInBuffer</i> parameter. Depending on the value specified for the <b>DescriptorType</b> member of the USBSCAN_GET_DESCRIPTOR structure, the function's <i>lpOutbuffer</i> parameter must point to either a <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>, <a href="..\usbspec\ns-usbspec-_usb_string_descriptor.md">USB_STRING_DESCRIPTOR</a>, or <a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> structure.
 
 The kernel-mode driver obtains a USB descriptor by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff538943">UsbBuildGetDescriptorRequest</a>.
 

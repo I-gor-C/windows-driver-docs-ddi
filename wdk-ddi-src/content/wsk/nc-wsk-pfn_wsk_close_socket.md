@@ -1,14 +1,14 @@
 ---
-UID: NC.wsk.PFN_WSK_CLOSE_SOCKET
+UID: NC:wsk.PFN_WSK_CLOSE_SOCKET
 title: PFN_WSK_CLOSE_SOCKET
 author: windows-driver-content
 description: The WskCloseSocket function closes a socket and frees any associated resources.
 old-location: netvista\wskclosesocket.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 4d4e4a40-db76-4746-8049-3af8c4541283
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO, WPP_TRIAGE_INFO, PWPP_TRIAGE_INFO
+ms.date: 1/8/2018
+ms.keywords: _WPP_TRIAGE_INFO, WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -62,7 +63,7 @@ NTSTATUS WSKAPI * WskCloseSocket(
 ### -param Socket [in]
 
 A pointer to a 
-     <a href="netvista.wsk_socket">WSK_SOCKET</a> structure that specifies the socket
+     <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being closed.
 
 
@@ -121,7 +122,7 @@ If a WSK application applies a security descriptor to a socket, the cached copy 
     the security descriptor is no longer needed.
 
 The WSK subsystem deallocates the memory for the socket's socket object, 
-    <a href="netvista.wsk_socket">WSK_SOCKET</a>, which was allocated by the WSK
+    <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>, which was allocated by the WSK
     subsystem when the socket was created.
 
 For connection-oriented sockets, the 
@@ -193,26 +194,26 @@ IRQL
 <a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_basic_dispatch">WSK_PROVIDER_BASIC_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_basic_dispatch.md">WSK_PROVIDER_BASIC_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_connection_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_connection_dispatch.md">
    WSK_PROVIDER_CONNECTION_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_datagram_dispatch">
+<a href="..\wsk\ns-wsk-_wsk_provider_datagram_dispatch.md">
    WSK_PROVIDER_DATAGRAM_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_provider_listen_dispatch">WSK_PROVIDER_LISTEN_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_provider_listen_dispatch.md">WSK_PROVIDER_LISTEN_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_socket">WSK_SOCKET</a>
+<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20PFN_WSK_CLOSE_SOCKET callback function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20PFN_WSK_CLOSE_SOCKET callback function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWaveRTStreamNotification.UnregisterNotificationEvent
+UID: NF:portcls.IMiniportWaveRTStreamNotification.UnregisterNotificationEvent
 title: IMiniportWaveRTStreamNotification::UnregisterNotificationEvent method
 author: windows-driver-content
 description: The UnregisterNotificationEvent method unregisters an event from DMA driven event notification.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Passive level.
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWaveRTStreamNotification::UnregisterNotificationEvent method

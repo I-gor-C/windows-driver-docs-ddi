@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:wdfusb
 ---
 
 # Wdfusb.h header
@@ -16,6 +16,54 @@ Wdfusb.h contain these programming interfaces:
 
 | Title   | Description   |
 | ---- |:---- |
+| [PFN_WDFUSBINTERFACEGETCONFIGUREDPIPE function](nc-wdfusb-pfn_wdfusbinterfacegetconfiguredpipe.md) | The WdfUsbInterfaceGetConfiguredPipe method returns a handle to the framework pipe object that is associated with a specified USB device interface and pipe index. Optionally, the method also returns information about the pipe. |
+| [PFN_WDFUSBINTERFACEGETCONFIGUREDSETTINGINDEX function](nc-wdfusb-pfn_wdfusbinterfacegetconfiguredsettingindex.md) | The WdfUsbInterfaceGetConfiguredSettingIndex method returns the alternate setting index that is currently selected for a specified USB device interface. |
+| [PFN_WDFUSBINTERFACEGETDESCRIPTOR function](nc-wdfusb-pfn_wdfusbinterfacegetdescriptor.md) | The WdfUsbInterfaceGetDescriptor method retrieves the USB interface descriptor that is associated with a specified alternate setting of a specified USB interface. |
+| [PFN_WDFUSBINTERFACEGETENDPOINTINFORMATION function](nc-wdfusb-pfn_wdfusbinterfacegetendpointinformation.md) | The WdfUsbInterfaceGetEndpointInformation method retrieves information about a specified USB device endpoint and its associated pipe. |
+| [PFN_WDFUSBINTERFACEGETINTERFACENUMBER function](nc-wdfusb-pfn_wdfusbinterfacegetinterfacenumber.md) | The WdfUsbInterfaceGetInterfaceNumber method returns the interface number of a specified USB interface object. |
+| [PFN_WDFUSBINTERFACEGETNUMCONFIGUREDPIPES function](nc-wdfusb-pfn_wdfusbinterfacegetnumconfiguredpipes.md) | The WdfUsbInterfaceGetNumConfiguredPipes method returns the number of pipes that are configured for a specified USB device interface. |
+| [PFN_WDFUSBINTERFACEGETNUMENDPOINTS function](nc-wdfusb-pfn_wdfusbinterfacegetnumendpoints.md) | The WdfUsbInterfaceGetNumEndpoints method returns the number of endpoints that are associated with a specified alternate setting of a specified USB interface. |
+| [PFN_WDFUSBINTERFACESELECTSETTING function](nc-wdfusb-pfn_wdfusbinterfaceselectsetting.md) | The WdfUsbInterfaceSelectSetting method selects a specified alternate setting for a specified USB interface. |
+| [PFN_WDFUSBTARGETDEVICEALLOCANDQUERYSTRING function](nc-wdfusb-pfn_wdfusbtargetdeviceallocandquerystring.md) | The WdfUsbTargetDeviceAllocAndQueryString method allocates a buffer, then it retrieves the Unicode string that is associated with a specified USB device and descriptor index value. |
+| [PFN_WDFUSBTARGETDEVICECREATE function](nc-wdfusb-pfn_wdfusbtargetdevicecreate.md) | The WdfUsbTargetDeviceCreate method creates a framework USB device object for a specified framework device object and opens the USB device for I/O operations. |
+| [PFN_WDFUSBTARGETDEVICECREATEISOCHURB function](nc-wdfusb-pfn_wdfusbtargetdevicecreateisochurb.md) | The WdfUsbTargetDeviceCreateIsochUrb method allocates an isochronous USB request block (URB). |
+| [PFN_WDFUSBTARGETDEVICECREATEURB function](nc-wdfusb-pfn_wdfusbtargetdevicecreateurb.md) | The WdfUsbTargetDeviceCreateUrb method allocates a USB request block (URB). |
+| [PFN_WDFUSBTARGETDEVICECYCLEPORTSYNCHRONOUSLY function](nc-wdfusb-pfn_wdfusbtargetdevicecycleportsynchronously.md) | The WdfUsbTargetDeviceCyclePortSynchronously method power-cycles the USB port to which a specified device is attached. |
+| [PFN_WDFUSBTARGETDEVICEFORMATREQUESTFORCONTROLTRANSFER function](nc-wdfusb-pfn_wdfusbtargetdeviceformatrequestforcontroltransfer.md) | The WdfUsbTargetDeviceFormatRequestForControlTransfer method builds a USB control transfer request, but it does not send the request. |
+| [PFN_WDFUSBTARGETDEVICEFORMATREQUESTFORCYCLEPORT function](nc-wdfusb-pfn_wdfusbtargetdeviceformatrequestforcycleport.md) | The WdfUsbTargetDeviceFormatRequestForCyclePort method builds a power-cycle request for the port to which a specified device is attached, but it does not send the request. |
+| [PFN_WDFUSBTARGETDEVICEFORMATREQUESTFORSTRING function](nc-wdfusb-pfn_wdfusbtargetdeviceformatrequestforstring.md) | The WdfUsbTargetDeviceFormatRequestForString method builds a request for the USB string descriptor that is associated with a USB device's string index value. |
+| [PFN_WDFUSBTARGETDEVICEFORMATREQUESTFORURB function](nc-wdfusb-pfn_wdfusbtargetdeviceformatrequestforurb.md) | The WdfUsbTargetDeviceFormatRequestForUrb method builds an USB request for a specified USB device, using request parameters that are described by a URB, but it does not send the request. |
+| [PFN_WDFUSBTARGETDEVICEGETDEVICEDESCRIPTOR function](nc-wdfusb-pfn_wdfusbtargetdevicegetdevicedescriptor.md) | The WdfUsbTargetDeviceGetDeviceDescriptor method retrieves the USB device descriptor for the USB device that is associated with a specified framework USB device object. |
+| [PFN_WDFUSBTARGETDEVICEGETINTERFACE function](nc-wdfusb-pfn_wdfusbtargetdevicegetinterface.md) | The WdfUsbTargetDeviceGetInterface method returns a handle to the framework USB interface object that is associated with a specified interface index. |
+| [PFN_WDFUSBTARGETDEVICEGETNUMINTERFACES function](nc-wdfusb-pfn_wdfusbtargetdevicegetnuminterfaces.md) | The WdfUsbTargetDeviceGetNumInterfaces method returns the number of USB device interfaces that are supported by a specified USB device. |
+| [PFN_WDFUSBTARGETDEVICEISCONNECTEDSYNCHRONOUS function](nc-wdfusb-pfn_wdfusbtargetdeviceisconnectedsynchronous.md) | The WdfUsbTargetDeviceIsConnectedSynchronous method determines if the specified USB device is connected. |
+| [PFN_WDFUSBTARGETDEVICEQUERYSTRING function](nc-wdfusb-pfn_wdfusbtargetdevicequerystring.md) | The WdfUsbTargetDeviceQueryString method retrieves the Unicode string that is associated with a specified USB device and descriptor index value. |
+| [PFN_WDFUSBTARGETDEVICEQUERYUSBCAPABILITY function](nc-wdfusb-pfn_wdfusbtargetdevicequeryusbcapability.md) | The WdfUsbTargetDeviceQueryUsbCapability method determines whether the host controller and USB driver stack support a specific capability. |
+| [PFN_WDFUSBTARGETDEVICERESETPORTSYNCHRONOUSLY function](nc-wdfusb-pfn_wdfusbtargetdeviceresetportsynchronously.md) | The WdfUsbTargetDeviceResetPortSynchronously method resets the USB port that is associated with the specified USB device. |
+| [PFN_WDFUSBTARGETDEVICERETRIEVECONFIGDESCRIPTOR function](nc-wdfusb-pfn_wdfusbtargetdeviceretrieveconfigdescriptor.md) | The WdfUsbTargetDeviceRetrieveConfigDescriptor method retrieves the USB configuration descriptor for the USB device that is associated with a specified framework USB device object. |
+| [PFN_WDFUSBTARGETDEVICERETRIEVECURRENTFRAMENUMBER function](nc-wdfusb-pfn_wdfusbtargetdeviceretrievecurrentframenumber.md) | The WdfUsbTargetDeviceRetrieveCurrentFrameNumber method retrieves the current USB frame number. |
+| [PFN_WDFUSBTARGETDEVICERETRIEVEINFORMATION function](nc-wdfusb-pfn_wdfusbtargetdeviceretrieveinformation.md) | The WdfUsbTargetDeviceRetrieveInformation method retrieves information about the USB device that is associated with a specified framework USB device object. |
+| [PFN_WDFUSBTARGETDEVICESELECTCONFIG function](nc-wdfusb-pfn_wdfusbtargetdeviceselectconfig.md) | The WdfUsbTargetDeviceSelectConfig method selects a USB configuration for a device, or it deconfigures the device. |
+| [PFN_WDFUSBTARGETDEVICESENDCONTROLTRANSFERSYNCHRONOUSLY function](nc-wdfusb-pfn_wdfusbtargetdevicesendcontroltransfersynchronously.md) | The WdfUsbTargetDeviceSendControlTransferSynchronously method builds a USB control transfer request and sends it synchronously to an I/O target. |
+| [PFN_WDFUSBTARGETDEVICESENDURBSYNCHRONOUSLY function](nc-wdfusb-pfn_wdfusbtargetdevicesendurbsynchronously.md) | The WdfUsbTargetDeviceSendUrbSynchronously method sends a USB request synchronously to a specified USB device, using request parameters that are described by a URB. |
+| [PFN_WDFUSBTARGETDEVICEWDMGETCONFIGURATIONHANDLE function](nc-wdfusb-pfn_wdfusbtargetdevicewdmgetconfigurationhandle.md) | The WdfUsbTargetDeviceWdmGetConfigurationHandle method returns the USBD_CONFIGURATION_HANDLE-typed handle that is associated with the current configuration of a specified USB device. |
+| [PFN_WDFUSBTARGETPIPEABORTSYNCHRONOUSLY function](nc-wdfusb-pfn_wdfusbtargetpipeabortsynchronously.md) | The WdfUsbTargetPipeAbortSynchronously method builds an abort request and sends it synchronously to a specified USB pipe. |
+| [PFN_WDFUSBTARGETPIPECONFIGCONTINUOUSREADER function](nc-wdfusb-pfn_wdfusbtargetpipeconfigcontinuousreader.md) | The WdfUsbTargetPipeConfigContinuousReader method configures the framework to continuously read from a specified USB pipe. |
+| [PFN_WDFUSBTARGETPIPEFORMATREQUESTFORABORT function](nc-wdfusb-pfn_wdfusbtargetpipeformatrequestforabort.md) | The WdfUsbTargetPipeFormatRequestForAbort method builds an abort request for a specified USB pipe, but it does not send the request. |
+| [PFN_WDFUSBTARGETPIPEFORMATREQUESTFORREAD function](nc-wdfusb-pfn_wdfusbtargetpipeformatrequestforread.md) | The WdfUsbTargetPipeFormatRequestForRead method builds a read request for a USB input pipe, but it does not send the request. |
+| [PFN_WDFUSBTARGETPIPEFORMATREQUESTFORRESET function](nc-wdfusb-pfn_wdfusbtargetpipeformatrequestforreset.md) | The WdfUsbTargetPipeFormatRequestForReset method builds a reset request for a specified USB pipe, but it does not send the request. |
+| [PFN_WDFUSBTARGETPIPEFORMATREQUESTFORURB function](nc-wdfusb-pfn_wdfusbtargetpipeformatrequestforurb.md) | The WdfUsbTargetPipeFormatRequestForUrb method builds an USB request for a specified USB pipe, using request parameters that a specified URB describes, but it does not send the request. |
+| [PFN_WDFUSBTARGETPIPEFORMATREQUESTFORWRITE function](nc-wdfusb-pfn_wdfusbtargetpipeformatrequestforwrite.md) | The WdfUsbTargetPipeFormatRequestForWrite method builds a write request for a USB output pipe, but it does not send the request. |
+| [PFN_WDFUSBTARGETPIPEGETINFORMATION function](nc-wdfusb-pfn_wdfusbtargetpipegetinformation.md) | The WdfUsbTargetPipeGetInformation method retrieves information about a USB pipe and its endpoint. |
+| [PFN_WDFUSBTARGETPIPEGETTYPE function](nc-wdfusb-pfn_wdfusbtargetpipegettype.md) | The WdfUsbTargetPipeGetType method returns the type of a specified USB pipe. |
+| [PFN_WDFUSBTARGETPIPEISINENDPOINT function](nc-wdfusb-pfn_wdfusbtargetpipeisinendpoint.md) | The WdfUsbTargetPipeIsInEndpoint method determines whether a specified USB pipe is connected to an input endpoint. |
+| [PFN_WDFUSBTARGETPIPEISOUTENDPOINT function](nc-wdfusb-pfn_wdfusbtargetpipeisoutendpoint.md) | The WdfUsbTargetPipeIsOutEndpoint method determines whether a specified USB pipe is connected to an output endpoint. |
+| [PFN_WDFUSBTARGETPIPEREADSYNCHRONOUSLY function](nc-wdfusb-pfn_wdfusbtargetpipereadsynchronously.md) | The WdfUsbTargetPipeReadSynchronously method builds a read request and sends it synchronously to a specified USB input pipe. |
+| [PFN_WDFUSBTARGETPIPERESETSYNCHRONOUSLY function](nc-wdfusb-pfn_wdfusbtargetpiperesetsynchronously.md) | The WdfUsbTargetPipeResetSynchronously method builds a reset request and sends it synchronously to a specified USB pipe. |
+| [PFN_WDFUSBTARGETPIPESENDURBSYNCHRONOUSLY function](nc-wdfusb-pfn_wdfusbtargetpipesendurbsynchronously.md) | The WdfUsbTargetPipeSendUrbSynchronously method builds an USB request for a specified USB pipe, using request parameters that a specified URB describes. |
+| [PFN_WDFUSBTARGETPIPESETNOMAXIMUMPACKETSIZECHECK function](nc-wdfusb-pfn_wdfusbtargetpipesetnomaximumpacketsizecheck.md) | The WdfUsbTargetPipeSetNoMaximumPacketSizeCheck method disables the framework's test of whether the size of a driver's read buffer is a multiple of a USB pipe's maximum packet size. |
+| [PFN_WDFUSBTARGETPIPEWDMGETPIPEHANDLE function](nc-wdfusb-pfn_wdfusbtargetpipewdmgetpipehandle.md) | The WdfUsbTargetPipeWdmGetPipeHandle method returns the USBD_PIPE_HANDLE-typed handle that is associated with a specified framework pipe object. |
+| [PFN_WDFUSBTARGETPIPEWRITESYNCHRONOUSLY function](nc-wdfusb-pfn_wdfusbtargetpipewritesynchronously.md) | The WdfUsbTargetPipeWriteSynchronously method builds a write request and sends it synchronously to a specified USB output pipe. |
 | [WDF_USB_CONTINUOUS_READER_CONFIG_INIT function](nf-wdfusb-wdf_usb_continuous_reader_config_init.md) | The WDF_USB_CONTINUOUS_READER_CONFIG_INIT function initializes a WDF_USB_CONTINUOUS_READER_CONFIG structure. |
 | [WDF_USB_CONTROL_SETUP_PACKET_INIT function](nf-wdfusb-wdf_usb_control_setup_packet_init.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a standard USB control transfer. |
 | [WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function](nf-wdfusb-wdf_usb_control_setup_packet_init_class.md) | The WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a device class-specific USB control transfer. |
@@ -87,13 +135,6 @@ Wdfusb.h contain these programming interfaces:
 | [WdfUsbTargetPipeSetNoMaximumPacketSizeCheck function](nf-wdfusb-wdfusbtargetpipesetnomaximumpacketsizecheck.md) | The WdfUsbTargetPipeSetNoMaximumPacketSizeCheck method disables the framework's test of whether the size of a driver's read buffer is a multiple of a USB pipe's maximum packet size. |
 | [WdfUsbTargetPipeWdmGetPipeHandle function](nf-wdfusb-wdfusbtargetpipewdmgetpipehandle.md) | The WdfUsbTargetPipeWdmGetPipeHandle method returns the USBD_PIPE_HANDLE-typed handle that is associated with a specified framework pipe object. |
 | [WdfUsbTargetPipeWriteSynchronously function](nf-wdfusb-wdfusbtargetpipewritesynchronously.md) | The WdfUsbTargetPipeWriteSynchronously method builds a write request and sends it synchronously to a specified USB output pipe. |
-
-## Callback functions
-
-| Title   | Description   |
-| ---- |:---- |
-| [EVT_WDF_USB_READERS_FAILED callback](nc-wdfusb-evt_wdf_usb_readers_failed.md) | A driver's EvtUsbTargetPipeReadersFailed event callback function informs the driver that a continuous reader has reported an error while processing a read request. |
-| [EVT_WDF_USB_READER_COMPLETION_ROUTINE callback](nc-wdfusb-evt_wdf_usb_reader_completion_routine.md) | A driver's EvtUsbTargetPipeReadComplete event callback function informs the driver that a continuous reader has successfully completed a read request. |
 
 ## Structures
 

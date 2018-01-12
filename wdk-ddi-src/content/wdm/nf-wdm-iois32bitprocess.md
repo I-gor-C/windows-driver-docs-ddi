@@ -1,5 +1,5 @@
 ---
-UID: NF.wdm.IoIs32bitProcess
+UID: NF:wdm.IoIs32bitProcess
 title: IoIs32bitProcess function
 author: windows-driver-content
 description: The IoIs32bitProcess routine checks whether the originator of the current I/O request is a 32-bit user-mode application.
@@ -7,7 +7,7 @@ old-location: kernel\iois32bitprocess.htm
 old-project: kernel
 ms.assetid: a2de12d5-ed9e-42ac-b3e8-a3a567e4ab4a
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: IoIs32bitProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WORK_QUEUE_TYPE
 req.product: Windows 10 or later.
 ---
 

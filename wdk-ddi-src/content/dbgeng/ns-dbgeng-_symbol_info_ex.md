@@ -1,14 +1,14 @@
 ---
-UID: NS.DBGENG._SYMBOL_INFO_EX
+UID: NS:dbgeng._SYMBOL_INFO_EX
 title: _SYMBOL_INFO_EX
 author: windows-driver-content
 description: The SYMBOL_INFO_EX structure describes the extended line symbol information.
 old-location: debugger\symbol_info_ex.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: BDB8179A-4A97-4E83-B4A4-7B8358B3510C
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, PSYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.date: 1/10/2018
+ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
 ---
 
 # _SYMBOL_INFO_EX structure

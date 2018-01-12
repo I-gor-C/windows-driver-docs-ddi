@@ -1,5 +1,5 @@
 ---
-UID: NE.netdispumdddi.MIRACAST_STATUS
+UID: NE:netdispumdddi.MIRACAST_STATUS
 title: MIRACAST_STATUS
 author: windows-driver-content
 description: Specifies status types that the user-mode display driver uses to report Miracast connection status.
@@ -7,7 +7,7 @@ old-location: display\miracast_status.htm
 old-project: display
 ms.assetid: 26949ef9-ddcd-496d-b7e2-7c971bfaf3fb
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: MIRACAST_STATUS, MIRACAST_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: MIRACAST_STATUS
 ---
 
 # MIRACAST_STATUS enumeration

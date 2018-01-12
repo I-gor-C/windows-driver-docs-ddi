@@ -1,5 +1,5 @@
 ---
-UID: NF.wdfio.WdfIoQueueReadyNotify
+UID: NF:wdfio.WdfIoQueueReadyNotify
 title: WdfIoQueueReadyNotify function
 author: windows-driver-content
 description: The WdfIoQueueReadyNotify method registers (or deregisters) an event callback function that the framework calls each time a specified I/O queue that was previously empty receives one or more I/O requests.
@@ -7,7 +7,7 @@ old-location: wdf\wdfioqueuereadynotify.htm
 old-project: wdf
 ms.assetid: 0d48dce1-252f-4dc2-85a8-6c25e99ce0ba
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: WdfIoQueueReadyNotify
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: WDF_IO_QUEUE_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -82,11 +83,11 @@ An untyped pointer to driver-supplied context information that the framework pas
 <dt><b>STATUS_INVALID_DEVICE_REQUEST</b></dt>
 </dl>This value is returned if one of the following occurs:
 
-The <b>DispatchType</b> member of the specified I/O queue's <a href="wdf.wdf_io_queue_config">WDF_IO_QUEUE_CONFIG</a> structure is not <b>WdfIoQueueDispatchManual</b>.
+The <b>DispatchType</b> member of the specified I/O queue's <a href="..\wdfio\ns-wdfio-_wdf_io_queue_config.md">WDF_IO_QUEUE_CONFIG</a> structure is not <b>WdfIoQueueDispatchManual</b>.
 
-The driver had previously called <a href="wdf.wdfioqueuereadynotify">WdfIoQueueReadyNotify</a> and registered an <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a> callback function. 
+The driver had previously called <a href="..\wdfio\nf-wdfio-wdfioqueuereadynotify.md">WdfIoQueueReadyNotify</a> and registered an <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a> callback function. 
 
-The driver is attempting to deregister its notification callback function, but a callback function is not registered or the driver has not called <a href="wdf.wdfioqueuestop">WdfIoQueueStop</a> or <a href="wdf.wdfioqueuestopsynchronously">WdfIoQueueStopSynchronously</a>.
+The driver is attempting to deregister its notification callback function, but a callback function is not registered or the driver has not called <a href="..\wdfio\nf-wdfio-wdfioqueuestop.md">WdfIoQueueStop</a> or <a href="..\wdfio\nf-wdfio-wdfioqueuestopsynchronously.md">WdfIoQueueStopSynchronously</a>.
 
  
 
@@ -104,13 +105,13 @@ The framework does not call <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md
 
 Your driver can call <b>WdfIoQueueReadyNotify</b> only for I/O queues that use the <a href="wdf.dispatching_methods_for_i_o_requests#manual_dispatching#manual_dispatching">manual dispatching</a> method. 
 
-The <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a> callback function typically calls <a href="wdf.wdfioqueueretrievenextrequest">WdfIoQueueRetrieveNextRequest</a> or <a href="wdf.wdfioqueueretrieverequestbyfileobject">WdfIoQueueRetrieveRequestByFileObject</a> in a loop to retrieve all of the requests that have arrived since the last time the callback function executed.
+The <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a> callback function typically calls <a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a> or <a href="..\wdfio\nf-wdfio-wdfioqueueretrieverequestbyfileobject.md">WdfIoQueueRetrieveRequestByFileObject</a> in a loop to retrieve all of the requests that have arrived since the last time the callback function executed.
 
-To stop the framework from calling the <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a> callback function, the driver must call <b>WdfIoQueueReadyNotify</b> again with the <i>QueueReady</i> parameter set to <b>NULL</b>. However, the driver must first call <a href="wdf.wdfioqueuestop">WdfIoQueueStop</a> or <a href="wdf.wdfioqueuestopsynchronously">WdfIoQueueStopSynchronously</a> to stop the I/O queue. The driver can subsequently call <a href="wdf.wdfioqueuestart">WdfIoQueueStart</a> to restart the queue.
+To stop the framework from calling the <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a> callback function, the driver must call <b>WdfIoQueueReadyNotify</b> again with the <i>QueueReady</i> parameter set to <b>NULL</b>. However, the driver must first call <a href="..\wdfio\nf-wdfio-wdfioqueuestop.md">WdfIoQueueStop</a> or <a href="..\wdfio\nf-wdfio-wdfioqueuestopsynchronously.md">WdfIoQueueStopSynchronously</a> to stop the I/O queue. The driver can subsequently call <a href="..\wdfio\nf-wdfio-wdfioqueuestart.md">WdfIoQueueStart</a> to restart the queue.
 
 When a driver calls <b>WdfIoQueueReadyNotify</b> to register a <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a> callback function, it is possible for the framework to call the callback function before <b>WdfIoQueueReadyNotify</b> returns.
 
-For more information about the <b>WdfIoQueueReadyNotify</b> method, see <a href="wdf.dispatching_methods_for_i_o_requests">Dispatching Methods for I/O Requests</a>.
+For more information about the <b>WdfIoQueueReadyNotify</b> method, see <a href="https://msdn.microsoft.com/3e91aa7c-bccf-4eeb-8b68-b1277a690f8c">Dispatching Methods for I/O Requests</a>.
 
 The following code example registers a driver's <b>EvtIoQueueReady</b> function, so that this function will be called when the specified I/O queue receives an I/O request.
 
@@ -187,7 +188,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.kmdf_drivercreate">DriverCreate</a>, <a href="devtest.kmdf_kmdfirql">KmdfIrql</a>, <a href="devtest.kmdf_kmdfirql2">KmdfIrql2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548167">KmdfIrql</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975091">KmdfIrql2</a>
 </td>
 </tr>
 </table>
@@ -195,13 +196,13 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="wdf.wdfioqueueretrievenextrequest">WdfIoQueueRetrieveNextRequest</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>
 </dt>
 <dt>
-<a href="wdf.wdfioqueueretrieverequestbyfileobject">WdfIoQueueRetrieveRequestByFileObject</a>
+<a href="..\wdfio\nf-wdfio-wdfioqueueretrieverequestbyfileobject.md">WdfIoQueueRetrieveRequestByFileObject</a>
 </dt>
 <dt>
-<a href="wdf.wdf_io_queue_config">WDF_IO_QUEUE_CONFIG</a>
+<a href="..\wdfio\ns-wdfio-_wdf_io_queue_config.md">WDF_IO_QUEUE_CONFIG</a>
 </dt>
 <dt>
 <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
@@ -211,5 +212,5 @@ DDI compliance rules
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueReadyNotify method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WdfIoQueueReadyNotify method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

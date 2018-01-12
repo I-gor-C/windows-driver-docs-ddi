@@ -1,14 +1,14 @@
 ---
-UID: NS.STI._STINOTIFY
+UID: NS:sti._STINOTIFY
 title: _STINOTIFY
 author: windows-driver-content
 description: The STINOTIFY structure is used as a parameter to the IStillImage::LaunchApplicationForDevice, IStiDevice::GetLastNotificationData, and IStiUSD::GetNotificationData methods.
 old-location: image\stinotify.htm
-old-project: Image
+old-project: image
 ms.assetid: 7dc42f9a-2e55-4ae5-a951-7d1d3b14564b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _STINOTIFY, LPSTINOTIFY, STINOTIFY, *LPSTINOTIFY
+ms.date: 1/10/2018
+ms.keywords: _STINOTIFY, *LPSTINOTIFY, STINOTIFY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPSTINOTIFY, STINOTIFY
 req.product: Windows 10 or later.
 ---
 
@@ -39,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The STINOTIFY structure is used as a parameter to the <a href="image.istillimage_launchapplicationfordevice">IStillImage::LaunchApplicationForDevice</a>, <a href="image.istidevice_getlastnotificationdata">IStiDevice::GetLastNotificationData</a>, and <a href="image.istiusd_getnotificationdata">IStiUSD::GetNotificationData</a> methods.
+The STINOTIFY structure is used as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543796">IStillImage::LaunchApplicationForDevice</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff543751">IStiDevice::GetLastNotificationData</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543821">IStiUSD::GetNotificationData</a> methods.
 
 
 

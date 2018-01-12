@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILNITZINFOPARAMMASK
+UID: NE:rilapitypes.RILNITZINFOPARAMMASK
 title: RILNITZINFOPARAMMASK
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilnitzinfoparammask_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: c9ee5373-53eb-4356-8969-4d7bfea13779
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILNITZINFOPARAMMASK, RILNITZINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILNITZINFOPARAMMASK
 req.product: Windows 10 or later.
 ---
 

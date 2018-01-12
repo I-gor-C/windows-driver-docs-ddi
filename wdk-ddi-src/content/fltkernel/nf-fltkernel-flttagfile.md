@@ -1,5 +1,5 @@
 ---
-UID: NF.fltkernel.FltTagFile
+UID: NF:fltkernel.FltTagFile
 title: FltTagFile function
 author: windows-driver-content
 description: FltTagFile sets a reparse tag on a file or directory.
@@ -7,7 +7,7 @@ old-location: ifsk\flttagfile.htm
 old-project: ifsk
 ms.assetid: fbc8b596-1299-4dfa-953b-5730905f0e30
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FltTagFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: EXpsFontRestriction
 ---
 
 # FltTagFile function
@@ -110,11 +111,11 @@ Size, in bytes, of the buffer that <i>DataBuffer </i>points to.
 
 
 ## -remarks
-Minifilter drivers should use <b>FltTagFile</b> instead of <a href="ifsk.fsctl_set_reparse_point">FSCTL_SET_REPARSE_POINT</a> to set a reparse point. 
+Minifilter drivers should use <b>FltTagFile</b> instead of <a href="https://msdn.microsoft.com/library/windows/hardware/ff545568">FSCTL_SET_REPARSE_POINT</a> to set a reparse point. 
 
-Not all file systems support reparse points. The NTFS file system supports them; the FAT file system does not. Minifilter drivers can determine whether a file system supports reparse points by calling <a href="ifsk.fltqueryvolumeinformation">FltQueryVolumeInformation</a>, specifying FileFsAttributeInformation for the <i>FsInformation</i> parameter, and examining the FILE_SUPPORTS_REPARSE_POINTS bit flag in the returned <a href="ifsk.file_fs_attribute_information">FILE_FS_ATTRIBUTE_INFORMATION</a> structure. 
+Not all file systems support reparse points. The NTFS file system supports them; the FAT file system does not. Minifilter drivers can determine whether a file system supports reparse points by calling <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>, specifying FileFsAttributeInformation for the <i>FsInformation</i> parameter, and examining the FILE_SUPPORTS_REPARSE_POINTS bit flag in the returned <a href="..\ntifs\ns-ntifs-_file_fs_attribute_information.md">FILE_FS_ATTRIBUTE_INFORMATION</a> structure. 
 
-To remove an existing reparse point, call <a href="ifsk.fltuntagfile">FltUntagFile</a>. 
+To remove an existing reparse point, call <a href="..\fltkernel\nf-fltkernel-fltuntagfile.md">FltUntagFile</a>. 
 
 For more information about reparse points, see the Microsoft Windows SDK documentation. 
 
@@ -180,48 +181,48 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.file_fs_attribute_information">FILE_FS_ATTRIBUTE_INFORMATION</a>
+<a href="..\ntifs\ns-ntifs-_file_fs_attribute_information.md">FILE_FS_ATTRIBUTE_INFORMATION</a>
 </dt>
 <dt>
-<a href="ifsk.flt_callback_data">FLT_CALLBACK_DATA</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
 </dt>
 <dt>
-<a href="ifsk.flt_tag_data_buffer">FLT_TAG_DATA_BUFFER</a>
+<a href="..\fltkernel\ns-fltkernel-_flt_tag_data_buffer.md">FLT_TAG_DATA_BUFFER</a>
 </dt>
 <dt>
-<a href="ifsk.fltfscontrolfile">FltFsControlFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltfscontrolfile.md">FltFsControlFile</a>
 </dt>
 <dt>
-<a href="ifsk.fltqueryvolumeinformation">FltQueryVolumeInformation</a>
+<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
 </dt>
 <dt>
-<a href="ifsk.fltuntagfile">FltUntagFile</a>
+<a href="..\fltkernel\nf-fltkernel-fltuntagfile.md">FltUntagFile</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_delete_reparse_point">FSCTL_DELETE_REPARSE_POINT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544828">FSCTL_DELETE_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_get_reparse_point">FSCTL_GET_REPARSE_POINT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544836">FSCTL_GET_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="ifsk.fsctl_set_reparse_point">FSCTL_SET_REPARSE_POINT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545568">FSCTL_SET_REPARSE_POINT</a>
 </dt>
 <dt>
-<a href="ifsk.isreparsetagmicrosoft">IsReparseTagMicrosoft</a>
+<a href="..\ntifs\nf-ntifs-isreparsetagmicrosoft.md">IsReparseTagMicrosoft</a>
 </dt>
 <dt>
-<a href="ifsk.isreparsetagnamesurrogate">IsReparseTagNameSurrogate</a>
+<a href="..\ntifs\nf-ntifs-isreparsetagnamesurrogate.md">IsReparseTagNameSurrogate</a>
 </dt>
 <dt>
-<a href="ifsk.reparse_data_buffer">REPARSE_DATA_BUFFER</a>
+<a href="..\ntifs\ns-ntifs-_reparse_data_buffer.md">REPARSE_DATA_BUFFER</a>
 </dt>
 <dt>
-<a href="ifsk.reparse_guid_data_buffer">REPARSE_GUID_DATA_BUFFER</a>
+<a href="..\ntifs\ns-ntifs-_reparse_guid_data_buffer.md">REPARSE_GUID_DATA_BUFFER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltTagFile function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FltTagFile function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

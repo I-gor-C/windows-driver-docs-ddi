@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.GetCurrentProcessId
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentProcessId
 title: IDebugSystemObjects4::GetCurrentProcessId method
 author: windows-driver-content
 description: The GetCurrentProcessId method returns the engine process ID for the current process.
 old-location: debugger\getcurrentprocessid.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 5b256ccb-8f03-4936-8e03-9955c81384a5
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::GetCurrentProcessId, GetCurrentProcessId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::GetCurrentProcessId method

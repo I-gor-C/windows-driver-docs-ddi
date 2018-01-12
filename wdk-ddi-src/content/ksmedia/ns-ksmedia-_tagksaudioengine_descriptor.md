@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA._TAGKSAUDIOENGINE_DESCRIPTOR
+UID: NS:ksmedia._tagKSAUDIOENGINE_DESCRIPTOR
 title: _tagKSAUDIOENGINE_DESCRIPTOR
 author: windows-driver-content
 description: The KSAUDIOENGINE_DESCRIPTOR structure describes the static, external properties of the audio engine.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 6691AB8B-EC6E-483B-A10A-6F9C5A97FEC9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _tagKSAUDIOENGINE_DESCRIPTOR, *PKSAUDIOENGINE_DESCRIPTOR, PKSAUDIOENGINE_DESCRIPTOR, KSAUDIOENGINE_DESCRIPTOR
+ms.keywords: _tagKSAUDIOENGINE_DESCRIPTOR, *PKSAUDIOENGINE_DESCRIPTOR, KSAUDIOENGINE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSAUDIOENGINE_DESCRIPTOR, KSAUDIOENGINE_DESCRIPTOR
 ---
 
 # _tagKSAUDIOENGINE_DESCRIPTOR structure
@@ -101,7 +102,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="audio.iminiportaudioenginenode_getaudioenginedescriptor">GetAudioEngineDescriptor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265074">GetAudioEngineDescriptor</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450870">KSPROPERTY_AUDIOENGINE_DESCRIPTOR</a>

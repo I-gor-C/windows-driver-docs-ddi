@@ -1,5 +1,5 @@
 ---
-UID: NF.portcls.IMiniportWavePciStream.SetState
+UID: NF:portcls.IMiniportWavePciStream.SetState
 title: IMiniportWavePciStream::SetState method
 author: windows-driver-content
 description: The SetState method changes the state of the stream transport.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: *PPC_EXIT_LATENCY, PC_EXIT_LATENCY
 ---
 
 # IMiniportWavePciStream::SetState method
@@ -55,7 +56,7 @@ NTSTATUS SetState(
 
 ### -param State [in]
 
-Specifies the new state of the stream. This parameter is a <a href="stream.ksstate">KSSTATE</a> enumeration value. For more information, see the following Remarks section.
+Specifies the new state of the stream. This parameter is a <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a> enumeration value. For more information, see the following Remarks section.
 
 
 ## -returns
@@ -63,7 +64,7 @@ Specifies the new state of the stream. This parameter is a <a href="stream.kssta
 
 
 ## -remarks
-For an audio filter graph, the four <a href="stream.ksstate">KSSTATE</a> enumeration values are interpreted as follows:
+For an audio filter graph, the four <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a> enumeration values are interpreted as follows:
 
 KSSTATE_RUN 
 
@@ -89,7 +90,7 @@ STOP -&gt; ACQUIRE -&gt; PAUSE -&gt; RUN
 
 RUN -&gt; PAUSE -&gt; ACQUIRE -&gt; STOP
 
-The <a href="audio.iminiportwavepci_newstream">IMiniportWavePci::NewStream</a> method sets the initial state of the stream to KSSTATE_STOP. 
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff536735">IMiniportWavePci::NewStream</a> method sets the initial state of the stream to KSSTATE_STOP. 
 
 
 ## -requirements
@@ -134,13 +135,13 @@ PASSIVE_LEVEL
 <a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
 </dt>
 <dt>
-<a href="stream.ksstate">KSSTATE</a>
+<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565110">KSPROPERTY_CONNECTION_STATE</a>
 </dt>
 <dt>
-<a href="audio.iminiportwavepci_newstream">IMiniportWavePci::NewStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536735">IMiniportWavePci::NewStream</a>
 </dt>
 </dl>
  

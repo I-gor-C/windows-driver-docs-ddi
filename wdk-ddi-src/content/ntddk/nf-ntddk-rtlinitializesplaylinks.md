@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlInitializeSplayLinks
+UID: NF:ntddk.RtlInitializeSplayLinks
 title: RtlInitializeSplayLinks function
 author: windows-driver-content
 description: The RtlInitializeSplayLinks routine initializes a splay link node.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlinitializesplaylinks.htm
 old-project: ifsk
 ms.assetid: 34818dc0-d241-4f5f-a202-08200fbc23a3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlInitializeSplayLinks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlInitializeSplayLinks function
@@ -109,54 +110,54 @@ See Remarks section.
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exinitializefastmutex">ExInitializeFastMutex</a>
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
 </dt>
 <dt>
-<a href="ifsk.rtldeletenosplay">RtlDeleteNoSplay</a>
+<a href="..\ntddk\nf-ntddk-rtldeletenosplay.md">RtlDeleteNoSplay</a>
 </dt>
 <dt>
-<a href="ifsk.rtlinsertasleftchild">RtlInsertAsLeftChild</a>
+<a href="..\ntddk\nf-ntddk-rtlinsertasleftchild.md">RtlInsertAsLeftChild</a>
 </dt>
 <dt>
-<a href="ifsk.rtlinsertasrightchild">RtlInsertAsRightChild</a>
+<a href="..\ntddk\nf-ntddk-rtlinsertasrightchild.md">RtlInsertAsRightChild</a>
 </dt>
 <dt>
-<a href="ifsk.rtlisleftchild">RtlIsLeftChild</a>
+<a href="..\ntddk\nf-ntddk-rtlisleftchild.md">RtlIsLeftChild</a>
 </dt>
 <dt>
-<a href="ifsk.rtlisrightchild">RtlIsRightChild</a>
+<a href="..\ntddk\nf-ntddk-rtlisrightchild.md">RtlIsRightChild</a>
 </dt>
 <dt>
-<a href="ifsk.rtlisroot">RtlIsRoot</a>
+<a href="..\ntddk\nf-ntddk-rtlisroot.md">RtlIsRoot</a>
 </dt>
 <dt>
-<a href="ifsk.rtlleftchild">RtlLeftChild</a>
+<a href="..\ntddk\nf-ntddk-rtlleftchild.md">RtlLeftChild</a>
 </dt>
 <dt>
-<a href="ifsk.rtlparent">RtlParent</a>
+<a href="..\ntddk\nf-ntddk-rtlparent.md">RtlParent</a>
 </dt>
 <dt>
-<a href="ifsk.rtlrealpredecessor">RtlRealPredecessor</a>
+<a href="..\ntddk\nf-ntddk-rtlrealpredecessor.md">RtlRealPredecessor</a>
 </dt>
 <dt>
-<a href="ifsk.rtlrealsuccessor">RtlRealSuccessor</a>
+<a href="..\ntddk\nf-ntddk-rtlrealsuccessor.md">RtlRealSuccessor</a>
 </dt>
 <dt>
-<a href="ifsk.rtlrightchild">RtlRightChild</a>
+<a href="..\ntddk\nf-ntddk-rtlrightchild.md">RtlRightChild</a>
 </dt>
 <dt>
-<a href="ifsk.rtlsplay">RtlSplay</a>
+<a href="..\ntddk\nf-ntddk-rtlsplay.md">RtlSplay</a>
 </dt>
 <dt>
-<a href="ifsk.rtlsubtreepredecessor">RtlSubtreePredecessor</a>
+<a href="..\ntddk\nf-ntddk-rtlsubtreepredecessor.md">RtlSubtreePredecessor</a>
 </dt>
 <dt>
-<a href="ifsk.rtlsubtreesuccessor">RtlSubtreeSuccessor</a>
+<a href="..\ntddk\nf-ntddk-rtlsubtreesuccessor.md">RtlSubtreeSuccessor</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInitializeSplayLinks routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInitializeSplayLinks routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

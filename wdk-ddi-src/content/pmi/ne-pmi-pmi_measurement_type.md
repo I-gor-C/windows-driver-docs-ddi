@@ -1,5 +1,5 @@
 ---
-UID: NE.pmi.PMI_MEASUREMENT_TYPE
+UID: NE:pmi.PMI_MEASUREMENT_TYPE
 title: PMI_MEASUREMENT_TYPE
 author: windows-driver-content
 description: The PMI_MEASUREMENT_TYPE enumeration defines the source of the PMI measurement data.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: PMI_MEASUREMENT_TYPE
 ---
 
 # PMI_MEASUREMENT_TYPE enumeration
@@ -71,7 +72,7 @@ The maximum types of PMI measurement data.
 
 
 ## -remarks
-The <b>MeasurementType</b> member of the <a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a> structure specifies the type of PMI measurement data reported by a power meter. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> request.
+The <b>MeasurementType</b> member of the <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure specifies the type of PMI measurement data reported by a power meter. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> request.
 
 PMI measurement data is returned through a query request of <a href="..\pmi\ni-pmi-ioctl_pmi_get_measurement.md">IOCTL_PMI_GET_MEASUREMENT</a>.
 
@@ -110,7 +111,7 @@ Header
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_measurement.md">IOCTL_PMI_GET_MEASUREMENT</a>
 </dt>
 <dt>
-<a href="powermeter.pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a>
+<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
 </dt>
 </dl>
  

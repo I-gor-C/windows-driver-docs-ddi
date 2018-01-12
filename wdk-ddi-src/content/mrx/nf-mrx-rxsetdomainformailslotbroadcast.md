@@ -1,5 +1,5 @@
 ---
-UID: NF.mrx.RxSetDomainForMailslotBroadcast
+UID: NF:mrx.RxSetDomainForMailslotBroadcast
 title: RxSetDomainForMailslotBroadcast function
 author: windows-driver-content
 description: RxSetDomainForMailslotBroadcast is called by a network mini-redirector driver to set the domain used for mailslot broadcasts if mailslots are supported by the driver.
@@ -7,7 +7,7 @@ old-location: ifsk\rxsetdomainformailslotbroadcast.htm
 old-project: ifsk
 ms.assetid: 22f5e525-bdf8-4047-9b77-6523cb59f090
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RxSetDomainForMailslotBroadcast
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
+req.typenames: *PSetDSMCounters_IN, SetDSMCounters_IN
 ---
 
 # RxSetDomainForMailslotBroadcast function
@@ -112,24 +113,24 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.iocreatedevice">IoCreateDevice</a>
+<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
 </dt>
 <dt>
-<a href="ifsk.rxregisterminirdr">RxRegisterMinirdr</a>
+<a href="..\mrx\nf-mrx-rxregisterminirdr.md">RxRegisterMinirdr</a>
 </dt>
 <dt>
-<a href="ifsk.rxstartminirdr">RxStartMinirdr</a>
+<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a>
 </dt>
 <dt>
-<a href="ifsk.rxstopminirdr">RxStopMinirdr</a>
+<a href="..\mrx\nf-mrx-rxstopminirdr.md">RxStopMinirdr</a>
 </dt>
 <dt>
-<a href="ifsk.__rxfillandinstallfastiodispatch">__RxFillAndInstallFastIoDispatch</a>
+<a href="..\mrx\nf-mrx-__rxfillandinstallfastiodispatch.md">__RxFillAndInstallFastIoDispatch</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxSetDomainForMailslotBroadcast function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RxSetDomainForMailslotBroadcast function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

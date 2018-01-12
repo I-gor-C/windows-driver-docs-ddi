@@ -1,5 +1,5 @@
 ---
-UID: NF.spbcx.SpbTargetGetFileObject
+UID: NF:spbcx.SpbTargetGetFileObject
 title: SpbTargetGetFileObject function
 author: windows-driver-content
 description: The SpbTargetGetFileObject method accepts, as an input parameter, an SPBTARGET handle to an open target device, and returns a WDFFILEOBJECT handle to this target.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Spbcxstubs.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 

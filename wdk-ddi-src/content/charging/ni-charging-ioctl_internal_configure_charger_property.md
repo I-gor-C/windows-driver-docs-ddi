@@ -1,5 +1,5 @@
 ---
-UID: NI.charging.IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY
+UID: NI:charging.IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY
 title: IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY
 author: windows-driver-content
 description: The IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY control code is sent from a configurable charger to a device that handles configurable chargers. It configures charger properties.
@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: B4D10667-29D6-45BF-87CA-D2F59DF78797
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID, PPOWERSOURCEID
+ms.keywords: _POWERSOURCEID, *PPOWERSOURCEID, POWERSOURCEID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PPOWERSOURCEID, POWERSOURCEID
 ---
 
 # IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY IOCTL
@@ -46,7 +47,7 @@ The <b>IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY</b>
 ## -ioctlparameters
 
 ### -input-buffer
-<b>Irp-&gt;AssociatedIrp.SystemBuffer</b> must contain a structure that starts with a <a href="battery.configurable_charger_property_header">CONFIGURABLE_CHARGER_PROPERTY_HEADER</a> structure.
+<b>Irp-&gt;AssociatedIrp.SystemBuffer</b> must contain a structure that starts with a <a href="..\charging\ns-charging-_configurable_charger_property_header.md">CONFIGURABLE_CHARGER_PROPERTY_HEADER</a> structure.
 
 
 ### -input-buffer-length
@@ -115,7 +116,7 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="battery.configurable_charger_property_header">CONFIGURABLE_CHARGER_PROPERTY_HEADER</a>
+<a href="..\charging\ns-charging-_configurable_charger_property_header.md">CONFIGURABLE_CHARGER_PROPERTY_HEADER</a>
 </dt>
 </dl>
  

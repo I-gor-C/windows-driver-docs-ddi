@@ -1,5 +1,5 @@
 ---
-UID: NF.video.VideoPortGetAssociatedDeviceID
+UID: NF:video.VideoPortGetAssociatedDeviceID
 title: VideoPortGetAssociatedDeviceID function
 author: windows-driver-content
 description: The VideoPortGetAssociatedDeviceID function obtains the child ID for a specified device object.
@@ -7,7 +7,7 @@ old-location: display\videoportgetassociateddeviceid.htm
 old-project: display
 ms.assetid: 6c40f98b-4d93-4ee8-8217-51e6f1170cf8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: VideoPortGetAssociatedDeviceID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
 req.irql: PASSIVE_LEVEL
+req.typenames: VIDEO_PORT_SERVICES
 req.product: Windows 10 or later.
 ---
 

@@ -1,5 +1,5 @@
 ---
-UID: NA:
+UID: NA:acpitabl
 ---
 
 # Acpitabl.h header

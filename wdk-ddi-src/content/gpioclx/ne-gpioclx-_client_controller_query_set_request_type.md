@@ -1,5 +1,5 @@
 ---
-UID: NE.gpioclx._CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE
+UID: NE:gpioclx._CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE
 title: _CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE
 author: windows-driver-content
 description: The CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE enumeration type indicates what type of attribute information the GPIO framework extension (GpioClx) is requesting from the GPIO controller driver.
@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 050752CC-FBD6-4EB1-A17F-53C5C569E3FB
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, *PCLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE
+ms.keywords: _CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, *PCLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks.
+req.typenames: *PCLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE
 ---
 
 # _CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE enumeration

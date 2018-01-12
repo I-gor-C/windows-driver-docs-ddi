@@ -1,5 +1,5 @@
 ---
-UID: NS.COMPSTUI._EXTCHKBOX
+UID: NS:compstui._EXTCHKBOX
 title: _EXTCHKBOX
 author: windows-driver-content
 description: The EXTCHKBOX structure is used by CPSUI applications (including printer interface DLLs) for specifying an extended check box, which can be added to a property sheet page option.
@@ -7,8 +7,8 @@ old-location: print\extchkbox.htm
 old-project: print
 ms.assetid: b3b82474-d4e5-467c-93dc-30edac189c66
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _EXTCHKBOX, EXTCHKBOX, PEXTCHKBOX, *PEXTCHKBOX
+ms.date: 1/8/2018
+ms.keywords: _EXTCHKBOX, *PEXTCHKBOX, EXTCHKBOX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PEXTCHKBOX, EXTCHKBOX
 ---
 
 # _EXTCHKBOX structure
@@ -182,7 +183,7 @@ Reserved, must be initialized to zero.
 
 
 ## -remarks
-An extended check box is a CPSUI-defined type of check box that can be associated with an <a href="print.optitem">OPTITEM</a> structure. An OPTITEM structure can have one extended check box or one extended push button associated with it.
+An extended check box is a CPSUI-defined type of check box that can be associated with an <a href="..\compstui\ns-compstui-_optitem.md">OPTITEM</a> structure. An OPTITEM structure can have one extended check box or one extended push button associated with it.
 
 
 ## -requirements
@@ -203,12 +204,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="print.extpush">EXTPUSH</a>
+<a href="..\compstui\ns-compstui-_extpush.md">EXTPUSH</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20EXTCHKBOX structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [print\print]:%20EXTCHKBOX structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

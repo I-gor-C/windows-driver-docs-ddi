@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.SetNextEventIndex
+UID: NF:dbgeng.IDebugControl3.SetNextEventIndex
 title: IDebugControl3::SetNextEventIndex method
 author: windows-driver-content
 description: The SetNextEventIndex method sets the next event for the current target by selecting the event from the static list of events for the target, if such a list exists.
 old-location: debugger\setnexteventindex.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: fbff721a-fdd9-4343-b9a9-92f41fb21ba2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::SetNextEventIndex, SetNextEventIndex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl3::SetNextEventIndex method
@@ -102,7 +103,7 @@ The current event index plus <i>Value</i>.
 </table>
  
 
-The resulting index must be greater than zero and one less than the number of events returned by <a href="debugger.getnumberevents">GetNumberEvents</a>.
+The resulting index must be greater than zero and one less than the number of events returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff547906">GetNumberEvents</a>.
 
 
 ### -param NextIndex [out]
@@ -120,7 +121,7 @@ This method may also return error values.  See <a href="https://msdn.microsoft.c
 
 
 ## -remarks
-If the specified event is the same as the current event, this method does nothing.  Otherwise,  this method sets the execution status of the target to DEBUG_STATUS_GO (and notifies the event callbacks).  When <a href="debugger.waitforevent">WaitForEvent</a> is called, the engine will generate the specified event for the event callbacks and set it as the current event.
+If the specified event is the same as the current event, this method does nothing.  Otherwise,  this method sets the execution status of the target to DEBUG_STATUS_GO (and notifies the event callbacks).  When <a href="https://msdn.microsoft.com/library/windows/hardware/ff561229">WaitForEvent</a> is called, the engine will generate the specified event for the event callbacks and set it as the current event.
 
 This method is only useful if the target offers a list of events.
 
@@ -157,15 +158,15 @@ Header
 <a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
 </dt>
 <dt>
-<a href="debugger.getnumberevents">GetNumberEvents</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547906">GetNumberEvents</a>
 </dt>
 <dt>
-<a href="debugger.getcurrenteventindex">GetCurrentEventIndex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545755">GetCurrentEventIndex</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [Debugger\debugger]:%20IDebugControl3::SetNextEventIndex method%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [debugger\debugger]:%20IDebugControl3::SetNextEventIndex method%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

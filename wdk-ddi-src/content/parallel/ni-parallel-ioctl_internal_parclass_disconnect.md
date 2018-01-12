@@ -1,5 +1,5 @@
 ---
-UID: NI.parallel.IOCTL_INTERNAL_PARCLASS_DISCONNECT
+UID: NI:parallel.IOCTL_INTERNAL_PARCLASS_DISCONNECT
 title: IOCTL_INTERNAL_PARCLASS_DISCONNECT
 author: windows-driver-content
 description: The IOCTL_INTERNAL_PARCLASS_DISCONNECT request disconnects a client from a parallel device.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILGBATOKEN, RILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_PARCLASS_DISCONNECT IOCTL

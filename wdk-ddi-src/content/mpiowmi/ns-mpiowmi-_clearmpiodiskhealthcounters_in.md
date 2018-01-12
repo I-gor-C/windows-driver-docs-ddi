@@ -1,5 +1,5 @@
 ---
-UID: NS.MPIOWMI._CLEARMPIODISKHEALTHCOUNTERS_IN
+UID: NS:mpiowmi._ClearMpioDiskHealthCounters_IN
 title: _ClearMpioDiskHealthCounters_IN
 author: windows-driver-content
 description: The ClearMpioDiskHealthCounters_IN structure is used to provide an input parameter to the ClearMpioDiskHealthCounters method.
@@ -7,8 +7,8 @@ old-location: storage\clearmpiodiskhealthcounters_in.htm
 old-project: storage
 ms.assetid: 1af28545-f43f-47a2-b6a2-64fd7a408687
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _ClearMpioDiskHealthCounters_IN, ClearMpioDiskHealthCounters_IN, *PClearMpioDiskHealthCounters_IN, PClearMpioDiskHealthCounters_IN
+ms.date: 1/10/2018
+ms.keywords: _ClearMpioDiskHealthCounters_IN, ClearMpioDiskHealthCounters_IN, *PClearMpioDiskHealthCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: ClearMpioDiskHealthCounters_IN, *PClearMpioDiskHealthCounters_IN
 ---
 
 # _ClearMpioDiskHealthCounters_IN structure

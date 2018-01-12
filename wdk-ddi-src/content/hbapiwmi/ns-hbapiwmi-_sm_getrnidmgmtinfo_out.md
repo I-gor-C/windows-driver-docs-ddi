@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SM_GETRNIDMGMTINFO_OUT
+UID: NS:hbapiwmi._SM_GetRNIDMgmtInfo_OUT
 title: _SM_GetRNIDMgmtInfo_OUT
 author: windows-driver-content
 description: The SM_GetRNIDMgmtInfo_OUT structure is used to receive output parameters from the SM_GetRNIDMgmtInfo method.
@@ -7,8 +7,8 @@ old-location: storage\sm_getrnidmgmtinfo_out.htm
 old-project: storage
 ms.assetid: e12bd494-4d2a-44a9-95dc-0bc78fa73a97
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SM_GetRNIDMgmtInfo_OUT, SM_GetRNIDMgmtInfo_OUT, PSM_GetRNIDMgmtInfo_OUT, *PSM_GetRNIDMgmtInfo_OUT
+ms.date: 1/10/2018
+ms.keywords: _SM_GetRNIDMgmtInfo_OUT, SM_GetRNIDMgmtInfo_OUT, *PSM_GetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SM_GetRNIDMgmtInfo_OUT, *PSM_GetRNIDMgmtInfo_OUT
 ---
 
 # _SM_GetRNIDMgmtInfo_OUT structure
@@ -56,7 +57,7 @@ typedef struct _SM_GetRNIDMgmtInfo_OUT {
 
 ### -field HBAStatus
 
-The status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>.
+The status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>.
 
 
 ### -field MgmtInfo

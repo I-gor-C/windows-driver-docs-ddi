@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisIfDeregisterProvider
+UID: NF:ndis.NdisIfDeregisterProvider
 title: NdisIfDeregisterProvider function
 author: windows-driver-content
 description: The NdisIfDeregisterProvider function deregisters an interface provider that was previously registered by a call to the NdisIfRegisterProvider function.
 old-location: netvista\ndisifderegisterprovider.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 90e921e3-b384-495b-8cb6-74596d060ec0
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisIfDeregisterProvider
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisIfDeregisterProvider function
@@ -41,7 +42,7 @@ req.irql: PASSIVE_LEVEL
 The 
   <b>NdisIfDeregisterProvider</b> function deregisters an interface provider that was previously registered by
   a call to the 
-  <a href="netvista.ndisifregisterprovider">
+  <a href="..\ndis\nf-ndis-ndisifregisterprovider.md">
   NdisIfRegisterProvider</a> function.
 
 
@@ -61,7 +62,7 @@ VOID NdisIfDeregisterProvider(
 
 A handle that identifies the network interface provider. The caller obtained this handle from a
      previous call to the 
-     <a href="netvista.ndisifregisterprovider">
+     <a href="..\ndis\nf-ndis-ndisifregisterprovider.md">
      NdisIfRegisterProvider</a> function.
 
 
@@ -76,7 +77,7 @@ NDIS drivers call the
 
 The interface provider must ensure that it does not have any interfaces registered when it calls 
     <b>NdisIfDeregisterProvider</b>. To deregister interfaces, the provider must call the 
-    <a href="netvista.ndisifderegisterinterface">
+    <a href="..\ndis\nf-ndis-ndisifderegisterinterface.md">
     NdisIfDeregisterInterface</a> function once for each registered interface.
 
 The provider must not use the provider handle that it passed at the 
@@ -145,7 +146,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_interfaces_function">Irql_Interfaces_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547949">Irql_Interfaces_Function</a>
 </td>
 </tr>
 </table>
@@ -153,15 +154,15 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisifderegisterinterface">NdisIfDeregisterInterface</a>
+<a href="..\ndis\nf-ndis-ndisifderegisterinterface.md">NdisIfDeregisterInterface</a>
 </dt>
 <dt>
-<a href="netvista.ndisifregisterprovider">NdisIfRegisterProvider</a>
+<a href="..\ndis\nf-ndis-ndisifregisterprovider.md">NdisIfRegisterProvider</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisIfDeregisterProvider function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisIfDeregisterProvider function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

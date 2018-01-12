@@ -1,5 +1,5 @@
 ---
-UID: NS.61883._SET_UNIT_DIRECTORY
+UID: NS:61883._SET_UNIT_DIRECTORY
 title: _SET_UNIT_DIRECTORY
 author: windows-driver-content
 description: This structure is used to assign settings for a unit directory.
@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: C4021856-835D-4B4B-9795-4FEEEFAC06B8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SET_UNIT_DIRECTORY, SET_UNIT_DIRECTORY, *PSET_UNIT_DIRECTORY, PSET_UNIT_DIRECTORY
+ms.keywords: _SET_UNIT_DIRECTORY, *PSET_UNIT_DIRECTORY, SET_UNIT_DIRECTORY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PSET_UNIT_DIRECTORY, SET_UNIT_DIRECTORY
 ---
 
 # _SET_UNIT_DIRECTORY structure

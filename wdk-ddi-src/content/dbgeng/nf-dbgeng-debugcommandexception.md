@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.DebugCommandException
+UID: NF:dbgeng.DebugCommandException
 title: DebugCommandException function
 author: windows-driver-content
 description: Specifies a debug command exception.
 old-location: debugger\debugcommandexception.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 6DC67840-B985-45D0-8E81-671C3DC1EBC2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: DebugCommandException
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # DebugCommandException function

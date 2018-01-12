@@ -1,5 +1,5 @@
 ---
-UID: NS.KS.KSGRAPHMANAGER_FUNCTIONTABLE
+UID: NS:ks.KSGRAPHMANAGER_FUNCTIONTABLE
 title: KSGRAPHMANAGER_FUNCTIONTABLE
 author: windows-driver-content
 description: .
@@ -7,8 +7,8 @@ old-location: stream\ksgraphmanager_functiontable.htm
 old-project: stream
 ms.assetid: F077B970-F146-43BC-BB92-A836C8843890
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: KSGRAPHMANAGER_FUNCTIONTABLE, KSGRAPHMANAGER_FUNCTIONTABLE, PKSGRAPHMANAGER_FUNCTIONTABLE
+ms.date: 1/9/2018
+ms.keywords: KSGRAPHMANAGER_FUNCTIONTABLE, PKSGRAPHMANAGER_FUNCTIONTABLE, KSGRAPHMANAGER_FUNCTIONTABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PKSGRAPHMANAGER_FUNCTIONTABLE, KSGRAPHMANAGER_FUNCTIONTABLE
 ---
 
 # KSGRAPHMANAGER_FUNCTIONTABLE structure

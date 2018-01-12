@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsDispatchInvalidDeviceRequest
+UID: NF:ks.KsDispatchInvalidDeviceRequest
 title: KsDispatchInvalidDeviceRequest function
 author: windows-driver-content
 description: The KsDispatchInvalidDeviceRequest function is used in KSDISPATCH_TABLE entries that are not handled and that need to return STATUS_INVALID_DEVICE_REQUEST.
@@ -7,7 +7,7 @@ old-location: stream\ksdispatchinvaliddevicerequest.htm
 old-project: stream
 ms.assetid: 7c30bc5b-2bd5-4db9-acaf-0c0347035ae3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsDispatchInvalidDeviceRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsDispatchInvalidDeviceRequest function
@@ -112,18 +113,18 @@ Library
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksdispatchfastiodevicecontrolfailure">KsDispatchFastIoDeviceControlFailure</a>
+<a href="..\ks\nf-ks-ksdispatchfastiodevicecontrolfailure.md">KsDispatchFastIoDeviceControlFailure</a>
 </dt>
 <dt>
-<a href="stream.ksdispatchfastwritefailure">KsDispatchFastWriteFailure</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561706">KsDispatchFastWriteFailure</a>
 </dt>
 <dt>
-<a href="stream.ksdispatchfastreadfailure">KsDispatchFastReadFailure</a>
+<a href="..\ks\nf-ks-ksdispatchfastreadfailure.md">KsDispatchFastReadFailure</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsDispatchInvalidDeviceRequest function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsDispatchInvalidDeviceRequest function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

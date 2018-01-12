@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DUKMDT.D3DDDI_MAPGPUVIRTUALADDRESS
+UID: NS:d3dukmdt.D3DDDI_MAPGPUVIRTUALADDRESS
 title: D3DDDI_MAPGPUVIRTUALADDRESS
 author: windows-driver-content
 description: D3DDDI_MAPGPUVIRTUALADDRESS is used with pfnMapGpuVirtualAddressCb to map a graphics processing unit (GPU) virtual address ranges to a specific allocation range or to put it to the Invalid or Zero state.
@@ -7,7 +7,7 @@ old-location: display\d3dddi_mapgpuvirtualaddress.htm
 old-project: display
 ms.assetid: A23F5847-0DA9-4F3F-B1C1-DACCA35DBC53
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3DDDI_MAPGPUVIRTUALADDRESS, D3DDDI_MAPGPUVIRTUALADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3DDDI_MAPGPUVIRTUALADDRESS
 ---
 
 # D3DDDI_MAPGPUVIRTUALADDRESS structure
@@ -111,7 +112,7 @@ Specifies the size of the range to map in 4KB pages.
 ### -field Protection
 
 
-<a href="display.d3dddigpuvirtualaddress_protection_type">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a> structure that specifies the protection on the GPU virtual address that is mapped.
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddigpuvirtualaddress_protection_type.md">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a> structure that specifies the protection on the GPU virtual address that is mapped.
 
 <table>
 <tr>
@@ -231,7 +232,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.d3dddigpuvirtualaddress_protection_type">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a>
+<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddigpuvirtualaddress_protection_type.md">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
@@ -247,5 +248,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_MAPGPUVIRTUALADDRESS structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3DDDI_MAPGPUVIRTUALADDRESS structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

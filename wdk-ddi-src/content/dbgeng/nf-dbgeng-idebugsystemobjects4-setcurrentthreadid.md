@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugSystemObjects4.SetCurrentThreadId
+UID: NF:dbgeng.IDebugSystemObjects4.SetCurrentThreadId
 title: IDebugSystemObjects4::SetCurrentThreadId method
 author: windows-driver-content
 description: The SetCurrentThreadId method makes the specified thread the current thread.
 old-location: debugger\setcurrentthreadid.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 965c2fe0-5be5-4036-b649-a25fcc6e2dc2
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4::SetCurrentThreadId, SetCurrentThreadId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects4::SetCurrentThreadId method
@@ -73,7 +74,7 @@ This method may also return other error values.  See <a href="https://msdn.micro
 ## -remarks
 This method may also change the current process, current target, and current computer.
 
-If the thread is changed, the callback <a href="debugger.idebugeventcallbacks_changeenginestate">IDebugEventCallbacks::ChangeEngineState</a> will be called with the DEBUG_CES_CURRENT_THREAD bit set.
+If the thread is changed, the callback <a href="https://msdn.microsoft.com/library/windows/hardware/ff550683">IDebugEventCallbacks::ChangeEngineState</a> will be called with the DEBUG_CES_CURRENT_THREAD bit set.
 
 For more information about threads, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558896">Threads and Processes</a>.  For details on monitoring events, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552239">Monitoring Events</a>.
 

@@ -1,13 +1,13 @@
 ---
-UID: NA:
+UID: NA:wlanihv
 ---
 
 # Wlanihv.h header
 
 ## -description
 
-This header is used by NetVista. For more information, see
-- [NetVista](../_NetVista/index.md)
+This header is used by Networking drivers for Windows Vista and later. For more information, see
+- [Networking drivers for Windows Vista and later](../_netvista/index.md)
 
 Wlanihv.h contain these programming interfaces:
 
@@ -70,16 +70,13 @@ Wlanihv.h contain these programming interfaces:
 | Title   | Description   |
 | ---- |:---- |
 | [_DOT11EXT_APIS structure](ns-wlanihv-_dot11ext_apis.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
-| [_DOT11EXT_APIS structure](ns-wlanihv-_dot11ext_apis~r1.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11EXT_IHV_CONNECTIVITY_PROFILE structure](ns-wlanihv-_dot11ext_ihv_connectivity_profile.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11EXT_IHV_DISCOVERY_PROFILE structure](ns-wlanihv-_dot11ext_ihv_discovery_profile.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11EXT_IHV_DISCOVERY_PROFILE_LIST structure](ns-wlanihv-_dot11ext_ihv_discovery_profile_list.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11EXT_IHV_HANDLERS structure](ns-wlanihv-_dot11ext_ihv_handlers.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
-| [_DOT11EXT_IHV_HANDLERS structure](ns-wlanihv-_dot11ext_ihv_handlers~r1.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11EXT_IHV_SECURITY_PROFILE structure](ns-wlanihv-_dot11ext_ihv_security_profile.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11EXT_IHV_UI_REQUEST structure](ns-wlanihv-_dot11ext_ihv_ui_request.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11EXT_VIRTUAL_STATION_APIS structure](ns-wlanihv-_dot11ext_virtual_station_apis.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
-| [_DOT11EXT_VIRTUAL_STATION_APIS structure](ns-wlanihv-_dot11ext_virtual_station_apis~r1.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11EXT_VIRTUAL_STATION_AP_PROPERTY structure](ns-wlanihv-_dot11ext_virtual_station_ap_property.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11_EAP_RESULT structure](ns-wlanihv-_dot11_eap_result.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |
 | [_DOT11_IHV_VERSION_INFO structure](ns-wlanihv-_dot11_ihv_version_info.md) | Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later. |

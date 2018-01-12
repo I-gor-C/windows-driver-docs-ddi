@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddcdvd.IOCTL_DVD_START_SESSION
+UID: NI:ntddcdvd.IOCTL_DVD_START_SESSION
 title: IOCTL_DVD_START_SESSION
 author: windows-driver-content
 description: Returns an authentication grant ID (AGID) as a DVD session ID, which a caller must pass to the device in all subsequent operations in a DVD session.
@@ -7,8 +7,8 @@ old-location: storage\ioctl_dvd_start_session.htm
 old-project: storage
 ms.assetid: a4010756-b230-4e49-85a4-498f5ebcf785
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: DVD_STRUCTURE_FORMAT, PDVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
+ms.date: 1/10/2018
+ms.keywords: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDVD_STRUCTURE_FORMAT, DVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_DVD_START_SESSION IOCTL
@@ -62,7 +63,7 @@ The driver returns an integer authentication grant ID of type DVD_SESSION_ID in 
 
 
 ### -output-buffer-length
-Length of a <a href="storage.dvd_session_id">DVD_SESSION_ID</a>.
+Length of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553743">DVD_SESSION_ID</a>.
 
 
 ### -in-out-buffer

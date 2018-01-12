@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsDereferenceBusObject
+UID: NF:ks.KsDereferenceBusObject
 title: KsDereferenceBusObject function
 author: windows-driver-content
 description: Dereferences the bus Physical Device Object.
@@ -7,7 +7,7 @@ old-location: stream\ksdereferencebusobject.htm
 old-project: stream
 ms.assetid: 5520685c-c438-460b-aac5-791098e14044
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsDereferenceBusObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsDereferenceBusObject function
@@ -63,7 +64,7 @@ None.
 
 
 ## -remarks
-This is used by filters that use the device header to keep track of the corresponding PnP object stack. This is normally called when closing a filter, if required by the bus for the given device. As an example, a software device would require such a call. This call matches a previous call to <a href="stream.ksreferencebusobject">KsReferenceBusObject</a> when opening the filter instance. The caller must have previously also called <b>KsSetDevicePnpAndBaseObject</b> in order to set the PnP device stack object. This would have been done in the PnP <b>AddDevice</b> function. The function calls the <b>DereferenceDeviceObject</b> method on the previously retrieved interface. The interface itself is released and freed when the device header is freed.
+This is used by filters that use the device header to keep track of the corresponding PnP object stack. This is normally called when closing a filter, if required by the bus for the given device. As an example, a software device would require such a call. This call matches a previous call to <a href="..\ks\nf-ks-ksreferencebusobject.md">KsReferenceBusObject</a> when opening the filter instance. The caller must have previously also called <b>KsSetDevicePnpAndBaseObject</b> in order to set the PnP device stack object. This would have been done in the PnP <b>AddDevice</b> function. The function calls the <b>DereferenceDeviceObject</b> method on the previously retrieved interface. The interface itself is released and freed when the device header is freed.
 
 
 ## -requirements

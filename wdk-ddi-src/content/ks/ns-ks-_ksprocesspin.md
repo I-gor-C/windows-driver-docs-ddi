@@ -1,5 +1,5 @@
 ---
-UID: NS.KS._KSPROCESSPIN
+UID: NS:ks._KSPROCESSPIN
 title: _KSPROCESSPIN
 author: windows-driver-content
 description: The KSPROCESSPIN structure describes the process state of a specific pin.
@@ -7,7 +7,7 @@ old-location: stream\ksprocesspin.htm
 old-project: stream
 ms.assetid: a1625eb2-a38b-4517-b873-f33b5ced8705
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: _KSPROCESSPIN, *PKSPROCESSPIN, KSPROCESSPIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSPROCESSPIN, KSPROCESSPIN
 ---
 
 # _KSPROCESSPIN structure
@@ -64,12 +65,12 @@ typedef struct _KSPROCESSPIN {
 
 ### -field Pin
 
-A pointer to a <a href="stream.kspin">KSPIN</a> structure that the KSPROCESSPIN structure is describing. Everything in the structure refers to this KSPIN.
+A pointer to a <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure that the KSPROCESSPIN structure is describing. Everything in the structure refers to this KSPIN.
 
 
 ### -field StreamPointer
 
-A pointer to a <a href="stream.ksstream_pointer">KSSTREAM_POINTER</a> structure that points into the input stream at the current input location or into the output stream at the current output location. This can be used, for example, by output pins to stamp information onto the associated <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> (ProcessPin-&gt;StreamPointer-&gt;StreamHeader-&gt;Flags=...).
+A pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure that points into the input stream at the current input location or into the output stream at the current output location. This can be used, for example, by output pins to stamp information onto the associated <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> (ProcessPin-&gt;StreamPointer-&gt;StreamHeader-&gt;Flags=...).
 
 
 ### -field InPlaceCounterpart
@@ -148,13 +149,13 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksprocesspin_indexentry">KSPROCESSPIN_INDEXENTRY</a>
+<a href="..\ks\ns-ks-_ksprocesspin_indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
 </dt>
 <dt>
-<a href="stream.kspin">KSPIN</a>
+<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
 </dt>
 <dt>
-<a href="stream.ksstream_pointer">KSSTREAM_POINTER</a>
+<a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
 </dt>
 <dt>
 <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
@@ -164,5 +165,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROCESSPIN structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KSPROCESSPIN structure%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

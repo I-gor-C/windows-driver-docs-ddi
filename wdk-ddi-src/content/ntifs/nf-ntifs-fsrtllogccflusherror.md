@@ -1,5 +1,5 @@
 ---
-UID: NF.ntifs.FsRtlLogCcFlushError
+UID: NF:ntifs.FsRtlLogCcFlushError
 title: FsRtlLogCcFlushError function
 author: windows-driver-content
 description: The FsRtlLogCcFlushError routine logs a lost delayed-write error and displays a dialog box to the user.
@@ -7,7 +7,7 @@ old-location: ifsk\fsrtllogccflusherror.htm
 old-project: ifsk
 ms.assetid: e516758d-d1fe-4977-93bb-f427972fdd3c
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: FsRtlLogCcFlushError
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= APC_LEVEL
+req.typenames: TOKEN_TYPE
 ---
 
 # FsRtlLogCcFlushError function
@@ -74,7 +75,7 @@ A pointer to the section object for the file on which the flush failed.
 
 ### -param FlushError [in]
 
-The error returned by the call to <a href="ifsk.ccflushcache">CcFlushCache</a>.
+The error returned by the call to <a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>.
 
 
 ### -param Flags [in]
@@ -115,7 +116,7 @@ The <b>FsRtlLogCcFlushError</b> routine returns STATUS_SUCCESS on success or ano
 
 
 ## -remarks
-Unless the call includes appropriate <i>Flags</i>, the <b>FsRtlLogCcFlushError</b> routine uses <a href="kernel.ioraiseinformationalharderror">IoRaiseInformationalHardError</a> to display a dialog box to the user, including the specific error and <i>FileName</i>, and uses <a href="kernel.iowriteerrorlogentry">IoWriteErrorLogEntry</a> logs the error. 
+Unless the call includes appropriate <i>Flags</i>, the <b>FsRtlLogCcFlushError</b> routine uses <a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a> to display a dialog box to the user, including the specific error and <i>FileName</i>, and uses <a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a> logs the error. 
 
 If the entire <i>FileName</i> cannot fit within the log buffer, the routine inserts an ellipsis into the file name.
 
@@ -195,18 +196,18 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="ifsk.ccflushcache">CcFlushCache</a>
+<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
 </dt>
 <dt>
-<a href="kernel.ioraiseinformationalharderror">IoRaiseInformationalHardError</a>
+<a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a>
 </dt>
 <dt>
-<a href="kernel.iowriteerrorlogentry">IoWriteErrorLogEntry</a>
+<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlLogCcFlushError routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20FsRtlLogCcFlushError routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

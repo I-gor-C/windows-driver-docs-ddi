@@ -1,13 +1,13 @@
 ---
-UID: NS.RILAPITYPES.RILDELETEMSGPARAMS
+UID: NS:rilapitypes.RILDELETEMSGPARAMS
 title: RILDELETEMSGPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rildeletemsgparams_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 793e9724-fff0-4bdc-a8ed-1e62fa54b4df
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILDELETEMSGPARAMS, RILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS
 req.product: Windows 10 or later.
 ---
 

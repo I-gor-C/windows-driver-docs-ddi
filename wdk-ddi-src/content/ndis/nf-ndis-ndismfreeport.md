@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisMFreePort
+UID: NF:ndis.NdisMFreePort
 title: NdisMFreePort function
 author: windows-driver-content
 description: The NdisMFreePort function frees an NDIS port that was previously allocated with the NdisMAllocatePort function.
 old-location: netvista\ndismfreeport.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 38d53977-ada2-41b9-8b6a-a3bd691f4525
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisMFreePort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMFreePort function
@@ -40,7 +41,7 @@ req.irql: <= DISPATCH_LEVEL
 ## -description
 The 
   <b>NdisMFreePort</b> function frees an NDIS port that was previously allocated with the 
-  <a href="netvista.ndismallocateport">NdisMAllocatePort</a> function.
+  <a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a> function.
 
 
 
@@ -70,9 +71,9 @@ The number of the NDIS port that NDIS should free. The
      <i>PortNumber</i> value is an NDIS_PORT_NUMBER value, which has a ULONG data type. NDIS provided the port
      number in the 
      <b>PortNumber</b> member of the 
-     <a href="netvista.ndis_port_characteristics">
+     <a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">
      NDIS_PORT_CHARACTERISTICS</a> structure when the miniport driver called the 
-     <a href="netvista.ndismallocateport">NdisMAllocatePort</a> function. 
+     <a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a> function. 
      
 
 The port number can be a number from 1 through 0xffffff. You cannot set 
@@ -101,7 +102,7 @@ The port number can be a number from 1 through 0xffffff. You cannot set
 
 ## -remarks
 If a miniport driver allocated a port by calling the 
-    <a href="netvista.ndismallocateport">NdisMAllocatePort</a> function, the driver
+    <a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a> function, the driver
     must free the port before it returns from its 
     <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> function. If the miniport
     driver activated the port by issuing a 
@@ -174,7 +175,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miniport_driver_function">Irql_Miniport_Driver_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>
 </td>
 </tr>
 </table>
@@ -188,21 +189,21 @@ DDI compliance rules
 <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
 </dt>
 <dt>
-<a href="netvista.ndis_port_characteristics">NDIS_PORT_CHARACTERISTICS</a>
+<a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">NDIS_PORT_CHARACTERISTICS</a>
 </dt>
 <dt>
-<a href="netvista.ndismallocateport">NdisMAllocatePort</a>
+<a href="..\ndis\nf-ndis-ndismallocateport.md">NdisMAllocatePort</a>
 </dt>
 <dt>
-<a href="netvista.default_ndis_port">Default NDIS Port</a>
+<a href="https://msdn.microsoft.com/a9edf83f-9226-4c75-a04e-1879a05df24c">Default NDIS Port</a>
 </dt>
 <dt>
-<a href="netvista.freeing_an_ndis_port">Freeing an NDIS Port</a>
+<a href="https://msdn.microsoft.com/ae7b608d-6105-4fdc-b805-0f0101d7c218">Freeing an NDIS Port</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisMFreePort function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisMFreePort function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

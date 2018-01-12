@@ -1,13 +1,13 @@
 ---
-UID: NF.ndis.NdisQueryAdapterInstanceName
+UID: NF:ndis.NdisQueryAdapterInstanceName
 title: NdisQueryAdapterInstanceName function
 author: windows-driver-content
 description: The NdisQueryAdapterInstanceName function retrieves the friendly name of a physical NIC or a virtual adapter that the calling protocol driver is bound to.
 old-location: netvista\ndisqueryadapterinstancename.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: bd6fade6-9b9b-4b38-8e53-c70c40c1165f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: NdisQueryAdapterInstanceName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisQueryAdapterInstanceName function
@@ -62,7 +63,7 @@ A pointer to a caller-supplied NDIS_STRING type that receives a counted Unicode 
      string specifies the friendly name of the interface to which the binding refers. This interface is
      either a physical NIC or a virtual adapter. For Windows 2000 and later, NDIS defines the NDIS_STRING
      type as a 
-     <a href="kernel.unicode_string">UNICODE_STRING</a> type.
+     <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> type.
 
 
 ### -param NdisBindingHandle [in]
@@ -70,7 +71,7 @@ A pointer to a caller-supplied NDIS_STRING type that receives a counted Unicode 
 A handle that identifies the binding to the target physical NIC or virtual adapter of the
      next-lower driver to which the caller is bound. Typically, 
      <i>NdisBindingHandle</i> was returned by the 
-     <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function.
+     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
 
 
 ## -returns
@@ -85,12 +86,12 @@ A protocol driver uses
     to which the protocol driver is bound. The protocol driver specifies the handle to such a NIC or virtual
     adapter in 
     <i>NdisBindingHandle</i> . The protocol driver calls the 
-    <a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a> function to retrieve
+    <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function to retrieve
     this handle.
 
 <b>NdisQueryAdapterInstanceName</b> allocates memory for the string that specifies the friendly name.
     After the caller finishes using this memory, the caller must call the 
-    <a href="netvista.ndisfreememory">NdisFreeMemory</a> function to release the
+    <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a> function to release the
     memory.
 
 Friendly names are intended to help the user quickly and accurately identify a physical NIC or virtual
@@ -163,7 +164,7 @@ DDI compliance rules
 
 </th>
 <td width="70%">
-<a href="devtest.ndis_irql_miscellaneous_function">Irql_Miscellaneous_Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
 </td>
 </tr>
 </table>
@@ -171,18 +172,18 @@ DDI compliance rules
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.ndisfreememory">NdisFreeMemory</a>
+<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
 </dt>
 <dt>
-<a href="netvista.ndisopenadapterex">NdisOpenAdapterEx</a>
+<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
 </dt>
 <dt>
-<a href="kernel.unicode_string">UNICODE_STRING</a>
+<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20NdisQueryAdapterInstanceName function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NdisQueryAdapterInstanceName function%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

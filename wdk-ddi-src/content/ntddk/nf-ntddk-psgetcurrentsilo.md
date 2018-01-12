@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.PsGetCurrentSilo
+UID: NF:ntddk.PsGetCurrentSilo
 title: PsGetCurrentSilo function
 author: windows-driver-content
 description: This routine returns the current silo for the calling thread. First the thread is checked to see if it has been attached to a silo. If not, then the thread is checked to see if it is in a silo.
@@ -7,7 +7,7 @@ old-location: kernel\psgetcurrentsilo.htm
 old-project: kernel
 ms.assetid: 535D7611-8C86-44CF-964C-731882A3AF69
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: PsGetCurrentSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: _IRQL_requires_max_(DISPATCH_LEVEL)
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # PsGetCurrentSilo function

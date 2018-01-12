@@ -1,5 +1,5 @@
 ---
-UID: NE.iddcx.IDDCX_FEATURE_IMPLEMENTATION
+UID: NE:iddcx.IDDCX_FEATURE_IMPLEMENTATION
 title: IDDCX_FEATURE_IMPLEMENTATION
 author: windows-driver-content
 description: Enum used to indicate how a given supported feature is implemented.
@@ -7,7 +7,7 @@ old-location: display\iddcx_feature_implementation.htm
 old-project: display
 ms.assetid: 7bed6940-3f69-4cc0-b746-98cd7441f4b8
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IDDCX_FEATURE_IMPLEMENTATION,
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,9 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
-req.dll: 
-req.irql: _requires_same_
+req.lib: Mscms.lib
+req.dll: Mscms.dll
+req.irql: 
+req.typenames: 
 ---
 
 # IDDCX_FEATURE_IMPLEMENTATION enumeration

@@ -1,5 +1,5 @@
 ---
-UID: NS.D3DKMDDI._DXGKARGCB_NOTIFY_INTERRUPT_DATA
+UID: NS:d3dkmddi._DXGKARGCB_NOTIFY_INTERRUPT_DATA
 title: _DXGKARGCB_NOTIFY_INTERRUPT_DATA
 author: windows-driver-content
 description: The DXGKARGCB_NOTIFY_INTERRUPT_DATA structure describes notification information.
@@ -7,8 +7,8 @@ old-location: display\dxgkargcb_notify_interrupt_data.htm
 old-project: display
 ms.assetid: c71078fb-5666-4038-81a0-de9375bafb5c
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _DXGKARGCB_NOTIFY_INTERRUPT_DATA, DXGKARGCB_NOTIFY_INTERRUPT_DATA
+ms.date: 12/29/2017
+ms.keywords: _DXGKARGCB_NOTIFY_INTERRUPT_DATA, DXGKARGCB_NOTIFY_INTERRUPT_DATA, *IN_CONST_PDXGKARGCB_NOTIFY_INTERRUPT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: DXGKARGCB_NOTIFY_INTERRUPT_DATA
 ---
 
 # _DXGKARGCB_NOTIFY_INTERRUPT_DATA structure
@@ -127,7 +128,7 @@ typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
 
 ### -field InterruptType
 
-[in] A <a href="display.dxgk_interrupt_type">DXGK_INTERRUPT_TYPE</a>-typed value that indicates the type of interrupt that the display miniport driver notifies the GPU scheduler about.
+[in] A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>-typed value that indicates the type of interrupt that the display miniport driver notifies the GPU scheduler about.
 
 
 ### -field DmaCompleted
@@ -260,7 +261,7 @@ Supported starting with Windows 8.1.
 
 ### -field pMultiPlaneOverlayVsyncInfo
 
-[in] A pointer to  a <a href="display.dxgk_multiplane_overlay_vsync_info">DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO</a> structure that specifies an overlay plane to display during a VSync interval.
+[in] A pointer to  a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_vsync_info.md">DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO</a> structure that specifies an overlay plane to display during a VSync interval.
 
 Supported starting with Windows 8.1.
 
@@ -269,7 +270,7 @@ Supported starting with Windows 8.1.
 
 ### -field DisplayOnlyPresentProgress
 
-[in] A <a href="display.dxgkargcb_present_displayonly_progress">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a> structure that provides the progress of a kernel mode display-only driver's (KMDOD) present operation.
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_present_displayonly_progress.md">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a> structure that provides the progress of a kernel mode display-only driver's (KMDOD) present operation.
 
 Supported starting with Windows 8.
 
@@ -303,7 +304,7 @@ Supported starting with Windows 8.1.
 ### -field PrivateDataDriverSize
 
 The size, in bytes, of the block of private data in <b>pPrivateDriverData</b>.
-This value must not be larger than the <b>MaxChunkPrivateDriverDataSize</b> value that the driver reported in the <a href="display.dxgk_miracast_caps">DXGK_MIRACAST_CAPS</a> structure.
+This value must not be larger than the <b>MaxChunkPrivateDriverDataSize</b> value that the driver reported in the <a href="..\dispmprt\ns-dispmprt-_dxgk_miracast_caps.md">DXGK_MIRACAST_CAPS</a> structure.
 
 Supported starting with Windows 8.1.
 
@@ -393,7 +394,7 @@ Supported starting with Windows 10.
 
 ### -field PageFaultFlags
 
-Flags described in <a href="display.dxgk_page_fault_flags">DXGK_PAGE_FAULT_FLAGS</a> enumeration specifying the nature of the fault.
+Flags described in <a href="..\d3dkmdt\ne-d3dkmdt-_dxgk_page_fault_flags.md">DXGK_PAGE_FAULT_FLAGS</a> enumeration specifying the nature of the fault.
 
 Supported starting with Windows 10.
 
@@ -429,7 +430,7 @@ Supported starting with Windows 10.
 ### -field FaultErrorCode
 
 
-<a href="display.dxgk_fault_error_code">DXGK_FAULT_ERROR_CODE</a> structure describing the error.
+<a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_fault_error_code.md">DXGK_FAULT_ERROR_CODE</a> structure describing the error.
 
 Supported starting with Windows 10.
 
@@ -485,7 +486,7 @@ An array of 32-bit values that are reserved for future use.
 
 ### -field Flags
 
-[in] A <a href="display.dxgkcb_notify_interrupt_data_flags">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a> structure that indicates if the display miniport driver provides a physical adapter mask in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> function.
+[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkcb_notify_interrupt_data_flags.md">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a> structure that indicates if the display miniport driver provides a physical adapter mask in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> function.
 
 
 ## -remarks
@@ -520,22 +521,22 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxgk_interrupt_type">DXGK_INTERRUPT_TYPE</a>
+<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>
 </dt>
 <dt>
-<a href="display.dxgk_miracast_caps">DXGK_MIRACAST_CAPS</a>
+<a href="..\dispmprt\ns-dispmprt-_dxgk_miracast_caps.md">DXGK_MIRACAST_CAPS</a>
 </dt>
 <dt>
 <a href="..\d3dukmdt\ns-d3dukmdt-dxgk_miracast_chunk_info.md">DXGK_MIRACAST_CHUNK_INFO</a>
 </dt>
 <dt>
-<a href="display.dxgk_multiplane_overlay_vsync_info">DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_vsync_info.md">DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO</a>
 </dt>
 <dt>
-<a href="display.dxgkargcb_present_displayonly_progress">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_present_displayonly_progress.md">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
 </dt>
 <dt>
-<a href="display.dxgkcb_notify_interrupt_data_flags">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a>
+<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkcb_notify_interrupt_data_flags.md">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
@@ -544,12 +545,12 @@ Header
 <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a>
 </dt>
 <dt>
-<a href="display.dxgk_page_fault_flags">DXGK_PAGE_FAULT_FLAGS</a>
+<a href="..\d3dkmdt\ne-d3dkmdt-_dxgk_page_fault_flags.md">DXGK_PAGE_FAULT_FLAGS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARGCB_NOTIFY_INTERRUPT_DATA structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20DXGKARGCB_NOTIFY_INTERRUPT_DATA structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugBreakpoint2.AddFlags
+UID: NF:dbgeng.IDebugBreakpoint2.AddFlags
 title: IDebugBreakpoint2::AddFlags method
 author: windows-driver-content
 description: The AddFlags method adds flags to a breakpoint.
 old-location: debugger\addflags.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 92161111-5e02-4a97-9656-9a297e9ea1af
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2::AddFlags, AddFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::AddFlags method

@@ -1,13 +1,13 @@
 ---
-UID: NF.dbgeng.IDebugControl3.GetNearInstruction
+UID: NF:dbgeng.IDebugControl3.GetNearInstruction
 title: IDebugControl3::GetNearInstruction method
 author: windows-driver-content
 description: The GetNearInstruction method returns the location of a processor instruction relative to a given location.
 old-location: debugger\getnearinstruction.htm
-old-project: Debugger
+old-project: debugger
 ms.assetid: 76387681-cac6-4c35-9095-28942a856c30
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IDebugControl3, IDebugControl3::GetNearInstruction, GetNearInstruction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
 ---
 
 # IDebugControl3::GetNearInstruction method

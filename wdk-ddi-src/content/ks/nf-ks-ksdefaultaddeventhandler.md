@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsDefaultAddEventHandler
+UID: NF:ks.KsDefaultAddEventHandler
 title: KsDefaultAddEventHandler function
 author: windows-driver-content
 description: The KsDefaultAddEventHandler function is a default routine to handle event 'add' requests.
@@ -7,7 +7,7 @@ old-location: stream\ksdefaultaddeventhandler.htm
 old-project: stream
 ms.assetid: 8e429a48-4e86-4673-aa32-85b640e2f64f
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsDefaultAddEventHandler
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
+req.typenames: 
 ---
 
 # KsDefaultAddEventHandler function
@@ -57,7 +58,7 @@ NTSTATUS KsDefaultAddEventHandler(
 
 ### -param Irp [in]
 
-The event <a href="kernel.irp">IRP</a>. This contains the object into which the event is inserted.
+The event <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>. This contains the object into which the event is inserted.
 
 
 ### -param EventData [in]
@@ -77,7 +78,7 @@ Returns the success or failure of adding the event into the object's event list.
 ## -remarks
 <b>KsDefaultAddEventHandler</b> determines the relevant object from <i>Irp</i> and adds the specified event to the object's event list.
 
-This is functionally equivalent to <a href="stream.ksaddevent">KsAddEvent</a> (or <b>Ks</b><i>Xxx</i><b>AddEvent</b>, see below) for the object that is associated with <i>Irp</i>. Use <b>KsDefaultAddEventHandler</b> from a minidriver-specified <i>AddEvent</i> handler to insert the event into the object's event list.
+This is functionally equivalent to <a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a> (or <b>Ks</b><i>Xxx</i><b>AddEvent</b>, see below) for the object that is associated with <i>Irp</i>. Use <b>KsDefaultAddEventHandler</b> from a minidriver-specified <i>AddEvent</i> handler to insert the event into the object's event list.
 
 
 ## -requirements
@@ -140,24 +141,24 @@ PASSIVE_LEVEL
 ## -see-also
 <dl>
 <dt>
-<a href="stream.ksaddevent">KsAddEvent</a>
+<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
 </dt>
 <dt>
-<a href="stream.ksfilteraddevent">KsFilterAddEvent</a>
+<a href="..\ks\nf-ks-ksfilteraddevent.md">KsFilterAddEvent</a>
 </dt>
 <dt>
-<a href="stream.kspinaddevent">KsPinAddEvent</a>
+<a href="..\ks\nf-ks-kspinaddevent.md">KsPinAddEvent</a>
 </dt>
 <dt>
-<a href="stream.ksgenerateevents">KsGenerateEvents</a>
+<a href="..\ks\nf-ks-ksgenerateevents.md">KsGenerateEvents</a>
 </dt>
 <dt>
-<a href="stream.ksevent_entry">KSEVENT_ENTRY</a>
+<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsDefaultAddEventHandler function%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [stream\stream]:%20KsDefaultAddEventHandler function%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NS.NTDDCDRM._CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
+UID: NS:ntddcdrm._CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
 title: _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
 author: windows-driver-content
 description: The CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure gives the host an approximation of logical unit performance.
@@ -7,8 +7,8 @@ old-location: storage\cdrom_nominal_performance_descriptor.htm
 old-project: storage
 ms.assetid: F931CE79-7070-43B9-BFED-9F3D5B18623E
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, *PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
+ms.date: 1/10/2018
+ms.keywords: _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, *PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
 ---
 
 # _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure
@@ -39,7 +40,7 @@ req.irql:
 
 ## -description
 The <b>CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</b>  structure gives the host an approximation of logical unit
-performance. It is returned by the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a> I/O control request when the request type is <b>CdromPerformanceRequest</b> and the <b>Except</b> field of the <a href="storage.cdrom_performance_header">CDROM_PERFORMANCE_HEADER</a> is false (0).   Separate descriptors are returned for read and write performance requests. The fields in  <b>CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</b> correspond to the similarly named fields in the "Performance Descriptor - Nominal Performance" table described in the MultiMedia Command Set - 6 (MMC-6)
+performance. It is returned by the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a> I/O control request when the request type is <b>CdromPerformanceRequest</b> and the <b>Except</b> field of the <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_header.md">CDROM_PERFORMANCE_HEADER</a> is false (0).   Separate descriptors are returned for read and write performance requests. The fields in  <b>CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR</b> correspond to the similarly named fields in the "Performance Descriptor - Nominal Performance" table described in the MultiMedia Command Set - 6 (MMC-6)
 specification.
 
 
@@ -102,12 +103,12 @@ Header
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
 </dt>
 <dt>
-<a href="storage.cdrom_performance_header">CDROM_PERFORMANCE_HEADER</a>
+<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_header.md">CDROM_PERFORMANCE_HEADER</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

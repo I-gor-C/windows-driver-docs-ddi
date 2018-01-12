@@ -1,13 +1,13 @@
 ---
-UID: NE.rilapitypes.RILSYSTEMSELECTIONPREFSMODE
+UID: NE:rilapitypes.RILSYSTEMSELECTIONPREFSMODE
 title: RILSYSTEMSELECTIONPREFSMODE
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilsystemselectionprefsmode_2.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 10aa6bfb-5ada-42f6-8f89-d8d4066d196b
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILSYSTEMSELECTIONPREFSMODE, RILSYSTEMSELECTIONPREFSMODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILSYSTEMSELECTIONPREFSMODE
 req.product: Windows 10 or later.
 ---
 

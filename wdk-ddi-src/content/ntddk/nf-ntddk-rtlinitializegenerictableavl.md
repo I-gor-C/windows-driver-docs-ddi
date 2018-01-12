@@ -1,5 +1,5 @@
 ---
-UID: NF.ntddk.RtlInitializeGenericTableAvl
+UID: NF:ntddk.RtlInitializeGenericTableAvl
 title: RtlInitializeGenericTableAvl function
 author: windows-driver-content
 description: The RtlInitializeGenericTableAvl routine initializes a generic table using Adelson-Velsky/Landis (AVL) trees.
@@ -7,7 +7,7 @@ old-location: ifsk\rtlinitializegenerictableavl.htm
 old-project: ifsk
 ms.assetid: D89713A8-7CE7-4A87-AED7-62ACF7D1BA06
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: RtlInitializeGenericTableAvl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL (see Remarks section)
+req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 ---
 
 # RtlInitializeGenericTableAvl function
@@ -59,7 +60,7 @@ VOID RtlInitializeGenericTableAvl(
 
 ### -param Table [out]
 
-A pointer to a caller-allocated buffer, which must be at least <b>sizeof</b>(<a href="ifsk.rtl_avl_table">RTL_AVL_TABLE</a>) bytes in size, to contain the initialized generic table structure. 
+A pointer to a caller-allocated buffer, which must be at least <b>sizeof</b>(<a href="..\ntddk\ns-ntddk-_rtl_avl_table.md">RTL_AVL_TABLE</a>) bytes in size, to contain the initialized generic table structure. 
 
 
 ### -param CompareRoutine [in]
@@ -277,33 +278,33 @@ IRQL
 ## -see-also
 <dl>
 <dt>
-<a href="kernel.exinitializefastmutex">ExInitializeFastMutex</a>
+<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
 </dt>
 <dt>
-<a href="ifsk.rtldeleteelementgenerictableavl">RtlDeleteElementGenericTableAvl</a>
+<a href="..\ntddk\nf-ntddk-rtldeleteelementgenerictableavl.md">RtlDeleteElementGenericTableAvl</a>
 </dt>
 <dt>
-<a href="ifsk.rtlenumerategenerictableavl">RtlEnumerateGenericTableAvl</a>
+<a href="..\ntddk\nf-ntddk-rtlenumerategenerictableavl.md">RtlEnumerateGenericTableAvl</a>
 </dt>
 <dt>
-<a href="ifsk.rtlgetelementgenerictable">RtlGetElementGenericTableAvl</a>
+<a href="..\ntddk\nf-ntddk-rtlgetelementgenerictable.md">RtlGetElementGenericTableAvl</a>
 </dt>
 <dt>
-<a href="ifsk.rtlinitializegenerictable">RtlInitializeGenericTable</a>
+<a href="..\ntddk\nf-ntddk-rtlinitializegenerictable.md">RtlInitializeGenericTable</a>
 </dt>
 <dt>
-<a href="ifsk.rtlinsertelementgenerictableavl">RtlInsertElementGenericTableAvl</a>
+<a href="..\ntddk\nf-ntddk-rtlinsertelementgenerictableavl.md">RtlInsertElementGenericTableAvl</a>
 </dt>
 <dt>
-<a href="ifsk.rtllookupelementgenerictableavl">RtlLookupElementGenericTableAvl</a>
+<a href="..\ntddk\nf-ntddk-rtllookupelementgenerictableavl.md">RtlLookupElementGenericTableAvl</a>
 </dt>
 <dt>
-<a href="ifsk.rtlnumbergenerictableelementsavl">RtlNumberGenericTableElementsAvl</a>
+<a href="..\ntddk\nf-ntddk-rtlnumbergenerictableelementsavl.md">RtlNumberGenericTableElementsAvl</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInitializeGenericTableAvl routine%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [ifsk\ifsk]:%20RtlInitializeGenericTableAvl routine%20 RELEASE:%20(1/9/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -1,5 +1,5 @@
 ---
-UID: NI.ntddsysenv.IOCTL_SYSENV_GET_VARIABLE
+UID: NI:ntddsysenv.IOCTL_SYSENV_GET_VARIABLE
 title: IOCTL_SYSENV_GET_VARIABLE
 author: windows-driver-content
 description: Gets the value of the specified system environment variables using SysEnv device.
@@ -7,8 +7,8 @@ old-location: kernel\ioctl_ioctl_sysenv_get_variable.htm
 old-project: kernel
 ms.assetid: B6249E4B-DF79-4B74-AE52-137FEF299169
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _STORAGE_ZONE_GROUP, PSTORAGE_ZONE_GROUP, STORAGE_ZONE_GROUP
+ms.date: 1/4/2018
+ms.keywords: _STORAGE_ZONE_GROUP, STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP
 ---
 
 # IOCTL_SYSENV_GET_VARIABLE IOCTL
@@ -54,19 +55,19 @@ Gets the value of the specified system environment variables using
 ## -ioctlparameters
 
 ### -input-buffer
-A pointer to a <a href="kernel.sysenv_variable">SYSENV_VARIABLE</a> structure that specifies the variable..
+A pointer to a <a href="..\ntddsysenv\ns-ntddsysenv-_sysenv_variable.md">SYSENV_VARIABLE</a> structure that specifies the variable..
 
 
 ### -input-buffer-length
-The size of the <a href="kernel.sysenv_variable">SYSENV_VARIABLE</a> structure.
+The size of the <a href="..\ntddsysenv\ns-ntddsysenv-_sysenv_variable.md">SYSENV_VARIABLE</a> structure.
 
 
 ### -output-buffer
-A pointer to a <a href="kernel.sysenv_value">SYSENV_VALUE</a> structure that receives the value of the variable.
+A pointer to a <a href="..\ntddsysenv\ns-ntddsysenv-_sysenv_value.md">SYSENV_VALUE</a> structure that receives the value of the variable.
 
 
 ### -output-buffer-length
-The size of the <a href="kernel.sysenv_value">SYSENV_VALUE</a> structure.
+The size of the <a href="..\ntddsysenv\ns-ntddsysenv-_sysenv_value.md">SYSENV_VALUE</a> structure.
 
 
 ### -in-out-buffer
@@ -106,18 +107,18 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendinternalioctlotherssynchronously">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendinternalioctlsynchronously">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="wdf.wdfiotargetsendioctlsynchronously">WdfIoTargetSendIoctlSynchronously</a>
+<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IOCTL_SYSENV_GET_VARIABLE control code%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [kernel\kernel]:%20IOCTL_SYSENV_GET_VARIABLE control code%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

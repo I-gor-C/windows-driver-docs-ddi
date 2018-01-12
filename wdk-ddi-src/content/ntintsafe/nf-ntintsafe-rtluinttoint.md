@@ -1,5 +1,5 @@
 ---
-UID: NF.ntintsafe.RtlUIntToInt
+UID: NF:ntintsafe.RtlUIntToInt
 title: RtlUIntToInt function
 author: windows-driver-content
 description: Converts a value of type UINT to a value of type INT.
@@ -7,7 +7,7 @@ old-location: kernel\rtluinttoint.htm
 old-project: kernel
 ms.assetid: 5C595F39-3F47-4B4D-B6C6-6CBC5848AA4B
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 1/4/2018
 ms.keywords: RtlUIntToInt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 # RtlUIntToInt function

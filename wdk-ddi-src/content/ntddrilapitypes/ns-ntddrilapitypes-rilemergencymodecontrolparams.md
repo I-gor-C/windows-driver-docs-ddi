@@ -1,14 +1,14 @@
 ---
-UID: NS.NTDDRILAPITYPES.RILEMERGENCYMODECONTROLPARAMS
+UID: NS:ntddrilapitypes.RILEMERGENCYMODECONTROLPARAMS
 title: RILEMERGENCYMODECONTROLPARAMS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilemergencymodecontrolparams.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: b25ecc96-1ed2-4d8f-8dc8-0fafe58eca24
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: RILEMERGENCYMODECONTROLPARAMS, *LPRILEMERGENCYMODECONTROLPARAMS, LPRILEMERGENCYMODECONTROLPARAMS, RILEMERGENCYMODECONTROLPARAMS
+ms.date: 1/8/2018
+ms.keywords: RILEMERGENCYMODECONTROLPARAMS, *LPRILEMERGENCYMODECONTROLPARAMS, RILEMERGENCYMODECONTROLPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *LPRILEMERGENCYMODECONTROLPARAMS, RILEMERGENCYMODECONTROLPARAMS
 ---
 
 # RILEMERGENCYMODECONTROLPARAMS structure

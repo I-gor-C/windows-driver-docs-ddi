@@ -1,5 +1,5 @@
 ---
-UID: NE.gnssdriver.GNSS_NI_NOTIFICATION_TYPE
+UID: NE:gnssdriver.GNSS_NI_NOTIFICATION_TYPE
 title: GNSS_NI_NOTIFICATION_TYPE
 author: windows-driver-content
 description: GNSS_NI_NOTIFICATION_TYPE enumerates network-initialized (NI) notification types.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: GNSS_NI_NOTIFICATION_TYPE
 ---
 
 # GNSS_NI_NOTIFICATION_TYPE enumeration

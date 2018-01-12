@@ -1,5 +1,5 @@
 ---
-UID: NF.wudfddi.IWDFIoRequest3.SetUserModeDriverInitiatedIo
+UID: NF:wudfddi.IWDFIoRequest3.SetUserModeDriverInitiatedIo
 title: IWDFIoRequest3::SetUserModeDriverInitiatedIo method
 author: windows-driver-content
 description: The SetUserModeDriverInitiatedIo method indicates to kernel-mode drivers that sit below the UMDF driver in the same device stack that a particular request should be treated as though it came from a UMDF driver.
@@ -7,7 +7,7 @@ old-location: wdf\iwdfiorequest3_setusermodedriverinitiatedio.htm
 old-project: wdf
 ms.assetid: F494ED4C-DA2F-4630-B0CA-8B3BE7D26A80
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: IWDFIoRequest3, IWDFIoRequest3::SetUserModeDriverInitiatedIo, SetUserModeDriverInitiatedIo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: WUDFx.dll
 req.irql: 
+req.typenames: POWER_ACTION, *PPOWER_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -68,7 +69,7 @@ This method does not return a value.
 
 
 ## -remarks
-If a UMDF driver calls this method with the <i>IsUserModeDriverInitiated</i> parameter set to <b>TRUE</b>, the framework sets the IRP_UM_DRIVER_INITIATED_IO flag in the <b>Flags</b> member of the WDM <a href="kernel.irp">IRP</a> structure before forwarding the request to kernel-mode drivers.
+If a UMDF driver calls this method with the <i>IsUserModeDriverInitiated</i> parameter set to <b>TRUE</b>, the framework sets the IRP_UM_DRIVER_INITIATED_IO flag in the <b>Flags</b> member of the WDM <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure before forwarding the request to kernel-mode drivers.
 
 A kernel-mode driver that resides below the UMDF driver in the same device stack can check for this flag to determine if the request should be treated as though initiated by a UMDF driver.
 
@@ -78,7 +79,7 @@ A UMDF driver might set the <i>IsUserModeDriverInitiated</i> parameter to <b>TRU
 
 Requests that the driver created on its own are already marked as having originated from a UMDF driver.
 
-The UMDF 2 equivalent of this method is <a href="wdf.wdfrequestsetusermodedriverinitiatedio">WdfRequestSetUserModeDriverInitiatedIo</a>.
+The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetusermodedriverinitiatedio.md">WdfRequestSetUserModeDriverInitiatedIo</a>.
 
 
 ## -requirements
@@ -144,15 +145,15 @@ DLL
 <a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>
 </dt>
 <dt>
-<a href="wdf.iwdfiorequest3_getusermodedriverinitiatedio">GetUserModeDriverInitiatedIo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451341">GetUserModeDriverInitiatedIo</a>
 </dt>
 <dt>
-<a href="wdf.wdfrequestsetusermodedriverinitiatedio">WdfRequestSetUserModeDriverInitiatedIo</a>
+<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetusermodedriverinitiatedio.md">WdfRequestSetUserModeDriverInitiatedIo</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest3::SetUserModeDriverInitiatedIo method%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20IWDFIoRequest3::SetUserModeDriverInitiatedIo method%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

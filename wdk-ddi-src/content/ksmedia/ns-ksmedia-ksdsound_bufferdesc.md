@@ -1,5 +1,5 @@
 ---
-UID: NS.KSMEDIA.KSDSOUND_BUFFERDESC
+UID: NS:ksmedia.KSDSOUND_BUFFERDESC
 title: KSDSOUND_BUFFERDESC
 author: windows-driver-content
 description: The KSDSOUND_BUFFERDESC structure describes a DirectSound buffer.
@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 95b2f2ff-b98f-4210-9a4f-898573679aa7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: KSDSOUND_BUFFERDESC, KSDSOUND_BUFFERDESC, PKSDSOUND_BUFFERDESC, *PKSDSOUND_BUFFERDESC
+ms.keywords: KSDSOUND_BUFFERDESC, *PKSDSOUND_BUFFERDESC, KSDSOUND_BUFFERDESC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PKSDSOUND_BUFFERDESC, KSDSOUND_BUFFERDESC
 ---
 
 # KSDSOUND_BUFFERDESC structure
@@ -125,7 +126,7 @@ Indicates that the buffer has position-notification capability. If this bit is s
 
 ### -field WaveFormatEx
 
-Specifies the wave-data format of the buffer. This member is a structure of type <a href="audio.waveformatex">WAVEFORMATEX</a>.
+Specifies the wave-data format of the buffer. This member is a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a>.
 
 
 ## -remarks
@@ -170,7 +171,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>
 </dt>
 <dt>
-<a href="audio.waveformatex">WAVEFORMATEX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538799">WAVEFORMATEX</a>
 </dt>
 <dt>
 <a href="..\ksmedia\ns-ksmedia-waveformatextensible.md">WAVEFORMATEXTENSIBLE</a>

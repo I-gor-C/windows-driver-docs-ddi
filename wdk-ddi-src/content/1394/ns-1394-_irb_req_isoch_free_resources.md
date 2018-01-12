@@ -1,5 +1,5 @@
 ---
-UID: NS.1394._IRB_REQ_ISOCH_FREE_RESOURCES
+UID: NS:1394._IRB_REQ_ISOCH_FREE_RESOURCES
 title: _IRB_REQ_ISOCH_FREE_RESOURCES
 author: windows-driver-content
 description: This structure contains the fields necessary to carry out a IsochFreeResources request.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: IRB_REQ_ISOCH_FREE_RESOURCES
 ---
 
 # _IRB_REQ_ISOCH_FREE_RESOURCES structure

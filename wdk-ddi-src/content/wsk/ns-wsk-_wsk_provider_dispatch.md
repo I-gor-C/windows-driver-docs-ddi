@@ -1,14 +1,14 @@
 ---
-UID: NS.WSK._WSK_PROVIDER_DISPATCH
+UID: NS:wsk._WSK_PROVIDER_DISPATCH
 title: _WSK_PROVIDER_DISPATCH
 author: windows-driver-content
 description: The WSK_PROVIDER_DISPATCH structure specifies the WSK subsystem's dispatch table of functions that are not specific to a particular socket.
 old-location: netvista\wsk_provider_dispatch.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 864891dd-7db5-4343-9014-c6a284f1fd7e
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _WSK_PROVIDER_DISPATCH, PWSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH, *PWSK_PROVIDER_DISPATCH
+ms.date: 1/8/2018
+ms.keywords: _WSK_PROVIDER_DISPATCH, *PWSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PWSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH
 req.product: Windows 10 or later.
 ---
 
@@ -123,10 +124,10 @@ This member is available beginning with Windows 7.
 
 ## -remarks
 When a WSK application calls the 
-    <a href="netvista.wskcaptureprovidernpi">WskCaptureProviderNPI</a> function, the
+    <a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a> function, the
     WSK subsystem returns a pointer to a WSK_PROVIDER_DISPATCH structure by means of the 
     <b>Dispatch</b> member of the 
-    <a href="netvista.wsk_client_npi">WSK_CLIENT_NPI</a> structure pointed to by the 
+    <a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a> structure pointed to by the 
     <i>WskProviderNpi</i> parameter.
 
 The major and minor version numbers that are contained within the 
@@ -139,7 +140,7 @@ The minor version number that is contained within the
     <b>Version</b> member of this structure might be a higher minor version number than what was requested by
     the WSK application in the 
     <b>Version</b> member of the 
-    <a href="netvista.wsk_client_dispatch">WSK_CLIENT_DISPATCH</a> structure. This
+    <a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a> structure. This
     situation should not cause a problem for the WSK application because higher minor versions of the WSK NPI
     are a strict superset of lower minor versions of the WSK NPI if they have the same major version number.
     The WSK subsystem will specify the remaining members of the WSK_PROVIDER_DISPATCH structure to conform to
@@ -180,7 +181,7 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista.wskcaptureprovidernpi">WskCaptureProviderNPI</a>
+<a href="..\wsk\nf-wsk-wskcaptureprovidernpi.md">WskCaptureProviderNPI</a>
 </dt>
 <dt>
 <a href="..\wsk\nc-wsk-pfn_wsk_control_client.md">WskControlClient</a>
@@ -192,15 +193,15 @@ Header
 <a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_dispatch">WSK_CLIENT_DISPATCH</a>
+<a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a>
 </dt>
 <dt>
-<a href="netvista.wsk_client_npi">WSK_CLIENT_NPI</a>
+<a href="..\wsk\ns-wsk-_wsk_client_npi.md">WSK_CLIENT_NPI</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20WSK_PROVIDER_DISPATCH structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20WSK_PROVIDER_DISPATCH structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

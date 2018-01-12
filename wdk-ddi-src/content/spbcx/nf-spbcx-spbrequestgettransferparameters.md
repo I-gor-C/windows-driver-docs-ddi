@@ -1,5 +1,5 @@
 ---
-UID: NF.spbcx.SpbRequestGetTransferParameters
+UID: NF:spbcx.SpbRequestGetTransferParameters
 title: SpbRequestGetTransferParameters function
 author: windows-driver-content
 description: The SpbRequestGetTransferParameters method retrieves the transfer parameters for an individual transfer in an I/O transfer sequence.
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Spbcxstubs.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
+req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 

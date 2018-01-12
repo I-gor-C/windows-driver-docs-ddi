@@ -1,5 +1,5 @@
 ---
-UID: NS.D3D10UMDDI.D3D11_1DDI_VIDEO_DECODER_CONFIG
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_DECODER_CONFIG
 title: D3D11_1DDI_VIDEO_DECODER_CONFIG
 author: windows-driver-content
 description: Describes the configuration of a Microsoft Direct3D 11 decoder device for Microsoft DirectX Video Acceleration (DXVA).
@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_decoder_config.htm
 old-project: display
 ms.assetid: f96a63b5-a560-4230-b6c9-3e3e98c1b8ab
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
+ms.date: 12/29/2017
 ms.keywords: D3D11_1DDI_VIDEO_DECODER_CONFIG, D3D11_1DDI_VIDEO_DECODER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: D3D11_1DDI_VIDEO_DECODER_CONFIG
 ---
 
 # D3D11_1DDI_VIDEO_DECODER_CONFIG structure
@@ -75,7 +76,7 @@ typedef struct D3D11_1DDI_VIDEO_DECODER_CONFIG {
             Defines the encryption protocol type for bit-stream data buffers. If no encryption is applied, the value is <b>DXVA_NoEncrypt</b> (a GUID name defined in Dxva.h). If <b>ConfigBitstreamRaw</b> is 0, the value must be <b>DXVA_NoEncrypt</b>.
           
 
-If set to <b>D3DWDDM2_0DDI_DECODER_ENCRYPTION_HW_CENC</b>, this indicates that the following parameters will be passed in to the <a href="display.videodecoderbeginframe">VideoDecoderBeginFrame</a> call:
+If set to <b>D3DWDDM2_0DDI_DECODER_ENCRYPTION_HW_CENC</b>, this indicates that the following parameters will be passed in to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videodecoderbeginframe.md">VideoDecoderBeginFrame</a> call:
 
 <table>
 <tr>
@@ -282,7 +283,7 @@ If <b>ConfigResidDiffHost</b> is 1 and <b>ConfigSpatialResid8</b> is 1, the host
 ### -field Config4GroupedCoefs
 
 
-            If the value is 1, transform coefficients for off-host IDCT will be sent using the <a href="display.dxva_tcoef4group">DXVA_TCoef4Group</a> structure. If the value is 0, the <a href="display.dxva_tcoefsingle">DXVA_TCoefSingle</a> structure is used. The value must be 0 if <b>ConfigResidDiffAccelerator</b> is 0 or if <b>ConfigHostInverseScan</b> is 1.
+            If the value is 1, transform coefficients for off-host IDCT will be sent using the <a href="..\dxva\ns-dxva-_dxva_tcoef4group.md">DXVA_TCoef4Group</a> structure. If the value is 0, the <a href="..\dxva\ns-dxva-_dxva_tcoefsingle.md">DXVA_TCoefSingle</a> structure is used. The value must be 0 if <b>ConfigResidDiffAccelerator</b> is 0 or if <b>ConfigHostInverseScan</b> is 1.
           
 
 
@@ -341,10 +342,10 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="display.dxva_tcoef4group">DXVA_TCoef4Group</a>
+<a href="..\dxva\ns-dxva-_dxva_tcoef4group.md">DXVA_TCoef4Group</a>
 </dt>
 <dt>
-<a href="display.dxva_tcoefsingle">DXVA_TCoefSingle</a>
+<a href="..\dxva\ns-dxva-_dxva_tcoefsingle.md">DXVA_TCoefSingle</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_video_decoder_begin_frame_crypto_session.md">D3DWDDM2_0DDI_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION</a>
@@ -354,5 +355,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1DDI_VIDEO_DECODER_CONFIG structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [display\display]:%20D3D11_1DDI_VIDEO_DECODER_CONFIG structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

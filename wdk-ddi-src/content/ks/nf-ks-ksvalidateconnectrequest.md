@@ -1,5 +1,5 @@
 ---
-UID: NF.ks.KsValidateConnectRequest
+UID: NF:ks.KsValidateConnectRequest
 title: KsValidateConnectRequest function
 author: windows-driver-content
 description: The KsValidateConnectRequest function validates a connection request and returns a pointer to the connection structure associated with the request.This function can only be called at PASSIVE_LEVEL.
@@ -7,7 +7,7 @@ old-location: stream\ksvalidateconnectrequest.htm
 old-project: stream
 ms.assetid: 64343a8a-9629-469e-95a3-b9c140cdd324
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/9/2018
 ms.keywords: KsValidateConnectRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
+req.typenames: 
 ---
 
 # KsValidateConnectRequest function

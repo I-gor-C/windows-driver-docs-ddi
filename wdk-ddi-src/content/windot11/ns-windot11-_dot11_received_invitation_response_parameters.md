@@ -1,14 +1,14 @@
 ---
-UID: NS.WINDOT11._DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS
+UID: NS:windot11._DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS
 title: _DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS
 author: windows-driver-content
 description: The parameters for a received invitation response are specified in a DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure. This structure is sent with an NDIS_STATUS_DOT11_WFD_RECEIVED_INVITATION_RESPONSE indication.
 old-location: netvista\_dot11_received_invitation_response_parameters.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 9DAFC0E0-A3F9-4EF1-8FD1-3213AA1CBD18
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS
+ms.date: 1/8/2018
+ms.keywords: _DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS
 req.product: Windows 10 or later.
 ---
 
@@ -137,12 +138,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="netvista._dot11_received_invitation_response_parameters">DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS</a>
+<a href="..\windot11\ns-windot11-_dot11_received_invitation_response_parameters.md">DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [NetVista\netvista]:%20DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

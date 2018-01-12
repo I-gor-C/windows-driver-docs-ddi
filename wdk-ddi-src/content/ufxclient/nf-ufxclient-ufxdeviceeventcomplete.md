@@ -1,13 +1,13 @@
 ---
-UID: NF.ufxclient.UfxDeviceEventComplete
+UID: NF:ufxclient.UfxDeviceEventComplete
 title: UfxDeviceEventComplete function
 author: windows-driver-content
 description: Informs UFX that the client driver has completed processing a UFX callback function.
 old-location: buses\ufxdeviceeventcomplete.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: DAC18721-5747-4D5E-8A25-24B80DE77C99
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/4/2018
 ms.keywords: UfxDeviceEventComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
+req.typenames: UFX_HARDWARE_FAILURE_CONTEXT, *PUFX_HARDWARE_FAILURE_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -57,7 +58,7 @@ VOID UfxDeviceEventComplete(
 
 ### -param UfxDevice [in]
 
-A handle to a UFX device object that the driver created by calling <a href="buses.ufxdevicecreate">UfxDeviceCreate</a>.
+A handle to a UFX device object that the driver created by calling <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a>.
 
 
 ### -param Status [in]

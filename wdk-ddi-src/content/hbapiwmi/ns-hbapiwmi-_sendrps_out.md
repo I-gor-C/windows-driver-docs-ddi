@@ -1,5 +1,5 @@
 ---
-UID: NS.HBAPIWMI._SENDRPS_OUT
+UID: NS:hbapiwmi._SendRPS_OUT
 title: _SendRPS_OUT
 author: windows-driver-content
 description: The SendRPS_OUT structure is used to report the output parameter data of the SendRPS WMI method to the WMI client.
@@ -7,8 +7,8 @@ old-location: storage\sendrps_out.htm
 old-project: storage
 ms.assetid: 5d243704-7424-4738-b122-6b9467eb5916
 ms.author: windowsdriverdev
-ms.date: 12/15/2017
-ms.keywords: _SendRPS_OUT, *PSendRPS_OUT, SendRPS_OUT, PSendRPS_OUT
+ms.date: 1/10/2018
+ms.keywords: _SendRPS_OUT, SendRPS_OUT, *PSendRPS_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: SendRPS_OUT, *PSendRPS_OUT
 ---
 
 # _SendRPS_OUT structure
@@ -38,7 +39,7 @@ req.irql:
 
 
 ## -description
-The SendRPS_OUT structure is used to report the output parameter data of the <a href="storage.sendrps">SendRPS</a> WMI method to the WMI client.
+The SendRPS_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565505">SendRPS</a> WMI method to the WMI client.
 
 
 
@@ -58,7 +59,7 @@ struct SendRPS_OUT {
 
 ### -field HBAStatus
 
-Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="storage.hba_status">HBA_STATUS</a>. 
+Contains the status of the operation. For a list of allowed values and their descriptions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>. 
 
 
 ### -field TotalRspBufferSize
@@ -77,7 +78,7 @@ Contains the results of the RPS command.
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SendRPS_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="storage.msfc_hbaadaptermethods_wmi_class">MSFC_HBAAdapterMethods WMI Class</a>.
+The WMI tool suite generates a declaration of the SendRPS_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
 
 ## -requirements
@@ -98,12 +99,12 @@ Header
 ## -see-also
 <dl>
 <dt>
-<a href="storage.sendrps">SendRPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565505">SendRPS</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SendRPS_OUT structure%20 RELEASE:%20(12/15/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [storage\storage]:%20SendRPS_OUT structure%20 RELEASE:%20(1/10/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

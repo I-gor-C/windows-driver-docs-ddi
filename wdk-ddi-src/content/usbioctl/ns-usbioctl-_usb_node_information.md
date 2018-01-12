@@ -1,14 +1,14 @@
 ---
-UID: NS.USBIOCTL._USB_NODE_INFORMATION
+UID: NS:usbioctl._USB_NODE_INFORMATION
 title: _USB_NODE_INFORMATION
 author: windows-driver-content
 description: The USB_NODE_INFORMATION structure is used with the IOCTL_USB_GET_NODE_INFORMATION I/O control request to retrieve information about a parent device.
 old-location: buses\usb_node_information.htm
-old-project: UsbRef
+old-project: usbref
 ms.assetid: 56d30c25-00e7-4edf-af06-64519eb5f755
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _USB_NODE_INFORMATION, *PUSB_NODE_INFORMATION, PUSB_NODE_INFORMATION, USB_NODE_INFORMATION
+ms.date: 1/4/2018
+ms.keywords: _USB_NODE_INFORMATION, USB_NODE_INFORMATION, *PUSB_NODE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
+req.typenames: USB_NODE_INFORMATION, *PUSB_NODE_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -60,7 +61,7 @@ typedef struct _USB_NODE_INFORMATION {
 
 ### -field NodeType
 
-A <a href="buses.usb_hub_node">USB_HUB_NODE</a> enumerator that indicates whether the parent device is a hub or a non-hub composite device.
+A <a href="..\usbioctl\ne-usbioctl-_usb_hub_node.md">USB_HUB_NODE</a> enumerator that indicates whether the parent device is a hub or a non-hub composite device.
 
 
 ### -field u
@@ -70,12 +71,12 @@ The members of the <b>u</b> union are as follows:
 
 ### -field HubInformation
 
-A <a href="buses.usb_hub_information">USB_HUB_INFORMATION</a> structure that contains information about a parent hub device.
+A <a href="..\usbioctl\ns-usbioctl-_usb_hub_information.md">USB_HUB_INFORMATION</a> structure that contains information about a parent hub device.
 
 
 ### -field MiParentInformation
 
-A <a href="buses.usb_mi_parent_information">USB_MI_PARENT_INFORMATION</a> structure that contains information about a parent non-hub, composite device.
+A <a href="..\usbioctl\ns-usbioctl-_usb_mi_parent_information.md">USB_MI_PARENT_INFORMATION</a> structure that contains information about a parent non-hub, composite device.
 
 </dd>
 </dl>
@@ -105,21 +106,21 @@ Header
 <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_information.md">IOCTL_USB_GET_NODE_INFORMATION</a>
 </dt>
 <dt>
-<a href="buses.usb_hub_information">USB_HUB_INFORMATION</a>
+<a href="..\usbioctl\ns-usbioctl-_usb_hub_information.md">USB_HUB_INFORMATION</a>
 </dt>
 <dt>
-<a href="buses.usb_mi_parent_information">USB_MI_PARENT_INFORMATION</a>
+<a href="..\usbioctl\ns-usbioctl-_usb_mi_parent_information.md">USB_MI_PARENT_INFORMATION</a>
 </dt>
 <dt>
-<a href="buses.usb_hub_node">USB_HUB_NODE</a>
+<a href="..\usbioctl\ne-usbioctl-_usb_hub_node.md">USB_HUB_NODE</a>
 </dt>
 <dt>
-<a href="buses.usb_structures_and_enumerations">USB Structures</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 </dt>
 </dl>
  
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [UsbRef\buses]:%20USB_NODE_INFORMATION structure%20 RELEASE:%20(12/14/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [usbref\buses]:%20USB_NODE_INFORMATION structure%20 RELEASE:%20(1/4/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

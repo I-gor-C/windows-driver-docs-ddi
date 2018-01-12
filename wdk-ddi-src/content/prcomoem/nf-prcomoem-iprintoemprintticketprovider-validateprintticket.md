@@ -1,5 +1,5 @@
 ---
-UID: NF.prcomoem.IPrintOemPrintTicketProvider.ValidatePrintTicket
+UID: NF:prcomoem.IPrintOemPrintTicketProvider.ValidatePrintTicket
 title: IPrintOemPrintTicketProvider::ValidatePrintTicket method
 author: windows-driver-content
 description: The IPrintOemPrintTicketProvider::ValidatePrintTicket method validates a print ticket.
@@ -7,7 +7,7 @@ old-location: print\iprintoemprintticketprovider_validateprintticket.htm
 old-project: print
 ms.assetid: 359f1a4b-8bcc-4c4a-97d7-6515993765e3
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: IPrintOemPrintTicketProvider, IPrintOemPrintTicketProvider::ValidatePrintTicket, ValidatePrintTicket
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: OEMPTOPTS, *POEMPTOPTS
 req.product: Windows 10 or later.
 ---
 

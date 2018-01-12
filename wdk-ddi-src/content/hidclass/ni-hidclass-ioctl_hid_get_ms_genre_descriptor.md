@@ -1,5 +1,5 @@
 ---
-UID: NI.hidclass.IOCTL_HID_GET_MS_GENRE_DESCRIPTOR
+UID: NI:hidclass.IOCTL_HID_GET_MS_GENRE_DESCRIPTOR
 title: IOCTL_HID_GET_MS_GENRE_DESCRIPTOR
 author: windows-driver-content
 description: The IOCTL_HID_GET_MS_GENRE_DESCRIPTOR request is used for retrieving the genre descriptor for the device.
@@ -7,8 +7,8 @@ old-location: hid\ioctl_hid_get_ms_genre_descriptor.htm
 old-project: hid
 ms.assetid: C83C6086-369D-41DB-BEB5-33B3A0C1C0AE
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT, PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT
+ms.date: 12/21/2017
+ms.keywords: _HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_GET_MS_GENRE_DESCRIPTOR IOCTL

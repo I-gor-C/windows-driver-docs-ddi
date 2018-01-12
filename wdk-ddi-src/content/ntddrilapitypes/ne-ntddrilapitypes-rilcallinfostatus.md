@@ -1,13 +1,13 @@
 ---
-UID: NE.ntddrilapitypes.RILCALLINFOSTATUS
+UID: NE:ntddrilapitypes.RILCALLINFOSTATUS
 title: RILCALLINFOSTATUS
 author: windows-driver-content
 description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 old-location: netvista\rilcallinfostatus.htm
-old-project: NetVista
+old-project: netvista
 ms.assetid: 0f5806e8-a7be-4703-8847-abea2d0cb2e8
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/8/2018
 ms.keywords: RILCALLINFOSTATUS, RILCALLINFOSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: RILCALLINFOSTATUS
 ---
 
 # RILCALLINFOSTATUS enumeration

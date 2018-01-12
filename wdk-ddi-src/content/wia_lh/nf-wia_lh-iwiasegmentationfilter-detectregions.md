@@ -1,13 +1,13 @@
 ---
-UID: NF.wia_lh.IWiaSegmentationFilter.DetectRegions
+UID: NF:wia_lh.IWiaSegmentationFilter.DetectRegions
 title: IWiaSegmentationFilter::DetectRegions method
 author: windows-driver-content
 description: The IWiaSegmentationFilter::DetectRegions method determines the subregions of an image laid out on the flatbed platen so that each subregion can be acquired into a separate image item.
 old-location: image\iwiasegmentationfilter_detectregions.htm
-old-project: Image
+old-project: image
 ms.assetid: 53ad769e-38b5-463d-9fa0-053c2215cc81
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/10/2018
 ms.keywords: IWiaSegmentationFilter, IWiaSegmentationFilter::DetectRegions, DetectRegions
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,6 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
+req.typenames: *PBMP_IMAGE_INFO, BMP_IMAGE_INFO
 req.product: Windows 10 or later.
 ---
 
