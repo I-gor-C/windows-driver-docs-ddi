@@ -7,7 +7,7 @@ old-location: netvista\rilradiopresence_2.htm
 old-project: netvista
 ms.assetid: 0fd02d1a-e6c4-418d-b890-9b60f4f0c1ce
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRADIOPRESENCE, RILRADIOPRESENCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILRADIOPRESENCE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

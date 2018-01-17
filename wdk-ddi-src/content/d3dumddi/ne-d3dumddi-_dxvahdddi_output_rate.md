@@ -75,31 +75,6 @@ A value that specifies that the driver should use a custom output rate for the f
 For more information about output rate, see <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a> and <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_data.md">DXVAHDDDI_STREAM_DATA</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-DXVAHDDDI_OUTPUT_RATE is supported beginning with the Windows 7 operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

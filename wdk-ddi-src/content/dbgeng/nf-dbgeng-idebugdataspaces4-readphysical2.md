@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::ReadPhysical2 method
@@ -146,32 +146,6 @@ This method is only available in kernel-mode debugging.
 
 The flags DEBUG_PHYSICAL_CACHED, DEBUG_PHYSICAL_UNCACHED, and DEBUG_PHYSICAL_WRITE_COMBINED can only be used when the target is a live kernel target that is being debugged in the standard way (using a COM port, 1394 bus, or named pipe).
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

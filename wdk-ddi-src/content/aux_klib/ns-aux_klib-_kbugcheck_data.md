@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9fecf57b-e77a-458e-80ce-118eed2d48b4
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _KBUGCHECK_DATA, KBUGCHECK_DATA, *PKBUGCHECK_DATA
+ms.keywords: _KBUGCHECK_DATA, *PKBUGCHECK_DATA, KBUGCHECK_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: KBUGCHECK_DATA, *PKBUGCHECK_DATA
+req.typenames: *PKBUGCHECK_DATA, KBUGCHECK_DATA
 ---
 
 # _KBUGCHECK_DATA structure
@@ -92,21 +92,6 @@ Bug check parameter 4. For more information about this parameter, see specific <
 ## -remarks
 The <b>KBUGCHECK_DATA</b> structure is used as a parameter to <a href="..\aux_klib\nf-aux_klib-auxklibgetbugcheckdata.md">AuxKlibGetBugCheckData</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Aux_klib.h (include Aux_klib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

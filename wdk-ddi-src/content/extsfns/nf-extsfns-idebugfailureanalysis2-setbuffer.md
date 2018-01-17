@@ -87,32 +87,6 @@ If this method finds an <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-A
 If this method does not find an <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B91C4F91B0">FA entry</a> with the specified tag, it creates a new FA entry with that tag, and it associates the tag with the data type specified by <i>EntryType</i>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Extsfns.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -7,7 +7,7 @@ old-location: netvista\rilchangecallbarringpasswordparams.htm
 old-project: netvista
 ms.assetid: 9b90f85e-091f-465d-a6e2-fa4ad66489ff
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCHANGECALLBARRINGPASSWORDPARAMS, *LPRILCHANGECALLBARRINGPASSWORDPARAMS, RILCHANGECALLBARRINGPASSWORDPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,19 +74,3 @@ typedef struct _RILCHANGECALLBARRINGPASSWORDPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

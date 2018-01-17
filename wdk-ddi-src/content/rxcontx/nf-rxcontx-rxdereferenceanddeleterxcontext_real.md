@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: *LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS
+req.typenames: RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -77,42 +77,6 @@ If the <b>NumberOfActiveContexts</b> member of the associated RDBSS_DEVICE_OBJEC
 
 If the RX_CONTEXT structure was allocated from non-page pool memory (the <b>Flags</b> member of the RX_CONTEXT structure has the RX_CONTEXT_FLAG_FROM_POOL option set), then the RX_CONTEXT structure pointed to by the <i>RxContext</i> parameter will be returned to an internal RDBSS lookaside list or to non-paged pool memory. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rxcontx.h (include Rxprocs.h and rxcontx.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

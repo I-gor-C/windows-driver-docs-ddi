@@ -91,7 +91,7 @@ A user handle is a handle that is opened by a user-mode application, or by a ker
 
 The <b>ZwClose</b> routine is similar to <b>ObCloseHandle</b> but can close only kernel handles. The call <b>ZwClose</b>(<i>hObject</i>), which closes kernel handle <i>hObject</i>, has the same effect as the call <b>ObCloseHandle</b>(<i>hObject</i>, <b>KernelMode</b>). For more information about closing a kernel handle, see <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>.
 
-To determine whether a handle is a kernel handle or a user handle,  a driver that receives a handle  can call the <a href="..\wdm\nf-wdm-exgetpreviousmode.md">ExGetPreviousMode</a> routine. Or, the driver can read the <b>RequestorMode</b> field from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure that describes the I/O request. The I/O manager sets the <b>RequestorMode</b> field to the previous processor mode of the thread that requested the I/O operation.
+To determine whether a handle is a kernel handle or a user handle,  a driver that receives a handle  can call the <a href="..\wdm\nf-wdm-exgetpreviousmode.md">ExGetPreviousMode</a> routine. Or, the driver can read the <b>RequestorMode</b> field from the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure that describes the I/O request. The I/O manager sets the <b>RequestorMode</b> field to the previous processor mode of the thread that requested the I/O operation.
 
 Callers of <b>ObCloseHandle</b> should not assume that this routine automatically waits for all pending I/O operations to complete before it returns.
 
@@ -100,81 +100,13 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 <b>ObCloseHandle</b> is not declared in a header file prior to Windows 7. To use this routine in your driver, include the following function declaration in your driver code:
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntoskrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntoskrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\wdm\nf-wdm-exgetpreviousmode.md">ExGetPreviousMode</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>

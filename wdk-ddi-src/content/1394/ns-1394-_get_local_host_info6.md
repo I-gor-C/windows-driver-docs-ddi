@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: d5da15b9-a020-42bf-8876-cec9edf3119f
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GET_LOCAL_HOST_INFO6, GET_LOCAL_HOST_INFO6, *PGET_LOCAL_HOST_INFO6
+ms.keywords: _GET_LOCAL_HOST_INFO6, *PGET_LOCAL_HOST_INFO6, GET_LOCAL_HOST_INFO6
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: GET_LOCAL_HOST_INFO6, *PGET_LOCAL_HOST_INFO6
+req.typenames: *PGET_LOCAL_HOST_INFO6, GET_LOCAL_HOST_INFO6
 ---
 
 # _GET_LOCAL_HOST_INFO6 structure
@@ -104,21 +104,6 @@ Pointer to the buffer where the bus driver returns the requested CSR data.
 ## -remarks
 When submitted in a REQUEST_GET_LOCAL_HOST_INFO request, if the <b>CsrDataLength</b> is smaller than the size of the requested data, STATUS_INVALID_BUFFER_SIZE is returned. In this case, the correct buffer size is filled in the <b>CsrDataLength</b> member.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

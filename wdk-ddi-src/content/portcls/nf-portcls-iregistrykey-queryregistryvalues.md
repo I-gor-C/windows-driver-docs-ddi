@@ -83,42 +83,6 @@ This method uses caller-supplied callback routines to enumerate the values of a 
 The <i>QueryTable</i> parameter points to an array of RTL_QUERY_REGISTRY_TABLE structures. The first member of this structure, <b>QueryRoutine</b>, is a function pointer to a caller-supplied callback routine. For more information, see <a href="..\wdm\nf-wdm-rtlqueryregistryvalues.md">RtlQueryRegistryValues</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

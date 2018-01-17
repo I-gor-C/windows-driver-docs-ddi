@@ -72,52 +72,6 @@ The returned base address has the same offset as the virtual address in the MDL.
 Windows 2000 issues a bug check if the attempt to map to system space fails. (Therefore, you should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a> instead). In Windows 98, this routine returns <b>NULL</b> in case of failure.  
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Obsolete for Windows 2000 and later versions of Windows, and for Windows Me. This routine is supported only for WDM drivers that must run on Windows 98. Otherwise, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff554559">MmGetSystemAddressForMdlSafe</a>.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

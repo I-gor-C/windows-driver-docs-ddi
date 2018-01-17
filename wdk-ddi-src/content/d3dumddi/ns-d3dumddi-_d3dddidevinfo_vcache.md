@@ -121,31 +121,6 @@ Vertex-cache-based optimization
 <b>Direct3D runtime version 8.1 only.</b> The Direct3D runtime calls the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getinfo.md">GetInfo</a> function to obtain vertex-cache information from the driver. In this <b>GetInfo</b> call, the runtime passes the D3DDDIDEVINFOID_VCACHE flag in the <i>DevInfoID</i> parameter. The driver specifies vertex-cache information in a D3DDDIDEVINFO_VCACHE structure and returns it at the <i>pDevInfoStruct</i> parameter.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

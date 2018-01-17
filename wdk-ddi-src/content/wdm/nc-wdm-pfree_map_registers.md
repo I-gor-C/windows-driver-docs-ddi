@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 0326229f-cf02-4368-bc32-7fbed118714b
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords: KSYNCHRONIZE_ROUTINE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -87,61 +87,6 @@ None
 
 When the driver of a bus-master device has completed the current packet-based DMA transfer request, it calls <b>FreeMapRegisters</b> to release the map registers previously allocated by a call to <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a> and retained because its <i>AdapterControl</i> routine returned <b>DeallocateObjectKeepRegisters</b>. The driver must call <b>FreeMapRegisters</b> after calling <a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547743">IrqlDispatch</a>, <a href="https://msdn.microsoft.com/93ABD54D-4D63-495A-917B-A387C9353969">IrqlDispatch(storport)</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

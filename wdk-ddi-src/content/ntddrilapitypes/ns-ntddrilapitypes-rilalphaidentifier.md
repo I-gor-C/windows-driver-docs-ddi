@@ -7,7 +7,7 @@ old-location: netvista\rilalphaidentifier.htm
 old-project: netvista
 ms.assetid: 2f7e8df5-31ae-4e1a-8dbb-89bfe8fc422d
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILALPHAIDENTIFIER, *LPRILALPHAIDENTIFIER, RILALPHAIDENTIFIER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef struct _RILALPHAIDENTIFIER {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

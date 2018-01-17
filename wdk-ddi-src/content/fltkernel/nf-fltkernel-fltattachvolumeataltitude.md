@@ -31,7 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: EXpsFontRestriction
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltAttachVolumeAtAltitude function
@@ -128,53 +128,6 @@ To compare the altitudes of two minifilter driver instances attached to the same
 
 To detach a minifilter driver instance from a volume, call <a href="..\fltkernel\nf-fltkernel-fltdetachvolume.md">FltDetachVolume</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>FltMgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

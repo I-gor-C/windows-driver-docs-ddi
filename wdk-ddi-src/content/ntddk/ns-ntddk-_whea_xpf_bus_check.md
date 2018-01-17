@@ -337,32 +337,6 @@ A ULONGLONG representation of the contents of the WHEA_XPF_BUS_CHECK union.
 If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure contains WHEA_BUSCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_BUS_CHECK union.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

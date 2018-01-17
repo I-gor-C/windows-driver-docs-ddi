@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: CCFE4B09-F942-4D89-9013-159066D8E37A
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_DISPOSITION_INFORMATION_EX, FILE_DISPOSITION_INFORMATION_EX, *PFILE_DISPOSITION_INFORMATION_EX
+ms.keywords: _FILE_DISPOSITION_INFORMATION_EX, *PFILE_DISPOSITION_INFORMATION_EX, FILE_DISPOSITION_INFORMATION_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: FILE_DISPOSITION_INFORMATION_EX, *PFILE_DISPOSITION_INFORMATION_EX
+req.typenames: *PFILE_DISPOSITION_INFORMATION_EX, FILE_DISPOSITION_INFORMATION_EX
 ---
 
 # _FILE_DISPOSITION_INFORMATION_EX structure
@@ -101,21 +101,6 @@ The caller must have DELETE access to a given file to call ZwSetInformationFile 
 
 Normally a file marked for deletion is not actually deleted until all open handles for the file have been closed and the link count for the file is zero.  When marking a file for deletion using <b>FILE_DISPOSITION_POSIX_SEMANTICS</b>, the link gets removed from the visible namespace as soon as the POSIX delete handle has been closed, but the file’s data streams remain accessible by other existing handles until the last handle has been closed.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

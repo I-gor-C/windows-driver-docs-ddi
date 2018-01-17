@@ -31,7 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: <= APC_LEVEL
-req.typenames: EXpsFontRestriction
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltSetStreamContext function
@@ -143,74 +143,6 @@ To delete a stream context, call <a href="..\fltkernel\nf-fltkernel-fltdeletestr
 
 For more information about context reference counting, see <a href="https://msdn.microsoft.com/9ac3aedb-e057-4e19-9de5-709311072b09">Referencing Contexts</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available nor supported in Windows 2000 SP4 and earlier operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>FltMgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltmgr.sys</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

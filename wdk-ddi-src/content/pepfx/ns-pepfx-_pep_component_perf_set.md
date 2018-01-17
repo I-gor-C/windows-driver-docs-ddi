@@ -134,31 +134,6 @@ The <b>PerfStateSets</b> member of the <a href="..\pepfx\ns-pepfx-_pep_component
 Device drivers use the <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> structure, which is similar to the <b>PEP_COMPONENT_PERF_SET</b> structure.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

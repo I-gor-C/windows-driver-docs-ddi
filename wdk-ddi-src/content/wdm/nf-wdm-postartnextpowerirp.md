@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>PoStartNextPowerIrp</b> routine signals the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> that the driver is ready to handle the next power <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>. (Windows Server 2003, Windows XP, and Windows 2000 only.)
+The <b>PoStartNextPowerIrp</b> routine signals the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559829">power manager</a> that the driver is ready to handle the next power <a href="..\wdm\ns-wdm-_irp.md">IRP</a>. (Windows Server 2003, Windows XP, and Windows 2000 only.)
 
 
 
@@ -74,74 +74,6 @@ The driver must call <b>PoStartNextPowerIrp</b> while the current IRP stack loca
 Bus drivers must call <b>PoStartNextPowerIrp</b> before completing each IRP.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -151,7 +83,7 @@ IRQL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550784">IRP_MJ_POWER</a>

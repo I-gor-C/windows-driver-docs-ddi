@@ -7,8 +7,8 @@ old-location: netvista\rilcardappadded_2.htm
 old-project: netvista
 ms.assetid: 8e4eed61-bd57-4731-9178-7f8d33fbd240
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCARDAPPADDED, *LPRILCARDAPPADDED, RILCARDAPPADDED
+ms.date: 1/11/2018
+ms.keywords: RILCARDAPPADDED, RILCARDAPPADDED, *LPRILCARDAPPADDED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILCARDAPPADDED, RILCARDAPPADDED
+req.typenames: RILCARDAPPADDED, *LPRILCARDAPPADDED
 req.product: Windows 10 or later.
 ---
 
@@ -71,19 +71,3 @@ typedef struct _RILCARDAPPADDED {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

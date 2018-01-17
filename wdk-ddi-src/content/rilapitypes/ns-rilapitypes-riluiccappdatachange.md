@@ -7,7 +7,7 @@ old-location: netvista\riluiccappdatachange_2.htm
 old-project: netvista
 ms.assetid: b812cd5d-73a1-42bc-a1ae-1c1494369288
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCAPPDATACHANGE, *LPRILUICCAPPDATACHANGE, RILUICCAPPDATACHANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,19 +67,3 @@ typedef struct _RILUICCAPPDATACHANGE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

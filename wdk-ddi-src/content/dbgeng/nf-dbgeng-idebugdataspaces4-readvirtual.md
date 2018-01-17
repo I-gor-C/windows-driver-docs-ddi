@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces4::ReadVirtual method
@@ -94,32 +94,6 @@ This method may reference a cache of memory data when retrieving data.  If the d
 
 When reading memory that contains pointers, these pointers are for the target's virtual address space and not the engine's.  For example, if a data structure contained a string, a second call to this method may be needed to read the contents of the string.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

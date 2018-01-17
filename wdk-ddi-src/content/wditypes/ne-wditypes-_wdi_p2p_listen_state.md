@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_listen_state.htm
 old-project: netvista
 ms.assetid: 68798F3D-B708-4DCD-AB3F-D8DE4A8A0CF2
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_P2P_LISTEN_STATE, WDI_P2P_LISTEN_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,39 +99,3 @@ When this listen state is set:
 <div> </div>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

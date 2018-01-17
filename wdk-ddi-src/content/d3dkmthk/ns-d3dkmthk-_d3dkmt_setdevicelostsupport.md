@@ -66,19 +66,3 @@ Indicates whether or not the device can recover from losing the graphics device.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

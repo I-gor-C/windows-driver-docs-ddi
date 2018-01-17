@@ -75,31 +75,6 @@ To place a remote device into active mode, profile drivers should
     BRB_ACL_ENTER_ACTIVE_MODE</a> request.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

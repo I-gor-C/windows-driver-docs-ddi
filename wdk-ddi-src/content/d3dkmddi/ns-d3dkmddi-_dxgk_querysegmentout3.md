@@ -91,41 +91,6 @@ This structure is used by the  display miniport driver to return information abo
 The video memory manager allocates a paging buffer either from an aperture segment (if the <b>PagingBufferSegmentId</b> member identifies the segment) or as a contiguous write-combined memory block (if <b>PagingBufferSegmentId</b> is set to 0). If <b>PagingBufferSegmentId</b> is set to 0, the GPU must access direct memory access (DMA) buffers by using PCI cycles on systems where AGP transfers that occur outside the AGP aperture are not permitted.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -82,42 +82,6 @@ If a domain name is already associated with the <i>SrvCall</i> parameter, then t
 
 If the <i>DomainName</i> parameter is not a <b>NULL</b> pointer, and the <i>DomainName</i> parameter has a length greater than zero, then <b>RxSetSrvCallDomainName</b> allocates space for the <b>pDomainName</b> member of <i>SrvCall</i> from nonpaged pool with a pool tag of RX_SRVCALL_PARAMS_POOLTAG. The <b>RxSetSrvCallDomainName</b> routine sets the <b>buffer</b>, <b>length</b>, and <b>MaximumLength</b> members of the <b>pDomainName</b> structure. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rxprocs.h (include Mrxfcb.h or Rxprocs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

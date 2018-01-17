@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PHFP_BYPASS_CODEC_ID_VERSION, HFP_BYPASS_CODEC_ID_VERSION
+req.typenames: HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION
 ---
 
 # IOCTL_BTHHFP_DEVICE_REQUEST_DISCONNECT IOCTL
@@ -80,41 +80,6 @@ This request initiates the process to disconnect the Service Level Connection an
 
 The audio driver sends this request from its handler for the <a href="https://msdn.microsoft.com/library/windows/hardware/hh706181">KSPROPERTY_ONESHOT_DISCONNECT</a> KS property.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthhfpddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

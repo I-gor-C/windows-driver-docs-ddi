@@ -31,7 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: EXpsFontRestriction
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltAllocateDeferredIoWorkItem function
@@ -68,53 +68,6 @@ To insert this work item into a deferred I/O work queue, call <a href="..\fltker
 
 To free the work item, a minifilter driver typically calls <a href="..\fltkernel\nf-fltkernel-fltfreedeferredioworkitem.md">FltFreeDeferredIoWorkItem</a> from the worker routine that was specified in <a href="..\fltkernel\nf-fltkernel-fltqueuedeferredioworkitem.md">FltQueueDeferredIoWorkItem</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>FltMgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

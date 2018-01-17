@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_mac_info.htm
 old-project: netvista
 ms.assetid: C55DC50B-5A1B-496E-BBB8-8EB94A9CFD2F
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _NDIS_WWAN_MAC_INFO, NDIS_WWAN_MAC_INFO, *PNDIS_WWAN_MAC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,29 +72,3 @@ The NDIS port of the PDP context.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 8.1 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndiswwan.h (include Ndiswwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: netvista\rillocationinfoparammask.htm
 old-project: netvista
 ms.assetid: 3d681026-7ccb-4dcb-bed1-505c13089177
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILLOCATIONINFOPARAMMASK, RILLOCATIONINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,19 +74,3 @@ typedef enum _RILLOCATIONINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

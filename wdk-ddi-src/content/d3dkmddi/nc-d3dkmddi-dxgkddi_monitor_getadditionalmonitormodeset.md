@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 37878f3a-f61e-423c-ab03-94318089f7af
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords: DXGKDDI_MAPCPUHOSTAPERTURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
 # DXGKDDI_MONITOR_GETADDITIONALMONITORMODESET callback
@@ -106,52 +106,6 @@ VidPN target identifiers are assigned by the display miniport driver. The <a hre
 
 This function is available beginning with Windows 7.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

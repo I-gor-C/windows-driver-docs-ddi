@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 273266b3-98f4-4c93-a06b-8e149440ad24
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _SetDSMCounters_IN, *PSetDSMCounters_IN, SetDSMCounters_IN
+ms.keywords: _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetDSMCounters_IN, SetDSMCounters_IN
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 # PMRX_CHKFCB_CALLDOWN callback
@@ -88,32 +88,6 @@ The FCB structure that is associated with the FOBX structure on the <b>FobxsToBe
 
 <b>MRxAreFilesAliased</b> is also called by the <a href="..\scavengr\nf-scavengr-rxscavengefobxsfornetroot.md">RxScavengeFobxsForNetRoot</a> routine when purging all the file objects associated with a NET_ROOT structure. This is complicated by the fact that the <i>PurgingFCB</i> parameter passed to <b>RxScavengeFobxsForNetRoot</b> and the FCB structure that is associated with the NET_ROOT structure might actually be the same file because of aliasing. In this case, the <b>MRxAreFilesAliased</b> routine is called to determine if the FCB structure is aliased.  
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mrx.h (include Mrx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

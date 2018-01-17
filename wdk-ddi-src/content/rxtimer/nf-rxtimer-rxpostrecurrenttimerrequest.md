@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -90,42 +90,6 @@ The time interval, in 100-nanosecond ticks.
 ## -remarks
 A recurrent timer can be canceled by calling <b>RxCancelTimerRequest</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rxtimer.h (include Rxtimer.h or Rxworkq.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

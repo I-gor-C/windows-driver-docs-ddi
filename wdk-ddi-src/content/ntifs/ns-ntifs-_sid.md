@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 3b0d68f9-e871-42fe-97b0-f70f1fa72bf0
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _SID, *PISID, SID
+ms.keywords: _SID, SID, *PISID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PISID, SID
+req.typenames: SID, *PISID
 ---
 
 # _SID structure
@@ -73,21 +73,6 @@ typedef struct _SID {
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

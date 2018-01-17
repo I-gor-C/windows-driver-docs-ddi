@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwipriority.htm
 old-project: netvista
 ms.assetid: a974af39-a4a6-44f2-9010-e612f50c83df
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGMWIPRIORITY, RILMSGMWIPRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,19 +74,3 @@ typedef enum _RILMSGMWIPRIORITY {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -109,21 +109,6 @@ If the color space and format conversion is reported, the <i>SupportedFlags</i> 
 Callers should check the <i>ScaleSupport</i> parameter to understand if the scale is supported.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

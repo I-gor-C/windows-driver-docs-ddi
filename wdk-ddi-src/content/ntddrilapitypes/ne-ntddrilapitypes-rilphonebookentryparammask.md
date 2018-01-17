@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookentryparammask.htm
 old-project: netvista
 ms.assetid: 6c3f8053-1cb7-44e8-be17-47678b224fa9
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILPHONEBOOKENTRYPARAMMASK, RILPHONEBOOKENTRYPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -102,19 +102,3 @@ typedef enum _RILPHONEBOOKENTRYPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,8 +7,8 @@ old-location: netvista\rilsendmsgparams.htm
 old-project: netvista
 ms.assetid: de1049a8-e089-4d15-baca-2c760f895894
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSENDMSGPARAMS, RILSENDMSGPARAMS, *LPRILSENDMSGPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSENDMSGPARAMS, *LPRILSENDMSGPARAMS, RILSENDMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILSENDMSGPARAMS, *LPRILSENDMSGPARAMS
+req.typenames: *LPRILSENDMSGPARAMS, RILSENDMSGPARAMS
 ---
 
 # RILSENDMSGPARAMS structure
@@ -70,19 +70,3 @@ typedef struct _RILSENDMSGPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

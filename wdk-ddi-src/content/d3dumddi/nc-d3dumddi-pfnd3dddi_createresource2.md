@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: a8326707-cffc-4a20-ad3d-c7862661f513
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_PTE, DXGK_PTE
+ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DXGK_PTE
+req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ---
 
 # PFND3DDDI_CREATERESOURCE2 callback
@@ -65,26 +65,26 @@ _Check_return_ HRESULT APIENTRY* CreateResource2(
 
 ### -param pResource2 [in, out]
 
- A pointer to a <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource2.md">D3DDDIARG_CREATERESOURCE2</a> structure that describes the resource that is created.
+ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451074">D3DDDIARG_CREATERESOURCE2</a> structure that describes the resource that is created.
 
 
 ## -returns
 Returns <b>S_OK</b> or an appropriate error result. WDDM 1.3 and later Direct3D Level 9 drivers must return this error code:
 <dl>
 <dt><b>E_INVALIDARG</b></dt>
-</dl>The <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource2.md">D3DDDIARG_CREATERESOURCE2</a>.<b>Flags</b> member has the <b>CaptureBuffer</b> flag value set and the resource exceeds what the driver can support.
+</dl>The <a href="https://msdn.microsoft.com/library/windows/hardware/hh451074">D3DDDIARG_CREATERESOURCE2</a>.<b>Flags</b> member has the <b>CaptureBuffer</b> flag value set and the resource exceeds what the driver can support.
 
  
 
 
 ## -remarks
-The call to <i>CreateResource2</i> can contain a list of surfaces. The <b>SurfCount</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource2.md">D3DDDIARG_CREATERESOURCE2</a> structure that is specified by the <i>pResource2</i> parameter specifies the number of surfaces—including MIP-map levels—to create. For example, a 256x256x9 texture MIP-map resource contains a list of nine surfaces where the <b>SurfCount</b> member and number of MIP-map levels are both set to 9. A cube map that contains nine MIP-map levels should have the number of MIP-map levels set to 9 and <b>SurfCount</b> set to 54. A three-surface swap chain should have <b>SurfCount</b> set to 3 and the number of MIP-map levels set to 0. Note that the number of MIP-map levels is always less than or equal to the value in <b>SurfCount</b>.
+The call to <i>CreateResource2</i> can contain a list of surfaces. The <b>SurfCount</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451074">D3DDDIARG_CREATERESOURCE2</a> structure that is specified by the <i>pResource2</i> parameter specifies the number of surfaces—including MIP-map levels—to create. For example, a 256x256x9 texture MIP-map resource contains a list of nine surfaces where the <b>SurfCount</b> member and number of MIP-map levels are both set to 9. A cube map that contains nine MIP-map levels should have the number of MIP-map levels set to 9 and <b>SurfCount</b> set to 54. A three-surface swap chain should have <b>SurfCount</b> set to 3 and the number of MIP-map levels set to 0. Note that the number of MIP-map levels is always less than or equal to the value in <b>SurfCount</b>.
 
 In response to the <i>CreateResource2</i> call, the user-mode display driver can call the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a> function to create one or more memory allocations. The user-mode display driver must determine whether it must create multiple allocations per surface, one allocation for all surfaces, or one allocation per surface. For more information about allocations, see <a href="https://msdn.microsoft.com/33fc9f0a-57ed-479f-9cb0-3f3f540047ab">Video Memory Management and GPU Scheduling</a>.
 
-The <b>hResource</b> member in the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource2.md">D3DDDIARG_CREATERESOURCE2</a> structure is a handle that's used to identify the resource. The user-mode display driver should store the value of <b>hResource</b> that was passed in the <i>CreateResource2</i> call and overwrite the value with another value that the Microsoft Direct3D runtime can use when the <i>CreateResource2</i> call returns. In other words, in calls to the runtime, the user-mode display driver uses the <b>hResource</b> value that was passed to <i>CreateResource2</i>; in calls to the user-mode display driver (for example, in calls to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_settexture.md">SetTexture</a> or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setstreamsource.md">SetStreamSource</a> functions), the runtime uses the <b>hResource</b> value that was returned from <i>CreateResource2</i>. Note that each surface does not have an explicit handle; if the surface must be referred to individually (for example in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a> function), it is referred to by a handle and an index. The index identifies the surface within the resource. The index is the same as the index of the surface in the array that is contained in the <b>pSurfList</b> member of <b>D3DDDIARG_CREATERESOURCE2</b>.
+The <b>hResource</b> member in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451074">D3DDDIARG_CREATERESOURCE2</a> structure is a handle that's used to identify the resource. The user-mode display driver should store the value of <b>hResource</b> that was passed in the <i>CreateResource2</i> call and overwrite the value with another value that the Microsoft Direct3D runtime can use when the <i>CreateResource2</i> call returns. In other words, in calls to the runtime, the user-mode display driver uses the <b>hResource</b> value that was passed to <i>CreateResource2</i>; in calls to the user-mode display driver (for example, in calls to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_settexture.md">SetTexture</a> or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_setstreamsource.md">SetStreamSource</a> functions), the runtime uses the <b>hResource</b> value that was returned from <i>CreateResource2</i>. Note that each surface does not have an explicit handle; if the surface must be referred to individually (for example in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a> function), it is referred to by a handle and an index. The index identifies the surface within the resource. The index is the same as the index of the surface in the array that is contained in the <b>pSurfList</b> member of <b>D3DDDIARG_CREATERESOURCE2</b>.
 
-Resources can be shared by multiple devices (<b>hDevice</b>) and processes. The runtime specifies that a resource is shared by setting the <b>SharedResource</b> bit-field flag in the <b>Flags</b> member of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource2.md">D3DDDIARG_CREATERESOURCE2</a>. If this bit-field flag is set, the user-mode display driver must adhere to the following restrictions on shared resources: 
+Resources can be shared by multiple devices (<b>hDevice</b>) and processes. The runtime specifies that a resource is shared by setting the <b>SharedResource</b> bit-field flag in the <b>Flags</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451074">D3DDDIARG_CREATERESOURCE2</a>. If this bit-field flag is set, the user-mode display driver must adhere to the following restrictions on shared resources: 
 
 The user-mode display driver can call the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_allocatecb.md">pfnAllocateCb</a> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_deallocatecb.md">pfnDeallocateCb</a> functions exactly once each.
 
@@ -94,7 +94,7 @@ When the user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_d
 
 The number of allocations must be consistent for the resource type (that is, another process that is creating the same resource type should generate the same number and type of allocations). Furthermore, renaming is not allowed for these resources.
 
-The bit-field flags that are specified in the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_resourceflags2.md">D3DDDI_RESOURCEFLAGS2</a> structure are passed in the <b>Flags</b> member of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource2.md">D3DDDIARG_CREATERESOURCE2</a>.
+The bit-field flags that are specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439286">D3DDDI_RESOURCEFLAGS2</a> structure are passed in the <b>Flags</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451074">D3DDDIARG_CREATERESOURCE2</a>.
 
 The undefined bits of the <b>Flags</b> member are reserved.
 
@@ -113,62 +113,16 @@ For a system memory resource, the display miniport driver can chose to wrap an a
 If the runtime requests to create a vertex or index buffer and if the user-mode display driver cannot create the buffer for reasons other than out of memory (for example, a lack of hardware support), the driver must fail with <b>D3DERR_NOTAVAILABLE</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_blt.md">Blt</a>
 </dt>
 <dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_resourceflags2.md">D3DDDI_RESOURCEFLAGS2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439286">D3DDDI_RESOURCEFLAGS2</a>
 </dt>
 <dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource2.md">D3DDDIARG_CREATERESOURCE2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451074">D3DDDIARG_CREATERESOURCE2</a>
 </dt>
 <dt>
 <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>

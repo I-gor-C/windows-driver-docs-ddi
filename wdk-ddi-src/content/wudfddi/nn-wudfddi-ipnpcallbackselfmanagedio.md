@@ -7,7 +7,7 @@ old-location: wdf\ipnpcallbackselfmanagedio.htm
 old-project: wdf
 ms.assetid: 34971df0-4abc-41a1-8d2f-6e36df1daf20
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -143,20 +143,4 @@ The <a href="https://msdn.microsoft.com/7ec30c51-5e07-496b-96af-8eafb564d98d">On
 
 
 ## -remarks
-A driver registers the <b>IPnpCallbackSelfManagedIo</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+A driver registers the <b>IPnpCallbackSelfManagedIo</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. </p>

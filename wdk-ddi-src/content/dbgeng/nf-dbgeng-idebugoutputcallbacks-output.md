@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugOutputCallbacks::Output method
@@ -72,31 +72,4 @@ The return value is ignored by the engine unless it indicates a remote procedure
 ## -remarks
 The engine calls this method only if the supplied value of <i>Mask</i> is allowed by the client's output control.
 
-For more information about debugger engine output, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about debugger engine output, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550971">Input and Output</a>.</p>

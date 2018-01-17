@@ -76,7 +76,7 @@ typedef struct D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2 {
 
 ### -field Flags
 
-[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_signalflags.md">D3DDDICB_SIGNALFLAGS</a> structure that indicates, in bit-field flags, signaling behavior.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544271">D3DDDICB_SIGNALFLAGS</a> structure that indicates, in bit-field flags, signaling behavior.
 
 
 ### -field BroadcastContextCount
@@ -112,48 +112,13 @@ This member is reserved and should be set to zero.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectfromgpu2cb.md">pfnSignalSynchronizationObjectFromGpu2Cb</a>
 </dt>
 <dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_signalflags.md">D3DDDICB_SIGNALFLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544271">D3DDDICB_SIGNALFLAGS</a>
 </dt>
 </dl>
  

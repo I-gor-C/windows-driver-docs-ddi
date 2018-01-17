@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 4b8c9a94-a81e-4a02-b68c-10b2fb64157f
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _SetDSMCounters_IN, *PSetDSMCounters_IN, SetDSMCounters_IN
+ms.keywords: _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetDSMCounters_IN, SetDSMCounters_IN
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 # PMRX_IS_LOCK_REALIZABLE callback
@@ -94,32 +94,6 @@ A value indicating the I/O lock flags. This parameter is a bitmask that contains
 
 <i>MRxIsLockRealizable</i> is called in response to receiving an IRP with the IRP_MN_LOCK minor function.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mrx.h (include Mrx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

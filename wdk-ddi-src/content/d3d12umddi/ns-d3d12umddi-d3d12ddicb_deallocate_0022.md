@@ -78,21 +78,6 @@ Flags to use for deallocation, as specified in the <a href="..\d3d12umddi\ne-d3d
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

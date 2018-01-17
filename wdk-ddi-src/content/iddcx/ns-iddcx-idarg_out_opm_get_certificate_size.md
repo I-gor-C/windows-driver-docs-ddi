@@ -63,19 +63,3 @@ typedef struct IDARG_OUT_OPM_GET_CERTIFICATE_SIZE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

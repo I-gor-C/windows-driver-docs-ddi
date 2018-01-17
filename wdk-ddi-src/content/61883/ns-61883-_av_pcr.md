@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: f6d3f95b-7484-4a6b-9b7e-69f6172b7a12
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _AV_PCR, AV_PCR, *PAV_PCR
+ms.keywords: _AV_PCR, *PAV_PCR, AV_PCR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: AV_PCR, *PAV_PCR
+req.typenames: *PAV_PCR, AV_PCR
 ---
 
 # _AV_PCR structure
@@ -75,21 +75,6 @@ Reserved for internal use.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h (include 61883.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

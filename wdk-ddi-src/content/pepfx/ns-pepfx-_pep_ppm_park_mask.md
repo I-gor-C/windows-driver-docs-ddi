@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 528576FD-BDB2-4772-9151-A1C855BA953E
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK, *PPEP_PPM_PARK_MASK
+ms.keywords: _PEP_PPM_PARK_MASK, *PPEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PEP_PPM_PARK_MASK, *PPEP_PPM_PARK_MASK
+req.typenames: *PPEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK
 ---
 
 # _PEP_PPM_PARK_MASK structure
@@ -88,31 +88,6 @@ The Processors array is guaranteed to contain the processors in increasing order
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

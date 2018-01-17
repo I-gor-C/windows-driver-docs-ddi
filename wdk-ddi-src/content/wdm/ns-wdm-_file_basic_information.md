@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8f79a3cf-9bc7-4135-a90e-d9dce86cf5f6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _FILE_BASIC_INFORMATION, *PFILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION
+ms.keywords: _FILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION, *PFILE_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PFILE_BASIC_INFORMATION, FILE_BASIC_INFORMATION
+req.typenames: FILE_BASIC_INFORMATION, *PFILE_BASIC_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -95,21 +95,6 @@ The file system updates the values of the <b>LastAccessTime</b>, <b>LastWriteTim
 
 To set the members of this structure, the caller must have FILE_WRITE_ATTRIBUTES access to the file.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

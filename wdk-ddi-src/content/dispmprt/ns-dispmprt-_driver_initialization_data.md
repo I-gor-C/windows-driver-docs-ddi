@@ -681,31 +681,6 @@ Supported starting with Windows 8.1.
 The following <b>typedef</b> declarations provide function data types from data types that are dereferenced pointers to functions:
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

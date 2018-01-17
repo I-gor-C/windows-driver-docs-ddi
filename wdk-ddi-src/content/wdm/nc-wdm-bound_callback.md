@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: D9047BB2-2FCD-41DE-B1E1-DE89AAA40ED7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords: ALLOCATE_FUNCTION_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -70,31 +70,6 @@ Drivers can supply a <i>BoundCallback</i> that is called when the system issues 
 
 Use <a href="..\wdm\nf-wdm-keregisterboundcallback.md">KeRegisterBoundCallback</a> to register a <i>BoundCallback</i> routine. A driver can subsequently remove the callback by using the <a href="..\wdm\nf-wdm-kederegisterboundcallback.md">KeDeregisterBoundCallback</a> routine. If the driver can be unloaded, it must remove any registered callbacks in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff564886">Unload</a> routine.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

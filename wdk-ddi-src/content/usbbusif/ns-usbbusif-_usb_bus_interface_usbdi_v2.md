@@ -174,31 +174,6 @@ The <b>IsDeviceHighSpeed</b> routine does not indicate whether a device is capab
 The routines in this structure must be callable at IRQL &gt;= DISPATCH_LEVEL. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows XP and later operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbbusif.h (include Usbbusif.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

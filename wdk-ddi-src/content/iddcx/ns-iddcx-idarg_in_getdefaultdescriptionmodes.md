@@ -70,19 +70,3 @@ typedef struct IDARG_IN_GETDEFAULTDESCRIPTIONMODES {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

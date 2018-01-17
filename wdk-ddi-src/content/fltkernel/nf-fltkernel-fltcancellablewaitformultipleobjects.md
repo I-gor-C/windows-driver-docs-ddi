@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Fltmgr.lib
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: EXpsFontRestriction
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltCancellableWaitForMultipleObjects function
@@ -146,63 +146,6 @@ The <b>FltCancellableWaitForMultipleObjects</b> routine must be called at IRQL P
 
 <b>FltCancellableWaitForMultipleObjects</b> will assert on debug builds if the <i>CallbackData</i> represents a Filter Manager IRP operation, but the IRP in the <i>CallbackData</i> structure is <b>NULL</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows Vista and later versions of Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltmgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-See Remarks section.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

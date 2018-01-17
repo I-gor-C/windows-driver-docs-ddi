@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemconfigitem_2.htm
 old-project: netvista
 ms.assetid: 9ac8f93e-4eac-47ec-bc1d-090abb339626
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRESETMODEMCONFIGITEM, *LPRILRESETMODEMCONFIGITEM, RILRESETMODEMCONFIGITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef struct _RILRESETMODEMCONFIGITEM {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

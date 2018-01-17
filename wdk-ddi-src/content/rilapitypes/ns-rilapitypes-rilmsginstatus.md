@@ -7,8 +7,8 @@ old-location: netvista\rilmsginstatus_2.htm
 old-project: netvista
 ms.assetid: 4dcc198f-5e42-4c60-bfec-19702c9ab674
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILMSGINSTATUS, RILMSGINSTATUS, *LPRILMSGINSTATUS
+ms.date: 1/11/2018
+ms.keywords: RILMSGINSTATUS, *LPRILMSGINSTATUS, RILMSGINSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILMSGINSTATUS, *LPRILMSGINSTATUS
+req.typenames: *LPRILMSGINSTATUS, RILMSGINSTATUS
 req.product: Windows 10 or later.
 ---
 
@@ -103,19 +103,3 @@ typedef struct _RILMSGINSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: netvista\rilradiostategroups_2.htm
 old-project: netvista
 ms.assetid: 6ef17ba4-2e87-44d6-904c-609030fe9b9b
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRADIOSTATEGROUPS, *LPRILRADIOSTATEGROUPS, RILRADIOSTATEGROUPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef struct _RILRADIOSTATEGROUPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

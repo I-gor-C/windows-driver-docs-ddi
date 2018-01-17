@@ -7,7 +7,7 @@ old-location: netvista\rilphonebooklocationcaps.htm
 old-project: netvista
 ms.assetid: df2f059c-d1c3-4716-8254-47c71f0b4a7c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILPHONEBOOKLOCATIONCAPS, RILPHONEBOOKLOCATIONCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,19 +74,3 @@ typedef enum _RILPHONEBOOKLOCATIONCAPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

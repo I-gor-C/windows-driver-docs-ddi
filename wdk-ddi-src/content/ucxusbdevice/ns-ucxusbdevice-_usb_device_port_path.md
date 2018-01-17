@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 75C7DB08-F831-43ED-8373-F3F4C7AF89E8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+ms.keywords: _USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+req.typenames: *PUSB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH
 req.product: Windows 10 or later.
 ---
 
@@ -80,21 +80,6 @@ The index of connected USB port on the hub.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxusbdevice.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

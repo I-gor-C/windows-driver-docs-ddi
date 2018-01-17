@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9af172d9-2309-4731-82bf-55ec99c475a6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _FILE_END_OF_FILE_INFORMATION, FILE_END_OF_FILE_INFORMATION, *PFILE_END_OF_FILE_INFORMATION
+ms.keywords: _FILE_END_OF_FILE_INFORMATION, *PFILE_END_OF_FILE_INFORMATION, FILE_END_OF_FILE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: FILE_END_OF_FILE_INFORMATION, *PFILE_END_OF_FILE_INFORMATION
+req.typenames: *PFILE_END_OF_FILE_INFORMATION, FILE_END_OF_FILE_INFORMATION
 ---
 
 # _FILE_END_OF_FILE_INFORMATION structure
@@ -62,21 +62,6 @@ The absolute new end of file position as a byte offset from the start of the fil
 ## -remarks
 <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file: that is, it is the offset to the byte immediately following the last valid byte in the file. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

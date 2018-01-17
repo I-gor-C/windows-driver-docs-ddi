@@ -66,7 +66,7 @@ typedef struct _DRIVER_OBJECT {
 
 ### -field DeviceObject
 
-Pointer to the device objects created by the driver. This member is automatically updated when the driver calls <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> successfully. A driver can use this member and the <b>NextDevice</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> to step through a list of all the device objects that the driver created.
+Pointer to the device objects created by the driver. This member is automatically updated when the driver calls <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> successfully. A driver can use this member and the <b>NextDevice</b> member of <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> to step through a list of all the device objects that the driver created.
 
 
 ### -field DriverExtension
@@ -153,21 +153,6 @@ The <i>RegistryPath</i> input to the <b>DriverEntry</b> routine points to the <b
 
 Undocumented members within a driver object should be considered inaccessible. Drivers with dependencies on object member locations or on access to undocumented members might not remain portable and interoperable with other drivers over time.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

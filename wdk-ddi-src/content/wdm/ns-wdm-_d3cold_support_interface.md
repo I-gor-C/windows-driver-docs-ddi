@@ -120,31 +120,6 @@ A device driver that successfully queries for the GUID_D3COLD_SUPPORT_INTERFACE 
 The <b>D3COLD_SUPPORT_INTERFACE</b> structure is an extended version of the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

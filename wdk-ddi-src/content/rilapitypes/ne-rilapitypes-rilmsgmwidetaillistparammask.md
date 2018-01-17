@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwidetaillistparammask_2.htm
 old-project: netvista
 ms.assetid: 1b0777d4-8977-4dd2-a728-65f0e045efc8
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGMWIDETAILLISTPARAMMASK, RILMSGMWIDETAILLISTPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,19 +71,3 @@ typedef enum _RILMSGMWIDETAILLISTPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

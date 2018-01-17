@@ -71,44 +71,6 @@ Typically, a miniport driver should call <b>AtaPortStallExecution</b> only if th
 Miniport drivers should use the <a href="..\irb\nf-irb-ataportrequesttimer.md">AtaPortRequestTimer</a> routine for delays longer than 1 millisecond.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Ata.h or Irb.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ataport.lib; </dt>
-<dt>Pciidex.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

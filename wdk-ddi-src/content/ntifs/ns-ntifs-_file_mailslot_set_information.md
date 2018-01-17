@@ -62,30 +62,4 @@ The time, in milliseconds, that a read operation can wait for a message to be wr
 
 
 ## -remarks
-For more information, see <a href="https://msdn.microsoft.com/e23894ca-edc7-49e6-bcc4-c82f357ecedf">Mailslots</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 2000 and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include FltKernel.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information, see <a href="https://msdn.microsoft.com/e23894ca-edc7-49e6-bcc4-c82f357ecedf">Mailslots</a>.</p>

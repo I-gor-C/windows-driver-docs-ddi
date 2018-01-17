@@ -123,32 +123,6 @@ Add a power policy setting scheme into the miniport driver's INF file. A GUID is
 After vendor-defined power management is registered, the miniport driver will be able to receive calls to its <i>IdeHwControl</i> routine with control action <b>IdeVendorDefined</b> when the system power scheme changes.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

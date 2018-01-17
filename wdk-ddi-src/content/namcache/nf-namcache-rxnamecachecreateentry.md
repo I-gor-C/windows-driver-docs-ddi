@@ -81,42 +81,6 @@ A network mini-redirector calls <b>RxNameCacheCreateEntry</b> to allocate and in
 <b>RxNameCacheCreateEntry</b> will first attempt to reuse a NAME_CACHE entry on the free list, if one is available, before allocating a new NAME_CACHE entry. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Namcache.h (include Namcache.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

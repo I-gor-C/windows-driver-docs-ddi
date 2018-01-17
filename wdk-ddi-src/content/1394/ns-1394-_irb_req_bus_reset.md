@@ -60,19 +60,3 @@ Set this flag to BUS_RESET_FLAGS_FORCE_ROOT to make the local node the root node
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

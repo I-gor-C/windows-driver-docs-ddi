@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 3e0d41f4-4918-4768-a341-25d27f0a8af0
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _TOKEN_CONTROL, TOKEN_CONTROL, *PTOKEN_CONTROL
+ms.keywords: _TOKEN_CONTROL, *PTOKEN_CONTROL, TOKEN_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: TOKEN_CONTROL, *PTOKEN_CONTROL
+req.typenames: *PTOKEN_CONTROL, TOKEN_CONTROL
 ---
 
 # _TOKEN_CONTROL structure
@@ -79,21 +79,6 @@ Specifies a <a href="..\ntifs\ns-ntifs-_token_source.md">TOKEN_SOURCE</a> struct
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

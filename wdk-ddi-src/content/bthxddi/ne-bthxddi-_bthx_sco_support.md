@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: A9B303C7-868D-47EB-8279-9F655F58630C
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.keywords: _BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
-req.typenames: *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+req.typenames: BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ---
 
 # _BTHX_SCO_SUPPORT enumeration
@@ -77,30 +77,4 @@ Upon starting, the Bluetooth stack will query the transport driver for its capab
 The output buffer of this IOCTL is defined by the <a href="..\bthxddi\ns-bthxddi-_bthx_capabilities.md">BTHX_CAPABILITIES</a> structure which contains the 
 BTHX_SCO_SUPPORT structure.
 
-The transport driver must specify <b>ScoSupportHCIBypass</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>BthXDDI.h (include BthXDDI.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The transport driver must specify <b>ScoSupportHCIBypass</b>.</p>

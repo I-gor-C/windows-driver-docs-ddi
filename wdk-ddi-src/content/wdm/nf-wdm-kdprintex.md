@@ -120,64 +120,6 @@ There is no upper limit to the size of the <i>Format</i> string or the number of
 This routine is defined in ntddk.h and ndis.h; component filter IDs are defined in dpfilter.h, ndis.h, and wdm.h. Include ntddk.h or ndis.h.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows XP and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib (See <a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>.)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

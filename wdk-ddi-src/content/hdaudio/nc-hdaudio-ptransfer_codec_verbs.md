@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 0ba92f5c-c4a3-48de-b8af-9c444b2e65b5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+ms.keywords: _SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+req.typenames: *PSM_SetRNIDMgmtInfo_OUT, SM_SetRNIDMgmtInfo_OUT
 ---
 
 # PTRANSFER_CODEC_VERBS callback
@@ -124,42 +124,6 @@ If the <i>callback</i> parameter is <b>NULL</b>, the caller must be running at I
 
 The caller must allocate the <i>codecTransfer</i> array from the nonpaged pool.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hdaudio.h (include Hdaudio.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-See Remarks section.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

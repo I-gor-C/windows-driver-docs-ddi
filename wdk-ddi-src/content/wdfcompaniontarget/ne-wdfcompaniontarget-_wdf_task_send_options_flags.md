@@ -7,7 +7,7 @@ old-location: wdf\wdf_task_send_options_flags.htm
 old-project: wdf
 ms.assetid: 8ff13908-57f2-404f-a8ea-70c798ee3d7d
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: _WDF_TASK_SEND_OPTIONS_FLAGS, WDF_TASK_SEND_OPTIONS_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,29 +63,3 @@ typedef enum _WDF_TASK_SEND_OPTIONS_FLAGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.23
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfcompaniontarget.h</dt>
-</dl>
-</td>
-</tr>
-</table>

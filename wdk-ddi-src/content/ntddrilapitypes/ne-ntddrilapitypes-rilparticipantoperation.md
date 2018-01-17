@@ -7,7 +7,7 @@ old-location: netvista\rilparticipantoperation.htm
 old-project: netvista
 ms.assetid: 0f59d104-ef86-4fed-9728-1a01ccb6f879
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILPARTICIPANTOPERATION, RILPARTICIPANTOPERATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,19 +62,3 @@ typedef enum _RILPARTICIPANTOPERATION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

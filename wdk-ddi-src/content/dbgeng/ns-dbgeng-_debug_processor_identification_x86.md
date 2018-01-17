@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: B5AD9CE8-B0F0-49BC-984E-4372FD3BF93B
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_PROCESSOR_IDENTIFICATION_X86, *PDEBUG_PROCESSOR_IDENTIFICATION_X86, DEBUG_PROCESSOR_IDENTIFICATION_X86
+ms.keywords: _DEBUG_PROCESSOR_IDENTIFICATION_X86, DEBUG_PROCESSOR_IDENTIFICATION_X86, *PDEBUG_PROCESSOR_IDENTIFICATION_X86
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDEBUG_PROCESSOR_IDENTIFICATION_X86, DEBUG_PROCESSOR_IDENTIFICATION_X86
+req.typenames: DEBUG_PROCESSOR_IDENTIFICATION_X86, *PDEBUG_PROCESSOR_IDENTIFICATION_X86
 ---
 
 # _DEBUG_PROCESSOR_IDENTIFICATION_X86 structure
@@ -79,21 +79,6 @@ A vendor specified string.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

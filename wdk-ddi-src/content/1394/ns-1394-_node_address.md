@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: ecafa166-356e-48d6-84c4-0f0c339289ac
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _NODE_ADDRESS, *PNODE_ADDRESS, NODE_ADDRESS
+ms.keywords: _NODE_ADDRESS, NODE_ADDRESS, *PNODE_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PNODE_ADDRESS, NODE_ADDRESS
+req.typenames: NODE_ADDRESS, *PNODE_ADDRESS
 ---
 
 # _NODE_ADDRESS structure
@@ -67,21 +67,6 @@ Specifies the 10-bit bus number. This member specifies bits 0-10 of the node add
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 055db46e-59fc-4eb9-93d7-16d680495220
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _GetPathConfiguration_OUT, *PGetPathConfiguration_OUT, GetPathConfiguration_OUT
+ms.keywords: _GetPathConfiguration_OUT, GetPathConfiguration_OUT, *PGetPathConfiguration_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PGetPathConfiguration_OUT, GetPathConfiguration_OUT
+req.typenames: GetPathConfiguration_OUT, *PGetPathConfiguration_OUT
 ---
 
 # _GetPathConfiguration_OUT structure
@@ -66,19 +66,3 @@ An array that returns information about the SCSI addresses. The number of elemen
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

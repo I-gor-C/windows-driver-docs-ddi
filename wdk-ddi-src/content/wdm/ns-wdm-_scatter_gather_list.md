@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 3cc6da15-8367-4430-afe8-956376eef1c7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _SCATTER_GATHER_LIST, SCATTER_GATHER_LIST, *PSCATTER_GATHER_LIST
+ms.keywords: _SCATTER_GATHER_LIST, *PSCATTER_GATHER_LIST, SCATTER_GATHER_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: SCATTER_GATHER_LIST, *PSCATTER_GATHER_LIST
+req.typenames: *PSCATTER_GATHER_LIST, SCATTER_GATHER_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -84,21 +84,6 @@ For a driver that performs scatter/gather DMA, the <a href="..\wdm\nc-wdm-pget_s
 
 For more information about scatter/gather lists, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565510">Using Scatter/Gather DMA</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: a6f689ab-8cf1-4207-af2b-30957500c190
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST
+ms.keywords: _VP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -90,52 +90,6 @@ When a miniport driver calls <b>AgpFreeVirtual</b>, <i>Pages</i> pages of virtua
 
 A call to <b>AgpFreeVirtual</b> must be paired with a previous call to <a href="..\videoagp\nc-videoagp-pagp_commit_virtual.md">AgpCommitVirtual</a>, and that call to <b>AgpCommitVirtual</b> must be preceded by a successful call to <a href="..\videoagp\nc-videoagp-pagp_reserve_virtual.md">AgpReserveVirtual</a>. If <b>AgpReserveVirtual</b> fails (returns <b>NULL</b>), you must not call <b>AgpCommitVirtual</b> or <b>AgpFreeVirtual</b>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 2000 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Videoagp.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

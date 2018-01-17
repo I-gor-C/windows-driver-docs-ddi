@@ -7,7 +7,7 @@ old-location: netvista\riluiccresponse_2.htm
 old-project: netvista
 ms.assetid: c3d3481e-a0db-492d-8fc3-6bdcfa26f4c4
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCRESPONSE, RILUICCRESPONSE, *LPRILUICCRESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,19 +79,3 @@ typedef struct _RILUICCRESPONSE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

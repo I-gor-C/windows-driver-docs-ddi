@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 7fe392d1-75e4-43b1-a09b-6f47981bef7e
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CLS_INFORMATION, *PCLS_INFORMATION, *PPCLS_INFORMATION, CLS_INFORMATION, CLFS_INFORMATION, *PCLFS_INFORMATION
+ms.keywords: _CLS_INFORMATION, *PCLS_INFORMATION, *PPCLS_INFORMATION, CLS_INFORMATION, *PCLFS_INFORMATION, CLFS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -173,21 +173,6 @@ If <i>eInformationClass</i> parameter is equal to <b>ClfsLogBasicInformation</b>
 
 <b>RestartLsn</b>
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

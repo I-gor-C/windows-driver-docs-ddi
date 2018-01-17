@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9acb3b65-46c7-4b29-8d7a-c5d8fcd4563d
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _REPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER
+ms.keywords: _REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER
+req.typenames: *PREPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER
 ---
 
 # _REPARSE_GUID_DATA_BUFFER structure
@@ -105,21 +105,6 @@ File systems and filter drivers can retrieve, set, or delete a reparse point by 
 
 For more information about reparse points and reparse point tags, see the Windows SDK documentation.  
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

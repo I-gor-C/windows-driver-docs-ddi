@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 284BAFE1-C632-428D-800C-60C538052C02
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_PPM_IS_PROCESSOR_HALTED, *PPEP_PPM_IS_PROCESSOR_HALTED, PEP_PPM_IS_PROCESSOR_HALTED
+ms.keywords: _PEP_PPM_IS_PROCESSOR_HALTED, PEP_PPM_IS_PROCESSOR_HALTED, *PPEP_PPM_IS_PROCESSOR_HALTED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_PPM_IS_PROCESSOR_HALTED, PEP_PPM_IS_PROCESSOR_HALTED
+req.typenames: PEP_PPM_IS_PROCESSOR_HALTED, *PPEP_PPM_IS_PROCESSOR_HALTED
 ---
 
 # _PEP_PPM_IS_PROCESSOR_HALTED structure
@@ -62,31 +62,6 @@ typedef struct _PEP_PPM_IS_PROCESSOR_HALTED {
 ## -remarks
 This structure is used by the <a href="kernel.pep_notify_ppm_is_processor_halted">PEP_NOTIFY_PPM_IS_PROCESSOR_HALTED</a> notification. The <b>Halted</b> member contains an output value that the platform extension plug-in (PEP) writes to the structure in response to this notification.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

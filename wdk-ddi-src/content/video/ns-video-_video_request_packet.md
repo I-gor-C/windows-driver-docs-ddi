@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 8ccc8c97-4c8c-4278-8eef-a612ce85439e
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _VIDEO_REQUEST_PACKET, VIDEO_REQUEST_PACKET, *PVIDEO_REQUEST_PACKET
+ms.keywords: _VIDEO_REQUEST_PACKET, *PVIDEO_REQUEST_PACKET, VIDEO_REQUEST_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: VIDEO_REQUEST_PACKET, *PVIDEO_REQUEST_PACKET
+req.typenames: *PVIDEO_REQUEST_PACKET, VIDEO_REQUEST_PACKET
 req.product: Windows 10 or later.
 ---
 
@@ -92,21 +92,6 @@ Specifies the size in bytes of the output buffer. A miniport driver cannot enlar
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 5c90dbc2-f42a-4c04-8c77-0ef3a712416c
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ISCSI_DiscoveredTargetPortalGroup, *PISCSI_DiscoveredTargetPortalGroup, ISCSI_DiscoveredTargetPortalGroup
+ms.keywords: _ISCSI_DiscoveredTargetPortalGroup, ISCSI_DiscoveredTargetPortalGroup, *PISCSI_DiscoveredTargetPortalGroup
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PISCSI_DiscoveredTargetPortalGroup, ISCSI_DiscoveredTargetPortalGroup
+req.typenames: ISCSI_DiscoveredTargetPortalGroup, *PISCSI_DiscoveredTargetPortalGroup
 ---
 
 # _ISCSI_DiscoveredTargetPortalGroup structure
@@ -68,21 +68,6 @@ An array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportal.md">I
 ## -remarks
 The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTargetPortalGroup structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561523">ISCSI_DiscoveredTargetPortalGroup WMI Class</a> in <i>Discover.mof</i>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsifnd.h (include Iscsifnd.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

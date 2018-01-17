@@ -83,21 +83,6 @@ The size of the buffer passed in the <i>FileInformation</i> parameter to <a href
 This structure must be aligned on a LONGLONG (8-byte) boundary. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

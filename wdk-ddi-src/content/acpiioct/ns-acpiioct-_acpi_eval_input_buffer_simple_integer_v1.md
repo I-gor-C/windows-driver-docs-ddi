@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: 524e3533-e43c-44eb-b677-dbd023ab5abc
 ms.author: windowsdriverdev
 ms.date: 12/31/2017
-ms.keywords: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1
+ms.keywords: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1
+req.typenames: *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1 structure
@@ -90,31 +90,6 @@ Set <b>IntegerArgument</b> to the input integer value.
 
 For more information about how to use this structure, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/evaluating-acpi-control-methods">Evaluating ACPI Control Methods</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Windows 2000 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Acpiioct.h (include Acpiioct.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

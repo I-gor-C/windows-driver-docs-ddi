@@ -7,8 +7,8 @@ old-location: netvista\riladditionalcallerinfo.htm
 old-project: netvista
 ms.assetid: dd622ebc-beba-4c96-a0e8-97ad614e3937
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILADDITIONALCALLERINFO, RILADDITIONALCALLERINFO, *LPRILADDITIONALCALLERINFO
+ms.date: 1/11/2018
+ms.keywords: RILADDITIONALCALLERINFO, *LPRILADDITIONALCALLERINFO, RILADDITIONALCALLERINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILADDITIONALCALLERINFO, *LPRILADDITIONALCALLERINFO
+req.typenames: *LPRILADDITIONALCALLERINFO, RILADDITIONALCALLERINFO
 ---
 
 # RILADDITIONALCALLERINFO structure
@@ -78,19 +78,3 @@ typedef struct _RILADDITIONALCALLERINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

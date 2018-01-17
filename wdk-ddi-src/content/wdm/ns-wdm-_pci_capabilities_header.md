@@ -248,21 +248,6 @@ Contains an offset into the PCI configuration space that indicates the location 
 All PCI Capability structures have the header described by PCI_CAPABILITIES_HEADER. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

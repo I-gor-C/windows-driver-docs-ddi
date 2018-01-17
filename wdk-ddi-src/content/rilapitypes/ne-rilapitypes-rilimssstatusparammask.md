@@ -7,7 +7,7 @@ old-location: netvista\rilimssstatusparammask_2.htm
 old-project: netvista
 ms.assetid: 0d5896e8-b85e-407c-8b3e-cc8ad95c2ab1
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILIMSSSTATUSPARAMMASK, RILIMSSSTATUSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,19 +79,3 @@ typedef enum _RILIMSSSTATUSPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

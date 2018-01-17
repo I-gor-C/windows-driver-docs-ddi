@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 747cfbfb-2a38-4a0d-b8c6-662d0c3967ba
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.typenames: *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -72,7 +72,7 @@ Pointer to a 32-bit <a href="wdkgloss.d#wdkgloss.device_id#wdkgloss.device_id"><
 
 ### -param VideoPowerControl 
 
-Pointer to a <a href="..\ntddvdeo\ns-ntddvdeo-_video_power_management.md">VIDEO_POWER_MANAGEMENT</a> structure that specifies the power state for which support is being queried.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570542">VIDEO_POWER_MANAGEMENT</a> structure that specifies the power state for which support is being queried.
 
 
 ## -returns
@@ -90,38 +90,12 @@ Pointer to a <a href="..\ntddvdeo\ns-ntddvdeo-_video_power_management.md">VIDEO_
 ## -remarks
 <i>HwVidGetPowerState</i> is a required function in a video miniport driver.
 
-The driver should check the ID specified in <i>HwId</i> to determine which device to query. The driver should then determine whether that device supports the power state specified in the <b>PowerState</b> member of the <a href="..\ntddvdeo\ns-ntddvdeo-_video_power_management.md">VIDEO_POWER_MANAGEMENT</a> structure to which <i>VideoPowerControl</i> points.
+The driver should check the ID specified in <i>HwId</i> to determine which device to query. The driver should then determine whether that device supports the power state specified in the <b>PowerState</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570542">VIDEO_POWER_MANAGEMENT</a> structure to which <i>VideoPowerControl</i> points.
 
 This function must not return the current power state of the device.
 
 <i>HwVidGetPowerState</i> should be made pageable.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -132,7 +106,7 @@ Header
 <a href="..\video\nc-video-pvideo_hw_power_set.md">HwVidSetPowerState</a>
 </dt>
 <dt>
-<a href="..\ntddvdeo\ns-ntddvdeo-_video_power_management.md">VIDEO_POWER_MANAGEMENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570542">VIDEO_POWER_MANAGEMENT</a>
 </dt>
 </dl>
  

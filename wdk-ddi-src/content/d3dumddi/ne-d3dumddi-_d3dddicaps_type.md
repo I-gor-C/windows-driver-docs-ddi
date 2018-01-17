@@ -120,7 +120,7 @@ The driver receives a pointer to a <a href="..\d3dumddi\ns-d3dumddi-_ddraw_mode_
 
 ### -field D3DDDICAPS_GETFORMATCOUNT
 
-The driver receives a pointer to the number of surface formats from the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration type that the device supports. See Remarks.
+The driver receives a pointer to the number of surface formats from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration type that the device supports. See Remarks.
 
 
 ### -field D3DDDICAPS_GETFORMATDATA
@@ -145,7 +145,7 @@ The driver receives a pointer to an array of structures or data types for differ
 
 ### -field D3DDDICAPS_GETD3D3CAPS
 
-The driver receives a pointer to a <a href="..\d3dhal\ns-d3dhal-_d3dhal_globaldriverdata.md">D3DHAL_GLOBALDRIVERDATA</a> structure.
+The driver receives a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545963">D3DHAL_GLOBALDRIVERDATA</a> structure.
 
 
 ### -field D3DDDICAPS_GETD3D5CAPS
@@ -160,7 +160,7 @@ This value is not used.
 
 ### -field D3DDDICAPS_GETD3D7CAPS
 
-The driver receives a pointer to a <a href="..\d3dhal\ns-d3dhal-_d3dhal_d3dextendedcaps.md">D3DHAL_D3DEXTENDEDCAPS</a> structure.
+The driver receives a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544753">D3DHAL_D3DEXTENDEDCAPS</a> structure.
 
 
 ### -field D3DDDICAPS_GETD3D8CAPS
@@ -190,7 +190,7 @@ The driver receives a pointer to the number of render target formats for a parti
 
 ### -field D3DDDICAPS_GETDECODERTFORMATS
 
-The driver receives a pointer to an array of <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration types that represent the render target formats for a particular DirectX VA decode type (which is specified in a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodeinput.md">DXVADDI_DECODEINPUT</a> structure that is pointed to by <b>pInfo</b>).
+The driver receives a pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration types that represent the render target formats for a particular DirectX VA decode type (which is specified in a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_decodeinput.md">DXVADDI_DECODEINPUT</a> structure that is pointed to by <b>pInfo</b>).
 
 
 ### -field D3DDDICAPS_GETDECODECOMPRESSEDBUFFERINFOCOUNT
@@ -230,7 +230,7 @@ The driver receives a pointer to the number of render target formats for a parti
 
 ### -field D3DDDICAPS_GETVIDEOPROCESSORRTFORMATS
 
-The driver receives a pointer to an array of <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration types that represent the render target formats for a particular DirectX VA video processor device type (which is pointed to by the <b>pVideoProcGuid</b> member of a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videoprocessorinput.md">DXVADDI_VIDEOPROCESSORINPUT</a> structure that is pointed to by <b>pInfo</b>).
+The driver receives a pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration types that represent the render target formats for a particular DirectX VA video processor device type (which is pointed to by the <b>pVideoProcGuid</b> member of a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videoprocessorinput.md">DXVADDI_VIDEOPROCESSORINPUT</a> structure that is pointed to by <b>pInfo</b>).
 
 
 ### -field D3DDDICAPS_GETVIDEOPROCESSORRTSUBSTREAMFORMATCOUNT
@@ -240,7 +240,7 @@ The driver receives a pointer to the number of render target formats for a parti
 
 ### -field D3DDDICAPS_GETVIDEOPROCESSORRTSUBSTREAMFORMATS
 
-The driver receives a pointer to an array of <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration types that represent the render target formats for a particular DirectX VA video processor substream (which is pointed to by the <b>pVideoProcGuid</b> member of a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videoprocessorinput.md">DXVADDI_VIDEOPROCESSORINPUT</a> structure that is pointed to by <b>pInfo</b>).
+The driver receives a pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration types that represent the render target formats for a particular DirectX VA video processor substream (which is pointed to by the <b>pVideoProcGuid</b> member of a <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videoprocessorinput.md">DXVADDI_VIDEOPROCESSORINPUT</a> structure that is pointed to by <b>pInfo</b>).
 
 
 ### -field D3DDDICAPS_GETVIDEOPROCESSORCAPS
@@ -296,14 +296,14 @@ The driver receives a pointer to a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_v
 
 ### -field D3DDDICAPS_DXVAHD_GETVPOUTPUTFORMATS
 
-The driver receives an array of <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration types that represent the output formats for the decode device (which is specified in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_device_desc.md">DXVAHDDDI_DEVICE_DESC</a> structure that is pointed to by <b>pInfo</b>).
+The driver receives an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration types that represent the output formats for the decode device (which is specified in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_device_desc.md">DXVAHDDDI_DEVICE_DESC</a> structure that is pointed to by <b>pInfo</b>).
 
  Supported starting with Windows 7.
 
 
 ### -field D3DDDICAPS_DXVAHD_GETVPINPUTFORMATS
 
-The driver receives an array of <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration types that represent the input formats for the decode device (which is specified in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_device_desc.md">DXVAHDDDI_DEVICE_DESC</a> structure that is pointed to by <b>pInfo</b>).
+The driver receives an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration types that represent the input formats for the decode device (which is specified in a <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_device_desc.md">DXVAHDDDI_DEVICE_DESC</a> structure that is pointed to by <b>pInfo</b>).
 
 Supported starting with Windows 7.
 
@@ -427,31 +427,6 @@ Supported starting with Windows 8.1.
 For information on how to specify <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> member values along with <b>D3DDDICAPS_TYPE</b> constant values, see Remarks of <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with  Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -476,7 +451,7 @@ Header
 <a href="..\d3dumddi\ns-d3dumddi-d3dddicaps_simple_instancing_support.md">D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT</a>
 </dt>
 <dt>
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\ns-d3dumddi-_ddicertificateinfo.md">DDICERTIFICATEINFO</a>

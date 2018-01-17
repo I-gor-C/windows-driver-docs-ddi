@@ -7,8 +7,8 @@ old-location: netvista\rilpersodeactivationstate.htm
 old-project: netvista
 ms.assetid: a43948e4-ab31-495a-ace2-4cb4a1119af5
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILPERSODEACTIVATIONSTATE, *LPRILPERSODEACTIVATIONSTATE, RILPERSODEACTIVATIONSTATE
+ms.date: 1/11/2018
+ms.keywords: RILPERSODEACTIVATIONSTATE, RILPERSODEACTIVATIONSTATE, *LPRILPERSODEACTIVATIONSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILPERSODEACTIVATIONSTATE, RILPERSODEACTIVATIONSTATE
+req.typenames: RILPERSODEACTIVATIONSTATE, *LPRILPERSODEACTIVATIONSTATE
 ---
 
 # RILPERSODEACTIVATIONSTATE structure
@@ -74,19 +74,3 @@ typedef struct _RILPERSODEACTIVATIONSTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

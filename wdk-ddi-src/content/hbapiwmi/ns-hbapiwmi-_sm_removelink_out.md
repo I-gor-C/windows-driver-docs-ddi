@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f3b82d62-8596-4bb9-b20b-39f232527d7a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SM_RemoveLink_OUT, SM_RemoveLink_OUT, *PSM_RemoveLink_OUT
+ms.keywords: _SM_RemoveLink_OUT, *PSM_RemoveLink_OUT, SM_RemoveLink_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SM_RemoveLink_OUT, *PSM_RemoveLink_OUT
+req.typenames: *PSM_RemoveLink_OUT, SM_RemoveLink_OUT
 ---
 
 # _SM_RemoveLink_OUT structure
@@ -60,20 +60,4 @@ The status of the operation. For a list of allowed values and their descriptions
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_RemoveLink_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_EventControl WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_RemoveLink_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_EventControl WMI class.</p>

@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 3683735d-ce00-4615-9782-dee9f4753cc7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PCPROPERTY_REQUEST, PCPROPERTY_REQUEST, *PPCPROPERTY_REQUEST
+ms.keywords: _PCPROPERTY_REQUEST, *PPCPROPERTY_REQUEST, PCPROPERTY_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PCPROPERTY_REQUEST, *PPCPROPERTY_REQUEST
+req.typenames: *PPCPROPERTY_REQUEST, PCPROPERTY_REQUEST
 ---
 
 # _PCPROPERTY_REQUEST structure
@@ -82,7 +82,7 @@ Specifies a node ID. This member identifies the target node for the request. If 
 
 ### -field PropertyItem
 
-Pointer to the property item, which is a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a>.
+Pointer to the property item, which is a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_3.md">PCPROPERTY_ITEM</a>.
 
 
 ### -field Verb
@@ -139,7 +139,7 @@ KSPROPERTY_TYPE_TOPOLOGY
 
 </li>
 </ul>
-These flags are described in <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>.
+These flags are described in <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>.
 
 
 ### -field InstanceSize
@@ -164,15 +164,15 @@ Pointer to the property-value buffer
 
 ### -field Irp
 
-Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> containing the client's original property request
+Pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> containing the client's original property request
 
 
 ## -remarks
-This is the structure that the port driver passes to the miniport driver's property-handler routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a> structure contains a function pointer to a property handler that takes a <b>PCPROPERTY_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCPROPERTY_REQUEST</b> structure, extracts the relevant information from the original property request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
+This is the structure that the port driver passes to the miniport driver's property-handler routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_3.md">PCPROPERTY_ITEM</a> structure contains a function pointer to a property handler that takes a <b>PCPROPERTY_REQUEST</b> pointer as its only call parameter. The port driver allocates a <b>PCPROPERTY_REQUEST</b> structure, extracts the relevant information from the original property request (which the <b>Irp</b> member points to), and loads the information into this structure before calling the handler.
 
 In WDM audio, the target of a property request can be either a filter instance or a pin instance. The target can also include a node ID.
 
-In the client's original property request, the property-instance data always begins with a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> or <a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a> structure, but can include additional information. The port driver adjusts the <b>PCPROPERTY_REQUEST</b> structure's <b>Instance</b> member to point to this additional information, if it exists. For details, see <a href="https://msdn.microsoft.com/4bf176ae-b3fd-47e6-9802-a92ef5e9904f">Audio Property Handlers</a>.
+In the client's original property request, the property-instance data always begins with a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff537143">KSNODEPROPERTY</a> structure, but can include additional information. The port driver adjusts the <b>PCPROPERTY_REQUEST</b> structure's <b>Instance</b> member to point to this additional information, if it exists. For details, see <a href="https://msdn.microsoft.com/4bf176ae-b3fd-47e6-9802-a92ef5e9904f">Audio Property Handlers</a>.
 
 The <b>MajorTarget</b> and <b>MinorTarget</b> members are <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bda378332">IUnknown</a> pointers to the main miniport object and an associated stream object, respectively. The property handler can query these objects for their miniport and stream interfaces. If the target for the property request is a filter instance, <b>MajorTarget</b> points to the miniport object for that filter instance, and <b>MinorTarget</b> is <b>NULL</b>. If the target is a pin instance, <b>MinorTarget</b> points to the stream object for that pin, and <b>MajorTarget</b> points to the miniport object for the filter that the pin is attached to.
 
@@ -185,34 +185,19 @@ The handler can call <a href="https://msdn.microsoft.com/54d5ff80-18db-43f2-b636
 For background information about audio properties, see <a href="https://msdn.microsoft.com/ffc5834f-30c8-40b5-b57b-fe784331690c">Audio Endpoints, Properties and Events</a>. For a list of the available audio-specific properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff536197">Audio Drivers Property Sets</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_3.md">PCPROPERTY_ITEM</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c93_3.md">PCPROPERTY_ITEM</a>
 </dt>
 <dt>
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
 </dt>
 <dt>
-<a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537143">KSNODEPROPERTY</a>
 </dt>
 <dt>
-<a href="..\ksmedia\ns-ksmedia-ksnodeproperty_audio_channel.md">KSNODEPROPERTY_AUDIO_CHANNEL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537145">KSNODEPROPERTY_AUDIO_CHANNEL</a>
 </dt>
 </dl>
  

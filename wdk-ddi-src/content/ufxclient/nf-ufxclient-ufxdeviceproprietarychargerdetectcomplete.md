@@ -75,40 +75,4 @@ The client driver calls <b>UfxDeviceProprietaryChargerDetectComplete</b> after a
 
   Do not call <b>UfxDeviceProprietaryChargerDetectComplete</b>  before UFX calls the client driver's <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_detect.md">EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER</a> callback function.
 
-The following snippet shows how a client driver calls <b>UfxDeviceProprietaryChargerDetectComplete</b>:
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxclient.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+The following snippet shows how a client driver calls <b>UfxDeviceProprietaryChargerDetectComplete</b>:</p>

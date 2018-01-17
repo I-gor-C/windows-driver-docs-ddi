@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Bdasup.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PKSP_BDA_NODE_PIN, KSP_BDA_NODE_PIN
+req.typenames: DVINFO, *PDVINFO
 ---
 
 # BdaValidateNodeProperty function
@@ -62,7 +62,7 @@ Points to the IRP for the request to validate that the current pin controls the 
 
 ### -param pKSProperty [in]
 
-Points to a <a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a> structure that describes the property and request type of the property request.
+Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> structure that describes the property and request type of the property request.
 
 
 ## -returns
@@ -73,67 +73,10 @@ Returns STATUS_SUCCESS or an appropriate error code.
 A pin method in a BDA minidriver calls the <b>BdaValidateNodeProperty</b> function to validate that the pin controls a specific node property after the minidriver receives the node property request from the network provider. This node property request can be, for example, a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564355">KSPROPERTY_BDA_RF_TUNER_FREQUENCY</a> request of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566542">KSPROPSETID_BdaFrequencyFilter</a> property set or a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564286">KSPROPERTY_BDA_AUTODEMODULATE_START</a> request of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566533">KSPROPSETID_BdaAutodemodulate</a> property set. These property sets manipulate tuner and demodulator nodes. After successfully calling <b>BdaValidateNodeProperty</b>, the minidriver obtains a pointer to the BDA filter from the passed IRP so that the minidriver can perform an operation on the particular node. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bdasup.h (include Bdasup.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bdasup.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\ks\nf-ks-ikscontrol-ksproperty.md">KSPROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564286">KSPROPERTY_BDA_AUTODEMODULATE_START</a>

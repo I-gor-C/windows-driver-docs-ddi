@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 68128d39-2490-4c6b-8780-e5aa542a4e3d
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ISCSI_DiscoveredTargetPortal2, ISCSI_DiscoveredTargetPortal2, *PISCSI_DiscoveredTargetPortal2
+ms.keywords: _ISCSI_DiscoveredTargetPortal2, *PISCSI_DiscoveredTargetPortal2, ISCSI_DiscoveredTargetPortal2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: ISCSI_DiscoveredTargetPortal2, *PISCSI_DiscoveredTargetPortal2
+req.typenames: *PISCSI_DiscoveredTargetPortal2, ISCSI_DiscoveredTargetPortal2
 ---
 
 # _ISCSI_DiscoveredTargetPortal2 structure
@@ -174,21 +174,6 @@ In general, management applications should use the iSCSI client PSKey command to
 
 The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTargetPortal2 structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561524">ISCSI_DiscoveredTargetPortal WMI Class</a> in <i>Discover.mof</i>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsifnd.h (include Iscsifnd.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -73,32 +73,6 @@ The format of the error records that are used by WHEA are based on the <i>Common
 A user-mode application can retrieve the error record from the hardware error event for analysis. For more information about how to develop an application to retrieve error records from hardware error events, see <a href="https://msdn.microsoft.com/df1790ec-5a7f-41c2-94df-757621e67ade">WHEA Hardware Error Event Processing Applications</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

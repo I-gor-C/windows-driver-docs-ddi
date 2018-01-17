@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: e3ab83cf-96ed-468d-895f-23b90951cfb5
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_STACK_FRAME, DEBUG_STACK_FRAME, *PDEBUG_STACK_FRAME
+ms.keywords: _DEBUG_STACK_FRAME, *PDEBUG_STACK_FRAME, DEBUG_STACK_FRAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DEBUG_STACK_FRAME, *PDEBUG_STACK_FRAME
+req.typenames: *PDEBUG_STACK_FRAME, DEBUG_STACK_FRAME
 ---
 
 # _DEBUG_STACK_FRAME structure
@@ -108,19 +108,3 @@ The index of the frame.  This index counts the number of frames from the top of 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

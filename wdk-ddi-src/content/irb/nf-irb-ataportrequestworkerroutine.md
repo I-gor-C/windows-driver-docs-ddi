@@ -76,31 +76,4 @@ The worker routine is not synchronized with the interrupt.
 
 When the port driver calls the worker routine, the port driver will pass the pointer to the channel extension that is stored in <i>ChannelExtension</i>.
 
-The <i>WorkerRoutine</i> function pointer is declared in <i>Irb.h</i> as follows:
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Ata.h or Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The <i>WorkerRoutine</i> function pointer is declared in <i>Irb.h</i> as follows:</p>

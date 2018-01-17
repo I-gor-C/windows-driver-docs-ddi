@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: LAMP_INTENSITY_WHITE
+req.typenames: KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ---
 
 # ChangerSetPosition function
@@ -39,7 +39,7 @@ req.typenames: LAMP_INTENSITY_WHITE
 
 
 ## -description
-<b>ChangerSetPosition</b> handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_set_position.md">IOCTL_CHANGER_SET_POSITION</a>. 
+<b>ChangerSetPosition</b> handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="https://msdn.microsoft.com/library/windows/hardware/ff559425">IOCTL_CHANGER_SET_POSITION</a>. 
 
 
 
@@ -85,61 +85,25 @@ This routine is required.
 
 <b>ChangerSetPosition</b> sets the changer's robotic transport mechanism to the specified destination, typically to optimize moving or exchanging media by first positioning the transport.
 
-The CHANGER_POSITION_TO_ELEMENT flag in <b>Features0</b> of <a href="..\ntddchgr\ns-ntddchgr-_get_changer_parameters.md">GET_CHANGER_PARAMETERS</a> indicates whether the changer supports this functionality.
+The CHANGER_POSITION_TO_ELEMENT flag in <b>Features0</b> of <a href="https://msdn.microsoft.com/library/windows/hardware/ff554979">GET_CHANGER_PARAMETERS</a> indicates whether the changer supports this functionality.
 
-The changer class driver checks the input buffer length in the I/O stack location before calling <b>ChangerSetPosition</b>. <i>Irp</i><b>-&gt;SystemBuffer</b> points to a <a href="..\ntddchgr\ns-ntddchgr-_changer_set_position.md">CHANGER_SET_POSITION</a> structure as an input parameter that indicates the transport element and the destination to set. 
+The changer class driver checks the input buffer length in the I/O stack location before calling <b>ChangerSetPosition</b>. <i>Irp</i><b>-&gt;SystemBuffer</b> points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551482">CHANGER_SET_POSITION</a> structure as an input parameter that indicates the transport element and the destination to set. 
 
 <b>ChangerSetPosition</b> first verifies that the transport and destination element addresses are valid and converts zero-based element addresses to device-specific addresses. It then builds an SRB with a CDB to position the element and sends it to the system port driver.
 
 <b>ChangerSetPosition</b> sets the <b>Information</b> field in the I/O status block to <b>sizeof</b>(CHANGER_SET_POSITION) before returning to the changer class driver. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mcd.h (include Mcd.h or Ntddchgr.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_element.md">CHANGER_ELEMENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551457">CHANGER_ELEMENT</a>
 </dt>
 <dt>
-<a href="..\ntddchgr\ns-ntddchgr-_changer_set_position.md">CHANGER_SET_POSITION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551482">CHANGER_SET_POSITION</a>
 </dt>
 <dt>
-<a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_set_position.md">, IOCTL_CHANGER_SET_POSITION</a>
+<a href="https://msdn.microsoft.com/cd4f5872-d2cb-42ee-b78c-6b7d48d41e34">, IOCTL_CHANGER_SET_POSITION</a>
 </dt>
 </dl>
  

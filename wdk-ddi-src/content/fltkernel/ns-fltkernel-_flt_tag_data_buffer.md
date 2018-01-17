@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: a101e0c8-7121-42b6-aa0e-299f37af8e47
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FLT_TAG_DATA_BUFFER, FLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER
+ms.keywords: _FLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER, FLT_TAG_DATA_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: FLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER
+req.typenames: *PFLT_TAG_DATA_BUFFER, FLT_TAG_DATA_BUFFER
 ---
 
 # _FLT_TAG_DATA_BUFFER structure
@@ -199,21 +199,6 @@ A pointer to an FLT_TAG_DATA_BUFFER structure that contains reparse point tag da
 
 The FLT_TAG_DATA_BUFFER_HEADER_SIZE macro returns the size of the fixed portion of the FLT_TAG_DATA_BUFFER structure. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

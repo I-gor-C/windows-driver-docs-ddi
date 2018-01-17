@@ -7,7 +7,7 @@ old-location: netvista\rilnitznotificationcaps_2.htm
 old-project: netvista
 ms.assetid: 74f62528-57ec-4142-a1b0-0d779e9d0ca0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILNITZNOTIFICATIONCAPS, RILNITZNOTIFICATIONCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILNITZNOTIFICATIONCAPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

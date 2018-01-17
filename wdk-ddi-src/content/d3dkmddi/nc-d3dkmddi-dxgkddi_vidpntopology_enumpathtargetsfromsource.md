@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: ca925b3c-8141-419d-99a1-43764ec07315
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords: DXGKDDI_UPDATEOVERLAY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
 # DXGKDDI_VIDPNTOPOLOGY_ENUMPATHTARGETSFROMSOURCE callback
@@ -114,52 +114,6 @@ The D3DKMDT_HVIDPNTOPOLOGY and D3DKMDT_VIDPN_PRESENT_PATH_INDEX data types are d
 
 The D3DDDI_VIDEO_PRESENT_SOURCE_ID and D3DDDI_VIDEO_PRESENT_TARGET_ID data types are defined in <i>D3dukmdt.h</i>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

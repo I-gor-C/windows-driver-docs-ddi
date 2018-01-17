@@ -7,8 +7,8 @@ old-location: netvista\rilcloseuicclogicalchannelparams.htm
 old-project: netvista
 ms.assetid: 0c06bcd7-d475-40b8-b997-fe65047db331
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCLOSEUICCLOGICALCHANNELPARAMS, RILCLOSEUICCLOGICALCHANNELPARAMS, *LPRILCLOSEUICCLOGICALCHANNELPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILCLOSEUICCLOGICALCHANNELPARAMS, *LPRILCLOSEUICCLOGICALCHANNELPARAMS, RILCLOSEUICCLOGICALCHANNELPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILCLOSEUICCLOGICALCHANNELPARAMS, *LPRILCLOSEUICCLOGICALCHANNELPARAMS
+req.typenames: *LPRILCLOSEUICCLOGICALCHANNELPARAMS, RILCLOSEUICCLOGICALCHANNELPARAMS
 ---
 
 # RILCLOSEUICCLOGICALCHANNELPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILCLOSEUICCLOGICALCHANNELPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

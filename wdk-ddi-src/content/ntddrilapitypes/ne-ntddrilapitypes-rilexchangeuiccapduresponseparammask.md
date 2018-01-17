@@ -7,7 +7,7 @@ old-location: netvista\rilexchangeuiccapduresponseparammask.htm
 old-project: netvista
 ms.assetid: 24daa47b-993c-49ee-b4e2-462cd7570f3c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILEXCHANGEUICCAPDURESPONSEPARAMMASK, RILEXCHANGEUICCAPDURESPONSEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,19 +62,3 @@ typedef enum _RILEXCHANGEUICCAPDURESPONSEPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

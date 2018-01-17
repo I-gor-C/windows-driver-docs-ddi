@@ -7,7 +7,7 @@ old-location: netvista\wdi_bluetooth_coexistence_support.htm
 old-project: netvista
 ms.assetid: 88642615-D5DD-4C0E-BAAA-308EB6050E77
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_BLUETOOTH_COEXISTENCE_SUPPORT, WDI_BLUETOOTH_COEXISTENCE_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,39 +85,3 @@ Wi-Fi and Bluetooth are mutually exclusive. One of the two stops working.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

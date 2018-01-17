@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 666f4aea-2fcb-46cf-8d25-d1322c0517c9
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_FCPTargetMapping, HBA_FCPTARGETMAPPING, *PHBA_FCPTARGETMAPPING
+ms.keywords: HBA_FCPTargetMapping, *PHBA_FCPTARGETMAPPING, HBA_FCPTARGETMAPPING
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HBA_FCPTARGETMAPPING, *PHBA_FCPTARGETMAPPING
+req.typenames: *PHBA_FCPTARGETMAPPING, HBA_FCPTARGETMAPPING
 ---
 
 # HBA_FCPTargetMapping structure
@@ -67,21 +67,6 @@ Contains a variable length array of structures of type <a href="..\hbaapi\ns-hba
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

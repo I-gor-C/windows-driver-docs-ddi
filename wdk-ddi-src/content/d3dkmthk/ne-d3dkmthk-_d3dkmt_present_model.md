@@ -104,31 +104,6 @@ The present-operation model is redirected composition swap chain presentation. T
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-D3DKMT_PRESENT_MODEL is supported beginning with the Windows 7 operating system. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

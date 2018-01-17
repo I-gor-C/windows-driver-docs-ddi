@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: SHIMOPTS, *PSHIMOPTS
+req.typenames: POS_CX_ATTRIBUTES
 req.product: Windows 10 or later.
 ---
 
@@ -77,42 +77,6 @@ The <b>RxAcquirePrefixTableLockExclusive</b> macro calls the  <b>RxpAcquirePrefi
 
 Normal kernel APC delivery should be disabled before calling this routine. Disable normal kernel APC delivery by calling <b>FsRtlEnterFileSystem</b> or <b>KeEnterCriticalRegion</b>. Delivery must remain disabled until the resource is released, at which point it can be reenabled by calling <b>FsRtlExitFileSystem</b> or <b>KeLeaveCriticalRegion</b>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Prefix.h (include Prefix.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

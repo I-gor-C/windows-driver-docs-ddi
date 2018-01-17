@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 2A3A1723-989E-44FD-9727-7A01218652D1
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.keywords: _USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBFN_USB_STRING, USBFN_USB_STRING
+req.typenames: *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 req.product: Windows 10 or later.
 ---
 
@@ -80,21 +80,6 @@ This request must be sent after sending the  <a href="..\usbfnioctl\ni-usbfnioct
 Upon receiving this request, the filter driver
     communicates with the hardware and brings the controller out of LPM.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnioctl.h (include Usbfnioctl.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

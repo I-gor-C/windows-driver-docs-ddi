@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 9bbf2f63-4479-47ee-a014-78b13deccb4c
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MS_SMHBA_SAS_PHY, *PMS_SMHBA_SAS_PHY, MS_SMHBA_SAS_PHY
+ms.keywords: _MS_SMHBA_SAS_PHY, MS_SMHBA_SAS_PHY, *PMS_SMHBA_SAS_PHY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMS_SMHBA_SAS_PHY, MS_SMHBA_SAS_PHY
+req.typenames: MS_SMHBA_SAS_PHY, *PMS_SMHBA_SAS_PHY
 ---
 
 # _MS_SMHBA_SAS_PHY structure
@@ -96,20 +96,4 @@ The Port_Identifier that has the smallest value of any Port_Identifier of an exp
 
 
 ## -remarks
-Link rates are defined in hpaapi.h as HBA_SASSPEED_1_5GBIT and HBA_SASSPEED_3GBIT.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+Link rates are defined in hpaapi.h as HBA_SASSPEED_1_5GBIT and HBA_SASSPEED_3GBIT.</p>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: e8892d6f-eb82-4262-9105-3c77d8295a3a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SM_AddPort_OUT, *PSM_AddPort_OUT, SM_AddPort_OUT
+ms.keywords: _SM_AddPort_OUT, SM_AddPort_OUT, *PSM_AddPort_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSM_AddPort_OUT, SM_AddPort_OUT
+req.typenames: SM_AddPort_OUT, *PSM_AddPort_OUT
 ---
 
 # _SM_AddPort_OUT structure
@@ -60,19 +60,3 @@ The status of the operation. For a list of allowed values and their descriptions
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

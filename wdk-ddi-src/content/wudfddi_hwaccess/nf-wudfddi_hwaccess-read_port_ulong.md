@@ -7,7 +7,7 @@ old-location: wdf\read_port_ulong.htm
 old-project: wdf
 ms.assetid: 2B507B58-8CD0-4D66-93E9-FF67D7246F3C
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: READ_PORT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUMDF_IO_TARGET_OPEN_PARAMS, UMDF_IO_TARGET_OPEN_PARAMS
+req.typenames: UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -73,51 +73,4 @@ Specifies the port address, which must be a mapped memory range in I/O space.
 
 
 ## -remarks
-For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD-B292-CC1875EF7F7D">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.11
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi_hwaccess.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information, see <a href="https://msdn.microsoft.com/A0640E60-B0DF-4CAD-B292-CC1875EF7F7D">Reading and Writing to Device Registers in UMDF 1.x Drivers</a>.</p>

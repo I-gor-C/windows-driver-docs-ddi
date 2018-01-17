@@ -65,12 +65,12 @@ A pointer to a <a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</
 
 ### -param DeviceObject [in]
 
-A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>. 
+A pointer to the driver's <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>. 
 
 
 ### -param Irp [in, out]
 
-A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>.
+A pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a>.
 
 
 ### -param IrpDisposition [out]
@@ -120,72 +120,6 @@ When a driver receives an <b>IRP_MJ_SYSTEM_CONTROL</b> request with a WMI IRP mi
 
 A driver must be running at IRQL PASSIVE_LEVEL when it forwards an <b>IRP_MJ_SYSTEM_CONTROL</b> request to the next-lower driver.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 2000 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wmilib.h (include Wmilib.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wmilib.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL (see Remarks section)
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556174">WmiComplete</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

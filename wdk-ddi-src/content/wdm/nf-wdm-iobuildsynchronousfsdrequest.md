@@ -68,7 +68,7 @@ The major function code for the IRP. This code can be <a href="https://msdn.micr
 
 ### -param DeviceObject [in]
 
-A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure for the next-lower driver's device object, which represents the target device.
+A pointer to the <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure for the next-lower driver's device object, which represents the target device.
 
 
 ### -param Buffer [in, out]
@@ -97,7 +97,7 @@ A pointer to a location that receives the I/O status block that is set when the 
 
 
 ## -returns
-If the operation succeeds, <b>IoBuildSynchronousFsdRequest</b> returns a pointer to an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure, with the next-lower driver's I/O stack location set up from the supplied parameters. Otherwise, the routine returns <b>NULL</b>.
+If the operation succeeds, <b>IoBuildSynchronousFsdRequest</b> returns a pointer to an initialized <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure, with the next-lower driver's I/O stack location set up from the supplied parameters. Otherwise, the routine returns <b>NULL</b>.
 
 
 ## -remarks
@@ -113,83 +113,6 @@ IRPs that are created by <b>IoBuildSynchronousFsdRequest</b> must be completed b
 
 <b>IoBuildSynchronousFsdRequest</b> queues the IRPs that it creates to an IRP queue that is specific to the current thread. If the thread exits, the I/O manager cancels the IRP. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975149">ForwardedAtBadIrqlFsdSync</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975171">IoBuildSynchronousFsdRequestNoFree</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975173">IoBuildSynchronousFsdRequestWait</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975174">IoBuildSynchronousFsdRequestWaitTimeout</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975249">SignalEventInCompletion</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -209,7 +132,7 @@ DDI compliance rules
 <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>

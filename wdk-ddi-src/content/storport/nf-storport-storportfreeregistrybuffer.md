@@ -74,43 +74,6 @@ None
 The <b>StorPortFreeRegistryBuffer</b> routine frees the buffer that was allocated by <a href="..\storport\nf-storport-storportallocateregistrybuffer.md">StorPortAllocateRegistryBuffer</a>. Miniport drivers can only have one registry buffer open at a time. After the miniport driver calls the <b>StorPortFreeRegistryBuffer</b> routine, subsequent calls by the miniport driver to <b>StorPortAllocateRegistryBuffer</b> will succeed. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

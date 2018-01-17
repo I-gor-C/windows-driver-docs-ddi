@@ -7,7 +7,7 @@ old-location: netvista\rilcallhandoverphase.htm
 old-project: netvista
 ms.assetid: c97fcbba-a127-4974-bda7-47456c05558f
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLHANDOVERPHASE, RILCALLHANDOVERPHASE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILCALLHANDOVERPHASE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: df8498e2-a3b5-4bc8-b6d2-0d444f1d1485
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords: _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSETRESULT_INFO, SETRESULT_INFO
+req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ---
 
 # PFND3D10DDI_RESOURCEISSTAGINGBUSY callback
@@ -79,42 +79,6 @@ The user-mode display driver is not required to flush any partially built comman
 
 <i>ResourceIsStagingBusy</i> should not encounter any errors. However, <i>ResourceIsStagingBusy</i> might call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md">pfnSetErrorCb</a> function for critical errors. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

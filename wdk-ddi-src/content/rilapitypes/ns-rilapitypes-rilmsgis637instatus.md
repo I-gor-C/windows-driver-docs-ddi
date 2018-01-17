@@ -7,7 +7,7 @@ old-location: netvista\rilmsgis637instatus_2.htm
 old-project: netvista
 ms.assetid: 70215db8-52c0-48c5-8e59-c60a61fbd07e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGIS637INSTATUS, RILMSGIS637INSTATUS, *LPRILMSGIS637INSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -103,19 +103,3 @@ typedef struct _RILMSGIS637INSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

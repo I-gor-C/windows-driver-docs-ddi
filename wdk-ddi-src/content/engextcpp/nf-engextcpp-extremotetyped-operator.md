@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+req.typenames: *PDRMRIGHTS, DRMRIGHTS
 ---
 
 # ExtRemoteTyped::operator* method
@@ -66,32 +66,6 @@ If the typed data represented by this object is an array, the first element in t
 
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff544233">ExtRemoteTyped::Dereference</a> method performs the same function.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Engextcpp.hpp (include Engextcpp.hpp)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -80,21 +80,6 @@ A pointer to the <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_u
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmtcpciportcontroller.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

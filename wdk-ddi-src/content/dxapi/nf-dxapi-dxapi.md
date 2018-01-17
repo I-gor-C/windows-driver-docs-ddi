@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Dxapi.lib
 req.dll: 
 req.irql: 
-req.typenames: DRMRIGHTS, *PDRMRIGHTS
+req.typenames: *PDRMRIGHTS, DRMRIGHTS
 ---
 
 # DxApi function
@@ -180,43 +180,6 @@ The following function identifiers are defined for the <b>DxApi</b> function in 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551514">DD_DXAPI_UNREGISTER_CALLBACK</a>
 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dxapi.h (include Ddkmapi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dxapi.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

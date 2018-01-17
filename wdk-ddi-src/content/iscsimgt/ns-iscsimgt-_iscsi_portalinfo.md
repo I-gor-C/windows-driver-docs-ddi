@@ -132,21 +132,6 @@ The portal group tag to which the portal belongs.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

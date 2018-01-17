@@ -87,44 +87,6 @@ HBA hardware can safely access an IRB extension.
 The miniport driver must not call <b>AtaPortGetUncachedExtension</b> from any routine other than its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a> routine, and only when it is processing a control action of <b>StartChannel</b>. Calls of <b>AtaPortGetUncachedExtension</b> from other miniport driver routines result in incorrect operation or even system failure. The port driver automatically frees the uncached extension after it invokes <b>IdeHwControl</b> with the <b>StopChannel</b> control action.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Ata.h or Irb.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ataport.lib; </dt>
-<dt>Pciidex.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

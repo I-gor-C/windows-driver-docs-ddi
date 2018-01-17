@@ -7,7 +7,7 @@ old-location: netvista\rilgetdeviceinfoparams.htm
 old-project: netvista
 ms.assetid: 4cb3be01-7e74-4c98-9c4b-2e1c78d96001
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILGETDEVICEINFOPARAMS, *LPRILGETDEVICEINFOPARAMS, RILGETDEVICEINFOPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,19 +62,3 @@ typedef struct _RILGETDEVICEINFOPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

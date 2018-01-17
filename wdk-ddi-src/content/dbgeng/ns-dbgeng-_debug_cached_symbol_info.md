@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: CC7914B6-DCE1-45D1-84D3-5FF1449AD565
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO
+ms.keywords: _DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DEBUG_CACHED_SYMBOL_INFO, *PDEBUG_CACHED_SYMBOL_INFO
+req.typenames: *PDEBUG_CACHED_SYMBOL_INFO, DEBUG_CACHED_SYMBOL_INFO
 ---
 
 # _DEBUG_CACHED_SYMBOL_INFO structure
@@ -84,19 +84,3 @@ An argument value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

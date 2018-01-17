@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: e2c91e9c-f8ab-48ba-b98a-332cb0ac7077
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords: _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSETRESULT_INFO, SETRESULT_INFO
+req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORGETSTREAMEXTENSION callback
@@ -124,52 +124,6 @@ A pointer to a buffer that contains the private state data.
 ## -remarks
 The Microsoft Direct3D runtime does not validate any parameter data before it calls the  <b>VideoProcessorGetStreamExtension</b> function.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

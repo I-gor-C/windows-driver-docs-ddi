@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: c52441d8-b273-4e1f-b251-2b35afeda55d
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _SetDSMCounters_IN, *PSetDSMCounters_IN, SetDSMCounters_IN
+ms.keywords: _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetDSMCounters_IN, SetDSMCounters_IN
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 # PMRX_CHKDIR_CALLDOWN callback
@@ -80,32 +80,6 @@ A pointer to a Unicode string that contains the name of the remote directory.
 ## -remarks
 <i>MRxIsValidDirectory</i> is called as part of create or open request processing for the remaining name string beyond the V_NET_ROOT structure, if the <b>IrpSp-&gt;Parameters.Create.Options</b> member has the FILE_CREATE_TREE_CONNECTION bit set on. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mrx.h (include Mrx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

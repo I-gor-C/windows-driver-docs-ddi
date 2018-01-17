@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemimsenablementstate_2.htm
 old-project: netvista
 ms.assetid: 6cce25c0-a192-4472-b0ac-3b4fadf8f9e2
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRESETMODEMIMSENABLEMENTSTATE, RILRESETMODEMIMSENABLEMENTSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,3 @@ typedef enum _RILRESETMODEMIMSENABLEMENTSTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

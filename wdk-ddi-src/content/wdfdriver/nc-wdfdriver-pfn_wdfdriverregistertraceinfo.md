@@ -7,7 +7,7 @@ old-location: wdf\wdfdriverregistertraceinfo.htm
 old-project: wdf
 ms.assetid: f2d332cd-d744-444c-b616-d8400ad30d43
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: PFN_WDFDRIVERREGISTERTRACEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Not applicable
-req.typenames: *PWDF_DPC_CONFIG, WDF_DPC_CONFIG
+req.typenames: WDF_DPC_CONFIG, *PWDF_DPC_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -69,38 +69,3 @@ NTSTATUS WdfDriverRegisterTraceInfo(
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfdriver.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Not applicable
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
-</td>
-</tr>
-</table>

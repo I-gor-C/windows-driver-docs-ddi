@@ -68,54 +68,8 @@ The port driver calls this method in response to a <a href="https://msdn.microso
 
 Typically, when DMA-driven event notification is enabled, the DMA hardware is programmed to generate hardware interrupts at the intended notification points in the cyclic audio buffer.  When the driver interrupt service routine (ISR) detects this interrupt, it queues a deferred procedure call (DPC).  The DPC, in turn, signals each registered event. We recommend using a try/except construct  around the event that signals the call.
 
-For more information about the behavior of the KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT property, see the <a href="..\ksmedia\ns-ksmedia-ksrtaudio_notification_event_property.md">KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</a>.
+For more information about the behavior of the KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT property, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537499">KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Passive level.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -126,7 +80,7 @@ Passive level.
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537385">KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT</a>
 </dt>
 <dt>
-<a href="..\ksmedia\ns-ksmedia-ksrtaudio_notification_event_property.md">KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537499">KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</a>
 </dt>
 </dl>
  

@@ -7,7 +7,7 @@ old-location: netvista\rilexecutorfocusstateparammask_2.htm
 old-project: netvista
 ms.assetid: 3c5d14cf-bfbc-439c-9ade-1a672f0b3fca
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILEXECUTORFOCUSSTATEPARAMMASK, RILEXECUTORFOCUSSTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILEXECUTORFOCUSSTATEPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

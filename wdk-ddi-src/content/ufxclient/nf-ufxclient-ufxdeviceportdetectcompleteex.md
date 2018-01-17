@@ -64,7 +64,7 @@ A handle to a UFX device object that the driver created by calling <a href="..\u
 
 ### -param PortType [in]
 
-Contains an enumeration value of type <a href="..\usbfnbase\ne-usbfnbase-_usbfn_port_type.md">USBFN_PORT_TYPE</a>.
+Contains an enumeration value of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt188004">USBFN_PORT_TYPE</a>.
 
 
 ### -param Action [in]
@@ -86,40 +86,4 @@ If the <i>Action</i> parameter is set to <b>UsbfnActionNoCad</b>, UFX does not n
 If the <i>Action</i> parameter is set to <b>UsbfnActionDetectProprietaryCharger</b>, UFX requests that the client driver initiate proprietary charger detection by calling the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_detect.md">EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER</a> callback function.
 
 
-The following snippet shows how a client driver calls <b>UfxDevicePortDetectCompleteEx</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxclient.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
+The following snippet shows how a client driver calls <b>UfxDevicePortDetectCompleteEx</b>.</p>

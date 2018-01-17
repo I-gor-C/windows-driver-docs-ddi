@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 2A2C1478-0512-4F84-90B9-B9C62B5D44DA
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CMP_CONNECT_VER2, CMP_CONNECT_VER2, *PCMP_CONNECT_VER2, *PCMP_CONNECT, CMP_CONNECT
+ms.keywords: _CMP_CONNECT_VER2, CMP_CONNECT_VER2, *PCMP_CONNECT_VER2, CMP_CONNECT, *PCMP_CONNECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -108,21 +108,6 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 
 If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INSUFFICIENT_RESOURCES.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -126,20 +126,4 @@ The size, in characters, of the expression string that evaluates to the location
 
 
 ## -remarks
-For an overview of how to use breakpoints, and a description of all breakpoint-related methods, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538928">Breakpoints</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For an overview of how to use breakpoints, and a description of all breakpoint-related methods, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff538928">Breakpoints</a>.</p>

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 22840772-7DFC-4339-9C06-4900E47048B4
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.keywords: RxpTrackReference
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: EXpsFontRestriction
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK callback
@@ -83,42 +83,6 @@ A minifilter registers for section conflict notifications by setting a <i>PFLT_S
 
 Certain situations can occur where holding a section open is incompatible with current file I/O. In particular, file I/O that triggers a cache purge can cause cache incoherency if the cache purge is prevented because of an open section.  A minifilter can provide this optional callback routine for notifications of these events. When a notification is received, the section can be closed to allow the conflicting I/O operation to continue.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-The PFLT_CONTEXT_ALLOCATE_CALLBACK callback routine is available on Windows 8 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

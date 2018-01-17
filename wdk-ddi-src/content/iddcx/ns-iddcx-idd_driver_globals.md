@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 77d2c668-21e4-4c6d-9f3d-7e34c660d1da
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS
+ms.keywords: IDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PIDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS
+req.typenames: IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS
 ---
 
 # IDD_DRIVER_GLOBALS structure
@@ -64,19 +64,3 @@ typedef struct IDD_DRIVER_GLOBALS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

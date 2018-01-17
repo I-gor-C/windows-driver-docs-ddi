@@ -78,31 +78,6 @@ Drivers that run the <a href="https://msdn.microsoft.com/7d724751-761e-409c-8398
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-D3D11DDI_SHADER_CAPS is supported beginning with the Windows 7 operating system. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

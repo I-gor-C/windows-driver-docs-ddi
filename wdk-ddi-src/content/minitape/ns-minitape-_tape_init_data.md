@@ -74,20 +74,4 @@ typedef struct _TAPE_INIT_DATA {
 
 
 ## -remarks
-TAPE_INIT_DATA is defined as follows.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Minitape.h (include Minitape.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+TAPE_INIT_DATA is defined as follows.</p>

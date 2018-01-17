@@ -7,7 +7,7 @@ old-location: netvista\rilgetpreferencedoperatorlistformat.htm
 old-project: netvista
 ms.assetid: 77526649-dc98-4c40-b348-6e5620f6e4eb
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILGETPREFERENCEDOPERATORLISTFORMAT, RILGETPREFERENCEDOPERATORLISTFORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,19 +66,3 @@ typedef enum _RILGETPREFERENCEDOPERATORLISTFORMAT {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

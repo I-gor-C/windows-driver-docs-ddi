@@ -58,19 +58,3 @@ typedef enum _DriverUnifiedPosPowerState {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pointofservicecommontypes.h (include Pointofservicecommontypes.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

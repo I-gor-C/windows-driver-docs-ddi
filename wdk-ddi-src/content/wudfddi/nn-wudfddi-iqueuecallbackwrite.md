@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackwrite.htm
 old-project: wdf
 ms.assetid: 8b44e1e1-c648-4eec-bb3e-ab327dc08f98
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,20 +78,4 @@ The <a href="https://msdn.microsoft.com/a87a9976-f844-4e69-82d3-2d426e359763">On
 
 
 ## -remarks
-A driver registers the <b>IQueueCallbackWrite</b> interface when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a> method to create an I/O queue or to configure the default I/O queue. For more information about creating or configuring I/O queues, see <a href="https://msdn.microsoft.com/7603c3fd-a4cb-4174-ad14-f57efedfe9de">Configuring Dispatch Mode for an I/O Queue</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+A driver registers the <b>IQueueCallbackWrite</b> interface when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557020">IWDFDevice::CreateIoQueue</a> method to create an I/O queue or to configure the default I/O queue. For more information about creating or configuring I/O queues, see <a href="https://msdn.microsoft.com/7603c3fd-a4cb-4174-ad14-f57efedfe9de">Configuring Dispatch Mode for an I/O Queue</a>.</p>

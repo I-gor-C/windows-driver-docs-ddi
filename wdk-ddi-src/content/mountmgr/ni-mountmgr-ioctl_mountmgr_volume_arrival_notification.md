@@ -83,21 +83,6 @@ The input buffer size, indicated by <b>InputBufferLength</b>, must be large enou
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mountmgr.h (include Mountmgr.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

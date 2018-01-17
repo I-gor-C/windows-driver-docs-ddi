@@ -174,19 +174,3 @@ Zero based number to indicate the number of times the same frame has been encode
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

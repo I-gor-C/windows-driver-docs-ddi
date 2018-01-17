@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: FD8D6063-E6DD-4EA6-9675-774C58C08B40
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+ms.keywords: _MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+req.typenames: *PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes
 ---
 
 # _MSFC_VirtualFibrePortAttributes structure
@@ -97,21 +97,6 @@ The world wide port name of the fabric.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Npivwmi.h (include Npivwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

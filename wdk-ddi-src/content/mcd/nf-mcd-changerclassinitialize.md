@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Mcd.lib
 req.dll: 
 req.irql: 
-req.typenames: LAMP_INTENSITY_WHITE
+req.typenames: KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ---
 
 # ChangerClassInitialize function
@@ -82,43 +82,6 @@ Changer miniclass drivers call <b>ChangerClassInitialize</b> from within their <
 
 Changer miniclass drivers must allocate an <a href="..\mcd\ns-mcd-_mcd_init_data.md">MCD_INIT_DATA</a> structure, zero the structure by calling <a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>, and then assign values to the appropriate members, before passing the structure's address to <b>ChangerClassInitialize</b> by means of the <i>MCDInitData</i> parameter. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mcd.h (include Mcd.h or Ntddchgr.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mcd.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

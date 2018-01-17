@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 6853b73e-5516-485e-ade4-54b7faf6bb1d
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _SetDSMCounters_IN, *PSetDSMCounters_IN, SetDSMCounters_IN
+ms.keywords: _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetDSMCounters_IN, SetDSMCounters_IN
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 # PMRX_SRVCALL_WINNER_NOTIFY callback
@@ -87,32 +87,6 @@ Under the current implementation of RDBSS, each network mini-redirector has its 
 
 When multiple redirectors are installed for handling the same UNC namespace, the redirector to service a request is chosen by multiple UNC provider (MUP) based on the order of redirectors specified in the registry. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mrx.h (include Mrx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

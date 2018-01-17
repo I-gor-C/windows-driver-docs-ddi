@@ -31,7 +31,7 @@ req.type-library:
 req.lib: UcmCxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPORT_DATA_1, PORT_DATA_1
+req.typenames: *PSWENUM_INSTALL_INTERFACE, SWENUM_INSTALL_INTERFACE
 req.product: Windows 10 or later.
 ---
 
@@ -73,82 +73,6 @@ The new current advertisement of the connector indicated by one of the <a href="
 ## -remarks
 When using a Type-C connector for charging, the partner connector sends a current advertisement when it's attached to the local connector. That initial advertisement is report to UcmCx  by calling <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>.  During the lifetime of the connection, the current level advertised by the source might change. The client driver must notify UcmCx about  that change by calling method. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmmanager.h (include Ucmcx.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>UcmCxstub.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

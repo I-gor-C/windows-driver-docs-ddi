@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 2ce213a6-8075-4ad9-9f58-204c2f7fd8d9
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords: _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSETRESULT_INFO, SETRESULT_INFO
+req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ---
 
 # PFND3D10DDI_STATE_RS_RASTSTATE_CB callback
@@ -69,42 +69,6 @@ None
 ## -remarks
 The <b>pfnStateRsRastStateCb</b> function calls the user-mode display driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_setrasterizerstate.md">SetRasterizerState</a> function with the current rasterizer state.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

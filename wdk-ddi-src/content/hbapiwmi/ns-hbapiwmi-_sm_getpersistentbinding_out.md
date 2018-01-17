@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: aa80e05c-e322-4350-80e7-28d53821c510
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SM_GetPersistentBinding_OUT, SM_GetPersistentBinding_OUT, *PSM_GetPersistentBinding_OUT
+ms.keywords: _SM_GetPersistentBinding_OUT, *PSM_GetPersistentBinding_OUT, SM_GetPersistentBinding_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SM_GetPersistentBinding_OUT, *PSM_GetPersistentBinding_OUT
+req.typenames: *PSM_GetPersistentBinding_OUT, SM_GetPersistentBinding_OUT
 ---
 
 # _SM_GetPersistentBinding_OUT structure
@@ -78,20 +78,4 @@ An array of structures of type SMHBA_SCSIENTRY that describes an HBA's bindings 
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_GetPersistentBinding_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_GetPersistentBinding_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.</p>

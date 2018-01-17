@@ -7,7 +7,7 @@ old-location: netvista\rilexecutorflag.htm
 old-project: netvista
 ms.assetid: b388a5d9-3549-472d-8ebe-b618751626ed
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILEXECUTORFLAG, RILEXECUTORFLAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,19 +62,3 @@ typedef enum _RILEXECUTORFLAG {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

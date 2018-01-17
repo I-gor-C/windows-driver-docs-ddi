@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 7746d09a-7fb6-4e5d-926c-4ded6830b06d
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032, D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
 # DXGKCB_SETPOWERCOMPONENTIDLE callback
@@ -81,62 +81,6 @@ When this function is called, the active reference count of the component is dec
 
 This function must be called at IRQL &lt;= 		DISPATCH_LEVEL. It can be called at IRQL = 		DISPATCH_LEVEL only if the component type is <b>DXGK_POWER_COMPONENT_OTHER</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-See Remarks section.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

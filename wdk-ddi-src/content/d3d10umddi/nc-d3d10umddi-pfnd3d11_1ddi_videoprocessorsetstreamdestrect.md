@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 84AD6C4F-A674-4CCC-B2E9-378E3E55EEF3
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _SETRESULT_INFO, *PSETRESULT_INFO, SETRESULT_INFO
+ms.keywords: _POWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSETRESULT_INFO, SETRESULT_INFO
+req.typenames: POWERSOURCEUPDATEEX, *PPOWERSOURCEUPDATEEX
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMDESTRECT callback
@@ -99,52 +99,6 @@ The destination rectangle is the portion of the output surface that receives the
 
 The default destination rectangle is an empty rectangle (0, 0, 0, 0). If the <i>VideoProcessorSetStreamDestRect</i> function is never called, or if the <i>Enable</i> parameter is <b>FALSE</b>, no data is written from the specified input stream.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

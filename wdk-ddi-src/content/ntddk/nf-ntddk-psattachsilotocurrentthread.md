@@ -69,41 +69,6 @@ The specified <i>Silo</i> is attached to the current thread so that it becomes t
 The thread then operates within the namespace of the attached silo until <a href="..\ntddk\nf-ntddk-psdetachsilofromcurrentthread.md">PsDetachSiloFromCurrentThread</a> is called.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1ce2b1d0-a8b2-4a05-8895-e13802690a7b
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _IO_STATUS_BLOCK, IO_STATUS_BLOCK, *PIO_STATUS_BLOCK
+ms.keywords: _IO_STATUS_BLOCK, *PIO_STATUS_BLOCK, IO_STATUS_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: IO_STATUS_BLOCK, *PIO_STATUS_BLOCK
+req.typenames: *PIO_STATUS_BLOCK, IO_STATUS_BLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -84,21 +84,6 @@ The operating system implements <a href="https://msdn.microsoft.com/c0b21ead-875
 For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff551825">I/O Status Blocks</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -111,7 +96,7 @@ Header
 <a href="..\wdm\nf-wdm-iosetcompletionroutine.md">IoSetCompletionRoutine</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 </dl>
  

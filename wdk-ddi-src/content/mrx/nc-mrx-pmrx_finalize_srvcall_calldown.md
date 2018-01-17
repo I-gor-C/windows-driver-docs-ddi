@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: f870334a-cf39-47a2-868a-f6fd7c3aee1c
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _SetDSMCounters_IN, *PSetDSMCounters_IN, SetDSMCounters_IN
+ms.keywords: _SetDSMCounters_IN, SetDSMCounters_IN, *PSetDSMCounters_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetDSMCounters_IN, SetDSMCounters_IN
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 # PMRX_FINALIZE_SRVCALL_CALLDOWN callback
@@ -79,32 +79,6 @@ A pointer to a Boolean value that indicates if the disconnect is to be enforced 
 
 RDBSS ignores the return value from the <i>MRxFinalizeSrvCall</i> call. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mrx.h (include Mrx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

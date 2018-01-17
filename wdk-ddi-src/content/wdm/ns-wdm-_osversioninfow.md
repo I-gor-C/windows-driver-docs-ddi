@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 04e50a2c-eb85-4fc8-9751-798397eddf95
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _OSVERSIONINFOW, *PRTL_OSVERSIONINFOW, *POSVERSIONINFOW, *LPOSVERSIONINFOW, RTL_OSVERSIONINFOW, OSVERSIONINFOW, OSVERSIONINFO
+ms.keywords: _OSVERSIONINFOW, RTL_OSVERSIONINFOW, OSVERSIONINFOW, *LPOSVERSIONINFOW, *POSVERSIONINFOW, *PRTL_OSVERSIONINFOW, OSVERSIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PRTL_OSVERSIONINFOW, *POSVERSIONINFOW, *LPOSVERSIONINFOW, RTL_OSVERSIONINFOW, OSVERSIONINFOW
+req.typenames: RTL_OSVERSIONINFOW, OSVERSIONINFOW, *LPOSVERSIONINFOW, *POSVERSIONINFOW, *PRTL_OSVERSIONINFOW
 req.product: Windows 10 or later.
 ---
 
@@ -93,21 +93,6 @@ The service-pack version string. This member contains a null-terminated string, 
 ## -remarks
 For a list of the major and minor version numbers for the various versions of Windows, see <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

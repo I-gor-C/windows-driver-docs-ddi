@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9d9b4bba-0216-48cf-81aa-160b7252ba20
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FLT_RELATED_CONTEXTS, *PFLT_RELATED_CONTEXTS, FLT_RELATED_CONTEXTS
+ms.keywords: _FLT_RELATED_CONTEXTS, FLT_RELATED_CONTEXTS, *PFLT_RELATED_CONTEXTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PFLT_RELATED_CONTEXTS, FLT_RELATED_CONTEXTS
+req.typenames: FLT_RELATED_CONTEXTS, *PFLT_RELATED_CONTEXTS
 ---
 
 # _FLT_RELATED_CONTEXTS structure
@@ -98,21 +98,6 @@ A minifilter can also use this structure to release multiple contexts for a give
 
 For more information about using contexts, see the reference entry for <a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f25b503b-0182-452d-8561-b3c82f595f81
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _LoginToTarget_IN, LoginToTarget_IN, *PLoginToTarget_IN
+ms.keywords: _LoginToTarget_IN, *PLoginToTarget_IN, LoginToTarget_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: LoginToTarget_IN, *PLoginToTarget_IN
+req.typenames: *PLoginToTarget_IN, LoginToTarget_IN
 ---
 
 # _LoginToTarget_IN structure
@@ -146,21 +146,6 @@ A variable-length array of UCHAR values that defines the preshared key that is a
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -68,21 +68,6 @@ Contains a variable-sized array of wide characters that holds the name of the de
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mountmgr.h (include Mountmgr.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

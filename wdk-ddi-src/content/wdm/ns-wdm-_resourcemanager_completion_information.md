@@ -48,29 +48,3 @@ The <b>RESOURCEMANAGER_COMPLETION_INFORMATION</b> structure is not used.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later operating system versions.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

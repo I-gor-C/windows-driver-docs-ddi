@@ -92,20 +92,4 @@ Multiplier: 0.25
 
 In this case, a filter value of 2 would be interpreted by the device as 0.50, which is 2 × 0.25.
 
-The device should use a multiplier that can be represented exactly as a base-2 fraction.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The device should use a multiplier that can be represented exactly as a base-2 fraction.</p>

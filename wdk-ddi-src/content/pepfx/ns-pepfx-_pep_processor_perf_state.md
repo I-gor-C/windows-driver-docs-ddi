@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 46231ac0-2c34-4154-8b3e-f34c40cbff4a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_PROCESSOR_PERF_STATE, *PPEP_PROCESSOR_PERF_STATE, PEP_PROCESSOR_PERF_STATE
+ms.keywords: _PEP_PROCESSOR_PERF_STATE, PEP_PROCESSOR_PERF_STATE, *PPEP_PROCESSOR_PERF_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_PROCESSOR_PERF_STATE, PEP_PROCESSOR_PERF_STATE
+req.typenames: PEP_PROCESSOR_PERF_STATE, *PPEP_PROCESSOR_PERF_STATE
 ---
 
 # _PEP_PROCESSOR_PERF_STATE structure
@@ -73,41 +73,6 @@ Reserved.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

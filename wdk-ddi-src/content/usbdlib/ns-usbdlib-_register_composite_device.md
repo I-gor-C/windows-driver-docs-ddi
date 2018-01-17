@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: BBE92635-5230-454E-A6CA-80198B5B2C57
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _REGISTER_COMPOSITE_DEVICE, REGISTER_COMPOSITE_DEVICE, *PREGISTER_COMPOSITE_DEVICE
+ms.keywords: _REGISTER_COMPOSITE_DEVICE, *PREGISTER_COMPOSITE_DEVICE, REGISTER_COMPOSITE_DEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: REGISTER_COMPOSITE_DEVICE, *PREGISTER_COMPOSITE_DEVICE
+req.typenames: *PREGISTER_COMPOSITE_DEVICE, REGISTER_COMPOSITE_DEVICE
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>REGISTER_COMPOSITE_DEVICE</b> structure is used with the <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_register_composite_device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> I/O control request to register a  parent driver of a Universal Serial Bus (USB) multi-function device (composite driver)  with the USB driver stack. 
+The <b>REGISTER_COMPOSITE_DEVICE</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450854">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a> I/O control request to register a  parent driver of a Universal Serial Bus (USB) multi-function device (composite driver)  with the USB driver stack. 
 
 To initialize the <b>REGISTER_COMPOSITE_DEVICE</b> structure, the composite driver must call the <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a> routine.
 
@@ -91,35 +91,10 @@ The number of functions supported by the composite device. The <b>FunctionCount<
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbdlib.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_register_composite_device.md">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450854">IOCTL_INTERNAL_USB_REGISTER_COMPOSITE_DEVICE</a>
 </dt>
 <dt>
 <a href="..\usbdlib\nf-usbdlib-usbd_buildregistercompositedevice.md">USBD_BuildRegisterCompositeDevice</a>

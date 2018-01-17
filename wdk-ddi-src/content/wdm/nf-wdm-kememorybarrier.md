@@ -72,42 +72,6 @@ In this definition, the braces that follow the <b>__asm</b> keyword contain inli
 <b>KeMemoryBarrier</b> prevents both the compiler and the processor from moving operations across the barrier. To prevent only the compiler from moving operations, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff552973">KeMemoryBarrierWithoutFence</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

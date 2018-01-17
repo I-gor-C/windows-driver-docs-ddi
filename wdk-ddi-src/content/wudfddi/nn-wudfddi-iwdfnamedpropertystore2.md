@@ -7,7 +7,7 @@ old-location: wdf\iwdfnamedpropertystore2.htm
 old-project: wdf
 ms.assetid: f6935379-bf0d-4319-bcd9-56f0e4016945
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,61 +78,3 @@ The <a href="https://msdn.microsoft.com/ce0953d3-054f-446b-9f69-58f4580740f3">De
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.9
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>WUDFx.dll</dt>
-</dl>
-</td>
-</tr>
-</table>

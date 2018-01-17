@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: DC54CC46-6ECC-4D1F-9C8C-5579EE759B6F
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBDEVICE_ENABLE, USBDEVICE_ENABLE, *PUSBDEVICE_ENABLE
+ms.keywords: _USBDEVICE_ENABLE, *PUSBDEVICE_ENABLE, USBDEVICE_ENABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: USBDEVICE_ENABLE, *PUSBDEVICE_ENABLE
+req.typenames: *PUSBDEVICE_ENABLE, USBDEVICE_ENABLE
 req.product: Windows 10 or later.
 ---
 
@@ -78,21 +78,6 @@ The errors, if any, that occurred when attempting to enable the hub or device fo
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxusbdevice.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

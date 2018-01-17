@@ -149,19 +149,3 @@ Provides the hardware resources for the ATA controller.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2::SetMatchThreadId method
@@ -80,31 +80,4 @@ If you have set a thread for the breakpoint, the breakpoint can be triggered onl
 
 If you have set a thread, you can remove the setting by setting <i>Id</i> to DEBUG_ANY_ID.
 
-For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about breakpoint properties, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539284">Controlling Breakpoint Flags and Parameters</a>.</p>

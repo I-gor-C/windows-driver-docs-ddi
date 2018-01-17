@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 6C6EAA96-40E9-467F-903B-AE44CE5B77CF
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: UFS_INTERCONNECT_DESCRIPTOR, UFS_INTERCONNECT_DESCRIPTOR, *PUFS_INTERCONNECT_DESCRIPTOR
+ms.keywords: UFS_INTERCONNECT_DESCRIPTOR, *PUFS_INTERCONNECT_DESCRIPTOR, UFS_INTERCONNECT_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: UFS_INTERCONNECT_DESCRIPTOR, *PUFS_INTERCONNECT_DESCRIPTOR
+req.typenames: *PUFS_INTERCONNECT_DESCRIPTOR, UFS_INTERCONNECT_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -80,39 +80,3 @@ Specifies the MIPI M-PHY® version number in BCD format.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufs.h</dt>
-</dl>
-</td>
-</tr>
-</table>

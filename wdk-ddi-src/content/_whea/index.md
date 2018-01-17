@@ -1,10 +1,17 @@
 ---
 UID: TP:whea
+ms.assetid: 069ae67e-570f-3fce-99d4-d889f7094ff1
+ms.author: windowsdriverdev
+ms.date: 01/16/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # Windows Hardware Error Architecture (WHEA)
 
-## -description
+
 Overview of the Windows Hardware Error Architecture (WHEA) technology.
 
 To develop Windows Hardware Error Architecture (WHEA), you need these headers:

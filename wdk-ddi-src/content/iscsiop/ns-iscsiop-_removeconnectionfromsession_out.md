@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 00c6c94e-06a8-40ec-8ddd-4a4191fa1ec6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _RemoveConnectionFromSession_OUT, RemoveConnectionFromSession_OUT, *PRemoveConnectionFromSession_OUT
+ms.keywords: _RemoveConnectionFromSession_OUT, *PRemoveConnectionFromSession_OUT, RemoveConnectionFromSession_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RemoveConnectionFromSession_OUT, *PRemoveConnectionFromSession_OUT
+req.typenames: *PRemoveConnectionFromSession_OUT, RemoveConnectionFromSession_OUT
 ---
 
 # _RemoveConnectionFromSession_OUT structure
@@ -62,21 +62,6 @@ This specifies the status of the <a href="https://msdn.microsoft.com/library/win
 ## -remarks
 You must implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -67,40 +67,4 @@ This method does not return a value.
 ## -remarks
 When the client driver calls <b>UfxDeviceNotifyAttach</b>, the USB function class extension (UFX) does the following:
 
-The client driver typically calls <b>UfxDeviceNotifyAttach</b> from its <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a> callback function, as shown in the following example.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxclient.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
+The client driver typically calls <b>UfxDeviceNotifyAttach</b> from its <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_dpc.md">EvtInterruptDpc</a> callback function, as shown in the following example.</p>

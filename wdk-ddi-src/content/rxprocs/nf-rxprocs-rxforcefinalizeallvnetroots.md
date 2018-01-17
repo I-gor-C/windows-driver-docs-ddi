@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -71,42 +71,6 @@ Before calling <b>RxForceFinalizeAllVNetRoots</b>, a lock on the netname table a
 
 <b>RxForceFinalizeAllVNetRoots</b> calls <a href="..\fcb\nf-fcb-rxfinalizevnetroot.md">RxFinalizeVNetRoot</a> to finalize each V_NET_ROOT associated with the NET_ROOT.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rxprocs.h (include Rxprocs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

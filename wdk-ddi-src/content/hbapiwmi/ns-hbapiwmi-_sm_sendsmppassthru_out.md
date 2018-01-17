@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: eb173171-3990-405e-b740-8c1a0c915165
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SM_SendSMPPassThru_OUT, SM_SendSMPPassThru_OUT, *PSM_SendSMPPassThru_OUT
+ms.keywords: _SM_SendSMPPassThru_OUT, *PSM_SendSMPPassThru_OUT, SM_SendSMPPassThru_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SM_SendSMPPassThru_OUT, *PSM_SendSMPPassThru_OUT
+req.typenames: *PSM_SendSMPPassThru_OUT, SM_SendSMPPassThru_OUT
 ---
 
 # _SM_SendSMPPassThru_OUT structure
@@ -78,20 +78,4 @@ The results of the common transport command.
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_SendSMPPassThru_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_SendSMPPassThru_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.</p>

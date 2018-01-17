@@ -7,7 +7,7 @@ old-location: netvista\wwan_ipv4_address.htm
 old-project: netvista
 ms.assetid: D75EAC9E-8E65-437E-83AA-59B422527C6C
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WWAN_IPV4_ADDRESS, WWAN_IPV4_ADDRESS, *PWWAN_IPV4_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,29 +67,3 @@ The IPV4 address of the PDP context.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 8.1 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wwan.h (include Wwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

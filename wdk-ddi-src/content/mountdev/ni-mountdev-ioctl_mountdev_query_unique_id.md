@@ -77,21 +77,6 @@ The <b>Information</b> field is set to FIELD_OFFSET(<a href="..\mountdev\ns-moun
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mountdev.h (include Mountdev.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

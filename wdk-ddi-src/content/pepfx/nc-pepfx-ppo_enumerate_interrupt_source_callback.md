@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1E6841D8-88A0-4EDB-89EF-3878AF8B0072
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords: PEPCALLBACKPOWERONCRASHDUMPDEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks.
-req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
+req.typenames: *PVPCI_PNP_ID, VPCI_PNP_ID
 ---
 
 # PPO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK callback
@@ -79,31 +79,6 @@ After a PEP calls <b>EnumerateUnmaskedInterrupts</b> to enumerate the unmasked i
 
 An <i>EnumerateInterruptSource</i> callback routine is called at the same IRQL as the PEP's call to <b>EnumerateUnmaskedInterrupts</b> that initiates the enumeration callbacks.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-See Remarks.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

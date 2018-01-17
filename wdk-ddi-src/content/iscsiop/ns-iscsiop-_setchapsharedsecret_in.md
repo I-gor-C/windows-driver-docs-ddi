@@ -69,21 +69,6 @@ A variable-length array that contains the shared secret.
 You must implement this method.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

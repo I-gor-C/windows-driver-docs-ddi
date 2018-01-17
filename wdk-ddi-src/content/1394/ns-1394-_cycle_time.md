@@ -75,21 +75,6 @@ Specifies the number of seconds. This count wraps to zero every 128 seconds.
 The layout of this structure matches that of the CYCLE_TIME register in the <i>IEEE 1394-1995 specification</i>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -108,29 +108,3 @@ Sends a notification to the listening UWP apps, to allow for communications betw
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10, version 1703 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h</dt>
-</dl>
-</td>
-</tr>
-</table>

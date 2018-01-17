@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: B9E64163-B338-49C9-8167-C36B110AB710
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _NLSTABLEINFO, NLSTABLEINFO, *PNLSTABLEINFO
+ms.keywords: _NLSTABLEINFO, *PNLSTABLEINFO, NLSTABLEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: NLSTABLEINFO, *PNLSTABLEINFO
+req.typenames: *PNLSTABLEINFO, NLSTABLEINFO
 ---
 
 # _NLSTABLEINFO structure
@@ -78,19 +78,3 @@ Specifies an 844 format lowercase table.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntnls.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3FFBF258-50C3-4D2D-AFC8-184D2FF85EE4
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SRBEX_DATA_WMI, *PSRBEX_DATA_WMI, SRBEX_DATA_WMI
+ms.keywords: _SRBEX_DATA_WMI, SRBEX_DATA_WMI, *PSRBEX_DATA_WMI
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSRBEX_DATA_WMI, SRBEX_DATA_WMI
+req.typenames: SRBEX_DATA_WMI, *PSRBEX_DATA_WMI
 req.product: Windows 10 or later.
 ---
 
@@ -98,31 +98,6 @@ Specifies the WMI data path for this request.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available  starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h or Srb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

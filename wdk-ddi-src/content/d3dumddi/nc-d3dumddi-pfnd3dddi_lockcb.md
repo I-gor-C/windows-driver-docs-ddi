@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 69022797-432a-410b-8cbf-e1ef7111e7ea
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_PTE, DXGK_PTE
+ms.keywords: _DXGK_GRAPHICSPOWER_REGISTER_OUTPUT, *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DXGK_PTE
+req.typenames: *PDXGK_GRAPHICSPOWER_REGISTER_OUTPUT, DXGK_GRAPHICSPOWER_REGISTER_OUTPUT
 ---
 
 # PFND3DDDI_LOCKCB callback
@@ -112,10 +112,10 @@ Guarantees that the virtual address range for the allocation remains unchanged, 
 
 Provides a way to synchronize the read and write operations of the allocation with graphics hardware accesses of the allocation. The video memory manager and display miniport driver perform the synchronization. 
 
-<b>Direct3D Version 9 Note:  </b><p class="note">  The user-mode display driver usually calls the <i>pfnLockCb</i> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a> functions that correspond to every call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlock.md">Unlock</a> functions, respectively, except when the driver handles resources in which the <b>Dynamic</b> bit-field flag was set in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a> structure when the resources were created. The runtime frequently requests that the driver lock these types of resources, often with the <b>NoOverwrite</b> bit-field flag set in the <b>Flags</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_lock.md">D3DDDIARG_LOCK</a> structure. Because data in such resources should not be modified (as indicated by <b>NoOverwrite</b>), calling <i>pfnLockCb</i> for each lock request consumes excessive processing time. To prevent calling <i>pfnLockCb</i> for each lock request, the driver can cache the virtual memory pointer that it returns in the <b>pSurfData</b> member of D3DDDIARG_LOCK when its <b>Lock</b> function is called with the <b>NoOverwrite</b> bit-field flag set. However, the driver can continue to call <i>pfnLockCb</i> whenever its <b>Lock</b> function is called with either the <b>Discard</b> bit-field flag set or no flags set.
+<b>Direct3D Version 9 Note:  </b><p class="note">  The user-mode display driver usually calls the <i>pfnLockCb</i> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a> functions that correspond to every call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlock.md">Unlock</a> functions, respectively, except when the driver handles resources in which the <b>Dynamic</b> bit-field flag was set in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542963">D3DDDIARG_CREATERESOURCE</a> structure when the resources were created. The runtime frequently requests that the driver lock these types of resources, often with the <b>NoOverwrite</b> bit-field flag set in the <b>Flags</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_lock.md">D3DDDIARG_LOCK</a> structure. Because data in such resources should not be modified (as indicated by <b>NoOverwrite</b>), calling <i>pfnLockCb</i> for each lock request consumes excessive processing time. To prevent calling <i>pfnLockCb</i> for each lock request, the driver can cache the virtual memory pointer that it returns in the <b>pSurfData</b> member of D3DDDIARG_LOCK when its <b>Lock</b> function is called with the <b>NoOverwrite</b> bit-field flag set. However, the driver can continue to call <i>pfnLockCb</i> whenever its <b>Lock</b> function is called with either the <b>Discard</b> bit-field flag set or no flags set.
 
 
-<p class="note">  The user-mode display driver usually calls the <i>pfnLockCb</i> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a> functions that correspond to every call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlock.md">Unlock</a> functions, respectively, except when the driver handles resources in which the <b>Dynamic</b> bit-field flag was set in the <b>Flags</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddiarg_createresource.md">D3DDDIARG_CREATERESOURCE</a> structure when the resources were created. The runtime frequently requests that the driver lock these types of resources, often with the <b>NoOverwrite</b> bit-field flag set in the <b>Flags</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_lock.md">D3DDDIARG_LOCK</a> structure. Because data in such resources should not be modified (as indicated by <b>NoOverwrite</b>), calling <i>pfnLockCb</i> for each lock request consumes excessive processing time. To prevent calling <i>pfnLockCb</i> for each lock request, the driver can cache the virtual memory pointer that it returns in the <b>pSurfData</b> member of D3DDDIARG_LOCK when its <b>Lock</b> function is called with the <b>NoOverwrite</b> bit-field flag set. However, the driver can continue to call <i>pfnLockCb</i> whenever its <b>Lock</b> function is called with either the <b>Discard</b> bit-field flag set or no flags set.
+<p class="note">  The user-mode display driver usually calls the <i>pfnLockCb</i> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a> functions that correspond to every call to its <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lock.md">Lock</a> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlock.md">Unlock</a> functions, respectively, except when the driver handles resources in which the <b>Dynamic</b> bit-field flag was set in the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542963">D3DDDIARG_CREATERESOURCE</a> structure when the resources were created. The runtime frequently requests that the driver lock these types of resources, often with the <b>NoOverwrite</b> bit-field flag set in the <b>Flags</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_lock.md">D3DDDIARG_LOCK</a> structure. Because data in such resources should not be modified (as indicated by <b>NoOverwrite</b>), calling <i>pfnLockCb</i> for each lock request consumes excessive processing time. To prevent calling <i>pfnLockCb</i> for each lock request, the driver can cache the virtual memory pointer that it returns in the <b>pSurfData</b> member of D3DDDIARG_LOCK when its <b>Lock</b> function is called with the <b>NoOverwrite</b> bit-field flag set. However, the driver can continue to call <i>pfnLockCb</i> whenever its <b>Lock</b> function is called with either the <b>Discard</b> bit-field flag set or no flags set.
 
 <b>Direct3D Versions 10 and 11 Note:  </b><p class="note">  The user-mode display driver usually calls the <i>pfnLockCb</i> and <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a> functions that correspond to every call to its <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> and <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourceunmap.md">ResourceUnmap</a> functions (or other variations of these functions). This does not happen when the driver handles resources in which the D3D10_DDI_USAGE_DYNAMIC value was set in the <b>Usage</b> member of the <a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_createresource.md">D3D10DDIARG_CREATERESOURCE</a> or <a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_createresource.md">D3D11DDIARG_CREATERESOURCE</a> structure when the resources were created. The runtime frequently requests that the driver lock these types of resources, often by passing the D3D10_DDI_MAP_WRITE_NOOVERWRITE value to the <i>DDIMap</i> parameter in the call to <b>ResourceMap</b>. Because data in such resources should not be modified (as indicated by D3D10_DDI_MAP_WRITE_NOOVERWRITE), calling <i>pfnLockCb</i> for each lock request consumes excessive processing time. To prevent calling <i>pfnLockCb</i> for each lock request, the driver can cache the virtual memory pointer that it returns in the <i>pMappedSubResource</i> parameter when its <i>ResourceMap</i> function is called with D3D10_DDI_MAP_WRITE_NOOVERWRITE. However, the driver can continue to call <i>pfnLockCb</i> whenever its <i>ResourceMap</i> function is called with either the D3D10_DDI_MAP_WRITE_DISCARD value or 0 passed to the <i>DDIMap</i> parameter.
 
@@ -156,42 +156,6 @@ The user-mode display driver should set the <b>IgnoreSync</b> bit-field flag in 
 
 The following code example shows how the <b>Discard</b> bit-field flag is used in a call to <i>pfnLockCb</i>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

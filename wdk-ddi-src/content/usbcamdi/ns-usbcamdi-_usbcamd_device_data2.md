@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 51339fd1-a962-4e3c-b9c9-5fe54ff53aa0
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _USBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+ms.keywords: _USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.typenames: *PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2
 req.product: Windows 10 or later.
 ---
 
@@ -137,21 +137,6 @@ A camera minidriver passes a USBCAMD_DEVICE_DATA2 structure to USBCAMD as a para
 
 Camera minidrivers that must be backward compatible with the original USBCAMD library must use the <a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data.md">USBCAMD_DEVICE_DATA</a> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\offload_state_header.htm
 old-project: netvista
 ms.assetid: 9becc611-ede9-4285-b2d7-c53747d098a9
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _OFFLOAD_STATE_HEADER, *POFFLOAD_STATE_HEADER, OFFLOAD_STATE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -110,20 +110,4 @@ The following offload state structures include an OFFLOAD_STATE_HEADER structure
 
 
 <a href="..\ndischimney\ns-ndischimney-_tcp_offload_state_delegated.md">TCP_OFFLOAD_STATE_DELEGATED</a>
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndischimney.h (include Ndischimney.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

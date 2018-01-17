@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 5bf2a533-e06b-4834-9075-62cb62fa5b06
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.keywords: RxpTrackReference
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
-req.typenames: EXpsFontRestriction
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # PFLT_POST_OPERATION_CALLBACK callback
@@ -150,52 +150,6 @@ A minifilter driver registers a post-operation callback routine for a particular
 
 A minifilter driver can register a post-operation callback routine for a particular type of I/O operation without registering a pre-operation callback (<a href="..\fltkernel\nc-fltkernel-pflt_pre_operation_callback.md">PFLT_PRE_OPERATION_CALLBACK</a>) routine, and vice versa. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later Windows operating systems. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-See Remarks section
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

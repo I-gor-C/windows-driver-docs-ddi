@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7d41c092-251e-4f93-b5be-ff989b37196b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSFC_EventBuffer, *PMSFC_EventBuffer, MSFC_EventBuffer
+ms.keywords: _MSFC_EventBuffer, MSFC_EventBuffer, *PMSFC_EventBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMSFC_EventBuffer, MSFC_EventBuffer
+req.typenames: MSFC_EventBuffer, *PMSFC_EventBuffer
 ---
 
 # _MSFC_EventBuffer structure
@@ -70,21 +70,6 @@ The WMI tool suite generates a declaration for this structure in <i>hbapiwm.h </
 
 The <a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a> structure is declared in <i>hbaapi.h</i>. You must include <i>hbaapi.h</i> to reference this structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilradioconfigurationradiotype_2.htm
 old-project: netvista
 ms.assetid: 5ac7d462-53bb-4540-8889-f2f6c71d4823
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRADIOCONFIGURATIONRADIOTYPE, RILRADIOCONFIGURATIONRADIOTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,19 +99,3 @@ typedef enum _RILRADIOCONFIGURATIONRADIOTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

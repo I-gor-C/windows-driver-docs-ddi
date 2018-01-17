@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 923A2107-8F5E-4EF7-8C3C-4EFDE26A50F5
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords: _SYMBOL_INFO_EX, SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 # DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP2 callback
@@ -82,20 +82,4 @@ A pointer to a DXGK_DISPLAY_OWNERSHIP_FLAGS structure that is allocated by the d
 
 
 ## -remarks
-Register your implementation of this callback function by setting the appropriate member of  and then calling .
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+Register your implementation of this callback function by setting the appropriate member of  and then calling .</p>

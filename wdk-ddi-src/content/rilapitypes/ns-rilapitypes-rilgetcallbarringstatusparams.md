@@ -7,8 +7,8 @@ old-location: netvista\rilgetcallbarringstatusparams_2.htm
 old-project: netvista
 ms.assetid: 1a33d682-5413-4026-8e43-e83548f688c5
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILGETCALLBARRINGSTATUSPARAMS, RILGETCALLBARRINGSTATUSPARAMS, *LPRILGETCALLBARRINGSTATUSPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILGETCALLBARRINGSTATUSPARAMS, *LPRILGETCALLBARRINGSTATUSPARAMS, RILGETCALLBARRINGSTATUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILGETCALLBARRINGSTATUSPARAMS, *LPRILGETCALLBARRINGSTATUSPARAMS
+req.typenames: *LPRILGETCALLBARRINGSTATUSPARAMS, RILGETCALLBARRINGSTATUSPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -71,19 +71,3 @@ typedef struct _RILGETCALLBARRINGSTATUSPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

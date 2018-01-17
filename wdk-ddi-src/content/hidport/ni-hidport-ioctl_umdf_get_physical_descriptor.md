@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSAGE_AND_PAGE, USAGE_AND_PAGE
+req.typenames: *PHIDP_REPORT_IDS, HIDP_REPORT_IDS
 ---
 
 # IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR IOCTL
@@ -77,35 +77,10 @@ HID minidrivers that carry out the I/O to the device must also:
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.11
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hidport.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\hidclass\ni-hidclass-ioctl_get_physical_descriptor.md">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541064">IOCTL_GET_PHYSICAL_DESCRIPTOR</a>
 </dt>
 </dl>
  

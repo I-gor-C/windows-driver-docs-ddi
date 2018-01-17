@@ -7,8 +7,8 @@ old-location: netvista\rilemergencynumber_2.htm
 old-project: netvista
 ms.assetid: 70759d23-b5ab-4c51-b73f-32021b9ae6fb
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILEMERGENCYNUMBER, *LPRILEMERGENCYNUMBER, RILEMERGENCYNUMBER
+ms.date: 1/11/2018
+ms.keywords: RILEMERGENCYNUMBER, RILEMERGENCYNUMBER, *LPRILEMERGENCYNUMBER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILEMERGENCYNUMBER, RILEMERGENCYNUMBER
+req.typenames: RILEMERGENCYNUMBER, *LPRILEMERGENCYNUMBER
 req.product: Windows 10 or later.
 ---
 
@@ -79,19 +79,3 @@ typedef struct _RILEMERGENCYNUMBER {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

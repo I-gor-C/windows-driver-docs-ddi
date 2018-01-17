@@ -7,8 +7,8 @@ old-location: netvista\rilopenuicclogicalchannelinfo.htm
 old-project: netvista
 ms.assetid: 5001f623-5b53-4ae7-9b5b-dc3bd5bdcc70
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILOPENUICCLOGICALCHANNELINFO, *LPRILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO
+ms.date: 1/11/2018
+ms.keywords: RILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO, *LPRILOPENUICCLOGICALCHANNELINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO
+req.typenames: RILOPENUICCLOGICALCHANNELINFO, *LPRILOPENUICCLOGICALCHANNELINFO
 ---
 
 # RILOPENUICCLOGICALCHANNELINFO structure
@@ -74,19 +74,3 @@ typedef struct _RILOPENUICCLOGICALCHANNELINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

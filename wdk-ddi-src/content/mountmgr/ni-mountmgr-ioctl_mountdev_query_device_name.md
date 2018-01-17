@@ -81,21 +81,6 @@ If the output buffer is too small to hold the device name, the mount manager cli
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mountmgr.h (include Mountmgr.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

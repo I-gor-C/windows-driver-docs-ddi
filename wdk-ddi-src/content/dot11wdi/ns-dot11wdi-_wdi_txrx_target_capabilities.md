@@ -7,7 +7,7 @@ old-location: netvista\wdi_txrx_capabilities.htm
 old-project: netvista
 ms.assetid: 7a1d3ffd-6f5e-429d-8c2f-a141f98ccad8
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_TXRX_TARGET_CAPABILITIES, WDI_TXRX_CAPABILITIES, *PWDI_TXRX_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -135,39 +135,3 @@ Specifies the maximum throughput of the device in units of 0.5 Mbps.
 </dl>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

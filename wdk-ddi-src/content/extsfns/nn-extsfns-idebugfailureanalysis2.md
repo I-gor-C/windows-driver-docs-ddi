@@ -339,21 +339,6 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/jj983426">SetUl
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Extsfns.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

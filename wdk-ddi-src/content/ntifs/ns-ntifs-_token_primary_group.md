@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9c9a7f63-7fe8-48a9-b4d0-10586e6b86bc
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _TOKEN_PRIMARY_GROUP, TOKEN_PRIMARY_GROUP, *PTOKEN_PRIMARY_GROUP
+ms.keywords: _TOKEN_PRIMARY_GROUP, *PTOKEN_PRIMARY_GROUP, TOKEN_PRIMARY_GROUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: TOKEN_PRIMARY_GROUP, *PTOKEN_PRIMARY_GROUP
+req.typenames: *PTOKEN_PRIMARY_GROUP, TOKEN_PRIMARY_GROUP
 ---
 
 # _TOKEN_PRIMARY_GROUP structure
@@ -61,21 +61,6 @@ Pointer to a SID structure representing a group that will become the primary gro
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

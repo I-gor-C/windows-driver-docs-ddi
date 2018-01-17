@@ -85,31 +85,6 @@ Returns<b> STATUS_SUCCESS</b> if IsPartialPlaceholder is valid and not undefined
         subsequent entry in the buffer which is found by walking the buffer.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 10, version 1709.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

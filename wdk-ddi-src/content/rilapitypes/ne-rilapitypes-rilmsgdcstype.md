@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcstype_2.htm
 old-project: netvista
 ms.assetid: 5eabc972-f372-4d70-ab38-8830f7907a7a
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGDCSTYPE, RILMSGDCSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,19 +71,3 @@ typedef enum _RILMSGDCSTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

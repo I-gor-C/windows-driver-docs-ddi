@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6C7AB917-1A98-471C-BA6C-B7C6BFF1AC3F
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_COMPONENT_V2, PEP_COMPONENT_V2, *PPEP_COMPONENT_V2, *PPEP_COMPONENT, PEP_COMPONENT
+ms.keywords: _PEP_COMPONENT_V2, *PPEP_COMPONENT_V2, PEP_COMPONENT_V2, PEP_COMPONENT, *PPEP_COMPONENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PEP_COMPONENT_V2, *PPEP_COMPONENT_V2
+req.typenames: *PPEP_COMPONENT_V2, PEP_COMPONENT_V2
 ---
 
 # _PEP_COMPONENT_V2 structure
@@ -86,31 +86,6 @@ A pointer to an array of <a href="..\wdm\ns-wdm-_po_fx_component_idle_state.md">
 ## -remarks
 This structure 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

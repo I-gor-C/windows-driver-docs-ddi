@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 890f996c-9216-4148-b198-538963101c2a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: tagDRMRIGHTS, DRMRIGHTS, *PDRMRIGHTS
+ms.keywords: tagDRMRIGHTS, *PDRMRIGHTS, DRMRIGHTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: DRMRIGHTS, *PDRMRIGHTS
+req.typenames: *PDRMRIGHTS, DRMRIGHTS
 ---
 
 # tagDRMRIGHTS structure
@@ -159,21 +159,6 @@ The <b>DEFINE_DRMRIGHTS_DEFAULT</b> macro defines a constant <b>DRMRIGHTS</b> st
 
 Parameters
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.h (include Drmk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

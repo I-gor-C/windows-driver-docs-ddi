@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 968cfc99-4862-41f7-bf7e-d579a3e8061f
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.keywords: RxpTrackReference
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: EXpsFontRestriction
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # PFLT_NORMALIZE_CONTEXT_CLEANUP callback
@@ -73,42 +73,6 @@ To register this callback routine, the minifilter driver stores the address of a
 
 The filter manager calls this callback routine to allow the minifilter driver to perform any needed cleanup for the context information passed in the <i>NormalizationContext</i> parameter of the <a href="..\fltkernel\nc-fltkernel-pflt_normalize_name_component.md">PFLT_NORMALIZE_NAME_COMPONENT</a> callback routine. This context is set by the minifilter driver when its PFLT_NORMALIZE_NAME_COMPONENT callback routine is called. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

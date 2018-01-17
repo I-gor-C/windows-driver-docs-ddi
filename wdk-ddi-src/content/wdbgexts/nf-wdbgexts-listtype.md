@@ -107,30 +107,3 @@ This function returns <b>TRUE</b> on success and <b>FALSE</b> on failure.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

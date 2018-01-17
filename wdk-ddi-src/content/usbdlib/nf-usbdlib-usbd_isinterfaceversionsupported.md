@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Usbdex.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.typenames: *PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2
 req.product: Windows 10 or later.
 ---
 
@@ -75,62 +75,4 @@ The USB driver stack loaded for a device depends on the version of Windows, the 
 
 The routine requires a valid USBD handle (obtained in a previous call to <a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>).  <b>USBD_IsInterfaceVersionSupported</b> can only  be called by client drivers that target Windows Vista and later versions of Windows. Those client drivers must get Windows Driver Kit (WDK) for Windows 8 in order to call the routines successfully.  <b>USBD_IsInterfaceVersionSupported</b> replaces the <a href="..\usbdlib\nf-usbdlib-usbd_getusbdiversion.md">USBD_GetUSBDIVersion</a>  routine. 
 
-The USBD interface version does not indicate the capabilities supported by the USB driver stack. For example just because the underlying driver stack supports  USBD_INTERFACE_VERSION_602, the client driver <i>must not</i> assume that the driver can use the static streams capability. That is because, even though the driver stack supports the capability, the host controller hardware or the USB device might not support streams. To determine whether the USB driver stack supports a certain capability, call <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbdlib.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbdex.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+The USBD interface version does not indicate the capabilities supported by the USB driver stack. For example just because the underlying driver stack supports  USBD_INTERFACE_VERSION_602, the client driver <i>must not</i> assume that the driver can use the static streams capability. That is because, even though the driver stack supports the capability, the host controller hardware or the USB device might not support streams. To determine whether the USB driver stack supports a certain capability, call <a href="https://msdn.microsoft.com/library/windows/hardware/hh406230">USBD_QueryUsbCapability</a>.</p>

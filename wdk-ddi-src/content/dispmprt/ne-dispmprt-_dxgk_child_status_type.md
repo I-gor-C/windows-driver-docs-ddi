@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 5fa4b7e2-8215-49d8-9d70-b45c972b39b4
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_CHILD_STATUS_TYPE, *PDXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE
+ms.keywords: _DXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE, *PDXGK_CHILD_STATUS_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PDXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE
+req.typenames: DXGK_CHILD_STATUS_TYPE, *PDXGK_CHILD_STATUS_TYPE
 ---
 
 # _DXGK_CHILD_STATUS_TYPE enumeration
@@ -84,31 +84,6 @@ Supported by WDDM 1.3 and later drivers running on Windows 8.1 and later.
 ## -remarks
 The <b>Type</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_child_status.md">DXGK_CHILD_STATUS</a> structure is a member of the <b>DXGK_CHILD_STATUS_TYPE</b> enumeration.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

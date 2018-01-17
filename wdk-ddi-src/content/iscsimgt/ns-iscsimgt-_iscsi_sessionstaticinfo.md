@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: c652268f-4a31-4ec1-a668-8700cb7f4e1b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo, *PISCSI_SessionStaticInfo
+ms.keywords: _ISCSI_SessionStaticInfo, *PISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: ISCSI_SessionStaticInfo, *PISCSI_SessionStaticInfo
+req.typenames: *PISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo
 ---
 
 # _ISCSI_SessionStaticInfo structure
@@ -207,21 +207,6 @@ A variable length array of <a href="..\iscsimgt\ns-iscsimgt-_iscsi_connectionsta
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

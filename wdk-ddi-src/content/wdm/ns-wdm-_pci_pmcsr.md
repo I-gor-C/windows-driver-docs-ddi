@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: 5c4bf4c0-c36f-4779-a012-6364c94f37a1
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _PCI_PMCSR, *PPCI_PMCSR, PCI_PMCSR
+ms.keywords: _PCI_PMCSR, PCI_PMCSR, *PPCI_PMCSR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PPCI_PMCSR, PCI_PMCSR
+req.typenames: PCI_PMCSR, *PPCI_PMCSR
 req.product: Windows 10 or later.
 ---
 
@@ -142,21 +142,6 @@ Contains a one-bit value (either 0 or 1) that reports the value of the PMEStatus
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

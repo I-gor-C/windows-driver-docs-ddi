@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9ff7efec-4844-4abf-89c2-472afc959697
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _FILE_STANDARD_INFORMATION, *PFILE_STANDARD_INFORMATION, FILE_STANDARD_INFORMATION
+ms.keywords: _FILE_STANDARD_INFORMATION, FILE_STANDARD_INFORMATION, *PFILE_STANDARD_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PFILE_STANDARD_INFORMATION, FILE_STANDARD_INFORMATION
+req.typenames: FILE_STANDARD_INFORMATION, *PFILE_STANDARD_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -87,21 +87,6 @@ The file directory status. <b>TRUE</b> indicates the file object represents a di
 ## -remarks
 <b>EndOfFile</b> specifies the byte offset to the end of the file. Because this value is zero-based, it actually refers to the first free byte in the file; that is, it is the offset to the byte immediately following the last valid byte in the file. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: a92f7048-ca8a-450c-93ab-6ea040412198
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: *PISCSIIPADDRESSTYPE, ISCSIIPADDRESSTYPE, *PISCSIIPADDRESSTYPE
+ms.keywords: *PISCSIIPADDRESSTYPE, *PISCSIIPADDRESSTYPE, ISCSIIPADDRESSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: ISCSIIPADDRESSTYPE, *PISCSIIPADDRESSTYPE
+req.typenames: *PISCSIIPADDRESSTYPE, ISCSIIPADDRESSTYPE
 ---
 
 # *PISCSIIPADDRESSTYPE enumeration
@@ -79,21 +79,6 @@ No address is specified.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsidef.h (include Iscsidef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

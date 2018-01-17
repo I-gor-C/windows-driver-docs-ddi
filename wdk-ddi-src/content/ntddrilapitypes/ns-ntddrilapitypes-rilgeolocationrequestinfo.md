@@ -7,8 +7,8 @@ old-location: netvista\rilgeolocationrequestinfo.htm
 old-project: netvista
 ms.assetid: f3fa5212-66c1-45f8-a96f-78d1f2f01fe8
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILGEOLOCATIONREQUESTINFO, *LPRILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO
+ms.date: 1/11/2018
+ms.keywords: RILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO, *LPRILGEOLOCATIONREQUESTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO
+req.typenames: RILGEOLOCATIONREQUESTINFO, *LPRILGEOLOCATIONREQUESTINFO
 ---
 
 # RILGEOLOCATIONREQUESTINFO structure
@@ -70,19 +70,3 @@ typedef struct _RILGEOLOCATIONREQUESTINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_packet_filter_type.htm
 old-project: netvista
 ms.assetid: 252CE7F6-2DA7-45F8-97F0-85B51A0181C2
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_PACKET_FILTER_TYPE, WDI_PACKET_FILTER_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -207,39 +207,3 @@ All packet types.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

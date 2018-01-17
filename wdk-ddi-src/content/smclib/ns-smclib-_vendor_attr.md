@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: f166ced5-2d63-4e35-af77-78ca80c888d7
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _VENDOR_ATTR, VENDOR_ATTR, *PVENDOR_ATTR
+ms.keywords: _VENDOR_ATTR, *PVENDOR_ATTR, VENDOR_ATTR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: VENDOR_ATTR, *PVENDOR_ATTR
+req.typenames: *PVENDOR_ATTR, VENDOR_ATTR
 req.product: Windows 10 or later.
 ---
 
@@ -170,19 +170,3 @@ Reserved for system use.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Smclib.h (include Smclib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,8 +7,8 @@ old-location: netvista\riluiccfilepath_2.htm
 old-project: netvista
 ms.assetid: d0321907-0a3c-43cc-97f1-a3a7e9b84311
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILUICCFILEPATH, *LPRILUICCFILEPATH, RILUICCFILEPATH
+ms.date: 1/11/2018
+ms.keywords: RILUICCFILEPATH, RILUICCFILEPATH, *LPRILUICCFILEPATH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILUICCFILEPATH, RILUICCFILEPATH
+req.typenames: RILUICCFILEPATH, *LPRILUICCFILEPATH
 req.product: Windows 10 or later.
 ---
 
@@ -67,19 +67,3 @@ typedef struct _RILUICCFILEPATH {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

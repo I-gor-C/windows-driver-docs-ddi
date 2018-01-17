@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: c526585e-aa6d-4332-9dd7-927d83293f09
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FLT_CALLBACK_DATA, FLT_CALLBACK_DATA, *PFLT_CALLBACK_DATA
+ms.keywords: _FLT_CALLBACK_DATA, *PFLT_CALLBACK_DATA, FLT_CALLBACK_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: FLT_CALLBACK_DATA, *PFLT_CALLBACK_DATA
+req.typenames: *PFLT_CALLBACK_DATA, FLT_CALLBACK_DATA
 ---
 
 # _FLT_CALLBACK_DATA structure
@@ -271,21 +271,6 @@ A minifilter-initiated I/O operation is sent only to the minifilter instances at
 Minifilters can only initiate IRP-based I/O operations. They cannot initiate fast I/O or file system filter (FSFilter) callback operations. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -346,7 +331,7 @@ Header
 <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nc-fltkernel-pflt_post_operation_callback.md">PFLT_POST_OPERATION_CALLBACK</a>

@@ -83,19 +83,3 @@ A pointer to a <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddiarg_createdevice_000
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

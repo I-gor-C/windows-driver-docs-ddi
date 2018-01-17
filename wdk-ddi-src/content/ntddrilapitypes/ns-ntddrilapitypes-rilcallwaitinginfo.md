@@ -7,7 +7,7 @@ old-location: netvista\rilcallwaitinginfo.htm
 old-project: netvista
 ms.assetid: 526ce708-93bb-43f2-9d78-b3e8360e01da
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLWAITINGINFO, RILCALLWAITINGINFO, *LPRILCALLWAITINGINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,19 +74,3 @@ typedef struct _RILCALLWAITINGINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

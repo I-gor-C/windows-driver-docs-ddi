@@ -60,19 +60,3 @@ Specifies the host socket created by CREATE_SOCKET.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D4drvif.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -111,7 +111,7 @@ For more information, see the following Remarks section.
 
 ### -param pDataFormat  [in]
 
-Pointer to a kernel streaming <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> structure specifying the data format to use for this instance
+Pointer to a kernel streaming <a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a> structure specifying the data format to use for this instance
 
 
 ### -param ppServiceGroup  [out]
@@ -152,42 +152,6 @@ However, a pin on a DirectMusic filter can support a third option that is not av
 The <i>ppMXF</i>, <i>pOuterUnknown</i>, <i>ppServiceGroup</i>, <i>pAllocatorMXF</i>, and <i>pMasterClock</i> parameters follow the <a href="https://msdn.microsoft.com/e6b19110-37e2-4d23-a528-6393c12ab650">reference-counting conventions for COM objects</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusicks.h (include Dmusicks.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -203,7 +167,7 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 </dt>
 <dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>
 </dt>
 <dt>
 <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>

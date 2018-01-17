@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 58C2FFFC-2EAC-406B-943A-491AF3538F78
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_COMPONENT_ACTIVE, PEP_COMPONENT_ACTIVE, *PPEP_COMPONENT_ACTIVE
+ms.keywords: _PEP_COMPONENT_ACTIVE, *PPEP_COMPONENT_ACTIVE, PEP_COMPONENT_ACTIVE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PEP_COMPONENT_ACTIVE, *PPEP_COMPONENT_ACTIVE
+req.typenames: *PPEP_COMPONENT_ACTIVE, PEP_COMPONENT_ACTIVE
 ---
 
 # _PEP_COMPONENT_ACTIVE structure
@@ -86,31 +86,6 @@ typedef struct _PEP_COMPONENT_ACTIVE {
 ## -remarks
 This structure is used by the <a href="kernel.pep_dpm_component_active">PEP_DPM_COMPONENT_ACTIVE</a> notification. The first three members of the structure contain input values that are supplied by the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx). The last two members contain output values that the PEP writes to the structure in response to this notification.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pep_x.h (include Pepfx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

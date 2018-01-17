@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 161CA2C2-F4F4-49F3-9007-ADFBDA905119
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: _NFC_CX_DRIVER_FLAGS, NFC_CX_DRIVER_FLAGS, *PNFC_CX_DRIVER_FLAGS
+ms.keywords: _NFC_CX_DRIVER_FLAGS, *PNFC_CX_DRIVER_FLAGS, NFC_CX_DRIVER_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: < DISPATCH_LEVEL
-req.typenames: NFC_CX_DRIVER_FLAGS, *PNFC_CX_DRIVER_FLAGS
+req.irql: Requires same
+req.typenames: *PNFC_CX_DRIVER_FLAGS, NFC_CX_DRIVER_FLAGS
 ---
 
 # _NFC_CX_DRIVER_FLAGS enumeration
@@ -110,41 +110,6 @@ Indicates support for RF routing switched ON power sub-states.
 ## -remarks
 The NFC CX allows the NFC client driver to provide some driver flags that can be used to configure the run-time implementation of the class extension. These flags enable the NFC CX to implement some standard NCI operations slightly differently to support different firmware implementations due to ambiguities in the NCI specification.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-None supported
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Nfccx.h (include Ncidef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 5523d4d6-8eb5-48eb-a652-6612101b8422
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SCSISCAN_INFO, SCSISCAN_INFO, *PSCSISCAN_INFO
+ms.keywords: RxScavengeFobxsForNetRoot
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SCSISCAN_INFO, *PSCSISCAN_INFO
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -105,32 +105,6 @@ If all of the items in the data block are read-only, the miniport driver should 
 
 The miniport driver should call <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> with an appropriate <i>SrbStatus</i> value when the request is completed. If the request does not pend, <b>ScsiPortWmiPostProcess</b> should be called in the <b>HwScsiWmiSetDataBlock</b> callback. Otherwise, <b>ScsiPortWmiPostProcess</b> should be called when the request is actually completed.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsiwmi.h (include Scsiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

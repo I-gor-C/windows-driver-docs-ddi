@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
+req.irql: PASSIVE_LEVEL
 req.typenames: IO_PRIORITY_HINT
 req.product: Windows 10 or later.
 ---
@@ -93,21 +93,6 @@ Marks the limit for priority hints. Any priority hint value must be less than <b
 ## -remarks
 For more information about priority hints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565403">Using IRP Priority Hints</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

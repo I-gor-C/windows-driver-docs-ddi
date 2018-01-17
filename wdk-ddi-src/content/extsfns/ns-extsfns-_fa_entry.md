@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 912DCC1E-2C81-4702-8E12-6331DFB298F0
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _FA_ENTRY, *PFA_ENTRY, FA_ENTRY
+ms.keywords: _FA_ENTRY, FA_ENTRY, *PFA_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PFA_ENTRY, FA_ENTRY
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # _FA_ENTRY structure
@@ -73,21 +73,6 @@ The size of the <a href="https://msdn.microsoft.com/759DE159-F2A8-4BB1-AAF5-B2B9
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Extsfns.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 9E9AB3E0-EBDC-4EC3-BFBF-C78EE56BD699
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBFN_ACTION, USBFN_ACTION, *PUSBFN_ACTION
+ms.keywords: _USBFN_ACTION, *PUSBFN_ACTION, USBFN_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: USBFN_ACTION, *PUSBFN_ACTION
+req.typenames: *PUSBFN_ACTION, USBFN_ACTION
 req.product: WindowsÂ 10 or later.
 ---
 
@@ -73,19 +73,3 @@ UFX should initiate proprietary charger detection by calling the client driverâ€
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxbase.h</dt>
-</dl>
-</td>
-</tr>
-</table>

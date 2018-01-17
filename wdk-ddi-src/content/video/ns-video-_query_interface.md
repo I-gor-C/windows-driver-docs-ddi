@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 0d813870-10bd-4b41-9f36-1cb45c462697
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _QUERY_INTERFACE, *PQUERY_INTERFACE, QUERY_INTERFACE
+ms.keywords: _QUERY_INTERFACE, QUERY_INTERFACE, *PQUERY_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: *PQUERY_INTERFACE, QUERY_INTERFACE
+req.typenames: QUERY_INTERFACE, *PQUERY_INTERFACE
 req.product: Windows 10 or later.
 ---
 
@@ -91,21 +91,6 @@ Specifies additional information about the interface being requested. Typically,
 ## -remarks
 The <i>QueryInterface</i> parameter of the video miniport driver's <a href="..\video\nc-video-pvideo_hw_query_interface.md">HwVidQueryInterface</a> function is a pointer to a QUERY_INTERFACE structure. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

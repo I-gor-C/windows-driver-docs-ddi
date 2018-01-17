@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 204893BE-8B89-4BE4-BEDB-BF28DBAAACE9
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT
+ms.keywords: _QUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PQUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT
+req.typenames: QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT
 ---
 
 # _QUERY_FILE_LAYOUT_OUTPUT structure
@@ -126,31 +126,6 @@ The following entry structures are returned when their corresponding inclusion f
 
 When multiple entries of the same type exist for a single <b>FILE_LAYOUT_ENTRY</b> structure, each informational entry structure has an offset member that indicates the location of the next entry. The chain of entry structures continues until the value of the offset member is 0.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting in Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

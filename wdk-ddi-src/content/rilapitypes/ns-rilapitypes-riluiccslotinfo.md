@@ -7,8 +7,8 @@ old-location: netvista\riluiccslotinfo_2.htm
 old-project: netvista
 ms.assetid: 5fd25815-40b1-4fba-a7e8-fed24d731ab0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILUICCSLOTINFO, RILUICCSLOTINFO, *LPRILUICCSLOTINFO
+ms.date: 1/11/2018
+ms.keywords: RILUICCSLOTINFO, *LPRILUICCSLOTINFO, RILUICCSLOTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILUICCSLOTINFO, *LPRILUICCSLOTINFO
+req.typenames: *LPRILUICCSLOTINFO, RILUICCSLOTINFO
 req.product: Windows 10 or later.
 ---
 
@@ -71,19 +71,3 @@ typedef struct _RILUICCSLOTINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

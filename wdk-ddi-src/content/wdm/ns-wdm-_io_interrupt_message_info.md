@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d740d55e-6549-494d-9b2a-39d5c2e670d3
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _IO_INTERRUPT_MESSAGE_INFO, IO_INTERRUPT_MESSAGE_INFO, *PIO_INTERRUPT_MESSAGE_INFO
+ms.keywords: _IO_INTERRUPT_MESSAGE_INFO, *PIO_INTERRUPT_MESSAGE_INFO, IO_INTERRUPT_MESSAGE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: IO_INTERRUPT_MESSAGE_INFO, *PIO_INTERRUPT_MESSAGE_INFO
+req.typenames: *PIO_INTERRUPT_MESSAGE_INFO, IO_INTERRUPT_MESSAGE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -75,21 +75,6 @@ Variable-length array that specifies an <a href="..\wdm\ns-wdm-_io_interrupt_mes
 ## -remarks
 When a driver calls <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> to register an <a href="https://msdn.microsoft.com/library/windows/hardware/ff547940">InterruptMessageService</a> routine, <b>IoConnectInterruptEx</b> provides a pointer to <b>IO_INTERRUPT_MESSAGE_INFO</b> in <i>Parameters</i>-&gt;<b>MessageBased.ConnectionContext</b>. For more information, see <a href="..\wdm\ns-wdm-_io_connect_interrupt_parameters.md">IO_CONNECT_INTERRUPT_PARAMETERS</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

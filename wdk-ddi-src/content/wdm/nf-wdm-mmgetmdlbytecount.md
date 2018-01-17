@@ -7,7 +7,7 @@ old-location: kernel\mmgetmdlbytecount.htm
 old-project: Benchmark
 ms.assetid: a0493418-2ce2-4917-bf9f-e4dc726a3847
 ms.author: windowsdriverdev
-ms.date: 12/14/2017
+ms.date: 1/12/2018
 ms.keywords: MmGetMdlByteCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,61 +63,6 @@ A pointer to an <a href="..\wdm\ns-wdm-_mdl.md">MDL</a> structure that describes
 ## -remarks
 Callers of <b>MmGetMdlByteCount</b> can be running at any IRQL. Usually, callers are running at IRQL &lt;= DISPATCH_LEVEL.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level (see Remarks section)
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549042">MdlAfterReqCompletedIntIoctlA</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549056">MdlAfterReqCompletedIoctlA</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549065">MdlAfterReqCompletedReadA</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549077">MdlAfterReqCompletedWriteA</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

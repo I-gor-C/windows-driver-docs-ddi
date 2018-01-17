@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: c0404803-d8a5-4698-a725-12c659cbcaab
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _VIDEO_X86_BIOS_ARGUMENTS, *PVIDEO_X86_BIOS_ARGUMENTS, VIDEO_X86_BIOS_ARGUMENTS
+ms.keywords: _VIDEO_X86_BIOS_ARGUMENTS, VIDEO_X86_BIOS_ARGUMENTS, *PVIDEO_X86_BIOS_ARGUMENTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: *PVIDEO_X86_BIOS_ARGUMENTS, VIDEO_X86_BIOS_ARGUMENTS
+req.typenames: VIDEO_X86_BIOS_ARGUMENTS, *PVIDEO_X86_BIOS_ARGUMENTS
 req.product: Windows 10 or later.
 ---
 
@@ -89,21 +89,6 @@ MS-DOS INT10s are usually "set mode" requests for the video adapter. Each value 
 
 A miniport driver should <i>not</i> set a segment:offset-type pointer in any member of this structure. Such an address is interpreted as an unsigned DWORD value.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

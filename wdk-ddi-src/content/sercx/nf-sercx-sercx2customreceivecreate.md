@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: SERCX_STATUS, *PSERCX_STATUS
+req.typenames: *PSERCX_STATUS, SERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -113,52 +113,6 @@ If the <i>Attributes</i> parameter points to a <a href="..\wdfobject\ns-wdfobjec
 
 For more information about creating custom-receive objects, see <a href="serports.sercx2customreceive">SERCX2CUSTOMRECEIVE</a>. For more information about custom-receive transactions, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C-BE91-405A4BA2D5B0">SerCx2 Custom-Receive Transactions</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

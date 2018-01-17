@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgdisplaymode.htm
 old-project: netvista
 ms.assetid: ee75cf74-def7-4705-ae61-c2472bd4446e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGCDMAMSGDISPLAYMODE, RILMSGCDMAMSGDISPLAYMODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,19 +66,3 @@ typedef enum _RILMSGCDMAMSGDISPLAYMODE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+req.typenames: *PDRMRIGHTS, DRMRIGHTS
 ---
 
 # ExtRemoteData::SetLong64 method
@@ -170,21 +170,6 @@ The DEBUG_PHYSICAL_<i>XXX</i> flags used for accessing physical memory on the ta
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Engextcpp.hpp (include Engextcpp.hpp)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

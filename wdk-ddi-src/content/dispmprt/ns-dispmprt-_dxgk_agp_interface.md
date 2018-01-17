@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: ebaa2aba-426f-4f5f-b2bf-a8433cdc9205
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_AGP_INTERFACE, *PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE
+ms.keywords: _DXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE, *PDXGK_AGP_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE
+req.typenames: DXGK_AGP_INTERFACE, *PDXGK_AGP_INTERFACE
 ---
 
 # _DXGK_AGP_INTERFACE structure
@@ -102,30 +102,4 @@ A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_a
 
 
 ## -remarks
-The display miniport driver supplies the <b>Size</b> and <b>Version</b> members of this structure, and then calls <a href="..\dispmprt\nc-dispmprt-dxgkcb_query_services.md">DxgkCbQueryServices</a>, which fills in the remaining members of this structure.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The display miniport driver supplies the <b>Size</b> and <b>Version</b> members of this structure, and then calls <a href="..\dispmprt\nc-dispmprt-dxgkcb_query_services.md">DxgkCbQueryServices</a>, which fills in the remaining members of this structure.</p>

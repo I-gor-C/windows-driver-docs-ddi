@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: SERCX_STATUS, *PSERCX_STATUS
+req.typenames: *PSERCX_STATUS, SERCX_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -76,56 +76,10 @@ The type of event that is ending the current wait operation.  This parameter is 
 
 
 ## -remarks
-When SerCx receives an <a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a> request from a client, the request handler in SerCx calls the <a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a> callback function to notify the serial controller driver that the wait mask has changed. The wait mask specifies a set of hardware events for the serial controller to monitor. During this call, the driver discards any old wait mask that might have been specified in a previous <i>EvtSerCxWaitmask</i> call, and then configures the serial controller hardware to detect the events in the new wait mask.
+When SerCx receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff546780">IOCTL_SERIAL_SET_WAIT_MASK</a> request from a client, the request handler in SerCx calls the <a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a> callback function to notify the serial controller driver that the wait mask has changed. The wait mask specifies a set of hardware events for the serial controller to monitor. During this call, the driver discards any old wait mask that might have been specified in a previous <i>EvtSerCxWaitmask</i> call, and then configures the serial controller hardware to detect the events in the new wait mask.
 
-Later, when an event in the new wait mask occurs, the driver calls <b>SerCxCompleteWait</b> to notify SerCx of the event. If a previously sent <a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a> request is pending, <b>SerCxCompleteWait</b> completes this request with a status of STATUS_SUCCESS and an output wait mask that indicates which event occurred. Otherwise, <b>SerCxCompleteWait</b> stores the event in its internal event history in anticipation of a future <b>IOCTL_SERIAL_WAIT_ON_MASK</b> request.
+Later, when an event in the new wait mask occurs, the driver calls <b>SerCxCompleteWait</b> to notify SerCx of the event. If a previously sent <a href="https://msdn.microsoft.com/library/windows/hardware/ff546805">IOCTL_SERIAL_WAIT_ON_MASK</a> request is pending, <b>SerCxCompleteWait</b> completes this request with a status of STATUS_SUCCESS and an output wait mask that indicates which event occurred. Otherwise, <b>SerCxCompleteWait</b> stores the event in its internal event history in anticipation of a future <b>IOCTL_SERIAL_WAIT_ON_MASK</b> request.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -133,10 +87,10 @@ IRQL
 <a href="..\sercx\nc-sercx-evt_sercx_waitmask.md">EvtSerCxWaitmask</a>
 </dt>
 <dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_wait_mask.md">IOCTL_SERIAL_SET_WAIT_MASK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546780">IOCTL_SERIAL_SET_WAIT_MASK</a>
 </dt>
 <dt>
-<a href="..\ntddser\ni-ntddser-ioctl_serial_wait_on_mask.md">IOCTL_SERIAL_WAIT_ON_MASK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546805">IOCTL_SERIAL_WAIT_ON_MASK</a>
 </dt>
 <dt>
 <a href="..\sercx\nf-sercx-sercxgetwaitmask.md">SerCxGetWaitMask</a>

@@ -136,31 +136,6 @@ A pointer to the controller driver's <a href="..\sercx\nc-sercx-evt_sercx_receiv
 Before this structure is passed to the <a href="..\sercx\nf-sercx-sercxinitialize.md">SerCxInitialize</a> method, it must be initialized by the <a href="..\sercx\nf-sercx-sercx_config_init.md">SERCX_CONFIG_INIT</a> function, and then modified by the controller driver to set the callback function pointers and the <b>PowerManaged</b> member.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

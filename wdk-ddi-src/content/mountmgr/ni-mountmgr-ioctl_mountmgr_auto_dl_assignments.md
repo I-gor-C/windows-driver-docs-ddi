@@ -75,19 +75,3 @@ If the operation is successful, the <b>Status</b> field is set to STATUS_SUCCESS
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mountmgr.h (include Mountmgr.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

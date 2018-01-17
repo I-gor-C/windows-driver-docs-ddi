@@ -7,8 +7,8 @@ old-location: netvista\rilphonebookinfo.htm
 old-project: netvista
 ms.assetid: 626bfc9b-6d84-4b8c-89eb-c635d0cb61f0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO, RILPHONEBOOKINFO
+ms.date: 1/11/2018
+ms.keywords: RILPHONEBOOKINFO, RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILPHONEBOOKINFO, RILPHONEBOOKINFO
+req.typenames: RILPHONEBOOKINFO, *LPRILPHONEBOOKINFO
 ---
 
 # RILPHONEBOOKINFO structure
@@ -126,19 +126,3 @@ typedef struct _RILPHONEBOOKINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

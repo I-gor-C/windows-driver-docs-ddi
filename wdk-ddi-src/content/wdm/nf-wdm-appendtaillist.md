@@ -88,52 +88,6 @@ The following code example shows how to write a function named <code>MyAppendTai
 The <code>MyAppendTailList</code> function in this code example treats both the <i>ListHead</i> and <i>ListToAppend</i> parameters as pointers to list heads. When this function returns, the list pointed to by <i>ListToAppend</i> is empty; that is, it consists of a list head that has no associated list entries. All of the entries that were initially in this list have been appended to the list pointed to by <i>ListHead</i>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level (See Remarks section)
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

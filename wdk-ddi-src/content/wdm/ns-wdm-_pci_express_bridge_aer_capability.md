@@ -144,21 +144,6 @@ All other PCIe devices and ports that are not bridge devices use the <a href="ht
 For additional information about the PCIe advanced error reporting capability structure for PCIe bridge devices, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=69486">PCI Express Bridge Specification</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Ntddk.h or Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

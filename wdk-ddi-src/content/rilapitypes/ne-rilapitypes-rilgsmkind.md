@@ -7,7 +7,7 @@ old-location: netvista\rilgsmkind_2.htm
 old-project: netvista
 ms.assetid: ec02cb5a-78e4-411b-945c-2ded798720e6
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILGSMKIND, RILGSMKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,19 +67,3 @@ typedef enum _RILGSMKIND {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

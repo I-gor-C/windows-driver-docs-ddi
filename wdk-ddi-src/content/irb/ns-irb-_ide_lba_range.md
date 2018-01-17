@@ -66,19 +66,3 @@ Contains the sector count of the LBA range.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

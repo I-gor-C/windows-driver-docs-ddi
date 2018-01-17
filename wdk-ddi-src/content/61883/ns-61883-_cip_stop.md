@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: FE396C2C-B099-47F4-9C27-93D420D54103
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CIP_STOP, *PCIP_STOP, CIP_STOP
+ms.keywords: _CIP_STOP, CIP_STOP, *PCIP_STOP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PCIP_STOP, CIP_STOP
+req.typenames: CIP_STOP, *PCIP_STOP
 ---
 
 # _CIP_STOP structure
@@ -64,21 +64,6 @@ If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b
 
 If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

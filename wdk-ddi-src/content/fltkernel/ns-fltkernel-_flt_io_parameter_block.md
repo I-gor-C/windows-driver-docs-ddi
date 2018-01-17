@@ -256,7 +256,7 @@ The minor function code for the I/O operation. This member is optional and can b
 
 ### -field OperationFlags
 
-A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The Filter Manager copies these flags from the  <b>Flags</b> member of the <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure that is associated with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>. The following table shows the most commonly used flag values.
+A bitmask of flags that specify various aspects of the I/O operation. These flags are used only for IRP-based operations. The Filter Manager copies these flags from the  <b>Flags</b> member of the <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure that is associated with the <a href="..\wdm\ns-wdm-_irp.md">IRP</a>. The following table shows the most commonly used flag values.
 
 <table>
 <tr>
@@ -465,21 +465,6 @@ A minifilter can initiate an I/O operation by calling a support routine such as 
 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -513,7 +498,7 @@ Header
 <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548608">IRP_MJ_CLEANUP</a>

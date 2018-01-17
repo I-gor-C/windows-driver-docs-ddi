@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 81c3f484-427e-43b8-b7dd-12017533560b
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _VHF_CONFIG, VHF_CONFIG, *PVHF_CONFIG
+ms.keywords: _USBSIDEBANDAUDIO_VOLUME_PARAMS, *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.typenames: *PUSBSIDEBANDAUDIO_VOLUME_PARAMS, USBSIDEBANDAUDIO_VOLUME_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -154,32 +154,6 @@ If it cannot get bus-relative access ranges values by calling <b>VideoPortGetDev
 
 <i>HwVidQueryDeviceCallback</i> should be made pageable.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

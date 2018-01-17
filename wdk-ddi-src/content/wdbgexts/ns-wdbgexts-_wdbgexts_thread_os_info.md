@@ -118,21 +118,6 @@ Receives the thread affinity mask for the thread in a symmetric multiprocessor (
 The parameters for the IG_GET_THREAD_OS_INFO <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation are the members of the WDBGEXTS_THREAD_OS_INFO structure.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

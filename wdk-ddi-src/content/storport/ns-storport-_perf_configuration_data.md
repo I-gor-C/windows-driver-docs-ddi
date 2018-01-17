@@ -213,21 +213,6 @@ Typically, a miniport  completes I/O requests in it's <a href="..\storport\nc-st
 For information about enabling message-signaled interrupts for a device, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544246">Enabling Message-Signaled Interrupts in the Registry</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

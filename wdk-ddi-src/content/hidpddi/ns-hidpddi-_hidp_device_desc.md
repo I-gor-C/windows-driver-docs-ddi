@@ -88,21 +88,6 @@ A <a href="..\hidpddi\ns-hidpddi-_hidp_getcoldesc_dbg.md">HIDP_GETCOLDESC_DBG</a
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hidpddi.h (include Hidpddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

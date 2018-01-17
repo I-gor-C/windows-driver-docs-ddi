@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 63DB9626-BB05-43C4-BBC0-3A63ED5D6E94
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_NOTIFY_COMPONENT_IDLE_STATE, *PPEP_NOTIFY_COMPONENT_IDLE_STATE, PEP_NOTIFY_COMPONENT_IDLE_STATE
+ms.keywords: _PEP_NOTIFY_COMPONENT_IDLE_STATE, PEP_NOTIFY_COMPONENT_IDLE_STATE, *PPEP_NOTIFY_COMPONENT_IDLE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_NOTIFY_COMPONENT_IDLE_STATE, PEP_NOTIFY_COMPONENT_IDLE_STATE
+req.typenames: PEP_NOTIFY_COMPONENT_IDLE_STATE, *PPEP_NOTIFY_COMPONENT_IDLE_STATE
 ---
 
 # _PEP_NOTIFY_COMPONENT_IDLE_STATE structure
@@ -88,31 +88,6 @@ If FALSE, the PEP must complete the necessary preparations at a later time and t
 ## -remarks
 This structure is used by the <a href="kernel.pep_dpm_notify_component_idle_state">PEP_DPM_NOTIFY_COMPONENT_IDLE_STATE</a> notification. The first four members of this structure contain input values that are supplied by PoFx. The <b>Completed</b> member contains an output value that the PEP writes to the structure in response to this notification.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

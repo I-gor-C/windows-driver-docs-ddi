@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 6033b33f-74cd-4034-baff-a931b7add370
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _SECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL, *PSECURITY_IMPERSONATION_LEVEL
+ms.keywords: _SECURITY_IMPERSONATION_LEVEL, *PSECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: SECURITY_IMPERSONATION_LEVEL, *PSECURITY_IMPERSONATION_LEVEL
+req.irql: PASSIVE_LEVEL
+req.typenames: *PSECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL
 req.product: Windows 10 or later.
 ---
 
@@ -83,21 +83,6 @@ The server process can impersonate the client's security context on remote syste
 ## -remarks
 Impersonation is the ability of a process to take on the security attributes of another process.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

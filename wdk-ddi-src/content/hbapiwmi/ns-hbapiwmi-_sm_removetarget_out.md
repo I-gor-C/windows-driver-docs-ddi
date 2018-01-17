@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: b93f999e-471a-4f02-a6f2-e21386b9e289
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SM_RemoveTarget_OUT, *PSM_RemoveTarget_OUT, SM_RemoveTarget_OUT
+ms.keywords: _SM_RemoveTarget_OUT, SM_RemoveTarget_OUT, *PSM_RemoveTarget_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSM_RemoveTarget_OUT, SM_RemoveTarget_OUT
+req.typenames: SM_RemoveTarget_OUT, *PSM_RemoveTarget_OUT
 ---
 
 # _SM_RemoveTarget_OUT structure
@@ -60,20 +60,4 @@ The status of the operation. For a list of allowed values and their descriptions
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_RemoveTarget_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_EventControl WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_RemoveTarget_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_EventControl WMI class.</p>

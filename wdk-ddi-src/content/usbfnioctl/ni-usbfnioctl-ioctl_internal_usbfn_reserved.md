@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: F6935F5F-B6A8-4495-835D-151A26633F04
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.keywords: _USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBFN_USB_STRING, USBFN_USB_STRING
+req.typenames: *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 req.product: Windows 10 or later.
 ---
 
@@ -75,19 +75,3 @@ I/O Status block
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnioctl.h (include Usbfnioctl.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

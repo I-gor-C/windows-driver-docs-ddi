@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 0F13A5B2-CD35-4127-B2E3-F4027D098CB2
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: SERCX_BUFFER_DESCRIPTOR, SERCX_BUFFER_DESCRIPTOR, *PSERCX_BUFFER_DESCRIPTOR
+ms.keywords: SERCX_BUFFER_DESCRIPTOR, *PSERCX_BUFFER_DESCRIPTOR, SERCX_BUFFER_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
-req.typenames: SERCX_BUFFER_DESCRIPTOR, *PSERCX_BUFFER_DESCRIPTOR
+req.typenames: *PSERCX_BUFFER_DESCRIPTOR, SERCX_BUFFER_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -81,31 +81,6 @@ The buffers that are obtained by successive calls to <b>SerCxRetrieveReceiveBuff
 
 The controller driver must call the <a href="..\sercx\nf-sercx-sercx_buffer_descriptor_init.md">SERCX_BUFFER_DESCRIPTOR_INIT</a> function to initialize an <b>SERCX_BUFFER_DESCRIPTOR</b> structure before the structure is passed to the <a href="..\sercx\nf-sercx-sercxretrievereceivebuffer.md">SerCxRetrieveReceiveBuffer</a> or <a href="..\sercx\nf-sercx-sercxretrievetransmitbuffer.md">SerCxRetrieveTransmitBuffer</a> method. After a buffer descriptor is initialized, it can be reused without being initialized again.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

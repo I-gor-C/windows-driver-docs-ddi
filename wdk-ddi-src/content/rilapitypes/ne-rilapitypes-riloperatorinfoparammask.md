@@ -7,7 +7,7 @@ old-location: netvista\riloperatorinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 1366f37b-4785-4e36-9fc8-bfaef6f9e227
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILOPERATORINFOPARAMMASK, RILOPERATORINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,19 +67,3 @@ typedef enum _RILOPERATORINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

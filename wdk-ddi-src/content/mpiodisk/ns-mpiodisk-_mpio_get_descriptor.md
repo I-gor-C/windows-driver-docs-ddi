@@ -72,19 +72,3 @@ A field that returns an array of PDO_INFORMATION structures, where the number of
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: cebe5b45-2a7a-4e33-aacb-5cc3ee112808
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _BUS_INTERFACE_STANDARD, BUS_INTERFACE_STANDARD, *PBUS_INTERFACE_STANDARD
+ms.keywords: _BUS_INTERFACE_STANDARD, *PBUS_INTERFACE_STANDARD, BUS_INTERFACE_STANDARD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: BUS_INTERFACE_STANDARD, *PBUS_INTERFACE_STANDARD
+req.typenames: *PBUS_INTERFACE_STANDARD, BUS_INTERFACE_STANDARD
 req.product: Windows 10 or later.
 ---
 
@@ -129,21 +129,6 @@ If the driver is executing at IRQL = PASSIVE_LEVEL, it should obtain a device's 
 
 However, if a driver must obtain an adapter object while running at IRQL &gt;= DISPATCH_LEVEL, it cannot do so with <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>. In this case, the driver must query for the <b>BUS_INTERFACE_STANDARD</b> interface while still at IRQL = PASSIVE_LEVEL by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

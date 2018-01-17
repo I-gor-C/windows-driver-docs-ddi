@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgpriority.htm
 old-project: netvista
 ms.assetid: aec67cd5-9ac9-41da-b5e6-a4e416923afb
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGCDMAMSGPRIORITY, RILMSGCDMAMSGPRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILMSGCDMAMSGPRIORITY {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

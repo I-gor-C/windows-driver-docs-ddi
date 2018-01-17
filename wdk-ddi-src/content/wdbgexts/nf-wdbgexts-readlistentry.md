@@ -76,31 +76,4 @@ For more information about the LIST_ENTRY structures, see the Windows Driver Kit
 If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561480">Writing DbgEng Extension Code</a> for details).
 
 
-LIST_ENTRY64 and LIST_ENTRY32 are defined in <b>winnt.h</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h, Dbgeng.h, Winnt.h, or Ntdef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+LIST_ENTRY64 and LIST_ENTRY32 are defined in <b>winnt.h</b>.</p>

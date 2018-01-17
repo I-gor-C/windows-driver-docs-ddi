@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: f55b74d0-d545-419a-87fb-c320f789aaf4
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES
+ms.keywords: _SCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES
+req.typenames: SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES
 req.product: Windows 10 or later.
 ---
 
@@ -483,20 +483,4 @@ Reserved for system use.
 
 
 ## -remarks
-This structure must be maintained by the smart card reader driver. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Smclib.h (include Smclib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This structure must be maintained by the smart card reader driver. </p>

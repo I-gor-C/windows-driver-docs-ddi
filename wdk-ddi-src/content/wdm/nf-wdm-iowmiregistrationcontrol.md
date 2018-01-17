@@ -58,7 +58,7 @@ NTSTATUS IoWMIRegistrationControl(
 
 ### -param DeviceObject [in]
 
-A pointer to a device object. This object is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> system structure.
+A pointer to a device object. This object is a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> system structure.
 
 
 ### -param Action [in]
@@ -136,83 +136,6 @@ If the caller specifies WMIREG_ACTION_DEREGISTER for <i>Action</i>, <b>IoWMIRegi
 
 If a device is removed suddenly (for example, in a surprise removal), causing the PnP manager to send an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551760">IRP_MN_SURPRISE_REMOVAL</a> IRP, the driver must call <b>IoWMIRegistrationControl</b> and specify WMIREG_ACTION_DEREGISTER in <i>Action</i> in the call. Note that if the driver calls <b>IoWMIRegistrationControl</b> with <i>Action</i> set to WMIREG_ACTION_DEREGISTER in response to an <b>IRP_MN_SURPRISE_REMOVAL</b> IRP, the driver must not make the same call to <b>IoWMIRegistrationControl</b> in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551738">IRP_MN_REMOVE_DEVICE</a> IRP.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547796">IrqlIoPassive5</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548273">LowerDriverReturn</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh975204">PowerIrpDDis</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -731,21 +731,6 @@ The SID for a group that represents all application packages.
 <b>SeExports</b> is a large external static SE_EXPORTS structure exported by <i>Ntoskrnl.exe</i>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

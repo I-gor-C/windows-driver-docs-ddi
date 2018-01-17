@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 5a3e06f5-f7f7-4e89-b78e-d6658c34ba9e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SendCTPassThru_IN, SendCTPassThru_IN, *PSendCTPassThru_IN
+ms.keywords: _SendCTPassThru_IN, *PSendCTPassThru_IN, SendCTPassThru_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SendCTPassThru_IN, *PSendCTPassThru_IN
+req.typenames: *PSendCTPassThru_IN, SendCTPassThru_IN
 ---
 
 # _SendCTPassThru_IN structure
@@ -74,21 +74,6 @@ Contains the results of the common transport command.
 ## -remarks
 The WMI tool suite generates a declaration of the SendCTPassThru_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

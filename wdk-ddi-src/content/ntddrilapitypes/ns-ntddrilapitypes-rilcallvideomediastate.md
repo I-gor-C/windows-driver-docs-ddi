@@ -7,8 +7,8 @@ old-location: netvista\rilcallvideomediastate.htm
 old-project: netvista
 ms.assetid: f40b9989-a911-4b89-a5a3-dda9a225b576
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCALLVIDEOMEDIASTATE, RILCALLVIDEOMEDIASTATE, *LPRILCALLVIDEOMEDIASTATE
+ms.date: 1/11/2018
+ms.keywords: RILCALLVIDEOMEDIASTATE, *LPRILCALLVIDEOMEDIASTATE, RILCALLVIDEOMEDIASTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILCALLVIDEOMEDIASTATE, *LPRILCALLVIDEOMEDIASTATE
+req.typenames: *LPRILCALLVIDEOMEDIASTATE, RILCALLVIDEOMEDIASTATE
 ---
 
 # RILCALLVIDEOMEDIASTATE structure
@@ -70,19 +70,3 @@ typedef struct _RILCALLVIDEOMEDIASTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

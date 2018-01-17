@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: f21ba9f4-9571-4918-8f10-97bd308c69f3
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USB_BUS_INTERFACE_USBDI_V0, USB_BUS_INTERFACE_USBDI_V0, *PUSB_BUS_INTERFACE_USBDI_V0
+ms.keywords: _USB_BUS_INTERFACE_USBDI_V0, *PUSB_BUS_INTERFACE_USBDI_V0, USB_BUS_INTERFACE_USBDI_V0
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: USB_BUS_INTERFACE_USBDI_V0, *PUSB_BUS_INTERFACE_USBDI_V0
+req.typenames: *PUSB_BUS_INTERFACE_USBDI_V0, USB_BUS_INTERFACE_USBDI_V0
 req.product: Windows 10 or later.
 ---
 
@@ -159,21 +159,6 @@ Pointer to a routine that returns information about the bus. The information tha
 ## -remarks
 For information about how to query for these interfaces, see <a href="https://msdn.microsoft.com/1a916e21-3545-4a4e-8309-ba10b3690d63">Querying for USB Interfaces</a>. Callers of the routines in this structure can be running at IRQL &lt;= DISPATCH_LEVEL. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbbusif.h (include Usbbusif.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

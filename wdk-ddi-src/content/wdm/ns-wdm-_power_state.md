@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: c3730035-74fc-421a-89dc-7411e53950f5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _POWER_STATE, *PPOWER_STATE, POWER_STATE
+ms.keywords: _POWER_STATE, POWER_STATE, *PPOWER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PPOWER_STATE, POWER_STATE
+req.typenames: POWER_STATE, *PPOWER_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -71,21 +71,6 @@ The <b>POWER_STATE</b> union is used in conjunction with the <a href="..\wdm\ne-
 
 For more information about power management, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548108">Introduction to Power Management</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

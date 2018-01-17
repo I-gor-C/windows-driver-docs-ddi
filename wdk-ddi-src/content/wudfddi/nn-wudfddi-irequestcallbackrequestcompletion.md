@@ -7,7 +7,7 @@ old-location: wdf\irequestcallbackrequestcompletion.htm
 old-project: wdf
 ms.assetid: 65803145-8043-4902-981a-9dbbda2d69e9
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,20 +78,4 @@ The <a href="https://msdn.microsoft.com/1a4787da-2813-4a7a-820a-5c078175aba5">On
 
 
 ## -remarks
-A driver registers the <b>IRequestCallbackRequestCompletion</b> interface when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559153">IWDFIoRequest::SetCompletionCallback</a> method. For more information about how a driver completes an I/O request, see <a href="https://msdn.microsoft.com/ec5aef7a-110e-430c-902d-669ccc7095ac">Completing I/O Requests</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+A driver registers the <b>IRequestCallbackRequestCompletion</b> interface when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559153">IWDFIoRequest::SetCompletionCallback</a> method. For more information about how a driver completes an I/O request, see <a href="https://msdn.microsoft.com/ec5aef7a-110e-430c-902d-669ccc7095ac">Completing I/O Requests</a>.</p>

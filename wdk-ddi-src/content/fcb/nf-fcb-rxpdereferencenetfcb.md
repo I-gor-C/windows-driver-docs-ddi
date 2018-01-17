@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: *PFA_ENTRY, FA_ENTRY
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # RxpDereferenceNetFcb function
@@ -70,42 +70,6 @@ A number of macros are defined in <i>fcb.h</i> for debugging that are the prefer
 
 On checked builds, <b>RxpDereferenceNetFcb</b> causes the system to ASSERT if the node type for the structure is not an FCB or if the final reference count is less than 0. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fcb.h (include Fcb.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\riluiccfiles_2.htm
 old-project: netvista
 ms.assetid: 282cd191-03c5-4599-9a61-e84221ef9143
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILUICCFILES, RILUICCFILES, *LPRILUICCFILES
+ms.date: 1/11/2018
+ms.keywords: RILUICCFILES, *LPRILUICCFILES, RILUICCFILES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILUICCFILES, *LPRILUICCFILES
+req.typenames: *LPRILUICCFILES, RILUICCFILES
 req.product: Windows 10 or later.
 ---
 
@@ -67,19 +67,3 @@ typedef struct _RILUICCFILES {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

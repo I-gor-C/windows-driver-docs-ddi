@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 96236605-36b0-48f5-85d6-512160692b5f
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _HBAFC3MgmtInfo, *PHBAFC3MgmtInfo, HBAFC3MgmtInfo
+ms.keywords: _HBAFC3MgmtInfo, HBAFC3MgmtInfo, *PHBAFC3MgmtInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PHBAFC3MgmtInfo, HBAFC3MgmtInfo
+req.typenames: HBAFC3MgmtInfo, *PHBAFC3MgmtInfo
 ---
 
 # _HBAFC3MgmtInfo structure
@@ -124,21 +124,6 @@ FC-3 refers to the common services layer of the fibre channel protocol. It defin
 
 The WMI tool suite generates a declaration of this structure automatically when it compiles the <b>HBAFC3MgmtInfo</b> WMI Class in <i>hbaapi.mof</i>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

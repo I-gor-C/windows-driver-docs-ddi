@@ -140,41 +140,4 @@ USBCAMD clears the stream header options flag before passing the raw frame to th
 
 The original USBCAMD does not call <b>CamProcessRawVideoFrameEx</b>.
 
-This function is optional.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+This function is optional.</p>

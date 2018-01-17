@@ -112,40 +112,4 @@ If the operation is successful, the method returns STATUS_SUCCESS, or another st
 
 The command queue will handle the following IOCTLs:
 
-The following example shows how to create a UFXENDPOINT object and initialize its context.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxclient.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+The following example shows how to create a UFXENDPOINT object and initialize its context.</p>

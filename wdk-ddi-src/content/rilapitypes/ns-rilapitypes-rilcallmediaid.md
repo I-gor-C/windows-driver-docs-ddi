@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaid_2.htm
 old-project: netvista
 ms.assetid: ad367969-217c-4b9a-b9b1-1b6d1bf04f2e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLMEDIAID, *LPRILCALLMEDIAID, RILCALLMEDIAID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef struct _RILCALLMEDIAID {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

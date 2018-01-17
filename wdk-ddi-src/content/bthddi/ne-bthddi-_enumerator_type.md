@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 2f8ae260-3a4c-44a5-85b7-e3ebcf21522b
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _ENUMERATOR_TYPE, ENUMERATOR_TYPE, *PENUMERATOR_TYPE
+ms.keywords: _ENUMERATOR_TYPE, *PENUMERATOR_TYPE, ENUMERATOR_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: ENUMERATOR_TYPE, *PENUMERATOR_TYPE
+req.typenames: *PENUMERATOR_TYPE, ENUMERATOR_TYPE
 ---
 
 # _ENUMERATOR_TYPE enumeration
@@ -79,34 +79,9 @@ For internal use only. Do not use.
 A value from this enumeration is returned as the 
     <b>EnumeratorType</b> member of the 
     <a href="..\bthddi\ns-bthddi-_bth_enumerator_info.md">BTH_ENUMERATOR_INFO</a> structure, which the 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bthenum_get_enuminfo.md">
+    <a href="https://msdn.microsoft.com/43cd8e6b-5710-4308-a7c4-fb6f14940977">
     IOCTL_INTERNAL_BTHENUM_GET_ENUMINFO</a> returns in its output buffer.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -114,7 +89,7 @@ Header
 <a href="..\bthddi\ns-bthddi-_bth_enumerator_info.md">BTH_ENUMERATOR_INFO</a>
 </dt>
 <dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bthenum_get_enuminfo.md">
+<a href="https://msdn.microsoft.com/43cd8e6b-5710-4308-a7c4-fb6f14940977">
    IOCTL_INTERNAL_BTHENUM_GET_ENUMINFO</a>
 </dt>
 </dl>

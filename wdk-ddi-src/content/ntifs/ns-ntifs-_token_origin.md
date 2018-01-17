@@ -63,21 +63,6 @@ The locally unique identifier (LUID) for the logon session. If the token resulte
 The TOKEN_ORIGIN structure is available on Windows Server 2003 or later.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

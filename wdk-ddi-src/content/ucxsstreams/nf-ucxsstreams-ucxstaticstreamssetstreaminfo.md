@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG
+req.typenames: *PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -76,51 +76,6 @@ The client driver must call this method from its implementation of the <a href="
 
 For a code example, see <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_add.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxsstreams.h (include Ucxclass.h or Ucxstreams.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -199,37 +199,12 @@ Reserved for future use. Do not use.
 ## -remarks
 The BRB_HEADER structure contains common types of information about the specified BRB. The BRB_HEADER
     structure is used by all BRB structures that are used as the input buffer for 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">
+    <a href="https://msdn.microsoft.com/60e4ee90-81d4-47a1-aed4-ee39b9fe3174">
     IOCTL_INTERNAL_BTH_SUBMIT_BRB</a> IOCTLs.
 
 Profile drivers should not modify any of the members of the BRB_HEADER structure except 
     <b>ClientContext</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

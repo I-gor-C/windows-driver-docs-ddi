@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: c9aeaaed-f017-4b23-b867-d704c4f8afb6
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _BTHDDI_SDP_NODE_INTERFACE, *PBTHDDI_SDP_NODE_INTERFACE, BTHDDI_SDP_NODE_INTERFACE
+ms.keywords: _BTHDDI_SDP_NODE_INTERFACE, BTHDDI_SDP_NODE_INTERFACE, *PBTHDDI_SDP_NODE_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
-req.typenames: *PBTHDDI_SDP_NODE_INTERFACE, BTHDDI_SDP_NODE_INTERFACE
+req.typenames: BTHDDI_SDP_NODE_INTERFACE, *PBTHDDI_SDP_NODE_INTERFACE
 ---
 
 # _BTHDDI_SDP_NODE_INTERFACE structure
@@ -237,31 +237,6 @@ Profile drivers should specify the
 All the members of this structure, other than the 
     <b>Interface</b> member, are function pointers.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthsdpddi.h (include BthSdpddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,7 +7,7 @@ old-location: wdf\iwdfdeviceinitialize.htm
 old-project: wdf
 ms.assetid: a776069c-0cbb-4ae9-bf6b-1d300dbcec34
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -171,62 +171,4 @@ The <a href="https://msdn.microsoft.com/18b0b277-97c8-4aff-9f09-34822ce84290">Se
 ## -remarks
  The driver calls the methods of this interface to set the properties for a new device object and passes this interface as an input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create the new device object.
 
-Do not use  this interface after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.5
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>WUDFx.dll</dt>
-</dl>
-</td>
-</tr>
-</table>
+Do not use  this interface after calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a>.</p>

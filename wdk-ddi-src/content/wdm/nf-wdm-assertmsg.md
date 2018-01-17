@@ -76,42 +76,6 @@ If <i>Expression</i> evaluates to <b>TRUE</b>, this routine has no effect.
 If <i>Expression</i> evaluates to <b>FALSE</b>, a message is displayed in the Debugger Command window. The message contains the source-code string of <i>Expression</i>, as well as the path of the source-code file and the line number of the instruction that called the macro. In this event, <b>ASSERTMSG</b> can be ignored and the process or thread in which <b>ASSERTMSG</b> occurred can be terminated. Alternatively, the debugger can be used to analyze the situation or to edit memory. If <b>ASSERTMSG</b> is ignored, execution continues as if the <b>g (Go)</b> command was entered.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows 2000 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Wdm.h or Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallforwardingsettingsreason.htm
 old-project: netvista
 ms.assetid: d1c39f60-15fb-450d-b879-fb5d236fcf45
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLFORWARDINGSETTINGSREASON, RILCALLFORWARDINGSETTINGSREASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,19 +78,3 @@ typedef enum _RILCALLFORWARDINGSETTINGSREASON {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

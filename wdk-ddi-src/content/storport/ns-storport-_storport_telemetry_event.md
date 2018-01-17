@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 50A3EB6D-C485-4C04-8E88-9BD7D7ED0A62
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT
+ms.keywords: _STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT
+req.typenames: *PSTORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT
 req.product: Windows 10 or later.
 ---
 
@@ -197,41 +197,6 @@ The value for parameter 7.
 ## -remarks
 A <b>STORPORT_TELEMETRY_EVENT</b> structure describes the miniport telemetry data payload. The miniport should fill it when calling StorPortLogTelemetry.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1703
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

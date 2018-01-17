@@ -280,19 +280,3 @@ Points to the device extension associated with the device object. Not setting th
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

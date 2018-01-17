@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5cb213c9-24c8-456a-a868-87f1577a8d44
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CM_SCSI_DEVICE_DATA, CM_SCSI_DEVICE_DATA, *PCM_SCSI_DEVICE_DATA
+ms.keywords: _CM_SCSI_DEVICE_DATA, *PCM_SCSI_DEVICE_DATA, CM_SCSI_DEVICE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: CM_SCSI_DEVICE_DATA, *PCM_SCSI_DEVICE_DATA
+req.typenames: *PCM_SCSI_DEVICE_DATA, CM_SCSI_DEVICE_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -74,21 +74,6 @@ The SCSI bus identifier used by the ARC firmware.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

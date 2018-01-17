@@ -71,21 +71,6 @@ SD card drivers should not issue CMD55 (APP_CMD) commands through the SD bus int
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sddef.h (include Sddef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

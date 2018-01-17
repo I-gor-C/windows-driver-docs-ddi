@@ -7,7 +7,7 @@ old-location: netvista\rilsystemselectionprefsmode_2.htm
 old-project: netvista
 ms.assetid: 10aa6bfb-5ada-42f6-8f89-d8d4066d196b
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSYSTEMSELECTIONPREFSMODE, RILSYSTEMSELECTIONPREFSMODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILSYSTEMSELECTIONPREFSMODE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

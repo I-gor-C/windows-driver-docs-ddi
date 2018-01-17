@@ -7,7 +7,7 @@ old-location: netvista\wdi_message_header.htm
 old-project: netvista
 ms.assetid: 69c3ebf5-8805-47d0-a507-d2e3e1d1b0df
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_MESSAGE_HEADER, *PWDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,39 +85,3 @@ Specifies an IHV-specific ID for this message. This can be used by IHVs for debu
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

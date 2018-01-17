@@ -7,8 +7,8 @@ old-location: netvista\rilphonebooklocation_2.htm
 old-project: netvista
 ms.assetid: 1878109a-f70c-4e4b-8735-7fbb972f4416
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILPHONEBOOKLOCATION, RILPHONEBOOKLOCATION, *LPRILPHONEBOOKLOCATION
+ms.date: 1/11/2018
+ms.keywords: RILPHONEBOOKLOCATION, *LPRILPHONEBOOKLOCATION, RILPHONEBOOKLOCATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILPHONEBOOKLOCATION, *LPRILPHONEBOOKLOCATION
+req.typenames: *LPRILPHONEBOOKLOCATION, RILPHONEBOOKLOCATION
 req.product: Windows 10 or later.
 ---
 
@@ -71,19 +71,3 @@ typedef struct _RILPHONEBOOKLOCATION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

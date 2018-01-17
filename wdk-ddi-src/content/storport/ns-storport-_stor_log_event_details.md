@@ -142,21 +142,6 @@ The list of null-terminated Unicode strings to be appended to the log entry for 
 Although <a href="..\storport\nf-storport-storportlogerror.md">StorPortLogError</a> uses <b>PathId</b>, <b>TargetId</b>, and <b>LunId</b> values that are 8bits wide, for <a href="..\storport\nf-storport-storportlogsystemevent.md">StorPortLogSystemEvent</a> they are 32bits wide. The combined size of the miniport driver's dump data and string areas cannot exceed 150 bytes. This restriction is due to the &lt; 255 byte limit that the kernel enforces on the event log entries.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

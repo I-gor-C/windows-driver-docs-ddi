@@ -7,7 +7,7 @@ old-location: netvista\rilsupservicedataparammask_2.htm
 old-project: netvista
 ms.assetid: 65901068-d45e-4c3a-b1ee-340427506c7f
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSUPSERVICEDATAPARAMMASK, RILSUPSERVICEDATAPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,19 +83,3 @@ typedef enum _RILSUPSERVICEDATAPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

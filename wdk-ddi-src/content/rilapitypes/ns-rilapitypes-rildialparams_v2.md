@@ -7,8 +7,8 @@ old-location: netvista\rildialparams_v2_2.htm
 old-project: netvista
 ms.assetid: ca42a4c3-1589-4434-8d76-59f877e1e664
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILDIALPARAMS_V2, RILDIALPARAMS, *LPRILDIALPARAMS, RILDIALPARAMS_V2, *LPRILDIALPARAMS_V2
+ms.date: 1/11/2018
+ms.keywords: RILDIALPARAMS_V2, RILDIALPARAMS_V2, *LPRILDIALPARAMS, RILDIALPARAMS, *LPRILDIALPARAMS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILDIALPARAMS, *LPRILDIALPARAMS, RILDIALPARAMS_V2, *LPRILDIALPARAMS_V2
+req.typenames: RILDIALPARAMS_V2, *LPRILDIALPARAMS, RILDIALPARAMS, *LPRILDIALPARAMS_V2
 req.product: Windows 10 or later.
 ---
 
@@ -79,19 +79,3 @@ typedef struct _RILDIALPARAMS_V2 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

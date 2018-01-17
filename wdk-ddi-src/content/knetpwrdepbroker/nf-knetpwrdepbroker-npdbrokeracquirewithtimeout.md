@@ -7,7 +7,7 @@ old-location: netvista\npdbrokeracquirewithtimeout.htm
 old-project: netvista
 ms.assetid: D2067A72-0FF5-4D77-A1F6-0A6984A1735A
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: NpdBrokerAcquireWithTimeout
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,39 +66,3 @@ Reserved.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>KNetPwrDepBroker.h (include KNetPwrDepBroker.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>

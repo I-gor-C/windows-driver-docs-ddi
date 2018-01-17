@@ -7,8 +7,8 @@ old-location: netvista\rilrange_2.htm
 old-project: netvista
 ms.assetid: f14aa2bc-1eeb-4c17-836a-52046ba388f1
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILRANGE, RILRANGE, *LPRILRANGE
+ms.date: 1/11/2018
+ms.keywords: RILRANGE, *LPRILRANGE, RILRANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILRANGE, *LPRILRANGE
+req.typenames: *LPRILRANGE, RILRANGE
 req.product: Windows 10 or later.
 ---
 
@@ -63,19 +63,3 @@ typedef struct _RILRANGE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

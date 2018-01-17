@@ -7,7 +7,7 @@ old-location: wdf\iremotetargetcallbackremoval.htm
 old-project: wdf
 ms.assetid: 72271173-8851-4980-9b52-f9e14f1fe071
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -104,20 +104,4 @@ A UMDF-based driver's <a href="https://msdn.microsoft.com/bfac8f91-2367-4194-8e9
 
 
 ## -remarks
-If your driver supports an <b>IRemoteTargetCallbackRemoval</b> interface for a device, the <b>IUnknown::QueryInterface</b> method that the driver passes to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556928">IWDFDevice2::CreateRemoteTarget</a> must return the interface. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+If your driver supports an <b>IRemoteTargetCallbackRemoval</b> interface for a device, the <b>IUnknown::QueryInterface</b> method that the driver passes to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556928">IWDFDevice2::CreateRemoteTarget</a> must return the interface. </p>

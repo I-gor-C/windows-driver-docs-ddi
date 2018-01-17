@@ -7,7 +7,7 @@ old-location: netvista\wdi_scan_type.htm
 old-project: netvista
 ms.assetid: DF4ECD03-2C2F-44B3-82BE-E57B333AF069
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_SCAN_TYPE, WDI_SCAN_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,39 +73,3 @@ The port can perform an active or passive can or can use a combination of both s
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

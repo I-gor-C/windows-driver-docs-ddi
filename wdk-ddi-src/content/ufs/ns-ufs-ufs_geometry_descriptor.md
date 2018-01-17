@@ -411,40 +411,4 @@ Specifies the optimal logical block size.
 ## -remarks
 If the size of the data transferred exceeds the number of frames <b>bRPMB_ReadWriteSize</b>, it will be done in multiple Security commands.
 
-The Capacity Adjustment Factor value for a normal memory type is equal to 1.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufs.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+The Capacity Adjustment Factor value for a normal memory type is equal to 1.</p>

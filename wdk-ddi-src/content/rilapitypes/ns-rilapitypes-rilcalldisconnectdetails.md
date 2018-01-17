@@ -7,8 +7,8 @@ old-location: netvista\rilcalldisconnectdetails_2.htm
 old-project: netvista
 ms.assetid: 57b4d120-e12a-4821-a379-a392b804590c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS
+ms.date: 1/11/2018
+ms.keywords: RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILCALLDISCONNECTDETAILS, *LPRILCALLDISCONNECTDETAILS
+req.typenames: *LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS
 req.product: Windows 10 or later.
 ---
 
@@ -147,19 +147,3 @@ typedef struct _RILCALLDISCONNECTDETAILS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

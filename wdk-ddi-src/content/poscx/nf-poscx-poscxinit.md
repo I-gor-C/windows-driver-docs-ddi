@@ -75,31 +75,6 @@ An appropriate NTSTATUS error code that indicates success or failure of the init
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Product
-
-</th>
-<td width="70%">
-Windows 10 or later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Poscx.h (include Poscx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

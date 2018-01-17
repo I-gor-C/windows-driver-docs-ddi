@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: dd1730f5-58ff-4d0d-9a00-17cd1fe36c5f
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FLT_RELATED_OBJECTS, *PFLT_RELATED_OBJECTS, FLT_RELATED_OBJECTS
+ms.keywords: _FLT_RELATED_OBJECTS, FLT_RELATED_OBJECTS, *PFLT_RELATED_OBJECTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PFLT_RELATED_OBJECTS, FLT_RELATED_OBJECTS
+req.typenames: FLT_RELATED_OBJECTS, *PFLT_RELATED_OBJECTS
 ---
 
 # _FLT_RELATED_OBJECTS structure
@@ -129,21 +129,6 @@ To retrieve pointers to a minifilter driver's contexts for the objects in an FLT
 <div> </div>
 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

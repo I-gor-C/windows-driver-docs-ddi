@@ -7,8 +7,8 @@ old-location: netvista\rilrequestgeolocationdata.htm
 old-project: netvista
 ms.assetid: 814e00c5-7248-4853-a61b-e70be86bca0e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA
+ms.date: 1/11/2018
+ms.keywords: RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILREQUESTGEOLOCATIONDATA, *LPRILREQUESTGEOLOCATIONDATA
+req.typenames: *LPRILREQUESTGEOLOCATIONDATA, RILREQUESTGEOLOCATIONDATA
 ---
 
 # RILREQUESTGEOLOCATIONDATA structure
@@ -78,19 +78,3 @@ typedef struct _RILREQUESTGEOLOCATIONDATA {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_inbound_mac_frame_native.htm
 old-project: netvista
 ms.assetid: 0EFD49D5-1A5D-4D8F-AA19-7A1562C4B581
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE_, FWPS_FIELDS_INBOUND_MAC_FRAME_NATIVE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -105,19 +105,3 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

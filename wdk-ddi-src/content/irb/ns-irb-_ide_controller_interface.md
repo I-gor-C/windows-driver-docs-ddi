@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: cb18f7d9-f9e8-436d-8d61-3641730bd8a2
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _IDE_CONTROLLER_INTERFACE, IDE_CONTROLLER_INTERFACE, *PIDE_CONTROLLER_INTERFACE
+ms.keywords: _IDE_CONTROLLER_INTERFACE, *PIDE_CONTROLLER_INTERFACE, IDE_CONTROLLER_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: IDE_CONTROLLER_INTERFACE, *PIDE_CONTROLLER_INTERFACE
+req.typenames: *PIDE_CONTROLLER_INTERFACE, IDE_CONTROLLER_INTERFACE
 ---
 
 # _IDE_CONTROLLER_INTERFACE structure
@@ -108,19 +108,3 @@ Pointer to the miniport's <b>AtaControllerAdapterControl</b> routine. This is a 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

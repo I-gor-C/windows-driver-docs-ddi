@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 00e6eb1a-3302-46ac-b859-9c22ad6cee22
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetFC3MgmtInfo_OUT, *PSetFC3MgmtInfo_OUT, SetFC3MgmtInfo_OUT
+ms.keywords: _SetFC3MgmtInfo_OUT, SetFC3MgmtInfo_OUT, *PSetFC3MgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetFC3MgmtInfo_OUT, SetFC3MgmtInfo_OUT
+req.typenames: SetFC3MgmtInfo_OUT, *PSetFC3MgmtInfo_OUT
 ---
 
 # _SetFC3MgmtInfo_OUT structure
@@ -62,21 +62,6 @@ Contains the status of the operation. For a list of allowed values and their des
 ## -remarks
 The WMI tool suite generates a declaration of the SetFC3MgmtInfo_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilradiostateitemflag_2.htm
 old-project: netvista
 ms.assetid: 1cf1ebcb-423e-42ee-97aa-bd5f6516e65b
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRADIOSTATEITEMFLAG, RILRADIOSTATEITEMFLAG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,19 +79,3 @@ typedef enum _RILRADIOSTATEITEMFLAG {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

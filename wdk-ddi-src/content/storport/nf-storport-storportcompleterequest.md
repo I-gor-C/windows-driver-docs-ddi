@@ -92,56 +92,10 @@ None
 We do not recommend that writers of Storport miniport drivers use this particular Storport interface routine. Instead, the miniport driver should call StorPortNotification( RequestComplete ) for each outstanding request.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="..\storport\nf-storport-storportcompleterequest.md">StorPortCompleteRequest</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454262">StorPortDDIsPortOnly</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\srb\nf-srb-scsiportcompleterequest.md">ScsiPortCompleteRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564608">ScsiPortCompleteRequest</a>
 </dt>
 </dl>
  

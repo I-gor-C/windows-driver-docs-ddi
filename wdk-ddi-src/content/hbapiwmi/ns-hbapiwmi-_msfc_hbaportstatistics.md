@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 0274b3c7-c17e-45bf-867f-2b0f741b2ecb
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSFC_HBAPortStatistics, *PMSFC_HBAPortStatistics, MSFC_HBAPortStatistics
+ms.keywords: _MSFC_HBAPortStatistics, MSFC_HBAPortStatistics, *PMSFC_HBAPortStatistics
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMSFC_HBAPortStatistics, MSFC_HBAPortStatistics
+req.typenames: MSFC_HBAPortStatistics, *PMSFC_HBAPortStatistics
 ---
 
 # _MSFC_HBAPortStatistics structure
@@ -145,21 +145,6 @@ Contains a count of the number frames with invalid cyclic redundancy checksums.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

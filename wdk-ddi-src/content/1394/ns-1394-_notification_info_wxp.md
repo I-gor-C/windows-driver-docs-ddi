@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 0c0dca35-3590-4c24-a2a7-8dd0378c525f
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _NOTIFICATION_INFO_WXP, *PNOTIFICATION_INFO_WXP, NOTIFICATION_INFO_WXP, *PNOTIFICATION_INFO, NOTIFICATION_INFO
+ms.keywords: _NOTIFICATION_INFO_WXP, NOTIFICATION_INFO_WXP, *PNOTIFICATION_INFO_WXP, NOTIFICATION_INFO, *PNOTIFICATION_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PNOTIFICATION_INFO_WXP, NOTIFICATION_INFO_WXP
+req.typenames: NOTIFICATION_INFO_WXP, *PNOTIFICATION_INFO_WXP
 ---
 
 # _NOTIFICATION_INFO_WXP structure
@@ -195,21 +195,6 @@ If the driver provides the backing store in the original allocate address range 
 
 If the device driver is using a linked list of ADDRESS_FIFO's as the backing store, the bus driver returns the list element it popped off in <b>Fifo</b>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

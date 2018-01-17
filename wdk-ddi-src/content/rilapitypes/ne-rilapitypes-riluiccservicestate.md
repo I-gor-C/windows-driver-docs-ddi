@@ -7,7 +7,7 @@ old-location: netvista\riluiccservicestate_2.htm
 old-project: netvista
 ms.assetid: f817db6b-bda4-45cd-953b-fd3d81bafa8f
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCSERVICESTATE, RILUICCSERVICESTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,19 +67,3 @@ typedef enum _RILUICCSERVICESTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfoflags.htm
 old-project: netvista
 ms.assetid: c4edec8f-a001-491b-a3e6-03d19ac94f18
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLINFOFLAGS, RILCALLINFOFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,19 +62,3 @@ typedef enum _RILCALLINFOFLAGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

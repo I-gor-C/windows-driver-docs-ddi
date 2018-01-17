@@ -86,25 +86,10 @@ Pointer to a client context value.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avcstrm.h (include Avcstrm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a>
 </dt>
 </dl>
  

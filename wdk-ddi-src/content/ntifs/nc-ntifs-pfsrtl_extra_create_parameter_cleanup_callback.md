@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 76dc75fa-90ee-4fe7-b8f2-45e1a08a061f
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _VOLUME_READ_PLEX_INPUT, VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
+ms.keywords: _XVARIABLE_NAME_AND_VALUE, XVARIABLE_NAME_AND_VALUE, *PXVARIABLE_NAME_AND_VALUE, SYSENV_VARIABLE_AND_VALUE, *PSYSENV_VARIABLE_AND_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
+req.typenames: XVARIABLE_NAME_AND_VALUE, *PXVARIABLE_NAME_AND_VALUE
 ---
 
 # PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK callback
@@ -88,52 +88,6 @@ The following routines support the PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBAC
 <a href="..\ntifs\nf-ntifs-fsrtlallocateextracreateparameter.md">FsRtlAllocateExtraCreateParameter</a>
 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of all Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

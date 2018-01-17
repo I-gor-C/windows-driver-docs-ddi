@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6112360C-B74F-4A77-8DE5-3EF1AAF49533
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: *PPEP_PROCESSOR_IDLE_CANCEL_CODE, PEP_PROCESSOR_IDLE_CANCEL_CODE, *PPEP_PROCESSOR_IDLE_CANCEL_CODE
+ms.keywords: *PPEP_PROCESSOR_IDLE_CANCEL_CODE, *PPEP_PROCESSOR_IDLE_CANCEL_CODE, PEP_PROCESSOR_IDLE_CANCEL_CODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PEP_PROCESSOR_IDLE_CANCEL_CODE, *PPEP_PROCESSOR_IDLE_CANCEL_CODE
+req.typenames: *PPEP_PROCESSOR_IDLE_CANCEL_CODE, PEP_PROCESSOR_IDLE_CANCEL_CODE
 ---
 
 # *PPEP_PROCESSOR_IDLE_CANCEL_CODE enumeration
@@ -80,31 +80,6 @@ Reserved for use by the operating system.
 ## -remarks
 The <b>CancelCode</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_cancel.md">PEP_PPM_IDLE_CANCEL</a> structure contains a <b>PEP_PROCESSOR_IDLE_CANCEL_CODE</b> enumeration value.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pep_x.h (include Pepfx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

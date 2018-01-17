@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d81dd8db-9074-43ea-a7bd-e83bd205c564
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _REG_CREATE_KEY_INFORMATION_V1, REG_CREATE_KEY_INFORMATION_V1, *PREG_OPEN_KEY_INFORMATION_V1, *PREG_CREATE_KEY_INFORMATION_V1, REG_OPEN_KEY_INFORMATION_V1
+ms.keywords: _REG_CREATE_KEY_INFORMATION_V1, *PREG_OPEN_KEY_INFORMATION_V1, REG_OPEN_KEY_INFORMATION_V1, *PREG_CREATE_KEY_INFORMATION_V1, REG_CREATE_KEY_INFORMATION_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: REG_CREATE_KEY_INFORMATION_V1, *PREG_OPEN_KEY_INFORMATION_V1, *PREG_CREATE_KEY_INFORMATION_V1, REG_OPEN_KEY_INFORMATION_V1
+req.typenames: *PREG_OPEN_KEY_INFORMATION_V1, REG_OPEN_KEY_INFORMATION_V1, *PREG_CREATE_KEY_INFORMATION_V1, REG_CREATE_KEY_INFORMATION_V1
 req.product: Windows 10 or later.
 ---
 
@@ -247,31 +247,6 @@ If the driver's <i>RegistryCallback</i> routine returns STATUS_CALLBACK_BYPASS f
 
 The <b>REG_CREATE_KEY_INFORMATION_V1</b> structure is one of a number of structures that a filter driver can receive through its <i>RegistryCallback</i> routine. For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available on Windows 7 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

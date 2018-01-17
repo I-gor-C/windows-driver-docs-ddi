@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -149,42 +149,6 @@ On Windows Server 2003, a registry value to set ReadAheadGranularity is not expo
 
 For a non-monolithic network mini-redirector driver (the Microsoft SMB redirector), the RDBSS.SYS device driver is initialized in its own <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine when loaded which internally calls <b>RxDriverEntry</b>. On a monolithic driver, the <b>RxDriverEntry</b> routine is exported from the RDBSSLIB.LIB static library and must be called explicitly by the network mini-redirector. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rxprocs.h (include Rxprocs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

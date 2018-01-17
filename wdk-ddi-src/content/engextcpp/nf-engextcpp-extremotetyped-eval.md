@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+req.typenames: *PDRMRIGHTS, DRMRIGHTS
 ---
 
 # ExtRemoteTyped::Eval method
@@ -64,30 +64,3 @@ The expression to evaluate. <i>Expr</i> is evaluated using the default expressio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Engextcpp.hpp (include Engextcpp.hpp)</dt>
-</dl>
-</td>
-</tr>
-</table>

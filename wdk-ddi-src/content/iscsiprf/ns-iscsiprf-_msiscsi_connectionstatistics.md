@@ -109,21 +109,6 @@ The first number sign (#) is the value in the <b>USID</b> member of <b>MSiSCSI_C
 The totals tracked by this structure are valid for the lifetime of the connection in the session. Totals for all connections in a session are obtained in <a href="..\iscsiprf\ns-iscsiprf-_msiscsi_sessionstatistics.md">MSiSCSI_SessionStatistics</a> structure.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiprf.h (include Iscsiprf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -99,21 +99,6 @@ The maximum number of outstanding R2T requests for each task, excluding the firs
 It is optional that you implement this class.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

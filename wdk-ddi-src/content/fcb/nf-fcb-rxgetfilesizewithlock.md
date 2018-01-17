@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: *PFA_ENTRY, FA_ENTRY
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # RxGetFileSizeWithLock function
@@ -76,42 +76,6 @@ These IRPs will normally result in a call to one of the <b>MRxQueryFileInfo, MRx
 
 <b>RxGetFileSizeWithLock</b> acquires a lock on the FCB structure and then reads the file size, and then frees the lock. This lock assures that the file size is protected during this operation, since file size is a 64-bit quantity that requires at least two instructions to read on 32-bit processors. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fcb.h (include Mrxfcb.h or Fcb.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

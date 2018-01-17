@@ -171,28 +171,13 @@ Every AV/C stream request is described by this structure. This structure is pass
 To use this structure, set the IRP's <b>Irp-&gt;Parameters-&gt;Others.Argument1</b> member to an allocated and initialized AVC_STREAM_REQUEST_BLOCK that describes the request (functionality) that the subunit driver wants <i>avcstrm.sys</i> to service.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avcstrm.h (include Avcstrm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\avcstrm\ne-avcstrm-_avcstrm_function.md">AVCSTRM_FUNCTION</a>
 </dt>
 <dt>
-<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566856">KSSTATE</a>
 </dt>
 <dt>
 <a href="..\avcstrm\ns-avcstrm-_avcstrm_open_struct.md">AVCSTRM_OPEN_STRUCT</a>

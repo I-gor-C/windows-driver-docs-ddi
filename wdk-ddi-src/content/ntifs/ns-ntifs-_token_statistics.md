@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: a7f651c0-fcd5-4271-9452-b6ac41cd33cc
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _TOKEN_STATISTICS, *PTOKEN_STATISTICS, TOKEN_STATISTICS
+ms.keywords: _TOKEN_STATISTICS, TOKEN_STATISTICS, *PTOKEN_STATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PTOKEN_STATISTICS, TOKEN_STATISTICS
+req.typenames: TOKEN_STATISTICS, *PTOKEN_STATISTICS
 ---
 
 # _TOKEN_STATISTICS structure
@@ -115,21 +115,6 @@ Specifies an LUID that changes each time the token is modified. An application c
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

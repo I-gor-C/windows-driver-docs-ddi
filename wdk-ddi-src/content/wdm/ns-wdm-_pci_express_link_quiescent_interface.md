@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: c57ef3e0-5d4d-4545-9c70-b2e11e5823ec
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _PCI_EXPRESS_LINK_QUIESCENT_INTERFACE, *PPCI_EXPRESS_LINK_QUIESCENT_INTERFACE, PCI_EXPRESS_LINK_QUIESCENT_INTERFACE
+ms.keywords: _PCI_EXPRESS_LINK_QUIESCENT_INTERFACE, PCI_EXPRESS_LINK_QUIESCENT_INTERFACE, *PPCI_EXPRESS_LINK_QUIESCENT_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PPCI_EXPRESS_LINK_QUIESCENT_INTERFACE, PCI_EXPRESS_LINK_QUIESCENT_INTERFACE
+req.typenames: PCI_EXPRESS_LINK_QUIESCENT_INTERFACE, *PPCI_EXPRESS_LINK_QUIESCENT_INTERFACE
 req.product: Windows 10 or later.
 ---
 
@@ -48,19 +48,3 @@ The <b>PCI_EXPRESS_LINK_QUIESCENT_INTERFACE</b>  structure is reserved for syste
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

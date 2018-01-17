@@ -7,8 +7,8 @@ old-location: wdf\wdf_io_target_state.htm
 old-project: wdf
 ms.assetid: 0189a83d-da46-49f1-99b8-8fb920009804
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _WDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+ms.date: 1/11/2018
+ms.keywords: _WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
-req.typenames: WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE
+req.typenames: *PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -104,42 +104,6 @@ To obtain an I/O target's current state, call <a href="..\wdfiotarget\nf-wdfiota
 For more information about states for I/O targets, see <a href="https://msdn.microsoft.com/37f756bf-b655-428e-b72c-f86c71f1a2db">Controlling a General I/O Target's State</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.11
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfiotarget.h (include Wdf.h); </dt>
-<dt>Wudfddi_types.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -150,5 +114,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_STATE enumeration%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_IO_TARGET_STATE enumeration%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 7968d26d-0195-463d-8954-e7ebef4f9dea
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA
+ms.keywords: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032, D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
+req.typenames: D3D12DDI_WRITEBUFFERIMMEDIATE_PARAMETER_0032
 ---
 
 # DXGKCB_NOTIFY_INTERRUPT callback
@@ -87,52 +87,6 @@ Callers of <b>DxgkCbNotifyInterrupt</b> run at interrupt level (that is, DIRQL, 
 
 The following code example shows software engine code that monitors a software queue and notifies the GPU scheduler about packet completion.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-See Remarks section.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

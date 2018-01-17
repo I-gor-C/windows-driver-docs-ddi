@@ -706,31 +706,6 @@ This member is reserved and should not be used.
 MDL is defined in the <a href="wdkgloss.m#wdkgloss.mdl#wdkgloss.mdl"><i>Windows Driver Model (WDM)</i></a> documentation.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

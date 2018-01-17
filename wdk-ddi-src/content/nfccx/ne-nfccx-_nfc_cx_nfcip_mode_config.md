@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: B922FF18-8840-4BBB-8B32-BEF7B6DE4731
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: _NFC_CX_NFCIP_MODE_CONFIG, *PNFC_CX_NFCIP_MODE_CONFIG, NFC_CX_NFCIP_MODE_CONFIG
+ms.keywords: _NFC_CX_NFCIP_MODE_CONFIG, NFC_CX_NFCIP_MODE_CONFIG, *PNFC_CX_NFCIP_MODE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: < DISPATCH_LEVEL
-req.typenames: *PNFC_CX_NFCIP_MODE_CONFIG, NFC_CX_NFCIP_MODE_CONFIG
+req.irql: Requires same
+req.typenames: NFC_CX_NFCIP_MODE_CONFIG, *PNFC_CX_NFCIP_MODE_CONFIG
 ---
 
 # _NFC_CX_NFCIP_MODE_CONFIG enumeration
@@ -87,41 +87,6 @@ typedef enum _NFC_CX_NFCIP_MODE_CONFIG {
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-None supported
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Nfccx.h (include Ncidef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

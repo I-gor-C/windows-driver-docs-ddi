@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.typenames: *PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>UsbBuildInterruptOrBulkTransferRequest</b> macro formats an <a href="..\usb\ns-usb-_urb.md">URB</a> to send or receive data on a bulk pipe, or to receive data from an interrupt pipe.
+The <b>UsbBuildInterruptOrBulkTransferRequest</b> macro formats an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to send or receive data on a bulk pipe, or to receive data from an interrupt pipe.
 
 
 
@@ -64,12 +64,12 @@ void UsbBuildInterruptOrBulkTransferRequest(
 
 ### -param Urb [in, out]
 
-Pointer to an <a href="..\usb\ns-usb-_urb.md">URB</a> to be formatted as an interrupt or bulk transfer request.
+Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to be formatted as an interrupt or bulk transfer request.
 
 
 ### -param Length [in]
 
-Specifies the size, in bytes, of the <a href="..\usb\ns-usb-_urb.md">URB</a>.
+Specifies the size, in bytes, of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>.
 
 
 ### -param PipeHandle [in]
@@ -119,39 +119,13 @@ Reserved. Must be set to <b>NULL</b>.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbdlib.h (include Usbdlib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
 </dt>
 <dt>
-<a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a>
 </dt>
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 </dl>

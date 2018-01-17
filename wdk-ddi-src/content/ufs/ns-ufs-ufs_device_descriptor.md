@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: CD1F59DA-3D84-422B-A862-8F4C5E1AA515
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: UFS_DEVICE_DESCRIPTOR, UFS_DEVICE_DESCRIPTOR, *PUFS_DEVICE_DESCRIPTOR
+ms.keywords: UFS_DEVICE_DESCRIPTOR, *PUFS_DEVICE_DESCRIPTOR, UFS_DEVICE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: UFS_DEVICE_DESCRIPTOR, *PUFS_DEVICE_DESCRIPTOR
+req.typenames: *PUFS_DEVICE_DESCRIPTOR, UFS_DEVICE_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -520,41 +520,6 @@ If <b>bBootEnable</b> in the <b>UFS_DEVICE_DESCRIPTOR</b> is set to zero or if t
 
 <b>UFS_DEVICE_DESCRIPTOR</b> is read only, some of its parameters may be changed by changing the corresponding parameter in <a href="..\ufs\ns-ufs-ufs_unit_config_descriptor.md">UFS_UNIT_CONFIG_DESCRIPTOR</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufs.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

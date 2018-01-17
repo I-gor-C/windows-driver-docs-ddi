@@ -7,7 +7,7 @@ old-location: netvista\rilradiostategroupid_2.htm
 old-project: netvista
 ms.assetid: a676a0d8-ffef-48af-9d98-0510eee83522
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRADIOSTATEGROUPID, RILRADIOSTATEGROUPID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,3 @@ typedef enum _RILRADIOSTATEGROUPID {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

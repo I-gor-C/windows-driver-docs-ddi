@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 6dc10c3a-b47e-42c3-a209-34977fb219f1
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SCSI_WMI_REQUEST_BLOCK, SCSI_WMI_REQUEST_BLOCK, *PSCSI_WMI_REQUEST_BLOCK
+ms.keywords: _SCSI_WMI_REQUEST_BLOCK, *PSCSI_WMI_REQUEST_BLOCK, SCSI_WMI_REQUEST_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SCSI_WMI_REQUEST_BLOCK, *PSCSI_WMI_REQUEST_BLOCK
+req.typenames: *PSCSI_WMI_REQUEST_BLOCK, SCSI_WMI_REQUEST_BLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-This structure is a special version of a <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> for use with WMI commands. 
+This structure is a special version of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> for use with WMI commands. 
 
 
 
@@ -89,7 +89,7 @@ SRB_FUNCTION_WMI, which specifies that the request is a WMI request. If this mem
 
 ### -field SrbStatus
 
-Returns the status of the completed request. This member should be set by the miniport driver before it notifies the OS-specific driver that the request has completed by calling <a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a> with <b>RequestComplete</b>. The value of this member can be any value listed for <b>SrbStatus</b> in SCSI_REQUEST_BLOCK.
+Returns the status of the completed request. This member should be set by the miniport driver before it notifies the OS-specific driver that the request has completed by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff564657">ScsiPortNotification</a> with <b>RequestComplete</b>. The value of this member can be any value listed for <b>SrbStatus</b> in SCSI_REQUEST_BLOCK.
 
 
 ### -field WMISubFunction
@@ -209,7 +209,7 @@ Points to the IRP for this request. This member is irrelevant to miniport driver
 
 ### -field SrbExtension
 
-Points to the Srb extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the HW_INITIALIZATION_DATA. The memory at <b>SrbExtension</b> is not initialized by the OS-specific port driver, and the miniport driver-determined data can be accessed directly by the HBA. The corresponding physical address can be obtained by calling <a href="..\srb\nf-srb-scsiportgetphysicaladdress.md">ScsiPortGetPhysicalAddress</a> with the <b>SrbExtension</b> pointer.
+Points to the Srb extension. A miniport driver must not use this member if it set <b>SrbExtensionSize</b> to zero in the HW_INITIALIZATION_DATA. The memory at <b>SrbExtension</b> is not initialized by the OS-specific port driver, and the miniport driver-determined data can be accessed directly by the HBA. The corresponding physical address can be obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff564636">ScsiPortGetPhysicalAddress</a> with the <b>SrbExtension</b> pointer.
 
 
 ### -field Reserved4
@@ -235,34 +235,19 @@ A miniport driver receives WMI requests from the port driver only if the minipor
 For information about supporting WMI in miniport drivers, see the <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Srb.h (include Storport.h, Srb.h, or Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563900">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
 </dt>
 <dt>
-<a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564657">ScsiPortNotification</a>
 </dt>
 <dt>
 <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>

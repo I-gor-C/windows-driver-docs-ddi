@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>ScsiPortWmiSetData</b> routine updates the <a href="..\wmistr\ns-wmistr-tagwnode_all_data.md">WNODE_ALL_DATA</a> structure within the request context to specify the position and length of the data for an instance. 
+The <b>ScsiPortWmiSetData</b> routine updates the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a> structure within the request context to specify the position and length of the data for an instance. 
 
 
 
@@ -76,7 +76,7 @@ Specifies the number of bytes  of data required to describe the instance.
 
 ### -param BufferAvail [out]
 
-Must contain, on input, the number of bytes of buffer space in the <a href="..\wmistr\ns-wmistr-tagwnode_all_data.md">WNODE_ALL_DATA</a> structure that can be used for describing instance names and data. On return, this member contains the number of bytes of buffer space that remain. 
+Must contain, on input, the number of bytes of buffer space in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a> structure that can be used for describing instance names and data. On return, this member contains the number of bytes of buffer space that remain. 
 
 There are three SCSI Port WMI routines that return a value for the available buffer size in their <i>BufferAvail </i>parameter:
 
@@ -101,7 +101,7 @@ Indicates, on input,  the number of bytes needed to describe the entire WNODE <i
 
 
 ## -returns
-The <b>ScsiPortWmiSetData</b> routine returns a pointer to the buffer where the caller can store descriptive information about the instance identified by <i>InstanceIndex</i>. If <b>ScsiPortWmiSetData</b> cannot allocate enough memory for the instance data, or if the WNODE contained within the request context is not of type <a href="..\wmistr\ns-wmistr-tagwnode_all_data.md">WNODE_ALL_DATA</a>, <b>ScsiPortWmiSetData</b> returns <b>NULL</b>. 
+The <b>ScsiPortWmiSetData</b> routine returns a pointer to the buffer where the caller can store descriptive information about the instance identified by <i>InstanceIndex</i>. If <b>ScsiPortWmiSetData</b> cannot allocate enough memory for the instance data, or if the WNODE contained within the request context is not of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a>, <b>ScsiPortWmiSetData</b> returns <b>NULL</b>. 
 
 
 ## -remarks
@@ -109,36 +109,10 @@ The minidriver must call <a href="..\scsiwmi\nf-scsiwmi-scsiportwmisetinstanceco
 
 The parameter <b>RequestContext</b> points to a request context structure, <a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>, that contains information associated with a <a href="https://msdn.microsoft.com/5c2ed322-0fc9-4004-9a5f-f4d3c6a59fe9">Windows Management Instrumentation</a> (WMI) SCSI request block (SRB). The request context structure, in turn, contains one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566371">WMI WNODE_XXX Structures</a> that is used by the WMI system to pass data between user-mode data consumers and kernel-mode data providers such as drivers. 
 
-The <b>ScsiPortWmiSetData</b> routine requires the WNODE structure that is defined within the request context to be of type <a href="..\wmistr\ns-wmistr-tagwnode_all_data.md">WNODE_ALL_DATA</a>. This is because <b>ScsiPortWmiSetData</b> can specify the location and length of the data buffers for any of the instances associated with a WMI data block. Unlike the <a href="..\wmistr\ns-wmistr-tagwnode_single_instance.md">WNODE_SINGLE_INSTANCE</a> structure which contains information about a single instance, the WNODE_ALL_DATA structure contains an array of pointers to buffer areas for multiple instances, and <b>ScsiPortWmiSetData</b> uses the <i>InstanceIndex </i>parameter as an index into this array to initialize the appropriate array element for a particular instance. Each array element, once initialized, contains the size and location of a buffer area for an instance. 
+The <b>ScsiPortWmiSetData</b> routine requires the WNODE structure that is defined within the request context to be of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a>. This is because <b>ScsiPortWmiSetData</b> can specify the location and length of the data buffers for any of the instances associated with a WMI data block. Unlike the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a> structure which contains information about a single instance, the WNODE_ALL_DATA structure contains an array of pointers to buffer areas for multiple instances, and <b>ScsiPortWmiSetData</b> uses the <i>InstanceIndex </i>parameter as an index into this array to initialize the appropriate array element for a particular instance. Each array element, once initialized, contains the size and location of a buffer area for an instance. 
 
 The memory allocated for the request context must remain valid until after the miniport driver calls <b>ScsiPortWmiPostProcess</b>, and <b>ScsiPortWmiPostProcess</b> returns the final SRB status and buffer size. If the SRB can pend, the memory for the request context should be allocated from the SRB extension. If the SRB cannot pend, the memory can be allocated from a stack frame that does not go out of scope.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsiwmi.h (include Miniport.h or Scsi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -146,10 +120,10 @@ Header
 <a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>
 </dt>
 <dt>
-<a href="..\wmistr\ns-wmistr-tagwnode_single_instance.md">WNODE_SINGLE_INSTANCE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a>
 </dt>
 <dt>
-<a href="..\wmistr\ns-wmistr-tagwnode_all_data.md">WNODE_ALL_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566372">WNODE_ALL_DATA</a>
 </dt>
 </dl>
  

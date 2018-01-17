@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 7b0ca123-8847-4dc3-b0f5-9788104381ec
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _VP_SCATTER_GATHER_ELEMENT, *PVP_SCATTER_GATHER_ELEMENT, VP_SCATTER_GATHER_ELEMENT
+ms.keywords: _VP_SCATTER_GATHER_ELEMENT, VP_SCATTER_GATHER_ELEMENT, *PVP_SCATTER_GATHER_ELEMENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: *PVP_SCATTER_GATHER_ELEMENT, VP_SCATTER_GATHER_ELEMENT
+req.typenames: VP_SCATTER_GATHER_ELEMENT, *PVP_SCATTER_GATHER_ELEMENT
 req.product: Windows 10 or later.
 ---
 
@@ -77,21 +77,6 @@ This structure is available in Windows XP and later.
 
 A VP_SCATTER_GATHER_ELEMENT structure is one element of the <a href="..\video\ns-video-_vp_scatter_gather_list.md">VP_SCATTER_GATHER_LIST</a> structure's array member.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

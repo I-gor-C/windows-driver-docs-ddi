@@ -7,7 +7,7 @@ old-location: netvista\rilsystemselectionprefs_v1.htm
 old-project: netvista
 ms.assetid: a2ba47e6-9dec-46b4-ac8b-a863345f228f
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSYSTEMSELECTIONPREFS_V1, RILSYSTEMSELECTIONPREFS_V1, *LPRILSYSTEMSELECTIONPREFS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,19 +82,3 @@ typedef struct _RILSYSTEMSELECTIONPREFS_V1 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

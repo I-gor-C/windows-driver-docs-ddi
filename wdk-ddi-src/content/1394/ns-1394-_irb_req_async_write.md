@@ -169,19 +169,3 @@ Elapsed time in nanoseconds. Only valid for flag <b>ASYNC_FLAGS_PING</b>.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

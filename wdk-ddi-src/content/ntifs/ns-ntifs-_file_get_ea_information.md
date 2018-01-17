@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 2abaf505-b890-43b6-a277-d930417bdcb8
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION, *PFILE_GET_EA_INFORMATION
+ms.keywords: _FILE_GET_EA_INFORMATION, *PFILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: FILE_GET_EA_INFORMATION, *PFILE_GET_EA_INFORMATION
+req.typenames: *PFILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION
 ---
 
 # _FILE_GET_EA_INFORMATION structure
@@ -76,21 +76,6 @@ The FILE_GET_EA_INFORMATION structure is used to query for extended-attribute (E
 
 This structure must be aligned on a LONG (4-byte) boundary. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

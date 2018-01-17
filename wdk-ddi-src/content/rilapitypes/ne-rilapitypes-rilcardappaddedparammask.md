@@ -7,7 +7,7 @@ old-location: netvista\rilcardappaddedparammask_2.htm
 old-project: netvista
 ms.assetid: 47726715-306c-4167-8080-65085d1e7f8f
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCARDAPPADDEDPARAMMASK, RILCARDAPPADDEDPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILCARDAPPADDEDPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

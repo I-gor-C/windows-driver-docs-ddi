@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 28b54f80-9268-4ccb-ac19-b1b4bfef4192
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetLoadBalancePolicy_OUT, *PSetLoadBalancePolicy_OUT, SetLoadBalancePolicy_OUT
+ms.keywords: _SetLoadBalancePolicy_OUT, SetLoadBalancePolicy_OUT, *PSetLoadBalancePolicy_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetLoadBalancePolicy_OUT, SetLoadBalancePolicy_OUT
+req.typenames: SetLoadBalancePolicy_OUT, *PSetLoadBalancePolicy_OUT
 ---
 
 # _SetLoadBalancePolicy_OUT structure
@@ -62,21 +62,6 @@ A value that provides the status of the SetLoadBalancePolicy operation.
 ## -remarks
 You must implement this class. For a list of possible status qualifiers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

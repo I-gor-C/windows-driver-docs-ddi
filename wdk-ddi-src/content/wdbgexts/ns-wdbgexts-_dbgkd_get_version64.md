@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 692e58b5-74ea-48f3-a9c2-81953b7d600d
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DBGKD_GET_VERSION64, DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64
+ms.keywords: _DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64, DBGKD_GET_VERSION64
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64
+req.typenames: *PDBGKD_GET_VERSION64, DBGKD_GET_VERSION64
 req.product: Windows 10 or later.
 ---
 
@@ -297,21 +297,6 @@ The parameters for the IG_GET_KERNEL_VERSION <a href="..\wdbgexts\nc-wdbgexts-pw
 
 This operation is only available in kernel-mode debugging.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

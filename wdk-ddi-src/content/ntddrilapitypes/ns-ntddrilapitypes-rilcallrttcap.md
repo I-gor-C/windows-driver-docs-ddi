@@ -7,7 +7,7 @@ old-location: netvista\rilcallrttcap.htm
 old-project: netvista
 ms.assetid: 7cb8618b-93da-4b6d-8f03-fb42a8d28fd0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLRTTCAP, RILCALLRTTCAP, *LPRILCALLRTTCAP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,19 +62,3 @@ typedef struct _RILCALLRTTCAP {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

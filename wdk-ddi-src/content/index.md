@@ -1,5 +1,12 @@
 ---
-UID: TP:techportal
+UID: TP:_windowsdriverandtechnologies
+ms.assetid: 36bb2d05-4309-397e-916f-f7f16d601876
+ms.author: windowsdriverdev
+ms.date: 01/16/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # Windows Drivers & Technologies
@@ -10,7 +17,6 @@ Welcome to the DDI Ref. This site contains documentation for the following techn
 * [Audio](_audio/index.md)
 * [Battery](_battery/index.md)
 * [benchmark](_benchmark/index.md)
-* [Biometric](_biometric/index.md)
 * [Bluetooth](_bltooth/index.md)
 * [Debugger](_debugger/index.md)
 * [Driver test tools](_devtest/index.md)

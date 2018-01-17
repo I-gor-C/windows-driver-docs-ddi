@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: a1ef8626-1920-422b-a0ed-4da9ac495f74
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _AVC_PEER_DO_LOCATOR, *PAVC_PEER_DO_LOCATOR, AVC_PEER_DO_LOCATOR
+ms.keywords: _AVC_PEER_DO_LOCATOR, AVC_PEER_DO_LOCATOR, *PAVC_PEER_DO_LOCATOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PAVC_PEER_DO_LOCATOR, AVC_PEER_DO_LOCATOR
+req.typenames: AVC_PEER_DO_LOCATOR, *PAVC_PEER_DO_LOCATOR
 ---
 
 # _AVC_PEER_DO_LOCATOR structure
@@ -78,21 +78,6 @@ This structure is used only as a member inside the AVC_MULTIFUNC_IRB structure. 
 
 See <a href="https://msdn.microsoft.com/3b4ec139-ff01-40bd-8e29-92f554180585">How to Use Avc.sys</a> For information about building and sending an AV/C command.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h (include Avc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

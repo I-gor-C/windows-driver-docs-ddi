@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Ks.lib
 req.dll: 
 req.irql: 
-req.typenames: CONNECT_DATA, *PCONNECT_DATA
+req.typenames: *PCONNECT_DATA, CONNECT_DATA
 ---
 
 # KoDriverInitialize function
@@ -78,41 +78,3 @@ Returns STATUS_SUCCESS if successful. Otherwise, it returns a memory allocation 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Kcom.h (include Kcom.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ks.lib</dt>
-</dl>
-</td>
-</tr>
-</table>

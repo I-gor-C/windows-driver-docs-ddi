@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: bd0defc1-7c06-4b54-b4e3-3c17c49a6c57
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FLT_CALLBACK_DATA_QUEUE, *PFLT_CALLBACK_DATA_QUEUE, FLT_CALLBACK_DATA_QUEUE
+ms.keywords: _FLT_CALLBACK_DATA_QUEUE, FLT_CALLBACK_DATA_QUEUE, *PFLT_CALLBACK_DATA_QUEUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PFLT_CALLBACK_DATA_QUEUE, FLT_CALLBACK_DATA_QUEUE
+req.typenames: FLT_CALLBACK_DATA_QUEUE, *PFLT_CALLBACK_DATA_QUEUE
 ---
 
 # _FLT_CALLBACK_DATA_QUEUE structure
@@ -50,21 +50,6 @@ FLT_CALLBACK_DATA_QUEUE is an opaque structure that is used to specify the callb
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

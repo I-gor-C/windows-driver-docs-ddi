@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 4258f223-353a-4b6e-a93c-5742e5c1668b
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_REVISION, *PWHEA_REVISION, WHEA_REVISION
+ms.keywords: _WHEA_REVISION, WHEA_REVISION, *PWHEA_REVISION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PWHEA_REVISION, WHEA_REVISION
+req.typenames: WHEA_REVISION, *PWHEA_REVISION
 ---
 
 # _WHEA_REVISION structure
@@ -76,32 +76,6 @@ A USHORT representation of the contents of the WHEA_REVISION union.
 ## -remarks
 A WHEA_REVISION union is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> and the <a href="..\ntddk\ns-ntddk-_whea_error_record_section_descriptor.md">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a> structures.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

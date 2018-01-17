@@ -97,31 +97,4 @@ The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> str
 
 Sensor properties must not contain information that can be used to identify the user. For more information about user privacy, see <a href="https://msdn.microsoft.com/9defb163-4de6-46cc-b817-d3e6291137be">Privacy and Security in the Sensor and Location Platform</a>.
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> are documented in Windows Portable Devices.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sensorsclassextension.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsClassExtension.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=131484">IPortableDeviceKeyCollection</a> and <a href="http://go.microsoft.com/fwlink/p/?linkid=131486">IPortableDeviceValues</a> are documented in Windows Portable Devices.</p>

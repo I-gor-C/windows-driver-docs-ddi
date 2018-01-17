@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 839041be-bb8c-4e02-a260-e9adcec98ff3
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetPresharedKeyForId_OUT, *PSetPresharedKeyForId_OUT, SetPresharedKeyForId_OUT
+ms.keywords: _SetPresharedKeyForId_OUT, SetPresharedKeyForId_OUT, *PSetPresharedKeyForId_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetPresharedKeyForId_OUT, SetPresharedKeyForId_OUT
+req.typenames: SetPresharedKeyForId_OUT, *PSetPresharedKeyForId_OUT
 ---
 
 # _SetPresharedKeyForId_OUT structure
@@ -62,21 +62,6 @@ On output, the status of the <b>SetPresharedKeyForId</b> operation. For a list o
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\rilgetcallforwardingparams.htm
 old-project: netvista
 ms.assetid: 94e24172-a149-4e74-9600-2fcb7396ef34
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILGETCALLFORWARDINGPARAMS, RILGETCALLFORWARDINGPARAMS, *LPRILGETCALLFORWARDINGPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILGETCALLFORWARDINGPARAMS, *LPRILGETCALLFORWARDINGPARAMS, RILGETCALLFORWARDINGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILGETCALLFORWARDINGPARAMS, *LPRILGETCALLFORWARDINGPARAMS
+req.typenames: *LPRILGETCALLFORWARDINGPARAMS, RILGETCALLFORWARDINGPARAMS
 ---
 
 # RILGETCALLFORWARDINGPARAMS structure
@@ -70,19 +70,3 @@ typedef struct _RILGETCALLFORWARDINGPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

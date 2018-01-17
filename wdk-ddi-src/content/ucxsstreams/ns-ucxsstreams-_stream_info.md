@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: B8AE8866-AC13-4E7B-8815-70846DEECA12
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _STREAM_INFO, *PSTREAM_INFO, STREAM_INFO
+ms.keywords: _STREAM_INFO, STREAM_INFO, *PSTREAM_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSTREAM_INFO, STREAM_INFO
+req.typenames: STREAM_INFO, *PSTREAM_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -73,19 +73,3 @@ The stream identifier. The open-static streams request obtains stream identifier
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxsstreams.h (include Ucxclass.h or Ucxstreams.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

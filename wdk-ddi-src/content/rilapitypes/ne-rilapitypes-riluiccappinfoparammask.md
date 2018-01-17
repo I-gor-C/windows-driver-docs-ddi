@@ -7,7 +7,7 @@ old-location: netvista\riluiccappinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 17ca9b1c-aaf9-434e-be60-5698aa159b48
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCAPPINFOPARAMMASK, RILUICCAPPINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,19 +87,3 @@ typedef enum _RILUICCAPPINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

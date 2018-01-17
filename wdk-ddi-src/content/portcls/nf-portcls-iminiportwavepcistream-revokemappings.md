@@ -80,7 +80,7 @@ The port driver calls <code>RevokeMappings</code> to revoke the stream's mapping
 
 An I/O request (IRP) is canceled and the previously mapped memory might no longer be available.
 
-The stream state changes to KSSTATE_STOP (see <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>) and the device no longer has need for the mappings.
+The stream state changes to KSSTATE_STOP (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566856">KSSTATE</a>) and the device no longer has need for the mappings.
 
 The miniport driver keeps track of the order in which it acquires its mappings from calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>. The <code>RevokeMapping</code> method revokes all mappings in the sequence that begins with the mapping identified by <i>FirstTag</i> and ends with the mapping identified by <i>LastTag</i>. This includes the mappings identified by <i>FirstTag</i> and <i>LastTag</i> and all mappings in between. The miniport driver revokes each mapping by removing it from the list of available mappings.
 
@@ -91,49 +91,13 @@ The port driver can call <code>RevokeMappings</code> asynchronously with respect
 For more information about mappings, see <a href="https://msdn.microsoft.com/6d83c015-cf8f-40b4-bf28-de865a5bfe2d">WavePci Latency</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\portcls\nn-portcls-iminiportwavepcistream.md">IMiniportWavePciStream</a>
 </dt>
 <dt>
-<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566856">KSSTATE</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536909">IPortWavePciStream::GetMapping</a>

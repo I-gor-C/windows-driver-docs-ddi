@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: D44FF0C7-D82C-4CDD-A5F9-BBD8257C6771
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STOR_POFX_COMPONENT, *PSTOR_POFX_COMPONENT, STOR_POFX_COMPONENT
+ms.keywords: _STOR_POFX_COMPONENT, STOR_POFX_COMPONENT, *PSTOR_POFX_COMPONENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSTOR_POFX_COMPONENT, STOR_POFX_COMPONENT
+req.typenames: STOR_POFX_COMPONENT, *PSTOR_POFX_COMPONENT
 req.product: Windows 10 or later.
 ---
 
@@ -101,31 +101,6 @@ For a adapter device component, a maximum of one F-state (F0) is permitted. For 
 
 For a unit device component, if an additional F-state is included in the <b>FStates</b> array, the size member remains set to <b>STOR_POFX_COMPONENT_SIZE</b> and does not include the size of the additional <a href="..\storport\ns-storport-_stor_pofx_component_idle_state.md">STOR_POFX_COMPONENT_IDLE_STATE</a> structure. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

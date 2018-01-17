@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: d38b9f36-27f1-47f1-a469-18ddb6f5b2c1
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_PIPE_INFORMATION, *PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION
+ms.keywords: _FILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION, *PFILE_PIPE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION
+req.typenames: FILE_PIPE_INFORMATION, *PFILE_PIPE_INFORMATION
 ---
 
 # _FILE_PIPE_INFORMATION structure
@@ -108,30 +108,4 @@ When <b>CompletionMode</b> is set to FILE_PIPE_QUEUE_OPERATION, if the pipe is c
 
 When <b>CompletionMode</b> is set to FILE_PIPE_COMPLETE_OPERATION, if the pipe is being connected to, read to, or written from, the operation is completed immediately. 
 
-For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-eec8-4dda-9cb7-8d37abcee6f4">Pipes</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 2000 and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include FltKernel.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For information about pipes, see <a href="https://msdn.microsoft.com/7cb8cbe4-eec8-4dda-9cb7-8d37abcee6f4">Pipes</a>.</p>

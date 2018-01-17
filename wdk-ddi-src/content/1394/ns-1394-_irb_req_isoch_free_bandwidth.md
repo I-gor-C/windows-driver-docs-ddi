@@ -64,20 +64,4 @@ If successful, the bus driver sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCC
 
 A status of STATUS_INVALID_GENERATION also indicates success. 
 
-Do not resend the REQUEST_ISOCH_FREE_BANDWIDTH request in order to release isochronous bandwidth if the request failed with the STATUS_INVALID_GENERATION error code. In that case, it is safe to assume that isochronous bandwidth was released as a result of 1394 bus generation changes.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+Do not resend the REQUEST_ISOCH_FREE_BANDWIDTH request in order to release isochronous bandwidth if the request failed with the STATUS_INVALID_GENERATION error code. In that case, it is safe to assume that isochronous bandwidth was released as a result of 1394 bus generation changes.</p>

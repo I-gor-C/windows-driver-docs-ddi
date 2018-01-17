@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemkind_2.htm
 old-project: netvista
 ms.assetid: 622f9629-f172-469c-aba5-50a4eec78ab0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRESETMODEMKIND, RILRESETMODEMKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILRESETMODEMKIND {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

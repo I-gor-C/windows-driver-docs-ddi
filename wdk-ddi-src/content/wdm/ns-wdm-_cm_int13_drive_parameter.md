@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: eee1070f-c821-42bd-a0c9-d429fac6305b
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CM_INT13_DRIVE_PARAMETER, CM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER
+ms.keywords: _CM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER, CM_INT13_DRIVE_PARAMETER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: CM_INT13_DRIVE_PARAMETER, *PCM_INT13_DRIVE_PARAMETER
+req.typenames: *PCM_INT13_DRIVE_PARAMETER, CM_INT13_DRIVE_PARAMETER
 req.product: Windows 10 or later.
 ---
 
@@ -86,21 +86,6 @@ The number of drives.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

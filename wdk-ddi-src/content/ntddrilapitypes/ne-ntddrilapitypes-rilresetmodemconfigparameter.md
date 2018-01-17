@@ -7,7 +7,7 @@ old-location: netvista\rilresetmodemconfigparameter.htm
 old-project: netvista
 ms.assetid: 8cf95185-3935-4434-b9d5-c2a63a9f3eba
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRESETMODEMCONFIGPARAMETER, RILRESETMODEMCONFIGPARAMETER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,3 @@ typedef enum _RILRESETMODEMCONFIGPARAMETER {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

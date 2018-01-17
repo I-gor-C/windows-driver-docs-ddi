@@ -89,21 +89,6 @@ The WMI tool suite automatically generates a declaration of the MSiSCSI_Discover
 Initiators are required to implement the MSiSCSI_DiscoveryConfig class. You must implement this class.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsicfg.h (include Iscsicfg.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

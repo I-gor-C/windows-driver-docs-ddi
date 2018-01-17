@@ -7,7 +7,7 @@ old-location: netvista\rilexchangeuiccapduparams.htm
 old-project: netvista
 ms.assetid: be77f9e2-acf7-4b59-9a46-abda7c43817b
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILEXCHANGEUICCAPDUPARAMS, *LPRILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef struct _RILEXCHANGEUICCAPDUPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

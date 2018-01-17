@@ -7,7 +7,7 @@ old-location: wdf\ipnpcallback.htm
 old-project: wdf
 ms.assetid: b6ab28e1-08d5-49ee-931a-8e2fe68bd75e
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -130,20 +130,4 @@ The <a href="https://msdn.microsoft.com/4289406f-dda0-4439-be6e-6e638bb46e1f">On
 
 
 ## -remarks
-A driver registers the <b>IPnpCallback</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+A driver registers the <b>IPnpCallback</b> interface when the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558899">IWDFDriver::CreateDevice</a> method to create a device object. </p>

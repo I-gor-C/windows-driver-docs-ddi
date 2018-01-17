@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: b30ccf86-ae6d-484a-a3f2-8b38df26e995
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: PCI_X_CAPABILITY, PCI_X_CAPABILITY, *PPCI_X_CAPABILITY
+ms.keywords: PCI_X_CAPABILITY, *PPCI_X_CAPABILITY, PCI_X_CAPABILITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: PCI_X_CAPABILITY, *PPCI_X_CAPABILITY
+req.typenames: *PPCI_X_CAPABILITY, PCI_X_CAPABILITY
 req.product: Windows 10 or later.
 ---
 
@@ -206,21 +206,6 @@ Reports the data in the device's status register in the form of a unsigned long 
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

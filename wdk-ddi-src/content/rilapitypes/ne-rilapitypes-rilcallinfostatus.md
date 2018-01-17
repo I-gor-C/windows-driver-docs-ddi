@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfostatus_2.htm
 old-project: netvista
 ms.assetid: 16ecddf7-6c79-4e95-957d-19f27c3e3cf5
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLINFOSTATUS, RILCALLINFOSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,19 +87,3 @@ typedef enum _RILCALLINFOSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

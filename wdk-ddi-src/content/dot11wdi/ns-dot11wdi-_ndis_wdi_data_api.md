@@ -7,8 +7,8 @@ old-location: netvista\ndis_wdi_data_api.htm
 old-project: netvista
 ms.assetid: 8C26D62E-711A-4CE7-BD2B-D78B794C67FB
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: _NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API, NDIS_WDI_DATA_API
+ms.date: 1/11/2018
+ms.keywords: _NDIS_WDI_DATA_API, NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_WDI_DATA_API, NDIS_WDI_DATA_API
+req.typenames: NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API
 ---
 
 # _NDIS_WDI_DATA_API structure
@@ -74,7 +74,7 @@ typedef struct _NDIS_WDI_DATA_API {
 ### -field Header
 
 The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_WDI_DATA_API structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_WDI_DATA_API.
@@ -175,39 +175,3 @@ The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_free_wdi_frame_
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

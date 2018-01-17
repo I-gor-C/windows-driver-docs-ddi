@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: C8829785-1EB7-4F29-9279-F2FC2A3C0ABD
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _DEVICE_WAKE_DEPTH, *PDEVICE_WAKE_DEPTH, DEVICE_WAKE_DEPTH
+ms.keywords: _DEVICE_WAKE_DEPTH, DEVICE_WAKE_DEPTH, *PDEVICE_WAKE_DEPTH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: *PDEVICE_WAKE_DEPTH, DEVICE_WAKE_DEPTH
+req.irql: PASSIVE_LEVEL
+req.typenames: DEVICE_WAKE_DEPTH, *PDEVICE_WAKE_DEPTH
 req.product: Windows 10 or later.
 ---
 
@@ -101,21 +101,6 @@ The <i>DeepestWakeableDstate</i> parameter of the <a href="..\wdm\nc-wdm-get_idl
 
 The drivers for most devices have no reason to arm a wake signal when the device is in D0. These drivers can treat the <b>DeviceWakeDepthD0</b> output value as equivalent to a call to the <i>GetIdleWakeInfo</i> routine that fails and returns an error status.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

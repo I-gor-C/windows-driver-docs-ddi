@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 0820f6f2-bec2-4d38-9a95-cfff6151ef02
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _TOKEN_SOURCE, *PTOKEN_SOURCE, TOKEN_SOURCE
+ms.keywords: _TOKEN_SOURCE, TOKEN_SOURCE, *PTOKEN_SOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PTOKEN_SOURCE, TOKEN_SOURCE
+req.typenames: TOKEN_SOURCE, *PTOKEN_SOURCE
 ---
 
 # _TOKEN_SOURCE structure
@@ -67,21 +67,6 @@ Specifies a locally unique identifier (LUID) provided by the source component na
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

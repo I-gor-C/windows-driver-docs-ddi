@@ -7,8 +7,8 @@ old-location: netvista\rilsenddtmfparams.htm
 old-project: netvista
 ms.assetid: b08767f9-6b2d-4930-bd02-ebc89f2bdb7d
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSENDDTMFPARAMS, *LPRILSENDDTMFPARAMS, RILSENDDTMFPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSENDDTMFPARAMS, RILSENDDTMFPARAMS, *LPRILSENDDTMFPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILSENDDTMFPARAMS, RILSENDDTMFPARAMS
+req.typenames: RILSENDDTMFPARAMS, *LPRILSENDDTMFPARAMS
 ---
 
 # RILSENDDTMFPARAMS structure
@@ -70,19 +70,3 @@ typedef struct _RILSENDDTMFPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: fb884cff-dedb-44cf-b9ea-306bfa66b06f
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSiSCSI_RequestTimeStatistics, MSiSCSI_RequestTimeStatistics, *PMSiSCSI_RequestTimeStatistics
+ms.keywords: _MSiSCSI_RequestTimeStatistics, *PMSiSCSI_RequestTimeStatistics, MSiSCSI_RequestTimeStatistics
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MSiSCSI_RequestTimeStatistics, *PMSiSCSI_RequestTimeStatistics
+req.typenames: *PMSiSCSI_RequestTimeStatistics, MSiSCSI_RequestTimeStatistics
 ---
 
 # _MSiSCSI_RequestTimeStatistics structure
@@ -92,21 +92,6 @@ The average time taken to process a request over this connection.
 ## -remarks
 It is optional that you implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiprf.h (include Iscsiprf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

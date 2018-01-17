@@ -7,7 +7,7 @@ old-location: wdf\wdf_read_register_ulong.htm
 old-project: wdf
 ms.assetid: 75EBA58B-4EE9-4D7D-A653-93E5E35569BB
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: WDF_READ_REGISTER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,50 +73,3 @@ A pointer to the register address, which must be a mapped range in memory space.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfhwaccess.h</dt>
-</dl>
-</td>
-</tr>
-</table>

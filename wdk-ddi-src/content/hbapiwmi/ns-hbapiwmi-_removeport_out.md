@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 89cb75e4-5e3b-4277-b173-abed00a7360b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _RemovePort_OUT, *PRemovePort_OUT, RemovePort_OUT
+ms.keywords: _RemovePort_OUT, RemovePort_OUT, *PRemovePort_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PRemovePort_OUT, RemovePort_OUT
+req.typenames: RemovePort_OUT, *PRemovePort_OUT
 ---
 
 # _RemovePort_OUT structure
@@ -62,21 +62,6 @@ Contains the status of the operation. For a list of allowed values and their des
 ## -remarks
 The WMI tool suite generates a declaration of the RemovePort_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562490">MSFC_EventControl WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

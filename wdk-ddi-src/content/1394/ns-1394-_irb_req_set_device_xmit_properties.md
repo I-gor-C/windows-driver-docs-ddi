@@ -108,20 +108,4 @@ Specifies the priority.
 
 
 ## -remarks
-By default, the maximum permitted transmission speed is the physical maximum. A driver should use this request to lower the maximum permitted speed.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+By default, the maximum permitted transmission speed is the physical maximum. A driver should use this request to lower the maximum permitted speed.</p>

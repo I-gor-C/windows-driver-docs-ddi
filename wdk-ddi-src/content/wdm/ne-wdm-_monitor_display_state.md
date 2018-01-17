@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 50F5C1AD-BA51-4376-8093-E8596265FDAF
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _MONITOR_DISPLAY_STATE, *PMONITOR_DISPLAY_STATE, MONITOR_DISPLAY_STATE
+ms.keywords: _MONITOR_DISPLAY_STATE, MONITOR_DISPLAY_STATE, *PMONITOR_DISPLAY_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: *PMONITOR_DISPLAY_STATE, MONITOR_DISPLAY_STATE
+req.irql: PASSIVE_LEVEL
+req.typenames: MONITOR_DISPLAY_STATE, *PMONITOR_DISPLAY_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -73,19 +73,3 @@ This indicates that the monitor is dim.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-</table>

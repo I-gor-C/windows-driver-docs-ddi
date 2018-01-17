@@ -75,29 +75,3 @@ This function does not return a value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Product
-
-</th>
-<td width="70%">
-Windows 10 or later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Poscx.h (include Poscx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: wdf\idriverentry.htm
 old-project: wdf
 ms.assetid: eae6f032-2f31-43e1-9ac0-38ccc4840580
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -104,19 +104,3 @@ The <a href="https://msdn.microsoft.com/c676588e-348b-4840-9873-6b1bb2454987">On
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

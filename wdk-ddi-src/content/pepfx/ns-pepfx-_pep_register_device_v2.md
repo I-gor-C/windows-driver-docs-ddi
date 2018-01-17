@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: A1363B34-CC5C-482E-8E8D-62D7263545E3
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_REGISTER_DEVICE_V2, *PPEP_REGISTER_DEVICE_V2, PEP_REGISTER_DEVICE_V2, PEP_REGISTER_DEVICE, *PPEP_REGISTER_DEVICE
+ms.keywords: _PEP_REGISTER_DEVICE_V2, PEP_REGISTER_DEVICE_V2, *PPEP_REGISTER_DEVICE_V2, *PPEP_REGISTER_DEVICE, PEP_REGISTER_DEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_REGISTER_DEVICE_V2, PEP_REGISTER_DEVICE_V2
+req.typenames: PEP_REGISTER_DEVICE_V2, *PPEP_REGISTER_DEVICE_V2
 ---
 
 # _PEP_REGISTER_DEVICE_V2 structure
@@ -88,31 +88,6 @@ This structure is used by the <a href="kernel.pep_dpm_register_device">PEP_DPM_R
 
 The <b>Register</b> member contains a pointer to an input buffer allocated by PoFx. PoFx writes the <a href="..\pepfx\ns-pepfx-_pep_device_register_v2.md">PEP_DEVICE_REGISTER_V2</a> structure and associated data to this structure before sending the <a href="kernel.pep_dpm_register_device">PEP_DPM_REGISTER_DEVICE</a> notification to the PEP. The contents of this buffer remain valid only until the PEP finishes handling the notification and returns from the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186626">AcceptDeviceNotification</a> callback.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

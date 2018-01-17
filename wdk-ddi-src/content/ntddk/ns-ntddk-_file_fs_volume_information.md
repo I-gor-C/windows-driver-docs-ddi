@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: b0c6f733-2d8b-4140-bb2a-2a28212d3e69
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_FS_VOLUME_INFORMATION, *PFILE_FS_VOLUME_INFORMATION, FILE_FS_VOLUME_INFORMATION
+ms.keywords: _FILE_FS_VOLUME_INFORMATION, FILE_FS_VOLUME_INFORMATION, *PFILE_FS_VOLUME_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PFILE_FS_VOLUME_INFORMATION, FILE_FS_VOLUME_INFORMATION
+req.typenames: FILE_FS_VOLUME_INFORMATION, *PFILE_FS_VOLUME_INFORMATION
 ---
 
 # _FILE_FS_VOLUME_INFORMATION structure
@@ -98,21 +98,6 @@ The size of the buffer passed in the <i>FileInformation</i> parameter to <a href
 
 This structure must be aligned on a LONGLONG (8-byte) boundary. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h, Ntifs.h, or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

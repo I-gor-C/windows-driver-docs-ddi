@@ -7,7 +7,7 @@ old-location: netvista\ril3gpptone_2.htm
 old-project: netvista
 ms.assetid: 05981a37-ce5c-4214-82b7-c8705102bd6a
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RIL3GPPTONE, RIL3GPPTONE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,19 +83,3 @@ typedef enum _RIL3GPPTONE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

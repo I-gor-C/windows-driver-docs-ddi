@@ -135,21 +135,6 @@ Member arrays <b>DeviceTransferModeSupported</b>, <b>DeviceTransferModeCurrent</
 #define UDMA_MODE5          (1 &lt;&lt; 16)
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

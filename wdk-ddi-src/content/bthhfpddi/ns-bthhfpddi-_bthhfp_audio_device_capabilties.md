@@ -66,19 +66,3 @@ Whether the device supports 16 kHz sampling.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthhfpddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

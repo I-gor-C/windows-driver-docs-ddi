@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 2CD75FA9-F77E-4AC5-870E-69CF05DB9312
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBFN_ON_ATTACH, USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH
+ms.keywords: _USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH
+req.typenames: *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 req.product: Windows 10 or later.
 ---
 
@@ -58,7 +58,7 @@ typedef struct _USBFN_ON_ATTACH {
 
 ### -field PortType
 
-Detected port type defined by one of the <a href="..\usbfnbase\ne-usbfnbase-_usbfn_port_type.md">USBFN_PORT_TYPE</a>-typed values.
+Detected port type defined by one of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188004">USBFN_PORT_TYPE</a>-typed values.
 
 
 ### -field AttachAction
@@ -68,21 +68,6 @@ The operation that must be performed depending on the port type. This value is d
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnattach.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

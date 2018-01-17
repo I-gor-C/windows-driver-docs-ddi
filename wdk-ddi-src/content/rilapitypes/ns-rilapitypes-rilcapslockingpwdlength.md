@@ -7,8 +7,8 @@ old-location: netvista\rilcapslockingpwdlength_2.htm
 old-project: netvista
 ms.assetid: 7ab6ea03-cfe6-4679-91ff-e52aae7a5200
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCAPSLOCKINGPWDLENGTH, RILCAPSLOCKINGPWDLENGTH, *LPRILCAPSLOCKINGPWDLENGTH
+ms.date: 1/11/2018
+ms.keywords: RILCAPSLOCKINGPWDLENGTH, *LPRILCAPSLOCKINGPWDLENGTH, RILCAPSLOCKINGPWDLENGTH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILCAPSLOCKINGPWDLENGTH, *LPRILCAPSLOCKINGPWDLENGTH
+req.typenames: *LPRILCAPSLOCKINGPWDLENGTH, RILCAPSLOCKINGPWDLENGTH
 req.product: Windows 10 or later.
 ---
 
@@ -71,19 +71,3 @@ typedef struct _RILCAPSLOCKINGPWDLENGTH {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

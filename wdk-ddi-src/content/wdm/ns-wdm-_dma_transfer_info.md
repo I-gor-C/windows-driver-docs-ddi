@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1CD5CE6F-5179-40D5-BCD9-3587914C8139
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _DMA_TRANSFER_INFO, DMA_TRANSFER_INFO, *PDMA_TRANSFER_INFO
+ms.keywords: _DMA_TRANSFER_INFO, *PDMA_TRANSFER_INFO, DMA_TRANSFER_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: DMA_TRANSFER_INFO, *PDMA_TRANSFER_INFO
+req.typenames: *PDMA_TRANSFER_INFO, DMA_TRANSFER_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -73,31 +73,6 @@ A device driver calls the <a href="..\wdm\nc-wdm-pget_dma_transfer_info.md">GetD
 
 The unnamed union in this structure contains a <b>DMA_TRANSFER_INFO_<i>XXX</i></b> structure. The <b>Version</b> member indicates which version of the <b>DMA_TRANSFER_INFO_<i>XXX</i></b> structure is contained in the union. Currently, only version 1 is supported.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

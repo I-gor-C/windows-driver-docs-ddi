@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 63ED28D9-654F-45CC-BFDC-89C9E73DCF95
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS, *PDXGK_MIRACAST_CAPS
+ms.keywords: _DXGK_MIRACAST_CAPS, *PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: DXGK_MIRACAST_CAPS, *PDXGK_MIRACAST_CAPS
+req.typenames: *PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS
 ---
 
 # _DXGK_MIRACAST_CAPS structure
@@ -88,41 +88,6 @@ Holds a 32-bit value that identifies the capabilities of the Miracast device.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

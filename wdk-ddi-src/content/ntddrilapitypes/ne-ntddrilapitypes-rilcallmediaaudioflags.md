@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaaudioflags.htm
 old-project: netvista
 ms.assetid: 457d0bee-4746-424d-bd22-4e968048bdb9
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLMEDIAAUDIOFLAGS, RILCALLMEDIAAUDIOFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,19 +62,3 @@ typedef enum _RILCALLMEDIAAUDIOFLAGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

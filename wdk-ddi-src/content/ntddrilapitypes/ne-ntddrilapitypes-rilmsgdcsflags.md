@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsflags.htm
 old-project: netvista
 ms.assetid: 9c69d290-0cc6-4444-b9cb-a9555526e9ed
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGDCSFLAGS, RILMSGDCSFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILMSGDCSFLAGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

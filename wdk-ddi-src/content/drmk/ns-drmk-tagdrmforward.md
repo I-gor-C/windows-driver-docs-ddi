@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 30e2e62a-3ae4-4efe-a6e9-6aece6bfbb46
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: tagDRMFORWARD, DRMFORWARD, *PDRMFORWARD
+ms.keywords: tagDRMFORWARD, *PDRMFORWARD, DRMFORWARD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: DRMFORWARD, *PDRMFORWARD
+req.typenames: *PDRMFORWARD, DRMFORWARD
 ---
 
 # tagDRMFORWARD structure
@@ -64,7 +64,7 @@ No flag bits are currently defined. Set this member to zero.
 
 ### -field DeviceObject
 
-Pointer to the device object, which is a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
+Pointer to the device object, which is a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>.
 
 
 ### -field FileObject
@@ -100,25 +100,10 @@ When an audio driver forwards DRM content to a system-supplied USB driver, the f
 For general information about DRM, see <a href="https://msdn.microsoft.com/7ce19196-5180-421f-b6be-ac4a235a8c16">Digital Rights Management</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.h (include Drmk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>

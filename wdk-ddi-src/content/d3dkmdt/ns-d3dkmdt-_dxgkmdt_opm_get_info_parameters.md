@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 88e12eb6-6015-44bc-b170-cc152fdd1397
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGKMDT_OPM_GET_INFO_PARAMETERS, DXGKMDT_OPM_GET_INFO_PARAMETERS, *PDXGKMDT_OPM_GET_INFO_PARAMETERS
+ms.keywords: _DXGKMDT_OPM_GET_INFO_PARAMETERS, *PDXGKMDT_OPM_GET_INFO_PARAMETERS, DXGKMDT_OPM_GET_INFO_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DXGKMDT_OPM_GET_INFO_PARAMETERS, *PDXGKMDT_OPM_GET_INFO_PARAMETERS
+req.typenames: *PDXGKMDT_OPM_GET_INFO_PARAMETERS, DXGKMDT_OPM_GET_INFO_PARAMETERS
 ---
 
 # _DXGKMDT_OPM_GET_INFO_PARAMETERS structure
@@ -150,31 +150,6 @@ All of the data after the <b>omac</b> member in DXGKMDT_OPM_GET_INFO_PARAMETERS 
 
 DXGKMDT_OPM_GET_INFO_PARAMETERS is not used for COPP emulation; instead, the <a href="..\d3dkmdt\ns-d3dkmdt-_dxgkmdt_opm_copp_compatible_get_info_parameters.md">DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS</a> structure is used for COPP. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmdt.h (include D3dkmdt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

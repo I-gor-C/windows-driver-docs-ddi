@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 7fc374e3-ca5b-476d-bc44-afb28ecf9920
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _INDICATION_CODE, INDICATION_CODE, *PINDICATION_CODE
+ms.keywords: _INDICATION_CODE, *PINDICATION_CODE, INDICATION_CODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: INDICATION_CODE, *PINDICATION_CODE
+req.typenames: *PINDICATION_CODE, INDICATION_CODE
 ---
 
 # _INDICATION_CODE enumeration
@@ -169,35 +169,10 @@ A value from this enumeration is passed to a profile driver's
     it of an event.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536751">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
 </dt>
 <dt>
 <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>

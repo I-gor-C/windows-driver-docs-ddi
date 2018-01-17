@@ -8,7 +8,7 @@ old-project: devtest
 ms.assetid: 5058fc17-1016-45bc-a6ea-5e2458824e7b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords: KSYNCHRONIZE_ROUTINE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=APC_LEVEL
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -88,52 +88,6 @@ The provider can implement the <i>Callback</i> function to handle the requests. 
 
 In the <i>DriverEntry</i> routine of the KCS example, the <i>KcsGeometricWaveCallback</i> function is specified as the <i>Callback</i> when <i>KcsRegisterGeometricWave</i> registers the counter set. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h or Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

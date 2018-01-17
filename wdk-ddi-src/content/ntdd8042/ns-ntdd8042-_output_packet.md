@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 1d8d723f-aae5-499e-94cf-c7ccdb24c45f
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _OUTPUT_PACKET, *POUTPUT_PACKET, OUTPUT_PACKET
+ms.keywords: _OUTPUT_PACKET, OUTPUT_PACKET, *POUTPUT_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *POUTPUT_PACKET, OUTPUT_PACKET
+req.typenames: OUTPUT_PACKET, *POUTPUT_PACKET
 ---
 
 # _OUTPUT_PACKET structure
@@ -107,21 +107,6 @@ Identifies that a write is in progress.
 ## -remarks
 This structure is used with a <a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a> callback routine and a <a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a> callback routine.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntdd8042.h (include Ntdd8042.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

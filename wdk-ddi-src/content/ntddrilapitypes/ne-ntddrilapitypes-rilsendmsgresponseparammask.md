@@ -7,7 +7,7 @@ old-location: netvista\rilsendmsgresponseparammask.htm
 old-project: netvista
 ms.assetid: d3bf2b1a-22ac-4b37-a442-ecd8a2108b46
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSENDMSGRESPONSEPARAMMASK, RILSENDMSGRESPONSEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,19 +78,3 @@ typedef enum _RILSENDMSGRESPONSEPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

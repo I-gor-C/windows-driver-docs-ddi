@@ -7,7 +7,7 @@ old-location: netvista\riluiccchannelgroup_2.htm
 old-project: netvista
 ms.assetid: cbb5fbb1-7042-45fe-81eb-2fca0f413572
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCCHANNELGROUP, RILUICCCHANNELGROUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,3 @@ typedef enum _RILUICCCHANNELGROUP {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: ac3ec079-61a5-42fe-a1c0-b7626e5f32d2
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ScsiInquiry_OUT, *PScsiInquiry_OUT, ScsiInquiry_OUT
+ms.keywords: _ScsiInquiry_OUT, ScsiInquiry_OUT, *PScsiInquiry_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PScsiInquiry_OUT, ScsiInquiry_OUT
+req.typenames: ScsiInquiry_OUT, *PScsiInquiry_OUT
 ---
 
 # _ScsiInquiry_OUT structure
@@ -86,21 +86,6 @@ A buffer that holds the response data that the SCSI INQUIRY command received.
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

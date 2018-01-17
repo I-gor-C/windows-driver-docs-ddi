@@ -7,8 +7,8 @@ old-location: netvista\rilsetcellbroadcastmsgconfigparams.htm
 old-project: netvista
 ms.assetid: bfaad47a-44eb-471d-9ed9-e1adf845ab9c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS, *LPRILSETCELLBROADCASTMSGCONFIGPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSETCELLBROADCASTMSGCONFIGPARAMS, *LPRILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILSETCELLBROADCASTMSGCONFIGPARAMS, *LPRILSETCELLBROADCASTMSGCONFIGPARAMS
+req.typenames: *LPRILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS
 ---
 
 # RILSETCELLBROADCASTMSGCONFIGPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILSETCELLBROADCASTMSGCONFIGPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

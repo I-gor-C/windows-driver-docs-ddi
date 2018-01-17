@@ -7,8 +7,8 @@ old-location: netvista\rilgetdriverversionparams_2.htm
 old-project: netvista
 ms.assetid: b396b12e-f8c4-4e5e-b3c4-9822bcd996a4
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILGETDRIVERVERSIONPARAMS, *LPRILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS, *LPRILGETDRIVERVERSIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS
+req.typenames: RILGETDRIVERVERSIONPARAMS, *LPRILGETDRIVERVERSIONPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -63,19 +63,3 @@ typedef struct _RILGETDRIVERVERSIONPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

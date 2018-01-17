@@ -7,7 +7,7 @@ old-location: netvista\wdi_channel_mapping_entry.htm
 old-project: netvista
 ms.assetid: F05DAD5F-C0A4-46E0-8069-7CEF5B6C5707
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_CHANNEL_MAPPING_ENTRY, WDI_CHANNEL_MAPPING_ENTRY, *PWDI_CHANNEL_MAPPING_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,39 +68,3 @@ Specifies the center frequency for the channel in MHz.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

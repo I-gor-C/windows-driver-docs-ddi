@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmateleservice.htm
 old-project: netvista
 ms.assetid: 01c45c31-2cae-4f9f-a3dc-4a164a3df670
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGCDMATELESERVICE, RILMSGCDMATELESERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -114,19 +114,3 @@ typedef enum _RILMSGCDMATELESERVICE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

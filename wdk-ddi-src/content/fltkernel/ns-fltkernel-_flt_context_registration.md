@@ -165,21 +165,6 @@ Only one FLT_CONTEXT_REGISTRATION structure with a <b>Size</b> member of FLT_VAR
 No more than three FLT_CONTEXT_REGISTRATION structures with a <b>Size</b> member other than FLT_VARIABLE_SIZED_CONTEXTS can be supplied for each context type. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

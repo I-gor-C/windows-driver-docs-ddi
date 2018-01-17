@@ -7,7 +7,7 @@ old-location: netvista\riluicctoolkitcmd.htm
 old-project: netvista
 ms.assetid: f5fc28df-ee06-4efd-8509-a05ed0ebf322
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCTOOLKITCMD, *LPRILUICCTOOLKITCMD, RILUICCTOOLKITCMD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,19 +74,3 @@ typedef struct _RILUICCTOOLKITCMD {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

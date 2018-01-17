@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 74de7f2a-8738-472b-8a22-983a82e29fcb
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG
+ms.keywords: _UCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PUCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG
+req.typenames: UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -66,21 +66,6 @@ Size of this structure.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmtcpcidevice.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

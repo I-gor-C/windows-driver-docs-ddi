@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: fdb8376b-fbda-4bee-895e-a306fd0f632a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _POINTER_SEARCH_PHYSICAL, POINTER_SEARCH_PHYSICAL, *PPOINTER_SEARCH_PHYSICAL
+ms.keywords: _POINTER_SEARCH_PHYSICAL, *PPOINTER_SEARCH_PHYSICAL, POINTER_SEARCH_PHYSICAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: POINTER_SEARCH_PHYSICAL, *PPOINTER_SEARCH_PHYSICAL
+req.typenames: *PPOINTER_SEARCH_PHYSICAL, POINTER_SEARCH_PHYSICAL
 req.product: Windows 10 or later.
 ---
 
@@ -153,21 +153,6 @@ Receives the number of pointers found that match the search criteria.
 ## -remarks
 The parameters for the IG_POINTER_SEARCH_PHYSICAL <a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation are the members of the POINTER_SEARCH_PHYSICAL structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

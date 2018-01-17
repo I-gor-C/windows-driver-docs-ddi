@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: b62f60e2-9a5c-4346-8a77-985873a7ae20
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DSM_QuerySupportedLBPolicies_V2, *PDSM_QuerySupportedLBPolicies_V2, DSM_QuerySupportedLBPolicies_V2
+ms.keywords: _DSM_QuerySupportedLBPolicies_V2, DSM_QuerySupportedLBPolicies_V2, *PDSM_QuerySupportedLBPolicies_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDSM_QuerySupportedLBPolicies_V2, DSM_QuerySupportedLBPolicies_V2
+req.typenames: DSM_QuerySupportedLBPolicies_V2, *PDSM_QuerySupportedLBPolicies_V2
 ---
 
 # _DSM_QuerySupportedLBPolicies_V2 structure
@@ -72,19 +72,3 @@ An array of DSM_Load_Balance_Policy_V2 structures, one for each of the supported
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 5b6fe740-22bb-4620-86a2-1e3be1f380f3
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: IXpsPartIterator, IXpsPartIterator::Reset, Reset
+ms.keywords: RxpTrackReference
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=APC_LEVEL
-req.typenames: EXpsFontRestriction
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE callback
@@ -95,52 +95,6 @@ A minifilter driver can optionally specify a routine of type <b>PFLT_COMPLETE_LO
 
 When completing the an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549251">IRP_MJ_LOCK_CONTROL</a> operation for the file lock, filter manager calls this routine, if specified, as a notification to the minifilter.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

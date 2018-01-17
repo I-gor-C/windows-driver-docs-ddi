@@ -7,7 +7,7 @@ old-location: netvista\rilmodemresetstate.htm
 old-project: netvista
 ms.assetid: 4069ded7-95d7-46c2-a4a7-a360482c7b7d
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMODEMRESETSTATE, RILMODEMRESETSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,19 +66,3 @@ typedef enum _RILMODEMRESETSTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,8 +7,8 @@ old-location: netvista\ndis_miniport_wdi_data_handlers.htm
 old-project: netvista
 ms.assetid: DBDB5F08-9988-4D9B-A731-DA65BBA67813
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: _NDIS_MINIPORT_WDI_DATA_HANDLERS, NDIS_MINIPORT_WDI_DATA_HANDLERS, *PNDIS_MINIPORT_WDI_DATA_HANDLERS
+ms.date: 1/11/2018
+ms.keywords: _NDIS_MINIPORT_WDI_DATA_HANDLERS, *PNDIS_MINIPORT_WDI_DATA_HANDLERS, NDIS_MINIPORT_WDI_DATA_HANDLERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: NDIS_MINIPORT_WDI_DATA_HANDLERS, *PNDIS_MINIPORT_WDI_DATA_HANDLERS
+req.typenames: *PNDIS_MINIPORT_WDI_DATA_HANDLERS, NDIS_MINIPORT_WDI_DATA_HANDLERS
 ---
 
 # _NDIS_MINIPORT_WDI_DATA_HANDLERS structure
@@ -81,7 +81,7 @@ typedef struct _NDIS_MINIPORT_WDI_DATA_HANDLERS {
 ### -field Header
 
 The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_MINIPORT_WDI_DATA_HANDLERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_MINIPORT_WDI_DATA_HANDLERS.
@@ -222,39 +222,3 @@ The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_pe
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

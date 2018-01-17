@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 08509C28-DDD4-4060-A16A-857A6BF6F6E1
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK
+ms.keywords: KSIDEFAULTCLOCK, KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
-req.typenames: *PKSIDEFAULTCLOCK, KSIDEFAULTCLOCK
+req.irql: PASSIVE_LEVEL
+req.typenames: KSIDEFAULTCLOCK, *PKSIDEFAULTCLOCK
 ---
 
 # KSIDEFAULTCLOCK structure
@@ -142,19 +142,3 @@ typedef struct {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ksi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

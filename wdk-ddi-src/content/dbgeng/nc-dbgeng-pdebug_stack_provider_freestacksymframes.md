@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: E66742D4-A972-4096-8DDC-E8F42E8B8D25
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DOT4_ACTIVITY, *PDOT4_ACTIVITY, DOT4_ACTIVITY
+ms.keywords: _DOT4_ACTIVITY, DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # PDEBUG_STACK_PROVIDER_FREESTACKSYMFRAMES callback
@@ -66,21 +66,6 @@ After <i>FreeStackSymFrames</i> is called, the debugger calls the stack provider
 
 <i>FreeStackSymFrames</i> is called <b>PDEBUG_STACK_PROVIDER_FREESTACKSYMFRAMES</b>   in the Dbgeng.h header file.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

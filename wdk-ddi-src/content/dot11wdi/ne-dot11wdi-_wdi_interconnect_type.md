@@ -7,7 +7,7 @@ old-location: netvista\wdi_interconnect_type.htm
 old-project: netvista
 ms.assetid: 58cb1ead-94a1-4587-bb2a-7b8e23f42eeb
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_INTERCONNECT_TYPE, WDI_INTERCONNECT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,39 +72,3 @@ Unspecified interconnect type.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

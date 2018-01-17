@@ -7,8 +7,8 @@ old-location: netvista\rilsendflashparams.htm
 old-project: netvista
 ms.assetid: e45b8f47-4e46-4265-9c56-055e753eb6e6
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSENDFLASHPARAMS, *LPRILSENDFLASHPARAMS, RILSENDFLASHPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSENDFLASHPARAMS, RILSENDFLASHPARAMS, *LPRILSENDFLASHPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILSENDFLASHPARAMS, RILSENDFLASHPARAMS
+req.typenames: RILSENDFLASHPARAMS, *LPRILSENDFLASHPARAMS
 ---
 
 # RILSENDFLASHPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILSENDFLASHPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

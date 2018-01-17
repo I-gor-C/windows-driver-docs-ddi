@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 8A8F938D-8F6B-47E0-963F-8E8B14033802
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FSINFOCLASS, FS_INFORMATION_CLASS, *PFS_INFORMATION_CLASS
+ms.keywords: _FSINFOCLASS, *PFS_INFORMATION_CLASS, FS_INFORMATION_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: FS_INFORMATION_CLASS, *PFS_INFORMATION_CLASS
+req.irql: PASSIVE_LEVEL
+req.typenames: *PFS_INFORMATION_CLASS, FS_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 
@@ -123,19 +123,3 @@ Return a <a href="..\ntifs\ns-ntifs-_file_fs_driver_path_information.md">FILE_FS
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-</table>

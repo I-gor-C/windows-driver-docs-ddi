@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 99abb7b6-3e20-4875-b257-c3fc4146e392
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _EXT_TYPED_DATA, EXT_TYPED_DATA, *PEXT_TYPED_DATA
+ms.keywords: _EXT_TYPED_DATA, *PEXT_TYPED_DATA, EXT_TYPED_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: EXT_TYPED_DATA, *PEXT_TYPED_DATA
+req.typenames: *PEXT_TYPED_DATA, EXT_TYPED_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -232,21 +232,6 @@ The members of this structure are used as the input and output parameters to the
 
 This structure can optionally specify additional data--using the members <b>InStrIndex</b> and <b>StrBufferIndex</b>--that is included with the structure. This additional data is specified relative to the address of the instance of this structure. When used with the DEBUG_REQUEST_EXT_TYPED_DATA_ANSI <b>Request</b> operation, the additional data is included in the <i>InBuffer</i> and <i>OutBuffer</i> (as appropriate) and should be included in the size of these two buffers.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include WdbgExts.h or DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

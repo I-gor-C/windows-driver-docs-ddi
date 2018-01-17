@@ -7,7 +7,7 @@ old-location: netvista\rilmsgackstatus.htm
 old-project: netvista
 ms.assetid: 551193d0-596c-40bf-9a31-f8b6eb330e25
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGACKSTATUS, RILMSGACKSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,19 +66,3 @@ typedef enum _RILMSGACKSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

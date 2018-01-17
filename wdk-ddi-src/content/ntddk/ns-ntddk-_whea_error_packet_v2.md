@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 10cfc201-d5c9-4887-997e-673ef6abb7db
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET
+ms.keywords: _WHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PWHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET
+req.typenames: WHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET
 ---
 
 # _WHEA_ERROR_PACKET_V2 structure
@@ -203,32 +203,6 @@ The WHEA_ERROR_PACKET_V2 structure describes the error data that is contained in
 
 In addition, <a href="https://msdn.microsoft.com/7c56a8e2-11e9-4ef0-83f2-50a17713bffa">platform-specific hardware error driver (PSHED) plug-ins</a> can add supplementary platform-specific error data that is referenced through the <b>PshedDataOffset</b> and <b>PshedDataLength</b> members. Both of these members must be set to 0 if PSHED data has not been added.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows 7 and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilconfparticipantstatusparammask_2.htm
 old-project: netvista
 ms.assetid: 1194f333-7422-4dc2-9110-3fca067430a8
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCONFPARTICIPANTSTATUSPARAMMASK, RILCONFPARTICIPANTSTATUSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,19 +79,3 @@ typedef enum _RILCONFPARTICIPANTSTATUSPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

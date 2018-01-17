@@ -7,7 +7,7 @@ old-location: netvista\rilmessageinfo.htm
 old-project: netvista
 ms.assetid: 689b4abc-13ee-4d4a-8b2e-bb0be7cc6672
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMESSAGEINFO, *LPRILMESSAGEINFO, RILMESSAGEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,19 +78,3 @@ typedef struct _RILMESSAGEINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

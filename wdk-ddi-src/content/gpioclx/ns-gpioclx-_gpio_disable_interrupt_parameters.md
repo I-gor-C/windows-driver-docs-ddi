@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 6F71C67C-ACA6-405A-9371-9DC72CC6DDCE
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_DISABLE_INTERRUPT_PARAMETERS, *PGPIO_DISABLE_INTERRUPT_PARAMETERS, GPIO_DISABLE_INTERRUPT_PARAMETERS
+ms.keywords: _GPIO_DISABLE_INTERRUPT_PARAMETERS, GPIO_DISABLE_INTERRUPT_PARAMETERS, *PGPIO_DISABLE_INTERRUPT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PGPIO_DISABLE_INTERRUPT_PARAMETERS, GPIO_DISABLE_INTERRUPT_PARAMETERS
+req.typenames: GPIO_DISABLE_INTERRUPT_PARAMETERS, *PGPIO_DISABLE_INTERRUPT_PARAMETERS
 ---
 
 # _GPIO_DISABLE_INTERRUPT_PARAMETERS structure
@@ -78,31 +78,6 @@ The <i>CLIENT_DisableInterrupt</i> function for a memory-mapped GPIO controller 
 
 After a <i>CLIENT_DisableInterrupt</i> call fails, GpioClx might retry the call one or more times. During each retry, GpioClx sets the <b>RetryDisableOnFailure</b> flag to indicate that the previous call failed. The <i>CLIENT_DisableInterrupt</i> function might respond to this flag by taking additional steps to increase the likelihood that the next attempt to disable the interrupt succeeds.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

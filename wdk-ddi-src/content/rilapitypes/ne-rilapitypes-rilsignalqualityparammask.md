@@ -7,7 +7,7 @@ old-location: netvista\rilsignalqualityparammask_2.htm
 old-project: netvista
 ms.assetid: be6c46bb-9c14-4daf-b76a-679d71269965
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSIGNALQUALITYPARAMMASK, RILSIGNALQUALITYPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,19 +75,3 @@ typedef enum _RILSIGNALQUALITYPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

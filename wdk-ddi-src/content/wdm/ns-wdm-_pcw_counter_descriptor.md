@@ -79,29 +79,3 @@ A numeric value that specifies the size, in bytes, associated with the instance 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h or Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

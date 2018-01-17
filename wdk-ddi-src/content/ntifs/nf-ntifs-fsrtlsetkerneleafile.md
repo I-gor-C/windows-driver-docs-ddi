@@ -105,41 +105,6 @@ One or more Kernel EA’s may be set, modified and/or deleted in a single call t
 You delete EA’s by specifying an <b>EAName</b> with an <b>EaValueLength</b> of zero.  You can intermix inserting new, modifying existing, or removing EA’s in a single call.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

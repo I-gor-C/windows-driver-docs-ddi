@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 54853C39-FA6C-4F9B-A202-F116C43D3A4E
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UDECX_WDF_DEVICE_CONFIG, *PUDECX_WDF_DEVICE_CONFIG, UDECX_WDF_DEVICE_CONFIG
+ms.keywords: _UDECX_WDF_DEVICE_CONFIG, UDECX_WDF_DEVICE_CONFIG, *PUDECX_WDF_DEVICE_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PUDECX_WDF_DEVICE_CONFIG, UDECX_WDF_DEVICE_CONFIG
+req.typenames: UDECX_WDF_DEVICE_CONFIG, *PUDECX_WDF_DEVICE_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -92,21 +92,6 @@ A pointer to an <a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_devic
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Udecxwdfdevice.h (include Udecx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

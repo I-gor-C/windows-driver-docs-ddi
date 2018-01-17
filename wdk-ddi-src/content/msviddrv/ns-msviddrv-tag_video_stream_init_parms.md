@@ -74,19 +74,3 @@ typedef struct tag_video_stream_init_parms {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Msviddrv.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: d5acaec6-7b3b-4dd9-8901-f96b4e49149f
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _ENUMERATOR_ACTION, *PENUMERATOR_ACTION, ENUMERATOR_ACTION
+ms.keywords: _ENUMERATOR_ACTION, ENUMERATOR_ACTION, *PENUMERATOR_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: *PENUMERATOR_ACTION, ENUMERATOR_ACTION
+req.typenames: ENUMERATOR_ACTION, *PENUMERATOR_ACTION
 ---
 
 # _ENUMERATOR_ACTION enumeration
@@ -80,31 +80,6 @@ Reserved.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -120,7 +95,7 @@ Header
 <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
 </dt>
 <dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536751">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
 </dt>
 </dl>
  

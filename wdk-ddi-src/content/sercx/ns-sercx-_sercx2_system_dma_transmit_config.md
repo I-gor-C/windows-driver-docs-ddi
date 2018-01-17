@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: AAC70470-B58E-44F1-9CC5-4E0C25539639
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, *PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG
+ms.keywords: _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, *PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
-req.typenames: *PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG
+req.typenames: SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, *PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -157,31 +157,6 @@ A pointer to the driver-implemented <a href="..\sercx\nc-sercx-evt_sercx2_system
 ## -remarks
 The <a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a> method accepts a pointer to a <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2SystemDmaTransmitCreate</b>, call the <a href="..\sercx\nf-sercx-sercx2_system_dma_transmit_config_init.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT</a> function to initialize this structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

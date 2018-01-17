@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Wdmsec.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PWORK_QUEUE_ITEM, WORK_QUEUE_ITEM
+req.typenames: WORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM
 req.product: Windows 10 or later.
 ---
 
@@ -85,7 +85,7 @@ Specifies one of the system-defined FILE_DEVICE_<i>XXX</i> constants that indica
 
 ### -param DeviceCharacteristics [in]
 
-Specifies one or more system-defined constants, ORed together, that provide additional information about the driver's device. For a list of possible device characteristics, see <a href="https://msdn.microsoft.com/f3522315-cf15-41f7-ac87-c625c7dc8040"> DEVICE_OBJECT</a>. For more information about how to specify device characteristics, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563818">Specifying Device Characteristics</a>. Most drivers specify FILE_DEVICE_SECURE_OPEN for this parameter. 
+Specifies one or more system-defined constants, ORed together, that provide additional information about the driver's device. For a list of possible device characteristics, see <a href="..\wdm\ns-wdm-_device_object.md"> DEVICE_OBJECT</a>. For more information about how to specify device characteristics, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563818">Specifying Device Characteristics</a>. Most drivers specify FILE_DEVICE_SECURE_OPEN for this parameter. 
 
 
 ### -param Exclusive [in]
@@ -109,7 +109,7 @@ Pointer to a GUID that identifies a section of the registry containing possible 
 
 ### -param DeviceObject 
 
-Pointer to a variable that receives a pointer to the newly created <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure. The <b>DEVICE_OBJECT</b> structure is allocated from nonpaged pool.
+Pointer to a variable that receives a pointer to the newly created <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure. The <b>DEVICE_OBJECT</b> structure is allocated from nonpaged pool.
 
 
 ## -returns
@@ -141,76 +141,10 @@ Device objects for disks, tapes, CD-ROMs, and RAM disks are given a Volume Param
 If a driver's call to <b>WdmlibIoCreateDeviceSecure</b> returns an error, the driver should release any resources that it allocated for that device.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-See Remarks section.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdmsec.h (include Wdmsec.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdmsec.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh975092">MiniportOnlyWdmDevice</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>

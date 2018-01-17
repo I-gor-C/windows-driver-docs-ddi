@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: BAC97D72-23C4-49A6-A13D-0F011113DB32
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: MARK_HANDLE_INFO32, *PMARK_HANDLE_INFO32, MARK_HANDLE_INFO32
+ms.keywords: MARK_HANDLE_INFO32, MARK_HANDLE_INFO32, *PMARK_HANDLE_INFO32
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMARK_HANDLE_INFO32, MARK_HANDLE_INFO32
+req.typenames: MARK_HANDLE_INFO32, *PMARK_HANDLE_INFO32
 ---
 
 # MARK_HANDLE_INFO32 structure
@@ -302,31 +302,6 @@ The file previously marked for real-time read behavior using the
 ## -remarks
 When running on a 64-bit system, file system minifilters must interpret the input data sent by a 32-bit process in the system buffer for the <a href="https://msdn.microsoft.com/c96b49d8-12f3-4281-9f9f-6621769359f0">FSCTL_MARK_HANDLE</a> control code as a <b>MARK_HANDLE_INFO32</b> structure. A minifilter may check the process word length by calling <a href="..\fltkernel\nf-fltkernel-fltis32bitprocess.md">FltIs32bitProcess</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Fltkernel.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

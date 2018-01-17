@@ -7,7 +7,7 @@ old-location: netvista\wdi_bss_selection_flags.htm
 old-project: netvista
 ms.assetid: 9C2F862B-8BA8-4947-9C3D-538715C99F26
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_BSS_SELECTION_FLAGS, WDI_BSS_SELECTION_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,39 +73,3 @@ Specifies whether this roam was requested by the AP or not (11v BSS Transition m
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

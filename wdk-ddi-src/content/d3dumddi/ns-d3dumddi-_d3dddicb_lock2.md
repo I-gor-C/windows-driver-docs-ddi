@@ -63,7 +63,7 @@ typedef struct _D3DDDICB_LOCK2 {
 
 ### -field Flags
 
-A set of flags to pass to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a> kernel function which will determine how the allocation is locked. See <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lock2flags.md">D3DDDICB_LOCK2FLAGS</a> for details.
+A set of flags to pass to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a> kernel function which will determine how the allocation is locked. See <a href="https://msdn.microsoft.com/library/windows/hardware/dn894602">D3DDDICB_LOCK2FLAGS</a> for details.
 
 
 ### -field pData
@@ -74,48 +74,13 @@ A set of flags to pass to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">L
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtlock2.md">Lock2</a>
 </dt>
 <dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddicb_lock2flags.md">D3DDDICB_LOCK2FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn894602">D3DDDICB_LOCK2FLAGS</a>
 </dt>
 </dl>
  

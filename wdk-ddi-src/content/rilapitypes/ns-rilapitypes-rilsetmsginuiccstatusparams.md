@@ -7,8 +7,8 @@ old-location: netvista\rilsetmsginuiccstatusparams_2.htm
 old-project: netvista
 ms.assetid: 12181c9d-c0bd-48ee-8eaf-64cc66c272f4
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSETMSGINUICCSTATUSPARAMS, *LPRILSETMSGINUICCSTATUSPARAMS, RILSETMSGINUICCSTATUSPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSETMSGINUICCSTATUSPARAMS, RILSETMSGINUICCSTATUSPARAMS, *LPRILSETMSGINUICCSTATUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILSETMSGINUICCSTATUSPARAMS, RILSETMSGINUICCSTATUSPARAMS
+req.typenames: RILSETMSGINUICCSTATUSPARAMS, *LPRILSETMSGINUICCSTATUSPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -67,19 +67,3 @@ typedef struct _RILSETMSGINUICCSTATUSPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: e7be6cb6-a59d-4244-ba36-e7d5b36b1416
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES, FLT_VOLUME_PROPERTIES
+ms.keywords: _FLT_VOLUME_PROPERTIES, FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PFLT_VOLUME_PROPERTIES, FLT_VOLUME_PROPERTIES
+req.typenames: FLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES
 ---
 
 # _FLT_VOLUME_PROPERTIES structure
@@ -102,12 +102,12 @@ Receives the device characteristics of the volume. For more information, see the
 
 ### -field DeviceObjectFlags
 
-Receives the device object flags for the volume. For more information about these flags, see the reference entries for <a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>. 
+Receives the device object flags for the volume. For more information about these flags, see the reference entries for <a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a> and <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>. 
 
 
 ### -field AlignmentRequirement
 
-Receives the buffer alignment required by the underlying device. The value must be one of the FILE_<i>xxxx</i>_ALIGNMENT values defined in ntifs.h. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>. 
+Receives the buffer alignment required by the underlying device. The value must be one of the FILE_<i>xxxx</i>_ALIGNMENT values defined in ntifs.h. For more information, see <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>. 
 
 
 ### -field SectorSize
@@ -162,25 +162,10 @@ To get the volume name for a given volume, call <a href="..\fltkernel\nf-fltkern
 To get the volume globally unique identifier (GUID) name for a given volume, call <a href="..\fltkernel\nf-fltkernel-fltgetvolumeguidname.md">FltGetVolumeGuidName</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\fltkernel\nf-fltkernel-fltgetvolumename.md">FltGetVolumeName</a>

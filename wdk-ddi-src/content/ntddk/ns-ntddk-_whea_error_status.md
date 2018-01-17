@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 5b11112b-e900-4894-a9ce-6895a4fa1956
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS
+ms.keywords: _WHEA_ERROR_STATUS, WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS
+req.typenames: WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS
 ---
 
 # _WHEA_ERROR_STATUS structure
@@ -220,32 +220,6 @@ The WHEA_ERROR_STATUS union provides the capability to abstract information from
 
 A WHEA_ERROR_STATUS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>, <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a>, and <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structures.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

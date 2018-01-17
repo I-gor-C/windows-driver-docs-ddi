@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 9107CC24-48FF-4A2C-AA27-1E9E316B7944
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PARENT_HUB_FLAGS, *PPARENT_HUB_FLAGS, PARENT_HUB_FLAGS
+ms.keywords: _PARENT_HUB_FLAGS, PARENT_HUB_FLAGS, *PPARENT_HUB_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
-req.typenames: *PPARENT_HUB_FLAGS, PARENT_HUB_FLAGS
+req.typenames: PARENT_HUB_FLAGS, *PPARENT_HUB_FLAGS
 req.product: Windows 10 or later.
 ---
 
@@ -76,21 +76,6 @@ Indicates that the hub is high-speed capable.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxroothub.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

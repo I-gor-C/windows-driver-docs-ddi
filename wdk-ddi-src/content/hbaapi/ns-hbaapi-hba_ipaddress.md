@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: c3f79350-29e8-4e31-a31d-359c9781777d
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_ipaddress, HBA_IPADDRESS, *PHBA_IPADDRESS
+ms.keywords: HBA_ipaddress, *PHBA_IPADDRESS, HBA_IPADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HBA_IPADDRESS, *PHBA_IPADDRESS
+req.typenames: *PHBA_IPADDRESS, HBA_IPADDRESS
 ---
 
 # HBA_ipaddress structure
@@ -79,19 +79,3 @@ Contains a dotted decimal IP6 address if version 6 of the IP protocol is in use.
 </dl>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

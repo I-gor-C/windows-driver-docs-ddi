@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: cecef33a-a192-41f4-8006-b5d8b8c73e8d
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ReportDiscoveredTargets_OUT, ReportDiscoveredTargets_OUT, *PReportDiscoveredTargets_OUT
+ms.keywords: _ReportDiscoveredTargets_OUT, *PReportDiscoveredTargets_OUT, ReportDiscoveredTargets_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: ReportDiscoveredTargets_OUT, *PReportDiscoveredTargets_OUT
+req.typenames: *PReportDiscoveredTargets_OUT, ReportDiscoveredTargets_OUT
 ---
 
 # _ReportDiscoveredTargets_OUT structure
@@ -74,21 +74,6 @@ On output, an array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget.
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsifnd.h (include Iscsifnd.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

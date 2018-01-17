@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: cfa73359-58bb-4260-ac16-08f57ead67bb
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.keywords: KSYNCHRONIZE_ROUTINE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Called at PASSIVE_LEVEL (see Remarks section).
-req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.typenames: *PWDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -80,52 +80,6 @@ An <i>ObjectPostCallback</i> routine is called after an operation on a process h
 
 This routine is called at PASSIVE_LEVEL in an arbitrary thread context with normal kernel APCs disabled. Special kernel APCs are not disabled. For more information about APCs, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564853">Types of APCs</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Server 2008.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at PASSIVE_LEVEL (see Remarks section).
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

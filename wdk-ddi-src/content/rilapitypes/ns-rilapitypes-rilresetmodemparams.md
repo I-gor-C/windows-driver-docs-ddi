@@ -7,8 +7,8 @@ old-location: netvista\rilresetmodemparams_2.htm
 old-project: netvista
 ms.assetid: 5888ba1d-b9f2-41c3-a39d-6a2fffc593fd
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILRESETMODEMPARAMS, *LPRILRESETMODEMPARAMS, RILRESETMODEMPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILRESETMODEMPARAMS, RILRESETMODEMPARAMS, *LPRILRESETMODEMPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILRESETMODEMPARAMS, RILRESETMODEMPARAMS
+req.typenames: RILRESETMODEMPARAMS, *LPRILRESETMODEMPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -67,19 +67,3 @@ typedef struct _RILRESETMODEMPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

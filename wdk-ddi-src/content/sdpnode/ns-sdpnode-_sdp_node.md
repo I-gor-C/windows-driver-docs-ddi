@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 11d603e9-6db1-44a2-b4e3-d85ffe0d5c25
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _SDP_NODE, *PSDP_NODE, SDP_NODE
+ms.keywords: _SDP_NODE, SDP_NODE, *PSDP_NODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
-req.typenames: *PSDP_NODE, SDP_NODE
+req.typenames: SDP_NODE, *PSDP_NODE
 req.product: Windows 10 or later.
 ---
 
@@ -98,31 +98,6 @@ The header specifies the type of data. Driver developers can access links to pee
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff542043">CONTAINING_RECORD</a> memory manager macro to
     extract the address of the containing node record.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sdpnode.h (include Sdpnode.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

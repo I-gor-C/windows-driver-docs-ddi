@@ -7,7 +7,7 @@ old-location: netvista\rilgeoscope_2.htm
 old-project: netvista
 ms.assetid: 821f05f8-cc2c-4567-a1a0-aaa7b535d568
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILGEOSCOPE, RILGEOSCOPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,19 +75,3 @@ typedef enum _RILGEOSCOPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

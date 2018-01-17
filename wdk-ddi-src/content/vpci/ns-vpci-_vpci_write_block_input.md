@@ -86,21 +86,6 @@ The PF driver, which runs in the management operating system.
 This operating system runs within the Hyper-V parent partition.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Vpci.h (include Vpci.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt><b></b></dt>

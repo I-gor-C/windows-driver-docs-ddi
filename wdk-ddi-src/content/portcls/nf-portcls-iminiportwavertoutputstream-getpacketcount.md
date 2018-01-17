@@ -76,41 +76,6 @@ The OS may get this property at any time. However it generally gets this propert
 The driver should reset the packet count to 0 when the stream is in KSSTATE_STOP.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
- Passive level
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

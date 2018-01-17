@@ -83,42 +83,4 @@ Specifies the third information value to be written to the log file.
 
 
 ## -remarks
-The original USBCAMD does not call <b>USBCAMD_Debug_LogEntry</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamd2.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+The original USBCAMD does not call <b>USBCAMD_Debug_LogEntry</b>.</p>

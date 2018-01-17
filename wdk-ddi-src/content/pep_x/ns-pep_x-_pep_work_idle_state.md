@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: DD8C454D-D0F6-456B-B59A-2E4DF2D757B5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_WORK_IDLE_STATE, PEP_WORK_IDLE_STATE, *PPEP_WORK_IDLE_STATE
+ms.keywords: _PEP_WORK_IDLE_STATE, *PPEP_WORK_IDLE_STATE, PEP_WORK_IDLE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PEP_WORK_IDLE_STATE, *PPEP_WORK_IDLE_STATE
+req.typenames: *PPEP_WORK_IDLE_STATE, PEP_WORK_IDLE_STATE
 ---
 
 # _PEP_WORK_IDLE_STATE structure
@@ -74,31 +74,6 @@ The target F<i>x</i> power state to transition the component to. If this paramet
 ## -remarks
 The <b>IdleState</b> member of the <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a> structure is a <b>PEP_WORK_IDLE_STATE</b> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pep_x.h (include Pepfx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

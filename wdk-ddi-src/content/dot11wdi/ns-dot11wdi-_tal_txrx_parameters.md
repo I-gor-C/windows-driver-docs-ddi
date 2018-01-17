@@ -7,8 +7,8 @@ old-location: netvista\tal_txrx_parameters.htm
 old-project: netvista
 ms.assetid: 44f5c907-7368-43ea-b581-3b9ecf25c611
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: _TAL_TXRX_PARAMETERS, *PTAL_TXRX_PARAMETERS, TAL_TXRX_PARAMETERS
+ms.date: 1/11/2018
+ms.keywords: _TAL_TXRX_PARAMETERS, TAL_TXRX_PARAMETERS, *PTAL_TXRX_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PTAL_TXRX_PARAMETERS, TAL_TXRX_PARAMETERS
+req.typenames: TAL_TXRX_PARAMETERS, *PTAL_TXRX_PARAMETERS
 ---
 
 # _TAL_TXRX_PARAMETERS structure
@@ -61,39 +61,3 @@ Specifies the maximum number of outstanding  frame transfers to the target. No f
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,8 +7,8 @@ old-location: netvista\rilmsgmwidetail.htm
 old-project: netvista
 ms.assetid: 69371414-9f4a-46a6-8622-5750db7a0c5b
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILMSGMWIDETAIL, RILMSGMWIDETAIL, *LPRILMSGMWIDETAIL
+ms.date: 1/11/2018
+ms.keywords: RILMSGMWIDETAIL, *LPRILMSGMWIDETAIL, RILMSGMWIDETAIL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILMSGMWIDETAIL, *LPRILMSGMWIDETAIL
+req.typenames: *LPRILMSGMWIDETAIL, RILMSGMWIDETAIL
 ---
 
 # RILMSGMWIDETAIL structure
@@ -82,19 +82,3 @@ typedef struct _RILMSGMWIDETAIL {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

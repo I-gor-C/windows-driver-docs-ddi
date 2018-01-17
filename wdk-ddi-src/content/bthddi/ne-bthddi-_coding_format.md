@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 3A97BBAF-47B0-4987-B5EC-2B3A40F2B42D
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _CODING_FORMAT, *PCODING_FORMAT, CODING_FORMAT
+ms.keywords: _CODING_FORMAT, CODING_FORMAT, *PCODING_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: *PCODING_FORMAT, CODING_FORMAT
+req.typenames: CODING_FORMAT, *PCODING_FORMAT
 ---
 
 # _CODING_FORMAT enumeration
@@ -58,19 +58,3 @@ typedef enum _CODING_FORMAT {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

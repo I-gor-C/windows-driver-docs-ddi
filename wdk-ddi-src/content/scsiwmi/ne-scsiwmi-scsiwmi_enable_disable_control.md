@@ -69,21 +69,6 @@ Indicates that a data collection for a block is to be enabled or disabled.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsiwmi.h (include Scsiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

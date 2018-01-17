@@ -7,8 +7,8 @@ old-location: netvista\rilsetcallwaitingstatusparams.htm
 old-project: netvista
 ms.assetid: 1ba8d745-96bf-4d9d-8784-e6594360c632
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSETCALLWAITINGSTATUSPARAMS, *LPRILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS, *LPRILSETCALLWAITINGSTATUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS
+req.typenames: RILSETCALLWAITINGSTATUSPARAMS, *LPRILSETCALLWAITINGSTATUSPARAMS
 ---
 
 # RILSETCALLWAITINGSTATUSPARAMS structure
@@ -70,19 +70,3 @@ typedef struct _RILSETCALLWAITINGSTATUSPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

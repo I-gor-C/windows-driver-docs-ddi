@@ -267,19 +267,3 @@ Device instance-specific code that specifies to call on first open and last clos
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h</dt>
-</dl>
-</td>
-</tr>
-</table>

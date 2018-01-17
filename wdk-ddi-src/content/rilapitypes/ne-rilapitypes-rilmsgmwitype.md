@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwitype_2.htm
 old-project: netvista
 ms.assetid: 55f06d11-60b7-4dc0-8f78-eb9901d49d1a
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGMWITYPE, RILMSGMWITYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,19 +83,3 @@ typedef enum _RILMSGMWITYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

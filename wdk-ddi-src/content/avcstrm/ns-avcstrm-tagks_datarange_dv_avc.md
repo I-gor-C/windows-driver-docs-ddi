@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 92759ba0-79f1-4dec-aea5-62c24253c6f0
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: tagKS_DATARANGE_DV_AVC, KS_DATARANGE_DV_AVC, *PKS_DATARANGE_DV_AVC
+ms.keywords: tagKS_DATARANGE_DV_AVC, *PKS_DATARANGE_DV_AVC, KS_DATARANGE_DV_AVC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: KS_DATARANGE_DV_AVC, *PKS_DATARANGE_DV_AVC
+req.typenames: *PKS_DATARANGE_DV_AVC, KS_DATARANGE_DV_AVC
 ---
 
 # tagKS_DATARANGE_DV_AVC structure
@@ -74,25 +74,10 @@ Specifies the AV/C preconnection info.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avcstrm.h (include Avcstrm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
 </dt>
 <dt>
 <a href="..\avcstrm\ns-avcstrm-_dvinfo.md">DVINFO</a>

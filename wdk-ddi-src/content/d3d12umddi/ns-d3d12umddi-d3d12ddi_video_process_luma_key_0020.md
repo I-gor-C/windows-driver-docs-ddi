@@ -78,20 +78,4 @@ The values of <b>Lower</b> and <b>Upper</b> are the lower and upper bounds of th
 Any pixel whose luma value falls within the upper and lower bounds, inclusive, is treated as transparent.  For example, if the pixel format uses 8-bit luma, the upper bound is calculated as follows:<pre class="syntax" xml:space="preserve"><code>BYTE Y = BYTE( max ( min ( 1.0, Upper ), 0.0 ) * 255.0 )</code></pre>
 
 
-The value is clamped to the range from 0 to 1 before multiplying by 255.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The value is clamped to the range from 0 to 1 before multiplying by 255.</p>

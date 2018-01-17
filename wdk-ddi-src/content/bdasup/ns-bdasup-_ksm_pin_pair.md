@@ -80,28 +80,13 @@ Reserved.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bdasup.h (include Bdasup.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\bdasup\ns-bdasup-_bda_pin_pairing.md">BDA_PIN_PAIRING</a>
 </dt>
 <dt>
-<a href="..\ks\nf-ks-ikscontrol-ksmethod.md">KSMETHOD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563398">KSMETHOD</a>
 </dt>
 </dl>
  

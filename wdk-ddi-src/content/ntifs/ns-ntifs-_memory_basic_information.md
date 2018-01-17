@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: AFDDB789-E412-4EF7-8C77-2020EF81DF39
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _MEMORY_BASIC_INFORMATION, *PMEMORY_BASIC_INFORMATION, MEMORY_BASIC_INFORMATION
+ms.keywords: _MEMORY_BASIC_INFORMATION, MEMORY_BASIC_INFORMATION, *PMEMORY_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMEMORY_BASIC_INFORMATION, MEMORY_BASIC_INFORMATION
+req.typenames: MEMORY_BASIC_INFORMATION, *PMEMORY_BASIC_INFORMATION
 ---
 
 # _MEMORY_BASIC_INFORMATION structure
@@ -288,31 +288,6 @@ Indicates that the memory pages within the region are private (that is, not shar
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

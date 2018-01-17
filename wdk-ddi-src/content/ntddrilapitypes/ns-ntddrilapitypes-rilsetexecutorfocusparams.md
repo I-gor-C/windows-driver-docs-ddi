@@ -7,8 +7,8 @@ old-location: netvista\rilsetexecutorfocusparams.htm
 old-project: netvista
 ms.assetid: 5e9f9ef1-e86e-49a7-be76-a31595da28e6
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSETEXECUTORFOCUSPARAMS, *LPRILSETEXECUTORFOCUSPARAMS, RILSETEXECUTORFOCUSPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSETEXECUTORFOCUSPARAMS, RILSETEXECUTORFOCUSPARAMS, *LPRILSETEXECUTORFOCUSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILSETEXECUTORFOCUSPARAMS, RILSETEXECUTORFOCUSPARAMS
+req.typenames: RILSETEXECUTORFOCUSPARAMS, *LPRILSETEXECUTORFOCUSPARAMS
 ---
 
 # RILSETEXECUTORFOCUSPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILSETEXECUTORFOCUSPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

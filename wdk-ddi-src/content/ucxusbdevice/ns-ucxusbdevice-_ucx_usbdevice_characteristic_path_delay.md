@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 135D6C04-3520-46C2-BC64-DF0119578E6F
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, *PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY
+ms.keywords: _UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, *PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY
+req.typenames: UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, *PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY
 req.product: Windows 10 or later.
 ---
 
@@ -69,41 +69,6 @@ The maximum delay in milliseconds from the time an isochronous transfer is compl
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxusbdevice.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

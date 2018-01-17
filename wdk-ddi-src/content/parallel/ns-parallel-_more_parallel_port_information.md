@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: b21bfbce-5436-4865-b291-2e55abc4aad1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _MORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION, *PMORE_PARALLEL_PORT_INFORMATION
+ms.keywords: _MORE_PARALLEL_PORT_INFORMATION, *PMORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MORE_PARALLEL_PORT_INFORMATION, *PMORE_PARALLEL_PORT_INFORMATION
+req.typenames: *PMORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION
 ---
 
 # _MORE_PARALLEL_PORT_INFORMATION structure
@@ -94,21 +94,6 @@ An <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN
 
 For more information, see <a href="https://msdn.microsoft.com/d8ae2296-05b6-419a-93cc-00fcb12d41fe">Obtaining Information About a ParallelPort</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Parallel.h (include Parallel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

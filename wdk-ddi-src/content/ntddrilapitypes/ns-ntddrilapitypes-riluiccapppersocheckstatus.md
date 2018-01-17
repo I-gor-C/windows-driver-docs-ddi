@@ -7,8 +7,8 @@ old-location: netvista\riluiccapppersocheckstatus.htm
 old-project: netvista
 ms.assetid: 6438f692-75b0-4a41-a2f9-68b0fe3f23cf
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILUICCAPPPERSOCHECKSTATUS, *LPRILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS
+ms.date: 1/11/2018
+ms.keywords: RILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS, *LPRILUICCAPPPERSOCHECKSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS
+req.typenames: RILUICCAPPPERSOCHECKSTATUS, *LPRILUICCAPPPERSOCHECKSTATUS
 ---
 
 # RILUICCAPPPERSOCHECKSTATUS structure
@@ -74,19 +74,3 @@ typedef struct _RILUICCAPPPERSOCHECKSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

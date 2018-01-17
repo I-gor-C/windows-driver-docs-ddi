@@ -126,19 +126,3 @@ Specifies a pointer to DBCS offsets.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntnls.h</dt>
-</dl>
-</td>
-</tr>
-</table>

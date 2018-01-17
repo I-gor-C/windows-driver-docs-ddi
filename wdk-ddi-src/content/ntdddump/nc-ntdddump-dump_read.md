@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 5F95D38C-8E11-49D4-82C4-718BD846A834
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _VERIFY_INFORMATION, *PVERIFY_INFORMATION, VERIFY_INFORMATION
+ms.keywords: _OUTPUT_PACKET, OUTPUT_PACKET, *POUTPUT_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PVERIFY_INFORMATION, VERIFY_INFORMATION
+req.typenames: OUTPUT_PACKET, *POUTPUT_PACKET
 ---
 
 # DUMP_READ callback
@@ -83,42 +83,6 @@ Filter drivers can read the data that was read by the crashdump process.
 
 Filter drivers can modify the contents of the data buffer contained in <b>Mdl</b> to revert any changes made to the data when it was written to disk. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntdddump.h (include Ntdddump.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 15eeeb07-b71f-4868-8854-6a5034d3f8c6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _HARDWARE_COUNTER, HARDWARE_COUNTER, *PHARDWARE_COUNTER
+ms.keywords: _HARDWARE_COUNTER, *PHARDWARE_COUNTER, HARDWARE_COUNTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: HARDWARE_COUNTER, *PHARDWARE_COUNTER
+req.typenames: *PHARDWARE_COUNTER, HARDWARE_COUNTER
 ---
 
 # _HARDWARE_COUNTER structure
@@ -82,31 +82,6 @@ This structure is used by the <a href="..\ntddk\nf-ntddk-kequeryhardwarecounterc
 
 The <b>Type</b> member specifies the type of hardware counter that is described by the structure. In Windows 7, the only defined hardware counter type is <b>PMCCounter</b>, which is a performance monitor counter. This type of counter is used by thread-profiling applications. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows 7 and later versions of Windows. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

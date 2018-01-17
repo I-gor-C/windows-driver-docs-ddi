@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL
 req.typenames: *PSERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS, SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS
 req.product: Windows 10 or later.
 ---
@@ -69,21 +69,6 @@ Progress is being made. This value indicates that one or more bytes of data have
 ## -remarks
 The constants in this enumeration are used by the <a href="..\sercx\nf-sercx-sercx2customreceivetransactionreportprogress.md">SerCx2CustomReceiveTransactionReportProgress</a> method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

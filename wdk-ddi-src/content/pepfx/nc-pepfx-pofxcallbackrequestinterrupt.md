@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: B999405D-D6A5-4DFF-A902-F9C938C29063
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords: PEPCALLBACKPOWERONCRASHDUMPDEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= HIGH_LEVEL
-req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
+req.typenames: *PVPCI_PNP_ID, VPCI_PNP_ID
 ---
 
 # POFXCALLBACKREQUESTINTERRUPT callback
@@ -78,41 +78,6 @@ Assertion of an edge-triggered interrupt signal is transient in nature and can b
 
 A PEP can call this routine at IRQL &lt;= HIGH_LEVEL.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= HIGH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

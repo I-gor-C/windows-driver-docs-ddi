@@ -7,7 +7,7 @@ old-location: netvista\rilcapstype_2.htm
 old-project: netvista
 ms.assetid: 492436da-9d6f-462b-9c4d-4466cb2f78f6
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCAPSTYPE, RILCAPSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,19 +99,3 @@ typedef enum _RILCAPSTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

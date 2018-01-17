@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: be682bc7-61cb-40bd-920d-bc2224d6e426
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_Link_EventInfo, HBA_LINK_EVENTINFO, *PHBA_LINK_EVENTINFO
+ms.keywords: HBA_Link_EventInfo, *PHBA_LINK_EVENTINFO, HBA_LINK_EVENTINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HBA_LINK_EVENTINFO, *PHBA_LINK_EVENTINFO
+req.typenames: *PHBA_LINK_EVENTINFO, HBA_LINK_EVENTINFO
 ---
 
 # HBA_Link_EventInfo structure
@@ -67,21 +67,6 @@ Reserved.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

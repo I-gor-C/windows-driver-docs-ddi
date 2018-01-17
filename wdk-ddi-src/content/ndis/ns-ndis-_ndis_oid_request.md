@@ -7,8 +7,8 @@ old-location: netvista\ndis_oid_request.htm
 old-project: netvista
 ms.assetid: 3a5e151d-2a2d-4477-a736-8a5f3d3820a2
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: _NDIS_OID_REQUEST, *PNDIS_OID_REQUEST, NDIS_OID_REQUEST
+ms.date: 1/11/2018
+ms.keywords: _NDIS_OID_REQUEST, NDIS_OID_REQUEST, *PNDIS_OID_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
-req.typenames: *PNDIS_OID_REQUEST, NDIS_OID_REQUEST
+req.typenames: NDIS_OID_REQUEST, *PNDIS_OID_REQUEST
 ---
 
 # _NDIS_OID_REQUEST structure
@@ -95,7 +95,7 @@ typedef struct _NDIS_OID_REQUEST {
 ### -field Header
 
 The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_OID_REQUEST structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_OID_REQUEST, the 
@@ -106,7 +106,7 @@ The
 ### -field RequestType
 
 The request type as one of the 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_request_type.md">NDIS_REQUEST_TYPE</a> enumeration
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567250">NDIS_REQUEST_TYPE</a> enumeration
      values.
 
 
@@ -423,7 +423,7 @@ An area that is reserved for the originating driver. Reserved for the allocator 
 
 The revision of an NDIS structure that was supported by an NDIS 6.0 or later driver when it
      handled an OID request. A revisioned structure is any NDIS 6.0 structure that has an 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure inside it.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure inside it.
      When the driver succeeds in setting an OID, it must set 
      <b>SupportedRevision</b> to the revision number of the structure that it
      supported. For more information about NDIS version information, see 
@@ -482,38 +482,13 @@ The
     generic types.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="..\ntddndis\ne-ntddndis-_ndis_request_type.md">NDIS_REQUEST_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567250">NDIS_REQUEST_TYPE</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_status_indication.md">NDIS_STATUS_INDICATION</a>
@@ -529,5 +504,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OID_REQUEST structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_OID_REQUEST structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

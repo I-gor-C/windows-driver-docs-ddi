@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2eed1a3d-fc40-4416-ad61-d82bf4fb69a1
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _KEY_NODE_INFORMATION, KEY_NODE_INFORMATION, *PKEY_NODE_INFORMATION
+ms.keywords: _KEY_NODE_INFORMATION, *PKEY_NODE_INFORMATION, KEY_NODE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: KEY_NODE_INFORMATION, *PKEY_NODE_INFORMATION
+req.typenames: *PKEY_NODE_INFORMATION, KEY_NODE_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -93,21 +93,6 @@ An array of wide characters that contains the name of the registry key. This cha
 ## -remarks
 The <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a> and <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a> routines use the <b>KEY_NODE_INFORMATION</b> structure to contain the registry key name and key class name. When the <i>KeyInformationClass</i> parameter of either routine is <b>KeyNodeInformation</b>, the <i>KeyInformation</i> buffer is treated as a <b>KEY_NODE_INFORMATION</b> structure. For more information about the <b>KeyNodeInformation</b> enumeration value, see <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

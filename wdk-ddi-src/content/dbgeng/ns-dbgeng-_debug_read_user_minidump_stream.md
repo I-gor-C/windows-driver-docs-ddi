@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 07005D52-E851-4AE8-95D8-ED8E26C43DC6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_READ_USER_MINIDUMP_STREAM, *PDEBUG_READ_USER_MINIDUMP_STREAM, DEBUG_READ_USER_MINIDUMP_STREAM
+ms.keywords: _DEBUG_READ_USER_MINIDUMP_STREAM, DEBUG_READ_USER_MINIDUMP_STREAM, *PDEBUG_READ_USER_MINIDUMP_STREAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDEBUG_READ_USER_MINIDUMP_STREAM, DEBUG_READ_USER_MINIDUMP_STREAM
+req.typenames: DEBUG_READ_USER_MINIDUMP_STREAM, *PDEBUG_READ_USER_MINIDUMP_STREAM
 ---
 
 # _DEBUG_READ_USER_MINIDUMP_STREAM structure
@@ -90,20 +90,4 @@ The buffer used value.
 
 
 ## -remarks
-The DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM <a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a> operation reads a stream from a user-mode minidump target.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The DEBUG_REQUEST_READ_USER_MINIDUMP_STREAM <a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a> operation reads a stream from a user-mode minidump target.</p>

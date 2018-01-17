@@ -85,31 +85,6 @@ All miniversions created in a transaction go away when the transaction ends.  Af
 The <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a> routine returns a pointer to this structure. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-The TXN_PARAMETER_BLOCK structure is available on Windows Vista and later Windows operating systems. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h, Ntifs.h, or FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

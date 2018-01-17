@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4f10abc6-1c86-4401-9af7-26d6c30f6fe8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CLS_SCAN_CONTEXT, PPCLS_SCAN_CONTEXT, CLS_SCAN_CONTEXT, *PCLS_SCAN_CONTEXT, CLFS_SCAN_CONTEXT, *PCLFS_SCAN_CONTEXT
+ms.keywords: _CLS_SCAN_CONTEXT, CLS_SCAN_CONTEXT, *PCLS_SCAN_CONTEXT, PPCLS_SCAN_CONTEXT, *PCLFS_SCAN_CONTEXT, CLFS_SCAN_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: PPCLS_SCAN_CONTEXT, CLS_SCAN_CONTEXT, *PCLS_SCAN_CONTEXT
+req.typenames: CLS_SCAN_CONTEXT, *PCLS_SCAN_CONTEXT, PPCLS_SCAN_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -145,19 +145,3 @@ A pointer to an array of <a href="..\wdm\ns-wdm-_cls_container_information.md">C
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

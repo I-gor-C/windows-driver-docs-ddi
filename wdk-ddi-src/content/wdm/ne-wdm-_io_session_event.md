@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6bdc1c25-bac3-416e-af3d-66a125f0f036
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _IO_SESSION_EVENT, IO_SESSION_EVENT, *PIO_SESSION_EVENT
+ms.keywords: _IO_SESSION_EVENT, *PIO_SESSION_EVENT, IO_SESSION_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: IO_SESSION_EVENT, *PIO_SESSION_EVENT
+req.irql: PASSIVE_LEVEL
+req.typenames: *PIO_SESSION_EVENT, IO_SESSION_EVENT
 req.product: Windows 10 or later.
 ---
 
@@ -101,31 +101,6 @@ When the I/O manager calls the driver's <a href="..\wdm\nc-wdm-io_session_notifi
 
 A session event causes a transition from one session state to another. For more information about session state transitions, see <a href="..\wdm\ne-wdm-_io_session_state.md">IO_SESSION_STATE</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows 7 and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

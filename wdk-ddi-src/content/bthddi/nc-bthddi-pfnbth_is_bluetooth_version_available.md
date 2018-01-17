@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 10662237-18b4-4f37-a704-985b2db0d689
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
+ms.keywords: _KSM_PIN_PAIR, KSM_PIN_PAIR, *PKSM_PIN_PAIR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
+req.typenames: KSM_PIN_PAIR, *PKSM_PIN_PAIR
 ---
 
 # PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE callback
@@ -77,51 +77,4 @@ This parameter specifies the minor version number of Bluetooth that is requested
 
 ## -remarks
 Bluetooth profile drivers should call this function before performing any operations that are not
-    supported in all Bluetooth versions.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
+    supported in all Bluetooth versions.</p>

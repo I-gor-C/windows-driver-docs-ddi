@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 61F5C316-5214-45A6-B4BA-DEE6A224E811
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SRBEX_DATA_POWER, *PSRBEX_DATA_POWER, SRBEX_DATA_POWER
+ms.keywords: _SRBEX_DATA_POWER, SRBEX_DATA_POWER, *PSRBEX_DATA_POWER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSRBEX_DATA_POWER, SRBEX_DATA_POWER
+req.typenames: SRBEX_DATA_POWER, *PSRBEX_DATA_POWER
 req.product: Windows 10 or later.
 ---
 
@@ -92,31 +92,6 @@ An enumerator value of type <a href="..\storport\ne-storport-pstor_power_action.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h or Srb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

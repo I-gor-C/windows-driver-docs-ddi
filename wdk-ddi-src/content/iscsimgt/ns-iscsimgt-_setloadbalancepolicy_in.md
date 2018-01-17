@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: e1895fed-a006-45f6-a38a-1767202cbf4f
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetLoadBalancePolicy_IN, SetLoadBalancePolicy_IN, *PSetLoadBalancePolicy_IN
+ms.keywords: _SetLoadBalancePolicy_IN, *PSetLoadBalancePolicy_IN, SetLoadBalancePolicy_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SetLoadBalancePolicy_IN, *PSetLoadBalancePolicy_IN
+req.typenames: *PSetLoadBalancePolicy_IN, SetLoadBalancePolicy_IN
 ---
 
 # _SetLoadBalancePolicy_IN structure
@@ -62,21 +62,6 @@ A structure that contains the information that is required for setting the load 
 ## -remarks
 You must implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

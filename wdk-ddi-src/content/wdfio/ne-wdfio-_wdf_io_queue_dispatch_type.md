@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_queue_dispatch_type.htm
 old-project: wdf
 ms.assetid: 90f2f490-ee29-4e20-94b2-65a9bba3e831
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: _WDF_IO_QUEUE_DISPATCH_TYPE, WDF_IO_QUEUE_DISPATCH_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,40 +87,4 @@ Reserved for internal use only.
 
 
 ## -remarks
-For more information, see <a href="https://msdn.microsoft.com/3e91aa7c-bccf-4eeb-8b68-b1277a690f8c">Dispatching Methods for I/O Requests</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfio.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information, see <a href="https://msdn.microsoft.com/3e91aa7c-bccf-4eeb-8b68-b1277a690f8c">Dispatching Methods for I/O Requests</a>.</p>

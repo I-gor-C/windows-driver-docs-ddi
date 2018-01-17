@@ -76,31 +76,4 @@ Upon completion of its handling of the request, the minidriver passes the struct
 
 See information about relevant SRB codes in <a href="https://msdn.microsoft.com/library/windows/hardware/ff568295">Stream Class SRB Reference</a>.
 
-When the minidriver finishes its processing of the request, it enters the return status of the operation in <i>pSrb</i>-&gt;<b>Status</b>. The minidriver should enter STATUS_SUCCESS for normal successful processing. If the minidriver does not support that Command value, it should set <i>pSrb</i>-&gt;<b>Status</b> to STATUS_NOT_IMPLEMENTED. If there is a device hardware error that prevents the minidriver from completing the request, it should set <i>pSrb</i>-&gt;<b>Status</b> to STATUS_IO_DEVICE_ERROR. Other error codes the routine uses in specific circumstances are listed above with the specific Command code.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h (include Strmini.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+When the minidriver finishes its processing of the request, it enters the return status of the operation in <i>pSrb</i>-&gt;<b>Status</b>. The minidriver should enter STATUS_SUCCESS for normal successful processing. If the minidriver does not support that Command value, it should set <i>pSrb</i>-&gt;<b>Status</b> to STATUS_NOT_IMPLEMENTED. If there is a device hardware error that prevents the minidriver from completing the request, it should set <i>pSrb</i>-&gt;<b>Status</b> to STATUS_IO_DEVICE_ERROR. Other error codes the routine uses in specific circumstances are listed above with the specific Command code.</p>

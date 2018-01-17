@@ -81,31 +81,6 @@ typedef struct _PEP_DEVICE_POWER_STATE {
 This structure is used by the <a href="kernel.pep_dpm_device_power_state">PEP_DPM_DEVICE_POWER_STATE</a> notification. All four members of the structure contain input values that are supplied by PoFx. The PEP does not write to this structure.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

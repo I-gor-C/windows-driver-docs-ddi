@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 58af1872-23bf-44f2-9ef4-271f0ddef5d5
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetInitiatorNodeName_IN, SetInitiatorNodeName_IN, *PSetInitiatorNodeName_IN
+ms.keywords: _SetInitiatorNodeName_IN, *PSetInitiatorNodeName_IN, SetInitiatorNodeName_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SetInitiatorNodeName_IN, *PSetInitiatorNodeName_IN
+req.typenames: *PSetInitiatorNodeName_IN, SetInitiatorNodeName_IN
 ---
 
 # _SetInitiatorNodeName_IN structure
@@ -62,21 +62,6 @@ The new initiator name.
 ## -remarks
 It is optional that you implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

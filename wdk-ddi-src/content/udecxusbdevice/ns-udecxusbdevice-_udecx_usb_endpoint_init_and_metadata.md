@@ -70,31 +70,16 @@ The length of the endpoint descriptor.
 
 ### -field EndpointDescriptor
 
-Required. A buffer containing the endpoint descriptor. The descriptor is described in a <a href="..\usbspec\ns-usbspec-_usb_endpoint_descriptor.md">USB_ENDPOINT_DESCRIPTOR</a> structure.
+Required. A buffer containing the endpoint descriptor. The descriptor is described in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539317">USB_ENDPOINT_DESCRIPTOR</a> structure.
 
 
 ### -field SuperSpeedEndpointCompanionDescriptor
 
-Optional. A USB-defined SuperSpeed Endpoint Companion descriptor. For more information, see section 9.6.7 and Table 9-20 in the official USB 3.0 specification. The descriptor is described in a <a href="..\usbspec\ns-usbspec-_usb_superspeed_endpoint_companion_descriptor.md">USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</a> structure.
+Optional. A USB-defined SuperSpeed Endpoint Companion descriptor. For more information, see section 9.6.7 and Table 9-20 in the official USB 3.0 specification. The descriptor is described in a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406269">USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</a> structure.
 
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>UdecxUsbDevice.h (include Udecx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

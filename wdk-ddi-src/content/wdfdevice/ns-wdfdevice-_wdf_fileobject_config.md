@@ -7,8 +7,8 @@ old-location: wdf\wdf_fileobject_config.htm
 old-project: wdf
 ms.assetid: 6fefc35f-fbbd-4c5e-bb8f-25ad3b6cdb67
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _WDF_FILEOBJECT_CONFIG, WDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG
+ms.date: 1/11/2018
+ms.keywords: _WDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG, WDF_FILEOBJECT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: WDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG
+req.typenames: *PWDF_FILEOBJECT_CONFIG, WDF_FILEOBJECT_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -113,40 +113,4 @@ If your driver sets <b>AutoForwardCleanupClose</b> to <b>WdfTrue</b>, the driver
 
 If your driver sets <b>AutoForwardCleanupClose</b> to <b>WdfFalse</b>, the driver must <i>not</i> forward file creation requests to the local I/O target. You must follow this rule because the framework will <i>not</i> forward cleanup and close requests to the local target, whether or not your driver provides <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_cleanup.md">EvtFileCleanup</a> and <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_close.md">EvtFileClose</a> callback functions.
 
-If your driver sets <b>AutoForwardCleanupClose</b> to <b>WdfDefault</b>, the driver must follow the rule for <b>WdfTrue</b> if it is a filter driver. The driver must follow the rule for <b>WdfFalse</b> if it is a function driver.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfdevice.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+If your driver sets <b>AutoForwardCleanupClose</b> to <b>WdfDefault</b>, the driver must follow the rule for <b>WdfTrue</b> if it is a filter driver. The driver must follow the rule for <b>WdfFalse</b> if it is a function driver.</p>

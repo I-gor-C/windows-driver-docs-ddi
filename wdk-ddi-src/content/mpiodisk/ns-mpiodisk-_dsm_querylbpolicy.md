@@ -60,19 +60,3 @@ An instance of a DSM_Load_Balance_Policy structure that has information about th
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

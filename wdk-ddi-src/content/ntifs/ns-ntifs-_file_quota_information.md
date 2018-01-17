@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: f5b17648-cd6e-4a6d-a00e-b4dfdcbcf0ea
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_QUOTA_INFORMATION, FILE_QUOTA_INFORMATION, *PFILE_QUOTA_INFORMATION
+ms.keywords: _FILE_QUOTA_INFORMATION, *PFILE_QUOTA_INFORMATION, FILE_QUOTA_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: FILE_QUOTA_INFORMATION, *PFILE_QUOTA_INFORMATION
+req.typenames: *PFILE_QUOTA_INFORMATION, FILE_QUOTA_INFORMATION
 ---
 
 # _FILE_QUOTA_INFORMATION structure
@@ -106,21 +106,6 @@ On 32-bit platforms, this structure must be aligned on a LONG (4-byte) boundary.
 
 On 64-bit platforms, this structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on an 8-byte boundary. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

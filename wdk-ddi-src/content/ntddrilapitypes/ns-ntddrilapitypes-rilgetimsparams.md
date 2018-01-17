@@ -7,7 +7,7 @@ old-location: netvista\rilgetimsparams.htm
 old-project: netvista
 ms.assetid: 4e8f01af-9279-483a-90f9-d0391122ba5b
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILGETIMSPARAMS, *LPRILGETIMSPARAMS, RILGETIMSPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,19 +62,3 @@ typedef struct _RILGETIMSPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

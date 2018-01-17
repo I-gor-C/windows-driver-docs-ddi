@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Spbcxstubs.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
+req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -67,63 +67,6 @@ An <a href="buses.spbrequest_object_handle">SPBREQUEST</a> handle to the I/O req
 ## -remarks
 The returned SPBTARGET handle is guaranteed to remain valid until the corresponding I/O request is completed.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Spbcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Spbcxstubs.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

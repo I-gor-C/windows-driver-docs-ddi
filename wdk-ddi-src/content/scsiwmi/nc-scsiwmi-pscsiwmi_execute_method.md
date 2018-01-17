@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 67a82442-591e-4e52-aaaf-b3cdb68c483a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SCSISCAN_INFO, SCSISCAN_INFO, *PSCSISCAN_INFO
+ms.keywords: RxScavengeFobxsForNetRoot
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SCSISCAN_INFO, *PSCSISCAN_INFO
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -115,32 +115,6 @@ If the method generates output, the miniport driver should check the size of the
 
 The miniport driver executes the method and writes output, if any, to the buffer. Before returning from <b>HwScsiWmiExecuteMethod</b>, the miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> with an appropriate <i>SrbStatus</i> value and the number of bytes used in the output buffer.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsiwmi.h (include Scsiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

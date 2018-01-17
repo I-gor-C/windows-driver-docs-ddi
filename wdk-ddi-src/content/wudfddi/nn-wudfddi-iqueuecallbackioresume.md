@@ -7,7 +7,7 @@ old-location: wdf\iqueuecallbackioresume.htm
 old-project: wdf
 ms.assetid: 3f27f104-7a06-4f81-9605-2a47c7de7e01
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,19 +80,3 @@ The <a href="https://msdn.microsoft.com/d34f6e2c-4227-41bb-a1c0-f6206daa700b">On
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

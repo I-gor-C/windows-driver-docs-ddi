@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: ebc44350-3093-44ba-a2c9-73133fd18db7
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _HW_STREAM_DESCRIPTOR, HW_STREAM_DESCRIPTOR, *PHW_STREAM_DESCRIPTOR
+ms.keywords: _HW_STREAM_DESCRIPTOR, *PHW_STREAM_DESCRIPTOR, HW_STREAM_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HW_STREAM_DESCRIPTOR, *PHW_STREAM_DESCRIPTOR
+req.typenames: *PHW_STREAM_DESCRIPTOR, HW_STREAM_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -71,21 +71,6 @@ The minidriver returns this structure to the class driver in response to a <a hr
 
 The class driver expects HW_STREAM_DESCRIPTOR to be laid out in memory as an <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a> followed by an array of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures. The array begins at the address of the <b>StreamInfo</b> member. The HW_STREAM_HEADER's <b>NumberOfStreams</b> member indicates the number of entries in the array. The minidriver uses HW_STREAM_HEADER to describe those kernel streaming properties of the driver as a whole, while each HW_STREAM_INFORMATION structure describes each individual stream the device supports.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h (include Strmini.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

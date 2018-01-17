@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 0BD6BA91-7F46-482B-B808-DEB8A23A0B84
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_OPM_INTERFACE_3, DXGK_OPM_INTERFACE_3, *PDXGK_OPM_INTERFACE_3
+ms.keywords: _DXGK_OPM_INTERFACE_3, *PDXGK_OPM_INTERFACE_3, DXGK_OPM_INTERFACE_3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: DXGK_OPM_INTERFACE_3, *PDXGK_OPM_INTERFACE_3
+req.typenames: *PDXGK_OPM_INTERFACE_3, DXGK_OPM_INTERFACE_3
 ---
 
 # _DXGK_OPM_INTERFACE_3 structure
@@ -156,19 +156,3 @@ A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-</table>

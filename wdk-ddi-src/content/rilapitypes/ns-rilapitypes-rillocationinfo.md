@@ -7,8 +7,8 @@ old-location: netvista\rillocationinfo_2.htm
 old-project: netvista
 ms.assetid: 057f8cb0-0473-470e-b993-457de90d98fd
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILLOCATIONINFO, RILLOCATIONINFO, *LPRILLOCATIONINFO
+ms.date: 1/11/2018
+ms.keywords: RILLOCATIONINFO, *LPRILLOCATIONINFO, RILLOCATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILLOCATIONINFO, *LPRILLOCATIONINFO
+req.typenames: *LPRILLOCATIONINFO, RILLOCATIONINFO
 req.product: Windows 10 or later.
 ---
 
@@ -83,19 +83,3 @@ typedef struct _RILLOCATIONINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

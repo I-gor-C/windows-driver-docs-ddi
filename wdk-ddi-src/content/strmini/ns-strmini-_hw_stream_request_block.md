@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: e2a19bb1-631d-4160-9980-f3cbeb0b085a
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _HW_STREAM_REQUEST_BLOCK, *PHW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK
+ms.keywords: _HW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK, *PHW_STREAM_REQUEST_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PHW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK
+req.typenames: HW_STREAM_REQUEST_BLOCK, *PHW_STREAM_REQUEST_BLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -130,7 +130,7 @@ Points to an uninitialized buffer the class driver allocates for the minidriver 
 
 ### -field DataBufferArray
 
-Pointer to an array of <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structures. The number of entries in this array is specified in <b>NumberOfBuffers</b>. Each KSSTREAM_HEADER describes one block of data.
+Pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a> structures. The number of entries in this array is specified in <b>NumberOfBuffers</b>. Each KSSTREAM_HEADER describes one block of data.
 
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568200">SRB_READ_DATA</a>
 
@@ -178,7 +178,7 @@ This member is used when the command code is <a href="https://msdn.microsoft.com
 
 ### -field OpenFormat
 
-Pointer to the <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> structure that specifies the format.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a> structure that specifies the format.
 
 This member is used when the command code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff568191">SRB_OPEN_STREAM</a>
 
@@ -242,7 +242,7 @@ This member is used when the command code is <a href="https://msdn.microsoft.com
 
 ### -field NumberOfBuffers
 
-If Command is either <a href="https://msdn.microsoft.com/library/windows/hardware/ff568200">SRB_READ_DATA</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff568220">SRB_WRITE_DATA</a>, then this specifies the number of entries in the array of <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structures that begins at the address pointed to by <b>CommandData.DataBufferArray</b>. Otherwise this parameter is unused.
+If Command is either <a href="https://msdn.microsoft.com/library/windows/hardware/ff568200">SRB_READ_DATA</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff568220">SRB_WRITE_DATA</a>, then this specifies the number of entries in the array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a> structures that begins at the address pointed to by <b>CommandData.DataBufferArray</b>. Otherwise this parameter is unused.
 
 
 ### -field TimeoutCounter
@@ -371,20 +371,4 @@ The stream class driver passes pointers to HW_STREAM_REQUEST_BLOCK structures to
 
 The minidriver owns this stream request block until the request times out or it completes the request. The minidriver signals to the class driver that it has completed the request by calling <a href="..\strmini\nf-strmini-streamclassdevicenotification.md">StreamClassDeviceNotification</a>(DeviceRequestComplete, pSrb-&gt;HwDeviceExtension, pSRB) for device-specific requests, or calling <a href="..\strmini\nf-strmini-streamclassstreamnotification.md">StreamClassStreamNotification</a>(StreamRequestComplete, pSrb-&gt;StreamObject, pSrb) for stream-specific requests. (The minidriver can also complete a request by calling <a href="..\strmini\nf-strmini-streamclasscompleterequestandmarkqueueready.md">StreamClassCompleteRequestAndMarkQueueReady</a>(pSrb). See that routine for details.)
 
-If the class driver times out the request, it will call the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568473">StrMiniRequestTimeout</a> routine, which has the responsibility of terminating processing of the request. If the minidriver queues a request for later processing, it should set the <b>TimeoutCounter</b> member to zero, which will prevent the class driver from timing out the request. Once the minidriver is ready to resume processing the request, it should reset the <b>TimeoutCounter</b> member to the value of <b>TimeoutOriginal</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h (include Strmini.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+If the class driver times out the request, it will call the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568473">StrMiniRequestTimeout</a> routine, which has the responsibility of terminating processing of the request. If the minidriver queues a request for later processing, it should set the <b>TimeoutCounter</b> member to zero, which will prevent the class driver from timing out the request. Once the minidriver is ready to resume processing the request, it should reset the <b>TimeoutCounter</b> member to the value of <b>TimeoutOriginal</b>.</p>

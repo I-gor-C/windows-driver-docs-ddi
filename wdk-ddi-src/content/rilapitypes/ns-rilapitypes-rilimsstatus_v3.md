@@ -7,8 +7,8 @@ old-location: netvista\rilimsstatus_v3_2.htm
 old-project: netvista
 ms.assetid: 7ae2e97d-d055-412f-a219-258780319797
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILIMSSTATUS_V3, RILIMSSTATUS, *LPRILIMSSTATUS, *LPRILIMSSTATUS_V3, RILIMSSTATUS_V3
+ms.date: 1/11/2018
+ms.keywords: RILIMSSTATUS_V3, RILIMSSTATUS, RILIMSSTATUS_V3, *LPRILIMSSTATUS, *LPRILIMSSTATUS_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILIMSSTATUS, *LPRILIMSSTATUS, *LPRILIMSSTATUS_V3, RILIMSSTATUS_V3
+req.typenames: RILIMSSTATUS, RILIMSSTATUS_V3, *LPRILIMSSTATUS, *LPRILIMSSTATUS_V3
 req.product: Windows 10 or later.
 ---
 
@@ -87,19 +87,3 @@ typedef struct _RILIMSSTATUS_V3 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

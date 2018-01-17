@@ -7,8 +7,8 @@ old-location: netvista\rildeletemsgparams.htm
 old-project: netvista
 ms.assetid: e87104d2-96e4-4840-8609-8a75247a039a
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILDELETEMSGPARAMS, RILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS, RILDELETEMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILDELETEMSGPARAMS, *LPRILDELETEMSGPARAMS
+req.typenames: *LPRILDELETEMSGPARAMS, RILDELETEMSGPARAMS
 ---
 
 # RILDELETEMSGPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILDELETEMSGPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

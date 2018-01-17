@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: e1e37d2c-5688-4528-9cc5-62e70a7561fe
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_FC4Statistics, HBA_FC4STATISTICS, *PHBA_FC4STATISTICS
+ms.keywords: HBA_FC4Statistics, *PHBA_FC4STATISTICS, HBA_FC4STATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HBA_FC4STATISTICS, *PHBA_FC4STATISTICS
+req.typenames: *PHBA_FC4STATISTICS, HBA_FC4STATISTICS
 ---
 
 # HBA_FC4Statistics structure
@@ -85,21 +85,6 @@ Contains the number of megabytes of output data that a port has transmitted.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

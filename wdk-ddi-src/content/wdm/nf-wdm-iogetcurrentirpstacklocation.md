@@ -57,7 +57,7 @@ PIO_STACK_LOCATION IoGetCurrentIrpStackLocation(
 
 ### -param Irp [in]
 
-A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>.
+A pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a>.
 
 
 ## -returns
@@ -69,52 +69,6 @@ Every driver must call <b>IoGetCurrentIrpStackLocation</b> with each IRP it is s
 
 If a driver is passing the same parameters that it received to the next-lower driver, it should call <a href="..\wdm\nf-wdm-iocopycurrentirpstacklocationtonext.md">IoCopyCurrentIrpStackLocationToNext</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550355">IoSkipCurrentIrpStackLocation</a> instead of getting a pointer to the next-lower stack location and copying the parameters manually.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -131,7 +85,7 @@ Any level
 <a href="..\wdm\nf-wdm-iosetnextirpstacklocation.md">IoSetNextIrpStackLocation</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 </dl>
  

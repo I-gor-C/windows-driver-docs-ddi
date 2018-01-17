@@ -7,7 +7,7 @@ old-location: wdf\iwdfusbrequestcompletionparams.htm
 old-project: wdf
 ms.assetid: 50a0c8c9-06c6-48c9-a799-0949cf415f6e
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFUsbTargetPipe2, IWDFUsbTargetPipe2::ConfigureContinuousReader, ConfigureContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -117,61 +117,3 @@ The <a href="https://msdn.microsoft.com/c6824215-0c16-471e-aea9-1b5cbeb2286b">Ge
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.5
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfusb.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>WUDFx.dll</dt>
-</dl>
-</td>
-</tr>
-</table>

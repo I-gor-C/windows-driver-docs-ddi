@@ -39,7 +39,7 @@ req.typenames: *PWHEA_RAW_DATA_FORMAT, WHEA_RAW_DATA_FORMAT
 
 
 ## -description
-For the disk represented by <i>DeviceObject</i>, the <b>IoSetPartitionInformationEx</b> routine initializes a partition table entry with the information specified in the <a href="..\ntdddisk\ns-ntdddisk-_set_partition_information_ex.md">SET_PARTITION_INFORMATION_EX</a> structure.
+For the disk represented by <i>DeviceObject</i>, the <b>IoSetPartitionInformationEx</b> routine initializes a partition table entry with the information specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566194">SET_PARTITION_INFORMATION_EX</a> structure.
 
 
 
@@ -68,7 +68,7 @@ Specifies the partition number on the device whose partition type is to be set.
 
 ### -param PartitionInfo [in]
 
-A structure whose <i>PartitionType</i> member specifies the type for the partition. For the currently defined <i>PartitionType</i> values <a href="..\ntdddisk\ns-ntdddisk-_partition_information.md">PARTITION_INFORMATION</a>.
+A structure whose <i>PartitionType</i> member specifies the type for the partition. For the currently defined <i>PartitionType</i> values <a href="https://msdn.microsoft.com/library/windows/hardware/ff563751">PARTITION_INFORMATION</a>.
 
 
 ## -returns
@@ -76,13 +76,13 @@ If <b>IoSetPartitionInformationEx</b> returns STATUS_SUCCESS, the disk driver up
 
 
 ## -remarks
-<b>IoSetPartitionInformationEx</b> must only be used by disk drivers. Other drivers should use the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_set_partition_info_ex.md">IOCTL_DISK_SET_PARTITION_INFO_EX</a> disk I/O request instead.
+<b>IoSetPartitionInformationEx</b> must only be used by disk drivers. Other drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560417">IOCTL_DISK_SET_PARTITION_INFO_EX</a> disk I/O request instead.
 
 This routine is called when a disk device driver is requested to set partition information in a partition table entry by an IRP_MJ_DEVICE_CONTROL request. This request is generally issued by the format utility, which performs I/O control functions on the partition. The driver passes a pointer to the device object representing the physical disk and the number of the partition associated with the device object that the format utility has open. Since the HAL routines that underlie <b>IoSetPartitionInformationEx</b> were developed before support for dynamic partitioning was implemented, they do not distinguish between the <i>partitionordinal</i> (that is the order of a partition on a disk) and the <i>partition number</i> (the partition number assigned to a partition in order to identify it to the system). Drivers must call <b>IoSetPartitionInformationEx</b> using the <i>ordinal</i> number of the partition and not the actual partition number.
 
 If the partition is a Master Boot Record (MBR) type partition, <b>IoSetPartitionInformationEx</b> is limited to setting the partition style, and the partition style, which is represented as an unsigned character. See SET_PARTITION_INFORMATION_MBR for further information about these values.
 
-If the partition is a GUID Partition Table (GPT) partition, <b>IoSetPartitionInformationEx</b> sets the following values: the partition style, the partition type, represented by a GUID instead of an integer as was the case with MBR partitions; a partition ID, also represented by a GUID; a set of attributes (see the Extensible Firmware Interface for a description of these attributes); and a Unicode name for the partition. See <a href="..\ntdddisk\ns-ntdddisk-_partition_information_gpt.md">SET_PARTITION_INFORMATION_GPT</a> for further information about these values.
+If the partition is a GUID Partition Table (GPT) partition, <b>IoSetPartitionInformationEx</b> sets the following values: the partition style, the partition type, represented by a GUID instead of an integer as was the case with MBR partitions; a partition ID, also represented by a GUID; a set of attributes (see the Extensible Firmware Interface for a description of these attributes); and a Unicode name for the partition. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff566196">SET_PARTITION_INFORMATION_GPT</a> for further information about these values.
 
 This routine is synchronous and must be called by the disk driver's Dispatch routine or by a driver thread. Thus, all user and file system threads must be prepared to enter a wait state when issuing the device control request to set the partition type for the device.
 
@@ -90,73 +90,6 @@ This routine operates under the assumption that the partition number passed in b
 
 This routine must be called at IRQL = PASSIVE_LEVEL because it uses a kernel event object to synchronize I/O completion on the device. The event cannot be set to the Signaled state without queuing and executing the I/O system's special kernel APC routine for I/O completion.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL (See Remarks section)
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454220">HwStorPortProhibitedDDIs</a>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -170,10 +103,10 @@ DDI compliance rules
 <a href="..\ntddk\nf-ntddk-iosetpartitioninformation.md">IoSetPartitionInformation</a>
 </dt>
 <dt>
-<a href="..\ntdddisk\ns-ntdddisk-_set_partition_information.md">SET_PARTITION_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566192">SET_PARTITION_INFORMATION</a>
 </dt>
 <dt>
-<a href="..\ntdddisk\ns-ntdddisk-_set_partition_information_ex.md">SET_PARTITION_INFORMATION_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566194">SET_PARTITION_INFORMATION_EX</a>
 </dt>
 </dl>
  

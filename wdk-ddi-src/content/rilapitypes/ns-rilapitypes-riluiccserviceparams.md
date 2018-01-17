@@ -7,7 +7,7 @@ old-location: netvista\riluiccserviceparams_2.htm
 old-project: netvista
 ms.assetid: 56fba38d-6c5f-4b75-98b6-213a42f47bbb
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCSERVICEPARAMS, *LPRILUICCSERVICEPARAMS, RILUICCSERVICEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,19 +71,3 @@ typedef struct _RILUICCSERVICEPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

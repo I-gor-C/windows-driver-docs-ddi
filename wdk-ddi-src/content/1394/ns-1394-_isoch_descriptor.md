@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 4f508af6-942b-4d48-8874-4b6d9918f01f
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR
+ms.keywords: _ISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR
+req.typenames: ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR
 ---
 
 # _ISOCH_DESCRIPTOR structure
@@ -276,21 +276,6 @@ If the driver sets the DESCRIPTOR_HEADER_SCATTER_GATHER flag, the host controlle
 
 The DESCRIPTOR_HEADER_SCATTER_GATHER flag is not supported on Windows 98/Me. It is supported on Windows 2000 and later operating systems.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

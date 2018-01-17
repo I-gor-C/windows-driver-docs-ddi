@@ -97,19 +97,3 @@ A value that indicates Link Power Management (LPM) flags for the controller.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxroothub.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

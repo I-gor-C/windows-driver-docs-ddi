@@ -7,7 +7,7 @@ old-location: netvista\rilsmsreadystatus_2.htm
 old-project: netvista
 ms.assetid: a7039749-3f7d-4eca-919c-db27f9e62bf2
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSMSREADYSTATUS, *LPRILSMSREADYSTATUS, RILSMSREADYSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,19 +71,3 @@ typedef struct _RILSMSREADYSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,8 +7,8 @@ old-location: netvista\rilmsginstatus.htm
 old-project: netvista
 ms.assetid: 383ed544-c8c8-42a0-a7de-57f0f4072611
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILMSGINSTATUS, RILMSGINSTATUS, *LPRILMSGINSTATUS
+ms.date: 1/11/2018
+ms.keywords: RILMSGINSTATUS, *LPRILMSGINSTATUS, RILMSGINSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILMSGINSTATUS, *LPRILMSGINSTATUS
+req.typenames: *LPRILMSGINSTATUS, RILMSGINSTATUS
 ---
 
 # RILMSGINSTATUS structure
@@ -102,19 +102,3 @@ typedef struct _RILMSGINSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

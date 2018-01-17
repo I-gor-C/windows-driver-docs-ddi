@@ -75,31 +75,6 @@ A ULONG64 variable to which the GPIO controller driver writes a 64-bit mask to i
 The <i>QueryActiveParameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439395">CLIENT_QueryActiveInterrupts</a> event callback function is a pointer to a caller-allocated <b>GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS</b> structure. This function queries only GPIO pins that are configured as interrupt inputs. All other GPIO pins in the specified bank are represented as zeros in the <b>EnabledMask</b> and <b>ActiveMask</b> members of the structure.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

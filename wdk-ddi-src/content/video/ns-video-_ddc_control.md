@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 993c4913-1613-4ffb-86dd-fd8846139a46
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DDC_CONTROL, *PDDC_CONTROL, DDC_CONTROL
+ms.keywords: _DDC_CONTROL, DDC_CONTROL, *PDDC_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: *PDDC_CONTROL, DDC_CONTROL
+req.typenames: DDC_CONTROL, *PDDC_CONTROL
 req.product: Windows 10 or later.
 ---
 
@@ -74,21 +74,6 @@ Specifies the particular EDID segment. Currently, this member is meaningful only
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

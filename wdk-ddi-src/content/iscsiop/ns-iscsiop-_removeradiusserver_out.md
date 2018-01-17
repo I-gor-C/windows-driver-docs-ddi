@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: da5be900-a362-4d74-9ac7-65b96f0348ce
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _RemoveRADIUSServer_OUT, RemoveRADIUSServer_OUT, *PRemoveRADIUSServer_OUT
+ms.keywords: _RemoveRADIUSServer_OUT, *PRemoveRADIUSServer_OUT, RemoveRADIUSServer_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RemoveRADIUSServer_OUT, *PRemoveRADIUSServer_OUT
+req.typenames: *PRemoveRADIUSServer_OUT, RemoveRADIUSServer_OUT
 ---
 
 # _RemoveRADIUSServer_OUT structure
@@ -62,21 +62,6 @@ On output from <b>RemoveRADIUSServer</b>, the status of the operation. For a lis
 ## -remarks
 It is optional that you implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

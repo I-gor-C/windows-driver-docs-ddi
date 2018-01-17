@@ -60,19 +60,3 @@ A 64-bitfield that specifies the path that is associated with the device.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

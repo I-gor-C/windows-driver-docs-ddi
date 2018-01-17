@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: ea1d6f35-1dc5-4c65-9158-7f85464c5cd7
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ScsiInquiry_OUT, *PScsiInquiry_OUT, ScsiInquiry_OUT
+ms.keywords: _ScsiInquiry_OUT, ScsiInquiry_OUT, *PScsiInquiry_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PScsiInquiry_OUT, ScsiInquiry_OUT
+req.typenames: ScsiInquiry_OUT, *PScsiInquiry_OUT
 ---
 
 # _ScsiInquiry_OUT structure
@@ -92,21 +92,6 @@ Contains the SCSI sense data that results from the SCSI inquiry command.
 ## -remarks
 The WMI tool suite generates a declaration of the ScsiInquiry_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

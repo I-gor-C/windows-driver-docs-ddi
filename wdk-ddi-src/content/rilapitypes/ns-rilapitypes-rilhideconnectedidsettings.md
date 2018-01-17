@@ -7,7 +7,7 @@ old-location: netvista\rilhideconnectedidsettings_2.htm
 old-project: netvista
 ms.assetid: ee5111c6-3353-40a9-9b2b-c3d2a595a528
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILHIDECONNECTEDIDSETTINGS, *LPRILHIDECONNECTEDIDSETTINGS, RILHIDECONNECTEDIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,19 +75,3 @@ typedef struct _RILHIDECONNECTEDIDSETTINGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

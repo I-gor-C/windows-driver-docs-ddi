@@ -79,20 +79,4 @@ As. The per-pixel source alpha.
 
 Ap. The planar alpha value.
 
-Ae. The palette-entry alpha value, or 1.0.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+Ae. The palette-entry alpha value, or 1.0.</p>

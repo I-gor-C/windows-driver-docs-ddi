@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: e2aba049-b51f-49b9-b0bb-c98c318dea86
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_CHILD_STATUS, DXGK_CHILD_STATUS, *PDXGK_CHILD_STATUS
+ms.keywords: _DXGK_CHILD_STATUS, *PDXGK_CHILD_STATUS, DXGK_CHILD_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: DXGK_CHILD_STATUS, *PDXGK_CHILD_STATUS
+req.typenames: *PDXGK_CHILD_STATUS, DXGK_CHILD_STATUS
 ---
 
 # _DXGK_CHILD_STATUS structure
@@ -126,31 +126,6 @@ For more info, see <a href="https://msdn.microsoft.com/1645E14A-EC4A-4EB8-9AFA-6
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

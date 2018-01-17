@@ -105,32 +105,6 @@ The following example shows how to find all failure analysis entries that have c
 Entries that have tags 0xA0000001, 0xA0000002, ... 0xAFFFFFF satisfy the condition. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Extsfns.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

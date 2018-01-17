@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1bb7c529-df26-4173-a098-6a19adf6b569
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _GetFcpPersistentBinding_OUT, GetFcpPersistentBinding_OUT, *PGetFcpPersistentBinding_OUT
+ms.keywords: _GetFcpPersistentBinding_OUT, *PGetFcpPersistentBinding_OUT, GetFcpPersistentBinding_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: GetFcpPersistentBinding_OUT, *PGetFcpPersistentBinding_OUT
+req.typenames: *PGetFcpPersistentBinding_OUT, GetFcpPersistentBinding_OUT
 ---
 
 # _GetFcpPersistentBinding_OUT structure
@@ -82,21 +82,6 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553966">GetFc
 
 The WMI tool suite generates a declaration of the GetFcpPersistentBinding_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -61,19 +61,3 @@ The size of the <b>UFX_ENDPOINT_CALLBACKS</b>         structure.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxclient.h</dt>
-</dl>
-</td>
-</tr>
-</table>

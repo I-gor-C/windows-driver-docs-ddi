@@ -7,7 +7,7 @@ old-location: netvista\rilgeolocationtypemask.htm
 old-project: netvista
 ms.assetid: 8d1f6570-adc1-4389-b20b-7c7e05f1c9bf
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILGEOLOCATIONTYPEMASK, RILGEOLOCATIONTYPEMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,19 +66,3 @@ typedef enum _RILGEOLOCATIONTYPEMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

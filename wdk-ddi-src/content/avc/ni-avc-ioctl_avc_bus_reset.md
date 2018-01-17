@@ -92,21 +92,6 @@ For more information, see [XREF-LINK:NTSTATUS Values].
 Must be called at IRQL = PASSIVE_LEVEL
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

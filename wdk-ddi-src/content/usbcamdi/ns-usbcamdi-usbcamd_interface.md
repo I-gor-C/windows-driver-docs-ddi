@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 864dbe8d-2771-4532-8a50-ed1bf5286658
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: USBCAMD_INTERFACE, *PUSBCAMD_INTERFACE, USBCAMD_INTERFACE
+ms.keywords: USBCAMD_INTERFACE, USBCAMD_INTERFACE, *PUSBCAMD_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBCAMD_INTERFACE, USBCAMD_INTERFACE
+req.typenames: USBCAMD_INTERFACE, *PUSBCAMD_INTERFACE
 req.product: Windows 10 or later.
 ---
 
@@ -96,21 +96,6 @@ The camera minidriver may obtain the USBCAMD_INTERFACE entry points at any point
 
 <b>USBCAMD_INTERFACE</b> is not supported in the original USBCAMD.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

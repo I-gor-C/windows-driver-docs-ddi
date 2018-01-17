@@ -7,7 +7,7 @@ old-location: netvista\rilalphaidentifidertype.htm
 old-project: netvista
 ms.assetid: e7be6f28-b6f0-4b95-9145-abbb98e7f5a5
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILALPHAIDENTIFIDERTYPE, RILALPHAIDENTIFIDERTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,19 +66,3 @@ typedef enum _RILALPHAIDENTIFIDERTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

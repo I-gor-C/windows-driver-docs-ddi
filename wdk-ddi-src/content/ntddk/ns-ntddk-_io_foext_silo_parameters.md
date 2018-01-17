@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: EC7C59D0-96AE-400D-9502-D6DBFD9918DC
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _IO_FOEXT_SILO_PARAMETERS, IO_FOEXT_SILO_PARAMETERS, *PIO_FOEXT_SILO_PARAMETERS
+ms.keywords: _IO_FOEXT_SILO_PARAMETERS, *PIO_FOEXT_SILO_PARAMETERS, IO_FOEXT_SILO_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: IO_FOEXT_SILO_PARAMETERS, *PIO_FOEXT_SILO_PARAMETERS
+req.typenames: *PIO_FOEXT_SILO_PARAMETERS, IO_FOEXT_SILO_PARAMETERS
 ---
 
 # _IO_FOEXT_SILO_PARAMETERS structure
@@ -66,39 +66,3 @@ The container context.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

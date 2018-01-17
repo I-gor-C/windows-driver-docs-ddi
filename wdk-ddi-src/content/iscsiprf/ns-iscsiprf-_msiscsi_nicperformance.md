@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 921e6e44-adc2-4257-b11e-941121f5bfd7
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSiSCSI_NICPerformance, *PMSiSCSI_NICPerformance, MSiSCSI_NICPerformance
+ms.keywords: _MSiSCSI_NICPerformance, MSiSCSI_NICPerformance, *PMSiSCSI_NICPerformance
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMSiSCSI_NICPerformance, MSiSCSI_NICPerformance
+req.typenames: MSiSCSI_NICPerformance, *PMSiSCSI_NICPerformance
 ---
 
 # _MSiSCSI_NICPerformance structure
@@ -80,21 +80,6 @@ The number of PDUs that are received through the Ethernet port.
 ## -remarks
 It is optional that you implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiprf.h (include Iscsiprf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: bdcd6f76-9a45-4687-b3ab-ece3e9419c44
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetBindingSupport_IN, *PSetBindingSupport_IN, SetBindingSupport_IN
+ms.keywords: _SetBindingSupport_IN, SetBindingSupport_IN, *PSetBindingSupport_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetBindingSupport_IN, SetBindingSupport_IN
+req.typenames: SetBindingSupport_IN, *PSetBindingSupport_IN
 ---
 
 # _SetBindingSupport_IN structure
@@ -68,21 +68,6 @@ Contains a bitmap that indicates the ability of an HBA and its miniport driver t
 ## -remarks
 The WMI tool suite generates a declaration of the SetBindingSupport_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

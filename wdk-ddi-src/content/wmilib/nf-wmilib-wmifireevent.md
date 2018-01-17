@@ -61,7 +61,7 @@ NTSTATUS WmiFireEvent(
 
 ### -param DeviceObject [in]
 
-A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>. 
+A pointer to the driver's <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>. 
 
 
 ### -param Guid [in]
@@ -93,67 +93,10 @@ A driver calls <b>WmiFireEvent</b> to send an event to WMI for delivery to all d
 
 The driver sends an event only if it has been previously enabled by the driver's <a href="..\wmilib\nc-wmilib-wmi_function_control_callback.md">DpWmiFunctionControl</a> routine, which WMI calls to process an <b>IRP_MN_ENABLE_EVENT</b> request.
 
-The driver writes any data associated with the event to the buffer at <i>EventData</i>. WMI fills in a <a href="..\wmistr\ns-wmistr-tagwnode_single_instance.md">WNODE_SINGLE_INSTANCE</a> structure with the data and calls <a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWmiWriteEvent</a> to deliver the event.
+The driver writes any data associated with the event to the buffer at <i>EventData</i>. WMI fills in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a> structure with the data and calls <a href="..\wdm\nf-wdm-iowmiwriteevent.md">IoWmiWriteEvent</a> to deliver the event.
 
 For more information about event tracing, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566350">WMI Event Tracing</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wmilib.h (include Wmilib.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wmilib.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

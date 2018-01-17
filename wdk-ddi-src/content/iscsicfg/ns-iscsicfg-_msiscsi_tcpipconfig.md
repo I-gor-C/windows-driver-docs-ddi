@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1f33d262-0488-46cb-a762-1f3e24cdd219
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig, *PMSiSCSI_TCPIPConfig
+ms.keywords: _MSiSCSI_TCPIPConfig, *PMSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MSiSCSI_TCPIPConfig, *PMSiSCSI_TCPIPConfig
+req.typenames: *PMSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig
 ---
 
 # _MSiSCSI_TCPIPConfig structure
@@ -110,21 +110,6 @@ A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> st
 ## -remarks
 The WMI tool suite automatically generates a declaration of the MSiSCSI_TCPIPConfig structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563151">MSiSCSI_TCPIPConfig WMI Class</a> in <i>Config.mof</i>.You must implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsicfg.h (include Iscsicfg.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

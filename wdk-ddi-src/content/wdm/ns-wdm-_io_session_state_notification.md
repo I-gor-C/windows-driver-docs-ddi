@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 19ff9c3a-d416-4468-b5a5-e2e6e896802a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _IO_SESSION_STATE_NOTIFICATION, *PIO_SESSION_STATE_NOTIFICATION, IO_SESSION_STATE_NOTIFICATION
+ms.keywords: _IO_SESSION_STATE_NOTIFICATION, IO_SESSION_STATE_NOTIFICATION, *PIO_SESSION_STATE_NOTIFICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PIO_SESSION_STATE_NOTIFICATION, IO_SESSION_STATE_NOTIFICATION
+req.typenames: IO_SESSION_STATE_NOTIFICATION, *PIO_SESSION_STATE_NOTIFICATION
 req.product: Windows 10 or later.
 ---
 
@@ -71,7 +71,7 @@ No flags are currently defined for this member. Set to zero.
 
 ### -field IoObject
 
-A pointer to an I/O object owned by the driver. This member can point to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>, <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>, or <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure. The I/O object must remain valid for the lifetime of the registration. Before you delete a registered device object, unload a registered driver, or close a registered file object, call the <a href="..\wdm\nf-wdm-iounregistercontainernotification.md">IoUnregisterContainerNotification</a> routine to cancel the registration. A driver can maintain simultaneous registrations for more than one I/O object, but it cannot create more than one active registration for the same I/O object. 
+A pointer to an I/O object owned by the driver. This member can point to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>, <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>, or <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure. The I/O object must remain valid for the lifetime of the registration. Before you delete a registered device object, unload a registered driver, or close a registered file object, call the <a href="..\wdm\nf-wdm-iounregistercontainernotification.md">IoUnregisterContainerNotification</a> routine to cancel the registration. A driver can maintain simultaneous registrations for more than one I/O object, but it cannot create more than one active registration for the same I/O object. 
 
 
 ### -field EventMask
@@ -192,35 +192,10 @@ A per-session device object represents a device that can be accessed only by a p
 To determine whether a device object is a per-session device object, a driver can call the <a href="..\wdm\nf-wdm-iogetdevicepropertydata.md">IoGetDevicePropertyData</a> routine to query the <a href="https://msdn.microsoft.com/library/windows/hardware/ff542651">DEVPKEY_Device_SessionId</a> property key in the property store of the device object. If the <b>DEVPKEY_Device_SessionId</b> property exists and the value of the property is set to a nonzero <a href="http://go.microsoft.com/fwlink/p/?linkid=155045">Terminal Services</a> session identifier, the device object is a per-session device object. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542651">DEVPKEY_Device_SessionId</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows 7 and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542651">DEVPKEY_Device_SessionId</a>

@@ -283,7 +283,7 @@ If <b>ConfigResidDiffHost</b> is 1 and <b>ConfigSpatialResid8</b> is 1, the host
 ### -field Config4GroupedCoefs
 
 
-            If the value is 1, transform coefficients for off-host IDCT will be sent using the <a href="..\dxva\ns-dxva-_dxva_tcoef4group.md">DXVA_TCoef4Group</a> structure. If the value is 0, the <a href="..\dxva\ns-dxva-_dxva_tcoefsingle.md">DXVA_TCoefSingle</a> structure is used. The value must be 0 if <b>ConfigResidDiffAccelerator</b> is 0 or if <b>ConfigHostInverseScan</b> is 1.
+            If the value is 1, transform coefficients for off-host IDCT will be sent using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564053">DXVA_TCoef4Group</a> structure. If the value is 0, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564060">DXVA_TCoefSingle</a> structure is used. The value must be 0 if <b>ConfigResidDiffAccelerator</b> is 0 or if <b>ConfigHostInverseScan</b> is 1.
           
 
 
@@ -304,48 +304,13 @@ If <b>ConfigResidDiffHost</b> is 1 and <b>ConfigSpatialResid8</b> is 1, the host
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\dxva\ns-dxva-_dxva_tcoef4group.md">DXVA_TCoef4Group</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564053">DXVA_TCoef4Group</a>
 </dt>
 <dt>
-<a href="..\dxva\ns-dxva-_dxva_tcoefsingle.md">DXVA_TCoefSingle</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564060">DXVA_TCoefSingle</a>
 </dt>
 <dt>
 <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_video_decoder_begin_frame_crypto_session.md">D3DWDDM2_0DDI_VIDEO_DECODER_BEGIN_FRAME_CRYPTO_SESSION</a>

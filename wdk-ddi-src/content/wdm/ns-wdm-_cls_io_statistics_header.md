@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ac0da755-ea2f-4b68-947c-c314d114f273
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CLS_IO_STATISTICS_HEADER, *PCLS_IO_STATISTICS_HEADER, CLS_IO_STATISTICS_HEADER, PPCLS_IO_STATISTICS_HEADER, *PCLFS_IO_STATISTICS_HEADER, CLFS_IO_STATISTICS_HEADER
+ms.keywords: _CLS_IO_STATISTICS_HEADER, *PCLS_IO_STATISTICS_HEADER, PPCLS_IO_STATISTICS_HEADER, CLS_IO_STATISTICS_HEADER, *PCLFS_IO_STATISTICS_HEADER, CLFS_IO_STATISTICS_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PCLS_IO_STATISTICS_HEADER, CLS_IO_STATISTICS_HEADER, PPCLS_IO_STATISTICS_HEADER
+req.typenames: *PCLS_IO_STATISTICS_HEADER, PPCLS_IO_STATISTICS_HEADER, CLS_IO_STATISTICS_HEADER
 req.product: Windows 10 or later.
 ---
 
@@ -86,21 +86,6 @@ The offset, in bytes, from the beginning of the <b>CLFS_IO_STATISTICS</b> struct
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -93,21 +93,6 @@ Pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardw
 All data will be in big-endian format.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

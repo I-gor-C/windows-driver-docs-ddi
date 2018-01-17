@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 68461243-ddf4-4883-84d2-4c105f1634b2
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _FILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
+ms.keywords: EXPAND_STACK_CALLOUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= HIGH_LEVEL (See Remarks section)
-req.typenames: FILTER_INITIALIZATION_DATA, *PFILTER_INITIALIZATION_DATA
+req.typenames: *PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA
 ---
 
 # PSHED_PI_FINALIZE_ERROR_RECORD callback
@@ -107,53 +107,6 @@ A PSHED plug-in must ensure that it does not add supplementary error record sect
 
 The PSHED calls a PSHED plug-in's <i>FinalizeErrorRecord</i> callback function at IRQL &lt;= HIGH_LEVEL. The exact IRQL at which this callback function is called depends on the specific type of hardware error that occurred.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= HIGH_LEVEL (See Remarks section)
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

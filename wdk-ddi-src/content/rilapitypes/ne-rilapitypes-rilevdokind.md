@@ -7,7 +7,7 @@ old-location: netvista\rilevdokind_2.htm
 old-project: netvista
 ms.assetid: df59e0f7-6e78-4098-9a2a-9a3143d66152
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILEVDOKIND, RILEVDOKIND
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,19 +67,3 @@ typedef enum _RILEVDOKIND {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

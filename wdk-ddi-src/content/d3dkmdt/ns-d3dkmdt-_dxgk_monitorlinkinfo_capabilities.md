@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 9838DF74-6561-40DB-A745-A15005B97AAC
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_MONITORLINKINFO_CAPABILITIES, *PDXGK_MONITORLINKINFO_CAPABILITIES, DXGK_MONITORLINKINFO_CAPABILITIES
+ms.keywords: _DXGK_MONITORLINKINFO_CAPABILITIES, DXGK_MONITORLINKINFO_CAPABILITIES, *PDXGK_MONITORLINKINFO_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDXGK_MONITORLINKINFO_CAPABILITIES, DXGK_MONITORLINKINFO_CAPABILITIES
+req.typenames: DXGK_MONITORLINKINFO_CAPABILITIES, *PDXGK_MONITORLINKINFO_CAPABILITIES
 ---
 
 # _DXGK_MONITORLINKINFO_CAPABILITIES structure
@@ -106,19 +106,3 @@ This value is reserved for system use.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmdt.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

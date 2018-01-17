@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSAGE_AND_PAGE, USAGE_AND_PAGE
+req.typenames: *PHIDP_REPORT_IDS, HIDP_REPORT_IDS
 ---
 
 # IOCTL_HID_SEND_IDLE_NOTIFICATION_REQUEST IOCTL
@@ -79,19 +79,3 @@ The bus or port driver sets Irp-&gt;IoStatus.Status to STATUS_SUCCESS or the app
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hidport.h (include Hidport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

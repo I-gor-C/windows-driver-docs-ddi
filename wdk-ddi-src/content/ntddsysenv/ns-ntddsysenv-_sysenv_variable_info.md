@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: D9C7BB96-1E26-4D89-9CBE-074232FD0752
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _SYSENV_VARIABLE_INFO, *PSYSENV_VARIABLE_INFO, SYSENV_VARIABLE_INFO
+ms.keywords: _SYSENV_VARIABLE_INFO, SYSENV_VARIABLE_INFO, *PSYSENV_VARIABLE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSYSENV_VARIABLE_INFO, SYSENV_VARIABLE_INFO
+req.typenames: SYSENV_VARIABLE_INFO, *PSYSENV_VARIABLE_INFO
 ---
 
 # _SYSENV_VARIABLE_INFO structure
@@ -74,21 +74,6 @@ The maximum size of the variable.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddsysenv.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

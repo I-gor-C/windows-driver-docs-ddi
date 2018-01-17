@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 5861efcb-1792-406a-820a-38fbfb283c1f
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _VIDEO_PORT_CONFIG_INFO, VIDEO_PORT_CONFIG_INFO, *PVIDEO_PORT_CONFIG_INFO
+ms.keywords: _VIDEO_PORT_CONFIG_INFO, *PVIDEO_PORT_CONFIG_INFO, VIDEO_PORT_CONFIG_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: VIDEO_PORT_CONFIG_INFO, *PVIDEO_PORT_CONFIG_INFO
+req.typenames: *PVIDEO_PORT_CONFIG_INFO, VIDEO_PORT_CONFIG_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -145,7 +145,7 @@ Specifies the size in bytes of the range be mapped into a VDM's address space fo
 
 ### -field HardwareStateSize
 
-Specifies the minimum size in bytes required to store hardware state information in response to an <a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_save_hardware_state.md">IOCTL_VIDEO_SAVE_HARDWARE_STATE</a> request, which must be supported only by VGA-compatible miniport drivers on x86-based machines. The initialized value for this member is zero. A VGA-compatible miniport driver must set this member to the number of bytes it requires to hold saved adapter state.
+Specifies the minimum size in bytes required to store hardware state information in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff567838">IOCTL_VIDEO_SAVE_HARDWARE_STATE</a> request, which must be supported only by VGA-compatible miniport drivers on x86-based machines. The initialized value for this member is zero. A VGA-compatible miniport driver must set this member to the number of bytes it requires to hold saved adapter state.
 
 
 ### -field DmaChannel
@@ -236,28 +236,13 @@ Indicates to a driver the amount, in bytes, of physical memory in the system.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\video\nc-video-pvideo_hw_find_adapter.md">HwVidFindAdapter</a>
 </dt>
 <dt>
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_save_hardware_state.md">IOCTL_VIDEO_SAVE_HARDWARE_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567838">IOCTL_VIDEO_SAVE_HARDWARE_STATE</a>
 </dt>
 <dt>
 <a href="..\video\ns-video-_video_access_range.md">VIDEO_ACCESS_RANGE</a>

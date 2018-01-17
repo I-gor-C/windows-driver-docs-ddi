@@ -7,7 +7,7 @@ old-location: wdf\wdfcompaniontargetsendtasksynchronously.htm
 old-project: wdf
 ms.assetid: d58a275a-aaaa-4159-ba00-6998b7a63434
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: WdfCompanionTargetSendTaskSynchronously
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,39 +84,3 @@ NTSTATUS WdfCompanionTargetSendTaskSynchronously(
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.23
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfcompaniontarget.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>

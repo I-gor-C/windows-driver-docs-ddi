@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: D4C0009D-A9D0-4870-86C5-60DC9B5892BC
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_ACPI_SPB_RESOURCE, *PPEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE
+ms.keywords: _PEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE, *PPEP_ACPI_SPB_RESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_ACPI_SPB_RESOURCE, PEP_ACPI_SPB_RESOURCE
+req.typenames: PEP_ACPI_SPB_RESOURCE, *PPEP_ACPI_SPB_RESOURCE
 ---
 
 # _PEP_ACPI_SPB_RESOURCE structure
@@ -139,29 +139,3 @@ The length of the buffer pointed to by <b>VendorData</b>.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 28f0118b-8c16-4075-8dc9-78e1e2636f02
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_FcpScsiEntryV2, *PHBA_FCPSCSIENTRYV2, HBA_FCPSCSIENTRYV2
+ms.keywords: HBA_FcpScsiEntryV2, HBA_FCPSCSIENTRYV2, *PHBA_FCPSCSIENTRYV2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PHBA_FCPSCSIENTRYV2, HBA_FCPSCSIENTRYV2
+req.typenames: HBA_FCPSCSIENTRYV2, *PHBA_FCPSCSIENTRYV2
 ---
 
 # HBA_FcpScsiEntryV2 structure
@@ -74,21 +74,6 @@ Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_luid.md">HBA_LUID<
 ## -remarks
 The HBA_FcpScsiEntryV2 structure includes all of the information contained in the <a href="..\hbaapi\ns-hbaapi-hba_fcpscsientry.md">HBA_FcpScsiEntry</a> structure and, in addition, contains the identification descriptor for the logical unit derived from SCSI inquiry data.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

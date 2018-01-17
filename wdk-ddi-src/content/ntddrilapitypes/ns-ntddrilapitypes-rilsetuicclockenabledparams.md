@@ -7,8 +7,8 @@ old-location: netvista\rilsetuicclockenabledparams.htm
 old-project: netvista
 ms.assetid: 03df5865-a383-447b-8e80-671ba7a3a60e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSETUICCLOCKENABLEDPARAMS, *LPRILSETUICCLOCKENABLEDPARAMS, RILSETUICCLOCKENABLEDPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSETUICCLOCKENABLEDPARAMS, RILSETUICCLOCKENABLEDPARAMS, *LPRILSETUICCLOCKENABLEDPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILSETUICCLOCKENABLEDPARAMS, RILSETUICCLOCKENABLEDPARAMS
+req.typenames: RILSETUICCLOCKENABLEDPARAMS, *LPRILSETUICCLOCKENABLEDPARAMS
 ---
 
 # RILSETUICCLOCKENABLEDPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILSETUICCLOCKENABLEDPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

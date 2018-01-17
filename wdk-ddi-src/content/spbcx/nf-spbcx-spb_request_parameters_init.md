@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
-req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
+req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -67,42 +67,6 @@ None.
 ## -remarks
 Your SPB controller driver must use this function to initialize an <b>SPB_REQUEST_PARAMETERS</b> structure before passing this structure as an output parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a> method. This method writes the SPB-specific parameters from an I/O request to this structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Spbcx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any IRQL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

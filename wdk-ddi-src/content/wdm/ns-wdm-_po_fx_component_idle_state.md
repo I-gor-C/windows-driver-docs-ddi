@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4F0BF45D-F854-480C-B0AC-8134C6BF3266
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PO_FX_COMPONENT_IDLE_STATE, *PPO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE
+ms.keywords: _PO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE, *PPO_FX_COMPONENT_IDLE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PPO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE
+req.typenames: PO_FX_COMPONENT_IDLE_STATE, *PPO_FX_COMPONENT_IDLE_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -80,31 +80,6 @@ When the driver registers a device with PoFx, the driver supplies an array of <b
 
 Do not set <b>TransitionLatency</b> and <b>ResidencyRequirement</b> to <b>PO_FX_UNKNOWN_TIME</b> because  it may prevent the power management framework (PoFx) from selecting the idle state.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2fcc4597-b169-43a8-b2bb-dd2dd66f29dc
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _KINTERRUPT_POLARITY, *PKINTERRUPT_POLARITY, KINTERRUPT_POLARITY
+ms.keywords: _KINTERRUPT_POLARITY, KINTERRUPT_POLARITY, *PKINTERRUPT_POLARITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: *PKINTERRUPT_POLARITY, KINTERRUPT_POLARITY
+req.irql: PASSIVE_LEVEL
+req.typenames: KINTERRUPT_POLARITY, *PKINTERRUPT_POLARITY
 req.product: Windows 10 or later.
 ---
 
@@ -105,21 +105,6 @@ Reserved for use by the operating system.
 ## -remarks
 A <b>KINTERRUPT_POLARITY</b> enumeration constant is frequently used in conjunction with a <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> enumeration constant to describe an interrupt signal. A <b>KINTERRUPT_MODE</b> enumeration constant indicates whether the interrupt signal from a device is level-triggered or edge-triggered.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

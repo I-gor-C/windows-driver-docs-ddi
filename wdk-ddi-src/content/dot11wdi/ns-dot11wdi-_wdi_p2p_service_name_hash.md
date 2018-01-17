@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_service_name_hash.htm
 old-project: netvista
 ms.assetid: B03C779A-ED25-48D7-BB5E-EB95ED1B2D00
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_P2P_SERVICE_NAME_HASH, WDI_P2P_SERVICE_NAME_HASH, *PWDI_P2P_SERVICE_NAME_HASH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,39 +61,3 @@ Hash of a WFDS Service Name.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

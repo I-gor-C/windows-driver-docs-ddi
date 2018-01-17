@@ -7,8 +7,8 @@ old-location: netvista\rilpsmediaconfigurationset.htm
 old-project: netvista
 ms.assetid: b41f6539-293f-47ed-b720-5053574a1841
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET
+ms.date: 1/11/2018
+ms.keywords: RILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET
+req.typenames: RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET
 ---
 
 # RILPSMEDIACONFIGURATIONSET structure
@@ -70,19 +70,3 @@ typedef struct _RILPSMEDIACONFIGURATIONSET {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

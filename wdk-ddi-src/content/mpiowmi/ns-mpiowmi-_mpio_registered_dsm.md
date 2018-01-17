@@ -66,19 +66,3 @@ An array that returns information about each of the registered DSMs. The number 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfotype_2.htm
 old-project: netvista
 ms.assetid: 0a1afab7-66e3-4880-9124-abf411682eaa
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILDISPLAYINFOTYPE, RILDISPLAYINFOTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,19 +56,3 @@ typedef enum _RILDISPLAYINFOTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

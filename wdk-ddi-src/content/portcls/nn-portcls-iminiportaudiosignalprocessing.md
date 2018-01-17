@@ -75,40 +75,4 @@ The GetModes method, Gets the audio signal processing modes supported by an audi
 
 
 ## -remarks
-Any of the Portcls miniport drivers can also implement the <b>GetModes</b> method.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+Any of the Portcls miniport drivers can also implement the <b>GetModes</b> method.</p>

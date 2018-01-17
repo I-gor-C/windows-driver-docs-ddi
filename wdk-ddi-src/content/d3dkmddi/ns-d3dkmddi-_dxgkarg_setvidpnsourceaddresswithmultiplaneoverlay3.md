@@ -106,19 +106,3 @@ Pointer to a DXGK_HDR_METADATA structure indicating any metadata information tha
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

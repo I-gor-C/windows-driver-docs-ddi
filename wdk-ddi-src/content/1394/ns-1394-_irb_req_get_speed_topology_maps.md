@@ -66,19 +66,3 @@ Points to the TOPOLOGY_MAP structure of the bus. The topology map will be in big
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h</dt>
-</dl>
-</td>
-</tr>
-</table>

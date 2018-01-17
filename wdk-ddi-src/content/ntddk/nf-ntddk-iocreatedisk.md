@@ -57,12 +57,12 @@ NTSTATUS IoCreateDisk(
 
 ### -param DeviceObject [in]
 
-Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> for the raw disk.
+Specifies the <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> for the raw disk.
 
 
 ### -param Disk [in, optional]
 
-Pointer to a <a href="..\ntdddisk\ns-ntdddisk-_create_disk.md">CREATE_DISK</a> structure that specifies the type and parameters for the partition table. If <i>Disk</i> is <b>NULL</b>, the routine deletes the partition table on the disk.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552484">CREATE_DISK</a> structure that specifies the type and parameters for the partition table. If <i>Disk</i> is <b>NULL</b>, the routine deletes the partition table on the disk.
 
 
 ## -returns
@@ -70,74 +70,16 @@ Returns STATUS_SUCCESS on success, or the appropriate error code on failure.
 
 
 ## -remarks
-<b>IoCreateDisk</b> must only be used by disk drivers. Other drivers should use the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_create_disk.md">IOCTL_DISK_CREATE_DISK</a> I/O request instead.
+<b>IoCreateDisk</b> must only be used by disk drivers. Other drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559436">IOCTL_DISK_CREATE_DISK</a> I/O request instead.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This routine is only available on Windows XP and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>NtosKrnl.exe</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntdddisk\ns-ntdddisk-_create_disk.md">CREATE_DISK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552484">CREATE_DISK</a>
 </dt>
 <dt>
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_create_disk.md">IOCTL_DISK_CREATE_DISK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559436">IOCTL_DISK_CREATE_DISK</a>
 </dt>
 </dl>
  

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: ef043a97-3ef4-4fd3-93a6-ac1621503713
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_fc4types, HBA_FC4TYPES, *PHBA_FC4TYPES
+ms.keywords: HBA_fc4types, *PHBA_FC4TYPES, HBA_FC4TYPES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HBA_FC4TYPES, *PHBA_FC4TYPES
+req.typenames: *PHBA_FC4TYPES, HBA_FC4TYPES
 ---
 
 # HBA_fc4types structure
@@ -61,21 +61,6 @@ Contains 32 bytes of FC4 type information. Each byte indicates a support FC-4 ty
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

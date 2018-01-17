@@ -188,21 +188,6 @@ A miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware
 The video port driver will ignore the <b>HwLegacyResourceCount</b> and <b>HwLegacyResourceList</b> members when <b>HwGetLegacyResources</b> is initialized with a pointer to a <a href="..\video\nc-video-pvideo_hw_legacyresources.md">HwVidLegacyResources</a> implementation.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

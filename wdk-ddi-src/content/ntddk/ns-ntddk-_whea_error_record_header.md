@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 2e6476c7-d096-4756-bebb-56fe559dce6d
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_RECORD_HEADER, WHEA_ERROR_RECORD_HEADER, *PWHEA_ERROR_RECORD_HEADER
+ms.keywords: _WHEA_ERROR_RECORD_HEADER, *PWHEA_ERROR_RECORD_HEADER, WHEA_ERROR_RECORD_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: WHEA_ERROR_RECORD_HEADER, *PWHEA_ERROR_RECORD_HEADER
+req.typenames: *PWHEA_ERROR_RECORD_HEADER, WHEA_ERROR_RECORD_HEADER
 ---
 
 # _WHEA_ERROR_RECORD_HEADER structure
@@ -240,32 +240,6 @@ Reserved for system use.
 ## -remarks
 A WHEA_ERROR_RECORD_HEADER structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a> structure. The WHEA_ERROR_RECORD_HEADER structure describes general information about the hardware error condition that is described by the error record.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

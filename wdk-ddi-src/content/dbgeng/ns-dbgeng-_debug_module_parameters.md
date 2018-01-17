@@ -256,20 +256,4 @@ This structure is returned by <a href="https://msdn.microsoft.com/library/window
 
 To locate the different names for the module, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff547149">GetModuleNameString</a>.
 
-For more information about modules, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552231">Modules</a>.  For details about the different names for the module, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547149">GetModuleNameString</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about modules, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552231">Modules</a>.  For details about the different names for the module, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547149">GetModuleNameString</a>.</p>

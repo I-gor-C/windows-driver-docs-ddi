@@ -7,7 +7,7 @@ old-location: netvista\wdi_txrx_parameters.htm
 old-project: netvista
 ms.assetid: 839a1c3d-ac9f-4723-a0f1-6610b763c32a
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_TXRX_PARAMETERS, WDI_TXRX_PARAMETERS, *PWDI_TXRX_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -61,39 +61,3 @@ Specifies the TXRX capabilities.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

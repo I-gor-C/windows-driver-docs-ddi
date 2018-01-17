@@ -75,21 +75,6 @@ On output, an array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget2
 You must implement this method.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsifnd.h (include Iscsifnd.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -7,7 +7,7 @@ old-location: wdf\wdf_usb_request_type_umdf.htm
 old-project: wdf
 ms.assetid: fb952527-a8df-41e7-8194-b4a82b7f550f
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: _WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE, WDF_USB_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,19 +88,3 @@ The request object is sent when the application calls the Win32 <b>ReadFile</b> 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfusb.h (include Wudfusb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

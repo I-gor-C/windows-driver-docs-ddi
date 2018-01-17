@@ -141,32 +141,6 @@ The miniport driver can call <b>AtaPortRegistryChannelSubKeyWriteDeferred</b> fr
 The miniport driver must not reuse the buffer that is pointed to by <i>Buffer</i> after the initial call to <b>AtaPortRegistryChannelSubKeyWriteDeferred</b>. Because the call is asynchronous, <i>Buffer</i> might still point to data that has not been flushed to the registry. The port driver flushes the data in the buffer to the registry when the miniport driver calls <a href="..\irb\nf-irb-ataportregistryfreebuffer.md">AtaPortRegistryFreeBuffer</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Ata.h or Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

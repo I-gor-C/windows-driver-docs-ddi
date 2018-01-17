@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 8A5CB3A6-970C-448D-8808-F072EE67BCA3
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_INHERITED_TIMING_INFO, *PDXGK_INHERITED_TIMING_INFO, DXGK_INHERITED_TIMING_INFO
+ms.keywords: _DXGK_INHERITED_TIMING_INFO, DXGK_INHERITED_TIMING_INFO, *PDXGK_INHERITED_TIMING_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PDXGK_INHERITED_TIMING_INFO, DXGK_INHERITED_TIMING_INFO
+req.typenames: DXGK_INHERITED_TIMING_INFO, *PDXGK_INHERITED_TIMING_INFO
 ---
 
 # _DXGK_INHERITED_TIMING_INFO structure
@@ -105,19 +105,3 @@ In many cases, glitches are inevitable so these fields attempt to understand the
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8334434D-D2FC-4967-8234-3C097908C70B
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_REQUEST_COMPONENT_PERF_STATE, *PPEP_REQUEST_COMPONENT_PERF_STATE, PEP_REQUEST_COMPONENT_PERF_STATE
+ms.keywords: _PEP_REQUEST_COMPONENT_PERF_STATE, PEP_REQUEST_COMPONENT_PERF_STATE, *PPEP_REQUEST_COMPONENT_PERF_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_REQUEST_COMPONENT_PERF_STATE, PEP_REQUEST_COMPONENT_PERF_STATE
+req.typenames: PEP_REQUEST_COMPONENT_PERF_STATE, *PPEP_REQUEST_COMPONENT_PERF_STATE
 ---
 
 # _PEP_REQUEST_COMPONENT_PERF_STATE structure
@@ -96,31 +96,6 @@ The PEP can complete the requested P-state changes either synchronously or async
 
 PoFx writes the requested P-state changes to the <b>PerfRequests</b> array before the <b>PEP_DPM_REQUEST_COMPONENT_PERF_STATE</b> notification is sent. If the PEP handles the requested P-state changes <i>synchronously</i>, the contents of the <b>PerfRequests</b> array remain valid only until the return from the <i>AcceptDeviceNotification</i> callback routine. If the requests are completed <i>asynchronously</i>,  the array contents remain valid until the PEP calls the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186629">CompleteWork</a> routine to notify PoFx that the PEP has completed the pending requests.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

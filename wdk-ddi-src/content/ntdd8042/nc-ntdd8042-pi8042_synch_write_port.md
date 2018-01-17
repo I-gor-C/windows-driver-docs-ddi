@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: f4b0642c-0355-46ae-9c23-fc9c98dfaf21
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _MSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+ms.keywords: _MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+req.typenames: *PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes
 ---
 
 # PI8042_SYNCH_WRITE_PORT callback
@@ -91,42 +91,6 @@ The PI8042_SYNCH_READ_PORT callback can only be used in a <a href="..\ntdd8042\n
 
 The routine polls the hardware until a read is returned by the hardware or an internal time-out occurs.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntdd8042.h (include Ntdd8042.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

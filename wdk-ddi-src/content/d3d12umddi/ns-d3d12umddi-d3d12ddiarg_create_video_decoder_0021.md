@@ -109,21 +109,6 @@ Decoding a frame is allowed to fail if the <i>Bitrate</i> and <i>FrameRate</i> v
 The <i>Bitrate</i> and <i>FrameRate</i> parameters may also be set to zero.  When these values are used, drivers must make worst case assumptions. They are not allowed to fail with <b>D3D12DDI_VIDEO_DECODE_STATUS_RATE_EXCEEDED</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

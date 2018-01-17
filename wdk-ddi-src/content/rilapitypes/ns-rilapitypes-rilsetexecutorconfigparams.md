@@ -7,7 +7,7 @@ old-location: netvista\rilsetexecutorconfigparams_2.htm
 old-project: netvista
 ms.assetid: b8dcfd30-e7fc-45ab-b407-a0719f624c8e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSETEXECUTORCONFIGPARAMS, *LPRILSETEXECUTORCONFIGPARAMS, RILSETEXECUTORCONFIGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef struct _RILSETEXECUTORCONFIGPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

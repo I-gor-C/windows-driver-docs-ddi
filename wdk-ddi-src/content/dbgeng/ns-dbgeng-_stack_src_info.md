@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: F19D5A5C-D9CF-40CC-B344-8F2D862FBF04
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STACK_SRC_INFO, *PSTACK_SRC_INFO, STACK_SRC_INFO
+ms.keywords: _STACK_SRC_INFO, STACK_SRC_INFO, *PSTACK_SRC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSTACK_SRC_INFO, STACK_SRC_INFO
+req.typenames: STACK_SRC_INFO, *PSTACK_SRC_INFO
 ---
 
 # _STACK_SRC_INFO structure
@@ -90,19 +90,3 @@ A column number.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h (include Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

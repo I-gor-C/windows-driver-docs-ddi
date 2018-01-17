@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: a605e37d-56cd-4d72-a713-314e20c2f630
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _VP_DEVICE_DESCRIPTION, *PVP_DEVICE_DESCRIPTION, VP_DEVICE_DESCRIPTION
+ms.keywords: _VP_DEVICE_DESCRIPTION, VP_DEVICE_DESCRIPTION, *PVP_DEVICE_DESCRIPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: *PVP_DEVICE_DESCRIPTION, VP_DEVICE_DESCRIPTION
+req.typenames: VP_DEVICE_DESCRIPTION, *PVP_DEVICE_DESCRIPTION
 req.product: Windows 10 or later.
 ---
 
@@ -79,20 +79,4 @@ Specifies the maximum number of bytes the device can handle in each DMA operatio
 
 
 ## -remarks
-This structure is available in Windows XP and later.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This structure is available in Windows XP and later.</p>

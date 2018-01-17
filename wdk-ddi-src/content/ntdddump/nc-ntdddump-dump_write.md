@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: c7eda6a7-a1ce-43a3-b0e4-41f5afc61be6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _VERIFY_INFORMATION, *PVERIFY_INFORMATION, VERIFY_INFORMATION
+ms.keywords: _OUTPUT_PACKET, OUTPUT_PACKET, *POUTPUT_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PVERIFY_INFORMATION, VERIFY_INFORMATION
+req.typenames: OUTPUT_PACKET, *POUTPUT_PACKET
 ---
 
 # DUMP_WRITE callback
@@ -83,42 +83,6 @@ Filter drivers can read the data that needs to be written. However, filter drive
 
 To safely modify the data for the dump write, a filter driver should allocate a secondary buffer. The buffer's size will be the value of the <b>MaxPagesPerWrite</b> member of <a href="..\ntdddump\ns-ntdddump-_filter_initialization_data.md">FILTER_INITIALIZATION_DATA</a> multiplied by <b>PAGE_SIZE</b>. The data for the current buffer described by <i>Mdl</i> is copied into the secondary buffer and processed. After the filter is finished handling the dump data in the secondary buffer, the  <a href="..\wdm\ns-wdm-_mdl.md">MDL</a> pointed to by <i>Mdl</i> is updated with the address of the secondary buffer. The starting address of the secondary buffer set in the <b>MDL</b> must be page aligned.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista and Windows Server 2008.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntdddump.h (include Ntdddump.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

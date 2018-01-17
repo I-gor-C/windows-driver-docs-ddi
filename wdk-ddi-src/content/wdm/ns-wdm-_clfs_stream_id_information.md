@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: dc8ea8b0-6aa0-4372-973a-42c545c27e18
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CLFS_STREAM_ID_INFORMATION, PPCLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION, CLFS_STREAM_ID_INFORMATION
+ms.keywords: _CLFS_STREAM_ID_INFORMATION, CLFS_STREAM_ID_INFORMATION, PPCLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: PPCLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION, CLFS_STREAM_ID_INFORMATION
+req.typenames: CLFS_STREAM_ID_INFORMATION, PPCLFS_STREAM_ID_INFORMATION, *PCLFS_STREAM_ID_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -63,21 +63,6 @@ An 8-bit value that identifies a stream.
 ## -remarks
 A stream identifier is unique within a given CLFS log.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

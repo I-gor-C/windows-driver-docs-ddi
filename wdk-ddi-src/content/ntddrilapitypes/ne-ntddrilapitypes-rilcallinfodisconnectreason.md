@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfodisconnectreason.htm
 old-project: netvista
 ms.assetid: 2e339b56-9130-4459-8ccd-171f721ae83e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLINFODISCONNECTREASON, RILCALLINFODISCONNECTREASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -94,19 +94,3 @@ typedef enum _RILCALLINFODISCONNECTREASON {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

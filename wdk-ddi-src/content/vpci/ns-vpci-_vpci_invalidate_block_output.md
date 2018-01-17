@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6971C724-CE5E-44BC-8D3A-FAD248771E6F
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _VPCI_INVALIDATE_BLOCK_OUTPUT, VPCI_INVALIDATE_BLOCK_OUTPUT, *PVPCI_INVALIDATE_BLOCK_OUTPUT
+ms.keywords: _VPCI_INVALIDATE_BLOCK_OUTPUT, *PVPCI_INVALIDATE_BLOCK_OUTPUT, VPCI_INVALIDATE_BLOCK_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: DISPATCH_LEVEL
-req.typenames: VPCI_INVALIDATE_BLOCK_OUTPUT, *PVPCI_INVALIDATE_BLOCK_OUTPUT
+req.typenames: *PVPCI_INVALIDATE_BLOCK_OUTPUT, VPCI_INVALIDATE_BLOCK_OUTPUT
 req.product: Windows 10 or later.
 ---
 
@@ -71,21 +71,6 @@ The PF driver, which runs in the management operating system.
 
 This operating system runs within the Hyper-V parent partition.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Vpci.h (include Vpci.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

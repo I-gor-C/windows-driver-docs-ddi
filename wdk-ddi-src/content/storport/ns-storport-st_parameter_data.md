@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: C50F45EC-433C-421D-BD02-4C86CB44D5A4
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: ST_PARAMETER_DATA, *PST_PARAMETER_DATA, ST_PARAMETER_DATA
+ms.keywords: ST_PARAMETER_DATA, ST_PARAMETER_DATA, *PST_PARAMETER_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PST_PARAMETER_DATA, ST_PARAMETER_DATA
+req.typenames: ST_PARAMETER_DATA, *PST_PARAMETER_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -77,31 +77,6 @@ Reserved for future use.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10, version 1709 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsi.h (include Minitape.h or Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

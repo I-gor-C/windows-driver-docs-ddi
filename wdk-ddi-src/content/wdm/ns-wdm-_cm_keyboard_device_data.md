@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 928cc1b6-4569-4ca1-9410-d864b5556b86
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CM_KEYBOARD_DEVICE_DATA, CM_KEYBOARD_DEVICE_DATA, *PCM_KEYBOARD_DEVICE_DATA
+ms.keywords: _CM_KEYBOARD_DEVICE_DATA, *PCM_KEYBOARD_DEVICE_DATA, CM_KEYBOARD_DEVICE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: CM_KEYBOARD_DEVICE_DATA, *PCM_KEYBOARD_DEVICE_DATA
+req.typenames: *PCM_KEYBOARD_DEVICE_DATA, CM_KEYBOARD_DEVICE_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -174,21 +174,6 @@ Right shift key is down.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

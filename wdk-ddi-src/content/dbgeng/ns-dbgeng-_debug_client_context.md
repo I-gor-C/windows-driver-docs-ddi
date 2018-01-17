@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 69CE0535-3ADD-481C-A016-695A7303BBA5
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_CLIENT_CONTEXT, DEBUG_CLIENT_CONTEXT, *PDEBUG_CLIENT_CONTEXT
+ms.keywords: _DEBUG_CLIENT_CONTEXT, *PDEBUG_CLIENT_CONTEXT, DEBUG_CLIENT_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DEBUG_CLIENT_CONTEXT, *PDEBUG_CLIENT_CONTEXT
+req.typenames: *PDEBUG_CLIENT_CONTEXT, DEBUG_CLIENT_CONTEXT
 ---
 
 # _DEBUG_CLIENT_CONTEXT structure
@@ -67,21 +67,6 @@ A client value.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

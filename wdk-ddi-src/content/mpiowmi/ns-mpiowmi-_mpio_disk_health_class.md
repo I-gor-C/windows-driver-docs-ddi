@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 07b04bad-9d52-4a32-8834-48cd5803844c
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS
+ms.keywords: _MPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS
+req.typenames: MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS
 ---
 
 # _MPIO_DISK_HEALTH_CLASS structure
@@ -150,19 +150,3 @@ Should be zero.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

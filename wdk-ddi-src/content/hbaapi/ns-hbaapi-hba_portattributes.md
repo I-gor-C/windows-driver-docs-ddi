@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7628c68b-b851-4b41-a86b-aa54e7cd6ddf
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_PortAttributes, *PHBA_PORTATTRIBUTES, HBA_PORTATTRIBUTES
+ms.keywords: HBA_PortAttributes, HBA_PORTATTRIBUTES, *PHBA_PORTATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PHBA_PORTATTRIBUTES, HBA_PORTATTRIBUTES
+req.typenames: HBA_PORTATTRIBUTES, *PHBA_PORTATTRIBUTES
 ---
 
 # HBA_PortAttributes structure
@@ -418,21 +418,6 @@ Indicates the number of ports that are visible to <b>PortWWN</b>. For a more det
 ## -remarks
 The HBA_PortAttributes structure serves a purpose very similar to the MSFC_HBAPortAttributesResults structure that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553925">GetDiscoveredPortAttributes</a> WMI method to report port attributes.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

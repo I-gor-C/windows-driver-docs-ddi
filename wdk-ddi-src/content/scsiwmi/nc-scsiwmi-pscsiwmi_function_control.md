@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: a975e201-9015-4315-830e-4cd7cc5a3bc5
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SCSISCAN_INFO, SCSISCAN_INFO, *PSCSISCAN_INFO
+ms.keywords: RxScavengeFobxsForNetRoot
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SCSISCAN_INFO, *PSCSISCAN_INFO
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -97,32 +97,6 @@ It is unnecessary for the miniport driver to check whether events or data collec
 
 If the SRB is completed in the <b>HwScsiWmiFunctionControl</b> callback, then the miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> with an appropriate <i>SrbStatus</i>. If the miniport driver pends this SRB, then it should call <b>ScsiPortWmiPostProcess</b> when the SRB is done and before completing the SRB.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsiwmi.h (include Scsiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

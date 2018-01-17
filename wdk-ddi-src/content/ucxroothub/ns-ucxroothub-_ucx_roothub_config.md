@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 27E54F0D-2163-4D7C-B204-336EE0227488
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG
+ms.keywords: _UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
-req.typenames: UCX_ROOTHUB_CONFIG, *PUCX_ROOTHUB_CONFIG
+req.typenames: *PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -145,19 +145,3 @@ A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxroothub.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

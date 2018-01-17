@@ -101,42 +101,4 @@ Indicates the physical address of the DMA buffer.
 
 SRBDataBuffer
 
-Indicates the physical address of the data buffer.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h (include Strmini.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Stream.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+Indicates the physical address of the data buffer.</p>

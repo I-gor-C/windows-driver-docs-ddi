@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 66fade6b-b1c1-477c-bd44-2809d02271f2
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO, *PPS_CREATE_NOTIFY_INFO
+ms.keywords: _PS_CREATE_NOTIFY_INFO, *PPS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PS_CREATE_NOTIFY_INFO, *PPS_CREATE_NOTIFY_INFO
+req.typenames: *PPS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO
 ---
 
 # _PS_CREATE_NOTIFY_INFO structure
@@ -142,31 +142,6 @@ The NTSTATUS value to return for the process-creation operation. Drivers can cha
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

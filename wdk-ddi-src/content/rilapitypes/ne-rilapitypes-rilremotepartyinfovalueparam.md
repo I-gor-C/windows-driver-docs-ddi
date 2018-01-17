@@ -7,8 +7,8 @@ old-location: netvista\rilremotepartyinfovalueparam_2.htm
 old-project: netvista
 ms.assetid: eeea39eb-898a-47fe-befe-39c95dd1fc90
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILREMOTEPARTYINFOVALUEPARAM, RILREMOTEPARTYINFOVALUEPARAM, RILREMOTEPARTYINFOPARAM
+ms.date: 1/11/2018
+ms.keywords: RILREMOTEPARTYINFOVALUEPARAM, RILREMOTEPARTYINFOPARAM, RILREMOTEPARTYINFOVALUEPARAM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILREMOTEPARTYINFOVALUEPARAM, RILREMOTEPARTYINFOPARAM
+req.typenames: RILREMOTEPARTYINFOPARAM, RILREMOTEPARTYINFOVALUEPARAM
 req.product: Windows 10 or later.
 ---
 
@@ -83,19 +83,3 @@ typedef enum _RILREMOTEPARTYINFOVALUEPARAM {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

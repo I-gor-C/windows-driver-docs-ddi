@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: f9a9510a-b55c-4566-83ce-4ed7ccafb543
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBD_VERSION_INFORMATION, USBD_VERSION_INFORMATION, *PUSBD_VERSION_INFORMATION
+ms.keywords: _URS_ROLE, *PURS_ROLE, URS_ROLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: USBD_VERSION_INFORMATION, *PUSBD_VERSION_INFORMATION
+req.typenames: *PURS_ROLE, URS_ROLE
 req.product: Windows 10 or later.
 ---
 
@@ -100,32 +100,6 @@ If the operation succeeds, the vendor-supplied callback routine must return STAT
 ## -remarks
 For a general description of the callback routine mechanism, see <a href="https://msdn.microsoft.com/3cf4e9f2-ea33-491f-94af-62d2afacc899">Customizing Enumeration of Interface Collections for Composite Devices</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbbusif.h (include Usbbusif.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

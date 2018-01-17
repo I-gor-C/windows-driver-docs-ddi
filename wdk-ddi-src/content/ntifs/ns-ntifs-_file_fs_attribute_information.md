@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 373788d8-4963-4319-82ae-3a0675c9fff4
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_FS_ATTRIBUTE_INFORMATION, FILE_FS_ATTRIBUTE_INFORMATION, *PFILE_FS_ATTRIBUTE_INFORMATION
+ms.keywords: _FILE_FS_ATTRIBUTE_INFORMATION, *PFILE_FS_ATTRIBUTE_INFORMATION, FILE_FS_ATTRIBUTE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: FILE_FS_ATTRIBUTE_INFORMATION, *PFILE_FS_ATTRIBUTE_INFORMATION
+req.typenames: *PFILE_FS_ATTRIBUTE_INFORMATION, FILE_FS_ATTRIBUTE_INFORMATION
 ---
 
 # _FILE_FS_ATTRIBUTE_INFORMATION structure
@@ -260,21 +260,6 @@ The size of the buffer passed in the <i>FileInformation</i> parameter to
 
 This structure must be aligned on a <b>LONG</b> (4-byte) boundary.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

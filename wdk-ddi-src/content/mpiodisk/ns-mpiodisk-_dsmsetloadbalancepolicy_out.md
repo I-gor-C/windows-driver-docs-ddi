@@ -60,19 +60,3 @@ The status of the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

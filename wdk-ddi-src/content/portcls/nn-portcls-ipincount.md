@@ -55,7 +55,7 @@ When opening a "heavyweight" stream, the miniport driver might need to decrement
 
 The process is reversed when a "heavyweight" stream is closed. The available pin count might increase by more than one in order to reflect the fact that two or more "lightweight" streams can be created from the newly freed resources.
 
-If a miniport driver does not support the <code>IPinCount</code> interface, the port driver uses the statically initialized pin counts in the filter's <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_7.md">PCPIN_DESCRIPTOR</a> array.
+If a miniport driver does not support the <code>IPinCount</code> interface, the port driver uses the statically initialized pin counts in the filter's <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_7.md">PCPIN_DESCRIPTOR</a> array.
 
 The <code>IPinCount</code> interface provides a single method. The port driver that is bound to the miniport driver calls this method in response to a pin-count query.
 
@@ -66,19 +66,3 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPinCount</b> interface inher
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h</dt>
-</dl>
-</td>
-</tr>
-</table>

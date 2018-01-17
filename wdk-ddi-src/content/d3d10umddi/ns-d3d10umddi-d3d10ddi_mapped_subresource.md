@@ -83,31 +83,6 @@ It is not advisable to assign a value of zero to the <b>RowPitch</b> and <b>Dept
 To avoid zero values for these members, it helps to think of all  resources as being three-dimensional, as in these two examples:
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with  Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

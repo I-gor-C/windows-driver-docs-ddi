@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: CD9E3356-45C3-4F56-9EB3-45FB4B3F054B
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _LINK_SHARE_ACCESS, LINK_SHARE_ACCESS, *PLINK_SHARE_ACCESS
+ms.keywords: _LINK_SHARE_ACCESS, *PLINK_SHARE_ACCESS, LINK_SHARE_ACCESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: LINK_SHARE_ACCESS, *PLINK_SHARE_ACCESS
+req.typenames: *PLINK_SHARE_ACCESS, LINK_SHARE_ACCESS
 req.product: Windows 10 or later.
 ---
 
@@ -75,21 +75,6 @@ File associated with the file object has been opened for delete sharing access.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Ucmtcpcicxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: UCM_MANAGER_CONFIG, *PUCM_MANAGER_CONFIG
+req.typenames: *PUCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -85,62 +85,6 @@ A pointer to a caller-supplied <a href="..\ucmtcpcidevice\ns-ucmtcpcidevice-_ucm
 ## -remarks
 The client driver must call <b>UcmTcpciDeviceInitialize</b> within the driver's implementation of <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EVT_WDF_DRIVER_DEVICE_ADD</a>. This method configures the framework device object and allocates resources required, registers for PnP events, and sets up I/O targets.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmtcpcidevice.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmtcpcicxstub.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

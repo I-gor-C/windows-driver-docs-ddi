@@ -7,7 +7,7 @@ old-location: netvista\rilsubaddressparammask_2.htm
 old-project: netvista
 ms.assetid: ef802d35-2ca6-4fe2-9f3b-e2d1e91b8500
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSUBADDRESSPARAMMASK, RILSUBADDRESSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILSUBADDRESSPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

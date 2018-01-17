@@ -73,31 +73,6 @@ The buffer allocated to contain a <b>PHYSICAL_COUNTER_RESOURCE_LIST</b> structur
 The <a href="..\ntddk\nf-ntddk-halallocatehardwarecounters.md">HalAllocateHardwareCounters</a> routine's <i>ResourceList</i> parameter is a pointer to a <b>PHYSICAL_COUNTER_RESOURCE_LIST</b> structure. In Windows 7, this parameter is unused and must be set to <b>NULL</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

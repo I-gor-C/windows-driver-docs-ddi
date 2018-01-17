@@ -7,8 +7,8 @@ old-location: netvista\rilsenduicctoolkitcmdresponseparams.htm
 old-project: netvista
 ms.assetid: 9006d542-0f83-4cd4-ab81-d2e4cce67406
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSENDUICCTOOLKITCMDRESPONSEPARAMS, RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS, RILSENDUICCTOOLKITCMDRESPONSEPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILSENDUICCTOOLKITCMDRESPONSEPARAMS, *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS
+req.typenames: *LPRILSENDUICCTOOLKITCMDRESPONSEPARAMS, RILSENDUICCTOOLKITCMDRESPONSEPARAMS
 ---
 
 # RILSENDUICCTOOLKITCMDRESPONSEPARAMS structure
@@ -66,19 +66,3 @@ typedef struct _RILSENDUICCTOOLKITCMDRESPONSEPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

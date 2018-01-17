@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: c16a2f3c-a5be-4132-920a-b81f67c5ea02
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _AVCSTRM_OPEN_STRUCT, *PAVCSTRM_OPEN_STRUCT, AVCSTRM_OPEN_STRUCT
+ms.keywords: _AVCSTRM_OPEN_STRUCT, AVCSTRM_OPEN_STRUCT, *PAVCSTRM_OPEN_STRUCT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PAVCSTRM_OPEN_STRUCT, AVCSTRM_OPEN_STRUCT
+req.typenames: AVCSTRM_OPEN_STRUCT, *PAVCSTRM_OPEN_STRUCT
 ---
 
 # _AVCSTRM_OPEN_STRUCT structure
@@ -82,21 +82,6 @@ The <b>AVCSTRM_OPEN</b> function code uses this structure to describe the open o
 
 This value can then be used in subsequent <i>avcstrm.sys</i> operations by placing it in the <b>AVCStrmContext</b> member of the AVC_STREAM_REQUEST_BLOCK structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avcstrm.h (include Avcstrm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

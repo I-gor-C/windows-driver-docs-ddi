@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: bca4bfc6-d44f-4b10-a30a-ba2acefad7a9
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _SCO_DISCONNECT_REASON, SCO_DISCONNECT_REASON, *PSCO_DISCONNECT_REASON
+ms.keywords: _SCO_DISCONNECT_REASON, *PSCO_DISCONNECT_REASON, SCO_DISCONNECT_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: SCO_DISCONNECT_REASON, *PSCO_DISCONNECT_REASON
+req.typenames: *PSCO_DISCONNECT_REASON, SCO_DISCONNECT_REASON
 ---
 
 # _SCO_DISCONNECT_REASON enumeration
@@ -95,31 +95,6 @@ Currently,
     <i>ScoHciDisconnect</i> is the only value the Bluetooth driver stack passes to the 
     <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

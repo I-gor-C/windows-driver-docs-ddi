@@ -75,21 +75,6 @@ A variable length array of <a href="..\iscsimgt\ns-iscsimgt-_iscsi_sessionstatic
 You must implement this class.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -7,7 +7,7 @@ old-location: netvista\rilcbmsgconfig_2.htm
 old-project: netvista
 ms.assetid: 7cdab678-5c83-4590-b911-5961db89e7ce
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCBMSGCONFIG, *LPRILCBMSGCONFIG, RILCBMSGCONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,19 +79,3 @@ typedef struct _RILCBMSGCONFIG {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

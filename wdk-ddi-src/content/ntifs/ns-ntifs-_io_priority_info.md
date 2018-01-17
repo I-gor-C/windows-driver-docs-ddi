@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 1161b239-3ad1-4a0c-9d11-4a3a88d361b3
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _IO_PRIORITY_INFO, *PIO_PRIORITY_INFO, IO_PRIORITY_INFO
+ms.keywords: _IO_PRIORITY_INFO, IO_PRIORITY_INFO, *PIO_PRIORITY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PIO_PRIORITY_INFO, IO_PRIORITY_INFO
+req.typenames: IO_PRIORITY_INFO, *PIO_PRIORITY_INFO
 ---
 
 # _IO_PRIORITY_INFO structure
@@ -82,31 +82,6 @@ The IO_PRIORITY_INFO structure is used by the <a href="..\fltkernel\nf-fltkernel
 
 A structure of type IO_PRIORITY_INFO must be initialized before first use by calling either the <a href="..\ntifs\nf-ntifs-ioinitializepriorityinfo.md">IoInitializePriorityInfo</a> routine or the <a href="..\fltkernel\nf-fltkernel-fltapplypriorityinfothread.md">FltApplyPriorityInfoThread</a> routine.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This structure is available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

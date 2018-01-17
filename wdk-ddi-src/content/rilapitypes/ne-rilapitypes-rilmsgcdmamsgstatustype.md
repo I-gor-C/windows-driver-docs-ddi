@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgstatustype_2.htm
 old-project: netvista
 ms.assetid: 315ca5af-103e-4c00-8dd7-10aa21bfa8a2
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGCDMAMSGSTATUSTYPE, RILMSGCDMAMSGSTATUSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,19 +71,3 @@ typedef enum _RILMSGCDMAMSGSTATUSTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

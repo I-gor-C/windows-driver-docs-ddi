@@ -7,7 +7,7 @@ old-location: netvista\rilunsolicitedssinfonotificationcode_2.htm
 old-project: netvista
 ms.assetid: 3747f429-9893-44bd-ab3c-c3e78d8a264c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUNSOLICITEDSSINFONOTIFICATIONCODE, RILUNSOLICITEDSSINFONOTIFICATIONCODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -127,19 +127,3 @@ typedef enum _RILUNSOLICITEDSSINFONOTIFICATIONCODE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

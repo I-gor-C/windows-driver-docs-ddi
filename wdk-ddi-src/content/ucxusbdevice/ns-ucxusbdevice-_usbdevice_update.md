@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 7E990E9A-5BF5-4D6B-A5E2-4968FBD1CEBC
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBDEVICE_UPDATE, USBDEVICE_UPDATE, *PUSBDEVICE_UPDATE
+ms.keywords: _USBDEVICE_UPDATE, *PUSBDEVICE_UPDATE, USBDEVICE_UPDATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: USBDEVICE_UPDATE, *PUSBDEVICE_UPDATE
+req.typenames: *PUSBDEVICE_UPDATE, USBDEVICE_UPDATE
 req.product: Windows 10 or later.
 ---
 
@@ -85,7 +85,7 @@ A bitwise-OR of <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_flags
 
 ### -field DeviceDescriptor
 
-A pointer a <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.
+A pointer a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.
 
 
 ### -field BosDescriptor
@@ -120,21 +120,6 @@ The resume time for the root port.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxusbdevice.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

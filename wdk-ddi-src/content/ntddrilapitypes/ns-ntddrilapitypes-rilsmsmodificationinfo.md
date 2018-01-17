@@ -7,8 +7,8 @@ old-location: netvista\rilsmsmodificationinfo.htm
 old-project: netvista
 ms.assetid: 8fed32a2-f0a7-4462-b8bb-b01c9cccf6b7
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO, *LPRILSMSMODIFICATIONINFO
+ms.date: 1/11/2018
+ms.keywords: RILSMSMODIFICATIONINFO, *LPRILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILSMSMODIFICATIONINFO, *LPRILSMSMODIFICATIONINFO
+req.typenames: *LPRILSMSMODIFICATIONINFO, RILSMSMODIFICATIONINFO
 ---
 
 # RILSMSMODIFICATIONINFO structure
@@ -78,19 +78,3 @@ typedef struct _RILSMSMODIFICATIONINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,8 +7,8 @@ old-location: netvista\rilcallinfo_v1.htm
 old-project: netvista
 ms.assetid: eae7108f-94d5-4147-b554-189c1a356641
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCALLINFO_V1, *LPRILCALLINFO_V1, RILCALLINFO_V1
+ms.date: 1/11/2018
+ms.keywords: RILCALLINFO_V1, RILCALLINFO_V1, *LPRILCALLINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILCALLINFO_V1, RILCALLINFO_V1
+req.typenames: RILCALLINFO_V1, *LPRILCALLINFO_V1
 ---
 
 # RILCALLINFO_V1 structure
@@ -122,19 +122,3 @@ typedef struct _RILCALLINFO_V1 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

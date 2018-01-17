@@ -1,10 +1,17 @@
 ---
 UID: TP:debugger
+ms.assetid: 025d7cc4-309d-33e6-8813-f58445c3acaf
+ms.author: windowsdriverdev
+ms.date: 01/16/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # Debugger
 
-## -description
+
 Overview of the Debugger technology.
 
 To develop Debugger, you need these headers:
@@ -249,6 +256,7 @@ For the programming guide, see [Debugger](https://docs.microsoft.com/en-us/windo
 | [ExtExtension::SetUnnamedArg method](..\engextcpp\nf-engextcpp-extextension-setunnamedarg.md) | The SetUnnamedArg method sets an unnamed argument for the current extension command. |
 | [ExtExtension::SetUnnamedArgStr method](..\engextcpp\nf-engextcpp-extextension-setunnamedargstr.md) | The SetUnnamedArgStr method sets an unnamed string argument for the current extension command. |
 | [ExtExtension::SetUnnamedArgU64 method](..\engextcpp\nf-engextcpp-extextension-setunnamedargu64.md) | The SetUnnamedArgU64 method sets the value of an unnamed expression argument for the current extension command. |
+| [ExtExtension::Uninitialize method](..\engextcpp\nf-engextcpp-extextension-uninitialize.md) | The Uninitialize method is called by the engine to uninitialize an EngExtCpp extension library before it is unloaded. |
 | [ExtRemoteData::Clear method](..\engextcpp\nf-engextcpp-extremotedata-clear.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
 | [ExtRemoteData::ExtRemoteData method](..\engextcpp\nf-engextcpp-extremotedata-extremotedata.md) | The ExtRemoteData constructor creates a new instance of the ExtRemoteData class. |
 | [ExtRemoteData::GetBoolean method](..\engextcpp\nf-engextcpp-extremotedata-getboolean.md) | The GetBoolean method returns a Boolean version of the ExtRemoteData object, which represents the contents of the target's memory. |
@@ -291,7 +299,6 @@ For the programming guide, see [Debugger](https://docs.microsoft.com/en-us/windo
 | [ExtRemoteData::SetW32Bool method](..\engextcpp\nf-engextcpp-extremotedata-setw32bool.md) | The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods. |
 | [ExtRemoteData::Write method](..\engextcpp\nf-engextcpp-extremotedata-write.md) | The Write method writes the data cached by the ExtRemoteData object to the region of memory on the target, represented by this object. |
 | [ExtRemoteData::WriteBuffer method](..\engextcpp\nf-engextcpp-extremotedata-writebuffer.md) | The WriteBuffer method writes data to the target's memory. The data is located in the beginning of the region represented by the ExtRemoteData object. However, the size of the data can be different. |
-| [ExtRemoteList::ExtRemoteList method](..\engextcpp\nf-engextcpp-extremotelist-extremotelist.md) | The ExtRemoteList class provides a wrapper around a singly-linked or doubly-linked list. The class contains methods that can be used to move both forward and backward through the list. |
 | [ExtRemoteList::GetNodeOffset method](..\engextcpp\nf-engextcpp-extremotelist-getnodeoffset.md) | The GetNodeOffset method returns the address of the current list item. |
 | [ExtRemoteList::HasNode method](..\engextcpp\nf-engextcpp-extremotelist-hasnode.md) | The HasNode method determines if there is a current item in the list iteration. |
 | [ExtRemoteList::Next method](..\engextcpp\nf-engextcpp-extremotelist-next.md) | The Next method changes the current item to the next item in the list. |

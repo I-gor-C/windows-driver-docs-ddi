@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5609a2c4-71db-432a-8a39-e407130a6e4c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _REG_CREATE_KEY_INFORMATION, REG_CREATE_KEY_INFORMATION, *PREG_OPEN_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION, *PREG_CREATE_KEY_INFORMATION
+ms.keywords: _REG_CREATE_KEY_INFORMATION, REG_CREATE_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION, *PREG_OPEN_KEY_INFORMATION, *PREG_CREATE_KEY_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: REG_CREATE_KEY_INFORMATION, *PREG_OPEN_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION, *PREG_CREATE_KEY_INFORMATION
+req.typenames: REG_CREATE_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION, *PREG_OPEN_KEY_INFORMATION, *PREG_CREATE_KEY_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -153,31 +153,6 @@ If the driver's <i>RegistryCallback</i> routine returns STATUS_CALLBACK_BYPASS f
 
 For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Server 2003, but some structure members are available only in Windows Vista and later versions.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

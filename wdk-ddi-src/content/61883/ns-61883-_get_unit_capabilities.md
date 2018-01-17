@@ -92,21 +92,6 @@ If the AV_HOST_DMA_DOUBLE_BUFFERING_ENABLED flag is set, and the request level i
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h (include 61883.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

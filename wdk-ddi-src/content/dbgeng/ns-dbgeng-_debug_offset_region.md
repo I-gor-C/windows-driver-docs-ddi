@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 7116B31A-D584-4B9D-AFB4-5B15B659BE54
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_OFFSET_REGION, DEBUG_OFFSET_REGION, *PDEBUG_OFFSET_REGION
+ms.keywords: _DEBUG_OFFSET_REGION, *PDEBUG_OFFSET_REGION, DEBUG_OFFSET_REGION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DEBUG_OFFSET_REGION, *PDEBUG_OFFSET_REGION
+req.typenames: *PDEBUG_OFFSET_REGION, DEBUG_OFFSET_REGION
 ---
 
 # _DEBUG_OFFSET_REGION structure
@@ -67,21 +67,6 @@ The size of the region.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,8 +7,8 @@ old-location: wdf\wdf_property_store_root.htm
 old-project: wdf
 ms.assetid: 431ae991-35e0-4cf7-a3e0-57591abfe5c5
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _WDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT, *PWDF_PROPERTY_STORE_ROOT
+ms.date: 1/11/2018
+ms.keywords: _WDF_PROPERTY_STORE_ROOT, *PWDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: WDF_PROPERTY_STORE_ROOT, *PWDF_PROPERTY_STORE_ROOT
+req.typenames: *PWDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT
 req.product: Windows 10 or later.
 ---
 
@@ -180,41 +180,6 @@ The driver can obtain read or write access to the specified subkey under the <b>
 For more information about these registry keys, see <a href="wdf.using_the_registry_in_umdf_drivers">Using the Registry in UMDF-based Drivers</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-End of support
-
-</th>
-<td width="70%">
-Unavailable in UMDF 2.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-1.9
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi_types.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -225,5 +190,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PROPERTY_STORE_ROOT structure%20 RELEASE:%20(12/29/2017)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [wdf\wdf]:%20WDF_PROPERTY_STORE_ROOT structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

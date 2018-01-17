@@ -7,7 +7,7 @@ old-location: netvista\rilrfstateparammask.htm
 old-project: netvista
 ms.assetid: 53cd2444-fda7-4e1f-b2d3-23ab20955a0e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRFSTATEPARAMMASK, RILRFSTATEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILRFSTATEPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 0cfcd019-0c5b-4635-859f-741a6e4aa91d
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _KTMOBJECT_CURSOR, *PKTMOBJECT_CURSOR, KTMOBJECT_CURSOR
+ms.keywords: _KTMOBJECT_CURSOR, KTMOBJECT_CURSOR, *PKTMOBJECT_CURSOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PKTMOBJECT_CURSOR, KTMOBJECT_CURSOR
+req.typenames: KTMOBJECT_CURSOR, *PKTMOBJECT_CURSOR
 req.product: Windows 10 or later.
 ---
 
@@ -75,31 +75,6 @@ A caller-allocated array of GUID-typed elements. After <b>ZwEnumerateTransaction
 ## -remarks
 The <b>KTMOBJECT_CURSOR</b> structure is used at the beginning of buffers that callers pass to the <b>ZwEnumerateTransactionObject</b> routine.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later operating system versions.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

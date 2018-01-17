@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4d20f3fd-d06e-420b-af69-9ef34addc611
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _INTERFACE_TYPE, *PINTERFACE_TYPE, INTERFACE_TYPE
+ms.keywords: _INTERFACE_TYPE, INTERFACE_TYPE, *PINTERFACE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: *PINTERFACE_TYPE, INTERFACE_TYPE
+req.irql: PASSIVE_LEVEL
+req.typenames: INTERFACE_TYPE, *PINTERFACE_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -177,34 +177,19 @@ Marks the upper limit of the possible bus types.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>
 </dt>
 <dt>
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>
 </dt>
 <dt>
-<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564761">ScsiPortValidateRange</a>
 </dt>
 <dt>
 <a href="..\storport\nf-storport-storportgetdevicebase.md">StorPortGetDeviceBase</a>

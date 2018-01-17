@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: afffe6c3-a6d1-4e43-ba2b-f64269c44ec0
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CLS_LOG_INFORMATION_CLASS, *PCLS_LOG_INFORMATION_CLASS, PPCLS_LOG_INFORMATION_CLASS, CLS_LOG_INFORMATION_CLASS, *PCLFS_LOG_INFORMATION_CLASS, CLFS_LOG_INFORMATION_CLASS
+ms.keywords: _CLS_LOG_INFORMATION_CLASS, CLS_LOG_INFORMATION_CLASS, PPCLS_LOG_INFORMATION_CLASS, *PCLS_LOG_INFORMATION_CLASS, *PCLFS_LOG_INFORMATION_CLASS, CLFS_LOG_INFORMATION_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: *PCLS_LOG_INFORMATION_CLASS, PPCLS_LOG_INFORMATION_CLASS, CLS_LOG_INFORMATION_CLASS
+req.irql: PASSIVE_LEVEL
+req.typenames: CLS_LOG_INFORMATION_CLASS, PPCLS_LOG_INFORMATION_CLASS, *PCLS_LOG_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
 
@@ -93,21 +93,6 @@ Maps virtual LSNs to physical LSNs; only valid for physical logs. This enumerati
 ## -remarks
 The <i>eInformationClass</i> parameter of the <a href="..\wdm\nf-wdm-clfsquerylogfileinformation.md">ClfsQueryLogFileInformation</a> function is a value from the <b>CLFS_LOG_INFORMATION_CLASS</b> enumeration.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

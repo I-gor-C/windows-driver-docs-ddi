@@ -7,7 +7,7 @@ old-location: netvista\rilfunctionresults.htm
 old-project: netvista
 ms.assetid: 9a2b3bdd-4955-4293-b4e7-65da20b0d369
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILFUNCTIONRESULTS, RILFUNCTIONRESULTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,3 @@ typedef enum _RILFUNCTIONRESULTS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

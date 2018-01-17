@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: WMILIB_CONTEXT, *PWMILIB_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -61,20 +61,4 @@ Handle to the recorder log to delete.
 
 
 ## -remarks
-When a thread enters this function, no threads can subsequently  log to this buffer.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wpprecorder.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+When a thread enters this function, no threads can subsequently  log to this buffer.</p>

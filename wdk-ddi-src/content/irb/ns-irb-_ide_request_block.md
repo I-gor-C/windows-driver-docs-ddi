@@ -508,23 +508,8 @@ Provides a means of accessing members <b>IdeTaskFile</b>, <b>PowerChange</b>, an
 
 
 ## -remarks
-The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> but with characteristics more suitable for managing devices on an IDE bus.
+The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> but with characteristics more suitable for managing devices on an IDE bus.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -538,7 +523,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563909">POWER_CHANGE_INFO</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
 </dt>
 </dl>
  

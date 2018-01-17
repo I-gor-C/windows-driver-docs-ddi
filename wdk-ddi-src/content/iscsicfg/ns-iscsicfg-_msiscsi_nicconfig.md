@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: ee40ea1f-fe9b-4126-b5b1-83f60cf51909
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSiSCSI_NICConfig, MSiSCSI_NICConfig, *PMSiSCSI_NICConfig
+ms.keywords: _MSiSCSI_NICConfig, *PMSiSCSI_NICConfig, MSiSCSI_NICConfig
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MSiSCSI_NICConfig, *PMSiSCSI_NICConfig
+req.typenames: *PMSiSCSI_NICConfig, MSiSCSI_NICConfig
 ---
 
 # _MSiSCSI_NICConfig structure
@@ -92,21 +92,6 @@ Initiators that implement the MSiSCSI_NICConfig class should create one instance
 
 Initiators should register each instance of the MSiSCSI_NICConfig class by using the name of the physical device object (PDO) for the corresponding network port. It is optional that you implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsicfg.h (include Iscsicfg.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

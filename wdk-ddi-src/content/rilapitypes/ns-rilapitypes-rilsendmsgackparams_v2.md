@@ -7,8 +7,8 @@ old-location: netvista\rilsendmsgackparams_v2_2.htm
 old-project: netvista
 ms.assetid: 10bd2f88-ad1e-4d48-a338-e49c82a66d7a
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS_V2, *LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS, *LPRILSENDMSGACKPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILSENDMSGACKPARAMS_V2, *LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS
+req.typenames: RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS, *LPRILSENDMSGACKPARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -83,19 +83,3 @@ typedef struct _RILSENDMSGACKPARAMS_V2 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

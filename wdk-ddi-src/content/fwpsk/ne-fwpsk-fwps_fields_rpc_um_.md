@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_rpc_um.htm
 old-project: netvista
 ms.assetid: 7f493a14-174f-4101-8c08-069dbe9ec3e7
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: FWPS_FIELDS_RPC_UM_, FWPS_FIELDS_RPC_UM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -177,29 +177,3 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

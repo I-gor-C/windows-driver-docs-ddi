@@ -8,7 +8,7 @@ old-project: SD
 ms.assetid: b3d23404-2d55-4a37-8c4c-d857c5307f18
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: _STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST
+ms.keywords: RILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL (See Remarks section.)
-req.typenames: *PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST
+req.typenames: RILWRITEPHONEBOOKENTRYPARAMS, *LPRILWRITEPHONEBOOKENTRYPARAMS
 ---
 
 # PSDBUS_ACKNOWLEDGE_INT_ROUTINE callback
@@ -73,42 +73,6 @@ Traditionally, drivers acknowledge interrupts by simply returning the appropriat
 
 The caller must be running at IRQL &lt;= DISPATCH_LEVEL when it acknowledges that it has finished processing an interrupt.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddsd.h (include Ntddsd.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL (See Remarks section.)
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

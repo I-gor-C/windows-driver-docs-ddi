@@ -78,19 +78,3 @@ May display a dialog box that displays test options and results so that you can 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pointofservicecommontypes.h (include Pointofservicecommontypes.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

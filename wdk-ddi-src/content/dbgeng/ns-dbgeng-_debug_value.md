@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 568469ad-79c4-4437-aefe-a29e77e5143a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_VALUE, DEBUG_VALUE, *PDEBUG_VALUE
+ms.keywords: _DEBUG_VALUE, *PDEBUG_VALUE, DEBUG_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DEBUG_VALUE, *PDEBUG_VALUE
+req.typenames: *PDEBUG_VALUE, DEBUG_VALUE
 ---
 
 # _DEBUG_VALUE structure
@@ -228,20 +228,4 @@ See Remarks.
 
 
 ## -remarks
-The <b>Type</b> field specifies the value type that is being held by the structure. This also specifies which field in the structure is valid. The possible values of the <b>Type</b> field, and the corresponding field specified as valid in the structure, include the following.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The <b>Type</b> field specifies the value type that is being held by the structure. This also specifies which field in the structure is valid. The possible values of the <b>Type</b> field, and the corresponding field specified as valid in the structure, include the following.</p>

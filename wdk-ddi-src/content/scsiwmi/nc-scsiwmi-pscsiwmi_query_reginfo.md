@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 416f8629-324f-4698-bbe9-699f5d53011e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SCSISCAN_INFO, SCSISCAN_INFO, *PSCSISCAN_INFO
+ms.keywords: RxScavengeFobxsForNetRoot
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SCSISCAN_INFO, *PSCSISCAN_INFO
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -81,34 +81,8 @@ When a miniport driver receives an SRB in which the <b>Function</b> member is se
 
 The miniport driver provides new or updated registration information about individual blocks, or indicates blocks to remove, in the SCSI_WMILIB_CONTEXT structure it passes to <a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>. The miniport driver's <b>HwScsiWmiQueryReginfo</b> routine supplies a pointer to its MOF resource name.
 
-The miniport driver must not pend or block the SRB. The miniport driver must not call <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> or <a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a> from its <b>HwScsiWmiQueryReginfo</b> routine.
+The miniport driver must not pend or block the SRB. The miniport driver must not call <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff564657">ScsiPortNotification</a> from its <b>HwScsiWmiQueryReginfo</b> routine.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsiwmi.h (include Scsiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

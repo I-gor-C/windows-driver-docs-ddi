@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9D0A4D67-3284-4BCC-AC81-F0BCCC2DB9B7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _BDCB_IMAGE_INFORMATION, BDCB_IMAGE_INFORMATION, *PBDCB_IMAGE_INFORMATION
+ms.keywords: _BDCB_IMAGE_INFORMATION, *PBDCB_IMAGE_INFORMATION, BDCB_IMAGE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: BDCB_IMAGE_INFORMATION, *PBDCB_IMAGE_INFORMATION
+req.typenames: *PBDCB_IMAGE_INFORMATION, BDCB_IMAGE_INFORMATION
 ---
 
 # _BDCB_IMAGE_INFORMATION structure
@@ -248,31 +248,6 @@ The length of data pointed to by the <b>CertificateThumbprint</b> member.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

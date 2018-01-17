@@ -80,19 +80,3 @@ The buffer index of the surface to remove.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

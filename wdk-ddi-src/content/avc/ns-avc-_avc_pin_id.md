@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 0341b1c4-a050-45f4-b9fc-b28b6a8af75d
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _AVC_PIN_ID, *PAVC_PIN_ID, AVC_PIN_ID
+ms.keywords: _AVC_PIN_ID, AVC_PIN_ID, *PAVC_PIN_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PAVC_PIN_ID, AVC_PIN_ID
+req.typenames: AVC_PIN_ID, *PAVC_PIN_ID
 ---
 
 # _AVC_PIN_ID structure
@@ -66,21 +66,6 @@ This structure is used only as a member inside the AVC_MULTIFUNC_IRB structure. 
 
 See <a href="https://msdn.microsoft.com/3b4ec139-ff01-40bd-8e29-92f554180585">How to Use Avc.sys</a> For information about building and sending an AV/C command.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h (include Avc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -79,31 +79,6 @@ The <b>Processor</b> and <b>PoPreference</b> members of the <b>PEP_PROCESSOR_PAR
 The following table lists the three values that are defined for the <b>PoPreference</b> and <b>PepPreference</b> members.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

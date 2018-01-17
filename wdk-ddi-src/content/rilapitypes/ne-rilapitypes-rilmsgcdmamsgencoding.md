@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmamsgencoding_2.htm
 old-project: netvista
 ms.assetid: 85586f69-09c3-4ebe-ad90-eb1b18e9d552
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGCDMAMSGENCODING, RILMSGCDMAMSGENCODING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,19 +99,3 @@ typedef enum _RILMSGCDMAMSGENCODING {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsalphabet_2.htm
 old-project: netvista
 ms.assetid: 62cd5dd1-8775-4b60-9aa2-3f8e0a3a4b26
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGDCSALPHABET, RILMSGDCSALPHABET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,19 +67,3 @@ typedef enum _RILMSGDCSALPHABET {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

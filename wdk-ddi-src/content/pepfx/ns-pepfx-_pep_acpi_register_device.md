@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 96FB6959-1583-42E0-9851-A09AE0CB73DB
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_ACPI_REGISTER_DEVICE, *PPEP_ACPI_REGISTER_DEVICE, PEP_ACPI_REGISTER_DEVICE
+ms.keywords: _PEP_ACPI_REGISTER_DEVICE, PEP_ACPI_REGISTER_DEVICE, *PPEP_ACPI_REGISTER_DEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_ACPI_REGISTER_DEVICE, PEP_ACPI_REGISTER_DEVICE
+req.typenames: PEP_ACPI_REGISTER_DEVICE, *PPEP_ACPI_REGISTER_DEVICE
 ---
 
 # _PEP_ACPI_REGISTER_DEVICE structure
@@ -86,31 +86,6 @@ typedef struct _PEP_ACPI_REGISTER_DEVICE {
 ## -remarks
 This structure is used by the <a href="kernel.pep_notify_acpi_register_device">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification. The <b>AcpiDeviceName</b>, <b>InputFlags</b>, and <b>KernelHandle</b> members of the structure contain input values that are supplied by PoFx when this notification is sent to the PEP. The <b>DeviceHandle</b> and <b>OutputFlags</b> members contains output values that the PEP writes to this structure in response to the notification.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -109,21 +109,6 @@ For stereo 3D video, the video processor can adjust the offset between the left 
 Brightness, hue, contrast, and saturation support are always supported. These capability flags indicate support for the image filters defined by the <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_video_process_filter_0020.md">D3D12DDI_VIDEO_PROCESS_FILTER</a> enumeration. To apply a particular filter, call the SetInputStreamFilter method.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

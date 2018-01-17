@@ -7,7 +7,7 @@ old-location: netvista\rilgettokenparammask.htm
 old-project: netvista
 ms.assetid: d791b497-3ef3-42f1-a6e6-980992c97f45
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILGETTOKENPARAMMASK, RILDEVSPECIFICPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILDEVSPECIFICPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Oemrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

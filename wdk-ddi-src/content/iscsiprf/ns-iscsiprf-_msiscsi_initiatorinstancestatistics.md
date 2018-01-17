@@ -87,21 +87,6 @@ The number of failed sessions that belong to the initiator instance that <b>Uniq
 It is optional that you implement this class.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiprf.h (include Iscsiprf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

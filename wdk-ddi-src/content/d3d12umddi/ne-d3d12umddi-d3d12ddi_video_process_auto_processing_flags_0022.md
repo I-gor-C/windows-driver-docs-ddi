@@ -114,20 +114,4 @@ Additional processing not represented by these constants.
 
 
 ## -remarks
-These flags are only hints at the type of processing driver performs when automatic processing is enabled.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+These flags are only hints at the type of processing driver performs when automatic processing is enabled.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rilcallcustommediastate_2.htm
 old-project: netvista
 ms.assetid: 3c385208-992d-4a74-8382-4312f468300f
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLCUSTOMMEDIASTATE, RILCALLCUSTOMMEDIASTATE, *LPRILCALLCUSTOMMEDIASTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,3 @@ typedef struct _RILCALLCUSTOMMEDIASTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

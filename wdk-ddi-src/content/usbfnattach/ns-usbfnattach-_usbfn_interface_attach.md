@@ -81,21 +81,6 @@ A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfn
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnattach.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

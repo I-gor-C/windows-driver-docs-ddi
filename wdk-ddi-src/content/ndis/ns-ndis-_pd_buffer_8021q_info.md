@@ -7,7 +7,7 @@ old-location: netvista\pd_buffer_8021q_info.htm
 old-project: netvista
 ms.assetid: B5B2051E-C62F-4E3D-9C52-DE46145A2C24
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _PD_BUFFER_8021Q_INFO, PD_BUFFER_8021Q_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,39 +72,3 @@ The virtual LAN ID.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h</dt>
-</dl>
-</td>
-</tr>
-</table>

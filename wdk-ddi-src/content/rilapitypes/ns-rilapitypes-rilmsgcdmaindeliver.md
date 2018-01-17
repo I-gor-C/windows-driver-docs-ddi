@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmaindeliver_2.htm
 old-project: netvista
 ms.assetid: 0729c3e5-c95d-44fb-9aa4-079833b94619
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGCDMAINDELIVER, *LPRILMSGCDMAINDELIVER, RILMSGCDMAINDELIVER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -147,19 +147,3 @@ typedef struct _RILMSGCDMAINDELIVER {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

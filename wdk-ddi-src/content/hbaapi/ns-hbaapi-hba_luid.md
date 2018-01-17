@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: af272e27-6cb4-4f87-9c46-512ac80fa310
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_LUID, HBA_LUID, *PHBA_LUID
+ms.keywords: HBA_LUID, *PHBA_LUID, HBA_LUID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HBA_LUID, *PHBA_LUID
+req.typenames: *PHBA_LUID, HBA_LUID
 ---
 
 # HBA_LUID structure
@@ -62,21 +62,6 @@ Contains a buffer that holds the identification descriptor.
 ## -remarks
 A vendor specific LUID is not guaranteed to be unique or persistent. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

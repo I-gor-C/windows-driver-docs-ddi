@@ -7,7 +7,7 @@ old-location: netvista\rilsupsvcinfoparammask.htm
 old-project: netvista
 ms.assetid: d3a4780f-6fd4-40d3-a629-5dad31720506
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSUPSVCINFOPARAMMASK, RILSUPSVCINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -122,19 +122,3 @@ typedef enum _RILSUPSVCINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

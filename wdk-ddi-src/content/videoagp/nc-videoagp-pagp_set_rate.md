@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 6885df05-8cc4-4ae0-b7ca-6fd94374cfbf
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST
+ms.keywords: _VP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PVP_SCATTER_GATHER_LIST, VP_SCATTER_GATHER_LIST
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -128,52 +128,6 @@ The transfer rate set by the <b>AgpSetRate</b> function is persistent across cha
 
 The <b>AgpSetRate</b> function can be used to change an AGP chipset's data transfer rate to any of the rates shown in the preceding table, as long as that transfer rate has not been explicitly eliminated in the INF file that loaded the display driver. For more information, see <a href="https://msdn.microsoft.com/2075a10f-a504-4bdc-8112-9c583c5084bb">Display INF File Sections</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 2000 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Videoagp.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f3fdb436-53b6-4fb3-8746-1f852f7d928a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DISK_SIGNATURE, *PDISK_SIGNATURE, DISK_SIGNATURE
+ms.keywords: _DISK_SIGNATURE, DISK_SIGNATURE, *PDISK_SIGNATURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PDISK_SIGNATURE, DISK_SIGNATURE
+req.typenames: DISK_SIGNATURE, *PDISK_SIGNATURE
 ---
 
 # _DISK_SIGNATURE structure
@@ -95,31 +95,6 @@ Specifies the GUID that uniquely identifies the disk. The <b>Gpt</b> member of t
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This structure is only available on Windows XP and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\rilphonebookadditionalnumber.htm
 old-project: netvista
 ms.assetid: f90af220-6e48-49dd-b785-55da37894906
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILPHONEBOOKADDITIONALNUMBER, *LPRILPHONEBOOKADDITIONALNUMBER, RILPHONEBOOKADDITIONALNUMBER
+ms.date: 1/11/2018
+ms.keywords: RILPHONEBOOKADDITIONALNUMBER, RILPHONEBOOKADDITIONALNUMBER, *LPRILPHONEBOOKADDITIONALNUMBER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILPHONEBOOKADDITIONALNUMBER, RILPHONEBOOKADDITIONALNUMBER
+req.typenames: RILPHONEBOOKADDITIONALNUMBER, *LPRILPHONEBOOKADDITIONALNUMBER
 ---
 
 # RILPHONEBOOKADDITIONALNUMBER structure
@@ -70,19 +70,3 @@ typedef struct _RILPHONEBOOKADDITIONALNUMBER {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

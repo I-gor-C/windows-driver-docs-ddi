@@ -68,21 +68,6 @@ typedef struct D3DDDI_MULTIPLANE_OVERLAY_GROUP_CAPS_INPUT {
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include TBD)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

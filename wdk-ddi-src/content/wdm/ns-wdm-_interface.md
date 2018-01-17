@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d853643d-d3e8-40cc-a8a8-848f36f3bdae
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _INTERFACE, INTERFACE, *PINTERFACE
+ms.keywords: _INTERFACE, *PINTERFACE, INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: INTERFACE, *PINTERFACE
+req.typenames: *PINTERFACE, INTERFACE
 req.product: Windows 10 or later.
 ---
 
@@ -91,21 +91,6 @@ The <i>InterfaceReference</i> routine must be called by the driver that exports 
 
 Each driver that imports the interface (whether by sending <b>IRP_MN_QUERY_INTERFACE</b> or by receiving the interface from another driver) must call the <i>InterfaceDereference</i> routine after it has finished using the interface. After calling the <i>InterfaceDereference</i> routine, a driver cannot use the interface again without first reobtaining it.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 71E28D54-19D2-4A62-9A63-633186F67AD5
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_PROCESSOR_IDENTIFICATION_AMD64, *PDEBUG_PROCESSOR_IDENTIFICATION_AMD64, DEBUG_PROCESSOR_IDENTIFICATION_AMD64
+ms.keywords: _DEBUG_PROCESSOR_IDENTIFICATION_AMD64, DEBUG_PROCESSOR_IDENTIFICATION_AMD64, *PDEBUG_PROCESSOR_IDENTIFICATION_AMD64
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDEBUG_PROCESSOR_IDENTIFICATION_AMD64, DEBUG_PROCESSOR_IDENTIFICATION_AMD64
+req.typenames: DEBUG_PROCESSOR_IDENTIFICATION_AMD64, *PDEBUG_PROCESSOR_IDENTIFICATION_AMD64
 ---
 
 # _DEBUG_PROCESSOR_IDENTIFICATION_AMD64 structure
@@ -79,21 +79,6 @@ A vendor specified string.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6137ab93-7128-4e71-ba4f-604c7e025c91
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _REG_DELETE_KEY_INFORMATION, REG_DELETE_KEY_INFORMATION, REG_FLUSH_KEY_INFORMATION, *PREG_FLUSH_KEY_INFORMATION, *PREG_DELETE_KEY_INFORMATION
+ms.keywords: _REG_DELETE_KEY_INFORMATION, *PREG_DELETE_KEY_INFORMATION, REG_DELETE_KEY_INFORMATION, *PREG_FLUSH_KEY_INFORMATION, REG_FLUSH_KEY_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: REG_DELETE_KEY_INFORMATION, REG_FLUSH_KEY_INFORMATION, *PREG_FLUSH_KEY_INFORMATION, *PREG_DELETE_KEY_INFORMATION
+req.typenames: *PREG_DELETE_KEY_INFORMATION, REG_DELETE_KEY_INFORMATION, *PREG_FLUSH_KEY_INFORMATION, REG_FLUSH_KEY_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -83,31 +83,6 @@ The system passes this structure to the <a href="https://msdn.microsoft.com/libr
 
 For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available for Microsoft Windows XP and later versions of the Windows operating system, but some structure members are available only for Windows Vista and later versions.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

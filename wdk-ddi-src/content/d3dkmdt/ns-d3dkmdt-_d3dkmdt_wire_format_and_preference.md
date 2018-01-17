@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 24CC6A10-6462-4681-B340-E887B679F456
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
+ms.keywords: _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
+req.typenames: D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE
 ---
 
 # _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE structure
@@ -103,20 +103,4 @@ The five standard color sample formats for pixel transmission are exposed separa
 During mode enumeration via EnumVidPnCofuncModality, the driver should set values into all five fields to indicate the pixel encodings that are supported as inputs to the display device in the current configuration.
 
 When SetTimingsFromVidPn is called, one of these fields will indicate the pixel encoding and sample format to be applied.
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmdt.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

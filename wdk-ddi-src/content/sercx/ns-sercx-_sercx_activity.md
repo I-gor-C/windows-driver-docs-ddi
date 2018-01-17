@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 743AA179-3FD1-4528-9A78-5ECC53642D55
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SERCX_ACTIVITY, SERCX_ACTIVITY, *PSERCX_ACTIVITY
+ms.keywords: _SERCX_ACTIVITY, *PSERCX_ACTIVITY, SERCX_ACTIVITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
-req.typenames: SERCX_ACTIVITY, *PSERCX_ACTIVITY
+req.typenames: *PSERCX_ACTIVITY, SERCX_ACTIVITY
 req.product: Windows 10 or later.
 ---
 
@@ -79,31 +79,6 @@ The <b>SERCX_ACTIVITY</b> structure summarizes the pending work that the serial 
 
 Typically, <b>SerCxGetActivity</b> is called from the main loop of the transmit/receive DPC function in the serial controller driver. This function calls <b>SerCxGetActivity</b>, processes a complete transmit or receive operation, and then calls <b>SerCxGetActivity</b> again to determine whether an operation of another type requires work.  If more work is available, the DPC function might perform this work before it returns.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

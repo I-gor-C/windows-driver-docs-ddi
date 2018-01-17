@@ -7,7 +7,7 @@ old-location: netvista\wdi_radio_measurement_action.htm
 old-project: netvista
 ms.assetid: AA17E666-5934-453D-B55D-98F8616F6369
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_RADIO_MEASUREMENT_ACTION, WDI_RADIO_MEASUREMENT_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,39 +67,3 @@ This refers to the neighbor report response action frame from the AP.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

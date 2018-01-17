@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 80a6a5d8-b13a-418d-a4bd-941d3a913c1e
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _HID_DESCRIPTOR, HID_DESCRIPTOR, *PHID_DESCRIPTOR
+ms.keywords: _HID_DESCRIPTOR, *PHID_DESCRIPTOR, HID_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HID_DESCRIPTOR, *PHID_DESCRIPTOR
+req.typenames: *PHID_DESCRIPTOR, HID_DESCRIPTOR
 ---
 
 # _HID_DESCRIPTOR structure
@@ -85,21 +85,6 @@ The HID class driver uses an <a href="..\hidport\ni-hidport-ioctl_hid_get_device
 
 For information about HID descriptors, see the Universal Serial Bus (USB) standard<i> Device Class Definition for Human Interface Devices (HID)</i> located at the <a href="http://www.usb.org/home">USB Implementers Forum website</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hidport.h (include Hidport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

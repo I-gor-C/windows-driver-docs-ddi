@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1AD3B5E6-CF90-49D2-8FF7-FE309E4331CE
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STOR_POFX_DEVICE_V2, STOR_POFX_DEVICE_V2, *PSTOR_POFX_DEVICE_V2
+ms.keywords: _STOR_POFX_DEVICE_V2, *PSTOR_POFX_DEVICE_V2, STOR_POFX_DEVICE_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: STOR_POFX_DEVICE_V2, *PSTOR_POFX_DEVICE_V2
+req.typenames: *PSTOR_POFX_DEVICE_V2, STOR_POFX_DEVICE_V2
 req.product: Windows 10 or later.
 ---
 
@@ -170,31 +170,6 @@ To register a storage unit for Storport PoFx support, the miniport driver implem
 
 The component for the storage device identified by its <b>Components</b> array index. Storage devices have only one component so the index of 0 is used.  Routines such as  <a href="..\storport\nf-storport-storportpofxactivatecomponent.md">StorPortPoFxActivateComponent</a> and <a href="..\storport\nf-storport-storportpofxidlecomponent.md">StorPortPoFxIdleComponent</a> use the array index of a component to identify the component.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

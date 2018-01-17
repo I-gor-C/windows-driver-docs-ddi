@@ -133,31 +133,6 @@ The display miniport driver can indicate up to four bank preferences in the <b>H
  The video memory manager  allocates resources from  preferred segments that the <b>PreferredSegment</b> member of DXGK_ALLOCATIONINFO specifies. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

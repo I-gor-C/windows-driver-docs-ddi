@@ -7,7 +7,7 @@ old-location: netvista\rilmessagetype.htm
 old-project: netvista
 ms.assetid: 02960e7c-f1b2-4c28-9f9b-f180df3d9563
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMESSAGETYPE, RILMESSAGETYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -78,19 +78,3 @@ typedef enum _RILMESSAGETYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

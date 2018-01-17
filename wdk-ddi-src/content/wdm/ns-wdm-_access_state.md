@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 3d1d6407-f853-48d5-bd54-2eacece48b84
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _ACCESS_STATE, *PACCESS_STATE, ACCESS_STATE
+ms.keywords: _ACCESS_STATE, ACCESS_STATE, *PACCESS_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PACCESS_STATE, ACCESS_STATE
+req.typenames: ACCESS_STATE, *PACCESS_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -169,21 +169,6 @@ A <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structur
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

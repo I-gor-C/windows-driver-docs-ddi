@@ -7,8 +7,8 @@ old-location: netvista\rilimshandoverattempt.htm
 old-project: netvista
 ms.assetid: 22491e3c-fa23-473d-b3e6-92c776b81204
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT
+ms.date: 1/11/2018
+ms.keywords: RILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILIMSHANDOVERATTEMPT, *LPRILIMSHANDOVERATTEMPT
+req.typenames: *LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT
 ---
 
 # RILIMSHANDOVERATTEMPT structure
@@ -70,19 +70,3 @@ typedef struct _RILIMSHANDOVERATTEMPT {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

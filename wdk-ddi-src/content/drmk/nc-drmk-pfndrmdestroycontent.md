@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 24B98C91-9EB3-4D00-8D58-F6C96610946A
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WDI_TX_METADATA, *PWDI_TX_METADATA, WDI_TX_METADATA
+ms.keywords: _WDI_TX_METADATA, WDI_TX_METADATA, *PWDI_TX_METADATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PWDI_TX_METADATA, WDI_TX_METADATA
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 # PFNDRMDESTROYCONTENT callback
@@ -69,19 +69,3 @@ This return value is reserved for system use.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

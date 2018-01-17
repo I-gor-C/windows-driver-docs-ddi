@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: fa6af43c-4fbd-43b5-9c3d-61254dfe894f
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SendTargets_IN, *PSendTargets_IN, SendTargets_IN
+ms.keywords: _SendTargets_IN, SendTargets_IN, *PSendTargets_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSendTargets_IN, SendTargets_IN
+req.typenames: SendTargets_IN, *PSendTargets_IN
 ---
 
 # _SendTargets_IN structure
@@ -68,21 +68,6 @@ The authentication key text in the PDU.
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

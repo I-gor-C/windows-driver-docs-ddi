@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 10b6660c-7f48-4717-89d4-d6a5eb6594c8
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DeleteInitiatorNodeName_IN, DeleteInitiatorNodeName_IN, *PDeleteInitiatorNodeName_IN
+ms.keywords: _DeleteInitiatorNodeName_IN, *PDeleteInitiatorNodeName_IN, DeleteInitiatorNodeName_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DeleteInitiatorNodeName_IN, *PDeleteInitiatorNodeName_IN
+req.typenames: *PDeleteInitiatorNodeName_IN, DeleteInitiatorNodeName_IN
 ---
 
 # _DeleteInitiatorNodeName_IN structure
@@ -62,21 +62,6 @@ The iSCSI initiator node name that is to be deleted.
 ## -remarks
 It is optional that you implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -71,31 +71,4 @@ If the operation succeeds, this method returns S_OK. Otherwise, this method retu
 
 
 ## -remarks
-This method enables you to extend the WPD commands and interfaces in a device-specific way.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sensorsclassextension.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsClassExtension.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+This method enables you to extend the WPD commands and interfaces in a device-specific way.</p>

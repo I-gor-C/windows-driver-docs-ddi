@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Dxapi.lib
 req.dll: 
 req.irql: 
-req.typenames: DRMRIGHTS, *PDRMRIGHTS
+req.typenames: *PDRMRIGHTS, DRMRIGHTS
 ---
 
 # DxApiGetVersion function
@@ -65,43 +65,6 @@ Returns the major and minor version numbers of Direct Sound as 4 and 2 respectiv
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dxapi.h (include Dxapi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dxapi.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 79ABCF93-4EC3-49D5-9943-C820B0B8CF66
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_DISCONNECT_IO_PINS_PARAMETERS, *PGPIO_DISCONNECT_IO_PINS_PARAMETERS, GPIO_DISCONNECT_IO_PINS_PARAMETERS
+ms.keywords: _GPIO_DISCONNECT_IO_PINS_PARAMETERS, GPIO_DISCONNECT_IO_PINS_PARAMETERS, *PGPIO_DISCONNECT_IO_PINS_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PGPIO_DISCONNECT_IO_PINS_PARAMETERS, GPIO_DISCONNECT_IO_PINS_PARAMETERS
+req.typenames: GPIO_DISCONNECT_IO_PINS_PARAMETERS, *PGPIO_DISCONNECT_IO_PINS_PARAMETERS
 ---
 
 # _GPIO_DISCONNECT_IO_PINS_PARAMETERS structure
@@ -90,31 +90,6 @@ By default, when a GPIO I/O pin is disconnected, the GPIO controller driver conf
 
 For example, a peripheral device driver might open a logical connection to a GPIO I/O pin that is configured as an output, and then write a bit value of 1 to the pin. The <b>PreserveConfiguration</b> flag enables the driver to close the connection without altering the pin's output level. Later, if the driver needs to change the output level of the pin from 1 to 0, the driver opens a new connection to the pin.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

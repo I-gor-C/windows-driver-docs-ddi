@@ -7,7 +7,7 @@ old-location: netvista\rilmsgserviceinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 2c5d29da-6577-4428-ac7b-1d3ff647086a
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGSERVICEINFOPARAMMASK, RILMSGSERVICEINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,19 +67,3 @@ typedef enum _RILMSGSERVICEINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7b697241-6411-4fb0-b633-502233f2d155
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetGenerationalGuid_OUT, *PSetGenerationalGuid_OUT, SetGenerationalGuid_OUT
+ms.keywords: _SetGenerationalGuid_OUT, SetGenerationalGuid_OUT, *PSetGenerationalGuid_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetGenerationalGuid_OUT, SetGenerationalGuid_OUT
+req.typenames: SetGenerationalGuid_OUT, *PSetGenerationalGuid_OUT
 ---
 
 # _SetGenerationalGuid_OUT structure
@@ -62,21 +62,6 @@ On output, the status of the <b>SetGenerationalGuid</b> operation. For a list of
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -108,7 +108,7 @@ To give the miniport driver an opportunity to alter the current pin counts.
 
 Miniport drivers typically do not need to change the <i>FilterNecessary</i> parameter, but it is included for the sake of completeness.
 
-During the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a> call, the port driver calls the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a> method to obtain a pointer to the filter descriptor, which includes the miniport driver's pin-descriptor array (see <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_7.md">PCPIN_DESCRIPTOR</a>). Thereafter, the port driver accesses the pin descriptors to respond to queries for pin properties.
+During the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536943">IPort::Init</a> call, the port driver calls the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a> method to obtain a pointer to the filter descriptor, which includes the miniport driver's pin-descriptor array (see <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_7.md">PCPIN_DESCRIPTOR</a>). Thereafter, the port driver accesses the pin descriptors to respond to queries for pin properties.
 
 If the miniport driver supports the <b>IPinCount</b> interface, the port driver calls <code>PinCount</code> to give the miniport driver an opportunity to update the pin counts before replying to a pin-property request. If the miniport driver does not support <b>IPinCount</b>, the port driver simply uses the static pin-count limits in the pin-descriptor array.
 
@@ -133,42 +133,6 @@ Miniport drivers must not explicitly cause streams to be created or destroyed fr
 The <code>PinCount</code> method is called at IRQL PASSIVE_LEVEL. The code for this method must reside in paged memory.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -181,7 +145,7 @@ PASSIVE_LEVEL
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
 </dt>
 <dt>
-<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_7.md">PCPIN_DESCRIPTOR</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c93_7.md">PCPIN_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565193">KSPROPERTY_PIN_CINSTANCES</a>

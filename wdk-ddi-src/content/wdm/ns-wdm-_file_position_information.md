@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 04f01faf-599e-4c62-82ce-c147b4820c8f
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _FILE_POSITION_INFORMATION, FILE_POSITION_INFORMATION, *PFILE_POSITION_INFORMATION
+ms.keywords: _FILE_POSITION_INFORMATION, *PFILE_POSITION_INFORMATION, FILE_POSITION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: FILE_POSITION_INFORMATION, *PFILE_POSITION_INFORMATION
+req.typenames: *PFILE_POSITION_INFORMATION, FILE_POSITION_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -65,21 +65,6 @@ FILE_READ_DATA or FILE_WRITE_DATA access to the file is required to change this 
 
 If the file was opened or created with the FILE_NO_INTERMEDIATE_BUFFERING option, the value of <b>CurrentByteOffset</b> must be an integral multiple of the sector size of the underlying device.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

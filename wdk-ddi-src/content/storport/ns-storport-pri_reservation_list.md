@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 5756e907-008a-49c3-b1cd-947cb0ce1bd4
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: PRI_RESERVATION_LIST, PRI_RESERVATION_LIST, *PPRI_RESERVATION_LIST
+ms.keywords: PRI_RESERVATION_LIST, *PPRI_RESERVATION_LIST, PRI_RESERVATION_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: PRI_RESERVATION_LIST, *PPRI_RESERVATION_LIST
+req.typenames: *PPRI_RESERVATION_LIST, PRI_RESERVATION_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -75,28 +75,13 @@ An array of reservation descriptors.
 
 
 ## -remarks
-The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> request is used to obtain information about persistent reservations and reservation keys that are active within a device server.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560582">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a> request is used to obtain information about persistent reservations and reservation keys that are active within a device server.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Ntddstor.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_in.md">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560582">IOCTL_STORAGE_PERSISTENT_RESERVE_IN</a>
 </dt>
 </dl>
  

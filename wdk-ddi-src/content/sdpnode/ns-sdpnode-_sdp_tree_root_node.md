@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: bde75364-387b-4f57-8942-1cf32652c02d
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE
+ms.keywords: _SDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
-req.typenames: *PSDP_TREE_ROOT_NODE, SDP_TREE_ROOT_NODE
+req.typenames: SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE
 req.product: Windows 10 or later.
 ---
 
@@ -93,31 +93,6 @@ The
     <a href="..\sdplib\nf-sdplib-sdpfindattributeintree.md">SdpFindAttributeInTree</a> function
     searches a populated SDP_TREE_ROOT_NODE structure for an SDP attribute value.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sdpnode.h (include Sdpnode.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

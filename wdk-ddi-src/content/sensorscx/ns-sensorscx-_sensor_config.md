@@ -8,7 +8,7 @@ old-project: sensors
 ms.assetid: E21E2FEC-8733-4A8A-A0C4-899F10824F9B
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SENSOR_CONFIG, *PSENSOR_CONFIG, SENSOR_CONFIG
+ms.keywords: _SENSOR_CONFIG, SENSOR_CONFIG, *PSENSOR_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSENSOR_CONFIG, SENSOR_CONFIG
+req.typenames: SENSOR_CONFIG, *PSENSOR_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -63,44 +63,8 @@ The allocated size of this structure (in bytes).
 
 ### -field pEnumerationList
 
-The list of enumerations. For more information, see <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>.
+The list of enumerations. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>.
 
 
 ## -remarks
-The SENSOR_CONFIG structure works with the following helper function:
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012 R2
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsCx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+The SENSOR_CONFIG structure works with the following helper function:</p>

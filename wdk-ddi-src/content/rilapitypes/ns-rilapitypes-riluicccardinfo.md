@@ -7,8 +7,8 @@ old-location: netvista\riluicccardinfo_2.htm
 old-project: netvista
 ms.assetid: c49d538c-49c9-43ba-bc97-324706a5a5b9
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILUICCCARDINFO, *LPRILUICCCARDINFO, RILUICCCARDINFO
+ms.date: 1/11/2018
+ms.keywords: RILUICCCARDINFO, RILUICCCARDINFO, *LPRILUICCCARDINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILUICCCARDINFO, RILUICCCARDINFO
+req.typenames: RILUICCCARDINFO, *LPRILUICCCARDINFO
 req.product: Windows 10 or later.
 ---
 
@@ -79,19 +79,3 @@ typedef struct _RILUICCCARDINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

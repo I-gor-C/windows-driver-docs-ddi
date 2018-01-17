@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 1CE962A4-7F99-4F81-8B85-265A4225B88A
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _FCP_GET_RESPONSE, FCP_RESPONSE, FCP_GET_RESPONSE, *PFCP_RESPONSE, *PFCP_GET_RESPONSE
+ms.keywords: _FCP_GET_RESPONSE, *PFCP_RESPONSE, *PFCP_GET_RESPONSE, FCP_RESPONSE, FCP_GET_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: FCP_RESPONSE, FCP_GET_RESPONSE, *PFCP_RESPONSE, *PFCP_GET_RESPONSE
+req.typenames: *PFCP_RESPONSE, *PFCP_GET_RESPONSE, FCP_RESPONSE, FCP_GET_RESPONSE
 ---
 
 # _FCP_GET_RESPONSE structure
@@ -82,21 +82,6 @@ If the request is queued, the protocol driver sets a status of STATUS_PENDING. I
 
 If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INVALID_PARAMETER.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 73BD1E87-150F-4C91-811E-D7139E98B365
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.keywords: _USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBFN_USB_STRING, USBFN_USB_STRING
+req.typenames: *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 req.product: Windows 10 or later.
 ---
 
@@ -76,19 +76,3 @@ If the request is successful, the USB function class extension (UFX) returns STA
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnioctl.h (include Usbfnioctl.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

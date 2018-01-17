@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: ac3c4609-094d-4003-a5ee-b609f7ec13e1
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _D3DDDIARG_SETVERTEXSHADERCONST, D3DDDIARG_SETVERTEXSHADERCONST, D3DDDIARG_SETVERTEXSHADERCONSTB, D3DDDIARG_SETVERTEXSHADERCONSTI
+ms.keywords: _D3DDDIARG_SETVERTEXSHADERCONST, D3DDDIARG_SETVERTEXSHADERCONST, D3DDDIARG_SETVERTEXSHADERCONSTI, D3DDDIARG_SETVERTEXSHADERCONSTB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -76,31 +76,6 @@ Boolean values for the D3DDDIARG_SETVERTEXSHADERCONSTB structure in the <a href=
 
 The preceding structures are identical, as the following definitions show:
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

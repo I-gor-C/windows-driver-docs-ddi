@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3a4b55b1-977d-43fb-9968-7a734e04b21b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration, *PMSiSCSI_BootConfiguration
+ms.keywords: _MSiSCSI_BootConfiguration, *PMSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MSiSCSI_BootConfiguration, *PMSiSCSI_BootConfiguration
+req.typenames: *PMSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration
 ---
 
 # _MSiSCSI_BootConfiguration structure
@@ -116,21 +116,6 @@ A variable length array of characters that specifies the user name to use with t
 ## -remarks
 The WMI tool suite automatically generates a declaration of the MSiSCSI_BootConfiguration structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562979">MSiSCSI_BootConfiguration WMI Class</a> in <i>Config.mof</i>.It is optional that you implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsicfg.h (include Iscsicfg.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

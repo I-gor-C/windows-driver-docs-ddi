@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: b8eb6321-928f-4366-9553-c75900fa1ac6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SM_RemovePort_IN, SM_RemovePort_IN, *PSM_RemovePort_IN
+ms.keywords: _SM_RemovePort_IN, *PSM_RemovePort_IN, SM_RemovePort_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SM_RemovePort_IN, *PSM_RemovePort_IN
+req.typenames: *PSM_RemovePort_IN, SM_RemovePort_IN
 ---
 
 # _SM_RemovePort_IN structure
@@ -66,20 +66,4 @@ An event type value.
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_RemovePort_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_EventControl WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_RemovePort_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_EventControl WMI class.</p>

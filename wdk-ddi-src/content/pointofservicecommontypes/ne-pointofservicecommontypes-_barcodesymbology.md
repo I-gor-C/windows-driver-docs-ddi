@@ -618,19 +618,3 @@ If greater than or equal to this type, the device has returned an OEM or undefin
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pointofservicecommontypes.h (include Pointofservicecommontypes.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: A7EDC949-A2C6-43E9-9CA0-886FEE5282F5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT_VER3, CIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT, CIP_DATA_FORMAT
+ms.keywords: _CIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT_VER3, CIP_DATA_FORMAT_VER3, CIP_DATA_FORMAT, *PCIP_DATA_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -121,21 +121,6 @@ This member is the number of blocks per packet; used for blocking mode only
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3a0d6633-b4a6-4864-96ae-4f91de11daa1
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_PortStatistics, *PHBA_PORTSTATISTICS, HBA_PORTSTATISTICS, *PSMHBA_FCPHYSTATISTICS, SMHBA_FCPHYSTATISTICS
+ms.keywords: HBA_PortStatistics, *PHBA_PORTSTATISTICS, HBA_PORTSTATISTICS, SMHBA_FCPHYSTATISTICS, *PSMHBA_FCPHYSTATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -145,21 +145,6 @@ Reports the value of the invalid CRC count field of the link error status block 
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

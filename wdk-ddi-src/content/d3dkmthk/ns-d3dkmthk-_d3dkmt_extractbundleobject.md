@@ -78,19 +78,3 @@ The pointer to an array of NT handles for each DXGK object.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 97F3D9BE-9069-4A4A-B114-FC9331510512
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _IMAGE_INFO_EX, *PIMAGE_INFO_EX, IMAGE_INFO_EX
+ms.keywords: _IMAGE_INFO_EX, IMAGE_INFO_EX, *PIMAGE_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PIMAGE_INFO_EX, IMAGE_INFO_EX
+req.typenames: IMAGE_INFO_EX, *PIMAGE_INFO_EX
 ---
 
 # _IMAGE_INFO_EX structure
@@ -74,21 +74,6 @@ Contains a pointer to the file object of the backing file for the image. The dri
 ## -remarks
 If the <b>ExtendedInfoPresent</b> flag is set, the <b>IMAGE_INFO</b> structure is part of a larger, extended version of the image information structure. In this case, the load-image notify routine can use the <b>CONTAINING_RECORD</b> macro in the Winnt.h header file to obtain the base address of the <b>IMAGE_INFO_EX</b> structure. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

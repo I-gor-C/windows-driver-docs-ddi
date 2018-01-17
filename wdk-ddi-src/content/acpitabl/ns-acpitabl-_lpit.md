@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: 351BC859-E703-4F75-B691-A503C08560CF
 ms.author: windowsdriverdev
 ms.date: 12/31/2017
-ms.keywords: _LPIT, *PLPIT, LPIT
+ms.keywords: _LPIT, LPIT, *PLPIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PLPIT, LPIT
+req.typenames: LPIT, *PLPIT
 ---
 
 # _LPIT structure
@@ -66,19 +66,3 @@ An array of states.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Acpitabl.h (include Acpitabl.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

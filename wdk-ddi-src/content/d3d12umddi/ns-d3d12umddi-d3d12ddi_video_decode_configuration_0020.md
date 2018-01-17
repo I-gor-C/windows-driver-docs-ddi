@@ -72,19 +72,3 @@ The interlace type used by the coded frames.  See D3D12DDI_VIDEO_CODED_INTERLACE
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

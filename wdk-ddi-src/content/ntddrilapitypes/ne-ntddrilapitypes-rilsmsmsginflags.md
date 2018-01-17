@@ -7,7 +7,7 @@ old-location: netvista\rilsmsmsginflags.htm
 old-project: netvista
 ms.assetid: aaa7967a-dfbc-4c4c-a309-095628fae6c0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSMSMSGINFLAGS, RILSMSMSGINFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,19 +62,3 @@ typedef enum _RILSMSMSGINFLAGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

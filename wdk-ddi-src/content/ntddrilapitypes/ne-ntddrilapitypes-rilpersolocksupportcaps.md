@@ -7,7 +7,7 @@ old-location: netvista\rilpersolocksupportcaps.htm
 old-project: netvista
 ms.assetid: 1aeb5eef-c334-4e27-8ce9-1c8efc85e82c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILPERSOLOCKSUPPORTCAPS, RILPERSOLOCKSUPPORTCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -98,19 +98,3 @@ typedef enum _RILPERSOLOCKSUPPORTCAPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

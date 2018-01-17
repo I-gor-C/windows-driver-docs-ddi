@@ -66,19 +66,3 @@ A DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION structure that specifies additional t
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

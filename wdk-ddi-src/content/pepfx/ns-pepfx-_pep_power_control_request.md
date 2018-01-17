@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: E6665E96-5C58-4533-906A-D9525BA6824C
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_POWER_CONTROL_REQUEST, PEP_POWER_CONTROL_REQUEST, *PPEP_POWER_CONTROL_REQUEST
+ms.keywords: _PEP_POWER_CONTROL_REQUEST, *PPEP_POWER_CONTROL_REQUEST, PEP_POWER_CONTROL_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PEP_POWER_CONTROL_REQUEST, *PPEP_POWER_CONTROL_REQUEST
+req.typenames: *PPEP_POWER_CONTROL_REQUEST, PEP_POWER_CONTROL_REQUEST
 ---
 
 # _PEP_POWER_CONTROL_REQUEST structure
@@ -108,31 +108,6 @@ If the output buffer is too small to receive all of the result data from the ope
 
 The driver for a device can call the <a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a> routine to request a power control operation on the device. During this call, PoFx delegates the handling of this request to the PEP that owns the device. The <b>PowerControlCode</b> member of the <b>PEP_POWER_CONTROL_REQUEST</b> structure contains a custom control code whose meaning is understood by both the driver and the PEP for the device.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

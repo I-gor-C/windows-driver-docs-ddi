@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 7f0c7d72-9fe6-4cc1-8028-fd64cdee5d85
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _DEVICE_DESCRIPTION, DEVICE_DESCRIPTION, *PDEVICE_DESCRIPTION
+ms.keywords: _DEVICE_DESCRIPTION, *PDEVICE_DESCRIPTION, DEVICE_DESCRIPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: DEVICE_DESCRIPTION, *PDEVICE_DESCRIPTION
+req.typenames: *PDEVICE_DESCRIPTION, DEVICE_DESCRIPTION
 req.product: Windows 10 or later.
 ---
 
@@ -259,31 +259,6 @@ To indicate that the DMA controller hardware cannot reliably maintain an accurat
 
 A driver should specify <b>TypeF</b> as the <b>DmaSpeed</b> value only if the computer's ACPI firmware supports it.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 2000.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

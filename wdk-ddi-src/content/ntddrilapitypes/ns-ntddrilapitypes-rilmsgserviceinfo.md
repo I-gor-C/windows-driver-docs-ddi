@@ -7,8 +7,8 @@ old-location: netvista\rilmsgserviceinfo.htm
 old-project: netvista
 ms.assetid: 21b1c6ef-b8f3-4230-bc3f-7ac19c6cb2d1
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILMSGSERVICEINFO, *LPRILMSGSERVICEINFO, RILMSGSERVICEINFO
+ms.date: 1/11/2018
+ms.keywords: RILMSGSERVICEINFO, RILMSGSERVICEINFO, *LPRILMSGSERVICEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILMSGSERVICEINFO, RILMSGSERVICEINFO
+req.typenames: RILMSGSERVICEINFO, *LPRILMSGSERVICEINFO
 ---
 
 # RILMSGSERVICEINFO structure
@@ -74,19 +74,3 @@ typedef struct _RILMSGSERVICEINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

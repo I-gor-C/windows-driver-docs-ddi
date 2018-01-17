@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_egress_vswitch_802_3.htm
 old-project: netvista
 ms.assetid: de899526-ea77-4f0c-a05a-b28bb422a9b4
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: FWPS_FIELDS_EGRESS_VSWITCH_ETHERNET_, FWPS_FIELDS_EGRESS_VSWITCH_ETHERNET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -152,29 +152,3 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

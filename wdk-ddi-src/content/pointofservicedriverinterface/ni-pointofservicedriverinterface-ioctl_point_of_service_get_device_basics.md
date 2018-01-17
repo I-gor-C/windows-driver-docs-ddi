@@ -83,19 +83,3 @@ There is insufficient memory.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pointofservicedriverinterface.h (include Pointofservicedriverinterface.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

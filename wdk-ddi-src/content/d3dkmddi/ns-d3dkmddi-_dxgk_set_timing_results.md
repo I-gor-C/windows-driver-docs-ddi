@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: EA5C845B-76FD-40AD-B4E8-78601CA847CE
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_SET_TIMING_RESULTS, *PDXGK_SET_TIMING_RESULTS, DXGK_SET_TIMING_RESULTS
+ms.keywords: _DXGK_SET_TIMING_RESULTS, DXGK_SET_TIMING_RESULTS, *PDXGK_SET_TIMING_RESULTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PDXGK_SET_TIMING_RESULTS, DXGK_SET_TIMING_RESULTS
+req.typenames: DXGK_SET_TIMING_RESULTS, *PDXGK_SET_TIMING_RESULTS
 ---
 
 # _DXGK_SET_TIMING_RESULTS structure
@@ -78,19 +78,3 @@ UINT used to operate on the combined bit-fields.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

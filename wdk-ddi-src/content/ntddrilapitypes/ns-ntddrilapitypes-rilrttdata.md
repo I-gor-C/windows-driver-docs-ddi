@@ -7,8 +7,8 @@ old-location: netvista\rilrttdata.htm
 old-project: netvista
 ms.assetid: 037831c7-d0ef-4cbc-a414-a77010e228a5
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILRTTDATA, *LPRILRTTDATA, RILRTTDATA
+ms.date: 1/11/2018
+ms.keywords: RILRTTDATA, RILRTTDATA, *LPRILRTTDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILRTTDATA, RILRTTDATA
+req.typenames: RILRTTDATA, *LPRILRTTDATA
 ---
 
 # RILRTTDATA structure
@@ -70,19 +70,3 @@ typedef struct _RILRTTDATA {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

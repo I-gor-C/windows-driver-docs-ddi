@@ -7,7 +7,7 @@ old-location: netvista\net_pnp_event.htm
 old-project: netvista
 ms.assetid: b68fb279-c1d4-4f0b-8b04-b17a01a65560
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _NET_PNP_EVENT, *PNET_PNP_EVENT, NET_PNP_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -203,7 +203,7 @@ Indicates that a binding event failure has occurred.
 
 ### -field NetEventSwitchActivate
 
-Indicates that the Hyper-V Extensible Switch has completed activation, and switch extensions can now safely query for further switch configuration. The indication is only used in the Hyper-V Extensible Switch stack, issued by the extension miniport. See <a href="https://msdn.microsoft.com/AF646860-01AB-4F4B-84F8-B570054B10FC">Querying the Hyper-V Extensible Switch Configuration</a> and <a href="..\ntddndis\ns-ntddndis-_ndis_switch_parameters.md">NDIS_SWITCH_PARAMETERS</a> for more details. 
+Indicates that the Hyper-V Extensible Switch has completed activation, and switch extensions can now safely query for further switch configuration. The indication is only used in the Hyper-V Extensible Switch stack, issued by the extension miniport. See <a href="https://msdn.microsoft.com/AF646860-01AB-4F4B-84F8-B570054B10FC">Querying the Hyper-V Extensible Switch Configuration</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh598220">NDIS_SWITCH_PARAMETERS</a> for more details. 
 
 
 ### -field NetEventInhibitBindsAbove
@@ -392,7 +392,7 @@ The buffer might contain NULL or an
 ### -field NetEventPortActivation
 
 The buffer contains the first entry in a list of 
-       <a href="..\ntddndis\ns-ntddndis-_ndis_port.md">NDIS_PORT</a> structures that identify the ports
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff566769">NDIS_PORT</a> structures that identify the ports
        that NDIS will activate. You can use the 
        <b>Next</b> member of the NDIS_PORT structure to get the next structure in the list.
 
@@ -533,32 +533,6 @@ The
     <b>Buffer</b> contains information that is specific to the type of event.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 5.1, and NDIS 6.0 and later. For more information about the NDIS 5.1 version of this structure, see 
-   <a href="https://msdn.microsoft.com/library/windows/hardware/ff559141">NET_PNP_EVENT (NDIS 5.1)</a>.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -568,7 +542,7 @@ Header
 <a href="..\ndis\ns-ndis-_ndis_bind_failed_notification.md">NDIS_BIND_FAILED_NOTIFICATION</a>
 </dt>
 <dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_port.md">NDIS_PORT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566769">NDIS_PORT</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_protocol_pause_parameters.md">
@@ -582,7 +556,7 @@ Header
 <a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">NDIS_RESTART_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_parameters.md">NDIS_SWITCH_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598220">NDIS_SWITCH_PARAMETERS</a>
 </dt>
 <dt>
 <a href="..\ndis\nf-ndis-ndiscompletenetpnpevent.md">NdisCompleteNetPnPEvent</a>
@@ -608,5 +582,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_PNP_EVENT structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NET_PNP_EVENT structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

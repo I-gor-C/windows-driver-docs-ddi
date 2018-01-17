@@ -7,8 +7,8 @@ old-location: netvista\riluicctoolkitprofile.htm
 old-project: netvista
 ms.assetid: ff1f5839-78be-48ab-9c26-f8fee6788d51
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILUICCTOOLKITPROFILE, *LPRILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE
+ms.date: 1/11/2018
+ms.keywords: RILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE, *LPRILUICCTOOLKITPROFILE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE
+req.typenames: RILUICCTOOLKITPROFILE, *LPRILUICCTOOLKITPROFILE
 ---
 
 # RILUICCTOOLKITPROFILE structure
@@ -66,19 +66,3 @@ typedef struct _RILUICCTOOLKITPROFILE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

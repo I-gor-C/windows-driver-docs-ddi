@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 73856669-ACE9-46B0-AC7A-282D9C8A0285
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+ms.keywords: _SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
-req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.typenames: *PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -121,31 +121,6 @@ A pointer to the <a href="https://msdn.microsoft.com/C56F1528-5FDA-4BC9-AB32-788
 ## -remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/hh450919">SpbDeviceInitialize</a> method uses the information in this structure to complete the initialization of the SPB controller.  Before passing this structure to <b>SpbDeviceInitialize</b>, call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406207">SPB_CONTROLLER_CONFIG_INIT</a> function to initialize the members of this structure to their default values, and, as needed, overwrite these default values with information that is specific to your SPB controller driver.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Spbcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: fed2c733-5011-4dba-a8ec-3a0742574949
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_FcpId, HBA_FCPID, *PHBA_FCPID
+ms.keywords: HBA_FcpId, *PHBA_FCPID, HBA_FCPID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HBA_FCPID, *PHBA_FCPID
+req.typenames: *PHBA_FCPID, HBA_FCPID
 ---
 
 # HBA_FcpId structure
@@ -47,19 +47,3 @@ The HBA_FcpId structure is identical to the <a href="..\hbapiwmi\ns-hbapiwmi-_hb
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

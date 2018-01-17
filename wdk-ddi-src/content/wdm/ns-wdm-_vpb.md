@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: aba1638f-1ab0-4953-afe9-1f539e5bd967
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _VPB, *PVPB, VPB
+ms.keywords: _VPB, VPB, *PVPB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PVPB, VPB
+req.typenames: VPB, *PVPB
 req.product: Windows 10 or later.
 ---
 
@@ -192,25 +192,10 @@ For more information about device object types, see <a href="https://msdn.micros
 Drivers must call <a href="..\ntifs\nf-ntifs-ioacquirevpbspinlock.md">IoAcquireVpbSpinLock</a> before they access any applicable members of the VPB object.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, or FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\ntifs\ns-ntifs-_file_objectid_information.md">FILE_OBJECT</a>

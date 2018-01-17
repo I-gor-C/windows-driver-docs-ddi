@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 5e877882-00f7-4c46-86e1-debf576ffdb1
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DOT4_ACTIVITY, *PDOT4_ACTIVITY, DOT4_ACTIVITY
+ms.keywords: _DOT4_ACTIVITY, DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDOT4_ACTIVITY, DOT4_ACTIVITY
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # PDEBUG_EXTENSION_NOTIFY callback
@@ -121,32 +121,6 @@ This function allows the extension DLL to cache information about the session wi
 
 After the extension DLL is initialized, the engine will use this function to notify the DLL if it has started a session.  If the current session is suspended, the engine will call this function a second time to notify the DLL that the session is accessible.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dbgeng.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

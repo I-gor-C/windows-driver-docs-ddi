@@ -7,7 +7,7 @@ old-location: netvista\rilunsolicitedssinfoparammask.htm
 old-project: netvista
 ms.assetid: 41cf5add-4cad-41ed-ba9c-6bfba56a9f65
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUNSOLICITEDSSINFOPARAMMASK, RILUNSOLICITEDSSINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,19 +86,3 @@ typedef enum _RILUNSOLICITEDSSINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

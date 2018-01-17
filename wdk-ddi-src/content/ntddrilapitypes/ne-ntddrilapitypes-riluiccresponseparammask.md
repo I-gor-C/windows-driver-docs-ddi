@@ -7,7 +7,7 @@ old-location: netvista\riluiccresponseparammask.htm
 old-project: netvista
 ms.assetid: 2a87655f-8c8c-48c7-982e-dcb70ca600fb
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCRESPONSEPARAMMASK, RILUICCRESPONSEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILUICCRESPONSEPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

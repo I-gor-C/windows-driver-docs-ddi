@@ -7,7 +7,7 @@ old-location: netvista\fwps_packet_injection_state.htm
 old-project: netvista
 ms.assetid: 0fc60bae-2191-4e19-85c5-ed06f09225f0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: FWPS_PACKET_INJECTION_STATE_, FWPS_PACKET_INJECTION_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -95,29 +95,3 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with  Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

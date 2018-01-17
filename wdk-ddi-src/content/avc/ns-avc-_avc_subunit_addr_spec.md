@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: fa9fedc5-cacc-409a-99f5-7103b5424b3c
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _AVC_SUBUNIT_ADDR_SPEC, AVC_SUBUNIT_ADDR_SPEC, *PAVC_SUBUNIT_ADDR_SPEC
+ms.keywords: _AVC_SUBUNIT_ADDR_SPEC, *PAVC_SUBUNIT_ADDR_SPEC, AVC_SUBUNIT_ADDR_SPEC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: AVC_SUBUNIT_ADDR_SPEC, *PAVC_SUBUNIT_ADDR_SPEC
+req.typenames: *PAVC_SUBUNIT_ADDR_SPEC, AVC_SUBUNIT_ADDR_SPEC
 ---
 
 # _AVC_SUBUNIT_ADDR_SPEC structure
@@ -95,21 +95,6 @@ A Subunit Address encoded according to Section 5.3.3 of the AV/C Digital Interfa
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h (include Avc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

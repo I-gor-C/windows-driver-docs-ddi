@@ -106,21 +106,6 @@ A driver may choose to flush data while holding this IRP containing the IOCTL_VO
 If this is a read-only volume, then there is normally nothing that a file system or file system filter driver needs to do when receiving this IOCTL except send it to the next lower-level driver.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

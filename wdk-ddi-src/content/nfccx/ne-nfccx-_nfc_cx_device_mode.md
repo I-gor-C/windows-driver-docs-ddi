@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: B9996339-984D-4F6B-BFE9-2F536EC75924
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: _NFC_CX_DEVICE_MODE, *PNFC_CX_DEVICE_MODE, NFC_CX_DEVICE_MODE
+ms.keywords: _NFC_CX_DEVICE_MODE, NFC_CX_DEVICE_MODE, *PNFC_CX_DEVICE_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: < DISPATCH_LEVEL
-req.typenames: *PNFC_CX_DEVICE_MODE, NFC_CX_DEVICE_MODE
+req.irql: Requires same
+req.typenames: NFC_CX_DEVICE_MODE, *PNFC_CX_DEVICE_MODE
 ---
 
 # _NFC_CX_DEVICE_MODE enumeration
@@ -73,41 +73,6 @@ Enable RAW mode.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-None supported
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Nfccx.h (include Ncidef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

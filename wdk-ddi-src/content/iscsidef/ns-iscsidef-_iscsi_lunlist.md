@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1c477f38-c24f-45df-ab02-62ee47c0957b
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ISCSI_LUNList, *PISCSI_LUNList, ISCSI_LUNList
+ms.keywords: _ISCSI_LUNList, ISCSI_LUNList, *PISCSI_LUNList
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PISCSI_LUNList, ISCSI_LUNList
+req.typenames: ISCSI_LUNList, *PISCSI_LUNList
 ---
 
 # _ISCSI_LUNList structure
@@ -73,21 +73,6 @@ Reserved for Microsoft use only.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsidef.h (include Iscsidef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

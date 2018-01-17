@@ -7,7 +7,7 @@ old-location: netvista\rilinfoclass.htm
 old-project: netvista
 ms.assetid: 2e4bd8bd-ce7e-4eb4-ac0d-68fb8890eb26
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILINFOCLASS, RILINFOCLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,19 +90,3 @@ typedef enum _RILINFOCLASS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

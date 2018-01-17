@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 75c0f546-1a58-45e8-a3eb-3075f07c426b
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION
+ms.keywords: _HID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION
+req.typenames: HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION
 ---
 
 # _HID_MINIDRIVER_REGISTRATION structure
@@ -92,21 +92,6 @@ Reserved for internal system use.
 ## -remarks
 When a HID minidriver calls <a href="..\hidport\nf-hidport-hidregisterminidriver.md">HidRegisterMinidriver</a>, it uses this structure to pass information to the HID class driver. The minidriver must must zero-initialize this structure before setting members. A minidriver sets the members <b>DriverObject</b> and <b>RegistryPath</b> to the driver object and registry path parameters that are passed to the minidriver as system-supplied parameters to its <a href="..\wdm\nc-wdm-driver_initialize.md">DriverEntry</a> routine. <b>Revision</b> should be set to HID_REVISION.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hidport.h (include Hidport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

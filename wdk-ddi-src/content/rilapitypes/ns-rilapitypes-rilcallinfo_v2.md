@@ -7,8 +7,8 @@ old-location: netvista\rilcallinfo_v2_2.htm
 old-project: netvista
 ms.assetid: bf7d8586-21da-4f62-b9e6-4ffe7ca546e1
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCALLINFO_V2, RILCALLINFO_V2, *LPRILCALLINFO_V2
+ms.date: 1/11/2018
+ms.keywords: RILCALLINFO_V2, *LPRILCALLINFO_V2, RILCALLINFO_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILCALLINFO_V2, *LPRILCALLINFO_V2
+req.typenames: *LPRILCALLINFO_V2, RILCALLINFO_V2
 req.product: Windows 10 or later.
 ---
 
@@ -123,19 +123,3 @@ typedef struct _RILCALLINFO_V2 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfo.htm
 old-project: netvista
 ms.assetid: 6c28e50c-a76a-4a7c-af29-6e58bcfe3f3b
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILDISPLAYINFO, RILDISPLAYINFO, *LPRILDISPLAYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -82,19 +82,3 @@ typedef struct _RILDISPLAYINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

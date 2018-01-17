@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 8798e152-6586-48d0-a8f6-2e861660dd62
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _AVC_IRB, *PAVC_IRB, AVC_IRB
+ms.keywords: _AVC_IRB, AVC_IRB, *PAVC_IRB
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PAVC_IRB, AVC_IRB
+req.typenames: AVC_IRB, *PAVC_IRB
 ---
 
 # _AVC_IRB structure
@@ -62,21 +62,6 @@ Value from the AVC_FUNCTION enumeration specifying a function number.
 ## -remarks
 This structure is included at the head of the AVC_COMMAND_IRB and AVC_MULTIFUNC_IRB structures. These structures represent the I/O request block (IRB) associated with specific types of AV/C functions. Each specific type of AV/C function is documented in IOCTL_AVC_CLASS.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h (include Avc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

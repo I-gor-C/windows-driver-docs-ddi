@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: f5a09843-caf7-4550-bbc6-c0d799d66cd6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _FILE_ACCESS_INFORMATION, FILE_ACCESS_INFORMATION, *PFILE_ACCESS_INFORMATION
+ms.keywords: _FILE_ACCESS_INFORMATION, *PFILE_ACCESS_INFORMATION, FILE_ACCESS_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: FILE_ACCESS_INFORMATION, *PFILE_ACCESS_INFORMATION
+req.typenames: *PFILE_ACCESS_INFORMATION, FILE_ACCESS_INFORMATION
 ---
 
 # _FILE_ACCESS_INFORMATION structure
@@ -64,31 +64,6 @@ This structure is used by the <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">
 
 The <i>AccessFlags</i> parameter is an access mask that encodes the user rights to a file object. An access mask can be used to encode the rights to an object that is assigned to a user or a user group, or to encode the requested access when a user opens an object. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows XP and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

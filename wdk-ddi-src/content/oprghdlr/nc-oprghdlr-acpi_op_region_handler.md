@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: c3a5af59-c97c-42be-bc43-afa30ad710ec
 ms.author: windowsdriverdev
 ms.date: 12/31/2017
-ms.keywords: RILGBATOKEN, *LPRILGBATOKEN, RILGBATOKEN
+ms.keywords: RILGBATOKEN, RILGBATOKEN, *LPRILGBATOKEN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: (See Remarks section)
-req.typenames: *LPRILGBATOKEN, RILGBATOKEN
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # ACPI_OP_REGION_HANDLER callback
@@ -156,42 +156,6 @@ An ACPI_OP_REGION_HANDLER-typed routine runs at the caller's IRQL.
 
 For detailed information about constraints on operation regions, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=57185">Advanced Configuration and Power Interface (ACPI) Specification</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Oprghdlr.h (include Oprghdlr.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-(See Remarks section)
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

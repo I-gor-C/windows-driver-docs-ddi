@@ -1,10 +1,17 @@
 ---
 UID: TP:pci
+ms.assetid: 8ff09fc0-6843-3e40-9d39-7509ce88abbc
+ms.author: windowsdriverdev
+ms.date: 01/16/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # PCI bus drivers
 
-## -description
+
 Overview of the PCI bus drivers technology.
 
 To develop PCI bus drivers, you need these headers:

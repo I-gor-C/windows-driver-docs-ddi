@@ -138,19 +138,3 @@ A pointer to the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_deallocate_cb_
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

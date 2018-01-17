@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1946245d-d661-41c9-8f5a-37534bf71890
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _AddPort_OUT, *PAddPort_OUT, AddPort_OUT
+ms.keywords: _AddPort_OUT, AddPort_OUT, *PAddPort_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PAddPort_OUT, AddPort_OUT
+req.typenames: AddPort_OUT, *PAddPort_OUT
 ---
 
 # _AddPort_OUT structure
@@ -61,21 +61,6 @@ Contains the status of the operation. For a list of allowed values and their des
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

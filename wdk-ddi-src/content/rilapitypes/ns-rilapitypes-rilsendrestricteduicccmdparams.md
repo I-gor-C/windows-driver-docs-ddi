@@ -7,7 +7,7 @@ old-location: netvista\rilsendrestricteduicccmdparams_2.htm
 old-project: netvista
 ms.assetid: f15bd639-0c58-45e1-91e4-dba25fac0686
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSENDRESTRICTEDUICCCMDPARAMS, *LPRILSENDRESTRICTEDUICCCMDPARAMS, RILSENDRESTRICTEDUICCCMDPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,19 +83,3 @@ typedef struct _RILSENDRESTRICTEDUICCCMDPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

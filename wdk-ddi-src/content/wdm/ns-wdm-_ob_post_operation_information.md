@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: fc52e06d-c826-43c2-ac61-4f56fd808d43
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _OB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION, *POB_POST_OPERATION_INFORMATION
+ms.keywords: _OB_POST_OPERATION_INFORMATION, *POB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: OB_POST_OPERATION_INFORMATION, *POB_POST_OPERATION_INFORMATION
+req.typenames: *POB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -129,31 +129,6 @@ A pointer to an <a href="..\wdm\ns-wdm-_ob_post_operation_parameters.md">OB_POST
 ## -remarks
 Unlike the <a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_OPERATION_INFORMATION</a> structure, the members of the <b>OB_POST_OPERATION_INFORMATION</b> structure are purely informational; you cannot modify them.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Server 2008 and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

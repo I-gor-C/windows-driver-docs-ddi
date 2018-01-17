@@ -7,7 +7,7 @@ old-location: netvista\rilmsgclass.htm
 old-project: netvista
 ms.assetid: 2f7e2c4f-56bc-4efd-8911-5161b657dbea
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGCLASS, RILMSGCLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILMSGCLASS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

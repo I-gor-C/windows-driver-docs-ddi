@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: a2e588b8-50d6-4bed-b50c-c42be24955f1
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SCSISCAN_INFO, SCSISCAN_INFO, *PSCSISCAN_INFO
+ms.keywords: RxScavengeFobxsForNetRoot
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SCSISCAN_INFO, *PSCSISCAN_INFO
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -111,32 +111,6 @@ When a miniport driver receives an SRB in which the <b>Function</b> member is se
 
 The miniport driver writes instance data to the buffer. For requests that do not pend, the miniport driver calls <a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a> with an appropriate <i>SrbStatus</i> value before returning from <b>HwScsiWmiQueryDataBlock</b>. If the request pends, the miniport driver calls <b>ScsiPortWmiPostProcess</b> when the request is complete.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsiwmi.h (include Scsiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

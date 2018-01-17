@@ -93,21 +93,6 @@ The plug number (within the subunit) described by the AVCPRECONNECTINFO structur
 This structure is used only as member inside the <a href="..\avc\ns-avc-_avc_setconnect_info.md">AVC_SETCONNECT_INFO</a> structure. It is not used by itself.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h (include Avc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

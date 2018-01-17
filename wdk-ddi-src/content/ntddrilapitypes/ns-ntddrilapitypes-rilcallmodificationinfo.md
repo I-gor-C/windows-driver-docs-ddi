@@ -7,8 +7,8 @@ old-location: netvista\rilcallmodificationinfo.htm
 old-project: netvista
 ms.assetid: 568603d9-0f96-49f7-a6f8-3c69d889cea7
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO
+ms.date: 1/11/2018
+ms.keywords: RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILCALLMODIFICATIONINFO, *LPRILCALLMODIFICATIONINFO
+req.typenames: *LPRILCALLMODIFICATIONINFO, RILCALLMODIFICATIONINFO
 ---
 
 # RILCALLMODIFICATIONINFO structure
@@ -90,19 +90,3 @@ typedef struct _RILCALLMODIFICATIONINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

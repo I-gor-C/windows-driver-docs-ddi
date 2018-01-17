@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: DD7D7E5F-D35C-40B4-B414-A6D2EB8D3A02
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_WORK_ACTIVE_COMPLETE, PEP_WORK_ACTIVE_COMPLETE, *PPEP_WORK_ACTIVE_COMPLETE
+ms.keywords: _PEP_WORK_ACTIVE_COMPLETE, *PPEP_WORK_ACTIVE_COMPLETE, PEP_WORK_ACTIVE_COMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PEP_WORK_ACTIVE_COMPLETE, *PPEP_WORK_ACTIVE_COMPLETE
+req.typenames: *PPEP_WORK_ACTIVE_COMPLETE, PEP_WORK_ACTIVE_COMPLETE
 ---
 
 # _PEP_WORK_ACTIVE_COMPLETE structure
@@ -68,31 +68,6 @@ A handle that represents the registration of the device with the Windows <a href
 ## -remarks
 The <b>ActiveComplete</b> member of the <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a> structure is a <b>PEP_WORK_ACTIVE_COMPLETE</b> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pep_x.h (include Pepfx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

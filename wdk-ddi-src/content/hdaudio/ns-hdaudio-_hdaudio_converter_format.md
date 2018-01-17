@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 623f58f6-db82-4a4a-bac3-cc821babfe99
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_CONVERTER_FORMAT, *PHDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT
+ms.keywords: _HDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT, *PHDAUDIO_CONVERTER_FORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
-req.typenames: *PHDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT
+req.typenames: HDAUDIO_CONVERTER_FORMAT, *PHDAUDIO_CONVERTER_FORMAT
 ---
 
 # _HDAUDIO_CONVERTER_FORMAT structure
@@ -104,21 +104,6 @@ The <a href="..\hdaudio\nc-hdaudio-pallocate_capture_dma_engine.md">AllocateCapt
 
 Each valid HDAUDIO_CONVERTER_FORMAT encoding has a one-to-one correspondence to an HDAUDIO_STREAM_FORMAT structure that contains a valid set of parameters.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hdaudio.h (include Hdaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

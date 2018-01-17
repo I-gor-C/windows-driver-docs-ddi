@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 896919C9-E72E-4C0F-9E3E-9BEE9F55D27D
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UFX_DEVICE_CAPABILITIES, *PUFX_DEVICE_CAPABILITIES, UFX_DEVICE_CAPABILITIES
+ms.keywords: _UFX_DEVICE_CAPABILITIES, UFX_DEVICE_CAPABILITIES, *PUFX_DEVICE_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUFX_DEVICE_CAPABILITIES, UFX_DEVICE_CAPABILITIES
+req.typenames: UFX_DEVICE_CAPABILITIES, *PUFX_DEVICE_CAPABILITIES
 req.product: Windows 10 or later.
 ---
 
@@ -91,19 +91,3 @@ A bitmap that defines which endpoint numbers can support an OUT endpoint.  Bit 0
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxbase.h</dt>
-</dl>
-</td>
-</tr>
-</table>

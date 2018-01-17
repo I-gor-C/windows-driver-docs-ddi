@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: CB64AF68-C40D-44F0-8F52-6BF05E23E5E1
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SRBEX_DATA_PNP, SRBEX_DATA_PNP, *PSRBEX_DATA_PNP
+ms.keywords: _SRBEX_DATA_PNP, *PSRBEX_DATA_PNP, SRBEX_DATA_PNP
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SRBEX_DATA_PNP, *PSRBEX_DATA_PNP
+req.typenames: *PSRBEX_DATA_PNP, SRBEX_DATA_PNP
 req.product: Windows 10 or later.
 ---
 
@@ -183,31 +183,6 @@ This member is reserved. Set to 0.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h or Srb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

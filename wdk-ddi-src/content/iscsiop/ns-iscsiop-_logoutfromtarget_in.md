@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: a52d5995-1fb7-4b73-9d3f-c945e7219a49
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _LogoutFromTarget_IN, LogoutFromTarget_IN, *PLogoutFromTarget_IN
+ms.keywords: _LogoutFromTarget_IN, *PLogoutFromTarget_IN, LogoutFromTarget_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: LogoutFromTarget_IN, *PLogoutFromTarget_IN
+req.typenames: *PLogoutFromTarget_IN, LogoutFromTarget_IN
 ---
 
 # _LogoutFromTarget_IN structure
@@ -62,21 +62,6 @@ A 64-bit integer that uniquely identifies the session. The <a href="https://msdn
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

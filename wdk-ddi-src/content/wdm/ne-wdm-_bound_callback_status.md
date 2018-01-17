@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 874FB2E1-7A2F-4C91-BA72-D67DA2EE84E1
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _BOUND_CALLBACK_STATUS, BOUND_CALLBACK_STATUS, *PBOUND_CALLBACK_STATUS
+ms.keywords: _BOUND_CALLBACK_STATUS, *PBOUND_CALLBACK_STATUS, BOUND_CALLBACK_STATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: BOUND_CALLBACK_STATUS, *PBOUND_CALLBACK_STATUS
+req.irql: PASSIVE_LEVEL
+req.typenames: *PBOUND_CALLBACK_STATUS, BOUND_CALLBACK_STATUS
 req.product: Windows 10 or later.
 ---
 
@@ -81,31 +81,6 @@ This value is not currently used.
 ## -remarks
 The return value of the <a href="..\wdm\nc-wdm-bound_callback.md">BoundCallback</a> routine is a <b>BOUND_CALLBACK_STATUS</b> value.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

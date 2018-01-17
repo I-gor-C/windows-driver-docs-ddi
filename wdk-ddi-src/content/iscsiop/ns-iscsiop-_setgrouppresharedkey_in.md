@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: fe5e1f75-ebd0-4856-bb77-14efb52fbce0
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetGroupPresharedKey_IN, SetGroupPresharedKey_IN, *PSetGroupPresharedKey_IN
+ms.keywords: _SetGroupPresharedKey_IN, *PSetGroupPresharedKey_IN, SetGroupPresharedKey_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SetGroupPresharedKey_IN, *PSetGroupPresharedKey_IN
+req.typenames: *PSetGroupPresharedKey_IN, SetGroupPresharedKey_IN
 ---
 
 # _SetGroupPresharedKey_IN structure
@@ -68,21 +68,6 @@ The preshared group key<i>.</i>
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

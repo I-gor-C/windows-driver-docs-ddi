@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: ead624cc-8aff-4a87-bdeb-066534caa61b
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _SDEV_IDENTIFIER_INTERFACE, *PSDEV_IDENTIFIER_INTERFACE, SDEV_IDENTIFIER_INTERFACE
+ms.keywords: _SDEV_IDENTIFIER_INTERFACE, SDEV_IDENTIFIER_INTERFACE, *PSDEV_IDENTIFIER_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PSDEV_IDENTIFIER_INTERFACE, SDEV_IDENTIFIER_INTERFACE
+req.typenames: SDEV_IDENTIFIER_INTERFACE, *PSDEV_IDENTIFIER_INTERFACE
 req.product: Windows 10 or later.
 ---
 
@@ -54,7 +54,3 @@ This material is not yet available. This placeholder topic is provided as an exa
 
 
 ## -remarks
-
-
-## -requirements
-None

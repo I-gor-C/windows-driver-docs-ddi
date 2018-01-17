@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 65C76CA1-F7F2-4DFD-B928-0595A137BF28
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _FCP_SEND_RESPONSE, *PFCP_SEND_RESPONSE, FCP_SEND_RESPONSE
+ms.keywords: _FCP_SEND_RESPONSE, FCP_SEND_RESPONSE, *PFCP_SEND_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PFCP_SEND_RESPONSE, FCP_SEND_RESPONSE
+req.typenames: FCP_SEND_RESPONSE, *PFCP_SEND_RESPONSE
 ---
 
 # _FCP_SEND_RESPONSE structure
@@ -84,21 +84,6 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 
 If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INSUFFICIENT_RESOURCES.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

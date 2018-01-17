@@ -66,20 +66,4 @@ The length, in bytes, of the image preview data.
 
 
 ## -remarks
-The image preview bitmap data immediately follows after this structure in memory for <i>DataLength</i> bytes.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>PointOfServiceDriverInterface.h (include PointOfServiceDriverInterface.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The image preview bitmap data immediately follows after this structure in memory for <i>DataLength</i> bytes.</p>

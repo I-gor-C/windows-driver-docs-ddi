@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 239d0c0a-e78e-40d5-b359-36910bdd9358
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PCI_COMMON_CONFIG, PCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG
+ms.keywords: _PCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG, PCI_COMMON_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: PCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG
+req.typenames: *PPCI_COMMON_CONFIG, PCI_COMMON_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -277,21 +277,6 @@ Certain members of this structure have read-only values, so attempts to reset th
 
 Other members are provisionally read-only: that is, the system initializes them to their correct values, so drivers can safely treat them as read-only. However, they can be reset if a bus-master driver finds it necessary. These members include the following: <b>CacheLineSize</b> and <b>LatencyTimer</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

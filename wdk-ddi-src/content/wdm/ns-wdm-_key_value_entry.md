@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8a0e819e-6da7-4006-a276-9bfd324800d8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _KEY_VALUE_ENTRY, *PKEY_VALUE_ENTRY, KEY_VALUE_ENTRY
+ms.keywords: _KEY_VALUE_ENTRY, KEY_VALUE_ENTRY, *PKEY_VALUE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PKEY_VALUE_ENTRY, KEY_VALUE_ENTRY
+req.typenames: KEY_VALUE_ENTRY, *PKEY_VALUE_ENTRY
 req.product: Windows 10 or later.
 ---
 
@@ -81,31 +81,6 @@ Specifies the type of the value entry's data. For a description of the possible 
 ## -remarks
 The <b>ValueEntries</b> member of <a href="..\wdm\ns-wdm-_reg_query_multiple_value_key_information.md">REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION</a> points to an array of KEY_VALUE_ENTRY structures.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available on Microsoft Windows XP and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

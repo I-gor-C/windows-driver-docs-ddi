@@ -7,7 +7,7 @@ old-location: netvista\rilmessageinuicc_2.htm
 old-project: netvista
 ms.assetid: 2a956b25-1cf5-4a51-bc60-c4a7a7f70e2c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMESSAGEINUICC, RILMESSAGEINUICC, *LPRILMESSAGEINUICC
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,19 +71,3 @@ typedef struct _RILMESSAGEINUICC {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

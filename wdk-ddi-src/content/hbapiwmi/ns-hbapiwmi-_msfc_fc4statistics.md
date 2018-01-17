@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: a46a9aff-9bc9-4328-85b2-90f8f80b2e65
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSFC_FC4STATISTICS, *PMSFC_FC4STATISTICS, MSFC_FC4STATISTICS
+ms.keywords: _MSFC_FC4STATISTICS, MSFC_FC4STATISTICS, *PMSFC_FC4STATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMSFC_FC4STATISTICS, MSFC_FC4STATISTICS
+req.typenames: MSFC_FC4STATISTICS, *PMSFC_FC4STATISTICS
 ---
 
 # _MSFC_FC4STATISTICS structure
@@ -88,21 +88,6 @@ The statistics counters whose values are reported in the members of this structu
 
 If an HBA does not support a specific statistic, it shall return the value of -1 for corresponding counter.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

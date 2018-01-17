@@ -88,43 +88,6 @@ Typically, this function is called by the camera minidriver from its <a href="..
 This function can also be used by the minidriver to retrieve the device context by setting the <i>NeedsCompletion</i> parameter to <b>FALSE</b>. In this case, the <i>DeviceData</i> and <i>DeviceObject</i> parameters are ignored.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamd2.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

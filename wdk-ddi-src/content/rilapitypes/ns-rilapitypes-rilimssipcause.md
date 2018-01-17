@@ -7,8 +7,8 @@ old-location: netvista\rilimssipcause_2.htm
 old-project: netvista
 ms.assetid: ae98e9e7-7001-43dd-9735-e90bb998694c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILIMSSIPCAUSE, RILIMSSIPCAUSE, *LPRILIMSSIPCAUSE
+ms.date: 1/11/2018
+ms.keywords: RILIMSSIPCAUSE, *LPRILIMSSIPCAUSE, RILIMSSIPCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILIMSSIPCAUSE, *LPRILIMSSIPCAUSE
+req.typenames: *LPRILIMSSIPCAUSE, RILIMSSIPCAUSE
 req.product: Windows 10 or later.
 ---
 
@@ -63,19 +63,3 @@ typedef struct _RILIMSSIPCAUSE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

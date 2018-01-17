@@ -72,29 +72,3 @@ This dump type is for hibernation.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista and Windows Server 2008.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntdddump.h (include Ntdddump.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

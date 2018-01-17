@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 2C47165D-9D04-46C8-A1EC-04E6F32AE516
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CMP_SET_PLUG, *PCMP_SET_PLUG, CMP_SET_PLUG
+ms.keywords: _CMP_SET_PLUG, CMP_SET_PLUG, *PCMP_SET_PLUG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PCMP_SET_PLUG, CMP_SET_PLUG
+req.typenames: CMP_SET_PLUG, *PCMP_SET_PLUG
 ---
 
 # _CMP_SET_PLUG structure
@@ -72,21 +72,6 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 
 If a driver attempts to set the contents of a plug register it did not create, the protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_ACCESS_DENIED.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

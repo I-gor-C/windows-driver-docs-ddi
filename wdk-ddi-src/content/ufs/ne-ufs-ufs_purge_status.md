@@ -98,21 +98,6 @@ cleared to <b>UFS_PurgeStatusIdle</b> the first time
 that it is read.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufs.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

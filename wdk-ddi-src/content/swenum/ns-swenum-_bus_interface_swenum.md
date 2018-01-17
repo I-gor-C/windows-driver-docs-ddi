@@ -89,20 +89,4 @@ In the new stack location, provide a pointer to the new BUS_INTERFACE_SWENUM str
 
 Set a completion routine and send the request down the driver stack.
 
-If your request is successful, the system fills in the BUS_INTERFACE_SWENUM structure pointed to by <b>Parameters.QueryInterface.Interface</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Swenum.h (include Swenum.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+If your request is successful, the system fills in the BUS_INTERFACE_SWENUM structure pointed to by <b>Parameters.QueryInterface.Interface</b>.</p>

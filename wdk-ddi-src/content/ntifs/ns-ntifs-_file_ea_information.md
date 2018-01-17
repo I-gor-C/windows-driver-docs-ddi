@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1b27f26f-c98d-4979-b60e-0ed5965f637c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _FILE_EA_INFORMATION, FILE_EA_INFORMATION, *PFILE_EA_INFORMATION
+ms.keywords: _FILE_EA_INFORMATION, *PFILE_EA_INFORMATION, FILE_EA_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: FILE_EA_INFORMATION, *PFILE_EA_INFORMATION
+req.typenames: *PFILE_EA_INFORMATION, FILE_EA_INFORMATION
 ---
 
 # _FILE_EA_INFORMATION structure
@@ -64,31 +64,6 @@ This structure is used by the <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">
 
 An extended attribute is a piece of application-specific metadata that an application can associate with a file that is not part of the file's data. In addition to the built-in attributes of a file, such as creation and modification times, applications can add non-file system attributes, such as the author's name and a description of the file content.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows XP and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

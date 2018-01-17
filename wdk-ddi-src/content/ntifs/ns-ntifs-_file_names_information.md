@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: a9eb4606-fe55-4f77-914a-656ebe247066
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_NAMES_INFORMATION, FILE_NAMES_INFORMATION, *PFILE_NAMES_INFORMATION
+ms.keywords: _FILE_NAMES_INFORMATION, *PFILE_NAMES_INFORMATION, FILE_NAMES_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: FILE_NAMES_INFORMATION, *PFILE_NAMES_INFORMATION
+req.typenames: *PFILE_NAMES_INFORMATION, FILE_NAMES_INFORMATION
 ---
 
 # _FILE_NAMES_INFORMATION structure
@@ -88,21 +88,6 @@ No specific access rights are required to query this information.
 
 This structure must be aligned on a LONG (4-byte) boundary. If a buffer contains two or more of these structures, the <b>NextEntryOffset</b> value in each entry, except the last, falls on a 4-byte boundary. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

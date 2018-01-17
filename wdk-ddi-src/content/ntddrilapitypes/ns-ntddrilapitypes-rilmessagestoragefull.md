@@ -7,8 +7,8 @@ old-location: netvista\rilmessagestoragefull.htm
 old-project: netvista
 ms.assetid: 3369feeb-cbb9-4938-8dfd-0160ba4fefdf
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILMESSAGESTORAGEFULL, RILMESSAGESTORAGEFULL, *LPRILMESSAGESTORAGEFULL
+ms.date: 1/11/2018
+ms.keywords: RILMESSAGESTORAGEFULL, *LPRILMESSAGESTORAGEFULL, RILMESSAGESTORAGEFULL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILMESSAGESTORAGEFULL, *LPRILMESSAGESTORAGEFULL
+req.typenames: *LPRILMESSAGESTORAGEFULL, RILMESSAGESTORAGEFULL
 ---
 
 # RILMESSAGESTORAGEFULL structure
@@ -66,19 +66,3 @@ typedef struct _RILMESSAGESTORAGEFULL {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

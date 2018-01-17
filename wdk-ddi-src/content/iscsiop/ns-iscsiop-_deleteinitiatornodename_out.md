@@ -63,21 +63,6 @@ The status of the <b>DeleteInitiatorNodeName</b> operation. For a list of status
 It is optional that you implement this method.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

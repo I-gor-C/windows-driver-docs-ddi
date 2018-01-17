@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: E6875195-D6C4-4CEB-8381-8CBA732223A5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UCXUSBDEVICE_INFO, UCXUSBDEVICE_INFO, *PUCXUSBDEVICE_INFO
+ms.keywords: _UCXUSBDEVICE_INFO, *PUCXUSBDEVICE_INFO, UCXUSBDEVICE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: UCXUSBDEVICE_INFO, *PUCXUSBDEVICE_INFO
+req.typenames: *PUCXUSBDEVICE_INFO, UCXUSBDEVICE_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -80,21 +80,6 @@ The port path for the USB device or hub.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxusbdevice.h (include Ucxusbdevice.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

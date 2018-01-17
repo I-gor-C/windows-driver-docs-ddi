@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: 
 req.typenames: POS_CX_EVENT_DEST
 req.product: Windows 10 or later.
 ---
@@ -73,29 +73,3 @@ Specifies that the event will be broadcast to all client handles.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Product
-
-</th>
-<td width="70%">
-Windows 10 or later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Poscx.h (include Poscx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

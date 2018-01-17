@@ -100,32 +100,6 @@ The <b>UPSWaitForStateChange</b> function must wait until either the state of th
 A call to <a href="..\upssvc\nf-upssvc-upscancelwait.md">UPSCancelWait</a> interrupts <b>UPSWaitForStateChange</b> and causes it to return. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Upssvc.h (include Upssvc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

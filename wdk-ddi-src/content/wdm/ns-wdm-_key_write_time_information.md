@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 44f68a5a-c7ad-4555-b6b2-6461ac17960a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _KEY_WRITE_TIME_INFORMATION, *PKEY_WRITE_TIME_INFORMATION, KEY_WRITE_TIME_INFORMATION
+ms.keywords: _KEY_WRITE_TIME_INFORMATION, KEY_WRITE_TIME_INFORMATION, *PKEY_WRITE_TIME_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PKEY_WRITE_TIME_INFORMATION, KEY_WRITE_TIME_INFORMATION
+req.typenames: KEY_WRITE_TIME_INFORMATION, *PKEY_WRITE_TIME_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -62,31 +62,6 @@ Specifies the last time that the key was changed. This time value is expressed i
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available on Microsoft Windows XP and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

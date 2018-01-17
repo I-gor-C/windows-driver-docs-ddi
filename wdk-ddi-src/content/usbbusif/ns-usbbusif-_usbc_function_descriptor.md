@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 43ac738b-7837-4183-ad06-5c35a2af38ff
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBC_FUNCTION_DESCRIPTOR, *PUSBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR
+ms.keywords: _USBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR, *PUSBC_FUNCTION_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBC_FUNCTION_DESCRIPTOR, USBC_FUNCTION_DESCRIPTOR
+req.typenames: USBC_FUNCTION_DESCRIPTOR, *PUSBC_FUNCTION_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -74,7 +74,7 @@ The number of interfaces in the interface collection.
 
 ### -field InterfaceDescriptorList
 
-An array of pointers to <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>-type structures that describe the interfaces in the interface collection.
+An array of pointers to <a href="https://msdn.microsoft.com/library/windows/hardware/ff540065">USB_INTERFACE_DESCRIPTOR</a>-type structures that describe the interfaces in the interface collection.
 
 
 ### -field HardwareId
@@ -106,25 +106,10 @@ Reserved.
 For information on how to use user-defined callback routines to provide a custom definition of the interface collections on a device, see <a href="https://msdn.microsoft.com/3cf4e9f2-ea33-491f-94af-62d2afacc899">Customizing Enumeration of Interface Collections for Composite Devices</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbbusif.h (include Usbbusif.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540065">USB_INTERFACE_DESCRIPTOR</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>

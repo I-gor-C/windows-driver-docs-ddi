@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Usbd.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL (See Remarks)
-req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.typenames: *PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2
 req.product: Windows 10 or later.
 ---
 
@@ -57,7 +57,7 @@ void USBD_GetUSBDIVersion(
 
 ### -param VersionInformation [out]
 
-Pointer to caller-allocated memory for a <a href="..\usb\ns-usb-_usbd_version_information.md">USBD_VERSION_INFORMATION</a> structure that on return from the routine, contains version information about the HCD.
+Pointer to caller-allocated memory for a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539149">USBD_VERSION_INFORMATION</a> structure that on return from the routine, contains version information about the HCD.
 
 
 ## -returns
@@ -67,53 +67,6 @@ This routine does not return a value.
 ## -remarks
 Callers of this routine can be running at IRQL &lt;= DISPATCH_LEVEL if the memory for <i>VersionInformation</i> is allocated from nonpaged pool. Otherwise, callers must be running at IRQL &lt; DISPATCH_LEVEL.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbdlib.h (include Usbdlib.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbd.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL (See Remarks)
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

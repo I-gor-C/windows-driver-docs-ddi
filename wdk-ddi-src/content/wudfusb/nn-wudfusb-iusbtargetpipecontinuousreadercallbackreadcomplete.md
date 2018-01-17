@@ -7,7 +7,7 @@ old-location: wdf\iusbtargetpipecontinuousreadercallbackreadcomplete.htm
 old-project: wdf
 ms.assetid: 953048ab-872c-4b94-8aef-bcfcb86ea4d8
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFUsbTargetPipe2, IWDFUsbTargetPipe2::ConfigureContinuousReader, ConfigureContinuousReader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,19 +83,3 @@ A driver's <a href="https://msdn.microsoft.com/946e0206-7609-4dc7-91c2-a6aadad91
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfusb.h</dt>
-</dl>
-</td>
-</tr>
-</table>

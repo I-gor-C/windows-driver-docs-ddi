@@ -7,7 +7,7 @@ old-location: netvista\rilemergencymodecontrolparamscontrol_2.htm
 old-project: netvista
 ms.assetid: b169e3a3-141b-4bca-9eaa-ce55f7194e4f
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILEMERGENCYMODECONTROLPARAMSCONTROL, RILEMERGENCYMODECONTROLPARAMSCONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,19 +67,3 @@ typedef enum _RILEMERGENCYMODECONTROLPARAMSCONTROL {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

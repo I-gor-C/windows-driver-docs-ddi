@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
+req.irql: PASSIVE_LEVEL
 req.typenames: FILE_INFORMATION_CLASS, *PFILE_INFORMATION_CLASS
 req.product: Windows 10 or later.
 ---
@@ -540,30 +540,3 @@ This value is reserved for system use. This value is available starting with Win
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows XP, Windows Server 2003, and later versions of the Windows operating system unless otherwise specified above.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include FltKernel.h or Ntifs.h); </dt>
-<dt>Wdm.h (include Wdm.h for use in kernel-mode driver projects)</dt>
-</dl>
-</td>
-</tr>
-</table>

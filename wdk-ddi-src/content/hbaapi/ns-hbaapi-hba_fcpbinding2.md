@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f715d45c-30e1-414f-907c-9ad1203ca604
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_FCPBinding2, *PHBA_FCPBINDING2, HBA_FCPBINDING2
+ms.keywords: HBA_FCPBinding2, HBA_FCPBINDING2, *PHBA_FCPBINDING2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PHBA_FCPBINDING2, HBA_FCPBINDING2
+req.typenames: HBA_FCPBINDING2, *PHBA_FCPBINDING2
 ---
 
 # HBA_FCPBinding2 structure
@@ -67,21 +67,6 @@ Variable length array of elements of type <a href="..\hbaapi\ns-hbaapi-hba_fcpbi
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

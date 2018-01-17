@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: e12bd494-4d2a-44a9-95dc-0bc78fa73a97
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SM_GetRNIDMgmtInfo_OUT, SM_GetRNIDMgmtInfo_OUT, *PSM_GetRNIDMgmtInfo_OUT
+ms.keywords: _SM_GetRNIDMgmtInfo_OUT, *PSM_GetRNIDMgmtInfo_OUT, SM_GetRNIDMgmtInfo_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SM_GetRNIDMgmtInfo_OUT, *PSM_GetRNIDMgmtInfo_OUT
+req.typenames: *PSM_GetRNIDMgmtInfo_OUT, SM_GetRNIDMgmtInfo_OUT
 ---
 
 # _SM_GetRNIDMgmtInfo_OUT structure
@@ -66,20 +66,4 @@ A structure of type HBAFC3MgmtInfo that holds FC3 management information. The FC
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_GetRNIDMgmtInfo_OUTstructure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_GetRNIDMgmtInfo_OUTstructure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.</p>

@@ -72,19 +72,3 @@ A field that contains an array with health information about all the available p
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

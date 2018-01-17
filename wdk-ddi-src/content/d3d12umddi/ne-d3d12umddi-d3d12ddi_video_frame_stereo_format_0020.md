@@ -150,20 +150,4 @@ Frame 0 and frame 1 are placed in separate resources.
 
 
 ## -remarks
-All drivers that support stereo must support all the formats in this enumeration.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+All drivers that support stereo must support all the formats in this enumeration.</p>

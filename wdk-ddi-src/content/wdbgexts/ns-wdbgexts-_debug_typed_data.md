@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 3173e69e-a6e5-4459-a57e-94cf7b10ef32
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_TYPED_DATA, *PDEBUG_TYPED_DATA, DEBUG_TYPED_DATA
+ms.keywords: _DEBUG_TYPED_DATA, DEBUG_TYPED_DATA, *PDEBUG_TYPED_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDEBUG_TYPED_DATA, DEBUG_TYPED_DATA
+req.typenames: DEBUG_TYPED_DATA, *PDEBUG_TYPED_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -186,21 +186,6 @@ Instances of this structure should be manipulated using the <a href="https://msd
 
 There is one exception to the preceding rule: the <b>EXT_TDOP_SET_FROM_TYPE_ID_AND_U64</b> and <b>EXT_TDOP_SET_PTR_FROM_TYPE_ID_AND_U64</b> suboperations take a DEBUG_TYPED_DATA instance that is not manipulated using the <b>Request</b> method.  These suboperations take a manually created instance with some members manually filled in.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>WdbgExts.h (include WdbgExts.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

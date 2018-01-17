@@ -72,30 +72,3 @@ A pointer to the sum. If the operation results in a value that overflows or unde
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntintsafe.h</dt>
-</dl>
-</td>
-</tr>
-</table>

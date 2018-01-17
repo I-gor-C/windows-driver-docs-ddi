@@ -81,21 +81,6 @@ The packet offset for the current source packet.
 The IEC-61883 protocol driver allocates and initializes this structure from the input CIP_FRAME structure.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h (include 61883.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: c2acb40c-cb6e-45b4-b0be-911f6b37094e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_ScsiId, *PHBA_SCSIID, HBA_SCSIID
+ms.keywords: HBA_ScsiId, HBA_SCSIID, *PHBA_SCSIID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PHBA_SCSIID, HBA_SCSIID
+req.typenames: HBA_SCSIID, *PHBA_SCSIID
 ---
 
 # HBA_ScsiId structure
@@ -80,21 +80,6 @@ Contains the logical unit number assigned by the operating system to the logical
 ## -remarks
 For a detailed discussion of how the data assigned to members of this structure should be formatted, see the T11 committee's <i>Fibre Channel HBA API</i> specification. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

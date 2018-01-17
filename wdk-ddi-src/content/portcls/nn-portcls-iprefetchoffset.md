@@ -77,19 +77,3 @@ The <code>SetPreFetchOffset</code> method sets the prefetch offset, which is the
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h</dt>
-</dl>
-</td>
-</tr>
-</table>

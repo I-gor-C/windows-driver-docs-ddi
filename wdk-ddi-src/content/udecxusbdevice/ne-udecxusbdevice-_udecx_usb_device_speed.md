@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 337C9FFE-F97A-4F0F-9567-D1FF532FE165
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UDECX_USB_DEVICE_SPEED, *PUDECX_USB_DEVICE_SPEED, UDECX_USB_DEVICE_SPEED
+ms.keywords: _UDECX_USB_DEVICE_SPEED, UDECX_USB_DEVICE_SPEED, *PUDECX_USB_DEVICE_SPEED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -28,10 +28,10 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Udecxstub.lib
+req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL
-req.typenames: *PUDECX_USB_DEVICE_SPEED, UDECX_USB_DEVICE_SPEED
+req.irql: <=DISPATCH_LEVEL
+req.typenames: UDECX_USB_DEVICE_SPEED, *PUDECX_USB_DEVICE_SPEED
 req.product: Windows 10 or later.
 ---
 
@@ -80,21 +80,6 @@ Indicates a SuperSpeed USB 3.0-compliant device.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>UdecxUsbDevice.h (include Udecx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

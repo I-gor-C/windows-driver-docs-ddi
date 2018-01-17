@@ -7,8 +7,8 @@ old-location: netvista\ndis_filter_attach_parameters.htm
 old-project: netvista
 ms.assetid: d46a1e62-9d03-4ab9-86f6-81b06c04d0f6
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: _NDIS_FILTER_ATTACH_PARAMETERS, NDIS_FILTER_ATTACH_PARAMETERS, *PNDIS_FILTER_ATTACH_PARAMETERS
+ms.date: 1/11/2018
+ms.keywords: _NDIS_FILTER_ATTACH_PARAMETERS, *PNDIS_FILTER_ATTACH_PARAMETERS, NDIS_FILTER_ATTACH_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
-req.typenames: NDIS_FILTER_ATTACH_PARAMETERS, *PNDIS_FILTER_ATTACH_PARAMETERS
+req.typenames: *PNDIS_FILTER_ATTACH_PARAMETERS, NDIS_FILTER_ATTACH_PARAMETERS
 ---
 
 # _NDIS_FILTER_ATTACH_PARAMETERS structure
@@ -91,7 +91,7 @@ typedef struct _NDIS_FILTER_ATTACH_PARAMETERS {
 ### -field Header
 
 The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_FILTER_ATTACH_PARAMETERS</b> structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_FILTER_ATTACH_PARAMETERS.
@@ -211,7 +211,7 @@ The current receive link speed of the underlying miniport adapter in bits per se
 The 
      <b>NdisMedium</b><i>Xxx</i> type that the base underlying miniport adapter supports. For more
      information, see 
-     <a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff565910">NDIS_MEDIUM</a>.
 
 
 ### -field MiniportPhysicalMediaType
@@ -223,7 +223,7 @@ The physical medium type for the base underlying miniport adapter. For more info
 ### -field MiniportMediaSpecificAttributes
 
 A pointer to an 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure that
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure that
      identifies a structure that contains miniport media-specific attributes, or <b>NULL</b> if there are no such
      attributes. The 
      <b>Type</b> member of the NDIS_OBJECT_HEADER structure identifies the type of the
@@ -239,7 +239,7 @@ A pointer to an
 ### -field DefaultOffloadConfiguration
 
 A pointer to an 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a> structure which defines task
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566599">NDIS_OFFLOAD</a> structure which defines task
      offload attributes. The filter driver should review these attributes to obtain the task offload
      capabilities of the underlying drivers. The filter driver should modify these attributes, if necessary,
      to reflect any changes in the task offload support that it requires.
@@ -300,7 +300,7 @@ Reserved for future use.
 ### -field HDSplitCurrentConfig
 
 A pointer to an 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_hd_split_current_config.md">
+     <a href="https://msdn.microsoft.com/866fe9e6-0cb1-45cd-84b4-4e2df9c9c45a">
      NDIS_HD_SPLIT_CURRENT_CONFIG</a> structure. This structure specifies the current header-data split
      configuration of the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does
      not support header-data split.
@@ -309,7 +309,7 @@ A pointer to an
 ### -field ReceiveFilterCapabilities
 
 A pointer to an 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_capabilities.md">
+     <a href="https://msdn.microsoft.com/aecc1fe0-03f9-44be-9a38-b689eee4c5a6">
      NDIS_RECEIVE_FILTER_CAPABILITIES</a> structure. This structure specifies the generic filtering
      capabilities that are currently enabled on the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does not
      support receive filtering.
@@ -318,14 +318,14 @@ A pointer to an
 ### -field MiniportPhysicalDeviceObject
 
 A pointer to a 
-     <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure. This structure
+     <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure. This structure
      represents the physical device for the underlying miniport adapter.
 
 
 ### -field NicSwitchCapabilities
 
 A pointer to an 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_capabilities.md">
+     <a href="https://msdn.microsoft.com/bc4b56bd-583f-4b41-b5a7-90958ce65f42">
      NDIS_NIC_SWITCH_CAPABILITIES</a> structure. This structure specifies the NIC switch capabilities of
      the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does not support NIC
      switch features.
@@ -338,14 +338,14 @@ A Boolean value that, if set to TRUE, indicates whether a network interface (if)
 
 ### -field SriovCapabilities
 
-A pointer to an <a href="..\ntddndis\ns-ntddndis-_ndis_sriov_capabilities.md">NDIS_SRIOV_CAPABILITIES</a> structure. This structure specifies the single root I/O virtualization (SR-IOV) capabilities that are currently enabled on the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does not support SR-IOV features.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451677">NDIS_SRIOV_CAPABILITIES</a> structure. This structure specifies the single root I/O virtualization (SR-IOV) capabilities that are currently enabled on the underlying miniport adapter. This value can be <b>NULL</b> if the miniport adapter does not support SR-IOV features.
 
 For more information, see <a href="https://msdn.microsoft.com/E64DD4F0-D5F8-4FFF-931B-C04C5C42D000">Single Root I/O Virtualization (SR-IOV)</a>.
 
 
 ### -field NicSwitchArray
 
-A pointer to an <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info_array.md">NDIS_NIC_SWITCH_INFO_ARRAY</a> structure.  This array enumerates the NIC switches that have been created on the miniport adapter. NIC switches can be created only if SR-IOV is supported and enabled on the adapter. 
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451584">NDIS_NIC_SWITCH_INFO_ARRAY</a> structure.  This array enumerates the NIC switches that have been created on the miniport adapter. NIC switches can be created only if SR-IOV is supported and enabled on the adapter. 
 
 <div class="alert"><b>Note</b>  Starting with Windows Server 2012, Windows supports only the default NIC switch that is created on the physical function (PF) miniport adapter. Therefore, this array can contain only one element. </div>
 <div> </div>
@@ -359,67 +359,42 @@ Filter drivers should avoid issuing unnecessary OID queries. Instead, use the in
     NDIS_FILTER_ATTACH_PARAMETERS, when available, to obtain information about underlying drivers.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 6.0 and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
 </dt>
 <dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_hd_split_current_config.md">NDIS_HD_SPLIT_CURRENT_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565696">NDIS_HD_SPLIT_CURRENT_CONFIG</a>
 </dt>
 <dt>
-<a href="..\ntddndis\ne-ntddndis-_ndis_medium.md">NDIS_MEDIUM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565910">NDIS_MEDIUM</a>
 </dt>
 <dt>
 <a href="..\ndis\ns-ndis-_ndis_miniport_adapter_native_802_11_attributes.md">
    NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a>
 </dt>
 <dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_capabilities.md">NDIS_NIC_SWITCH_CAPABILITIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566583">NDIS_NIC_SWITCH_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info_array.md">NDIS_NIC_SWITCH_INFO_ARRAY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451584">NDIS_NIC_SWITCH_INFO_ARRAY</a>
 </dt>
 <dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 </dt>
 <dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_offload.md">NDIS_OFFLOAD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566599">NDIS_OFFLOAD</a>
 </dt>
 <dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_capabilities.md">
+<a href="https://msdn.microsoft.com/aecc1fe0-03f9-44be-9a38-b689eee4c5a6">
    NDIS_RECEIVE_FILTER_CAPABILITIES</a>
 </dt>
 <dt>
-<a href="..\ntddndis\ns-ntddndis-_ndis_sriov_capabilities.md">NDIS_SRIOV_CAPABILITIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451677">NDIS_SRIOV_CAPABILITIES</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568744">NET_IF_MEDIA_CONNECT_STATE</a>
@@ -450,5 +425,5 @@ Header
 
  
 
-<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_ATTACH_PARAMETERS structure%20 RELEASE:%20(1/8/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
+<a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [netvista\netvista]:%20NDIS_FILTER_ATTACH_PARAMETERS structure%20 RELEASE:%20(1/11/2018)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AWe use your feedback to improve the documentation. We don't use your email address for any other purpose, and we'll remove your email address from our system after the issue that you're reporting is fixed. While we're working to fix this issue, we might send you an email message to ask for more info. Later, we might also send you an email message to let you know that we've addressed your feedback.%0A%0AFor more info about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft</a>
 

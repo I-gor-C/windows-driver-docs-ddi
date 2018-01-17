@@ -69,21 +69,6 @@ A 64-bit integer that uniquely identifies the connection across the entire netwo
 The iSCSI service requires this method. It is optional that you implement this method.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

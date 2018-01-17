@@ -7,7 +7,7 @@ old-location: netvista\rilremotepartyinfovalue_2.htm
 old-project: netvista
 ms.assetid: bdea158f-6ee5-4e59-be50-efd8027a8645
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILREMOTEPARTYINFOVALUE, RILREMOTEPARTYINFOVALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,19 +67,3 @@ typedef enum _RILREMOTEPARTYINFOVALUE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

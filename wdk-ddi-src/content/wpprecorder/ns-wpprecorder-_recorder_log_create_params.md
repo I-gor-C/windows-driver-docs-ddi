@@ -8,7 +8,7 @@ old-project: devtest
 ms.assetid: 6BEB44C2-BB35-420F-B4A0-925FFAD7473C
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _RECORDER_LOG_CREATE_PARAMS, *PRECORDER_LOG_CREATE_PARAMS, RECORDER_LOG_CREATE_PARAMS
+ms.keywords: _RECORDER_LOG_CREATE_PARAMS, RECORDER_LOG_CREATE_PARAMS, *PRECORDER_LOG_CREATE_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PRECORDER_LOG_CREATE_PARAMS, RECORDER_LOG_CREATE_PARAMS
+req.typenames: RECORDER_LOG_CREATE_PARAMS, *PRECORDER_LOG_CREATE_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -104,21 +104,6 @@ Identifier to print when debug messages are merged. Lives at end of structure so
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wpprecorder.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

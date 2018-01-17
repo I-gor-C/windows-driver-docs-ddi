@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 9dc03c5d-5e14-4399-b282-f0385a85a16c
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_LibraryAttributes, HBA_LIBRARYATTRIBUTES, *PHBA_LIBRARYATTRIBUTES
+ms.keywords: HBA_LibraryAttributes, *PHBA_LIBRARYATTRIBUTES, HBA_LIBRARYATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HBA_LIBRARYATTRIBUTES, *PHBA_LIBRARYATTRIBUTES
+req.typenames: *PHBA_LIBRARYATTRIBUTES, HBA_LIBRARYATTRIBUTES
 ---
 
 # HBA_LibraryAttributes structure
@@ -95,19 +95,3 @@ Contains a structure of type tm that holds a timestamp that indicates when the l
 </ul>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

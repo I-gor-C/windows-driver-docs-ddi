@@ -135,32 +135,6 @@ This function does not need to be called directly.  The macros <a href="https://
 The <b>ReadField</b> and <b>ReadFieldStr</b> macros read a field whose size is less than 8 bytes from a structure initialized with <a href="https://msdn.microsoft.com/library/windows/hardware/ff550953">InitTypeRead</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550957">InitTypeReadPhysical</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdbgexts.h (include Wdbgexts.h or Dbgeng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

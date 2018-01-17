@@ -7,8 +7,8 @@ old-location: netvista\rilnitzinfo_v2.htm
 old-project: netvista
 ms.assetid: 31980e7f-b767-4f63-9dc6-efce582d84ea
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILNITZINFO_V2, RILNITZINFO, *LPRILNITZINFO_V2, *LPRILNITZINFO, RILNITZINFO_V2
+ms.date: 1/11/2018
+ms.keywords: RILNITZINFO_V2, RILNITZINFO, RILNITZINFO_V2, *LPRILNITZINFO_V2, *LPRILNITZINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILNITZINFO, *LPRILNITZINFO_V2, *LPRILNITZINFO, RILNITZINFO_V2
+req.typenames: RILNITZINFO, RILNITZINFO_V2, *LPRILNITZINFO_V2, *LPRILNITZINFO
 ---
 
 # RILNITZINFO_V2 structure
@@ -82,19 +82,3 @@ typedef struct _RILNITZINFO_V2 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

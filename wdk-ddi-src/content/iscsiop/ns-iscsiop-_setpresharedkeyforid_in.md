@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f941bc28-f906-4399-be54-09e2bc12e443
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetPresharedKeyForId_IN, SetPresharedKeyForId_IN, *PSetPresharedKeyForId_IN
+ms.keywords: _SetPresharedKeyForId_IN, *PSetPresharedKeyForId_IN, SetPresharedKeyForId_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SetPresharedKeyForId_IN, *PSetPresharedKeyForId_IN
+req.typenames: *PSetPresharedKeyForId_IN, SetPresharedKeyForId_IN
 ---
 
 # _SetPresharedKeyForId_IN structure
@@ -140,21 +140,6 @@ The ID to associate with the key. The initiator uses this ID to identify itself 
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

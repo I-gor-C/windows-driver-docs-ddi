@@ -157,20 +157,4 @@ A pointer to the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_de
 
 
 ## -remarks
-The client driver shall use the <a href="..\ufxclient\nf-ufxclient-ufx_device_callbacks_init.md">UFX_DEVICE_CALLBACKS_INIT</a> macro to initialize the <b>UFX_DEVICE_CALLBACKS</b> structure, and then shall set fields of structure to the appropriate event callback routines prior to calling the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a> export function.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxclient.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+The client driver shall use the <a href="..\ufxclient\nf-ufxclient-ufx_device_callbacks_init.md">UFX_DEVICE_CALLBACKS_INIT</a> macro to initialize the <b>UFX_DEVICE_CALLBACKS</b> structure, and then shall set fields of structure to the appropriate event callback routines prior to calling the <a href="..\ufxclient\nf-ufxclient-ufxdevicecreate.md">UfxDeviceCreate</a> export function.</p>

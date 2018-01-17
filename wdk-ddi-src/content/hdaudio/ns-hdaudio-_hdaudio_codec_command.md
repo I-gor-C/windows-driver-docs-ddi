@@ -137,21 +137,6 @@ Clients call the <a href="..\hdaudio\nc-hdaudio-ptransfer_codec_verbs.md">Transf
 The validity of individual members depends on the type of command sent.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hdaudio.h (include Hdaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

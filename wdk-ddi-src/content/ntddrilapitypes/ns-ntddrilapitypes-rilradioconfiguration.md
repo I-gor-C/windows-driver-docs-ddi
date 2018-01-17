@@ -7,8 +7,8 @@ old-location: netvista\rilradioconfiguration.htm
 old-project: netvista
 ms.assetid: 24ff04b3-aec2-4bce-aa85-e33f3dbffa22
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILRADIOCONFIGURATION, *LPRILRADIOCONFIGURATION, RILRADIOCONFIGURATION
+ms.date: 1/11/2018
+ms.keywords: RILRADIOCONFIGURATION, RILRADIOCONFIGURATION, *LPRILRADIOCONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILRADIOCONFIGURATION, RILRADIOCONFIGURATION
+req.typenames: RILRADIOCONFIGURATION, *LPRILRADIOCONFIGURATION
 ---
 
 # RILRADIOCONFIGURATION structure
@@ -66,19 +66,3 @@ typedef struct _RILRADIOCONFIGURATION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

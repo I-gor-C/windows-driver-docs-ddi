@@ -145,20 +145,4 @@ If <b>TRUE</b>, execute the operation synchronously.
 
 
 ## -remarks
-This structure must not be directly modified by a reader driver.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Smclib.h (include Smclib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This structure must not be directly modified by a reader driver.</p>

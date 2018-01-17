@@ -102,41 +102,6 @@ Variable to receive maximum combined size of miniport's dump data and strings. O
 To understand how you may use custom error codes to best advantage, see  <a href="storage.storport_event_log_extensions">Storport Error Log Extensions</a>. The StorPortLogSystemEvent routine must be called at IRQL &lt;= DISPATCH_LEVEL. If you pass in a more recent version of STOR_LOG_EVENT_DETAILS than  that supported by this build, this function changes the InterfaceRevision field to the latest supported version and returns STOR_STATUS_UNSUPPORTED_VERSION. The InterfaceRevision field of STOR_LOG_EVENT_DETAILS is a 32-bit value. However, only the three most-significant bytes are used for validation. The low byte is reserved to distinguish between compatible, minor variations of a particular version. For instance, a revision 0x00000101 structure is compatible with a Storport that implements revision 0x00000100 of the interface, although it is possible that some minor, noncritical functionality may be lost. If you specify a combined size of dump data and strings that exceeds the maximum allowed event log entry size, the integer pointed to by MaximumSize is set to the maximum allowed size of miniport dump data and strings, and STOR_INVALID_BUFFER_SIZE is returned. Although this function accepts ULONG values for the path, target, and LUN address specifiers, the values are truncated to UCHAR values because Storport internally only supports 8-bit values for these specifiers. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

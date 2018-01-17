@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_name_resolution_cache_v4.htm
 old-project: netvista
 ms.assetid: 9e999c4d-381d-4106-8eeb-e6974e2f8a22
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4_, FWPS_FIELDS_NAME_RESOLUTION_CACHE_V4
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,29 +87,3 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting withn Windows 7.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: fc93ab8a-01d2-4827-8d89-06f09bf10456
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _INDICATION_PARAMETERS, *PINDICATION_PARAMETERS, INDICATION_PARAMETERS
+ms.keywords: _INDICATION_PARAMETERS, INDICATION_PARAMETERS, *PINDICATION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: *PINDICATION_PARAMETERS, INDICATION_PARAMETERS
+req.typenames: INDICATION_PARAMETERS, *PINDICATION_PARAMETERS
 ---
 
 # _INDICATION_PARAMETERS structure
@@ -415,31 +415,6 @@ When the Bluetooth driver stack passes
     <b>Connect</b> member of the 
     <b>Parameters</b> union.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

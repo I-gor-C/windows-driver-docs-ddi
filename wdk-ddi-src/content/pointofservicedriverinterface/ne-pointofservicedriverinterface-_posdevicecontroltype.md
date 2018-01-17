@@ -154,20 +154,4 @@ Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinte
 
 
 ## -remarks
-This enumeration provides values for each IOCTL that you can send to the device driver. It is a convenient way to indicate which IOCTL to dispatch when calling functions like <b>SendDeviceCommand()</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pointofservicedriverinterface.h (include Pointofservicedriverinterface.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This enumeration provides values for each IOCTL that you can send to the device driver. It is a convenient way to indicate which IOCTL to dispatch when calling functions like <b>SendDeviceCommand()</b>.</p>

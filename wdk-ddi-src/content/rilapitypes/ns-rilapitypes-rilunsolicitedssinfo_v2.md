@@ -7,8 +7,8 @@ old-location: netvista\rilunsolicitedssinfo_v2_2.htm
 old-project: netvista
 ms.assetid: 1c59c4fa-610e-4200-a94a-2c28754dfe43
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO, *LPRILUNSOLICITEDSSINFO
+ms.date: 1/11/2018
+ms.keywords: RILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO, *LPRILUNSOLICITEDSSINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILUNSOLICITEDSSINFO_V2, *LPRILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO, *LPRILUNSOLICITEDSSINFO
+req.typenames: *LPRILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO_V2, RILUNSOLICITEDSSINFO, *LPRILUNSOLICITEDSSINFO
 req.product: Windows 10 or later.
 ---
 
@@ -95,19 +95,3 @@ typedef struct _RILUNSOLICITEDSSINFO_V2 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

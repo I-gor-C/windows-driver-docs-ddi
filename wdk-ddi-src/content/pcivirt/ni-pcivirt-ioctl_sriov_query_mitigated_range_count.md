@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: 68fd97a5-b7ea-43c0-96ed-b64445fd21dd
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _SRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
+ms.keywords: _SRIOV_PF_EVENT, SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
+req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT IOCTL
@@ -84,30 +84,4 @@ The virtualization stack uses an I/O MMU to differentiate traffic coming from th
 The request is sent to the physical function (PF) driver by the virtualization stack to find out the ranges of memory-mapped I/O space
 in which the stack must place
 intercepts  on those pages and send the requests to read and write values
-within those pages to the PF driver.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pcivirt.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+within those pages to the PF driver.</p>

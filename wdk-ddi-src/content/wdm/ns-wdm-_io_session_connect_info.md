@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: f9d7ffae-aa9e-44d6-b659-cb5a9068f1d7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _IO_SESSION_CONNECT_INFO, *PIO_SESSION_CONNECT_INFO, IO_SESSION_CONNECT_INFO
+ms.keywords: _IO_SESSION_CONNECT_INFO, IO_SESSION_CONNECT_INFO, *PIO_SESSION_CONNECT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PIO_SESSION_CONNECT_INFO, IO_SESSION_CONNECT_INFO
+req.typenames: IO_SESSION_CONNECT_INFO, *PIO_SESSION_CONNECT_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -69,31 +69,6 @@ Indicates whether the user session is a local session or a remote session. If <b
 ## -remarks
 If a driver is registered to receive notifications of events in a user session, and if this session enters the <i>connected</i> state, the I/O manager calls the driver's <a href="..\wdm\nc-wdm-io_session_notification_function.md">IO_SESSION_NOTIFICATION_FUNCTION</a> function. For this call, the I/O manager sets the function's <i>Event</i> parameter to <b>IoSessionEventConnected</b>. Additionally, the I/O manager sets the function's <i>NotificationPayload</i> parameter to point to an <b>IO_SESSION_CONNECT_INFO</b> structure that contains information about the user session. For more information about <b>IoSessionEventConnected</b>, see <a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows 7 and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: DDC3532A-0084-4C56-B540-C638AB7F7080
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UCM_CHARGING_STATE, UCM_CHARGING_STATE, *PUCM_CHARGING_STATE
+ms.keywords: _UCM_CHARGING_STATE, *PUCM_CHARGING_STATE, UCM_CHARGING_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: UCM_CHARGING_STATE, *PUCM_CHARGING_STATE
+req.typenames: *PUCM_CHARGING_STATE, UCM_CHARGING_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -88,61 +88,6 @@ Indicates the port is drawing a trickle charge.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmtypes.h (include Ucmcx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

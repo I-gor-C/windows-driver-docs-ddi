@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 2b5aee65-ccf6-42c6-9bb3-dff93cb53cf0
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _RemovePersistentLogin_OUT, *PRemovePersistentLogin_OUT, RemovePersistentLogin_OUT
+ms.keywords: _RemovePersistentLogin_OUT, RemovePersistentLogin_OUT, *PRemovePersistentLogin_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PRemovePersistentLogin_OUT, RemovePersistentLogin_OUT
+req.typenames: RemovePersistentLogin_OUT, *PRemovePersistentLogin_OUT
 ---
 
 # _RemovePersistentLogin_OUT structure
@@ -62,21 +62,6 @@ On output from <b>RemovePersistentLogin</b>, the status of the operation. For a 
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

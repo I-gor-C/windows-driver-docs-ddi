@@ -73,21 +73,6 @@ At entry, the <b>Output</b> member contains a codec command from the caller.
 Upon return, the <b>Input</b> member contains the response to the codec command.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hdaudio.h (include Hdaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

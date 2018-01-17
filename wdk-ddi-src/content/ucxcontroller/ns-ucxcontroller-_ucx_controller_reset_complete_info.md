@@ -73,20 +73,4 @@ Indicates if the reset was coordinated with UCX (TRUE) or not (FALSE).
 
 
 ## -remarks
-This structure is populated by a call to <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerresetcomplete.md">UcxControllerResetComplete</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxcontroller.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This structure is populated by a call to <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerresetcomplete.md">UcxControllerResetComplete</a>.</p>

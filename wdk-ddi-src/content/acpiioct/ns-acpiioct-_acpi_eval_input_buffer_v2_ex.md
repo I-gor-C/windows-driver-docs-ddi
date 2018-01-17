@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: 5086CA33-58B0-4F3A-9AE4-428CCE6EFB6B
 ms.author: windowsdriverdev
 ms.date: 12/31/2017
-ms.keywords: _ACPI_EVAL_INPUT_BUFFER_V2_EX, ACPI_EVAL_INPUT_BUFFER_V2_EX, *PACPI_EVAL_INPUT_BUFFER_V2_EX
+ms.keywords: _ACPI_EVAL_INPUT_BUFFER_V2_EX, *PACPI_EVAL_INPUT_BUFFER_V2_EX, ACPI_EVAL_INPUT_BUFFER_V2_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: ACPI_EVAL_INPUT_BUFFER_V2_EX, *PACPI_EVAL_INPUT_BUFFER_V2_EX
+req.typenames: *PACPI_EVAL_INPUT_BUFFER_V2_EX, ACPI_EVAL_INPUT_BUFFER_V2_EX
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_V2_EX structure
@@ -66,29 +66,3 @@ NULL terminated name string.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Windows 10, version 1709 and later versions.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Acpiioct.h (include Acpiioct.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

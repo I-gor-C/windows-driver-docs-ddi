@@ -7,7 +7,7 @@ old-location: netvista\wdi_stop_ap_reason.htm
 old-project: netvista
 ms.assetid: F0CACC25-2F7B-431A-8AAB-CBE495178CC1
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_STOP_AP_REASON, WDI_STOP_AP_REASON
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,39 +85,3 @@ The end value of possible IHV-specified reasons.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

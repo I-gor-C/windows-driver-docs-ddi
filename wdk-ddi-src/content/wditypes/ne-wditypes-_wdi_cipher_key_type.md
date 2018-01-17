@@ -7,7 +7,7 @@ old-location: netvista\wdi_cipher_key_type.htm
 old-project: netvista
 ms.assetid: 09874F77-5A9C-4C98-996F-29BB90CAE4B6
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_CIPHER_KEY_TYPE, WDI_CIPHER_KEY_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,39 +73,3 @@ The key is an IGTK.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

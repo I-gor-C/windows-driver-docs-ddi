@@ -57,7 +57,7 @@ typedef struct _D3DDDICB_CREATESYNCHRONIZATIONOBJECT {
 
 ### -field Info
 
-[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobjectinfo.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a> structure that contains information about the kernel-mode synchronization object.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544657">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a> structure that contains information about the kernel-mode synchronization object.
 
 
 ### -field hSyncObject
@@ -68,35 +68,10 @@ typedef struct _D3DDDICB_CREATESYNCHRONIZATIONOBJECT {
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_synchronizationobjectinfo.md">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544657">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a>
 </dt>
 <dt>
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createsynchronizationobjectcb.md">pfnCreateSynchronizationObjectCb</a>

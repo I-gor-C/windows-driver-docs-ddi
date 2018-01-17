@@ -76,31 +76,4 @@ None
 
 
 ## -remarks
-The port driver's synth-sink object calls this method when the miniport driver needs to render more wave data into the destination buffer.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusicks.h (include Dmusicks.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The port driver's synth-sink object calls this method when the miniport driver needs to render more wave data into the destination buffer.</p>

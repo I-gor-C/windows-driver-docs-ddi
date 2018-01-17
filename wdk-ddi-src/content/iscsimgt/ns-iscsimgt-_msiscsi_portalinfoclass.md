@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 400ff6fc-6eb7-4b3f-afec-7d0b69039ed1
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSiSCSI_PortalInfoClass, *PMSiSCSI_PortalInfoClass, MSiSCSI_PortalInfoClass
+ms.keywords: _MSiSCSI_PortalInfoClass, MSiSCSI_PortalInfoClass, *PMSiSCSI_PortalInfoClass
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMSiSCSI_PortalInfoClass, MSiSCSI_PortalInfoClass
+req.typenames: MSiSCSI_PortalInfoClass, *PMSiSCSI_PortalInfoClass
 ---
 
 # _MSiSCSI_PortalInfoClass structure
@@ -68,21 +68,6 @@ A variable length array of <a href="..\iscsimgt\ns-iscsimgt-_iscsi_portalinfo.md
 ## -remarks
 We recommend that you implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

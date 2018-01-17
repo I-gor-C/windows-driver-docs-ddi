@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 02A30A9F-A27D-492E-8FB3-D8CB34D51D5A
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_DEVICE_STARTED, PEP_DEVICE_STARTED, *PPEP_DEVICE_STARTED
+ms.keywords: _PEP_DEVICE_STARTED, *PPEP_DEVICE_STARTED, PEP_DEVICE_STARTED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PEP_DEVICE_STARTED, *PPEP_DEVICE_STARTED
+req.typenames: *PPEP_DEVICE_STARTED, PEP_DEVICE_STARTED
 ---
 
 # _PEP_DEVICE_STARTED structure
@@ -62,31 +62,6 @@ typedef struct _PEP_DEVICE_STARTED {
 ## -remarks
 This structure is used by the <a href="kernel.pep_dpm_device_started">PEP_DPM_DEVICE_STARTED</a> notification. The <b>DeviceHandle</b> member of this structure contains an input value that is supplied by PoFx.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

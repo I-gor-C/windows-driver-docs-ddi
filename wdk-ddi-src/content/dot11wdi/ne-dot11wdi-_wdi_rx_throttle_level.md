@@ -7,7 +7,7 @@ old-location: netvista\wdi_rx_throttle_level.htm
 old-project: netvista
 ms.assetid: 637c0892-8d73-45b7-b679-ff3a0ba78a9c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_RX_THROTTLE_LEVEL, WDI_RX_THROTTLE_LEVEL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,39 +72,3 @@ Aggressive throttling.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

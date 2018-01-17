@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfodirection_2.htm
 old-project: netvista
 ms.assetid: 55db88f4-14a5-4d37-b4e8-be88369f33b7
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLINFODIRECTION, RILCALLINFODIRECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILCALLINFODIRECTION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

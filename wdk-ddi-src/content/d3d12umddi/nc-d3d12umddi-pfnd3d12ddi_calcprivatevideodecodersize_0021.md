@@ -69,20 +69,4 @@ The arguments used to create a video decoder.
 
 
 ## -remarks
-The runtime allocates memory for storing the driver CPU object that represents the video decoder.  This method is used to calculate the driver object size.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+The runtime allocates memory for storing the driver CPU object that represents the video decoder.  This method is used to calculate the driver object size.</p>

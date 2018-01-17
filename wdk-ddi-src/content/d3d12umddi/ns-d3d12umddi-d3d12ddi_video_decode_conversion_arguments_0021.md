@@ -90,20 +90,4 @@ Use <b>D3D12DDICAPS_TYPE_VIDEO_DECODE_CONVERSION_SUPPORT</b> to determine if a c
 
 A source and destination resolution and format are communicated by the resource properties of reference textures versus the output buffer specified in the pfnDecodeFrame callback function.
 
-Support for scaling and format conversion during decode can also be queried with <b>D3D12DDICAPS_TYPE_VIDEO_DECODE_CONVERSION_SUPPORT</b>.  The source size for the scale is the source stream width and height set during video decoder creation.  The output size for the scale is the width and height of the output texture passed into the pfnDecodeFrame callback function.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+Support for scaling and format conversion during decode can also be queried with <b>D3D12DDICAPS_TYPE_VIDEO_DECODE_CONVERSION_SUPPORT</b>.  The source size for the scale is the source stream width and height set during video decoder creation.  The output size for the scale is the width and height of the output texture passed into the pfnDecodeFrame callback function.</p>

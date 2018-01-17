@@ -7,8 +7,8 @@ old-location: netvista\rilnotificationparams.htm
 old-project: netvista
 ms.assetid: c89c7df3-7ccb-46db-adcc-22c49cae5108
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS, *LPRILNOTIFICATIONPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILNOTIFICATIONPARAMS, *LPRILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILNOTIFICATIONPARAMS, *LPRILNOTIFICATIONPARAMS
+req.typenames: *LPRILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS
 ---
 
 # RILNOTIFICATIONPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILNOTIFICATIONPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

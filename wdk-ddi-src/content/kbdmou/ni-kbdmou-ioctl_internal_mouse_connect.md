@@ -107,21 +107,6 @@ Moufiltr is already connected (a filter driver supports only one connect request
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Kbdmou.h (include Kbdmou.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

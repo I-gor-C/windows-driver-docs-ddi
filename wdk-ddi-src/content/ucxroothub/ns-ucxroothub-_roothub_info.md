@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 634398E9-7AAA-424C-8C81-287F70CE3578
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _ROOTHUB_INFO, ROOTHUB_INFO, *PROOTHUB_INFO
+ms.keywords: _ROOTHUB_INFO, *PROOTHUB_INFO, ROOTHUB_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
-req.typenames: ROOTHUB_INFO, *PROOTHUB_INFO
+req.typenames: *PROOTHUB_INFO, ROOTHUB_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -92,21 +92,6 @@ The exit latency for the slowest link for U2 transition.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxroothub.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -87,21 +87,6 @@ The information the AV/C Streaming driver returns in the I/O Status Block is doc
 Must be called at IRQL = PASSIVE_LEVEL.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avcstrm.h (include Avcstrm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

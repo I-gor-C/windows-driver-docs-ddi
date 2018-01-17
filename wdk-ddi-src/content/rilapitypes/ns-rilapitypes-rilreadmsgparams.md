@@ -7,7 +7,7 @@ old-location: netvista\rilreadmsgparams_2.htm
 old-project: netvista
 ms.assetid: 2b8ee9c8-3945-4350-84dd-4709f162c381
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILREADMSGPARAMS, RILREADMSGPARAMS, *LPRILREADMSGPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef struct _RILREADMSGPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

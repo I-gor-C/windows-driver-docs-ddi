@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: cd67b301-a94a-41dd-9c06-e6c674ea9173
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _GetBindingSupport_OUT, GetBindingSupport_OUT, *PGetBindingSupport_OUT
+ms.keywords: _GetBindingSupport_OUT, *PGetBindingSupport_OUT, GetBindingSupport_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: GetBindingSupport_OUT, *PGetBindingSupport_OUT
+req.typenames: *PGetBindingSupport_OUT, GetBindingSupport_OUT
 ---
 
 # _GetBindingSupport_OUT structure
@@ -68,21 +68,6 @@ Contains a bitmap that indicates the ability of an HBA and its miniport driver t
 ## -remarks
 The WMI tool suite generates a declaration of the GetBindingSupport_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

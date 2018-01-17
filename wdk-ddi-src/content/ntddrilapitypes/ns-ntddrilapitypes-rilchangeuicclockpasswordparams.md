@@ -7,8 +7,8 @@ old-location: netvista\rilchangeuicclockpasswordparams.htm
 old-project: netvista
 ms.assetid: 00e2fe6f-fd8b-45d1-9fd2-d90c515c3571
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCHANGEUICCLOCKPASSWORDPARAMS, *LPRILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS, *LPRILCHANGEUICCLOCKPASSWORDPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS
+req.typenames: RILCHANGEUICCLOCKPASSWORDPARAMS, *LPRILCHANGEUICCLOCKPASSWORDPARAMS
 ---
 
 # RILCHANGEUICCLOCKPASSWORDPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILCHANGEUICCLOCKPASSWORDPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

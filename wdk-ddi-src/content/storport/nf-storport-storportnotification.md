@@ -308,52 +308,6 @@ StorPortNotification is a polymorphic function that handles many different types
 Because StorPortNotification returns VOID, the scanning engine should assume the LockHandle was acquired as asked.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454268">StorPortNotification2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454275">StorPortStatusPending</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh454276">StorPortTimer</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 75a0e9ef-0791-4465-b671-36c86dc9116a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS
+ms.keywords: _UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: UCMTCPCI_DRIVER_GLOBALS, *PUCMTCPCI_DRIVER_GLOBALS
+req.typenames: *PUCMTCPCI_DRIVER_GLOBALS, UCMTCPCI_DRIVER_GLOBALS
 req.product: Windows 10 or later.
 ---
 
@@ -65,19 +65,3 @@ typedef struct _UCMTCPCI_DRIVER_GLOBALS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmtcpciglobals.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: e1dae7df-7d81-42cc-9a01-44345f53ba4e
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS
+ms.keywords: _WHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: WHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS
+req.typenames: *PWHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS
 ---
 
 # _WHEA_ERROR_PACKET_FLAGS structure
@@ -123,32 +123,6 @@ A ULONG representation of the contents of the WHEA_ERROR_PACKET_FLAGS union.
 ## -remarks
 The WHEA_ERROR_PACKET_FLAGS union describes the error condition reported by using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

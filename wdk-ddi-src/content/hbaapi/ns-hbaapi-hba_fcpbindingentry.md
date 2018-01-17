@@ -47,19 +47,3 @@ The HBA_FCPBindingEntry structure is equivalent to <a href="..\hbapiwmi\ns-hbapi
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

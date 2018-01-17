@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: 7cb25991-4e82-4da2-9d1f-fadc035b25a3
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _PCI_EXPRESS_AER_CAPABILITIES, *PPCI_EXPRESS_AER_CAPABILITIES, PCI_EXPRESS_AER_CAPABILITIES
+ms.keywords: _PCI_EXPRESS_AER_CAPABILITIES, PCI_EXPRESS_AER_CAPABILITIES, *PPCI_EXPRESS_AER_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PPCI_EXPRESS_AER_CAPABILITIES, PCI_EXPRESS_AER_CAPABILITIES
+req.typenames: PCI_EXPRESS_AER_CAPABILITIES, *PPCI_EXPRESS_AER_CAPABILITIES
 req.product: Windows 10 or later.
 ---
 
@@ -103,21 +103,6 @@ The PCI_EXPRESS_AER_CAPABILITIES structure is available in Windows Server 2008 a
 
 A PCI_EXPRESS_AER_CAPABILITIES structure is contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537457">PCI_EXPRESS_AER_CAPABILITY</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff537458">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff537472">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a> structures.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Ntddk.h or Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 9c90c182-86ac-43e5-9e77-0ea2da76e6b9
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USB_BUS_INTERFACE_USBDI_V1, *PUSB_BUS_INTERFACE_USBDI_V1, USB_BUS_INTERFACE_USBDI_V1
+ms.keywords: _USB_BUS_INTERFACE_USBDI_V1, USB_BUS_INTERFACE_USBDI_V1, *PUSB_BUS_INTERFACE_USBDI_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSB_BUS_INTERFACE_USBDI_V1, USB_BUS_INTERFACE_USBDI_V1
+req.typenames: USB_BUS_INTERFACE_USBDI_V1, *PUSB_BUS_INTERFACE_USBDI_V1
 req.product: Windows 10 or later.
 ---
 
@@ -167,31 +167,6 @@ The <b>IsDeviceHighSpeed</b> member does not indicate whether a device is capabl
 
 The routines in this structure must be callable at IRQL &gt;= DISPATCH_LEVEL. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows XP and later operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbbusif.h (include Usbbusif.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

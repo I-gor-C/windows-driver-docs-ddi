@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 068ac200-55bb-4d7b-bc69-ad57d466a36b
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _WORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM, WORK_QUEUE_ITEM
+ms.keywords: _WORK_QUEUE_ITEM, WORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PWORK_QUEUE_ITEM, WORK_QUEUE_ITEM
+req.typenames: WORK_QUEUE_ITEM, *PWORK_QUEUE_ITEM
 req.product: Windows 10 or later.
 ---
 
@@ -101,21 +101,6 @@ To post the initialized work item to a system work queue, call <a href="..\wdm\n
 
 <b>ExInitializeWorkItem</b><i> and </i><b>ExQueueWorkItem</b><i> can only be used in cases where the specified work item is not associated with any device object or device stack. In all other cases, drivers should use </i><a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a><i>, </i><a href="..\wdm\nf-wdm-iofreeworkitem.md">IoFreeWorkItem</a><i>, and </i><a href="..\wdm\nf-wdm-ioqueueworkitem.md">IoQueueWorkItem</a><i>, because only these routines ensure that the device object associated with the specified work item remains available until the work item has been processed. </i>
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

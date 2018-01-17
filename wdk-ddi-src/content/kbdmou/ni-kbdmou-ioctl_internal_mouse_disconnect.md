@@ -77,21 +77,6 @@ The <b>Status</b> member is set to STATUS_NOT_IMPLEMENTED.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Kbdmou.h (include Kbdmou.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

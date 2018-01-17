@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: CD51FBD6-A589-4135-8BF0-8F0075654A05
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _WIM_PROVIDER_EXTERNAL_INFO, *PWIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO
+ms.keywords: _WIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO, *PWIM_PROVIDER_EXTERNAL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PWIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO
+req.typenames: WIM_PROVIDER_EXTERNAL_INFO, *PWIM_PROVIDER_EXTERNAL_INFO
 ---
 
 # _WIM_PROVIDER_EXTERNAL_INFO structure
@@ -110,31 +110,6 @@ The backing source for a file is set with a <a href="https://msdn.microsoft.com/
 
 The <b>Flags</b> and <b>ResourceHash</b> members are valid when the provider info is returned from a <a href="https://msdn.microsoft.com/library/windows/hardware/dn632441">FSCTL_GET_EXTERNAL_BACKING</a> request.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.1 Update.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

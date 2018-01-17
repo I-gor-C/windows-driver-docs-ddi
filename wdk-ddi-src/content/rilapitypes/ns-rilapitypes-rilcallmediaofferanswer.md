@@ -7,8 +7,8 @@ old-location: netvista\rilcallmediaofferanswer_2.htm
 old-project: netvista
 ms.assetid: 1ba861f5-b790-4e5a-88fa-49e05239219c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCALLMEDIAOFFERANSWER, *LPRILCALLMEDIAOFFERANSWER, RILCALLMEDIAOFFERANSWER
+ms.date: 1/11/2018
+ms.keywords: RILCALLMEDIAOFFERANSWER, RILCALLMEDIAOFFERANSWER, *LPRILCALLMEDIAOFFERANSWER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILCALLMEDIAOFFERANSWER, RILCALLMEDIAOFFERANSWER
+req.typenames: RILCALLMEDIAOFFERANSWER, *LPRILCALLMEDIAOFFERANSWER
 req.product: Windows 10 or later.
 ---
 
@@ -83,19 +83,3 @@ typedef struct _RILCALLMEDIAOFFERANSWER {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

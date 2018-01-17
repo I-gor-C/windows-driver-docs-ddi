@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: e3980ac7-b539-4a8f-9869-14d418ebe1e7
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ISCSI_RedirectSessionInfo, *PISCSI_RedirectSessionInfo, ISCSI_RedirectSessionInfo
+ms.keywords: _ISCSI_RedirectSessionInfo, ISCSI_RedirectSessionInfo, *PISCSI_RedirectSessionInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PISCSI_RedirectSessionInfo, ISCSI_RedirectSessionInfo
+req.typenames: ISCSI_RedirectSessionInfo, *PISCSI_RedirectSessionInfo
 ---
 
 # _ISCSI_RedirectSessionInfo structure
@@ -79,21 +79,6 @@ This provides the redirection information, and it has as many entries as the num
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

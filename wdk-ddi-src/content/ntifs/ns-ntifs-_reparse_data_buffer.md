@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: e906a874-51f1-4623-8f0b-afdfd8169ab2
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _REPARSE_DATA_BUFFER, *PREPARSE_DATA_BUFFER, REPARSE_DATA_BUFFER
+ms.keywords: _REPARSE_DATA_BUFFER, REPARSE_DATA_BUFFER, *PREPARSE_DATA_BUFFER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PREPARSE_DATA_BUFFER, REPARSE_DATA_BUFFER
+req.typenames: REPARSE_DATA_BUFFER, *PREPARSE_DATA_BUFFER
 ---
 
 # _REPARSE_DATA_BUFFER structure
@@ -184,21 +184,6 @@ For more information about reparse point tags, see the Microsoft Windows SDK doc
 
 For more information about absolute and relative symbolic links, see Creating Symbolic Links in the Microsoft Windows SDK documentation.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

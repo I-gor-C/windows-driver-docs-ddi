@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: C2E466F6-71E6-4A17-B625-291D9B91F4FF
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STOR_CRYPTO_OPERATION_INSERT_KEY, *PSTOR_CRYPTO_OPERATION_INSERT_KEY, STOR_CRYPTO_OPERATION_INSERT_KEY
+ms.keywords: _STOR_CRYPTO_OPERATION_INSERT_KEY, STOR_CRYPTO_OPERATION_INSERT_KEY, *PSTOR_CRYPTO_OPERATION_INSERT_KEY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSTOR_CRYPTO_OPERATION_INSERT_KEY, STOR_CRYPTO_OPERATION_INSERT_KEY
+req.typenames: STOR_CRYPTO_OPERATION_INSERT_KEY, *PSTOR_CRYPTO_OPERATION_INSERT_KEY
 req.product: Windows 10 or later.
 ---
 
@@ -57,19 +57,3 @@ typedef struct _STOR_CRYPTO_OPERATION_INSERT_KEY {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h</dt>
-</dl>
-</td>
-</tr>
-</table>

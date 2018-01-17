@@ -7,8 +7,8 @@ old-location: netvista\rilunblockuicclockparams.htm
 old-project: netvista
 ms.assetid: 48d1deeb-8862-4e01-aa22-119a53aa4aba
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILUNBLOCKUICCLOCKPARAMS, *LPRILUNBLOCKUICCLOCKPARAMS
+req.typenames: *LPRILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS
 ---
 
 # RILUNBLOCKUICCLOCKPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILUNBLOCKUICCLOCKPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

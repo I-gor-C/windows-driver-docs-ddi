@@ -7,7 +7,7 @@ old-location: netvista\ndismremoveminiport.htm
 old-project: netvista
 ms.assetid: 70745b03-f9a3-4398-b41a-dc75bd16ffe0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: NdisMRemoveMiniport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisMRemoveMiniport function
@@ -82,73 +82,4 @@ If a miniport driver has determined that a particular miniport adapter has faile
 
 For example, if a miniport driver detects that a miniport adapter is resetting very frequently and is
     causing the computer to freeze every few seconds, the driver can request NDIS to remove the miniport
-    adapter.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see 
-   <a href="https://msdn.microsoft.com/1438603b-107f-4173-bbb1-90935ab7811d">NdisMRemoveMiniport (NDIS
-   5.1)</a>.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547979">Irql_Miniport_Driver_Function</a>
-</td>
-</tr>
-</table>
+    adapter.</p>

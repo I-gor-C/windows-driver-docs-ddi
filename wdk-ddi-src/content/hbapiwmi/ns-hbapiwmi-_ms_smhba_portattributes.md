@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: ce967b15-723f-4ab7-8a79-8234291d1950
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MS_SMHBA_PORTATTRIBUTES, *PMS_SMHBA_PORTATTRIBUTES, MS_SMHBA_PORTATTRIBUTES
+ms.keywords: _MS_SMHBA_PORTATTRIBUTES, MS_SMHBA_PORTATTRIBUTES, *PMS_SMHBA_PORTATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMS_SMHBA_PORTATTRIBUTES, MS_SMHBA_PORTATTRIBUTES
+req.typenames: MS_SMHBA_PORTATTRIBUTES, *PMS_SMHBA_PORTATTRIBUTES
 ---
 
 # _MS_SMHBA_PORTATTRIBUTES structure
@@ -84,19 +84,3 @@ A nonpersistent operating system target name, for example "\Device\HarddiskVolum
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,8 +7,8 @@ old-location: netvista\riloperatorinfo.htm
 old-project: netvista
 ms.assetid: 213a4d4e-d19a-40c4-9bc4-8cf6f8aa2d07
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILOPERATORINFO, *LPRILOPERATORINFO, RILOPERATORINFO
+ms.date: 1/11/2018
+ms.keywords: RILOPERATORINFO, RILOPERATORINFO, *LPRILOPERATORINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILOPERATORINFO, RILOPERATORINFO
+req.typenames: RILOPERATORINFO, *LPRILOPERATORINFO
 ---
 
 # RILOPERATORINFO structure
@@ -74,19 +74,3 @@ typedef struct _RILOPERATORINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

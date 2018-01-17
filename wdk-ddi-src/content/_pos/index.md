@@ -1,10 +1,17 @@
 ---
 UID: TP:pos
+ms.assetid: 01ba4b30-aac9-383a-b7a2-32c112dfd250
+ms.author: windowsdriverdev
+ms.date: 01/16/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # Point of Service (POS)
 
-## -description
+
 Overview of the Point of Service (POS) technology.
 
 To develop Point of Service (POS), you need these headers:
@@ -19,6 +26,10 @@ For the programming guide, see [Point of Service (POS)](https://docs.microsoft.c
 
 | Title   | Description   |
 | ---- |:---- |
+| [EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE function](..\poscx\nc-poscx-evt_pos_cx_device_ownership_change.md) | The EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine. |
+| [EVT_POS_CX_DEVICE_REMOTE_CLAIM function](..\poscx\nc-poscx-evt_pos_cx_device_remote_claim.md) | The EVT_POS_CX_DEVICE_REMOTE_CLAIM callback is called when the device is transitioning from unclaimed to claimed and allows the driver to do additional work. |
+| [EVT_POS_CX_DEVICE_REMOTE_RELEASE function](..\poscx\nc-poscx-evt_pos_cx_device_remote_release.md) | The EVT_POS_CX_DEVICE_REMOTE_RELEASE callback is called whenever the device is released and left with no owner and allows the driver to do additional work. |
+| [EVT_POS_CX_DEVICE_REMOTE_RETAIN function](..\poscx\nc-poscx-evt_pos_cx_device_remote_retain.md) | The EVT_POS_CX_DEVICE_REMOTE_RETAIN callback is called whenever PosCx attempts to hold onto a claim on a network device and allows the driver to do additional work. |
 | [POS_CX_ATTRIBUTES_INIT function](..\poscx\nf-poscx-pos_cx_attributes_init.md) | POS_CX_ATTRIBUTES_INIT initializes a POS_CX_ATTRIBUTE structure. |
 | [PosCxClaimDevice function](..\poscx\nf-poscx-poscxclaimdevice.md) | PosCxClaimDevice is called to claim a device for exclusive use. The caller should call PosCxReleaseDevice when the device is no longer needed. |
 | [PosCxCleanPendingRequests function](..\poscx\nf-poscx-poscxcleanpendingrequests.md) | PosCxCleanPendingRequests is called to cancel all pending requests for a given caller, identified by the open instance. |

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: CCC429B7-88BB-4DC3-86BC-6A5FCD405A5D
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STOR_REQUEST_INFO_V1, *PSTOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1
+ms.keywords: _STOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1, *PSTOR_REQUEST_INFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSTOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1
+req.typenames: STOR_REQUEST_INFO_V1, *PSTOR_REQUEST_INFO_V1
 req.product: Windows 10 or later.
 ---
 
@@ -228,31 +228,6 @@ Reserved.
 ## -remarks
 The caller to <a href="..\storport\nf-storport-storportgetrequestinfo.md">StorPortGetRequestInfo</a> allocates the <b>STOR_REQUEST_INFO</b> structure. Prior to calling <b>StorPortGetRequestInfo</b>,  <b>Version</b> must be set to <b>STOR_REQUEST_INFO_VER_1</b> and <b>Size</b> must be set to <b>sizeof</b>(STOR_REQUEST_INFO). Otherwise, <b>StorPortGetRequestInfo</b> will return with a status of <b>STOR_STATUS_INVALID_PARAMETER</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 8 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilgpprejectcause_2.htm
 old-project: netvista
 ms.assetid: b182f937-3d0d-4558-967a-da2be3c73843
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILGPPREJECTCAUSE, *LPRILGPPREJECTCAUSE, RILGPPREJECTCAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,3 @@ typedef struct _RILGPPREJECTCAUSE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

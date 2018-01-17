@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: D0503B73-EDFA-4742-BAFA-4FEE56F0A3C8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_PLATFORM_IDLE_STATE, *PPEP_PLATFORM_IDLE_STATE, PEP_PLATFORM_IDLE_STATE
+ms.keywords: _PEP_PLATFORM_IDLE_STATE, PEP_PLATFORM_IDLE_STATE, *PPEP_PLATFORM_IDLE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_PLATFORM_IDLE_STATE, PEP_PLATFORM_IDLE_STATE
+req.typenames: PEP_PLATFORM_IDLE_STATE, *PPEP_PLATFORM_IDLE_STATE
 ---
 
 # _PEP_PLATFORM_IDLE_STATE structure
@@ -100,31 +100,6 @@ The first element in an array of <a href="..\pepfx\ns-pepfx-_pep_processor_idle_
 ## -remarks
 This structure is used in conjunction with the <a href="kernel.pep_notify_ppm_query_platform_state">PEP_NOTIFY_PPM_QUERY_PLATFORM_STATE</a> notification. The <b>State</b> member of a <a href="..\pepfx\ns-pepfx-_pep_ppm_query_platform_state.md">PEP_PPM_QUERY_PLATFORM_STATE</a> structure is a <b>PEP_PLATFORM_IDLE_STATE</b> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

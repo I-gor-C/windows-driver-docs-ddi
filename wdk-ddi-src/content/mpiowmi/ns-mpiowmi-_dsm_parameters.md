@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 948331f1-1398-4e6e-85cb-27bbbd79630e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DSM_PARAMETERS, DSM_PARAMETERS, *PDSM_PARAMETERS
+ms.keywords: _DSM_PARAMETERS, *PDSM_PARAMETERS, DSM_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DSM_PARAMETERS, *PDSM_PARAMETERS
+req.typenames: *PDSM_PARAMETERS, DSM_PARAMETERS
 ---
 
 # _DSM_PARAMETERS structure
@@ -78,19 +78,3 @@ A field that contains an instance of the DSM_COUNTERS structure with timer count
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_cipher_key_direction.htm
 old-project: netvista
 ms.assetid: BE054858-F61A-488B-87A3-615A646C27F0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_CIPHER_KEY_DIRECTION, WDI_CIPHER_KEY_DIRECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,39 +73,3 @@ The cipher key  decrypts packets received from or transmitted to a peer.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

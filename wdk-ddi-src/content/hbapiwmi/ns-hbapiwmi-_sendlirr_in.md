@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 774acafb-c929-483a-82b0-2a358054dc7f
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SendLIRR_IN, SendLIRR_IN, *PSendLIRR_IN
+ms.keywords: _SendLIRR_IN, *PSendLIRR_IN, SendLIRR_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SendLIRR_IN, *PSendLIRR_IN
+req.typenames: *PSendLIRR_IN, SendLIRR_IN
 ---
 
 # _SendLIRR_IN structure
@@ -80,21 +80,6 @@ Indicates the device type for which link information is requested. For an explan
 ## -remarks
 The WMI tool suite generates a declaration of the SendLIRR_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

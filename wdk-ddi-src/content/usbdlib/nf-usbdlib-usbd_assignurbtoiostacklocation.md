@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Usbdex.lib
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
-req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.typenames: *PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>USBD_AssignUrbToIoStackLocation</b> routine is called by a client driver to associate an <a href="..\usb\ns-usb-_urb.md">URB</a> with the IRP's next stack location.
+The <b>USBD_AssignUrbToIoStackLocation</b> routine is called by a client driver to associate an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> with the IRP's next stack location.
 
 
 
@@ -69,7 +69,7 @@ Pointer to the IRP's next stack location (<a href="..\wdm\ns-wdm-_io_stack_locat
 
 ### -param Urb [in]
 
-Pointer to the <a href="..\usb\ns-usb-_urb.md">URB</a> structure that is allocated by <a href="..\usbdlib\nf-usbdlib-usbd_urballocate.md">USBD_UrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd_isochurballocate.md">USBD_IsochUrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd_selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>, or 
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure that is allocated by <a href="..\usbdlib\nf-usbdlib-usbd_urballocate.md">USBD_UrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd_isochurballocate.md">USBD_IsochUrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd_selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>, or 
     <a href="..\usbdlib\nf-usbdlib-usbd_selectinterfaceurballocateandbuild.md">USBD_SelectInterfaceUrbAllocateAndBuild</a>.
 
 
@@ -79,7 +79,7 @@ This routine does not return a value.
 
 ## -remarks
 If the client driver allocated an URB by calling <a href="..\usbdlib\nf-usbdlib-usbd_urballocate.md">USBD_UrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd_isochurballocate.md">USBD_IsochUrbAllocate</a>, <a href="..\usbdlib\nf-usbdlib-usbd_selectconfigurballocateandbuild.md">USBD_SelectConfigUrbAllocateAndBuild</a>, or 
-    <a href="..\usbdlib\nf-usbdlib-usbd_selectinterfaceurballocateandbuild.md">USBD_SelectInterfaceUrbAllocateAndBuild</a>, then the driver <i>must</i> call <b>USBD_AssignUrbToIoStackLocation</b> to associate the URB with <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> associated with the IRP. For URBs that are  allocated by those routines, <b>USBD_AssignUrbToIoStackLocation</b> replaces setting   <b>Parameters.Others.Argument1</b> of <b>IO_STACK_LOCATION</b> to the URB. (see <a href="..\usbioctl\ni-usbioctl-ioctl_internal_usb_submit_urb.md">IOCTL_INTERNAL_USB_SUBMIT_URB</a>).  
+    <a href="..\usbdlib\nf-usbdlib-usbd_selectinterfaceurballocateandbuild.md">USBD_SelectInterfaceUrbAllocateAndBuild</a>, then the driver <i>must</i> call <b>USBD_AssignUrbToIoStackLocation</b> to associate the URB with <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> associated with the IRP. For URBs that are  allocated by those routines, <b>USBD_AssignUrbToIoStackLocation</b> replaces setting   <b>Parameters.Others.Argument1</b> of <b>IO_STACK_LOCATION</b> to the URB. (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537271">IOCTL_INTERNAL_USB_SUBMIT_URB</a>).  
 
 The client driver must <i>not</i> call <b>USBD_AssignUrbToIoStackLocation</b> for an URB that is allocated by using other mechanisms, such as allocating the URB on the stack. Otherwise, the USB driver stack generates a bugcheck.
 
@@ -88,63 +88,6 @@ The client driver must call <b>USBD_AssignUrbToIoStackLocation</b> before callin
 
 For a code example, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450899">How to Submit an URB</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbdlib.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbdex.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

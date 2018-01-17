@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8a6fd914-94f9-4ccf-9b0a-cc102fd90965
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _GROUP_AFFINITY, *PGROUP_AFFINITY, GROUP_AFFINITY
+ms.keywords: _GROUP_AFFINITY, GROUP_AFFINITY, *PGROUP_AFFINITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: *PGROUP_AFFINITY, GROUP_AFFINITY
+req.typenames: GROUP_AFFINITY, *PGROUP_AFFINITY
 ---
 
 # _GROUP_AFFINITY structure
@@ -78,31 +78,6 @@ A <b>GROUP_AFFINITY</b> structure can describe a thread affinity, which is a set
 
 A <b>GROUP_AFFINITY</b> structure can describe an interrupt affinity, which is a set of processors on which an interrupt service routine can receive interrupts. For example, the <a href="..\wdm\nf-wdm-iogetdevicenumanode.md">IoGetDeviceNumaNode</a> routine uses <b>GROUP_AFFINITY</b> structures to specify interrupt affinities. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Miniport.h (include Winnt.h, Ntdef.h, or Windef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

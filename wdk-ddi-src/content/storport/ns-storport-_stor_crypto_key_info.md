@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 4C936B29-1C88-432C-938B-A78BFDDC57E4
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STOR_CRYPTO_KEY_INFO, STOR_CRYPTO_KEY_INFO, *PSTOR_CRYPTO_KEY_INFO
+ms.keywords: _STOR_CRYPTO_KEY_INFO, *PSTOR_CRYPTO_KEY_INFO, STOR_CRYPTO_KEY_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: STOR_CRYPTO_KEY_INFO, *PSTOR_CRYPTO_KEY_INFO
+req.typenames: *PSTOR_CRYPTO_KEY_INFO, STOR_CRYPTO_KEY_INFO
 req.product: Windows 10 or later.
 ---
 
@@ -57,19 +57,3 @@ typedef struct _STOR_CRYPTO_KEY_INFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h</dt>
-</dl>
-</td>
-</tr>
-</table>

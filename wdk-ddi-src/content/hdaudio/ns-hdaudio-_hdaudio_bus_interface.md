@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 6b3bc5ce-05d2-45e0-91d8-6bb34e58777f
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_BUS_INTERFACE, HDAUDIO_BUS_INTERFACE, *PHDAUDIO_BUS_INTERFACE
+ms.keywords: _HDAUDIO_BUS_INTERFACE, *PHDAUDIO_BUS_INTERFACE, HDAUDIO_BUS_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
-req.typenames: HDAUDIO_BUS_INTERFACE, *PHDAUDIO_BUS_INTERFACE
+req.typenames: *PHDAUDIO_BUS_INTERFACE, HDAUDIO_BUS_INTERFACE
 ---
 
 # _HDAUDIO_BUS_INTERFACE structure
@@ -180,21 +180,6 @@ For more information, see <a href="https://msdn.microsoft.com/e24071d3-9021-40c0
 
 The names and definitions of the first five members (<b>Size</b>, <b>Version</b>, <b>Context</b>, <b>InterfaceReference</b>, and <b>InterfaceDereference</b>) are the same as in the <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure. The remaining members are specific to the baseline HD Audio DDI and specify function pointers to the routines in the DDI. For more information, see <a href="https://msdn.microsoft.com/78667254-62a6-41fe-af36-43dbdea63aa8">Obtaining an HDAUDIO_BUS_INTERFACE DDI Object</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hdaudio.h (include Hdaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

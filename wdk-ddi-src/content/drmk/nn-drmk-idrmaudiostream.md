@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PWDI_TX_METADATA, WDI_TX_METADATA
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 # IDrmAudioStream interface
@@ -56,19 +56,3 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDrmAudioStream</b> interface
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.h</dt>
-</dl>
-</td>
-</tr>
-</table>

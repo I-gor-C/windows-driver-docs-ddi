@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: 2CCEDDB4-C91D-4E88-A01F-BB52F1686A95
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HPMI_HINT_BOOL, *PHPMI_HINT_BOOL, HPMI_HINT_BOOL
+ms.keywords: _HPMI_HINT_BOOL, HPMI_HINT_BOOL, *PHPMI_HINT_BOOL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PHPMI_HINT_BOOL, HPMI_HINT_BOOL
+req.typenames: HPMI_HINT_BOOL, *PHPMI_HINT_BOOL
 ---
 
 # IOCTL_HPMI_QUERY_CAPABILITIES IOCTL
@@ -91,31 +91,6 @@ information in HPMI_QUERY_CAPABILITIES_RESPONSE, as a response to all
 subsequent IOCTL calls.   
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 10, version 1709 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hpmi.h (include Hpmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -131,7 +106,7 @@ Header
 <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 </dl>
  

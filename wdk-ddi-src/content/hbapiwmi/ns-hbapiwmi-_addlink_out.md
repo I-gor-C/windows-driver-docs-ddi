@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: fe088ec7-2577-488d-a1c7-a7e2a1f86f6a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _AddLink_OUT, *PAddLink_OUT, AddLink_OUT
+ms.keywords: _AddLink_OUT, AddLink_OUT, *PAddLink_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PAddLink_OUT, AddLink_OUT
+req.typenames: AddLink_OUT, *PAddLink_OUT
 ---
 
 # _AddLink_OUT structure
@@ -62,21 +62,6 @@ Contains a value associated with the WMI class qualifier <a href="https://msdn.m
 ## -remarks
 The WMI tool suite generates a declaration of the AddLink_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562490">MSFC_EventControl WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 8db151ca-6358-41b0-a96a-e69b9d6c2c95
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _BUS_GENERATION_NODE, *PBUS_GENERATION_NODE, BUS_GENERATION_NODE
+ms.keywords: _BUS_GENERATION_NODE, BUS_GENERATION_NODE, *PBUS_GENERATION_NODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PBUS_GENERATION_NODE, BUS_GENERATION_NODE
+req.typenames: BUS_GENERATION_NODE, *PBUS_GENERATION_NODE
 ---
 
 # _BUS_GENERATION_NODE structure
@@ -73,21 +73,6 @@ The current node address of the device.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h (include 61883.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

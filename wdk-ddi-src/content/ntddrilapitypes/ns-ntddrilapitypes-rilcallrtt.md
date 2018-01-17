@@ -7,8 +7,8 @@ old-location: netvista\rilcallrtt.htm
 old-project: netvista
 ms.assetid: aa69cc11-66c7-4d23-b596-c37472af484a
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCALLRTT, RILCALLRTT, *LPRILCALLRTT
+ms.date: 1/11/2018
+ms.keywords: RILCALLRTT, *LPRILCALLRTT, RILCALLRTT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILCALLRTT, *LPRILCALLRTT
+req.typenames: *LPRILCALLRTT, RILCALLRTT
 ---
 
 # RILCALLRTT structure
@@ -66,19 +66,3 @@ typedef struct _RILCALLRTT {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

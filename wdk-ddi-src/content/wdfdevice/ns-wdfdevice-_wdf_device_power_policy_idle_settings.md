@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_power_policy_idle_settings.htm
 old-project: wdf
 ms.assetid: 8d5acd3a-3ec3-4190-98d4-e7ce9ea8d3e8
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, *PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
+ms.date: 1/11/2018
+ms.keywords: _WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, *PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
+req.typenames: WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, *PWDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
 req.product: Windows 10 or later.
 ---
 
@@ -223,40 +223,4 @@ Starting in KMDF 1.11 and UMDF 2.0, a device that <a href="wdf.supporting_idle_p
 
 For information about registry entries that control a device's idle capabilities, see <a href="https://msdn.microsoft.com/776fcf82-2235-489a-8d46-3ad230da3402">User Control of Device Idle and Wake Behavior</a>. 
 
-To initialize its <b>WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</b> structure, your driver should call <a href="..\wdfdevice\nf-wdfdevice-wdf_device_power_policy_idle_settings_init.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfdevice.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+To initialize its <b>WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</b> structure, your driver should call <a href="..\wdfdevice\nf-wdfdevice-wdf_device_power_policy_idle_settings_init.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</a>.</p>

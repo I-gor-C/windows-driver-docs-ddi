@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: E16657AE-9EEF-4E36-AAC5-5BF822006F1C
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PO_FX_PERF_STATE_UNIT, PO_FX_PERF_STATE_UNIT, *PPO_FX_PERF_STATE_UNIT
+ms.keywords: _PO_FX_PERF_STATE_UNIT, *PPO_FX_PERF_STATE_UNIT, PO_FX_PERF_STATE_UNIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: PO_FX_PERF_STATE_UNIT, *PPO_FX_PERF_STATE_UNIT
+req.irql: PASSIVE_LEVEL
+req.typenames: *PPO_FX_PERF_STATE_UNIT, PO_FX_PERF_STATE_UNIT
 req.product: Windows 10 or later.
 ---
 
@@ -81,31 +81,6 @@ This value is reserved for system use.
 ## -remarks
 The <b>Unit</b> member of the <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> structure is a value from the <b>PO_FX_PERF_STATE_UNIT</b> enumeration.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7fb199b6-dcdb-41fc-b1c4-4eef2177018e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY
+ms.keywords: _MS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMS_SMHBA_FC_PHY, MS_SMHBA_FC_PHY
+req.typenames: MS_SMHBA_FC_PHY, *PMS_SMHBA_FC_PHY
 ---
 
 # _MS_SMHBA_FC_PHY structure
@@ -276,19 +276,3 @@ The maximum frame size, in bytes, that is supported by PortWWN.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

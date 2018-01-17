@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: a31a8688-6002-4ad7-b135-0a8111e2c849
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSiSCSI_Eventlog, MSiSCSI_Eventlog, *PMSiSCSI_Eventlog
+ms.keywords: _MSiSCSI_Eventlog, *PMSiSCSI_Eventlog, MSiSCSI_Eventlog
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MSiSCSI_Eventlog, *PMSiSCSI_Eventlog
+req.typenames: *PMSiSCSI_Eventlog, MSiSCSI_Eventlog
 ---
 
 # _MSiSCSI_Eventlog structure
@@ -78,20 +78,4 @@ This provides additional information associated with this event.
 
 
 ## -remarks
-We recommend that you implement this class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+We recommend that you implement this class.</p>

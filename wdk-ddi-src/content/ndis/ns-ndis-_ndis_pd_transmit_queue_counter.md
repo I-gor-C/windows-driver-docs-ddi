@@ -7,7 +7,7 @@ old-location: netvista\ndis_pd_transmit_queue_counter.htm
 old-project: netvista
 ms.assetid: 944E824D-8092-4165-97A6-A35858EA0CEB
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _NDIS_PD_TRANSMIT_QUEUE_COUNTER, NDIS_PD_TRANSMIT_QUEUE_COUNTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,39 +66,3 @@ The amount of bytes transmitted.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h</dt>
-</dl>
-</td>
-</tr>
-</table>

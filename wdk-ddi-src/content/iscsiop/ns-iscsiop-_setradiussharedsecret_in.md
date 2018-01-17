@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 948475eb-0670-4fab-b831-2fdb3ec86032
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetRADIUSSharedSecret_IN, *PSetRADIUSSharedSecret_IN, SetRADIUSSharedSecret_IN
+ms.keywords: _SetRADIUSSharedSecret_IN, SetRADIUSSharedSecret_IN, *PSetRADIUSSharedSecret_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetRADIUSSharedSecret_IN, SetRADIUSSharedSecret_IN
+req.typenames: SetRADIUSSharedSecret_IN, *PSetRADIUSSharedSecret_IN
 ---
 
 # _SetRADIUSSharedSecret_IN structure
@@ -68,21 +68,6 @@ The shared secret.
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

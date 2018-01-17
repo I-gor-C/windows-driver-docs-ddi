@@ -7,8 +7,8 @@ old-location: netvista\ndis_pd_counter_value.htm
 old-project: netvista
 ms.assetid: 0C2424C5-F6EE-4D07-B5C3-CEC3520AFFDC
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: _NDIS_PD_COUNTER_VALUE, NDIS_PD_COUNTER_VALUE, *PNDIS_PD_COUNTER_VALUE
+ms.date: 1/11/2018
+ms.keywords: _NDIS_PD_COUNTER_VALUE, *PNDIS_PD_COUNTER_VALUE, NDIS_PD_COUNTER_VALUE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section
-req.typenames: NDIS_PD_COUNTER_VALUE, *PNDIS_PD_COUNTER_VALUE
+req.typenames: *PNDIS_PD_COUNTER_VALUE, NDIS_PD_COUNTER_VALUE
 ---
 
 # _NDIS_PD_COUNTER_VALUE structure
@@ -72,39 +72,3 @@ See <a href="..\ndis\ns-ndis-_ndis_pd_filter_counter.md">NDIS_PD_FILTER_COUNTER<
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h</dt>
-</dl>
-</td>
-</tr>
-</table>

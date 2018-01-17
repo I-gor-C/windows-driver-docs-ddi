@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 505276EE-5D41-4AB2-82FB-FBDEF994F372
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords: PEPCALLBACKPOWERONCRASHDUMPDEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
+req.typenames: *PVPCI_PNP_ID, VPCI_PNP_ID
 ---
 
 # POFXCALLBACKPROCESSORIDLEVETO callback
@@ -95,31 +95,6 @@ This routine is implemented by the power management framework (PoFx) and is call
 
 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

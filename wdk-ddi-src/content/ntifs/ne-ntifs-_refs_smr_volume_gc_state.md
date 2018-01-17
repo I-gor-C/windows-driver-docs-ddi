@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9E75F65A-6E9C-485F-9437-30CB01A5F317
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _REFS_SMR_VOLUME_GC_STATE, *PREFS_SMR_VOLUME_GC_STATE, REFS_SMR_VOLUME_GC_STATE
+ms.keywords: _REFS_SMR_VOLUME_GC_STATE, REFS_SMR_VOLUME_GC_STATE, *PREFS_SMR_VOLUME_GC_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PREFS_SMR_VOLUME_GC_STATE, REFS_SMR_VOLUME_GC_STATE
+req.typenames: REFS_SMR_VOLUME_GC_STATE, *PREFS_SMR_VOLUME_GC_STATE
 ---
 
 # _REFS_SMR_VOLUME_GC_STATE enumeration
@@ -78,29 +78,3 @@ Specifies the garbage collection is running at full speed.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 10, version 1709.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

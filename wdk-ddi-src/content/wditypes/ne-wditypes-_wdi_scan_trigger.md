@@ -7,7 +7,7 @@ old-location: netvista\wdi_scan_trigger.htm
 old-project: netvista
 ms.assetid: 3E201A6D-3A5B-4A6B-8AED-258A96BBF869
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_SCAN_TRIGGER, WDI_SCAN_TRIGGER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -91,39 +91,3 @@ This scan was initiated for roaming purposes, and the host has additional inform
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

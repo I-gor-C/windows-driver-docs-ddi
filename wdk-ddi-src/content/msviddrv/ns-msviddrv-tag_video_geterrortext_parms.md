@@ -81,19 +81,3 @@ Specifies the size of the text buffer in characters.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Msviddrv.h</dt>
-</dl>
-</td>
-</tr>
-</table>

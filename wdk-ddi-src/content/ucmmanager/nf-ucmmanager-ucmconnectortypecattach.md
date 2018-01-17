@@ -31,7 +31,7 @@ req.type-library:
 req.lib: UcmCxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPORT_DATA_1, PORT_DATA_1
+req.typenames: *PSWENUM_INSTALL_INTERFACE, SWENUM_INSTALL_INTERFACE
 req.product: Windows 10 or later.
 ---
 
@@ -76,82 +76,6 @@ When a connection to a partner connector is detected, the client driver calls th
 
 Typically, every  <b>UcmConnectorTypeCAttach</b> call has a subsequent <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecdetach.md">UcmConnectorTypeCDetach</a> call to notify UcmCx when the partner connector is detached. However, when a powered cable without an upstream port is attached (indicated by <b>Params-&gt;PortPartnerType</b> set to <b>UcmTypeCPortStatePoweredCableNoUfp</b>). The client driver can call <b>UcmConnectorTypeCAttach</b> again when a connection is detected to the  upstream port to the powered cable.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmmanager.h (include Ucmcx.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>UcmCxstub.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

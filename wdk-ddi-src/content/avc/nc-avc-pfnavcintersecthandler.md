@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 65ab5b68-9b76-497b-b560-9a4867d4d34e
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _KBUGCHECK_DATA, KBUGCHECK_DATA, *PKBUGCHECK_DATA
+ms.keywords: _KBUGCHECK_DATA, *PKBUGCHECK_DATA, KBUGCHECK_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: KBUGCHECK_DATA, *PKBUGCHECK_DATA
+req.typenames: *PKBUGCHECK_DATA, KBUGCHECK_DATA
 ---
 
 # PFNAVCINTERSECTHANDLER callback
@@ -122,32 +122,6 @@ The AV/C intersect handler is user-defined, based on the function prototype abov
 The handler is used in conjunction with the <b>AVC_FUNCTION_GET_PIN_DESCRIPTOR</b> function code. The purpose of the handler  is to match identical pin data formats and return them to the caller.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h (include Avc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -157,7 +131,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554160">AVC_FUNCTION_GET_PIN_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="..\ks\nc-ks-pfnksintersecthandlerex.md">AVStrMiniIntersectHandlerEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556326">AVStrMiniIntersectHandlerEx</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/44281574-8258-47a3-857d-fd44bb949f17">DataRange Intersections in AVStream</a>

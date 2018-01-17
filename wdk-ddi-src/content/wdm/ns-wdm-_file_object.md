@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 6eefdbbb-59de-4cc8-a309-8353a05cba41
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _FILE_OBJECT, *PFILE_OBJECT, FILE_OBJECT, *PLOG_FILE_OBJECT, LOG_FILE_OBJECT
+ms.keywords: _FILE_OBJECT, FILE_OBJECT, *PFILE_OBJECT, *PLOG_FILE_OBJECT, LOG_FILE_OBJECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PFILE_OBJECT, FILE_OBJECT
+req.typenames: FILE_OBJECT, *PFILE_OBJECT
 req.product: Windows 10 or later.
 ---
 
@@ -57,21 +57,6 @@ typedef FILE_OBJECT LOG_FILE_OBJECT, *PLOG_FILE_OBJECT, **PPLOG_FILE_OBJECT;
 ## -remarks
 CLFS clients do not directly access the members of a <b>LOG_FILE_OBJECT</b> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

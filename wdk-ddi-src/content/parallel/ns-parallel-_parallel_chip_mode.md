@@ -8,7 +8,7 @@ old-project: parports
 ms.assetid: e9d78c80-e6cf-49af-89de-6df8ea871796
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PARALLEL_CHIP_MODE, *PPARALLEL_CHIP_MODE, PARALLEL_CHIP_MODE
+ms.keywords: _PARALLEL_CHIP_MODE, PARALLEL_CHIP_MODE, *PPARALLEL_CHIP_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PPARALLEL_CHIP_MODE, PARALLEL_CHIP_MODE
+req.typenames: PARALLEL_CHIP_MODE, *PPARALLEL_CHIP_MODE
 ---
 
 # _PARALLEL_CHIP_MODE structure
@@ -68,21 +68,6 @@ Not used.
 ## -remarks
 A client uses a PARALLEL_CHIP_MODE structure with internal device control requests to set and clear the operating mode of a parallel port.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Parallel.h (include Parallel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

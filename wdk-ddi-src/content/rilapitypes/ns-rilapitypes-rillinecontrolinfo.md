@@ -7,8 +7,8 @@ old-location: netvista\rillinecontrolinfo_2.htm
 old-project: netvista
 ms.assetid: 490ef6ed-c5df-450f-acd1-36091ac8999e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILLINECONTROLINFO, *LPRILLINECONTROLINFO, RILLINECONTROLINFO
+ms.date: 1/11/2018
+ms.keywords: RILLINECONTROLINFO, RILLINECONTROLINFO, *LPRILLINECONTROLINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILLINECONTROLINFO, RILLINECONTROLINFO
+req.typenames: RILLINECONTROLINFO, *LPRILLINECONTROLINFO
 req.product: Windows 10 or later.
 ---
 
@@ -79,19 +79,3 @@ typedef struct _RILLINECONTROLINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -114,20 +114,4 @@ Indicates the device installation date.
 
 
 ## -remarks
-These strings must be NULL terminated, and the maximum length of the strings is <code>STATISTICS_STRING_SIZE - 1</code>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>PointOfServiceCommonTypes.h (include PointOfServiceCommonTypes.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+These strings must be NULL terminated, and the maximum length of the strings is <code>STATISTICS_STRING_SIZE - 1</code>.</p>

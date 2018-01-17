@@ -8,7 +8,7 @@ old-project: devtest
 ms.assetid: 92f7a980-509a-44af-b480-fa8c212f4ac6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _PCW_CALLBACK_TYPE, *PPCW_CALLBACK_TYPE, PCW_CALLBACK_TYPE
+ms.keywords: _PCW_CALLBACK_TYPE, PCW_CALLBACK_TYPE, *PPCW_CALLBACK_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: *PPCW_CALLBACK_TYPE, PCW_CALLBACK_TYPE
+req.irql: PASSIVE_LEVEL
+req.typenames: PCW_CALLBACK_TYPE, *PPCW_CALLBACK_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -80,31 +80,6 @@ The provider is asked to collect data from an instance of the counter set.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h or Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,8 +7,8 @@ old-location: netvista\rilcallaudiomediastate.htm
 old-project: netvista
 ms.assetid: f8e65085-6837-4d49-a39e-784942ee39a4
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE, *LPRILCALLAUDIOMEDIASTATE
+ms.date: 1/11/2018
+ms.keywords: RILCALLAUDIOMEDIASTATE, *LPRILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILCALLAUDIOMEDIASTATE, *LPRILCALLAUDIOMEDIASTATE
+req.typenames: *LPRILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE
 ---
 
 # RILCALLAUDIOMEDIASTATE structure
@@ -70,19 +70,3 @@ typedef struct _RILCALLAUDIOMEDIASTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

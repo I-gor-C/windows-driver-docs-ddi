@@ -7,8 +7,8 @@ old-location: netvista\rilhideidsettings.htm
 old-project: netvista
 ms.assetid: 11ca7db9-8e84-4d55-9ea9-7e2ecfa563e0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILHIDEIDSETTINGS, RILHIDEIDSETTINGS, *LPRILHIDEIDSETTINGS
+ms.date: 1/11/2018
+ms.keywords: RILHIDEIDSETTINGS, *LPRILHIDEIDSETTINGS, RILHIDEIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILHIDEIDSETTINGS, *LPRILHIDEIDSETTINGS
+req.typenames: *LPRILHIDEIDSETTINGS, RILHIDEIDSETTINGS
 ---
 
 # RILHIDEIDSETTINGS structure
@@ -74,19 +74,3 @@ typedef struct _RILHIDEIDSETTINGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

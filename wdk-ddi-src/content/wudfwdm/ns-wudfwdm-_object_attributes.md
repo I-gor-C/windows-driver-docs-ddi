@@ -200,21 +200,6 @@ All members of this structure are read-only. If a member of this structure is a 
 Driver routines that run in a process context other than that of the system process must set the OBJ_KERNEL_HANDLE flag for the <b>Attributes</b> member (by using the <b>InitializeObjectAttributes</b> macro). This restricts the use of a handle opened for that object to processes running only in kernel mode. Otherwise, the handle can be accessed by the process in whose context the driver is running.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfwdm.h (include D3dkmthk.h, Ntdef.h, Wdm.h, Ntddk.h, Ntifs.h, or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -7,7 +7,7 @@ old-location: wdf\iimpersonatecallback.htm
 old-project: wdf
 ms.assetid: 811cb070-9cbe-4906-9db0-ee8316cc18c9
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,19 +80,3 @@ The <a href="https://msdn.microsoft.com/6f06e89c-5298-4335-ab9a-ef69e635152c">On
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

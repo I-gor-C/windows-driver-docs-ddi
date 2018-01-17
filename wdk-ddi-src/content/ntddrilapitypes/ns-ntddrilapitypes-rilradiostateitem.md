@@ -7,8 +7,8 @@ old-location: netvista\rilradiostateitem.htm
 old-project: netvista
 ms.assetid: 152e3b52-44e4-4ed7-bfc3-38d0c65725fd
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM, RILRADIOSTATEITEM
+ms.date: 1/11/2018
+ms.keywords: RILRADIOSTATEITEM, RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILRADIOSTATEITEM, RILRADIOSTATEITEM
+req.typenames: RILRADIOSTATEITEM, *LPRILRADIOSTATEITEM
 ---
 
 # RILRADIOSTATEITEM structure
@@ -106,19 +106,3 @@ typedef struct _RILRADIOSTATEITEM {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

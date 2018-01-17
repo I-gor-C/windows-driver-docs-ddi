@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 88471e00-4913-44fd-b9f4-960ec46fb75a
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _OSVERSIONINFOEXW, *LPOSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW, *POSVERSIONINFOEXW, OSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, OSVERSIONINFOEX
+ms.keywords: _OSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW, *POSVERSIONINFOEXW, OSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, *LPOSVERSIONINFOEXW, OSVERSIONINFOEX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *LPOSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW, *POSVERSIONINFOEXW, OSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW
+req.typenames: *PRTL_OSVERSIONINFOEXW, *POSVERSIONINFOEXW, OSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, *LPOSVERSIONINFOEXW
 req.product: Windows 10 or later.
 ---
 
@@ -369,21 +369,6 @@ Windows 2000
 
 5.0
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

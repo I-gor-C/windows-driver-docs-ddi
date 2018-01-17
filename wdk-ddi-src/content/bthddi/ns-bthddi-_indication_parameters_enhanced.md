@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: D0FBA555-B61F-4D6F-B93F-C77D395F2BCD
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _INDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED, *PINDICATION_PARAMETERS_ENHANCED
+ms.keywords: _INDICATION_PARAMETERS_ENHANCED, *PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: INDICATION_PARAMETERS_ENHANCED, *PINDICATION_PARAMETERS_ENHANCED
+req.typenames: *PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED
 ---
 
 # _INDICATION_PARAMETERS_ENHANCED structure
@@ -406,29 +406,3 @@ Reserved member. Do not use.
 </dl>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows 8 and later versions of Windows
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

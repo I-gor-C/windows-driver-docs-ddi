@@ -68,30 +68,4 @@ typedef struct _DXVAHDDDI_RATIONAL {
 ## -remarks
 An output rate of 0/0 is valid. The driver interprets 0/0 as 0/1. The driver interprets 0/any value as zero. 
 
-The NTSC frame rate is 30000/1001, and the PAL frame rate is 25/1. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-DXVAHDDDI_RATIONAL is supported beginning with the Windows 7 operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The NTSC frame rate is 30000/1001, and the PAL frame rate is 25/1. </p>

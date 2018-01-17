@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 15231188-5c6d-4e36-afe9-74b92f445fa3
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _LogoutFromTarget_OUT, LogoutFromTarget_OUT, *PLogoutFromTarget_OUT
+ms.keywords: _LogoutFromTarget_OUT, *PLogoutFromTarget_OUT, LogoutFromTarget_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: LogoutFromTarget_OUT, *PLogoutFromTarget_OUT
+req.typenames: *PLogoutFromTarget_OUT, LogoutFromTarget_OUT
 ---
 
 # _LogoutFromTarget_OUT structure
@@ -62,21 +62,6 @@ On output from <b>LogoutFromTarget</b>, the status of the logoff operation. For 
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

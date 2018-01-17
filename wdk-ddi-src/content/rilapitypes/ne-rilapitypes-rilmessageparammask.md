@@ -7,7 +7,7 @@ old-location: netvista\rilmessageparammask_2.htm
 old-project: netvista
 ms.assetid: 1c20e35b-3589-46a5-8155-c35206d5e6c0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMESSAGEPARAMMASK, RILMESSAGEPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -299,19 +299,3 @@ typedef enum _RILMESSAGEPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

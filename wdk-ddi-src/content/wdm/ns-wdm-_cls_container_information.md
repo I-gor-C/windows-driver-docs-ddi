@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 9e083aba-1039-4ad3-9650-0e6e38ceb0c0
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CLS_CONTAINER_INFORMATION, *PCLS_CONTAINER_INFORMATION, PPCLS_CONTAINER_INFORMATION, CLS_CONTAINER_INFORMATION, CLFS_CONTAINER_INFORMATION, *PCLFS_CONTAINER_INFORMATION
+ms.keywords: _CLS_CONTAINER_INFORMATION, CLS_CONTAINER_INFORMATION, PPCLS_CONTAINER_INFORMATION, *PCLS_CONTAINER_INFORMATION, *PCLFS_CONTAINER_INFORMATION, CLFS_CONTAINER_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PCLS_CONTAINER_INFORMATION, PPCLS_CONTAINER_INFORMATION, CLS_CONTAINER_INFORMATION
+req.typenames: CLS_CONTAINER_INFORMATION, PPCLS_CONTAINER_INFORMATION, *PCLS_CONTAINER_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -193,21 +193,6 @@ The <a href="..\wdm\nf-wdm-clfsscanlogcontainers.md">ClfsScanLogContainers</a> f
 
 Time values <b>CreationTime</b>, <b>LastAccessTime</b>, and <b>LastWriteTime</b> are expressed in absolute system time format. Absolute system time is the number of 100-nanosecond intervals since the start of the year 1601 in the Gregorian calendar.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilsmsreadystate.htm
 old-project: netvista
 ms.assetid: f37b1e31-d0fa-4b0a-bab6-131b3bf1bdcd
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSMSREADYSTATE, RILSMSREADYSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,19 +66,3 @@ typedef enum _RILSMSREADYSTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

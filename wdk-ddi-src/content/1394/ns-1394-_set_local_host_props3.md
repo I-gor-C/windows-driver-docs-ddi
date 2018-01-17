@@ -111,21 +111,6 @@ The SET_LOCAL_HOST_PROPS3 structure is sent to the bus driver in the <b>u.SetLoc
 The first element of the buffer pointed to by <b>Mdl</b> must be a unit directory. This is followed by offsets to any other leafs or directories defined in the request. The offsets must be relative to the beginning of the buffer. If the request results in the creation of a new unit directory, the bus driver adds a pointer to the newly created directory in the root directory. The buffer pointed to by <b>Mdl</b> must be in big-endian data format. If a driver fails to remove its dynamically added Configuration ROM data when the driver is removed, the bus driver does so automatically, restoring the default contents of the Configuration ROM. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

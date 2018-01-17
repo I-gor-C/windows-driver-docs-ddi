@@ -8,7 +8,7 @@ old-project: nfpdrivers
 ms.assetid: 3B84B227-7155-4FA2-A224-1317D103F5C3
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: _NFCCX_DRIVER_GLOBALS, NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS
+ms.keywords: _NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS, NFCCX_DRIVER_GLOBALS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS
+req.typenames: *PNFCCX_DRIVER_GLOBALS, NFCCX_DRIVER_GLOBALS
 ---
 
 # _NFCCX_DRIVER_GLOBALS structure
@@ -59,41 +59,6 @@ typedef struct _NFCCX_DRIVER_GLOBALS {
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-None supported
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Nfccx.h (include Ncidef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

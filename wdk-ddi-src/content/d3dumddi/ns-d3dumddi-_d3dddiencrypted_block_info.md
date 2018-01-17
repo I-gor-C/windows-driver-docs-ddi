@@ -79,31 +79,6 @@ The runtime can specify a populated D3DDDIENCRYPTED_BLOCK_INFO structure in the 
 The following examples show how the runtime can partition a buffer's encryption.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-D3DDDIENCRYPTED_BLOCK_INFO is supported beginning with the Windows 7 operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

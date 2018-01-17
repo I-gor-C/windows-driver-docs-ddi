@@ -7,8 +7,8 @@ old-location: netvista\rilmessage_2.htm
 old-project: netvista
 ms.assetid: 731ae115-2394-4651-9b79-6d640d07a328
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILMESSAGE, *LPRILMESSAGE, RILMESSAGE
+ms.date: 1/11/2018
+ms.keywords: RILMESSAGE, RILMESSAGE, *LPRILMESSAGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILMESSAGE, RILMESSAGE
+req.typenames: RILMESSAGE, *LPRILMESSAGE
 req.product: Windows 10 or later.
 ---
 
@@ -175,19 +175,3 @@ typedef struct _RILMESSAGE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

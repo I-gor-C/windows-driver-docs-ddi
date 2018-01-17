@@ -7,7 +7,7 @@ old-location: wdf\ipnpcallbackselfmanagedio_onselfmanagediostop.htm
 old-project: wdf
 ms.assetid: 490c95f5-ea93-4521-8fa5-4ca1f83ff19d
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo::OnSelfManagedIoStop, OnSelfManagedIoStop
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,19 +65,3 @@ This method is not currently used.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

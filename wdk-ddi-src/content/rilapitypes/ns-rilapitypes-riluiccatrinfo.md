@@ -7,7 +7,7 @@ old-location: netvista\riluiccatrinfo_2.htm
 old-project: netvista
 ms.assetid: d7deda33-b68a-4413-a7fc-2988e97906e1
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCATRINFO, RILUICCATRINFO, *LPRILUICCATRINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef struct _RILUICCATRINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

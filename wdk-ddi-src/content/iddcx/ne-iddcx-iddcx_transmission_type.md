@@ -28,9 +28,9 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: Mscms.lib
-req.dll: Mscms.dll
-req.irql: 
+req.lib: 
+req.dll: 
+req.irql: _requires_same_
 req.typenames: 
 ---
 
@@ -136,19 +136,3 @@ typedef enum _IDDCX_TRANSMISSION_TYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iddcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

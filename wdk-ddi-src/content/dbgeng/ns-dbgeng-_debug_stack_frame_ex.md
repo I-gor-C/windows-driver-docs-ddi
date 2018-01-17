@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: EC0AF311-7BFC-4E2E-A1B1-FE38872B7FA2
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_STACK_FRAME_EX, *PDEBUG_STACK_FRAME_EX, DEBUG_STACK_FRAME_EX
+ms.keywords: _DEBUG_STACK_FRAME_EX, DEBUG_STACK_FRAME_EX, *PDEBUG_STACK_FRAME_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDEBUG_STACK_FRAME_EX, DEBUG_STACK_FRAME_EX
+req.typenames: DEBUG_STACK_FRAME_EX, *PDEBUG_STACK_FRAME_EX
 ---
 
 # _DEBUG_STACK_FRAME_EX structure
@@ -120,19 +120,3 @@ Used for alignment purposes. Set to 0.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

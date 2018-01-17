@@ -100,54 +100,6 @@ The <b>HBA_GetPersistentBindingV2</b> routine retrieves a set of bindings betwee
 This routine is similar to the <a href="..\hbaapi\nf-hbaapi-hba_getfcppersistentbinding.md">HBA_GetFcpPersistentBinding</a> routine. The key difference is that the bindings that <b>HBA_GetPersistentBindingV2</b> returns include a logical unit ID descriptor (LUID) derived from vital product data retrieved with a SCSI inquiry command. If the vital product data for a logical unit provides more than one LUID, then the LUID that <b>HBA_GetPersistentBindingV2</b> returns depends on the types of LUIDs provided. For a complete explanation of how the LUID is chosen when more than one LUID is available, see the T11 committee's <i>Fibre Channel HBA API </i>specification.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.dll</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

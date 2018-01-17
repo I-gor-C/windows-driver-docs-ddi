@@ -7,7 +7,7 @@ old-location: netvista\ril3gpp2tone.htm
 old-project: netvista
 ms.assetid: bf19de84-1c2d-4e9b-8061-888634dc2147
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RIL3GPP2TONE, RIL3GPP2TONE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -102,19 +102,3 @@ typedef enum _RIL3GPP2TONE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

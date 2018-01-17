@@ -7,7 +7,7 @@ old-location: netvista\ndisgetversion.htm
 old-project: netvista
 ms.assetid: d3e2c799-f789-499f-9948-f41d7576296e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: NdisGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisGetVersion function
@@ -67,75 +67,4 @@ Returns the major and minor numbers for the NDIS version in the high and low hal
 
 ## -remarks
 System support for 
-    <b>NdisGetVersion</b> is available in Windows XP and later versions.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/library/windows/hardware/ff552120">NdisGetVersion (NDIS 5.1)</a>) in
-   Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <b>NdisGetVersion (NDIS 5.1)</b>) in
-   Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
-</td>
-</tr>
-</table>
+    <b>NdisGetVersion</b> is available in Windows XP and later versions.</p>

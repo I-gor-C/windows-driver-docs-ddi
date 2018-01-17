@@ -7,7 +7,7 @@ old-location: netvista\rilsupsvctype_2.htm
 old-project: netvista
 ms.assetid: 4aec39d6-3e12-4393-b477-24ea2036c227
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSUPSVCTYPE, RILSUPSVCTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,19 +79,3 @@ typedef enum _RILSUPSVCTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

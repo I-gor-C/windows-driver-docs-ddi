@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 81c05f47-e75a-4d67-8e77-33ebe1750c67
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery, *PMS_SM_AdapterInformationQuery
+ms.keywords: _MS_SM_AdapterInformationQuery, *PMS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MS_SM_AdapterInformationQuery, *PMS_SM_AdapterInformationQuery
+req.typenames: *PMS_SM_AdapterInformationQuery, MS_SM_AdapterInformationQuery
 ---
 
 # _MS_SM_AdapterInformationQuery structure
@@ -156,19 +156,3 @@ The name of the HBA manufacturer.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

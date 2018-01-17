@@ -8,7 +8,7 @@ old-project: devtest
 ms.assetid: f5305351-10b4-47e6-a8b6-e1a91c605ca9
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _PCW_REGISTRATION_INFORMATION, *PPCW_REGISTRATION_INFORMATION, PCW_REGISTRATION_INFORMATION
+ms.keywords: _PCW_REGISTRATION_INFORMATION, PCW_REGISTRATION_INFORMATION, *PPCW_REGISTRATION_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PPCW_REGISTRATION_INFORMATION, PCW_REGISTRATION_INFORMATION
+req.typenames: PCW_REGISTRATION_INFORMATION, *PPCW_REGISTRATION_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -93,31 +93,6 @@ A pointer to the callback context.
 ## -remarks
 The <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a> function takes, as a parameter, a pointer to this structure to serve as the registration handle.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h or Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

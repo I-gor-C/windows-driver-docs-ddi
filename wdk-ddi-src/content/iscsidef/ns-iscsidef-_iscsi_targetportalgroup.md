@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 28f48224-90b8-45f5-b69d-6bb6a34f64e0
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup, *PISCSI_TargetPortalGroup
+ms.keywords: _ISCSI_TargetPortalGroup, *PISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: ISCSI_TargetPortalGroup, *PISCSI_TargetPortalGroup
+req.typenames: *PISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup
 ---
 
 # _ISCSI_TargetPortalGroup structure
@@ -67,21 +67,6 @@ A variable-length array of <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsidef.h (include Iscsidef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

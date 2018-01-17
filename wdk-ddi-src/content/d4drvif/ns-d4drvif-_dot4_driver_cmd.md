@@ -78,19 +78,3 @@ Specifies the timeout of the operation. Can be INFINITE.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D4drvif.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,8 +7,8 @@ old-location: netvista\rilmsgcdmaoutsubmit.htm
 old-project: netvista
 ms.assetid: 3ed93cff-7974-4cf9-9b89-f4a8e52c4c3d
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT, *LPRILMSGCDMAOUTSUBMIT
+ms.date: 1/11/2018
+ms.keywords: RILMSGCDMAOUTSUBMIT, *LPRILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILMSGCDMAOUTSUBMIT, *LPRILMSGCDMAOUTSUBMIT
+req.typenames: *LPRILMSGCDMAOUTSUBMIT, RILMSGCDMAOUTSUBMIT
 ---
 
 # RILMSGCDMAOUTSUBMIT structure
@@ -146,19 +146,3 @@ typedef struct _RILMSGCDMAOUTSUBMIT {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

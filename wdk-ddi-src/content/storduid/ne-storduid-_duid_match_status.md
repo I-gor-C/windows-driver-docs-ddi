@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: Any IRQL
 req.typenames: DUID_MATCH_STATUS
 req.product: Windows 10 or later.
 ---
@@ -103,12 +103,12 @@ At least one of the two DUIDs to compare is invalid.
 
 ### -field DuidErrorInvalidDeviceIdDescSize
 
-At least one of the two DUIDs to compare contains an invalid device ID descriptor (<a href="..\ntddstor\ns-ntddstor-_storage_device_id_descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>). This descriptor reports VPD data.
+At least one of the two DUIDs to compare contains an invalid device ID descriptor (<a href="https://msdn.microsoft.com/library/windows/hardware/ff566972">STORAGE_DEVICE_ID_DESCRIPTOR</a>). This descriptor reports VPD data.
 
 
 ### -field DuidErrorInvalidDeviceDescSize
 
-At least one of the two DUIDs to compare contains an invalid device descriptor (<a href="..\ntddstor\ns-ntddstor-_storage_device_descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>). This descriptor reports non-VPD inquiry data..
+At least one of the two DUIDs to compare contains an invalid device descriptor (<a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a>). This descriptor reports non-VPD inquiry data..
 
 
 ### -field DuidErrorInvalidLayoutSigSize
@@ -129,31 +129,16 @@ This value delimits the upper limit of the enumeration values in this enumeratio
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storduid.h (include Storduid.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\storduid\nf-storduid-comparestorageduids.md">CompareStorageDuids</a>
 </dt>
 <dt>
-<a href="..\ntddstor\ns-ntddstor-_storage_device_descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a>
 </dt>
 <dt>
-<a href="..\ntddstor\ns-ntddstor-_storage_device_id_descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566972">STORAGE_DEVICE_ID_DESCRIPTOR</a>
 </dt>
 </dl>
  

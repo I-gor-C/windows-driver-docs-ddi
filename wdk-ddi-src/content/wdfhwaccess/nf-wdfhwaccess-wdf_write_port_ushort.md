@@ -7,7 +7,7 @@ old-location: wdf\wdf_write_port_ushort.htm
 old-project: wdf
 ms.assetid: 310C55F8-E62C-4ABE-997E-E551CA6C4BB2
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: WDF_WRITE_PORT_USHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,50 +80,3 @@ This function does not return a value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 8.1
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfhwaccess.h</dt>
-</dl>
-</td>
-</tr>
-</table>

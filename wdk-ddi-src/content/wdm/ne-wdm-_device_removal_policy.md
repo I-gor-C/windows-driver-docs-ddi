@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 51d1f0f5-4ca1-4ea6-8561-117240551355
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _DEVICE_REMOVAL_POLICY, *PDEVICE_REMOVAL_POLICY, DEVICE_REMOVAL_POLICY
+ms.keywords: _DEVICE_REMOVAL_POLICY, DEVICE_REMOVAL_POLICY, *PDEVICE_REMOVAL_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: *PDEVICE_REMOVAL_POLICY, DEVICE_REMOVAL_POLICY
+req.irql: PASSIVE_LEVEL
+req.typenames: DEVICE_REMOVAL_POLICY, *PDEVICE_REMOVAL_POLICY
 req.product: Windows 10 or later.
 ---
 
@@ -75,21 +75,6 @@ The device can be removed suddenly. (The driver receives no advance warning that
 ## -remarks
 The <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a> routine supplies a <b>DEVICE_REMOVAL_POLICY</b> enumeration value when a driver requests <b>DevicePropertyRemovalPolicy</b>. The operating system uses the value as a hint as to how the device is typically removed from the computer.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h or Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

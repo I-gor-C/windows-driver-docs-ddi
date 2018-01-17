@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8B3E8FE0-9A96-43CD-8C6D-28F302BDF2D7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords: PEPCALLBACKPOWERONCRASHDUMPDEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= HIGH_LEVEL
-req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
+req.typenames: *PVPCI_PNP_ID, VPCI_PNP_ID
 ---
 
 # POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS callback
@@ -102,41 +102,6 @@ Before the platform enters a system power state in which the interrupt controlle
 
 The PEP can call this routine at IRQL &lt;= HIGH_LEVEL.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= HIGH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

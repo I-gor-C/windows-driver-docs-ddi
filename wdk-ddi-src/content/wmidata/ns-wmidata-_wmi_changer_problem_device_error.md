@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: See Remarks section.
 req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
 req.product: Windows 10 or later.
 ---
@@ -57,26 +57,11 @@ typedef struct _WMI_CHANGER_PROBLEM_DEVICE_ERROR {
 
 ### -field ChangerProblemType
 
-Contains one of the enumeration values defined for the <a href="..\ntddchgr\ne-ntddchgr-_changer_device_problem_type.md">CHANGER_DEVICE_PROBLEM_TYPE</a> enumeration data type. The minidriver sets <b>ChangerProblemType</b> to the appropriate enumerator value. 
+Contains one of the enumeration values defined for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551453">CHANGER_DEVICE_PROBLEM_TYPE</a> enumeration data type. The minidriver sets <b>ChangerProblemType</b> to the appropriate enumerator value. 
 
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wmidata.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -84,7 +69,7 @@ Header
 <a href="..\mcd\nf-mcd-changerperformdiagnostics.md">ChangerPerformDiagnostics</a>
 </dt>
 <dt>
-<a href="..\ntddchgr\ne-ntddchgr-_changer_device_problem_type.md">CHANGER_DEVICE_PROBLEM_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551453">CHANGER_DEVICE_PROBLEM_TYPE</a>
 </dt>
 </dl>
  

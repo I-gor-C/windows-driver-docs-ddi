@@ -31,7 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
 req.irql: <= APC_LEVEL
-req.typenames: EXpsFontRestriction
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltSendMessage function
@@ -133,74 +133,6 @@ If <i>Timeout</i> is zero when the minifilter driver is waiting for the reply, t
 <p class="note">Given this structure, it might seem obvious that the caller of <a href="https://msdn.microsoft.com/library/windows/hardware/ff541508">FilterReplyMessage</a> would set the <i>dwReplyBufferSize</i> parameter to <b>sizeof(REPLY_STRUCT)</b> and the <i>ReplyLength</i> parameter of <b>FltSendMessage</b> to the same value.  However, because of structure padding idiosyncrasies, <b>sizeof(REPLY_STRUCT)</b> might be larger than <b>sizeof(FILTER_REPLY_HEADER) + sizeof(MY_STRUCT)</b>.  If this is the case, <b>FltSendMessage</b> returns STATUS_BUFFER_OVERFLOW.
 <p class="note">Therefore, we recommend that you call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541508">FilterReplyMessage</a> and <b>FltSendMessage</b> (leveraging the above example) by setting <i>dwReplyBufferSize</i> and <i>ReplyLength</i> both to s<b>izeof(FILTER_REPLY_HEADER) + sizeof(MY_STRUCT)</b> instead of <b>sizeof(REPLY_STRUCT)</b>. This ensures that any extra padding at the end of the REPLY_STRUCT structure is ignored.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>FltMgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DLL
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltmgr.sys</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

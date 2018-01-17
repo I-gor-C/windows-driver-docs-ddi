@@ -78,7 +78,7 @@ typedef struct _D3DKMT_EVICT {
 
 ### -field Flags
 
-[in] Specifies eviction behavior as documented in <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_evict_flags.md">D3DDDI_EVICT_FLAGS</a>. 
+[in] Specifies eviction behavior as documented in <a href="https://msdn.microsoft.com/library/windows/hardware/dn906322">D3DDDI_EVICT_FLAGS</a>. 
 
 
 ### -field NumBytesToTrim
@@ -89,45 +89,10 @@ typedef struct _D3DKMT_EVICT {
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_evict_flags.md">D3DDDI_EVICT_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906322">D3DDDI_EVICT_FLAGS</a>
 </dt>
 <dt>
 <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtevict.md">D3DKMTEvict</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndisgetshareddataalignment.htm
 old-project: netvista
 ms.assetid: 561315b4-8866-4f48-8138-12b1a38f743e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: NdisGetSharedDataAlignment
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Ndis.lib
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+req.typenames: *PNDIS_SHARED_MEMORY_USAGE, NDIS_SHARED_MEMORY_USAGE
 ---
 
 # NdisGetSharedDataAlignment function
@@ -72,75 +72,4 @@ Use
     reduce the performance of multiprocessor systems.
 
 System support for 
-    <b>NdisGetSharedDataAlignment</b> is available in Windows XP and later versions.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported for NDIS 6.0 and NDIS 5.1 drivers (see 
-   <a href="https://msdn.microsoft.com/890ef7fd-bc7b-4e9d-a25d-2e9eb3a7f9cc">NdisGetSharedDataAlignment
-   (NDIS 5.1)</a>) in Windows Vista. Supported for NDIS 5.1 drivers (see 
-   <b>NdisGetSharedDataAlignment
-   (NDIS 5.1)</b>) in Windows XP.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547982">Irql_Miscellaneous_Function</a>
-</td>
-</tr>
-</table>
+    <b>NdisGetSharedDataAlignment</b> is available in Windows XP and later versions.</p>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 08cd5b10-725e-4a36-b70d-42a831b79372
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _DMA_ADAPTER, *PADAPTER_OBJECT, *PDMA_ADAPTER, DMA_ADAPTER
+ms.keywords: _DMA_ADAPTER, DMA_ADAPTER, *PADAPTER_OBJECT, *PDMA_ADAPTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PADAPTER_OBJECT, *PDMA_ADAPTER, DMA_ADAPTER
+req.typenames: DMA_ADAPTER, *PADAPTER_OBJECT, *PDMA_ADAPTER
 req.product: Windows 10 or later.
 ---
 
@@ -75,21 +75,6 @@ Pointer to a <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a> struc
 ## -remarks
 Drivers for devices that use DMA to transfer data use this structure to obtain the addresses of functions that enable use of a DMA controller. Usually, drivers obtain this structure by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> routine. Drivers can also obtain this structure by querying for the <a href="..\wdm\ns-wdm-_bus_interface_standard.md">BUS_INTERFACE_STANDARD</a> interface.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

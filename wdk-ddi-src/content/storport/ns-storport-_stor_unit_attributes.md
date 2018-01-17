@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 9677C044-354B-4575-B2EC-187D1B4E8C61
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES
+ms.keywords: _STOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: STOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES
+req.typenames: *PSTOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES
 req.product: Windows 10 or later.
 ---
 
@@ -83,31 +83,6 @@ The unit attributes are registered with Storport  using this structure as a para
 
 If the miniport driver supports asynchronous notifications, the <b>AsyncNotificationSupported</b> field set to 1, it will send notifications to the Storport driver using the <a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a> routine.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

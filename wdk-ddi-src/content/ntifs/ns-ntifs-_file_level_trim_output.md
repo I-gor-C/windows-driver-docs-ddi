@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 28CCE967-E752-4E0E-94D9-3A4243266684
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_OUTPUT, *PFILE_LEVEL_TRIM_OUTPUT
+ms.keywords: _FILE_LEVEL_TRIM_OUTPUT, *PFILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: FILE_LEVEL_TRIM_OUTPUT, *PFILE_LEVEL_TRIM_OUTPUT
+req.typenames: *PFILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_OUTPUT
 ---
 
 # _FILE_LEVEL_TRIM_OUTPUT structure
@@ -64,31 +64,6 @@ This structure is optionally included as the output buffer for an <a href="https
 
 All trim ranges in the array in <a href="..\ntifs\ns-ntifs-_file_level_trim.md">FILE_LEVEL_TRIM</a> were successfully processed if  <b>NumRangesProcessed</b> is equivalent to the <b>NumRanges</b> member of <b>FILE_LEVEL_TRIM</b>. Otherwise, the value in <b>NumRangesProcessed</b> is the starting index of the trim ranges that were not processed.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 8 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

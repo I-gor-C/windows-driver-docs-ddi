@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Udecxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+req.typenames: *PUSB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH
 req.product: Windows 10 or later.
 ---
 
@@ -60,12 +60,12 @@ FORCEINLINE NTSTATUS UdecxUrbRetrieveBuffer(
 
 ### -param Request [in]
 
-A handle to a framework request object that contains the <a href="..\usb\ns-usb-_urb.md">URB</a> for the transfer.
+A handle to a framework request object that contains the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> for the transfer.
 
 
 ### -param TransferBuffer [out]
 
-A pointer to a buffer that receives the transfer buffer of an <a href="..\usb\ns-usb-_urb.md">URB</a>.
+A pointer to a buffer that receives the transfer buffer of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>.
 
 
 ### -param Length [out]
@@ -87,72 +87,6 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>UdecxUrb.h (include Udecx.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Udecxstub.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

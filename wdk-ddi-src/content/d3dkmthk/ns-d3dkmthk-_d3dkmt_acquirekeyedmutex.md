@@ -84,31 +84,6 @@ If *<b>pTimeout</b> = 0, <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtacquirekeyedmute
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-D3DKMT_ACQUIREKEYEDMUTEX is supported beginning with the Windows 7 operating system. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

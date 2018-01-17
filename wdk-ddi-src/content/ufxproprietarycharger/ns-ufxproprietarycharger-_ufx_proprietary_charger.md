@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: FAAEDAFE-69A8-4092-8301-DB159FD3583D
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UFX_PROPRIETARY_CHARGER, UFX_PROPRIETARY_CHARGER, *PUFX_PROPRIETARY_CHARGER
+ms.keywords: _UFX_PROPRIETARY_CHARGER, *PUFX_PROPRIETARY_CHARGER, UFX_PROPRIETARY_CHARGER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
-req.typenames: UFX_PROPRIETARY_CHARGER, *PUFX_PROPRIETARY_CHARGER
+req.irql: PASSIVE_LEVEL
+req.typenames: *PUFX_PROPRIETARY_CHARGER, UFX_PROPRIETARY_CHARGER
 req.product: Windows 10 or later.
 ---
 
@@ -67,19 +67,3 @@ The minimum required device power state when it is connected, indicated by one o
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxproprietarycharger.h</dt>
-</dl>
-</td>
-</tr>
-</table>

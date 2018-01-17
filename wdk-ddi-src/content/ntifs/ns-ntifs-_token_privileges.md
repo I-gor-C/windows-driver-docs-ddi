@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: f2f4b2b7-bec0-42c3-904b-cbc74ca76bb3
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _TOKEN_PRIVILEGES, TOKEN_PRIVILEGES, *PTOKEN_PRIVILEGES
+ms.keywords: _TOKEN_PRIVILEGES, *PTOKEN_PRIVILEGES, TOKEN_PRIVILEGES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: TOKEN_PRIVILEGES, *PTOKEN_PRIVILEGES
+req.typenames: *PTOKEN_PRIVILEGES, TOKEN_PRIVILEGES
 ---
 
 # _TOKEN_PRIVILEGES structure
@@ -67,21 +67,6 @@ Specifies an array of LUID_AND_ATTRIBUTES structures. Each structure contains th
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

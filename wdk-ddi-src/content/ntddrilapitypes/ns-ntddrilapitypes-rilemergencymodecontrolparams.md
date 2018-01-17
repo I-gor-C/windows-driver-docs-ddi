@@ -7,8 +7,8 @@ old-location: netvista\rilemergencymodecontrolparams.htm
 old-project: netvista
 ms.assetid: b25ecc96-1ed2-4d8f-8dc8-0fafe58eca24
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILEMERGENCYMODECONTROLPARAMS, *LPRILEMERGENCYMODECONTROLPARAMS, RILEMERGENCYMODECONTROLPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILEMERGENCYMODECONTROLPARAMS, RILEMERGENCYMODECONTROLPARAMS, *LPRILEMERGENCYMODECONTROLPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILEMERGENCYMODECONTROLPARAMS, RILEMERGENCYMODECONTROLPARAMS
+req.typenames: RILEMERGENCYMODECONTROLPARAMS, *LPRILEMERGENCYMODECONTROLPARAMS
 ---
 
 # RILEMERGENCYMODECONTROLPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILEMERGENCYMODECONTROLPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

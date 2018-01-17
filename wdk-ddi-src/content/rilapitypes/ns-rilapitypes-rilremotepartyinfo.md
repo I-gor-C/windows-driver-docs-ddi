@@ -7,8 +7,8 @@ old-location: netvista\rilremotepartyinfo_2.htm
 old-project: netvista
 ms.assetid: 0ca17e70-1e50-4b62-89ec-0e92ad6e846b
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILREMOTEPARTYINFO, *LPRILREMOTEPARTYINFO, RILREMOTEPARTYINFO
+ms.date: 1/11/2018
+ms.keywords: RILREMOTEPARTYINFO, RILREMOTEPARTYINFO, *LPRILREMOTEPARTYINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILREMOTEPARTYINFO, RILREMOTEPARTYINFO
+req.typenames: RILREMOTEPARTYINFO, *LPRILREMOTEPARTYINFO
 req.product: Windows 10 or later.
 ---
 
@@ -91,19 +91,3 @@ typedef struct _RILREMOTEPARTYINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

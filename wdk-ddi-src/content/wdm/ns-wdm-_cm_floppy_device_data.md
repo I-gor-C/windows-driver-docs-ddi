@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 0ef0d242-4ed6-4c48-85b8-0fc87d3fe39b
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CM_FLOPPY_DEVICE_DATA, CM_FLOPPY_DEVICE_DATA, *PCM_FLOPPY_DEVICE_DATA
+ms.keywords: _CM_FLOPPY_DEVICE_DATA, *PCM_FLOPPY_DEVICE_DATA, CM_FLOPPY_DEVICE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: CM_FLOPPY_DEVICE_DATA, *PCM_FLOPPY_DEVICE_DATA
+req.typenames: *PCM_FLOPPY_DEVICE_DATA, CM_FLOPPY_DEVICE_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -164,21 +164,6 @@ The value written to the Datarate register before accessing the media.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

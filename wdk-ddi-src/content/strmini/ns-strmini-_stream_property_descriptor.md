@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: b72265b7-dce3-4688-bee7-2a6f7d7731f9
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _STREAM_PROPERTY_DESCRIPTOR, *PSTREAM_PROPERTY_DESCRIPTOR, STREAM_PROPERTY_DESCRIPTOR
+ms.keywords: _STREAM_PROPERTY_DESCRIPTOR, STREAM_PROPERTY_DESCRIPTOR, *PSTREAM_PROPERTY_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSTREAM_PROPERTY_DESCRIPTOR, STREAM_PROPERTY_DESCRIPTOR
+req.typenames: STREAM_PROPERTY_DESCRIPTOR, *PSTREAM_PROPERTY_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -85,19 +85,3 @@ Size of the <b>PropertyInfo</b> buffer.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h (include Strmini.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

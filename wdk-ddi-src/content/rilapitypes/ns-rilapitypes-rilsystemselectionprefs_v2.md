@@ -7,8 +7,8 @@ old-location: netvista\rilsystemselectionprefs_v2_2.htm
 old-project: netvista
 ms.assetid: d5866096-9df6-4453-96ab-8abd16707afc
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSYSTEMSELECTIONPREFS_V2, RILSYSTEMSELECTIONPREFS, *LPRILSYSTEMSELECTIONPREFS, *LPRILSYSTEMSELECTIONPREFS_V2, RILSYSTEMSELECTIONPREFS_V2
+ms.date: 1/11/2018
+ms.keywords: RILSYSTEMSELECTIONPREFS_V2, *LPRILSYSTEMSELECTIONPREFS, RILSYSTEMSELECTIONPREFS, *LPRILSYSTEMSELECTIONPREFS_V2, RILSYSTEMSELECTIONPREFS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILSYSTEMSELECTIONPREFS, *LPRILSYSTEMSELECTIONPREFS, *LPRILSYSTEMSELECTIONPREFS_V2, RILSYSTEMSELECTIONPREFS_V2
+req.typenames: *LPRILSYSTEMSELECTIONPREFS, RILSYSTEMSELECTIONPREFS, *LPRILSYSTEMSELECTIONPREFS_V2, RILSYSTEMSELECTIONPREFS_V2
 req.product: Windows 10 or later.
 ---
 
@@ -91,19 +91,3 @@ typedef struct _RILSYSTEMSELECTIONPREFS_V2 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -76,19 +76,3 @@ Otherwise, Status to the appropriate error condition as a NTSTATUS code.
 For more information, see [XREF-LINK:NTSTATUS Values].
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Charging.h</dt>
-</dl>
-</td>
-</tr>
-</table>

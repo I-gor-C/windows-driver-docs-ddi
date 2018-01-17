@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7f2edd6f-16bf-47a6-8546-7871435a56ac
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _IDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA, *PIDENTIFY_DEVICE_DATA
+ms.keywords: _IDENTIFY_DEVICE_DATA, *PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: IDENTIFY_DEVICE_DATA, *PIDENTIFY_DEVICE_DATA
+req.typenames: *PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA
 ---
 
 # _IDENTIFY_DEVICE_DATA structure
@@ -1080,19 +1080,3 @@ Indicates the checksum.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ata.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

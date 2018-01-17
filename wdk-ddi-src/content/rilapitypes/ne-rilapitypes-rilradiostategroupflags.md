@@ -7,7 +7,7 @@ old-location: netvista\rilradiostategroupflags_2.htm
 old-project: netvista
 ms.assetid: 6374a39f-44c4-4b76-a61d-d2bd22281571
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRADIOSTATEGROUPFLAGS, RILRADIOSTATEGROUPFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,3 @@ typedef enum _RILRADIOSTATEGROUPFLAGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

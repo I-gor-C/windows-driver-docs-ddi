@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 108c224c-ae42-414f-951d-cb225059d525
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FSRTL_PER_STREAM_CONTEXT, FSRTL_PER_STREAM_CONTEXT, *PFSRTL_PER_STREAM_CONTEXT
+ms.keywords: _FSRTL_PER_STREAM_CONTEXT, *PFSRTL_PER_STREAM_CONTEXT, FSRTL_PER_STREAM_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: FSRTL_PER_STREAM_CONTEXT, *PFSRTL_PER_STREAM_CONTEXT
+req.typenames: *PFSRTL_PER_STREAM_CONTEXT, FSRTL_PER_STREAM_CONTEXT
 ---
 
 # _FSRTL_PER_STREAM_CONTEXT structure
@@ -112,31 +112,6 @@ The <b>FsRtlSupportsPerStreamContexts</b> macro determines whether a file system
 
 Parameters
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This structure is available on Microsoft Windows XP and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

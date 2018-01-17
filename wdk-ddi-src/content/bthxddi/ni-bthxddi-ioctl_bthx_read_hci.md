@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 02CC3534-D319-40C1-A73C-DEFC1F5709F7
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.keywords: _BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
-req.typenames: *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+req.typenames: BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ---
 
 # IOCTL_BTHX_READ_HCI IOCTL
@@ -110,40 +110,4 @@ The <b>Information</b> member of the STATUS_BLOCK should be set to FIELD_OFFSET(
 
 The maximum size of the <b>Data</b> member for an ACL read is determined by <b>MaxAclTransferInSize</b>, specified in the BTHX_CAPABILITIES structure.  The maximum size of the <b>Data</b> member for an event is 255.
 
-This IOCTL should return STATUS_SUCCESS only under normal operation. Transport-specific errors should not be returned.  The IOCTL should return STATUS_CANCELLED only if this IOCTL has been canceled.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>BthXDDI.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+This IOCTL should return STATUS_SUCCESS only under normal operation. Transport-specific errors should not be returned.  The IOCTL should return STATUS_CANCELLED only if this IOCTL has been canceled.</p>

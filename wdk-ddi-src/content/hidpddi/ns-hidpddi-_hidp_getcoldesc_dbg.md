@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 65EEEDED-14FE-4275-9314-276E544427DE
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _HIDP_GETCOLDESC_DBG, *PHIDP_GETCOLDESC_DBG, HIDP_GETCOLDESC_DBG
+ms.keywords: _HIDP_GETCOLDESC_DBG, HIDP_GETCOLDESC_DBG, *PHIDP_GETCOLDESC_DBG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: *PHIDP_GETCOLDESC_DBG, HIDP_GETCOLDESC_DBG
+req.typenames: HIDP_GETCOLDESC_DBG, *PHIDP_GETCOLDESC_DBG
 ---
 
 # _HIDP_GETCOLDESC_DBG structure
@@ -77,21 +77,6 @@ Error-specific arguments. These are described as comments in the possible values
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hidpddi.h (include Hidpddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

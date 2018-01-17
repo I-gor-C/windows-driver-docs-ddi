@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: DISPATCH_LEVEL
 req.typenames: TRISTATE
 req.product: Windows 10 or later.
 ---
@@ -73,19 +73,3 @@ State is a true boolean value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxroothub.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

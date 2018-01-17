@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 6FE2962A-90A3-44C6-9A2E-CCEBCE8C1417
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBDEVICE_STARTIO, *PUSBDEVICE_STARTIO, USBDEVICE_STARTIO
+ms.keywords: _USBDEVICE_STARTIO, USBDEVICE_STARTIO, *PUSBDEVICE_STARTIO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBDEVICE_STARTIO, USBDEVICE_STARTIO
+req.typenames: USBDEVICE_STARTIO, *PUSBDEVICE_STARTIO
 req.product: Windows 10 or later.
 ---
 
@@ -66,21 +66,6 @@ A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxusbdevice.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

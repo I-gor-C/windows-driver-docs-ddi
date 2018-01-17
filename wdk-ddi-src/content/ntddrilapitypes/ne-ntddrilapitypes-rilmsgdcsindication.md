@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcsindication.htm
 old-project: netvista
 ms.assetid: 709980c8-e13f-48a7-9af7-26f0bb79e699
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGDCSINDICATION, RILMSGDCSINDICATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILMSGDCSINDICATION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 054d1673-0c1a-4ceb-821a-d61bf28392cf
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CLS_IO_STATISTICS, *PCLS_IO_STATISTICS, CLS_IO_STATISTICS, PPCLS_IO_STATISTICS, *PCLFS_IO_STATISTICS, CLFS_IO_STATISTICS
+ms.keywords: _CLS_IO_STATISTICS, CLS_IO_STATISTICS, *PCLS_IO_STATISTICS, PPCLS_IO_STATISTICS, CLFS_IO_STATISTICS, *PCLFS_IO_STATISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PCLS_IO_STATISTICS, CLS_IO_STATISTICS, PPCLS_IO_STATISTICS
+req.typenames: CLS_IO_STATISTICS, *PCLS_IO_STATISTICS, PPCLS_IO_STATISTICS
 req.product: Windows 10 or later.
 ---
 
@@ -86,21 +86,6 @@ The number of bytes of metadata flushed.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

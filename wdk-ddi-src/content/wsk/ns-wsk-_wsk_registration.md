@@ -7,7 +7,7 @@ old-location: netvista\wsk_registration.htm
 old-project: netvista
 ms.assetid: 770c53bb-5e11-4bd4-a175-6ea6ae0bb782
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WSK_REGISTRATION, *PWSK_REGISTRATION, WSK_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -79,31 +79,4 @@ This structure is provided by a client application to register or unregister a W
 
 For more information about attaching a WSK application to the WSK subsystem, see 
     <a href="netvista.registering_a_winsock_kernel_application">Registering a Winsock Kernel
-    Application</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating
-   systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wsk.h (include Wsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+    Application</a>.</p>

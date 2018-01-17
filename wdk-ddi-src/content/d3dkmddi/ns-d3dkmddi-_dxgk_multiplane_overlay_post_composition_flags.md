@@ -80,20 +80,4 @@ This member is reserved and should be set to zero. Setting this member to zero i
 
 
 ## -remarks
-Applying VerticalFlip and HorizontalFlip simultaneously results in 180 degree rotation.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+Applying VerticalFlip and HorizontalFlip simultaneously results in 180 degree rotation.</p>

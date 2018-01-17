@@ -75,12 +75,12 @@ This is set to <b>TRUE</b> for an enabled event, and <b>FALSE</b> for a disabled
 
 ### -field EventEntry
 
-Points to the <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure that describes this event.
+Points to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a> structure that describes this event.
 
 
 ### -field EventData
 
-Points to the <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that describes this instance of the event.
+Points to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a> structure that describes this instance of the event.
 
 
 ### -field StreamObject
@@ -118,19 +118,3 @@ Reserved for system use. Do not use.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h (include Strmini.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

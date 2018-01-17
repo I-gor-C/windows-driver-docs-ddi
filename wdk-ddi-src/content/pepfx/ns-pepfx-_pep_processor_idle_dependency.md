@@ -81,31 +81,6 @@ Whether the platform idle state has a loose dependency on the idle state of this
 The <b>DependencyArray</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_select.md">PEP_PPM_IDLE_SELECT</a> structure is a pointer to an array of <b>PEP_PROCESSOR_IDLE_DEPENDENCY</b> structures. The <b>DependencyArray</b> member of the <a href="..\pepfx\ns-pepfx-_pep_platform_idle_state.md">PEP_PLATFORM_IDLE_STATE</a> structure is the first element in an array of <b>PEP_PROCESSOR_IDLE_DEPENDENCY</b> structures.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -82,19 +82,3 @@ The size in bytes of the descriptor which will be in the Descriptor field of the
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-</table>

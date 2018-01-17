@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1edae050-8e72-42e7-9dc9-8f449699969c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _DEVICE_CAPABILITIES, DEVICE_CAPABILITIES, PDEVICE_CAPABILITIES
+ms.keywords: _DEVICE_CAPABILITIES, PDEVICE_CAPABILITIES, DEVICE_CAPABILITIES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: DEVICE_CAPABILITIES, PDEVICE_CAPABILITIES
+req.typenames: PDEVICE_CAPABILITIES, DEVICE_CAPABILITIES
 req.product: Windows 10 or later.
 ---
 
@@ -311,21 +311,6 @@ Drivers that send an <b>IRP_MN_QUERY_CAPABILITIES</b> request must initialize th
 
 For more information about using the <b>DEVICE_CAPABILITIES</b> structure to describe a device's power capabilities, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561058">Reporting Device Power Capabilities</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

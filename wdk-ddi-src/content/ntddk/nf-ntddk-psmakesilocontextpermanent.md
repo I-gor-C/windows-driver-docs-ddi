@@ -81,40 +81,4 @@ The following NT status codes are returned.
 
 
 ## -remarks
-Before calling this routine, the slot must contain a valid object. After it completes, the <a href="..\ntddk\nf-ntddk-psreplacesilocontext.md">PsReplaceSiloContext</a> and <a href="..\ntddk\nf-ntddk-psremovesilocontext.md">PsRemoveSiloContext</a> routines will fail with <b>STATUS_NOT_SUPPORTED</b>. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+Before calling this routine, the slot must contain a valid object. After it completes, the <a href="..\ntddk\nf-ntddk-psreplacesilocontext.md">PsReplaceSiloContext</a> and <a href="..\ntddk\nf-ntddk-psremovesilocontext.md">PsRemoveSiloContext</a> routines will fail with <b>STATUS_NOT_SUPPORTED</b>. </p>

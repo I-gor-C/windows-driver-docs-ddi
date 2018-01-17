@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: E784765E-E346-4D57-B334-D0A0A823DAA8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_ACPI_EXTENDED_ADDRESS, *PPEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS
+ms.keywords: _PEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS, *PPEP_ACPI_EXTENDED_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS
+req.typenames: PEP_ACPI_EXTENDED_ADDRESS, *PPEP_ACPI_EXTENDED_ADDRESS
 ---
 
 # _PEP_ACPI_EXTENDED_ADDRESS structure
@@ -465,29 +465,3 @@ The name of this resource descriptor.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>

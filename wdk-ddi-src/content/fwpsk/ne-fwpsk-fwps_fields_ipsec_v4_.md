@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_ipsec_v4.htm
 old-project: netvista
 ms.assetid: 6477bc7f-60b0-4d3c-b8a2-f7d950f60fd2
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: FWPS_FIELDS_IPSEC_V4_, FWPS_FIELDS_IPSEC_V4
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -112,29 +112,3 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Unless otherwise noted, supported starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fwpsk.h (include Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

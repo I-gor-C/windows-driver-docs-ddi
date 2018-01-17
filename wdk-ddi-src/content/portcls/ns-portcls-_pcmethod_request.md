@@ -75,7 +75,7 @@ Specifies the node ID of the target node for the request. If the target is not a
 
 ### -field MethodItem
 
-Pointer to a <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_4.md">PCMETHOD_ITEM</a> structure that describes a method supported by a filter, pin, or node.
+Pointer to a <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_4.md">PCMETHOD_ITEM</a> structure that describes a method supported by a filter, pin, or node.
 
 
 ### -field Verb
@@ -122,25 +122,10 @@ Returns information about support for the method set specified by <b>MethodItem<
 
 
 ## -remarks
-This is the structure that the port driver passes to the miniport driver's method-handler routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_4.md">PCMETHOD_ITEM</a> structure contains a pointer to a method handler that takes a PCMETHOD_REQUEST pointer as its single call parameter.
+This is the structure that the port driver passes to the miniport driver's method-handler routine. The <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_4.md">PCMETHOD_ITEM</a> structure contains a pointer to a method handler that takes a PCMETHOD_REQUEST pointer as its single call parameter.
 
 The WDM audio subsystem does not currently support method requests.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -148,7 +133,7 @@ Header
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537695">PCFILTER_NODE</a>
 </dt>
 <dt>
-<a href="..\portcls\ns-portcls-__unnamed_struct_0c40_4.md">PCMETHOD_ITEM</a>
+<a href="..\portcls\ns-portcls-__unnamed_struct_0c93_4.md">PCMETHOD_ITEM</a>
 </dt>
 </dl>
  

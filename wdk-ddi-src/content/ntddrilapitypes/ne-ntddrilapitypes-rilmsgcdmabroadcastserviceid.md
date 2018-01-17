@@ -7,7 +7,7 @@ old-location: netvista\rilmsgcdmabroadcastserviceid.htm
 old-project: netvista
 ms.assetid: 71f887ed-ab80-4b5f-bc74-d4333984fdd2
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGCDMABROADCASTSERVICEID, RILMSGCDMABROADCASTSERVICEID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILMSGCDMABROADCASTSERVICEID {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -351,31 +351,6 @@ Another type of filtering is <i>anisotropic</i>. This takes into account anisotr
 Filtering can also be described by a comparison component. By default (no comparison filtering), the result of a sampling operation is a blend of a number of samples. Comparison filtering performs identically to the default mode in terms of which set of texels are read from the texture except for one difference. Just before blending the values together to produce a final result, each individual value read from the texture is compared against a reference value that is provided from the shader. The type of comparison (greater than, less than, equal to, and so on) is determined by the selected sampler state. The result of each comparison is true (1.0) or false (0.0). Comparison filtering then blends these true and false results together rather than the original values read from the texture. Therefore, the final result of a comparison filter is always in the range 0.0 to 1.0. The primary use for comparison filtering is for shadow-buffer filtering.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

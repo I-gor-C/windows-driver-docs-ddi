@@ -7,7 +7,7 @@ old-location: netvista\wdi_wnm_action.htm
 old-project: netvista
 ms.assetid: 350D3182-3BEE-4AB7-A9F0-5C5D7D60A617
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_WNM_ACTION, WDI_WNM_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,39 +73,3 @@ The message is a BSS Transition Management response frame. This is a response to
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

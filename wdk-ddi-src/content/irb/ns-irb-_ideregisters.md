@@ -102,28 +102,13 @@ Reserved for future use. The miniport driver shall not use this field.
 
 
 ## -remarks
-The information reported in the IDEREGISTERS structure is intended to be a superset of the information contained in <a href="..\ntdddisk\ns-ntdddisk-_ideregs.md">IDEREGS</a>. Microsoft might expand the contents of the IDEREGISTERS structure in the future. If you need a structure whose size is stable across different versions of the operating system, you should use <b>IDEREGS</b>.
+The information reported in the IDEREGISTERS structure is intended to be a superset of the information contained in <a href="https://msdn.microsoft.com/library/windows/hardware/ff559015">IDEREGS</a>. Microsoft might expand the contents of the IDEREGISTERS structure in the future. If you need a structure whose size is stable across different versions of the operating system, you should use <b>IDEREGS</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntdddisk\ns-ntdddisk-_ideregs.md">IDEREGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559015">IDEREGS</a>
 </dt>
 </dl>
  

@@ -91,42 +91,4 @@ If <i>CurrentEvent</i> is not <b>NULL</b>, <b>StreamClassGetNextEvent</b> return
 ## -remarks
 The minidriver can call <b>StreamClassGetNextEvent</b> successively to loop through the event queue, examining one event at a time.
 
-The caller may specify additional search criteria to match events on the event queue.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h (include Strmini.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Stream.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+The caller may specify additional search criteria to match events on the event queue.</p>

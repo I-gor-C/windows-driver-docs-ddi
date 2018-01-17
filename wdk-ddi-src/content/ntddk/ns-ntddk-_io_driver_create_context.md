@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: c2d10f76-5587-4855-9a02-fa7656a3805e
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _IO_DRIVER_CREATE_CONTEXT, *PIO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT
+ms.keywords: _IO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT, *PIO_DRIVER_CREATE_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PIO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT
+req.typenames: IO_DRIVER_CREATE_CONTEXT, *PIO_DRIVER_CREATE_CONTEXT
 ---
 
 # _IO_DRIVER_CREATE_CONTEXT structure
@@ -100,31 +100,6 @@ Upon return from a call to <a href="..\ntddk\nf-ntddk-iocreatefileex.md">IoCreat
 
  To create or open a file in the context of a transaction, set the <b>TxnParameters</b> member of the IO_DRIVER_CREATE_CONTEXT structure to the value returned by the <a href="..\ntddk\nf-ntddk-iogettransactionparameterblock.md">IoGetTransactionParameterBlock</a> routine.  For more information regarding transactions, see <a href="http://go.microsoft.com/fwlink/p/?linkid=66161">Transaction Management (TxF)</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This structure is available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h, Ntifs.h, or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

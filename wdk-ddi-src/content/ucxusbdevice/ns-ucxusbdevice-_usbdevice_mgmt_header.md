@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: E3CDED41-FE83-4CBC-9FF8-4858125F7108
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBDEVICE_MGMT_HEADER, USBDEVICE_MGMT_HEADER, *PUSBDEVICE_MGMT_HEADER
+ms.keywords: _USBDEVICE_MGMT_HEADER, *PUSBDEVICE_MGMT_HEADER, USBDEVICE_MGMT_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: USBDEVICE_MGMT_HEADER, *PUSBDEVICE_MGMT_HEADER
+req.typenames: *PUSBDEVICE_MGMT_HEADER, USBDEVICE_MGMT_HEADER
 req.product: Windows 10 or later.
 ---
 
@@ -73,19 +73,3 @@ The handle for the USB device that is physically connected to the bus.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxusbdevice.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3f698252-213f-482c-8c8f-624f0c370705
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetTunnelModeOuterAddress_IN, *PSetTunnelModeOuterAddress_IN, SetTunnelModeOuterAddress_IN
+ms.keywords: _SetTunnelModeOuterAddress_IN, SetTunnelModeOuterAddress_IN, *PSetTunnelModeOuterAddress_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetTunnelModeOuterAddress_IN, SetTunnelModeOuterAddress_IN
+req.typenames: SetTunnelModeOuterAddress_IN, *PSetTunnelModeOuterAddress_IN
 ---
 
 # _SetTunnelModeOuterAddress_IN structure
@@ -74,21 +74,6 @@ An ISCSI_IP_Address structure that indicates the IP address of the security gate
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

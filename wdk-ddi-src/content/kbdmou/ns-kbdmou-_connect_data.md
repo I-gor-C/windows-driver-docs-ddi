@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 8fdb5b1d-bbdb-4774-875a-7cdd047286f5
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _CONNECT_DATA, CONNECT_DATA, *PCONNECT_DATA
+ms.keywords: _CONNECT_DATA, *PCONNECT_DATA, CONNECT_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: CONNECT_DATA, *PCONNECT_DATA
+req.typenames: *PCONNECT_DATA, CONNECT_DATA
 ---
 
 # _CONNECT_DATA structure
@@ -66,20 +66,4 @@ Specifies the class service routine. See  <a href="..\kbdmou\nc-kbdmou-pservice_
 
 
 ## -remarks
-The keyboard class driver uses this structure with an <a href="..\kbdmou\ni-kbdmou-ioctl_internal_keyboard_connect.md">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request; the mouse class driver uses <a href="..\kbdmou\ni-kbdmou-ioctl_internal_mouse_connect.md">IOCTL_INTERNAL_MOUSE_CONNECT</a> .
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Kbdmou.h (include Kbdmou.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The keyboard class driver uses this structure with an <a href="..\kbdmou\ni-kbdmou-ioctl_internal_keyboard_connect.md">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request; the mouse class driver uses <a href="..\kbdmou\ni-kbdmou-ioctl_internal_mouse_connect.md">IOCTL_INTERNAL_MOUSE_CONNECT</a> .</p>

@@ -107,31 +107,6 @@ When a new processor is dynamically added to the hardware partition, the operati
 A device driver's callback function that receives these notifications must not modify the contents of the <b>KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT</b> structure.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows Server 2008.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

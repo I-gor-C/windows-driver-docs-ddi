@@ -7,8 +7,8 @@ old-location: netvista\ndis_miniport_driver_wdi_characteristics.htm
 old-project: netvista
 ms.assetid: 2F69C228-FF2D-4277-A4C9-14FBADA1CD31
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
+ms.date: 1/11/2018
+ms.keywords: _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
+req.typenames: NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 ---
 
 # _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure
@@ -71,7 +71,7 @@ typedef struct _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS {
 ### -field Header
 
 The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_MINIPORT_WDI_CHARACTERISTICS.
@@ -189,39 +189,3 @@ The entry point of the <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_cancel_idle
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

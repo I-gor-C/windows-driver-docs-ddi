@@ -82,21 +82,6 @@ This callback function does not return a value.
 This callback function is part of a two step process of resource creation. After the <a href="..\d3d12umddi\nc-d3d12umddi-pfnd3d12ddi_checkresourceallocationinfo_0022.md">pfnCheckResourceAllocationInfo</a> callback function, the resource is created. During resource creation, the layout is never _UNDEFINED, since the driver will have returned a resolved texture layout. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

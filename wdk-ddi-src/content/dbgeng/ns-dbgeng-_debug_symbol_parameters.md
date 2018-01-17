@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: c73ea2b0-e87a-4fb1-9164-ff14d43f1426
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS, *PDEBUG_SYMBOL_PARAMETERS
+ms.keywords: _DEBUG_SYMBOL_PARAMETERS, *PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DEBUG_SYMBOL_PARAMETERS, *PDEBUG_SYMBOL_PARAMETERS
+req.typenames: *PDEBUG_SYMBOL_PARAMETERS, DEBUG_SYMBOL_PARAMETERS
 ---
 
 # _DEBUG_SYMBOL_PARAMETERS structure
@@ -90,19 +90,3 @@ Set to zero.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: acpi
 ms.assetid: 47991f08-b67d-45f9-ad39-567b6c23c545
 ms.author: windowsdriverdev
 ms.date: 12/31/2017
-ms.keywords: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1_EX
+ms.keywords: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1_EX
+req.typenames: ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1_EX
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1_EX structure
@@ -94,31 +94,6 @@ Set <b>String</b> to the input string.
 
 For more information about how to use this structure, see <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/acpi/evaluating-acpi-control-methods">Evaluating ACPI Control Methods</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Windows Vista and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Acpiioct.h (include Acpiioct.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

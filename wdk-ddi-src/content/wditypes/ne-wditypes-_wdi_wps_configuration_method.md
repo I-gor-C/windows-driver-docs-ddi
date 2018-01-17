@@ -7,7 +7,7 @@ old-location: netvista\wdi_wps_configuration_method.htm
 old-project: netvista
 ms.assetid: 116B19BD-959F-4711-B3FB-9880539B7849
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_WPS_CONFIGURATION_METHOD, WDI_WPS_CONFIGURATION_METHOD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -97,39 +97,3 @@ WFDS.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

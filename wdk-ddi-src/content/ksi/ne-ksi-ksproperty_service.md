@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: PASSIVE_LEVEL
 req.typenames: KSPROPERTY_SERVICE
 ---
 
@@ -62,19 +62,3 @@ typedef enum  {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ksi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

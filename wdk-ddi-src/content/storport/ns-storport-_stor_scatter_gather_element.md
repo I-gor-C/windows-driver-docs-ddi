@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 2e387418-a37c-492b-8ee4-b6ff8f0e53b0
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STOR_SCATTER_GATHER_ELEMENT, STOR_SCATTER_GATHER_ELEMENT, *PSTOR_SCATTER_GATHER_ELEMENT
+ms.keywords: _STOR_SCATTER_GATHER_ELEMENT, *PSTOR_SCATTER_GATHER_ELEMENT, STOR_SCATTER_GATHER_ELEMENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: STOR_SCATTER_GATHER_ELEMENT, *PSTOR_SCATTER_GATHER_ELEMENT
+req.typenames: *PSTOR_SCATTER_GATHER_ELEMENT, STOR_SCATTER_GATHER_ELEMENT
 req.product: Windows 10 or later.
 ---
 
@@ -75,21 +75,6 @@ Reserved.
 ## -remarks
 Miniport drivers used with the Storport driver retrieve an array of these structures using <a href="..\storport\nf-storport-storportgetscattergatherlist.md">StorPortGetScatterGatherList</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

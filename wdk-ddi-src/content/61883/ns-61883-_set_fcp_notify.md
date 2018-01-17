@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 94A966C4-9FFA-4937-B7D8-D1A3608E4A7F
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SET_FCP_NOTIFY, *PSET_FCP_NOTIFY, SET_FCP_NOTIFY
+ms.keywords: _SET_FCP_NOTIFY, SET_FCP_NOTIFY, *PSET_FCP_NOTIFY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSET_FCP_NOTIFY, SET_FCP_NOTIFY
+req.typenames: SET_FCP_NOTIFY, *PSET_FCP_NOTIFY
 ---
 
 # _SET_FCP_NOTIFY structure
@@ -80,21 +80,6 @@ Reserved for use by the operating system.
 ## -remarks
 If successful, the IEC-61883 protocol driver sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_SUCCESS. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

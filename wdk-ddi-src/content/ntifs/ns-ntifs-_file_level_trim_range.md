@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: C74E90C5-9876-4CD1-B9A7-1B32A6AAB474
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE
+ms.keywords: _FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE
+req.typenames: *PFILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE
 ---
 
 # _FILE_LEVEL_TRIM_RANGE structure
@@ -68,21 +68,6 @@ Length in bytes to trim from the given offset.
 ## -remarks
 Due to alignment requirements, the file system may reduce the of the the trim range to a multiple of <b>PAGE_SIZE</b> &lt;= <b>Length</b>. Also, <b>Offset</b> will be adjusted to the next page boundary if its initial value is not on page boundary.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

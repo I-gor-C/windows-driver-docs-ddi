@@ -144,19 +144,3 @@ Filter range support.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: e526d664-35cf-4738-9501-08298e90be1e
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _BTH_ENUMERATOR_INFO, *PBTH_ENUMERATOR_INFO, BTH_ENUMERATOR_INFO
+ms.keywords: _BTH_ENUMERATOR_INFO, BTH_ENUMERATOR_INFO, *PBTH_ENUMERATOR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: *PBTH_ENUMERATOR_INFO, BTH_ENUMERATOR_INFO
+req.typenames: BTH_ENUMERATOR_INFO, *PBTH_ENUMERATOR_INFO
 ---
 
 # _BTH_ENUMERATOR_INFO structure
@@ -163,36 +163,11 @@ The device string for the remote device.
 
 ## -remarks
 The 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bthenum_get_enuminfo.md">
+    <a href="https://msdn.microsoft.com/43cd8e6b-5710-4308-a7c4-fb6f14940977">
     IOCTL_INTERNAL_BTHENUM_GET_ENUMINFO</a> call's output buffer contains the information about an
     underlying device and the service that caused the Plug and Play (PnP) manager to load the profile
     driver.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -203,7 +178,7 @@ Header
 <a href="https://msdn.microsoft.com/d5acaec6-7b3b-4dd9-8901-f96b4e49149f">ENUMERATOR_ACTION</a>
 </dt>
 <dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bthenum_get_enuminfo.md">
+<a href="https://msdn.microsoft.com/43cd8e6b-5710-4308-a7c4-fb6f14940977">
    IOCTL_INTERNAL_BTHENUM_GET_ENUMINFO</a>
 </dt>
 </dl>

@@ -7,7 +7,7 @@ old-location: netvista\wdi_cipher_algorithm.htm
 old-project: netvista
 ms.assetid: 08413358-DFBC-4AC3-97B3-380D98EFFBF3
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_CIPHER_ALGORITHM, WDI_CIPHER_ALGORITHM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -135,39 +135,3 @@ Specifies the end of the range that is used to define proprietary authentication
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

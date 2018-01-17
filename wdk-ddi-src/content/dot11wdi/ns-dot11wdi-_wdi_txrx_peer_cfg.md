@@ -7,8 +7,8 @@ old-location: netvista\wdi_txrx_peer_cfg.htm
 old-project: netvista
 ms.assetid: 5d2a97a3-3214-4f23-bf9d-d0ed292a46f0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: _WDI_TXRX_PEER_CFG, WDI_TXRX_PEER_CFG, *PWDI_TXRX_PEER_CFG
+ms.date: 1/11/2018
+ms.keywords: _WDI_TXRX_PEER_CFG, *PWDI_TXRX_PEER_CFG, WDI_TXRX_PEER_CFG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: WDI_TXRX_PEER_CFG, *PWDI_TXRX_PEER_CFG
+req.typenames: *PWDI_TXRX_PEER_CFG, WDI_TXRX_PEER_CFG
 ---
 
 # _WDI_TXRX_PEER_CFG structure
@@ -60,39 +60,3 @@ The peer's QoS capability as defined in <a href="..\dot11wdi\ne-dot11wdi-_wdi_tx
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

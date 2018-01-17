@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 5bb0620e-b271-4af6-b528-b904910b8a6c
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SM_SendTEST_IN, *PSM_SendTEST_IN, SM_SendTEST_IN
+ms.keywords: _SM_SendTEST_IN, SM_SendTEST_IN, *PSM_SendTEST_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSM_SendTEST_IN, SM_SendTEST_IN
+req.typenames: SM_SendTEST_IN, *PSM_SendTEST_IN
 ---
 
 # _SM_SendTEST_IN structure
@@ -84,20 +84,4 @@ The request buffer data.
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_SendTEST_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_SendTEST_IN structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.</p>

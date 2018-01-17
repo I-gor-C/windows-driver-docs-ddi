@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 2cfe935f-eba4-48aa-869d-6381ca038e70
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetTunnelModeOuterAddress_OUT, SetTunnelModeOuterAddress_OUT, *PSetTunnelModeOuterAddress_OUT
+ms.keywords: _SetTunnelModeOuterAddress_OUT, *PSetTunnelModeOuterAddress_OUT, SetTunnelModeOuterAddress_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SetTunnelModeOuterAddress_OUT, *PSetTunnelModeOuterAddress_OUT
+req.typenames: *PSetTunnelModeOuterAddress_OUT, SetTunnelModeOuterAddress_OUT
 ---
 
 # _SetTunnelModeOuterAddress_OUT structure
@@ -62,21 +62,6 @@ On output, the status of the <b>SetTunnelModeOuterAddress</b> operation. For a l
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

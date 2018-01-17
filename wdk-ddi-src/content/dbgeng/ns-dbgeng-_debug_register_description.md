@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 92e7800d-4de6-498c-87f8-8690d7e8fc51
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION, *PDEBUG_REGISTER_DESCRIPTION
+ms.keywords: _DEBUG_REGISTER_DESCRIPTION, *PDEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DEBUG_REGISTER_DESCRIPTION, *PDEBUG_REGISTER_DESCRIPTION
+req.typenames: *PDEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION
 ---
 
 # _DEBUG_REGISTER_DESCRIPTION structure
@@ -98,20 +98,4 @@ Reserved for system use.
 ## -remarks
 If this register is a subregister, the value of the full register can be turned into the value of the sub-register by first shifting <b>SubregShift</b> bits to the right and then combining the result with <b>SubregMask</b> using the bitwise-AND operator.  The size of the sub-register (<b>SubregLength</b>) is the number of bits set in <b>SubregMask</b>.
 
-For general information about registers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554369">Registers</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For general information about registers, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554369">Registers</a>.</p>

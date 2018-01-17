@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 90fb54dd-a2df-423c-8dd6-bd99c5ad1de4
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO, *PWHEA_XPF_PROCINFO
+ms.keywords: _WHEA_XPF_PROCINFO, *PWHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: WHEA_XPF_PROCINFO, *PWHEA_XPF_PROCINFO
+req.typenames: *PWHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO
 ---
 
 # _WHEA_XPF_PROCINFO structure
@@ -167,32 +167,6 @@ This member contains valid data only if the <b>ValidBits.InstructionPointer</b> 
 ## -remarks
 The <a href="..\ntddk\ns-ntddk-whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains an array of WHEA_XPF_PROCINFO structures, each of which describes specific error information associated with the processor error that occurred.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

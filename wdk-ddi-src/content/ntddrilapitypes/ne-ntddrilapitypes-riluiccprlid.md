@@ -7,7 +7,7 @@ old-location: netvista\riluiccprlid.htm
 old-project: netvista
 ms.assetid: fab3455a-c09f-4a08-a76d-4d80468accd2
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCPRLID, RILUICCPRLID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,3 @@ typedef enum _RILUICCPRLID {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

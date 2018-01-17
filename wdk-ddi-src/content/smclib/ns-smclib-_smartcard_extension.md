@@ -187,20 +187,4 @@ Reserved for system use.
 
 
 ## -remarks
-This structure is passed to all callback functions.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Smclib.h (include Smclib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This structure is passed to all callback functions.</p>

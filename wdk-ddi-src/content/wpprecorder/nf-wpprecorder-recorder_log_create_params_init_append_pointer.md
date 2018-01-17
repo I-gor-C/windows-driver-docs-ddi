@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: WMILIB_CONTEXT, *PWMILIB_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -77,19 +77,3 @@ This function does not return a value.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wpprecorder.h</dt>
-</dl>
-</td>
-</tr>
-</table>

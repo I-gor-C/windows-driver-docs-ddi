@@ -82,20 +82,4 @@ The source mode contains the virtual mode size and the destination rectangle ind
 
 For example, if a 1024x768 virtual mode is used with 1920x1080 physical mode, the following configurations are possible:
 
-
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+</p>

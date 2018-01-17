@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: *PSetDSMCounters_IN, SetDSMCounters_IN
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 # RxRegisterMinirdr function
@@ -193,42 +193,6 @@ IRP_MJ_CREATE_NAMED_PIPE
 
 The network mini-redirector <b>MrxStart</b> routine is called by RDBSS when the <b>RxStartMiniRdr</b> routine is called. The RDBSS <b>RxStartMinirdr</b> is usually called as a result of an FSCTL or IOCTL request from a user-mode application or service to start the network mini-redirector. The call to <b>RxStartMinirdr </b>cannot be made from the <b>DriverEntry</b> routine of the network mini-redirector after a successful call to <b>RxRegisterMinirdr </b>because some of the start processing requires that the driver initialization be completed. Once the <b>RxStartMinirdr</b> call is received, RDBSS completes the start process by calling the <b>MrxStart</b> routine of the network mini-redirector. If the call to <b>MrxStart</b> returns success, RDBSS sets the internal state of the mini-redirector in RDBSS to RDBSS_STARTED. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mrx.h (include Mrx.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\wwan_ipaddress_entry.htm
 old-project: netvista
 ms.assetid: 85615799-5AA0-4D83-9246-73F3C7ABFFF6
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WWAN_IPADDRESS_ENTRY, WWAN_IPADDRESS_ENTRY, *PWWAN_IPADDRESS_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -101,29 +101,3 @@ The IPV6 address of the PDP context, if <b>IsIpv6</b> is set.
 </dl>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 8.1 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wwan.h (include Wwan.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

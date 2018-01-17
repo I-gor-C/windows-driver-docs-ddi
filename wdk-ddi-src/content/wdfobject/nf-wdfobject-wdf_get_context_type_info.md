@@ -7,7 +7,7 @@ old-location: wdf\wdf_get_context_type_info.htm
 old-project: wdf
 ms.assetid: 3273a4b6-9c5e-4671-be9e-45cdd010558a
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: WDF_GET_CONTEXT_TYPE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,31 +59,3 @@ void WDF_GET_CONTEXT_TYPE_INFO(
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfobject.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdf01000.sys (KMDF); </dt>
-<dt>WUDFx02000.dll (UMDF)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,8 +7,8 @@ old-location: netvista\rilphonebookentry_2.htm
 old-project: netvista
 ms.assetid: 848afbe3-be29-4c20-b9d0-33db98dab7bb
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILPHONEBOOKENTRY, RILPHONEBOOKENTRY, *LPRILPHONEBOOKENTRY
+ms.date: 1/11/2018
+ms.keywords: RILPHONEBOOKENTRY, *LPRILPHONEBOOKENTRY, RILPHONEBOOKENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILPHONEBOOKENTRY, *LPRILPHONEBOOKENTRY
+req.typenames: *LPRILPHONEBOOKENTRY, RILPHONEBOOKENTRY
 req.product: Windows 10 or later.
 ---
 
@@ -111,19 +111,3 @@ typedef struct _RILPHONEBOOKENTRY {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

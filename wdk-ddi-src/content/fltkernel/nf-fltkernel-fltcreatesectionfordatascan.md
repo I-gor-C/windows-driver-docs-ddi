@@ -31,7 +31,7 @@ req.type-library:
 req.lib: FltMgr.lib
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: EXpsFontRestriction
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltCreateSectionForDataScan function
@@ -286,63 +286,6 @@ For overview  information on creating mapped sections and views of memory, see <
 <p class="note">Minifilters must not explicitly delete a section context passed to <b>FltCreateSectionForDataScan</b>. Do not call <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a> after a section context is passed to  <b>FltCreateSectionForDataScan</b>. A section context is deallocated and removed from a stream  by calling <a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a> in this case.
 <p class="note">In general, sections should be created as read-only. In particular, if a read-only file is in a transaction  and a minifilter does not create a read-only section, a write to the section is discarded and is not included as part of the transaction.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-The <b>FltCreateSectionForDataScan</b> routine is available starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>FltMgr.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

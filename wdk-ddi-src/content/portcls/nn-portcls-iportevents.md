@@ -43,7 +43,7 @@ The <code>IPortEvents</code> interface is used by miniport drivers to notify cli
 
 Drivers typically use the <code>IPortEvents</code> interface to notify the system of hardware-generated volume or mute changes, although <code>IPortEvents</code> can be used for any type of event notification. <code>IPortEvents</code> interface is an optional lower-edge port driver interface. It can be used, for example, to notify <b>mixer</b> applications of control or mixer-line changes. For information about the <b>mixer</b> API, see the Microsoft Windows SDK documentation.
 
-A miniport driver exposes an event in the same way that it exposes properties: through an automation table (see <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_6.md">PCAUTOMATION_TABLE</a>). The following objects, all of which are exposed by the miniport driver, can specify an automation table that contains properties and/or events:
+A miniport driver exposes an event in the same way that it exposes properties: through an automation table (see <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_6.md">PCAUTOMATION_TABLE</a>). The following objects, all of which are exposed by the miniport driver, can specify an automation table that contains properties and/or events:
 
 The filter that the miniport driver implements
 
@@ -51,7 +51,7 @@ Each pin that the filter exposes
 
 Each node that the filter exposes
 
-Each event entry in an automation table is a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0c40_5.md">PCEVENT_ITEM</a> that specifies the following:
+Each event entry in an automation table is a structure of type <a href="..\portcls\ns-portcls-__unnamed_struct_0c93_5.md">PCEVENT_ITEM</a> that specifies the following:
 
 An event set
 
@@ -78,19 +78,3 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortEvents</b> interface inh
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h</dt>
-</dl>
-</td>
-</tr>
-</table>

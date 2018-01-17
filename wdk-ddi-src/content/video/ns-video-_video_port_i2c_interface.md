@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: fcc2679c-9a73-4bd0-ad2d-e7b48df9c7f7
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _VIDEO_PORT_I2C_INTERFACE, *PVIDEO_PORT_I2C_INTERFACE, VIDEO_PORT_I2C_INTERFACE
+ms.keywords: _VIDEO_PORT_I2C_INTERFACE, VIDEO_PORT_I2C_INTERFACE, *PVIDEO_PORT_I2C_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: See Remarks section.
-req.typenames: *PVIDEO_PORT_I2C_INTERFACE, VIDEO_PORT_I2C_INTERFACE
+req.typenames: VIDEO_PORT_I2C_INTERFACE, *PVIDEO_PORT_I2C_INTERFACE
 req.product: Windows 10 or later.
 ---
 
@@ -111,21 +111,6 @@ Pointer to the video port driver's <a href="..\video\nc-video-pi2c_read.md">I2CR
 ## -remarks
 PnP video miniport drivers that can use I²C should fill in the <b>Size</b> and <b>Version</b> members of this structure, and then call <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>, which initializes the remaining members of this structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

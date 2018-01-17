@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: d65ad0fa-1dd8-42b4-866b-cb2522080cde
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_MODULE_AND_ID, *PDEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID
+ms.keywords: _DEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID, *PDEBUG_MODULE_AND_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDEBUG_MODULE_AND_ID, DEBUG_MODULE_AND_ID
+req.typenames: DEBUG_MODULE_AND_ID, *PDEBUG_MODULE_AND_ID
 ---
 
 # _DEBUG_MODULE_AND_ID structure
@@ -66,19 +66,3 @@ The symbol ID of the symbol within the module.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

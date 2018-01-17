@@ -72,20 +72,4 @@ Slice control buffer.
 
 
 ## -remarks
-The definition of each buffer type is dependent upon the decode profile and is defined in each codec specification.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The definition of each buffer type is dependent upon the decode profile and is defined in each codec specification.</p>

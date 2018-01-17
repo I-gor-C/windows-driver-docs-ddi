@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 51a04ca9-4ccd-409e-b47a-1105637e6f6f
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _VERIFY_INFORMATION, *PVERIFY_INFORMATION, VERIFY_INFORMATION
+ms.keywords: _OUTPUT_PACKET, OUTPUT_PACKET, *POUTPUT_PACKET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PVERIFY_INFORMATION, VERIFY_INFORMATION
+req.typenames: OUTPUT_PACKET, *POUTPUT_PACKET
 ---
 
 # DUMP_UNLOAD callback
@@ -68,42 +68,6 @@ If the routine succeeds, it must return STATUS_SUCCESS. Otherwise, it must retur
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista and Windows Server 2008.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntdddump.h (include Ntdddump.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

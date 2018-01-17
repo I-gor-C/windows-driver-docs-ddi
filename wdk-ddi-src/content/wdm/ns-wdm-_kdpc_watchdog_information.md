@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8b0d3fd8-0952-4cfa-81e1-255145fd27dd
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _KDPC_WATCHDOG_INFORMATION, KDPC_WATCHDOG_INFORMATION, *PKDPC_WATCHDOG_INFORMATION
+ms.keywords: _KDPC_WATCHDOG_INFORMATION, *PKDPC_WATCHDOG_INFORMATION, KDPC_WATCHDOG_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: KDPC_WATCHDOG_INFORMATION, *PKDPC_WATCHDOG_INFORMATION
+req.typenames: *PKDPC_WATCHDOG_INFORMATION, KDPC_WATCHDOG_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -87,31 +87,6 @@ Reserved for system use.
 ## -remarks
 Time figures stored in each member are dimensionless.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

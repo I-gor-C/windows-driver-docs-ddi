@@ -95,21 +95,6 @@ The GUID that uniquely identifies the disk.
 The device layout signature contributes to the definition of a device unique identifier (DUID). For more information about DUIDs, see the description of the <a href="..\storduid\ns-storduid-_storage_device_unique_identifier.md">STORAGE_DEVICE_UNIQUE_IDENTIFIER</a> structure.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storduid.h (include Storduid.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

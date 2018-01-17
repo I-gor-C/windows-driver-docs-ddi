@@ -72,46 +72,10 @@ The write cursor specifies the buffer position into which a DirectSound applicat
 
 The play cursor specifies the buffer position of the sound sample that is currently being played by the audio device.
 
-For more information about write cursors and play cursors, see <a href="..\ksmedia\ns-ksmedia-ksaudio_position.md">KSAUDIO_POSITION</a>.
+For more information about write cursors and play cursors, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537091">KSAUDIO_POSITION</a>.
 
 For information about using <code>SetPreFetchOffset</code> to control a DirectSound stream's prefetch offset, see <a href="https://msdn.microsoft.com/92a0163f-29b1-4e15-88ab-67e1097d015e">Prefetch Offsets</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -122,7 +86,7 @@ Any level
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537297">KSPROPERTY_AUDIO_POSITION</a>
 </dt>
 <dt>
-<a href="..\ksmedia\ns-ksmedia-ksaudio_position.md">KSAUDIO_POSITION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537091">KSAUDIO_POSITION</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536727">IMiniportWavePciStream::GetPosition</a>

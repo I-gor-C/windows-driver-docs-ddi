@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: af608197-fa2b-474f-aa87-eb933a57b8cc
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MPIO_CONTROLLER_CONFIGURATION, MPIO_CONTROLLER_CONFIGURATION, *PMPIO_CONTROLLER_CONFIGURATION
+ms.keywords: _MPIO_CONTROLLER_CONFIGURATION, *PMPIO_CONTROLLER_CONFIGURATION, MPIO_CONTROLLER_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MPIO_CONTROLLER_CONFIGURATION, *PMPIO_CONTROLLER_CONFIGURATION
+req.typenames: *PMPIO_CONTROLLER_CONFIGURATION, MPIO_CONTROLLER_CONFIGURATION
 ---
 
 # _MPIO_CONTROLLER_CONFIGURATION structure
@@ -66,19 +66,3 @@ An array with information about all the controllers and all targets in the syste
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

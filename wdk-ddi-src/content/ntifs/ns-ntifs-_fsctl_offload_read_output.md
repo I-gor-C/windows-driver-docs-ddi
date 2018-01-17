@@ -115,7 +115,7 @@ The length, in bytes, of data represented by <b>Token</b>.
 
 ### -field Token
 
-A byte array that contains a token structure, <a href="..\ntddstor\ns-ntddstor-_storage_offload_token.md">STORAGE_OFFLOAD_TOKEN</a>, representing a file data within a range specified in <a href="..\ntifs\ns-ntifs-_fsctl_offload_read_input.md">FSCTL_OFFLOAD_READ_INPUT</a>. The contents of <b>Token</b>  must remain unmodified between offload operations.
+A byte array that contains a token structure, <a href="https://msdn.microsoft.com/library/windows/hardware/hh451469">STORAGE_OFFLOAD_TOKEN</a>, representing a file data within a range specified in <a href="..\ntifs\ns-ntifs-_fsctl_offload_read_input.md">FSCTL_OFFLOAD_READ_INPUT</a>. The contents of <b>Token</b>  must remain unmodified between offload operations.
 
 
 ## -remarks
@@ -128,31 +128,6 @@ The  copy provider retains the data read for the duration in the <b>TokenTimeToL
  If less data than requested was transferred, the read operation  may be completed by performing another <a href="https://msdn.microsoft.com/library/windows/hardware/hh451101">FSCTL_OFFLOAD_READ</a> request. The next request uses updated <b>FileOffset</b> member in the <a href="..\ntifs\ns-ntifs-_fsctl_offload_read_input.md">FSCTL_OFFLOAD_READ_INPUT</a> structure with the value in <b>TransferLength</b> and an adjusted read length of the previous length minus the value in <b>TransferLength</b>. Also, an incomplete read operation can be completed through a non-offloaded read method, using the <a href="..\wdm\nf-wdm-zwreadfile.md">ZwReadFile</a> routine, for example.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -162,7 +137,7 @@ Header
 <a href="..\ntifs\ns-ntifs-_fsctl_offload_read_input.md">FSCTL_OFFLOAD_READ_INPUT</a>
 </dt>
 <dt>
-<a href="..\ntddstor\ns-ntddstor-_storage_offload_token.md">STORAGE_OFFLOAD_TOKEN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451469">STORAGE_OFFLOAD_TOKEN</a>
 </dt>
 </dl>
  

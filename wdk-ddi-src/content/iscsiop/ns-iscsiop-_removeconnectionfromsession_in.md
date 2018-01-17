@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: dd5fd1f2-7040-40ee-bf9c-42e77c9738da
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _RemoveConnectionFromSession_IN, *PRemoveConnectionFromSession_IN, RemoveConnectionFromSession_IN
+ms.keywords: _RemoveConnectionFromSession_IN, RemoveConnectionFromSession_IN, *PRemoveConnectionFromSession_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PRemoveConnectionFromSession_IN, RemoveConnectionFromSession_IN
+req.typenames: RemoveConnectionFromSession_IN, *PRemoveConnectionFromSession_IN
 ---
 
 # _RemoveConnectionFromSession_IN structure
@@ -68,21 +68,6 @@ A 64-bit integer that uniquely identifies the connection. Do not confuse this va
 ## -remarks
 You must implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

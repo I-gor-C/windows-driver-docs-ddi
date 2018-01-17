@@ -7,7 +7,7 @@ old-location: wdf\ifilecallbackclose.htm
 old-project: wdf
 ms.assetid: 22ecfb7b-daba-4321-bca5-4460ead8e3cd
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,19 +80,3 @@ The <a href="https://msdn.microsoft.com/ca3bd7af-b270-497e-a90a-6d79ce66d968">On
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

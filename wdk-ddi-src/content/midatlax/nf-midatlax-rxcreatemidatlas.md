@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: MF_TRANSFER_VIDEO_FRAME_FLAGS
+req.typenames: *PMCD_INIT_DATA, MCD_INIT_DATA
 ---
 
 # RxCreateMidAtlas function
@@ -78,42 +78,6 @@ For example, if a maximum of 50 MIDs are to be allocated on creation , the lengt
 
 <b>RxCreateMidAtlas</b> allocates non-paged pool memory when creating a new MID_ATLAS data structure. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Midatlax.h (include Midatlax.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

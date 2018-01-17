@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 02bf5e91-bce0-4b8d-aec6-659ed1efd2b5
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SM_AddTarget_IN, SM_AddTarget_IN, *PSM_AddTarget_IN
+ms.keywords: _SM_AddTarget_IN, *PSM_AddTarget_IN, SM_AddTarget_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SM_AddTarget_IN, *PSM_AddTarget_IN
+req.typenames: *PSM_AddTarget_IN, SM_AddTarget_IN
 ---
 
 # _SM_AddTarget_IN structure
@@ -78,19 +78,3 @@ The scope of the target events to report. If this member is zero, the WMI client
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

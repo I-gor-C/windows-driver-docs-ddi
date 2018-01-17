@@ -136,31 +136,6 @@ Storport sends this structure to the miniport with all members initialized to 0.
 Starting with Windows 8, miniports should use the <a href="..\storport\ns-storport-_stor_device_capabilities_ex.md">STOR_DEVICE_CAPABILITIES_EX</a> structure to indicate support for additional capabilities.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

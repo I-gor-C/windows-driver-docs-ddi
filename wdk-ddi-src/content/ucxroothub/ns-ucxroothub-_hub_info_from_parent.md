@@ -76,7 +76,7 @@ A pointer to the WDM device object of the parent that represents the I/O target.
 
 ### -field DeviceDescriptor
 
-A <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a> structure that contains the device descriptor.
 
 
 ### -field U1ExitLatency
@@ -147,19 +147,3 @@ The count of sublink speed attributes.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxroothub.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

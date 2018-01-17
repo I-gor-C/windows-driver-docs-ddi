@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 3202aec4-d95e-4162-86a1-17595ed2a5b5
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DSM_COUNTERS, DSM_COUNTERS, *PDSM_COUNTERS
+ms.keywords: _DSM_COUNTERS, *PDSM_COUNTERS, DSM_COUNTERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DSM_COUNTERS, *PDSM_COUNTERS
+req.typenames: *PDSM_COUNTERS, DSM_COUNTERS
 ---
 
 # _DSM_COUNTERS structure
@@ -96,19 +96,3 @@ Should be zero.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: wdf\wdfobjectquery.htm
 old-project: wdf
 ms.assetid: c9e654cc-7ea5-41dd-8ee5-23a89f61e3c1
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: WdfObjectQuery
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,38 +73,3 @@ NTSTATUS WdfObjectQuery(
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfobject.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Not applicable
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544957">DriverCreate</a>
-</td>
-</tr>
-</table>

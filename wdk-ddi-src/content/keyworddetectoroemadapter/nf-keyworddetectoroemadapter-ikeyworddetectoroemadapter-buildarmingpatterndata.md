@@ -99,52 +99,6 @@ This method can return one of these values.
 The operating system may call this method at any time. The operating system may also store the returned pattern data to reuse later for the same set of keyword selectors.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>KeywordDetectorOemAdapter.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IDL
-
-</th>
-<td width="70%">
-<dl>
-<dt>KeywordDetectorOemAdapter.idl</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

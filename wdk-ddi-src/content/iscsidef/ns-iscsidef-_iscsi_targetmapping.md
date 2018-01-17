@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 9b8c5024-5d37-4f85-be00-1a60dd9ab323
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ISCSI_TargetMapping, *PISCSI_TargetMapping, ISCSI_TargetMapping
+ms.keywords: _ISCSI_TargetMapping, ISCSI_TargetMapping, *PISCSI_TargetMapping
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PISCSI_TargetMapping, ISCSI_TargetMapping
+req.typenames: ISCSI_TargetMapping, *PISCSI_TargetMapping
 ---
 
 # _ISCSI_TargetMapping structure
@@ -106,21 +106,6 @@ A 64-bit iSCSI LUN by itself does not uniquely identify the logical unit that it
 
 Management applications can use the ISCSI_TargetMapping structure to specify a local LUN number that can be assigned to the target LUN that the operating system finds during device enumerations.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsidef.h (include Iscsidef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

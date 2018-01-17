@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7019ee37-2080-4ba3-ba39-977e575ec04e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _RemovePersistentEntry_IN, *PRemovePersistentEntry_IN, RemovePersistentEntry_IN
+ms.keywords: _RemovePersistentEntry_IN, RemovePersistentEntry_IN, *PRemovePersistentEntry_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PRemovePersistentEntry_IN, RemovePersistentEntry_IN
+req.typenames: RemovePersistentEntry_IN, *PRemovePersistentEntry_IN
 ---
 
 # _RemovePersistentEntry_IN structure
@@ -68,21 +68,6 @@ Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentr
 ## -remarks
 The WMI tool suite generates a declaration of the RemovePersistentEntry_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

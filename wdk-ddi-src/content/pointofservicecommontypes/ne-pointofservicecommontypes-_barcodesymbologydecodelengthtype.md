@@ -72,19 +72,3 @@ Decode length is is a range of values.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pointofservicecommontypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

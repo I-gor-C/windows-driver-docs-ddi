@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1ba41017-8c4b-49eb-b0ec-8e58c2673314
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _GetEventBuffer_OUT, GetEventBuffer_OUT, *PGetEventBuffer_OUT
+ms.keywords: _GetEventBuffer_OUT, *PGetEventBuffer_OUT, GetEventBuffer_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: GetEventBuffer_OUT, *PGetEventBuffer_OUT
+req.typenames: *PGetEventBuffer_OUT, GetEventBuffer_OUT
 ---
 
 # _GetEventBuffer_OUT structure
@@ -76,21 +76,6 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553935">GetEv
 
 The WMI tool suite generates a declaration of the GetEventBuffer_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -7,7 +7,7 @@ old-location: netvista\rilsendmsgackparams_v1_2.htm
 old-project: netvista
 ms.assetid: 6e1f0283-76de-4c21-8205-cab83250dfae
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSENDMSGACKPARAMS_V1, RILSENDMSGACKPARAMS_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,19 +75,3 @@ typedef struct _RILSENDMSGACKPARAMS_V1 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

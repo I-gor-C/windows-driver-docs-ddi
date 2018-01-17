@@ -71,29 +71,3 @@ NTSTATUS NtSetInformationTransactionManager(
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=APC_LEVEL
-
-</td>
-</tr>
-</table>

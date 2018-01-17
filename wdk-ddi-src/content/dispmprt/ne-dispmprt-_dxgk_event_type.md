@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: df28ae8f-01f7-42c5-99df-2a3fc7401173
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_EVENT_TYPE, DXGK_EVENT_TYPE, *PDXGK_EVENT_TYPE, IN_DXGK_EVENT_TYPE
+ms.keywords: _DXGK_EVENT_TYPE, *PDXGK_EVENT_TYPE, DXGK_EVENT_TYPE, IN_DXGK_EVENT_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: DXGK_EVENT_TYPE, *PDXGK_EVENT_TYPE
+req.typenames: *PDXGK_EVENT_TYPE, DXGK_EVENT_TYPE
 ---
 
 # _DXGK_EVENT_TYPE enumeration
@@ -79,31 +79,6 @@ Indicates that the event is a docking event.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 56b9cdb5-2734-45b5-aeaf-ae6d606d1a5c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_CODEC_RESPONSE, *PHDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE
+ms.keywords: _HDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE, *PHDAUDIO_CODEC_RESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
-req.typenames: *PHDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE
+req.typenames: HDAUDIO_CODEC_RESPONSE, *PHDAUDIO_CODEC_RESPONSE
 ---
 
 # _HDAUDIO_CODEC_RESPONSE structure
@@ -140,21 +140,6 @@ If <b>HasFifoOverrun</b>=0, the codec failed to respond.
 
 The unnamed 25-bitfield between the <b>UnsolicitedResponse</b> and <b>HasFifoOverrun</b> members is reserved for future expansion. The HD Audio bus controller currently writes zeros to this field.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hdaudio.h (include Hdaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

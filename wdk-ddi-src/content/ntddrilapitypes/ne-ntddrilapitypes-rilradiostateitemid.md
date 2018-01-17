@@ -7,7 +7,7 @@ old-location: netvista\rilradiostateitemid.htm
 old-project: netvista
 ms.assetid: 2aec37af-fd7d-44c6-a728-889dd75012cb
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRADIOSTATEITEMID, RILRADIOSTATEITEMID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,19 +55,3 @@ typedef enum _RILRADIOSTATEITEMID {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 96c128e1-c38a-412f-adeb-cde820e1af4e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: PRO_PARAMETER_LIST, PRO_PARAMETER_LIST, *PPRO_PARAMETER_LIST
+ms.keywords: PRO_PARAMETER_LIST, *PPRO_PARAMETER_LIST, PRO_PARAMETER_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: PRO_PARAMETER_LIST, *PPRO_PARAMETER_LIST
+req.typenames: *PPRO_PARAMETER_LIST, PRO_PARAMETER_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -125,28 +125,13 @@ Reserved. Must be zero.
 
 
 ## -remarks
-The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> request is used to control information about persistent reservations and reservation keys that are active within a device server.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560586">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> request is used to control information about persistent reservations and reservation keys that are active within a device server.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Ntddstor.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560586">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a>
 </dt>
 </dl>
  

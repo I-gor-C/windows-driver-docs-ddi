@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 8cee85a3-b2e4-4378-a700-862d1b517f14
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _AUX_MODULE_BASIC_INFO, *PAUX_MODULE_BASIC_INFO, AUX_MODULE_BASIC_INFO
+ms.keywords: _AUX_MODULE_BASIC_INFO, AUX_MODULE_BASIC_INFO, *PAUX_MODULE_BASIC_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PAUX_MODULE_BASIC_INFO, AUX_MODULE_BASIC_INFO
+req.typenames: AUX_MODULE_BASIC_INFO, *PAUX_MODULE_BASIC_INFO
 ---
 
 # _AUX_MODULE_BASIC_INFO structure
@@ -62,21 +62,6 @@ A pointer to the base of the loaded image.
 ## -remarks
 The <b>AUX_MODULE_BASIC_INFO</b> structure is used as input to the <a href="..\aux_klib\nf-aux_klib-auxklibquerymoduleinformation.md">AuxKlibQueryModuleInformation</a> routine.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Aux_klib.h (include Aux_klib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

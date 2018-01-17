@@ -60,29 +60,3 @@ Bitmask of supported versions. Currently, BTHX_DDI_VERSION_1   is the only suppo
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>BthXDDI.h (include BthXDDI.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

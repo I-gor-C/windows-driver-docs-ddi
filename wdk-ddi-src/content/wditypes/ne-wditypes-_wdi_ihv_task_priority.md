@@ -7,7 +7,7 @@ old-location: netvista\wdi_ihv_task_priority.htm
 old-project: netvista
 ms.assetid: 606CF45C-5398-4157-92A7-382B6162D806
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_IHV_TASK_PRIORITY, WDI_IHV_TASK_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,39 +73,3 @@ Low priority.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: cad48019-3777-4f1c-9872-c837604f47bc
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_FS_LABEL_INFORMATION, *PFILE_FS_LABEL_INFORMATION, FILE_FS_LABEL_INFORMATION
+ms.keywords: _FILE_FS_LABEL_INFORMATION, FILE_FS_LABEL_INFORMATION, *PFILE_FS_LABEL_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PFILE_FS_LABEL_INFORMATION, FILE_FS_LABEL_INFORMATION
+req.typenames: FILE_FS_LABEL_INFORMATION, *PFILE_FS_LABEL_INFORMATION
 ---
 
 # _FILE_FS_LABEL_INFORMATION structure
@@ -78,21 +78,6 @@ The size of the buffer passed in the <i>FileInformation</i> parameter to <a href
 
 This structure must be aligned on a LONG (4-byte) boundary. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h, Ntifs.h, or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

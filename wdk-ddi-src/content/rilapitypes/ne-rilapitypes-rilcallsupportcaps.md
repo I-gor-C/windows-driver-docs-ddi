@@ -7,7 +7,7 @@ old-location: netvista\rilcallsupportcaps_2.htm
 old-project: netvista
 ms.assetid: f51ab865-8862-4ed2-830e-ecbef4c9c74e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLSUPPORTCAPS, RILCALLSUPPORTCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -91,19 +91,3 @@ typedef enum _RILCALLSUPPORTCAPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

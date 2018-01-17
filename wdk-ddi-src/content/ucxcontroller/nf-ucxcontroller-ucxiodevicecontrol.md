@@ -92,44 +92,9 @@ If the operation is successful, the method returns TRUE. Otherwise it returns FA
 
 
 ## -remarks
-The client driver can call this method to allow UCX to handle IOCTLs listed in this table: <a href="usb_interfaces.htm#um_ioctl">User-Mode IOCTLs for USB</a>. If the IOCTL code is <a href="..\usbioctl\ni-usbioctl-ioctl_usb_diagnostic_mode_off.md">IOCTL_USB_DIAGNOSTIC_MODE_OFF</a> or <a href="..\usbioctl\ni-usbioctl-ioctl_usb_diagnostic_mode_on.md">IOCTL_USB_DIAGNOSTIC_MODE_ON</a>, UCX completes the request successfully. For IOCTLS that are used to retrieve the USB host controllers
-    driver key name, such as <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_root_hub_name.md">IOCTL_USB_GET_ROOT_HUB_NAME</a> or <a href="..\usbioctl\ni-usbioctl-ioctl_get_hcd_driverkey_name.md">IOCTL_GET_HCD_DRIVERKEY_NAME</a>, UCX retrieves the Unicode string. If the user mode IOCTL is <a href="https://msdn.microsoft.com/library/windows/hardware/ff537344">IOCTL_USB_USER_REQUEST</a>, the input and output buffer lengths must be equal and the output buffer must contain the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539187">USBUSER_REQUEST_HEADER</a> structure. For the remaining IOCTLs, UCX  returns FALSE and the client driver can provide its own handling logic.
+The client driver can call this method to allow UCX to handle IOCTLs listed in this table: <a href="usb_interfaces.htm#um_ioctl">User-Mode IOCTLs for USB</a>. If the IOCTL code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff537276">IOCTL_USB_DIAGNOSTIC_MODE_OFF</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff537277">IOCTL_USB_DIAGNOSTIC_MODE_ON</a>, UCX completes the request successfully. For IOCTLS that are used to retrieve the USB host controllers
+    driver key name, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff537326">IOCTL_USB_GET_ROOT_HUB_NAME</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff537236">IOCTL_GET_HCD_DRIVERKEY_NAME</a>, UCX retrieves the Unicode string. If the user mode IOCTL is <a href="https://msdn.microsoft.com/library/windows/hardware/ff537344">IOCTL_USB_USER_REQUEST</a>, the input and output buffer lengths must be equal and the output buffer must contain the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539187">USBUSER_REQUEST_HEADER</a> structure. For the remaining IOCTLs, UCX  returns FALSE and the client driver can provide its own handling logic.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxcontroller.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

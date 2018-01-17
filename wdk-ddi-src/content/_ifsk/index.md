@@ -1,17 +1,23 @@
 ---
 UID: TP:ifsk
+ms.assetid: c842e40c-3483-3721-b6bf-4da6e333af1a
+ms.author: windowsdriverdev
+ms.date: 01/16/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # Installable file system
 
-## -description
+
 Overview of the Installable file system technology.
 
 To develop Installable file system, you need these headers:
 
  * [fcb.h](..\fcb\index.md)
  * [fltkernel.h](..\fltkernel\index.md)
- * [fltuserstructures.h](..\fltuserstructures\index.md)
  * [lowio.h](..\lowio\index.md)
  * [midatlax.h](..\midatlax\index.md)
  * [mrx.h](..\mrx\index.md)
@@ -987,13 +993,6 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [_FILE_TIMESTAMPS structure](..\ntifs\ns-ntifs-_file_timestamps.md) | The FILE_TIMESTAMPS structure specifies the last recorded instance of specific actions on a file. |
 | [_FILE_ZERO_DATA_INFORMATION structure](..\ntifs\ns-ntifs-_file_zero_data_information.md) | Contains a range of a file to set to zeros. |
 | [_FILE_ZERO_DATA_INFORMATION_EX structure](..\ntifs\ns-ntifs-_file_zero_data_information_ex.md) | Contains a range of a file to set to zeros. |
-| [_FILTER_AGGREGATE_BASIC_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_basic_information.md) | The FILTER_AGGREGATE_BASIC_INFORMATION structure contains basic information for a minifilter or legacy filter driver. |
-| [_FILTER_AGGREGATE_STANDARD_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_filter_aggregate_standard_information.md) | The FILTER_AGGREGATE_STANDARD_INFORMATION structure contains information about a minifilter or legacy filter driver. |
-| [_FILTER_FULL_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_filter_full_information.md) | The FILTER_FULL_INFORMATION structure contains full information for a minifilter driver. |
-| [_FILTER_MESSAGE_HEADER structure](..\fltuserstructures\ns-fltuserstructures-_filter_message_header.md) | The FILTER_MESSAGE_HEADER structure contains message header information. |
-| [_FILTER_REPLY_HEADER structure](..\fltuserstructures\ns-fltuserstructures-_filter_reply_header.md) | The FILTER_REPLY_HEADER structure contains message reply header information. |
-| [_FILTER_VOLUME_BASIC_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_filter_volume_basic_information.md) | The caller-allocated FILTER_VOLUME_BASIC_INFORMATION structure contains basic information for a volume. |
-| [_FILTER_VOLUME_STANDARD_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_filter_volume_standard_information.md) | The caller-allocated FILTER_VOLUME_STANDARD_INFORMATION structure contains information for a volume. |
 | [_FLT_CALLBACK_DATA structure](..\fltkernel\ns-fltkernel-_flt_callback_data.md) | The FLT_CALLBACK_DATA structure represents an I/O operation. The Filter Manager and minifilters use this structure to initiate and process I/O operations. |
 | [_FLT_CALLBACK_DATA_QUEUE structure](..\fltkernel\ns-fltkernel-_flt_callback_data_queue.md) | FLT_CALLBACK_DATA_QUEUE is an opaque structure that is used to specify the callback routines for a minifilter's callback data queue. Do not set the members of this structure directly. Use FltCbdqInitialize to initialize this structure. |
 | [_FLT_CONTEXT_REGISTRATION structure](..\fltkernel\ns-fltkernel-_flt_context_registration.md) | The FLT_CONTEXT_REGISTRATION structure is used to register context types. |
@@ -1020,10 +1019,6 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [_FSRTL_PER_FILE_CONTEXT structure](..\ntifs\ns-ntifs-_fsrtl_per_file_context.md) | A legacy file system filter driver can use a FSRTL_PER_FILE_CONTEXT structure to associate driver-specific context information to an open file. |
 | [_FSRTL_PER_STREAM_CONTEXT structure](..\ntifs\ns-ntifs-_fsrtl_per_stream_context.md) | The FSRTL_PER_STREAM_CONTEXT structure contains context information that a file system filter driver maintains about a file stream. |
 | [_FS_FILTER_SECTION_SYNC_OUTPUT structure](..\ntifs\ns-ntifs-_fs_filter_section_sync_output.md) | The FS_FILTER_SECTION_SYNC_OUTPUT structure contains information describing the attributes of the section that is being created. |
-| [_INSTANCE_AGGREGATE_STANDARD_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_instance_aggregate_standard_information.md) | The caller-allocated INSTANCE_AGGREGATE_STANDARD_INFORMATION structure contains information for either a minifilter driver instance or a legacy filter driver. |
-| [_INSTANCE_BASIC_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_instance_basic_information.md) | The INSTANCE_BASIC_INFORMATION structure contains basic information for a minifilter instance. |
-| [_INSTANCE_FULL_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_instance_full_information.md) | The INSTANCE_FULL_INFORMATION structure contains full information for a minifilter instance. |
-| [_INSTANCE_PARTIAL_INFORMATION structure](..\fltuserstructures\ns-fltuserstructures-_instance_partial_information.md) | The INSTANCE_PARTIAL_INFORMATION structure contains partial information for a minifilter instance. |
 | [_IO_DRIVER_CREATE_CONTEXT structure](..\ntddk\ns-ntddk-_io_driver_create_context.md) | The IO_DRIVER_CREATE_CONTEXT structure is used to pass additional parameters to the IoCreateFileEx and FltCreateFileEx2 routines. |
 | [_IO_FOEXT_SILO_PARAMETERS structure](..\ntddk\ns-ntddk-_io_foext_silo_parameters.md) | This structure describes the Container context that's identified by the IoGetSiloParameters routine. |
 | [_IO_PRIORITY_INFO structure](..\ntifs\ns-ntifs-_io_priority_info.md) | The IO_PRIORITY_INFO structure is used to hold thread priority information. |
@@ -1094,7 +1089,6 @@ For the programming guide, see [Installable file system](===404===https://docs.m
 | [NETWORK_OPEN_LOCATION_QUALIFIER enumeration](..\ntifs\ne-ntifs-network_open_location_qualifier.md) | The NETWORK_OPEN_LOCATION_QUALIFIER enumeration type contains values that identify the kind of location restriction to attach to a file. |
 | [_DIRECTORY_NOTIFY_INFORMATION_CLASS enumeration](..\wdm\ne-wdm-_directory_notify_information_class.md) | A value that specifies which structure to use to query or set information for a files in a directory. |
 | [_FILE_INFORMATION_CLASS enumeration](..\wdm\ne-wdm-_file_information_class.md) | A value that specifies which structure to use to query or set information for a file object. |
-| [_FLT_FILESYSTEM_TYPE enumeration](..\fltuserstructures\ne-fltuserstructures-_flt_filesystem_type.md) | The FLT_FILESYSTEM_TYPE enumeration identifies the type of file system being used on a volume. |
 | [_FSINFOCLASS enumeration](..\wdm\ne-wdm-_fsinfoclass.md) | The FS_INFORMATION_CLASS enumeration contains the information class constants that specify what type of information structure is present for a set or a query operation. |
 | [_FSRTL_CHANGE_BACKING_TYPE enumeration](..\ntifs\ne-ntifs-_fsrtl_change_backing_type.md) | The FSRTL_CHANGE_BACKING_TYPE enumeration specifies the type of cache or control area that a file object designates. |
 | [_LOCK_OPERATION enumeration](..\wdm\ne-wdm-_lock_operation.md) | The LOCK_OPERATION enumeration specifies the type of access that is appropriate for a type of I/O operation. |

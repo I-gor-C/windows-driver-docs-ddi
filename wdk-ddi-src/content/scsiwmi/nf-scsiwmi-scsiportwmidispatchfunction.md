@@ -114,39 +114,13 @@ Set <b>Srb-&gt;SrbStatus</b> to the value returned by <b>ScsiPortWmiGetReturnSta
 Call <b>ScsiPortNotification</b> with <b>RequestComplete</b> and again with <b>NextRequest</b>
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsiwmi.h (include Miniport.h or Scsi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\scsiwmi\ns-scsiwmi-_scsiwmilib_context.md">SCSI_WMILIB_CONTEXT</a>
 </dt>
 <dt>
-<a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564657">ScsiPortNotification</a>
 </dt>
 <dt>
 <a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnsize.md">ScsiPortWmiGetReturnSize</a>

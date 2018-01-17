@@ -87,43 +87,6 @@ A tape miniclass driver calls <b>TapeClassPhysicalBlockToLogicalBlock</b> to tra
 If a tape miniclass driver calls this routine with an unsupported tape density code, <b>TapeClassPhysicalBlockToLogicalBlock </b>returns the physical block address in the return value, without performing any translation.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Minitape.h (include Minitape.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Tape.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

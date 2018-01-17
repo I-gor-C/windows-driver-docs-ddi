@@ -8,7 +8,7 @@ old-project: smartcrd
 ms.assetid: 76f6f0d1-cb2f-4cda-aeb0-7421e18e3c27
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _OS_DEP_DATA, OS_DEP_DATA, *POS_DEP_DATA
+ms.keywords: _OS_DEP_DATA, *POS_DEP_DATA, OS_DEP_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: OS_DEP_DATA, *POS_DEP_DATA
+req.typenames: *POS_DEP_DATA, OS_DEP_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -126,20 +126,4 @@ Unused.
 
 
 ## -remarks
-To allocate this structure, drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548944">SmartcardInitialize (WDM)</a>. After this call, drivers should copy the pointer of the smart card device object to <b>DeviceObject</b>. Otherwise, the smart card driver library will not work. Do not use this structure to store driver-dependent information. However, when the smart card driver library calls one of your driver's callback functions, it sets <b>CurrentIrp</b> to the requesting IRP, unless the request is a smart card tracking request. For smart card tracking requests, the driver library sets <b>NotificationIrp</b> to the requesting IRP. For more information about smart card tracking, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548920">RDF_CARD_TRACKING</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Smcnt.h (include Smcnt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+To allocate this structure, drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548944">SmartcardInitialize (WDM)</a>. After this call, drivers should copy the pointer of the smart card device object to <b>DeviceObject</b>. Otherwise, the smart card driver library will not work. Do not use this structure to store driver-dependent information. However, when the smart card driver library calls one of your driver's callback functions, it sets <b>CurrentIrp</b> to the requesting IRP, unless the request is a smart card tracking request. For smart card tracking requests, the driver library sets <b>NotificationIrp</b> to the requesting IRP. For more information about smart card tracking, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548920">RDF_CARD_TRACKING</a>.</p>

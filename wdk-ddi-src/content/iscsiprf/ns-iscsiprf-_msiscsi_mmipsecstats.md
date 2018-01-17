@@ -183,21 +183,6 @@ The number of negotiations that resulted in the use of plaintext SAs (also known
 It is optional that you implement this class.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiprf.h (include Iscsiprf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

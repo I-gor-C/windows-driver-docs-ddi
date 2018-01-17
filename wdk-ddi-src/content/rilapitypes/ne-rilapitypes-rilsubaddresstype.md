@@ -7,7 +7,7 @@ old-location: netvista\rilsubaddresstype_2.htm
 old-project: netvista
 ms.assetid: 5484775b-0c02-4879-a550-a4dc99e577ed
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSUBADDRESSTYPE, RILSUBADDRESSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILSUBADDRESSTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -67,7 +67,7 @@ NTSTATUS DpWmiQueryDataBlock(
 
 ### -param DeviceObject [in]
 
-Pointer to the driver's WDM <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure.
+Pointer to the driver's WDM <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure.
 
 
 ### -param Irp [in]
@@ -133,42 +133,6 @@ This routine can be pageable.
 
 For more information about implementing this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540741">Calling WmiSystemControl to Handle WMI IRPs</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wmilib.h (include Wmilib.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Called at PASSIVE_LEVEL.
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

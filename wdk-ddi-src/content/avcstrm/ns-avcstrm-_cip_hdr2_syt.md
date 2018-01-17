@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: e66b721f-4cc0-4d35-9e24-6d7dd4029ea4
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _CIP_HDR2_SYT, *PCIP_HDR2_SYT, CIP_HDR2_SYT
+ms.keywords: _CIP_HDR2_SYT, CIP_HDR2_SYT, *PCIP_HDR2_SYT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PCIP_HDR2_SYT, CIP_HDR2_SYT
+req.typenames: CIP_HDR2_SYT, *PCIP_HDR2_SYT
 ---
 
 # _CIP_HDR2_SYT structure
@@ -91,21 +91,6 @@ Must be set to 1:0.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avcstrm.h (include Avcstrm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

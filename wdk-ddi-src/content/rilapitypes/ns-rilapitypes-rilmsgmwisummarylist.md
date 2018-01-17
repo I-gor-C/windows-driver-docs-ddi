@@ -7,7 +7,7 @@ old-location: netvista\rilmsgmwisummarylist_2.htm
 old-project: netvista
 ms.assetid: 85f07ef4-6306-4995-9c95-9bbae775af1c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGMWISUMMARYLIST, *LPRILMSGMWISUMMARYLIST, RILMSGMWISUMMARYLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,19 +87,3 @@ typedef struct _RILMSGMWISUMMARYLIST {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

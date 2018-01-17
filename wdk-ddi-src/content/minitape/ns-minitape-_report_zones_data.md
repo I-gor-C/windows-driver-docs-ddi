@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 67785cb0-388c-4348-b32a-99bcd02b7c04
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _REPORT_ZONES_DATA, *PREPORT_ZONES_DATA, REPORT_ZONES_DATA
+ms.keywords: _REPORT_ZONES_DATA, REPORT_ZONES_DATA, *PREPORT_ZONES_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PREPORT_ZONES_DATA, REPORT_ZONES_DATA
+req.typenames: REPORT_ZONES_DATA, *PREPORT_ZONES_DATA
 ---
 
 # _REPORT_ZONES_DATA structure
@@ -101,19 +101,3 @@ N/A
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsi.h (include Minitape.h or Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

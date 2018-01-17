@@ -73,21 +73,6 @@ For more information about reparse points and reparse point tags, see the Window
 This structure must be aligned on a LONG (4-byte) boundary.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

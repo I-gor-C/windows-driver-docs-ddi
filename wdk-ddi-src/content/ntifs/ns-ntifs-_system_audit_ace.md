@@ -77,21 +77,6 @@ Audit messages are stored in an event log that can be manipulated by using the M
 This structure must be aligned on a 32-bit boundary. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

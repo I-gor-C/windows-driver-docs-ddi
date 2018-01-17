@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: AF001441-4031-4E29-B459-1597BFCAEF4C
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_PPM_CST_STATE, *PPEP_PPM_CST_STATE, PEP_PPM_CST_STATE
+ms.keywords: _PEP_PPM_CST_STATE, PEP_PPM_CST_STATE, *PPEP_PPM_CST_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_PPM_CST_STATE, PEP_PPM_CST_STATE
+req.typenames: PEP_PPM_CST_STATE, *PPEP_PPM_CST_STATE
 ---
 
 # _PEP_PPM_CST_STATE structure
@@ -170,31 +170,6 @@ This structure is used in conjunction with the <a href="kernel.pep_notify_ppm_cs
 
 The values in the <b>PEP_PPM_CST_STATE</b> structure are obtained from the parameters that are specified for this C state in the _CST object in the ACPI namespace for the processor. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

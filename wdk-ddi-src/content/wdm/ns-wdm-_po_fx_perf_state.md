@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 06A41593-A052-43A7-B3A7-02185B557FA3
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PO_FX_PERF_STATE, PO_FX_PERF_STATE, *PPO_FX_PERF_STATE
+ms.keywords: _PO_FX_PERF_STATE, *PPO_FX_PERF_STATE, PO_FX_PERF_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: PO_FX_PERF_STATE, *PPO_FX_PERF_STATE
+req.typenames: *PPO_FX_PERF_STATE, PO_FX_PERF_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -71,31 +71,6 @@ A pointer to additional context for the performance state that cannot be present
 ## -remarks
 The <b>States</b> member of the <a href="..\wdm\ns-wdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> structure contains an array of <b>PO_FX_PERF_STATE</b> elements. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

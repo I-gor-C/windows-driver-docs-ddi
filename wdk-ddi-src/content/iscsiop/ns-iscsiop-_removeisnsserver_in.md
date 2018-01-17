@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 10e72834-4866-42f2-842e-0a30278acab8
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _RemoveiSNSServer_IN, *PRemoveiSNSServer_IN, RemoveiSNSServer_IN
+ms.keywords: _RemoveiSNSServer_IN, RemoveiSNSServer_IN, *PRemoveiSNSServer_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PRemoveiSNSServer_IN, RemoveiSNSServer_IN
+req.typenames: RemoveiSNSServer_IN, *PRemoveiSNSServer_IN
 ---
 
 # _RemoveiSNSServer_IN structure
@@ -62,21 +62,6 @@ The name of the iSNS server to remove from the initiator's list.
 ## -remarks
 It is optional that you implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

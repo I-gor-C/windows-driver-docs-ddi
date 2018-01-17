@@ -138,21 +138,6 @@ Pointer to the camera minidriver defined <a href="..\usbcamdi\nc-usbcamdi-pcam_f
 A camera minidriver passes a USBCAMD_DEVICE_DATA structure to USBCAMD as a parameter to the USBCAMD library routine <a href="..\usbcamdi\nf-usbcamdi-usbcamd_adapterreceivepacket.md">USBCAMD_AdapterReceivePacket</a> in the original USBCAMD.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

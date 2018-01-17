@@ -110,21 +110,6 @@ Flags. For more information, see the <a href="..\d3d10umddi\ne-d3d10umddi-d3dwdd
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

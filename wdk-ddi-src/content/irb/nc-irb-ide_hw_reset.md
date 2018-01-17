@@ -69,31 +69,4 @@ A pointer to the channel extension.
 ## -remarks
 The <b><i>IdeHwReset</i></b> routine should complete all pending requests and reset the indicated channel.
 
-<b><i>IdeHwReset</i></b> can be called even if the miniport driver is not ready for another request.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+<b><i>IdeHwReset</i></b> can be called even if the miniport driver is not ready for another request.</p>

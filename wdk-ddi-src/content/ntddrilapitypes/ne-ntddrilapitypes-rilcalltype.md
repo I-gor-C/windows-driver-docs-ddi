@@ -7,7 +7,7 @@ old-location: netvista\rilcalltype.htm
 old-project: netvista
 ms.assetid: bd6b9e57-f50b-4743-9c51-066940aad200
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLTYPE, RILCALLTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,19 +90,3 @@ typedef enum _RILCALLTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

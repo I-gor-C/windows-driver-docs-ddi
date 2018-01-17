@@ -7,7 +7,7 @@ old-location: netvista\rilmessageflags.htm
 old-project: netvista
 ms.assetid: 82f36886-20bf-4981-b0f0-3871a87b6c4e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMESSAGEFLAGS, RILMESSAGEFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,19 +86,3 @@ typedef enum _RILMESSAGEFLAGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

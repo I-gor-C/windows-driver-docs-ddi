@@ -7,7 +7,7 @@ old-location: netvista\rilsupservicedatastatus_2.htm
 old-project: netvista
 ms.assetid: 9879db5b-25c1-451c-bb50-37e85cf1f5e5
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSUPSERVICEDATASTATUS, RILSUPSERVICEDATASTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,19 +71,3 @@ typedef enum _RILSUPSERVICEDATASTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

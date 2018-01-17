@@ -7,8 +7,8 @@ old-location: netvista\rilnitzinfo_v1_2.htm
 old-project: netvista
 ms.assetid: ded74c48-b9a8-4ee4-8df9-3dc99892d41d
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILNITZINFO_V1, *LPRILNITZINFO_V1, RILNITZINFO_V1
+ms.date: 1/11/2018
+ms.keywords: RILNITZINFO_V1, RILNITZINFO_V1, *LPRILNITZINFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILNITZINFO_V1, RILNITZINFO_V1
+req.typenames: RILNITZINFO_V1, *LPRILNITZINFO_V1
 req.product: Windows 10 or later.
 ---
 
@@ -79,19 +79,3 @@ typedef struct _RILNITZINFO_V1 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

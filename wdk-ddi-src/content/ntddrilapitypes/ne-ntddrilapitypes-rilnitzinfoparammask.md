@@ -7,7 +7,7 @@ old-location: netvista\rilnitzinfoparammask.htm
 old-project: netvista
 ms.assetid: bdf1505f-2a84-48a3-9534-df83237ab7bb
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILNITZINFOPARAMMASK, RILNITZINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,19 +74,3 @@ typedef enum _RILNITZINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

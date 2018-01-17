@@ -81,40 +81,4 @@ The client driver receives a pointer to a framework-allocated <a href="https://m
 
 By default, for WDF drivers, the device's function driver is the power policy owner.
 
-The following code snippet shows how to call <b>UfxFdoInit</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ufxclient.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+The following code snippet shows how to call <b>UfxFdoInit</b>.</p>

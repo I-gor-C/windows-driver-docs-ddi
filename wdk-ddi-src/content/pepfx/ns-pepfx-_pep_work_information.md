@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 7A3B2A94-AE6F-4DCC-9CDF-E2D5799C9F0D
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_WORK_INFORMATION, *PPEP_WORK_INFORMATION, PEP_WORK_INFORMATION
+ms.keywords: _PEP_WORK_INFORMATION, PEP_WORK_INFORMATION, *PPEP_WORK_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_WORK_INFORMATION, PEP_WORK_INFORMATION
+req.typenames: PEP_WORK_INFORMATION, *PPEP_WORK_INFORMATION
 ---
 
 # _PEP_WORK_INFORMATION structure
@@ -101,31 +101,6 @@ A <a href="..\pepfx\ns-pepfx-_pep_work_acpi_evaluate_control_method_complete.md"
 ## -remarks
 The <b>WorkInformation</b> member of the <a href="..\pepfx\ns-pepfx-_pep_work.md">PEP_WORK</a> structure is a pointer to a <b>PEP_WORK_INFORMATION</b> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

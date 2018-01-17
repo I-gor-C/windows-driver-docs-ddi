@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: d3ca900d-1dd6-49da-ae94-855de3fbd086
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
+ms.keywords: _KSM_PIN_PAIR, KSM_PIN_PAIR, *PKSM_PIN_PAIR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
+req.typenames: KSM_PIN_PAIR, *PKSM_PIN_PAIR
 ---
 
 # PFNBTHPORT_INDICATION_CALLBACK callback
@@ -123,54 +123,6 @@ The
     <i>Indication</i> parameter. For most notifications, there is an INDICATION_PARAMETERS union member that
     corresponds to the event and contains event-specific parameters.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback
-   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access
-   paged memory)
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

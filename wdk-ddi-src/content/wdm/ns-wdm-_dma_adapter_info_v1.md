@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5BB089B8-4384-450D-BC81-9D9D068CF4EB
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _DMA_ADAPTER_INFO_V1, DMA_ADAPTER_INFO_V1, *PDMA_ADAPTER_INFO_V1
+ms.keywords: _DMA_ADAPTER_INFO_V1, *PDMA_ADAPTER_INFO_V1, DMA_ADAPTER_INFO_V1
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: DMA_ADAPTER_INFO_V1, *PDMA_ADAPTER_INFO_V1
+req.typenames: *PDMA_ADAPTER_INFO_V1, DMA_ADAPTER_INFO_V1
 req.product: Windows 10 or later.
 ---
 
@@ -94,31 +94,6 @@ The <b>V1</b> member of the <a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADA
 
 A driver calls <a href="..\wdm\nc-wdm-pget_dma_adapter_info.md">GetDmaAdapterInfo</a> to obtain information about the hardware capabilities of a system DMA channel. <b>GetDmaAdapterInfo</b> writes this information into the <b>V1</b> member of a caller-supplied <b>DMA_ADAPTER_INFO</b> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

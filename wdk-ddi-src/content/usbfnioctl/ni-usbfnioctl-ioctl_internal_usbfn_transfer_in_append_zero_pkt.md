@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 3912A632-E9D0-42D5-B7B7-766A92EE8C95
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.keywords: _USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBFN_USB_STRING, USBFN_USB_STRING
+req.typenames: *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 req.product: Windows 10 or later.
 ---
 
@@ -80,20 +80,4 @@ This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl
 
 UFX forwards this IOCTL request to the transfer queue created for the endpoint by <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.
 
-The function controller initiates a transfer in the IN direction on the endpoint and automatically appends a zero-length packet transfer after the data provided in the data buffer is successfully sent. A zero-length packet is only appended by the controller if the size of the transfer payload is a multiple of the endpoint’s maximum packet size.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnioctl.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+The function controller initiates a transfer in the IN direction on the endpoint and automatically appends a zero-length packet transfer after the data provided in the data buffer is successfully sent. A zero-length packet is only appended by the controller if the size of the transfer payload is a multiple of the endpoint’s maximum packet size.</p>

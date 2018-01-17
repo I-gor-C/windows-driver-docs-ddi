@@ -7,7 +7,7 @@ old-location: netvista\rilsupservicedata_2.htm
 old-project: netvista
 ms.assetid: e9faa47e-56f7-464b-ad6a-fbb543ca9d1d
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSUPSERVICEDATA, *LPRILSUPSERVICEDATA, RILSUPSERVICEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -91,19 +91,3 @@ typedef struct _RILSUPSERVICEDATA {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

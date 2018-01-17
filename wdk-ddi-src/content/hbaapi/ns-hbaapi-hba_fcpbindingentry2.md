@@ -149,21 +149,6 @@ Contains, on return, a status value that indicates the condition of the HBA. The
 This structure is very similar to the <a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry2.md">HBAFCPBindingEntry2</a> structure. The only difference is that HBA_FCPBindingEntry2 returns HBA status. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

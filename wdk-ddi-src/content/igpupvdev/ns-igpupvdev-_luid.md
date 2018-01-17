@@ -7,7 +7,7 @@ old-location: netvista\luid.htm
 old-project: netvista
 ms.assetid: 9547d3e1-a811-4b89-be71-f7cf81e92b93
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _LUID, LUID, *PLUID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,29 +71,3 @@ High order bits.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Igpupvdev.h (include Fwptypes.h or Fwpsk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

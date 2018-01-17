@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 6950B71D-B396-494E-A23C-EE37B439FD05
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _SE_SID, SE_SID, *PSE_SID
+ms.keywords: _SE_SID, *PSE_SID, SE_SID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SE_SID, *PSE_SID
+req.typenames: *PSE_SID, SE_SID
 ---
 
 # _SE_SID structure
@@ -67,21 +67,6 @@ Specifies an array of SECURITY_MAX_SID_SIZE for allocating enough memory for the
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

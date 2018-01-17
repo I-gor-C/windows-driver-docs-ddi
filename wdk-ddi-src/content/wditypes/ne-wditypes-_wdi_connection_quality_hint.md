@@ -7,7 +7,7 @@ old-location: netvista\wdi_connection_quality_hint.htm
 old-project: netvista
 ms.assetid: D83AE2BE-1273-48A1-A42C-C2EADA07D9C0
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_CONNECTION_QUALITY_HINT, WDI_CONNECTION_QUALITY_HINT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,39 +84,3 @@ This can only be set on one port.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

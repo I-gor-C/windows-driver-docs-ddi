@@ -112,7 +112,7 @@ This flag indicates that the GPU doesn’t support updating page table entries o
 
 ### -field LargePageSupported
 
-When set to 1, all levels of page tables, except the leaf one, support large pages (<b>LargePage</b> bit in <a href="..\d3dukmdt\ns-d3dukmdt-_dxgk_pte.md">DXGK_PTE</a>).
+When set to 1, all levels of page tables, except the leaf one, support large pages (<b>LargePage</b> bit in <a href="https://msdn.microsoft.com/library/windows/hardware/ff562008">DXGK_PTE</a>).
 
 
 ### -field DualPteSupported
@@ -168,39 +168,3 @@ When set to 1, video memory manager sets <b>SourcePageTable</b> address in <b>Tr
 </dl>
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -111,21 +111,6 @@ The current user has insufficient registry access privileges to make the update 
 Must be called at IRQL = PASSIVE_LEVEL.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h (include Avc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

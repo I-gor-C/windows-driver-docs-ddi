@@ -105,21 +105,6 @@ Specifies the logical inverse of the first quadlet of the packet.
 For an explanation of the function of the PHY configuration packet, see the IEEE 1394 specification.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

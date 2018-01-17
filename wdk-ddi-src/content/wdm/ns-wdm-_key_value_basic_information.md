@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: b3b14c21-3613-4f84-9e7d-368c4cc3fa9d
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _KEY_VALUE_BASIC_INFORMATION, *PKEY_VALUE_BASIC_INFORMATION, KEY_VALUE_BASIC_INFORMATION
+ms.keywords: _KEY_VALUE_BASIC_INFORMATION, KEY_VALUE_BASIC_INFORMATION, *PKEY_VALUE_BASIC_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PKEY_VALUE_BASIC_INFORMATION, KEY_VALUE_BASIC_INFORMATION
+req.typenames: KEY_VALUE_BASIC_INFORMATION, *PKEY_VALUE_BASIC_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -209,21 +209,6 @@ A string of Unicode characters naming a value entry of the key.
 ## -remarks
 A kernel-mode driver can obtain a <b>KEY_VALUE_BASIC_INFORMATION</b> that describes a registry key by calling the <a href="..\wdm\nf-wdm-zwqueryvaluekey.md">ZwQueryValueKey</a> or <a href="..\wdm\nf-wdm-zwenumeratevaluekey.md">ZwEnumerateValueKey</a> routine.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

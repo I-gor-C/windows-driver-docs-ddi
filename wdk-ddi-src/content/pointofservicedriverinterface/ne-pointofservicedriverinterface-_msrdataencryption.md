@@ -78,19 +78,3 @@ A vendor-specific encryption algorithm. Service-specific values begin at 0x01000
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pointofservicedriverinterface.h (include Pointofservicedriverinterface.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

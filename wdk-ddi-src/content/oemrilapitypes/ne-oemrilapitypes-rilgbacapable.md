@@ -7,7 +7,7 @@ old-location: netvista\rilgbacapable.htm
 old-project: netvista
 ms.assetid: c1acc574-6e9e-40a1-8892-00572fcc545c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILGBACAPABLE, RILGBACAPABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILGBACAPABLE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Oemrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

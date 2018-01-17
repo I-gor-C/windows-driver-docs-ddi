@@ -65,7 +65,7 @@ Pointer to the driver object. This pointer is passed as a parameter to the adapt
 
 ### -param PhysicalDeviceObject [in]
 
-Pointer to the device's <a href="wdkgloss.p#wdkgloss.physical_device_object__pdo_#wdkgloss.physical_device_object__pdo_"><i>physical device object (PDO)</i></a>. PortCls passes this pointer as a call parameter to the adapter's <i>AddDevice</i> handler. The PDO is a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
+Pointer to the device's <a href="wdkgloss.p#wdkgloss.physical_device_object__pdo_#wdkgloss.physical_device_object__pdo_"><i>physical device object (PDO)</i></a>. PortCls passes this pointer as a call parameter to the adapter's <i>AddDevice</i> handler. The PDO is a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>.
 
 
 ### -param StartDevice [in]
@@ -107,63 +107,6 @@ The adapter driver can then access the device-specific extension data, as shown 
 Variable <i>FunctionalDeviceObject</i> is a pointer to the audio adapter's FDO, and <i>pMyExtensionData</i> is a temporary pointer to the extension data. Avoid confusing the FDO with the PDO, which belongs to the PCI bus driver. The adapter driver must not modify data in the PDO because doing so corrupts memory owned by the PCI bus driver and can cause the system to crash.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum support
-
-</th>
-<td width="70%">
-Available starting in Windows 2000. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -173,7 +116,7 @@ PASSIVE_LEVEL
 <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\portcls\nf-portcls-pcregistersubdevice.md">PcRegisterSubdevice</a>

@@ -271,21 +271,6 @@ When you create a <b>CLFS_MGMT_POLICY</b> structure whose <b>PolicyType</b> is <
 You can only install a policy whose policy type specified in the <b>PolicyType</b> value is <b>ClfsMgmtPolicyNewContainerSize</b> before there are any containers in the log. You can change other policies after the log exists.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

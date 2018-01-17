@@ -66,20 +66,4 @@ The number of responses that were received.
 
 
 ## -remarks
-We recommend that you implement this class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+We recommend that you implement this class.</p>

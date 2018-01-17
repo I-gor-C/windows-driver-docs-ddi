@@ -96,32 +96,6 @@ Beginning the monitoring of the UPS unit
 If the <b>UPSInit</b> function returns a value other than UPS_INITOK, the UPS service immediately calls the <a href="..\upssvc\nf-upssvc-upsstop.md">UPSStop</a> function.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Upssvc.h (include Upssvc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

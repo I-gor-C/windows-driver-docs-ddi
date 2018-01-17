@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 409fbc3e-1221-4869-9087-693b1e4d4587
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _HID_DEVICE_EXTENSION, *PHID_DEVICE_EXTENSION, HID_DEVICE_EXTENSION
+ms.keywords: _HID_DEVICE_EXTENSION, HID_DEVICE_EXTENSION, *PHID_DEVICE_EXTENSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PHID_DEVICE_EXTENSION, HID_DEVICE_EXTENSION
+req.typenames: HID_DEVICE_EXTENSION, *PHID_DEVICE_EXTENSION
 ---
 
 # _HID_DEVICE_EXTENSION structure
@@ -73,21 +73,6 @@ Pointer to the minidriver-specific portion of the device extension.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hidport.h (include Hidport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

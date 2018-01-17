@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: db703d46-d37f-442a-a543-ce9e9c5ea3cb
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _IO_ADDRESS, IO_ADDRESS, *PIO_ADDRESS
+ms.keywords: _IO_ADDRESS, *PIO_ADDRESS, IO_ADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: IO_ADDRESS, *PIO_ADDRESS
+req.typenames: *PIO_ADDRESS, IO_ADDRESS
 ---
 
 # _IO_ADDRESS structure
@@ -67,21 +67,6 @@ Holds a structure of type <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

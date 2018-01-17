@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.typenames: *PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2
 req.product: Windows 10 or later.
 ---
 
@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-The <b>UsbBuildOpenStaticStreamsRequest</b> inline function formats an <a href="..\usb\ns-usb-_urb.md">URB</a> structure for an open-streams request. The request opens streams associated with the specified bulk endpoint.
+The <b>UsbBuildOpenStaticStreamsRequest</b> inline function formats an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure for an open-streams request. The request opens streams associated with the specified bulk endpoint.
 
 
 
@@ -60,7 +60,7 @@ void UsbBuildOpenStaticStreamsRequest(
 
 ### -param Urb [in, out]
 
-Pointer to the <a href="..\usb\ns-usb-_urb.md">URB</a> structure to be formatted for the open-stream request (URB_FUNCTION_OPEN_STATIC_STREAMS). The caller must allocate nonpaged pool for this <b>URB</b>.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure to be formatted for the open-stream request (URB_FUNCTION_OPEN_STATIC_STREAMS). The caller must allocate nonpaged pool for this <b>URB</b>.
 
 
 
@@ -83,7 +83,7 @@ In the <b>NumberOfStreams</b> value, specify lesser of two values supported by t
 
 ### -param StreamInfoArray [in]
 
-Pointer to a caller-allocated, initialized array of <a href="..\usb\ns-usb-_usbd_stream_information.md">USBD_STREAM_INFORMATION</a> structures. The length of the array depends on the number of streams to open and must be the same as the <b>NumberOfStreams</b> value.
+Pointer to a caller-allocated, initialized array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406247">USBD_STREAM_INFORMATION</a> structures. The length of the array depends on the number of streams to open and must be the same as the <b>NumberOfStreams</b> value.
 
 
 ## -returns
@@ -94,46 +94,10 @@ This function does not return a value.
 For a code example that shows the URB format required for an open-streams request, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbdlib.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\usb\ns-usb-_urb_open_static_streams.md">_URB_OPEN_STATIC_STREAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406294">_URB_OPEN_STATIC_STREAMS</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>

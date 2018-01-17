@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.typenames: WMILIB_CONTEXT, *PWMILIB_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -73,19 +73,3 @@ Pointer to the WPP controller GUID that identifies the driver data.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wpprecorder.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 4223dd79-cac7-41bd-8c94-12baf8e8367a
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _SCO_INDICATION_CODE, SCO_INDICATION_CODE, *PSCO_INDICATION_CODE
+ms.keywords: _SCO_INDICATION_CODE, *PSCO_INDICATION_CODE, SCO_INDICATION_CODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: SCO_INDICATION_CODE, *PSCO_INDICATION_CODE
+req.typenames: *PSCO_INDICATION_CODE, SCO_INDICATION_CODE
 ---
 
 # _SCO_INDICATION_CODE enumeration
@@ -89,38 +89,13 @@ This value indicates to a profile driver that a remote device is disconnecting f
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>
 </dt>
 <dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536751">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536628">BRB_SCO_REGISTER_SERVER</a>

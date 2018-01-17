@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: CC043EA0-391F-48D5-B37D-13136527BFCE
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SERCX2_CUSTOM_TRANSMIT_CONFIG, *PSERCX2_CUSTOM_TRANSMIT_CONFIG, SERCX2_CUSTOM_TRANSMIT_CONFIG
+ms.keywords: _SERCX2_CUSTOM_TRANSMIT_CONFIG, SERCX2_CUSTOM_TRANSMIT_CONFIG, *PSERCX2_CUSTOM_TRANSMIT_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
-req.typenames: *PSERCX2_CUSTOM_TRANSMIT_CONFIG, SERCX2_CUSTOM_TRANSMIT_CONFIG
+req.typenames: SERCX2_CUSTOM_TRANSMIT_CONFIG, *PSERCX2_CUSTOM_TRANSMIT_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -97,31 +97,6 @@ If <b>Exclusive</b> is <b>TRUE</b>, the <b>MinimumTransferUnit</b>, <b>Alignment
 ## -remarks
 The <a href="..\sercx\nf-sercx-sercx2customtransmitcreate.md">SerCx2CustomTransmitCreate</a> method accepts a pointer to a <b>SERCX2_CUSTOM_TRANSMIT_CONFIG</b> structure as an input parameter. Before calling <b>SerCx2CustomTransmitCreate</b>, call the <a href="..\sercx\nf-sercx-sercx2_custom_transmit_config_init.md">SERCX2_CUSTOM_TRANSMIT_CONFIG_INIT</a> function to initialize this structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

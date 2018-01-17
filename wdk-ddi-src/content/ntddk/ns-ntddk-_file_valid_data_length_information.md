@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 78badbac-9f77-4911-a42b-c0421be47f20
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _FILE_VALID_DATA_LENGTH_INFORMATION, *PFILE_VALID_DATA_LENGTH_INFORMATION, FILE_VALID_DATA_LENGTH_INFORMATION
+ms.keywords: _FILE_VALID_DATA_LENGTH_INFORMATION, FILE_VALID_DATA_LENGTH_INFORMATION, *PFILE_VALID_DATA_LENGTH_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PFILE_VALID_DATA_LENGTH_INFORMATION, FILE_VALID_DATA_LENGTH_INFORMATION
+req.typenames: FILE_VALID_DATA_LENGTH_INFORMATION, *PFILE_VALID_DATA_LENGTH_INFORMATION
 ---
 
 # _FILE_VALID_DATA_LENGTH_INFORMATION structure
@@ -76,31 +76,6 @@ The size of the <i>FileInformation</i> buffer passed to <b>ZwSetInformationFile<
 
 This structure must be aligned on a LONGLONG (8-byte) boundary. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available on Microsoft Windows XP and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

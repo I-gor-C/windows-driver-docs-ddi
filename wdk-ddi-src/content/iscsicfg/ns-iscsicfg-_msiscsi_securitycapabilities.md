@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: a385283a-7b24-43aa-b291-541bfd6a91a6
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSiSCSI_SecurityCapabilities, MSiSCSI_SecurityCapabilities, *PMSiSCSI_SecurityCapabilities
+ms.keywords: _MSiSCSI_SecurityCapabilities, *PMSiSCSI_SecurityCapabilities, MSiSCSI_SecurityCapabilities
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MSiSCSI_SecurityCapabilities, *PMSiSCSI_SecurityCapabilities
+req.typenames: *PMSiSCSI_SecurityCapabilities, MSiSCSI_SecurityCapabilities
 ---
 
 # _MSiSCSI_SecurityCapabilities structure
@@ -90,21 +90,6 @@ Initiators that support IPsec must implement the MSiSCSI_SecurityCapabilities cl
 
 Initiators must register the MSiSCSI_SecurityCapabilities class using the name of the physical device object (PDO) for the HBA. You must implement this class if the adapter supports IPsec.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsicfg.h (include Iscsicfg.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

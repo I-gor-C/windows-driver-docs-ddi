@@ -66,40 +66,4 @@ Returns <b>true</b> if the file is on a DAX volume; otherwise, <b>false</b>.
 ## -remarks
 In DAX volumes,  user files
     are mapped directly to the persistent memory device.  Files are
-    then accessed using the memory bus, to help boost system performance.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+    then accessed using the memory bus, to help boost system performance.</p>

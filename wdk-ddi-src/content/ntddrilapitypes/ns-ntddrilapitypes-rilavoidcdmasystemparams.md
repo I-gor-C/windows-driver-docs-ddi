@@ -7,8 +7,8 @@ old-location: netvista\rilavoidcdmasystemparams.htm
 old-project: netvista
 ms.assetid: cf160fb9-8230-4b75-8a4f-d19ef001f54a
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILAVOIDCDMASYSTEMPARAMS, *LPRILAVOIDCDMASYSTEMPARAMS, RILAVOIDCDMASYSTEMPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILAVOIDCDMASYSTEMPARAMS, RILAVOIDCDMASYSTEMPARAMS, *LPRILAVOIDCDMASYSTEMPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILAVOIDCDMASYSTEMPARAMS, RILAVOIDCDMASYSTEMPARAMS
+req.typenames: RILAVOIDCDMASYSTEMPARAMS, *LPRILAVOIDCDMASYSTEMPARAMS
 ---
 
 # RILAVOIDCDMASYSTEMPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILAVOIDCDMASYSTEMPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

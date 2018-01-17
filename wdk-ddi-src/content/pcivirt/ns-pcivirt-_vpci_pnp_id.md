@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: 9759ed77-d91a-466b-9678-4ed4fb4359e4
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords: _VPCI_PNP_ID, *PVPCI_PNP_ID, VPCI_PNP_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
+req.typenames: *PVPCI_PNP_ID, VPCI_PNP_ID
 ---
 
 # _VPCI_PNP_ID structure
@@ -103,21 +103,6 @@ Vendor-defined subsystem identifier.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pcivirt.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

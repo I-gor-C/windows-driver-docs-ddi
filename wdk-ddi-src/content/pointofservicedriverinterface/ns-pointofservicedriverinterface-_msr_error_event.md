@@ -8,7 +8,7 @@ old-project: pos
 ms.assetid: daab2df5-4d23-4fe3-b357-74b2615e6d1e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSR_ERROR_EVENT, *PMSR_ERROR_EVENT, MSR_ERROR_EVENT
+ms.keywords: _MSR_ERROR_EVENT, MSR_ERROR_EVENT, *PMSR_ERROR_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMSR_ERROR_EVENT, MSR_ERROR_EVENT
+req.typenames: MSR_ERROR_EVENT, *PMSR_ERROR_EVENT
 ---
 
 # _MSR_ERROR_EVENT structure
@@ -114,19 +114,3 @@ NULL terminated error message.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>PointOfServiceDriverInterface.h (include PointOfServiceDriverInterface.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

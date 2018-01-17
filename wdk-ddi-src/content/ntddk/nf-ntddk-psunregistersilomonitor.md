@@ -66,40 +66,4 @@ This routine does not return a value.
 ## -remarks
 The monitor will not receive further notifications after this routine completes.
     
-If the monitor allocated a silo context slot, this routine will not complete until all silo contexts have been removed from slot.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1607
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+If the monitor allocated a silo context slot, this routine will not complete until all silo contexts have been removed from slot.</p>

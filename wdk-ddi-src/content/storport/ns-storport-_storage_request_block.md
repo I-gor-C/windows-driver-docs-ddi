@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 67A5077D-B1AD-49B7-B024-D139E375483F
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STORAGE_REQUEST_BLOCK, STORAGE_REQUEST_BLOCK, PSTORAGE_REQUEST_BLOCK
+ms.keywords: _STORAGE_REQUEST_BLOCK, PSTORAGE_REQUEST_BLOCK, STORAGE_REQUEST_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: STORAGE_REQUEST_BLOCK, PSTORAGE_REQUEST_BLOCK
+req.typenames: PSTORAGE_REQUEST_BLOCK, STORAGE_REQUEST_BLOCK
 req.product: Windows 10 or later.
 ---
 
@@ -84,12 +84,12 @@ typedef struct _STORAGE_REQUEST_BLOCK {
 
 ### -field Length
 
-Specifies the size of the SRB header for compatibility with the <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> structure. This is equal to the offset of the <b>Signature</b> member of this structure.
+Specifies the size of the SRB header for compatibility with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> structure. This is equal to the offset of the <b>Signature</b> member of this structure.
 
 
 ### -field Function
 
-Set to <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b> to indicate that this is an extended SRB. Unlike in <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>, the SRB function identifier is in the <b>SrbFunction</b> member instead.
+Set to <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b> to indicate that this is an extended SRB. Unlike in <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>, the SRB function identifier is in the <b>SrbFunction</b> member instead.
 
 
 ### -field SrbStatus
@@ -602,7 +602,7 @@ Used by the Storport driver, instead of <b>SrbStatus</b>, to report the status o
 
 ### -field ZeroGuard1
 
-A guard area to protect against drivers that interpret this structure as <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>. Set to 0.
+A guard area to protect against drivers that interpret this structure as <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>. Set to 0.
 
 
 ### -field AddressOffset
@@ -627,7 +627,7 @@ Points to the data buffer. Miniport drivers should not use this value as a data 
 
 ### -field ZeroGuard2
 
-A guard area to protect against drivers that interpret this structure as <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>. Set to 0.
+A guard area to protect against drivers that interpret this structure as <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>. Set to 0.
 
 
 ### -field OriginalRequest
@@ -661,42 +661,17 @@ An array of offsets specifying the location of extended data blocks for the SRB.
 
 
 ## -remarks
-Starting in Windows 8, an extended  SRB type is supported with the use of the <b>STORAGE_REQUEST_BLOCK</b> structure. <b>STORAGE_REQUEST_BLOCK</b> extends SRB functions, allowing extended data blocks for the SRB function to be added to the request. Support for SRB requests using the <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> structure will continue.
+Starting in Windows 8, an extended  SRB type is supported with the use of the <b>STORAGE_REQUEST_BLOCK</b> structure. <b>STORAGE_REQUEST_BLOCK</b> extends SRB functions, allowing extended data blocks for the SRB function to be added to the request. Support for SRB requests using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> structure will continue.
 
 If <b>NumSrbExData</b> &gt; 0, the offsets for the SRB extended data blocks are in the  <b>SrbExDataOffset</b> array. Each offset is relative to the beginning of this structure and points to a <a href="..\storport\ns-storport-_srbex_data.md">SRBEX_DATA</a> structure containing the extended data block.
 
 The target device address for the SRB is in a <a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a> structure indicated by <b>AddressOffset</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 8 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h or Srb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
 </dt>
 <dt>
 <a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>

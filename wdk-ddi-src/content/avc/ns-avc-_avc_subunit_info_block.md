@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 66231303-20ec-42d4-b61d-c8e85e4e6a88
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _AVC_SUBUNIT_INFO_BLOCK, AVC_SUBUNIT_INFO_BLOCK, *PAVC_SUBUNIT_INFO_BLOCK
+ms.keywords: _AVC_SUBUNIT_INFO_BLOCK, *PAVC_SUBUNIT_INFO_BLOCK, AVC_SUBUNIT_INFO_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: AVC_SUBUNIT_INFO_BLOCK, *PAVC_SUBUNIT_INFO_BLOCK
+req.typenames: *PAVC_SUBUNIT_INFO_BLOCK, AVC_SUBUNIT_INFO_BLOCK
 ---
 
 # _AVC_SUBUNIT_INFO_BLOCK structure
@@ -66,21 +66,6 @@ This structure is used only as a member inside the AVC_MULTIFUNC_IRB structure. 
 
 See <a href="https://msdn.microsoft.com/3b4ec139-ff01-40bd-8e29-92f554180585">How to Use Avc.sys</a> For information about building and sending an AV/C command.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h (include Avc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

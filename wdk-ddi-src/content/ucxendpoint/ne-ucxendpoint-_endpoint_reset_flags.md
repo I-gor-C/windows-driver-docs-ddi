@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: DISPATCH_LEVEL
 req.typenames: ENDPOINT_RESET_FLAGS
 req.product: Windows 10 or later.
 ---
@@ -62,21 +62,6 @@ The transfer state must be preserved after the endpoint reset operation is compl
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxendpoint.h (include Ucxclass.h or Ucxendpoint.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

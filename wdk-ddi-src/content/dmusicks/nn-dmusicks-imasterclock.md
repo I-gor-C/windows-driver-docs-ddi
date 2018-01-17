@@ -75,19 +75,3 @@ The <code>GetTime</code> method retrieves the current reference time read from t
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusicks.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: f3600dca-d246-41b5-99b4-4054e677b03b
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _NFS_OPEN_ECP_CONTEXT, PPNFS_OPEN_ECP_CONTEXT, *PNFS_OPEN_ECP_CONTEXT, NFS_OPEN_ECP_CONTEXT
+ms.keywords: _NFS_OPEN_ECP_CONTEXT, *PNFS_OPEN_ECP_CONTEXT, PPNFS_OPEN_ECP_CONTEXT, NFS_OPEN_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: PPNFS_OPEN_ECP_CONTEXT, *PNFS_OPEN_ECP_CONTEXT, NFS_OPEN_ECP_CONTEXT
+req.typenames: *PNFS_OPEN_ECP_CONTEXT, PPNFS_OPEN_ECP_CONTEXT, NFS_OPEN_ECP_CONTEXT
 ---
 
 # _NFS_OPEN_ECP_CONTEXT structure
@@ -70,31 +70,6 @@ The file-system stack can determine whether NFS_OPEN_ECP_CONTEXT is attached to 
 
 The NFS_OPEN_ECP_CONTEXT structure is read-only. You should use it to retrieve information about the open file ECP only. For more information about this issue, see <a href="https://msdn.microsoft.com/6acb4be4-a7aa-431d-b2d8-3ef6d41cb4ef">System-Defined ECPs</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This structure is available starting with Windows 7. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

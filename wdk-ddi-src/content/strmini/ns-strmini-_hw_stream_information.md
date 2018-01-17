@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: d1163185-4cae-4f14-ae99-78795da89fb8
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _HW_STREAM_INFORMATION, *PHW_STREAM_INFORMATION, HW_STREAM_INFORMATION
+ms.keywords: _HW_STREAM_INFORMATION, HW_STREAM_INFORMATION, *PHW_STREAM_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PHW_STREAM_INFORMATION, HW_STREAM_INFORMATION
+req.typenames: HW_STREAM_INFORMATION, *PHW_STREAM_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -92,7 +92,7 @@ The number of entries in the array that begins at the address in the <b>StreamFo
 
 ### -field StreamFormatsArray
 
-Pointer to the beginning of the array of data ranges that this stream supports. (The name of this member is deceptive. This member points to an array of <a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a> structures, not KSDATAFORMAT structures.)
+Pointer to the beginning of the array of data ranges that this stream supports. (The name of this member is deceptive. This member points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a> structures, not KSDATAFORMAT structures.)
 
 
 ### -field ClassReserved
@@ -137,7 +137,7 @@ The number of entries in the array that begins at the address in the <b>Mediums<
 
 ### -field Mediums
 
-Pointer to the beginning of the array of <a href="..\ks\ns-ks-ksidentifier.md">KSPIN_MEDIUM</a> structures supported by this stream. If the minidriver does not specify a medium, the class driver uses the KSMEDIUMSETID_STANDARD, KSMEDIUM_TYPE_ANYINSTANCE medium as the default.
+Pointer to the beginning of the array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a> structures supported by this stream. If the minidriver does not specify a medium, the class driver uses the KSMEDIUMSETID_STANDARD, KSMEDIUM_TYPE_ANYINSTANCE medium as the default.
 
 
 ### -field BridgeStream
@@ -157,21 +157,6 @@ The class driver uses the elements of HW_STREAM_INFORMATION to handle the <a hre
 
 Note that the class driver does not use this data to handle the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565198">KSPROPERTY_PIN_DATAINTERSECTION</a> property. See <a href="..\strmini\ns-strmini-_stream_data_intersect_info.md">STREAM_DATA_INTERSECT_INFO</a> for a description of how the class driver handles this property.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Strmini.h (include Strmini.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

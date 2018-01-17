@@ -8,7 +8,7 @@ old-project: whea
 ms.assetid: 64079b03-9771-4940-a19e-a29389cbf2fe
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _WHEA_X86_REGISTER_STATE, *PWHEA_X86_REGISTER_STATE, WHEA_X86_REGISTER_STATE
+ms.keywords: _WHEA_X86_REGISTER_STATE, WHEA_X86_REGISTER_STATE, *PWHEA_X86_REGISTER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PWHEA_X86_REGISTER_STATE, WHEA_X86_REGISTER_STATE
+req.typenames: WHEA_X86_REGISTER_STATE, *PWHEA_X86_REGISTER_STATE
 ---
 
 # _WHEA_X86_REGISTER_STATE structure
@@ -206,32 +206,6 @@ The task register.
 ## -remarks
 If the <b>RegisterContextType</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_context_info.md">WHEA_XPF_CONTEXT_INFO</a> structure is set to XPF_CONTEXT_INFO_32BITCONTEXT, the <b>RegisterData</b> member of that structure contains a WHEA_X86_REGISTER_STATE structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

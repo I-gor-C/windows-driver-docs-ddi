@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 761B905B-D8E5-43C2-A412-EEC5F91848F3
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STOR_CRYPTO_ALGORITHM_ID, *PSTOR_CRYPTO_ALGORITHM_ID, STOR_CRYPTO_ALGORITHM_ID
+ms.keywords: _STOR_CRYPTO_ALGORITHM_ID, STOR_CRYPTO_ALGORITHM_ID, *PSTOR_CRYPTO_ALGORITHM_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSTOR_CRYPTO_ALGORITHM_ID, STOR_CRYPTO_ALGORITHM_ID
+req.typenames: STOR_CRYPTO_ALGORITHM_ID, *PSTOR_CRYPTO_ALGORITHM_ID
 req.product: Windows 10 or later.
 ---
 
@@ -61,19 +61,3 @@ Reserved for system use.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h</dt>
-</dl>
-</td>
-</tr>
-</table>

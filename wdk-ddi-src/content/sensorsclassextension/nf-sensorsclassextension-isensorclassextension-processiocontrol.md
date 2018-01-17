@@ -83,31 +83,4 @@ UMDF sends I/O control requests to sensor drivers through <a href="https://msdn.
 
 After processing an I/O control request, the sensor class extension uses the driver's callback interface, <a href="..\sensorsclassextension\nn-sensorsclassextension-isensordriver.md">ISensorDriver</a>, to provide notifications, as appropriate. WPD requests that the sensor class extension does not handle by default are sent to the driver through <a href="https://msdn.microsoft.com/library/windows/hardware/ff545644">ISensorDriver::OnProcessWpdMessage</a>.
 
-The driver must not complete I/O control requests that it forwards to the sensor class extension.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sensorsclassextension.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsClassExtension.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+The driver must not complete I/O control requests that it forwards to the sensor class extension.</p>

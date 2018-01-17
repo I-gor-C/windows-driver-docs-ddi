@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaofferanswerparammask_2.htm
 old-project: netvista
 ms.assetid: 2dd7a85e-b284-42be-89d4-a4a7361d5c6d
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLMEDIAOFFERANSWERPARAMMASK, RILCALLMEDIAOFFERANSWERPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,19 +75,3 @@ typedef enum _RILCALLMEDIAOFFERANSWERPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

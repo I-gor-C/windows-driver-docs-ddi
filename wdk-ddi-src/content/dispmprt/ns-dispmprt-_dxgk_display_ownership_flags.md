@@ -70,19 +70,3 @@ The value used to operate over the combined bitfields.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h</dt>
-</dl>
-</td>
-</tr>
-</table>

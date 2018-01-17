@@ -164,21 +164,6 @@ The USBCAMD library requires that the camera must have a single configuration de
 <b>USBCAMD_Pipe_Config_Descriptor</b> is not supported in the original USBCAMD.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -60,20 +60,4 @@ The length of the string in bytes.
 
 
 ## -remarks
-The string is Unicode and the contents of the string follow immediately after the PosStringType structure.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>PointOfServiceDriverInterface.h (include PointOfServiceDriverInterface.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The string is Unicode and the contents of the string follow immediately after the PosStringType structure.</p>

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 5eb83a7a-d6dd-445f-89a8-91cdf67512af
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _RX_CONTEXT, RX_CONTEXT, *PRX_CONTEXT
+ms.keywords: _RX_CONTEXT, *PRX_CONTEXT, RX_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -872,21 +872,6 @@ Many RDBSS routines and routines exported by a network mini-redirector make refe
 
 RDBSS provides a number of routines that are used to manipulate an RX_CONTEXT and the associated IRP. These routines are used to allocate, initialize, and delete an RX_CONTEXT. These routines are also used to complete the IRP associated with an RX_CONTEXT and set up a cancel routine for an RX_CONTEXT. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rxcontx.h (include Rx.h or Rxcontx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

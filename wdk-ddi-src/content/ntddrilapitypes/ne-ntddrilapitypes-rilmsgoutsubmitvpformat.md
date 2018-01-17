@@ -7,7 +7,7 @@ old-location: netvista\rilmsgoutsubmitvpformat.htm
 old-project: netvista
 ms.assetid: c0a2646c-aa0a-4946-999f-a78d1c488752
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGOUTSUBMITVPFORMAT, RILMSGOUTSUBMITVPFORMAT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILMSGOUTSUBMITVPFORMAT {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

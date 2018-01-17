@@ -81,21 +81,6 @@ Contains a nonpersistent target name such as "\Device\HarddiskVolume1".
 For more information about how this structure is defined, see the discussion of the HBA_ScsiID structure in the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

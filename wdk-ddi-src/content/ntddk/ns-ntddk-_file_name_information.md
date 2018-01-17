@@ -71,21 +71,6 @@ The <b>ZwQueryInformationFile</b> routine uses this structure to return the file
 Callers of <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a> can use this structure to specify a new short name for a file.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

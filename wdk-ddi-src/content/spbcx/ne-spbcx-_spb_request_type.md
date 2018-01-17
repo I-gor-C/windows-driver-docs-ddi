@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: B3C2505E-A2B6-4D79-B8B7-9D1B53AA5B56
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
+ms.keywords: _SPB_REQUEST_TYPE, SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
-req.typenames: *PSPB_REQUEST_TYPE, SPB_REQUEST_TYPE
+req.irql: Called at PASSIVE_LEVEL.
+req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -117,31 +117,6 @@ For internal use only.
 ## -remarks
 The <a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a> structure contains an <b>SPB_REQUEST_TYPE</b> enumeration value.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Spbcx.h (include Spb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

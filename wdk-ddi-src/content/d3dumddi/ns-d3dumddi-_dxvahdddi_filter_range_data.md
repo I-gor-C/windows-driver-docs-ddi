@@ -92,30 +92,4 @@ A hue ProcAmp filter that is defined from –180.0 to 180.0 at 0.25 step size wi
      Default = 0
 
 
-     Multiplier = 0.25
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-<b>DXVAHDDDI_FILTER_RANGE_DATA</b> is supported beginning with the Windows 7 operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+     Multiplier = 0.25</p>

@@ -7,7 +7,7 @@ old-location: netvista\riluiccserviceinfo_2.htm
 old-project: netvista
 ms.assetid: e96bc5b5-655f-49e3-8489-af79d427bc74
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCSERVICEINFO, *LPRILUICCSERVICEINFO, RILUICCSERVICEINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,19 +67,3 @@ typedef struct _RILUICCSERVICEINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

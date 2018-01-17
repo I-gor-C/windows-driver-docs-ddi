@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: F7C2DFCC-DB74-4E2E-B252-4897FA320C03
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_COMPONENT_PLATFORM_CONSTRAINTS, *PPEP_COMPONENT_PLATFORM_CONSTRAINTS, PEP_COMPONENT_PLATFORM_CONSTRAINTS
+ms.keywords: _PEP_COMPONENT_PLATFORM_CONSTRAINTS, PEP_COMPONENT_PLATFORM_CONSTRAINTS, *PPEP_COMPONENT_PLATFORM_CONSTRAINTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_COMPONENT_PLATFORM_CONSTRAINTS, PEP_COMPONENT_PLATFORM_CONSTRAINTS
+req.typenames: PEP_COMPONENT_PLATFORM_CONSTRAINTS, *PPEP_COMPONENT_PLATFORM_CONSTRAINTS
 ---
 
 # _PEP_COMPONENT_PLATFORM_CONSTRAINTS structure
@@ -80,31 +80,6 @@ typedef struct _PEP_COMPONENT_PLATFORM_CONSTRAINTS {
 ## -remarks
 This structure is used by the <a href="kernel.pep_dpm_component_idle_constraints">PEP_DPM_COMPONENT_IDLE_CONSTRAINTS</a> notification. All four members of the structure contain input values that PoFx supplies when this notification is sent. PoFx allocates the buffer pointed to by the <b>MinimumFStates</b> member, and the PEP writes to this buffer in response to the notification.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

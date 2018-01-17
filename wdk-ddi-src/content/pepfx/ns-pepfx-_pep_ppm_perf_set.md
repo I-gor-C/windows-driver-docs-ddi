@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: BA2495F6-09E8-4AF9-9489-E745B759F999
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_PPM_PERF_SET, *PPEP_PPM_PERF_SET, PEP_PPM_PERF_SET
+ms.keywords: _PEP_PPM_PERF_SET, PEP_PPM_PERF_SET, *PPEP_PPM_PERF_SET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PPEP_PPM_PERF_SET, PEP_PPM_PERF_SET
+req.typenames: PEP_PPM_PERF_SET, *PPEP_PPM_PERF_SET
 ---
 
 # _PEP_PPM_PERF_SET structure
@@ -88,31 +88,6 @@ This structure is used by the <a href="kernel.pep_notify_ppm_perf_set">PEP_NOTIF
 
 Processor performance levels are specified in platform-specific units. For example, a hardware platform might use a metric such as the processor clock frequency to provide a rough approximation to the amount of processing work  that is being done. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt629132">Platform Performance Thresholds</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

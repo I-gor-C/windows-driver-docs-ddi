@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 7293940B-A316-43C5-A5E8-6ED70EC6FDF8
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FSCTL_OFFLOAD_WRITE_OUTPUT, *PFSCTL_OFFLOAD_WRITE_OUTPUT, FSCTL_OFFLOAD_WRITE_OUTPUT
+ms.keywords: _FSCTL_OFFLOAD_WRITE_OUTPUT, FSCTL_OFFLOAD_WRITE_OUTPUT, *PFSCTL_OFFLOAD_WRITE_OUTPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PFSCTL_OFFLOAD_WRITE_OUTPUT, FSCTL_OFFLOAD_WRITE_OUTPUT
+req.typenames: FSCTL_OFFLOAD_WRITE_OUTPUT, *PFSCTL_OFFLOAD_WRITE_OUTPUT
 ---
 
 # _FSCTL_OFFLOAD_WRITE_OUTPUT structure
@@ -95,31 +95,6 @@ The length of data written for the transfer specified in <a href="..\ntifs\ns-nt
 
  If less data than requested was written, the write operation  may be completed by performing another <a href="https://msdn.microsoft.com/library/windows/hardware/hh451122">FSCTL_OFFLOAD_WRITE</a> request. The next request uses an updated <b>FileOffset</b> member in the <a href="..\ntifs\ns-ntifs-_fsctl_offload_write_input.md">FSCTL_OFFLOAD_WRITE_INPUT</a> structure with the value in <b>LengthWritten</b> and an adjusted write length of the previous length minus the value in <b>LengthWritten</b>. Also, an incomplete write operation can be completed through a non-offloaded write method, using the <a href="..\wdm\nf-wdm-zwwritefile.md">ZwWriteFile</a> routine, for example.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

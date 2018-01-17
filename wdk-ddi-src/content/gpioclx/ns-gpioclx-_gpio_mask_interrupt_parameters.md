@@ -77,31 +77,6 @@ The <i>MaskParameters</i> parameter of the <a href="https://msdn.microsoft.com/l
 GPIO controllers that have memory-mapped registers are expected to always succeed in setting the interrupt mask to the requested value. The <b>FailedMask</b> member is primarily intended for use by GPIO controllers that are not memory-mapped.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

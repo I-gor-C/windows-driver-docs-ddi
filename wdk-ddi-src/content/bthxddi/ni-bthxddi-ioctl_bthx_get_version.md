@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: F4FD760B-551C-4738-A13D-444E08215D59
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+ms.keywords: _BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= PASSIVE_LEVEL
-req.typenames: *PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT
+req.typenames: BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 ---
 
 # IOCTL_BTHX_GET_VERSION IOCTL
@@ -100,40 +100,4 @@ Any unsuccessful NT status code prevents the driver from loading.
 ## -remarks
 IOCTL_BTHX_GET_VERSION is a synchronous operation.
 
-A transport driver can return one or more versions that it supports in BTHX_VERSION structure.  If no version is set,  Windows unloads the Bluetooth stack.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>BthXDDI.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+A transport driver can return one or more versions that it supports in BTHX_VERSION structure.  If no version is set,  Windows unloads the Bluetooth stack.</p>

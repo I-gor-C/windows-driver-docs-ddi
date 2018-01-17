@@ -69,21 +69,6 @@ A bitwise OR of flags that indicate the security requirements of a target.  For 
 You must initiate this method if the initiator supports IKE.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

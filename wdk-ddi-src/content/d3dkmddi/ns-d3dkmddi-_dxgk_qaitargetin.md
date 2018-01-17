@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: C6751CB1-1460-4C1A-9E5F-99448C4F9162
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_QAITARGETIN, DXGK_QAITARGETIN, DXGK_QUERYCOLORIMETRYOVERRIDESIN, DXGK_QUERYINTEGRATEDDISPLAYIN
+ms.keywords: _DXGK_QAITARGETIN, DXGK_QAITARGETIN, DXGK_QUERYINTEGRATEDDISPLAYIN, DXGK_QUERYCOLORIMETRYOVERRIDESIN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -60,19 +60,3 @@ The ID of the target.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 1F2C2B8E-6535-40F1-A5D3-46DAD43E923E
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CMP_CONNECT_VER3, CMP_CONNECT_VER3, *PCMP_CONNECT_VER3, *PCMP_CONNECT, CMP_CONNECT
+ms.keywords: _CMP_CONNECT_VER3, CMP_CONNECT_VER3, *PCMP_CONNECT_VER3, CMP_CONNECT, *PCMP_CONNECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -85,21 +85,6 @@ The handle for the created connection.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

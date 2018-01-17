@@ -97,31 +97,6 @@ Because the monitor might not be physically connected (at system resume time, fo
 If a system resume operation is triggered after monitors were turned off for a system suspend operation, the driver can receive a <i>DxgkDdiCommitVidPn</i> call with both <b>PathPowerTransition</b> = <b>FALSE</b> and <b>PathPoweredOff</b> = <b>FALSE</b> before a <i>DxgkDdiCommitVidPn</i> call is made with <b>PathPowerTransition</b> = <b>TRUE</b>. This situation should only occur with an empty topology and, in this case, the driver should not turn monitors back on because the power transition is not yet completed.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

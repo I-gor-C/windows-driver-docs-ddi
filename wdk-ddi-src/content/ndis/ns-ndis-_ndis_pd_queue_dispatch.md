@@ -7,7 +7,7 @@ old-location: netvista\ndis_pd_queue_dispatch.htm
 old-project: netvista
 ms.assetid: F9738CF9-AAC8-413C-A890-D6FAD7EEFD54
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _NDIS_PD_QUEUE_DISPATCH, NDIS_PD_QUEUE_DISPATCH
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -60,7 +60,7 @@ typedef struct _NDIS_PD_QUEUE_DISPATCH {
 
 ### -field Header
 
-The <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_QUEUE_DISPATCH</b> structure. Set the members of this structure as follows:
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_QUEUE_DISPATCH</b> structure. Set the members of this structure as follows:
 
 <ul>
 <li><b>Type</b> = <b>NDIS_OBJECT_TYPE_DEFAULT</b></li>
@@ -89,19 +89,3 @@ A pointer to the provider's <a href="https://msdn.microsoft.com/885EC5F7-1C7E-47
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ndis.h</dt>
-</dl>
-</td>
-</tr>
-</table>

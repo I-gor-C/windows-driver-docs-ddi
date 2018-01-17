@@ -86,20 +86,4 @@ Indicates that an aliasing barrier has been converted to a ranged barrier.
 ## -remarks
 The absence of both <b>D3D12DDI_RESOURCE_BARRIER_FLAG_BEGIN_ONLY</b> and <b>D3D12DDI_RESOURCE_BARRIER_FLAG_END_ONLY</b> denotes both an acquire and release.
 
-During an acquire, GPU caches may need to be explicitly invalidated. During a release, GPU caches may need to be explicitly flushed. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+During an acquire, GPU caches may need to be explicitly invalidated. During a release, GPU caches may need to be explicitly flushed. </p>

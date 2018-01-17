@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: c358220c-1e29-4889-b214-f2892c9ac47d
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _BOOTDISK_INFORMATION_EX, *PBOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX
+ms.keywords: _BOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX, *PBOOTDISK_INFORMATION_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PBOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX
+req.typenames: BOOTDISK_INFORMATION_EX, *PBOOTDISK_INFORMATION_EX
 req.product: Windows 10 or later.
 ---
 
@@ -105,21 +105,6 @@ If the <b>SystemDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID f
 ## -remarks
 On Windows XP and later, <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

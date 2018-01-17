@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 737EDB43-FAFF-4EFD-A7A1-206D646F23E1
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.keywords: _USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBFN_USB_STRING, USBFN_USB_STRING
+req.typenames: *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 req.product: Windows 10 or later.
 ---
 
@@ -56,12 +56,12 @@ None.
 
 
 ### -output-buffer
-A pointer to a caller-allocated <a href="..\usbfnbase\ns-usbfnbase-_usbfn_notification.md">USBFN_NOTIFICATION</a> 
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a> 
 			structure that UFX populates with the type of bus event and data associated with that event. 
 
 
 ### -output-buffer-length
-The size of a <a href="..\usbfnbase\ns-usbfnbase-_usbfn_notification.md">USBFN_NOTIFICATION</a> 
+The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a> 
 			structure.
 
 
@@ -82,28 +82,13 @@ If the request is successful, the USB function class extension (UFX) returns STA
 UFX completes this request in response to an event on the bus. It is recommended that class drivers send multiple requests at a time to make sure that critical notifications are not missed. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnioctl.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\usbfnbase\ne-usbfnbase-_usbfn_event.md">USBFN_EVENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187994">USBFN_EVENT</a>
 </dt>
 <dt>
-<a href="..\usbfnbase\ns-usbfnbase-_usbfn_notification.md">USBFN_NOTIFICATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188001">USBFN_NOTIFICATION</a>
 </dt>
 </dl>
  

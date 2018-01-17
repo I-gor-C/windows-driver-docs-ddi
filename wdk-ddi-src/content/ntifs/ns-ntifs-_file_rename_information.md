@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 25a195ab-faf1-488d-a9b2-65ae88b57ebd
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION
+ms.keywords: _FILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PFILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION
+req.typenames: FILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION
 ---
 
 # _FILE_RENAME_INFORMATION structure
@@ -134,21 +134,6 @@ If <b>ReplaceIfExists</b> is set to <b>TRUE</b>, the rename operation will succe
 
 The size of the <i>FileInformation</i> buffer passed to <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a> or <a href="..\fltkernel\nf-fltkernel-fltsetinformationfile.md">FltSetInformationFile</a> must be &gt;= <b>sizeof</b>(FILE_RENAME_INFORMATION) plus the size in bytes of the <b>FileName</b> string. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h or Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

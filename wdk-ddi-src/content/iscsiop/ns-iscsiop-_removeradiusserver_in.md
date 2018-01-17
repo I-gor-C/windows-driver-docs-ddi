@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 600916e1-37c2-4766-93d9-b7d32a542542
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _RemoveRADIUSServer_IN, *PRemoveRADIUSServer_IN, RemoveRADIUSServer_IN
+ms.keywords: _RemoveRADIUSServer_IN, RemoveRADIUSServer_IN, *PRemoveRADIUSServer_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PRemoveRADIUSServer_IN, RemoveRADIUSServer_IN
+req.typenames: RemoveRADIUSServer_IN, *PRemoveRADIUSServer_IN
 ---
 
 # _RemoveRADIUSServer_IN structure
@@ -62,21 +62,6 @@ A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> st
 ## -remarks
 It is optional that you implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

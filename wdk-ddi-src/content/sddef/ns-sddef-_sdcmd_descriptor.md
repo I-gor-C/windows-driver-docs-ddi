@@ -8,7 +8,7 @@ old-project: SD
 ms.assetid: 7c49c394-d0b3-4594-a623-0a13825bdcec
 ms.author: windowsdriverdev
 ms.date: 12/18/2017
-ms.keywords: _SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR
+ms.keywords: _SDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR
+req.typenames: SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -106,21 +106,6 @@ Send the request to the bus driver by passing the initialized SDBUS_REQUEST_PACK
 
 If a driver submits a command request without properly initializing the <b>TransferDirection</b>, <b>TransferType</b>, and <b>ResponseType</b> members of the command descriptor, the request will fail. These members cannot be 0.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sddef.h (include Sddef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

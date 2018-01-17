@@ -92,51 +92,6 @@ The client driver must assume that the class extension may submit requests befor
 When handling alerts, UcmTcpciCx may send hardware requests to the client driver before the <b>UcmTcpciPortControllerAlert</b> call returns. If the driver holds a lock while calling <b>UcmTcpciPortControllerAlert</b> and also attempts to acquire the same lock when handling the hardware request, deadlock can occur.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmtcpciportcontroller.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;=DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt><a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/wdf/handling-hardware-interrupts">Handling Hardware Interrupts</a></dt>

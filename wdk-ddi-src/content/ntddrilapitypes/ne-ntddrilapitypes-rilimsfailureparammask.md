@@ -7,7 +7,7 @@ old-location: netvista\rilimsfailureparammask.htm
 old-project: netvista
 ms.assetid: ba1542e9-da6f-4696-8f71-575000a7724e
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILIMSFAILUREPARAMMASK, RILIMSFAILUREPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -74,19 +74,3 @@ typedef enum _RILIMSFAILUREPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

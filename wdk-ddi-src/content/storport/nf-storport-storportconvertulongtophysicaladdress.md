@@ -95,42 +95,4 @@ The StorPortConvertPhysicalAddressToULong64 macro converts a physical address to
 
 Specifies an address value of type STOR_PHYSICAL_ADDRESS.
 
-<a id="Return_value"></a><a id="return_value"></a><a id="RETURN_VALUE"></a>Return value
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+<a id="Return_value"></a><a id="return_value"></a><a id="RETURN_VALUE"></a>Return value</p>

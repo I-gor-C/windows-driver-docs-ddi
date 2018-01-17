@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: a2a2e964-b9ae-4367-85de-f0ebe3c7a952
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _BUS_DATA_TYPE, *PBUS_DATA_TYPE, BUS_DATA_TYPE
+ms.keywords: _BUS_DATA_TYPE, BUS_DATA_TYPE, *PBUS_DATA_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PBUS_DATA_TYPE, BUS_DATA_TYPE
+req.typenames: BUS_DATA_TYPE, *PBUS_DATA_TYPE
 ---
 
 # _BUS_DATA_TYPE enumeration
@@ -139,21 +139,6 @@ Indicates the upper limit of the bus configuration space types.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

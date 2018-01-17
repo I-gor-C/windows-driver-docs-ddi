@@ -1,0 +1,5 @@
+# [Wdfminiport.h](index.md)
+## [Windows Driver Framework](../_wdf/index.md)
+### [PFN_WDFDEVICEMINIPORTCREATE function](../wdfminiport/nc-wdfminiport-pfn_wdfdeviceminiportcreate.md)
+### [WdfDeviceMiniportCreate function](../wdfminiport/nf-wdfminiport-wdfdeviceminiportcreate.md)
+### [WdfDriverMiniportUnload function](../wdfminiport/nf-wdfminiport-wdfdriverminiportunload.md)

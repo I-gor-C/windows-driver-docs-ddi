@@ -7,7 +7,7 @@ old-location: netvista\rilmanagecallsparams_v2_2.htm
 old-project: netvista
 ms.assetid: 6da5ba7b-60d5-4f98-b75b-67956b9a85f8
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMANAGECALLSPARAMS_V2, *LPRILMANAGECALLSPARAMS_V2, RILMANAGECALLSPARAMS_V2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,19 +75,3 @@ typedef struct _RILMANAGECALLSPARAMS_V2 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

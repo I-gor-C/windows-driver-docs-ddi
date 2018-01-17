@@ -79,31 +79,6 @@ The <b>DXVAHDDDI_STREAM_STATE_ASPECT_RATIO</b> stream state is best set along wi
 Pixel aspect ratios (0, any value) and (any value, 0) are invalid and causes the driver to return an error. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA is supported beginning with the Windows 7 operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

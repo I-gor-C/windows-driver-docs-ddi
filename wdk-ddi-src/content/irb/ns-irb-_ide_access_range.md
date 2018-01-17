@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: e81441a2-0659-4d32-97f4-415abef6c87a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _IDE_ACCESS_RANGE, *PIDE_ACCESS_RANGE, IDE_ACCESS_RANGE
+ms.keywords: _IDE_ACCESS_RANGE, IDE_ACCESS_RANGE, *PIDE_ACCESS_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PIDE_ACCESS_RANGE, IDE_ACCESS_RANGE
+req.typenames: IDE_ACCESS_RANGE, *PIDE_ACCESS_RANGE
 ---
 
 # _IDE_ACCESS_RANGE structure
@@ -84,19 +84,3 @@ The number of the PCI Base Address Range that this resource was found in.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

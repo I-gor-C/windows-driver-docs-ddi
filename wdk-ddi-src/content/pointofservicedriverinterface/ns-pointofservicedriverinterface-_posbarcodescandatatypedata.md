@@ -66,20 +66,4 @@ The start of the DWORD array of symbologies.
 
 
 ## -remarks
-Each symbology in the buffer is represented by a DWORD. The size of the array of symboligies that scanDataTypes_0 points to is <code>scanDataTypes_0/sizeof(UINT32) - 1;</code>
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>PointOfServiceDriverInterface.h (include PointOfServiceDriverInterface.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+Each symbology in the buffer is represented by a DWORD. The size of the array of symboligies that scanDataTypes_0 points to is <code>scanDataTypes_0/sizeof(UINT32) - 1;</code></p>

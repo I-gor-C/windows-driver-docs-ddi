@@ -78,20 +78,4 @@ Indicates the number of bytes of decoded scan data. A label is the decoded scan 
 
 
 ## -remarks
-<i>ScanDataLength</i> bytes of scan data immediately follows the <i>PosBarcodeScannerDataReceivedEventData</i> structure, followed by <i>ScanDataLabelLength</i> bytes of label data.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>PointOfServiceDriverInterface.h (include PointOfServiceDriverInterface.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+<i>ScanDataLength</i> bytes of scan data immediately follows the <i>PosBarcodeScannerDataReceivedEventData</i> structure, followed by <i>ScanDataLabelLength</i> bytes of label data.</p>

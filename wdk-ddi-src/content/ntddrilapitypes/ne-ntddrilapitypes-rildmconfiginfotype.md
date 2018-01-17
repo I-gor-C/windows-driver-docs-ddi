@@ -7,7 +7,7 @@ old-location: netvista\rildmconfiginfotype.htm
 old-project: netvista
 ms.assetid: c6dc14a5-59de-42dd-9e45-99f632bf6a57
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILDMCONFIGINFOTYPE, RILDMCONFIGINFOTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,19 +70,3 @@ typedef enum _RILDMCONFIGINFOTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

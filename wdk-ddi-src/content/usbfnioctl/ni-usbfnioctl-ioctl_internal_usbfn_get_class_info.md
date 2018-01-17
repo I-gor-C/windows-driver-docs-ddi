@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 870D7D8C-B2FE-487A-9098-C004E6C7E159
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.keywords: _USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBFN_USB_STRING, USBFN_USB_STRING
+req.typenames: *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 req.product: Windows 10 or later.
 ---
 
@@ -55,11 +55,11 @@ None.
 
 
 ### -output-buffer
-A pointer to a buffer that contains a <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_information_packet.md">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.
+A pointer to a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187988">USBFN_CLASS_INFORMATION_PACKET</a> structure. Upon completion, UFX populates the structure with the name, the device interface GUID, and details of the interface when operating at a particular bus speed.
 
 
 ### -output-buffer-length
-The size of a <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_information_packet.md">USBFN_CLASS_INFORMATION_PACKET</a> structure.
+The size of a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187988">USBFN_CLASS_INFORMATION_PACKET</a> structure.
 
 
 ### -in-out-buffer
@@ -76,20 +76,4 @@ If the request is successful, the USB function class extension (UFX) returns STA
 
 
 ## -remarks
-The class driver should send this IOCTL request during initialization so that it can enumerate the endpoints and attributes.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnioctl.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+The class driver should send this IOCTL request during initialization so that it can enumerate the endpoints and attributes.</p>

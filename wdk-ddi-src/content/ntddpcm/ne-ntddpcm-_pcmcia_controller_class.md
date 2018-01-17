@@ -8,7 +8,7 @@ old-project: PCMCIA
 ms.assetid: d834d97c-cf2d-430b-8f54-b0b47ab1503c
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS
+ms.keywords: _PCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
-req.typenames: *PPCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS
+req.irql: <=DISPATCH_LEVEL (See Remarks section.)
+req.typenames: PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
 ---
 
 # _PCMCIA_CONTROLLER_CLASS enumeration
@@ -151,21 +151,6 @@ Indicates a NEC cardbus controller.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddpcm.h (include Ntddpcm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

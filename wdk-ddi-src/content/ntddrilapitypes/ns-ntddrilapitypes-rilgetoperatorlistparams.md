@@ -7,8 +7,8 @@ old-location: netvista\rilgetoperatorlistparams.htm
 old-project: netvista
 ms.assetid: 75c8b3b3-4f33-465a-a35c-9d3056a2eb75
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS, *LPRILGETOPERATORLISTPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILGETOPERATORLISTPARAMS, *LPRILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILGETOPERATORLISTPARAMS, *LPRILGETOPERATORLISTPARAMS
+req.typenames: *LPRILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS
 ---
 
 # RILGETOPERATORLISTPARAMS structure
@@ -62,19 +62,3 @@ typedef struct _RILGETOPERATORLISTPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: caa64a32-3772-45b5-898a-78dc51b7f24b
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGKMDT_OPM_OMAC, DXGKMDT_OPM_OMAC, *PDXGKMDT_OPM_OMAC
+ms.keywords: _DXGKMDT_OPM_OMAC, *PDXGKMDT_OPM_OMAC, DXGKMDT_OPM_OMAC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DXGKMDT_OPM_OMAC, *PDXGKMDT_OPM_OMAC
+req.typenames: *PDXGKMDT_OPM_OMAC, DXGKMDT_OPM_OMAC
 ---
 
 # _DXGKMDT_OPM_OMAC structure
@@ -74,31 +74,6 @@ The OMAC-1 parameters that OPM and COPP use are:
 
 For information about AES, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=70411">RSA Laboratories</a> website. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmdt.h (include D3dkmdt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

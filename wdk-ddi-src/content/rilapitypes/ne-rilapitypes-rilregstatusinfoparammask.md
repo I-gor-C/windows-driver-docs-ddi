@@ -7,7 +7,7 @@ old-location: netvista\rilregstatusinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 22751b8b-f19c-4480-b8f4-6ee2322419ca
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILREGSTATUSINFOPARAMMASK, RILREGSTATUSINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -91,19 +91,3 @@ typedef enum _RILREGSTATUSINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

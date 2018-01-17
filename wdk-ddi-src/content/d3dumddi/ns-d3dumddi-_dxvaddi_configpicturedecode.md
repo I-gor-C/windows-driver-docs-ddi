@@ -212,7 +212,7 @@ The preferred value for <b>ConfigHostInverseScan</b> is 1 if <b>ConfigResidDiffA
 
 ### -field Config4GroupedCoefs
 
-[in] A UINT value that specifies how transform coefficients for off-host IDCT are sent. A value of 1 in this member indicates that transform coefficients for off-host IDCT are sent by using the <a href="..\dxva\ns-dxva-_dxva_tcoef4group.md">DXVA_TCoef4Group</a> structure rather than the <a href="..\dxva\ns-dxva-_dxva_tcoefsingle.md">DXVA_TCoefSingle</a> structure. <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is zero or if <b>ConfigHostInverseScan</b> is 1.
+[in] A UINT value that specifies how transform coefficients for off-host IDCT are sent. A value of 1 in this member indicates that transform coefficients for off-host IDCT are sent by using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564053">DXVA_TCoef4Group</a> structure rather than the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564060">DXVA_TCoefSingle</a> structure. <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is zero or if <b>ConfigHostInverseScan</b> is 1.
 
 The preferred value for <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiffAccelerator</b> is 1.
 
@@ -229,31 +229,6 @@ The preferred value for <b>Config4GroupedCoefs</b> is zero if <b>ConfigResidDiff
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

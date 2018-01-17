@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 5C50D9B0-53C7-4F1B-A6D1-CE77A3645956
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
+ms.keywords: _USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
+req.typenames: USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
 req.product: Windows 10 or later.
 ---
 
@@ -75,19 +75,3 @@ TBD
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbsidebandaudio.h (include Usbsidebandaudio.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 16699B3D-D02B-4D01-9EBE-003C92B06D31
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _VPCI_PNP_ID, VPCI_PNP_ID, *PVPCI_PNP_ID
+ms.keywords: PEPCALLBACKPOWERONCRASHDUMPDEVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= HIGH_LEVEL
-req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
+req.typenames: *PVPCI_PNP_ID, VPCI_PNP_ID
 ---
 
 # POFXCALLBACKREQUESTCOMMON callback
@@ -77,41 +77,6 @@ This routine is implemented by the <a href="https://msdn.microsoft.com/B08F8ABF-
 
 A PEP can call this routine at IRQL &lt;= HIGH_LEVEL.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= HIGH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

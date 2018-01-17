@@ -81,21 +81,6 @@ Optional. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt_u
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Udecxusbendpoint.h (include Udecx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

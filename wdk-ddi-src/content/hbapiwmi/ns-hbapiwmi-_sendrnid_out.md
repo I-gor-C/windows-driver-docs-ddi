@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 80f264f6-51cb-4125-832b-603ed8417d32
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SendRNID_OUT, SendRNID_OUT, *PSendRNID_OUT
+ms.keywords: _SendRNID_OUT, *PSendRNID_OUT, SendRNID_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SendRNID_OUT, *PSendRNID_OUT
+req.typenames: *PSendRNID_OUT, SendRNID_OUT
 ---
 
 # _SendRNID_OUT structure
@@ -74,21 +74,6 @@ Contains the results of the RNID command.
 ## -remarks
 The WMI tool suite generates a declaration of the SendRNID_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

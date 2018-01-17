@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f3417648-f9f9-402f-b3a3-d09c0b7e5fdd
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SetInitiatorNodeName_OUT, *PSetInitiatorNodeName_OUT, SetInitiatorNodeName_OUT
+ms.keywords: _SetInitiatorNodeName_OUT, SetInitiatorNodeName_OUT, *PSetInitiatorNodeName_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSetInitiatorNodeName_OUT, SetInitiatorNodeName_OUT
+req.typenames: SetInitiatorNodeName_OUT, *PSetInitiatorNodeName_OUT
 ---
 
 # _SetInitiatorNodeName_OUT structure
@@ -62,21 +62,6 @@ On output, the status of the <b>SetInitiatorNodeName</b> operation. For a list o
 ## -remarks
 It is optional that you implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

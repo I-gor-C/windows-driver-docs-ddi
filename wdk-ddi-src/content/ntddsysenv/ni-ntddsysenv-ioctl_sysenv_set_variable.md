@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 2BA555D8-CFD3-4D27-BC38-3B261D2F95EF
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _STORAGE_ZONE_GROUP, STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP
+ms.keywords: SdBusSubmitRequestAsync
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SYSENV_SET_VARIABLE IOCTL
@@ -85,21 +85,6 @@ I/O Status block
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddsysenv.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 0f796ad1-e4b4-4113-b076-ed6c9ea711c9
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FLT_NAME_CONTROL, FLT_NAME_CONTROL, *PFLT_NAME_CONTROL
+ms.keywords: _FLT_NAME_CONTROL, *PFLT_NAME_CONTROL, FLT_NAME_CONTROL
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: FLT_NAME_CONTROL, *PFLT_NAME_CONTROL
+req.typenames: *PFLT_NAME_CONTROL, FLT_NAME_CONTROL
 ---
 
 # _FLT_NAME_CONTROL structure
@@ -63,21 +63,6 @@ typedef struct _FLT_NAME_CONTROL {
 ## -remarks
 Minifilters must not attempt to free or replace the buffer in the <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure  that the <b>Name</b> member points to directly. Instead, minifilters should call <a href="..\fltkernel\nf-fltkernel-fltcheckandgrownamecontrol.md">FltCheckAndGrowNameControl</a> to obtain a larger name control buffer. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

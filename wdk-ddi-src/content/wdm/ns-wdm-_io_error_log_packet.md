@@ -144,21 +144,6 @@ Note that the I/O manager itself inserts some information into the system error 
 For more information about how to use this structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554312">Logging Errors</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

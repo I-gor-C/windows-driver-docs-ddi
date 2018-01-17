@@ -74,20 +74,4 @@ The number of references specified.
 ## -remarks
 Either a Texture Array or an array of textures can be specified.
 
-Specifies the reference frames for the current decode operation.  Decode profiles that report <b>D3D12DDI_VIDEO_DECODE_TIER_1</b> or <b>D3D12DDI_VIDEO_DECODE_TIER_2</b> require the use of a texture array, so the list of <b>ppReferenceTexture2Ds</b> is always the same texture and <b>pReferenceSubresources</b> is used to index into the texture array.  For <b>D3D12DDI_VIDEO_DECODE_TIER_3</b>, either a Texture Array or an array of textures can be specified.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d12umddi.h (include D3d12umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+Specifies the reference frames for the current decode operation.  Decode profiles that report <b>D3D12DDI_VIDEO_DECODE_TIER_1</b> or <b>D3D12DDI_VIDEO_DECODE_TIER_2</b> require the use of a texture array, so the list of <b>ppReferenceTexture2Ds</b> is always the same texture and <b>pReferenceSubresources</b> is used to index into the texture array.  For <b>D3D12DDI_VIDEO_DECODE_TIER_3</b>, either a Texture Array or an array of textures can be specified.</p>

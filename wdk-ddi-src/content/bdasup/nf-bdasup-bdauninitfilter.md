@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Bdasup.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PKSP_BDA_NODE_PIN, KSP_BDA_NODE_PIN
+req.typenames: DVINFO, *PDVINFO
 ---
 
 # BdaUninitFilter function
@@ -66,65 +66,8 @@ Returns STATUS_SUCCESS or an appropriate error code.
 ## -remarks
 The <b>BdaUninitFilter</b> function exists only to support legacy drivers and is, therefore, obsolete. That is, new BDA minidriver implementations should not call <b>BdaUninitFilter</b>. 
 
-In Windows XP and later, the BDA support driver (<i>Bdasup.sys</i>) automatically handles removing the BDA filter context associated with a filter instance. When a BDA minidriver calls <a href="..\bdasup\nf-bdasup-bdainitfilter.md">BdaInitFilter</a>, the BDA support driver creates its own BDA filter context. This BDA filter context is hidden from the BDA minidriver. However, when required, the BDA support driver can access this BDA filter context. The BDA support driver adds a pointer to this BDA filter context to the object bag for the associated <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> object. When the associated KSFILTER object is destroyed, AVStream requests that the BDA support driver delete this BDA filter context from the object bag. In this way, the BDA support driver can destroy this BDA filter context without requiring intervention by the BDA minidriver.
+In Windows XP and later, the BDA support driver (<i>Bdasup.sys</i>) automatically handles removing the BDA filter context associated with a filter instance. When a BDA minidriver calls <a href="..\bdasup\nf-bdasup-bdainitfilter.md">BdaInitFilter</a>, the BDA support driver creates its own BDA filter context. This BDA filter context is hidden from the BDA minidriver. However, when required, the BDA support driver can access this BDA filter context. The BDA support driver adds a pointer to this BDA filter context to the object bag for the associated <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> object. When the associated KSFILTER object is destroyed, AVStream requests that the BDA support driver delete this BDA filter context from the object bag. In this way, the BDA support driver can destroy this BDA filter context without requiring intervention by the BDA minidriver.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bdasup.h (include Bdasup.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bdasup.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -132,7 +75,7 @@ PASSIVE_LEVEL
 <a href="..\bdasup\nf-bdasup-bdainitfilter.md">BdaInitFilter</a>
 </dt>
 <dt>
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>
 </dt>
 </dl>
  

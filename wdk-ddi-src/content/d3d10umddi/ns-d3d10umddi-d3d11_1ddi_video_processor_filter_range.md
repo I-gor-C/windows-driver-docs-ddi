@@ -89,40 +89,4 @@ For example, a hue filter might have an actual range of [â€“180.0 … +180.
 
 In this case, a filter value of 2 would be interpreted by the device as 0.50 (or 2 Ã— 0.25).
 
-The device should use a multiplier that can be represented exactly as a base-2 fraction.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The device should use a multiplier that can be represented exactly as a base-2 fraction.</p>

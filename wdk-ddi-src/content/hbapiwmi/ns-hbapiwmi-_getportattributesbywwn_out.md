@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 9a4d04de-2c44-4f13-ac6f-32e2fe879e4e
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _GetPortAttributesByWWN_OUT, *PGetPortAttributesByWWN_OUT, GetPortAttributesByWWN_OUT
+ms.keywords: _GetPortAttributesByWWN_OUT, GetPortAttributesByWWN_OUT, *PGetPortAttributesByWWN_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PGetPortAttributesByWWN_OUT, GetPortAttributesByWWN_OUT
+req.typenames: GetPortAttributesByWWN_OUT, *PGetPortAttributesByWWN_OUT
 ---
 
 # _GetPortAttributesByWWN_OUT structure
@@ -68,21 +68,6 @@ Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattri
 ## -remarks
 The WMI tool suite generates a declaration of the GetPortAttributesByWWN_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

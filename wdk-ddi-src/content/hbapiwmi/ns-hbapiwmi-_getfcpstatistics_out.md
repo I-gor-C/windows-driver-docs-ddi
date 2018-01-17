@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 150773a3-a3a9-41a7-9985-4387bba5a766
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _GetFCPStatistics_OUT, *PGetFCPStatistics_OUT, GetFCPStatistics_OUT
+ms.keywords: _GetFCPStatistics_OUT, GetFCPStatistics_OUT, *PGetFCPStatistics_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PGetFCPStatistics_OUT, GetFCPStatistics_OUT
+req.typenames: GetFCPStatistics_OUT, *PGetFCPStatistics_OUT
 ---
 
 # _GetFCPStatistics_OUT structure
@@ -68,21 +68,6 @@ Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_fc4statistic
 ## -remarks
 The WMI tool suite generates a declaration of the GetFCPStatistics_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -50,19 +50,3 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortDMus</b> interface inher
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusicks.h</dt>
-</dl>
-</td>
-</tr>
-</table>

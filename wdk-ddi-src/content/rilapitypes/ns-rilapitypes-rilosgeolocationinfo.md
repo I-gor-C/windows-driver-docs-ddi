@@ -7,8 +7,8 @@ old-location: netvista\rilosgeolocationinfo_2.htm
 old-project: netvista
 ms.assetid: 5207e880-67cb-4cd5-9884-a01e6dd20201
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO
+ms.date: 1/11/2018
+ms.keywords: RILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILOSGEOLOCATIONINFO, RILOSGEOLOCATIONINFO
+req.typenames: RILOSGEOLOCATIONINFO, *LPRILOSGEOLOCATIONINFO
 req.product: Windows 10 or later.
 ---
 
@@ -123,19 +123,3 @@ typedef struct _RILOSGEOLOCATIONINFO {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

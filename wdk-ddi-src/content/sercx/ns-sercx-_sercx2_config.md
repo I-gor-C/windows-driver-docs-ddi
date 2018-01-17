@@ -8,7 +8,7 @@ old-project: serports
 ms.assetid: 9F33E535-21C1-446F-93AA-B86157904F68
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SERCX2_CONFIG, *PSERCX2_CONFIG, SERCX2_CONFIG
+ms.keywords: _SERCX2_CONFIG, SERCX2_CONFIG, *PSERCX2_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
-req.typenames: *PSERCX2_CONFIG, SERCX2_CONFIG
+req.typenames: SERCX2_CONFIG, *PSERCX2_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -123,31 +123,6 @@ A driver might need to store information in context areas in the framework reque
 
 A driver that never needs a request context does not need to call <b>WdfDeviceInitSetRequestAttributes</b>, and can set the <b>RequestAttributes</b> member of the <b>SERCX2_CONFIG</b> structure to WDF_NO_OBJECT_ATTRIBUTES.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.1.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>2.0\Sercx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

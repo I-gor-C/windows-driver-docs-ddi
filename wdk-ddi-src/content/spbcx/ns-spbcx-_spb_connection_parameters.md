@@ -8,7 +8,7 @@ old-project: SPB
 ms.assetid: 4707b797-6759-426d-89eb-01215af6ce19
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SPB_CONNECTION_PARAMETERS, SPB_CONNECTION_PARAMETERS, *PSPB_CONNECTION_PARAMETERS
+ms.keywords: _SPB_CONNECTION_PARAMETERS, *PSPB_CONNECTION_PARAMETERS, SPB_CONNECTION_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any IRQL
-req.typenames: SPB_CONNECTION_PARAMETERS, *PSPB_CONNECTION_PARAMETERS
+req.typenames: *PSPB_CONNECTION_PARAMETERS, SPB_CONNECTION_PARAMETERS
 req.product: Windows 10 or later.
 ---
 
@@ -83,31 +83,6 @@ Call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450926">
 
 To open a connection on behalf of a client (peripheral driver), the SPB framework extension (SpbCx) calls your SPB controller driver's <a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a> callback function. To close the connection, SpbCx calls the SPB controller driver's <a href="https://msdn.microsoft.com/02756C35-E76C-42C0-80FA-359CADE224A1">EvtSpbTargetDisconnect</a> callback function. An SPB controller driver typically calls <b>SpbTargetGetConnectionParameters</b> from the driver's <i>EvtSpbTargetConnect</i> function.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Spbcx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

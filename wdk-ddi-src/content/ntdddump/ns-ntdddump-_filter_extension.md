@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1113e917-3273-4ba7-8702-fe90a22fb024
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _FILTER_EXTENSION, *PFILTER_EXTENSION, FILTER_EXTENSION
+ms.keywords: _FILTER_EXTENSION, FILTER_EXTENSION, *PFILTER_EXTENSION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PFILTER_EXTENSION, FILTER_EXTENSION
+req.typenames: FILTER_EXTENSION, *PFILTER_EXTENSION
 ---
 
 # _FILTER_EXTENSION structure
@@ -71,7 +71,7 @@ A pointer to the device object of the dump volume. This pointer points to the to
 
 ### -field Geometry
 
-The disk geometry of the dump device in <a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a> format.
+The disk geometry of the dump device in <a href="https://msdn.microsoft.com/library/windows/hardware/ff552613">DISK_GEOMETRY</a> format.
 
 
 ### -field DiskSize
@@ -81,7 +81,7 @@ Size of the disk.
 
 ### -field PartitionInfo
 
-The partition information in <a href="..\ntdddisk\ns-ntdddisk-_disk_partition_info.md">DISK_PARTITION_INFO</a> format.
+The partition information in <a href="https://msdn.microsoft.com/library/windows/hardware/ff552629">DISK_PARTITION_INFO</a> format.
 
 
 ### -field DumpData
@@ -92,38 +92,13 @@ A pointer to the context data that is provided by the filter driver in <a href="
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Vista and Windows Server 2008.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntdddump.h (include Ntdddump.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntdddisk\ns-ntdddisk-_disk_geometry.md">DISK_GEOMETRY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552613">DISK_GEOMETRY</a>
 </dt>
 <dt>
-<a href="..\ntdddisk\ns-ntdddisk-_disk_partition_info.md">DISK_PARTITION_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552629">DISK_PARTITION_INFO</a>
 </dt>
 <dt>
 <a href="..\ntdddump\ns-ntdddump-_filter_initialization_data.md">FILTER_INITIALIZATION_DATA</a>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 41E713D9-9499-40EB-8B21-DDB73362BAE3
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _STOR_LIST_ENTRY, *PSTOR_LIST_ENTRY, STOR_LIST_ENTRY
+ms.keywords: _STOR_LIST_ENTRY, STOR_LIST_ENTRY, *PSTOR_LIST_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSTOR_LIST_ENTRY, STOR_LIST_ENTRY
+req.typenames: STOR_LIST_ENTRY, *PSTOR_LIST_ENTRY
 req.product: Windows 10 or later.
 ---
 
@@ -80,21 +80,6 @@ A driver can access the <b>Flink</b> or <b>Blink</b> members of a <b>STOR_LIST_E
 
 For more information about how to use <b>STOR_LIST_ENTRY</b> structures to implement a doubly linked list, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563802">Singly and Doubly Linked Lists</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

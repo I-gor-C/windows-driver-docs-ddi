@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 4470EBAB-6B1F-43D3-B036-F0DD07BC8321
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBFN_ATTACH_ACTION, USBFN_ATTACH_ACTION, *PUSBFN_ATTACH_ACTION
+ms.keywords: _USBFN_ATTACH_ACTION, *PUSBFN_ATTACH_ACTION, USBFN_ATTACH_ACTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: USBFN_ATTACH_ACTION, *PUSBFN_ATTACH_ACTION
+req.typenames: *PUSBFN_ATTACH_ACTION, USBFN_ATTACH_ACTION
 req.product: Windows 10 or later.
 ---
 
@@ -61,12 +61,12 @@ typedef enum _USBFN_ATTACH_ACTION {
 
 ### -field UsbfnPortDetected
 
-The USB function stack uses the returned port type to determine charging current and notify the Charging Aggregation Driver (CAD) of the power source change.  If the detected port type is <b>UsbFnStandardDownstreamPort</b> or <b>UsbfnChargingDownstreamPort</b>, the USB function stack will attempt to connect to the host (see <a href="..\usbfnbase\ne-usbfnbase-_usbfn_port_type.md">USBFN_PORT_TYPE</a> for more information).
+The USB function stack uses the returned port type to determine charging current and notify the Charging Aggregation Driver (CAD) of the power source change.  If the detected port type is <b>UsbFnStandardDownstreamPort</b> or <b>UsbfnChargingDownstreamPort</b>, the USB function stack will attempt to connect to the host (see <a href="https://msdn.microsoft.com/library/windows/hardware/mt188004">USBFN_PORT_TYPE</a> for more information).
 
 
 ### -field UsbfnPortDetectedNoCad
 
-The USB function stack does not notify the CAD of the power source change.  If the detected port type is <b>UsbFnStandardDownstreamPort</b> or <b>UsbfnChargingDownstreamPort</b>, the USB function stack attempts to connect to the host (see <a href="..\usbfnbase\ne-usbfnbase-_usbfn_port_type.md">USBFN_PORT_TYPE</a> for more information).
+The USB function stack does not notify the CAD of the power source change.  If the detected port type is <b>UsbFnStandardDownstreamPort</b> or <b>UsbfnChargingDownstreamPort</b>, the USB function stack attempts to connect to the host (see <a href="https://msdn.microsoft.com/library/windows/hardware/mt188004">USBFN_PORT_TYPE</a> for more information).
 
 
 ### -field UsbfnProceedWithAttach
@@ -86,21 +86,6 @@ The USB function stack calls the <a href="..\ufxproprietarycharger\nc-ufxproprie
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnattach.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

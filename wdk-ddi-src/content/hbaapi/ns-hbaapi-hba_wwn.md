@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 84441fde-1d66-4f76-86b7-dccd792afd0f
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: HBA_wwn, HBA_WWN, *PHBA_WWN
+ms.keywords: HBA_wwn, *PHBA_WWN, HBA_WWN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HBA_WWN, *PHBA_WWN
+req.typenames: *PHBA_WWN, HBA_WWN
 ---
 
 # HBA_wwn structure
@@ -61,21 +61,6 @@ Contains a 64 bit world-wide name (WWN) that uniquely identifies an HBA. .
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbaapi.h (include Hbaapi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

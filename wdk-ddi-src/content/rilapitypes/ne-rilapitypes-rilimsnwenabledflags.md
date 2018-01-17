@@ -7,7 +7,7 @@ old-location: netvista\rilimsnwenabledflags_2.htm
 old-project: netvista
 ms.assetid: 3295b0f0-a498-47fb-9744-06ea74626bb5
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILIMSNWENABLEDFLAGS, RILIMSNWENABLEDFLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,19 +75,3 @@ typedef enum _RILIMSNWENABLEDFLAGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

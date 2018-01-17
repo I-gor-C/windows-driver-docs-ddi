@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: eebc3e2e-41fe-4087-8916-7c8a71929913
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ISCSI_Path, ISCSI_Path, *PISCSI_Path
+ms.keywords: _ISCSI_Path, *PISCSI_Path, ISCSI_Path
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: ISCSI_Path, *PISCSI_Path
+req.typenames: *PISCSI_Path, ISCSI_Path
 ---
 
 # _ISCSI_Path structure
@@ -130,21 +130,6 @@ This indicates whether the connection supports TCP offload or not.
 ## -remarks
 The iSCSI headers and MOF are included in the platform SDK and WDK.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

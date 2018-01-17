@@ -143,21 +143,6 @@ Indicates that the device can assert the PME signal from D3.
 The power management capabilities register, whose contents are reported in the PCI_PMC structure, provides information about the power management capabilities of the device. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

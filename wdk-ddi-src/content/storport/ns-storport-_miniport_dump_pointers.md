@@ -40,7 +40,7 @@ req.product: Windows 10 or later.
 
 
 ## -description
-A Storport miniport driver uses this structure to support the <a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> (SRB) function code SRB_FUNCTION_DUMP_POINTERS. When a miniport driver receives this kind of SRB, the <b>DataBuffer</b> SRB member points to a <b>MINIPORT_DUMP_POINTERS</b> structure. This SRB is sent to the miniport driver that is used to control the disk that holds the crash dump data after the SRB was returned from the miniport driver's <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a> routine. Virtual miniport drivers are required to support SRB_FUNCTION_DUMP_POINTERS.
+A Storport miniport driver uses this structure to support the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> (SRB) function code SRB_FUNCTION_DUMP_POINTERS. When a miniport driver receives this kind of SRB, the <b>DataBuffer</b> SRB member points to a <b>MINIPORT_DUMP_POINTERS</b> structure. This SRB is sent to the miniport driver that is used to control the disk that holds the crash dump data after the SRB was returned from the miniport driver's <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a> routine. Virtual miniport drivers are required to support SRB_FUNCTION_DUMP_POINTERS.
 
 
 
@@ -166,28 +166,13 @@ Specifies the number of target peripherals that the adapter can control. For mor
 Starting with Windows 8, physical minport drivers can optionally support SRB_FUNCTION_DUMP_POINTERS. If a physical miniport supports this function, it must set the STOR_FEATURE_DUMP_POINTERS flag in the <b>FeatureSupport</b> member of the <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure before calling <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. Physical miniports are required to set at least the <b>Version</b> and <b>Size</b> members of <b>MINIPORT_DUMP_POINTERS</b>. Also, if different from the value given in <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>, the <b>MaximumTransferLength</b> member is required for a physical miniport.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
 <a href="..\storport\ns-storport-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
 </dt>
 <dt>
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
 </dt>
 <dt>
 <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>

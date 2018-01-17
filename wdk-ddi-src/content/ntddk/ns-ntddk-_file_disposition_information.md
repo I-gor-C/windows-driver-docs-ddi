@@ -65,21 +65,6 @@ The caller must have DELETE access to a given file in order to call <b>ZwSetInfo
 A file marked for deletion is not actually deleted until all open handles for the file object have been closed and the link count for the file is zero.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

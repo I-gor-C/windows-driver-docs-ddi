@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1dee65e7-27fb-4665-82e2-d7cb3c223f87
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _IRQ_PRIORITY, IRQ_PRIORITY, *PIRQ_PRIORITY
+ms.keywords: _IRQ_PRIORITY, *PIRQ_PRIORITY, IRQ_PRIORITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: IRQ_PRIORITY, *PIRQ_PRIORITY
+req.irql: PASSIVE_LEVEL
+req.typenames: *PIRQ_PRIORITY, IRQ_PRIORITY
 req.product: Windows 10 or later.
 ---
 
@@ -81,21 +81,6 @@ Specifies that the device's interrupts are of high priority. This setting is app
 ## -remarks
 The system uses <b>IRQ_PRIORITY</b> to assign IRQLs for devices. For example, it might assign a higher IRQL to a device that has an <b>IRQ_PRIORITY</b> of <b>IrqPriorityHigh</b> than it does to a device that has an <b>IRQ_PRIORITY</b> of <b>IrqPriorityLow</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

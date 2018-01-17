@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 0d822370-f08b-404d-ad0f-60ea091661d9
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE, *PPEP_PPM_PERF_SET_STATE
+ms.keywords: _PEP_PPM_PERF_SET_STATE, *PPEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PEP_PPM_PERF_SET_STATE, *PPEP_PPM_PERF_SET_STATE
+req.typenames: *PPEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE
 ---
 
 # _PEP_PPM_PERF_SET_STATE structure
@@ -82,41 +82,6 @@ On input, the new requested desired performance state. This state is defined as 
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

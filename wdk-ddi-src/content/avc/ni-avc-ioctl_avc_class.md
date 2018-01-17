@@ -145,21 +145,6 @@ The information the AV/C protocol driver returns in the I/O Status Block (Irp-&g
 Most AV/C functions must be called IRQL = PASSIVE_LEVEL. A few may be called at IRQL &lt;= DISPATCH_LEVEL. The respective IRQL is documented in each AV/C function.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avc.h (include Avc.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

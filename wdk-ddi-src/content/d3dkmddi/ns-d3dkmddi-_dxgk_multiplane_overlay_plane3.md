@@ -137,19 +137,3 @@ A structure of type DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 that specifies overlay p
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

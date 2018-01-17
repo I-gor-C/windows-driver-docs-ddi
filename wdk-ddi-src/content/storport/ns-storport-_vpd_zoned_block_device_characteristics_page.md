@@ -124,19 +124,3 @@ N/A
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Scsi.h (include Minitape.h or Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

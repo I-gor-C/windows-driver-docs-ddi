@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 38fea22b-4d9a-4b03-bbb7-c22578f60def
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: CM_Power_Data_s, *PCM_POWER_DATA, CM_POWER_DATA
+ms.keywords: CM_Power_Data_s, CM_POWER_DATA, *PCM_POWER_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PCM_POWER_DATA, CM_POWER_DATA
+req.typenames: CM_POWER_DATA, *PCM_POWER_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -122,31 +122,6 @@ Specifies the least-powered system state from which the device can wake the syst
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Microsoft Windows XP and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

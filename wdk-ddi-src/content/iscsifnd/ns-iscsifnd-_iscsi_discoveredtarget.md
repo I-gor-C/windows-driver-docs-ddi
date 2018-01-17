@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 0b4a7375-1ee2-4829-92bb-01ed610236de
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ISCSI_DiscoveredTarget, ISCSI_DiscoveredTarget, *PISCSI_DiscoveredTarget
+ms.keywords: _ISCSI_DiscoveredTarget, *PISCSI_DiscoveredTarget, ISCSI_DiscoveredTarget
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: ISCSI_DiscoveredTarget, *PISCSI_DiscoveredTarget
+req.typenames: *PISCSI_DiscoveredTarget, ISCSI_DiscoveredTarget
 ---
 
 # _ISCSI_DiscoveredTarget structure
@@ -80,21 +80,6 @@ A variable-length array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtar
 ## -remarks
 The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTarget structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561527">ISCSI_DiscoveredTarget WMI Class</a> in <i>Discover.mof</i>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsifnd.h (include Iscsifnd.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

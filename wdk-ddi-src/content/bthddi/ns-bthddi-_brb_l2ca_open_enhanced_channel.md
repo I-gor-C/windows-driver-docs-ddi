@@ -734,30 +734,4 @@ Reserved member. Do not use.
 
 ## -remarks
 Profile drivers can use CM_BASIC | CM_RETRANSMISSION_AND_FLOW, or CM_BASIC | CM_STREAMING modes for the <b>Flags</b> member. This indicates to open an enhanced retransmission mode, or streaming mode channel if possible, and if not fall back to basic mode channel. 
-A value of CM_RETRANSMISSION_AND_FLOW | CM_STREAMING is not supported.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows 8 and later versions of Windows
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+A value of CM_RETRANSMISSION_AND_FLOW | CM_STREAMING is not supported.</p>

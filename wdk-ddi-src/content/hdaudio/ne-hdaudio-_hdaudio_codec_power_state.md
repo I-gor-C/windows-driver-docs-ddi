@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 4C002B40-AD27-4FE2-B07F-5E9715E6CF1F
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _HDAUDIO_CODEC_POWER_STATE, *PHDAUDIO_CODEC_POWER_STATE, HDAUDIO_CODEC_POWER_STATE
+ms.keywords: _HDAUDIO_CODEC_POWER_STATE, HDAUDIO_CODEC_POWER_STATE, *PHDAUDIO_CODEC_POWER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL.
-req.typenames: *PHDAUDIO_CODEC_POWER_STATE, HDAUDIO_CODEC_POWER_STATE
+req.typenames: HDAUDIO_CODEC_POWER_STATE, *PHDAUDIO_CODEC_POWER_STATE
 ---
 
 # _HDAUDIO_CODEC_POWER_STATE enumeration
@@ -98,20 +98,4 @@ Power state Maximum
 
 
 ## -remarks
-For more information about power states, see <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hdaudio.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about power states, see <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>.</p>

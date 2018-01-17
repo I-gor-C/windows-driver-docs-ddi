@@ -90,7 +90,7 @@ The identifier of a display adapter's video present target.
 
 ### -field OutputColorSpace
 
-A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_color_space_type.md">D3DDDI_COLOR_SPACE_TYPE</a> value which describes the output color space intended for the transported pixels.  The driver is responsible for sending appropriate metadata to ensure the display device is set up to interpret pixels correctly for this color space. 
+A <a href="https://msdn.microsoft.com/library/windows/hardware/dn906320">D3DDDI_COLOR_SPACE_TYPE</a> value which describes the output color space intended for the transported pixels.  The driver is responsible for sending appropriate metadata to ensure the display device is set up to interpret pixels correctly for this color space. 
 
 The output colorspace is fixed until modified by another SetTiming call.  If the colorspace set on swap chain presented to this target is different from the output colorspace, the driver is required to convert to the output colorspace during scan-out.  
 
@@ -216,19 +216,3 @@ In many cases, glitches are inevitable so these fields attempt to understand the
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

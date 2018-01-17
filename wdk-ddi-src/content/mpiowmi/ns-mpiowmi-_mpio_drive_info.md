@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 38d79fae-9701-4e92-bf73-4732e02c17ab
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MPIO_DRIVE_INFO, MPIO_DRIVE_INFO, *PMPIO_DRIVE_INFO
+ms.keywords: _MPIO_DRIVE_INFO, *PMPIO_DRIVE_INFO, MPIO_DRIVE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MPIO_DRIVE_INFO, *PMPIO_DRIVE_INFO
+req.typenames: *PMPIO_DRIVE_INFO, MPIO_DRIVE_INFO
 ---
 
 # _MPIO_DRIVE_INFO structure
@@ -78,19 +78,3 @@ A string field (of maximum length 63 characters) that returns the friendly name 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

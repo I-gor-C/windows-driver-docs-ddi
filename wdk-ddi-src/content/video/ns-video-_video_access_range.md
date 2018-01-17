@@ -156,21 +156,6 @@ All VIDEO_ACCESS_RANGE-type array elements describing I/O port ranges are assume
 In an array of VIDEO_ACCESS_RANGE-type elements passed to <b>VideoPortSetTrappedEmulatorPorts</b>, the value of each element's <b>RangeVisible</b> member determines whether the given I/O port(s) can be accessed directly by the VDM (MS-DOS application running in full-screen on an x86-based machine) or whether such an application-issued I/O stream is trapped and forwarded to a miniport driver-supplied <i>SvgaHwIoPortXxx</i> function for validation first.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Video.h (include Video.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

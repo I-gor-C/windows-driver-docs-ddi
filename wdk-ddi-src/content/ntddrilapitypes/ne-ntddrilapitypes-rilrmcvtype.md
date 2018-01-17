@@ -7,7 +7,7 @@ old-location: netvista\rilrmcvtype.htm
 old-project: netvista
 ms.assetid: 007c6b45-0bec-4fcf-984a-675aa5336993
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILRMCVTYPE, RILRMCVTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,19 +66,3 @@ typedef enum _RILRMCVTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

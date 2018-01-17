@@ -7,7 +7,7 @@ old-location: netvista\ndis_wdi_init_parameters.htm
 old-project: netvista
 ms.assetid: 871D266C-55DF-4113-9714-92AB129303E5
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _NDIS_WDI_INIT_PARAMETERS, *PNDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ typedef struct _NDIS_WDI_INIT_PARAMETERS {
 ### -field Header
 
 The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_WDI_INIT_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_WDI_INIT_PARAMETERS.
@@ -117,39 +117,3 @@ The entry point of the <a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_idle_notificati
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dot11wdi.h (include Ndis.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

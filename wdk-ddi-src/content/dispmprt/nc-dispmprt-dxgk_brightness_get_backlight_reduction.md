@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 018cb4a0-e71d-407e-8fe9-716312099b73
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _SYMBOL_INFO_EX, *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+ms.keywords: DXGKDDI_UNLOAD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PSYMBOL_INFO_EX, SYMBOL_INFO_EX
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 # DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION callback
@@ -85,62 +85,6 @@ The operating system assumes that, in response to a new brightness level request
 
 As an example, if <i>BRR</i> = 0.2, the driver will typically boost brightness by a factor of 1.0 / (1.0 - <i>BRR</i>) = 1.25, so any pixel with a brightness value above 255 * (1.0 - <i>BRR</i>) = 204 will saturate. Using the value of <i>BacklightInfo</i>-&gt;<b>GammaRamp</b> provided by the driver, the operating system can more accurately estimate the distortion of pixel brightness for a particular image.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

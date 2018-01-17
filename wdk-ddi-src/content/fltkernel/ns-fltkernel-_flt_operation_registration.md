@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 5e3f9a29-660e-46f1-bf25-5bad8b91e32c
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FLT_OPERATION_REGISTRATION, *PFLT_OPERATION_REGISTRATION, FLT_OPERATION_REGISTRATION
+ms.keywords: _FLT_OPERATION_REGISTRATION, FLT_OPERATION_REGISTRATION, *PFLT_OPERATION_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PFLT_OPERATION_REGISTRATION, FLT_OPERATION_REGISTRATION
+req.typenames: FLT_OPERATION_REGISTRATION, *PFLT_OPERATION_REGISTRATION
 ---
 
 # _FLT_OPERATION_REGISTRATION structure
@@ -126,21 +126,6 @@ A minifilter cannot register a postoperation callback routine for IRP_MJ_SHUTDOW
 
 A single preoperation or postoperation callback routine can be used to process more than one type of I/O operation. However, the callback routine must be registered separately for each type of I/O operation. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

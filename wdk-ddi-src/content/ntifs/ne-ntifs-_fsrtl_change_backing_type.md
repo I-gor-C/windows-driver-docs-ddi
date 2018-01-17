@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 952812f4-5d29-4d1d-ab81-dd3a76a5f04c
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FSRTL_CHANGE_BACKING_TYPE, FSRTL_CHANGE_BACKING_TYPE, *PFSRTL_CHANGE_BACKING_TYPE
+ms.keywords: _FSRTL_CHANGE_BACKING_TYPE, *PFSRTL_CHANGE_BACKING_TYPE, FSRTL_CHANGE_BACKING_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: FSRTL_CHANGE_BACKING_TYPE, *PFSRTL_CHANGE_BACKING_TYPE
+req.typenames: *PFSRTL_CHANGE_BACKING_TYPE, FSRTL_CHANGE_BACKING_TYPE
 ---
 
 # _FSRTL_CHANGE_BACKING_TYPE enumeration
@@ -73,21 +73,6 @@ The shared cache map of the cache manager.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

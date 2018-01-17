@@ -7,7 +7,7 @@ old-location: netvista\rilequipmentstate.htm
 old-project: netvista
 ms.assetid: aa00ebc4-c8de-4a73-ad43-77f4e173e617
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILEQUIPMENTSTATE, RILEQUIPMENTSTATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,19 +66,3 @@ typedef enum _RILEQUIPMENTSTATE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

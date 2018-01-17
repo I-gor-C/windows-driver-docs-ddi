@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: da45810a-12f2-4242-8428-a1717ecf8af3
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSiSCSI_QueryLBPolicy, MSiSCSI_QueryLBPolicy, *PMSiSCSI_QueryLBPolicy
+ms.keywords: _MSiSCSI_QueryLBPolicy, *PMSiSCSI_QueryLBPolicy, MSiSCSI_QueryLBPolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MSiSCSI_QueryLBPolicy, *PMSiSCSI_QueryLBPolicy
+req.typenames: *PMSiSCSI_QueryLBPolicy, MSiSCSI_QueryLBPolicy
 ---
 
 # _MSiSCSI_QueryLBPolicy structure
@@ -80,21 +80,6 @@ This is an enumeration that contains information required to set the load balanc
 ## -remarks
 You must implement this class only if the adapter supports MCS. Otherwise, it is optional.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

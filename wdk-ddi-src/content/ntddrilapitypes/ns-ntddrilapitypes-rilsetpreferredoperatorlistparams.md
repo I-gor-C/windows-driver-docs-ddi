@@ -7,8 +7,8 @@ old-location: netvista\rilsetpreferredoperatorlistparams.htm
 old-project: netvista
 ms.assetid: cec1db47-640c-467a-ba7d-270659ebbba2
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSETPREFERREDOPERATORLISTPARAMS, RILSETPREFERREDOPERATORLISTPARAMS, *LPRILSETPREFERREDOPERATORLISTPARAMS
+ms.date: 1/11/2018
+ms.keywords: RILSETPREFERREDOPERATORLISTPARAMS, *LPRILSETPREFERREDOPERATORLISTPARAMS, RILSETPREFERREDOPERATORLISTPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILSETPREFERREDOPERATORLISTPARAMS, *LPRILSETPREFERREDOPERATORLISTPARAMS
+req.typenames: *LPRILSETPREFERREDOPERATORLISTPARAMS, RILSETPREFERREDOPERATORLISTPARAMS
 ---
 
 # RILSETPREFERREDOPERATORLISTPARAMS structure
@@ -66,19 +66,3 @@ typedef struct _RILSETPREFERREDOPERATORLISTPARAMS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

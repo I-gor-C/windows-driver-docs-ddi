@@ -7,7 +7,7 @@ old-location: netvista\rilcallinfo_v3_2.htm
 old-project: netvista
 ms.assetid: 70224c7f-ec63-4d31-b66a-c41208a1b7ba
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLINFO_V3, RILCALLINFO_V3, *LPRILCALLINFO_V3
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -131,19 +131,3 @@ typedef struct _RILCALLINFO_V3 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

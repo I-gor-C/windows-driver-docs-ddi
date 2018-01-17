@@ -1,17 +1,23 @@
 ---
 UID: TP:smartcrd
+ms.assetid: 1f409c41-e10c-39aa-8408-18629cc1c604
+ms.author: windowsdriverdev
+ms.date: 01/16/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # Smart Card Reader Devices
 
-## -description
+
 Overview of the Smart Card Reader Devices technology.
 
 To develop Smart Card Reader Devices, you need these headers:
 
  * [smclib.h](..\smclib\index.md)
  * [smcnt.h](..\smcnt\index.md)
- * [winsmcrd.h](..\winsmcrd\index.md)
 
 For the programming guide, see [Smart Card Reader Devices](===404===https://docs.microsoft.com/en-us/windows-hardware/drivers/smartcrd).
 
@@ -30,11 +36,3 @@ For the programming guide, see [Smart Card Reader Devices](===404===https://docs
 | [_T0_DATA structure](..\smclib\ns-smclib-_t0_data.md) | The T0_DATA structure is used by the smart card driver library to process T0 I/O. |
 | [_T1_DATA structure](..\smclib\ns-smclib-_t1_data.md) | The T1_DATA structure is used by the smart card driver library to process T1 I/O. |
 | [_VENDOR_ATTR structure](..\smclib\ns-smclib-_vendor_attr.md) | The VENDOR_ATTR structure defines the data that is stored in the VendorAttr member of the SMARTCARD_EXTENSION structure. VENDOR_ATTR also holds information that identifies the smart card reader, such as the vendor name, unit number, and serial number. |
-
-## I/O control codes
-
-| Title   | Description   |
-| ---- |:---- |
-| [IOCTL_SMARTCARD_EJECT IOCTL](..\winsmcrd\ni-winsmcrd-ioctl_smartcard_eject.md) | The IOCTL_SMARTCARD_EJECT request ejects the currently inserted smart card from the smart card reader. |
-| [IOCTL_SMARTCARD_GET_LAST_ERROR IOCTL](..\winsmcrd\ni-winsmcrd-ioctl_smartcard_get_last_error.md) | The IOCTL_SMARTCARD_GET_LAST_ERROR request retrieves the error code of the most previous operation because there is no option to return an error code immediately after an overlapped operation is complete. |
-| [IOCTL_SMARTCARD_SWALLOW IOCTL](..\winsmcrd\ni-winsmcrd-ioctl_smartcard_swallow.md) | The IOCTL_SMARTCARD_SWALLOW request causes the smart card reader to swallow the card. |

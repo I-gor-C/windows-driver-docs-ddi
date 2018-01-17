@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 1641C3A0-E6D9-4E30-9E3C-3C09A14F591F
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSFC_FibrePortNPIVAttributes, MSFC_FibrePortNPIVAttributes, *PMSFC_FibrePortNPIVAttributes
+ms.keywords: _MSFC_FibrePortNPIVAttributes, *PMSFC_FibrePortNPIVAttributes, MSFC_FibrePortNPIVAttributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MSFC_FibrePortNPIVAttributes, *PMSFC_FibrePortNPIVAttributes
+req.typenames: *PMSFC_FibrePortNPIVAttributes, MSFC_FibrePortNPIVAttributes
 ---
 
 # _MSFC_FibrePortNPIVAttributes structure
@@ -79,21 +79,6 @@ An array of virtual ports. The array length is specified in the <b>NumberVirtual
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Npivwmi.h (include Npivwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

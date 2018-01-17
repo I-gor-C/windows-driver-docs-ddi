@@ -71,21 +71,6 @@ The WMI tool suite generates a declaration for this structure in <i>Hbapiwm.h </
 For more information about event types and worldwide names, see the T11 committee's <i>Fibre Channel HBA API</i> specification.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

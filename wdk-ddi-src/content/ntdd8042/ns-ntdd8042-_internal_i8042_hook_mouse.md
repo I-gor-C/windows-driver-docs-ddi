@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 7ac9fc14-9e94-412b-811a-6013d46020a0
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _INTERNAL_I8042_HOOK_MOUSE, INTERNAL_I8042_HOOK_MOUSE, *PINTERNAL_I8042_HOOK_MOUSE
+ms.keywords: _INTERNAL_I8042_HOOK_MOUSE, *PINTERNAL_I8042_HOOK_MOUSE, INTERNAL_I8042_HOOK_MOUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: INTERNAL_I8042_HOOK_MOUSE, *PINTERNAL_I8042_HOOK_MOUSE
+req.typenames: *PINTERNAL_I8042_HOOK_MOUSE, INTERNAL_I8042_HOOK_MOUSE
 ---
 
 # _INTERNAL_I8042_HOOK_MOUSE structure
@@ -90,21 +90,6 @@ This structure is only used with an <a href="..\ntdd8042\ni-ntdd8042-ioctl_inter
 
 <b>IsrWritePort</b>, <b>QueueMousePacket</b>, and <b>CallContext</b> are supplied by I8042prt.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntdd8042.h (include Ntdd8042.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

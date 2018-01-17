@@ -122,31 +122,6 @@ The <b>COUNTED_REASON_CONTEXT</b> structure can contain either a simple reason s
 The DIAGNOSTIC_REASON_DETAILED_STRING flag supports localization. If the localized resource file specified by <b>ResourceFileName</b> exists, the power manager retrieves a set of resource strings from the file and uses these strings in place of the strings contained in the <b>ReasonStrings</b> array. <b>ResourceId</b> specifies the resource index of the first string in the file to use as a reason string, and <b>StringCount</b> specifies the number of resource strings to use as reason strings. The resource strings must have consecutive resource indexes.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows 7 and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

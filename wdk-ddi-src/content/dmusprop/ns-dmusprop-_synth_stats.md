@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: bbe3552b-0289-4f7f-bdaa-8a6437594247
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SYNTH_STATS, SYNTH_STATS, *PSYNTH_STATS
+ms.keywords: _SYNTH_STATS, *PSYNTH_STATS, SYNTH_STATS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SYNTH_STATS, *PSYNTH_STATS
+req.typenames: *PSYNTH_STATS, SYNTH_STATS
 ---
 
 # _SYNTH_STATS structure
@@ -134,21 +134,6 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537406">KSPRO
 
 The SYNTH_STATS structure is similar to the DMUS_SYNTHSTATS structure, which is described in the Microsoft Windows SDK documentation.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusprop.h (include Dmusprop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

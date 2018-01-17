@@ -7,7 +7,7 @@ old-location: netvista\rilsystemselectionprefsparammask_2.htm
 old-project: netvista
 ms.assetid: 7ae85902-d990-45d9-9e9d-e609aea24091
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSYSTEMSELECTIONPREFSPARAMMASK, RILSYSTEMSELECTIONPREFSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,19 +83,3 @@ typedef enum _RILSYSTEMSELECTIONPREFSPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 0515dd76-ef1f-4f0f-a7d7-1b3b07e0523d
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: *PISCSI_DIGEST_TYPES, *PISCSI_DIGEST_TYPES, ISCSI_DIGEST_TYPES
+ms.keywords: *PISCSI_DIGEST_TYPES, ISCSI_DIGEST_TYPES, *PISCSI_DIGEST_TYPES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PISCSI_DIGEST_TYPES, ISCSI_DIGEST_TYPES
+req.typenames: ISCSI_DIGEST_TYPES, *PISCSI_DIGEST_TYPES
 ---
 
 # *PISCSI_DIGEST_TYPES enumeration
@@ -66,19 +66,3 @@ The digest that guarantees data integrity uses a 32-bit cyclic redundancy check.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsidef.h (include Iscsidef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

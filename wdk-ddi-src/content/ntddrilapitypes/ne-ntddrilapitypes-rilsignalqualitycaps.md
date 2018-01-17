@@ -7,7 +7,7 @@ old-location: netvista\rilsignalqualitycaps.htm
 old-project: netvista
 ms.assetid: 5d42e083-d1a9-455a-8511-9aef37908ab7
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSIGNALQUALITYCAPS, RILSIGNALQUALITYCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,19 +62,3 @@ typedef enum _RILSIGNALQUALITYCAPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

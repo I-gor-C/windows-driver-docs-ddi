@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: c9328791-898e-48f2-acfd-30c8a36fcd29
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _BASEBAND_CHANNEL_INFO, *PBASEBAND_CHANNEL_INFO, BASEBAND_CHANNEL_INFO
+ms.keywords: _BASEBAND_CHANNEL_INFO, BASEBAND_CHANNEL_INFO, *PBASEBAND_CHANNEL_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: *PBASEBAND_CHANNEL_INFO, BASEBAND_CHANNEL_INFO
+req.typenames: BASEBAND_CHANNEL_INFO, *PBASEBAND_CHANNEL_INFO
 ---
 
 # _BASEBAND_CHANNEL_INFO structure
@@ -110,31 +110,6 @@ Profile drivers access the BASEBAND_CHANNEL_INFO structure through the
     <a href="..\bthddi\ns-bthddi-_brb_sco_get_channel_info.md">
     _BRB_SCO_GET_CHANNEL_INFO</a> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

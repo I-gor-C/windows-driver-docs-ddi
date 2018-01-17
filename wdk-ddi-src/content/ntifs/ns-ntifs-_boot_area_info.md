@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 9f092940-b8be-4d28-b82c-d169abefe5d9
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _BOOT_AREA_INFO, BOOT_AREA_INFO, *PBOOT_AREA_INFO
+ms.keywords: _BOOT_AREA_INFO, *PBOOT_AREA_INFO, BOOT_AREA_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: BOOT_AREA_INFO, *PBOOT_AREA_INFO
+req.typenames: *PBOOT_AREA_INFO, BOOT_AREA_INFO
 ---
 
 # _BOOT_AREA_INFO structure
@@ -76,31 +76,6 @@ The location of a boot sector or a copy of a boot sector.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Windows Server 2008 R2, Windows 7
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Any level
-req.typenames: EXpsFontRestriction
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # FltCbdqInitialize function
@@ -326,42 +326,6 @@ This routine should unlock the queue created by <i>CbdqAcquire</i>. If the minif
 
 This routine should complete a canceled I/O operation. Normally, minifilter drivers can just call <a href="..\fltkernel\nf-fltkernel-fltcompletependedpreoperation.md">FltCompletePendedPreOperation</a>(Data, FLT_PREOP_COMPLETE, <b>NULL</b>). Minifilter drivers do not need to dequeue the callback data structure -- the Filter Manager automatically calls the queue's <i>CbdqRemoveIo</i> before calling <i>CbdqCompleteCanceledIo</i>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include Fltkernel.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Any level
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

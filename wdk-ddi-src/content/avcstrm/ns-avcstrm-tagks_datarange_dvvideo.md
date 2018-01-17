@@ -68,25 +68,10 @@ Specifies the digital video information, for example, sound tracks and video inf
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avcstrm.h (include Avcstrm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
 </dt>
 <dt>
 <a href="..\avcstrm\ns-avcstrm-_dvinfo.md">DVINFO</a>

@@ -131,63 +131,6 @@ A minport driver calls this routine to send a power control request directly to 
 Similarly, The PEP can send a power control request directly to the miniport. The miniport driver handles this request in its <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a> and <a href="..\storport\nc-storport-hw_unit_control.md">HwStorUnitControl</a> routines. The <i>ControlType</i> parameter receives the <b>ScsiAdapterPoFxPowerControl</b> type in the <b>HwStorAdapterControl</b> routine and the <b>ScsiUnitPoFxPowerControl</b> in the <b>HwStorUnitControl</b> routine.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

@@ -7,8 +7,8 @@ old-location: netvista\rildialedidsettings_2.htm
 old-project: netvista
 ms.assetid: 6c65644b-f3a4-4c7d-91ce-c4b2b1e611e7
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILDIALEDIDSETTINGS, RILDIALEDIDSETTINGS, *LPRILDIALEDIDSETTINGS
+ms.date: 1/11/2018
+ms.keywords: RILDIALEDIDSETTINGS, *LPRILDIALEDIDSETTINGS, RILDIALEDIDSETTINGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILDIALEDIDSETTINGS, *LPRILDIALEDIDSETTINGS
+req.typenames: *LPRILDIALEDIDSETTINGS, RILDIALEDIDSETTINGS
 req.product: Windows 10 or later.
 ---
 
@@ -75,19 +75,3 @@ typedef struct _RILDIALEDIDSETTINGS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

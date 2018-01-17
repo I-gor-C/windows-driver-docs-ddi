@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 4C07239D-89AE-4A9F-B7EB-CFFE6D47F10B
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBDEVICE_RESET, USBDEVICE_RESET, *PUSBDEVICE_RESET
+ms.keywords: _USBDEVICE_RESET, *PUSBDEVICE_RESET, USBDEVICE_RESET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: USBDEVICE_RESET, *PUSBDEVICE_RESET
+req.typenames: *PUSBDEVICE_RESET, USBDEVICE_RESET
 req.product: Windows 10 or later.
 ---
 
@@ -84,21 +84,6 @@ A pointer to an array of handles to endpoints to disable.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxusbdevice.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

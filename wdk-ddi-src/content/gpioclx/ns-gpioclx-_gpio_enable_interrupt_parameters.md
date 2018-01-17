@@ -8,7 +8,7 @@ old-project: GPIO
 ms.assetid: 9F9AA4C1-A202-4AF8-8E1D-F7E56C08A2C1
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GPIO_ENABLE_INTERRUPT_PARAMETERS, *PGPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS
+ms.keywords: _GPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS, *PGPIO_ENABLE_INTERRUPT_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PGPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS
+req.typenames: GPIO_ENABLE_INTERRUPT_PARAMETERS, *PGPIO_ENABLE_INTERRUPT_PARAMETERS
 ---
 
 # _GPIO_ENABLE_INTERRUPT_PARAMETERS structure
@@ -158,31 +158,6 @@ The <b>PullConfiguration</b> member of the <b>GPIO_ENABLE_INTERRUPT_PARAMETERS</
 
 If none of the system-defined <b>GPIO_PIN_PULL_CONFIGURATION_<i>XXX</i></b> constants appropriately describes the pin configuration, this member can be set to a vendor-defined constant in the range 128 to 255.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Gpioclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 37c299ab-16a6-4fa2-8ac9-55d75cc98f60
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _SID_AND_ATTRIBUTES, SID_AND_ATTRIBUTES, *PSID_AND_ATTRIBUTES
+ms.keywords: _SID_AND_ATTRIBUTES, *PSID_AND_ATTRIBUTES, SID_AND_ATTRIBUTES
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SID_AND_ATTRIBUTES, *PSID_AND_ATTRIBUTES
+req.typenames: *PSID_AND_ATTRIBUTES, SID_AND_ATTRIBUTES
 ---
 
 # _SID_AND_ATTRIBUTES structure
@@ -68,21 +68,6 @@ Specifies attributes of the SID. This value contains up to 32 one-bit flags. Its
 ## -remarks
 A group is represented by a SID. SIDs have attributes that indicate whether they are currently enabled, disabled, or mandatory, and how they are used. A <b>SID_AND_ATTRIBUTES</b> structure can represent a SID whose attributes change frequently. For example, it is used to represent groups in the <a href="..\ntifs\ns-ntifs-_token_groups.md">TOKEN_GROUPS</a> structure. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

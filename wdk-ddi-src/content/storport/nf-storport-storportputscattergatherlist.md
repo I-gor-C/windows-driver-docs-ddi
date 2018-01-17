@@ -96,51 +96,6 @@ The <b>StorPortPutScatterGatherList</b> routine does not free the buffer memory 
 After the <b>StorPortPutScatterGatherList</b> routine returns, the miniport driver can reuse the buffer to create a new scatter/gather list by calling the <a href="..\storport\nf-storport-storportbuildscattergatherlist.md">StorPortBuildScatterGatherList</a> again. If a miniport driver has finished using the buffer for the scatter/gather list, it should free the memory for the buffer after the <b>StorPortPutScatterGatherList</b> routine returns. If the miniport driver allocates the buffer memory with the <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a> routine, it should free the memory by calling the <a href="..\storport\nf-storport-storportfreepool.md">StorPortFreePool</a> routine.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454266">StorPortIrql</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

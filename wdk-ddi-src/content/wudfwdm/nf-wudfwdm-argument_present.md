@@ -61,31 +61,4 @@ Specifies the value of the pointer argument to be tested.
 
 
 ## -remarks
-This macro can be called in conditional code to determine whether an optional argument has been passed in a call. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfwdm.h (include Wdm.h, Ntddk.h, or Ntdef.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This macro can be called in conditional code to determine whether an optional argument has been passed in a call. </p>

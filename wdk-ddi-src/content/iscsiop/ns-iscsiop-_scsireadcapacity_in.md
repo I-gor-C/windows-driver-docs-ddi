@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 7a9d6f43-88f7-490e-9446-e707b6497a38
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ScsiReadCapacity_IN, ScsiReadCapacity_IN, *PScsiReadCapacity_IN
+ms.keywords: _ScsiReadCapacity_IN, *PScsiReadCapacity_IN, ScsiReadCapacity_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: ScsiReadCapacity_IN, *PScsiReadCapacity_IN
+req.typenames: *PScsiReadCapacity_IN, ScsiReadCapacity_IN
 ---
 
 # _ScsiReadCapacity_IN structure
@@ -68,21 +68,6 @@ A 64-bit number that, together with the name of the target, uniquely identifies 
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

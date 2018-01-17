@@ -70,20 +70,4 @@ Indicates that PcRebalance is supported via unregistering and re-registering the
 
 For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430A-BCAF-04E13FA15382">Implement PnP Rebalance for PortCls Audio Drivers</a>.
 
-Available in Windows 10, version 1511 and later versions of Windows. 
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Portcls.h (include Portcls.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+Available in Windows 10, version 1511 and later versions of Windows. </p>

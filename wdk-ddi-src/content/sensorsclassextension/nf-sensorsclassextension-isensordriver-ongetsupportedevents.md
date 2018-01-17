@@ -79,31 +79,4 @@ If the operation succeeds, this method returns S_OK. Otherwise, this method retu
 ## -remarks
 Event IDs are represented by <b>GUID</b>s. Platform-defined events are defined in sensors.h. 
 
-You must use CoTaskMemAlloc to create the event ID buffer. The sensor class extension frees this memory.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sensorsclassextension.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>SensorsClassExtension.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
+You must use CoTaskMemAlloc to create the event ID buffer. The sensor class extension frees this memory.</p>

@@ -7,7 +7,7 @@ old-location: netvista\rildisplayinfoparammask_2.htm
 old-project: netvista
 ms.assetid: d8bd093d-ad95-488e-a057-b96fecf58bbb
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILDISPLAYINFOPARAMMASK, RILDISPLAYINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,19 +75,3 @@ typedef enum _RILDISPLAYINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

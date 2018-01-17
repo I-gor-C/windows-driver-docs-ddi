@@ -75,7 +75,7 @@ Pointer to the command extension. This is <b>NULL</b> if the miniclass driver di
 
 ### -param CommandParameters [in, out]
 
-Pointer to a buffer allocated by the caller that contains a <a href="..\ntddtape\ns-ntddtape-_tape_create_partition.md">TAPE_CREATE_PARTITION</a> structure.
+Pointer to a buffer allocated by the caller that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567960">TAPE_CREATE_PARTITION</a> structure.
 
 
 ### -param Srb [in, out]
@@ -208,39 +208,39 @@ TAPE_STATUS_NOT_IMPLEMENTED
 ## -remarks
 The following functions can be assigned to this callback placeholder:
 
-<i>CreatePartition</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl_tape_create_partition.md">IOCTL_TAPE_CREATE_PARTITION</a> request. This routine is required. <i>CreatePartition</i> creates a partition on a tape by filling in the CDB in an SRB passed by the tape class driver. Creating a partition typically requires a series of SRBs to complete the operation. After <i>CreatePartition</i> fills in a given SRB and returns, the tape class driver sends the SRB to the target device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>TapeMiniCreatePartition</i> again.
+<i>CreatePartition</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560612">IOCTL_TAPE_CREATE_PARTITION</a> request. This routine is required. <i>CreatePartition</i> creates a partition on a tape by filling in the CDB in an SRB passed by the tape class driver. Creating a partition typically requires a series of SRBs to complete the operation. After <i>CreatePartition</i> fills in a given SRB and returns, the tape class driver sends the SRB to the target device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>TapeMiniCreatePartition</i> again.
 
 <i>CreatePartition</i> must fill in the following members in the SRB before returning to the tape class driver:
 
 If the tape miniclass driver stores partition information in the minitape extension, <i>CreatePartition</i> updates the extension before returning to the tape class driver with TAPE_STATUS_SUCCESS.
 
-<i>Erase</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl_tape_erase.md">IOCTL_TAPE_ERASE</a> request. This routine is required. <i>Erase</i> erases a tape by filling in the CDB in an SRB passed by the tape class driver. Erasing a tape typically requires one SRB to complete the operation. After <i>Erase</i> fills in the SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>Erase</i> again. <i>Erase</i> then returns TAPE_STATUS_SUCCESS.
+<i>Erase</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560615">IOCTL_TAPE_ERASE</a> request. This routine is required. <i>Erase</i> erases a tape by filling in the CDB in an SRB passed by the tape class driver. Erasing a tape typically requires one SRB to complete the operation. After <i>Erase</i> fills in the SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>Erase</i> again. <i>Erase</i> then returns TAPE_STATUS_SUCCESS.
 
-<i>GetDriveParameters</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl_tape_get_drive_params.md">IOCTL_TAPE_GET_DRIVE_PARAMS</a> request. This routine is required. <i>GetDriveParameters</i> gets tape drive parameters by filling in the CDB in an SRB passed by the tape class driver. Getting drive parameters typically requires a series of SRBs to complete the operation. After <i>GetDriveParameters</i> fills in a given SRB and returns, the tape class driver sends the SRB to the target device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>GetDriveParameters</i> again. 
+<i>GetDriveParameters</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560618">IOCTL_TAPE_GET_DRIVE_PARAMS</a> request. This routine is required. <i>GetDriveParameters</i> gets tape drive parameters by filling in the CDB in an SRB passed by the tape class driver. Getting drive parameters typically requires a series of SRBs to complete the operation. After <i>GetDriveParameters</i> fills in a given SRB and returns, the tape class driver sends the SRB to the target device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>GetDriveParameters</i> again. 
 
-<i>GetMediaParameters</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl_tape_get_media_params.md">IOCTL_TAPE_GET_MEDIA_PARAMS</a> request. This routine is required. <i>GetMediaParameters</i> gets tape media parameters by filling in the CDB in an SRB passed by the tape class driver. Getting media parameters typically requires more than one SRB to complete the operation, starting with a test unit ready which the miniclass driver requests by returning TAPE_STATUS_CHECK_TEST_UNIT_READY the first time the tape class driver calls the routine. 
+<i>GetMediaParameters</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560621">IOCTL_TAPE_GET_MEDIA_PARAMS</a> request. This routine is required. <i>GetMediaParameters</i> gets tape media parameters by filling in the CDB in an SRB passed by the tape class driver. Getting media parameters typically requires more than one SRB to complete the operation, starting with a test unit ready which the miniclass driver requests by returning TAPE_STATUS_CHECK_TEST_UNIT_READY the first time the tape class driver calls the routine. 
 
 After <i>GetMediaParameters</i> fills in a given SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls GetMediaParameters again. 
 
-<i>GetMediaTypes</i> handles the device-specific aspects of an <a href="..\ntddstor\ni-ntddstor-ioctl_storage_get_media_types_ex.md">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> request. This routine is required. <i>GetMediaTypes</i> gets information about the media types supported by a tape device by filling in the CDB in an SRB passed by the tape class driver. Getting media types typically requires more than one SRB to complete the operation, starting with a test unit ready which the miniclass driver requests by returning TAPE_STATUS_CHECK_TEST_UNIT_READY the first time the tape class driver calls the routine. 
+<i>GetMediaTypes</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560563">IOCTL_STORAGE_GET_MEDIA_TYPES_EX</a> request. This routine is required. <i>GetMediaTypes</i> gets information about the media types supported by a tape device by filling in the CDB in an SRB passed by the tape class driver. Getting media types typically requires more than one SRB to complete the operation, starting with a test unit ready which the miniclass driver requests by returning TAPE_STATUS_CHECK_TEST_UNIT_READY the first time the tape class driver calls the routine. 
 
-<i>GetPosition</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl_tape_get_position.md">IOCTL_TAPE_GET_POSITION</a> request. This routine is required. <i>GetPosition</i> reads the position of a tape by filling in the CDB in an SRB passed by the tape class driver. Reading tape position typically requires more than one SRB to complete the operation, often starting with a test unit ready which the miniclass driver requests by returning TAPE_STATUS_CHECK_TEST_UNIT_READY the first time the tape class driver calls the routine. 
+<i>GetPosition</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560622">IOCTL_TAPE_GET_POSITION</a> request. This routine is required. <i>GetPosition</i> reads the position of a tape by filling in the CDB in an SRB passed by the tape class driver. Reading tape position typically requires more than one SRB to complete the operation, often starting with a test unit ready which the miniclass driver requests by returning TAPE_STATUS_CHECK_TEST_UNIT_READY the first time the tape class driver calls the routine. 
 
-<i>GetStatus</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl_tape_get_status.md">IOCTL_TAPE_GET_STATUS</a> request. This routine is required. <i>GetStatus</i> reads the status of a tape device, typically by directing the tape class driver to issue a test unit ready command. 
+<i>GetStatus</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560625">IOCTL_TAPE_GET_STATUS</a> request. This routine is required. <i>GetStatus</i> reads the status of a tape device, typically by directing the tape class driver to issue a test unit ready command. 
 
 If a device indicates whether a drive needs cleaning in sense data (as opposed to reporting the need for cleaning as an error, which a miniclass driver would handle in its <a href="..\minitape\nc-minitape-tape_error_routine.md">TapeMiniTapeError</a> routine), <i>GetStatus</i> fills in the CDB in the SRB passed by the tape class driver to obtain the sense data and, if necessary, returns TAPE_STATUS_REQUIRES_CLEANING.
 
-<i>Prepare</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl_tape_prepare.md">IOCTL_TAPE_PREPARE</a> request. This routine is required. <i>Prepare</i> prepares a tape by filling in the CDB in an SRB passed by the tape class driver. If the device supports the requested operation, preparing a tape typically requires one SRB. After <i>Prepare</i> fills in the SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>Prepare</i> again.
+<i>Prepare</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560630">IOCTL_TAPE_PREPARE</a> request. This routine is required. <i>Prepare</i> prepares a tape by filling in the CDB in an SRB passed by the tape class driver. If the device supports the requested operation, preparing a tape typically requires one SRB. After <i>Prepare</i> fills in the SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>Prepare</i> again.
 
-<i>SetDriveParameters</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl_tape_set_drive_params.md">IOCTL_TAPE_SET_DRIVE_PARAMS</a> request. This routine is required. <i>SetDriveParameters</i> sets parameters for a tape device by filling in the CDB in an SRB passed by the tape class driver. Setting parameters typically involves a series of SRBs to complete the operation. After <i>SetDriveParameters</i> fills in a given SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>SetDriveParameters</i> again.
+<i>SetDriveParameters</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560632">IOCTL_TAPE_SET_DRIVE_PARAMS</a> request. This routine is required. <i>SetDriveParameters</i> sets parameters for a tape device by filling in the CDB in an SRB passed by the tape class driver. Setting parameters typically involves a series of SRBs to complete the operation. After <i>SetDriveParameters</i> fills in a given SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>SetDriveParameters</i> again.
 
-<i>SetMediaParameters</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl_tape_set_media_params.md">IOCTL_TAPE_SET_MEDIA_PARAMS</a> request. This routine is required. <i>SetMediaParameters</i> sets the block size of a tape by filling in the CDB in an SRB passed by the tape class driver. Setting the block size typically requires more than one SRB to complete the operation, starting with a test unit ready which the miniclass driver requests by returning TAPE_STATUS_CHECK_TEST_UNIT_READY the first time the tape class driver calls the routine. 
+<i>SetMediaParameters</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560636">IOCTL_TAPE_SET_MEDIA_PARAMS</a> request. This routine is required. <i>SetMediaParameters</i> sets the block size of a tape by filling in the CDB in an SRB passed by the tape class driver. Setting the block size typically requires more than one SRB to complete the operation, starting with a test unit ready which the miniclass driver requests by returning TAPE_STATUS_CHECK_TEST_UNIT_READY the first time the tape class driver calls the routine. 
 
 After <i>SetMediaParameters</i> fills in a given SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>SetMediaParameters</i> again. 
 
-<i>SetPosition</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl_tape_set_position.md">IOCTL_TAPE_SET_POSITION</a> request. This routine is required. <i>SetPosition</i> sets the position of a tape by filling in the CDB in an SRB passed by the tape class driver. Setting the position typically requires one SRB. After <i>SetPosition</i> fills in the SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>SetPosition</i> again. <i>SetPosition</i> then returns TAPE_STATUS_SUCCESS.
+<i>SetPosition</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560637">IOCTL_TAPE_SET_POSITION</a> request. This routine is required. <i>SetPosition</i> sets the position of a tape by filling in the CDB in an SRB passed by the tape class driver. Setting the position typically requires one SRB. After <i>SetPosition</i> fills in the SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>SetPosition</i> again. <i>SetPosition</i> then returns TAPE_STATUS_SUCCESS.
 
-<i>WriteMarks</i> handles the device-specific aspects of an <a href="..\ntddtape\ni-ntddtape-ioctl_tape_write_marks.md">IOCTL_TAPE_WRITE_MARKS</a> request. This routine is required. <i>WriteMarks</i> writes marks to a tape by filling in the CDB in an SRB passed by the tape class driver. Writing marks typically takes one SRB to complete the operation. After <i>WriteMarks</i> fills in the SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>WriteMarks</i> again. <i>WriteMarks</i> then returns TAPE_STATUS_SUCCESS. 
+<i>WriteMarks</i> handles the device-specific aspects of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560641">IOCTL_TAPE_WRITE_MARKS</a> request. This routine is required. <i>WriteMarks</i> writes marks to a tape by filling in the CDB in an SRB passed by the tape class driver. Writing marks typically takes one SRB to complete the operation. After <i>WriteMarks</i> fills in the SRB and returns, the tape class driver sends the SRB to the device and, depending on the result of the SRB and the value of <i>RetryFlags</i>, calls <i>WriteMarks</i> again. <i>WriteMarks</i> then returns TAPE_STATUS_SUCCESS. 
 
 <i>PreProcessReadWrite</i> is an optional, special-purpose routine that performs any device-specific operations required before read and write operations. Most tape miniclass drivers do not need this routine. The activities of the <i>PreProcessReadWrite</i> routine are device specific. The routine can use the information passed to it by the class driver to implement special preprocessing for reads and writes. If a drive has limited capabilities, the driver may need this routine to maintain coherent state, for example.
 
@@ -253,36 +253,10 @@ The tape class driver assigns values to the members of TAPE_WMI_OPERATIONS struc
 The minidriver returns the WMI data in the buffer pointed to by the <b>DataBuffer</b> member of the TAPE_WMI_OPERATIONS structure.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Minitape.h (include Minitape.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\srb\ns-srb-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
 </dt>
 <dt>
 <a href="..\minitape\nf-minitape-tapeclassallocatesrbbuffer.md">TapeClassAllocateSrbBuffer</a>

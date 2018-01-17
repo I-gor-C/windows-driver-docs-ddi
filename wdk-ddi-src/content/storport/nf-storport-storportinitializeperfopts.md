@@ -103,41 +103,6 @@ Or if <i>Query</i> is set to <b>TRUE</b>,  the <b>Flags</b> member of the struct
 Available performance optimizations depend on the version of <a href="..\storport\ns-storport-_perf_configuration_data.md">PERF_CONFIGURATION_DATA</a>. Setting the <b>Version</b> member to <b>STOR_PERF_VERSION</b> will allow all supported optimizations to be selected.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-DDI compliance rules
-
-</th>
-<td width="70%">
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh454270">StorPortPerfOpts</a>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

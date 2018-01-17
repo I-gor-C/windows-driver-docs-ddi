@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 5b46e7d9-fbb0-4e55-b1f5-d9d0f1dd1f2c
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _KEY_NAME_INFORMATION, *PKEY_NAME_INFORMATION, KEY_NAME_INFORMATION
+ms.keywords: _KEY_NAME_INFORMATION, KEY_NAME_INFORMATION, *PKEY_NAME_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PKEY_NAME_INFORMATION, KEY_NAME_INFORMATION
+req.typenames: KEY_NAME_INFORMATION, *PKEY_NAME_INFORMATION
 ---
 
 # _KEY_NAME_INFORMATION structure
@@ -68,21 +68,6 @@ An array of wide characters that contains the name of the key. This character st
 ## -remarks
 The <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a> routine uses the <b>KEY_NAME_INFORMATION</b> structure to contain the registry key name. When the <i>KeyInformationClass</i> parameter of this routine is <b>KeyNameInformation</b>, the <i>KeyInformation</i> buffer is treated as a <b>KEY_NAME_INFORMATION</b> structure.  For more information about the <b>KeyNameInformation</b> enumeration value, see <a href="..\wdm\ne-wdm-_key_information_class.md">KEY_INFORMATION_CLASS</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d8c29339-274e-410a-893d-328703d902c3
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _IO_RESOURCE_LIST, *PIO_RESOURCE_LIST, IO_RESOURCE_LIST
+ms.keywords: _IO_RESOURCE_LIST, IO_RESOURCE_LIST, *PIO_RESOURCE_LIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PIO_RESOURCE_LIST, IO_RESOURCE_LIST
+req.typenames: IO_RESOURCE_LIST, *PIO_RESOURCE_LIST
 req.product: Windows 10 or later.
 ---
 
@@ -81,21 +81,6 @@ The first element in an array of one or more <a href="..\wdm\ns-wdm-_io_resource
 ## -remarks
 This structure is the header for an array of <b>IO_RESOURCE_DESCRIPTOR</b> structures. The <b>Descriptors</b> member contains the first element in this array, and the <b>Count</b> member specifies the total number of array elements. If the array contains more than one element, the remaining elements in the array immediately follow the <b>IO_RESOURCE_LIST</b> structure in memory. The total number of bytes occupied by the <b>IO_RESOURCE_LIST</b> structure and any array elements that follow this structure is <b>sizeof</b>(<b>IO_RESOURCE_LIST</b>) + (<b>Count</b> - 1) * <b>sizeof</b>(<b>IO_RESOURCE_DESCRIPTOR</b>).
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

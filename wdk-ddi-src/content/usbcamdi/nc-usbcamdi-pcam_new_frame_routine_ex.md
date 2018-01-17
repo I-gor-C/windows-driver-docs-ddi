@@ -90,41 +90,4 @@ USBCAMD calls the camera minidriver's <b>CamNewVideoFrameEx</b> callback functio
 
 The original USBCAMD does not call <b>CamNewVideoFrameEx</b>.
 
-This function is optional.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-DISPATCH_LEVEL (See Remarks section)
-
-</td>
-</tr>
-</table>
+This function is optional.</p>

@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: 1A188828-51CE-4C80-92CB-2C01861082CD
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CONFIGURABLE_CHARGER_PROPERTY_HEADER, CONFIGURABLE_CHARGER_PROPERTY_HEADER, *PCONFIGURABLE_CHARGER_PROPERTY_HEADER
+ms.keywords: _CONFIGURABLE_CHARGER_PROPERTY_HEADER, *PCONFIGURABLE_CHARGER_PROPERTY_HEADER, CONFIGURABLE_CHARGER_PROPERTY_HEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: CONFIGURABLE_CHARGER_PROPERTY_HEADER, *PCONFIGURABLE_CHARGER_PROPERTY_HEADER
+req.typenames: *PCONFIGURABLE_CHARGER_PROPERTY_HEADER, CONFIGURABLE_CHARGER_PROPERTY_HEADER
 ---
 
 # _CONFIGURABLE_CHARGER_PROPERTY_HEADER structure
@@ -76,21 +76,6 @@ Extend this structure to add your own values for the input to <a href="..\chargi
 
 Make sure you set <b>Header.Size</b> to the appropriate size of your new structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Charging.h (include Charging.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

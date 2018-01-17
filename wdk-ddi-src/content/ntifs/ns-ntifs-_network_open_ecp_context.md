@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 583fe92d-ce81-47b4-bd75-5566a5379790
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _NETWORK_OPEN_ECP_CONTEXT, *PNETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT
+ms.keywords: _NETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT, *PNETWORK_OPEN_ECP_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PNETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT
+req.typenames: NETWORK_OPEN_ECP_CONTEXT, *PNETWORK_OPEN_ECP_CONTEXT
 ---
 
 # _NETWORK_OPEN_ECP_CONTEXT structure
@@ -255,31 +255,6 @@ If a caller must verify that the file system acknowledged the <b>NETWORK_OPEN_EC
 
 Drivers that run on Windows 7 and later versions of Windows and that must interpret network ECP contexts on files that reside on Windows Vista must use the <a href="..\ntifs\ns-ntifs-_network_open_ecp_context_v0.md">NETWORK_OPEN_ECP_CONTEXT_V0</a> structure instead. Drivers that run on Windows Vista and later versions of Windows use the <b>NETWORK_OPEN_ECP_CONTEXT</b> structure to interpret network ECP contexts on files. However, the <b>DUMMYSTRUCTNAME.in.Flags</b> and <b>DUMMYSTRUCTNAME.out.Flags</b> members are only supported starting with Windows 7. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This structure is available starting with Windows Vista.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 06da3ec0-b8d3-4bd8-8270-ead38b7deada
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _OB_OPERATION_REGISTRATION, OB_OPERATION_REGISTRATION, *POB_OPERATION_REGISTRATION
+ms.keywords: _OB_OPERATION_REGISTRATION, *POB_OPERATION_REGISTRATION, OB_OPERATION_REGISTRATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: OB_OPERATION_REGISTRATION, *POB_OPERATION_REGISTRATION
+req.typenames: *POB_OPERATION_REGISTRATION, OB_OPERATION_REGISTRATION
 req.product: Windows 10 or later.
 ---
 
@@ -102,31 +102,6 @@ This structure is used by the <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObR
 
 In each <b>OB_OPERATION_REGISTRATION</b> structure passed to <b>ObRegisterCallback</b>, the caller must supply one or both callback routines. If the <b>PreOperation</b> and <b>PostOperation</b> members of this structure are both <b>NULL</b>, the callback registration operation fails.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows Server 2008.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

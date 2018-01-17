@@ -118,21 +118,6 @@ The ACL structure is to be treated as though it were opaque, and drivers should 
 ACL and ACE structures must be aligned on 32-bit boundaries. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

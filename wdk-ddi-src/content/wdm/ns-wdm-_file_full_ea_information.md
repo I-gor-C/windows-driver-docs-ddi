@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 1b9bbb6a-2dfb-4f3f-8083-62b51a62dec6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _FILE_FULL_EA_INFORMATION, *PFILE_FULL_EA_INFORMATION, FILE_FULL_EA_INFORMATION
+ms.keywords: _FILE_FULL_EA_INFORMATION, FILE_FULL_EA_INFORMATION, *PFILE_FULL_EA_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PFILE_FULL_EA_INFORMATION, FILE_FULL_EA_INFORMATION
+req.typenames: FILE_FULL_EA_INFORMATION, *PFILE_FULL_EA_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -89,21 +89,6 @@ This structure is longword-aligned. If a set of <b>FILE_FULL_EA_INFORMATION</b> 
 
 The value(s) associated with each entry follows the <b>EaName</b> array. That is, an EA's values are located at <b>EaName</b> + (<b>EaNameLength</b> + 1). 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

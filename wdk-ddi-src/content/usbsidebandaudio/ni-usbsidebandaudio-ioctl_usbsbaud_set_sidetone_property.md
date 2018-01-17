@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 2E8EE398-A33A-4978-8198-72AF9608C517
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _USBSCAN_TIMEOUT, *PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT
+ms.keywords: _USBFN_POWER_FILTER_STATE, USBFN_POWER_FILTER_STATE, *PUSBFN_POWER_FILTER_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT
+req.typenames: USBFN_POWER_FILTER_STATE, *PUSBFN_POWER_FILTER_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -84,21 +84,6 @@ I/O Status block
 ## -remarks
 TBD
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>USBSidebandAudio.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

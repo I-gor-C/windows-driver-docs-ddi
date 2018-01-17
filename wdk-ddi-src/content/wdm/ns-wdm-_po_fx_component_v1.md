@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4ACCA041-C638-4124-AFC1-3F34671C9EF8
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PO_FX_COMPONENT_V1, PO_FX_COMPONENT_V1, *PPO_FX_COMPONENT_V1, PO_FX_COMPONENT, *PPO_FX_COMPONENT
+ms.keywords: _PO_FX_COMPONENT_V1, *PPO_FX_COMPONENT_V1, PO_FX_COMPONENT_V1, PO_FX_COMPONENT, *PPO_FX_COMPONENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: PO_FX_COMPONENT_V1, *PPO_FX_COMPONENT_V1
+req.typenames: *PPO_FX_COMPONENT_V1, PO_FX_COMPONENT_V1
 req.product: Windows 10 or later.
 ---
 
@@ -120,31 +120,6 @@ During the component activation, PoFx asynchronously activates all providers fir
 When the component transitions to the idle state, PoFx first makes the dependent components idle. After the driver completes the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406420">ComponentIdleConditionCallback</a> and the platform extension plug-in (PEP) is notified that the component is idle, PoFx recursively traverses the dependency graph in breadth-first traversal and asynchronously idles each provider.
 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

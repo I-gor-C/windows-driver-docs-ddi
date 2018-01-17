@@ -7,8 +7,8 @@ old-location: netvista\rilimsfailure.htm
 old-project: netvista
 ms.assetid: 8be10470-3761-4120-8987-00d6fcc9a989
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILIMSFAILURE, RILIMSFAILURE, *LPRILIMSFAILURE
+ms.date: 1/11/2018
+ms.keywords: RILIMSFAILURE, *LPRILIMSFAILURE, RILIMSFAILURE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILIMSFAILURE, *LPRILIMSFAILURE
+req.typenames: *LPRILIMSFAILURE, RILIMSFAILURE
 ---
 
 # RILIMSFAILURE structure
@@ -82,19 +82,3 @@ typedef struct _RILIMSFAILURE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

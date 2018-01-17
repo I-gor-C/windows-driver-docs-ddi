@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 12d9b0c1-6dce-4dc6-a8df-706408e1fbe1
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _L2CAP_CONFIG_VALUE_RANGE, *PL2CAP_CONFIG_VALUE_RANGE, L2CAP_CONFIG_VALUE_RANGE
+ms.keywords: _L2CAP_CONFIG_VALUE_RANGE, L2CAP_CONFIG_VALUE_RANGE, *PL2CAP_CONFIG_VALUE_RANGE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: *PL2CAP_CONFIG_VALUE_RANGE, L2CAP_CONFIG_VALUE_RANGE
+req.typenames: L2CAP_CONFIG_VALUE_RANGE, *PL2CAP_CONFIG_VALUE_RANGE
 ---
 
 # _L2CAP_CONFIG_VALUE_RANGE structure
@@ -113,31 +113,6 @@ For
     <b>Min</b>, and 
     <b>Max</b> settings for both inbound and outbound connections.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

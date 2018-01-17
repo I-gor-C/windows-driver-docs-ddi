@@ -7,7 +7,7 @@ old-location: netvista\rilservicesettingsstatus_2.htm
 old-project: netvista
 ms.assetid: 4d193398-752f-4aef-8ae6-59c9afabd79a
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSERVICESETTINGSSTATUS, RILSERVICESETTINGSSTATUS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,19 +71,3 @@ typedef enum _RILSERVICESETTINGSSTATUS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

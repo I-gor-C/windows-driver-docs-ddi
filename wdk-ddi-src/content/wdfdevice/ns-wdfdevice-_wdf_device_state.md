@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_state.htm
 old-project: wdf
 ms.assetid: 5d0a2303-df2b-45fe-9c88-df4bb19a2a9f
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _WDF_DEVICE_STATE, WDF_DEVICE_STATE, *PWDF_DEVICE_STATE
+ms.date: 1/11/2018
+ms.keywords: _WDF_DEVICE_STATE, *PWDF_DEVICE_STATE, WDF_DEVICE_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: WDF_DEVICE_STATE, *PWDF_DEVICE_STATE
+req.typenames: *PWDF_DEVICE_STATE, WDF_DEVICE_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -105,40 +105,4 @@ The <b>WDF_DEVICE_STATE</b> structure is used as a parameter to <a href="..\wdfd
 
 To initialize a <b>WDF_DEVICE_STATE</b> structure, the driver must call <a href="..\wdfdevice\nf-wdfdevice-wdf_device_state_init.md">WDF_DEVICE_STATE_INIT</a>.
 
-For more information about the members of the <b>WDF_DEVICE_STATE</b> structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559618">PNP_DEVICE_STATE</a>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfdevice.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+For more information about the members of the <b>WDF_DEVICE_STATE</b> structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559618">PNP_DEVICE_STATE</a>.</p>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 718431f9-e4cc-4e79-84d3-a59f5399e711
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _HBAFCPScsiEntry, HBAFCPScsiEntry, *PHBAFCPScsiEntry
+ms.keywords: _HBAFCPScsiEntry, *PHBAFCPScsiEntry, HBAFCPScsiEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: HBAFCPScsiEntry, *PHBAFCPScsiEntry
+req.typenames: *PHBAFCPScsiEntry, HBAFCPScsiEntry
 ---
 
 # _HBAFCPScsiEntry structure
@@ -73,21 +73,6 @@ Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbascsiid.md">HBA
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

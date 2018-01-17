@@ -79,31 +79,6 @@ In Windows 7, the maximum number of groups in a multiprocessor system is four, b
 Kernel-mode routines that use the <b>PROCESSOR_NUMBER</b> structure include <a href="..\wdm\nf-wdm-kegetcurrentprocessornumberex.md">KeGetCurrentProcessorNumberEx</a>, <a href="..\wdm\nf-wdm-kegetprocessorindexfromnumber.md">KeGetProcessorIndexFromNumber</a>, <a href="..\wdm\nf-wdm-kegetprocessornumberfromindex.md">KeGetProcessorNumberFromIndex</a>, and <a href="..\wdm\nf-wdm-kequerylogicalprocessorrelationship.md">KeQueryLogicalProcessorRelationship</a>. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported in Windows 7 and later versions of the Windows operating system. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Miniport.h (include Windows.h, Ntdef.h, Wdm.h, Ntddk.h, or Winnt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

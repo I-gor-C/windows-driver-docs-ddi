@@ -7,8 +7,8 @@ old-location: netvista\rilpsmediaconfigurationset_2.htm
 old-project: netvista
 ms.assetid: cdaa161e-2481-497c-8a9b-4c07a3d99d1f
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET
+ms.date: 1/11/2018
+ms.keywords: RILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET
+req.typenames: RILPSMEDIACONFIGURATIONSET, *LPRILPSMEDIACONFIGURATIONSET
 req.product: Windows 10 or later.
 ---
 
@@ -71,19 +71,3 @@ typedef struct _RILPSMEDIACONFIGURATIONSET {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

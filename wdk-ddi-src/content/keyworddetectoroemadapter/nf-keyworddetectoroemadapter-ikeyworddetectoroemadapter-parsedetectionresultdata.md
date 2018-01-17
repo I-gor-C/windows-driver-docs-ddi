@@ -69,7 +69,7 @@ A pointer to <b>IStream</b> bound to model data for the arming pattern.
 
 ### -param Result [in]
 
-A pointer to the <a href="..\ksmedia\ns-ksmedia-sounddetector_patternheader.md">SOUNDDETECTOR_PATTERNHEADER</a> from the DDI.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn957513">SOUNDDETECTOR_PATTERNHEADER</a> from the DDI.
 
 
 
@@ -132,52 +132,6 @@ The driver may return valid values for <i>KeywordStartTime</i> and <i>KeywordEnd
 If the caller receives <b>E_HW_RESET</b>, no keyword was detected by the hardware and the state was lost. A re-arm will be required to get back to a monitoring state.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>KeywordDetectorOemAdapter.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IDL
-
-</th>
-<td width="70%">
-<dl>
-<dt>KeywordDetectorOemAdapter.idl</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -187,7 +141,7 @@ IDL
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn932150">KSPROPERTY_SOUNDDETECTOR_MATCHRESULT</a>
 </dt>
 <dt>
-<a href="..\ksmedia\ns-ksmedia-sounddetector_patternheader.md">SOUNDDETECTOR_PATTERNHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957513">SOUNDDETECTOR_PATTERNHEADER</a>
 </dt>
 <dt>
 <a href="https://msdn.microsoft.com/c4cb588d-9482-4f90-a92e-75b604540d5c">CoTaskMemAlloc</a>

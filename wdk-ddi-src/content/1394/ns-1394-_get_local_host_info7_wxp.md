@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 65c4b7d9-dbd8-4f94-b407-1b06543d0b56
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _GET_LOCAL_HOST_INFO7_WXP, *PGET_LOCAL_HOST_INFO7_WXP, GET_LOCAL_HOST_INFO7_WXP, GET_LOCAL_HOST_INFO7, *PGET_LOCAL_HOST_INFO7
+ms.keywords: _GET_LOCAL_HOST_INFO7_WXP, GET_LOCAL_HOST_INFO7_WXP, *PGET_LOCAL_HOST_INFO7_WXP, GET_LOCAL_HOST_INFO7, *PGET_LOCAL_HOST_INFO7
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PGET_LOCAL_HOST_INFO7_WXP, GET_LOCAL_HOST_INFO7_WXP
+req.typenames: GET_LOCAL_HOST_INFO7_WXP, *PGET_LOCAL_HOST_INFO7_WXP
 ---
 
 # _GET_LOCAL_HOST_INFO7_WXP structure
@@ -66,19 +66,3 @@ Specifies the maximum size of a single DMA transfer on the 1394 host controller.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

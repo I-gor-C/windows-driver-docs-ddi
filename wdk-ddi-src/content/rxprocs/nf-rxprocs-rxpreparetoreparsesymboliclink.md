@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -110,42 +110,6 @@ As part of this routine, <i>RxContext</i> is also tagged appropriately. This ens
 
 The value of the <i>ReparseRequired</i> parameter assumes significance only if STATUS_SUCCESS is returned from this routine. If <i>ReparseRequired</i> is <b>FALSE</b>, this implies that no reparse attempt is required and the symbolic link file itself should be manipulated as opposed to the target of the link. If <i>ReparseRequired</i> is <b>TRUE</b>, this implies that a reparse attempt was successfully setup. In such cases, it is imperative that the network mini redirector returns STATUS_REPARSE for the associated <b>MRxCreate</b> call. RDBSS will initiate a check for this condition. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rxprocs.h (include Rxprocs.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

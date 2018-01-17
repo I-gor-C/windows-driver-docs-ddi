@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: d3c164a6-4830-4f1f-9fa5-5cd61e796e31
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SELF_ID_MORE, SELF_ID_MORE, *PSELF_ID_MORE
+ms.keywords: _SELF_ID_MORE, *PSELF_ID_MORE, SELF_ID_MORE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SELF_ID_MORE, *PSELF_ID_MORE
+req.typenames: *PSELF_ID_MORE, SELF_ID_MORE
 ---
 
 # _SELF_ID_MORE structure
@@ -306,21 +306,6 @@ This member contains bits 6-7 of byte 3 of the self ID packet.
 ## -remarks
 This structure corresponds to self ID packet 1, as described in the <i>P1394a</i> specification. Note that type 2 self ID packets are identical to type 1 packets, except that the last five fields are replaced by a reserved area. The SELF_ID_MORE structure can be used to access all of the significant information in both type 1 and type 2 self ID packets. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

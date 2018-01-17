@@ -7,7 +7,7 @@ old-location: netvista\getdeviceinforesponse_2.htm
 old-project: netvista
 ms.assetid: 318927ab-6134-4a01-bf9c-a85619d2bbdf
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: GETDEVICEINFORESPONSE, *LPGETDEVICEINFORESPONSE, GETDEVICEINFORESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,19 +59,3 @@ typedef struct _GETDEVICEINFORESPONSE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

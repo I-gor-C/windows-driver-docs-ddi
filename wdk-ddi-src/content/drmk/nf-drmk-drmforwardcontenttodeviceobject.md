@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Drmk.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PWDI_TX_METADATA, WDI_TX_METADATA
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 # DrmForwardContentToDeviceObject function
@@ -130,53 +130,6 @@ The handler for the KSPROPERTY_DRMAUDIOSTREAM_CONTENTID property must verify tha
 
 <b>DrmForwardContentToDeviceObject</b> is an entry point in the <a href="audio.kernel_mode_wdm_audio_components#drmk_system_driver#drmk_system_driver">DRMK system driver</a>, Drmk.sys. DRMK sends an IOCTL_KS_PROPERTY request for the KSPROPERTY_DRMAUDIOSTREAM_CONTENTID property at IRQL PASSIVE_LEVEL.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.h (include Drmk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

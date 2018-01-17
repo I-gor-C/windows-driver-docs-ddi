@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 3FA3494F-DFFF-414E-B88C-DF7C034B96C6
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _ROOTHUB_30PORT_INFO_EX, ROOTHUB_30PORT_INFO_EX, *PROOTHUB_30PORT_INFO_EX
+ms.keywords: _ROOTHUB_30PORT_INFO_EX, *PROOTHUB_30PORT_INFO_EX, ROOTHUB_30PORT_INFO_EX
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
-req.typenames: ROOTHUB_30PORT_INFO_EX, *PROOTHUB_30PORT_INFO_EX
+req.typenames: *PROOTHUB_30PORT_INFO_EX, ROOTHUB_30PORT_INFO_EX
 req.product: Windows 10 or later.
 ---
 
@@ -83,19 +83,3 @@ A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxroothub.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

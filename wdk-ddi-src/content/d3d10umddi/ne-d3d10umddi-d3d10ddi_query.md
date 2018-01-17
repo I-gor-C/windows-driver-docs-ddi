@@ -433,31 +433,6 @@ For architectures that report the number of detectable parallel units not equal 
 D3D10DDI_COUNTER_HOST_ADAPTER_BANDWIDTH_UTILIZATION, D3D10DDI_COUNTER_LOCAL_VIDMEM_BANDWIDTH_UTILIZATION, D3D10DDI_COUNTER_VERTEX_THROUGHPUT_UTILIZATION, D3D10DDI_COUNTER_TRISETUP_THROUGHPUT_UTILIZATION, and D3D10DDI_COUNTER_FILLRATE_THROUGHPUT_UTILIZATION all report a percentage of a bottleneck that can be used. Applications can then determine when a certain theoretical maximum is being stressed so that they can determine how to work around the bottleneck.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

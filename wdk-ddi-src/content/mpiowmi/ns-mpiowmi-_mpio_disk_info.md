@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: edefb7f5-f423-48cc-81c9-16153c228d45
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MPIO_DISK_INFO, MPIO_DISK_INFO, *PMPIO_DISK_INFO
+ms.keywords: _MPIO_DISK_INFO, *PMPIO_DISK_INFO, MPIO_DISK_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MPIO_DISK_INFO, *PMPIO_DISK_INFO
+req.typenames: *PMPIO_DISK_INFO, MPIO_DISK_INFO
 ---
 
 # _MPIO_DISK_INFO structure
@@ -66,19 +66,3 @@ An array that returns the information representing each multi-path LUN (pseudo-L
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

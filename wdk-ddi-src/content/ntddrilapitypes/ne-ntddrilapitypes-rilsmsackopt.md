@@ -7,7 +7,7 @@ old-location: netvista\rilsmsackopt.htm
 old-project: netvista
 ms.assetid: 652315db-0cdc-4c32-8fa0-3a538c917497
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSMSACKOPT, RILSMSACKOPT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,3 @@ typedef enum _RILSMSACKOPT {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

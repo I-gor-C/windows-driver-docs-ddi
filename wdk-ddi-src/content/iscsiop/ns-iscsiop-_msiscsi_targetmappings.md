@@ -81,21 +81,6 @@ A variable-length array of <a href="..\iscsidef\ns-iscsidef-_iscsi_targetmapping
 You must implement this class.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

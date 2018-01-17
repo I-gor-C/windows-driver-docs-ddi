@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 966922b6-fa83-491e-bf03-848f798ebc69
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _EMULATOR_ACCESS_ENTRY, *PEMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY
+ms.keywords: _EMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY, *PEMULATOR_ACCESS_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: *PEMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY
+req.typenames: EMULATOR_ACCESS_ENTRY, *PEMULATOR_ACCESS_ENTRY
 ---
 
 # _EMULATOR_ACCESS_ENTRY structure
@@ -103,21 +103,6 @@ VGA-compatible miniport drivers of SVGA video hardware in x86-based machines mus
 
 Data in each EMULATOR_ACCESS_ENTRY-type element is used to determine which I/O ports (memory locations at which adapter registers are accessible) in the miniport driver's access ranges have been taken over (hooked out) by the V86 emulator on x86-based platforms. Values written to these locations by full-screen MS-DOS applications are trapped and forwarded to the miniport driver's corresponding <i>SvgaHwIoPortXxx</i> function for validation before they are written to or read from the video adapter. However, the miniport driver can enable the application to directly access particular I/O port ranges by calling <b>VideoPortSetTrappedEmulatorPorts</b> to improve performance.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Miniport.h (include Miniport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: f6cb4532-fc66-45e7-a779-0981465d69fc
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _GetFCPStatistics_IN, GetFCPStatistics_IN, *PGetFCPStatistics_IN
+ms.keywords: _GetFCPStatistics_IN, *PGetFCPStatistics_IN, GetFCPStatistics_IN
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: GetFCPStatistics_IN, *PGetFCPStatistics_IN
+req.typenames: *PGetFCPStatistics_IN, GetFCPStatistics_IN
 ---
 
 # _GetFCPStatistics_IN structure
@@ -62,21 +62,6 @@ Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_hbascsiid.md">HBA
 ## -remarks
 The WMI tool suite generates a declaration of the GetFCPStatistics_IN structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562506">MSFC_HBAAdapterMethods WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

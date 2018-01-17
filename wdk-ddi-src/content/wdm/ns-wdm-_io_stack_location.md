@@ -651,7 +651,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ### -field DeviceObject
 
-A pointer to the driver-created <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure representing the target physical, logical, or virtual device for which this driver is to handle the IRP.
+A pointer to the driver-created <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure representing the target physical, logical, or virtual device for which this driver is to handle the IRP.
 
 
 ### -field FileObject
@@ -666,7 +666,7 @@ A pointer to a <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure
 
 
 ## -remarks
-For each IRP, there is one <b>IO_STACK_LOCATION</b> structure for each driver in a <a href="wdkgloss.d#wdkgloss.driver_stack#wdkgloss.driver_stack"><i>driver stack</i></a>. Each IRP's set of I/O stack locations is appended to the IRP, following the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure.
+For each IRP, there is one <b>IO_STACK_LOCATION</b> structure for each driver in a <a href="wdkgloss.d#wdkgloss.driver_stack#wdkgloss.driver_stack"><i>driver stack</i></a>. Each IRP's set of I/O stack locations is appended to the IRP, following the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure.
 
 Every higher-level driver is responsible for setting up the I/O stack location for the next-lower driver in each IRP. A driver must call <a href="..\wdm\nf-wdm-iogetcurrentirpstacklocation.md">IoGetCurrentIrpStackLocation</a> to get a pointer to its own stack location for each IRP. Higher-level drivers can call <a href="..\wdm\nf-wdm-iogetnextirpstacklocation.md">IoGetNextIrpStackLocation</a> to get a pointer to the next-lower driver's stack location.
 
@@ -678,21 +678,6 @@ If a higher-level driver allocates IRPs to make requests of its own, its <i>IoCo
 
 In some cases, a higher-level driver layered over a mass-storage device driver is responsible for splitting up large transfer requests for the underlying device driver. In particular, SCSI class drivers must check the <b>Parameters.Read.Length</b> and <b>Parameters.Write.Length</b>, determine whether the size of the requested transfer exceeds the underlying HBA's transfer capabilities, and, if so, split the <b>Length</b> of the original request into a sequence of partial transfers to satisfy the original IRP.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -721,7 +706,7 @@ Header
 <a href="..\wdm\ns-wdm-_io_status_block.md">IO_STATUS_BLOCK</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
+<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
 </dt>
 </dl>
  

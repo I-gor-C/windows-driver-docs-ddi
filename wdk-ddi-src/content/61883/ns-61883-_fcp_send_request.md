@@ -8,7 +8,7 @@ old-project: IEEE
 ms.assetid: 82F36729-57E0-49AB-8C2D-BCBA6EED33EE
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _FCP_SEND_REQUEST, FCP_REQUEST, *PFCP_REQUEST, *PFCP_SEND_REQUEST, FCP_SEND_REQUEST
+ms.keywords: _FCP_SEND_REQUEST, FCP_REQUEST, *PFCP_REQUEST, FCP_SEND_REQUEST, *PFCP_SEND_REQUEST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: FCP_REQUEST, *PFCP_REQUEST, *PFCP_SEND_REQUEST, FCP_SEND_REQUEST
+req.typenames: FCP_REQUEST, *PFCP_REQUEST, FCP_SEND_REQUEST, *PFCP_SEND_REQUEST
 ---
 
 # _FCP_SEND_REQUEST structure
@@ -78,21 +78,6 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp-&gt;IoSt
 
 If the protocol driver is unable to allocate resources, it sets <b>Irp-&gt;IoStatus.Status </b>to STATUS_INSUFFICIENT_RESOURCES.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>61883.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

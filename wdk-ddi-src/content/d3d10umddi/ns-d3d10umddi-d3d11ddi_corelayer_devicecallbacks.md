@@ -301,31 +301,6 @@ Because the Direct3D 11 runtime might change the function pointers dynamically, 
 The driver uses the functions with "State" in their name to retrieve the current state of the pipeline. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-D3D11DDI_CORELAYER_DEVICECALLBACKS is supported beginning with the Windows 7 operating system. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3d10umddi.h (include D3d10umddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

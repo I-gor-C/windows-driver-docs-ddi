@@ -105,31 +105,6 @@ If the caller of <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCrea
 The following example routine demonstrates how a minifilter can call <a href="..\fltkernel\nf-fltkernel-fltcreatefileex2.md">FltCreateFileEx2</a> with <b>FLT_CREATEFILE_TARGET_ECP_CONTEXT</b> to handle a reparse to a different volume when required to find a file target.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-This structure is available starting with Windows 8. 
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Fltkernel.h (include FltKernel.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

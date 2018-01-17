@@ -98,19 +98,3 @@ If the operation fails, <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-b
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Sffdisk.h (include Sffdisk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

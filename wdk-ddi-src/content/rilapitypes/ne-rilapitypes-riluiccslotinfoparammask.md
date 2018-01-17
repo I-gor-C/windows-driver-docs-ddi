@@ -7,7 +7,7 @@ old-location: netvista\riluiccslotinfoparammask_2.htm
 old-project: netvista
 ms.assetid: 003c888b-5935-460d-8b89-13f4ab69dc85
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCSLOTINFOPARAMMASK, RILUICCSLOTINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILUICCSLOTINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 396DA33D-46E0-456C-9FCF-85A7D9915F48
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _REG_QUERY_KEY_NAME, REG_QUERY_KEY_NAME, *PREG_QUERY_KEY_NAME
+ms.keywords: _REG_QUERY_KEY_NAME, *PREG_QUERY_KEY_NAME, REG_QUERY_KEY_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: REG_QUERY_KEY_NAME, *PREG_QUERY_KEY_NAME
+req.typenames: *PREG_QUERY_KEY_NAME, REG_QUERY_KEY_NAME
 req.product: Windows 10 or later.
 ---
 
@@ -102,31 +102,6 @@ The system passes this structure to the <a href="https://msdn.microsoft.com/libr
 
 For more information about registry filtering operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545879">Filtering Registry Calls</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available on Microsoft Windows 10 and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

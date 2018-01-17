@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 35f2b42d-d67f-4fd4-adde-918a2587980b
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CLFS_CONTEXT_MODE, CLFS_CONTEXT_MODE, *PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE
+ms.keywords: _CLFS_CONTEXT_MODE, *PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE, CLFS_CONTEXT_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -30,8 +30,8 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
-req.typenames: CLFS_CONTEXT_MODE, *PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE
+req.irql: PASSIVE_LEVEL
+req.typenames: *PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE, CLFS_CONTEXT_MODE
 req.product: Windows 10 or later.
 ---
 
@@ -80,21 +80,6 @@ Indicates that the next record in the sequence is the record in the stream that 
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

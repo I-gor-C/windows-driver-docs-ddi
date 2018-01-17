@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 80CB670A-4E64-4E53-815C-12580BE982B5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBFN_USB_STRING, *PUSBFN_USB_STRING, USBFN_USB_STRING
+ms.keywords: _USBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBFN_USB_STRING, USBFN_USB_STRING
+req.typenames: *PUSBFN_ON_ATTACH, USBFN_ON_ATTACH
 req.product: Windows 10 or later.
 ---
 
@@ -47,7 +47,7 @@ The class driver sends this request to register a USB string descriptor.
 ## -ioctlparameters
 
 ### -input-buffer
-A pointer to a buffer that contains a  <a href="..\usbfnbase\ns-usbfnbase-_usbfn_usb_string.md">USBFN_USB_STRING</a> structure with the USB string descriptor. 
+A pointer to a buffer that contains a  <a href="https://msdn.microsoft.com/library/windows/hardware/mt188007">USBFN_USB_STRING</a> structure with the USB string descriptor. 
 
 
 ### -input-buffer-length
@@ -79,25 +79,10 @@ If the request is successful, the USB function class extension (UFX) returns STA
 This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_activate_usb_bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbfnioctl.h</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\usbfnbase\ns-usbfnbase-_usbfn_usb_string.md">USBFN_USB_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188007">USBFN_USB_STRING</a>
 </dt>
 <dt>
 <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_activate_usb_bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a>

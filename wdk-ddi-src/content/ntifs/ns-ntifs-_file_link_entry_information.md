@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: b42edb45-3f4f-4f65-aede-8f51149dda78
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _FILE_LINK_ENTRY_INFORMATION, *PFILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION
+ms.keywords: _FILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION, *PFILE_LINK_ENTRY_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PFILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION
+req.typenames: FILE_LINK_ENTRY_INFORMATION, *PFILE_LINK_ENTRY_INFORMATION
 ---
 
 # _FILE_LINK_ENTRY_INFORMATION structure
@@ -79,31 +79,6 @@ The name of the link.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include FltKernel.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

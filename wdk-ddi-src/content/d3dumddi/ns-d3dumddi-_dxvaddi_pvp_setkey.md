@@ -56,36 +56,11 @@ typedef struct _DXVADDI_PVP_SETKEY {
 
 ### -field ContentKey
 
-[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562922">DXVADDI_PVP_KEY128</a> structure that contains the 128-bit key.
+[in] A <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_block128.md">DXVADDI_PVP_KEY128</a> structure that contains the 128-bit key.
 
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>
@@ -96,7 +71,7 @@ Header
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_decodebeginframe.md">DecodeBeginFrame</a>
 </dt>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562922">DXVADDI_PVP_KEY128</a>
+<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_pvp_block128.md">DXVADDI_PVP_KEY128</a>
 </dt>
 </dl>
  

@@ -47,19 +47,3 @@ This structure is for internal use only.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Charging.h (include Charging.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

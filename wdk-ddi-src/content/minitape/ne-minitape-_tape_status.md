@@ -242,25 +242,10 @@ Indicates that the media currently in the drive is a cleaner cartridge.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Minitape.h (include Ntddtape.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\ntddtape\ni-ntddtape-ioctl_tape_get_status.md">IOCTL_TAPE_GET_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560625">IOCTL_TAPE_GET_STATUS</a>
 </dt>
 </dl>
  

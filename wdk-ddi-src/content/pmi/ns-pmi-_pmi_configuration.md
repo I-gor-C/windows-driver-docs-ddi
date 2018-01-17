@@ -8,7 +8,7 @@ old-project: powermeter
 ms.assetid: 976b812e-deb2-445f-b69d-e00d10c6e5d8
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PMI_CONFIGURATION, PMI_CONFIGURATION, *PPMI_CONFIGURATION
+ms.keywords: _PMI_CONFIGURATION, *PPMI_CONFIGURATION, PMI_CONFIGURATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: PMI_CONFIGURATION, *PPMI_CONFIGURATION
+req.typenames: *PPMI_CONFIGURATION, PMI_CONFIGURATION
 ---
 
 # _PMI_CONFIGURATION structure
@@ -117,31 +117,6 @@ The <b>ConfigurationType</b> member is set to <b>PmiBudgetingConfiguration</b>.
 
 The <b>Configuration</b> member contains data that is  formatted as a <a href="..\pmi\ns-pmi-_pmi_budgeting_configuration.md">PMI_BUDGETING_CONFIGURATION</a> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pmi.h (include Pmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

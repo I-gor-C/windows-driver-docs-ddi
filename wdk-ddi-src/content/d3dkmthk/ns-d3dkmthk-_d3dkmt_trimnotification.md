@@ -63,7 +63,7 @@ typedef struct _D3DKMT_TRIMNOTIFICATION {
 
 ### -field Flags
 
-[in] A <a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_trimresidencyset_flags.md">D3DDDI_TRIMRESIDENCYSET_FLAGS</a> structure containing the trimming behavior flags.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/dn906328">D3DDDI_TRIMRESIDENCYSET_FLAGS</a> structure containing the trimming behavior flags.
 
 
 ### -field NumBytesToTrim
@@ -74,45 +74,10 @@ typedef struct _D3DKMT_TRIMNOTIFICATION {
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmthk.h (include D3dkmthk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\d3dukmdt\ns-d3dukmdt-d3dddi_trimresidencyset_flags.md">D3DDDI_TRIMRESIDENCYSET_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906328">D3DDDI_TRIMRESIDENCYSET_FLAGS</a>
 </dt>
 </dl>
  

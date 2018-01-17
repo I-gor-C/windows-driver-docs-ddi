@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 4f45e2ad-19f9-4308-8d63-edf066545e07
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SM_GetBindingSupport_OUT, SM_GetBindingSupport_OUT, *PSM_GetBindingSupport_OUT
+ms.keywords: _SM_GetBindingSupport_OUT, *PSM_GetBindingSupport_OUT, SM_GetBindingSupport_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SM_GetBindingSupport_OUT, *PSM_GetBindingSupport_OUT
+req.typenames: *PSM_GetBindingSupport_OUT, SM_GetBindingSupport_OUT
 ---
 
 # _SM_GetBindingSupport_OUT structure
@@ -66,20 +66,4 @@ The HBA_BIND_CAPABILITY binding capabilities.
 
 
 ## -remarks
-The WMI tool suite generates a declaration of the SM_GetBindingSupport_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WMI tool suite generates a declaration of the SM_GetBindingSupport_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.</p>

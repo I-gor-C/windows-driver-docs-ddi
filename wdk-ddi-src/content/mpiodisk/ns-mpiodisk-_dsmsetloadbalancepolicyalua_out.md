@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 00c5f766-299e-4c07-a3e0-61077518a37a
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DsmSetLoadBalancePolicyALUA_OUT, *PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT
+ms.keywords: _DsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT, *PDsmSetLoadBalancePolicyALUA_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT
+req.typenames: DsmSetLoadBalancePolicyALUA_OUT, *PDsmSetLoadBalancePolicyALUA_OUT
 ---
 
 # _DsmSetLoadBalancePolicyALUA_OUT structure
@@ -60,19 +60,3 @@ The status of the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

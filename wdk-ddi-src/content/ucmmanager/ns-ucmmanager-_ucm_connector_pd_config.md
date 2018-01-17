@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 9DE2AF2D-D6B5-4FC4-8871-246F3661980F
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UCM_CONNECTOR_PD_CONFIG, *PUCM_CONNECTOR_PD_CONFIG, UCM_CONNECTOR_PD_CONFIG
+ms.keywords: _UCM_CONNECTOR_PD_CONFIG, UCM_CONNECTOR_PD_CONFIG, *PUCM_CONNECTOR_PD_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUCM_CONNECTOR_PD_CONFIG, UCM_CONNECTOR_PD_CONFIG
+req.typenames: UCM_CONNECTOR_PD_CONFIG, *PUCM_CONNECTOR_PD_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -83,61 +83,6 @@ A pointer to the Policy Manager's implementation of the <a href="..\ucmmanager\n
 ## -remarks
 Initialize this structure by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_connector_pd_config_init.md">UCM_CONNECTOR_PD_CONFIG_INIT</a>. An initialized <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_typec_config.md">UCM_CONNECTOR_TYPEC_CONFIG</a> structure is set to the <b>PdConfig</b> member of the <a href="..\ucmmanager\ns-ucmmanager-_ucm_connector_config.md">UCM_CONNECTOR_CONFIG</a> structure, which is an input parameter value to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a> that is called by Policy Manager to create a connector object.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmmanager.h (include Ucmcx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: debugger
 ms.assetid: 31ffab25-ec34-42ff-bdde-c98fef003bfc
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _DEBUG_SYMBOL_ENTRY, DEBUG_SYMBOL_ENTRY, *PDEBUG_SYMBOL_ENTRY
+ms.keywords: _DEBUG_SYMBOL_ENTRY, *PDEBUG_SYMBOL_ENTRY, DEBUG_SYMBOL_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DEBUG_SYMBOL_ENTRY, *PDEBUG_SYMBOL_ENTRY
+req.typenames: *PDEBUG_SYMBOL_ENTRY, DEBUG_SYMBOL_ENTRY
 ---
 
 # _DEBUG_SYMBOL_ENTRY structure
@@ -127,21 +127,6 @@ Set to zero.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>DbgEng.h (include DbgEng.h, DbgHelp.h, or DbgHelp.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

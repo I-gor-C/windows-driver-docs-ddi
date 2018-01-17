@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: 40b81630-997f-4427-8d02-5004de6fc943
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _SRIOV_MITIGATED_RANGES_INPUT, *PSRIOV_MITIGATED_RANGES_INPUT, SRIOV_MITIGATED_RANGES_INPUT
+ms.keywords: _SRIOV_MITIGATED_RANGES_INPUT, SRIOV_MITIGATED_RANGES_INPUT, *PSRIOV_MITIGATED_RANGES_INPUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PSRIOV_MITIGATED_RANGES_INPUT, SRIOV_MITIGATED_RANGES_INPUT
+req.typenames: SRIOV_MITIGATED_RANGES_INPUT, *PSRIOV_MITIGATED_RANGES_INPUT
 ---
 
 # _SRIOV_MITIGATED_RANGES_INPUT structure
@@ -66,19 +66,3 @@ The number of BAR of the ranges of memory-mapped I/O space.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pcivirt.h</dt>
-</dl>
-</td>
-</tr>
-</table>

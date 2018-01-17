@@ -7,7 +7,7 @@ old-location: netvista\wdi_p2p_service_discovery_type.htm
 old-project: netvista
 ms.assetid: 5CA8F330-7AFE-44C9-BCCA-CA93479B9754
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_P2P_SERVICE_DISCOVERY_TYPE, WDI_P2P_SERVICE_DISCOVERY_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,39 +89,3 @@ The adapter encodes ASP2 service hashes in the P2P IEs, tracks  service names (s
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

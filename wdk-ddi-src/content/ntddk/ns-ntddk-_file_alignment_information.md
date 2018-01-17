@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: d3990d67-aa0c-4d17-9126-80fdcebbd306
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _FILE_ALIGNMENT_INFORMATION, FILE_ALIGNMENT_INFORMATION, *PFILE_ALIGNMENT_INFORMATION
+ms.keywords: _FILE_ALIGNMENT_INFORMATION, *PFILE_ALIGNMENT_INFORMATION, FILE_ALIGNMENT_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: FILE_ALIGNMENT_INFORMATION, *PFILE_ALIGNMENT_INFORMATION
+req.typenames: *PFILE_ALIGNMENT_INFORMATION, FILE_ALIGNMENT_INFORMATION
 ---
 
 # _FILE_ALIGNMENT_INFORMATION structure
@@ -56,31 +56,16 @@ typedef struct _FILE_ALIGNMENT_INFORMATION {
 
 ### -field AlignmentRequirement
 
-The buffer alignment required by the underlying device. For a list of system-defined values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>. The value must be one of the FILE_<i>XXX</i>_ALIGNMENT values defined in Wdm.h. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>.
+The buffer alignment required by the underlying device. For a list of system-defined values, see <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>. The value must be one of the FILE_<i>XXX</i>_ALIGNMENT values defined in Wdm.h. For more information, see <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547807">Initializing a Device Object</a>.
 
 
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddk.h (include Ntddk.h or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
 </dt>
 <dt>
 <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a>

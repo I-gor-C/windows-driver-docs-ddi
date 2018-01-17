@@ -7,7 +7,7 @@ old-location: netvista\rilsmssupportcaps_2.htm
 old-project: netvista
 ms.assetid: 38dac27d-1415-44bb-8dd6-2a6b6bd2a774
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSMSSUPPORTCAPS, RILSMSSUPPORTCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILSMSSUPPORTCAPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

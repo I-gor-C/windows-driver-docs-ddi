@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4783CB44-3A55-4C7C-8EA2-1A72317CC955
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_PPM_IDLE_SELECT, PEP_PPM_IDLE_SELECT, *PPEP_PPM_IDLE_SELECT
+ms.keywords: _PEP_PPM_IDLE_SELECT, *PPEP_PPM_IDLE_SELECT, PEP_PPM_IDLE_SELECT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: PEP_PPM_IDLE_SELECT, *PPEP_PPM_IDLE_SELECT
+req.typenames: *PPEP_PPM_IDLE_SELECT, PEP_PPM_IDLE_SELECT
 ---
 
 # _PEP_PPM_IDLE_SELECT structure
@@ -98,31 +98,6 @@ typedef struct _PEP_PPM_IDLE_SELECT {
 ## -remarks
 This structure is used by the <a href="kernel.pep_notify_ppm_idle_select">PEP_NOTIFY_PPM_IDLE_SELECT</a> notification. The <b>Constraints</b>, <b>DependencyArrayCount</b>, and <b>DependencyArray</b> members of the structure contain input values supplied by PoFx when this notification is sent. The remaining members contain output values that the PEP writes to the structure in response to the notification.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pep_x.h (include Pepfx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

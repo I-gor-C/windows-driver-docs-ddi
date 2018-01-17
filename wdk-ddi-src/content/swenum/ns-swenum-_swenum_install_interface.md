@@ -76,21 +76,6 @@ A reference string that a driver can use to uniquely identify multiple interface
 The <i>swenum</i> driver uses device interface instances as placeholders for software devices created on demand.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Swenum.h (include Swenum.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

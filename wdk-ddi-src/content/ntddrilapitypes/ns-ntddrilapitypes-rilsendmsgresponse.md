@@ -7,8 +7,8 @@ old-location: netvista\rilsendmsgresponse.htm
 old-project: netvista
 ms.assetid: 64ff0ba7-726e-49ee-bb7c-338b77458fc1
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSENDMSGRESPONSE, *LPRILSENDMSGRESPONSE, RILSENDMSGRESPONSE
+ms.date: 1/11/2018
+ms.keywords: RILSENDMSGRESPONSE, RILSENDMSGRESPONSE, *LPRILSENDMSGRESPONSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILSENDMSGRESPONSE, RILSENDMSGRESPONSE
+req.typenames: RILSENDMSGRESPONSE, *LPRILSENDMSGRESPONSE
 ---
 
 # RILSENDMSGRESPONSE structure
@@ -86,19 +86,3 @@ typedef struct _RILSENDMSGRESPONSE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

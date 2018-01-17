@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Drmk.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PWDI_TX_METADATA, WDI_TX_METADATA
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 # DrmCreateContentMixed function
@@ -88,53 +88,6 @@ After a KS audio filter finishes using a content ID that it created using <code>
 
 <code>DrmCreateContentMixed</code> performs the same function as <a href="..\portcls\nf-portcls-pccreatecontentmixed.md">PcCreateContentMixed</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff536581">IDrmPort::CreateContentMixed</a>. For more information, see <a href="https://msdn.microsoft.com/62c739da-91e8-428e-b76c-ec9621b12597">DRM Functions and Interfaces</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.h (include Drmk.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Drmk.lib</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

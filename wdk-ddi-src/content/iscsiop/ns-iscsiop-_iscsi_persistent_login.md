@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: c43ee3dd-552a-41ab-9b4f-01611e44f453
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _ISCSI_Persistent_Login, *PISCSI_Persistent_Login, ISCSI_Persistent_Login
+ms.keywords: _ISCSI_Persistent_Login, ISCSI_Persistent_Login, *PISCSI_Persistent_Login
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PISCSI_Persistent_Login, ISCSI_Persistent_Login
+req.typenames: ISCSI_Persistent_Login, *PISCSI_Persistent_Login
 ---
 
 # _ISCSI_Persistent_Login structure
@@ -115,21 +115,6 @@ A variable-length array of characters that specifies the challenge handshake aut
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

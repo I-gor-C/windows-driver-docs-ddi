@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: 0b822d28-edaa-40cc-a678-112a356d9022
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
+ms.keywords: _KSM_PIN_PAIR, KSM_PIN_PAIR, *PKSM_PIN_PAIR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
+req.typenames: KSM_PIN_PAIR, *PKSM_PIN_PAIR
 ---
 
 # PFNBTH_INITIALIZE_BRB callback
@@ -90,52 +90,6 @@ Profile drivers obtain a pointer to the
     <a href="https://msdn.microsoft.com/56db29cd-26ab-4262-9b9f-40d46372ffe9">Querying for Bluetooth
     Interfaces</a> for more information about querying the Bluetooth driver stack.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= DISPATCH_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

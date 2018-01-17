@@ -7,7 +7,7 @@ old-location: wdf\wdf_io_forward_progress_reserved_policy.htm
 old-project: wdf
 ms.assetid: 6d530cf2-de06-4aa3-9f4d-08619906c9ed
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY, WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,34 +75,8 @@ In a low-memory situation, the framework calls the driver's <a href="..\wdfio\nc
 
 ### -field WdfIoForwardProgressReservedPolicyPagingIO
 
-In a low-memory situation, if the <b>Flags</b> member of the I/O request's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure indicates a paging operation, the framework uses a reserved request object, if one is available. If the I/O request is not a paging operation, the framework completes the I/O request with an error status value.
+In a low-memory situation, if the <b>Flags</b> member of the I/O request's <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure indicates a paging operation, the framework uses a reserved request object, if one is available. If the I/O request is not a paging operation, the framework completes the I/O request with an error status value.
 
 
 ## -remarks
-The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</b> enumeration is used as a member type in the <a href="..\wdfio\ns-wdfio-_wdf_io_queue_forward_progress_policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.9
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfio.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY</b> enumeration is used as a member type in the <a href="..\wdfio\ns-wdfio-_wdf_io_queue_forward_progress_policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.</p>

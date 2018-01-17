@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediadirection_2.htm
 old-project: netvista
 ms.assetid: fcb5f1a4-8673-412e-95ac-5f3ca781411b
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLMEDIADIRECTION, RILCALLMEDIADIRECTION
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,19 +71,3 @@ typedef enum _RILCALLMEDIADIRECTION {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

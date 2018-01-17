@@ -8,7 +8,7 @@ old-project: ifsk
 ms.assetid: 5C208DF7-C6CB-419D-B775-74E09DC4D448
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _WOF_EXTERNAL_FILE_ID, *PWOF_EXTERNAL_FILE_ID, WOF_EXTERNAL_FILE_ID
+ms.keywords: _WOF_EXTERNAL_FILE_ID, WOF_EXTERNAL_FILE_ID, *PWOF_EXTERNAL_FILE_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PWOF_EXTERNAL_FILE_ID, WOF_EXTERNAL_FILE_ID
+req.typenames: WOF_EXTERNAL_FILE_ID, *PWOF_EXTERNAL_FILE_ID
 ---
 
 # _WOF_EXTERNAL_FILE_ID structure
@@ -62,31 +62,6 @@ The file ID used with the <b>FILE_OPEN_BY_FILE_ID</b> flag to open a file with t
 ## -remarks
 Use the <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> function to open a handle to a minifilter driver and use the <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> function to open a handle to a driver.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntifs.h (include Windows.h, WinIoCtl.h, Ntifs.h, Windows.h, WinIoCtl.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

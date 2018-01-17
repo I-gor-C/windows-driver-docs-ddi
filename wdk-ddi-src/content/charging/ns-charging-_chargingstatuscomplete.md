@@ -8,7 +8,7 @@ old-project: battery
 ms.assetid: 5B5BD82A-15A3-40AA-9FE8-191B31CB694A
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CHARGINGSTATUSCOMPLETE, *PCHARGINGSTATUSCOMPLETE, CHARGINGSTATUSCOMPLETE
+ms.keywords: _CHARGINGSTATUSCOMPLETE, CHARGINGSTATUSCOMPLETE, *PCHARGINGSTATUSCOMPLETE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: *PCHARGINGSTATUSCOMPLETE, CHARGINGSTATUSCOMPLETE
+req.typenames: CHARGINGSTATUSCOMPLETE, *PCHARGINGSTATUSCOMPLETE
 ---
 
 # _CHARGINGSTATUSCOMPLETE structure
@@ -47,19 +47,3 @@ This structure is for internal use only.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Charging.h (include Charging.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

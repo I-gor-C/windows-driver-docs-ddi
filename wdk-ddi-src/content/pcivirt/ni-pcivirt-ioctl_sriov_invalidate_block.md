@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: b6f0e65f-c8e4-418f-a4b2-a7037368d5a3
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _SRIOV_PF_EVENT, *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
+ms.keywords: _SRIOV_PF_EVENT, SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PSRIOV_PF_EVENT, SRIOV_PF_EVENT
+req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_INVALIDATE_BLOCK IOCTL
@@ -79,30 +79,4 @@ This IOCTL request is sent by the virtualization stack to the  PCI Express SR-IO
 
 The   request  is sent to the physical function (PF) driver by VSP.
 The PF driver completes the request when the driver wants to indicate to the virtual function (VF) driver that
-one or more of the configuration blocks need  to be read again.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pcivirt.h</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-PASSIVE_LEVEL
-
-</td>
-</tr>
-</table>
+one or more of the configuration blocks need  to be read again.</p>

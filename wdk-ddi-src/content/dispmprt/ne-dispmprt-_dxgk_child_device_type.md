@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: b16ba776-a6b2-46d0-9b6f-18ea17cf4fce
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_CHILD_DEVICE_TYPE, DXGK_CHILD_DEVICE_TYPE, *PDXGK_CHILD_DEVICE_TYPE
+ms.keywords: _DXGK_CHILD_DEVICE_TYPE, *PDXGK_CHILD_DEVICE_TYPE, DXGK_CHILD_DEVICE_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: DXGK_CHILD_DEVICE_TYPE, *PDXGK_CHILD_DEVICE_TYPE
+req.typenames: *PDXGK_CHILD_DEVICE_TYPE, DXGK_CHILD_DEVICE_TYPE
 ---
 
 # _DXGK_CHILD_DEVICE_TYPE enumeration
@@ -82,31 +82,6 @@ The <b>ChildDeviceType</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_ch
 
 For more information about child devices of display adapters, see <a href="https://msdn.microsoft.com/9fd20e1a-db98-4571-8fc4-6d33fd0e2f16">Child Devices of the Display Adapter</a> and <a href="https://msdn.microsoft.com/3bec2117-aef4-41fc-b88a-0081c7c9fe3d">Enumerating Child Devices of a Display Adapter</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

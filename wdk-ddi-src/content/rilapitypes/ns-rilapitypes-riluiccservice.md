@@ -7,8 +7,8 @@ old-location: netvista\riluiccservice_2.htm
 old-project: netvista
 ms.assetid: ffd61de0-652a-4174-a0d2-d53c28180ea5
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILUICCSERVICE, *LPRILUICCSERVICE, RILUICCSERVICE
+ms.date: 1/11/2018
+ms.keywords: RILUICCSERVICE, RILUICCSERVICE, *LPRILUICCSERVICE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *LPRILUICCSERVICE, RILUICCSERVICE
+req.typenames: RILUICCSERVICE, *LPRILUICCSERVICE
 req.product: Windows 10 or later.
 ---
 
@@ -63,19 +63,3 @@ typedef struct _RILUICCSERVICE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

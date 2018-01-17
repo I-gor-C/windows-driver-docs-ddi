@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: c02bb43c-8f9a-470a-ba65-f3a69b5c6110
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _GetBindingCapability_OUT, GetBindingCapability_OUT, *PGetBindingCapability_OUT
+ms.keywords: _GetBindingCapability_OUT, *PGetBindingCapability_OUT, GetBindingCapability_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: GetBindingCapability_OUT, *PGetBindingCapability_OUT
+req.typenames: *PGetBindingCapability_OUT, GetBindingCapability_OUT
 ---
 
 # _GetBindingCapability_OUT structure
@@ -68,21 +68,6 @@ Indicates the ability of an HBA and its miniport driver to provide a specific se
 ## -remarks
 The WMI tool suite generates a declaration of the GetBindingCapability_OUT structure in <i>Hbapiwmi.h </i>when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562509">MSFC_HBAFCPInfo WMI Class</a>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hbapiwmi.h (include Hbapiwmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

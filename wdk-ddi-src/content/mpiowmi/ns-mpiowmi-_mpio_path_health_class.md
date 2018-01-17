@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 13be9014-e1ce-4b08-a264-c2828e8632ae
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MPIO_PATH_HEALTH_CLASS, MPIO_PATH_HEALTH_CLASS, *PMPIO_PATH_HEALTH_CLASS
+ms.keywords: _MPIO_PATH_HEALTH_CLASS, *PMPIO_PATH_HEALTH_CLASS, MPIO_PATH_HEALTH_CLASS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MPIO_PATH_HEALTH_CLASS, *PMPIO_PATH_HEALTH_CLASS
+req.typenames: *PMPIO_PATH_HEALTH_CLASS, MPIO_PATH_HEALTH_CLASS
 ---
 
 # _MPIO_PATH_HEALTH_CLASS structure
@@ -150,19 +150,3 @@ Should be zero.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

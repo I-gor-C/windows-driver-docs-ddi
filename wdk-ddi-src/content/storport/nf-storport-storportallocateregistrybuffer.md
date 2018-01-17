@@ -74,43 +74,6 @@ Pointer to a long that indicates, on input, the length in bytes of the registry 
 Each instantiation of a miniport driver can only have one registry buffer allocated at a time. If a miniport driver attempts to allocate more than one registry buffer, the allocation will fail and <b>StorPortAllocateRegistryBuffer</b> will return <b>NULL</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt><a href="http://go.microsoft.com/fwlink/p/?linkid=531356" target="_blank">Universal</a></dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

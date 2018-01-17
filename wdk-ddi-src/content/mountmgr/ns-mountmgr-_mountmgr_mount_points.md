@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: e85c0d92-d989-4afc-8516-c63535d2c728
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MOUNTMGR_MOUNT_POINTS, MOUNTMGR_MOUNT_POINTS, *PMOUNTMGR_MOUNT_POINTS
+ms.keywords: _MOUNTMGR_MOUNT_POINTS, *PMOUNTMGR_MOUNT_POINTS, MOUNTMGR_MOUNT_POINTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MOUNTMGR_MOUNT_POINTS, *PMOUNTMGR_MOUNT_POINTS
+req.typenames: *PMOUNTMGR_MOUNT_POINTS, MOUNTMGR_MOUNT_POINTS
 ---
 
 # _MOUNTMGR_MOUNT_POINTS structure
@@ -74,21 +74,6 @@ Contains an array of elements of type MOUNTMGR_MOUNT_POINT that contain informat
 ## -remarks
 For a discussion of the different between symbolic links, unique IDs, and nonpersistent device names, see <a href="https://msdn.microsoft.com/fb37f862-70d6-4514-b481-16f664346422">Supporting Mount Manager Requests in a Storage Class Driver</a>. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mountmgr.h (include Mountmgr.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

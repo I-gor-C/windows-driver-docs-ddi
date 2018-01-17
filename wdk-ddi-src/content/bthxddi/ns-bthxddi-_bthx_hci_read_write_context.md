@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: EC31A704-A264-4A77-B979-BFA59B42BA94
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _BTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT
+ms.keywords: _BTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
-req.typenames: BTHX_HCI_READ_WRITE_CONTEXT, *PBTHX_HCI_READ_WRITE_CONTEXT
+req.typenames: *PBTHX_HCI_READ_WRITE_CONTEXT, BTHX_HCI_READ_WRITE_CONTEXT
 ---
 
 # _BTHX_HCI_READ_WRITE_CONTEXT structure
@@ -76,30 +76,4 @@ The BTHX_HCI_READ_WRITE_CONTEXT structure is an input parameter to the <a href="
 
 This structure is also used as an output parameter for the <a href="..\bthxddi\ni-bthxddi-ioctl_bthx_read_hci.md">IOCTL_BTHX_HCI_READ</a> IOCTL and specifies the type of packet and the data associated with the read.
 
-This structure is packed to 1-byte boundary.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported starting with  Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>BthXDDI.h (include BthXDDI.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+This structure is packed to 1-byte boundary.</p>

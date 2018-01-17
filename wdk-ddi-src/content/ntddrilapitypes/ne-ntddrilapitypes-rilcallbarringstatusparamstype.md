@@ -7,7 +7,7 @@ old-location: netvista\rilcallbarringstatusparamstype.htm
 old-project: netvista
 ms.assetid: 95c15362-227c-4912-9eec-a18fee92f340
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLBARRINGSTATUSPARAMSTYPE, RILCALLBARRINGSTATUSPARAMSTYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -90,19 +90,3 @@ typedef enum _RILCALLBARRINGSTATUSPARAMSTYPE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

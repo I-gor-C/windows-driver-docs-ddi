@@ -67,19 +67,3 @@ A D3DKMDT_VIDPN_PRESENT_PATH_CONTENT value indicating the type of content being 
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h</dt>
-</dl>
-</td>
-</tr>
-</table>

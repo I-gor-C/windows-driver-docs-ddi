@@ -7,8 +7,8 @@ old-location: netvista\rilsubaddress.htm
 old-project: netvista
 ms.assetid: 0a1f9e89-df17-4802-9685-06a2eedbc0e5
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILSUBADDRESS, RILSUBADDRESS, *LPRILSUBADDRESS
+ms.date: 1/11/2018
+ms.keywords: RILSUBADDRESS, *LPRILSUBADDRESS, RILSUBADDRESS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILSUBADDRESS, *LPRILSUBADDRESS
+req.typenames: *LPRILSUBADDRESS, RILSUBADDRESS
 ---
 
 # RILSUBADDRESS structure
@@ -70,19 +70,3 @@ typedef struct _RILSUBADDRESS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

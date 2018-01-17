@@ -7,7 +7,7 @@ old-location: netvista\riluiccappdatachangeenum_2.htm
 old-project: netvista
 ms.assetid: 66d5596b-5f5b-46a6-9151-074c4713940f
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCAPPDATACHANGEENUM, RILUICCAPPDATACHANGEENUM
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,19 +75,3 @@ typedef enum _RILUICCAPPDATACHANGEENUM {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

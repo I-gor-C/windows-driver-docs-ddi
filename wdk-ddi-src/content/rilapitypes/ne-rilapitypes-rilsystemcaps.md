@@ -7,7 +7,7 @@ old-location: netvista\rilsystemcaps_2.htm
 old-project: netvista
 ms.assetid: d8148f94-d3f0-4578-83a3-024e64c9258b
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILSYSTEMCAPS, RILSYSTEMCAPS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,19 +63,3 @@ typedef enum _RILSYSTEMCAPS {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 67747FF9-4808-45BB-8809-24B2CE56546B
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _PEP_DEVICE_REGISTER_V2, *PPEP_DEVICE_REGISTER_V2, PEP_DEVICE_REGISTER_V2, *PPEP_DEVICE_REGISTER, PEP_DEVICE_REGISTER
+ms.keywords: _PEP_DEVICE_REGISTER_V2, *PPEP_DEVICE_REGISTER_V2, PEP_DEVICE_REGISTER_V2, PEP_DEVICE_REGISTER, *PPEP_DEVICE_REGISTER
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -74,31 +74,6 @@ The first element in an array of pointers to <a href="..\pepfx\ns-pepfx-_pep_com
 ## -remarks
 The <a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE</a> structure contains a <b>Register</b> member that points to a <b>PEP_DEVICE_REGISTER</b> structure.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Supported starting with Windows 10.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pepfx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

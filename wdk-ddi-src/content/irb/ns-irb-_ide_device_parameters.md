@@ -212,21 +212,6 @@ Indicates the selected transfer modes on the device. The miniport driver must se
 The port driver passes a IDE_DEVICE_PARAMETERS structure to the miniport driver when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff557467">IdeHwInitialize</a>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Irb.h (include Irb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

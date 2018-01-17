@@ -7,7 +7,7 @@ old-location: netvista\rilcallaudiosource.htm
 old-project: netvista
 ms.assetid: ec6d45ba-3afe-44cb-a699-ef3b3b804b6b
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILCALLAUDIOSOURCE, RILCALLAUDIOSOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,19 +66,3 @@ typedef enum _RILCALLAUDIOSOURCE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

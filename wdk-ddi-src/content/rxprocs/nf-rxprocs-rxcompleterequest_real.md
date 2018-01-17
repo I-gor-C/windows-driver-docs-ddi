@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: <= APC_LEVEL
-req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.typenames: *PRX_CONTEXT, RX_CONTEXT
 req.product: Windows 10 or later.
 ---
 
@@ -81,42 +81,6 @@ The <b>RxCompleteRequest_Real</b> routine is not normally called by network mini
 
 If a <b>NULL</b> value is passed in for <i>Irp</i>, then <b>RxCompleteRequest_Real</b> will log this as an error in checked builds. If a non-<b>NULL</b> value is passed in for <i>RxContex</i>t, then <b>RxCompleteRequest_Real</b> internally calls <b>RxDereferenceAndDeleteRxContext</b> with the passed in <i>RxContext</i> parameter to dereference the RX_CONTEXT structure. 
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rxprocs.h (include Rxprocs.h or Rxcontx.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-&lt;= APC_LEVEL
-
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

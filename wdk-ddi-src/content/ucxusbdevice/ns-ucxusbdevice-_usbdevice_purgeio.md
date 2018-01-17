@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 5E45A5A0-59EE-4A72-9CCA-DD1C9A406EB5
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _USBDEVICE_PURGEIO, *PUSBDEVICE_PURGEIO, USBDEVICE_PURGEIO
+ms.keywords: _USBDEVICE_PURGEIO, USBDEVICE_PURGEIO, *PUSBDEVICE_PURGEIO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PUSBDEVICE_PURGEIO, USBDEVICE_PURGEIO
+req.typenames: USBDEVICE_PURGEIO, *PUSBDEVICE_PURGEIO
 req.product: Windows 10 or later.
 ---
 
@@ -66,21 +66,6 @@ A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucxusbdevice.h (include Ucxclass.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

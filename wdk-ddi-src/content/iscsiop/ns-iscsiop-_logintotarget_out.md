@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 569816dc-3b92-45da-a1b8-ce4b504b6592
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _LoginToTarget_OUT, *PLoginToTarget_OUT, LoginToTarget_OUT
+ms.keywords: _LoginToTarget_OUT, LoginToTarget_OUT, *PLoginToTarget_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PLoginToTarget_OUT, LoginToTarget_OUT
+req.typenames: LoginToTarget_OUT, *PLoginToTarget_OUT
 ---
 
 # _LoginToTarget_OUT structure
@@ -74,21 +74,6 @@ On output from <b>LoginToTarget</b>, a 64-bit integer that uniquely identifies t
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

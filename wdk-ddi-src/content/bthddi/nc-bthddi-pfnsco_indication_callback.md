@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: abc9fc88-6852-4bfb-8271-7a73a508c397
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: IBidiSpl2, IBidiSpl2::UnbindDevice, UnbindDevice
+ms.keywords: _KSM_PIN_PAIR, KSM_PIN_PAIR, *PKSM_PIN_PAIR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: callback
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE
+req.typenames: KSM_PIN_PAIR, *PKSM_PIN_PAIR
 ---
 
 # PFNSCO_INDICATION_CALLBACK callback
@@ -99,54 +99,6 @@ The
     <i>Parameters</i> parameter indicates the Bluetooth address of the remote device.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-IRQL
-
-</th>
-<td width="70%">
-Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback
-   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access
-   paged memory)
-
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
@@ -162,7 +114,7 @@ Developers should code this function to operate at either IRQL = DISPATCH_LEVEL 
 <a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">SCO_INDICATION_PARAMETERS</a>
 </dt>
 <dt>
-<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536751">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
 </dt>
 </dl>
  

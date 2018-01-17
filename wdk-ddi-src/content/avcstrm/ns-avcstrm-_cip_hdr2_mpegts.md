@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: e1f46926-8c2b-46ff-9adb-5332fba17e3b
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _CIP_HDR2_MPEGTS, CIP_HDR2_MPEGTS, *PCIP_HDR2_MPEGTS
+ms.keywords: _CIP_HDR2_MPEGTS, *PCIP_HDR2_MPEGTS, CIP_HDR2_MPEGTS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: CIP_HDR2_MPEGTS, *PCIP_HDR2_MPEGTS
+req.typenames: *PCIP_HDR2_MPEGTS, CIP_HDR2_MPEGTS
 ---
 
 # _CIP_HDR2_MPEGTS structure
@@ -79,21 +79,6 @@ Must be set to 1:0
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avcstrm.h (include Avcstrm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

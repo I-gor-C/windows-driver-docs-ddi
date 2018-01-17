@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 15FB9877-6339-484B-83D5-6AD44EEE1D6E
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SRBEX_DATA, SRBEX_DATA, *PSRBEX_DATA
+ms.keywords: _SRBEX_DATA, *PSRBEX_DATA, SRBEX_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: SRBEX_DATA, *PSRBEX_DATA
+req.typenames: *PSRBEX_DATA, SRBEX_DATA
 req.product: Windows 10 or later.
 ---
 
@@ -175,31 +175,6 @@ The SRB extended data is present when the <b>SrbExDataOffset</b> array in the <a
 
 The following example code fragment shows how to access the extended data for the an SRB function of SRB_FUNCTION_PNP.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available starting with Windows 8.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h or Srb.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

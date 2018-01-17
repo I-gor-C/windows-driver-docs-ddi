@@ -7,7 +7,7 @@ old-location: netvista\rilmsgindeliver_2.htm
 old-project: netvista
 ms.assetid: 1565ee10-044f-4557-8a49-777eae7c44e3
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGINDELIVER, *LPRILMSGINDELIVER, RILMSGINDELIVER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -91,19 +91,3 @@ typedef struct _RILMSGINDELIVER {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

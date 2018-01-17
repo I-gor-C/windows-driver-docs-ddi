@@ -245,21 +245,6 @@ Member <b>SID_Port1</b> contains bits 2-3 of byte 3 of the self-ID packet. Membe
 This structure corresponds to self ID packet 0, as described in the <i>P1394a</i> specification.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>1394.h (include 1394.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

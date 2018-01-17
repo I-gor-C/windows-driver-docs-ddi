@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 03e3a656-c691-4aff-bcc8-4e0bc8390fd7
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _IO_RESOURCE_DESCRIPTOR, *PIO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR
+ms.keywords: _IO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR, *PIO_RESOURCE_DESCRIPTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: *PIO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR
+req.typenames: IO_RESOURCE_DESCRIPTOR, *PIO_RESOURCE_DESCRIPTOR
 req.product: Windows 10 or later.
 ---
 
@@ -702,21 +702,6 @@ The upper 32 bits of the 64-bit connection ID.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h, Ntddk.h, or Ntifs.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

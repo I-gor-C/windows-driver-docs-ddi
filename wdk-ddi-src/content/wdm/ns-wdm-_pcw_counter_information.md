@@ -8,7 +8,7 @@ old-project: devtest
 ms.assetid: fe4d8df4-0e15-49fb-a5ec-40aa8acf3675
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _PCW_COUNTER_INFORMATION, PCW_COUNTER_INFORMATION, *PPCW_COUNTER_INFORMATION
+ms.keywords: _PCW_COUNTER_INFORMATION, *PPCW_COUNTER_INFORMATION, PCW_COUNTER_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: PCW_COUNTER_INFORMATION, *PPCW_COUNTER_INFORMATION
+req.typenames: *PPCW_COUNTER_INFORMATION, PCW_COUNTER_INFORMATION
 req.product: Windows 10 or later.
 ---
 
@@ -67,29 +67,3 @@ A Unicode string that contains a wildcard specification of the instance. That is
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of Windows.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h or Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

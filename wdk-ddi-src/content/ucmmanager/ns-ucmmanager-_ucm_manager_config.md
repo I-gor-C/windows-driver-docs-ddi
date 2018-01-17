@@ -8,7 +8,7 @@ old-project: usbref
 ms.assetid: 2B9539D7-6125-4912-9572-13FA7CA671D9
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _UCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG, *PUCM_MANAGER_CONFIG
+ms.keywords: _UCM_MANAGER_CONFIG, *PUCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: UCM_MANAGER_CONFIG, *PUCM_MANAGER_CONFIG
+req.typenames: *PUCM_MANAGER_CONFIG, UCM_MANAGER_CONFIG
 req.product: Windows 10 or later.
 ---
 
@@ -62,61 +62,6 @@ Size of the <b>UCM_MANAGER_CONFIG</b> structure. Initialize this structure by ca
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum UMDF version
-
-</th>
-<td width="70%">
-2.15
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ucmmanager.h (include Ucmcx.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

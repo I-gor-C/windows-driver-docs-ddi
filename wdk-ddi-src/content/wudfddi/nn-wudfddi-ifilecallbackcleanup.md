@@ -7,7 +7,7 @@ old-location: wdf\ifilecallbackcleanup.htm
 old-project: wdf
 ms.assetid: d42eb7d5-6bf6-4f0f-a249-a869db486b6f
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
+ms.date: 1/11/2018
 ms.keywords: IWDFWorkItem, IWDFWorkItem::GetParentObject, GetParentObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -80,19 +80,3 @@ The <a href="https://msdn.microsoft.com/e6dd18f4-725f-4611-ad70-029654cf4375">On
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wudfddi.h (include Wudfddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,7 +7,7 @@ old-location: netvista\rilmsgbcgeneral_2.htm
 old-project: netvista
 ms.assetid: 7202683f-5e02-48dd-b8b7-cb998fd660df
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILMSGBCGENERAL, RILMSGBCGENERAL, *LPRILMSGBCGENERAL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -115,19 +115,3 @@ typedef struct _RILMSGBCGENERAL {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

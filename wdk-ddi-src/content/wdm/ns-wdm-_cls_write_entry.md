@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: 4b008fc7-35fe-40f9-8475-1a2ac04edb58
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _CLS_WRITE_ENTRY, PPCLS_WRITE_ENTRY, *PCLS_WRITE_ENTRY, CLS_WRITE_ENTRY, CLFS_WRITE_ENTRY, *PCLFS_WRITE_ENTRY
+ms.keywords: _CLS_WRITE_ENTRY, CLS_WRITE_ENTRY, *PCLS_WRITE_ENTRY, PPCLS_WRITE_ENTRY, *PCLFS_WRITE_ENTRY, CLFS_WRITE_ENTRY
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL (see Remarks section)
-req.typenames: PPCLS_WRITE_ENTRY, *PCLS_WRITE_ENTRY, CLS_WRITE_ENTRY
+req.typenames: CLS_WRITE_ENTRY, *PCLS_WRITE_ENTRY, PPCLS_WRITE_ENTRY
 req.product: Windows 10 or later.
 ---
 
@@ -69,21 +69,6 @@ The size, in bytes, of the buffer pointed to by <b>Buffer</b>.
 ## -remarks
 CLFS collects the buffers pointed to by several <b>CLFS_WRITE_ENTRY</b> structures into a single log record. The log record is then placed in a log I/O block along with other log records. Eventually the log I/O block is flushed to disk.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

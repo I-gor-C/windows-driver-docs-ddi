@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: 82efeeb9-1167-4114-9d88-7ef66f613f80
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _SendTargets_OUT, *PSendTargets_OUT, SendTargets_OUT
+ms.keywords: _SendTargets_OUT, SendTargets_OUT, *PSendTargets_OUT
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSendTargets_OUT, SendTargets_OUT
+req.typenames: SendTargets_OUT, *PSendTargets_OUT
 ---
 
 # _SendTargets_OUT structure
@@ -74,21 +74,6 @@ A buffer that holds the response data that the target returns. Response to SendT
 ## -remarks
 You must implement this method.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsiop.h (include Iscsiop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

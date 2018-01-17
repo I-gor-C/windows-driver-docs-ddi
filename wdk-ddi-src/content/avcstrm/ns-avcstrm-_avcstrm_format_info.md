@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: de8e262b-bcb9-4549-94cc-0a73df45bddc
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: _AVCSTRM_FORMAT_INFO, *PAVCSTRM_FORMAT_INFO, AVCSTRM_FORMAT_INFO
+ms.keywords: _AVCSTRM_FORMAT_INFO, AVCSTRM_FORMAT_INFO, *PAVCSTRM_FORMAT_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PAVCSTRM_FORMAT_INFO, AVCSTRM_FORMAT_INFO
+req.typenames: AVCSTRM_FORMAT_INFO, *PAVCSTRM_FORMAT_INFO
 ---
 
 # _AVCSTRM_FORMAT_INFO structure
@@ -149,21 +149,6 @@ Reserved. Do not use. Must be set to 0.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avcstrm.h (include Avcstrm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -8,7 +8,7 @@ old-project: kernel
 ms.assetid: DF02AB1E-6803-492C-9261-400177497195
 ms.author: windowsdriverdev
 ms.date: 1/4/2018
-ms.keywords: _XVARIABLE_NAME, *PXVARIABLE_NAME, XVARIABLE_NAME, *PSYSENV_VARIABLE_NAME, SYSENV_VARIABLE_NAME
+ms.keywords: _XVARIABLE_NAME, XVARIABLE_NAME, *PXVARIABLE_NAME, SYSENV_VARIABLE_NAME, *PSYSENV_VARIABLE_NAME
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PXVARIABLE_NAME, XVARIABLE_NAME
+req.typenames: XVARIABLE_NAME, *PXVARIABLE_NAME
 ---
 
 # _XVARIABLE_NAME structure
@@ -74,21 +74,6 @@ Name of the system environment variable.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddsysenv.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

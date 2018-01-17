@@ -95,31 +95,6 @@ One of the values of DXVADDI_VIDEOLIGHTING can be specified in the <b>VideoLight
 The video lighting values can be used to alter the gamma to generate a comparable experience in a different lighting condition. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows Vista and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

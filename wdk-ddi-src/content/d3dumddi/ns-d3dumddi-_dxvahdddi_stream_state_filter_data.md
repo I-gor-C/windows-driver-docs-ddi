@@ -69,31 +69,6 @@ typedef struct _DXVAHDDDI_STREAM_STATE_FILTER_DATA {
 The level that is specified in the <b>Level</b> member must be within the range that the driver supplies in the members of the <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_filter_range_data.md">DXVAHDDDI_FILTER_RANGE_DATA</a> structure when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_DXVAHD_GETVPFILTERRANGE value set. 
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-DXVAHDDDI_STREAM_STATE_FILTER_DATA is supported beginning with the Windows 7 operating system.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dumddi.h (include D3dumddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

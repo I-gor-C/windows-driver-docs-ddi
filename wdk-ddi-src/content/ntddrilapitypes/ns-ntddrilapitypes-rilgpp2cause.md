@@ -7,8 +7,8 @@ old-location: netvista\rilgpp2cause.htm
 old-project: netvista
 ms.assetid: 40981ad1-9a3e-47c5-a3d2-e980659b8ca4
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILGPP2CAUSE, RILGPP2CAUSE, *LPRILGPP2CAUSE
+ms.date: 1/11/2018
+ms.keywords: RILGPP2CAUSE, *LPRILGPP2CAUSE, RILGPP2CAUSE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILGPP2CAUSE, *LPRILGPP2CAUSE
+req.typenames: *LPRILGPP2CAUSE, RILGPP2CAUSE
 ---
 
 # RILGPP2CAUSE structure
@@ -58,19 +58,3 @@ typedef struct _RILGPP2CAUSE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -8,7 +8,7 @@ old-project: audio
 ms.assetid: 94c953ae-519b-4659-a4c9-a97db7dc31e9
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS
+ms.keywords: _SYNTH_PORTPARAMS, SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PSYNTH_PORTPARAMS, SYNTH_PORTPARAMS
+req.typenames: SYNTH_PORTPARAMS, *PSYNTH_PORTPARAMS
 ---
 
 # _SYNTH_PORTPARAMS structure
@@ -153,21 +153,6 @@ Specifies whether the port's channel groups are shared. When this member is <b>T
 ## -remarks
 A <a href="https://msdn.microsoft.com/library/windows/hardware/ff537405">KSPROPERTY_SYNTH_PORTPARAMETERS</a> get-property request uses the SYNTH_PORTPARAMS structure for both its property descriptor and its property value.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dmusprop.h (include Dmusprop.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

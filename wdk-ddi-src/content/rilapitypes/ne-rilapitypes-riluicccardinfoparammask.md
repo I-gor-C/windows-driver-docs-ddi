@@ -7,7 +7,7 @@ old-location: netvista\riluicccardinfoparammask_2.htm
 old-project: netvista
 ms.assetid: f27c7f54-f939-4e9b-a27c-b0137fbb7cec
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILUICCCARDINFOPARAMMASK, RILUICCCARDINFOPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,19 +71,3 @@ typedef enum _RILUICCCARDINFOPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Rilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -118,7 +118,7 @@ The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the
 ### -field Color
 
 
-      [in] The foreground color, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration), corrected for gamma.
+      [in] The foreground color, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration), corrected for gamma.
      
 
 
@@ -153,7 +153,7 @@ The destination rectangle defined by <b>DstRect</b> can exceed the bounds of the
 ### -field Color2
 
 
-      [in] The foreground color, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration), not corrected for gamma.
+      [in] The foreground color, in 32-bit ARGB unsigned pixel format (as defined by the D3DDDIFMT_A8R8G8B8 value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration), not corrected for gamma.
      
 
 
@@ -164,7 +164,7 @@ When gamma is in the range of [0, 15], the following per-pixel blending is perfo
 
 When gamma is equal to 0xFFFFFFFF (the value of D3DKM_INVALID_GAMMA_INDEX), the following per-pixel blending is performed.
 
-Where the following parameters are in the D3DDDIFMT_A8R8G8B8 format defined in the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration:
+Where the following parameters are in the D3DDDIFMT_A8R8G8B8 format defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration:
 
 <b>Color</b> = gamma-corrected foreground color, as defined by the <b>Color</b> member
 
@@ -181,35 +181,10 @@ The display miniport driver must ensure that when a component of A is zero, the 
 The driver must also ensure that when a component of A is 0xFF, the corresponding output component is the same as the foreground color component (<b>Color2</b>).
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Available in Windows 7 and later versions of the Windows operating systems.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D3dkmddi.h (include D3dkmddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
 </dt>
 <dt>
 <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>

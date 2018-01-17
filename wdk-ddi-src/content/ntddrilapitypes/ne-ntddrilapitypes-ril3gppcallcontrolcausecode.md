@@ -7,7 +7,7 @@ old-location: netvista\ril3gppcallcontrolcausecode.htm
 old-project: netvista
 ms.assetid: a469e292-a57d-4876-a050-266f57985a50
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RIL3GPPCALLCONTROLCAUSECODE, RIL3GPPCALLCONTROLCAUSECODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -238,19 +238,3 @@ typedef enum _RIL3GPPCALLCONTROLCAUSECODE {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -7,8 +7,8 @@ old-location: wdf\wdf_device_pnp_state.htm
 old-project: wdf
 ms.assetid: b907a1ca-d9ef-45e9-9e1b-26e58e3e1e07
 ms.author: windowsdriverdev
-ms.date: 12/29/2017
-ms.keywords: _WDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE
+ms.date: 1/11/2018
+ms.keywords: _WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
 req.irql: <=DISPATCH_LEVEL
-req.typenames: WDF_DEVICE_PNP_STATE, *PWDF_DEVICE_PNP_STATE
+req.typenames: *PWDF_DEVICE_PNP_STATE, WDF_DEVICE_PNP_STATE
 req.product: Windows 10 or later.
 ---
 
@@ -297,30 +297,4 @@ typedef enum _WDF_DEVICE_PNP_STATE {
 
 
 ## -remarks
-The WDF_DEVICE_PNP_STATE enumeration is used as a member type for  the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_pnp_notification_data.md">WDF_DEVICE_PNP_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepnpstate.md">WdfDeviceGetDevicePnpState</a> method.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum KMDF version
-
-</th>
-<td width="70%">
-1.0
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdfdevice.h (include Wdf.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+The WDF_DEVICE_PNP_STATE enumeration is used as a member type for  the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_pnp_notification_data.md">WDF_DEVICE_PNP_NOTIFICATION_DATA</a> structure and as the return type for the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicegetdevicepnpstate.md">WdfDeviceGetDevicePnpState</a> method.</p>

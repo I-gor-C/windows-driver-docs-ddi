@@ -8,7 +8,7 @@ old-project: print
 ms.assetid: 72AE7A78-C02D-4C14-B017-9CEECF34FEDF
 ms.author: windowsdriverdev
 ms.date: 1/8/2018
-ms.keywords: _DOT4_DC_OPEN_DATA, DOT4_DC_OPEN_DATA, *PDOT4_DC_OPEN_DATA
+ms.keywords: _DOT4_DC_OPEN_DATA, *PDOT4_DC_OPEN_DATA, DOT4_DC_OPEN_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: DOT4_DC_OPEN_DATA, *PDOT4_DC_OPEN_DATA
+req.typenames: *PDOT4_DC_OPEN_DATA, DOT4_DC_OPEN_DATA
 ---
 
 # _DOT4_DC_OPEN_DATA structure
@@ -72,19 +72,3 @@ Specifies the handle to the channel returned.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>D4drvif.h</dt>
-</dl>
-</td>
-</tr>
-</table>

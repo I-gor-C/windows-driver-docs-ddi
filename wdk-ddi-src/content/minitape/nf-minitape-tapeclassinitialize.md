@@ -83,43 +83,6 @@ A tape miniclass driver calls <b>TapeClassInitialize</b> from its <b>DriverEntry
 A tape miniclass driver allocates a TAPE_INIT_DATA_EX structure on the stack, clears it with <b>TapeClassZeroMemory</b>, fills in all the appropriate members, and passes it to <b>TapeClassInitialize</b>.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Minitape.h (include Minitape.h)</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Library
-
-</th>
-<td width="70%">
-<dl>
-<dt>Tape.lib</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

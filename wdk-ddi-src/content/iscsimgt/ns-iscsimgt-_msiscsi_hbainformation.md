@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: ee2951e0-2632-44b0-870d-33d4d48ac8e8
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MSiSCSI_HBAInformation, *PMSiSCSI_HBAInformation, MSiSCSI_HBAInformation
+ms.keywords: _MSiSCSI_HBAInformation, MSiSCSI_HBAInformation, *PMSiSCSI_HBAInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PMSiSCSI_HBAInformation, MSiSCSI_HBAInformation
+req.typenames: MSiSCSI_HBAInformation, *PMSiSCSI_HBAInformation
 ---
 
 # _MSiSCSI_HBAInformation structure
@@ -298,21 +298,6 @@ A string that specifies the name of the driver for the HBA.
 ## -remarks
 You must implement this class.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Iscsimgt.h (include Iscsimgt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

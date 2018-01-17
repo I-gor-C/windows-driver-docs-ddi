@@ -110,21 +110,6 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff54
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hidpddi.h (include Hidpddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

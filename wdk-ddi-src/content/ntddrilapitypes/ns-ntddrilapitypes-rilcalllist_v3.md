@@ -7,8 +7,8 @@ old-location: netvista\rilcalllist_v3.htm
 old-project: netvista
 ms.assetid: d602f68a-8fe9-45f4-a54a-abc652578e9c
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
-ms.keywords: RILCALLLIST_V3, RILCALLLIST, *LPRILCALLLIST, *LPRILCALLLIST_V3, RILCALLLIST_V3
+ms.date: 1/11/2018
+ms.keywords: RILCALLLIST_V3, RILCALLLIST_V3, *LPRILCALLLIST_V3, RILCALLLIST, *LPRILCALLLIST
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: RILCALLLIST, *LPRILCALLLIST, *LPRILCALLLIST_V3, RILCALLLIST_V3
+req.typenames: RILCALLLIST_V3, *LPRILCALLLIST_V3, RILCALLLIST, *LPRILCALLLIST
 ---
 
 # RILCALLLIST_V3 structure
@@ -62,19 +62,3 @@ typedef struct _RILCALLLIST_V3 {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

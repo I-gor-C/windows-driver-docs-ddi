@@ -8,7 +8,7 @@ old-project: hid
 ms.assetid: 8ceaa9de-195f-4a89-bc3e-323256097248
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _INTERNAL_I8042_START_INFORMATION, *PINTERNAL_I8042_START_INFORMATION, INTERNAL_I8042_START_INFORMATION
+ms.keywords: _INTERNAL_I8042_START_INFORMATION, INTERNAL_I8042_START_INFORMATION, *PINTERNAL_I8042_START_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PINTERNAL_I8042_START_INFORMATION, INTERNAL_I8042_START_INFORMATION
+req.typenames: INTERNAL_I8042_START_INFORMATION, *PINTERNAL_I8042_START_INFORMATION
 ---
 
 # _INTERNAL_I8042_START_INFORMATION structure
@@ -74,21 +74,6 @@ Reserved for future use.
 ## -remarks
 This structure is used with <a href="..\ntdd8042\ni-ntdd8042-ioctl_internal_i8042_keyboard_start_information.md">IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION</a> and <a href="..\ntdd8042\ni-ntdd8042-ioctl_internal_i8042_mouse_start_information.md">IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION</a> requests.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntdd8042.h (include Ntdd8042.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

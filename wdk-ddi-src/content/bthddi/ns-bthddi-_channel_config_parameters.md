@@ -8,7 +8,7 @@ old-project: bltooth
 ms.assetid: c2201e3c-c680-4a22-adf5-5131fb138066
 ms.author: windowsdriverdev
 ms.date: 12/21/2017
-ms.keywords: _CHANNEL_CONFIG_PARAMETERS, *PCHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS
+ms.keywords: _CHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS, *PCHANNEL_CONFIG_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-req.typenames: *PCHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS
+req.typenames: CHANNEL_CONFIG_PARAMETERS, *PCHANNEL_CONFIG_PARAMETERS
 ---
 
 # _CHANNEL_CONFIG_PARAMETERS structure
@@ -148,31 +148,6 @@ The QoS settings for the specified channel direction.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Version
-
-</th>
-<td width="70%">
-Versions: Supported in Windows Vista, and later.
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Bthddi.h (include Bthddi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

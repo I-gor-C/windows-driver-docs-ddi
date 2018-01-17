@@ -8,7 +8,7 @@ old-project: storage
 ms.assetid: de7fd19e-e18d-4e78-963a-3abdd7921d69
 ms.author: windowsdriverdev
 ms.date: 1/10/2018
-ms.keywords: _MPIO_EventEntry, MPIO_EventEntry, *PMPIO_EventEntry
+ms.keywords: _MPIO_EventEntry, *PMPIO_EventEntry, MPIO_EventEntry
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: MPIO_EventEntry, *PMPIO_EventEntry
+req.typenames: *PMPIO_EventEntry, MPIO_EventEntry
 ---
 
 # _MPIO_EventEntry structure
@@ -78,19 +78,3 @@ A string that indicates the event description.
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiowmi.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

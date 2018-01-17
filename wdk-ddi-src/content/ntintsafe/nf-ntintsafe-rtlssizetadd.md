@@ -72,31 +72,4 @@ A pointer to the sum. If the operation results in a value that overflows or unde
 
 
 ## -remarks
-This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntintsafe.h</dt>
-</dl>
-</td>
-</tr>
-</table>
+This is one of a set of inline functions designed to provide arithmetic operations and perform validity checks with minimal impact on performance.</p>

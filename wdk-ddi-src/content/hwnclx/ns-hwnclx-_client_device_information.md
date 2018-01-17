@@ -8,7 +8,7 @@ old-project: gpiobtn
 ms.assetid: ae438f89-27b7-423f-9f82-b103ba70b7b5
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _CLIENT_DEVICE_INFORMATION, *PCLIENT_DEVICE_INFORMATION, CLIENT_DEVICE_INFORMATION
+ms.keywords: _CLIENT_DEVICE_INFORMATION, CLIENT_DEVICE_INFORMATION, *PCLIENT_DEVICE_INFORMATION
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PCLIENT_DEVICE_INFORMATION, CLIENT_DEVICE_INFORMATION
+req.typenames: CLIENT_DEVICE_INFORMATION, *PCLIENT_DEVICE_INFORMATION
 ---
 
 # _CLIENT_DEVICE_INFORMATION structure
@@ -78,41 +78,6 @@ The total number of hardware notifications that the client device driver provide
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10, version 1709
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Hwnclx.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

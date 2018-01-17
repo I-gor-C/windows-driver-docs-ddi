@@ -78,19 +78,3 @@ An unsigned 8-bitfield that represents the Lun as defined by the SCSI_ADDRESS st
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Mpiodisk.h (include Mpiowmi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>

@@ -396,7 +396,7 @@ The miniport's dump capability is functional for resume from hibernation.
 
 </td>
 <td width="60%">
-The Storport driver initializes the <a href="..\ntddstor\ns-ntddstor-_storage_device_descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a> from the  ATA Information VPD page instead of from  INQUIRY data.
+The Storport driver initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a> from the  ATA Information VPD page instead of from  INQUIRY data.
 
 </td>
 </tr>
@@ -487,21 +487,6 @@ Starting in Windows 8, both physical and virtual Storport miniports use <b>HW_I
 
  If a miniport driver sets the flag, <b>STOR_FEATURE_SET_ADAPTER_INTERFACE_TYPE</b> in <b>HW_INITIALIZATION_DATA</b>, it should also set <b>AdapterInterfaceType</b> to <b>InterfaceTypeUndefined</b>.
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Storport.h (include Storport.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

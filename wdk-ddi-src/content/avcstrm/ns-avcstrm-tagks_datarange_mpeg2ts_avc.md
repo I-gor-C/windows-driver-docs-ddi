@@ -8,7 +8,7 @@ old-project: stream
 ms.assetid: 3e19439d-397c-4c22-823c-aa53c456d7b9
 ms.author: windowsdriverdev
 ms.date: 1/9/2018
-ms.keywords: tagKS_DATARANGE_MPEG2TS_AVC, *PKS_DATARANGE_MPEG2TS_AVC, KS_DATARANGE_MPEG2TS_AVC
+ms.keywords: tagKS_DATARANGE_MPEG2TS_AVC, KS_DATARANGE_MPEG2TS_AVC, *PKS_DATARANGE_MPEG2TS_AVC
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: *PKS_DATARANGE_MPEG2TS_AVC, KS_DATARANGE_MPEG2TS_AVC
+req.typenames: KS_DATARANGE_MPEG2TS_AVC, *PKS_DATARANGE_MPEG2TS_AVC
 ---
 
 # tagKS_DATARANGE_MPEG2TS_AVC structure
@@ -68,25 +68,10 @@ Specifies the AV/C preconnection info.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Avcstrm.h (include Avcstrm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATARANGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
 </dt>
 <dt>
 <a href="..\avc\ns-avc-_avcpreconnectinfo.md">AVCPRECONNECTINFO</a>

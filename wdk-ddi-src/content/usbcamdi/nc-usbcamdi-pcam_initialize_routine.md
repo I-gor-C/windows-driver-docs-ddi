@@ -88,31 +88,4 @@ USBCAMD calls the camera minidriver's <b>CamUnInitialize</b> callback function w
 
 Whereas the stream class driver automatically resets values associated with the minidriver, this call allows the minidriver to deallocate any specific resources used during its operation, such as memory used to store processed and decoded video frames.
 
-<b>CamUnInitialize</b> is called by both versions 1.0 and 2.0 of USBCAMD.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbcamdi.h (include Usbcamdi.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+<b>CamUnInitialize</b> is called by both versions 1.0 and 2.0 of USBCAMD.</p>

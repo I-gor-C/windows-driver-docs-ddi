@@ -8,7 +8,7 @@ old-project: display
 ms.assetid: 677619d2-86a1-492e-9964-d50624376ef4
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _DXGK_SPB_INTERFACE, DXGK_SPB_INTERFACE, *PDXGK_SPB_INTERFACE
+ms.keywords: _DXGK_SPB_INTERFACE, *PDXGK_SPB_INTERFACE, DXGK_SPB_INTERFACE
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: DXGK_SPB_INTERFACE, *PDXGK_SPB_INTERFACE
+req.typenames: *PDXGK_SPB_INTERFACE, DXGK_SPB_INTERFACE
 ---
 
 # _DXGK_SPB_INTERFACE structure
@@ -149,41 +149,6 @@ A pointer to the display miniport driver's <a href="https://msdn.microsoft.com/l
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 8
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2012
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Dispmprt.h (include Dispmprt.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

@@ -30,7 +30,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
+req.irql: PASSIVE_LEVEL
 req.typenames: *PIO_ALLOCATION_ACTION, IO_ALLOCATION_ACTION
 req.product: Windows 10 or later.
 ---
@@ -77,20 +77,4 @@ If an <i>AdapterControl</i> or <i>ControllerControl</i> routine completes an IRP
 
 If a driver uses packet-based bus-master DMA, its <i>AdapterControl</i> routine should return <b>DeallocateObjectKeepRegisters</b>.
 
-Otherwise, the driver should return <b>KeepObject</b>.
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wdm.h (include Wdm.h or Ntddk.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
+Otherwise, the driver should return <b>KeepObject</b>.</p>

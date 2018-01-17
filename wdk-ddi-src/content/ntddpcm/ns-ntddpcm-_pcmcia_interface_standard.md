@@ -8,7 +8,7 @@ old-project: PCMCIA
 ms.assetid: 3c98fe7b-e60a-4494-b1f0-847a7cbe9d3a
 ms.author: windowsdriverdev
 ms.date: 12/14/2017
-ms.keywords: _PCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD
+ms.keywords: _PCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: PCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD
+req.typenames: *PPCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD
 ---
 
 # _PCMCIA_INTERFACE_STANDARD structure
@@ -103,21 +103,6 @@ Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff53
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddpcm.h (include Ntddpcm.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

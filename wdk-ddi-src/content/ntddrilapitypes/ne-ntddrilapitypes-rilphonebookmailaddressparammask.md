@@ -7,7 +7,7 @@ old-location: netvista\rilphonebookmailaddressparammask.htm
 old-project: netvista
 ms.assetid: db3b9173-f0fe-4d51-a17e-a7b55839cbb6
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: RILPHONEBOOKMAILADDRESSPARAMMASK, RILPHONEBOOKMAILADDRESSPARAMMASK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,19 +58,3 @@ typedef enum _RILPHONEBOOKMAILADDRESSPARAMMASK {
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Ntddrilapitypes.h</dt>
-</dl>
-</td>
-</tr>
-</table>

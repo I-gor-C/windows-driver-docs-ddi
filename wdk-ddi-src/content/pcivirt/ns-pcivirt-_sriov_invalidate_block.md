@@ -8,7 +8,7 @@ old-project: PCI
 ms.assetid: 483e6144-9752-4d47-9ed4-7e73bc0a59cc
 ms.author: windowsdriverdev
 ms.date: 12/29/2017
-ms.keywords: _SRIOV_INVALIDATE_BLOCK, *PSRIOV_INVALIDATE_BLOCK, SRIOV_INVALIDATE_BLOCK
+ms.keywords: _SRIOV_INVALIDATE_BLOCK, SRIOV_INVALIDATE_BLOCK, *PSRIOV_INVALIDATE_BLOCK
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
-req.typenames: *PSRIOV_INVALIDATE_BLOCK, SRIOV_INVALIDATE_BLOCK
+req.typenames: SRIOV_INVALIDATE_BLOCK, *PSRIOV_INVALIDATE_BLOCK
 ---
 
 # _SRIOV_INVALIDATE_BLOCK structure
@@ -67,21 +67,6 @@ a block of configuration data.
 
 ## -remarks
 
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Pcivirt.h</dt>
-</dl>
-</td>
-</tr>
-</table>
 
 ## -see-also
 <dl>

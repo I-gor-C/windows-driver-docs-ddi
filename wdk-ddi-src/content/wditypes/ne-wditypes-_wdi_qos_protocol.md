@@ -7,7 +7,7 @@ old-location: netvista\wdi_qos_protocol.htm
 old-project: netvista
 ms.assetid: 39466BF7-0517-4113-9C94-26D8691CCCC1
 ms.author: windowsdriverdev
-ms.date: 1/8/2018
+ms.date: 1/11/2018
 ms.keywords: _WDI_QOS_PROTOCOL, WDI_QOS_PROTOCOL
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -73,39 +73,3 @@ Wi-Fi Multimedia (WMM, formerly known as Wireless Multimedia Extensions)
 
 
 ## -remarks
-
-
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Minimum supported client
-
-</th>
-<td width="70%">
-Windows 10
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Minimum supported server
-
-</th>
-<td width="70%">
-Windows Server 2016
-
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wditypes.hpp</dt>
-</dl>
-</td>
-</tr>
-</table>

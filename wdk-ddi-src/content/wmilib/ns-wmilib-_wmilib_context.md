@@ -110,21 +110,6 @@ When the driver receives an <a href="https://msdn.microsoft.com/library/windows/
 Memory for this structure can be allocated from paged pool.
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Wmilib.h (include Wmilib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>

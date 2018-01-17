@@ -31,7 +31,7 @@ req.type-library:
 req.lib: 
 req.dll: 
 req.irql: 
-req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.typenames: *PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2
 req.product: Windows 10 or later.
 ---
 
@@ -41,7 +41,7 @@ req.product: Windows 10 or later.
 
 ## -description
 
-   The <b>UsbBuildGetStatusRequest</b> macro formats an <a href="..\usb\ns-usb-_urb.md">URB</a> to obtain status from a device, interface, endpoint, or other device-defined target on a USB device.
+   The <b>UsbBuildGetStatusRequest</b> macro formats an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to obtain status from a device, interface, endpoint, or other device-defined target on a USB device.
 
 
 
@@ -63,7 +63,7 @@ void UsbBuildGetStatusRequest(
 
 ### -param Urb [in, out]
 
-Pointer to an <a href="..\usb\ns-usb-_urb.md">URB</a> to be formatted as an status request.
+Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to be formatted as an status request.
 
 
 ### -param Op [in]
@@ -118,39 +118,13 @@ Reserved. Must be set to <b>NULL</b>.
 ## -remarks
 
 
-## -requirements
-<table>
-<tr>
-<th width="30%">
-Target platform
-
-</th>
-<td width="70%">
-<dl>
-<dt>Desktop</dt>
-</dl>
-</td>
-</tr>
-<tr>
-<th width="30%">
-Header
-
-</th>
-<td width="70%">
-<dl>
-<dt>Usbdlib.h (include Usbdlib.h)</dt>
-</dl>
-</td>
-</tr>
-</table>
-
 ## -see-also
 <dl>
 <dt>
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
 </dt>
 <dt>
-<a href="..\usb\ns-usb-_urb_control_get_status_request.md">_URB_CONTROL_GET_STATUS_REQUEST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540378">_URB_CONTROL_GET_STATUS_REQUEST</a>
 </dt>
 <dt><a href="usb_reference.htm#client">USB device driver programming reference</a></dt>
 </dl>
